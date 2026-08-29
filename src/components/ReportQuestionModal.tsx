@@ -15,8 +15,6 @@ type ReportQuestionModalProps = {
 const REPORT_REASONS = [
   { id: "wrong_answer", label: "❌ Wrong Answer Key", desc: "The correct answer marked is incorrect" },
   { id: "typo", label: "✍️ Typo / Spelling Error", desc: "Spelling mistake or missing text" },
-  { id: "explanation_error", label: "📖 Incomplete Explanation", desc: "Solution explanation is wrong or unclear" },
-  { id: "formatting", label: "📐 Math / Symbol Error", desc: "Formula or symbols rendering incorrectly" },
   { id: "other", label: "❓ Other Issue", desc: "Any other problem with this question" },
 ];
 

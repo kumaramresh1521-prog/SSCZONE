@@ -1,0 +1,48 @@
+# Dependencies & Builds
+node_modules
+.next
+.next-stale-*
+.cache
+# Mobile App Build Artifacts
+.gradle-mobile
+android
+www
+capacitor.config.ts
+tmp
+output
+
+# Logs & Temporary Debug Files
+*.log
+*.stderr.log
+*.stdout.log
+next-local-*.log
+
+# Image Screenshots & Scratch HTML/JSON Dumps
+*.png
+*.jpg
+*.jpeg
+*.svg
+!public/*
+percentage_*.json
+percentage_*.html
+topics_backup.txt
+cd
+npm
+
+# Git & System Files
+.git
+.gitignore
+.env
+.env.local
+.env*.local
+.system_generated
+.gemini
+
+# IDE & Editor Settings
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

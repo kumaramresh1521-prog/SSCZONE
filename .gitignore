@@ -1,0 +1,38 @@
+# Dependencies
+node_modules
+
+# Next.js Build Output
+.next
+.next-stale-*
+out
+dist
+.cache
+
+# Environment Variables
+*.local
+.env*.local
+.env
+
+# Mobile & Capacitor Build Artifacts
+.gradle-mobile
+android
+www
+capacitor.config.ts
+
+# Temporary Logs & Screenshots
+*.log
+next-local-*.log
+ssczone-*.png
+percentage_*.json
+percentage_*.html
+topics_backup.txt
+cd
+npm
+tmp
+output
+
+# System & IDE
+.vscode
+.idea
+.DS_Store
+Thumbs.db

@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1e40af;
+  --color-primary-dark: #1e3a8a;
+  --color-secondary: #f59e0b;
+  --color-accent: #10b981;
+}
+
+/* Fix dropdown option & optgroup visibility globally */
+select option {
+  background-color: #ffffff;
+  color: #111827;
+}
+
+.a-input option,
+.a-select option,
+select.a-select option {
+  background-color: #1a1d2e !important;
+  color: #ffffff !important;
+}
+
+.a-input optgroup,
+.a-select optgroup,
+select.a-select optgroup {
+  background-color: #111422 !important;
+  color: #fbbf24 !important;
+  font-weight: bold !important;
+  padding: 4px 0 !important;
+}
+
+/* Smooth Infinite Live News Marquee Ticker */
+@keyframes liveMarquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-live-marquee {
+  display: flex;
+  width: max-content;
+  animation: liveMarquee 28s linear infinite;
+}
+
+.animate-live-marquee:hover {
+  animation-play-state: paused;
+}
+
+

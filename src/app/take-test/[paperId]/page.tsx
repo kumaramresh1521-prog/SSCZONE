@@ -15,6 +15,7 @@ import {
   X,
 } from "lucide-react";
 import MathText from "@/components/MathText";
+import ReportButton from "@/components/ReportButton";
 import { supabase } from "@/lib/supabase";
 
 const OPTIONS = ["A", "B", "C", "D"] as const;
@@ -301,7 +302,10 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                 <p className="text-xs font-bold uppercase tracking-wide text-blue-700">Question {currentIndex + 1}</p>
                 <h1 className="mt-2 text-lg font-bold leading-8 text-slate-950 sm:text-xl"><MathText text={question.question_text} /></h1>
               </div>
-              <button onClick={toggleMarked} className={`grid h-10 w-10 shrink-0 place-items-center rounded-lg border transition-colors ${isMarked ? "border-amber-400 bg-amber-50 text-amber-700" : "border-slate-200 text-slate-500 hover:bg-slate-50"}`} aria-label={isMarked ? "Remove review mark" : "Mark for review"} title={isMarked ? "Remove review mark" : "Mark for review"}><Flag className="h-4 w-4" /></button>
+              <div className="flex items-center gap-1.5 shrink-0">
+                <button onClick={toggleMarked} className={`grid h-10 w-10 shrink-0 place-items-center rounded-lg border transition-colors ${isMarked ? "border-amber-400 bg-amber-50 text-amber-700" : "border-slate-200 text-slate-500 hover:bg-slate-50"}`} aria-label={isMarked ? "Remove review mark" : "Mark for review"} title={isMarked ? "Remove review mark" : "Mark for review"}><Flag className="h-4 w-4" /></button>
+                <ReportButton questionId={question.id} questionText={question.question_text} />
+              </div>
             </div>
             {question.image_url && <img src={question.image_url} alt="Question figure" className="mt-5 max-h-80 w-auto max-w-full rounded-lg border border-slate-200 object-contain" />}
             <div className="mt-5 space-y-3">

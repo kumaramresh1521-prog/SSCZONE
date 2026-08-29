@@ -5,6 +5,7 @@ import Link from "next/link";
 import MathText from "@/components/MathText";
 import QuestionText from "@/components/QuestionText";
 import BookmarkButton from "@/components/BookmarkButton";
+import ReportButton from "@/components/ReportButton";
 import AdBanner from "@/components/AdBanner";
 import {
   CheckCircle2,
@@ -1312,7 +1313,10 @@ export default function PracticeClient({
                                 )}
                               </div>
 
-                              <BookmarkButton questionId={item.id} />
+                              <div className="flex items-center gap-1.5">
+                                <BookmarkButton questionId={item.id} />
+                                <ReportButton questionId={item.id} questionText={item.question_text} />
+                              </div>
                             </div>
 
                             {/* Options */}
@@ -1528,7 +1532,10 @@ export default function PracticeClient({
                             </div>
                           )}
                         </div>
-                        <BookmarkButton questionId={q.id} />
+                        <div className="flex items-center gap-1.5">
+                          <BookmarkButton questionId={q.id} />
+                          <ReportButton questionId={q.id} questionText={q.question_text} />
+                        </div>
                       </div>
 
                       {/* Options List */}

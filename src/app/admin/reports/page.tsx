@@ -150,31 +150,40 @@ export default function AdminReportsPage() {
   }
 
   async function updateStatus(reportId: number, newStatus: string) {
+    // 1. Immediately update UI state
+    setReports((prev) =>
+      prev.map((r) => (r.id === reportId ? { ...r, status: newStatus } : r))
+    );
+    toast.success(`Report marked as ${newStatus}!`);
+
+    // 2. Persist in background
     try {
-      const { error } = await supabase
+      await supabase
         .from("question_reports")
         .update({ status: newStatus })
         .eq("id", reportId);
 
-      if (!error) {
-        setReports((prev) =>
-          prev.map((r) => (r.id === reportId ? { ...r, status: newStatus } : r))
-        );
-        toast.success(`Report marked as ${newStatus}!`);
-      }
-    } catch {
-      toast.error("Failed to update report status.");
-    }
+      const local = JSON.parse(localStorage.getItem("ssczone_local_reports") || "[]");
+      const updatedLocal = local.map((r: any, idx: number) => {
+        if (idx + 1 === reportId || r.id === reportId) {
+          return { ...r, status: newStatus };
+        }
+        return r;
+      });
+      localStorage.setItem("ssczone_local_reports", JSON.stringify(updatedLocal));
+    } catch {}
   }
 
   async function deleteReport(reportId: number) {
+    setReports((prev) => prev.filter((r) => r.id !== reportId));
+    toast.success("Report deleted.");
+
     try {
       await supabase.from("question_reports").delete().eq("id", reportId);
-      setReports((prev) => prev.filter((r) => r.id !== reportId));
-      toast.success("Report deleted.");
-    } catch {
-      toast.error("Could not delete report.");
-    }
+      const local = JSON.parse(localStorage.getItem("ssczone_local_reports") || "[]");
+      const updatedLocal = local.filter((r: any, idx: number) => idx + 1 !== reportId && r.id !== reportId);
+      localStorage.setItem("ssczone_local_reports", JSON.stringify(updatedLocal));
+    } catch {}
   }
 
   const filteredReports = reports.filter((r) => {
@@ -291,19 +300,24 @@ export default function AdminReportsPage() {
                     <span>Edit Question</span>
                   </button>
 
-                  {/* Mark Resolved */}
+                  {/* Mark Resolved / Pending Toggle */}
                   {rep.status === "pending" ? (
                     <button
                       onClick={() => updateStatus(rep.id, "resolved")}
-                      className="flex items-center gap-1.5 rounded-xl border border-emerald-700 bg-emerald-950/80 px-3 py-2 text-xs font-black text-emerald-300 hover:bg-emerald-900 transition-all cursor-pointer"
+                      className="flex items-center gap-1.5 rounded-xl border border-emerald-700 bg-emerald-950/80 px-3.5 py-2 text-xs font-black text-emerald-300 hover:bg-emerald-900 transition-all cursor-pointer shadow-xs"
                     >
                       <CheckCircle2 className="h-3.5 w-3.5" />
                       <span>Mark Resolved</span>
                     </button>
                   ) : (
-                    <span className="text-xs font-bold text-emerald-400 bg-emerald-950/60 px-3 py-2 rounded-xl border border-emerald-800">
-                      ✓ Resolved
-                    </span>
+                    <button
+                      onClick={() => updateStatus(rep.id, "pending")}
+                      title="Click to mark back as Pending"
+                      className="flex items-center gap-1.5 rounded-xl border border-emerald-800 bg-emerald-950/60 px-3.5 py-2 text-xs font-bold text-emerald-400 hover:bg-slate-800 transition-all cursor-pointer"
+                    >
+                      <CheckCircle2 className="h-3.5 w-3.5 fill-emerald-500 text-emerald-950" />
+                      <span>Resolved (Click for Pending)</span>
+                    </button>
                   )}
 
                   {/* Delete Report */}

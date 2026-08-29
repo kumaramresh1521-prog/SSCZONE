@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { Flag, CheckCircle2, Trash2, Edit, AlertCircle, ExternalLink, LoaderCircle } from "lucide-react";
+import { Flag, CheckCircle2, Trash2, Edit, X, Save, LoaderCircle } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 import toast from "react-hot-toast";
 
@@ -18,13 +18,41 @@ type QuestionReport = {
     question_text: string;
     topic_id: number;
     correct_answer: string;
+    option_a?: string;
+    option_b?: string;
+    option_c?: string;
+    option_d?: string;
+    explanation?: string;
   };
+};
+
+type FullQuestionData = {
+  id: number;
+  question_text: string;
+  question_text_hi?: string;
+  option_a: string;
+  option_b: string;
+  option_c: string;
+  option_d: string;
+  option_a_hi?: string;
+  option_b_hi?: string;
+  option_c_hi?: string;
+  option_d_hi?: string;
+  correct_answer: string;
+  explanation?: string;
+  explanation_hi?: string;
 };
 
 export default function AdminReportsPage() {
   const [reports, setReports] = useState<QuestionReport[]>([]);
   const [loading, setLoading] = useState(true);
   const [filterStatus, setFilterStatus] = useState<string>("all");
+
+  // Edit Modal State
+  const [editingQuestion, setEditingQuestion] = useState<FullQuestionData | null>(null);
+  const [editingReportId, setEditingReportId] = useState<number | null>(null);
+  const [loadingQuestion, setLoadingQuestion] = useState(false);
+  const [savingQuestion, setSavingQuestion] = useState(false);
 
   useEffect(() => {
     fetchReports();
@@ -60,6 +88,67 @@ export default function AdminReportsPage() {
     }
   }
 
+  async function openEditModal(questionId: number, reportId: number) {
+    setEditingReportId(reportId);
+    setLoadingQuestion(true);
+    try {
+      const { data, error } = await supabase
+        .from("questions")
+        .select("*")
+        .eq("id", questionId)
+        .single();
+
+      if (error || !data) {
+        toast.error("Could not fetch question details.");
+        return;
+      }
+
+      setEditingQuestion(data);
+    } catch {
+      toast.error("Failed to load question for editing.");
+    } finally {
+      setLoadingQuestion(false);
+    }
+  }
+
+  async function handleSaveQuestion(e: React.FormEvent) {
+    e.preventDefault();
+    if (!editingQuestion) return;
+
+    setSavingQuestion(true);
+    try {
+      const { error } = await supabase
+        .from("questions")
+        .update({
+          question_text: editingQuestion.question_text,
+          option_a: editingQuestion.option_a,
+          option_b: editingQuestion.option_b,
+          option_c: editingQuestion.option_c,
+          option_d: editingQuestion.option_d,
+          correct_answer: editingQuestion.correct_answer,
+          explanation: editingQuestion.explanation,
+        })
+        .eq("id", editingQuestion.id);
+
+      if (error) throw error;
+
+      toast.success(`Question #${editingQuestion.id} updated successfully! 🎉`);
+
+      // Automatically mark report as resolved
+      if (editingReportId) {
+        await updateStatus(editingReportId, "resolved");
+      }
+
+      setEditingQuestion(null);
+      setEditingReportId(null);
+      fetchReports();
+    } catch {
+      toast.error("Failed to save question edits.");
+    } finally {
+      setSavingQuestion(false);
+    }
+  }
+
   async function updateStatus(reportId: number, newStatus: string) {
     try {
       const { error } = await supabase
@@ -71,7 +160,7 @@ export default function AdminReportsPage() {
         setReports((prev) =>
           prev.map((r) => (r.id === reportId ? { ...r, status: newStatus } : r))
         );
-        toast.success(`Report #${reportId} marked as ${newStatus}!`);
+        toast.success(`Report marked as ${newStatus}!`);
       }
     } catch {
       toast.error("Failed to update report status.");
@@ -193,16 +282,14 @@ export default function AdminReportsPage() {
                 {/* Right side actions */}
                 <div className="flex items-center gap-2 shrink-0">
                   
-                  {/* Edit Question Link */}
-                  <Link
-                    href={`/admin/questions?id=${rep.question_id}`}
-                    target="_blank"
-                    className="flex items-center gap-1.5 rounded-xl border border-blue-600/60 bg-blue-950/80 px-3 py-2 text-xs font-black text-blue-300 hover:bg-blue-900 transition-all"
+                  {/* Edit Question Button */}
+                  <button
+                    onClick={() => openEditModal(rep.question_id, rep.id)}
+                    className="flex items-center gap-1.5 rounded-xl border border-blue-600/60 bg-blue-950/80 px-3.5 py-2 text-xs font-black text-blue-300 hover:bg-blue-900 transition-all cursor-pointer"
                   >
                     <Edit className="h-3.5 w-3.5" />
                     <span>Edit Question</span>
-                    <ExternalLink className="h-3 w-3 opacity-70" />
-                  </Link>
+                  </button>
 
                   {/* Mark Resolved */}
                   {rep.status === "pending" ? (
@@ -231,6 +318,119 @@ export default function AdminReportsPage() {
               </div>
             </div>
           ))}
+        </div>
+      )}
+
+      {/* Quick Edit Question Modal */}
+      {editingQuestion && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-xs p-4 animate-in fade-in">
+          <div className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-2xl border border-slate-700 bg-slate-900 p-6 shadow-2xl space-y-4">
+            
+            <div className="flex items-center justify-between border-b border-slate-800 pb-3">
+              <div className="flex items-center gap-2 text-blue-400 text-sm font-black">
+                <Edit className="h-4 w-4" />
+                <span>Quick Edit Question #{editingQuestion.id}</span>
+              </div>
+              <button
+                onClick={() => setEditingQuestion(null)}
+                className="p-1 text-slate-400 hover:text-white rounded-lg"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+
+            <form onSubmit={handleSaveQuestion} className="space-y-4">
+              {/* Question Text */}
+              <div>
+                <label className="text-xs font-extrabold uppercase text-slate-400 block mb-1">
+                  Question Text
+                </label>
+                <textarea
+                  value={editingQuestion.question_text}
+                  onChange={(e) => setEditingQuestion({ ...editingQuestion, question_text: e.target.value })}
+                  rows={3}
+                  className="w-full rounded-xl border border-slate-700 bg-slate-950 p-3 text-xs text-white focus:border-blue-500 focus:outline-none"
+                  required
+                />
+              </div>
+
+              {/* Options Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {(["A", "B", "C", "D"] as const).map((opt) => {
+                  const key = `option_${opt.toLowerCase()}` as keyof FullQuestionData;
+                  return (
+                    <div key={opt}>
+                      <label className="text-xs font-extrabold uppercase text-slate-400 block mb-1">
+                        Option {opt}
+                      </label>
+                      <input
+                        type="text"
+                        value={String(editingQuestion[key] || "")}
+                        onChange={(e) => setEditingQuestion({ ...editingQuestion, [key]: e.target.value })}
+                        className="w-full rounded-xl border border-slate-700 bg-slate-950 p-2.5 text-xs text-white focus:border-blue-500 focus:outline-none"
+                        required
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* Correct Answer Selection */}
+              <div>
+                <label className="text-xs font-extrabold uppercase text-amber-400 block mb-1">
+                  Correct Answer Key
+                </label>
+                <select
+                  value={editingQuestion.correct_answer}
+                  onChange={(e) => setEditingQuestion({ ...editingQuestion, correct_answer: e.target.value })}
+                  className="w-full rounded-xl border border-amber-600/60 bg-amber-950/40 p-2.5 text-xs font-extrabold text-amber-300 focus:border-amber-500 focus:outline-none"
+                >
+                  <option value="A" className="bg-slate-900 text-white">Option A</option>
+                  <option value="B" className="bg-slate-900 text-white">Option B</option>
+                  <option value="C" className="bg-slate-900 text-white">Option C</option>
+                  <option value="D" className="bg-slate-900 text-white">Option D</option>
+                </select>
+              </div>
+
+              {/* Explanation */}
+              <div>
+                <label className="text-xs font-extrabold uppercase text-slate-400 block mb-1">
+                  Explanation / Solution
+                </label>
+                <textarea
+                  value={editingQuestion.explanation || ""}
+                  onChange={(e) => setEditingQuestion({ ...editingQuestion, explanation: e.target.value })}
+                  rows={3}
+                  className="w-full rounded-xl border border-slate-700 bg-slate-950 p-3 text-xs text-white focus:border-blue-500 focus:outline-none"
+                />
+              </div>
+
+              {/* Action Buttons */}
+              <div className="flex items-center justify-end gap-2 pt-3 border-t border-slate-800">
+                <button
+                  type="button"
+                  onClick={() => setEditingQuestion(null)}
+                  className="rounded-xl border border-slate-700 px-4 py-2 text-xs font-bold text-slate-400 hover:bg-slate-800"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  disabled={savingQuestion}
+                  className="flex items-center gap-1.5 rounded-xl bg-blue-600 px-4 py-2 text-xs font-bold text-white shadow-md hover:bg-blue-700 active:scale-98 transition-all disabled:opacity-50 cursor-pointer"
+                >
+                  {savingQuestion ? (
+                    <LoaderCircle className="h-4 w-4 animate-spin" />
+                  ) : (
+                    <>
+                      <Save className="h-4 w-4" />
+                      <span>Save & Resolve Report</span>
+                    </>
+                  )}
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       )}
     </div>

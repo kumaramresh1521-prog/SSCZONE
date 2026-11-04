@@ -4,8 +4,6 @@ steps:
     args:
       - 'build'
       - '-t'
-      - 'asia-south1-docker.pkg.dev/$PROJECT_ID/cloud-run-source-deploy/ssczone:$COMMIT_SHA'
-      - '-t'
       - 'asia-south1-docker.pkg.dev/$PROJECT_ID/cloud-run-source-deploy/ssczone:latest'
       - '.'
 
@@ -13,7 +11,7 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args:
       - 'push'
-      - 'asia-south1-docker.pkg.dev/$PROJECT_ID/cloud-run-source-deploy/ssczone:$COMMIT_SHA'
+      - 'asia-south1-docker.pkg.dev/$PROJECT_ID/cloud-run-source-deploy/ssczone:latest'
 
   # 3. Deploy to Cloud Run
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
@@ -23,7 +21,7 @@ steps:
       - 'deploy'
       - 'ssczone'
       - '--image'
-      - 'asia-south1-docker.pkg.dev/$PROJECT_ID/cloud-run-source-deploy/ssczone:$COMMIT_SHA'
+      - 'asia-south1-docker.pkg.dev/$PROJECT_ID/cloud-run-source-deploy/ssczone:latest'
       - '--region'
       - 'asia-south1'
       - '--platform'
@@ -41,5 +39,4 @@ options:
   logging: CLOUD_LOGGING_ONLY
 
 images:
-  - 'asia-south1-docker.pkg.dev/$PROJECT_ID/cloud-run-source-deploy/ssczone:$COMMIT_SHA'
   - 'asia-south1-docker.pkg.dev/$PROJECT_ID/cloud-run-source-deploy/ssczone:latest'

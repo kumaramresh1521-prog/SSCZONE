@@ -12,10 +12,11 @@ export async function middleware(request: NextRequest) {
 
   // Early return for public static/data routes that don't need auth checks
   const isProtectedAdmin = path.startsWith("/admin");
+  const isProtectedAdminApi = path.startsWith("/api/admin");
   const isProtectedDashboard = path.startsWith("/dashboard");
   const isAuthPage = path === "/login" || path === "/signup";
 
-  if (!isProtectedAdmin && !isProtectedDashboard && !isAuthPage) {
+  if (!isProtectedAdmin && !isProtectedAdminApi && !isProtectedDashboard && !isAuthPage) {
     return supabaseResponse;
   }
 
@@ -65,19 +66,44 @@ export async function middleware(request: NextRequest) {
 
     // Redirect logged-in users away from login/signup
     if (isAuthPage && user) {
-      return redirectWithAuthCookies("/admin");
+      return redirectWithAuthCookies("/dashboard");
     }
 
-    // Protect admin routes
+    // Protect admin API routes
+    if (isProtectedAdminApi) {
+      if (!user) {
+        return NextResponse.json({ error: "Unauthorized: Authentication required" }, { status: 401 });
+      }
+      const { data: profile } = await supabase
+        .from("profiles")
+        .select("is_admin")
+        .eq("id", user.id)
+        .maybeSingle();
+
+      if (!profile?.is_admin) {
+        return NextResponse.json({ error: "Forbidden: Admin privileges required" }, { status: 403 });
+      }
+    }
+
+    // Protect admin UI routes
     if (isProtectedAdmin) {
       if (!user) {
-        return redirectWithAuthCookies("/login");
+        return redirectWithAuthCookies(`/login?next=${encodeURIComponent(path)}`);
+      }
+      const { data: profile } = await supabase
+        .from("profiles")
+        .select("is_admin")
+        .eq("id", user.id)
+        .maybeSingle();
+
+      if (!profile?.is_admin) {
+        return redirectWithAuthCookies("/dashboard");
       }
     }
 
     // Protect dashboard routes
     if (isProtectedDashboard && !user) {
-      return redirectWithAuthCookies("/login");
+      return redirectWithAuthCookies(`/login?next=${encodeURIComponent(path)}`);
     }
 
     return supabaseResponse;

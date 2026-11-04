@@ -1,15 +1,28 @@
 import { NextResponse } from "next/server";
-import { createClient } from "@supabase/supabase-js";
+import { createClient as createSupabaseClient } from "@supabase/supabase-js";
+import { createClient as createServerClient } from "@/lib/supabase-server";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
 
-const supabaseAdmin = createClient(supabaseUrl, serviceRoleKey, {
+const supabaseAdmin = createSupabaseClient(supabaseUrl, serviceRoleKey, {
   auth: {
     autoRefreshToken: false,
     persistSession: false,
   },
 });
+
+async function isCallerAdmin(): Promise<boolean> {
+  try {
+    const supabase = await createServerClient();
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) return false;
+    const { data } = await supabase.from("profiles").select("is_admin").eq("id", user.id).maybeSingle();
+    return !!data?.is_admin;
+  } catch {
+    return false;
+  }
+}
 
 // GET /api/admin/questions?topic_id=123
 export async function GET(request: Request) {
@@ -39,6 +52,9 @@ export async function GET(request: Request) {
 
 // POST /api/admin/questions (Insert single or batch questions)
 export async function POST(request: Request) {
+  if (!(await isCallerAdmin())) {
+    return NextResponse.json({ error: "Unauthorized: Admin privileges required" }, { status: 403 });
+  }
   try {
     const body = await request.json();
     const questionsToInsert = Array.isArray(body) ? body : [body];
@@ -75,6 +91,9 @@ export async function POST(request: Request) {
 
 // PUT /api/admin/questions (Update single question)
 export async function PUT(request: Request) {
+  if (!(await isCallerAdmin())) {
+    return NextResponse.json({ error: "Unauthorized: Admin privileges required" }, { status: 403 });
+  }
   try {
     const body = await request.json();
     const { id, ...updates } = body;
@@ -100,6 +119,9 @@ export async function PUT(request: Request) {
 
 // DELETE /api/admin/questions (Delete single, batch by ids, or all in topic)
 export async function DELETE(request: Request) {
+  if (!(await isCallerAdmin())) {
+    return NextResponse.json({ error: "Unauthorized: Admin privileges required" }, { status: 403 });
+  }
   try {
     const { searchParams } = new URL(request.url);
     const id = searchParams.get("id");
@@ -153,6 +175,9 @@ export async function DELETE(request: Request) {
 
 // PATCH /api/admin/questions (Toggle active status)
 export async function PATCH(request: Request) {
+  if (!(await isCallerAdmin())) {
+    return NextResponse.json({ error: "Unauthorized: Admin privileges required" }, { status: 403 });
+  }
   try {
     const body = await request.json();
     const { id, is_active } = body;

@@ -23,6 +23,9 @@ import {
   Newspaper,
   DollarSign,
   LayoutTemplate,
+  GraduationCap,
+  Network,
+  Globe,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { supabase } from "@/lib/supabase";
@@ -35,19 +38,22 @@ type MenuItem = {
 
 const menuItems: MenuItem[] = [
   { label: "Dashboard", href: "/admin", icon: BarChart3 },
+  { label: "SEO & Meta Engine", href: "/admin/seo", icon: Globe },
   { label: "Homepage CMS", href: "/admin/homepage", icon: LayoutTemplate },
   { label: "Admin Tools", href: "/admin/tools", icon: Wrench },
+  { label: "System & Integrations", href: "/admin/integrations", icon: Network },
   { label: "Ads & Monetization", href: "/admin/ads", icon: DollarSign },
   { label: "Ticker", href: "/admin/ticker", icon: Radio },
   { label: "Exams", href: "/admin/exams", icon: BookOpen },
   { label: "Subjects", href: "/admin/subjects", icon: Layers3 },
   { label: "Topics", href: "/admin/topics", icon: FileText },
+  { label: "Subject Notes", href: "/admin/notes", icon: GraduationCap },
   { label: "Questions", href: "/admin/questions", icon: CircleHelp },
   { label: "Flagged Reports", href: "/admin/reports", icon: Flag },
   { label: "Blogs", href: "/admin/blogs", icon: Newspaper },
   { label: "Users", href: "/admin/users", icon: Users },
   { label: "Packages", href: "/admin/packages", icon: CreditCard },
-  { label: "Papers", href: "/admin/papers", icon: FileSpreadsheet },
+  { label: "PYQ Shift Papers", href: "/admin/papers", icon: FileSpreadsheet },
 ];
 
 export default function AdminLayout({ children }: { children: ReactNode }) {

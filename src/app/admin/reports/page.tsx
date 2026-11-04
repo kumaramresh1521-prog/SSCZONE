@@ -61,28 +61,25 @@ export default function AdminReportsPage() {
   async function fetchReports() {
     setLoading(true);
     try {
-      const { data, error } = await supabase
-        .from("question_reports")
-        .select("*, question:questions(question_text, topic_id, correct_answer)")
-        .order("created_at", { ascending: false });
-
-      if (error) {
-        // Fallback to local storage reports if table not in schema cache
-        const local = JSON.parse(localStorage.getItem("ssczone_local_reports") || "[]");
-        setReports(local.map((item: any, index: number) => ({
-          id: index + 1,
-          question_id: item.question_id,
-          user_id: item.user_id,
-          reason: item.reason,
-          description: item.description,
-          status: "pending",
-          created_at: item.timestamp,
-        })));
+      const res = await fetch("/api/reports");
+      if (res.ok) {
+        const json = await res.json();
+        setReports(json.reports || []);
       } else {
-        setReports(data || []);
+        throw new Error("Failed to fetch reports");
       }
     } catch {
-      toast.error("Error fetching question reports.");
+      // Fallback to local storage reports if offline
+      const local = JSON.parse(localStorage.getItem("ssczone_local_reports") || "[]");
+      setReports(local.map((item: any, index: number) => ({
+        id: index + 1,
+        question_id: item.question_id,
+        user_id: item.user_id,
+        reason: item.reason,
+        description: item.description,
+        status: "pending",
+        created_at: item.timestamp,
+      })));
     } finally {
       setLoading(false);
     }
@@ -149,28 +146,24 @@ export default function AdminReportsPage() {
     }
   }
 
-  async function updateStatus(reportId: number, newStatus: string) {
+  async function updateStatus(reportId: number | string, newStatus: string, recordSource?: string) {
     // 1. Immediately update UI state
     setReports((prev) =>
-      prev.map((r) => (r.id === reportId ? { ...r, status: newStatus } : r))
+      prev.map((r: any) => (r.id === reportId ? { ...r, status: newStatus } : r))
     );
     toast.success(`Report marked as ${newStatus}!`);
 
-    // 2. Persist in background
+    // 2. Persist in background via API
     try {
-      await supabase
-        .from("question_reports")
-        .update({ status: newStatus })
-        .eq("id", reportId);
-
-      const local = JSON.parse(localStorage.getItem("ssczone_local_reports") || "[]");
-      const updatedLocal = local.map((r: any, idx: number) => {
-        if (idx + 1 === reportId || r.id === reportId) {
-          return { ...r, status: newStatus };
-        }
-        return r;
+      await fetch("/api/reports", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          id: reportId,
+          status: newStatus,
+          record_source: recordSource,
+        }),
       });
-      localStorage.setItem("ssczone_local_reports", JSON.stringify(updatedLocal));
     } catch {}
   }
 

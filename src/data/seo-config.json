@@ -1,0 +1,57 @@
+{
+  "siteTitle": "SSCZone — Official SSC Syllabus-Wise MCQ Practice & Test Series Portal",
+  "titleTemplate": "%s | SSCZone",
+  "metaDescription": "Prepare for SSC CGL, CHSL, CPO, MTS, GD, Steno & Railways Exams topic-by-topic. Practice high-quality MCQs from standard reference books with instant bilingual solutions.",
+  "canonicalUrl": "https://ssczone.com",
+  "author": "SSCZone Editorial Team",
+  "keywords": [
+    "SSC CGL Practice",
+    "SSC CHSL Test Series",
+    "SSC CPO MCQs",
+    "Syllabus Wise MCQ",
+    "SSC Exam Test Series",
+    "Previous Year Papers",
+    "SSC PYQ Test 2025",
+    "SSC CGL Tier-I Mock Test",
+    "SSC Mock Test Free"
+  ],
+  "openGraph": {
+    "title": "SSCZone — Syllabus-Wise SSC MCQ Practice & Test Series Portal",
+    "description": "Crack SSC CGL, CHSL, CPO, MTS & Railways Exams with chapter-by-chapter MCQ practice and previous year test series.",
+    "imageUrl": "https://ssczone.com/icon-512.png",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@ssczone",
+    "creator": "@ssczone"
+  },
+  "indexing": {
+    "index": true,
+    "follow": true,
+    "maxSnippet": -1,
+    "maxImagePreview": "large",
+    "maxVideoPreview": -1
+  },
+  "verification": {
+    "google": "",
+    "bing": "",
+    "googleAnalyticsId": "",
+    "adsenseId": ""
+  },
+  "pageOverrides": {
+    "/papers": {
+      "title": "SSC PYQ Shift Papers 2025 Live — Download PDF & Attempt CBT Test",
+      "description": "Download clean official SSC CGL, CHSL, CPO shift paper PDFs with SSC Zone branding and attempt online CBT mock tests with instant scorecards."
+    },
+    "/exams": {
+      "title": "SSC & Railways Exams Directory — Complete Syllabus-Wise Modules",
+      "description": "Explore all SSC and Railways examinations categorized by official notification syllabus, subjects, and topics."
+    },
+    "/notes": {
+      "title": "SSC Exam Chapter-Wise Notes & High-Yield Theory Capsules",
+      "description": "Master core subjects with concise theory capsules, comparison tables, examiner trap warnings, and practice MCQs."
+    }
+  },
+  "updatedAt": "2026-11-03T14:00:00.000Z"
+}

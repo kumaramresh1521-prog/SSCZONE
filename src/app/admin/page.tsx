@@ -26,6 +26,9 @@ import {
   Users,
   Wrench,
   Zap,
+  Flag,
+  CheckCircle2,
+  AlertTriangle,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { supabase } from "@/lib/supabase";
@@ -216,6 +219,8 @@ export default function AdminDashboard() {
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState("");
   const [tickers, setTickers] = useState<TickerItem[]>(DEFAULT_TICKERS);
+  const [pendingReportsCount, setPendingReportsCount] = useState(0);
+  const [dbStatus, setDbStatus] = useState<"healthy" | "slow" | "error">("healthy");
   const [editingId, setEditingId] = useState<number | null>(null);
   const [title, setTitle] = useState("");
   const [badge, setBadge] = useState("LIVE");
@@ -258,8 +263,27 @@ export default function AdminDashboard() {
 
     let alive = true;
 
+    // Fast-path: Load cached dashboard data immediately for 0ms instant display
+    try {
+      const cached = sessionStorage.getItem("ssczone_dashboard_cache");
+      if (cached) {
+        const parsed = JSON.parse(cached);
+        if (parsed && parsed.stats) {
+          setStats(parsed.stats);
+          if (parsed.recentUsers) setRecentUsers(parsed.recentUsers);
+          if (parsed.recentPayments) setRecentPayments(parsed.recentPayments);
+          setLoading(false);
+        }
+      }
+    } catch (e) {
+      // Ignore cache parse error
+    }
+
     async function loadDashboard() {
-      setLoading(true);
+      // If we already have cached data, don't show full-screen blocking loader
+      if (!sessionStorage.getItem("ssczone_dashboard_cache")) {
+        setLoading(true);
+      }
       setLoadError("");
 
       try {
@@ -293,7 +317,7 @@ export default function AdminDashboard() {
             .limit(5),
         ]);
 
-        setStats({
+        const freshStats = {
           exams: examsResult?.count ?? 0,
           subjects: subjectsResult?.count ?? 0,
           topics: topicsResult?.count ?? 0,
@@ -303,16 +327,41 @@ export default function AdminDashboard() {
           revenue: activeSubsResult?.data
             ? activeSubsResult.data.reduce((sum: number, sub: any) => sum + Number(sub.amount ?? 0), 0)
             : 0,
-        });
+        };
 
-        if (recentUsersResult?.data) {
-          setRecentUsers(recentUsersResult.data as RecentUser[]);
+        if (alive) {
+          setStats(freshStats);
+          if (recentUsersResult?.data) {
+            setRecentUsers(recentUsersResult.data as RecentUser[]);
+          }
+          if (recentPaymentsResult?.data) {
+            setRecentPayments(recentPaymentsResult.data as unknown as RecentPayment[]);
+          }
+
+          // Cache fresh snapshot for instant navigation
+          try {
+            sessionStorage.setItem(
+              "ssczone_dashboard_cache",
+              JSON.stringify({
+                stats: freshStats,
+                recentUsers: recentUsersResult?.data ?? [],
+                recentPayments: recentPaymentsResult?.data ?? []
+              })
+            );
+          } catch {}
         }
-        if (recentPaymentsResult?.data) {
-          setRecentPayments(recentPaymentsResult.data as unknown as RecentPayment[]);
+
+        const reportsResponse = await fetch("/api/reports?status=pending", { cache: "no-store" });
+        if (reportsResponse.ok) {
+          const reportsData = await reportsResponse.json();
+          if (alive) setPendingReportsCount(reportsData.pendingCount || 0);
         }
+
+        if (alive) setDbStatus("healthy");
       } catch (error) {
-        if (!alive) return;
+        if (alive) {
+          setDbStatus("error");
+        }
         setLoadError(getErrorMessage(error));
       } finally {
         if (alive) setLoading(false);
@@ -451,6 +500,50 @@ export default function AdminDashboard() {
           </p>
         </div>
       </section>
+
+      {/* STUDENT QUESTION ISSUES ALERT NOTIFICATION BANNER */}
+      {pendingReportsCount > 0 ? (
+        <Link
+          href="/admin/reports"
+          className="group relative flex items-center justify-between gap-4 overflow-hidden rounded-2xl border border-rose-500/40 bg-gradient-to-r from-rose-950/60 via-red-950/40 to-slate-900/80 p-4 sm:p-5 shadow-xl transition-all hover:border-rose-400 hover:shadow-rose-950/30"
+        >
+          <div className="flex items-center gap-3.5">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-rose-500/20 text-rose-400 border border-rose-500/30">
+              <Flag className="h-5 w-5 animate-bounce" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="rounded-md bg-rose-500 px-2 py-0.5 text-[10px] font-black uppercase tracking-wider text-white">
+                  Action Required
+                </span>
+                <span className="text-xs text-rose-300 font-semibold">Student Flagged Questions</span>
+              </div>
+              <p className="text-sm sm:text-base font-bold text-white mt-1">
+                {pendingReportsCount} Question {pendingReportsCount === 1 ? "Error" : "Errors"} Reported by Students
+              </p>
+              <p className="text-xs text-slate-300 line-clamp-1 mt-0.5">
+                Students identified potential wrong answer keys or typos in practice MCQs. Click to review and fix in 1-click.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 shrink-0">
+            <span className="hidden sm:inline-flex rounded-xl bg-rose-600 px-4 py-2 text-xs font-bold text-white shadow-lg shadow-rose-900/40 group-hover:bg-rose-500 transition-colors">
+              Review Questions Now &rarr;
+            </span>
+          </div>
+        </Link>
+      ) : (
+        <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-emerald-500/20 bg-emerald-950/20 px-4 py-3 text-xs text-emerald-300">
+          <div className="flex items-center gap-2">
+            <CheckCircle2 className="h-4 w-4 text-emerald-400 shrink-0" />
+            <span><strong>All Question Reports Resolved:</strong> No pending student flags. Database and question bank are clean.</span>
+          </div>
+          <div className="flex items-center gap-2 text-[11px] text-emerald-400 font-medium">
+            <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+            <span>Supabase Cloud Connected & Live</span>
+          </div>
+        </div>
+      )}
 
       <div className="inline-flex flex-wrap gap-2 rounded-2xl border border-white/10 bg-white/5 p-2 shadow-inner backdrop-blur-xl">
         {[

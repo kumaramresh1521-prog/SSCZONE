@@ -10,7 +10,7 @@ import {
   BookMarked, 
   LayoutDashboard, 
   LogIn,
-  Zap
+  FileText
 } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 
@@ -51,10 +51,10 @@ export default function MobileBottomNav() {
       isActive: pathname?.startsWith("/exams"),
     },
     {
-      label: "Tests",
+      label: "PYQ Papers",
       href: "/papers",
-      icon: Trophy,
-      isActive: pathname?.startsWith("/papers") || pathname?.startsWith("/mocks"),
+      icon: FileText,
+      isActive: pathname?.startsWith("/papers"),
     },
     {
       label: "Books",
@@ -73,7 +73,7 @@ export default function MobileBottomNav() {
   return (
     <nav 
       aria-label="Mobile Navigation Bar"
-      className="fixed bottom-0 left-0 right-0 z-50 flex lg:hidden items-center justify-around bg-white/95 backdrop-blur-lg border-t border-gray-200/90 py-1.5 px-2 shadow-[0_-4px_20px_rgba(0,0,0,0.06)] touch-manipulation select-none"
+      className="fixed bottom-0 left-0 right-0 z-50 flex lg:hidden items-center justify-around bg-white/92 backdrop-blur-2xl border-t border-slate-200/80 py-2 px-3 shadow-[0_-8px_30px_rgba(0,0,0,0.08)] touch-manipulation select-none pb-safe"
     >
       {navItems.map((item) => {
         const Icon = item.icon;
@@ -84,23 +84,23 @@ export default function MobileBottomNav() {
             key={item.label}
             href={item.href}
             prefetch={true}
-            className={`flex flex-col items-center justify-center flex-1 min-h-[48px] py-1 rounded-xl transition-all duration-150 active:scale-95 touch-manipulation cursor-pointer ${
+            className={`relative flex flex-col items-center justify-center flex-1 min-h-[46px] py-1 rounded-2xl transition-all duration-200 active:scale-90 touch-manipulation cursor-pointer ${
               active
-                ? "text-blue-700 font-extrabold"
-                : "text-gray-500 font-medium hover:text-gray-900"
+                ? "text-blue-700 font-black"
+                : "text-slate-500 font-semibold hover:text-slate-900"
             }`}
           >
+            {active && (
+              <span className="absolute inset-0 rounded-2xl bg-blue-50/80 -z-10 scale-95 border border-blue-100/60" />
+            )}
             <div className="relative">
               <Icon 
                 className={`h-5 w-5 transition-transform duration-150 ${
-                  active ? "scale-110 text-blue-700" : "text-gray-500"
+                  active ? "text-blue-600 stroke-[2.2]" : "text-slate-400 stroke-[1.8]"
                 }`} 
               />
-              {active && (
-                <span className="absolute -top-1 -right-1.5 h-2 w-2 rounded-full bg-blue-600 animate-pulse" />
-              )}
             </div>
-            <span className={`text-[10px] mt-0.5 tracking-tight ${active ? "font-black text-blue-700" : "text-gray-500"}`}>
+            <span className={`text-[10px] mt-1 tracking-tight ${active ? "font-black text-blue-700" : "text-slate-500"}`}>
               {item.label}
             </span>
           </Link>

@@ -3,27 +3,13 @@
 import { useEffect, useState, useRef, useMemo } from "react";
 import { supabase } from "@/lib/supabase";
 import toast from "react-hot-toast";
-import katex from "katex";
-import "katex/dist/katex.min.css";
 import * as XLSX from "xlsx";
 import Papa from "papaparse";
+import MathText from "@/components/MathText";
 
 // Math Preview Component
 function MathPreview({ text, className = "" }: { text: string; className?: string }) {
-  if (!text) return null;
-  const parts = text.split(/(\$\$[\s\S]*?\$\$|\\\([\s\S]*?\\\)|\\[[\s\S]*?\\])/g);
-  const html = parts.map(part => {
-    let math = ""; let displayMode = false;
-    if (part.startsWith('$$') && part.endsWith('$$')) { math = part.slice(2, -2); displayMode = true; } 
-    else if (part.startsWith('\\[') && part.endsWith('\\]')) { math = part.slice(2, -2); displayMode = true; } 
-    else if (part.startsWith('\\(') && part.endsWith('\\)')) { math = part.slice(2, -2); displayMode = false; }
-    if (math) {
-      try { return katex.renderToString(math, { throwOnError: false, displayMode }); } 
-      catch (e) { return part; }
-    }
-    return part.replace(/</g, "&lt;").replace(/>/g, "&gt;");
-  }).join('');
-  return <div className={className} dangerouslySetInnerHTML={{ __html: html }} />;
+  return <MathText text={text} className={className} />;
 }
 
 // Math Toolbar Component
@@ -1502,14 +1488,14 @@ Exam: SSC CGL 2023 Tier-1`}
                           <span className="a-badge a-badge-green" style={{ fontSize: "0.65rem" }}>Correct: Option ({q.correct_answer})</span>
                         </div>
                       </div>
-                      <div style={{ fontWeight: 600, color: "#fff", marginBottom: "0.35rem" }}>{q.question_text}</div>
+                      <div style={{ fontWeight: 600, color: "#fff", marginBottom: "0.35rem" }}><MathText text={q.question_text} /></div>
                       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.25rem", fontSize: "0.75rem", color: "#94a3b8" }}>
-                        <div><b>(A)</b> {q.option_a}</div>
-                        <div><b>(B)</b> {q.option_b}</div>
-                        <div><b>(C)</b> {q.option_c}</div>
-                        <div><b>(D)</b> {q.option_d}</div>
+                        <div><b>(A)</b> <MathText text={q.option_a} /></div>
+                        <div><b>(B)</b> <MathText text={q.option_b} /></div>
+                        <div><b>(C)</b> <MathText text={q.option_c} /></div>
+                        <div><b>(D)</b> <MathText text={q.option_d} /></div>
                       </div>
-                      {q.explanation && <div style={{ fontSize: "0.7rem", color: "#64748b", marginTop: "0.35rem" }}>💡 {q.explanation}</div>}
+                      {q.explanation && <div style={{ fontSize: "0.7rem", color: "#64748b", marginTop: "0.35rem" }}>💡 <MathText text={q.explanation} /></div>}
                     </div>
                   </div>
                 ))}
@@ -1578,7 +1564,7 @@ Exam: SSC CGL 2023 Tier-1`}
                   {isMathMode && <MathToolbar onInsert={handleInsertMath} />}
                   <textarea
                     className="a-input"
-                    placeholder="Enter the question (Use \(...\) or $$...$$ for Math)..."
+                    placeholder="Enter question. Powers x^2, roots √49, fractions 3/4, and TeX \(...\) all work."
                     value={qText}
                     onChange={e => setQText(e.target.value)}
                     onFocus={() => setActiveField("qText")}
@@ -1697,6 +1683,12 @@ Exam: SSC CGL 2023 Tier-1`}
                       style={{ color: "#fff", fontSize: "0.75rem" }}
                     />
                   </div>
+                  {isMathMode && explanation && (
+                    <div style={{ marginTop: "0.5rem", padding: "0.75rem", background: "rgba(0,0,0,0.2)", borderRadius: "8px", border: "1px dashed rgba(99,102,241,0.4)" }}>
+                      <div style={{ fontSize: "0.7rem", color: "#818cf8", marginBottom: "0.35rem", fontWeight: 600, textTransform: "uppercase" }}>Solution Preview</div>
+                      <MathPreview text={explanation} className="text-gray-200" />
+                    </div>
+                  )}
                 </div>
                 {showHindi && (
                   <div>
@@ -1849,7 +1841,7 @@ Exam: SSC CGL 2023 Tier-1`}
                           {q.tier_level}
                         </span>
                       )}
-                      <p className="q-text">{q.question_text}</p>
+                      <p className="q-text"><MathText text={q.question_text} /></p>
                     </div>
                     <div style={{ display: "flex", gap: "0.375rem", flexShrink: 0 }}>
                       <button

@@ -9,7 +9,8 @@
     "lint": "next lint",
     "mobile:sync": "cap sync android",
     "mobile:build": "next build && cap sync android",
-    "android:debug": "cd android && gradlew.bat assembleDebug"
+    "android:debug": "cd android && gradlew.bat assembleDebug",
+    "import-pyq": "python scripts/auto_process_pyq.py"
   },
   "dependencies": {
     "@supabase/ssr": "^0.6.1",

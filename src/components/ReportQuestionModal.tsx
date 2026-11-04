@@ -39,26 +39,21 @@ export default function ReportQuestionModal({
       const { data: { session } } = await supabase.auth.getSession();
       const userId = session?.user?.id ?? null;
 
-      // Try inserting into question_reports table
-      const { error } = await supabase.from("question_reports").insert({
-        question_id: questionId,
-        user_id: userId,
-        reason: selectedReason,
-        description: description.trim() || null,
-        status: "pending",
-      });
-
-      if (error) {
-        // Fallback: Store locally in localStorage for backup
-        const existing = JSON.parse(localStorage.getItem("ssczone_local_reports") || "[]");
-        existing.push({
-          question_id: questionId,
-          user_id: userId,
+      const res = await fetch("/api/reports", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          questionId,
+          questionText: questionText || `Question #${questionId}`,
           reason: selectedReason,
           description: description.trim(),
-          timestamp: new Date().toISOString(),
-        });
-        localStorage.setItem("ssczone_local_reports", JSON.stringify(existing));
+          userId,
+          type: "question_issue",
+        }),
+      });
+
+      if (!res.ok) {
+        throw new Error("Server error");
       }
 
       setSubmitted(true);

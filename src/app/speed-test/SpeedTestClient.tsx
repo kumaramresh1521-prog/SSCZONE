@@ -33,6 +33,7 @@ import {
 } from "lucide-react";
 import MathText from "@/components/MathText";
 import AdBanner from "@/components/AdBanner";
+import ReportButton from "@/components/ReportButton";
 import { translateSingleQuestion } from "@/lib/translator";
 
 // Audio chime using Web Audio API (Zero external dependencies)
@@ -1170,6 +1171,12 @@ export default function SpeedTestClient() {
                 </div>
 
                 <div className="flex items-center gap-2">
+                  <ReportButton
+                    questionId={currentQ.originalId}
+                    questionText={currentQ.question_text}
+                    showLabel={true}
+                  />
+
                   {isMarked && (
                     <span className="inline-flex items-center gap-1 text-[11px] font-bold text-purple-700 bg-purple-50 px-2 py-0.5 rounded border border-purple-200">
                       <Flag className="w-3 h-3 fill-purple-600 text-purple-600" />
@@ -1657,6 +1664,12 @@ export default function SpeedTestClient() {
                         </div>
 
                         <div className="flex items-center gap-2">
+                          <ReportButton
+                            questionId={q.originalId}
+                            questionText={q.question_text}
+                            showLabel={false}
+                          />
+
                           <span className="text-[11px] font-mono text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md">
                             ⏱️ {timeSpentOnQ}s
                           </span>

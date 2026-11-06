@@ -23,9 +23,6 @@ export async function POST(request: Request) {
     const {
       data: { user },
     } = await supabase.auth.getUser();
-    if (!user) {
-      return NextResponse.json({ error: "Authentication required" }, { status: 401 });
-    }
 
     const {
       questionId,
@@ -51,7 +48,7 @@ export async function POST(request: Request) {
       question_text: typeof questionText === "string" ? questionText.slice(0, 4000) : null,
       reason: typeof reason === "string" ? reason.slice(0, 120) : "Flagged issue",
       description: typeof description === "string" ? description : null,
-      user_id: user.id,
+      user_id: user?.id ?? null,
       status: "pending",
       created_at: new Date().toISOString(),
       meta,
@@ -59,22 +56,24 @@ export async function POST(request: Request) {
 
     // 1. Try dedicated question_reports table
     let inserted = false;
-    try {
-      const { error: qrError } = await supabaseAdmin
-        .from("question_reports")
-        .insert({
-          question_id: numericQuestionId,
-          user_id: user.id,
-          reason: typeof reason === "string" ? reason.slice(0, 120) : "other",
-          description: typeof description === "string" ? description : null,
-          status: "pending",
-        });
+    if (user?.id) {
+      try {
+        const { error: qrError } = await supabaseAdmin
+          .from("question_reports")
+          .insert({
+            question_id: numericQuestionId,
+            user_id: user.id,
+            reason: typeof reason === "string" ? reason.slice(0, 120) : "other",
+            description: typeof description === "string" ? description : null,
+            status: "pending",
+          });
 
-      if (!qrError) {
-        inserted = true;
+        if (!qrError) {
+          inserted = true;
+        }
+      } catch {
+        // Table doesn't exist yet or foreign key constraint, proceed to robust fallback
       }
-    } catch {
-      // Table doesn't exist yet, proceed to robust fallback
     }
 
     // 2. Persistent Supabase fallback using system-records in blogs table

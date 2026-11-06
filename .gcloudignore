@@ -1,0 +1,25 @@
+.gcloudignore
+.git
+.gitignore
+
+# Directories
+node_modules/
+.next/
+.next-stale-*/
+.cache/
+.gradle-mobile/
+android/
+www/
+
+# Logs & temp files
+*.log
+next-local-*.log
+*.stderr.log
+*.stdout.log
+tmp/
+output/
+tmp_*
+
+# Explicitly ensure public directory is ALWAYS uploaded
+!public
+!public/**

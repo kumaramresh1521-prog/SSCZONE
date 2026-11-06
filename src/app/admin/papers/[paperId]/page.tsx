@@ -284,22 +284,23 @@ export default function PaperQuestionsPage() {
         setQText(newStatement);
       }
 
-      // Also translate options if they contain English words
+      // Also translate options if they contain English words and returned genuine Hindi
       if (data.translatedOptions) {
         const hasLetters = /[A-Za-z]{2,}/;
-        if (opA && hasLetters.test(opA) && data.translatedOptions.A) {
+        const hasDevanagari = /[\u0900-\u097F]/;
+        if (opA && hasLetters.test(opA) && data.translatedOptions.A && hasDevanagari.test(data.translatedOptions.A)) {
           const enA = opA.split(/[\u0900-\u097F/]/)[0].trim();
           setOpA(`${enA} / ${data.translatedOptions.A}`);
         }
-        if (opB && hasLetters.test(opB) && data.translatedOptions.B) {
+        if (opB && hasLetters.test(opB) && data.translatedOptions.B && hasDevanagari.test(data.translatedOptions.B)) {
           const enB = opB.split(/[\u0900-\u097F/]/)[0].trim();
           setOpB(`${enB} / ${data.translatedOptions.B}`);
         }
-        if (opC && hasLetters.test(opC) && data.translatedOptions.C) {
+        if (opC && hasLetters.test(opC) && data.translatedOptions.C && hasDevanagari.test(data.translatedOptions.C)) {
           const enC = opC.split(/[\u0900-\u097F/]/)[0].trim();
           setOpC(`${enC} / ${data.translatedOptions.C}`);
         }
-        if (opD && hasLetters.test(opD) && data.translatedOptions.D) {
+        if (opD && hasLetters.test(opD) && data.translatedOptions.D && hasDevanagari.test(data.translatedOptions.D)) {
           const enD = opD.split(/[\u0900-\u097F/]/)[0].trim();
           setOpD(`${enD} / ${data.translatedOptions.D}`);
         }
@@ -388,19 +389,20 @@ export default function PaperQuestionsPage() {
 
       if (data.translatedOptions) {
         const hasLetters = /[A-Za-z]{2,}/;
-        if (q.option_a && hasLetters.test(q.option_a) && data.translatedOptions.A) {
+        const hasDevanagari = /[\u0900-\u097F]/;
+        if (q.option_a && hasLetters.test(q.option_a) && data.translatedOptions.A && hasDevanagari.test(data.translatedOptions.A)) {
           const enA = q.option_a.split(/[\u0900-\u097F/]/)[0].trim();
           newOptions.option_a = `${enA} / ${data.translatedOptions.A}`;
         }
-        if (q.option_b && hasLetters.test(q.option_b) && data.translatedOptions.B) {
+        if (q.option_b && hasLetters.test(q.option_b) && data.translatedOptions.B && hasDevanagari.test(data.translatedOptions.B)) {
           const enB = q.option_b.split(/[\u0900-\u097F/]/)[0].trim();
           newOptions.option_b = `${enB} / ${data.translatedOptions.B}`;
         }
-        if (q.option_c && hasLetters.test(q.option_c) && data.translatedOptions.C) {
+        if (q.option_c && hasLetters.test(q.option_c) && data.translatedOptions.C && hasDevanagari.test(data.translatedOptions.C)) {
           const enC = q.option_c.split(/[\u0900-\u097F/]/)[0].trim();
           newOptions.option_c = `${enC} / ${data.translatedOptions.C}`;
         }
-        if (q.option_d && hasLetters.test(q.option_d) && data.translatedOptions.D) {
+        if (q.option_d && hasLetters.test(q.option_d) && data.translatedOptions.D && hasDevanagari.test(data.translatedOptions.D)) {
           const enD = q.option_d.split(/[\u0900-\u097F/]/)[0].trim();
           newOptions.option_d = `${enD} / ${data.translatedOptions.D}`;
         }
@@ -488,19 +490,20 @@ export default function PaperQuestionsPage() {
 
           if (data.translatedOptions) {
             const hasLetters = /[A-Za-z]{2,}/;
-            if (q.option_a && hasLetters.test(q.option_a) && data.translatedOptions.A) {
+            const hasDevanagari = /[\u0900-\u097F]/;
+            if (q.option_a && hasLetters.test(q.option_a) && data.translatedOptions.A && hasDevanagari.test(data.translatedOptions.A)) {
               const enA = q.option_a.split(/[\u0900-\u097F/]/)[0].trim();
               newOptions.option_a = `${enA} / ${data.translatedOptions.A}`;
             }
-            if (q.option_b && hasLetters.test(q.option_b) && data.translatedOptions.B) {
+            if (q.option_b && hasLetters.test(q.option_b) && data.translatedOptions.B && hasDevanagari.test(data.translatedOptions.B)) {
               const enB = q.option_b.split(/[\u0900-\u097F/]/)[0].trim();
               newOptions.option_b = `${enB} / ${data.translatedOptions.B}`;
             }
-            if (q.option_c && hasLetters.test(q.option_c) && data.translatedOptions.C) {
+            if (q.option_c && hasLetters.test(q.option_c) && data.translatedOptions.C && hasDevanagari.test(data.translatedOptions.C)) {
               const enC = q.option_c.split(/[\u0900-\u097F/]/)[0].trim();
               newOptions.option_c = `${enC} / ${data.translatedOptions.C}`;
             }
-            if (q.option_d && hasLetters.test(q.option_d) && data.translatedOptions.D) {
+            if (q.option_d && hasLetters.test(q.option_d) && data.translatedOptions.D && hasDevanagari.test(data.translatedOptions.D)) {
               const enD = q.option_d.split(/[\u0900-\u097F/]/)[0].trim();
               newOptions.option_d = `${enD} / ${data.translatedOptions.D}`;
             }

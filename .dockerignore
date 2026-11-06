@@ -17,12 +17,12 @@ output
 *.stdout.log
 next-local-*.log
 
-# Image Screenshots & Scratch HTML/JSON Dumps
-*.png
-*.jpg
-*.jpeg
-*.svg
-!public/*
+# Image Screenshots & Scratch HTML/JSON Dumps (Root only)
+/*.png
+/*.jpg
+/*.jpeg
+/*.svg
+ssczone-*.png
 !public/**
 percentage_*.json
 percentage_*.html

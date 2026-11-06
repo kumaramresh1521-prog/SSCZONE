@@ -1,39 +1,190 @@
-// Global Translation Cache to avoid any duplicate network requests
-const translationCache: Record<string, string> = {};
+// High-Reliability Hindi Translation & Asset Protection Engine
+// Strictly protects: Image paths, Reasoning codes, Letter clusters, Math formulae & English Section
 
-export async function translateToHindi(text: string): Promise<string> {
-  if (!text || !text.trim()) return "";
-  
+const translationCache = new Map<string, string>();
+const inFlightTranslations = new Map<string, Promise<string>>();
+
+// ── Check if text already contains Hindi/Devanagari script ──
+export function hasHindi(value?: string | null): boolean {
+  if (!value) return false;
+  return /[\u0900-\u097F]/.test(value);
+}
+
+// ── Determines whether an option is a descriptive sentence that can be translated ──
+// Strictly protects: Reasoning codes (MoNdAy, BSIhHU), letters (BD : JL, LOM), numbers, units (1080 rupees), formulas, and diagrams
+export function isTranslatableOption(text?: string | null): boolean {
+  if (!text || !text.trim()) return false;
   const trimmed = text.trim();
-  if (translationCache[trimmed]) {
-    return translationCache[trimmed];
+
+  // 1. Skip if already bilingual or contains Hindi
+  if (hasHindi(trimmed)) return false;
+
+  // 2. Skip if it is or contains an image tag
+  if (trimmed.includes("![") || trimmed.includes("/images/") || trimmed.includes("<img")) return false;
+
+  // 3. Skip pure numeric, algebraic, ratio, coordinate, or currency expressions
+  if (/^[0-9\s.,+\-*/=^()√∛%:;₹$€£–—]+$/.test(trimmed)) return false;
+
+  // 4. Skip numeric values with standard measurement units (e.g. "1080 rupees", "5.5 cm", "8 days", "25%")
+  if (/^[-+]?[\d.,\s]+\s*(?:cm|m|km|mm|cm²|cm³|sec|min|hr|hours?|days?|rupees?|rs\.?|kg|gm|%|°|deg)?$/i.test(trimmed)) {
+    return false;
   }
 
-  // Check if text is already in Hindi (Devanagari script range)
-  if (/[\u0900-\u097F]/.test(trimmed)) {
+  // 5. Skip letter codes, casing ciphers, and series (e.g. "MoNdAy", "TiIoGt", "BSIhHU", "BD : JL", "LOM", "F")
+  if (/^[A-Za-z0-9\s,:\-_+*]+$/.test(trimmed)) {
+    const tokens = trimmed.split(/[\s,:\-_+*]+/).filter(Boolean);
+
+    // Single letter options (e.g. "A", "B", "F")
+    if (tokens.length === 1 && tokens[0].length === 1) return false;
+
+    // Mixed-case code words (e.g. "MoNdAy", "TiIoGt", "BsIHHu")
+    if (tokens.some((w) => /^[A-Z]+[a-z]+[A-Z]/.test(w) || /^[a-z]+[A-Z]/.test(w))) return false;
+
+    // All uppercase tokens (e.g. "BD", "JL", "LOM", "ZEA") - except standard English words
+    const commonWords = new Set(["A", "THE", "AN", "AND", "OR", "NOT", "BOTH", "ALL", "NONE", "NEITHER", "EITHER", "ONLY"]);
+    if (tokens.every((w) => /^[A-Z0-9]+$/.test(w) && w.length <= 8 && !commonWords.has(w))) {
+      return false;
+    }
+  }
+
+  // 6. Only translate if option has at least 2 descriptive English words of length >= 3
+  // Examples that pass: "Neither conclusion I nor II follows", "Only statement I is correct", "Both 1 and 2 follow"
+  const englishWords = trimmed.match(/[A-Za-z]{3,}/g) ?? [];
+  return englishWords.length >= 2;
+}
+
+// ── Protect sensitive content before machine translation ──
+function maskProtectedTokens(text: string): { maskedText: string; tokens: string[] } {
+  const tokens: string[] = [];
+  const placeholder = (idx: number) => `___PROTECT_${idx}___`;
+
+  let current = text;
+
+  // Helper to safely replace regex matches with tokens
+  const replaceWithToken = (regex: RegExp) => {
+    current = current.replace(regex, (match) => {
+      tokens.push(match);
+      return placeholder(tokens.length - 1);
+    });
+  };
+
+  // 1. Protect Markdown Images & HTML Tags
+  replaceWithToken(/!\[[^\]]*\]\([^\s)]+\)/g);
+  replaceWithToken(/<img\b[^>]*>/gi);
+  replaceWithToken(/<[^>]+>/g);
+
+  // 2. Protect LaTeX Math Delimiters
+  replaceWithToken(/(\$\$[\s\S]*?\$\$|\\\[[\s\S]*?\\\]|\\\([\s\S]*?\\\)|\$[^$\n]+\$)/g);
+
+  // 3. Protect Quoted words/codes (e.g. "THINGS", "TiIoGt", "BRIGHT", 'MONDAY')
+  replaceWithToken(/(["'])(?:(?=(\\?))\2.)*?\1/g);
+
+  // 4. Protect Mixed-Case Coding Words (e.g. MoNdAy, TiIoGt, BsIHHu)
+  replaceWithToken(/\b(?:[A-Z]+[a-z]+[A-Z][A-Za-z]*|[a-z]+[A-Z]+[a-z]*)\b/g);
+
+  // 5. Protect Letter Analogies and Series (e.g. "BD : JL", "LOM, ISJ, FWG", "A, C, E, G", "W-T-P-M")
+  replaceWithToken(/\b[A-Z]{2,}\s*:\s*[A-Z]{2,}\b/g);
+  replaceWithToken(/\b[A-Z]{2,}(?:\s*,\s*[A-Z]{2,})+\b/g);
+  replaceWithToken(/\b[A-Z](?:\s*,\s*[A-Z])+\b/g);
+  replaceWithToken(/\b[A-Z]{1,4}(?:-[A-Z]{1,4})+\b/g);
+
+  // 6. Protect Operator Substitution Codes (e.g. "16 D 4 A 8 C 2 B 5", "A denotes '+'")
+  replaceWithToken(/\b\d+\s+[A-Z]\s+\d+(?:\s+[A-Z]\s+\d+)*\b/g);
+  replaceWithToken(/\b[A-Z]\s+(?:denotes|means|stands for|represents)\b/gi);
+
+  return { maskedText: current, tokens };
+}
+
+// ── Restore protected tokens into translated text ──
+function unmaskTokens(translated: string, tokens: string[]): string {
+  let result = translated;
+  tokens.forEach((token, idx) => {
+    const p = `___PROTECT_${idx}___`;
+    result = result.split(p).join(token);
+    // Handle translation spacing anomalies or script variations
+    result = result.split(`___ PROTECT_${idx} ___`).join(token);
+    result = result.split(`___ PROTECT_ ${idx} ___`).join(token);
+    result = result.split(`___सुरक्षित_${idx}___`).join(token);
+    result = result.split(`___ सुरक्षित_${idx} ___`).join(token);
+  });
+  return result;
+}
+
+// ── Google GTX Translation Caller with Network Resilience ──
+async function requestTranslation(value: string): Promise<string> {
+  const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=hi&dt=t&q=${encodeURIComponent(value)}`;
+  const response = await fetch(url, {
+    headers: {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error(`Translation service responded with ${response.status}`);
+  }
+
+  const data = await response.json();
+  const translated = data?.[0]?.map((item: any) => item?.[0] || "").join("").trim();
+  if (!translated) throw new Error("Translation service returned an empty response");
+  return translated;
+}
+
+// ── Translate Plain English Statement into Clean Hindi ──
+export async function translateToHindi(text: string): Promise<string> {
+  const trimmed = text?.trim();
+  if (!trimmed || hasHindi(trimmed)) return trimmed || "";
+
+  // If text is purely an image tag, return instantly without network call
+  if (/^!\[[^\]]*\]\([^\s)]+\)$/.test(trimmed)) {
     return trimmed;
   }
 
-  try {
-    const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=hi&dt=t&q=${encodeURIComponent(trimmed)}`;
-    const res = await fetch(url);
-    if (!res.ok) return trimmed;
-    
-    const data = await res.json();
-    if (data && data[0]) {
-      const translated = data[0].map((x: any) => x[0]).join("");
-      translationCache[trimmed] = translated;
-      return translated;
-    }
-  } catch (error) {
-    console.error("Auto-Translation Error:", error);
-  }
+  const cached = translationCache.get(trimmed);
+  if (cached) return cached;
 
-  return trimmed;
+  const active = inFlightTranslations.get(trimmed);
+  if (active) return active;
+
+  const pending = (async () => {
+    // 1. Mask images, reasoning codes, math, and quoted ciphers
+    const { maskedText, tokens } = maskProtectedTokens(trimmed);
+
+    // If everything was masked or no English words left to translate
+    if (!/[A-Za-z]{2,}/.test(maskedText)) {
+      return trimmed;
+    }
+
+    try {
+      const rawTranslated = await requestTranslation(maskedText);
+      const restored = unmaskTokens(rawTranslated, tokens);
+      translationCache.set(trimmed, restored);
+      return restored;
+    } catch {
+      // Retry once on network glitch
+      try {
+        const rawTranslated = await requestTranslation(maskedText);
+        const restored = unmaskTokens(rawTranslated, tokens);
+        translationCache.set(trimmed, restored);
+        return restored;
+      } catch {
+        return trimmed;
+      }
+    }
+  })();
+
+  inFlightTranslations.set(trimmed, pending);
+  try {
+    return await pending;
+  } finally {
+    inFlightTranslations.delete(trimmed);
+  }
 }
 
-// Ultra-fast single-request translator for all 6 fields of a question
-export async function translateSingleQuestion(q: any): Promise<{
+// ── Translate Single Question with Strict Options Protection ──
+export async function translateSingleQuestion(
+  q: any,
+  isEnglishSection: boolean = false
+): Promise<{
   question_text: string;
   option_a: string;
   option_b: string;
@@ -45,62 +196,47 @@ export async function translateSingleQuestion(q: any): Promise<{
     return { question_text: "", option_a: "", option_b: "", option_c: "", option_d: "", explanation: "" };
   }
 
-  // 1. If native Hindi fields already exist in the database, return instantly (0ms)
-  if (q.question_text_hi || q.option_a_hi) {
+  // 1. STRICT RULE: English Comprehension section must NEVER be translated
+  if (isEnglishSection) {
     return {
-      question_text: q.question_text_hi || q.question_text || "",
-      option_a: q.option_a_hi || q.option_a || "",
-      option_b: q.option_b_hi || q.option_b || "",
-      option_c: q.option_c_hi || q.option_c || "",
-      option_d: q.option_d_hi || q.option_d || "",
-      explanation: q.explanation_hi || q.explanation || ""
+      question_text: q.question_text || "",
+      option_a: q.option_a || "",
+      option_b: q.option_b || "",
+      option_c: q.option_c || "",
+      option_d: q.option_d || "",
+      explanation: q.explanation || "",
     };
   }
 
-  const fields = [
-    q.question_text || "",
-    q.option_a || "",
-    q.option_b || "",
-    q.option_c || "",
-    q.option_d || "",
-    q.explanation || ""
-  ];
+  // 2. Question Text: Use native Hindi if present, otherwise machine-translate with code protection
+  const question_text = q.question_text_hi || (await translateToHindi(q.question_text || ""));
 
-  // 2. Check if all fields are already in cache
-  const allCached = fields.every((f) => !f || translationCache[f.trim()]);
-  if (allCached) {
-    return {
-      question_text: translationCache[fields[0].trim()] || fields[0],
-      option_a: translationCache[fields[1].trim()] || fields[1],
-      option_b: translationCache[fields[2].trim()] || fields[2],
-      option_c: translationCache[fields[3].trim()] || fields[3],
-      option_d: translationCache[fields[4].trim()] || fields[4],
-      explanation: translationCache[fields[5].trim()] || fields[5]
-    };
-  }
+  // 3. Options: Only machine-translate descriptive sentences (e.g. "Neither conclusion I nor II follows")
+  // Keep letter codes, diagrams, numbers, and formulas identical to source paper
+  const translateOption = async (raw?: string | null, hi?: string | null) => {
+    if (hi) return hi;
+    if (!raw) return "";
+    if (isTranslatableOption(raw)) {
+      return await translateToHindi(raw);
+    }
+    return raw;
+  };
 
-  // 3. Ultra-Fast Parallel Translation of all 6 fields concurrently
-  try {
-    const [qText, optA, optB, optC, optD, expText] = await Promise.all(
-      fields.map((f) => translateToHindi(f))
-    );
+  const [option_a, option_b, option_c, option_d] = await Promise.all([
+    translateOption(q.option_a, q.option_a_hi),
+    translateOption(q.option_b, q.option_b_hi),
+    translateOption(q.option_c, q.option_c_hi),
+    translateOption(q.option_d, q.option_d_hi),
+  ]);
 
-    return {
-      question_text: qText,
-      option_a: optA,
-      option_b: optB,
-      option_c: optC,
-      option_d: optD,
-      explanation: expText
-    };
-  } catch (e) {
-    return {
-      question_text: fields[0],
-      option_a: fields[1],
-      option_b: fields[2],
-      option_c: fields[3],
-      option_d: fields[4],
-      explanation: fields[5]
-    };
-  }
+  const explanation = q.explanation_hi || (q.explanation && hasHindi(q.explanation) ? q.explanation : "");
+
+  return {
+    question_text,
+    option_a,
+    option_b,
+    option_c,
+    option_d,
+    explanation,
+  };
 }

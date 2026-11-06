@@ -7,7 +7,7 @@ import toast from "react-hot-toast";
 import Link from "next/link";
 import MathText from "@/components/MathText";
 import ReportButton from "@/components/ReportButton";
-import { translateSingleQuestion } from "@/lib/translator";
+import { translateSingleQuestion, hasHindi } from "@/lib/translator";
 import {
   Clock,
   CheckCircle2,
@@ -70,24 +70,44 @@ function formatTimer(seconds: number) {
 function splitBilingualText(text: string): { english: string; hindi: string; isBilingual: boolean } {
   if (!text) return { english: "", hindi: "", isBilingual: false };
 
-  const hasHindi = /[\u0900-\u097F]/.test(text);
-  if (!hasHindi) {
+  const containsHindi = /[\u0900-\u097F]/.test(text);
+  if (!containsHindi) {
     return { english: text.trim(), hindi: "", isBilingual: false };
   }
 
-  // Common option divider: e.g. "Energy / ऊर्जा"
+  // 1. Common option divider: e.g. "Energy / ऊर्जा" or "8 days / 8 दिन"
   if (text.includes(" / ")) {
     const parts = text.split(" / ");
     if (parts.length >= 2) {
-      return { english: parts[0].trim(), hindi: parts.slice(1).join(" / ").trim(), isBilingual: true };
+      const en = parts[0].trim();
+      const hi = parts.slice(1).join(" / ").trim();
+      if (/[\u0900-\u097F]/.test(hi)) {
+        return { english: en, hindi: hi, isBilingual: true };
+      }
     }
   }
 
-  // Devanagari character boundary in question text
+  // 2. Question text boundary: Check where Devanagari appears
   const match = text.search(/[\u0900-\u097F]/);
   if (match > 0) {
-    const en = text.substring(0, match).trim();
-    const hi = text.substring(match).trim();
+    let splitIdx = match;
+    const prefix = text.substring(0, match);
+
+    // Look for punctuation boundary (? or . or :) immediately preceding or near the Hindi text
+    const lastQ = prefix.lastIndexOf("?");
+    const lastDot = Math.max(prefix.lastIndexOf(".\n"), prefix.lastIndexOf(". "));
+    const lastColon = Math.max(prefix.lastIndexOf(":\n"), prefix.lastIndexOf(": "));
+
+    if (lastQ !== -1 && lastQ > 5) {
+      splitIdx = lastQ + 1;
+    } else if (lastColon !== -1 && lastColon > 5) {
+      splitIdx = lastColon + 1;
+    } else if (lastDot !== -1 && lastDot > 5) {
+      splitIdx = lastDot + 1;
+    }
+
+    const en = text.substring(0, splitIdx).trim();
+    const hi = text.substring(splitIdx).trim();
     if (/[a-zA-Z]{2,}/.test(en) && hi.length > 0) {
       return { english: en, hindi: hi, isBilingual: true };
     }
@@ -113,6 +133,23 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
   // Dynamic Auto-Translation Engine States
   const [translationsCache, setTranslationsCache] = useState<Record<number, any>>({});
   const [isTranslating, setIsTranslating] = useState(false);
+
+  // High-Speed Asset & Translation Preloading States
+  const [preloadStatus, setPreloadStatus] = useState<{
+    totalImages: number;
+    loadedImages: number;
+    totalTranslations: number;
+    loadedTranslations: number;
+    isImagesDone: boolean;
+    isTranslationsDone: boolean;
+  }>({
+    totalImages: 0,
+    loadedImages: 0,
+    totalTranslations: 0,
+    loadedTranslations: 0,
+    isImagesDone: false,
+    isTranslationsDone: false,
+  });
 
   // Timer Mode: Composite (SSC CGL 60-Min Server Clock) vs Sectional (15 Min / Section with auto-switch)
   const [timerMode, setTimerMode] = useState<"composite" | "sectional">("composite");
@@ -430,6 +467,139 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
       void handleSubmitTest();
     }
   }
+
+  // 5a. Smart CBT Preloading Engine: Pre-cache all paper images & Hindi translations
+  useEffect(() => {
+    if (questions.length === 0) return;
+    let isCancelled = false;
+
+    // 1. Extract and pre-download all images in browser HTTP cache
+    const imgUrls = new Set<string>();
+    const imgRegex = /!\[[^\]]*\]\(([^)\s]+)\)|<img[^>]+src=["']([^"']+)["']|\/images\/pyq\/[^\s)"']+/g;
+
+    questions.forEach((q) => {
+      const fields = [q.question_text, q.option_a, q.option_b, q.option_c, q.option_d, q.explanation];
+      fields.forEach((f) => {
+        if (!f) return;
+        let match;
+        const localRegex = new RegExp(imgRegex.source, "g");
+        while ((match = localRegex.exec(f)) !== null) {
+          const url = match[1] || match[2] || match[0];
+          if (url && (url.startsWith("/images/") || url.startsWith("http"))) {
+            imgUrls.add(url);
+          }
+        }
+      });
+    });
+
+    const urls = Array.from(imgUrls);
+    if (urls.length > 0) {
+      setPreloadStatus((prev) => ({
+        ...prev,
+        totalImages: urls.length,
+        loadedImages: 0,
+        isImagesDone: false,
+      }));
+      let loadedCount = 0;
+      urls.forEach((url) => {
+        const img = new Image();
+        img.onload = img.onerror = () => {
+          if (isCancelled) return;
+          loadedCount++;
+          setPreloadStatus((prev) => ({
+            ...prev,
+            loadedImages: loadedCount,
+            isImagesDone: loadedCount >= urls.length,
+          }));
+        };
+        img.src = url;
+      });
+    } else {
+      setPreloadStatus((prev) => ({ ...prev, isImagesDone: true }));
+    }
+
+    // 2. Pre-cache Hindi translations for Sections 1, 2, 3 (Reasoning, GA, Quant)
+    if (paper && isPaperTranslatorAllowed(paper) === false) return;
+
+    const storageKey = `ssczone_cbt_trans_${paperId || "paper"}`;
+    let cachedFromStorage: Record<number, any> = {};
+    try {
+      const stored = sessionStorage.getItem(storageKey);
+      if (stored) {
+        cachedFromStorage = JSON.parse(stored);
+        setTranslationsCache((prev) => ({ ...cachedFromStorage, ...prev }));
+      }
+    } catch {}
+
+    const isEngSectionIdx = (idx: number) => {
+      const sec = getQuestionSection(idx);
+      return (sec?.name + " " + sec?.shortName).toLowerCase().includes("english");
+    };
+
+    const needsTranslation = questions.filter((q, idx) => {
+      if (isEngSectionIdx(idx)) return false;
+      if (q.question_text_hi) return false;
+      if (hasHindi(q.question_text)) return false;
+      return !cachedFromStorage[q.id] && !translationsCache[q.id];
+    });
+
+    setPreloadStatus((prev) => ({
+      ...prev,
+      totalTranslations: needsTranslation.length,
+      loadedTranslations: 0,
+      isTranslationsDone: needsTranslation.length === 0,
+    }));
+
+    if (needsTranslation.length === 0) return;
+
+    // Run translations in gentle batches of 4 with small delay
+    async function runPreloadTranslations() {
+      const batchSize = 4;
+      let completed = 0;
+
+      for (let i = 0; i < needsTranslation.length; i += batchSize) {
+        if (isCancelled) break;
+        const chunk = needsTranslation.slice(i, i + batchSize);
+
+        try {
+          const results = await Promise.all(
+            chunk.map(async (item) => {
+              const data = await translateSingleQuestion(item, false);
+              return { id: item.id, data };
+            })
+          );
+
+          if (isCancelled) break;
+          completed += results.length;
+
+          setTranslationsCache((prev) => {
+            const next = { ...prev };
+            results.forEach((r) => { next[r.id] = r.data; });
+            try {
+              sessionStorage.setItem(storageKey, JSON.stringify(next));
+            } catch {}
+            return next;
+          });
+
+          setPreloadStatus((prev) => ({
+            ...prev,
+            loadedTranslations: completed,
+            isTranslationsDone: completed >= needsTranslation.length,
+          }));
+
+          await new Promise((resolve) => setTimeout(resolve, 150));
+        } catch (err) {
+          console.warn("Translation preload batch caught:", err);
+        }
+      }
+    }
+
+    runPreloadTranslations();
+
+    return () => {
+      isCancelled = true;
+    };
+  }, [questions, paperId, paper, sections]);
 
   // 5b. Auto-Translation Engine for Non-English Section Questions
   useEffect(() => {
@@ -1019,6 +1189,56 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                     The countdown timer at top-right displays the remaining time. When the timer reaches zero, the exam will automatically submit.
                   </p>
                 </div>
+              </div>
+            </div>
+
+            {/* High-Speed CBT Pre-Caching Banner */}
+            <div className="rounded-xl border border-blue-200 bg-gradient-to-r from-blue-50/90 via-indigo-50/80 to-slate-50 p-3 sm:p-3.5 shadow-xs">
+              <div className="flex items-center justify-between gap-3 flex-wrap">
+                <div className="flex items-center gap-2.5">
+                  <div className="h-8 w-8 rounded-lg bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-xs">
+                    <Sparkles className="h-4 w-4" />
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <span className="text-xs font-black text-slate-900">High-Speed CBT Exam Engine</span>
+                      {preloadStatus.isImagesDone && preloadStatus.isTranslationsDone ? (
+                        <span className="inline-flex items-center gap-1 text-[10px] font-black uppercase tracking-wider bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full border border-emerald-300">
+                          <CheckCircle2 className="h-3 w-3 text-emerald-600" />
+                          <span>100% Pre-Cached (0ms Latency)</span>
+                        </span>
+                      ) : (
+                        <span className="inline-flex items-center gap-1 text-[10px] font-bold text-blue-700 bg-blue-100/90 px-2 py-0.5 rounded-full border border-blue-200 animate-pulse">
+                          <span>Pre-warming Paper Assets...</span>
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-[11px] text-slate-600 mt-0.5">
+                      {preloadStatus.totalImages > 0 ? (
+                        <span>
+                          <b>{preloadStatus.loadedImages}</b> / {preloadStatus.totalImages} Diagrams
+                        </span>
+                      ) : (
+                        <span>All Diagrams Ready</span>
+                      )}
+                      {" • "}
+                      {preloadStatus.totalTranslations > 0 ? (
+                        <span>
+                          <b>{preloadStatus.loadedTranslations}</b> / {preloadStatus.totalTranslations} Hindi Translations
+                        </span>
+                      ) : (
+                        <span>All Translations Ready</span>
+                      )}{" "}
+                      pre-loaded into browser memory for zero lag during test.
+                    </p>
+                  </div>
+                </div>
+
+                {preloadStatus.isImagesDone && preloadStatus.isTranslationsDone && (
+                  <span className="hidden sm:inline-flex text-[11px] font-bold text-emerald-700 bg-white border border-emerald-200 px-2.5 py-1 rounded-lg shadow-2xs">
+                    Ready to Begin
+                  </span>
+                )}
               </div>
             </div>
 

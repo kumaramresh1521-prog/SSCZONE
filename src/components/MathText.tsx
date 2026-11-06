@@ -88,8 +88,14 @@ function formatRawMathText(plainText: string): string {
   formatted = formatted.replace(/\b(?:because|Because)\b/g, '∵');
 
   // 9. Convert image tags/markdown: ![alt](url) or [Image: url] or raw image URLs (supports both relative /path and http(s)://)
-  formatted = formatted.replace(/!\[(.*?)\]\(([^\s)]+)\)/gi, '<div class="my-2"><img src="$2" alt="$1" class="max-w-full rounded-xl border border-gray-200" style="max-height: 280px; object-fit: contain;" /></div>');
-  formatted = formatted.replace(/\[Image:\s*([^\s\]]+)\]/gi, '<div class="my-2"><img src="$1" alt="Figure" class="max-w-full rounded-xl border border-gray-200" style="max-height: 280px; object-fit: contain;" /></div>');
+  formatted = formatted.replace(
+    /!\[(.*?)\]\(([^\s)]+)\)/gi,
+    '<div class="my-2.5 inline-block max-w-full"><img src="$2" alt="$1" loading="eager" decoding="async" class="max-w-full rounded-xl border border-slate-200 bg-white shadow-2xs" style="max-height: 280px; object-fit: contain;" /></div>'
+  );
+  formatted = formatted.replace(
+    /\[Image:\s*([^\s\]]+)\]/gi,
+    '<div class="my-2.5 inline-block max-w-full"><img src="$1" alt="Figure" loading="eager" decoding="async" class="max-w-full rounded-xl border border-slate-200 bg-white shadow-2xs" style="max-height: 280px; object-fit: contain;" /></div>'
+  );
 
   return formatted;
 }

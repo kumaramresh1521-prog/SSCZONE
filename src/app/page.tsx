@@ -161,7 +161,7 @@ export default function Home() {
               <FileSpreadsheet className="h-4 w-4 text-blue-600" />
               <span>SSC PYQ Shift Papers</span>
               <span className="rounded-full bg-amber-400 text-slate-950 text-[10px] font-black px-2 py-0.5 uppercase tracking-wide">
-                2025 Live
+                2026 Live
               </span>
             </Link>
           </div>

@@ -34,6 +34,8 @@ import {
 import MathText from "@/components/MathText";
 import AdBanner from "@/components/AdBanner";
 import ReportButton from "@/components/ReportButton";
+import CollectQuestionButton from "@/components/CollectQuestionButton";
+import { saveUserAttempt } from "@/lib/user-attempts-store";
 import { translateSingleQuestion } from "@/lib/translator";
 
 // Audio chime using Web Audio API (Zero external dependencies)
@@ -624,6 +626,32 @@ export default function SpeedTestClient() {
     });
   }, [phase, questions, answers, reviewFilter]);
 
+  // Auto-save speed test attempt to user dashboard history
+  const hasSavedSpeedAttemptRef = useRef(false);
+  useEffect(() => {
+    if (phase === "results" && resultsData && !hasSavedSpeedAttemptRef.current) {
+      hasSavedSpeedAttemptRef.current = true;
+      saveUserAttempt({
+        type: "speed_test",
+        title: `Speed Test: ${selectedSubject === "all" ? "Mixed Rapid Drill" : selectedSubject.toUpperCase()} (${timerType === "blitz" ? "20s Blitz" : "15m Sectional"})`,
+        subject: selectedSubject === "all" ? "Mixed" : selectedSubject,
+        mode: selectedMode,
+        totalQuestions: questions.length,
+        attempted: resultsData.attempted,
+        correct: resultsData.correct,
+        incorrect: resultsData.incorrect,
+        unattempted: resultsData.skipped,
+        score: resultsData.score,
+        maxScore: resultsData.maxScore,
+        accuracy: resultsData.accuracy,
+        timeSpentSeconds: totalTimeSpent,
+      });
+    }
+    if (phase === "setup") {
+      hasSavedSpeedAttemptRef.current = false;
+    }
+  }, [phase, resultsData, questions.length, selectedSubject, timerType, selectedMode, totalTimeSpent]);
+
   // ==========================================
   // VIEW 1: SETUP & LAUNCHPAD (Website Light Theme)
   // ==========================================
@@ -1171,6 +1199,24 @@ export default function SpeedTestClient() {
                 </div>
 
                 <div className="flex items-center gap-2">
+                  <CollectQuestionButton
+                    question={{
+                      questionId: currentQ.originalId,
+                      question_text: currentQ.question_text,
+                      question_text_hi: currentQ.question_text_hi,
+                      option_a: currentQ.option_a,
+                      option_b: currentQ.option_b,
+                      option_c: currentQ.option_c,
+                      option_d: currentQ.option_d,
+                      correct_answer: currentQ.correct_answer,
+                      explanation: currentQ.explanation,
+                      subject: currentQ.subject,
+                      topic: currentQ.topic,
+                      source: "speed_test",
+                      sourceTitle: `Speed Test: ${currentQ.subject}`,
+                    }}
+                    showLabel={true}
+                  />
                   <ReportButton
                     questionId={currentQ.originalId}
                     questionText={currentQ.question_text}
@@ -1664,6 +1710,24 @@ export default function SpeedTestClient() {
                         </div>
 
                         <div className="flex items-center gap-2">
+                          <CollectQuestionButton
+                            question={{
+                              questionId: q.originalId,
+                              question_text: q.question_text,
+                              question_text_hi: q.question_text_hi,
+                              option_a: q.option_a,
+                              option_b: q.option_b,
+                              option_c: q.option_c,
+                              option_d: q.option_d,
+                              correct_answer: q.correct_answer,
+                              explanation: q.explanation,
+                              subject: q.subject,
+                              topic: q.topic,
+                              source: "speed_test",
+                              sourceTitle: `Speed Test: ${q.subject}`,
+                            }}
+                            showLabel={false}
+                          />
                           <ReportButton
                             questionId={q.originalId}
                             questionText={q.question_text}

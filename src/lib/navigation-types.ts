@@ -53,7 +53,7 @@ export const DEFAULT_NAVIGATION_CONFIG: NavigationConfig = {
       name: "PYQ Papers",
       href: "/papers",
       icon: "FileText",
-      badge: "2025 Live",
+      badge: "2026 Live",
       is_dropdown: false,
       is_active: true,
       sort_order: 2,

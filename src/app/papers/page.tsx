@@ -65,6 +65,15 @@ export default function PapersPage() {
           test_type: isAllowed ? (p.test_type === "mock" ? "pyq" : p.test_type || "pyq") : "mock"
         };
       });
+
+      // Always sort most recent year (e.g. 2026) first
+      fetched.sort((a: any, b: any) => {
+        const ya = Number(a.year) || (a.title?.includes("2026") ? 2026 : 2025);
+        const yb = Number(b.year) || (b.title?.includes("2026") ? 2026 : 2025);
+        if (yb !== ya) return yb - ya;
+        return (b.id || 0) - (a.id || 0);
+      });
+
       setPapers(fetched);
     } finally {
       setLoading(false);
@@ -90,7 +99,7 @@ export default function PapersPage() {
     papers.forEach((p) => {
       if (p.year) yrs.add(Number(p.year));
     });
-    [2025, 2024, 2023, 2022].forEach((y) => yrs.add(y));
+    [2026, 2025, 2024, 2023, 2022].forEach((y) => yrs.add(y));
     return Array.from(yrs).sort((a, b) => b - a);
   }, [papers]);
 

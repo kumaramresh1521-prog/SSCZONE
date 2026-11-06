@@ -64,7 +64,7 @@ function parsePaperMeta(p: any) {
   }
 
   const examTitle = (p.exams?.title || "SSC CGL").toUpperCase().trim();
-  const year = Number(p.year) || 2025;
+  const year = Number(p.year) || (title.includes("2026") ? 2026 : 2025);
   const folderKey = `${examTitle}__${year}__${tier}`;
 
   return {
@@ -212,7 +212,7 @@ export default function PapersPage() {
   // ─────────────────────────────────────────────────────────────
   const [showBulkModal, setShowBulkModal] = useState(false);
   const [bulkExamId, setBulkExamId] = useState<number>(1);
-  const [bulkYear, setBulkYear] = useState<string>("2025");
+  const [bulkYear, setBulkYear] = useState<string>("2026");
   const [bulkTier, setBulkTier] = useState<string>("Tier-I");
   const [bulkPaperId, setBulkPaperId] = useState<number | "new">("new");
   const [bulkNewShiftName, setBulkNewShiftName] = useState<string>("");
@@ -345,8 +345,9 @@ export default function PapersPage() {
 
   const allFolders = useMemo(() => {
     return Array.from(foldersMap.values()).sort((a, b) => {
-      if (a.examTitle !== b.examTitle) return a.examTitle.localeCompare(b.examTitle);
+      // Most recent year (e.g. 2026) always on top
       if (b.year !== a.year) return b.year - a.year;
+      if (a.examTitle !== b.examTitle) return a.examTitle.localeCompare(b.examTitle);
       return a.tier.localeCompare(b.tier);
     });
   }, [foldersMap]);

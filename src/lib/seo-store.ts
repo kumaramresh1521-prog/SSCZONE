@@ -77,7 +77,7 @@ const DEFAULT_SEO_CONFIG: SeoConfigData = {
   },
   pageOverrides: {
     "/papers": {
-      "title": "SSC PYQ Shift Papers 2025 Live — Download PDF & Attempt CBT Test",
+      "title": "SSC PYQ Shift Papers 2026 Live — Download PDF & Attempt CBT Test",
       "description": "Download clean official SSC CGL, CHSL, CPO shift paper PDFs with SSC Zone branding and attempt online CBT mock tests with instant scorecards."
     }
   }

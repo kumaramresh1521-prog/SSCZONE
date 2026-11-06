@@ -21,6 +21,7 @@ import {
 import toast from "react-hot-toast";
 import MathText from "@/components/MathText";
 import { supabase } from "@/lib/supabase";
+import { getUserCollectedQuestions, removeCollectedQuestion } from "@/lib/user-attempts-store";
 
 type BookmarkRecord = {
   id: number;
@@ -133,54 +134,71 @@ export default function BookmarksPage() {
           .eq("user_id", user.id)
           .order("created_at", { ascending: false });
 
-        if (bookmarksError) throw bookmarksError;
-        if (!bookmarks || bookmarks.length === 0) {
-          if (!cancelled) setSavedQuestions([]);
-          return;
+        let nextSavedQuestions: SavedQuestion[] = [];
+
+        if (bookmarks && bookmarks.length > 0) {
+          const questionIds = bookmarks.map((b: BookmarkRecord) => b.question_id);
+          const { data: questions, error: questionsError } = await supabase
+            .from("questions")
+            .select("*")
+            .in("id", questionIds);
+
+          if (!questionsError && questions) {
+            const topicIds = Array.from(new Set(questions.map((q: Question) => q.topic_id)));
+            const { data: topics } = topicIds.length
+              ? await supabase.from("topics").select("id, title, slug, subject_id").in("id", topicIds)
+              : { data: [] };
+
+            const subjectIds = Array.from(new Set((topics || []).map((t: Topic) => t.subject_id)));
+            const { data: subjects } = subjectIds.length
+              ? await supabase.from("subjects").select("id, title").in("id", subjectIds)
+              : { data: [] };
+
+            const questionById = new Map(questions.map((q: Question) => [q.id, q]));
+            const topicById = new Map((topics || []).map((t: Topic) => [t.id, t]));
+            const subjectById = new Map((subjects || []).map((s: Subject) => [s.id, s]));
+
+            nextSavedQuestions = bookmarks.flatMap((b: BookmarkRecord) => {
+              const q = questionById.get(b.question_id);
+              if (!q) return [];
+              const topic = topicById.get(q.topic_id) || null;
+              return [{
+                ...q,
+                bookmarkId: b.id,
+                tag: b.tag || "Standard",
+                topic,
+                subject: topic ? subjectById.get(topic.subject_id) || null : null,
+              }];
+            });
+          }
         }
 
-        const questionIds = bookmarks.map((b: BookmarkRecord) => b.question_id);
-        const { data: questions, error: questionsError } = await supabase
-          .from("questions")
-          .select("*")
-          .in("id", questionIds);
+        // Merge local collected questions from Speed Tests and Daily Quizzes
+        const localCollected = getUserCollectedQuestions();
+        const existingTexts = new Set(nextSavedQuestions.map((q) => q.question_text.trim()));
 
-        if (questionsError) throw questionsError;
+        const localSavedQuestions: SavedQuestion[] = localCollected
+          .filter((lc) => !existingTexts.has(lc.question_text.trim()))
+          .map((lc, idx) => ({
+            id: lc.questionId || (990000 + idx),
+            topic_id: 0,
+            question_text: lc.question_text,
+            option_a: lc.option_a,
+            option_b: lc.option_b,
+            option_c: lc.option_c,
+            option_d: lc.option_d,
+            correct_answer: lc.correct_answer,
+            explanation: lc.explanation || null,
+            image_url: null,
+            exam_tag: lc.source === "speed_test" ? "Speed Drill" : lc.source === "daily_quiz" ? "Daily Quiz" : "PYQ",
+            tier_level: null,
+            bookmarkId: (990000 + idx),
+            tag: lc.tag || "Standard",
+            topic: { id: 0, title: lc.topic || lc.sourceTitle || "Rapid Drill", subject_id: 0 },
+            subject: { id: 0, title: lc.subject || "General" },
+          }));
 
-        const topicIds = Array.from(new Set((questions || []).map((q: Question) => q.topic_id)));
-        const { data: topics, error: topicsError } = topicIds.length
-          ? await supabase.from("topics").select("id, title, slug, subject_id").in("id", topicIds)
-          : { data: [], error: null };
-
-        if (topicsError) throw topicsError;
-
-        const subjectIds = Array.from(new Set((topics || []).map((t: Topic) => t.subject_id)));
-        const { data: subjects, error: subjectsError } = subjectIds.length
-          ? await supabase.from("subjects").select("id, title").in("id", subjectIds)
-          : { data: [], error: null };
-
-        if (subjectsError) throw subjectsError;
-        if (cancelled) return;
-
-        const questionById = new Map((questions || []).map((q: Question) => [q.id, q]));
-        const topicById = new Map((topics || []).map((t: Topic) => [t.id, t]));
-        const subjectById = new Map((subjects || []).map((s: Subject) => [s.id, s]));
-
-        const nextSavedQuestions = bookmarks.flatMap((b: BookmarkRecord) => {
-          const q = questionById.get(b.question_id);
-          if (!q) return [];
-
-          const topic = topicById.get(q.topic_id) || null;
-          return [{
-            ...q,
-            bookmarkId: b.id,
-            tag: b.tag || "Standard",
-            topic,
-            subject: topic ? subjectById.get(topic.subject_id) || null : null,
-          }];
-        });
-
-        setSavedQuestions(nextSavedQuestions);
+        setSavedQuestions([...nextSavedQuestions, ...localSavedQuestions]);
       } catch {
         failed = true;
         if (!cancelled) {
@@ -251,8 +269,13 @@ export default function BookmarksPage() {
     setRemovingId(bookmarkId);
 
     try {
-      const { error } = await supabase.from("bookmarks").delete().eq("id", bookmarkId);
-      if (error) throw error;
+      const q = savedQuestions.find((item) => item.bookmarkId === bookmarkId);
+      if (q) {
+        removeCollectedQuestion(q.id || q.question_text);
+      }
+      if (bookmarkId < 990000) {
+        await supabase.from("bookmarks").delete().eq("id", bookmarkId);
+      }
 
       setSavedQuestions((current) => current.filter((q) => q.bookmarkId !== bookmarkId));
       toast.success("Removed from saved questions.");

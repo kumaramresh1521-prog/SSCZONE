@@ -40,6 +40,8 @@ import {
 import MathText from "@/components/MathText";
 import AdBanner from "@/components/AdBanner";
 import ReportButton from "@/components/ReportButton";
+import CollectQuestionButton from "@/components/CollectQuestionButton";
+import { saveUserAttempt } from "@/lib/user-attempts-store";
 import { translateSingleQuestion } from "@/lib/translator";
 import type { DailyQuiz, DailyQuizQuestion } from "@/lib/daily-quiz-store";
 
@@ -464,6 +466,38 @@ export default function DailyQuizClient() {
     playChime("finish");
     setQuizState("submitted");
     window.scrollTo({ top: 0, behavior: "smooth" });
+
+    if (activeQuiz && activeQuiz.questions) {
+      let correct = 0;
+      let incorrect = 0;
+      let unattempted = 0;
+      activeQuiz.questions.forEach((q) => {
+        const ans = userAnswers[q.id];
+        if (!ans) unattempted++;
+        else if (ans.toUpperCase() === q.correct_answer.toUpperCase()) correct++;
+        else incorrect++;
+      });
+      const score = Number((correct * 2.0 - incorrect * 0.5).toFixed(2));
+      const maxScore = activeQuiz.questions.length * 2;
+      const attempted = correct + incorrect;
+      const accuracy = attempted > 0 ? Math.round((correct / attempted) * 100) : 0;
+
+      saveUserAttempt({
+        type: "daily_quiz",
+        title: activeQuiz.title,
+        subject: activeQuiz.subject,
+        targetExam: activeQuiz.target_exam,
+        totalQuestions: activeQuiz.questions.length,
+        attempted,
+        correct,
+        incorrect,
+        unattempted,
+        score,
+        maxScore,
+        accuracy,
+        timeSpentSeconds: timeSpent,
+      });
+    }
   }
 
   // Result Metrics Calculation (+2 for correct, -0.5 for incorrect)
@@ -649,6 +683,23 @@ export default function DailyQuizClient() {
                 </div>
 
                 <div className="flex items-center gap-2">
+                  <CollectQuestionButton
+                    question={{
+                      questionId: getNumericId(currentQuestion.id, currentIndex),
+                      question_text: currentQuestion.question_text,
+                      question_text_hi: currentQuestion.question_text_hi,
+                      option_a: currentQuestion.option_a,
+                      option_b: currentQuestion.option_b,
+                      option_c: currentQuestion.option_c,
+                      option_d: currentQuestion.option_d,
+                      correct_answer: currentQuestion.correct_answer,
+                      explanation: currentQuestion.explanation,
+                      subject: activeQuiz.subject,
+                      source: "daily_quiz",
+                      sourceTitle: activeQuiz.title,
+                    }}
+                    showLabel
+                  />
                   {/* Flag / Report Question Button */}
                   <ReportButton
                     questionId={getNumericId(currentQuestion.id, currentIndex)}
@@ -1099,12 +1150,31 @@ export default function DailyQuizClient() {
                       )}
                     </div>
 
-                    {/* Report Button on review questions */}
-                    <ReportButton
-                      questionId={getNumericId(q.id, qIdx)}
-                      questionText={q.question_text}
-                      showLabel
-                    />
+                    <div className="flex items-center gap-2">
+                      <CollectQuestionButton
+                        question={{
+                          questionId: getNumericId(q.id, qIdx),
+                          question_text: q.question_text,
+                          question_text_hi: q.question_text_hi,
+                          option_a: q.option_a,
+                          option_b: q.option_b,
+                          option_c: q.option_c,
+                          option_d: q.option_d,
+                          correct_answer: q.correct_answer,
+                          explanation: q.explanation,
+                          subject: activeQuiz.subject,
+                          source: "daily_quiz",
+                          sourceTitle: activeQuiz.title,
+                        }}
+                        showLabel
+                      />
+                      {/* Report Button on review questions */}
+                      <ReportButton
+                        questionId={getNumericId(q.id, qIdx)}
+                        questionText={q.question_text}
+                        showLabel
+                      />
+                    </div>
                   </div>
 
                   {/* Question statement */}

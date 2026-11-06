@@ -1,0 +1,766 @@
+Q.1: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p2_x26.jpeg)
+A. 59 - 97
+B. 23 - 73
+C. 31 - 59
+D. 89 - 31
+Answer: A
+
+Q.2: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p2_x27.jpeg)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p2_x28.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p2_x29.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p2_x30.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_q2_opt_D.png)
+Answer: A
+
+Q.3: Which answer figure will complete the pattern in the question figure?
+
+![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p2_x33.jpeg)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p2_x34.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p2_x35.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_q3_opt_C.png)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_q3_opt_D.png)
+Answer: A
+
+Q.4: Select the image that embeds the following figure.
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p2_x36.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p2_x37.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p2_x38.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p2_x39.jpeg)
+Answer: D
+
+Q.5: In a class of 100 students, 60 like tea, 50 like coffee, and 30 like both. How many like only tea?
+A. 30
+B. 40
+C. 45
+D. 35
+Answer: A
+
+Q.6: Among 30 students, 18 like Math, 12 like Science, and 6 like both. How many like only Science?
+A. 6
+B. 12
+C. 9
+D. 10
+Answer: A
+
+Q.7: The sum of even numbers up to 242 is?
+A. 14755
+B. 14423
+C. 14000
+D. 14762
+Answer: D
+
+Q.8: Find the missing number in the following series: 9, 9, 12, ?, 35, 59
+A. 18
+B. 20
+C. 22
+D. 28
+Answer: B
+
+Q.9: Anil stands 10th from the top and 21st from the bottom. How many students are there in the class?
+A. 31
+B. 29
+C. 30
+D. 28
+Answer: C
+
+Q.10: Which two signs should be interchanged to make the given equation correct? 40 ÷ 8 × 5 + 15 − 2 = 30
+A. × and +
+B. ÷ and +
+C. + and -
+D. × and -
+Answer: D
+
+Q.11: In the following question a statement is given followed by some assumptions. Read the assumptions carefully and choose the appropriate option.
+
+Statement: Kindly save a backup of all project files before updating the software. Assumptions:
+
+I. Updating the software may affect existing files.
+
+II. Preserving project files is important.
+A. Only I is implicit.
+B. Only II is implicit.
+C. Neither I nor II is implicit.
+D. Both I and II are implicit.
+Answer: A
+
+Q.12: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p3_x271.jpeg)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_q12_opt_A.png)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_q12_opt_B.png)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_q12_opt_C.png)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_q12_opt_D.png)
+Answer: A
+
+Q.13: Complete the pattern in fig.
+
+(X) by selecting one of the figures from the four alternatives : Figure(X): 2
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p3_x276.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p3_x277.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p3_x278.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p3_x279.jpeg)
+Answer: B
+
+Q.14: Which of the following rows/columns are connected/related with each other in some way? Rows Columns I II III IV V 1 21 42 3 15 30 2 18 42 4 20 40 3 24 48 5 25 50 4 27 54 6 30 60 5 30 60 7 35 70
+A. Columns II, III and
+B. Columns II, IV and V V
+C. Columns III, IV and
+D. Columns I, III and V V
+Answer: C
+
+Q.15: From a psychological perspective, which type of individual is typically the hardest to manipulate or influence?
+A. Someone who possesses deep self- awareness of their own motives and values.
+B. Someone who acts purely on emotional impulses.
+C. Someone who is highly conforming to social proof.
+D. Someone who is currently confused and looking for direction.
+Answer: A
+
+Q.16: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p3_x280.jpeg)
+A. A
+B. B
+C. C
+D. D
+Answer: A
+
+Q.17: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p4_x529.jpeg)
+A. A
+B. B
+C. C
+D. D
+Answer: A
+
+Q.18: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p4_x530.jpeg)
+A. 1
+B. 3
+C. 2
+D. 5
+Answer: A
+
+Q.19: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p4_x531.jpeg)
+A. 2
+B. 1
+C. 5
+D. 4
+Answer: A
+
+Q.20: Fill in the blanks (_) using one of the following four options such that the series follows a specific pattern in the given order. m_om mn_m _nom mn_m
+A. onmo
+B. nomo
+C. monm
+D. nnmo
+Answer: A
+
+Q.21: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p4_x532.jpeg)
+A. 4
+B. 3
+C. 2
+D. 1
+Answer: A
+
+Q.22: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p4_x533.jpeg)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p4_x534.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p4_x535.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p4_x536.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p4_x537.jpeg)
+Answer: A
+
+Q.23: Read the given situation carefully and consider all the relevant facts, conditions and constraints. Choose the option that represents the most appropriate, practical and logical decision based solely on the information provided. A non-profit foundation provides medical treatment grants to senior citizens who are above 60 years old, do not have any active health insurance policy and have an annual household income under $15,000. Mrs. Sharma is 67 years old, does not have any health insurance coverage and has a documented annual household income of $12,500. What decision should the foundation take?
+A. The application should be referred to the Trust Chairman.
+B. The senior citizen should be rejected for the medical grant.
+C. The senior citizen should be selected for the medical grant.
+D. The data provided is inadequate to take a decision.
+Answer: A
+
+Q.24: Choose the odd group.
+A. ACEG
+B. BDFH
+C. CEGJ
+D. DFHJ
+Answer: A
+
+Q.25: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p5_x786.jpeg)
+A. A
+B. B
+C. C
+D. D
+Answer: A
+
+Q.26: In open market operations, the RBI buys and sells ________ to regulate the money supply.
+A. shares
+B. debentures
+C. government
+D. bonds securities
+Answer: C
+
+Q.27: Which Sultan of Delhi introduced the token currency made of copper and brass in 1329 AD?
+A. Firoz Shah
+B. Muhammad bin Tughlaq Tughlaq
+C. Alauddin Khalji
+D. Ghiyâsuddin Tughlaq
+Answer: B
+
+Q.28: Which one of the following countries is NOT a member of BIMSTEC?
+A. Maldives
+B. Bhutan
+C. Myanmar
+D. Sri Lanka
+Answer: A
+
+Q.29: Which government initiative primarily focuses on improving the nutritional outcomes for children, pregnant women, and lactating mothers?
+A. National Health Mission (NHM)
+B. Integrated Child Development Services (ICDS) Scheme
+C. Poshan Abhiyaan (National Nutrition Mission)
+D. Pradhan Mantri Matru Vandana Yojana (PMMVY)
+Answer: C
+
+Q.30: The "Pradhan Mantri Matsya Sampada Yojana (PMMSY)" focuses on a specific sector of the Indian economy. Which sector does this scheme primarily aim to develop?
+A. Dairy and animal husbandry 4 AWARENESS
+B. Textile and garment industry
+C. Fisheries and aquaculture
+D. Renewable energy generation
+Answer: C
+
+Q.31: Which Indian city hosted the first-ever Women's Premier League (WPL) final in 2023, and which team won the trophy?
+A. Mumbai, Mumbai
+B. Delhi, Mumbai Indians Indians
+C. Delhi, Delhi
+D. Mumbai, Delhi Capitals Capitals
+Answer: A
+
+Q.32: Which Indian-origin author won the Women's Prize for Fiction in 2023 for "Demon Copperhead", inspired by Dickens' David Copperfield?
+A. Kamila Shamsie
+B. Arundhati Roy
+C. Barbara
+D. Jhumpa Lahiri Kingsolver
+Answer: A
+
+Q.33: Who among the following is the first and only Indian woman to score hat-trick in Hockey in Olympics?
+A. Vandana Katariya
+B. Ritu Rani
+C. Savita Punia
+D. Rani Rampal
+Answer: A
+
+Q.34: Which of the following pairs are correctly matched?
+
+1. Rigveda – Oldest Vedic text
+
+2. Dholavira – Evidence of water reservoirs
+
+3. Ashvamedha – Post-Mauryan ritual
+A. 1 and 2 only
+B. 2 and 3 only
+C. 1 and 3 only
+D. 1, 2, and 3
+Answer: A
+
+Q.35: Which of the following forest species is not characteristic of Deciduous forests?
+A. Teak
+B. Sal
+C. Sandalwood
+D. Deodar
+Answer: D
+
+Q.36: What is a distinctive feature of the pillars erected by Emperor Ashoka?
+A. Topped with lotus-shaped capitals
+B. Decorated with bronze animal figures
+C. Carved with floral and tribal motifs
+D. Crowned with animal figures
+Answer: D
+
+Q.37: Which of the below statement(s) is/are incorrect about B-cells:
+
+1. Produce antibodies
+
+2. Mature in thymus
+
+3. Part of adaptive immunity
+
+4. Derived from bone marrow
+A. 2 only
+B. 1 and 3
+C. 3 and 4
+D. 1, 2, 3 and 4 all
+Answer: A
+
+Q.38: What was the main goal of the Mangrove CoManagement Committee formed in Navghar under the climate resilience project?
+A. To promote seasonal fishing and crab collection
+B. To protect mangroves and revive local livelihoods
+C. To increase tourism in coastal Maharashtra
+D. To replace mangroves with modern aquaculture farms
+Answer: B
+
+Q.39: Coffee variety mainly grown in India is:
+A. Assamica
+B. Arabica
+C. Liberica
+D. Hybrid
+Answer: B
+
+Q.40: What was the total number of gold medals won by India at the 2022 Commonwealth Games?
+A. 22
+B. 24
+C. 26
+D. 30
+Answer: A
+
+Q.41: What was the main source of revenue or support for the rajan in early Rigvedic society?
+A. Royal judicial fines
+B. Land tax collection
+C. Voluntary bali
+D. Mandatory offerings currency tribute
+Answer: C
+
+Q.42: Who is serving as the Chairperson of the Competition Commission of India (CCI) in 2026, responsible for regulating digital markets and preventing anti-competitive practices?
+A. Ravneet Kaur
+B. Sangeeta Verma
+C. Ashok Kumar
+D. Navneet Munot Gupta
+Answer: A
+
+Q.43: A villager becomes aware of a planned offence falling under one of the categories listed in Section 33 of the Bharatiya Nyaya Sanhita, 2023 in India. He deliberately withholds the information and later contends that the prosecution must prove the absence of a reasonable excuse for such nondisclosure. Which of the following statements is legally correct?
+A. The prosecution must prove the absence of a reasonable excuse beyond reasonable doubt.
+B. The burden lies on the accused to prove a reasonable excuse for non-disclosure.
+C. Silence alone cannot attract legal consequences under BNSS (Bharatiya Nagarik Suraksha Sanhita).
+D. The burden shifts to the magistrate conducting the inquiry.
+Answer: B
+
+Q.44: Which of the following best reflects the intent of Article 44 of the Indian Constitution regarding the Uniform Civil Code (UCC)?
+A. It is impossible due to diversity.
+B. It is already fully implemented.
+C. It requires balanced, inclusive, and gradual implementation.
+D. It should be rejected completely.
+Answer: C
+
+Q.45: Consider the following statements regarding the Dravida style of temple architecture:
+
+1. Dravida temples are typically enclosed within a compound wall.
+
+2. The main entrance gateway to the temple complex is known as a Gopuram. Which of the statements given above is/are correct?
+A. 1 only
+B. 2 only
+C. Both 1 and 2
+D. Neither 1 nor 2
+Answer: C
+
+Q.46: As per the Animal Discoveries 2025 report released by the Zoological Survey of India
+
+(ZSI) in June 2026, what is the total number of new faunal records added to India's biodiversity database?
+A. 226
+B. 353
+C. 483
+D. 709
+Answer: C
+
+Q.47: Which of the following Government of India missions primarily aims to improve watersupply, sewerage, and septage-management infrastructure in urban areas?
+A. Pradhan Mantri Gram Sadak Yojana (PMGSY)
+B. National Solar Mission (NSM)
+C. Deendayal Antyodaya Yojana-National Urban Livelihoods Mission (DAY-NULM)
+D. Atal Mission for Rejuvenation and Urban Transformation (AMRUT)
+Answer: D
+
+Q.48: Which of the following is commonly cited as a major advantage of privatisation?
+A. It guarantees the achievement of all social- welfare objectives and equitable outcomes
+B. It removes competition from the market and reduces market rivalry
+C. It eliminates every form of market failure and economic inefficiency
+D. It may improve organisational accountability and operational efficiency
+Answer: D
+
+Q.49: Under India’s National Air Quality Index framework, at least one of the pollutants used for calculating Air Quality Index (AQI) must be which of the following?
+A. Ammonia (NH3) or lead (Pb)
+B. Carbon monoxide (CO) or ozone (O3)
+C. Sulphur dioxide (SO2) or nitrogen dioxide (NO2)
+D. Particulate matter (PM2.5) or particulate matter (PM10)
+Answer: D
+
+Q.50: Which emerging powers contributed to the decline of Karkota political influence in northern India after the death of Lalitaditya Muktapida?
+A. The Guptas and the Vardhanas
+B. The Palas and the Gurjara Pratiharas
+C. The Rashtrakutas and the Cholas
+D. The Delhi Sultanate and the Bengal Sultanate
+Answer: B
+
+Q.51: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p7_x1321.jpeg)
+A. 75
+B. 85
+C. 90
+D. 80
+Answer: A
+
+Q.52: Rohit completes four journeys, each covering the same distance. His speed during the first journey is 400 km/h, and for each subsequent journey, his speed becomes half of the previous one. Find the approximate average speed/all four journeys.
+A. 95.70 km/h
+B. 110.75 km/h
+C. 98.90 km/h
+D. 106.67 km/h
+Answer: A
+
+Q.53: A, B, and C started a partnership by investing capital such that A's capital is 125% of B's capital and B's capital is 80% of C's capital. A stayed in the business for the full year, B left after 9 months, and C joined 3 months after the start. Find the ratio of their profit shares at the end of the year.
+A. 4 : 12 : 3
+B. 10 : 9 : 12
+C. 20 : 12 : 15
+D. 9 : 12 : 15
+Answer: A
+
+Q.54: A and B form a partnership by making investments in the ratio of 4 : 7. Five months later, A withdraws Rs. 1,000, and B withdraws Rs. 2,000. After one year, the profit share is 29 : 49. Determine the initial investment made by A.
+A. ₹5,200
+B. ₹3,000
+C. ₹4,500
+D. ₹6,000
+Answer: A
+
+Q.55: The average of 5 numbers is 20. If each number is multiplied by 2, what will be the new average?
+A. 30
+B. 40
+C. 20
+D. 10
+Answer: B
+
+Q.56: An equilateral triangle with side 12 cm is inscribed in a circle. What is the radius of the circle?
+A. 4√7 cm
+B. 6√7 cm
+C. 4√3 cm
+D. 6√3 cm
+Answer: C
+
+Q.57: The cost price of two articles is the same. One is sold at a profit of 15% and the other is sold at a profit of 12%. If the difference between their selling prices is $18, what is the cost price of each article?
+A. $600
+B. $500
+C. $300
+D. $200
+Answer: A
+
+Q.58: In ΔABC, ∠A = 66° and ∠B = 50°. If the bisectors of ∠B and ∠C meet at P, then find the value of ∠BPC - ∠PCA?
+A. 100°
+B. 91°
+C. 60°
+D. 73°
+Answer: B
+
+Q.59: From the top of a lighthouse, a ship is seen approaching. The angle of depression changes from 45° to 60° in 6 minutes. Find the approximate time taken to reach the lighthouse from that position.
+A. 6 mins
+B. 5 mins
+C. 8 mins
+D. 10 mins
+Answer: A
+
+Q.60: In an isosceles trapezium, the parallel sides are 10 cm and 22 cm, and the area is 192 cm². Find the length of the non-parallel sides.
+A. 6 cm
+B. 6√5 cm
+C. 3 cm
+D. 3√5 cm
+Answer: A
+
+Q.61: If 3 sin θ + 4 cos θ = 5, find the value of sin θ.
+A. 6/5
+B. 4/5
+C. 3/5
+D. 1/5
+Answer: C
+
+Q.62: If 5 sin θ + 12 cos θ = 13, then find the value of sin θ.
+A. 2/13
+B. 5/13
+C. 11/13
+D. 12/13
+Answer: D
+
+Q.63: Find the value of √23 −2√132 − 1 . √23−2√132
+A. −2√11
+B. 2√11
+C. −2√12
+D. 2√12
+Answer: A
+
+Q.64: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p9_x1924.jpeg)
+A. 53.7%
+B. 29.1%
+C. 46.3%
+D. 73.5%
+Answer: A
+
+Q.65: A person buys a bag at a 20% discount. If the discount were 30%, the price paid would decrease by ₹150. What is the marked price of the bag?
+A. ₹1200
+B. ₹1500
+C. ₹2100
+D. ₹2500
+Answer: B
+
+Q.66: The marked price of an article is ₹1200. It is sold for ₹768 after two successive discounts of x% each. If instead a single discount of 2x% is applied on the same marked price, what will be the selling price of the article?
+A. ₹660
+B. ₹700
+C. ₹720
+D. ₹680
+Answer: C
+
+Q.67: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p9_x1925.jpeg)
+A. 62°
+B. 54°
+C. 48°
+D. 37°
+Answer: B
+
+Q.68: Let A = {all finite subsets of N} and B = {all infinite subsets of N}. Which is correct?
+A. |A| = ℵ0, |B| = ℵ0
+B. |A| = ℵ0, |B| = 2ℵ0
+C. |A| = 2ℵ0, |B| = 2ℵ0
+D. |A| = ℵ1, |B| = 2ℵ0
+Answer: B
+
+Q.69: If √0.03 × 0.3 × a= 0.3 × √0.3 , find a.
+A. 0.03
+B. 0.3
+C. 3
+D. 30
+Answer: C
+
+Q.70: Sharanya's bag has 50-paise, 25-paise and 10-paise coins. The ratio of the total monetary value of the 50-paise to the 25paise coins is 3:
+
+2. The ratio of the total number of 25-paise coins to 10-paise coins is 4:
+
+5. If the total number of coins in the bag is 480, calculate the total monetary value of all the coins in the bag.
+A. Rs. 160
+B. Rs. 150
+C. Rs. 130
+D. Rs. 120
+Answer: B
+
+Q.71: If p - q = 11 and pq = 30, find the value of p²+ q2.
+A. 181
+B. 61
+C. 91
+D. 121
+Answer: A
+
+Q.72: A student's average marks in 8 tests were 74. To achieve an average of at least 76 after 9 tests, what minimum marks must the student score in the ninth test?
+A. 76
+B. 90
+C. 92
+D. 94
+Answer: C
+
+Q.73: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p10_x2247.jpeg)
+A. 70 units; January
+B. 60 units; January
+C. 60 units; February
+D. 70 units; February
+Answer: D
+
+Q.74: If x ≠ 0 and x−1 x= 2 , what is the value of x6 + 1 ? x6
+A. 194
+B. 196
+C. 198
+D. 204
+Answer: C
+
+Q.75: In villages P and Q, women constitute 3 and 7 5 of their respective populations. The number of men in Q is 20% greater than the number of men in P. If the two villages together contain 3,150 women, what is the total population of village P?
+A. 3,430
+B. 3,360
+C. 3,500
+D. 3,600
+Answer: A
+
+Q.76: Choose the correct indirect speech form of the following sentence. The teacher said, "Go to the classroom."
+A. The teacher told the students that they must go to the classroom.
+B. The teacher ordered the students to go to the classroom.
+C. The teacher asked the students to go to the classroom.
+D. The teacher said to the students going to the classroom.
+Answer: B
+
+Q.77: Complete the collocation by choosing a suitable word to fill in the blank. The lawyer managed to ______ access to confidential documents.
+A. obtain
+B. gain
+C. receive
+D. attain
+Answer: B
+
+Q.78: Fill in the blank with appropriate parts of speech. The scientist was awarded a medal ______ her groundbreaking contributions to molecular biology.
+A. because
+B. although
+C. owing to
+D. lest
+Answer: C
+
+Q.79: Choose the correct phrase for the word highlighted in bold. Ravi and his neighbour are always at loggerheads.
+A. Always in
+B. Constantly in agreement conflict
+C. Supporting each
+D. Ignoring each other other
+Answer: B
+
+Q.80: Choose the option that best improves the sentence by using the correct collocation highlighted in bold. The manager gave a suggestion to cancel the meeting.
+A. created a
+B. did a suggestion suggestion
+C. made a
+D. offered a suggest suggestion
+Answer: C
+
+Q.81: Choose the option that best improves the sentence by using the correct collocation highlighted in bold. She **gave a serious effort** to solve the complex puzzle.
+A. made a serious effort
+B. performed a serious effort
+C. established a serious effort
+D. operated a serious effort
+Answer: A
+
+Q.82: Fill in the blank with the appropriate tense. If technological advancements ________ at the current pace, we will soon witness innovations previously deemed impossible.
+A. continue
+B. continued
+C. had continued
+D. have continued
+Answer: A
+
+Q.83: Read the sentence below and choose the idiom meaning that best fits the context: “Meeta says she doesn’t want to become a big wheel in the company because she doesn’t want so much responsibility.” What does the idiom “a big wheel” mean in this context?
+A. A person who does physical work in the company
+B. A person who is important or powerful in an organization
+C. A person who constantly changes jobs in the company
+D. A person who causes problems in the company
+Answer: B
+
+Q.84: Choose the correct meaning of idiom: Put a good face on
+A. To appear angry despite happiness
+B. To act cheerfully despite adversity
+C. To distort the truth intentionally
+D. To change appearance for attention
+Answer: B
+
+Q.85: Choose the correct spelling of a word meaning 'abundant in growth, especially vegetation'.
+A. Luxuriant
+B. Luxuiriant
+C. Luxurient
+D. Luxureant
+Answer: A
+
+Q.86: Spot the correct spelling of a practitioner who treats musculoskeletal issues.
+A. Chiropracter
+B. Kiropractor
+C. Chiropractor
+D. Chirapractor
+Answer: C
+
+Q.87: Identify the misspelt word.
+A. Anathema
+B. Renumeration
+C. Obstreperous
+D. Epistolary
+Answer: B
+
+Q.88: Identify the misspelt word.
+A. Disconsolate
+B. Demagoguery
+C. Temerity
+D. Grandiloquent
+Answer: C
+
+Q.89: Find the part of the sentence that contains an error: No less than five hundred students (1)/ has enrolled in (2)/ the online preparatory course
+
+(3)/ for civil service exams. (4)
+A. 1
+B. 2
+C. 3
+D. 4
+Answer: B
+
+Q.90: Find the part of the sentence that contains an error: Rarely the department issues (1)/ such open calls for proposals (2)/ without internal approvals (3)/ from the steering committee.
+
+(4)
+A. 1
+B. 2
+C. 3
+D. 4
+Answer: A
+
+Q.91: Select the sentence containing the homonym of the highlighted word: The seal used on the treaty indicated mutual assent.
+A. The marine biologist studied a wounded seal.
+B. The seal was broken before the parcel arrived.
+C. The office uses a mechanical seal for certification.
+D. He pressed the seal onto the wax to formalize the pact.
+Answer: A
+
+Q.92: Select the sentence containing the homonym of the highlighted word: The monk noted a red incipit at the beginning of the psalm.
+A. The librarian traced the incipit of a Carolingian hymn.
+B. The choir sang the incipit before the full chant began.
+C. The weather forecaster tracked the storm's incipit.
+D. The scholar cataloged the incipit for liturgical use.
+Answer: C
+
+Q.93: Rearrange the following sentences in correct order to make a logical sentence P: as proxies for social legitimacy Q: Educational credentials R: operate S: in stratified economies
+A. QRSP
+B. PQRS
+C. QPSR
+D. QRPS
+Answer: D
+
+Q.94: Rearrange the following sentences in correct order to make a logical sentence P: in trans-border water negotiations Q: Hydro-political asymmetries R: continue to shape S: regional cooperation outcomes
+A. RQSP
+B. QSPR
+C. QRSP
+D. PQRS
+Answer: C
+
+Q.95: A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The economist said that had the reforms been implemented sooner, the economy would have recovered faster.
+A. "If the reforms had implemented sooner,
+the economy would recover faster," said
+the economist.
+B. "If the reforms had been implemented
+sooner, the economy recovered faster,"
+said the economist.
+C. "Had the reforms been implemented
+sooner, the economy would have recovered
+faster," said the economist.
+D. "If only the reforms had been implemented
+sooner, the economy will recover faster,"
+he said.
+Answer: C
+
+Q.96: **Comprehension (Q. 96 - 100):** In contemporary cognitive psychology, attention is regarded as the gateway of perception, ________ the selection and filtering of sensory information before it reaches conscious awareness. This mechanism determines how individuals construct their subjective reality in complex environments, thereby underpinning adaptive behavior and learning efficiency in everyday functioning. ________ (B) researchers have long debated its limitations, recent experimental findings suggest that attention is far more dynamic than previously assumed, particularly under conditions of high cognitive load and environmental uncertainty, which carries significant implications for designing effective cognitive training interventions. Psychologists often ________ (C) elaborate experiments involving divided attention tasks to examine how individuals allocate mental resources under varying conditions, especially when competing stimuli demand simultaneous processing, in both laboratory and real-world multitasking scenarios. Such studies reveal that cognitive overload can distort the mental ________ (D) of decision-making, leading to systematic errors in judgment and memory recall, thereby challenging earlier models of rational cognition within both clinical and educational assessments. Moreover, the role of attention is increasingly examined ________ (E) emotional regulation, highlighting its influence not only on perception but also on affective states, stress response, and interpersonal behaviour in both clinical psychology and applied neurocognitive research.
+
+---
+
+The correct option to fill in blank
+A. governing
+B. governed
+C. to govern
+D. governs
+Answer: A
+
+Q.97: **Comprehension (Q. 96 - 100):** In contemporary cognitive psychology, attention is regarded as the gateway of perception, ________ the selection and filtering of sensory information before it reaches conscious awareness. This mechanism determines how individuals construct their subjective reality in complex environments, thereby underpinning adaptive behavior and learning efficiency in everyday functioning. ________ (B) researchers have long debated its limitations, recent experimental findings suggest that attention is far more dynamic than previously assumed, particularly under conditions of high cognitive load and environmental uncertainty, which carries significant implications for designing effective cognitive training interventions. Psychologists often ________ (C) elaborate experiments involving divided attention tasks to examine how individuals allocate mental resources under varying conditions, especially when competing stimuli demand simultaneous processing, in both laboratory and real-world multitasking scenarios. Such studies reveal that cognitive overload can distort the mental ________ (D) of decision-making, leading to systematic errors in judgment and memory recall, thereby challenging earlier models of rational cognition within both clinical and educational assessments. Moreover, the role of attention is increasingly examined ________ (E) emotional regulation, highlighting its influence not only on perception but also on affective states, stress response, and interpersonal behaviour in both clinical psychology and applied neurocognitive research.
+
+---
+
+The correct connector for the blank
+A. Since
+B. Because
+C. Unless
+D. While
+Answer: A
+
+Q.98: **Comprehension (Q. 96 - 100):** In contemporary cognitive psychology, attention is regarded as the gateway of perception, ________ the selection and filtering of sensory information before it reaches conscious awareness. This mechanism determines how individuals construct their subjective reality in complex environments, thereby underpinning adaptive behavior and learning efficiency in everyday functioning. ________ (B) researchers have long debated its limitations, recent experimental findings suggest that attention is far more dynamic than previously assumed, particularly under conditions of high cognitive load and environmental uncertainty, which carries significant implications for designing effective cognitive training interventions. Psychologists often ________ (C) elaborate experiments involving divided attention tasks to examine how individuals allocate mental resources under varying conditions, especially when competing stimuli demand simultaneous processing, in both laboratory and real-world multitasking scenarios. Such studies reveal that cognitive overload can distort the mental ________ (D) of decision-making, leading to systematic errors in judgment and memory recall, thereby challenging earlier models of rational cognition within both clinical and educational assessments. Moreover, the role of attention is increasingly examined ________ (E) emotional regulation, highlighting its influence not only on perception but also on affective states, stress response, and interpersonal behaviour in both clinical psychology and applied neurocognitive research.
+
+---
+
+The correct phrasal verb for the blank
+A. bring up
+B. carry out
+C. set off
+D. take over
+Answer: B
+
+Q.99: **Comprehension (Q. 96 - 100):** In contemporary cognitive psychology, attention is regarded as the gateway of perception, ________ the selection and filtering of sensory information before it reaches conscious awareness. This mechanism determines how individuals construct their subjective reality in complex environments, thereby underpinning adaptive behavior and learning efficiency in everyday functioning. ________ (B) researchers have long debated its limitations, recent experimental findings suggest that attention is far more dynamic than previously assumed, particularly under conditions of high cognitive load and environmental uncertainty, which carries significant implications for designing effective cognitive training interventions. Psychologists often ________ (C) elaborate experiments involving divided attention tasks to examine how individuals allocate mental resources under varying conditions, especially when competing stimuli demand simultaneous processing, in both laboratory and real-world multitasking scenarios. Such studies reveal that cognitive overload can distort the mental ________ (D) of decision-making, leading to systematic errors in judgment and memory recall, thereby challenging earlier models of rational cognition within both clinical and educational assessments. Moreover, the role of attention is increasingly examined ________ (E) emotional regulation, highlighting its influence not only on perception but also on affective states, stress response, and interpersonal behaviour in both clinical psychology and applied neurocognitive research.
+
+---
+
+The most appropriate word for the blank
+A. architecture
+B. apparatus
+C. spectrum
+D. momentum
+Answer: D
+
+Q.100: **Comprehension (Q. 96 - 100):** In contemporary cognitive psychology, attention is regarded as the gateway of perception, ________ the selection and filtering of sensory information before it reaches conscious awareness. This mechanism determines how individuals construct their subjective reality in complex environments, thereby underpinning adaptive behavior and learning efficiency in everyday functioning. ________ (B) researchers have long debated its limitations, recent experimental findings suggest that attention is far more dynamic than previously assumed, particularly under conditions of high cognitive load and environmental uncertainty, which carries significant implications for designing effective cognitive training interventions. Psychologists often ________ (C) elaborate experiments involving divided attention tasks to examine how individuals allocate mental resources under varying conditions, especially when competing stimuli demand simultaneous processing, in both laboratory and real-world multitasking scenarios. Such studies reveal that cognitive overload can distort the mental ________ (D) of decision-making, leading to systematic errors in judgment and memory recall, thereby challenging earlier models of rational cognition within both clinical and educational assessments. Moreover, the role of attention is increasingly examined ________ (E) emotional regulation, highlighting its influence not only on perception but also on affective states, stress response, and interpersonal behaviour in both clinical psychology and applied neurocognitive research.
+
+---
+
+The correct prepositional phrase for the blank (E) is:
+A. in relation to
+B. in contrast to
+C. in addition to
+D. on behalf of
+Answer: A
+

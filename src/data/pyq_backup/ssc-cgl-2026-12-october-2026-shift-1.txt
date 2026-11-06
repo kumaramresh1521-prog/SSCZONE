@@ -1,0 +1,822 @@
+Q.1: A train running at 72 km/h crosses a platform of length 180 m in 15 seconds. Find the length of the train.
+A. 120 m
+B. 180 m
+C. 300 m
+D. 240 m
+Answer: A
+
+Q.2: What is the next number in the series? 4, 9, 14, 19, ?
+A. 23
+B. 24
+C. 25
+D. 26
+Answer: B
+
+Q.3: In a certain code language, "MANGO" is written as "ODPJQ." How will "PAPER" be written in the same code language?
+A. RRDHT
+B. RDRHT
+C. RHRDT
+D. RRHDT
+Answer: B
+
+Q.4: If 18 men or 24 women can complete a work in 20 days, in how many days will 12 men and 16 women complete the same work?
+A. 12 days
+B. 13 days
+C. 14 days
+D. 15 days
+Answer: A
+
+Q.5: Choose the option that perfectly matches the given address. Original Address: Executive Residence No. Sigma 19CRoyal Palace Residency Block XIWashington Central BoulevardLos Angeles California 90017United States of America
+A. Executive Residence No. Sigma 19CRoyal Palace Residency Block XIIWashington Central BoulevardLos Angeles California 90017United States of America
+B. Executive Residence No. Sigma 19CRoyal Palace Residency Block XIWashington Central BoulvardLos Angeles California 90017United States of America
+C. Executive Residence No. Sigma 19CRoyal Palace Residency Block XIWashington 1 INTELLIGENCE Central BoulevardLos Angeles California 90107United States of America
+D. Executive Residence No. Sigma 19CRoyal Palace Residency Block XIWashington Central BoulevardLos Angeles California 90017United States of America
+Answer: D
+
+Q.6: In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 4 5 3 12 13 7 128 ?
+A. 49
+B. 112
+C. 64
+D. 144
+Answer: A
+
+Q.7: In a family consisting of six members P, Q, R, S, T, and U, P and R are husband and wife. Q is the eldest son of the couple. Q is married to U. S is the grandson of P and R. T is the unmarried daughter of the family. Based on the given information, identify the mother of S.
+A. U
+B. T
+C. R
+D. Q
+Answer: A
+
+Q.8: Study the pattern in the given series and find the next set of letters in the series. PTI, LUE, HVA, ?
+A. DWW
+B. DWU
+C. ROV
+D. RWV
+Answer: A
+
+Q.9: Roll numbers are generated where the middle digit is the remainder of the first digit divided by the last digit. Which entry is invalid?
+A. 713
+B. 826
+C. 914
+D. 532
+Answer: D
+
+Q.10: Your department is experiencing high work pressure because of tight project schedules and increased workload. In this situation, you observe that one of your team members is consistently failing to meet deadlines and appears withdrawn and less engaged than usual. As the team leader, what is the most appropriate way to handle this situation?
+A. Issue an official show-cause notice immediately so that the employee's performance issue is formally documented and appropriately addressed.
+B. Conduct an empathetic individual conversation with the employee to identify the underlying causes of the performance concerns in detail.
+C. Arrange a meeting to inform the team member that their recent performance is unacceptable and that they are being placed on a formal performance improvement plan immediately.
+D. Reassign the pending tasks to other team members without informing the employee who is currently responsible for them.
+Answer: B
+
+Q.11: A dedicated team member has been consistently underperforming on shared tasks for the past two weeks, appearing distracted and tired during office hours. Which of the following actions represents the most constructive way to address this shift in their professional behavior?
+A. Approach them privately to express concern and ask if they are facing any professional challenges.
+B. Criticize their lack of focus openly during a team meeting to encourage immediate improvement.
+C. Formally escalate the observed performance issues to the department head without initiating a conversation.
+D. Reduce your collaborative efforts with them to minimize the impact of their errors on your work.
+Answer: C
+
+Q.12: What should come in place of question mark (?) in the following analogy? 2 C3F : F6I :: I9L : ?
+A. M12O
+B. L12O
+C. L11O
+D. L12N
+Answer: B
+
+Q.13: In the given question, a few statements have been given followed by conclusions based on them. Consider the statements to be true and answer which of the given conclusions logically follow the statement. Statements
+
+1. All stars are celestial objects.
+
+2. All celestial objects that emit light are visible.
+
+3. Some stars do not emit light. Conclusions
+
+I. Some stars are not visible.
+
+II. All stars that emit light are visible.
+
+III. Some celestial objects are not visible.
+
+IV. All visible objects are celestial objects.
+A. Only I, II and III
+B. Only II and III follow follow
+C. Only II follow
+D. All four follow
+Answer: D
+
+Q.14: In the following question, one statement is given, followed by certain inferences. Consider the statement to be true even if it seems to contradict commonly known facts. Read the inferences carefully and decide which of them logically follow from the given statement.
+
+Statement: Heavy pesticide use in farming pollutes soil and water, persists in crops, and eventually enters the food chain, posing a risk to human health. Inferences:
+
+I. Overuse of pesticides in agriculture is harmful to human beings.
+
+II. Excessive pesticide use can adversely impact water quality.
+A. Only Inference I follows.
+B. Only Inference II follows.
+C. Both Inferences I and II follow.
+D. Neither Inference I nor Inference II follows.
+Answer: C
+
+Q.15: Among the four given combinations, one has error. Identify it
+
+(a) Rohanshi Mehta, 18-C Ocean View Colony, 10th cross road, Udaipur, 9871203456, 313001
+
+(b) Rohanshi Mehta, 18-C Ocean View Colony, 10th cross road, Udaipur, 9871203456, 313001
+
+(c) Rohanshi Mehta, 18-C Oceanview Colony, 10th cross road, Udaipur, 9871203456, 313001
+
+(d) Rohanshi Mehta, 18-C Ocean View Colony, 10th cross road, Udaipur, 9871203456, 313001
+A. a
+B. b
+C. c
+D. d
+Answer: C
+
+Q.16: Choose the option which is exactly similar to: 20-09-2026, 54/3, Palm Beach Road, Vashi, Navi Mumbai-400703
+A. 20-09-2026, 54/3, Palm Beach Road, Vashi, Navi Mumbai-400703
+B. 20-09-2026, 54/3, Palm Beach Road, Vashi, Navi Mumbai 400703
+C. 09-09-2026, 54/3, Palm Beach Road, Vashi, Navi Mumbai-400703
+D. 19-09-2025, 54/3, Palm Beach Road, Vashi, Navi Mumbai-400703
+Answer: A
+
+Q.17: During an annual performance review, an employee receives highly critical feedback from their supervisor regarding their project management skills. The employee strongly disagrees with this assessment and believes it overlooks major successes. Which of the following responses best demonstrates high emotional intelligence (EI)?
+A. Immediately interrupting the supervisor to counter each criticism with verbal evidence and defensive explanations.
+B. Actively listening to the entire evaluation without interrupting, asking objective clarifying questions for specific examples, and requesting a follow-up meeting after a few days to provide a considered response.
+C. Submissively accepting all the negative criticism without question or clarification simply to prevent a professional conflict or argument.
+D. Explicitly telling the supervisor that the feedback is completely unfair, biased, and clearly based on a fundamental misunderstanding of their actual work.
+Answer: B
+
+Q.18: Read the given conditions carefully and determine the appropriate outcome for the case provided. If any exception applies, identify the authority to whom the case should be referred. Criteria for Specialized Software Training Entry:
+
+(i) Must be proficient in Java.
+
+(ii) Must have passed the internal aptitude test. Exceptions: Exception
+A. Entry to be granted
+B. Case to be referred to the Program Manager
+C. Application to be rejected
+D. Case to be referred to the Training Director
+Answer: B
+
+Q.19: Read the statement carefully and assume it to be true. Then examine the two conclusions given below it and decide which conclusion(s), if any, logically follow from the statement.
+
+Statement: A space agency has initiated long-duration orbital missions to study microgravity effects on human physiology and spacecraft systems.
+
+Conclusions:
+
+I. Microgravity may have measurable effects on human biological systems.
+
+II. Space missions are conducted only for entertainment purposes.
+A. Only conclusion I follows
+B. Neither conclusion I nor conclusion II follows
+C. Both conclusions I and II follow
+D. Only conclusion II follows
+Answer: A
+
+Q.20: In a certain code language, "LIGHTS" is written as "LjGiTt". How will "WINDOW" be written in the same code language?
+A. WkNoOx
+B. WjNeOx
+C. WkNfOx
+D. WjNeOy
+Answer: B
+
+Q.21: In a certain code language, if fGhIj is written as gjILk, then how will mNoPq be written in that same code language?
+A. nRrSt
+B. nQpSq
+C. nQpSr
+D. mPqSq
+Answer: C
+
+Q.22: Direction: Choose the most suitable decision based on the scenario provided below. Scenario: A university receives evidence that a highly successful research project contains a minor methodological flaw. The flaw does not invalidate the main findings but affects one secondary analysis. The project has already attracted substantial funding.
+A. Withhold the information until future studies provide additional evidence.
+B. Publicly disclose the issue, correct the affected analysis, and maintain transparency.
+C. Cancel the entire project because any methodological flaw is unacceptable.
+D. Ignore the issue because the primary findings remain unaffected.
+Answer: B
+
+Q.23: The regional park authority has prohibited the use of all artificial lighting within the sanctuary to protect the natural nocturnal habitat of local endangered species. Which assumption underlies this prohibition?
+A. Visitors will strictly adhere to the lighting ban, making additional monitoring measures unnecessary.
+B. Implementing this ban will immediately result in a significant increase in the local species population.
+C. The current levels of artificial light are the only threats facing these species within the sanctuary.
+D. Artificial light exposure negatively impacts the mating and hunting behaviors of these endangered species.
+Answer: C
+
+Q.24: Which of the following rows/columns are connected/related with each other in some way? Rows Columns I II III IV V I 27 18 36 45 9 II 12 10 18 20 4 III 9 6 12 15 3 IV 6 3 7 10 3 V 3 2 4 5 1
+A. Rows I, III and V
+B. Rows II, IV and V
+C. Rows I, II and III
+D. Rows I, II and IV
+Answer: A
+
+Q.25: Select the option that is related to the third word in the same way as the second word is related to the first word. (The words must be considered as meaningful English words and must not be related to each other based on the number of letters/number of consonants/vowels in the word.) Hive : Bees :: Anthill : ?
+A. Ants
+B. Beetles
+C. Spiders
+D. Butterflies
+Answer: A
+
+Q.26: Which of the following is the correct explanation of a consumer surplus?
+A. What the consumer pays (-) what it is worth
+B. What the consumer is ready to pay (-) what they actually pay
+C. What the seller quotes as the price (-) what the consumer actually pays
+D. What the seller quotes as the price (-) cost of manufacturing to the seller
+Answer: B
+
+Q.27: What is the formula for net investment?
+A. Gross investment - taxes
+B. Gross investment - interest expenses
+C. Gross investment - depreciation
+D. Gross investment - dividend
+Answer: C
+
+Q.28: When was the QUAD (Quadrilateral Security Dialogue) revitalized?
+A. 2007
+B. 2012
+C. 2017
+D. 2020
+Answer: A
+
+Q.29: How many frames are there in a standard ten-pin bowling game?
+A. 8
+B. 9
+C. 10
+D. 11
+Answer: A
+
+Q.30: During which year were the National Shooting Championships held in Trivandrum, Kerala?
+A. 2013
+B. 2019
+C. 2022
+D. 2020
+Answer: A
+
+Q.31: Who won India's first Olympic medal in boxing?
+A. Mary Kom
+B. Vijender Singh
+C. Shiva Thapa
+D. Lovlina Borgohain
+Answer: B
+
+Q.32: Which Home Affairs Minister has also been the 1st Minister of Co-operation since July 2021?
+A. Amit Shah
+B. J.P. Nadda
+C. Nitin Gadkari
+D. Rajnath Singh
+Answer: A
+
+Q.33: What was the capital of Avanti in the 6th century B.C?
+A. Taxila
+B. Pataliputra
+C. Ayodhya
+D. Ujjain
+Answer: D
+
+Q.34: Consider the following
+
+statements:
+
+1. Hamsaladeevi is located at the mouth of the Krishna River.
+
+2. Allahabad is located to the west of Varanasi.
+
+3. The Tons River is the largest tributary of the Yamuna River. Which of the above statements is/are CORRECT?
+A. 1 and 2 only
+B. 3 only
+C. 2 only
+D. 1, 2, and 3
+Answer: B
+
+Q.35: Which traditional Naga folk song is specifically known as a war song, narrating themes of bravery and battle?
+A. Neuleu
+B. Heliamleu
+C. Jemji
+D. Tati
+Answer: A
+
+Q.36: What was the primary purpose of the saddle querns discovered at Harappan sites?
+A. For making sharp
+B. For grinding daily weapons cereals
+C. For building tall
+D. For digging deep houses rivers
+Answer: B
+
+Q.37: According to Article 76(1) of the Indian Constitution, a person appointed as Attorney-General for India must be qualified to be appointed as a:
+A. District Judge
+B. High Court Judge
+C. Supreme Court
+D. Member of Judge Parliament
+Answer: C
+
+Q.38: Naharkatiya, known for oil production, is located in which state?
+A. Gujarat
+B. Rajasthan
+C. Meghalaya
+D. Assam
+Answer: A
+
+Q.39: Identify the correct stretch covered under National Waterway 3 (NW-3) in India.
+A. Prayagraj-Haldia
+B. Sadiya-Dhubri stretch stretch
+C. Kottapuram-Kollam stretch
+D. Kottapuram-Dhubri stretch
+Answer: D
+
+Q.40: In which sport did Karnam Malleswari win India’s first-ever Olympic medal by a woman at the 2000 Sydney Olympic Games?
+A. Boxing
+B. Weightlifting
+C. Wrestling
+D. Shooting
+Answer: B
+
+Q.41: The highest peak of the Nicobar group is:
+A. Mount Thullier
+B. Mount Diavolo
+C. Saddle Peak
+D. Mount Koyob
+Answer: A
+
+Q.42: In India, which Article of the Constitution empowers Parliament to exclude the jurisdiction of the Supreme Court in matters relating to inter-State water disputes?
+A. Article 262
+B. Article 263
+C. Article 356
+D. Article 131
+Answer: A
+
+Q.43: Consider the following statements about Shekha Jheel Bird Sanctuary:
+
+1. It is located in the Aligarh district of Uttar Pradesh.
+
+2. It was designated as Uttar Pradesh's 12th Ramsar site and India's 99th Ramsar site in April 2026. Which of the statements given above is/are correct?
+A. Only 1
+B. Only 2
+C. Both 1 and 2
+D. Neither 1 nor 2
+Answer: A
+
+Q.44: When did the British first accept, in principle, the demand for an Indian Constituent Assembly?
+A. August Offer
+B. Cripps Proposals (1940) (1942)
+C. Cabinet Mission
+D. Mountbatten Plan (1946) (1947)
+Answer: A
+
+Q.45: As an outcome of the economic reforms initiated in 1991, which sector recorded the highest average annual growth rate during 2007–12?
+A. Agriculture sector
+B. Industrial sector
+C. Services sector
+D. Domestic sector
+Answer: A
+
+Q.46: One of the key objectives of the Chelliah Committee during the 1991 economic reforms was to make India's taxation system:
+A. Centralised and
+B. Broad-based and uniform fair
+C. State-controlled
+D. Export-oriented only only
+Answer: A
+
+Q.47: According to Census terminology, the "Houseless Population" includes persons who:
+A. Live in rented houses
+B. Live in temporary shelters only
+C. Live in government buildings
+D. Do not live in census houses
+Answer: A
+
+Q.48: The earliest Indian literature is best described as which of the following?
+A. Written
+B. Printed
+C. Oral
+D. Digital
+Answer: A
+
+Q.49: Which sector was accorded the highest priority under the Second Five-Year Plan?
+A. Heavy and basic
+B. Agriculture and industries irrigation
+C. Foreign trade
+D. School education promotion sector
+Answer: A
+
+Q.50: In the moving boundary method used to determine an ion's transport number, what is the primary purpose of adding an indicator electrolyte to the principal electrolyte?
+A. To increase the conductivity of the solution
+B. To ensure complete dissociation of the principal electrolyte
+C. To form a sharp and visible boundary for measuring ion migration
+D. To prevent current flow through the cell
+Answer: A
+
+Q.51: If the volume of a right prism is 150 cm³ and the height is 5 cm, its base area is:
+A. 35 cm²
+B. 45 cm²
+C. 30 cm²
+D. 50 cm²
+Answer: C
+
+Q.52: A scalene triangle has sides in the ratio 13:14:15. If its perimeter is 126 cm, find the length of its longest side.
+A. 39 cm
+B. 48 cm
+C. 42 cm
+D. 45 cm
+Answer: D
+
+Q.53: Calculate the volume of a cylinder whose circular base area measures 154 cm² and whose height is 20 cm.
+A. 3080 cm³
+B. 2580 cm³
+C. 2480 cm³
+D. 2180 cm³
+Answer: A
+
+Q.54: X and Y start a business with capital in the ratio 5 : 6. At the end of 8 months, X withdraws his capital. If they receive profits in the ratio 5 : 9, for how long was Y's capital used in the business?
+A. 10 months
+B. 12 months
+C. 14 months
+D. 15 months
+Answer: B
+
+Q.55: Given that the average of five numbers is 27, and that excluding one number reduces the average to 25, determine the value of the excluded number.
+A. 45
+B. 35
+C. 55
+D. 65
+Answer: B
+
+Q.56: Calculate the compound interest on ₹12,000 at 10% per annum for 1 year 6 months, compounded annually.
+A. ₹1460
+B. ₹1860
+C. ₹1560
+D. ₹1660
+Answer: B
+
+Q.57: If the ratio of the number of sides of two regular polygons is 5:4 and the difference between their interior angles is 9° . Find the number of sides of the polygon with more sides.
+A. 4
+B. 10
+C. 8
+D. 15
+Answer: D
+
+Q.58: The ratio of the radii of two concentric circles is 5:
+
+3. If the difference between their areas is 256π sq. m, what is the radius of the smaller circle?
+A. 20 m
+B. 10 m
+C. 16 m
+D. 12 m
+Answer: D
+
+Q.59: The height of a right circular cone is 15 cm and its slant height is 17 cm. Find the curved surface area of the cone.
+A. 149π cm²
+B. 120π cm²
+C. 136π cm²
+D. 125π cm²
+Answer: C
+
+Q.60: A ladder of length 20 m makes an angle of 60° with the ground. Find the distance of the foot from the wall.
+A. 8 m
+B. 13 m
+C. 10 m
+D. 12 m
+Answer: C
+
+Q.61: CD is a chord of a circle and E lies on the minor arc CD. Tangents at C and D meet at F. If ∠CED= 118° , find ∠CFD .
+A. 45°
+B. 56°
+C. 68°
+D. 75°
+Answer: B
+
+Q.62: If cosec θ−cot θ= p , find the value of p²−1 . p²+1
+A. cos θ
+B. sin θ
+C. −cos θ
+D. −sin θ
+Answer: A
+
+Q.63: If x= 7 + 4√3 , what is the value of (√x− √x)² 1 ?
+A. 10
+B. 11
+C. 12
+D. 14
+Answer: D
+
+Q.64: If x= √7+4√3 , then what is the value of x² 7−4√3
+
+- 14x + 2?
+A. 0
+B. 1
+C. 2
+D. 3
+Answer: C
+
+Q.65: The radius of a sphere is increased by 50%. By what percentage does its volume increase?
+A. 154.5%
+B. 165.5%
+C. 237.5%
+D. 254.5%
+Answer: C
+
+Q.66: In triangle ABC, DE is parallel to BC, AD = x + 1, DB = 2x, AE = 3x + 2, EC = 5x. Find the value of x (x > 0).
+A. 2
+B. 1
+C. 3
+D. 4
+Answer: B
+
+Q.67: A corporate consultant is taxed under a progressive annual income model:
+
+* Earnings up to ₹10,00,000 are taxed at a base rate of 10%.
+
+* Any earnings exceeding ₹10,00,000 are taxed at a higher rate of 25%. If the consultant paid a total annual income tax of exactly ₹2,50,000, what percentage of their total gross income was paid as tax?
+A. 12.505%
+B. 18.625%
+C. 10.025%
+D. 15.625%
+Answer: C
+
+Q.68: An artisan in Shantiniketan is preparing a large vat of natural indigo dye for traditional Batik fabrics. The vat initially contains 80 liters of a dye-to-water mixture in the ratio 3:13. To achieve a deeper and richer colour, the artisan boils the mixture to evaporate some of the water. Once done, the new ratio of dye to water in the vat is 1:
+
+3. How many liters of water were evaporated during the boiling process?
+A. 20 liters
+B. 21 liters
+C. 22 liters
+D. 24 liters
+Answer: A
+
+Q.69: A server's storage drive is at 0% capacity. A malicious script begins flooding it with junk data at a rate that would completely fill the drive in 6 hours. 3 hours since the attack starts, the IT team activates Scrubber A, which by itself can delete a full drive of data in 15 hours. 2 hours after the activation of A, they also turn on Scrubber B, which can delete a full drive in 5 hours. If the script runs continuously, at what exact time will the drive return to being 100% empty, if the attack started at 12:00 PM (noon)?
+A. 7:00 PM
+B. 10:30 PM
+C. 12:00 AM
+D. 12:30 AM (midnight)
+Answer: A
+
+Q.70: Solve for acute θ : tan(θ+ 24°) = cot(θ−12°)
+A. 36°
+B. 33°
+C. 39°
+D. 42°
+Answer: C
+
+Q.71: In a right triangle XYZ with ∠Y = 90°, if ∠X = 2∠Z, find cos X.
+A. 1/2
+B. √3/2
+C. 1/√2
+D. √3
+Answer: A
+
+Q.72: Evaluate: 1032 - 972
+A. 1121
+B. 1320
+C. 1200
+D. 1424
+Answer: C
+
+Q.73: If x+ 1 x= 6 , find the value of x5 + x5 1 .
+A. 6276
+B. 2726
+C. 6726
+D. 7662
+Answer: A
+
+Q.74: A tank contains 600 litres of an aqueous solution with a 40% salt concentration by volume. Assume that the component volumes are perfectly additive (mixing causes no volume contraction), and that the solution is thoroughly stirred to maintain complete homogeneity after each step. The following sequential operations are performed:
+
+• 120 litres of the solution is removed and replaced with an equal volume of pure water.
+
+• This exact replacement process is repeated once more.
+
+• Then, 60 litres of the resulting solution is removed and replaced with an equal volume of liquid pure salt solute. What is the final percentage of salt by volume in the resulting mixture?
+A. 23.04%
+B. 25.60%
+C. 33.04%
+D. 35.60%
+Answer: A
+
+Q.75: Consider the following two statements regarding a configuration of two distinct circles: Statement 1: If the distance between the centers of two circles is strictly greater than the sum of their radii, then exactly four common tangents can be drawn to them. Statement 2: If the distance between the centers of two circles is strictly less than the absolute difference of their radii, then no common tangents can be drawn to them. Which of the following is correct?
+A. Only Statement 1 is true.
+B. Only Statement 2 is true.
+C. Both Statement 1 and Statement 2 are true.
+D. Neither Statement 1 nor Statement 2 is true.
+Answer: C
+
+Q.76: **Comprehension (Q. 76 - 80):** In an era marked by global interconnectedness, emerging infectious diseases (1) ____ an unprecedented threat to public health infrastructures worldwide. Pathogens such as novel coronaviruses, antibiotic-resistant bacteria, and zoonotic viruses exploit the vulnerabilities of human mobility, urban overcrowding, and ecological disruption. Although medical science has made formidable strides, the unpredictable nature of outbreaks (2) ____ persistent difficulties in preparedness and response mechanisms. Adding to the complexity, misinformation proliferated through digital platforms (3) ____ the efficacy of public health interventions, sometimes undermining vaccination campaigns and quarantine measures. Efforts to combat emerging diseases must therefore be interdisciplinary, blending epidemiology, behavioral science, and policy innovation. One key concept in disease containment is herd immunity, a state wherein a significant portion of a population becomes immune, thereby indirectly shielding vulnerable individuals. However, achieving (4) herd immunity, whether via vaccination or natural exposure, entails considerable ethical and logistical challenges. Beyond infectious diseases, the surge in non-communicable illnesses such as diabetes and cardiovascular disorders further strains public health systems. An effective response to emerging health threats must prioritize resilience, adaptability, and above all, (5) prophylaxis. In the absence of robust, coordinated efforts, humanity risks facing pandemics of greater magnitude and complexity than ever previously recorded.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Choose correct tense/subject-verb.(1)
+A. poses
+B. pose
+C. had posed
+D. posing
+Answer: B
+
+Q.77: **Comprehension (Q. 76 - 80):** In an era marked by global interconnectedness, emerging infectious diseases (1) ____ an unprecedented threat to public health infrastructures worldwide. Pathogens such as novel coronaviruses, antibiotic-resistant bacteria, and zoonotic viruses exploit the vulnerabilities of human mobility, urban overcrowding, and ecological disruption. Although medical science has made formidable strides, the unpredictable nature of outbreaks (2) ____ persistent difficulties in preparedness and response mechanisms. Adding to the complexity, misinformation proliferated through digital platforms (3) ____ the efficacy of public health interventions, sometimes undermining vaccination campaigns and quarantine measures. Efforts to combat emerging diseases must therefore be interdisciplinary, blending epidemiology, behavioral science, and policy innovation. One key concept in disease containment is herd immunity, a state wherein a significant portion of a population becomes immune, thereby indirectly shielding vulnerable individuals. However, achieving (4) herd immunity, whether via vaccination or natural exposure, entails considerable ethical and logistical challenges. Beyond infectious diseases, the surge in non-communicable illnesses such as diabetes and cardiovascular disorders further strains public health systems. An effective response to emerging health threats must prioritize resilience, adaptability, and above all, (5) prophylaxis. In the absence of robust, coordinated efforts, humanity risks facing pandemics of greater magnitude and complexity than ever previously recorded.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Focus on tense and agreement.(2)
+A. present
+B. presents
+C. presented
+D. presenting
+Answer: B
+
+Q.78: **Comprehension (Q. 76 - 80):** In an era marked by global interconnectedness, emerging infectious diseases (1) ____ an unprecedented threat to public health infrastructures worldwide. Pathogens such as novel coronaviruses, antibiotic-resistant bacteria, and zoonotic viruses exploit the vulnerabilities of human mobility, urban overcrowding, and ecological disruption. Although medical science has made formidable strides, the unpredictable nature of outbreaks (2) ____ persistent difficulties in preparedness and response mechanisms. Adding to the complexity, misinformation proliferated through digital platforms (3) ____ the efficacy of public health interventions, sometimes undermining vaccination campaigns and quarantine measures. Efforts to combat emerging diseases must therefore be interdisciplinary, blending epidemiology, behavioral science, and policy innovation. One key concept in disease containment is herd immunity, a state wherein a significant portion of a population becomes immune, thereby indirectly shielding vulnerable individuals. However, achieving (4) herd immunity, whether via vaccination or natural exposure, entails considerable ethical and logistical challenges. Beyond infectious diseases, the surge in non-communicable illnesses such as diabetes and cardiovascular disorders further strains public health systems. An effective response to emerging health threats must prioritize resilience, adaptability, and above all, (5) prophylaxis. In the absence of robust, coordinated efforts, humanity risks facing pandemics of greater magnitude and complexity than ever previously recorded.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Choose correct word to get appropriate construction.(3)
+A. impede
+B. impedes
+C. has impeding
+D. impeding
+Answer: B
+
+Q.79: **Comprehension (Q. 76 - 80):** In an era marked by global interconnectedness, emerging infectious diseases (1) ____ an unprecedented threat to public health infrastructures worldwide. Pathogens such as novel coronaviruses, antibiotic-resistant bacteria, and zoonotic viruses exploit the vulnerabilities of human mobility, urban overcrowding, and ecological disruption. Although medical science has made formidable strides, the unpredictable nature of outbreaks (2) ____ persistent difficulties in preparedness and response mechanisms. Adding to the complexity, misinformation proliferated through digital platforms (3) ____ the efficacy of public health interventions, sometimes undermining vaccination campaigns and quarantine measures. Efforts to combat emerging diseases must therefore be interdisciplinary, blending epidemiology, behavioral science, and policy innovation. One key concept in disease containment is herd immunity, a state wherein a significant portion of a population becomes immune, thereby indirectly shielding vulnerable individuals. However, achieving (4) herd immunity, whether via vaccination or natural exposure, entails considerable ethical and logistical challenges. Beyond infectious diseases, the surge in non-communicable illnesses such as diabetes and cardiovascular disorders further strains public health systems. An effective response to emerging health threats must prioritize resilience, adaptability, and above all, (5) prophylaxis. In the absence of robust, coordinated efforts, humanity risks facing pandemics of greater magnitude and complexity than ever previously recorded.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. In this context, 'herd immunity' most nearly refers to:
+
+(4)
+A. Immunity achieved only through natural infection
+B. Collective immunity reducing disease transmission
+C. Forced immunity via coercive measures
+D. Immunity affecting only animals
+Answer: B
+
+Q.80: **Comprehension (Q. 76 - 80):** In an era marked by global interconnectedness, emerging infectious diseases (1) ____ an unprecedented threat to public health infrastructures worldwide. Pathogens such as novel coronaviruses, antibiotic-resistant bacteria, and zoonotic viruses exploit the vulnerabilities of human mobility, urban overcrowding, and ecological disruption. Although medical science has made formidable strides, the unpredictable nature of outbreaks (2) ____ persistent difficulties in preparedness and response mechanisms. Adding to the complexity, misinformation proliferated through digital platforms (3) ____ the efficacy of public health interventions, sometimes undermining vaccination campaigns and quarantine measures. Efforts to combat emerging diseases must therefore be interdisciplinary, blending epidemiology, behavioral science, and policy innovation. One key concept in disease containment is herd immunity, a state wherein a significant portion of a population becomes immune, thereby indirectly shielding vulnerable individuals. However, achieving (4) herd immunity, whether via vaccination or natural exposure, entails considerable ethical and logistical challenges. Beyond infectious diseases, the surge in non-communicable illnesses such as diabetes and cardiovascular disorders further strains public health systems. An effective response to emerging health threats must prioritize resilience, adaptability, and above all, (5) prophylaxis. In the absence of robust, coordinated efforts, humanity risks facing pandemics of greater magnitude and complexity than ever previously recorded.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. The word 'prophylaxis' most nearly means:
+
+(5)
+A. Treatment after illness
+B. Preventive action against disease
+C. Diagnosis of unknown conditions
+D. Rehabilitation and therapy
+Answer: B
+
+Q.81: Choose the correct indirect speech form of the sentence below. The science instructor said, "Water turns into ice at 0 degrees Celsius."
+A. The science instructor said that water turned into ice at 0 degrees Celsius.
+B. The science instructor said that water turns into ice at 0 degrees Celsius.
+C. The science instructor said that water had turned into ice at 0 degrees Celsius.
+D. The science instructor told that water turns into ice at 0 degrees Celsius.
+Answer: B
+
+Q.82: Which of the following is the correct direct speech form of the given sentence? Chayanika wanted to know if Garry had selected those candidates for the interview.
+A. Chayanika asked, "Did Garry select these candidates for the interview?"
+B. Chayanika asked, "Did Garry select those candidates for the interview?"
+C. Chayanika asked, "Had Garry selected these candidates for the interview?"
+D. Chayanika asked, "Has Garry selected these candidates for the interview?"
+Answer: D
+
+Q.83: Fill in the blanks with the appropriate article. ______ apple fell from ______ tree, which was during ______ summer season.
+A. An, the, the
+B. A, the, an
+C. An, an, the
+D. The, the, the
+Answer: A
+
+Q.84: Change the following sentence into indirect speech. "I shall be 16 tomorrow," said Tanuka.
+A. Tanuka said that she will be 16 tomorrow.
+B. Tanuka said that she shall be 16 tomorrow.
+C. Tanuka said that she would be 16 the next day.
+D. Tanuka said that she would be 16 tomorrow.
+Answer: C
+
+Q.85: Rearrange the parts of the sentence in the correct order. As geopolitical tensions reshaped international diplomacy, P. as emerging economies sought to assert greater influence in global decision-making, Q. leading to the realignment of trade agreements and defense partnerships R. traditional alliances among major world powers faced significant strain, S. while long-standing institutions like the United Nations and G7 faced calls for reform
+A. RPSQ
+B. RPQS
+C. PRSQ
+D. SQRP
+Answer: B
+
+Q.86: Fill in the blank with an appropriate degree of comparison. When comparing the two theories, Newton's laws were initially considered ______ acceptable.
+A. least
+B. less
+C. lesser
+D. little
+Answer: B
+
+Q.87: What does the idiom "All his ventures went to the winds" mean?
+A. All his efforts were wasted
+B. He became very successful
+C. He changed his business frequently
+D. His ventures were well-organized
+Answer: A
+
+Q.88: Choose the error in the sentence. The teacher emphasized on the importance of time management.
+A. on
+B. emphasized
+C. management
+D. importance
+Answer: A
+
+Q.89: Rearrange the parts of the sentence in the correct order. The transboundary conservation program P. through joint international efforts Q. that traverse national borders R. protects migratory species S. by creating safe corridors
+A. PRSQ
+B. RQSP
+C. SPQR
+D. RPQS
+Answer: D
+
+Q.90: Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?
+
+1. Socialization is the process by which individuals learn and internalize the values, beliefs, and norms of their society.
+
+2. Role theory explains how individuals occupy different roles in society and how their behavior is shaped by these roles.
+
+3. The process of socialization is critical for an individual's development and is influenced by various agents like family, peers, and media.
+
+4. The roles people play, such as being a student, parent, or worker, come with expectations that guide their actions and interactions.
+
+5. Through socialization, individuals learn to perform specific social roles within their community.
+A. 3-5-4-1-2
+B. 2-5-4-3-1
+C. 1-4-3-2-5
+D. 1-3-5-2-4
+Answer: D
+
+Q.91: Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?
+
+1. Mythology played a vital role in early societies by explaining natural events and human existence.
+
+2. Over time, mythology evolved, influencing literature, art and philosophy.
+
+3. Many ancient civilizations, such as the Greeks and Egyptians, used myths to explain the origins of the world.
+
+4. These myths were often passed down orally, shaping cultural traditions and religious beliefs.
+A. 4-2-3-1
+B. 2-3-4-1
+C. 3-4-2-1
+D. 1-3-4-2
+Answer: D
+
+Q.92: Select the most appropriate synonym of the given word: EXPEDITE
+A. Delay
+B. Hasten
+C. Obstruct
+D. Prolong
+Answer: B
+
+Q.93: Choose the correct meaning of idiom: Man of straw
+A. A person of high emotional strength
+B. A confident negotiator
+C. A highly rigid and disciplined manly
+D. A weak or ineffectual person
+Answer: D
+
+Q.94: Find the part of the sentence that contains an error: Each of the candidates (1)/ are expected to carry (2)/ their original ID proofs
+
+(3)/ for verification. (4)/
+A. (1)
+B. (2)
+C. (3)
+D. (4)
+Answer: B
+
+Q.95: Change the following from active to passive: They were cleaning the hall for the function.
+A. The hall was cleaned for the function.
+B. The hall is being cleaned for the function.
+C. The hall was being cleaned for the function.
+D. The hall has been cleaned for the function.
+Answer: C
+
+Q.96: Change the following from active to passive: Lightning struck the tree.
+A. The tree had been struck by lightning.
+B. The tree was struck by lightning.
+C. The tree is struck by lightning.
+D. The tree has been struck by lightning.
+Answer: B
+
+Q.97: Convert the sentence provided below from its passive voice structure to an active voice structure: She was heard being scolded by the principal during the assembly.
+A. The principal heard her being scolded during assembly.
+B. Someone heard the principal scolding her during the assembly.
+C. She was scolding the principal, who was heard during assembly.
+D. People heard the principal being scolded by her during the assembly.
+Answer: C
+
+Q.98: Convert the sentence provided below from its passive voice structure to an active voice structure: The guest was believed to have been misinformed about the schedule.
+A. It was believed that the guest had been misinformed about the schedule.
+B. Someone had misinformed the guest, as it was believed.
+C. It is believed the guest misinformed others.
+D. The schedule was believed to misinform the guest.
+Answer: A
+
+Q.99: Choose the most suitable option to replace the highlighted part of the sentence: He is living here since 2010.
+A. is living here from
+B. has been living here since
+C. lives here since
+D. was living here since
+Answer: B
+
+Q.100: A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. She said that barely had she stepped out when it began to rain.
+A. "Barely had I stepped out when it began to rain," she said.
+B. "I had barely stepped out when it started to rain," said she.
+C. "It started raining as soon as I stepped out," she said.
+D. "I barely stepped out and it rained," she said.
+Answer: A
+

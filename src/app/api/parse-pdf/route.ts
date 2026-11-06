@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { PDFParse } from "pdf-parse";
+import { requireAdmin } from "@/lib/api-auth";
 
 // Smart MCQ parser — handles multiple common PDF formats
 function parseMCQText(text: string): Array<{
@@ -231,6 +232,9 @@ function parsePipeSeparated(text: string) {
 }
 
 export async function POST(req: NextRequest) {
+  const denied = await requireAdmin(req);
+  if (denied) return denied;
+
   try {
     const formData = await req.formData();
     const file = formData.get("pdf") as File | null;

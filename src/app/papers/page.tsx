@@ -182,7 +182,7 @@ export default function PapersPage() {
                 SSC Previous Year Shift Papers (PYQ)
               </h1>
               <p className="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl leading-relaxed">
-                Practice actual SSC shift papers in timed CBT Exam Mode with instant scorecards, or download clean PDF answer keys.
+                Practice actual SSC shift papers in timed CBT Exam Mode with instant scorecards and detailed bilingual solutions.
               </p>
             </div>
 
@@ -424,13 +424,6 @@ export default function PapersPage() {
                         <Calendar className="h-3 w-3 text-slate-400" />
                         Year {paper.year}
                       </span>
-
-                      {paperPdf && canDownload && (
-                        <span className="inline-flex items-center gap-1 text-[10px] font-bold bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded-md border border-emerald-200/60">
-                          <CheckCircle2 className="h-2.5 w-2.5 text-emerald-600" />
-                          Official PDF
-                        </span>
-                      )}
                     </div>
 
                     <h2 className="text-sm sm:text-base font-bold text-slate-900 leading-snug">
@@ -453,20 +446,6 @@ export default function PapersPage() {
 
                   {/* Right: Actions */}
                   <div className="flex items-center gap-2 self-start md:self-center shrink-0 flex-wrap">
-                    {paperPdf && canDownload && (
-                      <a
-                        href={paperPdf}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        download
-                        className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 px-3.5 py-2.5 text-xs font-bold text-slate-700 shadow-2xs transition-colors cursor-pointer"
-                        title="Download official PDF answer key"
-                      >
-                        <Download className="h-3.5 w-3.5 text-blue-600" />
-                        <span>Download PDF</span>
-                      </a>
-                    )}
-
                     <Link
                       href={`/take-test/${paper.id}`}
                       className="inline-flex items-center gap-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 px-4 py-2.5 text-xs font-black text-white shadow-xs transition-colors hover:scale-[1.01]"

@@ -1,0 +1,762 @@
+Q.1: The Mumbai seminar was 4 days after the Ahmedabad seminar. The Pune seminar was 1 day before the Mumbai seminar. If the Ahmedabad seminar was held on 15th July, when was the Pune seminar?
+A. 17th july
+B. 18th july
+C. 19th july
+D. 20th july
+Answer: B
+
+Q.2: If 19 → 91, 82 → 28, then 75 → ?
+A. 57
+B. 58
+C. 65
+D. 75
+Answer: A
+
+Q.3: Statement: The Reserve Bank has mandated that banks shall not process any high-value interbank transactions through manual channels beyond business hours, and such transactions shall only be facilitated via authorized electronic platforms.
+
+Conclusions:
+
+I. High-value interbank transactions are permissible outside business hours if routed through approved digital systems.
+
+II. Manual processing of large interbank transactions is prohibited entirely, irrespective of timing.
+A. Neither conclusion I nor II follows
+B. Both conclusion I and II follow
+C. Only conclusion I follows
+D. Only conclusion II follows
+Answer: C
+
+Q.4: The average age of 3 friends is 27. If a new friend joins, the average becomes 28. What is the age of the new friend?
+A. 29
+B. 30
+C. 31
+D. 32
+Answer: C
+
+Q.5: 3 people can do a job in 12 days. How many people are needed to finish it in 4 days?
+A. 6
+B. 8 1 INTELLIGENCE
+C. 9
+D. 12
+Answer: C
+
+Q.6: Complete the pattern: 24, 16, 48, 32, 96,
+A. 100
+B. 64
+C. 78
+D. 36
+Answer: B
+
+Q.7: Read the following statement carefully and identify the action that follows.
+
+Statement: More young people are addicted to social media.
+
+Course of Action:
+
+1. Promote awareness about digital wellness.
+
+2. Ban all social media platforms.
+A. Only 1
+B. Only 2
+C. Both follow
+D. Neither follows
+Answer: A
+
+Q.8: How many centres were there if the roll numbers are: 223456, 223478, 224123, 225987, 223999
+A. 1
+B. 2
+C. 3
+D. 4
+Answer: C
+
+Q.9: Identify the number that does not belong to the group:
+A. 1441
+B. 2197
+C. 2744
+D. 3375
+Answer: A
+
+Q.10: Direction: Study the following information carefully and answer the questions given below. In a soft toy shop, eight boxes are kept in the form of a stack. The boxes are numbered in ascending order from 1 to 8 such that the topmost box is numbered as 1 while the bottom-most box is numbered as 8. Each box contains different soft toys – Mickey Mouse, Dog, Rabbit, Teddy Bear, Whale, Tiger, Monkey, and Duck. The box of Teddy bear is kept at the top. There are four boxes between the box of Teddy bear and the box of Duck. The box of Monkey is kept between the box of Rabbit and box number 6. Neither the box of Dog nor the box of Rabbit is kept at the bottom. The box of Whale is kept above the box of Tiger, which is kept above the box of Rabbit. Which soft toy does box number 2 contain?
+A. Whale
+B. Rabbit
+C. Tiger
+D. Monkey
+Answer: A
+
+Q.11: Direction: Study the following information carefully to answer the given questions: If 'A @ B' means 'B is a brother of A' If 'A # B' means 'B is the mother of A' If 'A % B' means 'B is the father of A' If 'A & B' means 'B is a sister of A' If 'R # C % V & X' is given, then who among the following is a child of C?
+A. R
+B. X
+C. V
+D. Both R and X
+Answer: A
+
+Q.12: Rearrange the letters of that word, written in capital letters, to form the correct word. The chef decided to NTERAIMA the succulent steak for several hours to enhance its flavor.
+A. MARTINE
+B. REMINAT
+C. MARINATE
+D. RAIMENT
+Answer: C
+
+Q.13: Find the number that best completes the analogy. D : 32 :: J : ?
+A. 70
+B. 72
+C. 80
+D. 76
+Answer: C
+
+Q.14: Choose the correct option to complete the series. Day : Night :: Victory : ?
+A. Success
+B. Celebration
+C. Triumph
+D. Defeat
+Answer: D
+
+Q.15: Choose the correct option to complete the series. Citrus : Lemon :: Rosaceae: ?
+A. Hibiscus
+B. Mango
+C. Pear
+D. Cleopatra
+Answer: A
+
+Q.16: In the following question, select the related word from the given alternatives. WORD: ULMW :: PLAY: ?
+A. NOUB
+B. OGVR
+C. MVU
+D. NIVR
+Answer: A
+
+Q.17: Which of the following is different from the rest?
+A. 4
+B. 16
+C. 25
+D. 36
+Answer: A
+
+Q.18: Which meaningful word can be formed from the letters "NOMRECEY"?
+A. NOMERCY
+B. CEROMNY
+C. CEREMONY
+D. NOMERECY
+Answer: A
+
+Q.19: Find the 10th term of the AP. 2.5, 3.0, 3.5, ...
+A. 6.5
+B. 7.0
+C. 6.0
+D. 5.5
+Answer: A
+
+Q.20: If PLANT is coded as QMBOU, how is QMBOU coded?
+A. RNCOV
+B. RNBOU
+C. RNCPV
+D. QMBOV
+Answer: A
+
+Q.21: In a certain code language, "INDEPENDENCE" is written as "JNEEQEODFNDE". How will "REPRESENTATION" be written?
+A. SEQRFSFNAUIPN
+B. SEQRSFFNAUIPN
+C. SEQRFSNAUFUIP
+D. SEQRSFFNUAIUP N N
+Answer: A
+
+Q.22: In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. | 22 | 44 | 36 | | 16 | 28 | 24 | | 6 | 16 | 12 | | 12 | 32 | ? |
+A. 18
+B. 34
+C. 24
+D. 40
+Answer: A
+
+Q.23: If M + N means M is the husband of N; M - N means M is the sister of N; M * N means M is the son of N, what does A * B - C + D mean?
+A. A is the son of C's husband.
+B. A is the brother of C.
+C. A is the grandson of D.
+D. A is the nephew of C.
+Answer: D
+
+Q.24: You have a brilliant subordinate who produces the highest quality work in the office. However, their internal need for perfection is so high that they regularly miss project deadlines by days, causing the entire department to scramble. When you point this out, they break down, saying their self-worth is entirely tied to the "perfection" of their output and that any compromise feels like a “personal failure.” What is the most structurally sound intervention?
+A. Tell them that they must stop being a perfectionist or they will be fired, as business requires speed.
+B. Acknowledge their perfectionism and define realistic quality thresholds for each project stage.
+C. Reduce their workload by 50% so they have more time to perfect the few tasks they do receive.
+D. Stop giving them any deadlines so they can work at their own pace without stress.
+Answer: A
+
+Q.25: To manage the increasing energy demand in the city, the local council has proposed providing substantial subsidies to residents who install solar panels on their rooftops. Which of the following assumptions underlies the argument for providing these subsidies?
+A. Providing financial incentives for solar adoption is the only way to meet future energy demands.
+B. The current infrastructure is entirely unable to support the city's growing energy consumption.
+C. Financial costs are a significant barrier to residents adopting solar technology.
+D. Solar panels installed on residential rooftops will eliminate the need for power plants.
+Answer: A
+
+Q.26: Which high-level global metric predominantly derives its evaluation of subjective well-being from data collected through the Gallup World Poll?
+A. World Happiness Index
+B. Global Competitiveness Index
+C. Environmental Performance Index
+D. Human Development Index
+Answer: A
+
+Q.27: What is a key goal of the Human Development Index (HDI)?
+A. To shift the focus from solely economic development to human development.
+B. To only measure economic growth. 3 AWARENESS
+C. To only measure military strength.
+D. To only measure environmental impact.
+Answer: A
+
+Q.28: How many categories does the USA Air Quality Index (AQI) use to classify air quality?
+A. 4
+B. 5
+C. 6
+D. 8
+Answer: A
+
+Q.29: Which of the following satellites is launched by ISRO for disaster management and natural resource monitoring?
+A. Astrosat
+B. GSAT
+C. RISAT
+D. Cartosat
+Answer: A
+
+Q.30: Which technology is ISRO testing through the RLV-TD project?
+A. Robotic lunar excavation
+B. Underwater satellite deployment
+C. Deep space communication
+D. Reusable space launch vehicles
+Answer: D
+
+Q.31: The construction of Taj Mahal was completed in which year?
+A. 1631
+B. 1643
+C. 1653
+D. 1666
+Answer: A
+
+Q.32: What is a key aspect of the Quad's (Quadrilateral Security Dialogue) approach to regional security?
+A. Forming a formal military alliance
+B. Promoting multilateral cooperation
+C. Isolating regional powers
+D. Creating exclusive trade blocs
+Answer: B
+
+Q.33: How many points are awarded for a successful "touchdown" in American Football?
+A. 3
+B. 5
+C. 6
+D. 7
+Answer: A
+
+Q.34: Which part of early Gandhara art shows that it was influenced by Greek art styles?
+A. Symbolic representation of Buddha through footprints
+B. Use of terracotta in religious art
+C. Depiction of the Buddha with draped robe and wavy hair
+D. Use of floral capitals and bell-shaped domes
+Answer: D
+
+Q.35: Who won the 1976 Booker Prize for "Heat and Dust," a novel that juxtaposes colonial India with postcolonial experiences?
+A. Salman Rushdie
+B. J.G. Farrell
+C. Ruth Prawer
+D. Anita Desai Jhabvala
+Answer: A
+
+Q.36: Which book by Vikram Chandra won the Commonwealth Writers' Prize for Best First Book in 1996?
+A. Love and Longing
+B. Sacred Games in Bombay
+C. Red Earth and
+D. The Gypsy Pouring Rain Goddess
+Answer: A
+
+Q.37: The Twenty-Point Programme (TPP), introduced during the ________ Five-Year Plan.
+A. 6th
+B. 7th
+C. 8th
+D. 5th
+Answer: A
+
+Q.38: The Teej Festival marks the arrival of which season in India?
+A. Summer
+B. Spring
+C. Monsoon
+D. Winter
+Answer: B
+
+Q.39: The introduction of English as the medium of instruction in Indian schools was largely a result of the recommendations made by
+A. The Hunter
+B. The Wood's Commission Despatch
+C. The Sadler
+D. The Sargent Commission Scheme
+Answer: A
+
+Q.40: Which Indian cricket stadium hosted the 2023 ICC World Cup final?
+A. Wankhede
+B. M. Chinnaswamy Stadium Stadium
+C. Narendra Modi
+D. Eden Gardens Stadium
+Answer: C
+
+Q.41: Which of the following women freedom fighters was known as the 'Agni of India'?
+A. Durgawati Devi
+B. Kamaladevi Chattopadhyay
+C. Captain Lakshmi
+D. Usha Mehta Sehgal
+Answer: A
+
+Q.42: Regarding pulse production in India, consider the following statements.
+
+1. Black gram can be cultivated as both kharif and Rabi crops.
+
+2. Green gram alone accounts for nearly half of pulse production.
+
+3. In the last three decades, while the production of Kharif pulses has increased, the production of Rabi pulses has decreased. Which of the statements given above is/are CORRECT?
+A. 1 only
+B. 2 and 3 only
+C. 2 only
+D. 1 and 2 only
+Answer: A
+
+Q.43: What is the major health risk associated with long-term use of anabolic steroids by athletes?
+A. Increased bone thickness and strength
+B. Severe dehydration and fluid loss
+C. Hormonal imbalance and organ damage
+D. Better immunity and faster recovery
+Answer: C
+
+Q.44: The doctrine of Basic Structure of the Constitution was propounded in which case and relates to which Article?
+A. Kesavananda Bharati Case; Article 368
+B. Golaknath Case; Article
+C. Maneka Gandhi Case; Article
+D. Minerva Mills Case; Article 356
+Answer: A
+
+Q.45: Arrange the following developments in federal structure chronologically:
+
+1. Formation of Inter-State Council
+
+2. 73rd Constitutional Amendment
+
+3. GST Council formation
+A. 1-2-3
+B. 3-2-1
+C. 2-3-1
+D. 1-3-2
+Answer: D
+
+Q.46: What does the term "astheno" mean in the context of the Earth's mantle?
+A. Strong
+B. Weak
+C. Solid
+D. Molten
+Answer: D
+
+Q.47: Consider the following statements about the stratosphere:
+
+1. Temperature increases in the lower part of the stratosphere due to the presence of methane gas.
+
+2. The ozone layer absorbs solar radiation, leading to a rise in temperature with altitude in this layer. Which of the statements above is/are correct?
+A. Only 1
+B. Only 2
+C. Both 1 and 2 are
+D. Neither 1 nor 2 is correct correct
+Answer: C
+
+Q.48: Which aspect of agriculture witnessed a decline after the economic reforms of 1991?
+A. Public investment in agricultural infrastructure
+B. Private investment in agricultural development
+C. Agricultural exports in international markets
+D. Production of commercial agricultural crops
+Answer: A
+
+Q.49: One mole of an ideal gas undergoes a reversible isothermal expansion from 10 L(liter) to 20 L (liter) at a constant temperature of 300 K (kelvin). What is the work done by the gas, approximately?
+A. 0 (joule)
+B. 700 (joule)
+C. 3500 (joule)
+D. 1700 (joule)
+Answer: A
+
+Q.50: Which process is most directly responsible for the majority of cancer-related deaths?
+A. Increased local proliferation of tumor cells
+B. Loss of cell cycle checkpoints in dividing cells
+C. Formation of metastases in distant organs
+D. Formation of benign tumor masses in primary tissue
+Answer: C
+
+Q.51: A sum of money amounts to Rs. 825 in 3 years and to Rs. 950 in 4 years at some rate of simple interest. The sum is:
+A. 400/-
+B. 410/-
+C. 450/-
+D. 550/-
+Answer: C
+
+Q.52: A toy is in the form of a hemisphere surmounted by a cone. The radius of the hemisphere is 3 cm and the cone's height is 4 cm. Find the total volume of the toy (use π≈3.14 ).
+A. 113.04 cm³
+B. 94.2 cm³
+C. 188.4cm3
+D. 62.8cm3
+Answer: B
+
+Q.53: Solve: (x + 2)² - (x - 2)²
+A. 8x
+B. 2x + 4
+C. 10x
+D. x²
+Answer: A
+
+Q.54: If the diameter of a circle is 28 cm, then its area is:
+A. 154 cm²
+B. 616 cm²
+C. 308 cm²
+D. 484 cm²
+Answer: B
+
+Q.55: If tanA + cotA = 2 and A is an acute angle, find the value of tan4A + cot4A.
+A. 2
+B. 20
+C. 22
+D. 24
+Answer: A
+
+Q.56: A cone has a height of 8 cm and a slant height of 10 cm. What is the volume of the cone?
+A. 301.71cm3
+B. 304cm3
+C. 305.75cm3
+D. 308.76cm3
+Answer: A
+
+Q.57: A pyramid has a rectangular base with dimensions 6 cm by 8 cm. If the height of the pyramid is 1.5 times the longer side of the base, calculate the volume of the pyramid.
+A. 292 cm³
+B. 262 cm³
+C. 252 cm³
+D. 192 cm³
+Answer: D
+
+Q.58: What is the distance between points A(2, 3) and B(5, 7)?
+A. 4 units
+B. 6 units
+C. 7 units
+D. 5 units
+Answer: D
+
+Q.59: In △ABC , a line DE is drawn parallel to BC, intersecting AB at D and AC at E. If AD=3 cm, DB=2 cm, and DE=4 cm, what is the length of BC?
+A. 5 cm
+B. 6 cm
+C. 3 cm
+D. 20 cm
+Answer: D
+
+Q.60: If x = 1.5 and y = 0.5, find the value of x³−y³ + x³+y³ . x²+xy+y² x²−xy+y²
+A. 1
+B. 3
+C. 2
+D. 4
+Answer: C
+
+Q.61: A and B can complete a piece of work in 15 days and 20 days respectively. They work on alternate days, starting with A. In how many days will the work be completed?
+A. 12 days
+B. 15 days
+C. 25 days
+D. 17 days
+Answer: D
+
+Q.62: An amount of ₹33,630 is distributed among A, B, and C. The ratio of A's share to B's share is 3: 7, and the ratio of B's share to C's share is 6:
+
+5. Find the amount of money received by B.
+A. ₹13,290
+B. ₹14,868
+C. ₹15,327
+D. ₹16,409
+Answer: B
+
+Q.63: In a company, A is a working partner, and B is a sleeping partner. The investment of A is ₹12,000, and that of B is ₹20,000. The percentage of management charge is 10% of the total gain to be received by A. The total gain is ₹9,600. What is the total gain of A?
+A. ₹3,240
+B. ₹3,600
+C. ₹4,140
+D. ₹4,200
+Answer: D
+
+Q.64: In an election, 10% of the voters did not vote, while 150 votes were found to be invalid. There were only two candidates. The winner secured 55% of the total voters and defeated the opponent by 1100 votes. Find the total number of voters.
+A. 5360
+B. 6230
+C. 3440
+D. 4750
+Answer: D
+
+Q.65: A hexagon is drawn inside a circle with a radius of 21 cm. Determine the area of the hexagon.
+A. 611.5√9 cm²
+B. 661.5√3 cm²
+C. 621.5√7 cm²
+D. 641.5√3 cm²
+Answer: B
+
+Q.66: A dealer sold two sets of headphones for ₹990 each. On one he gained 10% and on the other he lost 10%. Find the total loss or gain percentage.
+A. 1% gain
+B. 1% loss
+C. 2% loss
+D. No loss or gain
+Answer: B
+
+Q.67: A laptop has a marked price of ₹80,000. It is sold after giving successive discounts of 15%, 20% and 10%. Find the selling price.
+A. ₹54,400
+B. ₹47,620
+C. ₹50,240
+D. ₹48,960
+Answer: D
+
+Q.68: If sin A+ cos A= 5 , then find the value of tan A+ cot A .
+A. 32
+B. 25 9 16 7
+C. 9
+D. 16/25
+Answer: A
+
+Q.69: If √2 = 1.414 , then find the value of 4+√2 √2 .
+A. 2.124
+B. 2.342
+C. 3.167
+D. 3.828
+Answer: D
+
+Q.70: If x + 1/x = 3√2, then find the value of x/(x² - 1).
+A. 1/√14
+B. 1/√12
+C. 1/√18
+D. 1/√19
+Answer: A
+
+Q.71: In a circle of radius 61 cm, two equal parallel chords lie on opposite sides of the centre. The distance between the chords is 22 cm. Find the length of each chord.
+A. 30 cm
+B. 60 cm
+C. 90 cm
+D. 120 cm
+Answer: D
+
+Q.72: A tangent is drawn from external point Q to a circle having a centre O, touching at T. OT = 6 cm and OQ = 10 cm. What is the area of triangle OTQ?
+A. 14 cm²
+B. 18 cm²
+C. 24 cm²
+D. 28 cm²
+Answer: C
+
+Q.73: Arcs of two circles with radii 15 cm and 20 cm subtend angles of 60° and 45° at their respective centres. What is the ratio of their arc lengths?
+A. 1:2
+B. 3:1
+C. 1:1
+D. 2:3
+Answer: C
+
+Q.74: Two circles with radii 5 cm and 3 cm have their centers separated by a distance of d cm. If the length of their direct common tangent is exactly twice the length of their transverse common tangent, find the value of d².
+A. 84 cm
+B. 79 cm
+C. 51 cm
+D. 105 cm
+Answer: A
+
+Q.75: A vessel contains 90 litres of a mixture of milk and water in the ratio 8:7. How many litres of the mixture should be removed and replaced with pure water so that the ratio of milk to water in the resulting mixture becomes 4:5?
+A. 15 litres
+B. 12 litres
+C. 6 litres
+D. 9 litres
+Answer: A
+
+Q.76: Fill in the blank with the correctly spelt word. The speaker's ________ tone alienated many listeners during the debate.
+A. supercilious
+B. supercillious
+C. supercileous
+D. suppercillious
+Answer: A
+
+Q.77: Fill in the blank with the correctly spelt word. The scientist maintained ________ even when her theory was harshly criticized.
+A. equanamity
+B. equanimity
+C. equinimity
+D. equinammity
+Answer: B
+
+Q.78: Which of the following is the correct spelling of the word?
+A. Logorrhoea
+B. Logorhoea
+C. Loggorrhoea
+D. Loggorrhea
+Answer: A
+
+Q.79: The Indian government has appointed a new diplomat to head the official residence and office representing India in France. What is the correct one-word substitute for "the official residence and office representing India in France"?
+A. Consulate
+B. Embassy
+C. High Commission
+D. Chancery
+Answer: B
+
+Q.80: Choose the correct active form of the given sentence. Tomorrow, two hours of free time will be obtained by me.
+A. Tomorrow, I will obtain two hours of free time.
+B. Yesterday I obtained two hours of free time.
+C. I am obtaining two hours of free time today.
+D. I had obtained two hours of free time yesterday.
+Answer: A
+
+Q.81: Complete the sentence in indirect speech. "Have you submitted the assignment yet?" the teacher asked. The teacher asked me ________ the assignment yet.
+A. if I submit
+B. whether I had submitted
+C. if I have submitted
+D. whether had I submitted
+Answer: B
+
+Q.82: Rearrange the parts of the sentence in the correct order. As the 2024 Paris Olympics approached, P. raising concerns/diplomatic boycotts and the potential exclusion of certain nations, Q. global geopolitical tensions, including conflicts in Eastern Europe and trade disputes among superpowers, R. while the International Olympic Committee attempted to maintain neutrality and ensure an inclusive competition S. cast a shadow/the event's spirit of international unity and sportsmanship,
+A. PSQR
+B. SRQP
+C. RSPQ
+D. QSPR
+Answer: D
+
+Q.83: Rearrange the parts of the sentence in the correct order. In response to persistent inflationary pressures, P. against the risk of prolonged stagnation Q. restrictive monetary policies were implemented, R. by raising interest rates and reducing liquidity S. forcing central banks to balance economic growth
+A. PRQS
+B. QSRP
+C. SQPR
+D. RPSQ
+Answer: D
+
+Q.84: Improve the sentence by selecting the appropriate preposition from the following options. She received a gift ______ her best friend.
+A. on
+B. from
+C. of
+D. to
+Answer: B
+
+Q.85: Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?
+
+1. This led to the development of groundbreaking theories such as Heisenberg's uncertainty principle and Schrödinger's wave equation.
+
+2. In the early 20th century, physicists realized that classical mechanics could not explain certain atomic and subatomic phenomena.
+
+3. Quantum mechanics revolutionized technology, enabling advancements in semiconductors, lasers, and quantum computing.
+
+4. Scientists like Max Planck and Albert Einstein introduced the idea that energy is quantized, laying the foundation for quantum mechanics.
+
+5. Despite its success, the theory remains counterintuitive, challenging our understanding of reality at the fundamental level.
+A. 2-4-1-3-5
+B. 3-1-4-2-5
+C. 1-3-4-2-5
+D. 3-2-5-4-1
+Answer: A
+
+Q.86: Which of the following pairs of homonyms can be used to fill in the blanks most suitably? He had to ___ his brains trying to remember how he came to be on the shore strewn with ___ and driftwood.
+A. wrack, rack
+B. rack, rack
+C. rack, wrack
+D. wrack, wrack
+Answer: A
+
+Q.87: Choose the correct idiom for the word highlighted in bold. "Mrs. Robinson has three children to support, and she doesn't make very much money at her job. She is barely keeping her head above water."
+A. Struggling to survive financially
+B. Learning how to swim
+C. Feeling relaxed and stress-free
+D. Living in a house near the water
+Answer: A
+
+Q.88: **Comprehension (Q. 88 - 92):** In contemporary professional environments, workplace stress has emerged as a pervasive and insidious phenomenon, often undermining both organizational efficiency and employee well-being. Far from being a mere by product of demanding schedules, chronic occupational stress is frequently rooted in deeper systemic issues such as unrealistic expectations, inadequate support structures, and a pervasive culture of constant connectivity. The relentless pursuit of productivity, amplified by technological advancements that blur the boundaries between personal and professional spheres, has exacerbated employees' sense of perpetual obligation. Left unchecked, prolonged exposure to high-stress environments can precipitate a range of deleterious outcomes, including burnout, diminished cognitive functioning, and even serious physical health conditions like hypertension and cardiovascular disease. Organizations that fail to recognize and address the underlying causes of stress not only risk elevated turnover rates but also compromise innovation, morale, and overall competitiveness. Counteracting workplace stress demands a multi-faceted approach that transcends superficial interventions such as temporary wellness programs or occasional mindfulness workshops. Instead, it requires a fundamental re-evaluation of work design, leadership styles, and organizational priorities. Encouraging open dialogue about mental health, instituting flexible work arrangements, and fostering a culture that genuinely values work-life balance are pivotal steps toward cultivating a more sustainable and humane professional landscape.
+
+---
+
+Which of the following is the correct tense used in the sentence: "Left unchecked, prolonged exposure to high-stress environments can precipitate a range of deleterious outcomes..."?
+A. Past Perfect
+B. Present Simple
+C. Future Perfect
+D. Present Conditional
+Answer: D
+
+Q.89: **Comprehension (Q. 88 - 92):** In contemporary professional environments, workplace stress has emerged as a pervasive and insidious phenomenon, often undermining both organizational efficiency and employee well-being. Far from being a mere by product of demanding schedules, chronic occupational stress is frequently rooted in deeper systemic issues such as unrealistic expectations, inadequate support structures, and a pervasive culture of constant connectivity. The relentless pursuit of productivity, amplified by technological advancements that blur the boundaries between personal and professional spheres, has exacerbated employees' sense of perpetual obligation. Left unchecked, prolonged exposure to high-stress environments can precipitate a range of deleterious outcomes, including burnout, diminished cognitive functioning, and even serious physical health conditions like hypertension and cardiovascular disease. Organizations that fail to recognize and address the underlying causes of stress not only risk elevated turnover rates but also compromise innovation, morale, and overall competitiveness. Counteracting workplace stress demands a multi-faceted approach that transcends superficial interventions such as temporary wellness programs or occasional mindfulness workshops. Instead, it requires a fundamental re-evaluation of work design, leadership styles, and organizational priorities. Encouraging open dialogue about mental health, instituting flexible work arrangements, and fostering a culture that genuinely values work-life balance are pivotal steps toward cultivating a more sustainable and humane professional landscape.
+
+---
+
+Identify the grammatical function of the phrase "Far from being a mere by product of demanding schedules" in the first paragraph.
+A. It is the main subject of the sentence.
+B. It is an introductory phrase modifying the main clause.
+C. It is a dependent clause providing a condition.
+D. It is a direct object of the verb.
+Answer: C
+
+Q.90: **Comprehension (Q. 88 - 92):** In contemporary professional environments, workplace stress has emerged as a pervasive and insidious phenomenon, often undermining both organizational efficiency and employee well-being. Far from being a mere by product of demanding schedules, chronic occupational stress is frequently rooted in deeper systemic issues such as unrealistic expectations, inadequate support structures, and a pervasive culture of constant connectivity. The relentless pursuit of productivity, amplified by technological advancements that blur the boundaries between personal and professional spheres, has exacerbated employees' sense of perpetual obligation. Left unchecked, prolonged exposure to high-stress environments can precipitate a range of deleterious outcomes, including burnout, diminished cognitive functioning, and even serious physical health conditions like hypertension and cardiovascular disease. Organizations that fail to recognize and address the underlying causes of stress not only risk elevated turnover rates but also compromise innovation, morale, and overall competitiveness. Counteracting workplace stress demands a multi-faceted approach that transcends superficial interventions such as temporary wellness programs or occasional mindfulness workshops. Instead, it requires a fundamental re-evaluation of work design, leadership styles, and organizational priorities. Encouraging open dialogue about mental health, instituting flexible work arrangements, and fostering a culture that genuinely values work-life balance are pivotal steps toward cultivating a more sustainable and humane professional landscape.
+
+---
+
+What is the meaning of the word "insidious" as used in the passage?
+A. Open and obvious
+B. Harmless and fleeting
+C. Gradually harmful and subtly
+D. Quickly destructive and visible
+Answer: C
+
+Q.91: **Comprehension (Q. 88 - 92):** In contemporary professional environments, workplace stress has emerged as a pervasive and insidious phenomenon, often undermining both organizational efficiency and employee well-being. Far from being a mere by product of demanding schedules, chronic occupational stress is frequently rooted in deeper systemic issues such as unrealistic expectations, inadequate support structures, and a pervasive culture of constant connectivity. The relentless pursuit of productivity, amplified by technological advancements that blur the boundaries between personal and professional spheres, has exacerbated employees' sense of perpetual obligation. Left unchecked, prolonged exposure to high-stress environments can precipitate a range of deleterious outcomes, including burnout, diminished cognitive functioning, and even serious physical health conditions like hypertension and cardiovascular disease. Organizations that fail to recognize and address the underlying causes of stress not only risk elevated turnover rates but also compromise innovation, morale, and overall competitiveness. Counteracting workplace stress demands a multi-faceted approach that transcends superficial interventions such as temporary wellness programs or occasional mindfulness workshops. Instead, it requires a fundamental re-evaluation of work design, leadership styles, and organizational priorities. Encouraging open dialogue about mental health, instituting flexible work arrangements, and fostering a culture that genuinely values work-life balance are pivotal steps toward cultivating a more sustainable and humane professional landscape.
+
+---
+
+The word "deleterious" most nearly means.
+A. Advantageous
+B. Harmful
+C. Temporary
+D. Curious
+Answer: B
+
+Q.92: **Comprehension (Q. 88 - 92):** In contemporary professional environments, workplace stress has emerged as a pervasive and insidious phenomenon, often undermining both organizational efficiency and employee well-being. Far from being a mere by product of demanding schedules, chronic occupational stress is frequently rooted in deeper systemic issues such as unrealistic expectations, inadequate support structures, and a pervasive culture of constant connectivity. The relentless pursuit of productivity, amplified by technological advancements that blur the boundaries between personal and professional spheres, has exacerbated employees' sense of perpetual obligation. Left unchecked, prolonged exposure to high-stress environments can precipitate a range of deleterious outcomes, including burnout, diminished cognitive functioning, and even serious physical health conditions like hypertension and cardiovascular disease. Organizations that fail to recognize and address the underlying causes of stress not only risk elevated turnover rates but also compromise innovation, morale, and overall competitiveness. Counteracting workplace stress demands a multi-faceted approach that transcends superficial interventions such as temporary wellness programs or occasional mindfulness workshops. Instead, it requires a fundamental re-evaluation of work design, leadership styles, and organizational priorities. Encouraging open dialogue about mental health, instituting flexible work arrangements, and fostering a culture that genuinely values work-life balance are pivotal steps toward cultivating a more sustainable and humane professional landscape.
+
+---
+
+According to the passage, what is a key failure of organizations when addressing workplace stress?
+A. They overly emphasize work-life balance.
+B. They rely on short-term or surface-level solutions.
+C. They provide excessive flexibility, causing laziness.
+D. They hire too many inexperienced employees.
+Answer: B
+
+Q.93: Select the most appropriate synonym of the given word: ESOTERIC
+A. Obscure
+B. Popular
+C. Simple
+D. Common
+Answer: A
+
+Q.94: Select the most appropriate antonym of the given word. Excoriate
+A. Praise
+B. Berate
+C. Condemn
+D. Rebuke
+Answer: A
+
+Q.95: Choose the correct meaning of idiom: Beard the lion in his den
+A. Hide from danger
+B. Flatter a powerful person
+C. Feed captive animals
+D. Confront someone powerful on their own ground
+Answer: D
+
+Q.96: Select the most appropriate antonym of the given word. Crepuscular
+A. Dusk
+B. Diurnal
+C. Dim
+D. Twilight
+Answer: B
+
+Q.97: Select the correct option: Despite the scholar's penchant for convoluted prose, his central thesis emerged with surprising lucidity in the concluding chapter.
+A. lucidity
+B. opacity
+C. perversity
+D. tenacity
+Answer: A
+
+Q.98: Change the following from active to passive: They ought to clean the park.
+A. The park ought to clean.
+B. The park ought to be cleaned.
+C. The park ought be cleaned.
+D. The park ought to have been cleaned.
+Answer: B
+
+Q.99: Find the part of the sentence that contains an error: It is high time the minister (1)/ clarifies his stance on the matter (2)/ rather than leaving it (3)/ open to public speculation. (4)
+A. 1
+B. 2
+C. 3
+D. 4
+Answer: B
+
+Q.100: Convert the sentence provided below from its passive voice structure to an active voice structure: The decision is not expected to be reversed by the board despite ongoing protests.
+A. Ongoing protests will force the board to reverse the decision.
+B. The board is not expected to reverse the decision despite ongoing protests.
+C. It is not expected that the board protests against the decision.
+D. Protesters expect the board not to reverse the decision.
+Answer: B
+

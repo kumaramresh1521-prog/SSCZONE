@@ -24,6 +24,12 @@ export async function middleware(request: NextRequest) {
   const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
   if (!supabaseUrl || !supabaseKey) {
+    if (isProtectedAdminApi) {
+      return NextResponse.json({ error: "Authentication service unavailable" }, { status: 503 });
+    }
+    if (isProtectedAdmin || isProtectedDashboard) {
+      return NextResponse.redirect(new URL("/login?error=configuration", request.url));
+    }
     return supabaseResponse;
   }
 
@@ -108,7 +114,13 @@ export async function middleware(request: NextRequest) {
 
     return supabaseResponse;
   } catch (err) {
-    console.error("Middleware Error caught safely:", err);
+    console.error("Middleware authentication error:", err);
+    if (isProtectedAdminApi) {
+      return NextResponse.json({ error: "Authentication service unavailable" }, { status: 503 });
+    }
+    if (isProtectedAdmin || isProtectedDashboard) {
+      return NextResponse.redirect(new URL("/login?error=authentication", request.url));
+    }
     return supabaseResponse;
   }
 }

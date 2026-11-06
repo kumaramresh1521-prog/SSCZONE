@@ -1,0 +1,52 @@
+[
+  {
+    "base": "ssc-cgl-2025-12-september-2025-shift-1",
+    "qn": 52,
+    "desc": "Trailing page number in question_text: '2½ + 3.6) - 1.9'"
+  },
+  {
+    "base": "ssc-cgl-2025-15-september-2025-shift-1",
+    "qn": 54,
+    "desc": "Trailing page number in question_text: '5 - 1/2)) + 0.6'"
+  },
+  {
+    "base": "ssc-cgl-2026-1-october-2026-shift-1",
+    "qn": 59,
+    "desc": "Trailing page number in question_text: '×0.04+0.04×0.04'"
+  },
+  {
+    "base": "ssc-cgl-2026-1-october-2026-shift-3",
+    "qn": 1,
+    "desc": "Trailing page number in question_text: ' 42, 146, 661.5'"
+  },
+  {
+    "base": "ssc-cgl-2026-10-october-2026-shift-3",
+    "qn": 51,
+    "desc": "Trailing page number in question_text: '0.75+0.075+0.01'"
+  },
+  {
+    "base": "ssc-cgl-2026-13-october-2026-shift-3",
+    "qn": 52,
+    "desc": "Trailing page number in question_text: '12.25+8.75+6.25'"
+  },
+  {
+    "base": "ssc-cgl-2026-6-october-2026-shift-1",
+    "qn": 73,
+    "desc": "Trailing page number in question_text: '4.63×4.63\n\n0.74'"
+  },
+  {
+    "base": "ssc-cgl-2026-7-october-2026-shift-1",
+    "qn": 57,
+    "desc": "Trailing page number in question_text: '×0.13+0.13×0.13'"
+  },
+  {
+    "base": "ssc-cgl-2026-8-october-2026-shift-2",
+    "qn": 55,
+    "desc": "Trailing page number in question_text: ' .\n\n6.25+3+1.44'"
+  },
+  {
+    "base": "ssc-cgl-2026-9-october-2026-shift-3",
+    "qn": 60,
+    "desc": "Trailing page number in question_text: '−1 . (5.4)²+6.4'"
+  }
+]

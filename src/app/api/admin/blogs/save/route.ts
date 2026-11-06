@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import fs from "fs";
 import path from "path";
+import { requireAdmin } from "@/lib/api-auth";
+import { sanitizeBlogContent } from "@/lib/blog-sanitizer";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -30,7 +32,20 @@ function backupBlog(blogData: any) {
   }
 }
 
+function safeImageUrl(value: unknown) {
+  if (typeof value !== "string" || !value.trim()) return null;
+  try {
+    const url = new URL(value);
+    return url.protocol === "https:" || url.protocol === "http:" ? url.toString() : null;
+  } catch {
+    return null;
+  }
+}
+
 export async function POST(req: NextRequest) {
+  const denied = await requireAdmin(req);
+  if (denied) return denied;
+
   try {
     const body = await req.json();
     const {
@@ -72,17 +87,18 @@ export async function POST(req: NextRequest) {
       saved_at: new Date().toISOString()
     };
 
-    const cleanExcerpt = excerpt?.trim() || content?.replace(/<[^>]*>?/gm, "").substring(0, 160) + "...";
+    const cleanContent = sanitizeBlogContent(content);
+    const cleanExcerpt = excerpt?.trim() || cleanContent.replace(/<[^>]*>?/gm, "").substring(0, 160) + "...";
     const cleanSeoTitle = seo_title?.trim() || `${title.trim()} | SSCZone`;
 
     const dbPayload: any = {
       title: title.trim(),
       slug: cleanSlug,
-      content: content || "",
+      content: cleanContent,
       excerpt: cleanExcerpt,
       seo_title: cleanSeoTitle,
       keywords: JSON.stringify(metaPayload),
-      image_url: image_url?.trim() || null,
+      image_url: safeImageUrl(image_url),
       is_published: typeof is_published === "boolean" ? is_published : true,
       updated_at: new Date().toISOString()
     };

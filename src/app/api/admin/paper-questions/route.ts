@@ -1,0 +1,275 @@
+import { NextRequest, NextResponse } from "next/server";
+import { createClient } from "@supabase/supabase-js";
+import fs from "fs";
+import path from "path";
+
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
+const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+
+const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey, {
+  auth: { autoRefreshToken: false, persistSession: false },
+});
+
+// Helper to sync local TXT and JSON backups
+async function syncLocalBackup(paperId: number) {
+  try {
+    const { data: paper } = await supabaseAdmin
+      .from("previous_papers")
+      .select("id, title, year, duration_minutes, exams(title)")
+      .eq("id", paperId)
+      .single();
+
+    const { data: questions } = await supabaseAdmin
+      .from("paper_questions")
+      .select("*")
+      .eq("paper_id", paperId)
+      .order("question_number", { ascending: true });
+
+    if (!paper || !questions) return;
+
+    const slug = (paper.title || `paper_${paperId}`)
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)+/g, "");
+
+    const backupDir = path.join(process.cwd(), "src", "data", "pyq_backup");
+    if (!fs.existsSync(backupDir)) fs.mkdirSync(backupDir, { recursive: true });
+
+    // Generate formatted TXT
+    let txt = `================================================================================\n`;
+    txt += `${(paper.title || "SSC ZONE PYQ PAPER").toUpperCase()}\n`;
+    txt += `Exam: ${(paper as any).exams?.title || "SSC Examination"} | Year: ${paper.year || 2025}\n`;
+    txt += `Total Questions: ${questions.length} | Duration: ${paper.duration_minutes || 60} Minutes\n`;
+    txt += `Extracted from Official Answer Key via SSC ZONE (www.ssczone.in)\n`;
+    txt += `Last Updated: ${new Date().toLocaleString()}\n`;
+    txt += `================================================================================\n\n`;
+
+    questions.forEach((q, idx) => {
+      const qNo = q.question_number || idx + 1;
+      txt += `Q${qNo}. ${q.question_text}\n`;
+      txt += `A) ${q.option_a}\n`;
+      txt += `B) ${q.option_b}\n`;
+      txt += `C) ${q.option_c}\n`;
+      txt += `D) ${q.option_d}\n`;
+      txt += `Correct Answer: Option ${q.correct_answer}\n`;
+      if (q.explanation && q.explanation.trim()) {
+        txt += `Explanation: ${q.explanation.trim()}\n`;
+      }
+      txt += `--------------------------------------------------------------------------------\n\n`;
+    });
+
+    const txtPath = path.join(backupDir, `${slug}.txt`);
+    const jsonPath = path.join(backupDir, `${slug}.json`);
+    fs.writeFileSync(txtPath, txt, "utf-8");
+    fs.writeFileSync(jsonPath, JSON.stringify(questions, null, 2), "utf-8");
+
+    // An optional local-only backup folder; Cloud Run leaves this unset.
+    const extDir = process.env.PYQ_BACKUP_DIRECTORY;
+    if (extDir && path.isAbsolute(extDir) && fs.existsSync(extDir)) {
+      try {
+        fs.writeFileSync(path.join(extDir, `${slug}.txt`), txt, "utf-8");
+        fs.writeFileSync(path.join(extDir, `${slug}.json`), JSON.stringify(questions, null, 2), "utf-8");
+      } catch {}
+    }
+  } catch (err) {
+    console.error("syncLocalBackup error:", err);
+  }
+}
+
+export async function POST(req: NextRequest) {
+  try {
+    const body = await req.json();
+
+    // 1. Bulk Import (Batch insert/overwrite)
+    if (body.bulk && Array.isArray(body.questions)) {
+      const { paper_id, questions, overwrite } = body;
+      const pid = Number(paper_id);
+      if (!pid) {
+        return NextResponse.json({ error: "Missing paper_id" }, { status: 400 });
+      }
+
+      if (overwrite) {
+        const { error: delErr } = await supabaseAdmin
+          .from("paper_questions")
+          .delete()
+          .eq("paper_id", pid);
+        if (delErr) {
+          return NextResponse.json({ error: delErr.message }, { status: 500 });
+        }
+      }
+
+      const chunkSize = 50;
+      let insertedCount = 0;
+
+      for (let i = 0; i < questions.length; i += chunkSize) {
+        const chunk = questions.slice(i, i + chunkSize);
+        const { error: insErr } = await supabaseAdmin
+          .from("paper_questions")
+          .insert(chunk);
+        if (insErr) {
+          return NextResponse.json({ error: insErr.message }, { status: 500 });
+        }
+        insertedCount += chunk.length;
+      }
+
+      await syncLocalBackup(pid);
+      return NextResponse.json({ success: true, count: insertedCount });
+    }
+
+    // 2. Single Question (Insert or Update)
+    const {
+      id,
+      paper_id,
+      question_number,
+      question_text,
+      option_a,
+      option_b,
+      option_c,
+      option_d,
+      correct_answer,
+      explanation,
+    } = body;
+
+    const pid = Number(paper_id);
+    if (!pid || !question_text) {
+      return NextResponse.json(
+        { error: "Missing required fields (paper_id, question_text)" },
+        { status: 400 }
+      );
+    }
+
+    const payloadWithExp: any = {
+      paper_id: pid,
+      question_number: Number(question_number) || 1,
+      question_text: String(question_text).trim(),
+      option_a: String(option_a ?? "").trim(),
+      option_b: String(option_b ?? "").trim(),
+      option_c: String(option_c ?? "").trim(),
+      option_d: String(option_d ?? "").trim(),
+      correct_answer: String(correct_answer || "A").trim().toUpperCase(),
+      explanation: explanation ? String(explanation).trim() : null,
+    };
+
+    const payloadBase: any = {
+      paper_id: pid,
+      question_number: Number(question_number) || 1,
+      question_text: String(question_text).trim(),
+      option_a: String(option_a ?? "").trim(),
+      option_b: String(option_b ?? "").trim(),
+      option_c: String(option_c ?? "").trim(),
+      option_d: String(option_d ?? "").trim(),
+      correct_answer: String(correct_answer || "A").trim().toUpperCase(),
+    };
+
+    let result = null;
+
+    if (id) {
+      // UPDATE existing question
+      let { data, error } = await supabaseAdmin
+        .from("paper_questions")
+        .update(payloadWithExp)
+        .eq("id", Number(id))
+        .select()
+        .single();
+
+      if (error && error.message.includes("explanation")) {
+        const fallback = await supabaseAdmin
+          .from("paper_questions")
+          .update(payloadBase)
+          .eq("id", Number(id))
+          .select()
+          .single();
+        error = fallback.error;
+        data = fallback.data;
+      }
+
+      if (error) {
+        return NextResponse.json({ error: error.message }, { status: 500 });
+      }
+
+      result = data;
+    } else {
+      // INSERT new question
+      let { data, error } = await supabaseAdmin
+        .from("paper_questions")
+        .insert(payloadWithExp)
+        .select()
+        .single();
+
+      if (error && error.message.includes("explanation")) {
+        const fallback = await supabaseAdmin
+          .from("paper_questions")
+          .insert(payloadBase)
+          .select()
+          .single();
+        error = fallback.error;
+        data = fallback.data;
+      }
+
+      if (error) {
+        return NextResponse.json({ error: error.message }, { status: 500 });
+      }
+
+      result = data;
+    }
+
+    // Update local TXT/JSON backups
+    await syncLocalBackup(pid);
+
+    return NextResponse.json({ success: true, question: result });
+  } catch (err: any) {
+    return NextResponse.json({ error: err.message || "Server error" }, { status: 500 });
+  }
+}
+
+export async function DELETE(req: NextRequest) {
+  try {
+    const body = await req.json();
+    const { id, paper_id } = body;
+
+    if (id) {
+      // Fetch paper_id before deleting so we can sync backup
+      const { data: q } = await supabaseAdmin
+        .from("paper_questions")
+        .select("paper_id")
+        .eq("id", Number(id))
+        .maybeSingle();
+
+      const { error } = await supabaseAdmin
+        .from("paper_questions")
+        .delete()
+        .eq("id", Number(id));
+
+      if (error) {
+        return NextResponse.json({ error: error.message }, { status: 500 });
+      }
+
+      if (q?.paper_id) {
+        await syncLocalBackup(q.paper_id);
+      }
+
+      return NextResponse.json({ success: true });
+    }
+
+    if (paper_id) {
+      const { error } = await supabaseAdmin
+        .from("paper_questions")
+        .delete()
+        .eq("paper_id", Number(paper_id));
+
+      if (error) {
+        return NextResponse.json({ error: error.message }, { status: 500 });
+      }
+
+      await syncLocalBackup(Number(paper_id));
+      return NextResponse.json({ success: true });
+    }
+
+    return NextResponse.json({ error: "Missing id or paper_id" }, { status: 400 });
+  } catch (err: any) {
+    return NextResponse.json({ error: err.message || "Server error" }, { status: 500 });
+  }
+}

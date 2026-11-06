@@ -1,0 +1,770 @@
+Q.1: ![Figure](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_p2_x25.jpeg)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_p2_x26.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_p2_x27.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_p2_x28.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_p2_x29.jpeg)
+Answer: A
+
+Q.2: If in an examination the centre codes and roll numbers are decided by the initial of States/UT followed by digits in a particular pattern like MH10967 for Maharashtra, then Which one of the following codes indicates a roll number from the Southern Region?
+A. TN10432
+B. RJ10987
+C. PB20514
+D. HP10954
+Answer: A
+
+Q.3: Find the odd one out. India, China, Brazil, Tokyo
+A. India
+B. Brazil
+C. Tokyo
+D. Canada
+Answer: C
+
+Q.4: Statement: A recent academic report showed that students in urban schools perform better in standardized science tests than those in rural schools. However, rural students have higher attendance rates and report better engagement in classroom activities.
+
+Conclusions:
+
+I. Academic performance in science is not directly linked to classroom attendance.
+
+II. Urban students are less interested in science education.
+A. Only conclusion I follows
+B. Only conclusion II follows
+C. Neither conclusion I nor II follows
+D. Both conclusion I and II follow
+Answer: A
+
+Q.5: Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option.
+
+Statement: With rapid advancements in technology, it is vital to rethink educational systems to ensure they equip students with the skills needed for the future workforce. Assumptions:
+
+I. Current educational systems are not preparing students adequately for future jobs.
+
+II. Technological advancements will drastically change the nature of work.
+
+III. Education should prioritize skill development/traditional subjects.
+A. Only I and II are implicit
+B. Only II and III are implicit
+C. All I, II and III are implicit
+D. Only I is implicit
+Answer: B
+
+Q.6: A child takes 1 step on Day 1, 2 steps on Day 2, 4 steps on Day 3 and 8 steps on Day 4. How many on Day 5?
+A. 10
+B. 12
+C. 14
+D. 16
+Answer: D
+
+Q.7: If "PLANET" is coded as "16 12 1 14 5 20", what is "EARTH"?
+A. 5 1 19 20 8
+B. 6 2 1 7 2 1 9
+C. 5 1 18 20 8
+D. 3 3 20 18 6
+Answer: C
+
+Q.8: ![Figure](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_p3_x311.jpeg)
+A. 25
+B. 50
+C. 75
+D. 0
+Answer: A
+
+Q.9: Identify the Odd One Out:
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_q9_opt_A.png)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_q9_opt_B.png)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_q9_opt_C.png)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_q9_opt_D.png)
+Answer: C
+
+Q.10: Out of 120 people, 75 like Apple, 60 like Samsung, and 30 like both. How many people like only one brand?
+A. 75
+B. 45
+C. 60
+D. 50
+Answer: A
+
+Q.11: The average of 5 consecutive odd numbers is 45. What is the difference between the largest and the smallest number?
+A. 4
+B. 8
+C. 16
+D. 12
+Answer: B
+
+Q.12: Which of the following letters is missing from the series: W, S, O, K?
+A. C
+B. F
+C. J
+D. G
+Answer: D
+
+Q.13: ![Figure](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_p3_x316.jpeg)
+A. F
+B. A
+C. C
+D. 2
+Answer: A
+
+Q.14: In the following question, two groups of letters are related by a specific pattern. Identify the same pattern and apply it to the second group to find the missing letters. ABCD : ADIP :: KLMN : ?
+A. KNSZ
+B. KUAE
+C. KVAE
+D. LVBF
+Answer: A
+
+Q.15: Which of the following options matches the given address exactly? Mr S. Kumar 123 Green Valley, 3rd Floor Ranchi, Jharkhand - 834001
+A. Mr S. Kumar, 123 Green Valley, 3rd Floor, Ranchi, Jharkhand - 834002
+B. Mr S. Kumar, 123 Green Valley, 2nd Floor, Ranchi, Jharkhand - 834001
+C. Mr S. Kumar, 123 Green Valley, 3rd Floor, Ranchi, Jharkhand - 834001
+D. Mr S. Kumar, 123 Green Valley, 3rd Floor, Ranchi, Jharkhand - 834003
+Answer: C
+
+Q.16: How many such S are there which are immediately preceded by P but not immediately followed by T? Sequence: PSTPSPSTPSSPT
+A. 1
+B. 3
+C. 2
+D. 4
+Answer: C
+
+Q.17: Identify the alternative set of numbers that correctly codes the word. The code uses [Row, Column] format. | | 1 | 2 | 3 | 4 | 5 | 6 | 7 | |---|---|---|---|---|---|---|---| | 1 | S | T | R | E | A | M | P | | 2 | H | O | U | S | E | L | D | | 3 | B | R | I | G | H | T | N | | 4 | C | R | E | A | T | O | R | | 5 | W | I | N | D | O | W | S | | 6 | J | A | C | K | E | T | Q | | 7 | F | A | M | O | U | S | X | What is the correct code for "SOLUTION"?
+A. (7,6)(2,2)(2,6)(2,1)(3,4)(5,2)(1,4)(3,5)
+B. (7,6)(2,2)(2,6)(4,3)(3,6)(1,2)(5,4)(3,6)
+C. (7,6)(2,2)(2,6)(2,3)(3,6)(5,2)(7,4)(3,7)
+D. (7,6)(2,2)(2,6)(1,3)(2,4)(5,1)(5,4)(3,7)
+Answer: C
+
+Q.18: ![Figure](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_p4_x561.jpeg)
+A. 10
+B. 12
+C. 14
+D. 16
+Answer: B
+
+Q.19: Read the eligibility criteria given for the post carefully and answer the question that follows. Eligibility Criteria for the post of Data Entry Operator (as on 01-03-2025):
+
+1. Must have passed Class 12th with 60% marks or above.
+
+2. Must have typing speed of at least 30 wpm.
+
+3. Age must not exceed 28 years. Case: Ramesh passed Class 12th with 62% marks, has typing speed of 35 wpm, and is 27 years old. What should be done in Ramesh’s case?
+A. Eligible
+B. Not Eligible (Marks less)
+C. Not Eligible (Typing speed less)
+D. Not Eligible (Age more)
+Answer: A
+
+Q.20: How many triangles are there in the given figure?
+A. 32
+B. 36
+C. 40
+D. 42
+Answer: C
+
+Q.21: ![Figure](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_p4_x562.jpeg)
+A. 2
+B. 4
+C. 1
+D. 3
+Answer: B
+
+Q.22: ![Figure](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_p4_x563.jpeg)
+A. 2
+B. 1
+C. 3
+D. 4
+Answer: A
+
+Q.23: ![Figure](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_p4_x564.jpeg)
+A. 1
+B. 3
+C. 2
+D. 4
+Answer: B
+
+Q.24: Fill in the blanks (_) using one of the following four options such that the series follows a specific order. _xx_yx_yy_xy_xxy
+A. yxyxy
+B. xxxyy
+C. yyxxy
+D. yyyxx
+Answer: C
+
+Q.25: ![Figure](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_p5_x808.jpeg)
+A. 2
+B. 3
+C. 4
+D. 1
+Answer: A
+
+Q.26: Who authored the famous Prayaga Prashasti praising Samudragupta's achievements?
+A. Harisena
+B. Kalidasa
+C. Aryabhata
+D. Faxian
+Answer: A
+
+Q.27: What is the correct chronological sequence of the Afghan (Lodi) rulers on the throne of Delhi?
+A. Sikandar Shah—Ibrahim Lodi—Bahlul Khan Lodi
+B. Sikandar Shah—Bahlul Khan Lodi—Ibrahim Lodi
+C. Bahlul Khan Lodi—Sikandar Shah—Ibrahim Lodi
+D. Bahlul Khan Lodi—Ibrahim Lodi—Sikandar Shah
+Answer: C
+
+Q.28: Which Buddhist council was held during the rule of King Kalashoka, the successor of the Shishunaga dynasty?
+A. The first Buddhist council
+B. The second Buddhist council
+C. The third Buddhist council
+D. The fourth Buddhist council
+Answer: B
+
+Q.29: Which committee/commission was appointed in 1921 to look into the separation of Railway Finances from General Finances?
+A. Hilton Young
+B. Acworth Commission Committee
+C. Strachey
+D. Hunter Committee Commission
+Answer: B
+
+Q.30: As per Article 75 of the Constitution of India, the Council of Ministers holds collective responsibility to which institution?
+A. President
+B. Rajya Sabha
+C. Lok Sabha
+D. Supreme Court
+Answer: C
+
+Q.31: What is the minimum age required to become a member of the Rajya Sabha as per the Article 84 of the Indian Constitution?
+A. Twenty-five years
+B. Thirty years of of age age
+C. Thirty-five years
+D. Twenty-one years of age of age
+Answer: B
+
+Q.32: What is the specific ground for the removal of a Supreme Court Judge under Article 124(4) of the Indian Constitution?
+A. Violation of the Constitution or conviction for a criminal offence
+B. Proved misbehaviour or permanent incapacity
+C. Failure to maintain judicial records
+D. Accepting an office of profit
+Answer: B
+
+Q.33: Which of the following is the correct sequence of Earth's atmospheric gases in descending order of their abundance (by volume)?
+A. Nitrogen > Oxygen > Carbon Dioxide > Argon
+B. Nitrogen > Oxygen > Argon > Carbon Dioxide
+C. Oxygen > Nitrogen > Argon > Carbon Dioxide
+D. Nitrogen > Argon > Oxygen > Neon
+Answer: B
+
+Q.34: Which year was the National Anti-Doping Act passed in India?
+A. 2018
+B. 2020
+C. 2022
+D. 2024
+Answer: C
+
+Q.35: In which of the following states is the Sonam Lhochar festival primarily celebrated?
+A. Sikkim
+B. Kerala
+C. Meghalaya
+D. Mizoram
+Answer: A
+
+Q.36: In cricket, which condition allows a batter to be dismissed despite no prior contact between the bat and the ball?
+A. Clean catch
+B. Ball hits body first
+C. Hit twice
+D. Obstruction
+Answer: B
+
+Q.37: Which two emotions are primarily expressed through the “Chawnglaizawn” folk dance?
+A. Anger and Fear
+B. Mourning and Joy
+C. Love and Devotion
+D. Courage and Pride
+Answer: B
+
+Q.38: Which of the following taals consists of two vibhags with a total of six matras?
+A. Dadra Taal
+B. Teen Taal
+C. Keharva Taal
+D. Rupaka Taal
+Answer: A
+
+Q.39: In India, under the PM-PRANAM (PM Programme for Restoration, Awareness Generation, Nourishment, and Amelioration of Mother Earth) scheme, States/UTs that reduce their chemical fertilizer consumption are rewarded with what percentage of the fertilizer subsidy saved by the Centre as a grant?
+A. 50% of the fertilizer subsidy saved by the Centre as a grant
+B. 25% of the fertilizer subsidy saved by the Centre as a grant
+C. 75% of the fertilizer subsidy saved by the Centre as a grant
+D. 100% of the fertilizer subsidy saved by the Centre as a grant
+Answer: A
+
+Q.40: Which of the following pairs of author and language (Poetry category) for the Sahitya 5 Akademi Award 2025 is correctly matched?
+A. Prasun Bandyopadhyay - Bengali
+B. Khajur Singh Thakur – Odia
+C. Girijakumar Baliyar Singh – Gujarati
+D. Pritpal Singh Betab – Dogri
+Answer: A
+
+Q.41: Bay of Bengal Initiative for Multi-Sectoral Technical and Economic Cooperation
+
+(BIMSTEC) is considered significant for advancing which of India’s foreign policy initiatives?
+A. Neighborhood First abandonment
+B. Look West Policy
+C. Arctic Strategy
+D. Act East Policy
+Answer: D
+
+Q.42: A sees a child trapped inside a burning house. To save the child, A throws the child from the roof onto a blanket held below, knowing the fall could kill the child. The child dies from the fall. Which is the strongest legal conclusion under the Bharatiya Nyaya Sanhita, 2023 in India?
+A. A is guilty because he knowingly caused death.
+B. A is guilty because the child did not consent.
+C. A is protected because the act was done in good faith for the child's benefit with the possibility of obtaining consent.
+D. A is protected only if the child survives.
+Answer: C
+
+Q.43: Which ISRO (Indian Space Research Organisation) scientist served as the Project Director of India's first solar observation mission, Aditya-L1?
+A. Ritu Karidhal
+B. Nigar Shaji
+C. Tessy Thomas
+D. Muthayya Vanitha
+Answer: B
+
+Q.44: As per the Census of India 2011, what is the correct distribution of male and female workers in the Tertiary sector?
+A. Male – 15,66,43,220; Female – 16,54,47,075
+B. Male – 4,37,41,311; Female – 4,37,41,311
+C. Male – 15,66,43,220; Female – 4,37,41,311
+D. Male – 4,37,41,311; Female – 16,54,47,075
+Answer: C
+
+Q.45: At what time of the day can the NASA–ISRO Synthetic Aperture Radar (NISAR) satellite observes the Earth's surface?
+A. During daytime of the winter season only
+B. During both day and night of summers only
+C. During both day and night of all seasons
+D. During the nighttime of summer season only
+Answer: C
+
+Q.46: Quantitative restrictions introduced in 1991 reforms on imports on manufactured consumer goods and agricultural products, were fully removed in which year?
+A. April 1991
+B. April 1996
+C. April 2001
+D. April 2004
+Answer: C
+
+Q.47: In Air Quality Index (AQI) health guidance, which type of outdoor activity is classified as heavy exertion?
+A. An intense activity that causes a person to breathe hard
+B. A light activity that causes little or no physical exertion
+C. A sedentary activity that involves sitting outdoors for an extended period
+D. An indoor activity that is performed exclusively inside a building
+Answer: A
+
+Q.48: What was the purpose of using the foreshortening technique for inscriptions in Indo-Islamic architecture?
+A. To hide structural flaws in the stone of the building
+B. To make elevated inscriptions appear closer to the viewer
+C. To change the visible colour of the walls
+D. To prevent sunlight from entering the building
+Answer: B
+
+Q.49: Which event led to the failure of the Dutch attempt, supported by Mir Jafar, to challenge English power in Bengal?
+A. The Dutch were defeated by the
+B. The Dutch were betrayed by Mir Jafar before the battle in November 1759.
+C. The Dutch were defeated by French forces supporting the
+D. The Dutch were compelled to withdraw without fighting the
+Answer: A
+
+Q.50: A healthy green plant is kept in complete darkness for three consecutive days. Which biological process is the plant unable to carry out because light is unavailable?
+A. Respiration
+B. Photosynthesis
+C. Transpiration
+D. Germination
+Answer: B
+
+Q.51: A solid metallic sphere of radius 3 cm is melted and recast into three smaller spherical balls. The radii of two of these balls are 2 cm and 1.5 cm, respectively. What is the surface area of the third ball?
+A. 33π cm²
+B. 45π cm²
+C. 35π cm²
+D. 25π cm²
+Answer: A
+
+Q.52: The perimeter of a right-angled triangle is 60 cm, and its hypotenuse is 25 cm. What is its area?
+A. 160 cm²
+B. 150 cm²
+C. 80 cm²
+D. 140 cm²
+Answer: B
+
+Q.53: What is the ratio of the interior angle to the exterior angle of a regular octagon?
+A. 3 : 1
+B. 3 : 4
+C. 2 : 3
+D. 3 : 2
+Answer: A
+
+Q.54: ![Figure](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_p8_x1619.jpeg)
+A. 0 - 100
+B. 100 - 200
+C. 300 - 400
+D. 400 - 500
+Answer: A
+
+Q.55: If secθ = 13/12, then find the value of tan²θ.
+A. 25/144
+B. 2/144
+C. 25/14
+D. 169/144
+Answer: A
+
+Q.56: ![Figure](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_p8_x1620.jpeg)
+A. 33%
+B. 38%
+C. 40%
+D. 45%
+Answer: A
+
+Q.57: A triangle ABC is inscribed in a semicircle with diameter AB. If ∠BAC = 50°, what is the measure of ∠ABC?
+A. 40°
+B. 50°
+C. 90°
+D. 130°
+Answer: A
+
+Q.58: ![Figure](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_p8_x1621.jpeg)
+A. IT
+B. Sales
+C. Support
+D. Finance
+Answer: A
+
+Q.59: ![Figure](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_p8_x1622.jpeg)
+A. Green and Red
+B. Purple and Yellow
+C. Green and Orange
+D. Red and Orange
+Answer: C
+
+Q.60: ![Figure](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_p8_x1623.jpeg)
+A. 20-30 thousand
+B. 50-60 thousand
+C. 40-50 thousand
+D. 70-80 thousand
+Answer: B
+
+Q.61: Find the value of (4.6)4−(1.1)4 (4.6)²+(1.1)² ÷ (4.6)³−(1.1)³ . (4.6)²+5.06+(1.1)²
+A. 4.8
+B. 5.7
+C. 6.8
+D. 8.5
+Answer: B
+
+Q.62: Find the value of (1.331−1) .
+
+1.21+1.1+1
+A. 0.5
+B. 0.1
+C. 0.7
+D. 0.9
+Answer: B
+
+Q.63: A triangle has an incenter with coordinates (2,3). If the side opposite to vertex A is 'a', which of the following statements about the incenter is correct?
+A. The distance from the incenter to vertex A is 2 units.
+B. The distance from the incenter to side 'a' is 2 units.
+C. The incenter is equidistant from all three sides.
+D. The incenter is equidistant from all three vertices.
+Answer: C
+
+Q.64: If the 6-digit number 11a7b² is divisible by 72, what is the maximum value of (2a+3b)?
+A. 28
+B. 38
+C. 45
+D. 41
+Answer: A
+
+Q.65: Find the mean proportional between 0.64 and 2.56. (Round your answer to one decimal place.)
+A. 2.4
+B. 1.3
+C. 4.4
+D. 3.2
+Answer: D
+
+Q.66: A trader marks up his goods by 50%. If the cost price increases by 20% and he gives a discount of 10% on the original selling price, find his new approximate profit percentage.
+A. 10.5%
+B. 15.5%
+C. 12.5%
+D. 18.5%
+Answer: C
+
+Q.67: A circle has diameter AB and a chord AC, forming triangle ABC on the circumference. If AB is the diameter, what is the measure of angle ACB?
+A. 45°
+B. 60°
+C. 90°
+D. 125°
+Answer: C
+
+Q.68: The diagonal of a rectangle is 17 cm, and its perimeter is 46 cm. What is the area of the rectangle?
+A. 112 cm²
+B. 120 cm²
+C. 132 cm²
+D. 150 cm²
+Answer: B
+
+Q.69: Two congruent right-angled triangles MNO and XYZ have right angles at M and
+
+X. If NO = 29 cm and XY = 20 cm, find MO.
+A. 11 cm
+B. 19 cm
+C. 21 cm
+D. 29 cm
+Answer: C
+
+Q.70: Two equal circles of radius 14 cm intersect each other such that the centre of one circle lies on the circumference of the other. Determine the length of the common chord.
+A. 7√3 cm
+B. 7 cm
+C. 14√3 cm
+D. 14 cm
+Answer: C
+
+Q.71: A dishonest milkman gains 50% by selling diluted milk at the cost price. Find the percentage of water in the mixture.
+A. 17 1 %
+B. 25%
+C. 20%
+D. 33 1 %
+Answer: D
+
+Q.72: Two concentric circles have radii 13 cm and 5 cm. A chord of the outer circle is tangent to the inner circle. Find the length of that chord.
+A. 20 cm
+B. 22 cm
+C. 24 cm
+D. 26 cm
+Answer: C
+
+Q.73: ![Figure](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_p9_x1924.jpeg)
+A. 1340
+B. 1488
+C. 1290
+D. 1580
+Answer: A
+
+Q.74: An observer on top of a cliff 100 m high observes the angles of depression of the top and bottom of a tower to be 30° and 45° respectively. Find the height of the tower.
+A. 100(1 − 1 ) m √3
+B. 25(2 − 1 ) m √3
+C. 5(5 −14 ) m √3
+D. 5(15 − 2 ) m √3
+Answer: A
+
+Q.75: In a municipal election between two candidates, 10% of the citizens on the voter list did not cast their votes. Out of the total votes cast, 10% were declared invalid. The winning candidate secured 54% of the valid votes and won by a majority of 1,620 votes. Find the total number of citizens registered on the voter list.
+A. 20,000
+B. 22,500
+C. 25,000
+D. 27,000
+Answer: C
+
+Q.76: **Comprehension (Q. 76 - 80):** In the modern zeitgeist, the ascendancy of technology (1) ___ an aura of inexorability, fostering the notion that human agency is increasingly subordinate to algorithmic architectures. Proponents of technological determinism posit that innovation unfolds according to an autonomous trajectory, largely immune to ethical, cultural, or political intervention. This perspective, however, often (2) ___ the complexity of human intentionality, reducing societies to passive recipients of innovation rather than active co-creators. Conversely, advocates for humanistic autonomy assert that technology's deployment is invariably mediated through socio- political frameworks, reflecting collective choices rather than immutable laws of progress. The crux of the debate hinges upon whether innovation possesses an inherent teleology or whether it is a malleable construct subject to deliberate modulation. Indeed, to view technological development as (3) ineluctable is to diminish the scope of human volition. Moreover, the asymmetry of technological access across socio-economic strata complicates the deterministic narrative, suggesting that technologies evolve not merely through technical ingenuity but through contested arenas of power, privilege, and ideology. As artificial intelligence, genetic engineering, and quantum computing advance, the ethical imperative to assert governance and restraint (4) ___ ever more salient. In the absence of such stewardship, humanity risks enacting a form of (5) autopoiesis, wherein systems self-perpetuate without conscious human oversight or ethical anchoring. Thus, the resolution of this tension will critically influence not merely the architecture of future technologies but the very ontology of what it means to be human.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Choose correct tense. (1)
+A. has conferred
+B. had conferred
+C. confers
+D. was conferring
+Answer: A
+
+Q.77: **Comprehension (Q. 76 - 80):** In the modern zeitgeist, the ascendancy of technology (1) ___ an aura of inexorability, fostering the notion that human agency is increasingly subordinate to algorithmic architectures. Proponents of technological determinism posit that innovation unfolds according to an autonomous trajectory, largely immune to ethical, cultural, or political intervention. This perspective, however, often (2) ___ the complexity of human intentionality, reducing societies to passive recipients of innovation rather than active co-creators. Conversely, advocates for humanistic autonomy assert that technology's deployment is invariably mediated through socio- political frameworks, reflecting collective choices rather than immutable laws of progress. The crux of the debate hinges upon whether innovation possesses an inherent teleology or whether it is a malleable construct subject to deliberate modulation. Indeed, to view technological development as (3) ineluctable is to diminish the scope of human volition. Moreover, the asymmetry of technological access across socio-economic strata complicates the deterministic narrative, suggesting that technologies evolve not merely through technical ingenuity but through contested arenas of power, privilege, and ideology. As artificial intelligence, genetic engineering, and quantum computing advance, the ethical imperative to assert governance and restraint (4) ___ ever more salient. In the absence of such stewardship, humanity risks enacting a form of (5) autopoiesis, wherein systems self-perpetuate without conscious human oversight or ethical anchoring. Thus, the resolution of this tension will critically influence not merely the architecture of future technologies but the very ontology of what it means to be human.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Choose correct verb form. (2)
+A. obscures
+B. obscure
+C. obscuring
+D. obscured
+Answer: A
+
+Q.78: **Comprehension (Q. 76 - 80):** In the modern zeitgeist, the ascendancy of technology (1) ___ an aura of inexorability, fostering the notion that human agency is increasingly subordinate to algorithmic architectures. Proponents of technological determinism posit that innovation unfolds according to an autonomous trajectory, largely immune to ethical, cultural, or political intervention. This perspective, however, often (2) ___ the complexity of human intentionality, reducing societies to passive recipients of innovation rather than active co-creators. Conversely, advocates for humanistic autonomy assert that technology's deployment is invariably mediated through socio- political frameworks, reflecting collective choices rather than immutable laws of progress. The crux of the debate hinges upon whether innovation possesses an inherent teleology or whether it is a malleable construct subject to deliberate modulation. Indeed, to view technological development as (3) ineluctable is to diminish the scope of human volition. Moreover, the asymmetry of technological access across socio-economic strata complicates the deterministic narrative, suggesting that technologies evolve not merely through technical ingenuity but through contested arenas of power, privilege, and ideology. As artificial intelligence, genetic engineering, and quantum computing advance, the ethical imperative to assert governance and restraint (4) ___ ever more salient. In the absence of such stewardship, humanity risks enacting a form of (5) autopoiesis, wherein systems self-perpetuate without conscious human oversight or ethical anchoring. Thus, the resolution of this tension will critically influence not merely the architecture of future technologies but the very ontology of what it means to be human.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. The word 'ineluctable' most nearly means:
+
+(3)
+A. Easily avoided
+B. Impossible to evade
+C. Arbitrarily
+D. Dynamically designed unstable
+Answer: B
+
+Q.79: **Comprehension (Q. 76 - 80):** In the modern zeitgeist, the ascendancy of technology (1) ___ an aura of inexorability, fostering the notion that human agency is increasingly subordinate to algorithmic architectures. Proponents of technological determinism posit that innovation unfolds according to an autonomous trajectory, largely immune to ethical, cultural, or political intervention. This perspective, however, often (2) ___ the complexity of human intentionality, reducing societies to passive recipients of innovation rather than active co-creators. Conversely, advocates for humanistic autonomy assert that technology's deployment is invariably mediated through socio- political frameworks, reflecting collective choices rather than immutable laws of progress. The crux of the debate hinges upon whether innovation possesses an inherent teleology or whether it is a malleable construct subject to deliberate modulation. Indeed, to view technological development as (3) ineluctable is to diminish the scope of human volition. Moreover, the asymmetry of technological access across socio-economic strata complicates the deterministic narrative, suggesting that technologies evolve not merely through technical ingenuity but through contested arenas of power, privilege, and ideology. As artificial intelligence, genetic engineering, and quantum computing advance, the ethical imperative to assert governance and restraint (4) ___ ever more salient. In the absence of such stewardship, humanity risks enacting a form of (5) autopoiesis, wherein systems self-perpetuate without conscious human oversight or ethical anchoring. Thus, the resolution of this tension will critically influence not merely the architecture of future technologies but the very ontology of what it means to be human.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Choose correct verb form(4)
+A. become
+B. becomes
+C. became
+D. becoming
+Answer: B
+
+Q.80: **Comprehension (Q. 76 - 80):** In the modern zeitgeist, the ascendancy of technology (1) ___ an aura of inexorability, fostering the notion that human agency is increasingly subordinate to algorithmic architectures. Proponents of technological determinism posit that innovation unfolds according to an autonomous trajectory, largely immune to ethical, cultural, or political intervention. This perspective, however, often (2) ___ the complexity of human intentionality, reducing societies to passive recipients of innovation rather than active co-creators. Conversely, advocates for humanistic autonomy assert that technology's deployment is invariably mediated through socio- political frameworks, reflecting collective choices rather than immutable laws of progress. The crux of the debate hinges upon whether innovation possesses an inherent teleology or whether it is a malleable construct subject to deliberate modulation. Indeed, to view technological development as (3) ineluctable is to diminish the scope of human volition. Moreover, the asymmetry of technological access across socio-economic strata complicates the deterministic narrative, suggesting that technologies evolve not merely through technical ingenuity but through contested arenas of power, privilege, and ideology. As artificial intelligence, genetic engineering, and quantum computing advance, the ethical imperative to assert governance and restraint (4) ___ ever more salient. In the absence of such stewardship, humanity risks enacting a form of (5) autopoiesis, wherein systems self-perpetuate without conscious human oversight or ethical anchoring. Thus, the resolution of this tension will critically influence not merely the architecture of future technologies but the very ontology of what it means to be human.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. The word 'autopoiesis' most nearly refers to:
+
+(5)
+A. External regulation
+B. Self-creation and self-maintenance
+C. Hierarchical governance
+D. Spontaneous degradation
+Answer: B
+
+Q.81: Choose the correct one-word substitution for the blank in the sentence below: Despite having three young children and a full-time job, Jenna always kept her house ________, impressing every guest who walked through the door.
+A. immaculate
+B. mediocre
+C. erratic
+D. obsolete
+Answer: A
+
+Q.82: Fill in the blanks with the appropriate article. ____ education is vital for societal progress, but ____ education received in underfunded areas often lacks basic resources.
+A. The, the
+B. A, the
+C. An, a
+D. No article, the
+Answer: D
+
+Q.83: Which option correctly expresses the sentence in direct speech? He said that he would travel the world if he had more money.
+A. He said, "I would travel the world if I have more money."
+B. He said, "I will travel the world if I had more money."
+C. He said, "I would travel the world if I had more money."
+D. He said, "I could travel the world if I had more money."
+Answer: B
+
+Q.84: Rearrange the parts of the sentence in the correct order. Although the emergence of general relativity, P. by postulating that gravity arises from spacetime curvature Q. rather than being a Newtonian force acting at a distance R. fundamentally altered our understanding of gravitation S. it remained incomplete without a quantum-theoretic formulation 10
+A. RPSQ
+B. RPQS
+C. PRSQ
+D. SQRP
+Answer: B
+
+Q.85: What does the idiom "to go through fire and water" mean?
+A. To face any danger or difficulty for someone or something
+B. To be indecisive and keep changing opinions
+C. To avoid taking risks at all costs
+D. To be extremely lazy and unmotivated
+Answer: A
+
+Q.86: Identify the error in the sentence. A earth revolves around the sun.
+
+revolves (D) earth
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_q86_opt_A.png)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_q86_opt_B.png)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_q86_opt_C.png)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-3_q86_opt_D.png)
+Answer: A
+
+Q.87: Improve the sentence by selecting the appropriate preposition from the following options. The negotiations continued ___ the early hours of the morning, as both parties sought a mutually beneficial agreement.
+A. underneath
+B. below
+C. beside
+D. till
+Answer: D
+
+Q.88: What does the idiom "bristle with anger" mean?
+A. To become visibly angry and defensive
+B. To remain calm under pressure
+C. To ignore a provocation
+D. To laugh at a situation
+Answer: A
+
+Q.89: Which of the following pairs of homonyms can be used to fill in the blanks most suitably? The tribal women exercised their ____ to challenge the ____ of passage that had been followed for generations.
+A. rites, rites
+B. rites, rights
+C. rights, rites
+D. rights, rights
+Answer: D
+
+Q.90: Identify the error in the sentence. This is the most easiest question in the test.
+A. test
+B. most
+C. question
+D. easiest
+Answer: B
+
+Q.91: Fill in the blank with the correctly spelt word. The investment strategy was criticized for its ________ risks.
+A. unbridled
+B. unbreidled
+C. unbriddled
+D. umbriddled
+Answer: A
+
+Q.92: Select the most appropriate antonym of the given word. Recalcitrant
+A. Defiant
+B. Compliant
+C. Disobedient
+D. Rebellious
+Answer: B
+
+Q.93: Identify the misspelt word.
+A. Internecine
+B. Equivocate
+C. Magnanimus
+D. Lassitude
+Answer: C
+
+Q.94: Spot the correct spelling of mountainbuilding term.
+A. Orogensis
+B. Orogenesis
+C. Orogenisis
+D. Oroginisis
+Answer: B
+
+Q.95: Choose the correct one-word substitute for: 'Having keen insight; shrewd'.
+A. Stolid
+B. Perspicacious
+C. Obtuse
+D. Myopic
+Answer: B
+
+Q.96: Select the sentence containing the homonym of the highlighted word:
+A. The architect designed a convex lunette above the doorway.
+B. The archaeologist unearthed a Bronze Age lunette.
+C. The chapel's stained-glass lunette depicted an angel.
+D. The basilica's façade included a Romanesque lunette.
+Answer: D
+
+Q.97: Choose the most suitable option to replace the highlighted part of the sentence: The boy drew a painting of his village.
+A. made a painting
+B. painted a picture
+C. drew an art
+D. drew a sketch
+Answer: D
+
+Q.98: A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. The girl said, "I want a new book."
+A. The girl said she wanted a new book.
+B. The girl said she had wanted a new book.
+C. The girl said she wants a new book.
+D. The girl told she wanted a new book.
+Answer: A
+
+Q.99: A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. He said to her, "Do not make noise."
+A. He told her not to make noise.
+B. He said her not to make noise.
+C. He told her do not make noise.
+D. He requested her not making noise.
+Answer: A
+
+Q.100: Rearrange the following sentences to form a coherent paragraph:
+
+1. The integrity of scientific research is maintained through a rigorous process of documentation and peer review.
+
+2. This systematic approach ensures the reproducibility of findings and builds a body of reliable knowledge.
+
+3. This process creates a detailed paper trail of experiments, data analysis, and conclusions.
+
+4. These documents are then subjected to scrutiny by other experts in the field to identify potential errors or biases.
+A. 4, 2, 1, 3
+B. 3, 2, 1, 4
+C. 1, 3, 4, 2
+D. 1, 4, 3, 2
+Answer: D
+

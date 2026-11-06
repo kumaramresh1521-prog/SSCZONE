@@ -1,0 +1,902 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "Find the missing number: 36 : 108 :: 49 : ?",
+    "option_a": "145",
+    "option_b": "147",
+    "option_c": "141",
+    "option_d": "146",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 2,
+    "question_text": "A bag contains coins of Rs. 1, Rs. 2 and Rs. 5 in the ratio 5:3:\n\n2. If the total money is Rs. 420, find the number of Rs. 2 coins.",
+    "option_a": "36",
+    "option_b": "28",
+    "option_c": "24",
+    "option_d": "60",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 3,
+    "question_text": "Read the following statement carefully and identify the conclusion that follows.\n\nStatement: Some flowers are red. All red things are attractive.\n\nConclusions:\n\nI. Some flowers are attractive.\n\nII. All flowers are attractive.",
+    "option_a": "Only I follows",
+    "option_b": "Only II follows",
+    "option_c": "Both I and II follow",
+    "option_d": "Neither I nor II follows",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 4,
+    "question_text": "What is the next number in the series? 7, 21, 63, ___",
+    "option_a": "183",
+    "option_b": "190",
+    "option_c": "201",
+    "option_d": "189",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 5,
+    "question_text": "'A # B' means 'A is the brother of B'. 'A @ B' means 'A is the father of B'. 'A & B' means 'A is the sister of B'. 'A % B' means 'A is the daughter of B'. If 'T @ M & F # R & G % K', then how is K related to R?",
+    "option_a": "Mother",
+    "option_b": "Father-in-law",
+    "option_c": "Brother-in-law",
+    "option_d": "Grandmother",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 6,
+    "question_text": "If '+' means '×', '-' means '+', '×' means '÷', and '÷' means '-', then 6 + 3 - 2 × 2 = ?",
+    "option_a": "15",
+    "option_b": "20 1 INTELLIGENCE",
+    "option_c": "12",
+    "option_d": "19",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 7,
+    "question_text": "If \"HOUSE\" is coded as 8-15-21-19-5, how will \"SHOE\" be coded?",
+    "option_a": "19-8-15-5",
+    "option_b": "19-8-5-15",
+    "option_c": "8-19-15-5",
+    "option_d": "8-15-19-5",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 8,
+    "question_text": "In a certain code language, \"APPLE\" is represented as \"ELPPA.\" What does \"MANGO\" look like in that code?",
+    "option_a": "OGNAM",
+    "option_b": "ONMAG",
+    "option_c": "MANGOG",
+    "option_d": "OGAMN",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 9,
+    "question_text": "Which of the following alternatives matches the given address exactly? Mr. R. Khanna Flat No. 1204, Silver Crest Towers, 11th Floor, Sector 62 Noida, Uttar Pradesh - 201309 Alternatives: A) Mr. R. Khanna, Flat No. 1204, Silver Crest Towers, 11th Floor, Sector 62, Noida, Uttar Pradesh - 201309 B) Mr. R. Khanna, Flat No. 1204, Silver Crest Towers, 11th Floor, Sector 64, Noida, Uttar Pradesh - 201309 C) Mr. R. Khanna, Flat No. 1204, Silver Crest Towers, 11th Floor, Sector 62, Noida, Uttar Pradesh - 201309 D) Mr. R. Khanna, Flat No. 1204, Silver Crest Towers, 12th Floor, Sector 62, Noida, Uttar Pradesh - 201309 E) Mr. R. Khanna, Flat No. 1204, Silver Crest Towers, 11th Floor, Sector 26, Noida, Uttar Pradesh - 201309 F) Mr. R. Khanna, Flat No. 1204, Silver Crest Towers, 11th Floor, Sector 62, Noida, Uttar Pradesh - 201390",
+    "option_a": "A and C",
+    "option_b": "C and E",
+    "option_c": "A and F",
+    "option_d": "D and B",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 10,
+    "question_text": "In a certain code language, \"COMPUTATION\" is written as \"OOITATUPMOD\". How will \"RECOGNITION\" be written?",
+    "option_a": "OIOTINGCOES",
+    "option_b": "OOITINGOCES",
+    "option_c": "NOIITNGCOER",
+    "option_d": "NOTIINCGOER",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 11,
+    "question_text": "Choose the option that perfectly matches the given address. Original Address: Flat No. Ω-17/BRésidence d’Élite, Tower-XIVSt. Michael’s Crescent, Sector–09Navi Mumbai, Maharashtra 400706India | Asia",
+    "option_a": "Flat No. Ω-17/BRésidence d'Elite, Tower- XIVSt. Michael’s Crescent, Sector–09Navi Mumbai, Maharashtra 400706India | Asia",
+    "option_b": "Flat No. Ω-17-BRésidence d’Élite, Tower- XIVSt. Michael’s Crescent, Sector–09Navi Mumbai, Maharashtra 400706India | Asia",
+    "option_c": "Flat No. Ω-17/BRésidence d’Élite, Tower- XIVSt. Michael’s Crescent, Sector–09Navi Mumbai, Maharashtra 400760India | Asia",
+    "option_d": "Flat No. Ω-17/BRésidence d’Élite, Tower- XIVSt. Michael’s Crescent, Sector–09Navi Mumbai, Maharashtra 400706India | Asia",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 12,
+    "question_text": "If 'A $ B' means 'A is the brother of B', 'A # B' means 'A is the mother of B', and 'A * B' means 'A is the daughter of B', which of the following options means 'M is the maternal uncle of N'?",
+    "option_a": "M $ O # N",
+    "option_b": "M $ O * N",
+    "option_c": "M # O $ N",
+    "option_d": "M * O $ N",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 13,
+    "question_text": "A batch of roll number follows the pattern [Even Number]-[Odd Number]-[Even Number] for the first three digits. Identify the invalid roll number.",
+    "option_a": "694-11-22",
+    "option_b": "472-99-05",
+    "option_c": "258-44-11",
+    "option_d": "386-55-10",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 14,
+    "question_text": "Study the pattern in the given series and find the next set of letters in the series. DHI, HGM, LFQ, ?",
+    "option_a": "PEU",
+    "option_b": "PDU",
+    "option_c": "PEV",
+    "option_d": "PET",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 15,
+    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. | 50 | 33 | 47 | | 62 | 44 | 58 | | 39 | ? | 36 |",
+    "option_a": "11",
+    "option_b": "22",
+    "option_c": "33",
+    "option_d": "44",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 16,
+    "question_text": "Your superior, a highly demanding director, drops a massive, unvetted data analysis task on your desk at 5:30 PM, demanding the final report by 9:00 AM tomorrow. You already have a critical, pre-scheduled medical appointment for your dependent parent at 7:00 PM tonight. Which response represents the most emotionally intelligent negotiation?",
+    "option_a": "Accept the task silently, cancel your parent’s medical appointment, and stay up all night to finish it to prove your absolute loyalty.",
+    "option_b": "Refuse the task flatly on the spot, telling the director that expecting work outside office hours is toxic and violates your work-life balance.",
+    "option_c": "Acknowledge the urgency and propose a staggered timeline to complete data organisation overnight and share final insights by the next morning.",
+    "option_d": "Take the file, leave at 5:45 PM for your appointment, and email at midnight explaining it couldn’t be done due to a family emergency.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 17,
+    "question_text": "You are a branch manager. Worker Kiran is a single parent whose child is undergoing long-term medical treatments. Out of sympathy, you have overlooked Kiran's chronic lateness for four months. However, the rest of the team has now started complaining because they have to stay late every evening to finish Kiran's pending customer queries. How do you resolve this situation emotionally intelligently?",
+    "option_a": "Tell the complaining team members that they lack empathy and must continue to cover Kiran's shift out of human decency.",
+    "option_b": "Privately meet Kiran, acknowledge their stress, note the team impact, and adjust their shift or reassign to a non-live role.",
+    "option_c": "Give Kiran an immediate formal warning that family issues do not excuse missed office hours.",
+    "option_d": "Quietly handle Kiran's leftover work yourself every evening to keep everyone happy.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 18,
+    "question_text": "Choose the option which is exactly similar to: Prof.\n\nV. K. Malhotra, Dept. of Economics, DU, Delhi-110007",
+    "option_a": "Prof. V. K. Malhotra, Dept. of Economics, DU, Delhi-110007",
+    "option_b": "Prof. V K. Malhotra, Dept. of Economics, DU, Delhi-110007",
+    "option_c": "Prof V. K. Malhotra, Dept. of Economics, DU, Delhi-110007",
+    "option_d": "Prof. V. K. Malhotra, Dept. of Economics, UD, Delhi-110007",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 19,
+    "question_text": "What should come in place of the question mark (?) in the following analogy? KMO : QSU :: EGI : ?",
+    "option_a": "KNO",
+    "option_b": "LNP",
+    "option_c": "KMO",
+    "option_d": "JLM",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 20,
+    "question_text": "Interchange the indicated signs and solve to find the result for both equations\n\n(I) and\n\n(II) respectively. Interchange signs: - and +\n\nI. 64 ÷ 8 - 4 × 2 + 10\n\nII. 48 × 2 ÷ 8 + 16 - 4",
+    "option_a": "8 and 2",
+    "option_b": "6 and 0",
+    "option_c": "6 and 4",
+    "option_d": "10 and 0",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 21,
+    "question_text": "Read the given conditions carefully and determine the appropriate outcome for the case provided. If any exception applies, identify the authority to whom the case should be referred. Criteria for Advanced Research Grant Allocation:\n\n(i) Must have published 3+ papers.\n\n(ii) Must be currently enrolled in a PhD program. Exceptions: Exception",
+    "option_a": "Grant to be approved",
+    "option_b": "Grant application to be rejected",
+    "option_c": "Case to be referred to the Grant Committee",
+    "option_d": "Case to be referred to the Finance Oversight Board",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 22,
+    "question_text": "Your company has a policy prohibiting the use of office resources for personal projects. You have a small, urgent personal task that would take 10 minutes and requires a company printer. What do you do?",
+    "option_a": "Use the printer quickly, as it is a minor task.",
+    "option_b": "Ask for special permission from your manager for this one time.",
+    "option_c": "Seek an alternative solution outside the office to comply with policy.",
+    "option_d": "Use the printer but pay the company for the paper and ink used.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 23,
+    "question_text": "Read the statement carefully and assume it to be true. Then examine the two conclusions given below it and decide which conclusion(s), if any, logically follow from the statement.\n\nStatement: After analysing customer feedback, a smartphone manufacturer decided to extend software support for its premium devices from three years to five years.\n\nConclusions:\n\nI. The manufacturer believes longer software support may increase customer satisfaction.\n\nII. All customers purchase smartphones primarily because of software support duration.",
+    "option_a": "Only conclusion I follows",
+    "option_b": "Only conclusion II follows",
+    "option_c": "Neither conclusion I nor conclusion II follows",
+    "option_d": "Both conclusions I and II follow",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 24,
+    "question_text": "Read the given statement carefully and the following assumptions based on it. Decide which of the assumptions are implicit in the statement.\n\nStatement: To reduce traffic congestion during peak hours, the municipal corporation should introduce a congestion charge on all private vehicles entering the city centre. Assumptions:\n\nI. Charging a fee for entering the city centre will discourage many private vehicle owners from using that route.\n\nII. Heavy traffic congestion adversely affects the smooth functioning of the city.",
+    "option_a": "Only Assumption I is implicit",
+    "option_b": "Both Assumptions I and II are implicit",
+    "option_c": "Only Assumption II is implicit",
+    "option_d": "Neither Assumption I nor II is implicit",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 25,
+    "question_text": "Select the option that is related to the third word in the same way as the second word is related to the first word. (The words must be considered as meaningful English words and must not be related to each other based on the number of letters/number of consonants/vowels in the word.) Ornithology : Birds :: Ichthyology : ?",
+    "option_a": "Reptiles",
+    "option_b": "Amphibians",
+    "option_c": "Fish",
+    "option_d": "Insects",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 26,
+    "question_text": "Who among the following did NOT ascend the throne of the Delhi Sultanate?",
+    "option_a": "Razia Sultana",
+    "option_b": "Khizr Khan",
+    "option_c": "Malik Kafur",
+    "option_d": "Alauddin Khalji",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 27,
+    "question_text": "Where was the 1st BRICS summit held?",
+    "option_a": "USA",
+    "option_b": "China",
+    "option_c": "France",
+    "option_d": "Russia",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 28,
+    "question_text": "The IMEC (India-Middle East-Europe Economic Corridor) project is designed to increase ________ between the participating nations.",
+    "option_a": "economic",
+    "option_b": "military alliances integration",
+    "option_c": "population",
+    "option_d": "cultural uniformity exchanges",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 29,
+    "question_text": "With which sport is the term \"googly\" traditionally associated?",
+    "option_a": "Hockey",
+    "option_b": "Cricket",
+    "option_c": "Football",
+    "option_d": "Kabaddi",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 30,
+    "question_text": "Which Indian English novel, written in 1956, is often cited as the first modern English novel from India?",
+    "option_a": "Untouchable",
+    "option_b": "Train to Pakistan",
+    "option_c": "The Serpent and",
+    "option_d": "The Guide the Rope",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 31,
+    "question_text": "According to the Seventh Five-Year Plan (1985-1990), why was the railway system considered vital to the Indian economy?",
+    "option_a": "It was the only mode of transport available",
+    "option_b": "It reduced the need for road transport",
+    "option_c": "It primarily supported urban development",
+    "option_d": "It was the backbone of the country's transport infrastructure",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 32,
+    "question_text": "In Kabaddi, what is the maximum number of substitutions per team?",
+    "option_a": "5",
+    "option_b": "4",
+    "option_c": "7",
+    "option_d": "6",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 33,
+    "question_text": "The Pushkar Mela, known for its camel trade and vibrant cultural events is celebrated in which state of India?",
+    "option_a": "Rajasthan",
+    "option_b": "Uttar Pradesh",
+    "option_c": "Gujarat",
+    "option_d": "Maharashtra",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 34,
+    "question_text": "What does the Bharatiya Nyaya Sanhita\n\n(BNS), 2023 propose regarding the role of digital evidence in criminal cases?",
+    "option_a": "Digital evidence can only be used if it is manually compiled",
+    "option_b": "Digital evidence is not admissible in court without physical copies",
+    "option_c": "Digital evidence must be verified and authenticated for it to be used in court",
+    "option_d": "All digital evidence is automatically accepted in legal proceedings",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 35,
+    "question_text": "During the Indian freedom struggle, who organized the 'Secret Congress Radio' that broadcasted recorded messages from Gandhiji?",
+    "option_a": "Usha Mehta",
+    "option_b": "Alluri Sitarama Raju",
+    "option_c": "Kanuri Lakshmibai",
+    "option_d": "Oruganti Mahalakshmamma",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 36,
+    "question_text": "Rabindranath Tagore is the author of national anthems of India and which other country?",
+    "option_a": "Nepal",
+    "option_b": "Sri lanka",
+    "option_c": "Bangladesh",
+    "option_d": "Bhutan",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 37,
+    "question_text": "The States of Jammu and Kashmir, Himachal Pradesh and Uttaranchal are highly vulnerable to earthquakes because:\n\n1. The Indian plate is slowly moving towards the north and north-eastern direction, which is obstructed by the Eurasian plate.\n\n2. Most of the active volcanoes in India lie in the northern region of the country, which is frequently affected by magma and seismic movements. Which of the above statements is/are CORRECT?",
+    "option_a": "1 only",
+    "option_b": "2 only",
+    "option_c": "Both 1 and 2",
+    "option_d": "None of these",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 38,
+    "question_text": "What was the primary duty of the city mayor (Nagara-Rakshaka or Pustapala) in the Gupta dynasty's administration?",
+    "option_a": "Managing military security and palace guards.",
+    "option_b": "Supervising temple rituals and offerings.",
+    "option_c": "Recording land dimensions and urban governance.",
+    "option_d": "Leading merchant caravans on foreign trade missions.",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 39,
+    "question_text": "At which Summer Olympics did the Indian men's hockey team fail to win a medal for the first time since 1928?",
+    "option_a": "Montreal 1976",
+    "option_b": "Munich 1972",
+    "option_c": "Moscow 1980",
+    "option_d": "Los Angeles 1984",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 40,
+    "question_text": "Which of the following statements correctly describes the award recognition received by the book 'The Mistress of Spices' written by Chitra Divakaruni?",
+    "option_a": "Received Booker Prize for South Asian politics",
+    "option_b": "Won Sahitya Akademi Award for Indian",
+    "option_c": "Honored with Pulitzer Prize for immigrant struggles",
+    "option_d": "Shortlisted for Women's Prize for Fiction for magical realism and diaspora.",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 41,
+    "question_text": "Which of the following crop-season combinations is incorrectly matched?",
+    "option_a": "Rice - Kharif",
+    "option_b": "Wheat - Rabi",
+    "option_c": "Cotton - Zaid",
+    "option_d": "Mustard - Rabi",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 42,
+    "question_text": "Why are thermal power plants in India commonly established close to coal mining areas?",
+    "option_a": "For safety considerations",
+    "option_b": "To minimize water consumption",
+    "option_c": "To reduce environmental pollution",
+    "option_d": "To lower transport costs",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 43,
+    "question_text": "Which amendment introduced Article 246A to the Constitution?",
+    "option_a": "100th Amendment",
+    "option_b": "101st Amendment",
+    "option_c": "97th Amendment",
+    "option_d": "99th Amendment",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 44,
+    "question_text": "How many members constituted the Board of Control under Pitt’s India Act?",
+    "option_a": "Four members",
+    "option_b": "Five members",
+    "option_c": "Six members",
+    "option_d": "Seven members",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 45,
+    "question_text": "Under which article of the Indian Constitution is it mandatory to constitute a District Planning Committee (DPC) in every State?",
+    "option_a": "Article 243ZA",
+    "option_b": "Article 243ZB",
+    "option_c": "Article 243ZC",
+    "option_d": "Article 243ZD",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 46,
+    "question_text": "Under which article of the Indian Constitution are both Parliament and State Legislatures granted the simultaneous power to make laws with respect to Goods and Services Tax\n\n(GST)?",
+    "option_a": "Article 243B",
+    "option_b": "Article 246A",
+    "option_c": "Article 248",
+    "option_d": "Article 254",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 47,
+    "question_text": "Under the Constitution of India, in which list of the Seventh Schedule does “Public Order” fall?",
+    "option_a": "Residuary powers",
+    "option_b": "Concurrent List",
+    "option_c": "State List",
+    "option_d": "Union List",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 48,
+    "question_text": "A warrant is issued for execution by a private person (not a police officer). During its execution, nearby civilians voluntarily assist because the person executing the warrant is actively pursuing the accused. Which of the following statements is legally correct under the Bharatiya Nagarik Suraksha Sanhita, 2023 in India?",
+    "option_a": "Civilians cannot assist because only police may execute warrants.",
+    "option_b": "Assistance is lawful if the person to whom the warrant is directed is near at hand and acting in execution.",
+    "option_c": "Civilian assistance requires prior magistrate approval.",
+    "option_d": "Only executive magistrates may assist in non-police warrant execution.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 49,
+    "question_text": "Under India's economic reforms since 1991, disinvestment was undertaken mainly to achieve which of the following objectives?",
+    "option_a": "Improve financial discipline and facilitate modernisation",
+    "option_b": "Expand industrial licensing and increase public ownership",
+    "option_c": "Promote import substitution and restrict private investment",
+    "option_d": "Increase budgetary support and reduce market competition",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 50,
+    "question_text": "If the amplitude of an object undergoing simple harmonic motion is doubled while all other system parameters remain unchanged, how does its total mechanical energy change?",
+    "option_a": "It remains the same",
+    "option_b": "It becomes twice its original value",
+    "option_c": "It becomes four times its original value",
+    "option_d": "It becomes eight times its original value",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 51,
+    "question_text": "What is the volume of a sphere whose diameter is 56 cm?",
+    "option_a": "92849.33 cm³",
+    "option_b": "86989.33 cm³",
+    "option_c": "81989.33 cm³",
+    "option_d": "91989.33 cm³",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 52,
+    "question_text": "The space diagonal of a cuboid with dimensions 3 cm, 4 cm, and 12 cm is:",
+    "option_a": "13 cm",
+    "option_b": "14 cm",
+    "option_c": "11 cm",
+    "option_d": "5 cm",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 53,
+    "question_text": "The perimeter of an isosceles right-angled triangle is 2 + √2 cm. What is its area?",
+    "option_a": "1 cm²",
+    "option_b": "0.5 cm²",
+    "option_c": "2 cm²",
+    "option_d": "3 cm²",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 54,
+    "question_text": "If x + y = 20 and xy = 10, then find the value of x³ + y³",
+    "option_a": "2100",
+    "option_b": "2500",
+    "option_c": "7100",
+    "option_d": "7400",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 55,
+    "question_text": "What is the curved surface area of a cone with a radius of 7cm and a slant height of 20cm?",
+    "option_a": "520 cm²",
+    "option_b": "304 cm²",
+    "option_c": "380 cm²",
+    "option_d": "440 cm²",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 56,
+    "question_text": "A person travels a certain distance at a speed of 5 km/h and completes the journey in 6 hours. If the speed is increased to 10 km/h, how much time will be taken to cover the same distance?",
+    "option_a": "2 hours",
+    "option_b": "5 hours",
+    "option_c": "3 hours",
+    "option_d": "6 hours",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 57,
+    "question_text": "Find the value of: 2 + 1+ 1 1 . 1+ 1 3",
+    "option_a": "6",
+    "option_b": "13/7",
+    "option_c": "1",
+    "option_d": "18/7",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 58,
+    "question_text": "If √7n= 343 , then the value of n is: 7",
+    "option_a": "3",
+    "option_b": "8",
+    "option_c": "6",
+    "option_d": "5",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 59,
+    "question_text": "If the 6-digit number 5z3x4y is divisible by 7, 11, and 13, find the value of (x + y - z).",
+    "option_a": "3",
+    "option_b": "2",
+    "option_c": "1",
+    "option_d": "4",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 60,
+    "question_text": "In △XYZ , G is the centroid and ZM is a median. If the segment GZ is 6 cm, what is the total length of the median ZM?",
+    "option_a": "9 cm",
+    "option_b": "5 cm",
+    "option_c": "2 cm",
+    "option_d": "10 cm",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 61,
+    "question_text": "How many prime numbers p exist such that 120 < p < 150?",
+    "option_a": "4",
+    "option_b": "7",
+    "option_c": "5",
+    "option_d": "6",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 62,
+    "question_text": "Ram and Shyam start moving simultaneously from points A and B toward each other at 9:00 a.m. After they cross paths, Ram takes 80 minutes to reach point B and Shyam takes 45 minutes to reach point A. At what specific time did they meet?",
+    "option_a": "9 : 30 am",
+    "option_b": "10 : 00 am",
+    "option_c": "10 : 30 am",
+    "option_d": "11 : 00 am",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 63,
+    "question_text": "A can complete a certain work alone in 10 days, while B can complete the same work in 5 days. They work together for 2 days, after which B leaves and C joins A. A and C then complete the remaining work in 3 days. Find the number of days C would take to complete 40% of the work if working alone.",
+    "option_a": "8 days",
+    "option_b": "10 days",
+    "option_c": "12 days",
+    "option_d": "16 days",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 64,
+    "question_text": "Find the value of θ(0°< θ< 90°) if cos θ 1−sin θ + cos θ = 4. 1+sin θ",
+    "option_a": "30°",
+    "option_b": "45°",
+    "option_c": "60°",
+    "option_d": "75°",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 65,
+    "question_text": "A vertical tower stands on a horizontal plane and is surmounted by a vertical flagstaff of height 6 m. At a point on the plane, the angle of elevation of the bottom of the flagstaff is 45° and that of the top of the flagstaff is 60°. Find the height of the tower.",
+    "option_a": "3(√3 - 1) m",
+    "option_b": "2(√3 + 1) m",
+    "option_c": "(√3 + 1) m",
+    "option_d": "3(√3 + 1) m",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 66,
+    "question_text": "If tan θ= √5 , find the value of cosec² θ+sec² θ cosec² θ−sec² θ .",
+    "option_a": "3",
+    "option_b": "−4 2",
+    "option_c": "−3",
+    "option_d": "4 2/5",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 67,
+    "question_text": "Given X= 1 , find the value of X−1 . 2−√3 X",
+    "option_a": "2√3",
+    "option_b": "√3",
+    "option_c": "5√3",
+    "option_d": "√2",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 68,
+    "question_text": "Two equal parallel chords of a circle lie on opposite sides of the centre. The perpendicular distance between the chords is 6 cm. If the radius of the circle is 5 cm, find the length of each chord (in cm).",
+    "option_a": "8 cm",
+    "option_b": "10 cm",
+    "option_c": "12 cm",
+    "option_d": "16 cm",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 69,
+    "question_text": "The volume of a hemispherical bowl is 718 2 cm³. A sphere is dropped into it such that the sphere's diameter is equal to the bowl's diameter. How much volume of the sphere remains outside the bowl? (Use π= 22 ) 7",
+    "option_a": "811 2 cm³",
+    "option_b": "820 1 cm³ 3",
+    "option_c": "718 2 cm³",
+    "option_d": "732 1 cm³ 3 3",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 70,
+    "question_text": "If the angle between two tangents drawn from a point P to a circle of radius 3 cm is 60°, what is the length of each tangent?",
+    "option_a": "3√3 cm",
+    "option_b": "5 cm",
+    "option_c": "4√2 cm",
+    "option_d": "7 cm",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 71,
+    "question_text": "The hour hand of a clock moves from 3:00 to 7:00. What angle does it sweep in radians?",
+    "option_a": "2π/3 radians",
+    "option_b": "π/3 radians",
+    "option_c": "π/2 radians",
+    "option_d": "π/4 radians",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 72,
+    "question_text": "Three friends, namely Krish, John and Leena, can do a particular work with equal efficiency. Krish works 'x' hours a day for 'x' days and then stops working. Then, John works 'y' hours a day for 'y' days. Then, Leena works 16 hours a day for 16 days and finally the work gets completed. Now, Leena alone can complete the work in 29 days by working 16 hours each day. If Krish, John and Leena together start doing the work with their respective per day working hours as mentioned, in how many days will the work be done (approximately)? [Consider both 'x' and 'y' are integers]",
+    "option_a": "11",
+    "option_b": "13",
+    "option_c": "15",
+    "option_d": "16",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 73,
+    "question_text": "If a² + b² = 57 and ab = 16, what is the absolute value of a - b?",
+    "option_a": "5",
+    "option_b": "57",
+    "option_c": "9",
+    "option_d": "73",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 74,
+    "question_text": "Express the recurring decimal 0.416̄ (i. e., 0.41666...) as a fraction in its lowest terms.",
+    "option_a": "5/12",
+    "option_b": "5/18",
+    "option_c": "41/100",
+    "option_d": "41/90",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 75,
+    "question_text": "Two circles with radii 6 cm and 3 cm have their centers 15 cm apart. How many common tangents can be drawn to these circles?",
+    "option_a": "2",
+    "option_b": "4",
+    "option_c": "1",
+    "option_d": "5",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 76,
+    "question_text": "**Comprehension (Q. 76 - 80):** In the landscape of modern education, the choice between Arts, Commerce, and Science is not merely academic; it profoundly influences professional trajectories. Each stream offers a spectrum of career opportunities, responding to the evolving demands of the global economy. The Arts stream, traditionally associated with creativity and critical thinking, leads to professions in journalism, law, international relations, and public policy. Graduates often assume roles such as content strategists, political analysts, legal advisors, and communication specialists. With interdisciplinary skills, Arts students increasingly permeate sectors once reserved for technical expertise, such as business consulting and digital marketing. Commerce, characterized by its focus on trade, finance, and business management, offers access to careers in banking, corporate law, investment analysis, and entrepreneurship. Posts like chartered accountants, financial advisors, auditors, and marketing managers are quintessential to this domain. In an age of globalization, commerce graduates are pivotal to driving economic innovation and regulatory compliance. Meanwhile, the Science stream remains the cornerstone of technological advancement and empirical research. From engineering and medicine to data science and biotechnology, science graduates occupy posts like research scientists, software developers, environmental consultants, and healthcare practitioners. Moreover, interdisciplinary branches such as AI and environmental engineering illustrate how scientific expertise continually adapts to societal needs. While each field traditionally attracted distinct student profiles, contemporary career landscapes increasingly value hybrid skill sets. Thus, a student's ability to integrate analytical rigor with creative and managerial acumen often defines success, blurring the once rigid lines between Arts, Commerce, and Science.\n\n---\n\nIdentify the correct transformation of this sentence into passive voice: \"Commerce offers access to careers in banking, corporate law, investment analysis, and entrepreneurship.\"",
+    "option_a": "Careers are accessed in banking, corporate law, investment analysis, and entrepreneurship by Commerce.",
+    "option_b": "Careers in banking, corporate law, investment analysis, and entrepreneurship are offered by Commerce.",
+    "option_c": "Careers are banking, corporate law, investment analysis, and entrepreneurship are offered by Commerce.",
+    "option_d": "Careers are offering commerce access in banking, corporate law, investment analysis, and entrepreneurship.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 77,
+    "question_text": "**Comprehension (Q. 76 - 80):** In the landscape of modern education, the choice between Arts, Commerce, and Science is not merely academic; it profoundly influences professional trajectories. Each stream offers a spectrum of career opportunities, responding to the evolving demands of the global economy. The Arts stream, traditionally associated with creativity and critical thinking, leads to professions in journalism, law, international relations, and public policy. Graduates often assume roles such as content strategists, political analysts, legal advisors, and communication specialists. With interdisciplinary skills, Arts students increasingly permeate sectors once reserved for technical expertise, such as business consulting and digital marketing. Commerce, characterized by its focus on trade, finance, and business management, offers access to careers in banking, corporate law, investment analysis, and entrepreneurship. Posts like chartered accountants, financial advisors, auditors, and marketing managers are quintessential to this domain. In an age of globalization, commerce graduates are pivotal to driving economic innovation and regulatory compliance. Meanwhile, the Science stream remains the cornerstone of technological advancement and empirical research. From engineering and medicine to data science and biotechnology, science graduates occupy posts like research scientists, software developers, environmental consultants, and healthcare practitioners. Moreover, interdisciplinary branches such as AI and environmental engineering illustrate how scientific expertise continually adapts to societal needs. While each field traditionally attracted distinct student profiles, contemporary career landscapes increasingly value hybrid skill sets. Thus, a student's ability to integrate analytical rigor with creative and managerial acumen often defines success, blurring the once rigid lines between Arts, Commerce, and Science.\n\n---\n\nChoose the option where the use of the relative pronoun is grammatically incorrect.",
+    "option_a": "Graduates who pursue interdisciplinary skills are highly valued.",
+    "option_b": "Posts which involve financial planning require precision.",
+    "option_c": "Students whom excel at both analysis and creativity are rare.",
+    "option_d": "Professionals whose expertise spans multiple domains are in demand.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 78,
+    "question_text": "**Comprehension (Q. 76 - 80):** In the landscape of modern education, the choice between Arts, Commerce, and Science is not merely academic; it profoundly influences professional trajectories. Each stream offers a spectrum of career opportunities, responding to the evolving demands of the global economy. The Arts stream, traditionally associated with creativity and critical thinking, leads to professions in journalism, law, international relations, and public policy. Graduates often assume roles such as content strategists, political analysts, legal advisors, and communication specialists. With interdisciplinary skills, Arts students increasingly permeate sectors once reserved for technical expertise, such as business consulting and digital marketing. Commerce, characterized by its focus on trade, finance, and business management, offers access to careers in banking, corporate law, investment analysis, and entrepreneurship. Posts like chartered accountants, financial advisors, auditors, and marketing managers are quintessential to this domain. In an age of globalization, commerce graduates are pivotal to driving economic innovation and regulatory compliance. Meanwhile, the Science stream remains the cornerstone of technological advancement and empirical research. From engineering and medicine to data science and biotechnology, science graduates occupy posts like research scientists, software developers, environmental consultants, and healthcare practitioners. Moreover, interdisciplinary branches such as AI and environmental engineering illustrate how scientific expertise continually adapts to societal needs. While each field traditionally attracted distinct student profiles, contemporary career landscapes increasingly value hybrid skill sets. Thus, a student's ability to integrate analytical rigor with creative and managerial acumen often defines success, blurring the once rigid lines between Arts, Commerce, and Science.\n\n---\n\nChoose the word that is closest in meaning to \"permeate\" as used in the passage.",
+    "option_a": "Exclude",
+    "option_b": "Spread",
+    "option_c": "Conceal",
+    "option_d": "Defeat",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 79,
+    "question_text": "**Comprehension (Q. 76 - 80):** In the landscape of modern education, the choice between Arts, Commerce, and Science is not merely academic; it profoundly influences professional trajectories. Each stream offers a spectrum of career opportunities, responding to the evolving demands of the global economy. The Arts stream, traditionally associated with creativity and critical thinking, leads to professions in journalism, law, international relations, and public policy. Graduates often assume roles such as content strategists, political analysts, legal advisors, and communication specialists. With interdisciplinary skills, Arts students increasingly permeate sectors once reserved for technical expertise, such as business consulting and digital marketing. Commerce, characterized by its focus on trade, finance, and business management, offers access to careers in banking, corporate law, investment analysis, and entrepreneurship. Posts like chartered accountants, financial advisors, auditors, and marketing managers are quintessential to this domain. In an age of globalization, commerce graduates are pivotal to driving economic innovation and regulatory compliance. Meanwhile, the Science stream remains the cornerstone of technological advancement and empirical research. From engineering and medicine to data science and biotechnology, science graduates occupy posts like research scientists, software developers, environmental consultants, and healthcare practitioners. Moreover, interdisciplinary branches such as AI and environmental engineering illustrate how scientific expertise continually adapts to societal needs. While each field traditionally attracted distinct student profiles, contemporary career landscapes increasingly value hybrid skill sets. Thus, a student's ability to integrate analytical rigor with creative and managerial acumen often defines success, blurring the once rigid lines between Arts, Commerce, and Science.\n\n---\n\nIn the phrase \"interdisciplinary branches,\" what does \"interdisciplinary\" most nearly mean?",
+    "option_a": "Related to one subject only",
+    "option_b": "Combining multiple areas of study",
+    "option_c": "Opposing different disciplines",
+    "option_d": "Excluding sciences and arts",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 80,
+    "question_text": "**Comprehension (Q. 76 - 80):** In the landscape of modern education, the choice between Arts, Commerce, and Science is not merely academic; it profoundly influences professional trajectories. Each stream offers a spectrum of career opportunities, responding to the evolving demands of the global economy. The Arts stream, traditionally associated with creativity and critical thinking, leads to professions in journalism, law, international relations, and public policy. Graduates often assume roles such as content strategists, political analysts, legal advisors, and communication specialists. With interdisciplinary skills, Arts students increasingly permeate sectors once reserved for technical expertise, such as business consulting and digital marketing. Commerce, characterized by its focus on trade, finance, and business management, offers access to careers in banking, corporate law, investment analysis, and entrepreneurship. Posts like chartered accountants, financial advisors, auditors, and marketing managers are quintessential to this domain. In an age of globalization, commerce graduates are pivotal to driving economic innovation and regulatory compliance. Meanwhile, the Science stream remains the cornerstone of technological advancement and empirical research. From engineering and medicine to data science and biotechnology, science graduates occupy posts like research scientists, software developers, environmental consultants, and healthcare practitioners. Moreover, interdisciplinary branches such as AI and environmental engineering illustrate how scientific expertise continually adapts to societal needs. While each field traditionally attracted distinct student profiles, contemporary career landscapes increasingly value hybrid skill sets. Thus, a student's ability to integrate analytical rigor with creative and managerial acumen often defines success, blurring the once rigid lines between Arts, Commerce, and Science.\n\n---\n\nWhich of the following best reflects the main idea of the passage?",
+    "option_a": "Science students have better career options than Arts students.",
+    "option_b": "Arts, Commerce, and Science fields are now overlapping, and hybrid skills are becoming important.",
+    "option_c": "Commerce dominates the modern economy.",
+    "option_d": "Career paths have remained rigidly tied to educational streams.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 81,
+    "question_text": "Complete the collocation by choosing a suitable word to fill in the blank. The researchers meticulously _______ the parameters for the study.",
+    "option_a": "delineated",
+    "option_b": "decorated",
+    "option_c": "deviated",
+    "option_d": "deliberated",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 82,
+    "question_text": "Rearrange the parts of the sentence in the correct order. Following the approval of a groundbreaking cancer therapy, P. while skeptics warned of the long-term side effects and limited accessibility for lowincome patients, Q. oncologists and researchers hailed the innovation as a paradigm shift in cancer treatment, R. leading to global discussions on the affordability and regulatory challenges of the new treatment S. as early trials demonstrated unprecedented success in eliminating aggressive tumors,",
+    "option_a": "PQRS",
+    "option_b": "SQRP",
+    "option_c": "QSPR",
+    "option_d": "QPSR",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 83,
+    "question_text": "Fill in the blank with an appropriate phrasal verb. If you're serious about your goals, you must ______ all distractions.",
+    "option_a": "cast off",
+    "option_b": "cast down",
+    "option_c": "caste away",
+    "option_d": "caste over",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 84,
+    "question_text": "Rearrange the parts of the sentence in the correct order. The ethical dilemmas in scientific research P. have sparked ongoing debates among scholars, Q. concerning genetic modifications and bioengineering, R. as technological advancements outpace regulatory frameworks S. raising concerns about moral boundaries and unintended consequences",
+    "option_a": "QPRS",
+    "option_b": "SPRQ",
+    "option_c": "PRQS",
+    "option_d": "SQPR",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 85,
+    "question_text": "What does the idiom \"Red letter day\" mean?",
+    "option_a": "A day of great significance or celebration",
+    "option_b": "A day of financial loss",
+    "option_c": "A day of regret and sadness",
+    "option_d": "A day of strict discipline",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 86,
+    "question_text": "Identify the error in the sentence. He paid a heavy apology after the incident.",
+    "option_a": "apology",
+    "option_b": "paid",
+    "option_c": "heavy",
+    "option_d": "incident",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 87,
+    "question_text": "Which of the following options is NOT one of the meanings of the homonym 'subject'?",
+    "option_a": "To freely exclude oneself from external governance or control",
+    "option_b": "A branch of knowledge studied or taught in school or university",
+    "option_c": "A person under the rule of a monarch or sovereign state",
+    "option_d": "To cause or force someone to undergo an unpleasant experience",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 88,
+    "question_text": "Choose the correct idiom for the word highlighted in bold. \"Kavita told her manager that she planned to leave the company, but after the manager offered her a pay raise, she had a change of heart and agreed to stay.\"",
+    "option_a": "To become physically unwell due to stress",
+    "option_b": "To change one's feelings or decision about something",
+    "option_c": "To get emotional during a conversation",
+    "option_d": "To start working harder to get promoted",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 89,
+    "question_text": "Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?\n\n1. Philosophers debate the role of experience, reason and perception in the acquisition of knowledge.\n\n2. The nature of knowledge is a central concern in philosophy, particularly in the field of epistemology.\n\n3. Some argue that knowledge comes from sensory experiences, while others believe in the primacy of reason or innate ideas.\n\n4. Epistemology explores the sources, limits and validity of knowledge, asking questions like \"What can we know?\"\n\n5. Ultimately, understanding knowledge involves examining the relationship between the knower, the known and the process of knowing.",
+    "option_a": "3-1-2-4-5",
+    "option_b": "2-4-1-3-5",
+    "option_c": "4-3-1-2-5",
+    "option_d": "5-2-1-3-4",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 90,
+    "question_text": "Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?\n\n1. Predators evolve sharper claws, faster speeds, or enhanced hunting techniques to catch prey more effectively.\n\n2. This cycle of adaptation and counteradaptation drives the continuous evolution of both groups.\n\n3. In response, prey species develop defensive adaptations such as camouflage, speed, or toxic chemicals.\n\n4. The concept of an evolutionary arms race describes the ongoing adaptations between predators and prey.\n\n5. Such evolutionary arms races are seen in species like cheetahs and gazelles or venomous snakes and resistant prey.",
+    "option_a": "3-4-2-1-5",
+    "option_b": "1-4-5-3-2",
+    "option_c": "2-1-3-5-4",
+    "option_d": "4-1-3-2-5",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 91,
+    "question_text": "Select the most appropriate synonym of the given word: MENDACIOUS",
+    "option_a": "Honest",
+    "option_b": "Truthful",
+    "option_c": "Dishonest",
+    "option_d": "Candid",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 92,
+    "question_text": "Select the most appropriate synonym of the given word: IMBRUE",
+    "option_a": "To cleanse",
+    "option_b": "To soak",
+    "option_c": "To purify",
+    "option_d": "To expel",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 93,
+    "question_text": "Select the most appropriate antonym of the given word. Altruism",
+    "option_a": "Selflessness",
+    "option_b": "Generosity",
+    "option_c": "Egoism",
+    "option_d": "Charity",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 94,
+    "question_text": "Which is the correct spelling for a word meaning 'without equal or unmatched'?",
+    "option_a": "Incomparable",
+    "option_b": "Incomparible",
+    "option_c": "Incompareable",
+    "option_d": "Incomperable",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 95,
+    "question_text": "Identify the misspelt word.",
+    "option_a": "Apostrophize",
+    "option_b": "Ethereal",
+    "option_c": "Munificense",
+    "option_d": "Penumbra",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 96,
+    "question_text": "Choose the correct one-word substitute for: 'A person who cannot be tired'.",
+    "option_a": "Infallible",
+    "option_b": "Invincible",
+    "option_c": "Indefatigable",
+    "option_d": "Incurable",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 97,
+    "question_text": "Change the following from active to passive: Someone has sent me a gift.",
+    "option_a": "I have been sent a",
+    "option_b": "A gift is sent to gift. me.",
+    "option_c": "A gift was sent to",
+    "option_d": "I was sent a gift. me.",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 98,
+    "question_text": "Choose the most suitable option to replace the highlighted part of the sentence: He told that he will come later.",
+    "option_a": "said he would",
+    "option_b": "told that he would come came",
+    "option_c": "said that he would",
+    "option_d": "said that he will come come",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 99,
+    "question_text": "Choose the most suitable option to replace the highlighted part of the sentence: The students enjoyed to play in the rain.",
+    "option_a": "enjoyed play in the rain",
+    "option_b": "were enjoying play",
+    "option_c": "enjoyed playing in the rain",
+    "option_d": "enjoyed to be playing",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 100,
+    "question_text": "Choose the most appropriate antonym of the underlined word. The committee's admonition regarding the safety breach was taken seriously by the staff.",
+    "option_a": "Commendation",
+    "option_b": "Counsel",
+    "option_c": "Forewarning",
+    "option_d": "Reprimand",
+    "correct_answer": "A"
+  }
+]

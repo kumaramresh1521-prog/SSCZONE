@@ -1,0 +1,902 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "A train running at 72 km/h crosses a platform of length 180 m in 15 seconds. Find the length of the train.",
+    "option_a": "120 m",
+    "option_b": "180 m",
+    "option_c": "300 m",
+    "option_d": "240 m",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 2,
+    "question_text": "What is the next number in the series? 4, 9, 14, 19, ?",
+    "option_a": "23",
+    "option_b": "24",
+    "option_c": "25",
+    "option_d": "26",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 3,
+    "question_text": "In a certain code language, \"MANGO\" is written as \"ODPJQ.\" How will \"PAPER\" be written in the same code language?",
+    "option_a": "RRDHT",
+    "option_b": "RDRHT",
+    "option_c": "RHRDT",
+    "option_d": "RRHDT",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 4,
+    "question_text": "If 18 men or 24 women can complete a work in 20 days, in how many days will 12 men and 16 women complete the same work?",
+    "option_a": "12 days",
+    "option_b": "13 days",
+    "option_c": "14 days",
+    "option_d": "15 days",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 5,
+    "question_text": "Choose the option that perfectly matches the given address. Original Address: Executive Residence No. Sigma 19CRoyal Palace Residency Block XIWashington Central BoulevardLos Angeles California 90017United States of America",
+    "option_a": "Executive Residence No. Sigma 19CRoyal Palace Residency Block XIIWashington Central BoulevardLos Angeles California 90017United States of America",
+    "option_b": "Executive Residence No. Sigma 19CRoyal Palace Residency Block XIWashington Central BoulvardLos Angeles California 90017United States of America",
+    "option_c": "Executive Residence No. Sigma 19CRoyal Palace Residency Block XIWashington 1 INTELLIGENCE Central BoulevardLos Angeles California 90107United States of America",
+    "option_d": "Executive Residence No. Sigma 19CRoyal Palace Residency Block XIWashington Central BoulevardLos Angeles California 90017United States of America",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 6,
+    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 4 5 3 12 13 7 128 ?",
+    "option_a": "49",
+    "option_b": "112",
+    "option_c": "64",
+    "option_d": "144",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 7,
+    "question_text": "In a family consisting of six members P, Q, R, S, T, and U, P and R are husband and wife. Q is the eldest son of the couple. Q is married to U. S is the grandson of P and R. T is the unmarried daughter of the family. Based on the given information, identify the mother of S.",
+    "option_a": "U",
+    "option_b": "T",
+    "option_c": "R",
+    "option_d": "Q",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 8,
+    "question_text": "Study the pattern in the given series and find the next set of letters in the series. PTI, LUE, HVA, ?",
+    "option_a": "DWW",
+    "option_b": "DWU",
+    "option_c": "ROV",
+    "option_d": "RWV",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 9,
+    "question_text": "Roll numbers are generated where the middle digit is the remainder of the first digit divided by the last digit. Which entry is invalid?",
+    "option_a": "713",
+    "option_b": "826",
+    "option_c": "914",
+    "option_d": "532",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 10,
+    "question_text": "Your department is experiencing high work pressure because of tight project schedules and increased workload. In this situation, you observe that one of your team members is consistently failing to meet deadlines and appears withdrawn and less engaged than usual. As the team leader, what is the most appropriate way to handle this situation?",
+    "option_a": "Issue an official show-cause notice immediately so that the employee's performance issue is formally documented and appropriately addressed.",
+    "option_b": "Conduct an empathetic individual conversation with the employee to identify the underlying causes of the performance concerns in detail.",
+    "option_c": "Arrange a meeting to inform the team member that their recent performance is unacceptable and that they are being placed on a formal performance improvement plan immediately.",
+    "option_d": "Reassign the pending tasks to other team members without informing the employee who is currently responsible for them.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 11,
+    "question_text": "A dedicated team member has been consistently underperforming on shared tasks for the past two weeks, appearing distracted and tired during office hours. Which of the following actions represents the most constructive way to address this shift in their professional behavior?",
+    "option_a": "Approach them privately to express concern and ask if they are facing any professional challenges.",
+    "option_b": "Criticize their lack of focus openly during a team meeting to encourage immediate improvement.",
+    "option_c": "Formally escalate the observed performance issues to the department head without initiating a conversation.",
+    "option_d": "Reduce your collaborative efforts with them to minimize the impact of their errors on your work.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 12,
+    "question_text": "What should come in place of question mark (?) in the following analogy? 2 C3F : F6I :: I9L : ?",
+    "option_a": "M12O",
+    "option_b": "L12O",
+    "option_c": "L11O",
+    "option_d": "L12N",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 13,
+    "question_text": "In the given question, a few statements have been given followed by conclusions based on them. Consider the statements to be true and answer which of the given conclusions logically follow the statement. Statements\n\n1. All stars are celestial objects.\n\n2. All celestial objects that emit light are visible.\n\n3. Some stars do not emit light. Conclusions\n\nI. Some stars are not visible.\n\nII. All stars that emit light are visible.\n\nIII. Some celestial objects are not visible.\n\nIV. All visible objects are celestial objects.",
+    "option_a": "Only I, II and III",
+    "option_b": "Only II and III follow follow",
+    "option_c": "Only II follow",
+    "option_d": "All four follow",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 14,
+    "question_text": "In the following question, one statement is given, followed by certain inferences. Consider the statement to be true even if it seems to contradict commonly known facts. Read the inferences carefully and decide which of them logically follow from the given statement.\n\nStatement: Heavy pesticide use in farming pollutes soil and water, persists in crops, and eventually enters the food chain, posing a risk to human health. Inferences:\n\nI. Overuse of pesticides in agriculture is harmful to human beings.\n\nII. Excessive pesticide use can adversely impact water quality.",
+    "option_a": "Only Inference I follows.",
+    "option_b": "Only Inference II follows.",
+    "option_c": "Both Inferences I and II follow.",
+    "option_d": "Neither Inference I nor Inference II follows.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 15,
+    "question_text": "Among the four given combinations, one has error. Identify it\n\n(a) Rohanshi Mehta, 18-C Ocean View Colony, 10th cross road, Udaipur, 9871203456, 313001\n\n(b) Rohanshi Mehta, 18-C Ocean View Colony, 10th cross road, Udaipur, 9871203456, 313001\n\n(c) Rohanshi Mehta, 18-C Oceanview Colony, 10th cross road, Udaipur, 9871203456, 313001\n\n(d) Rohanshi Mehta, 18-C Ocean View Colony, 10th cross road, Udaipur, 9871203456, 313001",
+    "option_a": "a",
+    "option_b": "b",
+    "option_c": "c",
+    "option_d": "d",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 16,
+    "question_text": "Choose the option which is exactly similar to: 20-09-2026, 54/3, Palm Beach Road, Vashi, Navi Mumbai-400703",
+    "option_a": "20-09-2026, 54/3, Palm Beach Road, Vashi, Navi Mumbai-400703",
+    "option_b": "20-09-2026, 54/3, Palm Beach Road, Vashi, Navi Mumbai 400703",
+    "option_c": "09-09-2026, 54/3, Palm Beach Road, Vashi, Navi Mumbai-400703",
+    "option_d": "19-09-2025, 54/3, Palm Beach Road, Vashi, Navi Mumbai-400703",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 17,
+    "question_text": "During an annual performance review, an employee receives highly critical feedback from their supervisor regarding their project management skills. The employee strongly disagrees with this assessment and believes it overlooks major successes. Which of the following responses best demonstrates high emotional intelligence (EI)?",
+    "option_a": "Immediately interrupting the supervisor to counter each criticism with verbal evidence and defensive explanations.",
+    "option_b": "Actively listening to the entire evaluation without interrupting, asking objective clarifying questions for specific examples, and requesting a follow-up meeting after a few days to provide a considered response.",
+    "option_c": "Submissively accepting all the negative criticism without question or clarification simply to prevent a professional conflict or argument.",
+    "option_d": "Explicitly telling the supervisor that the feedback is completely unfair, biased, and clearly based on a fundamental misunderstanding of their actual work.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 18,
+    "question_text": "Read the given conditions carefully and determine the appropriate outcome for the case provided. If any exception applies, identify the authority to whom the case should be referred. Criteria for Specialized Software Training Entry:\n\n(i) Must be proficient in Java.\n\n(ii) Must have passed the internal aptitude test. Exceptions: Exception",
+    "option_a": "Entry to be granted",
+    "option_b": "Case to be referred to the Program Manager",
+    "option_c": "Application to be rejected",
+    "option_d": "Case to be referred to the Training Director",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 19,
+    "question_text": "Read the statement carefully and assume it to be true. Then examine the two conclusions given below it and decide which conclusion(s), if any, logically follow from the statement.\n\nStatement: A space agency has initiated long-duration orbital missions to study microgravity effects on human physiology and spacecraft systems.\n\nConclusions:\n\nI. Microgravity may have measurable effects on human biological systems.\n\nII. Space missions are conducted only for entertainment purposes.",
+    "option_a": "Only conclusion I follows",
+    "option_b": "Neither conclusion I nor conclusion II follows",
+    "option_c": "Both conclusions I and II follow",
+    "option_d": "Only conclusion II follows",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 20,
+    "question_text": "In a certain code language, \"LIGHTS\" is written as \"LjGiTt\". How will \"WINDOW\" be written in the same code language?",
+    "option_a": "WkNoOx",
+    "option_b": "WjNeOx",
+    "option_c": "WkNfOx",
+    "option_d": "WjNeOy",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 21,
+    "question_text": "In a certain code language, if fGhIj is written as gjILk, then how will mNoPq be written in that same code language?",
+    "option_a": "nRrSt",
+    "option_b": "nQpSq",
+    "option_c": "nQpSr",
+    "option_d": "mPqSq",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 22,
+    "question_text": "Direction: Choose the most suitable decision based on the scenario provided below. Scenario: A university receives evidence that a highly successful research project contains a minor methodological flaw. The flaw does not invalidate the main findings but affects one secondary analysis. The project has already attracted substantial funding.",
+    "option_a": "Withhold the information until future studies provide additional evidence.",
+    "option_b": "Publicly disclose the issue, correct the affected analysis, and maintain transparency.",
+    "option_c": "Cancel the entire project because any methodological flaw is unacceptable.",
+    "option_d": "Ignore the issue because the primary findings remain unaffected.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 23,
+    "question_text": "The regional park authority has prohibited the use of all artificial lighting within the sanctuary to protect the natural nocturnal habitat of local endangered species. Which assumption underlies this prohibition?",
+    "option_a": "Visitors will strictly adhere to the lighting ban, making additional monitoring measures unnecessary.",
+    "option_b": "Implementing this ban will immediately result in a significant increase in the local species population.",
+    "option_c": "The current levels of artificial light are the only threats facing these species within the sanctuary.",
+    "option_d": "Artificial light exposure negatively impacts the mating and hunting behaviors of these endangered species.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 24,
+    "question_text": "Which of the following rows/columns are connected/related with each other in some way? Rows Columns I II III IV V I 27 18 36 45 9 II 12 10 18 20 4 III 9 6 12 15 3 IV 6 3 7 10 3 V 3 2 4 5 1",
+    "option_a": "Rows I, III and V",
+    "option_b": "Rows II, IV and V",
+    "option_c": "Rows I, II and III",
+    "option_d": "Rows I, II and IV",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 25,
+    "question_text": "Select the option that is related to the third word in the same way as the second word is related to the first word. (The words must be considered as meaningful English words and must not be related to each other based on the number of letters/number of consonants/vowels in the word.) Hive : Bees :: Anthill : ?",
+    "option_a": "Ants",
+    "option_b": "Beetles",
+    "option_c": "Spiders",
+    "option_d": "Butterflies",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 26,
+    "question_text": "Which of the following is the correct explanation of a consumer surplus?",
+    "option_a": "What the consumer pays (-) what it is worth",
+    "option_b": "What the consumer is ready to pay (-) what they actually pay",
+    "option_c": "What the seller quotes as the price (-) what the consumer actually pays",
+    "option_d": "What the seller quotes as the price (-) cost of manufacturing to the seller",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 27,
+    "question_text": "What is the formula for net investment?",
+    "option_a": "Gross investment - taxes",
+    "option_b": "Gross investment - interest expenses",
+    "option_c": "Gross investment - depreciation",
+    "option_d": "Gross investment - dividend",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 28,
+    "question_text": "When was the QUAD (Quadrilateral Security Dialogue) revitalized?",
+    "option_a": "2007",
+    "option_b": "2012",
+    "option_c": "2017",
+    "option_d": "2020",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 29,
+    "question_text": "How many frames are there in a standard ten-pin bowling game?",
+    "option_a": "8",
+    "option_b": "9",
+    "option_c": "10",
+    "option_d": "11",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 30,
+    "question_text": "During which year were the National Shooting Championships held in Trivandrum, Kerala?",
+    "option_a": "2013",
+    "option_b": "2019",
+    "option_c": "2022",
+    "option_d": "2020",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 31,
+    "question_text": "Who won India's first Olympic medal in boxing?",
+    "option_a": "Mary Kom",
+    "option_b": "Vijender Singh",
+    "option_c": "Shiva Thapa",
+    "option_d": "Lovlina Borgohain",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 32,
+    "question_text": "Which Home Affairs Minister has also been the 1st Minister of Co-operation since July 2021?",
+    "option_a": "Amit Shah",
+    "option_b": "J.P. Nadda",
+    "option_c": "Nitin Gadkari",
+    "option_d": "Rajnath Singh",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 33,
+    "question_text": "What was the capital of Avanti in the 6th century B.C?",
+    "option_a": "Taxila",
+    "option_b": "Pataliputra",
+    "option_c": "Ayodhya",
+    "option_d": "Ujjain",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 34,
+    "question_text": "Consider the following\n\nstatements:\n\n1. Hamsaladeevi is located at the mouth of the Krishna River.\n\n2. Allahabad is located to the west of Varanasi.\n\n3. The Tons River is the largest tributary of the Yamuna River. Which of the above statements is/are CORRECT?",
+    "option_a": "1 and 2 only",
+    "option_b": "3 only",
+    "option_c": "2 only",
+    "option_d": "1, 2, and 3",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 35,
+    "question_text": "Which traditional Naga folk song is specifically known as a war song, narrating themes of bravery and battle?",
+    "option_a": "Neuleu",
+    "option_b": "Heliamleu",
+    "option_c": "Jemji",
+    "option_d": "Tati",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 36,
+    "question_text": "What was the primary purpose of the saddle querns discovered at Harappan sites?",
+    "option_a": "For making sharp",
+    "option_b": "For grinding daily weapons cereals",
+    "option_c": "For building tall",
+    "option_d": "For digging deep houses rivers",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 37,
+    "question_text": "According to Article 76(1) of the Indian Constitution, a person appointed as Attorney-General for India must be qualified to be appointed as a:",
+    "option_a": "District Judge",
+    "option_b": "High Court Judge",
+    "option_c": "Supreme Court",
+    "option_d": "Member of Judge Parliament",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 38,
+    "question_text": "Naharkatiya, known for oil production, is located in which state?",
+    "option_a": "Gujarat",
+    "option_b": "Rajasthan",
+    "option_c": "Meghalaya",
+    "option_d": "Assam",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 39,
+    "question_text": "Identify the correct stretch covered under National Waterway 3 (NW-3) in India.",
+    "option_a": "Prayagraj-Haldia",
+    "option_b": "Sadiya-Dhubri stretch stretch",
+    "option_c": "Kottapuram-Kollam stretch",
+    "option_d": "Kottapuram-Dhubri stretch",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 40,
+    "question_text": "In which sport did Karnam Malleswari win India’s first-ever Olympic medal by a woman at the 2000 Sydney Olympic Games?",
+    "option_a": "Boxing",
+    "option_b": "Weightlifting",
+    "option_c": "Wrestling",
+    "option_d": "Shooting",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 41,
+    "question_text": "The highest peak of the Nicobar group is:",
+    "option_a": "Mount Thullier",
+    "option_b": "Mount Diavolo",
+    "option_c": "Saddle Peak",
+    "option_d": "Mount Koyob",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 42,
+    "question_text": "In India, which Article of the Constitution empowers Parliament to exclude the jurisdiction of the Supreme Court in matters relating to inter-State water disputes?",
+    "option_a": "Article 262",
+    "option_b": "Article 263",
+    "option_c": "Article 356",
+    "option_d": "Article 131",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 43,
+    "question_text": "Consider the following statements about Shekha Jheel Bird Sanctuary:\n\n1. It is located in the Aligarh district of Uttar Pradesh.\n\n2. It was designated as Uttar Pradesh's 12th Ramsar site and India's 99th Ramsar site in April 2026. Which of the statements given above is/are correct?",
+    "option_a": "Only 1",
+    "option_b": "Only 2",
+    "option_c": "Both 1 and 2",
+    "option_d": "Neither 1 nor 2",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 44,
+    "question_text": "When did the British first accept, in principle, the demand for an Indian Constituent Assembly?",
+    "option_a": "August Offer",
+    "option_b": "Cripps Proposals (1940) (1942)",
+    "option_c": "Cabinet Mission",
+    "option_d": "Mountbatten Plan (1946) (1947)",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 45,
+    "question_text": "As an outcome of the economic reforms initiated in 1991, which sector recorded the highest average annual growth rate during 2007–12?",
+    "option_a": "Agriculture sector",
+    "option_b": "Industrial sector",
+    "option_c": "Services sector",
+    "option_d": "Domestic sector",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 46,
+    "question_text": "One of the key objectives of the Chelliah Committee during the 1991 economic reforms was to make India's taxation system:",
+    "option_a": "Centralised and",
+    "option_b": "Broad-based and uniform fair",
+    "option_c": "State-controlled",
+    "option_d": "Export-oriented only only",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 47,
+    "question_text": "According to Census terminology, the \"Houseless Population\" includes persons who:",
+    "option_a": "Live in rented houses",
+    "option_b": "Live in temporary shelters only",
+    "option_c": "Live in government buildings",
+    "option_d": "Do not live in census houses",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 48,
+    "question_text": "The earliest Indian literature is best described as which of the following?",
+    "option_a": "Written",
+    "option_b": "Printed",
+    "option_c": "Oral",
+    "option_d": "Digital",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 49,
+    "question_text": "Which sector was accorded the highest priority under the Second Five-Year Plan?",
+    "option_a": "Heavy and basic",
+    "option_b": "Agriculture and industries irrigation",
+    "option_c": "Foreign trade",
+    "option_d": "School education promotion sector",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 50,
+    "question_text": "In the moving boundary method used to determine an ion's transport number, what is the primary purpose of adding an indicator electrolyte to the principal electrolyte?",
+    "option_a": "To increase the conductivity of the solution",
+    "option_b": "To ensure complete dissociation of the principal electrolyte",
+    "option_c": "To form a sharp and visible boundary for measuring ion migration",
+    "option_d": "To prevent current flow through the cell",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 51,
+    "question_text": "If the volume of a right prism is 150 cm³ and the height is 5 cm, its base area is:",
+    "option_a": "35 cm²",
+    "option_b": "45 cm²",
+    "option_c": "30 cm²",
+    "option_d": "50 cm²",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 52,
+    "question_text": "A scalene triangle has sides in the ratio 13:14:15. If its perimeter is 126 cm, find the length of its longest side.",
+    "option_a": "39 cm",
+    "option_b": "48 cm",
+    "option_c": "42 cm",
+    "option_d": "45 cm",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 53,
+    "question_text": "Calculate the volume of a cylinder whose circular base area measures 154 cm² and whose height is 20 cm.",
+    "option_a": "3080 cm³",
+    "option_b": "2580 cm³",
+    "option_c": "2480 cm³",
+    "option_d": "2180 cm³",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 54,
+    "question_text": "X and Y start a business with capital in the ratio 5 : 6. At the end of 8 months, X withdraws his capital. If they receive profits in the ratio 5 : 9, for how long was Y's capital used in the business?",
+    "option_a": "10 months",
+    "option_b": "12 months",
+    "option_c": "14 months",
+    "option_d": "15 months",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 55,
+    "question_text": "Given that the average of five numbers is 27, and that excluding one number reduces the average to 25, determine the value of the excluded number.",
+    "option_a": "45",
+    "option_b": "35",
+    "option_c": "55",
+    "option_d": "65",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 56,
+    "question_text": "Calculate the compound interest on ₹12,000 at 10% per annum for 1 year 6 months, compounded annually.",
+    "option_a": "₹1460",
+    "option_b": "₹1860",
+    "option_c": "₹1560",
+    "option_d": "₹1660",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 57,
+    "question_text": "If the ratio of the number of sides of two regular polygons is 5:4 and the difference between their interior angles is 9° . Find the number of sides of the polygon with more sides.",
+    "option_a": "4",
+    "option_b": "10",
+    "option_c": "8",
+    "option_d": "15",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 58,
+    "question_text": "The ratio of the radii of two concentric circles is 5:\n\n3. If the difference between their areas is 256π sq. m, what is the radius of the smaller circle?",
+    "option_a": "20 m",
+    "option_b": "10 m",
+    "option_c": "16 m",
+    "option_d": "12 m",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 59,
+    "question_text": "The height of a right circular cone is 15 cm and its slant height is 17 cm. Find the curved surface area of the cone.",
+    "option_a": "149π cm²",
+    "option_b": "120π cm²",
+    "option_c": "136π cm²",
+    "option_d": "125π cm²",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 60,
+    "question_text": "A ladder of length 20 m makes an angle of 60° with the ground. Find the distance of the foot from the wall.",
+    "option_a": "8 m",
+    "option_b": "13 m",
+    "option_c": "10 m",
+    "option_d": "12 m",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 61,
+    "question_text": "CD is a chord of a circle and E lies on the minor arc CD. Tangents at C and D meet at F. If ∠CED= 118° , find ∠CFD .",
+    "option_a": "45°",
+    "option_b": "56°",
+    "option_c": "68°",
+    "option_d": "75°",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 62,
+    "question_text": "If cosec θ−cot θ= p , find the value of p²−1 . p²+1",
+    "option_a": "cos θ",
+    "option_b": "sin θ",
+    "option_c": "−cos θ",
+    "option_d": "−sin θ",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 63,
+    "question_text": "If x= 7 + 4√3 , what is the value of (√x− √x)² 1 ?",
+    "option_a": "10",
+    "option_b": "11",
+    "option_c": "12",
+    "option_d": "14",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 64,
+    "question_text": "If x= √7+4√3 , then what is the value of x² 7−4√3\n\n- 14x + 2?",
+    "option_a": "0",
+    "option_b": "1",
+    "option_c": "2",
+    "option_d": "3",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 65,
+    "question_text": "The radius of a sphere is increased by 50%. By what percentage does its volume increase?",
+    "option_a": "154.5%",
+    "option_b": "165.5%",
+    "option_c": "237.5%",
+    "option_d": "254.5%",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 66,
+    "question_text": "In triangle ABC, DE is parallel to BC, AD = x + 1, DB = 2x, AE = 3x + 2, EC = 5x. Find the value of x (x > 0).",
+    "option_a": "2",
+    "option_b": "1",
+    "option_c": "3",
+    "option_d": "4",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 67,
+    "question_text": "A corporate consultant is taxed under a progressive annual income model:\n\n* Earnings up to ₹10,00,000 are taxed at a base rate of 10%.\n\n* Any earnings exceeding ₹10,00,000 are taxed at a higher rate of 25%. If the consultant paid a total annual income tax of exactly ₹2,50,000, what percentage of their total gross income was paid as tax?",
+    "option_a": "12.505%",
+    "option_b": "18.625%",
+    "option_c": "10.025%",
+    "option_d": "15.625%",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 68,
+    "question_text": "An artisan in Shantiniketan is preparing a large vat of natural indigo dye for traditional Batik fabrics. The vat initially contains 80 liters of a dye-to-water mixture in the ratio 3:13. To achieve a deeper and richer colour, the artisan boils the mixture to evaporate some of the water. Once done, the new ratio of dye to water in the vat is 1:\n\n3. How many liters of water were evaporated during the boiling process?",
+    "option_a": "20 liters",
+    "option_b": "21 liters",
+    "option_c": "22 liters",
+    "option_d": "24 liters",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 69,
+    "question_text": "A server's storage drive is at 0% capacity. A malicious script begins flooding it with junk data at a rate that would completely fill the drive in 6 hours. 3 hours since the attack starts, the IT team activates Scrubber A, which by itself can delete a full drive of data in 15 hours. 2 hours after the activation of A, they also turn on Scrubber B, which can delete a full drive in 5 hours. If the script runs continuously, at what exact time will the drive return to being 100% empty, if the attack started at 12:00 PM (noon)?",
+    "option_a": "7:00 PM",
+    "option_b": "10:30 PM",
+    "option_c": "12:00 AM",
+    "option_d": "12:30 AM (midnight)",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 70,
+    "question_text": "Solve for acute θ : tan(θ+ 24°) = cot(θ−12°)",
+    "option_a": "36°",
+    "option_b": "33°",
+    "option_c": "39°",
+    "option_d": "42°",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 71,
+    "question_text": "In a right triangle XYZ with ∠Y = 90°, if ∠X = 2∠Z, find cos X.",
+    "option_a": "1/2",
+    "option_b": "√3/2",
+    "option_c": "1/√2",
+    "option_d": "√3",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 72,
+    "question_text": "Evaluate: 1032 - 972",
+    "option_a": "1121",
+    "option_b": "1320",
+    "option_c": "1200",
+    "option_d": "1424",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 73,
+    "question_text": "If x+ 1 x= 6 , find the value of x5 + x5 1 .",
+    "option_a": "6276",
+    "option_b": "2726",
+    "option_c": "6726",
+    "option_d": "7662",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 74,
+    "question_text": "A tank contains 600 litres of an aqueous solution with a 40% salt concentration by volume. Assume that the component volumes are perfectly additive (mixing causes no volume contraction), and that the solution is thoroughly stirred to maintain complete homogeneity after each step. The following sequential operations are performed:\n\n• 120 litres of the solution is removed and replaced with an equal volume of pure water.\n\n• This exact replacement process is repeated once more.\n\n• Then, 60 litres of the resulting solution is removed and replaced with an equal volume of liquid pure salt solute. What is the final percentage of salt by volume in the resulting mixture?",
+    "option_a": "23.04%",
+    "option_b": "25.60%",
+    "option_c": "33.04%",
+    "option_d": "35.60%",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 75,
+    "question_text": "Consider the following two statements regarding a configuration of two distinct circles: Statement 1: If the distance between the centers of two circles is strictly greater than the sum of their radii, then exactly four common tangents can be drawn to them. Statement 2: If the distance between the centers of two circles is strictly less than the absolute difference of their radii, then no common tangents can be drawn to them. Which of the following is correct?",
+    "option_a": "Only Statement 1 is true.",
+    "option_b": "Only Statement 2 is true.",
+    "option_c": "Both Statement 1 and Statement 2 are true.",
+    "option_d": "Neither Statement 1 nor Statement 2 is true.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 76,
+    "question_text": "**Comprehension (Q. 76 - 80):** In an era marked by global interconnectedness, emerging infectious diseases (1) ____ an unprecedented threat to public health infrastructures worldwide. Pathogens such as novel coronaviruses, antibiotic-resistant bacteria, and zoonotic viruses exploit the vulnerabilities of human mobility, urban overcrowding, and ecological disruption. Although medical science has made formidable strides, the unpredictable nature of outbreaks (2) ____ persistent difficulties in preparedness and response mechanisms. Adding to the complexity, misinformation proliferated through digital platforms (3) ____ the efficacy of public health interventions, sometimes undermining vaccination campaigns and quarantine measures. Efforts to combat emerging diseases must therefore be interdisciplinary, blending epidemiology, behavioral science, and policy innovation. One key concept in disease containment is herd immunity, a state wherein a significant portion of a population becomes immune, thereby indirectly shielding vulnerable individuals. However, achieving (4) herd immunity, whether via vaccination or natural exposure, entails considerable ethical and logistical challenges. Beyond infectious diseases, the surge in non-communicable illnesses such as diabetes and cardiovascular disorders further strains public health systems. An effective response to emerging health threats must prioritize resilience, adaptability, and above all, (5) prophylaxis. In the absence of robust, coordinated efforts, humanity risks facing pandemics of greater magnitude and complexity than ever previously recorded.\n\n---\n\nIn the following question, a sentence with a blank is given, followed by five words labeled\n\n(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Choose correct tense/subject-verb.(1)",
+    "option_a": "poses",
+    "option_b": "pose",
+    "option_c": "had posed",
+    "option_d": "posing",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 77,
+    "question_text": "**Comprehension (Q. 76 - 80):** In an era marked by global interconnectedness, emerging infectious diseases (1) ____ an unprecedented threat to public health infrastructures worldwide. Pathogens such as novel coronaviruses, antibiotic-resistant bacteria, and zoonotic viruses exploit the vulnerabilities of human mobility, urban overcrowding, and ecological disruption. Although medical science has made formidable strides, the unpredictable nature of outbreaks (2) ____ persistent difficulties in preparedness and response mechanisms. Adding to the complexity, misinformation proliferated through digital platforms (3) ____ the efficacy of public health interventions, sometimes undermining vaccination campaigns and quarantine measures. Efforts to combat emerging diseases must therefore be interdisciplinary, blending epidemiology, behavioral science, and policy innovation. One key concept in disease containment is herd immunity, a state wherein a significant portion of a population becomes immune, thereby indirectly shielding vulnerable individuals. However, achieving (4) herd immunity, whether via vaccination or natural exposure, entails considerable ethical and logistical challenges. Beyond infectious diseases, the surge in non-communicable illnesses such as diabetes and cardiovascular disorders further strains public health systems. An effective response to emerging health threats must prioritize resilience, adaptability, and above all, (5) prophylaxis. In the absence of robust, coordinated efforts, humanity risks facing pandemics of greater magnitude and complexity than ever previously recorded.\n\n---\n\nIn the following question, a sentence with a blank is given, followed by five words labeled\n\n(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Focus on tense and agreement.(2)",
+    "option_a": "present",
+    "option_b": "presents",
+    "option_c": "presented",
+    "option_d": "presenting",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 78,
+    "question_text": "**Comprehension (Q. 76 - 80):** In an era marked by global interconnectedness, emerging infectious diseases (1) ____ an unprecedented threat to public health infrastructures worldwide. Pathogens such as novel coronaviruses, antibiotic-resistant bacteria, and zoonotic viruses exploit the vulnerabilities of human mobility, urban overcrowding, and ecological disruption. Although medical science has made formidable strides, the unpredictable nature of outbreaks (2) ____ persistent difficulties in preparedness and response mechanisms. Adding to the complexity, misinformation proliferated through digital platforms (3) ____ the efficacy of public health interventions, sometimes undermining vaccination campaigns and quarantine measures. Efforts to combat emerging diseases must therefore be interdisciplinary, blending epidemiology, behavioral science, and policy innovation. One key concept in disease containment is herd immunity, a state wherein a significant portion of a population becomes immune, thereby indirectly shielding vulnerable individuals. However, achieving (4) herd immunity, whether via vaccination or natural exposure, entails considerable ethical and logistical challenges. Beyond infectious diseases, the surge in non-communicable illnesses such as diabetes and cardiovascular disorders further strains public health systems. An effective response to emerging health threats must prioritize resilience, adaptability, and above all, (5) prophylaxis. In the absence of robust, coordinated efforts, humanity risks facing pandemics of greater magnitude and complexity than ever previously recorded.\n\n---\n\nIn the following question, a sentence with a blank is given, followed by five words labeled\n\n(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Choose correct word to get appropriate construction.(3)",
+    "option_a": "impede",
+    "option_b": "impedes",
+    "option_c": "has impeding",
+    "option_d": "impeding",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 79,
+    "question_text": "**Comprehension (Q. 76 - 80):** In an era marked by global interconnectedness, emerging infectious diseases (1) ____ an unprecedented threat to public health infrastructures worldwide. Pathogens such as novel coronaviruses, antibiotic-resistant bacteria, and zoonotic viruses exploit the vulnerabilities of human mobility, urban overcrowding, and ecological disruption. Although medical science has made formidable strides, the unpredictable nature of outbreaks (2) ____ persistent difficulties in preparedness and response mechanisms. Adding to the complexity, misinformation proliferated through digital platforms (3) ____ the efficacy of public health interventions, sometimes undermining vaccination campaigns and quarantine measures. Efforts to combat emerging diseases must therefore be interdisciplinary, blending epidemiology, behavioral science, and policy innovation. One key concept in disease containment is herd immunity, a state wherein a significant portion of a population becomes immune, thereby indirectly shielding vulnerable individuals. However, achieving (4) herd immunity, whether via vaccination or natural exposure, entails considerable ethical and logistical challenges. Beyond infectious diseases, the surge in non-communicable illnesses such as diabetes and cardiovascular disorders further strains public health systems. An effective response to emerging health threats must prioritize resilience, adaptability, and above all, (5) prophylaxis. In the absence of robust, coordinated efforts, humanity risks facing pandemics of greater magnitude and complexity than ever previously recorded.\n\n---\n\nIn the following question, a sentence with a blank is given, followed by five words labeled\n\n(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. In this context, 'herd immunity' most nearly refers to:\n\n(4)",
+    "option_a": "Immunity achieved only through natural infection",
+    "option_b": "Collective immunity reducing disease transmission",
+    "option_c": "Forced immunity via coercive measures",
+    "option_d": "Immunity affecting only animals",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 80,
+    "question_text": "**Comprehension (Q. 76 - 80):** In an era marked by global interconnectedness, emerging infectious diseases (1) ____ an unprecedented threat to public health infrastructures worldwide. Pathogens such as novel coronaviruses, antibiotic-resistant bacteria, and zoonotic viruses exploit the vulnerabilities of human mobility, urban overcrowding, and ecological disruption. Although medical science has made formidable strides, the unpredictable nature of outbreaks (2) ____ persistent difficulties in preparedness and response mechanisms. Adding to the complexity, misinformation proliferated through digital platforms (3) ____ the efficacy of public health interventions, sometimes undermining vaccination campaigns and quarantine measures. Efforts to combat emerging diseases must therefore be interdisciplinary, blending epidemiology, behavioral science, and policy innovation. One key concept in disease containment is herd immunity, a state wherein a significant portion of a population becomes immune, thereby indirectly shielding vulnerable individuals. However, achieving (4) herd immunity, whether via vaccination or natural exposure, entails considerable ethical and logistical challenges. Beyond infectious diseases, the surge in non-communicable illnesses such as diabetes and cardiovascular disorders further strains public health systems. An effective response to emerging health threats must prioritize resilience, adaptability, and above all, (5) prophylaxis. In the absence of robust, coordinated efforts, humanity risks facing pandemics of greater magnitude and complexity than ever previously recorded.\n\n---\n\nIn the following question, a sentence with a blank is given, followed by five words labeled\n\n(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. The word 'prophylaxis' most nearly means:\n\n(5)",
+    "option_a": "Treatment after illness",
+    "option_b": "Preventive action against disease",
+    "option_c": "Diagnosis of unknown conditions",
+    "option_d": "Rehabilitation and therapy",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 81,
+    "question_text": "Choose the correct indirect speech form of the sentence below. The science instructor said, \"Water turns into ice at 0 degrees Celsius.\"",
+    "option_a": "The science instructor said that water turned into ice at 0 degrees Celsius.",
+    "option_b": "The science instructor said that water turns into ice at 0 degrees Celsius.",
+    "option_c": "The science instructor said that water had turned into ice at 0 degrees Celsius.",
+    "option_d": "The science instructor told that water turns into ice at 0 degrees Celsius.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 82,
+    "question_text": "Which of the following is the correct direct speech form of the given sentence? Chayanika wanted to know if Garry had selected those candidates for the interview.",
+    "option_a": "Chayanika asked, \"Did Garry select these candidates for the interview?\"",
+    "option_b": "Chayanika asked, \"Did Garry select those candidates for the interview?\"",
+    "option_c": "Chayanika asked, \"Had Garry selected these candidates for the interview?\"",
+    "option_d": "Chayanika asked, \"Has Garry selected these candidates for the interview?\"",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 83,
+    "question_text": "Fill in the blanks with the appropriate article. ______ apple fell from ______ tree, which was during ______ summer season.",
+    "option_a": "An, the, the",
+    "option_b": "A, the, an",
+    "option_c": "An, an, the",
+    "option_d": "The, the, the",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 84,
+    "question_text": "Change the following sentence into indirect speech. \"I shall be 16 tomorrow,\" said Tanuka.",
+    "option_a": "Tanuka said that she will be 16 tomorrow.",
+    "option_b": "Tanuka said that she shall be 16 tomorrow.",
+    "option_c": "Tanuka said that she would be 16 the next day.",
+    "option_d": "Tanuka said that she would be 16 tomorrow.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 85,
+    "question_text": "Rearrange the parts of the sentence in the correct order. As geopolitical tensions reshaped international diplomacy, P. as emerging economies sought to assert greater influence in global decision-making, Q. leading to the realignment of trade agreements and defense partnerships R. traditional alliances among major world powers faced significant strain, S. while long-standing institutions like the United Nations and G7 faced calls for reform",
+    "option_a": "RPSQ",
+    "option_b": "RPQS",
+    "option_c": "PRSQ",
+    "option_d": "SQRP",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 86,
+    "question_text": "Fill in the blank with an appropriate degree of comparison. When comparing the two theories, Newton's laws were initially considered ______ acceptable.",
+    "option_a": "least",
+    "option_b": "less",
+    "option_c": "lesser",
+    "option_d": "little",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 87,
+    "question_text": "What does the idiom \"All his ventures went to the winds\" mean?",
+    "option_a": "All his efforts were wasted",
+    "option_b": "He became very successful",
+    "option_c": "He changed his business frequently",
+    "option_d": "His ventures were well-organized",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 88,
+    "question_text": "Choose the error in the sentence. The teacher emphasized on the importance of time management.",
+    "option_a": "on",
+    "option_b": "emphasized",
+    "option_c": "management",
+    "option_d": "importance",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 89,
+    "question_text": "Rearrange the parts of the sentence in the correct order. The transboundary conservation program P. through joint international efforts Q. that traverse national borders R. protects migratory species S. by creating safe corridors",
+    "option_a": "PRSQ",
+    "option_b": "RQSP",
+    "option_c": "SPQR",
+    "option_d": "RPQS",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 90,
+    "question_text": "Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?\n\n1. Socialization is the process by which individuals learn and internalize the values, beliefs, and norms of their society.\n\n2. Role theory explains how individuals occupy different roles in society and how their behavior is shaped by these roles.\n\n3. The process of socialization is critical for an individual's development and is influenced by various agents like family, peers, and media.\n\n4. The roles people play, such as being a student, parent, or worker, come with expectations that guide their actions and interactions.\n\n5. Through socialization, individuals learn to perform specific social roles within their community.",
+    "option_a": "3-5-4-1-2",
+    "option_b": "2-5-4-3-1",
+    "option_c": "1-4-3-2-5",
+    "option_d": "1-3-5-2-4",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 91,
+    "question_text": "Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?\n\n1. Mythology played a vital role in early societies by explaining natural events and human existence.\n\n2. Over time, mythology evolved, influencing literature, art and philosophy.\n\n3. Many ancient civilizations, such as the Greeks and Egyptians, used myths to explain the origins of the world.\n\n4. These myths were often passed down orally, shaping cultural traditions and religious beliefs.",
+    "option_a": "4-2-3-1",
+    "option_b": "2-3-4-1",
+    "option_c": "3-4-2-1",
+    "option_d": "1-3-4-2",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 92,
+    "question_text": "Select the most appropriate synonym of the given word: EXPEDITE",
+    "option_a": "Delay",
+    "option_b": "Hasten",
+    "option_c": "Obstruct",
+    "option_d": "Prolong",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 93,
+    "question_text": "Choose the correct meaning of idiom: Man of straw",
+    "option_a": "A person of high emotional strength",
+    "option_b": "A confident negotiator",
+    "option_c": "A highly rigid and disciplined manly",
+    "option_d": "A weak or ineffectual person",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 94,
+    "question_text": "Find the part of the sentence that contains an error: Each of the candidates (1)/ are expected to carry (2)/ their original ID proofs\n\n(3)/ for verification. (4)/",
+    "option_a": "(1)",
+    "option_b": "(2)",
+    "option_c": "(3)",
+    "option_d": "(4)",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 95,
+    "question_text": "Change the following from active to passive: They were cleaning the hall for the function.",
+    "option_a": "The hall was cleaned for the function.",
+    "option_b": "The hall is being cleaned for the function.",
+    "option_c": "The hall was being cleaned for the function.",
+    "option_d": "The hall has been cleaned for the function.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 96,
+    "question_text": "Change the following from active to passive: Lightning struck the tree.",
+    "option_a": "The tree had been struck by lightning.",
+    "option_b": "The tree was struck by lightning.",
+    "option_c": "The tree is struck by lightning.",
+    "option_d": "The tree has been struck by lightning.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 97,
+    "question_text": "Convert the sentence provided below from its passive voice structure to an active voice structure: She was heard being scolded by the principal during the assembly.",
+    "option_a": "The principal heard her being scolded during assembly.",
+    "option_b": "Someone heard the principal scolding her during the assembly.",
+    "option_c": "She was scolding the principal, who was heard during assembly.",
+    "option_d": "People heard the principal being scolded by her during the assembly.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 98,
+    "question_text": "Convert the sentence provided below from its passive voice structure to an active voice structure: The guest was believed to have been misinformed about the schedule.",
+    "option_a": "It was believed that the guest had been misinformed about the schedule.",
+    "option_b": "Someone had misinformed the guest, as it was believed.",
+    "option_c": "It is believed the guest misinformed others.",
+    "option_d": "The schedule was believed to misinform the guest.",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 99,
+    "question_text": "Choose the most suitable option to replace the highlighted part of the sentence: He is living here since 2010.",
+    "option_a": "is living here from",
+    "option_b": "has been living here since",
+    "option_c": "lives here since",
+    "option_d": "was living here since",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 100,
+    "question_text": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. She said that barely had she stepped out when it began to rain.",
+    "option_a": "\"Barely had I stepped out when it began to rain,\" she said.",
+    "option_b": "\"I had barely stepped out when it started to rain,\" said she.",
+    "option_c": "\"It started raining as soon as I stepped out,\" she said.",
+    "option_d": "\"I barely stepped out and it rained,\" she said.",
+    "correct_answer": "A"
+  }
+]

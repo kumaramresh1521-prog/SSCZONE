@@ -1,0 +1,793 @@
+Q.1: A says: "B is the son of my father's only daughter." How is A related to B?
+A: Father
+B: Cousin
+C: Uncle
+D: Cannot be determined
+ANS: D
+
+Q.2: Which of the following numbers will replace the question mark (?) in the given series? 5, 31, 161, 811, ?
+A: 3450
+B: 4061
+C: 3870
+D: 4456
+ANS: B
+
+Q.3: If in the word KEYBOARD the first and second letters are interchanged, in the same way the third and fourth, fifth and sixth and so on are interchanged, then what will be the 3rd letter from the right?
+A: D
+B: O
+C: A
+D: Y
+ANS: B
+
+Q.4: In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 3 10 27 6 8 42 7 9 ?
+A: 42
+B: 56
+C: 64
+D: 70
+ANS: B
+
+Q.5: Pointing to a portrait, a man says, "The person in the portrait is the only grandson of the father of my wife's only brother." If the man has no siblings, how is the person in the portrait related to the man?
+A: Son
+B: Nephew
+C: Cousin
+D: Father 1 INTELLIGENCE
+ANS: D
+
+Q.6: In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. | 30 | 60 | 50 | |----|----|----| | 18 | 45 | 35 | | 12 | 25 | 20 | | 24 | 40 | ? |
+A: 25
+B: 35
+C: 45
+D: 55
+ANS: A
+
+Q.7: A is the male child of C. C and Q are sisters. Z is the mother of Q. P is the son of Z. Based on the given information, which of the following options is correct?
+A: P is the maternal uncle of A.
+B: A and P are cousins.
+C: P is the brother of A.
+D: A is the paternal uncle of P.
+ANS: A
+
+Q.8: Roll numbers are assigned such that the middle two digits represent the sum of the first two digits. Identify the invalid roll number.
+A: 381022
+B: 450912
+C: 720955
+D: 661284
+ANS: A
+
+Q.9: Study the pattern in the given series and find the next set of letters in the series. DEP, ZFL, VGH, ?
+A: RHD
+B: RGD
+C: RHC
+D: RHE
+ANS: A
+
+Q.10: Select the odd number pair from the given alternatives.
+A: 45, 2070
+B: 38, 1482
+C: 24, 600
+D: 17, 308
+ANS: D
+
+Q.11: Read the question carefully and choose the most appropriate option. You are a school teacher. Two parents are arguing during a parent-teacher meeting and their disagreement is affecting the overall atmosphere. What would you do?
+A: Ask both parents to leave immediately without hearing their concerns.
+B: Ignore the argument and continue the meeting as usual instead.
+C: End the meeting early and postpone all discussions indefinitely later.
+D: Listen to both sides calmly and help resolve the disagreement.
+ANS: D
+
+Q.12: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-1_p3_x307.jpeg)
+A: ![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-1_p3_x308.jpeg)
+B: ![Option B](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-1_p3_x310.jpeg)
+C: ![Option C](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-1_q12_opt_C.png)
+D: ![Option D](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-1_q12_opt_D.png)
+ANS: D
+
+Q.13: If L means '÷', M means '×', N means '+', and O means '-', which of the following statement(s) is/are NOT correct? Statement I: 40 L 8 N 10 M 2 = 25 Statement II: 15 M 3 O 10 L 5 = 43
+A: Only I
+B: Only II
+C: Both I and II
+D: Neither I nor II
+ANS: C
+
+Q.14: What should come in place of the question mark (?) in the following analogy? A2C5E : B3D6F :: G8I11K : ?
+A: H10J12L
+B: I9J12L
+C: H9K12L
+D: H9J12L
+ANS: D
+
+Q.15: In the given question, a few statements have been given followed by conclusions based on them. Consider the statements to be true and answer which of the given conclusions logically follow the statement. Statements
+
+1. Every nation that respects rights is democratic.
+
+2. No authoritarian regime respects rights.
+
+3. Country Z is not democratic. Conclusions
+
+I. Country Z does not respect rights.
+
+II. Country Z is an authoritarian regime.
+
+III. Some authoritarian regimes may become democratic.
+
+IV. All democratic nations respect rights.
+A: Only I follows
+B: Only I and II follow
+C: I and III follow
+D: Only II follows
+ANS: A
+
+Q.16: Read the statement carefully and assume it to be true. Then examine the two conclusions given below it and decide which conclusion(s), if any, logically follow from the statement.
+
+Statement: The government has increased investment in renewable energy to reduce dependence on fossil fuels.
+
+Conclusions:
+
+I. Fossil fuels will be completely banned in the near future.
+
+II. Renewable energy is considered important for the future.
+A: Only Conclusion I follows
+B: Neither conclusion I nor II follows
+C: Both Conclusions I and II follow
+D: Only Conclusion II follows
+ANS: D
+
+Q.17: If '★' means +, '♦' means -, '○' means ×, and '△' means ÷, find [(18 △ 6) ♦ 2] ○ [(4 ★ 2) ○ 3].
+A: 12
+B: 14
+C: 16
+D: 18
+ANS: D
+
+Q.18: Read the given conditions carefully and determine the appropriate outcome for the case provided. If any exception applies, identify the authority to whom the case should be referred. Criteria for Industrial Safety Certification:
+
+(i) Must have 3+ years of field experience.
+
+(ii) Must have completed a certified safety course. Exceptions: Exception
+A: Certification to be approved
+B: Case to be referred to the Safety Director
+C: Application to be rejected
+D: Case to be referred to the Internal Audit Committee
+ANS: B
+
+Q.19: In a certain code language, "NUMBER" is written as "NvMcEs" How will "POCKET" be written in the same code language?
+A: PpClEu
+B: PpClEv
+C: PqClEu
+D: PpCmEu
+ANS: A
+
+Q.20: In the following question two statements are given and these statements are followed by two conclusions. You have to take the given two statements to be true even if they seem to be at variance from commonly known facts. Read the conclusions and then decide which of the given conclusions logically follows from the two given statements.
+
+Statements: Some apples are fruits. Some fruits are sweet.
+
+Conclusions:
+
+I. All sweet are fruits.
+
+II. Some sweet are fruits.
+A: Only conclusion I follows
+B: Only conclusion II follows 3
+C: Both conclusions I and II follow
+D: Neither conclusion I nor conclusion II follows
+ANS: B
+
+Q.21: In the following question, three statements are given followed by three conclusions. Consider the statements to be true even if they differ from commonly known facts. Read the conclusions carefully and decide which of the conclusions logically follow from the given statements.
+
+Statements: Some mangoes are fruits. All fruits are foods. No food is a liquid.
+
+Conclusions:
+
+I. Some mangoes are foods.
+
+II. All mangoes are foods.
+
+III. Some foods are not liquids.
+A: Both conclusions I and II follow
+B: Both conclusions I and III follow
+C: All conclusions follow
+D: Both conclusions II and III follow
+ANS: B
+
+Q.22: Read the given statement carefully and the following assumptions based on it. Decide which of the assumptions are implicit in the statement.
+
+Statement: The municipal council should provide tax incentives to companies that adopt a four-day workweek to reduce overall energy consumption in office buildings. Assumptions:
+
+I. A four-day workweek will lead to a measurable reduction in energy usage in office environments.
+
+II. Businesses are motivated by financial tax incentives to adjust their operational work schedules.
+A: Only Assumption I is implicit
+B: Both Assumptions I and II are implicit
+C: Only Assumption II is implicit
+D: Neither Assumption I nor II is implicit
+ANS: B
+
+Q.23: A visa-on-arrival is granted only if the traveler holds an eligible-country passport, has a return ticket, and shows funds of at least $ 500 — unless the traveler already holds a pre-approved e-visa, in which case it is granted regardless of the other conditions. Traveler: eligible passport, return ticket present, funds shown $ 300, no e-visa.
+A: Visa granted
+B: Visa granted with a funds bond
+C: Referred to the immigration officer's discretion
+D: Visa denied
+ANS: D
+
+Q.24: Select the option that is related to the third word in the same way as the second word is related to the first word. (The words must be considered as meaningful English words and must not be related to each other based on the number of letters/number of consonants/vowels in the word.) Sericulture : Silk :: Apiculture : ?
+A: Leather
+B: Wool
+C: Milk
+D: Honey
+ANS: D
+
+Q.25: In each of the following questions, four options have been given, of which three are alike in some way and one is different. Choose the odd one out.
+A: Canberra –
+B: Ottawa – Canada Australia
+C: Washington, D.C. –
+D: Istanbul – Turkey USA
+ANS: D
+
+Q.26: The "PM Gati Shakti National Master Plan" aims to bring together various infrastructure projects. Which of the following is a primary objective of this initiative?
+A: To promote renewable energy adoption across the country.
+B: To create a unified and integrated infrastructure development framework.
+C: To enhance digital connectivity in rural areas.
+D: To boost agricultural productivity through better irrigation facilities.
+ANS: B
+
+Q.27: The "concept of 'One Nation, One Ration Card'" is aimed at ensuring food security for migrant workers and their families. Which of the following technologies or systems is primarily used to facilitate the seamless implementation of this initiative across the country?
+A: Blockchain technology for tracking foodgrain distribution.
+B: Biometric authentication through Aadhaar for beneficiary identification.
+C: Satellite imagery for monitoring the movement of ration trucks.
+D: Mobile applications for online registration of beneficiaries. 4 AWARENESS
+ANS: B
+
+Q.28: Who became the first Indian fencer to qualify for the Olympics?
+A: Bhavani Devi
+B: Mary Kom
+C: Dipa Karmakar
+D: Anshu Malik
+ANS: A
+
+Q.29: Which ancient Indian treatise extensively details the rules and strategies of traditional wrestling, known as Malla-yuddha?
+A: Arthashastra
+B: Manasollasa
+C: Agni Purana
+D: Vishnu Purana
+ANS: B
+
+Q.30: In which city was the final of the 2011 Cricket World Cup contested?
+A: Mumbai
+B: Delhi
+C: Kolkata
+D: Chennai
+ANS: A
+
+Q.31: During the first Five-Year Plan, which of the following most accurately represents the trade balance scenario?
+A: India consistently maintained a trade surplus driven by robust export performance
+B: Trade data is unavailable for this period
+C: The trade balance remained neutral, with exports and imports being roughly equal
+D: India generally experienced trade deficits due to large-scale imports for industrialization
+ANS: D
+
+Q.32: What does the Bharatiya Nagarik Suraksha Sanhita (BNSS), prescribe regarding "mercy petitions" in death sentence cases?
+A: No mercy petitions allowed post-trial
+B: The President alone decides without input from states
+C: Multiple petitions allowed across jurisdictions
+D: Clear timelines for filing and disposal
+ANS: A
+
+Q.33: Who was elected as the President of the Inter-Parliamentary Union (IPU) in 2023?
+A: Duarte Pacheco
+B: Shirin Chaudhry
+C: Tulia Ackson
+D: Om Birla
+ANS: D
+
+Q.34: Who among the following is the author of the Sanskrit play Mudrarakshasa?
+A: Kalidasa
+B: Banabhatta
+C: Vishakhadatta
+D: Brihatratha
+ANS: C
+
+Q.35: The rapid growth phase of the Indian Population was lying between which of the following time periods?
+A: 1901-1921
+B: 1921-1951
+C: 1951-1981
+D: 1981-2001
+ANS: C
+
+Q.36: Which legislative authority was granted under the Regulating Act of 1773?
+A: Only the Court of Directors could issue laws.
+B: Governor General and Council could make rules for Fort William.
+C: Civil regulations could only be passed by the British Parliament.
+D: Military laws required Crown approval.
+ANS: C
+
+Q.37: Which Article of the Indian Constitution prohibits Parliament from discussing the conduct of a Supreme Court or High Court judge in the discharge of their duties?
+A: Article 119
+B: Article 120
+C: Article 121
+D: Article 122
+ANS: C
+
+Q.38: Fill in the blank: Kinetic friction is generally _______ than the maximum static friction.
+A: greater
+B: equal
+C: less
+D: unrelated
+ANS: C
+
+Q.39: The 2025 International Booker Prize winner Banu Mushtaq wrote her original work in which language?
+A: Malayalam
+B: Kannada
+C: Telugu
+D: Marathi
+ANS: B
+
+Q.40: What distinguishes the Harappan bronze female figurine from the steatite statue?
+A: She wears detailed garments.
+B: She lacks any body jewellery.
+C: She has short hair fillets.
+D: She is largely unclad.
+ANS: A
+
+Q.41: Among the following Indian Ocean island nations, which is located closest to the African coast?
+A: Mauritius
+B: Maldives
+C: Seychelles
+D: Sri Lanka
+ANS: C
+
+Q.42: A Judicial Magistrate of First Class (JMFC) sentences an accused to three years' imprisonment (the maximum within his sentencing power) and a fine of ₹50,000. In default of payment of the fine, the court further directs that the accused shall undergo one year of imprisonment. Which of the following is most accurate under the Bharatiya Nagarik Suraksha Sanhita, 2023 in India?
+A: Valid, because default imprisonment is separate from substantive punishment.
+B: Invalid, because default imprisonment cannot exceed one-fourth of substantive imprisonment competence.
+C: Invalid, because a Magistrate First Class cannot award imprisonment once maximum substantive imprisonment is imposed.
+D: Valid only if approved by the Sessions Court.
+ANS: B
+
+Q.43: Under Article 3 of the Constitution of India, what is the time period within which the President must refer a Bill affecting the area, boundaries, or name of a State to the concerned State Legislature for its views?
+A: A constitutionally fixed period of six months
+B: A period specified by Parliament
+C: One session of the state legislature
+D: Such a period as the president may specify
+ANS: C
+
+Q.44: Under the economic reforms introduced since 1991, which of the following pairs of Central Public Sector Enterprises (CPSEs) has been granted Maharatna status?
+A: Indian Oil Corporation Limited and Steel Authority of India Limited
+B: Hindustan Aeronautics Limited and Mahanagar Telephone Nigam Limited
+C: Bharat Sanchar Nigam Limited and Airports Authority of India
+D: Tourism Corporation Limited and Mahanagar Telephone Nigam Limited
+ANS: A
+
+Q.45: Which of the following was the primary stabilisation measures taken under the New Economic Policy (NEP) of 1991?
+A: Long-term measures to improve efficiency
+B: Short-term measures to control inflation
+C: Measures to increase international competitiveness
+D: Measures to remove rigidities in the economy
+ANS: B
+
+Q.46: Which dimension of Human Development Index (HDI) is most directly linked with longevity?
+A: Knowledge
+B: Income
+C: Employment
+D: Health
+ANS: D
+
+Q.47: In the calculation of the Human Development Index (HDI), purchasing power parity (PPP) is primarily used to:
+A: Compare income levels across countries after accounting for differences in the cost of living
+B: Compare unemployment levels across countries after accounting for differences in labour-force participation
+C: Compare population growth rates across countries after accounting for differences in demographic trends
+D: Compare literacy levels across countries after accounting for differences in educational systems
+ANS: A
+
+Q.48: What primary mandate was given to the Planning Commission of India upon its establishment in March 1950?
+A: Conducting national demographic census surveys
+B: Managing direct foreign investment flows
+C: Formulating balanced national resource utilization
+D: Operating basic and heavy industries
+ANS: A
+
+Q.49: The Hindu Widows’ Remarriage Act was passed during the tenure of which GovernorGeneral of India?
+A: Lord Cornwallis
+B: Lord Canning
+C: Lord William
+D: Lord Ripon Bentinck
+ANS: C
+
+Q.50: A vaccine may introduce weakened or inactive microbes, or parts of them, into the body. What is the main purpose of vaccination?
+A: Increase blood pressure
+B: Develop immunity against a specific disease
+C: Destroy red blood cells
+D: Temporarily stop digestion
+ANS: B
+
+Q.51: The base of a right prism is a rhombus with diagonals 8 cm and 10 cm. The height of the prism is 12 cm. Find the volume.
+A: 384 cm³
+B: 420 cm³
+C: 480 cm³
+D: 540 cm³
+ANS: C
+
+Q.52: In a triangle, the centroid divides each median in the ratio 2:
+
+1. What is the distance between the centroid and the incenter in an equilateral triangle?
+A: Equal to the
+B: Half the altitude altitude
+C: Zero
+D: One-third of the altitude
+ANS: C
+
+Q.53: What is the smallest number that is a perfect square and is also divisible by 6, 15, and 20?
+A: 700
+B: 900
+C: 600
+D: 800
+ANS: B
+
+Q.54: A and B started a business by investing capital in the ratio 5 :
+
+3. At the end of 6 months, C joined them with an investment equal to the average of A and B. If the profit at the end of the year is ₹18,000, find C's share.
+A: ₹3,600
+B: ₹4,200
+C: ₹5,000
+D: ₹6,100
+ANS: A
+
+Q.55: An amount of ₹5,000 is invested at 12% compound interest. What will be the amount after 2 years?
+A: ₹5972
+B: ₹6172
+C: ₹6072
+D: ₹6272
+ANS: D
+
+Q.56: A large room has an area of 24√3 m² . It is to be covered with regular hexagonal tiles of side 20 cm. How many full tiles are required to cover the area (ignoring gaps)?
+A: 400 tiles
+B: 435 tiles
+C: 390 tiles
+D: 455 tiles
+ANS: A
+
+Q.57: A cone-shaped tank has a radius of 5 cm and a slant height of 14 cm. If the cost of painting is ₹18 per cm², find the approximate cost to paint the tank. (π = 3.14)
+A: ₹6,000
+B: ₹6,369
+C: ₹5,369
+D: ₹5,400
+ANS: A
+
+Q.58: If the area of a quadrant of a circle is 16π cm², find the radius of the circle.
+A: 4 cm
+B: 3 cm
+C: 7 cm
+D: 8 cm
+ANS: A
+
+Q.59: An article is sold at 20% profit. If its cost price and selling price are both reduced by ₹100, the profit would be 4% more. Find the original cost price.
+A: ₹200
+B: ₹400
+C: ₹800
+D: ₹600
+ANS: D
+
+Q.60: By selling 45 apples for ₹160, a vendor loses 20%. How many apples should he sell for ₹112 to gain 20% in the entire transaction?
+A: 24
+B: 21
+C: 26
+D: 28
+ANS: A
+
+Q.61: A man standing on a tower sees a train approaching. The angle of depression changes from 30° to 60° in 14 minutes. Find the time taken by the train to reach the base of the tower.
+A: 6 minutes
+B: 10 minutes
+C: 9 minutes
+D: 7 minutes
+ANS: D
+
+Q.62: Angles x and y are supplementary. y is 40° more than one-fourth of its supplementary angle. Find the value of the complement of half of
+
+x.
+A: 22°
+B: 90°
+C: 34°
+D: 45°
+ANS: A
+
+Q.63: If 0° < θ < 90°, find the value of 1 + √tan θ+sin θ . tan θ−sin θ
+A: 1 + cosec θ + cot
+B: 1 + cosec θ - cot θ θ
+C: 1 + sec θ + tan θ
+D: 1 + sec θ −tan θ
+ANS: D
+
+Q.64: If a solid sphere of radius 9 cm is melted and recast into a cylinder with a base radius of 3 cm, what will be the height of the cylinder?
+A: 102 cm
+B: 108 cm
+C: 254 cm
+D: 274 cm
+ANS: B
+
+Q.65: In triangle ABC, points D and E lie on AB and AC such that DE is parallel to BC. If AD = 1 DB 2 and AE = 6 cm, find AC.
+A: 14 cm
+B: 18 cm
+C: 20 cm
+D: 22 cm
+ANS: B
+
+Q.66: The square root of 1.44×0.81 is:
+A: 0.98
+B: 1.08
+C: 1.18
+D: 1.28
+ANS: B
+
+Q.67: A medium-sized furniture manufacturer borrowed a certain amount from a nationalized bank to expand its production unit. The loan was sanctioned at a fixed rate of simple interest. After 8 years, the total amount repaid was ₹7,20,000, which included ₹2,40,000 as interest. Had the company borrowed ₹1,50,000 more at the same rate and for the same duration, determine the total repayment amount.
+A: ₹8,66,000
+B: ₹9,45,000
+C: ₹7,22,000
+D: ₹6,66,000
+ANS: B
+
+Q.68: Pipe X can fill a tank in 16 minutes and pipe Y can fill it in in 24 minutes. A drainpipe Z can empty it in x minutes. All the three pipes are opened simultaneously at a particular point of time and after 8 minutes, pipe Z is closed. The tank becomes exactly full 4 minutes later. Find the time taken by pipe Z to empty the entirely filled tank alone.
+A: 25 minutes
+B: 28 minutes
+C: 30 minutes
+D: 32 minutes
+ANS: D
+
+Q.69: Two drones, Alpha and Beta, are tasked with mapping a large valley. Alpha can map the entire valley alone in 10 hrs of flight, while Beta alone can do that in 15 hours of flight. Alpha's battery lasts for exactly 2 hours of continuous flight, after which it requires 1 hour of recharge. Beta's battery lasts for 3 hours of continuous flight, after which it requires 2 hours of recharge. Both start the mapping at the same time in fully charged condition. How much time will it take to completely map the valley?
+A: 6 hrs
+B: 9 hrs
+C: 7 hrs
+D: 8 hrs
+ANS: D
+
+Q.70: If cos² θ= 1 and 0°≤θ≤90° , how many distinct values of θ satisfy this equation?
+A: 2
+B: 3
+C: 1
+D: 6
+ANS: C
+
+Q.71: Evaluate: tan 42°tan 48°−cot 48°cot 42°
+A: 1
+B: 0
+C: 2
+D: -1
+ANS: B
+
+Q.72: If a + b + c = 17 and ab + bc + ca = 21, what is the value of a³ + b³ + c³ - 3abc?
+A: 3100
+B: 3842
+C: 4022
+D: 5032
+ANS: B
+
+Q.73: If a + b = 17 and ab = 60, then find the value of (a-b)4.
+A: 83521
+B: 28561
+C: 49
+D: 2401
+ANS: D
+
+Q.74: A regular hexagonal prism has a base side length of 5 m and a height of 10 m. A regular hexagonal pyramid with a height of 4 m shares the top base of the prism. Find the total volume of the resulting composite solid.
+A: 425√3 m³
+B: 424√2 m³
+C: 354√2 m³
+D: 368√3 m³
+ANS: A
+
+Q.75: If a= √5 + 2√6 and b= √5 −2√6 , evaluate the value of the following expression: a6 + b6.
+A: 970
+B: 1000
+C: 1030
+D: 940
+ANS: A
+
+Q.76: Choose the correct transformation of the sentence into direct speech. She wondered if she should apply for the scholarship.
+A: She asked, "Do I apply for the scholarship?"
+B: She said, "Should I apply for the scholarship?"
+C: She wondered, "Will I apply for the scholarship?"
+D: She said, "I should apply for the scholarship."
+ANS: B
+
+Q.77: Rearrange the parts of the sentence in the correct order. The Nobel Prize in Literature P. for its powerful storytelling and deep philosophical insights Q. was awarded to the renowned author R. whose latest novel explores human resilience S. in the face of adversity and historical struggles
+A: PRSQ
+B: QRSP
+C: PRQS
+D: QSPR
+ANS: B
+
+Q.78: People who do not lay out their money carefully, soon come to grief. What does "come to grief" mean?
+A: To experience failure or trouble
+B: To become very rich
+C: To achieve great success
+D: To find unexpected luck
+ANS: A
+
+Q.79: Complete the sentence by choosing a suitable word to fill in the blank. That she, of all people, ____ the one to criticize others is baffling.
+A: are
+B: be
+C: were
+D: is
+ANS: D
+
+Q.80: Identify the word in this sentence that contains an error. He was accused for cheating in the final exam.
+A: cheating
+B: for
+C: accused
+D: final
+ANS: C
+
+Q.81: Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?
+
+1. Many birds migrate seasonally, traveling thousands of kilometers to find suitable breeding or feeding grounds.
+
+2. Scientists have discovered that birds use a combination of celestial navigation, Earth's magnetic field, and learned landmarks to guide their journeys.
+
+3. This behavior is often triggered by changes in daylight duration and temperature, signaling the need to relocate.
+
+4. Some species, such as the Arctic Tern, undertake the longest migration, covering distances between the Arctic and Antarctic.
+
+5. Understanding bird migration patterns is crucial for conservation efforts, as climate change and habitat destruction pose growing threats.
+A: 2-1-4-3-5
+B: 1-3-2-4-5
+C: 3-4-2-5-1
+D: 3-2-1-5-4
+ANS: A
+
+Q.82: Improve the sentence by selecting the appropriate preposition from the following options. We need to plan carefully to stay ____ of our competition.
+
+for (B)
+
+(C) beyond (D) ahead
+A: ![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-1_q82_opt_A.png)
+B: ![Option B](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-1_q82_opt_B.png)
+C: ![Option C](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-1_q82_opt_C.png)
+D: ![Option D](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-1_q82_opt_D.png)
+ANS: D
+
+Q.83: Which of the following is the correct definition of the word "protege"?
+A: A mentor or advisor
+B: A young person under the guidance of an older, more experienced person
+C: A person who offers help or support
+D: A competitor or rival
+ANS: D
+
+Q.84: Select the most appropriate antonym of the given word. Ignominious
+A: Honorable
+B: Shameful
+C: Disgraceful
+D: Infamous
+ANS: C
+
+Q.85: Choose the correct meaning of idiom: To kick against the pricks
+A: To act with excessive caution
+B: To challenge injustice successfully
+C: To resist futilely against authority
+D: To support power without question
+ANS: B
+
+Q.86: Spot the correct spelling of 'the process where particles form clumps or flocs'.
+A: Floculation
+B: Flocullation
+C: Flocculation
+D: Flokkulation
+ANS: C
+
+Q.87: Choose the correct one-word substitute for: 'Fear of the number thirteen'.
+A: Triskaidekaphobia
+B: Hexakosioihexekontahexaphobia
+C: Pyrophobia
+D: Aichmophobia
+ANS: A
+
+Q.88: Select the correct option: The grant allowed researchers to delve __ topics previously considered fringe.
+A: onto
+B: into
+C: in
+D: about
+ANS: D
+
+Q.89: Find the part of the sentence that contains an error: The judge not only dismissed the petition (1)/ but also reprimanding the lawyer (2)/ for misrepresenting facts (3)/ during the crossexamination. (4)
+A: (1)
+B: (2)
+C: (3)
+D: (4)
+ANS: B
+
+Q.90: Find the part of the sentence that contains an error: While the director had hoped for clarity, (1)/ what emerged instead were overlapping interpretations (2)/ that undermined the coherence (3)/ of the original draft. (4)
+A: (1)
+B: 2
+C: 3
+D: 4
+ANS: B
+
+Q.91: Change the following from active to passive: Who wrote this poem?
+A: By whom was this poem written?
+B: By whom is this poem written?
+C: By whom has this poem been written?
+D: By whom was this poem being written?
+ANS: A
+
+Q.92: Change the following from active to passive: The speaker's tone conveyed more than the actual words.
+A: More than the actual words were conveyed by the speaker's tone.
+B: The speaker's tone has conveyed more than just words.
+C: What was conveyed by the speaker was more than actual words.
+D: The speaker's tone was conveyed more than the actual words.
+ANS: A
+
+Q.93: A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The doctor said that no sooner had the treatment begun than the symptoms improved.
+A: "No sooner had the treatment begun than the symptoms improved," said the doctor.
+B: "As soon as the treatment began, symptoms improved," said the doctor.
+C: "No sooner the treatment began, the symptoms improved," said the doctor.
+D: "The symptoms improved once treatment began," said the doctor.
+ANS: A
+
+Q.94: Choose the most appropriate synonym of the underlined word. The instructions were ambiguous and caused confusion.
+A: Clear
+B: Certain
+C: Vague
+D: Exact
+ANS: C
+
+Q.95: In the following question, the first and last parts of the sentence (1 and 6) are given. The rest of the sentence is split into four parts and named A, B, C, and D. These four parts are not given in their proper order. Read the sentence and find out which of the four combinations is correct.
+
+1. Modern architects are increasingly A. to combat rising pollution B. designing vertical forests that C. integrate lush vegetation into D. high-rise residential buildings
+
+6. and improve the local biodiversity.
+A: ACDB
+B: BCDA
+C: DACB
+D: BADC
+ANS: B
+
+Q.96: **Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. As Dorothy and her companions approached the Emerald City, admiration was tempered by uneasiness. From afar, its towers gleamed like precious stones, creating an impression of extraordinary wealth. At the gate, however, every visitor was compelled to wear green spectacles. The Guardian claimed that the glasses protected the eyes from the city’s dazzling brilliance, but the travellers suspected a subtler purpose: the lenses might manipulate perception and make the city appear more magnificent than it actually was. Within the walls, green dominated every aspect of life. Buildings seemed to be made of green marble, emeralds glittered on the walls, citizens wore green garments, and even the goods in the shops conformed to the same carefully maintained colour scheme. The uniformity suggested not merely decoration, but deliberate control/appearances. Yet the splendour failed to quiet the travellers’ anxiety. Dorothy wished to return home, the Scarecrow sought intelligence, the Tin Woodman desired a heart, and the Lion longed for courage. Their private deficiencies mattered more than the city’s outward grandeur. Their hopes rested on the mysterious Wizard, although no citizen could clearly describe him. When informed that they would meet him separately, they felt increasingly vulnerable, for they had expected to draw courage from one another’s presence.
+
+---
+
+What did the compulsory use of green spectacles lead the travellers to suspect?
+A: The city was genuinely too bright for ordinary vision.
+B: Visitors were required to follow local customs unquestioningly.
+C: The Guardian intended to manipulate visitors’ perception of the city.
+D: The Guardian wanted to distinguish citizens from outsiders.
+ANS: C
+
+Q.97: **Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. As Dorothy and her companions approached the Emerald City, admiration was tempered by uneasiness. From afar, its towers gleamed like precious stones, creating an impression of extraordinary wealth. At the gate, however, every visitor was compelled to wear green spectacles. The Guardian claimed that the glasses protected the eyes from the city’s dazzling brilliance, but the travellers suspected a subtler purpose: the lenses might manipulate perception and make the city appear more magnificent than it actually was. Within the walls, green dominated every aspect of life. Buildings seemed to be made of green marble, emeralds glittered on the walls, citizens wore green garments, and even the goods in the shops conformed to the same carefully maintained colour scheme. The uniformity suggested not merely decoration, but deliberate control/appearances. Yet the splendour failed to quiet the travellers’ anxiety. Dorothy wished to return home, the Scarecrow sought intelligence, the Tin Woodman desired a heart, and the Lion longed for courage. Their private deficiencies mattered more than the city’s outward grandeur. Their hopes rested on the mysterious Wizard, although no citizen could clearly describe him. When informed that they would meet him separately, they felt increasingly vulnerable, for they had expected to draw courage from one another’s presence.
+
+---
+
+The phrase “admiration was tempered by uneasiness” means that the travellers’ admiration was:
+A: completely replaced by fear.
+B: reduced or restrained by anxiety.
+C: strengthened by uncertainty.
+D: concealed from the citizens.
+ANS: B
+
+Q.98: **Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. As Dorothy and her companions approached the Emerald City, admiration was tempered by uneasiness. From afar, its towers gleamed like precious stones, creating an impression of extraordinary wealth. At the gate, however, every visitor was compelled to wear green spectacles. The Guardian claimed that the glasses protected the eyes from the city’s dazzling brilliance, but the travellers suspected a subtler purpose: the lenses might manipulate perception and make the city appear more magnificent than it actually was. Within the walls, green dominated every aspect of life. Buildings seemed to be made of green marble, emeralds glittered on the walls, citizens wore green garments, and even the goods in the shops conformed to the same carefully maintained colour scheme. The uniformity suggested not merely decoration, but deliberate control/appearances. Yet the splendour failed to quiet the travellers’ anxiety. Dorothy wished to return home, the Scarecrow sought intelligence, the Tin Woodman desired a heart, and the Lion longed for courage. Their private deficiencies mattered more than the city’s outward grandeur. Their hopes rested on the mysterious Wizard, although no citizen could clearly describe him. When informed that they would meet him separately, they felt increasingly vulnerable, for they had expected to draw courage from one another’s presence.
+
+---
+
+What can be inferred from the uniform use of green throughout the city?
+A: Other colours were unavailable to the citizens.
+B: The city depended mainly on the emerald trade.
+C: The city promoted individuality among its citizens.
+D: The uniformity suggested deliberate control/appearances.
+ANS: D
+
+Q.99: **Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. As Dorothy and her companions approached the Emerald City, admiration was tempered by uneasiness. From afar, its towers gleamed like precious stones, creating an impression of extraordinary wealth. At the gate, however, every visitor was compelled to wear green spectacles. The Guardian claimed that the glasses protected the eyes from the city’s dazzling brilliance, but the travellers suspected a subtler purpose: the lenses might manipulate perception and make the city appear more magnificent than it actually was. Within the walls, green dominated every aspect of life. Buildings seemed to be made of green marble, emeralds glittered on the walls, citizens wore green garments, and even the goods in the shops conformed to the same carefully maintained colour scheme. The uniformity suggested not merely decoration, but deliberate control/appearances. Yet the splendour failed to quiet the travellers’ anxiety. Dorothy wished to return home, the Scarecrow sought intelligence, the Tin Woodman desired a heart, and the Lion longed for courage. Their private deficiencies mattered more than the city’s outward grandeur. Their hopes rested on the mysterious Wizard, although no citizen could clearly describe him. When informed that they would meet him separately, they felt increasingly vulnerable, for they had expected to draw courage from one another’s presence.
+
+---
+
+Why did the travellers feel vulnerable when asked to meet the Wizard separately?
+A: They believed that the Wizard would reject individual requests.
+B: They feared that the Guardian had deceived them.
+C: They would lose the emotional support of their companions.
+D: They had forgotten how to explain their personal needs.
+ANS: C
+
+Q.100: **Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. As Dorothy and her companions approached the Emerald City, admiration was tempered by uneasiness. From afar, its towers gleamed like precious stones, creating an impression of extraordinary wealth. At the gate, however, every visitor was compelled to wear green spectacles. The Guardian claimed that the glasses protected the eyes from the city’s dazzling brilliance, but the travellers suspected a subtler purpose: the lenses might manipulate perception and make the city appear more magnificent than it actually was. Within the walls, green dominated every aspect of life. Buildings seemed to be made of green marble, emeralds glittered on the walls, citizens wore green garments, and even the goods in the shops conformed to the same carefully maintained colour scheme. The uniformity suggested not merely decoration, but deliberate control/appearances. Yet the splendour failed to quiet the travellers’ anxiety. Dorothy wished to return home, the Scarecrow sought intelligence, the Tin Woodman desired a heart, and the Lion longed for courage. Their private deficiencies mattered more than the city’s outward grandeur. Their hopes rested on the mysterious Wizard, although no citizen could clearly describe him. When informed that they would meet him separately, they felt increasingly vulnerable, for they had expected to draw courage from one another’s presence.
+
+---
+
+Which statement best expresses the central idea of the passage?
+A: External magnificence may conceal uncertainty and manipulation.
+B: Friendship is valuable only in dangerous situations.
+C: Personal desires prevent people from appreciating beauty.
+D: Wealth and authority always produce fear among visitors.
+ANS: A

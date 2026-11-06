@@ -1,0 +1,902 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "Sentence: \"Reflections are clearer in calm waters.\" If each letter is mirrored using alphabetical symmetry (A↔Z, B↔Y...), what is the 2nd letter of the 6th word after mirroring?",
+    "option_a": "d",
+    "option_b": "x",
+    "option_c": "y",
+    "option_d": "z",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 2,
+    "question_text": "Choose the address that is exactly the same as the one given below. Flat 201, Sapphire Tower, Garia Station Rd., Kolkata, West Bengal - 700084",
+    "option_a": "Flat 201, Saphire Tower, Garia Station Rd., Kolkata, West Bengal - 700084",
+    "option_b": "Flat 201, Sapphire Tower, Garia Station Rd., Kolkata, West Bengal - 700084",
+    "option_c": "Flat 201, Sapphire Tower, Gariya Station Rd., Kolkata, West Bengal - 700084",
+    "option_d": "Flat 201, Sapphire Tower, Garia Station Road, Kolkata, West Bengal - 700084",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 3,
+    "question_text": "Which of the following alternative will fill the blanks? m_u_mg_p_gu_",
+    "option_a": "g,p,u,m,p",
+    "option_b": "g,p,u,p,m",
+    "option_c": "p,u,u,p,m",
+    "option_d": "p,p,u,m,g",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 4,
+    "question_text": "Select the letter-cluster from among the given options that can replace the question mark (?) in the following series: GBDF, GHMR, GNVD, GTEP, ?",
+    "option_a": "G Z M B",
+    "option_b": "G Z N C",
+    "option_c": "G Z N B",
+    "option_d": "G Y N B",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 5,
+    "question_text": "If 'Z' denotes 'addition', 'x' denotes 'multiplication', 'Y' denotes 'division', and 'W' denotes 'subtraction', then what will be the value of the following expression? 3.2 Z (0.56 Y 1.4 X 4) W 5 X 5 Y 25 Z 5.",
+    "option_a": "6.9",
+    "option_b": "8.8",
+    "option_c": "8.6",
+    "option_d": "9.8",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 6,
+    "question_text": "Find the odd one out:",
+    "option_a": "A@1A,",
+    "option_b": "B@2B,",
+    "option_c": "C@4C,",
+    "option_d": "D@4D",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 7,
+    "question_text": "What will come at the place of question mark? 1, 3, 7, 15, 31, ?",
+    "option_a": "62",
+    "option_b": "63",
+    "option_c": "64",
+    "option_d": "65",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 8,
+    "question_text": "Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option. Statement: Deforestation in tropical rainforests, primarily driven by agricultural expansion and logging, not only contributes to the loss of biodiversity but also exacerbates global warming by reducing the Earth's capacity to absorb carbon dioxide. Assumptions: I. Deforestation reduces the Earth's ability to absorb carbon dioxide. II. Agricultural expansion and logging are the primary causes of deforestation. III. The loss of biodiversity is the most significant consequence of deforestation.",
+    "option_a": "Only I and II are implicit",
+    "option_b": "Only II and III are implicit",
+    "option_c": "Only I is implicit",
+    "option_d": "All I, II and III are implicit",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 9,
+    "question_text": "Read the following statement carefully and identify the conclusion that follows. Statement: The city experienced its worst rainfall in 50 years. Conclusions: I. The city's drainage systems may have failed. II. Such rainfall occurs regularly.",
+    "option_a": "Only Conclusion I follows",
+    "option_b": "Only Conclusion II follows",
+    "option_c": "Both I and II follow",
+    "option_d": "Neither I nor II follows",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 10,
+    "question_text": "How many meaningful four-letter English words can be formed using the first, second, third, and fifth letters of the word \"TRAVEL\" (when counted from left to right), using each letter only once in each word?",
+    "option_a": "One",
+    "option_b": "Three",
+    "option_c": "Two",
+    "option_d": "Five",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 11,
+    "question_text": "In the following question, a pair of letters is given, followed by its corresponding product of alphabetical positions (A = 1, B = 2, ..., Z = 26). A second pair of letters is given without its product. Identify the correct product for the second pair that maintains the same relationship as the first. N x P : 14 x 16 :: E x I : ?",
+    "option_a": "5×9",
+    "option_b": "6×9",
+    "option_c": "5×10",
+    "option_d": "6×8",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 12,
+    "question_text": "Complete the series. Z1, Y2, X3, W4, ?",
+    "option_a": "V5",
+    "option_b": "V4",
+    "option_c": "U5",
+    "option_d": "X5",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 13,
+    "question_text": "Find the odd one out from the given alternatives:",
+    "option_a": "Article 14",
+    "option_b": "Article 19",
+    "option_c": "Article 21",
+    "option_d": "Article 370",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 14,
+    "question_text": "A is the daughter of B. B is the son of C. D is the wife of C. How is D related to A?",
+    "option_a": "Aunt",
+    "option_b": "Mother",
+    "option_c": "Grandmother",
+    "option_d": "Sister",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 15,
+    "question_text": "If 3 + 4 = 19 and 2 + 5 = 17, what is 1 + 6 = ?",
+    "option_a": "15",
+    "option_b": "13",
+    "option_c": "12",
+    "option_d": "11",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 16,
+    "question_text": "In a certain code language, each letter is assigned a unique digit. Based on the given codes for specific words, determine the code for the target word using the same logic. If SPEED is coded as 83551 and COOL is coded as 9226, then how will SCOOP be coded",
+    "option_a": "89213",
+    "option_b": "89276",
+    "option_c": "89223",
+    "option_d": "89327",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 17,
+    "question_text": "If 5 * 4 = 41 and 6 * 3 = 45, what is 7 * 2?",
+    "option_a": "48",
+    "option_b": "51",
+    "option_c": "53",
+    "option_d": "55",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 18,
+    "question_text": "If 'READ' is coded as T2@3, and 'DEAR' is coded as 3@2T, then what is the code for 'DARE'?",
+    "option_a": "3@T2",
+    "option_b": "T@23",
+    "option_c": "@32T",
+    "option_d": "@32Y",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 19,
+    "question_text": "What is the average of 5 consecutive odd numbers starting from 13?",
+    "option_a": "17",
+    "option_b": "18",
+    "option_c": "20",
+    "option_d": "23",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 20,
+    "question_text": "If the given symbols mean: '+' means 'divided by' '-' means 'multiplied by' 'x' means 'minus' '÷' means 'plus' Then, find the value of the following expressions: 40 x 5 ÷ 8 + 16 - 2=?",
+    "option_a": "56",
+    "option_b": "27",
+    "option_c": "48",
+    "option_d": "36",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 21,
+    "question_text": "Pointing to a photograph, a man says, \"She is the daughter of the only son of my father's wife\". Who is the woman to the man?",
+    "option_a": "Sister",
+    "option_b": "Cousin",
+    "option_c": "Niece",
+    "option_d": "Daughter",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 22,
+    "question_text": "If 'x' = '+', '+' = '-', '-' = '÷', '÷' = 'x', which equation is correct?",
+    "option_a": "10 + 2 x 2 - 4 = 10",
+    "option_b": "14 ÷ 2 - 2 + 4 = 10",
+    "option_c": "12 x 2 + 4 - 1 = 27",
+    "option_d": "8 + 4 - 2 x 1 = 10",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 23,
+    "question_text": "Read the following statements and evaluate the conclusions based on traditional syllogistic logic. Consider the statements to be absolutely true, even if they appear contrary to known facts. Determine which conclusion(s) logically follow from the given statements. Statements: All metals are elements. Some elements are gases. Conclusions: I. Some metals are gases. II. All gases being elements is a possibility.",
+    "option_a": "Only Conclusion II follows",
+    "option_b": "Both I and II follow",
+    "option_c": "Only Conclusion I follows",
+    "option_d": "Neither I nor II follows",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 24,
+    "question_text": "If '+' means 'x', '-' means '÷', 'x' means '+', then 4 – 2 × 3 + 6 = ?",
+    "option_a": "12",
+    "option_b": "6",
+    "option_c": "5",
+    "option_d": "20",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 25,
+    "question_text": "The ratio of two numbers is 4:5 and their sum is 180. Find the numbers.",
+    "option_a": "60 and 75",
+    "option_b": "72 and 108",
+    "option_c": "80 and 100",
+    "option_d": "64 and 116",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 26,
+    "question_text": "What feature was used on Golconda Fort's gates to protect it during attacks involving war elephants?",
+    "option_a": "Deep moat with water channels",
+    "option_b": "Electrified spikes",
+    "option_c": "Steel spikes on doors",
+    "option_d": "Stone cannon towers",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 27,
+    "question_text": "Which of the following best captures the core rituals and symbolism of the Fagli (Kus/Kuns) festival in Pattan Valley?",
+    "option_a": "Baraza, symbolizing Shikhara-Appa, is made with marigold and turmeric and placed at village shrines.",
+    "option_b": "Punha involves symbolic ploughing indoors using willow sticks, reflecting farming hopes during snow.",
+    "option_c": "Totu, made of wheat and honey, is offered on rooftops to priests, then fed to goats.",
+    "option_d": "Kwari sweets are made by elder women for temple offerings, as men chant to crow spirits.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 28,
+    "question_text": "Determine the correctly matched Gupta fiscal term with its meaning.",
+    "option_a": "Hiranya - compulsory labour service",
+    "option_b": "Dhanya - gold tax",
+    "option_c": "Bhoga - king's share of produce",
+    "option_d": "Vaishthika - forced or corvée labour",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 29,
+    "question_text": "Which musical instrument from Sikkim is believed to have been the first created for the deity Tetlara Lahadongna, and is associated with mythological origins?",
+    "option_a": "Niyara Hongsing Ke",
+    "option_b": "Simikla Koom (Binayo)",
+    "option_c": "Yema Dhol",
+    "option_d": "Nagara of Yeba",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 30,
+    "question_text": "Karnam Malleswari became the first Indian woman to win an Olympic medal in which sporting discipline?",
+    "option_a": "Boxing",
+    "option_b": "Athletics",
+    "option_c": "Weightlifting",
+    "option_d": "Long Jump",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 31,
+    "question_text": "Match each ruler listed in Column A with their respective period of reign given in Column B: Column A: Ruler Column B: Reign Period A. Qutbuddin Aybak 1. 1175-1192 B. Prithviraj Chauhan 2. 1206-1210 C. Alauddin Khalji 3. 1296-1316 D. Muhammad Tughluq 4. 1324-1351",
+    "option_a": "A → 1, B → 2, C → 3, D → 4",
+    "option_b": "A → 1, B → 4, C → 3, D → 2",
+    "option_c": "A → 2, B → 1, C → 3, D → 4",
+    "option_d": "A → 4, B → 3, C → 2, D → 4",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 32,
+    "question_text": "Fill in the blanks: At the 1984 Summer Olympics, P. T. Usha narrowly missed a bronze medal by ____ of a second.",
+    "option_a": "One-hundredth",
+    "option_b": "One-tenth",
+    "option_c": "One-thousandth",
+    "option_d": "One-fiftyth",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 33,
+    "question_text": "Fill in the Blank: During India's BRICS Chairship in 2021, key initiatives included the Digital Health Summit and the ____ for environmental cooperation.",
+    "option_a": "BRICS Water Security Pact",
+    "option_b": "BRICS Alliance for Green Tourism",
+    "option_c": "BRICS Climate Finance Agreement",
+    "option_d": "BRICS Sustainable Energy Forum",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 34,
+    "question_text": "Who wrote 'Indica: A Deep Natural History of the Indian Subcontinent'?",
+    "option_a": "Sanjeev Sanyal",
+    "option_b": "Pranay Lal",
+    "option_c": "Rohan Murty",
+    "option_d": "Tony Joseph",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 35,
+    "question_text": "Which of the following about the men's hockey event at the 38th National Games 2025 is/are correct? 1.) Karnataka beat Uttar Pradesh 3-2 in the final. 2.) Karnataka vs Maharashtra semifinal ended 2-2, decided by shootout. 3.) Punjab won bronze by defeating Maharashtra 1-0.",
+    "option_a": "Both 1 and 2 are correct",
+    "option_b": "Both 1 and 3 are correct",
+    "option_c": "Both 2 and 3 are correct",
+    "option_d": "1, 2 and 3 all are Correct",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 36,
+    "question_text": "What initiative did Dr. Jitendra Singh launch in May 2025 as MoS PMO and MoS Personnel?",
+    "option_a": "National Grievance Redress Portal",
+    "option_b": "e-Civil List 2025 e-book",
+    "option_c": "Central Police Commemoration Day",
+    "option_d": "Digital Land Records Survey",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 37,
+    "question_text": "Uttar Pradesh accounted for approximately what percent of India's total population in 2011?",
+    "option_a": "10%",
+    "option_b": "12%",
+    "option_c": "16%",
+    "option_d": "18%",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 38,
+    "question_text": "What does the designation HLVM3 stand for in the Gaganyaan mission context?",
+    "option_a": "Heavy LVM3",
+    "option_b": "Hybrid LVM3",
+    "option_c": "Human LVM3",
+    "option_d": "High LVM3",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 39,
+    "question_text": "Which of the following minerals is found in large quantities in India and holds high economic importance?",
+    "option_a": "Copper",
+    "option_b": "Petroleum",
+    "option_c": "Iron ore",
+    "option_d": "Tin",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 40,
+    "question_text": "Consider the following statements: 1) Both the Prime Minister (PM) and Chief Minister (CM) can advise dissolution of the respective Lower House. 2) Only the PM can recommend President's Rule under Article 356 of the Constitution. Which of the statements is/are correct?",
+    "option_a": "Only 1",
+    "option_b": "Only 2",
+    "option_c": "Both 1 and 2",
+    "option_d": "Neither 1 nor 2",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 41,
+    "question_text": "Which of the following pairs of type of nutrient - nutrient is correctly matched?",
+    "option_a": "Micronutrient - Calcium",
+    "option_b": "Macronutrient - Zinc",
+    "option_c": "Micronutrient - Boron",
+    "option_d": "Macronutrient - Iron",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 42,
+    "question_text": "Which of the following pairs is correctly matched regarding electromagnetic devices?",
+    "option_a": "Electric Generator : Converts electrical energy to mechanical energy.",
+    "option_b": "Transformer : Operates on DC current to change voltage.",
+    "option_c": "Electromagnet : A permanent magnet.",
+    "option_d": "Electric Bell : Uses the magnetic effect of electric current.",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 43,
+    "question_text": "Read the below statements marked as Assertion (A) and Reason (R). Mark the correct options: Assertion (A): Mission Amrit Sarovar promotes water conservation. Reason (R): It aims to construct 75 ponds in each district by 2024.",
+    "option_a": "Both A and R are true, and R is the correct explanation of A",
+    "option_b": "Both A and R are true, but R is not the correct explanation of A",
+    "option_c": "A is true, but R is false",
+    "option_d": "A is false, but R is true",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 44,
+    "question_text": "Consider the statements about Rauf: 1. It is a women's group dance of Kashmir usually performed at Eid. 2. Dancers align in two facing rows executing toe-heel footwork called ras. Which is/are correct?",
+    "option_a": "Only 1 correct",
+    "option_b": "Only 2 correct",
+    "option_c": "Both 1 & 2 correct",
+    "option_d": "Neither 1 nor 2 correct",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 45,
+    "question_text": "Read the below statements marked as Assertion (A) and Reason (R). Mark the correct options: Assertion (A): India's rank in the Global Happiness Index is lower than most South Asian neighbours. Reason (R): India's GDP per capita is the lowest in South Asia.",
+    "option_a": "Both A and R are true, and R is the correct explanation of A.",
+    "option_b": "Both A and R are true, but R is not the correct explanation of A.",
+    "option_c": "A is true, but R is false.",
+    "option_d": "A is false, but R is true.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 46,
+    "question_text": "Which Indian river was added to the National River Conservation Plan in 2024?",
+    "option_a": "Yamuna",
+    "option_b": "Musi",
+    "option_c": "Krishna",
+    "option_d": "Gomti",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 47,
+    "question_text": "Article 50 is part of which section of the Constitution?",
+    "option_a": "Fundamental Duties",
+    "option_b": "Directive Principles of State Policy",
+    "option_c": "Fundamental Rights",
+    "option_d": "Preamble",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 48,
+    "question_text": "Arrange the following in chronological order: 1. GST Council constituted 2. Constitution (101st Amendment) Act enacted 3. GST launched Choose the correct chronological sequence:",
+    "option_a": "1-2-3",
+    "option_b": "2-1-3",
+    "option_c": "3-2-1",
+    "option_d": "2-3-1",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 49,
+    "question_text": "Read the following Assertion (A) and Reason (R) carefully and choose the correct option. Assertion (A): The IPR 1956 created an industrial classification into Schedules A, B, and C. Reason (R): This was to identify sectors for exclusive state control, joint sectors, and private sector operation.",
+    "option_a": "Both A and R are true and R is the correct explanation of A.",
+    "option_b": "Both A and R are true but R is not the correct explanation of A.",
+    "option_c": "A is true but R is false.",
+    "option_d": "A is false but R is true.",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 50,
+    "question_text": "Regarding Earth's major climatic zones: 1. Tropical zones experience minimal seasonal temperature variation 2. Temperate zones are characterized by four distinct seasons. Which of the above is/are correct?",
+    "option_a": "Statement 1 only",
+    "option_b": "Statement 2 only",
+    "option_c": "Both 1 and 2",
+    "option_d": "Neither 1 nor 2",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 51,
+    "question_text": "If P : Q = 6 : 11, Q : R = 5 : 4, and R : S = 9 : 7, find P : Q : R : S.",
+    "option_a": "270 : 495 : 396 : 308",
+    "option_b": "6 : 11 : 4 : 7",
+    "option_c": "30 : 55 : 44 : 35",
+    "option_d": "270 : 396 : 495 : 308",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 52,
+    "question_text": "A bag contains ₹10, ₹5, and ₹2 coins in the ratio 1 : 2 : 3. If the total amount of money in the bag is ₹390, find the number of coins of each kind.",
+    "option_a": "10 coins of ₹10, 20 of ₹5, and 30 of ₹2",
+    "option_b": "15 coins of ₹10, 30 of ₹5, and 45 of ₹2",
+    "option_c": "20 coins of ₹10, 40 of ₹5, and 60 of ₹2",
+    "option_d": "12 coins of ₹10, 24 of ₹5, and 36 of ₹2",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 53,
+    "question_text": "A tank holds 5¾ liters of water. If 2.375 liters are drained twice, how much water remains?",
+    "option_a": "1 liter",
+    "option_b": "1.5 liters",
+    "option_c": "2 liters",
+    "option_d": "0.5 liters",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 54,
+    "question_text": "Simplify: [Algebraic expression omitted in source official exam PDF]",
+    "option_a": "[Option A omitted in source key]",
+    "option_b": "[Option B omitted in source key]",
+    "option_c": "[Option C omitted in source key]",
+    "option_d": "[Option D omitted in source key]",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 55,
+    "question_text": "Simplify: [Algebraic expression omitted in source official exam PDF]",
+    "option_a": "[Option A omitted in source key]",
+    "option_b": "[Option B omitted in source key]",
+    "option_c": "[Option C omitted in source key]",
+    "option_d": "[Option D omitted in source key]",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 56,
+    "question_text": "A and B invested in a business in the ratio 5:6. The profit ratio was 10:9. If B invested his money for 12 months, for how many months did A invest?",
+    "option_a": "15 months",
+    "option_b": "16 months",
+    "option_c": "17 months",
+    "option_d": "18 months",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 57,
+    "question_text": "The average of 9 numbers is 56. When one number is removed, the average becomes 54. What number was removed?",
+    "option_a": "52",
+    "option_b": "72",
+    "option_c": "82",
+    "option_d": "92",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 58,
+    "question_text": "Table - Weekly Fuel Usage (litres) Vehicle Mon Tue Wed Thu Fri Truck 1 18 20 22 21 19 Truck 2 25 24 26 23 24 Q: What is the overall average daily fuel usage for both trucks?",
+    "option_a": "27 litres",
+    "option_b": "22.2 litres",
+    "option_c": "28 litres",
+    "option_d": "21.5 litres",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 59,
+    "question_text": "A sum becomes ₹12100 in 2 years at 10% Compound Interest annually. Find the principal.",
+    "option_a": "₹10000",
+    "option_b": "₹11000",
+    "option_c": "₹11500",
+    "option_d": "₹10500",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 60,
+    "question_text": "A grocer purchased 50 kg of rice at ₹40 per kg and 20 kg of another variety of rice at ₹55 per kg. He mixed the two varieties and sold the entire mixture at ₹48 per kg. Find his total profit or loss in this transaction.",
+    "option_a": "Loss of ₹260",
+    "option_b": "Loss of ₹240",
+    "option_c": "Profit of ₹260",
+    "option_d": "Loss of ₹290",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 61,
+    "question_text": "A television set has a marked price of ₹ 20,000. It is sold after two successive discounts. If the first discount is 15% and the final selling price is ₹ 15,300, what is the percentage of the second discount?",
+    "option_a": "10%",
+    "option_b": "12%",
+    "option_c": "14%",
+    "option_d": "15%",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 62,
+    "question_text": "A manufacturer marked a product 30% above its cost price. He provided a discount to a customer, which resulted in him making a profit of 17%. What was the rate of discount given by the manufacturer?",
+    "option_a": "24%",
+    "option_b": "50%",
+    "option_c": "60%",
+    "option_d": "10%",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 63,
+    "question_text": "Two containers, A and B, contain mixtures of alcohol and water. Container A has alcohol and water in the ratio 4:1, while Container B has them in the ratio 5:2. If 10 liters are drawn from Container A and 14 liters from Container B, and the contents are mixed in a third container, what is the ratio of alcohol to water in the new mixture?",
+    "option_a": "3:1",
+    "option_b": "7:2",
+    "option_c": "9:4",
+    "option_d": "11:3",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 64,
+    "question_text": "If the radius of a sphere is increased to twice its original size, what is the ratio of the new surface area to the original surface area, as well as the proportion of the new volume to the original volume?",
+    "option_a": "4:1 and 2:1",
+    "option_b": "4:1 and 8:1",
+    "option_c": "8:1 and 4:1",
+    "option_d": "2:1 and 4:1",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 65,
+    "question_text": "A hemisphere and a cone share the same base and have equal volumes. Given that their common radius is R, determine the height of the cone.",
+    "option_a": "2R",
+    "option_b": "R",
+    "option_c": "5R",
+    "option_d": "4R",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 66,
+    "question_text": "A solid hemisphere of radius 10 cm is melted into two cones of equal height. If each cone's radius is 5 cm, what is the height of each cone?",
+    "option_a": "40 cm",
+    "option_b": "45 cm",
+    "option_c": "50 cm",
+    "option_d": "55cm",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 67,
+    "question_text": "If base perimeter = 40 cm, slant height = 10 cm, what is lateral surface area of square pyramid?",
+    "option_a": "260 cm²",
+    "option_b": "200 cm²",
+    "option_c": "400 cm²",
+    "option_d": "432 cm²",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 68,
+    "question_text": "Two circular pizzas have radii in the ratio 2:3. If the smaller pizza has an area of 100π cm², what is the area of the larger pizza?",
+    "option_a": "265π cm²",
+    "option_b": "225π cm²",
+    "option_c": "215π cm²",
+    "option_d": "250π cm²",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 69,
+    "question_text": "In a triangle ABC, medians AD and BE intersect at G. If the length of median AD is 12 cm, what is the length of the segment AG?",
+    "option_a": "4 cm",
+    "option_b": "6 cm",
+    "option_c": "8 cm",
+    "option_d": "9 cm",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 70,
+    "question_text": "Two right-angled triangular blocks, ABC and DEF, have ∠B=∠E=90 °. If the lengths of the hypotenuses AC and DF are equal, and the sides AB and DE are equal, are the triangles congruent? If so, by what rule?",
+    "option_a": "Yes, by SSS",
+    "option_b": "Yes, by SAS",
+    "option_c": "Yes, by RHS",
+    "option_d": "Yes, by ASA",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 71,
+    "question_text": "A right triangle ABC is inscribed in a circle with a diameter of 10 cm. An altitude BD is drawn from the vertex B to the hypotenuse AC. If the length of the leg AB is 6 cm, what is the length of the segment AD?",
+    "option_a": "3.6 cm",
+    "option_b": "4 cm",
+    "option_c": "4.8 cm",
+    "option_d": "6 cm",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 72,
+    "question_text": "Two circles intersect at two points. Which of the following statements is true?",
+    "option_a": "The internal tangent is longer than the external tangent",
+    "option_b": "Only two common tangents exist",
+    "option_c": "The number of tangents depends on radii",
+    "option_d": "They must be concentric",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 73,
+    "question_text": "Two circles with radii r1 and r2 touch each other externally. If the length of their direct common tangent is T, which of the following is the correct relationship between T, r1, and r2?",
+    "option_a": "T = √(r1 · r2)",
+    "option_b": "T = 2(r1 + r2)",
+    "option_c": "T = 2√(r1 · r2)",
+    "option_d": "T = r1 + r2",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 74,
+    "question_text": "A chord of a circle has a length of 12 cm. The angle subtended by the chord at a point on the circumference is 30°. What is the distance from the center of the circle to the chord?",
+    "option_a": "6√3 cm",
+    "option_b": "3√3 cm",
+    "option_c": "6 cm",
+    "option_d": "3 cm",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 75,
+    "question_text": "What is the area of the segment formed by a chord in a circle of radius 8 cm, if the angle subtended at the center is 60°?",
+    "option_a": "(32π/3 - 16√3) cm²",
+    "option_b": "(32π/3 - 8√3) cm²",
+    "option_c": "(16π/3 - 16√3) cm²",
+    "option_d": "(64π/3 - 16√3) cm²",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 76,
+    "question_text": "Select the most appropriate synonym of the given word: ILLUMINATE",
+    "option_a": "Explain",
+    "option_b": "Darken",
+    "option_c": "Destroy",
+    "option_d": "Hide",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 77,
+    "question_text": "Select the most appropriate antonym of the given word. Demur",
+    "option_a": "Agree",
+    "option_b": "Oppose",
+    "option_c": "Object",
+    "option_d": "Resist",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 78,
+    "question_text": "Choose the correct meaning of idiom: Eat humble pie",
+    "option_a": "To demand an apology",
+    "option_b": "To celebrate one's success",
+    "option_c": "To accept insult or defeat gracefully",
+    "option_d": "To prepare for failure",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 79,
+    "question_text": "Select the most appropriate antonym of the given word. Zany",
+    "option_a": "Sensible",
+    "option_b": "Bizarre",
+    "option_c": "Clownish",
+    "option_d": "Eccentric",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 80,
+    "question_text": "Spot the correct spelling of weather science.",
+    "option_a": "Meterology",
+    "option_b": "Meteorology",
+    "option_c": "Meteorologie",
+    "option_d": "Metereology",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 81,
+    "question_text": "Choose the correct one-word substitution for: 'A general pardon granted by a government'.",
+    "option_a": "Amnesty",
+    "option_b": "Reprieve",
+    "option_c": "Clemency",
+    "option_d": "Parole",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 82,
+    "question_text": "Choose the correct one-word substitute for: 'A secret or disguised way of writing'.",
+    "option_a": "Cipher",
+    "option_b": "Epistle",
+    "option_c": "Diatribe",
+    "option_d": "Manuscript",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 83,
+    "question_text": "Choose the correct phrasal verb: The issue was so delicate that she chose to ____ it altogether.",
+    "option_a": "brush aside",
+    "option_b": "walk into",
+    "option_c": "shy away from",
+    "option_d": "lean over",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 84,
+    "question_text": "Select the correct option: The artifact was notable not merely for its age but also for the ____ with which it was preserved.",
+    "option_a": "meticulousness",
+    "option_b": "velocity",
+    "option_c": "brevity",
+    "option_d": "severity",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 85,
+    "question_text": "Find the part of the sentence that contains an error: The company needs a detailed feedback (1)/ from all departments (2)/ before finalising its restructuring plan (3)/ for the upcoming fiscal year. (4)/",
+    "option_a": "1",
+    "option_b": "2",
+    "option_c": "3",
+    "option_d": "4",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 86,
+    "question_text": "Change the following from active to passive: The team will be revising the algorithms during the workshop.",
+    "option_a": "The algorithms were being revised during the workshop.",
+    "option_b": "The algorithms will be been revised during the workshop.",
+    "option_c": "The algorithms will be revised during the workshop.",
+    "option_d": "The algorithms will be being revised during the workshop.",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 87,
+    "question_text": "Find the part of the sentence that contains an error: Not only the minister but also the bureaucrats (1)/ has been accused of manipulating (2)/ the data presented in the economic survey (3)/ to align with political interests. (4)",
+    "option_a": "1",
+    "option_b": "2",
+    "option_c": "3",
+    "option_d": "4",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 88,
+    "question_text": "Select the sentence containing the homonym of the highlighted word: The architect discussed the vault beneath the cathedral.",
+    "option_a": "The gymnast performed a perfect vault over the horse.",
+    "option_b": "The treasury vault was secured with biometric locks.",
+    "option_c": "The earthquake cracked the stone vault supporting the nave.",
+    "option_d": "The nobles were interred in the family vault.",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 89,
+    "question_text": "Convert the sentence provided below from its passive voice structure to an active voice structure: The children were made to apologize by the principal for their behavior.",
+    "option_a": "The principal was made to apologize to the children.",
+    "option_b": "The principal had made the children apologize.",
+    "option_c": "The principal made the children apologize for their behavior.",
+    "option_d": "The principal was apologizing to the children for their behavior.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 90,
+    "question_text": "PASSAGE (Q.90 - Q.94) Read the following passage and answer the questions based on the passage : In the labyrinth of globalization, where intercontinental dialogues shape diplomacy, business, and social cohesion, the intricate terrain of cross-cultural communication remains one of the most formidable cognitive frontiers. Misunderstandings often arise not from lexical deficiencies but from semiotic dissonance—where gestures, silences, intonations, or proxemics are interpreted through incongruent cultural lenses. The assumption that language fluency equates to communicative efficacy is a pernicious fallacy; in reality, fluency may obfuscate cultural asymmetries, allowing misinterpretation to masquerade as comprehension. In high-context cultures—such as Japan or the Arab world—communication is embedded in relational nuance, tacit implications, and communal hierarchies. Conversely, low-context cultures like Germany or the United States prioritize explicitness, objectivity, and individual clarity. When interlocutors from these paradigms converge, the mismatch can generate diplomatic friction, transactional inefficiency, or interpersonal alienation. Even seemingly innocuous behaviors—eye contact, turn-taking, or humor—can catalyze discomfort when interpreted through a monocultural lens. Furthermore, the cognitive filters individuals deploy—shaped by education, tradition, and sociopolitical conditioning—often reinforce in-group validation while relegating unfamiliar communication styles to categories of deviance or incompetence. This ethnocentric predisposition exacerbates stereotyping, reduces empathetic bandwidth, and curtails the potential for collaborative synergy. Technology, while ostensibly bridging geographic divides, further complicates intercultural interaction. Emojis, for instance, are semantically fluid; a single icon may evoke warmth in one culture and sarcasm in another. Algorithmic translation, lacking context- sensitivity, risks converting diplomatic nuance into semantic absurdity. Even video conferencing flattens paralinguistic cues vital to cross-cultural understanding. Ultimately, transcending these communicative chasms demands metacognitive vigilance, cultural humility, and dialogic adaptability. Effective intercultural communicators do not merely learn linguistic syntax but cultivate cultural empathy, interrogate their own perceptual frameworks, and develop a tolerance for ambiguity. It is within this cognitive dissonance that the richest intercultural growth unfolds—not through the elimination of difference, but through its embrace. What is the tone of the passage?",
+    "option_a": "Didactic",
+    "option_b": "Celebratory",
+    "option_c": "Analytical",
+    "option_d": "Flippant",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 91,
+    "question_text": "Which of the following best illustrates a paradox mentioned in the passage?",
+    "option_a": "Technology enables cross-cultural empathy.",
+    "option_b": "Emojis unify people emotionally across cultures.",
+    "option_c": "Fluency in language can still lead to miscommunication.",
+    "option_d": "Humor is universally interpreted.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 92,
+    "question_text": "The phrase \"semiotic dissonance\" most likely refers to:",
+    "option_a": "Discord in musical structure.",
+    "option_b": "Misinterpretation of cultural symbols and signs.",
+    "option_c": "Breakdown in Wi-Fi or digital signals.",
+    "option_d": "Agreement over symbolic meaning.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 93,
+    "question_text": "Why might technology worsen intercultural communication, as per the author?",
+    "option_a": "It amplifies real-time interaction.",
+    "option_b": "It removes the need for shared language.",
+    "option_c": "It flattens important non-verbal cues and misrepresents meaning.",
+    "option_d": "It encourages spontaneous expression.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 94,
+    "question_text": "Which of the following metaphors best captures the overall argument of the passage?",
+    "option_a": "A bridge that never meets the other side.",
+    "option_b": "A mirror reflecting only half the image.",
+    "option_c": "A labyrinth filled with shifting doors.",
+    "option_d": "A ladder leading to one clear peak.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 95,
+    "question_text": "Choose the most suitable option to replace the highlighted part of the sentence: We enjoyed very much at the party.",
+    "option_a": "have enjoyed very much",
+    "option_b": "enjoyed ourselves very much",
+    "option_c": "enjoyed at the party",
+    "option_d": "were enjoyed",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 96,
+    "question_text": "Choose the most suitable option to replace the highlighted part of the sentence: Neither the manager nor the employees was available.",
+    "option_a": "was not available",
+    "option_b": "were also available",
+    "option_c": "were available",
+    "option_d": "was also not available",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 97,
+    "question_text": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. She said, \"I can solve this problem.\"",
+    "option_a": "She said that she will solve that problem.",
+    "option_b": "She said that she could solve this problem.",
+    "option_c": "She said that she could solve that problem.",
+    "option_d": "She said she can solve the problem.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 98,
+    "question_text": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. She said that she used to play the violin when she was young.",
+    "option_a": "\"I played the violin when I was young,\" she said.",
+    "option_b": "\"I use to play the violin when I was young,\" she said.",
+    "option_c": "\"I used to play the violin when I was young,\" she said.",
+    "option_d": "\"I was playing the violin when I was young,\" she said.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 99,
+    "question_text": "Rearrange the following sentences to form a coherent paragraph:1. This occurs because the cooling liquid traps the internal heat, preventing a standard crystal structure from forming. 2. The resulting substance is an amorphous solid, possessing the molecular disorder of a fluid but the physical rigidity of a crystal. 3. Rapid thermal quenching is the primary method used to bypass the natural crystallization process of certain alloys. 4. Such structural irregularity gives the material unique properties, such as extreme strength and corrosion resistance.",
+    "option_a": "2, 4, 3, 1",
+    "option_b": "2, 3, 4, 1",
+    "option_c": "3, 2, 4, 1",
+    "option_d": "3, 1, 2, 4",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 100,
+    "question_text": "Rearrange the following sentences to form a coherent paragraph: 1. This is especially useful in software development, where multiple programmers can work on the same codebase simultaneously without conflict. 2. Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. 3. The process involves a specific set of tools and commands that allow for the manipulation and tracking of changes. 4. By using version control, a project can maintain a complete history of its development, allowing for easy rollback and collaboration.",
+    "option_a": "2, 4, 3, 1",
+    "option_b": "2, 3, 4, 1",
+    "option_c": "3, 2, 4, 1",
+    "option_d": "4, 1, 2, 3",
+    "correct_answer": "A"
+  }
+]

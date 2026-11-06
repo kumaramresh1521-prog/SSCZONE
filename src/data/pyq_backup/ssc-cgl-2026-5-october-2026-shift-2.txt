@@ -1,0 +1,780 @@
+Q.1: In the following question, select the related word from the given alternatives. Doctor : Diagnosis :: Judge : ?
+A. Verdict
+B. Lawyer
+C. Argument
+D. Law
+Answer: A
+
+Q.2: A seminar was held each day from 11th to 18th Feb in the following sequence: Raipur, Patna, Jamshedpur, Rourkela, Durgapur, Warangal, Tiruchirappalli, Calicut. How many days after the seminar in Patna did the seminar in Warangal occur?
+A. 5 days
+B. 2 days
+C. 3 days
+D. 4 days
+Answer: D
+
+Q.3: If M = 13, O = 15, Q = 17, then S = ?
+A. 19
+B. 18
+C. 20
+D. 21
+Answer: A
+
+Q.4: Given in the table are the number codes for the given letters. Select the combination of numbers so that the letters arranged accordingly will form a meaningful word. 1 2 3 4 5 6 A E C R T U
+A. 3, 4, 2, 1, 5, 6, 6, 2
+B. 3, 2, 2, 1, 5, 6, 4, 2
+C. 3, 4, 2, 1, 5, 6, 4, 2
+D. 3, 4, 2, 5, 5, 6, 4, 2
+Answer: C
+
+Q.5: If the radius of a circle is doubled, what will happen to its area?
+A. Double
+B. Triple
+C. Four times
+D. No change
+Answer: C
+
+Q.6: The average of 5 consecutive odd numbers is 41. What is the largest number?
+A. 43
+B. 45
+C. 47
+D. 49 1 INTELLIGENCE
+Answer: B
+
+Q.7: What comes next: 0, 1, 1, 2, 3, 5, 8, ?
+A. 13
+B. 12
+C. 11
+D. 14
+Answer: A
+
+Q.8: Direction: Read the given information carefully and answer the following question Eight persons S, T, U, V, W, X, Y and Z live in an eight storey building such that ground floor is numbered as 1 and the top floor is numbered as 8. X lives on an even numbered floor below the floor number 6. More than two persons live between X and S. S does not live on an odd numbered floor. The number of person living above S is the same as the number of person living below
+
+V. Two people live between Y and T. T lives just above
+
+X. Only one person lives between U and Z. Z lives on one of the floors above Y. Who among the following lives just below W?
+A. X
+B. T
+C. Z
+D. U
+Answer: A
+
+Q.9: Read the following statement carefully and identify the conclusion that follows.
+
+Statement: The bank has announced a 0% interest loan scheme for students.
+
+Conclusions:
+
+I. Students will be encouraged to pursue higher education.
+
+II. The bank is not concerned about making profits.
+A. Only I follows
+B. Only II follows
+C. Both I and II follow
+D. Neither I nor II follows
+Answer: A
+
+Q.10: Find the number that best completes the analogy. E : 40 :: K : ?
+A. 88
+B. 90
+C. 86
+D. 78
+Answer: A
+
+Q.11: Choose the correct option to complete the series. Microscope : Magnify :: Speaker : ?
+A. Listen
+B. Reduce
+C. Quiet
+D. Amplify
+Answer: D
+
+Q.12: Select the letter cluster from among the given options that can replace the question mark (?) in the following series. GDR, CHN, YLJ, ?, QTB
+A. UPF
+B. UDF
+C. VPE
+D. VMF
+Answer: A
+
+Q.13: What is the 8th term of the series? 2, 6, 10, 14, ...?
+A. 26
+B. 28
+C. 30
+D. 32
+Answer: C
+
+Q.14: If POCKET is coded as QPDLFU, how is QPDLFU coded?
+A. RQEMGV
+B. RQEMFU
+C. RPDMGV
+D. RPEMGV
+Answer: A
+
+Q.15: In a certain code language, "INTERNATIONAL" is written as "IOTFROAUIPNBL". How will "COMMUNICATION" be written?
+A. CPMNUOIDAUIPN
+B. CPNMUOIDUAIPN
+C. CPMNIUODIUAPN
+D. CPMUNODIAUIPN
+Answer: A
+
+Q.16: If in the word EDUCATION the first and second letters are interchanged, in the same way the third and fourth, fifth and sixth and so on are interchanged, then what will be the 5th letter from the right?
+A. U
+B. C
+C. T
+D. E
+Answer: A
+
+Q.17: How many letters will remain at the same position in the word 'TEACHING' when the letters are arranged in reverse English alphabetical order from left to right?
+A. 1
+B. 2
+C. 3
+D. 4
+Answer: A
+
+Q.18: In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 6 5 19 8 2 6 9 4 ?
+A. 11
+B. 19
+C. 23
+D. 31
+Answer: A
+
+Q.19: In a coded family relationship system: P @ Q indicates that P is the mother of Q. P # Q indicates that P is the father of Q. P $ Q indicates that P is the brother of Q. P % Q indicates that P is the sister of Q. Which of the following expressions indicates that M is the maternal uncle of R?
+A. M $ S @ R
+B. M % S @ R
+C. M # S $ R
+D. M $ S # R
+Answer: A
+
+Q.20: Select the odd number pair from the given alternatives.
+A. 28, 816
+B. 37, 1406
+C. 51, 2652
+D. 64, 4160
+Answer: A
+
+Q.21: Due to a sudden corporate merger, your senior role is eliminated. You are offered a choice: take a 30% salary cut and report directly to a manager who is ten years younger than you and has far less field experience or leave the firm tomorrow without another job lined up. You feel an intense wave of public shame. Which reaction shows the highest level of emotional resilience?
+A. Resign instantly on the spot to protect your self-respect, regardless of your personal home loan liabilities.
+B. Force yourself to feel completely happy and enthusiastic about reporting to the younger manager to prove you have a positive corporate attitude.
+C. Accept the role quietly to stay financially secure, process your feelings privately, and use the frustration to pursue external senior opportunities.
+D. Accept the role, but quietly spread negative gossip about the new manager's lack of experience to protect your reputation among peers.
+Answer: C
+
+Q.22: Read the statement carefully and assume it to be true. Then examine the two conclusions given below it and decide which conclusion(s), if any, logically follow from the statement.
+
+Statement: The Civil Tribunal has appealed to the citizens for cooperation to prevent blatant theft of power in the area.
+
+Conclusion:
+
+I. Local civic groups will respond to this request by forming teams of people to investigate such power issues.
+
+II. Those who steal power will stop stealing power due to fear of rebuke from society.
+A. Only Conclusion I follows
+B. Only Conclusion II follows
+C. Both Conclusions I and II follow
+D. Neither Conclusion I nor II follows
+Answer: D
+
+Q.23: A florist specialises in grand wedding arrangements, which creates irregular demand. She wants to ensure her shop remains profitable and busy on a standard workday. What should she implement?
+A. Launching a weekly subscription service for small home bouquets.
+B. Targeting only luxury event planners for massive gala projects.
+C. Stocking only rare exotic flowers imported from other nations.
+D. Renovating the storefront to look like an upscale wedding hall.
+Answer: A
+
+Q.24: Read the given statement carefully and the following assumptions based on it. Decide which of the assumptions are implicit in the statement.
+
+Statement: To combat the rising threat of cybercrime, the government must pass legislation requiring all online service providers to implement multi-factor authentication for every user account. Assumptions:
+
+I. Multi-factor authentication is a reliable method for enhancing the security of digital user accounts.
+
+II. Current security measures employed by service providers are insufficient to stop cybercriminals.
+A. Only Assumption I is implicit
+B. Only Assumption II is implicit
+C. Neither Assumption I nor II is implicit
+D. Both Assumptions I and II are implicit
+Answer: A
+
+Q.25: Select the group of letters that is different from the other three.
+A. ACEG
+B. BDFH
+C. CEGI
+D. DFIK
+Answer: D
+
+Q.26: What is the typical rating scale used in the Gallup survey for happiness?
+A. 1 to 5
+B. 0 to 100
+C. 0 to 10
+D. 1 to 20
+Answer: A
+
+Q.27: What is the name of the system that provides location-specific air quality and weather forecasting?
+A. NAMASTE
+B. SAFAR
+C. VARSHA
+D. MAUSAM
+Answer: B
+
+Q.28: What is a key difficulty in establishing efficient Alternative Dispute Resolution
+
+(ADR) processes to boost business operations in regions with fragile legal systems?
+A. Limited access to experienced ADR professionals and problems with enforcing arbitration rulings.
+B. Strong depended on traditional court systems for resolving trade-related disputes.
+C. Extensive use of common international arbitration standards.
+D. Widespread reliance on informal methods of conflict resolution.
+Answer: A
+
+Q.29: known as the "Rocket Woman of India", played a key role as the Deputy Operations Director of Mangalyaan.
+A. Ritu Karidhal
+B. K. Sivan
+C. Kalpana Chawla
+D. Tessy Thomas
+Answer: A
+
+Q.30: Which of the following reflects a social impact of ISRO's satellite technology in India?
+A. Study of black holes
+B. Deep space exploration
+C. Improved remote education in rural areas
+D. Discovery of exoplanets
+Answer: C
+
+Q.31: The Bijapur Sultan who patronized Ibrahim Rauza and Gol Gumbaz was: 4
+A. Yusuf Adil Shah
+B. Ibrahim Adil Shah I
+C. Ibrahim Adil Shah
+D. Ali Adil Shah II
+Answer: D
+
+Q.32: Which BRICS (Brazil, Russia, India, China, and South Africa) member is the largest producer of tea?
+A. China
+B. India
+C. Brazil
+D. South Africa
+Answer: A
+
+Q.33: By which of the following buildings is the Gothic Revival architecture introduced during British rule in India best represented ?
+A. Rashtrapati Bhavan, New Delhi
+B. Chhatrapati Shivaji Maharaj Terminus (formerly Victoria Terminus), Mumbai
+C. Gateway of India, Mumbai
+D. Victoria Memorial, Kolkata
+Answer: B
+
+Q.34: Who among the following was NOT awarded the Nobel Prize for Literature?
+A. Rabindranath
+B. V.S. Naipaul Tagore
+C. R.K. Narayan
+D. Kazuo Ishiguro
+Answer: C
+
+Q.35: Which of the following Indian institutions established during the 6th Five-Year Plan was tasked with strengthening external trade financing?
+A. State Bank of India (SBI)
+B. Small Industries Development Bank of India (SIDBI)
+C. Insurance Regulatory and Development Authority of India (IRDA)
+D. The Export-Import Bank of India (EXIM Bank)
+Answer: D
+
+Q.36: Which Polish author was awarded the Nobel Prize in Literature in 2018 for her narrative imagination?
+A. Wisława
+B. Olga Tokarczuk Szymborska
+C. Dorota Masłowska
+D. Hanna Krall
+Answer: A
+
+Q.37: At the confluence of which two water bodies do thousands of pilgrims gather to take a holy dip during the Ganga Sagar Mela?
+A. Ganga and the Bay of Bengal
+B. Yamuna and Arabian Sea
+C. Brahmaputra and Bay of Bengal
+D. Narmada and Indian Ocean
+Answer: C
+
+Q.38: The "Wood's Despatch" of 1854 is considered a landmark in the history of Indian education because it:
+A. Advocated for the complete withdrawal of government support from education.
+B. Proposed the establishment of universities in the presidency towns of Calcutta, Bombay, and Madras.
+C. Recommended that Sanskrit and Persian should be the primary languages of instruction.
+D. Led to the immediate implementation of free and compulsory primary education across India.
+Answer: B
+
+Q.39: Which is the first state in the country to have its own Internet Service Provider (ISP) license from the Department of Telecommunications?
+A. Kerala
+B. Andhra Pradesh
+C. Delhi
+D. Punjab
+Answer: A
+
+Q.40: With 18 Grand Slam titles, who among the following is considered India's most successful tennis players?
+A. Rohan Bopanna
+B. Sania Mirza
+C. Mahesh Bhupathi
+D. Leander Paes
+Answer: D
+
+Q.41: Natural gas reserves of India occur in which of the following regions?
+A. The western offshore region near Maharashtra
+B. The coalfields of Jharkhand and West Bengal
+C. The Deccan Plateau in Karnataka
+D. The Himalayan foothills in Uttarakhand
+Answer: A
+
+Q.42: Which of the following is not included in the women's heptathlon?
+A. 100 metres
+B. Javelin throw hurdles
+C. 400 metres
+D. Shot put
+Answer: C
+
+Q.43: Consider the following statements about the Beach Games 2024 held in Diu:
+
+1) Madhya Pradesh topped the medal tally with 18 medals, including 7 golds.
+
+2) Maharashtra won the gold medal in Beach Soccer by defeating Lakshadweep in the final. Which of the statements is/are correct?
+A. Only 1 is Correct
+B. Only 2 is Correct
+C. 1 and 2 are
+D. Neither 1 nor 2 is Correct Correct
+Answer: C
+
+Q.44: Consider the following
+
+statements:
+
+1. India is a federal state as it has a written constitution.
+
+2. The term 'quasi-federal' was used by K.C. Wheare to describe India's federalism. Which of the statements is/are correct?
+A. Only 1
+B. Only 2
+C. Both 1 and 2
+D. Neither 1 nor 2
+Answer: C
+
+Q.45: Which Schedule of the Indian Constitution contains provisions related to the Panchayati Raj system?
+A. 9th Schedule
+B. 10th Schedule
+C. 11th Schedule
+D. 12th Schedule
+Answer: C
+
+Q.46: According to the theory of continental drift, what was the name of the single large landmass that originally existed on Earth?
+A. Panthalassa
+B. Pangaea
+C. Gondwanaland
+D. Laurasia
+Answer: B
+
+Q.47: Consider the following statements about the exosphere:
+
+1. Gas particles in this layer are so less in numbers that collisions between them are extremely rare.
+
+2. This layer has high air density and significant weather activity. Which of the statements given is/are correct?
+A. Only 1
+B. Only 2
+C. Both 1 and 2 are
+D. Neither 1 nor 2 is correct correct
+Answer: A
+
+Q.48: Which development during the post-1991 reform period enabled services such as accounting, banking, music recording, film editing and clinical advice to be outsourced to India?
+A. Expansion of digital communication networks
+B. Liberalisation of foreign trade policies
+C. Improvement in telecommunication links
+D. Growth of public sector enterprises
+Answer: B
+
+Q.49: Two identical point charges separated by a distance (d) exert an electrostatic force (F) on each other. If the distance between them is reduced to d , while the charges and the surrounding medium remain unchanged, what will be the new electrostatic force?
+A. 3 (force)
+B. 6(force)
+C. 9 (force)
+D. 27 (force)
+Answer: C
+
+Q.50: Which mechanism is primarily responsible for the continuous renewal of the small intestinal epithelium?
+A. Uniform division across villi and crypts
+B. Stem cell proliferation in crypts producing migrating cells
+C. Villus tip cells re-entering the cell cycle
+D. Paneth cells dividing to generate all lineages
+Answer: B
+
+Q.51: A sphere has a volume of 512π cm³. By what percentage must its radius be increased for the volume to become 2048π cm³?
+A. 59%
+B. 100%
+C. 150%
+D. 200%
+Answer: A
+
+Q.52: A wire of length 132 cm is bent into the shape of a circle. Find its radius.
+A. 21 cm
+B. 18 cm
+C. 22 cm
+D. 14 cm
+Answer: A
+
+Q.53: Simplify: (1 −cos² θ)(1 + tan² θ)
+A. 1
+B. cot² θ
+C. sin² θ ⋅sec² θ
+D. sec² θ
+Answer: A
+
+Q.54: The volume of a right circular cone with a height of 27 cm is 81π cm³. What is the diameter of its base?
+A. 8 cm
+B. 16 cm
+C. 7 cm
+D. 6 cm
+Answer: D
+
+Q.55: Find the volume of a triangular pyramid whose base has sides 5 cm, 5 cm, and 6 cm, and whose height is 8 cm.
+A. 32 cm³
+B. 48 cm³
+C. 40 cm³
+D. 24 cm³
+Answer: A
+
+Q.56: What is the value of p³−q3 p−q−3pq , if p = 7.85 and q = 2.15?
+A. 18.76
+B. 32.49
+C. 25.87
+D. 49.87
+Answer: A
+
+Q.57: 40% of Asha's income is equal to 50% of Neha's income. If Asha's income is reduced by ₹200, while Neha's income remains unchanged, the ratio of their new incomes becomes 3:
+
+4. Find Neha's income.
+A. ₹350
+B. ₹700
+C. ₹630
+D. ₹400
+Answer: D
+
+Q.58: Three partners, P, Q, and R, have established a business venture. P invests three times the amount invested by Q, who, in turn, invests two-thirds of the amount of R. Given that the total annual profit earned from the business is ₹1,32,000, find the share of Q in the profit.
+A. ₹20,000
+B. ₹48,000
+C. ₹36,000
+D. ₹24,000
+Answer: A
+
+Q.59: During an election, 18% of the voters did not vote and 72 voters cast invalid votes. There were only two candidates. The winner obtained 51% of the total voters and won by 432 votes. Find the total number of voters.
+A. 1200
+B. 2400
+C. 3200
+D. 1800
+Answer: A
+
+Q.60: A sum of money lent at simple interest amounts to 1.6 times the principal after a certain time. If the rate of interest is numerically double the time (in years), find the approximate annual rate of interest.
+A. 9%
+B. 11%
+C. 16%
+D. 14%
+Answer: A
+
+Q.61: A regular hexagon is inscribed inside a circle of radius 14 cm. Find the area of the hexagon.
+A. 287√3 cm²
+B. 259√7 cm²
+C. 224√3 cm²
+D. 294√3 cm²
+Answer: D
+
+Q.62: By selling an article for ₹720, a person incurs a loss of 10%. At what price should he sell it to gain 5%?
+A. ₹750
+B. ₹640
+C. ₹840
+D. ₹650
+Answer: C
+
+Q.63: A and B are the rivals. A is hired to do some work, A does the work while B destroys it. If A started at 2 pm and B started destroying at 3 pm, then the work finishes at 10 pm. Instead, if A started at 2 pm and B started destroying at 4 pm, then the work finishes at 6 pm. If B does not destroyed at all, find the time (in minutes) that A alone would take to complete the work.
+A. 120 minutes
+B. 224 minutes
+C. 144 minutes
+D. 184 minutes
+Answer: A
+
+Q.64: A shopkeeper marks his goods 40% above the cost price and offers a 15% discount on the marked price. Find the actual profit percentage.
+A. 15%
+B. 27%
+C. 23%
+D. 19%
+Answer: D
+
+Q.65: In a cyclic quadrilateral ABCD, ∠A = (4x+ 20)° and ∠C= (3x−15)° . Find the value of
+
+x.
+A. 18
+B. 21
+C. 27
+D. 25
+Answer: D
+
+Q.66: If sin θ+ cos θ= 3 , find the value of tan θ+ cot θ .
+A. 5
+B. 3 1/2
+C. 4
+D. 8 3/5
+Answer: D
+
+Q.67: If x= 5 + 2√6 , what is the value of x² + x² 1 ?
+A. 64
+B. 87
+C. 92
+D. 98
+Answer: D
+
+Q.68: If √2 = 1.414 , then find the value of 8√2+4 √2 .
+A. 4.564
+B. 8.452
+C. 10.828
+D. 12.456
+Answer: C
+
+Q.69: In triangle ABC, let D be any point on side AC. Points P, Q, X, and Y are the midpoints of AB, BC, AD, and DC, respectively. What is the ratio of the lengths PX and QY?
+A. 2:3
+B. 1:1
+C. 1:2
+D. 3:2
+Answer: B
+
+Q.70: The circumference of a circle is 100π cm. A chord in this circle has a length of 60 cm. What is the distance of this chord from the centre?
+A. 20 cm
+B. 40 cm
+C. 60 cm
+D. 80 cm
+Answer: B
+
+Q.71: AT is a tangent to a circle at A, and ABC is an inscribed triangle with BC as a chord. If the angle between the tangent and chord AC is ∠CAT = 50°, what is the inscribed angle ∠ABC?
+A. 30°
+B. 50°
+C. 70°
+D. 90°
+Answer: B
+
+Q.72: Two circles of radii 6 cm and 4 cm have their centres 20 cm apart. The transverse common tangent intersects the line joining the centres at point P. Find the distance of P from the centre of the larger circle.
+A. 8 cm
+B. 10 cm
+C. 12 cm
+D. 14 cm
+Answer: C
+
+Q.73: Two circles have radii in the ratio 3 :
+
+5. The arc of the smaller circle subtends 75° at its centre, and the arc of the larger circle subtends 45° at its centre. What is the ratio of their arc lengths (smaller : larger)?
+A. 3:5
+B. 5:3
+C. 1:1
+D. 2:3
+Answer: C
+
+Q.74: If x+ 1 x= 8 , then find the value of x4 + x4 1 .
+A. 3846
+B. 3844
+C. 3842
+D. 3840
+Answer: C
+
+Q.75: Two varieties of wheat costing ₹36/kg and ₹54/kg are mixed to obtain a mixture worth ₹45/kg. If 6 kg of the cheaper wheat are added to the mixture, the ratio of cheaper wheat to costlier wheat becomes 3:
+
+2. Find the original quantity of costlier wheat.
+A. 8 kg
+B. 12 kg
+C. 14 kg
+D. 6 kg
+Answer: B
+
+Q.76: Fill in the blank with the correctly spelt word. You must always ________ your luggage before the flight.
+A. recieve
+B. receive
+C. receeve
+D. receve
+Answer: B
+
+Q.77: Which of the following is the correct spelling of the word?
+A. Disenfranchiseme
+B. Desenfranchiseme nt nt
+C. Disinfranchisemen
+D. Disenfranchiseme t nt
+Answer: A
+
+Q.78: Which of the following is a one-word substitution for a life-sized model of the human body used to display clothes?
+A. Mannequin
+B. Sculptor
+C. Tailor
+D. Designer
+Answer: A
+
+Q.79: Rearrange the parts of the sentence in the correct order. With the awarding of the 2024 Nobel Prize in Physics, P. for their pioneering work in quantum materials, Q. as scientists hailed the breakthrough for its potential applications in next-generation computing and renewable energy R. the recipients sparked renewed interest in the study of exotic electronic properties, S. while debates emerged/the accessibility of high-cost experimental setups required for further research.
+A. PRQS
+B. PSQR
+C. RPQS
+D. QPRS
+Answer: A
+
+Q.80: Rearrange the parts of the sentence in the correct order. The geopolitical landscape P. necessitating strategic alliances and diplomatic interventions Q. has been reshaped by emerging superpowers, R. as nations navigate complex economic and military rivalries S. to maintain regional stability and global influence
+A. QPRS
+B. SRPQ
+C. RSPQ
+D. SQPR
+Answer: B
+
+Q.81: Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?
+
+1. Fossil evidence suggests that whales evolved from land-dwelling ancestors that gradually adapted to aquatic life.
+
+2. Over millions of years, their limbs transformed into flippers, and their nostrils shifted to the top of their heads, forming blowholes.
+
+3. This transformation is considered one of the most remarkable examples of evolutionary adaptation in the animal kingdom.
+
+4. The discovery of transitional fossils, such as Ambulocetus, provides crucial insights into this evolutionary shift.
+
+5. The ancestors of modern whales were hoofed mammals that once roamed the land before returning to the sea.
+A. 2-4-3-5-1
+B. 2-4-5-1-3
+C. 4-2-1-3-5
+D. 5-1-2-4-3
+Answer: D
+
+Q.82: Improve the sentence using the correct phrasal verb of the underlined words. We must bring out a solution to this problem quickly.
+A. bring up
+B. bring over
+C. bring about
+D. bring out
+Answer: A
+
+Q.83: Choose the correct idiom for the word highlighted in bold. "The voters know very little about Mr. Singh, but he's a dark horse and I think he'll win the election."
+A. A dishonest candidate who hides the truth
+B. A person who is not expected to succeed but ends up doing well
+C. A candidate who is very experienced and well-known
+D. A person who refuses to take part in the competition
+Answer: B
+
+Q.84: Which of the following options is NOT one of the meanings of the homonym 'impertinent'?
+A. Irrelevant or not related to the matter at hand
+B. Inappropriate in a given context
+C. Rude or disrespectful, especially towards someone older or in authority
+D. Very eager or passionate about a subject
+Answer: D
+
+Q.85: **Comprehension (Q. 85 - 89):** Normal science, the activity in which most scientists inevitably spend almost all their time, is based on the assumption that the scientific community knows what the world is like. Scientists take great pains to defend that assumption, often restricting their vision to the phenomena that the existing paradigm has defined as relevant. When research proceeds in this fashion, findings tend to be incremental, reinforcing the established framework rather than challenging it. Yet, over time, anomalies—empirical observations that cannot be explained within the current paradigm —accumulate. Initially, these anomalies are dismissed as errors or as problems to be solved within the existing theoretical structure. However, as these anomalies grow in number and significance, they begin to erode confidence in the prevailing paradigm. The resolution of such crises is not a straightforward process of falsification, as Popper might suggest, but rather a transformation in the very way scientists see the world. Scientific revolutions occur when a new paradigm emerges— one that is not merely an extension of the old but a fundamental reconceptualization of reality. This shift is not purely logical or empirical; it involves a radical change in perspective, akin to a gestalt switch. The Copernican Revolution, for example, did not merely adjust astronomical calculations; it redefined the very framework through which celestial motion was understood. Similarly, Einstein's theory of relativity did not just modify Newtonian mechanics but replaced its foundational assumptions about space and time.
+
+---
+
+What is the best synonym for "incommensurable" in the sentence: "What makes these revolutions particularly striking is that competing paradigms are often incommensurable."
+A. Comparable
+B. Parallel
+C. Disjointed
+D. Irreconcilable
+Answer: B
+
+Q.86: **Comprehension (Q. 85 - 89):** Normal science, the activity in which most scientists inevitably spend almost all their time, is based on the assumption that the scientific community knows what the world is like. Scientists take great pains to defend that assumption, often restricting their vision to the phenomena that the existing paradigm has defined as relevant. When research proceeds in this fashion, findings tend to be incremental, reinforcing the established framework rather than challenging it. Yet, over time, anomalies—empirical observations that cannot be explained within the current paradigm —accumulate. Initially, these anomalies are dismissed as errors or as problems to be solved within the existing theoretical structure. However, as these anomalies grow in number and significance, they begin to erode confidence in the prevailing paradigm. The resolution of such crises is not a straightforward process of falsification, as Popper might suggest, but rather a transformation in the very way scientists see the world. Scientific revolutions occur when a new paradigm emerges— one that is not merely an extension of the old but a fundamental reconceptualization of reality. This shift is not purely logical or empirical; it involves a radical change in perspective, akin to a gestalt switch. The Copernican Revolution, for example, did not merely adjust astronomical calculations; it redefined the very framework through which celestial motion was understood. Similarly, Einstein's theory of relativity did not just modify Newtonian mechanics but replaced its foundational assumptions about space and time.
+
+---
+
+What does the word "gestalt switch" imply in this context?
+A. A subtle expansion of an existing model
+B. A shift from general to specific thinking
+C. A fundamental change in perception
+D. A reversal in cause-effect reasoning
+Answer: C
+
+Q.87: **Comprehension (Q. 85 - 89):** Normal science, the activity in which most scientists inevitably spend almost all their time, is based on the assumption that the scientific community knows what the world is like. Scientists take great pains to defend that assumption, often restricting their vision to the phenomena that the existing paradigm has defined as relevant. When research proceeds in this fashion, findings tend to be incremental, reinforcing the established framework rather than challenging it. Yet, over time, anomalies—empirical observations that cannot be explained within the current paradigm —accumulate. Initially, these anomalies are dismissed as errors or as problems to be solved within the existing theoretical structure. However, as these anomalies grow in number and significance, they begin to erode confidence in the prevailing paradigm. The resolution of such crises is not a straightforward process of falsification, as Popper might suggest, but rather a transformation in the very way scientists see the world. Scientific revolutions occur when a new paradigm emerges— one that is not merely an extension of the old but a fundamental reconceptualization of reality. This shift is not purely logical or empirical; it involves a radical change in perspective, akin to a gestalt switch. The Copernican Revolution, for example, did not merely adjust astronomical calculations; it redefined the very framework through which celestial motion was understood. Similarly, Einstein's theory of relativity did not just modify Newtonian mechanics but replaced its foundational assumptions about space and time.
+
+---
+
+According to the passage, why do scientific revolutions represent a rupture rather than a continuation of prior science?
+A. Because scientists abandon objectivity and turn to speculation
+B. Because new paradigms invalidate all previous findings
+C. Because competing paradigms redefine questions and methods, making continuity impossible
+D. Because scientists stop collecting empirical data
+Answer: B
+
+Q.88: **Comprehension (Q. 85 - 89):** Normal science, the activity in which most scientists inevitably spend almost all their time, is based on the assumption that the scientific community knows what the world is like. Scientists take great pains to defend that assumption, often restricting their vision to the phenomena that the existing paradigm has defined as relevant. When research proceeds in this fashion, findings tend to be incremental, reinforcing the established framework rather than challenging it. Yet, over time, anomalies—empirical observations that cannot be explained within the current paradigm —accumulate. Initially, these anomalies are dismissed as errors or as problems to be solved within the existing theoretical structure. However, as these anomalies grow in number and significance, they begin to erode confidence in the prevailing paradigm. The resolution of such crises is not a straightforward process of falsification, as Popper might suggest, but rather a transformation in the very way scientists see the world. Scientific revolutions occur when a new paradigm emerges— one that is not merely an extension of the old but a fundamental reconceptualization of reality. This shift is not purely logical or empirical; it involves a radical change in perspective, akin to a gestalt switch. The Copernican Revolution, for example, did not merely adjust astronomical calculations; it redefined the very framework through which celestial motion was understood. Similarly, Einstein's theory of relativity did not just modify Newtonian mechanics but replaced its foundational assumptions about space and time.
+
+---
+
+Identify the voice used in the sentence: "Anomalies are dismissed as errors or as problems to be solved within the existing theoretical structure."
+A. Active voice
+B. Passive voice
+C. Middle voice
+D. Reflexive voice
+Answer: A
+
+Q.89: **Comprehension (Q. 85 - 89):** Normal science, the activity in which most scientists inevitably spend almost all their time, is based on the assumption that the scientific community knows what the world is like. Scientists take great pains to defend that assumption, often restricting their vision to the phenomena that the existing paradigm has defined as relevant. When research proceeds in this fashion, findings tend to be incremental, reinforcing the established framework rather than challenging it. Yet, over time, anomalies—empirical observations that cannot be explained within the current paradigm —accumulate. Initially, these anomalies are dismissed as errors or as problems to be solved within the existing theoretical structure. However, as these anomalies grow in number and significance, they begin to erode confidence in the prevailing paradigm. The resolution of such crises is not a straightforward process of falsification, as Popper might suggest, but rather a transformation in the very way scientists see the world. Scientific revolutions occur when a new paradigm emerges— one that is not merely an extension of the old but a fundamental reconceptualization of reality. This shift is not purely logical or empirical; it involves a radical change in perspective, akin to a gestalt switch. The Copernican Revolution, for example, did not merely adjust astronomical calculations; it redefined the very framework through which celestial motion was understood. Similarly, Einstein's theory of relativity did not just modify Newtonian mechanics but replaced its foundational assumptions about space and time.
+
+---
+
+What type of clause is used in the sentence: "Yet, over time, anomalies that cannot be explained within the current paradigm accumulate."
+A. Noun clause
+B. Adverbial clause
+C. Relative clause
+D. Independent clause
+Answer: A
+
+Q.90: Fill in the blank with the correctly spelt word. The ritual had a distinctly ________ feel to it.
+A. hieratick
+B. hieretica
+C. hieratic
+D. hiearatic
+Answer: C
+
+Q.91: Choose the correct meaning of idiom: Cried up
+A. Ignored
+B. Exposed harshly intentionally
+C. Praised
+D. Rejected extravagantly summarily
+Answer: A
+
+Q.92: Choose the correct meaning of idiom: Ride roughshod over
+A. Travel very quickly
+B. Disregard others' feelings or rights
+C. Improve something drastically
+D. Face obstacles bravely
+Answer: A
+
+Q.93: Select the most appropriate antonym of the given word. Sententious
+A. Moralistic
+B. Terse
+C. Concise
+D. Unpretentious
+Answer: A
+
+Q.94: Select the most appropriate antonym of the given word. Jejune
+A. Insipid
+B. Bland
+C. Dull
+D. Interesting
+Answer: A
+
+Q.95: Select the correct option: Given the proliferation of misinformation, it becomes all the more imperative to ___ sources before dissemination.
+A. ameliorate
+B. fabricate
+C. corroborate
+D. incriminate
+Answer: A
+
+Q.96: Change the following from active to passive: Did they approve your application?
+A. Is your application approved by them?
+B. Was your application approved by them?
+C. Has your application been approved by them?
+D. Had your application been approved by them?
+Answer: A
+
+Q.97: Find the part of the sentence that contains an error: The professor recommended that each of the selected candidates (1)/ submit their thesis proposal by next Friday (2)/ failing which the slot would be offered to waitlisted scholars. (3)/ No error (4)
+A. 1
+B. 2
+C. 3
+D. 4
+Answer: A
+
+Q.98: Convert the sentence provided below from its passive voice structure to an active voice structure: The player is rumored to be considering early retirement after this season.
+A. The player considers retiring early after the season, as rumored.
+B. Early retirement is being rumored by the player.
+C. Rumor has it that the player is considering early retirement.
+D. It is rumored that the season caused early retirement.
+Answer: A
+
+Q.99: Convert the sentence provided below from its passive voice structure to an active voice structure: The evidence is believed to have been planted before the investigation began.
+A. The investigation believed that the evidence had been planted earlier.
+B. It is believed that someone planted the evidence before the investigation began.
+C. It is believed that the investigation planted the evidence.
+D. Someone had believed the evidence to be planted before the investigation.
+Answer: A
+
+Q.100: A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. She said, "I hope he will arrive on time."
+A. She hoped he would arrive on time.
+B. She said that I hope he will arrive on time.
+C. She said that she hoped he arrived on time.
+D. She said that she hoped he will arrive on time.
+Answer: A
+

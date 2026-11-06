@@ -1,0 +1,790 @@
+Q.1: If P + Q means P is the brother of Q, P – Q means P is the mother of Q, and P × Q means P is the sister of Q. Which of the following means M is the maternal uncle of R?
+A. M – K – R
+B. M – R + K
+C. M + K × R
+D. M + K – R
+Answer: D
+
+Q.2: How many such T are there in the sequence which are immediately preceded by P but not immediately followed by R? Sequence: PTQTPTRPTPSTRPTPQT
+A. 1
+B. 3
+C. 2
+D. 4
+Answer: B
+
+Q.3: In a group of five members, P, Q, R, S, and T, Q is the daughter of P. R is the son of Q. S is the brother of P. T is the mother of S. How is T related to R?
+A. Maternal Great-Grandmother
+B. Paternal grandmother Grandmother
+C. Mother
+D. Paternal Aunt
+Answer: A
+
+Q.4: In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 8 6 4 5 9 3 2 3 ? 20 18 6
+A. 3
+B. 2
+C. 5
+D. 7
+Answer: B
+
+Q.5: In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 20 45 35 14 30 25 6 15 10 12 30 ?
+A. 14
+B. 20
+C. 24
+D. 36
+Answer: B
+
+Q.6: Find the alternative number in the series. 7, 4, 49, 9, 441, 16, 4851, 25, ?
+A. 67903
+B. 63063
+C. 74890
+D. 68909
+Answer: B
+
+Q.7: Using the codes given below, answer the question that follows.
+
+1. M % N means M is the son of N.
+
+2. M @ N means M is the sister of N.
+
+3. M $ N means M is the father of N. Which of the following expressions given in the options shows the relation that E is the paternal grandfather of C?
+A. C % B @ F $ E
+B. E $ B $ C @ F
+C. E % B $ F @ C
+D. C @ B % F $ E
+Answer: B
+
+Q.8: The roll number of a specific batch follows the rule: The sum of the first two digits must equal the sum of the last two digits. Find the inconsistent roll number.
+A. 63482109
+B. 57124939
+C. 92317429
+D. 48512968
+Answer: D
+
+Q.9: Select the odd number pair from the given alternatives.
+A. 41, 1722
+B. 33, 1122
+C. 22, 504
+D. 15, 240
+Answer: C
+
+Q.10: Read the question carefully and choose the most appropriate option. You are the head of a housing society. Children are playing cricket in the parking area, and some residents are worried about damage to their vehicles. What would you do?
+A. Ban all outdoor games immediately without consulting any residents first.
+B. Ignore the complaints and allow the situation to continue unchanged.
+C. Avoid involvement because disagreements among residents are quite common.
+D. Arrange a meeting and identify a safer area for games to reduce damage.
+Answer: D
+
+Q.11: Choose the best alternative. α1 : β4 :: γ9 :?
+A. δ12
+B. δ16
+C. ϵ16
+D. δ10
+Answer: B
+
+Q.12: What should come in place of the question mark (?) in the following analogy? MARKET : LZQJDS :: BRIDGE : ?
+A. AQHCFD
+B. AQHCFE
+C. AQHCFW
+D. BQHCFD
+Answer: A
+
+Q.13: If the expression 24 ÷ 6 × 3 + 4 − 2 = X is computed, what happens to the value of X if the division sign is replaced by multiplication?
+A. Increases by 280
+B. Decreases by
+C. Increases by 416
+D. Increases by 420
+Answer: D
+
+Q.14: Read the statement carefully and assume it to be true. Then examine the two conclusions given below it and decide which conclusion(s), if any, logically follow from the statement.
+
+Statement: In a one-day cricket match, the total runs scored by a team were 200, out of which spinners made 150.
+
+Conclusions: 2
+
+I. The team had 75% spinners.
+
+II. Fast bowlers outperformed the spinners.
+A. Only Conclusion I follows
+B. Only Conclusion II follows
+C. Both Conclusions I and II follow
+D. Neither conclusion I nor II follows
+Answer: D
+
+Q.15: In the following question a statement is given followed by some assumptions. Read the assumptions carefully and choose the appropriate option.
+
+Statement: Before finalizing the budget for the community project, please review all expenditure estimates. Assumptions:
+
+I. The estimates may contain errors.
+
+II. A realistic budget is important for the project.
+A. Only I is implicit.
+B. Only II is implicit.
+C. Neither I nor II is implicit.
+D. Both I and II are implicit.
+Answer: B
+
+Q.16: If '★' means +, '△' means -, '♦' means ×, and '○' means ÷, find [(144 ○ 12) ♦ (7 ★ 5)] △ [(18 ♦
+
+2) ★ (36 ○ 6)].
+A. 84
+B. 96
+C. 102
+D. 108
+Answer: C
+
+Q.17: Read the given conditions carefully and determine the appropriate outcome for the case provided. If any exception applies, identify the authority to whom the case should be referred. Criteria for Project Lead Promotion:
+
+(i) Must have led at least 2 projects.
+
+(ii) Must have an 'Excellent' performance rating. Exceptions: Exception
+A. Promotion to be approved
+B. Promotion to be denied
+C. Refer the case to the Operations Head
+D. Case to be referred to the HR Committee
+Answer: C
+
+Q.18: In a certain code language, "AIRCRAFT" is written as "1irCRA6T." How will "BIRTHDAY" be written in the same code language?
+A. 2irTHD1Y
+B. 2iRtHD1Y
+C. 2irTHdLY
+D. 2IrThD1Y
+Answer: A
+
+Q.19: In the following question two statements are given and these statements are followed by two conclusions. You have to take the given two statements to be true even if they seem to be at variance from commonly known facts. Read the conclusions and then decide which of the given conclusions logically follows from the two given statements.
+
+Statements: Some mobiles are gadgets. Some gadgets are electronics.
+
+Conclusions:
+
+I. All electronics are gadgets.
+
+II. Some electronics are gadget
+A. Neither conclusion I nor conclusion II follows
+B. Only conclusion II follows
+C. Only conclusion I follows
+D. Both conclusions I and II follow
+Answer: B
+
+Q.20: In the following question, three statements are given followed by three conclusions. Consider the statements to be true even if they differ from commonly known facts. Read the conclusions carefully and decide which of the conclusions logically follow from the given statements.
+
+Statements: Some cats are dogs. All dogs are animals. No animal is a plant.
+
+Conclusions: 3
+
+I. Some cats are animals.
+
+II. All cats are animals.
+
+III. Some animals are not plants.
+A. Both conclusions I and III follow
+B. Both conclusions II and III follow
+C. Both conclusions I and II follow
+D. All conclusions follow
+Answer: A
+
+Q.21: Direction: Choose the best course of action. A financial institution observes unusual transaction patterns that may indicate emerging fraud techniques, although no confirmed losses have occurred.
+A. Wait for confirmed financial losses before investigating further patterns.
+B. Publicly announce fraud concerns before conducting any internal verification.
+C. Conduct preventive investigations and strengthen monitoring systems proactively.
+D. Restrict all customer transactions until the source of concern is identified.
+Answer: C
+
+Q.22: In the following question, three statements are given, followed by two conclusions. Consider the statements to be true even if they differ from commonly known facts. Read the conclusions carefully and decide which of the conclusions logically follow from the given statements.
+
+Statements: Only a few coats are shirts. Some shirts are pants. No pants are socks.
+
+Conclusions:
+
+I. All coats can be shirts is a possibility.
+
+II. All shirts can be coats is a possibility.
+A. Only conclusion I follows
+B. Either conclusion I or conclusion II follows
+C. Both conclusions I and II follow
+D. Only conclusion II follows
+Answer: D
+
+Q.23: Study the pattern in the given series and find the next set of letters in the series. LOM, ISJ, FWG, CAD, ?
+A. ZEA
+B. VDA
+C. VEA
+D. VCB
+Answer: A
+
+Q.24: Select the option that is related to the third word in the same way as the second word is related to the first word. (The words must be considered as meaningful English words and must not be related to each other based on the number of letters/number of consonants/vowels in the word.) Theodolite : Surveyor :: Stethoscope : ?
+A. Physician
+B. Engineer
+C. Chemist
+D. Astronomer
+Answer: A
+
+Q.25: In each of the following questions, four options have been given, of which three are alike in some way and one is different. Choose the odd one out.
+A. Mexico - Peso
+B. Philippines - Peso
+C. Colombia - Peso
+D. Brazil - Peso
+Answer: D
+
+Q.26: The "Skill India Mission" aims to empower the youth with relevant skills. Which of the following is a key initiative or program under this mission?
+A. National Rural Employment Guarantee Scheme (NREGS)
+B. Startup India Initiative
+C. Pradhan Mantri Kaushal Vikas Yojana (PMKVY)
+D. Atal Innovation Mission (AIM)
+Answer: C
+
+Q.27: The "National Food Security Act (NFSA), 2013" has a primary objective related to food and nutrition. Which of the following best describes this objective?
+A. To promote organic farming practices across the country.
+B. To ensure foodgrain procurement at Minimum Support Price (MSP) for all crops.
+C. To provide subsidized foodgrains to a significant proportion of the population.
+D. To encourage the export of surplus foodgrains to boost the agricultural economy.
+Answer: C
+
+Q.28: BFI, the governing body for basketball in India, organizes which national-level championship annually?
+A. India Slam League
+B. National Club Basketball Cup
+C. National Basketball Championship
+D. National Dribble League 4 AWARENESS
+Answer: C
+
+Q.29: Where did the conclusive match of the 2016 Kabaddi World Cup take place?
+A. Ahmedabad
+B. Mumbai
+C. Patna
+D. Jaipur
+Answer: A
+
+Q.30: In the Third Five-Year Plan, which trade policy approach was primarily adopted to enhance the nation's foreign exchange earnings?
+A. Promotion of import-intensive industries
+B. Trade liberalization
+C. Implementation of currency devaluation measures
+D. Export promotion
+Answer: D
+
+Q.31: Which of the following changes the Bharatiya Sakshya Adhiniyam (BSA), introduced in relation to electronic evidence, compared to the Indian Evidence Act?
+A. Rejects metadata as hearsay
+B. Recognizes electronic records as equivalent to oral statements
+C. Only printed emails are admissible
+D. Broadens scope to include blockchain, cloud logs, and forensic audit trails
+Answer: D
+
+Q.32: As of May 2025, the Vice Chairperson of NITI Aayog and Chairman of the Economic Advisory Council to the Prime Minister (EACPM) is ________.
+A. Suman Bery
+B. Bibek Debroy
+C. Rajiv Kumar
+D. Arvind Panagariya
+Answer: C
+
+Q.33: Which of the following pairs is INCORRECTLY matched about the four Vedas?
+A. Rigveda - Hymns of praises
+B. Yajurveda - Rituals and sacrificial prayers
+C. Samaveda - Philosophical teachings
+D. Atharvaveda - Spells to ward off evils and diseases
+Answer: C
+
+Q.34: Which is NOT a major thermal power station in India?
+A. Vijayawada
+B. Nashik
+C. Sabarmati
+D. Tarapur
+Answer: D
+
+Q.35: Which of the following was a key feature of the Regulating Act of 1773?
+A. It granted complete autonomy to the East India Company.
+B. It made the Governor of Bombay the supreme authority in India.
+C. It limited the British Parliament’s power/Company affairs.
+D. It introduced Parliamentary supervision/the Company’s administration.
+Answer: D
+
+Q.36: According to Article 64 of the Indian Constitution, the Vice-President of India is the ex officio Chairman of the:
+A. Lok Sabha
+B. Legislative Assembly
+C. Council of States
+D. Council of Ministers
+Answer: C
+
+Q.37: What is the SI unit of magnetic flux density?
+A. Tesla
+B. Weber
+C. Henry
+D. Gauss
+Answer: A
+
+Q.38: Which Indian sportsperson is famously known as the "Payyoli Express"?
+A. Hima Das
+B. P.T. Usha
+C. Anju Bobby
+D. Shiny Abraham George
+Answer: B
+
+Q.39: What happened to mature Harappan culture after around 1900 BC?
+A. Instant, total
+B. Faded peripheral extinction survival
+C. Core urban
+D. Shift to metal expansion weaponry
+Answer: B
+
+Q.40: Which premier agency does S. Somanath continue to lead, focusing on the 2026 uncrewed Gaganyaan flight tests?
+A. DRDO (Defence Research and Development Organisation)
+B. ISRO (Indian Space Research Organisation)
+C. BARC (Bhabha Atomic Research Centre)
+D. CSIR (Council of Scientific and Industrial Research)
+Answer: B
+
+Q.41: The Mozambique Channel is located between which two places?
+A. Madagascar and
+B. Indonesia and Mozambique Malaysia
+C. Oman and Iran
+D. India and Sri Lanka
+Answer: A
+
+Q.42: A police officer receives a warrant to arrest “R”. After conducting a reasonable inquiry and acting in good faith, he arrests S, believing S to be R. Later it is discovered that S was entirely innocent, and the warrant never applied to him. Which of the following is the most accurate legal position under the Bharatiya Nyaya Sanhita, 2023 in India?
+A. The officer is liable because wrongful arrest always constitutes an offence.
+B. The officer is protected only if the court issuing the warrant has jurisdiction.
+C. The officer is protected because of a mistake of fact made in good faith.
+D. The officer is liable because identity mistakes are mistakes of law.
+Answer: A
+
+Q.43: The concept of a “Union of States” under Article 1 of the Constitution of India implies that:
+A. States possess a constitutional right to secede
+B. The Indian federation originated through agreement among sovereign states.
+C. The Union is indestructible, though States may be reorganized.
+D. States have equal sovereignty with the union.
+Answer: A
+
+Q.44: The economic reforms initiated in 1991 promoted which of the following policy combinations?
+A. Industrial licensing and import restrictions
+B. Market based pricing and industrial dereservation
+C. Public ownership and centralised price fixation
+D. Export controls and mandatory production quotas
+Answer: A
+
+Q.45: India approached which institution for financial assistance during the 1991 economic crisis?
+A. World Trade Organisation
+B. European Central Bank
+C. International Monetary Fund
+D. Asian Development Bank
+Answer: A
+
+Q.46: Mortality, fertility, and migration together primarily determine which of the following characteristics of a population?
+A. Inflation trends and price levels
+B. Population size and composition
+C. Gross domestic product growth
+D. Fiscal stability and public expenditure
+Answer: A
+
+Q.47: Which department is primarily responsible for promoting and coordinating Ease of Doing Business (EoDB) reforms in India?
+A. Department for Promotion of Industry and Internal Trade under the Ministry of Commerce and Industry
+B. Department of Legal Affairs under the Ministry of Law and Justice
+C. Department of Economic Affairs under the Ministry of Finance
+D. Development Monitoring and Evaluation Office under NITI Aayog
+Answer: A
+
+Q.48: Which of the following was a specific, monitorable social target set out in India's Eleventh Five-Year Plan (2007-2012)?
+A. Reducing child malnutrition
+B. Expanding defence production
+C. Increasing customs revenue
+D. Privatising public enterprises
+Answer: A
+
+Q.49: Which of the following leaders played a major organisational role in the Kheda Satyagraha?
+A. Motilal Nehru
+B. Chittaranjan Das
+C. Vallabhbhai Patel
+D. Subhas Chandra Bose
+Answer: A
+
+Q.50: In a pond ecosystem, pesticide exposure causes a substantial decline in the population of fish that help regulate aquatic insect populations. After some time, the mosquito population increases rapidly. What is the most likely ecological explanation for this increase?
+A. Reduced competition among mosquito larvae for aquatic resources
+B. Increased reproductive activity of mosquitoes due to pesticide exposure
+C. Reduced predation on mosquito larvae following the decline in fish population
+D. Decreased water temperature leading to greater mosquito survival
+Answer: A
+
+Q.51: The base of a right prism is a triangle with sides 5 cm, 12 cm, and 13 cm. The height of the prism is 9 cm. Find the lateral surface area.
+A. 270 cm²
+B. 380 cm²
+C. 420 cm²
+D. 440 cm²
+Answer: A
+
+Q.52: In a equilateral triangle, the centroid divides each median in a 2:1 ratio. What is the distance between the centroid and the ninepoint center in an equilateral triangle?
+A. Zero
+B. One-third of the circumradius
+C. Equal to the circumradius
+D. Half the circumradius
+Answer: A
+
+Q.53: Find the smallest square number that is divisible by each of the numbers 4, 9, and 10.
+A. 500
+B. 900
+C. 600
+D. 700
+Answer: B
+
+Q.54: A and B invest in a business such that A's capital is used for 7 months and B's for 9 months. If the profit is shared in the ratio 7 : 10 and A's investment is ₹1,800 less than B's, find the total capital invested by both.
+A. ₹38,230
+B. ₹34,200
+C. ₹27,220
+D. ₹44,100
+Answer: A
+
+Q.55: Find the amount after 3 years if ₹12,000 is invested at 15% per annum compound interest.
+A. ₹18250.50
+B. ₹17250.50
+C. ₹19250.50
+D. ₹16250.50
+Answer: A
+
+Q.56: The ratio of the number of sides of two regular polygons is 1:2 and the ratio of their interior angles is 3:
+
+4. Find the number of sides of these polygons.
+A. 15 sides and 30
+B. 3 sides and 6 sides sides
+C. 5 sides and 10
+D. 7 sides and 14 sides sides
+Answer: C
+
+Q.57: If the perimeter of a semicircle is 47.1 cm, what is its approximate diameter? (Take π =
+
+3.14)
+A. 15.4 cm
+B. 17.5 cm
+C. 16.8 cm
+D. 18.3 cm
+Answer: D
+
+Q.58: A conical tent of radius 7 m and height 24 m is to be covered using cloth of width 4 m. Find the approximate length of cloth required. Take π= 22 7
+A. 138 m
+B. 118 m
+C. 128 m
+D. 148 m
+Answer: A
+
+Q.59: A man sells an article at a loss of 10%. Had he bought it for 20% less and sold it for ₹55 more, he could have gained 40%. What is the cost price?
+A. ₹250
+B. ₹280
+C. ₹200
+D. ₹260
+Answer: A
+
+Q.60: The producer makes a profit of 15% by selling the product to the wholesaler. The wholesaler sells it to the retailer making 10% profit. The retailer sells it to the consumer for ₹12,903 making a profit of 2%. Find the cost of production of the product.
+A. ₹20,000
+B. ₹40,000
+C. ₹10,000
+D. ₹60,000
+Answer: C
+
+Q.61: In a triangle, the sides are 100, 150 and z units. How many integer values are possible for z?
+A. 161
+B. 199
+C. 179
+D. 130
+Answer: B
+
+Q.62: Points A and B are on the same side of a tower. The angles of elevation of the top of the tower from A and B are 45° and 60° respectively. The approximate distance between A and B is 40 m. Find the height of the tower(Use √3 = 1.732)
+A. 99 m
+B. 95 m
+C. 85 m
+D. 90 m
+Answer: B
+
+Q.63: What is the value of 8 cos² 30°+4 sin² 45°−3cosec260° ? 2 tan² 60°−6 cosec 30°
+A. 0
+B. −2
+C. 1
+D. 2 3
+Answer: B
+
+Q.64: A solid sphere of radius 10 cm is melted and recast into small cones, each with a radius of
+
+2.5 cm and a height of 8 cm. How many cones can be formed?
+A. 20
+B. 40
+C. 60
+D. 80
+Answer: B
+
+Q.65: In triangle ABC, D and E lie on AB and AC such that DE is parallel to BC. If AD: DB = 5: 3 and AE = 15 cm, find AC.
+A. 15 cm
+B. 18 cm
+C. 24 cm
+D. 27 cm
+Answer: C
+
+Q.66: What is the value of 9992 - 9982?
+A. 1995
+B. 1997
+C. 1999
+D. 2001
+Answer: A
+
+Q.67: A company borrowed ₹10,00,000. Onefourth of the loan was repaid after 4 years and another one-third of the original loan after 7 years. The remaining principal was cleared after 10 years. If the simple interest rate was 9% per annum, calculate the total interest paid.
+A. ₹6,75,000
+B. ₹6,60,000
+C. ₹6,20,000
+D. ₹6,00,000
+Answer: A
+
+Q.68: If tanA = m and A is an acute angle, what is the value of cosA?
+A. m
+B. 1 √1+m² √1+m²
+C. √1 + m²
+D. 1−m √1+m²
+Answer: A
+
+Q.69: A tank is connected to 15 pipes. Some of these are inlet pipes, while the remaining are outlet pipes. An inlet pipe alone can fill the tank in 8 hrs. On the other hand, an outlet pipe alone can empty the tank in 6 hrs. The tank is emptied in 6 hrs if all the pipes are opened simultaneously when the tank is exactly full. Find out how many of the pipes are outlet pipes.
+A. 5
+B. 6
+C. 7
+D. 8
+Answer: A
+
+Q.70: A cistern is initially empty. Inlet pipes A and B fill it at constant rates of 1 and 1 of the 12 8 cistern per hour, respectively, while outlet pipe C empties it at a constant rate of 1 per hour. Sumeet opens pipes A and B at time zero. Under his original plan, pipe C is programmed to start instantly when the cistern reaches 50%, and Sumeet returns exactly at the moment the cistern becomes completely full. However, due to a malfunction, pipe C starts instantly when the cistern is 1 full instead. All active pipes run continuously and simultaneously, and the cistern level always stays between 0% and 100%. When Sumeet returns at the originally planned time and stops all pipes, what percentage of the cistern is filled?
+A. 75%
+B. 80%
+C. 85%
+D. 90%
+Answer: A
+
+Q.71: Evaluate: sin² 25°+ sin² 65°
+A. √3
+B. 0 2
+C. 2
+D. 1
+Answer: A
+
+Q.72: If y+ 1 y= 17 , find the value of y³ + y³ 1 .
+A. 4913
+B. 4862
+C. 4964
+D. 4896
+Answer: A
+
+Q.73: If a + b = 22 and ab = 85, evaluate a² + b².
+A. 308
+B. 314
+C. 326
+D. 382
+Answer: A
+
+Q.74: A solid regular hexagonal prism has a base side length of 5 m and a height of 12 m. All of its outer surfaces (including the top and bottom bases) are painted at a rate of Rs. 20 per m². Find the total painting cost
+
+(approximately). [Take √3 ≈1.732 ]
+A. Rs. 9798
+B. Rs. 8342
+C. Rs. 9000
+D. Rs. 8073
+Answer: A
+
+Q.75: If √(a+ √b) = √x+ √y , where a = 5, b = 21, and x, y are rational numbers, determine the value of x + y.
+A. 25
+B. 10
+C. 5
+D. 21
+Answer: A
+
+Q.76: Rearrange the parts of the sentence in the correct order. Despite the abstract nature of quantum mechanics, P. mathematical formulations such as Hilbert spaces and wave functions Q. to make remarkably accurate predictions R. provide a rigorous framework S. about the behaviour of subatomic particles
+A. PRQS
+B. PSQR
+C. RPQS
+D. QPRS
+Answer: A
+
+Q.77: Choose the correct transformation of the sentence into direct speech. I told the children not to stay out too late.
+A. I said, "Don't stay out too late, children."
+B. I said, "Don't stay out late, children."
+C. I told, "You can't stay out too late, children."
+D. I said, "Stay out too late, children."
+Answer: A
+
+Q.78: What does the idiom "a snake in the grass" mean?
+A. A loyal and trustworthy friend
+B. A secret or deceitful enemy
+C. A person who loves nature
+D. A shy and introverted person
+Answer: B
+
+Q.79: Identify the error in the sentence. He was complete ignored by the team during the discussion.
+A. during
+B. ignored
+C. complete
+D. team
+Answer: C
+
+Q.80: Choose the option that best improves the sentence by using the correct collocation highlighted in bold. The company reached a heavy loss last quarter due to poor management.
+A. suffered a heavy
+B. reached a large loss loss
+C. made a hard loss
+D. got a strong loss
+Answer: A
+
+Q.81: Complete the sentence by choosing a suitable word to fill in the blank. Had he not intervened, the negotiations ______ long before the deadline.
+A. would break
+B. had broken
+C. would have
+D. should be broken down breaking
+Answer: C
+
+Q.82: Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?
+
+1. It was formed due to tectonic activity, where the Earth's crust is slowly pulling apart, creating deep fissures and valleys.
+
+2. The Great Rift Valley in East Africa is one of the most significant geological formations on Earth.
+
+3. The valley is home to some of the richest fossil sites, including discoveries of Australopithecus fossils that provide insights into early human ancestors.
+
+4. Over time, the valley has influenced the course of human evolution, as early hominins adapted to its diverse environments.
+
+5. Today, the region continues to be studied by geologists and anthropologists to understand both Earth's history and the origins of humankind.
+A. 2-1-4-3-5
+B. 3-1-4-5-2
+C. 3-2-1-4-5
+D. 5-4-3-2-1
+Answer: A
+
+Q.83: Choose the correct one-word substitution for the sentence below. "Ravi is known for his ability to manage money wisely and never spends more than necessary."
+A. Extravagant
+B. Prodigal
+C. Thrifty
+D. Spendthrift
+Answer: B
+
+Q.84: Which of the following refers to a group of stars that form a recognizable pattern in the sky?
+A. Eclipse
+B. Constellation
+C. Meteor
+D. Asteroid
+Answer: B
+
+Q.85: Select the most appropriate antonym of the given word. Voluble
+A. Talkative
+B. Garrulous
+C. Reticent
+D. Chatty
+Answer: C
+
+Q.86: Choose the correct meaning of idiom: Grain of salt
+A. Complete faith in something
+B. A hint of manipulation
+C. A cautious or skeptical attitude toward truth
+D. An excess of honesty
+Answer: B
+
+Q.87: Spot the correct spelling of word meaning 'disguise or concealment'
+A. Camoflage
+B. Camouflage
+C. Camoflauge
+D. Camuoflage
+Answer: C
+
+Q.88: Select the correct option: The operative complied, albeit ___ reluctance.
+A. with great
+B. in great
+C. on great
+D. at great
+Answer: B
+
+Q.89: Find the part of the sentence that contains an error: She has the rare ability (1)/ of making complex theories (2)/ sound simple (3)/ and intuitively clear. (4)
+A. 1
+B. 2
+C. 3
+D. 4
+Answer: A
+
+Q.90: Find the part of the sentence that contains an error: What the consultant suggested implementing (1)/ was a method that would reduce redundancies (2)/ and optimize interdepartmental workflows (3)/ without requiring additional fundings. (4)
+A. 1
+B. (2)
+C. (3)
+D. (4)
+Answer: A
+
+Q.91: Change the following from active to passive: They are building a new bridge across the river.
+A. A new bridge is built across the river by them.
+B. A new bridge has been built across the river by them.
+C. A new bridge is being built across the river by them.
+D. A new bridge was being built across the river by them.
+Answer: C
+
+Q.92: Change the following from active to passive: The opposition is expected to challenge the ruling in court.
+A. It was expected that the ruling would be challenged in court.
+B. The ruling is expected to be challenged in court by the opposition.
+C. Challenging the ruling is expected by the opposition.
+D. The opposition was expected to be challenging the ruling.
+Answer: B
+
+Q.93: A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. He said that nothing but sheer luck could have saved them that day.
+A. "Only sheer luck saved them that day," he said.
+B. "Sheer luck might have saved them that day," he said.
+C. "Nothing but sheer luck could have saved us that day," he said.
+D. "Only good fortune was with them that day," said he.
+Answer: C
+
+Q.94: Choose the most appropriate synonym of the underlined word. The trespasser remained obstinate despite repeated warnings.
+A. Flexible
+B. Stubborn
+C. Gentle
+D. Obedient
+Answer: B
+
+Q.95: The following sentence has been divided into four parts (P, Q, R, and S). The last part (S5) is fixed. Rearrange the remaining parts to form a grammatically correct and meaningful sentence, and choose the correct sequence. P: been able on more than one occasion to verify Professor Clark's observations in regard to Q: nerve-tissue is found in all animals above and including Hydrozoa according to Romanes, but R: I am inclined to believe that it is present in animals even lower than Hydrozoa because I have S: the protozoan "Stentor Polymorphus", which has a well-developed nervous system, and I have S5: moreover seen unquestionable acts of conscious determination enacted by this little creature.
+A. RPQS
+B. PSRQ
+C. SQPR
+D. QRPS
+Answer: D
+
+Q.96: **Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. In a narrow street inhabited by struggling artists, two young artists, Sue and Johnsy, lived together in a modest apartment. During a severe winter, Johnsy contracted pneumonia and gradually lost both her strength and her desire to recover. From her bed, she could see an old ivy vine clinging to the wall of a neighbouring building. As the cold wind tore away its leaves, she developed the strange belief that her life would end when the final leaf fell. Sue tried to dismiss this belief as irrational, but Johnsy continued to watch the vine with increasing despair. An elderly painter named Behrman lived downstairs. Although he had spoken for years about producing a masterpiece, he had never created anything that fulfilled his ambition. When Sue told him about Johnsy's condition, he appeared angry at her superstition but was deeply concerned. That night, a violent storm swept through the city. By morning, Johnsy expected the vine to be completely bare. Yet one leaf remained firmly attached to the wall. It survived another day of wind and rain. Its apparent endurance stirred something within her. She began to feel ashamed that a fragile leaf could resist the storm while she had surrendered hope. Johnsy slowly recovered. Sue later revealed that the leaf was not real. Behrman had painted it on the wall during the storm and had died of pneumonia soon afterwards. His masterpiece was never displayed in a gallery, but it restored a human being's will to live.
+
+---
+
+What does Johnsy's belief about the falling ivy leaves reveal about her mental condition?
+A. She had become indifferent to Sue's concern.
+B. She had linked her survival to an irrational belief.
+C. She had misunderstood the cause of her illness.
+D. She had lost confidence in medical treatment.
+Answer: B
+
+Q.97: **Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. In a narrow street inhabited by struggling artists, two young artists, Sue and Johnsy, lived together in a modest apartment. During a severe winter, Johnsy contracted pneumonia and gradually lost both her strength and her desire to recover. From her bed, she could see an old ivy vine clinging to the wall of a neighbouring building. As the cold wind tore away its leaves, she developed the strange belief that her life would end when the final leaf fell. Sue tried to dismiss this belief as irrational, but Johnsy continued to watch the vine with increasing despair. An elderly painter named Behrman lived downstairs. Although he had spoken for years about producing a masterpiece, he had never created anything that fulfilled his ambition. When Sue told him about Johnsy's condition, he appeared angry at her superstition but was deeply concerned. That night, a violent storm swept through the city. By morning, Johnsy expected the vine to be completely bare. Yet one leaf remained firmly attached to the wall. It survived another day of wind and rain. Its apparent endurance stirred something within her. She began to feel ashamed that a fragile leaf could resist the storm while she had surrendered hope. Johnsy slowly recovered. Sue later revealed that the leaf was not real. Behrman had painted it on the wall during the storm and had died of pneumonia soon afterwards. His masterpiece was never displayed in a gallery, but it restored a human being's will to live.
+
+---
+
+Which factor most seriously obstructed Johnsy's recovery?
+A. Her psychological surrender to a morbid superstition
+B. Her inability to receive continuous medical attention
+C. Her prolonged exposure to severe winter weather
+D. Her dissatisfaction with her life as a struggling artist
+Answer: A
+
+Q.98: **Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. In a narrow street inhabited by struggling artists, two young artists, Sue and Johnsy, lived together in a modest apartment. During a severe winter, Johnsy contracted pneumonia and gradually lost both her strength and her desire to recover. From her bed, she could see an old ivy vine clinging to the wall of a neighbouring building. As the cold wind tore away its leaves, she developed the strange belief that her life would end when the final leaf fell. Sue tried to dismiss this belief as irrational, but Johnsy continued to watch the vine with increasing despair. An elderly painter named Behrman lived downstairs. Although he had spoken for years about producing a masterpiece, he had never created anything that fulfilled his ambition. When Sue told him about Johnsy's condition, he appeared angry at her superstition but was deeply concerned. That night, a violent storm swept through the city. By morning, Johnsy expected the vine to be completely bare. Yet one leaf remained firmly attached to the wall. It survived another day of wind and rain. Its apparent endurance stirred something within her. She began to feel ashamed that a fragile leaf could resist the storm while she had surrendered hope. Johnsy slowly recovered. Sue later revealed that the leaf was not real. Behrman had painted it on the wall during the storm and had died of pneumonia soon afterwards. His masterpiece was never displayed in a gallery, but it restored a human being's will to live.
+
+---
+
+How does the passage redefine Behrman's idea of a "masterpiece"?
+A. It presents artistic greatness as the result of technical perfection.
+B. It suggests that public recognition is essential to establish artistic value.
+C. It shows that artistic success depends on faithfully imitating nature.
+D. It associates artistic greatness with the power to restore human hope.
+Answer: D
+
+Q.99: **Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. In a narrow street inhabited by struggling artists, two young artists, Sue and Johnsy, lived together in a modest apartment. During a severe winter, Johnsy contracted pneumonia and gradually lost both her strength and her desire to recover. From her bed, she could see an old ivy vine clinging to the wall of a neighbouring building. As the cold wind tore away its leaves, she developed the strange belief that her life would end when the final leaf fell. Sue tried to dismiss this belief as irrational, but Johnsy continued to watch the vine with increasing despair. An elderly painter named Behrman lived downstairs. Although he had spoken for years about producing a masterpiece, he had never created anything that fulfilled his ambition. When Sue told him about Johnsy's condition, he appeared angry at her superstition but was deeply concerned. That night, a violent storm swept through the city. By morning, Johnsy expected the vine to be completely bare. Yet one leaf remained firmly attached to the wall. It survived another day of wind and rain. Its apparent endurance stirred something within her. She began to feel ashamed that a fragile leaf could resist the storm while she had surrendered hope. Johnsy slowly recovered. Sue later revealed that the leaf was not real. Behrman had painted it on the wall during the storm and had died of pneumonia soon afterwards. His masterpiece was never displayed in a gallery, but it restored a human being's will to live.
+
+---
+
+What psychological change does the apparent survival of the last ivy leaf bring about in Johnsy?
+A. She begins to believe that nature controls the course of human life.
+B. She becomes suspicious that the leaf has been deliberately preserved.
+C. She feels ashamed of her defeatism and regains the will to survive.
+D. She concludes that her illness is less serious than she had assumed.
+Answer: C
+
+Q.100: **Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. In a narrow street inhabited by struggling artists, two young artists, Sue and Johnsy, lived together in a modest apartment. During a severe winter, Johnsy contracted pneumonia and gradually lost both her strength and her desire to recover. From her bed, she could see an old ivy vine clinging to the wall of a neighbouring building. As the cold wind tore away its leaves, she developed the strange belief that her life would end when the final leaf fell. Sue tried to dismiss this belief as irrational, but Johnsy continued to watch the vine with increasing despair. An elderly painter named Behrman lived downstairs. Although he had spoken for years about producing a masterpiece, he had never created anything that fulfilled his ambition. When Sue told him about Johnsy's condition, he appeared angry at her superstition but was deeply concerned. That night, a violent storm swept through the city. By morning, Johnsy expected the vine to be completely bare. Yet one leaf remained firmly attached to the wall. It survived another day of wind and rain. Its apparent endurance stirred something within her. She began to feel ashamed that a fragile leaf could resist the storm while she had surrendered hope. Johnsy slowly recovered. Sue later revealed that the leaf was not real. Behrman had painted it on the wall during the storm and had died of pneumonia soon afterwards. His masterpiece was never displayed in a gallery, but it restored a human being's will to live.
+
+---
+
+What central irony is associated with Behrman's final artistic act?
+A. The work he considered temporary later brought him artistic fame.
+B. The painting he created in secrecy was later displayed publicly.
+C. The leaf appeared lifeless but became his most realistic creation.
+D. The illusion that saved Johnsy's life ultimately cost Behrman his own.
+Answer: D
+

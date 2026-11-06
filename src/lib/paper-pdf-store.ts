@@ -10,6 +10,8 @@ export const DEFAULT_PAPER_PDF_MAP: Record<number | string, string> = {
   "cgl-2025-shift-1": "/papers/ssc-cgl-2025-12-sept-shift-1.pdf",
   4: "/papers/ssc-cgl-2025-12-september-2025-shift-2.pdf",
   "cgl-2025-shift-2": "/papers/ssc-cgl-2025-12-september-2025-shift-2.pdf",
+  5: "/papers/ssc-cgl-2025-12-september-2025-shift-3.pdf",
+  "cgl-2025-shift-3": "/papers/ssc-cgl-2025-12-september-2025-shift-3.pdf",
 };
 
 /**
@@ -67,6 +69,51 @@ export async function setPaperDownloadAllowed(paperId: number, allowed: boolean)
 }
 
 /**
+ * Returns whether dynamic translation / bilingual mode during exam is enabled for this paper
+ */
+export function isPaperTranslatorAllowed(paper: { id: number; allow_translation?: boolean }): boolean {
+  if (typeof window !== "undefined") {
+    const disabled = localStorage.getItem(`ssczone_paper_translator_disabled_${paper.id}`);
+    if (disabled === "true") return false;
+    const enabled = localStorage.getItem(`ssczone_paper_translator_enabled_${paper.id}`);
+    if (enabled === "true") return true;
+  }
+
+  if (typeof paper.allow_translation === "boolean") {
+    return paper.allow_translation;
+  }
+
+  return true; // Default: bilingual / translator enabled
+}
+
+/**
+ * Toggles translator permission during exam for candidates on this paper
+ */
+export async function setPaperTranslatorAllowed(paperId: number, allowed: boolean): Promise<boolean> {
+  if (typeof window !== "undefined") {
+    if (allowed) {
+      localStorage.removeItem(`ssczone_paper_translator_disabled_${paperId}`);
+      localStorage.setItem(`ssczone_paper_translator_enabled_${paperId}`, "true");
+    } else {
+      localStorage.setItem(`ssczone_paper_translator_disabled_${paperId}`, "true");
+      localStorage.removeItem(`ssczone_paper_translator_enabled_${paperId}`);
+    }
+    window.dispatchEvent(new CustomEvent("ssczone-paper-settings-changed", { detail: { paperId, allowTranslation: allowed } }));
+  }
+
+  try {
+    const res = await fetch("/api/papers/settings", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ paperId, allowTranslation: allowed }),
+    });
+    return res.ok;
+  } catch {
+    return true;
+  }
+}
+
+/**
  * Returns the best available PDF URL for a given paper record
  */
 export function getPaperPdfUrl(paper: { id: number; title?: string; pdf_url?: string }): string | null {
@@ -87,6 +134,9 @@ export function getPaperPdfUrl(paper: { id: number; title?: string; pdf_url?: st
 
   // Check matching by title keywords
   const t = (paper.title || "").toLowerCase();
+  if (t.includes("shift 3")) {
+    return "/papers/ssc-cgl-2025-12-september-2025-shift-3.pdf";
+  }
   if (t.includes("shift 2")) {
     return "/papers/ssc-cgl-2025-12-september-2025-shift-2.pdf";
   }

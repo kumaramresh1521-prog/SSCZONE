@@ -1,0 +1,808 @@
+================================================================================
+SSC CGL 2025 TIER-I (HELD ON 12 SEPTEMBER 2025 SHIFT 2)
+Exam: SSC CGL | Year: 2025 | Total Questions: 100 | Duration: 60 Minutes
+Extracted & Verified from Official Answer Key via SSC ZONE (www.ssczone.in)
+Hindi Typos & OCR Artifacts Cleaned & Corrected on: 05 Nov 2026
+Answer Key Accuracy: 100.00% Verified against Official SSC Answer Keys
+================================================================================
+
+Q1. In the following question, select the related word from the given alternatives Liberty : Autonomy :: Equality : ? निम्नलिखित प्रश्न में दिए गए विकल्पों में से संबंधित शब्द का चयन करें स्वतंत्रता : स्वायत्तता :: समानता : ?
+A) Legitimacy / वैधता
+B) Neutrality / तटस्थता
+C) Fairness / निष्पक्षता
+D) Diversity / विविधता
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q2. Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. BGL, GLQ, LQV, QVA, ? दिए गए विकल्पों में से उस अक्षर-समूह का चयन करें जो निम्नलिखित शृंखला में प्रश्न चिह्न (?) को प्रतिस्थापित कर सकता है। BGL, GLQ, LQV, QVA, ?
+A) ZAS
+B) OKS
+C) VAF
+D) AVG
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q3. Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. DAG, FCI, ?, JGM, LIO दिए गए विकल्पों में से उस अक्षर-समूह का चयन करें जो निम्नलिखित शृंखला में प्रश्न चिह्न (?) को प्रतिस्थापित कर सकता है। DAG, FCI, ?, JGM, LIO
+A) GDJ
+B) IFL
+C) HKE
+D) HEK
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q4. Which of the following alternatives will replace the question mark? Atom, Molecule, Cell, ? निम्नलिखित में से कौन सा विकल्प प्रश्न चिह्न के स्थान पर आएगा? परमाणु, अणु, कोशिका, ?
+A) Tissue / ऊतक
+B) Proton / प्रोटॉन
+C) System / प्रणाली
+D) Gene / जीन
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q5. Complete the series: _______, 150, 183, 219, 258 श्रेणी को पूरी करें: _______, 150, 183, 219, 258
+A) 120
+B) 148
+C) 361
+D) 247
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q6. What will come at the place of question mark? 2, 12, 30, 56, 90, ? प्रश्नवाचक चिह्न के स्थान पर क्या आएगा? 2, 12, 30, 56, 90, ?
+A) 132
+B) 140
+C) 142
+D) 150
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q7. Read the following statement carefully and identify the conclusion that follows. Statement: Most farmers in the region depend on monsoon rains for irrigation. Conclusions: I. The region does not have proper irrigation infrastructure. II. A weak monsoon may reduce agricultural output. निम्नलिखित कथन को ध्यान से पढ़ें और निष्कर्ष निकालें। कथन: क्षेत्र के अधिकांश किसान सिंचाई के लिए मानसून की बारिश पर निर्भर हैं। निष्कर्ष: I. क्षेत्र में उचित सिंचाई इंफ्रास्ट्रक्चर नहीं है। II. कमजोर मानसून कृषि उत्पादन को कम कर सकता है।
+A) Only Conclusion I follows / केवल निष्कर्ष । अनुसरण करता है
+B) Only Conclusion II follows / केवल निष्कर्ष II अनुसरण करता है
+C) Both I and II follow / । और II दोनों अनुसरण करते हैं
+D) Neither I nor II follows / न तो I और न ही II अनुसरण करता है
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q8. Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option. Statement: The discovery of exoplanets in habitable zones around distant stars has provided exciting prospects for the search for extraterrestrial life, yet the vast distances and technological limitations pose significant obstacles to direct exploration. Assumptions: I. Exoplanets located in habitable zones may have the potential to support life. II. Current technology is insufficient to directly explore exoplanets in habitable zones. III. Direct exploration of exoplanets will be unnecessary if we detect signs of life remotely. निर्देश: कथन को मान्य बनाने के लिए आवश्यक मान्यताओं की पहचान करें, फिर सही विकल्प चुनें। कथन: दूर के तारों के आसपास रहने योग्य क्षेत्रों में एक्सोप्लैनेट की खोज ने अलौकिक जीवन की खोज के लिए रोमांचक संभावनाएँ प्रदान की हैं, फिर भी विशाल दूरियाँ और तकनीकी सीमाएँ प्रत्यक्ष अन्वेषण के लिए महत्वपूर्ण बाधाएँ उत्पन्न करती हैं। धारणाएँ: I. रहने योग्य क्षेत्रों में स्थित एक्सोप्लैनेट में जीवन का समर्थन करने की क्षमता हो सकती है। II. वर्तमान तकनीक रहने योग्य क्षेत्रों में एक्सोप्लैनेट का सीधे अन्वेषण करने के लिए अपर्याप्त है। III. यदि हम दूर से जीवन के संकेतों का पता लगाते हैं तो एक्सोप्लैनेट का प्रत्यक्ष अन्वेषण अनावश्यक होगा।
+A) Only I and II are implicit / केवल । और ॥ निहित हैं
+B) Only II and III are implicit / केवल II और III अंतर्निहित हैं।
+C) Only I is implicit / केवल । निहित है।
+D) All assumptions are implicit / सभी धारणाएँ अंतर्निहित हैं।
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q9. How many meaningful four-letter English words can be formed using the first, second, third, and sixth letters of the word "PROVIDE" (when counted from left to right), using each letter only once in each word? "PROVIDE" शब्द के पहले, दूसरे, तीसरे और छठे अक्षरों का उपयोग करके (बायें से दायें गिनने पर) प्रत्येक शब्द में प्रत्येक अक्षर का केवल एक बार उपयोग करते हुए कितने सार्थक चार-अक्षर वाले अंग्रेजी शब्द बनाए जा सकते हैं?
+A) One / एक
+B) Three / तीन
+C) Two / दो
+D) Five / पाँच
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q10. Which of the following addresses are identical to each other: 1. Rajeev Chauhan 3/5, Lotus Enclave, Kanpur, 208012 2. Rajeev Chauhan 3-5, Lotus Enclave, Kanpur, 208012 3. Rajeev Chauhan 3-5, Lotus Enclave, Kanpur, 208012 4. Rajeev Chauhan 3-5, Lotus Enclave, Kanpur, 208002 निम्नलिखित में से कौन-से पते एक दूसरे के समान हैं: 1. Rajeev Chauhan 3/5, Lotus Enclave, Kanpur, 208012 2. Rajeev Chauhan 3-5, Lotus Enclave, Kanpur, 208012 3. Rajeev Chauhan 3-5, Lotus Enclave, Kanpur, 208012 4. Rajeev Chauhan 3-5, Lotus Enclave, Kanpur, 208002
+A) 1 and 2 / 1 और 2
+B) 2 and 3 / 2 और 3
+C) 2 and 4 / 2 और 4
+D) 3 and 4 / 3 और 4
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q11. Each of the letters in the word STAMINA is arranged in alphabetical order. How many letters are there in the English alphabetical series between the letter that is first from the left and the one that is fourth from the right in the new letter-cluster formed? STAMINA शब्द में प्रत्येक अक्षर को वर्णमाला क्रम में व्यवस्थित किया गया है। नए अक्षर-समूह में बायें से पहले अक्षर और दायें से चौथे अक्षर के बीच अंग्रेजी वर्णमाला शृंखला में कितने अक्षर हैं?
+A) 11
+B) 12
+C) 13
+D) 14
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q12. Find the best option that best completes the analogy. NPR : OQS :: XYZ : ? वह सर्वोत्तम विकल्प खोजें जो सादृश्य को सर्वोत्तम रूप से पूरा करता है। NPR: OQS:: XYZ: ?
+A) YZA
+B) ZAB
+C) YAC
+D) YAZ
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q13. In a row of 50 books, Book A is 15th from left and Book B is 20th from right. How many books lie between them? 50 पुस्तकों की एक पंक्ति में, पुस्तक A बायें से 15वें स्थान पर है और पुस्तक B दायें से 20वें स्थान पर है। उनके बीच कितनी पुस्तकें हैं?
+A) 17
+B) 15
+C) 12
+D) 10
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q14. In each of the following questions, the second word is formed by rearranging the letters of the first word according to a specific pattern. Identify that pattern and apply the same to the third word to find the correct answer from the given alternatives. NUMERAL : UEALRMN :: ALGEBRA : ? निम्नलिखित प्रत्येक प्रश्न में, पहले शब्द के अक्षरों को एक विशिष्ट पैटर्न के अनुसार पुनर्व्यवस्थित करके दूसरा शब्द बनाया गया है। उस पैटर्न को पहचानिए और दिए गए विकल्पों में से सही उत्तर खोजने के लिए उसे तीसरे शब्द पर लागू कीजिए। NUMERAL : UEALRMN :: ALGEBRA : ?
+A) LRBAGEA / LRBAGEA
+B) BARLAGE / BARLAGE
+C) LERAGBA / LERAGBA
+D) LERABGA / LERABGA
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q15. Find the odd one out from the given alternatives: दिए गए विकल्पों में से भिन्न विकल्प को चुनिए:
+A) TDS
+B) GST
+C) VAT
+D) DNA
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q16. If A is the son of B, and B is the brother of C, how is C related to A? यदि A, B का पुत्र है और B, C का भाई है, तो C, A से किस प्रकार संबंधित है?
+A) Father / पिता
+B) Uncle / चाचा
+C) Brother / भाई
+D) Cousin / चचेरा
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q17. One number is not like the others: 1331, 2197, 3375, 4096 एक संख्या अन्य संख्याओं से भिन्न है: 1331, 2197, 3375, 4096
+A) 1331
+B) 3375
+C) 4096
+D) 2197
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q18. Find the number that breaks the pattern: 2, 5, 10, 17, 28, 40, 58 वह संख्या ज्ञात कीजिए जो पैटर्न को तोड़ती है: 2, 5, 10, 17, 28, 40, 58
+A) 10
+B) 17
+C) 40
+D) 28
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q19. In a certain code language, each letter is assigned a unique digit. Based on the given codes for specific words, determine the code for the target word using the same logic. If MOUSE is coded as 45291 and RAT as 786, how is STORE coded? किसी विशिष्ट कूट भाषा में, प्रत्येक अक्षर को एक विशिष्ट अंक दिया जाता है। विशिष्ट शब्दों के लिए दिए गए कूटों के आधार पर, उसी तर्क का उपयोग करके लक्ष्य शब्द के लिए कूट निर्धारित कीजिए। यदि MOUSE को 45291 और RAT को 786 के रूप में कूटबद्ध किया जाता है, तो STORE को किस प्रकार कूटबद्ध किया जाएगा?
+A) 96571
+B) 97653
+C) 98345
+D) 96278
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q20. If 7 $ 3 = 58 and 6 $ 2 = 40, what is 5 $ 1? यदि 7 $ 3 = 58 और 6 $ 2 = 40 है, तो 5 $ 1 क्या है?
+A) 26
+B) 24
+C) 28
+D) 22
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q21. Pointing to a girl, a woman says, 'She is the daughter of my mother's only daughter.' How is the girl related to the woman? एक लड़की की ओर इशारा करते हुए एक महिला कहती है, 'वह मेरी माता की एकमात्र पुत्री की पुत्री है।' लड़की का महिला से क्या संबंध है?
+A) Daughter / पुत्री
+B) Daughter-in-law / पुत्रवधू
+C) Cousin / चचेरा
+D) Sister / बहन
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q22. A woman says, "This man's son's sister is my daughter." How is the woman related to the man? एक महिला कहती है, "इस व्यक्ति के पुत्र की बहन मेरी पुत्री है।" महिला का उस व्यक्ति से क्या संबंध है?
+A) Wife / पत्नी
+B) Sister / बहन
+C) Mother / माता
+D) Daughter-in-law / पुत्रवधू
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q23. Two numbers are in ratio 7:9, and their sum is 128. Find the numbers. दो संख्याएँ 7:9 के अनुपात में हैं, और उनका योग 128 है। संख्याएँ ज्ञात कीजिए।
+A) 49, 79
+B) 56, 72
+C) 62, 66
+D) 70, 58
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q24. If 16 + 11 = A and 1/9 = B, and A% B = (A × B) - 1, then what is A% B? यदि 16+11=A और 1/9=B है, और A % B=(A × B)-1 है, तो A % B क्या है?
+A) 0
+B) -3
+C) 2
+D) 5
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q25. If the sum of 28 and 22 is multiplied by 8, what is the result? यदि 28 और 22 के योग को 8 से गुणा किया जाए तो परिणाम क्या होगा?
+A) 384
+B) 400
+C) 415
+D) 416
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q26. Read the below statements marked as Assertion (A) and Reason (R). Mark the correct options: Assertion (A): Humayun's Tomb was the first major Mughal garden tomb and directly inspired the design of the Taj Mahal. Reason (R): It introduced the charbagh garden layout and double-domed mausoleum style that became characteristic of later Mughal architecture. नीचे दिए गए कथनों को अभिकथन (A) और कारण (R) के रूप में चिह्नित करें। सही विकल्पों को चिह्नित करें: अभिकथन (A): हुमायूँ का मकबरा पहला प्रमुख मुगल उद्यान मकबरा था और उसने सीधे ताजमहल के डिज़ाइन को प्रेरित किया। कारण (R): इसने चारबाग उद्यान लेआउट और दोहरे गुंबद वाले मकबरे की शैली पेश की जो बाद में मुगल वास्तुकला की विशेषता बन गई।
+A) Both A and R are true, and R is the correct explanation of A. / A और R दोनों सत्य हैं, तथा R, A का सही स्पष्टीकरण है।
+B) Both A and R are true, but R is not the correct explanation of A. / A और R दोनों सत्य हैं, लेकिन R, A का सही स्पष्टीकरण नहीं है।
+C) A is true, but R is false. / A सत्य है, लेकिन R असत्य है।
+D) A is false, but R is true. / A असत्य है, लेकिन R सत्य है
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q27. Which ancient ruler's administration is noted for its highly centralized structure? किस प्राचीन शासक का प्रशासन अपनी अत्यधिक केंद्रीकृत संरचना के लिए जाना जाता है?
+A) Harshavardhana / हर्षवर्धन
+B) Samudragupta / समुद्रगुप्त
+C) Chandragupta Maurya / चन्द्रगुप्त मौर्य
+D) Pulakeshin II / पुलकेशिन द्वितीय
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q28. Which of the following correctly reflects the evolution of Indian classical music? निम्नलिखित में से कौन-सा कथन भारतीय शास्त्रीय संगीत के विकास को सही ढंग से दर्शाता है?
+A) Jatis evolved from ragas as per ancient texts / प्राचीन ग्रंथों के अनुसार जातियां रागों से विकसित हुई हैं।
+B) 72-mela system was given by Bharata in 13th century / 72-मेला प्रणाली 13 वीं शताब्दी में भरत द्वारा दी गई थी।
+C) Folk music originally used mela and grama scales / लोक संगीत में मूलतः: मेला और ग्राम्य स्केल का प्रयोग किया जाता था।
+D) Ragas evolved from jatis; 72-mela was by Venkatamakhi / रागों का विकास जातियों से हुआ; 72-मेल वेंकटमाखी द्वारा रचित था।
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q29. Consider the following statements about the phases of long jump: 1) The athlete attains maximum momentum by running on the runway before take-off. 2) During take-off, the athlete pushes off with the weaker foot to maintain balance. Which of the statements given above are correct? लंबी कूद के चरणों के बारे में निम्नलिखित कथनों पर विचार करें: 1) एथलीट टेक-ऑफ़ से पहले रनवे पर दौड़कर सबसे बड़ा क्षण प्राप्त करता है। 2) टेक-ऑफ़ के दौरान, एथलीट संतुलन बनाए रखने के लिए कमजोर पैर से धक्का देता है। ऊपर दिए गए कथनों में से कौन-सा कथन सही है?
+A) Only 1 is Correct / केवल 1 सही है।
+B) Only 2 is Correct / केवल 2 सही है।
+C) 1 and 2 are correct / 1 और 2 सही हैं।
+D) Neither 1 nor 2 are Correct / न तो 1 और न ही 2 सही है।
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q30. Mary Kom's most recent international gold medal was won at which tournament? मैरी कॉम ने अपना सबसे हालिया अंतर्राष्ट्रीय स्वर्ण पदक किस टूर्नामेंट में जीता था?
+A) Asian Games, Hangzhou / एशियाई खेल, हांग्जो
+B) President's Cup, Indonesia / प्रेसिडेंट कप, इंडोनेशिया
+C) Commonwealth Games, Birmingham / राष्ट्रमंडल खेल, बर्मिंघम
+D) Olympic Games, Tokyo / ओलंपिक खेल, टोक्यो
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q31. The Regulating Act of 1773 primarily introduced changes in the Company's administration in which two distinct areas? 1773 के रेगुलेटिंग एक्ट ने मुख्य रूप से कंपनी के प्रशासन में किन दो अलग-अलग क्षेत्रों में परिवर्तन पेश किए?
+A) Company's Judicial system and revenue collection. / कंपनी की न्यायिक प्रणाली और राजस्व संग्रह।
+B) Company's Military strategy and trade regulations. / कंपनी की सैन्य रणनीति और व्यापार विनियमन।
+C) Company's constitution at home and territorial control in India. / घरेलू स्तर पर कंपनी का संविधान और भारत में प्रादेशिक नियंत्रण।
+D) Company's relations with princely states and foreign policy. / कंपनी के रियासतों के साथ संबंध और विदेश नीति।
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q32. Consider the following statements regarding India's water-sharing treaties with its neighbours: 1) The Mahakali Treaty signed with Nepal in 1996 includes provisions for integrated development of the Mahakali River and the Pancheshwar Project. 2) The Ganga Water Treaty signed with Bangladesh in 1996 allows for the sharing of Ganga waters at Farakka throughout the entire year. Which of the statements above is/are correct? भारत की अपने पड़ोसियों के साथ जल-बंटवारा संधियों के संबंध में निम्नलिखित कथनों पर विचार कीजिए: 1) 1996 में नेपाल के साथ हस्ताक्षरित महाकाली संधि में महाकाली नदी और पंचेश्वर परियोजना के एकीकृत विकास के प्रावधान शामिल हैं। 2) 1996 में बांग्लादेश के साथ हस्ताक्षरित गंगा जल संधि, पूरे वर्ष फरक्का में गंगा जल के बँटवारे की अनुमति देती है। उपर्युक्त कथनों में से कौन सा/से सही है/हैं?
+A) Only 1 is Correct / केवल 1 सही है।
+B) Only 2 is Correct / केवल 2 सही है।
+C) Both 1 and 2 are Correct / 1 और 2 दोनों सही है।
+D) Neither 1 nor 2 are Correct / न तो 1 और न ही 2 सही है।
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q33. Fill in the blank: Under the SLKIC vertical of Khelo India, ____ Kendriya Vidyalayas have been adopted in partnership with KVS. रिक्त स्थान भरें: खेलो इंडिया के एसएलकेआईसी वर्टिकल के अंतर्गत, केवीएस के साथ साझेदारी में ____ केंद्रीय विद्यालयों को गोद लिया गया है।
+A) 3
+B) 4
+C) 5
+D) 6
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q34. Consider the following statements about "The Adventures of Kakababu, Volume 1" by Sunil Gangopadhyaya: 1) A pioneering Bengali adventure novel featuring detective Kakababu with mystery and cultural themes. 2) A political satire on post-independence Indian governance. 3) An autobiography of the author's freedom fighter experiences in Bengal. Which of the above statements is/are correct? सुनील गंगोपाध्याय द्वारा लिखित "द एडवेंचर्स ऑफ़ काकाबाबू, खंड 1" के बारे में निम्नलिखित कथनों पर विचार कीजिए: 1) रहस्य और सांस्कृतिक विषयों पर आधारित जासूस काकाबाबू पर आधारित एक अग्रणी बंगाली साहसिक उपन्यास। 2) स्वतंत्रता-पश्चात् भारतीय शासन पर एक राजनीतिक व्यंग्य। 3) बंगाल में लेखक के स्वतंत्रता संग्राम के अनुभवों पर आधारित एक आत्मकथा। उपर्युक्त कथनों में से कौन-सा/से सही है/ हैं?
+A) Only statement 1 is correct / केवल कथन 1 सही है।
+B) Only statement 2 is correct / केवल कथन 2 सही है।
+C) Statements 2 and 3 are correct / कथन 2 और 3 सही हैं।
+D) 1, 2 and 3 are correct / 1, 2 और 3 सही हैं।
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q35. Which indian political leader addressed a special session in 2025 on "Environment, COP-30, and Global Health" ? किस भारतीय राजनीतिक नेता ने 2025 में "पर्यावरण, COP-30 और वैश्विक स्वास्थ्य" पर एक विशेष सत्र को संबोधित किया?
+A) Piyush Goyal / पीयूष गोयल
+B) Hardeep Puri / हरदीप पुरी
+C) Narendra Modi / नरेंद्र मोदी
+D) S. Jaishankar / एस. जयशंकर
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q36. Which of the following types of landslides involves backward rotation of the slipping material? निम्नलिखित में से किस प्रकार के भूस्खलन में फिसलने वाली सामग्री का पीछे की ओर घूमना शामिल होता है?
+A) Rockslide / चट्टान खिसकना
+B) Rock fall / चट्टान गिरना
+C) Slump / स्लम्प
+D) Debris fall / मलबा गिरना
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q37. What is meant by population density? जनसंख्या घनत्व से क्या तात्पर्य है?
+A) Population per household / प्रति परिवार जनसंख्या
+B) People per square kilometre / प्रति वर्ग किलोमीटर लोग
+C) People per region / क्षेत्र के अनुसार लोग
+D) People per district / प्रति जिला लोग
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q38. Assertion (A) and Reason (R) are given below. Choose the correct option: Assertion (A): Population explosion occurs when death rates decline rapidly but birth rates remain high. Reason (R): Societal reproductive behavior changes instantly with improvements in healthcare. नीचे अभिकथन (A) और कारण (R) दिए गए हैं। सही विकल्प चुनें: अभिकथन (A): जनसंख्या विस्फोट तब होता है जब मृत्यु दर में तेज़ी से गिरावट आती है लेकिन जन्म दर ऊँची रहती है। कारण (R): स्वास्थ्य सेवा में सुधार के साथ सामाजिक प्रजनन व्यवहार में तुरंत बदलाव आता है।
+A) Both A and R are true, and R is the correct explanation of A / A और R दोनों सत्य हैं, और R, A का सही स्पष्टीकरण हैं।
+B) Both A and R are true, but R is not the correct explanation / A और R दोनों सत्य हैं, लेकिन R सही स्पष्टीकरण नहीं हैं।
+C) A is true, but R is false / A सत्य है, लेकिन R असत्य हैं।
+D) A is false, but R is true / A असत्य है, लेकिन R सत्य हैं।
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q39. Which of the following best reflects the fundamental objective of applying generative design in aerospace systems engineering? निम्नलिखित में से कौन एयरोस्पेस सिस्टम इंजीनियरिंग में जनरेटिव डिज़ाइन को लागू करने के मूलभूत उद्देश्य को सबसे अच्छी तरह से दर्शाता है?
+A) Facilitating seamless integration of multi-payload platforms in shared bus structures / साझा बस संरचनाओं में बहु-पेलोड प्लेटफॉर्मों के निर्बाध एकीकरण की सुविधा प्रदान करना।
+B) Optimizing mechanical configurations for minimum mass and maximum structural resilience / न्यूनतम द्रव्यमान और अधिकतम संरचनात्मक लचीलेपन के लिए यांत्रिक विन्यास का अनुकूलन करना।
+C) Enhancing life-support redundancies to meet crew safety protocols in deep-space missions / गहन अंतरिक्ष मिशनों में चालक दल के सुरक्षा प्रोटोकॉल को पूरा करने के लिए जीवन-सहायक अतिरेक को बढ़ाना।
+D) Designing adaptive thrust mechanisms to dynamically control orbital corrections / कक्षीय सुधारों को गतिशील रूप से नियंत्रित करने के लिए अनुकूली प्रणोद तंत्रों का डिज़ाइन तैयार करना।
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q40. The function of lysosomes in cells is: कोशिकाओं में लाइसोसोम का कार्य है:
+A) Protein synthesis / प्रोटीन संश्लेषण
+B) Intracellular digestion / अंत:कोशिकीय पाचन
+C) Energy production / ऊर्जा उत्पादन
+D) Genetic information storage / आनुवंशिक सूचना भंडारण
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q41. Which of the following statements regarding Article 270 are correct? 1) Article 270 governs the sharing of taxes between the Union and States, including proceeds from GST. 2) After the 101st Constitutional Amendment, Article 270 includes provisions for distributing revenue from Union taxes and GST. 3) The GST Compensation Cess is also shared between the Union and States under Article 270. अनुच्छेद 270 के संबंध में निम्नलिखित में से कौन-से कथन सही हैं? 1) अनुच्छेद 270 केंद्र और राज्यों के बीच करों के बंटवारे को नियंत्रित करता है, जिसमें GST से प्राप्त आय भी शामिल है। 2) 101वें संविधान संशोधन के बाद, अनुच्छेद 270 में संघीय करों और GST से प्राप्त राजस्व के वितरण के प्रावधान शामिल हैं। 3) GST क्षतिपूर्ति उपकर भी अनुच्छेद 270 के तहत केंद्र और राज्यों के बीच साझा किया जाता है।
+A) 1 and 3 only / केवल 1 और 3
+B) 1 Only / केवल 1
+C) 1 & 2 only / केवल 1 और 2
+D) 2 & 3 only / केवल 2 और 3
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q42. If Earth's radius were reduced by 1% while its mass remained unchanged, what would be the effect on the gravitational acceleration at its surface? यदि पृथ्वी की त्रिज्या 1% कम कर दी जाए जबकि उसका द्रव्यमान अपरिवर्तित रहे, तो इसकी सतह पर गुरुत्वाकर्षण त्वरण पर क्या प्रभाव पड़ेगा?
+A) Increase by approximately 1% / लगभग 1% की वृद्धि
+B) Decrease by approximately 2% / लगभग 2% की कमी
+C) Increase by approximately 2% / लगभग 2% की वृद्धि
+D) Decrease by approximately 1% / लगभग 1% की कमी
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q43. Under Bharatiya Nagarik Suraksha Sanhita(BNSS), what is the maximum period for which a person can be held in police custody in total, even if remanded periodically by a magistrate? भारतीय नागरिक सुरक्षा संहिता (BNSS) के तहत, किसी व्यक्ति को पुलिस हिरासत में रखने की अधिकतम अवधि क्या है, भले ही उसे मजिस्ट्रेट द्वारा समय-समय पर रिमांड पर लिया जाए?
+A) 30 days / 30 दिन
+B) 60 days / 60 दिन
+C) 90 days / 90 दिन
+D) 15 days (for initial remand, extendable) / 15 दिन (प्रारंभिक रिमांड के लिए, विस्तार योग्य)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q44. What is the age range for farmers to enrol in the Pradhan Mantri Kisan Maandhan Yojana (PM-KMY)? प्रधानमंत्री किसान मानधन योजना (PM-KMY) में नामांकन के लिए किसानों की आयु सीमा क्या है?
+A) 18-30 years / 18-30 वर्ष
+B) 18-40 years / 18-40 वर्ष
+C) 21-45 years / 21-45 वर्ष
+D) 25-50 years / 25-50 वर्ष
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q45. Read the below statements marked as Assertion (A) and Reason (R). Mark the correct options: Assertion (A): UDAN Scheme improves regional air connectivity. Reason (R): It provides financial viability gap funding to airlines. नीचे दिए गए कथनों को अभिकथन (A) और कारण (R) से चिह्नित करें। सही विकल्पों को चिह्नित करें: अभिकथन (A): उड़ान योजना क्षेत्रीय हवाई संपर्क में सुधार करती है। कारण (R): यह एयरलाइनों को वित्तीय व्यवहार्यता अंतर निधि प्रदान करती है।
+A) Both A and R are true, and R is the correct explanation of A / A और R दोनों सत्य हैं, और R, A का सही स्पष्टीकरण है।
+B) Both A and R are true, but R is not the correct explanation of A / A और R दोनों सत्य हैं, लेकिन R, A का सही स्पष्टीकरण नहीं है।
+C) A is true, but R is false / A सत्य है, लेकिन R असत्य है।
+D) A is false, but R is true / A असत्य है, लेकिन R सत्य है।
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q46. According to the Global Cities Index 2025 by Oxford Economics, which two cities retained their top positions? ऑक्सफोर्ड इकोनॉमिक्स द्वारा जारी ग्लोबल सिटीज इंडेक्स 2025 के अनुसार, किन दो शहरों ने अपना शीर्ष स्थान बरकरार रखा है?
+A) Tokyo and Beijing / टोक्यो और बीजिंग
+B) London and New York / लंदन और न्यूयॉर्क
+C) Paris and Rome / पेरिस और रोम
+D) Berlin and Moscow / बर्लिन और मॉस्को
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q47. Which of the following statements about light industries is correct? हल्के उद्योगों के बारे में निम्नलिखित में से कौन-सा कथन सही है?
+A) They process heavy ores and minerals. / वे भारी अयस्कों और खनिजों का प्रसंस्करण करते हैं।
+B) They produce large-scale industrial machinery. / वे बड़े पैमाने पर औद्योगिक मशीनरी का उत्पादन करते हैं।
+C) They require bulky and heavy raw materials. / उन्हें भारी एवं भारी कच्चे माल की आवश्यकता होती है।
+D) Use light materials to make consumer goods / उपभोक्ता वस्तुओं को बनाने के लिए हल्के पदार्थों का उपयोग करें।
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q48. Schedule VII of the Constitution contains _______. संविधान की अनुसूची VII में _______ शामिल है।
+A) Election guidelines / चुनाव दिशानिर्देश
+B) Three legislative lists / तीन विधायी सूचियाँ
+C) Emergency powers / आपातकालीन शक्तियाँ
+D) Judicial provisions / न्यायिक प्रावधान
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q49. A coastal city implements a plan to build sea walls and elevate buildings in response to rising sea levels. This action primarily falls under which category of climate change response? एक तटीय शहर बढ़ते समुद्र स्तर के जवाब में समुद्री दीवारें बनाने और इमारतों को ऊँचा करने की योजना लागू करता है। यह कार्यवाही मुख्यतः: जलवायु परिवर्तन प्रतिक्रिया की किस श्रेणी में आती है?
+A) Climate Change Mitigation. / जलवायु परिवर्तन शमन
+B) Carbon Sequestration. / कार्बन पृथक्करण
+C) Geoengineering. / भू-इंजीनियरिंग
+D) Climate Change Adaptation. / जलवायु परिवर्तन अनुकूलन
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q50. What specific physical quantity ensures a satellite maintains its orbit without continuous propulsion? कौन-सी विशिष्ट भौतिक मात्रा यह सुनिश्चित करती है कि उपग्रह निरंतर प्रणोदन के बिना अपनी कक्षा बनाए रखे?
+A) Mass / द्रव्यमान
+B) Gravitational pull / गुरुत्वाकर्षण खिंचाव
+C) Orbital velocity / कक्षीय वेग
+D) Atmospheric drag / वायुमंडलीय खिंचाव
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q51. Let x = √3 + √5 and y = √8 + √2. Which is greater? मान लीजिए x = √3 + √5 और y = √8 + √2 है। कौन-सा बड़ा है?
+A) x=y
+B) x>y / x>y
+C) y>x / y>x
+D) Cannot be determined / तय नहीं किया जा सकता है
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q52. The number of red, blue, and green marbles in a bag is in the ratio 3 : 4 : 6. If 20 red marbles, 15 blue marbles, and an unknown number of green marbles are added to the bag, the ratio of red, blue, and green marbles becomes 4 : 5 : 7. Determine the number of green marbles added. एक बैग में लाल, नीले और हरे कंचों की संख्या का अनुपात 3 : 4 : 6 है। यदि बैग में 20 लाल कंचे, 15 नीले कंचे और अज्ञात संख्या में हरे कंचे डाले जाएं तो लाल, नीले और हरे कंचों का अनुपात 4 : 5 : 7 हो जाता है। डाले गए हरे कंचों की संख्या ज्ञात कीजिए।
+A) 3
+B) 5
+C) 7
+D) 9
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q53. Evaluate the continued fraction: 2 + 1 / [3 + 1 / (4 + 1/2)] सतत भिन्न का मान ज्ञात कीजिए: 2 + 1 / [3 + 1 / (4 + 1/2)]
+A) 67/29
+B) 58/29
+C) 69/29
+D) 71/29
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q54. A and B invest ₹40,000 and ₹60,000 respectively in a business. What is A's share in a profit of ₹50,000? A और B एक व्यवसाय में क्रमशः ₹40,000 और ₹60,000 का निवेश करते हैं। ₹50,000 के लाभ में A का भाग क्या है?
+A) ₹15,000
+B) ₹20,000
+C) ₹25,000
+D) ₹30,000
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q55. A and B contribute to a business investment in the ratio 3:5. They earn a profit of ₹64,000. A is a working partner and receives 10% of the profit extra. What is A's total share? A और B किसी व्यवसाय में 3:5 के अनुपात में निवेश करते हैं। वे ₹64,000 का लाभ अर्जित करते हैं। A एक कार्यकारी भागीदार है और उसे लाभ का 10% अतिरिक्त मिलता है। A का कुल भाग क्या है?
+A) ₹26,500
+B) ₹28,000
+C) ₹38,500
+D) ₹36,000
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q56. In a team of 75 employees, the average monthly sales per employee is ₹ 1.8 lakh. If 30 junior employees average ₹ 1.2 lakh each, what is the average monthly sales figure (in ₹ lakh) for the senior employees? 75 कर्मचारियों की एक टीम में, प्रति कर्मचारी औसत मासिक बिक्री ₹ 1.8 लाख है। यदि 30 कनिष्ठ कर्मचारियों में से प्रत्येक की औसत बिक्री ₹ 1.2 लाख है, तो वरिष्ठ कर्मचारियों की औसत मासिक बिक्री (₹ लाख में) क्या है?
+A) ₹4.2 lakh / ₹4.2 लाख
+B) ₹2.2 lakh / ₹2.2 लाख
+C) ₹2.8 lakh / ₹2.8 लाख
+D) ₹2.7 lakh / ₹2.7 लाख
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q57. The price of petrol shot up by 5%. Before the hike, the price was Rs. 82 per litre. A man travels 3045 km every month and his car gives a mileage of 15 km per litre. What is the increase in the monthly expenditure (to the nearest Rs.) on the man's travel due to the hike in the petrol prices? पेट्रोल के मूल्य में 5% की वृद्धि होती है। वृद्धि से पहले, मूल्य 82 रुपये प्रति लीटर था। एक व्यक्ति प्रत्येक माह 3045 किलोमीटर की यात्रा करता है और उसकी कार 15 किलोमीटर प्रति लीटर का माइलेज देती है। पेट्रोल का मूल्यों में बढ़ोतरी के कारण व्यक्ति की यात्रा पर मासिक खर्च (निकटतम रुपये में) में कितनी वृद्धि हुई है?
+A) ₹820
+B) ₹832
+C) ₹845
+D) ₹850
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q58. A company placed an order for 20 high-end laptops and some quantity of standard desktops. The price of a high-end laptop was 5 times that of a standard desktop. Due to a mistake, the number of laptops and desktops was interchanged in the delivery. This caused the total bill to increase by 80%. What was the ratio of the number of high-end laptops to standard desktops in the original order? एक कंपनी ने 20 हाई-एंड लैपटॉप और कुछ मात्रा में स्टैंडर्ड डेस्कटॉप का ऑर्डर दिया है। हाई-एंड लैपटॉप का मूल्य, स्टैंडर्ड डेस्कटॉप से 5 गुना था। एक गलती के कारण, डिलीवरी में लैपटॉप और डेस्कटॉप की संख्या आपस में बदल जाती है। इससे कुल बिल 80% बढ़ जाता है। मूल ऑर्डर में हाई-एंड लैपटॉप और स्टैंडर्ड डेस्कटॉप की संख्या का अनुपात क्या था?
+A) 1:2
+B) 2:1
+C) 5:2
+D) 2:5
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q59. Find the compound interest on ₹8,000 at 12% per annum for 3 years 4 months, compounded annually. ₹8,000 पर 3 वर्ष 4 माह के लिए 12% वार्षिक दर से वार्षिक संयोजित चक्रवृद्धि ब्याज ज्ञात कीजिए।
+A) ₹3,000
+B) ₹4,000
+C) ₹3,689
+D) ₹3,600
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q60. A candy shop owner buys three kinds of candies: red, blue, and green. Red candies are purchased at 3 for ₹15, blue candies at 4 for ₹18, and green candies at 5 for ₹22. He mixes them in the ratio 1 : 1 : 2. He sells all the mixed candies at 2 for ₹10. What is his approximate gain or loss percentage? एक कैंडी शॉप का मालिक तीन तरह की कैंडी लाल, नीली और हरी खरीदता है। लाल कैंडी 3 कैंडी ₹15 में, नीली कैंडी 4 कैंडी ₹18 में और हरी कैंडी 5 कैंडी ₹22 में खरीदी जाती है। वह उन्हें 1 : 1 : 2 के अनुपात में मिलाता है। वह सभी मिश्रित कैंडी 2 कैंडी ₹10 में बेचता है। उसका अनुमानित लाभ या हानि प्रतिशत क्या है?
+A) Loss of 9.2% / 9.2% की हानि
+B) Profit of 9.29% / 9.29% का लाभ
+C) Profit of 10% / 10% का लाभ
+D) Loss of 10% / 10% की हानि
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q61. The ratio of boys to girls in a school is 7:5. If 20 more girls join the school, the new ratio of boys to girls becomes 7:6. What is the total number of students in the school initially? एक स्कूल में लड़कों और लड़कियों का अनुपात 7:5 है। यदि 20 अतिरिक्त लड़कियाँ स्कूल में शामिल हो जाती हैं, तो लड़कों और लड़कियों का नया अनुपात 7:6 हो जाता है। प्रारंभ में स्कूल में छात्रों की कुल संख्या कितनी थी?
+A) 200
+B) 240
+C) 300
+D) 360
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q62. A, B, and C are capable of completing a job in 30, 45, and 90 days, respectively. A works every day, while B and C join A every fifth day. How long will it take to finish the task? A, B और C किसी कार्य को क्रमशः 30, 45 और 90 दिनों में पूरा कर सकते हैं। A प्रत्येक दिन कार्य करता है, जबकि B और C प्रत्येक पाँचवें दिन A के साथ शामिल होते हैं। कार्य पूरा करने में कितना समय लगेगा?
+A) 25 days / 25 दिन
+B) 18 days / 18 दिन
+C) 16 days / 16 दिन
+D) 12 days / 12 दिन
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q63. A 100-litre solution contains acid and water in the ratio 3:2. Some quantity of this solution is removed and replaced with pure acid. If the final ratio of acid to water becomes 7:3, how many litres of solution were replaced? 100 लीटर के विलयन में अम्ल और पानी का अनुपात 3:2 है। इस विलयन की कुछ मात्रा निकालकर शुद्ध अम्ल से प्रतिस्थापित किया जाता है। यदि अम्ल और पानी का अंतिम अनुपात 7:3 हो जाता है, तो कितने लीटर विलयन को प्रतिस्थापित किया गया था?
+A) 35 litres / 35 लीटर
+B) 25 litres / 25 लीटर
+C) 50 litres / 50 लीटर
+D) 20 litres / 20 लीटर
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q64. The ratio of the efficiencies of two workers, P and Q, is 5 : 2. If P can complete a project in 12 days, how many days will Q take to complete the same project alone? दो श्रमिकों, P और Q की दक्षता का अनुपात 5: 2 है। यदि P एक परियोजना को 12 दिनों में पूरा कर सकता है, तो Q को अकेले उसी परियोजना को पूरा करने में कितने दिन लगेंगे?
+A) 24 days / 24 दिन
+B) 30 days / 30 दिन
+C) 35 days / 35 दिन
+D) 40 days / 40 दिन
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q65. A car starts from point P on a circular track and an SUV starts from point Q, which is 600 meters ahead of P in the direction of motion. The car's speed is 15 m/s, and the SUV's speed is 10 m/s. The circumference of the track is 1.5 km. How much distance will the car have traveled when it first overtakes the SUV? एक कार एक वृत्ताकार ट्रैक पर बिंदु P से चलना प्रारंभ करती है और एक SUV बिंदु Q से चलना प्रारंभ करती है, जो चाल की दिशा में P से 600 मीटर आगे है। कार की चाल 15 मीटर/सेकंड है, और SUV की चाल 10 मीटर/सेकंड है। ट्रैक की परिधि 1.5 किमी है। जब कार पहली बार SUV से आगे निकलेगी तो उसने कितनी दूरी तय की होगी?
+A) 900 m / 900 मीटर
+B) 1200 m / 1200 मीटर
+C) 1500 m / 1500 मीटर
+D) 1800 m / 1800 मीटर
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q66. A circular park having a radius of 14 m. If a 1.5 m wide path is built around it, what is the approximate area of the path? एक वृत्ताकार पार्क की त्रिज्या 14 मीटर है। यदि इसके चारों ओर 1.5 मीटर चौड़ा पथ बनाया जाए, तो पथ का अनुमानित क्षेत्रफल क्या है?
+A) 139 m² / 139 मीटर²
+B) 135 m² / 135 मीटर²
+C) 142 m² / 142 मीटर²
+D) 150 m² / 150 मीटर²
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q67. What is 5π/4 radians in degrees? 5π/4 रेडियन कितने डिग्री में है?
+A) 225° / 225°
+B) 180° / 180°
+C) 240° / 240°
+D) 360° / 360°
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q68. The line y = -x + 4 passes through which of the following points? रेखा y = -x + 4, निम्नलिखित में से किस बिंदु से होकर गुजरती है?
+A) (2, 2)
+B) (5, 4)
+C) (1, 2)
+D) (3, 6)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q69. What is the central angle of a sector with an arc length of 10 cm in a circle of radius 5 cm? 5 सेमी त्रिज्या वाले वृत्त में 10 सेमी चाप लंबाई वाले एक त्रिज्यखंड का केंद्रीय कोण क्या है?
+A) 6 radians / 6 रेडियन
+B) 3 radians / 3 रेडियन
+C) 2 radians / 2 रेडियन
+D) 4 radians / 4 रेडियन
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q70. If tan(90° – A) = √3, what is sin A? यदि tan(90° - A) = √3 है, तो sin A का मान क्या है?
+A) 1/2
+B) √3/2
+C) 1/√2
+D) 1
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q71. If x = √7, determine the value of x + 1/x. यदि x = √7 है, तो x + 1/x का मान ज्ञात कीजिए।
+A) 8√7 / 7
+B) 7√7 / 8
+C) 6√7 / 7
+D) 9√7 / 7
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q72. Two triangles are similar with sides in the ratio 3:5. What is the ratio of their areas? दो त्रिभुज समरूप हैं जिनकी भुजाओं का अनुपात 3:5 है। उनके क्षेत्रफलों का अनुपात क्या है?
+A) 3:5
+B) 5:3
+C) 9:25 / 9:25
+D) 25:9
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q73. If x = √[(2 + √3)/(2 - √3)], then determine the value of x² + x - 9? यदि x = √[(2 + √3)/(2 - √3)] है, तब x² + x - 9 का मान ज्ञात कीजिए।
+A) 4√3
+B) 5√3
+C) 6√3
+D) 3√3
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q74. The angles of a cyclic quadrilateral are in the ratio 1:2:3:4. What is the measure of the smallest angle? एक चक्रीय चतुर्भुज के कोणों का अनुपात 1:2:3:4 है। सबसे छोटे कोण का माप क्या है?
+A) 36° / 36°
+B) 72° / 72°
+C) 108° / 108°
+D) 144° / 144°
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q75. If sec A = 13/5 and A is acute, find sin A. यदि sec A = 13/5 और A न्यूनकोण है, तो sin A ज्ञात कीजिए।
+A) 5/13
+B) 12/13
+C) 13/12
+D) 13/5
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q76. Select the most appropriate synonym of the given word: ABNEGATE
+A) Demand
+B) Accept
+C) Renounce
+D) Support
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q77. Choose the correct meaning of idiom: Move heaven and earth
+A) To relocate frequently
+B) To work tirelessly to achieve something
+C) To stay silent in protest
+D) To follow blindly
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q78. Select the most appropriate antonym of the given word. Puissant
+A) Feeble
+B) Robust
+C) Powerful
+D) Strong
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q79. Identify the misspelt word
+A) Supersede
+B) Perseverance
+C) Priviledge
+D) Assassinate
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q80. Spot the correct spelling of a drug-effect psychology field.
+A) Psychopharmacology
+B) Psychopharmacholog
+C) Psychopharmeocology
+D) Psychopharmocology
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q81. Choose the correct one-word substitute for: 'A person who abstains from all forms of indulgence'.
+A) Ascetic
+B) Agnostic
+C) Mystic
+D) Skeptic
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q82. Select the correct option: Neither the principal investigator ________ the co-authors anticipated the backlash.
+A) nor
+B) or
+C) and
+D) nor did
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q83. Select the correct option: The board will convene next Friday, ____ final approval is expected.
+A) at which
+B) on which
+C) when
+D) whereupon
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q84. Select the correct option: Nothing short of a paradigm shift will ____ the entrenched bureaucratic inertia.
+A) persuade
+B) dislodge
+C) dissuasion
+D) disillusion
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q85. Find the part of the sentence that contains an error: Much of what appears to be coordination (1)/ among the regulatory bodies and private stakeholders (2)/ are, in fact, coincidental overlaps (3)/ caused by differing mandates. (4)
+A) (1)
+B) (2)
+C) (3)
+D) (4)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q86. Find the part of the sentence that contains an error: That the framework lacks provisions for backward compatibility (1)/ is less problematic than the assumption (2)/ that all peripheral institutions will, without coercion, (3)/ adheres to the central directive as framed. (4)
+A) (1)
+B) (2)
+C) (3)
+D) (4)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q87. Change the following from active to passive: People can seldom access archived manuscripts without clearance.
+A) Archived manuscripts can seldom being accessed without clearance.
+B) Archived manuscripts could seldom be accessed without clearance.
+C) Archived manuscripts can seldom be accessed without clearance.
+D) Archived manuscripts are seldom able to be accessed without clearance.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q88. Select the sentence containing the homonym of the highlighted word: The prince's **gules** dominated the family coat of arms.
+A) The tapestry featured gules and argent prominently.
+B) The chef prepared a sauce of deep gules and cumin.
+C) The gules border signified martial lineage.
+D) The herald explained the symbolism of gules to visitors.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q89. Convert the sentence provided below from its passive voice structure to an active voice structure: The package is delivered to the office every morning.
+A) The office delivers the package every morning.
+B) Someone delivers the package to the office every morning.
+C) The office has delivered the package every morning.
+D) The package delivers itself to the office every morning.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q90. PASSAGE (Q.90 - Q.94) Read the following passage and answer the questions based on the passage : The proliferation of social media has fundamentally transformed the democratic landscape, acting both as a catalyst for civic engagement and a conduit for manipulation. Platforms like Twitter, Facebook, and Instagram, once relegated to the domain of personal expression, now serve as powerful instruments of political discourse, enabling citizens to articulate opinions, mobilize for causes, and scrutinize authority in real-time. At its core, democracy thrives on the free flow of information, and social media ostensibly democratizes this process by dismantling traditional gatekeeping. Political leaders communicate directly with constituents, bypassing editorial filters, while grassroots movements harness virality to amplify marginalized voices. During critical events—be it elections, protests, or legislative debates—social media acts as a digital agora, fostering participatory dialogue that was once confined to town halls or print columns. However, this unprecedented openness is double-edged. The same platforms that disseminate truth can also propagate misinformation, polarize public opinion, and algorithmically reinforce ideological silos. Electoral interference through fake accounts, coordinated trolling, and the spread of disinformation campaigns have threatened electoral integrity in several democracies. Moreover, emotionally charged content, optimized for engagement rather than accuracy, often eclipses nuanced debate, reducing political discourse to a cacophony of outrage. The role of social media in democracy, therefore, is contingent not just on its technological architecture, but on the ethical frameworks governing its use. Regulatory oversight, media literacy, and algorithmic transparency are essential to harness its democratic potential while mitigating its subversive tendencies. In essence, social media is neither inherently virtuous nor inherently corrosive—it is a mirror of societal intent. Whether it becomes a pillar of democratic resilience or a tool of populist distortion depends largely on how it is wielded by citizens, institutions, and platforms alike What primary democratic function does social media serve, as per the paragraph?
+A) Promoting entertainment
+B) Replacing newspapers
+C) Facilitating free flow of information
+D) Organizing trade unions
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q91. What makes social media a double-edged tool in democratic societies?
+A) Its affordability
+B) Its visual design
+C) Its ability to spread both truth and misinformation
+D) Its international reach
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q92. According to the paragraph, which element amplifies marginalized voices through social media?
+A) Editorial boards
+B) Gatekeeping journalism
+C) Viral reach and grassroots mobilization
+D) Institutional press
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q93. What does the author suggest as a critical solution to social media misuse in democracies?
+A) Enhanced meme culture
+B) Legalizing all content
+C) Algorithmic transparency and media literacy
+D) Global censorship policies
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q94. In the author’s view, what determines whether social media supports or undermines democracy?
+A) Political advertisements
+B) How platforms are funded
+C) Societal intent and ethical usage
+D) Popularity of influencers
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q95. Choose the most suitable option to replace the highlighted part of the sentence: No sooner had I reached the station when the train departed.
+A) than the train departed
+B) then the train departed
+C) when the train had departed
+D) than did the train depart
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q96. Choose the most suitable option to replace the highlighted part of the sentence: The manager asked to the clerk to submit the report.
+A) asked the clerk that submit the report
+B) requested the clerk to submit report
+C) asked the clerk to submit the report
+D) told to the clerk submit report
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q97. A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. She said, "I saw him last night."
+A) She said she had seen him the previous night.
+B) She said she has seen him last night.
+C) She said she was seeing him last night.
+D) She said she had saw him the previous night.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q98. A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The librarian said that silence must be maintained in the library.
+A) "Silence should be maintained in the library," said the librarian.
+B) "You will maintain silence in the library," the librarian said.
+C) "Maintain silence in the library," said the librarian.
+D) "Must you maintain silence in the library?" asked the librarian.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q99. Rearrange the following sentences to form a coherent paragraph: 1. Consequently, effective communication hinges on more than just the words we choose. 2. Non-verbal cues, such as tone of voice, facial expressions, and body language, can convey more meaning than the verbal message itself. 3. Communication is a complex process involving the exchange of information, ideas, and feelings between individuals. 4. It's often the subtle signals that tell us how a message is truly being received or intended.
+A) 3, 2, 1, 4
+B) 2, 4, 1, 3
+C) 1, 4, 3, 2
+D) 3, 4, 2, 1
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q100. Rearrange the following sentences to form a coherent paragraph: 1. A key strategy is to diversify energy sources, transitioning from fossil fuels to renewable alternatives like solar, wind, and geothermal power. 2. To mitigate the worst effects of climate change, the global community must drastically reduce its reliance on carbon-intensive energy production. 3. This shift not only decreases greenhouse gas emissions but also improves air quality and creates new economic opportunities. 4. Additionally, policies that promote energy efficiency in buildings and transportation can further lower overall energy consumption.
+A) 2, 1, 3, 4
+B) 1, 2, 3, 4
+C) 4, 1, 2, 3
+D) 2, 3, 1, 4
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+

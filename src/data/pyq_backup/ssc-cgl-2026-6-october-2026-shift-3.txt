@@ -1,0 +1,778 @@
+Q.1: Address A: 5th Cross, 10th Main, Indiranagar, Chennai – 600020 Address B: 10th Cross, 5th Main, Indiranagar, Chennai – 600020 Are these addresses likely to be the same?
+A. Yes
+B. No, city differs
+C. No, cross and main street differs
+D. No, pin code differs
+Answer: C
+
+Q.2: In a certain code language, "STONE" is written as "RSNMD." How will "CHAIR" be written in the same code language?
+A. BGBHQ
+B. BGZHO
+C. BGZHQ
+D. BGBHO
+Answer: C
+
+Q.3: In a certain code language, "COMMUNICATION" is written as "DONMVNJCBTJOO". How will "EDUCATIONALLY" be written?
+A. FDVCBTJOOAMLZ
+B. FDCBVTJOOAMLZ
+C. FDVCBTJOAOMLZ
+D. FDVCBTOIOAMLZ
+Answer: B
+
+Q.4: In a row of players, Mohan is 6th from the left, and Sohan is 20th from the right. After swapping their places, Mohan becomes 18th from the left. Find the total number of players.
+A. 33
+B. 35
+C. 37
+D. 39
+Answer: C
+
+Q.5: A newly appointed department head reports to a senior director who is highly anxious about an upcoming internal audit and tends to micro-manage minor tasks, affecting team efficiency. How should the department head apply empathy and adaptive leadership to handle this situation effectively?
+A. Ignore the director's micro-management tactics and instruct the team to follow only the head's direct commands. 1 INTELLIGENCE
+B. File a formal complaint with higher management requesting the senior director's transfer due to interference.
+C. Match the director's anxiety by introducing stricter daily monitoring systems for all staff members.
+D. Schedule a private meeting to provide structured audit updates and ease the director’s underlying anxiety.
+Answer: D
+
+Q.6: How many triangles are there in the given figure?
+A. 9
+B. 11
+C. 12
+D. 13
+Answer: D
+
+Q.7: During a meeting, a junior colleague proposes an idea that lacks clear articulation but holds significant potential, only to be quickly dismissed by the manager. Observing the employee’s visible discouragement, what is the most professional and constructive action you should take?
+A. Remain entirely silent because challenging the manager's decision in the moment might be unwise.
+B. Arrange to meet the employee later to tell them that they really need to speak more clearly.
+C. Make a lighthearted joke about the situation in order to help lighten the overall team mood.
+D. Reframe their idea using better terminology during the meeting and suggest revisiting the proposal.
+Answer: D
+
+Q.8: During dinner, your longtime childhood friend and colleague admits that they accidentally erased an important client backup file due to carelessness and intends to attribute the mistake to a recent software glitch the next day. As a peer exercising emotional intelligence, how should you respond to this situation?
+A. Out of fierce loyalty to your childhood friendship, promise to back up their story and validate the software glitch theory to management.
+B. Validate their concerns while emphasising honesty and jointly review the data to prepare a transparent remediation report.
+C. Immediately report them to HR via an anonymous email tonight to protect your own career track from any contamination.
+D. Tell them they are incredibly foolish, mock their carelessness, and refuse to sit next to them in the office until the matter clears up.
+Answer: B
+
+Q.9: Complete the pattern in fig.
+
+(X) by selecting one of the figures from the four alternatives : Figure(X):
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p3_x309.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p3_x310.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p3_x311.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p3_x312.jpeg)
+Answer: C
+
+Q.10: If X % Y means X is added to Y, and X π Y means X is multiplied by Y, find the expression for “the sum of A and B multiplied by the value of C.”
+A. (A % B) π C
+B. A % (B π C)
+C. (AπB)
+D. AπBπC
+Answer: A
+
+Q.11: If 12 × 3 means 4, 15 – 5 means 75, and 4 ÷ 2 means 6, then what is the value of 20 – 10 × 5 ÷ 2?
+A. 38
+B. 42
+C. 56
+D. 62 2
+Answer: B
+
+Q.12: In the following question, one statement is given, followed by certain inferences. Consider the statement to be true even if it seems to contradict commonly known facts. Read the inferences carefully and decide which of them logically follow from the given statement.
+
+Statement: Pedestrians crossing busy roads without using designated zebra crossings often disrupt traffic movement and increase the chances of accidents during peak hours. Inferences:
+
+I. Improper road crossing can create safety hazards.
+
+II. Only pedestrians are responsible for road accidents.
+A. Only Inference I follows.
+B. Only Inference II follows.
+C. Both Inferences I and II follow.
+D. Neither Inference I nor Inference II follows.
+Answer: A
+
+Q.13: ![Figure](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p3_x313.jpeg)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_q13_opt_A.png)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_q13_opt_B.png)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_q13_opt_C.png)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_q13_opt_D.png)
+Answer: C
+
+Q.14: A client requests a specific feature for their software project that is outside the original project scope. Your manager is away, and the client is pressuring you to commit to the deadline today. What should you do?
+A. Agree to the request immediately to keep the client happy.
+B. Refuse the request flatly to avoid extra work.
+C. Acknowledge the request, consult your manager, and provide an update by day end.
+D. Do the work in secret so that it does not show on the official project logs.
+Answer: C
+
+Q.15: ![Figure](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p4_x599.jpeg)
+A. 1
+B. 4
+C. 3
+D. 2
+Answer: C
+
+Q.16: ![Figure](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p4_x600.jpeg)
+A. 1
+B. 2
+C. 3
+D. 4
+Answer: A
+
+Q.17: Carefully observe Figure
+
+(X) and identify the option figure in which Figure
+
+(X) is embedded exactly as shown. Figure X:
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p4_x601.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p4_x602.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p4_x603.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p4_x604.jpeg)
+Answer: A
+
+Q.18: Which of the following Venn diagram represents the relationship between “Educated”, “Employed” and “Urban”?
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p4_x605.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p4_x606.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p4_x607.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p4_x608.jpeg)
+Answer: A
+
+Q.19: ![Figure](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p4_x609.jpeg)
+A. a
+B. c
+C. d
+D. e
+Answer: A
+
+Q.20: Read the given statement carefully and the following assumptions based on it. Decide which of the assumptions are implicit in the statement.
+
+Statement: The government is considering a complete ban on single-use plastic bags in all retail outlets to protect the local environment. Assumptions:
+
+I. Retail outlets are the largest source of plastic waste in the region.
+
+II. Eliminating plastic bags will lead to a cleaner and healthier local environment.
+A. Only Assumption I is implicit
+B. Both Assumptions I and II are implicit
+C. Only Assumption II is implicit
+D. Neither Assumption I nor II is implicit
+Answer: A
+
+Q.21: ![Figure](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p4_x610.jpeg)
+A. 6
+B. 4
+C. 2
+D. 1
+Answer: A
+
+Q.22: ![Figure](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p5_x855.jpeg)
+A. c
+B. d
+C. a
+D. e
+Answer: B
+
+Q.23: Which of the following rows/columns are connected/related with each other in some way? Rows Columns I II III IV V I 4 7 11 9 9 II 8 11 15 13 13 III 6 9 13 11 16 IV 12 15 20 17 14 V 10 13 17 15 11
+A. Columns I, II and IV
+B. Columns I, III and IV
+C. Columns I, II and III
+D. Columns I, III and V
+Answer: A
+
+Q.24: Fill in the blanks (_) using one of the following four options such that the series follows a specific order. c _ b d c a _ d c a b _ _ a b d
+A. adbc
+B. cbad
+C. abdc
+D. abcd
+Answer: C
+
+Q.25: GENERAL
+
+![Figure](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p5_x856.jpeg)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p5_x857.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p5_x858.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p5_x859.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p5_x860.jpeg)
+Answer: D
+
+Q.26: The Finance Commission of India is constituted by the President under which Article?
+A. Article 280
+B. Article 148
+C. Article 324
+D. Article 315
+Answer: A
+
+Q.27: Which Article provides for the establishment of the Union Public Service Commission?
+A. Article 315 of the Indian Constitution
+B. Article 320 of the Indian Constitution
+C. Article 323 of the Indian Constitution
+D. Article 324 of the Indian Constitution
+Answer: A
+
+Q.28: How much time difference exists between the westernmost village of Gujarat and Walong in Arunachal Pradesh?
+A. 1 hour
+B. 2 hours 4 AWARENESS
+C. 3 hours
+D. 1/2 hour
+Answer: B
+
+Q.29: What is the subject matter of Article 126 of the Indian Constitution?
+A. Appointment of Supreme Court judges
+B. Powers of the Chief Justice of India
+C. Appointment of Acting Chief Justice
+D. Retirement of judges of the Supreme Court
+Answer: C
+
+Q.30: Which article of the Constitution of India empowers a High Court to issue writs?
+A. Article 226
+B. Article 32
+C. Article 132
+D. Article 270
+Answer: A
+
+Q.31: For which of the following physical quantities is the SI unit the candela?
+A. Impulse
+B. Velocity
+C. Magnetic
+D. Luminous intensity permeability
+Answer: D
+
+Q.32: Fill in the blank: The point on the Earth's surface vertically above the 'Focus'
+
+(Hypocentre) where an earthquake originates is called the ________.
+A. Isocentre
+B. Epicenter
+C. Seismic Core
+D. Fault Plane
+Answer: B
+
+Q.33: Which mineral is associated with Gangpur and Sundergarh in Odisha?
+A. Coal
+B. Petroleum
+C. Manganese
+D. Bauxite
+Answer: A
+
+Q.34: Consider the following pairs of folk music traditions and their corresponding states:
+
+1. Malushahi – Uttarakhand
+
+2. Manganiyar – Rajasthan Which of the pairs given above is/are correctly matched?
+A. 1 only
+B. 2 only
+C. Both 1 and 2
+D. Neither 1 nor 2
+Answer: A
+
+Q.35: The PM SHRI (Prime Minister's Schools for Rising India) scheme is primarily designed to achieve which of the following objectives?
+A. To provide free laptops to all school students in rural areas
+B. To develop and upgrade selected schools as model institutions showcasing NEP 2020
+C. To privatize government schools through public-private partnerships
+D. To focus only on higher education and university reforms
+Answer: B
+
+Q.36: Which factor most differentiates BRICS (Brazil, Russia, India, China, and South Africa) from the Non-Aligned Movement
+
+(NAM)?
+A. Representation of developing countries
+B. Focus on economic cooperation among major emerging economies
+C. Opposition to colonialism
+D. Demand for sovereignty
+Answer: B
+
+Q.37: The Chabahar project strengthens India’s ability to access Afghanistan primarily through:
+A. Arabian Sea-Iran-Afghanistan route
+B. Indian Ocean-Oman-Afghanistan route
+C. Caspian Sea-Iran-Afghanistan route
+D. Persian Gulf-Iran-Afghanistan route
+Answer: A
+
+Q.38: The state government creates a special court of judicial magistrates first class for cyber fraud cases in a city. Later, a regular judicial magistrate first class in the same area takes cognizance of a cyber fraud case and begins trial proceedings. Which of the following is legally correct under the Bharatiya Nagarik Suraksha Sanhita, 2023 in India?
+A. The regular magistrate can proceed because all judicial magistrates have concurrent jurisdiction.
+B. The regular magistrate can proceed only with sessions judge approval.
+C. The regular magistrate lacks jurisdiction if the case falls within the class assigned to the special court.
+D. The Special Court can hear only appeals, not trials.
+Answer: A
+
+Q.39: Who has been appointed as the new Managing Director (MD) of Indraprastha Gas Limited (IGL) in June 2026?
+A. Sanjay Kumar
+B. Kumar Shanker
+C. Neelkanth Mishra
+D. Ajay Rajan
+Answer: A
+
+Q.40: Which Indian wrestler became the youngestever Olympic medallist from India by winning Bronze in the 57kg category at the Paris 2024 Olympics?
+A. Bajrang Punia
+B. Ravi Kumar Dahiya
+C. Aman Sehrawat
+D. Antim Panghal
+Answer: A
+
+Q.41: Which Ramsar site in Uttar Pradesh was highlighted during World Wetlands Day 2026 for ecological and cultural significance?
+A. Nawabganj Bird Sanctuary
+B. Parvati Arga Bird Sanctuary
+C. Samaspur Bird Sanctuary
+D. Sandi Bird Sanctuary
+Answer: B
+
+Q.42: Which of the following statement regarding nominal and real GDP (Gross Domestic Product) is correct?
+A. Real GDP is calculated using current-year prices whereas nominal GDP uses base- year prices.
+B. Real GDP and nominal GDP always remain equal in every accounting year.
+C. Real GDP removes the effect of price changes through constant-base-year prices.
+D. Real GDP excludes services while nominal GDP includes both goods and services.
+Answer: C
+
+Q.43: Which of the following is a Maharatna Central Public Sector Enterprise?
+A. Hindustan Aeronautics Limited
+B. Mahanagar Telephone Nigam Limited
+C. Indian Oil Corporation Limited
+D. Bharat Sanchar Nigam Limited
+Answer: C
+
+Q.44: Which of the following population trends is most likely to occur in a region with a high birth rate and a rapidly declining death rate?
+A. Population stagnation
+B. Negative growth
+C. Population explosion
+D. Zero growth
+Answer: C
+
+Q.45: Which of the following is the primary cause of the major breakdown and eventual failure of the Third Five-Year Plan to reach its targets?
+A. Runaway international crude oil price spikes
+B. External conflicts and severe droughts
+C. Political instability at the central government
+D. Implementation of massive pay commission awards
+Answer: B
+
+Q.46: Which biological experiment was successfully demonstrated aboard the PSLV Orbital Experimental Module-04 (POEM-4)?
+A. Animal tissue regeneration
+B. Seed germination in microgravity
+C. Human cell culture growth
+D. Plant pollination in orbit
+Answer: D
+
+Q.47: A prey population increases from 400 individuals to 600 individuals/one year. What is the percentage growth in the population during this period?
+A. 25%
+B. 33%
+C. 60%
+D. 50%
+Answer: D
+
+Q.48: An antibody titre increases from 1:20 before vaccination to 1:320 after vaccination. By what factor has the antibody titre increased?
+A. 16-fold
+B. 12-fold
+C. 19-fold
+D. 20-fold
+Answer: A
+
+Q.49: Who chaired the Punjab and Bengal Boundary Commissions that demarcated the borders between India and Pakistan?
+A. Lord Wavell
+B. Sir Stafford Cripps
+C. Lord Mountbatten
+D. Sir Cyril Radcliffe
+Answer: D
+
+Q.50: Which of the following plans formed the immediate basis of the Indian Independence Act, 1947?
+A. Wavell Plan
+B. Cripps Proposal
+C. Mountbatten Plan
+D. August Offer
+Answer: A
+
+Q.51: If √1 + x = 17 , find the value of 256 16
+
+x.
+A. 24
+B. 45
+C. 52
+D. 33
+Answer: D
+
+Q.52: Simplify: [(0.6)4 - (0.5)4] ÷ [(0.6)² + (0.5)²].
+A. 0.15
+B. 0.11
+C. 0.18
+D. 0.19
+Answer: B
+
+Q.53: If A : B = 5 : 6 and B : C = 10 : 9, find A : B : C.
+A. 25:30:27
+B. 15:20:9
+C. 10:15:17
+D. 25:40:19
+Answer: A
+
+Q.54: A alone completes a work in 12 days. With the help of an assistant, the work is completed in 8 days. If total wages are ₹600, find the assistant's share.
+A. ₹260
+B. ₹140
+C. ₹160
+D. ₹200
+Answer: D
+
+Q.55: If x+ 1 x = 4√2 , then find the value of x4 + 1 . x4
+A. 884
+B. 878
+C. 898
+D. 866
+Answer: C
+
+Q.56: A person divided a sum of ₹17,200 into two parts and invested them at 8% and 10% per annum simple interest respectively. If the total interest received after 2 years is ₹3,008, what is the difference between the two parts?
+A. ₹4,000
+B. ₹4,400
+C. ₹5,200
+D. ₹3,600
+Answer: A
+
+Q.57: The graph of the equation 2x + 0y = 10 represents a:
+A. Horizontal line at y = 5
+B. Vertical line at x = 5
+C. Line passing through the origin
+D. Oblique line
+Answer: B
+
+Q.58: A man deposits ₹2,00,000 at 10% p.a. compound interest. After the first year's interest is credited, he withdraws 40% of the interest earned. Find the balance at the end of the second year.
+A. ₹2,93,200
+B. ₹2,63,200
+C. ₹2,33,200
+D. ₹2,03,200
+Answer: C
+
+Q.59: A box is 80 cm × 64 cm × 48 cm. Find how many cubes of side 8 cm can be arranged inside without gaps.
+A. 480
+B. 370
+C. 530
+D. 250
+Answer: A
+
+Q.60: A chord of a circle is 25.4 cm long. Determine the radius of the circle.
+A. r ≥12.7 cm
+B. r ≤12.7 cm
+C. r > 12.7 cm
+D. r = 12.7 cm
+Answer: B
+
+Q.61: The area of a rhombus is 150 cm². If the ratio of its diagonals is 3:4, find its perimeter.
+A. 40 cm
+B. 50 cm
+C. 60 cm
+D. 80 cm
+Answer: B
+
+Q.62: In a triangle ABC, right-angled at B, if tan A= 5 , find the value of sin A(cos C+cos A) 2 cos C(sin C−sin A) .
+A. 7
+B. 5 1/2
+C. −7
+D. −5 3
+Answer: C
+
+Q.63: The base of a prism is a right-angled isosceles triangle whose hypotenuse is 4√2 cm. If the height of the prism is 15 cm, find the volume of the prism.
+A. 120 cm³
+B. 144 cm³
+C. 96 cm³
+D. 112 cm³
+Answer: A
+
+Q.64: If x= √6+√35 , then what is the value of 6−√35 x² + 1 ? x²
+A. 75
+B. 86
+C. 121
+D. 142
+Answer: D
+
+Q.65: Two triangles, ABC and PQR, are congruent right-angled triangles where angle A and angle P are each 90°. If the hypotenuse BC measures 13 cm and side PR measures 5 cm, determine the length of side AB.
+A. 8 cm
+B. 6 cm
+C. 12 cm
+D. 10 cm
+Answer: C
+
+Q.66: A chord of a circle measures 40 cm and is 15 cm away from the centre. What will be the length of another chord of the same circle that is 20 cm away from the centre?
+A. 15 cm
+B. 30 cm
+C. 45 cm
+D. 60 cm
+Answer: B
+
+Q.67: An alloy contains 35% copper, 25% zinc and 40% nickel. How much copper (in kg) should be added to 20 kg of the alloy so that the new alloy contains 50% copper?
+A. 8 kg
+B. 6 kg
+C. 12 kg
+D. 16 kg
+Answer: B
+
+Q.68: ![Figure](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p9_x1989.jpeg)
+A. 70-90 to 90-110
+B. 110-130 to 130-150
+C. 90-110 to 110-130
+D. 130-150 to 150-170
+Answer: A
+
+Q.69: The radius of a cylinder is increased by 25% and its height is decreased by 20%. Find the percentage change in its volume.
+A. 15% decrease
+B. 25% increase
+C. 10% increase
+D. 20% decrease
+Answer: B
+
+Q.70: A shopkeeper marks an article 35% above its cost price. If he sells it after allowing a discount of 15%, what is his gain percentage?
+A. 18.35%
+B. 16.25%
+C. 14.75%
+D. 19.55%
+Answer: C
+
+Q.71: ![Figure](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p9_x1990.jpeg)
+A. 190-200
+B. 200-210
+C. 170-180
+D. 180-190
+Answer: A
+
+Q.72: ![Figure](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p9_x1991.jpeg)
+A. 35
+B. 40
+C. 45
+D. 50
+Answer: A
+
+Q.73: An observer 1.5 m tall is 28.5 m away from a tower. The angle of elevation of the top of the tower from the observer's eye is 45°. What is the height of the tower?
+A. 15 m
+B. 20 m
+C. 25 m
+D. 30 m
+Answer: D
+
+Q.74: The average of 15 numbers is 72. The average of the first 8 numbers is 69, while the average of the last 6 numbers is 75. What is the ninth number?
+A. 66
+B. 72
+C. 78
+D. 84
+Answer: C
+
+Q.75: ![Figure](/images/pyq/2026/ssc-cgl-2026-6-october-2026-shift-3_p10_x2282.jpeg)
+A. 0
+B. 1
+C. 2
+D. 3
+Answer: A
+
+Q.76: Select the wrongly spelt word out of the four alternatives.
+A. Comprehention
+B. Surgeon
+C. Discovery
+D. Fathoms
+Answer: A
+
+Q.77: Select the wrongly spelt word out of the four alternatives.
+A. Superstisious
+B. Courteously
+C. Superficial
+D. Fertilizer
+Answer: A
+
+Q.78: Choose the most appropriate antonym of the underlined word. The witness was accused of being mendacious during the trial.
+A. Dishonest
+B. Truthful
+C. False
+D. Deceitful
+Answer: B
+
+Q.79: Choose the most appropriate antonym of the underlined word. The witness gave a murky account of the incident, making it hard to follow.
+A. Dark
+B. Gloomy
+C. Obscure
+D. Clear
+Answer: D
+
+Q.80: Select the correctly spelt word to replace the highlighted word in the given sentence. Her scintillating wit charmed every single guest.
+A. Scintilating
+B. Scintillating
+C. Scintallating
+D. Scintalating
+Answer: B
+
+Q.81: Select the correctly spelt word to replace the highlighted word in the given sentence. A propencity for violence was noted during the investigation.
+A. Propensity
+B. Propensitty
+C. Propencitty
+D. Propencity
+Answer: A
+
+Q.82: In the following question, the first and last parts of the sentence (1 and 6) are given. The rest of the sentence is split into four parts and named P, Q, R, and S. These four parts are not given in their proper order. Read the sentence and find out which of the four combinations is correct.
+
+1. Economic growth is P. the standard of living Q. a sustained increase R. in the production of S. goods and services that improves
+
+6. for the entire population.
+A. QRSP
+B. RSQP
+C. QPSR
+D. QSPR
+Answer: A
+
+Q.83: In the following question, the first and last parts of the sentence (1 and 6) are given. The rest of the sentence is split into four parts and named P, Q, R, and S. These four parts are not given in their proper order. Read the sentence and find out which of the four combinations is correct.
+
+1. The concept of the Blue Economy P. to promote economic growth Q. while ensuring the environmental sustainability R. seeks to harness ocean resources S. and improved social inclusion
+
+6. of the vast marine and coastal ecosystems.
+A. PQSR
+B. RPSQ
+C. RSQP
+D. QSRP
+Answer: C
+
+Q.84: Choose the most appropriate option to fill the blank in the given sentence. By the time the workshop ended yesterday, Rahul ______ the model that he ______ for three hours.
+A. had finished, had been building
+B. finished, was building
+C. has finished, is building
+D. finishes, built
+Answer: A
+
+Q.85: Choose the most appropriate option to fill the blank in the given sentence. If I ______ my camera battery last night, I ______ more photos during the walk today.
+A. charged, would take
+B. had charged, would have taken
+C. have charged, will take
+D. had charged, would take
+Answer: B
+
+Q.86: From the given options, select the homonym that corresponds to both Definition (P) and Definition (Q).
+
+(P) To adjust or compromise one's desires or actions to prevent conflict and cooperate harmoniously with others
+
+(Q) To provide temporary lodging, physical space, or overnight living quarters for someone
+A. Rehabilitate
+B. Accommodate
+C. Articulate
+D. Designate
+Answer: B
+
+Q.87: Identify the option in which the underlined idiom has been used incorrectly.
+A. The minister did not mince words during the live television broadcast, spending nearly forty minutes delivering vague, evasive responses.
+B. When the journalist suggested that the CEO had intentionally misled investors, the executive angrily cut her off, accusing her of trying to put words into his mouth.
+C. The eccentric philosophy professor loved to talk in riddles, frequently answering direct student questions with cryptic metaphors that left the entire lecture hall confused.
+D. The interviewer accidentally hit a raw nerve when he asked the retired athlete about the career-ending knee injury that had cost his team the championship final.
+Answer: B
+
+Q.88: Read the sentences provided in options A, B, C, and D carefully. While three of the sentences are grammatically sound, one contains an "article usage" error. Identify the option with the error.
+A. A research team at the University of Cambridge successfully engineered a stable topological qubit, outpacing rival physics departments across Europe.
+B. Excavations funded by Yale University unearthed a beautifully preserved fossilised apex predator in the badlands of Montana.
+C. While the Administrator refused to comment on the launch failure, Director General Faiz issued a comprehensive technical briefing to the press.
+D. The diplomatic delegation travelled from Netherlands to the Czech Republic to ratify the new maritime trade agreement.
+Answer: A
+
+Q.89: Read the sentences below carefully and identify which one contains a grammatical or structural error.
+
+(P) The agricultural collective harvested as many more metric tons of organic grain than the commercial farming conglomerate during the fiscal year.
+
+(Q) The more thoroughly the research cohort analysed the genomic sequencing data, the fewer anomalies they found in the control group.
+A. Only P
+B. Only Q
+C. Both P and Q
+D. Neither P nor Q 11
+Answer: C
+
+Q.90: Read the passive statement. If you were to explain the action in a single, direct sentence, which of the following active voice options would be the most accurate translation? The narrative's deeply cynical conclusion is created by the suggestion that rescue is ultimately brought about by appalling savagery, whereas it fails to be achieved by coordinated and purposeful efforts.
+A. The suggestion that appalling savagery ultimately bring about rescue, whereas coordinated and purposeful efforts fail to achieve it, creates the narrative's deeply cynical conclusion.
+B. The suggestion that appalling savagery ultimately bring about rescue, whereas coordinate and purposeful efforts fail to achieve it, creates the narrative's deeply cynical conclusion.
+C. The suggestion that appalling savagery ultimately brings about rescue, whereas coordinated and purposeful efforts fail to achieve it, creates the narrative's deep cynical conclusion.
+D. The suggestion that appalling savagery ultimately brings about rescue, whereas coordinated and purposeful efforts fail to achieve it, creates the narrative's deeply cynical conclusion.
+Answer: A
+
+Q.91: Convert the following sentence from direct to indirect speech. Choose the option that best represents the correct transformation. Janvi said to Kamal, "I travel about in an old utility vehicle, which is a simple transport setup with basic bedding on its floor, stopping where people gather to listen and observe; however, in the process, I have formed an impression of my surroundings, the accuracy of which is limited only by my own shortcomings."
+A. Janvi told Kamal that she travelled about in an old utility vehicle, which was a simple transport setup with basic bedding on it's floor, stopping where people gathered to listen and observe; however, in the process, she had formed an impression of her surroundings, the accuracy of which was limited only by her own shortcomings.
+B. Janvi told Kamal that she travelled about in an old utility vehicle, which was a simple transport setup with basic bedding on its floor, stopping where people gathered to listen and observe; however, in the process, she had formed an impression of her surroundings, the accuracy of which was limited only by her own shortcomings.
+C. Janvi told Kamal that she travelled about in an old utility vehicle, which was a simple transport setup with basic bedding on it's floor, stopping where people gather to listen and observe; however, in the process, she had formed an impression of her surroundings, the accuracy of which was limited only by her own shortcomings.
+D. Janvi told Kamal that she travelled about in an old utility vehicle, which was a simple transport setup with basic bedding on its floor, stopping where people gathered to listen and observed; however, in the process, she had formed an impression of her surroundings, the accuracy of which is limited only by her own shortcomings.
+Answer: B
+
+Q.92: Read the sentence below carefully. Choose the option (A/B/C) that best improves the sentence. If the sentence is already correct, select Option D (No improvement required). It was the clinical analyst's conclusion that the patient's underlying trauma was driven by a deep, unresolved desire, desires which continuously sabotaged their interpersonal relationships.
+A. The clinical analyst concluded that underlying trauma of the patient being driven by a deep, unresolved desire, the desire that continuously sabotaged their interpersonal relationships.
+B. The clinical analyst concluded that the patient's underlying trauma was driven by a deep, unresolved desire, a desire that continuously sabotaged their interpersonal relationships.
+C. It was concluded by the clinical analyst that a deep, unresolved desire was driven the patient's underlying trauma, and their interpersonal relationships were continuously sabotaged by that desire.
+D. No improvement required
+Answer: B
+
+Q.93: Read the sentence below carefully. Choose the option (A/B/C) that best improves the sentence. If the sentence is already correct, select Option D (No improvement required). The constitutional jurist argued that by altering the founding charter without a public referendum would nullify it and render it completely void, an act of total and absolute betrayal of the social contract.
+A. The constitutional jurist argued that altering the founding charter without a public referendum would render it null and void, representing a total betrayal of the social contract.
+B. The constitutional jurist argued that any alteration in the founding charter without holding a public referendum would null it as completely void, being a total betrayal of the social contract.
+C. The constitutional jurist argued that in altering the founding charter without a public referendum, we would void it totally, acting as an absolute betrayal of the social contract.
+D. No improvement required
+Answer: A
+
+Q.94: Select the correct passive form of the given sentence. The judge will deliver the final verdict in the court tomorrow.
+A. The final verdict will have been delivered in the court by the judge tomorrow.
+B. The final verdict will be delivered in the court by the judge tomorrow.
+C. The final verdict would be delivered in the court by the judge tomorrow.
+D. The final verdict is delivered in the court by the judge tomorrow.
+Answer: B
+
+Q.95: The following sentence is given in Indirect Speech. Select the option that correctly expresses it in Direct Speech. Tertius Lydgate questioned himself wretchedly why he had allowed the shallow material desires of Rosamond Vincy to ruin his scientific ambitions.
+A. Tertius Lydgate questioned himself
+wretchedly, "Why did I allow the shallow
+material desires of Rosamond Vincy to ruin
+my scientific ambitions?"
+B. Tertius Lydgate questioned himself,
+"wretchedly why he had allowed the
+shallow material desires of Rosamond
+Vincy to ruin his scientific ambitions."
+C. Tertius Lydgate questions himself
+wretchedly, "Why did I allowed the shallow
+material desires of Rosamond Vincy to
+ruined my scientific ambitions?"
+D. Tertius Lydgate questioned himself
+wretchedly. "Why I had allowed the shallow
+material desires of Rosamond Vincy to ruin
+my scientific ambitions?"
+Answer: A
+
+Q.96: **Comprehension (Q. 96 - 100):** Urban farming has emerged as a practical response to growing concerns about food security, environmental degradation, and rapid urbanisation. Once regarded as a marginal activity, it is now increasingly recognised as a sustainable means of supplementing food supplies while promoting ecological awareness. ______, many city dwellers have transformed vacant rooftops, balconies, and community spaces into productive gardens that contribute to local biodiversity. These initiatives not only reduce dependence on long-distance transportation but also foster a stronger sense of community responsibility. (B) ______ urban farming cannot entirely replace conventional agriculture, it serves as a valuable complement by encouraging responsible consumption and minimising food waste. In addition to producing fresh vegetables, urban gardens often (C) ______ social barriers by bringing together people from diverse economic and cultural backgrounds. Such interactions encourage cooperation and the exchange of practical knowledge, thereby strengthening neighbourhood ties. Moreover, the movement has generated widespread interest among policymakers and environmentalists, who regard it as an effective means of enhancing urban (D) ______. As cities continue to expand, the integration of green spaces into residential areas is increasingly viewed as a necessity rather than a luxury. Consequently, the long-term success of urban farming depends not only on individual enthusiasm but also (E) ______ supportive public policies, technological innovation, and sustained community participation. If managed effectively, urban farming may become an indispensable element of future city planning, helping to balance economic development with environmental responsibility.
+
+---
+
+Select the most appropriate option to fill in blank
+A. Encouraged by growing environmental awareness
+B. Encourage growing environmental awareness
+C. Having encourage environmental awareness
+D. Environmental awareness encouraging
+Answer: A
+
+Q.97: **Comprehension (Q. 96 - 100):** Urban farming has emerged as a practical response to growing concerns about food security, environmental degradation, and rapid urbanisation. Once regarded as a marginal activity, it is now increasingly recognised as a sustainable means of supplementing food supplies while promoting ecological awareness. ______, many city dwellers have transformed vacant rooftops, balconies, and community spaces into productive gardens that contribute to local biodiversity. These initiatives not only reduce dependence on long-distance transportation but also foster a stronger sense of community responsibility. (B) ______ urban farming cannot entirely replace conventional agriculture, it serves as a valuable complement by encouraging responsible consumption and minimising food waste. In addition to producing fresh vegetables, urban gardens often (C) ______ social barriers by bringing together people from diverse economic and cultural backgrounds. Such interactions encourage cooperation and the exchange of practical knowledge, thereby strengthening neighbourhood ties. Moreover, the movement has generated widespread interest among policymakers and environmentalists, who regard it as an effective means of enhancing urban (D) ______. As cities continue to expand, the integration of green spaces into residential areas is increasingly viewed as a necessity rather than a luxury. Consequently, the long-term success of urban farming depends not only on individual enthusiasm but also (E) ______ supportive public policies, technological innovation, and sustained community participation. If managed effectively, urban farming may become an indispensable element of future city planning, helping to balance economic development with environmental responsibility.
+
+---
+
+Select the most appropriate option to fill in blank
+A. Unless
+B. Therefore
+C. Although
+D. Likewise
+Answer: C
+
+Q.98: **Comprehension (Q. 96 - 100):** Urban farming has emerged as a practical response to growing concerns about food security, environmental degradation, and rapid urbanisation. Once regarded as a marginal activity, it is now increasingly recognised as a sustainable means of supplementing food supplies while promoting ecological awareness. ______, many city dwellers have transformed vacant rooftops, balconies, and community spaces into productive gardens that contribute to local biodiversity. These initiatives not only reduce dependence on long-distance transportation but also foster a stronger sense of community responsibility. (B) ______ urban farming cannot entirely replace conventional agriculture, it serves as a valuable complement by encouraging responsible consumption and minimising food waste. In addition to producing fresh vegetables, urban gardens often (C) ______ social barriers by bringing together people from diverse economic and cultural backgrounds. Such interactions encourage cooperation and the exchange of practical knowledge, thereby strengthening neighbourhood ties. Moreover, the movement has generated widespread interest among policymakers and environmentalists, who regard it as an effective means of enhancing urban (D) ______. As cities continue to expand, the integration of green spaces into residential areas is increasingly viewed as a necessity rather than a luxury. Consequently, the long-term success of urban farming depends not only on individual enthusiasm but also (E) ______ supportive public policies, technological innovation, and sustained community participation. If managed effectively, urban farming may become an indispensable element of future city planning, helping to balance economic development with environmental responsibility.
+
+---
+
+Select the most appropriate option to fill in blank
+A. bring over
+B. break down
+C. call off
+D. put aside
+Answer: B
+
+Q.99: **Comprehension (Q. 96 - 100):** Urban farming has emerged as a practical response to growing concerns about food security, environmental degradation, and rapid urbanisation. Once regarded as a marginal activity, it is now increasingly recognised as a sustainable means of supplementing food supplies while promoting ecological awareness. ______, many city dwellers have transformed vacant rooftops, balconies, and community spaces into productive gardens that contribute to local biodiversity. These initiatives not only reduce dependence on long-distance transportation but also foster a stronger sense of community responsibility. (B) ______ urban farming cannot entirely replace conventional agriculture, it serves as a valuable complement by encouraging responsible consumption and minimising food waste. In addition to producing fresh vegetables, urban gardens often (C) ______ social barriers by bringing together people from diverse economic and cultural backgrounds. Such interactions encourage cooperation and the exchange of practical knowledge, thereby strengthening neighbourhood ties. Moreover, the movement has generated widespread interest among policymakers and environmentalists, who regard it as an effective means of enhancing urban (D) ______. As cities continue to expand, the integration of green spaces into residential areas is increasingly viewed as a necessity rather than a luxury. Consequently, the long-term success of urban farming depends not only on individual enthusiasm but also (E) ______ supportive public policies, technological innovation, and sustained community participation. If managed effectively, urban farming may become an indispensable element of future city planning, helping to balance economic development with environmental responsibility.
+
+---
+
+Select the most appropriate option to fill in blank
+A. resilience
+B. hesitation
+C. extravagance
+D. fragility
+Answer: A
+
+Q.100: **Comprehension (Q. 96 - 100):** Urban farming has emerged as a practical response to growing concerns about food security, environmental degradation, and rapid urbanisation. Once regarded as a marginal activity, it is now increasingly recognised as a sustainable means of supplementing food supplies while promoting ecological awareness. ______, many city dwellers have transformed vacant rooftops, balconies, and community spaces into productive gardens that contribute to local biodiversity. These initiatives not only reduce dependence on long-distance transportation but also foster a stronger sense of community responsibility. (B) ______ urban farming cannot entirely replace conventional agriculture, it serves as a valuable complement by encouraging responsible consumption and minimising food waste. In addition to producing fresh vegetables, urban gardens often (C) ______ social barriers by bringing together people from diverse economic and cultural backgrounds. Such interactions encourage cooperation and the exchange of practical knowledge, thereby strengthening neighbourhood ties. Moreover, the movement has generated widespread interest among policymakers and environmentalists, who regard it as an effective means of enhancing urban (D) ______. As cities continue to expand, the integration of green spaces into residential areas is increasingly viewed as a necessity rather than a luxury. Consequently, the long-term success of urban farming depends not only on individual enthusiasm but also (E) ______ supportive public policies, technological innovation, and sustained community participation. If managed effectively, urban farming may become an indispensable element of future city planning, helping to balance economic development with environmental responsibility.
+
+---
+
+Select the most appropriate option to fill in blank (E).
+A. on
+B. regarding
+C. at
+D. toward
+Answer: A
+

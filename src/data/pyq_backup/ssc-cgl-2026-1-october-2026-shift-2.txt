@@ -1,0 +1,816 @@
+Q.1: Correct the equation by interchanging the two signs. 15 + 9 - 6 × 3 ÷ 2 = 20
+A. × and ÷
+B. + and -
+C. - and ×
+D. ÷ and -
+Answer: A
+
+Q.2: Find the missing number: 8 : 28 :: 27 : ?
+A. 63
+B. 65
+C. 67
+D. 68
+Answer: A
+
+Q.3: A man introduces a woman saying, "She is the daughter of the only son of my father's wife." How is the woman related to the man?
+A. Daughter
+B. Sister
+C. Niece
+D. Cousin
+Answer: A
+
+Q.4: In the question below three statements are given followed by four conclusions numbered I, II, III and
+
+IV. You must take the given statements to be true even if they seem to be at variance with commonly known facts and then decide which of the given conclusions logically follows from the given statements, disregarding commonly known facts.
+
+Statements: All doctors attend conferences. Some conference attendees are not experienced. All experienced people lead research teams.
+
+Conclusions:
+
+I. Some doctors are not experienced.
+
+II. Some conference attendees lead research teams.
+
+III. All experienced people attend conferences.
+
+IV. Some research team leaders are not conference attendees.
+A. Only I and II follow
+B. Only III follows
+C. Only II and III
+D. None follows follow 1 INTELLIGENCE
+Answer: A
+
+Q.5: Which of the following numbers will replace the question mark (?) in the given series? 1, 9, 65, 457, ?
+A. 3125
+B. 3201
+C. 3850
+D. 4265
+Answer: A
+
+Q.6: How many letters will remain at the same position in the word ‘PRINTER’ when arranged alphabetically?
+A. 0
+B. 1
+C. 2
+D. 3
+Answer: A
+
+Q.7: In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 5 4 3 6 7 2 2 2 ? 15 14 6
+A. 2
+B. 1
+C. 5
+D. 4
+Answer: A
+
+Q.8: Read the following information carefully and answer the question that follows.
+
+1. A + B means "A is the brother of B"
+
+2. A * B means "A is the father of B"
+
+3. A / B means "A is the mother of B" Which of the following expressions correctly represents the relationship that P is the son of S?
+A. P + Q * S
+B. P * Q / S
+C. P + Q / S
+D. S * P + Q
+Answer: A
+
+Q.9: Read the following instructions and answer the question that follows:
+
+1. A + B, then A is the brother of B.
+
+2. A % B, then A is the son of B.
+
+3. A & B, then A is the wife of B.
+
+4. A = B, then A is the husband of B.
+
+5. A @ B, then A is the daughter of B. If C & D + E @ F = G @ H, then which of the following options is not correct?
+A. E is the granddaughter of H.
+B. C is the daughter-in-law of F.
+C. F is the mother of E.
+D. D is the son of G.
+Answer: A
+
+Q.10: In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 2 3 4 4 9 2 8 27 1 ? 9 2
+A. 8
+B. 12
+C. 4
+D. 16
+Answer: A
+
+Q.11: In a secure database, roll numbers follow the format: [Digit A] [Digit B] [Digit C] where A × C = B + 2. Which of the following roll number is invalid?
+A. 373
+B. 462
+C. 582
+D. 6112
+Answer: A
+
+Q.12: Study the pattern in the given series and find the next set of letters in the series. KAN, OZR, SYV, ?
+A. WXZ
+B. WYZ
+C. WWY
+D. WXY
+Answer: A
+
+Q.13: Select the odd number pair from the given alternatives.
+A. 25, 650
+B. 16, 272
+C. 13, 186
+D. 20, 420 2
+Answer: A
+
+Q.14: Read the question carefully and choose the most appropriate option. You are managing a community cleanliness drive. Participation is lower than expected because many residents believe the effort will not make a difference. What would you do?
+A. Criticize the residents publicly for not supporting the initiative.
+B. Cancel the drive because community participation is currently low.
+C. Continue silently without trying to involve additional community members.
+D. Engage residents positively and explain the benefits of participation.
+Answer: A
+
+Q.15: What should come in place of question mark (?) in the following analogy? G7M : N14T :: U21A : ?
+A. B28H
+B. C28H
+C. B27H
+D. B28G
+Answer: A
+
+Q.16: In the given question, a few statements have been given followed by conclusions based on them. Consider the statements to be true and answer which of the given conclusions logically follow the statement. Statements
+
+1. All architects are planners.
+
+2. All planners are visionaries.
+
+3. No visionary is impractical. Conclusions
+
+I. All architects are visionaries.
+
+II. No architect is impractical.
+
+III. Some visionaries are architects.
+
+IV. No planner is impractical.
+A. Only I, II and IV
+B. Only I and III follow follow
+C. All four follow
+D. Only II and III follow
+Answer: C
+
+Q.17: In the given question, a few statements have been given followed by conclusions based on them. Consider the statements to be true and answer which of the given conclusions logically follow the statement. Statements
+
+1. No antibiotic is harmless.
+
+2. Some medicines are antibiotics.
+
+3. All prescribed drugs are medicines. Conclusions
+
+I. Some medicines are not harmless.
+
+II. No prescribed drug is harmless.
+
+III. Some prescribed drugs are antibiotics.
+
+IV. Some antibiotics are prescribed drugs.
+A. Only I, III and IV
+B. Only I and III follow follow
+C. Only I follows
+D. Only I and IV follow
+Answer: A
+
+Q.18: Which two signs should be interchanged to make the equation below mathematically correct? 16 - 8 ÷ 4 + 5 × 2 = 8
+A. ÷ and ×
+B. - and +
+C. × and -
+D. ÷ and +
+Answer: C
+
+Q.19: Read the statement carefully and assume it to be true. Then examine the two conclusions given below it and decide which conclusion(s), if any, logically follow from the statement.
+
+Statement: In a T-20 cricket match, the total wickets taken by a team were 9. Out of these, 6 wickets were taken by spinners.
+
+Conclusions:
+
+I. 80% of the bowlers in the team were spinners.
+
+II. The opening bowlers of the team were spinners.
+A. Only Conclusion I follows
+B. Neither conclusion I nor II follows
+C. Only Conclusion II follows
+D. Both Conclusions I and II follow
+Answer: A
+
+Q.20: In the following question a statement is given followed by some assumptions. Read the assumptions carefully and choose the appropriate option.
+
+Statement: A transport company is launching a new fleet of electric buses and promoting the service extensively. To finance the project, it plans to reduce non-essential expenses and obtain funding from financial institutions. Assumptions:
+
+I. The new electric bus service is likely to attract passengers.
+
+II. Financial institutions will surely provide the required funding.
+A. Only I is implicit.
+B. Only II is implicit.
+C. Neither I nor II is implicit.
+D. Both I and II are implicit.
+Answer: A
+
+Q.21: What government action yields the highest increase in crop productivity in areas where traditional farming techniques predominate?
+A. Provide annual total debt waivers.
+B. Implement smart precision farming systems.
+C. Cease all agricultural product exports.
+D. Import more foreign farming goods.
+Answer: B
+
+Q.22: Select the option that is related to the third word in the same way as the second word is related to the first word. Clove : Flower bud :: Cinnamon : ?
+A. Stem
+B. Bark
+C. Root
+D. Seed
+Answer: B
+
+Q.23: In a specific casing code, the letter K is written in lowercase. All letters appearing before K in the alphabet are written in uppercase, while all letters from K onwards alternate between lowercase and uppercase (i. e., ..., I, J, k, L, m, N...). Under this rule, how will the word 'MONDAY' be written?
+A. MoNdAy
+B. mOnDaY
+C. moNDAy
+D. MoNdaY
+Answer: A
+
+Q.24: Direction: Choose the most logical course of action. Scenario: A company saves 15% by using Supplier X, but Supplier X's defect rate recently rose from 1% to 5%, causing production delays. Alternative suppliers are highly reliable but charge standard market rates. The company operates on tight profit margins and strict delivery schedules. What is the most appropriate action?
+A. Shift 100% of procurement to alternative suppliers immediately to eliminate defects.
+B. Continue buying exclusively from Supplier X to protect the 15% cost savings.
+C. Split the order with an alternative supplier to reduce risk while giving Supplier X a deadline to improve.
+D. Halt all production and procurement until a third, cheaper, and flawless supplier is found.
+Answer: C
+
+Q.25: Which sequence is different from the others?
+A. AZBY
+B. CXDW
+C. EVFU
+D. GSHR
+Answer: D
+
+Q.26: In the 2025 World Happiness Report, how many countries were included in the survey?
+A. 140
+B. 150
+C. 146
+D. 147
+Answer: A
+
+Q.27: Which continent is located to the west of the Indian Ocean?
+A. Asia
+B. Australia
+C. Africa
+D. Antarctica
+Answer: A
+
+Q.28: The "National Digital Health Mission
+
+(NDHM)" aims to create an integrated digital health infrastructure for India. Which of the following is a core feature envisioned under this mission?
+A. Providing free generic medicines to all citizens through online platforms.
+B. Creating a unique health ID for every citizen to maintain their health records digitally.
+C. Establishing a network of telemedicine centers in all villages.
+D. Mandating the use of electronic health records by all private hospitals.
+Answer: A
+
+Q.29: The "National Policy on Education (NPE)" has been revised several times since independence. The latest iteration is the NEP
+
+2020. Which of the following principles is a significant guiding principle of the NEP 2020?
+A. Strict standardization of curriculum and assessment across all states. 4 AWARENESS
+B. Emphasis on rote learning and memorization of facts.
+C. Promoting critical thinking, creativity, and conceptual understanding.
+D. Early specialization in specific academic disciplines from the secondary level.
+Answer: A
+
+Q.30: Which Indian athlete is known for her achievements in sprint running and is often referred to as "Dhing Express"?
+A. P.T. Usha
+B. Anju Bobby George
+C. Hima Das
+D. Dutee Chand
+Answer: A
+
+Q.31: The Singh Sisters from Punjab contributed to India's rise in which underrepresented court sport?
+A. Tennis
+B. Handball
+C. Basketball
+D. Kho-Kho
+Answer: A
+
+Q.32: Where was the location of the 2017 Senior National Judo Championships?
+A. Jaipur
+B. Lucknow
+C. Guwahati
+D. Chennai
+Answer: A
+
+Q.33: According to the Bharatiya Sakshya Adhiniyam (BSA), which of the following principles regarding conclusive proof is TRUE?
+A. It requires two eyewitnesses
+B. It applies only in civil cases
+C. It is final and cannot be disputed in court
+D. It can be rebutted by expert testimony
+Answer: A
+
+Q.34: Who is the ninth chairperson of the National Commission for Women (NCW)?
+A. Rekha Sharma
+B. Lalitha Kumaramangalam
+C. Vijaya Rahatkar
+D. Smriti Irani
+Answer: A
+
+Q.35: Which one of the following Chief Ministers of West Bengal was sworn in May 2011?
+A. Mamata Banerjee
+B. Suvendu Adhikari
+C. Partha Chatterjee
+D. Abhishek Banerjee
+Answer: A
+
+Q.36: Which of the following is NOT one of the Rig Vedic Gods?
+A. Indra
+B. Pasupathi
+C. Prithvi
+D. Varuna
+Answer: A
+
+Q.37: The highest amount of sugarcane is produced in:
+A. Uttar Pradesh
+B. Andhra Pradesh
+C. Haryana
+D. Punjab
+Answer: A
+
+Q.38: What major administrative change was introduced by the Charter Act of 1853?
+A. Created provincial assemblies with elected Indian members
+B. Introduced bicameral legislature in British India
+C. Separated legislative and executive functions of the Council
+D. Gave voting rights to landed Indians
+Answer: A
+
+Q.39: The state of Uttarakhand has recently taken steps towards implementing a Uniform Civil Code. What is a key feature of the proposed Uniform Civil Code(UCC) in Uttarakhand?
+A. Mandatory religious conversions.
+B. Uniform laws for marriage, divorce, and inheritance, excluding tribal communities.
+C. Abolition of all existing personal laws immediately.
+D. Introduction of Sharia law for all citizens.
+Answer: A
+
+Q.40: In the epic "Silappadikaram", which capital city was ultimately destroyed by fire due to Kannagi's curse?
+A. Madurai city
+B. Uraiyur city
+C. Puhar city
+D. Vanji city
+Answer: A
+
+Q.41: The Vice-President is the second-highest constitutional authority of India under which Part of the Indian Constitution?
+A. Part IV
+B. Part V
+C. Part VI
+D. Part III
+Answer: B
+
+Q.42: Which of the following is the SI unit of resistivity?
+A. Ohm-meter
+B. Ohm
+C. Coulomb
+D. Ampere-meter
+Answer: A
+
+Q.43: In India, a law made by Parliament under Article 249 on a subject in the State List remains in force:
+A. Permanently unless repealed by Parliament
+B. Only during the validity of the Rajya Sabha resolution
+C. For six months after the resolution ceases to be in force
+D. Till the concerned state legislature repeals it
+Answer: C
+
+Q.44: The growth of Business Process Outsourcing
+
+(BPO) in India is mainly associated with which 1991 economic reform?
+A. Globalisation
+B. Privatisation reform reform
+C. Liberalisation
+D. Disinvestment reform reform
+Answer: A
+
+Q.45: In the Human Development Index (HDI), the dimension of a decent standard of living is primarily measured by which of the following?
+A. Access to Transportation (AT) per capita
+B. Population Density (PD) per square kilometer
+C. Availability of Housing (AH) per household
+D. Gross National Income (GNI) per capita
+Answer: D
+
+Q.46: Which of the following sectors was intended to increase its international competitiveness through the trade and investment policy reforms introduced under the Economic Reforms of 1991?
+A. Agricultural production and rural employment
+B. Industrial production and foreign technology
+C. Public sector production and domestic investment
+D. Agricultural exports and public investment
+Answer: B
+
+Q.47: The capacitance of a capacitor is doubled, while the potential difference across it is reduced to half its initial value. By what factor does the energy stored in the capacitor change?
+A. 1
+B. 2
+C. 1/4
+D. 1/2
+Answer: D
+
+Q.48: The economic liberalisation reforms in India were introduced during which Five-Year Plan?
+A. Seventh Five-Year
+B. Eighth Five-Year Plan Plan
+C. Ninth Five-Year
+D. Tenth Five-Year Plan Plan
+Answer: B
+
+Q.49: During whose viceroyalty was the portfolio system introduced in British India?
+A. Lord Canning
+B. Lord Mayo
+C. Lord Ripon
+D. Lord Curzon
+Answer: A
+
+Q.50: A student repeatedly lifts a 5-kilogram bag and experiences muscle fatigue during the activity. Which substance is traditionally described as accumulating in the muscles when the oxygen supply is insufficient?
+A. Glucose
+B. Lactic acid
+C. Chlorophyll
+D. Hemoglobin
+Answer: B
+
+Q.51: A right prism has a hexagonal base with an area of 90 cm². The height of the prism is 20 cm. Find the volume.
+A. 1800 cm³
+B. 2000 cm³
+C. 2200 cm³
+D. 2500 cm³
+Answer: A
+
+Q.52: What is the ratio of the sum of interior angles of a regular 7-sided polygon (heptagon) to that of a regular 9-sided polygon (nonagon)?
+A. 5 : 7
+B. 6 : 7
+C. 5 : 8
+D. 8 : 5
+Answer: A
+
+Q.53: A man observes the top of a tower at an angle of elevation of 60°. After moving 10 meters away from the tower in a straight line, the angle of elevation to the top of the tower reduces to 30°. What is the height of the tower?
+A. 2√3
+B. 5√3
+C. 7√3
+D. 11√3
+Answer: A
+
+Q.54: The value of √0.16 + √0.81 + √1.69 + √0.0025 is:
+A. 1.45
+B. 3.25
+C. 2.65
+D. 4.05
+Answer: A
+
+Q.55: In △PQR, the medians intersect at centroid G. If the segment PG (from vertex to centroid) is 15 cm, what is the length of segment GD(from centroid to the midpoint of QR)?
+A. 5 cm
+B. 7.5 cm
+C. 10 cm
+D. 12.1 cm
+Answer: A
+
+Q.56: Which of the following numbers is divisible by 3?
+A. 45671
+B. 58214
+C. 67215
+D. 89102
+Answer: A
+
+Q.57: A and B began a joint venture by investing a ₹20,000 and ₹25,000, respectively. B withdrew after four months, and C came in with an investment of ₹15,000. Four months later, A withdrew, and B re-entered with his former investment. Find the sharing ratio of their profits at the end of one year.
+A. 4 : 8 : 3
+B. 4 : 5 : 3
+C. 16 : 10 : 3
+D. 10 : 12 : 7
+Answer: A
+
+Q.58: A sum of money becomes ₹1,452 in 2 years and ₹1,320 in 1 year. Find the rate of compound interest.
+A. 12%
+B. 10%
+C. 5%
+D. 8%
+Answer: A
+
+Q.59: Two regular polygons have a number of sides in the ratio 1 : 4, and the difference between their exterior angles is 9°. What are the numbers of sides of these polygons?
+A. 30 sides and 110
+B. 23 sides and 120 sides sides
+C. 21 sides and 110
+D. 30 sides and 120 sides sides
+Answer: A
+
+Q.60: A quadrant of a circle has an area of 121π cm². Find the radius of the circle.
+A. 13 cm
+B. 9 cm
+C. 11 cm
+D. 7 cm
+Answer: A
+
+Q.61: The volume of a cone is 588π cm³ and its height is 7 cm. Find the radius of its base.
+A. 3√7 cm
+B. 6√7 cm
+C. 2√7 cm
+D. 8√7 cm
+Answer: A
+
+Q.62: The cost price of two articles, A and B, is in the ratio 4 :
+
+5. Article A is sold at a profit of 20% and Article B is sold at a loss of 10%. If the difference between their selling prices is ₹560, find the total cost price of both articles.
+A. ₹16,500
+B. ₹16,800
+C. ₹18,200
+D. ₹12,700
+Answer: A
+
+Q.63: If the selling price of an article is tripled, the profit becomes five times the original profit. Find the original profit percentage.
+A. 80%
+B. 100%
+C. 60%
+D. 90%
+Answer: A
+
+Q.64: A man observes the top of a tower at an angle of 30°. After walking 10 m towards it, the angle becomes 60°. Find the approximate height of the tower.
+A. 3.7 m
+B. 5.7 m
+C. 12.7 m
+D. 8.7 m
+Answer: A
+
+Q.65: In triangle ABC, the angles are ∠B = 50° and ∠C = 70°, which of the following option is correct?
+A. BC < AC
+B. AB < BC
+C. AB < AC
+D. BC > AC
+Answer: A
+
+Q.66: If sec θ+ tan θ= p , then find the value of p²+1 . p²−1
+A. sin θ
+B. cosec θ
+C. tan θ
+D. cot θ
+Answer: B
+
+Q.67: If the ratio of the volumes of two spheres is 64 : 125, what is the ratio of their total surface areas?
+A. 4:5
+B. 6:5
+C. 11:24
+D. 16:25
+Answer: D
+
+Q.68: In triangle △ABC , AD and BE are altitudes such that AD⊥BC and BE⊥AC . The altitudes intersect at point F. If the length of CF is equal to the length of AB, determine the measure of ∠ACB .
+A. 30°
+B. 45°
+C. 60°
+D. 75°
+Answer: B
+
+Q.69: A trader borrowed ₹90,000 at a fixed rate of simple interest. After 5 years, he repaid ₹1,21,500. If he had borrowed ₹ 1,50,000 at the same rate and for the same period, what would have been the total amount repaid?
+A. ₹1,04,500
+B. ₹2,02,500
+C. ₹2,03,300
+D. ₹1,05,900
+Answer: B
+
+Q.70: A team of 5 men and 5 women can complete a task in 12 days, while a team of 2 men and 8 women can complete the same task in 15 days. If a team of 10 women starts the work and works for 5 days, how many men must join them so that the remaining work is completed in exactly 5 more days? [Assume that each woman works with equal efficiency as the other women and same for the men.]
+A. 8
+B. 9
+C. 10
+D. 12
+Answer: A
+
+Q.71: P, Q and R contract to do a job for Rs. 52000. P alone can do it in 10 days, Q in 15 days and R in 30 days. P starts the work alone. After 2 days, Q joins him. After 3 more days, R also joins them. Then the three of them work together till the completion of the job. What should be Q's share of the earnings?
+A. Rs. 12300
+B. Rs. 13500
+C. Rs. 14500
+D. Rs. 15600
+Answer: D
+
+Q.72: Solve for acute θsin : θ= cos(θ+ 30°)
+A. 30°
+B. 60°
+C. 45°
+D. 15°
+Answer: A
+
+Q.73: What term must be added to the expression 4a² + 20ab to make it a perfect square trinomial?
+A. 25b²
+B. 5b²
+C. 10b²
+D. 100ab2
+Answer: A
+
+Q.74: If a² + b² = 89 and ab = 20, find the value of |a - b|.
+A. 3
+B. 5
+C. 7
+D. 9
+Answer: C
+
+Q.75: Simplify the following radical expression completely: √2+1 √2−1
+A. 3 −2√2
+B. 1 + 2√2
+C. 3 + 2√2
+D. 4 + 2√2
+Answer: C
+
+Q.76: Which of the following is the correct direct speech form of the given sentence? The players were asking if their coach would return before the game.
+A. The players, "Will our coach can return before the game?"
+B. The players said, "Will our coach return before the game?"
+C. The players, "Would our coach return before the game?"
+D. The players said, "Would our coach return before the game?"
+Answer: B
+
+Q.77: Rearrange the parts of the sentence in the correct order. A groundbreaking medical discovery P. has been developed by scientists Q. using innovative genetic engineering techniques R. paving the way for more effective vaccines S. which enhances the body's immune response,
+A. RSPQ
+B. QPSR
+C. QSPR
+D. PSRQ
+Answer: D
+
+Q.78: Fill in the blank with appropriate parts of speech. Rarely ______ such blatant disregard for protocol, nor ______ it so openly tolerated.
+A. had one witnessed, was
+B. one had witnessed, was
+C. had one witnessed, were
+D. had witnessed one, were
+Answer: A
+
+Q.79: Choose the correct idiom for the word highlighted in bold. He didn't tell me directly, but **reading between the lines**, I think he is not happy with them.
+A. Understanding the hidden or implied meaning.
+B. Taking words literally as they are written.
+C. Skipping parts of a text while reading.
+D. Guessing randomly without any context.
+Answer: A
+
+Q.80: Identify the error in the sentence. You should write clear so that the reader understands.
+A. reader
+B. clear
+C. understands
+D. should
+Answer: B
+
+Q.81: Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?
+
+1. Despite their seemingly simple form, jellyfish possess specialized cells called nematocysts that deliver venomous stings to their prey.
+
+2. Scientists continue to study jellyfish to understand their unique regenerative abilities and their potential applications in medicine.
+
+3. The evolutionary history of jellyfish dates back/500 million years, making them one of the oldest living creatures on Earth. 9
+
+4. Some species, like the Turritopsis dohrnii, exhibit biological immortality by reverting to their juvenile state after reaching maturity.
+
+5. Their ability to thrive in diverse marine environments has made them a key subject of research in evolutionary biology.
+A. 4-3-2-1-5
+B. 1-3-4-5-2
+C. 3-1-5-4-2
+D. 2-1-4-3-5
+Answer: C
+
+Q.82: Select the most appropriate antonym of the given word. Peregrinate
+A. Wander
+B. Roam
+C. Stay
+D. Travel
+Answer: C
+
+Q.83: Choose the correct meaning of idiom: Giving a false colouring to
+A. Describing something vividly
+B. Misrepresenting the facts
+C. Hiding something completely
+D. Adding visual detail to a scene
+Answer: B
+
+Q.84: Spot the correct spelling of the ear-nosethroat specialty.
+A. Otorhinolarynolog
+B. Otorhinolaryngolo y gy
+C. Otorhinolaringolog
+D. Otorrhinolaryngolo y gy
+Answer: B
+
+Q.85: Choose the correct one-word substitute for: 'A person who flatters for personal gain.'
+A. Altruist
+B. Protégé
+C. Mentor
+D. Sycophant
+Answer: D
+
+Q.86: Choose the correct one-word substitute for: 'Pleasure derived from others' misfortune."
+A. Antipathy
+B. Schadenfreude
+C. Empathy
+D. Sympathy
+Answer: B
+
+Q.87: Select the correct option: Not only ___ the funding, but he also offered strategic guidance.
+A. did he provide
+B. he provided
+C. he did provide
+D. had he provided
+Answer: A
+
+Q.88: Find the part of the sentence that contains an error: All the equipments (1)/ needed for the installation (2)/ were procured (3)/ well in advance. (4)
+A. (1)
+B. (2)
+C. (3)
+D. 4
+Answer: A
+
+Q.89: Find the part of the sentence that contains an error: Although the results appear encouraging on the surface, (1)/ yet critics remain sceptical of the methods (2)/ employed in gathering and interpreting (3)/ the underlying datasets.
+
+(4)
+A. 1
+B. 2
+C. 3
+D. 4
+Answer: B
+
+Q.90: Change the following from active to passive: Why did they cancel the meeting?
+A. Why have the meeting was cancelled?
+B. Why was the meeting cancelled?
+C. Why has the meeting been cancelled?
+D. Why is the meeting cancelled?
+Answer: B
+
+Q.91: Change the following from active to passive: The proposal should not have undergone such sweeping modifications.
+A. Such modifications should not have been undergone by the proposal.
+B. The proposal should not be modified so sweepingly.
+C. The modifications should not have been swept into the proposal.
+D. The proposal should not have been subjected to sweeping modifications.
+Answer: A
+
+Q.92: Choose the most suitable option to replace the highlighted part of the sentence: The principal was angry upon the students.
+A. angry by the
+B. angry with the students students
+C. angry/students
+D. angry on students
+Answer: B
+
+Q.93: A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The captain said that had they practiced more, they might have won the tournament.
+A. "If we practiced more, we might win the tournament," said the captain.
+B. "Had we practiced more, we might have won the tournament," said the captain.
+C. "If only we would practice more, we might win," said the captain.
+D. "Had we been practicing, we might win," said the captain.
+Answer: A
+
+Q.94: Choose the most appropriate synonym of the underlined word. There is an implicit trust between a doctor and their patient.
+A. Stated clearly
+B. Hidden
+C. Unspoken
+D. Confusing
+Answer: B
+
+Q.95: In the following question, the first and last parts of the sentence (1 and 6) are given. The rest of the sentence is split into four parts and named P, Q, R, and S. These four parts are not given in their proper order. Read the sentence and find out which of the four combinations is correct.
+
+1. The fundamental right P. which ensures that every citizen Q. is a cornerstone R. to freedom of speech S. of modern democracy
+
+6.can express their opinions without fear.
+A. RQSP
+B. PQRS
+C. RPSQ
+D. SRQP
+Answer: C
+
+Q.96: **Comprehension (Q. 96 - 100):** Hughie Erskine was charming and generous, but had little money and no successful profession. He wished to marry Laura, yet her father insisted that Hughie must first obtain a respectable income. One day, Hughie visited his friend Alan Trevor, a painter who was completing a portrait of an elderly beggar dressed in torn clothes. The model appeared so weak and miserable that Hughie felt immediate sympathy for him. While Alan briefly left the room, Hughie searched his pockets and found a single gold coin. Although he could scarcely afford to lose it, he placed the coin in the beggar's hand. The old man thanked him with unusual courtesy. Later, Alan informed Hughie that the supposed beggar was Baron Hausberg, one of the wealthiest men in Europe. The baron had deliberately posed as a poor man for the painting. Hughie was deeply embarrassed. He imagined that the millionaire would laugh at his foolish attempt to offer charity. The following morning, however, a representative of the baron arrived with an envelope. It contained a substantial sum of money described as a wedding gift from "an old beggar." The incident reveals the difference between wealth and generosity. Hughie possessed very little, yet he was prepared to share it without expecting recognition or reward. The baron, though rich, valued the sincerity of the act because it had been performed under the belief that he was helpless. Charity offered for public approval may flatter the giver, but compassion shown in private reveals character.
+
+---
+
+Why did Laura's father hesitate to approve her marriage to Hughie?
+A. He doubted Hughie's ability to remain generous after marriage.
+B. He disliked Hughie's friendship with the painter Alan Trevor.
+C. He expected Hughie to establish a respectable source of income.
+D. He believed Hughie lacked sufficient affection and concern for Laura.
+Answer: C
+
+Q.97: **Comprehension (Q. 96 - 100):** Hughie Erskine was charming and generous, but had little money and no successful profession. He wished to marry Laura, yet her father insisted that Hughie must first obtain a respectable income. One day, Hughie visited his friend Alan Trevor, a painter who was completing a portrait of an elderly beggar dressed in torn clothes. The model appeared so weak and miserable that Hughie felt immediate sympathy for him. While Alan briefly left the room, Hughie searched his pockets and found a single gold coin. Although he could scarcely afford to lose it, he placed the coin in the beggar's hand. The old man thanked him with unusual courtesy. Later, Alan informed Hughie that the supposed beggar was Baron Hausberg, one of the wealthiest men in Europe. The baron had deliberately posed as a poor man for the painting. Hughie was deeply embarrassed. He imagined that the millionaire would laugh at his foolish attempt to offer charity. The following morning, however, a representative of the baron arrived with an envelope. It contained a substantial sum of money described as a wedding gift from "an old beggar." The incident reveals the difference between wealth and generosity. Hughie possessed very little, yet he was prepared to share it without expecting recognition or reward. The baron, though rich, valued the sincerity of the act because it had been performed under the belief that he was helpless. Charity offered for public approval may flatter the giver, but compassion shown in private reveals character.
+
+---
+
+What prompted Hughie to give the gold coin to the elderly model?
+A. The model's apparent suffering immediately awakened Hughie's compassion.
+B. The model's courteous behaviour suggested that he deserved assistance.
+C. Alan had asked Hughie to reward the model for posing patiently.
+D. The model's silence made Hughie believe that payment was expected.
+Answer: B
+
+Q.98: **Comprehension (Q. 96 - 100):** Hughie Erskine was charming and generous, but had little money and no successful profession. He wished to marry Laura, yet her father insisted that Hughie must first obtain a respectable income. One day, Hughie visited his friend Alan Trevor, a painter who was completing a portrait of an elderly beggar dressed in torn clothes. The model appeared so weak and miserable that Hughie felt immediate sympathy for him. While Alan briefly left the room, Hughie searched his pockets and found a single gold coin. Although he could scarcely afford to lose it, he placed the coin in the beggar's hand. The old man thanked him with unusual courtesy. Later, Alan informed Hughie that the supposed beggar was Baron Hausberg, one of the wealthiest men in Europe. The baron had deliberately posed as a poor man for the painting. Hughie was deeply embarrassed. He imagined that the millionaire would laugh at his foolish attempt to offer charity. The following morning, however, a representative of the baron arrived with an envelope. It contained a substantial sum of money described as a wedding gift from "an old beggar." The incident reveals the difference between wealth and generosity. Hughie possessed very little, yet he was prepared to share it without expecting recognition or reward. The baron, though rich, valued the sincerity of the act because it had been performed under the belief that he was helpless. Charity offered for public approval may flatter the giver, but compassion shown in private reveals character.
+
+---
+
+Why did Hughie feel embarrassed after learning the model's true identity?
+A. He feared Alan would accuse him of interrupting the portrait session.
+B. He realised that Laura’s father might hear about his impulsive behaviour.
+C. He regretted giving away money that he urgently needed for marriage.
+D. He thought the wealthy baron might ridicule his misplaced act of charity.
+Answer: A
+
+Q.99: **Comprehension (Q. 96 - 100):** Hughie Erskine was charming and generous, but had little money and no successful profession. He wished to marry Laura, yet her father insisted that Hughie must first obtain a respectable income. One day, Hughie visited his friend Alan Trevor, a painter who was completing a portrait of an elderly beggar dressed in torn clothes. The model appeared so weak and miserable that Hughie felt immediate sympathy for him. While Alan briefly left the room, Hughie searched his pockets and found a single gold coin. Although he could scarcely afford to lose it, he placed the coin in the beggar's hand. The old man thanked him with unusual courtesy. Later, Alan informed Hughie that the supposed beggar was Baron Hausberg, one of the wealthiest men in Europe. The baron had deliberately posed as a poor man for the painting. Hughie was deeply embarrassed. He imagined that the millionaire would laugh at his foolish attempt to offer charity. The following morning, however, a representative of the baron arrived with an envelope. It contained a substantial sum of money described as a wedding gift from "an old beggar." The incident reveals the difference between wealth and generosity. Hughie possessed very little, yet he was prepared to share it without expecting recognition or reward. The baron, though rich, valued the sincerity of the act because it had been performed under the belief that he was helpless. Charity offered for public approval may flatter the giver, but compassion shown in private reveals character.
+
+---
+
+What made Hughie’s gift especially meaningful to Baron Hausberg?
+A. Hughie offered it despite knowing that the baron was testing him.
+B. Hughie intended it to strengthen his friendship with Alan Trevor.
+C. Hughie gave it privately while believing the recipient was helpless.
+D. Hughie expected the recipient to repay him after recovering financially.
+Answer: A
+
+Q.100: **Comprehension (Q. 96 - 100):** Hughie Erskine was charming and generous, but had little money and no successful profession. He wished to marry Laura, yet her father insisted that Hughie must first obtain a respectable income. One day, Hughie visited his friend Alan Trevor, a painter who was completing a portrait of an elderly beggar dressed in torn clothes. The model appeared so weak and miserable that Hughie felt immediate sympathy for him. While Alan briefly left the room, Hughie searched his pockets and found a single gold coin. Although he could scarcely afford to lose it, he placed the coin in the beggar's hand. The old man thanked him with unusual courtesy. Later, Alan informed Hughie that the supposed beggar was Baron Hausberg, one of the wealthiest men in Europe. The baron had deliberately posed as a poor man for the painting. Hughie was deeply embarrassed. He imagined that the millionaire would laugh at his foolish attempt to offer charity. The following morning, however, a representative of the baron arrived with an envelope. It contained a substantial sum of money described as a wedding gift from "an old beggar." The incident reveals the difference between wealth and generosity. Hughie possessed very little, yet he was prepared to share it without expecting recognition or reward. The baron, though rich, valued the sincerity of the act because it had been performed under the belief that he was helpless. Charity offered for public approval may flatter the giver, but compassion shown in private reveals character.
+
+---
+
+Which inference best explains the contrast between Hughie's coin and the baron's wedding gift?
+A. The coin represents financial carelessness, whereas the gift represents calculated generosity.
+B. The coin is given in ignorance, whereas the gift is given to display the baron's wealth.
+C. The coin exposes Hughie's poor judgment, whereas the gift corrects his misunderstanding.
+D. The coin reveals generosity through sacrifice, whereas the gift recognises that moral quality.
+Answer: D
+

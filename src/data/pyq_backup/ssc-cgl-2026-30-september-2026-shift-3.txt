@@ -1,0 +1,778 @@
+Q.1: Address A: Plot No. 89, Industrial Area, Phase II, Chandigarh – 160002. Address B: Plot No. 98, Industrial Area, Phase II, Chandigarh – 160002. Are these addresses likely to be the same?
+A. Yes
+B. No, plot differs
+C. No, phase differs
+D. No, pin code differs
+Answer: B
+
+Q.2: In a certain code language, "PEACE" is written as "ODZBD." How will "SMILE" be written in the same code language?
+A. RLHKD
+B. RHLKD
+C. RHMDK
+D. RHKDC
+Answer: A
+
+Q.3: In a certain code language, "DEVELOPMENT" is written as "EEWEMOQMFNU". How will "MANAGEMENT" be written?
+A. NBOAHENFOT
+B. NAOAHENEOT
+C. NAPAHFNEOT
+D. NAOBHFNEOT
+Answer: A
+
+Q.4: ![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p2_x27.jpeg)
+A. 23
+B. 25
+C. 27
+D. 29
+Answer: A
+
+Q.5: Complete the pattern in fig.
+
+(X) by selecting one of the figures from the four alternatives : Figure(X):
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p2_x28.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p2_x29.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p2_x30.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p2_x31.jpeg)
+Answer: C
+
+Q.6: Among W, X, Y, Z and V, X is taller than W but shorter than Y. W is taller than only
+
+V. Z is taller than Y. Who will be in the middle if they stand from shortest to tallest?
+A. Y
+B. Z
+C. X
+D. W
+Answer: C
+
+Q.7: You are an administrative officer in a district where a planned vaccination drive is being actively resisted by a community due to widespread misinformation. What is the most effective approach?
+A. Mandate that local police authorities forcefully compel all district residents to participate in the vaccination drive to ensure full compliance with official health directives.
+B. Organize collaborative community meetings with trusted local influencers to share accurate, evidence-based health information and address specific community-level concerns directly.
+C. Systematically post informative educational flyers throughout the entire residential area and passively assume that the residents will eventually choose to get vaccinated independently.
+D. Suspend the planned vaccination drive temporarily to proactively avoid potential social conflict and wait for the central government to provide additional supportive resources.
+Answer: B
+
+Q.8: You are leading a high-profile public infrastructure project. During a live, televised press conference, a journalist presents a leaked, out-of-context document and aggressively accuses your team of financial corruption. You feel a sudden surge of intense anger and your heart rate spikes. Which of the following actions demonstrates the highest level of Emotional Intelligence?
+A. Immediately counter-attack the journalist's credibility to protect your department's reputation before the audience shifts.
+B. Maintain absolute silence, refuse to answer any further questions, and abruptly terminate the press conference to avoid saying something incriminating.
+C. Take a deep breath, acknowledge the document calmly, and state that you will provide a verified, point-by-point clarification by evening.
+D. Smile broadly and laugh off the accusation as a humorous misunderstanding to show the audience that you are completely unbothered.
+Answer: C
+
+Q.9: Two of your senior team members, both exceptional performers, have developed a deep professional animosity. Their constant bickering during project design sessions is beginning to force junior employees to take sides, splintering the department's unity. What is the most emotionally intelligent course of action for you to take?
+A. Issue a formal warning letter to both individuals, stating that their annual performance appraisal scores will be slashed by 20% if another argument occurs.
+B. Call both individuals into a private meeting, explain the impact on junior staff, and have them co-create a professional boundary framework.
+C. Transfer the less experienced member of the two to a different department to completely eliminate the physical point of friction.
+D. Step back and let them naturally resolve their differences, assuming that two mature adults will eventually self-correct to save their careers.
+Answer: B
+
+Q.10: If 4 + 5 = 7, 16 + 3 = 7, and 64 + 2 = 10, then what is the value of 121 + 4 ?
+A. 7
+B. 4
+C. 15
+D. 11
+Answer: A
+
+Q.11: Choose the correct sequence of mathematical operators to replace the asterisks (*) in order to make the following expression a valid equation. 14 * 6 * 40 * 5 * 18 = 44
+A. ÷, +, ×, -
+B. +, ×, ÷, -
+C. -, +, ×, ÷
+D. ×, ÷, +, -
+Answer: B
+
+Q.12: In the following question, one statement is given, followed by certain inferences. Consider the statement to be true even if it seems to contradict commonly known facts. Read the inferences carefully and decide which of them logically follow from the given statement.
+
+Statement: The government has introduced a new tax policy that raises taxes on luxury items. Inferences:
+
+I. The government wants to discourage people from buying luxury goods.
+
+II. The government aims to increase revenue through taxation.
+
+III. The government aims to reduce income inequality by imposing higher taxes on luxury goods.
+A. Only Inference I follows.
+B. Only Inference II follows.
+C. Only Inferences I and II follow.
+D. Only Inferences I and III follow.
+Answer: B
+
+Q.13: ![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p4_x575.jpeg)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_q13_opt_A.png)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_q13_opt_B.png)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_q13_opt_C.png)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_q13_opt_D.png)
+Answer: B
+
+Q.14: During a school field trip, you're a chaperone and notice that one student seems to be deliberately excluded from group activities by their peers, though no one says anything overtly unkind. What should you do?
+A. Wait to see if the situation resolves on its own, since no rules are technically being broken.
+B. Check in privately, offer help joining a group, and encourage inclusion.
+C. Immediately separate the group of students who are excluding the other student as a punishment.
+D. Report the entire group to the school administration for bullying.
+Answer: B
+
+Q.15: ![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p4_x580.jpeg)
+A. 2
+B. 1
+C. 3
+D. 4
+Answer: A
+
+Q.16: ![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p4_x581.jpeg)
+A. 1
+B. 2
+C. 4
+D. 3 3
+Answer: A
+
+Q.17: Identify the Venn diagram that represents the relationships between "Taxpayers, Females, and Billionaires".
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p4_x582.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p4_x583.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p4_x584.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p4_x585.jpeg)
+Answer: D
+
+Q.18: Read the given statement carefully and the following assumptions based on it. Decide which of the assumptions are implicit in the statement.
+
+Statement: To reduce the backlog of pending legal cases, the high court has decided to implement an automated digital filing system. Assumptions:
+
+I. The entire backlog is caused solely by the manual filing of paper documents.
+
+II. All lawyers and judges in the court are already experts in using digital filing systems.
+A. Only Assumption II is implicit
+B. Both Assumptions I and II are implicit
+C. Only Assumption I is implicit
+D. Neither Assumption I nor II is implicit
+Answer: D
+
+Q.19: ![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p4_x586.jpeg)
+A. 5
+B. 6
+C. 1
+D. 3
+Answer: A
+
+Q.20: ![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p4_x587.jpeg)
+A. a
+B. c
+C. d
+D. e
+Answer: B
+
+Q.21: In the following question, out of the five figures marked (a), (b), (c), (d), and (e), four are similar in a certain manner. However, one figure is not like the other four. Choose the figure which is different from the rest.
+A. c
+B. a
+C. b
+D. e
+Answer: A
+
+Q.22: Which of the following rows/columns are connected/related with each other in some way? Rows Columns I II III IV V I 2 5 3 4 6 II 4 16 9 16 14 III 8 56 27 64 132 IV 16 115 81 256 180 V 32 120 243 1024 508
+A. Columns I, II and
+B. Columns I, II and III IV
+C. Columns II, IV and
+D. Columns I, III and V IV
+Answer: D
+
+Q.23: ![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p5_x841.jpeg)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_q23_opt_A.png)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_q23_opt_B.png)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_q23_opt_C.png)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_q23_opt_D.png)
+Answer: B
+
+Q.24: Fill in the blanks (_) using one of the following four options such that the series follows a specific pattern in the given order. p _ rt _ srtps _ tp _ rt
+A. prps
+B. sprs
+C. srtp
+D. prst
+Answer: B
+
+Q.25: ![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p5_x846.jpeg)
+A. A
+B. B
+C. C
+D. D
+Answer: B
+
+Q.26: The Father of the Indian Constitution, Dr. B.R. Ambedkar, termed which right as the "Heart and Soul" of the Constitution?
+A. Right to economic and social equality
+B. Right to freedom
+C. Right to constitutional remedies
+D. Right to religious freedom
+Answer: C
+
+Q.27: The Inter-State Council is established under which Article of the Constitution?
+A. Article 262 of the Indian Constitution ![Option A](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p5_x842.jpeg)
+B. Article 263 of the Indian Constitution 4 AWARENESS ![Option B](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p5_x843.jpeg)
+C. Article 280 of the Indian Constitution ![Option C](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p5_x844.jpeg)
+D. Article 243 of the Indian Constitution ![Option D](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p5_x845.jpeg)
+Answer: B
+
+Q.28: When it is midnight at the IST meridian, a place observes 6 a.m. Calculate meridian of that place.
+A. 277°31' E
+B. 172°30' E
+C. 37°30' E
+D. 127°30' W
+Answer: A
+
+Q.29: Which article of the Indian Constitution empowers Parliament to determine the salaries and allowances of its members?
+A. Article 102
+B. Article 104
+C. Article 106
+D. Article 108
+Answer: C
+
+Q.30: Financial Emergency in India comes under which Article of the Constitution?
+A. Article 352
+B. Article 356
+C. Article 360
+D. Article 368
+Answer: C
+
+Q.31: Which of the following is the SI unit of magnetic flux?
+A. Farad
+B. Henry
+C. Pascal
+D. Weber
+Answer: A
+
+Q.32: Which ocean contains the point where the Equator intersects the Prime Meridian?
+A. Pacific Ocean
+B. Atlantic Ocean
+C. Indian Ocean
+D. Arctic Ocean
+Answer: A
+
+Q.33: Cereals cover approximately what percentage of the total cropped area in India?
+A. 25%
+B. 45%
+C. 54%
+D. 80%
+Answer: C
+
+Q.34: Which of the following best describes the primary ecological function of a food web within a natural habitat?
+A. It shows a series of branching lines of interconnected food chains
+B. It shows the seasonal migration routes of various animal species in a region
+C. It estimates the total biomass of producers present at a given trophic level
+D. It identifies the dominant predators that control the population sizes of other species
+Answer: A
+
+Q.35: Excessive curvature of the eye lens causes which defect?
+A. Presbyopia
+B. Hypermetropia
+C. Myopia
+D. Night blindness
+Answer: C
+
+Q.36: Consider the following pairs of legendary musicians and their associated Gharanas:
+
+1. Ustad Ali Akbar Khan – Maihar Gharana
+
+2. Pandit Bhimsen Joshi – Kirana Gharana Which of the pairs given above is/are correctly matched?
+A. 1 only
+B. 2 only
+C. Both 1 and 2
+D. Neither 1 nor 2
+Answer: A
+
+Q.37: What is the main objective of the BHASHINI Mission under the National Language Translation Mission (NLTM)?
+A. Teaching Sanskrit in all schools
+B. Real-time AI language translation
+C. Translating ancient manuscripts
+D. Regulating social media content
+Answer: B
+
+Q.38: The emphasis on “South-South Cooperation” within BRICS (Brazil, Russia, India, China, and South Africa) primarily implies cooperation among:
+A. Developed industrial economies
+B. Socialist states only
+C. Developing and emerging economies
+D. Northern Hemisphere countries
+Answer: C
+
+Q.39: BRICS (Brazil, Russia, India, China, and South Africa) summits are generally characterized by:
+A. Enforcement sanctions on member states
+B. Judicial dispute settlement mechanisms
+C. Consensus-based political declarations
+D. Legally binding treaty negotiations
+Answer: C
+
+Q.40: A sees B attempting to kidnap C into a vehicle. A shoots B dead to prevent the kidnapping. Which of the following is the strongest legal justification under the Bharatiya Nyaya Sanhita, 2023 in India?
+A. The act would be justified only if B were armed.
+B. The act exceeds private defence because kidnapping is not punishable by death.
+C. Private defence extends to death in kidnapping assaults.
+D. A may only use non-lethal force unless C is actually abducted.
+Answer: A
+
+Q.41: Who has been appointed as the 27th Chief of the Naval Staff (CNS) of the Indian Navy in May 2026?
+A. Admiral Dinesh Kumar Tripathi
+B. Admiral Krishna Swaminathan
+C. Admiral Radhakrishnan Hari Kumar
+D. Vice Admiral Sanjay Vatsayan
+Answer: A
+
+Q.42: Which Indian tennis player, at age 43, set the Open Era record by winning the Australian Open 2024 men’s doubles title?
+A. Leander Paes
+B. Mahesh Bhupathi
+C. Rohan Bopanna
+D. Sumit Nagal
+Answer: C
+
+Q.43: In June 2026, which of the following protected areas in Assam recorded its firstever sighting of the Yellow-throated Marten?
+A. Manas National Park
+B. Nameri National Park
+C. Kaziranga National Park
+D. Dibru-Saikhowa National Park
+Answer: D
+
+Q.44: Which ISRO launch vehicle is being upgraded with the Semicryogenic Engine (SE2000)?
+A. Polar Satellite Launch Vehicle (PSLV)
+B. Geosynchronous Satellite Launch Vehicle (GSLV Mk II)
+C. Launch Vehicle Mark-3 (LVM3)
+D. Small Satellite Launch Vehicle (SSLV)
+Answer: B
+
+Q.45: Which of the following statement regarding Net Domestic Product (NDP) at market prices is correct? (GDP =Gross Domestic Product)
+A. Net Domestic Product at market prices exceeds GDP at market prices by the 6 amount of depreciation.
+B. Net Domestic Product at market prices equals GDP at market prices after deducting depreciation.
+C. Net Domestic Product at market prices equals GDP at market prices after adding indirect taxes.
+D. Net Domestic Product at market prices excludes both depreciation and net factor income abroad.
+Answer: B
+
+Q.46: During the 1991 economic crisis, India's foreign exchange reserves dropped to a level that was sufficient to finance imports for only how long?
+A. One month
+B. Two weeks
+C. One week
+D. Three months
+Answer: B
+
+Q.47: Which technology is primarily emphasized in the URDPFI (Urban and Regional Development Plans Formulation and Implementation) Guidelines for improving the speed and efficiency of urban planning and spatial analysis?
+A. Remote Sensing and GIS (Geographic Information System)
+B. Blockchain
+C. Robotics
+D. IoT (Internet of Things)
+Answer: A
+
+Q.48: Which of the following policy shifts characterized the Tenth Five-Year Plan (2002–2007) in terms of target setting?
+A. Phasing out centrally sponsored schemes
+B. Introducing eleven core monitorable targets
+C. Restricting foreign direct investment
+D. Eliminating fiscal deficit targets entirely
+Answer: C
+
+Q.49: Under the Indian Independence Act, full legislative authority in each Dominion was vested in which body?
+A. British Parliament
+B. Governor
+C. Constituent
+D. Secretary of State Assembly
+Answer: C
+
+Q.50: Which Governor-General of India abolished the practice of sati through Regulation XVII?
+A. Lord Ripon
+B. Lord William Bentinck
+C. Lord Dalhousie
+D. Lord Cornwallis
+Answer: B
+
+Q.51: Simplify:[(1.25 × 1.25 × 1.25 − 1) ÷ (1.25 × 1.25 + 1.25 + 1)] + 0.75.
+A. 1
+B. 0
+C. 3
+D. 5
+Answer: A
+
+Q.52: If √1 + x = 8 , find the value of 49 7
+
+x.
+A. 10
+B. 13
+C. 15
+D. 18
+Answer: C
+
+Q.53: Working alone, Pipe P can fill 15% of a tank in 4 hours, and Pipe Q can fill 18% of the same tank in 4 hours. If both pipes are opened together, what percentage of the tank will be filled in 4 hours?
+A. 25%
+B. 33%
+C. 42%
+D. 56%
+Answer: B
+
+Q.54: When x is subtracted from each of 20, 28, 25, and 35, the numbers so obtained are in proportion. Find the mean proportional between (x + 2) and (3x + 1).
+A. √3
+B. 3√2
+C. 2√3
+D. √2
+Answer: A
+
+Q.55: A man invests ₹4,000 for 3 years at a certain rate of simple interest. If the principal is increased by ₹2,000 and the rate is kept the same, the interest increases by ₹360. What was the original rate of interest?
+A. 6%
+B. 5%
+C. 8%
+D. 10%
+Answer: A
+
+Q.56: If x(7 −3 x) = 7 , then find the value of x x² + 1 . x²
+A. 107
+B. 53/49
+C. 125
+D. 47/49
+Answer: A
+
+Q.57: Which type of line has a slope equal to zero?
+A. Vertical line
+B. Line making 45° with x-axis
+C. Horizontal line
+D. Oblique line
+Answer: C
+
+Q.58: ₹2,50,000 is invested at 8% compound interest. After 1 year, ₹40,000 is withdrawn. Find the amount after 2 years.
+A. ₹2,98,400
+B. ₹2,78,400
+C. ₹2,48,400
+D. ₹2,08,400
+Answer: C
+
+Q.59: A rectangular box has dimensions 150 cm × 60 cm × 30 cm. Small cubes of side 5 cm are packed inside without leaving space. How many cubes can be packed?
+A. 2160
+B. 2250
+C. 1730
+D. 1400
+Answer: A
+
+Q.60: A chord of a circle subtends an angle of 60° at the center. If the radius of the circle is 10 cm, find the length of the chord.
+A. 5 cm
+B. 10 cm
+C. 15 cm
+D. 20 cm
+Answer: B
+
+Q.61: In a quadrilateral ABCD, the diagonal AC is 20 cm. The perpendiculars from vertices B and D to AC are 9 cm and 11 cm respectively. Find the area of ABCD.
+A. 180 cm²
+B. 200 cm²
+C. 220 cm²
+D. 240 cm²
+Answer: B
+
+Q.62: Evaluate the following expression: ( 1+cosθ+ sinθ 1+cosθ sinθ)( tanθ+cotθ) 1 .
+A. 2 sin θ
+B. 2 tan θ
+C. tan θ
+D. 2 cos θ
+Answer: D
+
+Q.63: The base of a prism is a right-angled isosceles triangle whose hypotenuse is 5√2 cm. If the height of the prism is 10 cm, find the volume of the prism.
+A. 110 cm³
+B. 125 cm³
+C. 150 cm³
+D. 135 cm³
+Answer: B
+
+Q.64: Solve: 1 − 1 + 1 √9−√8 √8−√7 √7−√6
+A. 3 + √6
+B. 3 −√6
+C. 3 + √5
+D. 3
+Answer: A
+
+Q.65: In triangle ABC, points D and E lie on side BC such that AD = AE and ∠BAD = ∠EAC. If AB = (3x + 1) cm, BD = 9 cm, AC = 34 cm, and EC = (y + 1) cm, then find the value of (x + y).
+A. 11
+B. 12
+C. 16
+D. 19
+Answer: D
+
+Q.66: ![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p9_x2011.jpeg)
+A. 60-80 sq m
+B. 100-120 sq m
+C. 80-100 sq m
+D. 120-140 sq m
+Answer: A
+
+Q.67: Two circles of radii 25 cm and 17 cm intersect such that the length of their common chord is 30 cm. Find the distance between the centers of the two circles, given that the centers lie on opposite sides of the chord.
+A. 12 cm
+B. 21 cm
+C. 24 cm
+D. 28 cm
+Answer: A
+
+Q.68: ![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p9_x2012.jpeg)
+A. 150-160
+B. 160-170
+C. 170-180
+D. 180-190
+Answer: A
+
+Q.69: A can contains a mixture of two liquids P and Q in the ratio 8:7. If 5 liters of the mixture is taken out and the remaining part of the can is filled with Q, then the ratio of P and Q becomes 2:
+
+3. Find how many liters of liquid P was there in the can initially?
+A. 17 liters
+B. 22 liters 3
+C. 28 liters
+D. 32 liters 3
+Answer: A
+
+Q.70: If the radius of a right circular cylinder is tripled and the height is one-third, then find the ratio between the new volume and the previous volume of the cylinder?
+A. 1 : 3
+B. 9 : 1
+C. 3 : 1
+D. 1 : 9
+Answer: A
+
+Q.71: A shopkeeper marks the price of an article 25% above its cost price. He gives a discount of 10% on the marked price. Find his profit percentage.
+A. 10.5%
+B. 15%
+C. 12.5%
+D. 17%
+Answer: A
+
+Q.72: ![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p10_x2339.jpeg)
+A. 162°
+B. 174°
+C. 150°
+D. 148°
+Answer: A
+
+Q.73: From a point on the ground, the angle of elevation of the top of a tower is 30°. After walking 40 m towards the tower, the angle of elevation becomes 60°. Find the height of the tower.
+A. 20√3 m
+B. 10√3 m
+C. 30√3 m
+D. 40√3 m
+Answer: A
+
+Q.74: What is the average of the first 20 positive multiples of 7?
+A. 70.5
+B. 71.5
+C. 73.5
+D. 77
+Answer: A
+
+Q.75: ![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p10_x2340.jpeg)
+A. 2024, 33.33%
+B. 2025, 46.32%
+C. 2025, 48.28%
+D. 2023, 36.25%
+Answer: A
+
+Q.76: Select the wrongly spelt word out of the four alternatives.
+A. Prejudise
+B. Ignorant
+C. Repulsive
+D. Ancestor
+Answer: A
+
+Q.77: Select the wrongly spelt word out of the four alternatives.
+A. Anesthetic
+B. Intricate
+C. Unexpectid
+D. Creeping
+Answer: C
+
+Q.78: Choose the most appropriate antonym of the underlined word. The professor was known for his abstruse lecturing style.
+A. Complex
+B. Simple
+C. Recondite
+D. Obscure
+Answer: B
+
+Q.79: Choose the most appropriate antonym of the underlined word. His speech was marred by a certain infelicity of expression that confused the audience.
+A. Unhappiness
+B. Appropriateness
+C. Misfortune
+D. Awkwardness
+Answer: B
+
+Q.80: Select the correctly spelt word to replace the highlighted word in the given sentence. The gardens are perenially beautiful and lush.
+A. Perennially
+B. Perenially
+C. Perenialy
+D. Perennialy
+Answer: A
+
+Q.81: Select the correctly spelt word to replace the highlighted word in the given sentence. The climate there is very salubrius.
+A. Salubrious
+B. Salubrius
+C. Salubreeous
+D. Salubreous
+Answer: A
+
+Q.82: In the following question, the first and last parts of the sentence (1 and 6) are given. The rest of the sentence is split into four parts and named P, Q, R, and S. These four parts are not given in their proper order. Read the sentence and find out which of the four combinations is correct.
+
+1. Lack of sleep P. and negatively affects Q. not only impairs R. but also weakens S. cognitive functions
+
+6. the immune system.
+A. PQRS
+B. RQSP
+C. QSRP
+D. SQRP
+Answer: C
+
+Q.83: In the following question, the first and last parts of the sentence (1 and 6) are given. The rest of the sentence is split into four parts and named P, Q, R, and S. These four parts are not given in their proper order. Read the sentence and find out which of the four combinations is correct.
+
+1. If we do not P. of our natural resources Q. take immediate steps R. then future generations S. for the conservation
+
+6. will have to face severe crises.
+A. QSPR
+B. PSQR
+C. QRPS
+D. RSQP
+Answer: A
+
+Q.84: Choose the most appropriate option to fill the blank in the given sentence. When the lights went out, we spent a ______ evening talking by the ______ light of a few candles.
+A. noiseless, waving
+B. silent, blinking
+C. quiet, flickering
+D. still, shaking
+Answer: C
+
+Q.85: Choose the most appropriate option to fill the blank in the given sentence. This year's costumes are ______ than last year's, but they were also ______ to prepare.
+A. elaborater, difficulter
+B. most elaborate, most difficult
+C. elaborate, difficult
+D. more elaborate, more difficult
+Answer: D
+
+Q.86: From the given options, select the homonym that corresponds to both Definition (P) and Definition (Q).
+
+(P) A company's legal financial debts or monetary obligations owed to outside parties
+
+(Q) A person or thing whose presence or behaviour creates a disadvantageous burden
+A. Liability
+B. Arrears
+C. Onus
+D. Impediment
+Answer: A
+
+Q.87: Which of the following options most accurately expresses the meaning of the idiom "to hit a purple patch"?
+A. To experience a highly volatile period of civil unrest and institutional friction triggered by sudden austerity measures.
+B. To enjoy an extended, highly successful period of outstanding performance, immense creativity, or exceptional good fortune.
+C. To navigate an ideological gridlock within a legislative body where opposing parties refuse to reach an equitable policy compromise.
+D. To have been luckily allotted a highly fertile piece of agricultural land that consistently yields an exceptionally bountiful crop.
+Answer: B
+
+Q.88: Read the sentences below carefully and identify which one contains a grammatical or structural error.
+
+(P) Professor Ali’s latest historical monograph is more comprehensive than concise, offering exhaustive archival data at the expense of brevity.
+
+(Q) The lead prosecutor remarked that the defendant's sudden courtroom confession was ready than calculated, catching the entire defence team off guard.
+A. Only P
+B. Only Q
+C. Both P and Q
+D. Neither P nor Q
+Answer: B
+
+Q.89: Read the following sentences carefully and identify which one contains a grammatical or structural error.
+
+(P) The department seeks an administrative director more capable of managing international logistics than of drafting internal fiscal policies.
+
+(Q) A legal framework less adaptive to technological disruption than intent on preserving historical precedents will inevitably stifle industrial innovation.
+A. Only P
+B. Only Q
+C. Both P and Q
+D. Neither P nor Q
+Answer: D
+
+Q.90: Convert the following passive sentence into active voice. Select the option that correctly identifies the true actor and uses the appropriate active transitive verb. A fierce exchange of mutual misunderstanding is generated by alternative ways of thinking and different systems of value, while the individual is left entirely trapped within a rigid, unforgiving worldview.
+A. Alternative ways of thinking and different systems of value generate a fierce exchange of mutual misunderstanding, while a rigid, unforgiving worldview leaves the individual entirely trapped.
+B. Alternative ways of thought and different systems of value generate a fierce exchange of mutual misunderstanding, while a rigid, unforgiving worldview leaves the individual entirely trapped.
+C. Alternative ways of thought and different systems of value generate a fiery exchanged of mutual misunderstanding, while a rigid, unforgiving worldview leaves the individual entirely trapped.
+D. Alternative ways of thinking and different systems of value generate a fierce exchange of mutual misunderstanding, while a rigid, unforgiving worldview leaving the individual entirely trapping.
+Answer: A
+
+Q.91: Choose the statement that represents the indirect narration of the given direct narration. Ritam said to Asha, "The local groups shouted at me, 'You had better move away because we are not going to tolerate your relative's community activism regarding cultural heritage and migration!'"
+A. Ritam told Asha that the local groups shouted at him that he had better move away because they were not going to tolerate his relative's community activism regarding cultural heritage and migration.
+B. Ritam told Asha that the local groups shouted at him that he had better moved 11 away because they were not going to tolerate his relative's community activism regarding cultural heritage and migration.
+C. Ritam told Asha that the local groups had shouted at him that he had better been moving away because they were not going to tolerate his relative's community activism regarding cultural heritage and migration.
+D. Ritam told Asha that the local groups had shouted at him that he had better move away because they were not going to tolerate his relative's community activism regarding cultural heritage and migration.
+Answer: A
+
+Q.92: Read the sentence below carefully. Choose the option (A/B/C) that best improves the sentence. If the sentence is already correct, select Option D (No improvement required). The planetary geologist hypothesised that ancient Martian liquid water could have fostered microbial life; consequently, early organic matter might still survive within deep subsurface caves today.
+A. A hypothesis was made by the planetary geologist that if liquid water flowed on the ancient Martian surface, microbial life will have emerged, indicating that early organic matter will survive within deep subsurface caves today.
+B. The planetary geologist hypothesised that if liquid water had flown on the ancient Martian surface, microbial life should have emerged – a possibility indicating that early organic matter might have survive within deep subsurface caves today.
+C. According to the planetary geologist’s hypothesis, had ancient Martian liquid water fostered microbial life, consequently, early organic matter shall still be surviving within deep subsurface caves today.
+D. No improvement required
+Answer: D
+
+Q.93: Read the sentence below carefully. Choose the option (A/B/C) that best improves the sentence. If the sentence is already correct, select Option D (No improvement required). The core reason why the global tech conglomerate decided to withdraw its investment from the region is because a massive supply chain disruption was suffered by its manufacturing division during the previous fiscal quarter.
+A. The global tech conglomerate decided to withdraw its investment from the region because its manufacturing division suffered a massive supply chain disruption during the previous fiscal quarter.
+B. The reason why the global tech conglomerate decided to withdraw its investment from the region was owing to its manufacturing division suffering a massive supply chain disruption during the previous fiscal quarter.
+C. The global tech conglomerate decided on withdrawing its investment from the region on account of a massive supply chain disruption being suffered by its manufacturing division during the previous fiscal quarter.
+D. No improvement required
+Answer: A
+
+Q.94: Select the correct passive form of the given sentence. The board had already selected the new candidate before the announcement.
+A. The new candidate was already selected by the board before the announcement.
+B. The new candidate has already been selected by the board before the announcement.
+C. The new candidate had already been selected by the board before the announcement.
+D. The new candidate was being selected by the board before the announcement.
+Answer: C
+
+Q.95: The following sentence is given in Indirect Speech. Select the option that correctly expresses it in Direct Speech. Mr. Casaubon bluntly asked Dorothea whether she would faithfully continue compiling his sprawling, unfinished mythological notes after his death.
+A. Mr. Casaubon bluntly asked Dorothea,
+"whether she would faithfully continue
+compiling his sprawling, unfinished
+mythological notes after his death."
+B. Mr. Casaubon bluntly said to Dorothea,
+"Will you faithfully continue compiling my
+sprawling, unfinished mythological notes
+after my death?"
+C. Mr. Casaubon bluntly told Dorothea,
+"Would you faithfully continue compiling
+my sprawling, unfinished mythological
+notes after my death!"
+D. Mr. Casaubon bluntly questioned Dorothea,
+"You will faithfully continue compiling my
+sprawling, unfinished mythological notes
+after my death?"
+Answer: B
+
+Q.96: **Comprehension (Q. 96 - 100):** The global transition toward renewable energy has become both an environmental and economic necessity. Nations investing in solar, wind, and green hydrogen technologies can reduce carbon emissions and strengthen energy security. However, the pace of transition varies because governments must balance environmental goals with financial realities. Policymakers are often required to ______ substantial public investment against immediate fiscal constraints, a task that demands both political resolve and economic foresight. Technological innovation has improved the efficiency of renewable systems; (B) ______, the intermittent nature of sunlight and wind continues to pose operational challenges for power grids. Energy storage solutions are promising, but their large-scale deployment depends on sustained research and affordable manufacturing. Experts also argue that renewable projects should not be evaluated solely on shortterm costs but on the broader economic benefits they (C) ______/several decades. Public enthusiasm alone cannot guarantee success. Effective implementation requires governments, industries, researchers, and citizens to (D) ______ their efforts rather than pursuing isolated initiatives. Without such cooperation, even well-designed policies may fail to achieve their intended objectives. Ultimately, the renewable energy revolution will succeed only if societies remain committed to innovation while refusing to (E) ______ complacency in the face of evolving environmental challenges.
+
+---
+
+Fill in the blank
+A. weigh
+B. estimate
+C. measure
+D. fathom
+Answer: C
+
+Q.97: **Comprehension (Q. 96 - 100):** The global transition toward renewable energy has become both an environmental and economic necessity. Nations investing in solar, wind, and green hydrogen technologies can reduce carbon emissions and strengthen energy security. However, the pace of transition varies because governments must balance environmental goals with financial realities. Policymakers are often required to ______ substantial public investment against immediate fiscal constraints, a task that demands both political resolve and economic foresight. Technological innovation has improved the efficiency of renewable systems; (B) ______, the intermittent nature of sunlight and wind continues to pose operational challenges for power grids. Energy storage solutions are promising, but their large-scale deployment depends on sustained research and affordable manufacturing. Experts also argue that renewable projects should not be evaluated solely on shortterm costs but on the broader economic benefits they (C) ______/several decades. Public enthusiasm alone cannot guarantee success. Effective implementation requires governments, industries, researchers, and citizens to (D) ______ their efforts rather than pursuing isolated initiatives. Without such cooperation, even well-designed policies may fail to achieve their intended objectives. Ultimately, the renewable energy revolution will succeed only if societies remain committed to innovation while refusing to (E) ______ complacency in the face of evolving environmental challenges.
+
+---
+
+Fill in the blank
+A. therefore
+B. moreover
+C. nevertheless
+D. consequently
+Answer: B
+
+Q.98: **Comprehension (Q. 96 - 100):** The global transition toward renewable energy has become both an environmental and economic necessity. Nations investing in solar, wind, and green hydrogen technologies can reduce carbon emissions and strengthen energy security. However, the pace of transition varies because governments must balance environmental goals with financial realities. Policymakers are often required to ______ substantial public investment against immediate fiscal constraints, a task that demands both political resolve and economic foresight. Technological innovation has improved the efficiency of renewable systems; (B) ______, the intermittent nature of sunlight and wind continues to pose operational challenges for power grids. Energy storage solutions are promising, but their large-scale deployment depends on sustained research and affordable manufacturing. Experts also argue that renewable projects should not be evaluated solely on shortterm costs but on the broader economic benefits they (C) ______/several decades. Public enthusiasm alone cannot guarantee success. Effective implementation requires governments, industries, researchers, and citizens to (D) ______ their efforts rather than pursuing isolated initiatives. Without such cooperation, even well-designed policies may fail to achieve their intended objectives. Ultimately, the renewable energy revolution will succeed only if societies remain committed to innovation while refusing to (E) ______ complacency in the face of evolving environmental challenges.
+
+---
+
+Fill in the blank
+A. incur
+B. yield
+C. derive
+D. consume
+Answer: D
+
+Q.99: **Comprehension (Q. 96 - 100):** The global transition toward renewable energy has become both an environmental and economic necessity. Nations investing in solar, wind, and green hydrogen technologies can reduce carbon emissions and strengthen energy security. However, the pace of transition varies because governments must balance environmental goals with financial realities. Policymakers are often required to ______ substantial public investment against immediate fiscal constraints, a task that demands both political resolve and economic foresight. Technological innovation has improved the efficiency of renewable systems; (B) ______, the intermittent nature of sunlight and wind continues to pose operational challenges for power grids. Energy storage solutions are promising, but their large-scale deployment depends on sustained research and affordable manufacturing. Experts also argue that renewable projects should not be evaluated solely on shortterm costs but on the broader economic benefits they (C) ______/several decades. Public enthusiasm alone cannot guarantee success. Effective implementation requires governments, industries, researchers, and citizens to (D) ______ their efforts rather than pursuing isolated initiatives. Without such cooperation, even well-designed policies may fail to achieve their intended objectives. Ultimately, the renewable energy revolution will succeed only if societies remain committed to innovation while refusing to (E) ______ complacency in the face of evolving environmental challenges.
+
+---
+
+Fill in the blank
+A. pool
+B. scatter
+C. divide
+D. withdraw
+Answer: D
+
+Q.100: **Comprehension (Q. 96 - 100):** The global transition toward renewable energy has become both an environmental and economic necessity. Nations investing in solar, wind, and green hydrogen technologies can reduce carbon emissions and strengthen energy security. However, the pace of transition varies because governments must balance environmental goals with financial realities. Policymakers are often required to ______ substantial public investment against immediate fiscal constraints, a task that demands both political resolve and economic foresight. Technological innovation has improved the efficiency of renewable systems; (B) ______, the intermittent nature of sunlight and wind continues to pose operational challenges for power grids. Energy storage solutions are promising, but their large-scale deployment depends on sustained research and affordable manufacturing. Experts also argue that renewable projects should not be evaluated solely on shortterm costs but on the broader economic benefits they (C) ______/several decades. Public enthusiasm alone cannot guarantee success. Effective implementation requires governments, industries, researchers, and citizens to (D) ______ their efforts rather than pursuing isolated initiatives. Without such cooperation, even well-designed policies may fail to achieve their intended objectives. Ultimately, the renewable energy revolution will succeed only if societies remain committed to innovation while refusing to (E) ______ complacency in the face of evolving environmental challenges.
+
+---
+
+Fill in the blank (E) with the most appropriate phrase.
+A. succumb to
+B. aspire to
+C. adhere to
+D. resort to
+Answer: A
+

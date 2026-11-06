@@ -1,0 +1,807 @@
+================================================================================
+SSC CGL 2025 TIER-I (HELD ON 18 SEPTEMBER 2025 SHIFT 1) - PURE ENGLISH
+Exam: SSC CGL | Year: 2025 | Total Questions: 100 | Duration: 60 Minutes
+Language: Pure English (No Hindi Translation)
+Extracted & 100% Verified from Official SSC Answer Key via SSC ZONE
+================================================================================
+
+Q1. Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. C F J, F I M, I L P, ?
+A) LKN
+B) LOS
+C) NHS
+D) KIS
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q2. A statement is given followed by two conclusions. Find which conclusion is TRUE based on the given statement. Statement: C ≥ T ; A = D ≥ O ; G ≥ D < S ; T ≥ A Conclusions: I: A ≤ O II: C ≥ G
+A) Either I or II
+B) Only II
+C) Only I
+D) Neither I nor II
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q3. A is the wife of B. B is the son of C. D is the daughter of A. How is D related to C?
+A) Granddaughter
+B) Daughter
+C) Sister
+D) Niece
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q4. Solve: LEAF : ? :: TIME : EMIT
+A) FEAL
+B) FAEL
+C) LFAE
+D) FELA
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q5. What comes next: 1, 2, 6, 24, 120, ?
+A) 720
+B) 504
+C) 840
+D) 600
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q6. Read the following statement carefully and identify the conclusion that follows. Statement: All citizens must abide by traffic laws. Conclusion I: Citizens who disobey traffic laws must be punished. Conclusion II: Obeying traffic laws shows civic responsibility.
+A) Only I
+B) Only II
+C) Both follow
+D) Neither follows
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q7. Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option. Statement: To reduce traffic congestion in urban areas, cities should invest in public transportation infrastructure, even though it requires significant initial investments. Assumptions: I. Public transportation can effectively reduce traffic congestion. II. The initial cost of building transportation infrastructure is high. III. People are willing to shift from private vehicles to public transportation.
+A) Only I and II are implicit
+B) Only II and III are implicit
+C) All I, II and III are implicit
+D) Only I is implicit
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q8. Read the following statement carefully and identify the conclusion that follows. Statement: Thousands of students appeared for the entrance exam conducted across the country. Conclusions: I. The exam is popular and competitive. II. All students who appeared will get admission.
+A) Only Conclusion I follows
+B) Only Conclusion II follows
+C) Both I and II follow
+D) Neither I nor II follows
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q9. Read the following statement carefully and identify the conclusion that follows. Statement: All circles are shapes. Some shapes are squares. All squares are polygons. Conclusions: I. Some shapes are polygons. II. Some polygons are circles.
+A) Only I follows
+B) Only II follows
+C) Both I and II follow
+D) Neither I nor II follows
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q10. Find the odd one out: Rose, Lotus, Sunflower, Oak, Tulip
+A) Rose
+B) Lotus
+C) Oak
+D) Tulip
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q11. In each of the following questions, the second word is formed by applying a specific rearrangement or transformation to the first. Identify the same pattern and apply it to the third word to find the correct answer from the given alternatives. FLOWER : REWOLF :: FRUITS : ?
+A) STUIRF
+B) STIURF
+C) STUIFR
+D) STRUIF
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q12. If LEMON is coded as KDNLN, how is MANGO written?
+A) LZODO
+B) LZLFP
+C) LZMFQ
+D) LZLFO
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q13. Rearrange the letters of the word "LOVE" to form the name of an animal.
+A) VOLE
+B) VEOL
+C) VLEO
+D) OLEV
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q14. Complete the series. 3, 5, 10, 12, 24, 26, ?
+A) 52
+B) 54
+C) 53
+D) 50
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q15. What comes next? MOA, NPB, OQC, PRD, ?
+A) QRE
+B) QTE
+C) RST
+D) QSE
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q16. Find the odd one out from the given alternatives
+A) Lothal
+B) Harappa
+C) Mohenjodaro
+D) Nalanda
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q17. Find the odd one out from the given alternatives.
+A) Tabla
+B) Mridangam
+C) Pakhawaj
+D) Sitar
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q18. Which of the following groups does not follow the same arithmetic rule?
+A) 10,20,40
+B) 5,15,45
+C) 2,6,18
+D) 3,9,27
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q19. If 8 * 2 = 20 and 6 * 3 = 27, then what is 5 * 4 = ?
+A) 32
+B) 24
+C) 36
+D) 22
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q20. Instruction: In a code language,"The tree grows tall" is coded as "so mo no lo", "The tree grows short" is coded as "so mo po lo", "The plant grows tall" is coded as "to mo no lo". Question: What is the code for "The plant grows short"?
+A) to mo lo po
+B) so lo to fo
+C) po ko go jo
+D) no ko mo no
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q21. A boat travels 60 kilometers upstream in 3 hours and covers the same distance of 60 kilometers downstream in 2 hours. What is the speed of the boat in still water?
+A) 20 km/h
+B) 18 km/h
+C) 25 km/h
+D) 15 km/h
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q22. A man says, "The son of my wife's brother is my ___ ."
+A) Brother-in-law
+B) Nephew
+C) Cousin
+D) Son-in-law
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q23. If '×' means '-', '-' means '+', '+' means '÷', then 12 + 6 × 2 - 4 =?
+A) 4
+B) 8
+C) 6
+D) 10
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q24. If the sum of 31 and 19 is multiplied by 9, what is the result?
+A) 423
+B) 432
+C) 441
+D) 450
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q25. The series given below contains a sequence of numbers. Accordingly identify the incorrect combination 4, 5, 14, 14, 34, 36, 74, 68
+A) 74
+B) 34
+C) 36
+D) 68
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q26. Which of the following animals were NOT found on Mauryan stone pillars?
+A) Lions
+B) Bulls
+C) Elephants
+D) Eagle
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q27. Fill in the blank: Ladakhhi new year (Losar) is welcomed with symbolic dough models of ______, sun, and moon placed in households.
+A) Ibex
+B) Yak
+C) Snow leopard
+D) Buddha
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q28. What was the political significance of Bimbisara's marriage to a Kosalan princess?
+A) Spread of Buddhism
+B) Peace with Kosala
+C) Trade with South India
+D) Fall of Pasenadi
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q29. Which of the following correctly describes the musical form Svarajati?
+A) A bhajan form used only in temples
+B) A dance item without fixed structure
+C) A vocal form later adapted for dance
+D) A film-based item with fast rhythm
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q30. Which of the following statements regarding the Dronacharya Award is/are correct? 1) It carries a cash prize of ₹10 lakhs and features a gold statue of Guru Dronacharya. 2) O.M. Nambiar was honored with the first Dronacharya Award in 1985 for outstanding coaching.
+A) Only 1 is Correct
+B) Only 2 is Correct
+C) 1 and 2 are correct
+D) Neither 1 nor 2 are Correct
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q31. What position did Hindu Beg hold during Humayun's reign?
+A) Rajput chief
+B) Court scholar
+C) Provincial governor
+D) Spiritual guide
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q32. Which of the following statements regarding the Government of India Act, 1919 is correctly matched with its constitutional implication?
+A) Transferred and Reserved subjects – Created functional overlap between central and provincial powers
+B) Creation of bicameralism – Introduced two houses at the central level for the first time
+C) Establishment of Public Service Commission – Gave financial control to Indian members in the Viceroy's Council
+D) Introduction of diarchy in provinces – Empowered Indian ministers to control defence and foreign affairs
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q33. Consider the following statements about Judo competition areas and contestants: 1) The competition area is divided into an inner contest area (minimum 8m×8m) and an outer safety area (minimum 3m wide). 2) The blue uniform contestant is called first, followed by the white uniform contestant. Which of the statements is/are correct?
+A) Only 1 is Correct
+B) Only 2 is Correct
+C) 1 and 2 are Correct
+D) Neither 1 nor 2 are Correct
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q34. Which country partners with India in the Maitri military exercise aimed at defence cooperation?
+A) Bhutan
+B) Sri Lanka
+C) Bangladesh
+D) Thailand
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q35. Who is the author of the book 'The Argumentative Indian' ?
+A) Amartya Sen
+B) Shashi Tharoor
+C) Ramachandra Guha
+D) Arvind Subramanian
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q36. Which of the following pairs is correctly matched with reference to limestone cave formations?
+A) Stalactite - Rises from cave floor
+B) Stalagmite - Hangs from cave roof
+C) Pillar - Formed by union of stalactite and stalagmite
+D) Stalagmite - Formed by water falling from floor
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q37. Which instrument description on XPoSat is correct?
+A) XSPECT extends POLIX's polarimetry range to 0.5-20 keV.
+B) POLIX performs X-ray spectroscopy and timing.
+C) XSPECT measures X-ray polarization.
+D) POLIX measures X-ray polarization (8-30 keV) to study black holes.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q38. Which of the following statements best explains why age-specific rates are used in demography?
+A) They help identify regional literacy levels
+B) They reflect age-wise variation in fertility or mortality
+C) They show the economic condition of elderly people
+D) They reduce the total number of indicators needed
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q39. "Amit Shah already has the key portfolios of Union Home Minister and Minister of Cooperation in 2025. Think of these statements: 1. He remains Union Home Minister and Minister of Cooperation post the 2024 elections. 2. The Home Ministry is responsible for internal security, borders, and disaster management. 3. The Home Minister enjoys a constitutionalized fixed 6-year term. Which one of the above is/are true?"
+A) 1 and 2 only
+B) 2 and 3 only
+C) 1 and 3 only
+D) 1, 2 and 3 all are correct
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q40. Which events were initially announced as demonstration sports but later became full-fledged medal events in the 38th National Games held at Uttarakhand?
+A) Kho-Kho and Kabaddi
+B) Yogasana and Mallakhamb
+C) Shooting and Athletics
+D) Kayaking and Rowing
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q41. The Kudremukh mines in Karnataka are primarily known for the extraction of which important mineral resource?
+A) Bauxite
+B) Limestone
+C) Iron Ore
+D) Copper
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q42. Which of the following statements correctly applies the weighted voting mechanism under Article 279A(9) of the Indian Constitution?
+A) The Centre holds 75% of the voting power in the GST Council.
+B) A GST Council decision can be passed solely with the support of the Centre and one State.
+C) The States collectively have twice the voting weight of the Centre in the GST Council.
+D) Each State has equal weightage as the Centre in GST Council voting.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q43. Consider the given statements regarding the behavior of ideal gases: 1. Ideal gas molecules have negligible volume compared to the total volume of the container. 2. There are strong intermolecular attractive forces between ideal gas molecules. 3. Collisions between ideal gas molecules are perfectly elastic. Which of the statements given above is/are correct?
+A) 1 and 2 only
+B) 1 and 3 only
+C) 2 and 3 only
+D) 1, 2 and 3
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q44. In Bharatiya Nagarik suraksha Samhita(BNSS), which court may grant default bail after time limit lapses?
+A) District Court
+B) Magistrate
+C) High Court
+D) Gram Nyayalaya
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q45. Which of the following schemes or initiatives is conceptually different from the others in terms of its sectoral focus?
+A) NSWS
+B) LEADS
+C) Gati Shakti
+D) PMFBY
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q46. Fill in the Blank: Ghoomar was listed among top local dances globally in ____ year.
+A) 2010
+B) 2013
+C) 2015
+D) 2018
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q47. According to Transparency International, what is a major concern with EU golden passport and visa schemes?
+A) They increase legal migration and help boost employment
+B) They encourage cultural exchange across the EU
+C) They enable the corrupt to exploit citizenship and residency systems for personal gain
+D) They promote tourism through relaxed visa regulations
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q48. Which Indian city topped the Swachh Vayu Sarvekshan 2024 in the category of cities with a population over 10 lakh?
+A) Bengaluru
+B) Indore
+C) Mumbai
+D) Ahmedabad
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q49. Aditya-L1 is placed in a halo orbit around which type of gravitationally balanced point in space?
+A) Polar
+B) Lagrangian
+C) Sun-synchronous
+D) Geostationary
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q50. Consider the following statements: 1. The GST Council makes binding recommendations on GST rates. 2. Article 246A allows States to legislate on intra-state supply of goods and services. Which of the above is/are correct?
+A) Only 1
+B) Only 2
+C) Both 1 and 2
+D) Neither 1 nor 2
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q51. What will come in place of ? to satisfy the equation :
+A) 7
+B) 6
+C) 5
+D) 4
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q52. Solve: [Equation omitted in source official exam PDF]
+A) 10
+B) 20
+C) 30
+D) 40
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q53. If 25% of (P + Q) = 75% of (P - Q), then find the ratio P: Q.
+A) 1 : 2
+B) 2 : 1
+C) 1 : 3
+D) 3 : 1
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q54. A bag contains ₹5, ₹2, and ₹1 coins in the ratio 2 : 3 : 4. If the total amount of money in the bag is ₹200, find the number of coins of each kind.
+A) 16 coins of ₹5, 24 coins of ₹2, and 32 coins of ₹1
+B) 20 coins of ₹5, 30 coins of ₹2, and 40 coins of ₹1
+C) 25 coins of ₹5, 35 coins of ₹2, and 45 coins of ₹1
+D) 18 coins of ₹5, 27 coins of ₹2, and 36 coins of ₹1
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q55. A shopkeeper marked a watch at ₹800. He sold it after allowing a 15% discount. If his profit on the sale was 20%, what was the cost price of the watch?
+A) ₹542.36
+B) ₹536.47
+C) ₹566.67
+D) ₹596.34
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q56. A product is sold at a 20% discount on its marked price. This transaction results in a profit of 10% on its cost price. If the profit earned is ₹300, what would have been the selling price if the product was sold at a 30% discount on its marked price?
+A) ₹2887.50
+B) ₹3000.26
+C) ₹3300
+D) ₹3150
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q57. If the cubic equation a³ - 4a² + 5a - 2 = 0 has the root x, y, z then find the value of x + y + z.
+A) 5
+B) 6
+C) 7
+D) 4
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q58. C borrowed ₹6000 from D on 15 March 2023 at a simple interest rate of 10% per annum. C decided to repay the loan on 15 September 2023. How much total amount must C return to D?
+A) ₹6300
+B) ₹6500
+C) ₹5400
+D) ₹5800
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q59. A person invested a total sum of ₹2200 in three different schemes of simple interest at 4%, 5%, and 10% per annum. At the end of one year, he got the same interest from all three schemes. What was the amount (in ₹) invested at 5%?
+A) ₹1000
+B) ₹800
+C) ₹600
+D) ₹400
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q60. A man standing on the top of a 120 m high tower observes the angles of depression of two cars on opposite sides of the tower to be 30°and 45°. What is the distance between the two cars?
+A) 10(√3)
+B) 20(√3 + 1)
+C) 10(√3 + 1)
+D) 120(√3 + 1)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q61. A vertical pole TF has its base F on the ground. From a point A, 25 meters from F, the angle of elevation of T is x°. From another point B, 75 meters from F (and in the same line as A), the angle of elevation of T is y°. If the height of the pole is 25√3 meters, what is the value of x° + y°?
+A) 60°
+B) 75°
+C) 90°
+D) 120°
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q62. Two identical solid hemispheres, each with a radius of 21 cm, are melted and recast into a single sphere. What is the radius of the new sphere formed?
+A) 18 cm
+B) 21 cm
+C) 24 cm
+D) 27 cm
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q63. Creating a frustum, a right circular cone is sliced parallel to its base,. The height of the original cone is 30 cm, and the cut is made 10 cm from the vertex. What is the ratio of the volumes of the frustum to that of the entire cone?
+A) 26:27
+B) 11:18
+C) 16:19
+D) 14:15
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q64. The side of a regular octagon is half the side of a regular quadrilateral (square). If the perimeter of the quadrilateral is 20cm, what is the perimeter of the octagon?
+A) 10 cm
+B) 20 cm
+C) 30 cm
+D) 40 cm
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q65. A decorative column is made in the shape of a regular hexagonal prism. The side length of its base is 10 cm. The column is built from multiple sections, and their heights form an arithmetic progression: the first section is 5 cm tall, and each subsequent section is 2 cm taller than the previous one. If the column has 4 sections in total, what is the total volume of the column?
+A) 4500√3 cm³
+B) 4800√3 cm³
+C) 5100√3 cm³
+D) 5400√3 cm³
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q66. Find the midpoint of segment joining (3,4) and (7,8).
+A) (3, 4)
+B) (5, 6)
+C) (4, 5)
+D) (6, 7)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q67. The number of diagonals in a hexagon is:
+A) 6
+B) 9
+C) 12
+D) 15
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q68. Triangle ABC has its centroid at point G(4, 5), and vertex A is located at (2, 3). If point D is the midpoint of side BC, what are the coordinates of D?
+A) (5, 6)
+B) (5, 8)
+C) (6, 7)
+D) (6, 8)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q69. Given, , then find the value of x.
+A) 5
+B) 6
+C) 7
+D) 8
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q70. A common internal tangent connecting two circles is 9 cm long. The distance between the circles' centers is 15 cm. If the larger circle has a radius of 8 cm, what is the radius of the smaller circle?
+A) 4 cm
+B) 1 cm
+C) 6 cm
+D) 7 cm
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q71. In a cyclic quadrilateral ABCD, AB is the diameter of the circle. If angle ACD is 40°, what is the measure of angle BAD?
+A) 40°
+B) 50°
+C) 80°
+D) 90°
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q72. If sin² A - cos² A = 1/2, find the value of sin⁴ A - cos⁴ A.
+A) 1/4
+B) 1/2
+C) 1
+D) 0
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q73. If tan A = 3/4, find cosec²A.
+A) 9/25
+B) 16/25
+C) 25/9
+D) 25/16
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q74. What is the value of (0.12³ + 0.06³) ÷ (0.24³ + 0.12³)? (0.12³ + 0.06³) ÷ (0.24³ + 0.12³)
+A) 0.125
+B) 0.5
+C) 0.25
+D) 1
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q75. Simplify: (((0.5)³ + (0.05)³ + (0.005)³) ÷ ((0.1)³ + (0.01)³ + (0.001)³)
+A) 5
+B) 25
+C) 125
+D) 625
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q76. ² ² ² ² ² ² ² ² Select the most appropriate synonym of the given word: COGENT
+A) Weak
+B) Dubious
+C) Convincing
+D) Unclear
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q77. Select the most appropriate antonym of the given word. Lassitude
+A) Exhaustion
+B) Apathy
+C) Vigor
+D) Lethargy
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q78. Choose the correct meaning of idiom: Won his laurels
+A) Achieved distinction or fame
+B) Lost everything
+C) Changed his opinion
+D) Saved money
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q79. Choose the correct meaning of idiom: Came of age
+A) Reached adulthood legally or socially
+B) Understood morality for the first time
+C) Abandoned earlier beliefs
+D) Inherited property
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q80. Select the correct spelling of a word meaning 'cheerfully optimistic, especially in difficult times'.
+A) Sanguine
+B) Sangwine
+C) Sanguin
+D) Sangueenm
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q81. Choose the correct one-word substitution for: 'A loud and confused noise'.
+A) Cacophony
+B) Soliloquy
+C) Racket
+D) Roar
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q82. Choose the correct one-word substitute for: 'One who writes traditional poems'.
+A) Bard
+B) Lyricist
+C) Dramatist
+D) Essayist
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q83. Fill in the blank with the right phrasal verb: The investigation was ____ after new evidence emerged.
+A) called off
+B) picked up
+C) taken up
+D) revived up
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q84. Select the correct option: The biochemist insisted _____ conducting a double-blind trial before publication.
+A) with
+B) on
+C) to
+D) about
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q85. Find the part of the sentence that contains an error: The interns were asked (1)/ to complete the assignment quickly (2)/ and submit it (3)/ with neat handwriting. (4)/
+A) (1)
+B) (2)
+C) (3)
+D) (4)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q86. Find the part of the sentence that contains an error: It was at the summit in Vienna (1)/ where the treaty was officially ratified, (2)/ thereby bringing to an end (3)/ decades of political uncertainty in the region. (4)
+A) (1)
+B) (2)
+C) (3)
+D) (4)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q87. Change the following from active to passive: They had been negotiating the deal for months.
+A) The deal had been negotiating for months.
+B) The deal had been being negotiated for months.
+C) The deal has been being negotiated for months.
+D) The deal was being negotiated for months.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q88. Select the sentence containing the homonym of the highlighted word: The nobleman received a ceremonial fief from the sovereign.
+A) The farmer leased the fief to a local tenant.
+B) The law student confused fief with deed transfer.
+C) The engineer calibrated the hydraulic fief for flow control.
+D) The archives recorded the transfer of fief in Latin.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q89. Convert the sentence provided below from its passive voice structure to an active voice structure: The possibility of the files being leaked before the official release was not ruled out.
+A) Officials ruled out the leak before the files were released.
+B) The leak of the files was ruled out before the release.
+C) Someone did not rule out the possibility that the files were leaked before release.
+D) The release happened before ruling out the leak possibility.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q90. Choose the most suitable option to replace the highlighted part of the sentence: The manager is angry on the clerk.
+A) is angry at
+B) is annoyed by
+C) is angry with
+D) is angry over
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q91. Choose the most suitable option to replace the highlighted part of the sentence: He was accused for stealing the documents.
+A) accused of stealing
+B) accused to steal
+C) accused with stealing
+D) charged for steal
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q92. PASSAGE (Q.92 - Q.96) Read the following passage and answer the questions based on the passage : The accelerating depletion of fossil fuels, coupled with mounting ecological degradation, has propelled renewable energy from a peripheral concern to a central component of global energy discourse. Yet, the conversation often fixates on production rather than application. A nuanced understanding of renewable energy must include not only its sources—solar, wind, hydro, geothermal, and biomass—but also the multifaceted domains in which it can transform economies, decentralize power structures, and promote environmental justice. In the domain of electricity generation, renewables have already begun to displace conventional energy systems. Solar photovoltaic installations now power not only urban rooftops but remote rural hamlets long excluded from centralized grids. Micro-hydel projects have enabled mountain communities to harness perennial streams for electricity without the ecological upheaval of large dams. Similarly, wind energy has emerged as a significant contributor in coastal and arid zones, transforming local economies by creating decentralized, sustainable employment ecosystems. Beyond electricity, renewable energy finds compelling applications in transportation, industrial heating, and agriculture. The rise of biofuels—especially second- generation variants derived from agricultural waste—offers a pathway to decarbonize aviation and freight transport, sectors that have traditionally been resistant to electrification. In agrarian contexts, solar- powered pumps have reduced farmers’ dependence on erratic grid supply and diesel generators, enhancing irrigation autonomy while mitigating carbon emissions. Industries, often vilified for their carbon intensity, are also experimenting with renewable alternatives. Concentrated solar thermal technologies, for instance, are being employed in textile processing, food dehydration, and even metallurgy, demonstrating that clean energy need not be confined to low-intensity applications. Furthermore, geothermal energy is increasingly being harnessed for space heating in colder regions and for cooling through absorption chillers—thereby offsetting conventional HVAC loads. However, the significance of renewable energy transcends utility. At a deeper level, it challenges existing geopolitical hierarchies shaped by fossil fuel dependency. While oil-rich nations have historically wielded disproportionate influence, renewable resources—abundant yet diffuse— enable energy sovereignty for resource-scarce regions. This democratization of energy, if properly managed, can catalyze more equitable development paradigms. Nevertheless, integration challenges persist. Intermittency, storage limitations, land use conflicts, and upfront costs are not insignificant barriers. A hasty transition without resilient infrastructure or community consent could replicate the very injustices renewables seek to redress. Therefore, the question is not merely how to produce renewable energy, but how to embed it meaningfully across sectors, geographies, and social hierarchies. What primary argument does the author make about renewable energy?
+A) It can only replace fossil fuels in electricity generation
+B) It has limited potential beyond solar energy
+C) Its transformative use lies across multiple sectors
+D) It is primarily a Western innovation
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q93. What distinguishes second-generation biofuels, as mentioned in the passage?
+A) They are made from animal fats
+B) They derive from non-edible agricultural waste
+C) They require petroleum additives
+D) They emit more carbon than coal
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q94. Why is geothermal energy cited in the passage?
+A) To highlight a rare and impractical solution
+B) To show its political implications
+C) To exemplify its industrial cooling and heating utility
+D) To criticize its high cost
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q95. According to the author, how does renewable energy challenge global power structures?
+A) By reducing electricity usage
+B) By centralizing production
+C) By enabling energy independence in diverse regions
+D) By increasing oil exports
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q96. What is the author's caution about the rapid adoption of renewable energy?
+A) It is economically unsustainable
+B) It may repeat existing patterns of injustice
+C) It leads to fossil fuel scarcity
+D) It diminishes employment
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q97. Select the correct option for the Direct Speech conversion of the sentence below. He confessed that the violin concerto would have remained fragmentary had the late maestro not bequeathed his annotated sketches.
+A) He said, "The violin concerto would have remained fragmentary had the late maestro not bequeathed his annotated sketches."
+B) He said, "The violin concerto would have remained fragmentary if the late maestro not bequeathed his annotated sketches."
+C) He said, "The violin concerto will be remaining fragmentary had the late maestro not bequeathed his annotated sketches."
+D) He said, "The violin concerto would be fragmentary if sketches had not been bequeathed."
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q98. A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. She said, "I didn't see him at the station."
+A) She said that she hasn't seen him at the station.
+B) She said that she had not seen him at the station.
+C) She said she didn't saw him at the station.
+D) She said that she was not seeing him at the station.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q99. Rearrange the following sentences to form a coherent paragraph: 1. This phenomenon is often referred to as a "network effect," where the value of a service increases with the number of its users. 2. Consequently, they tend to dominate their respective markets, leading to the creation of powerful monopolies or oligopolies. 3. The digital economy has given rise to new business models that rely on the accumulation of data and the scale of their user base. 4. A prime example is the platform economy, where companies like social media networks and ride-sharing apps create value by connecting users.
+A) 2, 3, 4, 1
+B) 4, 1, 2, 3
+C) 3, 4, 1, 2
+D) 1, 3, 2, 4
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q100. Rearrange the following sentences in correct order to make a logical passage. 1. This helps prevent nutrient depletion and soil erosion. 2. Crop rotation is a sustainable agricultural practice. 3. It involves planting different crops sequentially on the same land. 4. It also reduces the need for synthetic fertilizers.
+A) 2-3-1-4
+B) 1-2-3-4
+C) 2-4-1-3
+D) 3-4-2-1
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+

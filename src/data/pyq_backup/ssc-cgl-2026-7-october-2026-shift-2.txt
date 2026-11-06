@@ -1,0 +1,792 @@
+Q.1: Find the 3rd letter to the left of the letter equidistant from C and O.
+A. H
+B. F
+C. G
+D. I
+Answer: B
+
+Q.2: A man walks at 5 km/h and runs at 10 km/h. He covers a distance in 2 hours, walking half the time and running the other half. What is the total distance?
+A. 12.5 km
+B. 15 km
+C. 18.5 km
+D. 7.5 km
+Answer: B
+
+Q.3: What is the 5th term of 3, 6, 12, 24 ...?
+A. 40
+B. 42
+C. 48
+D. 50
+Answer: C
+
+Q.4: The average of 5 numbers is 12. If one of these numbers is replaced by 20, the new average becomes 14. What was the original number that was replaced?
+A. 4
+B. 6
+C. 8
+D. 10
+Answer: D
+
+Q.5: Carefully examine the address below and identify which of the following alternatives matches the given address. Mr. R. Patel 7652 Silver Oak, 7th Floor, Ambli Road Ahmedabad, Gujarat - 380058 Alternatives: A) Mr. R. Patel, 7652 Silver Oak, 7th Floor, Ambli Road, Ahmedabad, Gujarat - 380058 B) Mr. R. Patel, 7652 Silver Oak, 6th Floor, Ambli Road, Ahmedabad, Gujarat - 380058 C) Mr. R. Patel, 7652 Silver Oak, 7th Floor, Ambli Road, Ahmedabad, Gujarat - 380058 D) Mr. R. Patel, 7652 Silver Oak, 7th Floor, Ambli Road, Ahmedabad, Gujarat - 380059
+A. A and B
+B. A and C
+C. B and D
+D. D and C 1 INTELLIGENCE
+Answer: B
+
+Q.6: In a certain code language, "TIGER" is written as "REGIT." How will "MOUSE" be written in the same code language?
+A. ESUOM
+B. MUOSE
+C. OSEUM
+D. MUESO
+Answer: A
+
+Q.7: A sum of money becomes ₹ 18,720 in 3 years and ₹ 22,880 in 5 years at simple interest. What is the rate of interest per annum if the principal is ₹ 12,480?
+A. 14 2 %
+B. 16 2 % 3
+C. 15 5 %
+D. 18 1 % 9
+Answer: B
+
+Q.8: If 'A # B' denotes A is the brother of B, 'A @ B' denotes A is the mother of B, 'A & B' denotes A is the father of B, and 'A % B' denotes A is the sister of B, choose the expression that correctly represents that M is the paternal uncle of N.
+A. M # R & N
+B. M % R @ N
+C. M & R # N
+D. M @ R # N
+Answer: A
+
+Q.9: Candidates appearing from the "Northern Zone" are assigned roll numbers starting with 9201. Which of the following roll numbers belongs to a candidate NOT from the Northern Zone?
+A. 92014498211
+B. 92014498214
+C. 92104498217
+D. 92014498220
+Answer: C
+
+Q.10: Within a mixed team of both new and experienced employees, the experienced members tend to dominate discussions, while a new joiner appears overwhelmed and hesitant to contribute their own ideas. What is the most effective approach to foster inclusivity and improve team participation?
+A. Actively ask for the new joiner's opinion in discussions and make space for them to contribute.
+B. Choose to assign critical tasks exclusively to the experienced employees to maintain current workflow.
+C. Ignore the current situation, as it is considered a natural and expected part of team dynamics.
+D. Politely advise the new joiner to continue observing the team dynamics quietly and learning for now.
+Answer: A
+
+Q.11: You and two friends are on a train with tickets under RAC (Reservation Against Cancellation). The ticket inspector offers to upgrade you to three full berths in exchange for a bribe. What would be the most ethical and professional way to respond to this situation?
+A. Agree to pay the requested bribe to the ticket checker, justifying the action because you believe that having a full berth is necessary for a long journey.
+B. Firmly refuse to pay the bribe and continue to travel by sitting comfortably in your originally allotted seats as per the terms of your current ticket status.
+C. Forcibly occupy the berths by threatening the current legal occupants, regardless of the potential for physical conflict or the resulting disturbance to other passengers.
+D. Utilize your personal connections by calling a friend who is an officer in the railways to pressure the ticket checker into providing you with berths without payment.
+Answer: B
+
+Q.12: Choose the option which is exactly similar to: Secretary, Lions Club International, Sector 29, Gurgaon-122002
+A. Secretary, Lions Club International, Sector 29, Gurgaon 122002
+B. Secretary, Lions Club International, Sector 29, Gurgaon-122002
+C. Secretary, Lions Club International, Sector 28, Gurgaon-122002
+D. Secretary, Lions Club International, Sector 29, Gurgaon-122003
+Answer: B
+
+Q.13: What should come in place of question mark (?) in the following analogy? AZB : YCX :: DWE : ?
+A. BZA
+B. ZBA
+C. YAX
+D. ABC
+Answer: A
+
+Q.14: In the given question, a few statements have been given followed by conclusions based on them. Consider the statements to be true and answer which of the given conclusions logically follow the statement. Statements
+
+1. All satellites are engineered objects.
+
+2. Some engineered objects are sustainable.
+
+3. No unsustainable object receives certification. Conclusions
+
+I. Some satellites may be sustainable.
+
+II. Some engineered objects do not receive certification.
+
+III. All satellites receive certification.
+
+IV. Some sustainable objects receive certification.
+A. Only I and II follow
+B. Only I follows
+C. Only II and IV
+D. Only I, II and IV follow follow
+Answer: A
+
+Q.15: In the following question, one statement is given, followed by certain inferences. Consider the statement to be true even if it seems to contradict commonly known facts. Read the inferences carefully and decide which of them logically follow from the given statement.
+
+Statement: In a study of 500 working professionals, those who slept less than 6 hours per night were 3 times more likely to report burnout than those who slept 7-8 hours. Inferences:
+
+I. Sleeping for less than 6 hours is a contributing factor to professional burnout.
+
+II. Getting 7-8 hours of sleep eliminates the risk of experiencing burnout.
+A. Only Inference I follows.
+B. Only Inference II follows.
+C. Both Inferences I and II follow.
+D. Neither Inference I nor Inference II follows.
+Answer: A
+
+Q.16: Among the four given combinations, two are exactly identical. Identify the matching pair.
+
+1. Purva Chatterjee, Block-DA, Flat No. 1202, Riversidefront Residency, Salt Lake City, Kolkata – 700091
+
+2. Purva Chatterjee, Block D, Flat No. 1202, Riversidefront Residency, Salt Lake City, Kolkata – 700091
+
+3. Purva Chatterjee, Block-DA, Flat No. 1202, Riversidefront Residency, Salt Lake City, Kolkata – 700091
+
+4. Purva Chatterjee, Block-DA, Flat No.1202, Riverside Front Residency, Salt Lake City, Kolkata – 700091
+A. 1 & 2
+B. 2 & 3
+C. 1 & 3
+D. 3 & 4
+Answer: C
+
+Q.17: During a project review meeting, you notice that a teammate is visibly distressed, clenching their hands and speaking with a tight, strained voice. When asked if they want to comment, they look down and say, "I'm fine, don't worry about it." Which of the following responses by you demonstrates the highest level of emotional intelligence
+
+(EQ)?
+A. Press them immediately during the meeting to share what is wrong so the team can resolve the issue collectively on the spot.
+B. Accept their verbal response for the duration of the meeting to preserve their privacy, but follow up with them in a private, one-on-one setting later to offer support.
+C. Take their statement literally, assume they are completely unaffected, and dismiss the physical signs of distress from your mind moving forward.
+D. Immediately approach the department manager after the meeting to report that the teammate appears emotionally unstable and unable to handle the current workload.
+Answer: B
+
+Q.18: Read the given conditions carefully and determine the appropriate outcome for the case provided. If any exception applies, identify the authority to whom the case should be referred. Criteria for Corporate Club Membership:
+
+(i) Age between 30 and 50 (inclusive).
+
+(ii) Salary must be above ₹10 Lakh. Exceptions: Exception
+A. Membership to be granted
+B. Case to be referred to the Club Secretary
+C. Membership application to be rejected
+D. Case to be referred to the Legal Compliance Officer
+Answer: B
+
+Q.19: Read the statement carefully and assume it to be true. Then examine the two conclusions given below it and decide which conclusion(s), if any, logically follow from the statement.
+
+Statement: A financial authority has mandated more rigorous compliance measures for fintech companies aimed at increasing transparency and defending consumer rights.
+
+Conclusions:
+
+I. Fintech operations require regulatory oversight.
+
+II. Transparency is important for protecting consumers.
+A. Only conclusion I follows
+B. Neither conclusion I nor conclusion II follows
+C. Both conclusions I and II follow
+D. Only conclusion II follows
+Answer: C
+
+Q.20: In a certain code language, "NOTEBOOK" is written as "14otEBO15K". How will "RAILWAYS" be written in the same code language?
+A. 18aiLWA24S
+B. 18aiLWA25S
+C. 18aILWA25S
+D. 18AILWA25S
+Answer: B
+
+Q.21: In a certain code language, if aBcD is written as bEdG, then how will pQrS be written in that same code language?
+A. qRsT
+B. qTsV
+C. sTuV
+D. pTsV
+Answer: B
+
+Q.22: Study the pattern in the given series and find the next set of letters in the series. BOM, YSJ, VWG, SAD, ?
+A. PEA
+B. POD
+C. PCZ
+D. QCA
+Answer: A
+
+Q.23: The forestry department has decided to implement a total ban on the use of nonbiodegradable packaging in all statemanaged national parks to protect local wildlife. Which assumption underlies this ban?
+A. There are affordable, biodegradable alternatives readily available for every item currently in use.
+B. Visitors to the park will comply with the new packaging ban without requiring strict enforcement.
+C. The ecosystem in the national parks is currently unable to recover from existing plastic pollution.
+D. Non-biodegradable waste left by visitors is a direct threat to the health of the local wildlife.
+Answer: D
+
+Q.24: Five objects — P, Q, R, S, T — are placed in a row. Q is to the right of P but not adjacent. R is at the left end. S is immediately left of T. T is immediately left of Q. Which arrangement is valid?
+A. R, P, S, T, Q
+B. P, R, S, T, Q
+C. R, P, T, S, Q
+D. P, S, T, Q, R
+Answer: D
+
+Q.25: Select the option that is related to the third word in the same way as the second word is related to the first word. (The words must be considered as meaningful English words and must not be related to each other based on the number of letters/number of consonants/vowels in the word.) Chapter : Book :: Scene : ?
+A. Play
+B. Poem
+C. Dictionary
+D. Letter
+Answer: A
+
+Q.26: Which of the following effects does a rise in the price of goods have on consumer surplus?
+A. Reduces
+B. Increases
+C. Neutral
+D. No effect
+Answer: A
+
+Q.27: In money supply, M2 refers to which of the following?
+A. M1 + savings deposits with post office savings banks
+B. M1 + net time deposits of banks
+C. M1 - savings deposits with post office savings banks 4 AWARENESS
+D. M1 - net time deposits of banks
+Answer: A
+
+Q.28: Which South Asian country is known for its significant textile industry, particularly jute production?
+A. Bangladesh
+B. Pakistan
+C. Nepal
+D. Sri Lanka
+Answer: A
+
+Q.29: How many innings are there in a standard baseball game?
+A. 7
+B. 8
+C. 9
+D. 10
+Answer: C
+
+Q.30: Identify the Indian city that hosted the 2017 Asian Athletics Championships.
+A. Chennai
+B. Bhubaneswar
+C. Pune
+D. Guwahati
+Answer: B
+
+Q.31: India's first-ever medal at the Commonwealth Games was won in which year?
+A. 1934
+B. 1958
+C. 1966
+D. 1970
+Answer: A
+
+Q.32: Who among the following is the 22nd Lieutenant Governor of Delhi?
+A. Najeeb Jung
+B. Manoj Sinha
+C. Vinai Kumar
+D. Anil Baijal Saxena
+Answer: C
+
+Q.33: Consider the following specific stages of demographic transition associated with economic development: Select the CORRECT order of the above stages using the codes given below:
+
+1. Low birth rate with low death rate.
+
+2. High birth rate with high death rate.
+
+3. High birth rate with low death rate.
+A. 1-2-3
+B. 2-1-3
+C. 2-3-1
+D. 3-2-1
+Answer: C
+
+Q.34: According to Koppen's climatic classification, what does the small letter 's' denote?
+A. No dry season
+B. Dry season in winter
+C. Dry season in
+D. Rainy season in summer summer
+Answer: C
+
+Q.35: What is the name of the only commonly available school (Shaakha) of the Rigveda today?
+A. Maitrayani
+B. Kauthuma
+C. Shaakala
+D. Taittiriya
+Answer: C
+
+Q.36: Fill in the blanks: The Mando song, known for its emotional depth and cultural fusion, originated in Goa and typically deals with themes such as love, tragedy, and ____.
+A. patriotism
+B. colonial resistance
+C. wedding customs
+D. mythology
+Answer: C
+
+Q.37: Which committee highlighted the potential of small-scale industries for rural development in 1955?
+A. Narasimham
+B. Gadgil Committee Committee
+C. Karve Committee
+D. Roy Committee
+Answer: C
+
+Q.38: Which of the following best describes the architectural layout of the roads and streets in the Lower Town of Mohenjo-Daro?
+A. Exact grid pattern
+B. Circular pattern
+C. Wavy lines pattern
+D. Sharp star pattern
+Answer: A
+
+Q.39: Which two areas are reflected in the contrasting slope directions of the Indian Desert, indicating the drainage orientation?
+A. Punjab Plain and Gujarat Coast
+B. Sindh region and Rann of Kachchh
+C. Thar Plateau and Aravalli Range
+D. Indus Basin and Deccan Plateau
+Answer: B
+
+Q.40: Under which specific provision of the Indian Constitution is the executive power vested in the President to act as the Supreme Commander of the Defence Forces?
+A. Article 61(1)
+B. Article 58(1)
+C. Article 53(2)
+D. Article 56(2)
+Answer: C
+
+Q.41: By which Constitutional Amendment Act was Article 246A inserted into the Constitution of India?
+A. 100th Constitutional Amendment Act, 2015
+B. 101st Constitutional Amendment Act, 2016
+C. 102nd Constitutional Amendment Act, 2018
+D. 103rd Constitutional Amendment Act, 2019
+Answer: B
+
+Q.42: Which region is most suitable for growing Jowar?
+A. Humid regions
+B. Semi arid areas
+C. Cold regions
+D. Coastal regions
+Answer: B
+
+Q.43: Which of the following is not a Directive Principle of State Policy under Part IV of the Indian Constitution?
+A. Protection of environment
+B. Right to constitutional remedies
+C. Equal pay for equal work
+D. Promotion of village panchayats
+Answer: B
+
+Q.44: Which National Waterway in India includes stretches of the Godavari and Krishna rivers?
+A. National Waterway-2
+B. National Waterway-3
+C. National Waterway-4
+D. National Waterway-5
+Answer: C
+
+Q.45: At the 2022 Asian Games held in Hangzhou in 2023, India achieved a historic milestone by crossing which medal count for the first time?
+A. 50 medals
+B. 75 medals
+C. 100 medals
+D. 150 medals
+Answer: C
+
+Q.46: As of April 2026, what is the total number of notified Biosphere Reserves in India, and how many among them are part of UNESCO's World Network of Biosphere Reserves
+
+(WNBR)?
+A. 18 Biosphere Reserves and 10 WNBR
+B. 18 Biosphere Reserves and 13 WNBR
+C. 20 Biosphere Reserves and 13 WNBR
+D. 20 Biosphere Reserves and 11 WNBR
+Answer: C
+
+Q.47: The foreign investment limit in banks was raised to around what percentage under the 1991 reform policies?
+A. 49%
+B. 51%
+C. 74%
+D. 100%
+Answer: C
+
+Q.48: The Harshacharita was composed by which writer?
+A. Kalidasa
+B. Banabhatta
+C. Dandin
+D. Bharata
+Answer: B
+
+Q.49: Which of the following was an outcome of the devaluation of the rupee under India's foreign exchange reforms of 1991?
+A. Decline in foreign exchange inflows.
+B. Increase in the inflow of foreign exchange.
+C. Complete abolition of exchange controls.
+D. Replacement of the rupee by a foreign currency.
+Answer: B
+
+Q.50: Why can a constant-volume gas thermometer provide nearly the same temperature reading regardless of the gas used?
+A. The density of every gas is kept identical at all temperatures.
+B. Gas pressure becomes independent of changes in volume.
+C. Real gases approach ideal-gas behaviour at sufficiently low pressure.
+D. Mercury expansion compensates for the non-ideal behaviour of gases.
+Answer: D
+
+Q.51: The base area of a right prism is 72 cm² and height is 15 cm. Find volume.
+A. 1000 cm³
+B. 1080 cm³
+C. 1100 cm³
+D. 1150 cm³
+Answer: B
+
+Q.52: The perimeter of an equilateral triangle is 36 cm. Find the area of the triangle.
+A. 46√3 cm²
+B. 37√3 cm²
+C. 36√3 cm²
+D. 26√3 cm²
+Answer: C
+
+Q.53: A solid cylinder is melted and reshaped into 4 identical smaller cylinders. What will be the volume of each of the smaller cylinders?
+A. 1/2 original
+B. 1/4 original
+C. same as original
+D. 1/3 original
+Answer: B
+
+Q.54: A and B invest in a business in a ratio of 3:
+
+2. Five percent of the total profit is donated to charity, and A's share amounts to ₹855. What is the total profit?
+A. ₹1,425
+B. ₹1,500
+C. ₹1,537
+D. ₹1,700
+Answer: B
+
+Q.55: A person covers half of his journey at 40 km/h and the remaining half at 60 km/h. Determine his average speed for the entire journey.
+A. 54 km/h
+B. 65 km/h
+C. 48 km/h
+D. 87 km/h
+Answer: C
+
+Q.56: Find the compound interest on ₹5,000 at 12% per annum for 1 year 4 months, compounded annually.
+A. ₹824
+B. ₹804
+C. ₹900
+D. ₹800
+Answer: A
+
+Q.57: The area of a rectangle with a breadth of 9 cm is equal to the area of a square whose side measures 12 cm. Determine the length of the rectangle.
+A. 21 cm
+B. 11 cm
+C. 18 cm
+D. 16 cm
+Answer: D
+
+Q.58: A cone has a volume of 300π cm³ and a height of 9 cm. Find the radius of its base.
+A. 6 cm
+B. 15 cm
+C. 18 cm
+D. 10 cm
+Answer: D
+
+Q.59: The ratio of the areas of two concentric circles is 25: 16. If the width of the ring formed is 9 m, find the radius of the smaller circle.
+A. 20 m
+B. 45 m
+C. 28 m
+D. 36 m
+Answer: D
+
+Q.60: A ladder leaning against a wall makes an angle of 30° with the ground. If the length of the ladder is 10 m, find the distance of the foot of the ladder from the wall.
+A. 6.66 m
+B. 9.66 m
+C. 8.66 m
+D. 7.66 m
+Answer: C
+
+Q.61: In a circle with centre O, AB is a chord, and C lies on the minor arc AB. Tangents at points A and B meet at point P. If ∠ACB = 120°, then what is the measure of ∠APB?
+A. 30°
+B. 45°
+C. 60°
+D. 120°
+Answer: C
+
+Q.62: If cot A = 7, then find the value of 5 cos A+4 sin A . cos³ A+7 sin³ A+6 sin A
+A. 1
+B. 3
+C. 2
+D. 4
+Answer: B
+
+Q.63: Solve: 1 + 1 + 1 . √2+1 √3+√2 √4+√3
+A. 0
+B. 1
+C. 2
+D. 3
+Answer: B
+
+Q.64: If √3 = 1.732 , then find the value of 6√3+9 √3 .
+A. 2.457
+B. 11.196
+C. 14.786
+D. 4.652
+Answer: B
+
+Q.65: A spherical iron ball of radius 3 cm is dropped into a cylindrical tub of radius 4 cm containing water. By how much will the water level rise?
+A. 1.25 cm
+B. 2.25 cm
+C. 3.78 cm
+D. 5.78 cm
+Answer: B
+
+Q.66: In triangle ABC, points D and E lie on sides AB and AC, respectively, such that AD × AC = AB × AE. If ∠ABC = 75° and ∠ADE exceeds ∠ACB by 25°, determine the measure of ∠A.
+A. 50°
+B. 45°
+C. 55°
+D. 60°
+Answer: C
+
+Q.67: The manufacturing cost of an electric drone is split between specialized microchips and lightweight composite casing in a 4:1 ratio. Due to supply chain improvements, microchip costs decrease by 15%, while global material shortages cause the composite casing costs to surge by 40%. What is the net percentage change in the total manufacturing cost of the drone?
+A. 2% increase
+B. 4% decrease
+C. 3% decrease
+D. 6% increase
+Answer: B
+
+Q.68: In a school internal examination of six different subjects, Nishtha scores 64% of the total marks. Nishtha's marks in each subject
+
+(separately) are in the ratio 6 : 7 : 9 : 12 : 8 : 6. The maximum marks possible in each subject is the same. As per the rules of the examination, one needs to score 55% in any subject to pass in that subject. In how many subjects in this examination has Nishtha scored below the pass marks?
+A. 0
+B. 1
+C. 2
+D. 3
+Answer: C
+
+Q.69: A cistern has three taps M, N and P, through which water can be taken out from it. Tap M can fill 6 buckets in 30 minutes, tap N can fill 8 buckets in 1 hour 4 minutes and tap P can fill 2 buckets in 20 minutes. When the cistern is filled upto 4 th of its capacity, all the three taps are opened together, as a result of which the cistern gets emptied in 2 hours 40 minutes. What is the capacity of the cistern if each bucket is identical and can hold 8 liters of water (assuming there is no wastage of water)?
+A. 720 lts
+B. 680 lts
+C. 650 lts
+D. 544 lts
+Answer: D
+
+Q.70: In a right triangle ABC with ∠B= 90°, sin² A + sin² C=?
+A. 1
+B. 0
+C. 2
+D. sin² A
+Answer: A
+
+Q.71: Solve for acute θsin(θ+ : 15°) = cos(θ−15°)
+A. 90°
+B. 30°
+C. 60°
+D. 45°
+Answer: D
+
+Q.72: If a + b + c = 31 and ab + bc + ca = 37, find the value of a² + b² + c².
+A. 961
+B. 1035
+C. 887
+D. 878
+Answer: C
+
+Q.73: If x+ 1 x= 6 , then find the value of x6 + x6 1 .
+A. 39204
+B. 39202
+C. 39304
+D. 39302
+Answer: B
+
+Q.74: A vessel contains 240 litres of a mixture of milk and water in the ratio 7:5. First, 40 litres of the mixture are removed and replaced with an equal volume of pure water. Then, 60 litres of the resulting mixture are removed and replaced with an equal volume of pure milk. Find the final ratio of milk to water in the vessel.
+A. 62 : 41
+B. 21 : 17
+C. 97 : 83
+D. 59 : 37
+Answer: D
+
+Q.75: Three circles with non-collinear centers lie in a plane such that each circle touches the other two externally. How many common tangents can be drawn that touch at least two of these circles simultaneously?
+A. 9
+B. 3
+C. 12
+D. 6
+Answer: D
+
+Q.76: Fill in the blank with the appropriate preposition. The professor spoke ______ length about the implications of the study.
+A. in
+B. on
+C. by
+D. at
+Answer: D
+
+Q.77: Complete the following sentence in indirect speech with the correct option. She said, "I will open the window." She said that she ______ open the window.
+A. will
+B. shall
+C. would
+D. can
+Answer: C
+
+Q.78: Rearrange the parts of the sentence in the correct order. Amid the rising threat of state-sponsored cyberattacks, P. while also collaborating with private sector firms to safeguard national digital assets Q. targeting critical infrastructure such as power grids, financial institutions, and defense systems, R. by investing heavily in advanced threat detection and response mechanisms, S. governments worldwide bolstered their cybersecurity frameworks,
+A. SPQR
+B. RSPQ
+C. PRQS
+D. SQRP
+Answer: D
+
+Q.79: To be successful in today's world, you require the gift of the gab. What does "the gift of the gab" mean?
+A. The ability to speak fluently and persuasively
+B. The habit of talking too much without making sense
+C. A natural talent for writing poems and stories
+D. The ability to stay silent and observe carefully
+Answer: A
+
+Q.80: Identify the error in the sentence. He speaks too much fast for me to understand.
+A. understand
+B. fast
+C. much
+D. speaks
+Answer: C
+
+Q.81: Identify the error in the sentence. A Mount Everest is the highest peak in the world.
+A. A
+B. Everest
+C. highest
+D. world
+Answer: A
+
+Q.82: Rearrange the parts of the sentence in the correct order. The constitutional amendment P. to ensure greater fiscal transparency, Q. was introduced in the parliament R. with provisions mandating periodic audits S. of government expenditure across all departments
+A. SRPQ
+B. QPRS
+C. PSQR
+D. RQPS
+Answer: B
+
+Q.83: Choose the correct idiom for the word highlighted in bold. "Benjamin isn't happy now that he's working the graveyard shift."
+A. He is working at a cemetery.
+B. He is working late-night hours.
+C. He is working fewer hours than before.
+D. He is working in a dangerous job.
+Answer: B
+
+Q.84: Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?
+
+1. Over generations, cultural and genetic adaptations improved their resilience to extreme environments.
+
+2. They created insulated clothing from animal skins and built durable shelters to retain heat.
+
+3. Early humans living during the Ice Age had to develop survival strategies to endure harsh conditions.
+
+4. The ability to control fire allowed them to cook food, stay warm, and protect themselves from predators.
+
+5. These adaptations enabled human populations to spread across colder regions and establish new settlements.
+A. 5-2-3-1-4
+B. 1-3-2-4-5
+C. 4-1-2-5-3
+D. 3-2-4-5-1
+Answer: D
+
+Q.85: Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?
+
+1. Mass media plays a crucial role in shaping public opinion and cultural norms.
+
+2. Understanding media literacy is essential to critically analyze and interpret information.
+
+3. The influence of media extends to politics, social behavior, and consumer choices.
+
+4. While it can educate and inform, media can also spread misinformation and biases.
+A. 4-3-2-1
+B. 1-3-4-2
+C. 3-2-1-4
+D. 2-4-1-3
+Answer: B
+
+Q.86: Select the most appropriate synonym of the given word: PERNICIOUS
+A. Harmless
+B. Deadly
+C. Helpful
+D. Safe
+Answer: B
+
+Q.87: **Comprehension (Q. 87 - 91):** To regard competitive examinations as neutral arbiters of merit is to mistake calibration for fairness. These trials, draped in metrics and flanked by syllabi, often merely echo the (1) ______ of systemic inequities rather than resolving them. What appears to be an open arena is, upon closer scrutiny, a scaffolded labyrinth—its paths more navigable to the already initiated. In this theatre, memory masquerades as intellect, and swiftness is 10 crowned/(2) ______. Coaching bazaars thrive, not on illumination but on algorithmic mimicry. One does not so much learn as rehearse patterned responses, choreographed to match opaque rubrics. That which resists formula—intuition, ambiguity, ethical judgment—is too often filtered out as noise. Yet the deeper toll is not pedagogical but psychic. Prolonged exposure to anticipatory failure creates a cognitive sediment, an internalized narrowing. Dreams don't shatter; they (3) ______, calcifying into compliance. In time, the examinee becomes fluent in performance, but foreign to inquiry. To call for reform is insufficient. We must interrogate the architecture itself—its values, its exclusions, its gods. Until the grammar of merit is (4) ______, not rebranded, no revision will suffice. The danger is not that we aim too high, but that the scaffolding remains unseen, and the climb is mistaken for (5) ______.
+
+---
+
+What should come in the place of blank number (1)?
+A. legacies
+B. ruptures
+C. inversions
+D. echoes
+Answer: A
+
+Q.88: **Comprehension (Q. 87 - 91):** To regard competitive examinations as neutral arbiters of merit is to mistake calibration for fairness. These trials, draped in metrics and flanked by syllabi, often merely echo the (1) ______ of systemic inequities rather than resolving them. What appears to be an open arena is, upon closer scrutiny, a scaffolded labyrinth—its paths more navigable to the already initiated. In this theatre, memory masquerades as intellect, and swiftness is 10 crowned/(2) ______. Coaching bazaars thrive, not on illumination but on algorithmic mimicry. One does not so much learn as rehearse patterned responses, choreographed to match opaque rubrics. That which resists formula—intuition, ambiguity, ethical judgment—is too often filtered out as noise. Yet the deeper toll is not pedagogical but psychic. Prolonged exposure to anticipatory failure creates a cognitive sediment, an internalized narrowing. Dreams don't shatter; they (3) ______, calcifying into compliance. In time, the examinee becomes fluent in performance, but foreign to inquiry. To call for reform is insufficient. We must interrogate the architecture itself—its values, its exclusions, its gods. Until the grammar of merit is (4) ______, not rebranded, no revision will suffice. The danger is not that we aim too high, but that the scaffolding remains unseen, and the climb is mistaken for (5) ______.
+
+---
+
+What should come in the place of blank number (2)?
+A. urgency
+B. depth
+C. compliance
+D. abstraction
+Answer: B
+
+Q.89: **Comprehension (Q. 87 - 91):** To regard competitive examinations as neutral arbiters of merit is to mistake calibration for fairness. These trials, draped in metrics and flanked by syllabi, often merely echo the (1) ______ of systemic inequities rather than resolving them. What appears to be an open arena is, upon closer scrutiny, a scaffolded labyrinth—its paths more navigable to the already initiated. In this theatre, memory masquerades as intellect, and swiftness is 10 crowned/(2) ______. Coaching bazaars thrive, not on illumination but on algorithmic mimicry. One does not so much learn as rehearse patterned responses, choreographed to match opaque rubrics. That which resists formula—intuition, ambiguity, ethical judgment—is too often filtered out as noise. Yet the deeper toll is not pedagogical but psychic. Prolonged exposure to anticipatory failure creates a cognitive sediment, an internalized narrowing. Dreams don't shatter; they (3) ______, calcifying into compliance. In time, the examinee becomes fluent in performance, but foreign to inquiry. To call for reform is insufficient. We must interrogate the architecture itself—its values, its exclusions, its gods. Until the grammar of merit is (4) ______, not rebranded, no revision will suffice. The danger is not that we aim too high, but that the scaffolding remains unseen, and the climb is mistaken for (5) ______.
+
+---
+
+What should come in the place of blank number (3)?
+A. intensify
+B. dissolve
+C. fossilize
+D. scatter
+Answer: C
+
+Q.90: **Comprehension (Q. 87 - 91):** To regard competitive examinations as neutral arbiters of merit is to mistake calibration for fairness. These trials, draped in metrics and flanked by syllabi, often merely echo the (1) ______ of systemic inequities rather than resolving them. What appears to be an open arena is, upon closer scrutiny, a scaffolded labyrinth—its paths more navigable to the already initiated. In this theatre, memory masquerades as intellect, and swiftness is 10 crowned/(2) ______. Coaching bazaars thrive, not on illumination but on algorithmic mimicry. One does not so much learn as rehearse patterned responses, choreographed to match opaque rubrics. That which resists formula—intuition, ambiguity, ethical judgment—is too often filtered out as noise. Yet the deeper toll is not pedagogical but psychic. Prolonged exposure to anticipatory failure creates a cognitive sediment, an internalized narrowing. Dreams don't shatter; they (3) ______, calcifying into compliance. In time, the examinee becomes fluent in performance, but foreign to inquiry. To call for reform is insufficient. We must interrogate the architecture itself—its values, its exclusions, its gods. Until the grammar of merit is (4) ______, not rebranded, no revision will suffice. The danger is not that we aim too high, but that the scaffolding remains unseen, and the climb is mistaken for (5) ______.
+
+---
+
+What should come in the place of blank number (4)?
+A. unlearned
+B. dismantled
+C. alphabetized
+D. glorified
+Answer: B
+
+Q.91: **Comprehension (Q. 87 - 91):** To regard competitive examinations as neutral arbiters of merit is to mistake calibration for fairness. These trials, draped in metrics and flanked by syllabi, often merely echo the (1) ______ of systemic inequities rather than resolving them. What appears to be an open arena is, upon closer scrutiny, a scaffolded labyrinth—its paths more navigable to the already initiated. In this theatre, memory masquerades as intellect, and swiftness is 10 crowned/(2) ______. Coaching bazaars thrive, not on illumination but on algorithmic mimicry. One does not so much learn as rehearse patterned responses, choreographed to match opaque rubrics. That which resists formula—intuition, ambiguity, ethical judgment—is too often filtered out as noise. Yet the deeper toll is not pedagogical but psychic. Prolonged exposure to anticipatory failure creates a cognitive sediment, an internalized narrowing. Dreams don't shatter; they (3) ______, calcifying into compliance. In time, the examinee becomes fluent in performance, but foreign to inquiry. To call for reform is insufficient. We must interrogate the architecture itself—its values, its exclusions, its gods. Until the grammar of merit is (4) ______, not rebranded, no revision will suffice. The danger is not that we aim too high, but that the scaffolding remains unseen, and the climb is mistaken for (5) ______.
+
+---
+
+What should come in the place of blank number (5)?
+A. progress
+B. destination
+C. transformation
+D. justice
+Answer: D
+
+Q.92: Select the correct option: No matter how ______ the evidence was, the jury remained unconvinced.
+A. compelling
+B. compel
+C. compels
+D. compulsion
+Answer: A
+
+Q.93: Change the following from active to passive: People have elected her president.
+A. She has elected president by people.
+B. She has been elected president.
+C. She was elected president.
+D. She is being elected president.
+Answer: B
+
+Q.94: Change the following from active to passive: The clerk has been processing the applications.
+A. The applications have processed by the clerk.
+B. The applications have been being processed by the clerk.
+C. The applications are being processed by the clerk.
+D. The applications have been processed by the clerk.
+Answer: B
+
+Q.95: Convert the sentence provided below from its passive voice structure to an active voice structure: Was the report being edited by the communications team when you checked?
+A. Was the communications team editing the report when you checked?
+B. Did the team edit the report you checked?
+C. Were you checking the report while it was edited?
+D. The report was being edited after you checked.
+Answer: A
+
+Q.96: Convert the sentence provided below from its passive voice structure to an active voice structure: The changes were not anticipated to have created such widespread confusion.
+A. No one had anticipated the changes to create such confusion.
+B. The confusion anticipated change wasn't widespread.
+C. It wasn't anticipated that changes caused confusion.
+D. Changes were confused before they were anticipated.
+Answer: C
+
+Q.97: Choose the most suitable option to replace the highlighted part of the sentence: The boy fell down from the bicycle.
+A. fell down of
+B. fell off
+C. fell from
+D. dropped off
+Answer: B
+
+Q.98: A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. She said to him, "Are you coming to the party?"
+A. She asked him was he coming to the party.
+B. She asked him if he is coming to the party.
+C. She asked him if he was coming to the party.
+D. She asked him are you coming to the party.
+Answer: C
+
+Q.99: A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The teacher informed the students that the results would be declared the following Monday.
+A. "The results will be declared next Monday," the teacher said.
+B. "We declare the results next Monday," the teacher said.
+C. "The results would be declared next Monday," the teacher said.
+D. "Your results are going to be declared on Monday," said the teacher.
+Answer: A
+
+Q.100: A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. He said that he would prefer to remain silent rather than speak without proof.
+A. "I would prefer to stay silent than speak without proof," he said.
+B. "I prefer silence/false claims," he said.
+C. "I'd rather not talk if there's no proof," said he.
+D. "I would prefer to remain silent rather than speak without proof," he said.
+Answer: D
+

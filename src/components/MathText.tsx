@@ -23,6 +23,14 @@ function radical(symbol: string, value: string) {
   return '<span class="ssc-math-radical"><span class="ssc-math-radical-symbol">' + symbol + '</span><span class="ssc-math-radicand">' + value + "</span></span>";
 }
 
+function isTeXInlineMath(value: string) {
+  const trimmed = value.trim();
+  if (!trimmed || /[#@%&]/.test(trimmed) || /[\u0900-\u097F]/.test(trimmed)) return false;
+  if (/\\[A-Za-z]+/.test(trimmed)) return true;
+  if (/\b(?:where|then|means|if|and|or|is|are|the|of|to|for)\b/i.test(trimmed)) return false;
+  return /^[0-9A-Za-z\s+\-*/=^()[\]{}.,<>|:;!?]+$/.test(trimmed);
+}
+
 // Convert common pasted math notation into safe, readable HTML. Full TeX remains supported
 // through $...$, \(...\), \[...\], and $$...$$ delimiters below.
 function formatRawMathText(plainText: string): string {
@@ -112,7 +120,8 @@ function renderMath(text: string): string {
     return escaped;
   }
 
-  // Split by KaTeX delimiters: $$, single $, \( \), \[ \]
+  // Single dollar signs are also common reasoning operators in PYQ content, so only
+  // accept a pair when its contents look like an actual TeX/math expression.
   const delimiterRegex = /(\$\$[\s\S]*?\$\$|\\\[[\s\S]*?\\\]|\\\([\s\S]*?\\\)|\$(?!\s)(?:\\.|[^\$\\])+?(?<!\s)\$)/g;
   const parts = text.split(delimiterRegex);
 
@@ -131,7 +140,13 @@ function renderMath(text: string): string {
         displayMode = true;
       } else if (part.startsWith("\\(") && part.endsWith("\\)") && part.length > 4) {
         math = part.slice(2, -2);
-      } else if (part.startsWith("$") && part.endsWith("$") && part.length > 2 && !part.startsWith("$$")) {
+      } else if (
+        part.startsWith("$") &&
+        part.endsWith("$") &&
+        part.length > 2 &&
+        !part.startsWith("$$") &&
+        isTeXInlineMath(part.slice(1, -1))
+      ) {
         math = part.slice(1, -1);
       }
 

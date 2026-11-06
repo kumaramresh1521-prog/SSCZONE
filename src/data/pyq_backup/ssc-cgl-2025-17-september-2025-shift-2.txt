@@ -1,0 +1,700 @@
+Q.1: If each letter is coded as its position in reverse (Z=1, Y=2,..., A=26), what is ROAD?
+A. 10, 12, 25, 23
+B. 9, 12, 25, 23
+C. 9, 13, 25, 23
+D. 9, 12, 26, 23
+Answer: D
+
+Q.2: Choose the address that is exactly the same as the one given below. A-5, Lotus Enclave, Patliputra Colony, Patna, Bihar - 800013
+A. A-5, Lotus Enclave, Patliputra Colony, Patna, Biharr - 800013
+B. A-5, Lotus Enclave, Patliputra Colony, Patna, Bihar - 800013
+C. A5, Lotus Enclave, Patliputra Colony, Patna, Biharr - 800013
+D. A-5, Lotus Enclave, Patliputra Colonny, Patna, Bihar - 800013
+Answer: B
+
+Q.3: Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. DAC, GWH, JSM, MOR, ?
+A. PKW
+B. QKV
+C. PWK
+D. PJV
+Answer: A
+
+Q.4: Select the letter-cluster from among the given options that can replace the question mark (?) in the following series: DAPR, FESU, HIVX, JMYA ?
+A. ZBCX
+B. QCTR
+C. PYSB
+D. LQBD
+Answer: D
+
+Q.5: Find the two signs to interchange to correct the equation. 30 - 12 ÷ 3 × 2 + 4 = 122
+A. ÷ and -
+B. - and ×
+C. × and +
+D. ÷ and +
+Answer: B
+
+Q.6: X is the daughter of Y. Y is the son of Z. W is the wife of Z. How is W related to X?
+A. Mother
+B. Grandmother
+C. Aunt
+D. Sister
+Answer: B
+
+Q.7: Find the missing term: 7, 22, 89, ____, 2677, 18740
+A. 446
+B. 436
+C. 448
+D. 457
+Answer: A
+
+Q.8: Find the odd one out:
+A. 6 # 2 = 12
+B. 5 # 3 = 15
+C. 4 # 4 = 16
+D. 7 # 1 = 21
+Answer: D
+
+Q.9: Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option. Statement: The discovery of gravitational waves has provided strong evidence for Einstein's theory of general relativity, but it also opens up new possibilities for understanding the universe's most extreme phenomena, such as black holes and neutron stars. Assumptions: I. Gravitational waves offer new insights into the nature of the universe. II. Einstein's theory of general relativity has been conclusively proven by the discovery of gravitational waves. III. The study of gravitational waves will lead to new breakthroughs in astrophysics.
+A. Only I and II are implicit
+B. Only II and III are implicit
+C. Only I is implicit
+D. All I, II, and III are implicit
+Answer: A
+
+Q.10: Read the following statement carefully and identify the conclusion that follows. Statement: Fewer people applied for teaching posts this year. Conclusions: I. Teaching is losing popularity. II. Applicants may be seeking better-paying jobs.
+A. Only Conclusion I follows
+B. Only Conclusion II follows
+C. Both I and II follow
+D. Neither I nor II follows
+Answer: D
+
+Q.11: Find the group of letters that best completes the analogy based on the given letter transformation pattern. CIRCLE : DJSFMD :: SQUARE : ?
+A. YTUBN
+B. TRVDSD
+C. CVBGF
+D. QWERTY
+Answer: B
+
+Q.12: Read the following statement carefully and identify the conclusion that follows. Statement: All plants are living beings. Some living beings are animals. Conclusions: I. Some plants are animals. II. All animals are plants.
+A. Only I follows
+B. Only II follows
+C. Both I and II follow
+D. Neither I nor II follows
+Answer: D
+
+Q.13: Find the word which is between the 1st and 4th letters of the following word as per the English alphabet series. CUTE
+A. F
+B. D
+C. V
+D. Z
+Answer: B
+
+Q.14: Complete the series. A1, C2, E3, G4, ?
+A. J5
+B. K5
+C. H5
+D. I5
+Answer: D
+
+Q.15: Find the odd one out from the given alternatives:
+A. Monopoly
+B. Oligopoly
+C. Barter
+D. Duopoly
+Answer: C
+
+Q.16: In a certain code language, each letter is assigned a unique digit. Based on the given codes for specific words, determine the code for the target word using the same logic. If MOUSE is coded as 45291 and RAT as 786, how is STORE coded?
+A. 96571
+B. 97653
+C. 98345
+D. 96278
+Answer: A
+
+Q.17: If 4 @ 3 = 19 and 2 @ 5 = 9, then 5 @ 2 = ?
+A. 21
+B. 23
+C. 25
+D. 27
+Answer: D
+
+Q.18: In a code language, 'FLOW' is written as 'G#3X', and 'WOLF' is written as 'X3#G'. How is 'FOWL' written?
+A. G#X3
+B. XG3#
+C. G3X#
+D. X#G3
+Answer: C
+
+Q.19: If 2 $ 2 = 16 and 3 $ 3 = 36, what is 4 $ 4?
+A. 48
+B. 64
+C. 72
+D. 80
+Answer: B
+
+Q.20: In a 40 L solution, the ratio of acid to water is 5:3. How much water must be added to make it 1:1?
+A. 5 L
+B. 6 L
+C. 17 L
+D. 10 L
+Answer: D
+
+Q.21: X + Y means X is the mother of Y, X – Y means X is the brother of Y, X * Y means X is the sister of Y. Then what does A – B + C mean?
+A. A is brother-in-law of C
+B. A is maternal uncle of C
+C. A is brother of C
+D. A is father of C
+Answer: B
+
+Q.22: If 'M' means '+', 'N' means '-', 'O' means 'x', and 'P' means '÷' what is the value of the following expression? 18 P 3 M 5 O 2=?
+A. 16
+B. 22
+C. 28
+D. 8
+Answer: A
+
+Q.23: If 'P' = x, 'Q' = ÷, 'R' = +, 'S' = -, which equation is correct?
+A. 18 R 2 P 4 S 2 Q 1 = 15
+B. 12 P 3 S 4 Q 2 R 1 = 13
+C. 20 Q 5 R 2 P 3 S 1 = 9
+D. 30 S 5 R 2 Q 1 P 3 = 32
+Answer: C
+
+Q.24: If $ = -, % = x, # = +, then 18 % 2 $ 3 # 1 = ?
+A. 33
+B. 34
+C. 32
+D. 35
+Answer: B
+
+Q.25: In a class of 80 students, 60% are girls. If 75% of the girls passed, how many girls failed?
+A. 12
+B. 15
+C. 18
+D. 20
+Answer: A
+
+Q.26: Which of the following is a notable architectural feature of Notre Dame des Anges Church in Puducherry?
+A. Shikhara with amalaka
+B. Transparent enclosure with piers
+C. Minaret with balcony
+D. Corbelled arch with lattice work
+Answer: B
+
+Q.27: Which of the following best captures the cultural and historical essence of Uttarakhand's Bissu Mela?
+A. A three-day martial arts event by Gorkha settlers in Garhwal to worship Lord Kartikeya as the harvest god.
+B. A week-long Jaunsari tribal fair in Chakrata, thanking for harvest and honoring Santoora Devi, a Durga form.
+C. A pilgrimage where Pandavas are worshipped at stone altars through Himachali Brahmin rituals.
+D. A fasting-based fair restricting women from dancing due to ancestral customs.
+Answer: B
+
+Q.28: In the context of Gupta dynasty's taxation, which pair is correct?
+A. Adeya - penalty for libellous speech
+B. Bhaga - king's share of produce
+C. Hiranya - forced labour
+D. Dhanya - gold bullion fee
+Answer: B
+
+Q.29: Which of the following best describes Achal and Chal swaras in Indian classical music?
+A. All swaras have fixed pitch in both systems
+B. Sa and Pa are fixed; others have variants like Komal or Teevra
+C. Komal and Teevra swaras are used only in Carnatic music
+D. Ga and Ni are always sung in Shuddha form in all styles
+Answer: B
+
+Q.30: Which of the following is true about "en passant" in chess?
+A. Only after a pawn moves two squares and waits a turn.
+B. Can be done within two moves after the pawn's advance.
+C. Must be done immediately after the pawn moves two squares.
+D. Only if the capturing pawn is on a dark square.
+Answer: C
+
+Q.31: Match the dynasties listed in Column A with their respective founders mentioned in Column B: Column A: Dynasty Column B: Founder A. Tomaras 1. Bahlul Lodi B. Khalji Dynasty 2. Ananga Pala C. Sayyid Dynasty 3. Jalaluddin Khalji D. Lodi Dynasty 4. Khizr Khan
+A. A → 2, B → 3, C → 4, D → 1
+B. A → 3, B → 2, C → 4, D → 1
+C. A → 4, B → 3, C → 2, D → 1
+D. A → 1, B → 3, C → 4, D → 2
+Answer: A
+
+Q.32: In which Olympic Games did Leander Paes make his debut before winning India's first Olympic tennis medal in the following edition?
+A. Barcelona Olympic Games
+B. Atlanta Olympic Games
+C. Sydney Olympic Games
+D. New Delhi Olympic Games
+Answer: A
+
+Q.33: At which BIMSTEC Summit was the agreement to set up the Technology Transfer Facility in Colombo signed?
+A. Third Summit
+B. Fourth Summit
+C. Fifth Summit
+D. Sixth Summit
+Answer: C
+
+Q.34: Who wrote 'An Era of Darkness: The British Empire in India'?
+A. Shashi Tharoor
+B. Vikram Seth
+C. Pavan Varma
+D. Romila Thapar
+Answer: A
+
+Q.35: A key appointment in India's disaster management sector was made in 2024. Which Indian Police Service (IPS) officer took charge as the "Director General of the National Disaster Response Force", leading the nation's primary disaster relief efforts?
+A. Piyush Anand
+B. Atul Karwal
+C. Rajeev Kapoor
+D. Pradeep Kumar
+Answer: A
+
+Q.36: Gaganyaan is planned to orbit Earth at approximately what altitude?
+A. 100 km
+B. 400 km
+C. 1000 km
+D. 36,000 km
+Answer: B
+
+Q.37: Which of the following is unrelated to the components of population change?
+A. Births
+B. Deaths
+C. Migration
+D. Employment
+Answer: D
+
+Q.38: With reference to the All India Inter-Club U21 Men & Women Water Polo League - 2025, which of the following statements are accurate? 1. The tournament was hosted at Mayo College in Ajmer, Rajasthan. 2. It was organized under the aegis of the Western Naval Command. 3. The event took place from 14 to 18 April 2025.
+A. 1 and 2 only
+B. 2 and 3 only
+C. 1 and 3 only
+D. 1, 2 and 3
+Answer: C
+
+Q.39: Which state among the following is a major contributor to India's iron ore reserves?
+A. Maharashtra
+B. Andhra Pradesh
+C. Karnataka
+D. Tamil Nadu
+Answer: C
+
+Q.40: Which of these is an odd one out?
+A. ATP
+B. Glucose
+C. DNA
+D. NADH
+Answer: C
+
+Q.41: Through which Constitutional Amendment was Article 21A introduced, mandating free and compulsory education as a Fundamental Right for children between 6 and 14 years of age?
+A. 42nd Amendment Act
+B. 86th Amendment Act
+C. 93rd Amendment Act
+D. 44th Amendment Act
+Answer: B
+
+Q.42: What happens when an ideal fluid flows through a narrowing horizontal pipe?
+A. Speed decreases, Pressure increases
+B. Speed increases, Pressure decreases
+C. Both Speed and Pressure increases
+D. Both speed and pressure decreases
+Answer: B
+
+Q.43: Which of the following best describes the purpose of the National Single Window System (NSWS) portal launched by the Ministry of Commerce & Industry?
+A. To streamline pension disbursal mechanisms for unorganized workers
+B. To facilitate industrial clearances and approvals through a single digital platform
+C. To monitor school enrollments across states using Aadhaar linkage
+D. To centralize water quality testing across urban and rural regions
+Answer: B
+
+Q.44: Consider the statements about Tippani : 1. Originated among Saurashtra women tamping lime floors with wooden rods. 2. Male drummers provide dhol-nagara accompaniment. Which is/are correct?
+A. Only 1 correct
+B. Only 2 correct
+C. Both 1 & 2 correct
+D. Neither 1 nor 2 correct
+Answer: C
+
+Q.45: Read the below statements marked as Assertion (A) and Reason (R). Mark the correct options: Assertion (A): Human Development Index (HDI) in India improved significantly post-2010. Reason (R): The methodology was revised globally to include inequality-adjusted Human Development Index (HDI).
+A. Both A and R are true, and R is the correct explanation of A.
+B. Both A and R are true, but R is not the correct explanation of A.
+C. A is true, but R is false.
+D. A is false, but R is true.
+Answer: B
+
+Q.46: Why are the Western Ghats considered globally significant according to UNESCO?
+A. They categorize urban rivers based on their economic contribution to the city.
+B. They influence the Indian monsoon and are among the world's top biodiversity hotspots.
+C. They are located near the equator and host polar species.
+D. They form the only volcanic plateau in peninsular India with desert flora.
+Answer: B
+
+Q.47: Article 312 provides for creation of new ______ by Parliament.
+A. Union Territories
+B. Constitutional Amendments
+C. All India Services
+D. Finance Commissions
+Answer: C
+
+Q.48: Read the following Assertion (A) and Reason (R) carefully and choose the correct option. Assertion (A): Self-reliance was a major objective of India's early planning era. Reason (R): India sought to reduce dependence on foreign aid and imports post-independence.
+A. Both A and R are true and R is the correct explanation of A.
+B. Both A and R are true but R is not the correct explanation of A.
+C. A is true but R is false.
+D. A is false but R is true.
+Answer: A
+
+Q.49: What is India's first successful interplanetary mission?
+A. Chandrayaan-1
+B. Mangalyaan
+C. Gaganyaan
+D. Aditya-L1
+Answer: B
+
+Q.50: Consider the following statements: 1. Article 262 empowers Parliament to set up tribunals for river disputes. 2. The Supreme Court has appellate jurisdiction in such disputes. Which of the above is/are correct?
+A. Only 1
+B. Only 2
+C. Both 1 and 2
+D. Neither 1 nor 2
+Answer: A
+
+Q.51: Simplify: (2.4 + 3.125) × 0.25 - (0.75 ÷ 0.3)
+A. -1.11875
+B. 1.11875
+C. 2.8756
+D. -2.8756
+Answer: A
+
+Q.52: If 20% of (P + Q) = 50% of (P – Q), then find the ratio P: Q.
+A. 3 : 7
+B. 7 : 3
+C. 2 : 5
+D. 5 : 2
+Answer: B
+
+Q.53: A shopkeeper mixes two varieties of pulses - one costing ₹80 per kg and the other costing ₹100 per kg, in the ratio 3 : 1. If he sells the mixed variety at ₹91.80 per kg, find his gain or loss percent.
+A. 8% Loss
+B. 10% Gain
+C. 8% Gain
+D. 10% Loss
+Answer: C
+
+Q.54: A and B invest ₹45,000 and ₹60,000 respectively. A remains in business for 8 months, B for 6 months. If the total profit is ₹36,000, what is A's share?
+A. ₹16,000
+B. ₹18,000
+C. ₹20,000
+D. ₹24,000
+Answer: B
+
+Q.55: The average weight of 30 students is 60 kg. If one student is removed, the average drops to 59.5 kg. What is the weight of the removed student?
+A. 74.5 kg
+B. 84.5 kg
+C. 70.5 kg
+D. 16.5 kg
+Answer: A
+
+Q.56: In a group of 40 boys, the average height was initially determined to be 160 cm. However, it was later discovered that the height of one boy was incorrectly recorded as 165 cm when it should have been 156 cm. Calculate the accurate average height.
+A. 129.675cm
+B. 150.845 cm
+C. 159.775 cm
+D. 179.275 cm
+Answer: C
+
+Q.57: If ₹5000 amounts to ₹6050 over 2 years with compound interest, what is the annual interest rate?
+A. 10%
+B. 9%
+C. 8%
+D. 11%
+Answer: A
+
+Q.58: A fruit vendor sells 15 kg of apples for ₹750, thereby gaining the cost price of 5 kg of apples. What is his profit percentage?
+A. 28.65%
+B. 33.33%
+C. 26.32%
+D. 31.56%
+Answer: B
+
+Q.59: An oven has a marked price of ₹ 12,000. It is sold with two successive discounts. If the second discount is 20% and the final selling price is ₹ 8,400, what is the percentage of the first discount?
+A. 10%
+B. 12%
+C. 12.5%
+D. 15%
+Answer: C
+
+Q.60: A barrel contains a mixture of alcohol and water in the ratio 7:4 respectively. If 12 litres of water are added to it, the ratio of alcohol to water becomes 7:6. Find the initial total quantity of the mixture in the barrel.
+A. 33 litres
+B. 44 litres
+C. 55 litres
+D. 66 litres
+Answer: D
+
+Q.61: A furniture store marks its items at 80% above the cost price. They offer a discount of 30% on the marked price. If a customer receives an additional loyalty discount of ₹250, and the store still makes a 12% profit on the cost price, what is the cost price of the furniture item?
+A. ₹1,785.71
+B. ₹2,585.36
+C. ₹1,528.24
+D. ₹2,879.45
+Answer: A
+
+Q.62: A spherical ball is submerged in water in a cylindrical container. The radius of the cylindrical container is 5 cm, and the height is 30 cm. What is the volume of water displaced by the ball if its radius is 4 cm?
+A. 64/3 π cm³ / 64/3 π सेमी³
+B. 128/3 π cm³ / 128/3 π सेमी³
+C. 216/3 π cm³ / 216/3 π सेमी³
+D. 256/3 π cm³ / 256/3 π सेमी³
+Answer: D
+
+Q.63: A hemispherical dome covers a circular area of diameter 20 m. What is the approximate curved surface area of this dome?
+A. 628m²
+B. 514m²
+C. 408m²
+D. 762m²
+Answer: A
+
+Q.64: A hollow hemisphere has uniform thickness. Its inner radius is r, and outer radius is R. If R=2r, find the ratio of outer to inner curved surface areas.
+A. 4 : 1
+B. 7 : 4
+C. 6 : 5
+D. 2 : 5
+Answer: A
+
+Q.65: A square pyramid has lateral surface area equal to twice the base area. If base side = 6 cm, find slant height.
+A. 6 cm
+B. 5 cm
+C. 4 cm
+D. 2 cm
+Answer: A
+
+Q.66: A circular garden has a diameter of 28 m. If a gardener wants to fence 75% of the garden's circumference, what length of fencing is needed? (Use π= 22/7)
+A. 56 m
+B. 66 m
+C. 64 m
+D. 62 m
+Answer: B
+
+Q.67: In an equilateral triangle with side length 'a', what is the ratio of the circumradius to the inradius?
+A. 2:1
+B. 3:1
+C. 4:1
+D. 1:2
+Answer: A
+
+Q.68: A triangle ABC is inscribed in a circle. A tangent is drawn to the circle at point A, intersecting the extension of side BC at D. If AD=6 cm and CD=4 cm, what is the length of side BC?
+A. 5 cm
+B. 6 cm
+C. 7 cm
+D. 8 cm
+Answer: A
+
+Q.69: In a trapezoid ABCD with AB parallel to CD, the diagonals AC and BD intersect at E. What is the ratio of the area of ABE to the area of CDE?
+A. The ratio of AB to CD squared.
+B. The ratio of AB to CD.
+C. The ratio of the perimeter of $\triangle$ABE to the perimeter of $\triangle$CDE.
+D. The ratio of the area of $\triangle$ABC to the area of $\triangle$BCD.
+Answer: A
+
+Q.70: A circle with radius x touches another circle with radius 2x externally. What is the length of a direct common tangent?
+A. 2x
+B. 3x
+C. 2x√2
+D. 3x√2
+Answer: C
+
+Q.71: Two circles with radii 6 cm and 2 cm have their centers 10 cm apart. How many common tangents can be drawn between them, and what type(s) of tangents are they?
+A. 4 tangents: 2 direct and 2 transverse
+B. 3 tangents: 2 direct and 1 transverse
+C. 2 tangents: only direct tangents
+D. 0 tangents: the larger circle completely contains the smaller one
+Answer: A
+
+Q.72: Two chords AB and CD intersect at a point P inside a circle. If AP = 6 cm, PB = 8 cm, and CP = 4 cm, what is the length of PD?
+A. 10 cm
+B. 12 cm
+C. 16 cm
+D. 18 cm
+Answer: B
+
+Q.73: In a circle, a chord AB is 12 cm long and is at a distance of 4 cm from the center. What is the radius of the circle?
+A. √52 cm
+B. √65 cm
+C. 8 cm
+D. None of these
+Answer: A
+
+Q.74: What is the value of (0.02³ + 0.004³) ÷ (0.2³ + 0.04³)? (0.02³ + 0.004³) ÷ (0.2³ + 0.04³)
+A. 0.002
+B. 0.0045
+C. 0.0102
+D. 0.001
+Answer: D
+
+Q.75: Evaluate: [Mathematical expression omitted in source official exam PDF]
+A. [Option A omitted in source key]
+B. [Option B omitted in source key]
+C. [Option C omitted in source key]
+D. [Option D omitted in source key]
+Answer: A
+
+Q.76: Select the most appropriate synonym of the given word: HAPHAZARD
+A. Organized
+B. Intentional
+C. Random
+D. Planned
+Answer: C
+
+Q.77: Select the most appropriate antonym of the given word. Reverence
+A. Respect
+B. Devotion
+C. Contempt
+D. Worship
+Answer: C
+
+Q.78: Choose the correct meaning of idiom: Not fit to hold a candle to
+A. Excellent in comparison
+B. Similar in ability
+C. Greatly inferior to
+D. Superior to in some aspects
+Answer: C
+
+Q.79: Select the most appropriate antonym of the given word. Incandescent
+A. Dusky
+B. Resplendent
+C. Glistening
+D. Fulgent
+Answer: A
+
+Q.80: Spot the correct spelling of a lab toxicity assay term.
+A. Cytotoxisity
+B. Cytotoxicity
+C. Cytotoxicety
+D. Cytotoxcity
+Answer: B
+
+Q.81: Choose the correct one-word substitute for: 'A person who is indifferent to pain or pleasure'.
+A. Apathetic
+B. Stoic
+C. Ascetic
+D. Hedonist
+Answer: B
+
+Q.82: Choose the correct one-word substitute for: 'One who pretends to have knowledge or skills'.
+A. Savante
+B. Charlatan
+C. Virtuoso
+D. Connoisseur
+Answer: B
+
+Q.83: Select the correct phrasal verb: We need to ____ the old files before moving the new ones.
+A. clean out
+B. clear off
+C. wipe over
+D. go over
+Answer: A
+
+Q.84: Select the correct option: In light of recent discoveries, the theory has been subject to rigorous ____ and reinterpretation.
+A. scrutiny
+B. sanction
+C. insinuation
+D. subversion
+Answer: A
+
+Q.85: Find the part of the sentence that contains an error: Much efforts have been made (1)/ by the development team (2)/ to reduce the application's loading time (3)/ without compromising features. (4)/
+A. (1)
+B. (2)
+C. (3)
+D. (4)
+Answer: A
+
+Q.86: Change the following from active to passive: The professor could have been explaining differential topology for hours.
+A. Differential topology could have be being explained for hours by the professor.
+B. Differential topology could have explained for hours by the professor.
+C. Differential topology could have been being explained for hours by the professor.
+D. Differential topology could have had been been explained for hours by the professor.
+Answer: C
+
+Q.87: Find the part of the sentence that contains an error: Rarely if ever have there been a time (1)/ when dissent was met (2)/ with such institutional disregard (3)/ as in the present administration. (4)
+A. (1)
+B. (2)
+C. (3)
+D. (4)
+Answer: A
+
+Q.88: Select the sentence containing the homonym of the highlighted word: The ancient sconce held a flickering torch along the corridor.
+A. The thief smashed the wall sconce and fled.
+B. The student was sconced for violating tradition.
+C. The bronze sconce was engraved with floral motifs.
+D. The hallway featured a new LED sconce.
+Answer: B
+
+Q.89: Convert the sentence provided below from its passive voice structure to an active voice structure: The documents had been submitted by the assistant before the deadline.
+A. The assistant submits the documents before the deadline.
+B. The assistant had submitted the documents before the deadline.
+C. The assistant was submitting the documents before the deadline.
+D. The assistant is submitting the documents before the deadline.
+Answer: B
+
+Q.90: Choose the most suitable option to replace the highlighted part of the sentence: She is senior than me in college.
+A. is more senior than
+B. is senior from
+C. is elder than
+D. is senior to
+Answer: D
+
+Q.91: Choose the most suitable option to replace the highlighted part of the sentence: He did not know where was the book kept.
+A. where the book was kept
+B. where was the book
+C. where did the book kept
+D. where the book has kept
+Answer: A
+
+Q.92: PASSAGE (Q.92 - Q.96) Read the following passage and answer the questions based on the passage: While financial inclusion is often praised as a driver of equitable growth, its implementation in rural India presents a paradox. On paper, schemes such as the Pradhan Mantri Jan Dhan Yojana (PMJDY), Aadhaar- enabled payment systems, and mobile banking have revolutionized access. Yet, in practice, access does not necessarily translate into utility. A significant number of rural account holders remain dormant users, often constrained by digital illiteracy, infrastructural limitations, and deeply entrenched socio-cultural barriers. In numerous villages, banking correspondents (BCs)—the foot soldiers of India's rural financial architecture—are overburdened, undertrained, and often unsupported by robust technological infrastructure. The notion that a biometric fingerprint or a one-time password could substitute for financial literacy is naïve at best. Many beneficiaries, especially women, face systemic exclusion, not just due to lack of documentation, but because patriarchal norms often discourage or control women’s interactions with banking services. Moreover, while financial inclusion aims to integrate the rural poor into the formal economy, the informal credit system continues to flourish. This coexistence is not accidental but symptomatic of a trust deficit and functional inefficiencies within formal institutions. Local moneylenders, albeit exploitative, offer immediacy and familiarity, elements often absent in bureaucratic banking processes. The digital push, accelerated post-2016 demonetization and COVID-19, has undoubtedly expanded the ecosystem. However, digital penetration without digital comprehension can widen the exclusion gap. Without focused digital education, grievance redressal mechanisms, and gender-sensitive outreach, financial inclusion may remain more rhetorical than real. In essence, true inclusion cannot be measured merely by the number of accounts opened but must reflect active participation, trust, and accessibility across gender, literacy, and regional lines. Until then, the dream of a financially empowered rural India will remain aspirational. According to the passage, what is the main paradox of financial inclusion in rural India?
+A. Lack of infrastructure
+B. Overreliance on technology
+C. Access without actual usage
+D. Excess of digital banking
+Answer: C
+
+Q.93: Why do informal credit systems persist despite formal financial inclusion efforts?
+A. Due to strict documentation
+B. Trust and familiarity of local lenders
+C. Higher interest rates attract borrowers
+D. Government incentives are unavailable
+Answer: B
+
+Q.94: Which factor does not contribute to dormant rural bank accounts, as per the passage?
+A. Patriarchal social norms
+B. Digital illiteracy
+C. Mobile network expansion
+D. Lack of financial literacy
+Answer: C
+
+Q.95: What assumption does the author criticize regarding digital financial systems?
+A. Mobile payments are fast
+B. Biometrics ensure security
+C. OTPs can replace financial education
+D. Rural people distrust technology
+Answer: C
+
+Q.96: What is implied about women's financial inclusion in rural India?
+A. They benefit more from informal lenders
+B. Lack of Aadhaar is the main barrier
+C. Cultural factors hinder their financial agency
+D. They lead financial decisions at home
+Answer: C
+
+Q.97: Select the correct option for the Direct Speech conversion of the sentence below. The composer explained that, were the leitmotif transposed an octave higher, the tension might dissipate prematurely.
+A. The composer said, "If the leitmotif was transposed an octave higher, the tension will dissipate prematurely."
+B. The composer said, "Were the leitmotif transposed an octave higher, the tension might dissipate prematurely."
+C. The composer said, "The tension will dissipate prematurely if the leitmotif had been transposed an octave higher."
+D. The composer said, "Had the leitmotif been transposed an octave higher, the tension must have dissipated prematurely."
+Answer: B
+
+Q.98: A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. He said, "I have seen that movie already."
+A. He said that he saw that movie already.
+B. He said that he had seen that movie already.
+C. He said that he have seen that movie already.
+D. He said that he was seeing that movie already.
+Answer: B
+
+Q.99: Rearrange the following sentences to form a coherent paragraph: 1. The most prevalent of these is the peer review process, where a manuscript is evaluated by other experts in the same field. 2. The integrity of scientific publications is upheld by a series of rigorous checks and balances. 3. The goal of this process is to validate the methodology, findings, and conclusions of the research before it is made public. 4. This external scrutiny helps to ensure that only high-quality, credible research is disseminated to the scientific community.
+A. 2, 1, 3, 4
+B. 1, 2, 3, 4
+C. 3, 4, 1, 2
+D. 4, 3, 2, 1
+Answer: A
+
+Q.100: Rearrange the following sentences to form a coherent paragraph: 1. This allows them to navigate and perform tasks with a high degree of precision in various environments, from factory floors to surgical theaters. 2. Robotics is an interdisciplinary field of engineering and computer science that deals with the design, construction, and operation of robots. 3. The core of a modern robot is its programming, which utilizes sophisticated algorithms and sensors to process information. 4. These machines are designed to assist humans by automating tasks that are either repetitive, hazardous, or require a level of accuracy beyond human capability.
+A. 2, 4, 3, 1
+B. 4, 3, 1, 2
+C. 3, 1, 2, 4
+D. 2, 3, 4, 1
+Answer: A
+

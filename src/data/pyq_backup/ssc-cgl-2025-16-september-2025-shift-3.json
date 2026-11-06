@@ -1,0 +1,902 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "Italy is a beautiful village and China is a big building. What is the total number of words that begin with a consonant Italy is a beautiful village and China is a big building",
+    "option_a": "4",
+    "option_b": "5",
+    "option_c": "6",
+    "option_d": "7",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 2,
+    "question_text": "Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. GBD, JFJ, MJP, PNV ?",
+    "option_a": "VHA",
+    "option_b": "SRB",
+    "option_c": "SRF",
+    "option_d": "UHS",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 3,
+    "question_text": "Choose the address that is exactly the same as the one given below. C-12, Hill View Complex, Rajaji Nagar, Bengaluru, Karnataka – 560010",
+    "option_a": "C-12, Hill View Complex, Rajaji Nagar, Bengaluru, Karnataka – 560011",
+    "option_b": "C-12, Hill View Complex, Rajaji Nagar, Bengaluru, Karnataka – 560012",
+    "option_c": "C-12, Hill View Complex, Rajaji Nagar, Bengaluru, Karnataka – 560013",
+    "option_d": "C-12, Hill View Complex, Rajaji Nagar, Bengaluru, Karnataka – 560010",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 4,
+    "question_text": "Select the letter-cluster from among the given options that can replace the question mark (?) in the following series: SCEG, S F K P, S I Q Y, S L W H, ?",
+    "option_a": "S O C Q",
+    "option_b": "S O B Q",
+    "option_c": "S P C R",
+    "option_d": "S P D R",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 5,
+    "question_text": "A statement is given followed by two conclusions. Find which conclusion is TRUE based on the given statement. Statement: C= A ≤ T < D ≥ O; G ≥ D < S; T ≥ A Conclusions: I: A < O II: C < G",
+    "option_a": "Only II",
+    "option_b": "Only I",
+    "option_c": "Either I or II",
+    "option_d": "Neither I nor II",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 6,
+    "question_text": "Complete the pattern: 2, 12, 36, 80, 150, ?",
+    "option_a": "246",
+    "option_b": "240",
+    "option_c": "252",
+    "option_d": "258",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 7,
+    "question_text": "Find the odd one out:",
+    "option_a": "10 # 5 = 5",
+    "option_b": "20 # 4 = 5",
+    "option_c": "25 # 5 = 5",
+    "option_d": "15 # 3 = 5",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 8,
+    "question_text": "Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option. Statement: The rapid advancement in gene editing technologies such as CRISPR offers immense potential for curing genetic disorders, but it also raises concerns about the ethical implications of editing the human genome. Assumptions: I. Gene editing technologies can potentially cure genetic disorders. II. Ethical concerns are a natural consequence of advancing gene editing technologies. III. The potential for gene editing to cure genetic disorders outweighs the ethical concerns.",
+    "option_a": "Only I and II are implicit",
+    "option_b": "Only II and III are implicit",
+    "option_c": "Only I is implicit",
+    "option_d": "All I, II and III are implicit",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 9,
+    "question_text": "Read the following statement carefully and identify the conclusion that follows. Statement: The bank has introduced a biometric login system. Conclusions: I. The bank wants to improve security. II. Customers must carry biometric IDs.",
+    "option_a": "Only Conclusion I follows",
+    "option_b": "Only Conclusion II follows",
+    "option_c": "Both I and II follow",
+    "option_d": "Neither I nor II follows",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 10,
+    "question_text": "Find the group of letters that best completes the analogy. Use alphabetical positions and reverse position logic where necessary. ACFL : ZXUM :: BDEM : ?",
+    "option_a": "YWNL",
+    "option_b": "YWML",
+    "option_c": "YWVN",
+    "option_d": "YXML",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 11,
+    "question_text": "Read the following statement carefully and identify the conclusion that follows. Statement: Some animals are carnivores. Some carnivores are wild. Conclusions: I. Some animals are wild. II. All wild are animals.",
+    "option_a": "Only I follows",
+    "option_b": "Only II follows",
+    "option_c": "Both I and II follow",
+    "option_d": "Neither I nor II follows",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 12,
+    "question_text": "In the following question, select the word which cannot be formed using the letters of the given word. QUARRELSOME",
+    "option_a": "AIR",
+    "option_b": "SOME",
+    "option_c": "QUARREL",
+    "option_d": "LOAM",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 13,
+    "question_text": "The 6th term of a geometric progression (GP) is 48. The first term is 1.5. What is the common ratio (CR)?",
+    "option_a": "2.0",
+    "option_b": "3.0",
+    "option_c": "2.5",
+    "option_d": "2.2",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 14,
+    "question_text": "Find the odd one out from the given alternatives:",
+    "option_a": "Bhagat Singh",
+    "option_b": "Chandrashekhar Azad",
+    "option_c": "Rajguru",
+    "option_d": "Manmohan Singh",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 15,
+    "question_text": "P is the mother of Q. Q is the sister of R. How is P related to R?",
+    "option_a": "Aunt",
+    "option_b": "Mother",
+    "option_c": "Grandmother",
+    "option_d": "Cousin",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 16,
+    "question_text": "In a certain code language, each letter is assigned a unique digit. Based on the following codes: PLANE is coded as 74851 and DOG as 392, how is GOLD coded?",
+    "option_a": "2843",
+    "option_b": "2943",
+    "option_c": "2394",
+    "option_d": "2934",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 17,
+    "question_text": "Compute √144 + ³√27 = ?",
+    "option_a": "14",
+    "option_b": "15",
+    "option_c": "16",
+    "option_d": "13",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 18,
+    "question_text": "If 8 # 2 = 64, 7 # 3 = 343, then 6 # 2 = ?",
+    "option_a": "216",
+    "option_b": "144",
+    "option_c": "100",
+    "option_d": "36",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 19,
+    "question_text": "In a code language, TABLE is written as UDCMF. How will CHAIR be written?",
+    "option_a": "DKBJS",
+    "option_b": "EJCKR",
+    "option_c": "DJCKR",
+    "option_d": "DJBKR",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 20,
+    "question_text": "A shop sells erasers at ₹8 each and folders at ₹25 each. If a customer buys 5 erasers and 3 folders, what's the total bill?",
+    "option_a": "₹99",
+    "option_b": "₹115",
+    "option_c": "₹105",
+    "option_d": "₹111",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 21,
+    "question_text": "A + B means A is the mother of B, A ÷ B means A is the father of B, A - B means A is the sister of B, A × B means A is the brother of B. What does P ÷ Q - R mean?",
+    "option_a": "P is R's uncle",
+    "option_b": "Q is R's mother",
+    "option_c": "P is R's father",
+    "option_d": "R is P's mother",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 22,
+    "question_text": "If '×' = '-', '+' = '÷', '-' = '+', '÷' = '×', then which is valid?",
+    "option_a": "12 - 4 × 2 + 1 = 7",
+    "option_b": "10 + 2 - 4 × 1 = 8",
+    "option_c": "16 ÷ 4 + 2 - 2 = 10",
+    "option_d": "8 × 2 - 2 + 2 = 1",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 23,
+    "question_text": "If 'A' means '-', 'B' means '÷', 'C' means '+', and 'D' means 'x' what is the value of the following expression? 25 B 5 C 3 D 2 A 4=?",
+    "option_a": "7",
+    "option_b": "14",
+    "option_c": "21",
+    "option_d": "28",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 24,
+    "question_text": "If + = x, - = ^, x = -, evaluate: 5 - 2 x 3 + 1",
+    "option_a": "22",
+    "option_b": "23",
+    "option_c": "24",
+    "option_d": "25",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 25,
+    "question_text": "If the sum of 11 and 40 is multiplied by 5, what is the result?",
+    "option_a": "240",
+    "option_b": "255",
+    "option_c": "265",
+    "option_d": "270",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 26,
+    "question_text": "Consider the following statements: 1. Perini Shivatandavam is a warrior dance revived in modern times. 2. It originated from the court of Chola kings of Tamil Nadu. Which of the above statements is/are correct?",
+    "option_a": "Only 1 is correct",
+    "option_b": "Only 2 is correct",
+    "option_c": "Both statements 1 and 2 are correct",
+    "option_d": "Neither statement 1 nor 2 is correct",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 27,
+    "question_text": "Which of the following is a typical architectural feature of the Capuchin Church?",
+    "option_a": "Ornate spires and domes",
+    "option_b": "Complex traceried rose windows",
+    "option_c": "Flat arched entrance with pediment",
+    "option_d": "Multi-storey shikhara tower",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 28,
+    "question_text": "Which of the following statements uniquely identifies a symbolic or lesser-known element linking Teej to both nature and mythology?",
+    "option_a": "Teej is a public holiday in all North Indian states during the month of Aadi.",
+    "option_b": "\"Teej\" refers to a lunar goddess linked to fertility and rain.",
+    "option_c": "The name \"Teej\" comes from a red insect seen in monsoon",
+    "option_d": "Swinging during Teej represents lunar cycles and Shiva's Tandava.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 29,
+    "question_text": "Which of the following statements about the Mahasandhivigrahika during Gupta's rule is correct?",
+    "option_a": "He was the chief justice of the kingdom and presided over land disputes.",
+    "option_b": "He supervised irrigation works and public revenue collection.",
+    "option_c": "He acted as the foreign minister and collaborated closely with the king and military.",
+    "option_d": "He managed temple endowments and religious affairs.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 30,
+    "question_text": "Which of the following pairs of Kashmiri music and its description is correctly matched?",
+    "option_a": "Chakri - Classical form using Santoor and Hafiz Nagma",
+    "option_b": "Sufiana Music - Folk style sung with Garaha and Rabab",
+    "option_c": "Hafiz Nagma - Dance based on musical notes of Sufiana music",
+    "option_d": "Rouf - Instrumental duet performed with Santoor and Sitar",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 31,
+    "question_text": "In pole vault, how many failed attempts are allowed before disqualification?",
+    "option_a": "2",
+    "option_b": "3",
+    "option_c": "4",
+    "option_d": "1",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 32,
+    "question_text": "Match the dynasties listed in Column A with the regions they primarily ruled over, as given in Column B: Column A: Dynasty B: Region A. Gurjara-Pratiharas 1. Bengal B. Rashtrakutas 2. Tamil Nadu C. Palas 3. Gujarat and Rajasthan D. Cholas Column 4. Western Deccan",
+    "option_a": "A → 3, B → 4, C → 1, D → 2",
+    "option_b": "A → 4, B → 3, C → 1, D → 2",
+    "option_c": "A → 2, B → 3, C → 1, D → 4",
+    "option_d": "A → 4, B → 3, C → 2, D → 1",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 33,
+    "question_text": "Which city is set to host the 2026 Commonwealth Games after Australia withdrew from hosting?",
+    "option_a": "Birmingham",
+    "option_b": "Victoria",
+    "option_c": "Glasgow",
+    "option_d": "Toronto",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 34,
+    "question_text": "Which corridor enhances India's access to Central Asia through Chabahar Port?",
+    "option_a": "East-West Corridor",
+    "option_b": "India-Myanmar Highway",
+    "option_c": "North-South Transport Corridor",
+    "option_d": "South Asian Maritime Path",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 35,
+    "question_text": "What is the theme of Avni Doshi's Burnt Sugar, shortlisted for the Booker Prize 2020?",
+    "option_a": "Romantic tale in pre-independence India",
+    "option_b": "Political thriller in Delhi",
+    "option_c": "Complex mother-daughter bond",
+    "option_d": "Historical fiction on India-Persia trade",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 36,
+    "question_text": "Which campaign did Education Minister Dharmendra Pradhan promote on World Environment Day 2025?",
+    "option_a": "Plastic-Free India Campaign",
+    "option_b": "Ek Ped Maa Ke Naam 2.0 tree-planting",
+    "option_c": "Clean Ganga Youth Movement",
+    "option_d": "National Coastal Cleanup Drive",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 37,
+    "question_text": "What was India's urban population percentage in Census 2011?",
+    "option_a": "24%",
+    "option_b": "31%",
+    "option_c": "36%",
+    "option_d": "41%",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 38,
+    "question_text": "What is the maximum payload capacity of India's upcoming Next Generation Launch Vehicle (NGLV) to Low Earth Orbit (LEO)?",
+    "option_a": "10 tonnes",
+    "option_b": "20 tonnes",
+    "option_c": "30 tonnes",
+    "option_d": "40 tonnes",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 39,
+    "question_text": "Which of the following statements accurately identifies the venue and complete schedule of the Yonex- Sunrise India Open 2025, classified as a BWF Super 750 badminton tournament?",
+    "option_a": "It was conducted at Thyagaraj Stadium, New Delhi, from January 10 to 15, 2025, as part of the BWF World Tour.",
+    "option_b": "The event took place at the Siri Fort Sports Complex, New Delhi, from January 12 to 17, 2025, under the BWF Super Series framework.",
+    "option_c": "It was hosted at the K.D. Jadhav Indoor Hall, IG Stadium, New Delhi, from January 14 to 19, 2025, as part of the BWF Super 750 tier.",
+    "option_d": "It was organized at Talkatora Indoor Stadium, New Delhi, from January 16 to 21, 2025, under the India Badminton Circuit calendar.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 40,
+    "question_text": "The Sindri fertilizer plant, one of India's oldest and most significant, is located in which state, utilizing its proximity to a major coal-producing region?",
+    "option_a": "West Bengal",
+    "option_b": "Odisha",
+    "option_c": "Jharkhand",
+    "option_d": "Bihar",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 41,
+    "question_text": "Which of the following sequences correctly represents flow of genetic info?",
+    "option_a": "DNA → Protein → RNA",
+    "option_b": "RNA → DNA → Protein",
+    "option_c": "DNA → RNA → Protein",
+    "option_d": "Protein → RNA → DNA",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 42,
+    "question_text": "What does Article 268 of the Indian Constitution primarily deal with?",
+    "option_a": "Service tax levied by Union and collected by States",
+    "option_b": "Income tax levied and collected by States",
+    "option_c": "Stamp duties levied by Union but collected by States",
+    "option_d": "Excise duties on medicinal products collected by States",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 43,
+    "question_text": "If the speed of sound in a medium is 340 m/s and a sound wave has a frequency of 680 Hz, what is its wavelength?",
+    "option_a": "0.5 m",
+    "option_b": "2 m",
+    "option_c": "20 m",
+    "option_d": "50 m",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 44,
+    "question_text": "What is the primary aim of TIES?",
+    "option_a": "Export infra development",
+    "option_b": "Cold storage for dairy",
+    "option_c": "PMFBY support",
+    "option_d": "Drug pricing regulation",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 45,
+    "question_text": "Read the below statements marked as Assertion (A) and Reason (R). Mark the correct options: Assertion (A): The Happiness Index includes political freedom and social support. Reason (R): The Index is published by the UNDP.",
+    "option_a": "Both A and R are true, and R is the correct explanation of A.",
+    "option_b": "Both A and R are true, but R is not the correct explanation of A.",
+    "option_c": "A is true, but R is false.",
+    "option_d": "A is false, but R is true.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 46,
+    "question_text": "Why is 'Carbon Sink Enhancement' important in India's climate plan?",
+    "option_a": "Encourage deforestation",
+    "option_b": "Store CO₂ in vegetation and soil",
+    "option_c": "Burn more fossil fuels",
+    "option_d": "Promote monocultures",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 47,
+    "question_text": "Read the following Assertion (A) and Reason (R) carefully and choose the correct option. Assertion (A): India adopted import substitution during the planning era. Reason (R): This was to protect infant domestic industries from foreign competition.",
+    "option_a": "Both A and R are true and R is the correct explanation of A.",
+    "option_b": "Both A and R are true but R is not the correct explanation of A.",
+    "option_c": "A is true but R is false.",
+    "option_d": "A is false but R is true.",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 48,
+    "question_text": "Consider these cosmic phenomena: 1. Black holes emit X-rays directly from their event horizon 2. Pulsars are rapidly rotating neutron stars. Which of the above is/are correct?",
+    "option_a": "Statement 1 only",
+    "option_b": "Statement 2 only",
+    "option_c": "Both 1 and 2",
+    "option_d": "Neither 1 nor 2",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 49,
+    "question_text": "Which Article allows Parliament to legislate on a subject in the State List during a National Emergency?",
+    "option_a": "Article 250",
+    "option_b": "Article 256",
+    "option_c": "Article 254",
+    "option_d": "Article 352",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 50,
+    "question_text": "Consider the following statements: 1. Article 131A gave High Courts exclusive power to decide on central laws' validity. 2. It was repealed by the 43rd Constitutional Amendment. Which of the above is/are correct?",
+    "option_a": "Only 1",
+    "option_b": "Only 2",
+    "option_c": "Both 1 and 2",
+    "option_d": "Neither 1 nor 2",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 51,
+    "question_text": "Convert 3.375 into a fraction in simplest form.",
+    "option_a": "27/8",
+    "option_b": "25/8",
+    "option_c": "29/8",
+    "option_d": "31/8",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 52,
+    "question_text": "If 15% of a is equal to 25% of b, then find the ratio a : b.",
+    "option_a": "3 : 5",
+    "option_b": "5 : 3",
+    "option_c": "4 : 5",
+    "option_d": "5 : 4",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 53,
+    "question_text": "What should be subtracted from 7, 9, 8, 11 so that the remaining numbers may be proportional? 7, 9, 8, 11",
+    "option_a": "12",
+    "option_b": "5",
+    "option_c": "1",
+    "option_d": "6",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 54,
+    "question_text": "Find the difference: 6.4 - (2 + 1.75)",
+    "option_a": "7.822",
+    "option_b": "1.962",
+    "option_c": "3.522",
+    "option_d": "2.025",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 55,
+    "question_text": "Alok starts a business with ₹90,000. After 3 months, Deepak joins with ₹1,20,000. After 6 months from the beginning, Alok increases his investment by ₹30,000. Deepak leaves the business 3 months before the end of the year. What is their profit-sharing ratio?",
+    "option_a": "7:4",
+    "option_b": "2:3",
+    "option_c": "5:4",
+    "option_d": "9:4",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 56,
+    "question_text": "The average age of 19 students is 17 years. A teacher joins the group, and the average becomes 18 years. What is the teacher's age?",
+    "option_a": "27",
+    "option_b": "37",
+    "option_c": "47",
+    "option_d": "57",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 57,
+    "question_text": "In a team of 80 employees, the average salary is ₹62,000. If 30 of them earn an average salary of ₹72,000, what is the average salary of the remaining employees?",
+    "option_a": "₹60,000",
+    "option_b": "₹50,000",
+    "option_c": "₹86,000",
+    "option_d": "₹56,000",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 58,
+    "question_text": "A sum becomes 4 times its original value in 6 years under compound interest. In how many years will it become 16 times of the original amount?",
+    "option_a": "9 years",
+    "option_b": "12 years",
+    "option_c": "15 years",
+    "option_d": "18 years",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 59,
+    "question_text": "If the ratio between the loss and cost price of an article is 1 : 10, then the ratio between its selling price and cost price is ____.",
+    "option_a": "9:10",
+    "option_b": "5:15",
+    "option_c": "6:17",
+    "option_d": "7:10",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 60,
+    "question_text": "An item is marked at ₹150. A customer gets a 10% discount on it. If the seller still makes a profit of 25%, what is the cost price of the item?",
+    "option_a": "₹108",
+    "option_b": "₹209",
+    "option_c": "₹306",
+    "option_d": "₹456",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 61,
+    "question_text": "A software developer sells a license for a new application to a reseller at a 20% discount. An installation and support fee of 15% is added to the discounted price. The reseller then sells the license for ₹7800 more, making a 25% profit. Determine the original marked price of the software license by the developer.",
+    "option_a": "₹19,254.62",
+    "option_b": "₹18,181.82",
+    "option_c": "₹20,654.67",
+    "option_d": "₹33,913.04",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 62,
+    "question_text": "A 90-litre mixture contains milk and water in the ratio 7:2. If 'x' litres of milk and 'x' litres of water are added to the mixture, the new ratio of milk to water becomes 5:2. What is the value of 'x' ?",
+    "option_a": "13.33 litres",
+    "option_b": "10.54 litres",
+    "option_c": "15 litres",
+    "option_d": "20 litres",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 63,
+    "question_text": "A sphere is completely contained within a cylinder, with the height and diameter of the cylinder matching the diameter of the sphere. Given that the volume of the sphere is 36π cm³, what is the volume of the vacant space inside the cylinder?",
+    "option_a": "12πcm³",
+    "option_b": "27πcm³",
+    "option_c": "18πcm³",
+    "option_d": "9πcm³",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 64,
+    "question_text": "A hemisphere is melted and recast into a cone of the same radius R. Find the height of the cone formed.",
+    "option_a": "2R",
+    "option_b": "R",
+    "option_c": "4R",
+    "option_d": "5R",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 65,
+    "question_text": "Two solid hemispheres of radii 6 cm and 8 cm respectively are melted and recast into a single hemisphere. What is the approximate radius of the new hemisphere formed?",
+    "option_a": "9cm",
+    "option_b": "10cm",
+    "option_c": "12cm",
+    "option_d": "11cm",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 66,
+    "question_text": "A regular right pyramid has a square base with a side length of 12 cm. Its slant height is 10 cm. What is its volume?",
+    "option_a": "384 cm³",
+    "option_b": "480 cm³",
+    "option_c": "576 cm³",
+    "option_d": "640 cm³",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 67,
+    "question_text": "The ratio of the radii of two car tyres is 1 : √2 . If the area of the smaller tyre is 100 cm², what is the area of the larger tyre?",
+    "option_a": "200 cm²",
+    "option_b": "300 cm²",
+    "option_c": "400 cm²",
+    "option_d": "500 cm²",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 68,
+    "question_text": "The angle bisectors of triangle ABC converge at the incenter I. Given that the measure of ∠BIC is 125°, what is the measure of ∠BAC?",
+    "option_a": "50°",
+    "option_b": "70°",
+    "option_c": "80°",
+    "option_d": "100°",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 69,
+    "question_text": "In a quadrilateral ABCD, AB is parallel to CD, and AC is a diagonal. If AB=CD, which of the following is true?",
+    "option_a": "∆ABC ≅ ∆CDA by SSS.",
+    "option_b": "∆ABC ≅ ∆CDA by SAS.",
+    "option_c": "∆ABC ≅ ∆CDA by ASA.",
+    "option_d": "The triangles are similar, but not necessarily congruen",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 70,
+    "question_text": "In triangle ABC, a line segment DE is drawn through the centroid G, parallel to side BC. D lies on AB and E lies on AC. What is the ratio of the area of the smaller triangle ADE to the area of the trapezoid DECB?",
+    "option_a": "1:1",
+    "option_b": "1:2",
+    "option_c": "4:5",
+    "option_d": "4:9",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 71,
+    "question_text": "Two circles of radii 9 cm and 5 cm have their centers 17 cm apart. What is the length of the internal common tangent?",
+    "option_a": "12 cm",
+    "option_b": "√216 cm",
+    "option_c": "√93 cm",
+    "option_d": "√256 cm",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 72,
+    "question_text": "Two circles with radii r1=7 cm and r2=3 cm have their centers 20 cm apart. Find the length of the transverse common tangent between them.",
+    "option_a": "√300 cm",
+    "option_b": "300 cm",
+    "option_c": "√375 cm",
+    "option_d": "200 cm",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 73,
+    "question_text": "In a circle, two chords are 7 cm and 9 cm long. If the 9 cm chord is 4 cm away from the center, what can be said about the distance of the 7 cm chord from the center?",
+    "option_a": "It is less than 4 cm.",
+    "option_b": "It is equal to 4 cm.",
+    "option_c": "It is greater than 4 cm.",
+    "option_d": "It cannot be determined.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 74,
+    "question_text": "A circle is circumscribed about a triangle. If one of the angles of the triangle is 120°, and the radius of the circumscribed circle is r, what is the length of the side opposite the 120° angle?",
+    "option_a": "r√3",
+    "option_b": "2r",
+    "option_c": "r",
+    "option_d": "r√2",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 75,
+    "question_text": "Add and express the result as a decimal.",
+    "option_a": "0.1875",
+    "option_b": "0.2345",
+    "option_c": "0.5678",
+    "option_d": "0.7654",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 76,
+    "question_text": "Select the most appropriate synonym of the given word: INTRANSIGENT",
+    "option_a": "Willing",
+    "option_b": "Compliant",
+    "option_c": "Stubborn",
+    "option_d": "Submissive",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 77,
+    "question_text": "Select the most appropriate antonym of the given word. Pulchritude",
+    "option_a": "Grace",
+    "option_b": "Ugliness",
+    "option_c": "Charm",
+    "option_d": "Beauty",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 78,
+    "question_text": "Choose the correct meaning of idiom: In the doldrums",
+    "option_a": "Sailing in high winds",
+    "option_b": "In a state of depression or inactivity",
+    "option_c": "On the verge of success",
+    "option_d": "Working with great energy",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 79,
+    "question_text": "Select the most appropriate antonym of the given word. Incorrigible",
+    "option_a": "Chronic",
+    "option_b": "Deep-rooted",
+    "option_c": "Habitual",
+    "option_d": "Reclaimable",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 80,
+    "question_text": "Spot the correct spelling of a drug hallucination adj.",
+    "option_a": "Hallucinagenic",
+    "option_b": "Hallucinognic",
+    "option_c": "Hallucinogenic",
+    "option_d": "Halluscinogenic",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 81,
+    "question_text": "Choose the correct one-word substitution for: 'One who abandons his religious faith'.",
+    "option_a": "Renegade",
+    "option_b": "Atheist",
+    "option_c": "Heretic",
+    "option_d": "Apostate",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 82,
+    "question_text": "Choose the correct one-word substitute for: 'A formal split within a religious organization'.",
+    "option_a": "Sedition",
+    "option_b": "Heresy",
+    "option_c": "Apostasy",
+    "option_d": "Schism",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 83,
+    "question_text": "Fill in the blank with the most appropriate option: Rarely ____ such an overwhelming consensus among critics.",
+    "option_a": "has there been",
+    "option_b": "there has been",
+    "option_c": "was there",
+    "option_d": "had been",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 84,
+    "question_text": "Select the correct option: Only after years of archival research did the historian manage to ____ the contradictory accounts of the regime's collapse.",
+    "option_a": "retract",
+    "option_b": "revise",
+    "option_c": "reconcile",
+    "option_d": "reverberate",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 85,
+    "question_text": "Find the part of the sentence that contains an error: Little did the committee knew (1)/ about the hidden liabilities (2)/ when it approved the merger (3)/ late last quarter. (4)/",
+    "option_a": "1",
+    "option_b": "2",
+    "option_c": "3",
+    "option_d": "4",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 86,
+    "question_text": "Change the following from active to passive: Have the engineers resolved the calibration issue yet?",
+    "option_a": "Has the calibration issue had been resolved by the engineers yet?",
+    "option_b": "Has the calibration issue been resolved by the engineers yet?",
+    "option_c": "Has the calibration issue be resolved by the engineers yet?",
+    "option_d": "Has the calibration issue resolved by the engineers yet?",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 87,
+    "question_text": "Find the part of the sentence that contains an error: All that is needed for the bill to pass (1)/ are a simple majority (2)/ and a signature from the presiding officer (3)/ to certify the vote. (4)",
+    "option_a": "1",
+    "option_b": "2",
+    "option_c": "3",
+    "option_d": "4",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 88,
+    "question_text": "Select the sentence containing the homonym of the highlighted word: He took the current route to avoid delays.",
+    "option_a": "The current was unusually strong near the bridge.",
+    "option_b": "The report discussed current economic policies.",
+    "option_c": "She adapted to current fashion quickly.",
+    "option_d": "He read current events before the exam.",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 89,
+    "question_text": "Convert the sentence provided below from its passive voice structure to an active voice structure: The injured man was taken to the hospital by some villagers.",
+    "option_a": "Some villagers take the injured man to the hospital.",
+    "option_b": "Some villagers were taking the injured man to the hospital.",
+    "option_c": "Some villagers had taken the injured man to the hospital.",
+    "option_d": "Some villagers took the injured man to the hospital.",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 90,
+    "question_text": "PASSAGE (Q.90 - Q.94) Read the following passage and answer the questions based on the passage : In the relentless pursuit of excellence, the dichotomy between hard work and smart work emerges not merely as a matter of preference but as a nuanced dialectic in the broader schema of human productivity. Hard work—often equated with sheer diligence, indefatigable endurance, and linear perseverance—has historically been valorized as the cornerstone of achievement. The laboring individual, armed with nothing but obstinacy and time, is celebrated in folklore and biographies alike. However, in an era punctuated by algorithmic precision and cognitive economy, such traditional notions increasingly invite scrutiny. Contrastingly, smart work embodies a strategic orchestration of effort—an application of metacognition, resource optimization, and situational analysis. It seeks to minimize entropy in labor while maximizing the return on cognitive and physical investment. Smart workers interrogate systems, deconstruct inefficiencies, and leverage available tools—be they digital frameworks or social capital—to expedite outcomes. They transcend the treadmill of unidirectional exertion by inserting intelligence into execution. Nevertheless, the glorification of smart work without the substratum of hard work yields its own inadequacies. Smartness devoid of rigor often culminates in superficiality—a veneer of competence that collapses under sustained demand. Likewise, unmitigated hard work, devoid of strategic redirection, can lead to burnout and inefficiency. Hence, the contemporary paradigm necessitates a confluence: the sagacious worker is one who tempers grit with guile, who labors not just with effort but with efficacy. The juxtaposition, then, is not binary but complementary. To romanticize either extreme is to overlook the variegated realities of performance. In the crucible of modern challenges, the symbiotic blend of persistence and precision is what renders output sustainable and impact magnified. In essence, success is not the fruit of blind toil or cunning alone, but the synthesis of intelligent perseverance. Which of the following best captures the tone of the author in the passage?",
+    "option_a": "Dogmatic",
+    "option_b": "Reverent",
+    "option_c": "Analytical",
+    "option_d": "Indifferent",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 91,
+    "question_text": "Select the sentence that most clearly presents the limitation of relying solely on smart work.",
+    "option_a": "\"Hard work...has historically been valorized...\"",
+    "option_b": "\"They transcend the treadmill...\"",
+    "option_c": "\"Smartness devoid of rigor often culminates in superficiality...\"",
+    "option_d": "\"The sagacious worker is one...\"",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 92,
+    "question_text": "From a philosophical perspective, what argument does the author make about the dichotomy between hard work and smart work?",
+    "option_a": "They must harmonize to achieve sustainable results.",
+    "option_b": "One must dominate the other for success.",
+    "option_c": "They are mutually exclusive paradigms.",
+    "option_d": "Smart work is the only viable path in the modern age.",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 93,
+    "question_text": "What does the phrase “minimize entropy in labor” imply in the context of smart work?",
+    "option_a": "Reduce physical strain through technology.",
+    "option_b": "Eliminate randomness and inefficiency in effort.",
+    "option_c": "Avoid structured systems of work.",
+    "option_d": "Increase workload to achieve results faster.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 94,
+    "question_text": "Which metaphor is used to describe unidirectional exertion?",
+    "option_a": "Treadmill",
+    "option_b": "Algorithmic precision",
+    "option_c": "Crucible of challenges",
+    "option_d": "Social capital",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 95,
+    "question_text": "Choose the most suitable option to replace the highlighted part of the sentence: He is good in mathematics.",
+    "option_a": "is better in",
+    "option_b": "is good at",
+    "option_c": "is good for",
+    "option_d": "is best at",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 96,
+    "question_text": "Choose the most suitable option to replace the highlighted part of the sentence: She insisted that she comes with us.",
+    "option_a": "came with us",
+    "option_b": "should come with us",
+    "option_c": "is coming with us",
+    "option_d": "has to come with us",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 97,
+    "question_text": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. He speculated that, had stochastic volatility been incorporated, the valuation would perhaps have been more conservative.",
+    "option_a": "He speculated, \"Had stochastic volatility been incorporated, the valuation would perhaps have been more conservative.\"",
+    "option_b": "He speculated, \"If stochastic volatility is incorporated, valuation will perhaps be conservative.\"",
+    "option_c": "He speculated, \"If volatility had been incorporated, valuation perhaps more conservative.\"",
+    "option_d": "He said, \"Stochastic volatility incorporation would make valuation conservative.\"",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 98,
+    "question_text": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. They said, \"We are going on a trip.\"",
+    "option_a": "They said they are going on a trip.",
+    "option_b": "They said they were going on a trip.",
+    "option_c": "They said they went on a trip.",
+    "option_d": "They said they had going on a trip.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 99,
+    "question_text": "Rearrange the following sentences to form a coherent paragraph: 1. Anthropogenic climate change, driven by the emission of greenhouse gases, is causing a wide range of disruptions to global ecosystems. 2. Glacial retreat and the melting of polar ice caps have accelerated, contributing to a rise in global sea levels. 3. This has led to more frequent and intense extreme weather events, including droughts, floods, and heatwaves. 4. The collective impact of these changes poses a serious threat to human societies and biodiversity.",
+    "option_a": "2, 4, 3, 1",
+    "option_b": "3, 1, 4, 2",
+    "option_c": "1, 3, 2, 4",
+    "option_d": "1, 4, 2, 3",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 100,
+    "question_text": "Rearrange the following sentences to form a coherent paragraph: 1. This process is crucial because it ensures the integrity and reproducibility of experimental results. 2. Scientific experimentation begins with the formulation of a testable hypothesis based on an observation or question. 3. The data collected from these experiments is then analyzed and interpreted to draw conclusions about the hypothesis. 4. Next, a controlled experiment is designed and carried out to collect empirical evidence.",
+    "option_a": "2, 4, 3, 1",
+    "option_b": "4, 3, 2, 1",
+    "option_c": "1, 2, 4, 3",
+    "option_d": "3, 1, 4, 2",
+    "correct_answer": "A"
+  }
+]

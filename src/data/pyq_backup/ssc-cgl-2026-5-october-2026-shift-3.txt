@@ -1,0 +1,818 @@
+Q.1: In the following question, select the related word from the given alternatives. Corundum: Sapphire:: Carbon:?
+A. Graphene
+B. Rhombohedra
+C. Anatomy
+D. Gold
+Answer: A
+
+Q.2: If @ → A is added to B ^ → A is multiplied by B % → A is divided by B $ → B is subtracted from A Then: [(144 % 12) @ (7 ^ 2)] $ [64 % 8]
+A. 18
+B. 20
+C. 22
+D. 24
+Answer: A
+
+Q.3: You are reporting to a newly appointed manager who is noticeably younger and has less professional experience than you. You find some of their decisions lacking in strategic depth. Question: What is the most constructive way to respond while maintaining professionalism and team harmony?
+A. Regularly question and oppose their decisions to assert your seniority
+B. Raise concerns with upper management without first attempting resolution
+C. Offer thoughtful, experience-based input in a respectful and supportive manner
+D. Subtly discredit their authority to regain influence among peers
+Answer: C
+
+Q.4: If some fruits are apples and some apples are red, what logically follows?
+A. Some red things
+B. Some fruits may are fruits be red
+C. All red things are
+D. Some apples are apples fruits
+Answer: D
+
+Q.5: In MH (27), roll numbers must end in prime digits in Room 01. Question: Which number violates this condition?
+A. 2701023
+B. 2701049
+C. 2701064
+D. 2701097
+Answer: A
+
+Q.6: Statement: "Sustainable development cannot be achieved without balancing environmental concerns with economic growth."
+
+Conclusions:
+
+I. Environmental sustainability and economic growth are mutually exclusive.
+
+II. Both environment and economy must be considered to achieve sustainability.
+A. Only I follows
+B. Only II follows
+C. Both follow
+D. Neither follows
+Answer: B
+
+Q.7: If # means square of number, @ means cube of number, % means subtract 5, and & means add 2, then what is value of: 3 @ % & = ?
+A. 26
+B. 22
+C. 24
+D. 25
+Answer: C
+
+Q.8: Eight friends — P, Q, R, S, T, U, V, and W — are sitting around a square table, with one person on each side and one at each corner. P and S are seated opposite each other, as are Q and T. V is seated to the left of S, while U is to the right of S. W is directly opposite
+
+V. R occupies one of the corner seats. Based on this arrangement, who is seated diagonally opposite to R?
+A. P
+B. Q
+C. U
+D. T
+Answer: A
+
+Q.9: solve: If '+' means '-', '-' means 'x', 'x' means '÷', and '÷' means '+', then what is the value of: 36 - 3 x 4 + 2 ÷ 1 = ?
+A. 23
+B. 24
+C. 25
+D. 26
+Answer: D
+
+Q.10: If + = ÷, - = +, x = -, and ÷ = x, then which of the following equations is correct?
+A. 180 + 30 - 10 x
+B. 256 ÷ 8 + 12 - 4 = = 35 224
+C. 144 × 12 − 6 + 3 =
+D. 196 − 49 + 14 × 2 134 = 200
+Answer: C
+
+Q.11: Read the following scenario carefully and choose the most appropriate transportation option that fulfills all the given criteria. Ravi wants to learn photography in his spare time but prefers flexibility and can't travel often due to a tight job schedule. Which learning method should he choose?
+A. Enroll in a full-time diploma course.
+B. Subscribe to a structured online course with flexible deadlines.
+C. Attend daily workshops at a local academy.
+D. Wait until he can take long leave and join a studio.
+Answer: B
+
+Q.12: Match the following Emotional Intelligence dimensions with their characteristics: | List I (EI Dimensions): | List II
+
+(Characteristics): | | :--- | :--- | | Self-awareness | Knowledge of true feelings at the moment | | Self-management | Handling one's emotions to facilitate tasks | | Self-motivation | Staying on course towards desired goals | | Empathy | Being able to sense what others feel and want | | Social skills | Ability to guide others' emotions and actions |
+A. a-iii, b-iv, c-v, d-ii, e-i
+B. a-i, b-ii, c-iii, d-v, e-iv
+C. a-v, b-iv, c-ii, d-i, e-iii
+D. a-ii, b-iii, c-iv, d-v, e-i
+Answer: C
+
+Q.13: In a group of 120 students, every 8th student knows French, and every 10th knows Spanish. How many students know both the languages?
+A. 2
+B. 3
+C. 4
+D. 5
+Answer: B
+
+Q.14: Pick the correct inference:
+A. Studies show people who walk daily are less likely to develop heart conditions.
+B. Walking daily guarantees a healthy heart
+C. Heart health depends solely on walking
+D. People who don't walk are always unhealthy
+Answer: D
+
+Q.15: Regular walking may reduce the risk of heart issues
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-5-october-2026-shift-3_q15_opt_A.png)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-5-october-2026-shift-3_q15_opt_B.png)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-5-october-2026-shift-3_q15_opt_C.png)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-5-october-2026-shift-3_q15_opt_D.png)
+Answer: C
+
+Q.16: ![Figure](/images/pyq/2026/ssc-cgl-2026-5-october-2026-shift-3_p3_x317.jpeg)
+A. 22
+B. 6
+C. 18
+D. 12
+Answer: A
+
+Q.17: ![Figure](/images/pyq/2026/ssc-cgl-2026-5-october-2026-shift-3_p3_x318.jpeg)
+A. A
+B. B
+C. C
+D. D
+Answer: A
+
+Q.18: ![Figure](/images/pyq/2026/ssc-cgl-2026-5-october-2026-shift-3_p4_x567.jpeg)
+A. A
+B. B
+C. C
+D. D
+Answer: A
+
+Q.19: ![Figure](/images/pyq/2026/ssc-cgl-2026-5-october-2026-shift-3_p4_x568.jpeg)
+A. A
+B. B
+C. C
+D. D
+Answer: A
+
+Q.20: ![Figure](/images/pyq/2026/ssc-cgl-2026-5-october-2026-shift-3_p4_x569.jpeg)
+A. A
+B. B
+C. C
+D. D
+Answer: A
+
+Q.21: In the following question, complete the missing portion of the question figure by selecting from the given answer figures (a),
+
+(b), (c) and (d).
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-5-october-2026-shift-3_p4_x570.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-5-october-2026-shift-3_p4_x571.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-5-october-2026-shift-3_p4_x572.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-5-october-2026-shift-3_p4_x573.jpeg)
+Answer: A
+
+Q.22: Select the Venn diagram that best illustrates the relationship between the following classes. Bat, Human, Mammals
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-5-october-2026-shift-3_p4_x575.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-5-october-2026-shift-3_p4_x576.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-5-october-2026-shift-3_p4_x577.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-5-october-2026-shift-3_p4_x574.jpeg)
+Answer: C
+
+Q.23: In these type of questions, a set of necessary conditions and qualifications required to be fulfilled by the candidate for a certain vacancy in job/promotion/admission in a college etc conditions along with the biodata of certain candidates who have applied for the same is given. You are required to evaluate and assess a candidate's eligibility and thereby decide upon the appropriate course of action to taken from among the given alternatives. A hospital is hiring candidates for the role of Clinical Operations Coordinator. The selection will be made based on the following criteria:
+
+(i) Age must be between 27 and 40 years as on 01/06/2024.
+
+(ii) Must possess a Master's degree in Hospital Administration or MBA in Healthcare Management.
+
+(iii) Must have at least 5 years of hospital administration experience.
+
+(iv) Must be trained in ERP hospital software.
+
+(v) Must be certified in Advanced First Aid or Emergency Response Management. Exceptions:
+
+(1) If the candidate has 3-4 years of hospital experience but has worked in a JCIaccredited hospital, a probationary appointment may be offered.
+
+(2) If the candidate holds a Postgraduate Diploma (instead of a Master's) but has 6+ year's experience and all other criteria, the case can be referred to the HR Board. 'Joseph D'Mello, born September 22, 1982, holds a Master's in Healthcare, 5 year's experience in a private clinic, not trained in ERP, but holds Emergency certification.'
+A. Selected
+B. Not Selected
+C. Refer to HR Board
+D. Probation appointment
+Answer: B
+
+Q.24: ![Figure](/images/pyq/2026/ssc-cgl-2026-5-october-2026-shift-3_p5_x793.jpeg)
+A. Only 2 can be
+B. Only 3 can be formed formed
+C. None can be
+D. 1 and 4 can be formed formed
+Answer: C
+
+Q.25: Fill in the blanks (_) using one of the following four options such that the series follows a specific pattern in the given order. b a _ a b _ b a _ a b a b a b _
+A. abab
+B. baba
+C. aabb
+D. bbaa
+Answer: B
+
+Q.26: Who was the Director General of Air operations during Operation Sindoor?
+A. AN Pramod
+B. A.K Bharti
+C. S.S. Sharda
+D. Bipin rawat
+Answer: A
+
+Q.27: If a region has a Net Sown Area (NSA) of 80,000 hectares and a Gross Cropped Area
+
+(GCA) of 120,000 hectares, what is the cropping intensity?
+A. 125%
+B. 150%
+C. 160%
+D. 180%
+Answer: B
+
+Q.28: Consider the below
+
+statements:
+
+1. Promotion of international peace is a part of DPSP.
+
+2. The DPSPs are enforceable by courts.
+
+3. Protection of monuments is a fundamental right. Which is/are true?
+A. Only 1
+B. 1 and 2 only 4 AWARENESS
+C. 2 and 3 only
+D. 1, 2 and 3 all
+Answer: A
+
+Q.29: Which Indian city hosted the 2010 Commonwealth Games?
+A. Mumbai
+B. New Delhi
+C. Hyderabad
+D. Chennai
+Answer: B
+
+Q.30: Find incorrect pairs of Indian Famous persons with their field :
+
+1. Kailash Satyarthi: Film Director
+
+2. Lala Lajpat Rai: Freedom Fighter
+
+3. Murlikant Petkar: Book Writer
+
+4. Lata Mangeshkar: Playback Singer
+A. 1 and 3
+B. 1 only
+C. 3 only
+D. 2 only
+Answer: C
+
+Q.31: Match the following Schedules with their subject matter: Column A Column B (Subject Matter)
+
+(Schedule) A. Seventh 1. Languages recognized by Schedule the Constitution B. Eighth 2. Distribution of powers Schedule between Union and States C. Eleventh 3. Municipalities: Functional Schedule items D. Twelfth 4. Panchayats: Functional Schedule items
+A. A-1, B-2, C-3, D-4
+B. A-2, B-1, C-4, D-3
+C. A-4, B-3, C-1, D-2
+D. A-3, B-4, C-2, D-1
+Answer: B
+
+Q.32: Maand, a traditional raga-turned-folk form associated with royal courts, belongs to which Indian state?
+A. Rajasthan
+B. Uttar Pradesh
+C. Gujarat
+D. Madhya Pradesh
+Answer: C
+
+Q.33: Which of the following statements about the tribal dance form 'Dhimsa' is/are correct?
+
+1. Dhimsa originated in Koraput district of Odisha.
+
+2. It reflects daily tribal activities such as farming and collecting leaves.
+
+3. It is now primarily performed in urban centres of Tamil Nadu.
+A. 1 and 2 only
+B. 1, 2 and 3
+C. 2 and 3 only
+D. 1 and 3 only
+Answer: C
+
+Q.34: Which of the following pairs is correctly matched regarding the instrument and its region of origin?
+
+1. Ravanahatha - Rajasthan
+
+2. Pung - Manipur
+
+3. Taus - Punjab
+
+4. Chenda - Assam
+A. 1 and 3 only
+B. 2 and 4 only
+C. 1, 2 and 3 only
+D. 1, 2, 3 and 4
+Answer: A
+
+Q.35: The Global Innovation Index (GII) is published by:
+A. United Nations Development Programme (UNDP)
+B. World Trade Organization (WTO)
+C. World Intellectual Property Organization (WIPO)
+D. International Monetary Fund (IMF)
+Answer: A
+
+Q.36: Which of the following is a major advantage of India's PSLV (Polar Satellite Launch Vehicle)?
+A. Designed exclusively for crewed space missions
+B. Specialized in launching satellites only into geostationary orbit
+C. Able to deploy several satellites into distinct orbits within one launch.
+D. Requires nuclear propulsion for upper stage separation
+Answer: C
+
+Q.37: Match the following rivers with their originating states: List I (River) List II (State) A. Mahanadi 1. Karnataka B. Kaveri 2. Madhya Pradesh C. Krishna 3. Chhattisgarh D. Narmada 4. Maharashtra
+A. A-3, B-1, C-4, D-2
+B. A-2, B-3, C-1, D-4
+C. A-3, B-1, C-2, D-4
+D. A-4, B-2, C-3, D-1
+Answer: C
+
+Q.38: Consider the following statements regarding population growth and demographic trends in India as per Census data:
+
+1. ) Kerala recorded the lowest decadal population growth rate (9.4%) during 19912001 among all Indian states.
+
+2. ) During 2001-2011, all six most populous Indian states showed a decadal growth rate higher than the previous decade.
+
+3. ) The adolescent population (aged 10-19 years) in India constituted approximately
+
+20.9% in 2011, with a higher share of males than females.
+
+4. ) Puducherry registered a lower decadal population growth in 2001-2011 compared to 1991-2001. Which of the above statements is/are correct?
+A. 1 and 3 only
+B. 2 and 4 only
+C. 1, 3 and 4 only
+D. 1 and 2 only
+Answer: C
+
+Q.39: Which of the following styles is seen in Bombay's Chhatrapati Shivaji Maharaj Terminus (CSMT) Railway Station?
+A. Indo-Islamic
+B. Mughal
+C. Gothic Revival
+D. Buddhist
+Answer: C
+
+Q.40: National Team Chess Championship 2024-25 held in
+A. Pune
+B. New Delhi
+C. Chandigarh
+D. Ahmedabad
+Answer: D
+
+Q.41: Read the two short statements and choose the correct option.
+
+1. Victoria Memorial was conceived by Lord Curzon as a tribute to Queen Victoria.
+
+2. The monument is built of white Makrana marble in the Indo-Saracenic style.
+A. 1 only
+B. 2 only
+C. Both 1 and 2
+D. Neither 1 nor 2
+Answer: C
+
+Q.42: Which of the following is considered the largest river system among the Deccan rivers in India?
+A. Cauvery
+B. Krishna
+C. Godavari
+D. Mahanadi
+Answer: C
+
+Q.43: According to BNSS, what does the term "bail" mean?
+A. Arrest under judicial supervision
+B. Police custody under specific terms
+C. Release from custody on conditions imposed by Court or officer
+D. Removal of charges before trial
+Answer: C
+
+Q.44: Which of the following does not belong to the solar system?
+A. Planet
+B. Galaxy
+C. Meteor
+D. Comet
+Answer: B
+
+Q.45: Which of the following is a scalar quantity?
+A. Displacement
+B. Velocity
+C. Acceleration
+D. Speed
+Answer: D
+
+Q.46: What does BIMSTEC stand for?
+A. Bay of Islands Multi-Sectoral Technical and Economic Cooperation
+B. Bay of Bengal Initiative for Multi-Sectoral Technical and Economic Cooperation
+C. Bangladesh, India, Myanmar, Sri Lanka, Thailand, Egypt, and China
+D. Bay of Bengal International Maritime Security and Trade Council
+Answer: C
+
+Q.47: Which of the following monuments was NOT built by Emperor Shah Jahan?
+A. Taj Mahal
+B. Red Fort, Delhi
+C. Jama Masjid, Delhi
+D. Humayun's Tomb
+Answer: D
+
+Q.48: The procedure for impeachment of the President of India is laid down under Article
+A. 58
+B. 60
+C. 61
+D. 62
+Answer: C
+
+Q.49: Under PMMY, a business planning to start a tailoring shop should approach which financial body for credit?
+A. RBI
+B. MUDRA Bank
+C. NABARD
+D. SEBI
+Answer: B
+
+Q.50: Who has been appointed as the Chairman of the 16th Finance Commission of India (2023-
+
+2028)?
+A. N. K. Singh
+B. Suman Bery
+C. Arvind Panagariya
+D. Raghuram Rajan
+Answer: C
+
+Q.51: A number x= 0.363636. . . + 12 5 is expressed as a simplified fraction p . What is q the value of p + q?
+A. 230
+B. 235
+C. 240
+D. 220
+Answer: A
+
+Q.52: Two real numbers together produce a total of
+
+9. The total of their squared values is 45. Determine the multiplication outcome of the two numbers.
+A. 18
+B. 16
+C. 21
+D. 14
+Answer: A
+
+Q.53: A certain amount becomes ₹27,000 in 3 years when compounded annually. It is known that the cube root of the amount and the square root of the principal are both natural numbers. What is the rate of interest per annum?
+A. 10%
+B. 15%
+C. 20%
+D. 25%
+Answer: A
+
+Q.54: Using the information in the pie chart, answer the following question. TECHNOLOGY IN EDUCATION SECTOR PERCENTAGE If a total of ₹12,00,000 was invested across all sectors shown in the pie chart, how much more was spent on EdTech than on AR/VR Learning?
+A. ₹1,20,000
+B. ₹1,50,000
+C. ₹1,80,000
+D. ₹2,00,000
+Answer: C
+
+Q.55: Consider an arbitrary triangle ABC. Which of the following statements about its centers is always true, regardless of the type of triangle (e.g., equilateral, isosceles, right-angled, scalene)?
+A. The incenter, circumcenter, centroid, and orthocenter all coincide.
+B. The orthocenter is always located inside the triangle.
+C. The incenter is equidistant from all sides of the triangle.
+D. The circumcenter is equidistant from all vertices of the triangle and is always inside the triangle.
+Answer: C
+
+Q.56: 40 men can complete a job in 30 days. 60 men start the work and continue for x days. Then 20 men leave, and the remaining men complete the work in 9 days. Find the value of
+
+x.
+A. 12
+B. 13
+C. 14
+D. 15
+Answer: C
+
+Q.57: The radius of a cylinder is increased by 20%, height decreased by 10%. Find approximate percentage change in volume.
+A. 29.6% decrease
+B. 29.6% increase
+C. 18% decrease
+D. 12% decrease
+Answer: B
+
+Q.58: A regular square pyramid having a base side length of 18 m. If its total surface area is 864 m², and its slant height is 15 m, find the height of the pyramid.
+A. 8 m
+B. 10 m
+C. 12 m
+D. 14 m
+Answer: C
+
+Q.59: A regular square pyramid has a volume of 384 cm³ and its height-to-base-edge ratio is 2:
+
+3. Find the radius of the sphere inscribed within it.
+A. 3 cm
+B. 4 cm
+C. 5 cm
+D. 10 cm
+Answer: A
+
+Q.60: A right prism has a square base of side s cm and height h cm. If the volume is 256 cm³ and height is double the side length, find s.
+A. 4 3√2 cm
+B. 12 3√2 cm
+C. 2 3√2 cm
+D. 5√5 cm
+Answer: A
+
+Q.61: The length of the shadow of a tower is 9 m when the sun's altitude is 30°. What is the height of the tower?
+A. 4 1 2 m
+B. 9√3 m
+C. (9√3) 2 m
+D. 3√3 m
+Answer: C
+
+Q.62: Simplify (3x - 4y)² + (3x + 4y)².
+A. 18x² + 16y²
+B. 18x² - 32y²
+C. 36x² + 32y²
+D. 18x² + 32y²
+Answer: D
+
+Q.63: Simplify the expression (a + b)³ - (a - b)³.
+A. 6a2b + 2a³
+B. 6ab2 + 2a³
+C. 2b³ + 6a2b
+D. 6a2b + 2b³
+Answer: D
+
+Q.64: For the equation 5x - 2y = 10, what is the slope of the line?
+A. 5/3
+B. 5/2
+C. 3/2
+D. 1/2
+Answer: B
+
+Q.65: The compound interest on a sum for 2 years at 12% per annum compounded annually is ₹2,544. What is the principal amount?
+A. ₹10,000
+B. ₹12,000
+C. ₹13,000
+D. ₹11,500
+Answer: A
+
+Q.66: A Mumbai grocer has rice at ₹30/kg and ₹50/kg. In what ratio should he mix them so that he can sell the mixture at ₹36/kg with no profit or loss?
+A. 7:3
+B. 4:1
+C. 6:1
+D. 9:4
+Answer: A
+
+Q.67: When comparing unemployment rates across five states using a bar diagram, what is important to maintain for accuracy?
+A. Different scales for clarity
+B. Varying bar widths
+C. Same scale on the y-axis and equal bar width
+D. Use different bar colours only
+Answer: C
+
+Q.68: In a histogram, what does the height of each bar represent?
+A. Class width
+B. Frequency density
+C. Class midpoint
+D. None of these
+Answer: B
+
+Q.69: If cosθ = 0, then sin²θ = ?
+A. 0
+B. 1
+C. 2
+D. 3
+Answer: B
+
+Q.70: If a train takes 20 seconds to cross a platform of 180 m and the train's length is 120 m, what is its speed?
+A. 45 km/h
+B. 50 km/h
+C. 60 km/h
+D. 54 km/h
+Answer: D
+
+Q.71: A can complete a work in 10 days and B in 15 days. How long will it take them to finish the work if they work together?
+A. 6 days
+B. 7 days
+C. 8 days
+D. 9 days
+Answer: A
+
+Q.72: In a circular pavilion, a support beam acts as a chord connecting two columns. The chord is 20 m, and the height from the chord to the top of the arc is 5 m. Find the radius of the circular roof.
+A. 13 m
+B. 14 m
+C. 12.5 m
+D. 16 m
+Answer: C
+
+Q.73: A projectile launch angle satisfies sine twice the angle is 0.8 and cosine twice the angle is 0.6. Calculate sum of fourth powers of sine and cosine of the launch angle to predict range stability.
+A. 1
+B. 0.6
+C. 0.68
+D. 0.72
+Answer: C
+
+Q.74: In an optical system, two light beams hit a lens at angles x and y. The system's calibration requires finding the product of the sums of sine and cosine of these angles to optimize the focus. The engineers know that the difference of squares of their sine values is 1/4, and the difference of their sine and cosine products is 0. Given: sin² x−sin² y= 1/4 sin xcos x−sin ycos y= 0 Find the value of (sin x+ cos x) × (sin y+ cos y) .
+A. 1.5
+B. 1.775
+C. 1.968
+D. 2.25
+Answer: A
+
+Q.75: ![Figure](/images/pyq/2026/ssc-cgl-2026-5-october-2026-shift-3_p10_x2203.jpeg)
+A. 40-45 kg
+B. 50-55 kg
+C. 55-60 kg
+D. 60-65 kg
+Answer: A
+
+Q.76: Select the most appropriate antonym of the given word. Enigmatic
+A. Obscure
+B. Lucid
+C. Arcane
+D. Ambiguous
+Answer: B
+
+Q.77: Choose the sentence containing the homonym of the underlined word: The match was very exciting.
+A. He used a match to light the candle.
+B. The match was watched by millions.
+C. That match ended in a draw.
+D. Football matches are thrilling.
+Answer: A
+
+Q.78: Convert the below given direct speech into indirect speech appropriately. She said, "I need some rest now".
+A. She said that she needs some rest now.
+B. She said that she is needing some rest now.
+C. She said that she needed some rest then.
+D. She said that she needs some rest then.
+Answer: C
+
+Q.79: Convert the below given indirect speech into direct speech appropriately: She said that she had completed the task.
+A. She said, "I completes the task".
+B. She said, "I completed the task".
+C. She said, "I would have completed the task".
+D. She said, "I will complete the task".
+Answer: B
+
+Q.80: Four parts of a sentence are given below in a jumbled order. When arranged correctly, they form a complete and meaningful sentence. While multiple combinations may appear grammatically correct, choose the one that best conveys the intended meaning as per the given options. A) affordable medicines B) through Jan Aushadhi Kendras C) are being made available D) to the public
+A. D-B-C-A
+B. B-A-D-C
+C. A-D-C-B
+D. A-C-D-B
+Answer: D
+
+Q.81: Spot the spelling error:
+A. Irrefutable
+B. Hieroglyphics
+C. Anomally
+D. Euphemism
+Answer: C
+
+Q.82: Fill in the blank with the correct degree of comparison: India is one of the ________ growing economies in the world, attracting significant foreign investments.
+A. more fast
+B. most fast
+C. faster
+D. fastest
+Answer: D
+
+Q.83: Identify the option that best corrects the highlighted part of the sentence for proper grammar and usage. He prevented me to go outside.
+A. from going outside
+B. with going outside
+C. for going outside
+D. by going outside
+Answer: A
+
+Q.84: Identify the option that best corrects the highlighted part of the sentence for proper grammar and usage. He is angry on his friend for the mistake.
+A. angry for
+B. angry with
+C. angry in
+D. angry by
+Answer: B
+
+Q.85: Spot the error in the following sentence and identify the INCORRECT part. He has been afraid from spiders since childhood.
+A. afraid from
+B. spiders
+C. since childhood
+D. No error
+Answer: A
+
+Q.86: Spot the error in the following sentence and identify the INCORRECT part. She always avoids to speak during the meetings because she is shy.
+A. always avoids
+B. to speak
+C. during the
+D. No error meetings
+Answer: B
+
+Q.87: There are four jumbled sentences given below. Your task is to rearrange them into a logically coherent and meaningful paragraph and choose the correct sequence from the given options.
+
+1. Students are encouraged to work on reallife problem-solving.
+
+2. The Atal Innovation Mission promotes start-up culture in schools and colleges.
+
+3. It provides funding and mentoring for innovation labs.
+
+4. This has led to student-led projects in rural technology and healthcare.
+A. 2-1-3-4
+B. 1-3-2-4
+C. 2-3-1-4
+D. 1-3-4-2
+Answer: C
+
+Q.88: What is the antonym of the word "sophisticated"?
+A. Controlled
+B. Cultured
+C. Refined
+D. Simple
+Answer: D
+
+Q.89: Choose the correct meaning of idiom given below : “Bury the hatchet”
+A. Hide evidence of wrongdoing
+B. Bury something literally
+C. End a conflict and make peace
+D. Start a new quarrel
+Answer: C
+
+Q.90: Choose the correct meaning of idiom given below: “Go the whole hog”
+A. Refuse to try
+B. Do something completely
+C. Be lazy
+D. Plan early
+Answer: B
+
+Q.91: Choose the appropriate one-word substitution for: A person who composes music.
+A. Vocalist
+B. Singer
+C. Lyricist
+D. Composer
+Answer: D
+
+Q.92: Rearrange the following sentences in correct order to make a meaningful passage.
+
+1. Final version was published online.
+
+2. Experts were consulted for feedback.
+
+3. A preliminary draft was circulated.
+
+4. Comments were incorporated and edits were made.
+A. 1-2-3-4
+B. 4-1-2-3
+C. 4-2-1-3
+D. 3-2-4-1
+Answer: D
+
+Q.93: Rearrange the following sentences in correct order to make a meaningful sentence P. as part of a nationwide public health intervention Q. through mobile diagnostic units R. regular screening camps S. were conducted in remote and underserved areas
+A. RQSP
+B. RSPQ
+C. QPRS
+D. PRSQ
+Answer: A
+
+Q.94: Rearrange the following sentences in correct order to make a meaningful sentence P. by integrating machine learning diagnostics Q. to minimize false negatives R. the AI-powered screening tool S. has significantly improved early disease detection
+A. RSPQ
+B. RQPS
+C. PQRS
+D. RPSQ
+Answer: A
+
+Q.95: Rearrange the following sentences in correct order to make a meaningful sentence P. reflecting the precarious balance between economic development and environmental conservation Q. the recent Supreme Court judgment on mining activities in forest regions R. has set a legal precedent S. for all future industrial clearance protocols
+A. QPRS
+B. QRSP
+C. RQPS
+D. QSRP
+Answer: B
+
+Q.96: **Comprehension (Q. 96 - 100):** In the passage below, certain words have been removed. Read the passage thoroughly and choose the most suitable option to complete each blank appropriately. The domain of outer space, once a sublime expanse emblematic of universal aspiration, has morphed into a (1)___ terrain, rife with techno-nationalistic rivalries and juridical lacunae. As states and non-state actors alike pursue orbital hegemony, the narrative has shifted from exploration to securitization. The proliferation of constellations, kinetic kill vehicles, and cyber-vulnerable architectures has (2)___ erstwhile doctrinal separations between civilian and military enterprises. Multilateral compacts, such as the Outer Space Treaty, now appear (3)___ in the face of unilateral adventurism and semantic exploitation of treaty ambiguities. The ethos of 11 cooperative multilateralism is steadily eclipsed by strategic opacity and regime fragmentation. Resource extraction from asteroids and prospective Mars colonization introduce a lexicon of planetary commodification, propelling a new phase of (4)___ governance, where legitimacy is brokered not by consensus but by technological primacy. Increasingly, legal constructs are subordinated to hardware capability, and soft power is reconstituted through launch cadence, orbital coverage, and downstream data monopolies. In this milieu, techno- diplomacy must evolve beyond hortatory platitudes to a (5)___ apparatus for strategic calibration, deterrence, and geopolitical signaling in an emergent multipolar cosmodynamic order.
+
+---
+
+What should come in the place of blank number 1?
+A. sanctified
+B. labyrinthine
+C. terrestrial
+D. homogenized
+Answer: C
+
+Q.97: **Comprehension (Q. 96 - 100):** In the passage below, certain words have been removed. Read the passage thoroughly and choose the most suitable option to complete each blank appropriately. The domain of outer space, once a sublime expanse emblematic of universal aspiration, has morphed into a (1)___ terrain, rife with techno-nationalistic rivalries and juridical lacunae. As states and non-state actors alike pursue orbital hegemony, the narrative has shifted from exploration to securitization. The proliferation of constellations, kinetic kill vehicles, and cyber-vulnerable architectures has (2)___ erstwhile doctrinal separations between civilian and military enterprises. Multilateral compacts, such as the Outer Space Treaty, now appear (3)___ in the face of unilateral adventurism and semantic exploitation of treaty ambiguities. The ethos of 11 cooperative multilateralism is steadily eclipsed by strategic opacity and regime fragmentation. Resource extraction from asteroids and prospective Mars colonization introduce a lexicon of planetary commodification, propelling a new phase of (4)___ governance, where legitimacy is brokered not by consensus but by technological primacy. Increasingly, legal constructs are subordinated to hardware capability, and soft power is reconstituted through launch cadence, orbital coverage, and downstream data monopolies. In this milieu, techno- diplomacy must evolve beyond hortatory platitudes to a (5)___ apparatus for strategic calibration, deterrence, and geopolitical signaling in an emergent multipolar cosmodynamic order.
+
+---
+
+What should come in the place of blank number 2?
+A. elided
+B. accentuated
+C. punctuated
+D. amalgamated
+Answer: B
+
+Q.98: **Comprehension (Q. 96 - 100):** In the passage below, certain words have been removed. Read the passage thoroughly and choose the most suitable option to complete each blank appropriately. The domain of outer space, once a sublime expanse emblematic of universal aspiration, has morphed into a (1)___ terrain, rife with techno-nationalistic rivalries and juridical lacunae. As states and non-state actors alike pursue orbital hegemony, the narrative has shifted from exploration to securitization. The proliferation of constellations, kinetic kill vehicles, and cyber-vulnerable architectures has (2)___ erstwhile doctrinal separations between civilian and military enterprises. Multilateral compacts, such as the Outer Space Treaty, now appear (3)___ in the face of unilateral adventurism and semantic exploitation of treaty ambiguities. The ethos of 11 cooperative multilateralism is steadily eclipsed by strategic opacity and regime fragmentation. Resource extraction from asteroids and prospective Mars colonization introduce a lexicon of planetary commodification, propelling a new phase of (4)___ governance, where legitimacy is brokered not by consensus but by technological primacy. Increasingly, legal constructs are subordinated to hardware capability, and soft power is reconstituted through launch cadence, orbital coverage, and downstream data monopolies. In this milieu, techno- diplomacy must evolve beyond hortatory platitudes to a (5)___ apparatus for strategic calibration, deterrence, and geopolitical signaling in an emergent multipolar cosmodynamic order.
+
+---
+
+What should come in the place of blank number 3?
+A. inviolate
+B. vestigial
+C. implacable
+D. fungible
+Answer: B
+
+Q.99: **Comprehension (Q. 96 - 100):** In the passage below, certain words have been removed. Read the passage thoroughly and choose the most suitable option to complete each blank appropriately. The domain of outer space, once a sublime expanse emblematic of universal aspiration, has morphed into a (1)___ terrain, rife with techno-nationalistic rivalries and juridical lacunae. As states and non-state actors alike pursue orbital hegemony, the narrative has shifted from exploration to securitization. The proliferation of constellations, kinetic kill vehicles, and cyber-vulnerable architectures has (2)___ erstwhile doctrinal separations between civilian and military enterprises. Multilateral compacts, such as the Outer Space Treaty, now appear (3)___ in the face of unilateral adventurism and semantic exploitation of treaty ambiguities. The ethos of 11 cooperative multilateralism is steadily eclipsed by strategic opacity and regime fragmentation. Resource extraction from asteroids and prospective Mars colonization introduce a lexicon of planetary commodification, propelling a new phase of (4)___ governance, where legitimacy is brokered not by consensus but by technological primacy. Increasingly, legal constructs are subordinated to hardware capability, and soft power is reconstituted through launch cadence, orbital coverage, and downstream data monopolies. In this milieu, techno- diplomacy must evolve beyond hortatory platitudes to a (5)___ apparatus for strategic calibration, deterrence, and geopolitical signaling in an emergent multipolar cosmodynamic order.
+
+---
+
+What should come in the place of blank number 4?
+A. extractivist
+B. fiduciary
+C. anachronistic
+D. restitutive
+Answer: D
+
+Q.100: **Comprehension (Q. 96 - 100):** In the passage below, certain words have been removed. Read the passage thoroughly and choose the most suitable option to complete each blank appropriately. The domain of outer space, once a sublime expanse emblematic of universal aspiration, has morphed into a (1)___ terrain, rife with techno-nationalistic rivalries and juridical lacunae. As states and non-state actors alike pursue orbital hegemony, the narrative has shifted from exploration to securitization. The proliferation of constellations, kinetic kill vehicles, and cyber-vulnerable architectures has (2)___ erstwhile doctrinal separations between civilian and military enterprises. Multilateral compacts, such as the Outer Space Treaty, now appear (3)___ in the face of unilateral adventurism and semantic exploitation of treaty ambiguities. The ethos of 11 cooperative multilateralism is steadily eclipsed by strategic opacity and regime fragmentation. Resource extraction from asteroids and prospective Mars colonization introduce a lexicon of planetary commodification, propelling a new phase of (4)___ governance, where legitimacy is brokered not by consensus but by technological primacy. Increasingly, legal constructs are subordinated to hardware capability, and soft power is reconstituted through launch cadence, orbital coverage, and downstream data monopolies. In this milieu, techno- diplomacy must evolve beyond hortatory platitudes to a (5)___ apparatus for strategic calibration, deterrence, and geopolitical signaling in an emergent multipolar cosmodynamic order.
+
+---
+
+What should come in the place of blank number 5?
+A. palliative
+B. perfunctory
+C. prophylactic
+D. prosaic
+Answer: C
+

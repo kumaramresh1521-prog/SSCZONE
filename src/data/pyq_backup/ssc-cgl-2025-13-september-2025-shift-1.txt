@@ -1,0 +1,700 @@
+Q.1: In the following question, select the related word from the given alternatives Jurisprudence : Law :: Epistemology : ? निम्नलिखित प्रश्न में दिए गए विकल्पों में से संबंधित शब्द का चयन कीजिए विधिशास्त्र : कानून :: ज्ञानमीमांसा : ?
+A. Reality / वास्तविकता
+B. Logic / तर्क
+C. Knowledge / ज्ञान
+D. Ethics / नीति
+Answer: C
+
+Q.2: How many letters in "SIGNATURE" are between the first vowel and the last consonant? "SIGNATURE" में पहले स्वर और अंतिम व्यंजन के बीच कितने अक्षर हैं?
+A. 3
+B. 4
+C. 5
+D. 6
+Answer: C
+
+Q.3: Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. MNK, NOJ, OPI, PQH, ? दिए गए विकल्पों में से उस अक्षर-समूह का चयन कीजिए जो निम्नलिखित शृंखला में प्रश्न-चिह्न (?) के स्थान पर आ सकता है। MNK, NOJ, OPI, PQH, ?
+A. GFD
+B. HJG
+C. QRG
+D. IJH
+Answer: C
+
+Q.4: Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. QAZ, SDF, UGL, ? दिए गए विकल्पों में से उस अक्षर-समूह का चयन कीजिए जो निम्नलिखित शृंखला में प्रश्न-चिह्न (?) को प्रतिस्थापित कर सकता है। QAZ, SDF, UGL, ?
+A. VIJ
+B. TFG
+C. TGH
+D. WJR
+Answer: D
+
+Q.5: Which of the following alternatives will replace the question mark? Chaos, Conflict, Negotiation, Resolution, ? निम्नलिखित में से कौन-सा विकल्प प्रश्न-चिह्न के स्थान पर आएगा? अराजकता, संघर्ष, समझौता, समाधान, ?
+A. Justice / न्याय
+B. Harmony / सद्भाव
+C. Stability / स्थिरता
+D. Law / कानून
+Answer: B
+
+Q.6: Which word does not belong to the category? कौन-सा शब्द इस श्रेणी से संबंधित नहीं है?
+A. Hibiscus / गुड़हल
+B. Tulip / ट्यूलिप
+C. Apple / सेब
+D. Daisy / गुलबहार
+Answer: C
+
+Q.7: What comes next: 0, 6, 24, 60, 120, ? प्रश्न-चिह्न के स्थान पर क्या आएगा: 0, 6, 24, 60, 120, ?
+A. 196
+B. 156
+C. 210
+D. 200
+Answer: C
+
+Q.8: What should come at the place of question mark? 3, 4, 13, 14, 45, 46, ? प्रश्न-चिह्न के स्थान पर क्या आएगा? 3, 4, 13, 14, 45, 46, ?
+A. 143
+B. 136
+C. 140
+D. 138
+Answer: A
+
+Q.9: Read the following statement carefully and identify the conclusion that follows. Statement: No student of Class X failed the science exam this year. Conclusions: I. The science exam was very easy. II. All students of Class X passed science. निम्नलिखित कथन को ध्यानपूर्वक पढ़िए और निष्कर्ष निकालिए। कथन: इस वर्ष दसवीं कक्षा का कोई भी छात्र विज्ञान की परीक्षा में अनुत्तीर्ण नहीं हुआ है। निष्कर्ष: I. विज्ञान की परीक्षा बहुत आसान थी। II. दसवीं कक्षा के सभी छात्र विज्ञान में उत्तीर्ण हुए हैं।
+A. Only Conclusion I follows / केवल निष्कर्ष I अनुसरण करता है
+B. Only Conclusion II follows / केवल निष्कर्ष II अनुसरण करता है
+C. Both I and II follow / I और II दोनों अनुसरण करते हैं
+D. Neither I nor II follows / न तो I और न ही II अनुसरण करता है
+Answer: B
+
+Q.10: Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option. Statement: Although recent advancements in quantum computing have significantly improved processing speeds, the stability of quantum states remains a critical barrier to developing large-scale quantum computers for practical applications. Assumptions: I. Quantum computing holds the potential for faster data processing than classical computing. II. Quantum states are inherently unstable, making large-scale quantum computing unfeasible. III. Recent advancements in quantum computing have resolved the issue of quantum state stability. निर्देश: कथन के वैध होने के लिए आवश्यक मान्यताओं की पहचान कीजिए, फिर सही विकल्प का चयन कीजिए। कथन: हालाँकि क्वांटम कंप्यूटिंग में हाल ही में हुई प्रगति ने प्रसंस्करण गति में उल्लेखनीय सुधार किया है, लेकिन क्वांटम अवस्थाओं की स्थिरता व्यावहारिक अनुप्रयोगों के लिए बड़े पैमाने पर क्वांटम कंप्यूटर विकसित करने में एक महत्वपूर्ण बाधा बनी हुई है। मान्यताएँ: I. क्वांटम कंप्यूटिंग में शास्त्रीय कंप्यूटिंग की तुलना में तेज डेटा प्रोसेसिंग की क्षमता है। II. क्वांटम अवस्थाएँ स्वाभाविक रूप से अस्थिर होती हैं, जिससे बड़े पैमाने पर क्वांटम कंप्यूटिंग अव्यवहारिक हो जाती है। III. क्वांटम कंप्यूटिंग में हाल ही में हुई प्रगति ने क्वांटम अवस्था स्थिरता के मुद्दे को हल कर दिया है।
+A. Only I and II are implicit / केवल । और ॥ अंतर्निहित हैं
+B. Only II and III are implicit / केवल ॥ और III अंतर्निहित हैं।
+C. Only I is implicit / केवल । अंतर्निहित है।
+D. All I, II, and III are implicit / सभी I, II और III अंतर्निहित हैं
+Answer: C
+
+Q.11: Each of the letters in the word GARDEN is arranged in alphabetical order. How many letters are there in the English alphabetical series between the letter that is fifth from the left and the one that is third from the right in the new letter-cluster formed? GARDEN शब्द के प्रत्येक अक्षर को वर्णानुक्रम में व्यवस्थित किया गया है। नए अक्षर-समूह में बायें से पाँचवें अक्षर और दायें से तीसरे अक्षर के बीच अंग्रेजी वर्णमाला शृंखला में कितने अक्षर हैं?
+A. Two / दो
+B. Four / चार
+C. Six / छह
+D. One / एक
+Answer: C
+
+Q.12: How many meaningful four-letter English words can be formed using the first, second, fourth, and fifth letters of the word "ELEVATE" (when counted from left to right), using each letter only once in each word? "ELEVATE" शब्द के पहले, दूसरे, चौथे और पाँचवें अक्षरों का उपयोग करके (बायें से दायें गिनने पर) कितने सार्थक चार- अक्षर वाले अंग्रेजी शब्द बनाए जा सकते हैं, जिनमें प्रत्येक शब्द में प्रत्येक अक्षर का केवल एक बार उपयोग किया गया हो?
+A. 1
+B. 2
+C. 3
+D. 4
+Answer: C
+
+Q.13: Which of the following is/are identical to the address given: Rajesh Verma 15B, Sapphire Towers, Jaipur, 302018 1. Rajesh Verma 15B, Sapphire Towers, Jaipur, 302018 2. Rajesh Verma 15B, Sapphire Towers, Jaipur, 302019 3. Rajesh Verma 15B, Sapphire Tower, Jaipur, 302018 4. Rajesh Verma 15B, Sapphire Towers, Jaipur, 302017 निम्नलिखित में से कौन-सा/से पते दिए गए पते के समान है/हैं: Rajesh Verma 15B, Sapphire Towers, Jaipur, 302018 1. Rajesh Verma 15B, Sapphire Towers, Jaipur, 302018 2. Rajesh Verma 15B, Sapphire Towers, Jaipur, 302019 3. Rajesh Verma 15B, Sapphire Tower, Jaipur, 302018 4. Rajesh Verma 15B, Sapphire Towers, Jaipur, 302017
+A. 2 Only / केवल 2
+B. 1 Only / केवल 1
+C. 4 Only / केवल 4
+D. 3 Only / केवल 3
+Answer: B
+
+Q.14: Find the option that best completes the analogy. EK :: MS :: FP : ? वह विकल्प ज्ञात कीजिए जो सादृश्य को सर्वोत्तम रूप से पूरा करता है। EK :: MS :: FP : ?
+A. ND
+B. NL
+C. NX
+D. NT
+Answer: C
+
+Q.15: In each of the following questions, the second word is formed by rearranging the letters of the first word according to a specific pattern. Apply the same pattern to the third word to determine the correct answer from the given alternatives. NUMBER : UNBMRE :: GHOSTS : ? निम्नलिखित प्रत्येक प्रश्न में, पहले शब्द के अक्षरों को एक विशिष्ट पैटर्न के अनुसार पुनर्व्यवस्थित करके दूसरा शब्द बनाया गया है। दिए गए विकल्पों में से सही उत्तर जानने के लिए तीसरे शब्द पर भी यही पैटर्न लागू कीजिए। NUMBER : UNBMRE :: GHOSTS : ?
+A. HGOSTS
+B. HOGSTS
+C. HGSOST
+D. HGSOTS
+Answer: C
+
+Q.16: Introducing a boy, a girl said, "He is the son of my mother's only son." Who is the boy to the girl? एक लड़के का परिचय देते हुए, एक लड़की ने कहा, "वह मेरी माता के एकमात्र पुत्र का पुत्र है।" लड़का, लड़की का कौन है?
+A. Brother / भाई
+B. Son / पुत्र
+C. Nephew / भतीजा
+D. Cousin / चचेरा भाई
+Answer: C
+
+Q.17: One number doesn't match this factorial series: 2, 6, 24, 120, 720, 1000 एक संख्या इस क्रमगुणित श्रेणी से सुमेलित नहीं है: 2, 6, 24, 120, 720, 1000
+A. 6
+B. 24
+C. 1000
+D. 120
+Answer: C
+
+Q.18: Which number set is different? : (11, 22, 44), (13, 26, 52), (15, 30, 60), (14, 28, 43) कौन-सी संख्या समूह से अलग है? : (11, 22, 44), (13, 26, 52), (15, 30, 60), (14, 28, 43)
+A. (11,22,44)
+B. (13,26,52)
+C. (15,30,60)
+D. (14,28,43)
+Answer: D
+
+Q.19: If WRITE is coded as YTKVG, how is READ coded? यदि WRITE को YTKVG के रूप में कूटबद्धकिया जाता है, तो READ को किस प्रकार कूटबद्ध किया जाएगा?
+A. TGCF
+B. ZTCF
+C. YTDF
+D. YTCF
+Answer: A
+
+Q.20: If 5 # 3 = 19 and 7 # 2 = 17, what is 9 # 1? यदि 5 # 3 = 19 और 7 # 2 = 17 है, तो 9 # 1 क्या है?
+A. 12
+B. 10
+C. 8
+D. 11
+Answer: D
+
+Q.21: A 60 L mixture has a milk-water ratio of 7:3. How much water to add to make the ratio 1:1? 60 लीटर के मिश्रण में दूध-पानी का अनुपात 7:3 है। अनुपात 1:1 करने के लिए कितना पानी मिलाना चाहिए?
+A. 18 L / 18 लीटर
+B. 20 L / 20 लीटर
+C. 22 L / 22 लीटर
+D. 24 L / 24 लीटर
+Answer: D
+
+Q.22: Pointing to a girl, Aryan said, "She is the daughter of the only child of my grandmother." How is the girl related to Aryan? एक लड़की की ओर इशारा करते हुए आर्यन ने कहा, "वह मेरी दादी की एकमात्र संतान की पुत्री है।" वह लड़की आर्यन से किस प्रकार संबंधित है?
+A. Niece / भतीजी
+B. Cousin / चचेरा
+C. Sister / बहन
+D. Aunt / चाची
+Answer: C
+
+Q.23: Ramesh says, "The boy playing football is the younger of the two sons of my father's wife." How is the boy related to Ramesh? रमेश कहता है, "फुटबॉल खेलने वाला लड़का मेरे पिता की पत्नी के दो पुत्रोंं में से छोटा है।" वह लड़का रमेश से किस प्रकार संबंधित है?
+A. Brother / भाई
+B. Stepbrother / सौतेला भाई
+C. Cousin / चचेरा
+D. Nephew / भतीजा
+Answer: A
+
+Q.24: If 11 / 19 = A and 2 / 9 = B, then what is A - B? यदि 11 / 19 = A और 2 / 9 = B है, तो A - B क्या है?
+A. 0.36
+B. 0.56
+C. 0.76
+D. 0.6
+Answer: A
+
+Q.25: If the sum of 35 and 46 is multiplied by 2, what is the result? यदि 35 और 46 के योग को 2 से गुणा किया जाए तो परिणाम क्या होगा?
+A. 158
+B. 160
+C. 162
+D. 164
+Answer: C
+
+Q.26: Consider the following statements about Gwalior Fort: 1. It is spread over a hilltop more than 2 km in length. 2. Its southern path features intricately carved rock-cut temples of Jain tirthankars. 3. The Caturbhuj Mandir within the fort is an example of a Vaiṣṇavite shrine. Which of the statements given above is/are correct? ग्वालियर किले के बारे में निम्नलिखित कथनों पर विचार करें: 1. यह 2 किलोमीटर से अधिक लंबाई में एक पहाड़ी की चोटी पर फैला हुआ है। 2. इसके दक्षिणी मार्ग में जैन तीर्थंकरों के जटिल नक्काशीदार शैलकर्तित मंदिर हैं। 3. किले के भीतर चतुर्भुज मंदिर वैष्णव तीर्थस्थल का एक उदाहरण है। ऊपर दिए गए कथनों में से कौन सा सही है/हैं?
+A. 1 and 2 only / केवल 1 और 2
+B. 2 and 3 only / केवल 2 और 3
+C. 1 and 3 only / केवल 1 और 3
+D. 1, 2 and 3 / 1, 2 और 3
+Answer: D
+
+Q.27: In Bhakti traditions, which two broad types of worship are mentioned? भक्ति परम्परा में उपासना के कौन से दो व्यापक प्रकार बताए गए हैं?
+A. Vedic and Non-Vedic / वैदिक और अवैदिक
+B. Saguna and Nirguna / सगुण और निर्गुण
+C. Orthodox and Reformist / रूढ़िवादी और सुधारवादी
+D. Shaiva and Vaishnava / शैव और वैष्णव
+Answer: B
+
+Q.28: Which of the following best describes Annamacharya's contribution to Indian devotional music? निम्नलिखित में से कौन-सा विकल्प अन्नमाचार्य के भारतीय भक्ति संगीत में योगदान का सबसे उपयुक्त वर्णन करता है?
+A. Composed Sanskrit hymns on caste rituals / जातिगत अनुष्ठानों पर संस्कृत भजनों की रचना की
+B. Wrote over 32,000 songs promoting devotion and equality / भक्ति और समानता को बढ़ावा देने वाले 32,000 से अधिक गीत लिखे
+C. Restricted songs to temples and priests only / केवल मंदिरों और पुजारियों तक ही सीमित गीत
+D. Focused only on melody, not on social reform / केवल राग-रंग पर ध्यान केन्द्रित, सामाजिक सुधार पर नहीं
+Answer: B
+
+Q.29: Why can hockey players use only the flat, left-hand side of the stick? हॉकी खिलाड़ी स्टिक के केवल सपाट, बायें भाग का ही उपयोग क्यों कर सकते हैं?
+A. Better control and reduced injury risk / बेहतर नियंत्रण और कम चोट जोखिम
+B. Prevents unfair left-handed advantage / अनुचित बायें लाभ को रोकता है
+C. Prevents uneven bounce, ensures uniform rebound / असमान उछाल को रोकता है, एकसमान पलटाव सुनिश्चित करता है
+D. Mandated right-hand play for training ease / प्रशिक्षण में आसानी के लिए दायें हाथ से खेलना अनिवार्य
+Answer: C
+
+Q.30: What change did the Regulating Act bring to the post of the Governor of Bengal? यह विनियम अधिनियम बंगाल के गवर्नर के पद में क्या परिवर्तन लाया?
+A. He was required to report directly to the British Crown. / उन्हें सीधे ब्रिटिश क्राउन को रिपोर्ट करना आवश्यक था।
+B. He was reduced to a ceremonial position. / उन्हें एक औपचारिक पद तक सीमित कर दिया गया।
+C. His role was elevated to Governor-General with a council of four members. / उनकी भूमिका को चार सदस्यों की परिषद् के साथ गवर्नर-जनरल तक बढ़ा दिया गया।
+D. He was transferred to the Madras Presidency. / उन्हें मद्रास प्रेसीडेंसी में स्थानांतरित कर दिया गया।
+Answer: C
+
+Q.31: Fill in the blanks: At the 1960 Rome Olympics, Milkha Singh set an Indian record by finishing Fourth in the men's 400 meters with a timing of _________ a record that stood until 1984. रिक्त स्थान भरें: 1960 के रोम ओलंपिक में, मिल्खा सिंह ने _________ के समय के साथ पुरुषों की 400 मीटर दौड़ में चौथा स्थान प्राप्त करके भारतीय रिकॉर्ड बनाया, यह रिकॉर्ड 1984 तक कायम रहा था।
+A. 43.2 seconds / 43.2 सेकंड
+B. 46.2 seconds / 46.2 सेकंड
+C. 44.8 seconds / 44.8 सेकंड
+D. 45.6 seconds / 45.6 सेकंड
+Answer: D
+
+Q.32: Which of the following statements correctly reflect India's recent(2024) economic diplomacy and domestic investment facilitation reforms? 1) The India-Uzbekistan BIT allows unconditional access to international arbitration without exhausting local remedies. 2) The National Infrastructure Readiness Index (NIRI) solely ranks Smart Cities and excludes private investment indicators. निम्नलिखित में से कौन सा कथन भारत की हालिया (2024) आर्थिक कूटनीति और घरेलू निवेश सुविधा सुधारों को सही ढंग से दर्शाता है? 1) भारत-उज़्बेकिस्तान बीआईटी स्थानीय उपायों का उपयोग किए बिना अंतर्राष्ट्रीय मध्यस्थता तक बिना शर्त पहुँच की अनुमति देता है। 2) राष्ट्रीय अवसंरचना तत्परता सूचकांक (एनआरआईआई) केवल स्मार्ट शहरों को रैंक करता है और निजी निवेश संकेतकों को शामिल नहीं करता है।
+A. Only 1 / केवल 1
+B. Only 2 / केवल 2
+C. 1 and 2 Both are correct / 1 और 2 दोनों सही हैं
+D. Neither 1 nor 2 is correct / न तो 1 और न ही 2 सही है
+Answer: D
+
+Q.33: Where is the Dr. S. P. Mookerjee Swimming Stadium located? डॉ. एस. पी. मुखर्जी स्विमिंग स्टेडियम कहाँ स्थित है?
+A. Mumbai / मुंबई
+B. Chandigarh / चंडीगढ़
+C. New Delhi / नई दिल्ली
+D. Bangalore / बेंगलौर
+Answer: C
+
+Q.34: Which statement accurately represents the connection between 'Heart: A History' by Sandeep Jauhar and the Edgar Award for Best Novel? कौन-सा कथन संदीप जौहर द्वारा लिखित 'हार्ट: ए हिस्ट्री' और सर्वश्रेष्ठ उपन्यास के लिए एडगर पुरस्कार के बीच संबंध को सटीक रूप से दर्शाता है?
+A. Nominated for Edgar Award for blending medical history and mystery / चिकित्सा इतिहास और रहस्य के सम्मिश्रण के लिए एडगर पुरस्कार के लिए नामांकित
+B. Won Edgar Award as pioneering medical fiction / अग्रणी चिकित्सा कथा के रूप में एडगर पुरस्कार जीता
+C. Received Edgar Award for fictional cardiac surgery / काल्पनिक हृदय शल्य चिकित्सा के लिए एडगर पुरस्कार प्राप्त किया
+D. Non-fiction memoir, ineligible for Edgar Award / गैर-काल्पनिक संस्मरण, एडगर पुरस्कार के लिए अयोग्य
+Answer: D
+
+Q.35: In which type of geological formation are gorges most commonly developed? किस प्रकार की भूवैज्ञानिक संरचना में गॉर्ज सबसे अधिक विकसित होते हैं?
+A. Soft sediment / नरम तलछट
+B. Hard rocks / कठोर चट्टानें
+C. Glacial till / हिम-गोलाश्म मृत्तिका
+D. Volcanic ash / ज्वालामुखी राख
+Answer: B
+
+Q.36: Who inaugurated India's first lithium-ion battery plant in Tirupati, Andhra Pradesh, in September 2022? सितंबर 2022 में आंध्र प्रदेश के तिरुपति में भारत के पहले लिथियम-आयन बैटरी संयंत्र का उद्घाटन किसने किया?
+A. Prime Minister Narendra Modi / प्रधानमंत्री नरेंद्र मोदी
+B. Rajeev Chandrasekhar, Minister of State for Electronics and Information Technology / राजीव चंद्रशेखर, इलेक्ट्रॉनिक्स और सूचना प्रौद्योगिकी राज्य मंत्री
+C. Nirmala Sitharaman, Minister of Finance / निर्मला सीतारमण, वित्त मंत्री
+D. Amit Shah, Union Home Minister / अमित शाह, केंद्रीय गृह मंत्री
+Answer: B
+
+Q.37: Which Indian state recorded negative population growth between 2001-2011? किस भारतीय राज्य ने 2001-2011 के बीच नकारात्मक जनसंख्या वृद्धि दर्ज की थी?
+A. Kerala / केरल
+B. Goa / गोवा
+C. Nagaland / नगालैंड
+D. Manipur / मणिपुर
+Answer: C
+
+Q.38: Which of the following best describes the rate of natural increase of population? निम्नलिखित में से कौन-सा कथन जनसंख्या की प्राकृतिक वृद्धि की दर का सबसे अच्छा वर्णन करता है?
+A. It is the crude birth rate multiplied by crude death rate / यह अशोधित जन्म दर को अशोधित मृत्यु दर से गुणा करने पर प्राप्त परिणाम है
+B. It is the ratio of working population to total population / यह कार्यशील जनसंख्या और कुल जनसंख्या का अनुपात है
+C. It is the difference between the birth rate and the death rate / यह जन्म दर और मृत्यु दर के बीच का अंतर है
+D. It is the average annual growth due to migration alone / यह केवल प्रवास के कारण होने वाली औसत वार्षिक वृद्धि है
+Answer: C
+
+Q.39: Examine the following statements about the SSLV-D2 mission and select the correct option: Statement 1: SSLV-D2 inserted EOS-07, Janus-1, and AzaadiSAT-2 into a 450 km circular orbit utilizing a three-stage vehicle powered entirely by liquid propulsion. Statement 2: The SSLV-D2 mission showcased rapid deployment capability with low turnaround time and limited ground infrastructure needs. SSLV-D2 मिशन के बारे में निम्नलिखित कथनों की जाँच कीजिए और सही विकल्प चुनिए: कथन 1: SSLV-D2 ने EOS-07, Janus-1 और AzaadiSAT-2 को पूरी तरह से द्रव प्रणोदन द्वारा संचालित तीन-चरणीय वाहन का उपयोग करके 450 किमी की वृत्ताकार कक्षा में प्रक्षेपित किया। कथन 2: SSLV-D2 मिशन ने कम समय और सीमित जमीनी बुनियादी ढाँचे की आवश्यकता के साथ तीव्र तैनाती क्षमता का प्रदर्शन किया।
+A. Only Statement 1 is correct / केवल कथन 1 सही है
+B. Only Statement 2 is correct / केवल कथन 2 सही है
+C. 1 and 2 are correct / 1 और 2 सही हैं
+D. Neither 1 nor 2 are correct / न तो 1 और न ही 2 सही हैं
+Answer: B
+
+Q.40: What is the primary function of telomerase enzyme? टेलीमेरेज़ एंजाइम का प्राथमिक कार्य क्या है?
+A. DNA replication / DNA प्रतिकृति
+B. Telomere lengthening / टेलोमेरे का लंबा होना
+C. DNA repair / DNA मरम्मत
+D. RNA transcription / RNA अनुलेखन
+Answer: B
+
+Q.41: Which of the following commissions recommended the establishment of a Permanent Secretariat for the Inter-State Council to institutionalize Centre-State cooperation? निम्नलिखित में से किस आयोग ने केंद्र-राज्य सहयोग को संस्थागत बनाने के लिए अंतर-राज्य परिषद के लिए एक स्थायी सचिवालय की स्थापना की सिफारिश की थी?
+A. Rajamannar Committee / राजमन्नार समिति
+B. Punchhi Commission / पूंछी आयोग
+C. Sarkaria Commission / सरकारिया आयोग
+D. Venkatachelliah Commission / वेंकटचलैया आयोग
+Answer: C
+
+Q.42: Why are cooking utensils often made with a copper bottom? खाना पकाने के बर्तन प्राय: तांबे के तले वाले क्यों बनाए जाते हैं?
+A. Copper is a good insulator, preventing heat loss. / तांबा एक अच्छा इंसुलेटर है, जो ऊष्मा की हानि को रोकता है।
+B. Copper has a low melting point, making it easy to manufacture. / तांबे का गलनांक कम होता है, जिससे इसका निर्माण आसान होता है।
+C. Copper is an good conductor of heat, ensuring even heating. / तांबा ऊष्मा का अच्छा संवाहक है, जो समान तापन सुनिश्चित करता है।
+D. Copper reacts readily with food, enhancing flavor. / तांबा भोजन के साथ आसानी से प्रतिक्रिया करता है, जिससे उसका स्वाद बढ़ जाता है।
+Answer: C
+
+Q.43: What is the primary objective of a Uniform Civil Code (UCC) in India? भारत में समान नागरिक संहिता (यूसीसी) का प्राथमिक उद्देश्य क्या है?
+A. To establish a common criminal law for all citizens. / सभी नागरिकों के लिए एक समान आपराधिक कानून स्थापित करना
+B. To unify direct and indirect tax laws. / प्रत्यक्ष और अप्रत्यक्ष कर कानूनों को एकीकृत करना
+C. To provide a common set of personal laws for all citizens, irrespective of religion. / सभी नागरिकों के लिए, चाहे उनका धर्म कुछ भी हो, एक समान व्यक्तिगत कानून उपलब्ध कराना
+D. To standardize administrative procedures across all states. / सभी राज्यों में प्रशासनिक प्रक्रियाओं को मानकीकृत करना
+Answer: C
+
+Q.44: The Agriculture Infrastructure Fund (AIF) provides support for? कृषि अवसंरचना कोष (एआईएफ) किसके लिए सहायता प्रदान करता है?
+A. Free fertilizers / नि:शुल्क उर्वरक
+B. Agri-logistics and cold chains / कृषि-लॉजिस्टिक्स और कोल्ड चेन
+C. Cash transfers / नकद हस्तांतरण
+D. MGNREGA work / मनरेगा कार्य
+Answer: B
+
+Q.45: Read the below statements marked as Assertion (A) and Reason (R). Mark the correct options: Assertion (A): India Industrial Land Bank provides GIS-based information. Reason (R): It is managed by the Ministry of Mines. नीचे दिए गए कथनों को अभिकथन (A) और कारण (R) से चिह्नित करके पढ़िए। सही विकल्पों पर निशान लगाइए: अभिकथन (A): भारत औद्योगिक भूमि बैंक, GIS-आधारित जानकारी प्रदान करता है। कारण (R): इसका प्रबंधन खान मंत्रालय द्वारा किया जाता है।
+A. Both A and R are true, and R is the correct explanation of A / A और R दोनों सत्य हैं, और R, A का सही स्पष्टीकरण है
+B. Both A and R are true, but R is not the correct explanation of A / A और R दोनों सत्य हैं, लेकिन R, A का सही स्पष्टीकरण नहीं है
+C. A is true, but R is false / A सत्य है, लेकिन R असत्य है
+D. A is false, but R is true / A असत्य है, लेकिन R सत्य है
+Answer: C
+
+Q.46: According to the Global Peace Index 2024, which of the following statements correctly reflects global peace trends since 2008? वैश्विक शांति सूचकांक 2024 के अनुसार, निम्नलिखित में से कौन सा कथन 2008 से वैश्विक शांति प्रवृत्तियों को सही ढंग से दर्शाता है?
+A. All three GPI domains have steadily improved since 2008 / 2008 के बाद से सभी तीन GPI डोमेन में लगातार सुधार हुआ है
+B. The average country score has improved by 4.5% since 2008 / 2008 से देश के औसत स्कोर में 4.5% का सुधार हुआ है
+C. Ongoing Conflict and Safety & Security have deteriorated, while Militarisation has improved / चल रहे संघर्ष और सुरक्षा की स्थिति खराब हुई है, जबकि सैन्यीकरण में सुधार हुआ है
+D. The number of countries showing improvement exceeds those showing deterioration / सुधार दर्शाने वाले देशों की संख्या गिरावट दर्शाने वाले देशों से अधिक है
+Answer: C
+
+Q.47: Under India's updated State Action Plan on Climate Change (SAPCC) for 2025, which sector received the highest budgetary allocation for climate adaptation? 2025 के लिए भारत की अद्यतन जलवायु परिवर्तन पर राज्य कार्य योजना (SAPCC) के तहत, किस क्षेत्र को जलवायु अनुकूलन के लिए सबसे अधिक बजटीय आवंटन प्राप्त हुआ?
+A. Transport / परिवहन
+B. Urban Planning / शहरी नियोजन
+C. Agriculture and Water Resources / कृषि और जल संसाधन
+D. Renewable Energy / नवीकरणीय ऊर्जा
+Answer: C
+
+Q.48: Which of the following correctly highlights a unique feature of India's textile industry? निम्नलिखित में से कौन-सा कथन भारत के वस्त्र उद्योग की अनूठी विशेषता को सही ढंग से उजागर करता है?
+A. It focuses only on raw material exports. / यह केवल कच्चे माल के निर्यात पर ध्यान केंद्रित करता है।
+B. It is partially self-reliant and imports final products. / यह आंशिक रूप से आत्मनिर्भर है और अंतिम उत्पाद आयात करता है।
+C. It is self-reliant across the full value chain / यह संपूर्ण मूल्य शृंखला में आत्मनिर्भर है
+D. It only caters to domestic markets. / यह केवल घरेलू बाजारों की सेवा करता है।
+Answer: C
+
+Q.49: Which Article enables the President to establish an Inter-State Council? कौन-सा अनुच्छेद राष्ट्रपति को अंतर्राज्यीय परिषद स्थापित करने का अधिकार देता है?
+A. Article 263 / अनुच्छेद 263
+B. Article 264 / अनुच्छेद 264
+C. Article 312 / अनुच्छेद 312
+D. Article 262 / अनुच्छेद 262
+Answer: A
+
+Q.50: Evaluate these statements regarding atmospheric layeers: 1. Most weather phenomena occur in the stratosphere. 2. The ozone layer is primarily found in the troposphere. Which of the above is/are correct? वायुमंडलीय परतों के संबंध में इन कथनों का मूल्यांकन कीजिए: 1. अधिकांश मौसमी घटनाएँ समताप मंडल में होती हैं। 2. ओजोन परत मुख्यतः क्षोभमंडल में पाई जाती है। उपर्युक्त में से कौन सा/से सही है/हैं?
+A. Statement 1 only / केवल कथन 1
+B. Statement 2 only / केवल कथन 2
+C. Both 1 and 2 / 1 और 2 दोनों
+D. Neither 1 nor 2 / न तो 1 और न ही 2
+Answer: D
+
+Q.51: Suppose x = √2 + √3, y = √5 + √1, and z = 2√2 + 1. ; then which of the following is true? मान लीजिए x = √2 + √3, y = √5 + √1, और z = 2√2 + 1 है; तो निम्न में में कौन-सा सत्य है?
+A. x < y < z / x < y < z
+B. z < y < x / z < y < x
+C. y < x < z / y < x < z
+D. x < z < y / x < z < y
+Answer: A
+
+Q.52: The budget for a construction project is allocated to land acquisition, building materials, and labor in the ratio 5 : 3 : 2. During the project, the cost of land acquisition rose by 5%, building materials rose by 10%, and labor fell by 20%. What is the percent change (increase or decrease) in the total project cost? एक निर्माण परियोजना के लिए बजट भूमि अधिग्रहण, निर्माण सामग्री और श्रम के लिए 5 : 3 : 2 के अनुपात में आवंटित किया जाता है। परियोजना के दौरान, भूमि अधिग्रहण की लागत में 5% की वृद्धि हो गई, निर्माण सामग्री में 10% की वृद्धि हुई और श्रम में 20% की गिरावट आई। कुल परियोजना लागत में प्रतिशत परिवर्तन (वृद्धि या कमी) क्या है?
+A. 1.0% increase / 1.0% वृद्धि
+B. 1.5% decrease / 1.5% कमी
+C. 1.5% increase / 1.5% वृद्धि
+D. 2.0% decrease / 2.0% कमी
+Answer: C
+
+Q.53: Evaluate: ज्ञात कीजिए।
+A. 14/3
+B. 15/3
+C. 16/3
+D. 17/3
+Answer: A
+
+Q.54: X, Y, and Z invested ₹25,000, ₹35,000, and ₹40,000 respectively in a business. If the profit at the end of the year was ₹30,000, find Y's share. X, Y और Z ने एक व्यवसाय में क्रमशः ₹25,000, ₹35,000 और ₹40,000 का निवेश किया है। यदि वर्ष के अंत में लाभ ₹30,000 था, तो Y का भाग ज्ञात कीजिए।
+A. ₹10,500
+B. ₹10,000
+C. ₹11,000
+D. ₹11,500
+Answer: A
+
+Q.55: A and B started a business by investing ₹48,000 and ₹72,000 respectively. After 6 months, A withdrew half of his capital, while B increased his capital by ₹24,000. At the end of the year, they earned a total profit of ₹55,000. What is B's share in the profit? A और B ने क्रमशः ₹48,000 और ₹72,000 का निवेश करके एक व्यवसाय प्रारंभ किया है। 6 माह बाद, A अपनी आधी पूँजी निकाल लेता है, जबकि B ने अपनी पूँजी में ₹24,000 की वृद्धि की है। वर्ष के अंत में, उन्होंने कुल ₹55,000 का लाभ अर्जित किया है। लाभ में B का भाग क्या है?
+A. ₹26,500
+B. ₹28,000
+C. ₹38,500
+D. ₹36,000
+Answer: C
+
+Q.56: Table – Daily Wages of 5 Workers Over 4 Days Days A B C D E Day 1 200 180 220 160 190 Day 2 210 175 230 170 195 Day 3 190 185 215 180 200 Day 4 220 190 225 175 205 Q: What is the average daily earning of Worker C? तालिका - 5 श्रमिकों की 4 दिनों की दैनिक मजदूरी दिन A B C D E दिन 1 200 180 220 160 190 दिन 2 210 175 230 170 195 दिन 3 190 185 215 180 200 दिन 4 220 190 225 175 205 प्रश्न: श्रमिक C की औसत दैनिक आय कितनी है?
+A. 222.5
+B. 222
+C. 227.5
+D. 215
+Answer: A
+
+Q.57: In a city, the current number of literate people is 25,000. If the number of literate males decreases by 5% and the number of literate females increases by 10%, the total literate population becomes 25,250. What is the present number of literate males in the city? एक शहर में वर्तमान में साक्षर व्यक्तियों की संख्या 25,000 है। यदि साक्षर पुरुषों की संख्या में 5% की कमी आती है और साक्षर महिलाओं की संख्या में 10% की वृद्धि होती है, तो कुल साक्षर जनसंख्या 25,250 हो जाती है। शहर में साक्षर पुरुषों की वर्तमान संख्या क्या है?
+A. 12,500
+B. 14,000
+C. 15,000
+D. 16,500
+Answer: C
+
+Q.58: A baker ordered 10 kg of premium flour and some additional kg of standard flour. The price of premium flour per kg was twice that of the standard flour. Due to an ordering error, the quantities of the two types of flour were interchanged. This decreased the total cost by 25%. Find the ratio of the quantity of premium flour to standard flour in the original order. एक बेकर ने 10 किलो प्रीमियम आटा और कुछ अतिरिक्त किलो मानक आटा मंगवाया है। प्रति किलो प्रीमियम आटे का मूल्य, मानक आटे से दोगुना था। ऑर्डरिंग त्रुटि के कारण, दो प्रकार के आटे की मात्रा आपस में बदल जाती है। इससे कुल मूल्य में 25% की कमी आती है। मूल ऑर्डर में प्रीमियम आटे की मात्रा और मानक आटे की मात्रा का अनुपात ज्ञात कीजिए।
+A. 1:2
+B. 5:2
+C. 3:4
+D. 4:5
+Answer: B
+
+Q.59: A vendor sold 15 toys for ₹3000 and gained a profit of 25%. How many toys should he sell for ₹2816 to make a profit of 10%? एक विक्रेता 15 खिलौने ₹3000 में बेचता है और 25% का लाभ अर्जित करता है। 10% का लाभ अर्जित करने के लिए उसे ₹2816 में कितने खिलौने बेचने चाहिए?
+A. 15
+B. 16
+C. 17
+D. 18
+Answer: B
+
+Q.60: A trader sells one brand of tea at ₹150 per kg, incurring a 25% loss. He also sells another brand of tea at ₹200 per kg, incurring a 20% loss. If he mixes the two brands in equal proportions and sells the mixture at ₹175 per kg, what is his overall profit or loss percentage? एक व्यापारी चाय का एक ब्रांड ₹150 प्रति किलोग्राम पर बेचता है, जिससे उसे 25% की हानि होती है। वह चाय का एक अन्य ब्रांड ₹200 प्रति किलोग्राम पर बेचता है, जिससे उसे 20% की हानि होती है। यदि वह दोनों ब्रांडों को बराबर अनुपात में मिलाता है और मिश्रण को ₹175 प्रति किलोग्राम पर बेचता है, तो उसका कुल लाभ या हानि प्रतिशत क्या है?
+A. Loss of 22.22% / 22.22% की हानि
+B. Profit of 22.22% / 22.22% का लाभ
+C. Loss of 25% / 25% की हानि
+D. Profit of 25% / 25% का लाभ
+Answer: A
+
+Q.61: A and B together can complete a work in 12 days. B and C together can complete the same work in 15 days. C and A together can do it in 20 days. In how many days can A alone complete the job? A और B मिलकर किसी कार्य को 12 दिनों में पूरा कर सकते हैं। B और C मिलकर उस कार्य को 15 दिनों में पूरा कर सकते हैं। C और A मिलकर उस कार्य को 20 दिनों में पूरा कर सकते हैं। A अकेले उस कार्य को कितने दिनों में पूरा कर सकता है?
+A. 30 days / 30 दिन
+B. 20 days / 20 दिन
+C. 50 days / 50 दिन
+D. 15 days / 15 दिन
+Answer: A
+
+Q.62: From a 64-liter container of pure spirit, 8 liters are removed and replaced by water. This operation is performed a total of three times. What is the final quantity of spirit remaining in the container? शुद्ध स्प्रिट के 64 लीटर के पात्र से 8 लीटर निकाल कर उसकी जगह पानी डाला जाता है। यह प्रक्रिया कुल तीन बार की जाती है। पात्र में बची हुई स्प्रिट की अंतिम मात्रा क्या है?
+A. 34.34 liters / 34.34 लीटर
+B. 36.45 liters / 36.45 लीटर
+C. 38.62 liters / 38.62 लीटर
+D. 42.88 liters / 42.88 लीटर
+Answer: D
+
+Q.63: A juice vendor mixes water with pure orange juice. If he sells the mixture at the cost price of pure orange juice and makes a profit of 20%, what is the ratio of water to pure orange juice in the mixture, respectively? एक जूस विक्रेता शुद्ध संतरे के जूस में पानी मिलाता है। यदि वह मिश्रण को शुद्ध संतरे के जूस के क्रय मूल्य पर बेचता है और 20% का लाभ अर्जित करता है, तो मिश्रण में पानी और शुद्ध संतरे के जूस का अनुपात क्रमशः क्या है?
+A. 1 : 4
+B. 1 : 5
+C. 4 : 1
+D. 5 : 1
+Answer: B
+
+Q.64: A car covers 40% of a certain distance at a pace of 20 km/h and the remaining distance at a pace of 30 km/h. What is the average speed of the car for the entire journey? एक कार एक निश्चित दूरी का 40% भाग 20 किमी/घंटा की गति से तथा शेष दूरी 30 किमी/घंटा की गति से तय करती है। पूरी यात्रा के दौरान कार की औसत गति क्या है?
+A. 24 km/h / 24 किमी/घंटा
+B. 25 km/h / 25 किमी/घंटा
+C. 26 km/h / 26 किमी/घंटा
+D. 27 km/h / 27 किमी/घंटा
+Answer: B
+
+Q.65: A and B are jogging around a park's circular track which has a perimeter of 1.2 km. They start from the same point at 6:00 a.m. and run in opposite directions. A's speed is 5 km/h, and B's speed is 7 km/h. At what time will they meet for the fifth time? A और B एक पार्क के वृत्ताकार ट्रैक पर जॉगिंग कर रहे हैं जिसका परिमाप 1.2 किमी है। वे सुबह 6:00 बजे एक ही बिंदु से दौड़ना प्रारंभ करते हैं और विपरीत दिशाओं में दौड़ते हैं। A की चाल 5 किमी/घंटा है, और B की चाल 7 किमी/घंटा है। वे पाँचवीं बार किस समय मिलेंगे?
+A. 6:25 AM / सुबह 6:25 बजे
+B. 6:30 AM / सुबह 6:30 बजे
+C. 6:45 AM / सुबह 6:45 बजे
+D. 7:00 AM / सुबह 7:00 बजे
+Answer: B
+
+Q.66: The area of a sector of a circle with radius 7 cm and central angle 90° is: 7 सेमी त्रिज्या और 90° केन्द्रीय कोण वाले एक वृत्त के त्रिज्यखंड का क्षेत्रफल है:
+A. 38.5 cm² / 38.5 सेमी2
+B. 35.2 cm² / 35.2 सेमी
+C. 40.5 cm² / 40.5 सेमी
+D. 42.62 cm² / 42.62 सेमी
+Answer: A
+
+Q.67: What is the radian measure of 150°? 150° का रेडियन माप क्या है?
+A. 5π/6 radians / 5π/6 रेडियन
+B. 7π/6 radians / 7π/6 रेडियन
+C. 2π/3 radians / 2π/3 रेडियन
+D. 3π/4 radians / 3π/4 रेडियन
+Answer: A
+
+Q.68: What is the area of a sector with a central angle of 120° and radius 8 cm? 120° केन्द्रीय कोण तथा 8 सेमी त्रिज्या वाले त्रिज्यखंड का क्षेत्रफल क्या है?
+A. 67 1/21 cm² / 67 1/21 सेमी²
+B. 65 1/21 cm² / 65 1/21 सेमी²
+C. 48 cm² / 48 सेमी²
+D. 52 cm² / 52 सेमी²
+Answer: A
+
+Q.69: Which of these lines is parallel to 3x + 2y = 5? 3x + 2y = 5 इनमें से कौन-सी रेखाएँ समांतर हैं?
+A. 3x + 2y = 7
+B. 2x + 3y = 5
+C. 3x - 2y = 5
+D. x + y = 5
+Answer: A
+
+Q.70: If sin(90° - x) = cos(2x), then what is x? यदि sin(90° - x) = cos(2x) है, तो x क्या है?
+A. 0° / 0°
+B. 30° / 30°
+C. 25° / 25°
+D. 15° / 15° 2 2 2
+Answer: A
+
+Q.71: If x = √5 + 2, find x²-4√5. यदि x = √5 + 2 है, तो x²-4√5 ज्ञात कीजिए।
+A. 1
+B. 7
+C. 9
+D. 3
+Answer: C
+
+Q.72: In triangles ABC and XYZ, if the lengths of the sides are such that AB equals XY, BC equals YZ, and CA equals ZX, which congruence rule demonstrates that triangle ABC is congruent to triangle XYZ? त्रिभुज ABC और XYZ में, यदि भुजाओं की लंबाई इस प्रकार है कि AB बराबर XY, BC बराबर YZ, और CA बराबर ZX है, तो कौन-सा सर्वांगसमता नियम दर्शाता है कि त्रिभुज ABC त्रिभुज XYZ के सर्वांगसम है?
+A. SSS / SSS
+B. SAS / SAS
+C. ASA / ASA
+D. AAS / AAS
+Answer: A
+
+Q.73: Given, A and B are complementary angles, and sin A = 3/5, what is tan B? दिया गया है कि A और B पूरक कोण हैं, और sin A = 3/5 है, तो tan B क्या है?
+A. 4/3
+B. 3/4
+C. 3/5
+D. 4/5
+Answer: A
+
+Q.74: In a cyclic quadrilateral ABCD, if angle A is 100°, what is the measure of angle C? एक चक्रीय चतुर्भुज ABCD में, यदि कोण A, 100° है, तो कोण C का माप क्या है?
+A. 100° / 100°
+B. 80° / 80°
+C. 90° / 90°
+D. 70° / 70°
+Answer: B
+
+Q.75: If sin²A – cos²A = –1/2, find the value of cos²A. यदि sin²A - cos²A = -1/2 है, तो cos²A का मान ज्ञात कीजिए।
+A. 1/4
+B. 3/4
+C. 1/2
+D. 2/3
+Answer: B
+
+Q.76: Select the most appropriate synonym of the given word: CAUSTIC ² ² ² ²
+A. Kind
+B. Mild
+C. Gentle
+D. Sarcastic
+Answer: D
+
+Q.77: Choose the correct meaning of idiom: Make no bones about it
+A. To hesitate before speaking
+B. To remain neutral
+C. To be direct and honest
+D. To confuse the listener
+Answer: C
+
+Q.78: Select the most appropriate antonym of the given word. Evanescent
+A. Ephemeral
+B. Transient
+C. Enduring
+D. Fleeting
+Answer: C
+
+Q.79: Identify the misspelt word
+A. Avaricious
+B. Temerarious
+C. Penitent
+D. Inadvertant
+Answer: D
+
+Q.80: Spot the correct spelling of an REE-bearing metamorphic texture word.
+A. Prophyroblastic
+B. Porphyroblastic
+C. Porfyrblastic
+D. Porphyroblastik
+Answer: B
+
+Q.81: Choose the correct one-word substitute for: 'A political system based on the rule of the wealthy'.
+A. Oligarchy
+B. Aristocracy
+C. Plutocracy
+D. Meritocracy
+Answer: C
+
+Q.82: Select the correct option: Only after a decade of fieldwork ____ fully grasp the dialect's nuances.
+A. she had
+B. did she
+C. had she
+D. she did
+Answer: B
+
+Q.83: Select the correct option: The professor's remarks were so dense with jargon that they bordered on _____.
+A. opacity
+B. opaque
+C. opacus
+D. opalescent
+Answer: A
+
+Q.84: Select the correct option: Her rebuttal, though eloquent, failed to ____ the central issue raised by the opposition.
+A. address
+B. digress
+C. circumvent
+D. elude
+Answer: A
+
+Q.85: Find the part of the sentence that contains an error: The reforms being recommended by the panel (1)/ are not only intended to streamline administrative functions (2)/ but also addressing the asymmetries in resource allocation (3)/ that have long plagued rural districts. (4)
+A. (1)
+B. (2)
+C. (3)
+D. 4
+Answer: C
+
+Q.86: Find the part of the sentence that contains an error: What the committee failed to deliberate on adequately (1)/ were not the policy's objectives themselves, (2)/ but the political ramifications it (3)/ might have had if implemented without broader consensus. (4)
+A. (1)
+B. (2)
+C. (3)
+D. (4)
+Answer: B
+
+Q.87: Change the following from active to passive: The laboratory will have double-checked the reagents by dawn.
+A. The reagents have been double-checked by the laboratory by dawn.
+B. The reagents will have been double-checked by the laboratory by dawn.
+C. The reagents will be double-checked by the laboratory by dawn.
+D. The reagents would have been double-checking by the laboratory by dawn.
+Answer: B
+
+Q.88: Select the sentence containing the homonym of the highlighted word: The fanon rested on the Pope's shoulder during Mass.
+A. The theologian lectured on the fanon's origin in Rome.
+B. The tailor stitched the edge of the fanon carefully.
+C. The critic analyzed Fanon's theory of postcolonial identity.
+D. The cardinal wore the fanon over his chasuble.
+Answer: C
+
+Q.89: Convert the sentence provided below from its passive voice structure to an active voice structure: Rare minerals are known to have been secretly extracted from the site by unauthorized workers before the inspection.
+A. Unauthorized workers extracted the rare minerals before inspection.
+B. The site was secretly mined before the inspection.
+C. Unauthorized workers are known to have secretly extracted rare minerals before inspection.
+D. The minerals had been extracted prior to inspection.
+Answer: C
+
+Q.90: PASSAGE (Q.90 - Q.94) Read the following passage and answer the questions based on the passage: For seventeen-year-old Meera, adolescence was not merely a phase of hormonal transitions and academic aspirations—it became an arena where perception and self-worth collided with insidious intensity. In a world saturated with curated digital aesthetics and algorithm-driven beauty hierarchies, Meera’s own reflection began to feel less like truth and more like betrayal. Every scroll through her social media feed deepened a gnawing dissonance: between her authentic self and the impossible silhouettes idolized online. This wasn’t mere teenage insecurity—it manifested as a systematic devaluation of her physical self. Gradually, she adopted punitive behaviors: food became conditional, mirrors became adversaries, and compliments transformed into cryptic reminders of inadequacy. The subtle descent into dysmorphia was neither loud nor linear. Academically capable and socially pleasant, Meera wore the mask of normalcy with precision. Yet beneath the practiced smiles was a quiet implosion. She began withdrawing emotionally, rationalizing her distress as vanity, and trivializing her worth. The turning point came not with drama, but with silence—a refusal to eat for days, which led to medical intervention. Therapeutic engagement introduced her to the concept of self-image distortion, and the emotional scaffolding required to rebuild her fractured sense of identity. Through sustained counseling, Meera disentangled societal impositions from intrinsic value. She began to internalize that beauty is not a monolith dictated by culture but a spectrum shaped by diversity, health, and self-compassion. Meera’s narrative is not a singular anomaly but a mirror to a larger epidemic— where teenagers battle unspoken wars behind flawless digital façades. Combating this requires more than awareness; it calls for critical media literacy, empathetic environments, and systemic redefinition of beauty norms that extend beyond superficial metrics. What does the phrase "gnawing dissonance" in the passage most likely refer to?
+A. Her hunger due to skipped meals
+B. Conflict between her inner worth and online ideals
+C. Her disagreement with her teachers
+D. Her detachment from academic pressure
+Answer: B
+
+Q.91: How does the passage describe Meera's psychological decline?
+A. Abrupt and confrontational
+B. Erratic and attention-seeking
+C. Subtle and inwardly destructive
+D. Vocal and rebellious
+Answer: C
+
+Q.92: What concept helped Meera begin recovering emotionally?
+A. Narcissistic validation
+B. Self-image distortion
+C. Social withdrawal management
+D. Behavioral conditioning
+Answer: B
+
+Q.93: Which of the following best captures the central theme of the passage?
+A. The influence of peer pressure on teens
+B. Cosmetic beauty norms and fashion trends
+C. Hidden psychological battles due to digital aesthetics
+D. The necessity of academic counseling for teens
+Answer: C
+
+Q.94: What is the tone of the author in the end of the paragraph?
+A. Dismissive and ironic
+B. Reflective and critical
+C. Optimistic and celebratory
+D. Detached and neutral
+Answer: B
+
+Q.95: Choose the most suitable option to replace the highlighted part of the sentence: I suggested that he goes to the doctor immediately.
+A. go to doctor at once
+B. should goes to the doctor
+C. go to the doctor immediately
+D. should have go to the doctor
+Answer: C
+
+Q.96: Choose the most suitable option to replace the highlighted part of the sentence: I am used to get up early in the morning.
+A. to get up early
+B. with getting up early
+C. to getting up early
+D. for getting up early
+Answer: C
+
+Q.97: A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. She said, "He doesn't listen to me."
+A. She said he don't listen to her.
+B. She said that he doesn't listened to her.
+C. She said that he didn't listen to her.
+D. She said that he didn't listened to her.
+Answer: C
+
+Q.98: A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The manager informed the employees that the deadline for submission had been extended by two days.
+A. "You may submit the work two days later than planned," the manager informed.
+B. "The deadline has been extended by two days," said the manager.
+C. "We are extending the submission deadline by two days," the manager said.
+D. "You must finish it within two extra days," the manager said.
+Answer: B
+
+Q.99: Rearrange the following sentences to form a coherent paragraph: 1. These narratives often explore the ethical and social consequences of technological advancement, from artificial intelligence to genetic engineering. 2. Science fiction is a genre of speculative fiction that typically deals with imaginative concepts such as futuristic science and technology. 3. This makes it a powerful tool for social commentary and for anticipating future challenges and dilemmas. 4. While entertaining, the genre serves a purpose beyond mere escapism.
+A. 2, 4, 1, 3
+B. 1, 3, 2, 4
+C. 4, 1, 3, 2
+D. 2, 1, 4, 3
+Answer: A
+
+Q.100: Rearrange the following sentences to form a coherent paragraph: 1. This process ensures that the food we eat is safe and does not contain harmful bacteria or other contaminants. 2. Food processing is a series of methods used to transform raw ingredients into consumable products. 3. These methods can range from simple actions like cutting and grinding to more complex procedures such as pasteurization and fermentation. 4. Furthermore, it also helps to preserve food, extend its shelf life, and enhance its nutritional value.
+A. 2, 3, 1, 4
+B. 1, 2, 3, 4
+C. 3, 1, 4, 2
+D. 4, 2, 1, 3
+Answer: A
+

@@ -1,0 +1,902 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "Count consonants between the 2nd and 7th letter of TECHNOLOGY. TECHNOLOGY",
+    "option_a": "3",
+    "option_b": "4",
+    "option_c": "5",
+    "option_d": "6",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 2,
+    "question_text": "Choose the address that is the same as the one given below. 56/A, Greenwood Villa, Salt Lake City, Kolkata, West Bengal - 700091",
+    "option_a": "56/A, Greenwood Villa, Salt Lake, Kolkata,West Bengal - 700091",
+    "option_b": "56/A, Greenwood Villas, Salt Lake City, Kolkata, West Bengal - 700091",
+    "option_c": "56/A, Greenwood Villa, Salt Lake City, Kolkata, West Bengal - 700091",
+    "option_d": "65/A, Greenwood Villa, Salt Lake City, Kolkata, West Bengal - 700091",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 3,
+    "question_text": "Select the letter-cluster from among the given options that can replace the question mark (?) in the following series: HDZ LGB PJD TMF ?",
+    "option_a": "X P H",
+    "option_b": "X O H",
+    "option_c": "X P G",
+    "option_d": "W P H",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 4,
+    "question_text": "A is the brother of B. B is the daughter of C. How is A related to C?",
+    "option_a": "Daughter",
+    "option_b": "Son",
+    "option_c": "Father",
+    "option_d": "Uncle",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 5,
+    "question_text": "B is the sister of A. A is the brother of C. C is the daughter of D. How is B related to D?",
+    "option_a": "Daughter",
+    "option_b": "Sister",
+    "option_c": "Son",
+    "option_d": "Granddaughter",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 6,
+    "question_text": "What comes next: 2, 3, 10, 15, 26, 35, ?",
+    "option_a": "50",
+    "option_b": "57",
+    "option_c": "47",
+    "option_d": "49",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 7,
+    "question_text": "Choose the group in which all numbers belong to the same category:",
+    "option_a": "2, 4, 6, 8",
+    "option_b": "3, 6, 9, 11",
+    "option_c": "5, 10, 13, 21",
+    "option_d": "7, 14, 26, 38",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 8,
+    "question_text": "What will come at the place of question mark? 4, 10, 22, 46, 94, ?",
+    "option_a": "190",
+    "option_b": "191",
+    "option_c": "192",
+    "option_d": "196",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 9,
+    "question_text": "Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option. Statement: Despite the unpredictability of future technologies, regulatory frameworks must evolve to preempt ethical crises. Assumptions: I. Unregulated technological growth can cause ethical dilemmas. II. Ethical standards are often retrofitted to existing technology. III. Regulatory systems can always accurately predict technological outcomes.",
+    "option_a": "Only I and II are implicit",
+    "option_b": "Only I is implicit",
+    "option_c": "All are implicit",
+    "option_d": "Only II and III are implicit",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 10,
+    "question_text": "Read the following statement carefully and identify the conclusion that follows. Statement: The education ministry has made moral education compulsory in schools. Conclusions: I. Students must attend moral education classes. II. Schools were not offering moral education earlier.",
+    "option_a": "Only Conclusion I follows",
+    "option_b": "Only Conclusion II follows",
+    "option_c": "Both I and II follow",
+    "option_d": "Neither I nor II follows",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 11,
+    "question_text": "Arrange the following in chronological order (Based on Age/History): 1. Industrial Revolution 2. Bronze Age 3. Information Age 4. Iron Age 5. Stone Age",
+    "option_a": "5, 2, 4, 1, 3",
+    "option_b": "2, 4, 5, 1, 3",
+    "option_c": "5, 4, 2, 1, 3",
+    "option_d": "1, 2, 3, 4, 5",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 12,
+    "question_text": "Choose the correct option to complete the series. Needle : Sew :: Keyboard : ?",
+    "option_a": "Draw",
+    "option_b": "Type",
+    "option_c": "Write",
+    "option_d": "Print",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 13,
+    "question_text": "Find the word that does not fit in the series: Complex, Intricate, Sophisticated, Simple, Elaborate",
+    "option_a": "Complex",
+    "option_b": "Intricate",
+    "option_c": "Simple",
+    "option_d": "Sophisticated",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 14,
+    "question_text": "Find the unit that does not fit in the series: Kelvin, Celsius, Fahrenheit, Joule, Rankine",
+    "option_a": "Kelvin",
+    "option_b": "Rankine",
+    "option_c": "Fahrenheit",
+    "option_d": "Joule",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 15,
+    "question_text": "In each of the following questions, a specific rearrangement of letters has been applied to the first word to form the second. Apply the same rearrangement pattern to the third word and choose the correct answer from the given options. METAPHOR : EMATHPRO :: NORMAL : ?",
+    "option_a": "ORMLAN",
+    "option_b": "ONRMLA",
+    "option_c": "ONMRLA",
+    "option_d": "ONMRAL",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 16,
+    "question_text": "In each of the following questions, a word is transformed into a combination of letters and numbers following a specific pattern. Analyze the transformation used in the first pair and apply the same rule to find the missing term in the second pair. BOAT : C40U :: JUMP : ?",
+    "option_a": "K58Q",
+    "option_b": "K76P",
+    "option_c": "K95T",
+    "option_d": "K52E",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 17,
+    "question_text": "Which of these words will come last in a dictionary?",
+    "option_a": "bench",
+    "option_b": "beneath",
+    "option_c": "bend",
+    "option_d": "bent",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 18,
+    "question_text": "Comprehension: In a certain number system there are only two notations to represent numbers: Δ and β. 0 is represented by Δ and 1 by β. The subsequent numbers are represented in the following manner: 2 is represented as βΔ, 3 is represented as ββ, 4 is represented as βΔΔ, 5 is represented as βΔβ and so on. How will you represent 81 in the given number system?",
+    "option_a": "βΔΔβΔβΔ",
+    "option_b": "βΔΔΔββ",
+    "option_c": "βΔβΔββ",
+    "option_d": "βΔβΔΔΔβ",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 19,
+    "question_text": "Find the odd one out from the given alternatives.",
+    "option_a": "Saturn",
+    "option_b": "Venus",
+    "option_c": "Jupiter",
+    "option_d": "Sun",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 20,
+    "question_text": "In a certain code language, WATER is written as YCVGT. How is VAPOR written in that code?",
+    "option_a": "XCRQT",
+    "option_b": "XCQRT",
+    "option_c": "XCPRT",
+    "option_d": "XCQTS",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 21,
+    "question_text": "A principal amount of ₹1,000 yields a simple interest of ₹180 over a period of 2 years. What is the annual rate of simple interest?",
+    "option_a": "8 %",
+    "option_b": "9 %",
+    "option_c": "7 %",
+    "option_d": "6 %",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 22,
+    "question_text": "If 3 @ 4 = 19, 5 @ 6 = 41, then what is 6 @ 7?",
+    "option_a": "49",
+    "option_b": "55",
+    "option_c": "61",
+    "option_d": "65",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 23,
+    "question_text": "If the given symbols mean: '+' means 'divided by' '-' means 'multiplied by' 'x' means 'minus' '÷' means 'plus' Then, find the value of the following expressions: 60 + 5 - 4 x 10 ÷ 2=?",
+    "option_a": "35",
+    "option_b": "40",
+    "option_c": "55",
+    "option_d": "65",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 24,
+    "question_text": "If '×' = '-', '-' = '+', '+' = '÷', '÷' = '×', which equation is correct?",
+    "option_a": "14 + 2 - 6 × 1 = 10",
+    "option_b": "12 - 4 + 2 × 2 = 12",
+    "option_c": "10 × 2 + 4 - 1 = 23",
+    "option_d": "20 - 2 × 3 + 4 = 18",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 25,
+    "question_text": "10 friends went for dinner and planned to split Rs. 200 equally. 2 didn't pay. How much did each of the rest pay?",
+    "option_a": "Rs. 25",
+    "option_b": "Rs. 20",
+    "option_c": "Rs. 22",
+    "option_d": "Rs. 28",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 26,
+    "question_text": "What material were the double-storeyed gates of Purana Qila primarily built with?",
+    "option_a": "Marble",
+    "option_b": "Red sandstone",
+    "option_c": "Glazed tiles",
+    "option_d": "Rubble",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 27,
+    "question_text": "Fill in the blank: The Tusu festival is primarily celebrated in the tribal belt of Jharkhand, especially around the area between _____, Tamar, and Raidih.",
+    "option_a": "Dumka",
+    "option_b": "Bundu",
+    "option_c": "Daltonganj",
+    "option_d": "Chaibasa",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 28,
+    "question_text": "Who is credited with developing the modern notation system for Hindustani classical music and documenting compositions in the Kramik Pustak Maalika?",
+    "option_a": "Ustad Allauddin Khan of Maihar Gharana",
+    "option_b": "Pandit Vishnu Digambar Paluskar of Gwalior",
+    "option_c": "Pandit Vishnu Narayan Bhatkhande of Bombay",
+    "option_d": "Saint Tyagaraja of Carnatic Tradition",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 29,
+    "question_text": "Consider the following statements about service rules in table tennis: 1) At 10-10, service alternates every two points. 2) In the final doubles game, receiver order changes when one side reaches 5 points. Which of the above is/are correct?",
+    "option_a": "Only 1 is Correct",
+    "option_b": "Only 2 is Correct",
+    "option_c": "1 and 2 are correct",
+    "option_d": "Neither 1 nor 2 is Correct",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 30,
+    "question_text": "Under Pitt's India Act, what restriction was placed on the Governor General and Council?",
+    "option_a": "They could not pass any civil law without Queen's consent.",
+    "option_b": "They could not issue orders without majority support.",
+    "option_c": "They were forbidden to declare war or make treaties without approval.",
+    "option_d": "They had to resign after 5 years in office.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 31,
+    "question_text": "What is meant by an \"own goal\" in football?",
+    "option_a": "A goal scored by a goalkeeper",
+    "option_b": "A goal scored from a penalty",
+    "option_c": "A goal scored accidentally into one's own net",
+    "option_d": "A goal scored during injury time",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 32,
+    "question_text": "Consider the following statements about India's Winter Olympics participation: 1) Shiva Keshavan competed in six Games and introduced luge to India. 2) Arif Mohammad Khan was the first Indian to qualify for two alpine skiing events in 2022. Which of the statements is/are correct?",
+    "option_a": "Only Statement 1 is correct",
+    "option_b": "Only Statement 2 is correct",
+    "option_c": "1 and 2 both are correct",
+    "option_d": "Neither 1 nor 2 is Correct",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 33,
+    "question_text": "Which 2024 India-Bangladesh energy project involves a 765 kV cross-border transmission line to boost hydroelectric trade across multiple countries?",
+    "option_a": "Agartala-Parbotipur-Guwahati Transmission Grid",
+    "option_b": "Katihar-Parbotipur-Bornagar Interconnection Project",
+    "option_c": "Jalpaiguri-Chattogram Power Corridor",
+    "option_d": "Siliguri-Bogura-Mymensingh HVDC Link",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 34,
+    "question_text": "Consider the following statements about the book 'Being Indian' by Pavan K. Varma: 1) The book won the Vodafone Crossword Book Award for exploring Indian identity and culture. 2) It received the Sahitya Akademi Award for its contributions to Indian English poetry. Which of the above statements is/are correct?",
+    "option_a": "Only statement 1 is correct",
+    "option_b": "Only statement 2 is correct",
+    "option_c": "Both statements 1 and 2 are correct",
+    "option_d": "Neither statement 1 nor 2 is correct",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 35,
+    "question_text": "Fill in the blank: Javelin thrower Neeraj Chopra won India's first-ever gold at the World Athletics Championships in ______ in 2023.",
+    "option_a": "Eugene",
+    "option_b": "Tokyo",
+    "option_c": "Budapest",
+    "option_d": "Doha",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 36,
+    "question_text": "Who launched the campaign \"Ek Ped Maa Ke Naam\" in 2024, encouraging citizens to plant trees in honor of their mothers and Mother Earth?",
+    "option_a": "Narendra Modi",
+    "option_b": "Leena Nandan",
+    "option_c": "Bhupender Yadav",
+    "option_d": "Ashwini Vaishnaw",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 37,
+    "question_text": "What causes a river to develop meanders?",
+    "option_a": "High-altitude origin",
+    "option_b": "Sudden tectonic uplift",
+    "option_c": "Lateral erosion in flat terrain",
+    "option_d": "Ocean current influence",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 38,
+    "question_text": "Fill in the Blanks: NISAR maps the global surface every ____.",
+    "option_a": "3 days",
+    "option_b": "12 days",
+    "option_c": "24 hrs",
+    "option_d": "5 days",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 39,
+    "question_text": "Which of the below statements on the plant hormones is INCORRECT?",
+    "option_a": "Auxins promote growth",
+    "option_b": "Cytokinins delay aging",
+    "option_c": "Ethylene promotes seed germination",
+    "option_d": "Gibberellins promote stem elongation",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 40,
+    "question_text": "Which of the following disputes falls under the Supreme Court's exclusive original jurisdiction as per Article 131 of the Indian Constitution?",
+    "option_a": "Inter-State water disputes",
+    "option_b": "Election disputes of MPs and MLAs",
+    "option_c": "Disputes between Centre and one or more States",
+    "option_d": "Appeals against High Court decisions",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 41,
+    "question_text": "If the resistance of a conductor is doubled while keeping the potential difference across its ends constant, what will happen to the current flowing through it?",
+    "option_a": "It will double",
+    "option_b": "It will halve",
+    "option_c": "It will remain unchanged",
+    "option_d": "It will quadruple",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 42,
+    "question_text": "Under Bharatiya Nagarik Suraksha Samhita(BNSS), the period for default bail in minor offences is capped at?",
+    "option_a": "30 days",
+    "option_b": "45 days",
+    "option_c": "60 days",
+    "option_d": "90 days",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 43,
+    "question_text": "Which scheme promotes crop diversification through cluster-based planning?",
+    "option_a": "PM-AASHA (Pradhan Mantri Annadata Aay Sanrakshan Abhiyan)",
+    "option_b": "RKVY (Rashtriya Krishi Vikas Yojana)",
+    "option_c": "SMAM (Sub-Mission on Agricultural Mechanization)",
+    "option_d": "AIF (Agriculture Infrastructure Fund)",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 44,
+    "question_text": "Read the below statements marked as Assertion (A) and Reason (R). Mark the correct options: Assertion (A): PM2.5 is more harmful than PM10 in AQI. Reason (R): PM2.5 particles are smaller and can reach deep into the lungs and bloodstream.",
+    "option_a": "Both A and R are true, and R is the correct explanation of A.",
+    "option_b": "Both A and R are true, but R is not the correct explanation of A.",
+    "option_c": "A is true, but R is false.",
+    "option_d": "A is false, but R is true.",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 45,
+    "question_text": "Which national park reported a successful tiger population rise in 2024, reaching over 150 tigers?",
+    "option_a": "Ranthambore",
+    "option_b": "Nagarhole National Park",
+    "option_c": "Corbett",
+    "option_d": "Satpura",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 46,
+    "question_text": "Fill in the Blank: Doctrine of Severability allows the _____ part of a law to be retained.",
+    "option_a": "Repealed",
+    "option_b": "Inconsistent",
+    "option_c": "Valid",
+    "option_d": "Unconstitutional",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 47,
+    "question_text": "Read the statements carefully and choose the correct option: Assertion (A): Aluminium smelting is the most important metallurgical industry in India. Reason (R): Aluminium is used in the manufacture of aircraft, wires, and utensils.",
+    "option_a": "Both A and R are true, and R is the correct explanation of A",
+    "option_b": "Both A and R are true, but R is not the correct explanation of A",
+    "option_c": "A is true, but R is false",
+    "option_d": "A is false, but R is true",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 48,
+    "question_text": "Match the dance with its prime social/religious context: Dance social/religious context 1. Rauf A. Eid & spring-wedding festivities 2. Karma B. Bhadra Ekadashi agrarian ritual 3. Tamasha C. Night-long folk-theatre in Shimga season 4. Jhumar D. Post-monsoon tea-garden recreations",
+    "option_a": "1-A, 2-B, 3-C, 4-D",
+    "option_b": "1-B, 2-A, 3-C, 4-D",
+    "option_c": "1-A, 2-C, 3-D, 4-B",
+    "option_d": "1-A, 2-C, 3-B, 4-D",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 49,
+    "question_text": "Which pair correctly matches atmosphere layer & feature?",
+    "option_a": "Troposphere - weather",
+    "option_b": "Thermosphere- ozone",
+    "option_c": "Mesosphere - satellites",
+    "option_d": "Stratosphere - meteors",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 50,
+    "question_text": "Consider the following statements: 1. The Concurrent List allows both Centre and States to legislate. 2. In case of conflict, State law prevails over Union law. Which of the above is/are correct?",
+    "option_a": "Only 1",
+    "option_b": "Only 2",
+    "option_c": "Both 1 and 2",
+    "option_d": "Neither 1 nor 2",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 51,
+    "question_text": "If p:q=4:1, find (5p+3q):(5p-3q).",
+    "option_a": "23 : 17",
+    "option_b": "17 : 23",
+    "option_c": "7 : 17",
+    "option_d": "17 : 7",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 52,
+    "question_text": "What is the value of:(√18 + √2)2-(√8 + √2)2",
+    "option_a": "14",
+    "option_b": "15",
+    "option_c": "16",
+    "option_d": "17",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 53,
+    "question_text": "Simplify: [Algebraic expression omitted in source official exam PDF]",
+    "option_a": "[Option A omitted in source key]",
+    "option_b": "[Option B omitted in source key]",
+    "option_c": "[Option C omitted in source key]",
+    "option_d": "[Option D omitted in source key]",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 54,
+    "question_text": "A, B, and C invested ₹24,000, ₹36,000, and ₹40,000 respectively. A's investment was for 12 months, B's for 8 months, and C's for 6 months. The total profit is ₹50,000. What is B's share of the profit?",
+    "option_a": "₹17,647.06",
+    "option_b": "₹27,647.56",
+    "option_c": "₹23,647.46",
+    "option_d": "₹21,647.72",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 55,
+    "question_text": "The average age of a committee of 9 members increases by 3 years when two men aged 42 and 44 years are replaced by two women. What is the average age of these two women?",
+    "option_a": "50.5 years",
+    "option_b": "46.5 years",
+    "option_c": "56.5 years",
+    "option_d": "60.5 years",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 56,
+    "question_text": "There are 6 consecutive integers and 5 consecutive integers. The average of the 6 integers is 2 less than the average of the 5 integers. The sum of the 5 integers is 4 more than the sum of the 6 integers. Find the average of the 6 integers.",
+    "option_a": "6",
+    "option_b": "5",
+    "option_c": "4",
+    "option_d": "3",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 57,
+    "question_text": "Seventy-five percent of a number is 15 more than two-thirds of that number. Find the number.",
+    "option_a": "120",
+    "option_b": "150",
+    "option_c": "180",
+    "option_d": "210",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 58,
+    "question_text": "A TV set is available for ₹19,650 in cash or for ₹3,100 as a cash down payment and three equal annual instalments. If the shopkeeper charges interest at the rate of 10% per annum compounded annually, calculate the amount of each instalment.",
+    "option_a": "₹ 9,655",
+    "option_b": "₹ 7,655",
+    "option_c": "₹ 6,655",
+    "option_d": "₹ 8,655",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 59,
+    "question_text": "A mobile phone retailer sells a phone for ₹P and earns a profit of 20%. For a special festive offer, he marks the same phone at ₹1.5P. At the offer, he provides a discount of 10%. What will be the percentage profit that he will make during the festive offer?",
+    "option_a": "26%",
+    "option_b": "56%",
+    "option_c": "62%",
+    "option_d": "60%",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 60,
+    "question_text": "A gadget is sold at a 15% discount on its marked price. This sale leads to a profit of 20% on its cost price. If the profit earned is ₹450, what would have been the selling price if the gadget was sold at a 25% discount on its marked price?",
+    "option_a": "₹2,585.36",
+    "option_b": "₹1,528.24",
+    "option_c": "₹2,879.45",
+    "option_d": "₹2382.35",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 61,
+    "question_text": "A, B, and C can complete a certain task in 20, 30, and 60 days, respectively. How many days will it take for A to finish the work if he receives help from B and C every third day?",
+    "option_a": "15 days",
+    "option_b": "12 days",
+    "option_c": "10 days",
+    "option_d": "9 days",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 62,
+    "question_text": "Two distinct grades of rice, one priced at ₹80 per kilogram and the other at ₹120 per kilogram, are amalgamated in an undisclosed proportion. The resultant blend is retailied at ₹132 per kilogram, securing a profit margin of 20% on the overall cost price. Determine the precise ratio in which the two rice varieties were intermingled.",
+    "option_a": "1 : 3",
+    "option_b": "2 : 1",
+    "option_c": "3 : 2",
+    "option_d": "4 : 1",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 63,
+    "question_text": "The ratio of the speeds of a car and a bus is 3 : 4. If the bus covers a distance of 320 km in 4 hours, what is the speed of the car in km/h?",
+    "option_a": "60 km/h",
+    "option_b": "75 km/h",
+    "option_c": "80 km/h",
+    "option_d": "90 km/h",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 64,
+    "question_text": "An individual invested certain amounts in three different schemes P, Q, and R at simple interest rates of 7% p.a., 9% p.a., and 11% p.a. respectively. If the total interest accrued in one year was ₹2520 and the amount invested in Scheme R was 250% of the amount invested in Scheme P and 300% of the amount invested in Scheme Q, what was the amount invested in Scheme P?",
+    "option_a": "₹5000",
+    "option_b": "₹5500",
+    "option_c": "₹6000",
+    "option_d": "₹6500",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 65,
+    "question_text": "A tower stands 50 meters tall. From its peak, the angles of depression to the top and bottom of a nearby building are measured at 30° and 45°, respectively. Determine the approximate height of the building as well as the horizontal distance separating the tower from the building.",
+    "option_a": "height= 21 m , distance =50 m",
+    "option_b": "height = 25 m , distance = 25 m",
+    "option_c": "height = 28 m , distance = 15 m",
+    "option_d": "height = 18 m , distance = 15 m",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 66,
+    "question_text": "A sphere is melted and recast into 8 identical cones, each with radius 3 cm and height 4 cm. What was the radius of the original sphere?",
+    "option_a": "4.16 cm",
+    "option_b": "5.28 cm",
+    "option_c": "6.54 cm",
+    "option_d": "7.56 cm",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 67,
+    "question_text": "The area of a regular hexagon is made of how many equilateral triangles?",
+    "option_a": "3",
+    "option_b": "4",
+    "option_c": "5",
+    "option_d": "6",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 68,
+    "question_text": "A circular fountain with a radius of 7 m is encircled by a grass bed that is 3.5 m wide. Determine the ratio of the area of the grass bed to the area of the fountain.",
+    "option_a": "3:2",
+    "option_b": "2:1",
+    "option_c": "5:4",
+    "option_d": "4:1",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 69,
+    "question_text": "A tent designed as a triangular prism features a triangular base with an area of 20 m² and a height of 6 m. What is the volume of this tent?",
+    "option_a": "100 m³",
+    "option_b": "120 m³",
+    "option_c": "130 m³",
+    "option_d": "140 m³",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 70,
+    "question_text": "Which line has slope -1 and passes through (2,3)?",
+    "option_a": "y = -x + 5",
+    "option_b": "y = x + 5",
+    "option_c": "y = 5x + 2",
+    "option_d": "y = -5x + 2",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 71,
+    "question_text": "Simplify: √45 + √20 - √5.",
+    "option_a": "4√5",
+    "option_b": "6√5",
+    "option_c": "8√5",
+    "option_d": "7√5",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 72,
+    "question_text": "Three non-overlapping, non-touching circles are drawn in a plane. What is the maximum number of distinct common tangents that can be drawn to them in total?",
+    "option_a": "17",
+    "option_b": "16",
+    "option_c": "9",
+    "option_d": "12",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 73,
+    "question_text": "In a circle, chord AB and chord CD intersect at E such that AE : EB = 2 : 3 and CE : ED = 5 : 2. If AB = 15 cm, find the length of chord CD.",
+    "option_a": "14 cm",
+    "option_b": "16 cm",
+    "option_c": "15 cm",
+    "option_d": "17 cm",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 74,
+    "question_text": "A chord in a circle with radius 10 cm subtends an angle of 90° at the center. What is the area of the minor segment?",
+    "option_a": "(25π−50) sq. cm",
+    "option_b": "(50π−25) sq. cm",
+    "option_c": "(50π−50) sq. cm",
+    "option_d": "(100π−50) sq. cm",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 75,
+    "question_text": "Evaluate: (0.05 + 0.01 ) ÷ (0.25 + 0.05 ) (0.05³ + 0.01³) ÷ (0.25³ + 0.05³)",
+    "option_a": "0.008",
+    "option_b": "0.004",
+    "option_c": "0.006",
+    "option_d": "0.002",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 76,
+    "question_text": "Select the most appropriate synonym of the given word: GARRULOUS",
+    "option_a": "Talkative",
+    "option_b": "Reserved",
+    "option_c": "Silent",
+    "option_d": "Listen",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 77,
+    "question_text": "Select the most appropriate antonym of the given word. Incessant",
+    "option_a": "Constant",
+    "option_b": "Ceaseless",
+    "option_c": "Intermittent",
+    "option_d": "Perpetual",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 78,
+    "question_text": "Select the most appropriate antonym of the given word. Piquant 3 3 3 3",
+    "option_a": "Bland",
+    "option_b": "Spicy",
+    "option_c": "Zesty",
+    "option_d": "Tart",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 79,
+    "question_text": "Choose the correct meaning of idiom: Carry coals to Newcastle",
+    "option_a": "Provide something where it is already abundant",
+    "option_b": "Seek advice from experts",
+    "option_c": "Complain without cause",
+    "option_d": "Travel without direction",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 80,
+    "question_text": "Choose the correct meaning of idiom: Toe the line",
+    "option_a": "Follow the leader physically",
+    "option_b": "Join the military",
+    "option_c": "Obey rules or authority exactly",
+    "option_d": "Oppose popular opinion",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 81,
+    "question_text": "Which is the correct spelling of a word meaning 'self-rule'?",
+    "option_a": "Autonomy",
+    "option_b": "Autonamy",
+    "option_c": "Autonommy",
+    "option_d": "Autonaumy",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 82,
+    "question_text": "Spot the correct spelling of a 24-hour biological cycle.",
+    "option_a": "Circadion",
+    "option_b": "Circadian",
+    "option_c": "Circadien",
+    "option_d": "Circadijan",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 83,
+    "question_text": "Choose the correct one-word substitute for: 'Something that is impossible to be read'.",
+    "option_a": "Illegible",
+    "option_b": "Decipherable",
+    "option_c": "Invisible",
+    "option_d": "Unutterable",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 84,
+    "question_text": "Choose the correct one-word substitute for: 'A deep and seemingly bottomless chasm'.",
+    "option_a": "Crevasse",
+    "option_b": "Crater",
+    "option_c": "Abyss",
+    "option_d": "Gorge",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 85,
+    "question_text": "Choose the correct phrasal verb: The scientist was unable to _____ a definitive conclusion from the data.",
+    "option_a": "draw out",
+    "option_b": "bring up",
+    "option_c": "make over",
+    "option_d": "arrive at",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 86,
+    "question_text": "Select the correct option: He spoke so ____ that even abstruse theories seemed digestible.",
+    "option_a": "lucid",
+    "option_b": "lucidly",
+    "option_c": "lucidity",
+    "option_d": "lucidness",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 87,
+    "question_text": "Find the part of the sentence that contains an error: It was the misalignment between projected and actual data (1)/ that cast doubt not only on the calculations (2)/ but also on the assumptions that (3)/ underlied the funding strategy. (4)",
+    "option_a": "1",
+    "option_b": "2",
+    "option_c": "3",
+    "option_d": "4",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 88,
+    "question_text": "Change the following from active to passive: Someone must have tempered with the encryption keys.",
+    "option_a": "The encryption keys must have been tempered with.",
+    "option_b": "The encryption keys must have tempered by someone.",
+    "option_c": "The encryption keys must be tempered with by someone.",
+    "option_d": "The encryption keys must had been tempered with.",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 89,
+    "question_text": "Select the sentence containing the homonym of the highlighted word: The artisan engraved a cartouche around the royal name.",
+    "option_a": "The papyrus bore a golden cartouche of the pharaoh.",
+    "option_b": "The Egyptian cartouche encircled each hieroglyph name.",
+    "option_c": "The archaeologist uncovered a silver cartouche.",
+    "option_d": "The sculptor carved a cartouche of floral motifs for the ceiling.",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 90,
+    "question_text": "Convert the sentence provided below from its passive voice structure to an active voice structure: A solution has been suggested by the team to resolve the issue.",
+    "option_a": "The team had suggested a solution to resolve the issue.",
+    "option_b": "The team was suggesting a solution to resolve the issue.",
+    "option_c": "The team suggested a solution to resolve the issue.",
+    "option_d": "The team has suggested a solution to resolve the issue.",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 91,
+    "question_text": "Choose the most suitable option to replace the highlighted part of the sentence: She told to me the news.",
+    "option_a": "told me",
+    "option_b": "told for me",
+    "option_c": "said to me",
+    "option_d": "has told to me",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 92,
+    "question_text": "Choose the most suitable option to replace the highlighted part of the sentence: Neither of the options are suitable for this task.",
+    "option_a": "is suitable to the task",
+    "option_b": "is suitable for this task",
+    "option_c": "were suitable in this task",
+    "option_d": "is suitable at this task",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 93,
+    "question_text": "PASSAGE (Q.93 - Q.97) Read the following passage and answer the questions based on the passage : Democracy is frequently extolled as the political system that best guarantees individual liberty. Enshrined in constitutional rights and protected by the rule of law, freedom of speech, association, religion, and conscience are regarded as hallmarks of democratic governance. However, what is less frequently acknowledged—but equally vital—is the reciprocal pillar of responsibility without which such freedoms can degenerate into chaos, polarization, or authoritarian backlashes. Freedom in a democracy is not absolute; it exists within a framework of mutual restraint and civic discipline. The right to express dissent, for instance, is foundational. Yet when freedom of expression is weaponized to disseminate hate speech, misinformation, or seditious propaganda, it ceases to serve the democratic cause. Responsibility thus entails a conscious engagement with the implications of one's actions—not just their legality, but their ethical and civic consequences. The challenge lies in reconciling liberty with accountability in pluralistic societies. With diverse cultural, ideological, and economic constituencies, democracies are inherently sites of contention. In such contexts, responsibility demands more than legal compliance—it requires empathy, critical thinking, and a commitment to collective well-being. A citizen's right to protest, for example, must be exercised with awareness of public order and respect for differing viewpoints. Similarly, the freedom to vote must be matched by an obligation to make informed choices, unswayed by populism, prejudice, or manipulation. The tension between freedom and responsibility is perhaps most visible during moments of crisis—be it a pandemic, a communal riot, or a constitutional standoff. In such times, the temptation to prioritize personal liberty at the cost of collective safety can prove fatal. Refusal to wear masks during a health emergency or the viral spread of unverified news during civil unrest exemplify how unbridled freedom can undermine democratic resilience. Moreover, democracy itself is not self-sustaining; it requires vigilant citizens who recognize that rights are not entitlements in perpetuity, but privileges preserved through active participation. When freedom is divorced from responsibility, democratic institutions become vulnerable to erosion—from within. Demagogues often rise not solely because of state failure, but due to civic apathy or irresponsible use of democratic freedoms by the populace itself. Therefore, in any functioning democracy, freedom and responsibility are not opposing forces but mutually reinforcing imperatives. The preservation of liberty necessitates a citizenry capable of ethical judgment, informed debate, and constructive dissent. In the absence of responsibility, freedom risks transforming from a catalyst of justice into a vehicle of division. Democracy survives not just through the laws it enacts, but through the civic virtues its citizens embody. According to the passage, what happens when freedom is exercised without responsibility?",
+    "option_a": "It enhances legal systems",
+    "option_b": "It strengthens civic unity",
+    "option_c": "It leads to misuse and societal harm",
+    "option_d": "It guarantees better governance",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 94,
+    "question_text": "Why does the author mention protests and voting as examples?",
+    "option_a": "To criticize public participation",
+    "option_b": "To show areas where freedom and responsibility must coexist",
+    "option_c": "To promote legal reforms",
+    "option_d": "To support authoritarian models",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 95,
+    "question_text": "What is implied about the relationship between citizens and democratic institutions?",
+    "option_a": "Citizens cannot influence institutions",
+    "option_b": "Institutions are entirely self-preserving",
+    "option_c": "Citizens play an active role in sustaining democracy",
+    "option_d": "Democratic institutions should restrict citizens' rights",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 96,
+    "question_text": "How does the passage describe the impact of crises on freedom in democracies?",
+    "option_a": "Crises validate unlimited liberty",
+    "option_b": "Crises show the need for absolute state control",
+    "option_c": "Crises reveal the dangers of unregulated freedom",
+    "option_d": "Crises diminish the value of rights",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 97,
+    "question_text": "What tone best describes the author's stance on freedom in democracy?",
+    "option_a": "Cynical and dismissive",
+    "option_b": "Balanced and cautionary",
+    "option_c": "Indifferent and neutral",
+    "option_d": "Overly optimistic",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 98,
+    "question_text": "Select the correct option for the Direct Speech conversion of the sentence below. He observed that, had market liquidity vanished entirely, the exchange would have suspended trading.",
+    "option_a": "He said, \"If market liquidity vanishes entirely, the exchange suspends trading.\"",
+    "option_b": "He said, \"Had market liquidity vanished entirely, the exchange would have suspended trading.\"",
+    "option_c": "He said, \"The exchange will suspend trading if market liquidity had vanished entirely.\"",
+    "option_d": "He said, \"If the exchange suspended trading, it was because market liquidity vanished entirely.\"",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 99,
+    "question_text": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. He said, \"I am reading a book.\"",
+    "option_a": "He said he is reading a book.",
+    "option_b": "He said that he was reading a book.",
+    "option_c": "He said that he had read a book.",
+    "option_d": "He said he read a book.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 100,
+    "question_text": "Rearrange the following sentences to form a meaningful passage: 1. Solar energy is one of the most promising renewable energy sources. 2. It has a minimal environmental impact compared to fossil fuels. 3. Solar panels convert sunlight into electricity. 4. However, energy storage remains a significant challenge for solar energy systems.",
+    "option_a": "2-1-4-3",
+    "option_b": "1-2-4-3",
+    "option_c": "3-2-4-1",
+    "option_d": "4-1-2-3",
+    "correct_answer": "B"
+  }
+]

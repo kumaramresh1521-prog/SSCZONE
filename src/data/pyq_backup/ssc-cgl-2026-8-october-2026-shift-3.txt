@@ -1,0 +1,774 @@
+Q.1: In the following question, select the related word from the given alternatives. Brain: Cognitive process::Kidney:?
+A. Digestive Process
+B. Filtration Process
+C. Breathing Process
+D. Producing Bile
+Answer: B
+
+Q.2: If # = +, @ = x, % = -, then (5 # 2) @ 3 % 4 = ?
+A. 20
+B. 17
+C. 18
+D. 21
+Answer: B
+
+Q.3: If numbers starting with 732 are Omega numbers, how many Omega numbers are there in the below series? | 732819 | 732100 | 745668 | 732547 | 732890 | | 712345 | 732123 | 732456 | 712732 | 732001 | | 732999 | 732333 | 822732 | 732654 | 732321 |
+A. 10
+B. 11
+C. 12
+D. 13
+Answer: C
+
+Q.4: Statement: "Technological literacy is becoming as fundamental as reading and writing in the 21st century."
+
+conclusions:
+
+I. Those without technological literacy may be disadvantaged.
+
+II. Traditional literacy skills are becoming irrelevant.
+A. Only I follows
+B. Only II follows
+C. Both follow
+D. Neither follows
+Answer: A
+
+Q.5: Read the following scenario carefully and choose the most appropriate transportation option that fulfills all the given criteria. Ankit is planning a weekend trip with friends. They want a place where they can enjoy nature, do light trekking, and stay within a limited budget. Which option should he choose?
+A. A luxury beach resort with private pools and fine dining.
+B. A mountain lodge offering trekking trails, group cabins, and campfires.
+C. A theme park with premium ticket packages and food courts.
+D. A city hotel near a shopping mall with weekend sales.
+Answer: B
+
+Q.6: Simplify: 2 + 3 −5 3 4 6
+A. 5/9
+B. 7/12
+C. 3/7
+D. 11/13
+Answer: B
+
+Q.7: In a row of 100 seats, every 4th seat is marked with a sticker, and every 6th seat has a cushion. How many seats have both a sticker and a cushion?
+A. 8
+B. 10
+C. 12
+D. 15
+Answer: A
+
+Q.8: Identify the word that comes last in a dictionary.
+A. Accept
+B. Achieve
+C. Amazing
+D. Acknowledge
+Answer: C
+
+Q.9: Here some problem or solution of the problem is given in the statement you have to choose the appropriate logical deduction for the given statement. All fish can swim. Some animals that can swim are not fish. Which conclusion follows?
+A. All animals are fish
+B. No fish are animals
+C. Some animals that swim are not fish
+D. All swimmers are fish
+Answer: C
+
+Q.10: ![Figure](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-3_p3_x336.jpeg)
+A. 1
+B. 2
+C. 3
+D. 4
+Answer: C
+
+Q.11: Based on the Venn diagram given in the image, which letter represents men who live with their parents but are neither married nor engineers?
+
+Note: In the Venn diagram, the rectangle represents "Married men", circle represents "Men who live with their parents", and the triangle represents "Engineers".
+A. G
+B. H
+C. A
+D. C
+Answer: B
+
+Q.12: Three figures, 1, 2, and 3, in Image X demonstrate how to fold a piece of paper in a specific order. The procedure for cutting the folded paper is shown in figure 3. Choose the figure in Image Y that most closely reflects figure 3's unfolded shape.
+A. A
+B. B
+C. C
+D. D
+Answer: B
+
+Q.13: ![Figure](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-3_p3_x337.jpeg)
+A. A
+B. B
+C. C
+D. D
+Answer: B
+
+Q.14: ![Figure](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-3_p3_x338.jpeg)
+A. A
+B. B
+C. C
+D. D
+Answer: C
+
+Q.15: ![Figure](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-3_p3_x339.jpeg)
+A. A
+B. B
+C. C
+D. D
+Answer: B
+
+Q.16: Some of the equations are provided below with symbols and mathematical relations you have to check which of the following combination is correct If A ★ B = (A + B) × (A
+
+- B), find 6 ★ 2.
+A. 32
+B. 24
+C. 20
+D. 36
+Answer: A
+
+Q.17: Which two signs should be interchanged to make the equation correct? 20 - 6 + 8 × 2 ÷ 4 = 30
+A. + and x
+B. - and ÷
+C. - and +
+D. x and ÷
+Answer: D
+
+Q.18: Select the Venn diagram that best illustrates the relationship between the following classes. Doctor, Surgeon, Nurse
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-3_p4_x595.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-3_p4_x596.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-3_p3_x340.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-3_p3_x341.jpeg)
+Answer: B
+
+Q.19: A cube is made by folding the given sheet. In the cube so formed, which of the following pairs of symbols will NOT be on the opposite faces?
+A. & and $
+B. $ and #
+C. @ and %
+D. # and >
+Answer: B
+
+Q.20: An exceptional employee who usually exceeds targets has missed three critical deadlines. Upon private inquiry, they reveal they are undergoing a severe personal financial crisis. How do you balance empathetic leadership with strict organisational accountability?
+A. Maintain strict performance metrics while completely ignoring the personal crisis.
+B. Suspend all performance metrics indefinitely until the employee feels fully recovered.
+C. Express genuine concern privately while adjusting short-term expectations collaboratively.
+D. Transfer the employee immediately to a lower-stress department to ensure compliance.
+Answer: C
+
+Q.21: Your department must implement a necessary new internal policy that employees are highly likely to dislike or perceive negatively. To demonstrate transparent leadership, preserve long-term team trust, and ensure a smooth operational transition, what is the best approach for a manager to take?
+A. Announce the policy abruptly without providing any context, justification, or explanation.
+B. Delay the policy's implementation indefinitely, actively ignoring your 3 operational directive.
+C. Clear explain the strategic rationale behind the policy, acknowledge employee concerns openly, and invite questions.
+D. Blame senior management entirely for the decision to deflect personal responsibility and distance your department from the company.
+Answer: C
+
+Q.22: In the following question, one statement is given, followed by certain inferences. Consider the statement to be true even if it seems to contradict commonly known facts. Read the inferences carefully and decide which of them logically follow from the given statement.
+
+Statement: It has been reported that a significant number of cotton farmers are taking their own lives because of insufficient rainfall, which is causing crop failure and droughtlike situations. Inferences:
+
+I. Farmers involved in cultivating crops other than cotton are not facing incidents of suicide.
+
+II. The growth of cotton crops depends on the availability of adequate rainfall.
+A. Only Inference I follows.
+B. Only Inference II follows.
+C. Both Inferences I and II follow.
+D. Neither Inference I nor Inference II follows.
+Answer: B
+
+Q.23: Direction: Choose the most logical course of action. An organization notices that one regional office consistently exceeds performance targets, but an audit reveals practices that technically comply with regulations while potentially creating ethical concerns.
+A. Reward the office solely on the basis of its performance outcomes.
+B. Penalize the office immediately without reviewing the specific practices involved.
+C. Examine the practices thoroughly and align performance incentives with ethical standards.
+D. Ignore the concerns because no formal regulatory violation has occurred.
+Answer: C
+
+Q.24: ![Figure](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-3_p5_x845.jpeg)
+A. c
+B. a
+C. e
+D. d
+Answer: A
+
+Q.25: Fill in the blanks (_) using one of the following four options such that the series follows a specific pattern in the given order. xyz _ xy _ ax _ za _ yza
+A. ayxz
+B. zyax
+C. zxya
+D. azyx
+Answer: D
+
+Q.26: P V Sindhu became the first Indian to win the Badminton World Championship in the year ________.
+A. 2016
+B. 2019
+C. 2012
+D. 2008
+Answer: B
+
+Q.27: Which of the following countries has an HDI value classified as "Very High Human Development"?
+A. India
+B. Brazil
+C. Japan
+D. Chad
+Answer: C
+
+Q.28: Which organization is responsible for monitoring and regulating the use of performance-enhancing drugs in sports?
+A. International Olympic Committee (IOC)
+B. World Anti-Doping Agency (WADA)
+C. National Anti-Doping Agency (NADA)
+D. International Association of Athletics Federations (IAAF)
+Answer: B
+
+Q.29: Consider the following
+
+statements:
+
+1. Rajya Sabha can allow Parliament to make laws on State List.
+
+2. Rajya Sabha can amend Money Bills and delay them for 14 days. Which of the above statements is/are correct?
+A. Only 1
+B. Only 2
+C. Both 1 and 2
+D. Neither 1 nor 2 4 AWARENESS
+Answer: A
+
+Q.30: In which Indian musical tradition is the "Mridangam" a significant percussion instrument?
+A. Sufi
+B. Tala
+C. Tabla
+D. Carnatic Classical
+Answer: D
+
+Q.31: Which Mughal emperor commissioned the construction of the Taj Mahal?
+A. Akbar
+B. Shah Jahan
+C. Humayun
+D. Aurangzeb
+Answer: B
+
+Q.32: Which of the following pairs is incorrectly matched?
+A. Kumar Gandharva - Guitar
+B. Dwaram Venkataswamy Naidu - Violin
+C. Vikku Vinayakram - Ghatam
+D. Pandit Nikhil Jyoti Ghosh - Tabla
+Answer: A
+
+Q.33: How will VSAR's 20-30 m mapping capability most significantly impact future studies of Venus?
+A. It will enable real-time weather forecasting on Venus.
+B. It will map impact craters with detailed ejecta and melt features.
+C. It will eliminate the need for optical imagers on the spacecraft.
+D. It will map the planet's magnetic field with greater accuracy.
+Answer: B
+
+Q.34: Fill in the blanks: 18th Circle Style National Kabaddi Championship (Women) was held in ______
+A. Charkhi Dadri
+B. Patiala
+C. Jaipur
+D. Amritsar
+Answer: A
+
+Q.35: Which of the following pairs is/are correct :
+
+1. Meenakshi Sundareswarar TempleDravidian
+
+2. Dilwara Jain Temples - Jain (Maru-Gurjara / Solanki Nagara)
+
+3. Gol Gumbaz -Indo-Islamic / Deccan Sultanate
+A. Only 1 and 2
+B. Only 2 and 3
+C. 1, 2 and 3
+D. Only 1
+Answer: A
+
+Q.36: Which flagship scheme was launched to double farmers' income and improve agricultural infrastructure?
+A. Krishi Sinchai Yojana
+B. PM-KISAN
+C. Pradhan Mantri Kisan MaanDhan Yojana (PM-KMY)
+D. PM Fasal Bima Yojana
+Answer: C
+
+Q.37: What is the difference between a bailable and non-bailable offence under BNSS?
+A. Non-bailable offences can be compounded by the police
+B. Bailable offences are not punishable
+C. Bailable offences are listed in the First Schedule
+D. Non-bailable offences can be granted bail by any officer
+Answer: A
+
+Q.38: What is the SI unit of electric current?
+A. Volt
+B. Ohm
+C. Ampere
+D. Watt
+Answer: C
+
+Q.39: The Break-event Chart portrays the relationship between:
+A. Price, cost, profit
+B. Cost, volume, profit
+C. Price, sales, profit
+D. Cost, sales, production
+Answer: A
+
+Q.40: Which among the following is/are the motion(s) of the Earth:
+
+1. Revolution
+
+2. Rotation
+
+3. Reflection Which of the given option is/are correct?
+A. 1 and 2
+B. 1 and 3
+C. 3 only
+D. 1, 2 and 3
+Answer: A
+
+Q.41: Which of the following states has the highest percentage of Scheduled Tribes as per Census 2011?
+A. Odisha
+B. Chhattisgarh
+C. Mizoram
+D. Madhya Pradesh
+Answer: C
+
+Q.42: The real executive power in the Indian Union is exercised by:
+A. The President
+B. The Prime Minister
+C. The Chief Justice
+D. The Parliament
+Answer: B
+
+Q.43: Who presides/the joint sitting of the Parliament?
+A. President of India
+B. Speaker of Lok Sabha
+C. Chairman of Rajya
+D. Vice President Sabha
+Answer: B
+
+Q.44: is NOT covered under Article 20 of the Indian Constitution.
+A. Protection against self-incrimination
+B. Principle of double jeopardy
+C. Principle of ex-post facto laws
+D. Principle of legitimate expectation
+Answer: D
+
+Q.45: Who is the current Secretary of the Department of Economic Affairs, Ministry of Finance (as of 2025)?
+A. Shri Arunish
+B. Shri Ajay Seth Chawla
+C. Shri Arvind
+D. Shri V. Vualnam Shrivastava
+Answer: A
+
+Q.46: Approximately how many Indians live in regions less than 1 meter above sea level, as per The Lancet?
+A. 4 million
+B. 8 million
+C. 12 million
+D. 18 million
+Answer: A
+
+Q.47: Which ecological goal is not a primary aim of the Aravalli Green Wall Initiative?
+A. Combat desertification
+B. Sequester atmospheric carbon
+C. Enhance groundwater recharge
+D. Promote monoculture farming
+Answer: A
+
+Q.48: Which of the following correctly matches a Quad 2025 initiative with its sector?
+A. Cancer Moonshot - Maritime security
+B. MAITRI - Port construction
+C. QUIN - Foreign policy doctrine
+D. Digital Public Infrastructure - Fintech interoperability
+Answer: C
+
+Q.49: UNESCO has recognized which of the following as intangible cultural heritage from India?
+A. Bollywood film songs
+B. Baul songs and Vedic chanting
+C. Punjabi pop music
+D. Ghazals by contemporary artists
+Answer: B
+
+Q.50: After the Bahmani Sultanate disintegrated, it split into how many successor states?
+A. Two
+B. Three
+C. Five
+D. Seven
+Answer: A
+
+Q.51: The college IT cell is digitizing student records. Two computers, Comp A and Comp B, are assigned the task. Comp A processes the records in x hours, Comp B, being 25% faster, completes it in (x - 4) hours. Due to a malfunction, Comp A had to work alone for the first x hours, after which Comp B joined, and they completed the rest together in 4 hours. If the square of x equals the mean of 36, 64, 100, and 144, find the value of
+
+x. (upto 4 decimal places).
+A. 9.2736
+B. 8.3246
+C. 9.7663
+D. 9.3672
+Answer: D
+
+Q.52: A metal pipe is 77 cm long. The inner diameter of a cross-section is 4 cm, and the outer diameter is 4.4 cm. What is the total surface area of the pipe? (Use π= 22/7 )
+A. 2035 cm²
+B. 2038 cm²
+C. 2040 cm²
+D. 2025 cm²
+Answer: B
+
+Q.53: A regular square pyramid is cut by a plane parallel to its base. The cut is made at a height of 4 cm from the vertex. The original height of the pyramid was 10 cm. If the area of the base of the original pyramid (which is also the larger base of the frustum) is 100 cm², find the volume of the original pyramid.
+A. 266.67 cm³
+B. 333.33 cm³
+C. 400 cm³
+D. 450 cm³
+Answer: B
+
+Q.54: A right prism has total surface area 1400 cm². Its base is a rectangle 20 cm × 15 cm. Find the height.
+A. 21.52 cm
+B. 11.42 cm
+C. 19.79 cm
+D. 17.67 cm
+Answer: B
+
+Q.55: From a point on horizontal ground, located 129 meters away from the base of a cliff, the angle of elevation to the cliff's summit is observed to be 30°. Determine the vertical height of the cliff.
+A. 50√3 m
+B. 45√3 m
+C. 43√3 m
+D. 44√3 m
+Answer: C
+
+Q.56: ![Figure](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-3_p8_x1691.jpeg)
+A. 52%
+B. 60%
+C. 65%
+D. 70%
+Answer: A
+
+Q.57: ![Figure](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-3_p8_x1692.jpeg)
+A. 52%
+B. 58%
+C. 55%
+D. 60%
+Answer: C
+
+Q.58: Factorise: a² + b² + 2ab
+A. (a - b)²
+B. (a + b)²
+C. (a + b)(a - b)
+D. (a - b)(a + b)²
+Answer: B
+
+Q.59: The equation y = 2x + 3 represents a line. What is the y-intercept?
+A. 2
+B. 5
+C. 3
+D. 6
+Answer: C
+
+Q.60: A sum of ₹1,00,000 is invested at compound interest at 12% per annum compounded quarterly. What will be the amount after 1 year?
+A. ₹1,12,550.88
+B. ₹1,12,360.45
+C. ₹1,12,480
+D. ₹1,12,640.25
+Answer: D
+
+Q.61: A chord subtends an angle of 90° at the centre of a circle. If the radius is 10 cm, find the chord length.
+A. 10√4 cm
+B. 10√2 cm
+C. 12√4 cm
+D. 16 cm
+Answer: B
+
+Q.62: If the coordinates of the triangle vertices are A(2,3), B(8,3), and C(5,7), what are the coordinates of the centroid?
+A. (5, 4)
+B. (5, 13/3)
+C. (4, 5)
+D. (5, 5/3)
+Answer: B
+
+Q.63: A regular square pyramid has a base side of 8 cm and a slant height of 10 cm. Find its lateral surface area in square cm.
+A. 140
+B. 170
+C. 180
+D. 160
+Answer: D
+
+Q.64: Which mixed fraction is equal to the decimal
+
+4.25?
+A. 4(1/5)
+B. 4(2/5)
+C. 4(1/3)
+D. 4(1/4)
+Answer: D
+
+Q.65: A bar diagram shows the number of tourists visiting 5 tourist spots during 4 months. How many bars will the diagram contain?
+A. 15
+B. 20
+C. 9
+D. 10
+Answer: B
+
+Q.66: If tan θ= 0 , then sec² θ equals?
+A. -1
+B. 0
+C. 2
+D. 1
+Answer: D
+
+Q.67: A square land in Gujarat is fenced at ₹140 per metre. If the area of land is 8100 sq. m, what is the total fencing cost?
+A. ₹43,200
+B. ₹44,400
+C. ₹50,400
+D. ₹46,000
+Answer: C
+
+Q.68: A car takes 4 hours to reach Ahmedabad from Surat at 60 km/h. How long will it take to return at 80 km/h?
+A. 2 hours
+B. 5 hours
+C. 3 hours
+D. 4 hours
+Answer: C
+
+Q.69: In a mechanical system designed to dampen vibrations, two rotating components operate at angles whose tangent values sum to 3 and multiply to 2. To determine the resulting vibration amplitude during phase overlap, the sine of the sum of these angles is required. If two angles have tangent values such that their sum is 3 and product is 2, find the sine of the sum of the two angles.
+A. 0.9487
+B. (-0.9487)
+C. 0.5
+D. (-0.5)
+Answer: A
+
+Q.70: In a virtual reality simulation, a character's movement follows a smooth arc defined by an angle θ relative to a reference axis. During one animation frame, developers notice that the sum of sine and cosine of the angle θ is equal to 1. To fine-tune motion rendering, the graphics engine estimates rotational energy using the sum of the cubes of sine and cosine of θ. What is the value of sin³θ + cos³θ, given that sinθ + cosθ = 1?
+A. 0
+B. 1
+C. -1
+D. 2
+Answer: B
+
+Q.71: A publishing house analyzed how 720 editorial work-hours in a week were distributed across five departments involved in book production. The data was visualized in the form of a pie chart. If the company merges Proofreading and Fact-checking into one department, what is their total fraction of the chart and angle?
+A. 3/10 and 108°
+B. 5/12 and 115°
+C. 2/5 and 120°
+D. 3/8 and 135°
+Answer: A
+
+Q.72: Find the quantity of water added to 50 litres of a 20% alcohol solution to reduce alcohol concentration to 10%.
+A. 40 L
+B. 50 L
+C. 25 L
+D. 30 L
+Answer: B
+
+Q.73: Three workers A, B, and C can finish a task in 12, 15, and 20 days respectively. They all start together, A leaves after 3 days, and B leaves 2 days later. How many more days will C take to finish the work alone?
+A. 6 days
+B. 7 days
+C. 3 days 8 hours
+D. 9 days
+Answer: C
+
+Q.74: Find CI on ₹10,000 for 1.5 years at 10% p.a., interest compounded half-yearly.
+A. ₹1547
+B. ₹1552
+C. ₹1576
+D. ₹1585
+Answer: D
+
+Q.75: If x - 1/x = 2, find the value of x4 + 1/x4.
+A. 18
+B. 20
+C. 34
+D. 24
+Answer: C
+
+Q.76: Select the most appropriate antonym of the given word. Obsolete
+A. Ancient
+B. Current
+C. Useless
+D. Outdated
+Answer: B
+
+Q.77: Select the most appropriate antonym of the given word. Copious
+A. Prolix
+B. Scarce
+C. Comprehensive
+D. Voluminous
+Answer: B
+
+Q.78: Convert the below given indirect speech into direct speech appropriately: He told me that he was going to the market.
+A. He told me, "I go to the market".
+B. He told me, "I had been going to the market".
+C. He told me, "I am going to the market".
+D. He told me, "I will be going to the market".
+Answer: C
+
+Q.79: Identify the option that best corrects the highlighted part of the sentence for proper grammar and usage. He is interested for learning new languages.
+A. for learn
+B. in learning
+C. to learning
+D. with learning
+Answer: B
+
+Q.80: Identify the option that best corrects the highlighted part of the sentence for proper grammar and usage. He congratulated me for my success.
+A. with my success
+B. by my success
+C. on my success
+D. of my success
+Answer: C
+
+Q.81: Spot the error in the following sentence and identify the INCORRECT part. She prefers coffee than tea in the morning.
+A. prefers coffee
+B. than tea
+C. in the morning
+D. No error
+Answer: B
+
+Q.82: Spot the error in the following sentence and identify the INCORRECT part. She insisted me to attend the meeting at any cost.
+A. insisted me to
+B. attend the meeting
+C. at any cost
+D. No error
+Answer: A
+
+Q.83: Choose the one-word substitute for "an act of talking excessively or pointlessly; rambling."
+A. Prolixity
+B. Taciturnity
+C. Reticence
+D. Brevity
+Answer: A
+
+Q.84: Choose the correct meaning of idiom given below: "Break out in hives"
+A. To develop rashes from allergies
+B. To react angrily
+C. To become unconscious
+D. To recover from illness
+Answer: D
+
+Q.85: Identify the correct homonym that best fits the context of the sentence: The children were excited to see the ______ during their visit to the national park.
+A. dear
+B. deer
+C. dears
+D. dare
+Answer: B
+
+Q.86: Choose the correct spelling of the word, which means a general agreement or collective opinion reached by a group of people.
+A. Consanus
+B. Consensous
+C. Consensus
+D. Consenus
+Answer: B
+
+Q.87: A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. “Were it not for her persistence, we would never have succeeded,” remarked the CEO.
+A. The CEO said if it weren't her persistence, they wouldn't have succeeded.
+B. The CEO remarked that had it not been for her persistence, they would never have succeeded.
+C. The CEO remarked they never would have succeeded if not for her persistence.
+D. The CEO said had it not been her persistence, they wouldn't succeed.
+Answer: B
+
+Q.88: Rearrange the following sentences in correct order to make a meaningful passage.
+
+1. Garbage trucks collect waste from residential zones.
+
+2. Waste is taken to a segregation unit.
+
+3. Non-biodegradable items are sent for recycling.
+
+4. Biodegradable waste is moved to compost pits.
+A. 2-1-3-4
+B. 1-2-4-3
+C. 1-3-2-4
+D. 4-1-2-3
+Answer: B
+
+Q.89: Rearrange the following sentences in correct order to make a meaningful passage.
+
+1. The blood sample is centrifuged to separate plasma.
+
+2. It is collected from the vein using a sterile needle.
+
+3. Plasma is extracted into a fresh container.
+
+4. It is labeled and sent for testing.
+A. 2-1-3-4
+B. 1-2-3-4
+C. 2-3-1-4
+D. 3-2-1-4
+Answer: B
+
+Q.90: Rearrange the following sentences in correct order to make a meaningful sentence P. following a joint recommendation from the audit and ethics committees Q. the procurement policy R. was suspended indefinitely S. due to procedural inconsistencies and budgetary overreach
+A. QRSP
+B. PQRS
+C. QPRS
+D. RQSP
+Answer: C
+
+Q.91: Rearrange the following sentences in correct order to make a meaningful sentence P. amid global economic instability Q. the central bank's monetary interventions R. were cautiously adjusted S. to manage inflation without stalling growth
+A. QRSP
+B. QSPR
+C. QSRP
+D. RQSP
+Answer: A
+
+Q.92: Rearrange the following sentences in correct order to make a meaningful sentence P: than decolonial methods of inquiry Q: is more extractive R: the dominance of Eurocentric paradigms S: in indigenous research contexts
+A. RQSP
+B. QRSP
+C. RPQS
+D. QSRP
+Answer: A
+
+Q.93: **Comprehension (Q. 93 - 97):** The judiciary, in a constitutional democracy, occupies a space that is both exalted and ambiguous. It is exalted because it claims to stand apart from the immediacies of electoral calculation; it 10 is ambiguous because the boundary between interpretation and invention is often blurred. Judicial review, by its nature, is a (1) ______ exercise — it does not merely apply the law, it reshapes the very terrain on which law stands. Yet, courts often cloak their transformative role in a language of restraint. They invoke the need to defer to legislative wisdom, even when that deference veers into (2) ______. In such moments, constitutional morality becomes not a guide but a rhetorical artefact — cited, but rarely contested. The risk is not judicial activism, but judicial (3) ______: the quiet sanctioning of inertia under the guise of neutrality. To remedy this, one must reframe legitimacy not as insulation from scrutiny, but as (4) ______ within plural constitutional visions. Only then can jurisprudence become dialogic, rather than doctrinal — a space where dissent is not anomaly, but architecture. The Constitution, after all, is not a monolith but a palimpsest — layered, overwritten, and constantly in the process of (5) ______.
+
+---
+
+In the passage below, certain words have been removed. Read the passage thoroughly and choose the most suitable option to complete each blank appropriately. What should come in the place of blank number 1?
+A. ceremonial
+B. pragmatic
+C. hermeneutic
+D. adversarial
+Answer: A
+
+Q.94: **Comprehension (Q. 93 - 97):** The judiciary, in a constitutional democracy, occupies a space that is both exalted and ambiguous. It is exalted because it claims to stand apart from the immediacies of electoral calculation; it 10 is ambiguous because the boundary between interpretation and invention is often blurred. Judicial review, by its nature, is a (1) ______ exercise — it does not merely apply the law, it reshapes the very terrain on which law stands. Yet, courts often cloak their transformative role in a language of restraint. They invoke the need to defer to legislative wisdom, even when that deference veers into (2) ______. In such moments, constitutional morality becomes not a guide but a rhetorical artefact — cited, but rarely contested. The risk is not judicial activism, but judicial (3) ______: the quiet sanctioning of inertia under the guise of neutrality. To remedy this, one must reframe legitimacy not as insulation from scrutiny, but as (4) ______ within plural constitutional visions. Only then can jurisprudence become dialogic, rather than doctrinal — a space where dissent is not anomaly, but architecture. The Constitution, after all, is not a monolith but a palimpsest — layered, overwritten, and constantly in the process of (5) ______.
+
+---
+
+In the passage below, certain words have been removed. Read the passage thoroughly and choose the most suitable option to complete each blank appropriately. What should come in the place of blank number 2?
+A. abdication
+B. submission
+C. reciprocity
+D. entitlement
+Answer: A
+
+Q.95: **Comprehension (Q. 93 - 97):** The judiciary, in a constitutional democracy, occupies a space that is both exalted and ambiguous. It is exalted because it claims to stand apart from the immediacies of electoral calculation; it 10 is ambiguous because the boundary between interpretation and invention is often blurred. Judicial review, by its nature, is a (1) ______ exercise — it does not merely apply the law, it reshapes the very terrain on which law stands. Yet, courts often cloak their transformative role in a language of restraint. They invoke the need to defer to legislative wisdom, even when that deference veers into (2) ______. In such moments, constitutional morality becomes not a guide but a rhetorical artefact — cited, but rarely contested. The risk is not judicial activism, but judicial (3) ______: the quiet sanctioning of inertia under the guise of neutrality. To remedy this, one must reframe legitimacy not as insulation from scrutiny, but as (4) ______ within plural constitutional visions. Only then can jurisprudence become dialogic, rather than doctrinal — a space where dissent is not anomaly, but architecture. The Constitution, after all, is not a monolith but a palimpsest — layered, overwritten, and constantly in the process of (5) ______.
+
+---
+
+In the passage below, certain words have been removed. Read the passage thoroughly and choose the most suitable option to complete each blank appropriately. What should come in the place of blank number 3?
+A. deference
+B. minimalism
+C. complicity
+D. adventurism
+Answer: A
+
+Q.96: **Comprehension (Q. 93 - 97):** The judiciary, in a constitutional democracy, occupies a space that is both exalted and ambiguous. It is exalted because it claims to stand apart from the immediacies of electoral calculation; it 10 is ambiguous because the boundary between interpretation and invention is often blurred. Judicial review, by its nature, is a (1) ______ exercise — it does not merely apply the law, it reshapes the very terrain on which law stands. Yet, courts often cloak their transformative role in a language of restraint. They invoke the need to defer to legislative wisdom, even when that deference veers into (2) ______. In such moments, constitutional morality becomes not a guide but a rhetorical artefact — cited, but rarely contested. The risk is not judicial activism, but judicial (3) ______: the quiet sanctioning of inertia under the guise of neutrality. To remedy this, one must reframe legitimacy not as insulation from scrutiny, but as (4) ______ within plural constitutional visions. Only then can jurisprudence become dialogic, rather than doctrinal — a space where dissent is not anomaly, but architecture. The Constitution, after all, is not a monolith but a palimpsest — layered, overwritten, and constantly in the process of (5) ______.
+
+---
+
+In the passage below, certain words have been removed. Read the passage thoroughly and choose the most suitable option to complete each blank appropriately. What should come in the place of blank number 4?
+A. anchoring
+B. immersion
+C. entrenchment
+D. accountability
+Answer: A
+
+Q.97: **Comprehension (Q. 93 - 97):** The judiciary, in a constitutional democracy, occupies a space that is both exalted and ambiguous. It is exalted because it claims to stand apart from the immediacies of electoral calculation; it 10 is ambiguous because the boundary between interpretation and invention is often blurred. Judicial review, by its nature, is a (1) ______ exercise — it does not merely apply the law, it reshapes the very terrain on which law stands. Yet, courts often cloak their transformative role in a language of restraint. They invoke the need to defer to legislative wisdom, even when that deference veers into (2) ______. In such moments, constitutional morality becomes not a guide but a rhetorical artefact — cited, but rarely contested. The risk is not judicial activism, but judicial (3) ______: the quiet sanctioning of inertia under the guise of neutrality. To remedy this, one must reframe legitimacy not as insulation from scrutiny, but as (4) ______ within plural constitutional visions. Only then can jurisprudence become dialogic, rather than doctrinal — a space where dissent is not anomaly, but architecture. The Constitution, after all, is not a monolith but a palimpsest — layered, overwritten, and constantly in the process of (5) ______.
+
+---
+
+In the passage below, certain words have been removed. Read the passage thoroughly and choose the most suitable option to complete each blank appropriately. What should come in the place of blank number 5?
+A. ossification
+B. reconstitution
+C. adjudication
+D. derivation
+Answer: A
+
+Q.98: Rearrange the following sentences in correct order to make a meaningful sentence P: remains elusive 11 Q: in fragmented welfare systems R: the ideal of universal access S: to healthcare entitlements
+A. RPSQ
+B. RPQS
+C. QSRP
+D. RQSP
+Answer: A
+
+Q.99: Read the sentence carefully and select the most suitable idiom/phrase to fill in the blank. My grandmother ----------- Spanish while living in Spain for three years.
+A. picked up
+B. spend up
+C. leaning
+D. talking to
+Answer: A
+
+Q.100: Select the most appropriate option to fill in the blanks: My introduction to the Y.M.CA. swimming pool ---------- unpleasant memories.
+A. revived
+B. rewind
+C. recognise
+D. repeat
+Answer: A
+

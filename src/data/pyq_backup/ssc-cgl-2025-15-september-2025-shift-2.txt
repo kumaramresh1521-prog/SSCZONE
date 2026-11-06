@@ -1,0 +1,808 @@
+================================================================================
+SSC CGL 2025 TIER-I (HELD ON 15 SEPTEMBER 2025 SHIFT 2)
+Exam: SSC CGL | Year: 2025 | Total Questions: 100 | Duration: 60 Minutes
+Extracted & Verified from Official Answer Key via SSC ZONE (www.ssczone.in)
+Hindi Typos & OCR Artifacts Cleaned & Corrected on: 05 Nov 2026
+Answer Key Accuracy: 100.00% Verified against Official SSC Answer Keys
+================================================================================
+
+Q1. Which is the 2nd last word in the sentence "Technology is advancing very rapidly"? "Technology is advancing very rapidly" वाक्य में दूसरा अंतिम शब्द कौन-सा है?
+A) is
+B) rapidly
+C) very
+D) advancing
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q2. Choose the address that is exactly the same as the one given below. B-104, Orchid Meadows, Bannerghatta Road, Bengaluru, Karnataka - 560076 वह पता चुनें जो नीचे दिए गए पते के समान हो। B-104, Orchid Meadows, Bannerghatta Road, Bengaluru, Karnataka - 560076
+A) B-104, Orchid Meadows, Bannerghatta Road, Bengaluru, Karnataka - 560077
+B) B-104, Orchid Meadows, Bannerghatta Road, Bengaluru, Karnataka - 560076
+C) B-104, Orchid Meadows, Bannerghatta Road, Bengaluru, Karnataka - 560078
+D) B-104, Orchid Meadows, Bannerghatta Road, Bengaluru, Karnataka - 560079
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q3. Which of the following alternatives will replace the question mark? Alpha, Beta, Gamma, Delta, ? निम्नलिखित में से कौन-सा विकल्प प्रश्न चिह्न के स्थान पर आएगा? अल्फा, बीटा, गामा, डेल्टा, ?
+A) Sigma / सिग्मा
+B) Zeta / जीटा
+C) Epsilon / एप्सीलोन
+D) Theta / थीटा
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q4. Which of the following alternative will fill the blanks? pq_st_qr_tp_rst निम्नलिखित में से कौन-सा विकल्प रिक्त स्थान को भरेगा? pq_st_qr_tp_rst
+A) r,p,s,q
+B) p,s,q,r
+C) p,q,s,r
+D) r,p,q,s
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q5. A says, "My mother's husband's only son is B." How is A related to B? (A and B are not the same) A कहता है, “मेरी माता के पति का इकलौता पुत्र B है।” A का B से क्या संबंध है? (A और B एक नहीं हैं)
+A) Sister / बहन
+B) Son / पुत्र
+C) Father / पिता
+D) Wife / पत्नी
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q6. A is B's mother. C is B's father. How is C related to A? A, B की माता है। C, B का पिता है। C, A से किस प्रकार संबंधित है?
+A) Husband / पति
+B) Brother / भाई
+C) Son / पुत्र
+D) Cousin / चचेरा भाई
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q7. What comes next: 1, 4, 27, 256, ? अगले स्थान पर क्या आएगा: 1, 4, 27, 256, ?
+A) 625
+B) 2195
+C) 312
+D) 3125
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q8. Complete the pattern: 2, 6, 14, 30, 62, ? श्रेणी को पूरा करें: 2, 6, 14, 30, 62, ?
+A) 126
+B) 124
+C) 130
+D) 128
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q9. Find the odd one out: भिन्न का चयन करें:
+A) 6 @ 2 = 16
+B) 7 @ 1 = 14
+C) 7 @ 3 = 20
+D) 4 @ 4 = 16
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q10. Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option. Statement: Despite increasing consumer interest, electric vehicles are still significantly more expensive than gasoline-powered vehicles, and subsidies are essential to boost their adoption. Assumptions: I. The price difference is a major barrier to widespread adoption of electric vehicles. II. Subsidies can make electric vehicles affordable for consumers. III. The adoption of electric vehicles will significantly reduce carbon emissions. निर्देश: कथन को मान्य बनाने के लिए आवश्यक धारणाओं की पहचान करें, फिर सही विकल्प चुनें। कथन: उपभोक्ताओं की बढ़ती रुचि के बावजूद, इलेक्ट्रिक वाहन अभी भी गैसोलीन से चलने वाले वाहनों की तुलना में काफी महंगे हैं, और उन्हें अपनाने को बढ़ावा देने के लिए सब्सिडी आवश्यक है। धारणाएँ: I. मूल्य अंतर इलेक्ट्रिक वाहनों को व्यापक रूप से अपनाने में एक बड़ी बाधा है। II. सब्सिडी से इलेक्ट्रिक वाहन उपभोक्ताओं के लिए किफ़ायती हो सकते हैं। III. इलेक्ट्रिक वाहनों को अपनाने से कार्बन उत्सर्जन में काफी कमी आएगी।
+A) Only I and II are implicit / केवल I और II निहित हैं
+B) Only II and III are implicit / केवल II और III निहित हैं।
+C) All are implicit / सभी निहित हैं
+D) Only I is implicit / केवल I निहित है।
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q11. Read the following statement carefully and identify the conclusion that follows. Statement: The school library is open from 9 AM to 5 PM. Conclusions: I. Students can borrow books after 5 PM. II. The library is not accessible before 9 AM. निम्नलिखित कथन को ध्यानपूर्वक पढ़ें और निष्कर्ष निकालें। कथन: स्कूल का पुस्तकालय सुबह 9 बजे से शाम 5 बजे तक खुला रहता है। निष्कर्ष: I. छात्र शाम 5 बजे के बाद पुस्तकें उधार ले सकते हैं। II. पुस्तकालय में सुबह 9 बजे से पहले प्रवेश संभव नहीं है।
+A) Only Conclusion I follows / केवल निष्कर्ष I अनुसरण करता है
+B) Only Conclusion II follows / केवल निष्कर्ष II अनुसरण करता है
+C) Both I and II follow / I और II दोनों अनुसरण करते हैं
+D) Neither I nor II follows / न तो I और न ही II अनुसरण करता है
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q12. Each of the letters in the word DEVELOPMENT is arranged in alphabetical order. How many letters are there in the English alphabetical series between the letter that is third from the left and the one that is fourth from the right in the new letter-cluster formed? शब्द DEVELOPMENT के प्रत्येक अक्षर को वर्णानुक्रम में व्यवस्थित किया गया है। नए अक्षर-समूह में बायें से तीसरे अक्षर और दायें से चौथे अक्षर के बीच अंग्रेजी वर्णमाला क्रम में कितने अक्षर हैं?
+A) 7
+B) 9
+C) 6
+D) 8
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q13. Choose the correct option to complete the series. Create :: Destroy :: Build : ? शृंखला को पूरा करने के लिए सही विकल्प चुनें। निर्माण : विध्वंस :: बनाना : ?
+A) Design / डिजाइन
+B) Construct / कंस्ट्रक्ट
+C) Ruin / नष्ट करना
+D) Develop / डेवलप
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q14. In each of the following questions, a specific alphabetical pattern is applied to the first word to obtain the second word. Apply the same pattern to the third word and find the correct answer from the given alternatives. CIQY : DJRZ :: AGOW : ? निम्नलिखित प्रत्येक प्रश्न में, पहले शब्द पर एक विशिष्ट वर्णमाला क्रम लागू करके दूसरा शब्द प्राप्त किया गया है। यही क्रम तीसरे शब्द पर भी लागू कीजिए और दिए गए विकल्पों में से सही उत्तर चुनिए। CIQY : DJRZ :: AGOW : ?
+A) BJPX / BJPX
+B) BHPX / BHPX
+C) BHPU / BHPU
+D) BJRZ / BJRZ
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q15. Find the person that does not fit in the series: Bhagat Singh, Sardar Vallabhbhai Patel, Mahatma Gandhi, C. V. Raman, Subhash Chandra Bose इनमें से उस व्यक्ति को खोजें जो इस शृंखला में उपयुक्त नहीं है: भगत सिंह, सरदार वल्लभभाई पटेल, महात्मा गांधी, सी. वी. रमन, सुभाष चंद्र बोस
+A) C. V. Raman / सी. वी. रमन
+B) Subhash Chandra Bose / सुभाष चंद्र बोस
+C) Sardar Vallabhbhai Patel / सरदार वल्लभभाई पटेल
+D) Mahatma Gandhi / महात्मा गांधी
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q16. In each of the following questions, a pair of letters is related to a numerical fraction based on their positions in the English alphabet. Determine the logic behind the relationship and apply the same rule to the second pair to find the missing value. JG : 100/49 :: TB : ? निम्नलिखित प्रत्येक प्रश्न में, अक्षरों का एक युग्म अंग्रेजी वर्णमाला में उनके स्थान के आधार पर एक संख्यात्मक भिन्न से संबंधित है। इस संबंध के पीछे का तर्क ज्ञात कीजिए और लुप्त मान ज्ञात करने के लिए यही नियम दूसरे युग्म पर भी लागू कीजिए। JG : 100/49 :: TB : ?
+A) 400/5
+B) 650/4
+C) 400/4
+D) 709/45
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q17. Arrange the following words in dictionary order and choose the second word: निम्नलिखित शब्दों को शब्दकोश क्रम में व्यवस्थित करें और दूसरा शब्द चुनें:
+A) gold
+B) gone
+C) golf
+D) good
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q18. In a certain code, FOLDER is written as GMLECR. Using the same pattern, how is MARKET written? एक निश्चित कूट में, FOLDER को GMLECR के रूप में लिखा जाता है। उस पैटर्न का उपयोग करते हुए, MARKET को कैसे लिखा जाएगा?
+A) NYRLCT / NYRLCT
+B) OZRLCT / OZRLCT
+C) NYTLCR / NYTLCR
+D) NYRCLT / NYRCLT
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q19. Find the odd one out from the given alternatives: दिए गए विकल्पों में से भिन्न विकल्प को चुनिए:
+A) Bharatnatyam / भरतनाट्यम
+B) Kathak / कथक
+C) Odissi / ओडिसी
+D) Kalbelia / कालवेलिया
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q20. Instruction: In a certain code language, Greek letters are used to represent English letters in a consistent manner. Based on the given coded words, determine the correct English decoding of the target sequence using the same letter-to-letter substitution pattern. If φ α ν τ α σ is coded as FANTASY, λ α β ε λ is coded as LABEL, Question: Then what does λ φ α ν τ α represent? निर्देश: एक निश्चित कूट भाषा में, अंग्रेजी अक्षरों को सुसंगत रूप से दर्शाने के लिए ग्रीक अक्षरों का प्रयोग किया जाता है। दिए गए कूट शब्दों के आधार पर, उस अक्षर-दर-अक्षर प्रतिस्थापन पैटर्न का उपयोग करके लक्ष्य अनुक्रम का सही अंग्रेजी कूट निर्धारित करें। यदि φ α ν τ α σ को FANTASY के रूप में कूटबद्ध किया जाता है, λ α β ε λ को LABEL के रूप में कूटबद्ध किया जाता है, प्रश्न: λ φ α ν τ α क्या दर्शाता है?
+A) LFANTA
+B) LFANTY
+C) LFANTE
+D) LFANTS
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q21. If 5 * 2 = 35, 4 * 3 = 28, then what is 6 * 4? यदि 5 * 2 = 35, 4 * 3 = 28 है, तो 6 * 4 का मान क्या है?
+A) 42
+B) 48
+C) 54
+D) 60
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q22. What is the value of Middle if Left = 12, Right = 24, and Middle is average of both? यदि बायाँ = 12, दायाँ = 24, तथा मध्य का मान दोनों का औसत है तो मध्य का मान क्या है?
+A) 15
+B) 18
+C) 20
+D) 22
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q23. If the given symbols mean: '+' means 'divided by' '-' means 'multiplied by' '×' means 'minus' '÷' means 'plus' Then, find the value of the following expressions: 48 × 8 ÷ 12 + 4 - 7=? यदि दिए गए प्रतीकों का अर्थ निम्न है: '+' का अर्थ है 'से भाग' '-' का अर्थ है 'से गुणा' '×' का अर्थ है 'घटाना' '÷' का अर्थ है 'जोड़ना' तो, निम्नलिखित व्यंजकों का मान ज्ञात कीजिए: 48 × 8 ÷ 12 + 4 - 7=?
+A) 16
+B) 37
+C) 51
+D) 61
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q24. If '×' means '-', '-' means '+', '/' means '×', and '+' means '÷', which equation is correct? यदि '×' का अर्थ '-' है, '-' का अर्थ '+' है, '/' का अर्थ '×' है, और '+' का अर्थ '÷' है, तो कौन-सा समीकरण सही है?
+A) 18 - 6 + 3 × 2 = 27
+B) 36 / 6 - 3 + 2 × 1 = 20
+C) 16 / 2 + 4 - 1 × 3 = 6
+D) 12 × 4 - 2 + 1 = 19
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q25. In a pet shop, there are only parrots and rabbits. Total heads = 40, and total legs = 100. How many parrots are there? एक पालतू जानवर की दुकान में केवल तोते और खरगोश हैं। कुल सिर 40, और कुल पैर100 हैं। कुल कितने तोते हैं?
+A) 20
+B) 25
+C) 30
+D) 35
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q26. What do the carved wheels on the Konark Sun Temple represent? कोणार्क सूर्य मंदिर पर उत्कीर्ण चक्र क्या दर्शाते हैं?
+A) Planets / ग्रहों
+B) Time divisions / समय विभाजन
+C) Festivals / समारोह
+D) Weapons / हथियार
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q27. What is the name of the festival celebrated simultaneously by unmarried tribal girls during the Karam celebrations in Jharkhand and eastern India? झारखंड और पूर्वी भारत में करम उत्सव के दौरान अविवाहित आदिवासी लड़कियों द्वारा एक साथ मनाए जाने वाले त्योहार का नाम क्या है?
+A) Jawa / जावा
+B) Sohrai / सोहराई
+C) Karma / कर्मा
+D) Madai / मदाई
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q28. Which of the following best describes traditional Rajasthani music? निम्नलिखित में से कौन-सा पारंपरिक राजस्थानी संगीत का सबसे अच्छा वर्णन करता है?
+A) Focuses only on temple rituals / केवल मंदिर अनुष्ठानों पर ध्यान केंद्रित करता है
+B) Uses electric sounds as the base / आधार के रूप में विद्युत ध्वनियों का उपयोग करता है
+C) Tied to nature, life, and stories / प्रकृति, जीवन और कहानियों से जुड़ा
+D) Known only for classical ragas / केवल शास्त्रीय रागों के लिए जाना जाता है
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q29. Which of the following actions is not allowed for a player in handball? हैंडबॉल में खिलाड़ी को निम्नलिखित में से कौन-सी क्रिया करने की अनुमति नहीं है?
+A) Pulling or punching the ball out of an opponent's hands / प्रतिद्वंद्वी के हाथों से गेंद को खींचना या मुक्का मारना
+B) Intercepting the ball mid-air using both hands / दोनों हाथों का उपयोग करके हवा में गेंद को रोकना
+C) Dribbling the ball before making a pass / पास देने से पहले गेंद को ड्रिबल करना
+D) Blocking the ball with the torso above the knees / घुटनों के ऊपर धड़ से गेंद को रोकना
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q30. What was the function of the Board of Control established by Pitt's India Act? पिट्स इंडिया एक्ट द्वारा स्थापित नियंत्रण बोर्ड का कार्य क्या था?
+A) To manage only military operations in India. / केवल भारत में सैन्य अभियानों का प्रबंधन करना।
+B) To oversee taxation and local revenue. / कराधान और स्थानीय राजस्व की देखरेख करना।
+C) To control civil and military affairs in British India. / ब्रिटिश भारत में नागरिक और सैन्य मामलों को नियंत्रित करना।
+D) To regulate trade between India and China. / भारत और चीन के बीच व्यापार को विनियमित करना।
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q31. Who won India's first Olympic medals at the 1900 Paris Games by securing silver in 200m sprint and 200m hurdles? 1900 पेरिस खेलों में 200 मीटर स्प्रिंट और 200 मीटर बाधा दौड़ में रजत पदक हासिल करके भारत का पहला ओलंपिक पदक किसने जीता था?
+A) Milkha Singh / मिल्खा सिंह
+B) Norman Pritchard / नॉर्मन प्रिचर्ड
+C) K.D. Jadhav / के.डी. जाधव
+D) Dhyan Chand / ध्यान चंद
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q32. Match the following Taekwon-Do Korean terms with their correct English meanings: Which of the following is the correct pairing? Column A (Korean Term) B (English Meaning) 1. Tae A. Discipline or way 2. Kwon B. To strike with the hand 3. Do C. To strike with the feet 4. Dojang Column D. Training Hall or place of practice निम्नलिखित ताइक्वांडो कोरियाई शब्दों को उनके सही अंग्रेजी अर्थों से मिलाइए: निम्नलिखित में से कौन-सा सही युग्म है? स्तंभ A (कोरियाई शब्द) B (अंग्रेजी अर्थ) 1. ताए A. अनुशासन या तरीका 2. क्वोन B. हाथ से प्रहार करना 3. डू C. पैरों से प्रहार करना 4. डोजांग स्तंभ D. प्रशिक्षण हॉल या अभ्यास का स्थान
+A) 1-B, 2-C, 3-A, 4-D / 1-B, 2-C, 3-A, 4-D
+B) 1-C, 2-B, 3-A, 4-D / 1-C, 2-B, 3-A, 4-D
+C) 1-A, 2-D, 3-B, 4-C / 1-A, 2-D, 3-B, 4-C
+D) 1-D, 2-A, 3-C, 4-B / 1-D, 2-A, 3-C, 4-B
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q33. The Trilateral Highway Project aims to enhance connectivity between India and which two Southeast Asian countries? त्रिपक्षीय राजमार्ग परियोजना का उद्देश्य भारत और किन दो दक्षिण पूर्व एशियाई देशों के बीच संपर्क बढ़ाना है?
+A) Bangladesh and Bhutan / बांग्लादेश और भूटान
+B) Nepal and Bhutan / नेपाल और भूटान
+C) Myanmar and Thailand / म्यांमार और थाईलैंड
+D) Nepal and Bangladesh / नेपाल और बांग्लादेश
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q34. Which of the following best describes the theme of the book Why Bharat Matters? निम्नलिखित में से कौन-सा कथन पुस्तक 'Why Bharat Matters' के विषय का सबसे अच्छा वर्णन करता है?
+A) India's economic and cultural importance / भारत का आर्थिक और सांस्कृतिक महत्व
+B) Biography of Mahatma Gandhi / महात्मा गांधी की जीवनी
+C) Ancient mythology of India and festival / भारत की प्राचीन पौराणिक कथाएँ और त्योहार
+D) Fictional rural story and moral values / काल्पनिक ग्रामीण कहानी और नैतिक मूल्य
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q35. In which Indian city is the prestigious Subroto Cup inter-school football tournament conducted every year? प्रतिष्ठित सुब्रतो कप अंतर-विद्यालय फुटबॉल टूर्नामेंट हर साल किस भारतीय शहर में आयोजित किया जाता है?
+A) Hyderabad / हैदराबाद
+B) Mumbai / मुंबई
+C) New Delhi / नई दिल्ली
+D) Lucknow / लखनऊ
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q36. Which Indian political leader was conferred Namibia's highest civilian award during his first state visit to the country? किस भारतीय राजनीतिक नेता को नामीबिया की पहली राजकीय यात्रा के दौरान देश का सर्वोच्च नागरिक पुरस्कार प्रदान किया गया?
+A) Ram Nath Kovind / राम नाथ कोविंद
+B) Amit Shah / अमित शाह
+C) Narendra Modi / नरेंद्र मोदी
+D) S. Jaishankar / एस. जयशंकर
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q37. The Lohit River is a tributary of which of the following major Himalayan rivers? लोहित नदी निम्नलिखित में से किस प्रमुख हिमालयी नदी की सहायक नदी है?
+A) Ganga / गंगा
+B) Brahmaputra / ब्रह्मपुत्र
+C) Indus / सिंधु
+D) Yamuna / यमुना
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q38. The Laser Retroreflector Array (LRA) onboard Chandrayaan-3 was supplied by which space agency? चंद्रयान-3 पर लेजर रेट्रोरीफ्लेक्टर ऐरे एलएलआर (LRA) की आपूर्ति किस अंतरिक्ष एजेंसी द्वारा की गई थी?
+A) ESA / ईएसए
+B) JAXA / जाक्सा
+C) NASA / नासा
+D) ROSCOSMOS / रॉसकॉसमॉस
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q39. Which of the following is the correct sequence of blood flow through heart chambers? निम्नलिखित में से हृदय कक्षों में रक्त प्रवाह का सही क्रम कौन-सा है?
+A) Right atrium → Right ventricle → Left atrium → Left ventricle / दायाँ आलिंद → दायाँ निलय → बायाँ आलिंद → बायाँ निलय
+B) Left atrium → Left ventricle → Right atrium → Right ventricle / बायाँ आलिंद → बायाँ निलय → दायाँ आलिंद → दायाँ निलय
+C) Right ventricle → Right atrium → Left ventricle → Left atrium / दायाँ निलय → दायाँ आलिंद → बायाँ निलय → बायाँ आलिंद
+D) Left ventricle → Left atrium → Right ventricle → Right atrium / बायाँ निलय → बायाँ आलिंद → दायाँ निलय → दायाँ आलिंद
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q40. Which of the following statements is/are correct? 1) If a State law on a Concurrent List subject is reserved for the President and receives assent, it overrides the existing Union law on the same subject in that state. 2) Parliament can later nullify such a State law by passing another law on the same subject. निम्नलिखित में से कौन-सा/से कथन सही है/हैं? 1) यदि समवर्ती सूची के किसी विषय पर राज्य का कानून राष्ट्रपति के लिए आरक्षित है और उसे स्वीकृति मिल जाती है, तो वह उस राज्य में उसी विषय पर विद्यमान संघीय कानून को रद्द कर देता है। 2) संसद बाद में उसी विषय पर दूसरा कानून पारित करके ऐसे राज्य के कानून को रद्द कर सकती है।
+A) Only 1 / केवल 1
+B) Only 2 / केवल 2
+C) Both 1 and 2 / 1 और 2 दोनों
+D) Neither 1 nor 2 / न तो 1 और न ही 2
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q41. What change occurs when sound passes from air into water? जब ध्वनि हवा से पानी में प्रवेश करती है तो क्या परिवर्तन होता है?
+A) Frequency remains unchanged, but wavelength varies / आवृत्ति अपरिवर्तित रहती है, लेकिन तरंगदैर्घ्य बदलती रहती है
+B) Frequency increases while wavelength stays constant / आवृत्ति बढ़ती है जबकि तरंगदैर्घ्य स्थिर रहता है
+C) Both frequency and wavelength decrease / आवृत्ति और तरंगदैर्घ्य दोनों कम हो जाते हैं
+D) Speed decreases while frequency increases / गति घटती है जबकि आवृत्ति बढ़ती है
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q42. The concept of Uniform Civil Code is a part of which category of principles in the Indian Constitution? समान नागरिक संहिता की अवधारणा भारतीय संविधान में सिद्धांतों की किस श्रेणी का हिस्सा है?
+A) Fundamental Rights / मौलिक अधिकार
+B) Fundamental Duties / मौलिक कर्तव्य
+C) Directive Principles of State Policy / राज्य नीति के निर्देशक सिद्धांत
+D) Preamble objectives / प्रस्तावना के उद्देश्य
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q43. The slogan "Har Khet Ko Pani" belongs to: "हर खेत को पानी" का नारा किससे संबंधित है?
+A) Paramparagat Krishi Vikas Yojana / परम्परागत कृषि विकास योजना
+B) Pradhan Mantri Fasal Bima Yojana / प्रधानमंत्री फसल बीमा योजना
+C) Pradhan Mantri Krishi Sinchayee Yojana / प्रधानमंत्री कृषि सिंचाई योजना
+D) Rashtriya Krishi Vikas Yojana / राष्ट्रीय कृषि विकास योजना
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q44. Read the below statements marked as Assertion (A) and Reason (R). Mark the correct options: Assertion (A): Delhi frequently records the highest AQI levels among Indian cities. Reason (R): It lies in a low-lying basin surrounded by the Himalayas. नीचे दिए गए कथनों को अभिकथन (A) और कारण (R) से चिह्नित करें। सही विकल्पों पर निशान लगाएँ: अभिकथन (A): दिल्ली में अक्सर भारतीय शहरों में सबसे ज़्यादा AQI स्तर दर्ज किया जाता है। कारण (R): यह हिमालय से घिरी एक निचली घाटी में स्थित है।
+A) Both A and R are true, and R is the correct explanation of A / A और R दोनों सत्य हैं और R, A का सही स्पष्टीकरण है
+B) Both A and R are true but R is not the correct explanation of A. / A और R दोनों सत्य हैं लेकिन R, A का सही स्पष्टीकरण नहीं है।
+C) A is true but R is false. / A सत्य है लेकिन R असत्य है।
+D) A is false but R is true. / A असत्य है लेकिन R सत्य है।
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q45. Which of the following sets of locations in India is known for having significant coral reef ecosystems? भारत में निम्नलिखित में से कौन सा स्थान महत्वपूर्ण प्रवाल भित्ति पारिस्थितिकी तंत्र के लिए जाना जाता है?
+A) Bay of Bengal coast and deltas / बंगाल की खाड़ी के तट और डेल्टा
+B) East coast of India near major river mouths / ​भारत के पूर्वी तट पर प्रमुख नदी मुहाने के पास
+C) ​Gulf of Kutch, Gulf of Mannar, Lakshadweep, and Andaman & Nicobar Islands / ​कच्छ की खाड़ी, मन्नार की खाड़ी, लक्षद्वीप और अंडमान एवं निकोबार द्वीप समूह
+D) Deep-sea trenches in the Indian Ocean / हिंद महासागर में गहरी समुद्री खाइयों
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q46. Read the statements carefully and select the correct option: Assertion (A): Production of inorganic chemicals in India is centered in only northern states. Reason (R): Sulphuric acid and soda ash are crucial chemicals in the production of fertilizers, detergents, and glass, कथनों को ध्यानपूर्वक पढ़ें और सही विकल्प चुनेंः अभिकथन (A): भारत में अकार्बनिक रसायनों का उत्पादन केवल उत्तरी राज्यों में केंद्रित है। कारण (R): सल्फ्यूरिक अम्ल और सोडा ऐश उर्वरकों, डिटर्जेंट और काँच के उत्पादन में महत्वपूर्ण रसायन हैं।
+A) Both A and R are true, and R is the correct explanation of A / A और R दोनों सत्य हैं, और R, A का सही स्पष्टीकरण है
+B) Both A and R are true, but R is not the correct explanation of A / A और R दोनों सत्य हैं, लेकिन R, A का सही स्पष्टीकरण नहीं है
+C) A is true, but R is false / A सत्य है, लेकिन R असत्य है
+D) A is false, but R is true / A असत्य है, लेकिन R सत्य है
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q47. Which of the following statements is/are correct? 1. Panthi steps encode teachings from Guru Ghasidas's Amritvani. 2. Masks representing Satpurush are worn in high ritual versions. निम्नलिखित में से कौन-सा कथन सही है/हैं? 1 . पंथी सीढ़ियाँ गुरु घासीदास की अमृतवाणी की शिक्षाओं को दर्शाती हैं। 2. उच्च अनुष्ठानों में सत्पुरुष का प्रतिनिधित्व करने वाले मुखौटे पहने जाते हैं।
+A) Only 1 / केवल 1
+B) Only 2 / केवल 2
+C) 1 and 2 both / 1 और 2 दोनों
+D) Neither 1 nor 2 / न तो 1 और न ही 2
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q48. Which Article defines State and Union Territories for the purposes of the Constitution? संविधान के प्रयोजनों के लिए कौन-सा अनुच्छेद राज्य और संघ राज्य क्षेत्रों को परिभाषित करता है?
+A) Article 1 / अनुच्छेद 1
+B) Article 3 / अनुच्छेद 3
+C) Article 239 / अनुच्छेद 239
+D) Article 240 / अनुच्छेद 240
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q49. Consider the following statements: 1. Delegated legislation is made by administrative authorities. 2. It cannot be challenged in a court of law. Which of the above statements is/are correct? निम्नलिखित कथनों पर विचार कीजिए: 1. प्रत्यायोजित विधान प्रशासनिक प्राधिकारियों द्वारा बनाया जाता है। 2. इसे न्यायालय में चुनौती नहीं दी जा सकती। उपर्युक्त कथनों में से कौन-सा/से सही है/हैं?
+A) Only 1 / केवल 1
+B) Only 2 / केवल 2
+C) Both 1 and 2 / 1 और 2 दोनों
+D) Neither 1 nor 2 / न तो 1 और न ही 2
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q50. What is the most likely reason for temperature increase in the thermosphere during solar storms? सौर तूफानों के दौरान तापमंडल में तापमान वृद्धि का सबसे संभावित कारण क्या है?
+A) Molecular friction / आण्विक घर्षण
+B) UV and X-ray absorption / UV और एक्स-रे अवशोषण
+C) Convection currents / संवहन प्रवाह
+D) Cloud condensation / बादल संघनन
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q51. What is the value of (7/8 × 2.4) ÷ 0.6? (7/8 x 2.4) ÷ 0.6 का मान क्या है?
+A) 3.5
+B) 2.5
+C) 3.2
+D) 2.8
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q52. Which of the following equals 10? निम्नलिखित में से कौन 10 के बराबर है?
+A) (√7 + √3)² - 2√21 / (√7 + √3)² - 2√21
+B) (√5 + √5)² / (√5 + √5)²
+C) (√2 + √3)² + 2√6 / (√2 + √3)² + 2√6
+D) (√11 + √5)² - 2√55 / (√11 + √5)² - 2√55
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q53. If a:b=5:3, then find (6a+2b):(6a-2b). यदि a:b=5:3 है, तो (6a+2b):(6a-2b) ज्ञात करें।
+A) 3:2
+B) 2:3
+C) 5:3
+D) 3:5
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q54. A and B invest ₹50,000 and ₹70,000 respectively in a business. After 1 year, the total profit is distributed including simple interest at 10% per annum on the capital of each partner. If the total profit including interest is ₹18,000, what is A's share of the profit? A और B ने एक व्यवसाय में क्रमशः ₹50,000 और ₹70,000 का निवेश किया है। 1 वर्ष के बाद, प्रत्येक साझेदार की पूँजी पर 10% प्रति वर्ष की दर से साधारण ब्याज सहित कुल लाभ वितरित किया जाता है। यदि ब्याज सहित कुल लाभ ₹18,000 है, तो लाभ में A का हिस्सा क्या है?
+A) ₹7,000
+B) ₹7,500
+C) ₹8,000
+D) ₹8,500
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q55. What is the average of all numbers between 1000 and 1300 that are divisible by 25? 1000 और 1300 के बीच 25 से विभाज्य सभी संख्याओं का औसत क्या है?
+A) 1150
+B) 1200
+C) 1575
+D) 1500
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q56. There are 5 consecutive even numbers X₁, X₂, X₃, X₄, x₅ and 4 consecutive odd numbers Y₁, Y₂, Y₃, Y₄. The average of the even numbers is 5 more than the average of the odd numbers. If the sum of the even numbers is 30 more than the sum of the odd numbers, find the average of the odd numbers. 5 क्रमागत सम संख्याएँ X₁, X₂, X₃, X₄, x₅ और 4 क्रमागत विषम संख्याएँ Y₁, Y₂, Y₃, Y₄ हैं। सम संख्याओं का औसत, विषम संख्याओं के औसत से 5 अधिक है। यदि सम संख्याओं का योग, विषम संख्याओं के योग से 30 अधिक है, तो विषम संख्याओं का औसत ज्ञात कीजिए।
+A) 3
+B) 4
+C) 5
+D) 6
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q57. Evaluate: 80% of 350 - 37(1/2)% of 160 + 11% of 500. मूल्यांकन करें: 350 का 80% - 160 का 37(1/2)% + 500 का 11%
+A) 225
+B) 250
+C) 275
+D) 300
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q58. Aman needed ₹30,000 for a start-up and split the sum between two private lenders under simple-interest terms: Lender A charges 9 % p.a. (simple interest) Lender B charges 6 % p.a. (simple interest) Aman kept both loans exactly 4 years and then made a single lump-sum payment that settled only the accumulated interest, which came to ₹9,600. After preparing his books of account, Aman discovered that he interchanged the principal amounts taken from the two lenders, his four-year interest outgo would have been ₹1,200 less than what he actually paid. How much of the original ₹30,000 did Aman borrow at 9 % p.a. from Lender A? अमन को स्टार्ट-अप के लिए ₹30,000 की आवश्यकता थी और उसने इस राशि को साधारण ब्याज शर्तों के तहत दो निजी ऋणदाताओं के बीच विभाजित किया है: ऋणदाता A, 9% प्रति वर्ष (साधारण ब्याज) लेता है ऋणदाता B, 6% प्रति वर्ष (साधारण ब्याज) लेता है अमन ने दोनों ऋणों को ठीक 4 वर्ष तक रखा है और फिर एकमुश्त भुगतान किया है जिससे केवल संचित ब्याज का निपटान हुआ था, जो ₹9,600 था। अपने खाते की पुस्तकें तैयार करने के बाद, अमन ने पाया कि उसने दो ऋणदाताओं से ली गई मूल राशि को आपस में बदल दिया था, उसका चार वर्ष का ब्याज व्यय वास्तव में भुगतान की गई राशि से ₹1,200 कम था। अमन ने ऋणदाता A से 9% प्रति वर्ष की दर से मूल ₹30,000 में से कितना उधार लिया था?
+A) ₹10,000
+B) ₹8,000
+C) ₹7,000
+D) ₹20,000
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q59. A garment shop sells a shirt for ₹ A, incurring a loss of 5%. During an end-of-season sale, they mark up the same shirt to ₹ 1.2A. At the sale, they provide a flat discount of 10% on this marked price. What will be the percentage profit or loss for the garment shop on that shirt during the sale? एक गारमेंट शॉप एक शर्ट को ₹A में बेचती है, जिससे उसे 5% की हानि होती है। सीजन के अंत में होने वाली सेल के दौरान, वे उस शर्ट का मूल्य ₹ 1.2A तक बढ़ा देते हैं। सेल के दौरान, वे इस अंकित मूल्य पर 10% की फ्लैट छूट देते हैं। सेल के दौरान उस शर्ट पर गारमेंट शॉप को कितना प्रतिशत लाभ या हानि होगी?
+A) 4.6% Profit / 4.6% लाभ
+B) 2.6% Loss / 2.6% हानि
+C) 2.6% Profit / 2.6% लाभ
+D) 4.6% Loss / 4.6% हानि
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q60. A shopkeeper marked an item 50% above its cost price. He then offered two successive discounts of 10% and 20% to a customer. If he made a profit of ₹80, at what price did he sell the item to that customer? एक दुकानदार ने एक वस्तु पर उसके क्रय मूल्य से 50% अधिक मूल्य अंकित किया है। फिर वह एक ग्राहक को 10% और 20% की दो क्रमिक छूट देता है। यदि उसे ₹80 का लाभ हुआ है, तो उसने उस ग्राहक को वह वस्तु किस मूल्य पर बेची है?
+A) ₹2000
+B) ₹2500
+C) ₹1080
+D) ₹1000
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q61. A shopkeeper has two types of pulses: one costing ₹60/kg and the other costing ₹90/kg. He mixes them in a specific ratio and sells the mixture at ₹84/kg, thereby earning a 20% profit. In what ratio did he mix the two types of pulses? एक दुकानदार के पास दो तरह की दालें हैं: एक का मूल्य ₹60/किग्रा और दूसरी का मूल्य ₹90/किग्रा है। वह उन्हें एक निश्चित अनुपात में मिलाता है और मिश्रण को ₹84/किग्रा पर बेचता है, जिससे उसे 20% का लाभ होता है। उसने दोनों तरह की दालों को किस अनुपात में मिलाया था?
+A) 1:3
+B) 2:1
+C) 3:2
+D) 4:1
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q62. A is three times as efficient as a worker than B, which allows A to complete a job in 60 days less than B. If they work together, they can finish the job in: A, B की तुलना में तीन गुना कुशल श्रमिक है, जिसके कारण A किसी कार्य को B से 60 दिन कम समय में पूरा कर लेता है। यदि वे दोनों साथ मिलकर काम करें, तो वे उस कार्य को कितने समय में पूरा कर सकते हैं?
+A) 19.2 days / 19.2 दिन
+B) 22.5 days / 22.5 दिन
+C) 16 days / 16 दिन
+D) 20 days / 20 दिन
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q63. A cyclist has to cover a distance of 80 km. After cycling for 4 hours and 48 minutes, he finds that he has completed 4/5th of the total distance. What is his speed in km/h? एक साइकिल चालक को 80 किमी की दूरी तय करनी है। 4 घंटे और 48 मिनट तक साइकिल चलाने के बाद, उसे पता चलता है कि उसने कुल दूरी का 4/5वाँ भाग तय कर लिया है। किमी/घंटा में उसकी चाल क्या है?
+A) 15.45 km/h / 15.45 किमी/घंटा
+B) 16 km/h / 16 किमी/घंटा
+C) 13.33 km/h / 13.33 किमी/घंटा
+D) 10 km/h / 10 किमी/घंटा
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q64. Sarah invested amounts in three different schemes M, N, and O at simple interest rates of 10% p.a., 12% p.a., and 15% p.a. respectively. If the total interest accrued in one year was ₹2282 and the amount invested in Scheme O was 180% of the amount invested in Scheme M and 250% of the amount invested in Scheme N, what was the amount invested in Scheme N? सारा ने तीन अलग-अलग योजनाओं M, N और O में क्रमशः 10% प्रति वर्ष, 12% प्रति वर्ष और 15% प्रति वर्ष की साधारण ब्याज दरों पर राशि का निवेश किया है। यदि एक वर्ष में अर्जित कुल ब्याज ₹2282 था और योजना O में निवेश की गई राशि, योजना M में निवेश की गई राशि का 180% और योजना N में निवेश की गई राशि का 250% थी, तो योजना N में निवेश की गई राशि क्या थी?
+A) ₹3000
+B) ₹3200
+C) ₹3600
+D) ₹4000
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q65. A vertical pole of height H stands on the ground. From a point P on the ground, the angle of elevation of the top of the pole is 60°. From a different point Q, located 10 meters away from point P (directly along the line extending from the base of the pole), the angle of elevation to the top of the pole is 30°.What is the height of the pole? भूमि पर H ऊँचाई का एक ऊर्ध्वाधर खंभा खड़ा है। भूमि पर एक बिंदु P से, खंभे के शीर्ष का उन्नयन कोण 60° है। बिंदु P से 10 मीटर दूर स्थित एक अलग बिंदु Q से (खंभे के आधार से फैली रेखा के साथ सीधे), खंभे के शीर्ष का उन्नयन कोण 30° है। खंभे की ऊँचाई क्या है?
+A) 5√3m / 5√3 मीटर
+B) 10√3m / 10√3 मीटर
+C) 10 m / 10 मीटर
+D) 20 m / 20 मीटर
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q66. A right circular cone has radius of 7 cm and a height of 24 cm. A sphere is placed inside the cone such that it touches the base and the slanted surface of the cone. Find the radius of this inscribed sphere. एक लंब वृत्तीय शंकु की त्रिज्या 7 सेमी तथा ऊँचाई 24 सेमी है। शंकु के अन्दर एक गोला इस प्रकार रखा गया है कि वह शंकु के आधार तथा तिर्यक पृष्ठ को स्पर्श करता है। इस उत्कीर्ण गोले की त्रिज्या ज्ञात कीजिए।
+A) 5.25 cm / 5.25 सेमी
+B) 4.86 cm / 4.86 सेमी
+C) 3.82 cm / 3.82 सेमी
+D) 6.24 cm / 6.24 सेमी
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q67. If the perimeter of a regular octagon is 80 cm, what is the side length? यदि एक सम अष्टभुज का परिमाप 80 सेमी है, तो भुजा की लंबाई क्या होगी?
+A) 10 cm / 10 सेमी
+B) 8 cm / 8 सेमी
+C) 12 cm / 12 सेमी
+D) 6 cm / 6 सेमी
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q68. A circular wheel is divided into 8 equal sectors. If the area of one sector is 45 cm², what is the radius of the wheel? एक वृत्ताकार पहिये को 8 बराबर त्रिज्यखंडों में विभाजित किया गया है। यदि एक त्रिज्यखंड का क्षेत्रफल 45 वर्ग सेमी है, तो पहिये की त्रिज्या क्या है?
+A) 8.6 cm / 8.6 सेमी
+B) 6.5 cm / 6.5 सेमी
+C) 10.7 cm / 10.7 सेमी
+D) 7.5 cm / 7.5 सेमी
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q69. If the lateral surface area of a prism is 240 cm² and height is 8 cm, what is the perimeter of the base? यदि किसी प्रिज्म का पार्श्व पृष्ठीय क्षेत्रफल 240 वर्ग सेमी तथा ऊँचाई 8 सेमी है, तो आधार का परिमाप क्या है?
+A) 30 cm / 30 सेमी
+B) 24 cm / 24 सेमी
+C) 36 cm / 36 सेमी
+D) 40 cm / 40 सेमी
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q70. Solve system: y = 2x + 1 and y = -x + 4 y = 2x + 1 और y = -x + 4 प्रणाली को हल करें:
+A) (1, 3)
+B) (2, 5)
+C) (3, 7)
+D) (0, 1)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q71. Simplify: सरल करें:
+A) 7√2
+B) 6√2
+C) 5√2
+D) 8√2
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q72. If two circles are touching internally how many common tangents do they have? यदि दो वृत्त आंतरिक रूप से स्पर्श कर रहे हैं तो उनमें कितनी उभयनिष्ठ स्पर्श रेखाएँ होंगी?
+A) 0
+B) 1
+C) 2
+D) 3
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q73. Two chords, AB and CD, are equal in length and are at a distance of 10 cm from the center of a circle. If the radius is 26 cm, what is the length of AB? दो जीवाएँ, AB और CD, बराबर लंबाई की हैं और एक वृत्त के केंद्र से 10 सेमी की दूरी पर हैं। यदि त्रिज्या 26 सेमी है, तो AB की लंबाई क्या है?
+A) 12 cm / 12 सेमी
+B) 24 cm / 24 सेमी
+C) 36 cm / 36 सेमी
+D) 48 cm / 48 सेमी
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q74. A sector of a circle with radius 6 cm has a central angle of 60°. What is the area of the corresponding segment? 6 सेंटीमीटर त्रिज्या वाले एक वृत्त के त्रिज्यखंड का केंद्रीय कोण 60° है। इस वृत्तखंड का क्षेत्रफल क्या है?
+A) (3π-9√3) sq. cm / (3π-9√3)वर्ग सेमी
+B) (6π-9√3) sq. cm / (6π-9√3) वर्ग सेमी
+C) (6π-18√3) sq. cm / (6π-18√3) वर्ग सेमी
+D) (12π-18√3) sq. cm / (12π-18√3) वर्ग सेमी
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q75. Express 0.121212... as a fraction. 0.121212... को भिन्न के रूप में व्यक्त करें।
+A) 4/33
+B) 2/11
+C) 4/11
+D) 1/33
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q76. Select the most appropriate synonym of the given word: IMPLACABLE
+A) Soft
+B) Unyielding
+C) Flexible
+D) Gentle
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q77. Select the most appropriate antonym of the given word. Obsequious
+A) Assertive
+B) Submissive
+C) Flattering
+D) Senile
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q78. Select the most appropriate antonym of the given word. Soporific
+A) Stimulating
+B) Drowsy
+C) Sleep-inducing
+D) Sedative
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q79. Choose the correct meaning of idiom: Tooth and nail
+A) With full force or vigour
+B) Without planning
+C) Secretly and quietly
+D) Half-heartedly
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q80. Choose the correct meaning of idiom: Steal a march on
+A) Surrender unexpectedly
+B) Gain an advantage by acting before others do
+C) Betray one's allies
+D) Escape punishment
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q81. Which is the correct spelling for a word meaning 'a very large number'?
+A) Myriad
+B) Myriod
+C) Miriad
+D) Mirriad
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q82. Spot the correct spelling of an autism-linked speech echo.
+A) Echolallia
+B) Echolalia
+C) Echollalia
+D) Echolaliah
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q83. Choose the correct one-word substitution for: 'A person who opposes official policy'.
+A) Activist
+B) Agitator
+C) Dissident
+D) Atheist
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q84. Choose the correct one-word substitute for: 'Excessive self-importance or over-confidence.'
+A) Prudence
+B) Humility
+C) Arrogance
+D) Modesty
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q85. Choose the right collocation: The article offers a ______ critique of contemporary educational paradigms.
+A) thorough going
+B) through-going
+C) thorough-go
+D) go-through
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q86. Select the correct option: The discovery, ____ was unexpected, altered the trajectory of the entire study.
+A) that
+B) which
+C) what
+D) whose
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q87. Find the part of the sentence that contains an error: Not only does the report fail to address the structural gaps, (1)/ but also it overlooks the more pressing issue (2)/ of community exclusion which, according to activists, (3)/ have been systematically ignored for years. (4)
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q88. Change the following from active to passive: Did the analysts anticipate the sudden market downturn?
+A) Was the sudden market downturn anticipated from the analysts?
+B) Had the sudden market downturn been anticipated by the analysts?
+C) Was the sudden market downturn anticipated by the analysts?
+D) Is the sudden market downturn being anticipated by the analysts?
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q89. Select the sentence containing the homonym of the highlighted word: The monk carried a carved crosier into the sanctuary.
+A) The florist added white crosiers to the bouquet.
+B) The bishop's crosier gleamed under the candlelight.
+C) The museum displayed a gilded 14th-century crosier.
+D) The abbot's ceremonial crosier was stolen.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q90. Convert the sentence provided below from its passive voice structure to an active voice structure: The ministers were being briefed about the situation by the intelligence officers.
+A) The intelligence officers briefed the ministers about the situation.
+B) The intelligence officers had briefed the ministers.
+C) The ministers were briefed by the intelligence officers.
+D) The intelligence officers were briefing the ministers.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q91. Choose the most suitable option to replace the highlighted part of the sentence: He is going to abroad for higher studies.
+A) is going abroad
+B) goes to abroad
+C) is going to the abroad
+D) is going for abroad
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q92. Choose the most suitable option to replace the highlighted part of the sentence: She avoids to go to crowded places.
+A) avoids to going to
+B) avoids from going
+C) avoids going to crowded places
+D) is avoiding to go to crowded place
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q93. PASSAGE (Q.93 - Q.97) Read the following passage and answer the questions based on the passage : Art, in its manifold forms— visual, performative, literary, and auditory—constitutes a domain that transcends utilitarian function and enters the realm of the symbolic, the affective, and the transformative. Its significance within society cannot be reduced to decoration or diversion; rather, it operates as a mode of critical reflection, a vessel of collective memory, and a catalyst for socio-cultural evolution. At its core, art interrogates the contours of reality by reframing perception. Whether through the destabilizing surrealism of a Dali canvas or the dissonant harmonies of avant-garde music, art dislodges the observer from complacency and compels re- engagement with the world. It is in this function that art becomes not only an aesthetic but an epistemological act— challenging dominant paradigms and opening discursive space for marginalized narratives. Historically, art has served as an archive of civilizations, encoding within its mediums the aspirations, anxieties, and ideologies of its epoch. From the sacred iconography of temple frescoes to the protest murals adorning urban decay, art becomes a text through which power, resistance, and identity are simultaneously contested and constituted. This historical embeddedness renders art indispensable to understanding not only what a society creates but what it values and fears. In modern democracies, the role of art assumes a distinctly political dimension. Art enables dissent when speech is suppressed, and engenders empathy where rational argument fails. Satire, documentary film, and performance art often articulate the unspeakable, using metaphor and allusion to subvert censure. Yet this potential also renders art vulnerable—to censorship, commodification, and ideological co-option. When stripped of autonomy, art may devolve into propaganda or elitist ornamentation—devoid of critical function. The sociological function of art extends to its capacity to cultivate communal belonging and individual introspection simultaneously. Participatory forms of art—street theatre, public installations, folk traditions—dissolve the binaries of creator and audience, democratizing aesthetic engagement. Meanwhile, solitary encounters with a painting or a poem can occasion personal revelation, catharsis, or ethical inquiry. However, in the algorithmic age, where virality and visibility often dictate cultural value, art faces unprecedented commodification. The aesthetic is frequently reduced to a spectacle optimized for consumption, divorced from nuance, complexity, or transgression. The challenge, therefore, is to preserve the sanctity of artistic integrity in the face of market and media pressures that threaten to flatten it into banality. Ultimately, the role of art in society is neither static nor monolithic. It is a dialectical force—at once reflective and projective, disruptive and redemptive. To safeguard art is to safeguard the capacity of humanity to feel, to question, and to reimagine. What is implied by describing art as an "epistemological act" in the passage?
+A) Art is an emotional expression.
+B) Art is a method of acquiring and challenging knowledge structures.
+C) Art serves as mere historical documentation.
+D) Art reflects state-sponsored ideologies.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q94. The phrase "commodification of art" in the passage most nearly refers to:
+A) Art being preserved in national archives.
+B) Art being transformed into a consumer product stripped of its critical power.
+C) Art being used exclusively for educational purposes.
+D) Art becoming a tool for political awareness.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q95. According to the passage, how does art function in politically repressive environments?
+A) It reinforces state propaganda through images.
+B) It loses its relevance.
+C) It channels dissent and expresses unspeakable truths.
+D) It remains confined to academic circles.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q96. Which of the following best explains the dialectical nature of art as per the last paragraph?
+A) Art is always destructive and marginal.
+B) Art evolves through opposing forces of creation and criticism.
+C) Art functions only within elite institutions.
+D) Art is limited to reflecting the past.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q97. What is the closest meaning of the word "banality" as used in the sentence: "...threaten to flatten it into banality"?
+A) Vitality
+B) Triviality
+C) Versatility
+D) Brutality
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q98. Select the correct option for the Direct Speech conversion of the sentence below. The zoologist warned that the island's carrying capacity might be exceeded should invasive species proliferate unchecked.
+A) The zoologist said, "The island's carrying capacity will be exceeded if invasive species proliferate unchecked."
+B) The zoologist said, "Should invasive species have proliferated unchecked, the island's carrying capacity would be exceeded."
+C) The zoologist said, "The island's carrying capacity might be exceeded should invasive species proliferate unchecked."
+D) The zoologist said, "If invasive species proliferated unchecked, the carrying capacity had been exceeded."
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q99. A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. He said, "I bought a new laptop."
+A) He said that he had bought a new laptop.
+B) He said that he buys a new laptop.
+C) He said that he was buying a new laptop.
+D) He said that he has bought a new laptop.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q100. Rearrange the following sentences to form a coherent paragraph: 1. A key strategy is to diversify energy sources, transitioning from fossil fuels to renewable alternatives like solar, wind, and geothermal power. 2. To mitigate the worst effects of climate change, the global community must drastically reduce its reliance on carbon-intensive energy production. 3. This shift not only decreases greenhouse gas emissions but also improves air quality and creates new economic opportunities. 4. Additionally, policies that promote energy efficiency in buildings and transportation can further lower overall energy consumption.
+A) 2, 1, 3, 4
+B) 1, 2, 3, 4
+C) 4, 1, 2, 3
+D) 2, 3, 1, 4
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+

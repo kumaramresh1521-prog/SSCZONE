@@ -1,0 +1,793 @@
+Q.1: Which of the following options matches the given address exactly? Ms N. Patel 12 Orchid Complex, 4th Floor Goregaon East, Mumbai - 400065
+A. Ms N. Patel, 12 Orchid Complex, 4th Floor, Goregaon West, Mumbai - 400065
+B. Ms N. Patel, 12 Orchid Complex, 4th Floor, Goregaon East, Mumbai - 400065
+C. Ms N. Patel, 12 Orchids Complex, 4th Floor, Goregaon East, Mumbai - 400065
+D. Ms N. Patel, 12 Orchid Complex, 5th Floor, Goregaon East, Mumbai - 400065
+Answer: B
+
+Q.2: In a certain code language, "GRAPE" is written as "JUDSH." How will "HOUSE" be written in the same code language?
+A. KQXUH
+B. KUXQH
+C. KXRHV
+D. KRXVH
+Answer: D
+
+Q.3: In a certain code language, "INFORMATION" is written as "JNGOSMBTJOO". How will "EDUCATIONAL" be written?
+A. FDVCBTJOOAM
+B. FDVBCTJOAOM
+C. FDUCBTJONAM
+D. FDVCATIONAM
+Answer: A
+
+Q.4: Sahil ranks 12th from the top and 30th from the bottom in a class. How many students are there in the class?
+A. 40
+B. 41
+C. 42
+D. 43
+Answer: B
+
+Q.5: A highly skilled employee from a reserved cultural background excels at written reports but rarely speaks during team brainstorming sessions. How should the team leader encourage their participation?
+A. Compel the employee to speak first during every meeting to build their public confidence and verbal assertiveness. 1 INTELLIGENCE
+B. Assume the employee lacks interest in teamwork and focus primarily on inputs from the vocal team members.
+C. Respect their preferred working style and provide alternative channels, such as written submissions, to ensure their valuable insights are captured.
+D. Assess the employee's performance in the teamwork domain as below expectations, primarily due to their limited active verbal participation during team discussions.
+Answer: C
+
+Q.6: An assistant auditor notices a minor financial error in a report prepared by a long-time mentor who has supported their career. The mistake appears unintentional but breaches protocol. How should the auditor respond with ethical self-regulation?
+A. Correct the spreadsheet secretly without informing the mentor to protect the mentor's stellar reputation.
+B. Report the discrepancy directly to the highest oversight board immediately without consulting the mentor first.
+C. Discuss the specific anomaly privately with the mentor to allow them to review and formally correct the submission.
+D. Ignore the minor error entirely as a small token of gratitude for the mentor's past professional support.
+Answer: C
+
+Q.7: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p2_x28.jpeg)
+A. 17
+B. 23
+C. 25
+D. 19
+Answer: C
+
+Q.8: As a police officer, you must supervise the relocation of a temple to make way for a major highway. Since this move could create tension and disturb public order, what would be the most fair and professional way to handle the situation?
+A. Order a specialized platoon of police personnel to carry out the demolition of the temple under the cover of night to avoid public outcry.
+B. Initiate a formal request to transfer your posting to a different police station to avoid dealing with the delicate conflict and pressure entirely.
+C. Choose to take no action whatsoever regarding the obstruction due to the potential fear of offending or upsetting the influential local religious leaders.
+D. Engage in constructive dialogue to convince local religious leaders of the highway's importance and coordinate a collaborative, peaceful relocation process.
+Answer: D
+
+Q.9: Complete the pattern in fig.
+
+(X) by selecting one of the figures from the four alternatives : Figure(X):
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p3_x306.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p3_x307.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p3_x308.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p3_x309.jpeg)
+Answer: B
+
+Q.10: If 'A' denotes addition (+), 'B' denotes subtraction (-), 'C' denotes multiplication (×), and 'D' denotes division (÷), then evaluate the value of the following expression. 48 D 6 C 4 A 12 B 8
+A. 32
+B. 36
+C. 28
+D. 40
+Answer: B
+
+Q.11: Study the pattern followed in the given equations and identify the value of the missing term accordingly. 5 × 3 = 28, 7 × 4 = 311, 8 × 2 = 610, 9 × 5 = ?
+A. 45
+B. 414
+C. 318
+D. 38
+Answer: B
+
+Q.12: In the following question, one statement is given, followed by certain inferences. Consider the statement to be true even if it seems to contradict commonly known facts. Read the inferences carefully and decide which of them logically follow from the given statement.
+
+Statement: The school management has decided to make sports mandatory for all students in Classes 6 to 10 to address rising rates of obesity and physical lethargy among adolescents. Inferences:
+
+I. Before this decision, students in Classes 6 to 10 did not participate in any outdoor activities.
+
+II. The management believes that physical activity through sports can help control obesity in children.
+A. Only Inference I follows.
+B. Only Inference II follows.
+C. Both Inferences I and II follow.
+D. Neither Inference I nor Inference II follows.
+Answer: B
+
+Q.13: Refer to the given figure / pattern:
+
+![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_q13_fig.png)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_q13_opt_A.png)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_q13_opt_B.png)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_q13_opt_C.png)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_q13_opt_D.png)
+Answer: C
+
+Q.14: You notice that a junior team member is consistently struggling with a task, causing project delays. You have the skills to fix their work quickly, but they have not asked for help. What should you do?
+A. Redo their work secretly to ensure the project meets the deadline.
+B. Ignore the situation as it is not your responsibility.
+C. Offer mentorship and guide them through the process to improve their skills.
+D. Complain to the manager about their lack of competence.
+Answer: C
+
+Q.15: Carefully observe Figure
+
+(X) and identify the option figure in which Figure
+
+(X) is embedded exactly as shown. Figure X:
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p4_x554.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p4_x555.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p4_x556.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p4_x557.jpeg)
+Answer: B
+
+Q.16: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p4_x558.jpeg)
+A. 2
+B. 1
+C. 3
+D. 4 3
+Answer: C
+
+Q.17: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p4_x559.jpeg)
+A. b
+B. d
+C. c
+D. e
+Answer: C
+
+Q.18: Identify the Venn diagram that represents relationship between “Government Employees, Professors and PhD Holders”.
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p4_x560.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p4_x561.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p4_x562.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p4_x563.jpeg)
+Answer: D
+
+Q.19: In the following question, out of the five figures marked(a), (b), (c), (d), and (e), four are similar in a certain manner. However, one figure is not like the other four. Choose the figure which is different from the rest.
+A. b
+B. c
+C. d
+D. e
+Answer: B
+
+Q.20: Read the given statement carefully and the following assumptions based on it. Decide which of the assumptions are implicit in the statement.
+
+Statement: Due to extreme heat waves, schools in the district have been ordered to suspend all outdoor sports activities for the next two weeks. Assumptions:
+
+I. Students are incapable of performing any physical activity during the summer months.
+
+II. All schools in the district have indoor facilities that can substitute for outdoor sports.
+A. Only Assumption I is implicit
+B. Only Assumption II is implicit
+C. Both Assumptions I and II are implicit
+D. Neither Assumption I nor II is implicit
+Answer: D
+
+Q.21: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p5_x803.jpeg)
+A. 4
+B. 2
+C. 1
+D. 6
+Answer: A
+
+Q.22: Which of the following rows/columns are connected/related with each other in some way? Rows Columns I II III IV V I 4 23 16 11 64 II 6 20 24 17 96 III 8 53 32 50 128 IV 12 10 48 14 192 V 16 38 64 35 256
+A. Columns I, II and V
+B. Columns II, III and V
+C. Columns I, III and
+D. Columns II, III and V IV
+Answer: C
+
+Q.23: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p5_x804.jpeg)
+A. 1
+B. 3
+C. 4
+D. 2
+Answer: C
+
+Q.24: Fill in the blanks (_) using one of the following four options such that the series follows a specific pattern in the given order. _aa_ba_bb_ab_aab
+A. babab
+B. aaabb
+C. bbaab
+D. bbbaa
+Answer: C
+
+Q.25: GENERAL
+
+![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p5_x805.jpeg)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p5_x806.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p5_x807.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p5_x808.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p5_x809.jpeg)
+Answer: A
+
+Q.26: Fundamental Rights are contained in which part of the Indian Constitution?
+A. Part II
+B. Part III
+C. Part IV
+D. Part I
+Answer: B
+
+Q.27: Which Schedule lists the subjects under the Union, State, and Concurrent Lists?
+A. The Sixth Schedule of the Indian Constitution
+B. The Seventh Schedule of the Indian Constitution 4 AWARENESS
+C. The Eighth Schedule of the Indian Constitution
+D. The Fifth Schedule of the Indian Constitution
+Answer: B
+
+Q.28: Arrange the following peaks in descending order of their height:
+
+1. Kanchenjunga 2. Mount Everest 3. GodwinAusten
+A. 3-1-2
+B. 2-3-1
+C. 2-1-3
+D. 3-2-1
+Answer: C
+
+Q.29: Which Article of the Indian Constitution states that the validity of proceedings in Parliament cannot be questioned in any court?
+A. Article 110
+B. Article 120
+C. Article 121
+D. Article 122
+Answer: C
+
+Q.30: Under which Article of the Indian Constitution deals with the ancillary powers of the Supreme Court?
+A. Article 140
+B. Article 141
+C. Article 142
+D. Article 145
+Answer: C
+
+Q.31: Which physical quantity is represented by the area under a velocity-time graph?
+A. Force
+B. Speed
+C. Displacement
+D. Acceleration
+Answer: C
+
+Q.32: Which of the following is the most abundant element in the 'Entire Earth' (from crust to inner core)?
+A. Oxygen
+B. Silicon
+C. Iron
+D. Magnesium
+Answer: A
+
+Q.33: The Sandur-Hospet iron ore belt is located in which district of Karnataka?
+A. Mysuru
+B. Ballari
+C. Mandya
+D. Udupi
+Answer: A
+
+Q.34: Consider the following
+
+statements: Statement 1: Annapurna Devi was a legendary Hindustani classical Surbahar virtuoso. Statement 2: She was a renowned exponent of the Maihar gharana. Which of the statements given above is/are correct?
+A. Only Statement 1
+B. Only Statement 2
+C. Both Statement 1 and Statement 2 5
+D. Neither Statement 1 nor Statement 2
+Answer: C
+
+Q.35: What is the main purpose of the BHASKAR portal launched by the Department for Promotion of Industry and Internal Trade within India’s startup ecosystem?
+A. Centralized scholarship application for science students
+B. Networking and collaboration for all stakeholders in the startup ecosystem
+C. Monitoring of solar energy production in Himalayan states
+D. Digital verification of handloom products for export
+Answer: B
+
+Q.36: Under the Chabahar International Transport and Transit Corridor Agreement, who determines the routes of the international transport and transit corridors?
+A. United Nations Economic Commission for Asia
+B. International Court of Justice
+C. Permanent Secretariat
+D. Contracting Parties
+Answer: A
+
+Q.37: Under the Chabahar International Transport and Transit Corridor Agreement, what shall the Contracting Parties provide to drivers and passengers during transport?
+A. Residence permits and citizenship rights
+B. Necessary visas and transit facilities
+C. Diplomatic immunity and consular protection
+D. Tax exemptions and income benefits
+Answer: B
+
+Q.38: An offense is punishable with imprisonment up to two years only. The prosecution treats it as a warrant case because of the seriousness of the allegations. Which of the following is legally correct under the Bharatiya Nagarik Suraksha Sanhita, 2023 in India?
+A. It is a warrant case because seriousness determines classification.
+B. It is a summons case because punishment does not exceed two years.
+C. It becomes a warrant case if police file a charge sheet.
+D. The magistrate may classify it either way.
+Answer: A
+
+Q.39: Who has been appointed as the Secretary of the Central Board of Secondary Education
+
+(CBSE) in June 2026?
+A. Varun Bhardwaj
+B. Rahul Srivastava
+C. Himanshu Gupta
+D. Lokhande Prashant Sitaram
+Answer: B
+
+Q.40: Maruti Chitampalli, a renowned author from Maharashtra, India, is also popularly known as:
+A. Aranya Rishi
+B. Aranya Yogi
+C. Green Warrior
+D. Aranya Vidhwan
+Answer: C
+
+Q.41: Who served as the Deputy Governor of the Reserve Bank of India alongside Governor S. Venkitaramanan during the 1991 economic crisis?
+A. Manmohan Singh
+B. I.G. Patel
+C. C. Rangarajan
+D. Montek Singh Ahluwalia
+Answer: C
+
+Q.42: Which of the following types of tourism is most directly promoted in India to support the conservation of cultural and natural heritage?
+A. Industrial tourism
+B. Adventure tourism
+C. Medical tourism
+D. Sustainable Tourism
+Answer: D
+
+Q.43: Which of the following correctly identifies the launch vehicle and launch site used for the successful launch of ISRO's Space Docking Experiment (SpaDeX) mission?
+A. Geosynchronous Satellite Launch Vehicle- F15; Thiruvananthapuram
+B. Polar Satellite Launch Vehicle -C60; Sriharikota
+C. Launch Vehicle Mark-3-M5; Bengaluru
+D. Small Satellite Launch Vehicle-D3; Mahendragiri
+Answer: B
+
+Q.44: Cardiac output is 5 L/min (liters per minute), and the heart rate is 100 beats/min (beats per minute). What is the stroke volume?
+A. 40 (milliliter)
+B. 50 (milliliter)
+C. 60 (milliliter)
+D. 70 (milliliter)
+Answer: B
+
+Q.45: Under standard biochemical conditions, the hydrolysis of one mole of ATP (adenosine triphosphate) releases approximately 7.3 kcal
+
+(kilocalorie) of free energy. Assuming complete energy coupling, how many moles of ATP (adenosine triphosphate) must be hydrolysed to provide 29.2 kcal (kilocalorie) of energy?
+A. 2
+B. 3
+C. 4
+D. 5
+Answer: C
+
+Q.46: What specific subtitle and core theme were officially adopted for India's Twelfth FiveYear Plan (2012–2017)?
+A. Growth with Social Justice and Regional Equality
+B. Towards Faster and More Inclusive Growth
+C. Faster, More Inclusive and Sustainable Growth
+D. Growth, Economic Stability and Self- Reliance
+Answer: C
+
+Q.47: Which of the following reforms first introduced separate electorates in British India through statutory provisions?
+A. Charter Act, 1833
+B. Regulating Act, 1773
+C. Government of India Act, 1935
+D. Morley Minto Reforms, 1909
+Answer: D
+
+Q.48: Which of the following situations best demonstrates the "option value" of nature?
+A. Exploiting forests rapidly and prioritising short term economic gains.
+B. Establishing industries near wetlands and maximising employment opportunities.
+C. Conserving biodiversity and retaining its potential future benefits and uses.
+D. Replacing natural forests entirely and converting the land into agricultural plantations.
+Answer: C
+
+Q.49: Which of the following is the best example of dynamic economic analysis?
+A. Examining consumer demand at a particular point in time
+B. Comparing the inflation rates of two countries during the same year
+C. Analysing how consumer demand changes/several years
+D. Examining an economy while assuming that all variables remain unchanged
+Answer: C
+
+Q.50: What was the primary initial objective of the English East India Company in acquiring territorial control in India?
+A. To weaken and abolish the existing Indian kingdoms
+B. To conquer and administer territories under an agreement with the Dutch
+C. To support and strengthen the political authority of the Mughal Empire
+D. To safeguard and promote its commercial interests
+Answer: D
+
+Q.51: Simplify the following expression:
+
+0.75×0.75×0.75−0.001 .
+
+0.75×0.75+0.075+0.01
+A. 0.45
+B. 0.65
+C. 0.58
+D. 0.78
+Answer: B
+
+Q.52: For what value of x is the statement ( x )( x ) = 1 true? 21 84
+A. 28
+B. 42
+C. 38
+D. 52
+Answer: B
+
+Q.53: If 3x = 2y, find the value of y²−x² . y²+2xy+x²
+A. 1
+B. 2 5
+C. 3
+D. 4 5
+Answer: A
+
+Q.54: Pipe X can fill a tank in 20 hours and Pipe Y can empty the same tank in 30 hours. If both pipes are opened together in an empty tank, how much time will it take to fill the tank completely?
+A. 30 hours
+B. 50 hours
+C. 40 hours
+D. 60 hours
+Answer: D
+
+Q.55: A sum of ₹25,000 is divided into two parts. The first part is invested at 8% per annum for 6 years, and the second part is invested at 10% per annum for 3 years. If the ratio of the interest earned from the first part to the second part is 8 : 5, find the amount of the first part.
+A. ₹10,000
+B. ₹12,500
+C. ₹15,100
+D. ₹16,000
+Answer: A
+
+Q.56: If the graph of y = mx + c is parallel to the line passing through (2, 5) and (4, 1), and it passes through the point (1, 1), what is the value of c?
+A. 3
+B. -1
+C. 2
+D. -4
+Answer: A
+
+Q.57: ₹3,00,000 is invested at 10% compound interest. After 1 year, ₹50,000 is withdrawn. Find the final amount after 2 years.
+A. ₹3,08,000
+B. ₹3,68,000
+C. ₹3,48,000
+D. ₹3,98,000
+Answer: A
+
+Q.58: A cuboidal container can hold 48 liters of liquid. The height of the container is 2 of its length, and the breadth is 1 of the height. 2 Find the length(in cm) of the container.
+A. 35 cm
+B. 60 cm
+C. 75 cm
+D. 50 cm
+Answer: B
+
+Q.59: When the length of a rectangle is increased by 10%, and its breadth is reduced by 10%, how is the area affected?
+A. Remains same
+B. Increases by 1%
+C. Decreases by 1%
+D. Decreases by 2%
+Answer: C
+
+Q.60: In triangle ABC, right-angled at B, if tan A= 1 , find the value of sin A(cos C+cos A) . 3 cos C(sin C−sin A)
+A. -2
+B. 1 2
+C. 2
+D. −1
+Answer: C
+
+Q.61: If the height of a prism with a triangular base is tripled and the area of the base is reduced to one-third, find the change in the volume.
+A. Increases 3 times
+B. Decreases 3 times
+C. Increases 9 times
+D. Remains the same
+Answer: A
+
+Q.62: If x= √√5+2 , then what is the value of √5−2 x² −2√5x+ 8 ?
+A. 2
+B. 4
+C. 5
+D. 7
+Answer: D
+
+Q.63: If △ABC≅△PQR and ∠ABC= (x+ 20)° , ∠PQR= (2x−10)° , and ∠RPQ = (x+ 40)° , find ∠ABC .
+A. 30°
+B. 50°
+C. 70°
+D. 80°
+Answer: C
+
+Q.64: A chord AB of a circle subtends an angle of 30° at a point on the circumference. If the length of AB is 5 cm, find the radius of the circle.
+A. 2.5 cm
+B. 3 cm
+C. 4.5 cm
+D. 5 cm
+Answer: D
+
+Q.65: A chord of a circle measures 48 cm and is 7 cm away from the centre. What will be the length of another chord of the same circle that is 15 cm away from the centre?
+A. 40 cm
+B. 45 cm
+C. 50 cm
+D. 60 cm
+Answer: A
+
+Q.66: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p9_x1899.jpeg)
+A. 38
+B. 67
+C. 42
+D. 64
+Answer: A
+
+Q.67: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p9_x1900.jpeg)
+A. 17.2%
+B. 14.5%
+C. 19.1%
+D. 18.3%
+Answer: A
+
+Q.68: The ratio of milk and water in a mixture is 5:
+
+3. How much fraction of the mixture must be drawn off and substituted by water so that the ratio of milk and water in the mixture becomes 1:1?
+A. 1
+B. 1/7
+C. 2
+D. 1/5
+Answer: A
+
+Q.69: The radius of a cylinder is decreased by 20% while its height is increased by 25%. What is the percentage change in its volume?
+A. 10% decrease
+B. 25% decrease
+C. 15% decrease
+D. 20% decrease
+Answer: A
+
+Q.70: A man purchased a watch at a 10% discount. If he had instead received a 20% discount, he would have paid ₹125 less. What is the marked price of the watch?
+A. ₹1340
+B. ₹1250
+C. ₹1430
+D. ₹1520
+Answer: B
+
+Q.71: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p10_x2212.jpeg)
+A. 11:13
+B. 8:11
+C. 9:11
+D. 13:17
+Answer: C
+
+Q.72: Two ships are sailing in the sea on the two sides of a lighthouse. The angles of depression of the two ships as observed from the top of the lighthouse are 30° and 45° respectively. If the distance between the two ships is 100(1 + √3) m, find the height of the lighthouse.
+A. 100 m
+B. 200 m
+C. 300 m
+D. 500 m
+Answer: A
+
+Q.73: Given that p + q + r = 0 (where p, q, r ≠ 0), what is the value of the expression p² qr+ q2 rp + r² ? pq
+A. 3
+B. 6
+C. 9
+D. 10
+Answer: A
+
+Q.74: An express train covers a total distance of 900 km/a 12-hour journey. It travels the first 1 of the distance at a constant speed of v km/h, the next 150 km at a speed of 75 km/h, and the remaining distance at a speed that is 25% faster than its initial speed
+
+v. Find the constant speed
+
+v.
+A. 60 km/h
+B. 64.5 km/h
+C. 65.5 km/h
+D. 70.0 km/h
+Answer: A
+
+Q.75: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-3_p10_x2213.jpeg)
+A. 31
+B. 33
+C. 48
+D. 70
+Answer: A
+
+Q.76: Select the wrongly spelt word out of the four alternatives.
+A. Assasination
+B. Indispensable
+C. Sentimental
+D. Expressionless
+Answer: A
+
+Q.77: Select the wrongly spelt word out of the four alternatives.
+A. Absoloot
+B. Brusquely
+C. Messenger
+D. Exhausted
+Answer: A
+
+Q.78: Choose the most appropriate antonym of the underlined word. The villagers were destitute after the devastating floods.
+A. Wealthy
+B. Penniless
+C. Needy
+D. Poor
+Answer: A
+
+Q.79: Choose the most appropriate antonym of the underlined word. At the editor's request, the author agreed to abridge the book's final chapter.
+A. Shorten
+B. Condense
+C. Expand
+D. Curtail
+Answer: C
+
+Q.80: Select the correctly spelt word to replace the highlighted word in the given sentence. The movie was a poinyant family drama.
+A. Poignat
+B. Poinant
+C. Poignnant
+D. Poignant
+Answer: D
+
+Q.81: Select the correctly spelt word to replace the highlighted word in the given sentence. The weather was truly bizaare today.
+A. Bizar
+B. Bizarre
+C. Bizaare
+D. Bizzare
+Answer: B
+
+Q.82: In the following question, the first and last parts of the sentence (1 and 6) are given. The rest of the sentence is split into four parts and named P, Q, R, and S. These four parts are not given in their proper order. Read the sentence and find out which of the four combinations is correct.
+
+1. The Thar Desert constitutes P. rainfall and high evaporation Q. characterised by extremely low R. a vast arid region S. which results in a
+
+6. landscape dominated by shifting sand dunes.
+A. RSPQ
+B. SQRP
+C. RQPS
+D. PSQR
+Answer: C
+
+Q.83: In the following question, the first and last parts of the sentence (1 and 6) are given. The rest of the sentence is split into four parts and named P, Q, R, and S. These four parts are not given in their proper order. Read the sentence and find out which of the four combinations is correct.
+
+1. Mount Kailash stands as a P. reaching a height that remains Q. and serves as a sacred R. magnificent peak in the Himalayas S. destination for several religious pilgrimages
+
+6. largely unchallenged by modern mountaineering expeditions.
+A. RQSP
+B. PSQR
+C. QSRP
+D. RSPQ
+Answer: A
+
+Q.84: Choose the most appropriate option to fill the blank in the given sentence. I decided to ______ embroidery because I wanted to ______ the tradition my grandmother had started.
+A. take on, carry out
+B. take in, carry off
+C. take up, carry on
+D. take after, carry away
+Answer: C
+
+Q.85: Choose the most appropriate option to fill the blank in the given sentence. After I accidentally ______ my juice during the interview, it took me a moment to ______ my composure.
+A. knocked out,
+B. knocked off, retain recover
+C. knocked up, redo
+D. knocked over, regain
+Answer: D
+
+Q.86: From the given options, select the homonym that corresponds to both Definition (P) and Definition (Q).
+
+(P) The mathematical process of finding the total area under a curve
+
+(Q) The mixing and unifying of previously segregated social groups
+A. Derivation
+B. Integration
+C. Convergence
+D. Divergence
+Answer: B
+
+Q.87: Identify the option in which the underlined idiom has been used incorrectly.
+A. Realising that their primary competitor was about to file a groundbreaking patent, the tech firm's research department strained every nerve to finish their own prototype first.
+B. By introducing a surprise clause that doubled the financial penalty for any late delivery, the procurement attorney managed to raise the stakes of the contract negotiations.
+C. After the real estate conglomerate filed for bankruptcy, the director decided to go down with the ship, quickly selling off all his corporate shares to protect his personal wealth.
+D. Seeking vengeance for the sabotage that ruined his startup, the entrepreneur claimed an eye for an eye by orchestrating a public relations crisis for his rival.
+Answer: A
+
+Q.88: The sentence given below is divided into four segments labelled P, Q, R, and S. Read the sentence carefully to determine which segment contains a lexical error. Select the letter corresponding to that specific segment as your answer. (Note: The sentence contains exactly one error. Ignore errors of punctuation, if any.)
+
+(P) Maintaining a posture of strict nondisclosure, the board of directors refuses to comment on the acquisition /
+
+(Q) even though rumours bound that the tech giant is on the verge of bankruptcy /
+
+(R) due to severe algorithmic failures that have fundamentally compromised /
+
+(S) its core proprietary architecture.
+A. P
+B. Q
+C. R
+D. S
+Answer: A
+
+Q.89: The sentence given below is divided into four segments labelled P, Q, R, and S. Read the sentence carefully to determine which segment contains a lexical error. Select the letter corresponding to that specific segment as your answer. (Note: The sentence contains exactly one error. Ignore errors of punctuation, if any.)
+
+(P) The coalition launched an aggressive media campaign to garter support /
+
+(Q) for the proposed labour reforms, seeking to mobilise constituent pressure /
+
+(R) and thereby influence critical swing-vote lawmakers whose final deliberations /
+
+(S) will dictate the outcome of the fastapproaching, high-stakes parliamentary vote.
+A. P
+B. Q
+C. R
+D. S
+Answer: C
+
+Q.90: Convert the following passive clause into its active voice equivalent. Select the single option that correctly uses the active form of the principal verb while preserving the original meaning. For a hostile prank to be carried out against an unsuspecting individual is tough, but for direct harm to be initially avoided is easy because behaviour remains conditioned by civilization, by which an invisible boundary of social restraint is instilled.
+A. An unsuspecting individual is tough to carry out a hostile prank against, but direct harm is initially easy to avoid because behaviour remains conditioned by civilization, which instils an invisible boundary of social restraint.
+B. An unsuspecting individual has been tough to carry out a hostile prank, but direct harm is initially easy to avoid because behaviour remained conditioned by civilization, which instils an invisible boundary of social restraint.
+C. An unsuspecting individual is tough to be carrying out a hostile prank against, but direct harm is initially easy to avoid because behaviour remains condition by civilization, which instils an invisible boundary of social restraint.
+D. An unsuspecting individual is tough to carry out a hostile prank against, but direct harm is initially easy to avoid because behaviour remains conditional by civilization, which instils an invisible boundary of social restraint.
+Answer: A
+
+Q.91: Read the following sentence carefully, focusing on the underlined portion. Select the option (A/B/C) that can suitably substitute the underlined segment to improve the given sentence. If the sentence is correct as written, then select Option D (No improvement required). Hidden far beneath the dense, unexplored canopy of the Amazon rainforest, and completely shielded from modern satellite observation, unprecedented numbers of endangered botanical species thrive.
+A. unprecedented number of endangered botanical species' thrive
+B. unprecedented numbers of endangered botanical species' thrives
+C. unprecedented number of endangered botanical species thrives
+D. No improvement required
+Answer: D
+
+Q.92: Identify the option that correctly transforms the given sentence into indirect speech. Himansh said to Laksh, "Even within our structured work environment, I might point out a pleasant view of the setting sun shining through the tall trees of our local forest to a colleague working next to me—the very same forest surrounding the enormous, concealed manufacturing facility we had constructed."
+A. Himansh told Laksh that even within their structured work environment, he might have pointed out a pleasant view of the setting sun shining through the tall trees of their local forest to a colleague working next to him—the very same forest surrounding the enormous, concealed manufacturing facility they had constructed.
+B. Himansh told Laksh that even within their structured work environment, he might point out a pleasant view of the setting sun shining through the tall trees of their local forest to a colleague working next to him— the very same forest surrounding the enormous, concealed manufacturing facility they had constructed.
+C. Himansh told Laksh that even within their structured work environment, he might point out a pleasant view of the setting sun 12 shining through the tall trees of their local forest to a colleague having worked next to him—the very same forest surrounding the enormous, concealed manufacturing facility they had constructed.
+D. Himansh told Laksh that even within their structured work environment, he might point out a pleasant view of the setting sun shining through the tall trees of their local forest to a colleague working next to him— the very same forest having surrounded the enormous, concealed manufacturing facility they had constructed.
+Answer: B
+
+Q.93: Read the sentence below carefully. Choose the option (A/B/C) that best improves the sentence. If the sentence is already correct, select Option D (No improvement required). The radical philosopher argued that the modern state's continuous prioritisation of absolute capital accumulation/human survival leads to an inevitable historical trajectory; yet, it is far better to sketch a path toward collective emancipation than to describe the apocalypse.
+A. The radical philosopher laid an argument that the continuous prioritisation of absolute capital accumulation by the modern state/human survival leads to an inevitable historical trajectory; yet, far more better than to describe the apocalypse is to sketch a path toward collective emancipation.
+B. The radical philosopher was arguing that leading to an inevitable historical trajectory is the continuous prioritisation of absolute capital accumulation/human survival by the modern state; but it was far better, he argued, sketching a path toward collective emancipation than describing the apocalypse.
+C. The radical philosopher made an argument that continuously prioritising absolute capital accumulation than human survival by the modern state led to a historical trajectory that was inevitable; however, rather than to describe the apocalypse, it was far better to sketch a path toward collective emancipation.
+D. No improvement required
+Answer: D
+
+Q.94: Select the option that correctly converts the following indirect statement into direct speech. Tanisha told Kavita that after a couple of years, she had grown tired of the school and had decided, with no evidence, that their headmaster had meant to dismiss her on the pretext of catching her nodding in the staff room.
+A. Tanisha said to Kavita, "After a couple of years, I grew tired of the school and decided, with no evidence, that our headmaster meant to dismiss me on the 13 pretext of catching me nodding in the staff room."
+B. Tanisha said to Kavita, "After a couple of year, I had grown tired of the school and decided, with no evidence, that our headmaster meant to dismiss me on the pretext of catching me nodding in the staff room."
+C. Tanisha said to Kavita, "After a couple of years, I grew tired of the school and had decided, with no evidences, that our headmaster meant to dismiss me on the pretext of catching me nodding in the staff room."
+D. Tanisha said to Kavita, "After a couple of years, I grew tired of the school and decided, with no evidence, that our headmaster meant was going to dismissed me on the pretext of catching me nodding in the staff room."
+Answer: A
+
+Q.95: Select the correct passive form of the given sentence. The king ordered the soldiers to guard the fort at all times.
+A. The soldiers are being ordered to guard the
+fort at all times by the king.
+B. The soldiers were ordered that they should
+have guarded the fort at all times by the
+king.
+C. The fort was ordered to be guarded at all
+times by the soldiers by the king.
+D. The soldiers were ordered to guard the fort
+at all times by the king.
+Answer: D
+
+Q.96: **Comprehension (Q. 96 - 100):** Community gardens have become valuable urban initiatives that promote environmental awareness, food security, and social cooperation. In many cities, local authorities and residents have begun to ______ abandoned plots into productive green spaces, transforming neglected areas into centres of sustainability and community interaction. However, participation often varies according to socioeconomic conditions and institutional support. Despite practical difficulties, community gardens have (B) ______ as effective instruments of environmental education, particularly in areas where access to fresh produce is limited. Their success depends on sustained public involvement, without which even well-planned projects may (C) ______/time because of poor maintenance and weak organisation. Such gardens also influence behavioural change. As participants become more conscious of consumption patterns and ecological responsibilities, this awareness gradually (D) ______ across the wider urban population. Ultimately, the long-term survival of these projects depends not only on supportive policies but also on the ability of communities to (E) ______ collaborative networks that remain active despite changes in leadership and funding.
+
+---
+
+Choose the most appropriate option to fill in blank
+A. convert
+B. preserve
+C. withdraw
+D. scatter
+Answer: A
+
+Q.97: **Comprehension (Q. 96 - 100):** Community gardens have become valuable urban initiatives that promote environmental awareness, food security, and social cooperation. In many cities, local authorities and residents have begun to ______ abandoned plots into productive green spaces, transforming neglected areas into centres of sustainability and community interaction. However, participation often varies according to socioeconomic conditions and institutional support. Despite practical difficulties, community gardens have (B) ______ as effective instruments of environmental education, particularly in areas where access to fresh produce is limited. Their success depends on sustained public involvement, without which even well-planned projects may (C) ______/time because of poor maintenance and weak organisation. Such gardens also influence behavioural change. As participants become more conscious of consumption patterns and ecological responsibilities, this awareness gradually (D) ______ across the wider urban population. Ultimately, the long-term survival of these projects depends not only on supportive policies but also on the ability of communities to (E) ______ collaborative networks that remain active despite changes in leadership and funding.
+
+---
+
+Choose the most appropriate word to fill in blank
+A. declined
+B. retreated
+C. emerged
+D. dissolved
+Answer: C
+
+Q.98: **Comprehension (Q. 96 - 100):** Community gardens have become valuable urban initiatives that promote environmental awareness, food security, and social cooperation. In many cities, local authorities and residents have begun to ______ abandoned plots into productive green spaces, transforming neglected areas into centres of sustainability and community interaction. However, participation often varies according to socioeconomic conditions and institutional support. Despite practical difficulties, community gardens have (B) ______ as effective instruments of environmental education, particularly in areas where access to fresh produce is limited. Their success depends on sustained public involvement, without which even well-planned projects may (C) ______/time because of poor maintenance and weak organisation. Such gardens also influence behavioural change. As participants become more conscious of consumption patterns and ecological responsibilities, this awareness gradually (D) ______ across the wider urban population. Ultimately, the long-term survival of these projects depends not only on supportive policies but also on the ability of communities to (E) ______ collaborative networks that remain active despite changes in leadership and funding.
+
+---
+
+Identify the most suitable phrasal verb for blank
+A. carry forward
+B. take after
+C. set aside
+D. break down
+Answer: D
+
+Q.99: **Comprehension (Q. 96 - 100):** Community gardens have become valuable urban initiatives that promote environmental awareness, food security, and social cooperation. In many cities, local authorities and residents have begun to ______ abandoned plots into productive green spaces, transforming neglected areas into centres of sustainability and community interaction. However, participation often varies according to socioeconomic conditions and institutional support. Despite practical difficulties, community gardens have (B) ______ as effective instruments of environmental education, particularly in areas where access to fresh produce is limited. Their success depends on sustained public involvement, without which even well-planned projects may (C) ______/time because of poor maintenance and weak organisation. Such gardens also influence behavioural change. As participants become more conscious of consumption patterns and ecological responsibilities, this awareness gradually (D) ______ across the wider urban population. Ultimately, the long-term survival of these projects depends not only on supportive policies but also on the ability of communities to (E) ______ collaborative networks that remain active despite changes in leadership and funding.
+
+---
+
+Select the most suitable verb form for blank
+A. spread
+B. spreads
+C. spreading
+D. has spreading
+Answer: B
+
+Q.100: **Comprehension (Q. 96 - 100):** Community gardens have become valuable urban initiatives that promote environmental awareness, food security, and social cooperation. In many cities, local authorities and residents have begun to ______ abandoned plots into productive green spaces, transforming neglected areas into centres of sustainability and community interaction. However, participation often varies according to socioeconomic conditions and institutional support. Despite practical difficulties, community gardens have (B) ______ as effective instruments of environmental education, particularly in areas where access to fresh produce is limited. Their success depends on sustained public involvement, without which even well-planned projects may (C) ______/time because of poor maintenance and weak organisation. Such gardens also influence behavioural change. As participants become more conscious of consumption patterns and ecological responsibilities, this awareness gradually (D) ______ across the wider urban population. Ultimately, the long-term survival of these projects depends not only on supportive policies but also on the ability of communities to (E) ______ collaborative networks that remain active despite changes in leadership and funding.
+
+---
+
+Choose the most appropriate phrasal verb for blank (E).
+A. build up
+B. put off
+C. run into
+D. look over
+Answer: A
+

@@ -1,0 +1,808 @@
+================================================================================
+SSC CGL 2025 TIER-I (HELD ON 12 SEPT 2025 SHIFT 1)
+Exam: SSC CGL | Year: 2025 | Total Questions: 100 | Duration: 60 Minutes
+Extracted & Verified from Official Answer Key via SSC ZONE (www.ssczone.in)
+Hindi Typos & OCR Artifacts Cleaned & Corrected on: 05 Nov 2026
+Answer Key Accuracy: 100.00% Verified against Official SSC Answer Keys
+================================================================================
+
+Q1. In the following question, select the related word from the given alternatives. Watt : Power :: Pascal : ? निम्नलिखित प्रश्न में दिए गए विकल्पों में से संबंधित शब्द का चयन कीजिए। वाट : शक्ति :: पास्कल : ?
+A) Energy / ऊर्जा
+B) Temperature / तापमान
+C) Pressure / दबाव
+D) Force / बल
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q2. In the following question, select the related word from the given alternatives. Mekong : Tibet :: Amazon : ? निम्नलिखित प्रश्न में दिए गए विकल्पों में से संबंधित शब्द का चयन कीजिए। मेकांग : तिब्बत :: अमेज़न : ?
+A) Chile / चिली
+B) Peru / पेरू
+C) Colombia / कोलंबिया
+D) Ecuador / इक्वेडोर
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q3. Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. C G K, G K O, K O S, O S W, ? दिए गए विकल्पों में से उस अक्षर-समूह का चयन करें जो निम्नलिखित शृंखला में प्रश्न चिह्न (?) के स्थान पर आ सकता है। C G K, G K O, K O S, O S W, ?
+A) SDA
+B) KNB
+C) SWA
+D) KJH
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q4. Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. MIN, NJM, OKL, PLK, ? दिए गए विकल्पों में से उस अक्षर-समूह का चयन करें जो निम्नलिखित शृंखला में प्रश्न चिह्न (?) को प्रतिस्थापित कर सकता है। MIN, NJM, OKL, PLK, ?
+A) QWS
+B) HGF
+C) QMJ
+D) UJH
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q5. Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. BRF , EUH , HXJ , KAL , ? दिए गए विकल्पों में से उस अक्षर-समूह का चयन करें जो निम्नलिखित शृंखला में प्रश्न चिह्न (?) को प्रतिस्थापित कर सकता है। BRF , EUH , HXJ , KAL , ?
+A) NMB
+B) NKH
+C) NHG
+D) NDN
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q6. Select the letter-cluster from among the given options that can replace the question mark (?) in the following series: WZWT, WVOH, WRGV, WNYJ, ? दिए गए विकल्पों में से उस अक्षर-समूह का चयन करें जो निम्नलिखित शृंखला में प्रश्न चिह्न (?) को प्रतिस्थापित कर सकता है: WZWT, WVOH, WRGV, WNYJ, ?
+A) W J Q X / W J Q X
+B) W J Q W / W J Q W
+C) W H P X
+D) W J P X / W J P X
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q7. Select the letter-cluster from among the given options that can replace the question mark (?) in the following series: MCFI, NEKP, OGPW, PIUD, ? दिए गए विकल्पों में से उस अक्षर-समूह का चयन करें जो निम्नलिखित शृंखला में प्रश्न चिह्न (?) को प्रतिस्थापित कर सकता है: MCFI, NEKP, OGPW, PIUD, ?
+A) N K Y D / N K Y D
+B) Q L Y L
+C) Q K Z K
+D) Q K Z L
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q8. What comes next: 3, 12, 7, 16, 11, 20, 15, ? इसके बाद क्या आएगा: 3, 12, 7, 16, 11, 20, 15, ?
+A) 16
+B) 24
+C) 14
+D) 18
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q9. Each of the letters in the word STUDENT is arranged in alphabetical order. How many letters are there in the English alphabetical series between the letter that is second from the left and the one that is fourth from the right in the new letter-cluster formed? शब्द STUDENT में प्रत्येक अक्षर को वर्णानुक्रम में व्यवस्थित किया गया है। नए अक्षर-समूह में बायें से दूसरे अक्षर और दायें से चौथे अक्षर के बीच अंग्रेजी वर्णमाला शृंखला में कितने अक्षर हैं?
+A) 17
+B) 13
+C) 11
+D) 15
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q10. Which of the following addresses are identical to each other: 1. Arjun Mehta A-101, Emerald Towers, Surat, 395001 2. Arjun Mehta A-101, Emerald Tower, Surat, 395001 3. Arjun M. A-101, Emerald Tower, Surat, 395001 4. Arjun Mehta A-101, Emerald Tower, Surat, 395001 निम्नलिखित में से कौन से पते एक जैसे हैं: 1. Arjun Mehta A-101, Emerald Towers, Surat, 395001 2. Arjun Mehta A-101, Emerald Tower, Surat, 395001 3. Arjun M. A-101, Emerald Tower, Surat, 395001 4. Arjun Mehta A-101, Emerald Tower, Surat, 395001
+A) 1 and 2 / 1 और 2
+B) 1 and 3 / 1 और 3
+C) 2 and 4 / 2 और 4
+D) 3 and 4 / 3 और 4
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q11. Which of the following is/are identical to the address given: Meenal Gupta 102, Silver Oaks, Sector 12, Noida, 201301 1. Meenal Gupta 102, Silver Oaks, Sector 12, Noida, 201301 2. Meenal Gupta 102, Silver Oaks, Sector-12, Noida, 201301 3. Meenal Gupta 102, Silver Oaks, Sector 12, Noida 201301 4. Meenal Gupta 102, Silver Oaks, Sector 12, Noida, 201302 निम्नलिखित में से कौन-सा/से पते दिए गए पते के समान है/हैं: Meenal Gupta 102, Silver Oaks, Sector 12, Noida, 201301 1. Meenal Gupta 102, Silver Oaks, Sector 12, Noida, 201301 2. Meenal Gupta 102, Silver Oaks, Sector-12, Noida, 201301 3. Meenal Gupta 102, Silver Oaks, Sector 12, Noida 201301 4. Meenal Gupta 102, Silver Oaks, Sector 12, Noida, 201302
+A) 1
+B) 3
+C) 2
+D) 4
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q12. Find the option that best completes the analogy. AG : IO :: CM : ? वह विकल्प ज्ञात कीजिए जो सादृश्य को सर्वोत्तम रूप से पूरा करता है। AG : IO :: CM : ?
+A) KO
+B) KU
+C) KS
+D) KW
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q13. A is facing North. B is seated second to the right of A. Who is sitting immediately to the left of B? A उत्तर दिशा के सम्मुख बैठा है। B, A के दायें से दूसरे स्थान पर बैठा है। B के ठीक बायें कौन बैठा है?
+A) The person seated to the immediate right of A / A के ठीक दायें बैठा व्यक्ति
+B) The person seated opposite to A / A के विपरीत बैठा व्यक्ति
+C) The person seated to the immediate left of A / A के तत्काल बायें बैठा व्यक्ति
+D) Cannot be determined / तय नहीं किया जा सकता
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q14. In the following question, the second word is related to the first word by a specific pattern of letter transformation. Identify the same pattern and apply it to the third word to find the correct option that completes the analogy. TIME : VJOG :: WORD : ? निम्नलिखित प्रश्न में, दूसरा शब्द पहले शब्द से अक्षर परिवर्तन के एक विशिष्ट पैटर्न द्वारा संबंधित है। उसी पैटर्न को पहचानिए और उसे तीसरे शब्द पर लागू करके सही विकल्प चुनिए जो सादृश्य को पूरा करता है। TIME : VJOG :: WORD : ?
+A) YPTF
+B) YQTG
+C) YPSF
+D) ZPSF
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q15. In each of the following questions, a specific pattern such as reversal or rearrangement has been applied to the first word to get the second. Apply the same pattern to the third word and find the correct answer from the given options. GNIDAER : READING :: NOITULOS : ? निम्नलिखित प्रत्येक प्रश्न में, पहले शब्द पर उलटफेर या पुनर्व्यवस्था जैसी एक विशिष्ट पद्धति लागू करके दूसरा शब्द प्राप्त किया गया है। तीसरे शब्द पर भी समान पद्धति लागू करें और दिए गए विकल्पों में से सही उत्तर चुनें। GNIDAER : READING :: NOITULOS : ?
+A) SOLUTION
+B) SOLUNOIT
+C) NOILOSUT
+D) POLLUTION
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q16. In each of the following questions, the first word is coded to form the second word using a specific rearrangement and/or substitution rule. Apply the same rule to the third word to determine the correct corresponding word from the given alternatives. AYRRJC :: CATTLE :: NCPDCAR : ? निम्नलिखित प्रत्येक प्रश्न में, पहले शब्द को एक विशिष्ट पुनर्व्यवस्था और/या प्रतिस्थापन नियम का उपयोग करके दूसरे शब्द के रूप में कूटबद्ध किया गया है। दिए गए विकल्पों में से सही संगत शब्द ज्ञात करने के लिए यही नियम तीसरे शब्द पर भी लागू कीजिए। AYRRJC :: CATTLE :: NCPDCAR : ?
+A) SUBJECTS
+B) NEGLECT
+C) PERFECT
+D) OPERATE
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q17. Identify the odd one: 2, 3, 5, 7, 11, 13, 17, 20 भिन्न को पहचानें: 2, 3, 5, 7, 11, 13, 17, 20
+A) 17
+B) 13
+C) 20
+D) 11
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q18. Which of the following is the odd one out? निम्नलिखित में से कौन-सा विकल्प भिन्न है?
+A) 2, 3, 5 / 2, 3, 5
+B) 11, 13, 17 / 11, 13, 17
+C) 4, 6, 8
+D) 7, 19, 23 / 7, 19, 23
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q19. Rani said, "The man in the photo is my mother's son-in-law." Who is the man to Rani? रानी ने कहा, "फोटो में दिख रहा आदमी मेरी माता का दामाद है।" रानी के लिए वह आदमी कौन है?
+A) Husband / पति
+B) Father / पिता
+C) Uncle / चाचा
+D) Cousin / चचेरा
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q20. In each of the following questions, a group of three numbers/symbols is given in each option. Identify the group that does NOT follow the same pattern as the others. निम्नलिखित प्रत्येक प्रश्न में, प्रत्येक विकल्प में तीन संख्याओं/प्रतीकों का एक समूह दिया गया है। उस समूह की पहचान कीजिए जो अन्य के समान पैटर्न का अनुसरण नहीं करता है।
+A) K11 : I9 : G7
+B) M13 : K11 : I9
+C) O15 : M13 : K11
+D) N14 : K11 : H8
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q21. In each of the following questions, a group of three numbers/symbols is given in each option. Identify the group that does NOT follow the same pattern as the others. निम्नलिखित प्रत्येक प्रश्न में, प्रत्येक विकल्प में तीन संख्याओं/प्रतीकों का एक समूह दिया गया है। उस समूह की पहचान कीजिए जो अन्य के समान स्वरूप का पालन नहीं करता है।
+A) A1@ : B2# : C3$
+B) D4% : E5^ : F6&
+C) G7* : H8( : I9)
+D) J10_ : K11@ : L12@
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q22. Pointing to a man, a woman said, "His mother is the only daughter of my father." How is the man related to the woman? एक आदमी की ओर इशारा करते हुए, एक महिला ने कहा, "उसकी माता मेरे पिता की इकलौती पुत्री है।" वह आदमी उस महिला से किस प्रकार संबंधित है?
+A) Son / पुत्र
+B) Nephew / भतीजा
+C) Cousin / चचेरा भाई
+D) Grandson / पोता
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q23. Pointing to a woman, John says, "She is the wife of my uncle's only son." How is the woman related to John? एक महिला की ओर इशारा करते हुए जॉन कहता है, "वह मेरे चाचा के इकलौते पुत्र की पत्नी है।" वह महिला जॉन से किस प्रकार संबंधित है?
+A) Sister / बहन
+B) Cousin / चचेरा
+C) Sister-in-law / भाभी
+D) Niece / भतीजी
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q24. A man said, "My mother's husband's only son is the father of your sister's brother." How is the man related to you? एक आदमी ने कहा, "मेरी माता के पति का इकलौता पुत्र आपकी बहन के भाई का पिता है।" वह आदमी आपसे किस प्रकार संबंधित है?
+A) Uncle / चाचा
+B) Father / पिता
+C) Grandfather / दादा
+D) Brother / भाई
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q25. If # = ×, @ = -, $ = +, then evaluate: 9 # 2 @ 3 $ 1 यदि # = ×, @ = -, $ = + है, तो मूल्यांकन करें: 9 # 2 @ 3 $ 1
+A) 18
+B) 14
+C) 16
+D) 17
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q26. Which of the following features distinguishes the Elephanta Caves from other rock-cut sites of early India? निम्नलिखित में से कौन-सी विशेषता एलिफेंटा गुफाओं को प्रारंभिक भारत के अन्य चट्टान-कट स्थलों से अलग करती है?
+A) They are primarily Buddhist caves with large stupas. / ये मुख्यत: बड़े स्तूपों वाली बौद्ध गुफाएँ हैं।
+B) The caves focus on Shaivite themes and feature sculptural depth through light and shadow. / ये गुफाएँ शैव विषयवस्तु पर केंद्रित हैं तथा इनमें प्रकाश और छाया के माध्यम से मूर्तिकला की गहराई दिखाई देती है।
+C) They contain a mix of Jain and Vaishnavite depictions in pillar halls. / इनमें स्तंभ कक्षों में जैन और वैष्णव चित्रण का मिश्रण है।
+D) The caves are entirely monolithic structures from the Mauryan period. / ये गुफाएँ मौर्य काल की पूर्णत: अखंड संरचनाएँ हैं।
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q27. Read the statements about the Goncha Festival of Bastar: 1.) Tupki, a mock gun made of bamboo, uses Goncha fruit as bullets. 2.) The chariot procession was started by Chalukya rulers. 3.) Rath Yatra begins on Ashadh Shukla Dashmi and ends on Dutiya. Which of the above statements are correct? बस्तर के गोंचा उत्सव के बारे में कथन पढ़ें: 1.) तुपकी, बांस से बनी एक नकली बंदूक है, जिसमें गोलियों के रूप में गोंचा फल का उपयोग किया जाता है। 2.) रथ यात्रा चालुक्य शासकों द्वारा शुरू की गई थी। 3.) रथ यात्रा आषाढ़ शुक्ल दशमी को शुरू होती है और दुतिया पर समाप्त होती है। उपर्युक्त कथनों में से कौन-सा सही है?
+A) Only 1 and 2 / केवल 1 और 2
+B) Only 2 and 3 / केवल 2 और 3
+C) Only 1 and 3 / केवल 1 और 3
+D) 1, 2 and 3 are correct / 1, 2 और 3 सही है।
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q28. Fill in the blanks: In Carnatic music, a laghu with five beats is known as ____ jaati. रिक्त स्थान भरें: कर्नाटक संगीत में, पाँच ताल वाले लघु को ____ जाति के नाम से जाना जाता है।
+A) Tishra / तिशरा
+B) Chaturashra / चतुराश्र
+C) Khanda / खंडा
+D) Mishra / मिश्रा
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q29. Which of the following statements about Judo is correct? जूदो के बारे में निम्नलिखित में से कौन-सा कथन सही है?
+A) Judo was introduced in 1882 by Jigoro Kano in Japan. / जूदो की शुरुआत 1882 में जापान में जिगोरो कानो द्वारा की गई थी।
+B) India's first National Judo Championship was held in 1970 at Delhi University. / भारत की पहली राष्ट्रीय जूडो चैंपियनशिप 1970 में दिल्ली विश्वविद्यालय में आयोजित की गई थी।
+C) Kalpana Devi won gold at the 2010 Judo World Cup. / कल्पना देवी ने 2010 जूडो विश्व कप में स्वर्ण पदक जीता।
+D) Judo became an Olympic sport in 1965. / जूदो 1965 में ओलंपिक खेल बन गया।
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q30. Where and when will the 59th National Cross Country Championships - 2025 be held? 59वीं राष्ट्रीय क्रॉस कंट्री चैंपियनशिप - 2025 कहाँ और कब आयोजित की जाएगी?
+A) 10th January 2025, Lucknow, Uttar Pradesh / 10 जनवरी 2025, लखनऊ, उत्तर प्रदेश
+B) 12th January 2025, Meerut, Uttar Pradesh / 12 जनवरी 2025, मेरठ, उत्तर प्रदेश
+C) 15th January 2025, Kanpur, Uttar Pradesh / 15 जनवरी 2025, कानपुर, उत्तर प्रदेश
+D) 12th January 2025, Jaipur, Rajasthan / 12 जनवरी 2025, जयपुर, राजस्थान
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q31. What is the core structural focus of the 2024 India-UAE Bilateral Investment Treaty (BIT) within India's international investment strategy? भारत की अंतर्राष्ट्रीय निवेश रणनीति के अंतर्गत 2024 भारत-UAE द्विपक्षीय निवेश संधि (बीआईटी) का मुख्य संरचनात्मक फोकस क्या है?
+A) Proposes joint sovereign funds and links INR swap with UAE banks. / संयुक्त संप्रभु निधि का प्रस्ताव तथा UAE बैंकों के साथ आईएनआर स्वैप को जोड़ना।
+B) Focuses on pre-establishment rights and UAE-based arbitration. / पूर्व-स्थापना अधिकारों और UAE- आधारित मध्यस्थता पर ध्यान केंद्रित करता है।
+C) Assures post-establishment investor confidence via standard and national treatment. / मानक और राष्ट्रीय उपचार के माध्यम से स्थापना के बाद निवेशकों का विश्वास सुनिश्चित करता है।
+D) Aims at GCC-wide tax regulation under India-led digital framework. / इसका उद्देश्य भारत के नेतृत्व वाले डिजिटल ढांचे के तहत जीसीसी-व्यापी कर विनियमन करना है।
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q32. Fill in the blanks: The Santosh Trophy 2022-23 final was uniquely held in _____, where Karnataka defeated Meghalaya to win the title after 54 years. रिक्त स्थान भरें: संतोष ट्रॉफी 2022-23 का फाइनल अनोखे ढंग से _____ में आयोजित किया गया, जहाँ कर्नाटक ने मेघालय को हराकर 54 वर्षों के बाद खिताब जीता।
+A) Dubai / दुबई
+B) Riyadh / रियाद
+C) Doha / दोहा
+D) Muscat / मस्कट
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q33. Which of the following statements best captures the essence of "Landscapes of Loss: The Story of an Indian Drought" by Kavitha Iyer? निम्नलिखित में से कौन सा कथन कविता अय्यर द्वारा लिखित "लैंडस्केप्स ऑफ लॉस: द स्टोरी ऑफ एन इंडियन ड्रॉट" के सार को सबसे अच्छी तरह से दर्शाता है?
+A) A study on drought's human and ecological impacts in India. / भारत में सूखे के मानवीय और पारिस्थितिक प्रभावों पर एक अध्ययन।
+B) A fictional story about a family in a drought-hit area. / सूखा प्रभावित क्षेत्र के एक परिवार की काल्पनिक कहानी।
+C) A history of monsoon patterns and ancient agriculture in India. / भारत में मानसून पैटर्न और प्राचीन कृषि का इतिहास।
+D) A colonial-era policy analysis of water management. / जल प्रबंधन का औपनिवेशिक युग का नीति विश्लेषण।
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q34. Consider the following statements about glacial landforms: Statement 1: Hanging valleys are often found opening into main glacial valleys at higher elevations. Statement 2: Spurs of such hanging valleys are frequently truncated into triangular facets. Which of the following Statements is/are Correct? हिमनदीय भू-आकृतियों के बारे में निम्नलिखित कथनों पर विचार कीजिए: कथन 1: निलंबी घाटियाँ प्रायः ऊँचे स्थानों पर मुख्य हिमनदीय घाटियों में खुलती हुई पाई जाती हैं। कथन 2: ऐसी निलंबी घाटियों के स्पर प्रायः त्रिकोणीय फलकों में विभाजित हो जाते हैं। निम्नलिखित में से कौन सा/से कथन सत्य है/हैं?
+A) Only 1 / केवल 1
+B) Only 2 / केवल 2
+C) 1 and 2 are correct / 1 और 2 सही हैं।
+D) Neither 1 nor 2 are correct / न तो 1 और न ही 2 सही हैं।
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q35. What is the primary function of the Crew Escape System (CES) on ISRO's Human Rated LVM3 (HLVM3) rocket? इसरो के मानव रेटेड एलवीएम3 (HLVM3) रॉकेट पर क्रू एस्केप सिस्टम (CES) का प्राथमिक कार्य क्या है?
+A) To guide the crew module into its designated Low Earth Orbit. / क्रू मॉड्यूल को उसकी निर्दिष्ट निम्न पृथ्वी कक्षा में ले जाने के लिए मार्गदर्शन करना।
+B) To eject the crew module to safety during launch emergencies. / प्रक्षेपण आपातस्थिति के दौरान क्रू मॉड्यूल को सुरक्षित स्थान पर निकालना।
+C) To assist in docking the crew module with a space station. / अंतरिक्ष स्टेशन के साथ क्रू मॉड्यूल को डॉक करने में सहायता करना।
+D) To provide thermal shielding during re-entry into Earth's atmosphere. / पृथ्वी के वायुमंडल में पुनः प्रवेश के दौरान तापीय परिरक्षण प्रदान करना।
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q36. Which of the following statements about Justice Sanjiv Khanna is/are true? 1. He is the 51st Chief Justice of India 2. He succeeded Justice D.Y. Chandrachud 3. He served as CJI from 2023 न्यायमूर्ति संजीव खन्ना के बारे में निम्नलिखित में से कौन सा/से कथन सत्य है/हैं? 1. वे भारत के 51वें मुख्य न्यायाधीश हैं। 2. उन्होंने न्यायमूर्ति डी.वाई. चंद्रचूड़ का स्थान लिया। 3. उन्होंने 2023 से मुख्य न्यायाधीश के रूप में कार्य किया।
+A) 1 and 2 only / केवल 1 और 2
+B) 2 and 3 only / केवल 2 और 3
+C) 1 and 3 only / केवल 1 और 3
+D) 1, 2, and 3 all are true / 1, 2, और 3 सभी सत्य हैं।
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q37. Which of the following objectives are part of the National Population Policy (NPP) 2000? 1. Providing free and compulsory education up to 14 years of age 2. Increasing fertility rate to ensure demographic dividend 3. Reducing infant mortality rate below 30 per 1000 live births 4. Promoting delayed marriage for girls . निम्नलिखित में से कौन-से उद्देश्य राष्ट्रीय जनसंख्या नीति (NPP) 2000 का हिस्सा हैं? 1. 14 वर्ष की आयु तक निःशुल्क और अनिवार्य शिक्षा प्रदान करना। 2. जनसांख्यिकीय लाभांश सुनिश्चित करने के लिए प्रजनन दर में वृद्धि। 3. शिशु मृत्यु दर को प्रति 1000 जीवित जन्मों पर 30 से कम करना। 4. लड़कियों के लिए देर से विवाह को बढ़ावा देना।
+A) Only 1 and 2 are correct / केवल 1 और 2 सही हैं।
+B) Only 1 and 3 are correct / केवल 1 और 3 सही हैं।
+C) Only 1, 3 and 4 are correct / केवल 1, 3 और 4 सही हैं।
+D) 1, 2, 3 and 4 all are correct / 1, 2, 3 और 4 सभी सही हैं।
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q38. Which pathway in cellular respiration generates the most ATP? कोशिकीय श्वसन में कौन सा मार्ग सबसे अधिक ATP उत्पन्न करता है?
+A) Glycolysis / ग्लाइकोलाइसिस
+B) Krebs cycle / क्रेब्स चक्र
+C) Electron transport chain / इलेक्ट्रॉन परिवहन शृंखला
+D) Fermentation / किण्वन
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q39. Arrange the following events in chronological order: a. Eastern Zonal Council meeting 2022 b. States Reorganisation Act passed c. First Central Zonal Council meeting निम्नलिखित घटनाओं को कालानुक्रमिक क्रम में व्यवस्थित करें: a. पूर्वी क्षेत्रीय परिषद की बैठक 2022 b. राज्य पुनर्गठन अधिनियम पारित c. मध्य क्षेत्रीय परिषद की पहली बैठक
+A) b-c-a
+B) c-b-a
+C) a-b-c
+D) b-a-c
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q40. Which of the following most accurately describes the legal character of the right to property under Article 300A of the Indian Constitution? निम्नलिखित में से कौन-सा कथन भारतीय संविधान के अनुच्छेद 300A के तहत संपत्ति के अधिकार के कानूनी चरित्र का सबसे सटीक वर्णन करता है?
+A) It is a fundamental right that guarantees compensation for all property acquisitions. / यह एक मौलिक अधिकार है जो सभी संपत्ति अधिग्रहण के लिए मुआवजे की गारंटी देता है।
+B) It allows the State to deprive a person of property by any law, even without due process. / यह राज्य को किसी भी कानून द्वारा, यहाँ तक कि बिना किसी उचित प्रक्रिया के भी, किसी व्यक्ति को उसकी संपत्ति से वंचित करने की अनुमति देता है।
+C) It is a constitutional legal right that permits deprivation only by authority of law. / यह एक संवैधानिक कानूनी अधिकार है जो केवल कानून के प्राधिकार द्वारा ही वंचित करने की अनुमति देता है।
+D) It permits citizens to claim property protection under Article 32 before the Supreme Court. / यह नागरिकों को अनुच्छेद 32 के अंतर्गत सर्वोच्च न्यायालय में संपत्ति संरक्षण का दावा करने की अनुमति देता है।
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q41. For a rigid body, the angular velocity of any particle about a given axis of rotation is: किसी दृढ़ पिंड के लिए, किसी दिए गए घूर्णन अक्ष के परितः किसी कण का कोणीय वेग है:
+A) Proportional to its distance from the axis / अक्ष से इसकी दूरी के समानुपाती
+B) The same for all particles / सभी कणों के लिए समान
+C) Inversely proportional to its distance from the axis / अक्ष से इसकी दूरी के व्युत्क्रमानुपाती
+D) Always zero / हमेशा शून्य
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q42. The Bharatiya Sakshya Adhiniyam (BSA) places emphasis on the use of technology to ensure the authenticity of evidence. This is particularly relevant for: भारतीय साक्ष्य अधिनियम (BSA) साक्ष्य की प्रामाणिकता सुनिश्चित करने के लिए प्रौद्योगिकी के उपयोग पर जोर देता है। यह विशेष रूप से निम्नलिखित के लिए प्रासंगिक है:
+A) Physical exhibits from crime scenes. / अपराध स्थलों से भौतिक प्रदर्शन।
+B) Hand-written diaries. / हस्तलिखित डायरियाँ।
+C) Digital and electronic evidence. / डिजिटल और इलेक्ट्रॉनिक साक्ष्य।
+D) Oral confessions. / मौखिक स्वीकारोक्ति।
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q43. Read the below statements marked as Assertion (A) and Reason (R). Mark the correct options: Assertion (A) : The One Nation One Ration Card ensures portability of food grains. Reason (R) : It uses Aadhaar-enabled biometric authentication. नीचे दिए गए कथनों को अभिकथन (A) और कारण (R) से चिह्नित करके पढ़िए। सही विकल्पों को चिह्नित कीजिए: अभिकथन (A): एक राष्ट्र एक राशन कार्ड खाद्यान्न की पोर्टेबिलिटी सुनिश्चित करता है। कारण (R): यह आधार-सक्षम बायोमीट्रिक प्रमाणीकरण का उपयोग करता है।
+A) Both A and R are true, and R is the correct explanation of A / A और R दोनों सत्य हैं, और R, A का सही स्पष्टीकरण है।
+B) Both A and R are true, but R is not the correct explanation of A / A और R दोनों सत्य हैं, लेकिन R, A का सही स्पष्टीकरण नहीं है।
+C) A is true, but R is false / A सत्य है, लेकिन R असत्य है।
+D) A is false, but R is true / A असत्य है, लेकिन R सत्य है।
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q44. Cheraw, the bamboo dance performed using crossed bamboo sticks, is a folk dance of which state? चेराव, बांस की छड़ियों का उपयोग करके किया जाने वाला बांस नृत्य, किस राज्य का लोक नृत्य है?
+A) Mizoram / मिजोरम
+B) Meghalaya / मेघालय
+C) Arunachal Pradesh / अरुणाचल प्रदेश
+D) Sikkim / सिक्किम
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q45. What is a key factor assessed in the Global Firepower Military Strength Ranking 2025? ग्लोबल फायरपावर मिलिट्री स्ट्रेंथ रैंकिंग 2025 में मूल्यांकन किया जाने वाला प्रमुख कारक क्या है?
+A) Economic Stability / आर्थिक स्थिरता
+B) Cultural Influence / सांस्कृतिक प्रभाव
+C) Defense Budget / रक्षा बजट
+D) Healthcare Spending / स्वास्थ्य सेवा पर खर्च
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q46. Which of the following correctly describes cooperative sector industries? निम्नलिखित में से कौन सा सहकारी क्षेत्र के उद्योगों का सही वर्णन करता है?
+A) Owned and operated by central government agencies. / केंद्रीय सरकारी एजेंसियों के स्वामित्व और संचालन में।
+B) Operated solely for export purposes. / केवल निर्यात प्रयोजनों के लिए संचालित।
+C) Owned by workers or suppliers sharing profits and losses / लाभ और हानि को साझा करने वाले श्रमिकों या आपूर्तिकर्ताओं के स्वामित्व में
+D) Maintained by foreign companies with Indian partnerships. / भारतीय साझेदारी के साथ विदेशी कंपनियों द्वारा अनुरक्षित।
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q47. Education is now placed under which list after the 42nd Amendment? भारतीय संविधान में 42वें संशोधन के बाद शिक्षा को अब किस सूची में रखा गया है?
+A) Union List / संघ सूची
+B) State List / राज्य सूची
+C) Concurrent List / समवर्ती सूची
+D) None of these / इनमें से कोई नहीं
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q48. What is the main objective of the National Framework for Climate Services (NFCS) launched in 2024? 2024 में शुरू किए गए जलवायु सेवाओं के लिए राष्ट्रीय ढांचे (NFCS) का मुख्य उद्देश्य क्या है?
+A) To set emission trading targets / उत्सर्जन व्यापार लक्ष्य निर्धारित करना।
+B) To regulate groundwater quality / भूजल की गुणवत्ता को विनियमित करने के लिए।
+C) To deliver sector-specific climate information services / क्षेत्र-विशिष्ट जलवायु सूचना सेवाएं प्रदान करना।
+D) To mandate carbon offsetting in the private sector / निजी क्षेत्र में कार्बन ऑफसेटिंग को अनिवार्य बनाना।
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q49. Argon is produced in Earth's crust via? भू - पर्पटी में आर्गन का उत्पादन किसके माध्यम से होता है?
+A) Decay of K-40 / K-40 का क्षय
+B) Volcanoes / ज्वालामुखी
+C) Photosynthesis / प्रकाश संश्लेषण
+D) Cosmic rays / ब्रह्मांडीय किरणें
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q50. Which of the following is true about Fundamental Rights and DPSPs? मौलिक अधिकारों और DPSP के बारे में निम्नलिखित में से कौन-सा कथन सत्य है?
+A) Both are justiciable and enforceable by courts / दोनों ही न्यायालयों द्वारा न्यायोचित और प्रवर्तनीय हैं।
+B) DPSPs override Fundamental Rights when in conflict / संघर्ष की स्थिति में DPSP मौलिक अधिकारों को दरकिनार कर देते हैं।
+C) Fundamental Rights are justiciable, but DPSPs are not / मौलिक अधिकार न्यायोचित हैं, लेकिन DPSP नहीं।
+D) DPSPs are guaranteed by the Constitution;Fundamental Rights are optional / DPSP को संविधान द्वारा गारंटी दी गई है; मौलिक अधिकार वैकल्पिक हैं।
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q51. Arrange the fractions 5/9, 4/7, 3/5, and 2/3 in ascending order. भिन्नों 5/9, 4/7, 3/5 और 2/3 को आरोही क्रम में व्यवस्थित करें।
+A) 2/3, 3/5, 4/7, 5/9
+B) 5/9, 4/7, 3/5, 2/3
+C) 4/7, 5/9, 2/3, 3/5
+D) 3/5, 2/3, 5/9, 4/7
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q52. Simplify: (2½ + 3.6) – 1.9 सरल करें: (2½ + 3.6) - 1.9
+A) 4.2
+B) 5.2
+C) 6.2
+D) 7.2
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q53. Evaluate: 7¼ – [5/6 ÷ {1/3 – (1/2 × (3/4 – 1/4))}] का मूल्यांकन करें: 7¼ - [5/6 ÷ {1/3 - (1/2 × (3/4 - 1/4))}]
+A) -3¼
+B) -2¾
+C) 3¼
+D) 2¾
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q54. From a sample of 200 software engineers, determine the ratio of those proficient in Python to those proficient in Java using the given information: Category Number Proficient in Python and Java 50 Proficient in Python only 70 Proficient in Java only 60 Proficient in neither language 20 200 सॉफ्टवेयर इंजीनियरों के नमूने से, दी गई जानकारी का उपयोग करके पायथन में कुशल लोगों और जावा में कुशल लोगों का अनुपात निर्धारित करें: श्रेणी संख्या पायथन और जावा में कुशल 50 केवल पायथन में कुशल 70 केवल जावा में कुशल 60 किसी भी भाषा में कुशल नहीं 20
+A) 11:12
+B) 12:11
+C) 7:6
+D) 6:7
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q55. Arvind started a business by investing ₹80,000. After 4 months, Bhavin joined with ₹1,20,000. At the end of 8 months from the start, Chandan joined with ₹1,60,000. If the total profit is ₹1,05,000 at the end of the year, find the share of Chandan. अरविंद ने ₹80,000 निवेश करके एक व्यवसाय शुरू किया है। 4 महीने बाद, भाविन ₹1,20,000 के साथ शामिल हो जाता है। शुरुआत से 8 महीने के अंत में, चंदन ₹1,60,000 के साथ शामिल हो जाता है। यदि कुल लाभ ₹1,05,000 है, तो चंदन का हिस्सा ज्ञात कीजिए।
+A) ₹26,500
+B) ₹26,000
+C) ₹26,200
+D) ₹26,250
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q56. A and B start a business. A invests ₹80,000 for 9 months, B invests ₹1,20,000 for 6 months. What is B's share of a ₹45,000 profit? A और B एक व्यवसाय शुरू करते हैं। A, 9 महीने के लिए ₹80,000 का निवेश करता है, B, 6 महीने के लिए ₹1,20,000 का निवेश करता है। ₹45,000 के लाभ में B का हिस्सा क्या है?
+A) ₹26,500
+B) ₹28,000
+C) ₹36,000
+D) ₹22,500
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q57. What is the average of all integers between 100 and 250 that are exactly divisible by 11? 100 और 250 के बीच उन सभी पूर्णांकों का औसत क्या है जो 11 से पूर्णतः विभाज्य हैं?
+A) 176
+B) 186
+C) 196
+D) 146
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q58. The average of 15 numbers is 80. The average of the first 6 numbers is 72. The average of the next 6 numbers is 25% more than the average of the first 6 numbers. The 13th number is 8 more than the 15th number, and the 14th number is 10 less than the 15th number. What is the average of the 13th and 14th numbers? 15 संख्याओं का औसत 80 है। पहली 6 संख्याओं का औसत 72 है। अगली 6 संख्याओं का औसत पहली 6 संख्याओं के औसत से 25% अधिक है। 13वीं संख्या, 15वीं संख्या से 8 अधिक है, और 14वीं संख्या, 15वीं संख्या से 10 कम है। 13वीं और 14वीं संख्याओं का औसत क्या है?
+A) 70.89
+B) 85
+C) 75.67
+D) 80.65
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q59. A landlord bought a flat for ₹8,00,000. He wants to earn a 9% annual return on his investment after paying ₹2,000 per month for maintenance. What should be the monthly rent he charges? एक मकान मालिक ने ₹8,00,000 में एक फ्लैट खरीदा है। वह रखरखाव के लिए प्रत्येक महीने ₹2,000 का भुगतान करने के बाद, अपने निवेश पर 9% वार्षिक रिटर्न कमाना चाहता है। उसे प्रत्येक महीने कितना किराया लेना चाहिए?
+A) ₹7,000
+B) ₹7,500
+C) ₹8,000
+D) ₹8,500
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q60. An amount is said to double in 5 years with compound interest. How many years will it take for the amount to grow to 8 times its original value? कहा जाता है कि एक राशि चक्रवृद्धि ब्याज के साथ 5 वर्षों में दोगुनी हो जाती है। राशि को अपने वास्तविक मूल्य से 8 गुना बढ़ने में कितने वर्ष लगेंगे?
+A) 15
+B) 16
+C) 17
+D) 18
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q61. A sum becomes ₹6,600 in 2 years and ₹7,920 in 3 years at compound interest. What is the original principal? चक्रवृद्धि ब्याज पर एक धनराशि 2 वर्ष में ₹6,600 तथा 3 वर्ष में ₹7,920 हो जाती है। मूलधन क्या है?
+A) ₹4,000.33
+B) ₹5,583.33
+C) ₹4,583.33
+D) ₹6,583.33
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q62. Suman purchased 25 liters of milk at ₹45 per liter and another 15 liters of milk at ₹50 per liter. She combined both quantities and then sold the entire mixture at ₹48 per liter. What was her total profit or loss? सुमन ने 25 लीटर दूध ₹45 प्रति लीटर की दर से और 15 लीटर दूध ₹50 प्रति लीटर की दर से खरीदा है। वह दोनों मात्राओं को मिलाता है और फिर पूरे मिश्रण को ₹48 प्रति लीटर की दर से बेचता है। उसका कुल लाभ या हानि क्या थी?
+A) Loss of ₹45 / ₹45 की हानि
+B) Profit of ₹45 / ₹45 का लाभ
+C) Profit of ₹90 / ₹90 का लाभ
+D) Loss of ₹90 / ₹90 की हानि
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q63. A toy manufacturer produced 1200 toy cars at a total cost of ₹90,000. He donated 200 cars to a charity event. For the rest, he announced a 10% discount on the market price of ₹120 per car. He also offered 2 toy cars free for every 8 toy cars purchased. If all 1200 toy cars were distributed, what is his overall gain or loss percentage? एक खिलौना निर्माता ₹90,000 की कुल लागत से 1200 खिलौना कारें बनाता है। वह 200 कारें एक चैरिटी कार्यक्रम में दान कर देता है। शेष के लिए, वह ₹120 प्रति कार के बाजार मूल्य पर 10% की छूट की घोषणा करता है। वह खरीदी गई प्रत्येक 8 खिलौना कारों के लिए 2 खिलौना कारें मुफ्त देने की भी पेशकश करता है। यदि सभी 1200 खिलौना कारें वितरित की गई हैं, तो उसका कुल लाभ या हानि प्रतिशत क्या है?
+A) 4% loss / 4% हानि
+B) 4% profit / 4% लाभ
+C) 5% loss / 5% हानि
+D) 5% profit / 5% लाभ
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q64. A retailer marks an air conditioner 80% above its cost price. He offers a first discount of 25% on the marked price. During a festive offer, an additional discount of 10% is applied on the already discounted price. If the final selling price is ₹15,552, what is the approximate cost price of the air conditioner?" एक रिटेलर एक एयर कंडीशनर की कीमत उसकी लागत कीमत से 80% ज़्यादा रखता है। वह अंकित मूल्य पर 25% की पहली छूट प्रदान करता है। एक त्योहारी ऑफ़र के दौरान, पहले से छूटे वाले मूल्य पर 10% की अतिरिक्त छूट लागू की जाती है। यदि अंतिम विक्रय मूल्य ₹15,552 है, तो एयर कंडीशनर का अनुमानित क्रय मूल्य क्या है?
+A) ₹9,000
+B) ₹9,200
+C) ₹12,800
+D) ₹10,000
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q65. A 40-liter mixture contains juice and water in the ratio 5:3. How much water (in liters) must be added to this mixture to change the ratio of juice to water to 2:3? 40 लीटर के मिश्रण में जूस और पानी का अनुपात 5:3 है। जूस और पानी का अनुपात 2:3 करने के लिए इस मिश्रण में कितना पानी (लीटर में) मिलाया जाना चाहिए?
+A) 15.5 litres / 15.5 लीटर
+B) 22.5 litres / 22.5 लीटर
+C) 25 litres / 25 लीटर
+D) 30 litres / 30 लीटर
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q66. A is able to complete a task in 15 days, while B takes 20 days to finish the same task. If they collaborate and work together for 4 days, what fraction of the work will still remain? A किसी कार्य को 15 दिन में पूरा कर सकता है, जबकि B को उस कार्य में 20 दिन लगते हैं। यदि वे मिलकर 4 दिन कार्य करें, तो कार्य का कितना भाग शेष रह जाएगा?
+A) 7/15
+B) 11/15
+C) 8/15
+D) 4/15
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q67. Two oils priced at ₹90 per kg and ₹150 per kg are blended and sold at ₹144 per kg, achieving a profit margin of 20%. What is the ratio of the two oils in the mixture? ₹90 प्रति किलोग्राम और ₹150 प्रति किलोग्राम मूल्य वाले दो तेलों को मिश्रित करके ₹144 प्रति किलोग्राम की दर से बेचा जाता है, जिससे 20% का लाभ प्राप्त होता है। मिश्रण में दोनों तेलों का अनुपात क्या है?
+A) 1 : 1
+B) 2 : 1
+C) 3 : 2
+D) 4 : 1
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q68. Three pipes, A, B, and C are capable of filling a tank in 6, 8, and 12 hours, respectively. When all three pipes are opened together, they operate for 2 hours before pipe C is closed. How much additional time will it take to completely fill the tank after that? तीन पाइप, A, B और C, एक टंकी को क्रमशः 6, 8 और 12 घंटे में भर सकते हैं। जब तीनों पाइप एक साथ खोले जाते हैं, तो वे 2 घंटे तक चलते हैं, जिसके बाद पाइप C को बंद कर दिया जाता है। इसके बाद टंकी को पूरी तरह भरने में कितना अतिरिक्त समय लगेगा?
+A) 6/7 hours / 6/7 घंटे
+B) 5/7 hours / 5/7 घंटे
+C) 4/7 hours / 4/7 घंटे
+D) 3/7 hours / 3/7 घंटे
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q69. A bullet train covers a fixed distance in 30 minutes at an average speed of 240 km/h. Due to track maintenance, it needs to be diverted, increasing the distance by 20%. If the train needs to arrive at its destination on time (i.e., in 30 minutes), what should its new average speed be in km/h? एक बुलेट ट्रेन 240 किमी/घंटा की औसत गति से 30 मिनट में एक निश्चित दूरी तय करती है। ट्रैक रखरखाव के कारण, इसे डायवर्ट करने की आवश्यकता है, जिससे दूरी 20% बढ़ जाती है। यदि ट्रेन को समय पर (अर्थात, 30 मिनट में) अपने गंतव्य पर पहुँचना है, तो इसकी नई औसत गति किमी/घंटा में क्या होनी चाहिए?
+A) 280 km/h / 280 किमी/घंटा
+B) 300 km/h / 300 किमी/घंटा
+C) 288 km/h / 288 किमी/घंटा
+D) 320 km/h / 320 किमी/घंटा
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q70. Two cars, X and Y, start from points 360 km apart and travel at constant speeds. If they move towards each other, they meet in 4 hours. If they move in the same direction, they meet in 12 hours. What is the speed of car X? (Assume X is the faster car). दो कारें, X और Y, 360 किमी दूर स्थित बिंदुओं से चलना शुरू करती हैं और समान गति से यात्रा करती हैं। यदि वे एक- दूसरे की ओर बढ़ती हैं, तो वे 4 घंटे में मिलती हैं। यदि वे एक ही दिशा में चलती हैं, तो वे 12 घंटे में मिलती हैं। कार X की गति क्या है? (मान लें कि X तेज कार है)।
+A) 60 km/h / 60 किमी/घंटा
+B) 75 km/h / 75 किमी/घंटा
+C) 45 km/h / 45 किमी/घंटा
+D) 90 km/h / 90 किमी/घंटा
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q71. A circular pizza having a radius of 21 cm. If 75% of it is eaten, what is the area of pizza remaining? एक वृत्ताकार पिज़्ज़ा जिसकी त्रिज्या 21 सेमी है। यदि इसका 75% भाग खा लिया जाता है, तो शेष बचे पिज़्ज़ा का क्षेत्रफल क्या है?
+A) 173.25 cm² / 173.25 सेमी²
+B) 346.5 cm² / 346.5 सेमी²
+C) 432.25 cm² / 432.25 सेमी²
+D) 115.5 cm² / 115.5 सेमी²
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q72. A ring-shaped disc has outer radius 10 cm and inner radius 7 cm. What is the approximate ratio of the ring's area to the whole outer circle? एक वलय के आकार की डिस्क की बाहरी त्रिज्या 10 सेमी और आंतरिक त्रिज्या 7 सेमी है। वलय के क्षेत्रफल और पूरे बाहरी वृत्त के क्षेत्रफल का अनुमानित अनुपात क्या है?
+A) 1:2
+B) 2:3
+C) 3:4
+D) 4:5
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q73. A bicycle wheel having a radius of 35 cm. What percentage of its circumference is covered in a quarter turn? (Use π=22/7) एक साइकिल के पहिये की त्रिज्या 35 सेमी है। एक चौथाई चक्कर में इसकी परिधि का कितना प्रतिशत भाग तय होता है? (π = 22/7 का प्रयोग करें)
+A) 15% / 15%
+B) 25% / 25%
+C) 30% / 30%
+D) 35% / 35%
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q74. The line y = mx + 5 passes through (1,8). Find m. रेखा y = mx + 5 बिंदु (1,8) से होकर जाती है। m ज्ञात कीजिए।
+A) 5
+B) 4
+C) 3
+D) 2
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q75. 31³ + 18³ – 37³ + 210 is equal to: 31³ + 18³ - 37³ + 210 का मान किसके बराबर है:
+A) -36810
+B) -14820
+C) -45670
+D) -23450
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q76. Select the most appropriate synonym of the given word: PERFIDIOUS
+A) Honest
+B) Faithful
+C) Treacherous
+D) Loyal
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q77. Choose the correct meaning of idiom: Hobson's choice
+A) A dilemma between two evils
+B) A free and fair decision
+C) No real choice at all
+D) A selection made under duress
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q78. Select the most appropriate antonym of the given word. Perfidious
+A) Betraying
+B) Faithless
+C) Loyal
+D) Treacherous
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q79. Identify the misspelt word.
+A) Vicereine
+B) Floccinaucinihilipilification
+C) Defenestrate
+D) Quintessance
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q80. Spot the correct spelling of a CSF-shunt procedure.
+A) Ventriculoperitoneal
+B) Ventriculoperitonal
+C) Ventriculaperitoneal
+D) Ventriculoperetoneal
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q81. Choose the correct one-word substitute for: 'An official reprimand or strong criticism'.
+A) Accusation
+B) Denunciation
+C) Censure
+D) Indictment
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q82. Select the correct option: The startup scaled so rapidly that its infrastructure could ____ keep pace.
+A) barely
+B) merely
+C) scarcely
+D) all but
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q83. Select the correct option: Rare though the phenomenon is, it can occur ___ prolonged drought conditions.
+A) towards
+B) amid
+C) among
+D) under
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q84. Select the correct option: While the proposal appeared pragmatic on paper, its implementation proved ____ complicated than expected.
+A) less
+B) more
+C) much
+D) rather
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q85. Find the part of the sentence that contains an error: That the report failed to address the root causes (1)/ of the community unrest were surprising (2)/ given the exhaustive data (3)/ compiled over several months. (4)
+A) (1)
+B) (2)
+C) (3)
+D) (4)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q86. Find the part of the sentence that contains an error: What renders the draft legislation particularly contentious is not its proposed realignment of fiscal powers per se, (1)/ but that it presumes, without empirical substantiation, (2)/ a fiscal equivalence among states whose developmental baselines are (3)/ incommensurable by any normative metric. (4)
+A) (1)
+B) (2)
+C) (3)
+D) (4)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q87. Change the following from active to passive: They have been neglecting maintenance of the archives for years.
+A) Maintenance of the archives had been neglected by them for years.
+B) Maintenance of the archives is being neglected by them for years.
+C) Maintenance of the archives was being neglected by them for years.
+D) Maintenance of the archives has been being neglected by them for years.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q88. Select the sentence containing the homonym of the highlighted word: The choir began the **introit** at the priest's signal.
+A) The child sang the introit during the intermission.
+B) The introit was replaced by an organ improvisation.
+C) The missal included Latin text for the introit.
+D) The cantor rehearsed the Sunday introit.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q89. Convert the sentence provided below from its passive voice structure to an active voice structure: It was being suggested by multiple sources that the operation had been compromised internally.
+A) Multiple sources were suggesting that the operation had been compromised internally.
+B) The operation was compromised, multiple sources suggested.
+C) The sources were suggesting an operation compromise.
+D) The operation had compromised multiple internal sources.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q90. PASSAGE (Q.90 - Q.94) Read the following passage and answer the questions based on the passage: While education and wisdom are often conflated in colloquial discourse, a discerning mind perceives a fundamental divergence between the two. Education is the formal acquisition of knowledge, often measured through degrees, academic accolades, and proficiency in structured disciplines. It is delivered through systematic curricula, institutionalized assessment, and theoretical frameworks. However, wisdom transcends this rigidity; it is the judicious application of knowledge to real-life contexts, enriched by experience, introspection, and emotional intelligence. An individual may be extensively educated yet remain bereft of wisdom if they lack the discernment to apply their learning ethically and effectively. Conversely, many wise individuals—farmers, artisans, elders—may not possess formal education, but their decisions exhibit prudence and sagacity cultivated through lived realities. Thus, education equips the mind, but wisdom enriches the soul. In an era dominated by information overload and algorithmic thinking, the schism between the two has widened. Educational institutions often prioritize rote memorization and standardized testing over critical thinking and moral reasoning. Consequently, society produces individuals proficient in problem-solving but deficient in decision-making that requires empathy, patience, or foresight. Wisdom, being innately human, cannot be downloaded or fast-tracked; it is earned through trial, failure, reflection, and a nuanced understanding of human nature. Furthermore, while education is temporally bounded—ending with formal schooling or academic milestones—wisdom is a lifelong pursuit. It does not boast certificates but manifests in humility, ethical consistency, and the ability to navigate ambiguity with grace. Ultimately, the highest form of intelligence lies not merely in knowing what is right, but in consistently choosing to do it, especially when it is inconvenient. According to the passage, how is wisdom primarily acquired?
+A) Through textbooks
+B) Through emotional detachment
+C) Through experience and reflection
+D) Through algorithmic thinking
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q91. What does the author mean by "wisdom enriches the soul"?
+A) It enhances academic success
+B) It fosters deeper moral insight
+C) It improves verbal expression
+D) It sharpens mathematical skills
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q92. Who, according to the author, can be wise despite lacking formal education?
+A) Scientists
+B) School children
+C) Elders and artisans
+D) Technocrats
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q93. What is the central contrast drawn in the passage?
+A) Education vs. career
+B) Intelligence vs. memory
+C) Reading vs. writing
+D) Formal learning vs. applied wisdom
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q94. According to the author, why has the gap between education and wisdom widened in recent times?
+A) Due to overuse of social media
+B) Because wisdom is no longer valued
+C) Because of rote learning and algorithmic methods
+D) Because people stop learning after school
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q95. Choose the most suitable option to replace the highlighted part of the sentence: She has the reputation **to be a kind woman**.
+A) to have kindness
+B) of being a kind woman
+C) of being the kind woman
+D) to be kind-hearted
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q96. Choose the most suitable option to replace the highlighted part of the sentence: The doctor advised him **to avoid eating sweets and doing exercise regularly**.
+A) avoiding sweets and doing regular exercise
+B) to avoid sweets and to exercises regularly
+C) to avoid eating sweets and to exercise regularly
+D) to not eat sweets and do exercises
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q97. A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. He asked me, "Have you done your homework?"
+A) He asked me if I had done my homework.
+B) He asked me have I done my homework.
+C) He asked me whether I have done my homework.
+D) He asked me whether had I done my homework.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q98. A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. He said that he would join the meeting after lunch.
+A) "I will join the meeting after lunch," he said.
+B) "I would join the meeting after lunch," he said.
+C) "I shall join the meeting after lunch," he said.
+D) "I can join the meeting after lunch," he said.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q99. Rearrange the following sentences in correct order to make a logical passage: 1. A media strategy was framed based on outreach results. 2. Demographic metrics were tracked from campaign dashboards. 3. User interactions were collected across platforms. 4. Analysts segmented users by age and behavior.
+A) 3-2-4-1
+B) 2-3-1-4
+C) 3-1-4-2
+D) 4-1-2-3
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q100. Rearrange the following sentences to form a coherent paragraph: 1. It is a process that involves the systematic and objective investigation of a subject to discover new facts or to confirm existing ones. 2. Research is a foundational pillar of academic and scientific progress. 3. This can be either theoretical, aiming to expand knowledge, or applied, seeking to solve a practical problem. 4. The findings of this investigation are then documented and peer-reviewed to ensure validity and credibility.
+A) 2, 1, 3, 4
+B) 1, 2, 4, 3
+C) 4, 3, 2, 1
+D) 3, 4, 1, 2
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+

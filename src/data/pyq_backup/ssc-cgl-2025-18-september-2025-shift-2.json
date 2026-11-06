@@ -1,0 +1,902 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. QAZ, RBY, SCX, TDW, ?",
+    "option_a": "UBS",
+    "option_b": "UEV",
+    "option_c": "JKS",
+    "option_d": "VSA",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 2,
+    "question_text": "Choose the address that is the same as the one given below. Flat No. 12B, Sunrise Towers, Park Street, Kolkata, West Bengal - 700016",
+    "option_a": "Flat No. 12B, Sunrise Towers, Park Street, Kolkata, Odisha - 700016",
+    "option_b": "Flat No. 12B, Sunrise Towers, Park Street, Kolkata, Bihar - 700016",
+    "option_c": "Flat No. 12B, Sunrise Towers, Park Street, Kolkata, Jharkhand - 700016",
+    "option_d": "Flat No. 12B, Sunrise Towers, Park Street, Kolkata, West Bengal - 700016",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 3,
+    "question_text": "Choose the address that is the same as the one given below. Sample Address:#301, Galaxy Towers,Hinoo, Ranchi,Jharkhand - 834002",
+    "option_a": "#301, Galaxy Towers, Hinoo, Ranchi, Jharkhand - 834002",
+    "option_b": "#301, Galaxy Tower, Hinoo, Ranchi, Jharkhand - 834002",
+    "option_c": "301, Galaxy Towers, Hinoo, Ranchi, Jharkhand - 834002",
+    "option_d": "#301, Galaxy Towers, Hinu, Ranchi, Jharkhand - 834002",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 4,
+    "question_text": "Consider the following statement and choose the option that follows. Statement: The railway authority decided to reduce ticket prices on long-distance trains. Assumptions: I. Lower prices will attract more passengers. II. The authority wants to compete with airlines.",
+    "option_a": "Only I is implicit",
+    "option_b": "Only II is implicit",
+    "option_c": "Both are implicit",
+    "option_d": "Neither is implicit",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 5,
+    "question_text": "Consider the following statement and choose the option that follows. Statements: I. Banks have increased staff training on cyber security. II. There has been a surge in cyber attacks.",
+    "option_a": "I is the cause and II is the effect.",
+    "option_b": "II is the cause and I is the effect.",
+    "option_c": "Both are unrelated.",
+    "option_d": "No relation.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 6,
+    "question_text": "Find the WRONG term in the given series. 5, 10, 15, 26, 37, 50",
+    "option_a": "50",
+    "option_b": "26",
+    "option_c": "15",
+    "option_d": "5",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 7,
+    "question_text": "Replace special characters with mathematical signs as given in options to make it meaningful equation. 16 # 4 @ 2 = 62",
+    "option_a": "÷, -",
+    "option_b": "÷, ÷",
+    "option_c": "×, -",
+    "option_d": "–, ×",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 8,
+    "question_text": "Which two signs should be swapped to correct the following? 28 ÷ 4 × 3 - 5 + 7 = 19",
+    "option_a": "÷ and ×",
+    "option_b": "× and -",
+    "option_c": "÷ and +",
+    "option_d": "+ and -",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 9,
+    "question_text": "By interchanging the given two signs which of the following equation will be NOT correct? + and - I. 18 ÷ 3 + 8 × 5 - 4 = 20 II. 6 + 8 × 9 ÷ 3 - 4 = 14",
+    "option_a": "Neither I nor II",
+    "option_b": "Both I and II",
+    "option_c": "Only II",
+    "option_d": "Only I",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 10,
+    "question_text": "In a family, there are 6 members P, Q, R, S, T and U. P and Q are a married couple R is the son of P T is the sister of R Q is the mother of S U is the brother of P Who is the father of S?",
+    "option_a": "P",
+    "option_b": "Q",
+    "option_c": "U",
+    "option_d": "R",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 11,
+    "question_text": "What comes at the place of question mark: 2, 6, 12, 20, 30, ?",
+    "option_a": "42",
+    "option_b": "56",
+    "option_c": "38",
+    "option_d": "48",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 12,
+    "question_text": "Read the following statement carefully and identify the conclusion that follows. Statement: The library will remain closed on Sunday due to renovation. I. The renovation is planned for Sunday. II. People cannot use the library this Sunday.",
+    "option_a": "Only Conclusion I follows",
+    "option_b": "Only Conclusion II follows",
+    "option_c": "Both I and II follow",
+    "option_d": "Neither I nor II follows",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 13,
+    "question_text": "Read the following statement carefully and identify the conclusion that follows. Statement: The price of petrol has increased due to international oil prices. Conclusions: I. Petrol prices are linked to global markets. II. The government has no control over fuel prices.",
+    "option_a": "Only Conclusion I follows",
+    "option_b": "Only Conclusion II follows",
+    "option_c": "Both I and II follow",
+    "option_d": "Neither I nor II follows",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 14,
+    "question_text": "Find the option that best completes the analogy. DP : XZ :: EN : ?",
+    "option_a": "YZ",
+    "option_b": "YB",
+    "option_c": "ZB",
+    "option_d": "YX",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 15,
+    "question_text": "If \"CANADA\" is written as \"ADANAC\", what is \"MEXICO\" written as?",
+    "option_a": "OCIXME",
+    "option_b": "OCIXEM",
+    "option_c": "OCXEIM",
+    "option_d": "OCMXIE",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 16,
+    "question_text": "What comes next? ZYX, YXW, WVU, ?",
+    "option_a": "VUT",
+    "option_b": "UVT",
+    "option_c": "VTS",
+    "option_d": "TUV",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 17,
+    "question_text": "Find the odd one out from the given alternatives:",
+    "option_a": "Reuse",
+    "option_b": "Reduce",
+    "option_c": "Recycle",
+    "option_d": "Refuel",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 18,
+    "question_text": "Instruction: In a certain code language, Greek letters are used to represent English letters consistently. Using the provided code, decode the target sequence. If γ α λ α ξ ι α is coded as GALAXIA, σ τ α ρ is coded as STAR, Question: Then what does σ γ α λ α represent?",
+    "option_a": "SGALA",
+    "option_b": "SPALA",
+    "option_c": "SRALA",
+    "option_d": "SMALA",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 19,
+    "question_text": "In a 30 L mixture, milk: water = 3:2. How much water must be added to make the ratio 1:1?",
+    "option_a": "6 L",
+    "option_b": "10 L",
+    "option_c": "9 L",
+    "option_d": "12 L",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 20,
+    "question_text": "Find the LCM of 12, 18, 30? 12, 18, 30",
+    "option_a": "90",
+    "option_b": "180",
+    "option_c": "60",
+    "option_d": "120",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 21,
+    "question_text": "If 10 @ 2 = 120 and 5 @ 5 = 100, what is 8 @ 3?",
+    "option_a": "80",
+    "option_b": "96",
+    "option_c": "108",
+    "option_d": "110",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 22,
+    "question_text": "If P is the brother of Q, R is the sister of Q, and S is the father of P, how is R related to S?",
+    "option_a": "Daughter",
+    "option_b": "Niece",
+    "option_c": "Wife",
+    "option_d": "Sister",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 23,
+    "question_text": "Find the next number in the series: 10, 21, 43, 87, ?, 351",
+    "option_a": "175",
+    "option_b": "173",
+    "option_c": "177",
+    "option_d": "179",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 24,
+    "question_text": "If a man's present age is twice what it was 10 years ago, what is his current age?",
+    "option_a": "20",
+    "option_b": "30",
+    "option_c": "40",
+    "option_d": "25",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 25,
+    "question_text": "The series given below contains a sequence of numbers. Accordingly identify the incorrect combination 6, 7, 16, 51, 210",
+    "option_a": "210",
+    "option_b": "16",
+    "option_c": "7",
+    "option_d": "51",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 26,
+    "question_text": "The Nabanna (new rice) during the Nuakhai festival in Sambalpur, Odisha, is first offered to which deity?",
+    "option_a": "Maa Samaleswari",
+    "option_b": "Maa Mangala",
+    "option_c": "Maa Bhuaneswari",
+    "option_d": "Maa Budhi Thakurani",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 27,
+    "question_text": "Which of the following pairs of temple style & region are correctly matched? 1. Vesara - Deccan 2. Rekha-Deul - Odisha 3. Bhumija - Malwa 4. Kalinga - Tamil Nadu",
+    "option_a": "1 & 2 only",
+    "option_b": "1, 2 & 3 are correct",
+    "option_c": "2 & 4 only",
+    "option_d": "only 1",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 28,
+    "question_text": "According to the Gupta dynasty's administrative structure, which one of the following pairs of officer and role is correctly matched?",
+    "option_a": "Prathamakulika - Public Works Supervisor",
+    "option_b": "Gramika (Gramadhyaksha) - Village Headman",
+    "option_c": "Talavataka - Military Paymaster",
+    "option_d": "Pustapala - Tax-Collection Officer",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 29,
+    "question_text": "Which of the following is a folk song form of Jharkhand that reflects the lived experiences, social unity, and often accompanies dance and drama performances?",
+    "option_a": "Lavani",
+    "option_b": "Domkach",
+    "option_c": "Bhavai",
+    "option_d": "Baul",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 30,
+    "question_text": "What is the standard width of a singles badminton court as per international regulations?",
+    "option_a": "6.10 meters",
+    "option_b": "13.40 meters",
+    "option_c": "5.18 meters",
+    "option_d": "12.00 meters",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 31,
+    "question_text": "Who among the following Chola emperors constructed the grand temple at Gangaikonda Cholapuram?",
+    "option_a": "Rajaraja Chola I",
+    "option_b": "Rajendra Chola I",
+    "option_c": "Rajadhiraja Chola I",
+    "option_d": "Kulothunga Chola I",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 32,
+    "question_text": "Read the following statements: Statement I: The Act of 1793 followed the tradition of personal rule without bringing in any legal reforms. Statement II: Judges were assigned to interpret laws rather than depend on the ruler's personal judgment. Which of the above statements is/are true?",
+    "option_a": "Only 1 is true",
+    "option_b": "Only 2 is true",
+    "option_c": "Both Statement 1 and 2 are true",
+    "option_d": "Neither 1 nor 2 is true",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 33,
+    "question_text": "Consider the following statements about the high jump: 1) The minimum length of the runway is 15 meters. 2) The diameter of the crossbar ranges between 15 cm and 20 cm. Which of the statements is/are correct?",
+    "option_a": "Only 1 is Correct",
+    "option_b": "Only 2 is Correct",
+    "option_c": "1 and 2 are Correct",
+    "option_d": "Neither 1 nor 2 are Correct",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 34,
+    "question_text": "Which of the following best reflects the strategic impact of the India-Australia Economic Cooperation and Trade Agreement (ECTA) after three years of implementation?",
+    "option_a": "ECTA removed all tariffs on Australian farm goods unilaterally.",
+    "option_b": "ECTA mainly benefitted old sectors like cotton, with little new growth.",
+    "option_c": "ECTA led to 14% export growth (2022-24) and added new items like Air Liquefaction Machinery.",
+    "option_d": "ECTA includes mutual defence procurement via an Indo-Pacific charter.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 35,
+    "question_text": "An Area of Darkness is a travelogue by which Indian author?",
+    "option_a": "Raja Rao",
+    "option_b": "V.S. Naipaul",
+    "option_c": "R.K. Narayan",
+    "option_d": "Vikram Seth",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 36,
+    "question_text": "Which Indian fencer secured the bronze medal in the women's Cadet Epee category at the 2022 Asian Junior and Cadet Fencing Championships?",
+    "option_a": "Bhavani Devi",
+    "option_b": "Prachi Lohan",
+    "option_c": "C.A. Bhavya",
+    "option_d": "Kushi Chaudhary",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 37,
+    "question_text": "Which of the following statements about the Khelo India Youth Games (KIYG) 2023 is correct?",
+    "option_a": "The KIYG 2023 were held in four cities of Maharashtra.",
+    "option_b": "The games included 20 disciplines and no demo sport.",
+    "option_c": "The event lasted for 13 days across 15 venues.",
+    "option_d": "Only 4000 athletes participated in KIYG 2023.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 38,
+    "question_text": "Fill in the blanks: The Union Home Minister chairs a Zonal Council meeting as _____ chairman.",
+    "option_a": "ex-officio",
+    "option_b": "rotating",
+    "option_c": "ceremonial",
+    "option_d": "honorary",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 39,
+    "question_text": "Which of the following statements regarding human antibodies is/are accurate? 1. IgG constitutes the largest proportion of antibodies in human blood. 2. IgE plays a key role in allergic responses. 3. IgA is primarily located in bodily secretions such as saliva and breast milk.",
+    "option_a": "Only 1 and 2 are correct",
+    "option_b": "Only 2 and 3 are correct",
+    "option_c": "Only 1 and 3 are correct",
+    "option_d": "1, 2 and 3 all are correct",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 40,
+    "question_text": "Arrange the following in chronological order: A) Sarkaria Commission report submitted B) Inter-State Council constituted C) Punchhi Commission constituted",
+    "option_a": "A-B-C",
+    "option_b": "A-C-B",
+    "option_c": "B-C-A",
+    "option_d": "C-B-A",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 41,
+    "question_text": "Fill in the Blank: Tippani arises from the ______ region of Gujarat.",
+    "option_a": "Kutch",
+    "option_b": "Saurashtra",
+    "option_c": "Surat",
+    "option_d": "Vadodara",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 42,
+    "question_text": "Which of the following is a key economic role of the government in both developed and developing countries?",
+    "option_a": "Only regulating private firms",
+    "option_b": "Only promoting exports",
+    "option_c": "Framing laws and delivering justice",
+    "option_d": "Engaging in currency exchange",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 43,
+    "question_text": "The 2025 Global Peace Index indicates that global peacefulness has generally shown a:",
+    "option_a": "Consistent upward trend",
+    "option_b": "Gradual downward trend",
+    "option_c": "Significant improvement",
+    "option_d": "Stable and unchanging state",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 44,
+    "question_text": "When was the first Industrial Policy announced in independent India?",
+    "option_a": "1948",
+    "option_b": "1950",
+    "option_c": "1951",
+    "option_d": "1952",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 45,
+    "question_text": "Read the following statements carefully and choose the correct option regarding Assertion (A) and Reason (R). Assertion (A): Globalization led to increased inequality in India. Reason (R): Growth was unevenly distributed, benefiting mostly urban elite and service sectors.",
+    "option_a": "Both A and R are true and R is the correct explanation of A.",
+    "option_b": "Both A and R are true but R is not the correct explanation of A.",
+    "option_c": "A is true but R is false.",
+    "option_d": "A is false but R is true.",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 46,
+    "question_text": "Disinvestment involves selling stakes in?",
+    "option_a": "NGOs",
+    "option_b": "Private firms",
+    "option_c": "Public enterprises",
+    "option_d": "Trade unions",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 47,
+    "question_text": "Which one of the following National Park-State pairs is correctly matched?",
+    "option_a": "Namdapha National Park - Nagaland",
+    "option_b": "Similipal National Park - Odisha",
+    "option_c": "Bandipur National Park - Andhra Pradesh",
+    "option_d": "Vansda National Park - Rajasthan",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 48,
+    "question_text": "The concept of \"Reasonable Classification\" as a limitation to the Right to Equality (Article 14) was established in which case?",
+    "option_a": "Kesavananda Bharati v. State of Kerala",
+    "option_b": "State of West Bengal v. Anwar Ali Sarkar",
+    "option_c": "Maneka Gandhi v. Union of India",
+    "option_d": "Golakhnath Case v. State of Punjab & Anrs.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 49,
+    "question_text": "Match the dance with its core tribe/community. Folk dance Song-theme 1. Panthi A. Devotional hymns to Guru Ghasidas (Hari-Gaitri) 2. Gotipua B. Krishna-Jagannath leela narratives 3. Kalbelia C. Sensuous serpent metaphors 4. Tippani D. Work-song pounding couplets (saathiyo re)",
+    "option_a": "1-A 2-B 3-C 4-D",
+    "option_b": "1-B 2-A 3-D 4-C",
+    "option_c": "1-C 2-B 3-A 4-D",
+    "option_d": "1-A 2-C 3-B 4-D",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 50,
+    "question_text": "Identify the incorrect match of satellite type and application:",
+    "option_a": "Weather satellite - Cyclone tracking",
+    "option_b": "Communication satellite - TV broadcast",
+    "option_c": "Navigation satellite - Forest fire monitoring",
+    "option_d": "Remote sensing satellite - Land use mapping",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 51,
+    "question_text": "If 30% of m is equal to 18% of n, what is the ratio m: n?",
+    "option_a": "5 : 3",
+    "option_b": "2 : 3",
+    "option_c": "3 : 5",
+    "option_d": "3 : 2",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 52,
+    "question_text": "Find the value of: [Expression omitted in source official exam PDF]",
+    "option_a": "20",
+    "option_b": "30",
+    "option_c": "40",
+    "option_d": "50",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 53,
+    "question_text": "Identify the incorrect relationship(s) from the list below: (i) √6 + √2 = √5 + √3 (ii) √6 + √2 < √5 + √3 (iii) √6 + √2 > √5 + √3",
+    "option_a": "(i)",
+    "option_b": "(ii)",
+    "option_c": "(i) and (iii)",
+    "option_d": "(ii) and (iii)",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 54,
+    "question_text": "A bookseller purchases 5 novels at the marked price of 4 novels from a distributor. If he then sells these novels to customers, offering a discount of 5% on the marked price, what is his profit percentage?",
+    "option_a": "15%",
+    "option_b": "18.75%",
+    "option_c": "20.26%",
+    "option_d": "25%",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 55,
+    "question_text": "A and B can finish a certain job in 28 and 35 days, respectively. They started working together, but A left after a while, and B managed to complete the remaining work in 17 days. How many days did A work before leaving?",
+    "option_a": "8 days",
+    "option_b": "5 days",
+    "option_c": "6⁷⁄₂ days",
+    "option_d": "7⁵⁄₂ days",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 56,
+    "question_text": "Given x + 1/x = 6, find the value of x⁴ + 1/x⁴.",
+    "option_a": "2176",
+    "option_b": "2087",
+    "option_c": "2562",
+    "option_d": "2476",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 57,
+    "question_text": "Reena borrowed Rs. 1200 at simple interest for a number of years equal to the rate of interest. At the end of the loan term, she paid Rs. 432 in interest. What was the interest rate?",
+    "option_a": "6%",
+    "option_b": "7%",
+    "option_c": "8%",
+    "option_d": "9%",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 58,
+    "question_text": "A person invested ₹20,000 in two different schemes. He invested one part for 4 years at 8% simple interest and the other part for the same duration at 10% simple interest. If the interest earned from the second part was ₹2,240 more than the interest earned from the first part, how much money was invested in the second scheme?",
+    "option_a": "₹8,000",
+    "option_b": "₹10,000",
+    "option_c": "₹12,000",
+    "option_d": "₹12,500",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 59,
+    "question_text": "A rock climber uses a rope to ascend a cliff. If the vertical height of the cliff is 35 meters and the rope makes an angle of 30° with the level ground, what is the minimum length of the rope required to reach the top?",
+    "option_a": "35m",
+    "option_b": "40m",
+    "option_c": "60m",
+    "option_d": "70m",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 60,
+    "question_text": "A marble is spherical in shape with a radius of 4 cm. If the marble is placed inside a cube with side length 10 cm, what is the volume of the cube that is not occupied by the marble?",
+    "option_a": "100 cm³",
+    "option_b": "732.06 cm³",
+    "option_c": "300 cm³",
+    "option_d": "624.82 cm³",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 61,
+    "question_text": "Two hemispheres of radii 2 cm and 4 cm respectively are melted and recast into another hemisphere. What is the approximate total surface area of the newly formed hemisphere?",
+    "option_a": "163cm²",
+    "option_b": "142cm³",
+    "option_c": "150cm²",
+    "option_d": "138cm²",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 62,
+    "question_text": "If all three dimensions of a cuboid are increased by 10%, the volume increases by what percentage?",
+    "option_a": "10%",
+    "option_b": "21%",
+    "option_c": "30%",
+    "option_d": "33.1%",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 63,
+    "question_text": "A cone is sliced into two sections by a plane that is parallel to its base, with the upper section representing 1/8 of the overall volume. What is the ratio of the heights of the smaller cone to the original cone?",
+    "option_a": "1 : 2",
+    "option_b": "1 : 7",
+    "option_c": "5 : 1",
+    "option_d": "6 : 1",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 64,
+    "question_text": "If sin A = 3/5 and cos B = 12/13, where A and B ∈ (0, π/2), find sin(A + B).",
+    "option_a": "56/65",
+    "option_b": "33/65",
+    "option_c": "63/65",
+    "option_d": "16/65",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 65,
+    "question_text": "A tower generates a shadow that is 40 meters long when the sun's angle of elevation is 45 degrees. What is the height of the tower?",
+    "option_a": "50 m",
+    "option_b": "40 m",
+    "option_c": "20 m",
+    "option_d": "10 m",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 66,
+    "question_text": "A line y = mx + 2 passes through (3,8). Find m.",
+    "option_a": "5",
+    "option_b": "4",
+    "option_c": "3",
+    "option_d": "2",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 67,
+    "question_text": "A sector of a circle has a central angle of 120° and a radius of 5 cm. Another sector of the same circle has a central angle of 2π/3 radians. What is the ratio of the area of the first sector to the area of the second sector?",
+    "option_a": "1:1",
+    "option_b": "3:4",
+    "option_c": "2:3",
+    "option_d": "5:6",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 68,
+    "question_text": "What is the measure of each interior angle in a regular eight-sided polygon?",
+    "option_a": "120°",
+    "option_b": "135°",
+    "option_c": "150°",
+    "option_d": "165°",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 69,
+    "question_text": "In a trapezoid, the two parallel sides are in the ratio 3:5. If the height of the trapezoid is 10 cm and its total area is 240 cm², determine the lengths of the parallel sides.",
+    "option_a": "15 cm and 25 cm",
+    "option_b": "18 cm and 30 cm",
+    "option_c": "20 cm and 40 cm",
+    "option_d": "30 cm and 50 cm",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 70,
+    "question_text": "△ABC has sides AB=5 cm, BC=6 cm, AC=7 cm. △XYZ is congruent to △ABC. What is the perimeter of △XYZ?",
+    "option_a": "13 cm",
+    "option_b": "18 cm",
+    "option_c": "20 cm",
+    "option_d": "24 cm",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 71,
+    "question_text": "Given, √x + 1 ÷ √x = 4, find x + 1 ÷ x.",
+    "option_a": "15",
+    "option_b": "14",
+    "option_c": "16",
+    "option_d": "17",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 72,
+    "question_text": "If cotA = 2, then sinA - cosA = ?",
+    "option_a": "2/√5",
+    "option_b": "-1/√5",
+    "option_c": "0",
+    "option_d": "1/√5",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 73,
+    "question_text": "A circle has radius 7 cm. A tangent is drawn from an external point P. If the length of the tangent is 24 cm, what is the distance from P to the center of the circle?",
+    "option_a": "17 cm",
+    "option_b": "25 cm",
+    "option_c": "31 cm",
+    "option_d": "576 cm",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 74,
+    "question_text": "From a point outside a circle, two tangents are drawn to the circle. If one of the tangents measures 12 cm, what is the length of the other tangent?",
+    "option_a": "10 cm",
+    "option_b": "11 cm",
+    "option_c": "12 cm",
+    "option_d": "14 cm",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 75,
+    "question_text": "Evaluate: (0.04³ + 0.02³) ÷ (0.2³ + 0.1³)",
+    "option_a": "0.008",
+    "option_b": "0.004",
+    "option_c": "0.002",
+    "option_d": "0.016",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 76,
+    "question_text": "Select the most appropriate synonym of the given word: INVECTIVE",
+    "option_a": "Eulogy",
+    "option_b": "Compliment",
+    "option_c": "Praise",
+    "option_d": "Tirade",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 77,
+    "question_text": "Select the most appropriate synonym of the given word: EBULLIENT",
+    "option_a": "Depressed",
+    "option_b": "Dull",
+    "option_c": "Enthusiastic",
+    "option_d": "Calm",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 78,
+    "question_text": "Select the most appropriate antonym of the given word. Sagacious",
+    "option_a": "Insightful",
+    "option_b": "Wise",
+    "option_c": "Foolish",
+    "option_d": "Prudent",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 79,
+    "question_text": "Choose the correct meaning of idiom: Gall and wormwood",
+    "option_a": "Lingering curiosity",
+    "option_b": "Harmless envy",
+    "option_c": "Sudden realization or enlightenment",
+    "option_d": "Deep frustration or resentment",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 80,
+    "question_text": "Choose the correct spelling of a word meaning 'a person of high rank or title'.",
+    "option_a": "Nobble",
+    "option_b": "Noblie",
+    "option_c": "Noble",
+    "option_d": "Nobel",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 81,
+    "question_text": "Choose the correctly spelt word for Expression of mild disapproval",
+    "option_a": "Expostulation",
+    "option_b": "Expossulation",
+    "option_c": "Expostelation",
+    "option_d": "Expostullation",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 82,
+    "question_text": "Choose the correct one-word substitution for: 'A person who is excessively concerned with minor details'.",
+    "option_a": "Critic",
+    "option_b": "Grammarian",
+    "option_c": "Scholar",
+    "option_d": "Pedant",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 83,
+    "question_text": "Choose the correct one-word substitute for: \"To leave suddenly and hurriedly\".",
+    "option_a": "Abscond",
+    "option_b": "Perambulate",
+    "option_c": "Circumambulate",
+    "option_d": "Loiter",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 84,
+    "question_text": "Fill in the Blanks : Had they submitted the proposal earlier, they ____ the funding.",
+    "option_a": "would get",
+    "option_b": "would have received",
+    "option_c": "had received",
+    "option_d": "will have received",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 85,
+    "question_text": "Find the part of the sentence that contains an error: The CEO along with his deputies (1)/ were present during the final negotiations (2)/ with the investors (3)/ and regulators. (4)/",
+    "option_a": "(1)",
+    "option_b": "(2)",
+    "option_c": "(3)",
+    "option_d": "(4)",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 86,
+    "question_text": "Change the following from active to passive: The storm damaged many houses.",
+    "option_a": "Many houses are damaged by the storm.",
+    "option_b": "Many houses had been damaged by the storm.",
+    "option_c": "Many houses were damaged by the storm.",
+    "option_d": "Many houses have been damaged by the storm.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 87,
+    "question_text": "Find the part of the sentence that contains an error: If the allegations were substantiated (1)/ and procedural lapses proven, the committee might have (2)/ had enough reason to initiate an internal probe (3)/ which never occurred. (4)",
+    "option_a": "(1)",
+    "option_b": "(2)",
+    "option_c": "(3)",
+    "option_d": "(4)",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 88,
+    "question_text": "Select the sentence containing the homonym of the highlighted word: The bishop wore a mitre embroidered with gold thread.",
+    "option_a": "The welder fitted a steel mitre joint at a 45° angle.",
+    "option_b": "The cardinal's mitre was trimmed in crimson.",
+    "option_c": "The procession displayed an ancient mitre in a glass case.",
+    "option_d": "The children admired the sparkling mitre on the altar.",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 89,
+    "question_text": "Convert the sentence provided below from its passive voice structure to an active voice structure: The findings were interpreted to have been misrepresented by the spokesperson in the official release.",
+    "option_a": "It is believed that the spokesperson misrepresented the findings.",
+    "option_b": "The official release was said to have misrepresented the spokesperson.",
+    "option_c": "The spokesperson is believed to have misrepresented the findings.",
+    "option_d": "It was believed that the spokesperson had misinterpreted the release.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 90,
+    "question_text": "Choose the most suitable option to replace the highlighted part of the sentence: I am liking this movie a lot.",
+    "option_a": "have liked",
+    "option_b": "like",
+    "option_c": "liked",
+    "option_d": "am enjoy this movie",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 91,
+    "question_text": "PASSAGE (Q.91 - Q.95) Read the following passage and answer the questions based on the passage : In contemporary discourse, “free will” is often celebrated as the cornerstone of individual autonomy and democratic agency. Yet, a deeper examination reveals that this perceived freedom may be more constructed than authentic. Modern society, while outwardly championing liberty, subtly engineers conformity through systems of social conditioning, digital surveillance, and algorithmic manipulation. The choices we make—what to wear, what to consume, even what to believe—are frequently shaped less by volition than by invisible frameworks of control. Consumer behavior is a telling example. Market forces, armed with behavioral data and predictive analytics, sculpt preferences before individuals are even conscious of them. Personalization engines masquerade as facilitators of choice, but in reality, they nudge individuals toward decisions already engineered to optimize corporate profit. Similarly, social media platforms curate information ecosystems that reinforce existing biases, creating cognitive echo chambers that masquerade as informed choice. Even political decisions—arguably the most significant expression of agency—are susceptible to manipulation. Campaign strategies leveraging psychographic profiling can influence voting behavior by exploiting psychological vulnerabilities rather than rational deliberation. The illusion of participation, thus, replaces genuine engagement. Moreover, societal norms, instilled through education, media, and cultural traditions, define the boundaries within which ‘freedom’ operates. A person may “choose” a career path, but that choice is often filtered through expectations shaped by socioeconomic class, geography, and familial pressures. What appears voluntary is often a conditioned response disguised as self-determination. To be clear, this is not an argument for fatalism, but rather a call for awareness. Recognizing the architecture that underpins our choices is the first step toward reclaiming autonomy. True agency, therefore, is not the absence of influence but the conscious interrogation of it. Without such reflection, free will in modern society may remain a comforting mirage rather than an existential reality. What is the central argument of the passage?",
+    "option_a": "Free will is incompatible with democracy",
+    "option_b": "True freedom requires interrogation of influences",
+    "option_c": "Modern society gives full autonomy to individuals",
+    "option_d": "Autonomy is best achieved through capitalism",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 92,
+    "question_text": "What is meant by \"cognitive echo chambers\"?",
+    "option_a": "Media echoing public opinions",
+    "option_b": "Repetitive political slogans",
+    "option_c": "Information environments reinforcing existing beliefs",
+    "option_d": "Chatbots mimicking users",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 93,
+    "question_text": "According to the passage, how do personalization algorithms affect consumer choice?",
+    "option_a": "They eliminate market competition",
+    "option_b": "They empower user decisions",
+    "option_c": "They manipulate preferences subtly",
+    "option_d": "They increase data privacy",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 94,
+    "question_text": "Why does the author mention career choices in the context of free will?",
+    "option_a": "To show how education leads to autonomy",
+    "option_b": "To highlight the irrelevance of family",
+    "option_c": "To illustrate the illusion of self-determination shaped by societal filters",
+    "option_d": "To argue that class no longer matters",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 95,
+    "question_text": "What tone best describes the author's perspective?",
+    "option_a": "Fatalistic and passive",
+    "option_b": "Neutral and historical",
+    "option_c": "Reflective and critical",
+    "option_d": "Optimistic and persuasive",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 96,
+    "question_text": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. Rita said, \"I haven't eaten anything.\"",
+    "option_a": "Rita said that she didn't eat anything.",
+    "option_b": "Rita said that she hasn't eaten anything.",
+    "option_c": "Rita said that she hadn't eaten anything.",
+    "option_d": "Rita said that she wasn't eating anything.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 97,
+    "question_text": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. They said, \"We shall overcome this challenge together.\"",
+    "option_a": "They said they will overcome that challenge together.",
+    "option_b": "They said they should overcome this challenge together.",
+    "option_c": "They said they would overcome that challenge together.",
+    "option_d": "They said they shall overcome that challenge together.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 98,
+    "question_text": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The lawyer said that had the evidence not been tampered with, the verdict could have been different.",
+    "option_a": "\"If the evidence had not tampered with, the verdict could change,\" said the lawyer.",
+    "option_b": "\"If the evidence were not tampered with, the verdict could have changed,\" the lawyer said.",
+    "option_c": "\"Had the evidence not been tampered with, the verdict could have been different,\" said the lawyer.",
+    "option_d": "\"Had not the evidence tampered, the verdict may differ,\" said he.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 99,
+    "question_text": "Rearrange the following sentences to form a coherent paragraph: 1. Artificial Intelligence is a field of computer science focused on creating machines that can simulate human cognitive functions. 2. This process is used in various applications, from self-driving cars to medical diagnosis systems. 3. This is typically achieved by training machine learning models on vast datasets, allowing them to identify patterns and make predictions. 4. Through this training, an AI system learns to perform specific tasks, such as recognizing objects in images or translating text.",
+    "option_a": "2, 3, 4, 1",
+    "option_b": "3, 1, 2, 4",
+    "option_c": "1, 3, 4, 2",
+    "option_d": "1, 4, 3, 2",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 100,
+    "question_text": "Rearrange the following sentences in correct order to make a logical passage. 1. Therefore, protecting them is a shared responsibility. 2. Coral reefs are vital marine ecosystems. 3. They provide habitats for countless species and protect coastlines. 4. Pollution and climate change pose severe threats to their survival.",
+    "option_a": "2-1-3-4",
+    "option_b": "2-4-1-3",
+    "option_c": "3-4-2-1",
+    "option_d": "2-3-4-1",
+    "correct_answer": "D"
+  }
+]

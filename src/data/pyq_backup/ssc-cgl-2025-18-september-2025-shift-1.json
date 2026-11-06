@@ -1,0 +1,902 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. C F J, F I M, I L P, ?",
+    "option_a": "LKN",
+    "option_b": "LOS",
+    "option_c": "NHS",
+    "option_d": "KIS",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 2,
+    "question_text": "A statement is given followed by two conclusions. Find which conclusion is TRUE based on the given statement. Statement: C ≥ T ; A = D ≥ O ; G ≥ D < S ; T ≥ A Conclusions: I: A ≤ O II: C ≥ G",
+    "option_a": "Either I or II",
+    "option_b": "Only II",
+    "option_c": "Only I",
+    "option_d": "Neither I nor II",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 3,
+    "question_text": "A is the wife of B. B is the son of C. D is the daughter of A. How is D related to C?",
+    "option_a": "Granddaughter",
+    "option_b": "Daughter",
+    "option_c": "Sister",
+    "option_d": "Niece",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 4,
+    "question_text": "Solve: LEAF : ? :: TIME : EMIT",
+    "option_a": "FEAL",
+    "option_b": "FAEL",
+    "option_c": "LFAE",
+    "option_d": "FELA",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 5,
+    "question_text": "What comes next: 1, 2, 6, 24, 120, ?",
+    "option_a": "720",
+    "option_b": "504",
+    "option_c": "840",
+    "option_d": "600",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 6,
+    "question_text": "Read the following statement carefully and identify the conclusion that follows. Statement: All citizens must abide by traffic laws. Conclusion I: Citizens who disobey traffic laws must be punished. Conclusion II: Obeying traffic laws shows civic responsibility.",
+    "option_a": "Only I",
+    "option_b": "Only II",
+    "option_c": "Both follow",
+    "option_d": "Neither follows",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 7,
+    "question_text": "Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option. Statement: To reduce traffic congestion in urban areas, cities should invest in public transportation infrastructure, even though it requires significant initial investments. Assumptions: I. Public transportation can effectively reduce traffic congestion. II. The initial cost of building transportation infrastructure is high. III. People are willing to shift from private vehicles to public transportation.",
+    "option_a": "Only I and II are implicit",
+    "option_b": "Only II and III are implicit",
+    "option_c": "All I, II and III are implicit",
+    "option_d": "Only I is implicit",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 8,
+    "question_text": "Read the following statement carefully and identify the conclusion that follows. Statement: Thousands of students appeared for the entrance exam conducted across the country. Conclusions: I. The exam is popular and competitive. II. All students who appeared will get admission.",
+    "option_a": "Only Conclusion I follows",
+    "option_b": "Only Conclusion II follows",
+    "option_c": "Both I and II follow",
+    "option_d": "Neither I nor II follows",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 9,
+    "question_text": "Read the following statement carefully and identify the conclusion that follows. Statement: All circles are shapes. Some shapes are squares. All squares are polygons. Conclusions: I. Some shapes are polygons. II. Some polygons are circles.",
+    "option_a": "Only I follows",
+    "option_b": "Only II follows",
+    "option_c": "Both I and II follow",
+    "option_d": "Neither I nor II follows",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 10,
+    "question_text": "Find the odd one out: Rose, Lotus, Sunflower, Oak, Tulip",
+    "option_a": "Rose",
+    "option_b": "Lotus",
+    "option_c": "Oak",
+    "option_d": "Tulip",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 11,
+    "question_text": "In each of the following questions, the second word is formed by applying a specific rearrangement or transformation to the first. Identify the same pattern and apply it to the third word to find the correct answer from the given alternatives. FLOWER : REWOLF :: FRUITS : ?",
+    "option_a": "STUIRF",
+    "option_b": "STIURF",
+    "option_c": "STUIFR",
+    "option_d": "STRUIF",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 12,
+    "question_text": "If LEMON is coded as KDNLN, how is MANGO written?",
+    "option_a": "LZODO",
+    "option_b": "LZLFP",
+    "option_c": "LZMFQ",
+    "option_d": "LZLFO",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 13,
+    "question_text": "Rearrange the letters of the word \"LOVE\" to form the name of an animal.",
+    "option_a": "VOLE",
+    "option_b": "VEOL",
+    "option_c": "VLEO",
+    "option_d": "OLEV",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 14,
+    "question_text": "Complete the series. 3, 5, 10, 12, 24, 26, ?",
+    "option_a": "52",
+    "option_b": "54",
+    "option_c": "53",
+    "option_d": "50",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 15,
+    "question_text": "What comes next? MOA, NPB, OQC, PRD, ?",
+    "option_a": "QRE",
+    "option_b": "QTE",
+    "option_c": "RST",
+    "option_d": "QSE",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 16,
+    "question_text": "Find the odd one out from the given alternatives",
+    "option_a": "Lothal",
+    "option_b": "Harappa",
+    "option_c": "Mohenjodaro",
+    "option_d": "Nalanda",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 17,
+    "question_text": "Find the odd one out from the given alternatives.",
+    "option_a": "Tabla",
+    "option_b": "Mridangam",
+    "option_c": "Pakhawaj",
+    "option_d": "Sitar",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 18,
+    "question_text": "Which of the following groups does not follow the same arithmetic rule?",
+    "option_a": "10,20,40",
+    "option_b": "5,15,45",
+    "option_c": "2,6,18",
+    "option_d": "3,9,27",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 19,
+    "question_text": "If 8 * 2 = 20 and 6 * 3 = 27, then what is 5 * 4 = ?",
+    "option_a": "32",
+    "option_b": "24",
+    "option_c": "36",
+    "option_d": "22",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 20,
+    "question_text": "Instruction: In a code language,\"The tree grows tall\" is coded as \"so mo no lo\", \"The tree grows short\" is coded as \"so mo po lo\", \"The plant grows tall\" is coded as \"to mo no lo\". Question: What is the code for \"The plant grows short\"?",
+    "option_a": "to mo lo po",
+    "option_b": "so lo to fo",
+    "option_c": "po ko go jo",
+    "option_d": "no ko mo no",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 21,
+    "question_text": "A boat travels 60 kilometers upstream in 3 hours and covers the same distance of 60 kilometers downstream in 2 hours. What is the speed of the boat in still water?",
+    "option_a": "20 km/h",
+    "option_b": "18 km/h",
+    "option_c": "25 km/h",
+    "option_d": "15 km/h",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 22,
+    "question_text": "A man says, \"The son of my wife's brother is my ___ .\"",
+    "option_a": "Brother-in-law",
+    "option_b": "Nephew",
+    "option_c": "Cousin",
+    "option_d": "Son-in-law",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 23,
+    "question_text": "If '×' means '-', '-' means '+', '+' means '÷', then 12 + 6 × 2 - 4 =?",
+    "option_a": "4",
+    "option_b": "8",
+    "option_c": "6",
+    "option_d": "10",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 24,
+    "question_text": "If the sum of 31 and 19 is multiplied by 9, what is the result?",
+    "option_a": "423",
+    "option_b": "432",
+    "option_c": "441",
+    "option_d": "450",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 25,
+    "question_text": "The series given below contains a sequence of numbers. Accordingly identify the incorrect combination 4, 5, 14, 14, 34, 36, 74, 68",
+    "option_a": "74",
+    "option_b": "34",
+    "option_c": "36",
+    "option_d": "68",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 26,
+    "question_text": "Which of the following animals were NOT found on Mauryan stone pillars?",
+    "option_a": "Lions",
+    "option_b": "Bulls",
+    "option_c": "Elephants",
+    "option_d": "Eagle",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 27,
+    "question_text": "Fill in the blank: Ladakhhi new year (Losar) is welcomed with symbolic dough models of ______, sun, and moon placed in households.",
+    "option_a": "Ibex",
+    "option_b": "Yak",
+    "option_c": "Snow leopard",
+    "option_d": "Buddha",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 28,
+    "question_text": "What was the political significance of Bimbisara's marriage to a Kosalan princess?",
+    "option_a": "Spread of Buddhism",
+    "option_b": "Peace with Kosala",
+    "option_c": "Trade with South India",
+    "option_d": "Fall of Pasenadi",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 29,
+    "question_text": "Which of the following correctly describes the musical form Svarajati?",
+    "option_a": "A bhajan form used only in temples",
+    "option_b": "A dance item without fixed structure",
+    "option_c": "A vocal form later adapted for dance",
+    "option_d": "A film-based item with fast rhythm",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 30,
+    "question_text": "Which of the following statements regarding the Dronacharya Award is/are correct? 1) It carries a cash prize of ₹10 lakhs and features a gold statue of Guru Dronacharya. 2) O.M. Nambiar was honored with the first Dronacharya Award in 1985 for outstanding coaching.",
+    "option_a": "Only 1 is Correct",
+    "option_b": "Only 2 is Correct",
+    "option_c": "1 and 2 are correct",
+    "option_d": "Neither 1 nor 2 are Correct",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 31,
+    "question_text": "What position did Hindu Beg hold during Humayun's reign?",
+    "option_a": "Rajput chief",
+    "option_b": "Court scholar",
+    "option_c": "Provincial governor",
+    "option_d": "Spiritual guide",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 32,
+    "question_text": "Which of the following statements regarding the Government of India Act, 1919 is correctly matched with its constitutional implication?",
+    "option_a": "Transferred and Reserved subjects – Created functional overlap between central and provincial powers",
+    "option_b": "Creation of bicameralism – Introduced two houses at the central level for the first time",
+    "option_c": "Establishment of Public Service Commission – Gave financial control to Indian members in the Viceroy's Council",
+    "option_d": "Introduction of diarchy in provinces – Empowered Indian ministers to control defence and foreign affairs",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 33,
+    "question_text": "Consider the following statements about Judo competition areas and contestants: 1) The competition area is divided into an inner contest area (minimum 8m×8m) and an outer safety area (minimum 3m wide). 2) The blue uniform contestant is called first, followed by the white uniform contestant. Which of the statements is/are correct?",
+    "option_a": "Only 1 is Correct",
+    "option_b": "Only 2 is Correct",
+    "option_c": "1 and 2 are Correct",
+    "option_d": "Neither 1 nor 2 are Correct",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 34,
+    "question_text": "Which country partners with India in the Maitri military exercise aimed at defence cooperation?",
+    "option_a": "Bhutan",
+    "option_b": "Sri Lanka",
+    "option_c": "Bangladesh",
+    "option_d": "Thailand",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 35,
+    "question_text": "Who is the author of the book 'The Argumentative Indian' ?",
+    "option_a": "Amartya Sen",
+    "option_b": "Shashi Tharoor",
+    "option_c": "Ramachandra Guha",
+    "option_d": "Arvind Subramanian",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 36,
+    "question_text": "Which of the following pairs is correctly matched with reference to limestone cave formations?",
+    "option_a": "Stalactite - Rises from cave floor",
+    "option_b": "Stalagmite - Hangs from cave roof",
+    "option_c": "Pillar - Formed by union of stalactite and stalagmite",
+    "option_d": "Stalagmite - Formed by water falling from floor",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 37,
+    "question_text": "Which instrument description on XPoSat is correct?",
+    "option_a": "XSPECT extends POLIX's polarimetry range to 0.5-20 keV.",
+    "option_b": "POLIX performs X-ray spectroscopy and timing.",
+    "option_c": "XSPECT measures X-ray polarization.",
+    "option_d": "POLIX measures X-ray polarization (8-30 keV) to study black holes.",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 38,
+    "question_text": "Which of the following statements best explains why age-specific rates are used in demography?",
+    "option_a": "They help identify regional literacy levels",
+    "option_b": "They reflect age-wise variation in fertility or mortality",
+    "option_c": "They show the economic condition of elderly people",
+    "option_d": "They reduce the total number of indicators needed",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 39,
+    "question_text": "\"Amit Shah already has the key portfolios of Union Home Minister and Minister of Cooperation in 2025. Think of these statements: 1. He remains Union Home Minister and Minister of Cooperation post the 2024 elections. 2. The Home Ministry is responsible for internal security, borders, and disaster management. 3. The Home Minister enjoys a constitutionalized fixed 6-year term. Which one of the above is/are true?\"",
+    "option_a": "1 and 2 only",
+    "option_b": "2 and 3 only",
+    "option_c": "1 and 3 only",
+    "option_d": "1, 2 and 3 all are correct",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 40,
+    "question_text": "Which events were initially announced as demonstration sports but later became full-fledged medal events in the 38th National Games held at Uttarakhand?",
+    "option_a": "Kho-Kho and Kabaddi",
+    "option_b": "Yogasana and Mallakhamb",
+    "option_c": "Shooting and Athletics",
+    "option_d": "Kayaking and Rowing",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 41,
+    "question_text": "The Kudremukh mines in Karnataka are primarily known for the extraction of which important mineral resource?",
+    "option_a": "Bauxite",
+    "option_b": "Limestone",
+    "option_c": "Iron Ore",
+    "option_d": "Copper",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 42,
+    "question_text": "Which of the following statements correctly applies the weighted voting mechanism under Article 279A(9) of the Indian Constitution?",
+    "option_a": "The Centre holds 75% of the voting power in the GST Council.",
+    "option_b": "A GST Council decision can be passed solely with the support of the Centre and one State.",
+    "option_c": "The States collectively have twice the voting weight of the Centre in the GST Council.",
+    "option_d": "Each State has equal weightage as the Centre in GST Council voting.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 43,
+    "question_text": "Consider the given statements regarding the behavior of ideal gases: 1. Ideal gas molecules have negligible volume compared to the total volume of the container. 2. There are strong intermolecular attractive forces between ideal gas molecules. 3. Collisions between ideal gas molecules are perfectly elastic. Which of the statements given above is/are correct?",
+    "option_a": "1 and 2 only",
+    "option_b": "1 and 3 only",
+    "option_c": "2 and 3 only",
+    "option_d": "1, 2 and 3",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 44,
+    "question_text": "In Bharatiya Nagarik suraksha Samhita(BNSS), which court may grant default bail after time limit lapses?",
+    "option_a": "District Court",
+    "option_b": "Magistrate",
+    "option_c": "High Court",
+    "option_d": "Gram Nyayalaya",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 45,
+    "question_text": "Which of the following schemes or initiatives is conceptually different from the others in terms of its sectoral focus?",
+    "option_a": "NSWS",
+    "option_b": "LEADS",
+    "option_c": "Gati Shakti",
+    "option_d": "PMFBY",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 46,
+    "question_text": "Fill in the Blank: Ghoomar was listed among top local dances globally in ____ year.",
+    "option_a": "2010",
+    "option_b": "2013",
+    "option_c": "2015",
+    "option_d": "2018",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 47,
+    "question_text": "According to Transparency International, what is a major concern with EU golden passport and visa schemes?",
+    "option_a": "They increase legal migration and help boost employment",
+    "option_b": "They encourage cultural exchange across the EU",
+    "option_c": "They enable the corrupt to exploit citizenship and residency systems for personal gain",
+    "option_d": "They promote tourism through relaxed visa regulations",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 48,
+    "question_text": "Which Indian city topped the Swachh Vayu Sarvekshan 2024 in the category of cities with a population over 10 lakh?",
+    "option_a": "Bengaluru",
+    "option_b": "Indore",
+    "option_c": "Mumbai",
+    "option_d": "Ahmedabad",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 49,
+    "question_text": "Aditya-L1 is placed in a halo orbit around which type of gravitationally balanced point in space?",
+    "option_a": "Polar",
+    "option_b": "Lagrangian",
+    "option_c": "Sun-synchronous",
+    "option_d": "Geostationary",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 50,
+    "question_text": "Consider the following statements: 1. The GST Council makes binding recommendations on GST rates. 2. Article 246A allows States to legislate on intra-state supply of goods and services. Which of the above is/are correct?",
+    "option_a": "Only 1",
+    "option_b": "Only 2",
+    "option_c": "Both 1 and 2",
+    "option_d": "Neither 1 nor 2",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 51,
+    "question_text": "What will come in place of ? to satisfy the equation :",
+    "option_a": "7",
+    "option_b": "6",
+    "option_c": "5",
+    "option_d": "4",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 52,
+    "question_text": "Solve: [Equation omitted in source official exam PDF]",
+    "option_a": "10",
+    "option_b": "20",
+    "option_c": "30",
+    "option_d": "40",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 53,
+    "question_text": "If 25% of (P + Q) = 75% of (P - Q), then find the ratio P: Q.",
+    "option_a": "1 : 2",
+    "option_b": "2 : 1",
+    "option_c": "1 : 3",
+    "option_d": "3 : 1",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 54,
+    "question_text": "A bag contains ₹5, ₹2, and ₹1 coins in the ratio 2 : 3 : 4. If the total amount of money in the bag is ₹200, find the number of coins of each kind.",
+    "option_a": "16 coins of ₹5, 24 coins of ₹2, and 32 coins of ₹1",
+    "option_b": "20 coins of ₹5, 30 coins of ₹2, and 40 coins of ₹1",
+    "option_c": "25 coins of ₹5, 35 coins of ₹2, and 45 coins of ₹1",
+    "option_d": "18 coins of ₹5, 27 coins of ₹2, and 36 coins of ₹1",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 55,
+    "question_text": "A shopkeeper marked a watch at ₹800. He sold it after allowing a 15% discount. If his profit on the sale was 20%, what was the cost price of the watch?",
+    "option_a": "₹542.36",
+    "option_b": "₹536.47",
+    "option_c": "₹566.67",
+    "option_d": "₹596.34",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 56,
+    "question_text": "A product is sold at a 20% discount on its marked price. This transaction results in a profit of 10% on its cost price. If the profit earned is ₹300, what would have been the selling price if the product was sold at a 30% discount on its marked price?",
+    "option_a": "₹2887.50",
+    "option_b": "₹3000.26",
+    "option_c": "₹3300",
+    "option_d": "₹3150",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 57,
+    "question_text": "If the cubic equation a³ - 4a² + 5a - 2 = 0 has the root x, y, z then find the value of x + y + z.",
+    "option_a": "5",
+    "option_b": "6",
+    "option_c": "7",
+    "option_d": "4",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 58,
+    "question_text": "C borrowed ₹6000 from D on 15 March 2023 at a simple interest rate of 10% per annum. C decided to repay the loan on 15 September 2023. How much total amount must C return to D?",
+    "option_a": "₹6300",
+    "option_b": "₹6500",
+    "option_c": "₹5400",
+    "option_d": "₹5800",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 59,
+    "question_text": "A person invested a total sum of ₹2200 in three different schemes of simple interest at 4%, 5%, and 10% per annum. At the end of one year, he got the same interest from all three schemes. What was the amount (in ₹) invested at 5%?",
+    "option_a": "₹1000",
+    "option_b": "₹800",
+    "option_c": "₹600",
+    "option_d": "₹400",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 60,
+    "question_text": "A man standing on the top of a 120 m high tower observes the angles of depression of two cars on opposite sides of the tower to be 30°and 45°. What is the distance between the two cars?",
+    "option_a": "10(√3)",
+    "option_b": "20(√3 + 1)",
+    "option_c": "10(√3 + 1)",
+    "option_d": "120(√3 + 1)",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 61,
+    "question_text": "A vertical pole TF has its base F on the ground. From a point A, 25 meters from F, the angle of elevation of T is x°. From another point B, 75 meters from F (and in the same line as A), the angle of elevation of T is y°. If the height of the pole is 25√3 meters, what is the value of x° + y°?",
+    "option_a": "60°",
+    "option_b": "75°",
+    "option_c": "90°",
+    "option_d": "120°",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 62,
+    "question_text": "Two identical solid hemispheres, each with a radius of 21 cm, are melted and recast into a single sphere. What is the radius of the new sphere formed?",
+    "option_a": "18 cm",
+    "option_b": "21 cm",
+    "option_c": "24 cm",
+    "option_d": "27 cm",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 63,
+    "question_text": "Creating a frustum, a right circular cone is sliced parallel to its base,. The height of the original cone is 30 cm, and the cut is made 10 cm from the vertex. What is the ratio of the volumes of the frustum to that of the entire cone?",
+    "option_a": "26:27",
+    "option_b": "11:18",
+    "option_c": "16:19",
+    "option_d": "14:15",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 64,
+    "question_text": "The side of a regular octagon is half the side of a regular quadrilateral (square). If the perimeter of the quadrilateral is 20cm, what is the perimeter of the octagon?",
+    "option_a": "10 cm",
+    "option_b": "20 cm",
+    "option_c": "30 cm",
+    "option_d": "40 cm",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 65,
+    "question_text": "A decorative column is made in the shape of a regular hexagonal prism. The side length of its base is 10 cm. The column is built from multiple sections, and their heights form an arithmetic progression: the first section is 5 cm tall, and each subsequent section is 2 cm taller than the previous one. If the column has 4 sections in total, what is the total volume of the column?",
+    "option_a": "4500√3 cm³",
+    "option_b": "4800√3 cm³",
+    "option_c": "5100√3 cm³",
+    "option_d": "5400√3 cm³",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 66,
+    "question_text": "Find the midpoint of segment joining (3,4) and (7,8).",
+    "option_a": "(3, 4)",
+    "option_b": "(5, 6)",
+    "option_c": "(4, 5)",
+    "option_d": "(6, 7)",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 67,
+    "question_text": "The number of diagonals in a hexagon is:",
+    "option_a": "6",
+    "option_b": "9",
+    "option_c": "12",
+    "option_d": "15",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 68,
+    "question_text": "Triangle ABC has its centroid at point G(4, 5), and vertex A is located at (2, 3). If point D is the midpoint of side BC, what are the coordinates of D?",
+    "option_a": "(5, 6)",
+    "option_b": "(5, 8)",
+    "option_c": "(6, 7)",
+    "option_d": "(6, 8)",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 69,
+    "question_text": "Given, , then find the value of x.",
+    "option_a": "5",
+    "option_b": "6",
+    "option_c": "7",
+    "option_d": "8",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 70,
+    "question_text": "A common internal tangent connecting two circles is 9 cm long. The distance between the circles' centers is 15 cm. If the larger circle has a radius of 8 cm, what is the radius of the smaller circle?",
+    "option_a": "4 cm",
+    "option_b": "1 cm",
+    "option_c": "6 cm",
+    "option_d": "7 cm",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 71,
+    "question_text": "In a cyclic quadrilateral ABCD, AB is the diameter of the circle. If angle ACD is 40°, what is the measure of angle BAD?",
+    "option_a": "40°",
+    "option_b": "50°",
+    "option_c": "80°",
+    "option_d": "90°",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 72,
+    "question_text": "If sin² A - cos² A = 1/2, find the value of sin⁴ A - cos⁴ A.",
+    "option_a": "1/4",
+    "option_b": "1/2",
+    "option_c": "1",
+    "option_d": "0",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 73,
+    "question_text": "If tan A = 3/4, find cosec²A.",
+    "option_a": "9/25",
+    "option_b": "16/25",
+    "option_c": "25/9",
+    "option_d": "25/16",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 74,
+    "question_text": "What is the value of (0.12³ + 0.06³) ÷ (0.24³ + 0.12³)? (0.12³ + 0.06³) ÷ (0.24³ + 0.12³)",
+    "option_a": "0.125",
+    "option_b": "0.5",
+    "option_c": "0.25",
+    "option_d": "1",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 75,
+    "question_text": "Simplify: (((0.5)³ + (0.05)³ + (0.005)³) ÷ ((0.1)³ + (0.01)³ + (0.001)³)",
+    "option_a": "5",
+    "option_b": "25",
+    "option_c": "125",
+    "option_d": "625",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 76,
+    "question_text": "² ² ² ² ² ² ² ² Select the most appropriate synonym of the given word: COGENT",
+    "option_a": "Weak",
+    "option_b": "Dubious",
+    "option_c": "Convincing",
+    "option_d": "Unclear",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 77,
+    "question_text": "Select the most appropriate antonym of the given word. Lassitude",
+    "option_a": "Exhaustion",
+    "option_b": "Apathy",
+    "option_c": "Vigor",
+    "option_d": "Lethargy",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 78,
+    "question_text": "Choose the correct meaning of idiom: Won his laurels",
+    "option_a": "Achieved distinction or fame",
+    "option_b": "Lost everything",
+    "option_c": "Changed his opinion",
+    "option_d": "Saved money",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 79,
+    "question_text": "Choose the correct meaning of idiom: Came of age",
+    "option_a": "Reached adulthood legally or socially",
+    "option_b": "Understood morality for the first time",
+    "option_c": "Abandoned earlier beliefs",
+    "option_d": "Inherited property",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 80,
+    "question_text": "Select the correct spelling of a word meaning 'cheerfully optimistic, especially in difficult times'.",
+    "option_a": "Sanguine",
+    "option_b": "Sangwine",
+    "option_c": "Sanguin",
+    "option_d": "Sangueenm",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 81,
+    "question_text": "Choose the correct one-word substitution for: 'A loud and confused noise'.",
+    "option_a": "Cacophony",
+    "option_b": "Soliloquy",
+    "option_c": "Racket",
+    "option_d": "Roar",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 82,
+    "question_text": "Choose the correct one-word substitute for: 'One who writes traditional poems'.",
+    "option_a": "Bard",
+    "option_b": "Lyricist",
+    "option_c": "Dramatist",
+    "option_d": "Essayist",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 83,
+    "question_text": "Fill in the blank with the right phrasal verb: The investigation was ____ after new evidence emerged.",
+    "option_a": "called off",
+    "option_b": "picked up",
+    "option_c": "taken up",
+    "option_d": "revived up",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 84,
+    "question_text": "Select the correct option: The biochemist insisted _____ conducting a double-blind trial before publication.",
+    "option_a": "with",
+    "option_b": "on",
+    "option_c": "to",
+    "option_d": "about",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 85,
+    "question_text": "Find the part of the sentence that contains an error: The interns were asked (1)/ to complete the assignment quickly (2)/ and submit it (3)/ with neat handwriting. (4)/",
+    "option_a": "(1)",
+    "option_b": "(2)",
+    "option_c": "(3)",
+    "option_d": "(4)",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 86,
+    "question_text": "Find the part of the sentence that contains an error: It was at the summit in Vienna (1)/ where the treaty was officially ratified, (2)/ thereby bringing to an end (3)/ decades of political uncertainty in the region. (4)",
+    "option_a": "(1)",
+    "option_b": "(2)",
+    "option_c": "(3)",
+    "option_d": "(4)",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 87,
+    "question_text": "Change the following from active to passive: They had been negotiating the deal for months.",
+    "option_a": "The deal had been negotiating for months.",
+    "option_b": "The deal had been being negotiated for months.",
+    "option_c": "The deal has been being negotiated for months.",
+    "option_d": "The deal was being negotiated for months.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 88,
+    "question_text": "Select the sentence containing the homonym of the highlighted word: The nobleman received a ceremonial fief from the sovereign.",
+    "option_a": "The farmer leased the fief to a local tenant.",
+    "option_b": "The law student confused fief with deed transfer.",
+    "option_c": "The engineer calibrated the hydraulic fief for flow control.",
+    "option_d": "The archives recorded the transfer of fief in Latin.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 89,
+    "question_text": "Convert the sentence provided below from its passive voice structure to an active voice structure: The possibility of the files being leaked before the official release was not ruled out.",
+    "option_a": "Officials ruled out the leak before the files were released.",
+    "option_b": "The leak of the files was ruled out before the release.",
+    "option_c": "Someone did not rule out the possibility that the files were leaked before release.",
+    "option_d": "The release happened before ruling out the leak possibility.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 90,
+    "question_text": "Choose the most suitable option to replace the highlighted part of the sentence: The manager is angry on the clerk.",
+    "option_a": "is angry at",
+    "option_b": "is annoyed by",
+    "option_c": "is angry with",
+    "option_d": "is angry over",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 91,
+    "question_text": "Choose the most suitable option to replace the highlighted part of the sentence: He was accused for stealing the documents.",
+    "option_a": "accused of stealing",
+    "option_b": "accused to steal",
+    "option_c": "accused with stealing",
+    "option_d": "charged for steal",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 92,
+    "question_text": "PASSAGE (Q.92 - Q.96) Read the following passage and answer the questions based on the passage : The accelerating depletion of fossil fuels, coupled with mounting ecological degradation, has propelled renewable energy from a peripheral concern to a central component of global energy discourse. Yet, the conversation often fixates on production rather than application. A nuanced understanding of renewable energy must include not only its sources—solar, wind, hydro, geothermal, and biomass—but also the multifaceted domains in which it can transform economies, decentralize power structures, and promote environmental justice. In the domain of electricity generation, renewables have already begun to displace conventional energy systems. Solar photovoltaic installations now power not only urban rooftops but remote rural hamlets long excluded from centralized grids. Micro-hydel projects have enabled mountain communities to harness perennial streams for electricity without the ecological upheaval of large dams. Similarly, wind energy has emerged as a significant contributor in coastal and arid zones, transforming local economies by creating decentralized, sustainable employment ecosystems. Beyond electricity, renewable energy finds compelling applications in transportation, industrial heating, and agriculture. The rise of biofuels—especially second- generation variants derived from agricultural waste—offers a pathway to decarbonize aviation and freight transport, sectors that have traditionally been resistant to electrification. In agrarian contexts, solar- powered pumps have reduced farmers’ dependence on erratic grid supply and diesel generators, enhancing irrigation autonomy while mitigating carbon emissions. Industries, often vilified for their carbon intensity, are also experimenting with renewable alternatives. Concentrated solar thermal technologies, for instance, are being employed in textile processing, food dehydration, and even metallurgy, demonstrating that clean energy need not be confined to low-intensity applications. Furthermore, geothermal energy is increasingly being harnessed for space heating in colder regions and for cooling through absorption chillers—thereby offsetting conventional HVAC loads. However, the significance of renewable energy transcends utility. At a deeper level, it challenges existing geopolitical hierarchies shaped by fossil fuel dependency. While oil-rich nations have historically wielded disproportionate influence, renewable resources—abundant yet diffuse— enable energy sovereignty for resource-scarce regions. This democratization of energy, if properly managed, can catalyze more equitable development paradigms. Nevertheless, integration challenges persist. Intermittency, storage limitations, land use conflicts, and upfront costs are not insignificant barriers. A hasty transition without resilient infrastructure or community consent could replicate the very injustices renewables seek to redress. Therefore, the question is not merely how to produce renewable energy, but how to embed it meaningfully across sectors, geographies, and social hierarchies. What primary argument does the author make about renewable energy?",
+    "option_a": "It can only replace fossil fuels in electricity generation",
+    "option_b": "It has limited potential beyond solar energy",
+    "option_c": "Its transformative use lies across multiple sectors",
+    "option_d": "It is primarily a Western innovation",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 93,
+    "question_text": "What distinguishes second-generation biofuels, as mentioned in the passage?",
+    "option_a": "They are made from animal fats",
+    "option_b": "They derive from non-edible agricultural waste",
+    "option_c": "They require petroleum additives",
+    "option_d": "They emit more carbon than coal",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 94,
+    "question_text": "Why is geothermal energy cited in the passage?",
+    "option_a": "To highlight a rare and impractical solution",
+    "option_b": "To show its political implications",
+    "option_c": "To exemplify its industrial cooling and heating utility",
+    "option_d": "To criticize its high cost",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 95,
+    "question_text": "According to the author, how does renewable energy challenge global power structures?",
+    "option_a": "By reducing electricity usage",
+    "option_b": "By centralizing production",
+    "option_c": "By enabling energy independence in diverse regions",
+    "option_d": "By increasing oil exports",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 96,
+    "question_text": "What is the author's caution about the rapid adoption of renewable energy?",
+    "option_a": "It is economically unsustainable",
+    "option_b": "It may repeat existing patterns of injustice",
+    "option_c": "It leads to fossil fuel scarcity",
+    "option_d": "It diminishes employment",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 97,
+    "question_text": "Select the correct option for the Direct Speech conversion of the sentence below. He confessed that the violin concerto would have remained fragmentary had the late maestro not bequeathed his annotated sketches.",
+    "option_a": "He said, \"The violin concerto would have remained fragmentary had the late maestro not bequeathed his annotated sketches.\"",
+    "option_b": "He said, \"The violin concerto would have remained fragmentary if the late maestro not bequeathed his annotated sketches.\"",
+    "option_c": "He said, \"The violin concerto will be remaining fragmentary had the late maestro not bequeathed his annotated sketches.\"",
+    "option_d": "He said, \"The violin concerto would be fragmentary if sketches had not been bequeathed.\"",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 98,
+    "question_text": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. She said, \"I didn't see him at the station.\"",
+    "option_a": "She said that she hasn't seen him at the station.",
+    "option_b": "She said that she had not seen him at the station.",
+    "option_c": "She said she didn't saw him at the station.",
+    "option_d": "She said that she was not seeing him at the station.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 99,
+    "question_text": "Rearrange the following sentences to form a coherent paragraph: 1. This phenomenon is often referred to as a \"network effect,\" where the value of a service increases with the number of its users. 2. Consequently, they tend to dominate their respective markets, leading to the creation of powerful monopolies or oligopolies. 3. The digital economy has given rise to new business models that rely on the accumulation of data and the scale of their user base. 4. A prime example is the platform economy, where companies like social media networks and ride-sharing apps create value by connecting users.",
+    "option_a": "2, 3, 4, 1",
+    "option_b": "4, 1, 2, 3",
+    "option_c": "3, 4, 1, 2",
+    "option_d": "1, 3, 2, 4",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 100,
+    "question_text": "Rearrange the following sentences in correct order to make a logical passage. 1. This helps prevent nutrient depletion and soil erosion. 2. Crop rotation is a sustainable agricultural practice. 3. It involves planting different crops sequentially on the same land. 4. It also reduces the need for synthetic fertilizers.",
+    "option_a": "2-3-1-4",
+    "option_b": "1-2-3-4",
+    "option_c": "2-4-1-3",
+    "option_d": "3-4-2-1",
+    "correct_answer": "A"
+  }
+]

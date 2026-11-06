@@ -19,28 +19,39 @@ async function isUserAdmin(): Promise<boolean> {
 export async function POST(request: Request) {
   try {
     const body = await request.json();
+    const supabase = await createClient();
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+    if (!user) {
+      return NextResponse.json({ error: "Authentication required" }, { status: 401 });
+    }
+
     const {
       questionId,
       reason,
       description,
       questionText,
-      userId,
       type = "question_issue",
       meta = {},
     } = body;
+    const numericQuestionId = questionId ? Number(questionId) : null;
 
-    if (!questionId && type === "question_issue") {
+    if (type === "question_issue" && (!numericQuestionId || !Number.isSafeInteger(numericQuestionId))) {
       return NextResponse.json({ error: "questionId is required" }, { status: 400 });
+    }
+    if (typeof description === "string" && description.length > 2000) {
+      return NextResponse.json({ error: "Description is too long" }, { status: 400 });
     }
 
     const reportPayload = {
       id: Date.now(),
       type,
-      question_id: questionId ? Number(questionId) : null,
-      question_text: questionText || null,
-      reason: reason || "Flagged issue",
-      description: description || null,
-      user_id: userId || null,
+      question_id: numericQuestionId,
+      question_text: typeof questionText === "string" ? questionText.slice(0, 4000) : null,
+      reason: typeof reason === "string" ? reason.slice(0, 120) : "Flagged issue",
+      description: typeof description === "string" ? description : null,
+      user_id: user.id,
       status: "pending",
       created_at: new Date().toISOString(),
       meta,
@@ -52,10 +63,10 @@ export async function POST(request: Request) {
       const { error: qrError } = await supabaseAdmin
         .from("question_reports")
         .insert({
-          question_id: questionId,
-          user_id: userId || null,
-          reason: reason || "other",
-          description: description || null,
+          question_id: numericQuestionId,
+          user_id: user.id,
+          reason: typeof reason === "string" ? reason.slice(0, 120) : "other",
+          description: typeof description === "string" ? description : null,
           status: "pending",
         });
 

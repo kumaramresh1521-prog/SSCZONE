@@ -1,0 +1,764 @@
+Q.1: In the following question, select the related word from the given alternatives. Mirror : Reflection :: Clock : ?
+A. Time
+B. Ticking
+C. Rotation
+D. Glass
+Answer: A
+
+Q.2: Seminars were held in Chennai, Hyderabad, and Kochi on 5th, 8th, and 10th June.
+
+- Chennai's seminar was after Hyderabad's.
+
+- Kochi's seminar was not on 10th. When was the Chennai seminar?
+A. 5th June
+B. 8th June
+C. 10th June
+D. Cannot be determined
+Answer: B
+
+Q.3: If Z = 26, Y = 25, x = 24, then W = ?
+A. 21
+B. 22
+C. 23
+D. 24
+Answer: C
+
+Q.4: In a certain coding language, 'never see light' is coded as 'eight, three, four', 'good things take time' is coded as 'nine, one, zero, six', and 'never let good' is coded as 'three, zero, seven'. How will 'things light time' be coded in this coded language?
+A. four, one, six
+B. eight, one, nine
+C. Cannot be
+D. four, six, eight determined
+Answer: C
+
+Q.5: The perimeter of a rectangle is 60 cm. If its length is 18 cm, what is its breadth?
+A. 9 cm
+B. 10 cm
+C. 12 cm
+D. 6 cm
+Answer: C
+
+Q.6: A man covers 1/3rd of his journey by train, 1/3rd by bus, and the rest by walking. If the total distance is 90 km, how much does he walk?
+A. 30 km
+B. 45 km
+C. 20 km
+D. 15 km
+Answer: A
+
+Q.7: What comes next? 7, 10, 16, 28, 52, ?
+A. 100
+B. 80
+C. 92
+D. 94
+Answer: A
+
+Q.8: Directions: Read the following information carefully and answer the questions given below. Ten persons Amu, Balu, Chandu, Manu, Kiran, Sonu, Geetha, Ramu, Janu and Hira live in a ten floor building. The lowermost floor is numbered 1 and the topmost floor is numbered 10. Geetha lives immediately above Janu. Manu lives on the topmost floor. The total number of persons living between Manu and Balu is same as the total number of persons living between Balu and Geetha. Janu lives below Ramu. There are two floors between Chandu and Sonu. Neither Hira nor Balu stays on the floor number 9. Ramu lives on an odd numbered floor below fourth floor. Chandu lives on an odd numbered floor. Kiran lives immediately above Hira. How many persons live between Geetha and Hira?
+A. 1
+B. 3
+C. 5
+D. 8
+Answer: C
+
+Q.9: Directions: Study the following information carefully to answer the given questions: If 'P # Q' means 'P is the son of Q' If 'P % Q' means 'P is the father of Q' If 'P * Q' means 'P is the sister of Q' If 'P $ Q' means 'Q is the husband of P' In 'Y * X # F % L', how is Y related to L?
+A. Cousin
+B. Brother
+C. Sister
+D. Niece
+Answer: C
+
+Q.10: Find the option that best completes the analogy. BD : JL :: CE : ?
+A. KM
+B. KN
+C. KQ
+D. KP
+Answer: B
+
+Q.11: Choose the correct option to complete the series. Old : Ancient :: New : ?
+A. Recent
+B. Young
+C. Fresh
+D. Modern
+Answer: D
+
+Q.12: A series is given with one wrong term. Select the wrong term in the given series. 12, 9, 9, 22.5, 78.75, 354.375
+A. 22.5
+B. 9
+C. 78.75
+D. 12
+Answer: A
+
+Q.13: In a certain code, TREE is written as USFF. How is LEAF written?
+A. MFBG
+B. MDBG
+C. MDFG
+D. MFBH
+Answer: A
+
+Q.14: What is the 5th term of the AP?
+
+1. 2, 1.5, 1.8, ...?
+A. 2.4
+B. 2.7
+C. 2.1
+D. 2.2
+Answer: C
+
+Q.15: If HEART is coded as IFBSU, how is IFBSU coded?
+A. JGCTV
+B. JGCUV
+C. JFCUV
+D. GCTV
+Answer: A
+
+Q.16: In a certain code language, "UNDERSTANDING" is written as "UODFRTTBNEIOG". How will "ACHIEVEMENT" be written?
+A. ADHJEWENEOT
+B. ADHEIWFNEOT
+C. ADHJEWFNOFT
+D. ADHJWEENEOT
+Answer: A
+
+Q.17: In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 8 5 9 3 2 4 14 7 ?
+A. 15
+B. 18
+C. 21
+D. 27
+Answer: C
+
+Q.18: How many such P are there which are immediately followed by T and immediately preceded by S? Sequence: SPTSPTSPPTST
+A. 2
+B. 3
+C. 4
+D. 1
+Answer: A
+
+Q.19: How many letters will remain at the same position in the word 'TRIANGLE' when the letters are arranged in reverse English alphabetical order from left to right?
+A. 1
+B. 2
+C. 3
+D. 4
+Answer: C
+
+Q.20: If P & Q means P is the mother of Q, P % Q means P is the father of Q, P # Q means P is the sister of Q, and P @ Q means P is the brother of Q, how is S related to T in the expression S % U & V # T?
+A. Maternal Uncle
+B. Maternal Grandfather
+C. Brother
+D. Paternal Uncle
+Answer: B
+
+Q.21: Select the odd number pair from the given alternatives.
+A. 61, 3782
+B. 53, 2862
+C. 47, 2256
+D. 39, 1568
+Answer: D
+
+Q.22: You lead a team that just suffered a significant and public failure due to a mistake made by a junior member. The client is furious and is demanding the person responsible be fired. You know the mistake was actually caused by a lack of clear instructions from a senior team leader, who is now remaining silent. What is the most emotionally intelligent action?
+A. Fire the junior member to satisfy the client, while privately assuring the senior leader you’ll improve next time.
+B. Accept responsibility publicly, apologise to the client, then privately review the communication gap with the senior leader and improve training.
+C. Blame the senior leader in the client call to protect your reputation and clarify the junior was following poor instructions.
+D. Tell the client you’re investigating the issue and will respond in a month, hoping things settle by then.
+Answer: D
+
+Q.23: A boutique tailor is known only for expensive, custom-made suits, leading to low transaction volume. She wants to attract a steady flow of customers throughout the week. Which step should she take?
+A. Introducing affordable express services for quick clothing repairs.
+B. Focusing exclusively on elaborate gowns for formal ballroom events.
+C. Raising prices to signal that her tailoring work is very exclusive.
+D. Stopping all promotional efforts to maintain a mysterious image.
+Answer: A
+
+Q.24: Read the statement carefully and assume it to be true. Then examine the two conclusions given below it and decide which conclusion(s), if any, logically follow from the statement.
+
+Statement: A research institute has promoted climate-resilient crop varieties to mitigate risks associated with erratic rainfall patterns.
+
+Conclusions:
+
+I. All traditional crops have become obsolete.
+
+II. Climate-resilient crops eliminate dependency on rainfall.
+A. Only conclusion I follows
+B. Neither conclusion I nor conclusion II follows
+C. Only conclusion II follows
+D. Both conclusions I and II follow
+Answer: C
+
+Q.25: Read the given statement carefully and the following assumptions based on it. Decide which of the assumptions are implicit in the statement.
+
+Statement: The local government has mandated that all new commercial buildings must install rainwater harvesting systems to address the city's depleting groundwater levels. Assumptions:
+
+I. Rainwater harvesting is an effective method to help replenish groundwater resources.
+
+II. All existing commercial buildings in the city have already installed these systems.
+A. Only Assumption I is implicit
+B. Neither Assumption I nor II is implicit
+C. Both Assumptions I and II are implicit
+D. Only Assumption II is implicit
+Answer: A
+
+Q.26: In the context of the Happiness Index, how is 'generosity' typically measured?
+A. Number of charitable organizations per capita
+B. Tax relief for donations
+C. Willingness to donate to charity
+D. Volunteer hours logged per country 3 AWARENESS
+Answer: C
+
+Q.27: What does the term "PM2.5" mean in the context of air pollution?
+A. Particulate matter with a diameter of 2.5 millimeters
+B. Particulate matter with a diameter of 2.5 micrometers
+C. Particulate matter with a diameter of 3.5 millimeters
+D. Particulate matter with a diameter of 3.5 micrometers
+Answer: B
+
+Q.28: What is the function of the GSAT satellite series?
+A. Weather
+B. Communication monitoring
+C. Navigation
+D. Earth imaging
+Answer: B
+
+Q.29: Which of the following best describes the impact of ISRO's collaboration with private firms in recent years?
+A. Decrease in employment opportunities
+B. Increased innovation and market expansion
+C. Reduced satellite coverage
+D. Lower satellite success rates
+Answer: B
+
+Q.30: The architectural style combining Islamic arches with Hindu motifs is best exemplified by:
+A. Quwwat-ul-Islam
+B. Taj Mahal Mosque
+C. Char Minar
+D. Gol Gumbaz
+Answer: C
+
+Q.31: The Indian Ocean is significant for global:
+A. Air travel
+B. Trade routes
+C. Freshwater
+D. Wildlife reserves sanctuaries
+Answer: B
+
+Q.32: What is the central idea of the Harrod-Domar model of economic growth?
+A. Fiscal policy interventions drive growth trajectories
+B. Growth is driven by a foreign trade surplus
+C. Growth is determined by the interaction of savings and investment
+D. Factor endowments, particularly land and labor, constrain growth possibilities
+Answer: D
+
+Q.33: Which Sri Lankan author won the Booker Prize in 2022 for "The Seven Moons of Maali Almeida"?
+A. Shehan
+B. Romesh Karunatilaka Gunesekera
+C. Michael Ondaatje
+D. Anuk Arudpragasam
+Answer: A
+
+Q.34: In which city was the first National Kho-Kho Championship held?
+A. Kolkata
+B. Delhi
+C. Vijayawada
+D. Nagpur
+Answer: A
+
+Q.35: With which ancient temple is the Deo Surya Mandir Mela associated ?
+A. Vishnupad Temple
+B. Mahavir Mandir
+C. Deo Sun Temple
+D. Mundeshwari Temple
+Answer: C
+
+Q.36: The "Age of Consent Act" of 1891 primarily aimed to:
+A. Grant voting rights to women in British India.
+B. Raise the minimum legal age for the marriage of girls.
+C. Prohibit child labor in factories and mines.
+D. Introduce compulsory education for children below the age of twelve.
+Answer: B
+
+Q.37: Who has been India's 30th Minister of External Affairs since May 2019?
+A. Subrahmanyam
+B. Smriti Irani Jaishankar
+C. Hardeep Singh
+D. Nirmala Puri Sitharaman
+Answer: A
+
+Q.38: Who was the first Indian woman to win a medal in Shooting at Olympics?
+A. Heena Sidhu
+B. Manu Bhaker
+C. Apurvi Chandela
+D. Anjum Moudgil
+Answer: B
+
+Q.39: Which of the following statements is/are INCORRECT regarding inland waterways in India?
+
+1. The National Waterways Authority of India is the nodal body for regulating waterways in India.
+
+2. National waterways are mainly used for foreign trade with neighbouring countries.
+A. 1 only
+B. 2 only
+C. Both 1 and 2
+D. Neither 1 nor 2
+Answer: B
+
+Q.40: Which rule applies when a player is the final one to touch the ball before it goes out of bounds in Basketball?
+A. The play is restarted with a jump ball at center court.
+B. The ball is awarded to the same team for a throw-in.
+C. The ball is awarded to the opposing team at the nearest boundary line.
+D. The play continues without interruption.
+Answer: C
+
+Q.41: Who is the author of My Life as a Comrade: The Story of an Extraordinary Politician and the World That Shaped Her?
+A. K.K. Shailaja with Anjali Menon
+B. K.K. Shailaja with Priyanka Sarkar
+C. K.K. Shailaja with Manju Sara Rajan
+D. K.K. Shailaja with Arundhati Subramaniam
+Answer: A
+
+Q.42: The Logistics Performance Index (LPI) is an important benchmark published by which global institution?
+A. International Monetary Fund
+B. World Trade Organization
+C. The World Bank Group
+D. United Nations Conference
+Answer: A
+
+Q.43: The power of superintendence and control of elections is vested in which Article?
+A. Article 324 of the Indian Constitution
+B. Article 325 of the Indian Constitution
+C. Article 326 of the Indian Constitution
+D. Article 327 of the Indian Constitution 5
+Answer: A
+
+Q.44: Which Article empowers the President to promulgate Ordinances during recess of Parliament?
+A. Article 123 of the Indian Constitution
+B. Article 213 of the Indian Constitution
+C. Article 110 of the Indian Constitution
+D. Article 108 of the Indian Constitution
+Answer: A
+
+Q.45: Which pair of planets in our solar system is unique because they do not possess any natural satellites?
+A. Mercury and Mars
+B. Mars and Venus
+C. Mercury and
+D. Venus and Venus Neptune
+Answer: A
+
+Q.46: With reference to jet streams, consider the following statements and choose the correct option:
+
+1. Jet streams are fast-moving air currents in the upper atmosphere.
+
+2. They are located close to the Earth’s surface at low altitude.
+A. Only 1
+B. Only 2
+C. Both 1 and 2 are
+D. Neither 1 nor 2 is correct correct
+Answer: A
+
+Q.47: In a typical Hindu temple layout, where is the Vahana of the presiding deity placed?
+A. On top of the Shikhara spire
+B. Directly inside the Garbhagriha room
+C. Just before the Sanctum Sanctorum
+D. Outside the main entrance gate
+Answer: A
+
+Q.48: Which of the following areas experienced limits on public expenditure during the economic reforms introduced in India in 1991?
+A. Defence, transport and communication services
+B. Industry, trade and commerce
+C. Education, health and rural development
+D. Banking, life insurance and finance
+Answer: A
+
+Q.49: An ideal 12 V (volt) battery is connected across two resistors of 3 Ω (Omega) and 6 Ω
+
+(Omega) connected in series. What is the power dissipated in the 6 Ω (Omega) resistor?
+A. 10.7 (watt)
+B. 10 (watt)
+C. 12 (watt)
+D. 24 (watt)
+Answer: A
+
+Q.50: A student takes 18 breaths per minute. How many breaths will the student take in 2 hours?
+A. 1080
+B. 2160
+C. 3600
+D. 1800
+Answer: A
+
+Q.51: A sphere of radius 6 cm is cut into two identical hemispheres. What is the volume of one hemisphere?
+A. 72π cm³
+B. 108π cm³
+C. 144π cm³
+D. 72 cm³
+Answer: A
+
+Q.52: What is the length of an arc of a circle of radius 21 cm and angle 60°?
+A. 26 cm
+B. 24 cm
+C. 32 cm
+D. 22 cm
+Answer: A
+
+Q.53: Find the total surface area of a right circular cone with a radius of 3 cm and a height of 4 cm.
+A. 68.42 cm²
+B. 76 cm²
+C. 75.42 cm²
+D. 78.42 cm²
+Answer: A
+
+Q.54: A conical tent with a slant height of 25 cm and a base radius of 7 cm is covered with canvas only on its curved surface. If the cost of canvas is ₹2.50 per cm², calculate the total cost to cover the tent.
+A. ₹1275
+B. ₹1250
+C. ₹1375
+D. ₹1350
+Answer: C
+
+Q.55: If secA=13/12, find tanA
+A. 5/12
+B. 7/12
+C. 17/12
+D. 19/18
+Answer: A
+
+Q.56: (1 1 2 )³−( 1 2 )³ Find the value of 1 3 1 . (1 2 )²+ 4 +( 2 )²
+A. 3
+B. 1
+C. 5
+D. 8
+Answer: B
+
+Q.57: 48% of Rahul's income is equal to 64% of Mohit's income. If Rahul's income is reduced by ₹480, and Mohit's income does not change, the ratio of their incomes becomes 4:
+
+5. Find Mohit's income.
+A. ₹740
+B. ₹900
+C. ₹860
+D. ₹690
+Answer: A
+
+Q.58: A and B enter into a partnership with capitals in the ratio 7:8. At the end of 7 months, A withdraws his entire capital. B also withdraws his capital after some months. If the ratio of their annual profit is 49:40, for how many months was B's capital invested in the business?
+A. 4 months
+B. 5 months
+C. 6 months
+D. 8 months
+Answer: B
+
+Q.59: In an election, 10% of voters did not vote, and 150 votes were found invalid. There were only two candidates. The winner secured 55% of the total voters and defeated the opponent by 1100 votes. Find the total number of voters.
+A. 4750
+B. 5240
+C. 3770
+D. 6320
+Answer: A
+
+Q.60: A sum of money was lent at a certain rate for 2 years. If it had been lent at a 4% higher rate, it would have fetched an additional ₹480. If the same sum is lent at 10% for 5 years, what will be the simple interest?
+A. ₹2,500
+B. ₹3,000
+C. ₹2,000
+D. ₹3,200
+Answer: B
+
+Q.61: A regular hexagon is inscribed inside a circle of radius 10 cm. Find the area of the hexagon.
+A. 150√3 cm²
+B. 150√5 cm²
+C. 130√3 cm²
+D. 130√5 cm²
+Answer: A
+
+Q.62: Given that the cost price of 15 pens equals the selling price of 20 pens, determine the percentage loss incurred.
+A. 45%
+B. 35%
+C. 25%
+D. 55%
+Answer: C
+
+Q.63: A takes 1.5 times as many days to complete a task as B and C would take working together. Given that A and B can finish the same task together in 30 days, and C can complete it alone in 120 days, find the number of days B would need to complete the task working alone.
+A. 40 days
+B. 75 days
+C. 55 days
+D. 60 days
+Answer: D
+
+Q.64: An item is sold for ₹880 after a 20% discount. Without a discount, the seller would gain 10%. Find the cost price.
+A. ₹1600
+B. ₹1400
+C. ₹1200
+D. ₹1000
+Answer: D
+
+Q.65: If sin A+ cos A= 4 , then find the value of tan A+ cot A .
+A. 5
+B. 7/18
+C. 4
+D. 18/7
+Answer: A
+
+Q.66: If x−1 x = √5 , what is the value of x² + 1 ? x²
+A. 2
+B. 4 7
+C. 5
+D. 7
+Answer: A
+
+Q.67: If x= 2 + √3 , what is the value of x+ 1 x ?
+A. 1
+B. 2
+C. 3
+D. 4
+Answer: D
+
+Q.68: The interior angle of a regular polygon exceeds its exterior angle by 108°. How many sides does the polygon have?
+A. 10
+B. 12
+C. 7
+D. 8
+Answer: A
+
+Q.69: Given that ΔABC ~ ΔDEF, with AB = 6 cm, BC = 9 cm, and AC = 12 cm. If the ratio of the areas of the two similar triangles is 4: 9, find the length of EF.
+A. 10.5 cm
+B. 12 cm
+C. 13.5 cm
+D. 15 cm
+Answer: C
+
+Q.70: The circumference of a circle is 34π cm. A chord in this circle has a length of 16 cm. What is the distance of this chord from the centre?
+A. 8 cm
+B. 10 cm
+C. 12 cm
+D. 15 cm
+Answer: D
+
+Q.71: If two tangents to a circle of radius 4 cm are inclined at an angle of 120°, what is the length of each tangent?
+A. 4 cm
+B. 12 cm √3
+C. 2 cm
+D. 18 cm √3
+Answer: A
+
+Q.72: Consider the circles represented by the equations x² + y² = a² and x² + y² - 2ax = 0. What is the relative position of these two circles?
+A. They touch each other externally.
+B. They touch each other internally.
+C. They intersect at two distinct points.
+D. They remain separate without touching.
+Answer: A
+
+Q.73: If the minute hand of a clock rotates through an angle of 7π/6 radians, how many minutes does this represent?
+A. 30 minutes
+B. 35 minutes
+C. 40 minutes
+D. 45 minutes
+Answer: B
+
+Q.74: If y+ 1 y= 18 , find the value of y³ + y³ 1 .
+A. 5118
+B. 5338
+C. 5778
+D. 5998
+Answer: A
+
+Q.75: A vessel contains a mixture of milk and water in the ratio of 7:
+
+3. If 20 litres of the mixture are removed and replaced with an equal volume of pure water, the ratio of milk to water becomes 7:
+
+5. Find the original quantity of the mixture in the vessel.
+A. 98 litres
+B. 103 litres
+C. 120 litres
+D. 115 litres
+Answer: C
+
+Q.76: Fill in the blank with the correctly spelt word. He gave a very ________ explanation of the scientific theory.
+A. conscientious
+B. consciensions
+C. consciencious
+D. consientious
+Answer: A
+
+Q.77: Fill in the blank with the correctly spelt word. The committee requested a detailed ________ before approving the project funding.
+A. proposal
+B. proposel
+C. propasal
+D. proposall
+Answer: A
+
+Q.78: Which of the following is incorrectly spelled?
+A. Onerous
+B. Indispensable
+C. Equanimity
+D. Qintessential
+Answer: D
+
+Q.79: Rearrange the parts of the sentence in the correct order. With the integration of artificial intelligence in historical research, P. sparking debates on whether AI-driven interpretations maintain the authenticity of the original scripts, Q. while some researchers expressed concerns about the reliability of automated translations in understanding linguistic nuances R. machine learning algorithms have successfully deciphered ancient texts previously considered unreadable, S. enabling scholars to reconstruct lost fragments of knowledge from damaged manuscripts,
+A. PSQR
+B. RSPQ
+C. QPSR
+D. SRPQ
+Answer: B
+
+Q.80: Fill in the blank with an appropriate degree of comparison. Between the two musicians, I find Bach's compositions to be ______ profound.
+A. most
+B. more
+C. better
+D. best
+Answer: B
+
+Q.81: Choose the option that best improves the sentence by using the correct collocation highlighted in bold. The team **added the responsibility** for the failure.
+A. accepted the responsibility
+B. made the responsibility
+C. got the responsibility
+D. received the responsibility
+Answer: A
+
+Q.82: Rearrange the parts of the sentence in the correct order. The dietary guidelines P. to reduce dependence on imports Q. and encourage balanced nutrition R. promote locally sourced ingredients S. in both urban and rural populations
+A. PSQR
+B. RPQS
+C. QPRS
+D. SRPQ
+Answer: B
+
+Q.83: Identify the error in the sentence. Her performance was extremely excellence throughout the quarter.
+A. extremely
+B. excellence
+C. throughout
+D. quarter
+Answer: B
+
+Q.84: Which of the following options is NOT one of the meanings of the homonym 'advance'?
+A. Move forward
+B. Progress
+C. Special benefits
+D. Ahead of time
+Answer: C
+
+Q.85: **Comprehension (Q. 85 - 89):** The Big Bang Theory, far from being a mere speculative construct, stands as the most widely endorsed cosmological model explaining the origin and evolution of the universe. Approximately 13.8 billion years ago, the universe emerged from an unimaginably dense and hot singularity — a state where conventional physics collapses under extreme conditions. Within fractions of a second, an exponential inflationary expansion occurred, smoothing out initial irregularities and setting the stage for cosmic structure formation. As the universe expanded, it cooled, permitting the formation of subatomic particles and, eventually, simple atomic nuclei during the epoch of nucleosynthesis. Several hundred thousand years later, the universe cooled enough for electrons and nuclei to combine into neutral atoms, an event known as recombination, thereby rendering the universe transparent to radiation. The residual glow from this era, observable today as the Cosmic Microwave Background (CMB) radiation, offers profound empirical support for the Big Bang model. However, the theory does not escape philosophical and scientific quandaries. It leaves unanswered the very genesis of the singularity itself and cannot yet reconcile quantum mechanics with general relativity at cosmic scales. Furthermore, anomalies within the CMB, the existence of dark matter and dark energy, and the precise rate of cosmic expansion (Hubble tension) continue to perplex scientists. In essence, while the Big Bang Theory illuminates the universe's evolution post-singularity with remarkable coherence, it simultaneously unveils deep epistemological and empirical mysteries, suggesting that humanity's understanding of cosmic origins remains tantalizingly incomplete. 9
+
+---
+
+In the sentence "The Big Bang Theory, far from being a mere speculative construct, stands as the most widely endorsed cosmological model...", Identify the grammatical role of the phrase "far from being a mere speculative construct."
+A. Adverbial phrase modifying "stands"
+B. Adjective phrase modifying "Theory"
+C. Noun phrase acting as the subject
+D. Adverbial phrase modifying "construct"
+Answer: B
+
+Q.86: **Comprehension (Q. 85 - 89):** The Big Bang Theory, far from being a mere speculative construct, stands as the most widely endorsed cosmological model explaining the origin and evolution of the universe. Approximately 13.8 billion years ago, the universe emerged from an unimaginably dense and hot singularity — a state where conventional physics collapses under extreme conditions. Within fractions of a second, an exponential inflationary expansion occurred, smoothing out initial irregularities and setting the stage for cosmic structure formation. As the universe expanded, it cooled, permitting the formation of subatomic particles and, eventually, simple atomic nuclei during the epoch of nucleosynthesis. Several hundred thousand years later, the universe cooled enough for electrons and nuclei to combine into neutral atoms, an event known as recombination, thereby rendering the universe transparent to radiation. The residual glow from this era, observable today as the Cosmic Microwave Background (CMB) radiation, offers profound empirical support for the Big Bang model. However, the theory does not escape philosophical and scientific quandaries. It leaves unanswered the very genesis of the singularity itself and cannot yet reconcile quantum mechanics with general relativity at cosmic scales. Furthermore, anomalies within the CMB, the existence of dark matter and dark energy, and the precise rate of cosmic expansion (Hubble tension) continue to perplex scientists. In essence, while the Big Bang Theory illuminates the universe's evolution post-singularity with remarkable coherence, it simultaneously unveils deep epistemological and empirical mysteries, suggesting that humanity's understanding of cosmic origins remains tantalizingly incomplete. 9
+
+---
+
+What does the word "epistemological" most nearly mean as used in the passage?
+A. Related to the structure of matter
+B. Pertaining to theories of knowledge
+C. Concerned with physical laws
+D. Connected to temporal events
+Answer: C
+
+Q.87: **Comprehension (Q. 85 - 89):** The Big Bang Theory, far from being a mere speculative construct, stands as the most widely endorsed cosmological model explaining the origin and evolution of the universe. Approximately 13.8 billion years ago, the universe emerged from an unimaginably dense and hot singularity — a state where conventional physics collapses under extreme conditions. Within fractions of a second, an exponential inflationary expansion occurred, smoothing out initial irregularities and setting the stage for cosmic structure formation. As the universe expanded, it cooled, permitting the formation of subatomic particles and, eventually, simple atomic nuclei during the epoch of nucleosynthesis. Several hundred thousand years later, the universe cooled enough for electrons and nuclei to combine into neutral atoms, an event known as recombination, thereby rendering the universe transparent to radiation. The residual glow from this era, observable today as the Cosmic Microwave Background (CMB) radiation, offers profound empirical support for the Big Bang model. However, the theory does not escape philosophical and scientific quandaries. It leaves unanswered the very genesis of the singularity itself and cannot yet reconcile quantum mechanics with general relativity at cosmic scales. Furthermore, anomalies within the CMB, the existence of dark matter and dark energy, and the precise rate of cosmic expansion (Hubble tension) continue to perplex scientists. In essence, while the Big Bang Theory illuminates the universe's evolution post-singularity with remarkable coherence, it simultaneously unveils deep epistemological and empirical mysteries, suggesting that humanity's understanding of cosmic origins remains tantalizingly incomplete. 9
+
+---
+
+Choose the correct form to complete the sentence from the passage: "As the universe expanded, it ______ cooler, allowing atomic structures to form."
+A. becomes
+B. became
+C. become
+D. had become
+Answer: B
+
+Q.88: **Comprehension (Q. 85 - 89):** The Big Bang Theory, far from being a mere speculative construct, stands as the most widely endorsed cosmological model explaining the origin and evolution of the universe. Approximately 13.8 billion years ago, the universe emerged from an unimaginably dense and hot singularity — a state where conventional physics collapses under extreme conditions. Within fractions of a second, an exponential inflationary expansion occurred, smoothing out initial irregularities and setting the stage for cosmic structure formation. As the universe expanded, it cooled, permitting the formation of subatomic particles and, eventually, simple atomic nuclei during the epoch of nucleosynthesis. Several hundred thousand years later, the universe cooled enough for electrons and nuclei to combine into neutral atoms, an event known as recombination, thereby rendering the universe transparent to radiation. The residual glow from this era, observable today as the Cosmic Microwave Background (CMB) radiation, offers profound empirical support for the Big Bang model. However, the theory does not escape philosophical and scientific quandaries. It leaves unanswered the very genesis of the singularity itself and cannot yet reconcile quantum mechanics with general relativity at cosmic scales. Furthermore, anomalies within the CMB, the existence of dark matter and dark energy, and the precise rate of cosmic expansion (Hubble tension) continue to perplex scientists. In essence, while the Big Bang Theory illuminates the universe's evolution post-singularity with remarkable coherence, it simultaneously unveils deep epistemological and empirical mysteries, suggesting that humanity's understanding of cosmic origins remains tantalizingly incomplete. 9
+
+---
+
+What is the best synonym for "anomalies" as used in the passage?
+A. Patterns
+B. Deviations
+C. Explanations
+D. Confirmations
+Answer: A
+
+Q.89: **Comprehension (Q. 85 - 89):** The Big Bang Theory, far from being a mere speculative construct, stands as the most widely endorsed cosmological model explaining the origin and evolution of the universe. Approximately 13.8 billion years ago, the universe emerged from an unimaginably dense and hot singularity — a state where conventional physics collapses under extreme conditions. Within fractions of a second, an exponential inflationary expansion occurred, smoothing out initial irregularities and setting the stage for cosmic structure formation. As the universe expanded, it cooled, permitting the formation of subatomic particles and, eventually, simple atomic nuclei during the epoch of nucleosynthesis. Several hundred thousand years later, the universe cooled enough for electrons and nuclei to combine into neutral atoms, an event known as recombination, thereby rendering the universe transparent to radiation. The residual glow from this era, observable today as the Cosmic Microwave Background (CMB) radiation, offers profound empirical support for the Big Bang model. However, the theory does not escape philosophical and scientific quandaries. It leaves unanswered the very genesis of the singularity itself and cannot yet reconcile quantum mechanics with general relativity at cosmic scales. Furthermore, anomalies within the CMB, the existence of dark matter and dark energy, and the precise rate of cosmic expansion (Hubble tension) continue to perplex scientists. In essence, while the Big Bang Theory illuminates the universe's evolution post-singularity with remarkable coherence, it simultaneously unveils deep epistemological and empirical mysteries, suggesting that humanity's understanding of cosmic origins remains tantalizingly incomplete. 9
+
+---
+
+Which of the following best encapsulates the central limitation of the Big Bang Theory according to the passage?
+A. Its inability to explain chemical evolution
+B. Its dependence solely on mathematical modeling
+C. Its failure to explain the singularity and reconcile major physical theories
+D. Its disregard for observational evidence like the CMB
+Answer: C
+
+Q.90: Select the most appropriate antonym of the given word. Quiescent
+A. Dormant
+B. Active
+C. Silent
+D. Passive
+Answer: B
+
+Q.91: Choose the correct meaning of idiom: Hoist with one's own petard
+A. To elevate one's reputation
+B. To be harmed by one's own scheme
+C. To succeed after effort
+D. To compete fearlessly
+Answer: B
+
+Q.92: Choose the correct meaning of idiom: Rock the boat
+A. To maintain
+B. To disturb the balance status quo
+C. To enjoy boating
+D. To avoid trouble
+Answer: B
+
+Q.93: Select the most appropriate antonym of the given word. Pellucid
+A. Limpid
+B. Transparent
+C. Murky
+D. Clear
+Answer: C
+
+Q.94: Select the most appropriate synonym of the given word: OBSTREPEROUS
+A. Unruly
+B. Taciturn
+C. Plausible
+D. Discreet
+Answer: A
+
+Q.95: Choose the correct one-word substitute for: 'Lasting for a very short time.'
+A. Ephemeral
+B. Nascent
+C. Incessant
+D. Intransient
+Answer: A
+
+Q.96: Change the following from active to passive: They should have been following the guidelines for months.
+A. The guidelines should have had been followed for months.
+B. The guidelines should have be being followed for months.
+C. The guidelines should have followed for months.
+D. The guidelines should have been being followed for months.
+Answer: D
+
+Q.97: Convert the sentence provided below from its passive voice structure to an active voice structure: The operation had been planned to be executed at dawn by the strike team.
+A. The strike team had planned to execute the operation at dawn.
+B. The operation was planned by the strike team at dawn.
+C. The strike team executes the operation at dawn, as planned.
+D. The dawn plan was to execute by the strike team.
+Answer: A
+
+Q.98: Convert the sentence provided below from its passive voice structure to an active voice structure: Not a single instruction is believed to have been followed correctly by the staff.
+A. It is believed that no instruction was followed correctly by the staff.
+B. The staff didn't believe the instruction was followed.
+C. The belief is that instructions followed incorrectly.
+D. Staff believed the instruction was incorrect.
+Answer: A
+
+Q.99: A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. Rahul said, "Let us go for a walk."
+A. Rahul said let us go for a walk.
+B. Rahul suggested we go for a walk.
+C. Rahul suggested that we should go for a walk.
+D. Rahul said we went for a walk.
+Answer: C
+
+Q.100: Rearrange the following sentences in correct order to make a logical passage.
+
+1. This enhances their engagement and productivity.
+
+2. Employee recognition programs are highly beneficial.
+
+3. They acknowledge hard work and foster a positive work environment.
+
+4. Companies often implement various reward systems.
+A. 2-1-3-4
+B. 2-3-1-4
+C. 2-4-1-3
+D. 3-4-2-1
+Answer: C
+

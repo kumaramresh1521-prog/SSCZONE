@@ -30,6 +30,17 @@ cd
 npm
 tmp
 output
+tmp_*
+*.zip
+scripts/*.json
+scripts/*.txt
+scripts/*.png
+scripts/*.jpeg
+scripts/debug_*
+scripts/__pycache__/
+scripts/scratch_imgs/
+tsconfig.tsbuildinfo
+
 
 # System & IDE
 .vscode

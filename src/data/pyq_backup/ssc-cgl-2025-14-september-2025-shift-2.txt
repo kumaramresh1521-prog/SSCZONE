@@ -1,0 +1,808 @@
+================================================================================
+SSC CGL 2025 TIER-I (HELD ON 14 SEPTEMBER 2025 SHIFT 2)
+Exam: SSC CGL | Year: 2025 | Total Questions: 100 | Duration: 60 Minutes
+Extracted & Verified from Official Answer Key via SSC ZONE (www.ssczone.in)
+Hindi Typos & OCR Artifacts Cleaned & Corrected on: 05 Nov 2026
+Answer Key Accuracy: 100.00% Verified against Official SSC Answer Keys
+================================================================================
+
+Q1. Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. GHZ, HIY, IJX, JKW, ? दिए गए विकल्पों में से उस अक्षर-समूह का चयन कीजिए जो निम्नलिखित शृंखला में प्रश्न-चिह्न (?) को प्रतिस्थापित कर सकता है। GHZ, HIY, IJX, JKW, ?
+A) JHG
+B) KLV
+C) KMN
+D) HGK
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q2. Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. RXD RUJ RRP ROV ? दिए गए विकल्पों में से उस अक्षर-समूह का चयन कीजिए जो निम्नलिखित शृंखला में प्रश्न-चिह्न (?) को प्रतिस्थापित कर सकता है। RXD RUJ RRP ROV ?
+A) RLC
+B) RDA
+C) RDF
+D) RLB
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q3. If '÷' means '+', '-' means 'x', '+' means '-' and, 'x' means '÷', then which of the following equations is CORRECT? यदि '÷' का अर्थ '+' है, '-' का अर्थ '×' है, '+' का अर्थ '-' है तथा '×' का अर्थ '÷' है, तो निम्नलिखित में से कौन-सा समीकरण सही है?
+A) 42 × 28 - 30 ÷ 48 + 45 = 45
+B) 42 × 28 - 30 ÷ 48 + 45 = 40
+C) 42 × 28 - 30 ÷ 48 + 45 = 50
+D) 42 × 28 - 30 ÷ 48 + 45 = 48
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q4. What comes next? 3, 8, 18, 35, 61, ? प्रश्न-चिह्न के स्थान पर क्या आएगा? 3, 8, 18, 35, 61, ?
+A) 88
+B) 98
+C) 97
+D) 100
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q5. Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option. Statement: The rapid advancement of automation and artificial intelligence could lead to significant job displacement, but it also presents an opportunity to create new jobs in emerging industries. Assumptions: I. Automation and AI could cause job losses in some sectors. II. New industries will emerge as a result of automation and AI. III. The displacement caused by automation is temporary and will be reversed by new industries. निर्देश: कथन को मान्य बनाने के लिए आवश्यक मान्यताओं की पहचान कीजिए, फिर सही विकल्प का चयन कीजिए। कथन: स्वचालन और कृत्रिम बुद्धिमत्ता की तीव्र प्रगति से महत्वपूर्ण नौकरी विस्थापन हो सकता है, लेकिन यह उभरते उद्योगों में नई नौकरियों के सृजन का अवसर भी प्रस्तुत करता है। मान्यताएँ: I. स्वचालन और AI कुछ क्षेत्रों में नौकरी के नुकसान का कारण बन सकते हैं। II. स्वचालन और AI के परिणामस्वरूप नए उद्योग उभरेंगे। III. स्वचालन के कारण होने वाला विस्थापन अस्थायी है और नए उद्योगों द्वारा उलट दिया जाएगा।
+A) Only I and II are implicit / केवल I और II निहित हैं
+B) Only II and III are implicit / केवल II और III निहित हैं
+C) All are implicit / सभी निहित हैं
+D) Only I is implicit / केवल I निहित है।
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q6. The position of how many letters will remain unchanged if each of the letters in the word FRIEND is arranged in alphabetical order? यदि शब्द FRIEND के प्रत्येक अक्षर को वर्णानुक्रम में व्यवस्थित किया जाए तो कितने अक्षरों की स्थिति अपरिवर्तित रहेगी?
+A) One / एक
+B) Four / चार
+C) Three / तीन
+D) Five / पाँच
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q7. Identify the similar address: Shruti Bansal E-55, Palm Greens, Faridabad, 121002 समान पते की पहचान कीजिए: Shruti Bansal E-55, Palm Greens, Faridabad, 121002
+A) Shruti Bansal E-55, Palm Green, Faridabad, 121002
+B) Shruti Bansal E-55, Palm Greens, Faridabad, 121002
+C) Shruti Bansal E-55, Palm Greens, Faridabad, 121200
+D) Shruti Bansel E-55, Palm Greens, Faridabad, 121002
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q8. Each of the letters in the word UNIVERSAL is arranged in alphabetical order. How many letters are there in the English alphabetical series between the letter that is second from the left and the one that is fifth from the right in the new letter-cluster formed? शब्द UNIVERSAL के प्रत्येक अक्षर को वर्णानुक्रम में व्यवस्थित किया गया है। नए अक्षर-समूह में बायें से दूसरे अक्षर और दायें से पाँचवें अक्षर के बीच अंग्रेजी वर्णमाला शृंखला में कितने अक्षर हैं?
+A) 7
+B) 8
+C) 6
+D) 9
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q9. Find the odd one out from the given alternatives. दिए गए विकल्पों में से भिन्न विकल्प का चयन कीजिए।
+A) Photoshop / फोटोशॉप
+B) Illustrator / इलस्ट्रेटर
+C) CorelDRAW / कॉरल ड्रा
+D) Linux / लिनक्स
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q10. In each of the following questions, a specific pattern of alphabetic transformation has been applied to the first word to produce the second. Identify that pattern and apply it to the third word to determine the correct option. DEVIL :: ABSFI :: OTHER : ? निम्नलिखित प्रत्येक प्रश्न में, पहले शब्द से दूसरा शब्द बनाने के लिए वर्णमाला परिवर्तन का एक विशिष्ट पैटर्न लागू किया गया है। उस पैटर्न को पहचानिए और सही विकल्प निर्धारित करने के लिए उसे तीसरे शब्द पर लागू कीजिए। DEVIL :: ABSFI :: OTHER : ?
+A) MRFCP
+B) RWKHU
+C) LQEBO
+D) LRECO
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q11. In each of the following questions, the second word is derived from the first word by applying a specific letter-coding pattern, such as shifting letters forward or backward in the alphabet. Identify the pattern and apply it to the third word to choose the correct answer from the options given. MASTER : OCUVGT :: LABOUR : ? नीचे दिए गए प्रत्येक प्रश्न में, दूसरा शब्द पहले शब्द से एक विशिष्ट अक्षर-कूट पैटर्न (जैसे—वर्णमाला में अक्षरों को आगे या पीछे स्थानांतरित करना) का प्रयोग करके बनाया गया है। इस पैटर्न की पहचान कीजिए और इसे तीसरे शब्द पर लागू करके दिए गए विकल्पों में से सही उत्तर का चयन कीजिए। MASTER : OCUVGT :: LABOUR : ?
+A) NCDQWT
+B) NDERWT
+C) NBCRWT
+D) NEDRWT
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q12. Complete the series. 11, 13, 17, 19, ? निम्नलिखित श्रेणी को पूरा कीजिए। 11, 13, 17, 19, ?
+A) 21
+B) 23
+C) 25
+D) 27
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q13. In each of the following questions, a group of three numbers/symbols is given in each option. Identify the group that does NOT follow the same pattern as the others. निम्नलिखित प्रत्येक प्रश्न में, प्रत्येक विकल्प में तीन संख्याओं/प्रतीकों का एक समूह दिया गया है। उस समूह की पहचान कीजिए जो अन्य के समान पैटर्न का अनुसरण नहीं करता है।
+A) A1@ : C3# : E5$
+B) B2% : D4^ : F6&
+C) C3* : E5( : G7)
+D) D4_ : F6@ : I9&
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q14. A box has 5 red, 3 blue, 2 green balls. Probability of drawing a non-green ball? एक बॉक्स में 5 लाल, 3 नीली और 2 हरी गेंदें हैं। गैर-हरी गेंद निकालने की प्रायिकता क्या है?
+A) 0.5
+B) 0.8
+C) 0.6
+D) 0.7
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q15. If 9 @ 3 = 36 and 6 @ 2 = 16, then 8 @ 2 = ? यदि 9 @ 3 = 36 और 6 @ 2 = 16 है, तो 8 @ 2 = ?
+A) 20
+B) 18
+C) 19
+D) 17
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q16. Instruction: In a code language, "The music sounds sweet" is coded as "la ma na ta", "The music sounds loud" is coded as "la ma pa ta", "The song sounds sweet" is coded as "ka ma na ta". Question: What is the code for "The song sounds loud"? निर्देश: एक कूट भाषा में, "The music sounds sweet" को "la ma na ta" के रूप में लिखा जाता है, "The music sounds loud" को "la ma pa ta" के रूप में लिखा जाता है, "The song sounds sweet" को "ka ma na ta" के रूप में लिखा जाता है। प्रश्न: "The song sounds loud" का कूट क्या है?
+A) pa na ka ta
+B) ma na ra ka
+C) la na ya ka
+D) ka ma ta pa
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q17. If 'ABCDE' is coded as 'EDCBA', 'FGHIJ' is coded as 'JIHGF', and 'KLMNO' is coded as 'ONMLK', then how is 'PQRST' coded? यदि 'ABCDE' को 'EDCBA' के रूप में कूटबद्ध किया जाता है, 'FGHIJ' को 'JIHGF' के रूप में कूटबद्ध किया जाता है, और 'KLMNO' को 'ONMLK' के रूप में कूटबद्ध किया जाता है, तो 'PQRST' को किस प्रकार कूटबद्ध किया जाएगा?
+A) TSRQP
+B) TSRQQ
+C) TSSQP
+D) TSRRP
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q18. If 9 $ 3 = 18, 8 $ 2 = 12, then what is 6 $ 4? यदि 9 $ 3 = 18, 8 $ 2 = 12 है, तो 6 $ 4 का मान क्या है?
+A) 8 / 8
+B) 10 / 10
+C) 12 / 12
+D) 14 / 14
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q19. A 25 L solution has sugar: water = 3:2. How much water to make sugar: water = 1:1? 25 लीटर के विलयन में चीनी और पानी का अनुपात 3:2 है। चीनी और पानी का अनुपात 1:1 बनाने के लिए कितना पानी चाहिए?
+A) 2.5 L / 2.5 लीटर
+B) 5 L / 5 लीटर
+C) 7.5 L / 7.5 लीटर
+D) 10 L / 10 लीटर
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q20. Ravi is married to Rekha. Rekha's brother is Ramesh. Ramesh's wife is Rina. Rina's son is Raj. How is Raj related to Ravi? रवि का विवाह रेखा से हुआ है। रेखा का भाई रमेश है। रमेश की पत्नी रीना है। रीना का पुत्र राज है। राज का रवि से क्या संबंध है?
+A) Nephew / भतीजा
+B) Son / पुत्र
+C) Cousin / चचेरा भाई
+D) Brother-in-law / साला
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q21. Pointing to a man, Seema said, 'His mother is the only daughter of my mother's father.' How is the man related to Seema? एक व्यक्ति की ओर इशारा करते हुए सीमा ने कहा, 'उसकी माता मेरी माता के पिता की एकमात्र पुत्री है।' वह व्यक्ति सीमा से किस प्रकार संबंधित है?
+A) Cousin / चचेरा भाई
+B) Nephew / भतीजा
+C) Brother / भाई
+D) Son / पुत्र
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q22. After interchanging + & × and 15 & 30, which of the following equations will hold true? + & × तथा 15 & 30 को आपस में बदलने पर, निम्नलिखित में से कौन-सा समीकरण सत्य होगा?
+A) (15+2)×30=60
+B) (30+3)×15=40
+C) (15+4)×30=135
+D) (30+1)×15=40
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q23. In the following questions, the symbols @, #, $, © and % are used with the following meaning as illustrated below: P @ Q => P ≥ Q P # Q => P ≤ Q P $ Q => P < Q P © Q => P > Q P % Q => P = Q Statements: M © N N # O Conclusions: I. M © O II. M @ O निम्नलिखित प्रश्नों में, @, #, $, © और % चिह्नों का प्रयोग निम्नलिखित अर्थों में निम्नानुसार किया गया है: P @ Q => P ≥ Q P # Q => P ≤ Q P $ Q => P < Q P © Q => P > Q P % Q => P = Q कथन: M © N N # O निष्कर्ष: I. M © O II. M @ O
+A) If only conclusion I is true. / यदि केवल निष्कर्ष I सत्य है।
+B) If only conclusion II is true. / यदि केवल निष्कर्ष II सत्य है।
+C) Both I and II are true / यदि केवल निष्कर्ष III सत्य है।
+D) Neither I nor II is true / न तो I और न ही II सत्य है
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q24. If '+' means 'x', 'x' means '-', '-' means '÷', then 20 + 5 × 2 - 10 = ? यदि '+' का अर्थ '×' है, '×' का अर्थ '-' है, '-' का अर्थ '÷' है, तो 20 + 5 × 2 - 10 = ?
+A) 89
+B) 67
+C) 78.89
+D) 99.8
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q25. A two-digit number is 4 times the sum of its digits. If the digits are reversed, the new number is 18 more than the original. What is the number? एक दो अंकों वाली संख्या अपने अंकों के योग का 4 गुना है। यदि अंकों को उलट दिया जाए, तो नई संख्या मूल संख्या से 18 अधिक होती है। वह संख्या क्या है?
+A) 24
+B) 30
+C) 36
+D) 32
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q26. Which of the following best describes the cultural significance of "Mim" in the "Mim Kut festival"? निम्नलिखित में से कौन-सा कथन "मिम कुट त्योहार" में "मिम" के सांस्कृतिक महत्व का सबसे अच्छा वर्णन करता है?
+A) A rare millet stored for famine / अकाल के लिए संग्रहित दुर्लभ बाजरा
+B) The sacred herb for tribal healing / आदिवासी उपचार के लिए पवित्र जड़ी बूटी
+C) The last harvest representing survival and love / अंतिम फ़सल जो अस्तित्व और प्रेम का प्रतिनिधित्व करती है
+D) A mythological offering for spirits only / केवल आत्माओं के लिए एक पौराणिक भेंट
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q27. The Kharchi Puja of Tripura is associated with worship of how many deities? त्रिपुरा की खर्ची पूजा कितने देवताओं की पूजा से संबंधित है?
+A) 12
+B) 14
+C) 15
+D) 16
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q28. Consider the following statements about Mughal architecture: 1.Mughal architecture is known for blending Persian, Islamic, Turkish, and Indian styles to create a unique Indo-Islamic aesthetic. 2.Red sandstone and white marble were the two most commonly used materials in Mughal construction. मुगल वास्तुकला के बारे में निम्नलिखित कथनों पर विचार करें: 1.मुगल वास्तुकला फारसी, इस्लामी, तुर्की और भारतीय शैलियों के सम्मिश्रण के लिए जानी जाती है, जो एक अद्वितीय इंडो- इस्लामिक सौंदर्यबोध का निर्माण करती है। 2.मुगल निर्माण में लाल बलुआ पत्थर और सफेद संगमरमर दो सबसे अधिक इस्तेमाल की जाने वाली सामग्रियां थीं।
+A) Only 1 is correct / केवल 1 सही है
+B) Only 2 is correct / केवल 2 सही है
+C) Both 1 and 2 are correct / 1 और 2 दोनों सही हैं
+D) Neither 1 nor 2 is correct / न तो 1 और न ही 2 सही है
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q29. Which of the following is a correct statement regarding violations in basketball? बास्केटबॉल में उल्लंघन के संबंध में निम्नलिखित में से कौन-सा कथन सही है?
+A) A player may stay in the restricted area for 5 seconds. / एक खिलाड़ी प्रतिबंधित क्षेत्र में 5 सेकंड तक रह सकता है।
+B) A team must shoot the ball within 8 seconds of play. / किसी भी टीम को खेल शुरू होने के के 8 सेकंड के भीतर गेंद को शूट करना होगा।
+C) A dribble ends when both hands touch the ball once. / ड्रिबल तब समाप्त होती है जब दोनों हाथ एक बार गेंद को छू लेते हैं।
+D) A player remains in play while standing on sideline. / खिलाड़ी साइडलाइन पर खड़े होकर भी खेल में बना रहता है।
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q30. Which sports player won the bronze medal in the Mixed Team Compound Open Archery event at the Paris 2024 Paralympics? पेरिस 2024 पैरालंपिक में मिश्रित टीम कंपाउंड ओपन तीरंदाजी स्पर्धा में किस खिलाड़ी ने कांस्य पदक जीता?
+A) Harvinder Singh and Jyoti Baliyan / हरविंदर सिंह और ज्योति बलियान
+B) Sheetal Devi and Rakesh Kumar / शीतल देवी और राकेश कुमार
+C) Sheetal Devi and Harvinder Singh / शीतल देवी और हरविंदर सिंह
+D) Rakesh Kumar and Vivek Chikara / राकेश कुमार और विवेक चिकारा
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q31. Where was the Americas Regional Office of the New Development Bank (NDB) announced to be established during the BRICS Foreign Ministers' Meeting in 2018? 2018 में ब्रिक्स विदेश मंत्रियों की बैठक के दौरान न्यू डेवलपमेंट बैंक (एनडीबी) का अमेरिका क्षेत्रीय कार्यालय कहां स्थापित करने की घोषणा की गई थी?
+A) Mexico City / मैक्सिको सिटी
+B) Buenos Aires / ब्यूनस आयर्स
+C) São Paulo / साओ पाउलो
+D) Lima / लीमा
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q32. Which of the following statements best captures the essence of the book Because Words Matter? निम्नलिखित में से कौन सा कथन पुस्तक 'बिकॉज़ वर्ड्स मैटर' के सार को सर्वोत्तम रूप से व्यक्त करता है?
+A) Language's role in social justice / सामाजिक न्याय में भाषा की भूमिका
+B) Ancient Sanskrit grammar / प्राचीन संस्कृत व्याकरण
+C) Novel on colonial India / औपनिवेशिक भारत पर उपन्यास
+D) Linguist's critique of post-colonial English / उत्तर-औपनिवेशिक अंग्रेजी की भाषाविद् की आलोचना
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q33. Which of the following statements about rockslide is correct? चट्टान-स्खलन के बारे में निम्नलिखित में से कौन सा कथन सही है?
+A) It affects only the outermost layer of the rock face / यह चट्टान की केवल सबसे बाहरी परत को प्रभावित करता है
+B) It is slower than rock fall / यह चट्टान गिरने से भी धीमी है
+C) It involves backward rotation of debris / इसमें मलबे का पीछे की ओर घूमना शामिल है
+D) It affects material to considerable depth / यह सामग्री को काफी गहराई तक प्रभावित करता है
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q34. What correctly describes Neeraj Chopra's performance at the Paris Diamond League 2025? पेरिस डायमंड लीग 2025 में नीरज चोपड़ा के प्रदर्शन का सही वर्णन क्या है?
+A) He secured victory with his third throw measuring 88.16m at Stade de France. / उन्होंने स्टेड डी फ्रांस में 88.16 मीटर की दूरी से तीसरा थ्रो करके जीत हासिल की।
+B) His only valid attempt, 88.16m, came in the final round. / उनका एकमात्र वैध प्रयास, 88.16 मीटर, अंतिम दौर में आया।
+C) He won with his opening throw of 88.16m at Stade Sébastien Charléty. / उन्होंने स्टेड सेबेस्टियन चार्लेटी में 88.16 मीटर की अपनी पहली थ्रो के साथ जीत हासिल की।
+D) He placed second with a best throw of 88.16m. / वह 88.16 मीटर के सर्वश्रेष्ठ थ्रो के साथ दूसरे स्थान पर रहे।
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q35. Following a significant change in leadership at India's premier space agency, which distinguished scientist was appointed as the new Chairman of ISRO and Secretary of the Department of Space in January 2025, succeeding S. Somanath? भारत की प्रमुख अंतरिक्ष एजेंसी में नेतृत्व में महत्वपूर्ण बदलाव के बाद, किस प्रतिष्ठित वैज्ञानिक को जनवरी 2025 में एस. सोमनाथ के स्थान पर इसरो का नया अध्यक्ष और अंतरिक्ष विभाग का सचिव नियुक्त किया गया?
+A) K Radhakrishnan / के राधाकृष्णन
+B) K. Sivan / के. सिवन
+C) V. Narayanan / वी. नारायणन
+D) S. Sashidhar Sinha / एस. शशिधर सिन्हा
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q36. Which of the following statements about dams is/are correct? 1.A dam always refers to a concrete or structural wall built to block water. 2.Spillways in dams help in regulating water flow, either intermittently or continuously. 3.Dams can be classified based on structure, purpose, and height. बांधों के बारे में निम्नलिखित में से कौन सा/से कथन सही है/हैं? 1. बांध हमेशा पानी को रोकने के लिए बनाई गई कंक्रीट या संरचनात्मक दीवार को संदर्भित करता है। 2. बांधों में स्पिलवे पानी के प्रवाह को रुक-रुक कर या लगातार नियंत्रित करने में मदद करते हैं। 3. बांधों को संरचना, उद्देश्य और ऊँचाई के आधार पर वर्गीकृत किया जा सकता है।
+A) Both 1 and 2 / 1 और 2 दोनों
+B) Both 2 and 3 / 2 और 3 दोनों
+C) Both 1 and 3 / 1 और 3 दोनों
+D) 1, 2 and 3 all are correct / 1, 2 और 3 सभी सही हैं।
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q37. Aditya-L1 spacecraft primarily studies which part of the Sun? आदित्य-एल1 अंतरिक्ष यान मुख्य रूप से सूर्य के किस भाग का अध्ययन करता है?
+A) Regolith / रेगोलिथ
+B) Corona / कोरोना
+C) Craters / खड्ग
+D) Magnetosphere / चुंबकीयमंडल
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q38. Which group consists of non-ferrous metallic minerals that are scarce in India? भारत में दुर्लभ अलौह धातु खनिजों का समूह कौन-सा है?
+A) Iron, Coal, Bauxite / लोहा, कोयला, बॉक्साइट
+B) Copper, Zinc, Lead / तांबा, जस्ता, सीसा
+C) Manganese, Bauxite, Limestone / मैंगनीज, बॉक्साइट, चूना पत्थर
+D) Mica, Dolomite, Felspar / अभ्रक, डोलोमाइट, फेल्सपार
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q39. Fill in the blanks: Zonal Councils were created by the ______ Act, 1956. रिक्त स्थान भरें: क्षेत्रीय परिषदों का गठन ______ अधिनियम, 1956 द्वारा किया गया था।
+A) States Reorganisation / राज्य पुनर्गठन
+B) Finance Commission / वित्त आयोग
+C) Panchayati Raj / पंचायती राज
+D) Representation of People / लोगों का प्रतिनिधित्व
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q40. Which of the following statements regarding the distribution of legislative powers between the Union and State legislatures is correct? केंद्र और राज्य विधानमंडलों के बीच विधायी शक्तियों के वितरण के संबंध में निम्नलिखित में से कौन-सा कथन सही है?
+A) The State legislature can legislate on matters enumerated in the Union List / राज्य विधानमंडल संघ सूची में सूचीबद्ध मामलों पर कानून बना सकता है
+B) The Union legislature can legislate on matters in the Concurrent List only with State approval / संघीय विधानमंडल समवर्ती सूची के विषयों पर केवल राज्य की स्वीकृति से ही कानून बना सकता है
+C) The Union Government can issue directions to the States under Article 256 / केंद्र सरकार अनुच्छेद 256 के तहत राज्यों को निर्देश जारी कर सकती है
+D) The Union and States have equal powers on matters in the Union List / संघ सूची के विषयों पर संघ और राज्यों को समान शक्तियां प्राप्त हैं
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q41. Read the following statements marked as Assertion (A) and Reason (R). Choose the correct option: Assertion (A): The PSLV-C59 mission, launched in October 2024, achieved a notable milestone for international space cooperation. Reason (R): This mission successfully deployed the Proba-3 satellites, marking the first dedicated satellite launch for ESA's unique formation-flying experiment. अभिकथन (A) और कारण (R) से चिह्नित निम्नलिखित कथनों को पढ़ें। सही विकल्प चुनें: अभिकथन (A): अक्टूबर 2024 में प्रक्षेपित PSLV-C59 मिशन ने अंतर्राष्ट्रीय अंतरिक्ष सहयोग के लिए एक उल्लेखनीय उपलब्धि हासिल की। कारण (R): इस मिशन ने प्रोबा-3 उपग्रहों को सफलतापूर्वक प्रक्षेपित किया, जो ESA के अनूठे फॉर्मेशन-फ्लाइंग प्रयोग के लिए पहला समर्पित उपग्रह प्रक्षेपण था।
+A) Both A and R are true, and R is the correct explanation of A / A और R दोनों सत्य हैं, और R, A का सही स्पष्टीकरण है
+B) Both A and R are true, but R is not the correct explanation of A / A और R दोनों सत्य हैं, लेकिन R, A का सही स्पष्टीकरण नहीं है
+C) A is true, but R is false / A सत्य है, लेकिन R असत्य है
+D) A is false, but R is true / A असत्य है, लेकिन R सत्य है
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q42. Bharatiya Nagarik suraksha Samhita(BNSS) ensures access to FIR through which portal? भारतीय नागरिक सुरक्षा संहिता (बीएनएससीएस) किस पोर्टल के माध्यम से एफआईआर तक पहुँच सुनिश्चित करती है?
+A) National Crime Portal / राष्ट्रीय अपराध पोर्टल
+B) CCTNS / सीसीटीएनएस
+C) BHAVISHYA / भविष्य
+D) DIGI-FIR / डिजी-एफआईआर
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q43. Which of the following pairs of Government Scheme and its associated Nodal Ministry/Department is correctly matched? 1. PM-AASHA - Ministry of Consumer Affairs, Food & Public Distribution 2. e-NAM - Ministry of Agriculture & Farmers Welfare 3. PMKSY - Ministry of Water Resources, River Development & Ganga Rejuvenation 4. RODTEP - Ministry of Finance निम्नलिखित में से कौन-सा युग्म सरकारी योजना और उससे संबंधित नोडल मंत्रालय/विभाग का सही मिलान करता है? 1. PM-AASHA - उपभोक्ता मामले, खाद्य एवं सार्वजनिक वितरण मंत्रालय 2. e-NAM - कृषि एवं किसान कल्याण मंत्रालय 3. PMKSY - जल संसाधन, नदी विकास एवं गंगा संरक्षण मंत्रालय 4. RODTEP - वित्त मंत्रालय
+A) 1 and 2 only / केवल 1 और 2
+B) 2 and 3 only / केवल 2 और 3
+C) 2 only / केवल 2
+D) 1, 2 and 4 / 1, 2 और 4
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q44. Fill in the Blank: Panthi dance is linked to the followers of ______ in Chhattisgarh. रिक्त स्थान भरें: पंथी नृत्य छत्तीसगढ़ में ______ के अनुयायियों से जुड़ा हुआ है।
+A) Guru Ghasidas / गुरु घासीदास
+B) Kabir / कबीर
+C) Kabuli / काबुली
+D) Nanak / नानक
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q45. According to the 2024 Corruption Perceptions Index (CPI) findings, how does corruption most directly undermine global climate action? 2024 भ्रष्टाचार धारणा सूचकांक (सीपीआई) के निष्कर्षों के अनुसार, भ्रष्टाचार किस प्रकार वैश्विक जलवायु कार्रवाई को सबसे अधिक प्रभावित करता है?
+A) By weakening financial markets in developing countries / विकासशील देशों में वित्तीय बाजारों को कमजोर करके
+B) By discouraging public participation in environmental protests / पर्यावरण विरोध प्रदर्शनों में जनता की भागीदारी को हतोत्साहित करके
+C) By diverting climate funds and allowing undue influence over environmental policies / जलवायु निधियों का दुरुपयोग करके और पर्यावरण नीतियों पर अनुचित प्रभाव डालकर
+D) By increasing competition among fossil fuel companies / जीवाश्म ईंधन कंपनियों के बीच प्रतिस्पर्धा बढ़ाकर
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q46. Objective of India's new Eco-Tourism Policy in protected areas? संरक्षित क्षेत्रों में भारत की नई इको-पर्यटन नीति का उद्देश्य क्या है?
+A) Ban human activity / मानव गतिविधि पर प्रतिबंध
+B) Maximize profit w/o community / समुदाय के बिना लाभ को अधिकतम करें
+C) Balance conservation and livelihoods / संरक्षण और आजीविका में संतुलन
+D) Turn areas into resorts / क्षेत्रों को रिसॉर्ट में बदलें
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q47. Which of the following statements about the sugar industry is/are correct? 1. Sugarcane's sucrose content decreases during transportation. 2. Sugar industry is seasonal in nature. 3. The industry is unsuitable for cooperative management. 4. Major sugar-producing states include Maharashtra and Tamil Nadu. चीनी उद्योग के बारे में निम्नलिखित में से कौन-सा/से कथन सही है/हैं? 1. परिवहन के दौरान गन्ने में सुक्रोज की मात्रा कम हो जाती है। 2. चीनी उद्योग मौसमी प्रकृति का है। 3. यह उद्योग सहकारी प्रबंधन के लिए अनुपयुक्त है। 4. प्रमुख चीनी उत्पादक राज्यों में महाराष्ट्र और तमिलनाडु शामिल हैं।
+A) Only 1 and 3 / केवल 1 और 3
+B) Only 1, 2 and 4 / केवल 1, 2 और 4
+C) Only 2, 3 and 4 / केवल 2, 3 और 4
+D) Only 1 and 4 / केवल 1 और 4
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q48. Which of the following statements correctly describe the MISHTI initiative launched in India? 1. The MISHTI programme is designed to increase mangrove forest cover and enhance livelihood opportunities in coastal areas. 2. It is a project initiated under the Ministry of Rural Development. 3. The program is financed with a mix of fundings coming from the CAMPA (Compensatory Afforestation Fund Management and Planning Authority) Fund and the MGNREGS (Mahatma Gandhi National Rural Employment Guarantee Scheme). निम्नलिखित में से कौन-सा कथन भारत में शुरू की गई MISHTI पहल का सही वर्णन करता है? 1. MISHTI कार्यक्रम मैंग्रोव वन क्षेत्र को बढ़ाने और तटीय क्षेत्रों में आजीविका के अवसरों को बढ़ाने के लिए डिज़ाइन किया गया है। 2. यह ग्रामीण विकास मंत्रालय के तहत शुरू की गई एक परियोजना है। 3. इस कार्यक्रम को CAMPA (प्रतिपूरक वनीकरण निधि प्रबंधन और योजना प्राधिकरण) कोष और MGNREGS (महात्मा गांधी राष्ट्रीय ग्रामीण रोजगार गारंटी योजना) से प्राप्त धन के मिश्रण से वित्तपोषित किया जाता है।
+A) 1 and 2 / 1 और 2
+B) 1 and 3 / 1 और 3
+C) 2 and 3 / 2 और 3
+D) 1, 2, and 3 / 1, 2, और 3
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q49. Which of the following statements are correct? 1. Kalbelia performers rarely document their art due to its oral nomadic heritage. 2. Costumes avoid stitched elements in honor of serpent rituals. 3. The community's art was included in UNESCO ICH list without any written application process. निम्नलिखित में से कौन-से कथन सही हैं? 1. कालबेलिया कलाकार अपनी मौखिक खानाबदोश विरासत के कारण शायद ही कभी अपनी कला का दस्तावेजीकरण करते हैं। 2. वेशभूषा में नाग अनुष्ठानों के सम्मान में सिले हुए तत्वों का उपयोग नहीं किया जाता है। 3. समुदाय की कला को बिना किसी लिखित आवेदन प्रक्रिया के यूनेस्को आईसीएच सूची में शामिल किया गया था।
+A) Only 1 / केवल 1
+B) Only 2 & 3 / केवल 2 और 3
+C) All 1, 2 & 3 / सभी 1, 2 और 3
+D) Only 1 & 3 / केवल 1 और 3
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q50. Consider the following statements: 1. Every Money Bill is a Financial Bill. 2. Every Financial Bill is a Money Bill. Which of the above statements is/are correct? निम्नलिखित कथनों पर विचार कीजिए: 1. प्रत्येक धन विधेयक एक वित्तीय विधेयक होता है। 2. प्रत्येक वित्तीय विधेयक एक धन विधेयक होता है। उपर्युक्त कथनों में से कौन सा / से सही है / हैं?
+A) Only 1 / केवल 1
+B) Only 2 / केवल 2
+C) Both 1 and 2 / 1 और 2 दोनों
+D) Neither 1 nor 2 / न तो 1 और न ही 2
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q51. If M : N = 4 : 5, N : O = 6 : 7, and O : P = 9 : 11, then find N : P. यदि M : N = 4 : 5, N : O = 6 : 7, तथा O : P = 9 : 11 है, तो N : P ज्ञात कीजिए।
+A) 54 : 77
+B) 45 : 77
+C) 42 : 55
+D) 36 : 63
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q52. What is the result of ? इसका परिणाम क्या है: ?
+A) 4.25
+B) 4.5
+C) 4.75
+D) 5.25
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q53. What should be subtracted from 10, 12, 13, 16 so that the remaining numbers may be proportional? 10, 12, 13, 16 में से क्या घटाया जाए कि शेष संख्याएँ समानुपातिक हो जाएँ?
+A) 3
+B) 9
+C) 4
+D) 12
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q54. If 45% of a number is 0.9 more than 30% of it, what is the number? यदि किसी संख्या का 45% उसके 30% से 0.9 अधिक है, तो वह संख्या क्या है?
+A) 6
+B) 7
+C) 8
+D) 9
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q55. Sohan started a business with ₹90,000. After 5 months, Rohan joined with ₹1,50,000. After another 3 months, Sohan withdrew ₹30,000. What is the ratio of their profits at the end of the year? सोहन ने ₹90,000 से एक व्यवसाय प्रारंभ किया है। 5 माह बाद, रोहन ₹1,50,000 के साथ शामिल हो जाता है। अगले 3 माह बाद, सोहन ₹30,000 निकाल लेता है। वर्ष के अंत में उनके लाभ का अनुपात क्या है?
+A) 32:35 / 32:35
+B) 15:16 / 15:16
+C) 12:15 / 12:15
+D) 11:12 / 11:12
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q56. Two individuals, A and B, rent a pasture together. A has 18 horses that they graze for 4 months. B grazes 24 cows for 6 months and 36 sheep for 4 months. The following relationships are given: 3 horses are equivalent to 6 cows, 4 cows are equivalent to 8 sheep. What fraction of the rent should A pay? दो व्यक्ति, A और B, एक साथ एक चरागाह किराए पर लेते हैं। A के पास 18 घोड़े हैं जिन्हें वे 4 माह तक चराते हैं। B, 6 माह तक 24 गायों को और 4 माह तक 36 भेड़ों को चराता है। निम्नलिखित संबंध दिए गए हैं: 3 घोड़े = 6 गायें, 4 गायें = 8 भेड़ें। A को किराए का कितना भाग देना चाहिए?
+A) 2/5
+B) 3/5
+C) 1/3
+D) 4/9
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q57. X, Y, and Z started a business with capitals in the ratio 2:3:5. After 3 months, Z withdrew 40% of his capital. After another 3 months, Y withdrew half of his capital. The business continued for a total of 18 months. If total profit is ₹3,24,000, find the ratio of profit shares of X : Y : Z. X, Y और Z ने 2:3:5 के अनुपात में पूँजी के साथ एक व्यवसाय प्रारंभ किया है। 3 माह बाद, Z अपनी पूँजी का 40% निकाल लेता है। अगले 3 माह बाद, Y अपनी पूँजी का आधा भाग निकाल लेता है। व्यवसाय कुल 18 माह तक चलता रहता है। यदि कुल लाभ ₹3,24,000 है, तो लाभ के हिस्सों का अनुपात ज्ञात कीजिए। X : Y : Z
+A) 3:3:5 / 3:3:5
+B) 3:3:4
+C) 1:2:2 / 1:2:2
+D) 1:3:1
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q58. The average age of 40 students in a class is 16 years. When a new student is admitted, the average increases by 0.2 years. What is the age of the new student? एक कक्षा में 40 छात्रों की औसत आयु 16 वर्ष है। जब एक नया छात्र प्रवेश लेता है, तो औसत 0.2 वर्ष बढ़ जाता है। नए छात्र की आयु क्या है?
+A) 24.2
+B) 20.2
+C) 19.2
+D) 16.2
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q59. The monthly average salary for 8 employees plus one supervisor is ₹15,000. If the supervisor earns ₹25,000, what is the average salary of the 8 employees? 8 कर्मचारियों और एक सुपरवाइजर का मासिक औसत वेतन ₹15,000 है। यदि सुपरवाइजर ₹25,000 अर्जित करता है, तो 8 कर्मचारियों का औसत वेतन क्या है?
+A) ₹14,750
+B) ₹13,000
+C) ₹13,750
+D) ₹13,500
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q60. A company has 80 employees, of whom 35 % are women. The average monthly salary of the women is ₹72,000, while that of the men is ₹68,000. What is the overall average monthly salary (in ₹1000) of the whole workforce? एक कंपनी में 80 कर्मचारी हैं, जिनमें से 35% महिलाएँ हैं। महिलाओं का औसत मासिक वेतन ₹72,000 है, जबकि पुरुषों का ₹68,000 है। पूरे कार्यबल का कुल औसत मासिक वेतन (₹1000 में) क्या है?
+A) 70.8
+B) 699.4 / 699.4
+C) 245.4 / 245.4
+D) 69.4 / 69.4
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q61. A dress is marked at ₹3,500. A discount offer changes from 10% to 15%. How much extra discount does a customer get? एक ड्रेस का मूल्य ₹3,500 है। छूट का ऑफ़र 10% से 15% तक बदलता है। ग्राहक को कितनी अतिरिक्त छूट मिलती है?
+A) ₹175
+B) ₹185
+C) ₹195
+D) ₹200
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q62. Rohan ordered 5 kg of premium coffee and some additional kilograms of ordinary coffee. The price of the premium coffee per kg was three times that of the ordinary coffee. When the order was delivered, it was found that the quantities of premium and ordinary coffee had been swapped. This change increased his bill by 40%. Find the ratio of the original quantity of premium coffee to the original quantity of ordinary coffee. रोहन ने 5 किलो प्रीमियम कॉफी और कुछ अतिरिक्त किलोग्राम साधारण कॉफी का ऑर्डर दिया है। प्रति किलो प्रीमियम कॉफी का मूल्य, साधारण कॉफी के मूल्य से तीन गुना था। जब ऑर्डर डिलीवर हुआ, तो पाया गया कि प्रीमियम और साधारण कॉफी की मात्रा बदल दी गई थी। इस बदलाव से उसका बिल 40% बढ़ गया था। प्रीमियम कॉफी की मूल मात्रा और साधारण कॉफी की मूल मात्रा का अनुपात ज्ञात कीजिए।
+A) 2 : 1
+B) 1 : 3
+C) 1 : 2
+D) 3 : 1
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q63. A certain amount grows to ₹6400 in 2 years and ₹7040 in 3 years at compound interest. Determine the interest rate. एक निश्चित राशि चक्रवृद्धि ब्याज पर 2 साल में ₹6400 और 3 साल में ₹7040 हो जाती है। ब्याज दर ज्ञात कीजिए।
+A) 10% / 10%
+B) 9% / 9%
+C) 8% / 8%
+D) 11% / 11%
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q64. A bookseller sells 10 pens for ₹300, but in doing so, he incurs a loss equal to the cost price of 4 pens. The loss percent is: एक पुस्तक विक्रेता 10 पेन ₹300 में बेचता है, लेकिन ऐसा करने पर उसे 4 पेन के क्रय मूल्य के बराबर हानि होती है। हानि प्रतिशत है:
+A) 40% / 40%
+B) 70% / 70%
+C) 60% / 60%
+D) 50% / 50%
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q65. A fruit seller buys three varieties of mangoes. The first variety is bought at 4 for ₹10, the second at 5 for ₹12, and the third at 2 for ₹5. He mixes them in the ratio 2 : 3 : 1 respectively. If he sells all the mangoes at 3 for ₹7, what is his approximate gain or loss percentage? एक फल विक्रेता तीन किस्मों के आम खरीदता है। पहली किस्म के आम 4 की दर से 10 रुपये में, दूसरी किस्म के आम 5 की दर से 12 रुपये में और तीसरी किस्म के आम 2 की दर से 5 रुपये में खरीदे जाते हैं। वह इन्हें क्रमशः 2:3:1 के अनुपात में मिलाता है। यदि वह सभी आम 3 की दर से 7 रुपये में बेचता है, तो उसका अनुमानित लाभ या हानि प्रतिशत क्या है?
+A) Profit of 4.76% / 4.76% का लाभ
+B) Loss of 4.76% / 4.76% की हानि
+C) Loss of 6% / 6% की हानि
+D) Profit of 6% / 6% का लाभ
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q66. A dealer sets the marked price of a television 20% higher than its cost price. If he gives a discount of 15% and makes a profit of ₹300, what is the cost price of the television? एक डीलर एक टेलीविजन का अंकित मूल्य उसके क्रय मूल्य से 20% अधिक निर्धारित करता है। यदि वह 15% की छूट देता है और ₹300 का लाभ अर्जित करता है, तो टेलीविजन का क्रय मूल्य क्या है?
+A) ₹10,000
+B) ₹12,500
+C) ₹15,000
+D) ₹18,000
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q67. A merchant marked an article such that its price was 25% above its cost price. He offered two consecutive discounts of 10% and 20% to a buyer. If he incurred a loss of ₹400, what was the marked price of the article? एक व्यापारी ने एक वस्तु का अंकित मूल्य इस प्रकार अंकित किया कि उसका मूल्य उसके क्रय मूल्य से 25% अधिक था। वह एक खरीददार को 10% और 20% की दो क्रमागत छूट देता है। यदि उसे ₹400 की हानि हुई है, तो वस्तु का अंकित मूल्य क्या था?
+A) ₹5000
+B) ₹2000
+C) ₹2500
+D) ₹1080
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q68. A drum contains a blend of three chemicals: P, Q, and R, in the ratio of 3:5:2. 30 litres of this blend are removed, and then 12 litres of chemical P and 8 litres of chemical Q are poured into the drum. If the resultant quantity of chemical Q is 20 litres more than the resultant quantity of chemical P, what was the initial total quantity of the mixture in the drum (in litres)? एक ड्रम में तीन रसायनों P, Q, और R का मिश्रण है, जिनका अनुपात 3:5:2 है। इस मिश्रण के 30 लीटर निकाले जाते हैं, और फिर ड्रम में 12 लीटर रसायन P और 8 लीटर रसायन Q डाले जाते हैं। यदि रसायन Q की परिणामी मात्रा, रसायन P की परिणामी मात्रा से 20 लीटर अधिक है, तो ड्रम में मिश्रण की प्रारंभिक कुल मात्रा (लीटर में) क्या थी?
+A) 100 / 100
+B) 120 / 120
+C) 150 / 150
+D) 180 / 180
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q69. Rahul borrowed a sum of money at simple interest of 5% per annum for the first 3 years, 7% per annum for the next 5 years, and 9% per annum for the period beyond 8 years. If he pays a total of ₹6800 as interest only at the end of 10 years, how much money did he borrow? राहुल पहले 3 वर्षों के लिए 5% प्रति वर्ष, अगले 5 वर्षों के लिए 7% प्रति वर्ष और 8 वर्षों से आगे की अवधि के लिए 9% प्रति वर्ष की दर से साधारण ब्याज पर एक धनराशि उधार लेता है। यदि वह 10 वर्षों के अंत में केवल ब्याज के रूप में कुल ₹6800 का भुगतान करता है, तो उसने कितनी धनराशि उधार ली थी?
+A) ₹8000
+B) ₹9000
+C) ₹10000
+D) ₹12000
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q70. A cone is such that the area of its base equals its lateral surface area. If radius is r, find the slant height l. एक शंकु इस प्रकार है कि उसके आधार का क्षेत्रफल उसके पार्श्व पृष्ठीय क्षेत्रफल के बराबर है। यदि त्रिज्या r है, तो तिर्यक ऊँचाई l ज्ञात कीजिए।
+A) r
+B) 2r
+C) 3r
+D) 4r
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q71. A square field of side 28 m has a circular pond in the center. If the area of the pond is 616 m², what is the area of the remaining field? 28 मीटर भुजा वाले एक वर्गाकार मैदान के बीच में एक वृत्ताकार तालाब है। यदि तालाब का क्षेत्रफल 616 मीटर² है, तो शेष मैदान का क्षेत्रफल क्या है?
+A) 148 m² / 148 मीटर²
+B) 168 m² / 168 मीटर²
+C) 678 m² / 678 मीटर²
+D) 682 m² / 682 मीटर²
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q72. If the height of a right prism is increased by 50% and base area remains the same, what is the percentage increase in volume? यदि एक लंब प्रिज्म की ऊँचाई 50% बढ़ा दी जाए तथा आधार क्षेत्रफल समान रहे, तो आयतन में कितने प्रतिशत की वृद्धि होगी?
+A) 25%
+B) 50%
+C) 75% / 75%
+D) 100%
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q73. A circular decorative wall clock with a radius of 20 cm has a design where a chord connects two points on the circumference. This chord, along with two radii, forms an equilateral triangle at the center of the clock face. The smaller segment created by this chord is painted in a contrasting color. What percentage of the clock's total area does this smaller painted segment represent? (Use π=3.14, √3=1.732) 20 सेमी त्रिज्या वाली एक गोलाकार सजावटी दीवार घड़ी का आकार ऐसा है कि एक जीवा, परिधि पर दो बिंदुओं को जोड़ती है। यह जीवा, दो त्रिज्याओं के साथ, घड़ी के मुख के केंद्र पर एक समबाहु त्रिभुज बनाती है। इस जीवा द्वारा निर्मित छोटे खंड को एक विपरीत रंग से रंगा गया है। यह छोटा रंगा हुआ खंड घड़ी के कुल क्षेत्रफल का कितना प्रतिशत दर्शाता है? (π=3.14, √3=1.732 का प्रयोग कीजिए)
+A) 2.88% / 2.88%
+B) 5.6% / 5.6%
+C) 9.08% / 9.08%
+D) 12.5% / 12.5%
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q74. A cylinder (r = 4 cm, h = 10 cm) is bored through by a hole (r = 2 cm, full height). What percentage of original volume is removed? एक बेलन (r = 4 सेमी, h = 10 सेमी) में एक छेद (r = 2 सेमी, पूरी ऊँचाई) किया जाता है। मूल आयतन का कितना प्रतिशत निकाला गया है?
+A) 25% / 25%
+B) 50% / 50%
+C) 75%
+D) 37.5% / 37.5%
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q75. A sector of a circle with a radius of 15 cm has a central angle of 45°. Another sector of the same circle has a central angle of π/4 radians. What is the ratio of the area of the first sector to the area of the second sector? 15 सेमी त्रिज्या वाले एक वृत्त के एक त्रिज्यखंड का केंद्रीय कोण 45° है। उस वृत्त के एक अन्य त्रिज्यखंड का केंद्रीय कोण π/4 रेडियन है। पहले त्रिज्यखंड के क्षेत्रफल और दूसरे त्रिज्यखंड के क्षेत्रफल का अनुपात क्या है?
+A) 1:2
+B) 2:3
+C) 1:1
+D) 3:4
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q76. Select the most appropriate synonym of the given word: CALLOW
+A) Inexperienced
+B) Experienced
+C) Wise
+D) Mature
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q77. Select the most appropriate antonym of the given word. Placatory
+A) Pacifying
+B) Soothing
+C) Aggravating
+D) Conciliatory
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q78. Choose the correct meaning of idiom: Blow hot and cold
+A) To change one's mood or opinion frequently
+B) To talk boastfully
+C) To enjoy both success and failure
+D) To remain consistent in behavior
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q79. Select the most appropriate antonym of the given word. Fulsome
+A) Overdone
+B) Sincere
+C) Excessive
+D) Lavish
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q80. Spot the correct spelling of body-position sense.
+A) Propriozeption
+B) Propiocaption
+C) Proprioception
+D) Proprioseption
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q81. Choose the correct one-word substitute for: 'A statement that appears self-contradictory yet may be true'.
+A) Axiom
+B) Maxim
+C) Paradox
+D) Irony
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q82. Select the correct option: Scarcely had the satellite deployed ____ it transmitted its first data packet.
+A) than
+B) when
+C) before
+D) until
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q83. Select the correct option: ____ having completed the feasibility study, the team requested additional funding.
+A) Having
+B) On
+C) Upon
+D) Despite
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q84. Select the correct option: It was imperative that the document ___ signed before the close of business.
+A) will be
+B) was
+C) be
+D) had been
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q85. Find the part of the sentence that contains an error: The perception that the guidelines are optional (1)/ rather than compulsory have led (2)/ to widespread inconsistencies in compliance (3)/ across state-level implementations. (4)
+A) (1)
+B) (2)
+C) (3)
+D) (4)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q86. Change the following from active to passive: Historians may well reinterpret the artifact after new evidence emerges.
+A) The artifact may well be reinterpreted by historians after new evidence emerges.
+B) The artifact may have been reinterpreted by historians after new evidence emerges.
+C) The artifact will be reinterpreted well by historians after new evidence emerges.
+D) The artifact could well be reinterpreting by historians after new evidence emerges.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q87. Find the part of the sentence that contains an error: The fact that dissenting opinions are stifled (1)/ without due institutional safeguards (2)/ reflect a worrying trend in democratic regression (3)/ observed across multiple levels of governance. (4)
+A) (1)
+B) (2)
+C) (3)
+D) (4)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q88. Select the sentence containing the homonym of the highlighted word: The tripos system at Cambridge remains a model of academic rigor.
+A) The tripos involved oral defense and written modules.
+B) He broke his tripos into discrete phases of analysis.
+C) The ceremonial tripos stool toppled during the investiture.
+D) She passed the natural sciences tripos with distinction.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q89. Convert the sentence provided below from its passive voice structure to an active voice structure: The land is believed to have been acquired illegally by the company through forged documents.
+A) The company is believed to have acquired the land illegally.
+B) The company acquired the land illegally, as believed.
+C) Someone believed the company acquired land illegally.
+D) The company had acquired land using forged documents.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q90. PASSAGE (Q.90 - Q.94) Read the following passage and answer the questions based on the passage: Cricket, as a sport, has continually evolved in response to changing audience preferences and technological advancements. Among its many formats, Test cricket and One Day Internationals (ODIs) represent two contrasting philosophies—one rooted in endurance and strategy, the other in dynamism and entertainment. Test cricket, often regarded as the pinnacle of the sport, is a format that unfolds over five days, demanding exceptional levels of patience, technique, and mental resilience. It offers players the opportunity to exhibit classical skills and tactical acumen, where the fluctuating tempo mirrors the rhythm of real life—unpredictable, slow-burning, and layered. For purists, Test cricket is an art form, rewarding not merely flamboyance but consistency and grit. In contrast, ODIs compress the drama into a single day. With limited overs, this format prioritizes aggressive batting, innovative bowling variations, and strategic field placements. The adrenaline-infused pace of ODIs appeals to a broader demographic, especially in an era of dwindling attention spans and time constraints. For broadcasters and advertisers, the shorter format offers commercial viability, making it a lucrative spectacle. However, critics argue that the commercialization of ODIs has come at the expense of depth and nuance. In pursuit of viewership, substance often gives way to spectacle. Conversely, defenders of Test cricket lament its declining audience, attributing it to an increasingly entertainment-driven sports culture. Yet, occasional high-stakes encounters —like the Ashes or India-Australia series—still manage to ignite global interest. The ongoing debate between formats is not merely about preference, but about the challenge lies in preserving the sanctity of Test cricket without undermining the accessibility of ODIs—a delicate balance that cricketing authorities must negotiate in the years ahead. Which of the following best captures the essence of Test cricket, as described in the passage?
+A) It is long and often boring
+B) It reflects complexity and unpredictability
+C) It includes domestic and emotional elements
+D) It is nostalgic and traditional
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q91. Which of the following is a criticism of ODIs mentioned in the passage?
+A) Too long for modern viewers
+B) Lack of competitiveness
+C) Loss of depth due to over-commercialization
+D) Fewer international tournaments
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q92. How are Test cricket and ODIs contrasted in terms of viewer appeal?
+A) Tests are faster and more entertaining
+B) ODIs are only popular among senior fans
+C) Tests reward showmanship over skills
+D) ODIs cater to shorter attention spans
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q93. What tone does the author adopt toward the preservation of Test cricket?
+A) Indifferent
+B) Hopeful and critical
+C) Mocking and dismissive
+D) Casual and informal
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q94. What is the central concern raised in the passage?
+A) Lack of good players for both formats
+B) Scheduling difficulties between formats
+C) Balancing tradition with commercial interests
+D) Reducing cricket formats to two only
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q95. Choose the most suitable option to replace the highlighted part of the sentence: I was discussing about the issue with him.
+A) discussed regarding the issue
+B) had discussion on issue
+C) discussing the issue with him
+D) had been discussing about issue
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q96. Choose the most suitable option to replace the highlighted part of the sentence: You must prevent your brother to do such things.
+A) from doing such things
+B) of doing such things
+C) not to do such things
+D) doing such things
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q97. A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. She said to me, "Open the window."
+A) She told me open the window.
+B) She told me to open the window.
+C) She told me opening the window.
+D) She said me to open the window.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q98. A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. She said that they had already left before she arrived.
+A) "They have already left before I arrived," she said.
+B) "They already left before I arrived," she said.
+C) "They had already left before I arrived," she said.
+D) "They left before I had arrived," she said.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q99. Rearrange the following sentences to form a coherent paragraph: 1. This process, known as photosynthesis, is fundamental to life on Earth as it forms the base of most food webs. 2. Plants, algae, and some bacteria possess a unique ability to convert light energy into chemical energy. 3. The captured light energy is then used to synthesize glucose molecules from water and carbon dioxide. 4. It begins with the absorption of photons by chlorophyll pigments within the plant cells.
+A) 1, 4, 3, 2
+B) 2, 1, 4, 3
+C) 4, 3, 2, 1
+D) 3, 2, 1, 4
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q100. Rearrange the following sentences to form a coherent paragraph: 1. This process, a crucial part of the plant's life cycle, is vital for the continued existence of many plant species. 2. Pollination is the transfer of pollen from the male part of a flower to the female part. 3. The transfer can be carried out by various agents, including insects, birds, and wind. 4. Successful pollination leads to fertilization and the subsequent production of seeds and fruits.
+A) 2, 3, 4, 1
+B) 3, 4, 1, 2
+C) 1, 2, 3, 4
+D) 4, 1, 2, 3
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+

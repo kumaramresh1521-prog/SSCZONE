@@ -1,0 +1,700 @@
+Q.1: In the following question, select the related word from the given alternatives. Architect : Design :: Chef : ? निम्नलिखित प्रश्न में दिए गए विकल्पों में से संबंधित शब्द का चयन कीजिए। वास्तुकार : डिज़ाइन :: बावर्ची : ?
+A. Cook / पकाना
+B. Serve / सेवा करना
+C. Recipe / व्यंजन विधि
+D. Food / खाना
+Answer: A
+
+Q.2: In the following question, select the related word from the given alternatives Utilitarianism : Consequence :: Deontology : ? निम्नलिखित प्रश्न में, दिए गए विकल्पों में से संबंधित शब्द का चयन कीजिए उपयोगितावाद : परिणाम :: कर्तव्यशास्त्र : ?
+A. Virtue / गुण
+B. Duty / कर्तव्य
+C. Intention / इरादा
+D. Value / कीमत
+Answer: B
+
+Q.3: Select the letters from among the given options that can replace the question mark (?) in the following series. K, M, O, ?, S, U, ?, Y दिए गए विकल्पों में से उस अक्षर का चयन कीजिए जो निम्नलिखित शृंखला में प्रश्न-चिह्न (?) के स्थान पर आ सकता है। K, M, O, ?, S, U, ?, Y
+A. Q, X
+B. Q, W
+C. P, W
+D. R, W
+Answer: B
+
+Q.4: Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. PQR, STU, VWX, ? दिए गए विकल्पों में से उस अक्षर-समूह का चयन कीजिए जो निम्नलिखित शृंखला में प्रश्न-चिह्न (?) को प्रतिस्थापित कर सकता है। PQR, STU, VWX, ?
+A. YZD
+B. YVA
+C. YZA
+D. DFR
+Answer: C
+
+Q.5: Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. YMW, VJT, SGQ, PDN, ? दिए गए विकल्पों में से उस अक्षर-समूह का चयन कीजिए जो निम्नलिखित शृंखला में प्रश्न-चिह्न (?) को प्रतिस्थापित कर सकता है। YMW, VJT, SGQ, PDN, ?
+A. TYD
+B. HGF
+C. MJH
+D. MAK
+Answer: D
+
+Q.6: Select the letter-cluster from among the given options that can replace the question mark (?) in the following series: RBEH, RGOW, RLYL, RQIA, ? दिए गए विकल्पों में से उस अक्षर-समूह का चयन कीजिए जो निम्नलिखित शृंखला में प्रश्न-चिह्न (?) के स्थान पर आ सकता है: RBEH, RGOW, RLYL, RQIA, ?
+A. RVSP
+B. RVSH
+C. RVHS
+D. RSVP
+Answer: A
+
+Q.7: Select the letter-cluster from among the given options that can replace the question mark (?) in the following series: CDEF, CKSA, CRGV, CYUQ, ? दिए गए विकल्पों में से उस अक्षर-समूह का चयन कीजिए जो निम्नलिखित शृंखला में प्रश्न-चिह्न (?) के स्थान पर आ सकता है: CDEF, CKSA, CRGV, CYUQ, ?
+A. CEHK
+B. CFHK
+C. CFHL
+D. CFIL
+Answer: D
+
+Q.8: Complete the pattern: 120, 96, 76.8, 61.44, ? श्रेणी को पूर्ण कीजिए: 120, 96, 76.8, 61.44, ?
+A. 60.27
+B. 78.91
+C. 47.89
+D. 49.152
+Answer: D
+
+Q.9: Each of the letters in the word CONTRAST is arranged in alphabetical order. How many letters are there in the English alphabetical series between the letter that is first from the left and the one that is fifth from the right in the new letter-cluster formed? CONTRAST शब्द में प्रत्येक अक्षर को वर्णमाला क्रम में व्यवस्थित किया गया है। नए अक्षर-समूह में बाएँ से पहले अक्षर और दाएँ से पाँचवें अक्षर के बीच अंग्रेजी वर्णमाला शृंखला में कितने अक्षर हैं?
+A. 10
+B. 13
+C. 15
+D. 11
+Answer: B
+
+Q.10: Which of the following addresses are identical to each other: 1. S. Iyer 17-D, Coral Residency, Thiruvananthapuram , 695014 2. S. Iyer 17-D, Coral Residency, Thiruvananthapuram , 695014 3. S. Iyer 17-D Coral Residency, Thiruvananthapuram , 695014 4. S. Iyer 17-D Coral Residency, Thiruvananthapuram , 695013 निम्नलिखित में से कौन से पते एक दूसरे के समान हैं: 1. S. Iyer 17-D, Coral Residency, Thiruvananthapuram , 695014 2. S. Iyer 17-D, Coral Residency, Thiruvananthapuram , 695014 3. S. Iyer 17-D Coral Residency, Thiruvananthapuram , 695014 4. S. Iyer 17-D Coral Residency, Thiruvananthapuram , 695013
+A. 1 and 2 / 1 और 2
+B. 1 and 3 / 1 और 3
+C. 2 and 4 / 2 और 4
+D. 3 and 4 / 3 और 4
+Answer: A
+
+Q.11: Which of the following is/are identical to the address given: Sunil Kumar 21/4, Ashok Vihar, Delhi, 110052 1. Sunil Kumar 21/4, Ashok Vihar, Delhi, 1100522 2. Sunil Kumar 21/4, Ashok Vihar, Delhi, 110052 3. Sunil Kumar 21/4, Ashok Vihar, New Delhi, 110052 4. Sunil Kumar 21/4, Ashok Vihar, Delhi, 110053 निम्नलिखित में से कौन सा दिया गया पते के समान है/हैं: सुनील कुमार 21/4, अशोक विहार, दिल्ली, 110052 1. सुनील कुमार 21/4, अशोक विहार, दिल्ली, 1100522 2. सुनील कुमार 21/4, अशोक विहार, दिल्ली, 110052 3. सुनील कुमार 21/4, अशोक विहार, नई दिल्ली, 110052 4. सुनील कुमार 21/4, अशोक विहार, दिल्ली, 110053
+A. 1 Only / केवल 1
+B. 3 Only / केवल 3
+C. 2 Only / केवल 2
+D. 4 Only / केवल 4
+Answer: C
+
+Q.12: Find the best option that best completes the analogy. CAB : EDF :: GIH : ? वह सर्वोत्तम विकल्प का चयन कीजिए जो सादृश्य को सर्वोत्तम रूप से पूर्ण करता है। CAB : EDF :: GIH : ?
+A. JKL
+B. KJI
+C. ILL
+D. JLI
+Answer: C
+
+Q.13: Find the option that best completes the analogy. DP : XZ :: EN : ? वह विकल्प ज्ञात कीजिए जो सादृश्य को सर्वोत्तम रूप से पूर्ण करता है। DP : XZ :: EN : ?
+A. YZ
+B. YB
+C. ZB
+D. YX
+Answer: D
+
+Q.14: Ten persons are sitting in two parallel rows containing five persons each, such that there is an equal distance between adjacent persons. Line 1: Five men (A-E) are seated and all of them are facing South. Line 2: Five women (M-Q) are seated and all of them are facing North. Based on the arrangement, answer the question: D is opposite to M. M is at one of the extreme ends of Line 2. O is at the center position of Line 2. Who is second to the right of M in Line 2 (facing North)? दस व्यक्ति दो समांतर पंक्तियों में बैठे हैं, जिनमें से प्रत्येक में पाँच व्यक्ति इस प्रकार हैं कि आसन्न व्यक्तियों के बीच समान दूरी है। पंक्ति 1: पाँच पुरुष (A-E) बैठे हैं और सभी दक्षिण की ओर मुख करके बैठे हैं। पंक्ति 2: पाँच महिलाएँ (M-Q) बैठी हैं और सभी उत्तर की ओर मुख करके बैठी हैं। व्यवस्था के आधार पर, प्रश्न का उत्तर दीजिए: D, M के सामने है। व्यव्यक्ति M, पंक्ति 2 के किसी एक छोर पर है। O, पंक्ति 2 के मध्य में है। पंक्ति 2 (उत्तर की ओर मुख करके) में M के दायें दूसरा कौन है?
+A. O
+B. M
+C. A
+D. N
+Answer: A
+
+Q.15: In each of the following questions, a specific rearrangement pattern is applied to the first word to form the second. Identify the same pattern and apply it to the third word to determine the correct answer from the given alternatives. AROUND : RAUODN :: GROUND : ? निम्नलिखित प्रत्येक प्रश्न में, पहले शब्द को दूसरे शब्द में बदलने के लिए एक विशिष्ट पुनर्व्यवस्था पैटर्न का उपयोग किया गया है। दिए गए विकल्पों में से सही उत्तर निर्धारित करने के लिए उस पैटर्न की पहचान कीजिए और इसे तीसरे शब्द पर लागू कीजिए। AROUND : RAUODN :: GROUND : ?
+A. RGUODN
+B. NDOOGR
+C. OUNDGR
+D. DNUURG
+Answer: A
+
+Q.16: In each of the following questions, the second group of letters is formed from the first using a specific alphabetical transformation. Apply the same pattern to the third group and find the correct option that completes the analogy. QDXM : SFYN :: UIOZ : ? निम्नलिखित प्रत्येक प्रश्न में, अक्षरों का दूसरा समूह पहले समूह से एक विशिष्ट वर्णमाला परिवर्तन का उपयोग करके बनाया गया है। इस पैटर्न को तीसरे समूह पर लागू कीजिए और वह सही विकल्प चुनिए जो सादृश्य को पूरा करता हो। QDXM : SFYN :: UIOZ : ?
+A. PAQM
+B. LPWA
+C. QNLA
+D. WKPA
+Answer: D
+
+Q.17: Choose the odd one: असंगत का चयन कीजिए:
+A. Mon Feb 04 2008 00:00:00 GMT+0530 (India Standard Time) / सोमवार, 4 फरवरी 2008, 00:00:00 GMT+0530 (भारतीय मानक समय)
+B. Tue Mar 09 2027 00:00:00 GMT+0530 (India Standard Time) / मंगलवार, 9 मार्च 2027, 00:00:00 GMT+0530 (भारतीय मानक समय)
+C. Fri May 25 0125 00:00:00 GMT+0553 (India Standard Time) / शुक्रवार, 25 मई 0125 00:00:00 GMT+0553 (भारतीय मानक समय)
+D. Thu Apr 16 1936 00:00:00 GMT+0530 (India Standard Time) / गुरुवार, 16 अप्रैल 1936, 00:00:00 GMT+0530 (भारतीय मानक समय)
+Answer: C
+
+Q.18: In each of the following questions, a group of three numbers/symbols is given in each option. Identify the group that does NOT follow the same pattern as the others. निम्नलिखित प्रत्येक प्रश्न में, प्रत्येक विकल्प में तीन संख्याओं/प्रतीकों का एक समूह दिया गया है। उस समूह की पहचान कीजिए जो अन्य के समान पैटर्न का अनुसरण नहीं करता है।
+A. M13 : J10 : G7
+B. Z26 : W23 : T20
+C. D4 : A1 : X24
+D. H8 : E6 : B4
+Answer: D
+
+Q.19: In each of the following questions, a group of three numbers/symbols is given in each option. Identify the group that does NOT follow the same pattern as the others. निम्नलिखित प्रत्येक प्रश्न में, प्रत्येक विकल्प में तीन संख्याओं/प्रतीकों का एक समूह दिया गया है। उस समूह की पहचान कीजिए जो अन्य के समान पैटर्न का अनुसरण नहीं करता है।
+A. Z1$ : Y2# : X3@
+B. W4% : V5^ : U6&
+C. T7* : S8( : R9)
+D. Q10$ : P11$ : O12$
+Answer: D
+
+Q.20: B is the daughter of A. C is the husband of B. D is the son of C. How is A related to D? B, A की पुत्री है। C, B का पति है। D, C का पुत्र है। A, D से किस प्रकार संबंधित है?
+A. Father / पिता
+B. Grandfather / दादाजी
+C. Grandmother / दादी
+D. Cannot be determined / निर्धारित नहीं किया जा सकता है
+Answer: D
+
+Q.21: If 'X' means '+', 'Y' means '-', 'Z' means 'x', and 'W' means '÷' what is the value of the following expression? 15 W 3 X 2 Y 4=? यदि 'X' का अर्थ '+' है, 'Y' का अर्थ '-' है, 'Z' का अर्थ '×' है और 'W' का अर्थ '÷' है, तो निम्नलिखित व्यंजक का मान क्या है? 15 W 3 X 2 Y 4=?
+A. 1
+B. 3
+C. 5
+D. 7
+Answer: B
+
+Q.22: A's father's wife's only daughter is B. How is A related to B? A के पिता की पत्नी की एकमात्र पुत्री B है। A का B से क्या संबंध है?
+A. Nephew / भतीजा
+B. Cousin / चचेरा
+C. Sibling / सहोदर
+D. Uncle / चाचा
+Answer: C
+
+Q.23: Introducing a boy, a girl says, "He is the son of my mother's only son." Who is the boy to the girl? एक लड़के का परिचय देते हुए एक लड़की कहती है, "वह मेरी माता के एकमात्र पुत्र का पुत्र है।" लड़का, लड़की का कौन है?
+A. Brother / भाई
+B. Son / पुत्र
+C. Nephew / भतीजा
+D. Cousin / चचेरा भाई
+Answer: C
+
+Q.24: A is the wife of B. B is the brother of C. C is the father of D. How is A related to D? A, B की पत्नी है। B, C का भाई है। C, D का पिता है। A, D से किस प्रकार संबंधित है?
+A. Aunt / चाची
+B. Mother / माता
+C. Sister-in-law / भाभी
+D. Grandmother / दादी
+Answer: A
+
+Q.25: If '+' means '-', '-' means '+', 'x' means '÷', then 50 + 10 - 5 × 5 = ? यदि '+' का अर्थ '-' है, '-' का अर्थ '+' है, '×' का अर्थ '÷' है, तो 50 + 10 - 5 × 5 = ?
+A. 41
+B. 60
+C. 65
+D. 70
+Answer: A
+
+Q.26: Arrange the following sites in chronological order based on the stylistic development of Buddhist sculpture: a) Mathura b) Bharhut c) Sanchi Stupa-1 बौद्ध मूर्तिकला के शैलीगत विकास के आधार पर निम्नलिखित स्थलों को कालानुक्रमिक क्रम में व्यवस्थित करें: a) मथुरा b) भरहुत c) सांची स्तूप-1
+A. b-c-a / b-c-a
+B. c-a-b / c-a-b
+C. c-b-a / c-b-a
+D. a-c-b / a-c-b
+Answer: A
+
+Q.27: Which of the following statements about the Chithirai Festival of Madurai is correct? मदुरै के चिथिरई महोत्सव के बारे में निम्नलिखित में से कौन-सा कथन सही है?
+A. The Chithirai Festival is celebrated in the tamil month of Margazhi / चिथिरई महोत्सव तमिल माह मार्गज़ी में मनाया जाता है
+B. Lord Kallazhagar arrives on a golden horse / भगवान कल्लाझगर का स्वर्णिम घोड़े पर आगमन
+C. The festival is held exclusively in December / यह उत्सव विशेष रूप से दिसंबर माह में आयोजित किया जाता है
+D. The festival ends with a game of bullfight / यह उत्सव बैल-लड़ाई के खेल के साथ समाप्त होता है
+Answer: B
+
+Q.28: What is the term for a structured musical composition in Hindustani classical music? हिंदुस्तानी शास्त्रीय संगीत में संरचित संगीत रचना के लिए क्या शब्द है?
+A. Kriti / कृति
+B. Bandish / बंदिश
+C. Gamaka / गमका
+D. Rasa / रस
+Answer: B
+
+Q.29: Consider the following statements regarding belt ranks and competition area in Judo: 1) A red-and-white belt is associated with judokas from Sixth dan to Eighth dan levels. 2) A shared safety zone of at least 1 meter must be maintained between adjoining competition areas. Which of the above statements is/are correct? जूदो में बेल्ट रैंक और प्रतियोगिता क्षेत्र के बारे में निम्नलिखित कथनों पर विचार करें: 1) लाल और सफेद बेल्ट छठे डेन से आठवें डेन स्तर तक के जूडोकाओं से जुड़ी होती है। 2) आस-पास के प्रतियोगिता क्षेत्रों के बीच कम से कम 1 मीटर का साझा सुरक्षा क्षेत्र बनाए रखा जाना चाहिए। उपर्युक्त कथनों में से कौन-सा/से सही है/हैं?
+A. Only 1 is Correct / केवल 1 सही है
+B. Only 2 is Correct / केवल 2 सही है
+C. 1 and 2 both are correct / 1 और 2 दोनों सही हैं.
+D. Neither 1 nor 2 is Correct / न तो 1 न ही 2 सही है.
+Answer: C
+
+Q.30: Who broke the 30-year-old Asian Games men's 5,000m meet record in National Open Athletics Championships 2024? राष्ट्रीय ओपन एथलेटिक्स चैंपियनशिप 2024 में 30 साल पुराना एशियाई खेलों के पुरुषों की 5,000 मीटर मीट रिकॉर्ड किसने तोड़ा?
+A. Bahadur Singh / बहादुर सिंह
+B. Gulveer Singh / गुलवीर सिंह
+C. Neeraj Chopra / नीरज चोपड़ा
+D. Hima Das / हिमा दास
+Answer: B
+
+Q.31: Consider the following statements regarding BRICS Science, Technology and Innovation (STI) cooperation: 1) It is based on mutual benefit and public-good-driven innovation. 2) It is governed only through annual Heads of State Summits. Which of the statements is/are correct? ब्रिक्स देशों के विज्ञान, प्रौद्योगिकी और नवाचार (STI) सहयोग के संबंध में निम्नलिखित कथनों पर विचार करें: 1) यह पारस्परिक लाभ और जनहित से प्रेरित नवाचार पर आधारित है। 2) इसका संचालन केवल वार्षिक राष्ट्राध्यक्कों के शिखर सम्मेलनों के माध्यम से होता है। निम्नलिखित में से कौन सा/से कथन सही है/हैं?
+A. Only 1 is correct / केवल 1 सही है
+B. Only 2 is correct / केवल 2 सही है
+C. Both 1 and 2 are correct / 1 और 2 दोनों सही हैं
+D. Neither 1 nor 2 is correct / न तो 1 और न ही 2 सही है
+Answer: A
+
+Q.32: Fill in the blank: The inaugural Khelo India Para Games took place in _____, showcasing seven sporting disciplines across three venues in New Delhi. रिक्त स्थान भरें: खेलो इंडिया पैरा गेम्स का पहला आयोजन ______ में हुआ, जिसमें नई दिल्ली के तीन स्थानों पर सात खेल स्पर्धाओं का प्रदर्शन किया गया था।
+A. Mar 2024 / मार्च 2024
+B. Jan 2023 / जनवरी 2023
+C. Dec 2023 / दिसंबर 2023
+D. Mar 2025 / मार्च 2025
+Answer: C
+
+Q.33: Read the below statements marked as Assertion (A) and Reason (R). Mark the correct options: Assertion (A): Last Man in Tower explores the moral and ethical conflicts faced by residents during rapid urban development and real estate pressures in Mumbai. Reason (R): The novel focuses on the historical evolution of Mumbai's architecture and its colonial past. नीचे दिए गए कथनों को अभिकथन (A) और कारण (R) से चिह्नित करें। सही विकल्पों को चिह्नित कीजिए: अभिकथन (A): "लास्ट मैन इन टावर" मुंबई में तेज़ी से बढ़ते शहरी विकास और रियल एस्टेट के दबाव के दौरान निवासियों द्वारा सामना किए जाने वाले नैतिक और नैतिक संघर्षों की पड़ताल करता है। कारण (R): यह उपन्यास मुंबई की वास्तुकला के ऐतिहासिक विकास और उसके औपनिवेशिक अतीत पर केंद्रित है।
+A. Both A and R are true, and R is the correct explanation of A. / A और R दोनों सत्य हैं, तथा R, A का सही स्पष्टीकरण है।
+B. Both A and R are true, but R is not the correct explanation of A. / A और R दोनों सत्य हैं, लेकिन R, A का सही स्पष्टीकरण नहीं है।
+C. A is true, but R is false. / A सत्य है, लेकिन R असत्य है।
+D. A is false, but R is true. / A गलत है, लेकिन R सत्य है।
+Answer: C
+
+Q.34: Choose the correctly matched cave feature and its formation: सुमेलित होने वाली गुफा की विशेषता और उसके निर्माण का चयन करें:
+A. Stalactite - Grows upward from cave floor / स्टैलेक्टाइट - गुफा के तल से ऊपर की ओर बढ़ता है
+B. Stalagmite - Formed by dripping water from cave ceiling / स्टैलेग्माइट - गुफा की छत से टपकते पानी से बनता है
+C. Pillar - Hangs from the cave roof / स्तंभ - गुफा की छत से लटका हुआ है
+D. Stalactite - Formed by upward mineral flow / स्टैलेक्टाइट - खनिज पदार्थों के ऊपर की ओर प्रवाह से निर्मित
+Answer: B
+
+Q.35: What is the primary function of the NVS-02 satellite launched aboard GSLV-F15? जीएसएलवी-एफ15 के माध्यम से प्रक्षेपित एनवीएस-02 उपग्रह का प्राथमिक कार्य क्या है?
+A. It supports meteorological observations for cyclone prediction. / यह चक्रवात की भविष्यवाणी के लिए मौसम संबंधी अवलोकनों का समर्थन करता है।
+B. It enables satellite-based television broadcasting. / यह उपग्रह आधारित टेलीविजन प्रसारण को सक्षम बनाता है।
+C. It boosts India's navigation system by offering precise position and timing data. / यह सटीक स्थिति और समय संबंधी डेटा प्रदान करके भारत की नेविगेशन प्रणाली को बढ़ावा देता है।
+D. It conducts deep-space communication with planetary probes. / यह ग्रहीय अन्वेषणों के साथ गहन अंतरिक्ष संचार करता है।
+Answer: C
+
+Q.36: Assertion (A) and Reason (R) are given below. Choose the correct option: Assertion (A): Population growth can be measured in absolute numbers and percentage change per year. Reason (R): Measuring growth only in absolute numbers provides detailed insights into population trends over time. नीचे अभिकथन (A) और कारण (R) दिए गए हैं। सही विकल्प चुनें: अभिकथन (A): जनसंख्या वृद्धि को निरपेक्ष संख्याओं और प्रति वर्ष प्रतिशत परिवर्तन के रूप में मापा जा सकता है। कारण (R): केवल निरपेक्ष संख्याओं में वृद्धि को मापने से समय के साथ जनसंख्या प्रवृत्तियों की विस्तृत जानकारी मिलती है।
+A. Both A and R are true, and R is the correct explanation of A / A और R दोनों सत्य हैं, और R, A का सही स्पष्टीकरण है
+B. Both A and R are true, but R is not the correct explanation of A / A और R दोनों सत्य हैं, लेकिन R, A का सही स्पष्टीकरण नहीं है
+C. A is true, but R is false / A सत्य है, लेकिन R असत्य है
+D. A is false, but R is true / A असत्य है, लेकिन R सत्य है
+Answer: C
+
+Q.37: Read the following statements regarding K. Sanjay Murthy's recent appointment as Comptroller and Auditor General (CAG) of India: 1. He took office as the CAG in November 2024 after the term of Girish Chandra Murmu. 2. The CAG is a constitutional office, which is appointed by the President under Article 148 of the Indian Constitution. 3. The CAG's term is only five years and cannot be repeated. Which of the above is/are correct? भारत के नियंत्रक एवं महालेखा परीक्षक (CAG) के रूप में के. संजय मूर्ति की हालिया नियुक्ति के संबंध में निम्नलिखित कथन पढ़ें: 1. उन्होंने गिरीश चंद्र मुर्मु के कार्यकाल के बाद नवंबर 2024 में CAG के रूप में पदभार ग्रहण किया। 2. CAG एक संवैधानिक पद है, जिसकी नियुक्ति भारतीय संविधान के अनुच्छेद 148 के तहत राष्ट्रपति द्वारा की जाती है। 3. CAG का कार्यकाल केवल पाँच वर्ष का होता है और इसे दोहराया नहीं जा सकता। उपर्युक्त में से कौन-सा/से सही है/ हैं?
+A. 1 and 2 only / केवल 1 और 2
+B. 2 and 3 only / केवल 2 और 3
+C. 1 and 3 only / केवल 1 और 3
+D. 1, 2 and 3 all are correct / 1, 2 और 3 सभी सही हैं
+Answer: A
+
+Q.38: What is the primary function of the Golgi apparatus? गॉल्जी उपकरण का प्राथमिक कार्य क्या है?
+A. ATP production / एटीपी उत्पादन
+B. Protein modification / प्रोटीन संशोधन
+C. Lipid synthesis / लिपिड संश्लेषण
+D. DNA replication / डीएनए प्रतिकृति
+Answer: B
+
+Q.39: As per Article 279A of the Indian Constitution, the GST Council's decisions require what kind of majority of the weighted votes of the members present and voting? भारतीय संविधान के अनुच्छेद 279A के अनुसार, जीएसटी परिषद के निर्णयों के लिए उपस्थित और मतदान करने वाले सदस्यों के भारित मतों के किस प्रकार के बहुमत की आवश्यकता होती है?
+A. Simple majority / साधारण बहुमत
+B. Three-fourths majority / तीन-चौथाई बहुमत
+C. Two-thirds majority / दो-तिहाई बहुमत
+D. Half majority / आधा बहुमत
+Answer: B
+
+Q.40: Which of the following correctly reflects the legal implication of Article 255 regarding presidential or governor's assent to bills? निम्नलिखित में से कौन-सा विधेयकों पर राष्ट्रपति या राज्यपाल की स्वीकृति के संबंध में अनुच्छेद 255 के कानूनी निहितार्थ को सही ढंग से दर्शाता है?
+A. State law is void without written Governor assent. / राज्यपाल की लिखित स्वीकृति के बिना राज्य का कानून अमान्य है।
+B. Mention of assent is mandatory for validity. / वैधता के लिए सहमति का उल्लेख अनिवार्य है।
+C. Omission of prior recommendation doesn't invalidate law if assent is given. / यदि सहमति दे दी गई है तो पूर्व अनुशंसा को छोड़ देने से कानून अमान्य नहीं हो जाता।
+D. President's assent must precede legislative passage to be valid. / विधायी पारित होने के लिए राष्ट्रपति की स्वीकृति आवश्यक है।
+Answer: C
+
+Q.41: When light enters from air into a medium, its speed changes. Which of the following properties of light remains constant during this transition? जब प्रकाश वायु से किसी माध्यम में प्रवेश करता है, तो उसकी गति बदल जाती है। इस संक्रमण के दौरान प्रकाश का निम्नलिखित में से कौन-सा गुण स्थिर रहता है?
+A. Wavelength / वेवलेंथ
+B. Frequency / आवृत्ति
+C. Speed / रफ़्तार
+D. Amplitude / आयाम
+Answer: B
+
+Q.42: The Bharatiya Sakshya Adhiniyam(BSA) aims to align Indian evidence law with advancements in: भारतीय साक्ष्य अधिनियम (बीएसए) का लक्ष्य भारतीय साक्ष्य कानून को निम्नलिखित में प्रगति के साथ जोड़ना है:
+A. Forensic science and digital technology / फोरेंसिक विज्ञान और डिजिटल प्रौद्योगिकी
+B. Traditional agricultural practices / पारंपरिक कृषि पद्धतियाँ
+C. Ancient philosophical texts / प्राचीन दार्शनिक ग्रंथ
+D. Oral storytelling traditions / मौखिक कहानी कहने की परंपराएँ
+Answer: A
+
+Q.43: Read the below statements marked as Assertion (A) and Reason (R). Mark the correct options: Assertion (A): Rashtriya Vigyan Puraskar is a civilian science award. Reason (R): It is conferred by Ministry of Culture. नीचे दिए गए कथनों को अभिकथन (A) और कारण (R) से चिह्नित करके पढ़िए। सही विकल्पों को चिह्नित कीजिए: अभिकथन (A): राष्ट्रीय विज्ञान पुरस्कार एक नागरिक विज्ञान पुरस्कार है। कारण (R): यह संस्कृति मंत्रालय द्वारा प्रदान किया जाता है।
+A. Both A and R are true, and R is the correct explanation of A / A और R दोनों सत्य हैं, और R, A का सही स्पष्टीकरण है
+B. Both A and R are true, but R is not the correct explanation of A / A और R दोनों सत्य हैं, लेकिन R, A का सही स्पष्टीकरण नहीं है
+C. A is true, but R is false / A सत्य है, लेकिन R असत्य है
+D. A is false, but R is true / A असत्य है, लेकिन R सत्य है
+Answer: C
+
+Q.44: The Global Gender Gap Report primarily measures disparities between genders in which key areas? वैश्विक लिंग अंतराल रिपोर्ट मुख्यतः किन प्रमुख क्षेत्रों में लिंगों के बीच असमानताओं को मापती है?
+A. Politics, Economy, Health, Education / राजनीति, अर्थव्यवस्था, स्वास्थ्य, शिक्षा
+B. Income, Wealth, Land, Technology / आय, धन, भूमि, प्रौद्योगिकी
+C. Crime, Law, Justice, Security / अपराध, कानून, न्याय, सुरक्षा
+D. Environment, Climate, Water, Food / पर्यावरण, जलवायु, जल, भोजन
+Answer: A
+
+Q.45: Thang-Ta is a traditional martial dance associated with which northeastern state of India? थांग-ता एक पारंपरिक मार्शल नृत्य है जो भारत के किस पूर्वोत्तर राज्य से संबंधित है?
+A. Assam / असम
+B. Nagaland / नगालैंड
+C. Manipur / मणिपुर
+D. Tripura / त्रिपुरा
+Answer: C
+
+Q.46: Which of the following industry pairs is correctly grouped as heavy industries? निम्नलिखित में से कौन-सा उद्योग युग्म सही रूप से भारी उद्योगों के रूप में वर्गीकृत है?
+A. Sewing machines and Paint brushes / सिलाई मशीनें और पेंट ब्रश
+B. Shipbuilding and Automobile / जहाज निर्माण और ऑटोमोबाइल
+C. Electric bulbs and Fuse wires / बिजली के बल्ब और फ्यूज तार
+D. Watches and Paint brushes / घड़ियाँ और पेंट ब्रश
+Answer: B
+
+Q.47: The President is elected by an electoral college, while the Governor is _______. राष्ट्रपति का चुनाव एक निर्वाचक मंडल द्वारा किया जाता है, जबकि राज्यपाल _______ होता है।
+A. Directly elected / प्रत्यक्ष रूप से निर्वाचित
+B. Appointed by the President / राष्ट्रपति द्वारा नियुक्त
+C. Nominated by Supreme Court / सर्वोच्च न्यायालय द्वारा नामित
+D. Chosen by State Assembly / राज्य विधानसभा द्वारा चुना गया
+Answer: B
+
+Q.48: The Western Ghats are a recognized biodiversity hotspot. Which of the following is currently considered the most significant threat to its endemic species, beyond general habitat loss? पश्चिमी घाट एक मान्यता प्राप्त जैव विविधता हॉटस्पॉट है। सामान्य आवास क्षति के अलावा, निम्नलिखित में से किसे वर्तमान में इसकी स्थानिक प्रजातियों के लिए सबसे बड़ा खतरा माना जाता है?
+A. Infrastructure development projects (e.g., roads, dams, mining). / बुनियादी ढांचा विकास परियोजनाएँ (जैसे, सड़कें, बांध, खनन)।
+B. Introduction of invasive alien species. / आक्रामक विदेशी प्रजातियों का प्रवेश।
+C. Forest fires due to climate change. / जलवायु परिवर्तन के कारण जंगल में आग लगना।
+D. Human-wildlife conflict due to encroachment. / अतिक्रमण के कारण मानव-वन्यजीव संघर्ष।
+Answer: B
+
+Q.49: NISAR's orbit regime is? NISAR की कक्षा व्यवस्था क्या है?
+A. GTO / जीटीओ
+B. GEO / जियो
+C. Polar sun-sync / ध्रुवीय सूर्य-तुल्यकालन
+D. LEEO / लीओ
+Answer: C
+
+Q.50: Consider the following statements: 1. The Governor can dissolve the State Legislative Assembly. 2. The President has no such power regarding the Lok Sabha. Which of the above is/are correct? निम्नलिखित कथनों पर विचार कीजिए: 1. राज्यपाल राज्य विधान सभा को भंग कर सकता है। 2. राष्ट्रपति के पास लोकसभा के संबंध में ऐसी कोई शक्ति नहीं है। उपर्युक्त में से कौन-सा/से सही है/हैं?
+A. Only 1 / केवल 1
+B. Only 2 / केवल 2
+C. Both 1 and 2 / 1 और 2 दोनों
+D. Neither 1 nor 2 / न तो 1 और न ही 2
+Answer: A
+
+Q.51: What is the value of 4 + 44 + 444 + 4444 + 44444? 4 + 44 + 444 + 4444 + 44444 का मान क्या है?
+A. 49380
+B. 42300
+C. 41300
+D. 45000
+Answer: A
+
+Q.52: Simplify: सरल कीजिए:
+A. 2.25
+B. 2.1
+C. 2.35
+D. 2.5
+Answer: A
+
+Q.53: Evaluate the expression: व्यंजक का मान ज्ञात कीजिए:
+A. 5
+B. 3
+C. 2
+D. 0
+Answer: A
+
+Q.54: Determine the ratio of the number of students who play Football to the number of students who play Basketball in a survey of 120 students from the following table. Category Number Play Football and Basketball 25 Play Football but not Basketball 45 Play Basketball but not Football 35 Play neither sport 15 निम्नलिखित तालिका में दिए गए 120 छात्रों के सर्वेक्षण में फुटबॉल खेलने वाले छात्रों की संख्या और बास्केटबॉल खेलने वाले छात्रों की संख्या का अनुपात ज्ञात कीजिए। वर्ग संख्या फुटबॉल और बास्केटबॉल खेलें 25 फुटबॉल खेलो, बास्केटबॉल नहीं 45 बास्केटबॉल खेलो, फुटबॉल नहीं 35 दोनों में से कोई भी खेल न खेलें 15
+A. 6:7
+B. 7:5
+C. 7:6
+D. 5:7
+Answer: C
+
+Q.55: Tina and Meera started a business with ₹1,00,000 and ₹80,000 respectively. After 6 months, Meera added ₹40,000 more. Tina withdrew ₹20,000 at the same time. What is the profit-sharing ratio at the end of 1 year? टीना और मीरा ने क्रमशः ₹1,00,000 और ₹80,000 के साथ एक व्यवसाय प्रारंभ किया है। 6 माह बाद, मीरा अतिरिक्त ₹40,000 निवेश करती है। टीना उसी समय ₹20,000 निकाल लेती है। 1 वर्ष के अंत में लाभ-साझाकरण अनुपात क्या है?
+A. 9:10
+B. 5:6
+C. 7:4
+D. 2:3
+Answer: A
+
+Q.56: A invests ₹20,000, while B invests ₹30,000. A receives an additional 20% for management. The total profit is ₹60,000. What is A's share? A ने ₹20,000 का निवेश किया है, जबकि B ने ₹30,000 का निवेश किया है। A को प्रबंधन के लिए अतिरिक्त 20% मिलता है। कुल लाभ ₹60,000 है। A का भाग क्या है?
+A. ₹51,200
+B. ₹41,200
+C. ₹31,200
+D. ₹21,200
+Answer: C
+
+Q.57: A batsman's average score for a certain number of innings is 44. If he scores 132 runs in the next innings, his average becomes 48. How many innings did he play earlier? एक बल्लेबाज का निश्चित संख्या में पारियों का औसत स्कोर 44 है। यदि वह अगली पारी में 132 रन बनाता है, तो उसका औसत 48 हो जाता है। उसने पहले कितनी पारियाँ खेली थीं?
+A. 21
+B. 22
+C. 23
+D. 24
+Answer: A
+
+Q.58: The average of 13 numbers is 70. The average of the first five numbers is 60. The average of the next five numbers is 25 % higher than the average of the first five numbers. The 11th number is 6 less than the 13th number, and the 12th number is 4 greater than the 13th number. What is the average of the 11th and 12th numbers? 13 संख्याओं का औसत 70 है। पहली पाँच संख्याओं का औसत 60 है। अगली पाँच संख्याओं का औसत पहली पाँच संख्याओं के औसत से 25% अधिक है। 11वीं संख्या, 13वीं संख्या से 6 कम है, और 12वीं संख्या, 13वीं संख्या से 4 अधिक है। 11वीं और 12वीं संख्याओं का औसत क्या है?
+A. 78
+B. 77
+C. 76
+D. 74
+Answer: A
+
+Q.59: In an election, 80% of eligible voters cast their votes. Of these votes, 5% were declared invalid. If a winning candidate received 11,400 votes, which accounted for 60% of the total valid votes, what was the total number of eligible voters enrolled in that election? एक चुनाव में, 80% योग्य मतदाताओं ने अपने मत डाले हैं। इनमें से 5% मत अवैध घोषित कर दिए जाते हैं। यदि एक विजयी उम्मीदवार को 11,400 मत मिले हैं, जो कुल वैध मतों का 60% है, तो उस चुनाव में नामांकित कुल योग्य मतदाताओं की संख्या कितनी थी?
+A. 20000
+B. 22500
+C. 25000
+D. 27500
+Answer: C
+
+Q.60: The compound interest on a sum at 18 % p.a. for 1 years, compounded yearly, is ₹2 862. Find the principal. किसी धनराशि पर 18% प्रतिवर्ष की दर से 1 ½ वर्ष का चक्रवृद्धि ब्याज, जो वार्षिक रूप से संयोजित होता है, ₹2 862 है। मूलधन ज्ञात कीजिए।
+A. ₹10,000
+B. ₹8 000
+C. ₹2,000
+D. ₹4,000
+Answer: A
+
+Q.61: If the compound interest on a certain sum at 16 per annum for 3 years is ₹1270, find the simple interest on the same sum at the same rate and for the same period. यदि किसी निश्चित धनराशि पर 16⅔% प्रति वर्ष की दर से 3 वर्षों का चक्रवृद्धि ब्याज ₹1270 है, तो उसी धनराशि पर समान दर से और समान अवधि के लिए साधारण ब्याज ज्ञात कीजिए।
+A. ₹1080
+B. ₹1000
+C. ₹1500
+D. ₹2000
+Answer: A
+
+Q.62: A tea seller bought 15 kg of Darjeeling tea at ₹300 per kg and 25 kg of Assam tea at ₹240 per kg. He mixed them together. Due to a slight drop in market prices, he had to sell the entire mixture at ₹260 per kg. Calculate his total profit or loss. एक चाय विक्रेता ने 15 किलो दार्जिलिंग चाय ₹300 प्रति किलो और 25 किलो असम चाय ₹240 प्रति किलो की दर से खरीदी है। वह उन्हें एक साथ मिला देता है। बाजार मूल्य में मामूली गिरावट के कारण, उसे पूरा मिश्रण ₹260 प्रति किलो पर बेचना पड़ा। उसका कुल लाभ या हानि की गणना कीजिए।
+A. Loss of ₹100 / ₹100 की हानि
+B. Profit of ₹100 / ₹100 का लाभ
+C. Profit of ₹200 / ₹200 का लाभ
+D. Profit of ₹300 / ₹300 का लाभ
+Answer: A
+
+Q.63: An antique dealer sold three items, A, B, and C, with their selling prices in the ratio 4:5:6. He suffered a loss of 10% on item A, made a profit of 50% on item B, and broke even (no profit, no loss) on item C. What was his approximate percentage gain or loss in the overall deal? एक एंटिक डीलर तीन वस्तुएँ A, B और C बेचता है, जिनके विक्रय मूल्य का अनुपात 4:5:6 था। उसे वस्तु A पर 10% की हानि होती है, वस्तु B पर 50% का लाभ होता है, तथा वस्तु C पर न लाभ, न हानि थी। कुल सौदे में उसका अनुमानित लाभ या हानि प्रतिशत क्या था?
+A. loss of 8.88% / 8.88% की हानि
+B. profit of 8.88% / 8.88% का लाभ
+C. profit of 10.88% / 10.88% का लाभ
+D. loss of 10.88% / 10.88% की हानि
+Answer: B
+
+Q.64: A 75-liter mixture contains milk and water in the ratio 3:2. If 15 liters of this mixture are removed and replaced with 10 liters of pure milk, what is the new ratio of milk to water in the mixture? 75 लीटर के मिश्रण में दूध और पानी का अनुपात 3:2 है। यदि इस मिश्रण में से 15 लीटर निकाल दिया जाए और उसके स्थान पर 10 लीटर शुद्ध दूध डाल दिया जाए, तो मिश्रण में दूध और पानी का नया अनुपात क्या होगा?
+A. 11:7
+B. 23:12 / 23:12
+C. 17:11
+D. 19:12 / 19:12
+Answer: B
+
+Q.65: A wholesaler buys a batch of ceiling fans at a 50% markup over the factory's base cost ₹C. He then allows a 20% trade discount to the retailer. The retailer applies a 40% markup on his cost and offers a flat 10% discount to customers on the printed price. If a customer finally pays ₹18,144, what is the original base cost (₹C) of one ceiling fan from the factory? एक थोक व्यापारी फैक्ट्री की आधार लागत ₹C से 50% अधिक मूल्य पर सीलिंग फैन का एक बैच खरीदता है। फिर वह खुदरा विक्रेता को 20% व्यापार छूट देता है। खुदरा विक्रेता अपनी लागत पर 40% मूल्यवृद्धि करता है और ग्राहकों को मुद्रित मूल्य पर 10% की फ्लैट छूट प्रदान करता है। यदि कोई ग्राहक अंततः ₹18,144 का भुगतान करता है, तो फैक्ट्री से एक सीलिंग फैन की मूल आधार लागत (₹C) क्या है?
+A. ₹12,000
+B. ₹11,500
+C. ₹10,800
+D. ₹10,000
+Answer: A
+
+Q.66: A can lay railway track between two specified stations in 16 days, while B can complete the same task in 12 days. When C assists them, they manage to finish the job in just 4 days. How long would it take for C to complete the job on their own? A दो निर्दिष्ट स्टेशनों के बीच रेलवे ट्रैक 16 दिनों में बिछा सकता है, जबकि B उस कार्य को 12 दिनों में पूरा कर सकता है। जब C उनकी सहायता करता है, तो वे केवल 4 दिनों में कार्य पूरा कर लेते हैं। C को अकेले कार्य पूरा करने में कितना समय लगेगा?
+A. 8 days / 8 दिन
+B. 9 1/5 days / 9 1/5 दिन
+C. 9 3/5 days / 9 3/5 दिन
+D. 10 days / 10 दिन
+Answer: C
+
+Q.67: Three varieties of rice costing ₹40/kg, ₹50/kg, and a third unknown price are mixed in the ratio 2:3:5. If the resulting mixture is sold at ₹55/kg, making a profit of 10% on the cost price, what is the price of the third variety of rice per kg? चावल की तीन किस्मों, जिनके मूल्य ₹40/किग्रा, ₹50/किग्रा तथा एक तीसरा अज्ञात मूल्य है, को 2:3:5 के अनुपात में मिलाया जाता है। यदि परिणामी मिश्रण को ₹55/किग्रा पर बेचा जाता है, तो क्रय मूल्य पर 10% का लाभ होता है, चावल की तीसरी किस्म का प्रति किग्रा मूल्य क्या है?
+A. ₹52.50
+B. ₹57.50
+C. ₹54.00
+D. ₹62.50
+Answer: C
+
+Q.68: A can build up a wall in 8 days while B can break it in 3 days. A has worked for 4 days and then B joined to work with A for another 2 days only. In how many days will A alone build up the remaining part of the wall? A एक दीवार को 8 दिन में बना सकता है जबकि B इसे 3 दिन में तोड़ सकता है। A ने 4 दिन कार्य किया है और फिर B ने A के साथ मिलकर केवल 2 दिन अतिरिक्त कार्य किया है। A अकेले दीवार का बचा हुआ भाग कितने दिन में बना लेगा?
+A. / 7 दिन
+B. 8 days / 8 दिन
+C. 9 days / 9 दिन
+D. 5 days / 5 दिन
+Answer: A
+
+Q.69: An airplane travels a specific distance at a speed of 240 km/h over the course of 5 hours. To cover the same distance in just 1 hour, it needs to fly at a speed of: एक हवाई जहाज 5 घंटे में 240 किमी/घंटा की चाल से एक निश्चित दूरी तय करता है। उस दूरी को केवल 1 घंटे में तय करने के लिए, उसे किस चाल से उड़ना होगा?
+A. 1200 km/h / 1200 किमी/घंटा
+B. 1500 km/h / 1500 किमी/घंटा
+C. 1400 km/h / 1400 किमी/घंटा
+D. 1600 km/h / 1600 किमी/घंटा
+Answer: A
+
+Q.70: A person travels from city A to city B. If he travels at a speed of 50 km/h, he arrives 1 hour early. If he travels at a speed of 30 km/h, he arrives 1 hour late. What is the distance (in km) between city A and city B? एक व्यक्ति शहर A से शहर B तक यात्रा करता है। यदि वह 50 किमी/घंटा की चाल से यात्रा करता है, तो वह 1 घंटा पहले पहुँच जाता है। यदि वह 30 किमी/घंटा की चाल से यात्रा करता है, तो वह 1 घंटा देरी से पहुँचता है। शहर A और शहर B के बीच की दूरी (किमी में) क्या है?
+A. 150 km / 150 किमी
+B. 120 km / 120 किमी
+C. 200 km / 200 किमी
+D. 180 km / 180 किमी
+Answer: A
+
+Q.71: A ring-shaped metallic sheet has outer and inner radii 10 cm and 6 cm. What percentage of the full circle's area is the ring? एक वलय के आकार की धातु की शीट की बाह्य और आंतरिक त्रिज्याएँ 10 सेमी और 6 सेमी हैं। वलय का क्षेत्रफल पूरे वृत्त के क्षेत्रफल का कितना प्रतिशत है?
+A. 36% / 36%
+B. 48% / 48%
+C. 64% / 64%
+D. 76% / 76%
+Answer: C
+
+Q.72: A circular pond is surrounded by a path 2 m wide. If the total area (pond + path) is 616 m² and the pond area is 452.16 m², what is the radius of the pond? ( take π = 3.14 ) एक गोलाकार तालाब 2 मीटर चौड़े पथ से परिबद्ध है। यदि कुल क्षेत्रफल (तालाब + पथ) 616 वर्ग मीटर है और तालाब का क्षेत्रफल 452.16 वर्ग मीटर है, तो तालाब की त्रिज्या क्या है? ( π = 3.14 लें )
+A. 10 m / 10 मीटर
+B. 11 m / 11 मीटर
+C. 12 m / 12 मीटर
+D. 13 m / 13 मीटर
+Answer: C
+
+Q.73: The ratio of the circumferences of two circular flower beds is 3:5. If the smaller flower bed has a radius of 9 m, what is the radius of the larger flower bed? दो गोलाकार फूलों की क्यारियों की परिधियों का अनुपात 3:5 है। यदि छोटी फूलों की क्यारी की त्रिज्या 9 मीटर है, तो बड़ी फूलों की क्यारी की त्रिज्या क्या है?
+A. 15 m / 15 मीटर
+B. 17 m / 17 मीटर
+C. 19 m / 19 मीटर
+D. 21 m / 21 मीटर
+Answer: A
+
+Q.74: What is the equation of line through (0,3) with slope -1? (0,3) से होकर जाने वाली प्रवणता -1 वाली रेखा का समीकरण क्या है?
+A. y = -x + 3
+B. y = x - 3
+C. y = -x - 3
+D. y = x + 3
+Answer: A
+
+Q.75: Given x + 1/x = 5, then determine the value of x² + 1/x². यदि दिया गया है x + 1/x = 5, तो x² + 1/x² का मान ज्ञात कीजिए।
+A. 25
+B. 24
+C. 26
+D. 23
+Answer: D
+
+Q.76: Select the most appropriate synonym of the given word: BIBLIOPHILE
+A. Publisher
+B. Bookkeeper
+C. Librarian
+D. Book-lover
+Answer: D
+
+Q.77: Choose the correct meaning of idiom: Has two strings to his bow
+A. He is indecisive in crucial matters.
+B. He has two romantic interests simultaneously.
+C. He has an additional skill or option to rely on.
+D. He uses deception to achieve goals.
+Answer: C
+
+Q.78: Select the most appropriate antonym of the given word. Lachrymose
+A. Tearful
+B. Mournful
+C. Weepy
+D. Jovial
+Answer: D
+
+Q.79: Identify the misspelt word
+A. Acquiescence
+B. Bourgeoisie
+C. Consciencious
+D. Epitome
+Answer: C
+
+Q.80: Spot the correct spelling of an electron-transport protein.
+A. Cytocrome
+B. Cytocrhome
+C. Cytochrome
+D. Cytohrome
+Answer: C
+
+Q.81: Choose the correct one-word substitute for: 'A state of temporary disuse or suspension.'
+A. Intermission
+B. Recess
+C. Abeyance
+D. Dormancy
+Answer: C
+
+Q.82: Select the correct option: The analyst found the correlation to be ____ marginal to influence policy.
+A. too
+B. very
+C. so
+D. as
+Answer: A
+
+Q.83: Select the correct option: Her argument was compelling; ___, it was based on outdated data.
+A. otherwise
+B. conversely
+C. nevertheless
+D. subsequently
+Answer: C
+
+Q.84: Select the correct option: Had it not been for her timely intervention, the discussion might well have ____ into an acrimonious stalemate.
+A. evolved
+B. devolved
+C. emerged
+D. absorbed
+Answer: B
+
+Q.85: Find the part of the sentence that contains an error: The regulator's decision to postpone the implementation (1)/ was attributed partly to industry pressure (2)/ and partly due to legal ambiguity (3)/ surrounding the recent amendments. (4)
+A. (1)
+B. (2)
+C. (3)
+D. (4)
+Answer: C
+
+Q.86: Find the part of the sentence that contains an error: That there exists no recourse for citizens (1)/ if environmental violations are condoned at the ministerial level (2)/ underline a systemic erosion of (3)/ constitutional accountability. (4)
+A. (1)
+B. (2)
+C. (3)
+D. (4)
+Answer: C
+
+Q.87: Change the following from active to passive: We shall have dispatched the invitations before Friday evening.
+A. The invitations shall have dispatched before Friday evening.
+B. The invitations shall have had been dispatched before Friday evening.
+C. The invitations shall have be dispatched before Friday evening.
+D. The invitations shall have been dispatched before Friday evening.
+Answer: D
+
+Q.88: Select the sentence containing the homonym of the highlighted word: The medieval oriel window projected elegantly from the chapel wall.
+A. The priest admired the sunlight filtering through the oriel.
+B. The duke stood by the oriel gazing at the courtyard.
+C. The technician adjusted the frequency on the oriel.
+D. The stained-glass oriel was restored by artisans.
+Answer: C
+
+Q.89: Convert the sentence provided below from its passive voice structure to an active voice structure: The photos will be printed by the studio within an hour.
+A. The studio prints the photos within an hour.
+B. The studio will print the photos within an hour.
+C. The photos printed by the studio soon.
+D. The studio had printed the photos in an hour.
+Answer: B
+
+Q.90: PASSAGE (Q.90 - Q.94) Read the following passage and answer the questions based on the passage: In contemporary discourse, the debate between entrepreneurship and conventional employment has gained remarkable traction. While traditional employment offers predictability, structured growth, and a defined career trajectory, entrepreneurship appeals to those seeking autonomy, innovation, and the potential for exponential returns. However, both paths are fraught with distinct advantages and inherent uncertainties. Employment, particularly within established organizations, provides financial stability, social recognition, and institutional support. Employees are not burdened with existential risks such as capital loss or market unpredictability. Instead, they operate within frameworks of responsibility and hierarchy, where risk is absorbed at higher managerial levels. For many, this structure offers psychological comfort and a clear roadmap for progression. Conversely, entrepreneurship demands resilience, resourcefulness, and a high tolerance for ambiguity. Entrepreneurs must navigate volatile markets, regulatory complexities, and the absence of assured income—challenges often underestimated by aspirants. Yet, for those with a risk appetite and creative acumen, entrepreneurship promises a unique form of fulfillment. It allows individuals to disrupt existing paradigms, build ventures from the ground up, and possibly shape industries. Societal perceptions further complicate the dichotomy. In many cultures, steady employment is seen as the hallmark of success, while entrepreneurial endeavors are often perceived as reckless or unstable—until they succeed. This perception, however, is gradually shifting as global startup ecosystems mature and innovation becomes synonymous with progress. The real decision, therefore, lies not in which path is superior but in aligning one's temperament, values, and long-term goals with the demands of each route. Entrepreneurship may offer liberation, but it is not without sacrifice. Employment may provide security, but it can come at the cost of creative constraint. A reflective, context-aware approach—not blind aspiration— is essential for navigating this professional crossroads. According to the passage, which quality is most crucial for entrepreneurs?
+A. Obedience
+B. Resilience
+C. Delegation
+D. Conformity
+Answer: B
+
+Q.91: Why is employment often psychologically comforting, as per the passage?
+A. It allows for flexible innovation
+B. It eliminates the need for competition
+C. It provides hierarchy and reduced risk
+D. It ensures rapid promotions
+Answer: C
+
+Q.92: How does the passage describe social view towards enterpreneurship?
+A. Always supportive
+B. Unanimously dismissive
+C. Overwhelmingly negative
+D. Skeptical until proven successful
+Answer: D
+
+Q.93: What is implied by “absence of assured income” in the context of entrepreneurship?
+A. Entrepreneurs always work voluntarily
+B. No fixed salary or stable cash flow
+C. Profits are guaranteed from start
+D. Income is controlled by the government
+Answer: B
+
+Q.94: What does the word "dichotomy" in the passage most nearly mean?
+A. A shared understanding
+B. A mutual advantage
+C. A clear division between two contrasting things
+D. A repeated pattern
+Answer: C
+
+Q.95: Choose the most suitable option to replace the highlighted part of the sentence: He is looking forward to meet you soon.
+A. to meeting you soon
+B. for meeting you
+C. meeting you
+D. to have met you
+Answer: A
+
+Q.96: Choose the most suitable option to replace the highlighted part of the sentence: The judge declared the prisoner as guilty.
+A. guilty for
+B. guilty
+C. as being guilty
+D. guilty to crime
+Answer: B
+
+Q.97: A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. Ravi said, "I like this pen."
+A. Ravi said he liked that pen.
+B. Ravi said he like that pen.
+C. Ravi said he liked this pen.
+D. Ravi said he likes that pen.
+Answer: A
+
+Q.98: A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The judge said that justice must be served at any cost.
+A. "Justice should be served at any cost," said the judge.
+B. "Justice must be served at any cost," the judge said.
+C. "We serve justice at any cost," said the judge.
+D. "One must serve justice," the judge said.
+Answer: B
+
+Q.99: Rearrange the following sentences to form a coherent paragraph: 1. The rapid spread of misinformation and disinformation on social media platforms represents a major challenge to public discourse. 2. This method involves a systematic verification of facts, claims, and sources to provide a credible assessment of accuracy. 3. This phenomenon can erode public trust in news sources and undermine informed decision-making in a democratic society. 4. As a result, professional fact-checking organizations have emerged as a critical line of defense against the proliferation of false narratives.
+A. 2, 1, 4, 3
+B. 3, 1, 2, 4
+C. 1, 3, 4, 2
+D. 1, 4, 2, 3
+Answer: C
+
+Q.100: Rearrange the following sentences to form a coherent paragraph: 1. It is a process that involves the systematic and objective investigation of a subject to discover new facts or to confirm existing ones. 2. Research is a foundational pillar of academic and scientific progress. 3. This can be either theoretical, aiming to expand knowledge, or applied, seeking to solve a practical problem. 4. The findings of this investigation are then documented and peer-reviewed to ensure validity and credibility.
+A. 2, 1, 3, 4
+B. 1, 2, 4, 3
+C. 4, 3, 2, 1
+D. 3, 4, 1, 2
+Answer: A
+

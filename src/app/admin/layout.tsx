@@ -26,6 +26,7 @@ import {
   GraduationCap,
   Network,
   Globe,
+  Folder,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { supabase } from "@/lib/supabase";
@@ -53,7 +54,7 @@ const menuItems: MenuItem[] = [
   { label: "Blogs", href: "/admin/blogs", icon: Newspaper },
   { label: "Users", href: "/admin/users", icon: Users },
   { label: "Packages", href: "/admin/packages", icon: CreditCard },
-  { label: "PYQ Shift Papers", href: "/admin/papers", icon: FileSpreadsheet },
+  { label: "PYQ Folders & Papers", href: "/admin/papers", icon: Folder },
 ];
 
 export default function AdminLayout({ children }: { children: ReactNode }) {

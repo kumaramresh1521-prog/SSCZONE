@@ -1,0 +1,807 @@
+================================================================================
+SSC CGL 2025 TIER-I (HELD ON 18 SEPTEMBER 2025 SHIFT 3) - PURE ENGLISH
+Exam: SSC CGL | Year: 2025 | Total Questions: 100 | Duration: 60 Minutes
+Language: Pure English (No Hindi Translation)
+Extracted & 100% Verified from Official SSC Answer Key via SSC ZONE
+================================================================================
+
+Q1. Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. DIN, INS, NSX, SXC, ?
+A) LKA
+B) JNA
+C) GVA
+D) XCH
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q2. If 6 @ 2 = 9, 15 @ 3 = 125, then 8 @ 4 = ?
+A) 4
+B) 8
+C) 16
+D) 10
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q3. Choose the correct signs to swap. 40 ÷ 8 + 10 - 5 × 2 = 5
+A) ÷ and ×
+B) + and -
+C) ÷ and +
+D) - and ×
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q4. A is the brother of B. B is the sister of C. C is the brother of D. How is B related to D?
+A) Sister
+B) Aunt
+C) Niece
+D) Can't say
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q5. Solve: FD : KH :: QM : ?
+A) VP
+B) WT
+C) VQ
+D) UW
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q6. What comes next: 13, 16, 21, 30, 45, ?
+A) 70
+B) 66
+C) 67
+D) 68
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q7. Read the following statement carefully and identify the conclusion that follows. Statement: Rising noise pollution in urban areas is affecting children's concentration. Conclusion I: Urban children can't study well. Conclusion II: Controlling noise pollution may improve children's concentration.
+A) Only I follows
+B) Only II follows
+C) Both follow
+D) Neither follows
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q8. Identify the odd one out:
+A) 121
+B) 141
+C) 444
+D) 544
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q9. Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option. Statement: The introduction of Artificial Intelligence into healthcare systems can enhance diagnostic accuracy, but its widespread implementation may lead to ethical dilemmas in patient care. Assumptions: I. AI can improve healthcare diagnostics. II. The ethical concerns surrounding AI in healthcare are significant. III. AI will eventually replace human healthcare professionals.
+A) Only I and II are implicit
+B) Only II and III are implicit
+C) All I, II and III are implicit
+D) Only I is implicit
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q10. Read the following statement carefully and identify the conclusion that follows. Statement: All metro stations are under CCTV surveillance. Conclusions: I. Activities at metro stations are being monitored. II. No criminal activity can happen in metro stations.
+A) Only Conclusion I follows
+B) Only Conclusion II follows
+C) Both I and II follow
+D) Neither I nor II follows
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q11. Direction: Study the information carefully and answer the given questions. Eight People Tina, Raj, Dia, Viraj, Soma, Meena, Neha and Ria are living in an eight-storey building, but not necessarily in the same order. The ground floor is numbered 1 and the floor above it is numbered 2, and so on, until the topmost floor is numbered 8. Dia lives on the lowermost floor. Only three people live between Dia and Ria. Tina lives on the 4th floor. Only two people live between Tina and Raj. Only five people live between Viraj and Soma. Neha lives on an odd numbered floor. Only one person lives between Meena and Viraj. Who lives three floors below the one who lives immediate below Raj?
+A) Neha
+B) Tina
+C) Dia
+D) Raj
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q12. Read the following statement carefully and identify the conclusion that follows. Statement: No artist are athletes. Some athlete are painters. All artists are painters. Conclusions: I. Some painters are athletes. II. Some athletes are not painters.
+A) Only I follows
+B) Only II follows
+C) Both I and II follow
+D) Neither I nor II follows
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q13. Find the odd one out: Pacific, Atlantic, Indian, Arctic, Mediterranean
+A) Pacific
+B) Atlantic
+C) Mediterranean
+D) Arctic
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q14. If CLOUD is coded as BKNTC, how is RAINY written?
+A) QZHMX
+B) QZHLX
+C) QZHLW
+D) QZHMV
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q15. In each of the following questions, a specific alphabetical pattern is applied to the first set of letters to form the second. Apply the same logic to find the missing term that relates to the third set in the same way. Choose the correct option from the given alternatives. AEFJ : KOPT :: ? : QUVZ
+A) HKQL
+B) GLKP
+C) GKLP
+D) HLKP
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q16. TEACHER is to CLASSROOM as SURGEON is to:
+A) PATIENT
+B) SCALPEL
+C) OPERATION
+D) OT (Operation Theatre)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q17. What is the sum of the first 10 terms of the series? 1, 3, 5, 7, ...?
+A) 90
+B) 100
+C) 110
+D) 120
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q18. What comes next? BYD, DWF, FUH, ?
+A) HSJ
+B) IQK
+C) HQJ
+D) JQL
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q19. Find the odd one out from the given alternatives:
+A) Troposphere
+B) Stratosphere
+C) Hydrosphere
+D) Mesosphere
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q20. Find the odd one out from the given alternatives:
+A) Retina
+B) Cornea
+C) Iris
+D) Femur
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q21. In a certain code, NIGHT is written as OHJIS How will LIGHT be written?
+A) MHJIS
+B) KJHIS
+C) LIHIS
+D) MIHIS
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q22. Pointing to a woman, John says, "She is the wife of my uncle's only son." How is the woman related to John?
+A) Sister
+B) Cousin
+C) Sister-in-law
+D) Niece
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q23. If × = +, + = -, - = ×; then 4 × 5 + 2 - 3 = ?
+A) 3
+B) 7
+C) 35
+D) 29
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q24. If the sum of 13 and 39 is multiplied by 2, what is the result?
+A) 100
+B) 104
+C) 106
+D) 110
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q25. The series given below contains a sequence of numbers. Accordingly identify the incorrect combination. 25, 32, 46, 67, 97
+A) 32
+B) 46
+C) 97
+D) 67
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q26. What is the contribution of Vikram Sarabhai Space Centre (VSSC) to India's space program?
+A) Launch site for ISRO missions
+B) Designs and builds launch vehicles
+C) Trains Indian astronauts
+D) Controls ISRO satellites
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q27. The "Atal Innovation Mission (AIM)" is a flagship initiative to promote innovation and entrepreneurship in India. Which of the following is a key component or program under AIM?
+A) Skill India Centers
+B) Startup India Seed Fund Scheme
+C) Atal Tinkering Labs (ATLs)
+D) Pradhan Mantri Kaushal Vikas Yojana (PMKVY)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q28. The integration of the princely states into the Indian Union after 1947 involved a complex interplay of political negotiation, popular movements, and, at times, coercion. Which of the following factors most significantly undermined the initial aspirations of some princely rulers to maintain independent or autonomous status?
+A) The overwhelming military superiority of the newly formed Pakistani state, compelling the rulers to seek protection within India.
+B) The consistent and unwavering support provided by the British government to the princely states seeking independence.
+C) The strong undercurrent of popular will within the princely states favoring accession to India, often expressed through organized movements and protests.
+D) The economic prosperity and stability offered by remaining independent, making integration into the financially strained Indian Union unattractive.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q29. The Bharatiya Nyaya Sanhita (BNS) was introduced as part of:
+A) The effort to codify personal laws.
+B) The effort to modernize and decolonize India's criminal justice system.
+C) The new taxation policy.
+D) A trade agreement.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q30. Digboi, Moran, Sivasagar, and Naharkatiya oil fields are located in which of the following regions of India?
+A) Aravalli and Delhi Ridge
+B) Deccan Plateau
+C) North-Eastern India
+D) Western Coastal Plains
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q31. The term 'svaravalis' refers to what in the context of Indian classical music?
+A) A specific type of raga
+B) A melody composed using the seven notes of the scale
+C) Ornamentation and embellishment of a raga
+D) A rhythmic cycle used in carnatic music
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q32. Consider the following physiographic features. 1. Tors 2. Spurs 3. Block Mountains Which of the feature/features given above is/are found in the peninsular plateau of India?
+A) 1 and 3 only
+B) 3 only
+C) 2 and 3 only
+D) 1, 2, and 3
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q33. Which of the following building materials were primarily used in constructing Purana Qila?
+A) Granite and lime plaster
+B) Concrete and red bricks
+C) Sandstone and marble
+D) Wood and terracotta
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q34. During the Solung festival celebrated by the Adi tribe of Arunachal Pradesh, which traditional drink is shared to promote social bonding?
+A) Soma
+B) Apong
+C) Thukpa
+D) Chhang
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q35. The drainage system at Mohenjodaro was notable because each house was connected to:
+A) An underground water tank
+B) A central pillar for support
+C) A covered street drain
+D) A rooftop reservoir
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q36. Which of the following statements is correct regarding the Golden Raid and card system in Kabaddi?
+A) A team is allowed two Golden Raids before the result is decided.
+B) A Green Card leads to a 2-minute suspension from the game.
+C) A fresh toss is taken if the match is tied even after 5-5 raids.
+D) A Red Card results in a warning with no match suspension.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q37. What was a major challenge for agriculture in the Chola kingdom apart from rocky land?
+A) Lack of seeds
+B) Lack of labour
+C) Irrigation water
+D) Pest infestation
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q38. Consider the following statements about recent National Basketball Championships: 1) Tamil Nadu won the 74th Senior Men's title; Punjab and Indian Railways were runner-up and second runner- up. 2) Rajasthan won the 39th Youth Boys, and Karnataka won the Youth Girls tournament. Which of the statements is/are correct?
+A) Only 1 is Correct
+B) Only 2 is Correct
+C) 1 and 2 are Correct
+D) Neither 1 nor 2 is Correct
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q39. The "Kaladan Multimodal Transit Transport Project" links India with which country?
+A) China
+B) Myanmar
+C) Bangladesh
+D) Nepal
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q40. 'The Namesake' is a famous novel by which Indian-American author?
+A) Jhumpa Lahiri
+B) Arundhati Roy
+C) Chitra Banerjee
+D) Kiran Desai
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q41. Which of the following statements is correct regarding population stabilization?
+A) Stabilization occurs when birth rate exceeds death rate
+B) Stabilization is reached when fertility rate drops to zero
+C) Stabilization occurs when birth and death rates are nearly equal
+D) Stabilization refers to doubling of population every decade
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q42. Ajit Doval is known as a key figure in India's strategic affairs, remains the National Security Advisor (NSA). In light of his ongoing tenure and recent developments, which of the following statements best reflects his current status as of July 2025?
+A) Ajit Doval's current tenure as NSA, which began in June 2025, is his first independent term after serving as Principal Advisor on National Security for a decade.
+B) He holds the ex-officio rank equivalent to a Cabinet Secretary, with his appointment typically for a fixed five-year term irrespective of the government's tenure.
+C) Having been reappointed for a fresh term in June 2024, his current position is co-terminus with the Prime Minister's term and he holds the rank of a Cabinet Minister.
+D) As NSA, his primary role is to chair the National Security Council (NSC), where he holds voting power on all key security policy decisions, including those related to defence procurement.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q43. Which of the following combinations of athletics winners at the 2025 National Games is entirely correct?
+A) Parul Chaudhary - 3000m steeplechase; Jyothi Yarraji - 100m hurdles
+B) Lovlina - 100m hurdles; Amoj Jacob - Shot Put
+C) Swapnil Kusale - Boxing; Sarabjot - Sprint
+D) Amoj Jacob - Wrestling; Jyothi - Relay
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q44. Under Article 258A, what power is granted to States?
+A) States need Presidential assent to assign functions to Union
+B) Governor can entrust Union tasks to State Legislature with President's consent
+C) State Legislature can entrust Union work to State officers with Centre's approval
+D) State Government can, with Union's consent, assign Union functions to its officers
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q45. Read the following statements about the photoelectric effect: 1. The kinetic energy of emitted photoelectrons increases with increasing intensity of incident light. 2. The photoelectric effect demonstrates the particle nature of light. 3. There is a threshold frequency below which no photoemission occurs, regardless of light intensity. Which of the above statements are correct?
+A) 1 and 2 only
+B) 2 and 3 only
+C) 1 and 3 only
+D) 1, 2 and 3
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q46. Fill in the Blank: Ghoomar was originally performed to worship ____.
+A) Shiva
+B) Saraswati
+C) Krishna
+D) Ganesha
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q47. Which new element was incorporated in the 2023 edition of the Logistics Performance Index (LPI)?
+A) It evaluates only land-based transport systems
+B) It ranks countries based on tourism potential
+C) It includes indicators measuring trade speed using big data
+D) It excludes lower-income income economies from the analysis
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q48. Which institute has been studying the Pensilungpa Glacier in Zanskar, Ladakh, to monitor its retreat and mass balance?
+A) Indian National Centre for Ocean Information Services (INCOIS)
+B) Wadia Institute of Himalayan Geology (WIHG)
+C) Central Marine Fisheries Research Institute (CMFRI)
+D) Zoological Survey of India (ZSI)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q49. Earth's atmosphere reaches what height approximately(Kármán line )?
+A) 100 km
+B) 1000 km
+C) 10,000 km
+D) 100,000 km
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q50. Consider the following statements: 1. Article 300 allows legal suits against State Governments. 2. The term 'Government of India' is a legal entity under Article 300. Which of the above is/are correct?
+A) Only 1
+B) Only 2
+C) Both 1 and 2
+D) Neither 1 nor 2
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q51. Solve: [Equation omitted in source official exam PDF]
+A) 7.75
+B) 8.75
+C) 9.75
+D) 10.75
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q52. Solve: [Equation omitted in source official exam PDF]
+A) 3.5
+B) 4.5
+C) 6.5
+D) 7.5
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q53. If 40% of A = 0.5 of B = of C, then what is A: B: C?
+A) 5 : 4 : 2
+B) 10 : 8 : 5
+C) 5 : 4 : 8
+D) 5 : 10 : 20
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q54. Two containers of equal capacity filled with milk and water. The first contains milk and water in the ratio 2 : 3, and the second in the ratio 3 : 2. The mixtures are then combined. What is the ratio of milk to water in the resulting mixture?
+A) 1:1
+B) 2:3
+C) 3:2
+D) 5:5
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q55. A pair of shoes is listed at ₹ 800. After two successive discounts, it is sold for ₹ 612. If the first discount offered was 10%, what was the second discount percentage?
+A) 12%
+B) 14%
+C) 15%
+D) 18%
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q56. A retailer marked a product 60% above its cost price. He provided two successive discounts of 25% and 10%. If he earned a profit of ₹160, what was the cost price of the product?
+A) ₹2000
+B) ₹2500
+C) ₹1080
+D) ₹1000
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q57. If(x + = 7), find the value of x³ +
+A) 256
+B) 301
+C) 352
+D) 298
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q58. An educational fund of ₹6,00,000 earns simple interest at 9% per annum. This annual interest is used to grant three scholarships. If the first and third scholarships are ₹18,000 and ₹22,000 respectively, what is the value of the second scholarship?
+A) ₹14,000
+B) ₹16,000
+C) ₹18,000
+D) ₹20,000
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q59. Suppose ₹X is invested, and after 2 years at 5% simple interest, it yields ₹Y interest. If ₹Y is then invested for 2 years at 5% simple interest, it yields ₹Z interest. Which of the following is true?
+A) Y = X + Z
+B) Y² = XZ
+C) X = Y + Z
+D) X² = Y + Z
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q60. An airplane flying at a height of 300 m notices the angles of depression to two boats located on opposite sides as 45° and 30°. Find the distance between the two boats.
+A) 300(√3 - 1) m
+B) 300√3 m
+C) 300(1 + ) m
+D) 300(√3 + 1) m
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q61. A statue that is 1.6 meters in height is positioned on top of a pedestal. From a location on the ground, the angle of elevation to the top of the statue measures 60 degrees, while the angle of elevation to the top of the pedestal from the same point is 45 degrees. Determine the height of the pedestal.
+A) 0.8(√3 – 1) m
+B) 1.6(√3 – 1) m
+C) 0.8(√3 + 1) m
+D) 1.6(√3 + 1) m
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q62. The inner and outer radius of a hollow hemispherical shell are 7 cm and 14 cm respectively. Find the approximate volume of the metal used.
+A) 5987.25 cm³
+B) 5026.09 cm³
+C) 4500.8 cm³
+D) 5500 cm³
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q63. A right circular cone is divided into two sections by a plane that is parallel to the base, with the volumes of the frustum and the smaller cone having a ratio of 7:1. Determine the ratio of their heights.
+A) 1:1
+B) 1:7
+C) 5:1
+D) 6:1
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q64. If the side of a regular hexagon is doubled, what happens to its area?
+A) Doubled
+B) Tripled
+C) Quadrupled
+D) Increases 6 times
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q65. A cylindrical storage container has a base radius of 3 cm. It is designed with sections whose heights form an arithmetic progression, starting from 2 cm for the bottom section and reaching 10 cm for the topmost section, covering a total of 5 sections. What is the total volume of the container? (Use π=3.14)
+A) 753.6 cm³
+B) 847.8 cm³
+C) 942.0 cm³
+D) 1130.4 cm³
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q66. Find the slope of the line 7x + 4y = 8.
+A) -7/4
+B) 7/4
+C) -4/7
+D) 4/7
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q67. What is the total sum of the exterior angles of any polygon, one at each vertex?
+A) 180°
+B) 360°
+C) Depends on the number of sides
+D) 540°
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q68. In triangle ABC, medians AD, BE, and CF intersect at the Centroid G. If the area of triangle ABC is 60 cm², what is the area of triangle GBC?
+A) 10 cm²
+B) 15 cm²
+C) 20 cm²
+D) 30 cm²
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q69. Given, , then what is the value of x?
+A) 3
+B) 4
+C) 5
+D) 2
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q70. Two circles have radii in the ratio 2 : 1. The length of a direct common tangent is 8 cm, and the distance between their centers is 10 cm. What is the radius of the smaller circle?
+A) 3 cm
+B) 4 cm
+C) 5 cm
+D) 6 cm
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q71. In a circle having a radius 10 cm, a chord is 6 cm away from the center. Find the length of the chord.
+A) 16 cm
+B) 12 cm
+C) 14 cm
+D) 18 cm
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q72. If tanA + cotA = 4 and tanA · cotA = 1, find tan²A + sec²A.
+A) 14 + 8√3
+B) 15 + 8√3
+C) 16 + 6√2
+D) 13 + 4√3
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q73. If sin A = 3/5, what is cosA? (for acute angle A)
+A) 3/4
+B) 4/5
+C) 5/4
+D) 3/5
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q74. Simplify: (0.25³ + 0.05³) ÷ (0.5³ + 0.1³)
+A) 0.25
+B) 0.125
+C) 0.5
+D) 0.75
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q75. Find the value of (0.05³ + 0.005³) ÷ (0.25³ + 0.025³) (0.05³ + 0.005³) ÷ (0.25³ + 0.025³)
+A) 1/5
+B) 1/25
+C) 1/125
+D) 1/625
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q76. Select the most appropriate synonym of the given word: COMPLAISANT
+A) Insecure
+B) Anxious
+C) Alert
+D) Submissive
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q77. Select the most appropriate antonym of the given word. Opprobrium
+A) Disgrace
+B) Contempt
+C) Honor
+D) Censure
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q78. Choose the correct meaning of idiom: The sword of Damocles
+A) A pleasant illusion
+B) A constant threat hanging over someone
+C) A royal invitation
+D) A wise judgment
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q79. Choose the correct meaning of idiom: Keeps a good table
+A) Serves generous and high-quality meals
+B) Maintains a disciplined home
+C) Follows religious rules strictly
+D) Provides food to the poor regularly
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q80. Which is the correct spelling of a word meaning 'clever or skillful'?
+A) Adept
+B) Adapt
+C) Addept
+D) Adeptt
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q81. Choose the correct one-word substitution for: 'One who lives entirely for pleasure'.
+A) Hermit
+B) Reveler
+C) Glutton
+D) Epicure
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q82. Choose the correct one-word substitution for: 'A person who believes in fate or destiny'.
+A) Dreamer
+B) Realist
+C) Idealist
+D) Fatalist
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q83. Select the appropriate word form: The policy's lack of clarity led to widespread ____.
+A) confuse
+B) confusing
+C) confusion
+D) confused
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q84. Select the correct option: She arrived at the interview ten minutes early, ___ showed professionalism.
+A) what
+B) which
+C) that
+D) this
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q85. Find the part of the sentence that contains an error: The CEO demanded that the report is submitted (1)/ to the board (2)/ not later than Wednesday afternoon (3)/ for immediate evaluation. (4)/
+A) (1)
+B) (2)
+C) (3)
+D) (4)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q86. Find the part of the sentence that contains an error: No sooner had the proposal been circulated (1)/ that objections were raised (2)/ regarding its feasibility and financial implications (3)/ across all departments. (4)
+A) (1)
+B) (2)
+C) (3)
+D) (4)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q87. Change the following from active to passive: They feed the animals twice a day.
+A) The animals are fed twice a day.
+B) The animals were fed twice a day.
+C) The animals are being fed twice a day.
+D) The animals have been fed twice a day.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q88. Select the sentence containing the homonym of the highlighted word: The cleric wore a silk amice over his alb during the liturgy.
+A) The altar server retrieved the amice from the vestry.
+B) The novelist described her protagonist's scarf as an amice.
+C) The bishop adjusted the amice before the blessing.
+D) The amice was embroidered with gold thread.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q89. Convert the sentence provided below from its passive voice structure to an active voice structure: The draft is understood to have been reviewed by the legal department last week.
+A) The legal department is understood to have reviewed the draft last week.
+B) The draft was reviewed last week, as is understood.
+C) It was understood the legal team is reviewing the draft.
+D) The draft understood itself to be reviewed.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q90. Choose the most suitable option to replace the highlighted part of the sentence: He is having a car for five years.
+A) has
+B) had
+C) has had
+D) is having
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q91. Choose the most suitable option to replace the highlighted part of the sentence: He worked very hard lest he may fail.
+A) in order that he does not fail
+B) for not failing
+C) lest he should fail
+D) so that he did not fail
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q92. PASSAGE (Q.92 - Q.96) Read the following passage and answer the questions based on the passage : In the tapestry of human civilization, communication functions as the warp thread—a foundational axis around which all societal patterns are woven. Far from being a mere conduit of information, communication embodies the dynamic interplay of perception, cognition, intention, and empathy. The profound necessity of communication arises not solely from the need to disseminate knowledge or coordinate actions, but from the imperative to construct meaning, cultivate understanding, and negotiate the complex terrain of human relationships. Historically, communication has been the catalytic force behind societal transformation—from the oral traditions that preserved mythological cosmologies to the written word that enabled legal systems and codified morality. The printing press, the telegraph, and now digital media are not just technological milestones; they are paradigmatic shifts in the communicative capacity of humankind. Each advancement has not only expanded the velocity and reach of messages but has also redefined the epistemological contours of truth, authority, and discourse. At the interpersonal level, communication is far from unidirectional. It encompasses verbal, non-verbal, and paralinguistic dimensions that function in concert to convey nuance and intention. Eye contact, silence, body posture, and even prosody become carriers of latent meaning—often transcending the spoken word. The failure to decode or acknowledge these layers frequently leads to misapprehension, conflict, or alienation. Thus, effective communication is not merely the transmission of speech, but the art of calibrated expression and attentive reception. In professional and organizational contexts, the strategic deployment of communication is pivotal. It determines leadership efficacy, influences team cohesion, and governs decision-making processes. Hierarchical structures often obfuscate open communication, resulting in informational asymmetries and the erosion of institutional trust. In contrast, transparent, dialogic, and inclusive communication frameworks nurture a culture of accountability and innovation. Cultural semiotics also shape communication, embedding within language a constellation of values, assumptions, and power dynamics. What is deemed assertive in one cultural matrix may be interpreted as aggressive in another. Consequently, intercultural communication necessitates a heightened awareness of contextual sensitivity, linguistic pluralism, and implicit biases. In an era marked by algorithmic echo chambers and hyper-mediated realities, the ethical imperative of responsible communication becomes paramount. The virality of misinformation, the commodification of attention, and the erosion of discourse norms threaten the democratic fabric of societies. Hence, communicative competence today must be coupled with critical media literacy, epistemic humility, and ethical discernment. Ultimately, communication is not ancillary to human existence—it is constitutive of it. To communicate is to assert presence, to co-create reality, and to engage in the continuous reconstitution of the social world. In its highest form, communication becomes a moral act: a commitment to understanding, mutuality, and the transcendence of solipsism. Which of the following best encapsulates the primary thesis of the passage?
+A) Communication is a tool for fast information delivery.
+B) It is an act of linguistic persuasion.
+C) Communication is foundational to constructing shared human realities.
+D) It functions primarily as a cultural symbol across civilizations.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q93. In the context of intercultural communication, what is implied by the phrase “constellation of values”?
+A) Cultures are astronomically defined.
+B) Values are isolated and static in different cultures.
+C) Communication patterns are random across cultures.
+D) Communication carries embedded assumptions and norms shaped by culture.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q94. According to the passage, what role do non-verbal cues primarily serve in interpersonal communication?
+A) They replace verbal communication entirely.
+B) They act as secondary embellishments.
+C) They convey subtle or latent meanings often missed by verbal speech.
+D) They are irrelevant in professional contexts.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q95. What does the passage suggest is the consequence of informational asymmetry within hierarchical institutions?
+A) Increased productivity due to streamlined authority.
+B) Erosion of institutional trust and communication breakdown.
+C) Faster decision-making due to lack of dissent.
+D) Decentralization of organizational roles.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q96. The phrase "epistemic humility" in the passage most likely refers to which of the following?
+A) Reluctance to speak in public discourse.
+B) Acceptance of one's cultural superiority.
+C) Awareness of the limits of one's knowledge in communicative contexts.
+D) Dependence on traditional forms of communication.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q97. Select the correct option for the Direct Speech conversion of the sentence below. He remarked that the sculpture would have commanded greater gravitas had the pedestal been proportionally austere.
+A) He said, "The sculpture would have commanded greater gravitas had the pedestal been proportionally austere."
+B) He said, "If the pedestal is proportionally austere, the sculpture commands greater gravitas."
+C) He said, "The sculpture will command greater gravitas if the pedestal had been austere."
+D) He said, "Had the pedestal been austere, the sculpture must have commanded greater gravitas."
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q98. A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. She said, "Why did you lie to me?"
+A) She asked why I lied to her.
+B) She asked why I had lied to her.
+C) She asked why had I lied to her.
+D) She asked why did I lie to her.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q99. Rearrange the following sentences to form a meaningful passage: 1. Machine learning models require large datasets to train. 2. Data preprocessing ensures that the input is clean and formatted correctly. 3. The model is tested to evaluate its accuracy. 4. Once trained, the model can be deployed for real-world applications.
+A) 2-1-3-4
+B) 3-1-2-4
+C) 1-2-3-4
+D) 4-3-2-1
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q100. Rearrange the following sentences in correct order to make a logical passage. 1. The first step is to recognize unhealthy patterns. 2. Breaking bad habits requires discipline and self-awareness. 3. Seeking support from friends or professionals can be helpful. 4. Consistency in applying new behaviors is key to lasting change.
+A) 2-1-3-4
+B) 2-4-1-3
+C) 3-4-2-1
+D) 2-3-1-4
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+

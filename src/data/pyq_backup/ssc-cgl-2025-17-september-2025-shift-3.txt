@@ -1,0 +1,807 @@
+================================================================================
+SSC CGL 2025 TIER-I (HELD ON 17 SEPTEMBER 2025 SHIFT 3) - PURE ENGLISH
+Exam: SSC CGL | Year: 2025 | Total Questions: 100 | Duration: 60 Minutes
+Language: Pure English (No Hindi Translation)
+Extracted & 100% Verified from Official SSC Answer Key via SSC ZONE
+================================================================================
+
+Q1. Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. MNO, JKL, GHI, DEF, ?
+A) ASD
+B) CGF
+C) ABC
+D) JHB
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q2. Choose the address that is the same as the one given below. 10, Rani Ghat Road, Lucknow, Uttar Pradesh - 226003
+A) 10, Rani Ghat Road, Lucknow, Delhi - 226003
+B) 10, Rani Ghat Road, Lucknow, Rajasthan - 226003
+C) 10, Rani Ghat Road, Lucknow, Uttar Pradesh- 226003
+D) 10, Rani Ghat Road, Lucknow, Bihar - 226003
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q3. Choose the address that is the same as the one given below. Villa No. 204, Lake View Estate,Banjara Hills, Hyderabad,Telangana - 500034
+A) Villa No. 204, Lake View Estate,Banjara Hills, Hyderabad,Telangana - 500034
+B) Villa 204, Lakeview Estate, Banjara Hills, Hyderabad, Telangana - 500034
+C) Villa No. 204, Lake View Estates, Banjara Hills, Hyderabad, Telangana - 500034
+D) Villa No. 240, Lake View Estate, Banjara Hills, Hyderabad, Telangana - 500034
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q4. Consider the following statement and choose the option that follows. Problem: Frequent breakdown of ATM machines in remote areas. Course of: Action I. Banks should deploy mobile ATMs in these areas. Action II. Banks should shut down ATMs that face regular issues.
+A) Only I follows
+B) Only II follows
+C) Both follows
+D) Neither follows
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q5. If 3 @ 2 = 7 6 @ 3=21 8 @ 2=22 Then 5@4=?
+A) 21
+B) 15
+C) 30
+D) 20
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q6. If 'P' denotes 'addition', 'D' denotes 'subtraction', 'S' denotes 'multiplication', and 'V' denotes 'division', then what will be the value of the following expression? (48 V 8 P 25 D 6 S 4 P 3) D (25 V 5 S 3 D 4 S 3)
+A) 4
+B) 5
+C) 6
+D) 7
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q7. The given statements are followed by two conclusions. Find out which conclusion is TRUE based on the given statements. Statements: S > T = U, V ≥ W < T, O = S = P, W > Q > R Conclusions: I. T = O II. T > O
+A) Only conclusion I is true
+B) Only conclusion II is true
+C) Both conclusion I and II are true
+D) Neither conclusion I nor II is true
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q8. P is the son of Q. Q is the brother of R. R is the son of S. How is P related to S?
+A) Son
+B) Nephew
+C) Grandson
+D) Uncle
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q9. Complete the series: 1331, 10648, 35937, 85184, ?
+A) 15478
+B) 189384
+C) 166375
+D) 136789
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q10. Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option. Statement: The Directive Principles of State Policy (DPSPs) are non-justiciable in nature, meaning they cannot be enforced by the courts. However, they serve as guidelines for the government to formulate policies that promote social justice, economic welfare, and the overall well-being of the citizens. Assumptions: I. The DPSPs serve as instructions to the government to create policies aimed at promoting welfare. II. Since the DPSPs are not enforceable by courts, they have limited significance in real governance. III. The incorporation of DPSPs in the Constitution reflects the importance of social justice and welfare in Indian governance.
+A) Only I and II are implicit
+B) Only I and III are implicit
+C) Only I is implicit
+D) All I, II, and III are implicit
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q11. Read the following statement carefully and identify the conclusion that follows. Statement: The government has increased import duty on luxury cars. Conclusions: I. Imported luxury cars will become more expensive. II. Local car manufacturers will stop making budget cars.
+A) Only Conclusion I follows
+B) Only Conclusion II follows
+C) Both I and II follow
+D) Neither I nor II follows
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q12. Read the following statement carefully and identify the conclusion that follows. Statement: Attendance in public libraries has increased in recent years. Conclusions: I. People are regaining interest in reading. II. Digital platforms have become less popular.
+A) Only Conclusion I follows
+B) Only Conclusion II follows
+C) Both I and II follow
+D) Neither I nor II follows
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q13. Find the option that best completes the analogy. AB : IJ :: EF : ?
+A) MN
+B) OP
+C) QR
+D) KL
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q14. If "PATNA" is written as "ANTAP", how is "RAJASTHAN" written?
+A) NAHSTAJAR
+B) NAHTSAJAR
+C) NAHTSRAJA
+D) NAHTSAJRA
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q15. Find the odd one out from the given alternatives:
+A) National Park
+B) Biosphere Reserve
+C) Sanctuary
+D) Census
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q16. What comes next? RST, STU, TUV, UVW, VWX, WXY, XYZ, YZA, ?
+A) ZAB
+B) RST
+C) ABC
+D) ACD
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q17. A train 180 m long passes a point in 12 s. Find the speed of the train.
+A) 45 km/h
+B) 54 km/h
+C) 60 km/h
+D) 72 km/h
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q18. If 4 & 4 = 32 and 5 & 5 = 50, what 6 & 6 is?
+A) 72
+B) 64
+C) 84
+D) 76
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q19. If in a certain code 'TRUTH' is written as 'UQSVI', then how will 'FALSE' be written?
+A) GXMTF
+B) GZJUF
+C) GPLTF
+D) GQLTF
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q20. If 6 machines complete a task in 10 days, how many days for 15 machines at same rate?
+A) 4
+B) 6
+C) 5
+D) 8
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q21. If 8 # 2 = 65 and 7 # 3 = 55, then 6 # 5 = ?
+A) 35
+B) 44
+C) 58
+D) 69
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q22. Introducing a woman, Jay said, "She is the daughter of the only child of my grandfather." How is the woman related to Jay?
+A) Aunt
+B) Sister
+C) Niece
+D) Cousin
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q23. If '+' means '×', '×' means '-', '-' means '÷', then 10 – 5 + 3 × 2 = ?
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q24. Find the next number in the series:3, 7, 15, 31, 63, ?
+A) 127
+B) 125
+C) 126
+D) 129
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q25. The series given below contains a sequence of numbers. Accordingly identify the incorrect combination. 25, 29, 37, 53, 87
+A) 29
+B) 37
+C) 53
+D) 87
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q26. Which of the following statements about Mumbai's architectural heritage is/are correct? 1. Victorian Gothic buildings in Mumbai reflect colonial-era architecture with Neo-Gothic elements. 2. Art Deco buildings in Mumbai were part of the 19th-century colonial urban development. 3. The Oval Maidan distinctly separates the Victorian Gothic and Art Deco architectural styles.
+A) Only 1 and 2 are correct
+B) Only 2 and 3 are correct
+C) Only 1 and 3 are correct
+D) All 1, 2, and 3 are correct
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q27. Fill in the blank: The hornbill bird, after which the festival is named, symbolizes boldness and _______ in Naga folklore.
+A) wisdom
+B) prosperity
+C) grandeur
+D) peace
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q28. Which one of the following pairs is correctly matched in accordance with Gupta's administration (Officer-Stated Role)?
+A) Dhruvadhibaranika -Treasurer
+B) Bhandagaradhikrita-Chief of Police
+C) Talavataks-Village Accountant
+D) Utkhetayita-Land-Survey Officer
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q29. Which classical musical treatise, composed in the 13th century CE by Sharangadeva in Maharashtra, is considered a foundational text in Indian musicology?
+A) Natya Shastra
+B) Sangeet Sudha
+C) Sangeet Ratnakara
+D) Abhinaya Darpana
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q30. When was the Amateur Athletics Federation of India (AAFI) established?
+A) 1936
+B) 1946
+C) 1956
+D) 1966
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q31. Fill in the blank: After defeating the Mughal emperor, _____ declared himself the ruler and founded the Second Afghan Empire.
+A) Humayun
+B) Sher Shah Suri
+C) Bahlul Lodi
+D) Sikandar Lodi
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q32. What was the primary objective of the Ring-Fencing Policy adopted by the British in India during the 18th century?
+A) To expand British territory by annexing Indian states
+B) To economically exploit coastal trading companies
+C) To create buffer states to defend British territories
+D) To impose direct rule over all princely territories
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q33. Which of the following statements about India's boxing medals at the 2000 Sydney Olympics is correct?
+A) India did not win any boxing medals at Sydney 2000.
+B) India won multiple boxing medals at Sydney 2000.
+C) Karnam Malleswari won a boxing bronze medal at Sydney 2000.
+D) India won its first Olympic boxing medal at Sydney 2000.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q34. What was the strategic focus of the 10th India-Sri Lanka Mitra Shakti exercise in August 2024?
+A) Maritime piracy response and naval drills
+B) NATO-style warfare in desert terrain
+C) Joint counter-insurgency in semi-urban zones under UN mandate
+D) Cyber defence and digital warfare simulations
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q35. Who authored 'The White Tiger', winner of the 2008 Man Booker Prize?
+A) Aravind Adiga
+B) Rohinton Mistry
+C) Arundhati Roy
+D) Vikram Seth
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q36. Fill in the blanks: The Indian Olympic Association (IOA) was officially formed in ______, with Sir Dorabji Tata as its founding President and Dr. A.G. Noehren as Secretary.
+A) 1920
+B) 1922
+C) 1930
+D) 1927
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q37. Which of the following statements regarding the 56th National Kho Kho Championship 2023-24 is/are correct? 1.) Maharashtra won both the men's and women's titles, becoming overall champions. 2.) The championship matches were held at Delhi's Indira Gandhi Indoor Stadium and Karnail Singh Stadium.
+A) Only 1 is correct
+B) Only 2 is correct
+C) Both 1 and 2 are correct
+D) Neither 1 nor 2 is correct
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q38. By which Constitutional Amendment was education transferred to the Concurrent List?
+A) 42nd
+B) 24th
+C) 44th
+D) 61st
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q39. Read the below statements about transpiration: 1. Transpiration is highest in dry and windy conditions. 2. It helps in the ascent of sap through cohesion-tension. 3. Transpiration always results in wilting. Which of the above statements are correct?
+A) Only 1 and 2 are correct
+B) Only 1 and 3 are correct
+C) Only 2 and 3 are correct
+D) 1, 2 and 3 are correct
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q40. Which major constitutional feature was first introduced by the Government of India Act, 1935 and later adopted in the Indian Constitution?
+A) Fundamental Duties
+B) Federal structure with Provincial Autonomy
+C) Parliamentary Sovereignty
+D) Universal Adult Franchise
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q41. Fill in the Blank: Tippani dance uses _______ tools to pound the floor.
+A) Metal rods
+B) Wooden sticks
+C) Bamboo poles
+D) Stones
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q42. Which Swiss-based business school is known for publishing the annual World Competitiveness Index?
+A) University of Geneva School
+B) IMD Business School
+C) ETH Zurich Institute
+D) University of St. Gallen
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q43. If the price of a product goes up by 10% and, as a result, the quantity demanded falls by 20%, how would you classify the demand?
+A) Demand is elastic (elasticity greater than 1)
+B) Demand is inelastic (elasticity less than 1)
+C) Demand is unitary elastic (elasticity equals 1)
+D) Demand is perfectly elastic (elasticity is infinite)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q44. The Mahalanobis Model was used in which plan?
+A) First
+B) Second
+C) Fourth
+D) Fifth
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q45. Which of the following initiatives launched in 2025 aims to combine mangrove regeneration with rural employment under the MGNREGS platform?
+A) Mission Mangrove Mitra
+B) Sagar Suraksha Yojana
+C) EcoJobs for Coasts
+D) Blue Belt Programme
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q46. The BOP crisis of 1991 involved a shortage of?
+A) Water
+B) Electricity
+C) Foreign exchange
+D) Labour
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q47. Read the following statements carefully and choose the correct option regarding Assertion (A) and Reason (R). Assertion (A): India had to approach the IMF and World Bank in 1991 for a bailout loan. Reason (R): Foreign exchange reserves had declined to the point that they could barely finance two weeks of imports.
+A) Both A and R are true and R is the correct explanation of A.
+B) Both A and R are true but R is not the correct explanation of A.
+C) A is true but R is false.
+D) A is false but R is true.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q48. What makes Chhau a syncretic Indian dance form?
+A) It uses Sanskrit-only chants in temple rituals
+B) It merges tribal, folk, and classical Hindu elements
+C) It evolved purely from Vaishnav temple dance
+D) It prohibits all forms of theatrical expression
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q49. Arrange the following judicial events chronologically: 1. Berubari Union case 2. Kesavananda Bharati case 3. S.R. Bommai case
+A) 1-2-3
+B) 3-2-1
+C) 2-1-3
+D) 3-1-2
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q50. Which of the following is NOT a consequence of space weather events like solar flares and CMEs?
+A) Disruption of satellite communication
+B) Blackouts in radio frequencies
+C) Alteration of ocean currents
+D) Damage to power grids
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q51. A gardener organizes plants into rows to create a square formation but discovers that 15 plants are not included. If the total number of plants is 3984, then what is the number of plants in each row?
+A) 43
+B) 45
+C) 63
+D) 65
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q52. If A is 25% more than B, and B is 20% more than C, then what is A : C?
+A) 3 : 2
+B) 2 : 3
+C) 5 : 4
+D) 6 : 5
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q53. Evaluate: (0.2 × 0.2 × 0.2 + 0.04 × 0.04 × 0.04) ÷ (0.4 × 0.4 × 0.4 + 0.08 × 0.08 × 0.08)
+A) 0.25
+B) 0.125
+C) 0.5
+D) 0.0625
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q54. The cost price of an article is ₹500. A shopkeeper sells it at a discount of 20% on the marked price. If the marked price is ₹600, what is the shopkeeper's profit or loss percentage?
+A) 5% Profit
+B) 4% Loss
+C) 8% Profit
+D) 10% Loss
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q55. Pipes A and B can fill a tank in 20 minutes and 30 minutes, respectively. Meanwhile, a drainpipe C can empty the tank in 60 minutes. If all three pipes are opened simultaneously, how long will it take to fill the tank?
+A) 15 min
+B) 20 min
+C) 25 min
+D) 10 min
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q56. Given x + y + z = 0, and x³ + y³ + z³ = 3xyz, evaluate (x - y)³ + (y - z)³ + (z - x)³.
+A) 0
+B) 9(x - y) (y - z) (z - x)
+C) 27xyz
+D) 3(x - y)(y - z)(z - x)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q57. A sum of ₹5000 is lent out in two parts, one at 6% simple interest and the other at 9% simple interest. If the annual interest is ₹390, the sum lent at 6% is:
+A) ₹2000
+B) ₹2500
+C) ₹3000
+D) ₹3500
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q58. A man has ₹15,000. He lends a part of it to X for 3 years at 10% simple interest and the remaining to Y for 3 years at 12% simple interest. If the total interest received from both X and Y after 3 years is ₹4,950, find the amount lent to X.
+A) ₹7,000
+B) ₹7,500
+C) ₹8,000
+D) ₹8,500
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q59. A taut wire supports a vertical pole. The wire is fixed to the ground 10 meters away from the base of the pole and makes an angle of 60° with the ground. What is the length of the wire?
+A) 10 m
+B) 10√3 m
+C) 20 m
+D) 20/√3 m
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q60. A cone and a sphere have equal volumes. If the cone's height is twice its radius, what is the ratio of the cone's radius to the sphere's radius?
+A) ∛2 : 1
+B) ∛4 : 1
+C) ∛6 : 1
+D) ∛9 : 1
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q61. A hemisphere and cylinder of equal radii have equal total surface areas. Find the ratio of cylinder height to radius.
+A) 1:2
+B) 7:4
+C) 6:5
+D) 2:5
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q62. A large cubical cake needs to be cut into 64 smaller, identical cubical pieces. What is the minimum number of straight cuts required?
+A) 8
+B) 9
+C) 16
+D) 63
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q63. The radius of a cone is raised by 20%, while the height is reduced by 10%. What is the percentage change in the volume of the cone?
+A) 27.4% decrease
+B) 29.6% increase
+C) 4.8% increase
+D) 5.2% increase
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q64. If sinA = 3/5 and A lies in the second quadrant, find the value of (sinA + cosA)².
+A) 0
+B) 1
+C) 1/25
+D) 49/25
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q65. If sin A = 1/2, then what is the value of (1 + tan² A)?
+A) 4/3
+B) 3/4
+C) 2/3
+D) 3/2
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q66. What is the slope of the line passing through points (2,3) and (4,7)?
+A) 2
+B) 3
+C) 5
+D) 4
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q67. A sector has a central angle of 180° and a radius of 12 cm. Another sector has a central angle of π/2 radians and the same radius. What is the ratio of the area of the first sector to the area of the second sector?
+A) 1:2
+B) 2:1
+C) 3:1
+D) 1:3
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q68. What is the total measure of all interior angles in a ten-sided polygon?
+A) 540°
+B) 1440°
+C) 720°
+D) 900°
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q69. What is the equation of the perpendicular bisector of the line segment connecting the points (2, 8) and (6, 4)?
+A) y=-x-10
+B) y=x-2
+C) y=-x+10
+D) y=x+2
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q70. The ratios of the perimeters of two similar triangles are expressed as of 3 : 5. Together, their areas total 34 cm². What is the area of the larger triangle?
+A) 9 cm²
+B) 15 cm²
+C) 25 cm²
+D) 35 cm²
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q71. 19³ + 20³ - 39³ + 118 is equal to: 19³ + 20³ - 39³ + 118
+A) -44342
+B) -6789
+C) 0
+D) 1
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q72. If cot A = 3/4, find cosec²A.
+A) 16/25
+B) 9/16
+C) 25/16
+D) 25/9
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q73. A tangent line PA is drawn from an external point P to a circle. If the radius is 8 cm and the distance from P to the center is 17 cm, what is the length of the tangent PA?
+A) 9 cm
+B) 15 cm
+C) 25 cm
+D) 28 cm
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q74. When two tangents, PA and PB, are drawn to a circle from a point P outside the circle, and the angle between them is 90°, what is the distance from P to the center (O) of the circle, if the radius is 5 cm?
+A) 5 cm
+B) 5√2 cm
+C) 10 cm
+D) 5√3 cm
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q75. Multiply 0.45 by 0.6 and express the result as a decimal.
+A) 0.86
+B) 0.27
+C) 0.76
+D) 0.54
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q76. Select the most appropriate synonym of the given word: REBELLIOUS
+A) Submissive
+B) Obedient
+C) Disobedient
+D) Agreeable
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q77. Select the most appropriate synonym of the given word: EULOGY
+A) Tribute
+B) Criticism
+C) Insult
+D) Condemnation
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q78. Select the most appropriate antonym of the given word. Turpitude
+A) Depravity
+B) Vice
+C) Morality
+D) Sin
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q79. Choose the correct meaning of idiom: To cry stinking fish
+A) Boasting excessively
+B) Ridiculing others
+C) Taking pride silently
+D) Undervaluing one's own worth or effort
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q80. Which is the correct spelling for 'a statement of beliefs'?
+A) Creed
+B) Creade
+C) Crid
+D) Credd
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q81. Find the correctly spelled word meaning having a harmful effect.
+A) Deleterious
+B) Deliterious
+C) Deleterous
+D) Deletrious
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q82. Choose the correct one-word substitute for: 'A person who opposes war or use of violence'.
+A) Pacifist
+B) Terrorist
+C) Militant
+D) Revolutionary
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q83. Choose the correct one-word substitute for: 'A belief or opinion that goes against the established doctrine, especially in religion or ideology'.
+A) Sedition
+B) Heresy
+C) Blasphemy
+D) Schism
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q84. Fill in the blank with the correct inversion structure: No sooner had he entered the room ___ the fire alarm went off.
+A) when
+B) than
+C) but
+D) and then
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q85. Find the part of the sentence that contains an error: The training program was designed (1)/ to make the employees capable to handle (2)/ complex queries efficiently (3)/ in customer support operations. (4)/
+A) (1)
+B) (2)
+C) (3)
+D) (4)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q86. Change the following from active to passive: The nurse will give you the injection.
+A) You will be given the injection by the nurse.
+B) You are given the injection by the nurse.
+C) You will have been given the injection by the nurse.
+D) You were being given the injection by the nurse.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q87. Find the part of the sentence that contains an error: It was not until the second report (1)/ was leaked to the press (2)/ did the ministry issue (3)/ a formal clarification. (4)
+A) (1)
+B) (2)
+C) (3)
+D) (4)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q88. Select the sentence containing the homonym of the highlighted word: The monk meditated beneath the ancient corbel protruding from the chapel wall.
+A) The corbel cracked under the weight of the vaulted stone.
+B) The corbel was adorned with grotesques typical of Gothic style.
+C) The scholar explained the political corbel in Machiavellian strategy.
+D) The mason restored the damaged stone corbel last year.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q89. Convert the sentence provided below from its passive voice structure to an active voice structure: The audience was made to believe that the product was revolutionary.
+A) The presenter made the audience believe the product was revolutionary.
+B) The audience believed the product to be revolutionary.
+C) The audience was forced to believe in the product.
+D) The presenter convinced the audience of the product's use.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q90. Choose the most suitable option to replace the highlighted part of the sentence: He took pain to finish the task on time.
+A) had pain
+B) took pains
+C) gave pain
+D) took the pain
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q91. PASSAGE (Q.91 - Q.95) Read the following passage and answer the questions based on the passage: Language has rarely been a neutral vehicle of communication; in colonial India, it functioned as an instrument of control, ideology, and identity. The British administration, while ostensibly engaged in civilizing and educating the colonized, meticulously manipulated linguistic hierarchies to entrench authority. English, elevated to the status of official and judicial language, was not merely a tool of governance—it became a symbol of intellectual legitimacy and social mobility. Indigenous languages, by contrast, were systematically subordinated, fragmented, and recast as vernaculars—a term that subtly suggested parochialism and inferiority. The imposition of English education through Macaulay's Minute of 1835 was more than a curricular reform; it was a calculated cultural intervention. The production of a class of Indians who were, in Macaulay's words, "Indian in blood and color, but English in taste," exemplified a form of linguistic hegemony designed to internalize colonial values. English became the medium through which the colonized were taught to perceive themselves and their traditions through the lens of imperial rationality, often resulting in alienation from indigenous epistemologies. Simultaneously, the colonial state's treatment of regional languages was riddled with contradictions. While British administrators encouraged the codification of Indian languages, such efforts often stripped them of their oral fluidity and cultural nuance. Sanskrit and Persian, once associated with prestige, were gradually marginalized, while languages like Hindi and Urdu became arenas of communal and political contestation —each championed by different religious and regional groups, further entrenching societal divisions. This reshaping of linguistic order served dual purposes: facilitating administrative efficiency and diffusing dissent. A populace divided along linguistic and communal lines was easier to govern. Moreover, fluency in English became a gatekeeping mechanism for bureaucratic inclusion and economic opportunity, thereby embedding inequality into the fabric of colonial modernity. In essence, language under colonial rule was not just about grammar or vocabulary—it was about access, allegiance, and authority. Understanding this interplay offers a lens into how colonial power was sustained not only through coercion but also through cultural engineering. In post-colonial India, the legacies of this linguistic stratification continue to reverberate in educational policy, social mobility, and debates over language and identity. What was the primary role of English in colonial India according to the passage?
+A) Enhancing regional unity
+B) Facilitating oral traditions
+C) Legitimizing colonial ideology and control
+D) Promoting Indian languages
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q92. What is implied by calling native languages "vernaculars"?
+A) They were widely respected
+B) They were seen as equal to English
+C) They were considered culturally rich
+D) They were regarded as inferior or parochial
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q93. According to the passage, why was Macaulay’s Minute significant?
+A) It promoted multilingual education
+B) It introduced oral language reforms
+C) It institutionalized English as a tool of cultural dominance
+D) It strengthened Sanskrit and Persian education
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q94. What contradiction does the passage point out in British treatment of Indian languages?
+A) English was discouraged for administration
+B) Persian was elevated over Hindi
+C) Codification preserved linguistic purity
+D) Codification ignored oral and cultural nuances
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q95. What lasting impact of colonial language policy does the passage highlight?
+A) Improved literacy in rural areas
+B) Complete linguistic equality post-Independence
+C) Lingering stratification in education and opportunity
+D) Decentralized governance
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q96. A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. He said, "What are you doing?"
+A) He asked what are you doing.
+B) He asked what I had been doing.
+C) He asked what was I doing.
+D) He asked what I was doing.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q97. A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. She said, "Let him not be disturbed during the meeting."
+A) She asked not to disturb him during the meeting.
+B) She advised that he should not be disturbed during the meeting.
+C) She said that let him not be disturbed.
+D) She ordered no one disturb him.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q98. A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The professor said that had he known earlier, he would have made the necessary arrangements.
+A) "If I knew earlier, I would have made the necessary arrangements," said the professor.
+B) "Had I known earlier, I would have made the necessary arrangements," said the professor.
+C) "If I would have known earlier, I would make arrangements," the professor said.
+D) "Had I knew earlier, I would arrange things," said the professor.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q99. Rearrange the following sentences to form a meaningful passage: 1. Ocean acidification is a consequence of increased CO2 emissions. 2. This leads to a decline in marine biodiversity. 3. Coral reefs are particularly vulnerable to acidification. 4. Urgent action is required to reduce emissions and mitigate damage.
+A) 2-3-1-4
+B) 1-3-2-4
+C) 3-1-2-4
+D) 4-1-2-3
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q100. Rearrange the following sentences in correct order to make a logical passage. 1. Therefore, emotional intelligence is highly valued in leadership. 2. Emotional intelligence (EQ) is distinct from IQ. 3. It involves understanding and managing one's own emotions. 4. It also includes perceiving and influencing others' emotions.
+A) 2-1-3-4
+B) 2-3-4-1
+C) 2-4-1-3
+D) 3-4-2-1
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+

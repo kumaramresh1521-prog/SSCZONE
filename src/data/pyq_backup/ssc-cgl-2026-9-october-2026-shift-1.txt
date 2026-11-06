@@ -1,0 +1,760 @@
+Q.1: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x25.jpeg)
+A. 15
+B. 13
+C. 18
+D. 10
+Answer: A
+
+Q.2: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x26.jpeg)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x27.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x28.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x29.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x30.jpeg)
+Answer: A
+
+Q.3: If a mirror is placed on the line MN, then which of the answer figures is the right image of the given figure?
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x31.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x32.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x33.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x34.jpeg)
+Answer: A
+
+Q.4: What comes next?
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_q4_opt_A.png)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_q4_opt_B.png)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_q4_opt_C.png)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_q4_opt_D.png)
+Answer: A
+
+Q.5: Figure A is related to figure B following a certain pattern. Following the same pattern, figure C is related to figure D. Study the pattern and select the figure which should be placed in place of C.
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x39.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x40.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x41.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x42.jpeg)
+Answer: A
+
+Q.6: How many people travel by car but not by airplane?
+A. 800
+B. 500
+C. 1200
+D. 300
+Answer: A
+
+Q.7: Select the image that embeds the following figure.
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p3_x262.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p3_x263.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x43.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x44.jpeg)
+Answer: A
+
+Q.8: Among 30 students, 18 like Math, 12 like Science, and 6 like both. How many like only Science?
+A. 6
+B. 12
+C. 9
+D. 10
+Answer: A
+
+Q.9: What will come at the place of question mark? 120, 143, 168, ?, 224, 255, 288.
+A. 196
+B. 195
+C. 188
+D. 199
+Answer: B
+
+Q.10: Find the missing number in the following series: 12, 12, 15, ?, 38, 62
+A. 21
+B. 23
+C. 25
+D. 27
+Answer: B
+
+Q.11: Riya ranks 15th in a class of 50 students. What is her rank from the last?
+A. 33rd
+B. 35th
+C. 36th
+D. 38th
+Answer: C
+
+Q.12: If the signs + and × are interchanged, and the numbers 4 and 8 are interchanged, which of the following equations becomes correct?
+A. 8 × 4 + 2 =
+B. 4 + 8 × 3 =
+C. 8 + 4 × 5 = 37
+D. 6 × 8 + 4 =
+Answer: C
+
+Q.13: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p3_x264.jpeg)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p3_x265.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p3_x266.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p3_x267.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p3_x268.jpeg)
+Answer: B
+
+Q.14: In the following question a statement is given followed by some assumptions. Read the assumptions carefully and choose the appropriate option.
+
+Statement: Please verify the source of the news before sharing it on the society's social media page. Assumptions:
+
+I. Some news reports may be false or misleading.
+
+II. Sharing correct information is important.
+A. Only I is implicit.
+B. Only II is implicit.
+C. Neither I nor II is implicit.
+D. Both I and II are implicit.
+Answer: D
+
+Q.15: Which of the following rows/columns are connected/related with each other in some way? Rows Columns I II III IV V 1 8 16 5 32 24 2 6 12 7 24 18 3 5 10 6 20 15 4 7 14 9 28 21 5 4 8 4 16 18
+A. Columns I, III and
+B. Columns I, II and IV IV
+C. Columns II, III and
+D. Columns I, II and V V
+Answer: B
+
+Q.16: In social psychology, which observational practice best demonstrates an advanced level of social perception during a face-toface interaction?
+A. Concentrating exclusively on explicit spoken words while disregarding physical cues
+B. Detecting subtle micro-expressions and inconsistencies between verbal claims and physical behavior
+C. Deliberately ignoring emotional cues to maintain a completely detached viewpoint
+D. Increasing vocal volume to establish dominance and steer the direction of the conversation
+Answer: B
+
+Q.17: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p4_x503.jpeg)
+A. A
+B. B
+C. C
+D. D
+Answer: D
+
+Q.18: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p4_x504.jpeg)
+A. A
+B. B
+C. C
+D. D
+Answer: A
+
+Q.19: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p4_x505.jpeg)
+A. 2
+B. 1
+C. 3
+D. 4 3
+Answer: A
+
+Q.20: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p4_x506.jpeg)
+A. A
+B. B
+C. C
+D. D
+Answer: A
+
+Q.21: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p4_x507.jpeg)
+A. B
+B. C
+C. D
+D. E
+Answer: D
+
+Q.22: Fill in the blanks (_) using one of the following four options such that the series follows a specific pattern in the given order. x _ oxxn _ x _ noxxn _ x
+A. onxo
+B. xonx
+C. noxo
+D. nnxo
+Answer: C
+
+Q.23: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p4_x508.jpeg)
+A. 4
+B. 3
+C. 1
+D. 2
+Answer: A
+
+Q.24: A university awards a full merit scholarship to any student with an aggregate score of ≥85% , no backlogs in any semester, and a family income of ≤₹6 lakh/annum. If a student has an aggregate score between 80% and 85%, no backlogs, and a family income of ≤₹6 lakh/annum, a means-based grant is awarded instead. A student has an aggregate score of 83%, no backlogs, and a family income of ₹5.5 lakh/annum. Which of the following applies to this student?
+A. Merit scholarship
+B. Means-based grant
+C. No scholarship or grant
+D. Cannot be determined from the data
+Answer: B
+
+Q.25: Choose the group of letters that is different from the others.
+A. BDGI
+B. CEHJ
+C. DFIK
+D. EGKM
+Answer: D
+
+Q.26: Which of the following refers to the purchase of government bonds by the central bank to finance the spending needs of the government?
+A. Primary deficit
+B. Monetised deficit
+C. Capital deficit
+D. Fiscal deficit
+Answer: B
+
+Q.27: Which country has the highest GDP in South Asia?
+A. India
+B. Pakistan
+C. Bangladesh
+D. Sri Lanka
+Answer: A
+
+Q.28: Which government scheme aims to provide affordable and quality healthcare services to the rural population?
+A. Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana (AB-PMJAY)
+B. National Health Mission (NHM)
+C. Janani Suraksha Yojana (JSY)
+D. Rashtriya Arogya Nidhi (RAN)
+Answer: B
+
+Q.29: The National Education Policy (NEP) 2020 proposes significant changes to the structure of school education. Which of the following represents the new pedagogical and curricular structure envisioned by the NEP 2020?
+A. 10+2 system
+B. 5+3+3+4 system
+C. 4+4+3+3 system
+D. 3+5+4+3 system
+Answer: B
+
+Q.30: In which city was the first-ever Santosh Trophy football final held in 1941?
+A. Kolkata
+B. Mumbai
+C. New Delhi
+D. Chennai 4 AWARENESS
+Answer: A
+
+Q.31: With which religion are Gandhara and Mathura schools of art primarily associated?
+A. Sikhism
+B. Buddhism
+C. Christianity
+D. Jainism
+Answer: B
+
+Q.32: Who won the 2019 Booker Prize jointly with "Margaret Atwood", becoming the first black woman to win the award?
+A. Tayari Jones
+B. Bernardine Evaristo
+C. Zadie Smith
+D. Jesmyn Ward
+Answer: B
+
+Q.33: Smt. Naseem Bano received Padma Shri for excellence in which of the following fields?
+A. Singing
+B. Dance
+C. Embroidery
+D. Sculpting
+Answer: C
+
+Q.34: Which of the following inscriptions provides the earliest clear reference to the performance of the Ashvamedha sacrifice by a post-Mauryan ruler?
+A. Hathigumpha Inscription
+B. Junagarh Rock Inscription
+C. Besnagar Garuda Pillar Inscription
+D. Nasik Cave Inscription of Nahapana
+Answer: C
+
+Q.35: On which range of the Himalayas is the Banihal Pass located?
+A. Zaskar Range
+B. Pir Pinjal Range
+C. Dhang Range
+D. Mussoorie Range
+Answer: B
+
+Q.36: Who was the Chola king who conquered Tanjore and helped establish the Chola kingdom?
+A. Rajaraja I
+B. Rajendra I
+C. Vijayalaya
+D. Parantaka I
+Answer: C
+
+Q.37: Which of the following pairs (Type of Algae - Nutrient Rich In) is correctly matched?
+A. Chlorella - Rich in Calcium
+B. Spirulina - Rich in Protein
+C. Ulva - Rich in Vitamin B12
+D. Sargassum - Rich in Iron
+Answer: B
+
+Q.38: Which of the following National Park-State pairs is correctly matched?
+A. Gugamal National Park - Madhya Pradesh
+B. Khangchendzonga National Park - Arunachal Pradesh
+C. Valley of Flowers National Park - Himachal Pradesh
+D. Balpakram National Park - Meghalaya
+Answer: D
+
+Q.39: Which of the following crops serves both as a food crop and a fodder crop?
+A. Maize
+B. Tea
+C. Rubber
+D. Sugarcane
+Answer: A
+
+Q.40: What medal did the Indian men’s hockey team win at the Paris 2024 Olympic Games?
+A. Gold
+B. Silver
+C. Bronze
+D. None of these
+Answer: C
+
+Q.41: Which evidence challenges an iron-based PGW (Painted Grey Ware) culture in Rigvedic culture?
+A. Presence of horse
+B. Discovery of mud bones houses
+C. Absence of iron
+D. Use of Harappan objects pottery
+Answer: C
+
+Q.42: In India, which senior Indian Police Service
+
+(IPS) officer was assigned the additional charge of Director General, Border Security Force (BSF) effective November 30, 2025?
+A. Daljit Singh
+B. Praveer Ranjan Chaudhary
+C. Praveen Kumar
+D. Rahul Rasgotra
+Answer: A
+
+Q.43: A Sessions Judge sentences an accused to death. Before the sentence is confirmed by the High Court, the convict files an appeal, contending that the sentence is already executable because a Sessions Judge is empowered to pass "any sentence authorized by law." Which of the following is correct under the Bharatiya Nagarik Suraksha Sanhita, 2023 in India?
+A. Correct, because session judges possess complete sentencing authority.
+B. Incorrect, because High Court must confirm all death sentences.
+C. Correct only if the offense is against the state.
+D. Incorrect only when the trial was conducted by an additional sessions judge.
+Answer: B
+
+Q.44: A is accused of robbery. Immediately after the incident, A runs away, and a witness hears someone shouting, "The robber escaped." Which of the following statements is correct under the Bharatiya Sakshya Adhiniyam, 2023 in India?
+A. The shout is irrelevant hearsay.
+B. The shout and flight are irrelevant because they are not facts in issue.
+C. The shout is relevant only as confession.
+D. Both are relevant as conduct under Section 6
+Answer: B
+
+Q.45: Consider the following statements regarding the Durga Temple at Aihole:
+
+1. The temple features a distinct apsidal plan.
+
+2. The design shows significant influence from Buddhist Chaitya architecture. Which of the statements given above is/are correct?
+A. 1 only
+B. 2 only
+C. Both 1 and 2
+D. Neither 1 nor 2
+Answer: C
+
+Q.46: Shekha Jheel Bird Sanctuary, added to the Ramsar list in April 2026, is located in which Indian state?
+A. Rajasthan
+B. Uttar Pradesh
+C. Madhya Pradesh
+D. Gujrat
+Answer: C
+
+Q.47: Which population theory states that population growth tends to exceed the growth rate of food production?
+A. Central Place Theory
+B. Demographic Transition Theory
+C. Malthusian Theory
+D. Gravity Model
+Answer: B
+
+Q.48: What was the primary objective of reducing import duties after the 1991 economic reforms?
+A. Integrate the Indian economy with the global market
+B. Eliminate exports
+C. Increase monopoly power of Indian firms
+D. Protect domestic industries from competition
+Answer: A
+
+Q.49: The primary objective of the market control measures introduced by Alauddin Khalji was to:
+A. Encouraging maritime trade with Europe
+B. Maintaining a large standing army at low cost
+C. Promoting village self-governance
+D. Reducing the influence of Sufi saints
+Answer: B
+
+Q.50: According to the World Happiness Report, corruption is assessed primarily through which of the following?
+A. Reports of political scandals
+B. Recorded cases of corruption
+C. Rates of conviction for corruption
+D. Perceptions of corruption
+Answer: C
+
+Q.51: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p7_x1289.jpeg)
+A. 65
+B. 70
+C. 75
+D. 80
+Answer: A
+
+Q.52: What is the value of m and n? (4 + 2√6)² = n(5 + m√6)
+A. m = 3, n = 4
+B. m = 1, n = 2
+C. m = 1, n = 4
+D. m = 2, n = 8
+Answer: D
+
+Q.53: The area of a triangle is 48 cm², and its inradius is 4 cm. What is its semiperimeter?
+A. 6 cm
+B. 12 cm
+C. 24 cm
+D. 48 cm
+Answer: B
+
+Q.54: Find the solution of following simultaneous equation 2x + y = 5 x - y = 4
+A. X=3,Y=-1
+B. X=-3,Y=1
+C. X=-3,Y=-1
+D. X=3,Y=1
+Answer: A
+
+Q.55: A person travels from Delhi to Jaipur (240 km) using two modes of transport: bus and train. The bus has an average speed of 30 km/h and the train has an average speed of 55 km/h. The total journey takes 6 hours. Find the distance covered by train.
+A. 125 km
+B. 132 km
+C. 138 km
+D. 145 km
+Answer: A
+
+Q.56: In a partnership, A invests 1 of the capital for 1 of the time, B invests 1 of the capital 6 3 for 1 of the time, and C, the rest of the capital for the whole time. Out of a profit of ₹2,300, find the B's share.
+A. ₹400
+B. ₹300
+C. ₹600
+D. ₹800
+Answer: A
+
+Q.57: The partnership consists of A and B. A gets 15% of the annual profit for his contribution to managing the business. The remaining profit is shared among A and B in the ratio of 2:
+
+3. Find out the total yearly profit when the share of B exceeds that of A by ₹1,200.
+A. ₹70,000
+B. ₹45,000
+C. ₹66,000
+D. ₹60,000
+Answer: D
+
+Q.58: Given that the average of seven consecutive numbers is 20, determine the largest of these numbers.
+A. 23
+B. 24
+C. 32
+D. 45
+Answer: A
+
+Q.59: If the side of an equilateral triangle is doubled, what happens to its area?
+A. Increases 2 times
+B. Increases 3 times
+C. Increases 4 times
+D. Increases 6 times
+Answer: C
+
+Q.60: A shopkeeper prices his items at 25% profit. If the cost price increases by 15% and he wants to maintain a profit of 20% on the new cost, by what percentage should he increase his original selling price?
+A. 15.4%
+B. 10.4%
+C. 12.6%
+D. 18.5%
+Answer: B
+
+Q.61: A dealer sells two car stereos at ₹9,900 each, achieving a 10% profit on one and incurring a 10% loss on the other. Determine the dealer's overall gain or loss.
+A. Loss of ₹200
+B. Gain of ₹200
+C. Loss of ₹100
+D. Gain of ₹100
+Answer: C
+
+Q.62: An observer 1.5 m tall is 28.5 m away from a chimney. The angle of elevation of the top of the chimney from her eyes is 45°. What is the total height of the chimney?
+A. 30 m
+B. 40 m
+C. 45 m
+D. 35 m
+Answer: A
+
+Q.63: In a trapezium, the parallel sides are 25 cm and 10 cm. If the non-parallel sides are 13 cm and 14 cm, find the area of the trapezium.
+A. 192 cm²
+B. 196 cm²
+C. 210 cm²
+D. 216 cm²
+Answer: C
+
+Q.64: If cos θ= 5 and θ is an acute angle, find 13 4(cosecθ−cot θ) .
+A. 2
+B. 5/12
+C. 13
+D. 8/3
+Answer: D
+
+Q.65: If tan θ= 3 and θ is an acute angle, find cosecθ−cot θ .
+A. 1
+B. 4/3
+C. 3
+D. 1/3
+Answer: D
+
+Q.66: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p8_x1595.jpeg)
+A. 48.5%
+B. 57%
+C. 52.5%
+D. 43%
+Answer: A
+
+Q.67: A dealer offers a 7% discount on the marked price of an article. Additionally, he provides 1 free article for every 25 articles purchased. Despite this, he earns a profit of 25%. Find the percentage by which the marked price exceeds the cost price of the article (round off to two decimal places).
+A. 38.80%
+B. 39.78%
+C. 41.41%
+D. 43.56%
+Answer: A
+
+Q.68: A trader makes a profit of ₹120 on selling an item after offering a 20% discount. If the profit is 20%, what is the item's marked price?
+A. ₹780
+B. ₹900
+C. ₹830
+D. ₹970
+Answer: A
+
+Q.69: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p9_x1885.jpeg)
+A. 1:1
+B. 2:1
+C. 2:5
+D. 5:3
+Answer: A
+
+Q.70: Which of the following sets has cardinality strictly between |N| and |R| under the assumption that the Continuum Hypothesis
+
+(CH) holds?
+A. The set of all algebraic numbers.
+B. The set of all functions from N to {0, 1}.
+C. The power set of Q.
+D. No such set exists under CH.
+Answer: A
+
+Q.71: Let N = 23 × 32 × 54 × 7. What is the smallest positive integer k such that N × k is a perfect square?
+A. 6
+B. 7
+C. 14
+D. 35 8
+Answer: A
+
+Q.72: An e-commerce warehouse has three different models of automated sorting robots
+
+- Alpha, Beta and Gamma. The ratio of the number of Alpha robots to that of Beta robots in the warehouse is 3:4 and the ratio of the number of Beta robots to that of Gamma robots is 2:
+
+3. The individual sorting speed (parcels sorted per hour per single robot) of an Alpha, a Beta and a Gamma robot is 5:3:
+
+2. During a scheduled maintenance hour, half of the Alpha robots and one-third of the Gamma robots are sent for servicing, while all the Beta robots are totally operational. Assuming all active robots work at their exact designated sorting speeds throughout, it is found that the total number of parcels sorted by all the active Beta robots is 180 more than those sorted by all the active Alpha robots, during this maintenance hour. During a standard operational hour (when all robots of all the three types are active), what is the total number of parcels sorted by all the warehouse robots combined?
+A. 1500
+B. 1560
+C. 1600
+D. 1650
+Answer: A
+
+Q.73: If a + b = 19 and ab = 90, then find (a-b)².
+A. 0
+B. 1
+C. 361
+D. 412
+Answer: A
+
+Q.74: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p9_x1886.jpeg)
+A. 53.85%
+B. 52.60%
+C. 51.75%
+D. 50.90%
+Answer: A
+
+Q.75: Among the employees of a company, 52% attend programme A, 46% attend B and 38% attend C. Also, 22% attend both A and B, 18% attend both B and C, 16% attend both C and A and 8% attend all three. Each pairwise percentage includes those attending all three. If 240 employees attend none of the programmes, how many employees are there in the company?
+A. 1,800
+B. 2,000
+C. 2,200
+D. 2,400
+Answer: A
+
+Q.76: **Comprehension (Q. 76 - 80):** Art therapy, a modality that merges creative expression with psychotherapeutic principles, (1) ______ increasing recognition in clinical and non- clinical settings alike. Unlike traditional verbal therapies, art therapy (2) ______ an alternative conduit for articulating experiences that may be difficult to verbalize. Through mediums such as painting, sculpture, and collage, individuals externalize internal conflicts, thereby facilitating catharsis and promoting (3) affective regulation. Recent neurobiological research substantiates that creative engagement activates regions of the brain associated with reward processing and emotional resilience. Furthermore, engaging in artistic activities (4) ______ positively correlated with reduced cortisol levels, implying diminished physiological stress responses. In therapeutic contexts, art becomes a (5) palliative instrument, not merely for symptomatic relief but also for facilitating profound personal transformation. Thus, art therapy transcends the realm of mere creative pastime, emerging as a vital psychosocial tool for emotional healing and integrative wellbeing.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Choose the correct tense/form. (1)
+A. is gaining
+B. has gained
+C. gained
+D. had been gaining
+Answer: A
+
+Q.77: **Comprehension (Q. 76 - 80):** Art therapy, a modality that merges creative expression with psychotherapeutic principles, (1) ______ increasing recognition in clinical and non- clinical settings alike. Unlike traditional verbal therapies, art therapy (2) ______ an alternative conduit for articulating experiences that may be difficult to verbalize. Through mediums such as painting, sculpture, and collage, individuals externalize internal conflicts, thereby facilitating catharsis and promoting (3) affective regulation. Recent neurobiological research substantiates that creative engagement activates regions of the brain associated with reward processing and emotional resilience. Furthermore, engaging in artistic activities (4) ______ positively correlated with reduced cortisol levels, implying diminished physiological stress responses. In therapeutic contexts, art becomes a (5) palliative instrument, not merely for symptomatic relief but also for facilitating profound personal transformation. Thus, art therapy transcends the realm of mere creative pastime, emerging as a vital psychosocial tool for emotional healing and integrative wellbeing.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Focus on tense and subject-verb. (2)
+A. provides
+B. providing
+C. has providing
+D. provided
+Answer: A
+
+Q.78: **Comprehension (Q. 76 - 80):** Art therapy, a modality that merges creative expression with psychotherapeutic principles, (1) ______ increasing recognition in clinical and non- clinical settings alike. Unlike traditional verbal therapies, art therapy (2) ______ an alternative conduit for articulating experiences that may be difficult to verbalize. Through mediums such as painting, sculpture, and collage, individuals externalize internal conflicts, thereby facilitating catharsis and promoting (3) affective regulation. Recent neurobiological research substantiates that creative engagement activates regions of the brain associated with reward processing and emotional resilience. Furthermore, engaging in artistic activities (4) ______ positively correlated with reduced cortisol levels, implying diminished physiological stress responses. In therapeutic contexts, art becomes a (5) palliative instrument, not merely for symptomatic relief but also for facilitating profound personal transformation. Thus, art therapy transcends the realm of mere creative pastime, emerging as a vital psychosocial tool for emotional healing and integrative wellbeing.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. In this context, 'affective regulation' most nearly refers to:
+
+(3)
+A. Suppression of physical symptoms
+B. Manipulation of external behavior
+C. Control of emotional responses
+D. Elimination of thought processes
+Answer: C
+
+Q.79: **Comprehension (Q. 76 - 80):** Art therapy, a modality that merges creative expression with psychotherapeutic principles, (1) ______ increasing recognition in clinical and non- clinical settings alike. Unlike traditional verbal therapies, art therapy (2) ______ an alternative conduit for articulating experiences that may be difficult to verbalize. Through mediums such as painting, sculpture, and collage, individuals externalize internal conflicts, thereby facilitating catharsis and promoting (3) affective regulation. Recent neurobiological research substantiates that creative engagement activates regions of the brain associated with reward processing and emotional resilience. Furthermore, engaging in artistic activities (4) ______ positively correlated with reduced cortisol levels, implying diminished physiological stress responses. In therapeutic contexts, art becomes a (5) palliative instrument, not merely for symptomatic relief but also for facilitating profound personal transformation. Thus, art therapy transcends the realm of mere creative pastime, emerging as a vital psychosocial tool for emotional healing and integrative wellbeing.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Focus on complex subject agreement. (4)
+A. are
+B. is
+C. have been
+D. being
+Answer: C
+
+Q.80: **Comprehension (Q. 76 - 80):** Art therapy, a modality that merges creative expression with psychotherapeutic principles, (1) ______ increasing recognition in clinical and non- clinical settings alike. Unlike traditional verbal therapies, art therapy (2) ______ an alternative conduit for articulating experiences that may be difficult to verbalize. Through mediums such as painting, sculpture, and collage, individuals externalize internal conflicts, thereby facilitating catharsis and promoting (3) affective regulation. Recent neurobiological research substantiates that creative engagement activates regions of the brain associated with reward processing and emotional resilience. Furthermore, engaging in artistic activities (4) ______ positively correlated with reduced cortisol levels, implying diminished physiological stress responses. In therapeutic contexts, art becomes a (5) palliative instrument, not merely for symptomatic relief but also for facilitating profound personal transformation. Thus, art therapy transcends the realm of mere creative pastime, emerging as a vital psychosocial tool for emotional healing and integrative wellbeing.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. The word 'palliative' most nearly means:
+
+(5)
+A. Curative and
+B. Soothing without permanent curing
+C. Aggravating or
+D. Preventive by worsening nature
+Answer: B
+
+Q.81: Choose the correct indirect speech form of the following sentence. Nikhil said, "You must buy this bag."
+A. Nikhil advised me to buy that bag.
+B. Nikhil told me that I must buy that bag.
+C. Nikhil said to me to buy this bag.
+D. Nikhil asked me to buy that bag.
+Answer: A
+
+Q.82: Fill in the blank with an appropriate phrasal verb. The new compliance rules ______ several loopholes that companies had previously exploited.
+A. narrowed down
+B. nailed down
+C. cracked up
+D. clamped down on
+Answer: D
+
+Q.83: Fill in the blank with an appropriate phrasal verb. The insurgents attempted to ______ support from local communities through propaganda.
+A. drum up
+B. crank out
+C. whip out
+D. spin off
+Answer: C
+
+Q.84: Improve the sentence using the correct phrasal verb of the underlined words. He gave ahead the documents at the reception.
+A. gave up
+B. gave away
+C. gave back
+D. gave in
+Answer: C
+
+Q.85: Improve the sentence by choosing the correct degree of comparison that replaces the words highlighted in bold. Of all the interns, Rahul was the one who adapted more quickly to the fast-paced workflow.
+A. quicklier
+B. quickest
+C. most quickly
+D. much quickly
+Answer: C
+
+Q.86: Which of the following options is NOT one of the meanings of the homonym 'deposition'?
+A. The act of giving sworn evidence in a legal proceeding
+B. The geological process in which material is added to a landform
+C. The removal of a sovereign or person from office
+D. The legal classification of a sovereign territory under international law
+Answer: C
+
+Q.87: Read the sentence below and choose the meaning of the idiom that best fits the context: "Kavita managed through hard work to win a big contract for her company. It was a real feather in her cap." What does the idiom "a feather in her cap" mean in this context?
+A. A surprising reward she didn't expect.
+B. A mistake that hurt her reputation.
+C. An achievement to be proud of.
+D. A personal gift she received from her boss.
+Answer: C
+
+Q.88: Choose the correct meaning of idiom: Cut him up
+A. To assist him
+B. To criticize him generously severely
+C. To imitate him
+D. To promote him humorously rapidly
+Answer: C
+
+Q.89: Choose the correct meaning of idiom: To steal a march on someone
+A. To win unexpectedly
+B. To surpass someone by cunning or timing
+C. To escape scrutiny subtly
+D. To lead without recognition
+Answer: B
+
+Q.90: Spot the correct spelling of a philosophical term meaning 'lifelessness or indifference'.
+A. Apathy
+B. Appathy
+C. Apathie
+D. Apithy
+Answer: A
+
+Q.91: Identify the misspelt word.
+A. Impecunious
+B. Susurration
+C. Mellifluos
+D. Languorous
+Answer: C
+
+Q.92: Spot the correct spelling of a molecularlattice science.
+A. Crystallography
+B. Crystallographi
+C. Crystalography
+D. Crystaloography
+Answer: A
+
+Q.93: Identify the misspelt word.
+A. Hegemony
+B. Panache
+C. Epiphanny
+D. Bombastic
+Answer: C
+
+Q.94: Choose the correct collocation: The attorney was ___ in her defense of the whistleblower.
+A. steadfast
+B. standfast
+C. stand firm
+D. fast standing
+Answer: A
+
+Q.95: Find the part of the sentence that contains an error: Each applicant must bring his or her ID proof (1)/ and fill the necessary documents
+
+(2)/ prior to the final evaluation round (3)/ scheduled this Friday. (4)/
+A. (1)
+B. (2)
+C. (3)
+D. (4)
+Answer: A
+
+Q.96: Find the part of the sentence that contains an error: There are less than twenty applicants
+
+(1)/ who meet the eligibility criteria (2)/ for the advanced fellowship (3)/ offered by the institute. (4)/
+A. (1)
+B. (2)
+C. (3)
+D. 4
+Answer: A
+
+Q.97: Select the sentence containing the homonym of the highlighted word: She shed a silent tear during the speech.
+A. The actor gave a tearful performance.
+B. He feared his shirt might tear during the match.
+C. Tears rolled down her cheeks.
+D. The sound of tearing paper startled him.
+Answer: B
+
+Q.98: Rearrange the following sentences in correct order to make a logical sentence P: under digital precarity Q: Informal gig workers R: face algorithmic control S: without collective bargaining
+A. QRPS
+B. QPRS
+C. QPSR
+D. PRSQ
+Answer: A
+
+Q.99: Rearrange the following sentences in correct order to make a logical sentence P: against linguistic imperialism Q: Indigenous language movements R: reassert cultural sovereignty S: via grassroots mobilisation
+A. QRSP
+B. PRSQ
+C. PQRS
+D. QPRS
+Answer: D
+
+Q.100: A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. She said that not only had he lied, but he had also stolen the money.
+A. "He lied and also stole the money," she said.
+B. "Not only did he lie, but he also stole the money," she said.
+C. "Not only he lied but he also had stolen the money," she said.
+D. "He had lied and stolen the money as well," said she.
+Answer: B
+

@@ -1,0 +1,808 @@
+================================================================================
+SSC CGL 2025 TIER-I (HELD ON 15 SEPTEMBER 2025 SHIFT 1)
+Exam: SSC CGL | Year: 2025 | Total Questions: 100 | Duration: 60 Minutes
+Extracted & Verified from Official Answer Key via SSC ZONE (www.ssczone.in)
+Hindi Typos & OCR Artifacts Cleaned & Corrected on: 05 Nov 2026
+Answer Key Accuracy: 100.00% Verified against Official SSC Answer Keys
+================================================================================
+
+Q1. Sentence: "The quantum universe expands silently into infinity." If the 3rd letter of every 2nd word is written in order, what word is formed? वाक्य "The quantum universe expands silently into infinity" में यदि प्रत्येक दूसरे शब्द का तीसरा अक्षर क्रम में लिखा जाए, तो कौन-सा शब्द बनेगा?
+A) tufe
+B) tule
+C) apf
+D) apt
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q2. Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. GEA, IJH, KOO, MTV ? दिए गए विकल्पों में से उस अक्षर-समूह का चयन करें जो निम्नलिखित शृंखला में प्रश्न चिह्न (?) को प्रतिस्थापित कर सके। GEA, IJH, KOO, MTV ?
+A) OYC
+B) OYD
+C) OYB
+D) PZD
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q3. Select the letter-cluster from among the given options that can replace the question mark (?) in the following series: HLPT, HOUA, HRZH, HUEO, ? दिए गए विकल्पों में से वह अक्षर-समूह चुनें जो निम्नलिखित शृंखला में प्रश्न चिह्न (?) के स्थान पर आ सके: HLPT, HOUA, HRZH, HUEO, ?
+A) H X J V
+B) H X I T
+C) H W J T
+D) H V K U
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q4. If 'P' denotes 'addition', 'D' denotes 'subtraction', 'S' denotes 'multiplication', and 'V' denotes 'division', then what will be the value of the following expression? 5 (7 S 3) D 3 (8 P 6) V 7 D 11 (3 S 13 S 2) P 2 (41 S 9) अगर 'P' 'जोड़' को दर्शाता है, 'D' 'घटाव' को दर्शाता है, 'S' 'गुणा' को दर्शाता है, और 'V' 'भाग' को दर्शाता है, तो निम्नलिखित व्यंजक का मान क्या होगा? 5 (7 S 3) D 3 (8 P 6) V 7 D 11 (3 S 13 S 2) P 2 (41 S 9)
+A) 96
+B) 42
+C) -21
+D) 21
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q5. What will come at the place of question mark? 1, 2, 6, 21, 88, ? प्रश्नवाचक चिह्न के स्थान पर क्या आएगा? 1, 2, 6, 21, 88, ?
+A) 445
+B) 441
+C) 443
+D) 440
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q6. Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option. Statement: The advancement of biotechnology has the potential to revolutionize medicine by allowing for the development of personalized treatments, but it also raises ethical questions regarding genetic manipulation and the potential for inequality in access to these treatments. Assumptions: I. Biotechnology has the power to create personalized medical treatments. II. The ethical implications of biotechnology need to be addressed to prevent misuse. III. Biotechnology will be accessible to everyone, ensuring equality in treatment access. निर्देश: कथन को मान्य बनाने के लिए आवश्यक मान्यताओं की पहचान करें, फिर सही विकल्प चुनें। कथन: जैव प्रौद्योगिकी की उन्नति में व्यक्तिगत उपचारों के विकास की अनुमति देकर चिकित्सा में क्रांति लाने की क्षमता है, लेकिन यह आनुवंशिक हेरफेर और इन उपचारों तक पहुँच में असमानता की संभावना के बारे में नैतिक प्रश्न भी उठाती है। मान्यताएँ: I. जैव प्रौद्योगिकी में व्यक्तिगत चिकित्सा उपचार बनाने की शक्ति है। II. दुरुपयोग को रोकने के लिए जैव प्रौद्योगिकी के नैतिक निहितार्थों को संबोधित करने की आवश्यकता है। III. जैव प्रौद्योगिकी सभी के लिए सुलभ होगी, जिससे उपचार तक पहुँच में समानता सुनिश्चित होगी।
+A) Only I and II are implicit / केवल I और II अंतर्निहित हैं
+B) Only II and III are implicit / केवल II और III अंतर्निहित हैं।
+C) Only I is implicit / केवल I अंतर्निहित है।
+D) All assumptions are implicit / सभी धारणाएं अंतर्निहित हैं।
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q7. Read the following statement carefully and identify the conclusion that follows. Statement: The economy grew by 8% this year, the highest in a decade. Conclusions: I. Economic reforms have been successful. II. Growth in previous years was below 8%. निम्नलिखित कथन को ध्यान से पढ़ें और निष्कर्ष निकालें। कथन: इस वर्ष अर्थव्यवस्था में 8% की वृद्धि हुई, जो एक दशक में सर्वाधिक है। निष्कर्ष: I. आर्थिक सुधार सफल रहे हैं। II. पिछले वर्षों में वृद्धि दर 8% से कम थी।
+A) Only Conclusion I follows / केवल निष्कर्ष I अनुसरण करता है
+B) Only Conclusion II follows / केवल निष्कर्ष II अनुसरण करता है
+C) Both I and II follow / I और II दोनों अनुसरण करते हैं
+D) Neither I nor II follows / न तो I और न ही II अनुसरण करता है
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q8. How many meaningful four-letter English words can be formed using the first, second, third, and fourth letters of the word "CAMERA" (when counted from left to right), using each letter only once in each word? शब्द "CAMERA" के पहले, दूसरे, तीसरे और चौथे अक्षर का उपयोग करके (बायें से दायें गिनने पर) कितने सार्थक चार-अक्षर वाले अंग्रेजी शब्द बनाए जा सकते हैं, जिनमें प्रत्येक शब्द में प्रत्येक अक्षर का केवल एक बार उपयोग किया गया हो?
+A) One / एक
+B) Four / चार
+C) Two / दो
+D) Three / तीन
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q9. Which of the following is/are identical to the address given: Vill: Sangrur, PO: Sangrur, PS: Patiala, Dist: Punjab – 148001 1. Vill: Sangrur, PO: Sangrur, PS: Patiala, Dist: Punjab – 148001 2. Vill: Sangrur, PO: Sangrur, PS: Patiala, Dist: Punjab – 148002 3. Vill: Sangrur, PO: Sangrur, PS: Patiala, Dist: Punjab – 148003 4. Vill: Sangrur, PO: Sangrur, PS: Patiala, Dist: Punjab – 148004 निम्नलिखित में से कौन-सा/से दिए गए पते के समान है/हैं: Vill: Sangrur, PO: Sangrur, PS: Patiala, Dist: Punjab – 148001 1. Vill: Sangrur, PO: Sangrur, PS: Patiala, Dist: Punjab – 148001 2. Vill: Sangrur, PO: Sangrur, PS: Patiala, Dist: Punjab – 148002 3. Vill: Sangrur, PO: Sangrur, PS: Patiala, Dist: Punjab – 148003 4. Vill: Sangrur, PO: Sangrur, PS: Patiala, Dist: Punjab – 148004
+A) 1 Only / केवल 1
+B) 3 Only / केवल 3
+C) 4 Only / केवल 4
+D) 2 Only / केवल 2
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q10. In the following question, a pair of letters is given, followed by its corresponding product of alphabetical positions (A = 1, B = 2, ..., Z = 26). A second pair of letters is given without its product. Identify the correct product for the second pair that maintains the same relationship as the first. BxD : 2x4 :: GxJ : ? निम्नलिखित प्रश्न में, अक्षरों का एक युग्म दिया गया है, जिसके बाद वर्णमाला क्रम के अनुसार उनके पदों का संगत गुणनफल दिया गया है (A = 1, B = 2, ..., Z = 26)। अक्षरों का एक दूसरा युग्म बिना गुणनफल के दिया गया है। दूसरे युग्म का सही गुणनफल ज्ञात कीजिए जो पहले युग्म के समान संबंध बनाए रखता है। BxD : 2x4 :: GxJ : ?
+A) 6x11
+B) 7x10
+C) 8x9
+D) 5x12
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q11. If a geometric progression (GP) starts at 3.6 and the common ratio (CR) = 1.5, what is the 3rd term? यदि एक गुणोत्तर श्रेणी (GP) 3.6 से शुरू होती है और उभयनिष्ठ अनुपात (CR) = 1.5 है, तो तीसरा पद क्या है?
+A) 7.2
+B) 8.1
+C) 6
+D) 6.6
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q12. Find the odd one out from the given alternatives: दिए गए विकल्पों में से भिन्न विकल्प को चुनिए:
+A) Lok Sabha / लोकसभा
+B) Rajya Sabha / राज्यसभा
+C) Vidhan Sabha / विधानसभा
+D) Supreme Court / सर्वोच्च न्यायालय
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q13. Which term is wrong in the series: 2, 5, 10, 17, 26, 36 श्रेणी में कौन सा पद गलत है: 2, 5, 10, 17, 26, 36
+A) 5
+B) 10
+C) 36
+D) 26
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q14. Rani said, "The man in the photo is my mother's son-in-law." Who is the man to Rani? रानी ने कहा, "फोटो में दिख रहा आदमी मेरी माँ का दामाद है।" रानी के लिए वह आदमी कौन है?
+A) Husband / पति
+B) Father / पिता
+C) Uncle / चाचा
+D) Cousin / चचेरा
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q15. Evaluate (2 + 3) × (7 - 4)² = ? (2 + 3) x (7 - 4)² = ? का मूल्यांकन करें।
+A) 45
+B) 75
+C) 40
+D) 30
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q16. If 4 # 2 = 10 and 6 # 3 = 21, what is 8 # 4? यदि 4 # 2 = 10 और 6 # 3 = 21, तो 8 # 4 क्या है?
+A) 36
+B) 40
+C) 44
+D) 48
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q17. A person buys 4 apples at ₹18 each and 2 melons at ₹35 each. What is the total cost? एक व्यक्ति 4 सेब ₹18 प्रति सेब और 2 खरबूजे ₹35 प्रति खरबूजे की दर से खरीदता है। कुल मूल्य क्या है?
+A) ₹142
+B) ₹128
+C) ₹144
+D) ₹150
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q18. If 'MANGO' is coded as 'NZOHQ', how is 'PEACH' written? यदि 'MANGO' को 'NZOHQ' के रूप में कूटबद्ध किया जाता है, तो 'PEACH' को कैसे लिखा जाएगा?
+A) QFBDI / QFBDI
+B) QDBDJ / QDBDJ
+C) PFBID / PFBID
+D) FBIDP / FBIDP
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q19. If FLOWER is written as GNQXFS, how is GARDEN written in that code? यदि FLOWER को GNQXFS लिखा जाता है, तो उसी कूट में GARDEN को कैसे लिखा जाएगा?
+A) HBSEFO
+B) HBSDFO
+C) HASEFO
+D) HCTEFO
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q20. If the given symbols mean: '+' means 'divided by' '-' means 'multiplied by' '×' means 'minus' '÷' means 'plus' Then, find the value of the following expressions: 7 × 3 ÷ 4 + 20 - 5=? यदि दिए गए प्रतीकों का अर्थ है: '+' का अर्थ है 'से भाग' '-' का अर्थ है 'से गुणा' '×' का अर्थ है 'घटाना' '÷' का अर्थ है 'जोड़ना' तो, निम्नलिखित व्यंजकों का मान ज्ञात कीजिए: 7 × 3 ÷ 4 + 20 - 5=?
+A) 7
+B) 9
+C) 5
+D) 11
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q21. A is the brother of B. C is the father of A. D is the brother of C. E is the son of D. How is E related to B? A, B का भाई है। C, A का पिता है। D, C का भाई है। E, D का पुत्र है। E, B से किस प्रकार संबंधित है?
+A) Cousin / चचेरा भाई
+B) Nephew / भतीजा
+C) Uncle / चाचा
+D) Brother-in-law / साला
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q22. If '×' means '-', '-' means '+', '/' means '×', and '+' means '÷', which of the following is correct? यदि '×' का अर्थ '-' है, '-' का अर्थ '+' है, '/' का अर्थ '×' है, और '+' का अर्थ '÷' है, तो निम्न में से कौन सा सही है?
+A) 20 + 4 - 2 × 5 = 10
+B) 15 - 3 + 6 / 2 = 12
+C) 48 / 8 + 3 - 5 × 1 = 15
+D) 10 × 2 - 4 + 8 / 2 = 9
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q23. If '+' means '÷', '-' means '×', '×' means '+', and '÷' means '-', then 18 + 6 - 2 × 3 = ? यदि '+' का अर्थ '÷' है, '-' का अर्थ '×' है, '×' का अर्थ '+' है, और '÷' का अर्थ '-' है, तो 18 + 6 - 2 × 3 = ?
+A) 9
+B) 6
+C) 5
+D) 15
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q24. Statements: No circles are squares. Some squares are triangles. Conclusions: I. Some triangles are not circles. II. No triangle is a circle. कथन:कोई वृत्त वर्ग नहीं है। कुछ वर्ग त्रिभुज हैं। निष्कर्ष: I. कुछ त्रिभुज वृत्त नहीं हैं। II. कोई त्रिभुज वृत्त नहीं है।
+A) Only I follows / केवल I अनुसरण करता है
+B) Only II follows / केवल II अनुसरण करता है
+C) Both I and II follow / I और II दोनों अनुसरण करते हैं
+D) Neither I nor II follows / न तो I और न ही II अनुसरण करता है
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q25. If # = +, @ = x, % = -, then (5 # 2) @ 3 % 4 = ? यदि # = +, @ = ×, % = - है, तो (5 # 2) @ 3 % 4 = ?
+A) 20
+B) 17
+C) 18
+D) 21
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q26. How many pairs of decorative wheels are found on the Konark Sun Temple chariot? कोणार्क सूर्य मंदिर के रथ पर कितने जोड़े सजावटी पहिये लगे हैं?
+A) 10 pairs / 10 जोड़े
+B) 11 pairs / 11 जोड़े
+C) 12 pairs / 12 जोड़े
+D) 13 pairs / 13 जोड़े
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q27. Which of the following best captures the cultural essence and rituals of Baran's Dol Mela in Rajasthan? निम्नलिखित में से कौन राजस्थान में बारां के डोल मेले के सांस्कृतिक सार और अनुष्ठानों को सबसे अच्छी तरह दर्शाता है?
+A) The fair opens with Dev Viman stunts by akhada artists and concludes with an Amavasya night immersion across the city. / मेले की शुरुआत अखाड़ा कलाकारों द्वारा देव विमान करतब के साथ होती है और इसका समापन अमावस्या की रात शहर भर में विसर्जन के साथ होता है।
+B) Lord Shreeji and Raghunathji's processions on Jaljhulani Gyaras attract traders from several states. / जलझूलनी ग्यारस पर भगवान श्रीजी और रघुनाथजी की शोभा यात्राएं कई राज्यों के व्यापारियों को आकर्षित करती हैं।
+C) Known as Annapurna Gyaras, Baran's Dol Mela is celebrated only in Madhya Pradesh after the monsoon harvest. / अन्नपूर्णा ग्यारस के नाम से प्रसिद्ध बारां का डोल मेला केवल मध्य प्रदेश में मानसून की फसल के बाद मनाया जाता है।
+D) Held between Shravan and Ashwin, the event is led by monks in caves, separate from temple traditions. / श्रावण और आश्विन के बीच आयोजित होने वाले इस कार्यक्रम का नेतृत्व मंदिर की परंपराओं से अलग, गुफाओं में रहने वाले भिक्षुओं द्वारा किया जाता है।
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q28. Which of the following correctly describes the Sarthavaha in Gupta dynasty's administration? निम्नलिखित में से कौन गुप्त वंश के प्रशासन में सार्थवाह का सही वर्णन करता है?
+A) Chief artisan overseeing temples and sculpture guilds. / मंदिरों और मूर्तिकला संघों की देखरेख करने वाला मुख्य कारीगर।
+B) Officer-in-charge of military recruitment. / सैन्य भर्ती का प्रभारी अधिकारी।
+C) Head of the trading guilds representing various trading communities. / विभिन्न व्यापारिक समुदायों का प्रतिनिधित्व करने वाले व्यापारिक संघों का प्रमुख।
+D) Official supervising irrigation and waterworks. / सिंचाई एवं जल कार्यों का पर्यवेक्षण करने वाला अधिकारी।
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q29. Which of the following best reflects Kerala's musical instrument heritage? निम्नलिखित में से कौन-सा विकल्प केरल की वाद्य यंत्र परंपरा को सबसे अच्छी तरह दर्शाता है?
+A) Ravana-Hatta originated in Kerala and spread northward / रावण-हट्टा की उत्पत्ति केरल में हुई और यह उत्तर की ओर फैल गई
+B) Kerala's music uses only wind instruments like Turi and Kombu / केरल के संगीत में केवल तुरी और कोम्बू जैसे वायु वाद्य यंत्रों का उपयोग होता है
+C) Kerala's instruments are recent and mostly Western-influenced / केरल के वाद्य यंत्र नवीनतम हैं और अधिकतर पश्चिमी प्रभाव से प्रभावित हैं
+D) Drums like Timila and Maddalam are mentioned in Silappadikaram and still used today / तिमिला और मद्दलम जैसे ढोलों का उल्लेख शिल्प्पादिकारम में मिलता है और आज भी इनका प्रयोग होता है
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q30. Why is fiberglass preferred over metal for making high jump bars? हाई जंप बार बनाने के लिए धातु की अपेक्षा फाइबरग्लास को प्राथमिकता क्यों दी जाती है?
+A) Metal is too flexible for accurate performance / सटीक प्रदर्शन के लिए धातु बहुत लचीली होती है
+B) Fibreglass is light, flexible, and safer on impact / फाइबरग्लास हल्का, लचीला और प्रभाव पर सुरक्षित है
+C) Metal bends permanently; fibreglass is rigid / धातु स्थायी रूप से मुड़ जाती है; फाइबरग्लास कठोर होता है
+D) Fibreglass is cheaper and easier to shape / फाइबरग्लास सस्ता है और आकार देना आसान है
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q31. Arrange the following rulers of the Delhi Sultanate in the correct chronological order of their reigns, starting from the earliest: 1.Razia Sultan 2.Ghiyas ud din Balban 3.Qutb al-Din Aibak 4.Iltutmish दिल्ली सल्तनत के निम्नलिखित शासकों को उनके शासनकाल के सही कालानुक्रमिक क्रम में व्यवस्थित करें, आरंभिक काल से शुरू करते हुए: 1.रजिया सुल्तान 2.गयासुद्दीन बलबन 3.कुतुब अल-दीन ऐबक 4.इल्तुतमिश
+A) 3 - 4 - 1 - 2
+B) 4 - 3 - 1 - 2
+C) 3 - 1 - 4 - 2
+D) 1 - 3 - 4 - 2
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q32. What is a "brace" in football? फुटबॉल में "ब्रेस" क्या है?
+A) Two consecutive wins / लगातार दो जीत
+B) Two yellow cards / दो पीले कार्ड
+C) Scoring two goals in a match / एक मैच में दो गोल करना
+D) Saving two penalties / दो पेनल्टी बचाना
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q33. What is the primary purpose of the BRICS Startup Knowledge Hub launched in 2025? 2025 में लॉन्च किए जाने वाले ब्रिक्स स्टार्टअप नॉलेज हब का प्राथमिक उद्देश्य क्या है?
+A) Financial trade platform / वित्तीय व्यापार मंच
+B) Startup knowledge repository / स्टार्टअप ज्ञान भंडार
+C) Cultural archive / सांस्कृतिक संग्रह
+D) Capital control system / पूंजी नियंत्रण प्रणाली
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q34. Who wrote the novel Sahela Re? 'सहेला रे' उपन्यास किसने लिखा था?
+A) Vasanti Muzumdar / वसंती मुजुमदार
+B) Mrinal Pande / मृणाल पांडे
+C) Priyanka Sarkar / प्रियंका सरकार
+D) Shubhangi Tiwari / शुभांगी तिवारी
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q35. Read the following Assertion (A) and Reason (R) carefully about-The Khelo India Youth Games (Table Tennis Doubles Finals) and choose the correct option: Assertion (A): Kavya Bhatt and Divyanshi Bhowmick dropped only one game in the girls' doubles tournament. Reason (R): They beat Subhankrita Datta and Avisha Karmakar 3-0 in the final. खेलो इंडिया यूथ गेम्स (टेबल टेनिस डबल्स फ़ाइनल) के बारे में निम्नलिखित अभिकथन (A) और कारण (R) को ध्यानपूर्वक पढ़ें और सही विकल्प चुनें: अभिकथन (A): काव्या भट्ट और दिव्यांशी भौमिक ने लड़कियों के डबल्स टूर्नामेंट में केवल एक गेम गंवाया। कारण (R): उन्होंने फाइनल में सुभंकृता दत्ता और अविशा करमाकर को 3-0 से हराया।
+A) Both A and R are true, and R is the correct explanation of A. / A और R दोनों सत्य हैं, तथा R, A का सही स्पष्टीकरण है।
+B) Both A and R are true, but R is not the correct explanation of A. / A और R दोनों सत्य हैं, लेकिन R, A का सही स्पष्टीकरण नहीं है।
+C) A is false, but R is true. / A गलत है, लेकिन R सत्य है।
+D) A is true, but R is false. / A सत्य है, परन्तु R असत्य है।
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q36. Who was honoured with the Padma Shri in 2025 for empowering women by teaching traditional Bengali folk percussion? पारंपरिक बंगाली लोक तालवाद्य सिखाकर महिलाओं को सशक्त बनाने के लिए 2025 में पद्मश्री से किसे सम्मानित किया गया था?
+A) Gokul Chandra Das / गोकुल चंद्र दास
+B) Farooq Ahmad Mir / फ़ारूक़ अहमद मीर
+C) Shyam Bihari Agrawal / श्याम बिहारी अग्रवाल
+D) Sheen Kaaf Nizam / शीन काफ़ निज़ाम
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q37. India's land area covers what percentage of the world's total area? भारत का भूमि क्षेत्र विश्व के कुल क्षेत्रफल का कितना प्रतिशत है?
+A) 1.4% / 1.4%
+B) 2.4% / 2.4%
+C) 3.4% / 3.4%
+D) 4.4% / 4.4%
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q38. What is the orbital regime of the NISAR (NASA-ISRO Synthetic Aperture Radar) satellite? NISAR (नासा-इसरो सिंथेटिक एपर्चर रडार) उपग्रह की कक्षीय व्यवस्था क्या है?
+A) GEO / जियो
+B) HEO / एचईओ
+C) LEO / लियो
+D) SSO / एसएसओ
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q39. Which of the following district-state combinations is correctly matched with respect to iron ore reserves in India? भारत में लौह अयस्क भंडार के संबंध में निम्नलिखित में से कौन-सा जिला-राज्य संयोजन सही ढंग से सुमेलित है?
+A) Singhbhum - Jharkhand / सिंहभूम - झारखंड
+B) Mayurbhanj - Uttar Pradesh / मयूरभंज - उत्तर प्रदेश
+C) Sundargarh - Meghalaya / सुंदरगढ़ - मेघालय
+D) Keonjhar - Rajasthan / क्योंझर - राजस्थान
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q40. Which of these biomolecules is an essential component of the plasma membrane? इनमें से कौन-सा जैव अणु प्लाज्मा झिल्ली का एक आवश्यक घटक है?
+A) Cellulose / सेलूलोज
+B) Phospholipids / फॉस्फोलिपिड
+C) DNA
+D) Glycogen / ग्लाइकोजन
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q41. Which Constitutional Amendment Act is often referred to as the "Mini-Constitution" due to the extensive changes it introduced to the Indian Constitution? भारतीय संविधान में व्यापक परिवर्तन लाने के कारण किस संविधान संशोधन अधिनियम को प्रायः "लघु संविधान" कहा जाता है?
+A) 44th Amendment Act, 1978 / 44वां संशोधन अधिनियम, 1978
+B) 52nd Amendment Act, 1985 / 52वां संशोधन अधिनियम, 1985
+C) 42nd Amendment Act, 1976 / 42वां संशोधन अधिनियम, 1976
+D) 86th Amendment Act, 2002 / 86वां संशोधन अधिनियम, 2002
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q42. Why is it generally more severe to be burnt by steam at 100°C than by boiling water at 100°C? 100°C पर उबलते पानी की तुलना में 100°C पर भाप से जलना सामान्यतः अधिक गंभीर क्यों होता है?
+A) Steam is hotter than boiling water. / भाप उबलते पानी से अधिक गर्म होती है।
+B) Steam contains more latent heat of vaporization. / भाप में वाष्पीकरण की गुप्त ऊष्मा अधिक होती है
+C) Steam has a higher specific heat capacity. / भाप की विशिष्ट ऊष्मा धारिता अधिक होती है।
+D) Steam molecules are moving faster. / भाप के अणु तेजी से गति कर रहे हैं।
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q43. Consider the following statements about the eSanjeevani initiative: Statement 1: eSanjeevani OPD enables remote doctor consultations for citizens via online mode. Statement 2: eSanjeevani AB-HWC connects citizens with Ayushman Bharat Health and Wellness Centers (AB-HWC). Which of the above is/are correct? ई-संजीवनी पहल के बारे में निम्नलिखित कथनों पर विचार करें: कथन 1: ई-संजीवनी ओपीडी नागरिकों को ऑनलाइन माध्यम से दूरस्थ चिकित्सक परामर्श की सुविधा प्रदान करती है। कथन 2: ई-संजीवनी AB-HWC नागरिकों को आयुष्मान भारत स्वास्थ्य एवं कल्याण केंद्रों (AB-HWC) से जोड़ती है। उपर्युक्त में से कौन-सा/से सही है/हैं?
+A) Only Statement 1 is correct / केवल कथन 1 सही है
+B) Only Statement 2 is correct / केवल कथन 2 सही है
+C) Both 1 and 2 / 1 और 2 दोनों
+D) Neither 1 nor 2 / न तो 1 और न ही 2
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q44. Consider the statements about Jhora: 1. It is danced in Kumaon by mixed circles of men and women during spring fairs. 2. The dance is accompanied primarily by the Hurka drum. Which is/are correct? झोड़ा के बारे में कथनों पर विचार करें: 1. यह कुमाऊँ में वसंत मेलों के दौरान पुरुषों और महिलाओं के मिश्रित समूहों द्वारा नृत्य किया जाता है। 2. यह नृत्य मुख्य रूप से हुरका ढोल के साथ होता है। कौन-सा/से सही है/हैं?
+A) Only 1 correct / केवल 1 सही
+B) Only 2 correct / केवल 2 सही
+C) Both 1 & 2 correct / 1 और 2 दोनों सही हैं
+D) Neither 1 nor 2 correct / न तो 1 और न ही 2 सही है
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q45. Read the below statements marked as Assertion (A) and Reason (R). Mark the correct options: Assertion (A): Global Ease of Doing Business (EoDB) indicators excluded informal sectors. Reason (R): Informal enterprises are difficult to measure consistently across nations. नीचे दिए गए कथनों को अभिकथन (A) और कारण (R) से चिह्नित करें। सही विकल्पों पर निशान लगाएँ: अभिकथन (A): वैश्विक व्यापार सुगमता (EoDB) संकेतकों में अनौपचारिक क्षेत्रों को शामिल नहीं किया गया है। कारण (R): विभिन्न देशों में अनौपचारिक उद्यमों को एकसमान रूप से मापना कठिन है।
+A) Both A and R are true, and R is the correct explanation of A. / A और R दोनों सत्य हैं, तथा R, A का सही स्पष्टीकरण है।
+B) Both A and R are true, but R is not the correct explanation of A. / A और R दोनों सत्य हैं, लेकिन R, A का सही स्पष्टीकरण नहीं है।
+C) A is true, but R is false. / A सत्य है, लेकिन R असत्य है।
+D) A is false, but R is true. / A गलत है, लेकिन R सत्य है।
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q46. How is Indian Railways cutting carbon emissions? भारतीय रेलवे कार्बन उत्सर्जन में किस प्रकार कटौती कर रहा है?
+A) Return to coal / कोयले की ओर वापसी
+B) Shift to road freight / सड़क माल ढुलाई में बदलाव
+C) Electrify broad gauge & use renewables / विद्युतीकृत ब्रॉड गेज और नवीकरणीय ऊर्जा का उपयोग
+D) End passenger services / यात्री सेवाएं समाप्त
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q47. Read the following Assertion (A) and Reason (R) carefully and choose the correct option. Assertion (A): The Mahalanobis strategy prioritized heavy industries and capital goods. Reason (R): It was believed that investing in such industries would create long-term capacity for growth. निम्नलिखित अभिकथन (A) और कारण (R) को ध्यानपूर्वक पढ़ें और सही विकल्प चुनें। अभिकथन (A): महालनोबिस रणनीति ने भारी उद्योगों और पूँजीगत वस्तुओं को प्राथमिकता दी। कारण (R): यह माना जाता था कि ऐसे उद्योगों में निवेश करने से विकास की दीर्घकालिक क्षमता पैदा होगी।
+A) Both A and R are true and R is the correct explanation of A. / A और R दोनों सत्य हैं और R, A की सही व्याख्या है।
+B) Both A and R are true but R is not the correct explanation of A. / A और R दोनों सत्य हैं लेकिन R, A का सही स्पष्टीकरण नहीं है।
+C) A is true but R is false. / A सत्य है लेकिन R असत्य है।
+D) A is false but R is true. / A गलत है लेकिन R सत्य है।
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q48. Under which Article of the Indian Constitution is Hindi in Devanagari script declared as the official language of the Union? भारतीय संविधान के किस अनुच्छेद के तहत देवनागरी लिपि में हिंदी को संघ की आधिकारिक भाषा घोषित किया गया है?
+A) Article 348 / अनुच्छेद 348
+B) Article 343 / अनुच्छेद 343
+C) Article 344 / अनुच्छेद 344
+D) Article 351 / अनुच्छेद 351
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q49. Match the geological feature with its primary plate boundary type: 1. Mid-ocean ridge 2. Mariana Trench 3. San Andreas Fault भूर्वैज्ञानिक विशेषता का उसके प्राथमिक प्लेट सीमा प्रकार से मिलान करें: 1. मध्य-महासागरीय कटक 2. मारियाना ट्रेंच 3. सैन एंड्रियास फ़ॉल्ट
+A) 1-Divergent, 2-Convergent, 3-Transform / 1-अपसारी, 2-अभिसारी, 3-रूपांतरित
+B) 1-Convergent 2-Divergent 3-Transform / 1-अभिसारी 2-अपसारी 3-रूपांतरण
+C) 1-Transform 2-Convergent 3-Divergent / 1-रूपांतरण 2-अभिसारी 3-अपसारी
+D) 1-Divergent 2-Transform 3-Convergent / 1-अपसारी 2-रूपांतरित 3-अभिसारी
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q50. Consider the following statements: 1. Parliament can create All India Services with approval of Rajya Sabha. 2. Article 312 mentions 'Security Services' as part of All India Services. Which of the above statements is/are correct? निम्नलिखित कथनों पर विचार कीजिए: 1. संसद, राज्यसभा की स्वीकृति से अखिल भारतीय सेवाओं का निर्माण कर सकती है। 2. अनुच्छेद 312 में 'सुरक्षा सेवाओं' को अखिल भारतीय सेवाओं के भाग के रूप में उल्लेखित किया गया है। उपर्युक्त कथनों में से कौन-सा/से सही है/हैं?
+A) Only 1 / केवल 1
+B) Only 2 / केवल 2
+C) Both 1 and 2 / 1 और 2 दोनों
+D) Neither 1 nor 2 / न तो 1 और न ही 2
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q51. If A : B = 7 : 5, B : C = 2 : 3, and C : D = 4 : 5, find the ratio A : D. यदि A : B = 7 : 5, B : C = 2 : 3, तथा C : D = 4 : 5 है, तो A : D का अनुपात ज्ञात कीजिए।
+A) 14 : 25
+B) 28 : 25
+C) 56 : 75
+D) 75 : 56
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q52. Simplify: (7/5 ÷ 14/15) × (10/7 ÷ 5/3). सरल करें: (7/5 ÷ 14/15) × (10/7 ÷ 5/3)
+A) 9/7
+B) 7/9
+C) 5/7
+D) 7/5
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q53. Simplify:(1.5 + 3/8)3 - (9/5 × 1.25) सरल करें: (1.5 + 3/8)³ - (9/5 x 1.25)
+A) 4.3418
+B) 5.3418
+C) 6.5526
+D) 7.5526
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q54. Simplify: ((1.5 + 3/4) ÷ (2.25 - 1/2)) + 0.6. सरल करें: ((1.5 + 3/4) ÷ (2.25 - 1/2)) + 0.6
+A) 1.8857
+B) 2.8857
+C) 3.8857
+D) 4.8857
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q55. A container holds a mixture of three liquids A, B, and C in ratio 2 : 3 : 5. If 6 liters of liquid A, 12 liters of liquid B, and a certain amount of liquid C are added to the container, the new ratio of liquids A, B, and C becomes 3 : 5 : 8. Find the quantity (in liters) of liquid C added. एक कंटेनर में तीन तरल पदार्थ A, B और C का मिश्रण 2 : 3 : 5 के अनुपात में है। यदि कंटेनर में 6 लीटर तरल A, 12 लीटर तरल B और तरल C की एक निश्चित मात्रा डाली जाती है, तो तरल पदार्थ A, B और C का नया अनुपात 3 : 5 : 8 हो जाता है। मिलाए गए तरल C की मात्रा (लीटर में) ज्ञात कीजिए।
+A) 15 liters / 15 लीटर
+B) 16 liters / 16 लीटर
+C) 18 liters / 18 लीटर
+D) 20 liters / 20 लीटर
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q56. Gautam started a business with a sum of ₹ 60,000. Jatin joined him 8 months later with a sum of ₹ 35,000. At what respective ratio will the two share the profit after two years? गौतम ने ₹ 60,000 की राशि के साथ एक व्यवसाय शुरू किया है। जतिन 8 महीने बाद ₹ 35,000 की राशि के साथ उसके साथ जुड़ जाता है। दो वर्ष बाद दोनों किस अनुपात में लाभ साझा करेंगे?
+A) 18:7
+B) 15:7
+C) 12:7
+D) 5:7
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q57. The average weight of 12 people is 65 kg. If one person leaves and the new average becomes 64.5 kg, what is the weight of the person who left? 12 व्यक्तियों का औसत वजन 65 किलोग्राम है। यदि एक व्यक्ति चला जाता है और नया औसत 64.5 किलोग्राम हो जाता है, तो चले गए व्यक्ति का वजन क्या है?
+A) 70.5
+B) 80.5
+C) 90.5
+D) 60.5
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q58. Table - Monthly Sales (in ₹1000) Sales Person Jan Feb March April P 50 60 70 55 Q 65 68 62 64 The average monthly sales of Q? तालिका - मासिक बिक्री (₹1000 में) विक्रेता जनवरी फरवरी मार्च अप्रैल P 50 60 70 55 Q 65 68 62 64 Q की औसत मासिक बिक्री क्या है?
+A) ₹63.5
+B) ₹64.75
+C) ₹65.75
+D) ₹65
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q59. In how many years will ₹50,000 become ₹66,550 at 10% compound interest per annum? 10% वार्षिक चक्रवृद्धि ब्याज की दर से कितने वर्षों में ₹50,000, ₹66,550 हो जायेंगे?
+A) 4
+B) 5
+C) 6
+D) 3
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q60. The ratio of the profit to the cost price of a product is 2: 7. What is the ratio of its selling price to its profit? किसी वस्तु के लाभ और क्रय मूल्य का अनुपात 2:7 है। इसके विक्रय मूल्य और लाभ का अनुपात क्या है?
+A) 9:2
+B) 9:10 / 9:10
+C) 5:15 / 5:15
+D) 6:17 / 6:17
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q61. A sweet shop owner buys 10 boxes of sweets for the price of 8 boxes from a wholesaler. If he sells each box at a 2% discount on its marked price, what is his profit percentage? एक मिठाई की दुकान का मालिक एक थोक विक्रेता से 8 बॉक्स के मूल्य पर 10 बॉक्स मिठाई खरीदता है। यदि वह प्रत्येक बॉक्स को उसके अंकित मूल्य पर 2% छूट पर बेचता है, तो उसका लाभ प्रतिशत क्या है?
+A) 20% / 20%
+B) 24.36% / 24.36%
+C) 22.5% / 22.5%
+D) 25.86% / 25.86%
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q62. A book publisher offers a novel to a bookstore at a 30% discount on the cover price. However, they charge an additional 5% on the discounted price for shipping. The bookstore sells the novel for ₹1620 more, earning a profit of 40%. What was the original cover price of the novel? एक पुस्तक प्रकाशक एक पुस्तक की दुकान को कवर मूल्य पर 30% छूट पर एक उपन्यास बेचता है। हालांकि, वे शिपिंग के लिए छूट वाले मूल्य पर 5% अतिरिक्त शुल्क लेते हैं। पुस्तक की दुकान उपन्यास को ₹1620 अधिक में बेचती है, जिससे उसे 40% का लाभ होता है। उपन्यास का मूल कवर मूल्य क्या था?
+A) ₹5,510.20
+B) ₹19,254.62
+C) ₹18,181.82
+D) ₹20,654.67
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q63. A cistern contains 100 liters of pure syrup. 10 liters of syrup are drawn out and replaced by water. Then, 10 liters of the mixture are drawn out and replaced by water again. What is the ratio of syrup to water in the final mixture? एक टंकी में 100 लीटर शुद्ध सिरप है। 10 लीटर सिरप निकाला जाता है और उसकी जगह पानी डाला जाता है। फिर, 10 लीटर मिश्रण निकाला जाता है और फिर से पानी से प्रतिस्थापित किया जाता है। अंतिम मिश्रण में सिरप और पानी का अनुपात क्या है?
+A) 18:1
+B) 89:14
+C) 81:19
+D) 18:17
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q64. A metal sphere having a radius of 10 centimeters is melted down and molded into 8 identical smaller solid spheres. What is the ratio of the surface area of the original sphere to the total surface area of all 8 smaller spheres? 10 सेमी त्रिज्या वाले एक धातु के गोले को पिघलाकर 8 समान छोटे ठोस गोले में ढाला गया है। मूल गोले के पृष्ठीय क्षेत्रफल का सभी 8 छोटे गोलों के कुल पृष्ठीय क्षेत्रफल से अनुपात क्या है?
+A) 1:2
+B) 2:1
+C) 1:4
+D) 1:1
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q65. How many hemispheres with a radius of 3 cm can be produced by melting down a hemisphere with a radius of 12 cm? 12 सेमी त्रिज्या वाले एक अर्धगोले को पिघलाकर 3 सेमी त्रिज्या वाले कितने अर्धगोले बनाए जा सकते हैं?
+A) 32
+B) 64
+C) 12
+D) 54
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q66. A cylinder and hemisphere have the same radius. Their combined height is 30 cm. If the cylinder and hemisphere have equal volumes, find the radius. एक बेलन और एक अर्धगोले की त्रिज्या समान है। उनकी संयुक्त ऊँचाई 30 सेमी है। यदि बेलन और अर्धगोले का आयतन समान है, तो त्रिज्या ज्ञात कीजिए।
+A) 12cm / 12 सेमी
+B) 15cm / 15 सेमी
+C) 16cm / 16 सेमी
+D) 18cm / 18 सेमी
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q67. A pyramid has a base area of 60 cm² and height 9 cm. What is its volume? एक पिरामिड का आधार क्षेत्रफल 60 वर्ग सेमी और ऊँचाई 9 सेमी है। इसका आयतन क्या है?
+A) 180 cm³ / 180 सेमी³
+B) 280 cm³ / 280 सेमी³
+C) 240 cm³ / 240 सेमी³
+D) 160 cm³ / 160 सेमी³
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q68. A circular disc of radius 7 cm is inscribed inside an equilateral triangle. What is the approximate area of the remaining portion of the triangle? 7 सेमी त्रिज्या वाली एक वृत्ताकार डिस्क एक समबाहु त्रिभुज के अन्दर अन्तर्निहित है। त्रिभुज के शेष भाग का अनुमानित क्षेत्रफल क्या है?
+A) 100.6 cm² / 100.6 सेमी²
+B) 148.2 cm² / 148.2 सेमी²
+C) 200.3 cm² / 200.3 सेमी²
+D) 155.6 cm² / 155.6 सेमी²
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q69. In triangle ABC, medians AD, BE, and CF intersect at the centroid G. What is the ratio of the area of triangle GAB to the area of triangle ABC? त्रिभुज ABC में, माध्यिकाएँ AD, BE और CF केंद्रक G पर प्रतिच्छेद करती हैं। त्रिभुज GAB के क्षेत्रफल का त्रिभुज ABC के क्षेत्रफल से अनुपात क्या है?
+A) 1:2
+B) 1:3
+C) 2:3
+D) 1:4
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q70. In △ABC, a line segment DE is parallel to BC, with D on AB and E on AC. If the ratio of the area of △ADE to the area of the trapezoid DECB is 4:21, what is the ratio of AD to DB? △ABC में, एक रेखाखंड DE, BC के समानांतर है, जिसमें D, AB पर और E, AC पर है। यदि △ADE के क्षेत्रफल का समलंब चतुर्भुज DECB के क्षेत्रफल से अनुपात 4:21 है, तो AD और DB का अनुपात क्या है?
+A) 2:3
+B) 2:5
+C) 3:5
+D) 4:5
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q71. A right triangle has sides 3, 4, and 5. A smaller triangle is drawn inside it with its vertices on the sides of the larger triangle, such that it is similar to the larger triangle. If its perimeter is 6, what is its area? एक समकोण त्रिभुज की भुजाएँ 3, 4 और 5 हैं। इसके अंदर एक छोटा त्रिभुज खींचा गया है जिसके शीर्ष बड़े त्रिभुज की भुजाओं पर इस प्रकार रखे गए हैं कि वह बड़े त्रिभुज के समरूप हो। यदि इसका परिमाप 6 है, तो इसका क्षेत्रफल क्या है?
+A) 1.5
+B) 2.4
+C) 3
+D) 6
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q72. Two circles have radii of 12 cm and 4 cm. If the length of a direct common tangent is 15 cm, what is the distance between their centers? दो वृत्तों की त्रिज्याएँ 12 सेमी और 4 सेमी हैं। यदि एक सीधी उभयनिष्ठ स्पर्श रेखा की लंबाई है 15 सेमी, तो उनके केंद्रों के बीच की दूरी क्या है?
+A) 15 cm / 15 सेमी
+B) 17 cm / 17 सेमी
+C) 18 cm / 18 सेमी
+D) 20 cm / 20 सेमी
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q73. The distance between the centers of two circles is d. The lengths of their direct and transverse common tangents are L and M, respectively. If L2 + M2 = 200 and the sum of the squares of their radii is 100, what is the value of d? दो वृत्तों के केंद्रों के बीच की दूरी d है। उनकी सीधी और अनुप्रस्थ उभयनिष्ठ स्पर्श रेखाओं की लंबाइयाँ क्रमश: L और M हैं। यदि L² + M² = 200 और उनकी त्रिज्याओं के वर्गों का योग 100 है, तो d का मान क्या है?
+A) 10
+B) 10√2 / 10√2
+C) 5√2 / 5√2
+D) 20
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q74. There are two parallel chords measuring 16 cm and 12 cm, both situated on the same side of the center of a circle. The space between the two chords is 2 cm. What is the radius of the circle? एक वृत्त के केंद्र के एक ही ओर स्थित 16 सेमी और 12 सेमी माप वाली दो समांतर जीवाएँ हैं। दोनों जीवाओं के बीच की दूरी 2 सेमी है। वृत्त की त्रिज्या क्या है?
+A) 8 cm / 8 सेमी
+B) 10 cm / 10 सेमी
+C) 12 cm / 12 सेमी
+D) 15 cm / 15 सेमी
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q75. What is the area of the segment formed by a chord in a circle of radius 12 cm, if the angle subtended at the center is 150°? 12 सेमी त्रिज्या वाले एक वृत्त में एक जीवा द्वारा बनाए गए रेखाखंड का क्षेत्रफल क्या है, यदि केंद्र पर अंतरित कोण 150° है?
+A) 60π-36 / 60π-36
+B) 36π-36 / 36π-36
+C) 60π-72 / 60π-72
+D) 36π-72 / 36π-72
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q76. Select the most appropriate synonym of the given word: NONCHALANT
+A) Anxious
+B) Tense
+C) Worried
+D) Carefree
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q77. Choose the correct meaning of idiom: Keep at bay
+A) To monitor closely
+B) To keep away or at a safe distance
+C) To defeat completely
+D) To take advantage of
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q78. Select the most appropriate antonym of the given word. Quixotic
+A) Romantic
+B) Visionary
+C) Pragmatic
+D) Idealistic
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q79. Identify the misspelt word
+A) Apothegm
+B) Esoterica
+C) Onomatopiea
+D) Sesquipedalian
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q80. Spot the correct spelling of adjective 'relating to the muscular tissue of the heart'.
+A) Myocardiac
+B) Myocordial
+C) Myocardial
+D) Myocardiol
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q81. Choose the correct one-word substitution for: 'An act of intentionally setting fire to property'.
+A) Burglary
+B) Vandalism
+C) Arson
+D) Sabotage
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q82. Choose the correct one-word substitute for: 'Fear of public speaking.'
+A) Glossophobia
+B) Sociophobia
+C) Anthophobia
+D) Ergophobia
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q83. Select the correct option: Not until the data was independently verified ____ accepted by the journal.
+A) it was
+B) was it
+C) did it
+D) had it
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q84. Select the correct option: Though the board remained divided on procedural issues, the chairperson, ____ authority was rarely contested, pushed the resolution through.
+A) whose
+B) whom
+C) who's
+D) which
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q85. Find the part of the sentence that contains an error: The spokesperson refused to comment (1)/ until the investigation would be completed (2)/ to avoid jeopardising (3)/ ongoing proceedings. (4)/
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q86. Change the following from active to passive: Did the council approve the comprehensive zoning plan?
+A) Has the comprehensive zoning plan been approved by the council?
+B) Is the comprehensive zoning plan being approved by the council?
+C) Was the comprehensive zoning plan being approved by the council?
+D) Was the comprehensive zoning plan approved by the council?
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q87. Find the part of the sentence that contains an error: Were he to have responded promptly (1)/ the crisis could have been (2)/ averted far earlier than it ultimately was (3)/ saving valuable diplomatic capital. (4)
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q88. Select the sentence containing the homonym of the highlighted word: She placed a compact mirror in her purse.
+A) The team formed a compact defensive unit.
+B) He compacted the soil using a roller.
+C) They signed a compact to maintain peace.
+D) The book was written in a compact style.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q89. Convert the sentence provided below from its passive voice structure to an active voice structure: The accused was believed to have been hiding in the hills before being captured.
+A) The accused believed he was hiding in the hills.
+B) Someone believed the accused had hidden in the hills.
+C) It was believed that the accused had been hiding in the hills.
+D) Authorities believed the accused was hiding in the hills.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q90. PASSAGE (Q.90 - Q.94) Read the following passage and answer the questions based on the passage : To bifurcate life into immutable dichotomies of joy and sorrow is to misread its most intrinsic rhythm. Human existence unfolds not as a linear progression of happiness or despair, but as a dynamic interplay where each emotion deepens the resonance of the other. The ecstasy of triumph is never as poignant as when preceded by failure; likewise, the pang of loss finds contour only because we have once cherished the presence of what is now absent. Joy and sorrow, then, are not adversaries but co-authors of the same narrative. From antiquity to modernity, philosophical traditions have acknowledged this existential polarity. The Stoics embraced the inevitability of suffering as a precursor to tranquility, while Eastern philosophies like Buddhism anchor themselves in the impermanence of all experiences. In both frameworks, the pursuit of enduring happiness necessitates an acceptance of transience. Without sorrow, joy would be indistinct—a flat and shallow sensation lacking contrast or value. This interdependence is vividly manifest in the mundane. The delight of spring is intensified by the memory of a harsh winter; the serenity of solitude is meaningful only to one who has tasted the cacophony of crowds. Even our personal growth often emerges from crucibles of pain—grief chisels depth into our emotional landscape, refining our capacity for empathy, resilience, and gratitude. To demand unbroken happiness is to seek a monochromatic life—an existence devoid of emotional texture. The beauty of being lies not in circumventing sorrow, but in embracing it as a necessary foil to joy. These twin sentiments coalesce to form the chiaroscuro of consciousness, rendering our lives more vivid, more intricate, more human. Which of the following best completes the analogy: Joy is to presence as sorrow is to — ?
+A) Freedom
+B) Anticipation
+C) Absence
+D) Stagnation
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q91. Based on the passage, what can be reasonably inferred about the author's perspective on human emotions?
+A) Life should be devoid of emotional pain
+B) Emotions exist in strict binaries
+C) Sorrow deepens the meaning of joy
+D) Joy is an artificial construct
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q92. What is the author's primary purpose in writing this passage?
+A) To highlight philosophical traditions
+B) To argue that sorrow should be embraced as essential to experiencing true joy
+C) To lament the fragility of happiness
+D) To critique modern emotional detachment
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q93. What tone does the author primarily adopt throughout the passage?
+A) Whimsical
+B) Philosophical
+C) Satirical
+D) Indifferent
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q94. In the context of the passage, what does the word chiaroscuro most likely mean?
+A) Emotional paralysis
+B) A blend of light and shadow
+C) A musical variation
+D) A specific type of sorrow
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q95. Choose the most suitable option to replace the highlighted part of the sentence: She do not knows the answer to this question.
+A) do not knew
+B) does not know
+C) is not knowing
+D) do not know
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q96. Choose the most suitable option to replace the highlighted part of the sentence: He is senior than me in age.
+A) more senior than me
+B) senior to me by age
+C) senior to me in age
+D) elder to me
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q97. A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. I said, "He will be here by noon."
+A) I said he will be there by noon.
+B) I said that he would be here by noon.
+C) I said that he would be there by noon.
+D) I said he shall be there by noon.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q98. A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The assistant said that she was not feeling well and would leave early.
+A) "I am not feeling well and will leave early," the assistant said.
+B) "I was not feeling well and would leave early," said the assistant.
+C) "I'm not well and am leaving," she said.
+D) "I am not well and I leave now," said the assistant.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q99. Rearrange the following sentences to form a coherent paragraph: 1. This is particularly challenging in industries such as steel and cement production, where emissions are an integral part of the manufacturing process. 2. As a result, carbon capture and storage (CCS) technologies have emerged as a crucial component of strategies aimed at reducing industrial greenhouse gas emissions. 3. Achieving carbon neutrality requires a significant reduction in emissions across all economic sectors. 4. These technologies capture carbon dioxide at the source, preventing its release into the atmosphere and either utilizing it or storing it permanently underground.
+A) 1, 2, 3, 4
+B) 3, 1, 2, 4
+C) 2, 1, 3, 4
+D) 4, 3, 1, 2
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q100. Rearrange the following sentences to form a coherent paragraph: 1. This allows a programmer to specify the structure and behavior of an object-oriented program. 2. Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects," which can contain data and code. 3. A central tenet of OOP is the concept of a "class," which acts as a blueprint for creating objects. 4. The key advantage of this approach is that it models real-world entities, making complex systems easier to manage and debug.
+A) 2, 3, 1, 4
+B) 4, 3, 2, 1
+C) 3, 1, 4, 2
+D) 1, 2, 3, 4
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+

@@ -1,0 +1,778 @@
+Q.1: Find the WRONG number in the series. 11.2,
+
+16.8, 42, 146, 661.5
+A. 146
+B. 16.8
+C. 42
+D. 11.2
+Answer: A
+
+Q.2: E (B) K
+
+(C) (D)
+
+![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p2_x25.jpeg)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_q2_opt_A.png)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_q2_opt_B.png)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_q2_opt_C.png)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_q2_opt_D.png)
+Answer: B
+
+Q.3: Choose the roll number with even digits only.
+A. 234x446
+B. 135x357
+C. 468x864
+D. 579x975
+Answer: C
+
+Q.4: Find the odd one out. Ganga, Yamuna, Godavari, Everest
+A. Ganga
+B. Yamuna
+C. Godavari
+D. Everest
+Answer: D
+
+Q.5: Statements:
+
+1. The Indian Museum in Kolkata, established in 1814, is one of the oldest and most important museums in India.
+
+2. It is fully funded and managed by the Central Government, under the Ministry of Culture.
+
+Conclusions:
+
+I. The Indian Museum is a centrally administered cultural institution.
+
+II. All museums in India were established before 1900 is funded by central Government .
+A. Only conclusion I follows
+B. Only conclusion II follows
+C. Neither conclusion I nor II follows 1 INTELLIGENCE
+D. Both conclusion I and II follow
+Answer: A
+
+Q.6: Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option.
+
+Statement: Despite the challenges faced by renewable energy sources, they are the only long-term solution to our dependency on fossil fuels. Assumptions:
+
+I. Renewable energy sources face certain challenges.
+
+II. Fossil fuels are not a sustainable long-term solution.
+
+III. Renewable energy sources can entirely replace fossil fuels.
+A. Only I and II are implicit
+B. Only II and III are implicit
+C. All are implicit
+D. Only I is implicit
+Answer: D
+
+Q.7: Which of the following is/are identical to the address given: Shruti Mehta 3/6, Lotus Avenue, Lucknow, 226007
+
+1. Shruti Mehta 3/6, Lotus Avenue, Lucknow, 226007
+
+2. Shruti Mehta 3/6, Lotus Avenue, Lucknow, 226007
+
+3. Shruti Mehta 3/6, Lotus Avenue, Lucknow, 226008
+
+4. Shruti Mehta 3/6, Lotus Avenue, New Lucknow, 226007
+A. 1 and 2
+B. 1 and 3
+C. 2 and 4
+D. 3 and 4
+Answer: A
+
+Q.8: Find the next number in the sequence. 2, 5, 10, 17, ?
+A. 24
+B. 26
+C. 28
+D. 30
+Answer: B
+
+Q.9: Find the most suitable pair:
+A. Ramayana – Ved Vyasa, Macbeth – Leo Tolstoy, Hamlet – Charles Dickens, War and Peace – William Shakespeare, Gitanjali – Rabindranath Tagore
+B. Hamlet – Charles Dickens
+C. Macbeth – Leo Tolstoy
+D. War and Peace – William Shakespeare
+Answer: D
+
+Q.10: Complete the series. Z9, X8, V7, T6, ?
+A. R5
+B. Q5
+C. P5
+D. Gitanjali – Rabindranath Tagore
+Answer: A
+
+Q.11: If "SUN" is coded as "19 21 14", how will "MOON" be coded?
+A. 12 14 14 13
+B. 14 16 16 15
+C. 13 15 15 14
+D. 11 13 13 12
+Answer: C
+
+Q.12: Find the INCORRECT number in the series. 5, 15, 45, 125, 405
+A. 15
+B. 45
+C. 125
+D. 405
+Answer: C
+
+Q.13: ![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p3_x308.jpeg)
+A. 450
+B. 550
+C. 650
+D. 750 2
+Answer: B
+
+Q.14: ![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p3_x309.jpeg)
+A. 25
+B. 30
+C. 20
+D. 15
+Answer: A
+
+Q.15: Identify the figure that does not belong to the group, based on shape.
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_q15_opt_A.png)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_q15_opt_B.png)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_q15_opt_C.png)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_q15_opt_D.png)
+Answer: A
+
+Q.16: A shop sells pens at ₹12 each and notebooks at ₹30 each. If a customer buys 3 pens and 2 notebooks, what's the total cost?
+A. ₹96
+B. ₹114
+C. ₹102
+D. ₹108
+Answer: A
+
+Q.17: In the following question, two groups of letters are related by a specific pattern. Identify the same pattern and apply it to the second group to find the missing letters. ACD : BFJ :: FGH : ?
+A. GIN
+B. GJO
+C. GJN
+D. HIL
+Answer: C
+
+Q.18: How many letters will remain at the same position in the word 'PROBLEM' when the letters are arranged in alphabetical order from left to right?
+A. 0
+B. 1
+C. 2
+D. 3
+Answer: A
+
+Q.19: Identify the alternative set of numbers that correctly codes the word. The code uses [Row, Column] format. | | 1 | 2 | 3 | 4 | 5 | 6 | 7 | |---|---|---|---|---|---|---|---| | 1 | F | R | J | E | M | D | S | | 2 | B | O | T | T | L | E | R | | 3 | C | A | N | D | I | E | P | | 4 | J | U | M | B | L | Y | O | | 5 | W | O | N | D | E | R | S | | 6 | G | A | R | D | E | N | X | | 7 | P | L | A | N | E | T | Q | What is the correct code for "MANIFEST"?
+A. (4,3)(3,2)(7,4)(3,5)(3,1)(2,5)(5,7)(4,3)
+B. (4,3)(3,2)(7,4)(3,5)(1,4)(2,6)(5,6)(2,4)
+C. (4,3)(3,2)(7,4)(3,5)(1,1)(2,6)(5,7)(2,3)
+D. (4,3)(3,2)(7,4)(3,5)(4,1)(3,1)(5,6)(2,7)
+Answer: A
+
+Q.20: You're working on a team project, and a colleague asks you to cover for them by saying they were in a meeting with you yesterday afternoon, when in fact they left early without informing the manager. What should you do?
+A. Agree to cover for them since they're a friend and would do the same for you.
+B. Politely decline, and tell them you're not comfortable being dishonest if asked.
+C. Immediately report your colleague to the manager.
+D. Ignore the request and avoid the colleague going forward.
+Answer: B
+
+Q.21: ![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p4_x566.jpeg)
+A. 3
+B. 2
+C. 1
+D. 4
+Answer: A
+
+Q.22: ![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p4_x567.jpeg)
+A. 1
+B. 2
+C. 3
+D. 4
+Answer: A
+
+Q.23: ![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p4_x568.jpeg)
+A. 2
+B. 3
+C. 4
+D. 1
+Answer: B
+
+Q.24: How many triangles are there in the given figure?
+A. 27
+B. 25
+C. 19
+D. 15
+Answer: A
+
+Q.25: ![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p4_x569.jpeg)
+A. 3
+B. 2
+C. 1
+D. 4
+Answer: A
+
+Q.26: In which period did humans first start making and using pottery?
+A. Neolithic Age
+B. Mesolithic Age
+C. Palaeolithic Age
+D. Chalcolithic Age 3 AWARENESS
+Answer: A
+
+Q.27: To which of these groups did the ambassador Heliodorus, who built the pillar at Vidisha, belong?
+A. The Parthian
+B. The Kushan Kingdom Kingdom
+C. The Indo-Greek
+D. The Indo-Scythian Kingdom Kingdom
+Answer: A
+
+Q.28: What does the term "jama" refer to in the Mughal revenue system?
+A. Actual revenue collected during the year.
+B. Estimated revenue assessed from an area.
+C. Tax-free land grant to religious institutions.
+D. Revenue assigned to jagirdars.
+Answer: A
+
+Q.29: According to Article 60 of the Indian Constitution, who administers the oath of office to the President of India?
+A. Prime Minister
+B. Vice President
+C. Chief Justice of
+D. Speaker of the India Lok Sabha
+Answer: A
+
+Q.30: Which article of the Constitution of India states that a person must have completed the age of 35 years to be eligible for election as President?
+A. Article 52
+B. Article 66
+C. Article 58
+D. Article 84
+Answer: A
+
+Q.31: Under Article 111 of the Indian Constitution, what does the President's "Suspensive Veto" power allow him to do in relation to a Bill passed by Parliament?
+A. Withhold the Bill indefinitely
+B. Return the Bill for reconsideration
+C. Reject the Bill permanently
+D. Refer the Bill to the Supreme Court
+Answer: A
+
+Q.32: In which month was Pitt's India Act of 1784 passed?
+A. June
+B. August
+C. September
+D. March
+Answer: A
+
+Q.33: Fill in the blank: The _______ effect describes the deflection of moving objects (like winds and ocean currents) to the right in the Northern Hemisphere due to Earth's rotation.
+A. Doppler
+B. Coriolis
+C. Greenhouse
+D. Tyndall
+Answer: A
+
+Q.34: In which of the following states is the Anthurium Festival celebrated?
+A. Kerala
+B. Mizoram
+C. Sikkim
+D. West Bengal
+Answer: A
+
+Q.35: Which principle makes an athlete responsible for any substance found in their sample?
+A. Negligence
+B. Strict Liability
+C. Intentionality
+D. Consent
+Answer: A
+
+Q.36: Which of the following pairs of traditional folk dance and its associated state is correctly matched?
+A. Gendi - Chhattisgarh
+B. Cheraw - Kerala Chhattisgarh
+C. Hojagiri - Sikkim
+D. Baredi - Nagaland
+Answer: A
+
+Q.37: Which of the following terms refers to the primary form of compositions in the Carnatic music tradition?
+A. Bandish
+B. Ghazal
+C. Kriti
+D. Thumri
+Answer: A
+
+Q.38: What is the main objective of RBI’s (Reserve Bank of India) Unified Lending Interface (ULI) initiative in India?
+A. To replace UPI for digital payments
+B. To enable inclusive and frictionless access to credit
+C. To regulate global cryptocurrency transactions
+D. To manage central bank recruitment
+Answer: A
+
+Q.39: Which of the following author-language pairs (Poetry category) for the Sahitya Akademi Award 2025 is correctly matched?
+A. Sadhu Bhadreshdas – Urdu
+B. Pritpal Singh Betab – Sanskrit
+C. Nandini Sidha Reddy – Telugu
+D. Khajur Singh Thakur – Gujarati
+Answer: A
+
+Q.40: Which of the following correctly matches the width measurement of the pommel horse in gymnastics?
+A. Top – 30 cm, Bottom – 35 cm
+B. Top - 35 cm, Bottom - 30 cm
+C. Top - 40 cm, Bottom - 35 cm
+D. Top - 25 cm, Bottom - 30 cm
+Answer: A
+
+Q.41: The inclusion of Myanmar transformed BISTEC (Bangladesh, India, Sri Lanka, Thailand Economic Cooperation) into:
+A. BBIN (Bangladesh, Bhutan, India, Nepal)
+B. BIMST-EC (Bangladesh, India, Myanmar, Sri Lanka, Thailand Economic Cooperation)
+C. ASEAN-EC (Association of Southeast Asian Nations Economic Cooperation)
+D. BIMSTEC Plus (Bay of Bengal Initiative for Multi-Sectoral Technical and Economic Cooperation Plus)
+Answer: B
+
+Q.42: Which of the following best defines a "document" under the Bharatiya Sakshya Adhiniyam, 2023?
+A. Only written paper records signed by parties
+B. Only electronic records generated by computers
+C. Any matter recorded by letters, figures, marks, or electronic or digital means intended for recording matter
+D. Only officially certified records
+Answer: C
+
+Q.43: Who was appointed as Executive Director of the Reserve Bank of India with effect from March 3, 2026?
+A. Ajay Seth
+B. Sanjay Kumar Hansda
+C. Rajeshwar Rao
+D. T. Rabi Sankar
+Answer: B
+
+Q.44: Which of the following correctly identifies speech area overlap between Dravidian and Indo-Aryan groups?
+A. Bihar appears in both Dravidian and Indo- Aryan lists
+B. Kerala appears in both Dravidian and Sino- Tibetan lists
+C. Assam appears in both Austric and Indo- Aryan lists
+D. Tamil Nadu appears in both Austric and Dravidian lists
+Answer: A
+
+Q.45: Fill in the blank: Privatisation of public sector enterprises by selling off part of the equity of Public Sector Enterprise (PSE) to the public is known as____.
+A. nationalisation
+B. globalisation
+C. disinvestment
+D. investment
+Answer: C
+
+Q.46: Which of the following pollutants has only an annual National Ambient Air Quality Standard and is therefore not included in India’s routine Air Quality Index (AQI) calculation?
+A. Ammonia(NH3)
+B. Ozone(O3)
+C. Carbon monoxide
+D. Benzene (C6H6) (CO)
+Answer: D
+
+Q.47: How much did the payload performance of the Small Satellite Launch Vehicle increase due to the first carbon-epoxy solid motor case used in its Solid Stage-3 motor during ISRO's 2025 Technology Demonstration tests?
+A. 40 kg
+B. 60 kg
+C. 90 kg
+D. 120 kg
+Answer: C
+
+Q.48: What was a major architectural purpose of intricate jali work in Indo-Islamic buildings?
+A. To increase structural weight and stability
+B. To display abundant construction materials and wealth
+C. To filter light while providing ventilation and privacy
+D. To determine building height and proportion
+Answer: C
+
+Q.49: Which of the following was not one of the principal reasons for Siraj-ud-Daula’s hostility towards the English East India Company in 1756?
+A. The Company fortified Calcutta without the Nawab’s permission.
+B. The Company gave asylum to Krishna Das, the son of Raj Ballabh.
+C. The Company demanded the abolition of all inland duties on the salt trade.
+D. The Company misused its trade privileges, causing financial losses to the Nawab.
+Answer: C
+
+Q.50: During physical exercise, a person's pulse rate rises from 70 beats per minute to 110 beats per minute. By how many beats per minute does the pulse rate increase?
+A. 20 beats per
+B. 30 beats per minute minute
+C. 40 beats per
+D. 50 beats per minute minute
+Answer: C
+
+Q.51: If the volume of the sphere is 697 4 cm³ then find the radius of the sphere.
+A. 5.5 cm
+B. 5.8 cm
+C. 6.5 cm
+D. 4.5 cm
+Answer: A
+
+Q.52: The sides of a triangle are in the ratio 4:7:7. If the perimeter is 90 cm, what is the area of the triangle?
+A. 150√5cm2
+B. 250√5cm2
+C. 350√5 cm²
+D. 90√5 cm²
+Answer: A
+
+Q.53: Congruent triangles are joined to form a sixsided polygon in which all sides are equal and each interior angle is obtuse. How would you classify this polygon?
+A. Regular octagon
+B. Regular decagon
+C. Regular hexagon
+D. Regular pentagon
+Answer: A
+
+Q.54: ![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p7_x1334.jpeg)
+A. 0 - 20
+B. 20 - 40
+C. 80 - 100
+D. 40 - 60
+Answer: D
+
+Q.55: If sinA = 3/5 and A is acute, find the value of (1 + tan²A) / sec²A.
+A. 1
+B. 9/16
+C. 25/16
+D. 4/3
+Answer: A
+
+Q.56: If in a circle with center O, two chords PQ & RS are equal such that ∠POQ = 70° & ∠ORS = p°.. Calculate 3p° - 50°.
+A. 105°
+B. 115°
+C. 125°
+D. 135°
+Answer: A
+
+Q.57: ![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p7_x1335.jpeg)
+A. 30%
+B. 32%
+C. 34%
+D. 36%
+Answer: A
+
+Q.58: ![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p8_x1673.jpeg)
+A. 309 million total; 61% urban
+B. 309 million total; 59% urban
+C. 314 million total; 60% urban
+D. 307 million total; 63% urban
+Answer: A
+
+Q.59: ![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p8_x1674.jpeg)
+A. Utilities, Transportation, Entertainment
+B. Groceries, Entertainment, Savings
+C. Transportation, Entertainment, Savings
+D. Rent, Transportation, Savings
+Answer: A
+
+Q.60: ![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p8_x1675.jpeg)
+A. 80-90 thousand
+B. 0-10 thousand
+C. 90-100 thousand
+D. 60-70 thousand
+Answer: C
+
+Q.61: A student was asked to multiply a number by 5 , but instead, he divided it by 5 . If his 9 9 answer was 56 more than the correct answer, find the number.
+A. 54
+B. 45 7
+C. 76
+D. 85
+Answer: B
+
+Q.62: Find the value of K if (0.9)6−(0.4)6 (0.9)4+0.1296+(0.4)4 = K .
+A. 0.35
+B. 0.45
+C. 0.25
+D. 0.65
+Answer: A
+
+Q.63: Find the remainder when (6.83 - 0.008) is divided by (6.82 + 1.36 + 0.04).
+A. 1
+B. 0
+C. 3
+D. 5
+Answer: A
+
+Q.64: Find the mean proportional between 0.81 and
+
+4.41. (Round off to one decimal place.)
+A. 2.1
+B. 3.6
+C. 4.7
+D. 1.9
+Answer: D
+
+Q.65: An item is sold at 25% profit. If the cost price decreases by 10% and the selling price also decreases by 10%, the new profit percentage will be:
+A. 20%
+B. 25%
+C. 35%
+D. 65%
+Answer: B
+
+Q.66: In ΔPQR, I is a point which is equidistant from all the sides of a Δ. If ∠PRQ = 30°, then find ∠QIR + ∠PIR.
+A. 275°
+B. 225°
+C. 295°
+D. 255°
+Answer: D
+
+Q.67: The angle of elevation of the top of a tower from two points at distances a and b from the base of the tower and in the same straight line with it are 30° and 60° respectively. If the height of the tower is h, find h in terms of b.
+A. h = b√2
+B. b = h√3
+C. h ∗b = √3
+D. h = b√3
+Answer: D
+
+Q.68: A square lawn is enclosed by a path of uniform width 2.5 m. Given that the area of the path is 165 m², determine the side length of the square lawn.
+A. 12 m
+B. 14 m
+C. 17 m
+D. 19 m
+Answer: B
+
+Q.69: In a circle, chord AB subtends an angle of 42° at point P on the circumference. Find the angle subtended by the same chord at another point Q lying on the same segment.
+A. 21°
+B. 42°
+C. 69°
+D. 111°
+Answer: B
+
+Q.70: In two congruent right-angled triangles ABC and PQR, angles A and P are 90°. If BC = 15 cm and PR = 9 cm, find AB.
+A. 15 cm
+B. 12 cm
+C. 9 cm
+D. 6 cm
+Answer: B
+
+Q.71: Two circles of radii 13 cm and 15 cm intersect, and the distance between their centers is 14 cm. Find the length of their common chord.
+A. 5 cm
+B. 12 cm
+C. 17 cm
+D. 24 cm
+Answer: D
+
+Q.72: A merchant has a total of 1000 kg of sugar. He sells part of it at a profit of 8% and the remaining at a profit of 18%. If his overall profit is 14%, how much of the sugar was sold at 18% profit?
+A. 400 kg
+B. 560 kg
+C. 600 kg
+D. 640 kg
+Answer: C
+
+Q.73: Two circles have radii 8 cm and 5 cm. If the length of their transverse common tangent is 16 cm, find the distance between their centers (in cm).
+A. 5√17 cm
+B. 7√13 cm
+C. 9 cm
+D. 18 cm
+Answer: A
+
+Q.74: ![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p9_x1985.jpeg)
+A. 45%
+B. 40%
+C. 30%
+D. 35%
+Answer: D
+
+Q.75: In a corporate shareholder election, 60% of the voters were male, and the rest were female. 40% of the male voters and 70% of the female voters voted for Proposal A. If the total number of voters who did not vote for Proposal A is 1,200, find the total number of shareholders who cast a vote.
+A. 2,400
+B. 2,500
+C. 2,600
+D. 2,800
+Answer: B
+
+Q.76: **Comprehension (Q. 76 - 80):** Once a revered ritual, letter writing has steadily (1) ____ into a relic of bygone eras, displaced by the relentless immediacy of digital communication. There was a time when a single envelope, ink- smudged and weatherworn, (2) ____ profound intimacies across continents, preserving sentiments too sacred to entrust to fleeting conversations. Today's sterile texts and hastily composed emails seldom replicate the tactility that imbued handwritten letters with gravitas; every flourish, every hesitant stroke, bore the (3) vestiges of a soul laid bare. It is not merely nostalgia that compels some to cling to this endangered practice, but recognition that certain articulations of the heart (4) ____ better when filtered through the slowness of ink and parchment. Indeed, the act of penning a letter demands a kind of (5) deliberateness rare in an age characterized by impulsivity and ephemerality. Though the world races ever forward, perhaps in the margins of our modern lives, the art of letter-writing will preserve a fragile thread tethering us to a slower, richer past.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Choose correct tense.(1)
+A. diminish
+B. diminished
+C. diminishing
+D. had diminished
+Answer: B
+
+Q.77: **Comprehension (Q. 76 - 80):** Once a revered ritual, letter writing has steadily (1) ____ into a relic of bygone eras, displaced by the relentless immediacy of digital communication. There was a time when a single envelope, ink- smudged and weatherworn, (2) ____ profound intimacies across continents, preserving sentiments too sacred to entrust to fleeting conversations. Today's sterile texts and hastily composed emails seldom replicate the tactility that imbued handwritten letters with gravitas; every flourish, every hesitant stroke, bore the (3) vestiges of a soul laid bare. It is not merely nostalgia that compels some to cling to this endangered practice, but recognition that certain articulations of the heart (4) ____ better when filtered through the slowness of ink and parchment. Indeed, the act of penning a letter demands a kind of (5) deliberateness rare in an age characterized by impulsivity and ephemerality. Though the world races ever forward, perhaps in the margins of our modern lives, the art of letter-writing will preserve a fragile thread tethering us to a slower, richer past.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Choose correct verb form.(2)
+A. convey
+B. conveying
+C. conveyed
+D. had conveying
+Answer: C
+
+Q.78: **Comprehension (Q. 76 - 80):** Once a revered ritual, letter writing has steadily (1) ____ into a relic of bygone eras, displaced by the relentless immediacy of digital communication. There was a time when a single envelope, ink- smudged and weatherworn, (2) ____ profound intimacies across continents, preserving sentiments too sacred to entrust to fleeting conversations. Today's sterile texts and hastily composed emails seldom replicate the tactility that imbued handwritten letters with gravitas; every flourish, every hesitant stroke, bore the (3) vestiges of a soul laid bare. It is not merely nostalgia that compels some to cling to this endangered practice, but recognition that certain articulations of the heart (4) ____ better when filtered through the slowness of ink and parchment. Indeed, the act of penning a letter demands a kind of (5) deliberateness rare in an age characterized by impulsivity and ephemerality. Though the world races ever forward, perhaps in the margins of our modern lives, the art of letter-writing will preserve a fragile thread tethering us to a slower, richer past.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. The word "vestiges" most nearly means:
+
+(3)
+A. Polished
+B. Remaining traces embellishments
+C. Heavy burdens
+D. Concealed meanings
+Answer: B
+
+Q.79: **Comprehension (Q. 76 - 80):** Once a revered ritual, letter writing has steadily (1) ____ into a relic of bygone eras, displaced by the relentless immediacy of digital communication. There was a time when a single envelope, ink- smudged and weatherworn, (2) ____ profound intimacies across continents, preserving sentiments too sacred to entrust to fleeting conversations. Today's sterile texts and hastily composed emails seldom replicate the tactility that imbued handwritten letters with gravitas; every flourish, every hesitant stroke, bore the (3) vestiges of a soul laid bare. It is not merely nostalgia that compels some to cling to this endangered practice, but recognition that certain articulations of the heart (4) ____ better when filtered through the slowness of ink and parchment. Indeed, the act of penning a letter demands a kind of (5) deliberateness rare in an age characterized by impulsivity and ephemerality. Though the world races ever forward, perhaps in the margins of our modern lives, the art of letter-writing will preserve a fragile thread tethering us to a slower, richer past.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Choose correct tense. (4)
+A. transpires
+B. have transpired
+C. transpire
+D. transpired
+Answer: C
+
+Q.80: **Comprehension (Q. 76 - 80):** Once a revered ritual, letter writing has steadily (1) ____ into a relic of bygone eras, displaced by the relentless immediacy of digital communication. There was a time when a single envelope, ink- smudged and weatherworn, (2) ____ profound intimacies across continents, preserving sentiments too sacred to entrust to fleeting conversations. Today's sterile texts and hastily composed emails seldom replicate the tactility that imbued handwritten letters with gravitas; every flourish, every hesitant stroke, bore the (3) vestiges of a soul laid bare. It is not merely nostalgia that compels some to cling to this endangered practice, but recognition that certain articulations of the heart (4) ____ better when filtered through the slowness of ink and parchment. Indeed, the act of penning a letter demands a kind of (5) deliberateness rare in an age characterized by impulsivity and ephemerality. Though the world races ever forward, perhaps in the margins of our modern lives, the art of letter-writing will preserve a fragile thread tethering us to a slower, richer past.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. The word “deliberateness” most nearly means:
+
+(5)
+A. Spontaneity
+B. Careful intention
+C. Rapid decision
+D. Emotional outburst
+Answer: B
+
+Q.81: What is the correct one-word substitution for "descent from an ancestor; family or ancestral line"?
+A. Heritage
+B. Dynasty
+C. Lineage
+D. Legacy
+Answer: C
+
+Q.82: Fill in the blank with the appropriate adverb. The technology has ________ transformed the field of molecular biology.
+A. marginally
+B. ostensibly
+C. consecutively
+D. irreversibly
+Answer: D
+
+Q.83: Choose the correct direct speech form of the following sentence. They asked if I enjoyed working in a fastpaced environment.
+A. They said, "Do they enjoy working in a fast- paced environment?"
+B. They said, "Do you like working in fast- paced environments?"
+C. They said, "Did you like working in a fast- paced environment?"
+D. They said, "Do you enjoy working in a fast- paced environment?"
+Answer: D
+
+Q.84: Rearrange the parts of the sentence in the correct order. The expansion of space programs P. has led to discussions on regulatory frameworks, Q. as technological capabilities advance at an unprecedented pace R. among major spacefaring nations and private entities S. ensuring peaceful exploration and equitable resource distribution
+A. QPSR
+B. PSRQ
+C. SRPQ
+D. RPQS
+Answer: D
+
+Q.85: What does the idiom "Best of both worlds" mean?
+A. Experiencing the advantages of two different situations at the same time
+B. Choosing between two difficult situations
+C. Losing both opportunities due to indecision
+D. Sacrificing one thing to gain another
+Answer: A
+
+Q.86: Identify the error in the sentence. He was late to an meeting scheduled at 9 AM.
+A. an
+B. late
+C. meeting
+D. scheduled
+Answer: A
+
+Q.87: What does the idiom "A bolt from the blue" mean?
+A. A sudden and unexpected event
+B. A predictable outcome
+C. A slow and gradual change
+D. A clear and sunny day
+Answer: A
+
+Q.88: Improve the sentence by choosing the correct parts of speech. In the beginning of the meeting, there were several misunderstandings due to unclear communication from the head of the department.
+A. At the beginning of the meeting, there were several misunderstandings due to unclear communication from the head of the department.
+B. In the beginning of the meeting, there was several misunderstanding due to unclear communication from the head of the department.
+C. At begin of the meeting, there were several misunderstandings due to unclear communication from the head of the department.
+D. While beginning of the meeting, there were several misunderstanding due to unclear communication from the head of the department.
+Answer: A
+
+Q.89: Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?
+
+1. Some theories suggest that language evolved as a tool for social bonding, replacing grooming behavior seen in primates.
+
+2. The development of complex language is considered one of the most defining traits of Homo sapiens.
+
+3. Archaeological evidence shows that early humans created symbolic representations, such as cave paintings, which indicate the ability to communicate abstract ideas.
+
+4. The emergence of language enabled cooperation, cultural transmission, and the rapid expansion of human societies.
+
+5. Scientists continue to study the origins of language using genetics, neurology, and comparative studies of primates.
+A. 3-2-1-5-4
+B. 1-3-4-2-5
+C. 2-1-3-4-5
+D. 4-3-2-1-5
+Answer: A
+
+Q.90: Which of the following pairs of homonyms can be used to fill in the blanks most suitably? The two knights engaged in a fierce ______, using swords with ______ edges.
+A. dual, duel
+B. duel, duel
+C. dual, dual
+D. duel, dual
+Answer: D
+
+Q.91: Identify the error in the sentence. He is more smarter than anyone else in class.
+A. more
+B. anyone
+C. class
+D. smarter
+Answer: A
+
+Q.92: Fill in the blank with the correctly spelt word. His ________ mannerisms made him a target for ridicule.
+A. grotesque
+B. grotisque
+C. grottesque
+D. groteseque
+Answer: A
+
+Q.93: Select the most appropriate antonym of the given word. Intransigent
+A. Unyielding
+B. Flexible
+C. Dogmatic
+D. Obstinate
+Answer: B
+
+Q.94: Identify the misspelt word.
+A. Licencious
+B. Obsequious
+C. Countenance
+D. Vouchsafe
+Answer: A
+
+Q.95: Spot the correct spelling of blood-vessel narrowing.
+A. Vasoconstriction
+B. Vasokonstruction
+C. Vasioconstriction
+D. Vasoconstriktian
+Answer: A
+
+Q.96: Choose the correct one-word substitute for: 'Travelling from place to place for work.'
+A. Premedieval
+B. Wayfarer
+C. Sedentary
+D. Peripatetic
+Answer: D
+
+Q.97: Select the sentence containing the homonym of the highlighted word: The manuscript bore a colophon detailing the scribe's name.
+A. The typesetter inserted a printer's colophon on the final page.
+B. The insect's antenna ended in a segmented colophon.
+C. The medieval colophon praised the patron.
+D. The librarian studied the Syriac colophon.
+Answer: B
+
+Q.98: Choose the most suitable option to replace the highlighted part of the sentence: She sings good for her age.
+A. sings greatly
+B. sings nicely
+C. sings well
+D. sings better
+Answer: C
+
+Q.99: A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. He said, "What time does the train arrive?"
+A. He asked what time does the train arrive.
+B. He said what time the train had arrived.
+C. He asked what time the train arrived.
+D. He asked what time the train has arrived.
+Answer: C
+
+Q.100: A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. I said to her, "What are your plans for tomorrow?"
+A. I asked her what her plans for the next day were.
+B. I told her what were her plans for the next day.
+C. I asked her what are her plans for tomorrow.
+D. I asked her what her plans were for tomorrow.
+Answer: A
+

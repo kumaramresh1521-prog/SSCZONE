@@ -1,0 +1,756 @@
+Q.1: Statement: The bank has reported a 25% rise in the number of online transactions this year. Inference: A. Customers are shifting to digital banking. B. The bank forced people to use online transactions.
+A. Only A is a valid inference
+B. Only B is a valid inference
+C. Both A and B are valid inference
+D. Neither A nor B is valid inference
+Answer: A
+
+Q.2: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p2_x25.jpeg)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p2_x26.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p2_x27.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p2_x28.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p2_x29.jpeg)
+Answer: A
+
+Q.3: Which of the following options classifies the given roll numbers based on the pattern observed? Roll Numbers: 225, 227, 229, 231
+A. Increasing by 1
+B. Increasing by 2
+C. Increasing by 3
+D. Decreasing by 2
+Answer: B
+
+Q.4: Choose the island that does not fit
+A. Bali
+B. Sumatra
+C. Java
+D. Madagascar
+Answer: A
+
+Q.5: Statement: In the past five years, the number of foreign tourists visiting historical sites in Country X has remained constant. However, the revenue from tourism has increased by 20% annually.
+
+Conclusions:
+
+I. The tourism department has raised entry fees for historical sites.
+
+II. Tourists are spending more on services like guided tours and souvenirs.
+A. Only conclusion I follows
+B. Only conclusion II follows
+C. Neither conclusion I nor II follows
+D. Both conclusion I and II follow
+Answer: A
+
+Q.6: The migration pattern of birds was recorded as 3, 6, 12, 24/four intervals. What is the next number in the sequence?
+A. 36
+B. 48
+C. 30
+D. 60
+Answer: B
+
+Q.7: If "ROCKET" is written as "18 15 3 11 5 20", then how is "SPACE" coded?
+A. 19 16 1 3 5
+B. 18 15 2 2 4
+C. 17 14 0 1 3 17 14 0
+D. 16 13 3 2 2 1 3
+Answer: A
+
+Q.8: In a survey, 25 people like Tea, 20 like Coffee, and 10 like both. How many like only Tea?
+A. 15
+B. 10
+C. 13
+D. 12
+Answer: A
+
+Q.9: In a survey, 150 people were asked about Yoga, Meditation, and Gym. 60 do Yoga, 80 do Meditation, 50 do Gym, 30 do Yoga and Meditation, 20 do Meditation and Gym, 15 do Yoga and Gym, and 10 do all three. How many do none?
+A. 15
+B. 20
+C. 10
+D. 25
+Answer: A
+
+Q.10: The population of a town increases by 10% annually. If the present population is 60,500, what was it two years ago?
+A. 50,000
+B. 49,500
+C. 45,000
+D. 50,413
+Answer: A
+
+Q.11: In this sequence, what follows next: 2P, 5M, 10J, 17G, ?
+A. 24 F
+B. 42 P
+C. 26 D
+D. 12 A
+Answer: C
+
+Q.12: In the following question, two groups of letters are related by a specific pattern. Identify the same pattern and apply it to the second group to find the missing letters. ADF : WUZ :: PQR : ?
+A. KJI
+B. KIJ
+C. JKI
+D. JIK
+Answer: A
+
+Q.13: Choose the option that perfectly matches the given address. Original Address: Suite No. 9C-21King’s Court Residency, Phase-IIDr. B.R. Ambedkar RoadMumbai, Maharashtra 400012India
+A. Suite No. 9C-21King’s Court Residency, Phase-IDr. B.R. Ambedkar RoadMumbai, Maharashtra 400012India
+B. Suite No. 9C-21King’s Court Residency, Phase-IIDr. B.R Ambedkar RoadMumbai, Maharashtra 400102India
+C. Suite No. 9C-21King’s Court Residency, Phase-IIDr. B.R. Ambedkar RoadMumbai, Maharashtra 400012India
+D. Suite No. 9C-21King's Court Residency, Phase-IIDr. B.R. Ambedkar RoadMumbai, Maharashtra 4000012
+Answer: C
+
+Q.14: How many such letters are there in the word BIRD, which are in the same position as in the English alphabet?
+A. 1
+B. 2
+C. 3
+D. 4
+Answer: A
+
+Q.15: Study the pattern in the given series and find the next set of letters in the series. ARO, CQQ, EPS, ?
+A. GOU
+B. GPU
+C. GOV
+D. GOT
+Answer: A
+
+Q.16: How many triangles are there in the given figure?
+A. 40
+B. 44
+C. 48
+D. 42
+Answer: A
+
+Q.17: You're a nurse and notice that a patient has been given a slightly higher dose of medication than what was prescribed, but the patient shows no adverse symptoms, and the shift is about to end. What should you do?
+A. Say nothing since the patient seems fine and the shift is ending.
+B. Document the discrepancy, inform the doctor, monitor, and hand off.
+C. Quietly correct the dosage in the next round without telling anyone
+D. Mention it casually to the incoming nurse without formal documentation
+Answer: A
+
+Q.18: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p3_x306.jpeg)
+A. 2
+B. 1
+C. 4
+D. 3
+Answer: A
+
+Q.19: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p4_x545.jpeg)
+A. 2
+B. 4
+C. 1
+D. 3
+Answer: A
+
+Q.20: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p4_x546.jpeg)
+A. b
+B. d
+C. c
+D. e
+Answer: A
+
+Q.21: How many triangles are there in the given figure?
+A. 32
+B. 34
+C. 36
+D. 42
+Answer: A
+
+Q.22: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p4_x548.jpeg)
+A. 1
+B. 2
+C. 3
+D. 4
+Answer: A
+
+Q.23: Fill in the blanks (_) using one of the following four options such that the series follows a specific pattern in the given order. _ op _ mo _ n _ _ pnmop _
+A. mnpmon
+B. mpnmon
+C. nmpomn
+D. mnpomn
+Answer: A
+
+Q.24: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p4_x549.jpeg)
+A. 1
+B. 2
+C. 3
+D. 4
+Answer: A
+
+Q.25: What follows: BCZ, DEY, FGX, HIW, JKV, ?
+A. LNU
+B. LMU
+C. MNU
+D. LMV
+Answer: A
+
+Q.26: Langhnaj, Devnimori, and Tarsang are major excavated Mesolithic sites located in which Indian state?
+A. Gujarat
+B. Haryana
+C. Odisha
+D. Kerala
+Answer: A
+
+Q.27: What does the term ‘malfuzat’ primarily refer to in the context of medieval Indian Sufism?
+A. Doctrinal treatises written by Sufi saints
+B. Royal edicts granting patronage to khanqahs 3 AWARENESS
+C. Recorded conversations and teachings of saints
+D. Mystical poetry composed in regional languages
+Answer: C
+
+Q.28: Which prominent dynasty maintained territorial control/significant sections of the ancient Silk Route?
+A. The Kushana
+B. The Maurya dynasty dynasty
+C. The Shunga
+D. The Gupta dynasty dynasty
+Answer: A
+
+Q.29: The "Permanent Settlement" of revenue in Bengal was introduced in 1793 by which Governor-General?
+A. Lord Wellesley
+B. Lord Cornwallis
+C. Warren Hastings
+D. Sir John Shore
+Answer: B
+
+Q.30: As per Article 72 of the Indian Constitution, what is the meaning of the 'commutation' power granted to the President of India?
+A. Postponing the execution
+B. Temporary suspension of sentence
+C. Substituting a lighter punishment form
+D. Complete acquittal of the convict
+Answer: C
+
+Q.31: Which Article of Indian Constitution provides for the formation of an Inter-State Council in India?
+A. Article 261
+B. Article 263
+C. Article 265
+D. Article 267
+Answer: B
+
+Q.32: Which dispute falls under the 'Original Jurisdiction' of the Supreme Court under Article 131 of Indian constitution?
+A. Dispute between two private citizens
+B. Dispute between Center and States
+C. Dispute regarding the local elections
+D. Dispute involving the criminal appeals
+Answer: B
+
+Q.33: Which zone marks the boundary between the crust and mantle?
+A. Gutenberg
+B. Mohorovicic discontinuity discontinuity
+C. Conrad
+D. Lehmann discontinuity discontinuity
+Answer: B
+
+Q.34: What is the core principle behind the Athlete Biological Passport (ABP) used in antidoping?
+A. Direct detection
+B. Genetic mapping
+C. Indirect monitoring
+D. Dietary tracking
+Answer: C
+
+Q.35: Bajrang Punia is best known for competing in which sporting discipline?
+A. Boxing
+B. Wrestling
+C. Weightlifting
+D. Judo
+Answer: B
+
+Q.36: The vibrant cultural festival “Putul Samaroh” is organized by which of the following states?
+A. Madhya Pradesh
+B. Rajasthan
+C. Andhra Pradesh
+D. Himachal Pradesh
+Answer: B
+
+Q.37: Why do tribal communities in Chhattisgarh traditionally perform the 'Suwa' (Parrot) dance?
+A. To please the local rain gods
+B. To honor the spirits of ancestors
+C. To please the Goddess of Wealth
+D. To celebrate victory after a tribal war
+Answer: A
+
+Q.38: Which of the following traditional folk singing styles originates from Jammu and Kashmir?
+A. Chhakri
+B. Pandavani
+C. Maand
+D. Powada
+Answer: A
+
+Q.39: What is the primary objective of the "Saa₹thi
+
+2.0" mobile application launched by SEBI (Securities and Exchange Board of India)?
+A. Listing of new startups on the stock exchange
+B. Empowering investors with knowledge about the securities market
+C. Tracking real-time global commodity prices
+D. Registering complaints against fraudulent insurance agents
+Answer: D
+
+Q.40: Which of the following pairs of book titles and language (Poetry category) for the Sahitya Akademi Award 2025 is correctly matched?
+A. Shrestha Kabita - Dogri
+B. Bhattkhadaki - Gujarati
+C. Padapurana - Telugu
+D. Animesha - Odia
+Answer: A
+
+Q.41: Bay of Bengal Initiative for Multi-Sectoral Technical and Economic Cooperation
+
+(BIMSTEC) is often viewed as an alternative platform for regional cooperation because of the limited effectiveness of which organization?
+A. GCC (Gulf Cooperation Council)
+B. SAARC (South Asian Association for Regional Cooperation)
+C. ASEAN (Association of Southeast Asian Nations)
+D. SCO (Shanghai Cooperation Organization)
+Answer: B
+
+Q.42: The office of sessions judge in a sessions division suddenly becomes vacant. An urgent bail application is pending. There is no additional sessions judge available in that division. Who may legally dispose of the application under the Bharatiya Nagarik Suraksha Sanhita, 2023 in India?
+A. Only the High
+B. Chief Judicial Court Magistrate
+C. Executive
+D. District Magistrate Magistrate
+Answer: B
+
+Q.43: Which award was conferred upon Justice (Retd.) Shri Jagdish Singh Khehar in 2025?
+A. Padma Shri
+B. Padma Vibhushan
+C. Bharat Ratna
+D. Padma Bhushan
+Answer: A
+
+Q.44: As per Census of India 2011, what is the correct distribution of male and female workers in the Primary sector?
+A. Male – 15,66,43,220; Female – 4,37,41,311
+B. Male – 16,54,47,075; Female – 9,75,75,398
+C. Male – 16,54,47,075; Female – 4,37,41,311
+D. Male – 15,66,43,220; Female – 9,75,75,398
+Answer: D
+
+Q.45: Consider the following statements regarding Indo-Islamic architecture:
+
+1. Rubble masonry walls were commonly used in the construction of these buildings.
+
+2. Mandu is a prominent example of Provincial Style architecture. Which of the statements given above is/are correct?
+A. 1 only
+B. 2 only
+C. Both 1 and 2
+D. Neither 1 nor 2
+Answer: A
+
+Q.46: Which spacecraft platform serves as the base structure for the NISAR satellite?
+A. I-1K spacecraft
+B. I-2K spacecraft bus bus
+C. I-3K spacecraft
+D. I-6K spacecraft bus bus
+Answer: D
+
+Q.47: Which committee was appointed in 1991 to recommend reforms in India's banking and financial sector?
+A. Chelliah
+B. Rangrajan Committee Committee
+C. Malhotra
+D. Narasimham Committee Committee
+Answer: B
+
+Q.48: Under India’s National Air Quality Index framework, data for at least how many pollutants are required to calculate the Air Quality Index?
+A. Four pollutants
+B. Three pollutants
+C. Five pollutants
+D. Seven pollutants
+Answer: B
+
+Q.49: Whose combined forces did Major Hector Munro defeat in the Battle of Buxar?
+A. Mir Jafar, Shuja-ud-Daula, and Shah Alam II
+B. Mir Qasim, Shuja-ud-Daula, and Shah Alam II
+C. Mir Qasim, Najm-ud-Daula, and the Nizam
+D. Siraj-ud-Daula, Mir Jafar, and the Marathas
+Answer: B
+
+Q.50: A student burns 150 calories by cycling for 30 minutes. If the student continues cycling at the same rate, how many calories will be burned in 2 hours?
+A. 600
+B. 450
+C. 500
+D. 900
+Answer: A
+
+Q.51: A sphere of radius 'R' has a surface area equal to the curved surface area of a hemisphere with radius 'r'. Find the ratio of R . r
+A. 1
+B. 1 √3 √2
+C. 2
+D. 3 √3 √2
+Answer: B
+
+Q.52: If the area of a triangle is 10√3 cm² and two of its sides are 5 cm and 8 cm, what is the included angle?
+A. 30°
+B. 45°
+C. 60°
+D. 90°
+Answer: C
+
+Q.53: Two regular polygons have (n - 1) and (n + 2) sides respectively. If the difference in their exterior angles is 6°, find the value of n.
+A. 15
+B. 16
+C. 14
+D. 13
+Answer: D
+
+Q.54: If cos θ= 4/5 , find tan² θ+ sec² θ .
+A. 2
+B. 17/8
+C. 17/4
+D. 5
+Answer: B
+
+Q.55: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p7_x1307.jpeg)
+A. 21-40
+B. 41-60
+C. 61-80
+D. 81-100
+Answer: A
+
+Q.56: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p7_x1308.jpeg)
+A. 18:5
+B. 17:4
+C. 16:5
+D. 15:4
+Answer: A
+
+Q.57: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p7_x1309.jpeg)
+A. Bus - 9:1
+B. Truck - 20:3
+C. Car - 4:3
+D. Van - 2:1
+Answer: B
+
+Q.58: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p7_x1310.jpeg)
+A. $700
+B. $800
+C. $900
+D. $1,000
+Answer: A
+
+Q.59: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p7_x1311.jpeg)
+A. 20-30 thousand
+B. 30-40 thousand
+C. 40-50 thousand
+D. 60-70 thousand
+Answer: A
+
+Q.60: Find the value of (5.4)³−1 . (5.4)²+6.4
+A. 3.8
+B. 4.4
+C. 7.6
+D. 5.8
+Answer: B
+
+Q.61: The value of [(2.4)³ − (0.4)³] / [(2.4)² + 0.96 + (0.4)²] expressed as a fraction in simplest form is:
+A. 1
+B. 5/2
+C. 3
+D. 2
+Answer: D
+
+Q.62: Find the third proportional of (√2 + √3) and 4√6 .
+A. 14(√3 −√2)
+B. 42(√3 + √2)
+C. 96(√3 −√2)
+D. 28(√3 + √2)
+Answer: C
+
+Q.63: The ratio between the tens digit and the units digit of a two-digit number is 2:
+
+1. If the original number is 18 more than the number obtained by reversing the digits, find the original number.
+A. 28
+B. 42
+C. 54
+D. 35
+Answer: A
+
+Q.64: In ΔZWR, the bisector of ∠R meets side ZW at S, ZR = 10 cm, RW = 14 cm and ZW = 12 cm. What is the length of SW?
+A. 5 cm
+B. 7 cm
+C. 11 cm
+D. 17 cm
+Answer: A
+
+Q.65: A shopkeeper marks his goods at 30% above the cost price. If the cost price increases by 15% and he increases the selling price by 10%, what is his new approximate profit percentage?
+A. 18.35%
+B. 24.35%
+C. 12.35%
+D. 28.35%
+Answer: B
+
+Q.66: A chord subtends 130° at the centre. What is the sum of angles subtended by it at a point on the major arc and minor arc?
+A. 120°
+B. 180°
+C. 200°
+D. 240°
+Answer: A
+
+Q.67: The area of a trapezium is 475 cm², and its height is 19 cm. If the parallel sides are in the ratio 2:3, find the length of the longer parallel side.
+A. 20 cm
+B. 30 cm
+C. 35 cm
+D. 25 cm
+Answer: A
+
+Q.68: In a circle with center O, PQ is the diameter and RS is a chord such that PQRS is a trapezium. If ∠QPR= 30° , find the measure of ∠RPS .
+A. 30°
+B. 20°
+C. 25°
+D. 40°
+Answer: A
+
+Q.69: In △ABC and △DEF, ∠A= 55°, AB = DE, AC= DF, ∠E= 85° and ∠F= 40° . By which property are △ABC and △DEF congruent?
+A. RHS property
+B. SSS property
+C. SAS property
+D. ASA property
+Answer: A
+
+Q.70: Two congruent circles, each having radius 12 cm, intersect in such a way that each circle passes through the centre of the other. Find the length of their common chord.
+A. 4 cm
+B. 6√3 cm
+C. 8 cm
+D. 12√3 cm
+Answer: A
+
+Q.71: A trader purchased 25 kg of tea at ₹240 per kg and another 15 kg at ₹300 per kg. After mixing both varieties, at what price per kg should the mixture be sold to earn a profit of 25%?
+A. ₹228.225 per kg
+B. ₹312.198 per kg
+C. ₹250.182 per kg
+D. ₹328.125 per kg
+Answer: A
+
+Q.72: Three circles of radii 1 unit, 2 units, 3 units are mutually tangent externally. Find the distance between the centers of circles of radii 1 unit and 2 units.
+A. 3 units
+B. 2 units
+C. 1 unit
+D. 4 units
+Answer: A
+
+Q.73: ![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p9_x1979.jpeg)
+A. 18.5%
+B. 19.4%
+C. 22.8%
+D. 24.6%
+Answer: A
+
+Q.74: A vertical pole of height H is situated at the center of a circular field. If the angle of elevation of the top of the pole from a point on the boundary of the field is 30°, and if the point moves x meters further from the pole, the angle of elevation becomes 15°. Find the height H of the pole.
+A. x m
+B. x m 2
+C. 1 m
+D. 5 m 2
+Answer: A
+
+Q.75: The population of a tech hub increases by 16 2 % in the first year, decreases by 3 12 1 % in the second year, and increases by 2 14 2 % in the third year. If the population at the end of the third year is 2,80,000, what was the initial population before the first year?
+A. 2,25,000
+B. 2,10,000
+C. 2,50,000
+D. 2,40,000
+Answer: A
+
+Q.76: **Comprehension (Q. 76 - 80):** Throughout history, the evolution of women's clothing has mirrored broader societal shifts, (1)___ values, technologies, and power structures. In ancient civilizations, garments often (2) ___ not only status and wealth but also cultural affiliations, with fabrics and dyes reserved for the privileged classes. The Middle Ages introduced rigid dress codes; women's attire, elaborate and weighty, served as both an ornament and a restraint, subtly (3) entrenching gender hierarchies. Fast-forwarding to the 20th century, movements like suffrage and feminism (4) catalyzed seismic transformations in fashion, promoting practicality, autonomy, and self- expression. Even today, the politics of women's clothing (5) _ a battleground for debates on identity, freedom, and societal expectations.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), and (4). Choose the word that fills the blank appropriately in the context of the passage. Choose the correct tense/form (1)
+A. reflecting
+B. reflected
+C. having reflected
+D. reflects
+Answer: A
+
+Q.77: **Comprehension (Q. 76 - 80):** Throughout history, the evolution of women's clothing has mirrored broader societal shifts, (1)___ values, technologies, and power structures. In ancient civilizations, garments often (2) ___ not only status and wealth but also cultural affiliations, with fabrics and dyes reserved for the privileged classes. The Middle Ages introduced rigid dress codes; women's attire, elaborate and weighty, served as both an ornament and a restraint, subtly (3) entrenching gender hierarchies. Fast-forwarding to the 20th century, movements like suffrage and feminism (4) catalyzed seismic transformations in fashion, promoting practicality, autonomy, and self- expression. Even today, the politics of women's clothing (5) _ a battleground for debates on identity, freedom, and societal expectations.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), and (4). Choose the word that fills the blank appropriately in the context of the passage. Tense carefully!(2)
+A. signify
+B. has signified
+C. signified
+D. signifying
+Answer: C
+
+Q.78: **Comprehension (Q. 76 - 80):** Throughout history, the evolution of women's clothing has mirrored broader societal shifts, (1)___ values, technologies, and power structures. In ancient civilizations, garments often (2) ___ not only status and wealth but also cultural affiliations, with fabrics and dyes reserved for the privileged classes. The Middle Ages introduced rigid dress codes; women's attire, elaborate and weighty, served as both an ornament and a restraint, subtly (3) entrenching gender hierarchies. Fast-forwarding to the 20th century, movements like suffrage and feminism (4) catalyzed seismic transformations in fashion, promoting practicality, autonomy, and self- expression. Even today, the politics of women's clothing (5) _ a battleground for debates on identity, freedom, and societal expectations.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), and (4). Choose the word that fills the blank appropriately in the context of the passage. In this context, 'entrenching' most nearly means:
+
+(3)
+A. Strengthening
+B. Questioning
+C. Obliterating
+D. Simplifying
+Answer: A
+
+Q.79: **Comprehension (Q. 76 - 80):** Throughout history, the evolution of women's clothing has mirrored broader societal shifts, (1)___ values, technologies, and power structures. In ancient civilizations, garments often (2) ___ not only status and wealth but also cultural affiliations, with fabrics and dyes reserved for the privileged classes. The Middle Ages introduced rigid dress codes; women's attire, elaborate and weighty, served as both an ornament and a restraint, subtly (3) entrenching gender hierarchies. Fast-forwarding to the 20th century, movements like suffrage and feminism (4) catalyzed seismic transformations in fashion, promoting practicality, autonomy, and self- expression. Even today, the politics of women's clothing (5) _ a battleground for debates on identity, freedom, and societal expectations.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), and (4). Choose the word that fills the blank appropriately in the context of the passage. What does 'catalyzed' most nearly mean here?(4)
+A. Hindered
+B. Stimulated
+C. Disguised
+D. Delayed
+Answer: B
+
+Q.80: **Comprehension (Q. 76 - 80):** Throughout history, the evolution of women's clothing has mirrored broader societal shifts, (1)___ values, technologies, and power structures. In ancient civilizations, garments often (2) ___ not only status and wealth but also cultural affiliations, with fabrics and dyes reserved for the privileged classes. The Middle Ages introduced rigid dress codes; women's attire, elaborate and weighty, served as both an ornament and a restraint, subtly (3) entrenching gender hierarchies. Fast-forwarding to the 20th century, movements like suffrage and feminism (4) catalyzed seismic transformations in fashion, promoting practicality, autonomy, and self- expression. Even today, the politics of women's clothing (5) _ a battleground for debates on identity, freedom, and societal expectations.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), and (4). Choose the word that fills the blank appropriately in the context of the passage. Choose the best tense form of the verb.(5)
+A. remains
+B. has remained
+C. remain
+D. had remained
+Answer: A
+
+Q.81: Choose the correct direct speech form of the following sentence. She told him that he would play basketball.
+A. She said to him, "You should play basketball."
+B. She said to him, "You would play basketball."
+C. She said to him, "You will play basketball."
+D. She said to him, "He would play basketball."
+Answer: C
+
+Q.82: Fill in the blank with an appropriate phrasal verb. After initial hesitation, the entrepreneur finally ______ the risky investment.
+A. plumped for
+B. cleaned over
+C. banked on
+D. plunged out
+Answer: A
+
+Q.83: Identify the error in the sentence. She completed the assignment quick to meet the deadline.
+A. quick
+B. deadline
+C. assignment
+D. completed
+Answer: A
+
+Q.84: Choose the correct idiom for the word highlighted in bold. There is no point in discussing the new project with him as he always pours cold water on any ideas.
+A. He strongly supports new ideas.
+B. He discourages or criticizes new ideas.
+C. He ignores new ideas completely.
+D. He enthusiastically accepts new ideas.
+Answer: B
+
+Q.85: Rearrange the parts of the sentence in the correct order. The enforcement of international human rights laws P. to hold violators accountable for war crimes and genocide Q. has faced obstacles due to political resistance, R. despite the establishment of global courts and legal frameworks S. and the complexities of diplomatic immunity in sovereign states
+A. SRQP
+B. QRSP
+C. PSQR
+D. RSQP
+Answer: D
+
+Q.86: Choose the correct idiom for the word highlighted in bold. She didn't realize that the clever salesman was **taking her for a ride.**
+A. Giving her a lift in his car
+B. Cheating or deceiving her
+C. Taking her on an amusement park ride
+D. Offering her a business opportunity
+Answer: B
+
+Q.87: Improve the sentence by selecting the appropriate preposition from the following options. The intricate designs of the ancient manuscript were hidden ____ the layers of dust and time, waiting to be rediscovered by modern scholars.
+A. over
+B. outside
+C. beneath
+D. on
+Answer: C
+
+Q.88: Identify the error in the sentence He passed away the forms to the candidates.
+A. forms
+B. passed
+C. away
+D. candidates
+Answer: C
+
+Q.89: Choose the most suitable option to fill in the blank. I was practising the guitar ______.
+A. codes
+B. cords
+C. chords
+D. cards
+Answer: C
+
+Q.90: Fill in the blank with the correctly spelt word. The ______ behavior of electrons challenged classical physics.
+A. anomolous
+B. anamolous
+C. anomalous
+D. anomulous
+Answer: C
+
+Q.91: Select the most appropriate antonym of the given word. Placate
+A. Soothe
+B. Appease
+C. Infuriate
+D. Calm
+Answer: C
+
+Q.92: Identify the misspelt word.
+A. Winsom
+B. Veneration
+C. Temerity
+D. Supercilious
+Answer: A
+
+Q.93: Spot the correct spelling of an ancient tearbottle.
+A. Lacrimetory
+B. Lacrymatory
+C. Lacrimattory
+D. Lacrymotory
+Answer: B
+
+Q.94: Choose the correct one-word substitute for: 'A person who seeks to overthrow established government by unlawful means'.
+A. Anarchist
+B. Immigrant
+C. Diplomat
+D. Patriot
+Answer: A
+
+Q.95: Choose the correct one-word substitute for: 'Habitually dishonest; lying'.
+A. Veracious
+B. Candid
+C. Mendacious
+D. Frank
+Answer: C
+
+Q.96: Select the sentence containing the homonym of the highlighted word: The calligrapher added a cadel in the manuscript margin.
+A. The scribe's cadel resembled a floral spiral.
+B. The artist painted a cadel into the decorative header.
+C. The engineer adjusted the cadel in the circuit board.
+D. The monk illuminated the cadel in gold leaf.
+Answer: B
+
+Q.97: Choose the most suitable option to replace the highlighted part of the sentence: I prefer tea than coffee.
+A. prefer tea more
+B. prefer tea for than
+C. prefer tea to
+D. prefer tea on
+Answer: C
+
+Q.98: A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. She said, "I don't like spicy food."
+A. She said she didn't liked spicy food.
+B. She said that she didn't like spicy food.
+C. She said she doesn't like spicy food.
+D. She said that she doesn't liked spicy food.
+Answer: B
+
+Q.99: A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. She said, "I met him yesterday."
+A. She said that she met him the day before.
+B. She said that she had met him the day before.
+C. She said that she has met him the day before.
+D. She said that she meets him yesterday.
+Answer: A
+
+Q.100: Rearrange the following sentences to form a coherent paragraph:
+
+1. The erosion of trust in public institutions is a defining feature of contemporary political discourse, influencing voter behavior and policy outcomes.
+
+2. Consequently, robust and transparent governance mechanisms are essential to rebuilding public confidence and ensuring the legitimacy of a democratic system.
+
+3. This crisis can be traced to a historical understanding of the "social contract" where the public grants authority in exchange for protection and well-being.
+
+4. The breakdown of this unwritten agreement has led to widespread disillusionment and a perception of institutional failure, with significant social consequences.
+A. 2, 3, 1, 4
+B. 1, 4, 3, 2
+C. 1, 3, 4, 2
+D. 3, 1, 2, 4
+Answer: C
+

@@ -1,0 +1,806 @@
+Q.1: The average weight of 10 men is increased by 2 kg when one of the men who weighs 60 kg is replaced by a new man. What is the weight of the new man?
+A. 70 kg
+B. 80 kg
+C. 48 kg
+D. 32 kg
+Answer: B
+
+Q.2: What is the next number in the series? 2, 4, 8, 16, ?
+A. 20
+B. 24
+C. 32
+D. 30
+Answer: C
+
+Q.3: In a certain code language, "STORM" is written as "UWQUO." How will "SWEET" be written in the same code language?
+A. VZGHU
+B. VZGHW
+C. UZGHV
+D. WZGHV
+Answer: C
+
+Q.4: The ratio of incomes of P and Q is 7 : 9, and the ratio of their expenditures is 5 : 7. If each saves ₹ 6,000, what is P's income?
+A. ₹ 21,000
+B. ₹ 28,000
+C. ₹ 35,000
+D. ₹ 42,000
+Answer: A
+
+Q.5: Choose the option that perfectly matches the given address. Original Address: Residence Unit β-44/ ΩKing's Residence Royale, Phase-VII-BSt. Patrick's Crescent-WestSan Francisco, California 94107United States of America | North America
+A. Residence Unit β-44/ΩKings Residence Royale. Phase-VII-BSt. Patrick's Crescent- WestSan Francisco, California 94107United States of America | North America
+B. Residence Unit β-44/ΩKing's Residence Royale, Phase-VII BSt. Patrick's Crescent- WestSan Francisco, California 94107United States of America | North America 1 INTELLIGENCE
+C. Residence Unit β-44/ΩKing's Residence Royale, Phase-VII-BSt. Patricks Crescent- WestSan Francisco, California 94107United States of America | North America
+D. Residence Unit β −44/Ω King's Residence Royale, Phase-VII-BSt. Patrick's Crescent- WestSan Francisco, California 94107United States of America | North America
+Answer: D
+
+Q.6: In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 1 2 3 5 6 7 24 32 ?
+A. 34
+B. 38
+C. 40
+D. 46
+Answer: C
+
+Q.7: P and Q are siblings, with P being male. R is the mother of Q. S is the father of R, while T is the mother of S. Based on the information provided, what is the relationship of P with T?
+A. Grandson
+B. Granddaughter
+C. Great-grandson
+D. Great- granddaughter
+Answer: C
+
+Q.8: Centre codes are generated such that the first digit is the cube root of the last three digits. Which centre code is invalid?
+A. 3027
+B. 4064
+C. 6216
+D. 7350
+Answer: D
+
+Q.9: Choose the option which is exactly similar to: 24th September 2024, House No-45, Chandni Chowk, New Delhi-110006
+A. 24th September 2024, House No.-45, Chandni Chowk, New Delhi-110006
+B. 25th September 2024, House No-45, Chandni Chowk, New Delhi-110006
+C. 24th September 2024, House No-45, Chandni Chowk, New Delhi-110006
+D. 24th September 2024, House No-45, Chandni Chowk, New Delhi-110001
+Answer: C
+
+Q.10: During a group activity, a participant with a speech impediment is mocked by another team member, causing the affected individual to withdraw and remain silent. Which of the following actions represents the most professional and supportive response to this situation?
+A. Offer an immediate apology to the group on their behalf to avoid any social awkwardness.
+B. Choose to completely ignore the entire situation to avoid escalating tension in the group.
+C. Address the behaviour immediately, clarify that it is unacceptable, and ensure support exists.
+D. Ask the affected participant to step out of the room so they can take a necessary break.
+Answer: A
+
+Q.11: You're leading a team where one member is frequently missing deadlines. Instead of improving, they start avoiding communication. The rest of the team is frustrated. What is the most effective action?
+A. Immediately issue a formal written warning to both employees stating that any further displays of hostility will lead to immediate termination from their respective roles within the company.
+B. Publicly address the conflict during the next team meeting to highlight the unprofessional nature of their behavior and inform the rest of the team that this conduct will no longer be tolerated.
+C. Choose to ignore their personal conflict entirely, assuming that they are mature enough to manage their own behavior and that the situation will resolve itself naturally as the project progresses.
+D. Schedule separate, private meetings with each employee to hear their perspectives, 2 and then facilitate a joint mediation session to resolve their underlying conflicts and establish new ground rules.
+Answer: D
+
+Q.12: What should come in place of the question mark (?) in the following analogy? BEH : KNQ :: TWZ : ?
+A. BFI
+B. CEI
+C. CFI
+D. CFH
+Answer: C
+
+Q.13: In the given question, a few statements have been given followed by conclusions based on them. Consider the statements to be true and answer which of the given conclusions logically follow the statement. Statements
+
+1. No scientist is careless.
+
+2. All researchers are scientists.
+
+3. Some professors are researchers. Conclusions
+
+I. No researcher is careless.
+
+II. Some professors are not careless.
+
+III. All scientists are researchers.
+
+IV. Some professors are scientists.
+A. Only I, II and IV
+B. Only I and II follow follow
+C. Only II, III and IV
+D. All four follow follow
+Answer: A
+
+Q.14: In the following question, one statement is given, followed by certain inferences. Consider the statement to be true even if it seems to contradict commonly known facts. Read the inferences carefully and decide which of them logically follow from the given statement.
+
+Statement: To enhance employee skills, the company has started organising regular training sessions and professional development workshops. Inferences:
+
+I. The company considers skill development beneficial for employees.
+
+II. None of the employees possesses the required skills.
+
+III. Training programs may help improve employee performance.
+A. Only inferences I and II follow.
+B. Only inferences II and III follow.
+C. Only inferences I and III follow.
+D. All inferences follow.
+Answer: C
+
+Q.15: Among the four given combinations, two are exactly identical. Identify the matching pair.
+
+1. Mohd. Arif Khan, Bldg-25, Flat 4103, Sapphire Towers, 6th main road, Lucknow - 226010
+
+2. Mohd Arif Khan, Bldg-25, Flat 4103, Sapphire Towers, 6th main road, Lucknow - 226010
+
+3. Mohd. Arif Khan, Bldg-25, Flat 4103, Sapphire Towers, 6th main road, Lucknow - 226010
+
+4. Mohd. Arif Khan, Bldg-25, Flat 4130, Sapphire Towers, 6th main road, Lucknow - 226010
+A. 1 & 2
+B. 2 & 3
+C. 1 & 3
+D. 3 & 4
+Answer: C
+
+Q.16: A senior leader is about to announce a major organizational restructuring that will lead to layoffs and role changes, causing significant anxiety among employees. Which approach by the leader best demonstrates high emotional intelligence (EI)?
+A. Send a cold corporate email broadcast to shield themselves from staff shock and emotional reactions.
+B. Highlight only financial growth projections while completely ignoring job security concerns and staff anxiety.
+C. Withhold the restructuring information entirely until the morning it takes effect to protect daily productivity.
+D. Conduct a live, transparent briefing that validates staff anxiety, addresses challenges, and explains strategic necessity.
+Answer: D
+
+Q.17: Read the given conditions carefully and determine the appropriate outcome for the case provided. If any exception applies, identify the authority to whom the case should be referred. 3 Criteria for Professional Medical Fellowship:
+
+(i) Must hold an MBBS degree.
+
+(ii) Must have completed a 2-year internship. Exceptions: Exception
+A. Fellowship to be approved
+B. Case to be referred to the Medical Board
+C. Application to be rejected
+D. Case to be referred to the Ethics Committee
+Answer: B
+
+Q.18: Read the statement carefully and assume it to be true. Then examine the two conclusions given below it and decide which conclusion(s), if any, logically follow from the statement.
+
+Statement: A state education board has introduced competency-based evaluation alongside existing examination patterns to improve assessment quality.
+
+Conclusions:
+
+I. Traditional examinations have been completely abolished.
+
+II. Competency-based evaluation guarantees perfect academic scoring accuracy.
+A. Only conclusion I follows
+B. Only conclusion II follows
+C. Both conclusions I and II follow
+D. Neither conclusion I nor conclusion II follows
+Answer: D
+
+Q.19: In a certain code language, "HOUSE" is written as "iOvSf" How will "PLANE" be written in the same code language?
+A. qLbNf
+B. pLbNf
+C. qLcNf
+D. qLbMf
+Answer: A
+
+Q.20: In a certain code language, "STREET" is written as "SuRfEu" How will "FLIGHT" be written in the same code language?
+A. FmIgHu
+B. FnIhHu
+C. FmIhTu
+D. FmIhHu
+Answer: D
+
+Q.21: A public sector organization recently implemented a software system that reduced processing errors by 30%. However, employees report that the system occasionally produces inaccurate outputs under rare conditions. Management decides to continue using the system without modification, arguing that the 30% reduction in overall errors outweighs the risk of rare inaccuracies. Which of the following, if true, most seriously weakens management's argument?
+A. The manual errors previously made by employees were easier to detect and fix than the system's inaccurate outputs.
+B. Employees require additional training to fully understand all the features of the new software system.
+C. The software system cost less to implement than the projected annual losses caused by manual errors.
+D. Other public sector organizations using similar software have reported a 35% reduction in processing errors.
+Answer: A
+
+Q.22: Study the pattern in the given series and find the next set of letters in the series. HOM, ESJ, BWG, YAD, ?
+A. VEA
+B. VCA
+C. VDZ
+D. UDB
+Answer: A
+
+Q.23: Read the given statement carefully and the following assumptions based on it. Decide which of the assumptions are implicit in the statement.
+
+Statement: For a project to be completed before the upcoming deadline, the team leader instructed all members to adopt an agile methodology for faster task execution. Assumptions:
+
+I. The project was previously running behind schedule due to the incompetence of the team members.
+
+II. Adopting an agile methodology is conducive to increasing the speed of project completion.
+A. Only Assumption I is implicit
+B. Both Assumptions I and II are implicit
+C. Neither Assumption I nor II is implicit
+D. Only Assumption II is implicit
+Answer: D
+
+Q.24: Which of the following rows/columns are connected/related with each other in some way? Rows Columns I II III IV V I 2 4 3 7 6 II 4 16 9 18 14 III 8 64 27 144 132 IV 16 256 81 180 180 V 32 1024 243 324 508
+A. Columns I, II and
+B. Columns I, II and IV III
+C. Columns I, II and V
+D. Columns II, III and V
+Answer: B
+
+Q.25: Select the option that is related to the third word in the same way as the second word is related to the first word. (The words must be considered as meaningful English words and must not be related to each other based on the number of letters/number of consonants/vowels in the word.) Scissors : Cut :: Needle : ?
+A. Measure
+B. Sew
+C. Paint
+D. Dig
+Answer: B
+
+Q.26: If the price of the commodity decreases from Rs. 100 to Rs. 105, and the quantity demanded decreases from 100 to 115, then what is the value of the price elasticity?
+A. 0.33
+B. 3
+C. 0.91
+D. 1.09
+Answer: A
+
+Q.27: An example of a direct tax is:
+A. Goods and
+B. Excise duty services tax
+C. Corporate tax
+D. Central sales tax
+Answer: A
+
+Q.28: Which Indian state is known for its traditional martial art, Kalaripayattu?
+A. Maharashtra
+B. Kerala
+C. West Bengal
+D. Andhra Pradesh
+Answer: A
+
+Q.29: In which year was the first ever MotoGP race held in India, and at which circuit?
+A. 2021, Madras Motor Race Track
+B. 2022, Kari Motor Speedway
+C. 2023, Buddh International Circuit
+D. 2024, Hyderabad Street Circuit
+Answer: A
+
+Q.30: Which Indian woman boxer won a medal at the London 2012 Olympics?
+A. Nikhat Zareen
+B. Lovlina Borgohain
+C. Mary Kom
+D. Sarita Devi
+Answer: C
+
+Q.31: Which city retained its title as the cleanest city in India for the 7th consecutive year in Swachh Survekshan 2024?
+A. Mysuru
+B. Surat
+C. Indore
+D. Bhopal
+Answer: C
+
+Q.32: Which of the following is the largest river system of Peninsular India?
+A. Godavari River
+B. Krishna River System System
+C. Kaveri River
+D. Ganga River System System
+Answer: A
+
+Q.33: The uniqueness of the Rigveda lies in its:
+A. Ritual procedures
+B. Multiperiod compilation
+C. Scientific content
+D. Use of Dravidian terms
+Answer: A
+
+Q.34: Fill in the blanks: The Mizo wind instrument Rawchhem, which resembles the Scottish bagpipe, produces different musical notes when the musician controls the ___.
+A. bamboo reeds
+B. leather valves
+C. brass strings
+D. finger holes
+Answer: A
+
+Q.35: Consider the following statements regarding India's participation in the 9th BRICS Industry Ministers' Meeting held in 2025:
+
+1) India launched the BRICS Startup Knowledge Hub in May 2025 to boost rural digital connectivity.
+
+2) India highlighted that MSMEs contributed 45% to exports and employed 25+ crore people in 2023-24. Which of the above statements is/are correct?
+A. Only 1 is correct
+B. Only 2 is correct
+C. Both 1 and 2 are
+D. Neither 1 nor 2 is correct correct
+Answer: A
+
+Q.36: Why is Indian planning considered a democratic political process?
+A. Because only elected officials approve the budget
+B. Because the planning process is secretive and efficient
+C. Because it is driven by market forces, not politics
+D. Because it undergoes parliamentary presentation and public input
+Answer: D
+
+Q.37: What was a unique feature of the bricks used in the buildings of Mohenjo-Daro?
+A. Standardized dimensional ratio
+B. Brightly painted with natural dyes
+C. Completely spherical shape
+D. Made using glass
+Answer: A
+
+Q.38: Consider the following pairs of States and their share in India’s mangrove coverage and choose the correct option:
+
+1. Gujarat — 23.66%
+
+2. Odisha — 12.39%
+A. Only 1
+B. Only 2
+C. Both 1 and 2 are
+D. Neither 1 nor 2 is correct correct
+Answer: A
+
+Q.39: Under which Article of the Indian Constitution can the Union government issue directions to States in certain matters?
+A. Article 250
+B. Article 254
+C. Article 256
+D. Article 258
+Answer: C
+
+Q.40: Under which article of the Indian Constitution is the State Legislature empowered to make provisions for the maintenance and auditing of Panchayat accounts?
+A. Article 239B
+B. Article 224A
+C. Article 243J
+D. Article 279A
+Answer: A
+
+Q.41: Which location in Rajasthan is known for uranium deposits?
+A. Jaisalmer
+B. Udaipur
+C. Kota
+D. Bikaner
+Answer: A
+
+Q.42: Under Article 358 of the Indian Constitution, the suspension of Article 19 during a National Emergency operates only when the Emergency is proclaimed on which ground?
+A. External aggression or war
+B. Financial instability or economic crisis
+C. Constitutional breakdown or failure of governance
+D. Armed rebellion or internal disturbance
+Answer: A
+
+Q.43: Which of the following is the second-largest coalfield in India after Jharia?
+A. Raniganj coal field
+B. Bokaro coal field
+C. Giridih coal field
+D. Karanpura coal field
+Answer: A
+
+Q.44: In which city was the first-ever Asian Games held in 1951?
+A. Tokyo, Japan
+B. Bangkok, Thailand
+C. New Delhi, India
+D. Seoul, South Korea
+Answer: A
+
+Q.45: Consider the following statements regarding the Buff-tip moth:
+
+1. The larvae of the buff-tip moth are capable of stripping an entire tree bare within a few weeks.
+
+2. "Phalera cf. bucephala" is the scientific name of the buff-tip moth. Which of the statements given above is/are correct?
+A. 1 only
+B. 2 only
+C. Both 1 and 2
+D. Neither 1 nor 2
+Answer: A
+
+Q.46: Which of the following trade policy measure was taken as part of India's liberalisation policy in 1991?
+A. Trade tariffs were reduced.
+B. Trade tariffs were increased.
+C. Exports were reduced.
+D. Exports were increased.
+Answer: A
+
+Q.47: In the Indian Census process, which operation is carried out before the Population Enumeration phase?
+A. House Listing and Housing Census
+B. National Sample and Household Survey
+C. Socio-Economic and Caste Census
+D. Agricultural and Livestock Census
+Answer: A
+
+Q.48: Who authored the epic novel A Suitable Boy, regarded as one of the longest works in English literature?
+A. Vikram Seth
+B. Amitav Ghosh
+C. Rohinton Mistry
+D. Shashi Tharoor
+Answer: A
+
+Q.49: Which factor constrained industrial expansion in several sectors following the economic reforms introduced in India in 1991?
+A. Excessive growth in export demand
+B. Declining use of foreign technology
+C. Restrictions on private participation
+D. Inadequate investment in infrastructure
+Answer: A
+
+Q.50: Why is the first-order Stark energy correction zero for the nondegenerate hydrogen (1s) ground state in a uniform external electric field?
+A. Because the electric field does not interact with bound electrons
+B. Because the ground-state wavefunction is rotationally symmetric
+C. Because the perturbation commutes with the hydrogen Hamiltonian
+D. Because all excited states are energetically degenerate with the ground state
+Answer: A
+
+Q.51: The base of a right prism is a triangle with area 24 cm². Prism height is 10 cm. Volume?
+A. 220 cm³
+B. 240 cm³
+C. 260 cm³
+D. 280 cm³
+Answer: B
+
+Q.52: If the semi-perimeter of a triangle is 24 cm and the lengths of two sides are 18 cm and 16 cm, what is the length of the third side?
+A. 16 cm
+B. 20 cm
+C. 14 cm
+D. 18 cm
+Answer: C
+
+Q.53: A closed cylindrical tank has radius 5 m and height 8 m. What is its total surface area?
+A. 440π m²
+B. 130π m²
+C. 1300π m²
+D. 130 \, m²
+Answer: A
+
+Q.54: P and Q started their business by investing ₹16,000 and ₹15,000, respectively. After 3 months, P withdrew ₹5,000 from his investment, whereas Q invested another ₹5,000 in his investment. After another 3 months, C joined the business by investing ₹21,000. Calculate the share of C out of the annual profit of ₹24,900.
+A. ₹5,600
+B. ₹6,300
+C. ₹7,200
+D. ₹8,100
+Answer: B
+
+Q.55: A man spends ₹1800 per month on average for the first four months and ₹2000 per month for the next eight months. If he saves ₹5600 in a year, find his average monthly income.
+A. ₹1200
+B. ₹4500
+C. ₹6500
+D. ₹2400
+Answer: D
+
+Q.56: A sum of ₹2,500 amounts to ₹2,916 in 2 years at compound interest. Calculate the rate of interest.
+A. 15%
+B. 8%
+C. 12%
+D. 6%
+Answer: B
+
+Q.57: A regular hexagon and a square have the same perimeter. If the area of the square is 144 cm², find the exact area of the hexagon.
+A. 96√3 cm²
+B. 49√3 cm²
+C. 26√3 cm²
+D. 87√3 cm²
+Answer: A
+
+Q.58: The ratio of the areas of two concentric circles is 16: 9. If the difference between their radii is 14 m, find the radius of the larger circle.
+A. 56 m
+B. 64 m
+C. 42 m
+D. 38 m
+Answer: A
+
+Q.59: The height of a right circular cone is 7 cm and its slant height is 25 cm. Find its curved surface area.
+A. 720π cm²
+B. 650π cm²
+C. 600π cm²
+D. 700π cm²
+Answer: C
+
+Q.60: A ladder of length 14 m rests against a wall making an angle of 45° with the ground. Find the distance of the foot from the wall.
+A. 10.1 m
+B. 7.8 m
+C. 9.9 m
+D. 8.9 m
+Answer: C
+
+Q.61: AB is a chord of a circle and P lies on the minor arc AB. Tangents at A and B meet at point T. If ∠APB= 104° , find ∠ATB .
+A. 28°
+B. 36°
+C. 48°
+D. 54°
+Answer: A
+
+Q.62: If sec θ+ tan θ= 5 , find the value of sin θ .
+A. 13
+B. 5/12
+C. 12
+D. 12/5
+Answer: C
+
+Q.63: If x= √2+√3 , then what is the value of x² 2−√3 + x - 9?
+A. 5√3
+B. 5√2
+C. 0
+D. 1
+Answer: A
+
+Q.64: If x+ 1 x = √17 , then find the value of x4−1 . x²
+A. \pm\sqrt{221} \)
+B. \pm\sqrt{223} \)
+C. \pm\sqrt{119} \)
+D. \pm\sqrt{116} \)
+Answer: A
+
+Q.65: If a sphere of radius r causes a water level rise of h in a cylinder of radius R, what is the relationship between r, R, and h?
+A. 4 r 3 = R2h
+B. r³ = R2h
+C. 2 r 3 = 2R2h 3
+D. r³ = 4R2h
+Answer: A
+
+Q.66: In ΔABC, D and E are the points on AB and AC, respectively, such that AD × AC = AB × AE. If ∠ADE = ∠ACB + 30° and ∠ABC = 78°, find the measure of angle A.
+A. 48°
+B. 68°
+C. 60°
+D. 54°
+Answer: A
+
+Q.67: To control a localized food crisis, a government mandates an anti-hoarding policy that artificially forces down the wholesale price of rice by 15%. A commercial wholesaler wants to ensure that their total daily sales revenue increases by exactly 2% despite this price cut. By what percentage must the wholesaler increase the volume of rice they sell each day?
+A. 20%
+B. 17%
+C. 13%
+D. 19%
+Answer: A
+
+Q.68: In an examination, the ratio of the number of students who passed the examination to those who couldn't pass is 25:
+
+4. If 5 more students had appeared and the number of students who couldn't pass had been 2 less than the original number, the ratio of passed students to failed students would have been 22:
+
+3. Find the total number of students who originally appeared for the examination.
+A. 87
+B. 116
+C. 145
+D. 174
+Answer: A
+
+Q.69: Preeti and Avantika are two sisters who have been asked by their mother to properly arrange their closet. The two sisters can together complete arranging it in 6 days. However, if Preeti works with 25% less efficiency and Avantika works with 20% more efficiency than their respective usual efficiencies, the work is seen to be completed in 200 days. Find the time that will be taken by Preeti to arrange the entire closet alone.
+A. 12 days
+B. 11 days
+C. 10 days
+D. 9 days
+Answer: A
+
+Q.70: In a right triangle ABC with ∠C= 90° , if sin A = 0.6, find tan B.
+A. 5
+B. 3/4
+C. 4
+D. 5/3
+Answer: A
+
+Q.71: Simplify: sin² (90°−θ) + sin² θ
+A. 1
+B. sin² θ
+C. cos² θ
+D. 0
+Answer: A
+
+Q.72: If u + v = 17 and uv = 39, find the value of u² + v².
+A. 207
+B. 209
+C. 211
+D. 213
+Answer: A
+
+Q.73: If x + 1 = 12, then find the value of x⁴ + 1 + x x4 x² + 1 . x²
+A. 20306
+B. 20304
+C. 20162
+D. 20448
+Answer: A
+
+Q.74: A vessel contains 500 litres of an aqueous solution with a 24% salt concentration by volume. The following sequential operations are performed:
+
+• 100 litres of the solution is removed and replaced with an equal volume of pure water.
+
+• 50 litres of this newly formed solution is removed and replaced with an equal volume of a 60% salt solution. What is the final percentage of salt by volume in the resulting mixture?
+A. 19.20%
+B. 21.12%
+C. 23.28%
+D. 25.20%
+Answer: A
+
+Q.75: Two circles with radii 12 cm and 8 cm have their centers 25 cm apart. What is the length of their transverse common tangent segment?
+A. 17 cm
+B. 10 cm
+C. 15 cm
+D. 20 cm
+Answer: A
+
+Q.76: Choose the correct indirect speech form of the sentence given below. Barbie said to me, "I want a mandolin."
+A. Barbie told me that she wanted a mandolin.
+B. Barbie told me that she wants a mandolin.
+C. Barbie said me that she wanted a mandolin.
+D. Barbie said to me that she has wanted a mandolin.
+Answer: A
+
+Q.77: Fill in the blank with the appropriate adverb. The instructions were ________ outlined, leading to confusion among participants.
+A. minutely
+B. succinctly
+C. nebulously
+D. punctiliously
+Answer: C
+
+Q.78: Choose the correct direct speech transformation of the sentence below. Upasana said that she hadn't seen her childhood friend for years.
+A. Upasana said, "I haven't seen my childhood friend since previous years."
+B. Upasana said, "I hadn't seen my childhood friend for years."
+C. Upasana said, "I haven't seen my childhood friend for ages."
+D. Upasana said, "I haven't seen my childhood friend for years."
+Answer: D
+
+Q.79: Choose the correct indirect speech form of the following sentence. He said, "I have never been on a submarine!"
+A. He admitted that he has never been on a submarine.
+B. He admitted that he had never been on a submarine.
+C. He admitted that he never had been on a submarine.
+D. He admitted that he never been on a submarine.
+Answer: B
+
+Q.80: Rearrange the parts of the sentence in the correct order. Amid the escalating trade war between the United States and China, P. which included extensive tariffs, regulatory restrictions, and sanctions on key industries, Q. disrupting global supply chains and triggering price volatility across financial markets R. both nations engaged in aggressive economic retaliatory measures, S. forcing multinational corporations to diversify their production hubs to mitigate risks
+A. QPRS
+B. RSPQ
+C. RPQS
+D. PQSR
+Answer: C
+
+Q.81: Choose the correct phrase for the word highlighted in bold. The poor subordinates are made scapegoats by their superiors.
+A. Blamed for others' faults
+B. Given a reward for their hard work
+C. Promoted to a higher position
+D. Praised for their honesty
+Answer: A
+
+Q.82: Identify the error in the sentence. She didn't went to the seminar last week.
+A. seminar
+B. Went
+C. she
+D. ast
+Answer: B
+
+Q.83: Rearrange the parts of the sentence in the correct order. The code of digital ethics P. in response to rising cyberbullying cases Q. was proposed to regulate online behavior R. that disrupt democratic processes S. and misinformation campaigns
+A. QPSR
+B. QPRS
+C. SPQR
+D. RPQS
+Answer: A
+
+Q.84: Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?
+
+1. The first confirmed exoplanet was discovered in 1992, marking a breakthrough in space exploration.
+
+2. In recent decades, advanced telescopes like Kepler and TESS have identified thousands of exoplanets.
+
+3. Astronomers classify exoplanets based on size, atmosphere, and their position within the habitable zone.
+
+4. Some exoplanets exhibit Earth-like characteristics, fueling scientific interest in their potential for hosting life.
+
+5. These planets orbit stars beyond our solar system and may provide insights into the possibility of extraterrestrial life.
+A. 2-1-3-4-5
+B. 1-3-2-4-5
+C. 1-5-2-3-4
+D. 1-4-5-2-3
+Answer: A
+
+Q.85: Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?
+
+1. Groups like the Society of Revolutionary Republican Women demanded equal rights and representation.
+
+2. Despite their contributions, women's rights were largely ignored in postrevolutionary France.
+
+3. Women played a significant role in the French Revolution, advocating for political rights and social reforms.
+
+4. This struggle laid the foundation for later feminist movements in Europe
+A. 4-3-2-1
+B. 2-4-3-1
+C. 1-4-3-2
+D. 3-1-2-4
+Answer: C
+
+Q.86: Select the most appropriate synonym of the given word: ANATHEMA
+A. Approval
+B. Admiration
+C. Curse
+D. Blessing
+Answer: C
+
+Q.87: Choose the correct meaning of idiom: To ride the high horse
+A. Detached and reclusive
+B. Arrogant and self-righteous
+C. Humble and grounded
+D. Boastful but harmless
+Answer: B
+
+Q.88: **Comprehension (Q. 88 - 92):** Urbanity, once emblematic of civic vitality and democratic congregation, has been increasingly reframed as a matrix of commodified experiences. The aesthetic uniformity of gentrified spaces, lauded for efficiency, often (1) ______ the organic disorder essential to pluralistic expression. Where public squares once served as theaters of dissent, we now find algorithmically curated silence—noise filtered, identities streamlined. Technocratic governance, under the guise of neutrality, embeds surveillance into the mundane. Benches are subtly shortened to deter loitering, foliage is pruned not for shade but for visibility, and cameras peer from minimalist lampposts. These are not incidental choices but deliberate gestures in a choreography of control, wherein the citizen is (2) ______ into passive compliance. Paradoxically, connectivity multiplies isolation. Inhabitants become nodes in a network, visible yet unheard, quantified but unrepresented. The language of “smart” infrastructure conceals a deeper estrangement—between place and person, inhabitant and city. Without contestation, the commons may be transmuted into a theatre of managed appearance, and freedom reduced to (3) ______ within programmed boundaries. What masquerades as urban renewal might, in truth, be an erasure—a calculated (4) ______ of messiness, unpredictability, and resistance. In this theatre of optimization, dissent must either be re-scripted or (5) ______.
+
+---
+
+What should come in the place of blank number [1]?
+A. masks
+B. heightens
+C. reclaims
+D. energizes
+Answer: A
+
+Q.89: **Comprehension (Q. 88 - 92):** Urbanity, once emblematic of civic vitality and democratic congregation, has been increasingly reframed as a matrix of commodified experiences. The aesthetic uniformity of gentrified spaces, lauded for efficiency, often (1) ______ the organic disorder essential to pluralistic expression. Where public squares once served as theaters of dissent, we now find algorithmically curated silence—noise filtered, identities streamlined. Technocratic governance, under the guise of neutrality, embeds surveillance into the mundane. Benches are subtly shortened to deter loitering, foliage is pruned not for shade but for visibility, and cameras peer from minimalist lampposts. These are not incidental choices but deliberate gestures in a choreography of control, wherein the citizen is (2) ______ into passive compliance. Paradoxically, connectivity multiplies isolation. Inhabitants become nodes in a network, visible yet unheard, quantified but unrepresented. The language of “smart” infrastructure conceals a deeper estrangement—between place and person, inhabitant and city. Without contestation, the commons may be transmuted into a theatre of managed appearance, and freedom reduced to (3) ______ within programmed boundaries. What masquerades as urban renewal might, in truth, be an erasure—a calculated (4) ______ of messiness, unpredictability, and resistance. In this theatre of optimization, dissent must either be re-scripted or (5) ______.
+
+---
+
+What should come in the place of blank number [2]?
+A. galvanized
+B. domesticated
+C. inducted
+D. stimulated
+Answer: D
+
+Q.90: **Comprehension (Q. 88 - 92):** Urbanity, once emblematic of civic vitality and democratic congregation, has been increasingly reframed as a matrix of commodified experiences. The aesthetic uniformity of gentrified spaces, lauded for efficiency, often (1) ______ the organic disorder essential to pluralistic expression. Where public squares once served as theaters of dissent, we now find algorithmically curated silence—noise filtered, identities streamlined. Technocratic governance, under the guise of neutrality, embeds surveillance into the mundane. Benches are subtly shortened to deter loitering, foliage is pruned not for shade but for visibility, and cameras peer from minimalist lampposts. These are not incidental choices but deliberate gestures in a choreography of control, wherein the citizen is (2) ______ into passive compliance. Paradoxically, connectivity multiplies isolation. Inhabitants become nodes in a network, visible yet unheard, quantified but unrepresented. The language of “smart” infrastructure conceals a deeper estrangement—between place and person, inhabitant and city. Without contestation, the commons may be transmuted into a theatre of managed appearance, and freedom reduced to (3) ______ within programmed boundaries. What masquerades as urban renewal might, in truth, be an erasure—a calculated (4) ______ of messiness, unpredictability, and resistance. In this theatre of optimization, dissent must either be re-scripted or (5) ______.
+
+---
+
+What should come in the place of blank number [3]?
+A. iteration
+B. containment
+C. freedom
+D. circulation
+Answer: A
+
+Q.91: **Comprehension (Q. 88 - 92):** Urbanity, once emblematic of civic vitality and democratic congregation, has been increasingly reframed as a matrix of commodified experiences. The aesthetic uniformity of gentrified spaces, lauded for efficiency, often (1) ______ the organic disorder essential to pluralistic expression. Where public squares once served as theaters of dissent, we now find algorithmically curated silence—noise filtered, identities streamlined. Technocratic governance, under the guise of neutrality, embeds surveillance into the mundane. Benches are subtly shortened to deter loitering, foliage is pruned not for shade but for visibility, and cameras peer from minimalist lampposts. These are not incidental choices but deliberate gestures in a choreography of control, wherein the citizen is (2) ______ into passive compliance. Paradoxically, connectivity multiplies isolation. Inhabitants become nodes in a network, visible yet unheard, quantified but unrepresented. The language of “smart” infrastructure conceals a deeper estrangement—between place and person, inhabitant and city. Without contestation, the commons may be transmuted into a theatre of managed appearance, and freedom reduced to (3) ______ within programmed boundaries. What masquerades as urban renewal might, in truth, be an erasure—a calculated (4) ______ of messiness, unpredictability, and resistance. In this theatre of optimization, dissent must either be re-scripted or (5) ______.
+
+---
+
+What should come in the place of blank number [4]?
+A. celebration
+B. aggression
+C. purification
+D. exile
+Answer: C
+
+Q.92: **Comprehension (Q. 88 - 92):** Urbanity, once emblematic of civic vitality and democratic congregation, has been increasingly reframed as a matrix of commodified experiences. The aesthetic uniformity of gentrified spaces, lauded for efficiency, often (1) ______ the organic disorder essential to pluralistic expression. Where public squares once served as theaters of dissent, we now find algorithmically curated silence—noise filtered, identities streamlined. Technocratic governance, under the guise of neutrality, embeds surveillance into the mundane. Benches are subtly shortened to deter loitering, foliage is pruned not for shade but for visibility, and cameras peer from minimalist lampposts. These are not incidental choices but deliberate gestures in a choreography of control, wherein the citizen is (2) ______ into passive compliance. Paradoxically, connectivity multiplies isolation. Inhabitants become nodes in a network, visible yet unheard, quantified but unrepresented. The language of “smart” infrastructure conceals a deeper estrangement—between place and person, inhabitant and city. Without contestation, the commons may be transmuted into a theatre of managed appearance, and freedom reduced to (3) ______ within programmed boundaries. What masquerades as urban renewal might, in truth, be an erasure—a calculated (4) ______ of messiness, unpredictability, and resistance. In this theatre of optimization, dissent must either be re-scripted or (5) ______.
+
+---
+
+What should come in the place of blank number [5]?
+A. expunged
+B. dramatized
+C. validated
+D. softened
+Answer: A
+
+Q.93: Fill in the blank with the correct preposition: The decision was made ______ consultation with the stakeholders.
+A. by ![Option A](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-2_q93_opt_A.png)
+B. under ![Option B](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-2_q93_opt_B.png)
+C. upon ![Option C](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-2_q93_opt_C.png)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-2_q93_opt_D.png)
+Answer: D
+
+Q.94: Find the part of the sentence that contains an error: The correlation-matrix visualization (1)/ appeared more clear (2)/ when the superfluous variables were removed (3)/ during the second iteration of analysis. (4)/
+A. (1)
+B. (2)
+C. (3)
+D. (4)
+Answer: B
+
+Q.95: Change the following from active to passive: The chef was preparing the dessert when we arrived.
+A. The dessert is being prepared by the chef when we arrived.
+B. The dessert was being prepared by the chef when we arrived.
+C. The dessert has been prepared by the chef.
+D. The dessert had been prepared by the chef when we arrived.
+Answer: B
+
+Q.96: Change the following from active to passive: Someone is following us.
+A. We are being
+B. We are followed. followed.
+C. We have been
+D. We were being followed. followed.
+Answer: A
+
+Q.97: Convert the sentence provided below from its passive voice structure to an active voice structure: The committee was believed to have been working on a draft since January.
+A. It is believed that the committee was working on a draft since January.
+B. Someone believed the draft worked itself since January.
+C. It is believed that a draft was written on the committee.
+D. The committee had believed the draft was working.
+Answer: A
+
+Q.98: Convert the sentence provided below from its passive voice structure to an active voice structure: It was concluded that the suspects had been hiding in plain sight.
+A. The suspects were concluded to hide in plain sight.
+B. Someone concluded the suspects were hiding plainly.
+C. It was concluded that the suspects were hiding in plain sight.
+D. The conclusion was hiding of the suspects.
+Answer: C
+
+Q.99: Choose the most suitable option to replace the highlighted part of the sentence: The teacher explained us the lesson clearly.
+A. explained the
+B. explained to us lesson to us the lesson
+C. had explained us
+D. explained we the lesson
+Answer: A
+
+Q.100: A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The journalist said that under no condition would the authorities release the documents early.
+A. "Under no condition will the authorities release the documents early," said the journalist.
+B. "Authorities will not release the documents early under any condition," he said.
+C. "Under no condition would the authorities release the documents early," said the journalist.
+D. "The document shall not be released early," said the journalist.
+Answer: A
+

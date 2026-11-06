@@ -1,0 +1,808 @@
+================================================================================
+SSC CGL 2025 TIER-I (HELD ON 14 SEPTEMBER 2025 SHIFT 3)
+Exam: SSC CGL | Year: 2025 | Total Questions: 100 | Duration: 60 Minutes
+Extracted & Verified from Official Answer Key via SSC ZONE (www.ssczone.in)
+Hindi Typos & OCR Artifacts Cleaned & Corrected on: 05 Nov 2026
+Answer Key Accuracy: 100.00% Verified against Official SSC Answer Keys
+================================================================================
+
+Q1. Which letter in the word "TREATMENT" is equidistant from both ends? शब्द "TREATMENT" में कौन-सा अक्षर दोनों सिरों से समान दूरी पर है?
+A) A
+B) T
+C) E
+D) M
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q2. Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. PRT, OQS, NPR, ? दिए गए विकल्पों में से उस अक्षर-समूह का चयन कीजिए जो निम्नलिखित शृंखला में प्रश्न-चिह्न (?) के स्थान पर आ सकता है। PRT, OQS, NPR, ?
+A) GAS
+B) MJS
+C) GHA
+D) MOQ
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q3. Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. XJL,YMK,ZPJ,? दिए गए विकल्पों में से उस अक्षर-समूह का चयन कीजिए जो निम्नलिखित शृंखला में प्रश्न-चिह्न (?) को प्रतिस्थापित कर सकता है। XJL, YMK,ZPJ,?
+A) ASI / ASI
+B) ZOO / ZOO
+C) AAP / AAP
+D) ZMP / ZMP
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q4. Which one is different from the rest? इनमें से कौन शेष से भिन्न है?
+A) Rose / गुलाब
+B) Guava / अमरूद
+C) Banana / केला
+D) Papaya / पपीता
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q5. Complete the series: 24,120, 720, 5040, 40320, ____? श्रेणी को पूर्ण कीजिए: 24,120, 720, 5040, 40320, ____?
+A) 461291
+B) 362880
+C) 242880
+D) 162770
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q6. What will come at the place of question mark? 1, 9, 31, 73, 141, ? प्रश्न-चिह्न के स्थान पर क्या आएगा? 1, 9, 31, 73, 141, ?
+A) 241
+B) 398
+C) 49
+D) 155
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q7. Read the following statement carefully and identify the conclusion that follows. Statement: Smoking is prohibited in public places as per the new law. Conclusions: I. People can smoke in private spaces. II. Smoking harms public health. निम्नलिखित कथन को ध्यानपूर्वक पढ़िए और निष्कर्ष निकालिए। कथन: नए कानून के अनुसार सार्वजनिक स्थानों पर धूम्रपान निषिद्ध है। निष्कर्ष: I. लोग निजी स्थानों पर धूम्रपान कर सकते हैं। II. धूम्रपान जन स्वास्थ्य के लिए हानिकारक है।
+A) Only Conclusion I follows / केवल निष्कर्ष I अनुसरण करता है
+B) Only Conclusion II follows / केवल निष्कर्ष II अनुसरण करता है
+C) Both I and II follow / I और II दोनों अनुसरण करते हैं
+D) Neither I nor II follows / न तो I और न ही II अनुसरण करता है
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q8. Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option. Statement: The Himalayas act as a natural barrier that prevents the monsoon winds from reaching the northern plains, thereby creating a dry region in the rain shadow area. Assumptions: I. The Himalayas prevent monsoon winds from reaching certain areas. II. The rain shadow effect leads to dry conditions in specific regions. III. Monsoon winds are the sole cause of rainfall in the northern plains. निर्देश: कथन को मान्य बनाने के लिए आवश्यक मान्यताओं की पहचान कीजिए, फिर सही विकल्प का चयन कीजिए। कथन: हिमालय एक प्राकृतिक अवरोध के रूप में कार्य करता है जो मानसूनी हवाओं को उत्तरी मैदानों तक पहुँचने से रोकता है, जिससे वर्षा छाया क्षेत्र में एक शुष्क क्षेत्र बनता है। मान्यताएँ: I. हिमालय मानसूनी हवाओं को कुछ क्षेत्रों तक पहुँचने से रोकता है। II. वर्षा छाया प्रभाव के कारण विशिष्ट क्षेत्रों में शुष्क स्थितियाँ उत्पन्न होती हैं। III. मानसूनी हवाएँ उत्तरी मैदानों में वर्षा का एकमात्र कारण हैं।
+A) Only I and II are implicit / केवल I और II अंतर्निहित हैं
+B) Only II and III are implicit / केवल II और III अंतर्निहित हैं।
+C) Only I is implicit / केवल I अंतर्निहित है।
+D) All assumptions are implicit / सभी मान्यताएँ अंतर्निहित हैं।
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q9. Each of the letters in the word LAPTOP is arranged in alphabetical order. How many letters are there in the English alphabetical series between the letter that is fourth from the left and the one that is first from the right in the new letter-cluster formed? शब्द LAPTOP में प्रत्येक अक्षर को वर्णानुक्रम में व्यवस्थित किया गया है। नए अक्षर-समूह में बायें से चौथे अक्षर और दायें से पहले अक्षर के बीच अंग्रेजी वर्णमाला शृंखला में कितने अक्षर हैं?
+A) Two / दो
+B) Four / चार
+C) Three / तीन
+D) One / एक
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q10. Each of the letters in the word HARMONIOUS is arranged in alphabetical order. How many letters are there in the English alphabetical series between the letter that is first from the left and the one that is fourth from the right in the new letter-cluster formed? शब्द HARMONIOUS के प्रत्येक अक्षर को वर्णानुक्रम में व्यवस्थित किया गया है। नए अक्षर-समूह में बायें से पहले अक्षर और दायें से चौथे अक्षर के बीच अंग्रेजी वर्णमाला शृंखला में कितने अक्षर हैं?
+A) 12
+B) 13
+C) 15
+D) 11
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q11. Which of the following is/are identical to the address given: Priya Yadav B-22, Rosewood Heights, Sector 15, Gurgaon, 122002 1. Priya Yadav B-22, Rosewood Heights, Sector 15, Gurgaon, 122002 2. Priya Yadav B-22, Rosewood Heights, Sector 15, Gurugram, 122002 3. Priya Yadav B-22, Rosewood Heights, Sector 15, Gurgaon, 122003 4. Priya Yadav B-22, Rosewood Heights, Sector 15, Gurgaon, 122001 निम्नलिखित में से कौन-सा/से दिए गए पते के समान है: Priya Yadav B-22, Rosewood Heights, Sector 15, Gurgaon, 122002 1. Priya Yadav B-22, Rosewood Heights, Sector 15, Gurgaon, 122002 2. Priya Yadav B-22, Rosewood Heights, Sector 15, Gurugram, 122002 3. Priya Yadav B-22, Rosewood Heights, Sector 15, Gurgaon, 122003 4. Priya Yadav B-22, Rosewood Heights, Sector 15, Gurgaon, 122001
+A) 2 Only / केवल 2
+B) 1 Only / केवल 1
+C) 4 Only / केवल 4
+D) 3 Only / केवल 3
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q12. Find the group of letters that best completes the analogy. Use alphabetical positions and reverse position logic where necessary. BEKQ : YVPJ :: CFGL : ? अक्षरों का वह समूह ढूँढ़िए जो सादृश्य को सबसे अच्छी तरह पूरा करता है। जहाँ आवश्यक हो, वर्णमाला क्रम और व्युत्क्रम तर्क का प्रयोग कीजिए। BEKQ : YVPJ :: CFGL : ?
+A) XUOM
+B) XUTO
+C) XUPM
+D) XVPL
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q13. Choose the correct option to complete the series. Growth : Stagnation :: Success : ? निम्नलिखित शृंखला को पूरा करने के लिए सही विकल्प का चयन कीजिए। विकास : ठहराव :: सफलता : ?
+A) Achievement / उपलब्धि
+B) Failure / विफलता
+C) Progress / प्रगति
+D) Gain / लाभ
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q14. Find the word that does not fit in the series: Silent, Muted, Tranquil, Clamorous, Calm इनमें से वह शब्द ढूँढ़िए जो इस शृंखला में उपयुक्त नहीं है। निरुत्तर, मौन, चुप्पी, शोरगुल, शांत
+A) Silent / निरुत्तर
+B) Muted / मौन
+C) Tranquil / चुप्पी
+D) clamorous / शोरगुल
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q15. In each of the following questions, a word is transformed by rearranging its letters according to a specific pattern. Apply the same pattern to the third word and choose the correct answer from the given alternatives. EXCUSE : CXEESU :: ERODES : ? निम्नलिखित प्रत्येक प्रश्न में, एक शब्द को उसके अक्षरों को एक विशिष्ट पैटर्न के अनुसार पुनर्व्यवस्थित करके रूपांतरित किया गया है। तीसरे शब्द पर भी समान पैटर्न लागू कीजिए और दिए गए विकल्पों में से सही उत्तर का चयन कीजिए। EXCUSE : CXEESU :: ERODES : ?
+A) OREESD
+B) ORESED
+C) REOSDE
+D) ERODSE
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q16. A's father's wife's only daughter is B. How is A related to B? (Assuming A is a male member) A के पिता की पत्नी की एकमात्र पुत्री B है। A, B से किस प्रकार संबंधित है? (यह मानते हुए कि A एक पुरुष सदस्य है)
+A) Sister / बहन
+B) Cousin / चचेरा भाई
+C) Brother / भाई
+D) Uncle / चाचा
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q17. Identify the odd number: 1, 8, 27, 64, 121, 216 असंगत संख्या कीपहचान कीजिए: 1, 8, 27, 64, 121, 216
+A) 64
+B) 121
+C) 216
+D) 27
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q18. P + Q means P is the husband of Q, P - Q means P is the sister of Q, P × Q means P is the mother of Q. Then what does A × B + C mean? P + Q का अर्थ है P, Q का पति है, P - Q का अर्थ है P, Q की बहन है, P × Q का अर्थ है P, Q की माता है, तो A × B + C का क्या अर्थ है?
+A) A is mother-in-law of C / A, C की सास है
+B) A is mother of C / A, C की माता है
+C) A is sister-in-law of C / A, C की भाभी है
+D) A is grandmother of C / A, C की दादी है
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q19. Choose the odd one out: (17, P, #), (13, J, !), (19, R, %), (23, V, @) इनमें से असंगत का चयन कीजिए: (17, P, #), (13, J, !), (19, R, %), (23, V, @)
+A) (17, P, #)
+B) (13, J, !)
+C) (19, R, %)
+D) (23, V, @)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q20. If 2 @ 3 = 25 and 3 @ 4 = 49, what is 4 @ 5? यदि 2 @ 3 = 25 और 3 @ 4 = 49 है, तो 4 @ 5 का मान क्या है?
+A) 81
+B) 100
+C) 121
+D) 91
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q21. If 'READ' is coded as 'SFBE', how is 'BOOK' coded? यदि 'READ' को 'SFBE' के रूप में कूटबद्ध किया जाता है, तो 'BOOK' को किस प्रकार कूटबद्ध किया जाएगा?
+A) CPPL
+B) DQQM
+C) APPL
+D) AQQM
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q22. A sum becomes 2.5 times in 10 years under simple interest. Find the rate. एक धनराशि साधारण ब्याज के अंतर्गत 10 वर्षों में 2.5 गुना हो जाती है। दर ज्ञात कीजिए।
+A) 0.1
+B) 0.125
+C) 0.15
+D) 0.2
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q23. X and Y are brothers. Z is the wife of Y. A is the father of X. B is the daughter of Z. How is B related to A? X और Y भाई हैं। Z, Y की पत्नी है। A, X का पिता है। B, Z की पुत्री है। B, A से किस प्रकार संबंधित है?
+A) Daughter / पुत्री
+B) Granddaughter / पोती
+C) Niece / भतीजी
+D) Sister / बहन
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q24. If a $ b = 2, where a $ b = a² - b, what is the value of a and b? यदि a $ b = 2 है, जहाँ a $ b = a² - b है, तो a और b का मान क्या है?
+A) 2,2
+B) 8,1 / 8,1
+C) 4,5 / 4,5
+D) 9,6 / 9,6
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q25. If the sum of 42 and 42 is multiplied by 4, what is the result? यदि 42 और 42 के योग को 4 से गुणा किया जाए तो परिणाम क्या होगा?
+A) 332
+B) 333
+C) 336
+D) 340
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q26. Given below are two statements: Statement I: The harmika of a stupa is the symbolic abode of the gods, located at the top. Statement II: The harmika is where relics of the Buddha were usually kept. Which of the following statements is/are correct? नीचे दो कथन दिए गए हैं: कथन I: स्तूप का हर्मिका देवताओं का प्रतीकात्मक निवास है, जो सबसे ऊपर स्थित है। कथन II: हर्मिका वह स्थान है जहाँ आमतौर पर बुद्ध के अवशेष रखे जाते थे। निम्नलिखित में से कौन सा कथन सही है/हैं?
+A) Both statements are true and Statement II is the correct explanation of Statement I / दोनों कथन सत्य हैं और कथन II कथन I की सही व्याख्या है
+B) Both statements are true but Statement II is not the correct explanation of Statement I / दोनों कथन सत्य हैं लेकिन कथन II कथन I का सही स्पष्टीकरण नहीं है
+C) Statement I is true but Statement II is false / कथन I सत्य है लेकिन कथन II असत्य है
+D) Statement II is true but statement I is false / कथन II सत्य है लेकिन कथन I असत्य है
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q27. Which Veda primarily contains ritual formulas and detailed procedures for performing sacrifices? किस वेद में मुख्य रूप से अनुष्ठान सूत्र और यज्ञ करने की विस्तृत प्रक्रियाएँ शामिल हैं?
+A) Samaveda / सामवेद
+B) Yajurveda / यजुर्वेद
+C) Atharvaveda / अथर्वेद
+D) Rigveda / ऋग्वेद
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q28. Which of the following statements best defines Ghana Vadya in the context of Indian traditional music? निम्नलिखित में से कौन-सा कथन भारतीय पारंपरिक संगीत के संदर्भ में घना वाद्य को सर्वोत्तम रूप से परिभाषित करता है?
+A) Tuned melodic instruments played with strings and bow / तार और धनुष से बजाए जाने वाले सुरीले मधुर वाद्य
+B) Percussion instruments requiring precise tuning before use / तालवाद्य यंत्रों को उपयोग से पहले सटीक ट्यूनिंग की आवश्यकता होती है
+C) Solid, non-tunable instruments primarily used for rhythm in folk music / ठोस, गैर-ट्यून योग्य वाद्य यंत्र मुख्य रूप से लोक संगीत में लय के लिए उपयोग किए जाते हैं
+D) Wind instruments made of bamboo or reed used in classical traditions / शास्त्रीय परंपराओं में बांस या ईख से बने वायु वाद्य यंत्रों का प्रयोग किया जाता है
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q29. Which of the following statements about sculling in swimming is correct? तैराकी में स्कलिंग के बारे में निम्नलिखित में से कौन-सा कथन सही है?
+A) Sculling is used only by beginners to prevent sinking. / डूबने से बचने के लिए स्कलिंग का उपयोग केवल शुरुआती लोगों द्वारा किया जाता है।
+B) During sculling, the hands remain above the water surface. / स्कलिंग के दौरान हाथ पानी की सतह से ऊपर रहते हैं।
+C) In forward sculling, the arms stay straight and positioned in front. / फॉरवर्ड स्कलिंग में भुजाएँ सीधी और सामने की ओर स्थित रहती हैं।
+D) Sculling maintains balance by moving hands under water. / स्कलिंग में पानी के अंदर हाथों को चलाकर संतुलन बनाए रखा जाता है।
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q30. Who became India's first Asian Games gold medallist by winning the 100m freestyle swimming event at New Delhi in 1951? 1951 में नई दिल्ली में 100 मीटर फ्रीस्टाइल तैराकी स्पर्धा जीतकर भारत के पहले एशियाई खेलों के स्वर्ण पदक विजेता कौन बने?
+A) Johnny Weissmuller / जॉनी वेइस्मुलर
+B) Arjun Singh / अर्जुन सिंह
+C) Mihir Sen / मिहिर सेन
+D) Sachin Nag / सचिन नाग
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q31. How did Raja Rammohan Roy contribute to the movement against the practice of Sati in early 19th- century Bengal? राजा राममोहन राय ने 19वीं सदी के प्रारम्भ में बंगाल में सती प्रथा के विरुद्ध आन्दोलन में किस प्रकार योगदान दिया?
+A) He organized armed protests in Bengal villages / उन्होंने बंगाल के गांवों में सशस्त्र विरोध प्रदर्शन आयोजित किए
+B) He issued government ordinances against orthodox leaders / उन्होंने रूढ़िवादी नेताओं के खिलाफ सरकारी अध्यादेश जारी किए
+C) He campaigned using newspapers and engaged in debates / उन्होंने समाचार पत्रों का उपयोग करके प्रचार किया और बहसों में भाग लिया
+D) He formed alliances with British Christian missionaries / उन्होंने ब्रिटिश ईसाई मिशनरियों के साथ गठबंधन बनाया
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q32. Where was the 11th edition of the India-Bangladesh joint military exercise SAMPRITI-XI conducted in 2023? भारत-बांग्लादेश संयुक्त सैन्य अभ्यास SAMPRITI-XI का 11वां संस्करण 2023 में कहाँ आयोजित किया गया था?
+A) Jaisalmer, Rajasthan / जैसलमेर, राजस्थान
+B) Siliguri, West Bengal / सिलीगुड़ी, पश्चिम बंगाल
+C) Umroi, Meghalaya / उमरोई, मेघालय
+D) Guwahati, Assam / गुवाहाटी, असम
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q33. Which historical figure is the Santosh Trophy, launched in 1941, named after? 1941 में शुरू की गई संतोष ट्रॉफी का नाम किस ऐतिहासिक व्यक्ति के नाम पर रखा गया है?
+A) Sir Manmatha Nath Roy Chowdhury / सर मन्मथ नाथ रॉय चौधरी
+B) Sir Henry Mortimer Durand / सर हेनरी मोर्टिमर डूरंड
+C) Syed Abdul Rahim / सैयद अब्दुल रहीम
+D) Sailen Manna / सैलन मन्ना
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q34. Read the below statements marked as Assertion (A) and Reason (R). Mark the correct options: Assertion (A): The Moor's Last Sigh is acclaimed for its intricate narrative that blends historical events with magical realism to explore Indian identity and politics. Reason (R): The novel won the Booker Prize for its innovative storytelling and profound cultural insights. नीचे दिए गए कथनों को अभिकथन (A) और कारण (R) से चिह्नित करके पढ़ें। सही विकल्पों को चिह्नित कीजिए: अभिकथन (A): "द मूर्स लास्ट साई" अपनी जटिल कथा के लिए प्रशंसित है जो ऐतिहासिक घटनाओं को जादुई यथार्थवाद के साथ मिलाकर भारतीय पहचान और राजनीति का अन्वेषण करती है। कारण (R): इस उपन्यास ने अपनी नवीन कथा-कथन और गहन सांस्कृतिक अंतर्दृष्टि के लिए बुकर पुरस्कार जीता।
+A) Both A and R are true, and R is the correct explanation of A. / A और R दोनों सत्य हैं, तथा R, A का सही स्पष्टीकरण है।
+B) Both A and R are true, but R is not the correct explanation of A. / A और R दोनों सत्य हैं, लेकिन R, A का सही स्पष्टीकरण नहीं है।
+C) A is true, but R is false. / A सत्य है, लेकिन R असत्य है।
+D) A is false, but R is true. / A गलत है, लेकिन R सत्य है।
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q35. Who launched the Bharatpol portal? भारतपोल पोर्टल का शुभारंभ किसने किया?
+A) Amit Shah / अमित शाह
+B) Narendra Modi / नरेंद्र मोदी
+C) Droupadi Murmu / द्रौपदी मुर्मू
+D) Ashwini Vaishnaw / अश्विनी वैष्णव
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q36. What is the primary cause of convectional rainfall? संवहनी वर्षा का प्राथमिक कारण क्या है?
+A) Cold fronts meeting warm air / ठंडी हवाएँ गर्म हवा से टकराना
+B) Mountains forcing air to rise / पर्वतों के कारण हवा ऊपर की ओर उठना
+C) Heating of air that rises and cools / ऊपर उठने वाली हवा का गर्म होना और फिर ठंडा होना
+D) Moist air from polar regions / ध्रुवीय क्षेत्रों से आने वाली नम हवा
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q37. Which of the following best explains how mineral deposits influence population distribution? निम्नलिखित में से कौन-सा कथन सर्वोत्तम रूप से बताता है कि खनिज भंडार जनसंख्या वितरण को किस प्रकार प्रभावित करते हैं?
+A) They improve soil fertility / वे मिट्टी की उर्वरता में सुधार करते हैं।
+B) They reduce need for employment / वे रोजगार की आवश्यकता को कम करते हैं।
+C) They attract industries and create jobs / वे उद्योगों को आकर्षित करते हैं और रोजगार सृजित करते हैं।
+D) They lead to deforestation only / वे केवल वनों की कटाई की ओर ले जाते हैं।
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q38. Which of the following statement accurately reflects the relationship between demographic transition and replacement level? निम्नलिखित में से कौन-सा कथन जनसांख्यिकीय संक्रमण और प्रतिस्थापन स्तर के बीच संबंध को सटीक रूप से दर्शाता है?
+A) In the third stage, fertility begins to approach replacement level / तीसरे चरण में, प्रजनन क्षमता प्रतिस्थापन स्तर के करीब पहुँचने लगती है
+B) Population stabilization occurs when fertility rate drops below replacement level / जनसंख्या स्थिरीकरण तब होता है जब प्रजनन दर प्रतिस्थापन स्तर से नीचे गिर जाती है
+C) The transition from high growth to low growth aligns with reaching replacement level / उच्च वृद्धि से निम्न वृद्धि की ओर संक्रमण प्रतिस्थापन स्तर तक पहुँचने के साथ संरेखित होता है
+D) Replacement level is unrelated to demographic transition / प्रतिस्थापन स्तर जनसांख्यिकीय परिवर्तन से संबंधित नहीं है
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q39. Why is the NISAR (NASA-ISRO Synthetic Aperture Radar) mission designed to revisit the same location every 12 days? NISAR (नासा-इसरो सिंथेटिक अपर्चर रडार) मिशन को हर 12 दिनों में एक ही स्थान पर पुनः जाने के लिए क्यों डिज़ाइन किया गया है?
+A) To support low-earth orbit operations at reduced altitude / कम ऊंचाई पर निम्न-पृथ्वी कक्षा संचालन का समर्थन करने के लिए
+B) To enable cost-efficient satellite passes through optimized fuel consumption / अनुकूलित ईंधन खपत के माध्यम से लागत-कुशल उपग्रह प्रक्षेपण को सक्षम बनाना
+C) To ensure consistent caching of data before transmission to ground stations / ग्राउंड स्टेशनों पर प्रसारण से पहले डेटा की सुसंगत कैशिंग सुनिश्चित करना
+D) To achieve temporal resolution for global coverage and land deformation monitoring / वैश्विक कवरेज और भूमि विरूपण निगरानी के लिए अस्थायी समाधान प्राप्त करना
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q40. Which biomolecule acts as the primary energy storage in animals? कौन-सा जैव अणु पशुओं में प्राथमिक ऊर्जा भंडारण के रूप में कार्य करता है?
+A) Glycogen / ग्लाइकोजन
+B) Starch / स्टार्च
+C) Cellulose / सेल्यूलोस
+D) Sucrose / सुक्रोज
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q41. Under Article 262 of the Indian Constitution, which of the following interpretations most accurately reflects Parliament's authority regarding inter-State water disputes? भारतीय संविधान के अनुच्छेद 262 के अंतर्गत, निम्नलिखित में से कौन-सी व्याख्या अंतर-राज्यीय जल विवादों के संबंध में संसद के अधिकार को सबसे सटीक रूप से दर्शाती है?
+A) Legislate on river navigation but not bar SC jurisdiction / नदी नौवहन पर कानून बनाएँ लेकिन सुप्रीम कोर्ट के अधिकार क्षेत्र पर रोक न लगाएँ
+B) Set up tribunals for water disputes and bar SC review / जल विवादों के लिए न्यायाधिकरण स्थापित करें और सुप्रीम कोर्ट की समीक्षा पर रोक लगाएँ
+C) Abolish State-level water bodies permanently / राज्य स्तरीय जल निकायों को स्थायी रूप से समाप्त करें
+D) Mandate ISC mediation before court action / अदालती कार्रवाई से पहले ISC मध्यस्थता को अनिवार्य करें
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q42. A person standing on a railway platform notices that the sound of an approaching train's whistle changes in pitch (frequency) as the train passes by. This phenomenon is best explained by: रेलवे प्लेटफॉर्म पर खड़ा एक व्यक्ति देखता है कि जैसे ही ट्रेन गुज़रती है, उसकी सीटी की आवाज़ की पिच (आवृत्ति) बदल जाती है। इस घटना को सबसे अच्छी तरह से इस प्रकार समझाया जा सकता है:
+A) Refraction of sound / ध्वनि का अपवर्तन
+B) Diffraction of sound / ध्वनि का विवर्तन
+C) Doppler effect / डॉप्लर प्रभाव
+D) Resonance / गूंज
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q43. The Bharatiya Nyaya Samhita (BNS) now explicitly defines and criminalizes 'organized crime' and 'petty organized crime'. Which of the following is an example of an offense that might fall under 'petty organized crime' under Bharatiya Nyaya Samhita(BNS)? भारतीय न्याय संहिता (बी.एन.एस) अब 'संगठित अपराध' और 'छोटे संगठित अपराध' को स्पष्ट रूप से परिभाषित और आपराधिक बनाती है। निम्नलिखित में से कौन सा अपराध भारतीय न्याय संहिता (बी.एन.एस) के तहत 'छोटे संगठित अपराध' के अंतर्गत आ सकता है?
+A) Terrorist Act / आतंकवादी कृत्य
+B) Large-scale Drug Trafficking / बड़े पैमाने पर नशीली दवाओं की तस्करी
+C) Theft committed by a gang / एक गिरोह द्वारा की गई चोरी
+D) Murder for hire / भाड़े पर हत्या
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q44. Which of these schemes is implemented to promote organic farming? इनमें से कौन-सी योजना जैविक खेती को बढ़ावा देने के लिए कार्यान्वित की गई है?
+A) PM-KMY (Pradhan Mantri Kisan Maandhan Yojana) / पीएम-केएमवाई (प्रधानमंत्री किसान मानधन योजना)
+B) PKVY (Paramparagat Krishi Vikas Yojana) / पीकेवीवाई (परंपरागत कृषि विकास योजना)
+C) SHC (Soil Health Card Scheme) / एसएचसी (मृदा स्वास्थ्य कार्ड योजना)
+D) ATMA (Agricultural Technology Management Agency) / एटीएमए (कृषि प्रौद्योगिकी प्रबंधन एजेंसी)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q45. Read the below statements marked as Assertion (A) and Reason (R). Mark the correct options: Assertion (A): The National Single Window System (NSWS) supports investor clearances. Reason (R) : It works as a separate ministry. नीचे दिए गए कथनों को अभिकथन (A) और कारण (R) से चिह्नित करके पढ़िए। सही विकल्पों पर निशान लगाइए: अभिकथन (A): राष्ट्रीय एकल खिड़की प्रणाली (NSWS) निवेशक मंजूरियों का समर्थन करती है। कारण (R): यह एक अलग मंत्रालय के रूप में कार्य करता है।
+A) Both A and R are true, and R is the correct explanation of A / A और R दोनों सत्य हैं, और R, A का सही स्पष्टीकरण है
+B) Both A and R are true, but R is not the correct explanation of A / A और R दोनों सत्य हैं, लेकिन R, A का सही स्पष्टीकरण नहीं है
+C) A is true, but R is false / A सत्य है, लेकिन R असत्य है
+D) A is false, but R is true / A असत्य है, लेकिन R सत्य है
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q46. Based on the 2024 Travel and Tourism Development Index (TTDI), which of the following best describes global trends in tourism development conditions? 2024 यात्रा और पर्यटन विकास सूचकांक (टीटीडीआई) के आधार पर, निम्नलिखित में से कौन सा पर्यटन विकास स्थितियों में वैश्विक रुझानों का सबसे अच्छा वर्णन करता है?
+A) Low-income countries dominate the top 30 scorers / निम्न आय वाले देश शीर्ष 30 स्कोररों में हावी हैं
+B) Most of the top 30 TTDI scorers are high-income economies from Europe and Asia-Pacific / शीर्ष 30 टीटीडीआई स्कोररों में से अधिकांश यूरोप और एशिया-प्रशांत क्षेत्र की उच्च आय वाली अर्थव्यवस्थाएं हैं
+C) The Americas and MENA account for more than half of the top 30 rankings / शीर्ष 30 रैंकिंग में आधे से अधिक अमेरिका और MENA का योगदान है
+D) Developing economies have surpassed high-income countries in tourism infrastructure / विकासशील अर्थव्यवस्थाओं ने पर्यटन अवसंरचना में उच्च आय वाले देशों को पीछे छोड़ दिया है
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q47. The Aravalli Green Wall Project launched in 2023 aims to achieve which of the following? 2023 में शुरू की गई अरावली ग्रीन वॉल परियोजना का लक्ष्य निम्नलिखित में से क्या हासिल करना है?
+A) Afforestation in Himalayan states / हिमालयी राज्यों में वनरोपण
+B) Building forest corridors across Indo-Gangetic plains / सिंधु-गंगा के मैदानों में वन गलियारे का निर्माण
+C) Restoration of degraded forest patches in Aravalli range / अरावली पर्वतमाला में क्षीण वन क्षेत्रों का पुनरुद्धार
+D) Soil carbon sequestration in desert zones / रेगिस्तानी क्षेत्रों में मृदा कार्बन पृथक्करण
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q48. Which of the following statements best defines joint sector industries? निम्नलिखित में से कौन-सा कथन संयुक्त क्षेत्र उद्योगों को सर्वोत्तम रूप से परिभाषित करता है?
+A) They are jointly owned by the public and private sectors. / इनका स्वामित्व सार्वजनिक और निजी क्षेत्र के पास संयुक्त रूप से है।
+B) They are run by village panchayats and municipalities. / इनका संचालन ग्राम पंचायतों और नगर पालिकाओं द्वारा किया जाता है।
+C) They are fully financed by foreign companies. / इनका पूर्ण वित्तपोषण विदेशी कम्पनियों द्वारा किया जाता है।
+D) They are operated only by self-help groups. / इनका संचालन केवल स्वयं सहायता समूहों द्वारा किया जाता है।
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q49. Which authority decides whether a Bill is a Money Bill? कौन-सा प्राधिकारी यह निर्णय लेता है कि कोई विधेयक धन विधेयक है या नहीं?
+A) Finance Minister / वित्त मंत्री
+B) President / राष्ट्रपति
+C) Speaker of Lok Sabha / लोकसभा अध्यक्ष
+D) Comptroller & Auditor General / नियंत्रक एवं महालेखा परीक्षक
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q50. What astronomical observation is most severely hampered by increasing levels of urban light pollution? शहरी प्रकाश प्रदूषण के बढ़ते स्तर के कारण कौन-सा खगोलीय अवलोकन सबसे अधिक बाधित हो रहा है?
+A) Sunspots / सूर्य के धब्बे
+B) Planetary transit / ग्रहों का पारगमन
+C) Deep-sky objects / गहरे आकाश की वस्तुएँ
+D) Lunar phases / चंद्र चरण
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q51. If a = √7 - √3, and b = √5 - √2, then which of the following is true? यदि a = √7 - √3, और b = √5 - √2 है, तो निम्नलिखित में से कौन-सा सत्य है?
+A) a = b
+B) a < b / a < b
+C) a > b / a > b
+D) Cannot be determined / निर्धारित नहीं किया जा सकता है
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q52. Evaluate the expression: 1/(2 - √3) - 1/(√3 - √2) + 1/(√2 - 1). व्यंजक का मान ज्ञात कीजिए: 1/(2 - √3) - 1/(√3 - √2) + 1/(√2 - 1)
+A) 5
+B) 6
+C) 3
+D) 2
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q53. The number of red, blue, and green marbles in a bag is in the ratio 3 : 4 : 6. If 20 red marbles, 15 blue marbles, and an unknown number of green marbles are added to the bag, the ratio of red, blue, and green marbles becomes 4 : 5 : 7. Determine the number of green marbles added. एक थैले में लाल, नीले और हरे कंचों की संख्या का अनुपात 3 : 4 : 6 है। यदि थैले में 20 लाल कंचे, 15 नीले कंचे और अज्ञात संख्या में हरे कंचे डाले जाएँ तो लाल, नीले और हरे कंचों का अनुपात 4 : 5 : 7 हो जाता है। डाले गए हरे कंचों की संख्या ज्ञात कीजिए।
+A) 3
+B) 5
+C) 7
+D) 9
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q54. A invests ₹25,000 for 12 months, B invests ₹50,000 for 6 months. What is A's share of ₹30,000 profit? A ने 12 माह के लिए ₹25,000 का निवेश किया है, B ने 6 माह के लिए ₹50,000 का निवेश किया है। ₹30,000 के लाभ में A का भाग क्या है?
+A) ₹10,000
+B) ₹12,000
+C) ₹15,000
+D) ₹18,000
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q55. A and B start a business with capitals in the ratio 5:3. After 6 months, A withdraws ₹10,000 and B doubles his investment. If the initial investment of A was ₹50,000, and the total profit after 1 year is ₹84,000, find the profit share of A. A और B, 5:3 के अनुपात में पूँजी के साथ एक व्यवसाय प्रारंभ करते हैं। 6 माह बाद, A, ₹10,000 निकाल लेता है और B अपना निवेश दोगुना कर देता है। यदि A का प्रारंभिक निवेश ₹50,000 था, और 1 वर्ष के बाद कुल लाभ ₹84,000 है, तो A का लाभ भाग ज्ञात कीजिए।
+A) ₹42,000
+B) ₹50,000
+C) ₹60,000
+D) ₹45,000
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q56. What is the average of all three-digit numbers divisible by 23? 23 से विभाज्य सभी तीन अंकीय संख्याओं का औसत क्या है?
+A) 752
+B) 552
+C) 652
+D) 452
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q57. Two containers of the same volume are 40% and 50% full of water, respectively. They are then filled completely with milk. If the contents of both containers are mixed in a larger vessel, what is the percentage of milk in the final mixture? समान आयतन वाले दो पात्र क्रमशः 40% और 50% पानी से भरे हैं। फिर उन्हें दूध से पूरी तरह भर दिया जाता है। यदि दोनों पात्रों की सामग्री को एक बड़े पात्र में मिला दिया जाए, तो अंतिम मिश्रण में दूध का प्रतिशत क्या है?
+A) 0.45
+B) 0.5
+C) 0.55
+D) 0.6
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q58. A stationery shop ordered 6 dozen red pens and some additional dozen blue pens. The price of the red pens per dozen was three times that of the blue ones. When the order was delivered, it was found that the number of dozens of the two colours had been interchanged. This increased the bill by 40%. Find the ratio of the number of dozens of red pens to the number of dozens of blue pens in the original order. एक स्टेशनरी की दुकान ने 6 दर्जन लाल पेन और कुछ अतिरिक्त दर्जन नीले पेन का ऑर्डर दिया है। लाल पेनों का मूल्य, प्रति दर्जन नीले पेनों के मूल्य से तीन गुना था। ऑर्डर की डिलीवरी होने पर पता चला कि दोनों रंगों के पेनों की संख्या आपस में बदल गई थी। इससे बिल में 40% की वृद्धि हो जाती है। मूल ऑर्डर में लाल पेनों की संख्या और नीले पेनों की संख्या का अनुपात ज्ञात कीजिए।
+A) 1:1
+B) 1:2
+C) 2:3
+D) 3:4
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q59. A flower vendor bought 200 flowers for ₹800. 20 flowers withered and became unsellable. At what price per flower should he sell the remaining flowers to earn a profit of 30% on his total cost? एक फूल विक्रेता ₹800 में 200 फूल खरीदता है। 20 फूल मुरझा जाते हैं और बिकने लायक नहीं रहते हैं। उसे शेष फूलों को प्रति फूल किस मूल्य पर बेचना चाहिए ताकि उसे कुल लागत पर 30% का लाभ हो जाए?
+A) ₹7.85
+B) ₹6.54
+C) ₹5.78
+D) ₹3.82
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q60. A furniture store sells a dining table for ₹Z, making a 25% profit. During a festive season, they increase the marked price of the same table to ₹1.6Z. They then offer a special discount of 20% on this increased marked price. What will be the percentage profit made by the store during the festive season? एक फर्नीचर स्टोर ₹Z में एक डाइनिंग टेबल बेचता है, जिससे उसे 25% का लाभ होता है। त्योहारी सीजन के दौरान, वे उस टेबल का अंकित मूल्य बढ़ाकर ₹1.6Z कर देते हैं। फिर वे इस बढ़े हुए अंकित मूल्य पर 20% की विशेष छूट देते हैं। त्योहारी सीजन के दौरान स्टोर द्वारा अर्जित लाभ प्रतिशत क्या होगा?
+A) 0.26
+B) 0.56
+C) 0.62
+D) 0.6
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q61. A solution consists acid and water in the ratio 5:3. If 4 litres of water is added, the new ratio becomes 5:4. What is the original quantity of acid in the solution? एक विलयन में अम्ल और पानी का अनुपात 5:3 है। यदि इसमें 4 लीटर पानी मिलाया जाए, तो नया अनुपात 5:4 हो जाता है। विलयन में अम्ल की मूल मात्रा क्या है?
+A) 20 litres / 20 लीटर
+B) 25 litres / 25 लीटर
+C) 30 litres / 30 लीटर
+D) 35 litres / 35 लीटर
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q62. A alone can complete a job in 12 days and B alone in 18 days. A and B agree to do the work for ₹ 7,200. With C's help they finish it in 5 days. How much should C be paid? A अकेले किसी कार्य को 12 दिनों में और B अकेले 18 दिनों में पूरा कर सकता है। A और B ₹ 7,200 में कार्य करने के लिए सहमत होते हैं। C की मदद से वे इसे 5 दिनों में पूरा कर लेते हैं। C को कितना भुगतान किया जाना चाहिए?
+A) ₹2,200
+B) ₹2,400
+C) ₹2,600
+D) ₹2,800
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q63. A tank has a mixture of solutions A, B, and C in the respective ratio of 7:8:5. 40 litres of this mixture is drained out, and subsequently, 15 litres of solution A and 5 litres of solution C are added to the tank. If the resultant quantity of solution A is 25 litres less than the resultant quantity of solution B, what was the initial quantity of mixture in the tank (in litres)? एक टंकी में 7:8:5 के अनुपात में विलयन A, B और C का मिश्रण है। इस मिश्रण का 40 लीटर निकाल दिया जाता है और बाद में, टंकी में 15 लीटर विलयन A और 5 लीटर विलयन C डाला जाता है। यदि विलयन A की परिणामी मात्रा, विलयन B की परिणामी मात्रा से 25 लीटर कम है, तो टंकी में मिश्रण की प्रारंभिक मात्रा (लीटर में) क्या थी?
+A) 840
+B) 240
+C) 890
+D) 320
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q64. The ratio of the time taken by A and B to complete a task is 3 : 2. If B can complete the task alone in 18 hours, how many hours will they take to complete the task if they work together? किसी कार्य को पूरा करने में A और B द्वारा लिए गए समय का अनुपात 3 : 2 है। यदि B अकेले उस कार्य को 18 घंटे में पूरा कर सकता है, तो यदि वे दोनों एक साथ कार्य करते हैं तो उन्हें उस कार्य को पूरा करने में कितने घंटे लगेंगे?
+A) 12 hours / 12 घंटे
+B) 10.8 hours / 10.8 घंटे
+C) 9.8 hours / 9.8 घंटे
+D) 10 hours / 10 घंटे
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q65. Three friends, X, Y, and Z, are cycling on a circular track with a circumference of 2 km. They all start from the same point at 9:00 a.m. and travel in the same direction with speeds of 10 km/h, 12 km/h, and 15 km/h respectively. How many times will all three of them meet at the starting point if they continue cycling until 1:00 p.m.? तीन मित्र, X, Y और Z, 2 किमी परिधि वाले एक वृत्ताकार ट्रैक पर साइकिल चला रहे हैं। वे सभी सुबह 9:00 बजे एक ही बिंदु से चलना प्रारंभ करते हैं और क्रमशः 10 किमी/घंटा, 12 किमी/घंटा और 15 किमी/घंटा की चाल से एक ही दिशा में यात्रा करते हैं। यदि वे दोपहर 1:00 बजे तक साइकिल चलाना जारी रखते हैं, तो वे तीनों कितनी बार प्रारंभिक बिंदु पर मिलेंगे?
+A) 1 time / 1 बार
+B) 2 times / 2 बार
+C) 3 times / 3 बार
+D) 4 times / 4 बार
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q66. A circular path of 3 m width runs around a circular park with radius 8 m. What is the area of the path? 8 मीटर त्रिज्या वाले एक वृत्ताकार पार्क के चारों ओर 3 मीटर चौड़ा एक वृत्ताकार पथ बना हुआ है। पथ का क्षेत्रफल क्या है?
+A) 179 m² / 179 मीटर²
+B) 131.09 m² / 131.09 मीटर²
+C) 138.02 m² / 138.02 मीटर²
+D) 144.05 m² / 144.05 मीटर²
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q67. Find the slope of the line perpendicular to the line x - 4y + 8 = 0. रेखा x - 4y + 8 = 0 पर लंबवत रेखा की प्रवणता ज्ञात कीजिए।
+A) -4
+B) 4
+C) 1/4
+D) -1/4
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q68. Convert 2.5 radians to degrees. 2.5 रेडियन को डिग्री में परिवर्तित कीजिए।
+A) 130° / 130°
+B) 143.24° / 143.24°
+C) 180° / 180°
+D) 200.56° / 200.56°
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q69. A sector of a circle having a radius of 10 cm and has a central angle of \frac{\pi}{6} radians. What is the area of the sector? एक वृत्त का त्रिज्यखंड जिसकी त्रिज्या 10 सेमी है और जिसका केंद्रीय कोण \frac{\pi}{6} रेडियन है। त्रिज्यखंड का क्षेत्रफल क्या है?
+A) 26.17 cm² / 26.17 सेमी²
+B) 8.33 cm² / 8.33 सेमी²
+C) 10.47 cm² / 10.47 सेमी²
+D) 12.5 cm² / 12.5 सेमी²
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q70. If tan A = cot(2A - 30°), then what is the value of A? यदि tan A = cot(2A - 30°) है, तो A का मान क्या है?
+A) 30° / 30°
+B) 25° / 25°
+C) 18° / 18°
+D) 40° / 40°
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q71. In similar triangles, the ratio of corresponding altitudes is 2:5. What is the ratio of their areas? समरूप त्रिभुजों में, संगत शीर्षलंबों का अनुपात 2:5 है। उनके क्षेत्रफलों का अनुपात क्या है?
+A) 2:5
+B) 4:25
+C) 2:25
+D) 5:2
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q72. Given, [Algebraic expression omitted in official exam paper], what is the value? यदि [समीकरण मूल प्रश्न पत्र में अनुपलब्ध है], तो मान क्या होगा?
+A) 13
+B) 12
+C) 14
+D) 15
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q73. Simplify: √50 + √18 - √8 सरलीकृत कीजिए : √50 + √18 - √8
+A) 7√2
+B) 6√2
+C) 5√2
+D) 8√2
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q74. The diameter of a circle measures 25 cm. What is the maximum length of a chord in this circle? एक वृत्त का व्यास 25 सेमी है। इस वृत्त में जीवा की अधिकतम लंबाई कितनी है?
+A) 12 cm / 12 सेमी
+B) 25 cm / 25 सेमी
+C) 50 cm / 50 सेमी
+D) 100 cm / 100 सेमी
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q75. If sin A + cos A = √2 sin A, then what is the value of tanA? यदि sin A + cos A = √2 sin A है, तो tanA का मान क्या है ?
+A) √2 / √2
+B) 1
+C) √2 + 1 / √2 + 1
+D) √2 - 1 / √2 - 1
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q76. Select the most appropriate synonym of the given word: APOGEE
+A) Start
+B) Peak
+C) Nadir
+D) Base
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q77. Choose the correct meaning of idiom: Throw cold water on
+A) To make something popular
+B) To oppose or discourage
+C) To wash away concerns
+D) To encourage enthusiastically
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q78. Select the most appropriate antonym of the given word.Mendacious
+A) Dishonest
+B) Fraudulent
+C) Truthful
+D) Deceitful
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q79. Identify the misspelled word
+A) Antediluvian
+B) Infinitesimal
+C) Persiflage
+D) Obfescate
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q80. Spot the correct spelling of a microchip printing method.
+A) Photolithography
+B) Photolithographe
+C) Photolitography
+D) Potolithography
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q81. Choose the correct one-word substitute for: 'A speech or piece of writing that praises someone highly'.
+A) Elegy
+B) Encomium
+C) Sermon
+D) Soliloquy
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q82. Select the correct option: The journalist refused to ___ her sources despite repeated legal threats.
+A) give out
+B) give over
+C) give away
+D) give up
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q83. Select the correct option: The memorandum clarified that employees must comply ___ the revised code of ethics.
+A) to
+B) with
+C) by
+D) in
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q84. Select the correct option: The scientist's hypothesis was not only radical but also diametrically____ to the foundational assumptions of her discipline.
+A) opposed
+B) opposing
+C) opposite
+D) averse
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q85. Find the part of the sentence that contains an error: The investigation's findings, alarming in both scope and content, (1)/ prompted responses not just from the agencies concerned (2)/ but also from the auditors who report they (3)/ were never granted access to critical records. (4)
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q86. Find the part of the sentence that contains an error: That certain state governments have invoked archaic laws (1)/ to suppress dissent does not only reflect legal opportunism (2)/ but also undermines the constitutional ethos (3)/ that such provisions were meant to uphold. (4)
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q87. Change the following from active to passive: The jury has delivered a unanimous verdict.
+A) A unanimous verdict has been delivered by the jury.
+B) A unanimous verdict was being delivered by the jury.
+C) A unanimous verdict had been delivered by the jury.
+D) A unanimous verdict is delivered by the jury.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q88. Select the sentence containing the homonym of the highlighted word: The treatise critiqued the rheme in the syntactical arrangement of propositions.
+A) The linguist isolated the rheme in the sentence structure.
+B) The rheme was pronounced with unique intonation in Tagalog.
+C) The rheme swam rapidly into the estuarine current.
+D) The poet emphasized the rheme for metrical impact.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q89. Convert the sentence provided below from its passive voice structure to an active voice structure: The construction is alleged to have been halted due to environmental violations.
+A) It is alleged that the authorities halted the construction.
+B) Authorities allegedly halted the construction.
+C) The authorities are alleged to have halted the construction.
+D) The violation allegedly halted the construction.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q90. PASSAGE (Q.90 - Q.94) Read the following passage and answer the questions based on the passage: India's digital transformation over the last decade has been nothing short of revolutionary. What began as a modest attempt to expand internet access has now evolved into one of the largest digital ecosystems in the world. Spearheaded by government initiatives such as Digital India, the country has witnessed an unprecedented surge in internet penetration, digital payments, and online governance. A pivotal moment in this journey was the launch of Aadhaar, a biometric-based identification system that enabled secure and streamlined access to various public services. Coupled with the rise of Unified Payments Interface (UPI), India has leapfrogged traditional banking hurdles and facilitated real-time, low-cost transactions across urban and rural regions alike. Significantly, the pandemic acted as an unexpected catalyst. As lockdowns forced physical distancing, citizens turned to digital alternatives—telemedicine, online education, and remote work became not just accessible but essential. This sudden shift forced both public and private sectors to rethink infrastructure and embrace scalable tech solutions. However, the digital journey hasn't been without obstacles. A persistent digital divide remains, particularly between urban and rural populations. While metros enjoy high-speed broadband, many villages struggle with basic connectivity. Moreover, concerns around data privacy, cybersecurity, and misinformation have emerged as pressing issues in this digital age. Nonetheless, India's digital growth story remains a testament to its adaptability and ambition. With over 850 million internet users and counting, the nation stands at a crucial intersection —where robust digital policy, inclusive access, and responsible innovation will determine the trajectory of its digital future. What major government initiative catalyzed India's digital ecosystem?
+A) BharatNet
+B) Digital Bharat
+C) Digital India
+D) India Connect
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q91. What role did Aadhaar play in digital growth?
+A) Promoted telecom infrastructure
+B) Enabled biometric voting
+C) Offered unified payments
+D) Enabled access to public services
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q92. Which factor unexpectedly accelerated India's digital adoption?
+A) Demonetisation
+B) GST Implementation
+C) COVID-19 pandemic
+D) Global recession
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q93. What is a current challenge in India's digital development?
+A) Internet monopoly by private ISPs
+B) Lack of mobile phone production
+C) Digital divide and data privacy
+D) Excess of international investors
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q94. What does the passage suggest is key to India's digital future?
+A) More mobile apps
+B) Higher tax rates on digital goods
+C) Stricter censorship laws
+D) Inclusive access and responsible tech
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q95. Choose the most suitable option to replace the highlighted part of the sentence: I am confident to pass the examination.
+A) in passing the exam
+B) to passing the exam
+C) of passing the examination
+D) for passing examination
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q96. Choose the most suitable option to replace the highlighted part of the sentence: You must adapt with the situation.
+A) to the situation
+B) the situation
+C) adapt to the situation
+D) by the situation
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q97. A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. She said, "I had completed the report."
+A) She said that she completed the report.
+B) She said that she has completed the report.
+C) She said that she had completed the report.
+D) She said she had been completing the report.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q98. A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The scientist stated that water boiled at 100 degrees Celsius.
+A) "Water will boil at 100 degrees Celsius," said the scientist.
+B) "Water boils at 100 degrees Celsius," the scientist stated.
+C) "Water had boiled at 100 degrees Celsius," said the scientist.
+D) "Water is boiling at 100 degrees Celsius," said the scientist.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q99. Rearrange the following sentences to form a coherent paragraph: 1. This allows a programmer to specify the structure and behavior of an object-oriented program. 2. Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects," which can contain data and code. 3. A central tenet of OOP is the concept of a "class," which acts as a blueprint for creating objects. 4. The key advantage of this approach is that it models real-world entities, making complex systems easier to manage and debug.
+A) 2, 3, 1, 4
+B) 4, 3, 2, 1
+C) 3, 1, 4, 2
+D) 1, 2, 3, 4
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q100. Rearrange the following sentences to form a coherent paragraph: 1. This process, a cornerstone of evolution, ensures that only individuals best suited to their environment survive to reproduce. 2. The diversity of life on Earth is the result of a gradual process of change over vast spans of time. 3. This leads to the gradual accumulation of favorable traits within a population. 4. It begins with inherited variation among individuals, where some possess characteristics that give them an advantage over others.
+A) 2, 1, 4, 3
+B) 4, 3, 1, 2
+C) 2, 4, 3, 1
+D) 1, 2, 4, 3
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+

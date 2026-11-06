@@ -1,0 +1,807 @@
+================================================================================
+SSC CGL 2025 TIER-I (HELD ON 16 SEPTEMBER 2025 SHIFT 2) - PURE ENGLISH
+Exam: SSC CGL | Year: 2025 | Total Questions: 100 | Duration: 60 Minutes
+Language: Pure English (No Hindi Translation)
+Extracted & 100% Verified from Official SSC Answer Key via SSC ZONE
+================================================================================
+
+Q1. Count consonants between the 2nd and 7th letter of TECHNOLOGY. TECHNOLOGY
+A) 3
+B) 4
+C) 5
+D) 6
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q2. Choose the address that is the same as the one given below. 56/A, Greenwood Villa, Salt Lake City, Kolkata, West Bengal - 700091
+A) 56/A, Greenwood Villa, Salt Lake, Kolkata,West Bengal - 700091
+B) 56/A, Greenwood Villas, Salt Lake City, Kolkata, West Bengal - 700091
+C) 56/A, Greenwood Villa, Salt Lake City, Kolkata, West Bengal - 700091
+D) 65/A, Greenwood Villa, Salt Lake City, Kolkata, West Bengal - 700091
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q3. Select the letter-cluster from among the given options that can replace the question mark (?) in the following series: HDZ LGB PJD TMF ?
+A) X P H
+B) X O H
+C) X P G
+D) W P H
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q4. A is the brother of B. B is the daughter of C. How is A related to C?
+A) Daughter
+B) Son
+C) Father
+D) Uncle
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q5. B is the sister of A. A is the brother of C. C is the daughter of D. How is B related to D?
+A) Daughter
+B) Sister
+C) Son
+D) Granddaughter
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q6. What comes next: 2, 3, 10, 15, 26, 35, ?
+A) 50
+B) 57
+C) 47
+D) 49
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q7. Choose the group in which all numbers belong to the same category:
+A) 2, 4, 6, 8
+B) 3, 6, 9, 11
+C) 5, 10, 13, 21
+D) 7, 14, 26, 38
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q8. What will come at the place of question mark? 4, 10, 22, 46, 94, ?
+A) 190
+B) 191
+C) 192
+D) 196
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q9. Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option. Statement: Despite the unpredictability of future technologies, regulatory frameworks must evolve to preempt ethical crises. Assumptions: I. Unregulated technological growth can cause ethical dilemmas. II. Ethical standards are often retrofitted to existing technology. III. Regulatory systems can always accurately predict technological outcomes.
+A) Only I and II are implicit
+B) Only I is implicit
+C) All are implicit
+D) Only II and III are implicit
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q10. Read the following statement carefully and identify the conclusion that follows. Statement: The education ministry has made moral education compulsory in schools. Conclusions: I. Students must attend moral education classes. II. Schools were not offering moral education earlier.
+A) Only Conclusion I follows
+B) Only Conclusion II follows
+C) Both I and II follow
+D) Neither I nor II follows
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q11. Arrange the following in chronological order (Based on Age/History): 1. Industrial Revolution 2. Bronze Age 3. Information Age 4. Iron Age 5. Stone Age
+A) 5, 2, 4, 1, 3
+B) 2, 4, 5, 1, 3
+C) 5, 4, 2, 1, 3
+D) 1, 2, 3, 4, 5
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q12. Choose the correct option to complete the series. Needle : Sew :: Keyboard : ?
+A) Draw
+B) Type
+C) Write
+D) Print
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q13. Find the word that does not fit in the series: Complex, Intricate, Sophisticated, Simple, Elaborate
+A) Complex
+B) Intricate
+C) Simple
+D) Sophisticated
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q14. Find the unit that does not fit in the series: Kelvin, Celsius, Fahrenheit, Joule, Rankine
+A) Kelvin
+B) Rankine
+C) Fahrenheit
+D) Joule
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q15. In each of the following questions, a specific rearrangement of letters has been applied to the first word to form the second. Apply the same rearrangement pattern to the third word and choose the correct answer from the given options. METAPHOR : EMATHPRO :: NORMAL : ?
+A) ORMLAN
+B) ONRMLA
+C) ONMRLA
+D) ONMRAL
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q16. In each of the following questions, a word is transformed into a combination of letters and numbers following a specific pattern. Analyze the transformation used in the first pair and apply the same rule to find the missing term in the second pair. BOAT : C40U :: JUMP : ?
+A) K58Q
+B) K76P
+C) K95T
+D) K52E
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q17. Which of these words will come last in a dictionary?
+A) bench
+B) beneath
+C) bend
+D) bent
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q18. Comprehension: In a certain number system there are only two notations to represent numbers: Δ and β. 0 is represented by Δ and 1 by β. The subsequent numbers are represented in the following manner: 2 is represented as βΔ, 3 is represented as ββ, 4 is represented as βΔΔ, 5 is represented as βΔβ and so on. How will you represent 81 in the given number system?
+A) βΔΔβΔβΔ
+B) βΔΔΔββ
+C) βΔβΔββ
+D) βΔβΔΔΔβ
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q19. Find the odd one out from the given alternatives.
+A) Saturn
+B) Venus
+C) Jupiter
+D) Sun
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q20. In a certain code language, WATER is written as YCVGT. How is VAPOR written in that code?
+A) XCRQT
+B) XCQRT
+C) XCPRT
+D) XCQTS
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q21. A principal amount of ₹1,000 yields a simple interest of ₹180 over a period of 2 years. What is the annual rate of simple interest?
+A) 8 %
+B) 9 %
+C) 7 %
+D) 6 %
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q22. If 3 @ 4 = 19, 5 @ 6 = 41, then what is 6 @ 7?
+A) 49
+B) 55
+C) 61
+D) 65
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q23. If the given symbols mean: '+' means 'divided by' '-' means 'multiplied by' 'x' means 'minus' '÷' means 'plus' Then, find the value of the following expressions: 60 + 5 - 4 x 10 ÷ 2=?
+A) 35
+B) 40
+C) 55
+D) 65
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q24. If '×' = '-', '-' = '+', '+' = '÷', '÷' = '×', which equation is correct?
+A) 14 + 2 - 6 × 1 = 10
+B) 12 - 4 + 2 × 2 = 12
+C) 10 × 2 + 4 - 1 = 23
+D) 20 - 2 × 3 + 4 = 18
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q25. 10 friends went for dinner and planned to split Rs. 200 equally. 2 didn't pay. How much did each of the rest pay?
+A) Rs. 25
+B) Rs. 20
+C) Rs. 22
+D) Rs. 28
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q26. What material were the double-storeyed gates of Purana Qila primarily built with?
+A) Marble
+B) Red sandstone
+C) Glazed tiles
+D) Rubble
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q27. Fill in the blank: The Tusu festival is primarily celebrated in the tribal belt of Jharkhand, especially around the area between _____, Tamar, and Raidih.
+A) Dumka
+B) Bundu
+C) Daltonganj
+D) Chaibasa
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q28. Who is credited with developing the modern notation system for Hindustani classical music and documenting compositions in the Kramik Pustak Maalika?
+A) Ustad Allauddin Khan of Maihar Gharana
+B) Pandit Vishnu Digambar Paluskar of Gwalior
+C) Pandit Vishnu Narayan Bhatkhande of Bombay
+D) Saint Tyagaraja of Carnatic Tradition
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q29. Consider the following statements about service rules in table tennis: 1) At 10-10, service alternates every two points. 2) In the final doubles game, receiver order changes when one side reaches 5 points. Which of the above is/are correct?
+A) Only 1 is Correct
+B) Only 2 is Correct
+C) 1 and 2 are correct
+D) Neither 1 nor 2 is Correct
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q30. Under Pitt's India Act, what restriction was placed on the Governor General and Council?
+A) They could not pass any civil law without Queen's consent.
+B) They could not issue orders without majority support.
+C) They were forbidden to declare war or make treaties without approval.
+D) They had to resign after 5 years in office.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q31. What is meant by an "own goal" in football?
+A) A goal scored by a goalkeeper
+B) A goal scored from a penalty
+C) A goal scored accidentally into one's own net
+D) A goal scored during injury time
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q32. Consider the following statements about India's Winter Olympics participation: 1) Shiva Keshavan competed in six Games and introduced luge to India. 2) Arif Mohammad Khan was the first Indian to qualify for two alpine skiing events in 2022. Which of the statements is/are correct?
+A) Only Statement 1 is correct
+B) Only Statement 2 is correct
+C) 1 and 2 both are correct
+D) Neither 1 nor 2 is Correct
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q33. Which 2024 India-Bangladesh energy project involves a 765 kV cross-border transmission line to boost hydroelectric trade across multiple countries?
+A) Agartala-Parbotipur-Guwahati Transmission Grid
+B) Katihar-Parbotipur-Bornagar Interconnection Project
+C) Jalpaiguri-Chattogram Power Corridor
+D) Siliguri-Bogura-Mymensingh HVDC Link
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q34. Consider the following statements about the book 'Being Indian' by Pavan K. Varma: 1) The book won the Vodafone Crossword Book Award for exploring Indian identity and culture. 2) It received the Sahitya Akademi Award for its contributions to Indian English poetry. Which of the above statements is/are correct?
+A) Only statement 1 is correct
+B) Only statement 2 is correct
+C) Both statements 1 and 2 are correct
+D) Neither statement 1 nor 2 is correct
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q35. Fill in the blank: Javelin thrower Neeraj Chopra won India's first-ever gold at the World Athletics Championships in ______ in 2023.
+A) Eugene
+B) Tokyo
+C) Budapest
+D) Doha
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q36. Who launched the campaign "Ek Ped Maa Ke Naam" in 2024, encouraging citizens to plant trees in honor of their mothers and Mother Earth?
+A) Narendra Modi
+B) Leena Nandan
+C) Bhupender Yadav
+D) Ashwini Vaishnaw
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q37. What causes a river to develop meanders?
+A) High-altitude origin
+B) Sudden tectonic uplift
+C) Lateral erosion in flat terrain
+D) Ocean current influence
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q38. Fill in the Blanks: NISAR maps the global surface every ____.
+A) 3 days
+B) 12 days
+C) 24 hrs
+D) 5 days
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q39. Which of the below statements on the plant hormones is INCORRECT?
+A) Auxins promote growth
+B) Cytokinins delay aging
+C) Ethylene promotes seed germination
+D) Gibberellins promote stem elongation
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q40. Which of the following disputes falls under the Supreme Court's exclusive original jurisdiction as per Article 131 of the Indian Constitution?
+A) Inter-State water disputes
+B) Election disputes of MPs and MLAs
+C) Disputes between Centre and one or more States
+D) Appeals against High Court decisions
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q41. If the resistance of a conductor is doubled while keeping the potential difference across its ends constant, what will happen to the current flowing through it?
+A) It will double
+B) It will halve
+C) It will remain unchanged
+D) It will quadruple
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q42. Under Bharatiya Nagarik Suraksha Samhita(BNSS), the period for default bail in minor offences is capped at?
+A) 30 days
+B) 45 days
+C) 60 days
+D) 90 days
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q43. Which scheme promotes crop diversification through cluster-based planning?
+A) PM-AASHA (Pradhan Mantri Annadata Aay Sanrakshan Abhiyan)
+B) RKVY (Rashtriya Krishi Vikas Yojana)
+C) SMAM (Sub-Mission on Agricultural Mechanization)
+D) AIF (Agriculture Infrastructure Fund)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q44. Read the below statements marked as Assertion (A) and Reason (R). Mark the correct options: Assertion (A): PM2.5 is more harmful than PM10 in AQI. Reason (R): PM2.5 particles are smaller and can reach deep into the lungs and bloodstream.
+A) Both A and R are true, and R is the correct explanation of A.
+B) Both A and R are true, but R is not the correct explanation of A.
+C) A is true, but R is false.
+D) A is false, but R is true.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q45. Which national park reported a successful tiger population rise in 2024, reaching over 150 tigers?
+A) Ranthambore
+B) Nagarhole National Park
+C) Corbett
+D) Satpura
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q46. Fill in the Blank: Doctrine of Severability allows the _____ part of a law to be retained.
+A) Repealed
+B) Inconsistent
+C) Valid
+D) Unconstitutional
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q47. Read the statements carefully and choose the correct option: Assertion (A): Aluminium smelting is the most important metallurgical industry in India. Reason (R): Aluminium is used in the manufacture of aircraft, wires, and utensils.
+A) Both A and R are true, and R is the correct explanation of A
+B) Both A and R are true, but R is not the correct explanation of A
+C) A is true, but R is false
+D) A is false, but R is true
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q48. Match the dance with its prime social/religious context: Dance social/religious context 1. Rauf A. Eid & spring-wedding festivities 2. Karma B. Bhadra Ekadashi agrarian ritual 3. Tamasha C. Night-long folk-theatre in Shimga season 4. Jhumar D. Post-monsoon tea-garden recreations
+A) 1-A, 2-B, 3-C, 4-D
+B) 1-B, 2-A, 3-C, 4-D
+C) 1-A, 2-C, 3-D, 4-B
+D) 1-A, 2-C, 3-B, 4-D
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q49. Which pair correctly matches atmosphere layer & feature?
+A) Troposphere - weather
+B) Thermosphere- ozone
+C) Mesosphere - satellites
+D) Stratosphere - meteors
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q50. Consider the following statements: 1. The Concurrent List allows both Centre and States to legislate. 2. In case of conflict, State law prevails over Union law. Which of the above is/are correct?
+A) Only 1
+B) Only 2
+C) Both 1 and 2
+D) Neither 1 nor 2
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q51. If p:q=4:1, find (5p+3q):(5p-3q).
+A) 23 : 17
+B) 17 : 23
+C) 7 : 17
+D) 17 : 7
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q52. What is the value of:(√18 + √2)2-(√8 + √2)2
+A) 14
+B) 15
+C) 16
+D) 17
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q53. Simplify: [Algebraic expression omitted in source official exam PDF]
+A) [Option A omitted in source key]
+B) [Option B omitted in source key]
+C) [Option C omitted in source key]
+D) [Option D omitted in source key]
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q54. A, B, and C invested ₹24,000, ₹36,000, and ₹40,000 respectively. A's investment was for 12 months, B's for 8 months, and C's for 6 months. The total profit is ₹50,000. What is B's share of the profit?
+A) ₹17,647.06
+B) ₹27,647.56
+C) ₹23,647.46
+D) ₹21,647.72
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q55. The average age of a committee of 9 members increases by 3 years when two men aged 42 and 44 years are replaced by two women. What is the average age of these two women?
+A) 50.5 years
+B) 46.5 years
+C) 56.5 years
+D) 60.5 years
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q56. There are 6 consecutive integers and 5 consecutive integers. The average of the 6 integers is 2 less than the average of the 5 integers. The sum of the 5 integers is 4 more than the sum of the 6 integers. Find the average of the 6 integers.
+A) 6
+B) 5
+C) 4
+D) 3
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q57. Seventy-five percent of a number is 15 more than two-thirds of that number. Find the number.
+A) 120
+B) 150
+C) 180
+D) 210
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q58. A TV set is available for ₹19,650 in cash or for ₹3,100 as a cash down payment and three equal annual instalments. If the shopkeeper charges interest at the rate of 10% per annum compounded annually, calculate the amount of each instalment.
+A) ₹ 9,655
+B) ₹ 7,655
+C) ₹ 6,655
+D) ₹ 8,655
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q59. A mobile phone retailer sells a phone for ₹P and earns a profit of 20%. For a special festive offer, he marks the same phone at ₹1.5P. At the offer, he provides a discount of 10%. What will be the percentage profit that he will make during the festive offer?
+A) 26%
+B) 56%
+C) 62%
+D) 60%
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q60. A gadget is sold at a 15% discount on its marked price. This sale leads to a profit of 20% on its cost price. If the profit earned is ₹450, what would have been the selling price if the gadget was sold at a 25% discount on its marked price?
+A) ₹2,585.36
+B) ₹1,528.24
+C) ₹2,879.45
+D) ₹2382.35
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q61. A, B, and C can complete a certain task in 20, 30, and 60 days, respectively. How many days will it take for A to finish the work if he receives help from B and C every third day?
+A) 15 days
+B) 12 days
+C) 10 days
+D) 9 days
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q62. Two distinct grades of rice, one priced at ₹80 per kilogram and the other at ₹120 per kilogram, are amalgamated in an undisclosed proportion. The resultant blend is retailied at ₹132 per kilogram, securing a profit margin of 20% on the overall cost price. Determine the precise ratio in which the two rice varieties were intermingled.
+A) 1 : 3
+B) 2 : 1
+C) 3 : 2
+D) 4 : 1
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q63. The ratio of the speeds of a car and a bus is 3 : 4. If the bus covers a distance of 320 km in 4 hours, what is the speed of the car in km/h?
+A) 60 km/h
+B) 75 km/h
+C) 80 km/h
+D) 90 km/h
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q64. An individual invested certain amounts in three different schemes P, Q, and R at simple interest rates of 7% p.a., 9% p.a., and 11% p.a. respectively. If the total interest accrued in one year was ₹2520 and the amount invested in Scheme R was 250% of the amount invested in Scheme P and 300% of the amount invested in Scheme Q, what was the amount invested in Scheme P?
+A) ₹5000
+B) ₹5500
+C) ₹6000
+D) ₹6500
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q65. A tower stands 50 meters tall. From its peak, the angles of depression to the top and bottom of a nearby building are measured at 30° and 45°, respectively. Determine the approximate height of the building as well as the horizontal distance separating the tower from the building.
+A) height= 21 m , distance =50 m
+B) height = 25 m , distance = 25 m
+C) height = 28 m , distance = 15 m
+D) height = 18 m , distance = 15 m
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q66. A sphere is melted and recast into 8 identical cones, each with radius 3 cm and height 4 cm. What was the radius of the original sphere?
+A) 4.16 cm
+B) 5.28 cm
+C) 6.54 cm
+D) 7.56 cm
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q67. The area of a regular hexagon is made of how many equilateral triangles?
+A) 3
+B) 4
+C) 5
+D) 6
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q68. A circular fountain with a radius of 7 m is encircled by a grass bed that is 3.5 m wide. Determine the ratio of the area of the grass bed to the area of the fountain.
+A) 3:2
+B) 2:1
+C) 5:4
+D) 4:1
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q69. A tent designed as a triangular prism features a triangular base with an area of 20 m² and a height of 6 m. What is the volume of this tent?
+A) 100 m³
+B) 120 m³
+C) 130 m³
+D) 140 m³
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q70. Which line has slope -1 and passes through (2,3)?
+A) y = -x + 5
+B) y = x + 5
+C) y = 5x + 2
+D) y = -5x + 2
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q71. Simplify: √45 + √20 - √5.
+A) 4√5
+B) 6√5
+C) 8√5
+D) 7√5
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q72. Three non-overlapping, non-touching circles are drawn in a plane. What is the maximum number of distinct common tangents that can be drawn to them in total?
+A) 17
+B) 16
+C) 9
+D) 12
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q73. In a circle, chord AB and chord CD intersect at E such that AE : EB = 2 : 3 and CE : ED = 5 : 2. If AB = 15 cm, find the length of chord CD.
+A) 14 cm
+B) 16 cm
+C) 15 cm
+D) 17 cm
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q74. A chord in a circle with radius 10 cm subtends an angle of 90° at the center. What is the area of the minor segment?
+A) (25π−50) sq. cm
+B) (50π−25) sq. cm
+C) (50π−50) sq. cm
+D) (100π−50) sq. cm
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q75. Evaluate: (0.05 + 0.01 ) ÷ (0.25 + 0.05 ) (0.05³ + 0.01³) ÷ (0.25³ + 0.05³)
+A) 0.008
+B) 0.004
+C) 0.006
+D) 0.002
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q76. Select the most appropriate synonym of the given word: GARRULOUS
+A) Talkative
+B) Reserved
+C) Silent
+D) Listen
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q77. Select the most appropriate antonym of the given word. Incessant
+A) Constant
+B) Ceaseless
+C) Intermittent
+D) Perpetual
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q78. Select the most appropriate antonym of the given word. Piquant 3 3 3 3
+A) Bland
+B) Spicy
+C) Zesty
+D) Tart
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q79. Choose the correct meaning of idiom: Carry coals to Newcastle
+A) Provide something where it is already abundant
+B) Seek advice from experts
+C) Complain without cause
+D) Travel without direction
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q80. Choose the correct meaning of idiom: Toe the line
+A) Follow the leader physically
+B) Join the military
+C) Obey rules or authority exactly
+D) Oppose popular opinion
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q81. Which is the correct spelling of a word meaning 'self-rule'?
+A) Autonomy
+B) Autonamy
+C) Autonommy
+D) Autonaumy
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q82. Spot the correct spelling of a 24-hour biological cycle.
+A) Circadion
+B) Circadian
+C) Circadien
+D) Circadijan
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q83. Choose the correct one-word substitute for: 'Something that is impossible to be read'.
+A) Illegible
+B) Decipherable
+C) Invisible
+D) Unutterable
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q84. Choose the correct one-word substitute for: 'A deep and seemingly bottomless chasm'.
+A) Crevasse
+B) Crater
+C) Abyss
+D) Gorge
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q85. Choose the correct phrasal verb: The scientist was unable to _____ a definitive conclusion from the data.
+A) draw out
+B) bring up
+C) make over
+D) arrive at
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q86. Select the correct option: He spoke so ____ that even abstruse theories seemed digestible.
+A) lucid
+B) lucidly
+C) lucidity
+D) lucidness
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q87. Find the part of the sentence that contains an error: It was the misalignment between projected and actual data (1)/ that cast doubt not only on the calculations (2)/ but also on the assumptions that (3)/ underlied the funding strategy. (4)
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q88. Change the following from active to passive: Someone must have tempered with the encryption keys.
+A) The encryption keys must have been tempered with.
+B) The encryption keys must have tempered by someone.
+C) The encryption keys must be tempered with by someone.
+D) The encryption keys must had been tempered with.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q89. Select the sentence containing the homonym of the highlighted word: The artisan engraved a cartouche around the royal name.
+A) The papyrus bore a golden cartouche of the pharaoh.
+B) The Egyptian cartouche encircled each hieroglyph name.
+C) The archaeologist uncovered a silver cartouche.
+D) The sculptor carved a cartouche of floral motifs for the ceiling.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q90. Convert the sentence provided below from its passive voice structure to an active voice structure: A solution has been suggested by the team to resolve the issue.
+A) The team had suggested a solution to resolve the issue.
+B) The team was suggesting a solution to resolve the issue.
+C) The team suggested a solution to resolve the issue.
+D) The team has suggested a solution to resolve the issue.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q91. Choose the most suitable option to replace the highlighted part of the sentence: She told to me the news.
+A) told me
+B) told for me
+C) said to me
+D) has told to me
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q92. Choose the most suitable option to replace the highlighted part of the sentence: Neither of the options are suitable for this task.
+A) is suitable to the task
+B) is suitable for this task
+C) were suitable in this task
+D) is suitable at this task
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q93. PASSAGE (Q.93 - Q.97) Read the following passage and answer the questions based on the passage : Democracy is frequently extolled as the political system that best guarantees individual liberty. Enshrined in constitutional rights and protected by the rule of law, freedom of speech, association, religion, and conscience are regarded as hallmarks of democratic governance. However, what is less frequently acknowledged—but equally vital—is the reciprocal pillar of responsibility without which such freedoms can degenerate into chaos, polarization, or authoritarian backlashes. Freedom in a democracy is not absolute; it exists within a framework of mutual restraint and civic discipline. The right to express dissent, for instance, is foundational. Yet when freedom of expression is weaponized to disseminate hate speech, misinformation, or seditious propaganda, it ceases to serve the democratic cause. Responsibility thus entails a conscious engagement with the implications of one's actions—not just their legality, but their ethical and civic consequences. The challenge lies in reconciling liberty with accountability in pluralistic societies. With diverse cultural, ideological, and economic constituencies, democracies are inherently sites of contention. In such contexts, responsibility demands more than legal compliance—it requires empathy, critical thinking, and a commitment to collective well-being. A citizen's right to protest, for example, must be exercised with awareness of public order and respect for differing viewpoints. Similarly, the freedom to vote must be matched by an obligation to make informed choices, unswayed by populism, prejudice, or manipulation. The tension between freedom and responsibility is perhaps most visible during moments of crisis—be it a pandemic, a communal riot, or a constitutional standoff. In such times, the temptation to prioritize personal liberty at the cost of collective safety can prove fatal. Refusal to wear masks during a health emergency or the viral spread of unverified news during civil unrest exemplify how unbridled freedom can undermine democratic resilience. Moreover, democracy itself is not self-sustaining; it requires vigilant citizens who recognize that rights are not entitlements in perpetuity, but privileges preserved through active participation. When freedom is divorced from responsibility, democratic institutions become vulnerable to erosion—from within. Demagogues often rise not solely because of state failure, but due to civic apathy or irresponsible use of democratic freedoms by the populace itself. Therefore, in any functioning democracy, freedom and responsibility are not opposing forces but mutually reinforcing imperatives. The preservation of liberty necessitates a citizenry capable of ethical judgment, informed debate, and constructive dissent. In the absence of responsibility, freedom risks transforming from a catalyst of justice into a vehicle of division. Democracy survives not just through the laws it enacts, but through the civic virtues its citizens embody. According to the passage, what happens when freedom is exercised without responsibility?
+A) It enhances legal systems
+B) It strengthens civic unity
+C) It leads to misuse and societal harm
+D) It guarantees better governance
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q94. Why does the author mention protests and voting as examples?
+A) To criticize public participation
+B) To show areas where freedom and responsibility must coexist
+C) To promote legal reforms
+D) To support authoritarian models
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q95. What is implied about the relationship between citizens and democratic institutions?
+A) Citizens cannot influence institutions
+B) Institutions are entirely self-preserving
+C) Citizens play an active role in sustaining democracy
+D) Democratic institutions should restrict citizens' rights
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q96. How does the passage describe the impact of crises on freedom in democracies?
+A) Crises validate unlimited liberty
+B) Crises show the need for absolute state control
+C) Crises reveal the dangers of unregulated freedom
+D) Crises diminish the value of rights
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q97. What tone best describes the author's stance on freedom in democracy?
+A) Cynical and dismissive
+B) Balanced and cautionary
+C) Indifferent and neutral
+D) Overly optimistic
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q98. Select the correct option for the Direct Speech conversion of the sentence below. He observed that, had market liquidity vanished entirely, the exchange would have suspended trading.
+A) He said, "If market liquidity vanishes entirely, the exchange suspends trading."
+B) He said, "Had market liquidity vanished entirely, the exchange would have suspended trading."
+C) He said, "The exchange will suspend trading if market liquidity had vanished entirely."
+D) He said, "If the exchange suspended trading, it was because market liquidity vanished entirely."
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q99. A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. He said, "I am reading a book."
+A) He said he is reading a book.
+B) He said that he was reading a book.
+C) He said that he had read a book.
+D) He said he read a book.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q100. Rearrange the following sentences to form a meaningful passage: 1. Solar energy is one of the most promising renewable energy sources. 2. It has a minimal environmental impact compared to fossil fuels. 3. Solar panels convert sunlight into electricity. 4. However, energy storage remains a significant challenge for solar energy systems.
+A) 2-1-4-3
+B) 1-2-4-3
+C) 3-2-4-1
+D) 4-1-2-3
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+

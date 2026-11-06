@@ -1,0 +1,758 @@
+Q.1: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p2_x26.jpeg)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p2_x27.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p2_x28.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p2_x29.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p2_x30.jpeg)
+Answer: A
+
+Q.2: Seven points A, B, C, D, E, F and G are drawn on a paper. A is 10 m west of C, which is 12 m north of E. B is 8 m east of E. B is 7 m south of D, which is 15 m east of F. G is 17 m south of F. In which direction is point A with respect to point B?
+A. North-east
+B. North-west
+C. South-east
+D. South-west
+Answer: B
+
+Q.3: Select the option in which the given figure is embedded.
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p2_x33.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p2_x34.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p2_x31.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p2_x32.jpeg)
+Answer: B
+
+Q.4: Select the image that embeds the following figure.
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p2_x35.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p2_x36.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p2_x37.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p2_x38.jpeg)
+Answer: C
+
+Q.5: Among 120 people, 80 like rock music, 50 like jazz, and 30 like both. How many people like neither?
+A. 20
+B. 10
+C. 50
+D. 5
+Answer: A
+
+Q.6: In a group of 40 children, 28 like Ice Cream, 18 like Cake, and 10 like both. How many like only Cake?
+A. 8
+B. 10
+C. 5
+D. 6
+Answer: A
+
+Q.7: Which of the following is the unit digit in the product of {(241)491 x (435)317 x (3364)1793}?
+A. 8
+B. 7
+C. 0
+D. 5
+Answer: C
+
+Q.8: Find the missing number in the following series: 9, 11, 16, 26, ?, 69
+A. 43
+B. 52
+C. 48
+D. 56
+Answer: A
+
+Q.9: Aditi is ranked 5th from the top and 20th from the bottom in a class. How many students are there in the class?
+A. 23
+B. 24
+C. 25
+D. 26
+Answer: B
+
+Q.10: If A means '+', B means '-', C means '×', and D means '÷', which of the following statement(s) is/are correct? Statement I: 12 C 4 D 2 A 6 = 30 Statement II: 20 B 10 A 5 C 2 = 20
+A. Only I
+B. Only II
+C. Both I and II
+D. Neither I nor II
+Answer: C
+
+Q.11: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p3_x316.jpeg)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p3_x317.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p3_x318.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p3_x319.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p3_x320.jpeg)
+Answer: A
+
+Q.12: In the following question a statement is given followed by some assumptions. Read the assumptions carefully and choose the appropriate option.
+
+Statement: Please check the weather forecast before organizing the outdoor event. Assumptions:
+
+I. Weather conditions can affect the success of the event. 2
+
+II. It is desirable for the event to run smoothly.
+A. Only I is implicit.
+B. Only II is implicit.
+C. Neither I nor II is implicit.
+D. Both I and II are implicit.
+Answer: D
+
+Q.13: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p3_x321.jpeg)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_q13_opt_A.png)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_q13_opt_B.png)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_q13_opt_C.png)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_q13_opt_D.png)
+Answer: D
+
+Q.14: Which of the following rows/columns are connected/related with each other in some way? | Rows | Columns | | | | | | :--- | :--- | :--- | :--| :--- | :--- | | | I | II | III | IV | V | | 1 | 10 | 24 | 6 | 18 | 42 | | 2 | 16 | 26 | 8 | 24 | 56 | | 3 | 15 | 27 | 5 | 15 | 35 | | 4 | 18 | 36 | 9 | 27 | 63 | | 5 | 20 | 40 | 10 | 30 | 70 |
+A. Columns I, II and
+B. Columns II, III and IV IV
+C. Columns III, IV and
+D. Columns I, III and V V
+Answer: A
+
+Q.15: Why do highly cohesive groups sometimes make flawed or poor decisions?
+A. The pressure for conformity and agreement suppresses dissenting viewpoints.
+B. They experience chronic conflicts that stall the decision-making process.
+C. They lack the cognitive intelligence needed to solve complex problems.
+D. They waste excessive time on over- communicating minor details.
+Answer: A
+
+Q.16: Direction: Select the most logical decision. A technology firm develops an innovation that could significantly increase efficiency but may also reduce the need for certain job roles/time.
+A. Implement the innovation immediately without considering workforce implications.
+B. Reject the innovation entirely because workforce changes may occur eventually.
+C. Introduce the innovation gradually while planning workforce transition measures.
+D. Delay implementation permanently until technological alternatives become available.
+Answer: C
+
+Q.17: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p4_x563.jpeg)
+A. C
+B. A
+C. B
+D. D
+Answer: A
+
+Q.18: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p4_x564.jpeg)
+A. A
+B. B
+C. C
+D. D
+Answer: A
+
+Q.19: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p4_x565.jpeg)
+A. 1
+B. 3
+C. 2
+D. 4 3
+Answer: C
+
+Q.20: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p4_x566.jpeg)
+A. 1
+B. 4
+C. 3
+D. 5
+Answer: D
+
+Q.21: Fill in the blanks (_) using one of the following four options such that the series follows a specific pattern in the given order. _ bb _ a _ bd _ b _ d
+A. abdba
+B. adbaa
+C. dbabb
+D. adbab
+Answer: D
+
+Q.22: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p4_x567.jpeg)
+A. 1
+B. 2
+C. 4
+D. 3
+Answer: D
+
+Q.23: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p4_x568.jpeg)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p4_x569.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p4_x570.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p4_x571.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p4_x572.jpeg)
+Answer: D
+
+Q.24: Choose the letter pair that does not belong to the group.
+A. AZ
+B. BY
+C. CX
+D. DV
+Answer: D
+
+Q.25: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p5_x810.jpeg)
+A. A
+B. B
+C. C
+D. D
+Answer: D
+
+Q.26: In money supply, M3 refers to which of the following?
+A. M1 + savings deposits with post office savings banks
+B. M1 + net time deposits of banks
+C. M1 - savings deposits with post office savings banks
+D. M1 - net time deposits of banks
+Answer: B
+
+Q.27: The Bhakti saint who promoted unity between Hindus and Muslims and was a disciple of Ramananda:
+A. Surdas
+B. Kabir
+C. Mirabai
+D. Tulsidas
+Answer: B
+
+Q.28: IMEC (India-Middle East-Europe Economic Corridor) aims to significantly reduce:
+A. Cultural exchanges
+B. Transit times for goods between Asia and Europe
+C. International tourism
+D. Military spending
+Answer: B
+
+Q.29: Which government initiative aims to make India a digitally empowered society and knowledge economy?
+A. Make in India
+B. Skill India Mission
+C. Digital India
+D. Smart Cities Mission
+Answer: C
+
+Q.30: The "Stand-Up India Scheme" has a specific focus on promoting entrepreneurship among which of the following groups?
+A. Senior citizens and ex-servicemen.
+B. Women entrepreneurs and entrepreneurs from Scheduled Castes (SC) and Scheduled Tribes (ST) communities. 4 AWARENESS
+C. Students pursuing higher education in technical fields.
+D. Small and marginal farmers.
+Answer: B
+
+Q.31: The first-ever Ranji Trophy final in 1935 was held in which city?
+A. Mumbai
+B. Kolkata
+C. New Delhi
+D. Hyderabad
+Answer: A
+
+Q.32: In which part of a Hindu temple is the deity placed?
+A. Shikhara
+B. Mandapa
+C. Garbhagriha
+D. Gopuram
+Answer: C
+
+Q.33: Which Nobel Laureate wrote "Blindness", a powerful allegory about a mysterious epidemic and the collapse of civilization?
+A. Jose Saramago
+B. Mario Vargas Llosa
+C. Gabriel Garcia
+D. Orhan Pamuk Marquez
+Answer: A
+
+Q.34: Who was the first recipient of Jnanpith Award in India?
+A. T.S.
+B. G.S. Kurup Bandyopadhyaya
+C. Uma Shankar
+D. K.V. Puttappa Joshi
+Answer: C
+
+Q.35: Choose the correctly matched pairs related to archaeological features.
+
+1. Lothal - Dockyard
+
+2. Ropar - Horse burial
+
+3. Mehrgarh - Early agriculture
+A. 1 and 3 only
+B. 2 and 3 only
+C. 1 and 2 only
+D. 1, 2, and 3
+Answer: B
+
+Q.36: The Kumaun Himalaya lie between:
+A. The Indus and Sutlej rivers
+B. The Kali and Teesta rivers
+C. The Sutlej and Kali rivers
+D. The Ravi and Jhelum rivers
+Answer: D
+
+Q.37: Which vital micronutrient is crucial for DNA replication and, when deficient, results in megaloblastic anaemia?
+A. Folate
+B. Vitamin B12
+C. Iron
+D. Vitamin C
+Answer: C
+
+Q.38: In the India State of Forest Report (ISFR) 2023, which Indian state reported the highest increase in mangrove cover by
+
+253.06 km² ?
+A. Andhra Pradesh
+B. Odisha
+C. West Bengal
+D. Gujarat
+Answer: A
+
+Q.39: Which of the following crops is most suitable for dryland farming?
+A. Rice
+B. Wheat
+C. Ragi
+D. Cotton
+Answer: C
+
+Q.40: How many gold medals did India win at the 2022 Asian Games held in Hangzhou in 2023?
+A. 24
+B. 22
+C. 28
+D. 38
+Answer: C
+
+Q.41: Which detail reflects women’s public participation in early Rig Vedic society?
+A. They held hereditary positions as tribal chiefs.
+B. They alone managed all religious property.
+C. They actively attended the sabha and vidatha.
+D. They commanded separate military units.
+Answer: C
+
+Q.42: Which economist, who previously served as Director of the Institute of Economic Growth, is a full-time member of the 16th Finance Commission of India?
+A. Ajay Narayan Jha
+B. Manoj Panda
+C. Soumya Kanti
+D. Annie George Ghosh Mathew
+Answer: B
+
+Q.43: A Judicial Magistrate who was exercising jurisdiction throughout District A is transferred to an equivalent post in another area within the same State. No fresh order conferring judicial powers is issued after the transfer. Can the Magistrate continue to exercise the same judicial powers under the Bharatiya Nagarik Suraksha Sanhita, 2023 in India?
+A. No, because fresh conferment is mandatory after every transfer.
+B. Yes, unless the high court or state government directs otherwise.
+C. Yes, but only for administrative powers, not judicial powers.
+D. No, because powers lapse automatically upon transfer.
+Answer: B
+
+Q.44: Under the provisions of the Bharatiya Sakshya Adhiniyam 2023 in India, A is accused of committing a crime in Bengaluru. The defence proves that A was in Delhi at the exact time of commission of the crime. This fact is:
+A. Relevant as a fact forming part of the same transaction
+B. Relevant as an exception under Section
+C. Relevant because it is inconsistent with the fact in issue.
+D. Irrelevant unless corroborated by confession
+Answer: C
+
+Q.45: Consider the following statements regarding Indian temple architecture:
+
+1. Panchayatana temples feature one main central shrine surrounded by four subsidiary shrines.
+
+2. The Dashavatara Temple at Deogarh is an example of the Panchayatana style of architecture. Which of the statements given above is/are correct?
+A. 1 only
+B. 2 only
+C. Both 1 and 2
+D. Neither 1 nor 2
+Answer: C
+
+Q.46: In February 2026, how many cheetahs arrived from Botswana to be reintroduced at Kuno National Park?
+A. 6
+B. 9
+C. 7
+D. 3
+Answer: A
+
+Q.47: According to the Urban and Regional Development Plans Formulation and Implementation (URDPFI) Guidelines, which constitutional amendment granted constitutional status to Urban Local Bodies in India?
+A. 42nd Constitutional Amendment
+B. 44th Constitutional Amendment
+C. 52nd Constitutional Amendment
+D. 74th Constitutional Amendment
+Answer: D
+
+Q.48: Which of the following best explains how Foreign Direct Investment (FDI) differs from Foreign Institutional Investment (FII)?
+A. Foreign Direct Investment (FDI) cannot be made in developing economies and is limited to developed countries
+B. Foreign Direct Investment (FDI) consists only of funds invested by foreign governments and excludes private investors
+C. Foreign Direct Investment (FDI) mainly involves short-term investment and trading in financial securities
+D. Foreign Direct Investment (FDI) creates a lasting interest and significant managerial influence in an enterprise
+Answer: C
+
+Q.49: Which of the following correctly describes the primary historical distinction between the Iqta and Jagir systems in medieval India?
+A. Iqtas were hereditary while Jagirs were temporary.
+B. Jagirs were exclusively religious grants whereas Iqtas were military grants.
+C. Iqta belonged to the Delhi Sultanate, while Jagir was prominent under the Mughals.
+D. Both terms referred to identical institutions throughout medieval India.
+Answer: D
+
+Q.50: What can the Human Development Index
+
+(HDI) be used to compare?
+A. Human development outcomes across countries
+B. Military capabilities across countries
+C. Human development outcomes only in Asian countries
+D. Human development outcomes only in developed countries
+Answer: A
+
+Q.51: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p7_x1322.jpeg)
+A. 75
+B. 80
+C. 90
+D. 85
+Answer: A
+
+Q.52: A man travels 180 km using two modes: bus at 40 km/h and taxi at 60 km/h. If the total journey takes 4 hours, find the distance covered by bus.
+A. 110 km
+B. 115 km
+C. 120 km
+D. 125 km
+Answer: C
+
+Q.53: A, B, and C rent a field for ₹5,250. A puts 20 oxen for 4 months, B puts 25 oxen for 2 months, and C puts 30 oxen for 5 months. What part of the rent should B pay?
+A. ₹850.12
+B. ₹920.25
+C. ₹750.55
+D. ₹937.50
+Answer: D
+
+Q.54: A, B, and C start a business with investments in the ratio 3 : 2 : 4. After one year, A withdraws half of his capital and B doubles his capital. After one more year, C withdraws 1/4 of his capital. At the end of 3 years, what is the ratio of their profits?
+A. 6 : 10 : 11
+B. 10 : 18 : 15
+C. 9 : 14 : 22
+D. 14 : 11 : 19
+Answer: A
+
+Q.55: A class of 24 students has an average weight of 35 kg. When the teacher's weight is included, the average increases by 400 grams. Determine the teacher's weight.
+A. 45 kg
+B. 65 kg
+C. 35 kg
+D. 55 kg
+Answer: A
+
+Q.56: The side of a regular pentagon is twice the side of a square. If the perimeter of the square is 12 cm, find the perimeter of the pentagon.
+A. 30 cm
+B. 20 cm
+C. 35 cm
+D. 25 cm
+Answer: A
+
+Q.57: A manufacturer sells a product at a profit of 40%. If the cost of raw materials increases by 30% and the manufacturer raises the selling price by 20%, what is the new approximate profit percentage?
+A. 15%
+B. 29%
+C. 24%
+D. 12%
+Answer: A
+
+Q.58: In ΔPWR, WS ⊥ PR, RT ⊥ PW. WS and RT intersect each other at O. The bisectors of ∠OWR and ∠ORW meet at the same point M. If ∠WPR = 56°, then what is the measure of ∠WMR?
+A. 152°
+B. 178°
+C. 180°
+D. 118°
+Answer: A
+
+Q.59: A man standing on the roof of a 40 m high building observes the angle of depression of the top and bottom of a nearby pole as 30° and 45°, respectively. Find the height of the pole.
+A. 30 m √3
+B. 40 −40 m √3
+C. 40 m √3
+D. 40 −30 m √3
+Answer: A
+
+Q.60: The area of a square is 144 cm². A circle is inscribed inside the square. What is the area of another square inscribed inside this circle?
+A. 36 cm²
+B. 54 cm²
+C. 72 cm²
+D. 108 cm²
+Answer: A
+
+Q.61: If 3 sin θ−4 cos θ= 0 , where 0°< θ < 90° , find 3 sin θ+cos θ . 3 sin θ+2 cos θ
+A. 6
+B. 18/5
+C. 5
+D. 5/18
+Answer: C
+
+Q.62: Evaluate the following expression: 4 cot² 30°+ 3 sin² 60°−2 csc² 60° 3 −3 tan² 30° 4
+A. 8
+B. 14/3
+C. 4
+D. 10/3
+Answer: D
+
+Q.63: If (√(7 + x) + √(7 − x)) / (√(7 + x) − √(7 − x)) = 5, then what is the value of x?
+A. 1
+B. 35/13
+C. 3
+D. 14/19
+Answer: B
+
+Q.64: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p9_x1922.jpeg)
+A. 40%
+B. 55%
+C. 60%
+D. 75%
+Answer: A
+
+Q.65: The marked price of an article is ₹800. It is sold for ₹612.50 after two successive discounts of x% each. If instead a single discount of 2x% is applied on the same marked price, find the selling price of the article.
+A. ₹540
+B. ₹600
+C. ₹660
+D. ₹700
+Answer: A
+
+Q.66: A trader makes a profit of ₹100 on selling an item after allowing a discount of 20%. If the profit is 25%, find the marked price of the item.
+A. ₹475
+B. ₹530
+C. ₹710
+D. ₹625
+Answer: D
+
+Q.67: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p9_x1923.jpeg)
+A. ₹5,00,000
+B. ₹2,50,000
+C. ₹5,50,000
+D. ₹2,00,000
+Answer: A
+
+Q.68: Which of the following is a correct statement about the Cantor set C ⊂ [0, 1]?
+A. C is countable and has measure
+B. C is uncountable and has measure 0
+C. C is countable and has measure 0
+D. C is uncountable and has measure
+Answer: B
+
+Q.69: The difference between the squares of two consecutive positive integers is 47. What is the smaller integer?
+A. 23
+B. 25
+C. 35
+D. 41
+Answer: A
+
+Q.70: Three siblings, namely Kamal, Rupa and Drishti, have different amounts of money with them which add up to Rs. 66000. On a particular day, they decide to go shopping and spend 54%, 40% and 66 2 % from their individual amounts, respectively. If the ratio of the amounts of money left with them after shopping, respectively, is 23:33:20, how much money did Drishti have before shopping?
+A. Rs. 20000
+B. Rs. 22000
+C. Rs. 24000
+D. Rs. 26000
+Answer: C
+
+Q.71: In the expansion of the trinomial square (2x - 3y + 4z)², what is the sum of the coefficients of the xy and yz terms?
+A. -6
+B. 18
+C. -36
+D. 12
+Answer: C
+
+Q.72: Find the value of (8a + 5b)² - (8a - 5b)².
+A. 16ab
+B. 80ab
+C. 128a² + 50b²
+D. 160ab
+Answer: D
+
+Q.73: The average weight of 15 players in a cricket team is 68 kg. If the captain, whose weight is 80 kg, is replaced by a new player, the average weight of the team drops by 0.8 kg. What is the weight of the new player?
+A. 64 kg
+B. 68 kg
+C. 72 kg
+D. 92 kg
+Answer: B
+
+Q.74: ![Figure](/images/pyq/2026/ssc-cgl-2026-10-october-2026-shift-2_p10_x2212.jpeg)
+A. 120 units
+B. 125 units
+C. 130 units
+D. 135 units
+Answer: A
+
+Q.75: In a three-candidate election, 90% of registered voters vote and 4% of votes cast are invalid. Initially, the winner, runner-up and third candidate receive 45%, 35% and 20% of valid votes. If 10% of the third candidate's votes are transferred to the runner-up, the winner's lead becomes 5,184 votes. How many voters are registered?
+A. 70,000
+B. 72,000
+C. 75,000
+D. 80,000
+Answer: D
+
+Q.76: **Comprehension (Q. 76 - 80):** In a world increasingly dominated by constant connectivity, the practice of deliberate solitude (1) ____ a counterbalance to the cognitive overload many experience daily. Contrary to the pervasive notion that being alone equates to loneliness, solitude (2) ____ a fertile ground for introspection, creativity, and emotional recalibration. Engaging in solitary reflection enables individuals to disentangle themselves from external validation, thereby fostering a more (3) autonomous sense of self. Neurological studies have revealed that periods of intentional solitude stimulate the brain's default mode network — a system linked to memory consolidation, future planning, and self-referential thought. However, the benefits of solitude are contingent upon mindset; when chosen voluntarily, it (4) ____ restorative, but when imposed, it can exacerbate feelings of isolation. Moreover, solitude encourages metacognition, the ability to think about one's own thinking, thereby enhancing problem- solving skills and emotional regulation. In broader philosophical discourse, solitude is often celebrated as a medium for existential (5) rumination. Thus, rather than being perceived as a void, solitude should be embraced as an opportunity for profound personal growth and inner clarity.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Choose correct verb to complete tense. (1)
+A. provides
+B. is providing
+C. provided
+D. had provided
+Answer: A
+
+Q.77: **Comprehension (Q. 76 - 80):** In a world increasingly dominated by constant connectivity, the practice of deliberate solitude (1) ____ a counterbalance to the cognitive overload many experience daily. Contrary to the pervasive notion that being alone equates to loneliness, solitude (2) ____ a fertile ground for introspection, creativity, and emotional recalibration. Engaging in solitary reflection enables individuals to disentangle themselves from external validation, thereby fostering a more (3) autonomous sense of self. Neurological studies have revealed that periods of intentional solitude stimulate the brain's default mode network — a system linked to memory consolidation, future planning, and self-referential thought. However, the benefits of solitude are contingent upon mindset; when chosen voluntarily, it (4) ____ restorative, but when imposed, it can exacerbate feelings of isolation. Moreover, solitude encourages metacognition, the ability to think about one's own thinking, thereby enhancing problem- solving skills and emotional regulation. In broader philosophical discourse, solitude is often celebrated as a medium for existential (5) rumination. Thus, rather than being perceived as a void, solitude should be embraced as an opportunity for profound personal growth and inner clarity.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Focus on article + verb agreement. (2)
+A. offer
+B. offers
+C. offered
+D. offering
+Answer: B
+
+Q.78: **Comprehension (Q. 76 - 80):** In a world increasingly dominated by constant connectivity, the practice of deliberate solitude (1) ____ a counterbalance to the cognitive overload many experience daily. Contrary to the pervasive notion that being alone equates to loneliness, solitude (2) ____ a fertile ground for introspection, creativity, and emotional recalibration. Engaging in solitary reflection enables individuals to disentangle themselves from external validation, thereby fostering a more (3) autonomous sense of self. Neurological studies have revealed that periods of intentional solitude stimulate the brain's default mode network — a system linked to memory consolidation, future planning, and self-referential thought. However, the benefits of solitude are contingent upon mindset; when chosen voluntarily, it (4) ____ restorative, but when imposed, it can exacerbate feelings of isolation. Moreover, solitude encourages metacognition, the ability to think about one's own thinking, thereby enhancing problem- solving skills and emotional regulation. In broader philosophical discourse, solitude is often celebrated as a medium for existential (5) rumination. Thus, rather than being perceived as a void, solitude should be embraced as an opportunity for profound personal growth and inner clarity.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. In this context, 'autonomous' most nearly means:
+
+(3)
+A. Dependent on others
+B. Self-governing and independent
+C. Socially driven
+D. Emotionally unstable
+Answer: B
+
+Q.79: **Comprehension (Q. 76 - 80):** In a world increasingly dominated by constant connectivity, the practice of deliberate solitude (1) ____ a counterbalance to the cognitive overload many experience daily. Contrary to the pervasive notion that being alone equates to loneliness, solitude (2) ____ a fertile ground for introspection, creativity, and emotional recalibration. Engaging in solitary reflection enables individuals to disentangle themselves from external validation, thereby fostering a more (3) autonomous sense of self. Neurological studies have revealed that periods of intentional solitude stimulate the brain's default mode network — a system linked to memory consolidation, future planning, and self-referential thought. However, the benefits of solitude are contingent upon mindset; when chosen voluntarily, it (4) ____ restorative, but when imposed, it can exacerbate feelings of isolation. Moreover, solitude encourages metacognition, the ability to think about one's own thinking, thereby enhancing problem- solving skills and emotional regulation. In broader philosophical discourse, solitude is often celebrated as a medium for existential (5) rumination. Thus, rather than being perceived as a void, solitude should be embraced as an opportunity for profound personal growth and inner clarity.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Choose best pronoun consistency/verb form.
+
+(4)
+A. is being
+B. has been
+C. is
+D. would have been
+Answer: B
+
+Q.80: **Comprehension (Q. 76 - 80):** In a world increasingly dominated by constant connectivity, the practice of deliberate solitude (1) ____ a counterbalance to the cognitive overload many experience daily. Contrary to the pervasive notion that being alone equates to loneliness, solitude (2) ____ a fertile ground for introspection, creativity, and emotional recalibration. Engaging in solitary reflection enables individuals to disentangle themselves from external validation, thereby fostering a more (3) autonomous sense of self. Neurological studies have revealed that periods of intentional solitude stimulate the brain's default mode network — a system linked to memory consolidation, future planning, and self-referential thought. However, the benefits of solitude are contingent upon mindset; when chosen voluntarily, it (4) ____ restorative, but when imposed, it can exacerbate feelings of isolation. Moreover, solitude encourages metacognition, the ability to think about one's own thinking, thereby enhancing problem- solving skills and emotional regulation. In broader philosophical discourse, solitude is often celebrated as a medium for existential (5) rumination. Thus, rather than being perceived as a void, solitude should be embraced as an opportunity for profound personal growth and inner clarity.
+
+---
+
+In the following question, a sentence with a blank is given, followed by five words labeled
+
+(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. The word 'rumination' most nearly means:
+
+(5)
+A. Casual amusement
+B. Rapid decision-making
+C. Deep, prolonged thought
+D. Immediate physical reaction
+Answer: C
+
+Q.81: Choose the correct indirect speech form of the following sentence. He said, "May I come in?"
+A. He asked if he may come in.
+B. He asked whether he can come in.
+C. He asked if he might come in.
+D. He told if he could come in.
+Answer: C
+
+Q.82: Complete the collocation by choosing a suitable word to fill in the blank. The scientist was able to ______ a theory that explained the phenomenon.
+A. put forward
+B. invent
+C. bring out
+D. bring forward
+Answer: A
+
+Q.83: Fill in the blanks with appropriate parts of speech. The director's ______ refusal to compromise and the board's ______ criticism led to a stalemate.
+A. steadiness,
+B. steadfastly, scathe scathing
+C. steadfast,
+D. steadily, scathes scathing
+Answer: C
+
+Q.84: Mohit said to Ananya, "Don't make a mountain out of a molehill." What does this idiom mean?
+A. Don't exaggerate a small problem
+B. Work hard to achieve success
+C. Keep your emotions under control
+D. Be cautious while making decisions
+Answer: A
+
+Q.85: Improve the sentence using the correct phrasal verb of the underlined word. She ran out her old friends at the mall yesterday.
+A. ran after
+B. ran into
+C. ran down
+D. ran over
+Answer: B
+
+Q.86: Improve the sentence using the correct phrasal verb of the underlined words. The teacher asked him to make down a plan for the project.
+A. make up
+B. make over
+C. make out
+D. make off
+Answer: C
+
+Q.87: Fill in the blank with the appropriate tense. By the end of the fiscal year, the company _______ nearly 15% more than it had projected initially.
+A. has earned
+B. had earned
+C. will have earned
+D. was earning
+Answer: C
+
+Q.88: Which of the following options is NOT one of the meanings of the homonym 'constitution'?
+A. The system of fundamental principles according to which a state or organisation is governed.
+B. The physical or mental makeup of a person, especially in relation to health or temperament.
+C. The formal disbandment of a legal contract between two or more parties.
+D. The composition or structure of something, especially a material or compound.
+Answer: B
+
+Q.89: Read the sentence below and choose the meaning of the idiom that best fits the context: "Rahul will always be sorry that his father and he fought before he died and he never got a chance to bury the hatchet." What does the idiom "bury the hatchet" mean in this context?
+A. To make peace and end a disagreement
+B. To hide something important from someone
+C. To feel guilty about a past mistake
+D. To physically bury a weapon in the ground
+Answer: A
+
+Q.90: Choose the correct meaning of idiom: To throw one's cap/the windmill
+A. To act recklessly
+B. To challenge authority in public
+C. To mock traditional values
+D. To fall prey to delusion
+Answer: A
+
+Q.91: Choose the correct spelling for a word meaning 'capable of burning'.
+A. Corosive
+B. Corrosive
+C. Corrosiv
+D. Corroisive
+Answer: B
+
+Q.92: Identify the misspelt word.
+A. Pulchritude
+B. Redolant
+C. Paroxysm
+D. Inchoate
+Answer: B
+
+Q.93: Spot the correct spelling of a thorny ornamental plant genus.
+A. Bouganvillea
+B. Bougainvillea
+C. Bougainvillaea
+D. Bougainvilea
+Answer: B
+
+Q.94: Identify the misspelt word.
+A. Elucubrate
+B. Anachronism
+C. Sobriquet
+D. Peremptory
+Answer: A
+
+Q.95: Find the part of the sentence that contains an error: The vice-chancellor insisted that the policy (1)/ is to be revised (2)/ by the end of the quarter (3)/ to address the audit remarks.
+
+(4)
+A. (1)
+B. (2)
+C. (3)
+D. (4)
+Answer: B
+
+Q.96: Find the part of the sentence that contains an error: A very few researchers (1)/ have attempted to replicate the study (2)/ under identical field conditions (3)/ due to logistical limitations. (4)
+A. (1)
+B. (2)
+C. (3)
+D. 4
+Answer: A
+
+Q.97: Select the sentence containing the homonym of the highlighted word: The professor critiqued the flawed lemma in the manuscript.
+A. The botanist identified a damaged lemma in the grass sample.
+B. The lemma connects two axioms in formal logic.
+C. She corrected a misapplied lemma in the proof.
+D. The mathematician introduced a bridging lemma.
+Answer: A
+
+Q.98: Rearrange the following sentences in correct order to make a logical sentence P: within colonial land tenure frameworks Q: Agrarian dispossession R: was systemically legitimised S: through cadastral mapping
+A. QRSP
+B. QPRS
+C. PQRS
+D. PRSQ
+Answer: A
+
+Q.99: Rearrange the following sentences in correct order to make a logical sentence P: reveals the paradox Q: in contemporary economic reforms R: The exclusion of marginal voices S: of inclusive rhetoric
+A. RPSQ
+B. PRSQ
+C. RSQP
+D. RQSP
+Answer: A
+
+Q.100: A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The leader said that not for a moment did he believe the accusations.
+A. "Not for a moment did I believe the accusations," said the leader.
+B. "I never believed the accusations," said the leader.
+C. "Not even once I believed the accusations," said the leader.
+D. "I did not believe the accusations for a moment," said the leader.
+Answer: A
+

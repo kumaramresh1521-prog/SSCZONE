@@ -1,8 +1,43 @@
 {
   "1": {
-    "allow_download": false
+    "allow_download": false,
+    "allow_translation": true
   },
   "4": {
-    "allow_download": true
+    "allow_download": false
+  },
+  "5": {
+    "allow_download": false
+  },
+  "6": {
+    "allow_download": false
+  },
+  "7": {
+    "allow_download": false
+  },
+  "8": {
+    "allow_download": false
+  },
+  "9": {
+    "allow_download": false
+  },
+  "10": {
+    "allow_download": false
+  },
+  "11": {
+    "allow_download": false
+  },
+  "12": {
+    "allow_download": false
+  },
+  "13": {
+    "allow_download": false
+  },
+  "14": {
+    "allow_download": false
+  },
+  "24": {
+    "allow_download": true,
+    "allow_translation": true
   }
 }

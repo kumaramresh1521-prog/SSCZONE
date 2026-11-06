@@ -1,0 +1,902 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. B E K, D G M, F I O, H K Q, ?",
+    "option_a": "KSA",
+    "option_b": "JAS",
+    "option_c": "JMS",
+    "option_d": "KJS",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 2,
+    "question_text": "Choose the address that is the same as the one given below. No. 44, Hillcrest Villas, Shimla, Himachal Pradesh - 171001",
+    "option_a": "No. 44, Hillcrest Villas, Shimla, Uttarakhand - 171001",
+    "option_b": "No. 44, Hillcrest Villas, Shimla, Himachal Pradesh - 171001",
+    "option_c": "No. 44, Hillcrest Villas, Shimla, Punjab - 171001",
+    "option_d": "No. 44, Hillcrest Villas, Shimla, Delhi - 171001",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 3,
+    "question_text": "Identify the relation between Statement I and Statement II. Statement I. The bank's net profit increased significantly in the last quarter. Statement II. The bank implemented cost-cutting measures and improved loan recovery.",
+    "option_a": "I is the cause and II is the effect.",
+    "option_b": "II is the cause and I is the effect.",
+    "option_c": "Both are independent effects.",
+    "option_d": "No relation.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 4,
+    "question_text": "The following equation is incorrect. Which two signs should be interchanged to correct the equation? 18 + 6 × 4 - 12 ÷ 3 = 17",
+    "option_a": "+ and ×",
+    "option_b": "× and ÷",
+    "option_c": "+ and -",
+    "option_d": "- and ÷",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 5,
+    "question_text": "The given statements are followed by two conclusions. Find out which conclusion is TRUE based on the given statements. Statements: J > K = L, M ≥ N < K, O < J < P, N > Q > R Conclusions: I. P > M II. N < P",
+    "option_a": "Only conclusion I is true",
+    "option_b": "Only conclusion II is true",
+    "option_c": "Neither conclusion I nor II is true",
+    "option_d": "Both conclusion I and II are true",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 6,
+    "question_text": "A is the brother of B. C is the sister of B. D is the father of C. How is D related to A?",
+    "option_a": "Father",
+    "option_b": "Uncle",
+    "option_c": "Brother",
+    "option_d": "Grandfather",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 7,
+    "question_text": "What comes next: 3, 6, 18, 108, ?",
+    "option_a": "1290",
+    "option_b": "1944",
+    "option_c": "648",
+    "option_d": "432",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 8,
+    "question_text": "What will come at the place of question mark? 5, 9, 17, 33, 65, ?",
+    "option_a": "129",
+    "option_b": "120",
+    "option_c": "130",
+    "option_d": "127",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 9,
+    "question_text": "Read the following statement carefully and identify the conclusion that follows. Statement: The government has announced a reduction in LPG subsidies. Conclusions: I. Citizens will now have to pay more for LPG. II. The government has no money left.",
+    "option_a": "Only Conclusion I follows",
+    "option_b": "Only Conclusion II follows",
+    "option_c": "Both I and II follow",
+    "option_d": "Neither I nor II follows",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 10,
+    "question_text": "Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option. Statement: While technological advancements in energy production have made renewable sources more cost- competitive, their intermittent nature means that large-scale adoption will require significant investments in energy storage technologies to stabilize the grid. Assumptions: I. Renewable energy sources are not continuous and need energy storage solutions. II. The high cost of renewable energy production makes its adoption difficult without subsidies. III. Energy storage technologies are a necessary component of a stable energy grid with high renewable energy input.",
+    "option_a": "Only I and III are implicit",
+    "option_b": "Only II and III are implicit",
+    "option_c": "Only I is implicit",
+    "option_d": "All assumptions are implicit",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 11,
+    "question_text": "Read the following statement carefully and identify the conclusion that follows. Statement: Traffic violations have decreased after the installation of speed cameras. Conclusions: I. Surveillance discourages rule-breaking. II. People respect traffic rules voluntarily.",
+    "option_a": "Only Conclusion I follows",
+    "option_b": "Only Conclusion II follows",
+    "option_c": "Both I and II follow",
+    "option_d": "Neither I nor II follows",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 12,
+    "question_text": "Which of the following is/are identical to the address given: Vikram Singh 18B, Golden Heights, Moti Nagar, Delhi, 110011 1. Vikram Singh 18B, Golden Heights, Moti Nagar, Delhi, 110011 2. Vikram Singh 18-B, Golden Heights, Moti Nagar, Delhi, 110011 3. Vikram Singh 18B, Golden Heights, Moti Nagar, Delhi, 110011 4. Vikram Singh 18B, Golden Heights, Moti Nagar, New Delhi, 110011",
+    "option_a": "1 and 2",
+    "option_b": "1 and 3",
+    "option_c": "2 and 4",
+    "option_d": "3 and 4",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 13,
+    "question_text": "Each question involves rearranging specific positions of the letters from the original word, and you must choose the correct transformed version from the options. PLANET is to EAP LNT as TARGET is to:",
+    "option_a": "AGETRT",
+    "option_b": "GAE TRT",
+    "option_c": "ERTAGT",
+    "option_d": "GEA TRT",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 14,
+    "question_text": "Find the odd one out: : Jawaharlal Nehru, Indira Gandhi, Atal Bihari Vajpayee, Sardar Vallabhbhai Patel, Narendra Modi, Rajiv Gandhi",
+    "option_a": "Jawaharlal Nehru",
+    "option_b": "Atal Bihari Vajpayee",
+    "option_c": "Sardar Vallabhbhai Patel",
+    "option_d": "Narendra Modi",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 15,
+    "question_text": "Rearrange the letters given below to form the name of a weapon: REPSA",
+    "option_a": "parse",
+    "option_b": "spear",
+    "option_c": "spare",
+    "option_d": "asper",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 16,
+    "question_text": "What comes next? MZM, PXK, SVI, ?",
+    "option_a": "VTG",
+    "option_b": "USF",
+    "option_c": "WTG",
+    "option_d": "XRE",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 17,
+    "question_text": "Find the odd one out from the given alternatives:",
+    "option_a": "Alluvial Soil",
+    "option_b": "Black Soil",
+    "option_c": "Red Soil",
+    "option_d": "Igneous Rock",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 18,
+    "question_text": "If 'SUN' is coded as 'RTM', what is the code for 'MOON'?",
+    "option_a": "LNNP",
+    "option_b": "LNNM",
+    "option_c": "LNNO",
+    "option_d": "LMPM",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 19,
+    "question_text": "If 25% of a certain number is 15, what is that number?",
+    "option_a": "45",
+    "option_b": "60",
+    "option_c": "75",
+    "option_d": "90",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 20,
+    "question_text": "If 6 * 3 = 54 and 8 * 2 = 48, what is 5 * 4?",
+    "option_a": "40",
+    "option_b": "44",
+    "option_c": "45",
+    "option_d": "60",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 21,
+    "question_text": "If 2 @ 3 = 13, 3 @ 4 = 25, then what is 4 @ 5?",
+    "option_a": "36",
+    "option_b": "39",
+    "option_c": "41",
+    "option_d": "33",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 22,
+    "question_text": "A 30 L mixture contains milk and water in the ratio 3:2. How much milk must be added to make it 4:1?",
+    "option_a": "51 L",
+    "option_b": "60 L",
+    "option_c": "30 L",
+    "option_d": "40 L",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 23,
+    "question_text": "If the given symbols mean: '+' means 'divided by' '-' means 'multiplied by' 'x' means 'minus' '÷' means 'plus' Then, find the value of the following expressions: 8 ÷ 2 x 3 + 18 - 6=?",
+    "option_a": "9",
+    "option_b": "11",
+    "option_c": "13",
+    "option_d": "15",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 24,
+    "question_text": "Pointing to a boy, a man said, \"He is the son of my wife's sister's husband.\" How is the boy related to the man?",
+    "option_a": "Son",
+    "option_b": "Nephew",
+    "option_c": "Brother-in-law",
+    "option_d": "Cousin",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 25,
+    "question_text": "If + = ÷, - = ×, ÷ = +, × = -; then 36 + 6 - 2 × 3 = ?",
+    "option_a": "6",
+    "option_b": "15",
+    "option_c": "13",
+    "option_d": "9",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 26,
+    "question_text": "The festival of Bhagoria begins seven days before which Hindu festival?",
+    "option_a": "Diwali",
+    "option_b": "Holika Dahan",
+    "option_c": "Navratri",
+    "option_d": "Makar Sankranti",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 27,
+    "question_text": "Which of the following Mughal tombs deviates from the typical square 'hasht-bihisht' (eight-part) layout?",
+    "option_a": "Humayun's Tomb",
+    "option_b": "Akbar's Tomb (Sikandra)",
+    "option_c": "Itimad-ud-Daulah",
+    "option_d": "Safdarjung's Tomb",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 28,
+    "question_text": "Read the following statements carefully: Statement 1 : The seals of the Harappan culture were made using locally found steatite. Statement 2 : These seals often feature animal motifs and undeciphered script symbols. Which of the following is/are correct?",
+    "option_a": "Only S1",
+    "option_b": "Only S2",
+    "option_c": "Both S1 and S2 are correct",
+    "option_d": "Neither S1 nor S2 is correct",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 29,
+    "question_text": "In Rāga Vivodha, Pt. Somnath defined a rāga through Devamāyā svarūpa (ethos). Which of the following, denoting its tonal structure?",
+    "option_a": "Tālanga",
+    "option_b": "Rūpa",
+    "option_c": "Swarlakshana",
+    "option_d": "Jāti",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 30,
+    "question_text": "Which of the following terms is specifically associated with the javelin throw?",
+    "option_a": "Glide",
+    "option_b": "Sector",
+    "option_c": "Vault",
+    "option_d": "Spin",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 31,
+    "question_text": "Which of the following dynasties minted the \"Dehliwal\" coins in Delhi?",
+    "option_a": "The Gahadavalas",
+    "option_b": "The Tomaras",
+    "option_c": "The Khaljis",
+    "option_d": "The Lodis",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 32,
+    "question_text": "Which of the following pairs (Educational Event - Key Outcome/Initiative) is correctly matched?",
+    "option_a": "Charter Act, 1813 – Allocated funds for promotion of education",
+    "option_b": "Macaulay's Minute, 1835 – Emphasized traditional Sanskrit learning",
+    "option_c": "Serampore Mission – Promoted technical education for elite Indians",
+    "option_d": "Orientalist-Anglicist Debate – Resolved by Charter Act, 1833",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 33,
+    "question_text": "Who won India's first Paralympic medals in the women's 200m T12 and men's javelin throw F41 events at Paris 2024?",
+    "option_a": "Simran (bronze, 200m T12) and Navdeep Singh (gold, javelin F41)",
+    "option_b": "Navdeep Singh (bronze, 200m T12) and Simran (gold, javelin F41)",
+    "option_c": "Simran (silver, 200m T12) and Navdeep Singh (gold, javelin F41)",
+    "option_d": "Navdeep Singh (gold, 200m T12) and Simran (bronze, javelin F41)",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 34,
+    "question_text": "Which of the following best reflects India's operational and diplomatic approach to boundary demarcation with Myanmar amidst recent local protests over fencing?",
+    "option_a": "India invoked a 1987 treaty and BIMSTEC arbitration to settle boundary pillar disputes.",
+    "option_b": "India and Myanmar conduct joint surveys and proposed a Joint Boundary Working Group.",
+    "option_c": "India halted border fencing to avoid ASEAN trade disruptions.",
+    "option_d": "India dismissed protests and assigned border oversight to AFSPA tribunals.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 35,
+    "question_text": "Who is the author of the book 'School to Startup: Navigating the Path of Entrepreneurship'?",
+    "option_a": "Rohit Sinha",
+    "option_b": "Romila Thapar",
+    "option_c": "Bipin Chandra",
+    "option_d": "Shashi Tharoor",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 36,
+    "question_text": "Where was the 4th KIO National (Senior, U-21 & Para) Karate Championship held from 26-29 March 2025?",
+    "option_a": "Delhi",
+    "option_b": "Ahmedabad",
+    "option_c": "Hyderabad",
+    "option_d": "Bengaluru",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 37,
+    "question_text": "Which of the following statements about the 2024 Inter-State Athletics Championships is/are correct? 1.) Sahil Silwal crossed 80m for the first time this season to win javelin gold. 2.) Jyothika and Amoj's 4x400m relay team broke the Asian Games record.",
+    "option_a": "Only 1",
+    "option_b": "Only 2",
+    "option_c": "Both 1 and 2 are correct",
+    "option_d": "Neither 1 nor 2 is correct",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 38,
+    "question_text": "What is the minimum age required to contest the Presidential election in India?",
+    "option_a": "35",
+    "option_b": "30",
+    "option_c": "25",
+    "option_d": "40",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 39,
+    "question_text": "Read the following statements about aerobic respiration: 1. Glycolysis occurs in the mitochondria. 2. Kreb's cycle occurs in the mitochondrial matrix. 3. The final electron acceptor in aerobic respiration is oxygen. Which of the above statements are correct?",
+    "option_a": "Only 1 and 2 are correct",
+    "option_b": "Only 2 and 3 are correct",
+    "option_c": "Only 1 and 3 are correct",
+    "option_d": "1, 2 and 3 all are correct",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 40,
+    "question_text": "Which Article empowers the Parliament to create laws on State List subjects under national interest?",
+    "option_a": "Article 249",
+    "option_b": "Article 253",
+    "option_c": "Article 248",
+    "option_d": "Article 254",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 41,
+    "question_text": "Vilasini Natyam, once performed in temples and courts, is a classical dance form revived in which Indian state?",
+    "option_a": "Tamil Nadu",
+    "option_b": "Karnataka",
+    "option_c": "Andhra Pradesh",
+    "option_d": "Kerala",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 42,
+    "question_text": "Consider the following statements and choose the correct option: Statement 1: The Production Possibility Frontier (PPF) shows the trade-offs and opportunity costs faced by an economy. Statement 2: The PPF is used to estimate the government's total revenue and expenditure.",
+    "option_a": "Only Statement 1 is correct",
+    "option_b": "Only Statement 2 is correct",
+    "option_c": "Both Statement 1 and Statement 2 are correct",
+    "option_d": "Neither Statement 1 nor Statement 2 is correct",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 43,
+    "question_text": "A key component evaluated by the 2025 Index of Economic Freedom concerning \"Government Size\" is:",
+    "option_a": "Public Education Funding",
+    "option_b": "Government Spending Levels",
+    "option_c": "National Defense Expenditures",
+    "option_d": "Foreign Aid Contributions",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 44,
+    "question_text": "Which Five-Year Plan focused on heavy industries?",
+    "option_a": "First",
+    "option_b": "Second",
+    "option_c": "Third",
+    "option_d": "Fourth",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 45,
+    "question_text": "Which Indian initiative under the National Adaptation Fund for Climate Change (NAFCC) aims to improve micro-climate resilience through community-led water harvesting in semi-arid zones?",
+    "option_a": "Jal Urja Yojana",
+    "option_b": "Climate Resilient Watershed Programme",
+    "option_c": "Hariyali Mission",
+    "option_d": "Jal Mitra Scheme",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 46,
+    "question_text": "Economic liberalisation mainly affects which sector?",
+    "option_a": "Primary and Tertiary",
+    "option_b": "Primary and Secondary",
+    "option_c": "Secondary and Tertiary",
+    "option_d": "Primary, Secondary, and Tertiary",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 47,
+    "question_text": "Read the following statements carefully and choose the correct option regarding Assertion (A) and Reason (R). Assertion (A): The 1991 reforms boosted India foreign exchange reserves significantly. Reason (R): Liberalized trade policies increased both exports and capital inflows.",
+    "option_a": "Both A and R are true and R is the correct explanation of A.",
+    "option_b": "Both A and R are true but R is not the correct explanation of A.",
+    "option_c": "A is true but R is false.",
+    "option_d": "A is false but R is true.",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 48,
+    "question_text": "Match the dominant folk dance with the song-theme: Folk dance Song-theme 1. Panthi A. Devotional hymns to Guru Ghasidas (Hari-Gaitri) 2. Gotipua B. Krishna-Jagannath leela narratives 3. Kalbelia C. Sensuous serpent metaphors 4. Tippani D. Work-song pounding couplets (saathiyo re)",
+    "option_a": "1-A 2-B 3-C 4-D",
+    "option_b": "1-B, 2-A, 3-D, 4-C",
+    "option_c": "1-C 2-B 3-A 4-D",
+    "option_d": "1-A 2-C 3-B 4-D",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 49,
+    "question_text": "Consider the following statements: 1. The Sixth Schedule is applicable to Nagaland and Arunachal Pradesh. 2. It empowers autonomous district councils to make laws on specified subjects. Which of the above is/are correct?",
+    "option_a": "Only 1",
+    "option_b": "Only 2",
+    "option_c": "Both 1 and 2",
+    "option_d": "Neither 1 nor 2",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 50,
+    "question_text": "Consider the following statements about the James Webb Space Telescope (JWST): 1. It observes in the near-infrared and mid-infrared spectrum. 2. It is positioned at the Sun-Earth Lagrange Point L2. 3. It carries a coronagraph for exoplanet detection. Which of the above statements is/are correct?",
+    "option_a": "Only 1 and 2",
+    "option_b": "Only 1 and 3",
+    "option_c": "Only 2 and 3",
+    "option_d": "All 1, 2 and 3",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 51,
+    "question_text": "Simplify: (√12 + √3)",
+    "option_a": "2 + √3",
+    "option_b": "3√3",
+    "option_c": "√3 + 2√3",
+    "option_d": "3 + √9",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 52,
+    "question_text": "Given that W : X = 5 : 6, X : Y = 3 : 7, and Y : Z = 8 : 9, find the compound ratio W : X : Y : Z.",
+    "option_a": "20 : 24 : 56 : 63",
+    "option_b": "5 : 6 : 7 : 9",
+    "option_c": "5 : 6 : 14 : 9",
+    "option_d": "20 : 24 : 42 : 63",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 53,
+    "question_text": "What is the value of: √(7 + 4√3) - √(7 - 4√3)?",
+    "option_a": "3",
+    "option_b": "2",
+    "option_c": "5",
+    "option_d": "6",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 54,
+    "question_text": "A vendor purchases 7 shirts at the marked price of 6 shirts. If he sells each shirt after giving a 4% discount on its marked price, what is his profit percentage?",
+    "option_a": "10%",
+    "option_b": "11%",
+    "option_c": "12%",
+    "option_d": "13%",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 55,
+    "question_text": "Pipe A is capable of filling a tank in 16 minutes while Pipe B can fill the same tank in 24 minutes. Both pipes are opened together, but after 4 minutes, the rate of Pipe A doubles and the rate of Pipe B becomes half of its original. How many more minutes will it take to fill the tank completely?",
+    "option_a": "4 min",
+    "option_b": "5 min",
+    "option_c": "6 min",
+    "option_d": "7 min",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 56,
+    "question_text": "If a + b = 5 and ab = 6, find: (a³ + b³)² - 9a²b²(a + b)²",
+    "option_a": "-6875",
+    "option_b": "6875",
+    "option_c": "-3876",
+    "option_d": "3876",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 57,
+    "question_text": "A sum of ₹10000 is lent out in two parts, one at 7% simple interest and the other at 12% simple interest. If the annual interest is ₹900, the sum lent at 12% is:",
+    "option_a": "₹3500",
+    "option_b": "₹4000",
+    "option_c": "₹4500",
+    "option_d": "₹5000 √ √ 3 3 2 2 2 2",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 58,
+    "question_text": "Rs. 900 is lent at a certain rate of simple interest. After 9 months, another Rs. 600 is lent at a rate that is 1.5 times the original rate. If the total simple interest after 1 year is Rs. 72, find the original rate.",
+    "option_a": "6.4%",
+    "option_b": "4.5 %",
+    "option_c": "8.2%",
+    "option_d": "5.6%",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 59,
+    "question_text": "A flagpole has a shadow measuring 10 meters. Given that the height of the flagpole is 10√3 meters, What is the angle at which the sun is elevated?",
+    "option_a": "30°",
+    "option_b": "45°",
+    "option_c": "60°",
+    "option_d": "75°",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 60,
+    "question_text": "A hollow metallic sphere has outer radius 10 cm and is melted to make 50 smaller solid spheres of radius 2 cm. What is the inner radius of the original sphere?",
+    "option_a": "8.43 cm",
+    "option_b": "7.48 cm",
+    "option_c": "5.46 cm",
+    "option_d": "6.44 cm",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 61,
+    "question_text": "The volume of a hemisphere is numerically equal to four times its curved surface area. Find its radius.",
+    "option_a": "12 cm",
+    "option_b": "15 cm",
+    "option_c": "16 cm",
+    "option_d": "17cm",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 62,
+    "question_text": "What is the minimum number of cuts required to divide a cuboid into 8 equal cuboids?",
+    "option_a": "2",
+    "option_b": "3",
+    "option_c": "5",
+    "option_d": "4",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 63,
+    "question_text": "If the height of a cone is tripled and the radius is halved, how does the volume change?",
+    "option_a": "Doubles",
+    "option_b": "Becomes three-fourths of the original",
+    "option_c": "Becomes one-third of the original",
+    "option_d": "Remains unchanged",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 64,
+    "question_text": "If sin θ = 12/13, and θ ∈ (0, π/2), then what is the value of tan θ?",
+    "option_a": "5/12",
+    "option_b": "13/12",
+    "option_c": "12/5",
+    "option_d": "12/13",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 65,
+    "question_text": "What is the value of tanA + cotA if tanA = 2?",
+    "option_a": "5/2",
+    "option_b": "3/2",
+    "option_c": "7/2",
+    "option_d": "2",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 66,
+    "question_text": "What is the slope of the line 2x + 3y = 6?",
+    "option_a": "-2/3",
+    "option_b": "2/3",
+    "option_c": "-3/2",
+    "option_d": "3/2",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 67,
+    "question_text": "A sector of a circle has a central angle of 60° and a radius of 8 cm. Another sector of the same circle has a central angle of π/3 radians. What is the ratio of the area of the first sector to the area of the second sector?",
+    "option_a": "2:3",
+    "option_b": "1:2",
+    "option_c": "1:1",
+    "option_d": "1:3",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 68,
+    "question_text": "A triangle can have:",
+    "option_a": "Two right angles",
+    "option_b": "One obtuse angle and one right angle",
+    "option_c": "Only one right or one obtuse angle",
+    "option_d": "Three acute angles each measuring more than 60°",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 69,
+    "question_text": "A line L is the perpendicular bisector of the line segment connecting points A(2, 5) and B(8, -1). What is the y-intercept of line L?",
+    "option_a": "-3",
+    "option_b": "2",
+    "option_c": "3",
+    "option_d": "5",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 70,
+    "question_text": "The area of a triangle ABC is 16 cm². If a similar triangle DEF has sides that are twice the length of ΔABC's sides, what is the area of ΔDEF?",
+    "option_a": "32 cm²",
+    "option_b": "48 cm²",
+    "option_c": "64 cm²",
+    "option_d": "80 cm²",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 71,
+    "question_text": "44³ + 35³ - 53³ + 159 is equal to: 44³ + 35³ - 53³ + 159",
+    "option_a": "-20659",
+    "option_b": "0",
+    "option_c": "-18659",
+    "option_d": "1",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 72,
+    "question_text": "If sinA + cosA = 7/5, find sin2A.",
+    "option_a": "12/25",
+    "option_b": "16/25",
+    "option_c": "21/25",
+    "option_d": "24/25",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 73,
+    "question_text": "From an outside point P, two tangents, PA and PB, are drawn to a circle. Given that the length of PA is 12 cm, what is the length of PB?",
+    "option_a": "6 cm",
+    "option_b": "10 cm",
+    "option_c": "12 cm",
+    "option_d": "24 cm",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 74,
+    "question_text": "A circle is inscribed within a right triangle. Considering that the lengths of the two legs measure 6 cm and 8 cm, what is the radius of the inscribed circle?",
+    "option_a": "2 cm",
+    "option_b": "3 cm",
+    "option_c": "4 cm",
+    "option_d": "5 cm",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 75,
+    "question_text": "If a = 0.02, b = 0.03, c = -0.05, and a + b + c = 0, find (a³ + b³ + c³) ÷ (3abc)",
+    "option_a": "-1",
+    "option_b": "0",
+    "option_c": "1",
+    "option_d": "2",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 76,
+    "question_text": "Select the most appropriate synonym of the given word: LUMINOUS",
+    "option_a": "Dull",
+    "option_b": "Dim",
+    "option_c": "Opaque",
+    "option_d": "Radiant",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 77,
+    "question_text": "Select the most appropriate synonym of the given word: EXIGUOUS",
+    "option_a": "Scanty",
+    "option_b": "Huge",
+    "option_c": "Excessive",
+    "option_d": "Abundant",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 78,
+    "question_text": "Select the most appropriate antonym of the given word. Abrogate",
+    "option_a": "Abolish",
+    "option_b": "Revoke",
+    "option_c": "Uphold",
+    "option_d": "Annul",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 79,
+    "question_text": "Choose the correct meaning of idiom: To chew the cud of reflection",
+    "option_a": "Eating slowly",
+    "option_b": "Daydreaming without focus",
+    "option_c": "Pondering deeply",
+    "option_d": "Mentally preparing for battle",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 80,
+    "question_text": "Choose the correct spelling of a word meaning 'witty, clever, and verbally skillful'.",
+    "option_a": "Persiflage",
+    "option_b": "Persiphledge",
+    "option_c": "Pursiflage",
+    "option_d": "Persiflagee",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 81,
+    "question_text": "Find the word that is spelled correctly and means the quality of being sarcastic in a bitter way.",
+    "option_a": "Causticity",
+    "option_b": "Costicity",
+    "option_c": "Cawstic",
+    "option_d": "Caustisity",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 82,
+    "question_text": "Choose the correct one-word substitute for: 'A person who supports change'.",
+    "option_a": "Conservative",
+    "option_b": "Radical",
+    "option_c": "Reformer",
+    "option_d": "Constitutionalist",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 83,
+    "question_text": "Choose the correct one-word substitute for: 'Extremely old-fashioned; belonging to a time before the biblical flood'.",
+    "option_a": "Tale",
+    "option_b": "Obsolete",
+    "option_c": "Antediluvian",
+    "option_d": "Medieval",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 84,
+    "question_text": "Choose the correct option: The anthropologist's findings were considered so controversial that they were initially ______.",
+    "option_a": "disregarded",
+    "option_b": "celebrated",
+    "option_c": "acclaimed",
+    "option_d": "adopted",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 85,
+    "question_text": "Find the part of the sentence that contains an error: The draft policy outlines (1)/ that each employee must adhere to (2)/ the code of conduct (3)/ irrespective of their position. (4)/",
+    "option_a": "(1)",
+    "option_b": "(2)",
+    "option_c": "(3)",
+    "option_d": "(4)",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 86,
+    "question_text": "Change the following from active to passive: They were showing the movie at 7 pm.",
+    "option_a": "The movie is shown at 7 pm.",
+    "option_b": "The movie was shown at 7 pm.",
+    "option_c": "The movie was being shown at 7 pm.",
+    "option_d": "The movie has been shown at 7 pm.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 87,
+    "question_text": "Find the part of the sentence that contains an error: Rarely had the court encountered a petition (1)/ so devoid of legal merit, nor so conspicuously intended (2)/ to attract media attention rather than judicial remedy. (3)/ No error (4)",
+    "option_a": "(1)",
+    "option_b": "(2)",
+    "option_c": "(3)",
+    "option_d": "(4)",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 88,
+    "question_text": "Select the sentence containing the homonym of the highlighted word: The bishop condemned the act as simony, citing canonical law.",
+    "option_a": "The preacher was accused of simony for charging for blessings.",
+    "option_b": "The court equated indulgence-selling with simony.",
+    "option_c": "The alchemist failed to explain the simony in his formulas.",
+    "option_d": "Simony was rampant in medieval ecclesiastical courts.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 89,
+    "question_text": "Convert the sentence provided below from its passive voice structure to an active voice structure: A decision has been taken to have the proposal reviewed by an external panel.",
+    "option_a": "An external panel has reviewed the proposal.",
+    "option_b": "The proposal is being reviewed by an external panel.",
+    "option_c": "They have decided to get the proposal reviewed by an external panel.",
+    "option_d": "The proposal was reviewed by the panel as per the decision.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 90,
+    "question_text": "Choose the most suitable option to replace the highlighted part of the sentence: She is confident to win the match.",
+    "option_a": "of to win",
+    "option_b": "that she wins",
+    "option_c": "of winning the match",
+    "option_d": "on winning match",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 91,
+    "question_text": "PASSAGE (Q.91 - Q.95) Read the following passage and answer the questions based on the passage : India's legacy of healing practices—embodied in disciplines such as Yoga, Ayurveda, Siddha, and Unani— presents a complex synthesis of philosophy, biology, and metaphysics. Far from being static relics of the past, these systems have exhibited an evolving dynamism, continuously negotiating their space within both indigenous frameworks and global health discourses. At the heart of this healing ethos lies the idea that the human body is not an isolated physiological entity but a site of interconnected energies and rhythms. Yoga, as codified in the Yoga Sutras of Patanjali, is not merely a physical regimen but a holistic path aimed at harmonizing the body, mind, and spirit. In the modern era, however, it has undergone commodification, particularly in the West, where its philosophical moorings are often diluted into mere physical exercise or stress-reduction techniques. This recontextualization, while facilitating global popularity, raises questions about cultural appropriation and epistemic erosion. Traditional medicine systems such as Ayurveda view disease as an imbalance in the tridosha—vata, pitta, and kapha—principles that regulate bodily function. These systems emphasize prakriti (constitution), ahara (diet), and dinacharya (daily routine) as central to preventive healthcare. Unlike allopathy's symptom-targeting approach, traditional Indian medicine is premised on restoring equilibrium in the body's internal ecology. This integrative vision aligns with contemporary calls for personalized and preventive medicine, though methodological differences continue to stoke skepticism in the biomedical community. State patronage of AYUSH (Ayurveda, Yoga & Naturopathy, Unani, Siddha, and Homeopathy) underlines a renewed institutional interest in traditional systems. However, critics caution against uncritical endorsement, citing the lack of standardized clinical trials, variability in diagnostic models, and challenges in evidence-based validation. Furthermore, pharmaceutical commercialization of Ayurvedic formulations often sidelines traditional knowledge holders, reducing centuries-old practices to marketable commodities. The interface between Yoga and traditional medicine with modern healthcare is therefore both promising and fraught. While integrative models are being explored—especially in palliative care, mental health, and chronic disease management —they require epistemic humility and regulatory rigor. The danger lies in either romanticizing these systems as panaceas or discarding them as pre-scientific relics. Ultimately, the relevance of Yoga and traditional medicine in contemporary India will depend on the country's ability to safeguard their philosophical depth while subjecting them to transparent, rigorous scrutiny. Neither dogmatic revivalism nor dismissive scientism will suffice. What is needed is a dialogical framework where tradition and modernity coevolve—not in opposition, but in mutual enrichment What tension does the passage highlight regarding the global adoption of Yoga?",
+    "option_a": "Lack of flexibility",
+    "option_b": "Loss of its philosophical essence",
+    "option_c": "Shortage of teachers",
+    "option_d": "Over-regulation by India",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 92,
+    "question_text": "Which of the following best reflects the Ayurvedic approach to disease?",
+    "option_a": "Eradicating bacteria via antibiotics",
+    "option_b": "Using synthetic drugs for immediate relief",
+    "option_c": "Restoring internal bodily balance through lifestyle",
+    "option_d": "Targeting genetic mutations",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 93,
+    "question_text": "What is a potential danger of state patronage of AYUSH systems, as per the passage?",
+    "option_a": "High cost of medicine",
+    "option_b": "Increased rural unemployment",
+    "option_c": "Marginalization of traditional knowledge holders",
+    "option_d": "Overdependence on foreign investment",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 94,
+    "question_text": "What stance does the author take on integrating traditional medicine with modern healthcare?",
+    "option_a": "Traditional medicine must replace allopathy",
+    "option_b": "Modern science is superior to traditional systems",
+    "option_c": "Integration is possible with humility and standards",
+    "option_d": "The two should remain completely separate",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 95,
+    "question_text": "According to the passage, what is required for the survival and relevance of Yoga and traditional medicine in modern India?",
+    "option_a": "Blind national pride",
+    "option_b": "Scientific rejection of tradition",
+    "option_c": "Dialogical integration of ancient and modern systems",
+    "option_d": "Exclusive use of foreign validation techniques",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 96,
+    "question_text": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. He said to me, \"You should work harder.\"",
+    "option_a": "He said me that I should work harder.",
+    "option_b": "He told me that I should work harder.",
+    "option_c": "He told me that you should work harder.",
+    "option_d": "He told that I should work harder.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 97,
+    "question_text": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. The scientist said, \"We have been working on this project for months.\"",
+    "option_a": "The scientist said they had been working on that project for months.",
+    "option_b": "The scientist said they have been working on this project for months.",
+    "option_c": "The scientist said that they were working on that project.",
+    "option_d": "The scientist said that we had worked on this project.",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 98,
+    "question_text": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The diplomat said that only after the ceasefire would negotiations begin.",
+    "option_a": "\"Negotiations begin only after the ceasefire,\" said the diplomat.",
+    "option_b": "\"Only after the ceasefire, negotiations would begin,\" said the diplomat.",
+    "option_c": "\"Only after the ceasefire will negotiations begin,\" said the diplomat.",
+    "option_d": "\"Negotiations would begin once the ceasefire is announced,\" said the diplomat.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 99,
+    "question_text": "Rearrange the following sentences in correct order to make a logical passage. 1. The blueprint is finalized after approval from stakeholders. 2. First, a basic framework is proposed. 3. Then revisions are made after discussions. 4. Finally, execution begins as per plan.",
+    "option_a": "2-3-1-4",
+    "option_b": "1-3-2-4",
+    "option_c": "3-2-1-4",
+    "option_d": "2-1-3-4",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 100,
+    "question_text": "Rearrange the following sentences to form a coherent paragraph: 1. A central tenet of this approach is the concept of a \"class,\" which acts as a blueprint for creating objects. 2. Object-Oriented Programming (OOP) is a programming paradigm based on the concept of \"objects,\" which can contain data and code. 3. This allows a programmer to specify the structure and behavior of an object-oriented program. 4. The key advantage of this approach is that it models real-world entities, making complex systems easier to manage and debug.",
+    "option_a": "2, 1, 3, 4",
+    "option_b": "4, 3, 2, 1",
+    "option_c": "3, 1, 4, 2",
+    "option_d": "1, 2, 3, 4",
+    "correct_answer": "A"
+  }
+]

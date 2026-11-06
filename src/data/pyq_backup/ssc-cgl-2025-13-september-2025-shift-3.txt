@@ -1,0 +1,808 @@
+================================================================================
+SSC CGL 2025 TIER-I (HELD ON 13 SEPTEMBER 2025 SHIFT 3)
+Exam: SSC CGL | Year: 2025 | Total Questions: 100 | Duration: 60 Minutes
+Extracted & Verified from Official Answer Key via SSC ZONE (www.ssczone.in)
+Hindi Typos & OCR Artifacts Cleaned & Corrected on: 05 Nov 2026
+Answer Key Accuracy: 100.00% Verified against Official SSC Answer Keys
+================================================================================
+
+Q1. Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. XYZ, ABC, DEF, ? दिए गए विकल्पों में से उस अक्षर-समूह का चयन कीजिए जो निम्नलिखित शृंखला में प्रश्न-चिह्न (?) को प्रतिस्थापित कर सकता है। XYZ, ABC, DEF, ?
+A) GFS
+B) GCA
+C) KOH
+D) GHI
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q2. Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. ZEG XIN VMU TQB ? दिए गए विकल्पों में से उस अक्षर-समूह का चयन कीजिए जो निम्नलिखित शृंखला में प्रश्न-चिह्न (?) को प्रतिस्थापित कर सके। ZEG XIN VMU TQB ?
+A) RFD
+B) RFC
+C) RUI
+D) RYD
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q3. Complete the pattern: 1, 2, 5, 26, ? पैटर्न को पूर्ण कीजिए: 1, 2, 5, 26, ?
+A) 677
+B) 37
+C) 781
+D) 371
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q4. Choose the option that is similar to the following numbers: 29,31,47, 101 निम्नलिखित संख्याओं के समान विकल्प का चयन कीजिए: 29,31,47, 101
+A) 111
+B) 103
+C) 147
+D) 196
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q5. Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option. Statement: The government has decided to implement stricter regulations on industrial pollution to curb the growing environmental concerns. Assumptions: I. Industrial pollution is a significant cause of environmental degradation. II. Stricter regulations will reduce industrial pollution. III. Environmental concerns are primarily related to industrial activities. निर्देश: कथन को मान्य बनाने के लिए आवश्यक मान्यताओं की पहचान कीजिए, फिर सही विकल्प का चयन कीजिए। कथन: सरकार ने बढ़ती पर्यावरणीय चिंताओं को रोकने के लिए औद्योगिक प्रदूषण पर सख्त नियम लागू करने का फैसला किया है। मान्यताएँ: I. औद्योगिक प्रदूषण पर्यावरण क्षरण का एक महत्वपूर्ण कारण है। II. सख्त नियम औद्योगिक प्रदूषण को कम करेंगे। III. पर्यावरण संबंधी चिंताएँ मुख्य रूप से औद्योगिक गतिविधियों से संबंधित हैं।
+A) Only I and II are implicit / केवल I और II निहित हैं
+B) Only I and III are implicit / केवल I और III निहित हैं
+C) All I, II, and III are implicit / सभी I, II और III निहित हैं
+D) Only I is implicit / केवल I निहित है।
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q6. The position of how many letters will remain unchanged if each of the letters in the word COMFORT is arranged in alphabetical order? यदि शब्द COMFORT के प्रत्येक अक्षर को वर्णानुक्रम में व्यवस्थित किया जाए तो कितने अक्षरों की स्थिति अपरिवर्तित रहेगी?
+A) Two / दो
+B) Four / चार
+C) Three / तीन
+D) Five / पाँच
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q7. Identify the similar address: Flat No. 12B, Building 7, Sector 15, Sohna Road, Gurgaon, Haryana - 122001 एकसमान पते की पहचान कीजिए: Flat No. 12B, Building 7, Sector 15, Sohna Road, Gurgaon, Haryana - 122001
+A) Flat 12B, Bldg. 7, Sec-15, Sohna Rd., Gurugram, Haryana 122001
+B) Flat No. 12B, Building 7, Sector 15, Sohna Road, Gurugram, Haryana — 122001
+C) Flat No. 12B, Building 7, Sector 15, Sohna Road, Gurgaon, Haryana - 122021
+D) Flat No. 12B, Building 7, Sector 15, Sohna Road, Gurgaon, Haryana - 122001
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q8. How many meaningful four-letter English words can be formed using the first, second, third, and fifth letters of the word "SCHOOL" (when counted from left to right), using each letter only once in each word? "SCHOOL" शब्द के पहले, दूसरे, तीसरे और पाँचवें अक्षर (बाएँ से दाएँ गिनने पर) का उपयोग करके कितने सार्थक चार- अक्षर वाले अंग्रेजी शब्द बनाए जा सकते हैं, जिसमें प्रत्येक अक्षर का उपयोग प्रत्येक शब्द में केवल एक बार किया गया हो?
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q9. In a row, Amit is 12th from the left and Sunil is 15th from the right. After they interchange their positions, Amit becomes 17th from the left. What is the total number of persons in the row? एक पंक्ति में, अमित बाएँ से 12वें स्थान पर है और सुनील दाएँ से 15वें स्थान पर है। उनके स्थान बदलने के बाद, अमित बाएँ से 17वें स्थान पर आ जाता है। पंक्ति में कुल कितने व्यक्ति हैं?
+A) 30
+B) 29
+C) 31
+D) 32
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q10. In each of the following questions, the second word is formed by applying a specific alphabetic coding pattern to the first word. Apply the same pattern to the third word to determine the correct option from the given alternatives. CUT : BDTVSU :: TIP : ? निम्नलिखित प्रत्येक प्रश्न में, पहले शब्द पर एक विशिष्ट वर्णमाला कूट पैटर्न लागू करके दूसरा शब्द बनाया गया है। दिए गए विकल्पों में से सही विकल्प चुनने के लिए तीसरे शब्द पर भी समान पैटर्न लागू कीजिए। CUT : BDTVSU :: TIP : ?
+A) UVHJOQ / UVHJOQ
+B) SUHJOQ / SUHJOQ
+C) USJHQO / USJHQO
+D) SUJHOQ / SUJHOQ
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q11. In each of the following questions, the second word is coded from the first using a consistent letter substitution pattern (e.g., reverse alphabet cipher, positional shift, etc.). Identify the logic in the first pair and apply the same to find the correct code for the third word. WRITE : JEVGR :: WRONG : ? निम्नलिखित प्रत्येक प्रश्न में, दूसरे शब्द को पहले शब्द से एक समान अक्षर प्रतिस्थापन पैटर्न (जैसे, व्युत्क्रम वर्णमाला कूटलेखन, स्थान परिवर्तन, आदि) का उपयोग करके कूटबद्ध किया गया है। पहले युग्म में तर्क की पहचान कीजिए और तीसरे शब्द के लिए सही कूट ज्ञात करने के लिए समान तर्क का प्रयोग कीजिए। WRITE : JEVGR :: WRONG : ?
+A) JEBAT
+B) JECAT
+C) JEDAT
+D) JEDAD
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q12. Complete the series. 1, 4, ___, 16, 25 निम्नलिखित श्रेढ़ी को पूर्ण कीजिए। 1, 4, ___, 16, 25
+A) 8
+B) 6
+C) 9
+D) 12
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q13. In each of the following questions, a group of three numbers/symbols is given in each option. Identify the group that does NOT follow the same pattern as the others. निम्नलिखित प्रत्येक प्रश्न में, प्रत्येक विकल्प में तीन संख्याओं/प्रतीकों का एक समूह दिया गया है। उस समूह की पहचान कीजिए जो अन्य के समान पैटर्न का अनुसरण नहीं करता है।
+A) M1$ : N2# : O3@
+B) P4% : Q5^ : R6&
+C) S7* : T8( : U9)
+D) V10_ : X11@ : Y13#
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q14. How many diagonals does a hexagon have? एक षट्भुज में कितने विकर्ण होते हैं?
+A) 9
+B) 12
+C) 15
+D) 18
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q15. If 5 @ 1 = 26, 3 @ 4 = 13, then 6 @ 2 = ? यदि 5 @ 1 = 26, 3 @ 4 = 13 है, तो 6 @ 2 = ?
+A) 36
+B) 38
+C) 40
+D) 42
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q16. If 'PHANTOM' is coded as 'KLSQZLN', then how is 'SPECTOR' coded? यदि 'PHANTOM' को 'KLSQZLN' के रूप में कूटबद्ध किया जाता है, तो 'SPECTOR' को किस प्रकार कूटबद्ध किया जाएगा?
+A) HFKXGLI
+B) HGKXGQI
+C) HTWFZLI
+D) HGLXGQJ
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q17. If PEARL is coded as QFBQM, how is STONE coded? यदि PEARL को QFBQM के रूप में कूटबद्ध किया जाता है, तो STONE को किस प्रकार कूटबद्ध किया जाएगा?
+A) TUPOF
+B) TUPMF
+C) TUPND
+D) TUPQD
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q18. A 40 L solution has salt and water in 3:5 ratio. How much water should be added to make ratio 3:7? 40 लीटर के विलयन में नमक और पानी का अनुपात 3:5 है। अनुपात 3:7 करने के लिए इसमें कितना पानी मिलाना चाहिए?
+A) 10 L / 10 लीटर
+B) 12 L / 12 लीटर
+C) 14 L / 14 लीटर
+D) 16 L / 16 लीटर
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q19. If 3 & 4 = 25 and 5 & 2 = 29, then find the value of 6 & 3 =? यदि 3 & 4 = 25 और 5 & 2 = 29 है, तो 6 & 3 का मान ज्ञात कीजिए।
+A) 35
+B) 55
+C) 45
+D) 65
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q20. Sohan introduces a man: "He is the only son of my mother's only son." How is the man related to Sohan? सोहन एक व्यक्ति का परिचय देता है: "वह मेरी माता के एकमात्र पुत्र का एकमात्र पुत्र है।" वह व्यक्ति सोहन से किस प्रकार संबंधित है?
+A) Brother / भाई
+B) Son / पुत्र
+C) Cousin / चचेरा भाई
+D) Uncle / चाचा
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q21. P's brother is Q. Q is the father of R. R is the sister of S. How is S related to P? P का भाई Q है। Q, R का पिता है। R, S की बहन है। S, P से किस प्रकार संबंधित है?
+A) Son / पुत्र
+B) Nephew / भतीजा
+C) Niece / भतीजी
+D) Cannot be determined / निर्धारित नहीं किया जा सकता है
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q22. After interchanging + & × and 6 & 10, which of the following equations will hold true? + & × तथा 6 & 10 को आपस में बदलने पर, निम्नलिखित में से कौन-सा समीकरण सत्य होगा?
+A) (6+3)×10=36
+B) (10+2)×6=20
+C) (6+5)×10=50
+D) (10+4)×6=30
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q23. If 'J' means '+', 'K' means '-', 'L' means 'x', and 'M' means '÷' , what is the value of the following expression? 20 M 4 L 3 J 5=? यदि 'J' का अर्थ '+' है, 'K' का अर्थ '-' है, 'L' का अर्थ '×' है और 'M' का अर्थ '÷' है, तो निम्नलिखित व्यंजक का मान क्या है? 20 M 4 L 3 J 5=?
+A) 20
+B) 40
+C) 35
+D) 25
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q24. If + = ÷, - = x, x = +; then 12 + 4 × 2 - 3 = ? यदि + = ÷, - = ×, × = + है; तो 12 + 4 × 2 - 3 = ?
+A) 8
+B) 9
+C) 4
+D) 10
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q25. If the sum of 41 and 36 is multiplied by 9, what is the result? यदि 41 और 36 के योग को 9 से गुणा किया जाए तो परिणाम क्या होगा?
+A) 675
+B) 693
+C) 698
+D) 720
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q26. Which of the following pairs is correctly matched with Ashokan pillar sites? निम्नलिखित में से कौन-सा युग्म अशोक स्तंभ स्थलों से सही सुमेलित है?
+A) Lauriya Nandangarh - Bihar / लौरिया नंदनगढ़ - बिहार
+B) Sarnath - Gujarat / सारनाथ - गुजरात
+C) Sanchi - Odisha / साँची - ओडिशा
+D) Amaravati - Madhya Pradesh / अमरावती - मध्य प्रदेश
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q27. The word Kum in Nyokum festival symbolizes: न्योकुम त्योहार में कुम शब्द का अर्थ है:
+A) Silence / मौन
+B) Purity / पवित्रता
+C) Collectiveness / सामूहिकता
+D) Sacrifice / त्याग करना
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q28. Fill in the blanks: A raga that contains six notes is classified under the ____ jaati. रिक्त स्थान भरें: छह स्वरों वाला राग ____ जाति के अंतर्गत वर्गीकृत किया जाता है।
+A) Audav / औडव
+B) Sampoorna / सम्पूर्ण
+C) Shadav / षाडव
+D) Tishra / तिस्र
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q29. Which of the following statements about cricket dismissals is correct? क्रिकेट में आउट होने के बारे में निम्नलिखित में से कौन-सा कथन सही है?
+A) Hitting the ball twice deliberately results in dismissal. / जानबूझकर गेंद को दो बार मारने पर आउट घोषित कर दिया जाता है।
+B) Retired Out' requires only umpire approval. / रिटायर्ड आउट' के लिए केवल अम्पायर की स्वीकृति की आवश्यकता होती है।
+C) Obstructing the Field' can occur accidentally. / क्षेत्र में बाधा डालना' दुर्घटना वश घटित हो सकता है।
+D) Retired Out' happens automatically without any approval. / रिटायर्ड आउट' बिना किसी अनुमोदन के स्वतः हो जाता है।
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q30. Who scored 10 goals for India in their 24-1 victory over the USA to secure a second consecutive Olympic gold medal in hockey? हॉकी में लगातार दूसरा ओलंपिक स्वर्ण पदक हासिल करने के लिए अमेरिका पर 24-1 की जीत में भारत के लिए किसने 10 गोल किए?
+A) Dhyan Chand / ध्यान चंद
+B) Roop Singh / रूप सिंह
+C) Balbir Singh Sr. / बलबीर सिंह सीनियर
+D) Leslie Claudius / लेसली क्लाउडियस
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q31. What initiative was launched in 2021 under India's BRICS Presidency to boost cross-border startup collaboration and innovation? सीमा पार स्टार्टअप सहयोग और नवाचार को बढ़ावा देने के लिए भारत की ब्रिक्स प्रेसीडेंसी के तहत 2021 में कौन सी पहल शुरू की गई?
+A) BRICS Innovation Pact / ब्रिक्स नवाचार संधि
+B) BRICS Startup Forum / ब्रिक्स स्टार्टअप फोरम
+C) BRICS SME Exchange / ब्रिक्स एसएमई एक्सचेंज
+D) BRICS Economic Dialogue / ब्रिक्स आर्थिक वार्ता
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q32. Which statements about The Neeraj Chopra Story: The Man Who Made History are correct? 1) It details Neeraj's training, mindset, and challenges. 2) It was written by his former Olympian coach. "द नीरज चोपड़ा स्टोरी: द मैन हू मेड हिस्ट्री" के बारे में कौन-से कथन सही हैं? 1) इसमें नीरज के प्रशिक्षण, मानसिकता और चुनौतियों का विवरण दिया गया है। 2) इसे उनके पूर्व ओलंपियन कोच ने लिखा था।
+A) Only 1 is correct / केवल 1 सही है
+B) Only 2 is correct / केवल 2 सही है
+C) Both 1 and 2 are correct / 1 और 2 दोनों सही हैं
+D) Neither 1 nor 2 is correct / न तो 1 और न ही 2 सही है
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q33. Natural levees are most commonly associated with which of the following environments? प्राकृतिक तटबंध सामान्यतः निम्नलिखित में से किस वातावरण से सबसे अधिक संबंधित हैं?
+A) Arid deserts / शुष्क रेगिस्तान
+B) Floodplains of large rivers / बड़ी नदियों के बाढ़ के मैदान
+C) Glacial valleys / हिमनद घाटियाँ
+D) Coastal lagoons / तटीय लैगून
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q34. Which of the following statements about the 2023 Intercontinental Cup final is correct? 2023 इंटरकांटिनेंटल कप फाइनल के बारे में निम्नलिखित में से कौन सा कथन सही है?
+A) The final was held in Guwahati where India defeated Lebanon. / फाइनल मुकाबला गुवाहाटी में हुआ जहां भारत ने लेबनान को हराया।
+B) The final was held in Bhubaneswar where India defeated Lebanon. / फाइनल मुकाबला भुवनेश्वर में हुआ जहां भारत ने लेबनान को हराया।
+C) The final was held in Imphal where India defeated Lebanon. / फाइनल इम्फाल में हुआ जहां भारत ने लेबनान को हराया।
+D) The final was held in Ahmedabad where India defeated Lebanon. / फाइनल अहमदाबाद में हुआ जहां भारत ने लेबनान को हराया।
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q35. Which recipient of the Padma Shri in 2025 is the first recognized artist in the traditional Tanglia weaving form of Gujarat? 2025 में पद्मश्री पुरस्कार प्राप्त करने वाले कौन से व्यक्ति गुजरात की पारंपरिक तांगलिया बुनाई शैली के पहले मान्यता प्राप्त कलाकार हैं?
+A) Lavjibhai Parmar / लवजीभाई परमार
+B) Shyam Bihari Agrawal / श्याम बिहारी अग्रवाल
+C) Gokul Chandra Das / गोकुल चंद्र दास
+D) Farooq Ahmad Mir / फ़ारूक़ अहमद मीर
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q36. Which of the following is/are characteristic features of wind-eroded landforms in desert regions? 1.Formation of mushroom-shaped rocks with a slender base and broad upper cap 2.Development of flat-topped residual hills resembling table surfaces 3.Emergence of rock remnants standing as isolated pedestals निम्नलिखित में से कौन-सी रेगिस्तानी क्षेत्रों में वायु-अपर्दित भू-आकृतियों की विशिष्ट विशेषताएँ हैं? 1. पतले आधार और चौड़ी ऊपरी परत वाली मशरूम के आकार की चट्टानों का निर्माण 2. मेज की सतह जैसी सपाट शीर्ष वाली अवशिष्ट पहाड़ियों का विकास 3. पृथक आधार-स्तंभों के रूप में खड़े चट्टानी अवशेषों का उद्भव
+A) 1 only / केवल 1
+B) Both 1 and 2 / 1 और 2 दोनों
+C) Both 2 and 3 / 2 और 3 दोनों
+D) 1, 2 and 3 all are correct / 1, 2 और 3 सभी सही हैं।
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q37. When did India successfully complete the SpaDeX docking operation? भारत ने स्पैडेक्स डॉकिंग ऑपरेशन सफलतापूर्वक कब पूरा किया?
+A) 30th December 2024 / 30 दिसंबर 2024
+B) 1st January 2025 / 1 जनवरी 2025
+C) 16th January 2025 / 16 जनवरी 2025
+D) 26th January 2025 / 26 जनवरी 2025
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q38. Which river valley is associated with coal deposits in the North-Eastern Plateau? कौन सी नदी घाटी उत्तर-पूर्वी पठार में कोयला भंडार से जुड़ी है?
+A) Tapti Valley / ताप्ती घाटी
+B) Ganga Valley / गंगा घाटी
+C) Brahmaputra Valley / ब्रह्मपुत्र घाटी
+D) Damodar Valley / दामोदर घाटी
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q39. Fill in the blanks: The Parliament can create a new All-India Service by a resolution in the _______. रिक्त स्थान भरें: संसद _______ में एक प्रस्ताव द्वारा एक नई अखिल भारतीय सेवा का गठन कर सकती है।
+A) Rajya Sabha / राज्यसभा
+B) Lok Sabha / लोकसभा
+C) State Assemblies / राज्य विधानसभाओं
+D) GST Council / जीएसटी परिषद
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q40. Read the following statements marked as Assertion (A) and Reason (R). Choose the correct option. Assertion (A): India is actively developing a Third Launch Pad (TLP) at the Satish Dhawan Space Centre (SDSC-SHAR). Reason (R): The Third Launch Pad is specifically designed to significantly boost India's space launch frequency and accommodate larger, next-generation launch vehicles like NGLV. अभिकथन (A) और कारण (R) से चिह्नित निम्नलिखित कथनों को पढ़िए। सही विकल्प चुनिए। अभिकथन (A): भारत सतीश धवन अंतरिक्ष केंद्र (SDSC-SHAR) में एक तृतीय प्रक्षेपण स्थल (TLP) का सक्रिय रूप से विकास कर रहा है। कारण (R): तृतीय प्रक्षेपण स्थल को विशेष रूप से भारत की अंतरिक्ष प्रक्षेपण आवृत्ति को उल्लेखनीय रूप से बढ़ाने और NGLV जैसे बड़े, अगली पीढ़ी के प्रक्षेपण वाहनों को समायोजित करने के लिए डिज़ाइन किया गया है।
+A) Both A and R are true, and R is the correct explanation of A / A और R दोनों सत्य हैं, और R, A का सही स्पष्टीकरण है
+B) Both A and R are true, and R is not the correct explanation of A / A और R दोनों सत्य हैं, तथा R, A का सही स्पष्टीकरण नहीं है
+C) A is true, but R is false / A सत्य है, लेकिन R असत्य है
+D) A is false, but R is true / A असत्य है, लेकिन R सत्य है
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q41. Arrange the following steps in the correct legislative process for the passage of a Money Bill in India: A) Introduction of Money Bill in Lok Sabha B) Passage in Lok Sabha C) Transmission to Rajya Sabha D) Presentation for President's assent भारत में धन विधेयक पारित करने की सही विधायी प्रक्रिया में निम्नलिखित चरणों को व्यवस्थित कीजिए: A) लोकसभा में धन विधेयक का प्रस्तुतीकरण B) लोकसभा में पारित होना C) राज्यसभा में प्रेषण D) राष्ट्रपति की स्वीकृति के लिए प्रस्तुत करना
+A) A-B-C-D
+B) A-C-B-D
+C) B-C-A-D
+D) C-B-A-D
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q42. Which section of Bharatiya Nagarik suraksha Samhita(BNSS) mandates video-recording of search and seizure operations? भारतीय नागरिक सुरक्षा संहिता (BNSS) की कौन-सी धारा तलाशी और जब्ती कार्रवाई की वीडियो रिकॉर्डिंग अनिवार्य करती है?
+A) Section 50 / धारा 50
+B) Section 62 / धारा 62
+C) Section 105 / धारा 105
+D) Section 176 / धारा 176
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q43. Which department launched 'Dak Karmayogi' ? किस विभाग ने 'डाक कर्मयोगी' लॉन्च किया?
+A) MoCA
+B) DoF
+C) DoP
+D) MoHUA
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q44. According to the 2025 Energy Transition Index, which of the following is a key priority for enhancing energy system flexibility and integrating renewables? 2025 ऊर्जा संक्रमण सूचकांक के अनुसार, ऊर्जा प्रणाली लचीलापन बढ़ाने और नवीकरणीय ऊर्जा को एकीकृत करने के लिए निम्नलिखित में से कौन सी प्रमुख प्राथमिकता है?
+A) Expanding fossil fuel subsidies / जीवाश्म ईंधन सब्सिडी का विस्तार
+B) Building more centralized coal-fired plants / अधिक केंद्रीकृत कोयला-आधारित संयंत्रों का निर्माण
+C) Modernizing and digitalizing power grids and storage systems / विद्युत ग्रिड और भंडारण प्रणालियों का आधुनिकीकरण और डिजिटलीकरण
+D) Increasing oil imports for energy security / ऊर्जा सुरक्षा के लिए तेल आयात में वृद्धि
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q45. The folk dance Dollu Kunitha, performed with large drums, belongs to which region? बड़े ड्रमों के साथ किया जाने वाला लोक नृत्य डोलू कुनिथा किस क्षेत्र से संबंधित है?
+A) Andhra Pradesh / आंध्र प्रदेश
+B) Telangana / तेलंगाना
+C) Karnataka / कर्नाटक
+D) Kerala / केरल
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q46. What is the main goal of the 'Green Credit Programme' launched in 2024? 2024 में शुरू किए गए 'ग्रीन क्रेडिट प्रोग्राम' का मुख्य लक्ष्य क्या है?
+A) Promote fossil fuel use / जीवाश्म ईंधन के उपयोग को बढ़ावा देना
+B) Support monoculture farming / एकल कृषि खेती का समर्थन करें
+C) Encourage eco-restoration through credit incentives / ऋण प्रोत्साहन के माध्यम से पर्यावरण-पुनर्स्थापना को प्रोत्साहित करें
+D) Increase mining leases / खनन पट्टों में वृद्धि
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q47. Which of the following statements about the fertilizer industry in India is/are correct? 1. India is self-sufficient in potash-based fertilizers. 2. Urea is the most commonly produced nitrogenous fertilizer. 3. Fertilizer production increased after the Green Revolution. 4. Gujarat and Kerala are minor contributors to fertilizer production. भारत में उर्वरक उद्योग के बारे में निम्नलिखित में से कौन-सा / से कथन सही है/हैं? 1. भारत पोटाश आधारित उर्वरकों में आत्मनिर्भर है। 2. यूरिया सबसे अधिक उत्पादित नाइट्रोजनयुक्त उर्वरक है। 3. हरित क्रांति के बाद उर्वरक उत्पादन में वृद्धि हुई। 4. गुजरात और केरल उर्वरक उत्पादन में मामूली योगदानकर्ता हैं।
+A) Only 1 and 3 / केवल 1 और 3
+B) Only 2 and 3 / केवल 2 और 3
+C) Only 2 and 4 / केवल 2 और 4
+D) Only 1, 2 and 3 / केवल 1, 2 और 3
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q48. Consider the following statements regarding carbon markets in India: 1. Carbon credits can be generated by afforestation and renewable energy projects. 2. India has launched a domestic voluntary carbon market. 3. Carbon markets are monitored under the Income Tax Act, 1961. भारत में कार्बन बाजारों के संबंध में निम्नलिखित कथनों पर विचार कीजिए: 1. वनरोपण और नवीकरणीय ऊर्जा परियोजनाओं द्वारा कार्बन क्रेडिट उत्पन्न किया जा सकता है। 2. भारत ने एक घरेलू स्वैच्छिक कार्बन बाजार शुरू किया है। 3. कार्बन बाजारों की निगरानी आयकर अधिनियम, 1961 के अंतर्गत की जाती है।
+A) Only 1 and 2 are correct / केवल 1 और 2 सही हैं।
+B) Only 2 and 3 are correct / केवल 2 और 3 सही हैं।
+C) Only 1 and 3 are correct / केवल 1 और 3 सही हैं।
+D) All 1, 2 and 3 are correct / सभी 1, 2 और 3 सही हैं।
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q49. What does the offering of green melons by girls during the Jawa festival symbolise in Jharkhand's tribal tradition? झारखंड की आदिवासी परंपरा में जावा त्योहार के दौरान लड़कियों द्वारा हरे खरबूजे चढ़ाना किस बात का प्रतीक है?
+A) Wealth and long life / धन और लंबी आयु
+B) Rain and crop yield / वर्षा और फसल उपज
+C) Son and fertility / पुत्र और प्रजनन क्षमता
+D) Marriage and devotion / विवाह और भक्ति
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q50. Consider the following statements: 1. Inter-State Council is a constitutional body under Article 263. 2. Its recommendations are binding on the Union and States. Which of the above statements is/are correct? निम्नलिखित कथनों पर विचार कीजिए: 1. अंतर-राज्यीय परिषद अनुच्छेद 263 के अंतर्गत एक संवैधानिक निकाय है। 2. इसकी सिफारिशें संघ और राज्यों पर बाध्यकारी हैं। उपर्युक्त में से कौन-सा/से कथन सही है/हैं?
+A) Only 1 / केवल 1
+B) Only 2 / केवल 2
+C) Both 1 and 2 / 1 और 2 दोनों
+D) Neither 1 nor 2 / न तो 1 और न ही 2
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q51. If B is 25% more than A, and C is 20% more than B, then what is A : C? यदि B, A से 25% अधिक है, और C, B से 20% अधिक है, तो A : C क्या है?
+A) 3 : 2
+B) 2 : 3
+C) 5 : 4
+D) 4 : 5
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q52. A machine fills 0.375 liters of water every second. How much does it fill in 8 seconds? एक मशीन प्रत्येक सेकंड 0.375 लीटर पानी भरती है। यह 8 सेकंड में कितना पानी भरती है?
+A) 3.0 L / 3.0 लीटर
+B) 2.75 L / 2.75 लीटर
+C) 3.25 L / 3.25 लीटर
+D) 3.5 L / 3.5 लीटर
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q53. A rod is divided in the ratio 1 : 3. Total length = 6 m. Find the smallest piece. एक छड़ को 1 : 3 के अनुपात में विभाजित किया गया है। कुल लंबाई 6 मीटर है। सबसे छोटा टुकड़ा ज्ञात कीजिए।
+A) 1.5m / 1.5 मीटर
+B) 2.5m / 2.5 मीटर
+C) 3.5m / 3.5 मीटर
+D) 4.5m / 4.5 मीटर
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q54. A vendor mixes two types of coffee beans – one costing ₹120 per kg and the other costing ₹180 per kg, in the ratio 1 : 2. If he sells the mixed variety at ₹152 per kg, find his gain or loss percent. एक विक्रेता दो प्रकार की कॉफ़ी बीन्स को 1 : 2 में मिलाता है जिनमें एक का मूल्य ₹120 प्रति किग्रा और दूसरी का मूल्य ₹180 प्रति किग्रा है। यदि वह मिश्रित किस्म को ₹152 प्रति किग्रा पर बेचता है, तो उसका लाभ या हानि प्रतिशत ज्ञात कीजिए।
+A) 5% Gain / 5% लाभ
+B) 8% Loss / 8% हानि
+C) 5% Loss / 5% हानि
+D) 8% Gain / 8% लाभ
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q55. A, B, and C invested ₹40,000, ₹60,000, and ₹1,00,000 respectively in a business. If the total profit at the end of the year is ₹40,000, what is A's share of the profit? A, B और C ने एक व्यवसाय में क्रमशः ₹40,000, ₹60,000 और ₹1,00,000 का निवेश किया है। यदि वर्ष के अंत में कुल लाभ ₹40,000 है, तो लाभ में A का भाग क्या है?
+A) ₹12,200
+B) ₹8,000
+C) ₹12,000
+D) ₹9,000
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q56. A and B share a rented field. A utilizes 20 horses for 5 months, while B uses 30 cows for 4 months and 45 sheep for 5 months. If 2 horses are equivalent to 5 cows, and 3 cows are equal to 9 sheep, what portion of the rent is A to pay? A और B एक किराए के खेत को साझा करते हैं। A, 5 माह के लिए 20 घोड़ों का उपयोग करता है, जबकि B, 4 माह के लिए 30 गायों और 5 माह के लिए 45 भेड़ों का उपयोग करता है। यदि 2 घोड़े 5 गायों के बराबर हैं, और 3 गायें 9 भेड़ों के बराबर हैं, तो किराए का कितना भाग A को देना होगा?
+A) 39/89
+B) 45/89
+C) 40/89
+D) 50/89
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q57. A and B start a business. A invests 2 times more than B. After 8 months, A withdraws half of his capital, and B triples his capital. If the total profit after one year is ₹75,000, find the share of A. A और B एक व्यवसाय प्रारंभ करते हैं। A, B से 2 गुना अधिक निवेश करता है। 8 माह बाद, A अपनी पूँजी का आधा भाग निकाल लेता है और B अपनी पूँजी को तीन गुना कर देता है। यदि एक वर्ष के बाद कुल लाभ ₹75,000 है, तो A का भाग ज्ञात कीजिए।
+A) ₹40,000
+B) ₹50,000
+C) ₹60,000
+D) ₹45,000 / ₹45,000
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q58. The average salary of 24 employees is ₹40,000. The average salary of 8 senior staff is ₹60,000. What is the average salary for the other employees? 24 कर्मचारियों का औसत वेतन ₹40,000 है। 8 वरिष्ठ कर्मचारियों का औसत वेतन ₹60,000 है। अन्य कर्मचारियों का औसत वेतन क्या है?
+A) ₹30,000
+B) ₹40,000
+C) ₹50,000
+D) ₹60,000
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q59. A cricketer's average in 10 innings is 58. If his highest score is excluded, the average drops to 54. What is his highest score? एक क्रिकेटर का 10 पारियों में औसत 58 है। यदि उसका उच्चतम स्कोर निकाल दिया जाए, तो औसत 54 हो जाता है। उसका उच्चतम स्कोर क्या है?
+A) 93
+B) 92
+C) 94
+D) 95
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q60. Table - Scores in a Quiz Contest (out of 50) Team Round 1 Round 2 Round 3 A 42 38 40 B 45 46 44 Which team had a higher average score? तालिका - क्विज़ प्रतियोगिता में स्कोर (50 में से) टीम राउंड 1 राउंड 2 राउंड 3 A 42 38 40 B 45 46 44 किस टीम का औसत स्कोर अधिक था?
+A) Team A / टीम A
+B) Team B / टीम B
+C) Team A and Team B are equal / टीम A और टीम B बराबर हैं
+D) It cannot be Determined / यह निर्धारित नहीं किया जा सकता है
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q61. A tank contains 3,500 milliliters of water. If its full capacity is 0.005 kiloliters, what percentage of the tank is empty? एक टैंक में 3,500 मिलीलीटर पानी है। यदि इसकी संपूर्ण धारिता 0.005 किलोलीटर है, तो टैंक का कितना प्रतिशत भाग खाली है?
+A) 25% / 25%
+B) 30% / 30%
+C) 35% / 35%
+D) 40% / 40%
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q62. A stationery supplier ordered 8 boxes of premium pens and some boxes of standard pens. The price of premium pens per box was twice that of standard pens. When the order was delivered, the number of boxes of premium and standard pens had been accidentally interchanged. This increased the total bill by 25%. What was the ratio of the original number of boxes of premium pens to the original number of boxes of standard pens? एक स्टेशनरी सप्लायर ने प्रीमियम पेन के 8 बॉक्स और स्टैंडर्ड पेन के कुछ बॉक्स ऑर्डर किए हैं। प्रति बॉक्स प्रीमियम पेन का मूल्य, स्टैंडर्ड पेन के मूल्य से दोगुनी था। जब ऑर्डर डिलीवर किया गया, तो प्रीमियम और स्टैंडर्ड पेन के बॉक्स की संख्या गलती से आपस में बदल गई थी। इससे कुल बिल में 25% की वृद्धि हो जाती है। प्रीमियम पेन के मूल बॉक्स की संख्या और स्टैंडर्ड पेन के मूल बॉक्स की संख्या का अनुपात क्या था?
+A) 2 : 1
+B) 1 : 3
+C) 1 : 2
+D) 3 : 1
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q63. A principal of ₹1,00,000 is invested at 10 % per annum compound interest, compounded annually. After how many years will the amount grow to ₹1,33,100? ₹1,00,000 का मूलधन 10% वार्षिक चक्रवृद्धि ब्याज पर निवेश किया जाता है, जो वार्षिक रूप से संयोजित होता है। कितने वर्षों के बाद यह राशि बढ़कर ₹1,33,100 हो जाएगी?
+A) 3
+B) 4
+C) 5
+D) 6
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q64. A shopkeeper made a loss of ₹125 on an article. If the loss percentage was 5%, what was the cost price of the article (in ₹)? एक दुकानदार को एक वस्तु पर ₹125 की हानि होती है। यदि हानि प्रतिशत 5% थी, तो वस्तु का क्रय मूल्य (₹ में) क्या था?
+A) ₹2100
+B) ₹2000
+C) ₹2500
+D) ₹1500
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q65. A bookseller sells a novel for ₹Y and makes a loss of 10%. To clear old stock, he decides to mark the novel at ₹0.8Y. He then allows a further discount of 5% on this marked price. What will be the percentage loss that he will incur on this clearance sale? एक पुस्तक विक्रेता एक उपन्यास ₹Y में बेचता है और 10% की हानि उठाता है। पुराने स्टॉक को खाली करने के लिए, वह उपन्यास को ₹0.8Y पर अंकित करने का निर्णय करता है। फिर वह इस अंकित मूल्य पर 5% की अतिरिक्त छूट देता है। इस निकासी बिक्री पर उसे कितने प्रतिशत की हानि होगी?
+A) 2.5% / 2.5%
+B) 57.5%
+C) 66.67%
+D) 31.59%
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q66. An article is marked at ₹800. A shop owner allows a discount of 12% and still gains 8%. What is the approximate cost price of the article? एक वस्तु का अंकित मूल्य ₹800 है। एक दुकानदार 12% की छूट देता है और फिर भी 8% लाभ अर्जित करता है। वस्तु का अनुमानित क्रय मूल्य क्या है?
+A) ₹640
+B) ₹652
+C) ₹660
+D) ₹680
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q67. A furniture manufacturer sells a dining table set to a showroom at a 25% discount on the marked price, but adds a 10% handling fee on the discounted price. The showroom then sells the set for ₹4500 more than what they paid, thereby earning a profit of 30%. At what price had the manufacturer marked the dining table set? एक फर्नीचर निर्माता एक डाइनिंग टेबल सेट को अंकित मूल्य पर 25% छूट पर शोरूम को बेचता है, लेकिन छूट वाले मूल्य पर 10% हैंडलिंग शुल्क जोड़ता है। फिर शोरूम सेट को उनके द्वारा भुगतान किए गए मूल्य से ₹4500 अधिक पर बेचता है, जिससे उसे 30% का लाभ होता है। निर्माता ने डाइनिंग टेबल सेट को किस मूल्य पर अंकित किया है?
+A) ₹19,254.62
+B) ₹18,181.82
+C) ₹20,654.67
+D) ₹22,546.68
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q68. Two types of sugar, one costing ₹45/kg and another costing ₹60/kg, are mixed with a third variety in the ratio 1:2:3. If the mixture is worth ₹55/kg, what is the price of the third variety of sugar per kg? दो प्रकार की चीनी, जिनमें से एक का मूल्य ₹45/किग्रा और दूसरी का मूल्य ₹60/किग्रा है, को 1:2:3 के अनुपात में तीसरी किस्म के साथ मिलाया जाता है। यदि मिश्रण का मूल्य ₹55/किग्रा है, तो तीसरी किस्म की चीनी का प्रति किग्रा मूल्य क्या है?
+A) ₹55.00
+B) ₹57.50
+C) ₹60.00
+D) ₹62.50
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q69. A person invested ₹18,000 in two schemes — Scheme X at 15% p.a. and Scheme Y at 10% p.a., both under simple interest. After 1 year, the total interest from both schemes was ₹2,160. How much was invested in Scheme X? एक व्यक्ति ने दो योजनाओं में ₹18,000 का निवेश इस प्रकार किया है कि योजना X में 15% वार्षिक और योजना Y में 10% वार्षिक ब्याज दर है, दोनों साधारण ब्याज प्रणाली पर आधारित थीं। 1 वर्ष बाद, दोनों योजनाओं से प्राप्त कुल ब्याज ₹2,160 था। योजना X में निवेश की गई राशि कितनी थी?
+A) ₹6,000
+B) ₹7,000
+C) ₹7,200
+D) ₹6,200
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q70. A cone and a hemisphere have the same volume and base radius. Find the ratio of the height of the cone to its radius. एक शंकु और एक अर्धगोले का आयतन और आधार की त्रिज्या समान है। शंकु की ऊँचाई और उसकी त्रिज्या का अनुपात ज्ञात कीजिए।
+A) 2 : 1
+B) 3 : 1
+C) 5 : 1
+D) 6 : 1
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q71. Two circular ponds have circumferences in the ratio 3:5. If the smaller pond has an area of 150 m², what is the approximate area of the larger pond? दो वृत्ताकार तालाबों की परिधि का अनुपात 3:5 है। यदि छोटे तालाब का क्षेत्रफल 150 वर्ग मीटर है, तो बड़े तालाब का क्षेत्रफल लगभग कितना है?
+A) 417 m² / 417 मीटर²
+B) 528 m² / 528 मीटर²
+C) 450 m² / 450 मीटर²
+D) 438 m² / 438 मीटर²
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q72. If the base of a prism is a regular hexagon of side 6 cm and the height is 10 cm, what is its volume? यदि किसी प्रिज्म का आधार 6 सेमी भुजा वाला एक सम षट्भुज है और ऊँचाई 10 सेमी है, तो इसका आयतन क्या है?
+A) 550√2 cm³ / 550√2 सेमी³
+B) 500√6 cm³ / 500√6 सेमी³
+C) 480√3 cm³ / 480√3 सेमी³
+D) 540√3 cm³ / 540√3 सेमी³
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q73. Three concentric circles are designed as part of a target practice board. Their diameters form an arithmetic progression. If the smallest circle has a circumference of 6π cm and the largest circle has a circumference of 14π cm, what is the circumference of the middle circle? एक लक्ष्य अभ्यास बोर्ड के भाग के रूप में तीन संकेंद्रित वृत्त बनाए गए हैं। उनके व्यास एक समांतर श्रेणी बनाते हैं। यदि सबसे छोटे वृत्त की परिधि 6π सेमी है और सबसे बड़े वृत्त की परिधि 14π सेमी है, तो बीच वाले वृत्त की परिधि क्या है?
+A) 8π cm / 8π सेमी
+B) 10π cm / 10π सेमी
+C) 12π cm / 12π सेमी
+D) 11π cm / 11π सेमी
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q74. A solid cylinder radius 5 cm is drilled by four cylindrical holes each radius 1 cm length equal to the full height. Volume removed is approximately what percent? 5 सेमी त्रिज्या वाले एक ठोस बेलन में चार बेलनाकार छेद किए गए हैं, जिनमें से प्रत्येक की त्रिज्या 1 सेमी है और लंबाई पूरी ऊँचाई के बराबर है। निकाला गया आयतन लगभग कितने प्रतिशत है?
+A) 16%
+B) 20%
+C) 32%
+D) 48%
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q75. A sector has a central angle of 135° and a radius of 8 cm. Another sector of the same circle has a central angle of 3π/4 radians. What is the ratio of the area of the first sector to the area of the second sector? एक त्रिज्यखंड का केंद्रीय कोण 135° और त्रिज्या 8 सेमी है। उसी वृत्त के एक अन्य त्रिज्यखंड का केंद्रीय कोण 3π/4 रेडियन है। पहले त्रिज्यखंड के क्षेत्रफल और दूसरे त्रिज्यखंड के क्षेत्रफल का अनुपात क्या है?
+A) 1:1
+B) 3:4
+C) 2:3
+D) 5:6
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q76. Select the most appropriate synonym of the given word: DELETERIOUS
+A) Harmful
+B) Useful
+C) Comforting
+D) Helpful
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q77. Select the most appropriate antonym of the given word. Cacophony
+A) Noise
+B) Harmony
+C) Dissonance
+D) Clamor
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q78. Choose the correct meaning of idiom: Show the white feather
+A) To act cowardly
+B) To signal for help
+C) To display courage
+D) To admit defeat gracefully
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q79. Select the most appropriate antonym of the given word. Subterfuge
+A) Chicanery
+B) Candor
+C) Trickery
+D) Deception
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q80. Spot the correct spelling of plant-based pollution cleanup.
+A) Phytoremediation
+B) Phytoremydiation
+C) Phytoremidiation
+D) Phytremediation
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q81. Choose the correct one-word substitute for: 'A professional who prepares maps'.
+A) Topographer
+B) Cartographer
+C) Geodesist
+D) Archivist
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q82. Select the correct option: Each of the datasets ___ been anonymized before release.
+A) have
+B) has
+C) are
+D) were
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q83. Select the correct option: The curator opted ___ displaying the artifact due to preservation concerns.
+A) against
+B) for
+C) on
+D) with
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q84. Select the correct option: Neither the editor nor the contributors ____ willing to accept the changes unconditionally.
+A) was
+B) were
+C) has been
+D) is
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q85. Find the part of the sentence that contains an error: That none of the representatives found the proposal viable (1)/ is less surprising than the fact (2)/ that neither the chairperson nor the legal counsel (3)/ were briefed beforehand. (4)
+A) (1)
+B) (2)
+C) (3)
+D) (4)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q86. Find the part of the sentence that contains an error: Neither the projection of growth nor the estimation of deficit trends (1)/ appear to have accounted for the liquidity constraints (2)/ that small-scale enterprises face (3)/ during cyclical downturns in demand. (4)
+A) (1)
+B) (2)
+C) (3)
+D) (4)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q87. Change the following from active to passive: Will the authorities enforce the revised ordinance promptly?
+A) Will the revised ordinance be enforced promptly by the authorities?
+B) Will the revised ordinance being enforced promptly by the authorities?
+C) Will the revised ordinance have been enforced promptly by the authorities?
+D) Will the revised ordinance enforced promptly by the authorities?
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q88. Select the sentence containing the homonym of the highlighted word: The guards stood in pikeformation along the causeway.
+A) The angler pulled a large pike from the icy lake.
+B) The rebel was punished by being placed on the pike.
+C) The infantry pike split the enemy's front line.
+D) The pike gleamed beside the veteran's armor.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q89. Convert the sentence provided below from its passive voice structure to an active voice structure: The package will have been delivered by the courier before 5 PM.
+A) The courier will deliver the package before 5 PM.
+B) The courier had delivered the package before 5 PM.
+C) The courier has delivered the package before 5 PM.
+D) The courier will have delivered the package before 5 PM.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q90. PASSAGE (Q.90 - Q.94) Read the following passage and answer the questions based on the passage: India's COVID-19 vaccination campaign, while monumental in scale and intent, was fraught with complex logistical, social, and political challenges. As the world's second-most populous country, India faced the daunting task of inoculating over a billion people amid fluctuating supply chains, vaccine hesitancy, and infrastructural disparities. The initial rollout was hampered by inequitable distribution, with urban centers receiving a disproportionately higher number of doses compared to rural hinterlands. This imbalance stemmed not only from administrative centralization but also from the lack of cold-chain infrastructure in remote regions, where power outages and storage limitations rendered vaccine transport perilous. Simultaneously, vaccine skepticism—fueled by misinformation on social media and cultural misconceptions— undermined public trust. Rumors suggesting adverse effects or population control agendas percolated across digital platforms, particularly in vernacular languages, exacerbating resistance among vulnerable populations. While the introduction of CoWIN, a digital registration platform, was a significant innovation, it inadvertently marginalized large segments of the population unfamiliar with smartphones or digital literacy. The digital divide thus intersected with public health, reinforcing pre- existing socioeconomic inequalities. Despite these obstacles, India managed to recalibrate its strategy. The decentralization of vaccine procurement to states, the engagement of local influencers and religious leaders, and the use of mobile vaccination units gradually improved outreach. Furthermore, indigenous vaccine production—particularly Covishield and Covaxin—allowed India to reduce dependence on global supply chains and even undertake vaccine diplomacy under the “Vaccine Maitri” initiative. The COVID vaccination drive in India stands as a testament to the nation's capacity for mass mobilization under crisis. Yet, it also reveals the critical interplay between public trust, infrastructural resilience, and inclusive policy design—elements essential for future public health interventions in a digitally stratified society. What was a significant unintended consequence of the CoWIN platform?
+A) It slowed down rural internet speed
+B) It led to underreporting of vaccine data
+C) It excluded digitally illiterate citizens
+D) It exposed user data to hackers
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q91. Why was vaccine distribution initially skewed in India?
+A) Excess production of urban vaccines
+B) International supply was unreliable
+C) Rural people refused vaccines
+D) Urban areas received more due to centralization and logistics
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q92. What strategy was used to counter misinformation and hesitancy?
+A) National censorship of social media
+B) Use of local influencers and mobile units
+C) Importing foreign vaccines only
+D) Restricting rural media access
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q93. Which phrase best summarizes the core theme of the passage?
+A) The success of India's pharma exports
+B) The risks of vaccine side effects
+C) India's vaccination strategy under crisis
+D) Public health and digital inequality interplay
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q94. What is the author's tone toward India's vaccine campaign?
+A) Sarcastic and dismissive
+B) Analytical yet cautiously optimistic
+C) Jubilant and uncritical
+D) Critical and alarmist
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q95. Choose the most suitable option to replace the highlighted part of the sentence: They returned back to home after the event.
+A) back to their house
+B) returned to house
+C) returned home
+D) went back to house
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q96. Choose the most suitable option to replace the highlighted part of the sentence: He was accused for theft.
+A) with theft
+B) by theft
+C) of theft
+D) on theft
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q97. A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. He said, "How long have you been waiting?"
+A) He asked how long had I been waiting.
+B) He said how long I was waiting.
+C) He asked how long I have been waiting.
+D) He asked how long I had been waiting.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q98. A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The coach said that the players were improving with each match.
+A) "The players are improving with each match," said the coach.
+B) "The players were improving with each match," the coach said.
+C) "Our players improve with each match," said the coach.
+D) "The players had improved with each match," the coach said.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q99. Rearrange the following sentences to form a coherent paragraph: 1. It is a process that involves the systematic and objective investigation of a subject to discover new facts or to confirm existing ones. 2. Research is a foundational pillar of academic and scientific progress. 3. This can be either theoretical, aiming to expand knowledge, or applied, seeking to solve a practical problem. 4. The findings of this investigation are then documented and peer-reviewed to ensure validity and credibility.
+A) 2, 1, 3, 4
+B) 1, 2, 4, 3
+C) 4, 3, 2, 1
+D) 3, 4, 1, 2
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q100. Rearrange the following sentences to form a coherent paragraph: 1. The most prevalent of these is the peer-to-peer (P2P) network, where no single entity controls the entire system. 2. Blockchain technology, at its core, is a distributed ledger that maintains a decentralized record of transactions. 3. This decentralized structure ensures security and transparency by requiring network consensus for any new record to be added. 4. It functions by distributing copies of the ledger across a vast network of computers.
+A) 2, 4, 1, 3
+B) 4, 1, 3, 2
+C) 1, 4, 2, 3
+D) 2, 1, 4, 3
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+

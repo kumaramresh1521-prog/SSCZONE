@@ -17,6 +17,7 @@ import {
   ArrowRight
 } from "lucide-react";
 import { DEFAULT_BLOGS } from "@/lib/blog-data";
+import { sanitizeBlogContent } from "@/lib/blog-sanitizer";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -126,6 +127,7 @@ export default async function BlogPostPage(props: Props) {
   const category = blog.category || meta.category || "Exam Notification";
   const examTag = blog.exam_tag || meta.examTag || "SSC CGL";
   const focusKeyword = meta.focus || "";
+  const safeContent = sanitizeBlogContent(blog.content);
 
   // Structured Data Schema for Google NewsArticle & Breadcrumb
   const articleSchema = {
@@ -252,7 +254,7 @@ export default async function BlogPostPage(props: Props) {
         {/* Main Content Body */}
         <div 
           className="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-3xl shadow-xs border border-gray-200 text-sm sm:text-base leading-relaxed"
-          dangerouslySetInnerHTML={{ __html: blog.content }}
+          dangerouslySetInnerHTML={{ __html: safeContent }}
         />
 
         {/* High-Converting CBT Test Series & PYQ CTA Card */}

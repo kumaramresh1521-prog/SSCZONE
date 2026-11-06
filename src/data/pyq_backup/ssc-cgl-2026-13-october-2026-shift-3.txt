@@ -1,0 +1,764 @@
+Q.1: Which of the following options matches the given address exactly? Mr R. Das 55 Golden Garden, 2nd Floor Malad West, Mumbai - 400064
+A. Mr R. Das, 55 Golden Garden, 2nd Floor, Malad West, Mumbai - 400064
+B. Mr R. Das, 55 Golden Gardens, 2nd Floor, Malad West, Mumbai - 400064
+C. Mr R. Das, 55 Golden Garden, 2nd Floor, Malad West, Mumbai - 400065
+D. Mr R. Das, 55 Golden Garden, 3rd Floor, Malad West, Mumbai - 400064
+Answer: A
+
+Q.2: In a certain code language, "BRAVE" is written as "GWFAJ." How will "CLOUD" be written in the same code language?
+A. HOTZJ
+B. HQSZJ
+C. HQTZI
+D. HOTZI
+Answer: A
+
+Q.3: In a certain code language, "INTELLIGENCE" is written as "JNUEMLJGGFNDE". How will "EXPERIENCES" be written?
+A. FXQFSJFNDET
+B. FXPESIFNEET
+C. FXQESIFNDET
+D. FXQESJFNDFT
+Answer: B
+
+Q.4: There are 60 students in a class. If Neha is 25th from the top, find her rank from the bottom.
+A. 34th
+B. 35th
+C. 36th
+D. 37th
+Answer: B
+
+Q.5: How should an administrative officer respond effectively and empathetically when a large, frustrated crowd gathers at a public grievance window due to a digital server crash delaying certificate issuance?
+A. Deploy security personnel immediately to clear the area and protect the office property from potential damage. 1 INTELLIGENCE
+B. Announce the technical issue clearly, acknowledge their frustration, and provide a realistic manual alternative or timeline.
+C. Retreat to the inner office until the technical team resolves the server crash to avoid personal confrontation.
+D. Promise immediate delivery of all certificates within an hour to temporarily calm down the agitated gathering.
+Answer: C
+
+Q.6: Your team's three-month effort on a major development proposal is completely rejected by the ministry without explanation. As an emotionally intelligent leader, how can you best maintain team morale and long-term engagement?
+A. Express frustration regarding the ministry's lack of transparency to mirror the team's disappointment, aiming to build a sense of unity by collectively positioning yourselves as the "victims" of an unfair process.
+B. Facilitate an open reflection session to acknowledge the emotional weight of the rejection, validate the team's hard work, and pivot the focus toward synthesising the lessons learned and refining the strategy for future opportunities.
+C. Pivot immediately to a new, unrelated project to avoid dwelling on the past, intentionally suppressing discussions about the rejection to maintain a culture of relentless forward momentum and avoid potential loss of confidence.
+D. Conduct a forensic post-mortem to identify individual shortcomings or errors that may have led to the rejection, ensuring that team members understand where their personal contributions fell short of the mark.
+Answer: B
+
+Q.7: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p3_x307.jpeg)
+A. 20
+B. 21
+C. 23
+D. 24
+Answer: A
+
+Q.8: During a professional team discussion, a female colleague is frequently interrupted and talked/by male team members. Although she visibly attempts to re-enter the conversation multiple times, she fails to gain the floor. What is the most appropriate action for you to take?
+A. Choose to let the incident pass without any intervention, justifying your inaction by assuming that this is simply the natural way professional discussions function sometimes.
+B. Directly confront the male team members in front of everyone and aggressively tell them to stop interrupting the female colleague while she is trying to speak.
+C. Suggest to the female colleague privately that she should attempt to speak much more assertively in future meetings to ensure her voice is heard by others.
+D. Publicly acknowledge the value of her contribution and actively invite her to complete her thoughts, thereby ensuring she has the opportunity to speak to the group.
+Answer: D
+
+Q.9: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p3_x308.jpeg)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p3_x311.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p3_x312.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p3_x309.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p3_x310.jpeg)
+Answer: A
+
+Q.10: If the symbols are defined such that α represents addition, β represents subtraction, γ represents multiplication, and δ represents division, then compute the value of the expression. 100 δ 5 γ 4 α 20 β 10
+A. 80
+B. 90
+C. 100
+D. 110
+Answer: D
+
+Q.11: If 32 + 41 = 20; 25 + 34 = 28; 62 + 15 = 28, then find the value of 53 + 46.
+A. 36
+B. 42
+C. 48
+D. 32
+Answer: A
+
+Q.12: In the following question, one statement is given, followed by certain inferences. Consider the statement to be true even if it seems to contradict commonly known facts. Read the inferences carefully and decide which of them logically follow from the given statement.
+
+Statement: In recent quarters, sales of electric scooters have increased significantly in both urban and semi-urban regions due to rising fuel prices and improved battery technology offered by manufacturers. Inferences:
+
+I. The rise in electric scooter sales has reduced the sales of petrol scooters of all other companies.
+
+II. Electric scooters were not available in the market earlier.
+A. Only Inference I follows.
+B. Only Inference II follows.
+C. Both Inferences I and II follow.
+D. Neither Inference I nor Inference II follows.
+Answer: D
+
+Q.13: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p4_x563.jpeg)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q13_opt_A.png)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q13_opt_B.png)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q13_opt_C.png)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q13_opt_D.png)
+Answer: B
+
+Q.14: You are working on a high-priority project with a tight deadline. Your colleague, who is responsible for the final quality audit, asks you to skip a few minor verification steps so they can leave early for a personal engagement. What should you do?
+A. Skip the steps to maintain the team's friendly relationship.
+B. Politely decline and explain the risks of bypassing the audit.
+C. Inform the supervisor about your colleague's unprofessional request.
+D. Complete the skipped steps yourself without informing anyone.
+Answer: B
+
+Q.15: Carefully observe Figure
+
+(X) and identify the option figure in which Figure
+
+(X) is embedded exactly as shown. Figure X:
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p4_x569.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p4_x570.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p4_x571.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p4_x572.jpeg)
+Answer: B
+
+Q.16: In the following question, out of the five figures marked(a), (b), (c), (d), and (e), four are similar in a certain manner. However, one figure is not like the other four. Choose the figure which is different from the rest.
+A. b
+B. e
+C. a
+D. c
+Answer: A
+
+Q.17: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p4_x573.jpeg)
+A. 9.2%
+B. 14.6%
+C. 9.5%
+D. 8.1%
+Answer: C
+
+Q.18: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p4_x574.jpeg)
+A. 1
+B. 2
+C. 3
+D. 6
+Answer: A
+
+Q.19: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p4_x575.jpeg)
+A. c
+B. d
+C. a
+D. e
+Answer: A
+
+Q.20: Read the given statement carefully and the following assumptions based on it. Decide which of the assumptions are implicit in the statement.
+
+Statement: Give adequate job related training to the employees before assigning them full fledged work. Assumptions:
+
+I. Training helps in boosting the performance of employees.
+
+II. Employees have no skill sets before training is provided to them.
+A. Only Assumption I is implicit
+B. Both Assumptions I and II are implicit
+C. Only Assumption II is implicit
+D. Neither Assumption I nor II is implicit
+Answer: A
+
+Q.21: Which of the following rows/columns are connected/related with each other in some way? | Rows | Columns | | | | | | :--- | :--- | :--- | :--| :--- | :--- | | | I | II | III | IV | V | | I | 3 | 6 | 10 | 8 | 8 | | II | 7 | 9 | 14 | 12 | 12 | | III | 5 | 8 | 12 | 10 | 15 | | IV | 11 | 15 | 18 | 16 | 13 | | V | 9 | 11 | 16 | 14 | 10 |
+A. Columns I, II and
+B. Columns I, III and III IV
+C. Columns II, IV and
+D. Columns II, III and V IV
+Answer: A
+
+Q.22: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p5_x818.jpeg)
+A. 1
+B. 2
+C. 3
+D. 4
+Answer: B
+
+Q.23: (B)
+
+(C) (D)
+
+![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p5_x819.jpeg)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q23_opt_A.png)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q23_opt_B.png)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q23_opt_C.png)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q23_opt_D.png)
+Answer: B
+
+Q.24: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q24_fig.png)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q24_opt_A.png)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q24_opt_B.png)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q24_opt_C.png)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q24_opt_D.png)
+Answer: D
+
+Q.25: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p5_x828.jpeg)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p5_x829.jpeg)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p5_x830.jpeg)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p5_x831.jpeg)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p5_x832.jpeg)
+Answer: D
+
+Q.26: What does the First Schedule of the Indian Constitution contain?
+A. State names
+B. Oath forms
+C. Salary scales
+D. Rajya Sabha 4 AWARENESS
+Answer: A
+
+Q.27: Which Commission was appointed to examine Center-State relations in 1983?
+A. The Sarkaria
+B. The Mandal Commission Commission
+C. The Kothari
+D. The Shah Commission Commission
+Answer: A
+
+Q.28: Which river in India is notorious for the frequent shifting of its course, often causing devastating floods in the state of Bihar?
+A. Ganga
+B. Kosi
+C. Damodar
+D. Brahmaputra
+Answer: B
+
+Q.29: Which Article under the Indian Constitution lays down the establishment and composition of the Supreme Court?
+A. Article 123
+B. Article 124
+C. Article 125
+D. Article 126
+Answer: B
+
+Q.30: Which Article of the Indian Constitution provides for the resolution of disputes concerning inter-state river waters?
+A. Article 255
+B. Article 260
+C. Article 262
+D. Article 265
+Answer: C
+
+Q.31: Which of the following is equivalent to the SI unit of electrical resistance?
+A. Joule/Coulomb
+B. Volt/Ampere
+C. Ampere/Volt
+D. Coulomb/Joule
+Answer: B
+
+Q.32: What is the approximate equatorial circumference of the Earth?
+A. 20,000 km
+B. 30,000 km
+C. 40,000 km
+D. 50,000 km
+Answer: C
+
+Q.33: Which of the following is a major manganese mining area in Odisha?
+A. Gangpur
+B. Rourkela
+C. Cuttack
+D. Chitradurg
+Answer: B
+
+Q.34: Consider the following pairs of folk music traditions/ballads and their corresponding states:
+
+1. Jammukula - Manipur
+
+2. Baans Geet - Chattisgarh Which of the pairs given above is/are correctly matched?
+A. 1 only
+B. 2 only
+C. Both 1 and 2
+D. Neither 1 nor 2
+Answer: B
+
+Q.35: The government has a target to create 6 crore Lakhpati Didis. To fast-track this goal, which Ministry launched the National 5 Campaign on Entrepreneurship in January 2026 in India?
+A. Ministry of Finance
+B. Ministry of Agriculture and Farmers Welfare
+C. Ministry of Rural Development
+D. Ministry of Women and Child Development
+Answer: D
+
+Q.36: Under the Chabahar International Transport and Transit Corridor Agreement, how are decisions of the Coordination Council made?
+A. By a simple majority vote
+B. By a two-thirds majority vote
+C. By consensus among all Contracting Parties
+D. By the decision of the Chairperson alone
+Answer: C
+
+Q.37: Which South Asian country is known as the "Land of Thunder Dragon"?
+A. Bhutan
+B. Maldives
+C. Bangladesh
+D. Nepal
+Answer: D
+
+Q.38: A is attacked by a violent mob attempting to murder him. Young children are mixed within the mob. He can save himself only by firing into the crowd, though this creates risk to the children. A fire and one child die. Which of the following is correct under the Bharatiya Nyaya Sanhita, 2023 in India?
+A. A is guilty because innocent persons can never be harmed in private defence.
+B. A is guilty because children were present.
+C. A remains protected because private defence allows unavoidable risk in such assaults.
+D. A is protected only if no innocent person is actually injured.
+Answer: A
+
+Q.39: Who has been appointed as the new Chairperson of the Central Board of Secondary Education (CBSE) in June 2026?
+A. Lokhande
+B. Himanshu Kumar Prashant Sitaram Mishra
+C. Manoj Kumar
+D. Varun Bhardwaj Srivastava
+Answer: A
+
+Q.40: Who won the 2025 Shakti Bhatt Prize for her debut memoir The Lucky Ones?
+A. Shubhangi
+B. Zara Chowdhary Swarup
+C. Deepti Kapoor
+D. Meena Kandasamy
+Answer: B
+
+Q.41: What is meant by disinvestment of public sector enterprises in India?
+A. Merging two loss-making public sector companies
+B. Nationalising a private sector company
+C. Selling off part of the equity of PSEs to the public
+D. Closing down a public sector enterprise permanently
+Answer: C
+
+Q.42: Which planning approach is essential for ensuring sustainable development of heritage and tourism towns according to the Urban and Regional Development Plans Formulation and Implementation (URDPFI) Guidelines?
+A. Military zoning
+B. Carrying capacity evaluation
+C. Defence mapping
+D. Export regulation
+Answer: B
+
+Q.43: Which of the following is the first fully “Make-in-India” 32-bit microprocessor qualified for use in the harsh environmental conditions of launch vehicles, developed jointly by ISRO and the Semiconductor Laboratory in 2025?
+A. Vikram3201
+B. NavIC2000
+C. Aryabhata32
+D. Rohini128
+Answer: A
+
+Q.44: Which of the following sectors was declared the "prime moving force" of the Indian economy under the Tenth Five-Year Plan (2002-2007)?
+A. Industrial sector
+B. Agriculture sector
+C. Service sector
+D. External trade sector
+Answer: C
+
+Q.45: Under what condition can renewable natural resources become depleted?
+A. Renewable natural resources regenerate only through artificial means.
+B. Population growth has no effect on renewable natural resources.
+C. Human consumption of renewable natural resources may exceed their rate of natural regeneration.
+D. Renewable natural resources are immune to environmental degradation.
+Answer: C
+
+Q.46: Which of the following correctly distinguishes movement along a demand curve from a shift in the demand curve?
+A. Both are caused only by price changes.
+B. Movement occurs due to income changes and shifts due to price changes.
+C. Movement occurs due to own price changes, shift due to other determinants.
+D. A shift means only a change in quantity demanded.
+Answer: A
+
+Q.47: Which technological advantage did the firearms used by the English forces generally have/many traditional weapons used by Indian armies?
+A. They had a shorter range and could be fired less rapidly.
+B. They had a longer range and could be fired more rapidly.
+C. They were produced locally and could be supplied more easily.
+D. They required less training and could be operated more easily.
+Answer: A
+
+Q.48: Which province is described as the richest province of the Mughal Empire?
+A. Awadh
+B. Bengal
+C. Gujarat
+D. Malwa
+Answer: A
+
+Q.49: Which type of plasmid lacks a complete conjugation system and therefore requires a self-transmissible helper plasmid for transfer between bacterial cells?
+A. Conjugative
+B. Self-transmissible plasmid plasmid
+C. Mobilizable
+D. Col plasmid plasmid
+Answer: A
+
+Q.50: Which component of innate immunity functions through a regulated proteolytic cascade that can culminate in membrane attack complex formation and pathogen lysis?
+A. Cytokines
+B. Complement proteins
+C. Chemokines
+D. Lysozyme
+Answer: A
+
+Q.51: Evaluate 1962.
+A. 38496
+B. 38436
+C. 36466
+D. 38416
+Answer: D
+
+Q.52: Find the value of 3.5×3.5×3.5−2.5×2.5×2.5 .
+
+12.25+8.75+6.25
+A. 0
+B. 1
+C. 3
+D. 2
+Answer: B
+
+Q.53: Pipe P can fill a pool in 6 hours, but due to a drainage pipe Q, it takes 9 hours to fill the pool. In how many hours can the drainage pipe Q alone empty the full pool?
+A. 12 hours
+B. 18 hours
+C. 16 hours
+D. 24 hours
+Answer: B
+
+Q.54: What is the mean proportional between 12 −4√2 and 3 + √2 ?
+A. 2√7
+B. 3√5
+C. 6√7
+D. 7√5
+Answer: A
+
+Q.55: A sum of ₹15,000 is lent in two parts such that the simple interest on the first part at 10% for 5 years is double the simple interest on the second part at 12.5% for 4 years. What is the difference between the two parts?
+A. ₹3,000
+B. ₹5,000
+C. ₹2,500
+D. ₹4,000
+Answer: B
+
+Q.56: The graph of y = -3x + 4 is parallel to which of the following?
+A. y = 3x + 4
+B. y = -3x - 7
+C. 3y = x + 2
+D. y = 3x - 4
+Answer: B
+
+Q.57: ₹1,80,000 is invested at 10% compound interest. After the first year's interest is added, 20% of the interest is withdrawn. Find the balance at the end of 2 years.
+A. ₹2,53,840
+B. ₹2,13,840
+C. ₹2,73,840
+D. ₹2,93,840
+Answer: B
+
+Q.58: A solid cube with a surface area of 1500 cm² is melted to form smaller cubes, each with a surface area of 60 cm². Find the number of smaller cubes.
+A. 110
+B. 150
+C. 134
+D. 125
+Answer: D
+
+Q.59: The diagonals of a rhombus are 32 cm and 24 cm. A new rhombus is formed by joining the midpoints of the sides of the original rhombus. What is the area of the new figure?
+A. 192 cm²
+B. 384 cm²
+C. 96 cm²
+D. 144 cm²
+Answer: C
+
+Q.60: In a triangle ABC, right-angled at B, if cot A= 2 , find the value of sin A(cos C+cos A) . cos C(sin C−sin A)
+A. 1
+B. -3
+C. −1
+D. 3 3
+Answer: B
+
+Q.61: A right prism has a square base. If the side length of the base is increased by 10% and the height of the prism is decreased by 10%, determine the resulting change in the volume of the prism.
+A. Increases by 9.2%
+B. Decreases by 9.2%
+C. Decreases by
+D. Increases by 8.9% 8.9%
+Answer: D
+
+Q.62: If x= √5+2√6 , then what is the value of x² 5−2√6
+
+- 10x + 5?
+A. 1
+B. 2
+C. 3
+D. 4
+Answer: D
+
+Q.63: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p9_x1951.jpeg)
+A. 20%
+B. 15%
+C. 10%
+D. 22%
+Answer: B
+
+Q.64: A chord AB of a circle subtends an angle of 120° at a point on the circumference. If the length of AB is 5√3 cm, find the radius of the circle.
+A. 2√3 cm
+B. 5 cm
+C. 5√3 cm
+D. 10 cm
+Answer: B
+
+Q.65: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p9_x1952.jpeg)
+A. 2
+B. 5 8
+C. 12
+D. 20
+Answer: A
+
+Q.66: Two congruent circles of radius 10 cm intersect in such a way that each passes through the centre of the other. Determine the length of their common chord.
+A. 5 cm
+B. 5√3 cm
+C. 10 cm
+D. 10√3 cm
+Answer: D
+
+Q.67: The ratio of milk and water in a vessel is 8:
+
+5. If we add 44 liters of milk and 44 liters of water, then the quantity of milk becomes
+
+28.56% more than the quantity of water. Find the initial quantity of water?
+A. 40 liters
+B. 45 liters
+C. 48 liters
+D. 50 liters
+Answer: D
+
+Q.68: Two right circular cylinders have equal volumes. If the ratio of their radii is 7: 9, find the ratio of their heights.
+A. 21:29
+B. 29:21
+C. 49:81
+D. 81:49
+Answer: D
+
+Q.69: In triangle ABC, a line DE is drawn parallel to side BC. The lengths are given as AD = a, DB = a + 4, AE = 2a + 3, and EC = 7a. Find the value of a, given that a is greater than zero.
+A. 5
+B. 4
+C. 3
+D. 6
+Answer: C
+
+Q.70: A shopkeeper gives a 25% discount on the marked price of a product and still makes a 20% profit, amounting to ₹80. Find the marked price of the product.
+A. ₹490
+B. ₹720
+C. ₹530
+D. ₹640
+Answer: D
+
+Q.71: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p10_x2274.jpeg)
+A. 13,000
+B. 16,000
+C. 12,000
+D. 14,000
+Answer: C
+
+Q.72: Two poles of equal height stand on either side of a road 80 m wide. From a point on the road between the poles, the angles of elevation are 60° and 30°. What is the height of each pole?
+A. 20√3 m
+B. 40√2 m
+C. 25√7 m
+D. 35√7 m
+Answer: A
+
+Q.73: A square garden has side (6x + 5y) meters. A square pond inside it has side (2x + y) meters. Find the area of the garden excluding the pond in square meters, where x, y > 0.
+A. 8(x + y)(4x + 3y)
+B. 8(2x + y)(4x + 3y)
+C. 8(x + 2y)(5x + 3y)
+D. 2(x + y)(4x + 5y)
+Answer: B
+
+Q.74: The average of n consecutive multiples of 11 is 143. If the difference between the largest and the smallest number in the set is 132, find the value of n.
+A. 10
+B. 11
+C. 12
+D. 13
+Answer: D
+
+Q.75: ![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p10_x2275.jpeg)
+A. 5
+B. 4
+C. 3
+D. 2
+Answer: D
+
+Q.76: Select the wrongly spelt word out of the four alternatives.
+A. Assassination
+B. Unaccustomed
+C. Ruthlessness
+D. Liaison
+Answer: A
+
+Q.77: Select the wrongly spelt word out of the four alternatives.
+A. Brusquely
+B. Messenjer
+C. Absolute
+D. Exhausted
+Answer: B
+
+Q.78: Choose the most appropriate antonym of the underlined word. The prime minister gave a perfunctory nod to the reporters.
+A. Thorough
+B. Hasty
+C. Casual
+D. Careless
+Answer: A
+
+Q.79: Choose the most appropriate antonym of the underlined word. The school enforced stringent rules regarding student attendance.
+A. Lax
+B. Firm
+C. Rigorous
+D. Strict
+Answer: A
+
+Q.80: Select the correctly spelt word to replace the highlighted word in the given sentence. His averice led to his eventual downfall.
+A. Avarice
+B. Averice
+C. Avvarice
+D. Avarise
+Answer: A
+
+Q.81: Select the correctly spelt word to replace the highlighted word in the given sentence. His punicious habits eventually led to a very serious illness.
+A. Pernicious
+B. Pernicius
+C. Punicious
+D. Pernicous
+Answer: A
+
+Q.82: In the following question, the first and last parts of the sentence (1 and 6) are given. The rest of the sentence is split into four parts and named P, Q, R, and S. These four parts are not given in their proper order. Read the sentence and find out which of the four combinations is correct.
+
+1. Our ability to P. of others is what Q. and feel the emotions R. understand the perspectives S. makes us truly
+
+6. compassionate human beings.
+A. PQSR
+B. RSPQ
+C. RPSQ
+D. RQPS
+Answer: D
+
+Q.83: In the following question, the first and last parts of the sentence (1 and 6) are given. The rest of the sentence is split into four parts and named P, Q, R, and S. These four parts are not given in their proper order. Read the sentence and find out which of the four combinations is correct.
+
+1. It is widely P. to the environment Q. believed that the R. poses a serious threat S. use of plastic bags
+
+6. and our marine life.
+A. QSRP
+B. PRSQ
+C. QRPS
+D. QRSP
+Answer: A
+
+Q.84: From the given options, select the homonym that corresponds to both Definition (P) and Definition (Q).
+
+(P) A military flag, banner, or symbolic staff raised to mark the rally point of an army
+
+(Q) An officially approved level of quality, requirement, or specification
+A. Benchmark
+B. Insignia
+C. Criteria
+D. Standard
+Answer: D
+
+Q.85: Identify the option in which the underlined idiom has been used incorrectly.
+A. The elite research institute's academic curriculum is widely considered a cut above that of regional universities, owing to its mandatory advanced robotics modules and global lab partnerships.
+B. The lead actors met for the first time during the table read and hit it off, resulting in an uncomfortable, visible lack of chemistry on set that forced the director to repeatedly pause production.
+C. Before initiating the cross-border merger, the lead legal strategist spent several weeks analysing the rival firm's previous litigation history to take the measure of their executive board.
+D. Trailing by fifteen points in the final quarter, the underdog basketball team completely turned the tables by executing a relentless full-court press and securing a dramatic one-point victory at the buzzer.
+Answer: B
+
+Q.86: Fill in the blanks with the correct option, ensuring the verb tenses accurately reflect the chronological sequence of events. Scarcely ________ the morning train when I realized that, if I had left my house five minutes later, I ________ the crucial interview.
+A. I had boarded, missed
+B. had I boarded, would have missed
+C. did I board, would miss
+D. had I boarded, will miss
+Answer: B
+
+Q.87: The sentence below is divided into two parts labelled P and Q. Identify which sentence contains a grammatical or idiomatic error. P: The corporate legal team meticulously ironed out the final merger documents with the target firm's underwriters before the executive board signed them. Q: During the high-pressure restructuring session in the unventilated boardroom, the junior analyst suddenly passed out from heat exhaustion.
+A. Only P
+B. Only Q
+C. Both P and Q
+D. Neither P nor Q
+Answer: D
+
+Q.88: Read the two sentences given below carefully and identify which one contains a grammatical error. P: The target software corporation implemented an aggressive poison-pill strategy to fend off against the hostile takeover bid initiated by the activist hedge fund. Q: During the cross-border corporate fraud investigation, the forensic accounting team began to home in on the anomalous shell company transactions routed through offshore tax havens.
+A. Only P
+B. Only Q
+C. Both P and Q
+D. Neither P nor Q
+Answer: A
+
+Q.89: Three of the options below represent incorrect or ungrammatical attempts to modify the sentence. Select the single alternative that successfully achieves a correct active voice transformation. A gathering is formed by local workers to hear Raghav’s situation recounted, and gentle corrections are made by them regarding the name of the mill worker being sought by him, yet no concern is felt by him/this discrepancy, and absolute confidence is maintained by him that his companion will be located.
+A. Local workers form a gathering to hear Raghav’s situation recounted, and they made gentle corrections regarding the name of the mill worker he is seeking, yet he feels no concern/this discrepancy and maintained absolute confidence that he will locate his companion.
+B. Local workers from a gathering to hear Raghav’s situation recount, and they make gentle corrections regarding the name of the mill worker he is seeking, yet he feels no concern/this discrepancy and maintains absolute confidence that he will locate his companion.
+C. Local workers form a gathering to hear Raghav’s situation recounted, and they make gentle corrections regarding the name of the mill worker he is seeking, yet he feels no concern/this discrepancy and maintains absolute confidence that he will locate his companion.
+D. Local workers form a gathering to hear Raghav’s situation recount, and they made gentle corrections regarding the name of the mill worker he is seeking, yet he feels no concern/this discrepancy and maintains absolute confidence that he locate his companion.
+Answer: C
+
+Q.90: Read the following sentence carefully, focusing on the underlined portion. Select the option (A/B/C) that can suitably substitute the underlined segment to improve the given sentence. If the sentence is correct as written, then select Option D (No improvement required). When the museum conservation team carefully applied the newly formulated chemical solvent to the damaged Renaissance fresco, it dissolved almost instantly, causing widespread panic amidst the curators.
+A. they dissolved almost instantly, a reaction which caused widespread panic around the curators
+B. the solvent dissolved almost instantly, that caused widespread panic in the curators
+C. the fresco dissolved almost instantly, causing widespread panic among the curators
+D. No improvement required
+Answer: C
+
+Q.91: Read the following sentence carefully, focusing on the underlined portion. Select the option (A/B/C) that can suitably substitute the underlined segment to improve the given sentence. If the sentence is correct as written, then select Option D (No improvement required). The multinational technology conglomerate officially absorbed the boutique software startup because they possessed a highly lucrative proprietary algorithm that promised to dominate the global market.
+A. as it possessed a highly lucrative proprietary algorithm who promised to dominate
+B. because the startup possessed a highly lucrative proprietary algorithm that promised to dominate
+C. since the conglomerate possessed a highly lucrative proprietary algorithm which promised to dominate
+D. No improvement required
+Answer: B
+
+Q.92: Convert the following sentence from direct to indirect speech. Choose the option that best represents the correct transformation. Harman said to Lipika, “If you had observed us during our transit between facilities, as we watched the mountain peaks illuminated by the sunset through the small, restricted windows of our transport vehicle, you would never have guessed that we had previously abandoned all expectations of our future.”
+A. Harman told Lipika that if she had observed them during their transit between facilities, as they had watched the mountain peaks illuminated by the sunset through the small, restricted windows of their transport vehicle, she would never have guessed that they had previously abandoned all expectations of their future.
+B. Harman told Lipika that if she observed them during their transit between facilities, as they had watched the mountain peaks illuminated by the sunset through the small, restricted windows of their transport vehicle, she would never have guessed that they had previously abandoned all expectations of their future.
+C. Harman told Lipika that if she had observed them during their transit between facilities, as they had watched the mountain peaks illuminated by the sunset through the small, restricted windows of their transport vehicle, she would never guess that they had previously abandoned all expectations of their future.
+D. Harman told Lipika that if she had observed them during their transit between facilities, as they had watched the mountain peaks illuminated by the sunset through the small, restricted windows of their transport vehicle, she would never have guessed that they would have previously abandoned all expectations of their future.
+Answer: A
+
+Q.93: Select the option that correctly converts the following indirect statement into direct speech. Swati told Kashvi that she had learned to fly in order to come to terms with her fear of heights, and to think highly of humanity by meeting labourers at their local inn who had led lives of destitution and had worked on towers that had been several feet tall.
+A. Swati said to Kashvi, "I learned to fly in order to come to terms with my fear of heights, and thought highly of humanity by meeting labourers at our local inn who led lives of destitution and worked on towers that were several feet tall."
+B. Swati said to Kashvi, "I learned to fly in order to come to terms with my fear of heights, and to think highly of humanity by having met labourers at our local inn who led lives of destitution and worked on towers that were several feet tall."
+C. Swati said to Kashvi, "I learned to fly in order to come to terms with my fear of heights, and to think highly of humanity by meeting labourers at our local inn who led lives of destitution and worked on towers that were several feet tall."
+D. Swati said to Kashvi, "I learned to fly in order to come to terms with my fear of heights, and to think highly of humanity by meeting labourers at their local inn who led lives of destitution and worked on towers that were several feet tall."
+Answer: C
+
+Q.94: Select the correct passive form of the given sentence. Nobody had informed the passengers about the sudden change in the flight route.
+A. The passengers had not been informed about the sudden change in the flight route.
+B. The passengers were not informed about the sudden change in the flight route by nobody.
+C. The passengers have not been informed about the sudden change in the flight route.
+D. The passengers had not been informed about the sudden change in the flight route by nobody.
+Answer: A
+
+Q.95: Choose the option that provides the correct sequence of prepositions to complete the sentence grammatically. The philosopher contended that morality exists ________ the realm of legality, operates ________ opposition to utilitarianism, and persists ________ spite of cultural relativism.
+A. within, against, despite
+B. beyond, in, in
+C. beneath, concerning, owing to
+D. alongside, with, prior to
+Answer: B
+
+Q.96: **Comprehension (Q. 96 - 100):** Responsible tourism has emerged as an essential principle in an era when travel has become more accessible than ever before. While tourism generates employment, strengthens local economies, and encourages cultural exchange, it can also impose significant pressure on fragile ecosystems and traditional communities. ________ , policymakers, businesses, and travellers must collectively ensure that economic benefits do not come at the expense of environmental sustainability or cultural integrity. Responsible tourism is not merely about reducing waste or avoiding plastic; it also requires visitors to understand the social and historical contexts of the destinations they explore. Such awareness encourages tourists to make ________ (B) decisions that support local artisans, conserve natural resources, and respect indigenous customs. If tourism authorities ________ (C) stricter sustainability standards and monitored their implementation consistently, many ecological challenges associated with mass tourism could be substantially reduced. Equally important is the need for tourism operators to ________ (D) between commercial profitability and ecological responsibility. Long-term prosperity depends not only on attracting more visitors but also on preserving the very landscapes and traditions that make destinations distinctive. Travellers, too, must recognise that every journey carries ethical implications. Choosing locally owned accommodations, minimising resource consumption, and engaging respectfully ________ (E) host communities contribute to a tourism model that benefits both present and future generations. Ultimately, responsible tourism is less about restricting movement than about cultivating thoughtful habits that transform travel into a mutually enriching experience for visitors and residents alike.
+
+---
+
+Identify the correct discourse marker for blank
+A. Nevertheless
+B. Therefore
+C. Likewise
+D. Meanwhile
+Answer: B
+
+Q.97: **Comprehension (Q. 96 - 100):** Responsible tourism has emerged as an essential principle in an era when travel has become more accessible than ever before. While tourism generates employment, strengthens local economies, and encourages cultural exchange, it can also impose significant pressure on fragile ecosystems and traditional communities. ________ , policymakers, businesses, and travellers must collectively ensure that economic benefits do not come at the expense of environmental sustainability or cultural integrity. Responsible tourism is not merely about reducing waste or avoiding plastic; it also requires visitors to understand the social and historical contexts of the destinations they explore. Such awareness encourages tourists to make ________ (B) decisions that support local artisans, conserve natural resources, and respect indigenous customs. If tourism authorities ________ (C) stricter sustainability standards and monitored their implementation consistently, many ecological challenges associated with mass tourism could be substantially reduced. Equally important is the need for tourism operators to ________ (D) between commercial profitability and ecological responsibility. Long-term prosperity depends not only on attracting more visitors but also on preserving the very landscapes and traditions that make destinations distinctive. Travellers, too, must recognise that every journey carries ethical implications. Choosing locally owned accommodations, minimising resource consumption, and engaging respectfully ________ (E) host communities contribute to a tourism model that benefits both present and future generations. Ultimately, responsible tourism is less about restricting movement than about cultivating thoughtful habits that transform travel into a mutually enriching experience for visitors and residents alike.
+
+---
+
+Identify the correct word for blank
+A. informed
+B. impulsive
+C. arbitrary
+D. reluctant
+Answer: C
+
+Q.98: **Comprehension (Q. 96 - 100):** Responsible tourism has emerged as an essential principle in an era when travel has become more accessible than ever before. While tourism generates employment, strengthens local economies, and encourages cultural exchange, it can also impose significant pressure on fragile ecosystems and traditional communities. ________ , policymakers, businesses, and travellers must collectively ensure that economic benefits do not come at the expense of environmental sustainability or cultural integrity. Responsible tourism is not merely about reducing waste or avoiding plastic; it also requires visitors to understand the social and historical contexts of the destinations they explore. Such awareness encourages tourists to make ________ (B) decisions that support local artisans, conserve natural resources, and respect indigenous customs. If tourism authorities ________ (C) stricter sustainability standards and monitored their implementation consistently, many ecological challenges associated with mass tourism could be substantially reduced. Equally important is the need for tourism operators to ________ (D) between commercial profitability and ecological responsibility. Long-term prosperity depends not only on attracting more visitors but also on preserving the very landscapes and traditions that make destinations distinctive. Travellers, too, must recognise that every journey carries ethical implications. Choosing locally owned accommodations, minimising resource consumption, and engaging respectfully ________ (E) host communities contribute to a tourism model that benefits both present and future generations. Ultimately, responsible tourism is less about restricting movement than about cultivating thoughtful habits that transform travel into a mutually enriching experience for visitors and residents alike.
+
+---
+
+Identify the correct word/phrase for blank
+A. enforce
+B. have enforced
+C. had enforced
+D. enforced
+Answer: A
+
+Q.99: **Comprehension (Q. 96 - 100):** Responsible tourism has emerged as an essential principle in an era when travel has become more accessible than ever before. While tourism generates employment, strengthens local economies, and encourages cultural exchange, it can also impose significant pressure on fragile ecosystems and traditional communities. ________ , policymakers, businesses, and travellers must collectively ensure that economic benefits do not come at the expense of environmental sustainability or cultural integrity. Responsible tourism is not merely about reducing waste or avoiding plastic; it also requires visitors to understand the social and historical contexts of the destinations they explore. Such awareness encourages tourists to make ________ (B) decisions that support local artisans, conserve natural resources, and respect indigenous customs. If tourism authorities ________ (C) stricter sustainability standards and monitored their implementation consistently, many ecological challenges associated with mass tourism could be substantially reduced. Equally important is the need for tourism operators to ________ (D) between commercial profitability and ecological responsibility. Long-term prosperity depends not only on attracting more visitors but also on preserving the very landscapes and traditions that make destinations distinctive. Travellers, too, must recognise that every journey carries ethical implications. Choosing locally owned accommodations, minimising resource consumption, and engaging respectfully ________ (E) host communities contribute to a tourism model that benefits both present and future generations. Ultimately, responsible tourism is less about restricting movement than about cultivating thoughtful habits that transform travel into a mutually enriching experience for visitors and residents alike.
+
+---
+
+Identify the correct phrase for blank
+A. draw a balance
+B. strike a balance
+C. build a balance
+D. create a balance
+Answer: A
+
+Q.100: **Comprehension (Q. 96 - 100):** Responsible tourism has emerged as an essential principle in an era when travel has become more accessible than ever before. While tourism generates employment, strengthens local economies, and encourages cultural exchange, it can also impose significant pressure on fragile ecosystems and traditional communities. ________ , policymakers, businesses, and travellers must collectively ensure that economic benefits do not come at the expense of environmental sustainability or cultural integrity. Responsible tourism is not merely about reducing waste or avoiding plastic; it also requires visitors to understand the social and historical contexts of the destinations they explore. Such awareness encourages tourists to make ________ (B) decisions that support local artisans, conserve natural resources, and respect indigenous customs. If tourism authorities ________ (C) stricter sustainability standards and monitored their implementation consistently, many ecological challenges associated with mass tourism could be substantially reduced. Equally important is the need for tourism operators to ________ (D) between commercial profitability and ecological responsibility. Long-term prosperity depends not only on attracting more visitors but also on preserving the very landscapes and traditions that make destinations distinctive. Travellers, too, must recognise that every journey carries ethical implications. Choosing locally owned accommodations, minimising resource consumption, and engaging respectfully ________ (E) host communities contribute to a tourism model that benefits both present and future generations. Ultimately, responsible tourism is less about restricting movement than about cultivating thoughtful habits that transform travel into a mutually enriching experience for visitors and residents alike.
+
+---
+
+Identify the correct word for blank (E).
+A. to
+B. for
+C. at
+D. with
+Answer: A
+

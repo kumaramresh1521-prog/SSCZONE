@@ -1,0 +1,902 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. DIN, INS, NSX, SXC, ?",
+    "option_a": "LKA",
+    "option_b": "JNA",
+    "option_c": "GVA",
+    "option_d": "XCH",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 2,
+    "question_text": "If 6 @ 2 = 9, 15 @ 3 = 125, then 8 @ 4 = ?",
+    "option_a": "4",
+    "option_b": "8",
+    "option_c": "16",
+    "option_d": "10",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 3,
+    "question_text": "Choose the correct signs to swap. 40 ÷ 8 + 10 - 5 × 2 = 5",
+    "option_a": "÷ and ×",
+    "option_b": "+ and -",
+    "option_c": "÷ and +",
+    "option_d": "- and ×",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 4,
+    "question_text": "A is the brother of B. B is the sister of C. C is the brother of D. How is B related to D?",
+    "option_a": "Sister",
+    "option_b": "Aunt",
+    "option_c": "Niece",
+    "option_d": "Can't say",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 5,
+    "question_text": "Solve: FD : KH :: QM : ?",
+    "option_a": "VP",
+    "option_b": "WT",
+    "option_c": "VQ",
+    "option_d": "UW",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 6,
+    "question_text": "What comes next: 13, 16, 21, 30, 45, ?",
+    "option_a": "70",
+    "option_b": "66",
+    "option_c": "67",
+    "option_d": "68",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 7,
+    "question_text": "Read the following statement carefully and identify the conclusion that follows. Statement: Rising noise pollution in urban areas is affecting children's concentration. Conclusion I: Urban children can't study well. Conclusion II: Controlling noise pollution may improve children's concentration.",
+    "option_a": "Only I follows",
+    "option_b": "Only II follows",
+    "option_c": "Both follow",
+    "option_d": "Neither follows",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 8,
+    "question_text": "Identify the odd one out:",
+    "option_a": "121",
+    "option_b": "141",
+    "option_c": "444",
+    "option_d": "544",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 9,
+    "question_text": "Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option. Statement: The introduction of Artificial Intelligence into healthcare systems can enhance diagnostic accuracy, but its widespread implementation may lead to ethical dilemmas in patient care. Assumptions: I. AI can improve healthcare diagnostics. II. The ethical concerns surrounding AI in healthcare are significant. III. AI will eventually replace human healthcare professionals.",
+    "option_a": "Only I and II are implicit",
+    "option_b": "Only II and III are implicit",
+    "option_c": "All I, II and III are implicit",
+    "option_d": "Only I is implicit",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 10,
+    "question_text": "Read the following statement carefully and identify the conclusion that follows. Statement: All metro stations are under CCTV surveillance. Conclusions: I. Activities at metro stations are being monitored. II. No criminal activity can happen in metro stations.",
+    "option_a": "Only Conclusion I follows",
+    "option_b": "Only Conclusion II follows",
+    "option_c": "Both I and II follow",
+    "option_d": "Neither I nor II follows",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 11,
+    "question_text": "Direction: Study the information carefully and answer the given questions. Eight People Tina, Raj, Dia, Viraj, Soma, Meena, Neha and Ria are living in an eight-storey building, but not necessarily in the same order. The ground floor is numbered 1 and the floor above it is numbered 2, and so on, until the topmost floor is numbered 8. Dia lives on the lowermost floor. Only three people live between Dia and Ria. Tina lives on the 4th floor. Only two people live between Tina and Raj. Only five people live between Viraj and Soma. Neha lives on an odd numbered floor. Only one person lives between Meena and Viraj. Who lives three floors below the one who lives immediate below Raj?",
+    "option_a": "Neha",
+    "option_b": "Tina",
+    "option_c": "Dia",
+    "option_d": "Raj",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 12,
+    "question_text": "Read the following statement carefully and identify the conclusion that follows. Statement: No artist are athletes. Some athlete are painters. All artists are painters. Conclusions: I. Some painters are athletes. II. Some athletes are not painters.",
+    "option_a": "Only I follows",
+    "option_b": "Only II follows",
+    "option_c": "Both I and II follow",
+    "option_d": "Neither I nor II follows",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 13,
+    "question_text": "Find the odd one out: Pacific, Atlantic, Indian, Arctic, Mediterranean",
+    "option_a": "Pacific",
+    "option_b": "Atlantic",
+    "option_c": "Mediterranean",
+    "option_d": "Arctic",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 14,
+    "question_text": "If CLOUD is coded as BKNTC, how is RAINY written?",
+    "option_a": "QZHMX",
+    "option_b": "QZHLX",
+    "option_c": "QZHLW",
+    "option_d": "QZHMV",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 15,
+    "question_text": "In each of the following questions, a specific alphabetical pattern is applied to the first set of letters to form the second. Apply the same logic to find the missing term that relates to the third set in the same way. Choose the correct option from the given alternatives. AEFJ : KOPT :: ? : QUVZ",
+    "option_a": "HKQL",
+    "option_b": "GLKP",
+    "option_c": "GKLP",
+    "option_d": "HLKP",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 16,
+    "question_text": "TEACHER is to CLASSROOM as SURGEON is to:",
+    "option_a": "PATIENT",
+    "option_b": "SCALPEL",
+    "option_c": "OPERATION",
+    "option_d": "OT (Operation Theatre)",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 17,
+    "question_text": "What is the sum of the first 10 terms of the series? 1, 3, 5, 7, ...?",
+    "option_a": "90",
+    "option_b": "100",
+    "option_c": "110",
+    "option_d": "120",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 18,
+    "question_text": "What comes next? BYD, DWF, FUH, ?",
+    "option_a": "HSJ",
+    "option_b": "IQK",
+    "option_c": "HQJ",
+    "option_d": "JQL",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 19,
+    "question_text": "Find the odd one out from the given alternatives:",
+    "option_a": "Troposphere",
+    "option_b": "Stratosphere",
+    "option_c": "Hydrosphere",
+    "option_d": "Mesosphere",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 20,
+    "question_text": "Find the odd one out from the given alternatives:",
+    "option_a": "Retina",
+    "option_b": "Cornea",
+    "option_c": "Iris",
+    "option_d": "Femur",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 21,
+    "question_text": "In a certain code, NIGHT is written as OHJIS How will LIGHT be written?",
+    "option_a": "MHJIS",
+    "option_b": "KJHIS",
+    "option_c": "LIHIS",
+    "option_d": "MIHIS",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 22,
+    "question_text": "Pointing to a woman, John says, \"She is the wife of my uncle's only son.\" How is the woman related to John?",
+    "option_a": "Sister",
+    "option_b": "Cousin",
+    "option_c": "Sister-in-law",
+    "option_d": "Niece",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 23,
+    "question_text": "If × = +, + = -, - = ×; then 4 × 5 + 2 - 3 = ?",
+    "option_a": "3",
+    "option_b": "7",
+    "option_c": "35",
+    "option_d": "29",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 24,
+    "question_text": "If the sum of 13 and 39 is multiplied by 2, what is the result?",
+    "option_a": "100",
+    "option_b": "104",
+    "option_c": "106",
+    "option_d": "110",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 25,
+    "question_text": "The series given below contains a sequence of numbers. Accordingly identify the incorrect combination. 25, 32, 46, 67, 97",
+    "option_a": "32",
+    "option_b": "46",
+    "option_c": "97",
+    "option_d": "67",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 26,
+    "question_text": "What is the contribution of Vikram Sarabhai Space Centre (VSSC) to India's space program?",
+    "option_a": "Launch site for ISRO missions",
+    "option_b": "Designs and builds launch vehicles",
+    "option_c": "Trains Indian astronauts",
+    "option_d": "Controls ISRO satellites",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 27,
+    "question_text": "The \"Atal Innovation Mission (AIM)\" is a flagship initiative to promote innovation and entrepreneurship in India. Which of the following is a key component or program under AIM?",
+    "option_a": "Skill India Centers",
+    "option_b": "Startup India Seed Fund Scheme",
+    "option_c": "Atal Tinkering Labs (ATLs)",
+    "option_d": "Pradhan Mantri Kaushal Vikas Yojana (PMKVY)",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 28,
+    "question_text": "The integration of the princely states into the Indian Union after 1947 involved a complex interplay of political negotiation, popular movements, and, at times, coercion. Which of the following factors most significantly undermined the initial aspirations of some princely rulers to maintain independent or autonomous status?",
+    "option_a": "The overwhelming military superiority of the newly formed Pakistani state, compelling the rulers to seek protection within India.",
+    "option_b": "The consistent and unwavering support provided by the British government to the princely states seeking independence.",
+    "option_c": "The strong undercurrent of popular will within the princely states favoring accession to India, often expressed through organized movements and protests.",
+    "option_d": "The economic prosperity and stability offered by remaining independent, making integration into the financially strained Indian Union unattractive.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 29,
+    "question_text": "The Bharatiya Nyaya Sanhita (BNS) was introduced as part of:",
+    "option_a": "The effort to codify personal laws.",
+    "option_b": "The effort to modernize and decolonize India's criminal justice system.",
+    "option_c": "The new taxation policy.",
+    "option_d": "A trade agreement.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 30,
+    "question_text": "Digboi, Moran, Sivasagar, and Naharkatiya oil fields are located in which of the following regions of India?",
+    "option_a": "Aravalli and Delhi Ridge",
+    "option_b": "Deccan Plateau",
+    "option_c": "North-Eastern India",
+    "option_d": "Western Coastal Plains",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 31,
+    "question_text": "The term 'svaravalis' refers to what in the context of Indian classical music?",
+    "option_a": "A specific type of raga",
+    "option_b": "A melody composed using the seven notes of the scale",
+    "option_c": "Ornamentation and embellishment of a raga",
+    "option_d": "A rhythmic cycle used in carnatic music",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 32,
+    "question_text": "Consider the following physiographic features. 1. Tors 2. Spurs 3. Block Mountains Which of the feature/features given above is/are found in the peninsular plateau of India?",
+    "option_a": "1 and 3 only",
+    "option_b": "3 only",
+    "option_c": "2 and 3 only",
+    "option_d": "1, 2, and 3",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 33,
+    "question_text": "Which of the following building materials were primarily used in constructing Purana Qila?",
+    "option_a": "Granite and lime plaster",
+    "option_b": "Concrete and red bricks",
+    "option_c": "Sandstone and marble",
+    "option_d": "Wood and terracotta",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 34,
+    "question_text": "During the Solung festival celebrated by the Adi tribe of Arunachal Pradesh, which traditional drink is shared to promote social bonding?",
+    "option_a": "Soma",
+    "option_b": "Apong",
+    "option_c": "Thukpa",
+    "option_d": "Chhang",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 35,
+    "question_text": "The drainage system at Mohenjodaro was notable because each house was connected to:",
+    "option_a": "An underground water tank",
+    "option_b": "A central pillar for support",
+    "option_c": "A covered street drain",
+    "option_d": "A rooftop reservoir",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 36,
+    "question_text": "Which of the following statements is correct regarding the Golden Raid and card system in Kabaddi?",
+    "option_a": "A team is allowed two Golden Raids before the result is decided.",
+    "option_b": "A Green Card leads to a 2-minute suspension from the game.",
+    "option_c": "A fresh toss is taken if the match is tied even after 5-5 raids.",
+    "option_d": "A Red Card results in a warning with no match suspension.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 37,
+    "question_text": "What was a major challenge for agriculture in the Chola kingdom apart from rocky land?",
+    "option_a": "Lack of seeds",
+    "option_b": "Lack of labour",
+    "option_c": "Irrigation water",
+    "option_d": "Pest infestation",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 38,
+    "question_text": "Consider the following statements about recent National Basketball Championships: 1) Tamil Nadu won the 74th Senior Men's title; Punjab and Indian Railways were runner-up and second runner- up. 2) Rajasthan won the 39th Youth Boys, and Karnataka won the Youth Girls tournament. Which of the statements is/are correct?",
+    "option_a": "Only 1 is Correct",
+    "option_b": "Only 2 is Correct",
+    "option_c": "1 and 2 are Correct",
+    "option_d": "Neither 1 nor 2 is Correct",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 39,
+    "question_text": "The \"Kaladan Multimodal Transit Transport Project\" links India with which country?",
+    "option_a": "China",
+    "option_b": "Myanmar",
+    "option_c": "Bangladesh",
+    "option_d": "Nepal",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 40,
+    "question_text": "'The Namesake' is a famous novel by which Indian-American author?",
+    "option_a": "Jhumpa Lahiri",
+    "option_b": "Arundhati Roy",
+    "option_c": "Chitra Banerjee",
+    "option_d": "Kiran Desai",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 41,
+    "question_text": "Which of the following statements is correct regarding population stabilization?",
+    "option_a": "Stabilization occurs when birth rate exceeds death rate",
+    "option_b": "Stabilization is reached when fertility rate drops to zero",
+    "option_c": "Stabilization occurs when birth and death rates are nearly equal",
+    "option_d": "Stabilization refers to doubling of population every decade",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 42,
+    "question_text": "Ajit Doval is known as a key figure in India's strategic affairs, remains the National Security Advisor (NSA). In light of his ongoing tenure and recent developments, which of the following statements best reflects his current status as of July 2025?",
+    "option_a": "Ajit Doval's current tenure as NSA, which began in June 2025, is his first independent term after serving as Principal Advisor on National Security for a decade.",
+    "option_b": "He holds the ex-officio rank equivalent to a Cabinet Secretary, with his appointment typically for a fixed five-year term irrespective of the government's tenure.",
+    "option_c": "Having been reappointed for a fresh term in June 2024, his current position is co-terminus with the Prime Minister's term and he holds the rank of a Cabinet Minister.",
+    "option_d": "As NSA, his primary role is to chair the National Security Council (NSC), where he holds voting power on all key security policy decisions, including those related to defence procurement.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 43,
+    "question_text": "Which of the following combinations of athletics winners at the 2025 National Games is entirely correct?",
+    "option_a": "Parul Chaudhary - 3000m steeplechase; Jyothi Yarraji - 100m hurdles",
+    "option_b": "Lovlina - 100m hurdles; Amoj Jacob - Shot Put",
+    "option_c": "Swapnil Kusale - Boxing; Sarabjot - Sprint",
+    "option_d": "Amoj Jacob - Wrestling; Jyothi - Relay",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 44,
+    "question_text": "Under Article 258A, what power is granted to States?",
+    "option_a": "States need Presidential assent to assign functions to Union",
+    "option_b": "Governor can entrust Union tasks to State Legislature with President's consent",
+    "option_c": "State Legislature can entrust Union work to State officers with Centre's approval",
+    "option_d": "State Government can, with Union's consent, assign Union functions to its officers",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 45,
+    "question_text": "Read the following statements about the photoelectric effect: 1. The kinetic energy of emitted photoelectrons increases with increasing intensity of incident light. 2. The photoelectric effect demonstrates the particle nature of light. 3. There is a threshold frequency below which no photoemission occurs, regardless of light intensity. Which of the above statements are correct?",
+    "option_a": "1 and 2 only",
+    "option_b": "2 and 3 only",
+    "option_c": "1 and 3 only",
+    "option_d": "1, 2 and 3",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 46,
+    "question_text": "Fill in the Blank: Ghoomar was originally performed to worship ____.",
+    "option_a": "Shiva",
+    "option_b": "Saraswati",
+    "option_c": "Krishna",
+    "option_d": "Ganesha",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 47,
+    "question_text": "Which new element was incorporated in the 2023 edition of the Logistics Performance Index (LPI)?",
+    "option_a": "It evaluates only land-based transport systems",
+    "option_b": "It ranks countries based on tourism potential",
+    "option_c": "It includes indicators measuring trade speed using big data",
+    "option_d": "It excludes lower-income income economies from the analysis",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 48,
+    "question_text": "Which institute has been studying the Pensilungpa Glacier in Zanskar, Ladakh, to monitor its retreat and mass balance?",
+    "option_a": "Indian National Centre for Ocean Information Services (INCOIS)",
+    "option_b": "Wadia Institute of Himalayan Geology (WIHG)",
+    "option_c": "Central Marine Fisheries Research Institute (CMFRI)",
+    "option_d": "Zoological Survey of India (ZSI)",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 49,
+    "question_text": "Earth's atmosphere reaches what height approximately(Kármán line )?",
+    "option_a": "100 km",
+    "option_b": "1000 km",
+    "option_c": "10,000 km",
+    "option_d": "100,000 km",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 50,
+    "question_text": "Consider the following statements: 1. Article 300 allows legal suits against State Governments. 2. The term 'Government of India' is a legal entity under Article 300. Which of the above is/are correct?",
+    "option_a": "Only 1",
+    "option_b": "Only 2",
+    "option_c": "Both 1 and 2",
+    "option_d": "Neither 1 nor 2",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 51,
+    "question_text": "Solve: [Equation omitted in source official exam PDF]",
+    "option_a": "7.75",
+    "option_b": "8.75",
+    "option_c": "9.75",
+    "option_d": "10.75",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 52,
+    "question_text": "Solve: [Equation omitted in source official exam PDF]",
+    "option_a": "3.5",
+    "option_b": "4.5",
+    "option_c": "6.5",
+    "option_d": "7.5",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 53,
+    "question_text": "If 40% of A = 0.5 of B = of C, then what is A: B: C?",
+    "option_a": "5 : 4 : 2",
+    "option_b": "10 : 8 : 5",
+    "option_c": "5 : 4 : 8",
+    "option_d": "5 : 10 : 20",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 54,
+    "question_text": "Two containers of equal capacity filled with milk and water. The first contains milk and water in the ratio 2 : 3, and the second in the ratio 3 : 2. The mixtures are then combined. What is the ratio of milk to water in the resulting mixture?",
+    "option_a": "1:1",
+    "option_b": "2:3",
+    "option_c": "3:2",
+    "option_d": "5:5",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 55,
+    "question_text": "A pair of shoes is listed at ₹ 800. After two successive discounts, it is sold for ₹ 612. If the first discount offered was 10%, what was the second discount percentage?",
+    "option_a": "12%",
+    "option_b": "14%",
+    "option_c": "15%",
+    "option_d": "18%",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 56,
+    "question_text": "A retailer marked a product 60% above its cost price. He provided two successive discounts of 25% and 10%. If he earned a profit of ₹160, what was the cost price of the product?",
+    "option_a": "₹2000",
+    "option_b": "₹2500",
+    "option_c": "₹1080",
+    "option_d": "₹1000",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 57,
+    "question_text": "If(x + = 7), find the value of x³ +",
+    "option_a": "256",
+    "option_b": "301",
+    "option_c": "352",
+    "option_d": "298",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 58,
+    "question_text": "An educational fund of ₹6,00,000 earns simple interest at 9% per annum. This annual interest is used to grant three scholarships. If the first and third scholarships are ₹18,000 and ₹22,000 respectively, what is the value of the second scholarship?",
+    "option_a": "₹14,000",
+    "option_b": "₹16,000",
+    "option_c": "₹18,000",
+    "option_d": "₹20,000",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 59,
+    "question_text": "Suppose ₹X is invested, and after 2 years at 5% simple interest, it yields ₹Y interest. If ₹Y is then invested for 2 years at 5% simple interest, it yields ₹Z interest. Which of the following is true?",
+    "option_a": "Y = X + Z",
+    "option_b": "Y² = XZ",
+    "option_c": "X = Y + Z",
+    "option_d": "X² = Y + Z",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 60,
+    "question_text": "An airplane flying at a height of 300 m notices the angles of depression to two boats located on opposite sides as 45° and 30°. Find the distance between the two boats.",
+    "option_a": "300(√3 - 1) m",
+    "option_b": "300√3 m",
+    "option_c": "300(1 + ) m",
+    "option_d": "300(√3 + 1) m",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 61,
+    "question_text": "A statue that is 1.6 meters in height is positioned on top of a pedestal. From a location on the ground, the angle of elevation to the top of the statue measures 60 degrees, while the angle of elevation to the top of the pedestal from the same point is 45 degrees. Determine the height of the pedestal.",
+    "option_a": "0.8(√3 – 1) m",
+    "option_b": "1.6(√3 – 1) m",
+    "option_c": "0.8(√3 + 1) m",
+    "option_d": "1.6(√3 + 1) m",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 62,
+    "question_text": "The inner and outer radius of a hollow hemispherical shell are 7 cm and 14 cm respectively. Find the approximate volume of the metal used.",
+    "option_a": "5987.25 cm³",
+    "option_b": "5026.09 cm³",
+    "option_c": "4500.8 cm³",
+    "option_d": "5500 cm³",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 63,
+    "question_text": "A right circular cone is divided into two sections by a plane that is parallel to the base, with the volumes of the frustum and the smaller cone having a ratio of 7:1. Determine the ratio of their heights.",
+    "option_a": "1:1",
+    "option_b": "1:7",
+    "option_c": "5:1",
+    "option_d": "6:1",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 64,
+    "question_text": "If the side of a regular hexagon is doubled, what happens to its area?",
+    "option_a": "Doubled",
+    "option_b": "Tripled",
+    "option_c": "Quadrupled",
+    "option_d": "Increases 6 times",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 65,
+    "question_text": "A cylindrical storage container has a base radius of 3 cm. It is designed with sections whose heights form an arithmetic progression, starting from 2 cm for the bottom section and reaching 10 cm for the topmost section, covering a total of 5 sections. What is the total volume of the container? (Use π=3.14)",
+    "option_a": "753.6 cm³",
+    "option_b": "847.8 cm³",
+    "option_c": "942.0 cm³",
+    "option_d": "1130.4 cm³",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 66,
+    "question_text": "Find the slope of the line 7x + 4y = 8.",
+    "option_a": "-7/4",
+    "option_b": "7/4",
+    "option_c": "-4/7",
+    "option_d": "4/7",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 67,
+    "question_text": "What is the total sum of the exterior angles of any polygon, one at each vertex?",
+    "option_a": "180°",
+    "option_b": "360°",
+    "option_c": "Depends on the number of sides",
+    "option_d": "540°",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 68,
+    "question_text": "In triangle ABC, medians AD, BE, and CF intersect at the Centroid G. If the area of triangle ABC is 60 cm², what is the area of triangle GBC?",
+    "option_a": "10 cm²",
+    "option_b": "15 cm²",
+    "option_c": "20 cm²",
+    "option_d": "30 cm²",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 69,
+    "question_text": "Given, , then what is the value of x?",
+    "option_a": "3",
+    "option_b": "4",
+    "option_c": "5",
+    "option_d": "2",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 70,
+    "question_text": "Two circles have radii in the ratio 2 : 1. The length of a direct common tangent is 8 cm, and the distance between their centers is 10 cm. What is the radius of the smaller circle?",
+    "option_a": "3 cm",
+    "option_b": "4 cm",
+    "option_c": "5 cm",
+    "option_d": "6 cm",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 71,
+    "question_text": "In a circle having a radius 10 cm, a chord is 6 cm away from the center. Find the length of the chord.",
+    "option_a": "16 cm",
+    "option_b": "12 cm",
+    "option_c": "14 cm",
+    "option_d": "18 cm",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 72,
+    "question_text": "If tanA + cotA = 4 and tanA · cotA = 1, find tan²A + sec²A.",
+    "option_a": "14 + 8√3",
+    "option_b": "15 + 8√3",
+    "option_c": "16 + 6√2",
+    "option_d": "13 + 4√3",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 73,
+    "question_text": "If sin A = 3/5, what is cosA? (for acute angle A)",
+    "option_a": "3/4",
+    "option_b": "4/5",
+    "option_c": "5/4",
+    "option_d": "3/5",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 74,
+    "question_text": "Simplify: (0.25³ + 0.05³) ÷ (0.5³ + 0.1³)",
+    "option_a": "0.25",
+    "option_b": "0.125",
+    "option_c": "0.5",
+    "option_d": "0.75",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 75,
+    "question_text": "Find the value of (0.05³ + 0.005³) ÷ (0.25³ + 0.025³) (0.05³ + 0.005³) ÷ (0.25³ + 0.025³)",
+    "option_a": "1/5",
+    "option_b": "1/25",
+    "option_c": "1/125",
+    "option_d": "1/625",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 76,
+    "question_text": "Select the most appropriate synonym of the given word: COMPLAISANT",
+    "option_a": "Insecure",
+    "option_b": "Anxious",
+    "option_c": "Alert",
+    "option_d": "Submissive",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 77,
+    "question_text": "Select the most appropriate antonym of the given word. Opprobrium",
+    "option_a": "Disgrace",
+    "option_b": "Contempt",
+    "option_c": "Honor",
+    "option_d": "Censure",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 78,
+    "question_text": "Choose the correct meaning of idiom: The sword of Damocles",
+    "option_a": "A pleasant illusion",
+    "option_b": "A constant threat hanging over someone",
+    "option_c": "A royal invitation",
+    "option_d": "A wise judgment",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 79,
+    "question_text": "Choose the correct meaning of idiom: Keeps a good table",
+    "option_a": "Serves generous and high-quality meals",
+    "option_b": "Maintains a disciplined home",
+    "option_c": "Follows religious rules strictly",
+    "option_d": "Provides food to the poor regularly",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 80,
+    "question_text": "Which is the correct spelling of a word meaning 'clever or skillful'?",
+    "option_a": "Adept",
+    "option_b": "Adapt",
+    "option_c": "Addept",
+    "option_d": "Adeptt",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 81,
+    "question_text": "Choose the correct one-word substitution for: 'One who lives entirely for pleasure'.",
+    "option_a": "Hermit",
+    "option_b": "Reveler",
+    "option_c": "Glutton",
+    "option_d": "Epicure",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 82,
+    "question_text": "Choose the correct one-word substitution for: 'A person who believes in fate or destiny'.",
+    "option_a": "Dreamer",
+    "option_b": "Realist",
+    "option_c": "Idealist",
+    "option_d": "Fatalist",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 83,
+    "question_text": "Select the appropriate word form: The policy's lack of clarity led to widespread ____.",
+    "option_a": "confuse",
+    "option_b": "confusing",
+    "option_c": "confusion",
+    "option_d": "confused",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 84,
+    "question_text": "Select the correct option: She arrived at the interview ten minutes early, ___ showed professionalism.",
+    "option_a": "what",
+    "option_b": "which",
+    "option_c": "that",
+    "option_d": "this",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 85,
+    "question_text": "Find the part of the sentence that contains an error: The CEO demanded that the report is submitted (1)/ to the board (2)/ not later than Wednesday afternoon (3)/ for immediate evaluation. (4)/",
+    "option_a": "(1)",
+    "option_b": "(2)",
+    "option_c": "(3)",
+    "option_d": "(4)",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 86,
+    "question_text": "Find the part of the sentence that contains an error: No sooner had the proposal been circulated (1)/ that objections were raised (2)/ regarding its feasibility and financial implications (3)/ across all departments. (4)",
+    "option_a": "(1)",
+    "option_b": "(2)",
+    "option_c": "(3)",
+    "option_d": "(4)",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 87,
+    "question_text": "Change the following from active to passive: They feed the animals twice a day.",
+    "option_a": "The animals are fed twice a day.",
+    "option_b": "The animals were fed twice a day.",
+    "option_c": "The animals are being fed twice a day.",
+    "option_d": "The animals have been fed twice a day.",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 88,
+    "question_text": "Select the sentence containing the homonym of the highlighted word: The cleric wore a silk amice over his alb during the liturgy.",
+    "option_a": "The altar server retrieved the amice from the vestry.",
+    "option_b": "The novelist described her protagonist's scarf as an amice.",
+    "option_c": "The bishop adjusted the amice before the blessing.",
+    "option_d": "The amice was embroidered with gold thread.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 89,
+    "question_text": "Convert the sentence provided below from its passive voice structure to an active voice structure: The draft is understood to have been reviewed by the legal department last week.",
+    "option_a": "The legal department is understood to have reviewed the draft last week.",
+    "option_b": "The draft was reviewed last week, as is understood.",
+    "option_c": "It was understood the legal team is reviewing the draft.",
+    "option_d": "The draft understood itself to be reviewed.",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 90,
+    "question_text": "Choose the most suitable option to replace the highlighted part of the sentence: He is having a car for five years.",
+    "option_a": "has",
+    "option_b": "had",
+    "option_c": "has had",
+    "option_d": "is having",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 91,
+    "question_text": "Choose the most suitable option to replace the highlighted part of the sentence: He worked very hard lest he may fail.",
+    "option_a": "in order that he does not fail",
+    "option_b": "for not failing",
+    "option_c": "lest he should fail",
+    "option_d": "so that he did not fail",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 92,
+    "question_text": "PASSAGE (Q.92 - Q.96) Read the following passage and answer the questions based on the passage : In the tapestry of human civilization, communication functions as the warp thread—a foundational axis around which all societal patterns are woven. Far from being a mere conduit of information, communication embodies the dynamic interplay of perception, cognition, intention, and empathy. The profound necessity of communication arises not solely from the need to disseminate knowledge or coordinate actions, but from the imperative to construct meaning, cultivate understanding, and negotiate the complex terrain of human relationships. Historically, communication has been the catalytic force behind societal transformation—from the oral traditions that preserved mythological cosmologies to the written word that enabled legal systems and codified morality. The printing press, the telegraph, and now digital media are not just technological milestones; they are paradigmatic shifts in the communicative capacity of humankind. Each advancement has not only expanded the velocity and reach of messages but has also redefined the epistemological contours of truth, authority, and discourse. At the interpersonal level, communication is far from unidirectional. It encompasses verbal, non-verbal, and paralinguistic dimensions that function in concert to convey nuance and intention. Eye contact, silence, body posture, and even prosody become carriers of latent meaning—often transcending the spoken word. The failure to decode or acknowledge these layers frequently leads to misapprehension, conflict, or alienation. Thus, effective communication is not merely the transmission of speech, but the art of calibrated expression and attentive reception. In professional and organizational contexts, the strategic deployment of communication is pivotal. It determines leadership efficacy, influences team cohesion, and governs decision-making processes. Hierarchical structures often obfuscate open communication, resulting in informational asymmetries and the erosion of institutional trust. In contrast, transparent, dialogic, and inclusive communication frameworks nurture a culture of accountability and innovation. Cultural semiotics also shape communication, embedding within language a constellation of values, assumptions, and power dynamics. What is deemed assertive in one cultural matrix may be interpreted as aggressive in another. Consequently, intercultural communication necessitates a heightened awareness of contextual sensitivity, linguistic pluralism, and implicit biases. In an era marked by algorithmic echo chambers and hyper-mediated realities, the ethical imperative of responsible communication becomes paramount. The virality of misinformation, the commodification of attention, and the erosion of discourse norms threaten the democratic fabric of societies. Hence, communicative competence today must be coupled with critical media literacy, epistemic humility, and ethical discernment. Ultimately, communication is not ancillary to human existence—it is constitutive of it. To communicate is to assert presence, to co-create reality, and to engage in the continuous reconstitution of the social world. In its highest form, communication becomes a moral act: a commitment to understanding, mutuality, and the transcendence of solipsism. Which of the following best encapsulates the primary thesis of the passage?",
+    "option_a": "Communication is a tool for fast information delivery.",
+    "option_b": "It is an act of linguistic persuasion.",
+    "option_c": "Communication is foundational to constructing shared human realities.",
+    "option_d": "It functions primarily as a cultural symbol across civilizations.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 93,
+    "question_text": "In the context of intercultural communication, what is implied by the phrase “constellation of values”?",
+    "option_a": "Cultures are astronomically defined.",
+    "option_b": "Values are isolated and static in different cultures.",
+    "option_c": "Communication patterns are random across cultures.",
+    "option_d": "Communication carries embedded assumptions and norms shaped by culture.",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": 94,
+    "question_text": "According to the passage, what role do non-verbal cues primarily serve in interpersonal communication?",
+    "option_a": "They replace verbal communication entirely.",
+    "option_b": "They act as secondary embellishments.",
+    "option_c": "They convey subtle or latent meanings often missed by verbal speech.",
+    "option_d": "They are irrelevant in professional contexts.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 95,
+    "question_text": "What does the passage suggest is the consequence of informational asymmetry within hierarchical institutions?",
+    "option_a": "Increased productivity due to streamlined authority.",
+    "option_b": "Erosion of institutional trust and communication breakdown.",
+    "option_c": "Faster decision-making due to lack of dissent.",
+    "option_d": "Decentralization of organizational roles.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 96,
+    "question_text": "The phrase \"epistemic humility\" in the passage most likely refers to which of the following?",
+    "option_a": "Reluctance to speak in public discourse.",
+    "option_b": "Acceptance of one's cultural superiority.",
+    "option_c": "Awareness of the limits of one's knowledge in communicative contexts.",
+    "option_d": "Dependence on traditional forms of communication.",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 97,
+    "question_text": "Select the correct option for the Direct Speech conversion of the sentence below. He remarked that the sculpture would have commanded greater gravitas had the pedestal been proportionally austere.",
+    "option_a": "He said, \"The sculpture would have commanded greater gravitas had the pedestal been proportionally austere.\"",
+    "option_b": "He said, \"If the pedestal is proportionally austere, the sculpture commands greater gravitas.\"",
+    "option_c": "He said, \"The sculpture will command greater gravitas if the pedestal had been austere.\"",
+    "option_d": "He said, \"Had the pedestal been austere, the sculpture must have commanded greater gravitas.\"",
+    "correct_answer": "A"
+  },
+  {
+    "question_number": 98,
+    "question_text": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. She said, \"Why did you lie to me?\"",
+    "option_a": "She asked why I lied to her.",
+    "option_b": "She asked why I had lied to her.",
+    "option_c": "She asked why had I lied to her.",
+    "option_d": "She asked why did I lie to her.",
+    "correct_answer": "B"
+  },
+  {
+    "question_number": 99,
+    "question_text": "Rearrange the following sentences to form a meaningful passage: 1. Machine learning models require large datasets to train. 2. Data preprocessing ensures that the input is clean and formatted correctly. 3. The model is tested to evaluate its accuracy. 4. Once trained, the model can be deployed for real-world applications.",
+    "option_a": "2-1-3-4",
+    "option_b": "3-1-2-4",
+    "option_c": "1-2-3-4",
+    "option_d": "4-3-2-1",
+    "correct_answer": "C"
+  },
+  {
+    "question_number": 100,
+    "question_text": "Rearrange the following sentences in correct order to make a logical passage. 1. The first step is to recognize unhealthy patterns. 2. Breaking bad habits requires discipline and self-awareness. 3. Seeking support from friends or professionals can be helpful. 4. Consistency in applying new behaviors is key to lasting change.",
+    "option_a": "2-1-3-4",
+    "option_b": "2-4-1-3",
+    "option_c": "3-4-2-1",
+    "option_d": "2-3-1-4",
+    "correct_answer": "A"
+  }
+]

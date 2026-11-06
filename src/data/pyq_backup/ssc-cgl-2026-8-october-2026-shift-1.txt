@@ -1,0 +1,788 @@
+Q.1: A says, "My father is the only son of B." How is B related to A?
+A. Grandfather
+B. Father
+C. Uncle
+D. Cousin
+Answer: A
+
+Q.2: Find the missing number in the following series: 21, 39, 119, ?, 707, 1411
+A. 205
+B. 215
+C. 225
+D. 235
+Answer: D
+
+Q.3: The following symbols are used to represent family relationships:
+
+1. P + Q indicates that P is the father of Q.
+
+2. P × Q indicates that P is the mother of Q.
+
+3. P ÷ Q indicates that P is the brother of Q.
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-1_q3_opt_A.png)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-1_q3_opt_B.png)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-1_q3_opt_C.png)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-1_q3_opt_D.png)
+Answer: A
+
+Q.4: P – Q indicates that P is the sister of Q. Using the above coding pattern, determine the relationship of A with D in the given expression: A + B – C × D
+A. 1
+B. 2
+C. 3
+D. 4
+Answer: A
+
+Q.5: Ravi and Seema are brother and sister. Amit and Vijay are the sons of Mohan and Radha. Radha is the mother-in-law of Seema's mother, Geeta. Tara, Tina, and Tripti are the daughters of Amit and the only cousins of Ravi. How many children does Vijay have?
+A. 1
+B. 2
+C. 0
+D. 3 1 INTELLIGENCE
+Answer: C
+
+Q.6: In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 2 4 5 10 8 9 96 ?
+A. 52
+B. 66
+C. 48
+D. 74
+Answer: C
+
+Q.7: A centre code follows the sequence of [n2] - [n3]. Which of the following centre code does not follow this pattern?
+A. 16-64
+B. 25-125
+C. 36-216
+D. 49-345
+Answer: D
+
+Q.8: ![Figure](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-1_p2_x26.jpeg)
+A. 5
+B. 12
+C. 10
+D. 9
+Answer: A
+
+Q.9: Study the pattern in the given series and find the next set of letters in the series. WHE, SIA, OJW, ?
+A. KKS
+B. KOS
+C. KKT
+D. KKR
+Answer: A
+
+Q.10: Select the odd number pair from the given alternatives.
+A. 32, 1056
+B. 28, 816
+C. 23, 552
+D. 19, 380
+Answer: B
+
+Q.11: Read the question carefully and choose the most appropriate option. You are a hospital administrator. Patients are complaining about long waiting times, and staff members are blaming each other for the delays. What would you do?
+A. Warn all staff members without examining the actual causes of delays.
+B. Take no action because disagreements among staff are very common.
+C. Replace the entire team and recruit new employees immediately instead.
+D. Review the process carefully and involve staff in improving services.
+Answer: D
+
+Q.12: Choose the best alternative. @# $ : $ #@ :: &*! : ?
+A. !&*
+B. *&!
+C. &!*
+D. !*&
+Answer: D
+
+Q.13: What should come in place of question mark (?) in the following analogy? ZYX : WVU :: TSR : ?
+A. QPO
+B. RQP
+C. PON
+D. QPN
+Answer: A
+
+Q.14: In the given question, a few statements have been given followed by conclusions based on them. Consider the statements to be true and answer which of the given conclusions logically follow the statement. Statements
+
+1. All contracts are agreements.
+
+2. No agreement is unenforceable.
+
+3. Some documents are contracts. Conclusions
+
+I. Some documents are agreements.
+
+II. Some documents are not unenforceable.
+
+III. No contract is unenforceable.
+
+IV. Some agreements are documents.
+A. Only I, II and III
+B. Only I, III and IV follow follow
+C. All four follow
+D. Only I and III follow
+Answer: C
+
+Q.15: Which sequence of operational signs will correctly replace the blanks to satisfy the following expression? 19 □ 5 □ 4 □ 2 = 37
+A. ×, -, ÷
+B. +, x, -
+C. x, +, ÷
+D. +, x, +
+Answer: B
+
+Q.16: Read the statement carefully and assume it to be true. Then examine the two conclusions given below it and decide which conclusion(s), if any, logically follow from the statement.
+
+Statement: A company aims to improve customer satisfaction by upgrading its service quality.
+
+Conclusions:
+
+I. All existing customers are currently dissatisfied.
+
+II. The company believes service quality affects customer satisfaction.
+A. Only Conclusion I follows
+B. Both Conclusions I and II follow
+C. Only Conclusion II follows
+D. Neither conclusion I nor II follows
+Answer: C
+
+Q.17: If '♦' means +, '△' means -, '★' means ×, and '○' means ÷, find (9 ♦ 6) ★ [(56 ○ 7) △ (2 ★
+
+2)].
+A. 20
+B. 40
+C. 60
+D. 80
+Answer: C
+
+Q.18: In the following question a statement is given followed by some assumptions. Read the assumptions carefully and choose the appropriate option.
+
+Statement: A publishing house is launching a new magazine and is spending heavily on advertisements. To meet promotional expenses, it plans to cut unnecessary costs and raise funds from investors. Assumptions:
+
+I. The new magazine has the potential to attract readers.
+
+II. All investors will be willing to invest in the magazine.
+A. Only I is implicit.
+B. Only II is implicit.
+C. Neither I nor II is implicit.
+D. Both I and II are implicit.
+Answer: A
+
+Q.19: An office has a policy: “Employees who work overtime for more than 4 hours are entitled to a paid dinner voucher.” An employee works 3 hours and 55 minutes of overtime. He is starving and requests a voucher. As a manager, you know the policy is strict. What is your judgment?
+A. Deny the voucher to maintain strict discipline.
+B. Give the voucher as an exception to build rapport.
+C. Reject voucher but allow 5-minute time log extension to meet threshold.
+D. Approve the voucher and tell him to ignore the 4-hour policy in the future.
+Answer: A
+
+Q.20: In the following question two statements are given and these statements are followed by two conclusions. You have to take the given two statements to be true even if they seem to be at variance from commonly known facts. Read the conclusions and then decide which of the given conclusions logically follows from the two given statements.
+
+Statements: All apples are fruits. All fruits are food.
+
+Conclusions:
+
+I. All apples are food.
+
+II. Some food are fruits.
+A. Only conclusion II follows
+B. Both conclusions I and II follow
+C. Only conclusion I follows
+D. Neither conclusion I nor conclusion II follows
+Answer: B
+
+Q.21: In a certain code language, "AMOUNT" is written as "AnOvNu." How will "DEPEND" be written in the same code language?
+A. DfPfNe
+B. DFpfNe
+C. DfpfnE
+D. DfPfnE
+Answer: A
+
+Q.22: In the following question, three statements are given followed by three conclusions. Consider the statements to be true even if they differ from commonly known facts. Read the conclusions carefully and decide which of the conclusions logically follow from the given statements.
+
+Statements: Some flowers are trees. All trees are rivers. No river is a mountain.
+
+Conclusions:
+
+I. Some flowers are rivers.
+
+II. All trees are mountains.
+
+III. Some rivers are not mountains.
+A. Both conclusions I and II follow
+B. All conclusions follow
+C. Both conclusions I and III follow
+D. Both conclusions II and III follow
+Answer: C
+
+Q.23: An airline waives the rebooking fee if a request is made 24 hours or more before departure, provided the ticket is a Flex or Business class fare. For any requests made less than 24 hours before departure, a rebooking fee applies to all fare types — except that Elite-status passengers are always exempt from this fee. Passenger details: Holds an Economy Saver fare, requests a change 3 hours before departure, and holds Elite status.
+A. Free rebooking
+B. Rebooking fee applies
+C. Rebooking denied outright
+D. Refer to the duty supervisor
+Answer: A
+
+Q.24: Select the option that is related to the third word in the same way as the second word is related to the first word. (The words must be considered as meaningful English words and must not be related to each other based on the number of letters/number of consonants/vowels in the word.) Bauxite : Aluminium :: Cinnabar : ?
+A. Lead
+B. Mercury
+C. Zinc
+D. Tin
+Answer: B
+
+Q.25: In each of the following questions, four options have been given, of which three are alike in some way and one is different. Choose the odd one out.
+A. Japan - Yen
+B. South Korea - Won
+C. China - Yuan
+D. Vietnam - Baht
+Answer: D
+
+Q.26: The "Goods and Services Tax (GST)" council is responsible for making recommendations on various aspects of GST. Who chairs this council?
+A. The President of India
+B. The Prime Minister of India
+C. The Union Finance Minister
+D. The Governor of the Reserve Bank of India
+Answer: C
+
+Q.27: The "Fiscal Responsibility and Budget Management (FRBM) Act" was enacted in India with the aim of bringing about fiscal discipline. Which of the following is a key target or provision of the FRBM Act?
+A. To ensure a fixed exchange rate for the Indian Rupee.
+B. To set limits on the government's borrowing and mandate the reduction of fiscal deficit and revenue deficit.
+C. To establish a national planning commission for economic development.
+D. To regulate the flow of foreign portfolio investment into the country.
+Answer: B
+
+Q.28: Which sport is associated with the Thomas Cup?
+A. Badminton
+B. Tennis
+C. Hockey
+D. Cricket
+Answer: A
+
+Q.29: In which event did India earn its first World Championship gold in athletics?
+A. Men's Javelin
+B. Women's Long Throw Jump
+C. Women's 400m
+D. Men's Steeplechase 4 AWARENESS
+Answer: A
+
+Q.30: Where was the setting for the final match of the 2021 Indian Super League season?
+A. Margao
+B. Kochi
+C. Kolkata
+D. Mumbai
+Answer: A
+
+Q.31: According to BSA, if a person refuses to answer a material question in court what are the consequences?
+A. Adverse inference may be drawn
+B. They are held guilty automatically
+C. Their evidence is expunged
+D. The case is dismissed
+Answer: A
+
+Q.32: Who was the first woman chairperson of India's markets regulator, Securities and Exchange Board of India (SEBI)?
+A. Arundhati
+B. Madhabi Puri Buch Bhattacharya
+C. Naina Lal Kidwai
+D. Chitra Ramkrishna
+Answer: B
+
+Q.33: Who is the 26th Governor of the Reserve Bank of India since December 2024?
+A. Urjit Patel
+B. Sanjay Malhotra
+C. D. Subbarao
+D. Raghuram Rajan
+Answer: B
+
+Q.34: Who among the following rulers is known as the Napoleon of India?
+A. Samudragupta
+B. Chandragupta II
+C. Chandragupta
+D. Kanishka Maurya
+Answer: A
+
+Q.35: Which of the following Census years has India recorded the highest annual exponential population growth rate?
+A. 1971
+B. 1981
+C. 1991
+D. 2001
+Answer: A
+
+Q.36: Which of the following correctly describes the structure introduced by Pitt’s India Act?
+A. Only the Governor-General had full authority.
+B. Board of Control had three directors and reported to the Company.
+C. Board of Control included cabinet ministers and supervised Indian governance.
+D. A royal commission was sent to directly govern India.
+Answer: C
+
+Q.37: The Second Jain Council was held in 512 CE at Valabhi (Gujarat) under the chairmanship of which Jain acharya?
+A. Devardhigani
+B. Acharya Kshamashraman Bhadrabahu Swamy
+C. Acharya
+D. Vardhamana Sthulabhadra Muni Mahavira Swamy
+Answer: A
+
+Q.38: Which Article of the Indian Constitution specifies the languages to be used for transacting business in Parliament?
+A. Article 110
+B. Article 120
+C. Article 121
+D. Article 122
+Answer: B
+
+Q.39: What is the term for the natural tendency of an object to resist any change in its state of rest or uniform motion?
+A. Force applied
+B. Acceleration
+C. Inertia of the
+D. Momentum of an object object
+Answer: C
+
+Q.40: Which African country lies on the western rim of the Indian Ocean?
+A. Kenya
+B. Libya
+C. Tunisia
+D. Morocco
+Answer: A
+
+Q.41: A Chief Judicial Magistrate issues an administrative order redistributing criminal cases among the Judicial Magistrates subordinate to him. One of the Magistrates challenges the order, arguing that only the Sessions Judge has the authority to distribute judicial business. Which of the following is correct under the Bharatiya Nagarik Suraksha Sanhita, 2023 in India?
+A. Only the sessions judge may distribute magistrate business.
+B. Chief Judicial Magistrate empowered to distribute work among Judicial Magistrates.
+C. Business distribution requires approval of the executive magistrate.
+D. The High Court alone may allocate all criminal cases.
+Answer: B
+
+Q.42: In India, under which situation can Parliament legislate on a subject in the State List without declaring a national emergency?
+A. When the Lok Sabha passes a resolution by simple majority.
+B. Rajya Sabha passes a resolution with a two-thirds majority of members present and voting.
+C. When the President issues an ordinance.
+D. When the Supreme Court advises the union government.
+Answer: B
+
+Q.43: What was the primary objective of granting Maharatna, Navratna and Miniratna status to selected Central Public Sector Enterprises under the post-1991 economic reforms?
+A. To increase Government ownership in all sectors
+B. To expand industrial licensing and price regulation
+C. To replace private investment with public investment
+D. To enhance autonomy and improve competitiveness
+Answer: D
+
+Q.44: Who was the Governor of the Reserve Bank of India (RBI) during the 1991 balance of payments crisis?
+A. C. Rangarajan
+B. I.G. Patel
+C. Manmohan Singh
+D. S. Venkitaramanan
+Answer: D
+
+Q.45: Literacy is considered essential for human development because it enables people to:
+A. Acquire industrial knowledge, skills, and awareness
+B. Acquire import related knowledge, skills, and awareness
+C. Acquire knowledge, skills, and awareness
+D. Acquire taxation related knowledge, skills, and awareness
+Answer: C
+
+Q.46: Which of the following is reflected in the knowledge dimension of the Human Development Index (HDI)?
+A. Population growth
+B. Educational attainment
+C. Internet
+D. Technological connectivity only patents only
+Answer: B
+
+Q.47: What were the specific targeted growth rates for Real GDP and the agriculture sector established under the Twelfth Five-Year Plan (2012–2017)?
+A. Real GDP: 9.0%, Agriculture: 3.7%
+B. Real GDP: 8.0%, Agriculture: 4.0%
+C. Real GDP: 7.6%, Agriculture: 4.5%
+D. Real GDP: 6.5%, Agriculture: 3.5%
+Answer: C
+
+Q.48: A 2 kg block moving at 6 m/s collides headon with a stationary 4 kg block. The two blocks stick together after the collision. Assuming no external horizontal force acts on the system, what fraction of the initial kinetic energy is lost?
+A. 1
+B. 1/3
+C. 1 2
+D. 2/3
+Answer: D
+
+Q.49: Under whose leadership was Purna Swaraj formally adopted at the Lahore Session?
+A. Subhas Chandra
+B. Rajendra Prasad Bose
+C. Jawaharlal Nehru
+D. Vallabhbhai Patel
+Answer: C
+
+Q.50: A person has difficulty digesting fats because bile is not being produced properly. Which organ is most likely affected?
+A. Heart
+B. Liver
+C. Kidney
+D. Lungs
+Answer: B
+
+Q.51: A right prism has a hexagonal base with an area of 90 cm². The height of the prism is 20 cm. Find the volume.
+A. 1800 cm³
+B. 2000 cm³
+C. 2200 cm³
+D. 2500 cm³
+Answer: A
+
+Q.52: Simplify the expression: √0.25 + √0.36 + √1.44 + √0.0009 .
+A. 2.33
+B. 1.67
+C. 4.71
+D. 3.19
+Answer: A
+
+Q.53: In a triangle, the centroid divides each median in the ratio 2: 1. What is the distance between the centroid and the orthocenter in an equilateral triangle?
+A. Equal to the side length
+B. Zero
+C. Half the side length
+D. One-third of the side length
+Answer: B
+
+Q.54: Find the least perfect square divisible by 3, 4, 5, 6, and 8.
+A. 3800
+B. 3600
+C. 4600
+D. 4200
+Answer: B
+
+Q.55: A and B started a business with capital in the ratio 5 : 9. At the end of 8 months, A withdrew his capital. If they receive profits in the ratio 4 : 9, for how many months was B's capital used in the business?
+A. 6 months
+B. 9 months
+C. 12 months
+D. 10 months
+Answer: D
+
+Q.56: A sum becomes 9 times its original value in 4 years under compound interest. In how many years will it become 81 times the original amount?
+A. 8 years
+B. 7 years
+C. 5 years
+D. 6 years
+Answer: A
+
+Q.57: A floor is covered by regular hexagonal tiles of side 12 cm. If 5% are broken during installation, and total area to be covered is 12 m², approximately how many tiles are needed?
+A. 343 tiles
+B. 338 tiles
+C. 318 tiles
+D. 323 tiles
+Answer: D
+
+Q.58: The area of a quadrant of a circle is 49π cm². 4 What is the radius of the circle?
+A. 9 cm
+B. 4 cm
+C. 7 cm
+D. 6 cm
+Answer: C
+
+Q.59: A cone has a volume of 450π cm³ and a height of 6 cm. Find the radius of its base.
+A. 15 cm
+B. 13 cm
+C. 19 cm
+D. 18 cm
+Answer: A
+
+Q.60: An item is sold by a manufacturer to a wholesaler at a profit of 10%. Then it is sold by the wholesaler to a retailer at a profit of 20%. The retailer again sells the item to a customer for ₹56,100 at a loss of 15%. Find the cost price of the item to the manufacturer.
+A. ₹60,000
+B. ₹70,000
+C. ₹50,000
+D. ₹80,000
+Answer: C
+
+Q.61: A wholesaler allows a discount of 20% on the marked price to a retailer. The retailer sells the item at a 5% discount on the marked price. If the retailer uses a faulty weight that weighs 900g for every 1kg while selling, what is his overall approximate profit percentage?
+A. 42%
+B. 56%
+C. 74%
+D. 32%
+Answer: D
+
+Q.62: A man standing on a tower observes a car approaching him. The angle of depression changes from 30° to 60° in 8 minutes. Find the time taken by the car to reach the tower from that position.
+A. 5 mins
+B. 4 mins
+C. 2 mins
+D. 6 mins
+Answer: B
+
+Q.63: The measure of supplement of ∠y is 40° more than twice the measure of the complement of ∠y. Find the sum in degrees of the supplement and complement of ∠y.
+A. 270°
+B. 150°
+C. 190°
+D. 110°
+Answer: B
+
+Q.64: If 0°< θ< 90° , find the value of √1+sin 1−sin θ θ −tan θ .
+A. sin θ
+B. cos θ
+C. sec θ
+D. tan θ
+Answer: A
+
+Q.65: If √5 sin θ= 1 , find the value of 2 tan θ+√5 sin θ . √5 cos θ−2 tan θ
+A. 5
+B. 4
+C. 2
+D. 1
+Answer: C
+
+Q.66: A solid metallic cone of radius 6 cm and height 12 cm is melted and recast into small solid spheres of radius 1 cm. How many such spheres can be made?
+A. 86
+B. 93
+C. 102
+D. 108
+Answer: D
+
+Q.67: In triangle ABC, points D and E lie on sides AB and AC, respectively, such that DE is parallel to BC. If AD: DB = 2: 3 and AE = 8 cm, then find the length of AC.
+A. 12 cm
+B. 18 cm
+C. 20 cm
+D. 24 cm
+Answer: C
+
+Q.68: A farmer borrowed ₹2,50,000 at simple interest under a rural credit scheme. After 7 years, he repaid ₹3,72,500. If another farmer borrowed ₹4,00,000 at the same rate but for 10 years, how much more interest would the second farmer pay than that paid by the first farmer?
+A. ₹1,50,900
+B. ₹1,51,000
+C. ₹1,55,200
+D. ₹1,57,500
+Answer: D
+
+Q.69: A commercial property needs painting. 60% of the total surface area consists of walls and 40% consists of ceilings. Painter E can paint all the walls in 6 hours but would take 12 hours to paint the ceilings. Painter F can paint all the ceilings alone in 4 hours, but the walls alone would take her 18 hours. They start working simultaneously, splitting the tasks optimally based on their respective speeds. The moment either painter finishes their initial assignment, they immediately join the other to help finish the remaining surface. How long will it take them to paint the entire property?
+A. 5.5 hrs
+B. 6 hrs
+C. 6.4 hrs
+D. 8 hrs
+Answer: B
+
+Q.70: Two software engineers, Naina and Kapil, are debugging a block of code. Working independently, Naina can clear 10 % of the code per hour and Kapil can clear 8% per hour. However, when working together in the same virtual environment, the communication overhead reduces each of their individual efficiencies by exactly 10%. If they work together for 2 hours after which Kapil leaves, how much more time will it take Naina so that a total of 40% of the block of code gets debugged?
+A. 40 mins
+B. 42.8 mins
+C. 44.5 mins
+D. 45.6 mins
+Answer: D
+
+Q.71: Evaluate: cosec17°−1 sec73°
+A. 0
+B. -1
+C. 1
+D. 2
+Answer: A
+
+Q.72: If x = 109 and y = 98, evaluate the expression x² - y² + 2x - 2y without using direct multiplication.
+A. 1089
+B. 1386
+C. 2299
+D. 2357
+Answer: C
+
+Q.73: If p + q + r = 0 and pq + qr + rp = -18, then find the value of p² + q2 + r².
+A. -18
+B. -36
+C. 0
+D. 36
+Answer: D
+
+Q.74: A swimming pool is designed with a regular octagonal floor plan of side length 20 m. The floor of the pool is to be tiled using tiles that cover 0.25 m² each. Assuming no material is wasted during cutting, find the total number of tiles required (approximately). [Take √2 ≈1.4142 ]
+A. 6534
+B. 7999
+C. 7726
+D. 7000
+Answer: C
+
+Q.75: Simplify the following expression: √3+1 √3−1 + √3−1 √3+1
+A. 4
+B. 3√3
+C. 2√3
+D. 2
+Answer: A
+
+Q.76: Choose the correct direct speech transformation of the sentence below. The banner welcomed visitors to Belgium.
+A. The banner said, "Welcome to Belgium."
+B. The banner said, "People, welcome to Belgium."
+C. The banner said, "Belgium welcomes you."
+D. The banner said, "Welcome Belgium."
+Answer: A
+
+Q.77: Rearrange the parts of the sentence in the correct order. The global push for sustainability P. necessitating urgent collaboration among nations Q. has been intensified by alarming environmental shifts, R. and fostering the transition towards renewable energy sources S. leading to policy frameworks aimed at reducing carbon emissions
+A. RSPQ
+B. QPSR
+C. PSRQ
+D. SPRQ
+Answer: B
+
+Q.78: Choose the correct idiom for the word highlighted in bold. Jatin was progressing by leaps and bounds because of his hard work.
+A. Very slowly
+B. With great speed and progress
+C. Without making any progress
+D. In a confused and disorganized manner
+Answer: B
+
+Q.79: Identify the error in the sentence. We were leave for the airport when the storm began.
+A. storm
+B. began
+C. airport
+D. leave
+Answer: D
+
+Q.80: Complete the sentence by choosing a suitable word to fill in the blank. Were he to have followed the instructions, none of this ____ occurred.
+A. would have
+B. will have
+C. had
+D. should
+Answer: C
+
+Q.81: Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?
+
+1. Their research revealed that fungi play a crucial role in nutrient cycling, breaking down organic matter and forming symbiotic relationships with plant roots.
+
+2. Understanding these fungal connections has transformed ecological studies and highlights the interdependence of forest ecosystems.
+
+3. In recent years, scientists have discovered vast underground fungal networks known as mycorrhizal networks.
+
+4. These networks allow trees and plants to share nutrients and even send chemical signals, sometimes described as the "Wood Wide Web."
+
+5. Some species of fungi can even warn trees about insect attacks by transmitting distress signals through the underground network.
+A. 2-4-5-1-3
+B. 3-1-4-5-2
+C. 1-4-3-5-2
+D. 5-3-2-1-4
+Answer: B
+
+Q.82: Improve the sentence using the correct phrasal verb of the underlined word. The project was given away by the new manager after the old one retired.
+A. carried out
+B. carried away
+C. carried through
+D. carried in
+Answer: A
+
+Q.83: Select the most appropriate antonym of the given word. Internecine
+A. Internal
+B. External
+C. Harmonious
+D. Civil
+Answer: B
+
+Q.84: Choose the correct meaning of idiom: To milk the ram
+A. To exploit one's privilege
+B. To attempt the impossible or futile
+C. To exaggerate defeat
+D. To question authority subtly
+Answer: B
+
+Q.85: Spot the correct spelling of a cross-sensory phenomenon.
+A. Synesthesia
+B. Synesthasia
+C. Synaesthesia
+D. Synesthesya
+Answer: A
+
+Q.86: Choose the correct one-word substitute for: 'Inability to sleep.'
+A. Narcolepsy
+B. Insomnia
+C. Somnolence
+D. Somnambulist
+Answer: B
+
+Q.87: Choose the correct one-word substitute for: 'Looking or sounding sad and dismal'
+A. jubiliant
+B. Lugubrious
+C. Maudlin
+D. Sardonic
+Answer: D
+
+Q.88: Select the correct option: The sociologist was renowned for her ___ analysis of systemic inequalities.
+A. penetrative
+B. penetrating
+C. penetrable
+D. penetrated
+Answer: B
+
+Q.89: Find the part of the sentence that contains an error: The editor-in-chief asked whether (1)/ the article had underwent (2)/ plagiarism screening (3)/ before approval. (4)
+A. 1
+B. 2
+C. 3
+D. 4 10
+Answer: B
+
+Q.90: Find the part of the sentence that contains an error: The tribunal objected to not the content of the testimony (1)/ but the manner in which it was introduced (2)/ without any authentication by the official registrar (3)/ or acknowledgment of its provenance. (4)
+A. 1
+B. (2)
+C. (3)
+D. (4)
+Answer: A
+
+Q.91: Change the following from active to passive: We must obey the rules.
+A. The rules must be obeyed.
+B. The rules must have been obeyed.
+C. The rules had to be obeyed.
+D. The rules are being obeyed.
+Answer: A
+
+Q.92: Change the following from active to passive: They should not have let misinformation spread unchecked.
+A. Misinformation should not have let to spread unchecked.
+B. Misinformation should not be spread unchecked.
+C. Misinformation should not have been allowed to spread unchecked.
+D. Misinformation should not have spread unchecked.
+Answer: C
+
+Q.93: A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. He said that he would rather have been punished than be humiliated publicly.
+A. "I would rather be punished than get humiliated publicly," he said.
+B. "I would rather have been punished than be humiliated publicly," he said.
+C. "I prefer punishment/humiliation," he said.
+D. "I'd rather punishment than public humiliation," he said.
+Answer: B
+
+Q.94: Choose the most appropriate synonym of the underlined word. Fame can be ephemeral if not sustained by talent.
+A. Permanent
+B. Temporary
+C. Lasting
+D. Constant
+Answer: B
+
+Q.95: In the following question, the first and last parts of the sentence (1 and 6) are given. The rest of the sentence is split into four parts and named A, B, C, and D. These four parts are not given in their proper order. Read the sentence and find out which of the four combinations is correct.
+
+1. The global fashion industry A. shifting toward sustainable fabrics B. is undergoing a transformation C. to reduce their massive D. as more brands are
+
+6. environmental footprint and waste.
+A. BDAC
+B. DCAB
+C. ACBD
+D. BACD
+Answer: D
+
+Q.96: **Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. High above the city, on a tall column, stood the statue of the Happy Prince. The statue was covered with thin leaves of fine gold. It had two bright sapphires for eyes, and a large red ruby shone on the hilt of its sword. The people of the city greatly admired the statue. "It is as beautiful as a weathercock," remarked a Town Councillor who wished to be known for his artistic taste. "However, it is not quite as useful," he added, fearing that others might consider him impractical. A sensible mother pointed towards the statue and said to her little boy, who was crying for the moon, "Why can't you behave like the Happy Prince? The Happy Prince never cries for anything." "I am glad that someone in the world is completely happy," muttered a disappointed man as he looked at the magnificent statue. The Charity Children, dressed in bright scarlet cloaks and clean white pinafores, saw the statue while leaving the cathedral. "The Happy Prince looks just like an angel," they said. "How do you know what an angel looks like?" asked the Mathematical Master. "You have never seen one." "We have seen angels in our dreams," replied the children. The Mathematical Master frowned because he did not approve of children dreaming. One night, 11 a little Swallow flew/the city. His friends had already left for Egypt, but he had stayed behind because he was in love with a beautiful Reed. He had met the Reed in the spring while chasing a yellow moth along the river and stopped to speak to her.
+
+---
+
+Why did the Town Councillor add that the statue was "not quite as useful" as a weathercock?
+A. He feared that people might regard him as an impractical person.
+B. He believed that public statues should always serve a practical purpose.
+C. He considered the statue less attractive than an ordinary weathercock.
+D. He wanted the statue to be removed from the tall column.
+Answer: A
+
+Q.97: **Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. High above the city, on a tall column, stood the statue of the Happy Prince. The statue was covered with thin leaves of fine gold. It had two bright sapphires for eyes, and a large red ruby shone on the hilt of its sword. The people of the city greatly admired the statue. "It is as beautiful as a weathercock," remarked a Town Councillor who wished to be known for his artistic taste. "However, it is not quite as useful," he added, fearing that others might consider him impractical. A sensible mother pointed towards the statue and said to her little boy, who was crying for the moon, "Why can't you behave like the Happy Prince? The Happy Prince never cries for anything." "I am glad that someone in the world is completely happy," muttered a disappointed man as he looked at the magnificent statue. The Charity Children, dressed in bright scarlet cloaks and clean white pinafores, saw the statue while leaving the cathedral. "The Happy Prince looks just like an angel," they said. "How do you know what an angel looks like?" asked the Mathematical Master. "You have never seen one." "We have seen angels in our dreams," replied the children. The Mathematical Master frowned because he did not approve of children dreaming. One night, 11 a little Swallow flew/the city. His friends had already left for Egypt, but he had stayed behind because he was in love with a beautiful Reed. He had met the Reed in the spring while chasing a yellow moth along the river and stopped to speak to her.
+
+---
+
+What does the disappointed man's remark about the Happy Prince reveal?
+A. He believed that the Prince had overcome every personal difficulty.
+B. He wished to possess the wealth displayed upon the golden statue.
+C. He assumed that the Prince represented happiness absent from his own life.
+D. He doubted whether complete happiness could exist anywhere in the world.
+Answer: D
+
+Q.98: **Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. High above the city, on a tall column, stood the statue of the Happy Prince. The statue was covered with thin leaves of fine gold. It had two bright sapphires for eyes, and a large red ruby shone on the hilt of its sword. The people of the city greatly admired the statue. "It is as beautiful as a weathercock," remarked a Town Councillor who wished to be known for his artistic taste. "However, it is not quite as useful," he added, fearing that others might consider him impractical. A sensible mother pointed towards the statue and said to her little boy, who was crying for the moon, "Why can't you behave like the Happy Prince? The Happy Prince never cries for anything." "I am glad that someone in the world is completely happy," muttered a disappointed man as he looked at the magnificent statue. The Charity Children, dressed in bright scarlet cloaks and clean white pinafores, saw the statue while leaving the cathedral. "The Happy Prince looks just like an angel," they said. "How do you know what an angel looks like?" asked the Mathematical Master. "You have never seen one." "We have seen angels in our dreams," replied the children. The Mathematical Master frowned because he did not approve of children dreaming. One night, 11 a little Swallow flew/the city. His friends had already left for Egypt, but he had stayed behind because he was in love with a beautiful Reed. He had met the Reed in the spring while chasing a yellow moth along the river and stopped to speak to her.
+
+---
+
+Why did the Mathematical Master frown at the Charity Children's reply?
+A. He thought that their comparison of the statue with an angel was disrespectful.
+B. He believed that children should describe only what they saw in the cathedral.
+C. He suspected that the children were inventing stories to impress their teacher.
+D. He disapproved of children accepting dreams as a source of knowledge.
+Answer: D
+
+Q.99: **Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. High above the city, on a tall column, stood the statue of the Happy Prince. The statue was covered with thin leaves of fine gold. It had two bright sapphires for eyes, and a large red ruby shone on the hilt of its sword. The people of the city greatly admired the statue. "It is as beautiful as a weathercock," remarked a Town Councillor who wished to be known for his artistic taste. "However, it is not quite as useful," he added, fearing that others might consider him impractical. A sensible mother pointed towards the statue and said to her little boy, who was crying for the moon, "Why can't you behave like the Happy Prince? The Happy Prince never cries for anything." "I am glad that someone in the world is completely happy," muttered a disappointed man as he looked at the magnificent statue. The Charity Children, dressed in bright scarlet cloaks and clean white pinafores, saw the statue while leaving the cathedral. "The Happy Prince looks just like an angel," they said. "How do you know what an angel looks like?" asked the Mathematical Master. "You have never seen one." "We have seen angels in our dreams," replied the children. The Mathematical Master frowned because he did not approve of children dreaming. One night, 11 a little Swallow flew/the city. His friends had already left for Egypt, but he had stayed behind because he was in love with a beautiful Reed. He had met the Reed in the spring while chasing a yellow moth along the river and stopped to speak to her.
+
+---
+
+Which of the following best describes the irony in the mother's statement to her child?
+A. She expects a young child to understand the artistic value of a golden statue.
+B. She holds up an unfeeling, inanimate object as a model of perfect emotional behaviour.
+C. She praises the Prince's behaviour while ignoring his immense material wealth.
+D. She scolds her child for crying while she herself is acting impatiently.
+Answer: D
+
+Q.100: **Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. High above the city, on a tall column, stood the statue of the Happy Prince. The statue was covered with thin leaves of fine gold. It had two bright sapphires for eyes, and a large red ruby shone on the hilt of its sword. The people of the city greatly admired the statue. "It is as beautiful as a weathercock," remarked a Town Councillor who wished to be known for his artistic taste. "However, it is not quite as useful," he added, fearing that others might consider him impractical. A sensible mother pointed towards the statue and said to her little boy, who was crying for the moon, "Why can't you behave like the Happy Prince? The Happy Prince never cries for anything." "I am glad that someone in the world is completely happy," muttered a disappointed man as he looked at the magnificent statue. The Charity Children, dressed in bright scarlet cloaks and clean white pinafores, saw the statue while leaving the cathedral. "The Happy Prince looks just like an angel," they said. "How do you know what an angel looks like?" asked the Mathematical Master. "You have never seen one." "We have seen angels in our dreams," replied the children. The Mathematical Master frowned because he did not approve of children dreaming. One night, 11 a little Swallow flew/the city. His friends had already left for Egypt, but he had stayed behind because he was in love with a beautiful Reed. He had met the Reed in the spring while chasing a yellow moth along the river and stopped to speak to her.
+
+---
+
+Which inference can most reasonably be drawn from the Swallow's decision to remain behind?
+A. He had been separated from his companions while searching for food near 12 the river.
+B. He intended to remain in the city permanently because he disliked travelling to Egypt.
+C. His pursuit of the yellow moth prevented him from learning when his friends departed.
+D. His emotional attachment caused him to postpone joining his friends on their journey.
+Answer: D
+

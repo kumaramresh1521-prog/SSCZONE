@@ -1,0 +1,786 @@
+Q.1: Find the missing number: 36 : 108 :: 49 : ?
+A. 145
+B. 147
+C. 141
+D. 146
+Answer: B
+
+Q.2: A bag contains coins of Rs. 1, Rs. 2 and Rs. 5 in the ratio 5:3:
+
+2. If the total money is Rs. 420, find the number of Rs. 2 coins.
+A. 36
+B. 28
+C. 24
+D. 60
+Answer: D
+
+Q.3: Read the following statement carefully and identify the conclusion that follows.
+
+Statement: Some flowers are red. All red things are attractive.
+
+Conclusions:
+
+I. Some flowers are attractive.
+
+II. All flowers are attractive.
+A. Only I follows
+B. Only II follows
+C. Both I and II follow
+D. Neither I nor II follows
+Answer: A
+
+Q.4: What is the next number in the series? 7, 21, 63, ___
+A. 183
+B. 190
+C. 201
+D. 189
+Answer: D
+
+Q.5: 'A # B' means 'A is the brother of B'. 'A @ B' means 'A is the father of B'. 'A & B' means 'A is the sister of B'. 'A % B' means 'A is the daughter of B'. If 'T @ M & F # R & G % K', then how is K related to R?
+A. Mother
+B. Father-in-law
+C. Brother-in-law
+D. Grandmother
+Answer: A
+
+Q.6: If '+' means '×', '-' means '+', '×' means '÷', and '÷' means '-', then 6 + 3 - 2 × 2 = ?
+A. 15
+B. 20 1 INTELLIGENCE
+C. 12
+D. 19
+Answer: D
+
+Q.7: If "HOUSE" is coded as 8-15-21-19-5, how will "SHOE" be coded?
+A. 19-8-15-5
+B. 19-8-5-15
+C. 8-19-15-5
+D. 8-15-19-5
+Answer: A
+
+Q.8: In a certain code language, "APPLE" is represented as "ELPPA." What does "MANGO" look like in that code?
+A. OGNAM
+B. ONMAG
+C. MANGOG
+D. OGAMN
+Answer: A
+
+Q.9: Which of the following alternatives matches the given address exactly? Mr. R. Khanna Flat No. 1204, Silver Crest Towers, 11th Floor, Sector 62 Noida, Uttar Pradesh - 201309 Alternatives: A) Mr. R. Khanna, Flat No. 1204, Silver Crest Towers, 11th Floor, Sector 62, Noida, Uttar Pradesh - 201309 B) Mr. R. Khanna, Flat No. 1204, Silver Crest Towers, 11th Floor, Sector 64, Noida, Uttar Pradesh - 201309 C) Mr. R. Khanna, Flat No. 1204, Silver Crest Towers, 11th Floor, Sector 62, Noida, Uttar Pradesh - 201309 D) Mr. R. Khanna, Flat No. 1204, Silver Crest Towers, 12th Floor, Sector 62, Noida, Uttar Pradesh - 201309 E) Mr. R. Khanna, Flat No. 1204, Silver Crest Towers, 11th Floor, Sector 26, Noida, Uttar Pradesh - 201309 F) Mr. R. Khanna, Flat No. 1204, Silver Crest Towers, 11th Floor, Sector 62, Noida, Uttar Pradesh - 201390
+A. A and C
+B. C and E
+C. A and F
+D. D and B
+Answer: A
+
+Q.10: In a certain code language, "COMPUTATION" is written as "OOITATUPMOD". How will "RECOGNITION" be written?
+A. OIOTINGCOES
+B. OOITINGOCES
+C. NOIITNGCOER
+D. NOTIINCGOER
+Answer: B
+
+Q.11: Choose the option that perfectly matches the given address. Original Address: Flat No. Ω-17/BRésidence d’Élite, Tower-XIVSt. Michael’s Crescent, Sector–09Navi Mumbai, Maharashtra 400706India | Asia
+A. Flat No. Ω-17/BRésidence d'Elite, Tower- XIVSt. Michael’s Crescent, Sector–09Navi Mumbai, Maharashtra 400706India | Asia
+B. Flat No. Ω-17-BRésidence d’Élite, Tower- XIVSt. Michael’s Crescent, Sector–09Navi Mumbai, Maharashtra 400706India | Asia
+C. Flat No. Ω-17/BRésidence d’Élite, Tower- XIVSt. Michael’s Crescent, Sector–09Navi Mumbai, Maharashtra 400760India | Asia
+D. Flat No. Ω-17/BRésidence d’Élite, Tower- XIVSt. Michael’s Crescent, Sector–09Navi Mumbai, Maharashtra 400706India | Asia
+Answer: A
+
+Q.12: If 'A $ B' means 'A is the brother of B', 'A # B' means 'A is the mother of B', and 'A * B' means 'A is the daughter of B', which of the following options means 'M is the maternal uncle of N'?
+A. M $ O # N
+B. M $ O * N
+C. M # O $ N
+D. M * O $ N
+Answer: A
+
+Q.13: A batch of roll number follows the pattern [Even Number]-[Odd Number]-[Even Number] for the first three digits. Identify the invalid roll number.
+A. 694-11-22
+B. 472-99-05
+C. 258-44-11
+D. 386-55-10
+Answer: C
+
+Q.14: Study the pattern in the given series and find the next set of letters in the series. DHI, HGM, LFQ, ?
+A. PEU
+B. PDU
+C. PEV
+D. PET
+Answer: A
+
+Q.15: In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. | 50 | 33 | 47 | | 62 | 44 | 58 | | 39 | ? | 36 |
+A. 11
+B. 22
+C. 33
+D. 44
+Answer: B
+
+Q.16: Your superior, a highly demanding director, drops a massive, unvetted data analysis task on your desk at 5:30 PM, demanding the final report by 9:00 AM tomorrow. You already have a critical, pre-scheduled medical appointment for your dependent parent at 7:00 PM tonight. Which response represents the most emotionally intelligent negotiation?
+A. Accept the task silently, cancel your parent’s medical appointment, and stay up all night to finish it to prove your absolute loyalty.
+B. Refuse the task flatly on the spot, telling the director that expecting work outside office hours is toxic and violates your work-life balance.
+C. Acknowledge the urgency and propose a staggered timeline to complete data organisation overnight and share final insights by the next morning.
+D. Take the file, leave at 5:45 PM for your appointment, and email at midnight explaining it couldn’t be done due to a family emergency.
+Answer: C
+
+Q.17: You are a branch manager. Worker Kiran is a single parent whose child is undergoing long-term medical treatments. Out of sympathy, you have overlooked Kiran's chronic lateness for four months. However, the rest of the team has now started complaining because they have to stay late every evening to finish Kiran's pending customer queries. How do you resolve this situation emotionally intelligently?
+A. Tell the complaining team members that they lack empathy and must continue to cover Kiran's shift out of human decency.
+B. Privately meet Kiran, acknowledge their stress, note the team impact, and adjust their shift or reassign to a non-live role.
+C. Give Kiran an immediate formal warning that family issues do not excuse missed office hours.
+D. Quietly handle Kiran's leftover work yourself every evening to keep everyone happy.
+Answer: B
+
+Q.18: Choose the option which is exactly similar to: Prof.
+
+V. K. Malhotra, Dept. of Economics, DU, Delhi-110007
+A. Prof. V. K. Malhotra, Dept. of Economics, DU, Delhi-110007
+B. Prof. V K. Malhotra, Dept. of Economics, DU, Delhi-110007
+C. Prof V. K. Malhotra, Dept. of Economics, DU, Delhi-110007
+D. Prof. V. K. Malhotra, Dept. of Economics, UD, Delhi-110007
+Answer: A
+
+Q.19: What should come in place of the question mark (?) in the following analogy? KMO : QSU :: EGI : ?
+A. KNO
+B. LNP
+C. KMO
+D. JLM
+Answer: C
+
+Q.20: Interchange the indicated signs and solve to find the result for both equations
+
+(I) and
+
+(II) respectively. Interchange signs: - and +
+
+I. 64 ÷ 8 - 4 × 2 + 10
+
+II. 48 × 2 ÷ 8 + 16 - 4
+A. 8 and 2
+B. 6 and 0
+C. 6 and 4
+D. 10 and 0
+Answer: B
+
+Q.21: Read the given conditions carefully and determine the appropriate outcome for the case provided. If any exception applies, identify the authority to whom the case should be referred. Criteria for Advanced Research Grant Allocation:
+
+(i) Must have published 3+ papers.
+
+(ii) Must be currently enrolled in a PhD program. Exceptions: Exception
+A. Grant to be approved
+B. Grant application to be rejected
+C. Case to be referred to the Grant Committee
+D. Case to be referred to the Finance Oversight Board
+Answer: C
+
+Q.22: Your company has a policy prohibiting the use of office resources for personal projects. You have a small, urgent personal task that would take 10 minutes and requires a company printer. What do you do?
+A. Use the printer quickly, as it is a minor task.
+B. Ask for special permission from your manager for this one time.
+C. Seek an alternative solution outside the office to comply with policy.
+D. Use the printer but pay the company for the paper and ink used.
+Answer: B
+
+Q.23: Read the statement carefully and assume it to be true. Then examine the two conclusions given below it and decide which conclusion(s), if any, logically follow from the statement.
+
+Statement: After analysing customer feedback, a smartphone manufacturer decided to extend software support for its premium devices from three years to five years.
+
+Conclusions:
+
+I. The manufacturer believes longer software support may increase customer satisfaction.
+
+II. All customers purchase smartphones primarily because of software support duration.
+A. Only conclusion I follows
+B. Only conclusion II follows
+C. Neither conclusion I nor conclusion II follows
+D. Both conclusions I and II follow
+Answer: A
+
+Q.24: Read the given statement carefully and the following assumptions based on it. Decide which of the assumptions are implicit in the statement.
+
+Statement: To reduce traffic congestion during peak hours, the municipal corporation should introduce a congestion charge on all private vehicles entering the city centre. Assumptions:
+
+I. Charging a fee for entering the city centre will discourage many private vehicle owners from using that route.
+
+II. Heavy traffic congestion adversely affects the smooth functioning of the city.
+A. Only Assumption I is implicit
+B. Both Assumptions I and II are implicit
+C. Only Assumption II is implicit
+D. Neither Assumption I nor II is implicit
+Answer: B
+
+Q.25: Select the option that is related to the third word in the same way as the second word is related to the first word. (The words must be considered as meaningful English words and must not be related to each other based on the number of letters/number of consonants/vowels in the word.) Ornithology : Birds :: Ichthyology : ?
+A. Reptiles
+B. Amphibians
+C. Fish
+D. Insects
+Answer: D
+
+Q.26: Who among the following did NOT ascend the throne of the Delhi Sultanate?
+A. Razia Sultana
+B. Khizr Khan
+C. Malik Kafur
+D. Alauddin Khalji
+Answer: C
+
+Q.27: Where was the 1st BRICS summit held?
+A. USA
+B. China
+C. France
+D. Russia
+Answer: D
+
+Q.28: The IMEC (India-Middle East-Europe Economic Corridor) project is designed to increase ________ between the participating nations.
+A. economic
+B. military alliances integration
+C. population
+D. cultural uniformity exchanges
+Answer: A
+
+Q.29: With which sport is the term "googly" traditionally associated?
+A. Hockey
+B. Cricket
+C. Football
+D. Kabaddi
+Answer: B
+
+Q.30: Which Indian English novel, written in 1956, is often cited as the first modern English novel from India?
+A. Untouchable
+B. Train to Pakistan
+C. The Serpent and
+D. The Guide the Rope
+Answer: C
+
+Q.31: According to the Seventh Five-Year Plan (1985-1990), why was the railway system considered vital to the Indian economy?
+A. It was the only mode of transport available
+B. It reduced the need for road transport
+C. It primarily supported urban development
+D. It was the backbone of the country's transport infrastructure
+Answer: D
+
+Q.32: In Kabaddi, what is the maximum number of substitutions per team?
+A. 5
+B. 4
+C. 7
+D. 6
+Answer: D
+
+Q.33: The Pushkar Mela, known for its camel trade and vibrant cultural events is celebrated in which state of India?
+A. Rajasthan
+B. Uttar Pradesh
+C. Gujarat
+D. Maharashtra
+Answer: A
+
+Q.34: What does the Bharatiya Nyaya Sanhita
+
+(BNS), 2023 propose regarding the role of digital evidence in criminal cases?
+A. Digital evidence can only be used if it is manually compiled
+B. Digital evidence is not admissible in court without physical copies
+C. Digital evidence must be verified and authenticated for it to be used in court
+D. All digital evidence is automatically accepted in legal proceedings
+Answer: C
+
+Q.35: During the Indian freedom struggle, who organized the 'Secret Congress Radio' that broadcasted recorded messages from Gandhiji?
+A. Usha Mehta
+B. Alluri Sitarama Raju
+C. Kanuri Lakshmibai
+D. Oruganti Mahalakshmamma
+Answer: D
+
+Q.36: Rabindranath Tagore is the author of national anthems of India and which other country?
+A. Nepal
+B. Sri lanka
+C. Bangladesh
+D. Bhutan
+Answer: C
+
+Q.37: The States of Jammu and Kashmir, Himachal Pradesh and Uttaranchal are highly vulnerable to earthquakes because:
+
+1. The Indian plate is slowly moving towards the north and north-eastern direction, which is obstructed by the Eurasian plate.
+
+2. Most of the active volcanoes in India lie in the northern region of the country, which is frequently affected by magma and seismic movements. Which of the above statements is/are CORRECT?
+A. 1 only
+B. 2 only
+C. Both 1 and 2
+D. None of these
+Answer: A
+
+Q.38: What was the primary duty of the city mayor (Nagara-Rakshaka or Pustapala) in the Gupta dynasty's administration?
+A. Managing military security and palace guards.
+B. Supervising temple rituals and offerings.
+C. Recording land dimensions and urban governance.
+D. Leading merchant caravans on foreign trade missions.
+Answer: A
+
+Q.39: At which Summer Olympics did the Indian men's hockey team fail to win a medal for the first time since 1928?
+A. Montreal 1976
+B. Munich 1972
+C. Moscow 1980
+D. Los Angeles 1984
+Answer: D
+
+Q.40: Which of the following statements correctly describes the award recognition received by the book 'The Mistress of Spices' written by Chitra Divakaruni?
+A. Received Booker Prize for South Asian politics
+B. Won Sahitya Akademi Award for Indian
+C. Honored with Pulitzer Prize for immigrant struggles
+D. Shortlisted for Women's Prize for Fiction for magical realism and diaspora.
+Answer: D
+
+Q.41: Which of the following crop-season combinations is incorrectly matched?
+A. Rice - Kharif
+B. Wheat - Rabi
+C. Cotton - Zaid
+D. Mustard - Rabi
+Answer: C
+
+Q.42: Why are thermal power plants in India commonly established close to coal mining areas?
+A. For safety considerations
+B. To minimize water consumption
+C. To reduce environmental pollution
+D. To lower transport costs
+Answer: D
+
+Q.43: Which amendment introduced Article 246A to the Constitution?
+A. 100th Amendment
+B. 101st Amendment
+C. 97th Amendment
+D. 99th Amendment
+Answer: B
+
+Q.44: How many members constituted the Board of Control under Pitt’s India Act?
+A. Four members
+B. Five members
+C. Six members
+D. Seven members
+Answer: D
+
+Q.45: Under which article of the Indian Constitution is it mandatory to constitute a District Planning Committee (DPC) in every State?
+A. Article 243ZA
+B. Article 243ZB
+C. Article 243ZC
+D. Article 243ZD
+Answer: D
+
+Q.46: Under which article of the Indian Constitution are both Parliament and State Legislatures granted the simultaneous power to make laws with respect to Goods and Services Tax
+
+(GST)?
+A. Article 243B
+B. Article 246A
+C. Article 248
+D. Article 254
+Answer: B
+
+Q.47: Under the Constitution of India, in which list of the Seventh Schedule does “Public Order” fall?
+A. Residuary powers
+B. Concurrent List
+C. State List
+D. Union List
+Answer: B
+
+Q.48: A warrant is issued for execution by a private person (not a police officer). During its execution, nearby civilians voluntarily assist because the person executing the warrant is actively pursuing the accused. Which of the following statements is legally correct under the Bharatiya Nagarik Suraksha Sanhita, 2023 in India?
+A. Civilians cannot assist because only police may execute warrants.
+B. Assistance is lawful if the person to whom the warrant is directed is near at hand and acting in execution.
+C. Civilian assistance requires prior magistrate approval.
+D. Only executive magistrates may assist in non-police warrant execution.
+Answer: B
+
+Q.49: Under India's economic reforms since 1991, disinvestment was undertaken mainly to achieve which of the following objectives?
+A. Improve financial discipline and facilitate modernisation
+B. Expand industrial licensing and increase public ownership
+C. Promote import substitution and restrict private investment
+D. Increase budgetary support and reduce market competition
+Answer: A
+
+Q.50: If the amplitude of an object undergoing simple harmonic motion is doubled while all other system parameters remain unchanged, how does its total mechanical energy change?
+A. It remains the same
+B. It becomes twice its original value
+C. It becomes four times its original value
+D. It becomes eight times its original value
+Answer: C
+
+Q.51: What is the volume of a sphere whose diameter is 56 cm?
+A. 92849.33 cm³
+B. 86989.33 cm³
+C. 81989.33 cm³
+D. 91989.33 cm³
+Answer: D
+
+Q.52: The space diagonal of a cuboid with dimensions 3 cm, 4 cm, and 12 cm is:
+A. 13 cm
+B. 14 cm
+C. 11 cm
+D. 5 cm
+Answer: A
+
+Q.53: The perimeter of an isosceles right-angled triangle is 2 + √2 cm. What is its area?
+A. 1 cm²
+B. 0.5 cm²
+C. 2 cm²
+D. 3 cm²
+Answer: A
+
+Q.54: If x + y = 20 and xy = 10, then find the value of x³ + y³
+A. 2100
+B. 2500
+C. 7100
+D. 7400
+Answer: D
+
+Q.55: What is the curved surface area of a cone with a radius of 7cm and a slant height of 20cm?
+A. 520 cm²
+B. 304 cm²
+C. 380 cm²
+D. 440 cm²
+Answer: D
+
+Q.56: A person travels a certain distance at a speed of 5 km/h and completes the journey in 6 hours. If the speed is increased to 10 km/h, how much time will be taken to cover the same distance?
+A. 2 hours
+B. 5 hours
+C. 3 hours
+D. 6 hours
+Answer: C
+
+Q.57: Find the value of: 2 + 1+ 1 1 . 1+ 1 3
+A. 6
+B. 13/7
+C. 1
+D. 18/7
+Answer: D
+
+Q.58: If √7n= 343 , then the value of n is: 7
+A. 3
+B. 8
+C. 6
+D. 5
+Answer: A
+
+Q.59: If the 6-digit number 5z3x4y is divisible by 7, 11, and 13, find the value of (x + y - z).
+A. 3
+B. 2
+C. 1
+D. 4
+Answer: A
+
+Q.60: In △XYZ , G is the centroid and ZM is a median. If the segment GZ is 6 cm, what is the total length of the median ZM?
+A. 9 cm
+B. 5 cm
+C. 2 cm
+D. 10 cm
+Answer: D
+
+Q.61: How many prime numbers p exist such that 120 < p < 150?
+A. 4
+B. 7
+C. 5
+D. 6
+Answer: A
+
+Q.62: Ram and Shyam start moving simultaneously from points A and B toward each other at 9:00 a.m. After they cross paths, Ram takes 80 minutes to reach point B and Shyam takes 45 minutes to reach point A. At what specific time did they meet?
+A. 9 : 30 am
+B. 10 : 00 am
+C. 10 : 30 am
+D. 11 : 00 am
+Answer: C
+
+Q.63: A can complete a certain work alone in 10 days, while B can complete the same work in 5 days. They work together for 2 days, after which B leaves and C joins A. A and C then complete the remaining work in 3 days. Find the number of days C would take to complete 40% of the work if working alone.
+A. 8 days
+B. 10 days
+C. 12 days
+D. 16 days
+Answer: A
+
+Q.64: Find the value of θ(0°< θ< 90°) if cos θ 1−sin θ + cos θ = 4. 1+sin θ
+A. 30°
+B. 45°
+C. 60°
+D. 75°
+Answer: A
+
+Q.65: A vertical tower stands on a horizontal plane and is surmounted by a vertical flagstaff of height 6 m. At a point on the plane, the angle of elevation of the bottom of the flagstaff is 45° and that of the top of the flagstaff is 60°. Find the height of the tower.
+A. 3(√3 - 1) m
+B. 2(√3 + 1) m
+C. (√3 + 1) m
+D. 3(√3 + 1) m
+Answer: D
+
+Q.66: If tan θ= √5 , find the value of cosec² θ+sec² θ cosec² θ−sec² θ .
+A. 3
+B. −4 2
+C. −3
+D. 4 2/5
+Answer: C
+
+Q.67: Given X= 1 , find the value of X−1 . 2−√3 X
+A. 2√3
+B. √3
+C. 5√3
+D. √2
+Answer: A
+
+Q.68: Two equal parallel chords of a circle lie on opposite sides of the centre. The perpendicular distance between the chords is 6 cm. If the radius of the circle is 5 cm, find the length of each chord (in cm).
+A. 8 cm
+B. 10 cm
+C. 12 cm
+D. 16 cm
+Answer: A
+
+Q.69: The volume of a hemispherical bowl is 718 2 cm³. A sphere is dropped into it such that the sphere's diameter is equal to the bowl's diameter. How much volume of the sphere remains outside the bowl? (Use π= 22 ) 7
+A. 811 2 cm³
+B. 820 1 cm³ 3
+C. 718 2 cm³
+D. 732 1 cm³ 3 3
+Answer: C
+
+Q.70: If the angle between two tangents drawn from a point P to a circle of radius 3 cm is 60°, what is the length of each tangent?
+A. 3√3 cm
+B. 5 cm
+C. 4√2 cm
+D. 7 cm
+Answer: A
+
+Q.71: The hour hand of a clock moves from 3:00 to 7:00. What angle does it sweep in radians?
+A. 2π/3 radians
+B. π/3 radians
+C. π/2 radians
+D. π/4 radians
+Answer: A
+
+Q.72: Three friends, namely Krish, John and Leena, can do a particular work with equal efficiency. Krish works 'x' hours a day for 'x' days and then stops working. Then, John works 'y' hours a day for 'y' days. Then, Leena works 16 hours a day for 16 days and finally the work gets completed. Now, Leena alone can complete the work in 29 days by working 16 hours each day. If Krish, John and Leena together start doing the work with their respective per day working hours as mentioned, in how many days will the work be done (approximately)? [Consider both 'x' and 'y' are integers]
+A. 11
+B. 13
+C. 15
+D. 16
+Answer: D
+
+Q.73: If a² + b² = 57 and ab = 16, what is the absolute value of a - b?
+A. 5
+B. 57
+C. 9
+D. 73
+Answer: A
+
+Q.74: Express the recurring decimal 0.416̄ (i. e., 0.41666...) as a fraction in its lowest terms.
+A. 5/12
+B. 5/18
+C. 41/100
+D. 41/90
+Answer: B
+
+Q.75: Two circles with radii 6 cm and 3 cm have their centers 15 cm apart. How many common tangents can be drawn to these circles?
+A. 2
+B. 4
+C. 1
+D. 5
+Answer: B
+
+Q.76: **Comprehension (Q. 76 - 80):** In the landscape of modern education, the choice between Arts, Commerce, and Science is not merely academic; it profoundly influences professional trajectories. Each stream offers a spectrum of career opportunities, responding to the evolving demands of the global economy. The Arts stream, traditionally associated with creativity and critical thinking, leads to professions in journalism, law, international relations, and public policy. Graduates often assume roles such as content strategists, political analysts, legal advisors, and communication specialists. With interdisciplinary skills, Arts students increasingly permeate sectors once reserved for technical expertise, such as business consulting and digital marketing. Commerce, characterized by its focus on trade, finance, and business management, offers access to careers in banking, corporate law, investment analysis, and entrepreneurship. Posts like chartered accountants, financial advisors, auditors, and marketing managers are quintessential to this domain. In an age of globalization, commerce graduates are pivotal to driving economic innovation and regulatory compliance. Meanwhile, the Science stream remains the cornerstone of technological advancement and empirical research. From engineering and medicine to data science and biotechnology, science graduates occupy posts like research scientists, software developers, environmental consultants, and healthcare practitioners. Moreover, interdisciplinary branches such as AI and environmental engineering illustrate how scientific expertise continually adapts to societal needs. While each field traditionally attracted distinct student profiles, contemporary career landscapes increasingly value hybrid skill sets. Thus, a student's ability to integrate analytical rigor with creative and managerial acumen often defines success, blurring the once rigid lines between Arts, Commerce, and Science.
+
+---
+
+Identify the correct transformation of this sentence into passive voice: "Commerce offers access to careers in banking, corporate law, investment analysis, and entrepreneurship."
+A. Careers are accessed in banking, corporate law, investment analysis, and entrepreneurship by Commerce.
+B. Careers in banking, corporate law, investment analysis, and entrepreneurship are offered by Commerce.
+C. Careers are banking, corporate law, investment analysis, and entrepreneurship are offered by Commerce.
+D. Careers are offering commerce access in banking, corporate law, investment analysis, and entrepreneurship.
+Answer: B
+
+Q.77: **Comprehension (Q. 76 - 80):** In the landscape of modern education, the choice between Arts, Commerce, and Science is not merely academic; it profoundly influences professional trajectories. Each stream offers a spectrum of career opportunities, responding to the evolving demands of the global economy. The Arts stream, traditionally associated with creativity and critical thinking, leads to professions in journalism, law, international relations, and public policy. Graduates often assume roles such as content strategists, political analysts, legal advisors, and communication specialists. With interdisciplinary skills, Arts students increasingly permeate sectors once reserved for technical expertise, such as business consulting and digital marketing. Commerce, characterized by its focus on trade, finance, and business management, offers access to careers in banking, corporate law, investment analysis, and entrepreneurship. Posts like chartered accountants, financial advisors, auditors, and marketing managers are quintessential to this domain. In an age of globalization, commerce graduates are pivotal to driving economic innovation and regulatory compliance. Meanwhile, the Science stream remains the cornerstone of technological advancement and empirical research. From engineering and medicine to data science and biotechnology, science graduates occupy posts like research scientists, software developers, environmental consultants, and healthcare practitioners. Moreover, interdisciplinary branches such as AI and environmental engineering illustrate how scientific expertise continually adapts to societal needs. While each field traditionally attracted distinct student profiles, contemporary career landscapes increasingly value hybrid skill sets. Thus, a student's ability to integrate analytical rigor with creative and managerial acumen often defines success, blurring the once rigid lines between Arts, Commerce, and Science.
+
+---
+
+Choose the option where the use of the relative pronoun is grammatically incorrect.
+A. Graduates who pursue interdisciplinary skills are highly valued.
+B. Posts which involve financial planning require precision.
+C. Students whom excel at both analysis and creativity are rare.
+D. Professionals whose expertise spans multiple domains are in demand.
+Answer: C
+
+Q.78: **Comprehension (Q. 76 - 80):** In the landscape of modern education, the choice between Arts, Commerce, and Science is not merely academic; it profoundly influences professional trajectories. Each stream offers a spectrum of career opportunities, responding to the evolving demands of the global economy. The Arts stream, traditionally associated with creativity and critical thinking, leads to professions in journalism, law, international relations, and public policy. Graduates often assume roles such as content strategists, political analysts, legal advisors, and communication specialists. With interdisciplinary skills, Arts students increasingly permeate sectors once reserved for technical expertise, such as business consulting and digital marketing. Commerce, characterized by its focus on trade, finance, and business management, offers access to careers in banking, corporate law, investment analysis, and entrepreneurship. Posts like chartered accountants, financial advisors, auditors, and marketing managers are quintessential to this domain. In an age of globalization, commerce graduates are pivotal to driving economic innovation and regulatory compliance. Meanwhile, the Science stream remains the cornerstone of technological advancement and empirical research. From engineering and medicine to data science and biotechnology, science graduates occupy posts like research scientists, software developers, environmental consultants, and healthcare practitioners. Moreover, interdisciplinary branches such as AI and environmental engineering illustrate how scientific expertise continually adapts to societal needs. While each field traditionally attracted distinct student profiles, contemporary career landscapes increasingly value hybrid skill sets. Thus, a student's ability to integrate analytical rigor with creative and managerial acumen often defines success, blurring the once rigid lines between Arts, Commerce, and Science.
+
+---
+
+Choose the word that is closest in meaning to "permeate" as used in the passage.
+A. Exclude
+B. Spread
+C. Conceal
+D. Defeat
+Answer: B
+
+Q.79: **Comprehension (Q. 76 - 80):** In the landscape of modern education, the choice between Arts, Commerce, and Science is not merely academic; it profoundly influences professional trajectories. Each stream offers a spectrum of career opportunities, responding to the evolving demands of the global economy. The Arts stream, traditionally associated with creativity and critical thinking, leads to professions in journalism, law, international relations, and public policy. Graduates often assume roles such as content strategists, political analysts, legal advisors, and communication specialists. With interdisciplinary skills, Arts students increasingly permeate sectors once reserved for technical expertise, such as business consulting and digital marketing. Commerce, characterized by its focus on trade, finance, and business management, offers access to careers in banking, corporate law, investment analysis, and entrepreneurship. Posts like chartered accountants, financial advisors, auditors, and marketing managers are quintessential to this domain. In an age of globalization, commerce graduates are pivotal to driving economic innovation and regulatory compliance. Meanwhile, the Science stream remains the cornerstone of technological advancement and empirical research. From engineering and medicine to data science and biotechnology, science graduates occupy posts like research scientists, software developers, environmental consultants, and healthcare practitioners. Moreover, interdisciplinary branches such as AI and environmental engineering illustrate how scientific expertise continually adapts to societal needs. While each field traditionally attracted distinct student profiles, contemporary career landscapes increasingly value hybrid skill sets. Thus, a student's ability to integrate analytical rigor with creative and managerial acumen often defines success, blurring the once rigid lines between Arts, Commerce, and Science.
+
+---
+
+In the phrase "interdisciplinary branches," what does "interdisciplinary" most nearly mean?
+A. Related to one subject only
+B. Combining multiple areas of study
+C. Opposing different disciplines
+D. Excluding sciences and arts
+Answer: B
+
+Q.80: **Comprehension (Q. 76 - 80):** In the landscape of modern education, the choice between Arts, Commerce, and Science is not merely academic; it profoundly influences professional trajectories. Each stream offers a spectrum of career opportunities, responding to the evolving demands of the global economy. The Arts stream, traditionally associated with creativity and critical thinking, leads to professions in journalism, law, international relations, and public policy. Graduates often assume roles such as content strategists, political analysts, legal advisors, and communication specialists. With interdisciplinary skills, Arts students increasingly permeate sectors once reserved for technical expertise, such as business consulting and digital marketing. Commerce, characterized by its focus on trade, finance, and business management, offers access to careers in banking, corporate law, investment analysis, and entrepreneurship. Posts like chartered accountants, financial advisors, auditors, and marketing managers are quintessential to this domain. In an age of globalization, commerce graduates are pivotal to driving economic innovation and regulatory compliance. Meanwhile, the Science stream remains the cornerstone of technological advancement and empirical research. From engineering and medicine to data science and biotechnology, science graduates occupy posts like research scientists, software developers, environmental consultants, and healthcare practitioners. Moreover, interdisciplinary branches such as AI and environmental engineering illustrate how scientific expertise continually adapts to societal needs. While each field traditionally attracted distinct student profiles, contemporary career landscapes increasingly value hybrid skill sets. Thus, a student's ability to integrate analytical rigor with creative and managerial acumen often defines success, blurring the once rigid lines between Arts, Commerce, and Science.
+
+---
+
+Which of the following best reflects the main idea of the passage?
+A. Science students have better career options than Arts students.
+B. Arts, Commerce, and Science fields are now overlapping, and hybrid skills are becoming important.
+C. Commerce dominates the modern economy.
+D. Career paths have remained rigidly tied to educational streams.
+Answer: B
+
+Q.81: Complete the collocation by choosing a suitable word to fill in the blank. The researchers meticulously _______ the parameters for the study.
+A. delineated
+B. decorated
+C. deviated
+D. deliberated
+Answer: D
+
+Q.82: Rearrange the parts of the sentence in the correct order. Following the approval of a groundbreaking cancer therapy, P. while skeptics warned of the long-term side effects and limited accessibility for lowincome patients, Q. oncologists and researchers hailed the innovation as a paradigm shift in cancer treatment, R. leading to global discussions on the affordability and regulatory challenges of the new treatment S. as early trials demonstrated unprecedented success in eliminating aggressive tumors,
+A. PQRS
+B. SQRP
+C. QSPR
+D. QPSR
+Answer: C
+
+Q.83: Fill in the blank with an appropriate phrasal verb. If you're serious about your goals, you must ______ all distractions.
+A. cast off
+B. cast down
+C. caste away
+D. caste over
+Answer: B
+
+Q.84: Rearrange the parts of the sentence in the correct order. The ethical dilemmas in scientific research P. have sparked ongoing debates among scholars, Q. concerning genetic modifications and bioengineering, R. as technological advancements outpace regulatory frameworks S. raising concerns about moral boundaries and unintended consequences
+A. QPRS
+B. SPRQ
+C. PRQS
+D. SQPR
+Answer: C
+
+Q.85: What does the idiom "Red letter day" mean?
+A. A day of great significance or celebration
+B. A day of financial loss
+C. A day of regret and sadness
+D. A day of strict discipline
+Answer: A
+
+Q.86: Identify the error in the sentence. He paid a heavy apology after the incident.
+A. apology
+B. paid
+C. heavy
+D. incident
+Answer: C
+
+Q.87: Which of the following options is NOT one of the meanings of the homonym 'subject'?
+A. To freely exclude oneself from external governance or control
+B. A branch of knowledge studied or taught in school or university
+C. A person under the rule of a monarch or sovereign state
+D. To cause or force someone to undergo an unpleasant experience
+Answer: D
+
+Q.88: Choose the correct idiom for the word highlighted in bold. "Kavita told her manager that she planned to leave the company, but after the manager offered her a pay raise, she had a change of heart and agreed to stay."
+A. To become physically unwell due to stress
+B. To change one's feelings or decision about something
+C. To get emotional during a conversation
+D. To start working harder to get promoted
+Answer: B
+
+Q.89: Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?
+
+1. Philosophers debate the role of experience, reason and perception in the acquisition of knowledge.
+
+2. The nature of knowledge is a central concern in philosophy, particularly in the field of epistemology.
+
+3. Some argue that knowledge comes from sensory experiences, while others believe in the primacy of reason or innate ideas.
+
+4. Epistemology explores the sources, limits and validity of knowledge, asking questions like "What can we know?"
+
+5. Ultimately, understanding knowledge involves examining the relationship between the knower, the known and the process of knowing.
+A. 3-1-2-4-5
+B. 2-4-1-3-5
+C. 4-3-1-2-5
+D. 5-2-1-3-4
+Answer: B
+
+Q.90: Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?
+
+1. Predators evolve sharper claws, faster speeds, or enhanced hunting techniques to catch prey more effectively.
+
+2. This cycle of adaptation and counteradaptation drives the continuous evolution of both groups.
+
+3. In response, prey species develop defensive adaptations such as camouflage, speed, or toxic chemicals.
+
+4. The concept of an evolutionary arms race describes the ongoing adaptations between predators and prey.
+
+5. Such evolutionary arms races are seen in species like cheetahs and gazelles or venomous snakes and resistant prey.
+A. 3-4-2-1-5
+B. 1-4-5-3-2
+C. 2-1-3-5-4
+D. 4-1-3-2-5
+Answer: D
+
+Q.91: Select the most appropriate synonym of the given word: MENDACIOUS
+A. Honest
+B. Truthful
+C. Dishonest
+D. Candid
+Answer: C
+
+Q.92: Select the most appropriate synonym of the given word: IMBRUE
+A. To cleanse
+B. To soak
+C. To purify
+D. To expel
+Answer: B
+
+Q.93: Select the most appropriate antonym of the given word. Altruism
+A. Selflessness
+B. Generosity
+C. Egoism
+D. Charity
+Answer: C
+
+Q.94: Which is the correct spelling for a word meaning 'without equal or unmatched'?
+A. Incomparable
+B. Incomparible
+C. Incompareable
+D. Incomperable
+Answer: A
+
+Q.95: Identify the misspelt word.
+A. Apostrophize
+B. Ethereal
+C. Munificense
+D. Penumbra
+Answer: C
+
+Q.96: Choose the correct one-word substitute for: 'A person who cannot be tired'.
+A. Infallible
+B. Invincible
+C. Indefatigable
+D. Incurable
+Answer: C
+
+Q.97: Change the following from active to passive: Someone has sent me a gift.
+A. I have been sent a
+B. A gift is sent to gift. me.
+C. A gift was sent to
+D. I was sent a gift. me.
+Answer: A
+
+Q.98: Choose the most suitable option to replace the highlighted part of the sentence: He told that he will come later.
+A. said he would
+B. told that he would come came
+C. said that he would
+D. said that he will come come
+Answer: C
+
+Q.99: Choose the most suitable option to replace the highlighted part of the sentence: The students enjoyed to play in the rain.
+A. enjoyed play in the rain
+B. were enjoying play
+C. enjoyed playing in the rain
+D. enjoyed to be playing
+Answer: C
+
+Q.100: Choose the most appropriate antonym of the underlined word. The committee's admonition regarding the safety breach was taken seriously by the staff.
+A. Commendation
+B. Counsel
+C. Forewarning
+D. Reprimand
+Answer: A
+

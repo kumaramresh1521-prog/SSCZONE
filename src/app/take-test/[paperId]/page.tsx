@@ -39,8 +39,11 @@ import {
   ListFilter,
   Layers,
   BookOpen,
-  LayoutGrid
+  LayoutGrid,
+  Lock,
+  Globe
 } from "lucide-react";
+import { isPaperTranslatorAllowed } from "@/lib/paper-pdf-store";
 
 const OPTIONS = ["A", "B", "C", "D"] as const;
 type Option = (typeof OPTIONS)[number];
@@ -207,9 +210,10 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
       }
 
       try {
-        const [paperRes, questionsRes] = await Promise.all([
+        const [paperRes, questionsRes, settingsRes] = await Promise.all([
           supabase.from("previous_papers").select("*, exams(title)").eq("id", pid).maybeSingle(),
-          supabase.from("paper_questions").select("*").eq("paper_id", pid).order("question_number", { ascending: true })
+          supabase.from("paper_questions").select("*").eq("paper_id", pid).order("question_number", { ascending: true }),
+          fetch(`/api/papers/settings?t=${Date.now()}`).then((r) => r.json()).catch(() => ({}))
         ]);
 
         if (!isMounted) return;
@@ -217,7 +221,15 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
         if (paperRes.error || !paperRes.data) {
           setErrorMessage("This exam shift paper could not be loaded. Please return to the papers list.");
         } else {
-          setPaper(paperRes.data);
+          const setting = settingsRes?.[String(pid)];
+          const transAllowed = setting !== undefined && setting.allow_translation !== undefined
+            ? Boolean(setting.allow_translation)
+            : (paperRes.data.allow_translation !== false);
+          const fullPaper = { ...paperRes.data, allow_translation: transAllowed };
+          setPaper(fullPaper);
+          if (!transAllowed) {
+            setLanguageMode("english");
+          }
           const qs = questionsRes.data ?? [];
           setQuestions(qs);
           setTimeLeft((paperRes.data.duration_minutes || 60) * 60);
@@ -423,6 +435,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
   useEffect(() => {
     if (questions.length === 0) return;
     if (languageMode === "english") return; // No Hindi translation needed in English-only mode
+    if (paper && isPaperTranslatorAllowed(paper) === false) return; // Dynamic translation disabled by admin
 
     const isEngSection = (sec: SectionDef) => {
       if (!sec) return false;
@@ -1089,15 +1102,25 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                 <label className="text-[11px] font-bold text-slate-600 block mb-1">
                   Default Question Paper Language:
                 </label>
-                <select
-                  value={languageMode}
-                  onChange={(e) => setLanguageMode(e.target.value as any)}
-                  className="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-1 focus:ring-blue-500 cursor-pointer"
-                >
-                  <option value="bilingual">Bilingual (English + Hindi)</option>
-                  <option value="english">English Only</option>
-                  <option value="hindi">Hindi Only</option>
-                </select>
+                {paper && !isPaperTranslatorAllowed(paper) ? (
+                  <div className="bg-slate-100 border border-slate-300 rounded-lg p-2 text-xs font-bold text-slate-700 flex items-center justify-between">
+                    <span className="flex items-center gap-1.5">
+                      <Lock className="h-3.5 w-3.5 text-slate-500" />
+                      <span>English Only (Standard Medium)</span>
+                    </span>
+                    <span className="text-[10px] text-slate-500 font-semibold bg-slate-200 px-1.5 py-0.5 rounded">Fixed</span>
+                  </div>
+                ) : (
+                  <select
+                    value={languageMode}
+                    onChange={(e) => setLanguageMode(e.target.value as any)}
+                    className="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-1 focus:ring-blue-500 cursor-pointer"
+                  >
+                    <option value="bilingual">Bilingual (English + Hindi)</option>
+                    <option value="english">English Only</option>
+                    <option value="hindi">Hindi Only</option>
+                  </select>
+                )}
               </div>
 
               {/* Fullscreen Option */}
@@ -1972,32 +1995,39 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
           </button>
 
           {/* Language Mode Buttons */}
-          <div className="flex items-center gap-1 bg-white p-0.5 rounded-lg border border-slate-300">
-            <button
-              onClick={() => setLanguageMode("bilingual")}
-              className={`px-2 py-0.5 text-[11px] font-bold rounded transition-all cursor-pointer ${
-                languageMode === "bilingual" ? "bg-blue-700 text-white" : "text-slate-600 hover:bg-slate-100"
-              }`}
-            >
-              Bilingual
-            </button>
-            <button
-              onClick={() => setLanguageMode("english")}
-              className={`px-2 py-0.5 text-[11px] font-bold rounded transition-all cursor-pointer ${
-                languageMode === "english" ? "bg-blue-700 text-white" : "text-slate-600 hover:bg-slate-100"
-              }`}
-            >
-              English
-            </button>
-            <button
-              onClick={() => setLanguageMode("hindi")}
-              className={`px-2 py-0.5 text-[11px] font-bold rounded transition-all cursor-pointer ${
-                languageMode === "hindi" ? "bg-blue-700 text-white" : "text-slate-600 hover:bg-slate-100"
-              }`}
-            >
-              हिन्दी
-            </button>
-          </div>
+          {paper && !isPaperTranslatorAllowed(paper) ? (
+            <div className="flex items-center gap-1.5 bg-white px-2.5 py-1 rounded-lg border border-slate-300 text-[11px] font-bold text-slate-700 shadow-2xs" title="Translator is disabled for this paper by admin">
+              <Lock className="h-3 w-3 text-slate-500" />
+              <span>English Only</span>
+            </div>
+          ) : (
+            <div className="flex items-center gap-1 bg-white p-0.5 rounded-lg border border-slate-300">
+              <button
+                onClick={() => setLanguageMode("bilingual")}
+                className={`px-2 py-0.5 text-[11px] font-bold rounded transition-all cursor-pointer ${
+                  languageMode === "bilingual" ? "bg-blue-700 text-white" : "text-slate-600 hover:bg-slate-100"
+                }`}
+              >
+                Bilingual
+              </button>
+              <button
+                onClick={() => setLanguageMode("english")}
+                className={`px-2 py-0.5 text-[11px] font-bold rounded transition-all cursor-pointer ${
+                  languageMode === "english" ? "bg-blue-700 text-white" : "text-slate-600 hover:bg-slate-100"
+                }`}
+              >
+                English
+              </button>
+              <button
+                onClick={() => setLanguageMode("hindi")}
+                className={`px-2 py-0.5 text-[11px] font-bold rounded transition-all cursor-pointer ${
+                  languageMode === "hindi" ? "bg-blue-700 text-white" : "text-slate-600 hover:bg-slate-100"
+                }`}
+              >
+                हिन्दी
+              </button>
+            </div>
+          )}
         </div>
       </div>
 

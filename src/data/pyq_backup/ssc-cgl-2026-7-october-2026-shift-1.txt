@@ -1,0 +1,798 @@
+Q.1: Choose the address that is the same as the one given below. C-12, Ashok Vihar,New Delhi,Delhi - 110052
+A. C-12, Ashok Vihar, New Delhi, Delhi - 110052
+B. C-12, Ashok Vihar, New Delhi, Delhi - 110051
+C. C-12, Ashok Vihar, New Delhi, Delhi - 111052
+D. C-12, Ashok Vihar, New Delhi, Delhi - 110002
+Answer: A
+
+Q.2: The seminar in Nagpur happened 1 day before Bhopal. Raipur's seminar was 2 days after Nagpur, and Jabalpur had its seminar 1 day before Raipur. If Bhopal's seminar was on 15th July, when was Jabalpur's?
+A. 12th july
+B. 13th july
+C. 14th july
+D. 15th july
+Answer: C
+
+Q.3: If 12 @ 4 = 3, 18 @ 6 = 3, then 20 @ 5 = ?
+A. 4
+B. 3
+C. 5
+D. 2
+Answer: A
+
+Q.4: If 111 → 1367631, 112 → 1404928, then 113 → ?
+A. 1436812
+B. 1445000
+C. 1435100
+D. 1442897
+Answer: D
+
+Q.5: Consider the following analogy: If (15:225::12:144), then which of the following completes the analogy 18 : ?
+A. 306
+B. 324
+C. 361
+D. 289
+Answer: B
+
+Q.6: A 40-liter mixture contains milk and water in the ratio 7:
+
+1. How much water must be added to make the ratio 3:1?
+A. 5 liters
+B. 6.67 liters
+C. 8 liters
+D. 10 liters
+Answer: B
+
+Q.7: Choose the group in which all numbers belong to the same category:
+A. 4, 9, 27, 49
+B. 11, 13, 17, 19
+C. 8, 27, 64, 81
+D. 2, 3, 5, 9
+Answer: D
+
+Q.8: Instruction: Identify the judgements that must hold for the statement to be valid, then choose the correct option.
+
+Statement: The government has announced a massive digitalization program aimed at providing all public services through online platforms to reduce bureaucracy and improve accessibility. Judgements:
+
+1. Digitalization will make public services more efficient, accessible, and transparent, improving citizen satisfaction.
+
+2. A rapid shift to digital platforms could exclude those without internet access or digital literacy, disproportionately affecting rural or economically disadvantaged populations.
+A. Only judgement 1
+B. Only judgement 2 follows follows
+C. Both 1 and 2 follow
+D. Neither 1 nor 2 follows
+Answer: C
+
+Q.9: Complete the series. D3, F5, H7, J9, ?
+A. K11
+B. M11
+C. L11
+D. N11
+Answer: C
+
+Q.10: If 'LION' is coded as '12-9-15-14,' how is 'BEAR' coded?
+A. 2-5-1-17
+B. 2-5-1-18
+C. 3-5-1-18
+D. 2-6-1-18
+Answer: B
+
+Q.11: Instruction: Choose the inference that are clearly supported by the statement.
+
+Statement: The country's agricultural output has seen a decrease due to erratic weather patterns and a lack of advanced farming techniques, despite efforts to improve irrigation and provide financial subsidies to farmers. Inference:
+
+I. Irrigation and financial subsidies alone are insufficient to address the challenges faced by the agriculture sector.
+
+II. The weather patterns have become more unpredictable, directly affecting crop yield.
+
+III. The efforts to improve the agriculture sector are likely to succeed in the long term, despite current challenges.
+A. If only I follows
+B. If only II follows
+C. If both II and III
+D. If both I and II follow follow
+Answer: D
+
+Q.12: What is the next number in the series? 2, 5, 10, 17, 26, ?
+A. 35
+B. 36
+C. 37
+D. 38
+Answer: C
+
+Q.13: In a certain code language, "FACTORY" is written as "DYARMPW." How will "HOSPITAL" be written?
+A. FNQMGRYJ
+B. GNROHSZK
+C. FMQNGRYJ
+D. GHRONSZK
+Answer: C
+
+Q.14: In this following question, four words have been given, out of which three are alike in some manner and the fourth one is different. Choose odd one out.
+A. Cabinet Minister
+B. Prime Minister
+C. Chief Minister
+D. Chief Justice
+Answer: D
+
+Q.15: In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or column- wise. Identify this pattern and choose the missing number accordingly. 7 8 4 7 2 9 6 ?
+A. 1
+B. 7
+C. 5
+D. 3
+Answer: A
+
+Q.16: There are six members in the family who include P, Q, R, S, T, and U. There are two couples in the family. From the family, it can be understood that Q is a doctor and the father of T. U is a contractor and grandfather of R. S is a housewife and the grandmother of T. The family includes one doctor, one contractor, one nurse, one housewife, and two students belong to the family. Based on this information, identify which pair is definitely a married couple.
+A. U and S
+B. Q and R
+C. T and U
+D. P and R
+Answer: A
+
+Q.17: Examine the following roll number series of a batch. Which entry is inconsistent with the pattern that follows an arithmetic progression with a common difference of 6?
+A. 441005231
+B. 441005237
+C. 441005243
+D. 441005248
+Answer: D
+
+Q.18: Which word cannot be formed from the letters of the word EDUCATION, using each letter only as many times as it appears in the original word?
+A. ACTION
+B. CAUTION
+C. NOTATION
+D. DONATE
+Answer: C
+
+Q.19: Rearrange the letters 'OCRHNOLOGY' to form a meaningful word. Identify the correct option.
+A. CHRONOLOGY
+B. ARCHEOLOGY
+C. CHRONICAL
+D. ORNITHOLOGY
+Answer: A
+
+Q.20: Choose the option which is exactly similar to: 55-C, Vidhan Sabha Marg, Hazratganj, Lucknow-226001
+A. 55-C, Vidhan Sabha Marg, Hazratganj, Lucknow-226001
+B. 55-E, Vidhan Sabha Marg, Hazratganj, Lucknow-226001
+C. 55-C, Vidhan Sabha Marg, Hazratganj, Lucknow-226002
+D. 55-C, Vidhan Sabha Marg, Hazratganj, Lucknow 226001
+Answer: A
+
+Q.21: Read the statements carefully and assume it to be true. Then examine the two conclusions given below it and decide which conclusion(s), if any, logically follow from the statement.
+
+Statements:
+
+1. The Internet has become an integral part of our lives.
+
+2. Yet there is ongoing debate/whether the Internet is a boon or a curse.
+
+Conclusions:
+
+I. It is difficult to imagine life without the Internet.
+
+II. The constant debate on the Internet is unnecessary.
+A. Only Conclusion I follows
+B. Neither conclusion I nor II follows
+C. Both Conclusions I and II follow
+D. Only Conclusion II follows
+Answer: D
+
+Q.22: Read the statement carefully and assume it to be true. Then examine the two conclusions given below it and decide which conclusion(s), if any, logically follow from the statement.
+
+Statement: The government has adversely affected several top-ranking financial institutions by appointing bureaucrats as their directors rather than domain experts.
+
+Conclusions:
+
+I. The government should appoint directors of financial institutions based on their expertise in the field of finance.
+
+II. The director of a financial institution must possess expertise that matches the financial operations handled by the institution.
+A. Only Conclusion I follows
+B. Both Conclusions I and II follow
+C. Only Conclusion II follows
+D. Neither conclusion I nor II follows
+Answer: B
+
+Q.23: Examine the eligibility guidelines set for the government tablet distribution scheme by assessing the applications of Student X and Student Y against the stated criteria. Identify which student meets the selection requirements considering the budget constraint given. Eligibility: A government scheme: "Free tablet computers are provided to students who score 90%+ in Class 10 AND belong to a family with an income < ₹2L/year." Student X: Scored 92%, family income ₹1.9L/year. Student Y: Scored 89%, family income ₹1.5L/year. Budget Constraint: The remaining tablets are only enough for 1 student.
+A. Give to Student X because they met the academic criteria.
+B. Give to Student Y because they are financially weaker.
+C. Give to neither, as both do not satisfy all criteria.
+D. Split the cost and provide a cheaper device to both.
+Answer: A
+
+Q.24: In the following question two statements are given and these statements are followed by two conclusions. You have to take the given two statements to be true even if they seem to be at variance from commonly known facts. Read the conclusions and then decide which of the given conclusions logically follows from the two given statements.
+
+Statements: All pens are laptops. All laptops are computers.
+
+Conclusions:
+
+I. All pens are computers.
+
+II. All laptops are pens.
+A. Only conclusion I follows
+B. Both conclusions I and II follow
+C. Only conclusion II follows
+D. Neither conclusion I nor conclusion II follows
+Answer: B
+
+Q.25: The regional education board has mandated a compulsory course on personal investment and debt management for all final-year high school students. Which assumption underlies this mandate?
+A. Formal education is the only method through which students can acquire reliable financial knowledge.
+B. High school students possess the necessary mathematical foundation to understand complex market trends.
+C. Early exposure to financial management concepts will lead to better economic decision-making in adulthood.
+D. Implementing this course will guarantee that no student will ever face significant financial hardship.
+Answer: C
+
+Q.26: The arrival of Babur into the Indian subcontinent led to which of the following developments?
+
+1. Introduction of paper currency in the Indian subcontinent.
+
+2. Establishment of the Timurid dynasty in the region.
+A. 1 only
+B. 2 only
+C. Both 1 and 2
+D. Neither 1 nor 2
+Answer: A
+
+Q.27: The Neora Valley National Park is situated in which state?
+A. Himachal Pradesh
+B. West Bengal
+C. Sikkim
+D. Arunachal Pradesh
+Answer: A
+
+Q.28: Which of the following pairs correctly matches the physical quantity with its SI unit?
+A. Magnetic flux density – Weber
+B. Magnetic flux – Tesla
+C. Inductance – Henry
+D. Electric charge – Volt
+Answer: A
+
+Q.29: Which force causes the Earth to bulge at the equator?
+A. Tidal force
+B. Centrifugal force
+C. Gravitational force
+D. Magnetic force 4 AWARENESS
+Answer: A
+
+Q.30: Which statement accurately describes the behavior of the ionosphere during solar activity?
+A. Ionosphere remains completely shielded from solar plasma.
+B. Ionospheric density fluctuates with solar flare events.
+C. Ultraviolet rays stabilize the ionospheric electron density.
+D. Ionospheric layers expand only during the lunar night.
+Answer: A
+
+Q.31: Which state has rich deposits of bauxite in the Patlands of Lohardaga?
+A. Odisha
+B. Chhattisgarh
+C. Jharkhand
+D. Madhya Pradesh
+Answer: A
+
+Q.32: Admiral Dinesh Kumar Tripathi is the ___ Chief of Naval Staff of India in 2024.
+A. 26th
+B. 25th
+C. 24th
+D. 27th
+Answer: A
+
+Q.33: Which of the following top-level bureaucratic positions does T.
+
+V. Somanathan hold in the Indian government as of 2026?
+A. Foreign Secretary
+B. Home Secretary of India of India
+C. Cabinet Secretary
+D. Finance Secretary of India of India
+Answer: A
+
+Q.34: What is the name of the annual water festival held at the Elankavu Bhagavathy Temple in Kerala?
+A. Thrissur Pooram
+B. Arattu Mahotsavam
+C. Attuvela
+D. Navaratri Mahotsavam Mandapam
+Answer: A
+
+Q.35: What underpins the modern academic consensus regarding the end of the Indus civilization?
+A. A single catastrophic tectonic event
+B. Explanations relying purely on human warfare
+C. A mixture of natural and human factors
+D. Total certainty regarding river diversion
+Answer: A
+
+Q.36: What is the main goal of the PM-PRANAM (PM Programme for Restoration, Awareness Generation, Nourishment and Amelioration of Mother Earth) scheme launched by the Government of India?
+A. Promoting rural arts and music
+B. Promoting sustainable fertilizer use
+C. Providing free legal aid to tribal women
+D. Renovating ancient religious monuments
+Answer: A
+
+Q.37: What is the total annual financial assistance provided to eligible farmers under the PMKISAN (Pradhan Mantri Kisan Samman Nidhi) scheme in India?
+A. ₹4,000 per year
+B. ₹6,000 per year
+C. ₹8,000 per year
+D. ₹10,000 per year
+Answer: A
+
+Q.38: Who is the author of the poetry collection “Animesha”, which received the Sahitya Akademi Award 2025?
+A. Sa. Tamilselvan
+B. Nandini Sidha Reddy
+C. Pritpal Singh
+D. Girijakumar Baliyar Betab Singh
+Answer: A
+
+Q.39: Who is the author of the short story collection “Bharkhama”, which received the Sahitya Akademi Award 2025?
+A. Jitender Kumar
+B. Nandini Sidha Soni Reddy
+C. Pritpal Singh
+D. Girijakumar Baliyar Betab Singh
+Answer: A
+
+Q.40: A surgeon performs a risky operation on Z with Z’s valid consent. The surgeon knows death is likely but acts in good faith solely to cure Z, without intending death. Z dies during surgery. Which of the following best reflects the legal principle under the Bharatiya Nyaya Sanhita, 2023 in India?
+A. The surgeon is guilty because knowledge of likely death always creates liability.
+B. The Surgeon protected as act was in good faith with Z's consent for Z's benefit.
+C. The surgeon is protected only if death was impossible to foresee.
+D. Consent is irrelevant where death occurs.
+Answer: A
+
+Q.41: Who became the first woman to be appointed as the Chairperson and Chief Executive Officer (CEO) of the Railway Board in September 2023?
+A. Soma Mondal
+B. Jaya Varma Sinha
+C. Madhabi Puri Buch
+D. Alka Mittal
+Answer: A
+
+Q.42: Who was continued as Principal Secretary to the Prime Minister of India in June 2024?
+A. Nripendra Misra
+B. P.K. Mishra
+C. Pramod Kumar
+D. Tarun Bajaj Sharma
+Answer: A
+
+Q.43: Consider the following statements regarding Indo-Islamic architecture:
+
+1. It is conventionally divided into the Imperial, Provincial, Mughal, and Deccani styles.
+
+2. The Provincial style includes the architectural traditions of Gujarat, Bengal, and Jaunpur. Which of the statements given above is/are correct?
+A. 1 only
+B. 2 only
+C. Both 1 and 2
+D. Neither 1 nor 2
+Answer: C
+
+Q.44: Which of the following industries continued to remain under industrial licensing even after the economic reforms initiated in 1991?
+A. Automobile and textile industries
+B. Alcohol and hazardous chemicals
+C. Cement and chemical fertiliser
+D. Sugar and paper manufacturing
+Answer: A
+
+Q.45: The Indian Premier League (IPL) 2025 final, in which Royal Challengers Bengaluru won their maiden title, was played on 3 June 2025 at which of the following venues?
+A. Eden Gardens, Kolkata
+B. Narendra Modi Stadium, Ahmedabad
+C. Wankhede Stadium, Mumbai
+D. Muthiah Annamalai Chidambaram Stadium, Chennai
+Answer: B
+
+Q.46: Adult literacy rate was replaced in Human Development Index (HDI) methodology mainly because:
+A. It did not receive adequate acceptance from most countries.
+B. It did not adequately reflect the education dimension.
+C. It did not adequately capture differences in educational attainment.
+D. It did not provide reliable calculations for developing countries.
+Answer: D
+
+Q.47: Which government department coordinates the Business Reforms Action Plan (BRAP) exercise in India?
+A. Department for Promotion of Industry and Internal Trade
+B. Department for National Planning and Institutional Transformation
+C. Department for Securities Regulation and Investor Protection
+D. Department for Banking Regulation and Monetary Policy
+Answer: B
+
+Q.48: What is the primary objective of the Central Inspection System under the Business Reforms Action Plan?
+A. Introduce inspection free regulatory procedures
+B. Introduce privately managed inspection procedures
+C. Introduce more frequent inspection procedures
+D. Introduce integrated risk based inspections
+Answer: B
+
+Q.49: Why are pollinators such as insects, birds, and bats considered ecologically important?
+A. They are more economically valuable than entire forest ecosystems.
+B. They demonstrate the ecological interdependence between forests and agriculture.
+C. They are the primary species threatened by tourism.
+D. They directly support industrial manufacturing processes.
+Answer: B
+
+Q.50: Why does the fundamental economic problem of scarcity arise?
+A. Because governments intentionally limit all production
+B. Because wants exceed available resources
+C. Because firms always attempt to maximise profits
+D. Because the prices of all goods remain high
+Answer: A
+
+Q.51: In a polygon, the largest angle is 12° more than the average of all its interior angles. If the largest angle measures 4/3 of a right angle, find the number of sides of the polygon.
+A. 8
+B. 7
+C. 6
+D. 5
+Answer: D
+
+Q.52: What is the inradius of an equilateral triangle with a side length of 6 cm?
+A. 1.11 cm
+B. 1.73 cm
+C. 3.37 cm
+D. 2.21 cm
+Answer: B
+
+Q.53: Find the value of k, if x = 1, y = 2 is a solution of the equation 2x + 3y = k.
+A. 8
+B. 4
+C. 6
+D. 10
+Answer: A
+
+Q.54: If two lines are perpendicular and one has a slope of a/b, what is the slope of the other?
+
+-b/a (B) -a/b
+
+(C) (D)
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-1_q54_opt_A.png)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-1_q54_opt_B.png)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-1_q54_opt_C.png)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-1_q54_opt_D.png)
+Answer: A
+
+Q.55: If θ = 2π/3 radians, find the quadrant in which θ lies.
+A. ![Option A](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-1_q55_opt_A.png)
+B. ![Option B](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-1_q55_opt_B.png)
+C. ![Option C](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-1_q55_opt_C.png)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-7-october-2026-shift-1_q55_opt_D.png)
+Answer: B
+
+Q.56: Determine the number to be added to 144p² – 72p so that it becomes a perfect square.
+A. 1
+B. 3 4
+C. 9
+D. 1 16
+Answer: C
+
+Q.57: Simplify the following expression:
+
+0.65×0.65×0.65−0.13×0.13×0.13 .
+
+0.65×0.65+0.65×0.13+0.13×0.13
+A. 0.28
+B. 0.52
+C. 0.45
+D. 0.76
+Answer: B
+
+Q.58: When a whole number x is added to 2026 and the same number x is subtracted from 2026, what is the sum of the two numbers so obtained?
+A. 1452
+B. 4052
+C. 3564
+D. 2458
+Answer: B
+
+Q.59: Money is invested at simple interest for 3 years at a certain rate. If the rate were increased by 2%, the interest earned would increase by ₹540. Find the principal (sum of money).
+A. ₹8,500
+B. ₹9,000
+C. ₹7,000
+D. ₹8,000
+Answer: B
+
+Q.60: An investment of ₹2,500 earns compound interest at 10% per annum. What will be the amount after 4 years?
+A. ₹3360.25
+B. ₹3660.25
+C. ₹3460.25
+D. ₹3560.25
+Answer: B
+
+Q.61: A wheel of diameter 105 cm makes 40 revolutions. Find the distance covered (in meters). (Take π= 22 ) 7
+A. 184 m
+B. 208 m
+C. 132 m
+D. 216 m
+Answer: C
+
+Q.62: In a circle with centre O, PQ is a chord, and T lies on the minor arc PQ. Tangents at points P and Q meet at point A. If ∠PTQ= 160° , then what is the measure of ∠PAQ ?
+A. 40°
+B. 70°
+C. 100°
+D. 140°
+Answer: D
+
+Q.63: If 20 sin θ + 21 cos θ = 29, find the value of sin θ.
+A. 21/29
+B. 9/29
+C. 20/29
+D. 12 29
+Answer: C
+
+Q.64: If X= √10+3√11 , then what is the value of 10−3√11 X+ 1 ? x
+A. 12
+B. 14
+C. 16
+D. 20
+Answer: D
+
+Q.65: If △ABC≅△PQR and ∠ABC= (x+ 60)° , ∠PQR= (85 −4x)° , and ∠RPQ = (3x+ 65)° , then what is the value of ∠ABC (in degrees)?
+A. 45°
+B. 65°
+C. 25°
+D. 55°
+Answer: B
+
+Q.66: In △ABC , the internal bisector of ∠A meets BC at D. A point E lies on AC such that DE∥AB . If the length of AB = c, AC = b, and BC = a, determine the ratio of the area of △CDE to the area of △ABC in terms of b and c.
+A. ( b+c c )²
+B. ( b+c b )²
+C. b
+D. b+c c b+c
+Answer: B
+
+Q.67: Two circles have radii of 10 cm and 4 cm, with the distance between their centers measuring 17 cm. Calculate the length of their transverse common tangent in centimeters.
+A. √83 cm
+B. √93 cm
+C. 15 cm
+D. 20 cm
+Answer: C
+
+Q.68: If two angles of a triangle are π radians and 3 45°, find the third angle in degrees.
+A. 55°
+B. 75°
+C. 65°
+D. 85°
+Answer: A
+
+Q.69: If sinA= 4 and cosB= 5 , where A and B 5 13 are acute angles, then what is the value of sinAcosB?
+A. 20
+B. −20 65 65
+C. 16
+D. 56/65
+Answer: A
+
+Q.70: In triangle PQR, right-angled at Q, if tanP = 1 , find sin R. √3
+A. 1/2
+B. 1/√2
+C. 1
+D. √3/2
+Answer: D
+
+Q.71: If a + b = 20, ab = 84, then find a4 + b4.
+A. 39012
+B. 39112
+C. 39332
+D. 39712
+Answer: A
+
+Q.72: A circle has a radius of 13 cm. A tangent from an external point P has a length of 84 cm. The distance from the center of the circle to P is:
+A. 85 cm
+B. 83 cm
+C. 97 cm
+D. 90 cm
+Answer: A
+
+Q.73: The average monthly expenditure of 36 families in a housing complex is ₹25,000. If 9 families, whose average expenditure is 40% higher than the overall initial average, move out, what is the percentage decrease in the overall average expenditure of the remaining families?
+A. 13.33%
+B. 10.00%
+C. 12.50%
+D. 15.00%
+Answer: A
+
+Q.74: A shopkeeper gains 25% after allowing a 20% discount on the marked price. By what percentage is the marked price higher than the cost price?
+A. 42.5%
+B. 59.66%
+C. 56.25%
+D. 62.2%
+Answer: C
+
+Q.75: Simplify the following nested radical expression completely: √(4 + 2√3)
+A. √3 + 1
+B. √3 - 1
+C. 2 + √3
+D. 1 - √3
+Answer: A
+
+Q.76: **Comprehension (Q. 76 - 80):** The menstrual cycle, frequently distilled into reductive explanations within mainstream discourse, constitutes a complex, finely-tuned hormonal symphony that underpins female reproductive viability. Typically spanning around 28 days—though significant interindividual variability persists—the cycle is anatomically and biochemically demarcated into four sequential phases: menstruation, the follicular phase, ovulation, and the luteal phase. Menstruation initiates with the systematic desquamation of the functional layer of the endometrium, an event precipitated by the precipitous decline in circulating levels of estrogen and progesterone following an unfertilized ovulatory event. Thereafter, during the follicular phase, anterior pituitary secretion of follicle-stimulating hormone (FSH) catalyses the recruitment and maturation of ovarian follicles. A single dominant follicle subsequently prevails, secreting escalating quantities of estrogen to promote proliferative thickening of the endometrial lining in anticipation of potential zygote implantation. Mid-cycle, ovulation ensues, triggered by an acute surge of luteinizing hormone (LH), culminating in the release of an oocyte into the fallopian tube — a transient but critical window of maximal fertility. In the absence of fertilization, the luteal phase commences: the residual follicular structure, now termed the corpus luteum, secretes progesterone to stabilize the endometrial architecture. Without embryonic implantation, corpus luteum regression ensues, hormonal concentrations diminish sharply, and the cyclical endometrial shedding recommences. Despite the endogenous predictability of this sequence, the menstrual cycle exhibits considerable vulnerability to extrinsic perturbations — including psychosocial stressors, systemic illnesses, and environmental variables — underscoring the intricate interplay between endocrine function and broader homeostatic mechanisms.
+
+---
+
+Identify the correct transformation of the sentence. "Menstruation initiates with the systematic desquamation of the functional layer of the endometrium." Which option correctly transforms it into a passive voice without changing the meaning?
+A. The functional layer of the endometrium is systematically desquamated, initiating menstruation.
+B. Menstruation is initiating by the desquamation of the functional layer.
+C. The systematic endometrium desquamates itself to initiate menstruation.
+D. The menstruation systematically desquamates the functional layer of the endometrium.
+Answer: A
+
+Q.77: **Comprehension (Q. 76 - 80):** The menstrual cycle, frequently distilled into reductive explanations within mainstream discourse, constitutes a complex, finely-tuned hormonal symphony that underpins female reproductive viability. Typically spanning around 28 days—though significant interindividual variability persists—the cycle is anatomically and biochemically demarcated into four sequential phases: menstruation, the follicular phase, ovulation, and the luteal phase. Menstruation initiates with the systematic desquamation of the functional layer of the endometrium, an event precipitated by the precipitous decline in circulating levels of estrogen and progesterone following an unfertilized ovulatory event. Thereafter, during the follicular phase, anterior pituitary secretion of follicle-stimulating hormone (FSH) catalyses the recruitment and maturation of ovarian follicles. A single dominant follicle subsequently prevails, secreting escalating quantities of estrogen to promote proliferative thickening of the endometrial lining in anticipation of potential zygote implantation. Mid-cycle, ovulation ensues, triggered by an acute surge of luteinizing hormone (LH), culminating in the release of an oocyte into the fallopian tube — a transient but critical window of maximal fertility. In the absence of fertilization, the luteal phase commences: the residual follicular structure, now termed the corpus luteum, secretes progesterone to stabilize the endometrial architecture. Without embryonic implantation, corpus luteum regression ensues, hormonal concentrations diminish sharply, and the cyclical endometrial shedding recommences. Despite the endogenous predictability of this sequence, the menstrual cycle exhibits considerable vulnerability to extrinsic perturbations — including psychosocial stressors, systemic illnesses, and environmental variables — underscoring the intricate interplay between endocrine function and broader homeostatic mechanisms.
+
+---
+
+According to the passage, what is the primary function of the corpus luteum during the luteal phase?
+A. To trigger menstruation by lowering progesterone.
+B. To secrete hormones that maintain endometrial integrity.
+C. To stimulate another round of follicle maturation.
+D. To dissolve immediately after ovulation.
+Answer: B
+
+Q.78: **Comprehension (Q. 76 - 80):** The menstrual cycle, frequently distilled into reductive explanations within mainstream discourse, constitutes a complex, finely-tuned hormonal symphony that underpins female reproductive viability. Typically spanning around 28 days—though significant interindividual variability persists—the cycle is anatomically and biochemically demarcated into four sequential phases: menstruation, the follicular phase, ovulation, and the luteal phase. Menstruation initiates with the systematic desquamation of the functional layer of the endometrium, an event precipitated by the precipitous decline in circulating levels of estrogen and progesterone following an unfertilized ovulatory event. Thereafter, during the follicular phase, anterior pituitary secretion of follicle-stimulating hormone (FSH) catalyses the recruitment and maturation of ovarian follicles. A single dominant follicle subsequently prevails, secreting escalating quantities of estrogen to promote proliferative thickening of the endometrial lining in anticipation of potential zygote implantation. Mid-cycle, ovulation ensues, triggered by an acute surge of luteinizing hormone (LH), culminating in the release of an oocyte into the fallopian tube — a transient but critical window of maximal fertility. In the absence of fertilization, the luteal phase commences: the residual follicular structure, now termed the corpus luteum, secretes progesterone to stabilize the endometrial architecture. Without embryonic implantation, corpus luteum regression ensues, hormonal concentrations diminish sharply, and the cyclical endometrial shedding recommences. Despite the endogenous predictability of this sequence, the menstrual cycle exhibits considerable vulnerability to extrinsic perturbations — including psychosocial stressors, systemic illnesses, and environmental variables — underscoring the intricate interplay between endocrine function and broader homeostatic mechanisms.
+
+---
+
+Choose the correct form of the verb for the blank: "Despite the endogenous predictability of this sequence, the menstrual cycle _________ considerable vulnerability to extrinsic perturbations."
+A. exhibits
+B. exhibit
+C. exhibiting
+D. exhibited
+Answer: A
+
+Q.79: **Comprehension (Q. 76 - 80):** The menstrual cycle, frequently distilled into reductive explanations within mainstream discourse, constitutes a complex, finely-tuned hormonal symphony that underpins female reproductive viability. Typically spanning around 28 days—though significant interindividual variability persists—the cycle is anatomically and biochemically demarcated into four sequential phases: menstruation, the follicular phase, ovulation, and the luteal phase. Menstruation initiates with the systematic desquamation of the functional layer of the endometrium, an event precipitated by the precipitous decline in circulating levels of estrogen and progesterone following an unfertilized ovulatory event. Thereafter, during the follicular phase, anterior pituitary secretion of follicle-stimulating hormone (FSH) catalyses the recruitment and maturation of ovarian follicles. A single dominant follicle subsequently prevails, secreting escalating quantities of estrogen to promote proliferative thickening of the endometrial lining in anticipation of potential zygote implantation. Mid-cycle, ovulation ensues, triggered by an acute surge of luteinizing hormone (LH), culminating in the release of an oocyte into the fallopian tube — a transient but critical window of maximal fertility. In the absence of fertilization, the luteal phase commences: the residual follicular structure, now termed the corpus luteum, secretes progesterone to stabilize the endometrial architecture. Without embryonic implantation, corpus luteum regression ensues, hormonal concentrations diminish sharply, and the cyclical endometrial shedding recommences. Despite the endogenous predictability of this sequence, the menstrual cycle exhibits considerable vulnerability to extrinsic perturbations — including psychosocial stressors, systemic illnesses, and environmental variables — underscoring the intricate interplay between endocrine function and broader homeostatic mechanisms.
+
+---
+
+What does "desquamation" most closely mean in the context of the passage?
+A. Thickening of the uterine lining
+B. Shedding of the surface layer
+C. Hormone secretion
+D. Cell multiplication
+Answer: B
+
+Q.80: **Comprehension (Q. 76 - 80):** The menstrual cycle, frequently distilled into reductive explanations within mainstream discourse, constitutes a complex, finely-tuned hormonal symphony that underpins female reproductive viability. Typically spanning around 28 days—though significant interindividual variability persists—the cycle is anatomically and biochemically demarcated into four sequential phases: menstruation, the follicular phase, ovulation, and the luteal phase. Menstruation initiates with the systematic desquamation of the functional layer of the endometrium, an event precipitated by the precipitous decline in circulating levels of estrogen and progesterone following an unfertilized ovulatory event. Thereafter, during the follicular phase, anterior pituitary secretion of follicle-stimulating hormone (FSH) catalyses the recruitment and maturation of ovarian follicles. A single dominant follicle subsequently prevails, secreting escalating quantities of estrogen to promote proliferative thickening of the endometrial lining in anticipation of potential zygote implantation. Mid-cycle, ovulation ensues, triggered by an acute surge of luteinizing hormone (LH), culminating in the release of an oocyte into the fallopian tube — a transient but critical window of maximal fertility. In the absence of fertilization, the luteal phase commences: the residual follicular structure, now termed the corpus luteum, secretes progesterone to stabilize the endometrial architecture. Without embryonic implantation, corpus luteum regression ensues, hormonal concentrations diminish sharply, and the cyclical endometrial shedding recommences. Despite the endogenous predictability of this sequence, the menstrual cycle exhibits considerable vulnerability to extrinsic perturbations — including psychosocial stressors, systemic illnesses, and environmental variables — underscoring the intricate interplay between endocrine function and broader homeostatic mechanisms.
+
+---
+
+What is the closest synonym for the word "precipitous" as used in the passage?
+A. Abrupt
+B. Gradual
+C. Moderate
+D. Predictable
+Answer: A
+
+Q.81: Identify the correct active voice transformation of the following sentence. The vase had been shattered by the cat.
+A. The cat had shattered the vase.
+B. The cat shatters the vase.
+C. The vase had shattered the cat.
+D. The cat shattered the vase.
+Answer: A
+
+Q.82: Select the most appropriate synonym of the given word. PANACEA
+A. Remedy
+B. Solution
+C. Universal cure
+D. Treatment
+Answer: C
+
+Q.83: Select the most appropriate synonym of the given word. CONVICTION
+A. Doubt
+B. Certainty
+C. Confusion
+D. Hesitation
+Answer: B
+
+Q.84: Select the most appropriate antonym of the given word. Tacit
+A. Expressed
+B. Implied
+C. Informed
+D. Understood
+Answer: A
+
+Q.85: Choose the sentence containing the homonym of the underlined word: She had a bright pupil in her class.
+A. The pupil of his eye was dilated.
+B. The pupil was late for school.
+C. The new pupil performed well.
+D. The pupil solved the problem quickly.
+Answer: A
+
+Q.86: Convert the below given passive voice sentence into active voice. "The new policy was announced by the minister during the press conference".
+A. The minister announces the new policy during the press conference
+B. The minister announced the new policy during the press conference
+C. The minister is announcing the new policy during the press conference
+D. The minister had announced the new policy during the press conference
+Answer: B
+
+Q.87: Four parts of a sentence are given below in a jumbled order. When arranged correctly, they form a complete and meaningful sentence. While multiple combinations may appear grammatically correct, choose the one that best conveys the intended meaning as per the given options. A) in Tamil Nadu B) was inaugurated C) a new desalination plant D) by the Prime Minister
+A. B-D-C-A
+B. D-C-B-A
+C. C-B-D-A
+D. C-D-B-A
+Answer: C
+
+Q.88: Four parts of a sentence are given below in a jumbled order. When arranged correctly, they form a complete and meaningful sentence. While multiple combinations may appear grammatically correct, choose the one that best conveys the intended meaning as per the given options. A) due to better crop prices B) rural consumption C) in recent years D) has seen steady growth
+A. C-B-D-A
+B. B-D-C-A
+C. A-D-B-C
+D. D-A-B-C
+Answer: A
+
+Q.89: Identify the misspelt word:
+A. Magnanimous
+B. Gregarious
+C. Perserverance
+D. Meticulous
+Answer: C
+
+Q.90: Fill in the blank with the correct degree of comparison: This project is far ________ than the previous one.
+A. easy
+B. easier
+C. easiest
+D. more easiest
+Answer: B
+
+Q.91: Choose the correct meaning of idiom given below: "Put the cart before the horse"
+A. Prioritize tasks
+B. Reverse the logically proper order
+C. Show urgency
+D. Delegate responsibility
+Answer: B
+
+Q.92: Choose the correct meaning of idiom given below: "Break new ground"
+A. Create a mess
+B. Innovate or pioneer
+C. Destroy something
+D. Start agriculture
+Answer: B
+
+Q.93: Choose the correctly spelt word that best completes the sentence meaningfully. His ______ car blocked the main road for hours, causing a major traffic jam.
+A. stationary
+B. stationery
+C. statuary
+D. statutory
+Answer: A
+
+Q.94: Fill in the blank with the most appropriate option: He was reprimanded not for the error itself, but for his evasion __ responsibility thereafter.
+A. of
+B. for
+C. to
+D. towards
+Answer: B
+
+Q.95: Fill in the blank with the most appropriate option: The analyst's conclusion, while mathematically valid, was marred by a glaring __ of contextual variables.
+A. abstinence
+B. integration
+C. omission
+D. alignment
+Answer: C
+
+Q.96: Choose the correct one-word substitution for: A person who engages in espionage.
+A. Diplomat
+B. Spy
+C. Proprietor
+D. Investigator
+Answer: B
+
+Q.97: Choose the most suitable option to replace the underlined part of the sentence: She walked into the room with silent steps.
+A. with silenced
+B. in silence
+C. silently
+D. silence
+Answer: C
+
+Q.98: Rearrange the following sentences in correct order to make a meaningful passage.
+
+1. Next, the patient is given a mild sedative.
+
+2. First, the doctor checks vital signs.
+
+3. After the procedure, the patient is monitored for side effects.
+
+4. Then, the injection is administered.
+A. 2-1-4-3
+B. 2-3-1-4
+C. 1-2-4-3
+D. 1-2-3-4
+Answer: A
+
+Q.99: Rearrange the following sentences in correct order to make a meaningful passage
+
+1. A new cohort of civil officers is inducted through lateral recruitment streams.
+
+2. Training schedules are personalized via role-specific benchmarks.
+
+3. Induction records are submitted for background standardization.
+
+4. Cross-department placements are finalized.
+A. 4-3-2-1
+B. 3-2-1-4
+C. 2-1-4-3
+D. 1-3-2-4
+Answer: C
+
+Q.100: Select the sentence containing the homonym of the highlighted word: She caught the train just before it departed.
+A. He had to train hard for the marathon.
+B. The train was unusually delayed.
+C. They boarded the overnight train.
+D. The steam train whistled loudly.
+Answer: C
+

@@ -25,12 +25,21 @@ import {
   BookOpen,
   FileCheck,
   HelpCircle,
-  Layers
+  Layers,
+  Globe,
+  Lock,
+  Unlock,
+  ChevronDown,
+  ChevronUp,
+  LayoutList,
+  LayoutGrid
 } from "lucide-react";
 import { 
   getPaperPdfUrl, 
   isPaperDownloadAllowed, 
   setPaperDownloadAllowed, 
+  isPaperTranslatorAllowed,
+  setPaperTranslatorAllowed,
   uploadPaperPdf, 
   setPaperPdfUrl 
 } from "@/lib/paper-pdf-store";
@@ -70,9 +79,30 @@ export default function PaperQuestionsPage() {
   const [opD, setOpD] = useState("");
   const [correct, setCorrect] = useState<"A" | "B" | "C" | "D">("A");
   const [explanation, setExplanation] = useState("");
+  const [isTranslating, setIsTranslating] = useState(false);
+
+  // High-density space-saving View Mode: 'compact' (takes 75% less space!) vs 'cards'
+  const [viewDensity, setViewDensity] = useState<"compact" | "cards">("compact");
+  const [expandedQIds, setExpandedQIds] = useState<Set<number>>(new Set());
+
+  // Hindi On/Off Lock System (Locked = Confirmed Hindi, Unlocked = Needs Translation)
+  const [lockedHindiIds, setLockedHindiIds] = useState<Set<number>>(new Set());
+  const [batchTranslating, setBatchTranslating] = useState(false);
+  const [translateProgress, setTranslateProgress] = useState(0);
+  const [translatingQId, setTranslatingQId] = useState<number | null>(null);
+
+  // Load saved Hindi Locks for this paper
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem(`ssczone_paper_${paperId}_hindi_locks`);
+      if (stored) {
+        setLockedHindiIds(new Set(JSON.parse(stored)));
+      }
+    } catch {}
+  }, [paperId]);
 
   // 4-in-1 Bulk Importer Studio State
-  const [importerTab, setImporterTab] = useState<BulkImporterTab>("pdf");
+  const [importerTab, setImporterTab] = useState<BulkImporterTab>("text");
   const [rawText, setRawText] = useState("");
   const [parsedPreview, setParsedPreview] = useState<ParsedPaperQuestion[]>([]);
   const [isUploading, setIsUploading] = useState(false);
@@ -100,6 +130,19 @@ export default function PaperQuestionsPage() {
       toast.success("Candidate download enabled on website!");
     } else {
       toast.error("Candidate download disabled on website!");
+    }
+  }
+
+  async function handleToggleTranslator() {
+    if (!paper) return;
+    const current = isPaperTranslatorAllowed(paper);
+    const next = !current;
+    setPaper({ ...paper, allow_translation: next });
+    await setPaperTranslatorAllowed(Number(paperId), next);
+    if (next) {
+      toast.success("Exam Translator Enabled! Candidates can switch between Hindi & English during test.");
+    } else {
+      toast.error("Exam Translator Disabled! Test will run in strict English-only mode.");
     }
   }
 
@@ -140,10 +183,13 @@ export default function PaperQuestionsPage() {
     ]).then(([{ data }, settings]) => {
       if (data) {
         const setting = settings?.[String(paperId)];
-        const allowed = setting !== undefined
+        const allowed = setting !== undefined && setting.allow_download !== undefined
           ? Boolean(setting.allow_download)
           : (data.test_type !== "mock" && data.allow_download !== false);
-        setPaper({ ...data, allow_download: allowed, test_type: allowed ? "pyq" : "mock" });
+        const transAllowed = setting !== undefined && setting.allow_translation !== undefined
+          ? Boolean(setting.allow_translation)
+          : (data.allow_translation !== false);
+        setPaper({ ...data, allow_download: allowed, allow_translation: transAllowed, test_type: allowed ? "pyq" : "mock" });
       }
     });
     loadQuestions();
@@ -151,18 +197,18 @@ export default function PaperQuestionsPage() {
 
   async function loadQuestions() {
     setLoading(true);
-    const { data, error } = await supabase
-      .from("paper_questions")
-      .select("*")
-      .eq("paper_id", paperId)
-      .order("question_number", { ascending: true });
-
-    if (error) toast.error(error.message);
-    else {
-      setQuestions(data ?? []);
-      setQNum((data?.length || 0) + 1);
+    try {
+      const res = await fetch(`/api/papers/questions?paperId=${paperId}&t=${Date.now()}`);
+      if (!res.ok) throw new Error("Failed to load questions");
+      const json = await res.json();
+      const list = json.questions ?? [];
+      setQuestions(list);
+      setQNum(list.length + 1);
+    } catch (err: any) {
+      toast.error(err.message || "Failed to load questions");
+    } finally {
+      setLoading(false);
     }
-    setLoading(false);
   }
 
   function resetForm() {
@@ -188,16 +234,315 @@ export default function PaperQuestionsPage() {
     setCorrect(q.correct_answer || "A");
     setExplanation(q.explanation || "");
     setActiveTab("add");
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   async function handleDelete(id: number) {
     if (!confirm("Are you sure you want to delete this paper question?")) return;
-    const { error } = await supabase.from("paper_questions").delete().eq("id", id);
-    if (error) toast.error(error.message);
-    else {
+    try {
+      const res = await fetch("/api/papers/questions", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id, paper_id: Number(paperId) }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to delete question");
       toast.success("Question deleted!");
       loadQuestions();
+    } catch (err: any) {
+      toast.error(err.message || "Failed to delete question");
     }
+  }
+
+  // ── Auto-Translate English to Hindi via Google Translate Engine ──
+  async function handleAutoTranslateHindi() {
+    if (!qText.trim()) {
+      toast.error("Please enter English question statement first!");
+      return;
+    }
+    setIsTranslating(true);
+    const toastId = toast.loading("Translating English to authentic Hindi...");
+    try {
+      // Extract English part if already mixed
+      const enMatch = qText.split(/[\u0900-\u097F]/)[0].trim();
+      const textToTranslate = enMatch.length > 10 ? enMatch : qText.trim();
+
+      const res = await fetch("/api/papers/translate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          text: textToTranslate,
+          options: { A: opA, B: opB, C: opC, D: opD },
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Translation failed");
+
+      if (data.translated) {
+        // Construct clean bilingual question statement
+        const newStatement = `${textToTranslate} ${data.translated}`;
+        setQText(newStatement);
+      }
+
+      // Also translate options if they contain English words
+      if (data.translatedOptions) {
+        const hasLetters = /[A-Za-z]{2,}/;
+        if (opA && hasLetters.test(opA) && data.translatedOptions.A) {
+          const enA = opA.split(/[\u0900-\u097F/]/)[0].trim();
+          setOpA(`${enA} / ${data.translatedOptions.A}`);
+        }
+        if (opB && hasLetters.test(opB) && data.translatedOptions.B) {
+          const enB = opB.split(/[\u0900-\u097F/]/)[0].trim();
+          setOpB(`${enB} / ${data.translatedOptions.B}`);
+        }
+        if (opC && hasLetters.test(opC) && data.translatedOptions.C) {
+          const enC = opC.split(/[\u0900-\u097F/]/)[0].trim();
+          setOpC(`${enC} / ${data.translatedOptions.C}`);
+        }
+        if (opD && hasLetters.test(opD) && data.translatedOptions.D) {
+          const enD = opD.split(/[\u0900-\u097F/]/)[0].trim();
+          setOpD(`${enD} / ${data.translatedOptions.D}`);
+        }
+      }
+
+      toast.success("Question & Options translated into clean Hindi!", { id: toastId });
+    } catch (err: any) {
+      toast.error(err.message || "Failed to auto-translate", { id: toastId });
+    } finally {
+      setIsTranslating(false);
+    }
+  }
+
+  // ── Toggle Hindi Confirmation Lock on Single Question ──
+  function toggleHindiLock(qId: number) {
+    setLockedHindiIds((prev) => {
+      const next = new Set(prev);
+      const isNowLocked = !next.has(qId);
+      if (isNowLocked) {
+        next.add(qId);
+        toast.success("Hindi Confirmed! Translator will skip this question.", { icon: "🔒" });
+      } else {
+        next.delete(qId);
+        toast("Hindi marked for Auto-Translation", { icon: "🌐" });
+      }
+      try {
+        localStorage.setItem(`ssczone_paper_${paperId}_hindi_locks`, JSON.stringify(Array.from(next)));
+      } catch {}
+      return next;
+    });
+  }
+
+  function lockAllHindi() {
+    const allIds = new Set(questions.map((q) => q.id));
+    setLockedHindiIds(allIds);
+    try {
+      localStorage.setItem(`ssczone_paper_${paperId}_hindi_locks`, JSON.stringify(Array.from(allIds)));
+    } catch {}
+    toast.success("All questions marked as Hindi Confirmed (Locked)!", { icon: "🔒" });
+  }
+
+  function unlockAllHindi() {
+    setLockedHindiIds(new Set());
+    try {
+      localStorage.setItem(`ssczone_paper_${paperId}_hindi_locks`, JSON.stringify([]));
+    } catch {}
+    toast("All questions marked for translation!", { icon: "🔓" });
+  }
+
+  function toggleExpandQ(qId: number) {
+    setExpandedQIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(qId)) next.delete(qId);
+      else next.add(qId);
+      return next;
+    });
+  }
+
+  // ── Translate Single Question from List Row ──
+  async function handleTranslateSingleQuestion(q: any) {
+    setTranslatingQId(q.id);
+    const toastId = toast.loading(`Translating Q.${q.question_number} into clean Hindi...`);
+    try {
+      const enMatch = q.question_text.split(/[\u0900-\u097F]/)[0].trim();
+      const textToTranslate = enMatch.length > 10 ? enMatch : q.question_text.trim();
+
+      const res = await fetch("/api/papers/translate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          text: textToTranslate,
+          options: { A: q.option_a, B: q.option_b, C: q.option_c, D: q.option_d },
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Translation failed");
+
+      const newQText = data.translated ? `${textToTranslate} ${data.translated}` : q.question_text;
+      
+      const newOptions = {
+        option_a: q.option_a,
+        option_b: q.option_b,
+        option_c: q.option_c,
+        option_d: q.option_d,
+      };
+
+      if (data.translatedOptions) {
+        const hasLetters = /[A-Za-z]{2,}/;
+        if (q.option_a && hasLetters.test(q.option_a) && data.translatedOptions.A) {
+          const enA = q.option_a.split(/[\u0900-\u097F/]/)[0].trim();
+          newOptions.option_a = `${enA} / ${data.translatedOptions.A}`;
+        }
+        if (q.option_b && hasLetters.test(q.option_b) && data.translatedOptions.B) {
+          const enB = q.option_b.split(/[\u0900-\u097F/]/)[0].trim();
+          newOptions.option_b = `${enB} / ${data.translatedOptions.B}`;
+        }
+        if (q.option_c && hasLetters.test(q.option_c) && data.translatedOptions.C) {
+          const enC = q.option_c.split(/[\u0900-\u097F/]/)[0].trim();
+          newOptions.option_c = `${enC} / ${data.translatedOptions.C}`;
+        }
+        if (q.option_d && hasLetters.test(q.option_d) && data.translatedOptions.D) {
+          const enD = q.option_d.split(/[\u0900-\u097F/]/)[0].trim();
+          newOptions.option_d = `${enD} / ${data.translatedOptions.D}`;
+        }
+      }
+
+      // Save to database
+      const saveRes = await fetch("/api/papers/questions", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          id: q.id,
+          paper_id: parseInt(paperId),
+          question_number: q.question_number,
+          question_text: newQText,
+          option_a: newOptions.option_a,
+          option_b: newOptions.option_b,
+          option_c: newOptions.option_c,
+          option_d: newOptions.option_d,
+          correct_answer: q.correct_answer,
+          explanation: q.explanation,
+        }),
+      });
+      const saveJson = await saveRes.json();
+      if (!saveRes.ok) throw new Error(saveJson.error || "Failed to update question");
+
+      // Auto-lock Hindi since it is now fresh and clean
+      setLockedHindiIds((prev) => {
+        const next = new Set(prev);
+        next.add(q.id);
+        try {
+          localStorage.setItem(`ssczone_paper_${paperId}_hindi_locks`, JSON.stringify(Array.from(next)));
+        } catch {}
+        return next;
+      });
+
+      toast.success(`Q.${q.question_number} translated & updated!`, { id: toastId });
+      loadQuestions();
+    } catch (err: any) {
+      toast.error(err.message || "Failed to translate question", { id: toastId });
+    } finally {
+      setTranslatingQId(null);
+    }
+  }
+
+  // ── Batch Translate Only Unconfirmed Questions (Skip Confirmed/Locked) ──
+  async function handleBatchTranslateUnconfirmed() {
+    const toTranslate = questions.filter((q) => !lockedHindiIds.has(q.id) && q.question_number <= 75);
+    if (toTranslate.length === 0) {
+      toast.error("All questions are already Hindi Confirmed (Locked) or English Section!");
+      return;
+    }
+
+    const ok = confirm(`Auto-translate ${toTranslate.length} unconfirmed questions into pure Hindi?\n\n✓ ${lockedHindiIds.size} already confirmed/locked questions will be completely SKIPPED and protected.`);
+    if (!ok) return;
+
+    setBatchTranslating(true);
+    setTranslateProgress(0);
+    const toastId = toast.loading(`Translating 0 / ${toTranslate.length} questions...`);
+
+    let done = 0;
+    const newlyLocked = new Set(lockedHindiIds);
+
+    for (const q of toTranslate) {
+      try {
+        const enMatch = q.question_text.split(/[\u0900-\u097F]/)[0].trim();
+        const textToTranslate = enMatch.length > 10 ? enMatch : q.question_text.trim();
+
+        const res = await fetch("/api/papers/translate", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            text: textToTranslate,
+            options: { A: q.option_a, B: q.option_b, C: q.option_c, D: q.option_d },
+          }),
+        });
+        const data = await res.json();
+        if (res.ok && data.translated) {
+          const newQText = `${textToTranslate} ${data.translated}`;
+          const newOptions = {
+            option_a: q.option_a,
+            option_b: q.option_b,
+            option_c: q.option_c,
+            option_d: q.option_d,
+          };
+
+          if (data.translatedOptions) {
+            const hasLetters = /[A-Za-z]{2,}/;
+            if (q.option_a && hasLetters.test(q.option_a) && data.translatedOptions.A) {
+              const enA = q.option_a.split(/[\u0900-\u097F/]/)[0].trim();
+              newOptions.option_a = `${enA} / ${data.translatedOptions.A}`;
+            }
+            if (q.option_b && hasLetters.test(q.option_b) && data.translatedOptions.B) {
+              const enB = q.option_b.split(/[\u0900-\u097F/]/)[0].trim();
+              newOptions.option_b = `${enB} / ${data.translatedOptions.B}`;
+            }
+            if (q.option_c && hasLetters.test(q.option_c) && data.translatedOptions.C) {
+              const enC = q.option_c.split(/[\u0900-\u097F/]/)[0].trim();
+              newOptions.option_c = `${enC} / ${data.translatedOptions.C}`;
+            }
+            if (q.option_d && hasLetters.test(q.option_d) && data.translatedOptions.D) {
+              const enD = q.option_d.split(/[\u0900-\u097F/]/)[0].trim();
+              newOptions.option_d = `${enD} / ${data.translatedOptions.D}`;
+            }
+          }
+
+          await fetch("/api/papers/questions", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              id: q.id,
+              paper_id: parseInt(paperId),
+              question_number: q.question_number,
+              question_text: newQText,
+              option_a: newOptions.option_a,
+              option_b: newOptions.option_b,
+              option_c: newOptions.option_c,
+              option_d: newOptions.option_d,
+              correct_answer: q.correct_answer,
+              explanation: q.explanation,
+            }),
+          });
+
+          newlyLocked.add(q.id);
+        }
+      } catch (e) {
+        console.warn(`Translation skipped for Q.${q.question_number}:`, e);
+      }
+
+      done++;
+      const pct = Math.round((done / toTranslate.length) * 100);
+      setTranslateProgress(pct);
+      toast.loading(`Translating ${done} / ${toTranslate.length} questions (${pct}%)...`, { id: toastId });
+    }
+
+    setLockedHindiIds(newlyLocked);
+    try {
+      localStorage.setItem(`ssczone_paper_${paperId}_hindi_locks`, JSON.stringify(Array.from(newlyLocked)));
+    } catch {}
+
+    toast.success(`Successfully translated ${done} questions into clean Hindi!`, { id: toastId });
+    setBatchTranslating(false);
+    loadQuestions();
   }
 
   // ── Download Questions as Formatted Text (.txt) ──
@@ -244,7 +589,8 @@ export default function PaperQuestionsPage() {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    const payloadWithExp: any = {
+    const payload: any = {
+      id: editingId || undefined,
       paper_id: parseInt(paperId),
       question_number: qNum,
       question_text: qText.trim(),
@@ -253,45 +599,23 @@ export default function PaperQuestionsPage() {
       option_c: opC.trim(),
       option_d: opD.trim(),
       correct_answer: correct,
-      explanation: explanation.trim() || null
-    };
-
-    const payloadBase: any = {
-      paper_id: parseInt(paperId),
-      question_number: qNum,
-      question_text: qText.trim(),
-      option_a: opA.trim(),
-      option_b: opB.trim(),
-      option_c: opC.trim(),
-      option_d: opD.trim(),
-      correct_answer: correct
+      explanation: explanation.trim() || null,
     };
 
     setLoading(true);
     try {
-      if (editingId) {
-        let { error } = await supabase.from("paper_questions").update(payloadWithExp).eq("id", editingId);
-        if (error && error.message.includes("explanation")) {
-          const res = await supabase.from("paper_questions").update(payloadBase).eq("id", editingId);
-          error = res.error;
-        }
-        if (error) throw error;
-        toast.success("Question updated successfully!");
-        resetForm();
-        setActiveTab("list");
-        loadQuestions();
-      } else {
-        let { error } = await supabase.from("paper_questions").insert(payloadWithExp);
-        if (error && error.message.includes("explanation")) {
-          const res = await supabase.from("paper_questions").insert(payloadBase);
-          error = res.error;
-        }
-        if (error) throw error;
-        toast.success("Question added successfully!");
-        resetForm();
-        setActiveTab("list");
-        loadQuestions();
-      }
+      const res = await fetch("/api/papers/questions", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to save question");
+
+      toast.success(editingId ? "Question updated successfully!" : "Question added successfully!");
+      resetForm();
+      setActiveTab("list");
+      loadQuestions();
     } catch (err: any) {
       toast.error(err.message || "Failed to save question");
     } finally {
@@ -470,6 +794,57 @@ export default function PaperQuestionsPage() {
     }
   }
 
+  // ── 3b. Natural & Delimited Text Parser ──
+  function parseNaturalOrDelimitedText(text: string): ParsedPaperQuestion[] {
+    if (!text || !text.trim()) return [];
+    if (text.trim().startsWith("[")) {
+      return parseJSON(text);
+    }
+    if (text.includes("||")) {
+      return parseCSV(text);
+    }
+
+    // Natural SSC Format: Q1. ... A) ... B) ... C) ... D) ... Correct Answer: ...
+    const questions: ParsedPaperQuestion[] = [];
+    const qBlocks = text.split(/(?:^|\n)(?:Q\s*(\d+)[\.\:]|(\d+)[\.\:])\s*/i);
+
+    if (qBlocks.length > 1) {
+      for (let i = 1; i < qBlocks.length; i += 3) {
+        const qNumStr = qBlocks[i] || qBlocks[i + 1] || `${questions.length + 1}`;
+        const qNum = parseInt(qNumStr) || (questions.length + 1);
+        const block = qBlocks[i + 2] || "";
+
+        const optA = block.match(/(?:^|\n)\s*A[\)\.]\s*([\s\S]*?)(?=(?:\n\s*[B-D][\)\.]|\n\s*Correct Answer|\n\s*Ans|\n*$))/i)?.[1]?.trim() || "";
+        const optB = block.match(/(?:^|\n)\s*B[\)\.]\s*([\s\S]*?)(?=(?:\n\s*[C-D][\)\.]|\n\s*Correct Answer|\n\s*Ans|\n*$))/i)?.[1]?.trim() || "";
+        const optC = block.match(/(?:^|\n)\s*C[\)\.]\s*([\s\S]*?)(?=(?:\n\s*D[\)\.]|\n\s*Correct Answer|\n\s*Ans|\n*$))/i)?.[1]?.trim() || "";
+        const optD = block.match(/(?:^|\n)\s*D[\)\.]\s*([\s\S]*?)(?=(?:\n\s*Correct Answer|\n\s*Ans|\n\s*Explanation|\n*$))/i)?.[1]?.trim() || "";
+
+        const qTextMatch = block.split(/(?:^|\n)\s*A[\)\.]/i)[0];
+        const qText = qTextMatch ? qTextMatch.trim() : "";
+
+        const ansMatch = block.match(/(?:Correct Answer|Ans(?:wer)?)\s*[:\-]\s*(?:Option\s*)?([A-D])/i);
+        const ansRaw = ansMatch ? ansMatch[1].toUpperCase() : "A";
+        const correctAns = (["A", "B", "C", "D"].includes(ansRaw) ? ansRaw : "A") as "A" | "B" | "C" | "D";
+
+        const isValid = Boolean(qText && optA && optB && optC && optD);
+        questions.push({
+          question_number: qNum,
+          question_text: qText,
+          option_a: optA,
+          option_b: optB,
+          option_c: optC,
+          option_d: optD,
+          correct_answer: correctAns,
+          isValid,
+          errorReason: isValid ? undefined : "Missing question text or options"
+        });
+      }
+    }
+
+    if (questions.length > 0) return questions;
+    return parseCSV(text);
+  }
+
   function handleFileSelect(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -478,6 +853,7 @@ export default function PaperQuestionsPage() {
       const content = ev.target?.result as string;
       if (!content) return;
       if (file.name.endsWith(".json")) setParsedPreview(parseJSON(content));
+      else if (file.name.endsWith(".txt")) setParsedPreview(parseNaturalOrDelimitedText(content));
       else setParsedPreview(parseCSV(content));
     };
     reader.readAsText(file);
@@ -485,8 +861,7 @@ export default function PaperQuestionsPage() {
 
   function handleTextParse() {
     if (!rawText.trim()) return toast.error("Please paste content to parse!");
-    if (rawText.trim().startsWith("[")) setParsedPreview(parseJSON(rawText));
-    else setParsedPreview(parseCSV(rawText));
+    setParsedPreview(parseNaturalOrDelimitedText(rawText));
   }
 
   // ── 4. Batch Importer Execution ──
@@ -494,22 +869,13 @@ export default function PaperQuestionsPage() {
     const validQuestions = parsedPreview.filter((q) => q.isValid);
     if (validQuestions.length === 0) return toast.error("No valid questions found to import!");
 
-    setIsUploading(true);
-    setUploadProgress(0);
-
     if (overwriteExisting && questions.length > 0) {
       const ok = confirm(`Caution: This will replace all ${questions.length} existing questions in this paper with ${validQuestions.length} newly extracted questions. Proceed?`);
-      if (!ok) {
-        setIsUploading(false);
-        return;
-      }
-      const { error: delErr } = await supabase.from("paper_questions").delete().eq("paper_id", parseInt(paperId));
-      if (delErr) {
-        toast.error("Failed to clear old questions: " + delErr.message);
-        setIsUploading(false);
-        return;
-      }
+      if (!ok) return;
     }
+
+    setIsUploading(true);
+    setUploadProgress(15);
 
     const formattedPayloads = validQuestions.map((q, idx) => ({
       paper_id: parseInt(paperId),
@@ -519,39 +885,40 @@ export default function PaperQuestionsPage() {
       option_b: q.option_b,
       option_c: q.option_c,
       option_d: q.option_d,
-      correct_answer: q.correct_answer
+      correct_answer: q.correct_answer,
     }));
 
-    const chunkSize = 50;
-    let successCount = 0;
+    try {
+      const res = await fetch("/api/papers/questions", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          bulk: true,
+          paper_id: parseInt(paperId),
+          overwrite: overwriteExisting,
+          questions: formattedPayloads,
+        }),
+      });
 
-    for (let i = 0; i < formattedPayloads.length; i += chunkSize) {
-      const chunk = formattedPayloads.slice(i, i + chunkSize);
-      const { error } = await supabase.from("paper_questions").insert(chunk);
-      if (error) {
-        toast.error(`Chunk ${Math.floor(i / chunkSize) + 1} failed: ` + error.message);
-        break;
-      }
-      successCount += chunk.length;
-      setUploadProgress(Math.round((successCount / formattedPayloads.length) * 100));
-    }
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Bulk import failed");
 
-    // If PDF was selected, update attached PDF URL as well
-    if (pdfFile) {
-      try {
-        const { url } = await uploadPaperPdf(pdfFile);
-        if (url) {
-          await setPaperPdfUrl(parseInt(paperId), url);
-          setPaper((prev: any) => ({ ...prev, pdf_url: url }));
+      setUploadProgress(100);
+
+      // If PDF was selected, update attached PDF URL as well
+      if (pdfFile) {
+        try {
+          const { url } = await uploadPaperPdf(pdfFile);
+          if (url) {
+            await setPaperPdfUrl(parseInt(paperId), url);
+            setPaper((prev: any) => ({ ...prev, pdf_url: url }));
+          }
+        } catch (e) {
+          console.warn("Could not sync PDF file:", e);
         }
-      } catch (e) {
-        console.warn("Could not sync PDF file:", e);
       }
-    }
 
-    setIsUploading(false);
-    if (successCount > 0) {
-      toast.success(`Successfully imported ${successCount} questions into this paper!`);
+      toast.success(`Successfully imported ${data.count || formattedPayloads.length} questions into this paper!`);
       setParsedPreview([]);
       setRawText("");
       setPdfFile(null);
@@ -559,6 +926,10 @@ export default function PaperQuestionsPage() {
       if (pdfInputRef.current) pdfInputRef.current.value = "";
       setActiveTab("list");
       loadQuestions();
+    } catch (err: any) {
+      toast.error(err.message || "Bulk import failed");
+    } finally {
+      setIsUploading(false);
     }
   }
 
@@ -630,9 +1001,9 @@ export default function PaperQuestionsPage() {
   const paperPdf = paper ? getPaperPdfUrl(paper) : null;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 text-slate-900" style={{ colorScheme: "light", color: "#0f172a" }}>
       {/* Top Breadcrumb & Paper Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 bg-white p-6 rounded-3xl shadow-xs">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 bg-white p-6 rounded-3xl shadow-xs" style={{ color: "#0f172a" }}>
         <div className="space-y-1">
           <div className="flex items-center gap-2 text-xs text-slate-500">
             <Link href="/admin/papers" className="hover:text-blue-600 flex items-center gap-1 font-semibold">
@@ -642,7 +1013,7 @@ export default function PaperQuestionsPage() {
             <span className="font-bold text-slate-800">{paper?.exams?.title || "Exam"}</span>
           </div>
 
-          <h1 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+          <h1 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight" style={{ color: "#0f172a" }}>
             {paper ? paper.title : "Loading PYQ Paper..."}
           </h1>
 
@@ -654,44 +1025,46 @@ export default function PaperQuestionsPage() {
             <span>Target: {paper?.total_questions || 100} MCQs</span>
             <span>•</span>
             <span>Currently Added: {questions.length} MCQs</span>
-            {paperPdf && (
-              <>
-                <span>•</span>
-                <a
-                  href={paperPdf}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md font-bold hover:underline"
-                >
-                  <FileText className="h-3 w-3" />
-                  <span>PDF Linked</span>
-                </a>
-              </>
-            )}
           </div>
         </div>
 
-        {/* Right Header Controls: Prominent PDF Show Toggle & Tabs */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2.5 shrink-0 self-start sm:self-center">
-          {/* Prominent PDF Show ON/OFF Toggle Button */}
-          <button
-            type="button"
-            onClick={handleToggleDownload}
-            className={`inline-flex items-center gap-2 px-3.5 py-2.5 rounded-2xl text-xs font-black transition-all cursor-pointer shadow-xs border ${
-              paper && isPaperDownloadAllowed(paper)
-                ? "bg-emerald-600 text-white border-emerald-700 hover:bg-emerald-700 shadow-emerald-600/20"
-                : "bg-rose-50 text-rose-700 border-rose-300 hover:bg-rose-100"
-            }`}
-            title="Click to turn Candidate PDF Show/Download ON or OFF on website"
-          >
-            <FileText className="h-4 w-4" />
-            <span>PDF on Website:</span>
-            <span className={`px-2 py-0.5 rounded-lg font-black text-xs ${
-              paper && isPaperDownloadAllowed(paper) ? "bg-white text-emerald-700" : "bg-rose-600 text-white"
-            }`}>
-              {paper && isPaperDownloadAllowed(paper) ? "ON (दिखेगा)" : "OFF (छिपेगा)"}
-            </span>
-          </button>
+        {/* Right Header Controls: Full Paper Translator Toggle & Tabs */}
+        <div className="flex items-center gap-2.5 shrink-0 self-start sm:self-center flex-wrap">
+          {/* Full Paper Exam Translator ON/OFF Switch Button */}
+          {paper && (
+            <button
+              type="button"
+              onClick={handleToggleTranslator}
+              className={`flex items-center gap-2 rounded-2xl border px-3.5 py-2 text-xs font-bold transition-all cursor-pointer shadow-xs ${
+                isPaperTranslatorAllowed(paper)
+                  ? "border-emerald-300 bg-emerald-50 text-emerald-900 hover:bg-emerald-100"
+                  : "border-slate-300 bg-slate-100 text-slate-700 hover:bg-slate-200"
+              }`}
+              title={
+                isPaperTranslatorAllowed(paper)
+                  ? "Exam Translator is ON: Candidates can switch between Hindi and English during test. Click to disable."
+                  : "Exam Translator is OFF: Candidates can only take test in English. Click to enable."
+              }
+            >
+              <Globe className={`h-4 w-4 ${isPaperTranslatorAllowed(paper) ? "text-emerald-600" : "text-slate-400"}`} />
+              <div className="flex flex-col text-left leading-tight">
+                <span className="text-[10px] text-slate-500 font-semibold uppercase tracking-wider">Exam Translator</span>
+                <span className="font-extrabold flex items-center gap-1.5">
+                  {isPaperTranslatorAllowed(paper) ? (
+                    <>
+                      <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse inline-block" />
+                      <span>ON (Bilingual)</span>
+                    </>
+                  ) : (
+                    <>
+                      <span className="h-2 w-2 rounded-full bg-slate-400 inline-block" />
+                      <span>OFF (English Only)</span>
+                    </>
+                  )}
+                </span>
+              </div>
+            </button>
+          )}
 
           {/* Tab Controls */}
           <div className="flex items-center gap-1.5 bg-slate-100 p-1.5 rounded-2xl">
@@ -738,6 +1111,123 @@ export default function PaperQuestionsPage() {
       {/* ── TAB 1: QUESTIONS LIST ── */}
       {activeTab === "list" && (
         <div className="space-y-4">
+          {/* Hindi Quality Control & View Density Switcher Toolbar */}
+          <div className="rounded-2xl border border-slate-200 bg-linear-to-r from-slate-50 via-white to-blue-50/40 p-3 sm:p-4 shadow-xs">
+            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
+              {/* Left: View Mode Toggle & Status Badges */}
+              <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+                {/* View Density Switcher */}
+                <div className="inline-flex items-center rounded-xl border border-slate-200 bg-white p-1 shadow-2xs">
+                  <button
+                    type="button"
+                    onClick={() => setViewDensity("compact")}
+                    className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                      viewDensity === "compact"
+                        ? "bg-blue-600 text-white shadow-xs"
+                        : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
+                    }`}
+                    title="Compact space-saving view: 75% less vertical space, inline options"
+                  >
+                    <LayoutList className="h-3.5 w-3.5" />
+                    <span>Compact View</span>
+                    <span className="text-[10px] uppercase font-black tracking-wider bg-blue-500/30 text-white px-1.5 py-0.2 rounded-md">
+                      Space-Saving
+                    </span>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => setViewDensity("cards")}
+                    className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                      viewDensity === "cards"
+                        ? "bg-blue-600 text-white shadow-xs"
+                        : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
+                    }`}
+                    title="Traditional spacious cards view"
+                  >
+                    <LayoutGrid className="h-3.5 w-3.5" />
+                    <span>Cards View</span>
+                  </button>
+                </div>
+
+                <div className="h-5 w-px bg-slate-200 hidden sm:block" />
+
+                {/* Status Badges */}
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="inline-flex items-center gap-1.5 rounded-xl border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-xs font-bold text-emerald-900">
+                    <Lock className="h-3.5 w-3.5 text-emerald-600" />
+                    <span>
+                      <b>{questions.filter((q) => lockedHindiIds.has(q.id)).length}</b> Confirmed (Protected)
+                    </span>
+                  </span>
+
+                  <span className="inline-flex items-center gap-1.5 rounded-xl border border-amber-200 bg-amber-50 px-2.5 py-1 text-xs font-bold text-amber-900">
+                    <Unlock className="h-3.5 w-3.5 text-amber-600" />
+                    <span>
+                      <b>{questions.filter((q) => !lockedHindiIds.has(q.id) && q.question_number <= 75).length}</b> Needs Translation
+                    </span>
+                  </span>
+                </div>
+              </div>
+
+              {/* Right: Quick Action Buttons */}
+              <div className="flex items-center gap-2 flex-wrap">
+                <button
+                  type="button"
+                  onClick={handleBatchTranslateUnconfirmed}
+                  disabled={batchTranslating || questions.filter((q) => !lockedHindiIds.has(q.id) && q.question_number <= 75).length === 0}
+                  className="inline-flex items-center gap-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 disabled:bg-slate-300 disabled:cursor-not-allowed px-3.5 py-2 text-xs font-bold text-white shadow-xs cursor-pointer transition-all"
+                  title="Translate all unconfirmed questions into pure Hindi, completely skipping confirmed/locked ones"
+                >
+                  <Globe className={`h-3.5 w-3.5 text-blue-200 ${batchTranslating ? "animate-spin" : ""}`} />
+                  <span>
+                    {batchTranslating
+                      ? "Translating..."
+                      : `Batch Translate (${questions.filter((q) => !lockedHindiIds.has(q.id) && q.question_number <= 75).length} Qs)`}
+                  </span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={lockAllHindi}
+                  className="inline-flex items-center gap-1 rounded-xl border border-slate-200 bg-white px-2.5 py-2 text-xs font-bold text-slate-700 hover:bg-slate-50 cursor-pointer shadow-2xs"
+                  title="Mark all questions as Hindi Confirmed (Locks all questions from auto-translation)"
+                >
+                  <Lock className="h-3.5 w-3.5 text-emerald-600" />
+                  <span>Lock All</span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={unlockAllHindi}
+                  className="inline-flex items-center gap-1 rounded-xl border border-slate-200 bg-white px-2.5 py-2 text-xs font-bold text-slate-700 hover:bg-slate-50 cursor-pointer shadow-2xs"
+                  title="Mark all questions as unconfirmed (Allows auto-translation on all questions)"
+                >
+                  <Unlock className="h-3.5 w-3.5 text-amber-600" />
+                  <span>Unlock All</span>
+                </button>
+              </div>
+            </div>
+
+            {/* Translation Progress Bar */}
+            {batchTranslating && (
+              <div className="mt-3 pt-3 border-t border-slate-200">
+                <div className="flex items-center justify-between text-xs font-bold text-blue-800 mb-1">
+                  <span className="flex items-center gap-1.5">
+                    <Globe className="h-3.5 w-3.5 animate-spin text-blue-600" />
+                    Auto-translating unconfirmed questions to pure Hindi...
+                  </span>
+                  <span>{translateProgress}%</span>
+                </div>
+                <div className="h-2 w-full rounded-full bg-slate-200 overflow-hidden">
+                  <div
+                    className="h-full bg-blue-600 transition-all duration-300"
+                    style={{ width: `${translateProgress}%` }}
+                  />
+                </div>
+              </div>
+            )}
+          </div>
           <div className="flex items-center justify-between gap-3">
             <div className="relative flex-1">
               <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
@@ -746,7 +1236,8 @@ export default function PaperQuestionsPage() {
                 placeholder="Search questions by text or number..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full rounded-2xl border border-slate-200 bg-white pl-10 pr-4 py-2.5 text-xs sm:text-sm text-slate-800 focus:border-blue-600 focus:outline-none"
+                className="w-full rounded-2xl border border-slate-300 bg-white pl-10 pr-4 py-2.5 text-xs sm:text-sm text-slate-900 placeholder:text-slate-400 focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100 font-medium"
+                style={{ color: "#0f172a", backgroundColor: "#ffffff" }}
               />
             </div>
 
@@ -773,8 +1264,8 @@ export default function PaperQuestionsPage() {
 
           {/* Fast Pagination Control Bar */}
           {filteredQuestions.length > 0 && (
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-3 bg-white p-3 rounded-2xl border border-slate-200 text-xs shadow-xs">
-              <div className="flex items-center gap-2 text-slate-600 font-semibold">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-3 bg-white p-3 rounded-2xl border border-slate-200 text-xs shadow-xs" style={{ color: "#0f172a" }}>
+              <div className="flex items-center gap-2 text-slate-700 font-semibold">
                 <span>
                   Showing{" "}
                   <b className="text-blue-700">
@@ -789,7 +1280,7 @@ export default function PaperQuestionsPage() {
               <div className="flex items-center gap-2 flex-wrap">
                 {/* Jump to Question */}
                 <div className="flex items-center gap-1.5 border border-slate-200 rounded-xl px-2 py-1 bg-slate-50">
-                  <span className="text-[11px] text-slate-500 font-bold">Jump to Q:</span>
+                  <span className="text-[11px] text-slate-600 font-bold">Jump to Q:</span>
                   <input
                     type="number"
                     placeholder="Q#"
@@ -805,7 +1296,8 @@ export default function PaperQuestionsPage() {
                         }
                       }
                     }}
-                    className="w-12 bg-white border border-slate-300 rounded-lg px-1 py-0.5 text-xs font-bold text-center"
+                    className="w-14 bg-white border border-slate-300 rounded-lg px-1.5 py-0.5 text-xs font-bold text-slate-900 text-center"
+                    style={{ color: "#0f172a", backgroundColor: "#ffffff" }}
                   />
                 </div>
 
@@ -835,7 +1327,7 @@ export default function PaperQuestionsPage() {
                     <button
                       onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
                       disabled={currentPage === 1}
-                      className="px-2 py-1 rounded-lg border border-slate-200 bg-white font-bold disabled:opacity-30 hover:bg-slate-50 cursor-pointer disabled:cursor-not-allowed"
+                      className="px-2 py-1 rounded-lg border border-slate-200 bg-white font-bold disabled:opacity-30 hover:bg-slate-50 cursor-pointer disabled:cursor-not-allowed text-slate-700"
                     >
                       ←
                     </button>
@@ -855,7 +1347,7 @@ export default function PaperQuestionsPage() {
                     <button
                       onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
                       disabled={currentPage === totalPages}
-                      className="px-2 py-1 rounded-lg border border-slate-200 bg-white font-bold disabled:opacity-30 hover:bg-slate-50 cursor-pointer disabled:cursor-not-allowed"
+                      className="px-2 py-1 rounded-lg border border-slate-200 bg-white font-bold disabled:opacity-30 hover:bg-slate-50 cursor-pointer disabled:cursor-not-allowed text-slate-700"
                     >
                       →
                     </button>
@@ -866,115 +1358,349 @@ export default function PaperQuestionsPage() {
           )}
 
           {loading ? (
-            <div className="p-12 text-center text-slate-400">Loading paper questions...</div>
+            <div className="p-12 text-center text-slate-500 font-medium">Loading paper questions...</div>
           ) : filteredQuestions.length === 0 ? (
-            <div className="rounded-3xl border border-slate-200 bg-white p-12 text-center text-slate-500 shadow-xs">
-              <BookOpen className="mx-auto h-10 w-10 text-slate-300 mb-2" />
-              <p className="text-base font-bold text-slate-800">No questions populated in this paper yet</p>
-              <p className="text-xs text-slate-400 mt-1 max-w-md mx-auto">
+            <div className="rounded-3xl border border-slate-200 bg-white p-12 text-center text-slate-500 shadow-xs" style={{ color: "#0f172a" }}>
+              <BookOpen className="mx-auto h-10 w-10 text-slate-400 mb-2" />
+              <p className="text-base font-bold text-slate-900">No questions populated in this paper yet</p>
+              <p className="text-xs text-slate-500 mt-1 max-w-md mx-auto">
                 Use the <b>4-in-1 Bulk Importer</b> to instantly extract all 100 questions from a PDF, or upload CSV / JSON!
               </p>
               <button
                 onClick={() => setActiveTab("bulk")}
-                className="mt-4 inline-flex items-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 px-5 py-2.5 text-xs font-bold text-white shadow-xs"
+                className="mt-4 inline-flex items-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 px-5 py-2.5 text-xs font-bold text-white shadow-xs cursor-pointer"
               >
                 <Sparkles className="h-4 w-4 text-amber-300" />
                 <span>Open 4-in-1 Bulk Importer</span>
               </button>
             </div>
-          ) : (
-            <div className="grid gap-3">
-              {paginatedQuestions.map((q) => (
-                <div
-                  key={q.id}
-                  className="rounded-2xl border border-slate-200 bg-white p-5 shadow-xs hover:border-blue-200 transition-all"
-                >
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-1.5">
-                        <span className="rounded-lg bg-blue-100 px-2.5 py-0.5 text-xs font-black text-blue-800">
+          ) : viewDensity === "compact" ? (
+            /* ── Space-Saving High Density Compact View (75% less vertical height) ── */
+            <div className="space-y-2">
+              {paginatedQuestions.map((q) => {
+                const isLocked = lockedHindiIds.has(q.id);
+                const isExpanded = expandedQIds.has(q.id);
+                const isTranslatingThis = translatingQId === q.id;
+                const isEnglishSection = q.question_number > 75;
+
+                return (
+                  <div
+                    key={q.id}
+                    className="rounded-xl border border-slate-200 bg-white p-3 hover:border-blue-400 transition-all shadow-2xs text-slate-900"
+                    style={{ color: "#0f172a" }}
+                  >
+                    {/* Header Row: Q# | Hindi Confirmed On/Off | Ans Key | Action Buttons */}
+                    <div className="flex items-center justify-between gap-2 flex-wrap">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <span className="rounded-lg bg-blue-100 px-2 py-0.5 text-xs font-black text-blue-800">
                           Q.{q.question_number}
                         </span>
-                        <span className="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md">
-                          Answer: Option {q.correct_answer}
+
+                        {/* ON / OFF Hindi Confirmed Lock Button */}
+                        {!isEnglishSection ? (
+                          <button
+                            type="button"
+                            onClick={() => toggleHindiLock(q.id)}
+                            className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg text-[11px] font-bold border cursor-pointer transition-all ${
+                              isLocked
+                                ? "bg-emerald-50 text-emerald-800 border-emerald-300 hover:bg-emerald-100"
+                                : "bg-amber-50 text-amber-900 border-amber-300 hover:bg-amber-100 animate-pulse"
+                            }`}
+                            title={
+                              isLocked
+                                ? "Hindi is CONFIRMED (Translator will skip this question). Click to turn OFF/unlock."
+                                : "Hindi is NOT confirmed (Translator can work on it). Click to turn ON/lock."
+                            }
+                          >
+                            {isLocked ? (
+                              <>
+                                <Lock className="h-3 w-3 text-emerald-600 shrink-0" />
+                                <span>Hindi Confirmed [ON]</span>
+                              </>
+                            ) : (
+                              <>
+                                <Unlock className="h-3 w-3 text-amber-600 shrink-0" />
+                                <span>Needs Translation [OFF]</span>
+                              </>
+                            )}
+                          </button>
+                        ) : (
+                          <span className="text-[10px] font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200">
+                            English Section (Pure English)
+                          </span>
+                        )}
+
+                        <span className="text-[11px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200">
+                          Ans: Option {q.correct_answer}
                         </span>
                       </div>
-                      <h4 className="text-sm sm:text-base font-bold text-slate-900 leading-snug">
-                        <MathText text={q.question_text} />
-                      </h4>
 
-                      <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm">
-                        {[
-                          { label: "A", val: q.option_a },
-                          { label: "B", val: q.option_b },
-                          { label: "C", val: q.option_c },
-                          { label: "D", val: q.option_d }
-                        ].map((opt) => {
-                          const isCorrect = q.correct_answer === opt.label;
-                          return (
-                            <div
-                              key={opt.label}
-                              className={`flex items-center gap-2.5 rounded-xl p-2.5 text-xs sm:text-sm font-semibold border ${
-                                isCorrect
-                                  ? "bg-emerald-50/80 border-emerald-300 text-emerald-900"
-                                  : "bg-slate-50 border-slate-100 text-slate-700"
+                      {/* Right: Quick Translate + Edit + Delete + Expand */}
+                      <div className="flex items-center gap-1.5 shrink-0">
+                        {!isEnglishSection && !isLocked && (
+                          <button
+                            type="button"
+                            onClick={() => handleTranslateSingleQuestion(q)}
+                            disabled={isTranslatingThis}
+                            className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 disabled:opacity-50 cursor-pointer shadow-2xs"
+                            title="Auto-translate only this question into clean Hindi"
+                          >
+                            <Globe className={`h-3 w-3 text-blue-600 ${isTranslatingThis ? "animate-spin" : ""}`} />
+                            <span>{isTranslatingThis ? "..." : "Translate"}</span>
+                          </button>
+                        )}
+
+                        <button
+                          type="button"
+                          onClick={() => handleEdit(q)}
+                          className="rounded-lg border border-slate-200 p-1.5 text-slate-600 hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 cursor-pointer transition-colors"
+                          title="Edit question"
+                        >
+                          <Edit3 className="h-3.5 w-3.5" />
+                        </button>
+
+                        <button
+                          type="button"
+                          onClick={() => handleDelete(q.id)}
+                          className="rounded-lg border border-slate-200 p-1.5 text-slate-600 hover:bg-red-50 hover:text-red-600 hover:border-red-200 cursor-pointer transition-colors"
+                          title="Delete question"
+                        >
+                          <Trash2 className="h-3.5 w-3.5" />
+                        </button>
+
+                        <button
+                          type="button"
+                          onClick={() => toggleExpandQ(q.id)}
+                          className="rounded-lg border border-slate-200 p-1.5 text-slate-600 hover:bg-slate-100 cursor-pointer transition-colors"
+                          title={isExpanded ? "Collapse details" : "Expand details / explanation"}
+                        >
+                          {isExpanded ? <ChevronUp className="h-3.5 w-3.5" /> : <ChevronDown className="h-3.5 w-3.5" />}
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* Question Statement */}
+                    <div
+                      className="mt-2 text-xs sm:text-sm font-bold text-slate-900 leading-snug cursor-pointer select-text"
+                      onClick={() => toggleExpandQ(q.id)}
+                      style={{ color: "#0f172a" }}
+                    >
+                      <MathText text={q.question_text} className="text-slate-900 font-bold" />
+                    </div>
+
+                    {/* Inline Space-Saving Options Flow (Takes ~28px height instead of ~150px) */}
+                    <div className="mt-2 flex flex-wrap gap-2 text-xs">
+                      {[
+                        { label: "A", val: q.option_a },
+                        { label: "B", val: q.option_b },
+                        { label: "C", val: q.option_c },
+                        { label: "D", val: q.option_d },
+                      ].map((opt) => {
+                        const isCorrect = q.correct_answer === opt.label;
+                        return (
+                          <div
+                            key={opt.label}
+                            className={`inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1 text-xs border font-medium transition-all ${
+                              isCorrect
+                                ? "bg-emerald-50 border-emerald-300 text-emerald-950 font-bold shadow-2xs"
+                                : "bg-slate-50 border-slate-200 text-slate-800"
+                            }`}
+                            style={{ color: isCorrect ? "#064e3b" : "#0f172a" }}
+                          >
+                            <span
+                              className={`flex h-4 w-4 shrink-0 items-center justify-center rounded-full text-[10px] font-black ${
+                                isCorrect ? "bg-emerald-600 text-white" : "bg-slate-200 text-slate-800"
                               }`}
                             >
-                              <span
-                                className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[11px] font-black ${
-                                  isCorrect ? "bg-emerald-600 text-white" : "bg-slate-200 text-slate-600"
-                                }`}
-                              >
-                                {opt.label}
-                              </span>
-                              <span className="flex-1">
-                                <MathText text={opt.val} />
-                              </span>
-                              {isCorrect && <Check className="h-4 w-4 text-emerald-600 shrink-0" />}
+                              {opt.label}
+                            </span>
+                            <span className="leading-snug">
+                              <MathText
+                                text={opt.val}
+                                className={isCorrect ? "text-emerald-950 font-bold" : "text-slate-900 font-medium"}
+                              />
+                            </span>
+                            {isCorrect && <Check className="h-3.5 w-3.5 text-emerald-600 shrink-0 ml-0.5" />}
+                          </div>
+                        );
+                      })}
+                    </div>
+
+                    {/* Expandable Explanation Drawer */}
+                    {isExpanded && (
+                      <div className="mt-3 pt-3 border-t border-slate-200 space-y-2">
+                        {q.explanation ? (
+                          <div className="rounded-xl bg-amber-50/90 border border-amber-200 p-3 text-xs sm:text-sm text-slate-900" style={{ color: "#0f172a" }}>
+                            <div className="flex items-center gap-1.5 text-amber-900 font-bold mb-1">
+                              <HelpCircle className="h-4 w-4 text-amber-600 shrink-0" />
+                              <span>Detailed Explanation / व्याख्या:</span>
                             </div>
-                          );
-                        })}
+                            <div className="leading-relaxed text-slate-900 font-medium" style={{ color: "#0f172a" }}>
+                              <MathText text={q.explanation} className="text-slate-900" />
+                            </div>
+                          </div>
+                        ) : (
+                          <div className="text-xs text-slate-500 italic">No explanation recorded for this question.</div>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          ) : (
+            /* ── Traditional Spacious Cards View ── */
+            <div className="grid gap-3">
+              {paginatedQuestions.map((q) => {
+                const isLocked = lockedHindiIds.has(q.id);
+                const isTranslatingThis = translatingQId === q.id;
+                const isEnglishSection = q.question_number > 75;
+
+                return (
+                  <div
+                    key={q.id}
+                    className="rounded-2xl border border-slate-200 bg-white p-5 shadow-xs hover:border-blue-300 transition-all text-slate-900"
+                    style={{ color: "#0f172a" }}
+                  >
+                    <div className="flex items-start justify-between gap-4">
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2 mb-2 flex-wrap">
+                          <span className="rounded-lg bg-blue-100 px-2.5 py-0.5 text-xs font-black text-blue-800">
+                            Q.{q.question_number}
+                          </span>
+
+                          {/* ON / OFF Hindi Confirmed Lock Button */}
+                          {!isEnglishSection ? (
+                            <button
+                              type="button"
+                              onClick={() => toggleHindiLock(q.id)}
+                              className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg text-xs font-bold border cursor-pointer transition-all ${
+                                isLocked
+                                  ? "bg-emerald-50 text-emerald-800 border-emerald-300 hover:bg-emerald-100"
+                                  : "bg-amber-50 text-amber-900 border-amber-300 hover:bg-amber-100 animate-pulse"
+                              }`}
+                              title={
+                                isLocked
+                                  ? "Hindi is CONFIRMED (Translator will skip this question). Click to turn OFF/unlock."
+                                  : "Hindi is NOT confirmed (Translator can work on it). Click to turn ON/lock."
+                              }
+                            >
+                              {isLocked ? (
+                                <>
+                                  <Lock className="h-3 w-3 text-emerald-600 shrink-0" />
+                                  <span>Hindi Confirmed [ON]</span>
+                                </>
+                              ) : (
+                                <>
+                                  <Unlock className="h-3 w-3 text-amber-600 shrink-0" />
+                                  <span>Needs Translation [OFF]</span>
+                                </>
+                              )}
+                            </button>
+                          ) : (
+                            <span className="text-[10px] font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200">
+                              English Section (Pure English)
+                            </span>
+                          )}
+
+                          <span className="text-[11px] font-bold text-emerald-800 bg-emerald-50 px-2.5 py-0.5 rounded-md border border-emerald-200">
+                            Answer: Option {q.correct_answer}
+                          </span>
+                        </div>
+
+                        <h4 className="text-sm sm:text-base font-bold text-slate-900 leading-snug" style={{ color: "#0f172a" }}>
+                          <MathText text={q.question_text} className="text-slate-900 font-bold" />
+                        </h4>
+
+                        <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm">
+                          {[
+                            { label: "A", val: q.option_a },
+                            { label: "B", val: q.option_b },
+                            { label: "C", val: q.option_c },
+                            { label: "D", val: q.option_d },
+                          ].map((opt) => {
+                            const isCorrect = q.correct_answer === opt.label;
+                            return (
+                              <div
+                                key={opt.label}
+                                className={`flex items-start gap-2.5 rounded-xl p-3 text-xs sm:text-sm font-semibold border ${
+                                  isCorrect
+                                    ? "bg-emerald-50/90 border-emerald-300 text-emerald-950 font-bold shadow-2xs"
+                                    : "bg-slate-50 border-slate-200 text-slate-900"
+                                }`}
+                                style={{ color: isCorrect ? "#064e3b" : "#0f172a" }}
+                              >
+                                <span
+                                  className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-black ${
+                                    isCorrect ? "bg-emerald-600 text-white" : "bg-slate-200 text-slate-800"
+                                  }`}
+                                >
+                                  {opt.label}
+                                </span>
+                                <span className="flex-1 leading-relaxed" style={{ color: isCorrect ? "#064e3b" : "#0f172a" }}>
+                                  <MathText text={opt.val} className={isCorrect ? "text-emerald-950 font-bold" : "text-slate-900 font-medium"} />
+                                </span>
+                                {isCorrect && <Check className="h-4 w-4 text-emerald-600 shrink-0 mt-0.5" />}
+                              </div>
+                            );
+                          })}
+                        </div>
+
+                        {q.explanation && (
+                          <div className="mt-3 rounded-xl bg-amber-50/90 border border-amber-200 p-3.5 text-xs sm:text-sm text-slate-900" style={{ color: "#0f172a" }}>
+                            <div className="flex items-center gap-1.5 text-amber-900 font-bold mb-1.5">
+                              <HelpCircle className="h-4 w-4 text-amber-600 shrink-0" />
+                              <span>Detailed Explanation / व्याख्या:</span>
+                            </div>
+                            <div className="leading-relaxed text-slate-900 font-medium" style={{ color: "#0f172a" }}>
+                              <MathText text={q.explanation} className="text-slate-900" />
+                            </div>
+                          </div>
+                        )}
                       </div>
 
-                      {q.explanation && (
-                        <div className="mt-3 rounded-xl bg-amber-50/80 border border-amber-200 p-3 text-xs sm:text-sm text-slate-800">
-                          <div className="flex items-center gap-1.5 text-amber-900 font-bold mb-1">
-                            <HelpCircle className="h-3.5 w-3.5 text-amber-600 shrink-0" />
-                            <span>Detailed Explanation / व्याख्या:</span>
-                          </div>
-                          <div className="leading-relaxed">
-                            <MathText text={q.explanation} />
-                          </div>
-                        </div>
-                      )}
-                    </div>
+                      <div className="flex flex-col gap-1.5 shrink-0">
+                        {!isEnglishSection && !isLocked && (
+                          <button
+                            type="button"
+                            onClick={() => handleTranslateSingleQuestion(q)}
+                            disabled={isTranslatingThis}
+                            className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 disabled:opacity-50 cursor-pointer shadow-2xs"
+                            title="Auto-translate this question into Hindi"
+                          >
+                            <Globe className={`h-3.5 w-3.5 text-blue-600 ${isTranslatingThis ? "animate-spin" : ""}`} />
+                            <span>{isTranslatingThis ? "Translating..." : "Translate"}</span>
+                          </button>
+                        )}
 
-                    <div className="flex gap-1.5 shrink-0">
-                      <button
-                        onClick={() => handleEdit(q)}
-                        className="rounded-lg border border-slate-200 p-2 text-slate-500 hover:bg-slate-50 hover:text-blue-600 transition-colors"
-                        title="Edit question"
-                      >
-                        <Edit3 className="h-4 w-4" />
-                      </button>
-                      <button
-                        onClick={() => handleDelete(q.id)}
-                        className="rounded-lg border border-slate-200 p-2 text-slate-500 hover:bg-red-50 hover:text-red-600 transition-colors"
-                        title="Delete question"
-                      >
-                        <Trash2 className="h-4 w-4" />
-                      </button>
+                        <div className="flex gap-1.5">
+                          <button
+                            onClick={() => handleEdit(q)}
+                            className="rounded-lg border border-slate-200 p-2 text-slate-600 hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 transition-colors cursor-pointer"
+                            title="Edit question"
+                          >
+                            <Edit3 className="h-4 w-4" />
+                          </button>
+                          <button
+                            onClick={() => handleDelete(q.id)}
+                            className="rounded-lg border border-slate-200 p-2 text-slate-600 hover:bg-red-50 hover:text-red-600 hover:border-red-200 transition-colors cursor-pointer"
+                            title="Delete question"
+                          >
+                            <Trash2 className="h-4 w-4" />
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           )}
 
           {/* Bottom Pagination Bar */}
           {pageSize !== "all" && totalPages > 1 && (
-            <div className="flex items-center justify-between gap-3 bg-white p-3 rounded-2xl border border-slate-200 text-xs shadow-xs mt-2">
-              <span className="text-slate-500 font-medium">
+            <div className="flex items-center justify-between gap-3 bg-white p-3 rounded-2xl border border-slate-200 text-xs shadow-xs mt-2" style={{ color: "#0f172a" }}>
+              <span className="text-slate-600 font-medium">
                 Page {currentPage} of {totalPages}
               </span>
               <div className="flex items-center gap-1">
@@ -984,7 +1710,7 @@ export default function PaperQuestionsPage() {
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
                   disabled={currentPage === 1}
-                  className="px-3 py-1 rounded-lg border border-slate-200 bg-white font-bold disabled:opacity-30 hover:bg-slate-50 cursor-pointer disabled:cursor-not-allowed"
+                  className="px-3 py-1 rounded-lg border border-slate-200 bg-white font-bold disabled:opacity-30 hover:bg-slate-50 cursor-pointer disabled:cursor-not-allowed text-slate-700"
                 >
                   ← Previous Page
                 </button>
@@ -994,7 +1720,7 @@ export default function PaperQuestionsPage() {
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
                   disabled={currentPage === totalPages}
-                  className="px-3 py-1 rounded-lg border border-slate-200 bg-white font-bold disabled:opacity-30 hover:bg-slate-50 cursor-pointer disabled:cursor-not-allowed"
+                  className="px-3 py-1 rounded-lg border border-slate-200 bg-white font-bold disabled:opacity-30 hover:bg-slate-50 cursor-pointer disabled:cursor-not-allowed text-slate-700"
                 >
                   Next Page →
                 </button>
@@ -1004,33 +1730,65 @@ export default function PaperQuestionsPage() {
         </div>
       )}
 
-      {/* ── TAB 2: SINGLE QUESTION FORM ── */}
+      {/* ── TAB 2: SINGLE QUESTION FORM (ADD / EDIT) ── */}
       {activeTab === "add" && (
-        <form onSubmit={handleSubmit} className="rounded-3xl border border-slate-200 bg-white p-6 sm:p-8 shadow-xs space-y-4">
-          <h3 className="text-lg font-black text-slate-900">
-            {editingId ? "✏️ Edit Paper Question" : "➕ Add Single Question to Paper"}
-          </h3>
+        <form onSubmit={handleSubmit} className="rounded-3xl border border-slate-200 bg-white p-6 sm:p-8 shadow-xs space-y-5 text-slate-900" style={{ color: "#0f172a" }}>
+          <div className="flex items-center justify-between pb-3 border-b border-slate-200">
+            <div>
+              <h3 className="text-lg font-black text-slate-900" style={{ color: "#0f172a" }}>
+                {editingId ? "✏️ Edit Paper Question" : "➕ Add Single Question to Paper"}
+              </h3>
+              <p className="text-xs text-slate-500 mt-0.5">
+                {editingId
+                  ? "Update the question statement, option choices, or answer key. Changes sync instantly."
+                  : "Create and attach a new question to this shift paper."}
+              </p>
+            </div>
+            {editingId && (
+              <span className="bg-amber-100 text-amber-900 text-xs font-bold px-3 py-1 rounded-full border border-amber-300">
+                Editing Question #{qNum} (ID: {editingId})
+              </span>
+            )}
+          </div>
 
-          <div className="flex gap-4">
-            <div className="w-28">
-              <label className="block text-xs font-bold uppercase text-slate-600 mb-1">Q. Number</label>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <div className="w-full sm:w-28 shrink-0">
+              <label className="block text-xs font-bold uppercase text-slate-700 mb-1" style={{ color: "#334155" }}>
+                Q. Number
+              </label>
               <input
                 type="number"
                 value={qNum}
                 onChange={(e) => setQNum(parseInt(e.target.value) || 1)}
-                className="w-full rounded-xl border border-slate-300 p-3 text-sm font-bold text-center"
+                className="w-full rounded-xl border border-slate-300 bg-white text-slate-900 p-3 text-sm font-bold text-center focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
+                style={{ color: "#0f172a", backgroundColor: "#ffffff" }}
                 required
               />
             </div>
 
             <div className="flex-1">
-              <label className="block text-xs font-bold uppercase text-slate-600 mb-1">Question Statement</label>
+              <div className="flex items-center justify-between mb-1.5 flex-wrap gap-2">
+                <label className="block text-xs font-bold uppercase text-slate-700" style={{ color: "#334155" }}>
+                  Question Statement (English / Hindi)
+                </label>
+                <button
+                  type="button"
+                  onClick={handleAutoTranslateHindi}
+                  disabled={isTranslating}
+                  className="inline-flex items-center gap-1.5 px-3 py-1 bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-700 hover:to-blue-700 text-white rounded-lg text-xs font-bold shadow-xs transition-all cursor-pointer disabled:opacity-50"
+                  title="Translate English statement and options into clean, standard Hindi (with math preserved)"
+                >
+                  <Globe className={`h-3.5 w-3.5 ${isTranslating ? "animate-spin" : ""}`} />
+                  <span>{isTranslating ? "Translating..." : "🌐 Auto-Translate (English ➔ शुद्ध Hindi)"}</span>
+                </button>
+              </div>
               <textarea
-                rows={2}
-                placeholder="Enter question text in English / Hindi (LaTeX $x^2$ supported)..."
+                rows={3}
+                placeholder="Enter question text in English / Hindi (LaTeX $x^2$, \frac{a}{b} supported)..."
                 value={qText}
                 onChange={(e) => setQText(e.target.value)}
-                className="w-full rounded-xl border border-slate-300 p-3 text-sm focus:border-blue-600 focus:outline-none"
+                className="w-full rounded-xl border border-slate-300 bg-white text-slate-900 placeholder:text-slate-400 p-3 text-sm font-medium focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
+                style={{ color: "#0f172a", backgroundColor: "#ffffff" }}
                 required
               />
             </div>
@@ -1038,49 +1796,79 @@ export default function PaperQuestionsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label className="block text-xs font-bold uppercase text-slate-600 mb-1">Option A</label>
+              <label className="block text-xs font-bold uppercase text-slate-700 mb-1 flex items-center justify-between" style={{ color: "#334155" }}>
+                <span>Option A</span>
+                {correct === "A" && <span className="text-[11px] text-emerald-700 font-black">✓ Correct Key</span>}
+              </label>
               <input
                 type="text"
+                placeholder="Option A text..."
                 value={opA}
                 onChange={(e) => setOpA(e.target.value)}
-                className="w-full rounded-xl border border-slate-300 p-3 text-sm focus:border-blue-600 focus:outline-none"
+                className={`w-full rounded-xl border bg-white text-slate-900 placeholder:text-slate-400 p-3 text-sm font-medium focus:outline-none focus:ring-2 ${
+                  correct === "A" ? "border-emerald-500 ring-1 ring-emerald-300" : "border-slate-300 focus:border-blue-600 focus:ring-blue-100"
+                }`}
+                style={{ color: "#0f172a", backgroundColor: "#ffffff" }}
                 required
               />
             </div>
             <div>
-              <label className="block text-xs font-bold uppercase text-slate-600 mb-1">Option B</label>
+              <label className="block text-xs font-bold uppercase text-slate-700 mb-1 flex items-center justify-between" style={{ color: "#334155" }}>
+                <span>Option B</span>
+                {correct === "B" && <span className="text-[11px] text-emerald-700 font-black">✓ Correct Key</span>}
+              </label>
               <input
                 type="text"
+                placeholder="Option B text..."
                 value={opB}
                 onChange={(e) => setOpB(e.target.value)}
-                className="w-full rounded-xl border border-slate-300 p-3 text-sm focus:border-blue-600 focus:outline-none"
+                className={`w-full rounded-xl border bg-white text-slate-900 placeholder:text-slate-400 p-3 text-sm font-medium focus:outline-none focus:ring-2 ${
+                  correct === "B" ? "border-emerald-500 ring-1 ring-emerald-300" : "border-slate-300 focus:border-blue-600 focus:ring-blue-100"
+                }`}
+                style={{ color: "#0f172a", backgroundColor: "#ffffff" }}
                 required
               />
             </div>
             <div>
-              <label className="block text-xs font-bold uppercase text-slate-600 mb-1">Option C</label>
+              <label className="block text-xs font-bold uppercase text-slate-700 mb-1 flex items-center justify-between" style={{ color: "#334155" }}>
+                <span>Option C</span>
+                {correct === "C" && <span className="text-[11px] text-emerald-700 font-black">✓ Correct Key</span>}
+              </label>
               <input
                 type="text"
+                placeholder="Option C text..."
                 value={opC}
                 onChange={(e) => setOpC(e.target.value)}
-                className="w-full rounded-xl border border-slate-300 p-3 text-sm focus:border-blue-600 focus:outline-none"
+                className={`w-full rounded-xl border bg-white text-slate-900 placeholder:text-slate-400 p-3 text-sm font-medium focus:outline-none focus:ring-2 ${
+                  correct === "C" ? "border-emerald-500 ring-1 ring-emerald-300" : "border-slate-300 focus:border-blue-600 focus:ring-blue-100"
+                }`}
+                style={{ color: "#0f172a", backgroundColor: "#ffffff" }}
                 required
               />
             </div>
             <div>
-              <label className="block text-xs font-bold uppercase text-slate-600 mb-1">Option D</label>
+              <label className="block text-xs font-bold uppercase text-slate-700 mb-1 flex items-center justify-between" style={{ color: "#334155" }}>
+                <span>Option D</span>
+                {correct === "D" && <span className="text-[11px] text-emerald-700 font-black">✓ Correct Key</span>}
+              </label>
               <input
                 type="text"
+                placeholder="Option D text..."
                 value={opD}
                 onChange={(e) => setOpD(e.target.value)}
-                className="w-full rounded-xl border border-slate-300 p-3 text-sm focus:border-blue-600 focus:outline-none"
+                className={`w-full rounded-xl border bg-white text-slate-900 placeholder:text-slate-400 p-3 text-sm font-medium focus:outline-none focus:ring-2 ${
+                  correct === "D" ? "border-emerald-500 ring-1 ring-emerald-300" : "border-slate-300 focus:border-blue-600 focus:ring-blue-100"
+                }`}
+                style={{ color: "#0f172a", backgroundColor: "#ffffff" }}
                 required
               />
             </div>
           </div>
 
           <div>
-            <label className="block text-xs font-bold uppercase text-slate-600 mb-1.5">Correct Answer Key</label>
+            <label className="block text-xs font-bold uppercase text-slate-700 mb-1.5" style={{ color: "#334155" }}>
+              Correct Answer Key (Select Option)
+            </label>
             <div className="flex gap-2 max-w-md">
               {(["A", "B", "C", "D"] as const).map((opt) => (
                 <button
@@ -1090,7 +1878,7 @@ export default function PaperQuestionsPage() {
                   className={`flex-1 rounded-xl py-2.5 text-xs font-black border transition-all cursor-pointer ${
                     correct === opt
                       ? "bg-emerald-600 text-white border-emerald-600 shadow-sm"
-                      : "bg-white text-slate-700 border-slate-300 hover:bg-slate-50"
+                      : "bg-white text-slate-700 border-slate-300 hover:bg-slate-50 hover:text-slate-900"
                   }`}
                 >
                   Option {opt}
@@ -1100,28 +1888,67 @@ export default function PaperQuestionsPage() {
           </div>
 
           <div>
-            <label className="block text-xs font-bold uppercase text-slate-600 mb-1">
+            <label className="block text-xs font-bold uppercase text-slate-700 mb-1" style={{ color: "#334155" }}>
               Detailed Explanation / Solution (व्याख्या) - Optional
             </label>
             <textarea
-              rows={4}
+              rows={3}
               placeholder="Enter comprehensive solution, formulas used, shortcut tricks, or background facts (LaTeX $x^2$ supported)..."
               value={explanation}
               onChange={(e) => setExplanation(e.target.value)}
-              className="w-full rounded-xl border border-slate-300 p-3 text-sm focus:border-blue-600 focus:outline-none"
+              className="w-full rounded-xl border border-slate-300 bg-white text-slate-900 placeholder:text-slate-400 p-3 text-sm font-medium focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
+              style={{ color: "#0f172a", backgroundColor: "#ffffff" }}
             />
-            <p className="text-[11px] text-slate-400 mt-1">
+            <p className="text-[11px] text-slate-500 mt-1">
               Tip: Supports LaTeX math like $x^2 + y^2 = r^2$ and Hindi text. This explanation is shown to candidates in test review and solution sheets.
             </p>
           </div>
 
-          <div className="flex gap-3 pt-4 border-t border-slate-100">
+          {/* Live Preview Box */}
+          {(qText || opA || opB) && (
+            <div className="rounded-2xl border border-blue-200 bg-blue-50/60 p-4 mt-2" style={{ color: "#0f172a" }}>
+              <div className="flex items-center gap-1.5 text-xs font-bold uppercase text-blue-900 mb-2">
+                <Sparkles className="h-3.5 w-3.5 text-amber-500" />
+                <span>Live Preview / लाइव पूर्वावलोकन (Q.{qNum}):</span>
+              </div>
+              <div className="text-sm font-bold text-slate-900 leading-snug mb-3" style={{ color: "#0f172a" }}>
+                <MathText text={qText || "Your question statement..."} className="text-slate-900 font-bold" />
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                {[
+                  { label: "A", val: opA },
+                  { label: "B", val: opB },
+                  { label: "C", val: opC },
+                  { label: "D", val: opD },
+                ].map((opt) => (
+                  <div
+                    key={opt.label}
+                    className={`p-2.5 rounded-xl border text-xs flex items-center gap-2 ${
+                      correct === opt.label
+                        ? "bg-emerald-100/90 border-emerald-400 text-emerald-950 font-bold"
+                        : "bg-white border-slate-200 text-slate-900"
+                    }`}
+                    style={{ color: correct === opt.label ? "#064e3b" : "#0f172a" }}
+                  >
+                    <span className="font-black px-1.5 py-0.5 rounded bg-slate-200 text-slate-800 shrink-0">
+                      {opt.label}
+                    </span>
+                    <span className="flex-1">
+                      <MathText text={opt.val || "(empty)"} className="text-slate-900 font-medium" />
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div className="flex gap-3 pt-4 border-t border-slate-200">
             <button
               type="submit"
               disabled={loading}
               className="rounded-xl bg-blue-600 hover:bg-blue-700 px-6 py-2.5 text-xs font-bold text-white shadow-xs disabled:opacity-50 cursor-pointer"
             >
-              {editingId ? "Update Question" : "Save Question to Paper"}
+              {loading ? "Saving..." : editingId ? "Update Question" : "Save Question to Paper"}
             </button>
             <button
               type="button"
@@ -1129,7 +1956,7 @@ export default function PaperQuestionsPage() {
                 resetForm();
                 setActiveTab("list");
               }}
-              className="rounded-xl border border-slate-300 bg-white hover:bg-slate-50 px-5 py-2.5 text-xs font-semibold text-slate-700"
+              className="rounded-xl border border-slate-300 bg-white hover:bg-slate-50 px-5 py-2.5 text-xs font-semibold text-slate-700 cursor-pointer"
             >
               Cancel
             </button>
@@ -1179,32 +2006,17 @@ export default function PaperQuestionsPage() {
           <div className="flex items-center gap-2 border-b border-slate-200 pb-3 overflow-x-auto">
             <button
               onClick={() => {
-                setImporterTab("pdf");
+                setImporterTab("text");
                 setParsedPreview([]);
               }}
               className={`flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
-                importerTab === "pdf"
+                importerTab === "text"
                   ? "bg-blue-600 text-white shadow-sm"
                   : "bg-white text-slate-600 hover:bg-slate-50 border border-slate-200"
               }`}
             >
-              <FileText className="h-4 w-4" />
-              <span>1. Direct PDF Parser (Fastest)</span>
-            </button>
-
-            <button
-              onClick={() => {
-                setImporterTab("csv");
-                setParsedPreview([]);
-              }}
-              className={`flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
-                importerTab === "csv"
-                  ? "bg-blue-600 text-white shadow-sm"
-                  : "bg-white text-slate-600 hover:bg-slate-50 border border-slate-200"
-              }`}
-            >
-              <FileSpreadsheet className="h-4 w-4" />
-              <span>2. CSV / Excel Upload</span>
+              <Layers className="h-4 w-4" />
+              <span>1. TXT File & Raw Text Importer (Primary)</span>
             </button>
 
             <button
@@ -1219,22 +2031,22 @@ export default function PaperQuestionsPage() {
               }`}
             >
               <FileJson className="h-4 w-4" />
-              <span>3. JSON Importer</span>
+              <span>2. JSON Importer</span>
             </button>
 
             <button
               onClick={() => {
-                setImporterTab("text");
+                setImporterTab("csv");
                 setParsedPreview([]);
               }}
               className={`flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
-                importerTab === "text"
+                importerTab === "csv"
                   ? "bg-blue-600 text-white shadow-sm"
                   : "bg-white text-slate-600 hover:bg-slate-50 border border-slate-200"
               }`}
             >
-              <Layers className="h-4 w-4" />
-              <span>4. Paste Raw Text</span>
+              <FileSpreadsheet className="h-4 w-4" />
+              <span>3. CSV / Excel Upload</span>
             </button>
           </div>
 
@@ -1398,7 +2210,7 @@ export default function PaperQuestionsPage() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold uppercase text-slate-600 mb-1">
+                  <label className="block text-xs font-bold uppercase text-slate-700 mb-1" style={{ color: "#334155" }}>
                     Or Paste JSON Array Directly:
                   </label>
                   <textarea
@@ -1406,11 +2218,12 @@ export default function PaperQuestionsPage() {
                     placeholder='[{"question_number": 1, "question_text": "...", "option_a": "...", "option_b": "...", "option_c": "...", "option_d": "...", "correct_answer": "A"}]'
                     value={rawText}
                     onChange={(e) => setRawText(e.target.value)}
-                    className="w-full rounded-2xl border border-slate-300 p-3 text-xs font-mono focus:border-blue-600 focus:outline-none"
+                    className="w-full rounded-2xl border border-slate-300 bg-white text-slate-900 placeholder:text-slate-400 p-3 text-xs font-mono focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
+                    style={{ color: "#0f172a", backgroundColor: "#ffffff" }}
                   />
                   <button
                     onClick={handleTextParse}
-                    className="mt-2 rounded-xl bg-slate-900 px-4 py-2 text-xs font-bold text-white hover:bg-slate-800"
+                    className="mt-2 rounded-xl bg-slate-900 px-4 py-2 text-xs font-bold text-white hover:bg-slate-800 cursor-pointer"
                   >
                     Parse JSON Text
                   </button>
@@ -1418,28 +2231,66 @@ export default function PaperQuestionsPage() {
               </div>
             )}
 
-            {/* 4. TEXT TAB */}
+            {/* 1. TEXT TAB (PRIMARY) */}
             {importerTab === "text" && (
-              <div className="space-y-3">
-                <label className="block text-xs font-bold uppercase text-slate-600">
-                  Paste Delimited Questions:
-                </label>
-                <p className="text-xs text-slate-500">
-                  Format: <code>QNo || Question || Option A || Option B || Option C || Option D || CorrectAnswer</code>
-                </p>
-                <textarea
-                  rows={6}
-                  placeholder={`1||What is the unit of power?||Joule||Watt||Newton||Pascal||B\n2||Who invented bulb?||Edison||Tesla||Newton||Einstein||A`}
-                  value={rawText}
-                  onChange={(e) => setRawText(e.target.value)}
-                  className="w-full rounded-2xl border border-slate-300 p-3.5 text-xs font-mono focus:border-blue-600 focus:outline-none"
-                />
-                <button
-                  onClick={handleTextParse}
-                  className="rounded-xl bg-blue-600 px-5 py-2.5 text-xs font-bold text-white hover:bg-blue-700"
-                >
-                  Parse Text Lines
-                </button>
+              <div className="space-y-4">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-2xl bg-blue-50/70 border border-blue-200/80">
+                  <div>
+                    <h4 className="text-xs font-black uppercase text-blue-900 tracking-wider">
+                      📄 Upload .TXT Questions File (Zero PDF Glitches)
+                    </h4>
+                    <p className="text-xs text-blue-700 mt-0.5">
+                      Directly import questions from your exported <code>.txt</code> file or paste clean formatted text below.
+                    </p>
+                  </div>
+
+                  <label className="inline-flex items-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 px-4 py-2.5 text-xs font-black text-white shadow-xs cursor-pointer transition-colors shrink-0">
+                    <Upload className="h-4 w-4" />
+                    <span>Upload .txt File</span>
+                    <input
+                      type="file"
+                      accept=".txt,.text"
+                      onChange={handleFileSelect}
+                      className="hidden"
+                    />
+                  </label>
+                </div>
+
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <label className="block text-xs font-bold uppercase text-slate-700" style={{ color: "#334155" }}>
+                      Or Paste Text Below:
+                    </label>
+                    <span className="text-[11px] text-slate-500">
+                      Supports standard format (<code>Q1. ... A) ... B) ... Ans: A</code>) or pipe format (<code>1||Question||A||B||C||D||A</code>)
+                    </span>
+                  </div>
+
+                  <textarea
+                    rows={8}
+                    placeholder={`Q1. What is the unit of power?\nA) Joule\nB) Watt\nC) Newton\nD) Pascal\nCorrect Answer: Option B\n\nQ2. Who invented bulb?\nA) Edison\nB) Tesla\nC) Newton\nD) Einstein\nCorrect Answer: Option A`}
+                    value={rawText}
+                    onChange={(e) => setRawText(e.target.value)}
+                    className="w-full rounded-2xl border border-slate-300 bg-white text-slate-900 placeholder:text-slate-400 p-3.5 text-xs font-mono focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
+                    style={{ color: "#0f172a", backgroundColor: "#ffffff" }}
+                  />
+                  <div className="flex items-center gap-2">
+                    <button
+                      onClick={handleTextParse}
+                      className="rounded-xl bg-blue-600 px-6 py-2.5 text-xs font-black text-white hover:bg-blue-700 cursor-pointer shadow-xs"
+                    >
+                      Parse Text Lines
+                    </button>
+                    {rawText && (
+                      <button
+                        onClick={() => setRawText("")}
+                        className="rounded-xl border border-slate-200 px-4 py-2.5 text-xs font-bold text-slate-600 hover:bg-slate-50 cursor-pointer"
+                      >
+                        Clear
+                      </button>
+                    )}
+                  </div>
+                </div>
               </div>
             )}
 
@@ -1499,20 +2350,21 @@ export default function PaperQuestionsPage() {
                       key={idx}
                       className={`rounded-xl p-3 border text-xs ${
                         q.isValid
-                          ? "bg-white border-slate-200"
+                          ? "bg-white border-slate-200 text-slate-900"
                           : "bg-red-50/60 border-red-200 text-red-900"
                       }`}
+                      style={{ color: q.isValid ? "#0f172a" : "#7f1d1d" }}
                     >
                       <div className="flex items-center justify-between gap-2 mb-1">
-                        <span className="font-bold text-slate-800">
+                        <span className="font-bold text-slate-900">
                           Q.{q.question_number}
                         </span>
-                        <span className="font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">
+                        <span className="font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
                           Ans: {q.correct_answer}
                         </span>
                       </div>
-                      <p className="text-slate-700 line-clamp-1">{q.question_text}</p>
-                      <div className="mt-1 flex gap-3 text-[11px] text-slate-500">
+                      <p className="text-slate-800 line-clamp-1 font-medium">{q.question_text}</p>
+                      <div className="mt-1 flex gap-3 text-[11px] text-slate-600 font-semibold">
                         <span>A: {q.option_a}</span>
                         <span>B: {q.option_b}</span>
                         <span>C: {q.option_c}</span>

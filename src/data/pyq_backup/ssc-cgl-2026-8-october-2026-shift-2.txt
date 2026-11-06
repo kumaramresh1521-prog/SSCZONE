@@ -1,0 +1,760 @@
+Q.1: Seminar dates: 15th, 17th, and 19th March Cities: Nashik, Aurangabad, Thane
+
+• Nashik's seminar came just before Thane's.
+
+• Aurangabad's seminar was not on 15th. What is the date of the Thane seminar?
+A. 15th March
+B. 17th March
+C. 19th March
+D. Cannot be determined
+Answer: B
+
+Q.2: Select the set of numbers that is similar to the following set. (3, 4, 12, 39)
+A. (3, 15, 23, 45)
+B. (5, 12, 18, 30)
+C. (2, 3, 11, 38)
+D. (1, 2, 10, 30)
+Answer: C
+
+Q.3: A man sells an article for Rs. 720 with a loss of 10%. What was the cost price?
+A. Rs. 740
+B. Rs. 760
+C. Rs. 780
+D. Rs. 800
+Answer: D
+
+Q.4: 2 men and 3 women can complete a task in 12 days. 4 men and 6 women can do it in how many days?
+A. 6
+B. 4
+C. 3
+D. 8
+Answer: A
+
+Q.5: Find the missing number: 121:100::81:?
+A. 100
+B. 121
+C. 64
+D. 144 Comprehension (Q. 6) Directions: Study the following information carefully and answer the questions based on it.
+Answer: C
+
+Q.6: Eleven friends — A, B, C, D, E, F, G, H, I, J, and K — are sitting in a straight line in the first row of a concert hall facing the stage. Read the clues carefully and answer the question that follows: E is seated immediately to the left of I, and third to the right of A. K is a neighbor of F and D, and is sitting third to the right of G. C is sitting second to the right of H, who is at one of the extreme ends. G is seated next to the right of I, and I is seated second to the right of B. J is not at any end and sits immediately left of D. Who is sitting in the center of the row?
+A. J
+B. B
+C. H
+D. I
+Answer: D
+
+Q.7: Find the number that best completes the analogy. A : 8 :: G : ?
+A. 48
+B. 56
+C. 64
+D. 60
+Answer: B
+
+Q.8: What comes next in the series: 0, 1, 1, 2, 3, 5, 8, ?
+A. 13
+B. 10
+C. 12
+D. 15
+Answer: A
+
+Q.9: If PENCIL is written as PLCINE, how is LIVING written?
+A. LGINV
+B. LGINIV
+C. LGIINV
+D. LGIVIN
+Answer: A
+
+Q.10: Study the information below and answer the following questions: P % Q means P is the brother of Q P $ Q means P is the daughter of Q P # Q means P is the husband of Q P & Q means P is the son of Q P @ Q means P is the wife of Q If P is the daughter of T's brother in law, then which of the following expression is true?
+A. L $ Q % R $ T
+B. Q # R $ P # T
+C. R # P $ Q % L @ T
+D. P # L $ R % T $ S
+Answer: C
+
+Q.11: If SIMPLE is coded as TJNPMF, how is TJNPMF coded?
+A. UKOQNG
+B. UKOPNG
+C. UKNQMG
+D. UKOQNF
+Answer: B
+
+Q.12: In a certain code language, "MANAGEMENT" is written as "MBNBGFMFNU". How will "DEVELOPMENT" be written?
+A. DVFFLPPNEOT
+B. DFVFLPPNEOT
+C. DFFVLPPNEOT
+D. DFVFPLPNOET
+Answer: B
+
+Q.13: Which of the following numbers will replace the question mark (?) in the given series? 121, 337, ?, 1321, 2185
+A. 705
+B. 713
+C. 718
+D. 721
+Answer: A
+
+Q.14: How many such R are there which are immediately preceded by T and immediately followed by P? Sequence: TRPTRTPRRTRPPT
+A. 1
+B. 2
+C. 3
+D. 4
+Answer: B
+
+Q.15: How many letters will remain at the same position in the word 'CARTOON' when these letters are arranged in reverse alphabetical order?
+A. 0
+B. 1
+C. 2
+D. 3
+Answer: A
+
+Q.16: In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 10 3 17 7 6 29 2 5 8 ?
+A. 17
+B. 19
+C. 27
+D. 29
+Answer: C
+
+Q.17: Suppose six members A, B, C, D, E, and F are part of the same family tree. The person B is the son of C, while C is not the mother of B. A is married to C, and F is the brother of C. D is the daughter of A, whereas E is the brother of B. Who is the father of B?
+A. F
+B. A
+C. C
+D. E
+Answer: C
+
+Q.18: Select the odd number pair from the given alternatives.
+A. 35, 1260
+B. 26, 702
+C. 29, 870
+D. 18, 346
+Answer: D
+
+Q.19: Carefully examine the two statements and analyse whether one is the reason for the other, if they are unrelated, or if both result from a separate factor. Select the option that best represents this relationship.
+
+Statements:
+A. Statement (A) is the cause and statement (B) is its effect.
+B. Statement (B) is the cause and statement (A) is its effect.
+C. Both statements (A) and (B) are independent causes.
+D. Both statements (A) and (B) are effects of independent causes.
+Answer: A
+
+Q.20: During a farewell party, you notice a colleague who has recently experienced the loss of a loved one appears visibly uncomfortable with the celebration. Which of the following actions represents the most professional and empathetic response?
+A. Inform the colleague that they should not have chosen to attend if they were feeling uncomfortable.
+B. Discreetly check in with them to offer support and propose leaving the event together if they wish.
+C. Publicly announce their personal situation to the entire group so that other attendees are aware.
+D. Choose to completely ignore their visible discomfort and continue enjoying the party as normal.
+Answer: B
+
+Q.21: A veterinarian needs a skilled assistant for her clinic, which specialises exclusively in handling aggressive and traumatised rescue dogs. Which candidate is the best choice?
+A. Mark, who has ten years of experience working with calm, well-behaved house pets.
+B. Sarah, who has five years of experience working at a high-volume rescue shelter.
+C. Paul, who recently graduated from a top veterinary program with high honours.
+D. Julie, who loves animals and is currently studying for a degree in fine arts.
+Answer: B
+
+Q.22: Read the statement carefully and assume it to be true. Then examine the two conclusions given below it and decide which conclusion(s), if any, logically follow from the statement.
+
+Statement: A city planning authority has developed mixed-use zoning regulations to integrate residential, commercial, and recreational spaces within urban zones.
+
+Conclusions:
+
+I. Separate zoning systems have been completely abolished everywhere.
+
+II. Mixed-use zoning eliminates all urban congestion issues.
+A. Only conclusion I follows
+B. Both conclusions I and II follow
+C. Only conclusion II follows
+D. Neither conclusion I nor conclusion II follows
+Answer: D
+
+Q.23: Select the option that is related to the third word in the same way as the second word is related to the first word. North : South-East :: East : ?
+A. South-West
+B. North-West
+C. North
+D. South
+Answer: A
+
+Q.24: As the 'Force' is related to 'Newton', in the same way, 'Work' is related to ______.
+A. Joule
+B. Pascal
+C. Ampere
+D. Volt
+Answer: B
+
+Q.25: Read the given statement carefully and the following assumptions based on it. Decide which of the assumptions are implicit in the statement.
+
+Statement: To maintain the highest standards of safety and compliance, the factory management has mandated that all workers must wear high-visibility gear while operating within the warehouse zone. Assumptions:
+
+I. The use of high-visibility gear is effective in reducing accidents and ensuring safety in warehouse environments.
+
+II. Before the implementation of this mandate, workers were intentionally disregarding safety protocols.
+A. Only Assumption I is implicit
+B. Both Assumptions I and II are implicit
+C. Neither Assumption I nor II is implicit
+D. Only Assumption II is implicit
+Answer: A
+
+Q.26: The Human Development Index (HDI) focuses on Gross National Income (GNI) per capita, rather than Gross Domestic Product (GDP) per capita, and aims to:
+A. Exclude foreign income earned within a country.
+B. Include income earned by a country's residents abroad.
+C. Measure only government revenue.
+D. Focus solely on manufacturing output.
+Answer: B
+
+Q.27: What is a major challenge in accurately assessing the Air Quality Index (AQI) in remote areas?
+A. Inadequate monitoring equipment
+B. Difficulty in sensor calibration
+C. Limited accessibility for station maintenance
+D. Inconsistent data reporting
+Answer: C
+
+Q.28: Who is the father of the space program of India?
+A. Satish Dhawan
+B. Vikram Sarabhai
+C. Homi J. Bhabha
+D. Dr. A.P.J. Abdul Kalam
+Answer: D
+
+Q.29: Which space agency collaborated with ISRO for the NISAR mission?
+A. NASA
+B. JAXA
+C. Roscosmos
+D. ESA
+Answer: B
+
+Q.30: The Battle of Khanwa in 1527 CE was fought between Babur and:
+A. Rana Sanga
+B. Medini Rai
+C. Bahadur Shah
+D. Sher Shah Suri
+Answer: A
+
+Q.31: Which Indian writer became the youngest to win the Sahitya Akademi Yuva Puraskar in 2011?
+A. Arundhathi
+B. Tanuj Solanki Subramaniam
+C. Meena
+D. Vikram Sampath Kandasamy
+Answer: A
+
+Q.32: Which of the following was a key objective of the Fifth Five-Year Plan in the industrial sector?
+A. Complete privatization of industries
+B. Expansion of public sector enterprises
+C. Elimination of heavy industries
+D. Focus solely on small-scale industries
+Answer: B
+
+Q.33: In 2009, which Indian author became the youngest person to win the Man Asian Literary Prize for The White Tiger?
+A. Chetan Bhagat
+B. Kiran Desai
+C. Aravind Adiga
+D. Amitav Ghosh
+Answer: C
+
+Q.34: What is the chess notation for castling kingside?
+A. 0-0
+B. Kc1
+C. CK
+D. KxK
+Answer: D
+
+Q.35: The "Bengal Sati Regulation" passed in 1829, which outlawed the practice of Sati, was primarily due to the efforts of:
+A. Lord Dalhousie and the Sepoy Mutiny
+B. Mahatma Gandhi and the Non-Cooperation Movement
+C. Lord William Bentinck and Raja Ram Mohan Roy
+D. Lord Curzon and the Partition of Bengal
+Answer: C
+
+Q.36: Who was appointed India's Comptroller and Auditor General (CAG) in November 2024?
+A. Rajiv Mehrishi
+B. K. Sanjay Murthy
+C. G.C. Murmu
+D. Vinod Rai
+Answer: A
+
+Q.37: Which of the following freedom fighters was given the title 'Daughter of the hills' by Jawaharlal Nehru?
+A. Chandraprava
+B. Mahadevi Verma Saikiani
+C. Rani Gaidinliu
+D. Kanaklata Barua
+Answer: A
+
+Q.38: Which is NOT a major thermal power station in India?
+A. Vijayawada
+B. Nashik
+C. Sabarmati
+D. Tarapur
+Answer: D
+
+Q.39: Read the following three statements about the Gudi Padwa festival and select the correct option:
+
+1. ) Gudi Padwa marks the Marathi New Year on Vaishakh first day.
+
+2. ) Gudi, a symbol of victory, is made with bamboo, neem, and sugar garlands.
+
+3. ) Traditions include eating neem with Pan and Puran Poli.
+A. Only 1
+B. Only 2
+C. Only 3
+D. 1, 2 and 3 all
+Answer: D
+
+Q.40: What is the weight of a standard shot put used by men?
+A. 7.26 kg
+B. 8.26 kg
+C. 9.26 kg
+D. 6.26 kg
+Answer: A
+
+Q.41: Which of the following about India's South Asia Satellite (GSAT-9) is/are correct?
+
+1) It has 12 Ku-band transponders, including one allocated to Pakistan.
+
+2) It was fully funded by India to aid six South Asian nations in communication and disaster response.
+A. Only 1 is correct
+B. Only 2 is correct
+C. 1 and 2 Both are
+D. Neither 1 nor 2 is correct correct
+Answer: B
+
+Q.42: As per Article 62(2) of the Constitution, if the office of the President falls vacant due to death, resignation, or removal, what is the maximum time limit prescribed for holding the election to fill that vacancy?
+A. Three months of
+B. Six months of vacancy vacancy
+C. Nine months of
+D. One year of vacancy vacancy
+Answer: B
+
+Q.43: Which article of the Constitution of India explicitly states that Union Ministers shall hold office during the pleasure of the President?
+A. Article 71
+B. Article 78 5
+C. Article 75
+D. Article 81
+Answer: C
+
+Q.44: Which moon is the largest natural satellite of Saturn?
+A. Ganymede
+B. Titan
+C. Europa
+D. Triton
+Answer: B
+
+Q.45: Which of the following statements correctly describes the height of the troposphere at the equator and poles?
+A. The height of the troposphere is about 18 km at the equator and about 8 km at the poles.
+B. The height of the troposphere is about 8 km at the equator and about 18 km at the poles.
+C. The height of the troposphere is about 20 km at the equator and about 12 km at the poles.
+D. The height of the troposphere is about 12 km at the equator and about 20 km at the poles.
+Answer: A
+
+Q.46: How is the Sun Temple at Modhera traditionally oriented to incorporate solar alignment?
+A. West-facing, to catch the sunset during summer solstices
+B. South-facing, to align with mid-day winter sun angles
+C. North-facing, to completely avoid direct harsh sunlight
+D. East-facing, to let equinox sunrays hit the central shrine
+Answer: D
+
+Q.47: Under the U.S. (United States) EPA (Environmental Protection Agency) Air Quality Index system, how is the overall Air Quality Index value for a day determined?
+A. By considering only the AQI (Air Quality Index)value for ozone
+B. By selecting the lowest AQI (Air Quality Index)value among the monitored pollutants
+C. By selecting the highest AQI (Air Quality Index)value among the monitored pollutants
+D. By calculating the average AQI (Air Quality Index)value of all monitored pollutants
+Answer: C
+
+Q.48: What economic crisis prompted India to introduce the New Economic Policy (NEP) in 1991?
+A. Fiscal deficit financing crisis
+B. Balance of payments crisis
+C. Inflationary pressure crisis
+D. Foreign borrowing crisis
+Answer: B
+
+Q.49: An object is placed 30 cm (centimeter) in front of a thin converging lens whose focal length is 15 cm (centimeter). What is the distance of the image from the lens?
+A. 10 (centimeter)
+B. 15 (centimeter)
+C. 30 (centimeter)
+D. Infinity
+Answer: C
+
+Q.50: A child consumes a diet that contains very few fresh fruits and vegetables. After several months, the child develops bleeding gums and reduced resistance to infections. Which vitamin deficiency is the most likely cause of these symptoms?
+A. Vitamin A
+B. Vitamin B1 (thiamine)
+C. Vitamin D
+D. Vitamin C (ascorbic acid)
+Answer: D
+
+Q.51: A hemispherical dome has a diameter of 7 meters. If the cost of painting is Rs. 500 per square meter, what will be the total cost to paint the dome?
+A. Rs. 38500
+B. Rs. 39500
+C. Rs. 40500
+D. Rs. 41500
+Answer: A
+
+Q.52: If sin θ+ cos θ= √2 , then what is the value of sin4 θ+ cos4 θ ?
+A. 1 ![Option A](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-2_q52_opt_A.png)
+B. 1/2 ![Option B](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-2_q52_opt_B.png)
+C. 3/4 ![Option C](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-2_q52_opt_C.png)
+D. ![Option D](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-2_q52_opt_D.png)
+Answer: B
+
+Q.53: The height of a cone is 27 cm, and its volume is 900π cm³. What is the radius of its base?
+A. 12 cm
+B. 9 cm
+C. 11 cm
+D. 10 cm
+Answer: D
+
+Q.54: A cone's height is 3 times its radius. Express total surface area in terms of radius.
+A. πr 2(1 + √10)
+B. πr 2(2 + √3)
+C. πr 2(3 + √5)
+D. πr 2(1 + √5)
+Answer: A
+
+Q.55: Find the value of (6.25)³/2−(1.44)³/2 .
+
+6.25+3+1.44
+A. 1.8
+B. 1.3
+C. 2.4
+D. 2.8
+Answer: A
+
+Q.56: P, Q, and R can complete a work in 12, 16, and 24 days respectively. They start together, but P leaves after 3 days and Q leaves 2 days before the completion of the work. In how many days is the work completed?
+A. 4 1 days
+B. 5 2 days 5
+C. 8 2 5 days
+D. 9 1 5 days
+Answer: D
+
+Q.57: Aman and Rohit have two glasses of equal volume. Both contain some milk. Aman says to Rohit, "Give me one-third of the milk in your glass so that my glass becomes full." Rohit says to Aman, "Instead, you give me one-fifth of the milk in your glass so that my glass becomes full." Find the ratio of the milk in their glasses.
+A. 2:3
+B. 5:6
+C. 4:7
+D. 7:5
+Answer: A
+
+Q.58: A and B started a business jointly. A’s investment was thrice that of B, and the period of his investment was twice that of B. If B received ₹4,000 as profit, then what was the total profit?
+A. ₹24,000
+B. ₹16,000
+C. ₹20,000
+D. ₹28,000
+Answer: D
+
+Q.59: A sum of ₹10,500 amounts to ₹13,650 in 3 years at a certain rate of simple interest. If the rate is increased by 2%, what will be the amount of the same sum in the same time?
+A. ₹14,280
+B. ₹13,850
+C. ₹14,500
+D. ₹14,100
+Answer: A
+
+Q.60: A hall has an area of 18√3 m² . It is to be paved with regular hexagonal tiles of side 15 cm. If the side of each tile is doubled, how will the number of tiles required change?
+A. Becomes half
+B. Becomes one-fourth
+C. Becomes one-ninth
+D. Remains the same ninth
+Answer: B
+
+Q.61: A circle has a radius of 35 cm. Find the length of the arc that subtends an angle of 72 degrees at the centre. (Take π= 22 ) 7
+A. 64 cm
+B. 38 cm
+C. 56 cm
+D. 44 cm
+Answer: D
+
+Q.62: A fruit seller sells apples at a profit of 5%. If he had bought them at 5% less and sold them for ₹1 less, he would have gained 10%. Find the cost price of the apples.
+A. ₹400
+B. ₹200
+C. ₹600
+D. ₹800
+Answer: C
+
+Q.63: A shopkeeper sells an article for ₹480, offering a 20% discount. If sold at full price, he would have earned a 25% profit. Find the cost price.
+A. ₹360
+B. ₹400
+C. ₹540
+D. ₹480
+Answer: D
+
+Q.64: In triangle XYZ, ∠X = 65° and ∠Y = 55°. which of the following is correct?
+A. XY < XZ
+B. XZ < XY
+C. YZ < XY
+D. XZ > YZ
+Answer: A
+
+Q.65: If tan θ= 1 , find the value of cosec² θ+sec² θ . 2 cosec² θ−sec² θ
+A. −5
+B. 3 3/5
+C. 5
+D. −3 3
+Answer: A
+
+Q.66: If x= 9 + 4√5 , what is the value of (√x+ √x)² 1 ?
+A. 15
+B. 18
+C. 20
+D. 22
+Answer: C
+
+Q.67: If √2 = 1.414 , then find the value of 2+3√2 . √2 \)
+A. 1.542
+B. 2.786
+C. 3.212
+D. 4.414
+Answer: D
+
+Q.68: In triangle △ABC , AD and BE are altitudes drawn from vertices A and B to sides BC and AC, respectively, with AD⊥BC and BE⊥AC . The altitudes intersect at point F. If BF is equal in length to AC, determine the measure of ∠ABC .
+A. 25°
+B. 45°
+C. 60°
+D. 70°
+Answer: B
+
+Q.69: A circle has diameter 34 cm. Two equal chords AB and CD are parallel. AD is a diameter. If AB is 8 cm from the centre, find the length of CD.
+A. 10 cm
+B. 15 cm
+C. 25 cm
+D. 30 cm
+Answer: D
+
+Q.70: From external point P, a secant passes through the circle intersecting at A and B (PA = 4 cm, PB = 9 cm). A tangent from P touches the circle at T. What is PT?
+A. 3 cm
+B. 4 cm
+C. 5 cm
+D. 6 cm
+Answer: D
+
+Q.71: If the difference between two complementary angles is π radians, what are the two angles in degrees?
+A. 60° and 30°
+B. 40° and 20°
+C. 30° and 30°
+D. 10° and 20°
+Answer: A
+
+Q.72: An electronics manufacturer decreases the selling price of its flagship smartphone by 20%. As a result, the volume of daily sales increases by x%. If the overall daily revenue generated by the smartphone increases by 12%, find the value of
+
+x.
+A. 38
+B. 30
+C. 44
+D. 40
+Answer: D
+
+Q.73: If A = (3a + 5b)² and B = (3a - 5b)², which of the following expressions is exactly equal to A - B?
+A. 15ab
+B. 60ab
+C. 30ab
+D. 18a² + 50b²
+Answer: B
+
+Q.74: A vessel contains 240 litres of a mixture of milk and water in the ratio 7:
+
+5. First, 40 litres of the mixture is removed and replaced with an equal volume of pure water. Then, 60 litres of the resulting mixture is removed and replaced with an equal volume of pure milk. What is the quantity of milk in the vessel at the end?
+A. 92.5 litres
+B. 133.0 litres
+C. 140.0 litres
+D. 147.5 litres
+Answer: D
+
+Q.75: Two circles are non-intersecting and lie completely external to each other. What is the total number of common tangents (both direct and transverse combined) that can be drawn to these two circles?
+A. 2
+B. 3
+C. 4
+D. 0
+Answer: C
+
+Q.76: **Comprehension (Q. 76 - 79):** The evolution of computers is typically divided into generations, each characterized by significant technological breakthroughs. The First Generation (1940-1956) operated on vacuum tubes, devices that were large, inefficient, and prone to overheating. Programming was tedious, requiring direct interaction with machine language, limiting user accessibility. With the Second Generation (1956- 1963) came transistors, replacing vacuum tubes and greatly enhancing reliability while reducing size and cost. High-level programming languages like COBOL and FORTRAN appeared, making computers more versatile. The Third Generation (1964-1971) introduced integrated circuits, allowing thousands of electronic components to fit onto a single chip. Computers became smaller, faster, and more powerful. Operating systems began to emerge, enabling machines to run multiple applications simultaneously. The Fourth Generation (1971- present) saw the invention of the microprocessor, condensing the central processing unit onto a single chip. This innovation ushered in the era of personal computers, making technology widely accessible to businesses and households alike. Now, in the Fifth Generation, research focuses on artificial intelligence, machine learning, and quantum computing. These developments aim not only to enhance computational speed and storage but also to enable machines to mimic human reasoning and decision-making processes. As technology evolves, the boundary between human capabilities and machine intelligence continues to blur, promising both unprecedented opportunities and profound ethical challenges.
+
+---
+
+Identify the correct tense used in the sentence: "With the Second Generation (1956-1963) came transistors, replacing vacuum tubes and greatly enhancing reliability."
+A. Simple Present
+B. Present Perfect
+C. Simple Past
+D. Past Perfect
+Answer: C
+
+Q.77: **Comprehension (Q. 76 - 79):** The evolution of computers is typically divided into generations, each characterized by significant technological breakthroughs. The First Generation (1940-1956) operated on vacuum tubes, devices that were large, inefficient, and prone to overheating. Programming was tedious, requiring direct interaction with machine language, limiting user accessibility. With the Second Generation (1956- 1963) came transistors, replacing vacuum tubes and greatly enhancing reliability while reducing size and cost. High-level programming languages like COBOL and FORTRAN appeared, making computers more versatile. The Third Generation (1964-1971) introduced integrated circuits, allowing thousands of electronic components to fit onto a single chip. Computers became smaller, faster, and more powerful. Operating systems began to emerge, enabling machines to run multiple applications simultaneously. The Fourth Generation (1971- present) saw the invention of the microprocessor, condensing the central processing unit onto a single chip. This innovation ushered in the era of personal computers, making technology widely accessible to businesses and households alike. Now, in the Fifth Generation, research focuses on artificial intelligence, machine learning, and quantum computing. These developments aim not only to enhance computational speed and storage but also to enable machines to mimic human reasoning and decision-making processes. As technology evolves, the boundary between human capabilities and machine intelligence continues to blur, promising both unprecedented opportunities and profound ethical challenges.
+
+---
+
+According to the passage, why is the fifth generation of computers considered especially significant?
+A. It reduced the cost of machines drastically.
+B. It focuses on personal entertainment applications.
+C. It aims to create machines that mimic human reasoning.
+D. It made computers physically larger but faster.
+Answer: C
+
+Q.78: **Comprehension (Q. 76 - 79):** The evolution of computers is typically divided into generations, each characterized by significant technological breakthroughs. The First Generation (1940-1956) operated on vacuum tubes, devices that were large, inefficient, and prone to overheating. Programming was tedious, requiring direct interaction with machine language, limiting user accessibility. With the Second Generation (1956- 1963) came transistors, replacing vacuum tubes and greatly enhancing reliability while reducing size and cost. High-level programming languages like COBOL and FORTRAN appeared, making computers more versatile. The Third Generation (1964-1971) introduced integrated circuits, allowing thousands of electronic components to fit onto a single chip. Computers became smaller, faster, and more powerful. Operating systems began to emerge, enabling machines to run multiple applications simultaneously. The Fourth Generation (1971- present) saw the invention of the microprocessor, condensing the central processing unit onto a single chip. This innovation ushered in the era of personal computers, making technology widely accessible to businesses and households alike. Now, in the Fifth Generation, research focuses on artificial intelligence, machine learning, and quantum computing. These developments aim not only to enhance computational speed and storage but also to enable machines to mimic human reasoning and decision-making processes. As technology evolves, the boundary between human capabilities and machine intelligence continues to blur, promising both unprecedented opportunities and profound ethical challenges.
+
+---
+
+Identify the function of the phrase "ushered in the first generation of computers" in the sentence: "The invention of vacuum tubes in the 1940s ushered in the first generation of computers."
+A. Subject
+B. Object
+C. Adverbial Phrase
+D. Predicate
+Answer: A
+
+Q.79: **Comprehension (Q. 76 - 79):** The evolution of computers is typically divided into generations, each characterized by significant technological breakthroughs. The First Generation (1940-1956) operated on vacuum tubes, devices that were large, inefficient, and prone to overheating. Programming was tedious, requiring direct interaction with machine language, limiting user accessibility. With the Second Generation (1956- 1963) came transistors, replacing vacuum tubes and greatly enhancing reliability while reducing size and cost. High-level programming languages like COBOL and FORTRAN appeared, making computers more versatile. The Third Generation (1964-1971) introduced integrated circuits, allowing thousands of electronic components to fit onto a single chip. Computers became smaller, faster, and more powerful. Operating systems began to emerge, enabling machines to run multiple applications simultaneously. The Fourth Generation (1971- present) saw the invention of the microprocessor, condensing the central processing unit onto a single chip. This innovation ushered in the era of personal computers, making technology widely accessible to businesses and households alike. Now, in the Fifth Generation, research focuses on artificial intelligence, machine learning, and quantum computing. These developments aim not only to enhance computational speed and storage but also to enable machines to mimic human reasoning and decision-making processes. As technology evolves, the boundary between human capabilities and machine intelligence continues to blur, promising both unprecedented opportunities and profound ethical challenges.
+
+---
+
+What is the meaning of the word "ushered in" as used in the passage?
+A. Ignored
+B. Delayed
+C. Introduced
+D. Removed Comprehension (Q. 80) Read the passage and answer the questions: The evolution of computers is typically divided into generations, each characterized by significant technological breakthroughs. The First Generation (1940–1956) operated on vacuum tubes, devices that were large, inefficient, and prone to overheating. Programming was tedious, requiring direct interaction with machine language, limiting user accessibility. With the Second Generation (1956– 1963) came transistors, replacing vacuum tubes and greatly enhancing reliability while reducing size and cost. High-level programming languages like COBOL and FORTRAN appeared, making computers more versatile. The Third Generation (1964–1971) introduced integrated circuits, allowing thousands of electronic components to fit onto a single chip. Computers became smaller, faster, and more powerful. Operating systems began to emerge, 9 enabling machines to run multiple applications simultaneously. The Fourth Generation (1971– present) saw the invention of the microprocessor, condensing the central processing unit onto a single chip. This innovation ushered in the era of personal computers, making technology widely accessible to businesses and households alike. Now, in the Fifth Generation, research focuses on artificial intelligence, machine learning, and quantum computing. These developments aim not only to enhance computational speed and storage but also to enable machines to mimic human reasoning and decision-making processes. As technology evolves, the boundary between human capabilities and machine intelligence continues to blur, promising both unprecedented opportunities and profound ethical challenges.
+Answer: C
+
+Q.80: Which word from the passage best conveys the idea of "enhancing performance through gradual evolution rather than sudden invention"?
+A. Revolutionized
+B. Blur
+C. Evolved
+D. Ushered
+Answer: C
+
+Q.81: Fill in the blank with an appropriate degree of comparison. He wrote with ______ skill, weaving intricate narratives effortlessly into complex themes.
+A. utmost
+B. most
+C. too much
+D. extreme
+Answer: A
+
+Q.82: Rearrange the parts of the sentence in the correct order. With FIFA's decision to expand the 2026 World Cup to 48 teams, P. despite concerns/player fatigue and scheduling congestion in an already crowded football calendar, Q. with critics arguing that the dilution of quality and increased logistical challenges could diminish the tournament's prestige, R. while commercial stakeholders welcomed the move due to its potential to generate higher broadcasting revenues S. football federations worldwide debated the impact of this expansion on competitiveness,
+A. SQPR
+B. PRQS
+C. RPSQ
+D. QPRS
+Answer: A
+
+Q.83: Rearrange the parts of the sentence in the correct order. Excessive use of social media has P. affecting self-esteem and emotional wellbeing due to Q. teenagers and young adults, R. been linked to mental health issues among S. unrealistic portrayals of success and beauty
+A. PSRQ
+B. QSRP
+C. RQPS
+D. SPRQ
+Answer: C
+
+Q.84: Identify the error in the sentence. The team have completed their project ahead of schedule
+A. have
+B. team
+C. project
+D. schedule
+Answer: A
+
+Q.85: What is the best meaning of the idiom "Birds of a feather flock together"?
+A. People with similar interests or characteristics tend to associate with each other.
+B. Birds always fly in groups.
+C. Different people can never be friends.
+D. Only rich people make friends with other rich people.
+Answer: A
+
+Q.86: Select the incorrectly spelt word.
+A. Vignette
+B. Viguour
+C. Victuals
+D. Vindicate
+Answer: A
+
+Q.87: Select the most appropriate synonym of the given word: BELLICOSE
+A. Peaceful
+B. Aggressive
+C. Passive
+D. Gentle
+Answer: B
+
+Q.88: Select the most appropriate antonym of the given word. Inveterate 10
+A. Chronic
+B. Casual
+C. Habitual
+D. Long-standing
+Answer: A
+
+Q.89: Choose the correct meaning of idiom: Break the fourth wall
+A. To construct a theater set
+B. To hide from the audience
+C. To address the audience directly
+D. To remove a character from a play
+Answer: D
+
+Q.90: Select the most appropriate antonym of the given word. Somniferous
+A. Somnolent
+B. Sedative
+C. Stimulant
+D. Sleep-inducing
+Answer: A
+
+Q.91: Identify the misspelt word.
+A. Deliquesce
+B. Ennui
+C. Surreptious
+D. Halcyon
+Answer: C
+
+Q.92: Identify the misspelt word.
+A. Discomfiture
+B. Abnegation
+C. Perspicacity
+D. Efflugence
+Answer: D
+
+Q.93: Choose the correct one-word substitute for: 'The centre of attraction or attention.'
+A. LOCUS
+B. Epitome
+C. Cynosure
+D. Paradigm
+Answer: C
+
+Q.94: Change the following from active to passive: The child broke the window.
+A. The window has been broken by the child.
+B. The window is broken by the child.
+C. The window was broken by the child.
+D. The window was being broken by the child.
+Answer: C
+
+Q.95: Select the sentence containing the homonym of the highlighted word: The zoologist highlighted the rostrum in the dolphin's skull.
+A. The orator stood on the rostrum to address the assembly.
+B. The anatomist studied the rostrum near the frontal bone.
+C. The cetologist measured the beaklike rostrum carefully.
+D. The dissection revealed damage to the rostrum.
+Answer: A
+
+Q.96: Convert the sentence provided below from its passive voice structure to an active voice structure: It had been acknowledged that the consignment was being rerouted without authorization.
+A. The consignment acknowledged rerouting itself without authorization.
+B. The rerouting of the consignment was acknowledged to be unauthorized.
+C. Authorities acknowledged that someone was rerouting the consignment without authorization.
+D. The consignment was rerouted, as per acknowledgment.
+Answer: C
+
+Q.97: Convert the sentence provided below from its passive voice structure to an active voice structure: Has the suspect been identified by the intelligence unit yet?
+A. Has the intelligence unit identified the suspect yet?
+B. Has the suspect identified the unit yet?
+C. Did the intelligence unit identify the suspect before now?
+D. Is the intelligence unit identifying the suspect now?
+Answer: A
+
+Q.98: Choose the most suitable option to replace the highlighted part of the sentence: She died from cancer last year.
+A. died of
+B. was died by
+C. was dead from
+D. died by
+Answer: A
+
+Q.99: A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. The man said, "I bought a new car yesterday."
+A. The man said he had bought a new car the day before.
+B. The man said he bought a new car the day before.
+C. The man said he had bought new car yesterday.
+D. The man said he had buy a new car the day before.
+Answer: A
+
+Q.100: Rearrange the following sentences in correct order to make a logical passage.
+
+1. The first stage involves identifying suitable candidates.
+
+2. The recruitment process is vital for any organization.
+
+3. Subsequent steps include interviews and background checks.
+
+4. The goal is to find the best fit for the company culture.
+A. 2-4-1-3
+B. 2-3-1-4
+C. 3-4-2-1
+D. 2-1-3-4
+Answer: D
+

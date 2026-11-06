@@ -1,0 +1,807 @@
+================================================================================
+SSC CGL 2025 TIER-I (HELD ON 16 SEPTEMBER 2025 SHIFT 3) - PURE ENGLISH
+Exam: SSC CGL | Year: 2025 | Total Questions: 100 | Duration: 60 Minutes
+Language: Pure English (No Hindi Translation)
+Extracted & 100% Verified from Official SSC Answer Key via SSC ZONE
+================================================================================
+
+Q1. Italy is a beautiful village and China is a big building. What is the total number of words that begin with a consonant Italy is a beautiful village and China is a big building
+A) 4
+B) 5
+C) 6
+D) 7
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q2. Select the letter-cluster from among the given options that can replace the question mark (?) in the following series. GBD, JFJ, MJP, PNV ?
+A) VHA
+B) SRB
+C) SRF
+D) UHS
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q3. Choose the address that is exactly the same as the one given below. C-12, Hill View Complex, Rajaji Nagar, Bengaluru, Karnataka – 560010
+A) C-12, Hill View Complex, Rajaji Nagar, Bengaluru, Karnataka – 560011
+B) C-12, Hill View Complex, Rajaji Nagar, Bengaluru, Karnataka – 560012
+C) C-12, Hill View Complex, Rajaji Nagar, Bengaluru, Karnataka – 560013
+D) C-12, Hill View Complex, Rajaji Nagar, Bengaluru, Karnataka – 560010
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q4. Select the letter-cluster from among the given options that can replace the question mark (?) in the following series: SCEG, S F K P, S I Q Y, S L W H, ?
+A) S O C Q
+B) S O B Q
+C) S P C R
+D) S P D R
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q5. A statement is given followed by two conclusions. Find which conclusion is TRUE based on the given statement. Statement: C= A ≤ T < D ≥ O; G ≥ D < S; T ≥ A Conclusions: I: A < O II: C < G
+A) Only II
+B) Only I
+C) Either I or II
+D) Neither I nor II
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q6. Complete the pattern: 2, 12, 36, 80, 150, ?
+A) 246
+B) 240
+C) 252
+D) 258
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q7. Find the odd one out:
+A) 10 # 5 = 5
+B) 20 # 4 = 5
+C) 25 # 5 = 5
+D) 15 # 3 = 5
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q8. Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option. Statement: The rapid advancement in gene editing technologies such as CRISPR offers immense potential for curing genetic disorders, but it also raises concerns about the ethical implications of editing the human genome. Assumptions: I. Gene editing technologies can potentially cure genetic disorders. II. Ethical concerns are a natural consequence of advancing gene editing technologies. III. The potential for gene editing to cure genetic disorders outweighs the ethical concerns.
+A) Only I and II are implicit
+B) Only II and III are implicit
+C) Only I is implicit
+D) All I, II and III are implicit
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q9. Read the following statement carefully and identify the conclusion that follows. Statement: The bank has introduced a biometric login system. Conclusions: I. The bank wants to improve security. II. Customers must carry biometric IDs.
+A) Only Conclusion I follows
+B) Only Conclusion II follows
+C) Both I and II follow
+D) Neither I nor II follows
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q10. Find the group of letters that best completes the analogy. Use alphabetical positions and reverse position logic where necessary. ACFL : ZXUM :: BDEM : ?
+A) YWNL
+B) YWML
+C) YWVN
+D) YXML
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q11. Read the following statement carefully and identify the conclusion that follows. Statement: Some animals are carnivores. Some carnivores are wild. Conclusions: I. Some animals are wild. II. All wild are animals.
+A) Only I follows
+B) Only II follows
+C) Both I and II follow
+D) Neither I nor II follows
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q12. In the following question, select the word which cannot be formed using the letters of the given word. QUARRELSOME
+A) AIR
+B) SOME
+C) QUARREL
+D) LOAM
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q13. The 6th term of a geometric progression (GP) is 48. The first term is 1.5. What is the common ratio (CR)?
+A) 2.0
+B) 3.0
+C) 2.5
+D) 2.2
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q14. Find the odd one out from the given alternatives:
+A) Bhagat Singh
+B) Chandrashekhar Azad
+C) Rajguru
+D) Manmohan Singh
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q15. P is the mother of Q. Q is the sister of R. How is P related to R?
+A) Aunt
+B) Mother
+C) Grandmother
+D) Cousin
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q16. In a certain code language, each letter is assigned a unique digit. Based on the following codes: PLANE is coded as 74851 and DOG as 392, how is GOLD coded?
+A) 2843
+B) 2943
+C) 2394
+D) 2934
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q17. Compute √144 + ³√27 = ?
+A) 14
+B) 15
+C) 16
+D) 13
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q18. If 8 # 2 = 64, 7 # 3 = 343, then 6 # 2 = ?
+A) 216
+B) 144
+C) 100
+D) 36
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q19. In a code language, TABLE is written as UDCMF. How will CHAIR be written?
+A) DKBJS
+B) EJCKR
+C) DJCKR
+D) DJBKR
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q20. A shop sells erasers at ₹8 each and folders at ₹25 each. If a customer buys 5 erasers and 3 folders, what's the total bill?
+A) ₹99
+B) ₹115
+C) ₹105
+D) ₹111
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q21. A + B means A is the mother of B, A ÷ B means A is the father of B, A - B means A is the sister of B, A × B means A is the brother of B. What does P ÷ Q - R mean?
+A) P is R's uncle
+B) Q is R's mother
+C) P is R's father
+D) R is P's mother
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q22. If '×' = '-', '+' = '÷', '-' = '+', '÷' = '×', then which is valid?
+A) 12 - 4 × 2 + 1 = 7
+B) 10 + 2 - 4 × 1 = 8
+C) 16 ÷ 4 + 2 - 2 = 10
+D) 8 × 2 - 2 + 2 = 1
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q23. If 'A' means '-', 'B' means '÷', 'C' means '+', and 'D' means 'x' what is the value of the following expression? 25 B 5 C 3 D 2 A 4=?
+A) 7
+B) 14
+C) 21
+D) 28
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q24. If + = x, - = ^, x = -, evaluate: 5 - 2 x 3 + 1
+A) 22
+B) 23
+C) 24
+D) 25
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q25. If the sum of 11 and 40 is multiplied by 5, what is the result?
+A) 240
+B) 255
+C) 265
+D) 270
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q26. Consider the following statements: 1. Perini Shivatandavam is a warrior dance revived in modern times. 2. It originated from the court of Chola kings of Tamil Nadu. Which of the above statements is/are correct?
+A) Only 1 is correct
+B) Only 2 is correct
+C) Both statements 1 and 2 are correct
+D) Neither statement 1 nor 2 is correct
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q27. Which of the following is a typical architectural feature of the Capuchin Church?
+A) Ornate spires and domes
+B) Complex traceried rose windows
+C) Flat arched entrance with pediment
+D) Multi-storey shikhara tower
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q28. Which of the following statements uniquely identifies a symbolic or lesser-known element linking Teej to both nature and mythology?
+A) Teej is a public holiday in all North Indian states during the month of Aadi.
+B) "Teej" refers to a lunar goddess linked to fertility and rain.
+C) The name "Teej" comes from a red insect seen in monsoon
+D) Swinging during Teej represents lunar cycles and Shiva's Tandava.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q29. Which of the following statements about the Mahasandhivigrahika during Gupta's rule is correct?
+A) He was the chief justice of the kingdom and presided over land disputes.
+B) He supervised irrigation works and public revenue collection.
+C) He acted as the foreign minister and collaborated closely with the king and military.
+D) He managed temple endowments and religious affairs.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q30. Which of the following pairs of Kashmiri music and its description is correctly matched?
+A) Chakri - Classical form using Santoor and Hafiz Nagma
+B) Sufiana Music - Folk style sung with Garaha and Rabab
+C) Hafiz Nagma - Dance based on musical notes of Sufiana music
+D) Rouf - Instrumental duet performed with Santoor and Sitar
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q31. In pole vault, how many failed attempts are allowed before disqualification?
+A) 2
+B) 3
+C) 4
+D) 1
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q32. Match the dynasties listed in Column A with the regions they primarily ruled over, as given in Column B: Column A: Dynasty B: Region A. Gurjara-Pratiharas 1. Bengal B. Rashtrakutas 2. Tamil Nadu C. Palas 3. Gujarat and Rajasthan D. Cholas Column 4. Western Deccan
+A) A → 3, B → 4, C → 1, D → 2
+B) A → 4, B → 3, C → 1, D → 2
+C) A → 2, B → 3, C → 1, D → 4
+D) A → 4, B → 3, C → 2, D → 1
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q33. Which city is set to host the 2026 Commonwealth Games after Australia withdrew from hosting?
+A) Birmingham
+B) Victoria
+C) Glasgow
+D) Toronto
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q34. Which corridor enhances India's access to Central Asia through Chabahar Port?
+A) East-West Corridor
+B) India-Myanmar Highway
+C) North-South Transport Corridor
+D) South Asian Maritime Path
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q35. What is the theme of Avni Doshi's Burnt Sugar, shortlisted for the Booker Prize 2020?
+A) Romantic tale in pre-independence India
+B) Political thriller in Delhi
+C) Complex mother-daughter bond
+D) Historical fiction on India-Persia trade
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q36. Which campaign did Education Minister Dharmendra Pradhan promote on World Environment Day 2025?
+A) Plastic-Free India Campaign
+B) Ek Ped Maa Ke Naam 2.0 tree-planting
+C) Clean Ganga Youth Movement
+D) National Coastal Cleanup Drive
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q37. What was India's urban population percentage in Census 2011?
+A) 24%
+B) 31%
+C) 36%
+D) 41%
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q38. What is the maximum payload capacity of India's upcoming Next Generation Launch Vehicle (NGLV) to Low Earth Orbit (LEO)?
+A) 10 tonnes
+B) 20 tonnes
+C) 30 tonnes
+D) 40 tonnes
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q39. Which of the following statements accurately identifies the venue and complete schedule of the Yonex- Sunrise India Open 2025, classified as a BWF Super 750 badminton tournament?
+A) It was conducted at Thyagaraj Stadium, New Delhi, from January 10 to 15, 2025, as part of the BWF World Tour.
+B) The event took place at the Siri Fort Sports Complex, New Delhi, from January 12 to 17, 2025, under the BWF Super Series framework.
+C) It was hosted at the K.D. Jadhav Indoor Hall, IG Stadium, New Delhi, from January 14 to 19, 2025, as part of the BWF Super 750 tier.
+D) It was organized at Talkatora Indoor Stadium, New Delhi, from January 16 to 21, 2025, under the India Badminton Circuit calendar.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q40. The Sindri fertilizer plant, one of India's oldest and most significant, is located in which state, utilizing its proximity to a major coal-producing region?
+A) West Bengal
+B) Odisha
+C) Jharkhand
+D) Bihar
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q41. Which of the following sequences correctly represents flow of genetic info?
+A) DNA → Protein → RNA
+B) RNA → DNA → Protein
+C) DNA → RNA → Protein
+D) Protein → RNA → DNA
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q42. What does Article 268 of the Indian Constitution primarily deal with?
+A) Service tax levied by Union and collected by States
+B) Income tax levied and collected by States
+C) Stamp duties levied by Union but collected by States
+D) Excise duties on medicinal products collected by States
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q43. If the speed of sound in a medium is 340 m/s and a sound wave has a frequency of 680 Hz, what is its wavelength?
+A) 0.5 m
+B) 2 m
+C) 20 m
+D) 50 m
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q44. What is the primary aim of TIES?
+A) Export infra development
+B) Cold storage for dairy
+C) PMFBY support
+D) Drug pricing regulation
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q45. Read the below statements marked as Assertion (A) and Reason (R). Mark the correct options: Assertion (A): The Happiness Index includes political freedom and social support. Reason (R): The Index is published by the UNDP.
+A) Both A and R are true, and R is the correct explanation of A.
+B) Both A and R are true, but R is not the correct explanation of A.
+C) A is true, but R is false.
+D) A is false, but R is true.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q46. Why is 'Carbon Sink Enhancement' important in India's climate plan?
+A) Encourage deforestation
+B) Store CO₂ in vegetation and soil
+C) Burn more fossil fuels
+D) Promote monocultures
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q47. Read the following Assertion (A) and Reason (R) carefully and choose the correct option. Assertion (A): India adopted import substitution during the planning era. Reason (R): This was to protect infant domestic industries from foreign competition.
+A) Both A and R are true and R is the correct explanation of A.
+B) Both A and R are true but R is not the correct explanation of A.
+C) A is true but R is false.
+D) A is false but R is true.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q48. Consider these cosmic phenomena: 1. Black holes emit X-rays directly from their event horizon 2. Pulsars are rapidly rotating neutron stars. Which of the above is/are correct?
+A) Statement 1 only
+B) Statement 2 only
+C) Both 1 and 2
+D) Neither 1 nor 2
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q49. Which Article allows Parliament to legislate on a subject in the State List during a National Emergency?
+A) Article 250
+B) Article 256
+C) Article 254
+D) Article 352
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q50. Consider the following statements: 1. Article 131A gave High Courts exclusive power to decide on central laws' validity. 2. It was repealed by the 43rd Constitutional Amendment. Which of the above is/are correct?
+A) Only 1
+B) Only 2
+C) Both 1 and 2
+D) Neither 1 nor 2
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q51. Convert 3.375 into a fraction in simplest form.
+A) 27/8
+B) 25/8
+C) 29/8
+D) 31/8
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q52. If 15% of a is equal to 25% of b, then find the ratio a : b.
+A) 3 : 5
+B) 5 : 3
+C) 4 : 5
+D) 5 : 4
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q53. What should be subtracted from 7, 9, 8, 11 so that the remaining numbers may be proportional? 7, 9, 8, 11
+A) 12
+B) 5
+C) 1
+D) 6
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q54. Find the difference: 6.4 - (2 + 1.75)
+A) 7.822
+B) 1.962
+C) 3.522
+D) 2.025
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q55. Alok starts a business with ₹90,000. After 3 months, Deepak joins with ₹1,20,000. After 6 months from the beginning, Alok increases his investment by ₹30,000. Deepak leaves the business 3 months before the end of the year. What is their profit-sharing ratio?
+A) 7:4
+B) 2:3
+C) 5:4
+D) 9:4
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q56. The average age of 19 students is 17 years. A teacher joins the group, and the average becomes 18 years. What is the teacher's age?
+A) 27
+B) 37
+C) 47
+D) 57
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q57. In a team of 80 employees, the average salary is ₹62,000. If 30 of them earn an average salary of ₹72,000, what is the average salary of the remaining employees?
+A) ₹60,000
+B) ₹50,000
+C) ₹86,000
+D) ₹56,000
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q58. A sum becomes 4 times its original value in 6 years under compound interest. In how many years will it become 16 times of the original amount?
+A) 9 years
+B) 12 years
+C) 15 years
+D) 18 years
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q59. If the ratio between the loss and cost price of an article is 1 : 10, then the ratio between its selling price and cost price is ____.
+A) 9:10
+B) 5:15
+C) 6:17
+D) 7:10
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q60. An item is marked at ₹150. A customer gets a 10% discount on it. If the seller still makes a profit of 25%, what is the cost price of the item?
+A) ₹108
+B) ₹209
+C) ₹306
+D) ₹456
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q61. A software developer sells a license for a new application to a reseller at a 20% discount. An installation and support fee of 15% is added to the discounted price. The reseller then sells the license for ₹7800 more, making a 25% profit. Determine the original marked price of the software license by the developer.
+A) ₹19,254.62
+B) ₹18,181.82
+C) ₹20,654.67
+D) ₹33,913.04
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q62. A 90-litre mixture contains milk and water in the ratio 7:2. If 'x' litres of milk and 'x' litres of water are added to the mixture, the new ratio of milk to water becomes 5:2. What is the value of 'x' ?
+A) 13.33 litres
+B) 10.54 litres
+C) 15 litres
+D) 20 litres
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q63. A sphere is completely contained within a cylinder, with the height and diameter of the cylinder matching the diameter of the sphere. Given that the volume of the sphere is 36π cm³, what is the volume of the vacant space inside the cylinder?
+A) 12πcm³
+B) 27πcm³
+C) 18πcm³
+D) 9πcm³
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q64. A hemisphere is melted and recast into a cone of the same radius R. Find the height of the cone formed.
+A) 2R
+B) R
+C) 4R
+D) 5R
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q65. Two solid hemispheres of radii 6 cm and 8 cm respectively are melted and recast into a single hemisphere. What is the approximate radius of the new hemisphere formed?
+A) 9cm
+B) 10cm
+C) 12cm
+D) 11cm
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q66. A regular right pyramid has a square base with a side length of 12 cm. Its slant height is 10 cm. What is its volume?
+A) 384 cm³
+B) 480 cm³
+C) 576 cm³
+D) 640 cm³
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q67. The ratio of the radii of two car tyres is 1 : √2 . If the area of the smaller tyre is 100 cm², what is the area of the larger tyre?
+A) 200 cm²
+B) 300 cm²
+C) 400 cm²
+D) 500 cm²
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q68. The angle bisectors of triangle ABC converge at the incenter I. Given that the measure of ∠BIC is 125°, what is the measure of ∠BAC?
+A) 50°
+B) 70°
+C) 80°
+D) 100°
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q69. In a quadrilateral ABCD, AB is parallel to CD, and AC is a diagonal. If AB=CD, which of the following is true?
+A) ∆ABC ≅ ∆CDA by SSS.
+B) ∆ABC ≅ ∆CDA by SAS.
+C) ∆ABC ≅ ∆CDA by ASA.
+D) The triangles are similar, but not necessarily congruen
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q70. In triangle ABC, a line segment DE is drawn through the centroid G, parallel to side BC. D lies on AB and E lies on AC. What is the ratio of the area of the smaller triangle ADE to the area of the trapezoid DECB?
+A) 1:1
+B) 1:2
+C) 4:5
+D) 4:9
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q71. Two circles of radii 9 cm and 5 cm have their centers 17 cm apart. What is the length of the internal common tangent?
+A) 12 cm
+B) √216 cm
+C) √93 cm
+D) √256 cm
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q72. Two circles with radii r1=7 cm and r2=3 cm have their centers 20 cm apart. Find the length of the transverse common tangent between them.
+A) √300 cm
+B) 300 cm
+C) √375 cm
+D) 200 cm
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q73. In a circle, two chords are 7 cm and 9 cm long. If the 9 cm chord is 4 cm away from the center, what can be said about the distance of the 7 cm chord from the center?
+A) It is less than 4 cm.
+B) It is equal to 4 cm.
+C) It is greater than 4 cm.
+D) It cannot be determined.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q74. A circle is circumscribed about a triangle. If one of the angles of the triangle is 120°, and the radius of the circumscribed circle is r, what is the length of the side opposite the 120° angle?
+A) r√3
+B) 2r
+C) r
+D) r√2
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q75. Add and express the result as a decimal.
+A) 0.1875
+B) 0.2345
+C) 0.5678
+D) 0.7654
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q76. Select the most appropriate synonym of the given word: INTRANSIGENT
+A) Willing
+B) Compliant
+C) Stubborn
+D) Submissive
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q77. Select the most appropriate antonym of the given word. Pulchritude
+A) Grace
+B) Ugliness
+C) Charm
+D) Beauty
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q78. Choose the correct meaning of idiom: In the doldrums
+A) Sailing in high winds
+B) In a state of depression or inactivity
+C) On the verge of success
+D) Working with great energy
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q79. Select the most appropriate antonym of the given word. Incorrigible
+A) Chronic
+B) Deep-rooted
+C) Habitual
+D) Reclaimable
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q80. Spot the correct spelling of a drug hallucination adj.
+A) Hallucinagenic
+B) Hallucinognic
+C) Hallucinogenic
+D) Halluscinogenic
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q81. Choose the correct one-word substitution for: 'One who abandons his religious faith'.
+A) Renegade
+B) Atheist
+C) Heretic
+D) Apostate
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q82. Choose the correct one-word substitute for: 'A formal split within a religious organization'.
+A) Sedition
+B) Heresy
+C) Apostasy
+D) Schism
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q83. Fill in the blank with the most appropriate option: Rarely ____ such an overwhelming consensus among critics.
+A) has there been
+B) there has been
+C) was there
+D) had been
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q84. Select the correct option: Only after years of archival research did the historian manage to ____ the contradictory accounts of the regime's collapse.
+A) retract
+B) revise
+C) reconcile
+D) reverberate
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q85. Find the part of the sentence that contains an error: Little did the committee knew (1)/ about the hidden liabilities (2)/ when it approved the merger (3)/ late last quarter. (4)/
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q86. Change the following from active to passive: Have the engineers resolved the calibration issue yet?
+A) Has the calibration issue had been resolved by the engineers yet?
+B) Has the calibration issue been resolved by the engineers yet?
+C) Has the calibration issue be resolved by the engineers yet?
+D) Has the calibration issue resolved by the engineers yet?
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q87. Find the part of the sentence that contains an error: All that is needed for the bill to pass (1)/ are a simple majority (2)/ and a signature from the presiding officer (3)/ to certify the vote. (4)
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q88. Select the sentence containing the homonym of the highlighted word: He took the current route to avoid delays.
+A) The current was unusually strong near the bridge.
+B) The report discussed current economic policies.
+C) She adapted to current fashion quickly.
+D) He read current events before the exam.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q89. Convert the sentence provided below from its passive voice structure to an active voice structure: The injured man was taken to the hospital by some villagers.
+A) Some villagers take the injured man to the hospital.
+B) Some villagers were taking the injured man to the hospital.
+C) Some villagers had taken the injured man to the hospital.
+D) Some villagers took the injured man to the hospital.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q90. PASSAGE (Q.90 - Q.94) Read the following passage and answer the questions based on the passage : In the relentless pursuit of excellence, the dichotomy between hard work and smart work emerges not merely as a matter of preference but as a nuanced dialectic in the broader schema of human productivity. Hard work—often equated with sheer diligence, indefatigable endurance, and linear perseverance—has historically been valorized as the cornerstone of achievement. The laboring individual, armed with nothing but obstinacy and time, is celebrated in folklore and biographies alike. However, in an era punctuated by algorithmic precision and cognitive economy, such traditional notions increasingly invite scrutiny. Contrastingly, smart work embodies a strategic orchestration of effort—an application of metacognition, resource optimization, and situational analysis. It seeks to minimize entropy in labor while maximizing the return on cognitive and physical investment. Smart workers interrogate systems, deconstruct inefficiencies, and leverage available tools—be they digital frameworks or social capital—to expedite outcomes. They transcend the treadmill of unidirectional exertion by inserting intelligence into execution. Nevertheless, the glorification of smart work without the substratum of hard work yields its own inadequacies. Smartness devoid of rigor often culminates in superficiality—a veneer of competence that collapses under sustained demand. Likewise, unmitigated hard work, devoid of strategic redirection, can lead to burnout and inefficiency. Hence, the contemporary paradigm necessitates a confluence: the sagacious worker is one who tempers grit with guile, who labors not just with effort but with efficacy. The juxtaposition, then, is not binary but complementary. To romanticize either extreme is to overlook the variegated realities of performance. In the crucible of modern challenges, the symbiotic blend of persistence and precision is what renders output sustainable and impact magnified. In essence, success is not the fruit of blind toil or cunning alone, but the synthesis of intelligent perseverance. Which of the following best captures the tone of the author in the passage?
+A) Dogmatic
+B) Reverent
+C) Analytical
+D) Indifferent
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q91. Select the sentence that most clearly presents the limitation of relying solely on smart work.
+A) "Hard work...has historically been valorized..."
+B) "They transcend the treadmill..."
+C) "Smartness devoid of rigor often culminates in superficiality..."
+D) "The sagacious worker is one..."
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q92. From a philosophical perspective, what argument does the author make about the dichotomy between hard work and smart work?
+A) They must harmonize to achieve sustainable results.
+B) One must dominate the other for success.
+C) They are mutually exclusive paradigms.
+D) Smart work is the only viable path in the modern age.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q93. What does the phrase “minimize entropy in labor” imply in the context of smart work?
+A) Reduce physical strain through technology.
+B) Eliminate randomness and inefficiency in effort.
+C) Avoid structured systems of work.
+D) Increase workload to achieve results faster.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q94. Which metaphor is used to describe unidirectional exertion?
+A) Treadmill
+B) Algorithmic precision
+C) Crucible of challenges
+D) Social capital
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q95. Choose the most suitable option to replace the highlighted part of the sentence: He is good in mathematics.
+A) is better in
+B) is good at
+C) is good for
+D) is best at
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q96. Choose the most suitable option to replace the highlighted part of the sentence: She insisted that she comes with us.
+A) came with us
+B) should come with us
+C) is coming with us
+D) has to come with us
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q97. A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. He speculated that, had stochastic volatility been incorporated, the valuation would perhaps have been more conservative.
+A) He speculated, "Had stochastic volatility been incorporated, the valuation would perhaps have been more conservative."
+B) He speculated, "If stochastic volatility is incorporated, valuation will perhaps be conservative."
+C) He speculated, "If volatility had been incorporated, valuation perhaps more conservative."
+D) He said, "Stochastic volatility incorporation would make valuation conservative."
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q98. A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. They said, "We are going on a trip."
+A) They said they are going on a trip.
+B) They said they were going on a trip.
+C) They said they went on a trip.
+D) They said they had going on a trip.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q99. Rearrange the following sentences to form a coherent paragraph: 1. Anthropogenic climate change, driven by the emission of greenhouse gases, is causing a wide range of disruptions to global ecosystems. 2. Glacial retreat and the melting of polar ice caps have accelerated, contributing to a rise in global sea levels. 3. This has led to more frequent and intense extreme weather events, including droughts, floods, and heatwaves. 4. The collective impact of these changes poses a serious threat to human societies and biodiversity.
+A) 2, 4, 3, 1
+B) 3, 1, 4, 2
+C) 1, 3, 2, 4
+D) 1, 4, 2, 3
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q100. Rearrange the following sentences to form a coherent paragraph: 1. This process is crucial because it ensures the integrity and reproducibility of experimental results. 2. Scientific experimentation begins with the formulation of a testable hypothesis based on an observation or question. 3. The data collected from these experiments is then analyzed and interpreted to draw conclusions about the hypothesis. 4. Next, a controlled experiment is designed and carried out to collect empirical evidence.
+A) 2, 4, 3, 1
+B) 4, 3, 2, 1
+C) 1, 2, 4, 3
+D) 3, 1, 4, 2
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+

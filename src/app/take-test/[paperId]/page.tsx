@@ -7,6 +7,7 @@ import toast from "react-hot-toast";
 import Link from "next/link";
 import MathText from "@/components/MathText";
 import ReportButton from "@/components/ReportButton";
+import { translateSingleQuestion } from "@/lib/translator";
 import {
   Clock,
   CheckCircle2,
@@ -270,15 +271,8 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
           setQuestions(qs);
           setTimeLeft((paperRes.data.duration_minutes || 60) * 60);
 
-          // Automatically detect if paper has authentic Hindi (bilingual PDF source)
-          const hasHindiContent = qs.some((q: any) => 
-            Boolean(q.question_text_hi) || /[\u0900-\u097F]/.test(q.question_text || "")
-          );
-          if (!hasHindiContent || !transAllowed) {
-            setLanguageMode("english");
-          } else {
-            setLanguageMode("bilingual");
-          }
+          // Default initial language mode
+          setLanguageMode("bilingual");
         }
       } catch (err: any) {
         if (isMounted) setErrorMessage("Failed to load test paper: " + err.message);
@@ -553,6 +547,63 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
       isCancelled = true;
     };
   }, [questions]);
+
+  // 5b. Smooth Background Translation Engine (Non-blocking)
+  useEffect(() => {
+    if (questions.length === 0) return;
+    if (languageMode === "english") return;
+
+    const isEngSection = (sec: SectionDef) => {
+      if (!sec) return false;
+      const combined = `${sec.name} ${sec.shortName}`.toLowerCase();
+      return combined.includes("english");
+    };
+
+    // Pre-translate current question + next 2 questions in advance
+    const targets = !finished
+      ? [
+          questions[currentIndex],
+          questions[currentIndex + 1],
+          questions[currentIndex + 2],
+        ].filter(Boolean)
+      : questions.slice(0, 25);
+
+    const needed = targets.filter((item) => {
+      if (!item) return false;
+      const itemIdx = questions.indexOf(item);
+      const sec = getQuestionSection(itemIdx >= 0 ? itemIdx : currentIndex);
+      if (isEngSection(sec)) return false;
+      if (item.question_text_hi || /[\u0900-\u097F]/.test(item.question_text || "")) return false;
+      return !translationsCache[item.id];
+    });
+
+    if (needed.length === 0) return;
+
+    let isMounted = true;
+    async function runTranslation() {
+      try {
+        const results = await Promise.all(
+          needed.map(async (item) => {
+            const data = await translateSingleQuestion(item, false);
+            return { id: item.id, data };
+          })
+        );
+
+        if (isMounted) {
+          setTranslationsCache((prev) => {
+            const next = { ...prev };
+            results.forEach((r) => { next[r.id] = r.data; });
+            return next;
+          });
+        }
+      } catch (err) {
+        console.warn("Translation preload caught:", err);
+      }
+    }
+
+    runTranslation();
+    return () => { isMounted = false; };
+  }, [currentIndex, languageMode, finished, questions, translationsCache, sections]);
 
   // 6. Start Exam Handler (with Fullscreen trigger)
   async function handleStartTest() {
@@ -1197,30 +1248,20 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                 Exam Hall Setup (परीक्षा सेटअप)
               </div>
 
-              {/* Language Choice */}
+              {/* Language Choice (Fully Unlocked & Selectable) */}
               <div>
                 <label className="text-[11px] font-bold text-slate-600 block mb-1">
                   Default Question Paper Language:
                 </label>
-                {paper && !isPaperTranslatorAllowed(paper) ? (
-                  <div className="bg-slate-100 border border-slate-300 rounded-lg p-2 text-xs font-bold text-slate-700 flex items-center justify-between">
-                    <span className="flex items-center gap-1.5">
-                      <Lock className="h-3.5 w-3.5 text-slate-500" />
-                      <span>English Only (Standard Medium)</span>
-                    </span>
-                    <span className="text-[10px] text-slate-500 font-semibold bg-slate-200 px-1.5 py-0.5 rounded">Fixed</span>
-                  </div>
-                ) : (
-                  <select
-                    value={languageMode}
-                    onChange={(e) => setLanguageMode(e.target.value as any)}
-                    className="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-1 focus:ring-blue-500 cursor-pointer"
-                  >
-                    <option value="bilingual">Bilingual (English + Hindi)</option>
-                    <option value="english">English Only</option>
-                    <option value="hindi">Hindi Only</option>
-                  </select>
-                )}
+                <select
+                  value={languageMode}
+                  onChange={(e) => setLanguageMode(e.target.value as any)}
+                  className="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-1 focus:ring-blue-500 cursor-pointer"
+                >
+                  <option value="bilingual">Bilingual (English + Hindi)</option>
+                  <option value="english">English Only</option>
+                  <option value="hindi">Hindi Only</option>
+                </select>
               </div>
 
               {/* Fullscreen Option */}
@@ -2094,40 +2135,33 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
             <span>Palette</span>
           </button>
 
-          {/* Language Mode Buttons */}
-          {!hasAuthenticHindi ? (
-            <div className="flex items-center gap-1.5 bg-white px-2.5 py-1 rounded-lg border border-slate-300 text-[11px] font-bold text-slate-700 shadow-2xs" title="This official paper was published by SSC in English">
-              <Lock className="h-3 w-3 text-slate-500" />
-              <span>English (Official Paper)</span>
-            </div>
-          ) : (
-            <div className="flex items-center gap-1 bg-white p-0.5 rounded-lg border border-slate-300">
-              <button
-                onClick={() => setLanguageMode("bilingual")}
-                className={`px-2 py-0.5 text-[11px] font-bold rounded transition-all cursor-pointer ${
-                  languageMode === "bilingual" ? "bg-blue-700 text-white" : "text-slate-600 hover:bg-slate-100"
-                }`}
-              >
-                Bilingual
-              </button>
-              <button
-                onClick={() => setLanguageMode("english")}
-                className={`px-2 py-0.5 text-[11px] font-bold rounded transition-all cursor-pointer ${
-                  languageMode === "english" ? "bg-blue-700 text-white" : "text-slate-600 hover:bg-slate-100"
-                }`}
-              >
-                English
-              </button>
-              <button
-                onClick={() => setLanguageMode("hindi")}
-                className={`px-2 py-0.5 text-[11px] font-bold rounded transition-all cursor-pointer ${
-                  languageMode === "hindi" ? "bg-blue-700 text-white" : "text-slate-600 hover:bg-slate-100"
-                }`}
-              >
-                हिन्दी
-              </button>
-            </div>
-          )}
+          {/* Language Mode Buttons (Always Visible & Unlocked) */}
+          <div className="flex items-center gap-1 bg-white p-0.5 rounded-lg border border-slate-300 shadow-2xs">
+            <button
+              onClick={() => setLanguageMode("bilingual")}
+              className={`px-2 py-0.5 text-[11px] font-bold rounded transition-all cursor-pointer ${
+                languageMode === "bilingual" ? "bg-blue-700 text-white shadow-xs" : "text-slate-600 hover:bg-slate-100"
+              }`}
+            >
+              Bilingual
+            </button>
+            <button
+              onClick={() => setLanguageMode("english")}
+              className={`px-2 py-0.5 text-[11px] font-bold rounded transition-all cursor-pointer ${
+                languageMode === "english" ? "bg-blue-700 text-white shadow-xs" : "text-slate-600 hover:bg-slate-100"
+              }`}
+            >
+              English
+            </button>
+            <button
+              onClick={() => setLanguageMode("hindi")}
+              className={`px-2 py-0.5 text-[11px] font-bold rounded transition-all cursor-pointer ${
+                languageMode === "hindi" ? "bg-blue-700 text-white shadow-xs" : "text-slate-600 hover:bg-slate-100"
+              }`}
+            >
+              हिन्दी
+            </button>
+          </div>
         </div>
       </div>
 
@@ -2243,7 +2277,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                 const enOpt = splitOpt.english || optRaw;
                 const hiOpt = isEnglishSection
                   ? ""
-                  : (splitOpt.hindi || currentQ[`option_${opt.toLowerCase()}_hi`] || "");
+                  : (splitOpt.hindi || currentQ[`option_${opt.toLowerCase()}_hi`] || trans?.[`option_${opt.toLowerCase()}`] || "");
 
                 let displayOpt = optRaw;
                 if (languageMode === "english" || isEnglishSection) {

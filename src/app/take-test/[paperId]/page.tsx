@@ -7,7 +7,6 @@ import toast from "react-hot-toast";
 import Link from "next/link";
 import MathText from "@/components/MathText";
 import ReportButton from "@/components/ReportButton";
-import { translateSingleQuestion, hasHindi } from "@/lib/translator";
 import {
   Clock,
   CheckCircle2,
@@ -66,54 +65,58 @@ function formatTimer(seconds: number) {
   return `${m.toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
 }
 
-// ── Smart Bilingual Text Parser ──
+// ── Smart Bilingual Question Statement Parser (Zero Discarded Text) ──
 function splitBilingualText(text: string): { english: string; hindi: string; isBilingual: boolean } {
   if (!text) return { english: "", hindi: "", isBilingual: false };
 
-  const containsHindi = /[\u0900-\u097F]/.test(text);
-  if (!containsHindi) {
+  const devanagariRegex = /[\u0900-\u097F]/;
+  if (!devanagariRegex.test(text)) {
     return { english: text.trim(), hindi: "", isBilingual: false };
   }
 
-  // 1. Common option divider: e.g. "Energy / ऊर्जा" or "8 days / 8 दिन"
+  const firstHi = text.search(devanagariRegex);
+  const prefix = text.substring(0, firstHi);
+
+  // Check if sentence-ending punctuation (? or .\s or :\s) exists right before firstHi,
+  // possibly followed by a short quote or token (e.g. 'consonant? "SIGNATURE" में...' or 'formed? GARDEN शब्द...')
+  const m = prefix.match(/(\?|\.\s|\.\n|:\s)\s*(["\w\s\d\+\-\=]{1,40})$/);
+  if (m && m.index !== undefined) {
+    const punctPos = m.index + m[1].length;
+    const en = text.substring(0, punctPos).trim();
+    const hi = text.substring(punctPos).trim();
+    return { english: en, hindi: hi, isBilingual: true };
+  }
+
+  const en = text.substring(0, firstHi).trim();
+  const hi = text.substring(firstHi).trim();
+  return { english: en, hindi: hi, isBilingual: true };
+}
+
+// ── Smart Bilingual Option Parser ──
+function splitBilingualOption(text: string): { english: string; hindi: string; isBilingual: boolean } {
+  if (!text) return { english: "", hindi: "", isBilingual: false };
+
+  const devanagariRegex = /[\u0900-\u097F]/;
+  if (!devanagariRegex.test(text)) {
+    return { english: text.trim(), hindi: "", isBilingual: false };
+  }
+
+  // Common option divider: e.g. "Energy / ऊर्जा" or "8 days / 8 दिन"
   if (text.includes(" / ")) {
     const parts = text.split(" / ");
     if (parts.length >= 2) {
       const en = parts[0].trim();
       const hi = parts.slice(1).join(" / ").trim();
-      if (/[\u0900-\u097F]/.test(hi)) {
+      if (devanagariRegex.test(hi)) {
         return { english: en, hindi: hi, isBilingual: true };
       }
     }
   }
 
-  // 2. Question text boundary: Check where Devanagari appears
-  const match = text.search(/[\u0900-\u097F]/);
-  if (match > 0) {
-    let splitIdx = match;
-    const prefix = text.substring(0, match);
-
-    // Look for punctuation boundary (? or . or :) immediately preceding or near the Hindi text
-    const lastQ = prefix.lastIndexOf("?");
-    const lastDot = Math.max(prefix.lastIndexOf(".\n"), prefix.lastIndexOf(". "));
-    const lastColon = Math.max(prefix.lastIndexOf(":\n"), prefix.lastIndexOf(": "));
-
-    if (lastQ !== -1 && lastQ > 5) {
-      splitIdx = lastQ + 1;
-    } else if (lastColon !== -1 && lastColon > 5) {
-      splitIdx = lastColon + 1;
-    } else if (lastDot !== -1 && lastDot > 5) {
-      splitIdx = lastDot + 1;
-    }
-
-    const en = text.substring(0, splitIdx).trim();
-    const hi = text.substring(splitIdx).trim();
-    if (/[a-zA-Z]{2,}/.test(en) && hi.length > 0) {
-      return { english: en, hindi: hi, isBilingual: true };
-    }
-  }
-
-  return { english: text.trim(), hindi: text.trim(), isBilingual: false };
+  const firstHi = text.search(devanagariRegex);
+  const en = text.substring(0, firstHi).trim();
+  const hi = text.substring(firstHi).trim();
+  return { english: en, hindi: hi, isBilingual: true };
 }
 
 export default function TakeTestPage({ params }: { params: Promise<{ paperId: string }> }) {
@@ -132,7 +135,6 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
 
   // Dynamic Auto-Translation Engine States
   const [translationsCache, setTranslationsCache] = useState<Record<number, any>>({});
-  const [isTranslating, setIsTranslating] = useState(false);
 
   // High-Speed Asset & Translation Preloading States
   const [preloadStatus, setPreloadStatus] = useState<{
@@ -264,12 +266,19 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
             : (paperRes.data.allow_translation !== false);
           const fullPaper = { ...paperRes.data, allow_translation: transAllowed };
           setPaper(fullPaper);
-          if (!transAllowed) {
-            setLanguageMode("english");
-          }
           const qs = questionsRes.data ?? [];
           setQuestions(qs);
           setTimeLeft((paperRes.data.duration_minutes || 60) * 60);
+
+          // Automatically detect if paper has authentic Hindi (bilingual PDF source)
+          const hasHindiContent = qs.some((q: any) => 
+            Boolean(q.question_text_hi) || /[\u0900-\u097F]/.test(q.question_text || "")
+          );
+          if (!hasHindiContent || !transAllowed) {
+            setLanguageMode("english");
+          } else {
+            setLanguageMode("bilingual");
+          }
         }
       } catch (err: any) {
         if (isMounted) setErrorMessage("Failed to load test paper: " + err.message);
@@ -281,6 +290,19 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
     init();
     return () => { isMounted = false; };
   }, [params]);
+
+  // 3b. Detect if paper has authentic native Hindi (Bilingual PDF Source)
+  const hasAuthenticHindi = useMemo(() => {
+    if (questions.length === 0) return false;
+    let count = 0;
+    for (let i = 0; i < Math.min(20, questions.length); i++) {
+      const q = questions[i];
+      if (q.question_text_hi || /[\u0900-\u097F]/.test(q.question_text || "")) {
+        count++;
+      }
+    }
+    return count >= 3;
+  }, [questions]);
 
   // 4. Sections Definition (Standard SSC CGL 4-Section Split)
   const sections: SectionDef[] = useMemo(() => {
@@ -468,12 +490,12 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
     }
   }
 
-  // 5a. Smart CBT Preloading Engine: Pre-cache all paper images & Hindi translations
+  // 5. Smart CBT Image Preloader: Pre-cache all paper images for zero-lag rendering
   useEffect(() => {
     if (questions.length === 0) return;
     let isCancelled = false;
 
-    // 1. Extract and pre-download all images in browser HTTP cache
+    // Extract all image URLs from questions, options, and explanations
     const imgUrls = new Set<string>();
     const imgRegex = /!\[[^\]]*\]\(([^)\s]+)\)|<img[^>]+src=["']([^"']+)["']|\/images\/pyq\/[^\s)"']+/g;
 
@@ -494,12 +516,14 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
 
     const urls = Array.from(imgUrls);
     if (urls.length > 0) {
-      setPreloadStatus((prev) => ({
-        ...prev,
+      setPreloadStatus({
         totalImages: urls.length,
         loadedImages: 0,
+        totalTranslations: 0,
+        loadedTranslations: 0,
         isImagesDone: false,
-      }));
+        isTranslationsDone: true,
+      });
       let loadedCount = 0;
       urls.forEach((url) => {
         const img = new Image();
@@ -515,164 +539,20 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
         img.src = url;
       });
     } else {
-      setPreloadStatus((prev) => ({ ...prev, isImagesDone: true }));
+      setPreloadStatus({
+        totalImages: 0,
+        loadedImages: 0,
+        totalTranslations: 0,
+        loadedTranslations: 0,
+        isImagesDone: true,
+        isTranslationsDone: true,
+      });
     }
-
-    // 2. Pre-cache Hindi translations for Sections 1, 2, 3 (Reasoning, GA, Quant)
-    if (paper && isPaperTranslatorAllowed(paper) === false) return;
-
-    const storageKey = `ssczone_cbt_trans_${paperId || "paper"}`;
-    let cachedFromStorage: Record<number, any> = {};
-    try {
-      const stored = sessionStorage.getItem(storageKey);
-      if (stored) {
-        cachedFromStorage = JSON.parse(stored);
-        setTranslationsCache((prev) => ({ ...cachedFromStorage, ...prev }));
-      }
-    } catch {}
-
-    const isEngSectionIdx = (idx: number) => {
-      const sec = getQuestionSection(idx);
-      return (sec?.name + " " + sec?.shortName).toLowerCase().includes("english");
-    };
-
-    const needsTranslation = questions.filter((q, idx) => {
-      if (isEngSectionIdx(idx)) return false;
-      if (q.question_text_hi) return false;
-      if (hasHindi(q.question_text)) return false;
-      return !cachedFromStorage[q.id] && !translationsCache[q.id];
-    });
-
-    setPreloadStatus((prev) => ({
-      ...prev,
-      totalTranslations: needsTranslation.length,
-      loadedTranslations: 0,
-      isTranslationsDone: needsTranslation.length === 0,
-    }));
-
-    if (needsTranslation.length === 0) return;
-
-    // Run translations in gentle batches of 4 with small delay
-    async function runPreloadTranslations() {
-      const batchSize = 4;
-      let completed = 0;
-
-      for (let i = 0; i < needsTranslation.length; i += batchSize) {
-        if (isCancelled) break;
-        const chunk = needsTranslation.slice(i, i + batchSize);
-
-        try {
-          const results = await Promise.all(
-            chunk.map(async (item) => {
-              const data = await translateSingleQuestion(item, false);
-              return { id: item.id, data };
-            })
-          );
-
-          if (isCancelled) break;
-          completed += results.length;
-
-          setTranslationsCache((prev) => {
-            const next = { ...prev };
-            results.forEach((r) => { next[r.id] = r.data; });
-            try {
-              sessionStorage.setItem(storageKey, JSON.stringify(next));
-            } catch {}
-            return next;
-          });
-
-          setPreloadStatus((prev) => ({
-            ...prev,
-            loadedTranslations: completed,
-            isTranslationsDone: completed >= needsTranslation.length,
-          }));
-
-          await new Promise((resolve) => setTimeout(resolve, 150));
-        } catch (err) {
-          console.warn("Translation preload batch caught:", err);
-        }
-      }
-    }
-
-    runPreloadTranslations();
 
     return () => {
       isCancelled = true;
     };
-  }, [questions, paperId, paper, sections]);
-
-  // 5b. Auto-Translation Engine for Non-English Section Questions
-  useEffect(() => {
-    if (questions.length === 0) return;
-    if (languageMode === "english") return; // No Hindi translation needed in English-only mode
-    if (paper && isPaperTranslatorAllowed(paper) === false) return; // Dynamic translation disabled by admin
-
-    const isEngSection = (sec: SectionDef) => {
-      if (!sec) return false;
-      const combined = `${sec.name} ${sec.shortName}`.toLowerCase();
-      return combined.includes("english");
-    };
-
-    // Determine target questions to translate: current question + upcoming questions for prefetching
-    const targets = !finished
-      ? [
-          questions[currentIndex],
-          questions[currentIndex + 1],
-          questions[currentIndex + 2],
-          questions[currentIndex + 3],
-        ].filter(Boolean)
-      : questions.slice(0, 30);
-
-    const needed = targets.filter((item) => {
-      if (!item) return false;
-      const itemIdx = questions.indexOf(item);
-      const sec = getQuestionSection(itemIdx >= 0 ? itemIdx : currentIndex);
-      
-      // STRICT RULE: Never translate questions in English Comprehension section
-      if (isEngSection(sec)) return false;
-
-      // Skip if native Hindi already exists in DB
-      if (item.question_text_hi || item.option_a_hi) return false;
-
-      // Skip if question text already has Devanagari script (bilingual text from PDF)
-      if (/[\u0900-\u097F]/.test(item.question_text)) return false;
-
-      // Skip if already in cache
-      return !translationsCache[item.id];
-    });
-
-    if (needed.length === 0) return;
-
-    let isMounted = true;
-    async function runTranslation() {
-      setIsTranslating(true);
-      try {
-        const results = await Promise.all(
-          needed.map(async (item) => {
-            const data = await translateSingleQuestion(item);
-            return { id: item.id, data };
-          })
-        );
-
-        if (isMounted) {
-          setTranslationsCache((prev) => {
-            const next = { ...prev };
-            results.forEach((r) => {
-              next[r.id] = r.data;
-            });
-            return next;
-          });
-          setIsTranslating(false);
-        }
-      } catch (err) {
-        console.error("CBT translation error:", err);
-        if (isMounted) setIsTranslating(false);
-      }
-    }
-
-    runTranslation();
-    return () => { isMounted = false; };
-  }, [currentIndex, languageMode, finished, questions, translationsCache, sections]);
+  }, [questions]);
 
   // 6. Start Exam Handler (with Fullscreen trigger)
   async function handleStartTest() {
@@ -1787,7 +1667,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                         const isOptionChosen = userChoice === opt;
 
                         const isEngSec = (qSection.name + " " + qSection.shortName).toLowerCase().includes("english");
-                        const optSplit = splitBilingualText(optText);
+                        const optSplit = splitBilingualOption(optText);
                         const transQ = translationsCache[q.id];
                         const enOpt = optSplit.english || optText;
                         const hiOpt = isEngSec ? "" : (optSplit.hindi || q[`option_${opt.toLowerCase()}_hi`] || transQ?.[`option_${opt.toLowerCase()}`] || "");
@@ -2215,10 +2095,10 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
           </button>
 
           {/* Language Mode Buttons */}
-          {paper && !isPaperTranslatorAllowed(paper) ? (
-            <div className="flex items-center gap-1.5 bg-white px-2.5 py-1 rounded-lg border border-slate-300 text-[11px] font-bold text-slate-700 shadow-2xs" title="Translator is disabled for this paper by admin">
+          {!hasAuthenticHindi ? (
+            <div className="flex items-center gap-1.5 bg-white px-2.5 py-1 rounded-lg border border-slate-300 text-[11px] font-bold text-slate-700 shadow-2xs" title="This official paper was published by SSC in English">
               <Lock className="h-3 w-3 text-slate-500" />
-              <span>English Only</span>
+              <span>English (Official Paper)</span>
             </div>
           ) : (
             <div className="flex items-center gap-1 bg-white p-0.5 rounded-lg border border-slate-300">
@@ -2288,24 +2168,17 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
             {/* Dynamic Question Text by Language Mode */}
             {(() => {
               // 1. English Mode Selected (Or English Comprehension Section in any mode)
-              if (languageMode === "english") {
+              if (languageMode === "english" || isEnglishSection) {
                 return (
-                  <div className={`font-semibold text-slate-900 ${fontClasses.qText} break-words`}>
-                    <MathText text={enQuestionText} />
-                  </div>
-                );
-              }
-
-              // Special Rule: English Comprehension section must NEVER be translated into Hindi!
-              if (isEnglishSection) {
-                return (
-                  <div className="space-y-2.5">
-                    <div className="inline-flex items-center gap-1.5 text-[11px] font-bold text-blue-900 bg-blue-50 px-2.5 py-1 rounded-lg border border-blue-200">
-                      <Info className="h-3.5 w-3.5 text-blue-600 shrink-0" />
-                      <span>English Comprehension (अंग्रेजी भाषा समझ) के प्रश्न केवल अंग्रेजी में ही होते हैं।</span>
-                    </div>
+                  <div className="space-y-2">
+                    {isEnglishSection && languageMode !== "english" && (
+                      <div className="inline-flex items-center gap-1.5 text-[11px] font-bold text-blue-900 bg-blue-50 px-2.5 py-1 rounded-lg border border-blue-200">
+                        <Info className="h-3.5 w-3.5 text-blue-600 shrink-0" />
+                        <span>English Comprehension (अंग्रेजी भाषा समझ) के प्रश्न केवल अंग्रेजी में ही होते हैं।</span>
+                      </div>
+                    )}
                     <div className={`font-semibold text-slate-900 ${fontClasses.qText} break-words`}>
-                      <MathText text={enQuestionText} />
+                      <MathText text={enQuestionText || currentQ.question_text} />
                     </div>
                   </div>
                 );
@@ -2319,22 +2192,15 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                       <MathText text={hiQuestionText} />
                     </div>
                   );
-                } else if (isTranslating) {
-                  return (
-                    <div className="space-y-2">
-                      <div className="inline-flex items-center gap-1.5 text-[11px] font-bold text-blue-800 bg-blue-50 px-2.5 py-1 rounded-lg border border-blue-200 animate-pulse">
-                        <Sparkles className="h-3.5 w-3.5 text-blue-600 animate-spin" />
-                        <span>हिन्दी में अनुवाद हो रहा है (Translating to Hindi)...</span>
-                      </div>
-                      <div className={`font-semibold text-slate-900 ${fontClasses.qText} break-words`}>
-                        <MathText text={enQuestionText} />
-                      </div>
-                    </div>
-                  );
                 } else {
                   return (
-                    <div className={`font-semibold text-slate-900 ${fontClasses.qText} break-words`}>
-                      <MathText text={enQuestionText} />
+                    <div className="space-y-2">
+                      <div className="inline-flex items-center gap-1.5 text-[10px] font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
+                        <span>मूल प्रश्न (Original Statement)</span>
+                      </div>
+                      <div className={`font-semibold text-slate-900 ${fontClasses.qText} break-words`}>
+                        <MathText text={enQuestionText || currentQ.question_text} />
+                      </div>
                     </div>
                   );
                 }
@@ -2349,7 +2215,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                     </div>
                     <div className="border-t border-slate-200 pt-2.5 text-slate-800 font-medium leading-relaxed bg-slate-50/70 p-3 rounded-xl border border-slate-200">
                       <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500 mb-1 flex items-center gap-1">
-                        <span>हिन्दी अनुवाद (Hindi Translation):</span>
+                        <span>हिन्दी प्रश्न (Official Hindi):</span>
                       </div>
                       <div className={`${fontClasses.qText} break-words`}>
                         <MathText text={hiQuestionText} />
@@ -2359,23 +2225,9 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                 );
               }
 
-              if (isTranslating) {
-                return (
-                  <div className="space-y-2">
-                    <div className={`font-semibold text-slate-900 ${fontClasses.qText} break-words`}>
-                      <MathText text={enQuestionText} />
-                    </div>
-                    <div className="inline-flex items-center gap-1.5 text-[11px] font-bold text-blue-800 bg-blue-50 px-2.5 py-1 rounded-lg border border-blue-200 animate-pulse">
-                      <Sparkles className="h-3.5 w-3.5 text-blue-600 animate-spin" />
-                      <span>हिन्दी अनुवाद लोड हो रहा है...</span>
-                    </div>
-                  </div>
-                );
-              }
-
               return (
                 <div className={`font-semibold text-slate-900 ${fontClasses.qText} break-words`}>
-                  <MathText text={enQuestionText} />
+                  <MathText text={enQuestionText || currentQ.question_text} />
                 </div>
               );
             })()}
@@ -2387,11 +2239,11 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                 if (!optRaw) return null;
                 const isSelected = currentSelectedOpt === opt;
 
-                const splitOpt = splitBilingualText(optRaw);
+                const splitOpt = splitBilingualOption(optRaw);
                 const enOpt = splitOpt.english || optRaw;
                 const hiOpt = isEnglishSection
                   ? ""
-                  : (splitOpt.hindi || currentQ[`option_${opt.toLowerCase()}_hi`] || trans?.[`option_${opt.toLowerCase()}`] || "");
+                  : (splitOpt.hindi || currentQ[`option_${opt.toLowerCase()}_hi`] || "");
 
                 let displayOpt = optRaw;
                 if (languageMode === "english" || isEnglishSection) {
@@ -2403,7 +2255,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                   if (hiOpt && hiOpt !== enOpt) {
                     displayOpt = `${enOpt}  /  ${hiOpt}`;
                   } else {
-                    displayOpt = enOpt;
+                    displayOpt = optRaw;
                   }
                 }
 

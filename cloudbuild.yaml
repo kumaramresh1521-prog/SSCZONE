@@ -11,26 +11,6 @@ steps:
       - 'push'
       - 'asia-south1-docker.pkg.dev/$PROJECT_ID/cloud-run-source-deploy/ssczone:latest'
 
-  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-    entrypoint: gcloud
-    args:
-      - 'run'
-      - 'deploy'
-      - 'ssczone'
-      - '--image'
-      - 'asia-south1-docker.pkg.dev/$PROJECT_ID/cloud-run-source-deploy/ssczone:latest'
-      - '--region'
-      - 'asia-south1'
-      - '--platform'
-      - 'managed'
-      - '--allow-unauthenticated'
-      - '--memory'
-      - '2Gi'
-      - '--cpu'
-      - '1'
-      - '--set-secrets'
-      - 'SUPABASE_SERVICE_ROLE_KEY=ssczone-supabase-service-role:latest'
-
 options:
   machineType: 'E2_HIGHCPU_8'
   logging: CLOUD_LOGGING_ONLY

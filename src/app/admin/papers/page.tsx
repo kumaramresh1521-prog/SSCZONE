@@ -897,6 +897,17 @@ export default function PapersPage() {
             <Folder className="h-4 w-4" />
             <span>New Folder / Shift</span>
           </button>
+
+          {/* Button D: Master Compiled Verification TXT */}
+          <a
+            href="/verification_txt/ALL_PAPERS_MASTER_50_SHIFTS_COMPILED.txt"
+            download="ALL_PAPERS_MASTER_50_SHIFTS_COMPILED.txt"
+            className="inline-flex items-center gap-2 rounded-2xl border border-slate-700 bg-slate-800 hover:bg-slate-700 px-3.5 py-2.5 text-xs sm:text-sm font-bold text-slate-200 transition-all cursor-pointer hover:scale-[1.02]"
+            title="Download compiled questions of all 50 shifts in one text file for offline verification"
+          >
+            <Download className="h-4 w-4 text-emerald-400" />
+            <span>Compiled Master TXT (50 Shifts)</span>
+          </a>
         </div>
       </div>
 
@@ -1164,6 +1175,22 @@ export default function PapersPage() {
                     : "🌐 Turn OFF All Translators"}
                 </span>
               </button>
+
+              <a
+                href={
+                  Number(currentFolder.year) === 2026
+                    ? "/verification_txt/SSC_CGL_2026_ALL_29_SHIFTS_COMPILED.txt"
+                    : Number(currentFolder.year) === 2025
+                    ? "/verification_txt/SSC_CGL_2025_ALL_21_SHIFTS_COMPILED.txt"
+                    : "/verification_txt/ALL_PAPERS_MASTER_50_SHIFTS_COMPILED.txt"
+                }
+                download={`${currentFolder.examTitle}_${currentFolder.year}_${currentFolder.tier}_Compiled_Verification.txt`.replace(/\s+/g, "_")}
+                className="inline-flex items-center gap-1.5 rounded-xl border border-emerald-300 bg-emerald-50 hover:bg-emerald-100 px-3.5 py-2 text-xs font-bold text-emerald-800 transition-colors cursor-pointer"
+                title="Download all shifts in this folder compiled into one TXT file for offline verification"
+              >
+                <Download className="h-3.5 w-3.5 text-emerald-700" />
+                <span>📄 Download Folder Compiled .txt</span>
+              </a>
             </div>
           </div>
 

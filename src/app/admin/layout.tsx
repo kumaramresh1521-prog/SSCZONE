@@ -28,6 +28,7 @@ import {
   Globe,
   Folder,
   Compass,
+  Zap,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { supabase } from "@/lib/supabase";
@@ -52,6 +53,7 @@ const menuItems: MenuItem[] = [
   { label: "Topics", href: "/admin/topics", icon: FileText },
   { label: "Subject Notes", href: "/admin/notes", icon: GraduationCap },
   { label: "Questions", href: "/admin/questions", icon: CircleHelp },
+  { label: "Daily Free Quiz", href: "/admin/daily-quiz", icon: Zap },
   { label: "Flagged Reports", href: "/admin/reports", icon: Flag },
   { label: "Blogs", href: "/admin/blogs", icon: Newspaper },
   { label: "Users", href: "/admin/users", icon: Users },

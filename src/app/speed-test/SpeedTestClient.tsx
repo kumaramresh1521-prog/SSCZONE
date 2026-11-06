@@ -20,19 +20,22 @@ import {
   Globe,
   Layers,
   Flag,
-  ChevronRight,
   Check,
   Volume2,
   VolumeX,
-  Share2,
+  Languages,
+  Sliders,
+  ChevronRight,
   HelpCircle,
   Home,
-  Sliders,
   Award,
+  Info,
 } from "lucide-react";
 import MathText from "@/components/MathText";
+import AdBanner from "@/components/AdBanner";
+import { translateSingleQuestion } from "@/lib/translator";
 
-// Sound synthesis using Web Audio API (Zero external dependencies)
+// Audio chime using Web Audio API (Zero external dependencies)
 function playChime(type: "tick" | "warning" | "finish" | "select") {
   if (typeof window === "undefined") return;
   try {
@@ -75,6 +78,37 @@ function playChime(type: "tick" | "warning" | "finish" | "select") {
   } catch {
     // Ignore audio errors gracefully
   }
+}
+
+// Cleanly splits concatenated bilingual text in PYQ papers
+function splitBilingual(text?: string | null): { english: string; hindi: string | null } {
+  if (!text) return { english: "", hindi: null };
+  const trimmed = text.trim();
+
+  // If text contains a slash separator like "Chile / चिली"
+  if (trimmed.includes("/")) {
+    const parts = trimmed.split("/");
+    if (parts.length === 2 && /[\u0900-\u097F]/.test(parts[1])) {
+      return { english: parts[0].trim(), hindi: parts[1].trim() };
+    }
+  }
+
+  // Find where Devanagari Hindi characters start
+  const match = trimmed.search(/[\u0900-\u097F]/);
+  if (match > 0) {
+    return {
+      english: trimmed.slice(0, match).trim(),
+      hindi: trimmed.slice(match).trim(),
+    };
+  }
+
+  // Pure Hindi text
+  if (match === 0) {
+    return { english: trimmed, hindi: trimmed };
+  }
+
+  // Pure English text
+  return { english: trimmed, hindi: null };
 }
 
 interface NormalizedSpeedQuestion {
@@ -122,7 +156,7 @@ export default function SpeedTestClient() {
   const [stats, setStats] = useState({ totalQuestions: 12212, totalPyqs: 5000, totalBank: 7212 });
   const [loadingConfig, setLoadingConfig] = useState(true);
 
-  // Setup Options
+  // Setup Options (Clean English by default)
   const [selectedMode, setSelectedMode] = useState<"random" | "subject" | "topic">("random");
   const [selectedSubject, setSelectedSubject] = useState<"all" | "quant" | "reasoning" | "english" | "ga">("all");
   const [selectedTopicId, setSelectedTopicId] = useState<number | null>(null);
@@ -130,8 +164,12 @@ export default function SpeedTestClient() {
   const [questionCount, setQuestionCount] = useState<number>(25); // Default 25 questions
   const [timerType, setTimerType] = useState<"sectional" | "blitz">("sectional");
   const [durationMinutes, setDurationMinutes] = useState<number>(15); // Default 15 minutes
-  const [languageMode, setLanguageMode] = useState<"bilingual" | "english" | "hindi">("bilingual");
   const [soundEnabled, setSoundEnabled] = useState(true);
+
+  // Dedicated Hindi Translator State
+  const [isHindiActive, setIsHindiActive] = useState(false);
+  const [translationsCache, setTranslationsCache] = useState<Record<string, any>>({});
+  const [isTranslating, setIsTranslating] = useState(false);
 
   // Live Testing State
   const [loadingQuestions, setLoadingQuestions] = useState(false);
@@ -154,7 +192,7 @@ export default function SpeedTestClient() {
   const [showSolutions, setShowSolutions] = useState(false);
   const [reviewFilter, setReviewFilter] = useState<"all" | "correct" | "incorrect" | "skipped">("all");
 
-  // Fetch initial config (topics & stats)
+  // Fetch initial config
   useEffect(() => {
     async function fetchConfig() {
       try {
@@ -191,6 +229,99 @@ export default function SpeedTestClient() {
 
   // Current question helper
   const currentQ = questions[currentIndex] || null;
+
+  // Split question content cleanly between English & Hindi
+  const activeQuestionContent = useMemo(() => {
+    if (!currentQ) return null;
+
+    const isEngSection = currentQ.subjectKey === "english";
+
+    // Split source question text
+    const qSplit = splitBilingual(currentQ.question_text);
+    const optASplit = splitBilingual(currentQ.option_a);
+    const optBSplit = splitBilingual(currentQ.option_b);
+    const optCSplit = splitBilingual(currentQ.option_c);
+    const optDSplit = splitBilingual(currentQ.option_d);
+
+    // If Hindi Translator is enabled and not English section:
+    if (isHindiActive && !isEngSection) {
+      // 1. Check if translated cache exists
+      const cached = translationsCache[currentQ.id];
+      if (cached) {
+        return {
+          questionText: cached.question_text || qSplit.english,
+          optionA: cached.option_a || optASplit.english,
+          optionB: cached.option_b || optBSplit.english,
+          optionC: cached.option_c || optCSplit.english,
+          optionD: cached.option_d || optDSplit.english,
+          explanation: cached.explanation || currentQ.explanation_hi || currentQ.explanation || null,
+          isHindi: true,
+        };
+      }
+
+      // 2. If native Hindi is already in DB or extracted from PYQ
+      const nativeHindiQ = currentQ.question_text_hi || qSplit.hindi;
+      if (nativeHindiQ) {
+        return {
+          questionText: nativeHindiQ,
+          optionA: currentQ.option_a_hi || optASplit.hindi || optASplit.english,
+          optionB: currentQ.option_b_hi || optBSplit.hindi || optBSplit.english,
+          optionC: currentQ.option_c_hi || optCSplit.hindi || optCSplit.english,
+          optionD: currentQ.option_d_hi || optDSplit.hindi || optDSplit.english,
+          explanation: currentQ.explanation_hi || currentQ.explanation || null,
+          isHindi: true,
+        };
+      }
+    }
+
+    // Default: Clean official English
+    return {
+      questionText: qSplit.english,
+      optionA: optASplit.english,
+      optionB: optBSplit.english,
+      optionC: optCSplit.english,
+      optionD: optDSplit.english,
+      explanation: currentQ.explanation || null,
+      isHindi: false,
+    };
+  }, [currentQ, isHindiActive, translationsCache]);
+
+  // On-demand Hindi Translation Engine
+  const handleToggleHindi = async () => {
+    if (!currentQ) return;
+    const nextState = !isHindiActive;
+    setIsHindiActive(nextState);
+
+    // If switching to Hindi and translation is not yet cached and not English section:
+    if (nextState && currentQ.subjectKey !== "english") {
+      const qSplit = splitBilingual(currentQ.question_text);
+      if (!currentQ.question_text_hi && !qSplit.hindi && !translationsCache[currentQ.id]) {
+        setIsTranslating(true);
+        try {
+          const trans = await translateSingleQuestion(
+            {
+              id: currentQ.originalId,
+              question_text: qSplit.english,
+              option_a: currentQ.option_a,
+              option_b: currentQ.option_b,
+              option_c: currentQ.option_c,
+              option_d: currentQ.option_d,
+              explanation: currentQ.explanation,
+            },
+            false
+          );
+          setTranslationsCache((prev) => ({
+            ...prev,
+            [currentQ.id]: trans,
+          }));
+        } catch (err) {
+          console.warn("Hindi translation error:", err);
+        } finally {
+          setIsTranslating(false);
+        }
+      }
+    }
+  };
 
   // Track time spent on each question
   const recordQuestionTime = useCallback(() => {
@@ -344,7 +475,6 @@ export default function SpeedTestClient() {
     const blitzInterval = setInterval(() => {
       setBlitzTimeLeft((prev) => {
         if (prev <= 1) {
-          // Blitz time out for this question: audio alert & advance
           if (soundEnabled) playChime("warning");
           if (currentIndex < questions.length - 1) {
             goToQuestion(currentIndex + 1);
@@ -354,7 +484,6 @@ export default function SpeedTestClient() {
           return 20;
         }
 
-        // Warning sound on 3, 2, 1 seconds
         if (prev <= 4 && soundEnabled) {
           playChime("tick");
         }
@@ -366,13 +495,12 @@ export default function SpeedTestClient() {
     return () => clearInterval(blitzInterval);
   }, [phase, timerType, currentIndex, questions.length, soundEnabled, handleSubmitTest]);
 
-  // Keyboard Shortcuts for Rapid Interaction
+  // Keyboard Shortcuts
   useEffect(() => {
     if (phase !== "testing") return;
 
     const handleKeyDown = (e: KeyboardEvent) => {
-      // Don't intercept typing in inputs
-      if (["INPUT", "TEXTAREA"].includes((e.target as HTMLElement)?.tagName)) return;
+      if (["INPUT", "TEXTAREA", "SELECT"].includes((e.target as HTMLElement)?.tagName)) return;
 
       const key = e.key.toUpperCase();
       if (["1", "A"].includes(key)) {
@@ -402,12 +530,15 @@ export default function SpeedTestClient() {
       } else if (key === "C" || key === "BACKSPACE" || key === "DELETE") {
         e.preventDefault();
         handleClearResponse();
+      } else if (key === "T" || key === "H") {
+        e.preventDefault();
+        handleToggleHindi();
       }
     };
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [phase, currentIndex, questions.length]);
+  }, [phase, currentIndex, questions.length, isHindiActive, currentQ]);
 
   // Format time display (MM:SS)
   const formatTime = (secs: number) => {
@@ -446,24 +577,22 @@ export default function SpeedTestClient() {
     });
 
     const attempted = correct + incorrect;
-    // SSC CGL standard marking: +2 for correct, -0.5 for incorrect
     const score = Math.max(0, correct * 2 - incorrect * 0.5);
     const maxScore = questions.length * 2;
     const accuracy = attempted > 0 ? Math.round((correct / attempted) * 100) : 0;
     const avgSecPerQ = questions.length > 0 ? Math.round(totalTimeSpent / questions.length) : 0;
 
-    // Speed evaluation badge
-    let speedTier = "🎯 Steady Pace";
-    let speedColor = "text-amber-400 bg-amber-500/10 border-amber-500/30";
+    let speedTier = "🎯 Steady Exam Pace";
+    let speedColor = "text-amber-800 bg-amber-50 border-amber-200";
     if (avgSecPerQ <= 22) {
       speedTier = "⚡ Lightning Fast! (Rank 1 Pace)";
-      speedColor = "text-emerald-400 bg-emerald-500/10 border-emerald-500/30";
+      speedColor = "text-emerald-800 bg-emerald-50 border-emerald-200";
     } else if (avgSecPerQ <= 36) {
       speedTier = "🚀 Ideal Exam Pace (Ahead of Cut-off)";
-      speedColor = "text-cyan-400 bg-cyan-500/10 border-cyan-500/30";
+      speedColor = "text-blue-800 bg-blue-50 border-blue-200";
     } else {
       speedTier = "⏱️ Needs Speed Drills";
-      speedColor = "text-rose-400 bg-rose-500/10 border-rose-500/30";
+      speedColor = "text-rose-800 bg-rose-50 border-rose-200";
     }
 
     return {
@@ -495,84 +624,94 @@ export default function SpeedTestClient() {
   }, [phase, questions, answers, reviewFilter]);
 
   // ==========================================
-  // VIEW 1: SETUP & LAUNCHPAD
+  // VIEW 1: SETUP & LAUNCHPAD (Website Light Theme)
   // ==========================================
   if (phase === "setup") {
     return (
-      <div className="min-h-screen bg-slate-950 text-slate-100 py-8 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto space-y-8">
-          {/* Hero Banner */}
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-950 via-slate-900 to-slate-950 p-6 sm:p-10 border border-indigo-500/20 shadow-2xl">
-            <div className="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
-            <div className="absolute bottom-0 left-0 -mb-10 -ml-10 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="min-h-screen bg-slate-50 text-slate-900 font-sans antialiased pb-16">
+        {/* Top Header matching SSCZone layout */}
+        <section className="bg-white border-b border-slate-200/80 py-8 px-4">
+          <div className="mx-auto max-w-5xl space-y-3">
+            {/* Breadcrumb */}
+            <div className="flex items-center gap-2 text-xs text-slate-500 font-medium">
+              <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+              <span>/</span>
+              <span className="text-slate-800 font-semibold">Speed Test Drill</span>
+            </div>
 
-            <div className="relative z-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div>
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold tracking-wide uppercase mb-3">
-                  <Zap className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold uppercase tracking-wider mb-2">
+                  <Zap className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
                   Real Exam Speed Drill
                 </div>
-                <h1 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-                  SSC Speed Test <span className="text-indigo-400">Drill</span>
+                <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                  SSC Speed Test <span className="text-blue-600">Challenge</span>
                 </h1>
-                <p className="mt-2 text-sm sm:text-base text-slate-300 max-w-xl leading-relaxed">
-                  Train lightning reflexes with automated dynamic tests. Draw questions instantly from{" "}
-                  <strong className="text-white font-semibold">12,200+ PYQ shifts and question bank</strong> with user-based randomization!
+                <p className="mt-1 text-sm text-slate-600 max-w-2xl leading-relaxed">
+                  Practice with real exam timing and user-based dynamic questions. Pool includes{" "}
+                  <strong className="text-slate-800 font-semibold">{stats.totalQuestions.toLocaleString()}+ active questions</strong> from official PYQs and Question Bank.
                 </p>
               </div>
 
-              {/* Pool Counter Pill */}
-              <div className="bg-slate-900/90 border border-slate-700/60 rounded-2xl p-4 shadow-xl backdrop-blur-md sm:text-right shrink-0">
-                <div className="text-xs text-slate-400 uppercase tracking-wider font-medium">Question Pool Available</div>
-                <div className="text-2xl font-black text-emerald-400 mt-0.5">
-                  {stats.totalQuestions.toLocaleString()}+ <span className="text-xs text-slate-400 font-normal">Active Qs</span>
+              {/* Pool Status Badge */}
+              <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-left sm:text-right shrink-0">
+                <div className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Live Question Pool</div>
+                <div className="text-2xl font-black text-emerald-600 mt-0.5">
+                  {stats.totalQuestions.toLocaleString()}+ <span className="text-xs text-slate-500 font-normal">Questions</span>
                 </div>
-                <div className="text-[11px] text-slate-400 mt-1 flex items-center gap-2">
-                  <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                  5,000 PYQs + 7,200 QB
+                <div className="text-[11px] text-slate-500 mt-0.5 flex items-center sm:justify-end gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                  50 Shift PYQs + Question Bank
                 </div>
               </div>
             </div>
           </div>
+        </section>
 
-          {/* Configuration Card */}
-          <div className="bg-slate-900/80 border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-8 shadow-xl">
-            {/* STEP 1: Speed Test Mode (User Options) */}
+        {/* Top AdSense Placement */}
+        <div className="max-w-5xl mx-auto px-4">
+          <AdBanner slot="speed-test-top-banner" className="my-4" />
+        </div>
+
+        {/* Main Configuration Card */}
+        <div className="max-w-5xl mx-auto px-4 mt-4 space-y-6">
+          <div className="rounded-2xl border border-slate-200/90 bg-white p-5 sm:p-7 shadow-xs space-y-8">
+            {/* STEP 1: Select Mode */}
             <div>
-              <div className="flex items-center justify-between mb-4">
-                <label className="text-base font-bold text-white flex items-center gap-2">
-                  <span className="flex items-center justify-center w-6 h-6 rounded-full bg-indigo-600 text-xs font-bold text-white">1</span>
-                  Select Test Mode (मोड चुनें)
+              <div className="flex items-center justify-between mb-3 border-b border-slate-100 pb-3">
+                <label className="text-sm sm:text-base font-extrabold text-slate-900 flex items-center gap-2">
+                  <span className="flex items-center justify-center w-6 h-6 rounded-full bg-blue-600 text-xs font-bold text-white">1</span>
+                  Select Drill Mode
                 </label>
-                <span className="text-xs text-slate-400">Random, Subject-wise, or Chapter-wise</span>
+                <span className="text-xs text-slate-500 font-medium">Choose from 3 test modes</span>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                {/* Mode 1: All Subjects (Random) */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
+                {/* Mode 1: All-Rounder (Mixed) */}
                 <button
                   type="button"
                   onClick={() => {
                     setSelectedMode("random");
                     setSelectedSubject("all");
                   }}
-                  className={`p-4 rounded-2xl border text-left transition-all duration-200 relative ${
+                  className={`p-4 rounded-xl border text-left transition-all cursor-pointer relative ${
                     selectedMode === "random"
-                      ? "bg-indigo-950/60 border-indigo-500 shadow-lg shadow-indigo-500/10 ring-2 ring-indigo-500/20"
-                      : "bg-slate-800/40 border-slate-800 hover:border-slate-700 hover:bg-slate-800/70"
+                      ? "bg-blue-50/70 border-blue-600 ring-2 ring-blue-500/20 shadow-xs"
+                      : "bg-white border-slate-200 hover:border-slate-300 hover:bg-slate-50/80"
                   }`}
                 >
                   {selectedMode === "random" && (
-                    <div className="absolute top-3 right-3 w-5 h-5 rounded-full bg-indigo-500 flex items-center justify-center text-white">
+                    <div className="absolute top-3 right-3 w-5 h-5 rounded-full bg-blue-600 flex items-center justify-center text-white">
                       <Check className="w-3 h-3 stroke-[3]" />
                     </div>
                   )}
-                  <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 mb-3">
+                  <div className="w-9 h-9 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center mb-2.5">
                     <Layers className="w-5 h-5" />
                   </div>
-                  <div className="font-bold text-white text-sm">🎲 All-Rounder (Mixed)</div>
-                  <div className="text-xs text-indigo-300 font-medium mt-0.5">मिश्रित - सभी विषय</div>
-                  <div className="text-[11px] text-slate-400 mt-2 leading-relaxed">
-                    Balanced split across Reasoning, General Awareness, Quant, and English Comprehension.
+                  <div className="font-extrabold text-sm text-slate-900">All-Rounder (Mixed)</div>
+                  <div className="text-xs text-slate-500 mt-1 leading-relaxed">
+                    Balanced real exam split across Reasoning, General Awareness, Quant, and English Comprehension.
                   </div>
                 </button>
 
@@ -583,68 +722,66 @@ export default function SpeedTestClient() {
                     setSelectedMode("subject");
                     if (selectedSubject === "all") setSelectedSubject("quant");
                   }}
-                  className={`p-4 rounded-2xl border text-left transition-all duration-200 relative ${
+                  className={`p-4 rounded-xl border text-left transition-all cursor-pointer relative ${
                     selectedMode === "subject"
-                      ? "bg-indigo-950/60 border-indigo-500 shadow-lg shadow-indigo-500/10 ring-2 ring-indigo-500/20"
-                      : "bg-slate-800/40 border-slate-800 hover:border-slate-700 hover:bg-slate-800/70"
+                      ? "bg-blue-50/70 border-blue-600 ring-2 ring-blue-500/20 shadow-xs"
+                      : "bg-white border-slate-200 hover:border-slate-300 hover:bg-slate-50/80"
                   }`}
                 >
                   {selectedMode === "subject" && (
-                    <div className="absolute top-3 right-3 w-5 h-5 rounded-full bg-indigo-500 flex items-center justify-center text-white">
+                    <div className="absolute top-3 right-3 w-5 h-5 rounded-full bg-blue-600 flex items-center justify-center text-white">
                       <Check className="w-3 h-3 stroke-[3]" />
                     </div>
                   )}
-                  <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-3">
+                  <div className="w-9 h-9 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center mb-2.5">
                     <BookOpen className="w-5 h-5" />
                   </div>
-                  <div className="font-bold text-white text-sm">📚 Subject-Wise</div>
-                  <div className="text-xs text-amber-300 font-medium mt-0.5">विषयवार अभ्यास</div>
-                  <div className="text-[11px] text-slate-400 mt-2 leading-relaxed">
-                    Drill down into Maths, Reasoning, English, or GK specifically with official shift questions.
+                  <div className="font-extrabold text-sm text-slate-900">Subject-Wise</div>
+                  <div className="text-xs text-slate-500 mt-1 leading-relaxed">
+                    Targeted practice in Maths, Reasoning, English, or GK specifically with official shift questions.
                   </div>
                 </button>
 
-                {/* Mode 3: Topic / Chapter-Wise */}
+                {/* Mode 3: Chapter-Wise */}
                 <button
                   type="button"
                   onClick={() => setSelectedMode("topic")}
-                  className={`p-4 rounded-2xl border text-left transition-all duration-200 relative ${
+                  className={`p-4 rounded-xl border text-left transition-all cursor-pointer relative ${
                     selectedMode === "topic"
-                      ? "bg-indigo-950/60 border-indigo-500 shadow-lg shadow-indigo-500/10 ring-2 ring-indigo-500/20"
-                      : "bg-slate-800/40 border-slate-800 hover:border-slate-700 hover:bg-slate-800/70"
+                      ? "bg-blue-50/70 border-blue-600 ring-2 ring-blue-500/20 shadow-xs"
+                      : "bg-white border-slate-200 hover:border-slate-300 hover:bg-slate-50/80"
                   }`}
                 >
                   {selectedMode === "topic" && (
-                    <div className="absolute top-3 right-3 w-5 h-5 rounded-full bg-indigo-500 flex items-center justify-center text-white">
+                    <div className="absolute top-3 right-3 w-5 h-5 rounded-full bg-blue-600 flex items-center justify-center text-white">
                       <Check className="w-3 h-3 stroke-[3]" />
                     </div>
                   )}
-                  <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-3">
+                  <div className="w-9 h-9 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center mb-2.5">
                     <Target className="w-5 h-5" />
                   </div>
-                  <div className="font-bold text-white text-sm">📑 Chapter / Topic-Wise</div>
-                  <div className="text-xs text-emerald-300 font-medium mt-0.5">अध्यायवार / टॉपिकवार</div>
-                  <div className="text-[11px] text-slate-400 mt-2 leading-relaxed">
-                    Pick a specific chapter (e.g. Percentage, Analogy, Synonyms, Indian Economy).
+                  <div className="font-extrabold text-sm text-slate-900">Chapter / Topic-Wise</div>
+                  <div className="text-xs text-slate-500 mt-1 leading-relaxed">
+                    Select a specific chapter (Percentage, Syllogism, Synonyms, Indian Economy, etc.).
                   </div>
                 </button>
               </div>
             </div>
 
-            {/* SUBJECT SELECTOR (Visible for Subject-wise or Topic-wise) */}
+            {/* SUBJECT & TOPIC SELECTION (If Subject-wise or Topic-wise) */}
             {(selectedMode === "subject" || selectedMode === "topic") && (
-              <div className="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 space-y-4">
-                <label className="text-sm font-semibold text-white flex items-center gap-2">
-                  <Sliders className="w-4 h-4 text-indigo-400" />
-                  Choose Subject (विषय चुनें):
+              <div className="p-4 sm:p-5 rounded-xl bg-slate-50 border border-slate-200/90 space-y-4">
+                <label className="text-xs sm:text-sm font-bold text-slate-800 flex items-center gap-2">
+                  <Sliders className="w-4 h-4 text-blue-600" />
+                  Select Target Subject:
                 </label>
 
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
                   {[
-                    { key: "quant", name: "Quantitative Aptitude", icon: Calculator, labelHi: "गणित" },
-                    { key: "reasoning", name: "Reasoning", icon: Brain, labelHi: "तर्कशक्ति" },
-                    { key: "english", name: "English Comprehension", icon: BookOpen, labelHi: "अंग्रेजी" },
-                    { key: "ga", name: "General Awareness", icon: Globe, labelHi: "सामान्य ज्ञान" },
+                    { key: "quant", name: "Quantitative Aptitude", icon: Calculator, labelHi: "Maths" },
+                    { key: "reasoning", name: "Reasoning", icon: Brain, labelHi: "General Intelligence" },
+                    { key: "english", name: "English Comprehension", icon: BookOpen, labelHi: "English" },
+                    { key: "ga", name: "General Awareness", icon: Globe, labelHi: "GK / GS" },
                   ].map((sub) => {
                     const Icon = sub.icon;
                     const isActive = selectedSubject === sub.key;
@@ -653,16 +790,16 @@ export default function SpeedTestClient() {
                         key={sub.key}
                         type="button"
                         onClick={() => setSelectedSubject(sub.key as any)}
-                        className={`p-3 rounded-xl border flex items-center gap-3 text-left transition-all ${
+                        className={`p-3 rounded-xl border flex items-center gap-2.5 text-left transition-all cursor-pointer ${
                           isActive
-                            ? "bg-indigo-600 text-white border-indigo-500 shadow-md"
-                            : "bg-slate-900 border-slate-800 text-slate-300 hover:border-slate-700 hover:text-white"
+                            ? "bg-blue-600 text-white border-blue-600 shadow-xs"
+                            : "bg-white border-slate-200 text-slate-700 hover:border-slate-300 hover:bg-slate-100/50"
                         }`}
                       >
                         <Icon className="w-4 h-4 shrink-0" />
                         <div className="min-w-0">
-                          <div className="font-semibold text-xs truncate">{sub.name}</div>
-                          <div className={`text-[10px] ${isActive ? "text-indigo-200" : "text-slate-400"}`}>
+                          <div className="font-bold text-xs truncate">{sub.name}</div>
+                          <div className={`text-[10px] ${isActive ? "text-blue-100" : "text-slate-500"}`}>
                             {sub.labelHi}
                           </div>
                         </div>
@@ -671,12 +808,12 @@ export default function SpeedTestClient() {
                   })}
                 </div>
 
-                {/* If Topic-wise mode, show topic dropdown & search */}
+                {/* If Topic-wise mode, show topic searchable dropdown */}
                 {selectedMode === "topic" && (
-                  <div className="mt-4 pt-4 border-t border-slate-800/80 space-y-3">
-                    <label className="text-xs font-semibold text-slate-300 flex items-center justify-between">
-                      <span>Select Chapter / Topic ({filteredTopics.length} available):</span>
-                      <span className="text-[11px] text-indigo-400 font-normal">Instant Search</span>
+                  <div className="pt-3 border-t border-slate-200 space-y-2.5">
+                    <label className="text-xs font-bold text-slate-700 flex items-center justify-between">
+                      <span>Choose Chapter / Topic ({filteredTopics.length} available):</span>
+                      <span className="text-[11px] text-blue-600 font-medium">Instant Filter</span>
                     </label>
 
                     <input
@@ -684,13 +821,13 @@ export default function SpeedTestClient() {
                       placeholder="Type chapter name to filter (e.g. Percentage, Profit, Analogy)..."
                       value={topicSearchQuery}
                       onChange={(e) => setTopicSearchQuery(e.target.value)}
-                      className="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700/80 rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"
+                      className="w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-all"
                     />
 
                     <select
                       value={selectedTopicId || ""}
                       onChange={(e) => setSelectedTopicId(Number(e.target.value))}
-                      className="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700/80 rounded-xl text-xs text-white focus:outline-none focus:border-indigo-500"
+                      className="w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs text-slate-800 focus:outline-none focus:border-blue-600"
                     >
                       {filteredTopics.map((t) => (
                         <option key={t.id} value={t.id}>
@@ -703,67 +840,69 @@ export default function SpeedTestClient() {
               </div>
             )}
 
-            {/* STEP 2: Timer & Challenge Configuration */}
+            {/* STEP 2: Timer & Format Configuration */}
             <div>
-              <div className="flex items-center justify-between mb-4">
-                <label className="text-base font-bold text-white flex items-center gap-2">
-                  <span className="flex items-center justify-center w-6 h-6 rounded-full bg-indigo-600 text-xs font-bold text-white">2</span>
-                  Timer & Challenge Settings (टाइमर व प्रश्न संख्या)
+              <div className="flex items-center justify-between mb-3 border-b border-slate-100 pb-3">
+                <label className="text-sm sm:text-base font-extrabold text-slate-900 flex items-center gap-2">
+                  <span className="flex items-center justify-center w-6 h-6 rounded-full bg-blue-600 text-xs font-bold text-white">2</span>
+                  Timer & Question Settings
                 </label>
-                <span className="text-xs text-emerald-400 font-semibold">Standard: 25 Qs in 15 Mins</span>
+                <span className="text-xs text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200">
+                  Default: 25 Questions / 15 Minutes
+                </span>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {/* Timer Challenge Selector */}
-                <div className="p-4 rounded-2xl bg-slate-950/60 border border-slate-800 space-y-3">
-                  <div className="text-xs font-semibold text-slate-300">Challenge Timer Mode:</div>
+                {/* Timer Type Selector */}
+                <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/90 space-y-3">
+                  <div className="text-xs font-bold text-slate-800">Timer Mode:</div>
 
-                  <div className="grid grid-cols-2 gap-2">
+                  <div className="grid grid-cols-2 gap-2.5">
                     <button
                       type="button"
                       onClick={() => setTimerType("sectional")}
-                      className={`p-3 rounded-xl border text-left transition-all ${
+                      className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
                         timerType === "sectional"
-                          ? "bg-indigo-600/20 border-indigo-500 text-white"
-                          : "bg-slate-900 border-slate-800 text-slate-400 hover:text-white"
+                          ? "bg-blue-50 border-blue-600 ring-2 ring-blue-500/20 text-blue-900"
+                          : "bg-white border-slate-200 text-slate-700 hover:border-slate-300"
                       }`}
                     >
-                      <div className="flex items-center gap-2 font-bold text-xs">
-                        <Clock className="w-3.5 h-3.5 text-indigo-400" />
+                      <div className="flex items-center gap-2 font-bold text-xs text-slate-900">
+                        <Clock className="w-3.5 h-3.5 text-blue-600" />
                         15 Mins Drill
                       </div>
-                      <div className="text-[11px] text-slate-400 mt-1">Sectional Exam Clock</div>
+                      <div className="text-[11px] text-slate-500 mt-1">Sectional Exam Clock</div>
                     </button>
 
                     <button
                       type="button"
                       onClick={() => setTimerType("blitz")}
-                      className={`p-3 rounded-xl border text-left transition-all ${
+                      className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
                         timerType === "blitz"
-                          ? "bg-amber-500/20 border-amber-500 text-white"
-                          : "bg-slate-900 border-slate-800 text-slate-400 hover:text-white"
+                          ? "bg-amber-50 border-amber-600 ring-2 ring-amber-500/20 text-amber-900"
+                          : "bg-white border-slate-200 text-slate-700 hover:border-slate-300"
                       }`}
                     >
-                      <div className="flex items-center gap-2 font-bold text-xs text-amber-300">
-                        <Zap className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
-                        20 Sec Blitz
+                      <div className="flex items-center gap-2 font-bold text-xs text-amber-800">
+                        <Zap className="w-3.5 h-3.5 text-amber-600 fill-amber-600" />
+                        20s Blitz
                       </div>
-                      <div className="text-[11px] text-slate-400 mt-1">20s per Question Countdown</div>
+                      <div className="text-[11px] text-slate-500 mt-1">20s / Question Countdown</div>
                     </button>
                   </div>
 
                   {timerType === "sectional" && (
                     <div className="flex items-center gap-2 pt-2">
-                      <span className="text-[11px] text-slate-400">Total Duration:</span>
+                      <span className="text-[11px] text-slate-500 font-medium">Duration:</span>
                       {[10, 15, 20].map((mins) => (
                         <button
                           key={mins}
                           type="button"
                           onClick={() => setDurationMinutes(mins)}
-                          className={`px-2.5 py-1 rounded-lg text-xs font-medium border ${
+                          className={`px-2.5 py-1 rounded-lg text-xs font-bold border transition-colors cursor-pointer ${
                             durationMinutes === mins
-                              ? "bg-indigo-600 text-white border-indigo-500"
-                              : "bg-slate-900 border-slate-800 text-slate-400 hover:text-white"
+                              ? "bg-blue-600 text-white border-blue-600 shadow-xs"
+                              : "bg-white border-slate-200 text-slate-600 hover:bg-slate-100"
                           }`}
                         >
                           {mins} mins {mins === 15 && "(Default)"}
@@ -773,19 +912,19 @@ export default function SpeedTestClient() {
                   )}
 
                   {timerType === "blitz" && (
-                    <div className="text-[11px] text-amber-300/90 bg-amber-500/10 border border-amber-500/20 p-2 rounded-lg">
-                      ⚡ <strong>Rapid Fire Blitz:</strong> You get exactly 20 seconds for each question with visual countdown and auto-advance. Perfect for reflex training!
+                    <div className="text-[11px] text-amber-800 bg-amber-100/60 border border-amber-200/80 p-2.5 rounded-lg leading-relaxed">
+                      ⚡ <strong>20-Second Rapid Fire:</strong> You get exactly 20 seconds for each question with visual countdown and auto-advance. Sharpens reflexes for the actual exam!
                     </div>
                   )}
                 </div>
 
                 {/* Question Count Selector */}
-                <div className="p-4 rounded-2xl bg-slate-950/60 border border-slate-800 space-y-3">
-                  <div className="text-xs font-semibold text-slate-300">Number of Questions:</div>
+                <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/90 space-y-3">
+                  <div className="text-xs font-bold text-slate-800">Number of Questions:</div>
 
                   <div className="grid grid-cols-3 gap-2">
                     {[
-                      { count: 10, label: "10 Qs", sub: "Quick Warmup" },
+                      { count: 10, label: "10 Qs", sub: "Warmup" },
                       { count: 25, label: "25 Qs", sub: "SSC Default" },
                       { count: 50, label: "50 Qs", sub: "Marathon" },
                     ].map((item) => (
@@ -793,194 +932,207 @@ export default function SpeedTestClient() {
                         key={item.count}
                         type="button"
                         onClick={() => setQuestionCount(item.count)}
-                        className={`p-3 rounded-xl border text-left transition-all ${
+                        className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
                           questionCount === item.count
-                            ? "bg-emerald-600/20 border-emerald-500 text-white"
-                            : "bg-slate-900 border-slate-800 text-slate-400 hover:text-white"
+                            ? "bg-emerald-50 border-emerald-600 ring-2 ring-emerald-500/20 text-emerald-900"
+                            : "bg-white border-slate-200 text-slate-700 hover:border-slate-300"
                         }`}
                       >
-                        <div className="font-bold text-xs text-white flex items-center justify-between">
+                        <div className="font-bold text-xs text-slate-900 flex items-center justify-between">
                           {item.label}
-                          {questionCount === item.count && <Check className="w-3 h-3 text-emerald-400" />}
+                          {questionCount === item.count && <Check className="w-3.5 h-3.5 text-emerald-600" />}
                         </div>
-                        <div className="text-[10px] text-slate-400 mt-0.5">{item.sub}</div>
+                        <div className="text-[10px] text-slate-500 mt-0.5">{item.sub}</div>
                       </button>
                     ))}
                   </div>
 
-                  {/* Sound & Language Toolbar */}
+                  {/* Sound Toggle */}
                   <div className="flex items-center justify-between pt-2">
-                    <div className="flex items-center gap-1.5">
-                      <span className="text-[11px] text-slate-400">Language:</span>
-                      {(["bilingual", "english", "hindi"] as const).map((lang) => (
-                        <button
-                          key={lang}
-                          type="button"
-                          onClick={() => setLanguageMode(lang)}
-                          className={`px-2 py-0.5 rounded text-[11px] capitalize border ${
-                            languageMode === lang
-                              ? "bg-indigo-600 text-white border-indigo-500"
-                              : "bg-slate-900 border-slate-800 text-slate-400"
-                          }`}
-                        >
-                          {lang === "bilingual" ? "Dual" : lang}
-                        </button>
-                      ))}
-                    </div>
-
+                    <span className="text-xs text-slate-500">Audio Chimes & Timer Beeps:</span>
                     <button
                       type="button"
                       onClick={() => setSoundEnabled(!soundEnabled)}
-                      className={`p-1.5 rounded-lg border flex items-center gap-1 text-[11px] ${
+                      className={`px-3 py-1.5 rounded-lg border flex items-center gap-1.5 text-xs font-bold transition-colors cursor-pointer ${
                         soundEnabled
-                          ? "bg-slate-800 border-slate-700 text-indigo-300"
-                          : "bg-slate-900 border-slate-800 text-slate-500"
+                          ? "bg-blue-50 border-blue-200 text-blue-700"
+                          : "bg-white border-slate-200 text-slate-500 hover:bg-slate-100"
                       }`}
-                      title={soundEnabled ? "Timer Sound ON" : "Timer Sound OFF"}
                     >
-                      {soundEnabled ? <Volume2 className="w-3.5 h-3.5" /> : <VolumeX className="w-3.5 h-3.5" />}
+                      {soundEnabled ? (
+                        <>
+                          <Volume2 className="w-3.5 h-3.5" />
+                          <span>Sound On</span>
+                        </>
+                      ) : (
+                        <>
+                          <VolumeX className="w-3.5 h-3.5" />
+                          <span>Muted</span>
+                        </>
+                      )}
                     </button>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Launch Action Button */}
-            <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-slate-800/80">
-              <div className="text-xs text-slate-400 flex items-center gap-2">
-                <Sparkles className="w-4 h-4 text-indigo-400" />
-                <span>Distinct random question set generated for your session</span>
+            {/* Launch Button */}
+            <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-slate-100">
+              <div className="text-xs text-slate-500 flex items-center gap-1.5">
+                <Sparkles className="w-4 h-4 text-amber-500" />
+                <span>Default language is English. Hindi translation available on-demand inside the test.</span>
               </div>
 
               <button
                 type="button"
                 onClick={handleStartTest}
                 disabled={loadingQuestions || loadingConfig}
-                className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-emerald-500 via-teal-500 to-indigo-600 hover:from-emerald-400 hover:to-indigo-500 text-white font-extrabold text-base shadow-xl shadow-emerald-500/20 flex items-center justify-center gap-3 transition-all transform active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-black text-sm shadow-md shadow-blue-600/20 flex items-center justify-center gap-2.5 transition-all transform active:scale-98 disabled:opacity-50 cursor-pointer"
               >
                 {loadingQuestions ? (
                   <>
-                    <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                    <span>Generating Speed Drill...</span>
+                    <div className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
+                    <span>Preparing Speed Drill...</span>
                   </>
                 ) : (
                   <>
-                    <Zap className="w-5 h-5 fill-white text-white" />
-                    <span>Start Speed Test (शुरू करें)</span>
-                    <ArrowRight className="w-5 h-5" />
+                    <Zap className="w-4 h-4 fill-white" />
+                    <span>Start Speed Drill</span>
+                    <ArrowRight className="w-4 h-4" />
                   </>
                 )}
               </button>
             </div>
           </div>
         </div>
+
+        {/* Bottom Ad Placement */}
+        <div className="max-w-5xl mx-auto px-4 mt-6">
+          <AdBanner slot="speed-test-bottom-banner" className="my-4" />
+        </div>
       </div>
     );
   }
 
   // ==========================================
-  // VIEW 2: ACTIVE SPEED TESTING HALL
+  // VIEW 2: ACTIVE SPEED TESTING HALL (CBT Light Theme)
   // ==========================================
-  if (phase === "testing" && currentQ) {
+  if (phase === "testing" && currentQ && activeQuestionContent) {
     const isAnswered = !!answers[currentQ.id];
     const isMarked = markedForReview.has(currentQ.id);
+    const isEnglishSection = currentQ.subjectKey === "english";
 
     return (
-      <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col select-none">
-        {/* Top Floating HUD Bar */}
-        <header className="sticky top-0 z-30 bg-slate-900/95 border-b border-slate-800 backdrop-blur-md px-4 py-3">
-          <div className="max-w-6xl mx-auto flex items-center justify-between gap-3">
-            {/* Left: Section Badge & Progress */}
-            <div className="flex items-center gap-3">
-              <div className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs font-semibold">
+      <div className="min-h-screen bg-slate-100 text-slate-900 font-sans antialiased flex flex-col select-none">
+        {/* Sticky Top HUD Bar */}
+        <header className="sticky top-0 z-30 bg-white border-b border-slate-200/90 shadow-2xs px-4 py-2.5">
+          <div className="max-w-5xl mx-auto flex items-center justify-between gap-3">
+            {/* Left: Section Badge & Question Index */}
+            <div className="flex items-center gap-2.5">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold">
                 <Brain className="w-3.5 h-3.5" />
                 {currentQ.subject}
-              </div>
+              </span>
 
-              <div className="text-xs sm:text-sm font-bold text-white">
-                Q. {currentIndex + 1} <span className="text-slate-500 font-normal">/ {questions.length}</span>
+              <div className="text-xs sm:text-sm font-extrabold text-slate-800">
+                Q. {currentIndex + 1} <span className="text-slate-400 font-normal">/ {questions.length}</span>
               </div>
-
-              {currentQ.topic && (
-                <span className="hidden md:inline-block text-xs text-slate-400 truncate max-w-[150px]">
-                  • {currentQ.topic}
-                </span>
-              )}
             </div>
 
-            {/* Center: Live Countdown Clocks */}
+            {/* Center: Live Timers */}
             <div className="flex items-center gap-3">
-              {/* Blitz Timer Mode (20 sec) */}
+              {/* 20s Rapid Blitz Mode */}
               {timerType === "blitz" && (
                 <div
-                  className={`flex items-center gap-2 px-3 py-1 rounded-xl border font-mono font-bold text-sm transition-all ${
+                  className={`flex items-center gap-1.5 px-3 py-1 rounded-xl border font-mono font-black text-sm transition-all ${
                     blitzTimeLeft <= 5
-                      ? "bg-rose-500/20 border-rose-500 text-rose-400 animate-pulse scale-105"
-                      : "bg-amber-500/10 border-amber-500/30 text-amber-400"
+                      ? "bg-rose-50 border-rose-400 text-rose-700 animate-pulse scale-105"
+                      : "bg-amber-50 border-amber-300 text-amber-800"
                   }`}
                 >
-                  <Zap className="w-3.5 h-3.5 fill-amber-400" />
+                  <Zap className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
                   <span>{blitzTimeLeft}s</span>
-                  <span className="text-[10px] text-slate-400 font-sans hidden sm:inline">Blitz</span>
+                  <span className="text-[10px] text-slate-500 font-sans hidden sm:inline">Blitz</span>
                 </div>
               )}
 
               {/* Total Countdown Timer */}
               <div
-                className={`flex items-center gap-2 px-3 py-1 rounded-xl border font-mono font-bold text-sm ${
+                className={`flex items-center gap-1.5 px-3 py-1 rounded-xl border font-mono font-black text-sm ${
                   totalTimeLeft < 180
-                    ? "bg-rose-500/20 border-rose-500 text-rose-400 animate-pulse"
+                    ? "bg-rose-50 border-rose-300 text-rose-700 animate-pulse"
                     : totalTimeLeft < 300
-                    ? "bg-amber-500/20 border-amber-500 text-amber-300"
-                    : "bg-slate-800 border-slate-700 text-emerald-400"
+                    ? "bg-amber-50 border-amber-300 text-amber-800"
+                    : "bg-slate-50 border-slate-200 text-slate-800"
                 }`}
               >
-                <Clock className="w-3.5 h-3.5" />
+                <Clock className="w-3.5 h-3.5 text-blue-600" />
                 <span>{formatTime(totalTimeLeft)}</span>
               </div>
             </div>
 
-            {/* Right: Palette Toggle & End Button */}
+            {/* Right: Hindi Translator Toggle + Palette + Submit */}
             <div className="flex items-center gap-2">
-              {/* Language Switcher */}
+              {/* Dedicated Hindi Translator Toggle */}
               <button
                 type="button"
-                onClick={() => {
-                  setLanguageMode((prev) => (prev === "bilingual" ? "english" : prev === "english" ? "hindi" : "bilingual"));
-                }}
-                className="px-2.5 py-1 rounded-lg border border-slate-700 bg-slate-800 text-xs font-semibold text-slate-200 hover:text-white capitalize"
-                title="Switch Language (Dual/English/Hindi)"
+                onClick={handleToggleHindi}
+                disabled={isEnglishSection || isTranslating}
+                title={
+                  isEnglishSection
+                    ? "English Comprehension section is in English only"
+                    : isHindiActive
+                    ? "Switch back to English"
+                    : "Translate question to Hindi"
+                }
+                className={`px-2.5 py-1 rounded-lg border text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer ${
+                  isEnglishSection
+                    ? "bg-slate-100 border-slate-200 text-slate-400 opacity-60 cursor-not-allowed"
+                    : isHindiActive
+                    ? "bg-emerald-50 border-emerald-500 text-emerald-800 shadow-xs"
+                    : "bg-white border-slate-200 text-slate-700 hover:border-slate-300 hover:bg-slate-50"
+                }`}
               >
-                {languageMode === "bilingual" ? "Dual (En/Hi)" : languageMode}
+                {isTranslating ? (
+                  <>
+                    <div className="w-3 h-3 border-2 border-emerald-600/30 border-t-emerald-600 rounded-full animate-spin" />
+                    <span>Translating...</span>
+                  </>
+                ) : (
+                  <>
+                    <Languages className={`w-3.5 h-3.5 ${isHindiActive ? "text-emerald-600" : "text-slate-500"}`} />
+                    <span>{isHindiActive ? "हिंदी (ON)" : "Translate"}</span>
+                  </>
+                )}
               </button>
 
-              {/* Question Palette Toggle */}
+              {/* Question Grid Palette Button */}
               <button
                 type="button"
                 onClick={() => setShowPalette(!showPalette)}
-                className="px-3 py-1 rounded-lg border border-slate-700 bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-white flex items-center gap-1.5"
+                className="px-2.5 py-1 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-xs font-bold text-slate-700 flex items-center gap-1 cursor-pointer"
               >
-                <Layers className="w-3.5 h-3.5 text-indigo-400" />
-                <span className="hidden sm:inline">Grid ({answers ? Object.keys(answers).length : 0}/{questions.length})</span>
+                <Layers className="w-3.5 h-3.5 text-blue-600" />
+                <span className="hidden sm:inline">Grid ({Object.keys(answers).length}/{questions.length})</span>
               </button>
 
-              {/* Submit Speed Test */}
+              {/* Submit Button */}
               <button
                 type="button"
                 onClick={() => setShowSubmitModal(true)}
-                className="px-3.5 py-1 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-xs font-bold text-white shadow-md transition-all cursor-pointer"
+                className="px-3 py-1 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-xs font-bold text-white shadow-xs transition-all cursor-pointer"
               >
                 Submit
               </button>
             </div>
           </div>
 
-          {/* Rapid Blitz 20s Progress Bar */}
+          {/* Rapid Blitz 20s Bar */}
           {timerType === "blitz" && (
-            <div className="w-full bg-slate-800 h-1 mt-2.5 rounded-full overflow-hidden">
+            <div className="w-full bg-slate-200 h-1 mt-2 rounded-full overflow-hidden">
               <div
                 className={`h-full transition-all duration-1000 ease-linear ${
-                  blitzTimeLeft <= 5 ? "bg-rose-500" : "bg-gradient-to-r from-amber-400 to-emerald-400"
+                  blitzTimeLeft <= 5 ? "bg-rose-500" : "bg-gradient-to-r from-amber-400 to-emerald-500"
                 }`}
                 style={{ width: `${(blitzTimeLeft / 20) * 100}%` }}
               />
@@ -988,71 +1140,71 @@ export default function SpeedTestClient() {
           )}
         </header>
 
-        {/* Main Content Area */}
-        <main className="flex-1 max-w-4xl w-full mx-auto p-4 sm:p-6 flex flex-col justify-between">
-          <div className="space-y-6">
+        {/* Main Exam Hall Area */}
+        <main className="flex-1 max-w-4xl w-full mx-auto p-3 sm:p-5 flex flex-col justify-between">
+          <div className="space-y-4">
+            {/* Informative notice for English Section */}
+            {isEnglishSection && (
+              <div className="px-3.5 py-1.5 rounded-xl bg-blue-50 border border-blue-200 text-[11px] text-blue-800 flex items-center gap-1.5 font-medium">
+                <Info className="w-3.5 h-3.5 text-blue-600 shrink-0" />
+                <span>English Comprehension questions are provided in English only as per official SSC exam format.</span>
+              </div>
+            )}
+
             {/* Question Card */}
-            <div className="bg-slate-900/90 border border-slate-800 rounded-3xl p-5 sm:p-8 shadow-xl space-y-6">
-              {/* Header Badges */}
-              <div className="flex items-center justify-between border-b border-slate-800 pb-3">
+            <div className="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7 shadow-xs space-y-5">
+              {/* Question Header */}
+              <div className="flex items-center justify-between border-b border-slate-100 pb-3">
                 <div className="flex items-center gap-2">
-                  <span className="px-2.5 py-0.5 rounded-md bg-indigo-600/30 text-indigo-300 border border-indigo-500/30 text-xs font-bold">
+                  <span className="px-2.5 py-0.5 rounded-md bg-blue-50 text-blue-700 border border-blue-200 text-xs font-bold">
                     Question {currentIndex + 1}
                   </span>
-                  <span className="text-xs text-slate-400">
-                    {currentQ.source === "pyq" ? "Official SSC PYQ Shift" : "SSC Topic Question Bank"}
+                  <span className="text-xs text-slate-500">
+                    {currentQ.source === "pyq" ? "Official SSC Shift Question" : "Question Bank"}
                   </span>
+                  {activeQuestionContent.isHindi && (
+                    <span className="text-[10px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded">
+                      हिंदी अनुवाद
+                    </span>
+                  )}
                 </div>
 
                 <div className="flex items-center gap-2">
                   {isMarked && (
-                    <span className="inline-flex items-center gap-1 text-[11px] font-bold text-purple-400 bg-purple-500/10 px-2 py-0.5 rounded-md border border-purple-500/30">
-                      <Flag className="w-3 h-3 fill-purple-400" />
+                    <span className="inline-flex items-center gap-1 text-[11px] font-bold text-purple-700 bg-purple-50 px-2 py-0.5 rounded border border-purple-200">
+                      <Flag className="w-3 h-3 fill-purple-600 text-purple-600" />
                       Marked
                     </span>
                   )}
                   {isAnswered && (
-                    <span className="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-md border border-emerald-500/30">
+                    <span className="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
                       <Check className="w-3 h-3" />
-                      Saved
+                      Answered
                     </span>
                   )}
                 </div>
               </div>
 
               {/* Question Text */}
-              <div className="space-y-4 text-base sm:text-lg text-slate-100 font-medium leading-relaxed">
-                {/* English Content */}
-                {(languageMode === "bilingual" || languageMode === "english") && (
-                  <div className="text-slate-100">
-                    <MathText text={currentQ.question_text} />
-                  </div>
-                )}
-
-                {/* Hindi Content */}
-                {(languageMode === "bilingual" || languageMode === "hindi") && currentQ.question_text_hi && (
-                  <div className="text-indigo-200/90 font-hindi border-t border-slate-800/80 pt-3 text-sm sm:text-base">
-                    <MathText text={currentQ.question_text_hi} />
-                  </div>
-                )}
+              <div className="text-base sm:text-lg text-slate-900 font-medium leading-relaxed">
+                <MathText text={activeQuestionContent.questionText} />
 
                 {/* Question Image if present */}
                 {currentQ.image_url && (
-                  <div className="pt-2">
+                  <div className="pt-3">
                     <img
                       src={currentQ.image_url}
                       alt="Question Diagram"
-                      className="max-h-64 rounded-xl border border-slate-800 bg-white/5 object-contain"
+                      className="max-h-64 rounded-xl border border-slate-200 bg-white object-contain"
                     />
                   </div>
                 )}
               </div>
 
-              {/* Options Grid (4 High-Contrast Options) */}
-              <div className="grid grid-cols-1 gap-3 pt-2">
+              {/* 4 Interactive Option Cards */}
+              <div className="grid grid-cols-1 gap-2.5 pt-1">
                 {(["A", "B", "C", "D"] as const).map((opt) => {
-                  const optTextEn = currentQ[`option_${opt.toLowerCase() as "a" | "b" | "c" | "d"}`];
-                  const optTextHi = currentQ[`option_${opt.toLowerCase() as "a" | "b" | "c" | "d"}_hi`];
+                  const optText = activeQuestionContent[`option${opt}` as "optionA" | "optionB" | "optionC" | "optionD"];
                   const optImg = currentQ[`option_${opt.toLowerCase() as "a" | "b" | "c" | "d"}_image_url`];
                   const isSelected = answers[currentQ.id] === opt;
 
@@ -1061,46 +1213,37 @@ export default function SpeedTestClient() {
                       key={opt}
                       type="button"
                       onClick={() => handleSelectOption(opt)}
-                      className={`group p-4 rounded-2xl border text-left flex items-start gap-3.5 transition-all duration-150 cursor-pointer ${
+                      className={`group p-3.5 sm:p-4 rounded-xl border text-left flex items-start gap-3 transition-all cursor-pointer ${
                         isSelected
-                          ? "bg-emerald-500/15 border-emerald-500 ring-2 ring-emerald-500/30 text-white shadow-lg shadow-emerald-500/10"
-                          : "bg-slate-950/60 border-slate-800 hover:border-slate-700 hover:bg-slate-800/50 text-slate-200"
+                          ? "bg-blue-50/80 border-blue-600 ring-2 ring-blue-500/20 text-blue-900 shadow-2xs font-semibold"
+                          : "bg-white border-slate-200 hover:border-slate-300 hover:bg-slate-50/80 text-slate-800"
                       }`}
                     >
                       {/* Option Pill */}
                       <span
-                        className={`w-7 h-7 rounded-xl flex items-center justify-center text-xs font-black shrink-0 transition-all ${
+                        className={`w-6 h-6 rounded-lg flex items-center justify-center text-xs font-black shrink-0 transition-all ${
                           isSelected
-                            ? "bg-emerald-500 text-slate-950 shadow-md shadow-emerald-500/30"
-                            : "bg-slate-800 text-slate-300 border border-slate-700 group-hover:border-slate-600"
+                            ? "bg-blue-600 text-white shadow-2xs"
+                            : "bg-slate-100 text-slate-600 border border-slate-200 group-hover:border-slate-300"
                         }`}
                       >
                         {opt}
                       </span>
 
                       {/* Option Content */}
-                      <div className="flex-1 space-y-1 text-sm sm:text-base">
-                        {(languageMode === "bilingual" || languageMode === "english") && (
-                          <div>
-                            <MathText text={optTextEn} />
-                          </div>
-                        )}
-                        {(languageMode === "bilingual" || languageMode === "hindi") && optTextHi && (
-                          <div className="text-xs sm:text-sm text-indigo-300/90 font-hindi">
-                            <MathText text={optTextHi} />
-                          </div>
-                        )}
+                      <div className="flex-1 text-sm sm:text-base leading-snug">
+                        <MathText text={optText} />
                         {optImg && (
                           <img
                             src={optImg}
                             alt={`Option ${opt}`}
-                            className="max-h-24 rounded-lg border border-slate-700 bg-white/5 object-contain mt-1"
+                            className="max-h-24 rounded-lg border border-slate-200 bg-white object-contain mt-1.5"
                           />
                         )}
                       </div>
 
-                      {/* Keyboard Shortcut Hint */}
-                      <span className="hidden sm:inline-block text-[11px] font-mono text-slate-600 group-hover:text-slate-400">
+                      {/* Keyboard shortcut hint */}
+                      <span className="hidden sm:inline-block text-[11px] font-mono text-slate-400 group-hover:text-slate-600">
                         [{opt}]
                       </span>
                     </button>
@@ -1108,16 +1251,19 @@ export default function SpeedTestClient() {
                 })}
               </div>
             </div>
+
+            {/* Ad slot inside exam view */}
+            <AdBanner slot="speed-test-testing-bottom" className="my-2" />
           </div>
 
           {/* Bottom Action Bar */}
-          <div className="mt-6 flex flex-wrap items-center justify-between gap-3 bg-slate-900/90 border border-slate-800 rounded-2xl p-3 backdrop-blur-md">
+          <div className="mt-4 flex flex-wrap items-center justify-between gap-3 bg-white border border-slate-200 rounded-xl p-3 shadow-2xs">
             <div className="flex items-center gap-2">
               <button
                 type="button"
                 onClick={handlePrev}
                 disabled={currentIndex === 0}
-                className="px-3.5 py-2 rounded-xl border border-slate-700 bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-white flex items-center gap-1.5 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
+                className="px-3.5 py-2 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-xs font-bold text-slate-700 flex items-center gap-1.5 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
               >
                 <ArrowLeft className="w-3.5 h-3.5" />
                 <span>Previous</span>
@@ -1127,7 +1273,7 @@ export default function SpeedTestClient() {
                 type="button"
                 onClick={handleClearResponse}
                 disabled={!isAnswered}
-                className="px-3 py-2 rounded-xl border border-slate-800 bg-slate-950 hover:bg-slate-800 text-xs text-slate-400 hover:text-slate-200 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
+                className="px-3 py-2 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-xs font-medium text-slate-600 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
               >
                 Clear
               </button>
@@ -1135,10 +1281,10 @@ export default function SpeedTestClient() {
               <button
                 type="button"
                 onClick={handleToggleReview}
-                className={`px-3 py-2 rounded-xl border text-xs font-semibold flex items-center gap-1.5 cursor-pointer ${
+                className={`px-3 py-2 rounded-xl border text-xs font-bold flex items-center gap-1.5 cursor-pointer ${
                   isMarked
-                    ? "bg-purple-600/20 border-purple-500 text-purple-300"
-                    : "border-slate-800 bg-slate-950 text-slate-400 hover:text-slate-200"
+                    ? "bg-purple-50 border-purple-300 text-purple-700"
+                    : "border-slate-200 bg-white text-slate-600 hover:bg-slate-50"
                 }`}
               >
                 <Flag className="w-3.5 h-3.5" />
@@ -1150,7 +1296,7 @@ export default function SpeedTestClient() {
               <button
                 type="button"
                 onClick={handleNext}
-                className="px-5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-xs font-bold text-white flex items-center gap-1.5 shadow-md shadow-indigo-600/20 cursor-pointer"
+                className="px-5 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-xs font-black text-white flex items-center gap-1.5 shadow-xs cursor-pointer"
               >
                 <span>{currentIndex === questions.length - 1 ? "Review & Submit" : "Save & Next"}</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -1159,65 +1305,65 @@ export default function SpeedTestClient() {
           </div>
         </main>
 
-        {/* Slide-out Question Grid / Palette Drawer */}
+        {/* Slide-out Question Palette Drawer */}
         {showPalette && (
-          <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex justify-end">
-            <div className="w-full max-w-sm bg-slate-900 border-l border-slate-800 h-full p-6 flex flex-col justify-between animate-in slide-in-from-right duration-200">
+          <div className="fixed inset-0 z-50 bg-black/40 backdrop-blur-2xs flex justify-end">
+            <div className="w-full max-w-sm bg-white border-l border-slate-200 h-full p-5 flex flex-col justify-between shadow-2xl">
               <div className="space-y-4">
-                <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-                  <div className="font-bold text-white text-sm flex items-center gap-2">
-                    <Layers className="w-4 h-4 text-indigo-400" />
+                <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+                  <div className="font-extrabold text-slate-900 text-sm flex items-center gap-2">
+                    <Layers className="w-4 h-4 text-blue-600" />
                     Question Navigator
                   </div>
                   <button
                     type="button"
                     onClick={() => setShowPalette(false)}
-                    className="p-1.5 rounded-lg text-slate-400 hover:text-white"
+                    className="p-1 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-100"
                   >
                     ✕
                   </button>
                 </div>
 
                 {/* Legend */}
-                <div className="grid grid-cols-2 gap-2 text-[11px] text-slate-400 border-b border-slate-800 pb-3">
+                <div className="grid grid-cols-2 gap-2 text-[11px] text-slate-600 border-b border-slate-100 pb-3">
                   <div className="flex items-center gap-1.5">
-                    <span className="w-3 h-3 rounded-full bg-emerald-500" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
                     <span>Answered ({Object.keys(answers).length})</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <span className="w-3 h-3 rounded-full bg-purple-500" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-purple-500" />
                     <span>Marked ({markedForReview.size})</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <span className="w-3 h-3 rounded-full bg-slate-700" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-slate-300" />
                     <span>Not Answered ({questions.length - Object.keys(answers).length})</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <span className="w-3 h-3 rounded-full border border-indigo-400" />
+                    <span className="w-2.5 h-2.5 rounded-full border-2 border-blue-600" />
                     <span>Current</span>
                   </div>
                 </div>
 
-                {/* 25 Question Number Grid */}
+                {/* 25 Question Grid */}
                 <div className="grid grid-cols-5 gap-2 max-h-[60vh] overflow-y-auto p-1">
                   {questions.map((q, idx) => {
                     const ans = !!answers[q.id];
                     const mrk = markedForReview.has(q.id);
                     const isCur = idx === currentIndex;
 
-                    let bg = "bg-slate-800 text-slate-300 border-slate-700";
-                    if (ans && mrk) bg = "bg-amber-500 text-slate-950 font-bold border-amber-400";
-                    else if (ans) bg = "bg-emerald-600 text-white font-bold border-emerald-500";
-                    else if (mrk) bg = "bg-purple-600 text-white font-bold border-purple-500";
-                    else if (visited.has(q.id)) bg = "bg-rose-950/40 text-rose-300 border-rose-800/60";
+                    let bg = "bg-slate-50 text-slate-700 border-slate-200";
+                    if (ans && mrk) bg = "bg-amber-100 text-amber-900 font-bold border-amber-300";
+                    else if (ans) bg = "bg-emerald-600 text-white font-bold border-emerald-600";
+                    else if (mrk) bg = "bg-purple-600 text-white font-bold border-purple-600";
+                    else if (visited.has(q.id)) bg = "bg-rose-50 text-rose-700 border-rose-200";
 
                     return (
                       <button
                         key={q.id}
                         type="button"
                         onClick={() => goToQuestion(idx)}
-                        className={`h-10 rounded-xl border text-xs flex items-center justify-center transition-all ${bg} ${
-                          isCur ? "ring-2 ring-indigo-400 scale-105" : "hover:opacity-90"
+                        className={`h-9 rounded-lg border text-xs flex items-center justify-center transition-all ${bg} ${
+                          isCur ? "ring-2 ring-blue-600 scale-105" : "hover:opacity-90"
                         }`}
                       >
                         {idx + 1}
@@ -1227,14 +1373,14 @@ export default function SpeedTestClient() {
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-slate-800 space-y-2">
+              <div className="pt-4 border-t border-slate-100">
                 <button
                   type="button"
                   onClick={() => {
                     setShowPalette(false);
                     setShowSubmitModal(true);
                   }}
-                  className="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-md transition-all cursor-pointer"
+                  className="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-xs transition-all cursor-pointer"
                 >
                   Submit Speed Test
                 </button>
@@ -1245,50 +1391,50 @@ export default function SpeedTestClient() {
 
         {/* Confirmation Modal */}
         {showSubmitModal && (
-          <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-xs flex items-center justify-center p-4">
-            <div className="max-w-md w-full bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-150">
+          <div className="fixed inset-0 z-50 bg-black/40 backdrop-blur-2xs flex items-center justify-center p-4">
+            <div className="max-w-md w-full bg-white border border-slate-200 rounded-2xl p-6 shadow-xl space-y-5 animate-in zoom-in-95 duration-150">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400">
+                <div className="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-amber-700">
                   <AlertCircle className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-white text-base">Submit Speed Drill?</h3>
-                  <p className="text-xs text-slate-400">Are you sure you want to finalize this attempt?</p>
+                  <h3 className="font-extrabold text-slate-900 text-base">Submit Speed Drill?</h3>
+                  <p className="text-xs text-slate-500">Are you ready to submit your test and view your scorecard?</p>
                 </div>
               </div>
 
               {/* Summary Metrics */}
-              <div className="grid grid-cols-3 gap-2 bg-slate-950/80 p-3.5 rounded-2xl border border-slate-800 text-center">
+              <div className="grid grid-cols-3 gap-2 bg-slate-50 p-3.5 rounded-xl border border-slate-200 text-center">
                 <div>
-                  <div className="text-[10px] text-slate-400 uppercase">Answered</div>
-                  <div className="text-lg font-black text-emerald-400">{Object.keys(answers).length}</div>
+                  <div className="text-[10px] text-slate-500 uppercase font-semibold">Answered</div>
+                  <div className="text-lg font-black text-emerald-700">{Object.keys(answers).length}</div>
                 </div>
                 <div>
-                  <div className="text-[10px] text-slate-400 uppercase">Marked</div>
-                  <div className="text-lg font-black text-purple-400">{markedForReview.size}</div>
+                  <div className="text-[10px] text-slate-500 uppercase font-semibold">Marked</div>
+                  <div className="text-lg font-black text-purple-700">{markedForReview.size}</div>
                 </div>
                 <div>
-                  <div className="text-[10px] text-slate-400 uppercase">Remaining</div>
-                  <div className="text-lg font-black text-rose-400">
+                  <div className="text-[10px] text-slate-500 uppercase font-semibold">Skipped</div>
+                  <div className="text-lg font-black text-rose-700">
                     {questions.length - Object.keys(answers).length}
                   </div>
                 </div>
               </div>
 
-              <div className="flex items-center justify-end gap-3 pt-2">
+              <div className="flex items-center justify-end gap-2.5 pt-2">
                 <button
                   type="button"
                   onClick={() => setShowSubmitModal(false)}
-                  className="px-4 py-2.5 rounded-xl border border-slate-700 bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-300"
+                  className="px-4 py-2 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-xs font-bold text-slate-600"
                 >
                   Continue Drill
                 </button>
                 <button
                   type="button"
                   onClick={handleSubmitTest}
-                  className="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-xs font-bold text-white shadow-lg shadow-emerald-600/30 cursor-pointer"
+                  className="px-5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-xs font-black text-white shadow-xs cursor-pointer"
                 >
-                  Submit & See Score
+                  Submit & View Results
                 </button>
               </div>
             </div>
@@ -1299,87 +1445,100 @@ export default function SpeedTestClient() {
   }
 
   // ==========================================
-  // VIEW 3: COMPREHENSIVE SCORECARD & RESULTS
+  // VIEW 3: SCORECARD & RESULTS (Website Light Theme)
   // ==========================================
   if (phase === "results" && resultsData) {
     return (
-      <div className="min-h-screen bg-slate-950 text-slate-100 py-8 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto space-y-8">
-          {/* Hero Scorecard Banner */}
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-950 via-slate-900 to-slate-950 p-6 sm:p-10 border border-indigo-500/20 shadow-2xl">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+      <div className="min-h-screen bg-slate-50 text-slate-900 font-sans antialiased pb-16">
+        {/* Header */}
+        <section className="bg-white border-b border-slate-200 py-8 px-4">
+          <div className="mx-auto max-w-5xl space-y-3">
+            <div className="flex items-center gap-2 text-xs text-slate-500 font-medium">
+              <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+              <span>/</span>
+              <span className="text-slate-800 font-semibold">Speed Test Scorecard</span>
+            </div>
+
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold uppercase mb-3">
-                  <Trophy className="w-3.5 h-3.5 text-amber-400" />
-                  Speed Drill Completed
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold uppercase mb-2">
+                  <Trophy className="w-3.5 h-3.5 text-amber-500" />
+                  Drill Completed
                 </div>
-                <h1 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-                  Performance <span className="text-indigo-400">Scorecard</span>
+                <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                  Speed Test <span className="text-blue-600">Scorecard</span>
                 </h1>
-                <p className="mt-1 text-sm text-slate-300">
-                  SSC Standard Marking (+2 for Correct, -0.5 for Wrong) • Instant Speed Analysis
+                <p className="mt-1 text-sm text-slate-600">
+                  Standard SSC Marking (+2 for Correct, -0.5 for Wrong) • Real-time Speed & Accuracy Analytics
                 </p>
               </div>
 
-              {/* Speed Tier Pill */}
-              <div className={`p-4 rounded-2xl border font-semibold text-xs sm:text-sm shadow-xl ${resultsData.speedColor}`}>
+              {/* Speed Tier Badge */}
+              <div className={`p-4 rounded-2xl border font-bold text-xs sm:text-sm shadow-xs ${resultsData.speedColor}`}>
                 <div className="text-[10px] uppercase font-bold tracking-wider opacity-80">Speed Analysis</div>
                 <div className="text-base sm:text-lg font-black mt-0.5">{resultsData.speedTier}</div>
-                <div className="text-xs mt-1 opacity-90">
-                  Avg <strong>{resultsData.avgSecPerQ}s</strong> / question
+                <div className="text-xs mt-1 font-semibold opacity-90">
+                  Average <strong>{resultsData.avgSecPerQ}s</strong> / question
                 </div>
               </div>
             </div>
+          </div>
+        </section>
 
-            {/* Main 4 Metric Cards */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3.5 mt-8">
-              <div className="bg-slate-900/90 border border-slate-800 rounded-2xl p-4 text-center shadow-lg">
-                <div className="text-xs text-slate-400 uppercase font-medium">Final Score</div>
-                <div className="text-3xl font-black text-white mt-1">
-                  {resultsData.score}
-                  <span className="text-xs text-slate-500 font-normal"> / {resultsData.maxScore}</span>
-                </div>
-                <div className="text-[11px] text-indigo-400 mt-1 font-semibold">
-                  {Math.round((resultsData.score / resultsData.maxScore) * 100)}% Marks
-                </div>
-              </div>
+        {/* Ad slot at top of results */}
+        <div className="max-w-5xl mx-auto px-4">
+          <AdBanner slot="speed-test-results-top" className="my-4" />
+        </div>
 
-              <div className="bg-slate-900/90 border border-slate-800 rounded-2xl p-4 text-center shadow-lg">
-                <div className="text-xs text-slate-400 uppercase font-medium">Accuracy</div>
-                <div className="text-3xl font-black text-emerald-400 mt-1">{resultsData.accuracy}%</div>
-                <div className="text-[11px] text-slate-400 mt-1 font-medium">
-                  {resultsData.correct} correct of {resultsData.attempted}
-                </div>
+        {/* Metric Cards Grid */}
+        <div className="max-w-5xl mx-auto px-4 space-y-6">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3.5">
+            <div className="bg-white border border-slate-200 rounded-2xl p-4 text-center shadow-xs">
+              <div className="text-xs text-slate-500 uppercase font-bold">Final Score</div>
+              <div className="text-3xl font-black text-slate-900 mt-1">
+                {resultsData.score}
+                <span className="text-xs text-slate-400 font-normal"> / {resultsData.maxScore}</span>
               </div>
+              <div className="text-[11px] text-blue-600 mt-1 font-bold">
+                {Math.round((resultsData.score / resultsData.maxScore) * 100)}% Marks
+              </div>
+            </div>
 
-              <div className="bg-slate-900/90 border border-slate-800 rounded-2xl p-4 text-center shadow-lg">
-                <div className="text-xs text-slate-400 uppercase font-medium">Time Taken</div>
-                <div className="text-3xl font-black text-cyan-400 mt-1 font-mono">
-                  {formatTime(totalTimeSpent)}
-                </div>
-                <div className="text-[11px] text-slate-400 mt-1 font-medium">
-                  of {formatTime(timerType === "sectional" ? durationMinutes * 60 : questions.length * 20)}
-                </div>
+            <div className="bg-white border border-slate-200 rounded-2xl p-4 text-center shadow-xs">
+              <div className="text-xs text-slate-500 uppercase font-bold">Accuracy</div>
+              <div className="text-3xl font-black text-emerald-600 mt-1">{resultsData.accuracy}%</div>
+              <div className="text-[11px] text-slate-500 mt-1 font-medium">
+                {resultsData.correct} correct of {resultsData.attempted}
               </div>
+            </div>
 
-              <div className="bg-slate-900/90 border border-slate-800 rounded-2xl p-4 text-center shadow-lg">
-                <div className="text-xs text-slate-400 uppercase font-medium">Attempt Breakdown</div>
-                <div className="flex items-center justify-center gap-2 mt-2 text-sm font-bold">
-                  <span className="text-emerald-400">{resultsData.correct} ✔</span>
-                  <span className="text-rose-400">{resultsData.incorrect} ✖</span>
-                  <span className="text-slate-500">{resultsData.skipped} ⚪</span>
-                </div>
-                <div className="text-[10px] text-slate-500 mt-1.5 font-medium">Correct • Wrong • Skipped</div>
+            <div className="bg-white border border-slate-200 rounded-2xl p-4 text-center shadow-xs">
+              <div className="text-xs text-slate-500 uppercase font-bold">Time Taken</div>
+              <div className="text-3xl font-black text-blue-600 mt-1 font-mono">
+                {formatTime(totalTimeSpent)}
               </div>
+              <div className="text-[11px] text-slate-500 mt-1 font-medium">
+                of {formatTime(timerType === "sectional" ? durationMinutes * 60 : questions.length * 20)}
+              </div>
+            </div>
+
+            <div className="bg-white border border-slate-200 rounded-2xl p-4 text-center shadow-xs">
+              <div className="text-xs text-slate-500 uppercase font-bold">Attempt Breakdown</div>
+              <div className="flex items-center justify-center gap-2 mt-2 text-sm font-bold">
+                <span className="text-emerald-600">{resultsData.correct} ✔</span>
+                <span className="text-rose-600">{resultsData.incorrect} ✖</span>
+                <span className="text-slate-400">{resultsData.skipped} ⚪</span>
+              </div>
+              <div className="text-[10px] text-slate-500 mt-1.5 font-medium">Correct • Wrong • Skipped</div>
             </div>
           </div>
 
           {/* Sectional Breakdown (if multi-subject) */}
           {Object.keys(resultsData.sectionStats).length > 1 && (
-            <div className="bg-slate-900/80 border border-slate-800 rounded-3xl p-6 shadow-xl">
-              <h3 className="font-bold text-white text-base mb-4 flex items-center gap-2">
-                <Sliders className="w-4 h-4 text-indigo-400" />
-                Section-wise Breakdown
+            <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-xs">
+              <h3 className="font-extrabold text-slate-900 text-sm sm:text-base mb-3 flex items-center gap-2">
+                <Sliders className="w-4 h-4 text-blue-600" />
+                Section-wise Performance Breakdown
               </h3>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -1388,16 +1547,16 @@ export default function SpeedTestClient() {
                     ? Math.round((sec.correct / (sec.correct + sec.incorrect)) * 100)
                     : 0;
                   return (
-                    <div key={secName} className="p-4 rounded-2xl bg-slate-950/70 border border-slate-800 space-y-2">
-                      <div className="flex items-center justify-between text-xs font-bold text-white">
+                    <div key={secName} className="p-3.5 rounded-xl bg-slate-50 border border-slate-200/90 space-y-1.5">
+                      <div className="flex items-center justify-between text-xs font-bold text-slate-800">
                         <span>{secName}</span>
-                        <span className="text-emerald-400">{secAccuracy}% Acc</span>
+                        <span className="text-emerald-700">{secAccuracy}% Acc</span>
                       </div>
-                      <div className="flex items-center justify-between text-xs text-slate-400">
+                      <div className="flex items-center justify-between text-[11px] text-slate-500">
                         <span>Questions: {sec.total}</span>
                         <span>Correct: {sec.correct} | Wrong: {sec.incorrect}</span>
                       </div>
-                      <div className="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                      <div className="w-full bg-slate-200 h-1.5 rounded-full overflow-hidden">
                         <div
                           className="h-full bg-emerald-500 rounded-full"
                           style={{ width: `${(sec.correct / sec.total) * 100}%` }}
@@ -1411,61 +1570,61 @@ export default function SpeedTestClient() {
           )}
 
           {/* Action Navigation Bar */}
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-5 rounded-3xl bg-slate-900/90 border border-slate-800 shadow-xl">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 p-4 rounded-2xl bg-white border border-slate-200 shadow-xs">
             <button
               type="button"
               onClick={handleStartTest}
-              className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-500 to-indigo-600 hover:from-emerald-400 hover:to-indigo-500 text-white font-extrabold text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20 cursor-pointer"
+              className="w-full sm:w-auto px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-xs cursor-pointer"
             >
               <RotateCcw className="w-4 h-4" />
-              <span>Take Another Speed Test (नया टेस्ट)</span>
+              <span>Take Another Speed Test</span>
             </button>
 
-            <div className="flex items-center gap-3 w-full sm:w-auto">
+            <div className="flex items-center gap-2.5 w-full sm:w-auto">
               <button
                 type="button"
                 onClick={() => setShowSolutions(!showSolutions)}
-                className={`flex-1 sm:flex-none px-5 py-3 rounded-2xl border text-xs font-bold flex items-center justify-center gap-2 transition-all cursor-pointer ${
+                className={`flex-1 sm:flex-none px-4 py-2.5 rounded-xl border text-xs font-bold flex items-center justify-center gap-1.5 transition-all cursor-pointer ${
                   showSolutions
-                    ? "bg-indigo-600 border-indigo-500 text-white shadow-md shadow-indigo-600/20"
-                    : "bg-slate-800 border-slate-700 text-slate-300 hover:text-white"
+                    ? "bg-blue-50 border-blue-600 text-blue-700 font-black shadow-2xs"
+                    : "bg-white border-slate-200 text-slate-700 hover:bg-slate-50"
                 }`}
               >
-                <BookOpen className="w-4 h-4" />
+                <BookOpen className="w-3.5 h-3.5" />
                 <span>{showSolutions ? "Hide Solutions" : "Review All Solutions"}</span>
               </button>
 
               <button
                 type="button"
                 onClick={() => setPhase("setup")}
-                className="px-4 py-3 rounded-2xl border border-slate-700 bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-300 flex items-center gap-1.5 cursor-pointer"
+                className="px-4 py-2.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-xs font-bold text-slate-700 flex items-center gap-1.5 cursor-pointer"
               >
-                <Home className="w-4 h-4" />
+                <Home className="w-3.5 h-3.5" />
                 <span>Home</span>
               </button>
             </div>
           </div>
 
-          {/* Detailed Solutions Section */}
+          {/* Detailed Solutions Review */}
           {showSolutions && (
-            <div className="space-y-6 pt-4 animate-in fade-in duration-200">
-              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 border-b border-slate-800 pb-4">
+            <div className="space-y-4 pt-2">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 border-b border-slate-200 pb-3">
                 <div>
-                  <h3 className="font-extrabold text-white text-lg">Detailed Question & Solution Review</h3>
-                  <p className="text-xs text-slate-400">Step-by-step mathematical explanations and verified answers</p>
+                  <h3 className="font-extrabold text-slate-900 text-base">Question & Solution Review</h3>
+                  <p className="text-xs text-slate-500">Step-by-step explanations and verified official answers</p>
                 </div>
 
                 {/* Filter Pills */}
-                <div className="flex items-center gap-1.5 bg-slate-900 border border-slate-800 p-1 rounded-xl text-xs">
+                <div className="flex items-center gap-1 bg-white border border-slate-200 p-1 rounded-xl text-xs">
                   {(["all", "correct", "incorrect", "skipped"] as const).map((f) => (
                     <button
                       key={f}
                       type="button"
                       onClick={() => setReviewFilter(f)}
-                      className={`px-3 py-1 rounded-lg capitalize font-medium ${
+                      className={`px-3 py-1 rounded-lg capitalize font-bold cursor-pointer ${
                         reviewFilter === f
-                          ? "bg-indigo-600 text-white font-bold"
-                          : "text-slate-400 hover:text-white"
+                          ? "bg-blue-600 text-white shadow-2xs"
+                          : "text-slate-600 hover:text-slate-900"
                       }`}
                     >
                       {f}
@@ -1482,35 +1641,38 @@ export default function SpeedTestClient() {
                   const isSkipped = !userAns;
                   const timeSpentOnQ = questionTimes[q.id] || 0;
 
+                  // Clean English & Hindi texts
+                  const qSplit = splitBilingual(q.question_text);
+
                   return (
                     <div
                       key={q.id}
-                      className="bg-slate-900/80 border border-slate-800 rounded-3xl p-5 sm:p-6 space-y-4 shadow-lg"
+                      className="bg-white border border-slate-200 rounded-2xl p-5 space-y-4 shadow-xs"
                     >
-                      <div className="flex items-center justify-between border-b border-slate-800/80 pb-3">
+                      <div className="flex items-center justify-between border-b border-slate-100 pb-2.5">
                         <div className="flex items-center gap-2">
-                          <span className="font-bold text-xs text-indigo-400">Q. {idx + 1}</span>
-                          <span className="text-xs text-slate-400">• {q.subject}</span>
-                          {q.topic && <span className="text-xs text-slate-500">• {q.topic}</span>}
+                          <span className="font-extrabold text-xs text-blue-600">Q. {idx + 1}</span>
+                          <span className="text-xs text-slate-500">• {q.subject}</span>
+                          {q.topic && <span className="text-xs text-slate-400">• {q.topic}</span>}
                         </div>
 
                         <div className="flex items-center gap-2">
-                          <span className="text-[11px] font-mono text-slate-400 bg-slate-800 px-2 py-0.5 rounded-md">
+                          <span className="text-[11px] font-mono text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md">
                             ⏱️ {timeSpentOnQ}s
                           </span>
 
                           {isCorrect && (
-                            <span className="inline-flex items-center gap-1 text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-md border border-emerald-500/30">
-                              <CheckCircle2 className="w-3.5 h-3.5" /> Correct (+2)
+                            <span className="inline-flex items-center gap-1 text-xs font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+                              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" /> Correct (+2)
                             </span>
                           )}
                           {!isCorrect && !isSkipped && (
-                            <span className="inline-flex items-center gap-1 text-xs font-bold text-rose-400 bg-rose-500/10 px-2.5 py-0.5 rounded-md border border-rose-500/30">
-                              <XCircle className="w-3.5 h-3.5" /> Incorrect (-0.5)
+                            <span className="inline-flex items-center gap-1 text-xs font-bold text-rose-800 bg-rose-50 px-2 py-0.5 rounded border border-rose-200">
+                              <XCircle className="w-3.5 h-3.5 text-rose-600" /> Incorrect (-0.5)
                             </span>
                           )}
                           {isSkipped && (
-                            <span className="inline-flex items-center gap-1 text-xs font-bold text-slate-400 bg-slate-800 px-2.5 py-0.5 rounded-md">
+                            <span className="inline-flex items-center gap-1 text-xs font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded">
                               ⚪ Skipped (0)
                             </span>
                           )}
@@ -1518,11 +1680,11 @@ export default function SpeedTestClient() {
                       </div>
 
                       {/* Question Text */}
-                      <div className="text-sm sm:text-base text-slate-100 font-medium">
-                        <MathText text={q.question_text} />
-                        {q.question_text_hi && (
-                          <div className="text-indigo-200/90 font-hindi text-xs sm:text-sm mt-2 pt-2 border-t border-slate-800/60">
-                            <MathText text={q.question_text_hi} />
+                      <div className="text-sm sm:text-base text-slate-900 font-medium">
+                        <MathText text={qSplit.english} />
+                        {qSplit.hindi && (
+                          <div className="text-slate-600 font-hindi text-xs sm:text-sm mt-2 pt-2 border-t border-slate-100">
+                            <MathText text={qSplit.hindi} />
                           </div>
                         )}
                         {q.image_url && (
@@ -1530,24 +1692,25 @@ export default function SpeedTestClient() {
                             <img
                               src={q.image_url}
                               alt="Diagram"
-                              className="max-h-56 rounded-xl border border-slate-800 bg-white/5 object-contain"
+                              className="max-h-56 rounded-xl border border-slate-200 bg-white object-contain"
                             />
                           </div>
                         )}
                       </div>
 
-                      {/* 4 Options in Solution Card */}
+                      {/* 4 Options Grid */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
                         {(["A", "B", "C", "D"] as const).map((opt) => {
                           const isTheCorrectAns = q.correct_answer === opt;
                           const wasUserChoice = userAns === opt;
-                          const optText = q[`option_${opt.toLowerCase() as "a" | "b" | "c" | "d"}`];
+                          const optRaw = q[`option_${opt.toLowerCase() as "a" | "b" | "c" | "d"}`];
+                          const optSplit = splitBilingual(optRaw);
 
-                          let optStyle = "bg-slate-950/60 border-slate-800 text-slate-300";
+                          let optStyle = "bg-slate-50 border-slate-200 text-slate-700";
                           if (isTheCorrectAns) {
-                            optStyle = "bg-emerald-500/15 border-emerald-500 text-emerald-200 font-bold";
+                            optStyle = "bg-emerald-50 border-emerald-500 text-emerald-900 font-bold";
                           } else if (wasUserChoice && !isTheCorrectAns) {
-                            optStyle = "bg-rose-500/15 border-rose-500 text-rose-200";
+                            optStyle = "bg-rose-50 border-rose-300 text-rose-900";
                           }
 
                           return (
@@ -1555,14 +1718,19 @@ export default function SpeedTestClient() {
                               key={opt}
                               className={`p-3 rounded-xl border text-xs flex items-start gap-2.5 ${optStyle}`}
                             >
-                              <span className="w-5 h-5 rounded-md bg-slate-800 flex items-center justify-center font-black shrink-0">
+                              <span className="w-5 h-5 rounded-md bg-white border border-slate-200 flex items-center justify-center font-black shrink-0">
                                 {opt}
                               </span>
                               <div className="flex-1">
-                                <MathText text={optText} />
+                                <MathText text={optSplit.english} />
+                                {optSplit.hindi && (
+                                  <div className="text-slate-500 font-hindi text-[11px] mt-0.5">
+                                    <MathText text={optSplit.hindi} />
+                                  </div>
+                                )}
                               </div>
-                              {isTheCorrectAns && <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />}
-                              {wasUserChoice && !isTheCorrectAns && <XCircle className="w-4 h-4 text-rose-400 shrink-0" />}
+                              {isTheCorrectAns && <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />}
+                              {wasUserChoice && !isTheCorrectAns && <XCircle className="w-4 h-4 text-rose-600 shrink-0" />}
                             </div>
                           );
                         })}
@@ -1570,18 +1738,18 @@ export default function SpeedTestClient() {
 
                       {/* Explanation box */}
                       {(q.explanation || q.explanation_hi) && (
-                        <div className="p-4 rounded-2xl bg-indigo-950/40 border border-indigo-500/30 text-xs text-slate-200 space-y-2">
-                          <div className="font-bold text-indigo-300 flex items-center gap-1.5">
-                            <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                        <div className="p-3.5 rounded-xl bg-blue-50/60 border border-blue-200/80 text-xs text-slate-800 space-y-1.5">
+                          <div className="font-extrabold text-blue-900 flex items-center gap-1.5">
+                            <Sparkles className="w-3.5 h-3.5 text-amber-500" />
                             Detailed Explanation:
                           </div>
                           {q.explanation && (
-                            <div className="text-slate-200 leading-relaxed">
+                            <div className="text-slate-700 leading-relaxed">
                               <MathText text={q.explanation} />
                             </div>
                           )}
                           {q.explanation_hi && (
-                            <div className="text-indigo-200 font-hindi border-t border-indigo-500/20 pt-2 leading-relaxed">
+                            <div className="text-slate-700 font-hindi border-t border-blue-100 pt-1.5 leading-relaxed">
                               <MathText text={q.explanation_hi} />
                             </div>
                           )}
@@ -1593,6 +1761,9 @@ export default function SpeedTestClient() {
               </div>
             </div>
           )}
+
+          {/* Bottom AdSense Banner in Results */}
+          <AdBanner slot="speed-test-results-bottom" className="my-6" />
         </div>
       </div>
     );

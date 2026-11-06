@@ -13,6 +13,8 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
   },
   experimental: {
+    cpus: 1,
+    workerThreads: false,
     optimizePackageImports: [
       "lucide-react",
       "@supabase/supabase-js",

@@ -266,17 +266,22 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
           setErrorMessage("This exam shift paper could not be loaded. Please return to the papers list.");
         } else {
           const setting = settingsRes?.[String(pid)];
-          const transAllowed = setting !== undefined && setting.allow_translation !== undefined
-            ? Boolean(setting.allow_translation)
-            : (paperRes.data.allow_translation !== false);
+          let transAllowed = true;
+          if (setting !== undefined && setting.allow_translation !== undefined) {
+            transAllowed = Boolean(setting.allow_translation);
+          } else if (paperRes.data.allow_translation !== undefined) {
+            transAllowed = Boolean(paperRes.data.allow_translation);
+          } else if (String(paperRes.data.year) === "2026" || (paperRes.data.title && paperRes.data.title.includes("2026"))) {
+            transAllowed = false;
+          }
           const fullPaper = { ...paperRes.data, allow_translation: transAllowed };
           setPaper(fullPaper);
           const qs = questionsRes.data ?? [];
           setQuestions(qs);
           setTimeLeft((paperRes.data.duration_minutes || 60) * 60);
 
-          // Default initial language mode
-          setLanguageMode("bilingual");
+          // Default initial language mode: If translation is disabled, default to English
+          setLanguageMode(transAllowed ? "bilingual" : "english");
         }
       } catch (err: any) {
         if (isMounted) setErrorMessage("Failed to load test paper: " + err.message);
@@ -539,7 +544,8 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
       return combined.includes("english");
     };
 
-    const transNeeded = questions.filter((q, idx) => {
+    // If dynamic translator is disabled for this paper, do not queue machine translations
+    const transNeeded = (paper && paper.allow_translation === false) ? [] : questions.filter((q, idx) => {
       const sec = getQuestionSection(idx);
       if (isEngSection(sec)) return false;
       if (q.question_text_hi || /[\u0900-\u097F]/.test(q.question_text || "")) return false;
@@ -596,11 +602,12 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
     return () => {
       isCancelled = true;
     };
-  }, [questions, sections]);
+  }, [questions, sections, paper]);
 
   // 5b. Smooth Fallback Translation Engine for Current / Next Question (in case background queue is still progressing)
   useEffect(() => {
     if (questions.length === 0) return;
+    if (paper && paper.allow_translation === false) return;
     if (languageMode === "english") return;
 
     const isEngSection = (sec: SectionDef) => {
@@ -652,7 +659,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
 
     runImmediateTranslation();
     return () => { isMounted = false; };
-  }, [currentIndex, languageMode, questions, translationsCache, sections]);
+  }, [currentIndex, languageMode, questions, translationsCache, sections, paper]);
 
   // 6. Start Exam Handler (with Fullscreen trigger)
   async function handleStartTest() {
@@ -1302,15 +1309,22 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                 <label className="text-[11px] font-bold text-slate-600 block mb-1">
                   Default Question Paper Language:
                 </label>
-                <select
-                  value={languageMode}
-                  onChange={(e) => setLanguageMode(e.target.value as any)}
-                  className="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-1 focus:ring-blue-500 cursor-pointer"
-                >
-                  <option value="bilingual">Bilingual (English + Hindi)</option>
-                  <option value="english">English Only</option>
-                  <option value="hindi">Hindi Only</option>
-                </select>
+                {paper?.allow_translation === false && !hasAuthenticHindi ? (
+                  <div className="w-full bg-slate-100 border border-slate-300 rounded-lg p-2 text-xs font-bold text-slate-700 flex items-center justify-between">
+                    <span>English (Official Exam Paper)</span>
+                    <span className="text-[10px] text-slate-500 font-semibold bg-slate-200 px-2 py-0.5 rounded">Standard</span>
+                  </div>
+                ) : (
+                  <select
+                    value={languageMode}
+                    onChange={(e) => setLanguageMode(e.target.value as any)}
+                    className="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-1 focus:ring-blue-500 cursor-pointer"
+                  >
+                    <option value="bilingual">Bilingual (English + Hindi)</option>
+                    <option value="english">English Only</option>
+                    <option value="hindi">Hindi Only</option>
+                  </select>
+                )}
               </div>
 
               {/* Fullscreen Option */}
@@ -2184,33 +2198,40 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
             <span>Palette</span>
           </button>
 
-          {/* Language Mode Buttons (Always Visible & Unlocked) */}
-          <div className="flex items-center gap-1 bg-white p-0.5 rounded-lg border border-slate-300 shadow-2xs">
-            <button
-              onClick={() => setLanguageMode("bilingual")}
-              className={`px-2 py-0.5 text-[11px] font-bold rounded transition-all cursor-pointer ${
-                languageMode === "bilingual" ? "bg-blue-700 text-white shadow-xs" : "text-slate-600 hover:bg-slate-100"
-              }`}
-            >
-              Bilingual
-            </button>
-            <button
-              onClick={() => setLanguageMode("english")}
-              className={`px-2 py-0.5 text-[11px] font-bold rounded transition-all cursor-pointer ${
-                languageMode === "english" ? "bg-blue-700 text-white shadow-xs" : "text-slate-600 hover:bg-slate-100"
-              }`}
-            >
-              English
-            </button>
-            <button
-              onClick={() => setLanguageMode("hindi")}
-              className={`px-2 py-0.5 text-[11px] font-bold rounded transition-all cursor-pointer ${
-                languageMode === "hindi" ? "bg-blue-700 text-white shadow-xs" : "text-slate-600 hover:bg-slate-100"
-              }`}
-            >
-              हिन्दी
-            </button>
-          </div>
+          {/* Language Mode: if official English paper with translation disabled, show clean badge */}
+          {paper?.allow_translation === false && !hasAuthenticHindi ? (
+            <div className="flex items-center gap-1.5 bg-white px-2.5 py-1 rounded-lg border border-slate-300 shadow-2xs text-[11px] font-bold text-slate-700">
+              <span className="h-2 w-2 rounded-full bg-blue-600"></span>
+              <span>English (Official Paper)</span>
+            </div>
+          ) : (
+            <div className="flex items-center gap-1 bg-white p-0.5 rounded-lg border border-slate-300 shadow-2xs">
+              <button
+                onClick={() => setLanguageMode("bilingual")}
+                className={`px-2 py-0.5 text-[11px] font-bold rounded transition-all cursor-pointer ${
+                  languageMode === "bilingual" ? "bg-blue-700 text-white shadow-xs" : "text-slate-600 hover:bg-slate-100"
+                }`}
+              >
+                Bilingual
+              </button>
+              <button
+                onClick={() => setLanguageMode("english")}
+                className={`px-2 py-0.5 text-[11px] font-bold rounded transition-all cursor-pointer ${
+                  languageMode === "english" ? "bg-blue-700 text-white shadow-xs" : "text-slate-600 hover:bg-slate-100"
+                }`}
+              >
+                English
+              </button>
+              <button
+                onClick={() => setLanguageMode("hindi")}
+                className={`px-2 py-0.5 text-[11px] font-bold rounded transition-all cursor-pointer ${
+                  languageMode === "hindi" ? "bg-blue-700 text-white shadow-xs" : "text-slate-600 hover:bg-slate-100"
+                }`}
+              >
+                हिन्दी
+              </button>
+            </div>
+          )}
         </div>
       </div>
 

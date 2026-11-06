@@ -257,12 +257,23 @@ export default function PapersPage() {
       } else {
         const enriched = (papersRes.data ?? []).map((p: any) => {
           const setting = settingsRes?.[String(p.id)];
-          const allowed = setting !== undefined 
+          const allowed = setting?.allow_download !== undefined 
             ? Boolean(setting.allow_download) 
             : (p.test_type !== "mock" && p.allow_download !== false);
+          
+          let allowTrans = true;
+          if (setting?.allow_translation !== undefined) {
+            allowTrans = Boolean(setting.allow_translation);
+          } else if (p.allow_translation !== undefined) {
+            allowTrans = Boolean(p.allow_translation);
+          } else if (String(p.year) === "2026" || (p.title && p.title.includes("2026"))) {
+            allowTrans = false;
+          }
+
           return {
             ...p,
             allow_download: allowed,
+            allow_translation: allowTrans,
             test_type: allowed ? "pyq" : "mock"
           };
         });
@@ -492,6 +503,28 @@ export default function PapersPage() {
     await setPaperTranslatorAllowed(paper.id, next);
     setPapers((prev) => prev.map((p) => (p.id === paper.id ? { ...p, allow_translation: next } : p)));
     toast.success(next ? `Translator enabled for "${paper.title}"` : `Translator disabled for "${paper.title}"`);
+  }
+
+  async function handleToggleFolderTranslators(folder: any) {
+    const allCurrentlyOff = folder.papers.every((p: any) => !isPaperTranslatorAllowed(p));
+    const targetState = allCurrentlyOff;
+    const targetLabel = targetState ? "enabled" : "disabled";
+
+    const tid = toast.loading(`Setting translator ${targetLabel} for all papers in folder...`);
+    try {
+      await Promise.all(
+        folder.papers.map((p: any) => setPaperTranslatorAllowed(p.id, targetState))
+      );
+      setPapers((prev) =>
+        prev.map((p) => {
+          const inFolder = folder.papers.some((fp: any) => fp.id === p.id);
+          return inFolder ? { ...p, allow_translation: targetState } : p;
+        })
+      );
+      toast.success(`Translator ${targetLabel} for all ${folder.papers.length} papers!`, { id: tid });
+    } catch (err: any) {
+      toast.error(`Error updating translators: ${err?.message || "Unknown error"}`, { id: tid });
+    }
   }
 
   // ─────────────────────────────────────────────────────────────
@@ -1110,6 +1143,27 @@ export default function PapersPage() {
                 <Upload className="h-3.5 w-3.5" />
                 <span>Bulk Upload to this Folder</span>
               </button>
+
+              <button
+                onClick={() => handleToggleFolderTranslators(currentFolder)}
+                className={`inline-flex items-center gap-1.5 rounded-xl border px-3.5 py-2 text-xs font-bold transition-colors cursor-pointer ${
+                  currentFolder.papers.every((p: any) => !isPaperTranslatorAllowed(p))
+                    ? "border-emerald-300 bg-emerald-50 hover:bg-emerald-100 text-emerald-800"
+                    : "border-slate-300 bg-slate-50 hover:bg-slate-100 text-slate-700"
+                }`}
+                title={
+                  currentFolder.papers.every((p: any) => !isPaperTranslatorAllowed(p))
+                    ? "Turn ON translator for all papers in this folder"
+                    : "Turn OFF translator for all papers in this folder"
+                }
+              >
+                <Globe className="h-3.5 w-3.5 text-blue-600" />
+                <span>
+                  {currentFolder.papers.every((p: any) => !isPaperTranslatorAllowed(p))
+                    ? "🌐 Translators: OFF (Turn ON All)"
+                    : "🌐 Turn OFF All Translators"}
+                </span>
+              </button>
             </div>
           </div>
 
@@ -1271,6 +1325,13 @@ export default function PapersPage() {
                           </span>
                           <span className="text-xs font-bold text-slate-500 bg-slate-100 px-2.5 py-0.5 rounded-full">
                             {f.year}
+                          </span>
+                          <span className={`text-[10px] font-black px-2 py-0.5 rounded-full border ${
+                            f.papers.length > 0 && f.papers.every((p: any) => !isPaperTranslatorAllowed(p))
+                              ? "bg-slate-100 text-slate-600 border-slate-200"
+                              : "bg-emerald-50 text-emerald-700 border-emerald-200"
+                          }`}>
+                            🌐 {f.papers.length > 0 && f.papers.every((p: any) => !isPaperTranslatorAllowed(p)) ? "Trans: OFF" : "Trans: ON"}
                           </span>
                         </div>
                       </div>

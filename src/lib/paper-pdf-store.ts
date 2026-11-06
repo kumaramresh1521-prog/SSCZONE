@@ -71,16 +71,18 @@ export async function setPaperDownloadAllowed(paperId: number, allowed: boolean)
 /**
  * Returns whether dynamic translation / bilingual mode during exam is enabled for this paper
  */
-export function isPaperTranslatorAllowed(paper: { id: number; allow_translation?: boolean }): boolean {
+export function isPaperTranslatorAllowed(paper?: { id: number; allow_translation?: boolean } | null): boolean {
+  if (!paper) return true;
+
+  if (typeof paper.allow_translation === "boolean") {
+    return paper.allow_translation;
+  }
+
   if (typeof window !== "undefined") {
     const disabled = localStorage.getItem(`ssczone_paper_translator_disabled_${paper.id}`);
     if (disabled === "true") return false;
     const enabled = localStorage.getItem(`ssczone_paper_translator_enabled_${paper.id}`);
     if (enabled === "true") return true;
-  }
-
-  if (typeof paper.allow_translation === "boolean") {
-    return paper.allow_translation;
   }
 
   return true; // Default: bilingual / translator enabled

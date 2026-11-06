@@ -39,5 +39,92 @@
   "24": {
     "allow_download": true,
     "allow_translation": true
+  },
+  "25": {
+    "allow_translation": false
+  },
+  "26": {
+    "allow_translation": false
+  },
+  "27": {
+    "allow_translation": false
+  },
+  "28": {
+    "allow_translation": false
+  },
+  "29": {
+    "allow_translation": false
+  },
+  "30": {
+    "allow_translation": false
+  },
+  "31": {
+    "allow_translation": false
+  },
+  "32": {
+    "allow_translation": false
+  },
+  "33": {
+    "allow_translation": false
+  },
+  "34": {
+    "allow_translation": false
+  },
+  "35": {
+    "allow_translation": false
+  },
+  "36": {
+    "allow_translation": false
+  },
+  "37": {
+    "allow_translation": false
+  },
+  "38": {
+    "allow_translation": false
+  },
+  "39": {
+    "allow_translation": false
+  },
+  "40": {
+    "allow_translation": false
+  },
+  "41": {
+    "allow_translation": false
+  },
+  "42": {
+    "allow_translation": false
+  },
+  "43": {
+    "allow_translation": false
+  },
+  "44": {
+    "allow_translation": false
+  },
+  "45": {
+    "allow_translation": false
+  },
+  "46": {
+    "allow_translation": false
+  },
+  "47": {
+    "allow_translation": false
+  },
+  "48": {
+    "allow_translation": false
+  },
+  "49": {
+    "allow_translation": false
+  },
+  "50": {
+    "allow_translation": false
+  },
+  "51": {
+    "allow_translation": false
+  },
+  "52": {
+    "allow_translation": false
+  },
+  "53": {
+    "allow_translation": false
   }
 }

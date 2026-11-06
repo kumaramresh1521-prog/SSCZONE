@@ -23,6 +23,7 @@ next-local-*.log
 *.jpeg
 *.svg
 !public/*
+!public/**
 percentage_*.json
 percentage_*.html
 topics_backup.txt

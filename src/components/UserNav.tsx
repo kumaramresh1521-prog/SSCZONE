@@ -5,14 +5,6 @@ import { supabase } from "@/lib/supabase";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { 
-  BookOpen, 
-  FileText, 
-  BookMarked,
-  Trophy,
-  Zap, 
-  Clock, 
-  Keyboard, 
-  Newspaper,
   ChevronDown,
   ChevronRight,
   Search, 
@@ -23,29 +15,23 @@ import {
   Menu, 
   X,
   Sparkles,
-  GraduationCap,
-  Target,
-  Wrench,
-  Calendar,
-  Image as ImageIcon
+  ExternalLink
 } from "lucide-react";
+import NavigationIcon from "@/components/NavigationIcon";
+import { 
+  MenuItemConfig, 
+  DEFAULT_NAVIGATION_CONFIG 
+} from "@/lib/navigation-store";
 
 export default function UserNav() {
   const [user, setUser] = useState<any>(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
-  // Dropdown states
-  const [examsDropdownOpen, setExamsDropdownOpen] = useState(false);
-  const [materialsDropdownOpen, setMaterialsDropdownOpen] = useState(false);
-  const [practiceDropdownOpen, setPracticeDropdownOpen] = useState(false);
-  const [toolkitDropdownOpen, setToolkitDropdownOpen] = useState(false);
-  
-  // Mobile dropdown states
-  const [mobileExamsOpen, setMobileExamsOpen] = useState(false);
-  const [mobileMaterialsOpen, setMobileMaterialsOpen] = useState(false);
-  const [mobilePracticeOpen, setMobilePracticeOpen] = useState(false);
-  const [mobileToolkitOpen, setMobileToolkitOpen] = useState(false);
+  // Dynamic Navigation Configuration
+  const [navItems, setNavItems] = useState<MenuItemConfig[]>(DEFAULT_NAVIGATION_CONFIG.items);
+  const [activeDropdownId, setActiveDropdownId] = useState<string | null>(null);
+  const [mobileOpenDropdowns, setMobileOpenDropdowns] = useState<Record<string, boolean>>({});
 
   const [mounted, setMounted] = useState(false);
   const [tickers, setTickers] = useState<any[]>([
@@ -76,10 +62,22 @@ export default function UserNav() {
 
   const pathname = usePathname();
   const router = useRouter();
-  const activeTickers = useMemo(() => tickers.filter((t) => t.is_active), [tickers]);
 
+  // Load Dynamic Navigation from API
   useEffect(() => {
     setMounted(true);
+
+    // Fetch live navigation config
+    fetch(`/api/navigation?t=${Date.now()}`)
+      .then((r) => r.json())
+      .then((data) => {
+        if (data && Array.isArray(data.items) && data.items.length > 0) {
+          setNavItems(data.items);
+        }
+      })
+      .catch(() => {});
+
+    // Read cached tickers
     const saved = localStorage.getItem("ssczone_live_tickers");
     if (saved) {
       try {
@@ -87,15 +85,17 @@ export default function UserNav() {
         if (Array.isArray(parsed) && parsed.length > 0) setTickers(parsed);
       } catch (e) {}
     }
+
+    // User auth & exams fetch
     (async () => {
       const { data: { session } } = await supabase.auth.getSession();
-      const user = session?.user || null;
-      setUser(user);
-      if (user) {
+      const curUser = session?.user || null;
+      setUser(curUser);
+      if (curUser) {
         const { data } = await supabase
           .from("profiles")
           .select("is_admin")
-          .eq("id", user.id)
+          .eq("id", curUser.id)
           .maybeSingle();
         setIsAdmin(data?.is_admin || false);
       }
@@ -133,24 +133,12 @@ export default function UserNav() {
     router.refresh();
   }
 
-  // --- MENU DATA ---
-  const materialsMenu = [
-    { name: "Subject Notes", href: "/notes", icon: BookOpen },
-    { name: "SSC Reference Books", href: "/books", icon: BookMarked },
-  ];
-
-  const practiceMenu = [
-    { name: "Previous Year Papers (PYQ)", href: "/papers", icon: FileText },
-    { name: "Full Mock Tests", href: "/mocks", icon: Trophy },
-    { name: "Speed Test", href: "/speed-test", icon: Clock },
-    { name: "Daily Free Quiz", href: "/daily-quiz", icon: Zap },
-  ];
-
-  const toolkitMenu = [
-    { name: "Rank Predictor & Marks", href: "/toolkit/rank-predictor", icon: Trophy },
-    { name: "Age & Post Eligibility", href: "/toolkit/age-calculator", icon: Calendar },
-    { name: "Photo & Signature Resizer", href: "/toolkit/photo-resizer", icon: ImageIcon },
-  ];
+  // Filter only active menu items, sorted
+  const activeNavItems = useMemo(() => {
+    return navItems
+      .filter((m) => m.is_active)
+      .sort((a, b) => a.sort_order - b.sort_order);
+  }, [navItems]);
 
   return (
     <header className="sticky top-0 z-40 w-full max-w-full overflow-x-clip bg-white/90 backdrop-blur-xl border-b border-slate-200/80 shadow-[0_2px_20px_-4px_rgba(0,0,0,0.06)]">
@@ -167,251 +155,148 @@ export default function UserNav() {
           </span>
         </Link>
 
-        {/* Desktop Main Navigation Bar */}
+        {/* Dynamic Desktop Main Navigation Bar */}
         <nav className="hidden xl:flex items-center gap-1 xl:gap-1.5 shrink-0">
-          
-          {/* 1. SSC EXAMS */}
-          <div 
-            className="relative"
-            onMouseEnter={() => setExamsDropdownOpen(true)}
-            onMouseLeave={() => setExamsDropdownOpen(false)}
-          >
-            <button
-              onClick={() => setExamsDropdownOpen(!examsDropdownOpen)}
-              className={`flex items-center gap-1.5 rounded-xl px-2.5 2xl:px-3 py-1.5 2xl:py-2 text-xs 2xl:text-sm font-bold transition-all cursor-pointer ${
-                pathname.startsWith("/exams")
-                  ? "bg-blue-50/90 text-blue-700 shadow-2xs border border-blue-100"
-                  : "text-slate-700 hover:bg-slate-100/80 hover:text-blue-700"
-              }`}
-            >
-              <Target className="h-4 w-4 text-blue-600" />
-              <span>Question Bank</span>
-              <ChevronDown className={`h-3.5 w-3.5 text-slate-400 transition-transform duration-200 ${examsDropdownOpen ? "rotate-180 text-blue-600" : ""}`} />
-            </button>
+          {activeNavItems.map((menu) => {
+            if (menu.is_dropdown) {
+              const isExams = menu.id === "exams";
+              const isOpen = activeDropdownId === menu.id;
+              const isPathActive = menu.href && menu.href !== "/" ? pathname.startsWith(menu.href) : false;
+              const activeSubItems = (menu.sub_items || [])
+                .filter((s) => s.is_active)
+                .sort((a, b) => a.sort_order - b.sort_order);
 
-            {examsDropdownOpen && (
-              <div className="absolute left-0 top-full pt-2 w-80 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
-                <div className="rounded-2xl border border-slate-200/90 bg-white/98 backdrop-blur-xl p-3 shadow-2xl shadow-slate-900/10 space-y-1.5 ring-1 ring-black/5">
-                  <div className="flex items-center justify-between border-b border-slate-100 pb-2 px-2">
-                    <span className="text-[11px] font-black uppercase text-slate-400 tracking-wider">Select SSC Target Exam</span>
-                    <Link href="/exams" className="text-[11px] font-black text-blue-600 hover:text-blue-800 transition-colors">View All →</Link>
-                  </div>
-                  <div className="grid grid-cols-1 gap-1 max-h-96 overflow-y-auto pr-1 custom-scrollbar">
-                    {sscSubExams.map((subEx) => (
-                      <Link
-                        key={subEx.slug}
-                        href={`/exams/${subEx.slug}`}
-                        onClick={() => setExamsDropdownOpen(false)}
-                        className="group flex items-center justify-between rounded-xl px-3 py-2.5 hover:bg-blue-50/80 border border-transparent hover:border-blue-100 transition-all"
-                      >
-                        <div>
-                          <div className="flex items-center gap-2">
-                            <span className="text-sm font-bold text-slate-900 group-hover:text-blue-700 transition-colors">
-                              {subEx.name}
-                            </span>
-                            {subEx.badge && (
-                              <span className="rounded-full bg-blue-100 px-1.5 py-0.2 text-[9px] font-black text-blue-700">
-                                {subEx.badge}
-                              </span>
-                            )}
+              return (
+                <div
+                  key={menu.id}
+                  className="relative"
+                  onMouseEnter={() => setActiveDropdownId(menu.id)}
+                  onMouseLeave={() => setActiveDropdownId(null)}
+                >
+                  <button
+                    onClick={() => setActiveDropdownId(isOpen ? null : menu.id)}
+                    className={`flex items-center gap-1.5 rounded-xl px-2.5 2xl:px-3 py-1.5 2xl:py-2 text-xs 2xl:text-sm font-bold transition-all cursor-pointer ${
+                      isPathActive || (isExams && pathname.startsWith("/exams"))
+                        ? "bg-blue-50/90 text-blue-700 shadow-2xs border border-blue-100"
+                        : "text-slate-700 hover:bg-slate-100/80 hover:text-blue-700"
+                    }`}
+                  >
+                    <NavigationIcon name={menu.icon} className="h-4 w-4 text-blue-600" />
+                    <span>{menu.name}</span>
+                    {menu.badge && (
+                      <span className="hidden 2xl:inline rounded-full bg-amber-400 text-slate-950 text-[9px] font-black px-1.5 py-0.5 uppercase tracking-wide shrink-0">
+                        {menu.badge}
+                      </span>
+                    )}
+                    <ChevronDown className={`h-3.5 w-3.5 text-slate-400 transition-transform duration-200 ${isOpen ? "rotate-180 text-blue-600" : ""}`} />
+                  </button>
+
+                  {isOpen && (
+                    <div className="absolute left-0 top-full pt-2 w-72 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
+                      <div className="rounded-2xl border border-slate-200/90 bg-white/98 backdrop-blur-xl p-2.5 shadow-2xl shadow-slate-900/10 space-y-1 ring-1 ring-black/5">
+                        {isExams ? (
+                          <>
+                            <div className="flex items-center justify-between border-b border-slate-100 pb-2 px-2">
+                              <span className="text-[11px] font-black uppercase text-slate-400 tracking-wider">Select SSC Target Exam</span>
+                              <Link href="/exams" onClick={() => setActiveDropdownId(null)} className="text-[11px] font-black text-blue-600 hover:text-blue-800 transition-colors">View All →</Link>
+                            </div>
+                            <div className="grid grid-cols-1 gap-1 max-h-96 overflow-y-auto pr-1 custom-scrollbar">
+                              {sscSubExams.map((subEx) => (
+                                <Link
+                                  key={subEx.slug}
+                                  href={`/exams/${subEx.slug}`}
+                                  onClick={() => setActiveDropdownId(null)}
+                                  className="group flex items-center justify-between rounded-xl px-3 py-2 hover:bg-blue-50/80 border border-transparent hover:border-blue-100 transition-all"
+                                >
+                                  <div>
+                                    <span className="text-xs font-bold text-slate-900 group-hover:text-blue-700 transition-colors">
+                                      {subEx.name}
+                                    </span>
+                                    {subEx.desc && <p className="text-[10px] text-slate-400 line-clamp-1">{subEx.desc}</p>}
+                                  </div>
+                                  <ChevronRight className="h-3.5 w-3.5 text-slate-300 group-hover:text-blue-600 group-hover:translate-x-0.5 transition-all shrink-0" />
+                                </Link>
+                              ))}
+                            </div>
+                          </>
+                        ) : (
+                          <div className="space-y-1">
+                            {activeSubItems.map((sub) => (
+                              <Link
+                                key={sub.id}
+                                href={sub.href}
+                                target={sub.target || "_self"}
+                                onClick={() => setActiveDropdownId(null)}
+                                className="group flex items-center justify-between rounded-xl px-3 py-2 hover:bg-slate-50 transition-all"
+                              >
+                                <div className="flex items-center gap-2.5">
+                                  <div className="bg-slate-100 group-hover:bg-blue-50 p-1.5 rounded-lg text-slate-500 group-hover:text-blue-600 transition-colors">
+                                    <NavigationIcon name={sub.icon} className="h-4 w-4" />
+                                  </div>
+                                  <div>
+                                    <div className="flex items-center gap-1.5">
+                                      <span className="text-xs font-semibold text-slate-800 group-hover:text-blue-700">
+                                        {sub.name}
+                                      </span>
+                                      {sub.badge && (
+                                        <span className="text-[9px] font-black bg-amber-100 text-amber-900 px-1.5 py-0.2 rounded-full">
+                                          {sub.badge}
+                                        </span>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                                {sub.target === "_blank" && (
+                                  <ExternalLink className="h-3 w-3 text-slate-300 group-hover:text-blue-600 shrink-0" />
+                                )}
+                              </Link>
+                            ))}
                           </div>
-                          <p className="text-[11px] text-slate-500 line-clamp-1">{subEx.desc}</p>
-                        </div>
-                        <ChevronRight className="h-4 w-4 text-slate-300 group-hover:text-blue-600 group-hover:translate-x-1 transition-all shrink-0" />
-                      </Link>
-                    ))}
-                  </div>
+                        )}
+                      </div>
+                    </div>
+                  )}
                 </div>
-              </div>
-            )}
-          </div>
+              );
+            }
 
-          {/* 2. DIRECT PROMINENT PYQ PAPERS TAB */}
-          <Link
-            href="/papers"
-            className={`flex items-center gap-1.5 rounded-xl px-2.5 2xl:px-3 py-1.5 2xl:py-2 text-xs 2xl:text-sm font-bold transition-all relative cursor-pointer ${
-              pathname.startsWith("/papers")
-                ? "bg-blue-600 text-white shadow-sm shadow-blue-500/20"
-                : "text-slate-800 hover:bg-blue-50/80 hover:text-blue-700"
-            }`}
-          >
-            <FileText className={`h-4 w-4 ${pathname.startsWith("/papers") ? "text-white" : "text-blue-600"}`} />
-            <span>PYQ Papers</span>
-            <span className="hidden 2xl:inline rounded-full bg-amber-400 text-slate-950 text-[9px] font-black px-1.5 py-0.5 uppercase tracking-wide shrink-0">
-              2025 Live
-            </span>
-          </Link>
+            // Direct Link Menu Item
+            const isLinkActive = pathname === menu.href || (menu.href !== "/" && pathname.startsWith(menu.href || ""));
+            const isPapersTab = menu.id === "papers" || menu.href === "/papers";
 
-          {/* 3. STUDY MATERIAL */}
-          <div 
-            className="relative"
-            onMouseEnter={() => setMaterialsDropdownOpen(true)}
-            onMouseLeave={() => setMaterialsDropdownOpen(false)}
-          >
-            <button
-              onClick={() => setMaterialsDropdownOpen(!materialsDropdownOpen)}
-              className={`flex items-center gap-1.5 rounded-xl px-2.5 2xl:px-3 py-1.5 2xl:py-2 text-xs 2xl:text-sm font-bold transition-all cursor-pointer ${
-                pathname.startsWith("/books") || pathname.startsWith("/notes")
-                  ? "bg-blue-50/90 text-blue-700 shadow-2xs border border-blue-100"
-                  : "text-slate-700 hover:bg-slate-100/80 hover:text-blue-700"
-              }`}
-            >
-              <GraduationCap className="h-4 w-4 text-blue-600" />
-              <span className="hidden 2xl:inline">Study Material</span>
-              <span className="2xl:hidden">Material</span>
-              <ChevronDown className={`h-3.5 w-3.5 text-slate-400 transition-transform duration-200 ${materialsDropdownOpen ? "rotate-180 text-blue-600" : ""}`} />
-            </button>
-
-            {materialsDropdownOpen && (
-              <div className="absolute left-0 top-full pt-2 w-64 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
-                <div className="rounded-2xl border border-slate-200 bg-white p-2 shadow-xl space-y-1">
-                  {materialsMenu.map((item) => {
-                    const Icon = item.icon;
-                    return (
-                      <Link
-                        key={item.name}
-                        href={item.href}
-                        onClick={() => setMaterialsDropdownOpen(false)}
-                        className="group flex items-center justify-between rounded-xl px-3 py-2.5 hover:bg-slate-50 transition-all"
-                      >
-                        <div className="flex items-center gap-2.5">
-                          <div className="bg-slate-100 group-hover:bg-blue-50 p-1.5 rounded-lg text-slate-500 group-hover:text-blue-600 transition-colors">
-                            <Icon className="h-4 w-4" />
-                          </div>
-                          <span className="text-xs font-semibold text-slate-800 group-hover:text-blue-700">
-                            {item.name}
-                          </span>
-                        </div>
-                      </Link>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* 3. PRACTICE ZONE */}
-          <div 
-            className="relative"
-            onMouseEnter={() => setPracticeDropdownOpen(true)}
-            onMouseLeave={() => setPracticeDropdownOpen(false)}
-          >
-            <button
-              onClick={() => setPracticeDropdownOpen(!practiceDropdownOpen)}
-              className={`flex items-center gap-1.5 rounded-xl px-2.5 2xl:px-3 py-1.5 2xl:py-2 text-xs 2xl:text-sm font-semibold transition-all cursor-pointer ${
-                pathname.startsWith("/papers") || pathname.startsWith("/mocks") || pathname.startsWith("/speed-test") || pathname.startsWith("/daily-quiz") || pathname.startsWith("/typing")
-                  ? "bg-slate-100 text-slate-900"
-                  : "text-slate-700 hover:bg-slate-100/80 hover:text-blue-700"
-              }`}
-            >
-              <Zap className="h-4 w-4 text-blue-600" />
-              <span>Practice</span>
-              <ChevronDown className={`h-3.5 w-3.5 text-slate-400 transition-transform duration-200 ${practiceDropdownOpen ? "rotate-180 text-blue-600" : ""}`} />
-            </button>
-
-            {practiceDropdownOpen && (
-              <div className="absolute left-0 top-full pt-2 w-64 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
-                <div className="rounded-2xl border border-slate-200 bg-white p-2 shadow-xl space-y-1">
-                  {practiceMenu.map((item) => {
-                    const Icon = item.icon;
-                    return (
-                      <Link
-                        key={item.name}
-                        href={item.href}
-                        onClick={() => setPracticeDropdownOpen(false)}
-                        className="group flex items-center justify-between rounded-xl px-3 py-2.5 hover:bg-slate-50 transition-all"
-                      >
-                        <div className="flex items-center gap-2.5">
-                          <div className="bg-slate-100 group-hover:bg-blue-50 p-1.5 rounded-lg text-slate-500 group-hover:text-blue-600 transition-colors">
-                            <Icon className="h-4 w-4" />
-                          </div>
-                          <span className="text-xs font-semibold text-slate-800 group-hover:text-blue-700">
-                            {item.name}
-                          </span>
-                        </div>
-                      </Link>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* 4. BLOG & UPDATES */}
-          <Link
-            href="/blog"
-            className={`flex items-center gap-1.5 rounded-xl px-2.5 2xl:px-3 py-1.5 2xl:py-2 text-xs 2xl:text-sm font-bold transition-all relative ${
-              pathname.startsWith("/blog")
-                ? "bg-blue-50/90 text-blue-700 shadow-2xs border border-blue-100"
-                : "text-slate-700 hover:bg-slate-100/80 hover:text-blue-700"
-            }`}
-          >
-            <Newspaper className="h-4 w-4 text-blue-600" />
-            <span className="hidden 2xl:inline">Blog & Updates</span>
-            <span className="2xl:hidden">Blog</span>
-          </Link>
-          
-          {/* 5. TYPING TEST */}
-          <Link
-            href="/typing"
-            className={`flex items-center gap-1.5 rounded-xl px-2.5 2xl:px-3 py-1.5 2xl:py-2 text-xs 2xl:text-sm font-bold transition-all relative ${
-              pathname.startsWith("/typing")
-                ? "bg-blue-50/90 text-blue-700 shadow-2xs border border-blue-100"
-                : "text-slate-700 hover:bg-slate-100/80 hover:text-blue-700"
-            }`}
-          >
-            <Keyboard className="h-4 w-4 text-blue-600" />
-            <span>Typing</span>
-          </Link>
-
-          {/* 6. SSC TOOLKIT DROPDOWN */}
-          <div 
-            className="relative"
-            onMouseEnter={() => setToolkitDropdownOpen(true)}
-            onMouseLeave={() => setToolkitDropdownOpen(false)}
-          >
-            <button
-              onClick={() => setToolkitDropdownOpen(!toolkitDropdownOpen)}
-              className={`flex items-center gap-1.5 rounded-xl px-2.5 2xl:px-3 py-1.5 2xl:py-2 text-xs 2xl:text-sm font-semibold transition-all cursor-pointer ${
-                pathname.startsWith("/toolkit")
-                  ? "bg-slate-100 text-slate-900"
-                  : "text-slate-700 hover:bg-slate-100/80 hover:text-blue-700"
-              }`}
-            >
-              <Wrench className="h-4 w-4 text-slate-500" />
-              <span className="hidden 2xl:inline">Candidate Tools</span>
-              <span className="2xl:hidden">Tools</span>
-              <ChevronDown className={`h-3.5 w-3.5 text-slate-400 transition-transform duration-200 ${toolkitDropdownOpen ? "rotate-180 text-blue-600" : ""}`} />
-            </button>
-
-            {toolkitDropdownOpen && (
-              <div className="absolute right-0 top-full pt-2 w-64 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
-                <div className="rounded-2xl border border-slate-200 bg-white p-2 shadow-xl space-y-1">
-                  {toolkitMenu.map((item) => {
-                    const Icon = item.icon;
-                    return (
-                      <Link
-                        key={item.name}
-                        href={item.href}
-                        onClick={() => setToolkitDropdownOpen(false)}
-                        className="group flex items-center justify-between rounded-xl px-3 py-2.5 hover:bg-slate-50 transition-all"
-                      >
-                        <div className="flex items-center gap-2.5">
-                          <div className="bg-slate-100 group-hover:bg-blue-50 p-1.5 rounded-lg text-slate-500 group-hover:text-blue-600 transition-colors">
-                            <Icon className="h-4 w-4" />
-                          </div>
-                          <span className="text-xs font-semibold text-slate-800 group-hover:text-blue-700">
-                            {item.name}
-                          </span>
-                        </div>
-                      </Link>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
-          </div>
-          
+            return (
+              <Link
+                key={menu.id}
+                href={menu.href || "#"}
+                target={menu.target || "_self"}
+                className={`flex items-center gap-1.5 rounded-xl px-2.5 2xl:px-3 py-1.5 2xl:py-2 text-xs 2xl:text-sm font-bold transition-all relative cursor-pointer ${
+                  isLinkActive
+                    ? isPapersTab
+                      ? "bg-blue-600 text-white shadow-sm shadow-blue-500/20"
+                      : "bg-blue-50/90 text-blue-700 shadow-2xs border border-blue-100"
+                    : "text-slate-800 hover:bg-blue-50/80 hover:text-blue-700"
+                }`}
+              >
+                <NavigationIcon
+                  name={menu.icon}
+                  className={`h-4 w-4 ${isLinkActive && isPapersTab ? "text-white" : "text-blue-600"}`}
+                />
+                <span>{menu.name}</span>
+                {menu.badge && (
+                  <span
+                    className={`rounded-full text-[9px] font-black px-1.5 py-0.5 uppercase tracking-wide shrink-0 ${
+                      isPapersTab && isLinkActive
+                        ? "bg-amber-400 text-slate-950"
+                        : "bg-amber-100 text-amber-900 border border-amber-300"
+                    }`}
+                  >
+                    {menu.badge}
+                  </span>
+                )}
+                {menu.target === "_blank" && <ExternalLink className="h-2.5 w-2.5 text-slate-400" />}
+              </Link>
+            );
+          })}
         </nav>
 
         {/* User Auth & Quick Action Controls */}
@@ -496,128 +381,105 @@ export default function UserNav() {
           </div>
 
           <div className="flex flex-col gap-1 pb-4">
-            
-            {/* 0. DIRECT PYQ SHIFT PAPERS FOR MOBILE */}
-            <Link
-              href="/papers"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-extrabold bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-md shadow-blue-500/20 active:scale-95 transition-all mb-1"
-            >
-              <div className="flex items-center gap-2.5">
-                <FileText className="h-5 w-5 text-amber-300" />
-                <span>PYQ Shift Papers (Official)</span>
-              </div>
-              <span className="rounded-md bg-amber-400 text-slate-950 text-[10px] font-black px-2 py-0.5">
-                PDF + Test
-              </span>
-            </Link>
+            {activeNavItems.map((menu) => {
+              if (menu.is_dropdown) {
+                const isExams = menu.id === "exams";
+                const isOpen = Boolean(mobileOpenDropdowns[menu.id]);
+                const activeSubItems = (menu.sub_items || [])
+                  .filter((s) => s.is_active)
+                  .sort((a, b) => a.sort_order - b.sort_order);
 
-            {/* 1. Mobile SSC Exams */}
-            <div>
-              <button 
-                type="button"
-                onClick={() => setMobileExamsOpen(!mobileExamsOpen)}
-                className="flex w-full items-center justify-between rounded-xl px-4 py-3 text-sm font-extrabold text-gray-800 hover:bg-gray-50 active:bg-gray-100 touch-manipulation cursor-pointer select-none"
-              >
-                <div className="flex items-center gap-2.5">
-                  <Target className="h-5 w-5 text-blue-600" />
-                  <span>Question Bank</span>
-                </div>
-                <ChevronDown className={`h-4 w-4 text-gray-500 transition-transform ${mobileExamsOpen ? 'rotate-180 text-blue-600' : ''}`} />
-              </button>
-              {mobileExamsOpen && (
-                <div className="ml-4 mt-1 border-l-2 border-blue-200 pl-2 space-y-1">
-                  {sscSubExams.map((subEx) => (
-                    <Link
-                      key={subEx.slug}
-                      href={`/exams/${subEx.slug}`}
-                      onClick={() => setMobileMenuOpen(false)}
-                      className="flex items-center justify-between rounded-xl px-3 py-2.5 text-sm font-bold text-gray-800 hover:bg-blue-50 active:bg-blue-100 hover:text-blue-700 touch-manipulation"
+                return (
+                  <div key={menu.id}>
+                    <button 
+                      type="button"
+                      onClick={() => setMobileOpenDropdowns((prev) => ({ ...prev, [menu.id]: !prev[menu.id] }))}
+                      className="flex w-full items-center justify-between rounded-xl px-4 py-3 text-sm font-extrabold text-gray-800 hover:bg-gray-50 active:bg-gray-100 touch-manipulation cursor-pointer select-none"
                     >
-                      {subEx.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
+                      <div className="flex items-center gap-2.5">
+                        <NavigationIcon name={menu.icon} className="h-5 w-5 text-blue-600" />
+                        <span>{menu.name}</span>
+                        {menu.badge && (
+                          <span className="text-[9px] font-black bg-amber-400 text-slate-950 px-1.5 py-0.2 rounded-full">
+                            {menu.badge}
+                          </span>
+                        )}
+                      </div>
+                      <ChevronDown className={`h-4 w-4 text-gray-500 transition-transform ${isOpen ? 'rotate-180 text-blue-600' : ''}`} />
+                    </button>
+                    {isOpen && (
+                      <div className="ml-4 mt-1 border-l-2 border-blue-200 pl-2 space-y-1">
+                        {isExams ? (
+                          sscSubExams.map((subEx) => (
+                            <Link
+                              key={subEx.slug}
+                              href={`/exams/${subEx.slug}`}
+                              onClick={() => setMobileMenuOpen(false)}
+                              className="flex items-center justify-between rounded-xl px-3 py-2 text-sm font-bold text-gray-800 hover:bg-blue-50 active:bg-blue-100 hover:text-blue-700 touch-manipulation"
+                            >
+                              {subEx.name}
+                            </Link>
+                          ))
+                        ) : (
+                          activeSubItems.map((sub) => (
+                            <Link
+                              key={sub.id}
+                              href={sub.href}
+                              target={sub.target || "_self"}
+                              onClick={() => setMobileMenuOpen(false)}
+                              className="flex items-center justify-between rounded-xl px-3 py-2 text-sm font-bold text-gray-800 hover:bg-blue-50 active:bg-blue-100 hover:text-blue-700 touch-manipulation"
+                            >
+                              <div className="flex items-center gap-2">
+                                <NavigationIcon name={sub.icon} className="h-4 w-4 text-slate-500" />
+                                <span>{sub.name}</span>
+                              </div>
+                              {sub.badge && (
+                                <span className="text-[9px] font-black bg-amber-100 text-amber-900 px-1.5 py-0.2 rounded-full">
+                                  {sub.badge}
+                                </span>
+                              )}
+                            </Link>
+                          ))
+                        )}
+                      </div>
+                    )}
+                  </div>
+                );
+              }
 
-            {/* 2. Mobile Study Material */}
-            <div>
-              <button 
-                type="button"
-                onClick={() => setMobileMaterialsOpen(!mobileMaterialsOpen)}
-                className="flex w-full items-center justify-between rounded-xl px-4 py-3 text-sm font-extrabold text-gray-800 hover:bg-gray-50 active:bg-gray-100 touch-manipulation cursor-pointer select-none"
-              >
-                <div className="flex items-center gap-2.5">
-                  <GraduationCap className="h-5 w-5 text-blue-600" />
-                  <span>Study Material</span>
-                </div>
-                <ChevronDown className={`h-4 w-4 text-gray-500 transition-transform ${mobileMaterialsOpen ? 'rotate-180 text-blue-600' : ''}`} />
-              </button>
-              {mobileMaterialsOpen && (
-                <div className="ml-4 mt-1 border-l-2 border-blue-200 pl-2 space-y-1">
-                  {materialsMenu.map((item) => (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      onClick={() => setMobileMenuOpen(false)}
-                      className="flex items-center gap-2.5 rounded-xl px-3 py-2.5 text-sm font-bold text-gray-800 hover:bg-blue-50 active:bg-blue-100 hover:text-blue-700 touch-manipulation"
+              return (
+                <Link
+                  key={menu.id}
+                  href={menu.href || "#"}
+                  target={menu.target || "_self"}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`flex items-center justify-between rounded-xl px-4 py-3 text-sm font-extrabold transition-all ${
+                    menu.id === "papers"
+                      ? "bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-md shadow-blue-500/20 active:scale-95 mb-1"
+                      : "text-gray-800 hover:bg-gray-50 active:bg-gray-100"
+                  } touch-manipulation`}
+                >
+                  <div className="flex items-center gap-2.5">
+                    <NavigationIcon
+                      name={menu.icon}
+                      className={`h-5 w-5 ${menu.id === "papers" ? "text-amber-300" : "text-blue-600"}`}
+                    />
+                    <span>{menu.name}</span>
+                  </div>
+                  {menu.badge && (
+                    <span
+                      className={`rounded-md text-[10px] font-black px-2 py-0.5 ${
+                        menu.id === "papers"
+                          ? "bg-amber-400 text-slate-950"
+                          : "bg-amber-100 text-amber-900 border border-amber-300"
+                      }`}
                     >
-                      {item.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* 3. Mobile Practice Zone */}
-            <div>
-              <button 
-                type="button"
-                onClick={() => setMobilePracticeOpen(!mobilePracticeOpen)}
-                className="flex w-full items-center justify-between rounded-xl px-4 py-3 text-sm font-extrabold text-gray-800 hover:bg-gray-50 active:bg-gray-100 touch-manipulation cursor-pointer select-none"
-              >
-                <div className="flex items-center gap-2.5">
-                  <Zap className="h-5 w-5 text-blue-600" />
-                  <span>Practice Zone</span>
-                </div>
-                <ChevronDown className={`h-4 w-4 text-gray-500 transition-transform ${mobilePracticeOpen ? 'rotate-180 text-blue-600' : ''}`} />
-              </button>
-              {mobilePracticeOpen && (
-                <div className="ml-4 mt-1 border-l-2 border-blue-200 pl-2 space-y-1">
-                  {practiceMenu.map((item) => (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      onClick={() => setMobileMenuOpen(false)}
-                      className="flex items-center gap-2.5 rounded-xl px-3 py-2.5 text-sm font-bold text-gray-800 hover:bg-blue-50 active:bg-blue-100 hover:text-blue-700 touch-manipulation"
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* 4. Mobile Blog & Typing */}
-            <Link
-              href="/blog"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-2.5 rounded-xl px-4 py-3 text-sm font-extrabold text-gray-800 hover:bg-gray-50 active:bg-gray-100 touch-manipulation"
-            >
-              <Newspaper className="h-5 w-5 text-blue-600" />
-              <span>Blog & Updates</span>
-            </Link>
-
-            <Link
-              href="/typing"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-2.5 rounded-xl px-4 py-3 text-sm font-extrabold text-gray-800 hover:bg-gray-50 active:bg-gray-100 touch-manipulation"
-            >
-              <Keyboard className="h-5 w-5 text-blue-600" />
-              <span>Typing Test</span>
-            </Link>
-
+                      {menu.badge}
+                    </span>
+                  )}
+                </Link>
+              );
+            })}
           </div>
 
           {/* User Auth Section */}

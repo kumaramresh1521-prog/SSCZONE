@@ -27,6 +27,7 @@ import {
   Network,
   Globe,
   Folder,
+  Compass,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { supabase } from "@/lib/supabase";
@@ -40,6 +41,7 @@ type MenuItem = {
 const menuItems: MenuItem[] = [
   { label: "Dashboard", href: "/admin", icon: BarChart3 },
   { label: "SEO & Meta Engine", href: "/admin/seo", icon: Globe },
+  { label: "Menu & Navigation", href: "/admin/navigation", icon: Compass },
   { label: "Homepage CMS", href: "/admin/homepage", icon: LayoutTemplate },
   { label: "Admin Tools", href: "/admin/tools", icon: Wrench },
   { label: "System & Integrations", href: "/admin/integrations", icon: Network },

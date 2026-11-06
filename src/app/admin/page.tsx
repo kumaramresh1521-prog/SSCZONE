@@ -29,6 +29,7 @@ import {
   Flag,
   CheckCircle2,
   AlertTriangle,
+  Compass,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { supabase } from "@/lib/supabase";
@@ -124,6 +125,13 @@ const QUICK_LINKS = [
 ];
 
 const MODULES: ModuleItem[] = [
+  {
+    title: "Menu & Navigation",
+    href: "/admin/navigation",
+    icon: Compass,
+    desc: "Customize header navbar, sub-menus, toggle active/hidden & add custom links.",
+    accent: "text-amber-300 bg-amber-500/10 border-amber-400/20",
+  },
   {
     title: "Exams",
     href: "/admin/exams",

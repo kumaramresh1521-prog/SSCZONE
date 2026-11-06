@@ -602,14 +602,14 @@
   {
     "id": 8252,
     "paper_id": 53,
-    "question_text": "Evaluate 1962.",
+    "question_text": "Evaluate: 196² मान ज्ञात कीजिए: 196²",
     "option_a": "38496",
     "option_b": "38436",
     "option_c": "36466",
     "option_d": "38416",
     "correct_answer": "D",
     "question_number": 51,
-    "explanation": null
+    "explanation": "196² = (200 - 4)² = 200² - 2(200)(4) + 4² = 40000 - 1600 + 16 = 38416."
   },
   {
     "id": 8253,

@@ -842,14 +842,14 @@
   {
     "id": 3072,
     "paper_id": 13,
-    "question_text": "Simplify: सरल करें:",
+    "question_text": "Simplify: √98 - √32 + √50 सरल करें: √98 - √32 + √50",
     "option_a": "7√2",
     "option_b": "6√2",
     "option_c": "5√2",
     "option_d": "8√2",
     "correct_answer": "D",
     "question_number": 71,
-    "explanation": null
+    "explanation": "Break down each radical:\n√98 = √(49 × 2) = 7√2\n√32 = √(16 × 2) = 4√2\n√50 = √(25 × 2) = 5√2\nResult: 7√2 - 4√2 + 5√2 = 8√2."
   },
   {
     "id": 3073,

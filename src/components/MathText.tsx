@@ -96,6 +96,10 @@ function formatRawMathText(plainText: string): string {
     /\[Image:\s*([^\s\]]+)\]/gi,
     '<div class="my-2.5 inline-block max-w-full"><img src="$1" alt="Figure" loading="eager" decoding="async" class="max-w-full rounded-xl border border-slate-200 bg-white shadow-2xs" style="max-height: 280px; object-fit: contain;" /></div>'
   );
+  formatted = formatted.replace(
+    /&lt;img\s+[^&]*?src=(?:&quot;|&#039;|")([^"'\s&]+)(?:&quot;|&#039;|")[^&]*?&gt;/gi,
+    '<div class="my-2.5 inline-block max-w-full"><img src="$1" alt="Figure" loading="eager" decoding="async" class="max-w-full rounded-xl border border-slate-200 bg-white shadow-2xs" style="max-height: 280px; object-fit: contain;" /></div>'
+  );
 
   return formatted;
 }
@@ -115,6 +119,7 @@ function renderMath(text: string): string {
     !text.includes("∛") &&
     !text.includes("![") &&
     !text.includes("[Image:") &&
+    !text.includes("<img") &&
     !text.includes("\n") &&
     !/[⁰¹²³⁴⁵⁶⁷⁸⁹−–—]/.test(text)
   ) {

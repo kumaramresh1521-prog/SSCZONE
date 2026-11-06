@@ -12,7 +12,7 @@ export function hasHindi(value?: string | null): boolean {
 
 // ── Determines whether an option is a descriptive sentence that can be translated ──
 // Strictly protects: Reasoning codes (MoNdAy, BSIhHU), letters (BD : JL, LOM), numbers, units (1080 rupees), formulas, and diagrams
-export function isTranslatableOption(text?: string | null): boolean {
+export function isTranslatableOption(text?: string | null, isQuantSection: boolean = false): boolean {
   if (!text || !text.trim()) return false;
   const trimmed = text.trim();
 
@@ -23,14 +23,23 @@ export function isTranslatableOption(text?: string | null): boolean {
   if (trimmed.includes("![") || trimmed.includes("/images/") || trimmed.includes("<img")) return false;
 
   // 3. Skip pure numeric, algebraic, ratio, coordinate, or currency expressions
-  if (/^[0-9\s.,+\-*/=^()√∛%:;₹$€£–—]+$/.test(trimmed)) return false;
+  if (/^[0-9\s.,+\-*/=^()√∛%:;₹$€£–—±<>°]+$/.test(trimmed)) return false;
 
-  // 4. Skip numeric values with standard measurement units (e.g. "1080 rupees", "5.5 cm", "8 days", "25%")
-  if (/^[-+]?[\d.,\s]+\s*(?:cm|m|km|mm|cm²|cm³|sec|min|hr|hours?|days?|rupees?|rs\.?|kg|gm|%|°|deg)?$/i.test(trimmed)) {
+  // 4. Skip numeric values with standard measurement units (e.g. "1080 rupees", "5.5 cm", "8 days", "25%", "8√2")
+  if (/^[-+]?[\d.,\s√]+\s*(?:cm|m|km|mm|cm²|cm³|m²|sec|min|hr|hours?|days?|rupees?|rs\.?|kg|gm|%|°|deg|radians?)?$/i.test(trimmed)) {
     return false;
   }
 
-  // 5. Skip letter codes, casing ciphers, and series (e.g. "MoNdAy", "TiIoGt", "BSIhHU", "BD : JL", "LOM", "F")
+  // 5. If this is Quantitative Aptitude, options are almost always formulas, numbers, or expressions
+  if (isQuantSection) {
+    // Only allow pure English multi-word sentences like "Cannot be determined", "Data insufficient", "None of the above"
+    const words = trimmed.match(/[A-Za-z]{3,}/g) ?? [];
+    if (words.length < 3 || /\d|[\+\-\*\/\^=√]/.test(trimmed)) {
+      return false;
+    }
+  }
+
+  // 6. Skip letter codes, casing ciphers, and series (e.g. "MoNdAy", "TiIoGt", "BSIhHU", "BD : JL", "LOM", "F")
   if (/^[A-Za-z0-9\s,:\-_+*]+$/.test(trimmed)) {
     const tokens = trimmed.split(/[\s,:\-_+*]+/).filter(Boolean);
 
@@ -47,7 +56,7 @@ export function isTranslatableOption(text?: string | null): boolean {
     }
   }
 
-  // 6. Only translate if option has at least 2 descriptive English words of length >= 3
+  // 7. Only translate if option has at least 2 descriptive English words of length >= 3
   // Examples that pass: "Neither conclusion I nor II follows", "Only statement I is correct", "Both 1 and 2 follow"
   const englishWords = trimmed.match(/[A-Za-z]{3,}/g) ?? [];
   return englishWords.length >= 2;
@@ -82,30 +91,57 @@ function maskProtectedTokens(text: string): { maskedText: string; tokens: string
   // 4. Protect Mixed-Case Coding Words (e.g. MoNdAy, TiIoGt, BsIHHu)
   replaceWithToken(/\b(?:[A-Z]+[a-z]+[A-Z][A-Za-z]*|[a-z]+[A-Z]+[a-z]*)\b/g);
 
-  // 5. Protect Letter Analogies and Series (e.g. "BD : JL", "LOM, ISJ, FWG", "A, C, E, G", "W-T-P-M")
+  // 5. Protect Letter Analogies and Series (e.g. "BD : JL", "LOM, ISJ, FWG", "A, C, E, G", "W-T-P-M", "EK :: MS")
+  replaceWithToken(/\b[A-Za-z0-9]+\s*::\s*[A-Za-z0-9]+\b/g);
   replaceWithToken(/\b[A-Z]{2,}\s*:\s*[A-Z]{2,}\b/g);
   replaceWithToken(/\b[A-Z]{2,}(?:\s*,\s*[A-Z]{2,})+\b/g);
   replaceWithToken(/\b[A-Z](?:\s*,\s*[A-Z])+\b/g);
   replaceWithToken(/\b[A-Z]{1,4}(?:-[A-Z]{1,4})+\b/g);
 
-  // 6. Protect Operator Substitution Codes (e.g. "16 D 4 A 8 C 2 B 5", "A denotes '+'")
+  // 6. Protect Trigonometric expressions (STRICT: prevents 'sin' becoming 'पाप', 'cot' becoming 'खाट')
+  // Covers: sin A, sin θ, sin²A, cos A, tan B, cot θ, sec A, cosec A, csc θ, sin(90° - A)
+  replaceWithToken(/\b(?:sin|cos|tan|cot|sec|cosec|csc)(?:²|³|\^[0-9]+)?(?:\s*(?:[A-Za-zθθαβγφxyz]|\([^\)\n]+\)|\d+°?))?\b/gi);
+
+  // 7. Protect Geometric symbols & angles (e.g. △ABC, ∠ABC, ∠A, AB ⊥ CD, AB ∥ CD)
+  replaceWithToken(/(?:△|∠|⊥|∥|≅|∼)\s*[A-Za-z0-9]+/g);
+
+  // 8. Protect Coordinates (e.g. (3, 2), (-5, -2), (0, 3), (x, y))
+  replaceWithToken(/\(\s*[-+]?\d*\.?\d+\s*,\s*[-+]?\d*\.?\d+\s*\)/g);
+  replaceWithToken(/\(\s*[xyz]\s*,\s*[xyz]\s*\)/gi);
+
+  // 9. Protect Ratios and Algebraic Equations (e.g. "3 : 4", "x = 4", "a + b = c")
+  replaceWithToken(/\b\d+\s*:\s*\d+(?:\s*:\s*\d+)?\b/g);
+  replaceWithToken(/\b[a-zA-Z]\s*=\s*[-+]?\d*\.?\d+\b/g);
+
+  // 10. Protect Operator Substitution Codes (e.g. "16 D 4 A 8 C 2 B 5", "A denotes '+'")
   replaceWithToken(/\b\d+\s+[A-Z]\s+\d+(?:\s+[A-Z]\s+\d+)*\b/g);
   replaceWithToken(/\b[A-Z]\s+(?:denotes|means|stands for|represents)\b/gi);
+
+  // 11. Normalize common SSC Math Phrases to prevent bad translations
+  current = current.replace(/\b(?:The\s+sum\s+is)\b/gi, "मूलधन है");
+  current = current.replace(/\b(?:A\s+sum\s+of\s+money|the\s+sum\s+of\s+money)\b/gi, "एक धनराशि");
+  current = current.replace(/\bEvaluate:\s*/gi, "मान ज्ञात कीजिए: ");
+  current = current.replace(/\bSimplify:\s*/gi, "सरल कीजिए: ");
 
   return { maskedText: current, tokens };
 }
 
-// ── Restore protected tokens into translated text ──
+// ── Restore protected tokens into translated text with Bulletproof Regex ──
 function unmaskTokens(translated: string, tokens: string[]): string {
   let result = translated;
   tokens.forEach((token, idx) => {
-    const p = `___PROTECT_${idx}___`;
-    result = result.split(p).join(token);
-    // Handle translation spacing anomalies or script variations
-    result = result.split(`___ PROTECT_${idx} ___`).join(token);
-    result = result.split(`___ PROTECT_ ${idx} ___`).join(token);
-    result = result.split(`___सुरक्षित_${idx}___`).join(token);
-    result = result.split(`___ सुरक्षित_${idx} ___`).join(token);
+    // Matches ___PROTECT_0___ and any variation Google Translate may emit (spaces, Hindi words, em-dashes)
+    const pattern = new RegExp(
+      `(?:___|---|—)\\s*(?:PROTECT|सुरक्षित|सुरक्षा|प्रोटेक्ट)\\s*_?\\s*${idx}\\s*(?:___|---|—)`,
+      "gi"
+    );
+    result = result.replace(pattern, () => token);
+
+    // Literal fallback replacement
+    const literal = `___PROTECT_${idx}___`;
+    if (result.includes(literal)) {
+      result = result.split(literal).join(token);
+    }
   });
   return result;
 }
@@ -197,7 +233,8 @@ export async function translateSingleQuestion(
   }
 
   // 1. STRICT RULE: English Comprehension section must NEVER be translated
-  if (isEnglishSection) {
+  const isEng = isEnglishSection || (q.question_number && q.question_number >= 76);
+  if (isEng) {
     return {
       question_text: q.question_text || "",
       option_a: q.option_a || "",
@@ -208,6 +245,8 @@ export async function translateSingleQuestion(
     };
   }
 
+  const isQuant = q.question_number && q.question_number >= 51 && q.question_number <= 75;
+
   // 2. Question Text: Use native Hindi if present, otherwise machine-translate with code protection
   const question_text = q.question_text_hi || (await translateToHindi(q.question_text || ""));
 
@@ -216,7 +255,7 @@ export async function translateSingleQuestion(
   const translateOption = async (raw?: string | null, hi?: string | null) => {
     if (hi) return hi;
     if (!raw) return "";
-    if (isTranslatableOption(raw)) {
+    if (isTranslatableOption(raw, isQuant)) {
       return await translateToHindi(raw);
     }
     return raw;

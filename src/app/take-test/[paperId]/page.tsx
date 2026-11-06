@@ -78,14 +78,18 @@ function splitBilingualText(text: string): { english: string; hindi: string; isB
   const firstHi = text.search(devanagariRegex);
   const prefix = text.substring(0, firstHi);
 
-  // Check if sentence-ending punctuation (? or .\s or :\s) exists right before firstHi,
+  // Check if sentence-ending punctuation (? or .\s or .\n) exists right before firstHi,
   // possibly followed by a short quote or token (e.g. 'consonant? "SIGNATURE" में...' or 'formed? GARDEN शब्द...')
-  const m = prefix.match(/(\?|\.\s|\.\n|:\s)\s*(["\w\s\d\+\-\=]{1,40})$/);
+  // NEVER split on colon ':' because colons introduce formulas, ratios (3:4), or coordinates!
+  const m = prefix.match(/(\?|\.\s|\.\n)\s*(["\w\s\d\+\-\=\/\^\{\}\(\)\[\]]{0,60})$/);
   if (m && m.index !== undefined) {
-    const punctPos = m.index + m[1].length;
-    const en = text.substring(0, punctPos).trim();
-    const hi = text.substring(punctPos).trim();
-    return { english: en, hindi: hi, isBilingual: true };
+    const isDecimal = m[1].startsWith(".") && m.index > 0 && /\d/.test(prefix[m.index - 1]);
+    if (!isDecimal) {
+      const punctPos = m.index + m[1].length;
+      const en = text.substring(0, punctPos).trim();
+      const hi = text.substring(punctPos).trim();
+      return { english: en, hindi: hi, isBilingual: true };
+    }
   }
 
   const en = text.substring(0, firstHi).trim();
@@ -484,12 +488,12 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
     }
   }
 
-  // 5. Smart CBT Image Preloader: Pre-cache all paper images for zero-lag rendering
+  // 5. Smart CBT Preloader: Pre-cache ALL paper images & translations before test begins
   useEffect(() => {
     if (questions.length === 0) return;
     let isCancelled = false;
 
-    // Extract all image URLs from questions, options, and explanations
+    // A. Image Preloading
     const imgUrls = new Set<string>();
     const imgRegex = /!\[[^\]]*\]\(([^)\s]+)\)|<img[^>]+src=["']([^"']+)["']|\/images\/pyq\/[^\s)"']+/g;
 
@@ -509,46 +513,92 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
     });
 
     const urls = Array.from(imgUrls);
+    let loadedImgCount = 0;
+
     if (urls.length > 0) {
-      setPreloadStatus({
-        totalImages: urls.length,
-        loadedImages: 0,
-        totalTranslations: 0,
-        loadedTranslations: 0,
-        isImagesDone: false,
-        isTranslationsDone: true,
-      });
-      let loadedCount = 0;
       urls.forEach((url) => {
         const img = new Image();
         img.onload = img.onerror = () => {
           if (isCancelled) return;
-          loadedCount++;
+          loadedImgCount++;
           setPreloadStatus((prev) => ({
             ...prev,
-            loadedImages: loadedCount,
-            isImagesDone: loadedCount >= urls.length,
+            loadedImages: loadedImgCount,
+            isImagesDone: loadedImgCount >= urls.length,
           }));
         };
         img.src = url;
       });
-    } else {
-      setPreloadStatus({
-        totalImages: 0,
-        loadedImages: 0,
-        totalTranslations: 0,
-        loadedTranslations: 0,
-        isImagesDone: true,
-        isTranslationsDone: true,
-      });
     }
+
+    // B. Full Translation Preloading
+    // Preload all questions in Sections 1-3 (Reasoning, GA, Quant) that do not yet have native Hindi
+    const isEngSection = (sec: SectionDef) => {
+      if (!sec) return false;
+      const combined = `${sec.name} ${sec.shortName}`.toLowerCase();
+      return combined.includes("english");
+    };
+
+    const transNeeded = questions.filter((q, idx) => {
+      const sec = getQuestionSection(idx);
+      if (isEngSection(sec)) return false;
+      if (q.question_text_hi || /[\u0900-\u097F]/.test(q.question_text || "")) return false;
+      return true;
+    });
+
+    setPreloadStatus({
+      totalImages: urls.length,
+      loadedImages: loadedImgCount,
+      isImagesDone: urls.length === 0 || loadedImgCount >= urls.length,
+      totalTranslations: transNeeded.length,
+      loadedTranslations: 0,
+      isTranslationsDone: transNeeded.length === 0,
+    });
+
+    if (transNeeded.length === 0) return;
+
+    // Background batch translation preloader: chunks of 4 questions to avoid rate-limiting
+    async function preloadAllTranslations() {
+      let loadedTransCount = 0;
+      const chunkSize = 4;
+      for (let i = 0; i < transNeeded.length; i += chunkSize) {
+        if (isCancelled) break;
+        const chunk = transNeeded.slice(i, i + chunkSize);
+        try {
+          const chunkResults = await Promise.all(
+            chunk.map(async (item) => {
+              const itemIdx = questions.indexOf(item);
+              const isEngSec = isEngSection(getQuestionSection(itemIdx));
+              const data = await translateSingleQuestion(item, isEngSec);
+              return { id: item.id, data };
+            })
+          );
+          if (isCancelled) break;
+          setTranslationsCache((prev) => {
+            const next = { ...prev };
+            chunkResults.forEach((r) => { next[r.id] = r.data; });
+            return next;
+          });
+          loadedTransCount += chunk.length;
+          setPreloadStatus((prev) => ({
+            ...prev,
+            loadedTranslations: Math.min(loadedTransCount, transNeeded.length),
+            isTranslationsDone: loadedTransCount >= transNeeded.length,
+          }));
+        } catch (err) {
+          console.warn("Background translation preloader caught:", err);
+        }
+      }
+    }
+
+    preloadAllTranslations();
 
     return () => {
       isCancelled = true;
     };
-  }, [questions]);
+  }, [questions, sections]);
 
-  // 5b. Smooth Background Translation Engine (Non-blocking)
+  // 5b. Smooth Fallback Translation Engine for Current / Next Question (in case background queue is still progressing)
   useEffect(() => {
     if (questions.length === 0) return;
     if (languageMode === "english") return;
@@ -559,14 +609,11 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
       return combined.includes("english");
     };
 
-    // Pre-translate current question + next 2 questions in advance
-    const targets = !finished
-      ? [
-          questions[currentIndex],
-          questions[currentIndex + 1],
-          questions[currentIndex + 2],
-        ].filter(Boolean)
-      : questions.slice(0, 25);
+    const targets = [
+      questions[currentIndex],
+      questions[currentIndex + 1],
+      questions[currentIndex + 2],
+    ].filter(Boolean);
 
     const needed = targets.filter((item) => {
       if (!item) return false;
@@ -580,11 +627,13 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
     if (needed.length === 0) return;
 
     let isMounted = true;
-    async function runTranslation() {
+    async function runImmediateTranslation() {
       try {
         const results = await Promise.all(
           needed.map(async (item) => {
-            const data = await translateSingleQuestion(item, false);
+            const itemIdx = questions.indexOf(item);
+            const isEngSec = isEngSection(getQuestionSection(itemIdx));
+            const data = await translateSingleQuestion(item, isEngSec);
             return { id: item.id, data };
           })
         );
@@ -597,13 +646,13 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
           });
         }
       } catch (err) {
-        console.warn("Translation preload caught:", err);
+        console.warn("Immediate translation caught:", err);
       }
     }
 
-    runTranslation();
+    runImmediateTranslation();
     return () => { isMounted = false; };
-  }, [currentIndex, languageMode, finished, questions, translationsCache, sections]);
+  }, [currentIndex, languageMode, questions, translationsCache, sections]);
 
   // 6. Start Exam Handler (with Fullscreen trigger)
   async function handleStartTest() {
@@ -2221,6 +2270,25 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
               // 2. Hindi Mode Selected (for Reasoning, GA, Quant)
               if (languageMode === "hindi") {
                 if (hiQuestionText) {
+                  // Failsafe: If English statement contains equations/numbers but Hindi is just a short prompt (e.g. "मान ज्ञात कीजिए:"),
+                  // render the full equation along with Hindi prompt so no formula is ever hidden!
+                  const enHasMath = /\d|[\+\-\*\/\^=√%]/.test(enQuestionText || currentQ.question_text);
+                  const hiHasMath = /\d|[\+\-\*\/\^=√%]/.test(hiQuestionText);
+                  const hiIsJustShortPrompt = hiQuestionText.length < 35 && !hiHasMath;
+
+                  if (enHasMath && hiIsJustShortPrompt) {
+                    return (
+                      <div className="space-y-2.5">
+                        <div className={`font-semibold text-slate-900 ${fontClasses.qText} break-words`}>
+                          <MathText text={enQuestionText || currentQ.question_text} />
+                        </div>
+                        <div className="border-t border-slate-200 pt-1.5 text-xs sm:text-sm text-slate-700 bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                          <MathText text={hiQuestionText} />
+                        </div>
+                      </div>
+                    );
+                  }
+
                   return (
                     <div className={`font-semibold text-slate-900 ${fontClasses.qText} break-words`}>
                       <MathText text={hiQuestionText} />

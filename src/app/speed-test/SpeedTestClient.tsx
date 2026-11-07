@@ -1230,10 +1230,10 @@ export default function SpeedTestClient() {
           )}
         </header>
 
-        {/* Main Single-Viewport Exam Hall Area (Zero Outer Scroll) */}
-        <main className="flex-1 min-h-0 max-w-4xl w-full mx-auto p-2 sm:p-3 flex flex-col overflow-hidden">
-          {/* Unified Question Card with Internal Scrollable Body & Pinned Footer */}
-          <div className="flex-1 min-h-0 rounded-2xl border border-slate-200/90 bg-white shadow-xs flex flex-col overflow-hidden">
+        {/* Main Exam Hall Area: Card sits naturally at top with compact spacing */}
+        <main className="flex-1 min-h-0 max-w-4xl w-full mx-auto p-2 sm:p-4 flex flex-col justify-start overflow-y-auto">
+          {/* Unified Question Card with snug fit - Action Bar directly below options */}
+          <div className="w-full rounded-2xl border border-slate-200/90 bg-white shadow-sm flex flex-col overflow-hidden">
             {/* 1. Question Card Header (Fixed at top of card) */}
             <div className="shrink-0 px-4 py-2 sm:px-6 sm:py-2.5 border-b border-slate-100 flex items-center justify-between flex-wrap gap-2 bg-slate-50/50">
               <div className="flex items-center gap-2 flex-wrap min-w-0">
@@ -1290,8 +1290,8 @@ export default function SpeedTestClient() {
               </div>
             </div>
 
-            {/* 2. Scrollable Question Content (Tightly fits in 1 screen, internal scroll ONLY if needed) */}
-            <div className="flex-1 min-h-0 overflow-y-auto p-4 sm:p-5 space-y-3.5 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-thumb]:bg-slate-300 [&::-webkit-scrollbar-thumb]:rounded-full">
+            {/* 2. Question Content: Snug fit with max height cap (Scrolls ONLY if question is very long) */}
+            <div className="p-4 sm:p-5 space-y-3.5 max-h-[calc(100dvh-13rem)] overflow-y-auto [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-thumb]:bg-slate-300 [&::-webkit-scrollbar-thumb]:rounded-full">
               {/* Informative notice for English Section */}
               {isEnglishSection && (
                 <div className="px-3 py-1.5 rounded-xl bg-blue-50 border border-blue-200 text-[11px] text-blue-800 flex items-center gap-1.5 font-medium">

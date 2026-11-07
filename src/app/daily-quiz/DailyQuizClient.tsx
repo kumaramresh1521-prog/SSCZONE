@@ -669,11 +669,11 @@ export default function DailyQuizClient() {
         </header>
 
         {/* MAIN TESTING WORKSPACE (Fits 100% in viewport without outer scrolling) */}
-        <div className="flex-1 min-h-0 max-w-7xl mx-auto w-full p-2 sm:p-3 grid grid-cols-1 lg:grid-cols-4 gap-3 overflow-hidden">
+        <div className="flex-1 min-h-0 max-w-7xl mx-auto w-full p-2 sm:p-3 grid grid-cols-1 lg:grid-cols-4 gap-3 overflow-y-auto">
           {/* QUESTION AREA (3 COLS) */}
-          <div className="lg:col-span-3 flex flex-col min-h-0 h-full overflow-hidden">
-            {/* Unified Question Card */}
-            <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs flex flex-col min-h-0 h-full overflow-hidden">
+          <div className="lg:col-span-3 flex flex-col min-h-0">
+            {/* Unified Question Card with snug fit - Action Bar directly below options */}
+            <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs flex flex-col overflow-hidden">
               {/* Question Header & Flag Report (Fixed at top of card) */}
               <div className="shrink-0 px-4 py-2 sm:px-6 sm:py-2.5 border-b border-slate-100 flex items-center justify-between flex-wrap gap-2 bg-slate-50/50">
                 <div className="flex items-center gap-2 flex-wrap min-w-0">
@@ -713,8 +713,8 @@ export default function DailyQuizClient() {
                 </div>
               </div>
 
-              {/* Scrollable Question Body (Internal scroll ONLY if question is very long) */}
-              <div className="flex-1 min-h-0 overflow-y-auto px-4 py-3 sm:px-6 sm:py-4 space-y-3.5 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-thumb]:bg-slate-300 [&::-webkit-scrollbar-thumb]:rounded-full select-text">
+              {/* Question Body: Snug fit with max height cap (Scrolls ONLY if question is very long) */}
+              <div className="px-4 py-3 sm:px-6 sm:py-4 space-y-3.5 max-h-[calc(100dvh-13rem)] overflow-y-auto [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-thumb]:bg-slate-300 [&::-webkit-scrollbar-thumb]:rounded-full select-text">
                 {/* Question Statement with KaTeX support */}
                 <div className="text-sm sm:text-base text-slate-900 leading-relaxed font-semibold">
                   <MathText text={displayQuestion.text} />
@@ -831,22 +831,23 @@ export default function DailyQuizClient() {
                   <Layers className="w-4 h-4 text-blue-600" />
                   Question Palette
                 </h3>
-                <span className="text-[11px] font-bold text-slate-500">
-                  {answeredCount}/{activeQuiz.questions.length} Done
-                </span>
-              </div>
-              <div className="flex-1 min-h-0 overflow-y-auto p-3.5">
-                <button
-                  type="button"
-                  onClick={() => setPaletteOpen(false)}
-                  className="lg:hidden p-1 text-slate-400 hover:text-slate-600"
-                >
-                  <X className="w-5 h-5" />
-                </button>
+                <div className="flex items-center gap-2">
+                  <span className="text-[11px] font-bold text-slate-500">
+                    {answeredCount}/{activeQuiz.questions.length} Done
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => setPaletteOpen(false)}
+                    className="lg:hidden p-1 text-slate-400 hover:text-slate-600 cursor-pointer"
+                  >
+                    <X className="w-4 h-4" />
+                  </button>
+                </div>
               </div>
 
               {/* Status Summary */}
-              <div className="grid grid-cols-2 gap-2 text-xs mb-4">
+              <div className="p-3.5 space-y-3 flex-1 min-h-0 overflow-y-auto">
+                <div className="grid grid-cols-2 gap-2 text-xs">
                 <div className="flex items-center gap-1.5 text-slate-600">
                   <span className="w-3 h-3 rounded-full bg-emerald-500"></span>
                   <span>Answered: {answeredCount}</span>
@@ -899,14 +900,15 @@ export default function DailyQuizClient() {
                   );
                 })}
               </div>
+            </div>
 
-              {/* Side Ad */}
-              <div className="mt-auto pt-3 border-t border-slate-100">
-                <AdBanner slot="daily-quiz-side-palette" />
-              </div>
+            {/* Side Ad */}
+            <div className="shrink-0 pt-2 border-t border-slate-100">
+              <AdBanner slot="daily-quiz-side-palette" />
             </div>
           </div>
         </div>
+      </div>
 
         {/* SUBMIT CONFIRMATION MODAL */}
         {showSubmitConfirm && (

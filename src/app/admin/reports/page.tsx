@@ -89,18 +89,31 @@ export default function AdminReportsPage() {
     setEditingReportId(reportId);
     setLoadingQuestion(true);
     try {
-      const { data, error } = await supabase
+      let { data } = await supabase
         .from("questions")
         .select("*")
         .eq("id", questionId)
-        .single();
+        .maybeSingle();
 
-      if (error || !data) {
+      let isPaperQ = false;
+      if (!data) {
+        const pqRes = await supabase
+          .from("paper_questions")
+          .select("*")
+          .eq("id", questionId)
+          .maybeSingle();
+        if (pqRes.data) {
+          data = pqRes.data;
+          isPaperQ = true;
+        }
+      }
+
+      if (!data) {
         toast.error("Could not fetch question details.");
         return;
       }
 
-      setEditingQuestion(data);
+      setEditingQuestion({ ...data, _isPaperQ: isPaperQ } as any);
     } catch {
       toast.error("Failed to load question for editing.");
     } finally {
@@ -114,22 +127,45 @@ export default function AdminReportsPage() {
 
     setSavingQuestion(true);
     try {
-      const { error } = await supabase
-        .from("questions")
-        .update({
-          question_text: editingQuestion.question_text,
-          option_a: editingQuestion.option_a,
-          option_b: editingQuestion.option_b,
-          option_c: editingQuestion.option_c,
-          option_d: editingQuestion.option_d,
-          correct_answer: editingQuestion.correct_answer,
-          explanation: editingQuestion.explanation,
-        })
-        .eq("id", editingQuestion.id);
+      if ((editingQuestion as any)._isPaperQ) {
+        const res = await fetch("/api/papers/questions", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            id: editingQuestion.id,
+            paper_id: (editingQuestion as any).paper_id || 1,
+            question_number: (editingQuestion as any).question_number || 1,
+            question_text: editingQuestion.question_text,
+            option_a: editingQuestion.option_a,
+            option_b: editingQuestion.option_b,
+            option_c: editingQuestion.option_c,
+            option_d: editingQuestion.option_d,
+            correct_answer: editingQuestion.correct_answer,
+            explanation: editingQuestion.explanation,
+          }),
+        });
+        const json = await res.json();
+        if (!res.ok) throw new Error(json.error || "Failed to save");
+      } else {
+        const res = await fetch("/api/admin/questions", {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            id: editingQuestion.id,
+            question_text: editingQuestion.question_text,
+            option_a: editingQuestion.option_a,
+            option_b: editingQuestion.option_b,
+            option_c: editingQuestion.option_c,
+            option_d: editingQuestion.option_d,
+            correct_answer: editingQuestion.correct_answer,
+            explanation: editingQuestion.explanation,
+          }),
+        });
+        const json = await res.json();
+        if (!res.ok) throw new Error(json.error || "Failed to save");
+      }
 
-      if (error) throw error;
-
-      toast.success(`Question #${editingQuestion.id} updated successfully! 🎉`);
+      toast.success(`Question #${editingQuestion.id} updated & synced everywhere! 🎉`);
 
       // Automatically mark report as resolved
       if (editingReportId) {
@@ -139,8 +175,8 @@ export default function AdminReportsPage() {
       setEditingQuestion(null);
       setEditingReportId(null);
       fetchReports();
-    } catch {
-      toast.error("Failed to save question edits.");
+    } catch (err: any) {
+      toast.error(err.message || "Failed to save question edits.");
     } finally {
       setSavingQuestion(false);
     }

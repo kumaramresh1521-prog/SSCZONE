@@ -615,7 +615,7 @@ export default function PaperQuestionsPage() {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Failed to save question");
 
-      toast.success(editingId ? "Question updated successfully!" : "Question added successfully!");
+      toast.success(editingId ? "Question updated successfully! (Synced with Question Bank ⚡)" : "Question added successfully!");
       resetForm();
       setActiveTab("list");
       loadQuestions();
@@ -1743,7 +1743,7 @@ export default function PaperQuestionsPage() {
               </h3>
               <p className="text-xs text-slate-500 mt-0.5">
                 {editingId
-                  ? "Update the question statement, option choices, or answer key. Changes sync instantly."
+                  ? "Update the question statement, option choices, or answer key. Changes sync instantly across PYQ Papers and Question Bank! ⚡"
                   : "Create and attach a new question to this shift paper."}
               </p>
             </div>

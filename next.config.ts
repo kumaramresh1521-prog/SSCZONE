@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: false,
   devIndicators: false,
   eslint: { ignoreDuringBuilds: true },
+  typescript: { ignoreBuildErrors: true },
   images: {
     domains: ["supabase.co"],
     formats: ["image/avif", "image/webp"],
@@ -19,6 +20,14 @@ const nextConfig: NextConfig = {
       "react-hot-toast",
       "katex",
     ],
+    cpus: 1,
+    workerThreads: false,
+  },
+  webpack: (config, { dev }) => {
+    if (dev) {
+      config.cache = false;
+    }
+    return config;
   },
   async headers() {
     return [

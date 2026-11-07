@@ -75,7 +75,7 @@ export default function QuestionsPage() {
   const [tierLevel, setTierLevel] = useState("General");
   const [bulkTierLevel, setBulkTierLevel] = useState("General");
   // Multi-Format Bulk State
-  const [bulkMode, setBulkMode] = useState<"excel" | "smartText" | "json" | "sscZoneLine">("excel");
+  const [bulkMode, setBulkMode] = useState<"excel" | "smartText" | "json" | "sscZoneLine" | "pyq">("excel");
   const [bulkParsedQuestions, setBulkParsedQuestions] = useState<any[]>([]);
   const [selectedBulkIndices, setSelectedBulkIndices] = useState<Set<number>>(new Set());
   const [bulkSmartText, setBulkSmartText] = useState("");
@@ -84,6 +84,16 @@ export default function QuestionsPage() {
   const [excelFile, setExcelFile] = useState<File | null>(null);
   const [excelDragging, setExcelDragging] = useState(false);
   const excelInputRef = useRef<HTMLInputElement>(null);
+  // PYQ Shift Papers Direct Import State
+  const [pyqPapers, setPyqPapers] = useState<any[]>([]);
+  const [selectedPyqPaperId, setSelectedPyqPaperId] = useState<number>(0);
+  const [pyqQuestionsList, setPyqQuestionsList] = useState<any[]>([]);
+  const [selectedPyqQIds, setSelectedPyqQIds] = useState<Set<number>>(new Set());
+  const [loadingPyq, setLoadingPyq] = useState(false);
+  const [importingPyq, setImportingPyq] = useState(false);
+  const [pyqSearch, setPyqSearch] = useState("");
+  const [pyqCustomTag, setPyqCustomTag] = useState("");
+  const [pyqSectionFilter, setPyqSectionFilter] = useState<"all" | "s1" | "s2" | "s3" | "s4">("all");
   // PDF state
   const [pdfParsing, setPdfParsing] = useState(false);
   const [pdfFile, setPdfFile] = useState<File | null>(null);
@@ -190,7 +200,7 @@ export default function QuestionsPage() {
         });
         const data = await res.json();
         if (!res.ok || data.error) throw new Error(data.error || "Update failed");
-        toast.success("Question updated!");
+        toast.success(data.message || (data.syncedToPyq ? "Question updated & synced to PYQ Shift Paper! ⚡" : "Question updated!"));
       } else {
         const res = await fetch("/api/admin/questions", {
           method: "POST",
@@ -823,6 +833,80 @@ Exam: SSC CHSL 2024`;
     );
   }
 
+  // ── PYQ Shift Papers Direct Import & Mapping Helpers ──
+  async function loadPyqPapersList() {
+    if (pyqPapers.length > 0) return;
+    try {
+      const res = await fetch("/api/admin/questions/import-pyq");
+      const data = await res.json();
+      if (data.papers) setPyqPapers(data.papers);
+    } catch (err: any) {
+      toast.error("Failed to load PYQ shift papers: " + err.message);
+    }
+  }
+
+  async function handleSelectPyqPaper(pid: number) {
+    setSelectedPyqPaperId(pid);
+    setSelectedPyqQIds(new Set());
+    if (!pid) {
+      setPyqQuestionsList([]);
+      return;
+    }
+    setLoadingPyq(true);
+    try {
+      const res = await fetch(`/api/admin/questions/import-pyq?paperId=${pid}`);
+      const data = await res.json();
+      if (data.questions) {
+        setPyqQuestionsList(data.questions);
+        if (data.paper) {
+          const examTitle = data.paper.exams?.title || "SSC Exam";
+          const year = data.paper.year || 2024;
+          const tier = (data.paper.title || "").toLowerCase().includes("tier 2") || (data.paper.title || "").toLowerCase().includes("tier-ii") ? "Tier 2" : "Tier 1";
+          setPyqCustomTag(`${examTitle} ${year} ${tier}`.trim());
+        }
+      }
+    } catch (err: any) {
+      toast.error("Failed to load paper questions: " + err.message);
+    } finally {
+      setLoadingPyq(false);
+    }
+  }
+
+  async function handleExecutePyqImport() {
+    if (selectedPyqQIds.size === 0) {
+      toast.error("Please select at least one question to import!");
+      return;
+    }
+    if (!selectedTopic) {
+      toast.error("Please select a Target Topic/Chapter above first!");
+      return;
+    }
+    setImportingPyq(true);
+    try {
+      const res = await fetch("/api/admin/questions/import-pyq", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          paperId: selectedPyqPaperId,
+          questionIds: Array.from(selectedPyqQIds),
+          topicId: selectedTopic,
+          customExamTag: pyqCustomTag,
+          tierLevel: bulkTierLevel === "General" ? "Tier 1" : bulkTierLevel,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok || data.error) throw new Error(data.error || "Import failed");
+      toast.success(data.message || `Imported ${selectedPyqQIds.size} questions! 🎉`);
+      setShowBulk(false);
+      setSelectedPyqQIds(new Set());
+      await handleTopicChange(selectedTopic);
+    } catch (err: any) {
+      toast.error(err.message || "Failed to import questions");
+    } finally {
+      setImportingPyq(false);
+    }
+  }
+
   // ── Auto Cloudinary Direct Image Upload Function ──
   async function uploadAnyImage(e: React.ChangeEvent<HTMLInputElement>, setUrl: (url: string) => void) {
     const file = e.target.files?.[0];
@@ -1262,6 +1346,14 @@ Exam: SSC CHSL 2024`;
             >
               ⚡ SSCZone Line Format
             </button>
+            <button
+              type="button"
+              onClick={() => { setBulkMode("pyq"); loadPyqPapersList(); setBulkParsedQuestions([]); }}
+              className={`a-btn a-btn-sm ${bulkMode === "pyq" ? "a-btn-primary" : "a-btn-ghost"}`}
+              style={{ fontWeight: 700, borderColor: "rgba(99,102,241,0.5)", background: bulkMode === "pyq" ? "#4f46e5" : "rgba(79,70,229,0.15)", color: bulkMode === "pyq" ? "#fff" : "#a5b4fc" }}
+            >
+              🏛️ Import from PYQ Shift Papers
+            </button>
           </div>
 
           {/* TAB 1: EXCEL / CSV DRAG & DROP */}
@@ -1406,6 +1498,240 @@ Exam: SSC CGL 2023 Tier-1`}
             </div>
           )}
 
+          {/* TAB 5: IMPORT DIRECTLY FROM PYQ SHIFT PAPERS */}
+          {bulkMode === "pyq" && (
+            <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+              <div style={{ background: "rgba(99,102,241,0.08)", border: "1px solid rgba(99,102,241,0.25)", padding: "0.85rem 1rem", borderRadius: "10px" }}>
+                <div style={{ fontSize: "0.85rem", fontWeight: 700, color: "#a5b4fc" }}>
+                  🏛️ Import Real PYQ Questions into Chapter Bank (with 2-Way Sync)
+                </div>
+                <div style={{ fontSize: "0.75rem", color: "#94a3b8", marginTop: "0.2rem" }}>
+                  Select an official previous year shift paper below, choose questions belonging to this topic, and import them with 1-click automatic Exam Tags. Any future edits will automatically sync across both PYQ Paper and Question Bank!
+                </div>
+              </div>
+
+              {/* Step 1: Select Shift Paper + Exam Tag preview */}
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "0.75rem" }}>
+                <div>
+                  <label className="a-label" style={{ fontSize: "0.75rem", fontWeight: 700 }}>1. Select PYQ Shift Paper:</label>
+                  <select
+                    className="a-input a-select"
+                    value={selectedPyqPaperId}
+                    onChange={(e) => handleSelectPyqPaper(Number(e.target.value))}
+                    disabled={loadingPyq}
+                  >
+                    <option value={0}>-- Choose an Official Shift Paper --</option>
+                    {pyqPapers.map((p) => (
+                      <option key={p.id} value={p.id}>
+                        {p.title} ({p.year}) — {p.total_questions || 100} Qs
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                <div>
+                  <label className="a-label" style={{ fontSize: "0.75rem", fontWeight: 700 }}>2. Auto Exam Tag (Editable):</label>
+                  <input
+                    type="text"
+                    className="a-input"
+                    value={pyqCustomTag}
+                    onChange={(e) => setPyqCustomTag(e.target.value)}
+                    placeholder="e.g. SSC CGL 2024 Tier 1"
+                  />
+                </div>
+              </div>
+
+              {loadingPyq && (
+                <div style={{ padding: "2rem", textAlign: "center", color: "#94a3b8", fontSize: "0.85rem" }}>
+                  ⏳ Loading paper questions...
+                </div>
+              )}
+
+              {/* Step 2: Question Selector & Filters */}
+              {selectedPyqPaperId > 0 && !loadingPyq && (
+                <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.5rem" }}>
+                    {/* Quick Section Filter */}
+                    <div style={{ display: "flex", gap: "0.35rem", flexWrap: "wrap" }}>
+                      <button
+                        type="button"
+                        onClick={() => setPyqSectionFilter("all")}
+                        className={`a-btn a-btn-sm ${pyqSectionFilter === "all" ? "a-btn-primary" : "a-btn-ghost"}`}
+                        style={{ fontSize: "0.7rem", padding: "0.2rem 0.6rem" }}
+                      >
+                        All (1-100)
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setPyqSectionFilter("s1")}
+                        className={`a-btn a-btn-sm ${pyqSectionFilter === "s1" ? "a-btn-primary" : "a-btn-ghost"}`}
+                        style={{ fontSize: "0.7rem", padding: "0.2rem 0.6rem" }}
+                      >
+                        Reasoning (1-25)
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setPyqSectionFilter("s2")}
+                        className={`a-btn a-btn-sm ${pyqSectionFilter === "s2" ? "a-btn-primary" : "a-btn-ghost"}`}
+                        style={{ fontSize: "0.7rem", padding: "0.2rem 0.6rem" }}
+                      >
+                        GA (26-50)
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setPyqSectionFilter("s3")}
+                        className={`a-btn a-btn-sm ${pyqSectionFilter === "s3" ? "a-btn-primary" : "a-btn-ghost"}`}
+                        style={{ fontSize: "0.7rem", padding: "0.2rem 0.6rem" }}
+                      >
+                        Quant / Maths (51-75)
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setPyqSectionFilter("s4")}
+                        className={`a-btn a-btn-sm ${pyqSectionFilter === "s4" ? "a-btn-primary" : "a-btn-ghost"}`}
+                        style={{ fontSize: "0.7rem", padding: "0.2rem 0.6rem" }}
+                      >
+                        English (76-100)
+                      </button>
+                    </div>
+
+                    {/* Search & Actions */}
+                    <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
+                      <input
+                        type="text"
+                        className="a-input"
+                        placeholder="Filter questions by word..."
+                        value={pyqSearch}
+                        onChange={(e) => setPyqSearch(e.target.value)}
+                        style={{ padding: "0.25rem 0.5rem", fontSize: "0.75rem", width: "160px" }}
+                      />
+                      <button
+                        type="button"
+                        onClick={() => {
+                          const visible = pyqQuestionsList.filter((q, idx) => {
+                            const qNo = q.question_number || idx + 1;
+                            if (pyqSectionFilter === "s1" && (qNo < 1 || qNo > 25)) return false;
+                            if (pyqSectionFilter === "s2" && (qNo < 26 || qNo > 50)) return false;
+                            if (pyqSectionFilter === "s3" && (qNo < 51 || qNo > 75)) return false;
+                            if (pyqSectionFilter === "s4" && (qNo < 76 || qNo > 100)) return false;
+                            if (pyqSearch && !q.question_text?.toLowerCase().includes(pyqSearch.toLowerCase())) return false;
+                            return true;
+                          });
+                          setSelectedPyqQIds(new Set(visible.map((q) => q.id)));
+                        }}
+                        className="a-btn a-btn-ghost a-btn-sm"
+                        style={{ fontSize: "0.7rem" }}
+                      >
+                        Select Filtered
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setSelectedPyqQIds(new Set())}
+                        className="a-btn a-btn-ghost a-btn-sm"
+                        style={{ fontSize: "0.7rem" }}
+                      >
+                        Clear
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Scrollable List of Questions */}
+                  <div style={{ maxHeight: "380px", overflowY: "auto", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "10px", padding: "0.5rem", background: "rgba(0,0,0,0.2)" }}>
+                    {(() => {
+                      const visible = pyqQuestionsList.filter((q, idx) => {
+                        const qNo = q.question_number || idx + 1;
+                        if (pyqSectionFilter === "s1" && (qNo < 1 || qNo > 25)) return false;
+                        if (pyqSectionFilter === "s2" && (qNo < 26 || qNo > 50)) return false;
+                        if (pyqSectionFilter === "s3" && (qNo < 51 || qNo > 75)) return false;
+                        if (pyqSectionFilter === "s4" && (qNo < 76 || qNo > 100)) return false;
+                        if (pyqSearch && !q.question_text?.toLowerCase().includes(pyqSearch.toLowerCase())) return false;
+                        return true;
+                      });
+
+                      if (visible.length === 0) {
+                        return (
+                          <div style={{ padding: "2rem", textAlign: "center", color: "#64748b", fontSize: "0.85rem" }}>
+                            No questions match current filter.
+                          </div>
+                        );
+                      }
+
+                      return visible.map((q, idx) => {
+                        const isSelected = selectedPyqQIds.has(q.id);
+                        return (
+                          <label
+                            key={q.id}
+                            style={{
+                              display: "flex",
+                              gap: "0.75rem",
+                              alignItems: "flex-start",
+                              padding: "0.6rem 0.75rem",
+                              borderRadius: "8px",
+                              border: isSelected ? "1px solid #6366f1" : "1px solid rgba(255,255,255,0.04)",
+                              background: isSelected ? "rgba(99,102,241,0.12)" : "transparent",
+                              cursor: "pointer",
+                              marginBottom: "0.4rem",
+                              transition: "all 0.15s ease",
+                            }}
+                          >
+                            <input
+                              type="checkbox"
+                              checked={isSelected}
+                              onChange={() => {
+                                setSelectedPyqQIds((prev) => {
+                                  const next = new Set(prev);
+                                  if (next.has(q.id)) next.delete(q.id);
+                                  else next.add(q.id);
+                                  return next;
+                                });
+                              }}
+                              style={{ marginTop: "0.2rem", cursor: "pointer" }}
+                            />
+                            <div style={{ flex: 1, minWidth: 0 }}>
+                              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.2rem" }}>
+                                <span style={{ fontSize: "0.7rem", fontWeight: 800, background: "#4f46e5", color: "#fff", padding: "0.1rem 0.4rem", borderRadius: "4px" }}>
+                                  Q{q.question_number || idx + 1}
+                                </span>
+                                <span style={{ fontSize: "0.75rem", fontWeight: 700, color: "#34d399" }}>
+                                  Ans: ({q.correct_answer})
+                                </span>
+                              </div>
+                              <div style={{ fontSize: "0.8rem", color: "#f1f5f9", lineHeight: 1.4, wordBreak: "break-word" }}>
+                                {q.question_text}
+                              </div>
+                              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.25rem", marginTop: "0.35rem", fontSize: "0.7rem", color: "#94a3b8" }}>
+                                <div>A: {q.option_a}</div>
+                                <div>B: {q.option_b}</div>
+                                <div>C: {q.option_c}</div>
+                                <div>D: {q.option_d}</div>
+                              </div>
+                            </div>
+                          </label>
+                        );
+                      });
+                    })()}
+                  </div>
+
+                  {/* Execute Import CTA */}
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop: "0.5rem", borderTop: "1px solid rgba(255,255,255,0.06)", flexWrap: "wrap", gap: "0.5rem" }}>
+                    <div style={{ fontSize: "0.8rem", color: "#94a3b8" }}>
+                      Selected: <strong style={{ color: "#a5b4fc" }}>{selectedPyqQIds.size} questions</strong> to import into <strong>{topics.find(t => t.id === selectedTopic)?.title || "Selected Chapter"}</strong>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={handleExecutePyqImport}
+                      disabled={importingPyq || selectedPyqQIds.size === 0}
+                      className="a-btn a-btn-primary"
+                      style={{ fontWeight: 800, background: "linear-gradient(135deg, #4f46e5, #6366f1)" }}
+                    >
+                      {importingPyq ? "⏳ Importing..." : `📥 Import ${selectedPyqQIds.size} Questions to Chapter ➔`}
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
+
           {/* ── LIVE PARSED QUESTIONS REVIEW TABLE & SAVE ACTION ── */}
           {bulkParsedQuestions.length > 0 && (
             <div style={{ marginTop: "1.5rem", borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: "1.25rem", display: "flex", flexDirection: "column", gap: "1rem" }}>
@@ -1508,9 +1834,16 @@ Exam: SSC CGL 2023 Tier-1`}
       {/* Add/Edit Form */}
       {showForm && (
         <div className="a-card" style={{ marginBottom: "1.5rem", borderColor: "rgba(99,102,241,0.3)" }}>
-          <h3 style={{ color: "#fff", fontWeight: 600, marginBottom: "1.25rem" }}>
-            {editingId ? "✏️ Edit Question" : "➕ New Question"}
-          </h3>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1.25rem", flexWrap: "wrap", gap: "0.5rem" }}>
+            <h3 style={{ color: "#fff", fontWeight: 600, margin: 0 }}>
+              {editingId ? "✏️ Edit Question" : "➕ New Question"}
+            </h3>
+            {editingId && (
+              <span className="a-badge a-badge-blue" style={{ fontSize: "0.75rem", padding: "0.25rem 0.6rem" }}>
+                ⚡ 2-Way Sync Active: Edits auto-sync across PYQ Papers &amp; Question Bank
+              </span>
+            )}
+          </div>
           <form onSubmit={handleSubmit}>
             <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "1rem" }}>

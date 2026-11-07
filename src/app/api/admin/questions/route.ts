@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { createClient as createSupabaseClient } from "@supabase/supabase-js";
 import { createClient as createServerClient } from "@/lib/supabase-server";
+import { syncQuestionBankToPyq } from "@/lib/question-sync";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
@@ -111,7 +112,16 @@ export async function PUT(request: Request) {
       return NextResponse.json({ error: error.message }, { status: 500 });
     }
 
-    return NextResponse.json({ success: true, message: "Question updated successfully" });
+    // ── 2-Way Sync: If this question exists in PYQ shift papers, auto-sync changes ──
+    const syncRes = await syncQuestionBankToPyq(Number(id), updates);
+
+    return NextResponse.json({
+      success: true,
+      message: syncRes.synced
+        ? "Question updated and automatically synced to PYQ Shift Paper! ⚡"
+        : "Question updated successfully",
+      syncedToPyq: syncRes.synced
+    });
   } catch (err: any) {
     return NextResponse.json({ error: err.message || "Server error" }, { status: 500 });
   }

@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import fs from "fs";
 import path from "path";
+import { syncPyqToQuestionBank } from "@/lib/question-sync";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -192,6 +193,9 @@ export async function POST(req: NextRequest) {
       }
 
       result = data;
+
+      // ── 2-Way Sync: If this question is mapped in Question Bank, auto-sync changes ──
+      await syncPyqToQuestionBank(Number(id), payloadWithExp);
     } else {
       // INSERT new question
       let { data, error } = await supabaseAdmin
@@ -215,6 +219,9 @@ export async function POST(req: NextRequest) {
       }
 
       result = data;
+
+      // ── 2-Way Sync: If this question is mapped in Question Bank, auto-sync changes ──
+      await syncPyqToQuestionBank(Number(id), payloadWithExp);
     }
 
     // Update local TXT/JSON backups

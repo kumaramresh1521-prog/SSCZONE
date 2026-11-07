@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase-admin";
+import { getQuestionFingerprint } from "@/lib/question-dedup";
 
 export const dynamic = "force-dynamic";
 
@@ -105,6 +106,20 @@ export async function GET(req: NextRequest) {
     }
 
     const allQuestions: NormalizedSpeedQuestion[] = [];
+    const seenFingerprints = new Set<string>();
+
+    function addQuestion(q: NormalizedSpeedQuestion): boolean {
+      if (!q.question_text || !q.question_text.trim() || !q.option_a || !q.option_b) {
+        return false;
+      }
+      const fp = getQuestionFingerprint(q);
+      if (seenFingerprints.has(fp)) {
+        return false;
+      }
+      seenFingerprints.add(fp);
+      allQuestions.push(q);
+      return true;
+    }
 
     if (mode === "topic") {
       // 1. CHAPTER / TOPIC MODE: Resilient multi-tier question selection
@@ -149,7 +164,7 @@ export async function GET(req: NextRequest) {
 
         if (qbRows && qbRows.length > 0) {
           qbRows.forEach((q: any) => {
-            allQuestions.push({
+            addQuestion({
               id: `bank_${q.id}`,
               originalId: q.id,
               source: "bank",
@@ -206,26 +221,24 @@ export async function GET(req: NextRequest) {
           if (kwPyqs) {
             kwPyqs.forEach((q: any) => {
               const qId = `pyq_${q.id}`;
-              if (!allQuestions.some((item) => item.id === qId)) {
-                allQuestions.push({
-                  id: qId,
-                  originalId: q.id,
-                  source: "pyq",
-                  subject: SUBJECT_NAMES[resolvedSubjectKey],
-                  subjectKey: resolvedSubjectKey,
-                  topic: topicTitle ? `${topicTitle} (PYQ Shift #${q.paper_id})` : `Shift Paper #${q.paper_id}`,
-                  question_text: q.question_text || "",
-                  question_text_hi: null,
-                  option_a: q.option_a || "",
-                  option_b: q.option_b || "",
-                  option_c: q.option_c || "",
-                  option_d: q.option_d || "",
-                  correct_answer: normalizeAnswer(q.correct_answer),
-                  explanation: q.explanation || null,
-                  paper_id: q.paper_id,
-                  question_number: q.question_number,
-                });
-              }
+              addQuestion({
+                id: qId,
+                originalId: q.id,
+                source: "pyq",
+                subject: SUBJECT_NAMES[resolvedSubjectKey],
+                subjectKey: resolvedSubjectKey,
+                topic: topicTitle ? `${topicTitle} (PYQ Shift #${q.paper_id})` : `Shift Paper #${q.paper_id}`,
+                question_text: q.question_text || "",
+                question_text_hi: null,
+                option_a: q.option_a || "",
+                option_b: q.option_b || "",
+                option_c: q.option_c || "",
+                option_d: q.option_d || "",
+                correct_answer: normalizeAnswer(q.correct_answer),
+                explanation: q.explanation || null,
+                paper_id: q.paper_id,
+                question_number: q.question_number,
+              });
             });
           }
         }
@@ -246,26 +259,24 @@ export async function GET(req: NextRequest) {
 
         (pyqFill || []).forEach((q: any) => {
           const qId = `pyq_${q.id}`;
-          if (!allQuestions.some((item) => item.id === qId)) {
-            allQuestions.push({
-              id: qId,
-              originalId: q.id,
-              source: "pyq",
-              subject: SUBJECT_NAMES[resolvedSubjectKey],
-              subjectKey: resolvedSubjectKey,
-              topic: topicTitle ? `${topicTitle} & ${SUBJECT_NAMES[resolvedSubjectKey]} Drill` : `PYQ Official Shift #${q.paper_id}`,
-              question_text: q.question_text || "",
-              question_text_hi: null,
-              option_a: q.option_a || "",
-              option_b: q.option_b || "",
-              option_c: q.option_c || "",
-              option_d: q.option_d || "",
-              correct_answer: normalizeAnswer(q.correct_answer),
-              explanation: q.explanation || null,
-              paper_id: q.paper_id,
-              question_number: q.question_number,
-            });
-          }
+          addQuestion({
+            id: qId,
+            originalId: q.id,
+            source: "pyq",
+            subject: SUBJECT_NAMES[resolvedSubjectKey],
+            subjectKey: resolvedSubjectKey,
+            topic: topicTitle ? `${topicTitle} & ${SUBJECT_NAMES[resolvedSubjectKey]} Drill` : `PYQ Official Shift #${q.paper_id}`,
+            question_text: q.question_text || "",
+            question_text_hi: null,
+            option_a: q.option_a || "",
+            option_b: q.option_b || "",
+            option_c: q.option_c || "",
+            option_d: q.option_d || "",
+            correct_answer: normalizeAnswer(q.correct_answer),
+            explanation: q.explanation || null,
+            paper_id: q.paper_id,
+            question_number: q.question_number,
+          });
         });
       }
 
@@ -280,30 +291,28 @@ export async function GET(req: NextRequest) {
 
         (qbFill || []).forEach((q: any) => {
           const qId = `bank_${q.id}`;
-          if (!allQuestions.some((item) => item.id === qId)) {
-            allQuestions.push({
-              id: qId,
-              originalId: q.id,
-              source: "bank",
-              subject: SUBJECT_NAMES.english,
-              subjectKey: "english",
-              topic: topicTitle || "English Practice",
-              question_text: q.question_text || "",
-              question_text_hi: q.question_text_hi || null,
-              option_a: q.option_a || "",
-              option_b: q.option_b || "",
-              option_c: q.option_c || "",
-              option_d: q.option_d || "",
-              option_a_hi: q.option_a_hi || null,
-              option_b_hi: q.option_b_hi || null,
-              option_c_hi: q.option_c_hi || null,
-              option_d_hi: q.option_d_hi || null,
-              correct_answer: normalizeAnswer(q.correct_answer),
-              explanation: q.explanation || null,
-              explanation_hi: q.explanation_hi || null,
-              image_url: q.image_url || null,
-            });
-          }
+          addQuestion({
+            id: qId,
+            originalId: q.id,
+            source: "bank",
+            subject: SUBJECT_NAMES.english,
+            subjectKey: "english",
+            topic: topicTitle || "English Practice",
+            question_text: q.question_text || "",
+            question_text_hi: q.question_text_hi || null,
+            option_a: q.option_a || "",
+            option_b: q.option_b || "",
+            option_c: q.option_c || "",
+            option_d: q.option_d || "",
+            option_a_hi: q.option_a_hi || null,
+            option_b_hi: q.option_b_hi || null,
+            option_c_hi: q.option_c_hi || null,
+            option_d_hi: q.option_d_hi || null,
+            correct_answer: normalizeAnswer(q.correct_answer),
+            explanation: q.explanation || null,
+            explanation_hi: q.explanation_hi || null,
+            image_url: q.image_url || null,
+          });
         });
       }
     } else if (mode === "subject" && subjectParam !== "all") {
@@ -339,7 +348,7 @@ export async function GET(req: NextRequest) {
       ]);
 
       (pyqRes.data || []).forEach((q: any) => {
-        allQuestions.push({
+        addQuestion({
           id: `pyq_${q.id}`,
           originalId: q.id,
           source: "pyq",
@@ -360,7 +369,7 @@ export async function GET(req: NextRequest) {
       });
 
       (qbRes.data || []).forEach((q: any) => {
-        allQuestions.push({
+        addQuestion({
           id: `bank_${q.id}`,
           originalId: q.id,
           source: "bank",
@@ -417,7 +426,7 @@ export async function GET(req: NextRequest) {
         else if (qNum <= 75) sKey = "quant";
         else sKey = "english";
 
-        allQuestions.push({
+        addQuestion({
           id: `pyq_${q.id}`,
           originalId: q.id,
           source: "pyq",
@@ -445,7 +454,7 @@ export async function GET(req: NextRequest) {
         else if (subTitle.includes("reason")) sKey = "reasoning";
         else if (subTitle.includes("english")) sKey = "english";
 
-        allQuestions.push({
+        addQuestion({
           id: `bank_${q.id}`,
           originalId: q.id,
           source: "bank",
@@ -474,13 +483,8 @@ export async function GET(req: NextRequest) {
       });
     }
 
-    // Filter out any invalid items without question text or options
-    const validQuestions = allQuestions.filter(
-      (q) => q.question_text && q.question_text.trim() && q.option_a && q.option_b
-    );
-
-    // Shuffle thoroughly using user/attempt seed
-    const shuffled = shuffleArray(validQuestions, seed);
+    // Shuffle thoroughly using user/attempt seed (allQuestions is guaranteed valid and deduplicated)
+    const shuffled = shuffleArray(allQuestions, seed);
 
     // Take exactly requestedCount (default 25)
     const finalSet = shuffled.slice(0, requestedCount);
@@ -494,7 +498,7 @@ export async function GET(req: NextRequest) {
       requestedCount,
       questions: finalSet,
       meta: {
-        totalPoolFound: validQuestions.length,
+        totalPoolFound: allQuestions.length,
         pyqCount: finalSet.filter((q) => q.source === "pyq").length,
         bankCount: finalSet.filter((q) => q.source === "bank").length,
       },

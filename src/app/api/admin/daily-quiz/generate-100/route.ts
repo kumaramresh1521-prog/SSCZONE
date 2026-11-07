@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase-admin";
+import { getQuestionFingerprint } from "@/lib/question-dedup";
 
 export const dynamic = "force-dynamic";
 
@@ -36,26 +37,28 @@ export async function GET(req: NextRequest) {
     const targetPerSection = Math.floor(totalTarget / 4);
 
     const fullQuestionSet: any[] = [];
+    const seenFingerprints = new Set<string>();
 
     // Fetch questions section by section to guarantee perfect 25/25/25/25 balance
     for (const sec of SECTION_CONFIG) {
       const sectionQuestions: any[] = [];
       const randomPaper1 = Math.floor(Math.random() * 45) + 1;
       const randomPaper2 = Math.floor(Math.random() * 45) + 1;
+      const randomPaper3 = Math.floor(Math.random() * 45) + 1;
 
       // 1. Pull from Official Shift PYQs
       try {
         const { data: pyqRows } = await supabaseAdmin
           .from("paper_questions")
           .select("id, paper_id, question_number, question_text, option_a, option_b, option_c, option_d, correct_answer, explanation")
-          .in("paper_id", [randomPaper1, randomPaper2])
+          .in("paper_id", [randomPaper1, randomPaper2, randomPaper3])
           .gte("question_number", sec.min)
           .lte("question_number", sec.max)
-          .limit(30);
+          .limit(45);
 
         (pyqRows || []).forEach((q: any) => {
           if (q.question_text && q.option_a && q.option_b) {
-            sectionQuestions.push({
+            const item = {
               id: `pyq_${q.id}`,
               section_key: sec.key,
               section_name: sec.name,
@@ -67,7 +70,12 @@ export async function GET(req: NextRequest) {
               correct_answer: normalizeAnswer(q.correct_answer),
               explanation: q.explanation ? q.explanation.trim() : `Official SSC Shift Question #${q.paper_id} Solution.`,
               source: `PYQ Shift #${q.paper_id}`,
-            });
+            };
+            const fp = getQuestionFingerprint(item);
+            if (!seenFingerprints.has(fp)) {
+              seenFingerprints.add(fp);
+              sectionQuestions.push(item);
+            }
           }
         });
       } catch (err) {
@@ -82,11 +90,11 @@ export async function GET(req: NextRequest) {
             .from("questions")
             .select("id, question_text, question_text_hi, option_a, option_b, option_c, option_d, correct_answer, explanation")
             .eq("is_active", true)
-            .range(randomOffset, randomOffset + targetPerSection);
+            .range(randomOffset, randomOffset + targetPerSection * 2);
 
           (qbRows || []).forEach((q: any) => {
             if (q.question_text && q.option_a && q.option_b) {
-              sectionQuestions.push({
+              const item = {
                 id: `qb_${q.id}`,
                 section_key: sec.key,
                 section_name: sec.name,
@@ -99,7 +107,12 @@ export async function GET(req: NextRequest) {
                 correct_answer: normalizeAnswer(q.correct_answer),
                 explanation: q.explanation ? q.explanation.trim() : "Detailed SSCZONE solution.",
                 source: "Question Bank",
-              });
+              };
+              const fp = getQuestionFingerprint(item);
+              if (!seenFingerprints.has(fp)) {
+                seenFingerprints.add(fp);
+                sectionQuestions.push(item);
+              }
             }
           });
         } catch (err) {

@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { getQuestionFingerprint } from "@/lib/question-dedup";
 import {
   getDailyQuizzes,
   getDailyQuizById,
@@ -194,8 +195,19 @@ export async function POST(req: NextRequest) {
       finalQuestions = parseSmartText(rawText);
     }
 
-    // Filter valid questions
-    finalQuestions = finalQuestions.filter((q) => q.question_text && q.option_a && q.option_b);
+    // Filter valid questions & deduplicate within the quiz using normalized content fingerprint
+    const seenQuizFps = new Set<string>();
+    const deduplicatedQuestions: DailyQuizQuestion[] = [];
+
+    for (const q of finalQuestions) {
+      if (!q.question_text || !q.option_a || !q.option_b) continue;
+      const fp = getQuestionFingerprint(q);
+      if (!seenQuizFps.has(fp)) {
+        seenQuizFps.add(fp);
+        deduplicatedQuestions.push(q);
+      }
+    }
+    finalQuestions = deduplicatedQuestions;
 
     if (finalQuestions.length === 0) {
       return NextResponse.json(

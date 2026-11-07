@@ -590,23 +590,23 @@ export default function DailyQuizClient() {
     const currentSelectedOption = userAnswers[currentQuestion.id];
 
     return (
-      <div className="min-h-screen bg-slate-50 text-slate-800 flex flex-col">
-        {/* TOP BAR / EXAM HEADER */}
-        <header className="sticky top-0 z-30 bg-white/95 backdrop-blur-md border-b border-slate-200 px-4 py-2.5 sm:px-6 shadow-xs">
-          <div className="max-w-7xl mx-auto flex items-center justify-between gap-3">
+      <div className="h-[100dvh] max-h-[100dvh] w-full max-w-full bg-slate-100 text-slate-800 flex flex-col select-none overflow-hidden">
+        {/* TOP BAR / EXAM HEADER (Fixed at top) */}
+        <header className="shrink-0 bg-white border-b border-slate-200 px-3 py-2 sm:px-6 shadow-2xs">
+          <div className="max-w-7xl mx-auto flex items-center justify-between gap-2.5">
             {/* Title & Subject */}
-            <div className="flex items-center gap-2.5 min-w-0">
+            <div className="flex items-center gap-2 min-w-0">
               <span className="p-1.5 rounded-lg bg-blue-50 text-blue-600 shrink-0">
-                <Zap className="w-5 h-5" />
+                <Zap className="w-4 h-4" />
               </span>
               <div className="min-w-0">
-                <h1 className="text-sm sm:text-base font-bold text-slate-900 truncate">
+                <h1 className="text-xs sm:text-sm font-bold text-slate-900 truncate">
                   {activeQuiz.title}
                 </h1>
-                <div className="flex items-center gap-2 text-xs text-slate-500">
+                <div className="flex items-center gap-2 text-[11px] text-slate-500">
                   <span className="font-semibold text-blue-700">{activeQuiz.subject}</span>
                   <span>•</span>
-                  <span>{activeQuiz.target_exam}</span>
+                  <span className="truncate">{activeQuiz.target_exam}</span>
                 </div>
               </div>
             </div>
@@ -615,13 +615,13 @@ export default function DailyQuizClient() {
             <div className="flex items-center gap-2 shrink-0">
               {/* CBT Countdown Timer */}
               <div
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-mono text-sm sm:text-base font-bold shadow-2xs transition-colors ${
+                className={`flex items-center gap-1.5 px-2.5 py-1 rounded-xl font-mono text-xs sm:text-sm font-bold shadow-2xs transition-colors ${
                   timeLeft <= 120
                     ? "bg-red-50 border border-red-300 text-red-600 animate-pulse"
                     : "bg-slate-100 border border-slate-200 text-slate-800"
                 }`}
               >
-                <Clock className="w-4 h-4 text-slate-500" />
+                <Clock className="w-3.5 h-3.5 text-slate-500" />
                 <span>{formatTime(timeLeft)}</span>
               </div>
 
@@ -632,7 +632,7 @@ export default function DailyQuizClient() {
                   onClick={toggleHindiTranslation}
                   disabled={translating}
                   title="Translate Question into Hindi"
-                  className={`inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl border text-xs font-semibold transition-all cursor-pointer ${
+                  className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-xl border text-xs font-semibold transition-all cursor-pointer ${
                     language === "hi"
                       ? "bg-amber-500 text-white border-amber-600 shadow-xs"
                       : "bg-white text-slate-700 border-slate-200 hover:border-slate-300 hover:bg-slate-50"
@@ -649,7 +649,7 @@ export default function DailyQuizClient() {
               <button
                 type="button"
                 onClick={() => setPaletteOpen(!paletteOpen)}
-                className="lg:hidden p-2 rounded-xl border border-slate-200 bg-white text-slate-700 hover:bg-slate-50"
+                className="lg:hidden p-1.5 rounded-xl border border-slate-200 bg-white text-slate-700 hover:bg-slate-50"
                 title="Question Palette"
               >
                 <Menu className="w-4 h-4" />
@@ -659,25 +659,25 @@ export default function DailyQuizClient() {
               <button
                 type="button"
                 onClick={() => setShowSubmitConfirm(true)}
-                className="px-3.5 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-semibold text-xs sm:text-sm shadow-xs transition-all flex items-center gap-1.5 cursor-pointer"
+                className="px-3.5 py-1 rounded-xl bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold text-xs sm:text-sm shadow-xs transition-all flex items-center gap-1 cursor-pointer"
               >
-                <Check className="w-4 h-4" />
+                <Check className="w-3.5 h-3.5" />
                 <span>Submit</span>
               </button>
             </div>
           </div>
         </header>
 
-        {/* MAIN TESTING WORKSPACE */}
-        <div className="max-w-7xl mx-auto w-full flex-1 p-3 sm:p-6 grid grid-cols-1 lg:grid-cols-4 gap-6">
+        {/* MAIN TESTING WORKSPACE (Fits 100% in viewport without outer scrolling) */}
+        <div className="flex-1 min-h-0 max-w-7xl mx-auto w-full p-2 sm:p-3 grid grid-cols-1 lg:grid-cols-4 gap-3 overflow-hidden">
           {/* QUESTION AREA (3 COLS) */}
-          <div className="lg:col-span-3 flex flex-col gap-4">
-            {/* Question Card */}
-            <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-5 sm:p-7 flex flex-col flex-1">
-              {/* Question Header & Flag Report */}
-              <div className="flex items-center justify-between flex-wrap pb-4 border-b border-slate-100 mb-5 gap-2.5">
+          <div className="lg:col-span-3 flex flex-col min-h-0 h-full overflow-hidden">
+            {/* Unified Question Card */}
+            <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs flex flex-col min-h-0 h-full overflow-hidden">
+              {/* Question Header & Flag Report (Fixed at top of card) */}
+              <div className="shrink-0 px-4 py-2 sm:px-6 sm:py-2.5 border-b border-slate-100 flex items-center justify-between flex-wrap gap-2 bg-slate-50/50">
                 <div className="flex items-center gap-2 flex-wrap min-w-0">
-                  <span className="px-2.5 py-1 rounded-lg bg-blue-100 text-blue-800 text-xs font-bold shrink-0">
+                  <span className="px-2.5 py-0.5 rounded-md bg-blue-100 text-blue-800 text-xs font-black shrink-0">
                     Question {currentIndex + 1} of {activeQuiz.questions.length}
                   </span>
                   <span className="text-xs text-slate-500 font-medium">
@@ -713,73 +713,73 @@ export default function DailyQuizClient() {
                 </div>
               </div>
 
-              {/* Question Statement with KaTeX support */}
-              <div className="text-base sm:text-lg text-slate-900 leading-relaxed font-medium mb-6 select-text">
-                <MathText text={displayQuestion.text} />
-              </div>
+              {/* Scrollable Question Body (Internal scroll ONLY if question is very long) */}
+              <div className="flex-1 min-h-0 overflow-y-auto px-4 py-3 sm:px-6 sm:py-4 space-y-3.5 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-thumb]:bg-slate-300 [&::-webkit-scrollbar-thumb]:rounded-full select-text">
+                {/* Question Statement with KaTeX support */}
+                <div className="text-sm sm:text-base text-slate-900 leading-relaxed font-semibold">
+                  <MathText text={displayQuestion.text} />
+                </div>
 
-              {/* Options List */}
-              <div className="space-y-3 mb-6">
-                {(
-                  [
-                    { key: "A", text: displayQuestion.optA },
-                    { key: "B", text: displayQuestion.optB },
-                    { key: "C", text: displayQuestion.optC },
-                    { key: "D", text: displayQuestion.optD },
-                  ] as const
-                ).map((opt) => {
-                  const isSelected = currentSelectedOption === opt.key;
-                  return (
-                    <button
-                      key={opt.key}
-                      type="button"
-                      onClick={() => handleSelectAnswer(opt.key)}
-                      className={`w-full text-left p-3.5 sm:p-4 rounded-xl border transition-all flex items-start gap-3.5 cursor-pointer ${
-                        isSelected
-                          ? "bg-blue-50/70 border-blue-500 ring-2 ring-blue-400/30 text-blue-950 font-medium shadow-xs"
-                          : "bg-white border-slate-200/80 hover:bg-slate-50/80 hover:border-slate-300 text-slate-800"
-                      }`}
-                    >
-                      <span
-                        className={`w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold shrink-0 transition-colors ${
+                {/* Options List (Compact cards with zero awkward spacing) */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
+                  {(
+                    [
+                      { key: "A", text: displayQuestion.optA },
+                      { key: "B", text: displayQuestion.optB },
+                      { key: "C", text: displayQuestion.optC },
+                      { key: "D", text: displayQuestion.optD },
+                    ] as const
+                  ).map((opt) => {
+                    const isSelected = currentSelectedOption === opt.key;
+                    return (
+                      <button
+                        key={opt.key}
+                        type="button"
+                        onClick={() => handleSelectAnswer(opt.key)}
+                        className={`w-full text-left p-2.5 sm:p-3 rounded-xl border transition-all flex items-start gap-2.5 cursor-pointer ${
                           isSelected
-                            ? "bg-blue-600 text-white shadow-2xs"
-                            : "bg-slate-100 border border-slate-200 text-slate-700"
+                            ? "bg-blue-50/80 border-blue-600 ring-2 ring-blue-500/20 text-blue-950 font-semibold shadow-2xs"
+                            : "bg-white border-slate-200 hover:border-slate-300 hover:bg-slate-50/80 text-slate-800"
                         }`}
                       >
-                        {opt.key}
-                      </span>
-                      <div className="flex-1 text-sm sm:text-base pt-0.5 leading-snug">
-                        <MathText text={opt.text} />
-                      </div>
-                    </button>
-                  );
-                })}
+                        <span
+                          className={`w-6 h-6 rounded-md flex items-center justify-center text-xs font-black shrink-0 transition-colors ${
+                            isSelected
+                              ? "bg-blue-600 text-white shadow-2xs"
+                              : "bg-slate-100 border border-slate-200 text-slate-700"
+                          }`}
+                        >
+                          {opt.key}
+                        </span>
+                        <div className="flex-1 text-xs sm:text-sm pt-0.5 leading-snug">
+                          <MathText text={opt.text} />
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
 
-              {/* In-Test Ad Placement */}
-              <AdBanner slot="daily-quiz-test-mid" className="my-2" />
-
-              {/* Question Navigation Controls */}
-              <div className="pt-4 mt-auto border-t border-slate-100 flex items-center justify-between flex-wrap gap-2">
-                <div className="flex items-center gap-2">
+              {/* Question Navigation Controls (PERMANENTLY PINNED AT BOTTOM - NEVER REQUIRES SCROLLING) */}
+              <div className="shrink-0 px-4 py-2.5 sm:px-6 sm:py-3 bg-slate-50 border-t border-slate-200 flex items-center justify-between flex-wrap gap-2">
+                <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
                   <button
                     type="button"
                     onClick={handleToggleReview}
-                    className={`px-3 py-1.5 rounded-xl border text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
+                    className={`px-3 py-1.5 rounded-xl border text-xs font-bold transition-all cursor-pointer ${
                       isMarked
                         ? "bg-purple-100 border-purple-300 text-purple-800"
                         : "bg-white border-slate-200 text-slate-700 hover:bg-slate-50"
                     }`}
                   >
-                    {isMarked ? "★ Marked for Review" : "Mark for Review"}
+                    {isMarked ? "★ Marked" : "Mark for Review"}
                   </button>
 
                   {currentSelectedOption && (
                     <button
                       type="button"
                       onClick={handleClearAnswer}
-                      className="px-3 py-1.5 rounded-xl border border-slate-200 bg-white text-slate-600 hover:text-red-600 hover:border-red-200 hover:bg-red-50 text-xs sm:text-sm font-semibold transition-all cursor-pointer"
+                      className="px-3 py-1.5 rounded-xl border border-slate-200 bg-white text-slate-600 hover:text-red-600 hover:border-red-200 hover:bg-red-50 text-xs font-semibold transition-all cursor-pointer"
                     >
                       Clear Response
                     </button>
@@ -791,9 +791,9 @@ export default function DailyQuizClient() {
                     type="button"
                     onClick={handlePrev}
                     disabled={currentIndex === 0}
-                    className="px-3.5 py-1.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed text-xs sm:text-sm font-semibold text-slate-700 transition-all flex items-center gap-1 cursor-pointer"
+                    className="px-3 py-1.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed text-xs font-semibold text-slate-700 transition-all flex items-center gap-1 cursor-pointer"
                   >
-                    <ArrowLeft className="w-4 h-4" />
+                    <ArrowLeft className="w-3.5 h-3.5" />
                     <span>Previous</span>
                   </button>
 
@@ -801,28 +801,41 @@ export default function DailyQuizClient() {
                     type="button"
                     onClick={handleNext}
                     disabled={currentIndex === activeQuiz.questions.length - 1}
-                    className="px-4 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed text-white text-xs sm:text-sm font-semibold transition-all flex items-center gap-1 cursor-pointer shadow-xs"
+                    className="px-4 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed text-white text-xs font-black transition-all flex items-center gap-1 cursor-pointer shadow-xs"
                   >
                     <span>Save & Next</span>
-                    <ArrowRight className="w-4 h-4" />
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => setShowSubmitConfirm(true)}
+                    className="px-3.5 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-black shadow-xs cursor-pointer"
+                  >
+                    Submit
                   </button>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* QUESTION PALETTE (1 COL) */}
+          {/* QUESTION PALETTE (1 COL - Fixed sidebar on desktop, drawer on mobile) */}
           <div
-            className={`fixed lg:static inset-y-0 right-0 z-40 w-72 lg:w-auto bg-white lg:bg-transparent shadow-xl lg:shadow-none border-l lg:border-l-0 border-slate-200 p-4 lg:p-0 transform transition-transform duration-200 ${
+            className={`fixed lg:static inset-y-0 right-0 z-40 w-72 lg:w-auto bg-white lg:bg-transparent shadow-xl lg:shadow-none border-l lg:border-l-0 border-slate-200 p-3 lg:p-0 transform transition-transform duration-200 min-h-0 h-full overflow-hidden ${
               paletteOpen ? "translate-x-0" : "translate-x-full lg:translate-x-0"
             }`}
           >
-            <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-5 flex flex-col h-full lg:h-auto">
-              <div className="flex items-center justify-between pb-3 border-b border-slate-100 mb-4">
-                <h3 className="font-bold text-sm text-slate-800 flex items-center gap-2">
+            <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs flex flex-col h-full min-h-0 overflow-hidden">
+              <div className="shrink-0 px-4 py-3 border-b border-slate-100 flex items-center justify-between">
+                <h3 className="font-bold text-xs sm:text-sm text-slate-800 flex items-center gap-2">
                   <Layers className="w-4 h-4 text-blue-600" />
                   Question Palette
                 </h3>
+                <span className="text-[11px] font-bold text-slate-500">
+                  {answeredCount}/{activeQuiz.questions.length} Done
+                </span>
+              </div>
+              <div className="flex-1 min-h-0 overflow-y-auto p-3.5">
                 <button
                   type="button"
                   onClick={() => setPaletteOpen(false)}

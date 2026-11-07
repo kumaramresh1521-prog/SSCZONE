@@ -2247,7 +2247,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
       <div className="flex-1 flex min-h-0 min-w-0 overflow-hidden max-w-full">
         
         {/* Left: Question Card Body (Takes full width on mobile, flexible on desktop) */}
-        <div className="flex-1 min-w-0 flex flex-col justify-between bg-white min-h-0 overflow-hidden">
+        <div className="flex-1 min-w-0 flex flex-col bg-white min-h-0 overflow-hidden">
           
           {/* Question Subheader WITH EXPLICIT SECTION / CATEGORY BADGE */}
           <div className="bg-gradient-to-r from-blue-50/80 to-slate-50 border-b border-blue-100 px-3 sm:px-5 py-2 flex items-center justify-between flex-wrap gap-2 shrink-0">

@@ -130,12 +130,37 @@ export default function UserNav() {
       }
     })();
 
+    const handleExamsChanged = async () => {
+      memoryExamsCache = null;
+      const { data: activeExams } = await supabase
+        .from("exams")
+        .select("id, title, slug, description")
+        .eq("is_active", true)
+        .order("sort_order");
+        
+      if (activeExams) {
+        const mapped = activeExams.map(ex => ({
+          name: ex.title,
+          slug: ex.slug,
+          desc: ex.description || "",
+          badge: ""
+        }));
+        memoryExamsCache = mapped;
+        setSscSubExams(mapped);
+      }
+    };
+
+    window.addEventListener("ssczone-exams-changed", handleExamsChanged);
+
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       setUser(session?.user || null);
       if (!session) setIsAdmin(false);
     });
 
-    return () => subscription.unsubscribe();
+    return () => {
+      subscription.unsubscribe();
+      window.removeEventListener("ssczone-exams-changed", handleExamsChanged);
+    };
   }, []);
 
   async function handleLogout() {

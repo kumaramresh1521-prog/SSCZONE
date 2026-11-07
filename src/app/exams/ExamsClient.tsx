@@ -49,7 +49,16 @@ export default function ExamsClient({ exams }: { exams: Exam[] }) {
     setOpenCategories(prev => ({ ...prev, [cat]: !prev[cat] }));
   };
 
-  const levelTabs = ["All", "Graduate Level", "10+2 (Higher Secondary)", "Police & Defense", "10th / Matric Level"];
+  // Dynamically compute levelTabs based on available categories
+  const levelTabs = useMemo(() => {
+    const presentCategories = new Set<string>();
+    exams.forEach(ex => presentCategories.add(getCategoryForExam(ex.title)));
+    const tabs = ["All"];
+    ["Graduate Level", "10+2 (Higher Secondary)", "Police & Defense", "10th / Matric Level"].forEach(lvl => {
+      if (presentCategories.has(lvl)) tabs.push(lvl);
+    });
+    return tabs.length > 1 ? tabs : ["All"];
+  }, [exams]);
 
   // Filter exams
   const filteredExams = useMemo(() => {

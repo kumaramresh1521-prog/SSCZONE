@@ -22,8 +22,8 @@ export default function ToolkitHubPage() {
       title: "SSC Rank Predictor & Marks Calculator",
       description: "Paste your official SSC Answer Key link or enter raw scores to calculate category rank, shift difficulty, and normalized marks.",
       icon: Trophy,
-      badge: "🔥 HOT - RANKIQ STYLE",
-      badgeColor: "bg-amber-500 text-slate-950",
+      badge: "🔥 POPULAR",
+      badgeColor: "bg-blue-600 text-white",
       href: "/toolkit/rank-predictor",
       gradient: "from-blue-600 to-indigo-600",
       features: [
@@ -34,17 +34,17 @@ export default function ToolkitHubPage() {
     },
     {
       id: "age-calculator",
-      title: "SSC Age & Post Eligibility Calculator",
-      description: "Check if you are eligible for SSC CGL, CHSL, CPO, and Stenographer 27-year, 30-year, or 32-year limit posts.",
+      title: "SSC Age Calculator",
+      description: "Calculate your exact age as on the official SSC cutoff date with category age relaxation.",
       icon: Calendar,
       badge: "🎂 ACCURATE",
-      badgeColor: "bg-blue-600 text-white",
+      badgeColor: "bg-indigo-600 text-white",
       href: "/toolkit/age-calculator",
       gradient: "from-indigo-600 to-purple-600",
       features: [
         "Cutoff Date Support (01-08-2025 / 01-01-2025)",
         "Category Age Relaxation (OBC +3y, SC/ST +5y)",
-        "Post-by-Post Eligibility Report"
+        "Exact Years, Months & Days Calculation"
       ]
     },
     {

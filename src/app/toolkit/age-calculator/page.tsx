@@ -10,9 +10,7 @@ import {
   Sparkles,
   Award,
   ShieldCheck,
-  RotateCcw,
-  Check,
-  X
+  RotateCcw
 } from "lucide-react";
 
 export default function SSCAgeCalculatorPage() {
@@ -62,52 +60,6 @@ export default function SSCAgeCalculatorPage() {
 
   const relaxationYears = getRelaxation();
 
-  // Major SSC Posts criteria
-  const posts = [
-    {
-      name: "SSC CGL (ASO / Excise / IT Inspector / Examiner)",
-      baseMin: 18,
-      baseMax: 30,
-      description: "Assistant Section Officer (CSS/MEA), Income Tax Inspector, Central Excise Inspector"
-    },
-    {
-      name: "SSC CGL (Tax Assistant / UDC / Auditor Posts)",
-      baseMin: 18,
-      baseMax: 27,
-      description: "Tax Assistant (CBDT/CBIC), Upper Division Clerk, Accountant & Auditor"
-    },
-    {
-      name: "SSC CGL (Junior Statistical Officer - JSO)",
-      baseMin: 18,
-      baseMax: 32,
-      description: "JSO in Ministry of Statistics & Programme Implementation"
-    },
-    {
-      name: "SSC CHSL (LDC / JSA / Data Entry Operator)",
-      baseMin: 18,
-      baseMax: 27,
-      description: "Lower Division Clerk, Junior Secretariat Assistant, DEO"
-    },
-    {
-      name: "SSC CPO Sub-Inspector (Delhi Police & CAPF)",
-      baseMin: 20,
-      baseMax: 25,
-      description: "Sub-Inspector in BSF, CISF, CRPF, ITBP, SSB & Delhi Police"
-    },
-    {
-      name: "SSC Stenographer Grade C",
-      baseMin: 18,
-      baseMax: 30,
-      description: "Stenographer Grade C in Central Ministries"
-    },
-    {
-      name: "SSC Stenographer Grade D",
-      baseMin: 18,
-      baseMax: 27,
-      description: "Stenographer Grade D in Attached Offices"
-    }
-  ];
-
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 pb-20 font-sans">
       
@@ -123,10 +75,10 @@ export default function SSCAgeCalculatorPage() {
             </div>
             <div>
               <h1 className="text-2xl sm:text-3xl font-black tracking-tight">
-                SSC Age & Post Eligibility Calculator
+                SSC Age Calculator
               </h1>
               <p className="text-indigo-100 text-xs sm:text-sm mt-0.5 font-medium">
-                Calculate your exact age on SSC cutoff date & check post-by-post eligibility with category relaxation.
+                Calculate your exact age in years, months, and days as on official SSC cutoff dates.
               </p>
             </div>
           </div>
@@ -216,59 +168,6 @@ export default function SSCAgeCalculatorPage() {
               <p className="text-xs text-indigo-200 font-medium">
                 Category Relaxation Applied: <span className="font-extrabold text-amber-300">+{relaxationYears} Years</span> ({category})
               </p>
-            </div>
-          </div>
-        )}
-
-        {/* POST ELIGIBILITY TABLE */}
-        {ageInfo && (
-          <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-lg">
-            <h3 className="text-base font-black text-slate-900 mb-6 flex items-center justify-between border-b border-slate-100 pb-3">
-              <span>Post-by-Post Eligibility Report</span>
-              <span className="text-xs text-indigo-600 font-bold">Category: {category}</span>
-            </h3>
-
-            <div className="space-y-4">
-              {posts.map((p, idx) => {
-                const maxAgeWithRelaxation = p.baseMax + relaxationYears;
-                const isEligible = ageInfo.years >= p.baseMin && ageInfo.years < maxAgeWithRelaxation;
-
-                return (
-                  <div
-                    key={idx}
-                    className={`p-4 sm:p-5 rounded-2xl border flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 transition-all ${
-                      isEligible
-                        ? "bg-emerald-50/60 border-emerald-300"
-                        : "bg-red-50/60 border-red-200"
-                    }`}
-                  >
-                    <div>
-                      <div className="flex items-center gap-2">
-                        <span className={`px-2 py-0.5 rounded text-[10px] font-black uppercase ${isEligible ? "bg-emerald-600 text-white" : "bg-red-600 text-white"}`}>
-                          {isEligible ? "ELIGIBLE" : "NOT ELIGIBLE"}
-                        </span>
-                        <p className="font-black text-sm text-slate-900">{p.name}</p>
-                      </div>
-                      <p className="text-xs text-slate-600 mt-1">{p.description}</p>
-                      <p className="text-[11px] text-slate-500 font-bold mt-1">
-                        Age Range Required: {p.baseMin} to {p.baseMax} Years (Effective Max: {maxAgeWithRelaxation} Yrs)
-                      </p>
-                    </div>
-
-                    <div className="shrink-0">
-                      {isEligible ? (
-                        <div className="flex items-center gap-1.5 text-xs font-black text-emerald-700 bg-white px-3 py-1.5 rounded-xl border border-emerald-200 shadow-xs">
-                          <Check className="w-4 h-4 text-emerald-600" /> Eligible to Apply
-                        </div>
-                      ) : (
-                        <div className="flex items-center gap-1.5 text-xs font-black text-red-700 bg-white px-3 py-1.5 rounded-xl border border-red-200 shadow-xs">
-                          <X className="w-4 h-4 text-red-600" /> Age Limit Exceeded
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                );
-              })}
             </div>
           </div>
         )}

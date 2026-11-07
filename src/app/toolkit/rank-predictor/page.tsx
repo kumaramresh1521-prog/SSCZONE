@@ -347,16 +347,11 @@ export default function SSCPageRankPredictor() {
                 <Trophy className="w-6 h-6" />
               </div>
               <div>
-                <div className="flex items-center gap-2">
-                  <span className="px-2.5 py-0.5 rounded-full bg-amber-400 text-slate-950 font-black text-[10px] uppercase tracking-wider shadow-xs">
-                    🔥 2026 OFFICIAL CBEXAMS &amp; DIGIALM ENGINE
-                  </span>
-                </div>
-                <h1 className="text-2xl sm:text-3xl font-black tracking-tight mt-1 text-white">
+                <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-white">
                   SSC Official Answer Key Marks Calculator &amp; Rank Predictor
                 </h1>
                 <p className="text-xs text-blue-200 mt-1 max-w-2xl">
-                  Compatible with the latest SSC <strong>sscexams.cbexams.com</strong> and classic <strong>digialm.com</strong> response sheets. Instant raw score, normalization bonus, shift difficulty, and RankIQ percentile prediction.
+                  Calculate raw marks, expected normalization score, shift difficulty analysis, and All-India rank prediction.
                 </p>
               </div>
             </div>
@@ -447,15 +442,15 @@ export default function SSCPageRankPredictor() {
             <div className="space-y-4">
               <div>
                 <label className="text-xs font-bold text-slate-700 block mb-1.5 flex items-center justify-between">
-                  <span>Paste SSC Answer Key URL (CBExams or DigiALM link):</span>
-                  <span className="text-[11px] text-blue-600 font-normal">Supports https://sscexams.cbexams.com/...</span>
+                  <span>Paste Official SSC Answer Key URL:</span>
+                  <span className="text-[11px] text-blue-600 font-normal">Official Response Sheet Link</span>
                 </label>
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                   <input
                     type="url"
                     value={answerKeyUrl}
                     onChange={(e) => setAnswerKeyUrl(e.target.value)}
-                    placeholder="e.g. https://sscexams.cbexams.com/CGLE2026jsdgheQchallengemshetsOct27/ViewCandResponse.aspx?enckey=..."
+                    placeholder="Paste your official answer key response sheet link here..."
                     className="flex-1 bg-slate-50 border border-slate-300 text-slate-900 rounded-2xl p-3.5 text-xs font-mono font-medium focus:outline-none focus:border-blue-600"
                   />
                   <button
@@ -606,7 +601,7 @@ export default function SSCPageRankPredictor() {
                     {parsedData.candidate.candidateName || "Candidate"}
                   </h2>
                   <p className="text-xs text-slate-500 font-mono mt-0.5">
-                    Roll No: {parsedData.candidate.rollNumber} • Vendor: {parsedData.candidate.vendor}
+                    Roll No: {parsedData.candidate.rollNumber}
                   </p>
                 </div>
 

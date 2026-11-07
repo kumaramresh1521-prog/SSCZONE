@@ -30,7 +30,7 @@ import {
 } from "lucide-react";
 import toast from "react-hot-toast";
 import Link from "next/link";
-import { ALL_SUBJECTS, ChapterNote, SubjectMeta } from "@/lib/chapter-notes-store";
+import { ALL_SUBJECTS, ChapterNote, SubjectMeta } from "@/lib/chapter-notes-types";
 
 export default function AdminChapterNotesPage() {
   const [notes, setNotes] = useState<ChapterNote[]>([]);

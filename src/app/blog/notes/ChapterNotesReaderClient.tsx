@@ -41,7 +41,7 @@ import {
   SlidersHorizontal,
 } from "lucide-react";
 import toast from "react-hot-toast";
-import type { ChapterNote, SubjectMeta } from "@/lib/chapter-notes-store";
+import type { ChapterNote, SubjectMeta } from "@/lib/chapter-notes-types";
 
 // Map subject icons safely
 const ICON_MAP: Record<string, React.ElementType> = {

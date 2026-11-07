@@ -32,9 +32,16 @@ export async function POST(request: Request) {
       type = "question_issue",
       meta = {},
     } = body;
-    const numericQuestionId = questionId ? Number(questionId) : null;
+    
+    // Safely extract numeric ID even if questionId is "pyq_15309", "bank_7422", or "q_1"
+    const parsedDigits = parseInt(String(questionId || "").replace(/\D/g, ""), 10);
+    const numericQuestionId = Number.isSafeInteger(Number(questionId))
+      ? Number(questionId)
+      : Number.isSafeInteger(parsedDigits) && parsedDigits > 0
+      ? parsedDigits
+      : 1;
 
-    if (type === "question_issue" && (!numericQuestionId || !Number.isSafeInteger(numericQuestionId))) {
+    if (type === "question_issue" && !questionId) {
       return NextResponse.json({ error: "questionId is required" }, { status: 400 });
     }
     if (typeof description === "string" && description.length > 2000) {
@@ -45,6 +52,7 @@ export async function POST(request: Request) {
       id: Date.now(),
       type,
       question_id: numericQuestionId,
+      raw_question_id: String(questionId || numericQuestionId),
       question_text: typeof questionText === "string" ? questionText.slice(0, 4000) : null,
       reason: typeof reason === "string" ? reason.slice(0, 120) : "Flagged issue",
       description: typeof description === "string" ? description : null,

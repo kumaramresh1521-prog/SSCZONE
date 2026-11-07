@@ -23,13 +23,17 @@ import {
   DEFAULT_NAVIGATION_CONFIG 
 } from "@/lib/navigation-store";
 
+// In-memory module cache to avoid redundant fetches on every client navigation
+let memoryNavCache: MenuItemConfig[] | null = null;
+let memoryExamsCache: any[] | null = null;
+
 export default function UserNav() {
   const [user, setUser] = useState<any>(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
   // Dynamic Navigation Configuration
-  const [navItems, setNavItems] = useState<MenuItemConfig[]>(DEFAULT_NAVIGATION_CONFIG.items);
+  const [navItems, setNavItems] = useState<MenuItemConfig[]>(memoryNavCache || DEFAULT_NAVIGATION_CONFIG.items);
   const [activeDropdownId, setActiveDropdownId] = useState<string | null>(null);
   const [mobileOpenDropdowns, setMobileOpenDropdowns] = useState<Record<string, boolean>>({});
 
@@ -58,7 +62,7 @@ export default function UserNav() {
     },
   ]);
   
-  const [sscSubExams, setSscSubExams] = useState<any[]>([]);
+  const [sscSubExams, setSscSubExams] = useState<any[]>(memoryExamsCache || []);
 
   const pathname = usePathname();
   const router = useRouter();
@@ -67,15 +71,18 @@ export default function UserNav() {
   useEffect(() => {
     setMounted(true);
 
-    // Fetch live navigation config
-    fetch(`/api/navigation?t=${Date.now()}`)
-      .then((r) => r.json())
-      .then((data) => {
-        if (data && Array.isArray(data.items) && data.items.length > 0) {
-          setNavItems(data.items);
-        }
-      })
-      .catch(() => {});
+    // Fetch live navigation config (use memory cache if already loaded)
+    if (!memoryNavCache) {
+      fetch("/api/navigation")
+        .then((r) => r.json())
+        .then((data) => {
+          if (data && Array.isArray(data.items) && data.items.length > 0) {
+            memoryNavCache = data.items;
+            setNavItems(data.items);
+          }
+        })
+        .catch(() => {});
+    }
 
     // Read cached tickers
     const saved = localStorage.getItem("ssczone_live_tickers");
@@ -100,20 +107,26 @@ export default function UserNav() {
         setIsAdmin(data?.is_admin || false);
       }
 
-      // Fetch active exams
-      const { data: activeExams } = await supabase
-        .from("exams")
-        .select("id, title, slug, description")
-        .eq("is_active", true)
-        .order("sort_order");
-        
-      if (activeExams) {
-        setSscSubExams(activeExams.map(ex => ({
-          name: ex.title,
-          slug: ex.slug,
-          desc: ex.description || "",
-          badge: ""
-        })));
+      // Fetch active exams (use memory cache if already fetched)
+      if (memoryExamsCache) {
+        setSscSubExams(memoryExamsCache);
+      } else {
+        const { data: activeExams } = await supabase
+          .from("exams")
+          .select("id, title, slug, description")
+          .eq("is_active", true)
+          .order("sort_order");
+          
+        if (activeExams) {
+          const mapped = activeExams.map(ex => ({
+            name: ex.title,
+            slug: ex.slug,
+            desc: ex.description || "",
+            badge: ""
+          }));
+          memoryExamsCache = mapped;
+          setSscSubExams(mapped);
+        }
       }
     })();
 

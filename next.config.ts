@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   serverExternalPackages: ["pdf-parse"],
   compress: true,
   poweredByHeader: false,
-  reactStrictMode: true,
+  reactStrictMode: false,
   devIndicators: false,
   eslint: { ignoreDuringBuilds: true },
   images: {
@@ -13,15 +13,11 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
   },
   experimental: {
-    // Only throttle CPU in low-memory CI; allow full multi-core performance for fast localhost dev & builds
-    ...(process.env.LOW_MEMORY === "true" ? { cpus: 1, workerThreads: false } : {}),
     optimizePackageImports: [
       "lucide-react",
       "@supabase/supabase-js",
       "react-hot-toast",
-      "framer-motion",
-      "recharts",
-      "date-fns"
+      "katex",
     ],
   },
   async headers() {

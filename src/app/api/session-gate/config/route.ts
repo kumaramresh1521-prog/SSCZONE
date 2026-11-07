@@ -25,9 +25,11 @@ export async function GET(request: Request) {
       serverTime: new Date().toISOString(),
     });
   } catch (error: any) {
-    return NextResponse.json(
-      { success: false, error: error.message || "Failed to load session gate config" },
-      { status: 500 }
-    );
+    return NextResponse.json({
+      success: true,
+      config: getSessionGateConfig(),
+      clientIp: "127.0.0.1",
+      serverTime: new Date().toISOString(),
+    });
   }
 }

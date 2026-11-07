@@ -41,13 +41,17 @@ export function promptGuestLoginGate(reason?: string): boolean {
   return false;
 }
 
+// Module level memory cache for session gate config
+let memoryGateConfigCache: SessionGateConfig | null = null;
+let memoryClientIpCache: string = "";
+
 export default function GuestSessionGateModal() {
   const pathname = usePathname();
   const router = useRouter();
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [config, setConfig] = useState<SessionGateConfig | null>(null);
-  const [clientIp, setClientIp] = useState<string>("");
+  const [config, setConfig] = useState<SessionGateConfig | null>(memoryGateConfigCache);
+  const [clientIp, setClientIp] = useState<string>(memoryClientIpCache);
   const [isOpen, setIsOpen] = useState(false);
   const [elapsedMinutes, setElapsedMinutes] = useState(0);
   const [customReason, setCustomReason] = useState<string | null>(null);
@@ -71,16 +75,21 @@ export default function GuestSessionGateModal() {
     };
   }, []);
 
-  // Fetch gatekeeper configuration
+  // Fetch gatekeeper configuration (cached in memory)
   useEffect(() => {
+    if (memoryGateConfigCache) return;
     async function loadConfig() {
       try {
         const res = await fetch("/api/session-gate/config");
         if (res.ok) {
           const data = await res.json();
           if (data.config) {
+            memoryGateConfigCache = data.config;
             setConfig(data.config);
-            if (data.clientIp) setClientIp(data.clientIp);
+            if (data.clientIp) {
+              memoryClientIpCache = data.clientIp;
+              setClientIp(data.clientIp);
+            }
           }
         }
       } catch (e) {

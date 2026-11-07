@@ -7,12 +7,10 @@ export const revalidate = 0;
 export async function GET() {
   const config = getNavigationConfig();
   
-  // Return with zero-cache headers for real-time responsiveness
+  // Return with short cache headers for instant responsiveness
   return NextResponse.json(config, {
     headers: {
-      "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
-      Pragma: "no-cache",
-      Expires: "0",
+      "Cache-Control": "public, max-age=60, stale-while-revalidate=300",
     },
   });
 }

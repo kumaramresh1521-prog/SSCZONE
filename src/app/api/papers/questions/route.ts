@@ -51,10 +51,11 @@ async function syncLocalBackup(paperId: number) {
     questions.forEach((q, idx) => {
       const qNo = q.question_number || idx + 1;
       txt += `Q${qNo}. ${q.question_text}\n`;
-      txt += `A) ${q.option_a}\n`;
-      txt += `B) ${q.option_b}\n`;
-      txt += `C) ${q.option_c}\n`;
-      txt += `D) ${q.option_d}\n`;
+      if (q.image_url) txt += `[Question Image: ${q.image_url}]\n`;
+      txt += `A) ${q.option_a}${q.option_a_image_url ? ` [Image: ${q.option_a_image_url}]` : ""}\n`;
+      txt += `B) ${q.option_b}${q.option_b_image_url ? ` [Image: ${q.option_b_image_url}]` : ""}\n`;
+      txt += `C) ${q.option_c}${q.option_c_image_url ? ` [Image: ${q.option_c_image_url}]` : ""}\n`;
+      txt += `D) ${q.option_d}${q.option_d_image_url ? ` [Image: ${q.option_d_image_url}]` : ""}\n`;
       txt += `Correct Answer: Option ${q.correct_answer}\n`;
       if (q.explanation && q.explanation.trim()) {
         txt += `Explanation: ${q.explanation.trim()}\n`;

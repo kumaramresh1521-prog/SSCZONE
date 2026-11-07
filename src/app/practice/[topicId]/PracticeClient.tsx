@@ -907,7 +907,7 @@ export default function PracticeClient({
           </div>
 
           {/* Right Practice Area (8 Columns) */}
-          <div className="lg:col-span-8 space-y-4">
+          <div className="lg:col-span-8 space-y-4 min-w-0">
             {/* Unified Clean Top Header Card */}
             <div className="rounded-2xl border border-gray-200/90 bg-white p-3 sm:p-5 shadow-sm space-y-2.5 sm:space-y-3.5">
               {/* Row 1: Back Button + Subject Tag + Mode Switcher + Language Selector */}
@@ -1342,7 +1342,7 @@ export default function PracticeClient({
                         return (
                           <div
                             key={item.id}
-                            className={`rounded-2xl border bg-white p-5 sm:p-6 shadow-xs transition-all ${
+                            className={`rounded-2xl border bg-white p-3.5 sm:p-6 shadow-xs transition-all ${
                               setSubmitted
                                 ? isCorrect
                                   ? "border-emerald-300 ring-2 ring-emerald-500/10"
@@ -1352,60 +1352,69 @@ export default function PracticeClient({
                                 : "border-gray-200/90"
                             }`}
                           >
-                            <div className="flex items-start justify-between gap-4 border-b border-gray-100 pb-3">
-                              <div className="space-y-1.5 flex-1">
-                                <div className="flex items-center gap-2 flex-wrap">
-                                  {item.exam_tag && (
+                            {/* Top Meta Bar: Exam Tag / Tier on left, Bookmark & Report on right */}
+                            <div className="flex items-center justify-between gap-2.5 border-b border-gray-100 pb-2.5 sm:pb-3 mb-3">
+                              <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap min-w-0">
+                                {item.exam_tag ? (
+                                  <>
                                     <span className="inline-flex items-center gap-1 rounded-full bg-blue-50 border border-blue-200/80 px-2.5 py-0.5 text-[10px] font-extrabold text-blue-800 uppercase">
                                       🎯 {item.exam_tag}
                                     </span>
-                                  )}
-                                  {item.tier_level && (
-                                    <span className="inline-flex items-center rounded-full bg-amber-50 border border-amber-200 px-2 py-0.5 text-[10px] font-bold text-amber-800">
-                                      ⚡ {item.tier_level}
-                                    </span>
-                                  )}
-                                </div>
-                                {(() => {
-                                  const splitQ = splitBilingualText(item.question_text);
-                                  const qEn = splitQ.isBilingual ? splitQ.english : (item.question_text || textEn);
-                                  const qHi = item.question_text_hi || textHi || (splitQ.isBilingual ? splitQ.hindi : "");
-
-                                  return (
-                                    <>
-                                      <div className="space-y-1.5 pt-1">
-                                        <div className="flex items-start gap-2">
-                                          <span className="inline-flex items-center justify-center h-6 w-6 rounded-lg bg-blue-600 text-white text-xs font-black shrink-0 mt-0.5 shadow-2xs">
-                                            {qIdx + 1}
-                                          </span>
-                                          <div className="flex-1 min-w-0">
-                                            {langMode === "hi" && qHi ? (
-                                              <QuestionText text={qHi} />
-                                            ) : (
-                                              <QuestionText text={qEn} />
-                                            )}
-                                          </div>
-                                        </div>
-                                      </div>
-
-                                      {langMode === "bilingual" && qHi && qHi !== qEn && (
-                                        <div className="text-xs sm:text-sm font-semibold text-indigo-900 pt-1.5 border-t border-indigo-50/80 pl-8">
-                                          <QuestionText text={qHi} />
-                                        </div>
-                                      )}
-                                    </>
-                                  );
-                                })()}
-
-                                {item.image_url && (
-                                  <InteractiveImage src={item.image_url} alt="Question figure" />
+                                    {item.tier_level && (
+                                      <span className="inline-flex items-center rounded-full bg-amber-50 border border-amber-200 px-2 py-0.5 text-[10px] font-bold text-amber-800 shrink-0">
+                                        ⚡ {item.tier_level}
+                                      </span>
+                                    )}
+                                  </>
+                                ) : (
+                                  <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 border border-slate-200 px-2.5 py-0.5 text-[10px] font-extrabold text-slate-700">
+                                    📝 Question {qIdx + 1}
+                                  </span>
                                 )}
                               </div>
 
-                              <div className="flex items-center gap-1.5">
+                              <div className="flex items-center gap-1.5 shrink-0">
                                 <BookmarkButton questionId={item.id} />
                                 <ReportButton questionId={item.id} questionText={item.question_text} />
                               </div>
+                            </div>
+
+                            {/* Question Statement Full Width */}
+                            <div className="w-full space-y-2.5">
+                              {(() => {
+                                const splitQ = splitBilingualText(item.question_text);
+                                const qEn = splitQ.isBilingual ? splitQ.english : (item.question_text || textEn);
+                                const qHi = item.question_text_hi || textHi || (splitQ.isBilingual ? splitQ.hindi : "");
+
+                                return (
+                                  <>
+                                    <div className="space-y-1.5">
+                                      <div className="flex items-start gap-2.5">
+                                        <span className="inline-flex items-center justify-center h-6 w-6 rounded-lg bg-blue-600 text-white text-xs font-black shrink-0 mt-0.5 shadow-2xs">
+                                          {qIdx + 1}
+                                        </span>
+                                        <div className="flex-1 min-w-0 text-slate-900 leading-relaxed font-semibold">
+                                          {langMode === "hi" && qHi ? (
+                                            <QuestionText text={qHi} />
+                                          ) : (
+                                            <QuestionText text={qEn} />
+                                          )}
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    {langMode === "bilingual" && qHi && qHi !== qEn && (
+                                      <div className="text-xs sm:text-sm font-semibold text-indigo-900 pt-1.5 border-t border-indigo-50/80 pl-8">
+                                        <QuestionText text={qHi} />
+                                      </div>
+                                    )}
+                                  </>
+                                );
+                              })()}
+
+                              {item.image_url && (
+                                <InteractiveImage src={item.image_url} alt="Question figure" />
+                              )}
                             </div>
 
                             {/* Options */}
@@ -1568,75 +1577,85 @@ export default function PracticeClient({
 
                     {/* Question Box */}
                     <div className="rounded-2xl border border-gray-200/90 bg-white p-3.5 sm:p-6 shadow-sm transition-all">
-                      <div className="flex items-start justify-between gap-3 border-b border-gray-100 pb-3 sm:pb-4">
-                        <div className="space-y-2 w-full overflow-hidden">
-                          {q.exam_tag && (
-                            <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
+                      {/* Top Meta Bar: Exam Tag / Tier on left, Bookmark & Report on right */}
+                      <div className="flex items-center justify-between gap-2.5 border-b border-gray-100 pb-2.5 sm:pb-3 mb-3 sm:mb-4">
+                        <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap min-w-0">
+                          {q.exam_tag ? (
+                            <>
                               <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200/80 px-2.5 sm:px-3 py-0.5 sm:py-1 text-[10px] sm:text-[11px] font-extrabold text-blue-800 shadow-2xs uppercase tracking-wide">
                                 <span className="text-amber-500">🎯</span>
-                                {q.exam_tag}
+                                <span className="truncate max-w-[170px] sm:max-w-none">{q.exam_tag}</span>
                               </span>
                               {q.tier_level && (
-                                <span className="inline-flex items-center rounded-full bg-amber-50 border border-amber-200 px-2 sm:px-2.5 py-0.5 text-[10px] font-bold text-amber-800">
+                                <span className="inline-flex items-center rounded-full bg-amber-50 border border-amber-200 px-2 sm:px-2.5 py-0.5 text-[10px] font-bold text-amber-800 shrink-0">
                                   ⚡ {q.tier_level}
                                 </span>
                               )}
-                            </div>
-                          )}
-                          {(() => {
-                            const splitQ = splitBilingualText(q.question_text);
-                            const textEn = splitQ.isBilingual ? splitQ.english : q.question_text;
-                            const textHi = q.question_text_hi || translationsCache[q.id]?.question_text || (splitQ.isBilingual ? splitQ.hindi : "");
-
-                            return (
-                              <div className="space-y-2 pt-1">
-                                <div className="flex items-start gap-2.5">
-                                  <span className="inline-flex items-center justify-center h-6 w-6 sm:h-7 sm:w-7 rounded-lg bg-blue-600 text-white text-xs font-black shrink-0 mt-0.5 shadow-2xs">
-                                    Q{currentIndex + 1}
-                                  </span>
-                                  <div className="flex-1 min-w-0">
-                                    {langMode === "hi" && textHi ? (
-                                      <QuestionText text={textHi} />
-                                    ) : (
-                                      <QuestionText text={textEn} />
-                                    )}
-                                  </div>
-                                </div>
-
-                                {langMode === "bilingual" && textHi && textHi !== textEn && (
-                                  <div className="text-xs sm:text-sm font-semibold text-indigo-900 pt-2 border-t border-indigo-50/80 leading-relaxed pl-8 sm:pl-9">
-                                    <QuestionText text={textHi} />
-                                  </div>
-                                )}
-                              </div>
-                            );
-                          })()}
-
-                          {/* Question Image */}
-                          {q.image_url && (
-                            <div className="relative group inline-block mt-4 mb-2">
-                              <img 
-                                src={q.image_url} 
-                                alt="Question figure" 
-                                onClick={() => { setZoomedImage(q.image_url); setZoomScale(1); }}
-                                className="w-auto max-w-full sm:max-w-xl rounded-2xl border border-slate-200 bg-white p-1.5 sm:p-2 shadow-xs transition-all hover:shadow-md cursor-zoom-in" 
-                                style={{ maxHeight: '520px', objectFit: 'contain' }}
-                              />
-                              <button
-                                type="button"
-                                onClick={() => { setZoomedImage(q.image_url); setZoomScale(1); }}
-                                className="absolute bottom-3 right-3 flex items-center gap-1.5 rounded-xl bg-gray-900/85 hover:bg-gray-900 text-white px-3 py-1.5 text-xs font-extrabold shadow-lg backdrop-blur-xs transition-all cursor-pointer"
-                              >
-                                <Maximize2 className="h-3.5 w-3.5" />
-                                <span>🔍 Zoom Fullscreen</span>
-                              </button>
-                            </div>
+                            </>
+                          ) : (
+                            <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 border border-slate-200 px-2.5 py-0.5 text-[10px] sm:text-[11px] font-extrabold text-slate-700">
+                              📝 Practice Question
+                            </span>
                           )}
                         </div>
-                        <div className="flex items-center gap-1.5">
+
+                        <div className="flex items-center gap-1.5 shrink-0">
                           <BookmarkButton questionId={q.id} />
                           <ReportButton questionId={q.id} questionText={q.question_text} />
                         </div>
+                      </div>
+
+                      {/* Question Statement (Full Width!) */}
+                      <div className="w-full space-y-3">
+                        {(() => {
+                          const splitQ = splitBilingualText(q.question_text);
+                          const textEn = splitQ.isBilingual ? splitQ.english : q.question_text;
+                          const textHi = q.question_text_hi || translationsCache[q.id]?.question_text || (splitQ.isBilingual ? splitQ.hindi : "");
+
+                          return (
+                            <div className="space-y-2">
+                              <div className="flex items-start gap-2.5 sm:gap-3">
+                                <span className="inline-flex items-center justify-center h-6 w-6 sm:h-7 sm:w-7 rounded-lg bg-blue-600 text-white text-xs font-black shrink-0 mt-0.5 shadow-2xs">
+                                  Q{currentIndex + 1}
+                                </span>
+                                <div className="flex-1 min-w-0 text-slate-900 leading-relaxed font-semibold">
+                                  {langMode === "hi" && textHi ? (
+                                    <QuestionText text={textHi} />
+                                  ) : (
+                                    <QuestionText text={textEn} />
+                                  )}
+                                </div>
+                              </div>
+
+                              {langMode === "bilingual" && textHi && textHi !== textEn && (
+                                <div className="text-xs sm:text-sm font-semibold text-indigo-900 pt-2 border-t border-indigo-50/80 leading-relaxed pl-8 sm:pl-10">
+                                  <QuestionText text={textHi} />
+                                </div>
+                              )}
+                            </div>
+                          );
+                        })()}
+
+                        {/* Question Image */}
+                        {q.image_url && (
+                          <div className="relative group inline-block mt-3 mb-2">
+                            <img 
+                              src={q.image_url} 
+                              alt="Question figure" 
+                              onClick={() => { setZoomedImage(q.image_url); setZoomScale(1); }}
+                              className="w-auto max-w-full sm:max-w-xl rounded-2xl border border-slate-200 bg-white p-1.5 sm:p-2 shadow-xs transition-all hover:shadow-md cursor-zoom-in" 
+                              style={{ maxHeight: '520px', objectFit: 'contain' }}
+                            />
+                            <button
+                              type="button"
+                              onClick={() => { setZoomedImage(q.image_url); setZoomScale(1); }}
+                              className="absolute bottom-3 right-3 flex items-center gap-1.5 rounded-xl bg-gray-900/85 hover:bg-gray-900 text-white px-3 py-1.5 text-xs font-extrabold shadow-lg backdrop-blur-xs transition-all cursor-pointer"
+                            >
+                              <Maximize2 className="h-3.5 w-3.5" />
+                              <span>🔍 Zoom Fullscreen</span>
+                            </button>
+                          </div>
+                        )}
                       </div>
 
                       {/* Options List */}

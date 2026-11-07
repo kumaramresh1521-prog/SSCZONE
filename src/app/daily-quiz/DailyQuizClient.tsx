@@ -43,6 +43,7 @@ import ReportButton from "@/components/ReportButton";
 import CollectQuestionButton from "@/components/CollectQuestionButton";
 import { saveUserAttempt } from "@/lib/user-attempts-store";
 import { translateSingleQuestion } from "@/lib/translator";
+import { promptGuestLoginGate } from "@/components/GuestSessionGateModal";
 import type { DailyQuiz, DailyQuizQuestion } from "@/lib/daily-quiz-store";
 
 // Audio chime using Web Audio API (Zero external dependencies)
@@ -230,6 +231,9 @@ export default function DailyQuizClient() {
 
   // ── Start a Quiz ──
   async function handleStartQuiz(quizId: string) {
+    if (promptGuestLoginGate("Your 15-minute free guest preview has completed. Please login or create a free account to attempt this Daily Free Quiz.")) {
+      return;
+    }
     try {
       setQuizState("loading_quiz");
       const res = await fetch(`/api/daily-quiz/${quizId}`);

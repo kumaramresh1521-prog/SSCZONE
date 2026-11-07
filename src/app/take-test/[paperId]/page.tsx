@@ -44,6 +44,7 @@ import {
   Globe
 } from "lucide-react";
 import { isPaperTranslatorAllowed } from "@/lib/paper-pdf-store";
+import { promptGuestLoginGate } from "@/components/GuestSessionGateModal";
 
 const OPTIONS = ["A", "B", "C", "D"] as const;
 type Option = (typeof OPTIONS)[number];
@@ -669,6 +670,10 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
     }
     if (questions.length === 0) {
       toast.error("This test does not have any questions yet.");
+      return;
+    }
+
+    if (promptGuestLoginGate("Your 15-minute free guest preview has completed. Please login or create a free account to attempt this CBT shift paper.")) {
       return;
     }
 

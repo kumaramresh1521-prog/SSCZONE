@@ -169,6 +169,14 @@ export default function AdminToolsPage() {
             <Layers className="h-4 w-4 text-purple-300" />
             Tool 3: Topic Sequence Re-Indexer
           </button>
+
+          <Link
+            href="/admin/session-gate"
+            className="flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs font-black transition-all bg-amber-500/10 border border-amber-500/30 text-amber-300 hover:bg-amber-500/20"
+          >
+            <ShieldCheck className="h-4 w-4 text-amber-400" />
+            Tool 4: Guest Session Gate (15 Min Limit) &rarr;
+          </Link>
         </div>
       </div>
 

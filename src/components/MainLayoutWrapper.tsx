@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import UserNav from "@/components/UserNav";
 import Footer from "@/components/Footer";
 import MobileBottomNav from "@/components/MobileBottomNav";
+import GuestSessionGateModal from "@/components/GuestSessionGateModal";
 
 export default function MainLayoutWrapper({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -17,12 +18,18 @@ export default function MainLayoutWrapper({ children }: { children: React.ReactN
 
   // Standalone immersive CBT exam hall: No website UserNav, Footer, or MobileBottomNav interference!
   if (isTestRoute) {
-    return <main className="h-screen w-full max-w-full overflow-hidden bg-[#F0F2F5] text-slate-900 font-sans">{children}</main>;
+    return (
+      <main className="h-screen w-full max-w-full overflow-hidden bg-[#F0F2F5] text-slate-900 font-sans">
+        <GuestSessionGateModal />
+        {children}
+      </main>
+    );
   }
 
   return (
     <div className="min-h-screen w-full max-w-full overflow-x-clip bg-slate-50 text-slate-900 antialiased font-sans flex flex-col justify-between">
       <UserNav />
+      <GuestSessionGateModal />
       <main className="flex-1 w-full max-w-full">{children}</main>
       <Footer />
       <MobileBottomNav />

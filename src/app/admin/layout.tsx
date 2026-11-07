@@ -29,6 +29,7 @@ import {
   Folder,
   Compass,
   Zap,
+  ShieldAlert,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { supabase } from "@/lib/supabase";
@@ -45,6 +46,7 @@ const menuItems: MenuItem[] = [
   { label: "Menu & Navigation", href: "/admin/navigation", icon: Compass },
   { label: "Homepage CMS", href: "/admin/homepage", icon: LayoutTemplate },
   { label: "Admin Tools", href: "/admin/tools", icon: Wrench },
+  { label: "Guest Session Gate", href: "/admin/session-gate", icon: ShieldAlert },
   { label: "System & Integrations", href: "/admin/integrations", icon: Network },
   { label: "Ads & Monetization", href: "/admin/ads", icon: DollarSign },
   { label: "Ticker", href: "/admin/ticker", icon: Radio },

@@ -37,6 +37,7 @@ import ReportButton from "@/components/ReportButton";
 import CollectQuestionButton from "@/components/CollectQuestionButton";
 import { saveUserAttempt } from "@/lib/user-attempts-store";
 import { translateSingleQuestion } from "@/lib/translator";
+import { promptGuestLoginGate } from "@/components/GuestSessionGateModal";
 
 // Audio chime using Web Audio API (Zero external dependencies)
 function playChime(type: "tick" | "warning" | "finish" | "select") {
@@ -407,6 +408,9 @@ export default function SpeedTestClient() {
 
   // Start Speed Test Drill
   const handleStartTest = async () => {
+    if (promptGuestLoginGate("Your 15-minute free guest preview has completed. Please login or create a free account to attempt this Speed Test Drill.")) {
+      return;
+    }
     setLoadingQuestions(true);
     try {
       const attemptId = `attempt_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`;

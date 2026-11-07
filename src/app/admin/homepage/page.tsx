@@ -148,15 +148,15 @@ export default function AdminHomepageBuilder() {
   return (
     <div className="space-y-6 max-w-6xl pb-16">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-gray-200 pb-5">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-5">
         <div>
-          <h1 className="text-2xl font-black text-gray-900 flex items-center gap-2">
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-100 text-blue-700">
+          <h1 className="text-2xl font-black text-white flex items-center gap-2">
+            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-600/20 text-blue-400 border border-blue-500/30">
               <LayoutTemplate className="h-5 w-5" />
             </span>
             <span>Homepage UI Content &amp; Section Manager</span>
           </h1>
-          <p className="text-xs text-gray-500 mt-1">
+          <p className="text-xs text-slate-400 mt-1">
             Customize headlines, buttons, stats, steps, and featured cards on the main public homepage.
           </p>
         </div>
@@ -164,7 +164,7 @@ export default function AdminHomepageBuilder() {
         <div className="flex items-center gap-2">
           <button
             onClick={handleResetDefaults}
-            className="flex items-center gap-1.5 rounded-xl border border-gray-300 bg-white px-4 py-2.5 text-xs font-bold text-gray-700 hover:bg-gray-50 transition-all cursor-pointer"
+            className="flex items-center gap-1.5 rounded-xl border border-slate-700 bg-slate-800 hover:bg-slate-700 px-4 py-2.5 text-xs font-bold text-slate-200 transition-all cursor-pointer"
           >
             <RotateCcw className="h-3.5 w-3.5" />
             <span>Reset Defaults</span>
@@ -173,7 +173,7 @@ export default function AdminHomepageBuilder() {
           <button
             onClick={handleSave}
             disabled={saving}
-            className="flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-2.5 text-xs sm:text-sm font-black text-white shadow-md hover:bg-blue-700 active:scale-98 transition-all disabled:opacity-50 cursor-pointer"
+            className="flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-2.5 text-xs sm:text-sm font-black text-white shadow-md hover:bg-blue-500 active:scale-98 transition-all disabled:opacity-50 cursor-pointer"
           >
             <Save className="h-4 w-4" />
             <span>{saving ? "Saving Changes..." : "Publish to Live Homepage"}</span>
@@ -182,7 +182,7 @@ export default function AdminHomepageBuilder() {
       </div>
 
       {/* Navigation Tabs for Sections */}
-      <div className="flex items-center gap-1.5 overflow-x-auto rounded-2xl bg-gray-100 p-1.5 border border-gray-200">
+      <div className="flex items-center gap-1.5 overflow-x-auto rounded-2xl bg-slate-900/90 p-1.5 border border-slate-800">
         {[
           { id: "hero", label: "🌟 1. Hero Header Banner" },
           { id: "stats", label: "📊 2. Stats Counters" },
@@ -195,8 +195,8 @@ export default function AdminHomepageBuilder() {
             onClick={() => setActiveTab(tab.id as any)}
             className={`px-4 py-2 text-xs font-extrabold rounded-xl transition-all shrink-0 cursor-pointer ${
               activeTab === tab.id
-                ? "bg-white text-blue-700 shadow-xs border border-gray-200/80 font-black"
-                : "text-gray-600 hover:text-gray-900"
+                ? "bg-blue-600 text-white shadow-sm font-black"
+                : "text-slate-400 hover:text-white hover:bg-slate-800"
             }`}
           >
             {tab.label}
@@ -376,7 +376,7 @@ export default function AdminHomepageBuilder() {
                     stepsSection: { ...prev.stepsSection, title: e.target.value }
                   }))
                 }
-                className="w-full rounded-xl border border-gray-200 bg-gray-50 p-2.5 text-xs font-semibold"
+                className="w-full rounded-xl border border-gray-200 bg-gray-50 p-2.5 text-xs font-semibold text-slate-900 focus:bg-white focus:border-blue-500 focus:outline-hidden"
               />
             </div>
             <div>
@@ -390,7 +390,7 @@ export default function AdminHomepageBuilder() {
                     stepsSection: { ...prev.stepsSection, subtitle: e.target.value }
                   }))
                 }
-                className="w-full rounded-xl border border-gray-200 bg-gray-50 p-2.5 text-xs font-semibold"
+                className="w-full rounded-xl border border-gray-200 bg-gray-50 p-2.5 text-xs font-semibold text-slate-900 focus:bg-white focus:border-blue-500 focus:outline-hidden"
               />
             </div>
           </div>
@@ -410,7 +410,7 @@ export default function AdminHomepageBuilder() {
                       stepsSection: { ...prev.stepsSection, steps: updated }
                     }));
                   }}
-                  className="w-full rounded-lg border border-gray-200 bg-white p-2 text-xs font-bold"
+                  className="w-full rounded-lg border border-gray-200 bg-white p-2 text-xs font-bold text-slate-900 focus:border-blue-500 focus:outline-hidden"
                   placeholder="Step Title"
                 />
                 <textarea
@@ -424,7 +424,7 @@ export default function AdminHomepageBuilder() {
                       stepsSection: { ...prev.stepsSection, steps: updated }
                     }));
                   }}
-                  className="w-full rounded-lg border border-gray-200 bg-white p-2 text-xs font-medium"
+                  className="w-full rounded-lg border border-gray-200 bg-white p-2 text-xs font-medium text-slate-900 focus:border-blue-500 focus:outline-hidden"
                   placeholder="Step Description"
                 />
               </div>
@@ -453,7 +453,7 @@ export default function AdminHomepageBuilder() {
                     examsSection: { ...prev.examsSection, title: e.target.value }
                   }))
                 }
-                className="w-full rounded-xl border border-gray-200 bg-gray-50 p-2.5 text-xs font-semibold"
+                className="w-full rounded-xl border border-gray-200 bg-gray-50 p-2.5 text-xs font-semibold text-slate-900 focus:bg-white focus:border-blue-500 focus:outline-hidden"
               />
             </div>
             <div>
@@ -467,7 +467,7 @@ export default function AdminHomepageBuilder() {
                     examsSection: { ...prev.examsSection, subtitle: e.target.value }
                   }))
                 }
-                className="w-full rounded-xl border border-gray-200 bg-gray-50 p-2.5 text-xs font-semibold"
+                className="w-full rounded-xl border border-gray-200 bg-gray-50 p-2.5 text-xs font-semibold text-slate-900 focus:bg-white focus:border-blue-500 focus:outline-hidden"
               />
             </div>
           </div>
@@ -487,7 +487,7 @@ export default function AdminHomepageBuilder() {
                       examsSection: { ...prev.examsSection, cards: updated }
                     }));
                   }}
-                  className="w-full rounded-lg border border-gray-200 bg-white p-2 text-xs font-bold"
+                  className="w-full rounded-lg border border-gray-200 bg-white p-2 text-xs font-bold text-slate-900 focus:border-blue-500 focus:outline-hidden"
                   placeholder="Exam Name"
                 />
                 <textarea
@@ -501,7 +501,7 @@ export default function AdminHomepageBuilder() {
                       examsSection: { ...prev.examsSection, cards: updated }
                     }));
                   }}
-                  className="w-full rounded-lg border border-gray-200 bg-white p-2 text-xs font-medium"
+                  className="w-full rounded-lg border border-gray-200 bg-white p-2 text-xs font-medium text-slate-900 focus:border-blue-500 focus:outline-hidden"
                   placeholder="Exam Description"
                 />
                 <input
@@ -515,7 +515,7 @@ export default function AdminHomepageBuilder() {
                       examsSection: { ...prev.examsSection, cards: updated }
                     }));
                   }}
-                  className="w-full rounded-lg border border-gray-200 bg-white p-2 text-xs font-semibold"
+                  className="w-full rounded-lg border border-gray-200 bg-white p-2 text-xs font-semibold text-slate-900 focus:border-blue-500 focus:outline-hidden"
                   placeholder="Badge (e.g. 10+2 Level)"
                 />
               </div>
@@ -561,7 +561,7 @@ export default function AdminHomepageBuilder() {
                     ctaBanner: { ...prev.ctaBanner, title: e.target.value }
                   }))
                 }
-                className="w-full rounded-xl border border-gray-200 bg-gray-50 p-2.5 text-xs font-semibold"
+                className="w-full rounded-xl border border-gray-200 bg-gray-50 p-2.5 text-xs font-semibold text-slate-900 focus:bg-white focus:border-blue-500 focus:outline-hidden"
               />
             </div>
 
@@ -576,7 +576,7 @@ export default function AdminHomepageBuilder() {
                     ctaBanner: { ...prev.ctaBanner, buttonText: e.target.value }
                   }))
                 }
-                className="w-full rounded-xl border border-gray-200 bg-gray-50 p-2.5 text-xs font-semibold"
+                className="w-full rounded-xl border border-gray-200 bg-gray-50 p-2.5 text-xs font-semibold text-slate-900 focus:bg-white focus:border-blue-500 focus:outline-hidden"
               />
             </div>
 
@@ -591,7 +591,7 @@ export default function AdminHomepageBuilder() {
                     ctaBanner: { ...prev.ctaBanner, subtitle: e.target.value }
                   }))
                 }
-                className="w-full rounded-xl border border-gray-200 bg-gray-50 p-2.5 text-xs font-medium"
+                className="w-full rounded-xl border border-gray-200 bg-gray-50 p-2.5 text-xs font-medium text-slate-900 focus:bg-white focus:border-blue-500 focus:outline-hidden"
               />
             </div>
           </div>

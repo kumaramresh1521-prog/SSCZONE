@@ -48,10 +48,20 @@ export default function RichTextEditor({ value, onChange, placeholder }: RichTex
           border: none;
           font-family: inherit;
           font-size: 1rem;
+          background: #ffffff !important;
+          color: #0f172a !important;
         }
         .ql-editor {
           min-height: 350px;
           padding: 1.5rem;
+          color: #0f172a !important;
+          background-color: #ffffff !important;
+        }
+        .ql-editor * {
+          color: #0f172a !important;
+        }
+        .ql-editor.ql-blank::before {
+          color: #94a3b8 !important;
         }
         .ql-editor p { margin-bottom: 1em; }
         .ql-editor h1, .ql-editor h2, .ql-editor h3 { margin-top: 1.5em; margin-bottom: 0.5em; font-weight: 700; }

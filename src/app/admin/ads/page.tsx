@@ -83,15 +83,15 @@ export default function AdminAdsPage() {
   return (
     <div className="space-y-6 max-w-6xl pb-12">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-gray-200 pb-5">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-5">
         <div>
-          <h1 className="text-2xl font-black text-gray-900 flex items-center gap-2">
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700">
+          <h1 className="text-2xl font-black text-white flex items-center gap-2">
+            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-600/20 text-emerald-400 border border-emerald-500/30">
               <DollarSign className="h-5 w-5" />
             </span>
             <span>Ads &amp; Monetization Manager</span>
           </h1>
-          <p className="text-xs text-gray-500 mt-1">
+          <p className="text-xs text-slate-400 mt-1">
             Configure Google AdSense publisher ID, ad slot placements, and customize banner positions across the website.
           </p>
         </div>

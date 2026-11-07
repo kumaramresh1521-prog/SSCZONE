@@ -169,17 +169,17 @@ export default function AdminSeoPage() {
     <div className="space-y-6 max-w-6xl pb-20">
       
       {/* ── Top Header ── */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-gray-200 pb-5">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-5">
         <div>
           <div className="flex items-center gap-2">
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-100 text-blue-700">
+            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-600/20 text-blue-400 border border-blue-500/30">
               <Globe className="h-5 w-5" />
             </span>
-            <h1 className="text-2xl font-black text-gray-900">
+            <h1 className="text-2xl font-black text-white">
               SEO &amp; Metadata Engine
             </h1>
           </div>
-          <p className="text-xs text-gray-500 mt-1">
+          <p className="text-xs text-slate-400 mt-1">
             Manage site-wide meta tags, Google search snippets, OpenGraph sharing, indexing policies, and webmaster tools.
           </p>
         </div>

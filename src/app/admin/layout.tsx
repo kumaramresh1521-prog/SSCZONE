@@ -543,14 +543,95 @@ function AdminStyles() {
         box-shadow: 0 0 0 3px rgba(59,130,246,0.14);
         background: rgba(255,255,255,0.06);
       }
-      .a-input option, .a-select option, select option {
+      .a-input option, .a-select option {
         background-color: #151922 !important;
         color: #ffffff !important;
       }
-      .a-input optgroup, .a-select optgroup, select optgroup {
+      .a-input optgroup, .a-select optgroup {
         background-color: #0f1117 !important;
         color: #fbbf24 !important;
         font-weight: 800 !important;
+      }
+
+      /* Universal Visibility Overrides: Prevent white text on white backgrounds */
+      .admin-root .bg-white,
+      .admin-root .bg-gray-50,
+      .admin-root .bg-gray-100,
+      .admin-root .bg-slate-50,
+      .admin-root .bg-slate-100 {
+        color: #0f172a;
+      }
+
+      .admin-root .bg-white label,
+      .admin-root .bg-gray-50 label,
+      .admin-root .bg-slate-50 label {
+        color: #1e293b;
+      }
+
+      .admin-root .bg-white input,
+      .admin-root .bg-white textarea,
+      .admin-root .bg-white select,
+      .admin-root .bg-gray-50 input,
+      .admin-root .bg-gray-50 textarea,
+      .admin-root .bg-gray-50 select,
+      .admin-root input.bg-white,
+      .admin-root textarea.bg-white,
+      .admin-root select.bg-white,
+      .admin-root input.bg-gray-50,
+      .admin-root textarea.bg-gray-50,
+      .admin-root select.bg-gray-50 {
+        color: #0f172a !important;
+      }
+
+      .admin-root select.bg-white option,
+      .admin-root .bg-white select option {
+        background-color: #ffffff !important;
+        color: #0f172a !important;
+      }
+
+      .admin-root .bg-white input::placeholder,
+      .admin-root .bg-white textarea::placeholder,
+      .admin-root input.bg-white::placeholder,
+      .admin-root textarea.bg-white::placeholder,
+      .admin-root input.bg-gray-50::placeholder,
+      .admin-root textarea.bg-gray-50::placeholder {
+        color: #64748b !important;
+      }
+
+      /* Quill RichTextEditor Visibility Overrides for Blog & CMS */
+      .ql-toolbar.ql-snow {
+        background: #f8fafc !important;
+        border-color: #cbd5e1 !important;
+      }
+      .ql-toolbar.ql-snow .ql-stroke {
+        stroke: #1e293b !important;
+      }
+      .ql-toolbar.ql-snow .ql-fill {
+        fill: #1e293b !important;
+      }
+      .ql-toolbar.ql-snow .ql-picker-label {
+        color: #1e293b !important;
+      }
+      .ql-container.ql-snow {
+        background: #ffffff !important;
+        color: #0f172a !important;
+      }
+      .ql-editor,
+      .ql-editor * {
+        color: #0f172a !important;
+      }
+      .ql-editor.ql-blank::before {
+        color: #94a3b8 !important;
+      }
+
+      /* Dark Background Header Contrast Overrides */
+      .admin-main > .admin-content > div > div > h1.text-gray-900,
+      .admin-main > .admin-content h1.text-gray-900,
+      .admin-main > .admin-content h2.text-gray-900 {
+        color: #ffffff !important;
+      }
+      .admin-main > .admin-content p.text-gray-500 {
+        color: #94a3b8 !important;
       }
 
       .a-label {

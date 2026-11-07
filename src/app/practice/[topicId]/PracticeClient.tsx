@@ -28,6 +28,83 @@ import {
 
 import { translateToHindi, translateSingleQuestion } from "@/lib/translator";
 
+// ── Smart Bilingual Question Statement Parser ──
+function splitBilingualText(text?: string | null): { english: string; hindi: string; isBilingual: boolean } {
+  if (!text) return { english: "", hindi: "", isBilingual: false };
+
+  const devanagariRegex = /[\u0900-\u097F]/;
+  if (!devanagariRegex.test(text)) {
+    return { english: text.trim(), hindi: "", isBilingual: false };
+  }
+
+  const firstHi = text.search(devanagariRegex);
+  const prefix = text.substring(0, firstHi).trim();
+
+  // If prefix is very short (< 3 words) and doesn't end in sentence punctuation,
+  // it is just a Hindi question starting with an acronym (e.g. "CPU का मुख्य कार्य क्या है?")
+  const wordsInPrefix = prefix.split(/\s+/).filter(Boolean).length;
+  if (wordsInPrefix < 3 && !/[?!.]\s*$/.test(prefix)) {
+    return { english: text.trim(), hindi: text.trim(), isBilingual: false };
+  }
+
+  const m = prefix.match(/(\?|\.\s|\.\n|\:\s*)\s*(["'\w\s\d\+\-\=\/\^\{\}\(\)\[\]]{0,60})$/);
+  if (m && m.index !== undefined) {
+    const isDecimal = m[1].startsWith(".") && m.index > 0 && /\d/.test(prefix[m.index - 1]);
+    if (!isDecimal) {
+      const punctPos = m.index + m[1].length;
+      const en = text.substring(0, punctPos).trim();
+      const hi = text.substring(punctPos).trim();
+      if (hi.length > 0 && en.length > 0) {
+        return { english: en, hindi: hi, isBilingual: true };
+      }
+    }
+  }
+
+  if (wordsInPrefix >= 4) {
+    const en = text.substring(0, firstHi).trim();
+    const hi = text.substring(firstHi).trim();
+    return { english: en, hindi: hi, isBilingual: true };
+  }
+
+  return { english: text.trim(), hindi: text.trim(), isBilingual: false };
+}
+
+// ── Smart Bilingual Option Parser ──
+function splitBilingualOption(text?: string | null): { english: string; hindi: string; isBilingual: boolean } {
+  if (!text) return { english: "", hindi: "", isBilingual: false };
+
+  const devanagariRegex = /[\u0900-\u097F]/;
+  if (!devanagariRegex.test(text)) {
+    return { english: text.trim(), hindi: "", isBilingual: false };
+  }
+
+  if (text.includes(" / ")) {
+    const parts = text.split(" / ");
+    if (parts.length >= 2) {
+      const en = parts[0].trim();
+      const hi = parts.slice(1).join(" / ").trim();
+      if (devanagariRegex.test(hi)) {
+        return { english: en, hindi: hi, isBilingual: true };
+      }
+    }
+  }
+
+  const firstHi = text.search(devanagariRegex);
+  const prefix = text.substring(0, firstHi).trim();
+  if (prefix.length === 0) {
+    return { english: text.trim(), hindi: text.trim(), isBilingual: false };
+  }
+
+  const words = prefix.split(/\s+/).filter(Boolean).length;
+  if (words >= 1 && prefix.length >= 2) {
+    const en = text.substring(0, firstHi).trim();
+    const hi = text.substring(firstHi).trim();
+    return { english: en, hindi: hi, isBilingual: true };
+  }
+
+  return { english: text.trim(), hindi: text.trim(), isBilingual: false };
+}
+
 function formatSolutionSteps(rawText: string): string[] {
   if (!rawText) return [];
   
@@ -791,7 +868,7 @@ export default function PracticeClient({
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col justify-between">
+    <div className="min-h-screen bg-slate-50 flex flex-col">
       
       {/* Mobile Drawer Overlay */}
       {sidebarOpen && (
@@ -832,13 +909,13 @@ export default function PracticeClient({
           {/* Right Practice Area (8 Columns) */}
           <div className="lg:col-span-8 space-y-4">
             {/* Unified Clean Top Header Card */}
-            <div className="rounded-2xl border border-gray-200/90 bg-white p-4 sm:p-5 shadow-sm space-y-3.5">
+            <div className="rounded-2xl border border-gray-200/90 bg-white p-3 sm:p-5 shadow-sm space-y-2.5 sm:space-y-3.5">
               {/* Row 1: Back Button + Subject Tag + Mode Switcher + Language Selector */}
-              <div className="flex flex-wrap items-center justify-between gap-3 border-b border-gray-100 pb-3">
+              <div className="flex flex-wrap items-center justify-between gap-2.5 sm:gap-3 border-b border-gray-100 pb-2.5 sm:pb-3">
                 <div className="flex items-center gap-2 flex-wrap">
                   <button
                     onClick={() => setSidebarOpen(true)}
-                    className="flex h-8 w-8 items-center justify-center rounded-lg border border-gray-200 bg-gray-50 text-gray-700 shadow-2xs hover:bg-blue-50 hover:text-blue-600 lg:hidden cursor-pointer"
+                    className="flex h-8 w-8 items-center justify-center rounded-lg border border-gray-200 bg-gray-50 text-gray-700 shadow-2xs hover:bg-blue-50 hover:text-blue-600 lg:hidden cursor-pointer shrink-0"
                     title="Open Syllabus Navigation"
                   >
                     <Menu className="h-4 w-4" />
@@ -846,7 +923,7 @@ export default function PracticeClient({
 
                   <Link
                     href={examSlug ? `/exams/${examSlug}` : "/exams"}
-                    className="flex items-center gap-1.5 text-xs font-bold text-gray-500 hover:text-blue-600 transition-colors"
+                    className="flex items-center gap-1.5 text-xs font-bold text-gray-500 hover:text-blue-600 transition-colors shrink-0"
                   >
                     <ArrowLeft className="h-3.5 w-3.5" />
                     <span>Back</span>
@@ -854,19 +931,19 @@ export default function PracticeClient({
 
                   <span className="hidden sm:inline-block text-gray-300">|</span>
 
-                  <span className="rounded-full bg-blue-50 border border-blue-200/80 px-2.5 py-0.5 text-[11px] font-extrabold text-blue-700">
+                  <span className="rounded-full bg-blue-50 border border-blue-200/80 px-2.5 py-0.5 text-[11px] font-extrabold text-blue-700 truncate max-w-[150px] sm:max-w-none">
                     {topic.subjects?.title}
                   </span>
                 </div>
 
                 {/* Practice Mode & Language Toggles (Only when questions exist) */}
                 {questions.length > 0 && (
-                  <div className="flex flex-wrap items-center gap-2">
+                  <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
                     {/* Mode Switcher */}
-                    <div className="flex items-center rounded-xl bg-gray-100 p-1 border border-gray-200">
+                    <div className="flex items-center rounded-xl bg-gray-100 p-0.5 sm:p-1 border border-gray-200">
                       <button
                         onClick={() => setPracticeMode("step")}
-                        className={`flex items-center gap-1 px-2.5 py-1 text-xs font-extrabold rounded-lg transition-all cursor-pointer ${
+                        className={`flex items-center gap-1 px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer ${
                           practiceMode === "step"
                             ? "bg-white text-emerald-700 shadow-2xs border border-gray-200/80 font-black"
                             : "text-gray-600 hover:text-gray-900"
@@ -876,31 +953,33 @@ export default function PracticeClient({
                       </button>
                       <button
                         onClick={() => { setPracticeMode("page10"); setSelectedSetNumber(1); }}
-                        className={`flex items-center gap-1 px-2.5 py-1 text-xs font-extrabold rounded-lg transition-all cursor-pointer ${
+                        className={`flex items-center gap-1 px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer ${
                           practiceMode === "page10"
                             ? "bg-white text-blue-700 shadow-2xs border border-gray-200/80 font-black"
                             : "text-gray-600 hover:text-gray-900"
                         }`}
                       >
-                        <span>📑 10-Q Page View</span>
+                        <span className="hidden sm:inline">📑 10-Q Page View</span>
+                        <span className="sm:hidden">📑 10-Q</span>
                       </button>
                       <button
                         onClick={() => { setPracticeMode("set25"); setSelectedSetNumber(1); }}
-                        className={`flex items-center gap-1 px-2.5 py-1 text-xs font-extrabold rounded-lg transition-all cursor-pointer ${
+                        className={`flex items-center gap-1 px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer ${
                           practiceMode === "set25"
                             ? "bg-white text-indigo-700 shadow-2xs border border-gray-200/80 font-black"
                             : "text-gray-600 hover:text-gray-900"
                         }`}
                       >
-                        <span>⚡ 25-Q Sets</span>
+                        <span className="hidden sm:inline">⚡ 25-Q Sets</span>
+                        <span className="sm:hidden">⚡ 25-Q</span>
                       </button>
                     </div>
 
                     {/* Language Selector */}
-                    <div className="flex items-center rounded-xl bg-gray-100 p-1 border border-gray-200">
+                    <div className="flex items-center rounded-xl bg-gray-100 p-0.5 sm:p-1 border border-gray-200">
                       <button
                         onClick={() => setLangMode("en")}
-                        className={`px-2.5 py-1 text-xs font-extrabold rounded-lg transition-all cursor-pointer ${
+                        className={`px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer ${
                           langMode === "en"
                             ? "bg-blue-600 text-white shadow-2xs"
                             : "text-gray-600 hover:text-gray-900"
@@ -910,7 +989,7 @@ export default function PracticeClient({
                       </button>
                       <button
                         onClick={() => setLangMode("hi")}
-                        className={`px-2.5 py-1 text-xs font-extrabold rounded-lg transition-all cursor-pointer ${
+                        className={`px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer ${
                           langMode === "hi"
                             ? "bg-indigo-600 text-white shadow-2xs"
                             : "text-gray-600 hover:text-gray-900"
@@ -920,7 +999,7 @@ export default function PracticeClient({
                       </button>
                       <button
                         onClick={() => setLangMode("bilingual")}
-                        className={`px-2.5 py-1 text-xs font-extrabold rounded-lg transition-all cursor-pointer ${
+                        className={`px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer ${
                           langMode === "bilingual"
                             ? "bg-purple-600 text-white shadow-2xs"
                             : "text-gray-600 hover:text-gray-900"
@@ -934,9 +1013,9 @@ export default function PracticeClient({
               </div>
 
               {/* Row 2: Chapter Title + Prominent Exam & Tier Filters */}
-              <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-2.5 sm:gap-3">
                 <div>
-                  <h1 className="text-lg sm:text-xl font-black text-gray-900 tracking-tight">
+                  <h1 className="text-base sm:text-xl font-black text-gray-900 tracking-tight">
                     {topic.title}
                   </h1>
                   <p className="text-[11px] font-semibold text-gray-500">
@@ -948,12 +1027,12 @@ export default function PracticeClient({
 
                 {/* Filter Controls: Exam Target + Tier Level (Only when questions exist) */}
                 {questions.length > 0 && (
-                  <div className="flex flex-wrap items-center gap-2">
+                  <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
                     {/* Exam Target Filter Selector */}
-                    <div className="flex items-center gap-0.5 rounded-xl bg-slate-100 p-1 border border-slate-200 text-xs">
+                    <div className="flex items-center gap-0.5 rounded-xl bg-slate-100 p-0.5 sm:p-1 border border-slate-200 text-xs overflow-x-auto max-w-full [&::-webkit-scrollbar]:hidden">
                       <button
                         onClick={() => handleExamSwitch("All")}
-                        className={`px-2.5 py-1 font-extrabold rounded-lg transition-all cursor-pointer ${
+                        className={`px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer whitespace-nowrap ${
                           activeExamFilter === "All"
                             ? "bg-white text-blue-700 shadow-xs border border-gray-200 font-black"
                             : "text-gray-600 hover:text-gray-900"
@@ -963,7 +1042,7 @@ export default function PracticeClient({
                       </button>
                       <button
                         onClick={() => handleExamSwitch("CGL")}
-                        className={`px-2.5 py-1 font-extrabold rounded-lg transition-all cursor-pointer ${
+                        className={`px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer whitespace-nowrap ${
                           activeExamFilter === "CGL"
                             ? "bg-blue-600 text-white shadow-xs font-black"
                             : "text-gray-600 hover:text-gray-900"
@@ -973,7 +1052,7 @@ export default function PracticeClient({
                       </button>
                       <button
                         onClick={() => handleExamSwitch("CHSL")}
-                        className={`px-2.5 py-1 font-extrabold rounded-lg transition-all cursor-pointer ${
+                        className={`px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer whitespace-nowrap ${
                           activeExamFilter === "CHSL"
                             ? "bg-amber-600 text-white shadow-xs font-black"
                             : "text-gray-600 hover:text-gray-900"
@@ -985,10 +1064,10 @@ export default function PracticeClient({
 
                     {/* Tier Filter Selector (Strictly for Mathematics only) */}
                     {isMathSubject && (
-                      <div className="flex items-center gap-0.5 rounded-xl bg-slate-100 p-1 border border-slate-200 text-xs">
+                      <div className="flex items-center gap-0.5 rounded-xl bg-slate-100 p-0.5 sm:p-1 border border-slate-200 text-xs overflow-x-auto max-w-full [&::-webkit-scrollbar]:hidden">
                         <button
                           onClick={() => handleTierSwitch("All")}
-                          className={`px-2 py-1 font-extrabold rounded-lg transition-all cursor-pointer ${
+                          className={`px-2 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer whitespace-nowrap ${
                             activeTierFilter === "All"
                               ? "bg-white text-blue-700 shadow-xs border border-gray-200 font-black"
                               : "text-gray-600 hover:text-gray-900"
@@ -998,7 +1077,7 @@ export default function PracticeClient({
                         </button>
                         <button
                           onClick={() => handleTierSwitch("Tier 1")}
-                          className={`px-2 py-1 font-extrabold rounded-lg transition-all cursor-pointer ${
+                          className={`px-2 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer whitespace-nowrap ${
                             activeTierFilter === "Tier 1"
                               ? "bg-amber-500 text-white shadow-xs font-black"
                               : "text-gray-600 hover:text-gray-900"
@@ -1008,7 +1087,7 @@ export default function PracticeClient({
                         </button>
                         <button
                           onClick={() => handleTierSwitch("Tier 2")}
-                          className={`px-2 py-1 font-extrabold rounded-lg transition-all cursor-pointer ${
+                          className={`px-2 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer whitespace-nowrap ${
                             activeTierFilter === "Tier 2"
                               ? "bg-indigo-600 text-white shadow-xs font-black"
                               : "text-gray-600 hover:text-gray-900"
@@ -1287,26 +1366,36 @@ export default function PracticeClient({
                                     </span>
                                   )}
                                 </div>
-                                <div className="space-y-1.5 pt-1">
-                                  <div className="flex items-start gap-2">
-                                    <span className="inline-flex items-center justify-center h-6 w-6 rounded-lg bg-blue-600 text-white text-xs font-black shrink-0 mt-0.5 shadow-2xs">
-                                      {qIdx + 1}
-                                    </span>
-                                    <div className="flex-1">
-                                      {langMode === "hi" && (item.question_text_hi || textHi) ? (
-                                        <QuestionText text={item.question_text_hi || textHi} />
-                                      ) : (
-                                        <QuestionText text={textEn} />
-                                      )}
-                                    </div>
-                                  </div>
-                                </div>
+                                {(() => {
+                                  const splitQ = splitBilingualText(item.question_text);
+                                  const qEn = splitQ.isBilingual ? splitQ.english : (item.question_text || textEn);
+                                  const qHi = item.question_text_hi || textHi || (splitQ.isBilingual ? splitQ.hindi : "");
 
-                                {langMode === "bilingual" && (item.question_text_hi || textHi) && (
-                                  <div className="text-xs sm:text-sm font-semibold text-indigo-900 pt-1.5 border-t border-indigo-50/80">
-                                    <QuestionText text={item.question_text_hi || textHi} />
-                                  </div>
-                                )}
+                                  return (
+                                    <>
+                                      <div className="space-y-1.5 pt-1">
+                                        <div className="flex items-start gap-2">
+                                          <span className="inline-flex items-center justify-center h-6 w-6 rounded-lg bg-blue-600 text-white text-xs font-black shrink-0 mt-0.5 shadow-2xs">
+                                            {qIdx + 1}
+                                          </span>
+                                          <div className="flex-1 min-w-0">
+                                            {langMode === "hi" && qHi ? (
+                                              <QuestionText text={qHi} />
+                                            ) : (
+                                              <QuestionText text={qEn} />
+                                            )}
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      {langMode === "bilingual" && qHi && qHi !== qEn && (
+                                        <div className="text-xs sm:text-sm font-semibold text-indigo-900 pt-1.5 border-t border-indigo-50/80 pl-8">
+                                          <QuestionText text={qHi} />
+                                        </div>
+                                      )}
+                                    </>
+                                  );
+                                })()}
 
                                 {item.image_url && (
                                   <InteractiveImage src={item.image_url} alt="Question figure" />
@@ -1320,10 +1409,13 @@ export default function PracticeClient({
                             </div>
 
                             {/* Options */}
-                            <div className="mt-4 grid gap-2.5 sm:grid-cols-2">
+                            <div className="mt-3 sm:mt-4 grid gap-2 sm:gap-2.5 sm:grid-cols-2">
                               {(["A", "B", "C", "D"] as const).map((opt) => {
-                                const optEn = item[`option_${opt.toLowerCase()}`];
-                                const optHi = item[`option_${opt.toLowerCase()}_hi`] || trans?.[`option_${opt.toLowerCase()}`];
+                                const rawOpt = item[`option_${opt.toLowerCase()}`];
+                                if (!rawOpt) return null;
+                                const splitOpt = splitBilingualOption(rawOpt);
+                                const optEn = splitOpt.isBilingual ? splitOpt.english : rawOpt;
+                                const optHi = item[`option_${opt.toLowerCase()}_hi`] || trans?.[`option_${opt.toLowerCase()}`] || (splitOpt.isBilingual ? splitOpt.hindi : "");
                                 const isOptCorrect = opt === item.correct_answer;
                                 const isOptSelected = userAns === opt;
 
@@ -1351,16 +1443,16 @@ export default function PracticeClient({
                                     key={opt}
                                     onClick={() => handleSetAnswer(qIdx, opt)}
                                     disabled={setSubmitted}
-                                    className={`flex items-center rounded-xl border p-3 text-left transition-all cursor-pointer disabled:cursor-default ${optCardClass}`}
+                                    className={`flex items-center rounded-xl border p-2.5 sm:p-3 text-left transition-all cursor-pointer disabled:cursor-default ${optCardClass}`}
                                   >
                                     <span className={`mr-2.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border text-xs font-black ${optBadgeClass}`}>
                                       {opt}
                                     </span>
-                                    <div className="flex-1 text-xs sm:text-sm">
+                                    <div className="flex-1 text-xs sm:text-sm min-w-0">
                                       {langMode === "hi" && optHi ? (
                                         <MathText text={optHi} />
-                                      ) : langMode === "bilingual" && optHi ? (
-                                        <div>
+                                      ) : langMode === "bilingual" && optHi && optHi !== optEn ? (
+                                        <div className="space-y-0.5">
                                           <div className="font-bold"><MathText text={optEn} /></div>
                                           <div className="text-[11px] font-semibold text-indigo-900"><MathText text={optHi} /></div>
                                         </div>
@@ -1475,41 +1567,50 @@ export default function PracticeClient({
                     </div>
 
                     {/* Question Box */}
-                    <div className="rounded-2xl border border-gray-200/90 bg-white p-5 sm:p-7 shadow-sm transition-all">
-                      <div className="flex items-start justify-between gap-4 border-b border-gray-100 pb-4">
+                    <div className="rounded-2xl border border-gray-200/90 bg-white p-3.5 sm:p-6 shadow-sm transition-all">
+                      <div className="flex items-start justify-between gap-3 border-b border-gray-100 pb-3 sm:pb-4">
                         <div className="space-y-2 w-full overflow-hidden">
                           {q.exam_tag && (
-                            <div className="flex items-center gap-2 flex-wrap">
-                              <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200/80 px-3 py-1 text-[11px] font-extrabold text-blue-800 shadow-2xs uppercase tracking-wide">
+                            <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
+                              <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200/80 px-2.5 sm:px-3 py-0.5 sm:py-1 text-[10px] sm:text-[11px] font-extrabold text-blue-800 shadow-2xs uppercase tracking-wide">
                                 <span className="text-amber-500">🎯</span>
                                 {q.exam_tag}
                               </span>
                               {q.tier_level && (
-                                <span className="inline-flex items-center rounded-full bg-amber-50 border border-amber-200 px-2.5 py-0.5 text-[10px] font-bold text-amber-800">
+                                <span className="inline-flex items-center rounded-full bg-amber-50 border border-amber-200 px-2 sm:px-2.5 py-0.5 text-[10px] font-bold text-amber-800">
                                   ⚡ {q.tier_level}
                                 </span>
                               )}
                             </div>
                           )}
-                          <div className="flex items-start gap-2.5 pt-1">
-                            <span className="inline-flex items-center justify-center h-7 w-7 rounded-lg bg-blue-600 text-white text-xs font-black shrink-0 mt-0.5 shadow-2xs">
-                              Q{currentIndex + 1}
-                            </span>
-                            <div className="flex-1">
-                              {langMode === "hi" && (q.question_text_hi || translationsCache[q.id]?.question_text) ? (
-                                <QuestionText text={q.question_text_hi || translationsCache[q.id]?.question_text} />
-                              ) : (
-                                <QuestionText text={q.question_text} />
-                              )}
-                            </div>
-                          </div>
+                          {(() => {
+                            const splitQ = splitBilingualText(q.question_text);
+                            const textEn = splitQ.isBilingual ? splitQ.english : q.question_text;
+                            const textHi = q.question_text_hi || translationsCache[q.id]?.question_text || (splitQ.isBilingual ? splitQ.hindi : "");
 
-                          {/* If Bilingual Mode */}
-                          {langMode === "bilingual" && (q.question_text_hi || translationsCache[q.id]?.question_text) && (
-                            <div className="text-sm sm:text-base font-semibold text-indigo-900 pt-2 border-t border-indigo-50/80 leading-relaxed">
-                              <QuestionText text={q.question_text_hi || translationsCache[q.id]?.question_text} />
-                            </div>
-                          )}
+                            return (
+                              <div className="space-y-2 pt-1">
+                                <div className="flex items-start gap-2.5">
+                                  <span className="inline-flex items-center justify-center h-6 w-6 sm:h-7 sm:w-7 rounded-lg bg-blue-600 text-white text-xs font-black shrink-0 mt-0.5 shadow-2xs">
+                                    Q{currentIndex + 1}
+                                  </span>
+                                  <div className="flex-1 min-w-0">
+                                    {langMode === "hi" && textHi ? (
+                                      <QuestionText text={textHi} />
+                                    ) : (
+                                      <QuestionText text={textEn} />
+                                    )}
+                                  </div>
+                                </div>
+
+                                {langMode === "bilingual" && textHi && textHi !== textEn && (
+                                  <div className="text-xs sm:text-sm font-semibold text-indigo-900 pt-2 border-t border-indigo-50/80 leading-relaxed pl-8 sm:pl-9">
+                                    <QuestionText text={textHi} />
+                                  </div>
+                                )}
+                              </div>
+                            );
+                          })()}
 
                           {/* Question Image */}
                           {q.image_url && (
@@ -1539,10 +1640,13 @@ export default function PracticeClient({
                       </div>
 
                       {/* Options List */}
-                      <div className="mt-6 space-y-3">
+                      <div className="mt-4 sm:mt-6 space-y-2.5 sm:space-y-3">
                         {(["A", "B", "C", "D"] as const).map((opt) => {
-                          const textEn = q[`option_${opt.toLowerCase()}`];
-                          const textHi = q[`option_${opt.toLowerCase()}_hi`] || translationsCache[q.id]?.[`option_${opt.toLowerCase()}`];
+                          const rawOpt = q[`option_${opt.toLowerCase()}`];
+                          if (!rawOpt) return null;
+                          const splitOpt = splitBilingualOption(rawOpt);
+                          const textEn = splitOpt.isBilingual ? splitOpt.english : rawOpt;
+                          const textHi = q[`option_${opt.toLowerCase()}_hi`] || translationsCache[q.id]?.[`option_${opt.toLowerCase()}`] || (splitOpt.isBilingual ? splitOpt.hindi : "");
                           const isCorrect = opt === q.correct_answer;
                           const isSelected = selectedAnswer === opt;
 
@@ -1567,21 +1671,21 @@ export default function PracticeClient({
                               key={opt}
                               onClick={() => handleAnswer(opt)}
                               disabled={showResult}
-                              className={`group flex w-full items-center rounded-2xl border p-3.5 sm:p-4 text-left transition-all duration-200 cursor-pointer disabled:cursor-default ${cardStyle}`}
+                              className={`group flex w-full items-center rounded-2xl border p-3 sm:p-4 text-left transition-all duration-200 cursor-pointer disabled:cursor-default ${cardStyle}`}
                             >
                               <span
-                                className={`mr-3.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-xl border text-xs font-black transition-all ${badgeStyle}`}
+                                className={`mr-2.5 sm:mr-3.5 flex h-6 w-6 sm:h-7 sm:w-7 shrink-0 items-center justify-center rounded-xl border text-xs font-black transition-all ${badgeStyle}`}
                               >
                                 {opt}
                               </span>
                               
-                              <div className="flex-1 text-xs sm:text-sm leading-relaxed overflow-hidden flex flex-col justify-center">
+                              <div className="flex-1 text-xs sm:text-sm leading-relaxed overflow-hidden flex flex-col justify-center min-w-0">
                                 {langMode === "hi" && textHi ? (
                                   <MathText text={textHi} />
-                                ) : langMode === "bilingual" && textHi ? (
-                                  <div>
+                                ) : langMode === "bilingual" && textHi && textHi !== textEn ? (
+                                  <div className="space-y-0.5">
                                     <div className="font-bold text-gray-900"><MathText text={textEn} /></div>
-                                    <div className="text-xs font-semibold text-indigo-900 mt-0.5"><MathText text={textHi} /></div>
+                                    <div className="text-[11px] sm:text-xs font-semibold text-indigo-900"><MathText text={textHi} /></div>
                                   </div>
                                 ) : (
                                   <MathText text={textEn} />

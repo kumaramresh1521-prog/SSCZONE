@@ -78,25 +78,37 @@ function splitBilingualText(text: string): { english: string; hindi: string; isB
   }
 
   const firstHi = text.search(devanagariRegex);
-  const prefix = text.substring(0, firstHi);
+  const prefix = text.substring(0, firstHi).trim();
 
-  // Check if sentence-ending punctuation (? or .\s or .\n) exists right before firstHi,
-  // possibly followed by a short quote or token (e.g. 'consonant? "SIGNATURE" में...' or 'formed? GARDEN शब्द...')
-  // NEVER split on colon ':' because colons introduce formulas, ratios (3:4), or coordinates!
-  const m = prefix.match(/(\?|\.\s|\.\n)\s*(["\w\s\d\+\-\=\/\^\{\}\(\)\[\]]{0,60})$/);
+  // If prefix is very short (< 15 chars or < 3 words) and doesn't end in sentence punctuation,
+  // it is just a Hindi question starting with an acronym (e.g. "CPU का मुख्य कार्य क्या है?", "MS Word में...")
+  const wordsInPrefix = prefix.split(/\s+/).filter(Boolean).length;
+  if (wordsInPrefix < 3 && !/[?!.]\s*$/.test(prefix)) {
+    return { english: text.trim(), hindi: text.trim(), isBilingual: false };
+  }
+
+  // Look for sentence-ending punctuation (? or .\s or .\n or :) right before firstHi
+  const m = prefix.match(/(\?|\.\s|\.\n|\:\s*)\s*(["'\w\s\d\+\-\=\/\^\{\}\(\)\[\]]{0,60})$/);
   if (m && m.index !== undefined) {
     const isDecimal = m[1].startsWith(".") && m.index > 0 && /\d/.test(prefix[m.index - 1]);
     if (!isDecimal) {
       const punctPos = m.index + m[1].length;
       const en = text.substring(0, punctPos).trim();
       const hi = text.substring(punctPos).trim();
-      return { english: en, hindi: hi, isBilingual: true };
+      if (hi.length > 0 && en.length > 0) {
+        return { english: en, hindi: hi, isBilingual: true };
+      }
     }
   }
 
-  const en = text.substring(0, firstHi).trim();
-  const hi = text.substring(firstHi).trim();
-  return { english: en, hindi: hi, isBilingual: true };
+  // Fallback: only treat as bilingual if prefix has at least 4 full words
+  if (wordsInPrefix >= 4) {
+    const en = text.substring(0, firstHi).trim();
+    const hi = text.substring(firstHi).trim();
+    return { english: en, hindi: hi, isBilingual: true };
+  }
+
+  return { english: text.trim(), hindi: text.trim(), isBilingual: false };
 }
 
 // ── Smart Bilingual Option Parser ──
@@ -121,6 +133,11 @@ function splitBilingualOption(text: string): { english: string; hindi: string; i
   }
 
   const firstHi = text.search(devanagariRegex);
+  const prefix = text.substring(0, firstHi).trim();
+  if (prefix.length === 0) {
+    return { english: text.trim(), hindi: text.trim(), isBilingual: false };
+  }
+
   const en = text.substring(0, firstHi).trim();
   const hi = text.substring(firstHi).trim();
   return { english: en, hindi: hi, isBilingual: true };

@@ -140,14 +140,17 @@ export default function QuestionText({
 
   // Helper to format target words e.g. Word: "Hind" -> styled pill
   const renderFormattedMainText = (content: string) => {
+    if (!content) return null;
+    const trimmed = content.trim();
+
     // If it starts with Word: "XYZ"
-    const wordMatch = content.match(/^(Word:\s*)(["“'].*?["”'])/i);
+    const wordMatch = trimmed.match(/^(Word:\s*)(["“'].*?["”'])/i);
     if (wordMatch) {
-      const rest = content.slice(wordMatch[0].length);
+      const rest = trimmed.slice(wordMatch[0].length);
       return (
         <div className="flex flex-wrap items-center gap-2">
           <span className="text-gray-600 font-bold">Word:</span>
-          <span className="inline-flex items-center rounded-lg bg-amber-100/90 px-3 py-1 text-base font-black text-amber-950 border border-amber-300/80 shadow-2xs">
+          <span className="inline-flex items-center rounded-lg bg-amber-100/90 px-2.5 py-0.5 text-sm sm:text-base font-black text-amber-950 border border-amber-300/80 shadow-2xs">
             {wordMatch[2].replace(/["“']/g, '')}
           </span>
           {rest && <MathText text={rest} />}
@@ -155,19 +158,52 @@ export default function QuestionText({
       );
     }
 
+    // Check if question is bilingual (contains full English sentence followed by Hindi)
+    const devanagariRegex = /[\u0900-\u097F]/;
+    if (devanagariRegex.test(trimmed)) {
+      const firstHi = trimmed.search(devanagariRegex);
+      const prefix = trimmed.substring(0, firstHi).trim();
+      const wordsInPrefix = prefix.split(/\s+/).filter(Boolean).length;
+
+      // Only treat as bilingual if prefix has at least 4 full English words
+      if (wordsInPrefix >= 4) {
+        const m = prefix.match(/(\?|\.\s|\.\n|\:\s*)\s*(["'\w\s\d\+\-\=\/\^\{\}\(\)\[\]]{0,60})$/);
+        let en = prefix;
+        let hi = trimmed.substring(firstHi).trim();
+        if (m && m.index !== undefined) {
+          const punctPos = m.index + m[1].length;
+          en = trimmed.substring(0, punctPos).trim();
+          hi = trimmed.substring(punctPos).trim();
+        }
+
+        if (en && hi) {
+          return (
+            <div className="space-y-2">
+              <div className="text-slate-900 font-bold leading-relaxed break-words">
+                <MathText text={en} />
+              </div>
+              <div className="text-slate-700 font-medium text-sm sm:text-base leading-relaxed pt-1.5 border-t border-slate-100 break-words">
+                <MathText text={hi} />
+              </div>
+            </div>
+          );
+        }
+      }
+    }
+
     // Check if mainText has multiline sentence fragments e.g. A. ... \n B. ... \n C. ...
-    if (/\n\s*[A-DP-S][\.\)]\s+/.test(content)) {
-      const parts = content.split(/\n/);
+    if (/\n\s*[A-DP-S][\.\)]\s+/.test(trimmed)) {
+      const parts = trimmed.split(/\n/);
       return (
-        <div className="space-y-2 mt-2">
+        <div className="space-y-1.5 mt-1.5">
           {parts.map((part, idx) => {
             const line = part.trim();
             if (!line) return null;
             const fragMatch = line.match(/^([A-DP-S1-6])[\.\)]\s*(.*)/);
             if (fragMatch) {
               return (
-                <div key={idx} className="flex items-start gap-2.5 p-2.5 rounded-xl bg-slate-50/80 border border-slate-200/80 hover:bg-slate-100/80 transition-colors">
-                  <span className="inline-flex items-center justify-center h-6 w-6 rounded-lg bg-indigo-600 text-white text-xs font-black shrink-0 shadow-2xs">
+                <div key={idx} className="flex items-start gap-2 p-2 rounded-xl bg-slate-50/80 border border-slate-200/80 hover:bg-slate-100/80 transition-colors">
+                  <span className="inline-flex items-center justify-center h-5 w-5 rounded-md bg-indigo-600 text-white text-[11px] font-black shrink-0 shadow-2xs">
                     {fragMatch[1]}
                   </span>
                   <div className="flex-1 text-slate-800 font-medium text-sm sm:text-base leading-relaxed pt-0.5">
@@ -186,27 +222,27 @@ export default function QuestionText({
       );
     }
 
-    return <MathText text={content} />;
+    return <MathText text={trimmed} />;
   };
 
   if (!instruction) {
     return (
-      <div className={className}>
+      <div className={`break-words ${className}`}>
         {renderFormattedMainText(text)}
       </div>
     );
   }
 
   return (
-    <div className={`space-y-2 ${className}`}>
+    <div className={`space-y-1.5 ${className} break-words`}>
       {showInstructionBadge && (
-        <div className="inline-flex items-center gap-1.5 rounded-lg bg-gradient-to-r from-indigo-50 via-blue-50 to-slate-50 px-3 py-1 text-xs font-black text-indigo-950 border border-indigo-200/80 shadow-2xs">
-          <span className="text-indigo-600 text-sm">📌</span>
-          <span className="text-[10px] font-extrabold uppercase tracking-wider text-indigo-600">Directive:</span>
-          <span className="text-slate-800">{instruction}</span>
+        <div className="inline-flex items-center gap-1.5 rounded-lg bg-blue-50 px-2.5 py-0.5 text-xs font-bold text-blue-900 border border-blue-200 shadow-2xs max-w-full">
+          <span className="text-blue-600">📌</span>
+          <span className="text-[10px] font-extrabold uppercase tracking-wider text-blue-600">Directive:</span>
+          <span className="text-slate-800 truncate">{instruction}</span>
         </div>
       )}
-      <div className="text-gray-900 leading-relaxed font-bold text-base sm:text-lg">
+      <div className="text-gray-900 leading-relaxed font-bold text-sm sm:text-base md:text-lg break-words">
         {renderFormattedMainText(mainText)}
       </div>
     </div>

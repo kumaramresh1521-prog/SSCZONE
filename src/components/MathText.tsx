@@ -34,12 +34,17 @@ function isTeXInlineMath(value: string) {
 // Convert common pasted math notation into safe, readable HTML. Full TeX remains supported
 // through $...$, \(...\), \[...\], and $$...$$ delimiters below.
 function formatRawMathText(plainText: string): string {
-  let formatted = escapeHtml(plainText);
+  if (!plainText) return "";
+  // Clean whitespace: trim ends and collapse excessive blank lines
+  let clean = plainText.trim();
+  clean = clean.replace(/(\r?\n\s*){2,}/g, "\n\n");
 
-  // 1. Convert newlines to clean line breaks
+  let formatted = escapeHtml(clean);
+
+  // 1. Convert newlines to clean line breaks (inline-safe for span rendering)
   formatted = formatted.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
-  formatted = formatted.replace(/\n\n+/g, '<div class="my-2.5"></div>');
-  formatted = formatted.replace(/\n/g, '<br class="my-1" />');
+  formatted = formatted.replace(/\n\n+/g, '<span class="block my-1.5"></span>');
+  formatted = formatted.replace(/\n/g, '<span class="block my-0.5"></span>');
 
   // 2. Normalize the minus copied from PDFs and convert unicode superscripts.
   formatted = formatted.replace(/[−–—]/g, "-");
@@ -57,13 +62,14 @@ function formatRawMathText(plainText: string): string {
   formatted = formatted.replace(/√\s*([A-Za-z0-9]+)/g, (_match, value) => radical("√", value));
   formatted = formatted.replace(/∛\s*([A-Za-z0-9]+)/g, (_match, value) => radical("∛", value));
 
-  // 4. Plain numeric/simple algebra fractions such as 3/4, -x/y, and 7/(x+1).
+  // 4. Plain numeric fractions such as 3/4, -5/8, or bracketed algebraic terms (x)/(y).
+  // IMPORTANT: NEVER match single letters across words like and/or, Energy / ऊर्जा, True/False, or dates.
   formatted = formatted.replace(
-    /(^|[^A-Za-z0-9_/:])(-?\d+|[A-Za-z])\s*\/\s*\(([^()\n]+)\)/g,
+    /(^|[^A-Za-z0-9_/:])(-?\d+)\s*\/\s*\(([^()\n]+)\)/g,
     (_match, prefix, numerator, denominator) => prefix + fraction(numerator, denominator)
   );
   formatted = formatted.replace(
-    /(^|[^A-Za-z0-9_/:])(-?\d+|[A-Za-z])\s*\/\s*(-?\d+|[A-Za-z])(?![A-Za-z0-9_/])/g,
+    /(^|[^A-Za-z0-9_/:])(-?\d+)\s*\/\s*(\d+)(?![A-Za-z0-9_/])/g,
     (_match, prefix, numerator, denominator) => prefix + fraction(numerator, denominator)
   );
 
@@ -90,15 +96,15 @@ function formatRawMathText(plainText: string): string {
   // 9. Convert image tags/markdown: ![alt](url) or [Image: url] or raw image URLs (supports both relative /path and http(s)://)
   formatted = formatted.replace(
     /!\[(.*?)\]\(([^\s)]+)\)/gi,
-    '<div class="my-2.5 inline-block max-w-full"><img src="$2" alt="$1" loading="eager" decoding="async" class="max-w-full rounded-xl border border-slate-200 bg-white shadow-2xs" style="max-height: 280px; object-fit: contain;" /></div>'
+    '<span class="my-2 inline-block max-w-full"><img src="$2" alt="$1" loading="eager" decoding="async" class="max-w-full rounded-xl border border-slate-200 bg-white shadow-2xs" style="max-height: 280px; object-fit: contain;" /></span>'
   );
   formatted = formatted.replace(
     /\[Image:\s*([^\s\]]+)\]/gi,
-    '<div class="my-2.5 inline-block max-w-full"><img src="$1" alt="Figure" loading="eager" decoding="async" class="max-w-full rounded-xl border border-slate-200 bg-white shadow-2xs" style="max-height: 280px; object-fit: contain;" /></div>'
+    '<span class="my-2 inline-block max-w-full"><img src="$1" alt="Figure" loading="eager" decoding="async" class="max-w-full rounded-xl border border-slate-200 bg-white shadow-2xs" style="max-height: 280px; object-fit: contain;" /></span>'
   );
   formatted = formatted.replace(
     /&lt;img\s+[^&]*?src=(?:&quot;|&#039;|")([^"'\s&]+)(?:&quot;|&#039;|")[^&]*?&gt;/gi,
-    '<div class="my-2.5 inline-block max-w-full"><img src="$1" alt="Figure" loading="eager" decoding="async" class="max-w-full rounded-xl border border-slate-200 bg-white shadow-2xs" style="max-height: 280px; object-fit: contain;" /></div>'
+    '<span class="my-2 inline-block max-w-full"><img src="$1" alt="Figure" loading="eager" decoding="async" class="max-w-full rounded-xl border border-slate-200 bg-white shadow-2xs" style="max-height: 280px; object-fit: contain;" /></span>'
   );
 
   return formatted;

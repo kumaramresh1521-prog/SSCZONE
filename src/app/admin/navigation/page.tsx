@@ -94,6 +94,13 @@ export default function AdminNavigationManagerPage() {
     }
   }
 
+  function notifyNavChanged() {
+    if (typeof window !== "undefined") {
+      window.dispatchEvent(new Event("ssczone-navigation-changed"));
+      localStorage.setItem("ssczone_nav_ts", Date.now().toString());
+    }
+  }
+
   // Save changes to server
   async function handleSaveToServer(updatedItems?: MenuItemConfig[]) {
     const payload = updatedItems || items;
@@ -112,6 +119,7 @@ export default function AdminNavigationManagerPage() {
       }
 
       setHasUnsavedChanges(false);
+      notifyNavChanged();
       toast.success("Navigation changes saved & published live!", { id: toastId });
     } catch (err: any) {
       toast.error(err?.message || "Failed to save navigation", { id: toastId });
@@ -140,6 +148,7 @@ export default function AdminNavigationManagerPage() {
         }),
       });
       const activeState = updated.find((m) => m.id === menuId)?.is_active;
+      notifyNavChanged();
       toast.success(activeState ? "Menu item enabled!" : "Menu item disabled (hidden)!");
       setHasUnsavedChanges(false);
     } catch {
@@ -175,6 +184,7 @@ export default function AdminNavigationManagerPage() {
           isActive: targetSub?.is_active,
         }),
       });
+      notifyNavChanged();
       toast.success(targetSub?.is_active ? "Sub-menu item enabled!" : "Sub-menu item disabled (hidden)!");
       setHasUnsavedChanges(false);
     } catch {
@@ -436,6 +446,7 @@ export default function AdminNavigationManagerPage() {
 
       setItems(DEFAULT_NAVIGATION_CONFIG.items);
       setHasUnsavedChanges(false);
+      notifyNavChanged();
       toast.success("Navigation restored to official defaults!", { id: toastId });
     } catch (err: any) {
       toast.error(err?.message || "Failed to reset navigation", { id: toastId });

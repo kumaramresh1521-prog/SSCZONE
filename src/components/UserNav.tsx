@@ -71,18 +71,34 @@ export default function UserNav() {
   useEffect(() => {
     setMounted(true);
 
-    // Fetch live navigation config (use memory cache if already loaded)
+    // Function to load dynamic navigation
+    const loadDynamicNav = async () => {
+      try {
+        const res = await fetch("/api/navigation");
+        const data = await res.json();
+        if (data && Array.isArray(data.items) && data.items.length > 0) {
+          memoryNavCache = data.items;
+          setNavItems(data.items);
+        }
+      } catch {}
+    };
+
+    // Initial load
     if (!memoryNavCache) {
-      fetch("/api/navigation")
-        .then((r) => r.json())
-        .then((data) => {
-          if (data && Array.isArray(data.items) && data.items.length > 0) {
-            memoryNavCache = data.items;
-            setNavItems(data.items);
-          }
-        })
-        .catch(() => {});
+      loadDynamicNav();
     }
+
+    const handleNavChanged = () => {
+      memoryNavCache = null;
+      loadDynamicNav();
+    };
+
+    window.addEventListener("ssczone-navigation-changed", handleNavChanged);
+    window.addEventListener("storage", (e) => {
+      if (e.key === "ssczone_nav_ts") {
+        handleNavChanged();
+      }
+    });
 
     // Read cached tickers
     const saved = localStorage.getItem("ssczone_live_tickers");
@@ -160,6 +176,7 @@ export default function UserNav() {
     return () => {
       subscription.unsubscribe();
       window.removeEventListener("ssczone-exams-changed", handleExamsChanged);
+      window.removeEventListener("ssczone-navigation-changed", handleNavChanged);
     };
   }, []);
 

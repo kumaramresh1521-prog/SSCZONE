@@ -55,18 +55,28 @@ export default function AdminTypingPage() {
   const [content, setContent] = useState("");
   const [difficulty, setDifficulty] = useState<"Easy" | "Medium" | "Hard">("Medium");
 
-  // Load Passages
+  // Load Passages from Server API
   useEffect(() => {
     loadPassages();
   }, []);
 
-  const loadPassages = () => {
+  const loadPassages = async () => {
     setLoading(true);
     try {
+      const res = await fetch("/api/typing");
+      const data = await res.json();
+      if (data.success && Array.isArray(data.passages) && data.passages.length > 0) {
+        setPassages(data.passages);
+        if (typeof window !== "undefined") {
+          localStorage.setItem("ssczone_typing_passages", JSON.stringify(data.passages));
+        }
+        return;
+      }
       const stored = getStoredTypingPassages();
       setPassages(stored);
     } catch (e) {
-      setPassages(DEFAULT_TYPING_PASSAGES);
+      const stored = getStoredTypingPassages();
+      setPassages(stored || DEFAULT_TYPING_PASSAGES);
     } finally {
       setLoading(false);
     }
@@ -152,7 +162,7 @@ export default function AdminTypingPage() {
           ? "SSC DEO High Speed"
           : "Custom Practice";
 
-      const savedItem = saveTypingPassage({
+      const payload = {
         id: editingId || undefined,
         title: title.trim(),
         content: content.trim(),
@@ -163,22 +173,25 @@ export default function AdminTypingPage() {
         targetKeyDepressions: Number(targetKeyDepressions) || computedWords * 5,
         wordCount: computedWords,
         difficulty,
+      };
+
+      const res = await fetch("/api/typing", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
       });
 
-      // Also sync to server API
-      try {
-        await fetch("/api/typing", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(savedItem),
-        });
-      } catch (err) {
-        console.warn("Server API sync warning:", err);
+      const data = await res.json();
+      if (!data.success) {
+        throw new Error(data.error || "Failed to save to server");
       }
+
+      // Also update local storage for quick offline fallback
+      saveTypingPassage(data.passage || payload);
 
       toast.success(editingId ? "Passage updated successfully!" : "New Typing Passage added!");
       setIsModalOpen(false);
-      loadPassages();
+      await loadPassages();
     } catch (err: any) {
       toast.error(err.message || "Failed to save passage");
     } finally {
@@ -193,20 +206,39 @@ export default function AdminTypingPage() {
       if (!confirm("Delete this typing passage permanently?")) return;
     }
 
-    deleteTypingPassage(id);
     try {
-      await fetch(`/api/typing?id=${id}`, { method: "DELETE" });
-    } catch (e) {}
-
-    toast.success("Passage removed");
-    loadPassages();
+      const res = await fetch(`/api/typing?id=${id}`, { method: "DELETE" });
+      const data = await res.json();
+      if (!data.success) {
+        throw new Error(data.error || "Failed to delete from server");
+      }
+      deleteTypingPassage(id);
+      toast.success("Passage removed successfully");
+      await loadPassages();
+    } catch (e: any) {
+      toast.error(e.message || "Failed to delete passage");
+    }
   };
 
-  const handleResetDefaults = () => {
+  const handleResetDefaults = async () => {
     if (confirm("Reset all passages back to the official default library? Custom passages might be replaced.")) {
-      resetTypingPassagesToDefault();
-      toast.success("Reset to default passages complete!");
-      loadPassages();
+      try {
+        const res = await fetch("/api/typing", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ action: "reset" }),
+        });
+        const data = await res.json();
+        if (data.success) {
+          resetTypingPassagesToDefault();
+          toast.success("Reset to default passages complete!");
+          await loadPassages();
+        }
+      } catch (err) {
+        resetTypingPassagesToDefault();
+        toast.success("Reset to default passages complete!");
+        await loadPassages();
+      }
     }
   };
 

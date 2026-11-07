@@ -72,15 +72,22 @@ export default function TypingPage() {
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const passageContainerRef = useRef<HTMLDivElement>(null);
 
-  // Load Passages from Store
-  const refreshPassages = useCallback(() => {
+  // Load Passages from Server API
+  const refreshPassages = useCallback(async () => {
     try {
+      const res = await fetch("/api/typing");
+      const data = await res.json();
+      if (data.success && Array.isArray(data.passages) && data.passages.length > 0) {
+        setPassages(data.passages);
+        return;
+      }
       const stored = getStoredTypingPassages();
       if (stored && stored.length > 0) {
         setPassages(stored);
       }
     } catch (e) {
-      setPassages(DEFAULT_TYPING_PASSAGES);
+      const stored = getStoredTypingPassages();
+      setPassages(stored || DEFAULT_TYPING_PASSAGES);
     }
   }, []);
 
@@ -355,16 +362,8 @@ export default function TypingPage() {
               onClick={() => setShowCustomModal(true)}
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-blue-200 text-blue-700 hover:bg-blue-50 text-xs font-bold transition-colors bg-white shadow-2xs"
             >
-              <Upload className="w-3.5 h-3.5" /> Custom Text
+              <Upload className="w-3.5 h-3.5" /> Practice Custom Text
             </button>
-
-            <Link
-              href="/admin/typing"
-              target="_blank"
-              className="hidden md:flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white text-[11px] font-bold transition-colors"
-            >
-              Admin Upload <ExternalLink className="w-3 h-3 text-slate-400" />
-            </Link>
 
             <button
               onClick={() => setShowSettingsDrawer((v) => !v)}

@@ -253,6 +253,35 @@ export default function BlogClient({ initialBlogs }: { initialBlogs: BlogItem[] 
             </div>
           </div>
 
+          {/* Featured Chapter-Wise Study Notes Reader Banner */}
+          <div className="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 rounded-3xl p-4 sm:p-6 text-white shadow-lg flex flex-col sm:flex-row sm:items-center justify-between gap-4 mt-6">
+            <div className="space-y-1 text-left">
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-blue-500/30 text-blue-200 border border-blue-400/40">
+                  New Interactive Reader
+                </span>
+                <span className="text-xs text-amber-300 font-extrabold flex items-center gap-1">
+                  <Sparkles className="w-3.5 h-3.5 fill-amber-300" />
+                  Physics, Polity, Maths, Chemistry & More
+                </span>
+              </div>
+              <h3 className="text-base sm:text-xl font-black text-white">
+                Chapter-Wise Subject Notes & Theory Portal
+              </h3>
+              <p className="text-xs text-slate-300 max-w-xl">
+                Read subject-wise chapter notes in a modern 2-column layout — left sidebar for chapters, right for rich formulas & theory.
+              </p>
+            </div>
+
+            <Link
+              href="/blog/notes"
+              className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-white text-slate-900 hover:bg-slate-100 text-xs font-black shadow-md transition-all shrink-0 cursor-pointer"
+            >
+              <BookOpen className="w-4 h-4 text-blue-600" />
+              <span>Open Chapter Reader →</span>
+            </Link>
+          </div>
+
           {/* Category Tabs & Exam Dropdown Strip */}
           <div className="pt-6 border-t border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-3">
             

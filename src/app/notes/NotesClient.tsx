@@ -173,6 +173,30 @@ export default function NotesClient({ initialNotes = [] }: { initialNotes: Subje
       {/* Main Content Area */}
       <section className="mx-auto max-w-5xl px-4 py-8 space-y-6">
         
+        {/* Interactive 2-Column Chapter Notes Reader Banner */}
+        <div className="rounded-3xl border-2 border-blue-200 bg-gradient-to-r from-blue-900 via-indigo-950 to-slate-900 p-5 sm:p-6 text-white shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="space-y-1 text-left">
+            <div className="inline-flex items-center gap-1.5 text-[10px] font-black uppercase tracking-wider bg-blue-500/30 text-blue-200 px-3 py-1 rounded-full border border-blue-400/40">
+              <Sparkles className="h-3 w-3 text-amber-300" />
+              <span>Interactive Online Reader</span>
+            </div>
+            <h3 className="text-base sm:text-xl font-black text-white">
+              Prefer Reading Chapter-Wise Notes Online?
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-xl">
+              Open our new 2-Column Chapter Reader (Left sidebar for all chapters, right for rich formulas & theory) with instant subject switching!
+            </p>
+          </div>
+
+          <Link
+            href="/blog/notes"
+            className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white text-slate-900 hover:bg-slate-100 px-5 py-3 text-xs font-black shadow-md transition-all shrink-0 cursor-pointer"
+          >
+            <BookOpen className="h-4 w-4 text-blue-600" />
+            <span>Launch Chapter Reader →</span>
+          </Link>
+        </div>
+
         {/* Modern Filter Toolbar */}
         <div className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-5 shadow-xs space-y-4">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">

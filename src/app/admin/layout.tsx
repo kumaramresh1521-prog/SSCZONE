@@ -60,6 +60,7 @@ const menuItems: MenuItem[] = [
   { label: "Daily Free Quiz", href: "/admin/daily-quiz", icon: Zap },
   { label: "Flagged Reports", href: "/admin/reports", icon: Flag },
   { label: "Blogs", href: "/admin/blogs", icon: Newspaper },
+  { label: "Chapter Notes & Reader", href: "/admin/chapter-notes", icon: BookOpen },
   { label: "Users", href: "/admin/users", icon: Users },
   { label: "Packages", href: "/admin/packages", icon: CreditCard },
   { label: "PYQ Folders & Papers", href: "/admin/papers", icon: Folder },

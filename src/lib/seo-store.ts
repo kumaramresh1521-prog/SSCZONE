@@ -33,7 +33,7 @@ export interface SeoConfigData {
     googleAnalyticsId: string;
     adsenseId: string;
   };
-  pageOverrides: Record<string, { title: string; description: string }>;
+  pageOverrides: Record<string, { title: string; description: string; keywords?: string[] }>;
   updatedAt?: string;
 }
 
@@ -44,13 +44,24 @@ export const DEFAULT_SEO_CONFIG: SeoConfigData = {
   canonicalUrl: "https://ssczone.com",
   author: "SSCZone Editorial Team",
   keywords: [
-    "SSC CGL Practice",
-    "SSC CHSL Test Series",
-    "SSC CPO MCQs",
-    "Syllabus Wise MCQ",
-    "SSC Exam Test Series",
-    "Previous Year Papers",
-    "SSC PYQ Test 2026"
+    "SSC CGL 2026 Practice & Test Series",
+    "SSC CHSL Tier 1 Shift Papers PDF",
+    "SSC CPO MCQs Bilingual Hindi English",
+    "SSC MTS & Havaldar Mock Test 2026",
+    "SSC GD Constable Exam Practice",
+    "SSC Previous Year Question Papers with Solution",
+    "SSC CGL Shift Wise PDF Download 2024",
+    "TCS Pattern SSC MCQs Standard Books",
+    "Free SSC Mock Test Series Online",
+    "Syllabus Wise MCQ Practice Portal",
+    "SSC Maths Formula Sheet & Short Tricks",
+    "SSC English Grammar Rules & Vocabulary",
+    "SSC Reasoning Chapter Wise Practice",
+    "SSC General Studies Static GK Capsules",
+    "SSC Typing Speed Drill TCS Simulator",
+    "SSC Speed Test 25 Questions 15 Mins",
+    "Daily Free SSC Quiz Drill Online",
+    "Bilingual SSC CBT Online Test Portal"
   ],
   openGraph: {
     title: "SSCZone — Syllabus-Wise SSC MCQ Practice & Test Series Portal",
@@ -200,6 +211,7 @@ export async function buildPageMetadata(
 
   // Keywords calculation
   const keywordsSet = new Set<string>([
+    ...(override?.keywords || []),
     ...(defaults?.keywords || []),
     ...(seo.keywords || []),
   ]);

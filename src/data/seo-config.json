@@ -5,15 +5,24 @@
   "canonicalUrl": "https://ssczone.com",
   "author": "SSCZone Editorial Team",
   "keywords": [
-    "SSC CGL Practice",
-    "SSC CHSL Test Series",
-    "SSC CPO MCQs",
-    "Syllabus Wise MCQ",
-    "SSC Exam Test Series",
-    "Previous Year Papers",
-    "SSC PYQ Test 2025",
-    "SSC CGL Tier-I Mock Test",
-    "SSC Mock Test Free"
+    "SSC CGL 2026 Practice & Test Series",
+    "SSC CHSL Tier 1 Shift Papers PDF",
+    "SSC CPO MCQs Bilingual Hindi English",
+    "SSC MTS & Havaldar Mock Test 2026",
+    "SSC GD Constable Exam Practice",
+    "SSC Previous Year Question Papers with Solution",
+    "SSC CGL Shift Wise PDF Download 2024",
+    "TCS Pattern SSC MCQs Standard Books",
+    "Free SSC Mock Test Series Online",
+    "Syllabus Wise MCQ Practice Portal",
+    "SSC Maths Formula Sheet & Short Tricks",
+    "SSC English Grammar Rules & Vocabulary",
+    "SSC Reasoning Chapter Wise Practice",
+    "SSC General Studies Static GK Capsules",
+    "SSC Typing Speed Drill TCS Simulator",
+    "SSC Speed Test 25 Questions 15 Mins",
+    "Daily Free SSC Quiz Drill Online",
+    "Bilingual SSC CBT Online Test Portal"
   ],
   "openGraph": {
     "title": "SSCZone — Syllabus-Wise SSC MCQ Practice & Test Series Portal",
@@ -40,18 +49,70 @@
     "adsenseId": ""
   },
   "pageOverrides": {
+    "/": {
+      "title": "SSCZone — Official SSC Syllabus-Wise MCQ Practice & Test Series Portal",
+      "description": "Prepare for SSC CGL, CHSL, CPO, MTS, GD, Steno & Railways Exams topic-by-topic. Practice high-quality MCQs from standard reference books with instant bilingual solutions."
+    },
     "/papers": {
       "title": "SSC PYQ Shift Papers 2026 Live — Download PDF & Attempt CBT Test",
-      "description": "Download clean official SSC CGL, CHSL, CPO shift paper PDFs with SSC Zone branding and attempt online CBT mock tests with instant scorecards."
+      "description": "Download clean official SSC CGL, CHSL, CPO shift paper PDFs with SSC Zone branding and attempt online CBT mock tests with instant scorecards.",
+      "keywords": [
+        "SSC PYQ Shift Papers",
+        "SSC CGL Shift Wise Paper PDF",
+        "SSC CHSL Tier 1 Shift PDF",
+        "TCS CBT Mock Test Online"
+      ]
     },
     "/exams": {
       "title": "SSC & Railways Exams Directory — Complete Syllabus-Wise Modules",
-      "description": "Explore all SSC and Railways examinations categorized by official notification syllabus, subjects, and topics."
+      "description": "Explore all SSC and Railways examinations categorized by official notification syllabus, subjects, and topics.",
+      "keywords": [
+        "SSC Exams Directory",
+        "SSC CGL Exam Syllabus",
+        "SSC CHSL Exam Topics",
+        "Railways RRB NTPC Group D"
+      ]
     },
     "/notes": {
       "title": "SSC Exam Chapter-Wise Notes & High-Yield Theory Capsules",
-      "description": "Master core subjects with concise theory capsules, comparison tables, examiner trap warnings, and practice MCQs."
+      "description": "Master core subjects with concise theory capsules, comparison tables, examiner trap warnings, and practice MCQs.",
+      "keywords": [
+        "SSC Study Notes PDF",
+        "SSC Maths Formula Capsule",
+        "SSC English Grammar Rules",
+        "SSC GS Revision Notes"
+      ]
+    },
+    "/speed-test": {
+      "title": "SSC Speed Test Challenge (25 Qs / 15 Mins) | SSCZONE",
+      "description": "High-speed exam practice drill for SSC CGL, CHSL, CPO, and MTS. Practice 25 questions in 15 minutes or 20-second Blitz mode across 12,200+ dynamic questions.",
+      "keywords": [
+        "SSC Speed Test",
+        "25 Questions 15 Minutes Drill",
+        "SSC Rapid Fire MCQ",
+        "SSC Math Speed Test"
+      ]
+    },
+    "/daily-quiz": {
+      "title": "Daily Free Quiz Drill | SSC CGL, CHSL, MTS, CPO Practice | SSCZONE",
+      "description": "Practice daily free subject-wise mini quizzes for SSC CGL, CHSL, CPO, MTS and GD exams. High-yield questions with KaTeX formulas and instant scorecards.",
+      "keywords": [
+        "SSC Daily Free Quiz",
+        "Daily 10 Questions SSC Quiz",
+        "Free SSC Mini Mock Test",
+        "SSC Daily GK Quiz"
+      ]
+    },
+    "/typing": {
+      "title": "SSC Typing Test & Speed Drill Simulator — CGL & CHSL TCS Interface",
+      "description": "Practice SSC CGL, CHSL, and Steno typing test passages with real-time gross/net WPM, accuracy, error calculation, and TCS-pattern exam simulation.",
+      "keywords": [
+        "SSC Typing Test Online",
+        "SSC CGL Typing Speed Test",
+        "TCS Typing Interface Simulator",
+        "Gross WPM Net WPM Calculator"
+      ]
     }
   },
-  "updatedAt": "2026-11-03T14:00:00.000Z"
+  "updatedAt": "2026-11-07T14:45:00.000Z"
 }

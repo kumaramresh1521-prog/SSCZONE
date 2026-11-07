@@ -645,8 +645,8 @@ export default function SSCPageRankPredictor() {
               </div>
             </div>
 
-            {/* Core Score & Normalization Highlights Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {/* Core Score Highlights Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               
               {/* Raw Score */}
               <div className="bg-white border border-slate-200 rounded-3xl p-5 shadow-sm space-y-1">
@@ -664,50 +664,6 @@ export default function SSCPageRankPredictor() {
                 <div className="text-[11px] text-slate-500 font-medium pt-1">
                   Correct: <strong className="text-emerald-700">+{parsedData.summary.grossPositive}</strong> • Negative: <strong className="text-rose-600">-{parsedData.summary.grossNegative}</strong>
                 </div>
-              </div>
-
-              {/* Expected Normalized Score */}
-              <div className="bg-gradient-to-br from-indigo-50 to-blue-50 border border-blue-200 rounded-3xl p-5 shadow-sm space-y-2">
-                <div className="flex items-center justify-between">
-                  <span className="text-[11px] font-black uppercase text-indigo-700 tracking-wider">
-                    Expected Normalization
-                  </span>
-                  <span className="text-[10px] font-black bg-indigo-600 text-white px-2 py-0.5 rounded-full">
-                    +{parsedData.summary.normalizationBonus} Bonus
-                  </span>
-                </div>
-                <div className="flex items-baseline gap-1.5">
-                  <span className="text-3xl sm:text-4xl font-black text-indigo-900 tracking-tight">
-                    {parsedData.summary.normalizedScore}
-                  </span>
-                  <span className="text-xs font-bold text-indigo-500">
-                    / {parsedData.summary.maxMarks}
-                  </span>
-                </div>
-                <div className="text-[11px] text-indigo-800 font-medium">
-                  Detected Shift: <strong className="font-bold">{parsedData.summary.shiftRating}</strong>
-                </div>
-
-                {/* 3 Scenarios Mini Comparison */}
-                {parsedData.summary.scenarios && (
-                  <div className="grid grid-cols-3 gap-1.5 pt-2 border-t border-blue-200/60 text-center">
-                    <div className={`p-1.5 rounded-xl border ${parsedData.summary.shiftRating === "Easy" ? "bg-emerald-100 border-emerald-300 ring-1 ring-emerald-500" : "bg-white/80 border-slate-200"}`}>
-                      <div className="text-[9px] uppercase font-bold text-slate-500">Easy</div>
-                      <div className="text-xs font-black text-slate-900">{parsedData.summary.scenarios.easy.score}</div>
-                      <div className="text-[9px] text-emerald-700 font-bold">+{parsedData.summary.scenarios.easy.bonus}</div>
-                    </div>
-                    <div className={`p-1.5 rounded-xl border ${parsedData.summary.shiftRating === "Moderate" ? "bg-amber-100 border-amber-300 ring-1 ring-amber-500" : "bg-white/80 border-slate-200"}`}>
-                      <div className="text-[9px] uppercase font-bold text-slate-500">Moderate</div>
-                      <div className="text-xs font-black text-slate-900">{parsedData.summary.scenarios.moderate.score}</div>
-                      <div className="text-[9px] text-amber-700 font-bold">+{parsedData.summary.scenarios.moderate.bonus}</div>
-                    </div>
-                    <div className={`p-1.5 rounded-xl border ${parsedData.summary.shiftRating === "Hard" ? "bg-rose-100 border-rose-300 ring-1 ring-rose-500" : "bg-white/80 border-slate-200"}`}>
-                      <div className="text-[9px] uppercase font-bold text-slate-500">Hard</div>
-                      <div className="text-xs font-black text-slate-900">{parsedData.summary.scenarios.hard.score}</div>
-                      <div className="text-[9px] text-rose-700 font-bold">+{parsedData.summary.scenarios.hard.bonus}</div>
-                    </div>
-                  </div>
-                )}
               </div>
 
               {/* Predicted Rank Bracket */}

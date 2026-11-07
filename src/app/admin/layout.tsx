@@ -63,6 +63,7 @@ const menuItems: MenuItem[] = [
   { label: "Users", href: "/admin/users", icon: Users },
   { label: "Packages", href: "/admin/packages", icon: CreditCard },
   { label: "PYQ Folders & Papers", href: "/admin/papers", icon: Folder },
+  { label: "PDF & Key Extractor", href: "/admin/pdf-extractor", icon: FileSpreadsheet },
 ];
 
 export default function AdminLayout({ children }: { children: ReactNode }) {

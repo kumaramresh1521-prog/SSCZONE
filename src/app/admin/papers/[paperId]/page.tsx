@@ -32,8 +32,12 @@ import {
   ChevronDown,
   ChevronUp,
   LayoutList,
-  LayoutGrid
+  LayoutGrid,
+  Share2,
+  X,
+  Send
 } from "lucide-react";
+import { classifyMathQuestion, MATH_TOPIC_NAMES } from "@/lib/math-classifier";
 import { 
   getPaperPdfUrl, 
   isPaperDownloadAllowed, 
@@ -100,6 +104,262 @@ export default function PaperQuestionsPage() {
       }
     } catch {}
   }, [paperId]);
+
+  // ── FORWARD TO QUESTION BANK STATE ──
+  const [allSubjects, setAllSubjects] = useState<any[]>([]);
+  const [allTopics, setAllTopics] = useState<any[]>([]);
+  const [qbStatusMap, setQbStatusMap] = useState<Record<number, { inQb: boolean; qbId?: number; topicId?: number; topicTitle?: string }>>({});
+  const [loadingQbStatus, setLoadingQbStatus] = useState(false);
+
+  // Single Question Forward Modal State
+  const [forwardModalQ, setForwardModalQ] = useState<any | null>(null);
+  const [forwardSubjectId, setForwardSubjectId] = useState<number>(1);
+  const [forwardTopicId, setForwardTopicId] = useState<number>(182);
+  const [forwardExamTag, setForwardExamTag] = useState<string>("");
+  const [forwardTier, setForwardTier] = useState<string>("Tier 1");
+  const [forwardDifficulty, setForwardDifficulty] = useState<string>("medium");
+  const [isForwardingSingle, setIsForwardingSingle] = useState(false);
+
+  // Bulk Forward Modal State
+  const [showBulkForwardModal, setShowBulkForwardModal] = useState(false);
+  const [bulkForwardSection, setBulkForwardSection] = useState<"math" | "reasoning" | "ga" | "english" | "all">("math");
+  const [selectedForwardQIds, setSelectedForwardQIds] = useState<Set<number>>(new Set());
+  const [bulkForwardAssignments, setBulkForwardAssignments] = useState<Record<number, { topicId: number; subjectId: number }>>({});
+  const [isForwardingBulk, setIsForwardingBulk] = useState(false);
+  const [bulkForwardProgress, setBulkForwardProgress] = useState(0);
+
+  // Load subjects and topics on mount
+  useEffect(() => {
+    Promise.all([
+      supabase.from("subjects").select("id, title, exam_id").order("id"),
+      supabase.from("topics").select("id, title, subject_id").order("id"),
+    ]).then(([sRes, tRes]) => {
+      if (sRes.data) setAllSubjects(sRes.data);
+      if (tRes.data) setAllTopics(tRes.data);
+    });
+  }, []);
+
+  // Load Question Bank Status
+  const loadQbStatus = async () => {
+    if (!paperId) return;
+    try {
+      setLoadingQbStatus(true);
+      const res = await fetch(`/api/admin/questions/import-pyq?checkStatus=1&paperId=${paperId}`);
+      if (res.ok) {
+        const json = await res.json();
+        if (json.statusMap) {
+          setQbStatusMap(json.statusMap);
+        }
+      }
+    } catch {
+    } finally {
+      setLoadingQbStatus(false);
+    }
+  };
+
+  useEffect(() => {
+    if (paperId) {
+      loadQbStatus();
+    }
+  }, [paperId]);
+
+  // Filter topics for the currently selected forward subject
+  const currentSubjectTopics = useMemo(() => {
+    if (!forwardSubjectId) return [];
+    return allTopics.filter((t) => t.subject_id === forwardSubjectId);
+  }, [allTopics, forwardSubjectId]);
+
+  // Helper to suggest subject and topic for a question
+  const getSuggestedSubjectAndTopic = (q: any) => {
+    const qNo = q.question_number || 1;
+    let subId = 1; // Default Math
+    if (qNo <= 25) {
+      const reas = allSubjects.find((s) => s.title?.toLowerCase().includes("reasoning"));
+      subId = reas?.id || 3;
+    } else if (qNo <= 50) {
+      const ga = allSubjects.find((s) => s.title?.toLowerCase().includes("general") || s.title?.toLowerCase().includes("gk"));
+      subId = ga?.id || 4;
+    } else if (qNo <= 75) {
+      const math = allSubjects.find((s) => s.title?.toLowerCase().includes("math"));
+      subId = math?.id || 1;
+    } else {
+      const eng = allSubjects.find((s) => s.title?.toLowerCase().includes("english"));
+      subId = eng?.id || 2;
+    }
+
+    let topId = 182;
+    if (subId === 1) {
+      topId = classifyMathQuestion(q.question_text);
+    } else {
+      const matching = allTopics.filter((t) => t.subject_id === subId);
+      topId = matching[0]?.id || 1;
+    }
+
+    return { subjectId: subId, topicId: topId };
+  };
+
+  const openForwardModal = (q: any) => {
+    setForwardModalQ(q);
+    const { subjectId, topicId } = getSuggestedSubjectAndTopic(q);
+    setForwardSubjectId(subjectId);
+    setForwardTopicId(topicId);
+
+    const examName = paper?.exams?.title || "SSC CGL";
+    const yr = paper?.year || 2024;
+    const tier = paper?.title?.toLowerCase().includes("tier 2") || paper?.title?.toLowerCase().includes("tier-ii") ? "Tier 2" : "Tier 1";
+    setForwardExamTag(`${examName} ${yr} ${tier}`);
+    setForwardTier(tier);
+    setForwardDifficulty("medium");
+  };
+
+  const executeSingleForward = async () => {
+    if (!forwardModalQ || !forwardTopicId) {
+      toast.error("Please select a valid chapter / topic");
+      return;
+    }
+    try {
+      setIsForwardingSingle(true);
+      const res = await fetch("/api/admin/questions/import-pyq", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          paperId: Number(paperId),
+          questionId: forwardModalQ.id,
+          topicId: forwardTopicId,
+          customExamTag: forwardExamTag,
+          tierLevel: forwardTier,
+          difficulty: forwardDifficulty,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to forward question");
+
+      const targetTopicTitle = allTopics.find((t) => t.id === forwardTopicId)?.title || "Chapter";
+      toast.success(`✓ Question #${forwardModalQ.question_number} forwarded to Question Bank under [${targetTopicTitle}]!`);
+
+      setQbStatusMap((prev) => ({
+        ...prev,
+        [forwardModalQ.id]: { inQb: true, topicId: forwardTopicId, topicTitle: targetTopicTitle },
+      }));
+      setForwardModalQ(null);
+    } catch (err: any) {
+      toast.error(err.message || "Failed to forward question");
+    } finally {
+      setIsForwardingSingle(false);
+    }
+  };
+
+  const openBulkForwardModal = (preferredSection: "math" | "reasoning" | "ga" | "english" | "all" = "math") => {
+    setBulkForwardSection(preferredSection);
+    setShowBulkForwardModal(true);
+
+    const targetQs = questions.filter((q, idx) => {
+      const qNo = q.question_number || idx + 1;
+      if (preferredSection === "math") return qNo >= 51 && qNo <= 75;
+      if (preferredSection === "reasoning") return qNo >= 1 && qNo <= 25;
+      if (preferredSection === "ga") return qNo >= 26 && qNo <= 50;
+      if (preferredSection === "english") return qNo >= 76 && qNo <= 100;
+      return true;
+    });
+
+    const sel = new Set<number>(targetQs.map((q) => q.id));
+    setSelectedForwardQIds(sel);
+
+    const asg: Record<number, { topicId: number; subjectId: number }> = {};
+    targetQs.forEach((q) => {
+      const { subjectId, topicId } = getSuggestedSubjectAndTopic(q);
+      asg[q.id] = { subjectId, topicId };
+    });
+    setBulkForwardAssignments(asg);
+  };
+
+  const handleBulkSectionChange = (sec: "math" | "reasoning" | "ga" | "english" | "all") => {
+    setBulkForwardSection(sec);
+    const targetQs = questions.filter((q, idx) => {
+      const qNo = q.question_number || idx + 1;
+      if (sec === "math") return qNo >= 51 && qNo <= 75;
+      if (sec === "reasoning") return qNo >= 1 && qNo <= 25;
+      if (sec === "ga") return qNo >= 26 && qNo <= 50;
+      if (sec === "english") return qNo >= 76 && qNo <= 100;
+      return true;
+    });
+
+    const sel = new Set<number>(targetQs.map((q) => q.id));
+    setSelectedForwardQIds(sel);
+
+    const asg = { ...bulkForwardAssignments };
+    targetQs.forEach((q) => {
+      if (!asg[q.id]) {
+        const { subjectId, topicId } = getSuggestedSubjectAndTopic(q);
+        asg[q.id] = { subjectId, topicId };
+      }
+    });
+    setBulkForwardAssignments(asg);
+  };
+
+  const executeBulkForward = async () => {
+    if (selectedForwardQIds.size === 0) {
+      toast.error("Please select at least one question to forward");
+      return;
+    }
+
+    try {
+      setIsForwardingBulk(true);
+      setBulkForwardProgress(10);
+
+      const examName = paper?.exams?.title || "SSC CGL";
+      const yr = paper?.year || 2024;
+      const tier = paper?.title?.toLowerCase().includes("tier 2") || paper?.title?.toLowerCase().includes("tier-ii") ? "Tier 2" : "Tier 1";
+      const autoExamTag = `${examName} ${yr} ${tier}`.trim();
+
+      const assignmentsList = Array.from(selectedForwardQIds).map((qid) => {
+        const asg = bulkForwardAssignments[qid];
+        return {
+          questionId: qid,
+          topicId: asg?.topicId || 182,
+          difficulty: "medium",
+        };
+      });
+
+      setBulkForwardProgress(40);
+
+      const res = await fetch("/api/admin/questions/import-pyq", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          paperId: Number(paperId),
+          assignments: assignmentsList,
+          customExamTag: autoExamTag,
+          tierLevel: tier,
+        }),
+      });
+
+      setBulkForwardProgress(80);
+
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to forward questions");
+
+      const updatedStatus = { ...qbStatusMap };
+      assignmentsList.forEach((item) => {
+        const tTitle = allTopics.find((t) => t.id === item.topicId)?.title || "Chapter";
+        updatedStatus[item.questionId] = {
+          inQb: true,
+          topicId: item.topicId,
+          topicTitle: tTitle,
+        };
+      });
+      setQbStatusMap(updatedStatus);
+
+      setBulkForwardProgress(100);
+      toast.success(`✓ Successfully forwarded ${assignmentsList.length} verified questions into Question Bank!`);
+      setShowBulkForwardModal(false);
+    } catch (err: any) {
+      toast.error(err.message || "Failed to forward questions");
+    } finally {
+      setIsForwardingBulk(false);
+      setBulkForwardProgress(0);
+    }
+  };
 
   // 4-in-1 Bulk Importer Studio State
   const [importerTab, setImporterTab] = useState<BulkImporterTab>("text");
@@ -1247,6 +1507,16 @@ export default function PaperQuestionsPage() {
             <div className="flex items-center gap-2">
               <button
                 type="button"
+                onClick={() => openBulkForwardModal("math")}
+                className="flex items-center gap-1.5 rounded-2xl border border-indigo-300 bg-indigo-50 text-indigo-900 hover:bg-indigo-100 px-4 py-2.5 text-xs font-bold shadow-xs cursor-pointer transition-colors"
+                title="Verify and Forward questions from this PYQ paper directly into Question Bank"
+              >
+                <Share2 className="h-3.5 w-3.5 text-indigo-700" />
+                <span>Forward to QB</span>
+              </button>
+
+              <button
+                type="button"
                 onClick={handleDownloadTxt}
                 className="flex items-center gap-1.5 rounded-2xl border border-emerald-300 bg-emerald-50 text-emerald-800 hover:bg-emerald-100 px-4 py-2.5 text-xs font-bold shadow-xs cursor-pointer transition-colors"
                 title="Download all questions and answer keys as a clean formatted .txt file"
@@ -1436,10 +1706,30 @@ export default function PaperQuestionsPage() {
                         <span className="text-[11px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200">
                           Ans: Option {q.correct_answer}
                         </span>
+
+                        {qbStatusMap[q.id]?.inQb && (
+                          <span className="text-[11px] font-bold text-indigo-800 bg-indigo-50 px-2 py-0.5 rounded-md border border-indigo-200 inline-flex items-center gap-1">
+                            <CheckCircle2 className="h-3 w-3 text-indigo-600" />
+                            <span>In QB: {qbStatusMap[q.id]?.topicTitle || "Saved"}</span>
+                          </span>
+                        )}
                       </div>
 
-                      {/* Right: Quick Translate + Edit + Delete + Expand */}
+                      {/* Right: Quick Translate + Forward to QB + Edit + Delete + Expand */}
                       <div className="flex items-center gap-1.5 shrink-0">
+                        <button
+                          type="button"
+                          onClick={() => openForwardModal(q)}
+                          className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold border cursor-pointer transition-all shadow-2xs ${
+                            qbStatusMap[q.id]?.inQb
+                              ? "bg-indigo-50 text-indigo-700 border-indigo-200 hover:bg-indigo-100"
+                              : "bg-indigo-600 hover:bg-indigo-700 text-white border-transparent"
+                          }`}
+                          title="Forward this question to Question Bank (with Chapter selection)"
+                        >
+                          <Share2 className="h-3 w-3" />
+                          <span>{qbStatusMap[q.id]?.inQb ? "Re-Forward" : "Forward to QB"}</span>
+                        </button>
                         {!isEnglishSection && !isLocked && (
                           <button
                             type="button"
@@ -1609,6 +1899,13 @@ export default function PaperQuestionsPage() {
                           <span className="text-[11px] font-bold text-emerald-800 bg-emerald-50 px-2.5 py-0.5 rounded-md border border-emerald-200">
                             Answer: Option {q.correct_answer}
                           </span>
+
+                          {qbStatusMap[q.id]?.inQb && (
+                            <span className="text-[11px] font-bold text-indigo-800 bg-indigo-50 px-2 py-0.5 rounded-md border border-indigo-200 inline-flex items-center gap-1">
+                              <CheckCircle2 className="h-3 w-3 text-indigo-600" />
+                              <span>In QB: {qbStatusMap[q.id]?.topicTitle || "Saved"}</span>
+                            </span>
+                          )}
                         </div>
 
                         <h4 className="text-sm sm:text-base font-bold text-slate-900 leading-snug" style={{ color: "#0f172a" }}>
@@ -1675,6 +1972,20 @@ export default function PaperQuestionsPage() {
                             <span>{isTranslatingThis ? "Translating..." : "Translate"}</span>
                           </button>
                         )}
+
+                        <button
+                          type="button"
+                          onClick={() => openForwardModal(q)}
+                          className={`inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold border cursor-pointer transition-all shadow-2xs ${
+                            qbStatusMap[q.id]?.inQb
+                              ? "bg-indigo-50 text-indigo-700 border-indigo-200 hover:bg-indigo-100"
+                              : "bg-indigo-600 hover:bg-indigo-700 text-white border-transparent"
+                          }`}
+                          title="Forward this question to Question Bank (with Chapter selection)"
+                        >
+                          <Share2 className="h-3.5 w-3.5" />
+                          <span>{qbStatusMap[q.id]?.inQb ? "Re-Forward" : "Forward to QB"}</span>
+                        </button>
 
                         <div className="flex gap-1.5">
                           <button
@@ -2383,6 +2694,436 @@ export default function PaperQuestionsPage() {
                 </div>
               </div>
             )}
+          </div>
+        </div>
+      )}
+
+      {/* ── MODAL 1: SINGLE QUESTION FORWARD TO QUESTION BANK ── */}
+      {forwardModalQ && (
+        <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 overflow-y-auto animate-in fade-in duration-150">
+          <div className="bg-white rounded-3xl shadow-2xl border border-slate-200 w-full max-w-2xl overflow-hidden animate-in zoom-in-95 duration-150">
+            {/* Modal Header */}
+            <div className="bg-gradient-to-r from-indigo-900 via-blue-900 to-slate-900 p-5 text-white flex items-center justify-between">
+              <div>
+                <div className="inline-flex items-center gap-1.5 text-[10px] font-black uppercase tracking-wider bg-white/20 text-indigo-200 px-2.5 py-0.5 rounded-full mb-1">
+                  <Share2 className="h-3 w-3 text-indigo-300" />
+                  Forward to Question Bank
+                </div>
+                <h3 className="text-base sm:text-lg font-black text-white">
+                  Forward Question #{forwardModalQ.question_number}
+                </h3>
+              </div>
+              <button
+                type="button"
+                onClick={() => setForwardModalQ(null)}
+                className="rounded-full p-1.5 text-white/70 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+
+            {/* Modal Body */}
+            <div className="p-6 space-y-4 max-h-[75vh] overflow-y-auto text-slate-900" style={{ color: "#0f172a" }}>
+              {/* Question Statement Preview */}
+              <div className="rounded-2xl bg-slate-50 border border-slate-200 p-4 space-y-2">
+                <span className="text-[11px] font-black uppercase tracking-wider text-slate-500">
+                  Question Statement:
+                </span>
+                <div className="text-sm font-bold text-slate-900 leading-snug">
+                  <MathText text={forwardModalQ.question_text} className="text-slate-900 font-bold" />
+                </div>
+
+                {/* Options Flow */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2 pt-2 border-t border-slate-200 text-xs">
+                  {[
+                    { label: "A", val: forwardModalQ.option_a },
+                    { label: "B", val: forwardModalQ.option_b },
+                    { label: "C", val: forwardModalQ.option_c },
+                    { label: "D", val: forwardModalQ.option_d },
+                  ].map((opt) => {
+                    const isCorrect = forwardModalQ.correct_answer === opt.label;
+                    return (
+                      <div
+                        key={opt.label}
+                        className={`p-2 rounded-xl border flex items-center gap-2 ${
+                          isCorrect
+                            ? "bg-emerald-50 border-emerald-300 text-emerald-950 font-bold"
+                            : "bg-white border-slate-200 text-slate-700"
+                        }`}
+                      >
+                        <span
+                          className={`flex h-4 w-4 shrink-0 items-center justify-center rounded-full text-[10px] font-black ${
+                            isCorrect ? "bg-emerald-600 text-white" : "bg-slate-200 text-slate-700"
+                          }`}
+                        >
+                          {opt.label}
+                        </span>
+                        <span className="truncate">
+                          <MathText text={opt.val} />
+                        </span>
+                        {isCorrect && <Check className="h-3.5 w-3.5 text-emerald-600 ml-auto shrink-0" />}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Destination Configuration */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                {/* Subject Selector */}
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 mb-1">
+                    1. Target Subject:
+                  </label>
+                  <select
+                    value={forwardSubjectId}
+                    onChange={(e) => {
+                      const sid = Number(e.target.value);
+                      setForwardSubjectId(sid);
+                      const matching = allTopics.filter((t) => t.subject_id === sid);
+                      if (matching.length > 0) {
+                        if (sid === 1) {
+                          setForwardTopicId(classifyMathQuestion(forwardModalQ.question_text));
+                        } else {
+                          setForwardTopicId(matching[0].id);
+                        }
+                      }
+                    }}
+                    className="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-900 focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-100"
+                  >
+                    {allSubjects.map((s) => (
+                      <option key={s.id} value={s.id}>
+                        {s.title}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Chapter / Topic Selector */}
+                <div>
+                  <div className="flex items-center justify-between mb-1">
+                    <label className="block text-xs font-bold text-slate-700">
+                      2. Target Chapter:
+                    </label>
+                    <span className="text-[10px] font-bold text-indigo-600 bg-indigo-50 px-1.5 py-0.5 rounded border border-indigo-200">
+                      Auto-Suggested
+                    </span>
+                  </div>
+                  <select
+                    value={forwardTopicId}
+                    onChange={(e) => setForwardTopicId(Number(e.target.value))}
+                    className="w-full rounded-xl border border-indigo-300 bg-indigo-50/40 px-3 py-2 text-xs font-bold text-indigo-950 focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-100"
+                  >
+                    {currentSubjectTopics.map((t) => (
+                      <option key={t.id} value={t.id}>
+                        {t.title}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Exam Tag */}
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 mb-1">
+                    3. Exam Reference Tag:
+                  </label>
+                  <input
+                    type="text"
+                    value={forwardExamTag}
+                    onChange={(e) => setForwardExamTag(e.target.value)}
+                    placeholder="e.g. SSC CGL 2024 Tier 1"
+                    className="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-medium text-slate-900 focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-100"
+                  />
+                </div>
+
+                {/* Difficulty */}
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 mb-1">
+                    4. Difficulty Level:
+                  </label>
+                  <select
+                    value={forwardDifficulty}
+                    onChange={(e) => setForwardDifficulty(e.target.value)}
+                    className="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-900 focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-100"
+                  >
+                    <option value="easy">Easy (सरल)</option>
+                    <option value="medium">Medium (मध्यम)</option>
+                    <option value="hard">Hard (कठिन)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            {/* Modal Footer */}
+            <div className="bg-slate-50 px-6 py-4 border-t border-slate-200 flex items-center justify-end gap-3">
+              <button
+                type="button"
+                onClick={() => setForwardModalQ(null)}
+                className="px-4 py-2 rounded-xl border border-slate-300 bg-white hover:bg-slate-50 text-xs font-bold text-slate-700 cursor-pointer"
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                onClick={executeSingleForward}
+                disabled={isForwardingSingle}
+                className="inline-flex items-center gap-2 px-6 py-2 rounded-xl bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-700 hover:to-blue-700 text-white text-xs font-black shadow-md cursor-pointer disabled:opacity-50"
+              >
+                <Share2 className="h-4 w-4" />
+                <span>{isForwardingSingle ? "Forwarding..." : "Confirm & Forward to QB"}</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ── MODAL 2: BULK FORWARD QUESTIONS TO QUESTION BANK ── */}
+      {showBulkForwardModal && (
+        <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 overflow-y-auto animate-in fade-in duration-150">
+          <div className="bg-white rounded-3xl shadow-2xl border border-slate-200 w-full max-w-4xl max-h-[90vh] flex flex-col overflow-hidden animate-in zoom-in-95 duration-150">
+            {/* Modal Header */}
+            <div className="bg-gradient-to-r from-indigo-900 via-blue-900 to-slate-900 p-5 text-white flex items-center justify-between shrink-0">
+              <div>
+                <div className="inline-flex items-center gap-1.5 text-[10px] font-black uppercase tracking-wider bg-white/20 text-indigo-200 px-2.5 py-0.5 rounded-full mb-1">
+                  <Share2 className="h-3 w-3 text-indigo-300" />
+                  Bulk Question Forward Studio
+                </div>
+                <h3 className="text-base sm:text-lg font-black text-white">
+                  Bulk Forward Questions to Question Bank
+                </h3>
+                <p className="text-xs text-indigo-200 mt-0.5">
+                  Verify questions and auto-suggested chapters, adjust if needed, and forward to Question Bank in one batch.
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowBulkForwardModal(false)}
+                className="rounded-full p-1.5 text-white/70 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+
+            {/* Section Filter Toolbar */}
+            <div className="p-4 bg-slate-50 border-b border-slate-200 flex flex-wrap items-center justify-between gap-3 shrink-0">
+              <div className="flex items-center gap-1.5 overflow-x-auto">
+                <button
+                  type="button"
+                  onClick={() => handleBulkSectionChange("math")}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
+                    bulkForwardSection === "math"
+                      ? "bg-indigo-600 text-white shadow-xs"
+                      : "bg-white text-slate-700 hover:bg-slate-100 border border-slate-200"
+                  }`}
+                >
+                  📐 Quant / Maths (51–75)
+                </button>
+                <button
+                  type="button"
+                  onClick={() => handleBulkSectionChange("reasoning")}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
+                    bulkForwardSection === "reasoning"
+                      ? "bg-indigo-600 text-white shadow-xs"
+                      : "bg-white text-slate-700 hover:bg-slate-100 border border-slate-200"
+                  }`}
+                >
+                  🧩 Reasoning (1–25)
+                </button>
+                <button
+                  type="button"
+                  onClick={() => handleBulkSectionChange("ga")}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
+                    bulkForwardSection === "ga"
+                      ? "bg-indigo-600 text-white shadow-xs"
+                      : "bg-white text-slate-700 hover:bg-slate-100 border border-slate-200"
+                  }`}
+                >
+                  🌍 GA / GK (26–50)
+                </button>
+                <button
+                  type="button"
+                  onClick={() => handleBulkSectionChange("english")}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
+                    bulkForwardSection === "english"
+                      ? "bg-indigo-600 text-white shadow-xs"
+                      : "bg-white text-slate-700 hover:bg-slate-100 border border-slate-200"
+                  }`}
+                >
+                  📖 English (76–100)
+                </button>
+                <button
+                  type="button"
+                  onClick={() => handleBulkSectionChange("all")}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
+                    bulkForwardSection === "all"
+                      ? "bg-indigo-600 text-white shadow-xs"
+                      : "bg-white text-slate-700 hover:bg-slate-100 border border-slate-200"
+                  }`}
+                >
+                  📋 All (1–100)
+                </button>
+              </div>
+
+              {/* Selection Summary & Quick Actions */}
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-bold text-slate-600">
+                  Selected: <b className="text-indigo-700">{selectedForwardQIds.size}</b> Qs
+                </span>
+                <button
+                  type="button"
+                  onClick={() => {
+                    const secQs = questions.filter((q, idx) => {
+                      const qNo = q.question_number || idx + 1;
+                      if (bulkForwardSection === "math") return qNo >= 51 && qNo <= 75;
+                      if (bulkForwardSection === "reasoning") return qNo >= 1 && qNo <= 25;
+                      if (bulkForwardSection === "ga") return qNo >= 26 && qNo <= 50;
+                      if (bulkForwardSection === "english") return qNo >= 76 && qNo <= 100;
+                      return true;
+                    });
+                    setSelectedForwardQIds(new Set(secQs.map((q) => q.id)));
+                  }}
+                  className="px-2.5 py-1 rounded-lg border border-slate-300 bg-white text-[11px] font-bold text-slate-700 hover:bg-slate-50 cursor-pointer"
+                >
+                  Select All
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setSelectedForwardQIds(new Set())}
+                  className="px-2.5 py-1 rounded-lg border border-slate-300 bg-white text-[11px] font-bold text-slate-700 hover:bg-slate-50 cursor-pointer"
+                >
+                  Clear
+                </button>
+              </div>
+            </div>
+
+            {/* Questions Review List */}
+            <div className="flex-1 overflow-y-auto p-4 space-y-2.5 divide-y divide-slate-100">
+              {(() => {
+                const secQs = questions.filter((q, idx) => {
+                  const qNo = q.question_number || idx + 1;
+                  if (bulkForwardSection === "math") return qNo >= 51 && qNo <= 75;
+                  if (bulkForwardSection === "reasoning") return qNo >= 1 && qNo <= 25;
+                  if (bulkForwardSection === "ga") return qNo >= 26 && qNo <= 50;
+                  if (bulkForwardSection === "english") return qNo >= 76 && qNo <= 100;
+                  return true;
+                });
+
+                if (secQs.length === 0) {
+                  return (
+                    <div className="py-12 text-center text-slate-400 text-xs font-medium">
+                      No questions in this section.
+                    </div>
+                  );
+                }
+
+                return secQs.map((q) => {
+                  const isChecked = selectedForwardQIds.has(q.id);
+                  const asg = bulkForwardAssignments[q.id] || getSuggestedSubjectAndTopic(q);
+                  const qSubjectTopics = allTopics.filter((t) => t.subject_id === asg.subjectId);
+                  const isAlreadyInQb = qbStatusMap[q.id]?.inQb;
+
+                  return (
+                    <div
+                      key={q.id}
+                      className={`pt-2.5 first:pt-0 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 p-3 rounded-2xl border transition-all ${
+                        isChecked
+                          ? "bg-indigo-50/30 border-indigo-200"
+                          : "bg-white border-slate-200 opacity-60"
+                      }`}
+                    >
+                      {/* Left: Checkbox + Q# + Question Snippet */}
+                      <div className="flex items-start gap-2.5 flex-1 min-w-0">
+                        <input
+                          type="checkbox"
+                          checked={isChecked}
+                          onChange={(e) => {
+                            const next = new Set(selectedForwardQIds);
+                            if (e.target.checked) next.add(q.id);
+                            else next.delete(q.id);
+                            setSelectedForwardQIds(next);
+                          }}
+                          className="h-4 w-4 rounded text-indigo-600 mt-1 cursor-pointer shrink-0"
+                        />
+
+                        <div className="min-w-0 flex-1">
+                          <div className="flex items-center gap-2 flex-wrap mb-1">
+                            <span className="px-2 py-0.5 rounded-lg bg-blue-100 text-blue-800 text-xs font-black">
+                              Q.{q.question_number}
+                            </span>
+                            <span className="px-2 py-0.5 rounded-md bg-emerald-50 text-emerald-800 border border-emerald-200 text-[11px] font-bold">
+                              Ans: {q.correct_answer}
+                            </span>
+                            {isAlreadyInQb && (
+                              <span className="px-2 py-0.5 rounded-md bg-indigo-50 text-indigo-700 border border-indigo-200 text-[10px] font-bold inline-flex items-center gap-1">
+                                <CheckCircle2 className="h-3 w-3 text-indigo-600" />
+                                <span>In QB: {qbStatusMap[q.id]?.topicTitle}</span>
+                              </span>
+                            )}
+                          </div>
+                          <p className="text-xs text-slate-800 font-medium line-clamp-2 select-text">
+                            {q.question_text}
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Right: Topic Dropdown */}
+                      <div className="shrink-0 w-full sm:w-64">
+                        <label className="block text-[10px] font-black uppercase text-indigo-900 tracking-wider mb-1">
+                          Assign Chapter / Topic:
+                        </label>
+                        <select
+                          value={asg.topicId}
+                          onChange={(e) => {
+                            const newTid = Number(e.target.value);
+                            setBulkForwardAssignments((prev) => ({
+                              ...prev,
+                              [q.id]: { ...asg, topicId: newTid },
+                            }));
+                          }}
+                          className="w-full rounded-xl border border-indigo-300 bg-white px-2.5 py-1.5 text-xs font-bold text-slate-800 focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-100"
+                        >
+                          {qSubjectTopics.map((t) => (
+                            <option key={t.id} value={t.id}>
+                              {t.title}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+                    </div>
+                  );
+                });
+              })()}
+            </div>
+
+            {/* Modal Footer */}
+            <div className="bg-slate-50 p-4 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3 shrink-0">
+              <span className="text-xs text-slate-600 font-medium">
+                Ready to forward <b>{selectedForwardQIds.size}</b> verified question(s) to Question Bank.
+              </span>
+
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => setShowBulkForwardModal(false)}
+                  className="px-4 py-2 rounded-xl border border-slate-300 bg-white hover:bg-slate-50 text-xs font-bold text-slate-700 cursor-pointer"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="button"
+                  onClick={executeBulkForward}
+                  disabled={isForwardingBulk || selectedForwardQIds.size === 0}
+                  className="inline-flex items-center gap-2 px-6 py-2 rounded-xl bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-700 hover:to-blue-700 text-white text-xs font-black shadow-md cursor-pointer disabled:opacity-50"
+                >
+                  <Share2 className="h-4 w-4" />
+                  <span>
+                    {isForwardingBulk
+                      ? `Forwarding (${bulkForwardProgress}%)...`
+                      : `Forward ${selectedForwardQIds.size} Questions Now`}
+                  </span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       )}

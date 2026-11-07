@@ -13,8 +13,8 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
   },
   experimental: {
-    cpus: 1,
-    workerThreads: false,
+    // Only throttle CPU in low-memory CI; allow full multi-core performance for fast localhost dev & builds
+    ...(process.env.LOW_MEMORY === "true" ? { cpus: 1, workerThreads: false } : {}),
     optimizePackageImports: [
       "lucide-react",
       "@supabase/supabase-js",

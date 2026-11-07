@@ -5,7 +5,7 @@ import { Flag } from "lucide-react";
 import ReportQuestionModal from "@/components/ReportQuestionModal";
 
 type ReportButtonProps = {
-  questionId: number;
+  questionId: number | string;
   questionText?: string;
   className?: string;
   showLabel?: boolean;
@@ -15,30 +15,39 @@ export default function ReportButton({
   questionId,
   questionText,
   className = "",
-  showLabel = false,
+  showLabel = true,
 }: ReportButtonProps) {
   const [modalOpen, setModalOpen] = useState(false);
+
+  // Safely extract numeric ID from strings like "pyq_2003" or "bank_105"
+  const numericId =
+    typeof questionId === "number"
+      ? questionId
+      : parseInt(String(questionId).replace(/\D/g, ""), 10) || 1;
 
   return (
     <>
       <button
         type="button"
-        onClick={() => setModalOpen(true)}
-        aria-label="Report question mistake"
-        title="Flag or report an error in this question (सवाल में गलती रिपोर्ट करें)"
+        onClick={(e) => {
+          e.stopPropagation();
+          setModalOpen(true);
+        }}
+        aria-label="Report an error or mistake in this question"
+        title="Flag or report an error in this question (सवाल में कोई गलती रिपोर्ट करें)"
         className={
           className ||
-          (showLabel
-            ? "inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg border border-slate-200 bg-white text-xs font-semibold text-slate-600 hover:border-red-300 hover:bg-red-50 hover:text-red-600 transition-all cursor-pointer shadow-2xs"
-            : "flex h-8 w-8 sm:h-9 sm:w-9 shrink-0 items-center justify-center rounded-xl border border-gray-200 bg-white text-gray-400 hover:border-red-300 hover:bg-red-50/70 hover:text-red-600 transition-all cursor-pointer shadow-2xs")
+          `inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg border border-rose-200 bg-rose-50 hover:bg-rose-100/90 text-rose-700 text-xs font-bold transition-all cursor-pointer shadow-xs shrink-0 ${
+            showLabel ? "" : "w-8 h-8 justify-center p-0"
+          }`
         }
       >
-        <Flag className="h-3.5 w-3.5 text-red-500 shrink-0" />
-        {showLabel && <span>Report Error</span>}
+        <Flag className="h-3.5 w-3.5 text-rose-600 fill-rose-600 shrink-0" />
+        {showLabel && <span className="font-bold">Report Error</span>}
       </button>
 
       <ReportQuestionModal
-        questionId={questionId}
+        questionId={numericId}
         questionText={questionText}
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}

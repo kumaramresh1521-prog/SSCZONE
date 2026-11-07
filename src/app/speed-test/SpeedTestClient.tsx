@@ -1798,7 +1798,7 @@ export default function SpeedTestClient() {
                           <ReportButton
                             questionId={q.originalId}
                             questionText={q.question_text}
-                            showLabel={false}
+                            showLabel={true}
                           />
 
                           <span className="text-[11px] font-mono text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md">

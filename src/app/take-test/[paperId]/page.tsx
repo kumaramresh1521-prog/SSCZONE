@@ -1735,6 +1735,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                         <span className="text-xs font-black text-blue-800 bg-blue-50 border border-blue-200 px-2.5 py-0.5 rounded-md">
                           Official Key: {q.correct_answer}
                         </span>
+                        <ReportButton questionId={q.id} questionText={q.question_text} showLabel={true} />
                       </div>
                     </div>
 
@@ -1861,6 +1862,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                       <span className="text-xs font-black text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md">
                         Official Key: {currentReviewQ.correct_answer}
                       </span>
+                      <ReportButton questionId={currentReviewQ.id} questionText={currentReviewQ.question_text} showLabel={true} />
                     </div>
                   </div>
 
@@ -2267,7 +2269,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
               <span className="text-red-600 font-bold bg-red-50 px-2 py-0.5 rounded border border-red-200">
                 -0.50
               </span>
-              <ReportButton questionId={currentQ.id} questionText={currentQ.question_text} />
+              <ReportButton questionId={currentQ.id} questionText={currentQ.question_text} showLabel={true} />
             </div>
           </div>
 

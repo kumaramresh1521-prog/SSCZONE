@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { ShieldCheck } from "lucide-react";
+import { buildPageMetadata } from "@/lib/seo-store";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy — SSCZone",
-  description: "Privacy Policy of SSCZone explaining data collection, account privacy, and user data rights.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return buildPageMetadata("/privacy", {
+    title: "Privacy Policy — SSCZone",
+    description: "Privacy Policy of SSCZone explaining data collection, account privacy, and user data rights.",
+  });
+}
 
 export default function PrivacyPage() {
   return (

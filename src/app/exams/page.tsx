@@ -3,11 +3,15 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { ChevronRight } from "lucide-react";
 import ExamsClient from "./ExamsClient";
+import { buildPageMetadata } from "@/lib/seo-store";
 
-export const metadata: Metadata = {
-  title: "Target Exams & Syllabi — SSCZone",
-  description: "Select your target exam and start syllabus-wise MCQ practice for SSC CGL, CHSL, CPO, MTS, GD, Steno & Railways.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return buildPageMetadata("/exams", {
+    title: "Target Exams & Syllabi — SSCZone",
+    description: "Select your target exam and start syllabus-wise MCQ practice for SSC CGL, CHSL, CPO, MTS, GD, Steno & Railways.",
+    keywords: ["SSC CGL", "SSC CHSL", "SSC CPO", "SSC MTS", "SSC GD", "Railways RRB", "SSC Exam Syllabus"],
+  });
+}
 
 export default async function ExamsPage() {
   const supabase = await createClient();

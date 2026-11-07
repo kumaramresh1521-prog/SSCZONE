@@ -1,54 +1,19 @@
 import { NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 import fs from "fs";
 import path from "path";
+import { getPublishedSeoConfigAsync, DEFAULT_SEO_CONFIG } from "@/lib/seo-store";
 
 const SEO_FILE_PATH = path.join(process.cwd(), "src", "data", "seo-config.json");
 
 export async function GET() {
   try {
-    if (fs.existsSync(SEO_FILE_PATH)) {
-      const data = fs.readFileSync(SEO_FILE_PATH, "utf8");
-      return NextResponse.json(JSON.parse(data));
-    }
+    const config = await getPublishedSeoConfigAsync();
+    return NextResponse.json(config);
   } catch (err: any) {
     console.error("Error reading SEO config:", err);
+    return NextResponse.json(DEFAULT_SEO_CONFIG);
   }
-
-  // Fallback defaults
-  return NextResponse.json({
-    siteTitle: "SSCZone — Official SSC Syllabus-Wise MCQ Practice & Test Series Portal",
-    titleTemplate: "%s | SSCZone",
-    metaDescription: "Prepare for SSC CGL, CHSL, CPO, MTS, GD, Steno & Railways Exams topic-by-topic. Practice high-quality MCQs from standard reference books with instant bilingual solutions.",
-    canonicalUrl: "https://ssczone.com",
-    author: "SSCZone Editorial Team",
-    keywords: ["SSC CGL Practice", "SSC CHSL Test Series", "SSC CPO MCQs", "Previous Year Papers"],
-    openGraph: {
-      title: "SSCZone — Syllabus-Wise SSC MCQ Practice & Test Series Portal",
-      description: "Crack SSC CGL, CHSL, CPO, MTS & Railways Exams with chapter-by-chapter MCQ practice and previous year test series.",
-      imageUrl: "https://ssczone.com/icon-512.png",
-      type: "website"
-    },
-    twitter: {
-      card: "summary_large_image",
-      site: "@ssczone",
-      creator: "@ssczone"
-    },
-    indexing: {
-      index: true,
-      follow: true,
-      maxSnippet: -1,
-      maxImagePreview: "large",
-      maxVideoPreview: -1
-    },
-    verification: {
-      google: "",
-      bing: "",
-      googleAnalyticsId: "",
-      adsenseId: ""
-    },
-    pageOverrides: {},
-    updatedAt: new Date().toISOString()
-  });
 }
 
 export async function POST(request: Request) {
@@ -67,16 +32,50 @@ export async function POST(request: Request) {
       updatedAt: new Date().toISOString()
     };
 
+    // 1. Save to local JSON file for atomic, low-latency SSR access
     const dir = path.dirname(SEO_FILE_PATH);
     if (!fs.existsSync(dir)) {
       fs.mkdirSync(dir, { recursive: true });
     }
-
     fs.writeFileSync(SEO_FILE_PATH, JSON.stringify(updatedConfig, null, 2), "utf8");
+
+    // 2. Persist to Supabase site_settings table if available
+    try {
+      const { supabaseAdmin } = await import("@/lib/supabase-admin");
+      await supabaseAdmin.from("site_settings").upsert(
+        {
+          key: "seo_config",
+          value: updatedConfig,
+          updated_at: new Date().toISOString()
+        },
+        { onConflict: "key" }
+      );
+    } catch (dbErr) {
+      // Supabase table might not exist yet; file backup is active
+      console.warn("Could not sync SEO config to Supabase site_settings table:", dbErr);
+    }
+
+    // 3. Clear Next.js cache so changes immediately appear live on the website
+    try {
+      revalidatePath("/", "layout");
+      revalidatePath("/");
+      revalidatePath("/papers");
+      revalidatePath("/exams");
+      revalidatePath("/notes");
+      revalidatePath("/speed-test");
+      revalidatePath("/daily-quiz");
+      revalidatePath("/typing");
+      revalidatePath("/about");
+      revalidatePath("/blog");
+      revalidatePath("/sitemap.xml");
+      revalidatePath("/robots.txt");
+    } catch (cacheErr) {
+      console.warn("revalidatePath error:", cacheErr);
+    }
 
     return NextResponse.json({
       success: true,
-      message: "SEO configuration published successfully!",
+      message: "SEO configuration published successfully and live on the website!",
       config: updatedConfig
     });
   } catch (err: any) {

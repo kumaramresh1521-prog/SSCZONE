@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { CreditCard } from "lucide-react";
+import { buildPageMetadata } from "@/lib/seo-store";
 
-export const metadata: Metadata = {
-  title: "Refund & Cancellation Policy — SSCZone",
-  description: "Refund and Cancellation policy for SSCZone pass purchases and digital subscription plans.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return buildPageMetadata("/refund", {
+    title: "Refund & Cancellation Policy — SSCZone",
+    description: "Refund and Cancellation policy for SSCZone pass purchases and digital subscription plans.",
+  });
+}
 
 export default function RefundPage() {
   return (

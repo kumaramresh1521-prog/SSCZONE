@@ -2,12 +2,15 @@ import { supabase } from "@/lib/supabase";
 import type { Metadata } from "next";
 import BlogClient from "./BlogClient";
 import { DEFAULT_BLOGS } from "@/lib/blog-data";
+import { buildPageMetadata } from "@/lib/seo-store";
 
-export const metadata: Metadata = {
-  title: "Official SSC Blog & Exam Alerts | SSC CGL, CHSL, CPO Updates - SSCZone",
-  description: "Stay ahead with official SSC exam notifications, admit cards, answer key objection links, cut-off analysis, and topper preparation strategies.",
-  keywords: ["SSC CGL 2026 Notification", "SSC CHSL Answer Key", "SSC CPO Vacancy", "SSC Preparation Strategy", "SSC Current Affairs"],
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return buildPageMetadata("/blog", {
+    title: "Official SSC Blog & Exam Alerts | SSC CGL, CHSL, CPO Updates - SSCZone",
+    description: "Stay ahead with official SSC exam notifications, admit cards, answer key objection links, cut-off analysis, and topper preparation strategies.",
+    keywords: ["SSC CGL 2026 Notification", "SSC CHSL Answer Key", "SSC CPO Vacancy", "SSC Preparation Strategy", "SSC Current Affairs"],
+  });
+}
 
 export const revalidate = 60; // Revalidate every minute
 

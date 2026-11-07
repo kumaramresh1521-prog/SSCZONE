@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { FileText } from "lucide-react";
+import { buildPageMetadata } from "@/lib/seo-store";
 
-export const metadata: Metadata = {
-  title: "Terms & Conditions — SSCZone",
-  description: "Terms and Conditions governing the use of SSCZone website, mobile application, and subscription passes.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return buildPageMetadata("/terms", {
+    title: "Terms & Conditions — SSCZone",
+    description: "Terms and Conditions governing the use of SSCZone website, mobile application, and subscription passes.",
+  });
+}
 
 export default function TermsPage() {
   return (

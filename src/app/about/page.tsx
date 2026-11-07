@@ -1,11 +1,15 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Target, BookOpen, BrainCircuit, Award, CheckCircle2, Sparkles, ArrowRight } from "lucide-react";
+import { buildPageMetadata } from "@/lib/seo-store";
 
-export const metadata: Metadata = {
-  title: "About Us — SSCZone",
-  description: "Learn about SSCZone's mission to provide syllabus-wise MCQ practice and test series for competitive exam aspirants across India.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return buildPageMetadata("/about", {
+    title: "About Us — SSCZone",
+    description: "Learn about SSCZone's mission to provide syllabus-wise MCQ practice and test series for competitive exam aspirants across India.",
+    keywords: ["About SSCZone", "SSC Exam Preparation Portal", "SSC Test Series Team"],
+  });
+}
 
 export default function AboutPage() {
   return (

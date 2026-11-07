@@ -2,11 +2,29 @@ import { createClient } from "@/lib/supabase-server";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import PracticeClient from "./PracticeClient";
+import { buildPageMetadata } from "@/lib/seo-store";
 
-export const metadata: Metadata = {
-  title: "Practice - SSCZone",
-  description: "Topic-wise MCQ practice with step-by-step solutions",
-};
+export async function generateMetadata({ params }: { params: Promise<{ topicId: string }> }): Promise<Metadata> {
+  const { topicId } = await params;
+  const isNumeric = /^\d+$/.test(topicId);
+  let topicTitle = "Practice MCQs";
+
+  try {
+    const supabase = await createClient();
+    if (isNumeric) {
+      const { data } = await supabase.from("topics").select("title").eq("id", topicId).maybeSingle();
+      if (data?.title) topicTitle = `${data.title} MCQs Practice`;
+    } else {
+      const { data } = await supabase.from("topics").select("title").eq("slug", topicId).maybeSingle();
+      if (data?.title) topicTitle = `${data.title} MCQs Practice`;
+    }
+  } catch {}
+
+  return buildPageMetadata(`/practice/${topicId}`, {
+    title: `${topicTitle} — Bilingual Online Test & Solutions | SSCZone`,
+    description: `Practice ${topicTitle} topic-by-topic for SSC CGL, CHSL, CPO, MTS & Railways with instant explanations, formulas, and timer drill.`,
+  });
+}
 
 export default async function PracticePage({ params }: { params: Promise<{ topicId: string }> }) {
   const { topicId } = await params;

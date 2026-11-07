@@ -20,11 +20,11 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import { createClient } from "@/lib/supabase-server";
+import { buildPageMetadata } from "@/lib/seo-store";
 
-export const metadata: Metadata = {
-  title: "SSCZone — SSC CGL 2026 MCQ Practice, Test Series & PYQs Portal",
-  description: "Prepare for SSC CGL 2026, CHSL, CPO, MTS & GD topic-by-topic. Practice high-quality MCQs from standard reference books with instant explanations, speed drills and official shift papers.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return buildPageMetadata("/");
+}
 
 interface ExamItem {
   id: number;

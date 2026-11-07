@@ -78,6 +78,9 @@ export default function AdminSeoPage() {
   const [activeTab, setActiveTab] = useState<"global" | "social" | "indexing" | "webmaster" | "pages">("global");
   const [previewDevice, setPreviewDevice] = useState<"desktop" | "mobile">("desktop");
   const [newKeyword, setNewKeyword] = useState("");
+  const [customPath, setCustomPath] = useState("");
+  const [customTitle, setCustomTitle] = useState("");
+  const [customDesc, setCustomDesc] = useState("");
 
   // Load SEO config from API
   useEffect(() => {
@@ -659,64 +662,225 @@ Sitemap: ${config.canonicalUrl}/sitemap.xml`}
 
           {/* Tab 5: Page Overrides */}
           {activeTab === "pages" && (
-            <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-xs space-y-5 animate-in fade-in duration-150">
+            <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-xs space-y-6 animate-in fade-in duration-150">
               <div className="border-b border-gray-100 pb-3">
-                <h2 className="text-sm font-black text-gray-900 uppercase tracking-wide">
-                  High-Priority Page Meta Overrides
-                </h2>
-                <p className="text-xs text-gray-500 mt-0.5">
-                  Set custom title tags and descriptions for specific high-traffic sections.
-                </p>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h2 className="text-sm font-black text-gray-900 uppercase tracking-wide">
+                      Route-Specific SEO &amp; Title Overrides
+                    </h2>
+                    <p className="text-xs text-gray-500 mt-0.5">
+                      Set custom title tags and meta descriptions for specific high-traffic sections. Saved overrides apply live instantly.
+                    </p>
+                  </div>
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-[11px] font-bold">
+                    <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600" />
+                    <span>Live Dynamic Mode</span>
+                  </span>
+                </div>
               </div>
 
-              {[
-                { path: "/papers", name: "PYQ Shift Papers Portal (/papers)" },
-                { path: "/exams", name: "Exams Directory (/exams)" },
-                { path: "/notes", name: "Subject Notes & Theory (/notes)" }
-              ].map((p) => {
-                const current = config.pageOverrides[p.path] || { title: "", description: "" };
-                return (
-                  <div key={p.path} className="p-3.5 rounded-xl border border-gray-200 bg-gray-50/70 space-y-2.5">
-                    <span className="text-xs font-black text-blue-800 uppercase tracking-wide">
-                      {p.name}
-                    </span>
-                    <div className="space-y-1">
-                      <label className="text-[11px] font-bold text-gray-700">Custom Title:</label>
+              {/* Preset Core Routes */}
+              <div className="space-y-4">
+                <h3 className="text-xs font-black text-slate-800 uppercase tracking-wider">
+                  Core Website Sections
+                </h3>
+
+                {[
+                  { path: "/", name: "Homepage Main Landing (/)" },
+                  { path: "/papers", name: "PYQ Shift Papers Portal (/papers)" },
+                  { path: "/exams", name: "Target Exams Directory (/exams)" },
+                  { path: "/notes", name: "Subject Notes & PDFs (/notes)" },
+                  { path: "/daily-quiz", name: "Daily Free Quiz Drill (/daily-quiz)" },
+                  { path: "/speed-test", name: "Speed Test Challenge (/speed-test)" },
+                  { path: "/typing", name: "Typing Test Simulator (/typing)" },
+                  { path: "/about", name: "About Us (/about)" },
+                  { path: "/blog", name: "Blog & Exam Alerts (/blog)" }
+                ].map((p) => {
+                  const current = config.pageOverrides[p.path] || { title: "", description: "" };
+                  const isConfigured = Boolean(current.title || current.description);
+                  return (
+                    <div
+                      key={p.path}
+                      className={`p-4 rounded-xl border transition-all space-y-2.5 ${
+                        isConfigured
+                          ? "border-blue-200 bg-blue-50/30"
+                          : "border-gray-200 bg-gray-50/70"
+                      }`}
+                    >
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs font-black text-blue-900 uppercase tracking-wide">
+                          {p.name}
+                        </span>
+                        {isConfigured && (
+                          <span className="text-[10px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded-md">
+                            Custom Override Active
+                          </span>
+                        )}
+                      </div>
+                      <div className="space-y-1">
+                        <label className="text-[11px] font-bold text-gray-700">Custom Title (Browser Tab &amp; Google Heading):</label>
+                        <input
+                          type="text"
+                          value={current.title}
+                          onChange={(e) =>
+                            setConfig({
+                              ...config,
+                              pageOverrides: {
+                                ...config.pageOverrides,
+                                [p.path]: { ...current, title: e.target.value }
+                              }
+                            })
+                          }
+                          placeholder={`Leave empty to use default title`}
+                          className="w-full rounded-lg border border-gray-300 p-2 text-xs bg-white text-gray-900 font-medium focus:border-blue-500 focus:outline-none"
+                        />
+                      </div>
+                      <div className="space-y-1">
+                        <label className="text-[11px] font-bold text-gray-700">Custom Meta Description:</label>
+                        <input
+                          type="text"
+                          value={current.description}
+                          onChange={(e) =>
+                            setConfig({
+                              ...config,
+                              pageOverrides: {
+                                ...config.pageOverrides,
+                                [p.path]: { ...current, description: e.target.value }
+                              }
+                            })
+                          }
+                          placeholder={`Leave empty to use default description`}
+                          className="w-full rounded-lg border border-gray-300 p-2 text-xs bg-white text-gray-900 font-medium focus:border-blue-500 focus:outline-none"
+                        />
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* Custom Extra Route Overrides */}
+              <div className="pt-4 border-t border-gray-200 space-y-4">
+                <h3 className="text-xs font-black text-slate-800 uppercase tracking-wider">
+                  Add Custom Page Override (Any Route)
+                </h3>
+                
+                {/* List extra routes if any */}
+                {Object.entries(config.pageOverrides || {})
+                  .filter(([p]) => ![
+                    "/", "/papers", "/exams", "/notes", "/daily-quiz", "/speed-test", "/typing", "/about", "/blog"
+                  ].includes(p))
+                  .map(([p, val]) => (
+                    <div key={p} className="p-4 rounded-xl border border-amber-200 bg-amber-50/30 space-y-2.5">
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs font-black text-amber-900">{p}</span>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            const updated = { ...config.pageOverrides };
+                            delete updated[p];
+                            setConfig({ ...config, pageOverrides: updated });
+                          }}
+                          className="text-[11px] font-bold text-rose-600 hover:text-rose-800 cursor-pointer flex items-center gap-1"
+                        >
+                          <X className="h-3.5 w-3.5" />
+                          <span>Remove</span>
+                        </button>
+                      </div>
                       <input
                         type="text"
-                        value={current.title}
+                        value={val.title}
                         onChange={(e) =>
                           setConfig({
                             ...config,
                             pageOverrides: {
                               ...config.pageOverrides,
-                              [p.path]: { ...current, title: e.target.value }
+                              [p]: { ...val, title: e.target.value }
                             }
                           })
                         }
+                        placeholder="Custom Title"
+                        className="w-full rounded-lg border border-gray-300 p-2 text-xs bg-white text-gray-900 font-medium"
+                      />
+                      <input
+                        type="text"
+                        value={val.description}
+                        onChange={(e) =>
+                          setConfig({
+                            ...config,
+                            pageOverrides: {
+                              ...config.pageOverrides,
+                              [p]: { ...val, description: e.target.value }
+                            }
+                          })
+                        }
+                        placeholder="Custom Description"
                         className="w-full rounded-lg border border-gray-300 p-2 text-xs bg-white text-gray-900 font-medium"
                       />
                     </div>
-                    <div className="space-y-1">
+                  ))}
+
+                {/* Add Custom Route Input Box */}
+                <div className="p-4 rounded-xl border border-dashed border-gray-300 bg-gray-50/60 space-y-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                    <div>
+                      <label className="text-[11px] font-bold text-gray-700">Route Path:</label>
+                      <input
+                        type="text"
+                        value={customPath}
+                        onChange={(e) => setCustomPath(e.target.value)}
+                        placeholder="e.g. /books or /pricing"
+                        className="w-full rounded-lg border border-gray-300 p-2 text-xs bg-white text-gray-900 font-medium"
+                      />
+                    </div>
+                    <div>
+                      <label className="text-[11px] font-bold text-gray-700">Custom Title:</label>
+                      <input
+                        type="text"
+                        value={customTitle}
+                        onChange={(e) => setCustomTitle(e.target.value)}
+                        placeholder="e.g. SSC Books & Reference Guides"
+                        className="w-full rounded-lg border border-gray-300 p-2 text-xs bg-white text-gray-900 font-medium"
+                      />
+                    </div>
+                    <div>
                       <label className="text-[11px] font-bold text-gray-700">Custom Description:</label>
                       <input
                         type="text"
-                        value={current.description}
-                        onChange={(e) =>
-                          setConfig({
-                            ...config,
-                            pageOverrides: {
-                              ...config.pageOverrides,
-                              [p.path]: { ...current, description: e.target.value }
-                            }
-                          })
-                        }
+                        value={customDesc}
+                        onChange={(e) => setCustomDesc(e.target.value)}
+                        placeholder="e.g. Standard books list for SSC..."
                         className="w-full rounded-lg border border-gray-300 p-2 text-xs bg-white text-gray-900 font-medium"
                       />
                     </div>
                   </div>
-                );
-              })}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (!customPath.trim()) {
+                        toast.error("Please enter a route path (e.g. /pricing)");
+                        return;
+                      }
+                      const p = customPath.trim().startsWith("/") ? customPath.trim() : `/${customPath.trim()}`;
+                      setConfig({
+                        ...config,
+                        pageOverrides: {
+                          ...config.pageOverrides,
+                          [p]: { title: customTitle.trim(), description: customDesc.trim() }
+                        }
+                      });
+                      setCustomPath("");
+                      setCustomTitle("");
+                      setCustomDesc("");
+                      toast.success(`Override added for ${p}! Click 'Save & Publish SEO' to make it live.`);
+                    }}
+                    className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold transition-all cursor-pointer"
+                  >
+                    <Plus className="h-3.5 w-3.5" />
+                    <span>Add Custom Route Override</span>
+                  </button>
+                </div>
+              </div>
             </div>
           )}
         </div>

@@ -231,7 +231,7 @@ export default function DailyQuizClient() {
 
   // ── Start a Quiz ──
   async function handleStartQuiz(quizId: string) {
-    if (promptGuestLoginGate("Your 15-minute free guest preview has completed. Please login or create a free account to attempt this Daily Free Quiz.")) {
+    if (promptGuestLoginGate("Sign in or create a free account to attempt daily free quizzes, track leaderboards, and save solutions.")) {
       return;
     }
     try {

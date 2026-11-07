@@ -1,0 +1,10 @@
+{
+  "is_enabled": true,
+  "session_limit_minutes": 15,
+  "block_test_attempts": true,
+  "show_modal_popup": true,
+  "modal_title": "Save Your Test Progress & Scorecards",
+  "modal_message": "Sign in or create a free account to track your test performance, review question solutions, and save bookmarks.",
+  "exempt_logged_in": true,
+  "updated_at": "2026-11-07T09:27:00.000Z"
+}

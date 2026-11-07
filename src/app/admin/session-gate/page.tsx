@@ -34,9 +34,9 @@ export default function AdminSessionGatePage() {
   const [sessionLimitMinutes, setSessionLimitMinutes] = useState(15);
   const [blockTestAttempts, setBlockTestAttempts] = useState(true);
   const [showModalPopup, setShowModalPopup] = useState(true);
-  const [modalTitle, setModalTitle] = useState("⏰ Guest Session Limit Reached (15 Mins)");
+  const [modalTitle, setModalTitle] = useState("Save Your Test Progress & Scorecards");
   const [modalMessage, setModalMessage] = useState(
-    "Aapka 15-minute free guest preview complete ho chuka hai. Agla test attempt karne aur apne scorecards & bookmarks save karne ke liye kripya Free Login ya Sign Up karein."
+    "Sign in or create a free account to track your test performance, review question solutions, and save bookmarks."
   );
   const [exemptLoggedIn, setExemptLoggedIn] = useState(true);
   const [updatedAt, setUpdatedAt] = useState<string | null>(null);
@@ -112,9 +112,9 @@ export default function AdminSessionGatePage() {
       setSessionLimitMinutes(15);
       setBlockTestAttempts(true);
       setShowModalPopup(true);
-      setModalTitle("⏰ Guest Session Limit Reached (15 Mins)");
+      setModalTitle("Save Your Test Progress & Scorecards");
       setModalMessage(
-        "Aapka 15-minute free guest preview complete ho chuka hai. Agla test attempt karne aur apne scorecards & bookmarks save karne ke liye kripya Free Login ya Sign Up karein."
+        "Sign in or create a free account to track your test performance, review question solutions, and save bookmarks."
       );
       setExemptLoggedIn(true);
       toast.success("Reset to 15-minute defaults. Click 'Save' to apply.");
@@ -381,44 +381,49 @@ export default function AdminSessionGatePage() {
 
             {/* Preview Box Container */}
             <div className="p-4 sm:p-6 rounded-2xl bg-slate-950/90 border border-slate-700/60 flex items-center justify-center">
-              <div className="w-full max-w-md bg-white rounded-2xl p-5 shadow-2xl text-slate-900 space-y-4 border border-slate-200">
+              <div className="w-full max-w-md bg-white rounded-3xl p-6 shadow-2xl text-slate-800 space-y-4 border border-slate-200">
                 <div className="flex items-center justify-between">
-                  <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-[11px] font-bold">
-                    <Clock className="w-3 h-3 text-amber-600 animate-pulse" />
-                    <span>{sessionLimitMinutes}-Minute Free Guest Session Complete</span>
-                  </span>
-                  <X className="w-4 h-4 text-slate-400" />
+                  <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 border border-blue-100 shadow-2xs">
+                    <Sparkles className="w-5 h-5" />
+                  </div>
+                  <button type="button" className="p-1.5 rounded-lg text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition-colors">
+                    <X className="w-5 h-5" />
+                  </button>
                 </div>
 
                 <div>
-                  <h4 className="text-base font-extrabold text-slate-950">{modalTitle}</h4>
+                  <h4 className="text-lg font-black text-slate-900 tracking-tight leading-snug">{modalTitle}</h4>
                   <p className="text-xs text-slate-600 mt-1 leading-relaxed">{modalMessage}</p>
                 </div>
 
-                <div className="bg-slate-50 rounded-xl p-3 border border-slate-200 text-xs space-y-1.5 font-semibold text-slate-700">
-                  <div className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                    <span>Save your speed drills & test scorecards to Dashboard</span>
+                <div className="grid grid-cols-3 gap-2 py-1 text-center">
+                  <div className="rounded-xl bg-slate-50 border border-slate-100 p-2">
+                    <span className="text-[11px] font-bold text-slate-800 block">Solutions</span>
+                    <span className="text-[9px] text-slate-400">Step-by-step</span>
                   </div>
-                  <div className="flex items-center gap-1.5">
-                    <Bookmark className="w-3.5 h-3.5 text-amber-500 shrink-0" />
-                    <span>Collect tricky questions & formulas for last-minute revision</span>
+                  <div className="rounded-xl bg-slate-50 border border-slate-100 p-2">
+                    <span className="text-[11px] font-bold text-slate-800 block">Scorecards</span>
+                    <span className="text-[9px] text-slate-400">Speed & accuracy</span>
                   </div>
-                  <div className="flex items-center gap-1.5">
-                    <Trophy className="w-3.5 h-3.5 text-blue-600 shrink-0" />
-                    <span>Unlimited access to Speed Test Drills & Daily Free Quizzes</span>
+                  <div className="rounded-xl bg-slate-50 border border-slate-100 p-2">
+                    <span className="text-[11px] font-bold text-slate-800 block">Bookmarks</span>
+                    <span className="text-[9px] text-slate-400">Saved to profile</span>
                   </div>
                 </div>
 
-                <div className="flex gap-2 pt-1">
-                  <div className="flex-1 py-2 rounded-xl bg-blue-600 text-white font-bold text-xs text-center flex items-center justify-center gap-1">
+                <div className="flex flex-col sm:flex-row gap-2 pt-1">
+                  <div className="flex-1 py-2.5 rounded-xl bg-blue-600 text-white font-bold text-xs text-center flex items-center justify-center gap-1.5 shadow-sm">
                     <LogIn className="w-3.5 h-3.5" />
-                    <span>Login to Account</span>
+                    <span>Sign In</span>
                   </div>
-                  <div className="flex-1 py-2 rounded-xl bg-emerald-600 text-white font-bold text-xs text-center flex items-center justify-center gap-1">
-                    <UserPlus className="w-3.5 h-3.5" />
+                  <div className="flex-1 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 font-bold text-xs text-center flex items-center justify-center gap-1.5 shadow-2xs">
+                    <UserPlus className="w-3.5 h-3.5 text-blue-600" />
                     <span>Create Free Account</span>
                   </div>
+                </div>
+
+                <div className="text-center pt-1">
+                  <span className="text-[11px] font-semibold text-slate-400">Continue as Guest for now</span>
                 </div>
               </div>
             </div>

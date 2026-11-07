@@ -674,7 +674,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
       return;
     }
 
-    if (promptGuestLoginGate("Your 15-minute free guest preview has completed. Please login or create a free account to attempt this CBT shift paper.")) {
+    if (promptGuestLoginGate("Sign in or create a free account to attempt full CBT shift papers, save scorecards, and review solutions.")) {
       return;
     }
 

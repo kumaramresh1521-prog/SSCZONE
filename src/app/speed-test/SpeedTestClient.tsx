@@ -419,7 +419,7 @@ export default function SpeedTestClient() {
 
   // Start Speed Test Drill
   const handleStartTest = async () => {
-    if (promptGuestLoginGate("Your 15-minute free guest preview has completed. Please login or create a free account to attempt this Speed Test Drill.")) {
+    if (promptGuestLoginGate("Sign in or create a free account to record your speed drill scorecards, review tricky questions, and track accuracy.")) {
       return;
     }
     setLoadingQuestions(true);

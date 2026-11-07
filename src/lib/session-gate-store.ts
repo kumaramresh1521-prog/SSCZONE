@@ -17,9 +17,9 @@ const DEFAULT_GATE_CONFIG: SessionGateConfig = {
   session_limit_minutes: 15,
   block_test_attempts: true,
   show_modal_popup: true,
-  modal_title: "⏰ Guest Session Limit Reached (15 Mins)",
+  modal_title: "Save Your Test Progress & Scorecards",
   modal_message:
-    "Aapka 15-minute free guest preview complete ho chuka hai. Agla test attempt karne aur apne scorecards & bookmarks save karne ke liye kripya Free Login ya Sign Up karein.",
+    "Sign in or create a free account to track your test performance, review question solutions, and save bookmarks.",
   exempt_logged_in: true,
   updated_at: new Date().toISOString(),
 };

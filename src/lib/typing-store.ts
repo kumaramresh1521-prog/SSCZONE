@@ -1,0 +1,202 @@
+export interface TypingPassage {
+  id: string;
+  examType: "cgl" | "chsl-en" | "chsl-hi" | "deo" | "custom";
+  examName: string;
+  title: string;
+  content: string;
+  timeMinutes: number;
+  targetKeyDepressions: number;
+  targetWPM: number;
+  wordCount: number;
+  difficulty?: "Easy" | "Medium" | "Hard";
+  createdAt?: string;
+  isDefault?: boolean;
+}
+
+export const DEFAULT_TYPING_PASSAGES: TypingPassage[] = [
+  {
+    id: "cgl-1",
+    examType: "cgl",
+    examName: "SSC CGL DEST",
+    title: "Passage 1: Administrative Efficiency & Electronic Office Modernization",
+    timeMinutes: 15,
+    targetKeyDepressions: 2000,
+    targetWPM: 27,
+    wordCount: 136,
+    difficulty: "Medium",
+    isDefault: true,
+    content:
+      "India is a democratic republic with a federal system of governance comprising twenty-eight states and eight union territories. Administrative efficiency in government departments depends heavily upon clear communication, structured record keeping, and timely disposal of official business. In recent years, public administration has undergone significant modernization through the adoption of electronic office systems and digital record management platforms. Employees working in government offices are expected to maintain high accuracy, typing speed, and strict confidentiality while processing official files and correspondence. Effective coordination between various ministries ensures that policy decisions are implemented seamlessly across state and district administration levels. Public servants play a pivotal role in ensuring that public welfare schemes reach the intended beneficiaries without administrative delays or procedural bottlenecks. The continuous training of administrative staff enhances organizational productivity and strengthens democratic institutions across the nation.",
+  },
+  {
+    id: "cgl-2",
+    examType: "cgl",
+    examName: "SSC CGL DEST",
+    title: "Passage 2: Financial Governance & Direct Tax Modernization",
+    timeMinutes: 15,
+    targetKeyDepressions: 2010,
+    targetWPM: 27,
+    wordCount: 136,
+    difficulty: "Medium",
+    isDefault: true,
+    content:
+      "Financial integrity and transparent tax collection systems are vital pillars of national economic development. The Revenue Department has implemented comprehensive digital reforms to streamline income tax filing and electronic audit procedures. Taxpayers are provided with user-friendly online portals that facilitate seamless submission of annual tax returns and instant verification of refunds. Tax administration officials utilize advanced data analytics tools to detect tax evasion, prevent financial fraud, and ensure compliance across all corporate and commercial sectors. Promoting voluntary tax compliance through public education drives enhances national revenue collection while reducing litigation costs. Systematic recording of financial transactions and timely resolution of taxpayer grievances strengthen public trust in government financial institutions. Continuous technological upgrading across revenue offices ensures efficient tax governance and accelerates economic growth across all sectors of the economy.",
+  },
+  {
+    id: "cgl-3",
+    examType: "cgl",
+    examName: "SSC CGL DEST",
+    title: "Passage 3: Judicial Reforms & Digital Court Management Systems",
+    timeMinutes: 15,
+    targetKeyDepressions: 2005,
+    targetWPM: 27,
+    wordCount: 136,
+    difficulty: "Medium",
+    isDefault: true,
+    content:
+      "The judicial system forms an indispensable cornerstone of constitutional democracy and the rule of law in India. Modernizing court infrastructure through electronic filing platforms and virtual court hearing facilities has improved access to justice for citizens. E-Courts projects have digitized millions of court records, enabling litigants and advocates to track case status and court orders in real time. Fast-track courts and alternative dispute resolution mechanisms help reduce case pendency in district and high courts across the country. Efficient case management by judicial officers ensures timely delivery of judgments and upholds the constitutional rights of every citizen. Transparent judicial proceedings and accessible legal aid programs empower vulnerable sections of society while reinforcing faith in the legal framework. Integrating artificial intelligence tools in legal research further accelerates case disposal and modernizes court operations nationwide.",
+  },
+  {
+    id: "chsl-en-1",
+    examType: "chsl-en",
+    examName: "SSC CHSL English",
+    title: "Passage 1: Forestry Conservation & Biodiversity Protection",
+    timeMinutes: 10,
+    targetKeyDepressions: 1750,
+    targetWPM: 35,
+    wordCount: 136,
+    difficulty: "Medium",
+    isDefault: true,
+    content:
+      "Environmental protection and sustainable forestry management are crucial for maintaining ecological balance and biodiversity. Forests act as natural carbon sinks, absorbing greenhouse gas emissions and regulating regional climate patterns. Deforestation caused by urban expansion, industrial development, and unsustainable agricultural practices poses a severe threat to natural habitats and wildlife species. Government agencies and non-governmental organizations have launched extensive afforestation drives to restore degraded forest lands. Community participation in forest protection has proven highly effective in preventing illegal logging and soil erosion. Preserving water resources and protecting wildlife corridors are essential components of national environmental policy. Sustainable management practices ensure that economic progress does not compromise environmental health for future generations. Scientific research and environmental awareness among citizens play a very vital role in conserving natural ecosystems and safeguarding valuable natural resources for upcoming generations as well.",
+  },
+  {
+    id: "chsl-en-2",
+    examType: "chsl-en",
+    examName: "SSC CHSL English",
+    title: "Passage 2: Digital Banking & Unified Payments Ecosystem",
+    timeMinutes: 10,
+    targetKeyDepressions: 1755,
+    targetWPM: 35,
+    wordCount: 136,
+    difficulty: "Medium",
+    isDefault: true,
+    content:
+      "The expansion of digital banking services has revolutionized daily financial transactions and commercial operations across urban and rural India. Unified Payments Interface and mobile banking applications allow instant money transfers between bank accounts with utmost security. Financial inclusion drives have brought millions of unbanked citizens into the formal banking network, enabling direct benefit transfers for government subsidy schemes. Electronic payment gateways have empowered small retail business merchants to accept digital payments seamlessly. Cybersecurity measures and customer awareness campaigns are continuously updated to safeguard digital transactions against online fraud and phishing attacks. Modern banking infrastructure supports rapid economic growth by facilitating smooth fund flow across national commercial markets. Digital payment technology continues to transform everyday commerce while building a transparent and cashless national financial economy for all citizens.",
+  },
+  {
+    id: "chsl-hi-1",
+    examType: "chsl-hi",
+    examName: "SSC CHSL Hindi",
+    title: "Passage 1: National Transport & Infrastructure Growth",
+    timeMinutes: 10,
+    targetKeyDepressions: 1500,
+    targetWPM: 30,
+    wordCount: 136,
+    difficulty: "Medium",
+    isDefault: true,
+    content:
+      "The expansion of modern transport infrastructure is essential for economic growth and regional connectivity. Railway networks connect remote agricultural belts with major urban markets, enabling efficient movement of passengers and essential commodities. Freight corridors and modern high-speed expressways have reduced transit time and transportation costs for industrial goods. Continuous investments in track modernization, signal automation, and passenger safety remain top priorities for transport authorities. Modern seaport terminals and expanded airport facilities have boosted international trade volume and regional tourism. Efficient logistical networks encourage domestic manufacturing and attract foreign direct investment across emerging industrial corridors. Digital payment integration and automated toll collection systems have further streamlined cargo movement across state borders. Public and private partnerships in infrastructure development accelerate national economic integration and foster balanced regional development across all commercial and industrial sectors of our country today.",
+  },
+  {
+    id: "deo-1",
+    examType: "deo",
+    examName: "SSC DEO High Speed",
+    title: "Passage 1: Industrial Growth & Export Trade Competitiveness",
+    timeMinutes: 15,
+    targetKeyDepressions: 3700,
+    targetWPM: 50,
+    wordCount: 250,
+    difficulty: "Hard",
+    isDefault: true,
+    content:
+      "Industrial growth and export competitiveness are essential drivers of sustainable economic progress in developing nations. Expanding manufacturing clusters and establishing Special Economic Zones encourage domestic production while attracting substantial foreign direct investment. Government policies focusing on ease of doing business, single-window clearances, and infrastructure development have significantly reduced operational costs for industrial enterprises. Quality certification standards and technological innovation enable domestic products to compete effectively in international trade markets. Specialized export promotion councils provide market intelligence, trade fair participation opportunities, and regulatory guidance to emerging exporters across diverse manufacturing sectors. Efficient logistics networks, modernized port terminals, and dedicated freight corridors streamline the transit of export cargo to international destinations. Continuous skill training programs for industrial workers enhance productivity and technological capabilities across key manufacturing sectors. Strengthening research and development infrastructure fosters innovation, product diversification, and high-value export growth. Transparent trade governance, robust intellectual property rights enforcement, and stable export credit facilities further boost investor confidence and national economic resilience.",
+  },
+  {
+    id: "deo-2",
+    examType: "deo",
+    examName: "SSC DEO High Speed",
+    title: "Passage 2: Telecommunications & Digital Governance Modernization",
+    timeMinutes: 15,
+    targetKeyDepressions: 3800,
+    targetWPM: 50,
+    wordCount: 255,
+    difficulty: "Hard",
+    isDefault: true,
+    content:
+      "The rapid evolution of telecommunications technology has laid the bedrock for a robust digital economy. High-speed broadband connectivity spanning urban hubs and remote rural clusters has revolutionized governance, education, and healthcare delivery. Digital governance platforms enable citizens to access public services, submit documentation, and receive official certificates without physically visiting administrative offices. Optical fiber network expansion under national broadband initiatives has bridged the digital divide, facilitating equitable opportunities for regional enterprises. Secure cloud data repositories and strict cybersecurity compliance standards protect confidential state records and citizen privacy against unauthorized breaches. Automation of administrative procedures and real-time grievance tracking mechanisms increase accountability and institutional transparency. Seamless telecommunication infrastructure accelerates economic transactions, empowers grassroots entrepreneurs, and drives inclusive sustainable growth nationwide.",
+  },
+];
+
+const STORAGE_KEY = "ssczone_typing_passages";
+
+export function getStoredTypingPassages(): TypingPassage[] {
+  if (typeof window === "undefined") {
+    return DEFAULT_TYPING_PASSAGES;
+  }
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(DEFAULT_TYPING_PASSAGES));
+      return DEFAULT_TYPING_PASSAGES;
+    }
+    const parsed = JSON.parse(raw);
+    if (Array.isArray(parsed) && parsed.length > 0) {
+      return parsed;
+    }
+    return DEFAULT_TYPING_PASSAGES;
+  } catch (err) {
+    console.error("Error reading stored typing passages:", err);
+    return DEFAULT_TYPING_PASSAGES;
+  }
+}
+
+export function saveTypingPassage(passage: Omit<TypingPassage, "id"> & { id?: string }): TypingPassage {
+  const current = getStoredTypingPassages();
+  const id = passage.id || `custom-${Date.now()}`;
+  const wordCount = passage.content.trim().split(/\s+/).filter(Boolean).length;
+  const targetKeyDepressions = passage.targetKeyDepressions || wordCount * 5;
+
+  const newPassage: TypingPassage = {
+    ...passage,
+    id,
+    wordCount,
+    targetKeyDepressions,
+    createdAt: passage.createdAt || new Date().toISOString(),
+    isDefault: false,
+  };
+
+  const existingIndex = current.findIndex((p) => p.id === id);
+  let updated: TypingPassage[];
+  if (existingIndex >= 0) {
+    updated = [...current];
+    updated[existingIndex] = newPassage;
+  } else {
+    updated = [newPassage, ...current];
+  }
+
+  if (typeof window !== "undefined") {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
+    window.dispatchEvent(new Event("ssczone_typing_updated"));
+  }
+
+  return newPassage;
+}
+
+export function deleteTypingPassage(id: string): boolean {
+  const current = getStoredTypingPassages();
+  const filtered = current.filter((p) => p.id !== id);
+  if (typeof window !== "undefined") {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(filtered));
+    window.dispatchEvent(new Event("ssczone_typing_updated"));
+  }
+  return true;
+}
+
+export function resetTypingPassagesToDefault(): TypingPassage[] {
+  if (typeof window !== "undefined") {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(DEFAULT_TYPING_PASSAGES));
+    window.dispatchEvent(new Event("ssczone_typing_updated"));
+  }
+  return DEFAULT_TYPING_PASSAGES;
+}

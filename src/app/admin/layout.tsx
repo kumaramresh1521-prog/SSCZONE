@@ -30,6 +30,7 @@ import {
   Compass,
   Zap,
   ShieldAlert,
+  Keyboard,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { supabase } from "@/lib/supabase";
@@ -54,6 +55,7 @@ const menuItems: MenuItem[] = [
   { label: "Subjects", href: "/admin/subjects", icon: Layers3 },
   { label: "Topics", href: "/admin/topics", icon: FileText },
   { label: "Subject Notes", href: "/admin/notes", icon: GraduationCap },
+  { label: "Typing Tests", href: "/admin/typing", icon: Keyboard },
   { label: "Questions", href: "/admin/questions", icon: CircleHelp },
   { label: "Daily Free Quiz", href: "/admin/daily-quiz", icon: Zap },
   { label: "Flagged Reports", href: "/admin/reports", icon: Flag },

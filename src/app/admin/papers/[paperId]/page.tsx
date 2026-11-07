@@ -508,7 +508,7 @@ export default function PaperQuestionsPage() {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Failed to delete question");
       toast.success("Question deleted!");
-      loadQuestions();
+      setQuestions((prev) => prev.filter((q) => q.id !== id));
     } catch (err: any) {
       toast.error(err.message || "Failed to delete question");
     }
@@ -698,8 +698,18 @@ export default function PaperQuestionsPage() {
         return next;
       });
 
+      // Update in-place in local state immediately without wiping or reloading the screen!
+      const updatedQ = {
+        ...q,
+        question_text: newQText,
+        option_a: newOptions.option_a,
+        option_b: newOptions.option_b,
+        option_c: newOptions.option_c,
+        option_d: newOptions.option_d,
+      };
+      setQuestions((prev) => prev.map((item) => (item.id === q.id ? updatedQ : item)));
+
       toast.success(`Q.${q.question_number} translated & updated!`, { id: toastId });
-      loadQuestions();
     } catch (err: any) {
       toast.error(err.message || "Failed to translate question", { id: toastId });
     } finally {
@@ -787,6 +797,22 @@ export default function PaperQuestionsPage() {
           });
 
           newlyLocked.add(q.id);
+
+          // Update local state smoothly in real-time
+          setQuestions((prev) =>
+            prev.map((item) =>
+              item.id === q.id
+                ? {
+                    ...item,
+                    question_text: newQText,
+                    option_a: newOptions.option_a,
+                    option_b: newOptions.option_b,
+                    option_c: newOptions.option_c,
+                    option_d: newOptions.option_d,
+                  }
+                : item
+            )
+          );
         }
       } catch (e) {
         console.warn(`Translation skipped for Q.${q.question_number}:`, e);
@@ -805,7 +831,6 @@ export default function PaperQuestionsPage() {
 
     toast.success(`Successfully translated ${done} questions into clean Hindi!`, { id: toastId });
     setBatchTranslating(false);
-    loadQuestions();
   }
 
   // ── Download Questions as Formatted Text (.txt) ──
@@ -1630,7 +1655,7 @@ export default function PaperQuestionsPage() {
             </div>
           )}
 
-          {loading ? (
+          {loading && questions.length === 0 ? (
             <div className="p-12 text-center text-slate-500 font-medium">Loading paper questions...</div>
           ) : filteredQuestions.length === 0 ? (
             <div className="rounded-3xl border border-slate-200 bg-white p-12 text-center text-slate-500 shadow-xs" style={{ color: "#0f172a" }}>

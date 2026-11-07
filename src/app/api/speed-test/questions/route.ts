@@ -106,89 +106,205 @@ export async function GET(req: NextRequest) {
 
     const allQuestions: NormalizedSpeedQuestion[] = [];
 
-    if (mode === "topic" && topicId) {
-      // 1. TOPIC MODE: Draw primarily from question bank by topic_id
-      const { data: qbRows, error: qbError } = await supabaseAdmin
-        .from("questions")
-        .select("id, question_text, question_text_hi, option_a, option_b, option_c, option_d, option_a_hi, option_b_hi, option_c_hi, option_d_hi, correct_answer, explanation, explanation_hi, image_url, option_a_image_url, option_b_image_url, option_c_image_url, option_d_image_url, topics(id, title, subject_id, subjects(title))")
-        .eq("topic_id", topicId)
-        .eq("is_active", true)
-        .limit(100);
+    if (mode === "topic") {
+      // 1. CHAPTER / TOPIC MODE: Resilient multi-tier question selection
+      let topicTitle = (searchParams.get("topicTitle") || "").trim();
+      let resolvedSubjectKey: "quant" | "reasoning" | "english" | "ga" =
+        subjectParam !== "all" ? subjectParam : "quant";
 
-      if (qbError) console.error("Error fetching topic questions:", qbError);
+      // A. Lookup topic details from topics table
+      if (topicId) {
+        try {
+          const { data: topicRec } = await supabaseAdmin
+            .from("topics")
+            .select("id, title, subject_id, subjects(id, title)")
+            .eq("id", topicId)
+            .single();
 
-      if (qbRows && qbRows.length > 0) {
-        qbRows.forEach((q: any) => {
-          const { topicTitle, subjectTitle } = getTopicSubject(q);
-          const lowerSub = subjectTitle.toLowerCase();
-          let sKey: "quant" | "reasoning" | "english" | "ga" = "ga";
-          if (lowerSub.includes("math")) sKey = "quant";
-          else if (lowerSub.includes("reason")) sKey = "reasoning";
-          else if (lowerSub.includes("english")) sKey = "english";
-
-          allQuestions.push({
-            id: `bank_${q.id}`,
-            originalId: q.id,
-            source: "bank",
-            subject: SUBJECT_NAMES[sKey],
-            subjectKey: sKey,
-            topic: topicTitle || "Topic Drill",
-            question_text: q.question_text || "",
-            question_text_hi: q.question_text_hi || null,
-            option_a: q.option_a || "",
-            option_b: q.option_b || "",
-            option_c: q.option_c || "",
-            option_d: q.option_d || "",
-            option_a_hi: q.option_a_hi || null,
-            option_b_hi: q.option_b_hi || null,
-            option_c_hi: q.option_c_hi || null,
-            option_d_hi: q.option_d_hi || null,
-            correct_answer: normalizeAnswer(q.correct_answer),
-            explanation: q.explanation || null,
-            explanation_hi: q.explanation_hi || null,
-            image_url: q.image_url || null,
-            option_a_image_url: q.option_a_image_url || null,
-            option_b_image_url: q.option_b_image_url || null,
-            option_c_image_url: q.option_c_image_url || null,
-            option_d_image_url: q.option_d_image_url || null,
-          });
-        });
+          if (topicRec) {
+            if (!topicTitle) topicTitle = topicRec.title?.trim() || "";
+            const sObj: any = Array.isArray(topicRec.subjects) ? topicRec.subjects[0] : topicRec.subjects;
+            const sTitle = (sObj?.title || "").toLowerCase();
+            if (sTitle.includes("math")) resolvedSubjectKey = "quant";
+            else if (sTitle.includes("reason")) resolvedSubjectKey = "reasoning";
+            else if (sTitle.includes("english")) resolvedSubjectKey = "english";
+            else if (sTitle.includes("general") || sTitle.includes("knowledge")) resolvedSubjectKey = "ga";
+            else if (subjectParam !== "all") resolvedSubjectKey = subjectParam;
+          }
+        } catch (tErr) {
+          console.warn("Topic lookup warning:", tErr);
+        }
       }
 
-      // If fewer questions than requested, backfill with similar questions from topic's subject
-      if (allQuestions.length < requestedCount && qbRows && qbRows[0]) {
-        const firstTopic: any = Array.isArray((qbRows[0] as any).topics)
-          ? (qbRows[0] as any).topics[0]
-          : (qbRows[0] as any).topics;
-        const sId = firstTopic?.subject_id;
-        if (sId) {
-          const { data: backfill } = await supabaseAdmin
-            .from("questions")
-            .select("id, question_text, question_text_hi, option_a, option_b, option_c, option_d, correct_answer, explanation, topics!inner(id, title, subject_id, subjects(title))")
-            .eq("topics.subject_id", sId)
-            .eq("is_active", true)
-            .neq("topic_id", topicId)
-            .limit(requestedCount - allQuestions.length + 10);
+      // B. Tier 1: Direct matches from Question Bank by topic_id
+      if (topicId) {
+        const { data: qbRows, error: qbError } = await supabaseAdmin
+          .from("questions")
+          .select("id, question_text, question_text_hi, option_a, option_b, option_c, option_d, option_a_hi, option_b_hi, option_c_hi, option_d_hi, correct_answer, explanation, explanation_hi, image_url, option_a_image_url, option_b_image_url, option_c_image_url, option_d_image_url")
+          .eq("topic_id", topicId)
+          .eq("is_active", true)
+          .limit(requestedCount * 2);
 
-          (backfill || []).forEach((q: any) => {
+        if (qbError) console.error("Error fetching topic questions:", qbError);
+
+        if (qbRows && qbRows.length > 0) {
+          qbRows.forEach((q: any) => {
             allQuestions.push({
               id: `bank_${q.id}`,
               originalId: q.id,
               source: "bank",
-              subject: q.topics?.subjects?.title || "Subject Drill",
-              subjectKey: "quant",
-              topic: q.topics?.title,
+              subject: SUBJECT_NAMES[resolvedSubjectKey],
+              subjectKey: resolvedSubjectKey,
+              topic: topicTitle || "Chapter Drill",
               question_text: q.question_text || "",
               question_text_hi: q.question_text_hi || null,
               option_a: q.option_a || "",
               option_b: q.option_b || "",
               option_c: q.option_c || "",
               option_d: q.option_d || "",
+              option_a_hi: q.option_a_hi || null,
+              option_b_hi: q.option_b_hi || null,
+              option_c_hi: q.option_c_hi || null,
+              option_d_hi: q.option_d_hi || null,
               correct_answer: normalizeAnswer(q.correct_answer),
               explanation: q.explanation || null,
+              explanation_hi: q.explanation_hi || null,
+              image_url: q.image_url || null,
+              option_a_image_url: q.option_a_image_url || null,
+              option_b_image_url: q.option_b_image_url || null,
+              option_c_image_url: q.option_c_image_url || null,
+              option_d_image_url: q.option_d_image_url || null,
             });
           });
         }
+      }
+
+      // C. Tier 2: Keyword search across Official PYQs (50 Shift Papers) for this Topic
+      if (allQuestions.length < requestedCount && topicTitle) {
+        const pyqRange = PYQ_RANGES[resolvedSubjectKey] || PYQ_RANGES.quant;
+        const keywords = topicTitle
+          .replace(/[^a-zA-Z0-9s]/g, " ")
+          .split(/\s+/)
+          .filter(
+            (w) =>
+              w.length >= 4 &&
+              !["from", "that", "with", "into", "part", "test", "also", "each", "both", "some", "none"].includes(
+                w.toLowerCase()
+              )
+          );
+
+        for (const kw of keywords.slice(0, 3)) {
+          if (allQuestions.length >= requestedCount) break;
+          const { data: kwPyqs } = await supabaseAdmin
+            .from("paper_questions")
+            .select("id, paper_id, question_number, question_text, option_a, option_b, option_c, option_d, correct_answer, explanation")
+            .gte("question_number", pyqRange.min)
+            .lte("question_number", pyqRange.max)
+            .ilike("question_text", `%${kw}%`)
+            .limit(requestedCount - allQuestions.length + 5);
+
+          if (kwPyqs) {
+            kwPyqs.forEach((q: any) => {
+              const qId = `pyq_${q.id}`;
+              if (!allQuestions.some((item) => item.id === qId)) {
+                allQuestions.push({
+                  id: qId,
+                  originalId: q.id,
+                  source: "pyq",
+                  subject: SUBJECT_NAMES[resolvedSubjectKey],
+                  subjectKey: resolvedSubjectKey,
+                  topic: topicTitle ? `${topicTitle} (PYQ Shift #${q.paper_id})` : `Shift Paper #${q.paper_id}`,
+                  question_text: q.question_text || "",
+                  question_text_hi: null,
+                  option_a: q.option_a || "",
+                  option_b: q.option_b || "",
+                  option_c: q.option_c || "",
+                  option_d: q.option_d || "",
+                  correct_answer: normalizeAnswer(q.correct_answer),
+                  explanation: q.explanation || null,
+                  paper_id: q.paper_id,
+                  question_number: q.question_number,
+                });
+              }
+            });
+          }
+        }
+      }
+
+      // D. Tier 3: Seamless Backfill from Official Shift Papers for that Subject
+      if (allQuestions.length < requestedCount) {
+        const pyqRange = PYQ_RANGES[resolvedSubjectKey] || PYQ_RANGES.quant;
+        const needed = requestedCount - allQuestions.length + 10;
+        const randomOffset = Math.floor(Math.random() * 250);
+
+        const { data: pyqFill } = await supabaseAdmin
+          .from("paper_questions")
+          .select("id, paper_id, question_number, question_text, option_a, option_b, option_c, option_d, correct_answer, explanation")
+          .gte("question_number", pyqRange.min)
+          .lte("question_number", pyqRange.max)
+          .range(randomOffset, randomOffset + needed);
+
+        (pyqFill || []).forEach((q: any) => {
+          const qId = `pyq_${q.id}`;
+          if (!allQuestions.some((item) => item.id === qId)) {
+            allQuestions.push({
+              id: qId,
+              originalId: q.id,
+              source: "pyq",
+              subject: SUBJECT_NAMES[resolvedSubjectKey],
+              subjectKey: resolvedSubjectKey,
+              topic: topicTitle ? `${topicTitle} & ${SUBJECT_NAMES[resolvedSubjectKey]} Drill` : `PYQ Official Shift #${q.paper_id}`,
+              question_text: q.question_text || "",
+              question_text_hi: null,
+              option_a: q.option_a || "",
+              option_b: q.option_b || "",
+              option_c: q.option_c || "",
+              option_d: q.option_d || "",
+              correct_answer: normalizeAnswer(q.correct_answer),
+              explanation: q.explanation || null,
+              paper_id: q.paper_id,
+              question_number: q.question_number,
+            });
+          }
+        });
+      }
+
+      // E. Tier 4: For English, also draw from Question Bank if still needed
+      if (allQuestions.length < requestedCount && resolvedSubjectKey === "english") {
+        const randomQbOffset = Math.floor(Math.random() * 400);
+        const { data: qbFill } = await supabaseAdmin
+          .from("questions")
+          .select("id, question_text, question_text_hi, option_a, option_b, option_c, option_d, option_a_hi, option_b_hi, option_c_hi, option_d_hi, correct_answer, explanation, explanation_hi, image_url")
+          .eq("is_active", true)
+          .range(randomQbOffset, randomQbOffset + (requestedCount - allQuestions.length + 10));
+
+        (qbFill || []).forEach((q: any) => {
+          const qId = `bank_${q.id}`;
+          if (!allQuestions.some((item) => item.id === qId)) {
+            allQuestions.push({
+              id: qId,
+              originalId: q.id,
+              source: "bank",
+              subject: SUBJECT_NAMES.english,
+              subjectKey: "english",
+              topic: topicTitle || "English Practice",
+              question_text: q.question_text || "",
+              question_text_hi: q.question_text_hi || null,
+              option_a: q.option_a || "",
+              option_b: q.option_b || "",
+              option_c: q.option_c || "",
+              option_d: q.option_d || "",
+              option_a_hi: q.option_a_hi || null,
+              option_b_hi: q.option_b_hi || null,
+              option_c_hi: q.option_c_hi || null,
+              option_d_hi: q.option_d_hi || null,
+              correct_answer: normalizeAnswer(q.correct_answer),
+              explanation: q.explanation || null,
+              explanation_hi: q.explanation_hi || null,
+              image_url: q.image_url || null,
+            });
+          }
+        });
       }
     } else if (mode === "subject" && subjectParam !== "all") {
       // 2. SUBJECT MODE: 50% from PYQs in that subject range, 50% from Question Bank

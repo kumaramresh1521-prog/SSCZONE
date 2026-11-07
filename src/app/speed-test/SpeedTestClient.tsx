@@ -231,6 +231,17 @@ export default function SpeedTestClient() {
     return list;
   }, [topics, selectedSubject, topicSearchQuery]);
 
+  // Keep selectedTopicId synchronized with filtered topics
+  useEffect(() => {
+    if (filteredTopics.length > 0) {
+      if (!selectedTopicId || !filteredTopics.some((t) => t.id === selectedTopicId)) {
+        setSelectedTopicId(filteredTopics[0].id);
+      }
+    } else {
+      setSelectedTopicId(null);
+    }
+  }, [filteredTopics, selectedTopicId]);
+
   // Current question helper
   const currentQ = questions[currentIndex] || null;
 
@@ -421,8 +432,18 @@ export default function SpeedTestClient() {
         attemptId,
       });
 
-      if (selectedMode === "topic" && selectedTopicId) {
-        params.set("topicId", String(selectedTopicId));
+      if (selectedMode === "topic") {
+        const activeTopicId = selectedTopicId || (filteredTopics.length > 0 ? filteredTopics[0].id : null);
+        if (activeTopicId) {
+          params.set("topicId", String(activeTopicId));
+          const currentTopic = topics.find((t) => t.id === activeTopicId) || filteredTopics.find((t) => t.id === activeTopicId);
+          if (currentTopic) {
+            params.set("topicTitle", currentTopic.title);
+            if (currentTopic.subject_key) {
+              params.set("subject", currentTopic.subject_key);
+            }
+          }
+        }
       }
 
       const res = await fetch(`/api/speed-test/questions?${params.toString()}`);
@@ -446,7 +467,27 @@ export default function SpeedTestClient() {
         setPhase("testing");
         if (soundEnabled) playChime("finish");
       } else {
-        alert("Could not load questions for this selection. Please try another subject or mode.");
+        // Fallback: try loading general subject drill
+        const fallbackSub = selectedSubject === "all" ? "quant" : selectedSubject;
+        const fallbackRes = await fetch(`/api/speed-test/questions?mode=subject&subject=${fallbackSub}&count=${questionCount}`);
+        const fallbackData = await fallbackRes.json();
+        if (fallbackData.questions && fallbackData.questions.length > 0) {
+          setQuestions(fallbackData.questions);
+          setCurrentIndex(0);
+          setAnswers({});
+          setMarkedForReview(new Set());
+          setVisited(new Set([fallbackData.questions[0].id]));
+          setQuestionTimes({});
+          qStartTimeRef.current = Date.now();
+          const totalSec = timerType === "sectional" ? durationMinutes * 60 : fallbackData.questions.length * 20;
+          setTotalTimeLeft(totalSec);
+          setBlitzTimeLeft(20);
+          setTotalTimeSpent(0);
+          setPhase("testing");
+          if (soundEnabled) playChime("finish");
+        } else {
+          alert("Could not load questions for this selection. Please try another subject or mode.");
+        }
       }
     } catch (err) {
       console.error("Failed to start speed test:", err);
@@ -844,29 +885,51 @@ export default function SpeedTestClient() {
                 {/* If Topic-wise mode, show topic searchable dropdown */}
                 {selectedMode === "topic" && (
                   <div className="pt-3 border-t border-slate-200 space-y-2.5">
-                    <label className="text-xs font-bold text-slate-700 flex items-center justify-between">
-                      <span>Choose Chapter / Topic ({filteredTopics.length} available):</span>
-                      <span className="text-[11px] text-blue-600 font-medium">Instant Filter</span>
-                    </label>
+                    <div className="flex items-center justify-between">
+                      <label className="text-xs font-bold text-slate-700">
+                        Choose Chapter / Topic ({filteredTopics.length} available):
+                      </label>
+                      <span className="text-[11px] text-blue-600 font-semibold bg-blue-50 px-2 py-0.5 rounded border border-blue-200">
+                        ⚡ Instant Filter
+                      </span>
+                    </div>
 
-                    <input
-                      type="text"
-                      placeholder="Type chapter name to filter (e.g. Percentage, Profit, Analogy)..."
-                      value={topicSearchQuery}
-                      onChange={(e) => setTopicSearchQuery(e.target.value)}
-                      className="w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-all"
-                    />
+                    <div className="relative">
+                      <input
+                        type="text"
+                        placeholder="Type chapter name to filter (e.g. Percentage, Number System, Analogy, Polity)..."
+                        value={topicSearchQuery}
+                        onChange={(e) => setTopicSearchQuery(e.target.value)}
+                        className="w-full px-3.5 py-2.5 pr-8 bg-white border border-slate-200 rounded-xl text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-all"
+                      />
+                      {topicSearchQuery && (
+                        <button
+                          type="button"
+                          onClick={() => setTopicSearchQuery("")}
+                          className="absolute right-2.5 top-2.5 w-5 h-5 flex items-center justify-center text-xs text-slate-400 hover:text-slate-600 cursor-pointer"
+                          title="Clear search"
+                        >
+                          ✕
+                        </button>
+                      )}
+                    </div>
 
                     <select
                       value={selectedTopicId || ""}
                       onChange={(e) => setSelectedTopicId(Number(e.target.value))}
-                      className="w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs text-slate-800 focus:outline-none focus:border-blue-600"
+                      className="w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs text-slate-800 focus:outline-none focus:border-blue-600 font-medium"
                     >
-                      {filteredTopics.map((t) => (
-                        <option key={t.id} value={t.id}>
-                          {t.title} ({t.subject_key.toUpperCase()})
+                      {filteredTopics.length === 0 ? (
+                        <option value="" disabled>
+                          No chapters matching "{topicSearchQuery}"
                         </option>
-                      ))}
+                      ) : (
+                        filteredTopics.map((t) => (
+                          <option key={t.id} value={t.id}>
+                            {t.title} ({t.subject_key.toUpperCase()})
+                          </option>
+                        ))
+                      )}
                     </select>
                   </div>
                 )}

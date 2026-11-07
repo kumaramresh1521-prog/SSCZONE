@@ -29,8 +29,7 @@ import {
   Clock,
   MapPin,
   Check,
-  X,
-  Code2
+  X
 } from "lucide-react";
 
 interface QuestionResult {
@@ -94,11 +93,10 @@ interface ApiResponse {
 }
 
 export default function SSCPageRankPredictor() {
-  const [activeTab, setActiveTab] = useState<"url" | "html" | "manual">("url");
+  const [activeTab, setActiveTab] = useState<"url" | "manual">("url");
   const [examType, setExamType] = useState<"cgl-tier1" | "cgl-tier2" | "chsl-tier1" | "cpo-tier1">("cgl-tier1");
   const [category, setCategory] = useState<"UR" | "OBC" | "EWS" | "SC" | "ST">("UR");
   const [answerKeyUrl, setAnswerKeyUrl] = useState<string>("");
-  const [rawHtmlCode, setRawHtmlCode] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
   const [parsedData, setParsedData] = useState<ApiResponse | null>(null);
 
@@ -118,14 +116,10 @@ export default function SSCPageRankPredictor() {
   const [statusFilter, setStatusFilter] = useState<"all" | "correct" | "wrong" | "unattempted">("all");
   const [showQuestionsTable, setShowQuestionsTable] = useState<boolean>(false);
 
-  // Handle URL or HTML calculation from API
+  // Handle URL calculation from API
   async function handleCalculateScore() {
-    if (activeTab === "url" && !answerKeyUrl.trim()) {
+    if (!answerKeyUrl.trim()) {
       toast.error("Please paste your official Answer Key URL.");
-      return;
-    }
-    if (activeTab === "html" && !rawHtmlCode.trim()) {
-      toast.error("Please paste your Response Sheet HTML source code.");
       return;
     }
 
@@ -137,8 +131,7 @@ export default function SSCPageRankPredictor() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          url: activeTab === "url" ? answerKeyUrl.trim() : undefined,
-          rawHtml: activeTab === "html" ? rawHtmlCode.trim() : undefined,
+          url: answerKeyUrl.trim(),
           examType,
           category
         })
@@ -152,7 +145,7 @@ export default function SSCPageRankPredictor() {
           icon: "🎯"
         });
       } else {
-        toast.error(data.error || "Failed to parse answer key. Please check the URL or HTML code.");
+        toast.error(data.error || "Failed to parse answer key. Please check the URL.");
       }
     } catch (err: any) {
       toast.error("Error connecting to calculator server: " + err.message);
@@ -367,18 +360,6 @@ export default function SSCPageRankPredictor() {
             </button>
 
             <button
-              onClick={() => setActiveTab("html")}
-              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
-                activeTab === "html"
-                  ? "bg-blue-600 text-white shadow-sm"
-                  : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-              }`}
-            >
-              <Code2 className="w-4 h-4" />
-              <span>Option 2: Paste HTML Source Code</span>
-            </button>
-
-            <button
               onClick={() => setActiveTab("manual")}
               className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
                 activeTab === "manual"
@@ -387,7 +368,7 @@ export default function SSCPageRankPredictor() {
               }`}
             >
               <BarChart3 className="w-4 h-4" />
-              <span>Option 3: Manual Section Scores</span>
+              <span>Option 2: Manual Section Scores</span>
             </button>
           </div>
 
@@ -465,59 +446,7 @@ export default function SSCPageRankPredictor() {
             </div>
           )}
 
-          {/* Tab 2: HTML Source Code or File Input Form */}
-          {activeTab === "html" && (
-            <div className="space-y-4">
-              <div className="p-4 rounded-2xl bg-blue-50/50 border border-blue-200">
-                <label className="text-xs font-bold text-slate-800 block mb-2 flex items-center justify-between">
-                  <span>Option A: Upload Saved Response Sheet File (.html / .htm)</span>
-                  <span className="text-[11px] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">100% Offline Safe</span>
-                </label>
-                <input
-                  type="file"
-                  accept=".html,.htm"
-                  onChange={(e) => {
-                    const file = e.target.files?.[0];
-                    if (file) {
-                      const reader = new FileReader();
-                      reader.onload = (event) => {
-                        const content = (event.target?.result as string) || "";
-                        setRawHtmlCode(content);
-                        toast.success(`Loaded "${file.name}"! Now click Calculate Score.`);
-                      };
-                      reader.readAsText(file);
-                    }
-                  }}
-                  className="block w-full text-xs text-slate-600 file:mr-4 file:py-2.5 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-blue-600 file:text-white hover:file:bg-blue-700 cursor-pointer"
-                />
-                <p className="text-[11px] text-slate-500 mt-1.5">
-                  If the government link has expired, you can open your saved answer key HTML file here directly.
-                </p>
-              </div>
-
-              <div>
-                <label className="text-xs font-bold text-slate-700 block mb-1.5">
-                  Option B: Or Paste Full Response Sheet HTML Source Code (Ctrl+U &rarr; Ctrl+A &rarr; Ctrl+C):
-                </label>
-                <textarea
-                  rows={4}
-                  value={rawHtmlCode}
-                  onChange={(e) => setRawHtmlCode(e.target.value)}
-                  placeholder="Paste complete HTML code here (starting with <html> or <div id='updHindi'>...)"
-                  className="w-full bg-slate-50 border border-slate-300 text-slate-900 rounded-2xl p-3 text-xs font-mono focus:outline-none focus:border-blue-600"
-                />
-              </div>
-              <button
-                onClick={handleCalculateScore}
-                disabled={loading}
-                className="px-6 py-3.5 rounded-2xl bg-blue-600 hover:bg-blue-700 disabled:opacity-50 text-white font-black text-xs shadow-md transition-all cursor-pointer flex items-center justify-center gap-2"
-              >
-                {loading ? "Parsing HTML Source..." : "Parse HTML & Calculate Score"}
-              </button>
-            </div>
-          )}
-
-          {/* Tab 3: Manual Section Scores Form */}
+          {/* Tab 2: Manual Section Scores Form */}
           {activeTab === "manual" && (
             <div className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">

@@ -72,226 +72,195 @@ function normalizeForMatch(str) {
 }
 
 /**
- * Intelligent Math Topic Classifier
- * Maps question content to exact topic_id under Mathematics (Subject 1)
+ * High-Precision Math Topic Classifier
  */
-function classifyMathTopic(text, topicMap) {
+export function classifyMathTopic(text, topicMap) {
   const t = text.toLowerCase();
 
-  // 1. Height and Distance
-  if (
-    /angle of elevation|angle of depression|top of a cliff|tower|top of a tree|height of the cliff|उन्नयन कोण|अवनमन कोण|मीनार की ऊंचाई/i.test(t)
-  ) {
-    return topicMap["Height and Distance"] || 216;
+  // 1. Set Theory
+  if (/\bset\s+[ab]\b|finite subset|infinite subset|subsets of|universal set|null set|समुच्चय/i.test(t)) {
+    return topicMap["Set theory"] || 205;
   }
 
-  // 2. Trigonometry
-  if (
-    /\bsin\b|\bcos\b|\btan\b|\bcot\b|\bsec\b|\bcosec\b|sin\s*[a-zθ]|cos\s*[a-zθ]|tan\s*[a-zθ]|sin\^2|cos\^2|tan\^2|त्रिकोणमिति/i.test(t)
-  ) {
-    return topicMap["Trigonometry"] || 215;
-  }
-
-  // 3. Coordinate Geometry
-  if (
-    /coordinate|x-axis|y-axis|slope of the line|collinear|quadrant|distance between.*points|ढलान|निर्देशांक/i.test(t)
-  ) {
-    return topicMap["Coordinate Geometry"] || 214;
-  }
-
-  // 4. Circle
-  if (
-    /concentric circle|chord of a circle|tangent to a circle|radius of a circle|diameter of a circle|arc of a circle|secant|वृत्त|जीवा|स्पर्श रेखा|त्रिज्या/i.test(t)
-  ) {
-    return topicMap["Circle"] || 211;
-  }
-
-  // 5. Triangles
-  if (
-    /equilateral triangle|isosceles triangle|right-angled triangle|hypotenuse|orthocenter|centroid|incenter|circumcenter|in triangle abc|in △abc|median ad|congruent|similar triangle|समबाहु त्रिभुज|समद्विबाहु त्रिभुज|समकोण त्रिभुज|केन्द्रक|त्रिभुज/i.test(t)
-  ) {
-    return topicMap["triangles"] || 209;
-  }
-
-  // 6. Quadrilateral and polygon
-  if (
-    /quadrilateral|parallelogram|rhombus|trapezium|trapezoid|polygon|regular hexagon|pentagon|चतुर्भुज|समांतर चतुर्भुज|समचतुर्भुज|समलंब|बहुभुज/i.test(t)
-  ) {
-    return topicMap["Quadrilateral and polygon"] || 210;
-  }
-
-  // 7. Lines and angles
-  if (
-    /parallel lines|transversal|supplementary angle|complementary angle|vertically opposite angle|समानांतर रेखाएं|पूरक कोण|संपूरक कोण/i.test(t)
-  ) {
-    return topicMap["Lines and angles"] || 208;
-  }
-
-  // 8. Surface Area and Volume (3D Mensuration)
-  if (
-    /cylinder|cone|sphere|hemisphere|cuboid|cube\b|prism|pyramid|curved surface area|total surface area|volume of|melted and recast|बेलन|शंकु|गोला|अर्धगोला|घनाभ|आयतन|पृष्ठीय क्षेत्रफल/i.test(t)
-  ) {
-    return topicMap["Surface Area and Volume"] || 213;
-  }
-
-  // 9. Area and perimeter (2D Mensuration)
-  if (
-    /perimeter of|circumference of|area of the rectangular|area of the square|area of a circle|cost of fencing|cost of paving|परिमाप|परिधि|क्षेत्रफल/i.test(t)
-  ) {
-    return topicMap["Area and perimeter"] || 212;
-  }
-
-  // 10. Compound Interest
-  if (
-    /compound interest|compounded annually|compounded half-yearly|compounded quarterly|चक्रवृद्धि ब्याज/i.test(t)
-  ) {
-    return topicMap["Compound Interest"] || 195;
-  }
-
-  // 11. Simple Interest
-  if (
-    /simple interest|rate of simple interest|sum doubles itself in|sum becomes \d+ times at simple|साधारण ब्याज/i.test(t)
-  ) {
-    return topicMap["Simple and Interest"] || 194;
-  }
-
-  // 12. Discount
-  if (
-    /marked price|discount|successive discount|single equivalent discount|list price|छूट|अंकित मूल्य|बट्टा/i.test(t)
-  ) {
-    return topicMap["Discount"] || 191;
-  }
-
-  // 13. Profit and Loss
-  if (
-    /cost price|selling price|loss percentage|profit percentage|sold for|bought for|marked up by|dishonest dealer|cr\s*\/\s*sp|cp\s*\/\s*sp|लाभ प्रतिशत|हानि प्रतिशत|क्रय मूल्य|विक्रय मूल्य/i.test(t)
-  ) {
-    return topicMap["profit and loss"] || 190;
-  }
-
-  // 14. Problem based on train
-  if (
-    /train|trains running|crosses a pole|crosses a platform|crosses a bridge|length of the train|speed of the train|ट्रेन|रेलगाड़ी|प्लेटफॉर्म/i.test(t)
-  ) {
-    return topicMap["Problem Based on train"] || 199;
-  }
-
-  // 15. Boats and Streams
-  if (
-    /boat|stream|downstream|upstream|speed of the boat|still water|speed of the stream|नाव|धारा|अनुप्रवाह|ऊर्ध्वप्रवाह/i.test(t)
-  ) {
-    return topicMap["Boats and Streams"] || 200;
-  }
-
-  // 16. Pipes and Cisterns
-  if (
-    /cistern|pipe a and pipe b|tap a|tap b|empties the tank|fills the tank|leak in the bottom|टंकी|पाइप|हौज|नल/i.test(t)
-  ) {
-    return topicMap["Pipes and Cisterns"] || 197;
-  }
-
-  // 17. Work and Time
-  if (
-    /can do a piece of work|can complete the work|can finish the work|working together|efficiency of a|wages of a and b|कार्य|काम पूरा कर सकता है|मिलकर कार्य/i.test(t)
-  ) {
-    return topicMap["Work and TIME"] || 196;
-  }
-
-  // 18. Time, Speed and Distance
-  if (
-    /km\/h|m\/s|travels from|speed of a car|walking at a speed|stops at each station|journey|चाल|दूरी|किमी\/घंटा/i.test(t)
-  ) {
-    return topicMap["Time , Speed and Distance"] || 198;
-  }
-
-  // 19. Problem based on ages
-  if (
-    /ratio of ages|years ago,.*age|present age|father.*son|mother.*daughter|आयु|वर्तमान आयु|पिता.*पुत्र/i.test(t)
-  ) {
-    return topicMap["Problem based on ages"] || 188;
-  }
-
-  // 20. Partnership
-  if (
-    /partnership|invested|investment of|started a business with|profit sharing ratio|साझेदारी|व्यापार शुरू किया|निवेश/i.test(t)
-  ) {
-    return topicMap["Partnership"] || 193;
-  }
-
-  // 21. Mixture and Alligation
-  if (
-    /mixture of|alligation|ratio of milk and water|acid and water|replaced with water|vessel contains|मिश्रण|दूध और पानी|मिश्र धातु/i.test(t)
-  ) {
-    return topicMap["Mixture and Alligation"] || 192;
-  }
-
-  // 22. Average
-  if (
-    /average salary|average weight|average score|average age|batting average|average of \d+ numbers|औसत/i.test(t)
-  ) {
-    return topicMap["Average"] || 186;
-  }
-
-  // 23. Percentage
-  if (
-    /percent|percentage|increased by \d+%|decreased by \d+%|exam.*passed.*failed|population of a town|प्रतिशत/i.test(t)
-  ) {
-    return topicMap["Percentage"] || 189;
-  }
-
-  // 24. Ratio and Proportion
-  if (
-    /ratio of|mean proportional|third proportional|fourth proportional|in the ratio|direct proportion|अनुपात|समानुपात|मध्याअनुपाती|तृतीयानुपाती/i.test(t)
-  ) {
-    return topicMap["Ratio and Proportion"] || 187;
-  }
-
-  // 25. Data Interpretation / Tables / Charts
-  if (/table shows|table -|monthly sales|sales person|bar graph|pie chart|line graph|तालिका|दंड आरेख|पाई चार्ट/i.test(t)) {
+  // 2. Data Interpretation / Tables / Charts
+  if (/table shows|table -|monthly sales|sales person|bar graph|pie chart|line graph|histogram|तालिका|दंड आरेख|पाई चार्ट/i.test(t)) {
     if (/pie/i.test(t)) return topicMap["Pie or Circular chart"] || 221;
     if (/bar/i.test(t)) return topicMap["Bar graph"] || 219;
     if (/line/i.test(t)) return topicMap["Line graph"] || 220;
     return topicMap["Tabulation"] || 218;
   }
 
-  // 26. HCF and LCM
+  // 3. Height and Distance (must be before Geometry/Trig)
+  if (/angle of elevation|angle of depression|top of a cliff|foot of the tower|top of a tree|height of the cliff|top of a building|shadow of a tower|two poles.*height.*road|elevation are \d+|उन्नयन कोण|अवनमन कोण|मीनार की ऊंचाई|खंभों की ऊंचाई/i.test(t)) {
+    return topicMap["Height and Distance"] || 216;
+  }
+
+  // 4. Circles (Geometry) - Must be before Trig so "tangent" is matched here!
+  if (/concentric circle|chord|tangent|radius of a circle|radii in the ratio|diameter of a circle|diameter of \d+|arc of a circle|in a circle|circle with centre|minor arc|major arc|वृत्त|जीवा|स्पर्श रेखा|स्पर्शरेखा|त्रिज्या|व्यास/i.test(t)) {
+    return topicMap["Circle"] || 211;
+  }
+
+  // 5. Triangles (Geometry)
+  if (/equilateral triangle|isosceles triangle|right-angled triangle|hypotenuse|orthocenter|centroid|incenter|circumcenter|in triangle abc|in △abc|in triangle pqr|in △pqr|median|congruent triangle|similar triangle|angles of a triangle|समबाहु त्रिभुज|समद्विबाहु त्रिभुज|समकोण त्रिभुज|केन्द्रक|माध्यिका|त्रिभुज/i.test(t)) {
+    return topicMap["triangles"] || 209;
+  }
+
+  // 6. Quadrilateral and polygon (Geometry)
+  if (/quadrilateral|parallelogram|rhombus|trapezium|trapezoid|polygon|regular hexagon|pentagon|interior angle.*polygon|exterior angle.*polygon|चतुर्भुज|समांतर चतुर्भुज|समचतुर्भुज|समलंब|बहुभुज/i.test(t)) {
+    return topicMap["Quadrilateral and polygon"] || 210;
+  }
+
+  // 7. Lines and angles (Geometry)
+  if (/parallel lines|transversal|supplementary angle|complementary angle|vertically opposite angle|lines ab and cd|angle between two lines|समानांतर रेखाएं|पूरक कोण|संपूरक कोण/i.test(t)) {
+    return topicMap["Lines and angles"] || 208;
+  }
+
+  // 8. Surface Area and Volume (3D Mensuration)
+  if (/cylinder|cone\b|sphere|hemisphere|cuboid|cube\b|prism|pyramid|curved surface area|total surface area|volume of|melted and recast|radius of sphere|radius of cone|radius of cylinder|height of cylinder|slant height|hexagonal prism|बेलन|शंकु|गोला|अर्धगोला|घनाभ|घन\b|प्रिज्म|पिरामिड|आयतन|पृष्ठीय क्षेत्रफल/i.test(t)) {
+    return topicMap["Surface Area and Volume"] || 213;
+  }
+
+  // 9. Area and perimeter (2D Mensuration)
+  if (/perimeter of|circumference|area of the rectangular|area of rectangle|area of square|area of a circle|cost of fencing|cost of paving|area of rhombus|area of trapezium|revolutions.*distance covered|परिमाप|परिधि|क्षेत्रफल/i.test(t)) {
+    return topicMap["Area and perimeter"] || 212;
+  }
+
+  // 10. Coordinate Geometry
+  if (/coordinate|slope of the line|collinear|x-axis|y-axis|distance between.*points|quadrant|ढलान|निर्देशांक/i.test(t)) {
+    return topicMap["Coordinate Geometry"] || 214;
+  }
+
+  // 11. Trigonometry (High Precision: Only actual trig expressions, never common words)
   if (
-    /hcf|lcm|highest common factor|least common multiple|greatest number which divides|smallest number divisible by|महत्तम समापवर्तक|लघुत्तम समापवर्त्य/i.test(t)
+    /(?<![a-z])(sin|cos|tan|cot|sec|cosec)(\^2|\^3|\^4|²|³|⁴|\s*[\(θθαβγφ\d]|(\s+(?:[A-Z]|[a-z]\b|\d+°)))|sin\^|cos\^|tan\^|cot\^|sec\^|cosec\^|sin²|cos²|tan²|cot²|sec²|cosec²|sin\(|cos\(|tan\(|cot\(|sec\(|cosec\(|value of θ|acute angle|त्रिकोणमिति/i.test(t)
   ) {
+    return topicMap["Trigonometry"] || 215;
+  }
+
+  // 12. Boats and Streams
+  if (/boat|motorboat|speed of.*stream|speed of.*boat|still water|downstream|upstream|नाव|धारा|शांत जल|अनुप्रवाह|ऊर्ध्वप्रवाह/i.test(t)) {
+    return topicMap["Boats and Streams"] || 200;
+  }
+
+  // 13. Problem based on train
+  if (/train|two trains|crosses a pole|crosses a platform|crosses a bridge|length of the train|speed of the train|speed of train|cross each other.*train|ट्रेन|रेलगाड़ी|प्लेटफॉर्म/i.test(t)) {
+    return topicMap["Problem Based on train"] || 199;
+  }
+
+  // 14. Time, Speed and Distance
+  if (/km\/h|kmph|m\/s\b|m\/sec|speed of a car|walking at a speed|travels a distance|average speed|reaches late|reaches early|journey|speed of \d+|cross paths.*minutes|चाल|दूरी|किमी\/घंटा|गति/i.test(t)) {
+    return topicMap["Time , Speed and Distance"] || 198;
+  }
+
+  // 15. Pipes and Cisterns
+  if (/cistern|pipe a|pipe b|tap a|tap b|empties the tank|fills the tank|leak in the tank|water every second|fills.*liters.*second|टंकी|पाइप|हौज|नल/i.test(t)) {
+    return topicMap["Pipes and Cisterns"] || 197;
+  }
+
+  // 16. Work and Time
+  if (/piece of work|complete the work|finish the work|working together|can do a work|efficiency of a|wages of a and b|alone can do|men can do|women can do|कार्य|काम पूरा कर सकता है|मिलकर कार्य/i.test(t)) {
+    return topicMap["Work and TIME"] || 196;
+  }
+
+  // 17. Partnership
+  if (/partnership|invested|investment of|started a business with|profit sharing ratio|joined him with|joined with ₹|withdrew ₹|profit ratio at the end|साझेदारी|व्यापार शुरू किया|निवेश/i.test(t)) {
+    return topicMap["Partnership"] || 193;
+  }
+
+  // 18. Compound Interest
+  if (/compound interest|compounded annually|compounded half-yearly|compounded quarterly|चक्रवृद्धि ब्याज/i.test(t)) {
+    return topicMap["Compound Interest"] || 195;
+  }
+
+  // 19. Simple Interest
+  if (/simple interest|rate of simple interest|sum doubles itself in|sum becomes \d+ times at simple|साधारण ब्याज/i.test(t)) {
+    return topicMap["Simple and Interest"] || 194;
+  }
+
+  // 20. Discount
+  if (/marked price|discount|successive discount|single equivalent discount|list price|allow a discount|marked at|छूट|अंकित मूल्य|बट्टा/i.test(t)) {
+    return topicMap["Discount"] || 191;
+  }
+
+  // 21. Profit and Loss
+  if (/cost price|selling price|loss percentage|profit percentage|sold for|bought for|marked up by|dishonest dealer|dishonest shopkeeper|\bcp\b.*\bsp\b|\bsp\b.*\bcp\b|gain of|loss of|gains \d+.*allowing|profit of|profit to the cost price|price of \d+ boxes|लाभ प्रतिशत|हानि प्रतिशत|क्रय मूल्य|विक्रय मूल्य/i.test(t)) {
+    return topicMap["profit and loss"] || 190;
+  }
+
+  // 22. Problem based on ages
+  if (/ratio of ages|years ago,.*age|present age|father.*son|mother.*daughter|years hence.*age|आयु|वर्तमान आयु|पिता.*पुत्र/i.test(t)) {
+    return topicMap["Problem based on ages"] || 188;
+  }
+
+  // 23. Mixture and Alligation
+  if (/mixture of|alligation|ratio of milk and water|acid and water|replaced with water|vessel contains|liters of pure syrup|drawn off.*syrup|मिश्रण|दूध और पानी|मिश्र धातु/i.test(t)) {
+    return topicMap["Mixture and Alligation"] || 192;
+  }
+
+  // 24. Average
+  if (/average salary|average weight|average score|average age|batting average|bowling average|average of \d+ numbers|average of first \d+|mean of|overall average|औसत/i.test(t)) {
+    return topicMap["Average"] || 186;
+  }
+
+  // 25. Percentage
+  if (/percent|percentage|increased by \d+%|decreased by \d+%|exam.*passed.*failed|population of a town|passed in|failed in|is \d+% more than|is \d+% less than|women constitute.*population|प्रतिशत|जनसंख्या/i.test(t)) {
+    return topicMap["Percentage"] || 189;
+  }
+
+  // 26. Ratio and Proportion
+  if (/ratio of|mean proportional|third proportional|fourth proportional|in the ratio|\ba : b\b|\ba:b\b|duplicate ratio|sub-duplicate ratio|marbles.*in the ratio|अनुपात|समानुपात|मध्याअनुपाती|तृतीयानुपाती|चतुर्थानुपाती/i.test(t)) {
+    return topicMap["Ratio and Proportion"] || 187;
+  }
+
+  // 27. HCF and LCM
+  if (/\bhcf\b|\blcm\b|highest common factor|least common multiple|greatest number which divides|smallest number divisible by|product of two numbers is \d+.*hcf|महत्तम समापवर्तक|लघुत्तम समापवर्त्य/i.test(t)) {
     return topicMap["HCF and LCM"] || 184;
   }
 
-  // 27. Algebra & Polynomials
-  if (
-    /x \+ 1\/x|x\^2 \+ 1\/x\^2|x\^3 \+ 1\/x\^3|a\^3 \+ b\^3|polynomial|algebraic|a \+ b \+ c = 0|x \+ y \+ z =|बीजगणित/i.test(t)
-  ) {
+  // 28. Algebra & Polynomials
+  if (/x \+ 1\/x|x\^2 \+ 1\/x\^2|x\^3 \+ 1\/x\^3|a\^3 \+ b\^3|p - q =|p\^2 \+ q\^2|polynomial|algebraic expression|a \+ b \+ c = 0|x \+ y \+ z =|find the value of x\^|31³ \+ 18³|p²\+ q2|बीजगणित/i.test(t)) {
     return topicMap["Algebric Polynomial and identities"] || 201;
   }
 
-  // 28. Linear and Quadratic Equation
-  if (
-    /quadratic equation|roots of the equation|alpha and beta|discriminant|द्विघात समीकरण/i.test(t)
-  ) {
+  // 29. Linear and Quadratic Equation
+  if (/quadratic equation|roots of the equation|alpha and beta|discriminant|roots are equal|द्विघात समीकरण/i.test(t)) {
     return topicMap["Linear and Quadratic Equation"] || 202;
   }
 
-  // 29. Indices and Surds / Simplification
-  if (/√|cube root|surds|indices|powers of|घातांक|करणी/i.test(t)) {
-    return topicMap["Indices and Surds"] || 204;
-  }
-  if (/simplify|bodmas|evaluate|सरल करें|सरलीकृत/i.test(t)) {
-    return topicMap["Simlpification"] || 185;
+  // 30. Progression (AP / GP)
+  if (/arithmetic progression|geometric progression|\ba\.p\.\b|\bg\.p\.\b|first term.*common difference|sum of first \d+ terms|समांतर श्रेणी|गुणोत्तर श्रेणी/i.test(t)) {
+    return topicMap["Progression"] || 203;
   }
 
-  // 30. Statistics & Probability
-  if (/probability|dice|pack of cards|coin tossed|प्रायिकता/i.test(t)) {
+  // 31. Permutation and Combination
+  if (/permutation|combination|how many ways|can be arranged|can be selected|arranged in a row|committee of|क्रमचय|संचय/i.test(t)) {
+    return topicMap["Permutation and Combination"] || 206;
+  }
+
+  // 32. Probability
+  if (/probability|dice are rolled|die is thrown|cards.*drawn|pack of 52|coin is tossed|प्रायिकता/i.test(t)) {
     return topicMap["Probablity"] || 207;
   }
-  if (/mode|median|variance|standard deviation|बहुलक|माध्यिका/i.test(t)) {
+
+  // 33. Statistics
+  if (/\bmode\b|\bmedian\b|\bvariance\b|standard deviation|mean deviation|frequency distribution|बहुलक|माध्यिका/i.test(t)) {
     return topicMap["Statistics"] || 217;
   }
 
-  // 31. Number System (Divisibility, Unit digit, Remainder, Fractions)
+  // 34. Number Series
+  if (/number series|find the wrong term|find the next term in the series|complete the series|गलत पद|अगला पद/i.test(t)) {
+    return topicMap["Number series"] || 183;
+  }
+
+  // 35. Indices and Surds / Simplification
+  if (/√|cube root|surds|indices|powers of|घातांक|करणी/i.test(t)) {
+    return topicMap["Indices and Surds"] || 204;
+  }
+  if (/simplify|bodmas|evaluate|value of \(|value of:|सरल करें|सरलीकृत/i.test(t)) {
+    return topicMap["Simlpification"] || 185;
+  }
+
+  // 36. Number System (Divisibility, Unit digit, Remainder, Fractions)
   return topicMap["Number System"] || 182;
 }
 
@@ -432,7 +401,6 @@ async function main() {
       continue;
     }
 
-    // Add to fingerprints to prevent duplicates within the same run
     if (norm && norm.length >= 15) {
       existingFingerprints.add(norm);
     }

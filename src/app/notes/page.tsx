@@ -1,42 +1,39 @@
 import type { Metadata } from "next";
 import NotesClient from "./NotesClient";
-import { DEFAULT_SUBJECTS_DATA } from "@/lib/notes-data";
+import { getSubjectNotes } from "@/lib/subject-notes-store";
 
 export const metadata: Metadata = {
-  title: "SSC Subject Notes & Formula Sheets | High-Yield Revision Capsules - SSCZone",
-  description: "Free comprehensive subject-wise revision notes for SSC CGL, CHSL, CPO, and MTS. Master Units & Dimensions, Newton's Laws, Optics, Acids & Bases, Fundamental Rights, and Indian Rivers with TCS exam traps.",
+  title: "SSC Subject Notes & Formula Sheets | High-Yield Revision PDFs - SSCZone",
+  description: "Download free chapter-wise revision notes, formula sheets, and study materials for SSC CGL 2026, CHSL, CPO, MTS & GD. Master Maths, Reasoning, English & GS with curated PDFs.",
   keywords: [
-    "SSC CGL Notes",
-    "SSC CHSL Physics Notes",
-    "SSC Polity Fundamental Rights",
-    "SSC Chemistry Formulas",
-    "TCS Traps SSC GK",
+    "SSC CGL Notes PDF",
+    "SSC Maths Formula Sheet",
+    "SSC English Grammar Rules PDF",
+    "SSC Reasoning Notes",
     "SSC GS Revision Capsule",
+    "SSC CGL 2026 Study Material",
   ],
   openGraph: {
-    title: "SSC Subject Notes & Formula Sheets - SSCZone",
-    description: "High-yield theory capsules, comparison tables, TCS exam traps, and chapter-wise MCQs for SSC aspirants.",
+    title: "SSC Subject Notes & Formula PDFs - SSCZone",
+    description: "Curated high-yield formula capsules, chapter-wise revision notes, and exam cheat sheets for SSC aspirants.",
     type: "website",
   },
 };
 
-export const revalidate = 60; // ISR 1 minute
+export const dynamic = "force-dynamic";
 
 export default async function NotesPage() {
+  const notes = getSubjectNotes(true);
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Course",
-    "name": "SSC General Awareness & GS Master Study Notes",
-    "description": "Comprehensive revision notes, comparison cheat sheets, and TCS traps for SSC CGL, CHSL, CPO, MTS exams.",
+    "name": "SSC CGL 2026 Master Subject Notes & Study Materials",
+    "description": "Comprehensive revision notes, formula cheat sheets, and chapter PDFs for SSC examinations.",
     "provider": {
       "@type": "Organization",
       "name": "SSCZone",
       "sameAs": "https://ssczone.in",
-    },
-    "hasCourseInstance": {
-      "@type": "CourseInstance",
-      "courseMode": "Online",
-      "courseWorkload": "PT20H",
     },
   };
 
@@ -46,7 +43,7 @@ export default async function NotesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <NotesClient initialSubjects={DEFAULT_SUBJECTS_DATA} />
+      <NotesClient initialNotes={notes} />
     </>
   );
 }

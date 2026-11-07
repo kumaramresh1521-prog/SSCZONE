@@ -23,6 +23,8 @@ export interface DailyQuiz {
   duration_minutes: number;
   total_questions: number;
   is_active: boolean;
+  status?: "draft" | "approved"; // Admin approval workflow: "draft" (unpublished) vs "approved" (published live)
+  approved_at?: string | null;
   created_at: string;
   updated_at: string;
   questions: DailyQuizQuestion[];

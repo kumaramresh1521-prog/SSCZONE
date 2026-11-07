@@ -140,6 +140,9 @@ export async function POST(req: NextRequest) {
       target_exam,
       duration_minutes,
       is_active,
+      status,
+      approveNow,
+      saveAsDraft,
       questions: incomingQuestions,
       rawText,
       rawJson,
@@ -154,7 +157,7 @@ export async function POST(req: NextRequest) {
 
     let finalQuestions: DailyQuizQuestion[] = [];
 
-    // 1. If explicit pre-parsed questions array is provided (e.g. from PDF parse or manual form)
+    // 1. If explicit pre-parsed questions array is provided (e.g. from 100 Qs generator, PDF parse or manual form)
     if (Array.isArray(incomingQuestions) && incomingQuestions.length > 0) {
       finalQuestions = incomingQuestions.map((q, idx) => ({
         id: q.id || `q_${Date.now()}_${idx + 1}`,
@@ -201,6 +204,16 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    // Determine Approval Status
+    let quizStatus: "draft" | "approved" = "approved";
+    if (saveAsDraft) {
+      quizStatus = "draft";
+    } else if (approveNow) {
+      quizStatus = "approved";
+    } else if (status === "draft" || status === "approved") {
+      quizStatus = status;
+    }
+
     const newQuiz: DailyQuiz = {
       id: quizId,
       title: title.trim(),
@@ -208,9 +221,11 @@ export async function POST(req: NextRequest) {
       subject: subject || "Mixed",
       subject_key: subject_key || "mixed",
       target_exam: target_exam || "SSC CGL / CHSL 2026",
-      duration_minutes: Number(duration_minutes) || 10,
+      duration_minutes: Number(duration_minutes) || (finalQuestions.length >= 50 ? 60 : 10),
       total_questions: finalQuestions.length,
-      is_active: is_active !== false,
+      is_active: quizStatus === "approved" ? (is_active !== false) : false,
+      status: quizStatus,
+      approved_at: quizStatus === "approved" ? (body.approved_at || new Date().toISOString()) : null,
       created_at: body.created_at || new Date().toISOString(),
       updated_at: new Date().toISOString(),
       questions: finalQuestions,
@@ -221,7 +236,10 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({
       success: true,
       quiz: newQuiz,
-      message: `Daily Quiz '${newQuiz.title}' saved successfully with ${finalQuestions.length} questions!`,
+      message:
+        quizStatus === "approved"
+          ? `🎉 Daily Quiz '${newQuiz.title}' has been APPROVED and is LIVE on the website with ${finalQuestions.length} questions!`
+          : `💾 Daily Quiz '${newQuiz.title}' saved as DRAFT (Unpublished). You can review and approve it when ready.`,
     });
   } catch (error: any) {
     console.error("Save daily quiz error:", error);
@@ -244,11 +262,13 @@ export async function DELETE(req: NextRequest) {
   }
 }
 
-// PATCH: Toggle Active Status
+// PATCH: Toggle Active Status or Approve/Publish
 export async function PATCH(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
     const id = searchParams.get("id");
+    const action = searchParams.get("action"); // "approve" | "draft" | "toggle"
+
     if (!id) {
       return NextResponse.json({ error: "Quiz ID is required" }, { status: 400 });
     }
@@ -256,12 +276,43 @@ export async function PATCH(req: NextRequest) {
     if (!quiz) {
       return NextResponse.json({ error: "Quiz not found" }, { status: 404 });
     }
+
+    if (action === "approve") {
+      quiz.status = "approved";
+      quiz.is_active = true;
+      quiz.approved_at = new Date().toISOString();
+      upsertDailyQuiz(quiz);
+      return NextResponse.json({
+        success: true,
+        status: "approved",
+        is_active: true,
+        message: `🎉 Quiz '${quiz.title}' is now APPROVED and LIVE on the website!`,
+      });
+    } else if (action === "draft" || action === "unpublish") {
+      quiz.status = "draft";
+      quiz.is_active = false;
+      upsertDailyQuiz(quiz);
+      return NextResponse.json({
+        success: true,
+        status: "draft",
+        is_active: false,
+        message: `Quiz '${quiz.title}' moved to DRAFT (Hidden from students).`,
+      });
+    }
+
+    // Default toggle active
     quiz.is_active = !quiz.is_active;
+    if (quiz.is_active && quiz.status === "draft") {
+      // If activating a draft, mark as approved
+      quiz.status = "approved";
+      quiz.approved_at = new Date().toISOString();
+    }
     upsertDailyQuiz(quiz);
     return NextResponse.json({
       success: true,
       is_active: quiz.is_active,
-      message: `Quiz status set to ${quiz.is_active ? "Active" : "Inactive"}`,
+      status: quiz.status,
+      message: `Quiz status set to ${quiz.is_active ? "Active & Live" : "Inactive"}`,
     });
   } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 500 });

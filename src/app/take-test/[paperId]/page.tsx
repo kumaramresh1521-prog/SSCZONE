@@ -7,6 +7,7 @@ import toast from "react-hot-toast";
 import Link from "next/link";
 import MathText from "@/components/MathText";
 import ReportButton from "@/components/ReportButton";
+import CollectQuestionButton from "@/components/CollectQuestionButton";
 import { translateSingleQuestion } from "@/lib/translator";
 import {
   Clock,
@@ -2262,13 +2263,30 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
               </span>
             </div>
 
-            <div className="flex items-center gap-2 text-xs shrink-0">
+            <div className="flex items-center gap-2 text-xs shrink-0 flex-wrap">
               <span className="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
                 +2.00
               </span>
               <span className="text-red-600 font-bold bg-red-50 px-2 py-0.5 rounded border border-red-200">
                 -0.50
               </span>
+              <CollectQuestionButton
+                question={{
+                  questionId: currentQ.id,
+                  question_text: currentQ.question_text,
+                  question_text_hi: currentQ.question_text_hi,
+                  option_a: currentQ.option_a,
+                  option_b: currentQ.option_b,
+                  option_c: currentQ.option_c,
+                  option_d: currentQ.option_d,
+                  correct_answer: currentQ.correct_answer,
+                  explanation: currentQ.explanation,
+                  subject: currentSection.name,
+                  source: "pyq",
+                  sourceTitle: paper?.title || "PYQ Shift Paper",
+                }}
+                showLabel={true}
+              />
               <ReportButton questionId={currentQ.id} questionText={currentQ.question_text} showLabel={true} />
             </div>
           </div>
@@ -2435,6 +2453,8 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
               >
                 Clear
               </button>
+
+              <ReportButton questionId={currentQ.id} questionText={currentQ.question_text} showLabel={true} />
             </div>
 
             <div className="flex items-center gap-1.5 sm:gap-2">

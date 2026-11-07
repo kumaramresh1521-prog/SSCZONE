@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import toast from "react-hot-toast";
 import MathText from "@/components/MathText";
+import ReportButton from "@/components/ReportButton";
 import { supabase } from "@/lib/supabase";
 import { getUserCollectedQuestions, removeCollectedQuestion } from "@/lib/user-attempts-store";
 
@@ -476,6 +477,12 @@ export default function BookmarksPage() {
                         </select>
                         <ChevronDown className="pointer-events-none absolute right-1.5 h-3 w-3 text-gray-400" />
                       </div>
+
+                      <ReportButton
+                        questionId={question.id}
+                        questionText={question.question_text}
+                        showLabel={true}
+                      />
 
                       <button
                         type="button"

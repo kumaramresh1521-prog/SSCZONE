@@ -12,7 +12,7 @@ import {
 interface CollectQuestionButtonProps {
   question: {
     id?: string | number;
-    questionId?: number;
+    questionId?: number | string;
     question_text: string;
     question_text_hi?: string | null;
     option_a: string;
@@ -52,6 +52,11 @@ export default function CollectQuestionButton({
     return () => window.removeEventListener("ssczone-collected-questions-updated", handleUpdate);
   }, [question]);
 
+  const numQuestionId =
+    typeof question.questionId === "number"
+      ? question.questionId
+      : parseInt(String(question.questionId || "").replace(/\D/g, ""), 10) || undefined;
+
   const handleToggle = (e: React.MouseEvent) => {
     e.stopPropagation();
 
@@ -61,7 +66,7 @@ export default function CollectQuestionButton({
       triggerToast("Question removed from collection");
     } else {
       saveCollectedQuestion({
-        questionId: question.questionId,
+        questionId: numQuestionId,
         source: question.source || "speed_test",
         sourceTitle: question.sourceTitle,
         subject: question.subject,
@@ -84,7 +89,7 @@ export default function CollectQuestionButton({
   const handleTagChange = (e: React.MouseEvent, tag: string) => {
     e.stopPropagation();
     saveCollectedQuestion({
-      questionId: question.questionId,
+      questionId: numQuestionId,
       source: question.source || "speed_test",
       sourceTitle: question.sourceTitle,
       subject: question.subject,

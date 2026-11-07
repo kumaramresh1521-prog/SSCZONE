@@ -40,6 +40,7 @@ scripts/debug_*
 scripts/__pycache__/
 scripts/scratch_imgs/
 tsconfig.tsbuildinfo
+compiled_verification_txt/
 
 
 # System & IDE

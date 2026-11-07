@@ -10,7 +10,8 @@ export async function GET(req: NextRequest) {
     const subjectParam = searchParams.get("subject");
     const includeQuestions = searchParams.get("includeQuestions") === "true";
 
-    let quizzes = getDailyQuizzes().filter((q) => q.is_active);
+    // Only show quizzes that are active AND have been approved by Admin (drafts remain hidden)
+    let quizzes = getDailyQuizzes().filter((q) => q.is_active && q.status !== "draft");
 
     if (dateParam) {
       quizzes = quizzes.filter((q) => q.date === dateParam);

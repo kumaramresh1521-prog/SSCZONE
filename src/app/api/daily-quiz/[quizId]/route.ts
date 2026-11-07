@@ -11,9 +11,9 @@ export async function GET(
     const { quizId } = await params;
     const quiz = getDailyQuizById(quizId);
 
-    if (!quiz) {
+    if (!quiz || !quiz.is_active || quiz.status === "draft") {
       return NextResponse.json(
-        { error: "Daily Quiz not found" },
+        { error: "Daily Quiz not found or pending admin approval" },
         { status: 404 }
       );
     }

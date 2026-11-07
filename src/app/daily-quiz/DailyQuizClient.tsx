@@ -675,9 +675,9 @@ export default function DailyQuizClient() {
             {/* Question Card */}
             <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-5 sm:p-7 flex flex-col flex-1">
               {/* Question Header & Flag Report */}
-              <div className="flex items-center justify-between pb-4 border-b border-slate-100 mb-5 gap-2">
-                <div className="flex items-center gap-2 flex-wrap">
-                  <span className="px-2.5 py-1 rounded-lg bg-blue-100 text-blue-800 text-xs font-bold">
+              <div className="flex items-center justify-between flex-wrap pb-4 border-b border-slate-100 mb-5 gap-2.5">
+                <div className="flex items-center gap-2 flex-wrap min-w-0">
+                  <span className="px-2.5 py-1 rounded-lg bg-blue-100 text-blue-800 text-xs font-bold shrink-0">
                     Question {currentIndex + 1} of {activeQuiz.questions.length}
                   </span>
                   <span className="text-xs text-slate-500 font-medium">
@@ -686,7 +686,7 @@ export default function DailyQuizClient() {
                   </span>
                 </div>
 
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 flex-wrap shrink-0">
                   <CollectQuestionButton
                     question={{
                       questionId: getNumericId(currentQuestion.id, currentIndex),

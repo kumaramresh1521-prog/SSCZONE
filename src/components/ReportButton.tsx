@@ -23,7 +23,7 @@ export default function ReportButton({
   const numericId =
     typeof questionId === "number"
       ? questionId
-      : parseInt(String(questionId).replace(/\D/g, ""), 10) || 1;
+      : parseInt(String(questionId || "").replace(/\D/g, ""), 10) || 1;
 
   return (
     <>
@@ -37,13 +37,18 @@ export default function ReportButton({
         title="Flag or report an error in this question (सवाल में कोई गलती रिपोर्ट करें)"
         className={
           className ||
-          `inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg border border-rose-200 bg-rose-50 hover:bg-rose-100/90 text-rose-700 text-xs font-bold transition-all cursor-pointer shadow-xs shrink-0 ${
+          `inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg border border-rose-300 bg-rose-50 hover:bg-rose-100 text-rose-700 text-xs font-bold transition-all cursor-pointer shadow-xs shrink-0 select-none ${
             showLabel ? "" : "w-8 h-8 justify-center p-0"
           }`
         }
       >
         <Flag className="h-3.5 w-3.5 text-rose-600 fill-rose-600 shrink-0" />
-        {showLabel && <span className="font-bold">Report Error</span>}
+        {showLabel && (
+          <span className="font-bold whitespace-nowrap">
+            <span className="hidden sm:inline">Report Error</span>
+            <span className="sm:hidden">Report</span>
+          </span>
+        )}
       </button>
 
       <ReportQuestionModal

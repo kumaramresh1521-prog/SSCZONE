@@ -1401,12 +1401,6 @@ export default function SpeedTestClient() {
                   <Flag className="w-3.5 h-3.5" />
                   <span className="hidden sm:inline">{isMarked ? "Marked" : "Mark for Review"}</span>
                 </button>
-
-                <ReportButton
-                  questionId={currentQ.originalId || currentQ.id || currentIndex + 1}
-                  questionText={currentQ.question_text}
-                  showLabel={true}
-                />
               </div>
 
               <div className="flex items-center gap-2">

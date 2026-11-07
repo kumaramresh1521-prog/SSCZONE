@@ -64,6 +64,12 @@ interface CandidateInfo {
   vendor: "CBExams" | "DigiALM" | "Generic";
 }
 
+interface NormScenario {
+  rating: "Easy" | "Moderate" | "Hard";
+  bonus: number;
+  score: number;
+}
+
 interface ScoreSummary {
   totalQuestions: number;
   totalAttempted: number;
@@ -78,6 +84,11 @@ interface ScoreSummary {
   shiftRating: "Hard" | "Moderate" | "Easy";
   normalizationBonus: number;
   normalizedScore: number;
+  scenarios?: {
+    easy: NormScenario;
+    moderate: NormScenario;
+    hard: NormScenario;
+  };
   rankBracket: string;
   percentile: string;
   categoryRankBracket: string;
@@ -223,9 +234,31 @@ export default function SSCPageRankPredictor() {
     const rawScore = Math.max(0, parseFloat((grossPositive - grossNegative).toFixed(2)));
     const overallAccuracy = totalAttempted > 0 ? parseFloat(((totalCorrect / totalAttempted) * 100).toFixed(2)) : 0;
 
-    let normBonus = manualShiftDifficulty === "hard" ? 14.2 : manualShiftDifficulty === "moderate" ? 7.5 : 1.8;
-    if (examType === "cgl-tier2") normBonus *= 1.8;
+    const mult = examType === "cgl-tier2" ? 1.8 : 1.0;
+    const easyBonus = parseFloat((2.4 * mult).toFixed(2));
+    const moderateBonus = parseFloat((7.6 * mult).toFixed(2));
+    const hardBonus = parseFloat((14.2 * mult).toFixed(2));
+
+    let normBonus = manualShiftDifficulty === "hard" ? hardBonus : manualShiftDifficulty === "moderate" ? moderateBonus : easyBonus;
     const normalizedScore = Math.min(maxMarks, parseFloat((rawScore + normBonus).toFixed(2)));
+
+    const scenarios = {
+      easy: {
+        rating: "Easy" as const,
+        bonus: easyBonus,
+        score: Math.min(maxMarks, parseFloat((rawScore + easyBonus).toFixed(2)))
+      },
+      moderate: {
+        rating: "Moderate" as const,
+        bonus: moderateBonus,
+        score: Math.min(maxMarks, parseFloat((rawScore + moderateBonus).toFixed(2)))
+      },
+      hard: {
+        rating: "Hard" as const,
+        bonus: hardBonus,
+        score: Math.min(maxMarks, parseFloat((rawScore + hardBonus).toFixed(2)))
+      }
+    };
 
     const scorePct = (normalizedScore / maxMarks) * 100;
     let rankBracket = "15,000 - 35,000+";
@@ -275,6 +308,7 @@ export default function SSCPageRankPredictor() {
         shiftRating: manualShiftDifficulty === "hard" ? "Hard" : manualShiftDifficulty === "moderate" ? "Moderate" : "Easy",
         normalizationBonus: normBonus,
         normalizedScore,
+        scenarios,
         rankBracket,
         percentile,
         categoryRankBracket: `${category} Rank: ~Top 15%`,
@@ -633,7 +667,7 @@ export default function SSCPageRankPredictor() {
               </div>
 
               {/* Expected Normalized Score */}
-              <div className="bg-gradient-to-br from-indigo-50 to-blue-50 border border-blue-200 rounded-3xl p-5 shadow-sm space-y-1">
+              <div className="bg-gradient-to-br from-indigo-50 to-blue-50 border border-blue-200 rounded-3xl p-5 shadow-sm space-y-2">
                 <div className="flex items-center justify-between">
                   <span className="text-[11px] font-black uppercase text-indigo-700 tracking-wider">
                     Expected Normalization
@@ -650,9 +684,30 @@ export default function SSCPageRankPredictor() {
                     / {parsedData.summary.maxMarks}
                   </span>
                 </div>
-                <div className="text-[11px] text-indigo-800 font-medium pt-1">
-                  Shift: <strong className="font-bold">{parsedData.summary.shiftRating} Hardness</strong>
+                <div className="text-[11px] text-indigo-800 font-medium">
+                  Detected Shift: <strong className="font-bold">{parsedData.summary.shiftRating}</strong>
                 </div>
+
+                {/* 3 Scenarios Mini Comparison */}
+                {parsedData.summary.scenarios && (
+                  <div className="grid grid-cols-3 gap-1.5 pt-2 border-t border-blue-200/60 text-center">
+                    <div className={`p-1.5 rounded-xl border ${parsedData.summary.shiftRating === "Easy" ? "bg-emerald-100 border-emerald-300 ring-1 ring-emerald-500" : "bg-white/80 border-slate-200"}`}>
+                      <div className="text-[9px] uppercase font-bold text-slate-500">Easy</div>
+                      <div className="text-xs font-black text-slate-900">{parsedData.summary.scenarios.easy.score}</div>
+                      <div className="text-[9px] text-emerald-700 font-bold">+{parsedData.summary.scenarios.easy.bonus}</div>
+                    </div>
+                    <div className={`p-1.5 rounded-xl border ${parsedData.summary.shiftRating === "Moderate" ? "bg-amber-100 border-amber-300 ring-1 ring-amber-500" : "bg-white/80 border-slate-200"}`}>
+                      <div className="text-[9px] uppercase font-bold text-slate-500">Moderate</div>
+                      <div className="text-xs font-black text-slate-900">{parsedData.summary.scenarios.moderate.score}</div>
+                      <div className="text-[9px] text-amber-700 font-bold">+{parsedData.summary.scenarios.moderate.bonus}</div>
+                    </div>
+                    <div className={`p-1.5 rounded-xl border ${parsedData.summary.shiftRating === "Hard" ? "bg-rose-100 border-rose-300 ring-1 ring-rose-500" : "bg-white/80 border-slate-200"}`}>
+                      <div className="text-[9px] uppercase font-bold text-slate-500">Hard</div>
+                      <div className="text-xs font-black text-slate-900">{parsedData.summary.scenarios.hard.score}</div>
+                      <div className="text-[9px] text-rose-700 font-bold">+{parsedData.summary.scenarios.hard.bonus}</div>
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* Predicted Rank Bracket */}
@@ -688,6 +743,145 @@ export default function SSCPageRankPredictor() {
               </div>
 
             </div>
+
+            {/* ── 3-SCENARIO NORMALIZATION IMPACT BREAKDOWN ── */}
+            {parsedData.summary.scenarios && (
+              <div className="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm space-y-4">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-100 pb-3 gap-2">
+                  <div>
+                    <h3 className="text-sm font-black text-slate-900 uppercase tracking-wide flex items-center gap-2">
+                      <TrendingUp className="w-4 h-4 text-indigo-600" />
+                      <span>3-Scenario Expected Normalization Scores (Complete Shift Clarity)</span>
+                    </h3>
+                    <p className="text-xs text-slate-500 mt-0.5">
+                      Check your realistic expected score across all 3 potential SSC shift difficulty possibilities:
+                    </p>
+                  </div>
+                  <span className="text-[11px] font-bold text-indigo-700 bg-indigo-50 border border-indigo-200 px-3 py-1 rounded-full self-start sm:self-auto">
+                    Raw Score: {parsedData.summary.rawScore} / {parsedData.summary.maxMarks}
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  {/* Scenario 1: Easy Shift */}
+                  <div className={`p-5 rounded-2xl border transition-all ${
+                    parsedData.summary.shiftRating === "Easy"
+                      ? "bg-emerald-50/70 border-emerald-300 ring-2 ring-emerald-500 shadow-sm"
+                      : "bg-slate-50 border-slate-200"
+                  }`}>
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xs font-black text-emerald-800 uppercase tracking-wide flex items-center gap-1.5">
+                        <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span>
+                        Easy Shift
+                      </span>
+                      {parsedData.summary.shiftRating === "Easy" ? (
+                        <span className="text-[10px] font-black bg-emerald-600 text-white px-2 py-0.5 rounded-md">
+                          🎯 Your Shift Match
+                        </span>
+                      ) : (
+                        <span className="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded-md border border-slate-200">
+                          Conservative
+                        </span>
+                      )}
+                    </div>
+
+                    <div className="flex items-baseline gap-1.5 my-2">
+                      <span className="text-3xl font-black text-slate-900">
+                        {parsedData.summary.scenarios.easy.score}
+                      </span>
+                      <span className="text-xs font-bold text-slate-400">
+                        / {parsedData.summary.maxMarks}
+                      </span>
+                      <span className="ml-auto text-xs font-black text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-lg">
+                        +{parsedData.summary.scenarios.easy.bonus} Bonus
+                      </span>
+                    </div>
+
+                    <p className="text-[11px] text-slate-600 leading-relaxed mt-2 pt-2 border-t border-slate-200/60">
+                      When paper is direct and shift average is high (~138+). Minimum normalization lift is awarded.
+                    </p>
+                  </div>
+
+                  {/* Scenario 2: Moderate Shift */}
+                  <div className={`p-5 rounded-2xl border transition-all ${
+                    parsedData.summary.shiftRating === "Moderate"
+                      ? "bg-amber-50/70 border-amber-300 ring-2 ring-amber-500 shadow-sm"
+                      : "bg-slate-50 border-slate-200"
+                  }`}>
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xs font-black text-amber-800 uppercase tracking-wide flex items-center gap-1.5">
+                        <span className="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block"></span>
+                        Moderate Shift
+                      </span>
+                      {parsedData.summary.shiftRating === "Moderate" ? (
+                        <span className="text-[10px] font-black bg-amber-600 text-white px-2 py-0.5 rounded-md">
+                          🎯 Your Shift Match
+                        </span>
+                      ) : (
+                        <span className="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded-md border border-slate-200">
+                          Most Likely
+                        </span>
+                      )}
+                    </div>
+
+                    <div className="flex items-baseline gap-1.5 my-2">
+                      <span className="text-3xl font-black text-slate-900">
+                        {parsedData.summary.scenarios.moderate.score}
+                      </span>
+                      <span className="text-xs font-bold text-slate-400">
+                        / {parsedData.summary.maxMarks}
+                      </span>
+                      <span className="ml-auto text-xs font-black text-amber-700 bg-amber-100/80 px-2 py-0.5 rounded-lg">
+                        +{parsedData.summary.scenarios.moderate.bonus} Bonus
+                      </span>
+                    </div>
+
+                    <p className="text-[11px] text-slate-600 leading-relaxed mt-2 pt-2 border-t border-slate-200/60">
+                      Balanced difficulty across sections (~124 average). Most shifts fall in this realistic expected bracket.
+                    </p>
+                  </div>
+
+                  {/* Scenario 3: Hard Shift */}
+                  <div className={`p-5 rounded-2xl border transition-all ${
+                    parsedData.summary.shiftRating === "Hard"
+                      ? "bg-rose-50/70 border-rose-300 ring-2 ring-rose-500 shadow-sm"
+                      : "bg-slate-50 border-slate-200"
+                  }`}>
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xs font-black text-rose-800 uppercase tracking-wide flex items-center gap-1.5">
+                        <span className="w-2.5 h-2.5 rounded-full bg-rose-500 inline-block"></span>
+                        Hard Shift
+                      </span>
+                      {parsedData.summary.shiftRating === "Hard" ? (
+                        <span className="text-[10px] font-black bg-rose-600 text-white px-2 py-0.5 rounded-md">
+                          🎯 Your Shift Match
+                        </span>
+                      ) : (
+                        <span className="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded-md border border-slate-200">
+                          Best Case
+                        </span>
+                      )}
+                    </div>
+
+                    <div className="flex items-baseline gap-1.5 my-2">
+                      <span className="text-3xl font-black text-slate-900">
+                        {parsedData.summary.scenarios.hard.score}
+                      </span>
+                      <span className="text-xs font-bold text-slate-400">
+                        / {parsedData.summary.maxMarks}
+                      </span>
+                      <span className="ml-auto text-xs font-black text-rose-700 bg-rose-100/80 px-2 py-0.5 rounded-lg">
+                        +{parsedData.summary.scenarios.hard.bonus} Bonus
+                      </span>
+                    </div>
+
+                    <p className="text-[11px] text-slate-600 leading-relaxed mt-2 pt-2 border-t border-slate-200/60">
+                      Tough / calculative questions with lower shift mean (~110). SSC gives maximum normalization boost.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
 
             {/* Sectional Breakdown Cards & Table */}
             <div className="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm space-y-6">

@@ -344,25 +344,44 @@ export async function POST(request: Request) {
     const rawScore = Math.max(0, parseFloat((grossPositive - grossNegative).toFixed(2)));
     const overallAccuracy = totalAttempted > 0 ? parseFloat(((totalCorrect / totalAttempted) * 100).toFixed(2)) : 0;
 
-    // Normalization & Shift Difficulty Estimation
+    // Calculate 3 Shift Scenarios for transparent student view
+    const mult = isTier2 ? 1.8 : 1.0;
+    const easyBonus = parseFloat((2.4 * mult).toFixed(2));
+    const moderateBonus = parseFloat((7.6 * mult).toFixed(2));
+    const hardBonus = parseFloat((14.2 * mult).toFixed(2));
+
     let shiftRating: "Hard" | "Moderate" | "Easy" = "Moderate";
-    let normalizationBonus = 8.5;
+    let normalizationBonus = moderateBonus;
 
     // Use test time/date or default shift heuristic
     if (candidateInfo.testTime?.includes("Shift-2") || candidateInfo.testTime?.includes("Shift 2") || candidateInfo.testDate?.includes("27 Oct")) {
       shiftRating = "Hard";
-      normalizationBonus = 13.8;
+      normalizationBonus = hardBonus;
     } else if (candidateInfo.testTime?.includes("Shift-1") || candidateInfo.testTime?.includes("Shift 1")) {
       shiftRating = "Moderate";
-      normalizationBonus = 7.4;
+      normalizationBonus = moderateBonus;
     } else {
       shiftRating = "Easy";
-      normalizationBonus = 2.5;
+      normalizationBonus = easyBonus;
     }
 
-    if (isTier2) {
-      normalizationBonus *= 1.8;
-    }
+    const scenarios = {
+      easy: {
+        rating: "Easy" as const,
+        bonus: easyBonus,
+        score: Math.min(maxMarks, parseFloat((rawScore + easyBonus).toFixed(2)))
+      },
+      moderate: {
+        rating: "Moderate" as const,
+        bonus: moderateBonus,
+        score: Math.min(maxMarks, parseFloat((rawScore + moderateBonus).toFixed(2)))
+      },
+      hard: {
+        rating: "Hard" as const,
+        bonus: hardBonus,
+        score: Math.min(maxMarks, parseFloat((rawScore + hardBonus).toFixed(2)))
+      }
+    };
 
     const normalizedScore = Math.min(maxMarks, parseFloat((rawScore + normalizationBonus).toFixed(2)));
 
@@ -430,6 +449,7 @@ export async function POST(request: Request) {
         shiftRating,
         normalizationBonus: parseFloat(normalizationBonus.toFixed(2)),
         normalizedScore,
+        scenarios,
         rankBracket,
         percentile,
         categoryRankBracket,

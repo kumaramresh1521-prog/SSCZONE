@@ -211,16 +211,16 @@ export default async function Home() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
             </span>
-            <span>Target Exam: SSC CGL 2026 (Tier 1 & Tier 2) Dedicated Practice</span>
+            <span>Comprehensive Preparation • SSC CGL 2026 (Tier 1 &amp; Tier 2)</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.15]">
-            Crack SSC CGL 2026,{" "}
+            Master SSC CGL 2026,{" "}
             <span className="text-blue-600">Topic by Topic</span>
           </h1>
 
           <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed font-normal">
-            Master syllabus-mapped MCQs from standard reference books with instant explanations, attempt full 100-Question mock papers, and practice official previous year shift papers with live exam scorecards.
+            Practice high-yield, syllabus-mapped MCQs from standard reference books with verified solutions. Solve official previous-year shift papers in real exam mode and track your score with instant performance analytics.
           </p>
 
           {/* Quick Hero Action CTAs */}

@@ -37,8 +37,9 @@
       "is_active": true,
       "sort_order": 3,
       "sub_items": [
-        { "id": "sub-notes", "name": "Subject Notes", "href": "/notes", "icon": "BookOpen", "is_active": true, "sort_order": 1 },
-        { "id": "sub-books", "name": "SSC Reference Books", "href": "/books", "icon": "BookMarked", "is_active": true, "sort_order": 2 }
+        { "id": "sub-syllabus", "name": "Syllabus Tracker 📓", "href": "/syllabus", "icon": "CheckSquare", "is_active": true, "sort_order": 1 },
+        { "id": "sub-notes", "name": "Subject Notes", "href": "/notes", "icon": "BookOpen", "is_active": true, "sort_order": 2 },
+        { "id": "sub-books", "name": "SSC Reference Books", "href": "/books", "icon": "BookMarked", "is_active": true, "sort_order": 3 }
       ]
     },
     {
@@ -85,9 +86,10 @@
       "is_active": true,
       "sort_order": 7,
       "sub_items": [
-        { "id": "sub-tool-rank", "name": "Rank Predictor & Marks", "href": "/toolkit/rank-predictor", "icon": "Trophy", "is_active": true, "sort_order": 1 },
-        { "id": "sub-tool-age", "name": "Age & Post Eligibility", "href": "/toolkit/age-calculator", "icon": "Calendar", "is_active": true, "sort_order": 2 },
-        { "id": "sub-tool-photo", "name": "Photo & Signature Resizer", "href": "/toolkit/photo-resizer", "icon": "Image", "is_active": true, "sort_order": 3 }
+        { "id": "sub-tool-syllabus", "name": "Syllabus Tracker 📓", "href": "/syllabus", "icon": "CheckSquare", "is_active": true, "sort_order": 1 },
+        { "id": "sub-tool-rank", "name": "Rank Predictor & Marks", "href": "/toolkit/rank-predictor", "icon": "Trophy", "is_active": true, "sort_order": 2 },
+        { "id": "sub-tool-age", "name": "Age & Post Eligibility", "href": "/toolkit/age-calculator", "icon": "Calendar", "is_active": true, "sort_order": 3 },
+        { "id": "sub-tool-photo", "name": "Photo & Signature Resizer", "href": "/toolkit/photo-resizer", "icon": "Image", "is_active": true, "sort_order": 4 }
       ]
     }
   ],

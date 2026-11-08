@@ -10,6 +10,7 @@ import {
   ArrowRight,
   Sparkles,
   CheckCircle2,
+  CheckSquare,
   Zap,
   ShieldCheck,
   FileCheck
@@ -17,6 +18,21 @@ import {
 
 export default function ToolkitHubPage() {
   const tools = [
+    {
+      id: "syllabus-tracker",
+      title: "SSC Master Syllabus Tracker & OneNote Checklist",
+      description: "Interactive notification-mapped chapter checklist for CGL 2026, CHSL, CPO, MTS & GD with 3-Pillar tracking (Theory, 50+ PYQs, 3x Revisions) & personal formula scratchpads.",
+      icon: CheckSquare,
+      badge: "⭐ 2026 FLAGSHIP",
+      badgeColor: "bg-purple-600 text-white",
+      href: "/syllabus",
+      gradient: "from-purple-600 to-indigo-600",
+      features: [
+        "100% Notification Mapped for CGL, CHSL, CPO, MTS & GD",
+        "3-Pillar Progress (📖 Theory, ⚡ 50+ PYQs, 🔄 3x Revisions)",
+        "Personal OneNote Scratchpad & Printable A4 Study Sheet"
+      ]
+    },
     {
       id: "rank-predictor",
       title: "SSC Rank Predictor & Marks Calculator",

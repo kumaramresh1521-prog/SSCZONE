@@ -34,6 +34,14 @@ export interface ExamSyllabus {
   subjects: SubjectCategory[];
 }
 
+export interface ChapterAttachment {
+  id: string;
+  type: "pdf" | "youtube" | "drive" | "link";
+  title: string;
+  url: string;
+  created_at: string;
+}
+
 export interface UserChapterProgress {
   chapter_id: string;
   theory_done: boolean;
@@ -42,14 +50,31 @@ export interface UserChapterProgress {
   confidence: "low" | "medium" | "high" | "unrated";
   notes?: string;
   target_date?: string;
+  attachments?: ChapterAttachment[];
+  custom_priority?: "high" | "normal";
   updated_at: string;
+}
+
+export interface CustomSubjectItem {
+  id: string;
+  name: string;
+  hindi_name: string;
+  color: "blue" | "purple" | "emerald" | "amber" | "sky" | "rose" | "teal";
+  icon: string;
+  description: string;
+  created_at: string;
 }
 
 export interface CustomTopicItem {
   id: string;
-  subject_id: "quant" | "reasoning" | "english" | "ga" | "computer";
+  subject_id: string;
   name: string;
+  hindi_name?: string;
   category: string;
+  expected_questions?: string;
+  high_weightage?: boolean;
+  practice_query?: string;
+  target_date?: string;
   created_at: string;
 }
 

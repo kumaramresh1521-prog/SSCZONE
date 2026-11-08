@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS user_syllabus_progress (
   revision_count INT DEFAULT 0,
   confidence TEXT DEFAULT 'unrated',
   notes TEXT DEFAULT '',
+  attachments JSONB DEFAULT '[]'::jsonb,
   target_date DATE,
   updated_at TIMESTAMPTZ DEFAULT now(),
   UNIQUE(user_id, exam_slug, chapter_id)

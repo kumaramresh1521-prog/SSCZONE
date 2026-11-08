@@ -18,7 +18,7 @@ export async function GET(request: Request) {
 
     const { data, error } = await supabase
       .from("user_syllabus_progress")
-      .select("chapter_id, theory_done, practice_done, revision_count, confidence, notes, target_date, updated_at")
+      .select("chapter_id, theory_done, practice_done, revision_count, confidence, notes, attachments, target_date, updated_at")
       .eq("user_id", user.id)
       .eq("exam_slug", examSlug);
 
@@ -74,6 +74,7 @@ export async function POST(request: Request) {
         revision_count: Number(item.revision_count || 0),
         confidence: item.confidence || "unrated",
         notes: item.notes || "",
+        attachments: Array.isArray(item.attachments) ? item.attachments : [],
         target_date: item.target_date || null,
         updated_at: new Date().toISOString(),
       }));
@@ -103,6 +104,7 @@ export async function POST(request: Request) {
       revision_count: Number(revision_count || 0),
       confidence,
       notes: notes || "",
+      attachments: Array.isArray(body.attachments) ? body.attachments : [],
       target_date: target_date || null,
       updated_at: new Date().toISOString(),
     };

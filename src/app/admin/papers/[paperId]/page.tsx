@@ -35,7 +35,12 @@ import {
   LayoutGrid,
   Share2,
   X,
-  Send
+  Send,
+  Hash,
+  ArrowUp,
+  ArrowDown,
+  Lightbulb,
+  ArrowUpDown
 } from "lucide-react";
 import { classifyMathQuestion, MATH_TOPIC_NAMES } from "@/lib/math-classifier";
 import { 
@@ -88,6 +93,14 @@ export default function PaperQuestionsPage() {
   // High-density space-saving View Mode: 'compact' (takes 75% less space!) vs 'cards'
   const [viewDensity, setViewDensity] = useState<"compact" | "cards">("compact");
   const [expandedQIds, setExpandedQIds] = useState<Set<number>>(new Set());
+
+  // Direct Inline Q# Edit state & Numbering Sequence Management
+  const [inlineEditingQId, setInlineEditingQId] = useState<number | null>(null);
+  const [inlineQNumVal, setInlineQNumVal] = useState<string>("");
+  const [isUpdatingQNum, setIsUpdatingQNum] = useState<boolean>(false);
+
+  // Section Filter: "all" | "reasoning" | "ga" | "maths" | "english" | "explanation" | "issues"
+  const [sectionFilter, setSectionFilter] = useState<"all" | "reasoning" | "ga" | "maths" | "english" | "explanation" | "issues">("all");
 
   // Hindi On/Off Lock System (Locked = Confirmed Hindi, Unlocked = Needs Translation)
   const [lockedHindiIds, setLockedHindiIds] = useState<Set<number>>(new Set());
@@ -471,6 +484,14 @@ export default function PaperQuestionsPage() {
     }
   }
 
+  function getNextAvailableQNum() {
+    const existing = new Set(questions.map((q) => q.question_number));
+    for (let i = 1; i <= questions.length + 1; i++) {
+      if (!existing.has(i)) return i;
+    }
+    return questions.length + 1;
+  }
+
   function resetForm() {
     setEditingId(null);
     setQText("");
@@ -480,7 +501,7 @@ export default function PaperQuestionsPage() {
     setOpD("");
     setCorrect("A");
     setExplanation("");
-    setQNum(questions.length + 1);
+    setQNum(getNextAvailableQNum());
   }
 
   function handleEdit(q: any) {
@@ -511,6 +532,134 @@ export default function PaperQuestionsPage() {
       setQuestions((prev) => prev.filter((q) => q.id !== id));
     } catch (err: any) {
       toast.error(err.message || "Failed to delete question");
+    }
+  }
+
+  // ── 1. Inline Edit Question Number (Instant Save with No Disruption) ──
+  async function handleSaveInlineQNum(q: any, newNumRaw: string | number) {
+    const newNum = parseInt(String(newNumRaw));
+    if (!newNum || newNum < 1) {
+      toast.error("Please enter a valid question number (1 or greater)");
+      setInlineEditingQId(null);
+      return;
+    }
+
+    if (newNum === q.question_number) {
+      setInlineEditingQId(null);
+      return;
+    }
+
+    setIsUpdatingQNum(true);
+    const toastId = toast.loading(`Updating Q.${q.question_number} -> Q.${newNum}...`);
+
+    try {
+      const res = await fetch("/api/papers/questions", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          action: "update_number",
+          paper_id: parseInt(paperId),
+          id: q.id,
+          question_number: newNum,
+        }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to update question number");
+
+      setQuestions((prev) =>
+        prev
+          .map((item) => (item.id === q.id ? { ...item, question_number: newNum } : item))
+          .sort((a, b) => (a.question_number || 0) - (b.question_number || 0))
+      );
+
+      toast.success(`✓ Question renumbered to Q.${newNum}!`, { id: toastId });
+      setInlineEditingQId(null);
+    } catch (err: any) {
+      toast.error(err.message || "Failed to update question number", { id: toastId });
+    } finally {
+      setIsUpdatingQNum(false);
+    }
+  }
+
+  // ── 2. Swap Question Number with Adjacent Question (Move Up / Down) ──
+  async function handleSwapQuestion(currentQ: any, direction: "up" | "down") {
+    const sorted = [...questions].sort((a, b) => (a.question_number || 0) - (b.question_number || 0));
+    const curIndex = sorted.findIndex((q) => q.id === currentQ.id);
+    if (curIndex === -1) return;
+
+    const targetIndex = direction === "up" ? curIndex - 1 : curIndex + 1;
+    if (targetIndex < 0 || targetIndex >= sorted.length) {
+      toast.error(direction === "up" ? "Already the first question" : "Already the last question");
+      return;
+    }
+
+    const targetQ = sorted[targetIndex];
+    const toastId = toast.loading(`Moving Q.${currentQ.question_number} ${direction}...`);
+
+    try {
+      const res = await fetch("/api/papers/questions", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          action: "swap_order",
+          paper_id: parseInt(paperId),
+          id_a: currentQ.id,
+          id_b: targetQ.id,
+        }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to swap question order");
+
+      setQuestions((prev) => {
+        const next = [...prev];
+        const aIdx = next.findIndex((q) => q.id === currentQ.id);
+        const bIdx = next.findIndex((q) => q.id === targetQ.id);
+        const aNum = currentQ.question_number;
+        const bNum = targetQ.question_number;
+        next[aIdx] = { ...currentQ, question_number: bNum };
+        next[bIdx] = { ...targetQ, question_number: aNum };
+        return next.sort((a, b) => (a.question_number || 0) - (b.question_number || 0));
+      });
+
+      toast.success(`✓ Swapped Q.${currentQ.question_number} and Q.${targetQ.question_number}!`, { id: toastId });
+    } catch (err: any) {
+      toast.error(err.message || "Failed to move question", { id: toastId });
+    }
+  }
+
+  // ── 3. Auto-Renumber Sequential (1 to N) with 100% Data Preservation ──
+  async function handleAutoResequence() {
+    if (
+      !confirm(
+        `Are you sure you want to re-number all ${questions.length} questions strictly 1, 2, 3... ${questions.length} in sequential order?\n\nNOTE: All question statements, options, correct answers, and explanations will remain 100% UNTOUCHED.`
+      )
+    ) {
+      return;
+    }
+
+    const toastId = toast.loading(`Re-numbering all ${questions.length} questions sequentially...`);
+
+    try {
+      const res = await fetch("/api/papers/questions", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          action: "resequence",
+          paper_id: parseInt(paperId),
+        }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to resequence questions");
+
+      toast.success(`✓ All ${questions.length} questions re-numbered cleanly from 1 to ${questions.length}!`, {
+        id: toastId,
+      });
+      loadQuestions();
+    } catch (err: any) {
+      toast.error(err.message || "Failed to resequence questions", { id: toastId });
     }
   }
 
@@ -1269,15 +1418,63 @@ export default function PaperQuestionsPage() {
     URL.revokeObjectURL(url);
   }
 
+  // Question numbering anomaly detector
+  const numberingAnomalies = useMemo(() => {
+    const counts: Record<number, number> = {};
+    const duplicates: number[] = [];
+    const missing: number[] = [];
+    const outOfRange: number[] = [];
+
+    questions.forEach((q) => {
+      const qNum = Number(q.question_number);
+      counts[qNum] = (counts[qNum] || 0) + 1;
+      if (counts[qNum] === 2) {
+        duplicates.push(qNum);
+      }
+      if (qNum > questions.length || qNum < 1) {
+        outOfRange.push(qNum);
+      }
+    });
+
+    for (let i = 1; i <= questions.length; i++) {
+      if (!counts[i]) {
+        missing.push(i);
+      }
+    }
+
+    return {
+      hasIssues: duplicates.length > 0 || missing.length > 0 || outOfRange.length > 0,
+      duplicates,
+      missing,
+      outOfRange,
+      issueQuestionIds: new Set(
+        questions
+          .filter((q) => counts[Number(q.question_number)] > 1 || Number(q.question_number) > questions.length)
+          .map((q) => q.id)
+      ),
+    };
+  }, [questions]);
+
   const filteredQuestions = useMemo(() => {
     return questions.filter((q) => {
-      return (
+      const qNum = Number(q.question_number);
+      const matchesSearch =
         searchTerm === "" ||
         q.question_text.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        String(q.question_number).includes(searchTerm)
-      );
+        String(qNum).includes(searchTerm);
+
+      if (!matchesSearch) return false;
+
+      if (sectionFilter === "reasoning") return qNum >= 1 && qNum <= 25;
+      if (sectionFilter === "ga") return qNum >= 26 && qNum <= 50;
+      if (sectionFilter === "maths") return qNum >= 51 && qNum <= 75;
+      if (sectionFilter === "english") return qNum >= 76 && qNum <= 100;
+      if (sectionFilter === "explanation") return Boolean(q.explanation && q.explanation.trim());
+      if (sectionFilter === "issues") return numberingAnomalies.issueQuestionIds.has(q.id);
+
+      return true;
     });
-  }, [questions, searchTerm]);
+  }, [questions, searchTerm, sectionFilter, numberingAnomalies]);
 
   const totalPages = pageSize === "all" ? 1 : Math.ceil(filteredQuestions.length / pageSize);
   const paginatedQuestions = useMemo(() => {
@@ -1516,6 +1713,120 @@ export default function PaperQuestionsPage() {
               </div>
             )}
           </div>
+
+          {/* ── QUESTION NUMBERING ANOMALY WARNING BANNER ── */}
+          {numberingAnomalies.hasIssues && (
+            <div className="rounded-2xl border-2 border-amber-300 bg-linear-to-r from-amber-50 via-amber-100/50 to-orange-50 p-4 shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-slate-900 animate-in fade-in duration-200">
+              <div className="flex items-start gap-3">
+                <AlertCircle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="text-xs font-black uppercase text-amber-950 flex items-center gap-1.5">
+                    <span>Question Numbering Irregularity Detected</span>
+                    <span className="text-[10px] bg-amber-200 text-amber-900 px-1.5 py-0.2 rounded font-bold">Action Recommended</span>
+                  </h4>
+                  <p className="text-xs text-amber-900 mt-0.5 leading-relaxed">
+                    {numberingAnomalies.duplicates.length > 0 && (
+                      <span className="font-semibold text-red-700 mr-2">
+                        Duplicate Q#: [{numberingAnomalies.duplicates.join(", ")}]
+                      </span>
+                    )}
+                    {numberingAnomalies.missing.length > 0 && (
+                      <span className="font-medium mr-2">
+                        Missing in sequence: [{numberingAnomalies.missing.slice(0, 6).join(", ")}{numberingAnomalies.missing.length > 6 ? "..." : ""}]
+                      </span>
+                    )}
+                    {numberingAnomalies.outOfRange.length > 0 && (
+                      <span className="font-semibold text-purple-800">
+                        Numbers exceeding total: [{numberingAnomalies.outOfRange.join(", ")}]
+                      </span>
+                    )}
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={handleAutoResequence}
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold shadow-xs cursor-pointer shrink-0 transition-all"
+                title="Automatically renumbers all questions 1, 2, 3... in clean sequential order without changing any answers or explanations"
+              >
+                <Hash className="h-3.5 w-3.5" />
+                <span>Fix & Auto-Renumber (1..{questions.length})</span>
+              </button>
+            </div>
+          )}
+
+          {/* ── SECTION & CATEGORY FILTER TABS ── */}
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs font-bold">
+            <span className="text-slate-400 uppercase text-[10px] mr-1 shrink-0">Section Filter:</span>
+            <button
+              type="button"
+              onClick={() => { setSectionFilter("all"); setCurrentPage(1); }}
+              className={`px-3 py-1.5 rounded-xl transition-all shrink-0 cursor-pointer ${
+                sectionFilter === "all" ? "bg-slate-900 text-white shadow-xs" : "bg-white border border-slate-200 text-slate-600 hover:bg-slate-50"
+              }`}
+            >
+              All ({questions.length})
+            </button>
+            <button
+              type="button"
+              onClick={() => { setSectionFilter("reasoning"); setCurrentPage(1); }}
+              className={`px-3 py-1.5 rounded-xl transition-all shrink-0 cursor-pointer ${
+                sectionFilter === "reasoning" ? "bg-purple-600 text-white shadow-xs" : "bg-white border border-purple-200 text-purple-800 hover:bg-purple-50"
+              }`}
+            >
+              🧠 Reasoning (Q.1-25)
+            </button>
+            <button
+              type="button"
+              onClick={() => { setSectionFilter("ga"); setCurrentPage(1); }}
+              className={`px-3 py-1.5 rounded-xl transition-all shrink-0 cursor-pointer ${
+                sectionFilter === "ga" ? "bg-amber-600 text-white shadow-xs" : "bg-white border border-amber-200 text-amber-800 hover:bg-amber-50"
+              }`}
+            >
+              🏛️ GA / GK (Q.26-50)
+            </button>
+            <button
+              type="button"
+              onClick={() => { setSectionFilter("maths"); setCurrentPage(1); }}
+              className={`px-3 py-1.5 rounded-xl transition-all shrink-0 cursor-pointer ${
+                sectionFilter === "maths" ? "bg-blue-600 text-white shadow-xs" : "bg-white border border-blue-200 text-blue-800 hover:bg-blue-50"
+              }`}
+            >
+              📐 Maths (Q.51-75)
+            </button>
+            <button
+              type="button"
+              onClick={() => { setSectionFilter("english"); setCurrentPage(1); }}
+              className={`px-3 py-1.5 rounded-xl transition-all shrink-0 cursor-pointer ${
+                sectionFilter === "english" ? "bg-emerald-600 text-white shadow-xs" : "bg-white border border-emerald-200 text-emerald-800 hover:bg-emerald-50"
+              }`}
+            >
+              📖 English (Q.76-100)
+            </button>
+            <button
+              type="button"
+              onClick={() => { setSectionFilter("explanation"); setCurrentPage(1); }}
+              className={`px-3 py-1.5 rounded-xl transition-all shrink-0 cursor-pointer flex items-center gap-1 ${
+                sectionFilter === "explanation" ? "bg-amber-500 text-white shadow-xs" : "bg-white border border-amber-300 text-amber-900 hover:bg-amber-50"
+              }`}
+            >
+              <Lightbulb className="h-3 w-3" />
+              <span>Has Explanation ({questions.filter((q) => q.explanation && q.explanation.trim()).length})</span>
+            </button>
+            {numberingAnomalies.hasIssues && (
+              <button
+                type="button"
+                onClick={() => { setSectionFilter("issues"); setCurrentPage(1); }}
+                className={`px-3 py-1.5 rounded-xl transition-all shrink-0 cursor-pointer flex items-center gap-1 ${
+                  sectionFilter === "issues" ? "bg-red-600 text-white shadow-xs" : "bg-red-50 border border-red-200 text-red-800 hover:bg-red-100"
+                }`}
+              >
+                <AlertCircle className="h-3 w-3" />
+                <span>Number Issues ({numberingAnomalies.issueQuestionIds.size})</span>
+              </button>
+            )}
+          </div>
+
           <div className="flex items-center justify-between gap-3">
             <div className="relative flex-1">
               <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
@@ -1530,6 +1841,17 @@ export default function PaperQuestionsPage() {
             </div>
 
             <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={handleAutoResequence}
+                className="flex items-center gap-1.5 rounded-2xl border border-blue-200 bg-blue-50 text-blue-800 hover:bg-blue-100 px-3.5 py-2.5 text-xs font-bold shadow-xs cursor-pointer transition-colors"
+                title="Renumber questions sequentially from 1 to N without modifying answers or explanations"
+              >
+                <Hash className="h-3.5 w-3.5 text-blue-600" />
+                <span className="hidden sm:inline">Auto-Renumber (1..{questions.length})</span>
+                <span className="sm:hidden">Renumber</span>
+              </button>
+
               <button
                 type="button"
                 onClick={() => openBulkForwardModal("math")}
@@ -1690,9 +2012,70 @@ export default function PaperQuestionsPage() {
                     {/* Header Row: Q# | Hindi Confirmed On/Off | Ans Key | Action Buttons */}
                     <div className="flex items-center justify-between gap-2 flex-wrap">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="rounded-lg bg-blue-100 px-2 py-0.5 text-xs font-black text-blue-800">
-                          Q.{q.question_number}
-                        </span>
+                        {/* Question Number Pill: Inline Editable & Sequence Swappable */}
+                        <div className="flex items-center gap-1">
+                          {inlineEditingQId === q.id ? (
+                            <div className="flex items-center gap-1">
+                              <span className="text-xs font-bold text-slate-500">Q.</span>
+                              <input
+                                type="number"
+                                defaultValue={q.question_number}
+                                autoFocus
+                                onKeyDown={(e) => {
+                                  if (e.key === "Enter") {
+                                    handleSaveInlineQNum(q, (e.target as HTMLInputElement).value);
+                                  } else if (e.key === "Escape") {
+                                    setInlineEditingQId(null);
+                                  }
+                                }}
+                                onBlur={(e) => handleSaveInlineQNum(q, e.target.value)}
+                                className="w-14 rounded-md border-2 border-blue-600 bg-white px-1.5 py-0.5 text-xs font-black text-blue-900 text-center shadow-xs"
+                              />
+                            </div>
+                          ) : (
+                            <div className="flex items-center gap-0.5 group/qno">
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  setInlineEditingQId(q.id);
+                                  setInlineQNumVal(String(q.question_number));
+                                }}
+                                className="rounded-lg bg-blue-100 hover:bg-blue-200 px-2 py-0.5 text-xs font-black text-blue-800 transition-colors flex items-center gap-1 cursor-pointer"
+                                title="Click to change question number directly"
+                              >
+                                <span>Q.{q.question_number}</span>
+                                <Edit3 className="h-2.5 w-2.5 opacity-40 group-hover/qno:opacity-100" />
+                              </button>
+
+                              {/* Move Up / Down sequence controls */}
+                              <div className="flex flex-col -space-y-1 opacity-40 group-hover/qno:opacity-100 transition-opacity">
+                                <button
+                                  type="button"
+                                  onClick={() => handleSwapQuestion(q, "up")}
+                                  className="p-0.5 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded cursor-pointer"
+                                  title="Move Question Up (Swap order with previous question)"
+                                >
+                                  <ArrowUp className="h-2.5 w-2.5" />
+                                </button>
+                                <button
+                                  type="button"
+                                  onClick={() => handleSwapQuestion(q, "down")}
+                                  className="p-0.5 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded cursor-pointer"
+                                  title="Move Question Down (Swap order with next question)"
+                                >
+                                  <ArrowDown className="h-2.5 w-2.5" />
+                                </button>
+                              </div>
+                            </div>
+                          )}
+
+                          {q.explanation && (
+                            <span className="text-[10px] font-bold text-amber-800 bg-amber-50 border border-amber-200 px-1.5 py-0.5 rounded-md flex items-center gap-0.5" title="Detailed explanation recorded">
+                              <Lightbulb className="h-2.5 w-2.5 text-amber-600" />
+                              <span className="hidden sm:inline">Explanation</span>
+                            </span>
+                          )}
+                        </div>
 
                         {/* ON / OFF Hindi Confirmed Lock Button */}
                         {!isEnglishSection ? (
@@ -1883,9 +2266,70 @@ export default function PaperQuestionsPage() {
                     <div className="flex items-start justify-between gap-4">
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-2 flex-wrap">
-                          <span className="rounded-lg bg-blue-100 px-2.5 py-0.5 text-xs font-black text-blue-800">
-                            Q.{q.question_number}
-                          </span>
+                          {/* Question Number Pill: Inline Editable & Sequence Swappable */}
+                          <div className="flex items-center gap-1">
+                            {inlineEditingQId === q.id ? (
+                              <div className="flex items-center gap-1">
+                                <span className="text-xs font-bold text-slate-500">Q.</span>
+                                <input
+                                  type="number"
+                                  defaultValue={q.question_number}
+                                  autoFocus
+                                  onKeyDown={(e) => {
+                                    if (e.key === "Enter") {
+                                      handleSaveInlineQNum(q, (e.target as HTMLInputElement).value);
+                                    } else if (e.key === "Escape") {
+                                      setInlineEditingQId(null);
+                                    }
+                                  }}
+                                  onBlur={(e) => handleSaveInlineQNum(q, e.target.value)}
+                                  className="w-14 rounded-md border-2 border-blue-600 bg-white px-1.5 py-0.5 text-xs font-black text-blue-900 text-center shadow-xs"
+                                />
+                              </div>
+                            ) : (
+                              <div className="flex items-center gap-0.5 group/qno">
+                                <button
+                                  type="button"
+                                  onClick={() => {
+                                    setInlineEditingQId(q.id);
+                                    setInlineQNumVal(String(q.question_number));
+                                  }}
+                                  className="rounded-lg bg-blue-100 hover:bg-blue-200 px-2.5 py-0.5 text-xs font-black text-blue-800 transition-colors flex items-center gap-1 cursor-pointer"
+                                  title="Click to change question number directly"
+                                >
+                                  <span>Q.{q.question_number}</span>
+                                  <Edit3 className="h-2.5 w-2.5 opacity-40 group-hover/qno:opacity-100" />
+                                </button>
+
+                                {/* Move Up / Down sequence controls */}
+                                <div className="flex flex-col -space-y-1 opacity-40 group-hover/qno:opacity-100 transition-opacity">
+                                  <button
+                                    type="button"
+                                    onClick={() => handleSwapQuestion(q, "up")}
+                                    className="p-0.5 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded cursor-pointer"
+                                    title="Move Question Up (Swap order with previous question)"
+                                  >
+                                    <ArrowUp className="h-2.5 w-2.5" />
+                                  </button>
+                                  <button
+                                    type="button"
+                                    onClick={() => handleSwapQuestion(q, "down")}
+                                    className="p-0.5 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded cursor-pointer"
+                                    title="Move Question Down (Swap order with next question)"
+                                  >
+                                    <ArrowDown className="h-2.5 w-2.5" />
+                                  </button>
+                                </div>
+                              </div>
+                            )}
+
+                            {q.explanation && (
+                              <span className="text-[10px] font-bold text-amber-800 bg-amber-50 border border-amber-200 px-1.5 py-0.5 rounded-md flex items-center gap-0.5" title="Detailed explanation recorded">
+                                <Lightbulb className="h-2.5 w-2.5 text-amber-600" />
+                                <span className="hidden sm:inline">Explanation</span>
+                              </span>
+                            )}
+                          </div>
 
                           {/* ON / OFF Hindi Confirmed Lock Button */}
                           {!isEnglishSection ? (

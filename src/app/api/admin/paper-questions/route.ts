@@ -281,3 +281,105 @@ export async function DELETE(req: NextRequest) {
     return NextResponse.json({ error: err.message || "Server error" }, { status: 500 });
   }
 }
+
+export async function PATCH(req: NextRequest) {
+  try {
+    const body = await req.json();
+    const { action, paper_id, id, question_number, ordered_ids, id_a, id_b } = body;
+    const pid = Number(paper_id);
+    if (!pid) {
+      return NextResponse.json({ error: "Missing paper_id" }, { status: 400 });
+    }
+
+    // 1. Single Question Number Update
+    if (action === "update_number" && id && question_number !== undefined) {
+      const qNum = Number(question_number);
+      if (!qNum || qNum < 1) {
+        return NextResponse.json({ error: "Invalid question_number" }, { status: 400 });
+      }
+
+      const { error } = await supabaseAdmin
+        .from("paper_questions")
+        .update({ question_number: qNum })
+        .eq("id", Number(id))
+        .eq("paper_id", pid);
+
+      if (error) {
+        return NextResponse.json({ error: error.message }, { status: 500 });
+      }
+
+      await syncLocalBackup(pid);
+      return NextResponse.json({ success: true, question_number: qNum });
+    }
+
+    // 2. Swap Question Numbers between two questions
+    if (action === "swap_order" && id_a && id_b) {
+      const { data: qList, error: fetchErr } = await supabaseAdmin
+        .from("paper_questions")
+        .select("id, question_number")
+        .in("id", [Number(id_a), Number(id_b)])
+        .eq("paper_id", pid);
+
+      if (fetchErr || !qList || qList.length !== 2) {
+        return NextResponse.json({ error: "Could not find both questions to swap" }, { status: 400 });
+      }
+
+      const qA = qList.find((q) => q.id === Number(id_a));
+      const qB = qList.find((q) => q.id === Number(id_b));
+
+      if (!qA || !qB) {
+        return NextResponse.json({ error: "Questions not found" }, { status: 400 });
+      }
+
+      await supabaseAdmin
+        .from("paper_questions")
+        .update({ question_number: qB.question_number })
+        .eq("id", qA.id);
+
+      await supabaseAdmin
+        .from("paper_questions")
+        .update({ question_number: qA.question_number })
+        .eq("id", qB.id);
+
+      await syncLocalBackup(pid);
+      return NextResponse.json({ success: true, swapped: [qA.id, qB.id] });
+    }
+
+    // 3. Resequence / Auto-Renumber (1 to N)
+    if (action === "resequence") {
+      let idsToSequence: number[] = [];
+
+      if (Array.isArray(ordered_ids) && ordered_ids.length > 0) {
+        idsToSequence = ordered_ids.map(Number);
+      } else {
+        const { data: existing, error: getErr } = await supabaseAdmin
+          .from("paper_questions")
+          .select("id, question_number")
+          .eq("paper_id", pid)
+          .order("question_number", { ascending: true })
+          .order("id", { ascending: true });
+
+        if (getErr || !existing) {
+          return NextResponse.json({ error: getErr?.message || "Failed to fetch questions" }, { status: 500 });
+        }
+        idsToSequence = existing.map((q) => q.id);
+      }
+
+      for (let i = 0; i < idsToSequence.length; i++) {
+        const targetQNum = i + 1;
+        await supabaseAdmin
+          .from("paper_questions")
+          .update({ question_number: targetQNum })
+          .eq("id", idsToSequence[i])
+          .eq("paper_id", pid);
+      }
+
+      await syncLocalBackup(pid);
+      return NextResponse.json({ success: true, count: idsToSequence.length });
+    }
+
+    return NextResponse.json({ error: "Invalid action" }, { status: 400 });
+  } catch (err: any) {
+    return NextResponse.json({ error: err.message || "Server error" }, { status: 500 });
+  }
+}

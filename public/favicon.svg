@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sz-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <linearGradient id="sz-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="url(#sz-bg)" />
+  <rect width="98" height="98" x="1" y="1" rx="23" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" />
+  <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="45" letter-spacing="-1">
+    <text x="31" y="66" fill="#FFFFFF" text-anchor="middle">S</text>
+    <text x="69" y="66" fill="url(#sz-gold)" text-anchor="middle">Z</text>
+  </g>
+  <polygon points="77,16 80,24 88,27 80,30 77,38 74,30 66,27 74,24" fill="url(#sz-gold)" />
+  <circle cx="77" cy="27" r="1.5" fill="#FFFFFF" />
+</svg>

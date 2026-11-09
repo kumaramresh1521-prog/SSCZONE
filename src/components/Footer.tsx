@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { Sparkles } from "lucide-react";
+import BrandLogo from "@/components/BrandLogo";
 
 export default function Footer() {
   return (
@@ -12,12 +12,7 @@ export default function Footer() {
           
           {/* Brand info */}
           <div className="lg:col-span-2 space-y-3">
-            <Link href="/" className="inline-flex items-center gap-2 text-xl font-bold text-white tracking-tight">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 text-white">
-                <Sparkles className="h-4 w-4 text-white" />
-              </div>
-              <span>SSCZone</span>
-            </Link>
+            <BrandLogo variant="white" size="lg" />
 
             <p className="text-xs text-slate-400 leading-relaxed max-w-sm">
               Syllabus-wise MCQ practice and official previous year test series portal for SSC CGL, CHSL, CPO, MTS, and Railways examinations.

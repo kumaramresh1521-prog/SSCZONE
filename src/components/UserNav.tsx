@@ -14,9 +14,9 @@ import {
   LogIn, 
   Menu, 
   X,
-  Sparkles,
   ExternalLink
 } from "lucide-react";
+import BrandLogo from "@/components/BrandLogo";
 import NavigationIcon from "@/components/NavigationIcon";
 import { 
   MenuItemConfig, 
@@ -200,15 +200,9 @@ export default function UserNav() {
       <div className="mx-auto flex max-w-7xl w-full items-center justify-between px-3 sm:px-6 py-2.5">
         
         {/* Clean Professional Brand Logo */}
-        <Link href="/" className="group flex items-center gap-2.5 text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight shrink-0 mr-1 xl:mr-2">
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-600 text-white shadow-sm transition-transform group-hover:scale-105">
-            <Sparkles className="h-4 w-4 text-amber-300 fill-amber-300" />
-          </div>
-          <span className="flex items-center font-black">
-            <span className="text-blue-700">SSC</span>
-            <span className="text-slate-900">Zone</span>
-          </span>
-        </Link>
+        <div className="shrink-0 mr-1 xl:mr-2">
+          <BrandLogo size="md" />
+        </div>
 
         {/* Dynamic Desktop Main Navigation Bar */}
         <nav className="hidden xl:flex items-center gap-1 xl:gap-1.5 shrink-0">

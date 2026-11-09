@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { Eye, EyeOff, Lock, Mail, ArrowRight, Sparkles, ShieldCheck } from "lucide-react";
 import toast from "react-hot-toast";
+import BrandLogo from "@/components/BrandLogo";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -62,14 +63,9 @@ export default function LoginPage() {
 
       <div className="sm:mx-auto sm:w-full sm:max-w-md relative z-10 text-center px-4">
         {/* Logo */}
-        <Link href="/" className="inline-flex items-center gap-2.5 group">
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-500 text-white font-black text-xl shadow-lg shadow-blue-500/30 group-hover:scale-105 transition-transform">
-            ⚡
-          </div>
-          <span className="text-2xl font-black text-white tracking-tight">
-            SSC<span className="text-amber-400">Zone</span>
-          </span>
-        </Link>
+        <div className="flex justify-center">
+          <BrandLogo variant="white" size="xl" />
+        </div>
 
         <h2 className="mt-6 text-2xl sm:text-3xl font-black text-white tracking-tight">
           Welcome back

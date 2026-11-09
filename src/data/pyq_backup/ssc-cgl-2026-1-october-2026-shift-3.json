@@ -1,6 +1,6 @@
 [
   {
-    "id": 5802,
+    "id": 14702,
     "paper_id": 29,
     "question_text": "Find the WRONG number in the series. 11.2,\n\n16.8, 42, 146, 661.5",
     "option_a": "146",
@@ -12,7 +12,7 @@
     "explanation": null
   },
   {
-    "id": 5803,
+    "id": 14703,
     "paper_id": 29,
     "question_text": "E (B) K\n\n(C) (D)\n\n![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p2_x25.jpeg)",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_q2_opt_A.png)",
@@ -24,7 +24,7 @@
     "explanation": null
   },
   {
-    "id": 5804,
+    "id": 14704,
     "paper_id": 29,
     "question_text": "Choose the roll number with even digits only.",
     "option_a": "234x446",
@@ -36,7 +36,7 @@
     "explanation": null
   },
   {
-    "id": 5805,
+    "id": 14705,
     "paper_id": 29,
     "question_text": "Find the odd one out. Ganga, Yamuna, Godavari, Everest",
     "option_a": "Ganga",
@@ -48,7 +48,7 @@
     "explanation": null
   },
   {
-    "id": 5806,
+    "id": 14706,
     "paper_id": 29,
     "question_text": "Statements:\n\n1. The Indian Museum in Kolkata, established in 1814, is one of the oldest and most important museums in India.\n\n2. It is fully funded and managed by the Central Government, under the Ministry of Culture.\n\nConclusions:\n\nI. The Indian Museum is a centrally administered cultural institution.\n\nII. All museums in India were established before 1900 is funded by central Government .",
     "option_a": "Only conclusion I follows",
@@ -60,7 +60,7 @@
     "explanation": null
   },
   {
-    "id": 5807,
+    "id": 14707,
     "paper_id": 29,
     "question_text": "Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option.\n\nStatement: Despite the challenges faced by renewable energy sources, they are the only long-term solution to our dependency on fossil fuels. Assumptions:\n\nI. Renewable energy sources face certain challenges.\n\nII. Fossil fuels are not a sustainable long-term solution.\n\nIII. Renewable energy sources can entirely replace fossil fuels.",
     "option_a": "Only I and II are implicit",
@@ -72,7 +72,7 @@
     "explanation": null
   },
   {
-    "id": 5808,
+    "id": 14708,
     "paper_id": 29,
     "question_text": "Which of the following is/are identical to the address given: Shruti Mehta 3/6, Lotus Avenue, Lucknow, 226007\n\n1. Shruti Mehta 3/6, Lotus Avenue, Lucknow, 226007\n\n2. Shruti Mehta 3/6, Lotus Avenue, Lucknow, 226007\n\n3. Shruti Mehta 3/6, Lotus Avenue, Lucknow, 226008\n\n4. Shruti Mehta 3/6, Lotus Avenue, New Lucknow, 226007",
     "option_a": "1 and 2",
@@ -84,7 +84,7 @@
     "explanation": null
   },
   {
-    "id": 5809,
+    "id": 14709,
     "paper_id": 29,
     "question_text": "Find the next number in the sequence. 2, 5, 10, 17, ?",
     "option_a": "24",
@@ -96,7 +96,7 @@
     "explanation": null
   },
   {
-    "id": 5810,
+    "id": 14710,
     "paper_id": 29,
     "question_text": "Find the most suitable pair:",
     "option_a": "Ramayana – Ved Vyasa, Macbeth – Leo Tolstoy, Hamlet – Charles Dickens, War and Peace – William Shakespeare, Gitanjali – Rabindranath Tagore",
@@ -108,7 +108,7 @@
     "explanation": null
   },
   {
-    "id": 5811,
+    "id": 14711,
     "paper_id": 29,
     "question_text": "Complete the series. Z9, X8, V7, T6, ?",
     "option_a": "R5",
@@ -120,7 +120,7 @@
     "explanation": null
   },
   {
-    "id": 5812,
+    "id": 14712,
     "paper_id": 29,
     "question_text": "If \"SUN\" is coded as \"19 21 14\", how will \"MOON\" be coded?",
     "option_a": "12 14 14 13",
@@ -132,7 +132,7 @@
     "explanation": null
   },
   {
-    "id": 5813,
+    "id": 14713,
     "paper_id": 29,
     "question_text": "Find the INCORRECT number in the series. 5, 15, 45, 125, 405",
     "option_a": "15",
@@ -144,7 +144,7 @@
     "explanation": null
   },
   {
-    "id": 5814,
+    "id": 14714,
     "paper_id": 29,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p3_x308.jpeg)",
     "option_a": "450",
@@ -156,19 +156,19 @@
     "explanation": null
   },
   {
-    "id": 5815,
+    "id": 14715,
     "paper_id": 29,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p3_x309.jpeg)",
     "option_a": "25",
     "option_b": "30",
     "option_c": "20",
     "option_d": "15",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 14,
-    "explanation": null
+    "explanation": "By the principle of inclusion-exclusion, only Physics = 60 - 20 - 15 + 5 = 30."
   },
   {
-    "id": 5816,
+    "id": 14716,
     "paper_id": 29,
     "question_text": "Identify the figure that does not belong to the group, based on shape.",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_q15_opt_A.png)",
@@ -180,7 +180,7 @@
     "explanation": null
   },
   {
-    "id": 5817,
+    "id": 14717,
     "paper_id": 29,
     "question_text": "A shop sells pens at ₹12 each and notebooks at ₹30 each. If a customer buys 3 pens and 2 notebooks, what's the total cost?",
     "option_a": "₹96",
@@ -192,7 +192,7 @@
     "explanation": null
   },
   {
-    "id": 5818,
+    "id": 14718,
     "paper_id": 29,
     "question_text": "In the following question, two groups of letters are related by a specific pattern. Identify the same pattern and apply it to the second group to find the missing letters. ACD : BFJ :: FGH : ?",
     "option_a": "GIN",
@@ -204,7 +204,7 @@
     "explanation": null
   },
   {
-    "id": 5819,
+    "id": 14719,
     "paper_id": 29,
     "question_text": "How many letters will remain at the same position in the word 'PROBLEM' when the letters are arranged in alphabetical order from left to right?",
     "option_a": "0",
@@ -216,19 +216,19 @@
     "explanation": null
   },
   {
-    "id": 5820,
+    "id": 14720,
     "paper_id": 29,
     "question_text": "Identify the alternative set of numbers that correctly codes the word. The code uses [Row, Column] format. | | 1 | 2 | 3 | 4 | 5 | 6 | 7 | |---|---|---|---|---|---|---|---| | 1 | F | R | J | E | M | D | S | | 2 | B | O | T | T | L | E | R | | 3 | C | A | N | D | I | E | P | | 4 | J | U | M | B | L | Y | O | | 5 | W | O | N | D | E | R | S | | 6 | G | A | R | D | E | N | X | | 7 | P | L | A | N | E | T | Q | What is the correct code for \"MANIFEST\"?",
     "option_a": "(4,3)(3,2)(7,4)(3,5)(3,1)(2,5)(5,7)(4,3)",
     "option_b": "(4,3)(3,2)(7,4)(3,5)(1,4)(2,6)(5,6)(2,4)",
     "option_c": "(4,3)(3,2)(7,4)(3,5)(1,1)(2,6)(5,7)(2,3)",
     "option_d": "(4,3)(3,2)(7,4)(3,5)(4,1)(3,1)(5,6)(2,7)",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 19,
-    "explanation": null
+    "explanation": "Matrix coordinates for M-A-N-I-F-E-S-T correspond correctly to (4,3)(3,2)(7,4)(3,5)(1,1)(2,6)(5,7)(2,3)."
   },
   {
-    "id": 5821,
+    "id": 14721,
     "paper_id": 29,
     "question_text": "You're working on a team project, and a colleague asks you to cover for them by saying they were in a meeting with you yesterday afternoon, when in fact they left early without informing the manager. What should you do?",
     "option_a": "Agree to cover for them since they're a friend and would do the same for you.",
@@ -240,7 +240,7 @@
     "explanation": null
   },
   {
-    "id": 5822,
+    "id": 14722,
     "paper_id": 29,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p4_x566.jpeg)",
     "option_a": "3",
@@ -252,7 +252,7 @@
     "explanation": null
   },
   {
-    "id": 5823,
+    "id": 14723,
     "paper_id": 29,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p4_x567.jpeg)",
     "option_a": "1",
@@ -264,7 +264,7 @@
     "explanation": null
   },
   {
-    "id": 5824,
+    "id": 14724,
     "paper_id": 29,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p4_x568.jpeg)",
     "option_a": "2",
@@ -276,7 +276,7 @@
     "explanation": null
   },
   {
-    "id": 5825,
+    "id": 14725,
     "paper_id": 29,
     "question_text": "How many triangles are there in the given figure?",
     "option_a": "27",
@@ -288,7 +288,7 @@
     "explanation": null
   },
   {
-    "id": 5826,
+    "id": 14726,
     "paper_id": 29,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p4_x569.jpeg)",
     "option_a": "3",
@@ -300,7 +300,7 @@
     "explanation": null
   },
   {
-    "id": 5827,
+    "id": 14727,
     "paper_id": 29,
     "question_text": "In which period did humans first start making and using pottery?",
     "option_a": "Neolithic Age",
@@ -312,115 +312,115 @@
     "explanation": null
   },
   {
-    "id": 5828,
+    "id": 14728,
     "paper_id": 29,
     "question_text": "To which of these groups did the ambassador Heliodorus, who built the pillar at Vidisha, belong?",
     "option_a": "The Parthian",
     "option_b": "The Kushan Kingdom Kingdom",
     "option_c": "The Indo-Greek",
     "option_d": "The Indo-Scythian Kingdom Kingdom",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 27,
-    "explanation": null
+    "explanation": "Heliodorus was an ambassador sent by Indo-Greek king Antialcidas to Vidisha, belonging to the Indo-Greek Kingdom."
   },
   {
-    "id": 5829,
+    "id": 14729,
     "paper_id": 29,
     "question_text": "What does the term \"jama\" refer to in the Mughal revenue system?",
     "option_a": "Actual revenue collected during the year.",
     "option_b": "Estimated revenue assessed from an area.",
     "option_c": "Tax-free land grant to religious institutions.",
     "option_d": "Revenue assigned to jagirdars.",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 28,
-    "explanation": null
+    "explanation": "In the Mughal revenue system, 'jama' refers to estimated/assessed revenue, while actual revenue collected is 'hasil'."
   },
   {
-    "id": 5830,
+    "id": 14730,
     "paper_id": 29,
     "question_text": "According to Article 60 of the Indian Constitution, who administers the oath of office to the President of India?",
     "option_a": "Prime Minister",
     "option_b": "Vice President",
     "option_c": "Chief Justice of",
     "option_d": "Speaker of the India Lok Sabha",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 29,
-    "explanation": null
+    "explanation": "Under Article 60 of the Indian Constitution, the oath of office to the President is administered by the Chief Justice of India."
   },
   {
-    "id": 5831,
+    "id": 14731,
     "paper_id": 29,
     "question_text": "Which article of the Constitution of India states that a person must have completed the age of 35 years to be eligible for election as President?",
     "option_a": "Article 52",
     "option_b": "Article 66",
     "option_c": "Article 58",
     "option_d": "Article 84",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 30,
-    "explanation": null
+    "explanation": "Article 58 prescribes the eligibility qualifications for election as President of India, including the minimum age of 35 years."
   },
   {
-    "id": 5832,
+    "id": 14732,
     "paper_id": 29,
     "question_text": "Under Article 111 of the Indian Constitution, what does the President's \"Suspensive Veto\" power allow him to do in relation to a Bill passed by Parliament?",
     "option_a": "Withhold the Bill indefinitely",
     "option_b": "Return the Bill for reconsideration",
     "option_c": "Reject the Bill permanently",
     "option_d": "Refer the Bill to the Supreme Court",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 31,
-    "explanation": null
+    "explanation": "Under Article 111, the President's suspensive veto power allows returning a non-Money Bill to Parliament for reconsideration."
   },
   {
-    "id": 5833,
+    "id": 14733,
     "paper_id": 29,
     "question_text": "In which month was Pitt's India Act of 1784 passed?",
     "option_a": "June",
     "option_b": "August",
     "option_c": "September",
     "option_d": "March",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 32,
-    "explanation": null
+    "explanation": "Pitt's India Act of 1784 was enacted and received royal assent in August 1784."
   },
   {
-    "id": 5834,
+    "id": 14734,
     "paper_id": 29,
     "question_text": "Fill in the blank: The _______ effect describes the deflection of moving objects (like winds and ocean currents) to the right in the Northern Hemisphere due to Earth's rotation.",
     "option_a": "Doppler",
     "option_b": "Coriolis",
     "option_c": "Greenhouse",
     "option_d": "Tyndall",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 33,
-    "explanation": null
+    "explanation": "The deflection of winds and ocean currents to the right in the Northern Hemisphere due to Earth's rotation is the Coriolis effect."
   },
   {
-    "id": 5835,
+    "id": 14735,
     "paper_id": 29,
     "question_text": "In which of the following states is the Anthurium Festival celebrated?",
     "option_a": "Kerala",
     "option_b": "Mizoram",
     "option_c": "Sikkim",
     "option_d": "West Bengal",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 34,
-    "explanation": null
+    "explanation": "The Anthurium Festival is celebrated annually in Mizoram to promote tourism and horticulture."
   },
   {
-    "id": 5836,
+    "id": 14736,
     "paper_id": 29,
     "question_text": "Which principle makes an athlete responsible for any substance found in their sample?",
     "option_a": "Negligence",
     "option_b": "Strict Liability",
     "option_c": "Intentionality",
     "option_d": "Consent",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 35,
-    "explanation": null
+    "explanation": "Under the World Anti-Doping Code, the principle of 'Strict Liability' holds athletes responsible for any banned substance found in their sample."
   },
   {
-    "id": 5837,
+    "id": 14737,
     "paper_id": 29,
     "question_text": "Which of the following pairs of traditional folk dance and its associated state is correctly matched?",
     "option_a": "Gendi - Chhattisgarh",
@@ -432,55 +432,55 @@
     "explanation": null
   },
   {
-    "id": 5838,
+    "id": 14738,
     "paper_id": 29,
     "question_text": "Which of the following terms refers to the primary form of compositions in the Carnatic music tradition?",
     "option_a": "Bandish",
     "option_b": "Ghazal",
     "option_c": "Kriti",
     "option_d": "Thumri",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 37,
-    "explanation": null
+    "explanation": "Kriti is the primary form of musical composition in the Carnatic music tradition."
   },
   {
-    "id": 5839,
+    "id": 14739,
     "paper_id": 29,
     "question_text": "What is the main objective of RBI’s (Reserve Bank of India) Unified Lending Interface (ULI) initiative in India?",
     "option_a": "To replace UPI for digital payments",
     "option_b": "To enable inclusive and frictionless access to credit",
     "option_c": "To regulate global cryptocurrency transactions",
     "option_d": "To manage central bank recruitment",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 38,
-    "explanation": null
+    "explanation": "RBI's Unified Lending Interface (ULI) aims to enable inclusive and frictionless access to credit through digital data exchange."
   },
   {
-    "id": 5840,
+    "id": 14740,
     "paper_id": 29,
     "question_text": "Which of the following author-language pairs (Poetry category) for the Sahitya Akademi Award 2025 is correctly matched?",
     "option_a": "Sadhu Bhadreshdas – Urdu",
     "option_b": "Pritpal Singh Betab – Sanskrit",
     "option_c": "Nandini Sidha Reddy – Telugu",
     "option_d": "Khajur Singh Thakur – Gujarati",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 39,
-    "explanation": null
+    "explanation": "Nandini Sidha Reddy was awarded the Sahitya Akademi Award for Telugu poetry."
   },
   {
-    "id": 5841,
+    "id": 14741,
     "paper_id": 29,
     "question_text": "Which of the following correctly matches the width measurement of the pommel horse in gymnastics?",
     "option_a": "Top – 30 cm, Bottom – 35 cm",
     "option_b": "Top - 35 cm, Bottom - 30 cm",
     "option_c": "Top - 40 cm, Bottom - 35 cm",
     "option_d": "Top - 25 cm, Bottom - 30 cm",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 40,
-    "explanation": null
+    "explanation": "According to FIG apparatus norms, the pommel horse has a width of 35 cm at the top and 30 cm at the bottom."
   },
   {
-    "id": 5842,
+    "id": 14742,
     "paper_id": 29,
     "question_text": "The inclusion of Myanmar transformed BISTEC (Bangladesh, India, Sri Lanka, Thailand Economic Cooperation) into:",
     "option_a": "BBIN (Bangladesh, Bhutan, India, Nepal)",
@@ -492,7 +492,7 @@
     "explanation": null
   },
   {
-    "id": 5843,
+    "id": 14743,
     "paper_id": 29,
     "question_text": "Which of the following best defines a \"document\" under the Bharatiya Sakshya Adhiniyam, 2023?",
     "option_a": "Only written paper records signed by parties",
@@ -504,7 +504,7 @@
     "explanation": null
   },
   {
-    "id": 5844,
+    "id": 14744,
     "paper_id": 29,
     "question_text": "Who was appointed as Executive Director of the Reserve Bank of India with effect from March 3, 2026?",
     "option_a": "Ajay Seth",
@@ -516,7 +516,7 @@
     "explanation": null
   },
   {
-    "id": 5845,
+    "id": 14745,
     "paper_id": 29,
     "question_text": "Which of the following correctly identifies speech area overlap between Dravidian and Indo-Aryan groups?",
     "option_a": "Bihar appears in both Dravidian and Indo- Aryan lists",
@@ -528,7 +528,7 @@
     "explanation": null
   },
   {
-    "id": 5846,
+    "id": 14746,
     "paper_id": 29,
     "question_text": "Fill in the blank: Privatisation of public sector enterprises by selling off part of the equity of Public Sector Enterprise (PSE) to the public is known as____.",
     "option_a": "nationalisation",
@@ -540,7 +540,7 @@
     "explanation": null
   },
   {
-    "id": 5847,
+    "id": 14747,
     "paper_id": 29,
     "question_text": "Which of the following pollutants has only an annual National Ambient Air Quality Standard and is therefore not included in India’s routine Air Quality Index (AQI) calculation?",
     "option_a": "Ammonia(NH3)",
@@ -552,7 +552,7 @@
     "explanation": null
   },
   {
-    "id": 5848,
+    "id": 14748,
     "paper_id": 29,
     "question_text": "How much did the payload performance of the Small Satellite Launch Vehicle increase due to the first carbon-epoxy solid motor case used in its Solid Stage-3 motor during ISRO's 2025 Technology Demonstration tests?",
     "option_a": "40 kg",
@@ -564,7 +564,7 @@
     "explanation": null
   },
   {
-    "id": 5849,
+    "id": 14749,
     "paper_id": 29,
     "question_text": "What was a major architectural purpose of intricate jali work in Indo-Islamic buildings?",
     "option_a": "To increase structural weight and stability",
@@ -576,7 +576,7 @@
     "explanation": null
   },
   {
-    "id": 5850,
+    "id": 14750,
     "paper_id": 29,
     "question_text": "Which of the following was not one of the principal reasons for Siraj-ud-Daula’s hostility towards the English East India Company in 1756?",
     "option_a": "The Company fortified Calcutta without the Nawab’s permission.",
@@ -588,7 +588,7 @@
     "explanation": null
   },
   {
-    "id": 5851,
+    "id": 14751,
     "paper_id": 29,
     "question_text": "During physical exercise, a person's pulse rate rises from 70 beats per minute to 110 beats per minute. By how many beats per minute does the pulse rate increase?",
     "option_a": "20 beats per",
@@ -600,7 +600,7 @@
     "explanation": null
   },
   {
-    "id": 5852,
+    "id": 14752,
     "paper_id": 29,
     "question_text": "If the volume of the sphere is 697 4 cm³ then find the radius of the sphere.",
     "option_a": "5.5 cm",
@@ -612,7 +612,7 @@
     "explanation": null
   },
   {
-    "id": 5853,
+    "id": 14753,
     "paper_id": 29,
     "question_text": "The sides of a triangle are in the ratio 4:7:7. If the perimeter is 90 cm, what is the area of the triangle?",
     "option_a": "150√5cm2",
@@ -624,19 +624,19 @@
     "explanation": null
   },
   {
-    "id": 5854,
+    "id": 14754,
     "paper_id": 29,
     "question_text": "Congruent triangles are joined to form a sixsided polygon in which all sides are equal and each interior angle is obtuse. How would you classify this polygon?",
     "option_a": "Regular octagon",
     "option_b": "Regular decagon",
     "option_c": "Regular hexagon",
     "option_d": "Regular pentagon",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 53,
-    "explanation": null
+    "explanation": "A six-sided polygon with all sides equal and each interior angle obtuse (120°) is a regular hexagon."
   },
   {
-    "id": 5855,
+    "id": 14755,
     "paper_id": 29,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p7_x1334.jpeg)",
     "option_a": "0 - 20",
@@ -648,7 +648,7 @@
     "explanation": null
   },
   {
-    "id": 5856,
+    "id": 14756,
     "paper_id": 29,
     "question_text": "If sinA = 3/5 and A is acute, find the value of (1 + tan²A) / sec²A.",
     "option_a": "1",
@@ -660,19 +660,19 @@
     "explanation": null
   },
   {
-    "id": 5857,
+    "id": 14757,
     "paper_id": 29,
     "question_text": "If in a circle with center O, two chords PQ & RS are equal such that ∠POQ = 70° & ∠ORS = p°.. Calculate 3p° - 50°.",
     "option_a": "105°",
     "option_b": "115°",
     "option_c": "125°",
     "option_d": "135°",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 56,
-    "explanation": null
+    "explanation": "Equal chords subtend equal angles at the center (∠ROS = 70°); in isosceles ΔORS, base angle p = (180° - 70°)/2 = 55°, so 3p - 50° = 3(55°) - 50° = 115°."
   },
   {
-    "id": 5858,
+    "id": 14758,
     "paper_id": 29,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p7_x1335.jpeg)",
     "option_a": "30%",
@@ -684,7 +684,7 @@
     "explanation": null
   },
   {
-    "id": 5859,
+    "id": 14759,
     "paper_id": 29,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p8_x1673.jpeg)",
     "option_a": "309 million total; 61% urban",
@@ -696,19 +696,19 @@
     "explanation": null
   },
   {
-    "id": 5860,
+    "id": 14760,
     "paper_id": 29,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p8_x1674.jpeg)",
     "option_a": "Utilities, Transportation, Entertainment",
     "option_b": "Groceries, Entertainment, Savings",
     "option_c": "Transportation, Entertainment, Savings",
     "option_d": "Rent, Transportation, Savings",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 59,
-    "explanation": null
+    "explanation": "Transportation (10%) + Entertainment (10%) + Savings (15%) = 35%, which equals the allocation for Rent (35%)."
   },
   {
-    "id": 5861,
+    "id": 14761,
     "paper_id": 29,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p8_x1675.jpeg)",
     "option_a": "80-90 thousand",
@@ -720,7 +720,7 @@
     "explanation": null
   },
   {
-    "id": 5862,
+    "id": 14762,
     "paper_id": 29,
     "question_text": "A student was asked to multiply a number by 5 , but instead, he divided it by 5 . If his 9 9 answer was 56 more than the correct answer, find the number.",
     "option_a": "54",
@@ -732,31 +732,31 @@
     "explanation": null
   },
   {
-    "id": 5863,
+    "id": 14763,
     "paper_id": 29,
     "question_text": "Find the value of K if (0.9)6−(0.4)6 (0.9)4+0.1296+(0.4)4 = K .",
     "option_a": "0.35",
     "option_b": "0.45",
     "option_c": "0.25",
     "option_d": "0.65",
-    "correct_answer": "A",
+    "correct_answer": "D",
     "question_number": 62,
-    "explanation": null
+    "explanation": "Algebraic identity (a^6 - b^6)/(a^4 + a^2*b^2 + b^4) = a^2 - b^2 gives (0.9)^2 - (0.4)^2 = 0.81 - 0.16 = 0.65."
   },
   {
-    "id": 5864,
+    "id": 14764,
     "paper_id": 29,
     "question_text": "Find the remainder when (6.83 - 0.008) is divided by (6.82 + 1.36 + 0.04).",
     "option_a": "1",
     "option_b": "0",
     "option_c": "3",
     "option_d": "5",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 63,
-    "explanation": null
+    "explanation": "Since a^3 - b^3 = (a - b)(a^2 + ab + b^2) is completely divisible, the remainder is 0."
   },
   {
-    "id": 5865,
+    "id": 14765,
     "paper_id": 29,
     "question_text": "Find the mean proportional between 0.81 and\n\n4.41. (Round off to one decimal place.)",
     "option_a": "2.1",
@@ -768,7 +768,7 @@
     "explanation": null
   },
   {
-    "id": 5866,
+    "id": 14766,
     "paper_id": 29,
     "question_text": "An item is sold at 25% profit. If the cost price decreases by 10% and the selling price also decreases by 10%, the new profit percentage will be:",
     "option_a": "20%",
@@ -780,7 +780,7 @@
     "explanation": null
   },
   {
-    "id": 5867,
+    "id": 14767,
     "paper_id": 29,
     "question_text": "In ΔPQR, I is a point which is equidistant from all the sides of a Δ. If ∠PRQ = 30°, then find ∠QIR + ∠PIR.",
     "option_a": "275°",
@@ -792,7 +792,7 @@
     "explanation": null
   },
   {
-    "id": 5868,
+    "id": 14768,
     "paper_id": 29,
     "question_text": "The angle of elevation of the top of a tower from two points at distances a and b from the base of the tower and in the same straight line with it are 30° and 60° respectively. If the height of the tower is h, find h in terms of b.",
     "option_a": "h = b√2",
@@ -804,7 +804,7 @@
     "explanation": null
   },
   {
-    "id": 5869,
+    "id": 14769,
     "paper_id": 29,
     "question_text": "A square lawn is enclosed by a path of uniform width 2.5 m. Given that the area of the path is 165 m², determine the side length of the square lawn.",
     "option_a": "12 m",
@@ -816,7 +816,7 @@
     "explanation": null
   },
   {
-    "id": 5870,
+    "id": 14770,
     "paper_id": 29,
     "question_text": "In a circle, chord AB subtends an angle of 42° at point P on the circumference. Find the angle subtended by the same chord at another point Q lying on the same segment.",
     "option_a": "21°",
@@ -828,7 +828,7 @@
     "explanation": null
   },
   {
-    "id": 5871,
+    "id": 14771,
     "paper_id": 29,
     "question_text": "In two congruent right-angled triangles ABC and PQR, angles A and P are 90°. If BC = 15 cm and PR = 9 cm, find AB.",
     "option_a": "15 cm",
@@ -840,7 +840,7 @@
     "explanation": null
   },
   {
-    "id": 5872,
+    "id": 14772,
     "paper_id": 29,
     "question_text": "Two circles of radii 13 cm and 15 cm intersect, and the distance between their centers is 14 cm. Find the length of their common chord.",
     "option_a": "5 cm",
@@ -852,7 +852,7 @@
     "explanation": null
   },
   {
-    "id": 5873,
+    "id": 14773,
     "paper_id": 29,
     "question_text": "A merchant has a total of 1000 kg of sugar. He sells part of it at a profit of 8% and the remaining at a profit of 18%. If his overall profit is 14%, how much of the sugar was sold at 18% profit?",
     "option_a": "400 kg",
@@ -864,7 +864,7 @@
     "explanation": null
   },
   {
-    "id": 5874,
+    "id": 14774,
     "paper_id": 29,
     "question_text": "Two circles have radii 8 cm and 5 cm. If the length of their transverse common tangent is 16 cm, find the distance between their centers (in cm).",
     "option_a": "5√17 cm",
@@ -876,19 +876,19 @@
     "explanation": null
   },
   {
-    "id": 5875,
+    "id": 14775,
     "paper_id": 29,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-1-october-2026-shift-3_p9_x1985.jpeg)",
     "option_a": "45%",
     "option_b": "40%",
     "option_c": "30%",
     "option_d": "35%",
-    "correct_answer": "D",
+    "correct_answer": "C",
     "question_number": 74,
-    "explanation": null
+    "explanation": "Coal reduction is (1/5)*3000 = 600 units; raising Natural Gas (2000 units) by 600 units requires an increase of (600/2000)*100 = 30%."
   },
   {
-    "id": 5876,
+    "id": 14776,
     "paper_id": 29,
     "question_text": "In a corporate shareholder election, 60% of the voters were male, and the rest were female. 40% of the male voters and 70% of the female voters voted for Proposal A. If the total number of voters who did not vote for Proposal A is 1,200, find the total number of shareholders who cast a vote.",
     "option_a": "2,400",
@@ -900,7 +900,7 @@
     "explanation": null
   },
   {
-    "id": 5877,
+    "id": 14777,
     "paper_id": 29,
     "question_text": "**Comprehension (Q. 76 - 80):** Once a revered ritual, letter writing has steadily (1) ____ into a relic of bygone eras, displaced by the relentless immediacy of digital communication. There was a time when a single envelope, ink- smudged and weatherworn, (2) ____ profound intimacies across continents, preserving sentiments too sacred to entrust to fleeting conversations. Today's sterile texts and hastily composed emails seldom replicate the tactility that imbued handwritten letters with gravitas; every flourish, every hesitant stroke, bore the (3) vestiges of a soul laid bare. It is not merely nostalgia that compels some to cling to this endangered practice, but recognition that certain articulations of the heart (4) ____ better when filtered through the slowness of ink and parchment. Indeed, the act of penning a letter demands a kind of (5) deliberateness rare in an age characterized by impulsivity and ephemerality. Though the world races ever forward, perhaps in the margins of our modern lives, the art of letter-writing will preserve a fragile thread tethering us to a slower, richer past.\n\n---\n\nIn the following question, a sentence with a blank is given, followed by five words labeled\n\n(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Choose correct tense.(1)",
     "option_a": "diminish",
@@ -912,7 +912,7 @@
     "explanation": null
   },
   {
-    "id": 5878,
+    "id": 14778,
     "paper_id": 29,
     "question_text": "**Comprehension (Q. 76 - 80):** Once a revered ritual, letter writing has steadily (1) ____ into a relic of bygone eras, displaced by the relentless immediacy of digital communication. There was a time when a single envelope, ink- smudged and weatherworn, (2) ____ profound intimacies across continents, preserving sentiments too sacred to entrust to fleeting conversations. Today's sterile texts and hastily composed emails seldom replicate the tactility that imbued handwritten letters with gravitas; every flourish, every hesitant stroke, bore the (3) vestiges of a soul laid bare. It is not merely nostalgia that compels some to cling to this endangered practice, but recognition that certain articulations of the heart (4) ____ better when filtered through the slowness of ink and parchment. Indeed, the act of penning a letter demands a kind of (5) deliberateness rare in an age characterized by impulsivity and ephemerality. Though the world races ever forward, perhaps in the margins of our modern lives, the art of letter-writing will preserve a fragile thread tethering us to a slower, richer past.\n\n---\n\nIn the following question, a sentence with a blank is given, followed by five words labeled\n\n(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Choose correct verb form.(2)",
     "option_a": "convey",
@@ -924,7 +924,7 @@
     "explanation": null
   },
   {
-    "id": 5879,
+    "id": 14779,
     "paper_id": 29,
     "question_text": "**Comprehension (Q. 76 - 80):** Once a revered ritual, letter writing has steadily (1) ____ into a relic of bygone eras, displaced by the relentless immediacy of digital communication. There was a time when a single envelope, ink- smudged and weatherworn, (2) ____ profound intimacies across continents, preserving sentiments too sacred to entrust to fleeting conversations. Today's sterile texts and hastily composed emails seldom replicate the tactility that imbued handwritten letters with gravitas; every flourish, every hesitant stroke, bore the (3) vestiges of a soul laid bare. It is not merely nostalgia that compels some to cling to this endangered practice, but recognition that certain articulations of the heart (4) ____ better when filtered through the slowness of ink and parchment. Indeed, the act of penning a letter demands a kind of (5) deliberateness rare in an age characterized by impulsivity and ephemerality. Though the world races ever forward, perhaps in the margins of our modern lives, the art of letter-writing will preserve a fragile thread tethering us to a slower, richer past.\n\n---\n\nIn the following question, a sentence with a blank is given, followed by five words labeled\n\n(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. The word \"vestiges\" most nearly means:\n\n(3)",
     "option_a": "Polished",
@@ -936,7 +936,7 @@
     "explanation": null
   },
   {
-    "id": 5880,
+    "id": 14780,
     "paper_id": 29,
     "question_text": "**Comprehension (Q. 76 - 80):** Once a revered ritual, letter writing has steadily (1) ____ into a relic of bygone eras, displaced by the relentless immediacy of digital communication. There was a time when a single envelope, ink- smudged and weatherworn, (2) ____ profound intimacies across continents, preserving sentiments too sacred to entrust to fleeting conversations. Today's sterile texts and hastily composed emails seldom replicate the tactility that imbued handwritten letters with gravitas; every flourish, every hesitant stroke, bore the (3) vestiges of a soul laid bare. It is not merely nostalgia that compels some to cling to this endangered practice, but recognition that certain articulations of the heart (4) ____ better when filtered through the slowness of ink and parchment. Indeed, the act of penning a letter demands a kind of (5) deliberateness rare in an age characterized by impulsivity and ephemerality. Though the world races ever forward, perhaps in the margins of our modern lives, the art of letter-writing will preserve a fragile thread tethering us to a slower, richer past.\n\n---\n\nIn the following question, a sentence with a blank is given, followed by five words labeled\n\n(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Choose correct tense. (4)",
     "option_a": "transpires",
@@ -948,7 +948,7 @@
     "explanation": null
   },
   {
-    "id": 5881,
+    "id": 14781,
     "paper_id": 29,
     "question_text": "**Comprehension (Q. 76 - 80):** Once a revered ritual, letter writing has steadily (1) ____ into a relic of bygone eras, displaced by the relentless immediacy of digital communication. There was a time when a single envelope, ink- smudged and weatherworn, (2) ____ profound intimacies across continents, preserving sentiments too sacred to entrust to fleeting conversations. Today's sterile texts and hastily composed emails seldom replicate the tactility that imbued handwritten letters with gravitas; every flourish, every hesitant stroke, bore the (3) vestiges of a soul laid bare. It is not merely nostalgia that compels some to cling to this endangered practice, but recognition that certain articulations of the heart (4) ____ better when filtered through the slowness of ink and parchment. Indeed, the act of penning a letter demands a kind of (5) deliberateness rare in an age characterized by impulsivity and ephemerality. Though the world races ever forward, perhaps in the margins of our modern lives, the art of letter-writing will preserve a fragile thread tethering us to a slower, richer past.\n\n---\n\nIn the following question, a sentence with a blank is given, followed by five words labeled\n\n(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. The word “deliberateness” most nearly means:\n\n(5)",
     "option_a": "Spontaneity",
@@ -960,7 +960,7 @@
     "explanation": null
   },
   {
-    "id": 5882,
+    "id": 14782,
     "paper_id": 29,
     "question_text": "What is the correct one-word substitution for \"descent from an ancestor; family or ancestral line\"?",
     "option_a": "Heritage",
@@ -972,7 +972,7 @@
     "explanation": null
   },
   {
-    "id": 5883,
+    "id": 14783,
     "paper_id": 29,
     "question_text": "Fill in the blank with the appropriate adverb. The technology has ________ transformed the field of molecular biology.",
     "option_a": "marginally",
@@ -984,7 +984,7 @@
     "explanation": null
   },
   {
-    "id": 5884,
+    "id": 14784,
     "paper_id": 29,
     "question_text": "Choose the correct direct speech form of the following sentence. They asked if I enjoyed working in a fastpaced environment.",
     "option_a": "They said, \"Do they enjoy working in a fast- paced environment?\"",
@@ -996,7 +996,7 @@
     "explanation": null
   },
   {
-    "id": 5885,
+    "id": 14785,
     "paper_id": 29,
     "question_text": "Rearrange the parts of the sentence in the correct order. The expansion of space programs P. has led to discussions on regulatory frameworks, Q. as technological capabilities advance at an unprecedented pace R. among major spacefaring nations and private entities S. ensuring peaceful exploration and equitable resource distribution",
     "option_a": "QPSR",
@@ -1008,7 +1008,7 @@
     "explanation": null
   },
   {
-    "id": 5886,
+    "id": 14786,
     "paper_id": 29,
     "question_text": "What does the idiom \"Best of both worlds\" mean?",
     "option_a": "Experiencing the advantages of two different situations at the same time",
@@ -1020,7 +1020,7 @@
     "explanation": null
   },
   {
-    "id": 5887,
+    "id": 14787,
     "paper_id": 29,
     "question_text": "Identify the error in the sentence. He was late to an meeting scheduled at 9 AM.",
     "option_a": "an",
@@ -1032,7 +1032,7 @@
     "explanation": null
   },
   {
-    "id": 5888,
+    "id": 14788,
     "paper_id": 29,
     "question_text": "What does the idiom \"A bolt from the blue\" mean?",
     "option_a": "A sudden and unexpected event",
@@ -1044,7 +1044,7 @@
     "explanation": null
   },
   {
-    "id": 5889,
+    "id": 14789,
     "paper_id": 29,
     "question_text": "Improve the sentence by choosing the correct parts of speech. In the beginning of the meeting, there were several misunderstandings due to unclear communication from the head of the department.",
     "option_a": "At the beginning of the meeting, there were several misunderstandings due to unclear communication from the head of the department.",
@@ -1056,19 +1056,19 @@
     "explanation": null
   },
   {
-    "id": 5890,
+    "id": 14790,
     "paper_id": 29,
     "question_text": "Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?\n\n1. Some theories suggest that language evolved as a tool for social bonding, replacing grooming behavior seen in primates.\n\n2. The development of complex language is considered one of the most defining traits of Homo sapiens.\n\n3. Archaeological evidence shows that early humans created symbolic representations, such as cave paintings, which indicate the ability to communicate abstract ideas.\n\n4. The emergence of language enabled cooperation, cultural transmission, and the rapid expansion of human societies.\n\n5. Scientists continue to study the origins of language using genetics, neurology, and comparative studies of primates.",
     "option_a": "3-2-1-5-4",
     "option_b": "1-3-4-2-5",
     "option_c": "2-1-3-4-5",
     "option_d": "4-3-2-1-5",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 89,
-    "explanation": null
+    "explanation": "Sentence 2 introduces complex language in Homo sapiens, followed logically by theories (1), archaeological evidence (3), societal expansion (4), and ongoing research (5), forming sequence 2-1-3-4-5."
   },
   {
-    "id": 5891,
+    "id": 14791,
     "paper_id": 29,
     "question_text": "Which of the following pairs of homonyms can be used to fill in the blanks most suitably? The two knights engaged in a fierce ______, using swords with ______ edges.",
     "option_a": "dual, duel",
@@ -1080,7 +1080,7 @@
     "explanation": null
   },
   {
-    "id": 5892,
+    "id": 14792,
     "paper_id": 29,
     "question_text": "Identify the error in the sentence. He is more smarter than anyone else in class.",
     "option_a": "more",
@@ -1092,7 +1092,7 @@
     "explanation": null
   },
   {
-    "id": 5893,
+    "id": 14793,
     "paper_id": 29,
     "question_text": "Fill in the blank with the correctly spelt word. His ________ mannerisms made him a target for ridicule.",
     "option_a": "grotesque",
@@ -1104,7 +1104,7 @@
     "explanation": null
   },
   {
-    "id": 5894,
+    "id": 14794,
     "paper_id": 29,
     "question_text": "Select the most appropriate antonym of the given word. Intransigent",
     "option_a": "Unyielding",
@@ -1116,7 +1116,7 @@
     "explanation": null
   },
   {
-    "id": 5895,
+    "id": 14795,
     "paper_id": 29,
     "question_text": "Identify the misspelt word.",
     "option_a": "Licencious",
@@ -1128,7 +1128,7 @@
     "explanation": null
   },
   {
-    "id": 5896,
+    "id": 14796,
     "paper_id": 29,
     "question_text": "Spot the correct spelling of blood-vessel narrowing.",
     "option_a": "Vasoconstriction",
@@ -1140,7 +1140,7 @@
     "explanation": null
   },
   {
-    "id": 5897,
+    "id": 14797,
     "paper_id": 29,
     "question_text": "Choose the correct one-word substitute for: 'Travelling from place to place for work.'",
     "option_a": "Premedieval",
@@ -1152,7 +1152,7 @@
     "explanation": null
   },
   {
-    "id": 5898,
+    "id": 14798,
     "paper_id": 29,
     "question_text": "Select the sentence containing the homonym of the highlighted word: The manuscript bore a colophon detailing the scribe's name.",
     "option_a": "The typesetter inserted a printer's colophon on the final page.",
@@ -1164,7 +1164,7 @@
     "explanation": null
   },
   {
-    "id": 5899,
+    "id": 14799,
     "paper_id": 29,
     "question_text": "Choose the most suitable option to replace the highlighted part of the sentence: She sings good for her age.",
     "option_a": "sings greatly",
@@ -1176,7 +1176,7 @@
     "explanation": null
   },
   {
-    "id": 5900,
+    "id": 14800,
     "paper_id": 29,
     "question_text": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. He said, \"What time does the train arrive?\"",
     "option_a": "He asked what time does the train arrive.",
@@ -1188,7 +1188,7 @@
     "explanation": null
   },
   {
-    "id": 5901,
+    "id": 14801,
     "paper_id": 29,
     "question_text": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. I said to her, \"What are your plans for tomorrow?\"",
     "option_a": "I asked her what her plans for the next day were.",

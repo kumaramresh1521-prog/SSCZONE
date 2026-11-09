@@ -1,6 +1,6 @@
 [
   {
-    "id": 6902,
+    "id": 15802,
     "paper_id": 40,
     "question_text": "Seminar dates: 15th, 17th, and 19th March Cities: Nashik, Aurangabad, Thane\n\n• Nashik's seminar came just before Thane's.\n\n• Aurangabad's seminar was not on 15th. What is the date of the Thane seminar?",
     "option_a": "15th March",
@@ -12,7 +12,7 @@
     "explanation": null
   },
   {
-    "id": 6903,
+    "id": 15803,
     "paper_id": 40,
     "question_text": "Select the set of numbers that is similar to the following set. (3, 4, 12, 39)",
     "option_a": "(3, 15, 23, 45)",
@@ -24,7 +24,7 @@
     "explanation": null
   },
   {
-    "id": 6904,
+    "id": 15804,
     "paper_id": 40,
     "question_text": "A man sells an article for Rs. 720 with a loss of 10%. What was the cost price?",
     "option_a": "Rs. 740",
@@ -36,7 +36,7 @@
     "explanation": null
   },
   {
-    "id": 6905,
+    "id": 15805,
     "paper_id": 40,
     "question_text": "2 men and 3 women can complete a task in 12 days. 4 men and 6 women can do it in how many days?",
     "option_a": "6",
@@ -48,7 +48,7 @@
     "explanation": null
   },
   {
-    "id": 6906,
+    "id": 15806,
     "paper_id": 40,
     "question_text": "Find the missing number: 121:100::81:?",
     "option_a": "100",
@@ -60,7 +60,7 @@
     "explanation": null
   },
   {
-    "id": 6907,
+    "id": 15807,
     "paper_id": 40,
     "question_text": "Eleven friends — A, B, C, D, E, F, G, H, I, J, and K — are sitting in a straight line in the first row of a concert hall facing the stage. Read the clues carefully and answer the question that follows: E is seated immediately to the left of I, and third to the right of A. K is a neighbor of F and D, and is sitting third to the right of G. C is sitting second to the right of H, who is at one of the extreme ends. G is seated next to the right of I, and I is seated second to the right of B. J is not at any end and sits immediately left of D. Who is sitting in the center of the row?",
     "option_a": "J",
@@ -72,7 +72,7 @@
     "explanation": null
   },
   {
-    "id": 6908,
+    "id": 15808,
     "paper_id": 40,
     "question_text": "Find the number that best completes the analogy. A : 8 :: G : ?",
     "option_a": "48",
@@ -84,7 +84,7 @@
     "explanation": null
   },
   {
-    "id": 6909,
+    "id": 15809,
     "paper_id": 40,
     "question_text": "What comes next in the series: 0, 1, 1, 2, 3, 5, 8, ?",
     "option_a": "13",
@@ -96,19 +96,19 @@
     "explanation": null
   },
   {
-    "id": 6910,
+    "id": 15810,
     "paper_id": 40,
     "question_text": "If PENCIL is written as PLCINE, how is LIVING written?",
     "option_a": "LGINV",
     "option_b": "LGINIV",
     "option_c": "LGIINV",
     "option_d": "LGIVIN",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 9,
-    "explanation": null
+    "explanation": "First letter 'L' remains fixed while the remaining letters are reversed/rearranged to form 'LGINIV' (Option A was a truncated 5-letter typo)."
   },
   {
-    "id": 6911,
+    "id": 15811,
     "paper_id": 40,
     "question_text": "Study the information below and answer the following questions: P % Q means P is the brother of Q P $ Q means P is the daughter of Q P # Q means P is the husband of Q P & Q means P is the son of Q P @ Q means P is the wife of Q If P is the daughter of T's brother in law, then which of the following expression is true?",
     "option_a": "L $ Q % R $ T",
@@ -120,7 +120,7 @@
     "explanation": null
   },
   {
-    "id": 6912,
+    "id": 15812,
     "paper_id": 40,
     "question_text": "If SIMPLE is coded as TJNPMF, how is TJNPMF coded?",
     "option_a": "UKOQNG",
@@ -132,7 +132,7 @@
     "explanation": null
   },
   {
-    "id": 6913,
+    "id": 15813,
     "paper_id": 40,
     "question_text": "In a certain code language, \"MANAGEMENT\" is written as \"MBNBGFMFNU\". How will \"DEVELOPMENT\" be written?",
     "option_a": "DVFFLPPNEOT",
@@ -144,31 +144,31 @@
     "explanation": null
   },
   {
-    "id": 6914,
+    "id": 15814,
     "paper_id": 40,
     "question_text": "Which of the following numbers will replace the question mark (?) in the given series? 121, 337, ?, 1321, 2185",
     "option_a": "705",
     "option_b": "713",
     "option_c": "718",
     "option_d": "721",
-    "correct_answer": "A",
+    "correct_answer": "D",
     "question_number": 13,
-    "explanation": null
+    "explanation": "Pattern is n^3 - (n-1) for odd n: 5^3-4=121, 7^3-6=337, 9^3-8=721, 11^3-10=1321, 13^3-12=2185."
   },
   {
-    "id": 6915,
+    "id": 15815,
     "paper_id": 40,
     "question_text": "How many such R are there which are immediately preceded by T and immediately followed by P? Sequence: TRPTRTPRRTRPPT",
     "option_a": "1",
     "option_b": "2",
     "option_c": "3",
     "option_d": "4",
-    "correct_answer": "B",
+    "correct_answer": "C",
     "question_number": 14,
-    "explanation": null
+    "explanation": "There are 3 instances of 'TRP' in the sequence TRPTRTRPRRTRPPT (at positions 1-3, 6-8, and 11-13)."
   },
   {
-    "id": 6916,
+    "id": 15816,
     "paper_id": 40,
     "question_text": "How many letters will remain at the same position in the word 'CARTOON' when these letters are arranged in reverse alphabetical order?",
     "option_a": "0",
@@ -180,7 +180,7 @@
     "explanation": null
   },
   {
-    "id": 6917,
+    "id": 15817,
     "paper_id": 40,
     "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 10 3 17 7 6 29 2 5 8 ?",
     "option_a": "17",
@@ -192,7 +192,7 @@
     "explanation": null
   },
   {
-    "id": 6918,
+    "id": 15818,
     "paper_id": 40,
     "question_text": "Suppose six members A, B, C, D, E, and F are part of the same family tree. The person B is the son of C, while C is not the mother of B. A is married to C, and F is the brother of C. D is the daughter of A, whereas E is the brother of B. Who is the father of B?",
     "option_a": "F",
@@ -204,7 +204,7 @@
     "explanation": null
   },
   {
-    "id": 6919,
+    "id": 15819,
     "paper_id": 40,
     "question_text": "Select the odd number pair from the given alternatives.",
     "option_a": "35, 1260",
@@ -216,7 +216,7 @@
     "explanation": null
   },
   {
-    "id": 6920,
+    "id": 15820,
     "paper_id": 40,
     "question_text": "Carefully examine the two statements and analyse whether one is the reason for the other, if they are unrelated, or if both result from a separate factor. Select the option that best represents this relationship.\n\nStatements:",
     "option_a": "Statement (A) is the cause and statement (B) is its effect.",
@@ -228,7 +228,7 @@
     "explanation": null
   },
   {
-    "id": 6921,
+    "id": 15821,
     "paper_id": 40,
     "question_text": "During a farewell party, you notice a colleague who has recently experienced the loss of a loved one appears visibly uncomfortable with the celebration. Which of the following actions represents the most professional and empathetic response?",
     "option_a": "Inform the colleague that they should not have chosen to attend if they were feeling uncomfortable.",
@@ -240,7 +240,7 @@
     "explanation": null
   },
   {
-    "id": 6922,
+    "id": 15822,
     "paper_id": 40,
     "question_text": "A veterinarian needs a skilled assistant for her clinic, which specialises exclusively in handling aggressive and traumatised rescue dogs. Which candidate is the best choice?",
     "option_a": "Mark, who has ten years of experience working with calm, well-behaved house pets.",
@@ -252,7 +252,7 @@
     "explanation": null
   },
   {
-    "id": 6923,
+    "id": 15823,
     "paper_id": 40,
     "question_text": "Read the statement carefully and assume it to be true. Then examine the two conclusions given below it and decide which conclusion(s), if any, logically follow from the statement.\n\nStatement: A city planning authority has developed mixed-use zoning regulations to integrate residential, commercial, and recreational spaces within urban zones.\n\nConclusions:\n\nI. Separate zoning systems have been completely abolished everywhere.\n\nII. Mixed-use zoning eliminates all urban congestion issues.",
     "option_a": "Only conclusion I follows",
@@ -264,7 +264,7 @@
     "explanation": null
   },
   {
-    "id": 6924,
+    "id": 15824,
     "paper_id": 40,
     "question_text": "Select the option that is related to the third word in the same way as the second word is related to the first word. North : South-East :: East : ?",
     "option_a": "South-West",
@@ -276,19 +276,19 @@
     "explanation": null
   },
   {
-    "id": 6925,
+    "id": 15825,
     "paper_id": 40,
     "question_text": "As the 'Force' is related to 'Newton', in the same way, 'Work' is related to ______.",
     "option_a": "Joule",
     "option_b": "Pascal",
     "option_c": "Ampere",
     "option_d": "Volt",
-    "correct_answer": "B",
+    "correct_answer": "A",
     "question_number": 24,
-    "explanation": null
+    "explanation": "Force is measured in Newtons (SI unit), similarly Work is measured in Joules (SI unit)."
   },
   {
-    "id": 6926,
+    "id": 15826,
     "paper_id": 40,
     "question_text": "Read the given statement carefully and the following assumptions based on it. Decide which of the assumptions are implicit in the statement.\n\nStatement: To maintain the highest standards of safety and compliance, the factory management has mandated that all workers must wear high-visibility gear while operating within the warehouse zone. Assumptions:\n\nI. The use of high-visibility gear is effective in reducing accidents and ensuring safety in warehouse environments.\n\nII. Before the implementation of this mandate, workers were intentionally disregarding safety protocols.",
     "option_a": "Only Assumption I is implicit",
@@ -300,7 +300,7 @@
     "explanation": null
   },
   {
-    "id": 6927,
+    "id": 15827,
     "paper_id": 40,
     "question_text": "The Human Development Index (HDI) focuses on Gross National Income (GNI) per capita, rather than Gross Domestic Product (GDP) per capita, and aims to:",
     "option_a": "Exclude foreign income earned within a country.",
@@ -312,7 +312,7 @@
     "explanation": null
   },
   {
-    "id": 6928,
+    "id": 15828,
     "paper_id": 40,
     "question_text": "What is a major challenge in accurately assessing the Air Quality Index (AQI) in remote areas?",
     "option_a": "Inadequate monitoring equipment",
@@ -324,31 +324,31 @@
     "explanation": null
   },
   {
-    "id": 6929,
+    "id": 15829,
     "paper_id": 40,
     "question_text": "Who is the father of the space program of India?",
     "option_a": "Satish Dhawan",
     "option_b": "Vikram Sarabhai",
     "option_c": "Homi J. Bhabha",
     "option_d": "Dr. A.P.J. Abdul Kalam",
-    "correct_answer": "D",
+    "correct_answer": "B",
     "question_number": 28,
-    "explanation": null
+    "explanation": "Dr. Vikram Sarabhai is universally recognized as the Father of the Indian Space Program."
   },
   {
-    "id": 6930,
+    "id": 15830,
     "paper_id": 40,
     "question_text": "Which space agency collaborated with ISRO for the NISAR mission?",
     "option_a": "NASA",
     "option_b": "JAXA",
     "option_c": "Roscosmos",
     "option_d": "ESA",
-    "correct_answer": "B",
+    "correct_answer": "A",
     "question_number": 29,
-    "explanation": null
+    "explanation": "NISAR stands for NASA-ISRO Synthetic Aperture Radar, a joint mission between NASA and ISRO."
   },
   {
-    "id": 6931,
+    "id": 15831,
     "paper_id": 40,
     "question_text": "The Battle of Khanwa in 1527 CE was fought between Babur and:",
     "option_a": "Rana Sanga",
@@ -360,19 +360,19 @@
     "explanation": null
   },
   {
-    "id": 6932,
+    "id": 15832,
     "paper_id": 40,
     "question_text": "Which Indian writer became the youngest to win the Sahitya Akademi Yuva Puraskar in 2011?",
     "option_a": "Arundhathi",
     "option_b": "Tanuj Solanki Subramaniam",
     "option_c": "Meena",
     "option_d": "Vikram Sampath Kandasamy",
-    "correct_answer": "A",
+    "correct_answer": "D",
     "question_number": 31,
-    "explanation": null
+    "explanation": "Vikram Sampath won the inaugural Sahitya Akademi Yuva Puraskar in 2011 in English for his biography of Gauhar Jaan."
   },
   {
-    "id": 6933,
+    "id": 15833,
     "paper_id": 40,
     "question_text": "Which of the following was a key objective of the Fifth Five-Year Plan in the industrial sector?",
     "option_a": "Complete privatization of industries",
@@ -384,7 +384,7 @@
     "explanation": null
   },
   {
-    "id": 6934,
+    "id": 15834,
     "paper_id": 40,
     "question_text": "In 2009, which Indian author became the youngest person to win the Man Asian Literary Prize for The White Tiger?",
     "option_a": "Chetan Bhagat",
@@ -396,19 +396,19 @@
     "explanation": null
   },
   {
-    "id": 6935,
+    "id": 15835,
     "paper_id": 40,
     "question_text": "What is the chess notation for castling kingside?",
     "option_a": "0-0",
     "option_b": "Kc1",
     "option_c": "CK",
     "option_d": "KxK",
-    "correct_answer": "D",
+    "correct_answer": "A",
     "question_number": 34,
-    "explanation": null
+    "explanation": "In standard chess notation, kingside castling is designated by '0-0'."
   },
   {
-    "id": 6936,
+    "id": 15836,
     "paper_id": 40,
     "question_text": "The \"Bengal Sati Regulation\" passed in 1829, which outlawed the practice of Sati, was primarily due to the efforts of:",
     "option_a": "Lord Dalhousie and the Sepoy Mutiny",
@@ -420,31 +420,31 @@
     "explanation": null
   },
   {
-    "id": 6937,
+    "id": 15837,
     "paper_id": 40,
     "question_text": "Who was appointed India's Comptroller and Auditor General (CAG) in November 2024?",
     "option_a": "Rajiv Mehrishi",
     "option_b": "K. Sanjay Murthy",
     "option_c": "G.C. Murmu",
     "option_d": "Vinod Rai",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 36,
-    "explanation": null
+    "explanation": "K. Sanjay Murthy was appointed as the Comptroller and Auditor General (CAG) of India in November 2024."
   },
   {
-    "id": 6938,
+    "id": 15838,
     "paper_id": 40,
     "question_text": "Which of the following freedom fighters was given the title 'Daughter of the hills' by Jawaharlal Nehru?",
     "option_a": "Chandraprava",
     "option_b": "Mahadevi Verma Saikiani",
     "option_c": "Rani Gaidinliu",
     "option_d": "Kanaklata Barua",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 37,
-    "explanation": null
+    "explanation": "Jawaharlal Nehru conferred the title 'Daughter of the hills' on Rani Gaidinliu in 1937."
   },
   {
-    "id": 6939,
+    "id": 15839,
     "paper_id": 40,
     "question_text": "Which is NOT a major thermal power station in India?",
     "option_a": "Vijayawada",
@@ -456,7 +456,7 @@
     "explanation": null
   },
   {
-    "id": 6940,
+    "id": 15840,
     "paper_id": 40,
     "question_text": "Read the following three statements about the Gudi Padwa festival and select the correct option:\n\n1. ) Gudi Padwa marks the Marathi New Year on Vaishakh first day.\n\n2. ) Gudi, a symbol of victory, is made with bamboo, neem, and sugar garlands.\n\n3. ) Traditions include eating neem with Pan and Puran Poli.",
     "option_a": "Only 1",
@@ -468,7 +468,7 @@
     "explanation": null
   },
   {
-    "id": 6941,
+    "id": 15841,
     "paper_id": 40,
     "question_text": "What is the weight of a standard shot put used by men?",
     "option_a": "7.26 kg",
@@ -480,7 +480,7 @@
     "explanation": null
   },
   {
-    "id": 6942,
+    "id": 15842,
     "paper_id": 40,
     "question_text": "Which of the following about India's South Asia Satellite (GSAT-9) is/are correct?\n\n1) It has 12 Ku-band transponders, including one allocated to Pakistan.\n\n2) It was fully funded by India to aid six South Asian nations in communication and disaster response.",
     "option_a": "Only 1 is correct",
@@ -492,7 +492,7 @@
     "explanation": null
   },
   {
-    "id": 6943,
+    "id": 15843,
     "paper_id": 40,
     "question_text": "As per Article 62(2) of the Constitution, if the office of the President falls vacant due to death, resignation, or removal, what is the maximum time limit prescribed for holding the election to fill that vacancy?",
     "option_a": "Three months of",
@@ -504,7 +504,7 @@
     "explanation": null
   },
   {
-    "id": 6944,
+    "id": 15844,
     "paper_id": 40,
     "question_text": "Which article of the Constitution of India explicitly states that Union Ministers shall hold office during the pleasure of the President?",
     "option_a": "Article 71",
@@ -516,7 +516,7 @@
     "explanation": null
   },
   {
-    "id": 6945,
+    "id": 15845,
     "paper_id": 40,
     "question_text": "Which moon is the largest natural satellite of Saturn?",
     "option_a": "Ganymede",
@@ -528,7 +528,7 @@
     "explanation": null
   },
   {
-    "id": 6946,
+    "id": 15846,
     "paper_id": 40,
     "question_text": "Which of the following statements correctly describes the height of the troposphere at the equator and poles?",
     "option_a": "The height of the troposphere is about 18 km at the equator and about 8 km at the poles.",
@@ -540,7 +540,7 @@
     "explanation": null
   },
   {
-    "id": 6947,
+    "id": 15847,
     "paper_id": 40,
     "question_text": "How is the Sun Temple at Modhera traditionally oriented to incorporate solar alignment?",
     "option_a": "West-facing, to catch the sunset during summer solstices",
@@ -552,7 +552,7 @@
     "explanation": null
   },
   {
-    "id": 6948,
+    "id": 15848,
     "paper_id": 40,
     "question_text": "Under the U.S. (United States) EPA (Environmental Protection Agency) Air Quality Index system, how is the overall Air Quality Index value for a day determined?",
     "option_a": "By considering only the AQI (Air Quality Index)value for ozone",
@@ -564,7 +564,7 @@
     "explanation": null
   },
   {
-    "id": 6949,
+    "id": 15849,
     "paper_id": 40,
     "question_text": "What economic crisis prompted India to introduce the New Economic Policy (NEP) in 1991?",
     "option_a": "Fiscal deficit financing crisis",
@@ -576,7 +576,7 @@
     "explanation": null
   },
   {
-    "id": 6950,
+    "id": 15850,
     "paper_id": 40,
     "question_text": "An object is placed 30 cm (centimeter) in front of a thin converging lens whose focal length is 15 cm (centimeter). What is the distance of the image from the lens?",
     "option_a": "10 (centimeter)",
@@ -588,7 +588,7 @@
     "explanation": null
   },
   {
-    "id": 6951,
+    "id": 15851,
     "paper_id": 40,
     "question_text": "A child consumes a diet that contains very few fresh fruits and vegetables. After several months, the child develops bleeding gums and reduced resistance to infections. Which vitamin deficiency is the most likely cause of these symptoms?",
     "option_a": "Vitamin A",
@@ -600,7 +600,7 @@
     "explanation": null
   },
   {
-    "id": 6952,
+    "id": 15852,
     "paper_id": 40,
     "question_text": "A hemispherical dome has a diameter of 7 meters. If the cost of painting is Rs. 500 per square meter, what will be the total cost to paint the dome?",
     "option_a": "Rs. 38500",
@@ -612,7 +612,7 @@
     "explanation": null
   },
   {
-    "id": 6953,
+    "id": 15853,
     "paper_id": 40,
     "question_text": "If sin θ+ cos θ= √2 , then what is the value of sin4 θ+ cos4 θ ?",
     "option_a": "1 ![Option A](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-2_q52_opt_A.png)",
@@ -624,7 +624,7 @@
     "explanation": null
   },
   {
-    "id": 6954,
+    "id": 15854,
     "paper_id": 40,
     "question_text": "The height of a cone is 27 cm, and its volume is 900π cm³. What is the radius of its base?",
     "option_a": "12 cm",
@@ -636,7 +636,7 @@
     "explanation": null
   },
   {
-    "id": 6955,
+    "id": 15855,
     "paper_id": 40,
     "question_text": "A cone's height is 3 times its radius. Express total surface area in terms of radius.",
     "option_a": "πr 2(1 + √10)",
@@ -648,43 +648,43 @@
     "explanation": null
   },
   {
-    "id": 6956,
+    "id": 15856,
     "paper_id": 40,
     "question_text": "Find the value of (6.25)³/2−(1.44)³/2 .\n\n6.25+3+1.44",
     "option_a": "1.8",
     "option_b": "1.3",
     "option_c": "2.4",
     "option_d": "2.8",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 55,
-    "explanation": null
+    "explanation": "Using identity (a^3 - b^3)/(a^2 + ab + b^2) = a - b where a = sqrt(6.25) = 2.5 and b = sqrt(1.44) = 1.2 gives 2.5 - 1.2 = 1.3."
   },
   {
-    "id": 6957,
+    "id": 15857,
     "paper_id": 40,
     "question_text": "P, Q, and R can complete a work in 12, 16, and 24 days respectively. They start together, but P leaves after 3 days and Q leaves 2 days before the completion of the work. In how many days is the work completed?",
     "option_a": "4 1 days",
     "option_b": "5 2 days 5",
     "option_c": "8 2 5 days",
     "option_d": "9 1 5 days",
-    "correct_answer": "D",
+    "correct_answer": "C",
     "question_number": 56,
-    "explanation": null
+    "explanation": "Total work is 48 units; 4*3 + 3*(D-2) + 2*D = 48 => 5D = 42 => D = 8 2/5 days."
   },
   {
-    "id": 6958,
+    "id": 15858,
     "paper_id": 40,
     "question_text": "Aman and Rohit have two glasses of equal volume. Both contain some milk. Aman says to Rohit, \"Give me one-third of the milk in your glass so that my glass becomes full.\" Rohit says to Aman, \"Instead, you give me one-fifth of the milk in your glass so that my glass becomes full.\" Find the ratio of the milk in their glasses.",
     "option_a": "2:3",
     "option_b": "5:6",
     "option_c": "4:7",
     "option_d": "7:5",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 57,
-    "explanation": null
+    "explanation": "Equal volume gives A + R/3 = R + A/5 => (4/5)A = (2/3)R => A:R = 5:6."
   },
   {
-    "id": 6959,
+    "id": 15859,
     "paper_id": 40,
     "question_text": "A and B started a business jointly. A’s investment was thrice that of B, and the period of his investment was twice that of B. If B received ₹4,000 as profit, then what was the total profit?",
     "option_a": "₹24,000",
@@ -696,7 +696,7 @@
     "explanation": null
   },
   {
-    "id": 6960,
+    "id": 15860,
     "paper_id": 40,
     "question_text": "A sum of ₹10,500 amounts to ₹13,650 in 3 years at a certain rate of simple interest. If the rate is increased by 2%, what will be the amount of the same sum in the same time?",
     "option_a": "₹14,280",
@@ -708,7 +708,7 @@
     "explanation": null
   },
   {
-    "id": 6961,
+    "id": 15861,
     "paper_id": 40,
     "question_text": "A hall has an area of 18√3 m² . It is to be paved with regular hexagonal tiles of side 15 cm. If the side of each tile is doubled, how will the number of tiles required change?",
     "option_a": "Becomes half",
@@ -720,7 +720,7 @@
     "explanation": null
   },
   {
-    "id": 6962,
+    "id": 15862,
     "paper_id": 40,
     "question_text": "A circle has a radius of 35 cm. Find the length of the arc that subtends an angle of 72 degrees at the centre. (Take π= 22 ) 7",
     "option_a": "64 cm",
@@ -732,19 +732,19 @@
     "explanation": null
   },
   {
-    "id": 6963,
+    "id": 15863,
     "paper_id": 40,
     "question_text": "A fruit seller sells apples at a profit of 5%. If he had bought them at 5% less and sold them for ₹1 less, he would have gained 10%. Find the cost price of the apples.",
     "option_a": "₹400",
     "option_b": "₹200",
     "option_c": "₹600",
     "option_d": "₹800",
-    "correct_answer": "C",
+    "correct_answer": "B",
     "question_number": 62,
-    "explanation": null
+    "explanation": "Let CP = 100x; SP1 = 105x, CP2 = 95x, SP2 = 1.10(95x) = 104.5x; 105x - 104.5x = 1 => 0.5x = 1 => CP = Rs. 200."
   },
   {
-    "id": 6964,
+    "id": 15864,
     "paper_id": 40,
     "question_text": "A shopkeeper sells an article for ₹480, offering a 20% discount. If sold at full price, he would have earned a 25% profit. Find the cost price.",
     "option_a": "₹360",
@@ -756,19 +756,19 @@
     "explanation": null
   },
   {
-    "id": 6965,
+    "id": 15865,
     "paper_id": 40,
     "question_text": "In triangle XYZ, ∠X = 65° and ∠Y = 55°. which of the following is correct?",
     "option_a": "XY < XZ",
     "option_b": "XZ < XY",
     "option_c": "YZ < XY",
     "option_d": "XZ > YZ",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 64,
-    "explanation": null
+    "explanation": "In triangle XYZ, angle Z = 60°; since angle Y (55°) < angle Z (60°) < angle X (65°), the opposite sides satisfy XZ < XY < YZ, hence XZ < XY."
   },
   {
-    "id": 6966,
+    "id": 15866,
     "paper_id": 40,
     "question_text": "If tan θ= 1 , find the value of cosec² θ+sec² θ . 2 cosec² θ−sec² θ",
     "option_a": "−5",
@@ -780,7 +780,7 @@
     "explanation": null
   },
   {
-    "id": 6967,
+    "id": 15867,
     "paper_id": 40,
     "question_text": "If x= 9 + 4√5 , what is the value of (√x+ √x)² 1 ?",
     "option_a": "15",
@@ -792,7 +792,7 @@
     "explanation": null
   },
   {
-    "id": 6968,
+    "id": 15868,
     "paper_id": 40,
     "question_text": "If √2 = 1.414 , then find the value of 2+3√2 . √2 \\)",
     "option_a": "1.542",
@@ -804,7 +804,7 @@
     "explanation": null
   },
   {
-    "id": 6969,
+    "id": 15869,
     "paper_id": 40,
     "question_text": "In triangle △ABC , AD and BE are altitudes drawn from vertices A and B to sides BC and AC, respectively, with AD⊥BC and BE⊥AC . The altitudes intersect at point F. If BF is equal in length to AC, determine the measure of ∠ABC .",
     "option_a": "25°",
@@ -816,7 +816,7 @@
     "explanation": null
   },
   {
-    "id": 6970,
+    "id": 15870,
     "paper_id": 40,
     "question_text": "A circle has diameter 34 cm. Two equal chords AB and CD are parallel. AD is a diameter. If AB is 8 cm from the centre, find the length of CD.",
     "option_a": "10 cm",
@@ -828,7 +828,7 @@
     "explanation": null
   },
   {
-    "id": 6971,
+    "id": 15871,
     "paper_id": 40,
     "question_text": "From external point P, a secant passes through the circle intersecting at A and B (PA = 4 cm, PB = 9 cm). A tangent from P touches the circle at T. What is PT?",
     "option_a": "3 cm",
@@ -840,7 +840,7 @@
     "explanation": null
   },
   {
-    "id": 6972,
+    "id": 15872,
     "paper_id": 40,
     "question_text": "If the difference between two complementary angles is π radians, what are the two angles in degrees?",
     "option_a": "60° and 30°",
@@ -852,7 +852,7 @@
     "explanation": null
   },
   {
-    "id": 6973,
+    "id": 15873,
     "paper_id": 40,
     "question_text": "An electronics manufacturer decreases the selling price of its flagship smartphone by 20%. As a result, the volume of daily sales increases by x%. If the overall daily revenue generated by the smartphone increases by 12%, find the value of\n\nx.",
     "option_a": "38",
@@ -864,7 +864,7 @@
     "explanation": null
   },
   {
-    "id": 6974,
+    "id": 15874,
     "paper_id": 40,
     "question_text": "If A = (3a + 5b)² and B = (3a - 5b)², which of the following expressions is exactly equal to A - B?",
     "option_a": "15ab",
@@ -876,7 +876,7 @@
     "explanation": null
   },
   {
-    "id": 6975,
+    "id": 15875,
     "paper_id": 40,
     "question_text": "A vessel contains 240 litres of a mixture of milk and water in the ratio 7:\n\n5. First, 40 litres of the mixture is removed and replaced with an equal volume of pure water. Then, 60 litres of the resulting mixture is removed and replaced with an equal volume of pure milk. What is the quantity of milk in the vessel at the end?",
     "option_a": "92.5 litres",
@@ -888,7 +888,7 @@
     "explanation": null
   },
   {
-    "id": 6976,
+    "id": 15876,
     "paper_id": 40,
     "question_text": "Two circles are non-intersecting and lie completely external to each other. What is the total number of common tangents (both direct and transverse combined) that can be drawn to these two circles?",
     "option_a": "2",
@@ -900,7 +900,7 @@
     "explanation": null
   },
   {
-    "id": 6977,
+    "id": 15877,
     "paper_id": 40,
     "question_text": "**Comprehension (Q. 76 - 79):** The evolution of computers is typically divided into generations, each characterized by significant technological breakthroughs. The First Generation (1940-1956) operated on vacuum tubes, devices that were large, inefficient, and prone to overheating. Programming was tedious, requiring direct interaction with machine language, limiting user accessibility. With the Second Generation (1956- 1963) came transistors, replacing vacuum tubes and greatly enhancing reliability while reducing size and cost. High-level programming languages like COBOL and FORTRAN appeared, making computers more versatile. The Third Generation (1964-1971) introduced integrated circuits, allowing thousands of electronic components to fit onto a single chip. Computers became smaller, faster, and more powerful. Operating systems began to emerge, enabling machines to run multiple applications simultaneously. The Fourth Generation (1971- present) saw the invention of the microprocessor, condensing the central processing unit onto a single chip. This innovation ushered in the era of personal computers, making technology widely accessible to businesses and households alike. Now, in the Fifth Generation, research focuses on artificial intelligence, machine learning, and quantum computing. These developments aim not only to enhance computational speed and storage but also to enable machines to mimic human reasoning and decision-making processes. As technology evolves, the boundary between human capabilities and machine intelligence continues to blur, promising both unprecedented opportunities and profound ethical challenges.\n\n---\n\nIdentify the correct tense used in the sentence: \"With the Second Generation (1956-1963) came transistors, replacing vacuum tubes and greatly enhancing reliability.\"",
     "option_a": "Simple Present",
@@ -912,7 +912,7 @@
     "explanation": null
   },
   {
-    "id": 6978,
+    "id": 15878,
     "paper_id": 40,
     "question_text": "**Comprehension (Q. 76 - 79):** The evolution of computers is typically divided into generations, each characterized by significant technological breakthroughs. The First Generation (1940-1956) operated on vacuum tubes, devices that were large, inefficient, and prone to overheating. Programming was tedious, requiring direct interaction with machine language, limiting user accessibility. With the Second Generation (1956- 1963) came transistors, replacing vacuum tubes and greatly enhancing reliability while reducing size and cost. High-level programming languages like COBOL and FORTRAN appeared, making computers more versatile. The Third Generation (1964-1971) introduced integrated circuits, allowing thousands of electronic components to fit onto a single chip. Computers became smaller, faster, and more powerful. Operating systems began to emerge, enabling machines to run multiple applications simultaneously. The Fourth Generation (1971- present) saw the invention of the microprocessor, condensing the central processing unit onto a single chip. This innovation ushered in the era of personal computers, making technology widely accessible to businesses and households alike. Now, in the Fifth Generation, research focuses on artificial intelligence, machine learning, and quantum computing. These developments aim not only to enhance computational speed and storage but also to enable machines to mimic human reasoning and decision-making processes. As technology evolves, the boundary between human capabilities and machine intelligence continues to blur, promising both unprecedented opportunities and profound ethical challenges.\n\n---\n\nAccording to the passage, why is the fifth generation of computers considered especially significant?",
     "option_a": "It reduced the cost of machines drastically.",
@@ -924,19 +924,19 @@
     "explanation": null
   },
   {
-    "id": 6979,
+    "id": 15879,
     "paper_id": 40,
     "question_text": "**Comprehension (Q. 76 - 79):** The evolution of computers is typically divided into generations, each characterized by significant technological breakthroughs. The First Generation (1940-1956) operated on vacuum tubes, devices that were large, inefficient, and prone to overheating. Programming was tedious, requiring direct interaction with machine language, limiting user accessibility. With the Second Generation (1956- 1963) came transistors, replacing vacuum tubes and greatly enhancing reliability while reducing size and cost. High-level programming languages like COBOL and FORTRAN appeared, making computers more versatile. The Third Generation (1964-1971) introduced integrated circuits, allowing thousands of electronic components to fit onto a single chip. Computers became smaller, faster, and more powerful. Operating systems began to emerge, enabling machines to run multiple applications simultaneously. The Fourth Generation (1971- present) saw the invention of the microprocessor, condensing the central processing unit onto a single chip. This innovation ushered in the era of personal computers, making technology widely accessible to businesses and households alike. Now, in the Fifth Generation, research focuses on artificial intelligence, machine learning, and quantum computing. These developments aim not only to enhance computational speed and storage but also to enable machines to mimic human reasoning and decision-making processes. As technology evolves, the boundary between human capabilities and machine intelligence continues to blur, promising both unprecedented opportunities and profound ethical challenges.\n\n---\n\nIdentify the function of the phrase \"ushered in the first generation of computers\" in the sentence: \"The invention of vacuum tubes in the 1940s ushered in the first generation of computers.\"",
     "option_a": "Subject",
     "option_b": "Object",
     "option_c": "Adverbial Phrase",
     "option_d": "Predicate",
-    "correct_answer": "A",
+    "correct_answer": "D",
     "question_number": 78,
-    "explanation": null
+    "explanation": "'The invention of vacuum tubes in the 1940s' is the subject, and 'ushered in the first generation of computers' functions as the predicate."
   },
   {
-    "id": 6980,
+    "id": 15880,
     "paper_id": 40,
     "question_text": "**Comprehension (Q. 76 - 79):** The evolution of computers is typically divided into generations, each characterized by significant technological breakthroughs. The First Generation (1940-1956) operated on vacuum tubes, devices that were large, inefficient, and prone to overheating. Programming was tedious, requiring direct interaction with machine language, limiting user accessibility. With the Second Generation (1956- 1963) came transistors, replacing vacuum tubes and greatly enhancing reliability while reducing size and cost. High-level programming languages like COBOL and FORTRAN appeared, making computers more versatile. The Third Generation (1964-1971) introduced integrated circuits, allowing thousands of electronic components to fit onto a single chip. Computers became smaller, faster, and more powerful. Operating systems began to emerge, enabling machines to run multiple applications simultaneously. The Fourth Generation (1971- present) saw the invention of the microprocessor, condensing the central processing unit onto a single chip. This innovation ushered in the era of personal computers, making technology widely accessible to businesses and households alike. Now, in the Fifth Generation, research focuses on artificial intelligence, machine learning, and quantum computing. These developments aim not only to enhance computational speed and storage but also to enable machines to mimic human reasoning and decision-making processes. As technology evolves, the boundary between human capabilities and machine intelligence continues to blur, promising both unprecedented opportunities and profound ethical challenges.\n\n---\n\nWhat is the meaning of the word \"ushered in\" as used in the passage?",
     "option_a": "Ignored",
@@ -948,7 +948,7 @@
     "explanation": null
   },
   {
-    "id": 6981,
+    "id": 15881,
     "paper_id": 40,
     "question_text": "Which word from the passage best conveys the idea of \"enhancing performance through gradual evolution rather than sudden invention\"?",
     "option_a": "Revolutionized",
@@ -960,7 +960,7 @@
     "explanation": null
   },
   {
-    "id": 6982,
+    "id": 15882,
     "paper_id": 40,
     "question_text": "Fill in the blank with an appropriate degree of comparison. He wrote with ______ skill, weaving intricate narratives effortlessly into complex themes.",
     "option_a": "utmost",
@@ -972,7 +972,7 @@
     "explanation": null
   },
   {
-    "id": 6983,
+    "id": 15883,
     "paper_id": 40,
     "question_text": "Rearrange the parts of the sentence in the correct order. With FIFA's decision to expand the 2026 World Cup to 48 teams, P. despite concerns/player fatigue and scheduling congestion in an already crowded football calendar, Q. with critics arguing that the dilution of quality and increased logistical challenges could diminish the tournament's prestige, R. while commercial stakeholders welcomed the move due to its potential to generate higher broadcasting revenues S. football federations worldwide debated the impact of this expansion on competitiveness,",
     "option_a": "SQPR",
@@ -984,7 +984,7 @@
     "explanation": null
   },
   {
-    "id": 6984,
+    "id": 15884,
     "paper_id": 40,
     "question_text": "Rearrange the parts of the sentence in the correct order. Excessive use of social media has P. affecting self-esteem and emotional wellbeing due to Q. teenagers and young adults, R. been linked to mental health issues among S. unrealistic portrayals of success and beauty",
     "option_a": "PSRQ",
@@ -996,7 +996,7 @@
     "explanation": null
   },
   {
-    "id": 6985,
+    "id": 15885,
     "paper_id": 40,
     "question_text": "Identify the error in the sentence. The team have completed their project ahead of schedule",
     "option_a": "have",
@@ -1008,7 +1008,7 @@
     "explanation": null
   },
   {
-    "id": 6986,
+    "id": 15886,
     "paper_id": 40,
     "question_text": "What is the best meaning of the idiom \"Birds of a feather flock together\"?",
     "option_a": "People with similar interests or characteristics tend to associate with each other.",
@@ -1020,19 +1020,19 @@
     "explanation": null
   },
   {
-    "id": 6987,
+    "id": 15887,
     "paper_id": 40,
     "question_text": "Select the incorrectly spelt word.",
     "option_a": "Vignette",
     "option_b": "Viguour",
     "option_c": "Victuals",
     "option_d": "Vindicate",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 86,
-    "explanation": null
+    "explanation": "'Viguour' is incorrectly spelt; the correct spelling is 'Vigour' (or 'Vigor')."
   },
   {
-    "id": 6988,
+    "id": 15888,
     "paper_id": 40,
     "question_text": "Select the most appropriate synonym of the given word: BELLICOSE",
     "option_a": "Peaceful",
@@ -1044,43 +1044,43 @@
     "explanation": null
   },
   {
-    "id": 6989,
+    "id": 15889,
     "paper_id": 40,
     "question_text": "Select the most appropriate antonym of the given word. Inveterate 10",
     "option_a": "Chronic",
     "option_b": "Casual",
     "option_c": "Habitual",
     "option_d": "Long-standing",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 88,
-    "explanation": null
+    "explanation": "'Inveterate' means deeply ingrained or chronic; its antonym is 'Casual'."
   },
   {
-    "id": 6990,
+    "id": 15890,
     "paper_id": 40,
     "question_text": "Choose the correct meaning of idiom: Break the fourth wall",
     "option_a": "To construct a theater set",
     "option_b": "To hide from the audience",
     "option_c": "To address the audience directly",
     "option_d": "To remove a character from a play",
-    "correct_answer": "D",
+    "correct_answer": "C",
     "question_number": 89,
-    "explanation": null
+    "explanation": "The idiom 'Break the fourth wall' means to address or acknowledge the audience directly."
   },
   {
-    "id": 6991,
+    "id": 15891,
     "paper_id": 40,
     "question_text": "Select the most appropriate antonym of the given word. Somniferous",
     "option_a": "Somnolent",
     "option_b": "Sedative",
     "option_c": "Stimulant",
     "option_d": "Sleep-inducing",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 90,
-    "explanation": null
+    "explanation": "'Somniferous' means sleep-inducing; its antonym is 'Stimulant'."
   },
   {
-    "id": 6992,
+    "id": 15892,
     "paper_id": 40,
     "question_text": "Identify the misspelt word.",
     "option_a": "Deliquesce",
@@ -1092,7 +1092,7 @@
     "explanation": null
   },
   {
-    "id": 6993,
+    "id": 15893,
     "paper_id": 40,
     "question_text": "Identify the misspelt word.",
     "option_a": "Discomfiture",
@@ -1104,7 +1104,7 @@
     "explanation": null
   },
   {
-    "id": 6994,
+    "id": 15894,
     "paper_id": 40,
     "question_text": "Choose the correct one-word substitute for: 'The centre of attraction or attention.'",
     "option_a": "LOCUS",
@@ -1116,7 +1116,7 @@
     "explanation": null
   },
   {
-    "id": 6995,
+    "id": 15895,
     "paper_id": 40,
     "question_text": "Change the following from active to passive: The child broke the window.",
     "option_a": "The window has been broken by the child.",
@@ -1128,7 +1128,7 @@
     "explanation": null
   },
   {
-    "id": 6996,
+    "id": 15896,
     "paper_id": 40,
     "question_text": "Select the sentence containing the homonym of the highlighted word: The zoologist highlighted the rostrum in the dolphin's skull.",
     "option_a": "The orator stood on the rostrum to address the assembly.",
@@ -1140,7 +1140,7 @@
     "explanation": null
   },
   {
-    "id": 6997,
+    "id": 15897,
     "paper_id": 40,
     "question_text": "Convert the sentence provided below from its passive voice structure to an active voice structure: It had been acknowledged that the consignment was being rerouted without authorization.",
     "option_a": "The consignment acknowledged rerouting itself without authorization.",
@@ -1152,7 +1152,7 @@
     "explanation": null
   },
   {
-    "id": 6998,
+    "id": 15898,
     "paper_id": 40,
     "question_text": "Convert the sentence provided below from its passive voice structure to an active voice structure: Has the suspect been identified by the intelligence unit yet?",
     "option_a": "Has the intelligence unit identified the suspect yet?",
@@ -1164,7 +1164,7 @@
     "explanation": null
   },
   {
-    "id": 6999,
+    "id": 15899,
     "paper_id": 40,
     "question_text": "Choose the most suitable option to replace the highlighted part of the sentence: She died from cancer last year.",
     "option_a": "died of",
@@ -1176,7 +1176,7 @@
     "explanation": null
   },
   {
-    "id": 7000,
+    "id": 15900,
     "paper_id": 40,
     "question_text": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. The man said, \"I bought a new car yesterday.\"",
     "option_a": "The man said he had bought a new car the day before.",
@@ -1188,7 +1188,7 @@
     "explanation": null
   },
   {
-    "id": 7001,
+    "id": 15901,
     "paper_id": 40,
     "question_text": "Rearrange the following sentences in correct order to make a logical passage.\n\n1. The first stage involves identifying suitable candidates.\n\n2. The recruitment process is vital for any organization.\n\n3. Subsequent steps include interviews and background checks.\n\n4. The goal is to find the best fit for the company culture.",
     "option_a": "2-4-1-3",

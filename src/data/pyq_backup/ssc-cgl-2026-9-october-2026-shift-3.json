@@ -1,6 +1,6 @@
 [
   {
-    "id": 7302,
+    "id": 16202,
     "paper_id": 44,
     "question_text": "Statement: The bank has reported a 25% rise in the number of online transactions this year. Inference: A. Customers are shifting to digital banking. B. The bank forced people to use online transactions.",
     "option_a": "Only A is a valid inference",
@@ -12,19 +12,19 @@
     "explanation": null
   },
   {
-    "id": 7303,
+    "id": 16203,
     "paper_id": 44,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p2_x25.jpeg)",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p2_x26.jpeg)",
     "option_b": "![Option B](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p2_x27.jpeg)",
     "option_c": "![Option C](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p2_x28.jpeg)",
     "option_d": "![Option D](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p2_x29.jpeg)",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 2,
-    "explanation": null
+    "explanation": "Opposite faces in the net are H-E, M-V, and W-L, matching net C."
   },
   {
-    "id": 7304,
+    "id": 16204,
     "paper_id": 44,
     "question_text": "Which of the following options classifies the given roll numbers based on the pattern observed? Roll Numbers: 225, 227, 229, 231",
     "option_a": "Increasing by 1",
@@ -36,31 +36,31 @@
     "explanation": null
   },
   {
-    "id": 7305,
+    "id": 16205,
     "paper_id": 44,
     "question_text": "Choose the island that does not fit",
     "option_a": "Bali",
     "option_b": "Sumatra",
     "option_c": "Java",
     "option_d": "Madagascar",
-    "correct_answer": "A",
+    "correct_answer": "D",
     "question_number": 4,
-    "explanation": null
+    "explanation": "Bali, Sumatra, and Java are Indonesian islands, whereas Madagascar is an island nation off East Africa."
   },
   {
-    "id": 7306,
+    "id": 16206,
     "paper_id": 44,
     "question_text": "Statement: In the past five years, the number of foreign tourists visiting historical sites in Country X has remained constant. However, the revenue from tourism has increased by 20% annually.\n\nConclusions:\n\nI. The tourism department has raised entry fees for historical sites.\n\nII. Tourists are spending more on services like guided tours and souvenirs.",
     "option_a": "Only conclusion I follows",
     "option_b": "Only conclusion II follows",
     "option_c": "Neither conclusion I nor II follows",
     "option_d": "Both conclusion I and II follow",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 5,
-    "explanation": null
+    "explanation": "Neither conclusion I nor II definitely follows from the statement as they are merely hypotheses."
   },
   {
-    "id": 7307,
+    "id": 16207,
     "paper_id": 44,
     "question_text": "The migration pattern of birds was recorded as 3, 6, 12, 24/four intervals. What is the next number in the sequence?",
     "option_a": "36",
@@ -72,7 +72,7 @@
     "explanation": null
   },
   {
-    "id": 7308,
+    "id": 16208,
     "paper_id": 44,
     "question_text": "If \"ROCKET\" is written as \"18 15 3 11 5 20\", then how is \"SPACE\" coded?",
     "option_a": "19 16 1 3 5",
@@ -84,7 +84,7 @@
     "explanation": null
   },
   {
-    "id": 7309,
+    "id": 16209,
     "paper_id": 44,
     "question_text": "In a survey, 25 people like Tea, 20 like Coffee, and 10 like both. How many like only Tea?",
     "option_a": "15",
@@ -96,7 +96,7 @@
     "explanation": null
   },
   {
-    "id": 7310,
+    "id": 16210,
     "paper_id": 44,
     "question_text": "In a survey, 150 people were asked about Yoga, Meditation, and Gym. 60 do Yoga, 80 do Meditation, 50 do Gym, 30 do Yoga and Meditation, 20 do Meditation and Gym, 15 do Yoga and Gym, and 10 do all three. How many do none?",
     "option_a": "15",
@@ -108,7 +108,7 @@
     "explanation": null
   },
   {
-    "id": 7311,
+    "id": 16211,
     "paper_id": 44,
     "question_text": "The population of a town increases by 10% annually. If the present population is 60,500, what was it two years ago?",
     "option_a": "50,000",
@@ -120,7 +120,7 @@
     "explanation": null
   },
   {
-    "id": 7312,
+    "id": 16212,
     "paper_id": 44,
     "question_text": "In this sequence, what follows next: 2P, 5M, 10J, 17G, ?",
     "option_a": "24 F",
@@ -132,19 +132,19 @@
     "explanation": null
   },
   {
-    "id": 7313,
+    "id": 16213,
     "paper_id": 44,
     "question_text": "In the following question, two groups of letters are related by a specific pattern. Identify the same pattern and apply it to the second group to find the missing letters. ADF : WUZ :: PQR : ?",
     "option_a": "KJI",
     "option_b": "KIJ",
     "option_c": "JKI",
     "option_d": "JIK",
-    "correct_answer": "A",
+    "correct_answer": "D",
     "question_number": 12,
-    "explanation": null
+    "explanation": "ADF : WUZ follows the reverse alphabetical cipher permutation (middle, last, first), mapping PQR to JIK."
   },
   {
-    "id": 7314,
+    "id": 16214,
     "paper_id": 44,
     "question_text": "Choose the option that perfectly matches the given address. Original Address: Suite No. 9C-21King’s Court Residency, Phase-IIDr. B.R. Ambedkar RoadMumbai, Maharashtra 400012India",
     "option_a": "Suite No. 9C-21King’s Court Residency, Phase-IDr. B.R. Ambedkar RoadMumbai, Maharashtra 400012India",
@@ -156,7 +156,7 @@
     "explanation": null
   },
   {
-    "id": 7315,
+    "id": 16215,
     "paper_id": 44,
     "question_text": "How many such letters are there in the word BIRD, which are in the same position as in the English alphabet?",
     "option_a": "1",
@@ -168,7 +168,7 @@
     "explanation": null
   },
   {
-    "id": 7316,
+    "id": 16216,
     "paper_id": 44,
     "question_text": "Study the pattern in the given series and find the next set of letters in the series. ARO, CQQ, EPS, ?",
     "option_a": "GOU",
@@ -180,67 +180,67 @@
     "explanation": null
   },
   {
-    "id": 7317,
+    "id": 16217,
     "paper_id": 44,
     "question_text": "How many triangles are there in the given figure?",
     "option_a": "40",
     "option_b": "44",
     "option_c": "48",
     "option_d": "42",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 16,
-    "explanation": null
+    "explanation": "Standard counting geometric figure has 44 total triangles."
   },
   {
-    "id": 7318,
+    "id": 16218,
     "paper_id": 44,
     "question_text": "You're a nurse and notice that a patient has been given a slightly higher dose of medication than what was prescribed, but the patient shows no adverse symptoms, and the shift is about to end. What should you do?",
     "option_a": "Say nothing since the patient seems fine and the shift is ending.",
     "option_b": "Document the discrepancy, inform the doctor, monitor, and hand off.",
     "option_c": "Quietly correct the dosage in the next round without telling anyone",
     "option_d": "Mention it casually to the incoming nurse without formal documentation",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 17,
-    "explanation": null
+    "explanation": "Professional medical nursing protocol mandates documenting discrepancy, informing the doctor, and monitoring the patient."
   },
   {
-    "id": 7319,
+    "id": 16219,
     "paper_id": 44,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p3_x306.jpeg)",
     "option_a": "2",
     "option_b": "1",
     "option_c": "4",
     "option_d": "3",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 18,
-    "explanation": null
+    "explanation": "Non-verbal analogy: cyclic position shift and orientation change yields Answer Figure 1, which corresponds to Option B."
   },
   {
-    "id": 7320,
+    "id": 16220,
     "paper_id": 44,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p4_x545.jpeg)",
     "option_a": "2",
     "option_b": "4",
     "option_c": "1",
     "option_d": "3",
-    "correct_answer": "A",
+    "correct_answer": "D",
     "question_number": 19,
-    "explanation": null
+    "explanation": "The central intersection with four arms and crossed diagonal lines is embedded in Answer Figure 3 (Option D)."
   },
   {
-    "id": 7321,
+    "id": 16221,
     "paper_id": 44,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p4_x546.jpeg)",
     "option_a": "b",
     "option_b": "d",
     "option_c": "c",
     "option_d": "e",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 20,
-    "explanation": null
+    "explanation": "Figure (d) contains two disconnected parallel diagonals instead of a single cross-quadrant triangle (Option B)."
   },
   {
-    "id": 7322,
+    "id": 16222,
     "paper_id": 44,
     "question_text": "How many triangles are there in the given figure?",
     "option_a": "32",
@@ -252,19 +252,19 @@
     "explanation": null
   },
   {
-    "id": 7323,
+    "id": 16223,
     "paper_id": 44,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p4_x548.jpeg)",
     "option_a": "1",
     "option_b": "2",
     "option_c": "3",
     "option_d": "4",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 22,
-    "explanation": null
+    "explanation": "Positions and multiplicities swap: single square top-left and double arc bottom-right gives Answer Figure 2 (Option B)."
   },
   {
-    "id": 7324,
+    "id": 16224,
     "paper_id": 44,
     "question_text": "Fill in the blanks (_) using one of the following four options such that the series follows a specific pattern in the given order. _ op _ mo _ n _ _ pnmop _",
     "option_a": "mnpmon",
@@ -276,31 +276,31 @@
     "explanation": null
   },
   {
-    "id": 7325,
+    "id": 16225,
     "paper_id": 44,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p4_x549.jpeg)",
     "option_a": "1",
     "option_b": "2",
     "option_c": "3",
     "option_d": "4",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 24,
-    "explanation": null
+    "explanation": "Figure X is embedded in the center and diagonal lines of Answer Figure 2 (Option B)."
   },
   {
-    "id": 7326,
+    "id": 16226,
     "paper_id": 44,
     "question_text": "What follows: BCZ, DEY, FGX, HIW, JKV, ?",
     "option_a": "LNU",
     "option_b": "LMU",
     "option_c": "MNU",
     "option_d": "LMV",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 25,
-    "explanation": null
+    "explanation": "First letters +2 (J->L), second letters +2 (K->M), third letters -1 (V->U) gives LMU (Option B)."
   },
   {
-    "id": 7327,
+    "id": 16227,
     "paper_id": 44,
     "question_text": "Langhnaj, Devnimori, and Tarsang are major excavated Mesolithic sites located in which Indian state?",
     "option_a": "Gujarat",
@@ -312,7 +312,7 @@
     "explanation": null
   },
   {
-    "id": 7328,
+    "id": 16228,
     "paper_id": 44,
     "question_text": "What does the term ‘malfuzat’ primarily refer to in the context of medieval Indian Sufism?",
     "option_a": "Doctrinal treatises written by Sufi saints",
@@ -324,7 +324,7 @@
     "explanation": null
   },
   {
-    "id": 7329,
+    "id": 16229,
     "paper_id": 44,
     "question_text": "Which prominent dynasty maintained territorial control/significant sections of the ancient Silk Route?",
     "option_a": "The Kushana",
@@ -336,7 +336,7 @@
     "explanation": null
   },
   {
-    "id": 7330,
+    "id": 16230,
     "paper_id": 44,
     "question_text": "The \"Permanent Settlement\" of revenue in Bengal was introduced in 1793 by which Governor-General?",
     "option_a": "Lord Wellesley",
@@ -348,7 +348,7 @@
     "explanation": null
   },
   {
-    "id": 7331,
+    "id": 16231,
     "paper_id": 44,
     "question_text": "As per Article 72 of the Indian Constitution, what is the meaning of the 'commutation' power granted to the President of India?",
     "option_a": "Postponing the execution",
@@ -360,7 +360,7 @@
     "explanation": null
   },
   {
-    "id": 7332,
+    "id": 16232,
     "paper_id": 44,
     "question_text": "Which Article of Indian Constitution provides for the formation of an Inter-State Council in India?",
     "option_a": "Article 261",
@@ -372,7 +372,7 @@
     "explanation": null
   },
   {
-    "id": 7333,
+    "id": 16233,
     "paper_id": 44,
     "question_text": "Which dispute falls under the 'Original Jurisdiction' of the Supreme Court under Article 131 of Indian constitution?",
     "option_a": "Dispute between two private citizens",
@@ -384,7 +384,7 @@
     "explanation": null
   },
   {
-    "id": 7334,
+    "id": 16234,
     "paper_id": 44,
     "question_text": "Which zone marks the boundary between the crust and mantle?",
     "option_a": "Gutenberg",
@@ -396,7 +396,7 @@
     "explanation": null
   },
   {
-    "id": 7335,
+    "id": 16235,
     "paper_id": 44,
     "question_text": "What is the core principle behind the Athlete Biological Passport (ABP) used in antidoping?",
     "option_a": "Direct detection",
@@ -408,7 +408,7 @@
     "explanation": null
   },
   {
-    "id": 7336,
+    "id": 16236,
     "paper_id": 44,
     "question_text": "Bajrang Punia is best known for competing in which sporting discipline?",
     "option_a": "Boxing",
@@ -420,31 +420,31 @@
     "explanation": null
   },
   {
-    "id": 7337,
+    "id": 16237,
     "paper_id": 44,
     "question_text": "The vibrant cultural festival “Putul Samaroh” is organized by which of the following states?",
     "option_a": "Madhya Pradesh",
     "option_b": "Rajasthan",
     "option_c": "Andhra Pradesh",
     "option_d": "Himachal Pradesh",
-    "correct_answer": "B",
+    "correct_answer": "A",
     "question_number": 36,
-    "explanation": null
+    "explanation": "Putul Samaroh is an annual puppet festival organized by the Department of Culture, Government of Madhya Pradesh."
   },
   {
-    "id": 7338,
+    "id": 16238,
     "paper_id": 44,
     "question_text": "Why do tribal communities in Chhattisgarh traditionally perform the 'Suwa' (Parrot) dance?",
     "option_a": "To please the local rain gods",
     "option_b": "To honor the spirits of ancestors",
     "option_c": "To please the Goddess of Wealth",
     "option_d": "To celebrate victory after a tribal war",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 37,
-    "explanation": null
+    "explanation": "Suwa (Parrot) dance in Chhattisgarh is traditionally performed by women around Diwali to invoke and please the Goddess of Wealth (Lakshmi)."
   },
   {
-    "id": 7339,
+    "id": 16239,
     "paper_id": 44,
     "question_text": "Which of the following traditional folk singing styles originates from Jammu and Kashmir?",
     "option_a": "Chhakri",
@@ -456,31 +456,31 @@
     "explanation": null
   },
   {
-    "id": 7340,
+    "id": 16240,
     "paper_id": 44,
     "question_text": "What is the primary objective of the \"Saa₹thi\n\n2.0\" mobile application launched by SEBI (Securities and Exchange Board of India)?",
     "option_a": "Listing of new startups on the stock exchange",
     "option_b": "Empowering investors with knowledge about the securities market",
     "option_c": "Tracking real-time global commodity prices",
     "option_d": "Registering complaints against fraudulent insurance agents",
-    "correct_answer": "D",
+    "correct_answer": "B",
     "question_number": 39,
-    "explanation": null
+    "explanation": "SEBI launched Saa₹thi 2.0 to empower investors with objective knowledge about the securities market."
   },
   {
-    "id": 7341,
+    "id": 16241,
     "paper_id": 44,
     "question_text": "Which of the following pairs of book titles and language (Poetry category) for the Sahitya Akademi Award 2025 is correctly matched?",
     "option_a": "Shrestha Kabita - Dogri",
     "option_b": "Bhattkhadaki - Gujarati",
     "option_c": "Padapurana - Telugu",
     "option_d": "Animesha - Odia",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 40,
-    "explanation": null
+    "explanation": "Bhattkhadaki is a Gujarati poetry collection by Yogesh Vaidya that won the Sahitya Akademi Award 2025."
   },
   {
-    "id": 7342,
+    "id": 16242,
     "paper_id": 44,
     "question_text": "Bay of Bengal Initiative for Multi-Sectoral Technical and Economic Cooperation\n\n(BIMSTEC) is often viewed as an alternative platform for regional cooperation because of the limited effectiveness of which organization?",
     "option_a": "GCC (Gulf Cooperation Council)",
@@ -492,7 +492,7 @@
     "explanation": null
   },
   {
-    "id": 7343,
+    "id": 16243,
     "paper_id": 44,
     "question_text": "The office of sessions judge in a sessions division suddenly becomes vacant. An urgent bail application is pending. There is no additional sessions judge available in that division. Who may legally dispose of the application under the Bharatiya Nagarik Suraksha Sanhita, 2023 in India?",
     "option_a": "Only the High",
@@ -504,67 +504,67 @@
     "explanation": null
   },
   {
-    "id": 7344,
+    "id": 16244,
     "paper_id": 44,
     "question_text": "Which award was conferred upon Justice (Retd.) Shri Jagdish Singh Khehar in 2025?",
     "option_a": "Padma Shri",
     "option_b": "Padma Vibhushan",
     "option_c": "Bharat Ratna",
     "option_d": "Padma Bhushan",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 43,
-    "explanation": null
+    "explanation": "Former Chief Justice of India Jagdish Singh Khehar was awarded the Padma Vibhushan in 2025 in Public Affairs."
   },
   {
-    "id": 7345,
+    "id": 16245,
     "paper_id": 44,
     "question_text": "As per Census of India 2011, what is the correct distribution of male and female workers in the Primary sector?",
     "option_a": "Male – 15,66,43,220; Female – 4,37,41,311",
     "option_b": "Male – 16,54,47,075; Female – 9,75,75,398",
     "option_c": "Male – 16,54,47,075; Female – 4,37,41,311",
     "option_d": "Male – 15,66,43,220; Female – 9,75,75,398",
-    "correct_answer": "D",
+    "correct_answer": "B",
     "question_number": 44,
-    "explanation": null
+    "explanation": "According to Census of India 2011, primary sector workforce distribution is Male: 16,54,47,075 and Female: 9,75,75,398."
   },
   {
-    "id": 7346,
+    "id": 16246,
     "paper_id": 44,
     "question_text": "Consider the following statements regarding Indo-Islamic architecture:\n\n1. Rubble masonry walls were commonly used in the construction of these buildings.\n\n2. Mandu is a prominent example of Provincial Style architecture. Which of the statements given above is/are correct?",
     "option_a": "1 only",
     "option_b": "2 only",
     "option_c": "Both 1 and 2",
     "option_d": "Neither 1 nor 2",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 45,
-    "explanation": null
+    "explanation": "Both statements are correct: Indo-Islamic architecture extensively used thick rubble masonry walls, and Mandu exemplifies the Provincial style."
   },
   {
-    "id": 7347,
+    "id": 16247,
     "paper_id": 44,
     "question_text": "Which spacecraft platform serves as the base structure for the NISAR satellite?",
     "option_a": "I-1K spacecraft",
     "option_b": "I-2K spacecraft bus bus",
     "option_c": "I-3K spacecraft",
     "option_d": "I-6K spacecraft bus bus",
-    "correct_answer": "D",
+    "correct_answer": "C",
     "question_number": 46,
-    "explanation": null
+    "explanation": "ISRO provided its heritage I-3K spacecraft bus as the satellite platform for the NISAR mission."
   },
   {
-    "id": 7348,
+    "id": 16248,
     "paper_id": 44,
     "question_text": "Which committee was appointed in 1991 to recommend reforms in India's banking and financial sector?",
     "option_a": "Chelliah",
     "option_b": "Rangrajan Committee Committee",
     "option_c": "Malhotra",
     "option_d": "Narasimham Committee Committee",
-    "correct_answer": "B",
+    "correct_answer": "D",
     "question_number": 47,
-    "explanation": null
+    "explanation": "The Narasimham Committee was appointed in August 1991 to recommend reforms in India's banking and financial system."
   },
   {
-    "id": 7349,
+    "id": 16249,
     "paper_id": 44,
     "question_text": "Under India’s National Air Quality Index framework, data for at least how many pollutants are required to calculate the Air Quality Index?",
     "option_a": "Four pollutants",
@@ -576,7 +576,7 @@
     "explanation": null
   },
   {
-    "id": 7350,
+    "id": 16250,
     "paper_id": 44,
     "question_text": "Whose combined forces did Major Hector Munro defeat in the Battle of Buxar?",
     "option_a": "Mir Jafar, Shuja-ud-Daula, and Shah Alam II",
@@ -588,7 +588,7 @@
     "explanation": null
   },
   {
-    "id": 7351,
+    "id": 16251,
     "paper_id": 44,
     "question_text": "A student burns 150 calories by cycling for 30 minutes. If the student continues cycling at the same rate, how many calories will be burned in 2 hours?",
     "option_a": "600",
@@ -600,7 +600,7 @@
     "explanation": null
   },
   {
-    "id": 7352,
+    "id": 16252,
     "paper_id": 44,
     "question_text": "A sphere of radius 'R' has a surface area equal to the curved surface area of a hemisphere with radius 'r'. Find the ratio of R . r",
     "option_a": "1",
@@ -612,7 +612,7 @@
     "explanation": null
   },
   {
-    "id": 7353,
+    "id": 16253,
     "paper_id": 44,
     "question_text": "If the area of a triangle is 10√3 cm² and two of its sides are 5 cm and 8 cm, what is the included angle?",
     "option_a": "30°",
@@ -624,7 +624,7 @@
     "explanation": null
   },
   {
-    "id": 7354,
+    "id": 16254,
     "paper_id": 44,
     "question_text": "Two regular polygons have (n - 1) and (n + 2) sides respectively. If the difference in their exterior angles is 6°, find the value of n.",
     "option_a": "15",
@@ -636,7 +636,7 @@
     "explanation": null
   },
   {
-    "id": 7355,
+    "id": 16255,
     "paper_id": 44,
     "question_text": "If cos θ= 4/5 , find tan² θ+ sec² θ .",
     "option_a": "2",
@@ -648,19 +648,19 @@
     "explanation": null
   },
   {
-    "id": 7356,
+    "id": 16256,
     "paper_id": 44,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p7_x1307.jpeg)",
     "option_a": "21-40",
     "option_b": "41-60",
     "option_c": "61-80",
     "option_d": "81-100",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 55,
-    "explanation": null
+    "explanation": "In the frequency polygon, Section B has its highest frequency peak (20 students) in the 61-80 score class interval."
   },
   {
-    "id": 7357,
+    "id": 16257,
     "paper_id": 44,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p7_x1308.jpeg)",
     "option_a": "18:5",
@@ -672,43 +672,43 @@
     "explanation": null
   },
   {
-    "id": 7358,
+    "id": 16258,
     "paper_id": 44,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p7_x1309.jpeg)",
     "option_a": "Bus - 9:1",
     "option_b": "Truck - 20:3",
     "option_c": "Car - 4:3",
     "option_d": "Van - 2:1",
-    "correct_answer": "B",
+    "correct_answer": "A",
     "question_number": 57,
-    "explanation": null
+    "explanation": "Bus has the highest diesel-to-petrol consumption ratio (90 L / 10 L = 9:1)."
   },
   {
-    "id": 7359,
+    "id": 16259,
     "paper_id": 44,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p7_x1310.jpeg)",
     "option_a": "$700",
     "option_b": "$800",
     "option_c": "$900",
     "option_d": "$1,000",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 58,
-    "explanation": null
+    "explanation": "Grocery budget is 20% of $4,000 = $800 (Option B)."
   },
   {
-    "id": 7360,
+    "id": 16260,
     "paper_id": 44,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p7_x1311.jpeg)",
     "option_a": "20-30 thousand",
     "option_b": "30-40 thousand",
     "option_c": "40-50 thousand",
     "option_d": "60-70 thousand",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 59,
-    "explanation": null
+    "explanation": "The highest bar in the salary histogram corresponds to the 40-50 thousand dollar range (550 employees)."
   },
   {
-    "id": 7361,
+    "id": 16261,
     "paper_id": 44,
     "question_text": "Find the value of (5.4)³−1 . (5.4)²+6.4",
     "option_a": "3.8",
@@ -720,7 +720,7 @@
     "explanation": null
   },
   {
-    "id": 7362,
+    "id": 16262,
     "paper_id": 44,
     "question_text": "The value of [(2.4)³ − (0.4)³] / [(2.4)² + 0.96 + (0.4)²] expressed as a fraction in simplest form is:",
     "option_a": "1",
@@ -732,7 +732,7 @@
     "explanation": null
   },
   {
-    "id": 7363,
+    "id": 16263,
     "paper_id": 44,
     "question_text": "Find the third proportional of (√2 + √3) and 4√6 .",
     "option_a": "14(√3 −√2)",
@@ -744,31 +744,31 @@
     "explanation": null
   },
   {
-    "id": 7364,
+    "id": 16264,
     "paper_id": 44,
     "question_text": "The ratio between the tens digit and the units digit of a two-digit number is 2:\n\n1. If the original number is 18 more than the number obtained by reversing the digits, find the original number.",
     "option_a": "28",
     "option_b": "42",
     "option_c": "54",
     "option_d": "35",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 63,
-    "explanation": null
+    "explanation": "Let tens digit be 2x, units x. 21x - 12x = 9x = 18 => x = 2, so the original number is 42."
   },
   {
-    "id": 7365,
+    "id": 16265,
     "paper_id": 44,
     "question_text": "In ΔZWR, the bisector of ∠R meets side ZW at S, ZR = 10 cm, RW = 14 cm and ZW = 12 cm. What is the length of SW?",
     "option_a": "5 cm",
     "option_b": "7 cm",
     "option_c": "11 cm",
     "option_d": "17 cm",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 64,
-    "explanation": null
+    "explanation": "By angle bisector theorem, ZS/SW = ZR/RW = 10/14 = 5/7; SW = (7/12) * 12 = 7 cm."
   },
   {
-    "id": 7366,
+    "id": 16266,
     "paper_id": 44,
     "question_text": "A shopkeeper marks his goods at 30% above the cost price. If the cost price increases by 15% and he increases the selling price by 10%, what is his new approximate profit percentage?",
     "option_a": "18.35%",
@@ -780,31 +780,31 @@
     "explanation": null
   },
   {
-    "id": 7367,
+    "id": 16267,
     "paper_id": 44,
     "question_text": "A chord subtends 130° at the centre. What is the sum of angles subtended by it at a point on the major arc and minor arc?",
     "option_a": "120°",
     "option_b": "180°",
     "option_c": "200°",
     "option_d": "240°",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 66,
-    "explanation": null
+    "explanation": "Points on the major and minor arcs form a cyclic quadrilateral with the chord endpoints, so subtended angles sum to 180°."
   },
   {
-    "id": 7368,
+    "id": 16268,
     "paper_id": 44,
     "question_text": "The area of a trapezium is 475 cm², and its height is 19 cm. If the parallel sides are in the ratio 2:3, find the length of the longer parallel side.",
     "option_a": "20 cm",
     "option_b": "30 cm",
     "option_c": "35 cm",
     "option_d": "25 cm",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 67,
-    "explanation": null
+    "explanation": "Trapezium area: 0.5 * (2x + 3x) * 19 = 475 => x = 10; longer parallel side = 3x = 30 cm."
   },
   {
-    "id": 7369,
+    "id": 16269,
     "paper_id": 44,
     "question_text": "In a circle with center O, PQ is the diameter and RS is a chord such that PQRS is a trapezium. If ∠QPR= 30° , find the measure of ∠RPS .",
     "option_a": "30°",
@@ -816,43 +816,43 @@
     "explanation": null
   },
   {
-    "id": 7370,
+    "id": 16270,
     "paper_id": 44,
     "question_text": "In △ABC and △DEF, ∠A= 55°, AB = DE, AC= DF, ∠E= 85° and ∠F= 40° . By which property are △ABC and △DEF congruent?",
     "option_a": "RHS property",
     "option_b": "SSS property",
     "option_c": "SAS property",
     "option_d": "ASA property",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 69,
-    "explanation": null
+    "explanation": "In △DEF, ∠D = 180° - (85° + 40°) = 55° = ∠A; AB=DE, AC=DF, so triangles are congruent by SAS property."
   },
   {
-    "id": 7371,
+    "id": 16271,
     "paper_id": 44,
     "question_text": "Two congruent circles, each having radius 12 cm, intersect in such a way that each circle passes through the centre of the other. Find the length of their common chord.",
     "option_a": "4 cm",
     "option_b": "6√3 cm",
     "option_c": "8 cm",
     "option_d": "12√3 cm",
-    "correct_answer": "A",
+    "correct_answer": "D",
     "question_number": 70,
-    "explanation": null
+    "explanation": "For two congruent circles passing through each other's centers, common chord length is R√3 = 12√3 cm."
   },
   {
-    "id": 7372,
+    "id": 16272,
     "paper_id": 44,
     "question_text": "A trader purchased 25 kg of tea at ₹240 per kg and another 15 kg at ₹300 per kg. After mixing both varieties, at what price per kg should the mixture be sold to earn a profit of 25%?",
     "option_a": "₹228.225 per kg",
     "option_b": "₹312.198 per kg",
     "option_c": "₹250.182 per kg",
     "option_d": "₹328.125 per kg",
-    "correct_answer": "A",
+    "correct_answer": "D",
     "question_number": 71,
-    "explanation": null
+    "explanation": "Total CP = 25*240 + 15*300 = ₹10,500 for 40 kg (₹262.5/kg); SP at 25% profit = 262.5 * 1.25 = ₹328.125 per kg."
   },
   {
-    "id": 7373,
+    "id": 16273,
     "paper_id": 44,
     "question_text": "Three circles of radii 1 unit, 2 units, 3 units are mutually tangent externally. Find the distance between the centers of circles of radii 1 unit and 2 units.",
     "option_a": "3 units",
@@ -864,19 +864,19 @@
     "explanation": null
   },
   {
-    "id": 7374,
+    "id": 16274,
     "paper_id": 44,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-3_p9_x1979.jpeg)",
     "option_a": "18.5%",
     "option_b": "19.4%",
     "option_c": "22.8%",
     "option_d": "24.6%",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 73,
-    "explanation": null
+    "explanation": "New population of D = 18 * 1.15 = 20.7; other regions = 82 * 1.05 = 86.1; percentage share = 20.7 / 106.8 ≈ 19.4%."
   },
   {
-    "id": 7375,
+    "id": 16275,
     "paper_id": 44,
     "question_text": "A vertical pole of height H is situated at the center of a circular field. If the angle of elevation of the top of the pole from a point on the boundary of the field is 30°, and if the point moves x meters further from the pole, the angle of elevation becomes 15°. Find the height H of the pole.",
     "option_a": "x m",
@@ -888,19 +888,19 @@
     "explanation": null
   },
   {
-    "id": 7376,
+    "id": 16276,
     "paper_id": 44,
     "question_text": "The population of a tech hub increases by 16 2 % in the first year, decreases by 3 12 1 % in the second year, and increases by 2 14 2 % in the third year. If the population at the end of the third year is 2,80,000, what was the initial population before the first year?",
     "option_a": "2,25,000",
     "option_b": "2,10,000",
     "option_c": "2,50,000",
     "option_d": "2,40,000",
-    "correct_answer": "A",
+    "correct_answer": "D",
     "question_number": 75,
-    "explanation": null
+    "explanation": "P * (7/6) * (7/8) * (8/7) = P * (7/6) = 2,80,000 => P = 2,40,000."
   },
   {
-    "id": 7377,
+    "id": 16277,
     "paper_id": 44,
     "question_text": "**Comprehension (Q. 76 - 80):** Throughout history, the evolution of women's clothing has mirrored broader societal shifts, (1)___ values, technologies, and power structures. In ancient civilizations, garments often (2) ___ not only status and wealth but also cultural affiliations, with fabrics and dyes reserved for the privileged classes. The Middle Ages introduced rigid dress codes; women's attire, elaborate and weighty, served as both an ornament and a restraint, subtly (3) entrenching gender hierarchies. Fast-forwarding to the 20th century, movements like suffrage and feminism (4) catalyzed seismic transformations in fashion, promoting practicality, autonomy, and self- expression. Even today, the politics of women's clothing (5) _ a battleground for debates on identity, freedom, and societal expectations.\n\n---\n\nIn the following question, a sentence with a blank is given, followed by five words labeled\n\n(1), (2), (3), and (4). Choose the word that fills the blank appropriately in the context of the passage. Choose the correct tense/form (1)",
     "option_a": "reflecting",
@@ -912,7 +912,7 @@
     "explanation": null
   },
   {
-    "id": 7378,
+    "id": 16278,
     "paper_id": 44,
     "question_text": "**Comprehension (Q. 76 - 80):** Throughout history, the evolution of women's clothing has mirrored broader societal shifts, (1)___ values, technologies, and power structures. In ancient civilizations, garments often (2) ___ not only status and wealth but also cultural affiliations, with fabrics and dyes reserved for the privileged classes. The Middle Ages introduced rigid dress codes; women's attire, elaborate and weighty, served as both an ornament and a restraint, subtly (3) entrenching gender hierarchies. Fast-forwarding to the 20th century, movements like suffrage and feminism (4) catalyzed seismic transformations in fashion, promoting practicality, autonomy, and self- expression. Even today, the politics of women's clothing (5) _ a battleground for debates on identity, freedom, and societal expectations.\n\n---\n\nIn the following question, a sentence with a blank is given, followed by five words labeled\n\n(1), (2), (3), and (4). Choose the word that fills the blank appropriately in the context of the passage. Tense carefully!(2)",
     "option_a": "signify",
@@ -924,7 +924,7 @@
     "explanation": null
   },
   {
-    "id": 7379,
+    "id": 16279,
     "paper_id": 44,
     "question_text": "**Comprehension (Q. 76 - 80):** Throughout history, the evolution of women's clothing has mirrored broader societal shifts, (1)___ values, technologies, and power structures. In ancient civilizations, garments often (2) ___ not only status and wealth but also cultural affiliations, with fabrics and dyes reserved for the privileged classes. The Middle Ages introduced rigid dress codes; women's attire, elaborate and weighty, served as both an ornament and a restraint, subtly (3) entrenching gender hierarchies. Fast-forwarding to the 20th century, movements like suffrage and feminism (4) catalyzed seismic transformations in fashion, promoting practicality, autonomy, and self- expression. Even today, the politics of women's clothing (5) _ a battleground for debates on identity, freedom, and societal expectations.\n\n---\n\nIn the following question, a sentence with a blank is given, followed by five words labeled\n\n(1), (2), (3), and (4). Choose the word that fills the blank appropriately in the context of the passage. In this context, 'entrenching' most nearly means:\n\n(3)",
     "option_a": "Strengthening",
@@ -936,7 +936,7 @@
     "explanation": null
   },
   {
-    "id": 7380,
+    "id": 16280,
     "paper_id": 44,
     "question_text": "**Comprehension (Q. 76 - 80):** Throughout history, the evolution of women's clothing has mirrored broader societal shifts, (1)___ values, technologies, and power structures. In ancient civilizations, garments often (2) ___ not only status and wealth but also cultural affiliations, with fabrics and dyes reserved for the privileged classes. The Middle Ages introduced rigid dress codes; women's attire, elaborate and weighty, served as both an ornament and a restraint, subtly (3) entrenching gender hierarchies. Fast-forwarding to the 20th century, movements like suffrage and feminism (4) catalyzed seismic transformations in fashion, promoting practicality, autonomy, and self- expression. Even today, the politics of women's clothing (5) _ a battleground for debates on identity, freedom, and societal expectations.\n\n---\n\nIn the following question, a sentence with a blank is given, followed by five words labeled\n\n(1), (2), (3), and (4). Choose the word that fills the blank appropriately in the context of the passage. What does 'catalyzed' most nearly mean here?(4)",
     "option_a": "Hindered",
@@ -948,7 +948,7 @@
     "explanation": null
   },
   {
-    "id": 7381,
+    "id": 16281,
     "paper_id": 44,
     "question_text": "**Comprehension (Q. 76 - 80):** Throughout history, the evolution of women's clothing has mirrored broader societal shifts, (1)___ values, technologies, and power structures. In ancient civilizations, garments often (2) ___ not only status and wealth but also cultural affiliations, with fabrics and dyes reserved for the privileged classes. The Middle Ages introduced rigid dress codes; women's attire, elaborate and weighty, served as both an ornament and a restraint, subtly (3) entrenching gender hierarchies. Fast-forwarding to the 20th century, movements like suffrage and feminism (4) catalyzed seismic transformations in fashion, promoting practicality, autonomy, and self- expression. Even today, the politics of women's clothing (5) _ a battleground for debates on identity, freedom, and societal expectations.\n\n---\n\nIn the following question, a sentence with a blank is given, followed by five words labeled\n\n(1), (2), (3), and (4). Choose the word that fills the blank appropriately in the context of the passage. Choose the best tense form of the verb.(5)",
     "option_a": "remains",
@@ -960,7 +960,7 @@
     "explanation": null
   },
   {
-    "id": 7382,
+    "id": 16282,
     "paper_id": 44,
     "question_text": "Choose the correct direct speech form of the following sentence. She told him that he would play basketball.",
     "option_a": "She said to him, \"You should play basketball.\"",
@@ -972,7 +972,7 @@
     "explanation": null
   },
   {
-    "id": 7383,
+    "id": 16283,
     "paper_id": 44,
     "question_text": "Fill in the blank with an appropriate phrasal verb. After initial hesitation, the entrepreneur finally ______ the risky investment.",
     "option_a": "plumped for",
@@ -984,7 +984,7 @@
     "explanation": null
   },
   {
-    "id": 7384,
+    "id": 16284,
     "paper_id": 44,
     "question_text": "Identify the error in the sentence. She completed the assignment quick to meet the deadline.",
     "option_a": "quick",
@@ -996,7 +996,7 @@
     "explanation": null
   },
   {
-    "id": 7385,
+    "id": 16285,
     "paper_id": 44,
     "question_text": "Choose the correct idiom for the word highlighted in bold. There is no point in discussing the new project with him as he always pours cold water on any ideas.",
     "option_a": "He strongly supports new ideas.",
@@ -1008,7 +1008,7 @@
     "explanation": null
   },
   {
-    "id": 7386,
+    "id": 16286,
     "paper_id": 44,
     "question_text": "Rearrange the parts of the sentence in the correct order. The enforcement of international human rights laws P. to hold violators accountable for war crimes and genocide Q. has faced obstacles due to political resistance, R. despite the establishment of global courts and legal frameworks S. and the complexities of diplomatic immunity in sovereign states",
     "option_a": "SRQP",
@@ -1020,7 +1020,7 @@
     "explanation": null
   },
   {
-    "id": 7387,
+    "id": 16287,
     "paper_id": 44,
     "question_text": "Choose the correct idiom for the word highlighted in bold. She didn't realize that the clever salesman was **taking her for a ride.**",
     "option_a": "Giving her a lift in his car",
@@ -1032,7 +1032,7 @@
     "explanation": null
   },
   {
-    "id": 7388,
+    "id": 16288,
     "paper_id": 44,
     "question_text": "Improve the sentence by selecting the appropriate preposition from the following options. The intricate designs of the ancient manuscript were hidden ____ the layers of dust and time, waiting to be rediscovered by modern scholars.",
     "option_a": "over",
@@ -1044,7 +1044,7 @@
     "explanation": null
   },
   {
-    "id": 7389,
+    "id": 16289,
     "paper_id": 44,
     "question_text": "Identify the error in the sentence He passed away the forms to the candidates.",
     "option_a": "forms",
@@ -1056,7 +1056,7 @@
     "explanation": null
   },
   {
-    "id": 7390,
+    "id": 16290,
     "paper_id": 44,
     "question_text": "Choose the most suitable option to fill in the blank. I was practising the guitar ______.",
     "option_a": "codes",
@@ -1068,7 +1068,7 @@
     "explanation": null
   },
   {
-    "id": 7391,
+    "id": 16291,
     "paper_id": 44,
     "question_text": "Fill in the blank with the correctly spelt word. The ______ behavior of electrons challenged classical physics.",
     "option_a": "anomolous",
@@ -1080,7 +1080,7 @@
     "explanation": null
   },
   {
-    "id": 7392,
+    "id": 16292,
     "paper_id": 44,
     "question_text": "Select the most appropriate antonym of the given word. Placate",
     "option_a": "Soothe",
@@ -1092,7 +1092,7 @@
     "explanation": null
   },
   {
-    "id": 7393,
+    "id": 16293,
     "paper_id": 44,
     "question_text": "Identify the misspelt word.",
     "option_a": "Winsom",
@@ -1104,7 +1104,7 @@
     "explanation": null
   },
   {
-    "id": 7394,
+    "id": 16294,
     "paper_id": 44,
     "question_text": "Spot the correct spelling of an ancient tearbottle.",
     "option_a": "Lacrimetory",
@@ -1116,7 +1116,7 @@
     "explanation": null
   },
   {
-    "id": 7395,
+    "id": 16295,
     "paper_id": 44,
     "question_text": "Choose the correct one-word substitute for: 'A person who seeks to overthrow established government by unlawful means'.",
     "option_a": "Anarchist",
@@ -1128,7 +1128,7 @@
     "explanation": null
   },
   {
-    "id": 7396,
+    "id": 16296,
     "paper_id": 44,
     "question_text": "Choose the correct one-word substitute for: 'Habitually dishonest; lying'.",
     "option_a": "Veracious",
@@ -1140,7 +1140,7 @@
     "explanation": null
   },
   {
-    "id": 7397,
+    "id": 16297,
     "paper_id": 44,
     "question_text": "Select the sentence containing the homonym of the highlighted word: The calligrapher added a cadel in the manuscript margin.",
     "option_a": "The scribe's cadel resembled a floral spiral.",
@@ -1152,7 +1152,7 @@
     "explanation": null
   },
   {
-    "id": 7398,
+    "id": 16298,
     "paper_id": 44,
     "question_text": "Choose the most suitable option to replace the highlighted part of the sentence: I prefer tea than coffee.",
     "option_a": "prefer tea more",
@@ -1164,7 +1164,7 @@
     "explanation": null
   },
   {
-    "id": 7399,
+    "id": 16299,
     "paper_id": 44,
     "question_text": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. She said, \"I don't like spicy food.\"",
     "option_a": "She said she didn't liked spicy food.",
@@ -1176,19 +1176,19 @@
     "explanation": null
   },
   {
-    "id": 7400,
+    "id": 16300,
     "paper_id": 44,
     "question_text": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. She said, \"I met him yesterday.\"",
     "option_a": "She said that she met him the day before.",
     "option_b": "She said that she had met him the day before.",
     "option_c": "She said that she has met him the day before.",
     "option_d": "She said that she meets him yesterday.",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 99,
-    "explanation": null
+    "explanation": "In indirect speech for simple past (met), the verb shifts to past perfect (had met): She said that she had met him the day before."
   },
   {
-    "id": 7401,
+    "id": 16301,
     "paper_id": 44,
     "question_text": "Rearrange the following sentences to form a coherent paragraph:\n\n1. The erosion of trust in public institutions is a defining feature of contemporary political discourse, influencing voter behavior and policy outcomes.\n\n2. Consequently, robust and transparent governance mechanisms are essential to rebuilding public confidence and ensuring the legitimacy of a democratic system.\n\n3. This crisis can be traced to a historical understanding of the \"social contract\" where the public grants authority in exchange for protection and well-being.\n\n4. The breakdown of this unwritten agreement has led to widespread disillusionment and a perception of institutional failure, with significant social consequences.",
     "option_a": "2, 3, 1, 4",

@@ -1,18 +1,18 @@
 [
   {
-    "id": 8102,
+    "id": 17002,
     "paper_id": 52,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p2_x26.jpeg)",
     "option_a": "59 - 97",
     "option_b": "23 - 73",
     "option_c": "31 - 59",
     "option_d": "89 - 31",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 1,
-    "explanation": null
+    "explanation": "In the folded cube, opposite pairs are (23, 73), (31, 89), and (59, 97); thus 31 and 59 are not opposite."
   },
   {
-    "id": 8103,
+    "id": 17003,
     "paper_id": 52,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p2_x27.jpeg)",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p2_x28.jpeg)",
@@ -24,7 +24,7 @@
     "explanation": null
   },
   {
-    "id": 8104,
+    "id": 17004,
     "paper_id": 52,
     "question_text": "Which answer figure will complete the pattern in the question figure?\n\n![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p2_x33.jpeg)",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p2_x34.jpeg)",
@@ -36,7 +36,7 @@
     "explanation": null
   },
   {
-    "id": 8105,
+    "id": 17005,
     "paper_id": 52,
     "question_text": "Select the image that embeds the following figure.",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p2_x36.jpeg)",
@@ -48,7 +48,7 @@
     "explanation": null
   },
   {
-    "id": 8106,
+    "id": 17006,
     "paper_id": 52,
     "question_text": "In a class of 100 students, 60 like tea, 50 like coffee, and 30 like both. How many like only tea?",
     "option_a": "30",
@@ -60,7 +60,7 @@
     "explanation": null
   },
   {
-    "id": 8107,
+    "id": 17007,
     "paper_id": 52,
     "question_text": "Among 30 students, 18 like Math, 12 like Science, and 6 like both. How many like only Science?",
     "option_a": "6",
@@ -72,7 +72,7 @@
     "explanation": null
   },
   {
-    "id": 8108,
+    "id": 17008,
     "paper_id": 52,
     "question_text": "The sum of even numbers up to 242 is?",
     "option_a": "14755",
@@ -84,7 +84,7 @@
     "explanation": null
   },
   {
-    "id": 8109,
+    "id": 17009,
     "paper_id": 52,
     "question_text": "Find the missing number in the following series: 9, 9, 12, ?, 35, 59",
     "option_a": "18",
@@ -96,7 +96,7 @@
     "explanation": null
   },
   {
-    "id": 8110,
+    "id": 17010,
     "paper_id": 52,
     "question_text": "Anil stands 10th from the top and 21st from the bottom. How many students are there in the class?",
     "option_a": "31",
@@ -108,7 +108,7 @@
     "explanation": null
   },
   {
-    "id": 8111,
+    "id": 17011,
     "paper_id": 52,
     "question_text": "Which two signs should be interchanged to make the given equation correct? 40 ÷ 8 × 5 + 15 − 2 = 30",
     "option_a": "× and +",
@@ -120,31 +120,31 @@
     "explanation": null
   },
   {
-    "id": 8112,
+    "id": 17012,
     "paper_id": 52,
     "question_text": "In the following question a statement is given followed by some assumptions. Read the assumptions carefully and choose the appropriate option.\n\nStatement: Kindly save a backup of all project files before updating the software. Assumptions:\n\nI. Updating the software may affect existing files.\n\nII. Preserving project files is important.",
     "option_a": "Only I is implicit.",
     "option_b": "Only II is implicit.",
     "option_c": "Neither I nor II is implicit.",
     "option_d": "Both I and II are implicit.",
-    "correct_answer": "A",
+    "correct_answer": "D",
     "question_number": 11,
-    "explanation": null
+    "explanation": "Advising a backup before software update implies both that the update may affect files (I) and that preserving files is important (II)."
   },
   {
-    "id": 8113,
+    "id": 17013,
     "paper_id": 52,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p3_x271.jpeg)",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_q12_opt_A.png)",
     "option_b": "![Option B](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_q12_opt_B.png)",
     "option_c": "![Option C](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_q12_opt_C.png)",
     "option_d": "![Option D](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_q12_opt_D.png)",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 12,
-    "explanation": null
+    "explanation": "Lateral reflection across vertical mirror MN orders characters in reverse (mirrored 5, e, 9, 2, w, t), which matches Option C."
   },
   {
-    "id": 8114,
+    "id": 17014,
     "paper_id": 52,
     "question_text": "Complete the pattern in fig.\n\n(X) by selecting one of the figures from the four alternatives : Figure(X): 2",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p3_x276.jpeg)",
@@ -156,7 +156,7 @@
     "explanation": null
   },
   {
-    "id": 8115,
+    "id": 17015,
     "paper_id": 52,
     "question_text": "Which of the following rows/columns are connected/related with each other in some way? Rows Columns I II III IV V 1 21 42 3 15 30 2 18 42 4 20 40 3 24 48 5 25 50 4 27 54 6 30 60 5 30 60 7 35 70",
     "option_a": "Columns II, III and",
@@ -168,7 +168,7 @@
     "explanation": null
   },
   {
-    "id": 8116,
+    "id": 17016,
     "paper_id": 52,
     "question_text": "From a psychological perspective, which type of individual is typically the hardest to manipulate or influence?",
     "option_a": "Someone who possesses deep self- awareness of their own motives and values.",
@@ -180,7 +180,7 @@
     "explanation": null
   },
   {
-    "id": 8117,
+    "id": 17017,
     "paper_id": 52,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p3_x280.jpeg)",
     "option_a": "A",
@@ -192,19 +192,19 @@
     "explanation": null
   },
   {
-    "id": 8118,
+    "id": 17018,
     "paper_id": 52,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p4_x529.jpeg)",
     "option_a": "A",
     "option_b": "B",
     "option_c": "C",
     "option_d": "D",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 17,
-    "explanation": null
+    "explanation": "In figures A, C, and D, the dot is located near the rounded end, whereas in figure B, the dot is near the flat end with the flame."
   },
   {
-    "id": 8119,
+    "id": 17019,
     "paper_id": 52,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p4_x530.jpeg)",
     "option_a": "1",
@@ -216,7 +216,7 @@
     "explanation": null
   },
   {
-    "id": 8120,
+    "id": 17020,
     "paper_id": 52,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p4_x531.jpeg)",
     "option_a": "2",
@@ -228,19 +228,19 @@
     "explanation": null
   },
   {
-    "id": 8121,
+    "id": 17021,
     "paper_id": 52,
     "question_text": "Fill in the blanks (_) using one of the following four options such that the series follows a specific pattern in the given order. m_om mn_m _nom mn_m",
     "option_a": "onmo",
     "option_b": "nomo",
     "option_c": "monm",
     "option_d": "nnmo",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 20,
-    "explanation": null
+    "explanation": "The repeating 4-letter unit is 'mnom', requiring missing letters 'n, o, m, o', corresponding to Option B."
   },
   {
-    "id": 8122,
+    "id": 17022,
     "paper_id": 52,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p4_x532.jpeg)",
     "option_a": "4",
@@ -252,55 +252,55 @@
     "explanation": null
   },
   {
-    "id": 8123,
+    "id": 17023,
     "paper_id": 52,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p4_x533.jpeg)",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p4_x534.jpeg)",
     "option_b": "![Option B](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p4_x535.jpeg)",
     "option_c": "![Option C](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p4_x536.jpeg)",
     "option_d": "![Option D](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p4_x537.jpeg)",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 22,
-    "explanation": null
+    "explanation": "The 4-symbol diagonal pattern cycles with period 4, so figure 6 repeats figure 2 (×, ↑, Δ, =), matching Option B."
   },
   {
-    "id": 8124,
+    "id": 17024,
     "paper_id": 52,
     "question_text": "Read the given situation carefully and consider all the relevant facts, conditions and constraints. Choose the option that represents the most appropriate, practical and logical decision based solely on the information provided. A non-profit foundation provides medical treatment grants to senior citizens who are above 60 years old, do not have any active health insurance policy and have an annual household income under $15,000. Mrs. Sharma is 67 years old, does not have any health insurance coverage and has a documented annual household income of $12,500. What decision should the foundation take?",
     "option_a": "The application should be referred to the Trust Chairman.",
     "option_b": "The senior citizen should be rejected for the medical grant.",
     "option_c": "The senior citizen should be selected for the medical grant.",
     "option_d": "The data provided is inadequate to take a decision.",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 23,
-    "explanation": null
+    "explanation": "Mrs. Sharma satisfies age (>60), lack of insurance, and income (<$15,000) requirements, so she should be selected for the grant."
   },
   {
-    "id": 8125,
+    "id": 17025,
     "paper_id": 52,
     "question_text": "Choose the odd group.",
     "option_a": "ACEG",
     "option_b": "BDFH",
     "option_c": "CEGJ",
     "option_d": "DFHJ",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 24,
-    "explanation": null
+    "explanation": "In ACEG, BDFH, and DFHJ the consecutive letter intervals are +2; in CEGJ the interval between G and J is +3."
   },
   {
-    "id": 8126,
+    "id": 17026,
     "paper_id": 52,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p5_x786.jpeg)",
     "option_a": "A",
     "option_b": "B",
     "option_c": "C",
     "option_d": "D",
-    "correct_answer": "A",
+    "correct_answer": "D",
     "question_number": 25,
-    "explanation": null
+    "explanation": "Unfolding across both vertical and horizontal folds reflects the punch into all four quadrants, matching Figure D (Option D)."
   },
   {
-    "id": 8127,
+    "id": 17027,
     "paper_id": 52,
     "question_text": "In open market operations, the RBI buys and sells ________ to regulate the money supply.",
     "option_a": "shares",
@@ -312,7 +312,7 @@
     "explanation": null
   },
   {
-    "id": 8128,
+    "id": 17028,
     "paper_id": 52,
     "question_text": "Which Sultan of Delhi introduced the token currency made of copper and brass in 1329 AD?",
     "option_a": "Firoz Shah",
@@ -324,7 +324,7 @@
     "explanation": null
   },
   {
-    "id": 8129,
+    "id": 17029,
     "paper_id": 52,
     "question_text": "Which one of the following countries is NOT a member of BIMSTEC?",
     "option_a": "Maldives",
@@ -336,7 +336,7 @@
     "explanation": null
   },
   {
-    "id": 8130,
+    "id": 17030,
     "paper_id": 52,
     "question_text": "Which government initiative primarily focuses on improving the nutritional outcomes for children, pregnant women, and lactating mothers?",
     "option_a": "National Health Mission (NHM)",
@@ -348,7 +348,7 @@
     "explanation": null
   },
   {
-    "id": 8131,
+    "id": 17031,
     "paper_id": 52,
     "question_text": "The \"Pradhan Mantri Matsya Sampada Yojana (PMMSY)\" focuses on a specific sector of the Indian economy. Which sector does this scheme primarily aim to develop?",
     "option_a": "Dairy and animal husbandry 4 AWARENESS",
@@ -360,7 +360,7 @@
     "explanation": null
   },
   {
-    "id": 8132,
+    "id": 17032,
     "paper_id": 52,
     "question_text": "Which Indian city hosted the first-ever Women's Premier League (WPL) final in 2023, and which team won the trophy?",
     "option_a": "Mumbai, Mumbai",
@@ -372,19 +372,19 @@
     "explanation": null
   },
   {
-    "id": 8133,
+    "id": 17033,
     "paper_id": 52,
     "question_text": "Which Indian-origin author won the Women's Prize for Fiction in 2023 for \"Demon Copperhead\", inspired by Dickens' David Copperfield?",
     "option_a": "Kamila Shamsie",
     "option_b": "Arundhati Roy",
     "option_c": "Barbara",
     "option_d": "Jhumpa Lahiri Kingsolver",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 32,
-    "explanation": null
+    "explanation": "Barbara Kingsolver authored 'Demon Copperhead' and won the 2023 Women's Prize for Fiction (Option C)."
   },
   {
-    "id": 8134,
+    "id": 17034,
     "paper_id": 52,
     "question_text": "Who among the following is the first and only Indian woman to score hat-trick in Hockey in Olympics?",
     "option_a": "Vandana Katariya",
@@ -396,7 +396,7 @@
     "explanation": null
   },
   {
-    "id": 8135,
+    "id": 17035,
     "paper_id": 52,
     "question_text": "Which of the following pairs are correctly matched?\n\n1. Rigveda – Oldest Vedic text\n\n2. Dholavira – Evidence of water reservoirs\n\n3. Ashvamedha – Post-Mauryan ritual",
     "option_a": "1 and 2 only",
@@ -408,7 +408,7 @@
     "explanation": null
   },
   {
-    "id": 8136,
+    "id": 17036,
     "paper_id": 52,
     "question_text": "Which of the following forest species is not characteristic of Deciduous forests?",
     "option_a": "Teak",
@@ -420,7 +420,7 @@
     "explanation": null
   },
   {
-    "id": 8137,
+    "id": 17037,
     "paper_id": 52,
     "question_text": "What is a distinctive feature of the pillars erected by Emperor Ashoka?",
     "option_a": "Topped with lotus-shaped capitals",
@@ -432,7 +432,7 @@
     "explanation": null
   },
   {
-    "id": 8138,
+    "id": 17038,
     "paper_id": 52,
     "question_text": "Which of the below statement(s) is/are incorrect about B-cells:\n\n1. Produce antibodies\n\n2. Mature in thymus\n\n3. Part of adaptive immunity\n\n4. Derived from bone marrow",
     "option_a": "2 only",
@@ -444,7 +444,7 @@
     "explanation": null
   },
   {
-    "id": 8139,
+    "id": 17039,
     "paper_id": 52,
     "question_text": "What was the main goal of the Mangrove CoManagement Committee formed in Navghar under the climate resilience project?",
     "option_a": "To promote seasonal fishing and crab collection",
@@ -456,7 +456,7 @@
     "explanation": null
   },
   {
-    "id": 8140,
+    "id": 17040,
     "paper_id": 52,
     "question_text": "Coffee variety mainly grown in India is:",
     "option_a": "Assamica",
@@ -468,7 +468,7 @@
     "explanation": null
   },
   {
-    "id": 8141,
+    "id": 17041,
     "paper_id": 52,
     "question_text": "What was the total number of gold medals won by India at the 2022 Commonwealth Games?",
     "option_a": "22",
@@ -480,7 +480,7 @@
     "explanation": null
   },
   {
-    "id": 8142,
+    "id": 17042,
     "paper_id": 52,
     "question_text": "What was the main source of revenue or support for the rajan in early Rigvedic society?",
     "option_a": "Royal judicial fines",
@@ -492,7 +492,7 @@
     "explanation": null
   },
   {
-    "id": 8143,
+    "id": 17043,
     "paper_id": 52,
     "question_text": "Who is serving as the Chairperson of the Competition Commission of India (CCI) in 2026, responsible for regulating digital markets and preventing anti-competitive practices?",
     "option_a": "Ravneet Kaur",
@@ -504,7 +504,7 @@
     "explanation": null
   },
   {
-    "id": 8144,
+    "id": 17044,
     "paper_id": 52,
     "question_text": "A villager becomes aware of a planned offence falling under one of the categories listed in Section 33 of the Bharatiya Nyaya Sanhita, 2023 in India. He deliberately withholds the information and later contends that the prosecution must prove the absence of a reasonable excuse for such nondisclosure. Which of the following statements is legally correct?",
     "option_a": "The prosecution must prove the absence of a reasonable excuse beyond reasonable doubt.",
@@ -516,7 +516,7 @@
     "explanation": null
   },
   {
-    "id": 8145,
+    "id": 17045,
     "paper_id": 52,
     "question_text": "Which of the following best reflects the intent of Article 44 of the Indian Constitution regarding the Uniform Civil Code (UCC)?",
     "option_a": "It is impossible due to diversity.",
@@ -528,7 +528,7 @@
     "explanation": null
   },
   {
-    "id": 8146,
+    "id": 17046,
     "paper_id": 52,
     "question_text": "Consider the following statements regarding the Dravida style of temple architecture:\n\n1. Dravida temples are typically enclosed within a compound wall.\n\n2. The main entrance gateway to the temple complex is known as a Gopuram. Which of the statements given above is/are correct?",
     "option_a": "1 only",
@@ -540,7 +540,7 @@
     "explanation": null
   },
   {
-    "id": 8147,
+    "id": 17047,
     "paper_id": 52,
     "question_text": "As per the Animal Discoveries 2025 report released by the Zoological Survey of India\n\n(ZSI) in June 2026, what is the total number of new faunal records added to India's biodiversity database?",
     "option_a": "226",
@@ -552,7 +552,7 @@
     "explanation": null
   },
   {
-    "id": 8148,
+    "id": 17048,
     "paper_id": 52,
     "question_text": "Which of the following Government of India missions primarily aims to improve watersupply, sewerage, and septage-management infrastructure in urban areas?",
     "option_a": "Pradhan Mantri Gram Sadak Yojana (PMGSY)",
@@ -564,7 +564,7 @@
     "explanation": null
   },
   {
-    "id": 8149,
+    "id": 17049,
     "paper_id": 52,
     "question_text": "Which of the following is commonly cited as a major advantage of privatisation?",
     "option_a": "It guarantees the achievement of all social- welfare objectives and equitable outcomes",
@@ -576,7 +576,7 @@
     "explanation": null
   },
   {
-    "id": 8150,
+    "id": 17050,
     "paper_id": 52,
     "question_text": "Under India’s National Air Quality Index framework, at least one of the pollutants used for calculating Air Quality Index (AQI) must be which of the following?",
     "option_a": "Ammonia (NH3) or lead (Pb)",
@@ -588,7 +588,7 @@
     "explanation": null
   },
   {
-    "id": 8151,
+    "id": 17051,
     "paper_id": 52,
     "question_text": "Which emerging powers contributed to the decline of Karkota political influence in northern India after the death of Lalitaditya Muktapida?",
     "option_a": "The Guptas and the Vardhanas",
@@ -600,55 +600,55 @@
     "explanation": null
   },
   {
-    "id": 8152,
+    "id": 17052,
     "paper_id": 52,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p7_x1321.jpeg)",
     "option_a": "75",
     "option_b": "85",
     "option_c": "90",
     "option_d": "80",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 51,
-    "explanation": null
+    "explanation": "Summing participant frequencies from the polygon: 15 + 28 + 20 + 12 + 7 + 3 = 85 (Option B)."
   },
   {
-    "id": 8153,
+    "id": 17053,
     "paper_id": 52,
     "question_text": "Rohit completes four journeys, each covering the same distance. His speed during the first journey is 400 km/h, and for each subsequent journey, his speed becomes half of the previous one. Find the approximate average speed/all four journeys.",
     "option_a": "95.70 km/h",
     "option_b": "110.75 km/h",
     "option_c": "98.90 km/h",
     "option_d": "106.67 km/h",
-    "correct_answer": "A",
+    "correct_answer": "D",
     "question_number": 52,
-    "explanation": null
+    "explanation": "Average speed = 4 / (1/400 + 1/200 + 1/100 + 1/50) = 1600 / 15 ≈ 106.67 km/h (Option D)."
   },
   {
-    "id": 8154,
+    "id": 17054,
     "paper_id": 52,
     "question_text": "A, B, and C started a partnership by investing capital such that A's capital is 125% of B's capital and B's capital is 80% of C's capital. A stayed in the business for the full year, B left after 9 months, and C joined 3 months after the start. Find the ratio of their profit shares at the end of the year.",
     "option_a": "4 : 12 : 3",
     "option_b": "10 : 9 : 12",
     "option_c": "20 : 12 : 15",
     "option_d": "9 : 12 : 15",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 53,
-    "explanation": null
+    "explanation": "Capitals 5:4:5 for periods 12:9:9 months yield profit ratio (5×12):(4×9):(5×9) = 60:36:45 = 20:12:15 (Option C)."
   },
   {
-    "id": 8155,
+    "id": 17055,
     "paper_id": 52,
     "question_text": "A and B form a partnership by making investments in the ratio of 4 : 7. Five months later, A withdraws Rs. 1,000, and B withdraws Rs. 2,000. After one year, the profit share is 29 : 49. Determine the initial investment made by A.",
     "option_a": "₹5,200",
     "option_b": "₹3,000",
     "option_c": "₹4,500",
     "option_d": "₹6,000",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 54,
-    "explanation": null
+    "explanation": "With investments 4x and 7x, [5(4x)+7(4x-1000)]/[5(7x)+7(7x-2000)] = 29/49 gives x = 750, so A's initial investment is ₹3,000 (Option B)."
   },
   {
-    "id": 8156,
+    "id": 17056,
     "paper_id": 52,
     "question_text": "The average of 5 numbers is 20. If each number is multiplied by 2, what will be the new average?",
     "option_a": "30",
@@ -660,7 +660,7 @@
     "explanation": null
   },
   {
-    "id": 8157,
+    "id": 17057,
     "paper_id": 52,
     "question_text": "An equilateral triangle with side 12 cm is inscribed in a circle. What is the radius of the circle?",
     "option_a": "4√7 cm",
@@ -672,7 +672,7 @@
     "explanation": null
   },
   {
-    "id": 8158,
+    "id": 17058,
     "paper_id": 52,
     "question_text": "The cost price of two articles is the same. One is sold at a profit of 15% and the other is sold at a profit of 12%. If the difference between their selling prices is $18, what is the cost price of each article?",
     "option_a": "$600",
@@ -684,7 +684,7 @@
     "explanation": null
   },
   {
-    "id": 8159,
+    "id": 17059,
     "paper_id": 52,
     "question_text": "In ΔABC, ∠A = 66° and ∠B = 50°. If the bisectors of ∠B and ∠C meet at P, then find the value of ∠BPC - ∠PCA?",
     "option_a": "100°",
@@ -696,31 +696,31 @@
     "explanation": null
   },
   {
-    "id": 8160,
+    "id": 17060,
     "paper_id": 52,
     "question_text": "From the top of a lighthouse, a ship is seen approaching. The angle of depression changes from 45° to 60° in 6 minutes. Find the approximate time taken to reach the lighthouse from that position.",
     "option_a": "6 mins",
     "option_b": "5 mins",
     "option_c": "8 mins",
     "option_d": "10 mins",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 59,
-    "explanation": null
+    "explanation": "Time from 60° position to lighthouse = 6 / (√3 - 1) = 3(√3 + 1) ≈ 8.2 minutes ≈ 8 minutes (Option C)."
   },
   {
-    "id": 8161,
+    "id": 17061,
     "paper_id": 52,
     "question_text": "In an isosceles trapezium, the parallel sides are 10 cm and 22 cm, and the area is 192 cm². Find the length of the non-parallel sides.",
     "option_a": "6 cm",
     "option_b": "6√5 cm",
     "option_c": "3 cm",
     "option_d": "3√5 cm",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 60,
-    "explanation": null
+    "explanation": "Trapezium height = 12 cm, base projection = (22-10)/2 = 6 cm, non-parallel side = √(12² + 6²) = √180 = 6√5 cm (Option B)."
   },
   {
-    "id": 8162,
+    "id": 17062,
     "paper_id": 52,
     "question_text": "If 3 sin θ + 4 cos θ = 5, find the value of sin θ.",
     "option_a": "6/5",
@@ -732,19 +732,19 @@
     "explanation": null
   },
   {
-    "id": 8163,
+    "id": 17063,
     "paper_id": 52,
     "question_text": "If 5 sin θ + 12 cos θ = 13, then find the value of sin θ.",
     "option_a": "2/13",
     "option_b": "5/13",
     "option_c": "11/13",
     "option_d": "12/13",
-    "correct_answer": "D",
+    "correct_answer": "B",
     "question_number": 62,
-    "explanation": null
+    "explanation": "Dividing 5 sin θ + 12 cos θ = 13 by 13 gives sin θ = 5/13 (Option B); 12/13 is cos θ."
   },
   {
-    "id": 8164,
+    "id": 17064,
     "paper_id": 52,
     "question_text": "Find the value of √23 −2√132 − 1 . √23−2√132",
     "option_a": "−2√11",
@@ -756,19 +756,19 @@
     "explanation": null
   },
   {
-    "id": 8165,
+    "id": 17065,
     "paper_id": 52,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p9_x1924.jpeg)",
     "option_a": "53.7%",
     "option_b": "29.1%",
     "option_c": "46.3%",
     "option_d": "73.5%",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 64,
-    "explanation": null
+    "explanation": "Students with height <170 cm = 38, >160 cm = 82; percentage = (38/82) × 100% ≈ 46.3% (Option C)."
   },
   {
-    "id": 8166,
+    "id": 17066,
     "paper_id": 52,
     "question_text": "A person buys a bag at a 20% discount. If the discount were 30%, the price paid would decrease by ₹150. What is the marked price of the bag?",
     "option_a": "₹1200",
@@ -780,7 +780,7 @@
     "explanation": null
   },
   {
-    "id": 8167,
+    "id": 17067,
     "paper_id": 52,
     "question_text": "The marked price of an article is ₹1200. It is sold for ₹768 after two successive discounts of x% each. If instead a single discount of 2x% is applied on the same marked price, what will be the selling price of the article?",
     "option_a": "₹660",
@@ -792,7 +792,7 @@
     "explanation": null
   },
   {
-    "id": 8168,
+    "id": 17068,
     "paper_id": 52,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p9_x1925.jpeg)",
     "option_a": "62°",
@@ -804,7 +804,7 @@
     "explanation": null
   },
   {
-    "id": 8169,
+    "id": 17069,
     "paper_id": 52,
     "question_text": "Let A = {all finite subsets of N} and B = {all infinite subsets of N}. Which is correct?",
     "option_a": "|A| = ℵ0, |B| = ℵ0",
@@ -816,7 +816,7 @@
     "explanation": null
   },
   {
-    "id": 8170,
+    "id": 17070,
     "paper_id": 52,
     "question_text": "If √0.03 × 0.3 × a= 0.3 × √0.3 , find a.",
     "option_a": "0.03",
@@ -828,19 +828,19 @@
     "explanation": null
   },
   {
-    "id": 8171,
+    "id": 17071,
     "paper_id": 52,
     "question_text": "Sharanya's bag has 50-paise, 25-paise and 10-paise coins. The ratio of the total monetary value of the 50-paise to the 25paise coins is 3:\n\n2. The ratio of the total number of 25-paise coins to 10-paise coins is 4:\n\n5. If the total number of coins in the bag is 480, calculate the total monetary value of all the coins in the bag.",
     "option_a": "Rs. 160",
     "option_b": "Rs. 150",
     "option_c": "Rs. 130",
     "option_d": "Rs. 120",
-    "correct_answer": "B",
+    "correct_answer": "D",
     "question_number": 70,
-    "explanation": null
+    "explanation": "Coin count ratio is 3:4:5 for 480 coins (120, 160, 200), giving monetary value 120(0.50) + 160(0.25) + 200(0.10) = Rs. 120 (Option D)."
   },
   {
-    "id": 8172,
+    "id": 17072,
     "paper_id": 52,
     "question_text": "If p - q = 11 and pq = 30, find the value of p²+ q2.",
     "option_a": "181",
@@ -852,7 +852,7 @@
     "explanation": null
   },
   {
-    "id": 8173,
+    "id": 17073,
     "paper_id": 52,
     "question_text": "A student's average marks in 8 tests were 74. To achieve an average of at least 76 after 9 tests, what minimum marks must the student score in the ninth test?",
     "option_a": "76",
@@ -864,7 +864,7 @@
     "explanation": null
   },
   {
-    "id": 8174,
+    "id": 17074,
     "paper_id": 52,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-2_p10_x2247.jpeg)",
     "option_a": "70 units; January",
@@ -876,7 +876,7 @@
     "explanation": null
   },
   {
-    "id": 8175,
+    "id": 17075,
     "paper_id": 52,
     "question_text": "If x ≠ 0 and x−1 x= 2 , what is the value of x6 + 1 ? x6",
     "option_a": "194",
@@ -888,7 +888,7 @@
     "explanation": null
   },
   {
-    "id": 8176,
+    "id": 17076,
     "paper_id": 52,
     "question_text": "In villages P and Q, women constitute 3 and 7 5 of their respective populations. The number of men in Q is 20% greater than the number of men in P. If the two villages together contain 3,150 women, what is the total population of village P?",
     "option_a": "3,430",
@@ -900,7 +900,7 @@
     "explanation": null
   },
   {
-    "id": 8177,
+    "id": 17077,
     "paper_id": 52,
     "question_text": "Choose the correct indirect speech form of the following sentence. The teacher said, \"Go to the classroom.\"",
     "option_a": "The teacher told the students that they must go to the classroom.",
@@ -912,7 +912,7 @@
     "explanation": null
   },
   {
-    "id": 8178,
+    "id": 17078,
     "paper_id": 52,
     "question_text": "Complete the collocation by choosing a suitable word to fill in the blank. The lawyer managed to ______ access to confidential documents.",
     "option_a": "obtain",
@@ -924,7 +924,7 @@
     "explanation": null
   },
   {
-    "id": 8179,
+    "id": 17079,
     "paper_id": 52,
     "question_text": "Fill in the blank with appropriate parts of speech. The scientist was awarded a medal ______ her groundbreaking contributions to molecular biology.",
     "option_a": "because",
@@ -936,7 +936,7 @@
     "explanation": null
   },
   {
-    "id": 8180,
+    "id": 17080,
     "paper_id": 52,
     "question_text": "Choose the correct phrase for the word highlighted in bold. Ravi and his neighbour are always at loggerheads.",
     "option_a": "Always in",
@@ -948,7 +948,7 @@
     "explanation": null
   },
   {
-    "id": 8181,
+    "id": 17081,
     "paper_id": 52,
     "question_text": "Choose the option that best improves the sentence by using the correct collocation highlighted in bold. The manager gave a suggestion to cancel the meeting.",
     "option_a": "created a",
@@ -960,7 +960,7 @@
     "explanation": null
   },
   {
-    "id": 8182,
+    "id": 17082,
     "paper_id": 52,
     "question_text": "Choose the option that best improves the sentence by using the correct collocation highlighted in bold. She **gave a serious effort** to solve the complex puzzle.",
     "option_a": "made a serious effort",
@@ -972,7 +972,7 @@
     "explanation": null
   },
   {
-    "id": 8183,
+    "id": 17083,
     "paper_id": 52,
     "question_text": "Fill in the blank with the appropriate tense. If technological advancements ________ at the current pace, we will soon witness innovations previously deemed impossible.",
     "option_a": "continue",
@@ -984,7 +984,7 @@
     "explanation": null
   },
   {
-    "id": 8184,
+    "id": 17084,
     "paper_id": 52,
     "question_text": "Read the sentence below and choose the idiom meaning that best fits the context: “Meeta says she doesn’t want to become a big wheel in the company because she doesn’t want so much responsibility.” What does the idiom “a big wheel” mean in this context?",
     "option_a": "A person who does physical work in the company",
@@ -996,7 +996,7 @@
     "explanation": null
   },
   {
-    "id": 8185,
+    "id": 17085,
     "paper_id": 52,
     "question_text": "Choose the correct meaning of idiom: Put a good face on",
     "option_a": "To appear angry despite happiness",
@@ -1008,7 +1008,7 @@
     "explanation": null
   },
   {
-    "id": 8186,
+    "id": 17086,
     "paper_id": 52,
     "question_text": "Choose the correct spelling of a word meaning 'abundant in growth, especially vegetation'.",
     "option_a": "Luxuriant",
@@ -1020,7 +1020,7 @@
     "explanation": null
   },
   {
-    "id": 8187,
+    "id": 17087,
     "paper_id": 52,
     "question_text": "Spot the correct spelling of a practitioner who treats musculoskeletal issues.",
     "option_a": "Chiropracter",
@@ -1032,7 +1032,7 @@
     "explanation": null
   },
   {
-    "id": 8188,
+    "id": 17088,
     "paper_id": 52,
     "question_text": "Identify the misspelt word.",
     "option_a": "Anathema",
@@ -1044,7 +1044,7 @@
     "explanation": null
   },
   {
-    "id": 8189,
+    "id": 17089,
     "paper_id": 52,
     "question_text": "Identify the misspelt word.",
     "option_a": "Disconsolate",
@@ -1056,7 +1056,7 @@
     "explanation": null
   },
   {
-    "id": 8190,
+    "id": 17090,
     "paper_id": 52,
     "question_text": "Find the part of the sentence that contains an error: No less than five hundred students (1)/ has enrolled in (2)/ the online preparatory course\n\n(3)/ for civil service exams. (4)",
     "option_a": "1",
@@ -1068,7 +1068,7 @@
     "explanation": null
   },
   {
-    "id": 8191,
+    "id": 17091,
     "paper_id": 52,
     "question_text": "Find the part of the sentence that contains an error: Rarely the department issues (1)/ such open calls for proposals (2)/ without internal approvals (3)/ from the steering committee.\n\n(4)",
     "option_a": "1",
@@ -1080,7 +1080,7 @@
     "explanation": null
   },
   {
-    "id": 8192,
+    "id": 17092,
     "paper_id": 52,
     "question_text": "Select the sentence containing the homonym of the highlighted word: The seal used on the treaty indicated mutual assent.",
     "option_a": "The marine biologist studied a wounded seal.",
@@ -1092,7 +1092,7 @@
     "explanation": null
   },
   {
-    "id": 8193,
+    "id": 17093,
     "paper_id": 52,
     "question_text": "Select the sentence containing the homonym of the highlighted word: The monk noted a red incipit at the beginning of the psalm.",
     "option_a": "The librarian traced the incipit of a Carolingian hymn.",
@@ -1104,7 +1104,7 @@
     "explanation": null
   },
   {
-    "id": 8194,
+    "id": 17094,
     "paper_id": 52,
     "question_text": "Rearrange the following sentences in correct order to make a logical sentence P: as proxies for social legitimacy Q: Educational credentials R: operate S: in stratified economies",
     "option_a": "QRSP",
@@ -1116,7 +1116,7 @@
     "explanation": null
   },
   {
-    "id": 8195,
+    "id": 17095,
     "paper_id": 52,
     "question_text": "Rearrange the following sentences in correct order to make a logical sentence P: in trans-border water negotiations Q: Hydro-political asymmetries R: continue to shape S: regional cooperation outcomes",
     "option_a": "RQSP",
@@ -1128,7 +1128,7 @@
     "explanation": null
   },
   {
-    "id": 8196,
+    "id": 17096,
     "paper_id": 52,
     "question_text": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The economist said that had the reforms been implemented sooner, the economy would have recovered faster.",
     "option_a": "\"If the reforms had implemented sooner,\nthe economy would recover faster,\" said\nthe economist.",
@@ -1140,7 +1140,7 @@
     "explanation": null
   },
   {
-    "id": 8197,
+    "id": 17097,
     "paper_id": 52,
     "question_text": "**Comprehension (Q. 96 - 100):** In contemporary cognitive psychology, attention is regarded as the gateway of perception, ________ the selection and filtering of sensory information before it reaches conscious awareness. This mechanism determines how individuals construct their subjective reality in complex environments, thereby underpinning adaptive behavior and learning efficiency in everyday functioning. ________ (B) researchers have long debated its limitations, recent experimental findings suggest that attention is far more dynamic than previously assumed, particularly under conditions of high cognitive load and environmental uncertainty, which carries significant implications for designing effective cognitive training interventions. Psychologists often ________ (C) elaborate experiments involving divided attention tasks to examine how individuals allocate mental resources under varying conditions, especially when competing stimuli demand simultaneous processing, in both laboratory and real-world multitasking scenarios. Such studies reveal that cognitive overload can distort the mental ________ (D) of decision-making, leading to systematic errors in judgment and memory recall, thereby challenging earlier models of rational cognition within both clinical and educational assessments. Moreover, the role of attention is increasingly examined ________ (E) emotional regulation, highlighting its influence not only on perception but also on affective states, stress response, and interpersonal behaviour in both clinical psychology and applied neurocognitive research.\n\n---\n\nThe correct option to fill in blank",
     "option_a": "governing",
@@ -1152,19 +1152,19 @@
     "explanation": null
   },
   {
-    "id": 8198,
+    "id": 17098,
     "paper_id": 52,
     "question_text": "**Comprehension (Q. 96 - 100):** In contemporary cognitive psychology, attention is regarded as the gateway of perception, ________ the selection and filtering of sensory information before it reaches conscious awareness. This mechanism determines how individuals construct their subjective reality in complex environments, thereby underpinning adaptive behavior and learning efficiency in everyday functioning. ________ (B) researchers have long debated its limitations, recent experimental findings suggest that attention is far more dynamic than previously assumed, particularly under conditions of high cognitive load and environmental uncertainty, which carries significant implications for designing effective cognitive training interventions. Psychologists often ________ (C) elaborate experiments involving divided attention tasks to examine how individuals allocate mental resources under varying conditions, especially when competing stimuli demand simultaneous processing, in both laboratory and real-world multitasking scenarios. Such studies reveal that cognitive overload can distort the mental ________ (D) of decision-making, leading to systematic errors in judgment and memory recall, thereby challenging earlier models of rational cognition within both clinical and educational assessments. Moreover, the role of attention is increasingly examined ________ (E) emotional regulation, highlighting its influence not only on perception but also on affective states, stress response, and interpersonal behaviour in both clinical psychology and applied neurocognitive research.\n\n---\n\nThe correct connector for the blank",
     "option_a": "Since",
     "option_b": "Because",
     "option_c": "Unless",
     "option_d": "While",
-    "correct_answer": "A",
+    "correct_answer": "D",
     "question_number": 97,
-    "explanation": null
+    "explanation": "The contrast between long-debated limitations and recent dynamic findings requires the concessive conjunction 'While' (Option D)."
   },
   {
-    "id": 8199,
+    "id": 17099,
     "paper_id": 52,
     "question_text": "**Comprehension (Q. 96 - 100):** In contemporary cognitive psychology, attention is regarded as the gateway of perception, ________ the selection and filtering of sensory information before it reaches conscious awareness. This mechanism determines how individuals construct their subjective reality in complex environments, thereby underpinning adaptive behavior and learning efficiency in everyday functioning. ________ (B) researchers have long debated its limitations, recent experimental findings suggest that attention is far more dynamic than previously assumed, particularly under conditions of high cognitive load and environmental uncertainty, which carries significant implications for designing effective cognitive training interventions. Psychologists often ________ (C) elaborate experiments involving divided attention tasks to examine how individuals allocate mental resources under varying conditions, especially when competing stimuli demand simultaneous processing, in both laboratory and real-world multitasking scenarios. Such studies reveal that cognitive overload can distort the mental ________ (D) of decision-making, leading to systematic errors in judgment and memory recall, thereby challenging earlier models of rational cognition within both clinical and educational assessments. Moreover, the role of attention is increasingly examined ________ (E) emotional regulation, highlighting its influence not only on perception but also on affective states, stress response, and interpersonal behaviour in both clinical psychology and applied neurocognitive research.\n\n---\n\nThe correct phrasal verb for the blank",
     "option_a": "bring up",
@@ -1176,7 +1176,7 @@
     "explanation": null
   },
   {
-    "id": 8200,
+    "id": 17100,
     "paper_id": 52,
     "question_text": "**Comprehension (Q. 96 - 100):** In contemporary cognitive psychology, attention is regarded as the gateway of perception, ________ the selection and filtering of sensory information before it reaches conscious awareness. This mechanism determines how individuals construct their subjective reality in complex environments, thereby underpinning adaptive behavior and learning efficiency in everyday functioning. ________ (B) researchers have long debated its limitations, recent experimental findings suggest that attention is far more dynamic than previously assumed, particularly under conditions of high cognitive load and environmental uncertainty, which carries significant implications for designing effective cognitive training interventions. Psychologists often ________ (C) elaborate experiments involving divided attention tasks to examine how individuals allocate mental resources under varying conditions, especially when competing stimuli demand simultaneous processing, in both laboratory and real-world multitasking scenarios. Such studies reveal that cognitive overload can distort the mental ________ (D) of decision-making, leading to systematic errors in judgment and memory recall, thereby challenging earlier models of rational cognition within both clinical and educational assessments. Moreover, the role of attention is increasingly examined ________ (E) emotional regulation, highlighting its influence not only on perception but also on affective states, stress response, and interpersonal behaviour in both clinical psychology and applied neurocognitive research.\n\n---\n\nThe most appropriate word for the blank",
     "option_a": "architecture",
@@ -1188,7 +1188,7 @@
     "explanation": null
   },
   {
-    "id": 8201,
+    "id": 17101,
     "paper_id": 52,
     "question_text": "**Comprehension (Q. 96 - 100):** In contemporary cognitive psychology, attention is regarded as the gateway of perception, ________ the selection and filtering of sensory information before it reaches conscious awareness. This mechanism determines how individuals construct their subjective reality in complex environments, thereby underpinning adaptive behavior and learning efficiency in everyday functioning. ________ (B) researchers have long debated its limitations, recent experimental findings suggest that attention is far more dynamic than previously assumed, particularly under conditions of high cognitive load and environmental uncertainty, which carries significant implications for designing effective cognitive training interventions. Psychologists often ________ (C) elaborate experiments involving divided attention tasks to examine how individuals allocate mental resources under varying conditions, especially when competing stimuli demand simultaneous processing, in both laboratory and real-world multitasking scenarios. Such studies reveal that cognitive overload can distort the mental ________ (D) of decision-making, leading to systematic errors in judgment and memory recall, thereby challenging earlier models of rational cognition within both clinical and educational assessments. Moreover, the role of attention is increasingly examined ________ (E) emotional regulation, highlighting its influence not only on perception but also on affective states, stress response, and interpersonal behaviour in both clinical psychology and applied neurocognitive research.\n\n---\n\nThe correct prepositional phrase for the blank (E) is:",
     "option_a": "in relation to",

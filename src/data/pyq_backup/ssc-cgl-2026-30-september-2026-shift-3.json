@@ -1,6 +1,6 @@
 [
   {
-    "id": 5502,
+    "id": 14402,
     "paper_id": 26,
     "question_text": "Address A: Plot No. 89, Industrial Area, Phase II, Chandigarh – 160002. Address B: Plot No. 98, Industrial Area, Phase II, Chandigarh – 160002. Are these addresses likely to be the same?",
     "option_a": "Yes",
@@ -12,7 +12,7 @@
     "explanation": null
   },
   {
-    "id": 5503,
+    "id": 14403,
     "paper_id": 26,
     "question_text": "In a certain code language, \"PEACE\" is written as \"ODZBD.\" How will \"SMILE\" be written in the same code language?",
     "option_a": "RLHKD",
@@ -24,31 +24,31 @@
     "explanation": null
   },
   {
-    "id": 5504,
+    "id": 14404,
     "paper_id": 26,
     "question_text": "In a certain code language, \"DEVELOPMENT\" is written as \"EEWEMOQMFNU\". How will \"MANAGEMENT\" be written?",
     "option_a": "NBOAHENFOT",
     "option_b": "NAOAHENEOT",
     "option_c": "NAPAHFNEOT",
     "option_d": "NAOBHFNEOT",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 3,
-    "explanation": null
+    "explanation": "Odd-positioned letters are shifted by +1 and even-positioned letters remain unchanged, giving NAOAHENEOT (Option B)."
   },
   {
-    "id": 5505,
+    "id": 14405,
     "paper_id": 26,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p2_x27.jpeg)",
     "option_a": "23",
     "option_b": "25",
     "option_c": "27",
     "option_d": "29",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 4,
-    "explanation": null
+    "explanation": "Total number of triangles in a 4-level triangular grid is n(n+2)(2n+1)/8 = 4(6)(9)/8 = 27 (Option C)."
   },
   {
-    "id": 5506,
+    "id": 14406,
     "paper_id": 26,
     "question_text": "Complete the pattern in fig.\n\n(X) by selecting one of the figures from the four alternatives : Figure(X):",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p2_x28.jpeg)",
@@ -60,7 +60,7 @@
     "explanation": null
   },
   {
-    "id": 5507,
+    "id": 14407,
     "paper_id": 26,
     "question_text": "Among W, X, Y, Z and V, X is taller than W but shorter than Y. W is taller than only\n\nV. Z is taller than Y. Who will be in the middle if they stand from shortest to tallest?",
     "option_a": "Y",
@@ -72,7 +72,7 @@
     "explanation": null
   },
   {
-    "id": 5508,
+    "id": 14408,
     "paper_id": 26,
     "question_text": "You are an administrative officer in a district where a planned vaccination drive is being actively resisted by a community due to widespread misinformation. What is the most effective approach?",
     "option_a": "Mandate that local police authorities forcefully compel all district residents to participate in the vaccination drive to ensure full compliance with official health directives.",
@@ -84,7 +84,7 @@
     "explanation": null
   },
   {
-    "id": 5509,
+    "id": 14409,
     "paper_id": 26,
     "question_text": "You are leading a high-profile public infrastructure project. During a live, televised press conference, a journalist presents a leaked, out-of-context document and aggressively accuses your team of financial corruption. You feel a sudden surge of intense anger and your heart rate spikes. Which of the following actions demonstrates the highest level of Emotional Intelligence?",
     "option_a": "Immediately counter-attack the journalist's credibility to protect your department's reputation before the audience shifts.",
@@ -96,7 +96,7 @@
     "explanation": null
   },
   {
-    "id": 5510,
+    "id": 14410,
     "paper_id": 26,
     "question_text": "Two of your senior team members, both exceptional performers, have developed a deep professional animosity. Their constant bickering during project design sessions is beginning to force junior employees to take sides, splintering the department's unity. What is the most emotionally intelligent course of action for you to take?",
     "option_a": "Issue a formal warning letter to both individuals, stating that their annual performance appraisal scores will be slashed by 20% if another argument occurs.",
@@ -108,19 +108,19 @@
     "explanation": null
   },
   {
-    "id": 5511,
+    "id": 14411,
     "paper_id": 26,
     "question_text": "If 4 + 5 = 7, 16 + 3 = 7, and 64 + 2 = 10, then what is the value of 121 + 4 ?",
     "option_a": "7",
     "option_b": "4",
     "option_c": "15",
     "option_d": "11",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 10,
-    "explanation": null
+    "explanation": "Pattern is √(first number) + second number, so √121 + 4 = 11 + 4 = 15 (Option C)."
   },
   {
-    "id": 5512,
+    "id": 14412,
     "paper_id": 26,
     "question_text": "Choose the correct sequence of mathematical operators to replace the asterisks (*) in order to make the following expression a valid equation. 14 * 6 * 40 * 5 * 18 = 44",
     "option_a": "÷, +, ×, -",
@@ -132,7 +132,7 @@
     "explanation": null
   },
   {
-    "id": 5513,
+    "id": 14413,
     "paper_id": 26,
     "question_text": "In the following question, one statement is given, followed by certain inferences. Consider the statement to be true even if it seems to contradict commonly known facts. Read the inferences carefully and decide which of them logically follow from the given statement.\n\nStatement: The government has introduced a new tax policy that raises taxes on luxury items. Inferences:\n\nI. The government wants to discourage people from buying luxury goods.\n\nII. The government aims to increase revenue through taxation.\n\nIII. The government aims to reduce income inequality by imposing higher taxes on luxury goods.",
     "option_a": "Only Inference I follows.",
@@ -144,7 +144,7 @@
     "explanation": null
   },
   {
-    "id": 5514,
+    "id": 14414,
     "paper_id": 26,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p4_x575.jpeg)",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_q13_opt_A.png)",
@@ -156,7 +156,7 @@
     "explanation": null
   },
   {
-    "id": 5515,
+    "id": 14415,
     "paper_id": 26,
     "question_text": "During a school field trip, you're a chaperone and notice that one student seems to be deliberately excluded from group activities by their peers, though no one says anything overtly unkind. What should you do?",
     "option_a": "Wait to see if the situation resolves on its own, since no rules are technically being broken.",
@@ -168,7 +168,7 @@
     "explanation": null
   },
   {
-    "id": 5516,
+    "id": 14416,
     "paper_id": 26,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p4_x580.jpeg)",
     "option_a": "2",
@@ -180,7 +180,7 @@
     "explanation": null
   },
   {
-    "id": 5517,
+    "id": 14417,
     "paper_id": 26,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p4_x581.jpeg)",
     "option_a": "1",
@@ -192,7 +192,7 @@
     "explanation": null
   },
   {
-    "id": 5518,
+    "id": 14418,
     "paper_id": 26,
     "question_text": "Identify the Venn diagram that represents the relationships between \"Taxpayers, Females, and Billionaires\".",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p4_x582.jpeg)",
@@ -204,7 +204,7 @@
     "explanation": null
   },
   {
-    "id": 5519,
+    "id": 14419,
     "paper_id": 26,
     "question_text": "Read the given statement carefully and the following assumptions based on it. Decide which of the assumptions are implicit in the statement.\n\nStatement: To reduce the backlog of pending legal cases, the high court has decided to implement an automated digital filing system. Assumptions:\n\nI. The entire backlog is caused solely by the manual filing of paper documents.\n\nII. All lawyers and judges in the court are already experts in using digital filing systems.",
     "option_a": "Only Assumption II is implicit",
@@ -216,7 +216,7 @@
     "explanation": null
   },
   {
-    "id": 5520,
+    "id": 14420,
     "paper_id": 26,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p4_x586.jpeg)",
     "option_a": "5",
@@ -228,7 +228,7 @@
     "explanation": null
   },
   {
-    "id": 5521,
+    "id": 14421,
     "paper_id": 26,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p4_x587.jpeg)",
     "option_a": "a",
@@ -240,7 +240,7 @@
     "explanation": null
   },
   {
-    "id": 5522,
+    "id": 14422,
     "paper_id": 26,
     "question_text": "In the following question, out of the five figures marked (a), (b), (c), (d), and (e), four are similar in a certain manner. However, one figure is not like the other four. Choose the figure which is different from the rest.",
     "option_a": "c",
@@ -252,7 +252,7 @@
     "explanation": null
   },
   {
-    "id": 5523,
+    "id": 14423,
     "paper_id": 26,
     "question_text": "Which of the following rows/columns are connected/related with each other in some way? Rows Columns I II III IV V I 2 5 3 4 6 II 4 16 9 16 14 III 8 56 27 64 132 IV 16 115 81 256 180 V 32 120 243 1024 508",
     "option_a": "Columns I, II and",
@@ -264,7 +264,7 @@
     "explanation": null
   },
   {
-    "id": 5524,
+    "id": 14424,
     "paper_id": 26,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p5_x841.jpeg)",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_q23_opt_A.png)",
@@ -276,7 +276,7 @@
     "explanation": null
   },
   {
-    "id": 5525,
+    "id": 14425,
     "paper_id": 26,
     "question_text": "Fill in the blanks (_) using one of the following four options such that the series follows a specific pattern in the given order. p _ rt _ srtps _ tp _ rt",
     "option_a": "prps",
@@ -288,7 +288,7 @@
     "explanation": null
   },
   {
-    "id": 5526,
+    "id": 14426,
     "paper_id": 26,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p5_x846.jpeg)",
     "option_a": "A",
@@ -300,7 +300,7 @@
     "explanation": null
   },
   {
-    "id": 5527,
+    "id": 14427,
     "paper_id": 26,
     "question_text": "The Father of the Indian Constitution, Dr. B.R. Ambedkar, termed which right as the \"Heart and Soul\" of the Constitution?",
     "option_a": "Right to economic and social equality",
@@ -312,7 +312,7 @@
     "explanation": null
   },
   {
-    "id": 5528,
+    "id": 14428,
     "paper_id": 26,
     "question_text": "The Inter-State Council is established under which Article of the Constitution?",
     "option_a": "Article 262 of the Indian Constitution ![Option A](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p5_x842.jpeg)",
@@ -324,19 +324,19 @@
     "explanation": null
   },
   {
-    "id": 5529,
+    "id": 14429,
     "paper_id": 26,
     "question_text": "When it is midnight at the IST meridian, a place observes 6 a.m. Calculate meridian of that place.",
     "option_a": "277°31' E",
     "option_b": "172°30' E",
     "option_c": "37°30' E",
     "option_d": "127°30' W",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 28,
-    "explanation": null
+    "explanation": "A place observing 6:00 a.m. when IST (82°30' E) is at midnight is 6 hours (+90°) East of IST, at 82°30' + 90° = 172°30' E (Option B)."
   },
   {
-    "id": 5530,
+    "id": 14430,
     "paper_id": 26,
     "question_text": "Which article of the Indian Constitution empowers Parliament to determine the salaries and allowances of its members?",
     "option_a": "Article 102",
@@ -348,7 +348,7 @@
     "explanation": null
   },
   {
-    "id": 5531,
+    "id": 14431,
     "paper_id": 26,
     "question_text": "Financial Emergency in India comes under which Article of the Constitution?",
     "option_a": "Article 352",
@@ -360,31 +360,31 @@
     "explanation": null
   },
   {
-    "id": 5532,
+    "id": 14432,
     "paper_id": 26,
     "question_text": "Which of the following is the SI unit of magnetic flux?",
     "option_a": "Farad",
     "option_b": "Henry",
     "option_c": "Pascal",
     "option_d": "Weber",
-    "correct_answer": "A",
+    "correct_answer": "D",
     "question_number": 31,
-    "explanation": null
+    "explanation": "The SI unit of magnetic flux is Weber (Wb), whereas Farad is the unit of electrical capacitance (Option D)."
   },
   {
-    "id": 5533,
+    "id": 14433,
     "paper_id": 26,
     "question_text": "Which ocean contains the point where the Equator intersects the Prime Meridian?",
     "option_a": "Pacific Ocean",
     "option_b": "Atlantic Ocean",
     "option_c": "Indian Ocean",
     "option_d": "Arctic Ocean",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 32,
-    "explanation": null
+    "explanation": "The intersection of the Equator (0° latitude) and the Prime Meridian (0° longitude) is located in the Gulf of Guinea in the Atlantic Ocean (Option B)."
   },
   {
-    "id": 5534,
+    "id": 14434,
     "paper_id": 26,
     "question_text": "Cereals cover approximately what percentage of the total cropped area in India?",
     "option_a": "25%",
@@ -396,7 +396,7 @@
     "explanation": null
   },
   {
-    "id": 5535,
+    "id": 14435,
     "paper_id": 26,
     "question_text": "Which of the following best describes the primary ecological function of a food web within a natural habitat?",
     "option_a": "It shows a series of branching lines of interconnected food chains",
@@ -408,7 +408,7 @@
     "explanation": null
   },
   {
-    "id": 5536,
+    "id": 14436,
     "paper_id": 26,
     "question_text": "Excessive curvature of the eye lens causes which defect?",
     "option_a": "Presbyopia",
@@ -420,19 +420,19 @@
     "explanation": null
   },
   {
-    "id": 5537,
+    "id": 14437,
     "paper_id": 26,
     "question_text": "Consider the following pairs of legendary musicians and their associated Gharanas:\n\n1. Ustad Ali Akbar Khan – Maihar Gharana\n\n2. Pandit Bhimsen Joshi – Kirana Gharana Which of the pairs given above is/are correctly matched?",
     "option_a": "1 only",
     "option_b": "2 only",
     "option_c": "Both 1 and 2",
     "option_d": "Neither 1 nor 2",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 36,
-    "explanation": null
+    "explanation": "Both pairs are correctly matched: Ustad Ali Akbar Khan belonged to the Maihar Gharana and Pandit Bhimsen Joshi to the Kirana Gharana (Option C)."
   },
   {
-    "id": 5538,
+    "id": 14438,
     "paper_id": 26,
     "question_text": "What is the main objective of the BHASHINI Mission under the National Language Translation Mission (NLTM)?",
     "option_a": "Teaching Sanskrit in all schools",
@@ -444,7 +444,7 @@
     "explanation": null
   },
   {
-    "id": 5539,
+    "id": 14439,
     "paper_id": 26,
     "question_text": "The emphasis on “South-South Cooperation” within BRICS (Brazil, Russia, India, China, and South Africa) primarily implies cooperation among:",
     "option_a": "Developed industrial economies",
@@ -456,7 +456,7 @@
     "explanation": null
   },
   {
-    "id": 5540,
+    "id": 14440,
     "paper_id": 26,
     "question_text": "BRICS (Brazil, Russia, India, China, and South Africa) summits are generally characterized by:",
     "option_a": "Enforcement sanctions on member states",
@@ -468,19 +468,19 @@
     "explanation": null
   },
   {
-    "id": 5541,
+    "id": 14441,
     "paper_id": 26,
     "question_text": "A sees B attempting to kidnap C into a vehicle. A shoots B dead to prevent the kidnapping. Which of the following is the strongest legal justification under the Bharatiya Nyaya Sanhita, 2023 in India?",
     "option_a": "The act would be justified only if B were armed.",
     "option_b": "The act exceeds private defence because kidnapping is not punishable by death.",
     "option_c": "Private defence extends to death in kidnapping assaults.",
     "option_d": "A may only use non-lethal force unless C is actually abducted.",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 40,
-    "explanation": null
+    "explanation": "Under the law of private defence (BNS/IPC), the right of private defence of the body extends to causing death in assaults with intention of kidnapping or abducting (Option C)."
   },
   {
-    "id": 5542,
+    "id": 14442,
     "paper_id": 26,
     "question_text": "Who has been appointed as the 27th Chief of the Naval Staff (CNS) of the Indian Navy in May 2026?",
     "option_a": "Admiral Dinesh Kumar Tripathi",
@@ -492,7 +492,7 @@
     "explanation": null
   },
   {
-    "id": 5543,
+    "id": 14443,
     "paper_id": 26,
     "question_text": "Which Indian tennis player, at age 43, set the Open Era record by winning the Australian Open 2024 men’s doubles title?",
     "option_a": "Leander Paes",
@@ -504,7 +504,7 @@
     "explanation": null
   },
   {
-    "id": 5544,
+    "id": 14444,
     "paper_id": 26,
     "question_text": "In June 2026, which of the following protected areas in Assam recorded its firstever sighting of the Yellow-throated Marten?",
     "option_a": "Manas National Park",
@@ -516,7 +516,7 @@
     "explanation": null
   },
   {
-    "id": 5545,
+    "id": 14445,
     "paper_id": 26,
     "question_text": "Which ISRO launch vehicle is being upgraded with the Semicryogenic Engine (SE2000)?",
     "option_a": "Polar Satellite Launch Vehicle (PSLV)",
@@ -528,7 +528,7 @@
     "explanation": null
   },
   {
-    "id": 5546,
+    "id": 14446,
     "paper_id": 26,
     "question_text": "Which of the following statement regarding Net Domestic Product (NDP) at market prices is correct? (GDP =Gross Domestic Product)",
     "option_a": "Net Domestic Product at market prices exceeds GDP at market prices by the 6 amount of depreciation.",
@@ -540,7 +540,7 @@
     "explanation": null
   },
   {
-    "id": 5547,
+    "id": 14447,
     "paper_id": 26,
     "question_text": "During the 1991 economic crisis, India's foreign exchange reserves dropped to a level that was sufficient to finance imports for only how long?",
     "option_a": "One month",
@@ -552,7 +552,7 @@
     "explanation": null
   },
   {
-    "id": 5548,
+    "id": 14448,
     "paper_id": 26,
     "question_text": "Which technology is primarily emphasized in the URDPFI (Urban and Regional Development Plans Formulation and Implementation) Guidelines for improving the speed and efficiency of urban planning and spatial analysis?",
     "option_a": "Remote Sensing and GIS (Geographic Information System)",
@@ -564,19 +564,19 @@
     "explanation": null
   },
   {
-    "id": 5549,
+    "id": 14449,
     "paper_id": 26,
     "question_text": "Which of the following policy shifts characterized the Tenth Five-Year Plan (2002–2007) in terms of target setting?",
     "option_a": "Phasing out centrally sponsored schemes",
     "option_b": "Introducing eleven core monitorable targets",
     "option_c": "Restricting foreign direct investment",
     "option_d": "Eliminating fiscal deficit targets entirely",
-    "correct_answer": "C",
+    "correct_answer": "B",
     "question_number": 48,
-    "explanation": null
+    "explanation": "The Tenth Five-Year Plan (2002–2007) uniquely introduced eleven core monitorable targets alongside GDP growth targets (Option B)."
   },
   {
-    "id": 5550,
+    "id": 14450,
     "paper_id": 26,
     "question_text": "Under the Indian Independence Act, full legislative authority in each Dominion was vested in which body?",
     "option_a": "British Parliament",
@@ -588,7 +588,7 @@
     "explanation": null
   },
   {
-    "id": 5551,
+    "id": 14451,
     "paper_id": 26,
     "question_text": "Which Governor-General of India abolished the practice of sati through Regulation XVII?",
     "option_a": "Lord Ripon",
@@ -600,7 +600,7 @@
     "explanation": null
   },
   {
-    "id": 5552,
+    "id": 14452,
     "paper_id": 26,
     "question_text": "Simplify:[(1.25 × 1.25 × 1.25 − 1) ÷ (1.25 × 1.25 + 1.25 + 1)] + 0.75.",
     "option_a": "1",
@@ -612,7 +612,7 @@
     "explanation": null
   },
   {
-    "id": 5553,
+    "id": 14453,
     "paper_id": 26,
     "question_text": "If √1 + x = 8 , find the value of 49 7\n\nx.",
     "option_a": "10",
@@ -624,7 +624,7 @@
     "explanation": null
   },
   {
-    "id": 5554,
+    "id": 14454,
     "paper_id": 26,
     "question_text": "Working alone, Pipe P can fill 15% of a tank in 4 hours, and Pipe Q can fill 18% of the same tank in 4 hours. If both pipes are opened together, what percentage of the tank will be filled in 4 hours?",
     "option_a": "25%",
@@ -636,19 +636,19 @@
     "explanation": null
   },
   {
-    "id": 5555,
+    "id": 14455,
     "paper_id": 26,
     "question_text": "When x is subtracted from each of 20, 28, 25, and 35, the numbers so obtained are in proportion. Find the mean proportional between (x + 2) and (3x + 1).",
     "option_a": "√3",
     "option_b": "3√2",
     "option_c": "2√3",
     "option_d": "√2",
-    "correct_answer": "A",
+    "correct_answer": "D",
     "question_number": 54,
-    "explanation": null
+    "explanation": "Solving (20-x)/(28-x) = (25-x)/(35-x) gives x = 0; the mean proportional between (0+2) and (3(0)+1) is √(2 × 1) = √2 (Option D)."
   },
   {
-    "id": 5556,
+    "id": 14456,
     "paper_id": 26,
     "question_text": "A man invests ₹4,000 for 3 years at a certain rate of simple interest. If the principal is increased by ₹2,000 and the rate is kept the same, the interest increases by ₹360. What was the original rate of interest?",
     "option_a": "6%",
@@ -660,7 +660,7 @@
     "explanation": null
   },
   {
-    "id": 5557,
+    "id": 14457,
     "paper_id": 26,
     "question_text": "If x(7 −3 x) = 7 , then find the value of x x² + 1 . x²",
     "option_a": "107",
@@ -672,7 +672,7 @@
     "explanation": null
   },
   {
-    "id": 5558,
+    "id": 14458,
     "paper_id": 26,
     "question_text": "Which type of line has a slope equal to zero?",
     "option_a": "Vertical line",
@@ -684,7 +684,7 @@
     "explanation": null
   },
   {
-    "id": 5559,
+    "id": 14459,
     "paper_id": 26,
     "question_text": "₹2,50,000 is invested at 8% compound interest. After 1 year, ₹40,000 is withdrawn. Find the amount after 2 years.",
     "option_a": "₹2,98,400",
@@ -696,7 +696,7 @@
     "explanation": null
   },
   {
-    "id": 5560,
+    "id": 14460,
     "paper_id": 26,
     "question_text": "A rectangular box has dimensions 150 cm × 60 cm × 30 cm. Small cubes of side 5 cm are packed inside without leaving space. How many cubes can be packed?",
     "option_a": "2160",
@@ -708,7 +708,7 @@
     "explanation": null
   },
   {
-    "id": 5561,
+    "id": 14461,
     "paper_id": 26,
     "question_text": "A chord of a circle subtends an angle of 60° at the center. If the radius of the circle is 10 cm, find the length of the chord.",
     "option_a": "5 cm",
@@ -720,7 +720,7 @@
     "explanation": null
   },
   {
-    "id": 5562,
+    "id": 14462,
     "paper_id": 26,
     "question_text": "In a quadrilateral ABCD, the diagonal AC is 20 cm. The perpendiculars from vertices B and D to AC are 9 cm and 11 cm respectively. Find the area of ABCD.",
     "option_a": "180 cm²",
@@ -732,7 +732,7 @@
     "explanation": null
   },
   {
-    "id": 5563,
+    "id": 14463,
     "paper_id": 26,
     "question_text": "Evaluate the following expression: ( 1+cosθ+ sinθ 1+cosθ sinθ)( tanθ+cotθ) 1 .",
     "option_a": "2 sin θ",
@@ -744,7 +744,7 @@
     "explanation": null
   },
   {
-    "id": 5564,
+    "id": 14464,
     "paper_id": 26,
     "question_text": "The base of a prism is a right-angled isosceles triangle whose hypotenuse is 5√2 cm. If the height of the prism is 10 cm, find the volume of the prism.",
     "option_a": "110 cm³",
@@ -756,7 +756,7 @@
     "explanation": null
   },
   {
-    "id": 5565,
+    "id": 14465,
     "paper_id": 26,
     "question_text": "Solve: 1 − 1 + 1 √9−√8 √8−√7 √7−√6",
     "option_a": "3 + √6",
@@ -768,7 +768,7 @@
     "explanation": null
   },
   {
-    "id": 5566,
+    "id": 14466,
     "paper_id": 26,
     "question_text": "In triangle ABC, points D and E lie on side BC such that AD = AE and ∠BAD = ∠EAC. If AB = (3x + 1) cm, BD = 9 cm, AC = 34 cm, and EC = (y + 1) cm, then find the value of (x + y).",
     "option_a": "11",
@@ -780,79 +780,79 @@
     "explanation": null
   },
   {
-    "id": 5567,
+    "id": 14467,
     "paper_id": 26,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p9_x2011.jpeg)",
     "option_a": "60-80 sq m",
     "option_b": "100-120 sq m",
     "option_c": "80-100 sq m",
     "option_d": "120-140 sq m",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 66,
-    "explanation": null
+    "explanation": "Total frequency N = 200; the median 100th unit falls in the 80–100 sq m class (cumulative frequency 74 to 134) (Option C)."
   },
   {
-    "id": 5568,
+    "id": 14468,
     "paper_id": 26,
     "question_text": "Two circles of radii 25 cm and 17 cm intersect such that the length of their common chord is 30 cm. Find the distance between the centers of the two circles, given that the centers lie on opposite sides of the chord.",
     "option_a": "12 cm",
     "option_b": "21 cm",
     "option_c": "24 cm",
     "option_d": "28 cm",
-    "correct_answer": "A",
+    "correct_answer": "D",
     "question_number": 67,
-    "explanation": null
+    "explanation": "Perpendicular distances to the common chord from the centers are √(25² - 15²) = 20 cm and √(17² - 15²) = 8 cm; total distance = 20 + 8 = 28 cm (Option D)."
   },
   {
-    "id": 5569,
+    "id": 14469,
     "paper_id": 26,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p9_x2012.jpeg)",
     "option_a": "150-160",
     "option_b": "160-170",
     "option_c": "170-180",
     "option_d": "180-190",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 68,
-    "explanation": null
+    "explanation": "After shifting 10 students from 170-180 to 150-160, class 160–170 retains the highest frequency of 30, remaining the modal class (Option B)."
   },
   {
-    "id": 5570,
+    "id": 14470,
     "paper_id": 26,
     "question_text": "A can contains a mixture of two liquids P and Q in the ratio 8:7. If 5 liters of the mixture is taken out and the remaining part of the can is filled with Q, then the ratio of P and Q becomes 2:\n\n3. Find how many liters of liquid P was there in the can initially?",
     "option_a": "17 liters",
     "option_b": "22 liters 3",
     "option_c": "28 liters",
     "option_d": "32 liters 3",
-    "correct_answer": "A",
+    "correct_answer": "D",
     "question_number": 69,
-    "explanation": null
+    "explanation": "Solving the replacement equation (8/15)(V-5) / [(7/15)(V-5) + 5] = 2/3 yields total volume V = 20 L, so initial liquid P was (8/15) × 20 = 32/3 liters (Option D)."
   },
   {
-    "id": 5571,
+    "id": 14471,
     "paper_id": 26,
     "question_text": "If the radius of a right circular cylinder is tripled and the height is one-third, then find the ratio between the new volume and the previous volume of the cylinder?",
     "option_a": "1 : 3",
     "option_b": "9 : 1",
     "option_c": "3 : 1",
     "option_d": "1 : 9",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 70,
-    "explanation": null
+    "explanation": "New cylinder volume is π(3r)²(h/3) = 3πr²h, giving a ratio of new volume to previous volume of 3 : 1 (Option C)."
   },
   {
-    "id": 5572,
+    "id": 14472,
     "paper_id": 26,
     "question_text": "A shopkeeper marks the price of an article 25% above its cost price. He gives a discount of 10% on the marked price. Find his profit percentage.",
     "option_a": "10.5%",
     "option_b": "15%",
     "option_c": "12.5%",
     "option_d": "17%",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 71,
-    "explanation": null
+    "explanation": "With marked price 25% above CP and a 10% discount, net profit percentage is 25 - 10 - (25 × 10)/100 = 12.5% (Option C)."
   },
   {
-    "id": 5573,
+    "id": 14473,
     "paper_id": 26,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p10_x2339.jpeg)",
     "option_a": "162°",
@@ -864,7 +864,7 @@
     "explanation": null
   },
   {
-    "id": 5574,
+    "id": 14474,
     "paper_id": 26,
     "question_text": "From a point on the ground, the angle of elevation of the top of a tower is 30°. After walking 40 m towards the tower, the angle of elevation becomes 60°. Find the height of the tower.",
     "option_a": "20√3 m",
@@ -876,31 +876,31 @@
     "explanation": null
   },
   {
-    "id": 5575,
+    "id": 14475,
     "paper_id": 26,
     "question_text": "What is the average of the first 20 positive multiples of 7?",
     "option_a": "70.5",
     "option_b": "71.5",
     "option_c": "73.5",
     "option_d": "77",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 74,
-    "explanation": null
+    "explanation": "The average of the first 20 positive multiples of 7 is (7 + 140) / 2 = 73.5 (Option C)."
   },
   {
-    "id": 5576,
+    "id": 14476,
     "paper_id": 26,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-30-september-2026-shift-3_p10_x2340.jpeg)",
     "option_a": "2024, 33.33%",
     "option_b": "2025, 46.32%",
     "option_c": "2025, 48.28%",
     "option_d": "2023, 36.25%",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 75,
-    "explanation": null
+    "explanation": "In 2025, EV production was 112 out of 232 total vehicles, which is 48.28%, exceeding 35% (Option C)."
   },
   {
-    "id": 5577,
+    "id": 14477,
     "paper_id": 26,
     "question_text": "Select the wrongly spelt word out of the four alternatives.",
     "option_a": "Prejudise",
@@ -912,7 +912,7 @@
     "explanation": null
   },
   {
-    "id": 5578,
+    "id": 14478,
     "paper_id": 26,
     "question_text": "Select the wrongly spelt word out of the four alternatives.",
     "option_a": "Anesthetic",
@@ -924,7 +924,7 @@
     "explanation": null
   },
   {
-    "id": 5579,
+    "id": 14479,
     "paper_id": 26,
     "question_text": "Choose the most appropriate antonym of the underlined word. The professor was known for his abstruse lecturing style.",
     "option_a": "Complex",
@@ -936,7 +936,7 @@
     "explanation": null
   },
   {
-    "id": 5580,
+    "id": 14480,
     "paper_id": 26,
     "question_text": "Choose the most appropriate antonym of the underlined word. His speech was marred by a certain infelicity of expression that confused the audience.",
     "option_a": "Unhappiness",
@@ -948,7 +948,7 @@
     "explanation": null
   },
   {
-    "id": 5581,
+    "id": 14481,
     "paper_id": 26,
     "question_text": "Select the correctly spelt word to replace the highlighted word in the given sentence. The gardens are perenially beautiful and lush.",
     "option_a": "Perennially",
@@ -960,7 +960,7 @@
     "explanation": null
   },
   {
-    "id": 5582,
+    "id": 14482,
     "paper_id": 26,
     "question_text": "Select the correctly spelt word to replace the highlighted word in the given sentence. The climate there is very salubrius.",
     "option_a": "Salubrious",
@@ -972,7 +972,7 @@
     "explanation": null
   },
   {
-    "id": 5583,
+    "id": 14483,
     "paper_id": 26,
     "question_text": "In the following question, the first and last parts of the sentence (1 and 6) are given. The rest of the sentence is split into four parts and named P, Q, R, and S. These four parts are not given in their proper order. Read the sentence and find out which of the four combinations is correct.\n\n1. Lack of sleep P. and negatively affects Q. not only impairs R. but also weakens S. cognitive functions\n\n6. the immune system.",
     "option_a": "PQRS",
@@ -984,7 +984,7 @@
     "explanation": null
   },
   {
-    "id": 5584,
+    "id": 14484,
     "paper_id": 26,
     "question_text": "In the following question, the first and last parts of the sentence (1 and 6) are given. The rest of the sentence is split into four parts and named P, Q, R, and S. These four parts are not given in their proper order. Read the sentence and find out which of the four combinations is correct.\n\n1. If we do not P. of our natural resources Q. take immediate steps R. then future generations S. for the conservation\n\n6. will have to face severe crises.",
     "option_a": "QSPR",
@@ -996,7 +996,7 @@
     "explanation": null
   },
   {
-    "id": 5585,
+    "id": 14485,
     "paper_id": 26,
     "question_text": "Choose the most appropriate option to fill the blank in the given sentence. When the lights went out, we spent a ______ evening talking by the ______ light of a few candles.",
     "option_a": "noiseless, waving",
@@ -1008,7 +1008,7 @@
     "explanation": null
   },
   {
-    "id": 5586,
+    "id": 14486,
     "paper_id": 26,
     "question_text": "Choose the most appropriate option to fill the blank in the given sentence. This year's costumes are ______ than last year's, but they were also ______ to prepare.",
     "option_a": "elaborater, difficulter",
@@ -1020,7 +1020,7 @@
     "explanation": null
   },
   {
-    "id": 5587,
+    "id": 14487,
     "paper_id": 26,
     "question_text": "From the given options, select the homonym that corresponds to both Definition (P) and Definition (Q).\n\n(P) A company's legal financial debts or monetary obligations owed to outside parties\n\n(Q) A person or thing whose presence or behaviour creates a disadvantageous burden",
     "option_a": "Liability",
@@ -1032,7 +1032,7 @@
     "explanation": null
   },
   {
-    "id": 5588,
+    "id": 14488,
     "paper_id": 26,
     "question_text": "Which of the following options most accurately expresses the meaning of the idiom \"to hit a purple patch\"?",
     "option_a": "To experience a highly volatile period of civil unrest and institutional friction triggered by sudden austerity measures.",
@@ -1044,7 +1044,7 @@
     "explanation": null
   },
   {
-    "id": 5589,
+    "id": 14489,
     "paper_id": 26,
     "question_text": "Read the sentences below carefully and identify which one contains a grammatical or structural error.\n\n(P) Professor Ali’s latest historical monograph is more comprehensive than concise, offering exhaustive archival data at the expense of brevity.\n\n(Q) The lead prosecutor remarked that the defendant's sudden courtroom confession was ready than calculated, catching the entire defence team off guard.",
     "option_a": "Only P",
@@ -1056,7 +1056,7 @@
     "explanation": null
   },
   {
-    "id": 5590,
+    "id": 14490,
     "paper_id": 26,
     "question_text": "Read the following sentences carefully and identify which one contains a grammatical or structural error.\n\n(P) The department seeks an administrative director more capable of managing international logistics than of drafting internal fiscal policies.\n\n(Q) A legal framework less adaptive to technological disruption than intent on preserving historical precedents will inevitably stifle industrial innovation.",
     "option_a": "Only P",
@@ -1068,7 +1068,7 @@
     "explanation": null
   },
   {
-    "id": 5591,
+    "id": 14491,
     "paper_id": 26,
     "question_text": "Convert the following passive sentence into active voice. Select the option that correctly identifies the true actor and uses the appropriate active transitive verb. A fierce exchange of mutual misunderstanding is generated by alternative ways of thinking and different systems of value, while the individual is left entirely trapped within a rigid, unforgiving worldview.",
     "option_a": "Alternative ways of thinking and different systems of value generate a fierce exchange of mutual misunderstanding, while a rigid, unforgiving worldview leaves the individual entirely trapped.",
@@ -1080,19 +1080,19 @@
     "explanation": null
   },
   {
-    "id": 5592,
+    "id": 14492,
     "paper_id": 26,
     "question_text": "Choose the statement that represents the indirect narration of the given direct narration. Ritam said to Asha, \"The local groups shouted at me, 'You had better move away because we are not going to tolerate your relative's community activism regarding cultural heritage and migration!'\"",
     "option_a": "Ritam told Asha that the local groups shouted at him that he had better move away because they were not going to tolerate his relative's community activism regarding cultural heritage and migration.",
     "option_b": "Ritam told Asha that the local groups shouted at him that he had better moved 11 away because they were not going to tolerate his relative's community activism regarding cultural heritage and migration.",
     "option_c": "Ritam told Asha that the local groups had shouted at him that he had better been moving away because they were not going to tolerate his relative's community activism regarding cultural heritage and migration.",
     "option_d": "Ritam told Asha that the local groups had shouted at him that he had better move away because they were not going to tolerate his relative's community activism regarding cultural heritage and migration.",
-    "correct_answer": "A",
+    "correct_answer": "D",
     "question_number": 91,
-    "explanation": null
+    "explanation": "In indirect speech, the reporting past tense verb 'shouted' backshifts to past perfect 'had shouted', and 'had better' correctly takes bare infinitive 'move' (Option D)."
   },
   {
-    "id": 5593,
+    "id": 14493,
     "paper_id": 26,
     "question_text": "Read the sentence below carefully. Choose the option (A/B/C) that best improves the sentence. If the sentence is already correct, select Option D (No improvement required). The planetary geologist hypothesised that ancient Martian liquid water could have fostered microbial life; consequently, early organic matter might still survive within deep subsurface caves today.",
     "option_a": "A hypothesis was made by the planetary geologist that if liquid water flowed on the ancient Martian surface, microbial life will have emerged, indicating that early organic matter will survive within deep subsurface caves today.",
@@ -1104,7 +1104,7 @@
     "explanation": null
   },
   {
-    "id": 5594,
+    "id": 14494,
     "paper_id": 26,
     "question_text": "Read the sentence below carefully. Choose the option (A/B/C) that best improves the sentence. If the sentence is already correct, select Option D (No improvement required). The core reason why the global tech conglomerate decided to withdraw its investment from the region is because a massive supply chain disruption was suffered by its manufacturing division during the previous fiscal quarter.",
     "option_a": "The global tech conglomerate decided to withdraw its investment from the region because its manufacturing division suffered a massive supply chain disruption during the previous fiscal quarter.",
@@ -1116,7 +1116,7 @@
     "explanation": null
   },
   {
-    "id": 5595,
+    "id": 14495,
     "paper_id": 26,
     "question_text": "Select the correct passive form of the given sentence. The board had already selected the new candidate before the announcement.",
     "option_a": "The new candidate was already selected by the board before the announcement.",
@@ -1128,7 +1128,7 @@
     "explanation": null
   },
   {
-    "id": 5596,
+    "id": 14496,
     "paper_id": 26,
     "question_text": "The following sentence is given in Indirect Speech. Select the option that correctly expresses it in Direct Speech. Mr. Casaubon bluntly asked Dorothea whether she would faithfully continue compiling his sprawling, unfinished mythological notes after his death.",
     "option_a": "Mr. Casaubon bluntly asked Dorothea,\n\"whether she would faithfully continue\ncompiling his sprawling, unfinished\nmythological notes after his death.\"",
@@ -1140,55 +1140,55 @@
     "explanation": null
   },
   {
-    "id": 5597,
+    "id": 14497,
     "paper_id": 26,
     "question_text": "**Comprehension (Q. 96 - 100):** The global transition toward renewable energy has become both an environmental and economic necessity. Nations investing in solar, wind, and green hydrogen technologies can reduce carbon emissions and strengthen energy security. However, the pace of transition varies because governments must balance environmental goals with financial realities. Policymakers are often required to ______ substantial public investment against immediate fiscal constraints, a task that demands both political resolve and economic foresight. Technological innovation has improved the efficiency of renewable systems; (B) ______, the intermittent nature of sunlight and wind continues to pose operational challenges for power grids. Energy storage solutions are promising, but their large-scale deployment depends on sustained research and affordable manufacturing. Experts also argue that renewable projects should not be evaluated solely on shortterm costs but on the broader economic benefits they (C) ______/several decades. Public enthusiasm alone cannot guarantee success. Effective implementation requires governments, industries, researchers, and citizens to (D) ______ their efforts rather than pursuing isolated initiatives. Without such cooperation, even well-designed policies may fail to achieve their intended objectives. Ultimately, the renewable energy revolution will succeed only if societies remain committed to innovation while refusing to (E) ______ complacency in the face of evolving environmental challenges.\n\n---\n\nFill in the blank",
     "option_a": "weigh",
     "option_b": "estimate",
     "option_c": "measure",
     "option_d": "fathom",
-    "correct_answer": "C",
+    "correct_answer": "A",
     "question_number": 96,
-    "explanation": null
+    "explanation": "The idiomatic English collocation for balancing competing priorities against each other is 'weigh [something] against [something]' (Option A)."
   },
   {
-    "id": 5598,
+    "id": 14498,
     "paper_id": 26,
     "question_text": "**Comprehension (Q. 96 - 100):** The global transition toward renewable energy has become both an environmental and economic necessity. Nations investing in solar, wind, and green hydrogen technologies can reduce carbon emissions and strengthen energy security. However, the pace of transition varies because governments must balance environmental goals with financial realities. Policymakers are often required to ______ substantial public investment against immediate fiscal constraints, a task that demands both political resolve and economic foresight. Technological innovation has improved the efficiency of renewable systems; (B) ______, the intermittent nature of sunlight and wind continues to pose operational challenges for power grids. Energy storage solutions are promising, but their large-scale deployment depends on sustained research and affordable manufacturing. Experts also argue that renewable projects should not be evaluated solely on shortterm costs but on the broader economic benefits they (C) ______/several decades. Public enthusiasm alone cannot guarantee success. Effective implementation requires governments, industries, researchers, and citizens to (D) ______ their efforts rather than pursuing isolated initiatives. Without such cooperation, even well-designed policies may fail to achieve their intended objectives. Ultimately, the renewable energy revolution will succeed only if societies remain committed to innovation while refusing to (E) ______ complacency in the face of evolving environmental challenges.\n\n---\n\nFill in the blank",
     "option_a": "therefore",
     "option_b": "moreover",
     "option_c": "nevertheless",
     "option_d": "consequently",
-    "correct_answer": "B",
+    "correct_answer": "C",
     "question_number": 97,
-    "explanation": null
+    "explanation": "A contrastive transition is required between improved efficiency and the operational challenges of intermittency, making 'nevertheless' the correct adverb (Option C)."
   },
   {
-    "id": 5599,
+    "id": 14499,
     "paper_id": 26,
     "question_text": "**Comprehension (Q. 96 - 100):** The global transition toward renewable energy has become both an environmental and economic necessity. Nations investing in solar, wind, and green hydrogen technologies can reduce carbon emissions and strengthen energy security. However, the pace of transition varies because governments must balance environmental goals with financial realities. Policymakers are often required to ______ substantial public investment against immediate fiscal constraints, a task that demands both political resolve and economic foresight. Technological innovation has improved the efficiency of renewable systems; (B) ______, the intermittent nature of sunlight and wind continues to pose operational challenges for power grids. Energy storage solutions are promising, but their large-scale deployment depends on sustained research and affordable manufacturing. Experts also argue that renewable projects should not be evaluated solely on shortterm costs but on the broader economic benefits they (C) ______/several decades. Public enthusiasm alone cannot guarantee success. Effective implementation requires governments, industries, researchers, and citizens to (D) ______ their efforts rather than pursuing isolated initiatives. Without such cooperation, even well-designed policies may fail to achieve their intended objectives. Ultimately, the renewable energy revolution will succeed only if societies remain committed to innovation while refusing to (E) ______ complacency in the face of evolving environmental challenges.\n\n---\n\nFill in the blank",
     "option_a": "incur",
     "option_b": "yield",
     "option_c": "derive",
     "option_d": "consume",
-    "correct_answer": "D",
+    "correct_answer": "B",
     "question_number": 98,
-    "explanation": null
+    "explanation": "Renewable energy projects 'yield' (produce or generate) broader economic benefits over decades (Option B)."
   },
   {
-    "id": 5600,
+    "id": 14500,
     "paper_id": 26,
     "question_text": "**Comprehension (Q. 96 - 100):** The global transition toward renewable energy has become both an environmental and economic necessity. Nations investing in solar, wind, and green hydrogen technologies can reduce carbon emissions and strengthen energy security. However, the pace of transition varies because governments must balance environmental goals with financial realities. Policymakers are often required to ______ substantial public investment against immediate fiscal constraints, a task that demands both political resolve and economic foresight. Technological innovation has improved the efficiency of renewable systems; (B) ______, the intermittent nature of sunlight and wind continues to pose operational challenges for power grids. Energy storage solutions are promising, but their large-scale deployment depends on sustained research and affordable manufacturing. Experts also argue that renewable projects should not be evaluated solely on shortterm costs but on the broader economic benefits they (C) ______/several decades. Public enthusiasm alone cannot guarantee success. Effective implementation requires governments, industries, researchers, and citizens to (D) ______ their efforts rather than pursuing isolated initiatives. Without such cooperation, even well-designed policies may fail to achieve their intended objectives. Ultimately, the renewable energy revolution will succeed only if societies remain committed to innovation while refusing to (E) ______ complacency in the face of evolving environmental challenges.\n\n---\n\nFill in the blank",
     "option_a": "pool",
     "option_b": "scatter",
     "option_c": "divide",
     "option_d": "withdraw",
-    "correct_answer": "D",
+    "correct_answer": "A",
     "question_number": 99,
-    "explanation": null
+    "explanation": "The phrase 'rather than pursuing isolated initiatives' contrasts with combining resources, expressed by the standard idiom 'pool their efforts' (Option A)."
   },
   {
-    "id": 5601,
+    "id": 14501,
     "paper_id": 26,
     "question_text": "**Comprehension (Q. 96 - 100):** The global transition toward renewable energy has become both an environmental and economic necessity. Nations investing in solar, wind, and green hydrogen technologies can reduce carbon emissions and strengthen energy security. However, the pace of transition varies because governments must balance environmental goals with financial realities. Policymakers are often required to ______ substantial public investment against immediate fiscal constraints, a task that demands both political resolve and economic foresight. Technological innovation has improved the efficiency of renewable systems; (B) ______, the intermittent nature of sunlight and wind continues to pose operational challenges for power grids. Energy storage solutions are promising, but their large-scale deployment depends on sustained research and affordable manufacturing. Experts also argue that renewable projects should not be evaluated solely on shortterm costs but on the broader economic benefits they (C) ______/several decades. Public enthusiasm alone cannot guarantee success. Effective implementation requires governments, industries, researchers, and citizens to (D) ______ their efforts rather than pursuing isolated initiatives. Without such cooperation, even well-designed policies may fail to achieve their intended objectives. Ultimately, the renewable energy revolution will succeed only if societies remain committed to innovation while refusing to (E) ______ complacency in the face of evolving environmental challenges.\n\n---\n\nFill in the blank (E) with the most appropriate phrase.",
     "option_a": "succumb to",

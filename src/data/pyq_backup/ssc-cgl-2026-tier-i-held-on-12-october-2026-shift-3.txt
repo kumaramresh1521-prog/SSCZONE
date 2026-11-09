@@ -1,0 +1,916 @@
+================================================================================
+SSC CGL 2026 TIER-I (HELD ON 12 OCTOBER 2026 SHIFT 3)
+Exam: SSC CGL | Year: 2026
+Total Questions: 100 | Duration: 60 Minutes
+Extracted from Official Answer Key via SSC ZONE (www.ssczone.in)
+Last Updated: 7/11/2026, 10:21:57 pm
+================================================================================
+
+Q1. If 'PQR' is coded as 161718, what will be the code for 'STU'?
+A) 192021
+B) 182021
+C) 202122
+D) 171819
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q2. Read the following statement carefully and identify the conclusion that follows.
+
+Statement: The government made Aadhaar mandatory for all subsidy schemes.
+
+Conclusions:
+
+I. People without Aadhaar may lose benefits.
+
+II. The government wants to identify all beneficiaries.
+A) Only Conclusion I
+B) Only Conclusion II follows follows
+C) Both I and II follow
+D) Neither I nor II follows
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q3. Complete the below sequence of letters. A, C, E, G, ?
+A) H
+B) J
+C) I
+D) K
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q4. If 'BOOK' is coded as '2-15-15-11', how is 'PAGE' coded?
+A) 16-2-7-5
+B) 16-1-6-5
+C) 15-1-7-5
+D) 16-1-7-5
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q5. In a group of 40 children, 28 like Ice Cream, 18 like Cake, and 10 like both. How many like only Cake?
+A) 8
+B) 10
+C) 5
+D) 6
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q6. In a school, 100 students were surveyed: 60 play Badminton, 50 play Tennis, 40 play Chess, 30 play both Badminton and Tennis, 20 play Tennis and Chess, 15 play Badminton and Chess, 10 play all three. How many play only Chess?
+A) 15
+B) 18
+C) 20
+D) 22
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q7. Solve If 5x - 3y = 27 and x + 2y = 12, what are the values of x and y?
+A) x = 6.92, y = 2.54
+B) x = 3.62, y = 4.5
+C) x = 7.2, y = 2.5
+D) x = 5.5, y = 3.5
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q8. In the following question, two groups of letters are related by a specific pattern. Identify the same pattern and apply it to the second group to find the missing letters. WXYZ : DJFL :: ABCD : ?
+A) HRMX
+B) HLQV
+C) HMSX
+D) HNJP
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q9. In this following question, four words have been given, out of which three are alike in some manner and the fourth one is different. Choose odd one out.
+A) President
+B) Governor
+C) Mayor
+D) Prime Minister
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q10. Choose the option that perfectly matches the given address. Original Address: Suite 18/B-09King's Landing Residency, Phase-XIIMahatma Gandhi Rd. ExtensionHyderabad, Telangana 500081India
+A) Suite 18/B-09King's Landing Residency, Phase-XIIMahatma Gandhi Road ExtensionHyderabad, Telangana 500081India
+B) Suite 18/B-09King's Landing Residency, Phase-XIIIMahatma Gandhi Rd. ExtensionHyderabad, Telangana 500081India
+C) Suite 18/B-09King's Landing Residency, Phase-XIIMahatma Gandhi Rd. ExtensionHyderabad, Telangana 500018India
+D) Suite 18/B-09King's Landing Residency, Phase-XIIMahatma Gandhi Rd. ExtensionHyderabad, Telangana 500081India
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q11. How many squares are there in the given figure?
+
+![Figure](/images/pyq/2026/ssc-cgl-2026-12-october-2026-shift-3_q11_fig.png)
+A) 35
+B) 47
+C) 51
+D) 55
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q12. How many such letters are there in the word SECURE, which are in the same position as in the English alphabet?
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q13. Study the pattern in the given series and find the next set of letters in the series. CHI, EGK, GFM, ?
+A) IEO
+B) IOE
+C) IDP
+D) IEP
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q14. Complete the pattern in fig. (X) by selecting one of the figures from the four alternatives:
+
+Figure(X):
+A) ![Option A](/images/pyq/2026/ssc-cgl-2026-12-october-2026-shift-3_p3_x303.jpeg)
+B) ![Option B](/images/pyq/2026/ssc-cgl-2026-12-october-2026-shift-3_p3_x304.jpeg)
+C) ![Option C](/images/pyq/2026/ssc-cgl-2026-12-october-2026-shift-3_p3_x305.jpeg)
+D) ![Option D](/images/pyq/2026/ssc-cgl-2026-12-october-2026-shift-3_p3_x306.jpeg)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q15. Which two signs and two numbers need to be interchanged to make the given equation correct? 16 - 4 × 6 ÷ 2 + 8 = 20
+A) Interchange + and -, and numbers 4 and 6
+B) Interchange × and ÷, and numbers 6 and 8
+C) Interchange – and ÷, and numbers 16 and 6
+D) Interchange ÷ and +, and numbers 4 and 8
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q16. While preparing a quarterly report, you find that a minor data error from a previous month made the current figures look better than they actually are. Your manager is already planning to present these results to senior leadership today. What should you do?
+A) Keep silent since the error was made by someone else and the current results are positive.
+B) Inform your manager and provide a corrected version before the meeting.
+C) Fix the error silently after the meeting if anyone asks for clarification.
+D) Delete the report and claim you lost the file to buy more time.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q17. In the following question, a figure (X) is given, followed by four alternative figures (1), (2), (3), and (4) such that figure (X) is embedded in one of them. Trace out the alternative figure that contains fig. (X) as part of it.
+
+![Figure](/images/pyq/2026/ssc-cgl-2026-12-october-2026-shift-3_p3_x307.jpeg)
+A) 2
+B) 3
+C) 1
+D) 4
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q18. Read the given statement carefully and the following assumptions based on it. Decide which of the assumptions are implicit in the statement.
+
+Statement: Many schools are introducing mandatory coding classes in their curriculum to prepare students for a future dominated by technology. Assumptions:
+
+I. Proficiency in coding will be a vital skill for the future job market.
+
+II. Traditional subjects taught in schools are no longer relevant for the modern student.
+A) Only Assumption I is implicit
+B) Only Assumption II is implicit
+C) Both Assumptions I and II are implicit
+D) Neither Assumption I nor II is implicit
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q19. In the following question, out of the five figures marked (a), (b), (c), (d), and (e), four are similar in a certain manner. However, one figure is not like the other four. Choose the figure which is different from the rest.
+
+![Figure](/images/pyq/2026/ssc-cgl-2026-12-october-2026-shift-3_p4_x548.jpeg)
+A) d
+B) a
+C) b
+D) c
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q20. How many triangles are there in the given figure?
+
+![Figure](/images/pyq/2026/ssc-cgl-2026-12-october-2026-shift-3_p4_x549.jpeg)
+A) 36
+B) 40
+C) 44
+D) 48
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q21. In the following question, there is a specific relationship between the first two figures. Establish a similar relationship between the third and fourth figures by selecting a suitable figure from the given Answer Figures to replace the question mark (?).
+
+![Figure](/images/pyq/2026/ssc-cgl-2026-12-october-2026-shift-3_p4_x550.jpeg)
+A) 1
+B) 3
+C) 2
+D) 4
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q22. In the following question, there is a specific relationship between the first two figures. Establish a similar relationship between the third and fourth figures by selecting a suitable figure from the given Answer Figures to replace the question mark (?).
+
+![Figure](/images/pyq/2026/ssc-cgl-2026-12-october-2026-shift-3_p4_x551.jpeg)
+A) 1
+B) 2
+C) 4
+D) 3
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q23. Fill in the blanks (_) using one of the following four options such that the series follows a specific pattern in the given order. cc_ccbc_accbcc_c_b
+A) abac
+B) acac
+C) aabc
+D) acba
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q24. Carefully observe Figure (X) and identify the answer figure in which Figure (X) is embedded in the same or rotated form.
+
+![Figure](/images/pyq/2026/ssc-cgl-2026-12-october-2026-shift-3_p4_x552.jpeg)
+A) 2
+B) 4
+C) 1
+D) 3
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q25. Study the following number trend and select the next term: 14, 21, 33, 52, 80, ?
+A) 115
+B) 117
+C) 119
+D) 121
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q26. Which highly valued blue stone was procured by the Harappan Civilization from Shortughai in Afghanistan? कौन सा अत्यधिक मूल्यवान नीला पत्थर हड़प्पा सभ्यता द्वारा अफगानिस्तान के शोर्तुघई से प्राप्त किया गया था?
+A) Steatite
+B) Lapis lazuli / लापीस लाजुली
+C) Jasper
+D) Blue quartz / नीला क्वार्टज़
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q27. Which of the following is the correct order of Stone Age periods? निम्नलिखित में से कौन सा पाषाण युग काल का सही क्रम है?
+A) Mesolithic → Palaeolithic → Neolithic / मध्यपाषाण → पुरापाषाण → नवपाषाण
+B) Neolithic → Mesolithic → Palaeolithic / नवपाषाण → मध्यपाषाण → पुरापाषाण
+C) Palaeolithic → Mesolithic → Neolithic / पुरापाषाण → मध्यपाषाण → नवपाषाण
+D) Palaeolithic → Neolithic → Mesolithic / पुरापाषाण → नवपाषाण → मध्य पाषाण
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q28. Which of the following best describes Khanazad in the Mughal Mansabdari system? निम्नलिखित में से कौन मुगल मनसबदारी प्रणाली में खानज़ाद का सबसे अच्छा वर्णन करता है?
+A) Foreign nobles appointed from Central Asia and Persia. / मध्य एशिया और फारस से विदेशी अमीरों को नियुक्त किया गया।
+B) Sons or close relatives of serving imperial nobles. / शाही कुलीनों की सेवा करने वाले पुत्र या करीबी रिश्तेदार।
+C) Officers selected through competitive examination.
+D) Governors appointed from provincial elites. / राज्यपालों की नियुक्ति प्रांतीय अभिजात्य वर्ग से की जाती है।
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q29. As per Article 53 of the Indian Constitution, in whom does the executive authority of the Union formally reside? भारतीय संविधान के अनुच्छेद 53 के अनुसार, संघ की कार्यकारी शक्ति औपचारिक रूप से किसमें निहित है?
+A) Prime Minister of India / भारत के प्रधान मंत्री
+B) Council of Ministers / मंत्री परिषद्
+C) President of India / भारत के राष्ट्रपति
+D) Parliament of India / भारत की संसद
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q30. Article 124 of the Constitution of India details the establishment and composition of which constitutional body?
+A) High Court
+B) Supreme Court
+C) Election Commission
+D) Finance Commission
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q31. Under Article 112 of the Indian Constitution, what is the official constitutional term used for the document commonly known as the "Budget"?
+A) Annual Budgetary Report
+B) Annual Financial Statement
+C) National Revenue Estimate
+D) Yearly Expenditure Plan
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q32. Under the Charter Act of 1793, for how many years was the Company’s Charter renewed?
+A) Ten years
+B) Fifteen years
+C) Twenty years
+D) Thirty years
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q33. What is the term used for the structural deformation of the lithosphere resulting in the formation of mountain ranges?
+A) Orogeny
+B) Epeirogeny
+C) Isostasy
+D) Tectonism
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q34. Sprinter S. Dhanalakshmi received an eightyear ban in 2025 after testing positive for drostanolone. This sanction most likely indicates a:
+A) First violation
+B) Second violation
+C) Minor offence
+D) Filing error
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q35. The Yemshe Festival is a major traditional festival associated with which of the following tribes?
+A) Ao tribe
+B) Angami tribe
+C) Lotha tribe
+D) Pochuri tribe
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q36. What does a yellow card signify in football?
+A) A goal is awarded
+B) A caution to the player
+C) A substitution is required
+D) The match is terminated
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q37. Identify the correct match between the traditional folk dance and its associated state:
+A) Matki - Madhya Pradesh
+B) Pandavani - Uttar Pradesh
+C) Chhai Lam - Nagaland
+D) Karakattam - Kerala
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q38. Which of the following traditional folk songs is native to Haryana?
+A) Jakari
+B) Povada
+C) Lavani
+D) Garba
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q39. Which technology is primarily used for mapping rural inhabited lands under the SVAMITVA scheme? is designed to enhance the capacity and skills of which group in India?
+A) School students in rural areas
+B) Civil Servants in India
+C) Unorganized sector workers
+D) Small and Medium Entrepreneurs
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q40. Which of the following Urdu books and their author won the Bal Sahitya Puraskar 2025?
+A) Auraq-e-Science by Abdul Ansari
+B) Qaumi Sitare by Ghazanfar Iqbal
+C) Abba Jaan by Raunaq Jamal
+D) Ummeedun Ke Phool by Habib Saifi
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q41. Which concept is most closely associated with the strategic vision of the Quadrilateral Security Dialogue (QUAD)?
+A) Free and Open Indo-Pacific
+B) Continental Security and Land Bloc
+C) Atlantic Partnership and North Atlantic Treaty Organization (NATO) Framework
+D) Eurasian Integration and Continental Order
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q42. In a murder trial, A claims that at the time of the act he was incapable of understanding the nature of his conduct due to unsoundness of mind. Which category does this circumstance primarily fall under the Bharatiya Nyaya Sanhita, 2023 in India?
+A) Relevant fact only
+B) Fact in issue
+C) Documentary
+D) Conclusive proof evidence
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q43. Deepa Bhasthi translated the 2025 International Booker Prize-winning book Heart Lamp into English from which language?
+A) Malayalam
+B) Kannada
+C) Tamil
+D) Odia
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q44. As per Census 2011, which of the following Union Territory/State-percentage pair is correctly matched with respect to the lowest combined Total Workforce Participation Rate
+
+(WPR)?
+A) Lakshadweep - 29.09%
+B) Delhi - 27.09%
+C) Bihar - 31.12%
+D) Kerala - 32.94%
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q45. Which of the following correctly describes the radar payload carried by the NISAR satellite?
+A) L-band Radar by the National Aeronautics and Space Administration and S-band Radar by the Indian Space Research Organisation
+B) L-band Radar by the Indian Space Research Organisation and S-band Radar by the National Aeronautics and Space Administration
+C) L-band Radar by the National Aeronautics and Space Administration and S-band Radar by the Japan Aerospace Exploration Agency
+D) L-band Radar by the Japan Aerospace Exploration Agency and S-band Radar by the Indian Space Research Organisation
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q46. The banking sector reforms introduced after the 1991 economic reforms were implemented under the regulatory oversight of:
+A) Insurance Regulatory Development Authority of India
+B) Reserve Bank of India
+C) National Bank for Agriculture and Rural Development
+D) State Bank of India
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q47. What is the primary purpose of the Air Quality Index (AQI)?
+A) Communicate earthquake predictions in simplified form
+B) Communicate soil fertility status in simplified form
+C) Communicate water contamination status in simplified form
+D) Communicate air quality status in simplified form
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q48. Which ancient route did Sher Shah Suri reconstruct and extend under the name Sadak-e-Azam?
+A) A Silk Road trading route
+B) An ancient Mauryan route
+C) A provincial Maratha highway
+D) A Mughal military bypass
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q49. What was the main reason behind the rise of the poligars against the East India Company in South India?
+A) They objected to losing their hereditary revenue rights and were first angered/increased taxation.
+B) They objected to losing their hereditary sovereign status and were first angered/taxation.
+C) They objected to losing their hereditary military privileges and were first angered/Company interference.
+D) They objected to losing their hereditary local authority and were first angered/British administrative control.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q50. Two identical green plants are kept under different environmental conditions. Plant A is exposed to sunlight, whereas Plant B is kept in complete darkness for one week. Plant B becomes weak and pale. What is the main reason for this change?
+A) Absence of respiration
+B) Excess production of oxygen
+C) Absence of photosynthesis
+D) Excess production of chlorophyll
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q51. A solid metallic hemisphere of radius 6.3 cm is melted and recast into a right circular cylinder of radius 9 cm. What is the height of the cylinder?
+A) 1.058 cm
+B) 2.058 cm
+C) 2.58 cm
+D) 3.058 cm
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q52. A triangle has side lengths of 7 cm, 24 cm, and 25 cm. Determine the circumradius of the triangle.
+A) 12.5 cm
+B) 13.5 cm
+C) 14 cm
+D) 16 cm
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q53. In a regular polygon, each interior angle exceeds its corresponding exterior angle by 132°. Find the number of sides of the polygon.
+A) 17
+B) 18
+C) 15
+D) 16
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q54. Examine the frequency polygon on math Exam Scores (out of 100), Groups: Batch A vs. Batch B and answer the following question.
+
+![Figure](/images/pyq/2026/ssc-cgl-2026-12-october-2026-shift-3_p7_x1311.jpeg)
+
+Which batch has a higher average (approximate) score, assuming midpoints represent class scores?
+A) Batch A
+B) Batch B
+C) Both have equal average
+D) Cannot be determined
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q55. If tanθ = 3/4, find the value of (1 + sinθ)(1 - sinθ).
+A) 7/25
+B) 9/25
+C) 16/25
+D) 1
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q56. Using the provided bar graph, which shows the quantity of fruit sold in kilograms, answer the following questions.
+
+![Figure](/images/pyq/2026/ssc-cgl-2026-12-october-2026-shift-3_p7_x1313.jpeg)
+
+If the fruits are ranked based on descending order of quantity sold, what is the ratio of the combined sales of the top two fruits to the bottom two?
+A) 9:5
+B) 11:5
+C) 7:3
+D) 5:2
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q57. Examine the bar graph below to answer the following question.
+
+![Figure](/images/pyq/2026/ssc-cgl-2026-12-october-2026-shift-3_p8_x1598.jpeg)
+
+What is the average female literacy rate across the five listed states?
+A) 76.2%
+B) 75.8%
+C) 77.4%
+D) 78.0%
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q58. Carefully study the pie chart showing the distribution of favorite colors. Then answer the following questions.
+
+![Figure](/images/pyq/2026/ssc-cgl-2026-12-october-2026-shift-3_p8_x1599.jpeg)
+
+Assume the total number of respondents shown in the chart is 1,000. If 10% of people who preferred Red switch to Yellow, and 20% of people who preferred Other switch to Blue, what will be the new percentage of people who prefer Blue?
+A) 32%
+B) 34%
+C) 36%
+D) 38%
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q59. Evaluate: (0.125 − 0.027) / (0.25 + 0.15 + 0.09)
+A) 0.4
+B) 0.2
+C) 0.6
+D) 0.8
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q60. Find the value of ((0.013)³ − (0.011)³) / ((0.013)² + 0.000143 + (0.011)²)
+A) 0.004
+B) 0.002
+C) 0.006
+D) 0.008
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q61. If 2x = 0.5y, then find (y² − x²) / (y² + 2xy + x²).
+A) 2/5
+B) 4/5
+C) 3/5
+D) 7/5
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q62. Find the value of (x + y) if 5x2y1 is divisible by 3 and x and y are the same digit.
+A) 4
+B) 8
+C) 36
+D) 34
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q63. In ΔWTQ, ∠W = 50°, ∠T = 70°, and the bisectors of ∠T and ∠Q meet at R. Find ∠TRQ.
+A) 143°
+B) 125°
+C) 105°
+D) 115°
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q64. A man sells two articles for $5000 each, making no overall profit or loss. If one article is sold at a 25% profit, what is the approximate percentage loss on the other article?
+A) 14.56%
+B) 16.67%
+C) 12.28%
+D) 11.42%
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q65. A chord AB of a circle subtends an angle of 55° at a point on the major arc. What is the angle subtended by the same chord at the centre of the circle?
+A) 55°
+B) 117.5°
+C) 110°
+D) 125°
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q66. Two ships on the same side of a lighthouse observe angles 30° and 45°. The lighthouse height is 80 m. Find the approximate distance between ships. Take √3 = 1.732
+A) 59 m
+B) 49 m
+C) 50 m
+D) 63 m
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q67. When the diagonal of a square is increased by 20%, what is the percentage increase in the area of the square?
+A) 20%
+B) 40%
+C) 44%
+D) 50%
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q68. A chord of a circle subtends 45° at the circumference. If the chord length is 8 cm, find the distance from the centre to the chord.
+A) 2 cm
+B) 2√2 cm
+C) 4 cm
+D) 4√2 cm
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q69. In △ABC and △DEF, ∠A = 50°, ∠B = 60° and AB = DE. If ∠D = 50° and ∠E = 60°. By which property are △ABC and △DEF congruent?
+A) SAS property
+B) ASA property
+C) SSS property
+D) RHS property
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q70. Two identical circles, each of radius 8 cm, intersect so that the distance between their centres is equal to the radius. Find the length of their common chord.
+A) 4 cm
+B) 4√3 cm
+C) 8 cm
+D) 8√3 cm
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q71. A dishonest milkman sells his mixture at the cost price and gains 60%. Find the percentage of water in the mixture.
+A) 42.5%
+B) 35%
+C) 37.5%
+D) 46%
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q72. Read the given histogram carefully which shows the number of cars observed at different time intervals of the day (in hours) and answer the question that follows:
+
+![Figure](/images/pyq/2026/ssc-cgl-2026-12-october-2026-shift-3_p9_x1900.jpeg)
+
+Find the time interval during which more than 20% of total cars passed.
+A) 9-10
+B) 7-8
+C) 10-11
+D) 8-9
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q73. Two circles have centres P and Q with radii 6 cm and 3 cm, respectively. AC is a transverse common tangent touching the circles at points A and C. If AC intersects the line joining the centres PQ at point B, and AB = 8 cm, find the length of PQ.
+A) 12 cm
+B) 15 cm
+C) 18 cm
+D) 21 cm
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q74. The following pie-chart illustrates the percentage distribution of study time allocated to various subjects and activities. Study the pie-chart thoroughly and solve the questions based on the conditions provided.
+
+![Figure](/images/pyq/2026/ssc-cgl-2026-12-october-2026-shift-3_p9_x1901.jpeg)
+
+Suppose a student's total study time is 40 hours per week. The student decides to increase the efficiency of 'Mathematics' by 20% (meaning they achieve the same learning output in 20% less time) and reallocates the "saved" time equally between 'Reasoning' and 'Revision'. What is the new absolute time (in minutes) spent on 'Reasoning'?
+A) 324 minutes
+B) 244 minutes
+C) 240 minutes
+D) 304 minutes
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q75. A technology incubator filters down an initial cohort of tech startups/a multi-stage funding cycle.
+
+* In the first screening phase, 30% of the total startups are eliminated.
+
+* In the second phase, 25% of the remaining startups fail to build a viable prototype and are dropped.
+
+* In the final venture round, 20% of the thenremaining startups are rejected due to compliance errors. If exactly 42 startups successfully clear all three evaluation stages and secure institutional funding, how many startups were in the initial incubator cohort?
+A) 100
+B) 90
+C) 110
+D) 150
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q76. Choose the appropriate direct speech from the given sentence. She forbade me to go with him.
+A) She said, "Don't go with him."
+B) She said, "You should not go with him."
+C) She said, "Go with him."
+D) She said, "You must not go with him."
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q77. Choose the correct indirect speech form of the following sentence. She said, "Do you like mangoes?"
+A) She asked me if I liked mangoes.
+B) She said if I like mangoes.
+C) She asked me do I like mangoes.
+D) She told me that I liked mangoes.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q78. Fill in the blank with appropriate parts of speech. The soldiers, exhausted though they were, pressed on with an almost ______ fortitude.
+A) mechanical
+B) mechanically
+C) mechanize
+D) mechanic
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q79. Rearrange the parts of the sentence in the correct order.
+
+The recent diplomatic summit
+P. and fostering regional cooperation
+Q. witnessed discussions on security concerns
+R. while addressing climate change policies,
+S. aimed at strengthening bilateral trade
+A) PQRS
+B) QSRP
+C) QRSP
+D) PRSQ
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q80. Choose the correct idiom for the word highlighted in bold. The two famous writers crossed swords with each other on every issue.
+A) Became good friends
+B) Engaged in a heated argument
+C) Collaborated on a project
+D) Ignored each other
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q81. What does the idiom "To take to one's heels" mean?
+A) To start running away quickly
+B) To wear new shoes
+C) To stand still in fear
+D) To take a rest after a long walk
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q82. Improve the sentence by choosing the correct degree of comparison that replaces the words highlighted in bold. This is the **borest** movie I have ever seen.
+A) more boring
+B) boring
+C) most boring
+D) boringest
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q83. Identify the error in the sentence.
+
+I have a strongly feeling that something's off.
+A) feeling
+B) strongly
+C) have
+D) something
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q84. Which of the following options is TRUE about the underlined word? The debate on climate change is moot since the policy has already been enacted.
+A) The word 'moot' is incorrectly used here. The word 'mute' should be used instead.
+B) The word 'moot' is incorrectly used here. The word 'mote' should be used instead.
+C) The word 'moot' is incorrectly used here. The word 'moat' should be used instead.
+D) The word 'moot' is correctly used here.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q85. Fill in the blank with the correctly spelt word. The climate model is still ________ due to limited data.
+A) specullative
+B) speculative
+C) specculative
+D) speculattive
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q86. Select the most appropriate antonym of the given word. Gregarious
+A) Social
+B) Reserved
+C) Friendly
+D) Outgoing
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q87. Spot the correct spelling of a word for longwinded style.
+A) Sesquipidalian
+B) Sesquipedelian
+C) Sesquipedalian
+D) Sesquipadalian
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q88. Identify the misspelt word.
+A) Recalcitrant
+B) Perspicuity
+C) Superfluous
+D) Prophane
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q89. Choose the correct one-word substitute for: 'Something that cannot be explained or understood'.
+A) Illegible
+B) Incredible
+C) Inexplicable
+D) Indelible
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q90. Choose the correct one-word substitute for: 'Something mysterious or difficult to understand'.
+A) Enchant
+B) Enigma
+C) Meme
+D) Riddle
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q91. Find the part of the sentence that contains an error: What critics often overlook (1)/ is not the literary structure per se, (2)/ but the emotional authenticity of characters (3)/ and how it affects reader's trust. (4)
+A) (1)
+B) (2)
+C) (3)
+D) (4)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q92. Select the sentence containing the homonym of the highlighted word: The ethnographer noted the **fetish** worshipped by the tribe.
+A) The tourist purchased a tribal fetish as a souvenir.
+B) The historian discussed colonial views on fetish objects.
+C) The novel explored a character's shoe fetish.
+D) The anthropologist documented a carved fetish near the shrine.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q93. Choose the most suitable option to replace the highlighted part of the sentence: He *is used to work hard* every day.
+A) used to working
+B) is used to working hard
+C) used to work
+D) uses to working hardly
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q94. A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. He said, "I must finish this work."
+A) He said that he must finish that work.
+B) He said that he had to finish this work.
+C) He said that he had to finish that work.
+D) He said that he has to finish that work.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q95. Rearrange the following sentences to form a coherent paragraph:
+
+1. This phenomenon, where the physical state of a substance changes without a change in temperature, is a result of the absorption or release of latent heat.
+
+2. When a solid, such as ice, melts, its temperature remains constant at 0°C until all of the ice has turned to water.
+
+3. This energy is used to break the molecular bonds of the solid, rather than increasing the kinetic energy of the molecules.
+
+4. The concept of latent heat is crucial for understanding phase transitions in thermodynamics.
+A) 4, 2, 1, 3
+B) 2, 1, 4, 3
+C) 1, 3, 2, 4
+D) 3, 1, 2, 4
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q96. **Comprehension (Q. 96 - 100):**
+
+The growing use of virtual reality (VR) in education reflects a shift in how knowledge is constructed and internalised. Unlike conventional media, immersive environments allow learners to engage directly with abstract concepts. Educational psychologists argue that such experiences help learners build mental models that are more readily (A)_______ into long-term memory than information gained through lectures or textbooks. However, immersion alone does not ensure intellectual progress. A visually impressive simulation may attract attention without promoting conceptual understanding. Thus, VR depends on technological sophistication and pedagogical frameworks that (B)_______ learners' cognitive limitations while encouraging analytical reflection. Realistic simulations may improve motivation, but excessive sensory information can overwhelm learners. Researchers therefore recommend structured pauses for reflection, (C)_______ students confuse vivid experiences with durable understanding. VR raises concerns about access. Wealthier institutions are more likely to adopt advanced technologies than those with limited budgets. (D)_______ technological capability continues to expand, disparities in educational access remain persistent. Ultimately, VR will fulfil its educational promise only through thoughtful design and equitable implementation. Otherwise, its initial appeal may gradually (E)_______, leaving impressive technology but limited educational transformation.
+
+---
+
+Which word most appropriately fills blank (A) to convey the process by which newly acquired knowledge becomes deeply integrated into a learner's long-term cognitive framework?
+A) assimilated
+B) fabricated
+C) accumulated
+D) inherited
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q97. **Comprehension (Q. 96 - 100):**
+
+The growing use of virtual reality (VR) in education reflects a shift in how knowledge is constructed and internalised. Unlike conventional media, immersive environments allow learners to engage directly with abstract concepts. Educational psychologists argue that such experiences help learners build mental models that are more readily (A)_______ into long-term memory than information gained through lectures or textbooks. However, immersion alone does not ensure intellectual progress. A visually impressive simulation may attract attention without promoting conceptual understanding. Thus, VR depends on technological sophistication and pedagogical frameworks that (B)_______ learners' cognitive limitations while encouraging analytical reflection. Realistic simulations may improve motivation, but excessive sensory information can overwhelm learners. Researchers therefore recommend structured pauses for reflection, (C)_______ students confuse vivid experiences with durable understanding. VR raises concerns about access. Wealthier institutions are more likely to adopt advanced technologies than those with limited budgets. (D)_______ technological capability continues to expand, disparities in educational access remain persistent. Ultimately, VR will fulfil its educational promise only through thoughtful design and equitable implementation. Otherwise, its initial appeal may gradually (E)_______, leaving impressive technology but limited educational transformation.
+
+---
+
+Which verb best fills blank (B), reflecting the idea that effective instructional design must take learners' mental capacities into careful consideration rather than ignore them?
+A) undermine
+B) intensify
+C) accommodate
+D) surpass
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q98. **Comprehension (Q. 96 - 100):**
+
+The growing use of virtual reality (VR) in education reflects a shift in how knowledge is constructed and internalised. Unlike conventional media, immersive environments allow learners to engage directly with abstract concepts. Educational psychologists argue that such experiences help learners build mental models that are more readily (A)_______ into long-term memory than information gained through lectures or textbooks. However, immersion alone does not ensure intellectual progress. A visually impressive simulation may attract attention without promoting conceptual understanding. Thus, VR depends on technological sophistication and pedagogical frameworks that (B)_______ learners' cognitive limitations while encouraging analytical reflection. Realistic simulations may improve motivation, but excessive sensory information can overwhelm learners. Researchers therefore recommend structured pauses for reflection, (C)_______ students confuse vivid experiences with durable understanding. VR raises concerns about access. Wealthier institutions are more likely to adopt advanced technologies than those with limited budgets. (D)_______ technological capability continues to expand, disparities in educational access remain persistent. Ultimately, VR will fulfil its educational promise only through thoughtful design and equitable implementation. Otherwise, its initial appeal may gradually (E)_______, leaving impressive technology but limited educational transformation.
+
+---
+
+Which conjunction most effectively fills blank (C) to express the preventive purpose behind providing opportunities for reflective thinking after immersive experiences?
+A) whereas
+B) lest
+C) whereby
+D) notwithstanding
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q99. **Comprehension (Q. 96 - 100):**
+
+The growing use of virtual reality (VR) in education reflects a shift in how knowledge is constructed and internalised. Unlike conventional media, immersive environments allow learners to engage directly with abstract concepts. Educational psychologists argue that such experiences help learners build mental models that are more readily (A)_______ into long-term memory than information gained through lectures or textbooks. However, immersion alone does not ensure intellectual progress. A visually impressive simulation may attract attention without promoting conceptual understanding. Thus, VR depends on technological sophistication and pedagogical frameworks that (B)_______ learners' cognitive limitations while encouraging analytical reflection. Realistic simulations may improve motivation, but excessive sensory information can overwhelm learners. Researchers therefore recommend structured pauses for reflection, (C)_______ students confuse vivid experiences with durable understanding. VR raises concerns about access. Wealthier institutions are more likely to adopt advanced technologies than those with limited budgets. (D)_______ technological capability continues to expand, disparities in educational access remain persistent. Ultimately, VR will fulfil its educational promise only through thoughtful design and equitable implementation. Otherwise, its initial appeal may gradually (E)_______, leaving impressive technology but limited educational transformation.
+
+---
+
+Which connector best fills blank (D) to highlight the contrast between rapid technological advancement and the continued persistence of unequal educational opportunities?
+A) Since
+B) Although
+C) Therefore
+D) Because
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q100. **Comprehension (Q. 96 - 100):**
+
+The growing use of virtual reality (VR) in education reflects a shift in how knowledge is constructed and internalised. Unlike conventional media, immersive environments allow learners to engage directly with abstract concepts. Educational psychologists argue that such experiences help learners build mental models that are more readily (A)_______ into long-term memory than information gained through lectures or textbooks. However, immersion alone does not ensure intellectual progress. A visually impressive simulation may attract attention without promoting conceptual understanding. Thus, VR depends on technological sophistication and pedagogical frameworks that (B)_______ learners' cognitive limitations while encouraging analytical reflection. Realistic simulations may improve motivation, but excessive sensory information can overwhelm learners. Researchers therefore recommend structured pauses for reflection, (C)_______ students confuse vivid experiences with durable understanding. VR raises concerns about access. Wealthier institutions are more likely to adopt advanced technologies than those with limited budgets. (D)_______ technological capability continues to expand, disparities in educational access remain persistent. Ultimately, VR will fulfil its educational promise only through thoughtful design and equitable implementation. Otherwise, its initial appeal may gradually (E)_______, leaving impressive technology but limited educational transformation.
+
+---
+
+Which verb most accurately fills blank (E) to describe the gradual decline of public enthusiasm if educational innovation fails to produce meaningful outcomes?
+A) proliferate
+B) culminate
+C) subside
+D) intensify
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+

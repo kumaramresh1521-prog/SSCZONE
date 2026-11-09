@@ -1,902 +1,1202 @@
 [
   {
-    "question_number": 1,
+    "id": 15102,
+    "paper_id": 33,
     "question_text": "Pointing to a girl, Rohan said, \"She is the daughter of the only child of my father.\" How is the girl related to Rohan?",
     "option_a": "Sister",
     "option_b": "Niece",
     "option_c": "Daughter",
     "option_d": "Cousin",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 1,
+    "explanation": null
   },
   {
-    "question_number": 2,
+    "id": 15103,
+    "paper_id": 33,
     "question_text": "In question below, some statements are given followed by some conclusions. Taking the given statements to be true, decide which conclusion logically follows.\n\nStatements: · All doctors are educated. · All educated people read books.\n\nConclusions: ·\n\nI. All doctors read books. ·\n\nII. Some educated people are doctors. ·\n\nIII. All book readers are doctors. ·\n\nIV. Some doctors are not educated.",
     "option_a": "Only I and II follow",
     "option_b": "Only II follows",
     "option_c": "Only III follows",
     "option_d": "Only I and IV follow",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 2,
+    "explanation": null
   },
   {
-    "question_number": 3,
+    "id": 15104,
+    "paper_id": 33,
     "question_text": "Find the missing number in the following series: 11, 19, 59, 115, 347, ?",
     "option_a": "683",
     "option_b": "691",
     "option_c": "707",
     "option_d": "713",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 3,
+    "explanation": null
   },
   {
-    "question_number": 4,
+    "id": 15105,
+    "paper_id": 33,
     "question_text": "How many letters will remain at the same position in the word 'BALANCE' when arranged alphabetically?",
     "option_a": "0",
     "option_b": "1",
     "option_c": "2",
     "option_d": "3",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 4,
+    "explanation": null
   },
   {
-    "question_number": 5,
+    "id": 15106,
+    "paper_id": 33,
     "question_text": "Answer the given question based on the given information:\n\n1. P # Q means P is the son of Q.\n\n2. P & Q means P is the sister of Q.\n\n3. P ^ Q means P is the father of Q. Which of the following options shows the relation that X is the granddaughter of Z?",
     "option_a": "X # Y ^ W ^ Z",
     "option_b": "Y ^ W ^ Z # X",
     "option_c": "X & Y # W # Z",
     "option_d": "Z # Y ^ W ^ X",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 5,
+    "explanation": null
   },
   {
-    "question_number": 6,
+    "id": 15107,
+    "paper_id": 33,
     "question_text": "M is the husband of N. V is the daughter of M. L is the husband of\n\nV. K is the daughter of L. How is K related to N?",
     "option_a": "Maternal",
     "option_b": "Paternal Granddaughter Granddaughter",
     "option_c": "Maternal Aunt",
     "option_d": "Paternal Aunt",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 6,
+    "explanation": null
   },
   {
-    "question_number": 7,
+    "id": 15108,
+    "paper_id": 33,
     "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 5 3 4 64 6 2 5 65 2 7 3 ?",
     "option_a": "63",
     "option_b": "57",
     "option_c": "71",
     "option_d": "45",
-    "correct_answer": "A"
+    "correct_answer": "D",
+    "question_number": 7,
+    "explanation": "(Col1 × Col2 + 1) × Col3 = Col4: (2 × 7 + 1) × 3 = 15 × 3 = 45 (Option D)."
   },
   {
-    "question_number": 8,
+    "id": 15109,
+    "paper_id": 33,
     "question_text": "Roll numbers are assigned where the middle two digits are the product of the first and last digits. Identify the invalid entry.",
     "option_a": "3186",
     "option_b": "4205",
     "option_c": "2122",
     "option_d": "5306",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 8,
+    "explanation": null
   },
   {
-    "question_number": 9,
+    "id": 15110,
+    "paper_id": 33,
     "question_text": "Study the pattern in the given series and find the next set of letters in the series. HAB, LZF, PYJ, ?",
     "option_a": "TXN",
     "option_b": "TOX",
     "option_c": "TVN",
     "option_d": "TXM",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 9,
+    "explanation": null
   },
   {
-    "question_number": 10,
+    "id": 15111,
+    "paper_id": 33,
     "question_text": "Select the odd number pair from the given alternatives.",
     "option_a": "11, 132",
     "option_b": "24, 608",
     "option_c": "30, 930",
     "option_d": "27, 756",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 10,
+    "explanation": null
   },
   {
-    "question_number": 11,
+    "id": 15112,
+    "paper_id": 33,
     "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 42 44 38 28 55 23 39 ?",
     "option_a": "11",
     "option_b": "33",
     "option_c": "22",
     "option_d": "44",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 11,
+    "explanation": null
   },
   {
-    "question_number": 12,
+    "id": 15113,
+    "paper_id": 33,
     "question_text": "Read the question carefully and choose the most appropriate option. You are a municipal officer. Residents are protesting against the construction of a waste treatment plant near their locality because they fear health problems. The project is important for the city. What would you do?",
     "option_a": "Start the construction immediately without informing the residents further.",
     "option_b": "Cancel the project completely to avoid opposition from the residents.",
     "option_c": "Request a transfer so that another officer handles the situation instead.",
     "option_d": "Explain the safeguards involved and address the residents' concerns openly.",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 12,
+    "explanation": null
   },
   {
-    "question_number": 13,
+    "id": 15114,
+    "paper_id": 33,
     "question_text": "Choose the best alternative. A1 : B3 :: C5 : ?",
     "option_a": "D7",
     "option_b": "D6",
     "option_c": "E7",
     "option_d": "D8",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 13,
+    "explanation": null
   },
   {
-    "question_number": 14,
+    "id": 15115,
+    "paper_id": 33,
     "question_text": "What should come in place of the question mark (?) in the following analogy? ABYZ : CDWX :: EFUV : ?",
     "option_a": "SGHT",
     "option_b": "GHST",
     "option_c": "GHTU",
     "option_d": "FGST",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 14,
+    "explanation": null
   },
   {
-    "question_number": 15,
+    "id": 15116,
+    "paper_id": 33,
     "question_text": "In the given question, a few statements have been given followed by conclusions based on them. Consider the statements to be true and answer which of the given conclusions logically follow the statement. Statements\n\n1. No optimist ignores challenges.\n\n2. Some leaders are optimists.\n\n3. All those who ignore challenges fail. Conclusions\n\nI. Some leaders do not ignore challenges.\n\nII. Some leaders do not fail.\n\nIII. No optimist fails.\n\nIV. Some optimists are leaders.",
     "option_a": "Only I and IV",
     "option_b": "Only I, II and IV follow follow",
     "option_c": "Only I follows",
     "option_d": "I, II, III and IV follow",
-    "correct_answer": "B"
+    "correct_answer": "A",
+    "question_number": 15,
+    "explanation": "Only conclusions I and IV logically follow because not ignoring challenges does not preclude failure (Option A)."
   },
   {
-    "question_number": 16,
+    "id": 15117,
+    "paper_id": 33,
     "question_text": "In the given question, a few statements have been given followed by conclusions based on them. Consider the statements to be true and answer which of the given conclusions logically follow the statement. Statements\n\n1. No urban area lacks infrastructure.\n\n2. All developed zones are urban areas.\n\n3. Some industrial regions are developed zones. Conclusions\n\nI. No developed zone lacks infrastructure.\n\nII. Some industrial regions do not lack infrastructure.\n\nIII. Some industrial regions are urban areas.\n\nIV. All industrial regions are developed zones.",
     "option_a": "Only I, II and IV",
     "option_b": "Only I and II follow follow",
     "option_c": "Only I, II and III",
     "option_d": "All four follow follow",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 16,
+    "explanation": null
   },
   {
-    "question_number": 17,
+    "id": 15118,
+    "paper_id": 33,
     "question_text": "Which two signs should be interchanged to make the given equation correct? 36 − 12 × 6 ÷ 3 + 4 = 34",
     "option_a": "− and +",
     "option_b": "× and ÷",
     "option_c": "× and +",
     "option_d": "÷ and +",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 17,
+    "explanation": null
   },
   {
-    "question_number": 18,
+    "id": 15119,
+    "paper_id": 33,
     "question_text": "Read the statement carefully and assume it to be true. Then examine the two conclusions given below it and decide which conclusion(s), if any, logically follow from the statement.\n\nStatement: Due to travel restrictions imposed during the global health crisis, the team missed several important away fixtures, which affected their overall league performance.\n\nConclusions:\n\nI. Travel restrictions had an impact on the team’s performance.\n\nII. The team would have definitely won the league without restrictions.",
     "option_a": "Only Conclusion I follows",
     "option_b": "Only Conclusion II follows",
     "option_c": "Both Conclusions I and II follow",
     "option_d": "Neither conclusion I nor II follows",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 18,
+    "explanation": null
   },
   {
-    "question_number": 19,
+    "id": 15120,
+    "paper_id": 33,
     "question_text": "In the following question a statement is given followed by some assumptions. Read the assumptions carefully and choose the appropriate option.\n\nStatement: Before signing any agreement with a new supplier, please discuss it with the legal team. Assumptions:\n\nI. A legal issue may arise if the agreement is signed without discussion.\n\nII. It is important to avoid legal complications.",
     "option_a": "Only I is implicit.",
     "option_b": "Only II is implicit.",
     "option_c": "Neither I nor II is implicit.",
     "option_d": "Both I and II are implicit.",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 19,
+    "explanation": null
   },
   {
-    "question_number": 20,
+    "id": 15121,
+    "paper_id": 33,
     "question_text": "If '♦' means +, '∆' means -, '★' means ×, and '○' means ÷, find (2 ★ 8) ♦ [(54 ○ 6) ∆ (1 ★ 4)] ★ 3.",
     "option_a": "12",
     "option_b": "18",
     "option_c": "31",
     "option_d": "36",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 20,
+    "explanation": null
   },
   {
-    "question_number": 21,
+    "id": 15122,
+    "paper_id": 33,
     "question_text": "Read the given conditions carefully and determine the appropriate outcome for the case provided. If any exception applies, identify the authority to whom the case should be referred. Criteria for Professional Pilot License Renewal:\n\n(i) Must have a valid medical certificate.\n\n(ii) Must have 500+ flying hours. Exceptions: Exception",
     "option_a": "License renewal to be approved",
     "option_b": "Case to be referred to the Aviation Authority",
     "option_c": "License renewal to be rejected",
     "option_d": "Case to be referred to the Review Board",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 21,
+    "explanation": null
   },
   {
-    "question_number": 22,
+    "id": 15123,
+    "paper_id": 33,
     "question_text": "Select the option that is related to the third word in the same way as the second word is related to the first word. Needle : Stitch :: Scythe : ?",
     "option_a": "Dig",
     "option_b": "Mow",
     "option_c": "Prune",
     "option_d": "Plant",
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "question_number": 22,
+    "explanation": "A needle is used to stitch, while a scythe is an agricultural tool used to mow crops or grass (Option B)."
   },
   {
-    "question_number": 23,
+    "id": 15124,
+    "paper_id": 33,
     "question_text": "In a specific letter-casing pattern, every alternate letter in the English alphabet, starting from B, is written in lowercase, while all other letters are written in uppercase (i. e., A, b, C, d, E, f, ...). Under this rule, how will the word 'SEPTEMBER' be written?",
     "option_a": "SeptEMbEr",
     "option_b": "SeptemBer",
     "option_c": "SEptEMbEr",
     "option_d": "SeptembeR",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 23,
+    "explanation": null
   },
   {
-    "question_number": 24,
+    "id": 15125,
+    "paper_id": 33,
     "question_text": "A competitive exam allows candidates with a recognized bachelor's degree scoring ≥ 50% (≥ 45% for reserved category). The age limit is between 21-30 years, with a 5-year upper age relaxation for the reserved category. All eligibility is calculated as of August 1st. Candidate Profile: Belongs to the reserved category, is exactly 34 years old on August 1st, and secured 48% marks in their bachelor's degree. Determine the eligibility status.",
     "option_a": "Eligible",
     "option_b": "Not eligible — age exceeds limit",
     "option_c": "Not eligible — marks below cutoff",
     "option_d": "Not eligible on both counts",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 24,
+    "explanation": null
   },
   {
-    "question_number": 25,
+    "id": 15126,
+    "paper_id": 33,
     "question_text": "Which fraction is different from the others?",
     "option_a": "8",
     "option_b": "10 12 15",
     "option_c": "14",
     "option_d": "16 21 28",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 25,
+    "explanation": null
   },
   {
-    "question_number": 26,
+    "id": 15127,
+    "paper_id": 33,
     "question_text": "Which of the following represents the most comprehensive institutional reform underpinning the \"Resolving Insolvency\" component in the Ease of Doing Business Index?",
     "option_a": "Debt Recovery Tribunal Act, 1993",
     "option_b": "SEBI (Listing Obligations) Regulations, 2015",
     "option_c": "IBC (Insolvency and Bankruptcy Code), 2016",
     "option_d": "SICA (Sick Industrial Companies Act), 1985",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 26,
+    "explanation": null
   },
   {
-    "question_number": 27,
+    "id": 15128,
+    "paper_id": 33,
     "question_text": "The \"JAM Trinity\" is often cited as a key strategy for direct benefit transfer in India. Which of the following correctly identifies the three pillars of this trinity?",
     "option_a": "Jan Dhan accounts, Aadhaar cards, Mobile numbers",
     "option_b": "Jan Dhan accounts, Aadhaar cards, MGNREGA job cards",
     "option_c": "Jan Dhan accounts, Ayushman Bharat cards, Mobile numbers",
     "option_d": "Jan Dhan accounts, Aadhaar cards, PAN cards",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 27,
+    "explanation": null
   },
   {
-    "question_number": 28,
+    "id": 15129,
+    "paper_id": 33,
     "question_text": "Which government scheme aims to provide social security and pension benefits to workers in the unorganized sector?",
     "option_a": "Atal Pension Yojana (APY)",
     "option_b": "Pradhan Mantri Shram Yogi Maandhan (PMSYM)",
     "option_c": "National Pension System (NPS)",
     "option_d": "Employees' Provident Fund Organisation (EPFO) schemes 4 AWARENESS",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 28,
+    "explanation": null
   },
   {
-    "question_number": 29,
+    "id": 15130,
+    "paper_id": 33,
     "question_text": "How many active players are there per team in a regulation water polo match?",
     "option_a": "5",
     "option_b": "6",
     "option_c": "7",
     "option_d": "8",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 29,
+    "explanation": null
   },
   {
-    "question_number": 30,
+    "id": 15131,
+    "paper_id": 33,
     "question_text": "In which year did the National Games of India take place in Jharkhand?",
     "option_a": "2009",
     "option_b": "2011",
     "option_c": "2013",
     "option_d": "2015",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 30,
+    "explanation": null
   },
   {
-    "question_number": 31,
+    "id": 15132,
+    "paper_id": 33,
     "question_text": "Under the Bharatiya Sakshya Adhiniyam, which of the following is considered a primary source of evidence in the digital era?",
     "option_a": "Printouts of WhatsApp chats without digital signature verification",
     "option_b": "Newspaper reports about a digital crime",
     "option_c": "Certified copies of electronic records with hash value authentication",
     "option_d": "Oral confessions made to a police officer",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 31,
+    "explanation": null
   },
   {
-    "question_number": 32,
+    "id": 15133,
+    "paper_id": 33,
     "question_text": "Which Indian President received the \"Grand Order of the Chain of the Yellow Star\" in 2023?",
     "option_a": "Droupadi Murmu",
     "option_b": "Ram Nath Kovind",
     "option_c": "Dr. A. P. J. Abdul",
     "option_d": "Pratibha Patil Kalam",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 32,
+    "explanation": null
   },
   {
-    "question_number": 33,
+    "id": 15134,
+    "paper_id": 33,
     "question_text": "Who was the first Chairman of the Union Public Service Commission (UPSC)?",
     "option_a": "Rose Millian",
     "option_b": "Ross Barker Bathew",
     "option_c": "Manoj Soni",
     "option_d": "Preeti Sudan",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 33,
+    "explanation": null
   },
   {
-    "question_number": 34,
+    "id": 15135,
+    "paper_id": 33,
     "question_text": "Which among the following Harappan cities was divided into three parts, unlike other cities that are usually divided into two parts?",
     "option_a": "Harappa",
     "option_b": "Dholavira",
     "option_c": "Mohenjo-Daro",
     "option_d": "Lothal",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 34,
+    "explanation": null
   },
   {
-    "question_number": 35,
+    "id": 15136,
+    "paper_id": 33,
     "question_text": "As per Census 2011, the concentration of Scheduled Caste population (going by percentage of Scheduled Caste population to total population of the state) is the highest in the state of:",
     "option_a": "Uttar Pradesh",
     "option_b": "Himachal Pradesh",
     "option_c": "Punjab",
     "option_d": "Haryana",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 35,
+    "explanation": null
   },
   {
-    "question_number": 36,
+    "id": 15137,
+    "paper_id": 33,
     "question_text": "Consider the following statements about the grip and placement of the shot in the gliding technique in Shot Put:\n\n1) The shot is held primarily in the palm with fingers loosely wrapped around it.\n\n2) The shot is placed near the jaw bone, just below the ear and/the collar bone.\n\n3) Fingers are spread apart slightly with the thumb providing support while holding the shot. Which of the statements given above are correct?",
     "option_a": "Only 1 and 2 are",
     "option_b": "Only 2 and 3 are Correct Correct",
     "option_c": "Only 1 and 3 are",
     "option_d": "1, 2 and 3 are correct Correct",
-    "correct_answer": "D"
+    "correct_answer": "B",
+    "question_number": 36,
+    "explanation": "In shot put glide technique, the shot rests on the base of the fingers rather than the palm, so only statements 2 and 3 are correct (Option B)."
   },
   {
-    "question_number": 37,
+    "id": 15138,
+    "paper_id": 33,
     "question_text": "What accurately describes the British policy and outcome regarding slavery in India up to 1843?",
     "option_a": "The Company promptly abolished slavery under the 1811 law",
     "option_b": "Slavery ended through mass resistance by Indian peasants",
     "option_c": "Abolition came slowly through delayed legislation and limited enforcement",
     "option_d": "Slavery was banned immediately after Britain's 1820 reforms",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 37,
+    "explanation": null
   },
   {
-    "question_number": 38,
+    "id": 15139,
+    "paper_id": 33,
     "question_text": "Which of the following explains the meaning of the term \"Sangam\" in ancient South Indian history, as derived from Sanskrit?",
     "option_a": "An association of",
     "option_b": "A gathering of poets priests",
     "option_c": "An assembly of",
     "option_d": "A collection of warriors traders",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 38,
+    "explanation": null
   },
   {
-    "question_number": 39,
+    "id": 15140,
+    "paper_id": 33,
     "question_text": "Article 54 of the Indian Constitution deals with the:",
     "option_a": "Term of the President",
     "option_b": "Election of the President",
     "option_c": "Impeachment of the President",
     "option_d": "Oath of the President",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 39,
+    "explanation": null
   },
   {
-    "question_number": 40,
+    "id": 15141,
+    "paper_id": 33,
     "question_text": "Which physical quantity is given by the product of force and the displacement in the direction of that force?",
     "option_a": "Work",
     "option_b": "Momentum",
     "option_c": "Impulse",
     "option_d": "Power",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 40,
+    "explanation": null
   },
   {
-    "question_number": 41,
+    "id": 15142,
+    "paper_id": 33,
     "question_text": "Which Indian initiative emphasizes maritime cooperation and security in the Indian Ocean Region?",
     "option_a": "Operation Flood (OF)",
     "option_b": "Act Far East (AFE)",
     "option_c": "Look West Policy (LWP)",
     "option_d": "Security and Growth for All in the Region (SAGAR)",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 41,
+    "explanation": null
   },
   {
-    "question_number": 42,
+    "id": 15143,
+    "paper_id": 33,
     "question_text": "A catches B committing simple theft of a bicycle. B begins running away without violence. A shoots and kills B solely to recover the bicycle. Which of the following is correct under the Bharatiya Nyaya Sanhita, 2023 in India?",
     "option_a": "A is justified because private defence of property always includes killing a thief.",
     "option_b": "A is justified because the theft had already occurred.",
     "option_c": "A is not justified since the right didn't extend to causing death here.",
     "option_d": "A is justified because the property had not yet been recovered.",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 42,
+    "explanation": null
   },
   {
-    "question_number": 43,
+    "id": 15144,
+    "paper_id": 33,
     "question_text": "Under which constitutional provision of the Constitution of India is the Goods and Services Tax (GST) Council established?",
     "option_a": "Article 246A",
     "option_b": "Article 269A",
     "option_c": "Article 279A",
     "option_d": "Article 280",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 43,
+    "explanation": null
   },
   {
-    "question_number": 44,
+    "id": 15145,
+    "paper_id": 33,
     "question_text": "Which reform under globalisation reduces custom duties, quotas and quantitative restrictions to facilitate the free flow of goods and services?",
     "option_a": "Trade",
     "option_b": "Industrial licensing liberalisation",
     "option_c": "Fiscal",
     "option_d": "Financial consolidation regulation",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 44,
+    "explanation": null
   },
   {
-    "question_number": 45,
+    "id": 15146,
+    "paper_id": 33,
     "question_text": "Which committee was appointed in 1993 to examine insurance sector reforms following the 1991 economic reforms?",
     "option_a": "Chelliah",
     "option_b": "Malhotra Committee Committee",
     "option_c": "Tandon",
     "option_d": "Rajan Committee Committee",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 45,
+    "explanation": null
   },
   {
-    "question_number": 46,
+    "id": 15147,
+    "paper_id": 33,
     "question_text": "In the capability approach to human development, the term “capabilities” primarily refers to:",
     "option_a": "What nations can export and compete",
     "option_b": "What governments can spend and provide",
     "option_c": "What people can do and become",
     "option_d": "What nations can achieve in military strength",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 46,
+    "explanation": null
   },
   {
-    "question_number": 47,
+    "id": 15148,
+    "paper_id": 33,
     "question_text": "Which institution was envisaged to play a greater role in the planning process under the Tenth Five-Year Plan to promote balanced development?",
     "option_a": "Reserve Bank of India",
     "option_b": "Panchayati Raj Institutions",
     "option_c": "International Monetary Fund",
     "option_d": "Central Public Sector Enterprises",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 47,
+    "explanation": null
   },
   {
-    "question_number": 48,
+    "id": 15149,
+    "paper_id": 33,
     "question_text": "Which field did the Hunter Commission examine?",
     "option_a": "Judiciary",
     "option_b": "Education",
     "option_c": "Police reforms",
     "option_d": "Agriculture",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 48,
+    "explanation": null
   },
   {
-    "question_number": 49,
+    "id": 15150,
+    "paper_id": 33,
     "question_text": "A single bacterial cell reproduces by binary fission, causing the number of cells to double every 20 minutes. How many bacterial cells will be present after 1 hour?",
     "option_a": "4 cells",
     "option_b": "6 cells",
     "option_c": "8 cells",
     "option_d": "16 cells",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 49,
+    "explanation": null
   },
   {
-    "question_number": 50,
+    "id": 15151,
+    "paper_id": 33,
     "question_text": "In a hydrogen-oxygen fuel cell, why are porous electrodes coated or impregnated with a catalyst primarily used?",
     "option_a": "To provide large surface area and enhance reaction kinetics",
     "option_b": "To increase mechanical strength of the electrodes",
     "option_c": "To store hydrogen and oxygen inside the electrode permanently",
     "option_d": "To prevent formation of water during the reaction",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 50,
+    "explanation": null
   },
   {
-    "question_number": 51,
+    "id": 15152,
+    "paper_id": 33,
     "question_text": "A right prism has a triangular base with sides 3 cm, 4 cm, and 5 cm. If the height of the prism is 6 cm, what is its volume?",
     "option_a": "36 cm³",
     "option_b": "48 cm³",
     "option_c": "54 cm³",
     "option_d": "60 cm³",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 51,
+    "explanation": null
   },
   {
-    "question_number": 52,
+    "id": 15153,
+    "paper_id": 33,
     "question_text": "Simplify: √900 + √0.0625 −√16.81 .",
     "option_a": "28.25",
     "option_b": "19.65",
     "option_c": "23.06",
     "option_d": "26.15",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 52,
+    "explanation": null
   },
   {
-    "question_number": 53,
+    "id": 15154,
+    "paper_id": 33,
     "question_text": "In △ABC, the medians AD, BE, and CF intersect at the centroid G. If the length of median AD is 12 cm, what is the length of the segment GD?",
     "option_a": "1 cm",
     "option_b": "2.5 cm",
     "option_c": "4 cm",
     "option_d": "6.1 cm",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 53,
+    "explanation": null
   },
   {
-    "question_number": 54,
+    "id": 15155,
+    "paper_id": 33,
     "question_text": "Find the smallest perfect square divisible by 10, 12, 15, and 18.",
     "option_a": "600",
     "option_b": "900",
     "option_c": "500",
     "option_d": "400",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 54,
+    "explanation": null
   },
   {
-    "question_number": 55,
+    "id": 15156,
+    "paper_id": 33,
     "question_text": "Two individuals, A and B, share their profit in a ratio of 3:\n\n2. A third person, C, is given a one-fourth share of the profit and contributes ₹12,000 as his capital to the business. What is the capital contribution of B?",
     "option_a": "₹18,000",
     "option_b": "₹14,400",
     "option_c": "₹21,600",
     "option_d": "₹15,000",
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "question_number": 55,
+    "explanation": "Total capital is ₹48,000, leaving ₹36,000 for A and B in 3:2 ratio; B's capital = (2/5) × ₹36,000 = ₹14,400 (Option B)."
   },
   {
-    "question_number": 56,
+    "id": 15157,
+    "paper_id": 33,
     "question_text": "The amount of a sum at the end of the 1st year is ₹4,500 and at the end of the 2nd year is ₹4,950. Find its approximate principal.",
     "option_a": "₹3981",
     "option_b": "₹4001",
     "option_c": "₹3801",
     "option_d": "₹4091",
-    "correct_answer": "A"
+    "correct_answer": "D",
+    "question_number": 56,
+    "explanation": "Under compound interest, 1 + r = 4950/4500 = 1.1; Principal P = 4500 / 1.1 = ₹4090.91 ≈ ₹4091 (Option D)."
   },
   {
-    "question_number": 57,
+    "id": 15158,
+    "paper_id": 33,
     "question_text": "A regular hexagon and a square having the same perimeter. If the area of the square is 196 cm², find the exact area of the hexagon.",
     "option_a": "203√7 cm²",
     "option_b": "323√3 cm²",
     "option_c": "210√3 cm²",
     "option_d": "392√3 cm²",
-    "correct_answer": "A"
+    "correct_answer": "D",
+    "question_number": 57,
+    "explanation": "Square perimeter is 56 cm; hexagon side is 28/3 cm, giving area = (3√3/2)(28/3)² = 392√3/3 cm² (Option D)."
   },
   {
-    "question_number": 58,
+    "id": 15159,
+    "paper_id": 33,
     "question_text": "A circle has a radius of 7 cm, and a square is drawn around it such that the circle touches all four sides. Find the area of the square.",
     "option_a": "196 cm²",
     "option_b": "126 cm²",
     "option_c": "183 cm²",
     "option_d": "191 cm²",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 58,
+    "explanation": null
   },
   {
-    "question_number": 59,
+    "id": 15160,
+    "paper_id": 33,
     "question_text": "If the area of a quadrant of a circle is π m², find the radius (in meters).",
     "option_a": "4 m",
     "option_b": "1 m",
     "option_c": "1/2 m",
     "option_d": "2 m",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 59,
+    "explanation": null
   },
   {
-    "question_number": 60,
+    "id": 15161,
+    "paper_id": 33,
     "question_text": "A cone has a volume of 192π cm³ and a height of 12 cm. Find the radius of its base.",
     "option_a": "4√3 cm",
     "option_b": "2√3 cm",
     "option_c": "5√3 cm",
     "option_d": "6√3 cm",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 60,
+    "explanation": null
   },
   {
-    "question_number": 61,
+    "id": 15162,
+    "paper_id": 33,
     "question_text": "A shopkeeper makes 15% profit by selling a book at a certain price. If he charges ₹12 more, he would gain 20%. What was the original selling price of the book?",
     "option_a": "₹296",
     "option_b": "₹250",
     "option_c": "₹280",
     "option_d": "₹276",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 61,
+    "explanation": null
   },
   {
-    "question_number": 62,
+    "id": 15163,
+    "paper_id": 33,
     "question_text": "A shopkeeper marks up his goods by 60%. He sells 25% of the stock at the marked price, 50% of the stock at a 20% discount on the marked price, and the remaining stock at a 50% discount on the marked price. Find his overall profit percentage.",
     "option_a": "28%",
     "option_b": "24%",
     "option_c": "32%",
     "option_d": "45%",
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "question_number": 62,
+    "explanation": "Per 100 CP, total SP = 0.25(160) + 0.50(128) + 0.25(80) = 124, yielding a 24% overall profit (Option B)."
   },
   {
-    "question_number": 63,
+    "id": 15164,
+    "paper_id": 33,
     "question_text": "The angles of elevation of the top of a tower from two points on the same line are 45° and 60°. The points are 20 m apart. Find the approximate height of the tower.",
     "option_a": "57.3 m",
     "option_b": "43.3 m",
     "option_c": "51.3 m",
     "option_d": "47.3 m",
-    "correct_answer": "A"
+    "correct_answer": "D",
+    "question_number": 63,
+    "explanation": "From h - h/√3 = 20, height h = 10(3 + √3) ≈ 47.32 m (Option D)."
   },
   {
-    "question_number": 64,
+    "id": 15165,
+    "paper_id": 33,
     "question_text": "The measure of supplement of ∠p is 60° more than four times the measure of complement of ∠p. Find the sum in degree of the supplement and complement of ∠p.",
     "option_a": "110°",
     "option_b": "170°",
     "option_c": "180°",
     "option_d": "140°",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 64,
+    "explanation": null
   },
   {
-    "question_number": 65,
+    "id": 15166,
+    "paper_id": 33,
     "question_text": "If sin A−cos A= √2 and angle A lies in the first quadrant, find the value of sin A+ cos A .",
     "option_a": "√3",
     "option_b": "√6 2",
     "option_c": "1",
     "option_d": "√2",
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "question_number": 65,
+    "explanation": "Using (sin A + cos A)² + (sin A - cos A)² = 2, with sin A - cos A = 1/√2, sin A + cos A = √(3/2) = √6/2 (Option B)."
   },
   {
-    "question_number": 66,
+    "id": 15167,
+    "paper_id": 33,
     "question_text": "What is the value of 5cosec230°−3 cot² 30°+16 cos4 45° ? 2√3 tan 60°+4 sin² 60°",
     "option_a": "1",
     "option_b": "5/3",
     "option_c": "1/2",
     "option_d": "2",
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "question_number": 66,
+    "explanation": "Numerator = 5(4) - 3(3) + 16(1/4) = 15; Denominator = 2√3(√3) + 4(3/4) = 9; Value = 15/9 = 5/3 (Option B)."
   },
   {
-    "question_number": 67,
+    "id": 15168,
+    "paper_id": 33,
     "question_text": "Three solid metallic spheres of radii 4 cm, 3 cm, and 5 cm are melted to form a single large sphere. What is the radius of the new sphere?",
     "option_a": "3 cm",
     "option_b": "6 cm",
     "option_c": "8 cm",
     "option_d": "9 cm",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 67,
+    "explanation": null
   },
   {
-    "question_number": 68,
+    "id": 15169,
+    "paper_id": 33,
     "question_text": "Triangles XYZ and PQR are similar. In ΔXYZ, the side lengths are XY = 10 cm, YZ = 15 cm, and ZX = 20 cm. If the ratio of the areas of ΔXYZ and ΔPQR is 25: 36, what is the length of side QR in ΔPQR?",
     "option_a": "12 cm",
     "option_b": "14 cm",
     "option_c": "18 cm",
     "option_d": "20 cm",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 68,
+    "explanation": null
   },
   {
-    "question_number": 69,
+    "id": 15170,
+    "paper_id": 33,
     "question_text": "A cooperative housing society borrowed ₹4,50,000 to repair its buildings. The society paid back ₹6,12,000 after 9 years. Find the rate of simple interest and determine how much interest was paid every year.",
     "option_a": "Rate of Simple Interest = 5% per annum Interest paid every year = ₹21,000",
     "option_b": "Rate of Simple Interest = 2% per annum Interest paid every year = ₹19,000",
     "option_c": "Rate of Simple Interest = 4% per annum Interest paid every year = ₹18,000",
     "option_d": "Rate of Simple Interest = 3% per annum Interest paid every year = ₹17,000",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 69,
+    "explanation": null
   },
   {
-    "question_number": 70,
+    "id": 15171,
+    "paper_id": 33,
     "question_text": "An expert potter can craft a batch of pottery in 24 hours, while his apprentice can do the same in 40 hours. They receive a large highprofile order of a batch from the owner of a hotel and decide to work on it together. However, a strict quality inspector is sent by the hotel owner at the exact end of every 4hour joint shift. The inspector rejects exactly 20% of the pottery completed during those specific 4-hour shifts due to minor imperfections. Any final remaining items needed after the last shift are crafted under direct guidance with 0% defects. How many total hours will it take them to complete the order successfully?",
     "option_a": "18.2 hrs",
     "option_b": "17.4 hrs",
     "option_c": "16.8 hrs",
     "option_d": "15.5 hrs",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 70,
+    "explanation": null
   },
   {
-    "question_number": 71,
+    "id": 15172,
+    "paper_id": 33,
     "question_text": "A team of linguists is translating the text on an ancient monolith. Linguist A and linguist B working together can translate it in 12 days, linguist B and linguist C working together can do it in 15 days, while A and C working together can do it in 20 days. All three of them work together on the monolith for 6 days. Then, A and B are relocated to another site. How many more days will be required by C to finish the remaining task alone?",
     "option_a": "20 days",
     "option_b": "22 days",
     "option_c": "24 days",
     "option_d": "25 days",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 71,
+    "explanation": null
   },
   {
-    "question_number": 72,
+    "id": 15173,
+    "paper_id": 33,
     "question_text": "Evaluate: sin³ 5° cos55°",
     "option_a": "1",
     "option_b": "0",
     "option_c": "-1",
     "option_d": "2",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 72,
+    "explanation": null
   },
   {
-    "question_number": 73,
+    "id": 15174,
+    "paper_id": 33,
     "question_text": "Evaluate the following numerical expression using an appropriate algebraic identity:\n\n5.37×5.37−4.63×4.63\n\n0.74",
     "option_a": "1",
     "option_b": "7.3",
     "option_c": "4.6",
     "option_d": "10",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 73,
+    "explanation": null
   },
   {
-    "question_number": 74,
+    "id": 15175,
+    "paper_id": 33,
     "question_text": "If a + b = 18 and ab = 46, compute a³ + b³.",
     "option_a": "2484",
     "option_b": "3348",
     "option_c": "4328",
     "option_d": "5832",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 74,
+    "explanation": null
   },
   {
-    "question_number": 75,
+    "id": 15176,
+    "paper_id": 33,
     "question_text": "Simplify the following expression completely: 3 + 2 √5+√2 √5−√2",
     "option_a": "5√5+√2",
     "option_b": "√5−5√2 3",
     "option_c": "5√5−√2",
     "option_d": "5 3 2√5",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 75,
+    "explanation": null
   },
   {
-    "question_number": 76,
+    "id": 15177,
+    "paper_id": 33,
     "question_text": "Choose the accurate direct speech version of the following sentence. She asked me to tell her the location of the guest house.",
     "option_a": "She said, \"I was wondering if you could possibly tell me the location of the guest house?\"",
     "option_b": "She asked, \"Could you tell me the location of the guest house?\"",
     "option_c": "She said, \"Tell me the location of the guest house.\"",
     "option_d": "She asked, \"Could you possibly tell me the location of the guest house?\"",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 76,
+    "explanation": null
   },
   {
-    "question_number": 77,
+    "id": 15178,
+    "paper_id": 33,
     "question_text": "Rearrange the parts of the sentence in the correct order. The recent advancements in space exploration P. and paving the way for future Mars colonization Q. unlocking new possibilities for interplanetary travel, R. have been driven by international collaborations, S. focused on developing sustainable lunar habitats",
     "option_a": "PSQR",
     "option_b": "RQSP",
     "option_c": "SRPQ",
     "option_d": "QPSR",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 77,
+    "explanation": null
   },
   {
-    "question_number": 78,
+    "id": 15179,
+    "paper_id": 33,
     "question_text": "Choose the correct phrase for the word highlighted in bold. \"He expects his subordinates to be always at his beck and call\"?",
     "option_a": "To be constantly available to obey orders",
     "option_b": "To challenge authority frequently",
     "option_c": "To work only when convenient",
     "option_d": "To ignore requests deliberately",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 78,
+    "explanation": null
   },
   {
-    "question_number": 79,
+    "id": 15180,
+    "paper_id": 33,
     "question_text": "Fill in the blank with an appropriate phrasal verb. Despite initial enthusiasm, investors began to ______ when the project's viability was questioned.",
     "option_a": "backwash",
     "option_b": "backpedal",
     "option_c": "backlash",
     "option_d": "backburn",
-    "correct_answer": "C"
+    "correct_answer": "B",
+    "question_number": 79,
+    "explanation": "'Backpedal' means to retreat from an earlier commitment or enthusiasm, fitting the sentence context (Option B)."
   },
   {
-    "question_number": 80,
+    "id": 15181,
+    "paper_id": 33,
     "question_text": "Identify the error in the sentence. She's reading an Times of India editorial.",
     "option_a": "India",
     "option_b": "an",
     "option_c": "editorial",
     "option_d": "reading",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 80,
+    "explanation": null
   },
   {
-    "question_number": 81,
+    "id": 15182,
+    "paper_id": 33,
     "question_text": "Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?\n\n1. However, rising ocean temperatures and acidification are causing coral bleaching, threatening reef survival.\n\n2. Corals have a symbiotic relationship with algae, which provide them with nutrients and vibrant colors.\n\n3. When stressed by environmental changes, corals expel the algae, leading to their pale, bleached appearance.\n\n4. Coral reefs are among the most biodiverse ecosystems, providing habitat for thousands of marine species.\n\n5. Scientists are exploring conservation strategies, including artificial reefs and selective breeding of heat-resistant coral species.",
     "option_a": "2-3-1-4-5",
     "option_b": "3-1-4-2-5",
     "option_c": "4-2-1-3-5",
     "option_d": "5-4-1-3-2",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 81,
+    "explanation": null
   },
   {
-    "question_number": 82,
+    "id": 15183,
+    "paper_id": 33,
     "question_text": "Improve the sentence by choosing the correct degree of comparison that replaces the word highlighted in bold. This road is\n\n**narrow** than the one we took yesterday.",
     "option_a": "more narrower",
     "option_b": "narrower",
     "option_c": "most narrow",
     "option_d": "narrowest",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 82,
+    "explanation": null
   },
   {
-    "question_number": 83,
+    "id": 15184,
+    "paper_id": 33,
     "question_text": "Select the most appropriate antonym of the given word. Zealous",
     "option_a": "Apathetic",
     "option_b": "Ardent",
     "option_c": "Fervent",
     "option_d": "Eager",
-    "correct_answer": "D"
+    "correct_answer": "A",
+    "question_number": 83,
+    "explanation": "The antonym of 'zealous' (passionate/ardent) is 'apathetic' (indifferent/unenthusiastic) (Option A)."
   },
   {
-    "question_number": 84,
+    "id": 15185,
+    "paper_id": 33,
     "question_text": "Choose the correct meaning of idiom: Give someone the slip",
     "option_a": "To insult someone subtly",
     "option_b": "To evade or escape from someone unnoticed",
     "option_c": "To forgive after insult",
     "option_d": "To follow and copy someone",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 84,
+    "explanation": null
   },
   {
-    "question_number": 85,
+    "id": 15186,
+    "paper_id": 33,
     "question_text": "Spot the correct spelling of a word meaning \"gold or silver in bulk form\".",
     "option_a": "Bullion",
     "option_b": "Bullian",
     "option_c": "Bulleon",
     "option_d": "Bulyon",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 85,
+    "explanation": null
   },
   {
-    "question_number": 86,
+    "id": 15187,
+    "paper_id": 33,
     "question_text": "Choose the correct one-word substitute for: 'A false name used by an author.'",
     "option_a": "Acronym",
     "option_b": "Pseudonym",
     "option_c": "Homonym",
     "option_d": "Patronym",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 86,
+    "explanation": null
   },
   {
-    "question_number": 87,
+    "id": 15188,
+    "paper_id": 33,
     "question_text": "Choose the correct one-word substitute for: 'Excessively idealistic; impractical.'",
     "option_a": "Visionary",
     "option_b": "Pragmatic",
     "option_c": "Quixotic",
     "option_d": "Dogmatic",
-    "correct_answer": "B"
+    "correct_answer": "C",
+    "question_number": 87,
+    "explanation": "'Quixotic' means excessively idealistic and impractical, whereas 'pragmatic' means practical (Option C)."
   },
   {
-    "question_number": 88,
+    "id": 15189,
+    "paper_id": 33,
     "question_text": "Select the correct option: The document was classified; __, it could not be circulated publicly.",
     "option_a": "therefore",
     "option_b": "however",
     "option_c": "nonetheless",
     "option_d": "otherwise",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 88,
+    "explanation": null
   },
   {
-    "question_number": 89,
+    "id": 15190,
+    "paper_id": 33,
     "question_text": "Find the part of the sentence that contains an error: She wore a stunning red silk long scarf\n\n(1) that complemented her traditional attire\n\n(2) during the award ceremony (3) at the convention centre. (4)",
     "option_a": "1",
     "option_b": "2 10",
     "option_c": "3",
     "option_d": "4",
-    "correct_answer": "B"
+    "correct_answer": "A",
+    "question_number": 89,
+    "explanation": "Standard adjective order (Opinion-Size-Color-Material) requires 'stunning long red silk scarf', so part 1 contains the error (Option A)."
   },
   {
-    "question_number": 90,
+    "id": 15191,
+    "paper_id": 33,
     "question_text": "Find the part of the sentence that contains an error: It seems as though the department is reluctant (1)/ not because of the cost implications, (2)/ but because that it might signal (3)/ a policy shift they are not ready to make. (4)",
     "option_a": "1",
     "option_b": "(2)",
     "option_c": "(3)",
     "option_d": "(4)",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 90,
+    "explanation": null
   },
   {
-    "question_number": 91,
+    "id": 15192,
+    "paper_id": 33,
     "question_text": "Change the following from active to passive: They will have been scrutinizing the proposal all afternoon.",
     "option_a": "The proposal will have scrutinized all afternoon.",
     "option_b": "The proposal will have had been scrutinized all afternoon.",
     "option_c": "The proposal will have be being scrutinized all afternoon.",
     "option_d": "The proposal will have been being scrutinized all afternoon.",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 91,
+    "explanation": null
   },
   {
-    "question_number": 92,
+    "id": 15193,
+    "paper_id": 33,
     "question_text": "Change the following from active to passive: Legal advisors urged the firm to amend the draft immediately.",
     "option_a": "It was urged that the firm amend the draft immediately.",
     "option_b": "The draft was urged by legal advisors to be amended.",
     "option_c": "The firm was urged by legal advisors to amend the draft immediately.",
     "option_d": "Legal advice was urging amendment of the draft.",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 92,
+    "explanation": null
   },
   {
-    "question_number": 93,
+    "id": 15194,
+    "paper_id": 33,
     "question_text": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. She said that she had hardly begun the speech when the microphone failed.",
     "option_a": "\"Hardly had I begun the speech when the microphone failed,\" she said.",
     "option_b": "\"I hardly began the speech when the microphone failed,\" she said.",
     "option_c": "\"The microphone failed as I started speaking,\" she said.",
     "option_d": "\"The microphone failed just after I began,\" she said.",
-    "correct_answer": "B"
+    "correct_answer": "A",
+    "question_number": 93,
+    "explanation": "In direct speech, negative correlative inversion with past perfect is used: 'Hardly had I begun the speech when the microphone failed' (Option A)."
   },
   {
-    "question_number": 94,
+    "id": 15195,
+    "paper_id": 33,
     "question_text": "Choose the most appropriate synonym of the underlined word. The app's interface is concise and userfriendly.",
     "option_a": "Lengthy",
     "option_b": "Detailed",
     "option_c": "Brief",
     "option_d": "Confusing",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 94,
+    "explanation": null
   },
   {
-    "question_number": 95,
+    "id": 15196,
+    "paper_id": 33,
     "question_text": "In the following question, the first and last parts of the sentence (1 and 6) are given. The rest of the sentence is split into four parts and named P, Q, R, and S. These four parts are not given in their proper order. Read the sentence and find out which of the four combinations is correct.\n\n1. Not only did P. the socio-economic conditions Q. but it also highlighted R. the revolution improve S. of the working class\n\n6. the inherent flaws of the monarchy.",
     "option_a": "RPSQ",
     "option_b": "SQRP",
     "option_c": "RQSP",
     "option_d": "PQRS",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 95,
+    "explanation": null
   },
   {
-    "question_number": 96,
+    "id": 15197,
+    "paper_id": 33,
     "question_text": "**Comprehension (Q. 96 - 100):** Few people truly understand the hidden life of the street. Even when we enter it, we often fail to recognise the unique individuals who belong to it— the wanderers and nomads who have preserved their secrets through generations. We understand even less about the street at night, when it resembles a great house whose doors are locked. Charles Dickens, however, understood the street deeply. He seemed to possess the key to its hidden world. The street lamps were his stars, and the ordinary person on the street was his hero. He could reveal its innermost character and enter its secret passages, lined with houses and roofed with stars. Facts that are merely observed do not remain permanently fixed in memory. To remember a place forever, one must experience it completely and become so deeply absorbed in it that one temporarily forgets oneself as a separate observer. For Dickens, the streets remained deeply romantic because they were 11 associated with the powerful experiences and tragedies of his youth. They were also filled with memories of sunsets that could never return. This emotional connection explains the unusual realism with which he brought the dark and ordinary corners of London to life. In his descriptions, even minor details—a window, a railing or the keyhole of a door —acquire an intense and lifelike vitality. Through his imagination, ordinary objects appear more vivid and real than they normally do.\n\n---\n\nAccording to the passage, what distinguished Dickens's understanding of the street?",
     "option_a": "He studied the architectural features of London in great detail.",
     "option_b": "He viewed the street mainly as a setting for dramatic events.",
     "option_c": "He observed street life from a safe and emotional distance.",
     "option_d": "He understood the hidden life and character of the street deeply.",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 96,
+    "explanation": null
   },
   {
-    "question_number": 97,
+    "id": 15198,
+    "paper_id": 33,
     "question_text": "**Comprehension (Q. 96 - 100):** Few people truly understand the hidden life of the street. Even when we enter it, we often fail to recognise the unique individuals who belong to it— the wanderers and nomads who have preserved their secrets through generations. We understand even less about the street at night, when it resembles a great house whose doors are locked. Charles Dickens, however, understood the street deeply. He seemed to possess the key to its hidden world. The street lamps were his stars, and the ordinary person on the street was his hero. He could reveal its innermost character and enter its secret passages, lined with houses and roofed with stars. Facts that are merely observed do not remain permanently fixed in memory. To remember a place forever, one must experience it completely and become so deeply absorbed in it that one temporarily forgets oneself as a separate observer. For Dickens, the streets remained deeply romantic because they were 11 associated with the powerful experiences and tragedies of his youth. They were also filled with memories of sunsets that could never return. This emotional connection explains the unusual realism with which he brought the dark and ordinary corners of London to life. In his descriptions, even minor details—a window, a railing or the keyhole of a door —acquire an intense and lifelike vitality. Through his imagination, ordinary objects appear more vivid and real than they normally do.\n\n---\n\nWhat does the comparison of the street at night to \"a great house whose doors are locked\" suggest?",
     "option_a": "The street becomes physically inaccessible after sunset.",
     "option_b": "The buildings appear safer and more impressive at night.",
     "option_c": "The hidden life of the street becomes mysterious and difficult to understand.",
     "option_d": "The residents deliberately prevent strangers from entering the street.",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 97,
+    "explanation": null
   },
   {
-    "question_number": 98,
+    "id": 15199,
+    "paper_id": 33,
     "question_text": "**Comprehension (Q. 96 - 100):** Few people truly understand the hidden life of the street. Even when we enter it, we often fail to recognise the unique individuals who belong to it— the wanderers and nomads who have preserved their secrets through generations. We understand even less about the street at night, when it resembles a great house whose doors are locked. Charles Dickens, however, understood the street deeply. He seemed to possess the key to its hidden world. The street lamps were his stars, and the ordinary person on the street was his hero. He could reveal its innermost character and enter its secret passages, lined with houses and roofed with stars. Facts that are merely observed do not remain permanently fixed in memory. To remember a place forever, one must experience it completely and become so deeply absorbed in it that one temporarily forgets oneself as a separate observer. For Dickens, the streets remained deeply romantic because they were 11 associated with the powerful experiences and tragedies of his youth. They were also filled with memories of sunsets that could never return. This emotional connection explains the unusual realism with which he brought the dark and ordinary corners of London to life. In his descriptions, even minor details—a window, a railing or the keyhole of a door —acquire an intense and lifelike vitality. Through his imagination, ordinary objects appear more vivid and real than they normally do.\n\n---\n\nAccording to the author, how can a person remember a place permanently?",
     "option_a": "By recording all its visible features accurately.",
     "option_b": "By visiting it repeatedly at different times of the day.",
     "option_c": "By comparing it with other familiar surroundings.",
     "option_d": "By becoming completely absorbed in the experience of the place.",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 98,
+    "explanation": null
   },
   {
-    "question_number": 99,
+    "id": 15200,
+    "paper_id": 33,
     "question_text": "**Comprehension (Q. 96 - 100):** Few people truly understand the hidden life of the street. Even when we enter it, we often fail to recognise the unique individuals who belong to it— the wanderers and nomads who have preserved their secrets through generations. We understand even less about the street at night, when it resembles a great house whose doors are locked. Charles Dickens, however, understood the street deeply. He seemed to possess the key to its hidden world. The street lamps were his stars, and the ordinary person on the street was his hero. He could reveal its innermost character and enter its secret passages, lined with houses and roofed with stars. Facts that are merely observed do not remain permanently fixed in memory. To remember a place forever, one must experience it completely and become so deeply absorbed in it that one temporarily forgets oneself as a separate observer. For Dickens, the streets remained deeply romantic because they were 11 associated with the powerful experiences and tragedies of his youth. They were also filled with memories of sunsets that could never return. This emotional connection explains the unusual realism with which he brought the dark and ordinary corners of London to life. In his descriptions, even minor details—a window, a railing or the keyhole of a door —acquire an intense and lifelike vitality. Through his imagination, ordinary objects appear more vivid and real than they normally do.\n\n---\n\nWhat is implied by the association of the streets with the powerful experiences and tragedies of Dickens’s youth?",
     "option_a": "Dickens’s emotional experiences gave the streets lasting personal and romantic significance.",
     "option_b": "The streets were decorated with colours commonly associated with youthful celebrations.",
     "option_c": "Dickens regarded the streets as symbols of political and social decline.",
     "option_d": "The appearance of the streets changed mainly because of the setting sun.",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 99,
+    "explanation": null
   },
   {
-    "question_number": 100,
+    "id": 15201,
+    "paper_id": 33,
     "question_text": "**Comprehension (Q. 96 - 100):** Few people truly understand the hidden life of the street. Even when we enter it, we often fail to recognise the unique individuals who belong to it— the wanderers and nomads who have preserved their secrets through generations. We understand even less about the street at night, when it resembles a great house whose doors are locked. Charles Dickens, however, understood the street deeply. He seemed to possess the key to its hidden world. The street lamps were his stars, and the ordinary person on the street was his hero. He could reveal its innermost character and enter its secret passages, lined with houses and roofed with stars. Facts that are merely observed do not remain permanently fixed in memory. To remember a place forever, one must experience it completely and become so deeply absorbed in it that one temporarily forgets oneself as a separate observer. For Dickens, the streets remained deeply romantic because they were 11 associated with the powerful experiences and tragedies of his youth. They were also filled with memories of sunsets that could never return. This emotional connection explains the unusual realism with which he brought the dark and ordinary corners of London to life. In his descriptions, even minor details—a window, a railing or the keyhole of a door —acquire an intense and lifelike vitality. Through his imagination, ordinary objects appear more vivid and real than they normally do.\n\n---\n\nWhich statement best explains the unusual realism in Dickens’s descriptions?",
     "option_a": "He exaggerated the unpleasant features of London to criticise society.",
     "option_b": "He gave ordinary physical details an intense and lifelike vitality.",
     "option_c": "He replaced realistic locations with imaginary and mysterious landscapes.",
     "option_d": "He focused only on factual accuracy and avoided emotional associations.",
-    "correct_answer": "C"
+    "correct_answer": "B",
+    "question_number": 100,
+    "explanation": "The passage directly explains Dickens's realism by stating that even minor, ordinary details acquire an intense and lifelike vitality (Option B)."
   }
 ]

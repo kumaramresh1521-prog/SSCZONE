@@ -1,6 +1,6 @@
 [
   {
-    "id": 6802,
+    "id": 15702,
     "paper_id": 39,
     "question_text": "A says, \"My father is the only son of B.\" How is B related to A?",
     "option_a": "Grandfather",
@@ -12,7 +12,7 @@
     "explanation": null
   },
   {
-    "id": 6803,
+    "id": 15703,
     "paper_id": 39,
     "question_text": "Find the missing number in the following series: 21, 39, 119, ?, 707, 1411",
     "option_a": "205",
@@ -24,7 +24,7 @@
     "explanation": null
   },
   {
-    "id": 6804,
+    "id": 15704,
     "paper_id": 39,
     "question_text": "The following symbols are used to represent family relationships:\n\n1. P + Q indicates that P is the father of Q.\n\n2. P × Q indicates that P is the mother of Q.\n\n3. P ÷ Q indicates that P is the brother of Q.",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-1_q3_opt_A.png)",
@@ -36,7 +36,7 @@
     "explanation": null
   },
   {
-    "id": 6805,
+    "id": 15705,
     "paper_id": 39,
     "question_text": "P – Q indicates that P is the sister of Q. Using the above coding pattern, determine the relationship of A with D in the given expression: A + B – C × D",
     "option_a": "1",
@@ -48,19 +48,19 @@
     "explanation": null
   },
   {
-    "id": 6806,
+    "id": 15706,
     "paper_id": 39,
     "question_text": "Ravi and Seema are brother and sister. Amit and Vijay are the sons of Mohan and Radha. Radha is the mother-in-law of Seema's mother, Geeta. Tara, Tina, and Tripti are the daughters of Amit and the only cousins of Ravi. How many children does Vijay have?",
     "option_a": "1",
     "option_b": "2",
     "option_c": "0",
     "option_d": "3 1 INTELLIGENCE",
-    "correct_answer": "C",
+    "correct_answer": "B",
     "question_number": 5,
-    "explanation": null
+    "explanation": "Geeta is Vijay's wife (since Radha is her mother-in-law and Amit's children are cousins), making Vijay the father of Ravi and Seema, hence 2 children (Option B)."
   },
   {
-    "id": 6807,
+    "id": 15707,
     "paper_id": 39,
     "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 2 4 5 10 8 9 96 ?",
     "option_a": "52",
@@ -72,7 +72,7 @@
     "explanation": null
   },
   {
-    "id": 6808,
+    "id": 15708,
     "paper_id": 39,
     "question_text": "A centre code follows the sequence of [n2] - [n3]. Which of the following centre code does not follow this pattern?",
     "option_a": "16-64",
@@ -84,19 +84,19 @@
     "explanation": null
   },
   {
-    "id": 6809,
+    "id": 15709,
     "paper_id": 39,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-8-october-2026-shift-1_p2_x26.jpeg)",
     "option_a": "5",
     "option_b": "12",
     "option_c": "10",
     "option_d": "9",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 8,
-    "explanation": null
+    "explanation": "Column pattern follows Row 1 + 2 × Row 2 = Row 3; in column 3, 13 + 2 × 10 = 33, so missing number ? = 10 (Option C)."
   },
   {
-    "id": 6810,
+    "id": 15710,
     "paper_id": 39,
     "question_text": "Study the pattern in the given series and find the next set of letters in the series. WHE, SIA, OJW, ?",
     "option_a": "KKS",
@@ -108,7 +108,7 @@
     "explanation": null
   },
   {
-    "id": 6811,
+    "id": 15711,
     "paper_id": 39,
     "question_text": "Select the odd number pair from the given alternatives.",
     "option_a": "32, 1056",
@@ -120,7 +120,7 @@
     "explanation": null
   },
   {
-    "id": 6812,
+    "id": 15712,
     "paper_id": 39,
     "question_text": "Read the question carefully and choose the most appropriate option. You are a hospital administrator. Patients are complaining about long waiting times, and staff members are blaming each other for the delays. What would you do?",
     "option_a": "Warn all staff members without examining the actual causes of delays.",
@@ -132,7 +132,7 @@
     "explanation": null
   },
   {
-    "id": 6813,
+    "id": 15713,
     "paper_id": 39,
     "question_text": "Choose the best alternative. @# $ : $ #@ :: &*! : ?",
     "option_a": "!&*",
@@ -144,7 +144,7 @@
     "explanation": null
   },
   {
-    "id": 6814,
+    "id": 15714,
     "paper_id": 39,
     "question_text": "What should come in place of question mark (?) in the following analogy? ZYX : WVU :: TSR : ?",
     "option_a": "QPO",
@@ -156,7 +156,7 @@
     "explanation": null
   },
   {
-    "id": 6815,
+    "id": 15715,
     "paper_id": 39,
     "question_text": "In the given question, a few statements have been given followed by conclusions based on them. Consider the statements to be true and answer which of the given conclusions logically follow the statement. Statements\n\n1. All contracts are agreements.\n\n2. No agreement is unenforceable.\n\n3. Some documents are contracts. Conclusions\n\nI. Some documents are agreements.\n\nII. Some documents are not unenforceable.\n\nIII. No contract is unenforceable.\n\nIV. Some agreements are documents.",
     "option_a": "Only I, II and III",
@@ -168,7 +168,7 @@
     "explanation": null
   },
   {
-    "id": 6816,
+    "id": 15716,
     "paper_id": 39,
     "question_text": "Which sequence of operational signs will correctly replace the blanks to satisfy the following expression? 19 □ 5 □ 4 □ 2 = 37",
     "option_a": "×, -, ÷",
@@ -180,7 +180,7 @@
     "explanation": null
   },
   {
-    "id": 6817,
+    "id": 15717,
     "paper_id": 39,
     "question_text": "Read the statement carefully and assume it to be true. Then examine the two conclusions given below it and decide which conclusion(s), if any, logically follow from the statement.\n\nStatement: A company aims to improve customer satisfaction by upgrading its service quality.\n\nConclusions:\n\nI. All existing customers are currently dissatisfied.\n\nII. The company believes service quality affects customer satisfaction.",
     "option_a": "Only Conclusion I follows",
@@ -192,7 +192,7 @@
     "explanation": null
   },
   {
-    "id": 6818,
+    "id": 15718,
     "paper_id": 39,
     "question_text": "If '♦' means +, '△' means -, '★' means ×, and '○' means ÷, find (9 ♦ 6) ★ [(56 ○ 7) △ (2 ★\n\n2)].",
     "option_a": "20",
@@ -204,7 +204,7 @@
     "explanation": null
   },
   {
-    "id": 6819,
+    "id": 15719,
     "paper_id": 39,
     "question_text": "In the following question a statement is given followed by some assumptions. Read the assumptions carefully and choose the appropriate option.\n\nStatement: A publishing house is launching a new magazine and is spending heavily on advertisements. To meet promotional expenses, it plans to cut unnecessary costs and raise funds from investors. Assumptions:\n\nI. The new magazine has the potential to attract readers.\n\nII. All investors will be willing to invest in the magazine.",
     "option_a": "Only I is implicit.",
@@ -216,7 +216,7 @@
     "explanation": null
   },
   {
-    "id": 6820,
+    "id": 15720,
     "paper_id": 39,
     "question_text": "An office has a policy: “Employees who work overtime for more than 4 hours are entitled to a paid dinner voucher.” An employee works 3 hours and 55 minutes of overtime. He is starving and requests a voucher. As a manager, you know the policy is strict. What is your judgment?",
     "option_a": "Deny the voucher to maintain strict discipline.",
@@ -228,7 +228,7 @@
     "explanation": null
   },
   {
-    "id": 6821,
+    "id": 15721,
     "paper_id": 39,
     "question_text": "In the following question two statements are given and these statements are followed by two conclusions. You have to take the given two statements to be true even if they seem to be at variance from commonly known facts. Read the conclusions and then decide which of the given conclusions logically follows from the two given statements.\n\nStatements: All apples are fruits. All fruits are food.\n\nConclusions:\n\nI. All apples are food.\n\nII. Some food are fruits.",
     "option_a": "Only conclusion II follows",
@@ -240,7 +240,7 @@
     "explanation": null
   },
   {
-    "id": 6822,
+    "id": 15722,
     "paper_id": 39,
     "question_text": "In a certain code language, \"AMOUNT\" is written as \"AnOvNu.\" How will \"DEPEND\" be written in the same code language?",
     "option_a": "DfPfNe",
@@ -252,7 +252,7 @@
     "explanation": null
   },
   {
-    "id": 6823,
+    "id": 15723,
     "paper_id": 39,
     "question_text": "In the following question, three statements are given followed by three conclusions. Consider the statements to be true even if they differ from commonly known facts. Read the conclusions carefully and decide which of the conclusions logically follow from the given statements.\n\nStatements: Some flowers are trees. All trees are rivers. No river is a mountain.\n\nConclusions:\n\nI. Some flowers are rivers.\n\nII. All trees are mountains.\n\nIII. Some rivers are not mountains.",
     "option_a": "Both conclusions I and II follow",
@@ -264,7 +264,7 @@
     "explanation": null
   },
   {
-    "id": 6824,
+    "id": 15724,
     "paper_id": 39,
     "question_text": "An airline waives the rebooking fee if a request is made 24 hours or more before departure, provided the ticket is a Flex or Business class fare. For any requests made less than 24 hours before departure, a rebooking fee applies to all fare types — except that Elite-status passengers are always exempt from this fee. Passenger details: Holds an Economy Saver fare, requests a change 3 hours before departure, and holds Elite status.",
     "option_a": "Free rebooking",
@@ -276,7 +276,7 @@
     "explanation": null
   },
   {
-    "id": 6825,
+    "id": 15725,
     "paper_id": 39,
     "question_text": "Select the option that is related to the third word in the same way as the second word is related to the first word. (The words must be considered as meaningful English words and must not be related to each other based on the number of letters/number of consonants/vowels in the word.) Bauxite : Aluminium :: Cinnabar : ?",
     "option_a": "Lead",
@@ -288,7 +288,7 @@
     "explanation": null
   },
   {
-    "id": 6826,
+    "id": 15726,
     "paper_id": 39,
     "question_text": "In each of the following questions, four options have been given, of which three are alike in some way and one is different. Choose the odd one out.",
     "option_a": "Japan - Yen",
@@ -300,7 +300,7 @@
     "explanation": null
   },
   {
-    "id": 6827,
+    "id": 15727,
     "paper_id": 39,
     "question_text": "The \"Goods and Services Tax (GST)\" council is responsible for making recommendations on various aspects of GST. Who chairs this council?",
     "option_a": "The President of India",
@@ -312,7 +312,7 @@
     "explanation": null
   },
   {
-    "id": 6828,
+    "id": 15728,
     "paper_id": 39,
     "question_text": "The \"Fiscal Responsibility and Budget Management (FRBM) Act\" was enacted in India with the aim of bringing about fiscal discipline. Which of the following is a key target or provision of the FRBM Act?",
     "option_a": "To ensure a fixed exchange rate for the Indian Rupee.",
@@ -324,7 +324,7 @@
     "explanation": null
   },
   {
-    "id": 6829,
+    "id": 15729,
     "paper_id": 39,
     "question_text": "Which sport is associated with the Thomas Cup?",
     "option_a": "Badminton",
@@ -336,7 +336,7 @@
     "explanation": null
   },
   {
-    "id": 6830,
+    "id": 15730,
     "paper_id": 39,
     "question_text": "In which event did India earn its first World Championship gold in athletics?",
     "option_a": "Men's Javelin",
@@ -348,7 +348,7 @@
     "explanation": null
   },
   {
-    "id": 6831,
+    "id": 15731,
     "paper_id": 39,
     "question_text": "Where was the setting for the final match of the 2021 Indian Super League season?",
     "option_a": "Margao",
@@ -360,7 +360,7 @@
     "explanation": null
   },
   {
-    "id": 6832,
+    "id": 15732,
     "paper_id": 39,
     "question_text": "According to BSA, if a person refuses to answer a material question in court what are the consequences?",
     "option_a": "Adverse inference may be drawn",
@@ -372,7 +372,7 @@
     "explanation": null
   },
   {
-    "id": 6833,
+    "id": 15733,
     "paper_id": 39,
     "question_text": "Who was the first woman chairperson of India's markets regulator, Securities and Exchange Board of India (SEBI)?",
     "option_a": "Arundhati",
@@ -384,7 +384,7 @@
     "explanation": null
   },
   {
-    "id": 6834,
+    "id": 15734,
     "paper_id": 39,
     "question_text": "Who is the 26th Governor of the Reserve Bank of India since December 2024?",
     "option_a": "Urjit Patel",
@@ -396,7 +396,7 @@
     "explanation": null
   },
   {
-    "id": 6835,
+    "id": 15735,
     "paper_id": 39,
     "question_text": "Who among the following rulers is known as the Napoleon of India?",
     "option_a": "Samudragupta",
@@ -408,7 +408,7 @@
     "explanation": null
   },
   {
-    "id": 6836,
+    "id": 15736,
     "paper_id": 39,
     "question_text": "Which of the following Census years has India recorded the highest annual exponential population growth rate?",
     "option_a": "1971",
@@ -420,7 +420,7 @@
     "explanation": null
   },
   {
-    "id": 6837,
+    "id": 15737,
     "paper_id": 39,
     "question_text": "Which of the following correctly describes the structure introduced by Pitt’s India Act?",
     "option_a": "Only the Governor-General had full authority.",
@@ -432,7 +432,7 @@
     "explanation": null
   },
   {
-    "id": 6838,
+    "id": 15738,
     "paper_id": 39,
     "question_text": "The Second Jain Council was held in 512 CE at Valabhi (Gujarat) under the chairmanship of which Jain acharya?",
     "option_a": "Devardhigani",
@@ -444,7 +444,7 @@
     "explanation": null
   },
   {
-    "id": 6839,
+    "id": 15739,
     "paper_id": 39,
     "question_text": "Which Article of the Indian Constitution specifies the languages to be used for transacting business in Parliament?",
     "option_a": "Article 110",
@@ -456,7 +456,7 @@
     "explanation": null
   },
   {
-    "id": 6840,
+    "id": 15740,
     "paper_id": 39,
     "question_text": "What is the term for the natural tendency of an object to resist any change in its state of rest or uniform motion?",
     "option_a": "Force applied",
@@ -468,7 +468,7 @@
     "explanation": null
   },
   {
-    "id": 6841,
+    "id": 15741,
     "paper_id": 39,
     "question_text": "Which African country lies on the western rim of the Indian Ocean?",
     "option_a": "Kenya",
@@ -480,7 +480,7 @@
     "explanation": null
   },
   {
-    "id": 6842,
+    "id": 15742,
     "paper_id": 39,
     "question_text": "A Chief Judicial Magistrate issues an administrative order redistributing criminal cases among the Judicial Magistrates subordinate to him. One of the Magistrates challenges the order, arguing that only the Sessions Judge has the authority to distribute judicial business. Which of the following is correct under the Bharatiya Nagarik Suraksha Sanhita, 2023 in India?",
     "option_a": "Only the sessions judge may distribute magistrate business.",
@@ -492,7 +492,7 @@
     "explanation": null
   },
   {
-    "id": 6843,
+    "id": 15743,
     "paper_id": 39,
     "question_text": "In India, under which situation can Parliament legislate on a subject in the State List without declaring a national emergency?",
     "option_a": "When the Lok Sabha passes a resolution by simple majority.",
@@ -504,7 +504,7 @@
     "explanation": null
   },
   {
-    "id": 6844,
+    "id": 15744,
     "paper_id": 39,
     "question_text": "What was the primary objective of granting Maharatna, Navratna and Miniratna status to selected Central Public Sector Enterprises under the post-1991 economic reforms?",
     "option_a": "To increase Government ownership in all sectors",
@@ -516,7 +516,7 @@
     "explanation": null
   },
   {
-    "id": 6845,
+    "id": 15745,
     "paper_id": 39,
     "question_text": "Who was the Governor of the Reserve Bank of India (RBI) during the 1991 balance of payments crisis?",
     "option_a": "C. Rangarajan",
@@ -528,7 +528,7 @@
     "explanation": null
   },
   {
-    "id": 6846,
+    "id": 15746,
     "paper_id": 39,
     "question_text": "Literacy is considered essential for human development because it enables people to:",
     "option_a": "Acquire industrial knowledge, skills, and awareness",
@@ -540,7 +540,7 @@
     "explanation": null
   },
   {
-    "id": 6847,
+    "id": 15747,
     "paper_id": 39,
     "question_text": "Which of the following is reflected in the knowledge dimension of the Human Development Index (HDI)?",
     "option_a": "Population growth",
@@ -552,19 +552,19 @@
     "explanation": null
   },
   {
-    "id": 6848,
+    "id": 15748,
     "paper_id": 39,
     "question_text": "What were the specific targeted growth rates for Real GDP and the agriculture sector established under the Twelfth Five-Year Plan (2012–2017)?",
     "option_a": "Real GDP: 9.0%, Agriculture: 3.7%",
     "option_b": "Real GDP: 8.0%, Agriculture: 4.0%",
     "option_c": "Real GDP: 7.6%, Agriculture: 4.5%",
     "option_d": "Real GDP: 6.5%, Agriculture: 3.5%",
-    "correct_answer": "C",
+    "correct_answer": "B",
     "question_number": 47,
-    "explanation": null
+    "explanation": "Under the Twelfth Five-Year Plan (2012–2017), the targeted growth rate approved by the NDC was 8.0% for Real GDP and 4.0% for agriculture (Option B)."
   },
   {
-    "id": 6849,
+    "id": 15749,
     "paper_id": 39,
     "question_text": "A 2 kg block moving at 6 m/s collides headon with a stationary 4 kg block. The two blocks stick together after the collision. Assuming no external horizontal force acts on the system, what fraction of the initial kinetic energy is lost?",
     "option_a": "1",
@@ -576,7 +576,7 @@
     "explanation": null
   },
   {
-    "id": 6850,
+    "id": 15750,
     "paper_id": 39,
     "question_text": "Under whose leadership was Purna Swaraj formally adopted at the Lahore Session?",
     "option_a": "Subhas Chandra",
@@ -588,7 +588,7 @@
     "explanation": null
   },
   {
-    "id": 6851,
+    "id": 15751,
     "paper_id": 39,
     "question_text": "A person has difficulty digesting fats because bile is not being produced properly. Which organ is most likely affected?",
     "option_a": "Heart",
@@ -600,7 +600,7 @@
     "explanation": null
   },
   {
-    "id": 6852,
+    "id": 15752,
     "paper_id": 39,
     "question_text": "A right prism has a hexagonal base with an area of 90 cm². The height of the prism is 20 cm. Find the volume.",
     "option_a": "1800 cm³",
@@ -612,7 +612,7 @@
     "explanation": null
   },
   {
-    "id": 6853,
+    "id": 15753,
     "paper_id": 39,
     "question_text": "Simplify the expression: √0.25 + √0.36 + √1.44 + √0.0009 .",
     "option_a": "2.33",
@@ -624,7 +624,7 @@
     "explanation": null
   },
   {
-    "id": 6854,
+    "id": 15754,
     "paper_id": 39,
     "question_text": "In a triangle, the centroid divides each median in the ratio 2: 1. What is the distance between the centroid and the orthocenter in an equilateral triangle?",
     "option_a": "Equal to the side length",
@@ -636,7 +636,7 @@
     "explanation": null
   },
   {
-    "id": 6855,
+    "id": 15755,
     "paper_id": 39,
     "question_text": "Find the least perfect square divisible by 3, 4, 5, 6, and 8.",
     "option_a": "3800",
@@ -648,7 +648,7 @@
     "explanation": null
   },
   {
-    "id": 6856,
+    "id": 15756,
     "paper_id": 39,
     "question_text": "A and B started a business with capital in the ratio 5 : 9. At the end of 8 months, A withdrew his capital. If they receive profits in the ratio 4 : 9, for how many months was B's capital used in the business?",
     "option_a": "6 months",
@@ -660,7 +660,7 @@
     "explanation": null
   },
   {
-    "id": 6857,
+    "id": 15757,
     "paper_id": 39,
     "question_text": "A sum becomes 9 times its original value in 4 years under compound interest. In how many years will it become 81 times the original amount?",
     "option_a": "8 years",
@@ -672,19 +672,19 @@
     "explanation": null
   },
   {
-    "id": 6858,
+    "id": 15758,
     "paper_id": 39,
     "question_text": "A floor is covered by regular hexagonal tiles of side 12 cm. If 5% are broken during installation, and total area to be covered is 12 m², approximately how many tiles are needed?",
     "option_a": "343 tiles",
     "option_b": "338 tiles",
     "option_c": "318 tiles",
     "option_d": "323 tiles",
-    "correct_answer": "D",
+    "correct_answer": "B",
     "question_number": 57,
-    "explanation": null
+    "explanation": "Area of one hexagonal tile is 216√3 ≈ 374.11 cm²; for 120,000 cm² with 5% breakage, total tiles required = (120,000 / 374.11) / 0.95 ≈ 338 tiles (Option B)."
   },
   {
-    "id": 6859,
+    "id": 15759,
     "paper_id": 39,
     "question_text": "The area of a quadrant of a circle is 49π cm². 4 What is the radius of the circle?",
     "option_a": "9 cm",
@@ -696,7 +696,7 @@
     "explanation": null
   },
   {
-    "id": 6860,
+    "id": 15760,
     "paper_id": 39,
     "question_text": "A cone has a volume of 450π cm³ and a height of 6 cm. Find the radius of its base.",
     "option_a": "15 cm",
@@ -708,7 +708,7 @@
     "explanation": null
   },
   {
-    "id": 6861,
+    "id": 15761,
     "paper_id": 39,
     "question_text": "An item is sold by a manufacturer to a wholesaler at a profit of 10%. Then it is sold by the wholesaler to a retailer at a profit of 20%. The retailer again sells the item to a customer for ₹56,100 at a loss of 15%. Find the cost price of the item to the manufacturer.",
     "option_a": "₹60,000",
@@ -720,7 +720,7 @@
     "explanation": null
   },
   {
-    "id": 6862,
+    "id": 15762,
     "paper_id": 39,
     "question_text": "A wholesaler allows a discount of 20% on the marked price to a retailer. The retailer sells the item at a 5% discount on the marked price. If the retailer uses a faulty weight that weighs 900g for every 1kg while selling, what is his overall approximate profit percentage?",
     "option_a": "42%",
@@ -732,7 +732,7 @@
     "explanation": null
   },
   {
-    "id": 6863,
+    "id": 15763,
     "paper_id": 39,
     "question_text": "A man standing on a tower observes a car approaching him. The angle of depression changes from 30° to 60° in 8 minutes. Find the time taken by the car to reach the tower from that position.",
     "option_a": "5 mins",
@@ -744,31 +744,31 @@
     "explanation": null
   },
   {
-    "id": 6864,
+    "id": 15764,
     "paper_id": 39,
     "question_text": "The measure of supplement of ∠y is 40° more than twice the measure of the complement of ∠y. Find the sum in degrees of the supplement and complement of ∠y.",
     "option_a": "270°",
     "option_b": "150°",
     "option_c": "190°",
     "option_d": "110°",
-    "correct_answer": "B",
+    "correct_answer": "C",
     "question_number": 63,
-    "explanation": null
+    "explanation": "The equation (180 - y) = 2(90 - y) + 40 yields y = 40°, so the sum of the supplement (140°) and complement (50°) is 190° (Option C)."
   },
   {
-    "id": 6865,
+    "id": 15765,
     "paper_id": 39,
     "question_text": "If 0°< θ< 90° , find the value of √1+sin 1−sin θ θ −tan θ .",
     "option_a": "sin θ",
     "option_b": "cos θ",
     "option_c": "sec θ",
     "option_d": "tan θ",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 64,
-    "explanation": null
+    "explanation": "Simplification yields √[(1+sin θ)/(1-sin θ)] - tan θ = (sec θ + tan θ) - tan θ = sec θ (Option C)."
   },
   {
-    "id": 6866,
+    "id": 15766,
     "paper_id": 39,
     "question_text": "If √5 sin θ= 1 , find the value of 2 tan θ+√5 sin θ . √5 cos θ−2 tan θ",
     "option_a": "5",
@@ -780,7 +780,7 @@
     "explanation": null
   },
   {
-    "id": 6867,
+    "id": 15767,
     "paper_id": 39,
     "question_text": "A solid metallic cone of radius 6 cm and height 12 cm is melted and recast into small solid spheres of radius 1 cm. How many such spheres can be made?",
     "option_a": "86",
@@ -792,7 +792,7 @@
     "explanation": null
   },
   {
-    "id": 6868,
+    "id": 15768,
     "paper_id": 39,
     "question_text": "In triangle ABC, points D and E lie on sides AB and AC, respectively, such that DE is parallel to BC. If AD: DB = 2: 3 and AE = 8 cm, then find the length of AC.",
     "option_a": "12 cm",
@@ -804,7 +804,7 @@
     "explanation": null
   },
   {
-    "id": 6869,
+    "id": 15769,
     "paper_id": 39,
     "question_text": "A farmer borrowed ₹2,50,000 at simple interest under a rural credit scheme. After 7 years, he repaid ₹3,72,500. If another farmer borrowed ₹4,00,000 at the same rate but for 10 years, how much more interest would the second farmer pay than that paid by the first farmer?",
     "option_a": "₹1,50,900",
@@ -816,19 +816,19 @@
     "explanation": null
   },
   {
-    "id": 6870,
+    "id": 15770,
     "paper_id": 39,
     "question_text": "A commercial property needs painting. 60% of the total surface area consists of walls and 40% consists of ceilings. Painter E can paint all the walls in 6 hours but would take 12 hours to paint the ceilings. Painter F can paint all the ceilings alone in 4 hours, but the walls alone would take her 18 hours. They start working simultaneously, splitting the tasks optimally based on their respective speeds. The moment either painter finishes their initial assignment, they immediately join the other to help finish the remaining surface. How long will it take them to paint the entire property?",
     "option_a": "5.5 hrs",
     "option_b": "6 hrs",
     "option_c": "6.4 hrs",
     "option_d": "8 hrs",
-    "correct_answer": "B",
+    "correct_answer": "A",
     "question_number": 69,
-    "explanation": null
+    "explanation": "Painter F finishes ceilings in 4 hrs while E paints 40% of walls; working together on the remaining 20% of walls at a combined rate of 40/3% per hour takes 1.5 hrs, giving 5.5 hours total (Option A)."
   },
   {
-    "id": 6871,
+    "id": 15771,
     "paper_id": 39,
     "question_text": "Two software engineers, Naina and Kapil, are debugging a block of code. Working independently, Naina can clear 10 % of the code per hour and Kapil can clear 8% per hour. However, when working together in the same virtual environment, the communication overhead reduces each of their individual efficiencies by exactly 10%. If they work together for 2 hours after which Kapil leaves, how much more time will it take Naina so that a total of 40% of the block of code gets debugged?",
     "option_a": "40 mins",
@@ -840,7 +840,7 @@
     "explanation": null
   },
   {
-    "id": 6872,
+    "id": 15772,
     "paper_id": 39,
     "question_text": "Evaluate: cosec17°−1 sec73°",
     "option_a": "0",
@@ -852,7 +852,7 @@
     "explanation": null
   },
   {
-    "id": 6873,
+    "id": 15773,
     "paper_id": 39,
     "question_text": "If x = 109 and y = 98, evaluate the expression x² - y² + 2x - 2y without using direct multiplication.",
     "option_a": "1089",
@@ -864,7 +864,7 @@
     "explanation": null
   },
   {
-    "id": 6874,
+    "id": 15774,
     "paper_id": 39,
     "question_text": "If p + q + r = 0 and pq + qr + rp = -18, then find the value of p² + q2 + r².",
     "option_a": "-18",
@@ -876,7 +876,7 @@
     "explanation": null
   },
   {
-    "id": 6875,
+    "id": 15775,
     "paper_id": 39,
     "question_text": "A swimming pool is designed with a regular octagonal floor plan of side length 20 m. The floor of the pool is to be tiled using tiles that cover 0.25 m² each. Assuming no material is wasted during cutting, find the total number of tiles required (approximately). [Take √2 ≈1.4142 ]",
     "option_a": "6534",
@@ -888,7 +888,7 @@
     "explanation": null
   },
   {
-    "id": 6876,
+    "id": 15776,
     "paper_id": 39,
     "question_text": "Simplify the following expression: √3+1 √3−1 + √3−1 √3+1",
     "option_a": "4",
@@ -900,7 +900,7 @@
     "explanation": null
   },
   {
-    "id": 6877,
+    "id": 15777,
     "paper_id": 39,
     "question_text": "Choose the correct direct speech transformation of the sentence below. The banner welcomed visitors to Belgium.",
     "option_a": "The banner said, \"Welcome to Belgium.\"",
@@ -912,7 +912,7 @@
     "explanation": null
   },
   {
-    "id": 6878,
+    "id": 15778,
     "paper_id": 39,
     "question_text": "Rearrange the parts of the sentence in the correct order. The global push for sustainability P. necessitating urgent collaboration among nations Q. has been intensified by alarming environmental shifts, R. and fostering the transition towards renewable energy sources S. leading to policy frameworks aimed at reducing carbon emissions",
     "option_a": "RSPQ",
@@ -924,7 +924,7 @@
     "explanation": null
   },
   {
-    "id": 6879,
+    "id": 15779,
     "paper_id": 39,
     "question_text": "Choose the correct idiom for the word highlighted in bold. Jatin was progressing by leaps and bounds because of his hard work.",
     "option_a": "Very slowly",
@@ -936,7 +936,7 @@
     "explanation": null
   },
   {
-    "id": 6880,
+    "id": 15780,
     "paper_id": 39,
     "question_text": "Identify the error in the sentence. We were leave for the airport when the storm began.",
     "option_a": "storm",
@@ -948,19 +948,19 @@
     "explanation": null
   },
   {
-    "id": 6881,
+    "id": 15781,
     "paper_id": 39,
     "question_text": "Complete the sentence by choosing a suitable word to fill in the blank. Were he to have followed the instructions, none of this ____ occurred.",
     "option_a": "would have",
     "option_b": "will have",
     "option_c": "had",
     "option_d": "should",
-    "correct_answer": "C",
+    "correct_answer": "A",
     "question_number": 80,
-    "explanation": null
+    "explanation": "In the counterfactual conditional with inversion ('Were he to have followed...'), the result clause requires 'would have' + past participle ('would have occurred', Option A)."
   },
   {
-    "id": 6882,
+    "id": 15782,
     "paper_id": 39,
     "question_text": "Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?\n\n1. Their research revealed that fungi play a crucial role in nutrient cycling, breaking down organic matter and forming symbiotic relationships with plant roots.\n\n2. Understanding these fungal connections has transformed ecological studies and highlights the interdependence of forest ecosystems.\n\n3. In recent years, scientists have discovered vast underground fungal networks known as mycorrhizal networks.\n\n4. These networks allow trees and plants to share nutrients and even send chemical signals, sometimes described as the \"Wood Wide Web.\"\n\n5. Some species of fungi can even warn trees about insect attacks by transmitting distress signals through the underground network.",
     "option_a": "2-4-5-1-3",
@@ -972,7 +972,7 @@
     "explanation": null
   },
   {
-    "id": 6883,
+    "id": 15783,
     "paper_id": 39,
     "question_text": "Improve the sentence using the correct phrasal verb of the underlined word. The project was given away by the new manager after the old one retired.",
     "option_a": "carried out",
@@ -984,7 +984,7 @@
     "explanation": null
   },
   {
-    "id": 6884,
+    "id": 15784,
     "paper_id": 39,
     "question_text": "Select the most appropriate antonym of the given word. Internecine",
     "option_a": "Internal",
@@ -996,7 +996,7 @@
     "explanation": null
   },
   {
-    "id": 6885,
+    "id": 15785,
     "paper_id": 39,
     "question_text": "Choose the correct meaning of idiom: To milk the ram",
     "option_a": "To exploit one's privilege",
@@ -1008,7 +1008,7 @@
     "explanation": null
   },
   {
-    "id": 6886,
+    "id": 15786,
     "paper_id": 39,
     "question_text": "Spot the correct spelling of a cross-sensory phenomenon.",
     "option_a": "Synesthesia",
@@ -1020,7 +1020,7 @@
     "explanation": null
   },
   {
-    "id": 6887,
+    "id": 15787,
     "paper_id": 39,
     "question_text": "Choose the correct one-word substitute for: 'Inability to sleep.'",
     "option_a": "Narcolepsy",
@@ -1032,19 +1032,19 @@
     "explanation": null
   },
   {
-    "id": 6888,
+    "id": 15788,
     "paper_id": 39,
     "question_text": "Choose the correct one-word substitute for: 'Looking or sounding sad and dismal'",
     "option_a": "jubiliant",
     "option_b": "Lugubrious",
     "option_c": "Maudlin",
     "option_d": "Sardonic",
-    "correct_answer": "D",
+    "correct_answer": "B",
     "question_number": 87,
-    "explanation": null
+    "explanation": "'Lugubrious' is defined verbatim as looking or sounding sad and dismal, whereas 'sardonic' means grimly mocking or cynical (Option B)."
   },
   {
-    "id": 6889,
+    "id": 15789,
     "paper_id": 39,
     "question_text": "Select the correct option: The sociologist was renowned for her ___ analysis of systemic inequalities.",
     "option_a": "penetrative",
@@ -1056,7 +1056,7 @@
     "explanation": null
   },
   {
-    "id": 6890,
+    "id": 15790,
     "paper_id": 39,
     "question_text": "Find the part of the sentence that contains an error: The editor-in-chief asked whether (1)/ the article had underwent (2)/ plagiarism screening (3)/ before approval. (4)",
     "option_a": "1",
@@ -1068,7 +1068,7 @@
     "explanation": null
   },
   {
-    "id": 6891,
+    "id": 15791,
     "paper_id": 39,
     "question_text": "Find the part of the sentence that contains an error: The tribunal objected to not the content of the testimony (1)/ but the manner in which it was introduced (2)/ without any authentication by the official registrar (3)/ or acknowledgment of its provenance. (4)",
     "option_a": "1",
@@ -1080,7 +1080,7 @@
     "explanation": null
   },
   {
-    "id": 6892,
+    "id": 15792,
     "paper_id": 39,
     "question_text": "Change the following from active to passive: We must obey the rules.",
     "option_a": "The rules must be obeyed.",
@@ -1092,7 +1092,7 @@
     "explanation": null
   },
   {
-    "id": 6893,
+    "id": 15793,
     "paper_id": 39,
     "question_text": "Change the following from active to passive: They should not have let misinformation spread unchecked.",
     "option_a": "Misinformation should not have let to spread unchecked.",
@@ -1104,7 +1104,7 @@
     "explanation": null
   },
   {
-    "id": 6894,
+    "id": 15794,
     "paper_id": 39,
     "question_text": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. He said that he would rather have been punished than be humiliated publicly.",
     "option_a": "\"I would rather be punished than get humiliated publicly,\" he said.",
@@ -1116,7 +1116,7 @@
     "explanation": null
   },
   {
-    "id": 6895,
+    "id": 15795,
     "paper_id": 39,
     "question_text": "Choose the most appropriate synonym of the underlined word. Fame can be ephemeral if not sustained by talent.",
     "option_a": "Permanent",
@@ -1128,19 +1128,19 @@
     "explanation": null
   },
   {
-    "id": 6896,
+    "id": 15796,
     "paper_id": 39,
     "question_text": "In the following question, the first and last parts of the sentence (1 and 6) are given. The rest of the sentence is split into four parts and named A, B, C, and D. These four parts are not given in their proper order. Read the sentence and find out which of the four combinations is correct.\n\n1. The global fashion industry A. shifting toward sustainable fabrics B. is undergoing a transformation C. to reduce their massive D. as more brands are\n\n6. environmental footprint and waste.",
     "option_a": "BDAC",
     "option_b": "DCAB",
     "option_c": "ACBD",
     "option_d": "BACD",
-    "correct_answer": "D",
+    "correct_answer": "A",
     "question_number": 95,
-    "explanation": null
+    "explanation": "The grammatically and logically coherent sequence is 'is undergoing a transformation (B) as more brands are (D) shifting toward sustainable fabrics (A) to reduce their massive (C)', forming BDAC (Option A)."
   },
   {
-    "id": 6897,
+    "id": 15797,
     "paper_id": 39,
     "question_text": "**Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. High above the city, on a tall column, stood the statue of the Happy Prince. The statue was covered with thin leaves of fine gold. It had two bright sapphires for eyes, and a large red ruby shone on the hilt of its sword. The people of the city greatly admired the statue. \"It is as beautiful as a weathercock,\" remarked a Town Councillor who wished to be known for his artistic taste. \"However, it is not quite as useful,\" he added, fearing that others might consider him impractical. A sensible mother pointed towards the statue and said to her little boy, who was crying for the moon, \"Why can't you behave like the Happy Prince? The Happy Prince never cries for anything.\" \"I am glad that someone in the world is completely happy,\" muttered a disappointed man as he looked at the magnificent statue. The Charity Children, dressed in bright scarlet cloaks and clean white pinafores, saw the statue while leaving the cathedral. \"The Happy Prince looks just like an angel,\" they said. \"How do you know what an angel looks like?\" asked the Mathematical Master. \"You have never seen one.\" \"We have seen angels in our dreams,\" replied the children. The Mathematical Master frowned because he did not approve of children dreaming. One night, 11 a little Swallow flew/the city. His friends had already left for Egypt, but he had stayed behind because he was in love with a beautiful Reed. He had met the Reed in the spring while chasing a yellow moth along the river and stopped to speak to her.\n\n---\n\nWhy did the Town Councillor add that the statue was \"not quite as useful\" as a weathercock?",
     "option_a": "He feared that people might regard him as an impractical person.",
@@ -1152,19 +1152,19 @@
     "explanation": null
   },
   {
-    "id": 6898,
+    "id": 15798,
     "paper_id": 39,
     "question_text": "**Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. High above the city, on a tall column, stood the statue of the Happy Prince. The statue was covered with thin leaves of fine gold. It had two bright sapphires for eyes, and a large red ruby shone on the hilt of its sword. The people of the city greatly admired the statue. \"It is as beautiful as a weathercock,\" remarked a Town Councillor who wished to be known for his artistic taste. \"However, it is not quite as useful,\" he added, fearing that others might consider him impractical. A sensible mother pointed towards the statue and said to her little boy, who was crying for the moon, \"Why can't you behave like the Happy Prince? The Happy Prince never cries for anything.\" \"I am glad that someone in the world is completely happy,\" muttered a disappointed man as he looked at the magnificent statue. The Charity Children, dressed in bright scarlet cloaks and clean white pinafores, saw the statue while leaving the cathedral. \"The Happy Prince looks just like an angel,\" they said. \"How do you know what an angel looks like?\" asked the Mathematical Master. \"You have never seen one.\" \"We have seen angels in our dreams,\" replied the children. The Mathematical Master frowned because he did not approve of children dreaming. One night, 11 a little Swallow flew/the city. His friends had already left for Egypt, but he had stayed behind because he was in love with a beautiful Reed. He had met the Reed in the spring while chasing a yellow moth along the river and stopped to speak to her.\n\n---\n\nWhat does the disappointed man's remark about the Happy Prince reveal?",
     "option_a": "He believed that the Prince had overcome every personal difficulty.",
     "option_b": "He wished to possess the wealth displayed upon the golden statue.",
     "option_c": "He assumed that the Prince represented happiness absent from his own life.",
     "option_d": "He doubted whether complete happiness could exist anywhere in the world.",
-    "correct_answer": "D",
+    "correct_answer": "C",
     "question_number": 97,
-    "explanation": null
+    "explanation": "The disappointed man's remark reveals that he projected onto the statue the ideal state of happiness that was missing/absent from his own life (Option C)."
   },
   {
-    "id": 6899,
+    "id": 15799,
     "paper_id": 39,
     "question_text": "**Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. High above the city, on a tall column, stood the statue of the Happy Prince. The statue was covered with thin leaves of fine gold. It had two bright sapphires for eyes, and a large red ruby shone on the hilt of its sword. The people of the city greatly admired the statue. \"It is as beautiful as a weathercock,\" remarked a Town Councillor who wished to be known for his artistic taste. \"However, it is not quite as useful,\" he added, fearing that others might consider him impractical. A sensible mother pointed towards the statue and said to her little boy, who was crying for the moon, \"Why can't you behave like the Happy Prince? The Happy Prince never cries for anything.\" \"I am glad that someone in the world is completely happy,\" muttered a disappointed man as he looked at the magnificent statue. The Charity Children, dressed in bright scarlet cloaks and clean white pinafores, saw the statue while leaving the cathedral. \"The Happy Prince looks just like an angel,\" they said. \"How do you know what an angel looks like?\" asked the Mathematical Master. \"You have never seen one.\" \"We have seen angels in our dreams,\" replied the children. The Mathematical Master frowned because he did not approve of children dreaming. One night, 11 a little Swallow flew/the city. His friends had already left for Egypt, but he had stayed behind because he was in love with a beautiful Reed. He had met the Reed in the spring while chasing a yellow moth along the river and stopped to speak to her.\n\n---\n\nWhy did the Mathematical Master frown at the Charity Children's reply?",
     "option_a": "He thought that their comparison of the statue with an angel was disrespectful.",
@@ -1176,19 +1176,19 @@
     "explanation": null
   },
   {
-    "id": 6900,
+    "id": 15800,
     "paper_id": 39,
     "question_text": "**Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. High above the city, on a tall column, stood the statue of the Happy Prince. The statue was covered with thin leaves of fine gold. It had two bright sapphires for eyes, and a large red ruby shone on the hilt of its sword. The people of the city greatly admired the statue. \"It is as beautiful as a weathercock,\" remarked a Town Councillor who wished to be known for his artistic taste. \"However, it is not quite as useful,\" he added, fearing that others might consider him impractical. A sensible mother pointed towards the statue and said to her little boy, who was crying for the moon, \"Why can't you behave like the Happy Prince? The Happy Prince never cries for anything.\" \"I am glad that someone in the world is completely happy,\" muttered a disappointed man as he looked at the magnificent statue. The Charity Children, dressed in bright scarlet cloaks and clean white pinafores, saw the statue while leaving the cathedral. \"The Happy Prince looks just like an angel,\" they said. \"How do you know what an angel looks like?\" asked the Mathematical Master. \"You have never seen one.\" \"We have seen angels in our dreams,\" replied the children. The Mathematical Master frowned because he did not approve of children dreaming. One night, 11 a little Swallow flew/the city. His friends had already left for Egypt, but he had stayed behind because he was in love with a beautiful Reed. He had met the Reed in the spring while chasing a yellow moth along the river and stopped to speak to her.\n\n---\n\nWhich of the following best describes the irony in the mother's statement to her child?",
     "option_a": "She expects a young child to understand the artistic value of a golden statue.",
     "option_b": "She holds up an unfeeling, inanimate object as a model of perfect emotional behaviour.",
     "option_c": "She praises the Prince's behaviour while ignoring his immense material wealth.",
     "option_d": "She scolds her child for crying while she herself is acting impatiently.",
-    "correct_answer": "D",
+    "correct_answer": "B",
     "question_number": 99,
-    "explanation": null
+    "explanation": "The irony lies in holding up an inanimate, unfeeling statue as a model of emotional restraint for a crying living child (Option B)."
   },
   {
-    "id": 6901,
+    "id": 15801,
     "paper_id": 39,
     "question_text": "**Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. High above the city, on a tall column, stood the statue of the Happy Prince. The statue was covered with thin leaves of fine gold. It had two bright sapphires for eyes, and a large red ruby shone on the hilt of its sword. The people of the city greatly admired the statue. \"It is as beautiful as a weathercock,\" remarked a Town Councillor who wished to be known for his artistic taste. \"However, it is not quite as useful,\" he added, fearing that others might consider him impractical. A sensible mother pointed towards the statue and said to her little boy, who was crying for the moon, \"Why can't you behave like the Happy Prince? The Happy Prince never cries for anything.\" \"I am glad that someone in the world is completely happy,\" muttered a disappointed man as he looked at the magnificent statue. The Charity Children, dressed in bright scarlet cloaks and clean white pinafores, saw the statue while leaving the cathedral. \"The Happy Prince looks just like an angel,\" they said. \"How do you know what an angel looks like?\" asked the Mathematical Master. \"You have never seen one.\" \"We have seen angels in our dreams,\" replied the children. The Mathematical Master frowned because he did not approve of children dreaming. One night, 11 a little Swallow flew/the city. His friends had already left for Egypt, but he had stayed behind because he was in love with a beautiful Reed. He had met the Reed in the spring while chasing a yellow moth along the river and stopped to speak to her.\n\n---\n\nWhich inference can most reasonably be drawn from the Swallow's decision to remain behind?",
     "option_a": "He had been separated from his companions while searching for food near 12 the river.",

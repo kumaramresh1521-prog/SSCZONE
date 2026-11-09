@@ -1,902 +1,1202 @@
 [
   {
-    "question_number": 1,
+    "id": 16302,
+    "paper_id": 45,
     "question_text": "If P + Q means P is the brother of Q, P – Q means P is the mother of Q, and P × Q means P is the sister of Q. Which of the following means M is the maternal uncle of R?",
     "option_a": "M – K – R",
     "option_b": "M – R + K",
     "option_c": "M + K × R",
     "option_d": "M + K – R",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 1,
+    "explanation": null
   },
   {
-    "question_number": 2,
+    "id": 16303,
+    "paper_id": 45,
     "question_text": "How many such T are there in the sequence which are immediately preceded by P but not immediately followed by R? Sequence: PTQTPTRPTPSTRPTPQT",
     "option_a": "1",
     "option_b": "3",
     "option_c": "2",
     "option_d": "4",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 2,
+    "explanation": null
   },
   {
-    "question_number": 3,
+    "id": 16304,
+    "paper_id": 45,
     "question_text": "In a group of five members, P, Q, R, S, and T, Q is the daughter of P. R is the son of Q. S is the brother of P. T is the mother of S. How is T related to R?",
     "option_a": "Maternal Great-Grandmother",
     "option_b": "Paternal grandmother Grandmother",
     "option_c": "Mother",
     "option_d": "Paternal Aunt",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 3,
+    "explanation": null
   },
   {
-    "question_number": 4,
+    "id": 16305,
+    "paper_id": 45,
     "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 8 6 4 5 9 3 2 3 ? 20 18 6",
     "option_a": "3",
     "option_b": "2",
     "option_c": "5",
     "option_d": "7",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 4,
+    "explanation": null
   },
   {
-    "question_number": 5,
+    "id": 16306,
+    "paper_id": 45,
     "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 20 45 35 14 30 25 6 15 10 12 30 ?",
     "option_a": "14",
     "option_b": "20",
     "option_c": "24",
     "option_d": "36",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 5,
+    "explanation": null
   },
   {
-    "question_number": 6,
+    "id": 16307,
+    "paper_id": 45,
     "question_text": "Find the alternative number in the series. 7, 4, 49, 9, 441, 16, 4851, 25, ?",
     "option_a": "67903",
     "option_b": "63063",
     "option_c": "74890",
     "option_d": "68909",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 6,
+    "explanation": null
   },
   {
-    "question_number": 7,
+    "id": 16308,
+    "paper_id": 45,
     "question_text": "Using the codes given below, answer the question that follows.\n\n1. M % N means M is the son of N.\n\n2. M @ N means M is the sister of N.\n\n3. M $ N means M is the father of N. Which of the following expressions given in the options shows the relation that E is the paternal grandfather of C?",
     "option_a": "C % B @ F $ E",
     "option_b": "E $ B $ C @ F",
     "option_c": "E % B $ F @ C",
     "option_d": "C @ B % F $ E",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 7,
+    "explanation": null
   },
   {
-    "question_number": 8,
+    "id": 16309,
+    "paper_id": 45,
     "question_text": "The roll number of a specific batch follows the rule: The sum of the first two digits must equal the sum of the last two digits. Find the inconsistent roll number.",
     "option_a": "63482109",
     "option_b": "57124939",
     "option_c": "92317429",
     "option_d": "48512968",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 8,
+    "explanation": null
   },
   {
-    "question_number": 9,
+    "id": 16310,
+    "paper_id": 45,
     "question_text": "Select the odd number pair from the given alternatives.",
     "option_a": "41, 1722",
     "option_b": "33, 1122",
     "option_c": "22, 504",
     "option_d": "15, 240",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 9,
+    "explanation": null
   },
   {
-    "question_number": 10,
+    "id": 16311,
+    "paper_id": 45,
     "question_text": "Read the question carefully and choose the most appropriate option. You are the head of a housing society. Children are playing cricket in the parking area, and some residents are worried about damage to their vehicles. What would you do?",
     "option_a": "Ban all outdoor games immediately without consulting any residents first.",
     "option_b": "Ignore the complaints and allow the situation to continue unchanged.",
     "option_c": "Avoid involvement because disagreements among residents are quite common.",
     "option_d": "Arrange a meeting and identify a safer area for games to reduce damage.",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 10,
+    "explanation": null
   },
   {
-    "question_number": 11,
+    "id": 16312,
+    "paper_id": 45,
     "question_text": "Choose the best alternative. α1 : β4 :: γ9 :?",
     "option_a": "δ12",
     "option_b": "δ16",
     "option_c": "ϵ16",
     "option_d": "δ10",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 11,
+    "explanation": null
   },
   {
-    "question_number": 12,
+    "id": 16313,
+    "paper_id": 45,
     "question_text": "What should come in place of the question mark (?) in the following analogy? MARKET : LZQJDS :: BRIDGE : ?",
     "option_a": "AQHCFD",
     "option_b": "AQHCFE",
     "option_c": "AQHCFW",
     "option_d": "BQHCFD",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 12,
+    "explanation": null
   },
   {
-    "question_number": 13,
+    "id": 16314,
+    "paper_id": 45,
     "question_text": "If the expression 24 ÷ 6 × 3 + 4 − 2 = X is computed, what happens to the value of X if the division sign is replaced by multiplication?",
     "option_a": "Increases by 280",
     "option_b": "Decreases by",
     "option_c": "Increases by 416",
     "option_d": "Increases by 420",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 13,
+    "explanation": null
   },
   {
-    "question_number": 14,
+    "id": 16315,
+    "paper_id": 45,
     "question_text": "Read the statement carefully and assume it to be true. Then examine the two conclusions given below it and decide which conclusion(s), if any, logically follow from the statement.\n\nStatement: In a one-day cricket match, the total runs scored by a team were 200, out of which spinners made 150.\n\nConclusions: 2\n\nI. The team had 75% spinners.\n\nII. Fast bowlers outperformed the spinners.",
     "option_a": "Only Conclusion I follows",
     "option_b": "Only Conclusion II follows",
     "option_c": "Both Conclusions I and II follow",
     "option_d": "Neither conclusion I nor II follows",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 14,
+    "explanation": null
   },
   {
-    "question_number": 15,
+    "id": 16316,
+    "paper_id": 45,
     "question_text": "In the following question a statement is given followed by some assumptions. Read the assumptions carefully and choose the appropriate option.\n\nStatement: Before finalizing the budget for the community project, please review all expenditure estimates. Assumptions:\n\nI. The estimates may contain errors.\n\nII. A realistic budget is important for the project.",
     "option_a": "Only I is implicit.",
     "option_b": "Only II is implicit.",
     "option_c": "Neither I nor II is implicit.",
     "option_d": "Both I and II are implicit.",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 15,
+    "explanation": null
   },
   {
-    "question_number": 16,
+    "id": 16317,
+    "paper_id": 45,
     "question_text": "If '★' means +, '△' means -, '♦' means ×, and '○' means ÷, find [(144 ○ 12) ♦ (7 ★ 5)] △ [(18 ♦\n\n2) ★ (36 ○ 6)].",
     "option_a": "84",
     "option_b": "96",
     "option_c": "102",
     "option_d": "108",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 16,
+    "explanation": null
   },
   {
-    "question_number": 17,
+    "id": 16318,
+    "paper_id": 45,
     "question_text": "Read the given conditions carefully and determine the appropriate outcome for the case provided. If any exception applies, identify the authority to whom the case should be referred. Criteria for Project Lead Promotion:\n\n(i) Must have led at least 2 projects.\n\n(ii) Must have an 'Excellent' performance rating. Exceptions: Exception",
     "option_a": "Promotion to be approved",
     "option_b": "Promotion to be denied",
     "option_c": "Refer the case to the Operations Head",
     "option_d": "Case to be referred to the HR Committee",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 17,
+    "explanation": null
   },
   {
-    "question_number": 18,
+    "id": 16319,
+    "paper_id": 45,
     "question_text": "In a certain code language, \"AIRCRAFT\" is written as \"1irCRA6T.\" How will \"BIRTHDAY\" be written in the same code language?",
     "option_a": "2irTHD1Y",
     "option_b": "2iRtHD1Y",
     "option_c": "2irTHdLY",
     "option_d": "2IrThD1Y",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 18,
+    "explanation": null
   },
   {
-    "question_number": 19,
+    "id": 16320,
+    "paper_id": 45,
     "question_text": "In the following question two statements are given and these statements are followed by two conclusions. You have to take the given two statements to be true even if they seem to be at variance from commonly known facts. Read the conclusions and then decide which of the given conclusions logically follows from the two given statements.\n\nStatements: Some mobiles are gadgets. Some gadgets are electronics.\n\nConclusions:\n\nI. All electronics are gadgets.\n\nII. Some electronics are gadget",
     "option_a": "Neither conclusion I nor conclusion II follows",
     "option_b": "Only conclusion II follows",
     "option_c": "Only conclusion I follows",
     "option_d": "Both conclusions I and II follow",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 19,
+    "explanation": null
   },
   {
-    "question_number": 20,
+    "id": 16321,
+    "paper_id": 45,
     "question_text": "In the following question, three statements are given followed by three conclusions. Consider the statements to be true even if they differ from commonly known facts. Read the conclusions carefully and decide which of the conclusions logically follow from the given statements.\n\nStatements: Some cats are dogs. All dogs are animals. No animal is a plant.\n\nConclusions: 3\n\nI. Some cats are animals.\n\nII. All cats are animals.\n\nIII. Some animals are not plants.",
     "option_a": "Both conclusions I and III follow",
     "option_b": "Both conclusions II and III follow",
     "option_c": "Both conclusions I and II follow",
     "option_d": "All conclusions follow",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 20,
+    "explanation": null
   },
   {
-    "question_number": 21,
+    "id": 16322,
+    "paper_id": 45,
     "question_text": "Direction: Choose the best course of action. A financial institution observes unusual transaction patterns that may indicate emerging fraud techniques, although no confirmed losses have occurred.",
     "option_a": "Wait for confirmed financial losses before investigating further patterns.",
     "option_b": "Publicly announce fraud concerns before conducting any internal verification.",
     "option_c": "Conduct preventive investigations and strengthen monitoring systems proactively.",
     "option_d": "Restrict all customer transactions until the source of concern is identified.",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 21,
+    "explanation": null
   },
   {
-    "question_number": 22,
+    "id": 16323,
+    "paper_id": 45,
     "question_text": "In the following question, three statements are given, followed by two conclusions. Consider the statements to be true even if they differ from commonly known facts. Read the conclusions carefully and decide which of the conclusions logically follow from the given statements.\n\nStatements: Only a few coats are shirts. Some shirts are pants. No pants are socks.\n\nConclusions:\n\nI. All coats can be shirts is a possibility.\n\nII. All shirts can be coats is a possibility.",
     "option_a": "Only conclusion I follows",
     "option_b": "Either conclusion I or conclusion II follows",
     "option_c": "Both conclusions I and II follow",
     "option_d": "Only conclusion II follows",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 22,
+    "explanation": null
   },
   {
-    "question_number": 23,
+    "id": 16324,
+    "paper_id": 45,
     "question_text": "Study the pattern in the given series and find the next set of letters in the series. LOM, ISJ, FWG, CAD, ?",
     "option_a": "ZEA",
     "option_b": "VDA",
     "option_c": "VEA",
     "option_d": "VCB",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 23,
+    "explanation": null
   },
   {
-    "question_number": 24,
+    "id": 16325,
+    "paper_id": 45,
     "question_text": "Select the option that is related to the third word in the same way as the second word is related to the first word. (The words must be considered as meaningful English words and must not be related to each other based on the number of letters/number of consonants/vowels in the word.) Theodolite : Surveyor :: Stethoscope : ?",
     "option_a": "Physician",
     "option_b": "Engineer",
     "option_c": "Chemist",
     "option_d": "Astronomer",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 24,
+    "explanation": null
   },
   {
-    "question_number": 25,
+    "id": 16326,
+    "paper_id": 45,
     "question_text": "In each of the following questions, four options have been given, of which three are alike in some way and one is different. Choose the odd one out.",
     "option_a": "Mexico - Peso",
     "option_b": "Philippines - Peso",
     "option_c": "Colombia - Peso",
     "option_d": "Brazil - Peso",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 25,
+    "explanation": null
   },
   {
-    "question_number": 26,
+    "id": 16327,
+    "paper_id": 45,
     "question_text": "The \"Skill India Mission\" aims to empower the youth with relevant skills. Which of the following is a key initiative or program under this mission?",
     "option_a": "National Rural Employment Guarantee Scheme (NREGS)",
     "option_b": "Startup India Initiative",
     "option_c": "Pradhan Mantri Kaushal Vikas Yojana (PMKVY)",
     "option_d": "Atal Innovation Mission (AIM)",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 26,
+    "explanation": null
   },
   {
-    "question_number": 27,
+    "id": 16328,
+    "paper_id": 45,
     "question_text": "The \"National Food Security Act (NFSA), 2013\" has a primary objective related to food and nutrition. Which of the following best describes this objective?",
     "option_a": "To promote organic farming practices across the country.",
     "option_b": "To ensure foodgrain procurement at Minimum Support Price (MSP) for all crops.",
     "option_c": "To provide subsidized foodgrains to a significant proportion of the population.",
     "option_d": "To encourage the export of surplus foodgrains to boost the agricultural economy.",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 27,
+    "explanation": null
   },
   {
-    "question_number": 28,
+    "id": 16329,
+    "paper_id": 45,
     "question_text": "BFI, the governing body for basketball in India, organizes which national-level championship annually?",
     "option_a": "India Slam League",
     "option_b": "National Club Basketball Cup",
     "option_c": "National Basketball Championship",
     "option_d": "National Dribble League 4 AWARENESS",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 28,
+    "explanation": null
   },
   {
-    "question_number": 29,
+    "id": 16330,
+    "paper_id": 45,
     "question_text": "Where did the conclusive match of the 2016 Kabaddi World Cup take place?",
     "option_a": "Ahmedabad",
     "option_b": "Mumbai",
     "option_c": "Patna",
     "option_d": "Jaipur",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 29,
+    "explanation": null
   },
   {
-    "question_number": 30,
+    "id": 16331,
+    "paper_id": 45,
     "question_text": "In the Third Five-Year Plan, which trade policy approach was primarily adopted to enhance the nation's foreign exchange earnings?",
     "option_a": "Promotion of import-intensive industries",
     "option_b": "Trade liberalization",
     "option_c": "Implementation of currency devaluation measures",
     "option_d": "Export promotion",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 30,
+    "explanation": null
   },
   {
-    "question_number": 31,
+    "id": 16332,
+    "paper_id": 45,
     "question_text": "Which of the following changes the Bharatiya Sakshya Adhiniyam (BSA), introduced in relation to electronic evidence, compared to the Indian Evidence Act?",
     "option_a": "Rejects metadata as hearsay",
     "option_b": "Recognizes electronic records as equivalent to oral statements",
     "option_c": "Only printed emails are admissible",
     "option_d": "Broadens scope to include blockchain, cloud logs, and forensic audit trails",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 31,
+    "explanation": null
   },
   {
-    "question_number": 32,
+    "id": 16333,
+    "paper_id": 45,
     "question_text": "As of May 2025, the Vice Chairperson of NITI Aayog and Chairman of the Economic Advisory Council to the Prime Minister (EACPM) is ________.",
     "option_a": "Suman Bery",
     "option_b": "Bibek Debroy",
     "option_c": "Rajiv Kumar",
     "option_d": "Arvind Panagariya",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 32,
+    "explanation": null
   },
   {
-    "question_number": 33,
+    "id": 16334,
+    "paper_id": 45,
     "question_text": "Which of the following pairs is INCORRECTLY matched about the four Vedas?",
     "option_a": "Rigveda - Hymns of praises",
     "option_b": "Yajurveda - Rituals and sacrificial prayers",
     "option_c": "Samaveda - Philosophical teachings",
     "option_d": "Atharvaveda - Spells to ward off evils and diseases",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 33,
+    "explanation": null
   },
   {
-    "question_number": 34,
+    "id": 16335,
+    "paper_id": 45,
     "question_text": "Which is NOT a major thermal power station in India?",
     "option_a": "Vijayawada",
     "option_b": "Nashik",
     "option_c": "Sabarmati",
     "option_d": "Tarapur",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 34,
+    "explanation": null
   },
   {
-    "question_number": 35,
+    "id": 16336,
+    "paper_id": 45,
     "question_text": "Which of the following was a key feature of the Regulating Act of 1773?",
     "option_a": "It granted complete autonomy to the East India Company.",
     "option_b": "It made the Governor of Bombay the supreme authority in India.",
     "option_c": "It limited the British Parliament’s power/Company affairs.",
     "option_d": "It introduced Parliamentary supervision/the Company’s administration.",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 35,
+    "explanation": null
   },
   {
-    "question_number": 36,
+    "id": 16337,
+    "paper_id": 45,
     "question_text": "According to Article 64 of the Indian Constitution, the Vice-President of India is the ex officio Chairman of the:",
     "option_a": "Lok Sabha",
     "option_b": "Legislative Assembly",
     "option_c": "Council of States",
     "option_d": "Council of Ministers",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 36,
+    "explanation": null
   },
   {
-    "question_number": 37,
+    "id": 16338,
+    "paper_id": 45,
     "question_text": "What is the SI unit of magnetic flux density?",
     "option_a": "Tesla",
     "option_b": "Weber",
     "option_c": "Henry",
     "option_d": "Gauss",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 37,
+    "explanation": null
   },
   {
-    "question_number": 38,
+    "id": 16339,
+    "paper_id": 45,
     "question_text": "Which Indian sportsperson is famously known as the \"Payyoli Express\"?",
     "option_a": "Hima Das",
     "option_b": "P.T. Usha",
     "option_c": "Anju Bobby",
     "option_d": "Shiny Abraham George",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 38,
+    "explanation": null
   },
   {
-    "question_number": 39,
+    "id": 16340,
+    "paper_id": 45,
     "question_text": "What happened to mature Harappan culture after around 1900 BC?",
     "option_a": "Instant, total",
     "option_b": "Faded peripheral extinction survival",
     "option_c": "Core urban",
     "option_d": "Shift to metal expansion weaponry",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 39,
+    "explanation": null
   },
   {
-    "question_number": 40,
+    "id": 16341,
+    "paper_id": 45,
     "question_text": "Which premier agency does S. Somanath continue to lead, focusing on the 2026 uncrewed Gaganyaan flight tests?",
     "option_a": "DRDO (Defence Research and Development Organisation)",
     "option_b": "ISRO (Indian Space Research Organisation)",
     "option_c": "BARC (Bhabha Atomic Research Centre)",
     "option_d": "CSIR (Council of Scientific and Industrial Research)",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 40,
+    "explanation": null
   },
   {
-    "question_number": 41,
+    "id": 16342,
+    "paper_id": 45,
     "question_text": "The Mozambique Channel is located between which two places?",
     "option_a": "Madagascar and",
     "option_b": "Indonesia and Mozambique Malaysia",
     "option_c": "Oman and Iran",
     "option_d": "India and Sri Lanka",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 41,
+    "explanation": null
   },
   {
-    "question_number": 42,
+    "id": 16343,
+    "paper_id": 45,
     "question_text": "A police officer receives a warrant to arrest “R”. After conducting a reasonable inquiry and acting in good faith, he arrests S, believing S to be R. Later it is discovered that S was entirely innocent, and the warrant never applied to him. Which of the following is the most accurate legal position under the Bharatiya Nyaya Sanhita, 2023 in India?",
     "option_a": "The officer is liable because wrongful arrest always constitutes an offence.",
     "option_b": "The officer is protected only if the court issuing the warrant has jurisdiction.",
     "option_c": "The officer is protected because of a mistake of fact made in good faith.",
     "option_d": "The officer is liable because identity mistakes are mistakes of law.",
-    "correct_answer": "A"
+    "correct_answer": "C",
+    "question_number": 42,
+    "explanation": "Under BNS Sec 14 / IPC Sec 76, acts done under a bona fide mistake of fact in good faith are protected from criminal liability."
   },
   {
-    "question_number": 43,
+    "id": 16344,
+    "paper_id": 45,
     "question_text": "The concept of a “Union of States” under Article 1 of the Constitution of India implies that:",
     "option_a": "States possess a constitutional right to secede",
     "option_b": "The Indian federation originated through agreement among sovereign states.",
     "option_c": "The Union is indestructible, though States may be reorganized.",
     "option_d": "States have equal sovereignty with the union.",
-    "correct_answer": "A"
+    "correct_answer": "C",
+    "question_number": 43,
+    "explanation": "Under Article 1, India is an indestructible Union of destructible states; states have no constitutional right to secede."
   },
   {
-    "question_number": 44,
+    "id": 16345,
+    "paper_id": 45,
     "question_text": "The economic reforms initiated in 1991 promoted which of the following policy combinations?",
     "option_a": "Industrial licensing and import restrictions",
     "option_b": "Market based pricing and industrial dereservation",
     "option_c": "Public ownership and centralised price fixation",
     "option_d": "Export controls and mandatory production quotas",
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "question_number": 44,
+    "explanation": "The 1991 economic reforms promoted market-based pricing, industrial deregulation, and industrial dereservation."
   },
   {
-    "question_number": 45,
+    "id": 16346,
+    "paper_id": 45,
     "question_text": "India approached which institution for financial assistance during the 1991 economic crisis?",
     "option_a": "World Trade Organisation",
     "option_b": "European Central Bank",
     "option_c": "International Monetary Fund",
     "option_d": "Asian Development Bank",
-    "correct_answer": "A"
+    "correct_answer": "C",
+    "question_number": 45,
+    "explanation": "India approached the International Monetary Fund (IMF) and World Bank for balance-of-payments bailout in 1991."
   },
   {
-    "question_number": 46,
+    "id": 16347,
+    "paper_id": 45,
     "question_text": "Mortality, fertility, and migration together primarily determine which of the following characteristics of a population?",
     "option_a": "Inflation trends and price levels",
     "option_b": "Population size and composition",
     "option_c": "Gross domestic product growth",
     "option_d": "Fiscal stability and public expenditure",
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "question_number": 46,
+    "explanation": "Fertility, mortality, and migration are the three primary demographic determinants of population size and composition."
   },
   {
-    "question_number": 47,
+    "id": 16348,
+    "paper_id": 45,
     "question_text": "Which department is primarily responsible for promoting and coordinating Ease of Doing Business (EoDB) reforms in India?",
     "option_a": "Department for Promotion of Industry and Internal Trade under the Ministry of Commerce and Industry",
     "option_b": "Department of Legal Affairs under the Ministry of Law and Justice",
     "option_c": "Department of Economic Affairs under the Ministry of Finance",
     "option_d": "Development Monitoring and Evaluation Office under NITI Aayog",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 47,
+    "explanation": null
   },
   {
-    "question_number": 48,
+    "id": 16349,
+    "paper_id": 45,
     "question_text": "Which of the following was a specific, monitorable social target set out in India's Eleventh Five-Year Plan (2007-2012)?",
     "option_a": "Reducing child malnutrition",
     "option_b": "Expanding defence production",
     "option_c": "Increasing customs revenue",
     "option_d": "Privatising public enterprises",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 48,
+    "explanation": null
   },
   {
-    "question_number": 49,
+    "id": 16350,
+    "paper_id": 45,
     "question_text": "Which of the following leaders played a major organisational role in the Kheda Satyagraha?",
     "option_a": "Motilal Nehru",
     "option_b": "Chittaranjan Das",
     "option_c": "Vallabhbhai Patel",
     "option_d": "Subhas Chandra Bose",
-    "correct_answer": "A"
+    "correct_answer": "C",
+    "question_number": 49,
+    "explanation": "Sardar Vallabhbhai Patel played the major organizational leadership role alongside Mahatma Gandhi in the 1918 Kheda Satyagraha."
   },
   {
-    "question_number": 50,
+    "id": 16351,
+    "paper_id": 45,
     "question_text": "In a pond ecosystem, pesticide exposure causes a substantial decline in the population of fish that help regulate aquatic insect populations. After some time, the mosquito population increases rapidly. What is the most likely ecological explanation for this increase?",
     "option_a": "Reduced competition among mosquito larvae for aquatic resources",
     "option_b": "Increased reproductive activity of mosquitoes due to pesticide exposure",
     "option_c": "Reduced predation on mosquito larvae following the decline in fish population",
     "option_d": "Decreased water temperature leading to greater mosquito survival",
-    "correct_answer": "A"
+    "correct_answer": "C",
+    "question_number": 50,
+    "explanation": "Fish are natural predators of mosquito larvae; their decline directly reduces predation pressure, causing mosquito populations to surge."
   },
   {
-    "question_number": 51,
+    "id": 16352,
+    "paper_id": 45,
     "question_text": "The base of a right prism is a triangle with sides 5 cm, 12 cm, and 13 cm. The height of the prism is 9 cm. Find the lateral surface area.",
     "option_a": "270 cm²",
     "option_b": "380 cm²",
     "option_c": "420 cm²",
     "option_d": "440 cm²",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 51,
+    "explanation": null
   },
   {
-    "question_number": 52,
+    "id": 16353,
+    "paper_id": 45,
     "question_text": "In a equilateral triangle, the centroid divides each median in a 2:1 ratio. What is the distance between the centroid and the ninepoint center in an equilateral triangle?",
     "option_a": "Zero",
     "option_b": "One-third of the circumradius",
     "option_c": "Equal to the circumradius",
     "option_d": "Half the circumradius",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 52,
+    "explanation": null
   },
   {
-    "question_number": 53,
+    "id": 16354,
+    "paper_id": 45,
     "question_text": "Find the smallest square number that is divisible by each of the numbers 4, 9, and 10.",
     "option_a": "500",
     "option_b": "900",
     "option_c": "600",
     "option_d": "700",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 53,
+    "explanation": null
   },
   {
-    "question_number": 54,
+    "id": 16355,
+    "paper_id": 45,
     "question_text": "A and B invest in a business such that A's capital is used for 7 months and B's for 9 months. If the profit is shared in the ratio 7 : 10 and A's investment is ₹1,800 less than B's, find the total capital invested by both.",
     "option_a": "₹38,230",
     "option_b": "₹34,200",
     "option_c": "₹27,220",
     "option_d": "₹44,100",
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "question_number": 54,
+    "explanation": "Profit ratio (C_A*7)/(C_B*9) = 7/10 => C_A/C_B = 9/10; difference = 1 unit = ₹1,800, so total capital = 19 * 1800 = ₹34,200."
   },
   {
-    "question_number": 55,
+    "id": 16356,
+    "paper_id": 45,
     "question_text": "Find the amount after 3 years if ₹12,000 is invested at 15% per annum compound interest.",
     "option_a": "₹18250.50",
     "option_b": "₹17250.50",
     "option_c": "₹19250.50",
     "option_d": "₹16250.50",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 55,
+    "explanation": null
   },
   {
-    "question_number": 56,
+    "id": 16357,
+    "paper_id": 45,
     "question_text": "The ratio of the number of sides of two regular polygons is 1:2 and the ratio of their interior angles is 3:\n\n4. Find the number of sides of these polygons.",
     "option_a": "15 sides and 30",
     "option_b": "3 sides and 6 sides sides",
     "option_c": "5 sides and 10",
     "option_d": "7 sides and 14 sides sides",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 56,
+    "explanation": null
   },
   {
-    "question_number": 57,
+    "id": 16358,
+    "paper_id": 45,
     "question_text": "If the perimeter of a semicircle is 47.1 cm, what is its approximate diameter? (Take π =\n\n3.14)",
     "option_a": "15.4 cm",
     "option_b": "17.5 cm",
     "option_c": "16.8 cm",
     "option_d": "18.3 cm",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 57,
+    "explanation": null
   },
   {
-    "question_number": 58,
+    "id": 16359,
+    "paper_id": 45,
     "question_text": "A conical tent of radius 7 m and height 24 m is to be covered using cloth of width 4 m. Find the approximate length of cloth required. Take π= 22 7",
     "option_a": "138 m",
     "option_b": "118 m",
     "option_c": "128 m",
     "option_d": "148 m",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 58,
+    "explanation": null
   },
   {
-    "question_number": 59,
+    "id": 16360,
+    "paper_id": 45,
     "question_text": "A man sells an article at a loss of 10%. Had he bought it for 20% less and sold it for ₹55 more, he could have gained 40%. What is the cost price?",
     "option_a": "₹250",
     "option_b": "₹280",
     "option_c": "₹200",
     "option_d": "₹260",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 59,
+    "explanation": null
   },
   {
-    "question_number": 60,
+    "id": 16361,
+    "paper_id": 45,
     "question_text": "The producer makes a profit of 15% by selling the product to the wholesaler. The wholesaler sells it to the retailer making 10% profit. The retailer sells it to the consumer for ₹12,903 making a profit of 2%. Find the cost of production of the product.",
     "option_a": "₹20,000",
     "option_b": "₹40,000",
     "option_c": "₹10,000",
     "option_d": "₹60,000",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 60,
+    "explanation": null
   },
   {
-    "question_number": 61,
+    "id": 16362,
+    "paper_id": 45,
     "question_text": "In a triangle, the sides are 100, 150 and z units. How many integer values are possible for z?",
     "option_a": "161",
     "option_b": "199",
     "option_c": "179",
     "option_d": "130",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 61,
+    "explanation": null
   },
   {
-    "question_number": 62,
+    "id": 16363,
+    "paper_id": 45,
     "question_text": "Points A and B are on the same side of a tower. The angles of elevation of the top of the tower from A and B are 45° and 60° respectively. The approximate distance between A and B is 40 m. Find the height of the tower(Use √3 = 1.732)",
     "option_a": "99 m",
     "option_b": "95 m",
     "option_c": "85 m",
     "option_d": "90 m",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 62,
+    "explanation": null
   },
   {
-    "question_number": 63,
+    "id": 16364,
+    "paper_id": 45,
     "question_text": "What is the value of 8 cos² 30°+4 sin² 45°−3cosec260° ? 2 tan² 60°−6 cosec 30°",
     "option_a": "0",
     "option_b": "−2",
     "option_c": "1",
     "option_d": "2 3",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 63,
+    "explanation": null
   },
   {
-    "question_number": 64,
+    "id": 16365,
+    "paper_id": 45,
     "question_text": "A solid sphere of radius 10 cm is melted and recast into small cones, each with a radius of\n\n2.5 cm and a height of 8 cm. How many cones can be formed?",
     "option_a": "20",
     "option_b": "40",
     "option_c": "60",
     "option_d": "80",
-    "correct_answer": "B"
+    "correct_answer": "D",
+    "question_number": 64,
+    "explanation": "Volume of sphere / volume of cone = [(4/3)*pi*10^3] / [(1/3)*pi*(2.5)^2*8] = 4000 / 50 = 80 cones."
   },
   {
-    "question_number": 65,
+    "id": 16366,
+    "paper_id": 45,
     "question_text": "In triangle ABC, D and E lie on AB and AC such that DE is parallel to BC. If AD: DB = 5: 3 and AE = 15 cm, find AC.",
     "option_a": "15 cm",
     "option_b": "18 cm",
     "option_c": "24 cm",
     "option_d": "27 cm",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 65,
+    "explanation": null
   },
   {
-    "question_number": 66,
+    "id": 16367,
+    "paper_id": 45,
     "question_text": "What is the value of 9992 - 9982?",
     "option_a": "1995",
     "option_b": "1997",
     "option_c": "1999",
     "option_d": "2001",
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "question_number": 66,
+    "explanation": "999^2 - 998^2 = (999 - 998)(999 + 998) = 1 * 1997 = 1997."
   },
   {
-    "question_number": 67,
+    "id": 16368,
+    "paper_id": 45,
     "question_text": "A company borrowed ₹10,00,000. Onefourth of the loan was repaid after 4 years and another one-third of the original loan after 7 years. The remaining principal was cleared after 10 years. If the simple interest rate was 9% per annum, calculate the total interest paid.",
     "option_a": "₹6,75,000",
     "option_b": "₹6,60,000",
     "option_c": "₹6,20,000",
     "option_d": "₹6,00,000",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 67,
+    "explanation": null
   },
   {
-    "question_number": 68,
+    "id": 16369,
+    "paper_id": 45,
     "question_text": "If tanA = m and A is an acute angle, what is the value of cosA?",
     "option_a": "m",
     "option_b": "1 √1+m² √1+m²",
     "option_c": "√1 + m²",
     "option_d": "1−m √1+m²",
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "question_number": 68,
+    "explanation": "tan A = m/1 => adjacent = 1, hypotenuse = sqrt(1 + m^2), therefore cos A = 1/sqrt(1 + m^2)."
   },
   {
-    "question_number": 69,
+    "id": 16370,
+    "paper_id": 45,
     "question_text": "A tank is connected to 15 pipes. Some of these are inlet pipes, while the remaining are outlet pipes. An inlet pipe alone can fill the tank in 8 hrs. On the other hand, an outlet pipe alone can empty the tank in 6 hrs. The tank is emptied in 6 hrs if all the pipes are opened simultaneously when the tank is exactly full. Find out how many of the pipes are outlet pipes.",
     "option_a": "5",
     "option_b": "6",
     "option_c": "7",
     "option_d": "8",
-    "correct_answer": "A"
+    "correct_answer": "C",
+    "question_number": 69,
+    "explanation": "Net emptying rate: x/8 - (15-x)/6 = -1/6 => 3x - 4(15-x) = -4 => 7x = 56 => x = 8 inlets, so outlet pipes = 15 - 8 = 7."
   },
   {
-    "question_number": 70,
+    "id": 16371,
+    "paper_id": 45,
     "question_text": "A cistern is initially empty. Inlet pipes A and B fill it at constant rates of 1 and 1 of the 12 8 cistern per hour, respectively, while outlet pipe C empties it at a constant rate of 1 per hour. Sumeet opens pipes A and B at time zero. Under his original plan, pipe C is programmed to start instantly when the cistern reaches 50%, and Sumeet returns exactly at the moment the cistern becomes completely full. However, due to a malfunction, pipe C starts instantly when the cistern is 1 full instead. All active pipes run continuously and simultaneously, and the cistern level always stays between 0% and 100%. When Sumeet returns at the originally planned time and stops all pipes, what percentage of the cistern is filled?",
     "option_a": "75%",
     "option_b": "80%",
     "option_c": "85%",
     "option_d": "90%",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 70,
+    "explanation": null
   },
   {
-    "question_number": 71,
+    "id": 16372,
+    "paper_id": 45,
     "question_text": "Evaluate: sin² 25°+ sin² 65°",
     "option_a": "√3",
     "option_b": "0 2",
     "option_c": "2",
     "option_d": "1",
-    "correct_answer": "A"
+    "correct_answer": "D",
+    "question_number": 71,
+    "explanation": "sin^2 65° = cos^2 25°, hence sin^2 25° + sin^2 65° = sin^2 25° + cos^2 25° = 1."
   },
   {
-    "question_number": 72,
+    "id": 16373,
+    "paper_id": 45,
     "question_text": "If y+ 1 y= 17 , find the value of y³ + y³ 1 .",
     "option_a": "4913",
     "option_b": "4862",
     "option_c": "4964",
     "option_d": "4896",
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "question_number": 72,
+    "explanation": "y^3 + 1/y^3 = (y + 1/y)^3 - 3(y + 1/y) = 17^3 - 3(17) = 4913 - 51 = 4862."
   },
   {
-    "question_number": 73,
+    "id": 16374,
+    "paper_id": 45,
     "question_text": "If a + b = 22 and ab = 85, evaluate a² + b².",
     "option_a": "308",
     "option_b": "314",
     "option_c": "326",
     "option_d": "382",
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "question_number": 73,
+    "explanation": "a^2 + b^2 = (a + b)^2 - 2ab = 22^2 - 2(85) = 484 - 170 = 314."
   },
   {
-    "question_number": 74,
+    "id": 16375,
+    "paper_id": 45,
     "question_text": "A solid regular hexagonal prism has a base side length of 5 m and a height of 12 m. All of its outer surfaces (including the top and bottom bases) are painted at a rate of Rs. 20 per m². Find the total painting cost\n\n(approximately). [Take √3 ≈1.732 ]",
     "option_a": "Rs. 9798",
     "option_b": "Rs. 8342",
     "option_c": "Rs. 9000",
     "option_d": "Rs. 8073",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 74,
+    "explanation": null
   },
   {
-    "question_number": 75,
+    "id": 16376,
+    "paper_id": 45,
     "question_text": "If √(a+ √b) = √x+ √y , where a = 5, b = 21, and x, y are rational numbers, determine the value of x + y.",
     "option_a": "25",
     "option_b": "10",
     "option_c": "5",
     "option_d": "21",
-    "correct_answer": "A"
+    "correct_answer": "C",
+    "question_number": 75,
+    "explanation": "Squaring gives a + sqrt(b) = (x + y) + 2*sqrt(xy); equating rational parts gives x + y = a = 5."
   },
   {
-    "question_number": 76,
+    "id": 16377,
+    "paper_id": 45,
     "question_text": "Rearrange the parts of the sentence in the correct order. Despite the abstract nature of quantum mechanics, P. mathematical formulations such as Hilbert spaces and wave functions Q. to make remarkably accurate predictions R. provide a rigorous framework S. about the behaviour of subatomic particles",
     "option_a": "PRQS",
     "option_b": "PSQR",
     "option_c": "RPQS",
     "option_d": "QPRS",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 76,
+    "explanation": null
   },
   {
-    "question_number": 77,
+    "id": 16378,
+    "paper_id": 45,
     "question_text": "Choose the correct transformation of the sentence into direct speech. I told the children not to stay out too late.",
     "option_a": "I said, \"Don't stay out too late, children.\"",
     "option_b": "I said, \"Don't stay out late, children.\"",
     "option_c": "I told, \"You can't stay out too late, children.\"",
     "option_d": "I said, \"Stay out too late, children.\"",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 77,
+    "explanation": null
   },
   {
-    "question_number": 78,
+    "id": 16379,
+    "paper_id": 45,
     "question_text": "What does the idiom \"a snake in the grass\" mean?",
     "option_a": "A loyal and trustworthy friend",
     "option_b": "A secret or deceitful enemy",
     "option_c": "A person who loves nature",
     "option_d": "A shy and introverted person",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 78,
+    "explanation": null
   },
   {
-    "question_number": 79,
+    "id": 16380,
+    "paper_id": 45,
     "question_text": "Identify the error in the sentence. He was complete ignored by the team during the discussion.",
     "option_a": "during",
     "option_b": "ignored",
     "option_c": "complete",
     "option_d": "team",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 79,
+    "explanation": null
   },
   {
-    "question_number": 80,
+    "id": 16381,
+    "paper_id": 45,
     "question_text": "Choose the option that best improves the sentence by using the correct collocation highlighted in bold. The company reached a heavy loss last quarter due to poor management.",
     "option_a": "suffered a heavy",
     "option_b": "reached a large loss loss",
     "option_c": "made a hard loss",
     "option_d": "got a strong loss",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 80,
+    "explanation": null
   },
   {
-    "question_number": 81,
+    "id": 16382,
+    "paper_id": 45,
     "question_text": "Complete the sentence by choosing a suitable word to fill in the blank. Had he not intervened, the negotiations ______ long before the deadline.",
     "option_a": "would break",
     "option_b": "had broken",
     "option_c": "would have",
     "option_d": "should be broken down breaking",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 81,
+    "explanation": null
   },
   {
-    "question_number": 82,
+    "id": 16383,
+    "paper_id": 45,
     "question_text": "Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?\n\n1. It was formed due to tectonic activity, where the Earth's crust is slowly pulling apart, creating deep fissures and valleys.\n\n2. The Great Rift Valley in East Africa is one of the most significant geological formations on Earth.\n\n3. The valley is home to some of the richest fossil sites, including discoveries of Australopithecus fossils that provide insights into early human ancestors.\n\n4. Over time, the valley has influenced the course of human evolution, as early hominins adapted to its diverse environments.\n\n5. Today, the region continues to be studied by geologists and anthropologists to understand both Earth's history and the origins of humankind.",
     "option_a": "2-1-4-3-5",
     "option_b": "3-1-4-5-2",
     "option_c": "3-2-1-4-5",
     "option_d": "5-4-3-2-1",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 82,
+    "explanation": null
   },
   {
-    "question_number": 83,
+    "id": 16384,
+    "paper_id": 45,
     "question_text": "Choose the correct one-word substitution for the sentence below. \"Ravi is known for his ability to manage money wisely and never spends more than necessary.\"",
     "option_a": "Extravagant",
     "option_b": "Prodigal",
     "option_c": "Thrifty",
     "option_d": "Spendthrift",
-    "correct_answer": "B"
+    "correct_answer": "C",
+    "question_number": 83,
+    "explanation": "A person who manages money wisely and avoids unnecessary expense is 'thrifty'; 'prodigal' is an antonym meaning wasteful."
   },
   {
-    "question_number": 84,
+    "id": 16385,
+    "paper_id": 45,
     "question_text": "Which of the following refers to a group of stars that form a recognizable pattern in the sky?",
     "option_a": "Eclipse",
     "option_b": "Constellation",
     "option_c": "Meteor",
     "option_d": "Asteroid",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 84,
+    "explanation": null
   },
   {
-    "question_number": 85,
+    "id": 16386,
+    "paper_id": 45,
     "question_text": "Select the most appropriate antonym of the given word. Voluble",
     "option_a": "Talkative",
     "option_b": "Garrulous",
     "option_c": "Reticent",
     "option_d": "Chatty",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 85,
+    "explanation": null
   },
   {
-    "question_number": 86,
+    "id": 16387,
+    "paper_id": 45,
     "question_text": "Choose the correct meaning of idiom: Grain of salt",
     "option_a": "Complete faith in something",
     "option_b": "A hint of manipulation",
     "option_c": "A cautious or skeptical attitude toward truth",
     "option_d": "An excess of honesty",
-    "correct_answer": "B"
+    "correct_answer": "C",
+    "question_number": 86,
+    "explanation": "The idiom 'to take with a grain of salt' means to maintain a cautious or skeptical attitude toward the truth."
   },
   {
-    "question_number": 87,
+    "id": 16388,
+    "paper_id": 45,
     "question_text": "Spot the correct spelling of word meaning 'disguise or concealment'",
     "option_a": "Camoflage",
     "option_b": "Camouflage",
     "option_c": "Camoflauge",
     "option_d": "Camuoflage",
-    "correct_answer": "C"
+    "correct_answer": "B",
+    "question_number": 87,
+    "explanation": "The correct spelling of the word meaning disguise or concealment is 'Camouflage'."
   },
   {
-    "question_number": 88,
+    "id": 16389,
+    "paper_id": 45,
     "question_text": "Select the correct option: The operative complied, albeit ___ reluctance.",
     "option_a": "with great",
     "option_b": "in great",
     "option_c": "on great",
     "option_d": "at great",
-    "correct_answer": "B"
+    "correct_answer": "A",
+    "question_number": 88,
+    "explanation": "The standard English idiom is 'with great reluctance'."
   },
   {
-    "question_number": 89,
+    "id": 16390,
+    "paper_id": 45,
     "question_text": "Find the part of the sentence that contains an error: She has the rare ability (1)/ of making complex theories (2)/ sound simple (3)/ and intuitively clear. (4)",
     "option_a": "1",
     "option_b": "2",
     "option_c": "3",
     "option_d": "4",
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "question_number": 89,
+    "explanation": "The noun 'ability' takes an infinitive complement ('ability to make'), making part 2 ('of making') grammatically erroneous."
   },
   {
-    "question_number": 90,
+    "id": 16391,
+    "paper_id": 45,
     "question_text": "Find the part of the sentence that contains an error: What the consultant suggested implementing (1)/ was a method that would reduce redundancies (2)/ and optimize interdepartmental workflows (3)/ without requiring additional fundings. (4)",
     "option_a": "1",
     "option_b": "(2)",
     "option_c": "(3)",
     "option_d": "(4)",
-    "correct_answer": "A"
+    "correct_answer": "D",
+    "question_number": 90,
+    "explanation": "'Funding' is an uncountable noun and cannot take the plural form 'fundings', making part 4 erroneous."
   },
   {
-    "question_number": 91,
+    "id": 16392,
+    "paper_id": 45,
     "question_text": "Change the following from active to passive: They are building a new bridge across the river.",
     "option_a": "A new bridge is built across the river by them.",
     "option_b": "A new bridge has been built across the river by them.",
     "option_c": "A new bridge is being built across the river by them.",
     "option_d": "A new bridge was being built across the river by them.",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 91,
+    "explanation": null
   },
   {
-    "question_number": 92,
+    "id": 16393,
+    "paper_id": 45,
     "question_text": "Change the following from active to passive: The opposition is expected to challenge the ruling in court.",
     "option_a": "It was expected that the ruling would be challenged in court.",
     "option_b": "The ruling is expected to be challenged in court by the opposition.",
     "option_c": "Challenging the ruling is expected by the opposition.",
     "option_d": "The opposition was expected to be challenging the ruling.",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 92,
+    "explanation": null
   },
   {
-    "question_number": 93,
+    "id": 16394,
+    "paper_id": 45,
     "question_text": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. He said that nothing but sheer luck could have saved them that day.",
     "option_a": "\"Only sheer luck saved them that day,\" he said.",
     "option_b": "\"Sheer luck might have saved them that day,\" he said.",
     "option_c": "\"Nothing but sheer luck could have saved us that day,\" he said.",
     "option_d": "\"Only good fortune was with them that day,\" said he.",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 93,
+    "explanation": null
   },
   {
-    "question_number": 94,
+    "id": 16395,
+    "paper_id": 45,
     "question_text": "Choose the most appropriate synonym of the underlined word. The trespasser remained obstinate despite repeated warnings.",
     "option_a": "Flexible",
     "option_b": "Stubborn",
     "option_c": "Gentle",
     "option_d": "Obedient",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 94,
+    "explanation": null
   },
   {
-    "question_number": 95,
+    "id": 16396,
+    "paper_id": 45,
     "question_text": "The following sentence has been divided into four parts (P, Q, R, and S). The last part (S5) is fixed. Rearrange the remaining parts to form a grammatically correct and meaningful sentence, and choose the correct sequence. P: been able on more than one occasion to verify Professor Clark's observations in regard to Q: nerve-tissue is found in all animals above and including Hydrozoa according to Romanes, but R: I am inclined to believe that it is present in animals even lower than Hydrozoa because I have S: the protozoan \"Stentor Polymorphus\", which has a well-developed nervous system, and I have S5: moreover seen unquestionable acts of conscious determination enacted by this little creature.",
     "option_a": "RPQS",
     "option_b": "PSRQ",
     "option_c": "SQPR",
     "option_d": "QRPS",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 95,
+    "explanation": null
   },
   {
-    "question_number": 96,
+    "id": 16397,
+    "paper_id": 45,
     "question_text": "**Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. In a narrow street inhabited by struggling artists, two young artists, Sue and Johnsy, lived together in a modest apartment. During a severe winter, Johnsy contracted pneumonia and gradually lost both her strength and her desire to recover. From her bed, she could see an old ivy vine clinging to the wall of a neighbouring building. As the cold wind tore away its leaves, she developed the strange belief that her life would end when the final leaf fell. Sue tried to dismiss this belief as irrational, but Johnsy continued to watch the vine with increasing despair. An elderly painter named Behrman lived downstairs. Although he had spoken for years about producing a masterpiece, he had never created anything that fulfilled his ambition. When Sue told him about Johnsy's condition, he appeared angry at her superstition but was deeply concerned. That night, a violent storm swept through the city. By morning, Johnsy expected the vine to be completely bare. Yet one leaf remained firmly attached to the wall. It survived another day of wind and rain. Its apparent endurance stirred something within her. She began to feel ashamed that a fragile leaf could resist the storm while she had surrendered hope. Johnsy slowly recovered. Sue later revealed that the leaf was not real. Behrman had painted it on the wall during the storm and had died of pneumonia soon afterwards. His masterpiece was never displayed in a gallery, but it restored a human being's will to live.\n\n---\n\nWhat does Johnsy's belief about the falling ivy leaves reveal about her mental condition?",
     "option_a": "She had become indifferent to Sue's concern.",
     "option_b": "She had linked her survival to an irrational belief.",
     "option_c": "She had misunderstood the cause of her illness.",
     "option_d": "She had lost confidence in medical treatment.",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 96,
+    "explanation": null
   },
   {
-    "question_number": 97,
+    "id": 16398,
+    "paper_id": 45,
     "question_text": "**Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. In a narrow street inhabited by struggling artists, two young artists, Sue and Johnsy, lived together in a modest apartment. During a severe winter, Johnsy contracted pneumonia and gradually lost both her strength and her desire to recover. From her bed, she could see an old ivy vine clinging to the wall of a neighbouring building. As the cold wind tore away its leaves, she developed the strange belief that her life would end when the final leaf fell. Sue tried to dismiss this belief as irrational, but Johnsy continued to watch the vine with increasing despair. An elderly painter named Behrman lived downstairs. Although he had spoken for years about producing a masterpiece, he had never created anything that fulfilled his ambition. When Sue told him about Johnsy's condition, he appeared angry at her superstition but was deeply concerned. That night, a violent storm swept through the city. By morning, Johnsy expected the vine to be completely bare. Yet one leaf remained firmly attached to the wall. It survived another day of wind and rain. Its apparent endurance stirred something within her. She began to feel ashamed that a fragile leaf could resist the storm while she had surrendered hope. Johnsy slowly recovered. Sue later revealed that the leaf was not real. Behrman had painted it on the wall during the storm and had died of pneumonia soon afterwards. His masterpiece was never displayed in a gallery, but it restored a human being's will to live.\n\n---\n\nWhich factor most seriously obstructed Johnsy's recovery?",
     "option_a": "Her psychological surrender to a morbid superstition",
     "option_b": "Her inability to receive continuous medical attention",
     "option_c": "Her prolonged exposure to severe winter weather",
     "option_d": "Her dissatisfaction with her life as a struggling artist",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 97,
+    "explanation": null
   },
   {
-    "question_number": 98,
+    "id": 16399,
+    "paper_id": 45,
     "question_text": "**Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. In a narrow street inhabited by struggling artists, two young artists, Sue and Johnsy, lived together in a modest apartment. During a severe winter, Johnsy contracted pneumonia and gradually lost both her strength and her desire to recover. From her bed, she could see an old ivy vine clinging to the wall of a neighbouring building. As the cold wind tore away its leaves, she developed the strange belief that her life would end when the final leaf fell. Sue tried to dismiss this belief as irrational, but Johnsy continued to watch the vine with increasing despair. An elderly painter named Behrman lived downstairs. Although he had spoken for years about producing a masterpiece, he had never created anything that fulfilled his ambition. When Sue told him about Johnsy's condition, he appeared angry at her superstition but was deeply concerned. That night, a violent storm swept through the city. By morning, Johnsy expected the vine to be completely bare. Yet one leaf remained firmly attached to the wall. It survived another day of wind and rain. Its apparent endurance stirred something within her. She began to feel ashamed that a fragile leaf could resist the storm while she had surrendered hope. Johnsy slowly recovered. Sue later revealed that the leaf was not real. Behrman had painted it on the wall during the storm and had died of pneumonia soon afterwards. His masterpiece was never displayed in a gallery, but it restored a human being's will to live.\n\n---\n\nHow does the passage redefine Behrman's idea of a \"masterpiece\"?",
     "option_a": "It presents artistic greatness as the result of technical perfection.",
     "option_b": "It suggests that public recognition is essential to establish artistic value.",
     "option_c": "It shows that artistic success depends on faithfully imitating nature.",
     "option_d": "It associates artistic greatness with the power to restore human hope.",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 98,
+    "explanation": null
   },
   {
-    "question_number": 99,
+    "id": 16400,
+    "paper_id": 45,
     "question_text": "**Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. In a narrow street inhabited by struggling artists, two young artists, Sue and Johnsy, lived together in a modest apartment. During a severe winter, Johnsy contracted pneumonia and gradually lost both her strength and her desire to recover. From her bed, she could see an old ivy vine clinging to the wall of a neighbouring building. As the cold wind tore away its leaves, she developed the strange belief that her life would end when the final leaf fell. Sue tried to dismiss this belief as irrational, but Johnsy continued to watch the vine with increasing despair. An elderly painter named Behrman lived downstairs. Although he had spoken for years about producing a masterpiece, he had never created anything that fulfilled his ambition. When Sue told him about Johnsy's condition, he appeared angry at her superstition but was deeply concerned. That night, a violent storm swept through the city. By morning, Johnsy expected the vine to be completely bare. Yet one leaf remained firmly attached to the wall. It survived another day of wind and rain. Its apparent endurance stirred something within her. She began to feel ashamed that a fragile leaf could resist the storm while she had surrendered hope. Johnsy slowly recovered. Sue later revealed that the leaf was not real. Behrman had painted it on the wall during the storm and had died of pneumonia soon afterwards. His masterpiece was never displayed in a gallery, but it restored a human being's will to live.\n\n---\n\nWhat psychological change does the apparent survival of the last ivy leaf bring about in Johnsy?",
     "option_a": "She begins to believe that nature controls the course of human life.",
     "option_b": "She becomes suspicious that the leaf has been deliberately preserved.",
     "option_c": "She feels ashamed of her defeatism and regains the will to survive.",
     "option_d": "She concludes that her illness is less serious than she had assumed.",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 99,
+    "explanation": null
   },
   {
-    "question_number": 100,
+    "id": 16401,
+    "paper_id": 45,
     "question_text": "**Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. In a narrow street inhabited by struggling artists, two young artists, Sue and Johnsy, lived together in a modest apartment. During a severe winter, Johnsy contracted pneumonia and gradually lost both her strength and her desire to recover. From her bed, she could see an old ivy vine clinging to the wall of a neighbouring building. As the cold wind tore away its leaves, she developed the strange belief that her life would end when the final leaf fell. Sue tried to dismiss this belief as irrational, but Johnsy continued to watch the vine with increasing despair. An elderly painter named Behrman lived downstairs. Although he had spoken for years about producing a masterpiece, he had never created anything that fulfilled his ambition. When Sue told him about Johnsy's condition, he appeared angry at her superstition but was deeply concerned. That night, a violent storm swept through the city. By morning, Johnsy expected the vine to be completely bare. Yet one leaf remained firmly attached to the wall. It survived another day of wind and rain. Its apparent endurance stirred something within her. She began to feel ashamed that a fragile leaf could resist the storm while she had surrendered hope. Johnsy slowly recovered. Sue later revealed that the leaf was not real. Behrman had painted it on the wall during the storm and had died of pneumonia soon afterwards. His masterpiece was never displayed in a gallery, but it restored a human being's will to live.\n\n---\n\nWhat central irony is associated with Behrman's final artistic act?",
     "option_a": "The work he considered temporary later brought him artistic fame.",
     "option_b": "The painting he created in secrecy was later displayed publicly.",
     "option_c": "The leaf appeared lifeless but became his most realistic creation.",
     "option_d": "The illusion that saved Johnsy's life ultimately cost Behrman his own.",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 100,
+    "explanation": null
   }
 ]

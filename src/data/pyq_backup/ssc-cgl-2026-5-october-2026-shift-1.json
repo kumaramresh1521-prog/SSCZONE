@@ -1,902 +1,1202 @@
 [
   {
-    "question_number": 1,
+    "id": 14802,
+    "paper_id": 30,
     "question_text": "In the word \"TECHNOLOGY\", what is the difference in index (A=1 to Z=26) between the 3rd and 7th letters?",
     "option_a": "3",
     "option_b": "5",
     "option_c": "7",
     "option_d": "9",
-    "correct_answer": "A"
+    "correct_answer": "D",
+    "question_number": 1,
+    "explanation": "3rd letter is C (index 3) and 7th letter is L (index 12); difference is 12 - 3 = 9."
   },
   {
-    "question_number": 2,
+    "id": 14803,
+    "paper_id": 30,
     "question_text": "A number, when divided by 5 or 10, leaves a remainder of 3. What will be the remainder when the square of that number is divided by 5?",
     "option_a": "3",
     "option_b": "4",
     "option_c": "1",
     "option_d": "2",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 2,
+    "explanation": null
   },
   {
-    "question_number": 3,
+    "id": 14804,
+    "paper_id": 30,
     "question_text": "What is the next number in the series? 2, 6, 18, ___",
     "option_a": "56",
     "option_b": "54",
     "option_c": "52",
     "option_d": "58",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 3,
+    "explanation": null
   },
   {
-    "question_number": 4,
+    "id": 14805,
+    "paper_id": 30,
     "question_text": "What is the simple interest earned on an investment of ₹5,000 for a period of 3 years at an annual interest rate of 5%?",
     "option_a": "₹750",
     "option_b": "₹800",
     "option_c": "₹850",
     "option_d": "₹900",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 4,
+    "explanation": null
   },
   {
-    "question_number": 5,
+    "id": 14806,
+    "paper_id": 30,
     "question_text": "Instruction: Choose the inference that are clearly supported by the statement.\n\nStatement: All applicants accepted into the highly competitive Master's program scored in the top 5% on the entrance examination, and submitted a strong letter of recommendation from a university professor. Inferences: Inference I: An applicant who did not score in the top 5% on the entrance examination was not accepted into the Master's program. Inference II: A strong letter of recommendation from a university professor is the sole factor determining acceptance into the Master's program.",
     "option_a": "Only Inference I follows 1 INTELLIGENCE",
     "option_b": "Only Inference II follows",
     "option_c": "Both Inferences I and II follows",
     "option_d": "Neither Inference I nor II follows",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 5,
+    "explanation": null
   },
   {
-    "question_number": 6,
+    "id": 14807,
+    "paper_id": 30,
     "question_text": "If DOCTOR is coded as EPDUPS, how is EPDUPS coded?",
     "option_a": "FQEVQT",
     "option_b": "FQFVRU",
     "option_c": "FQEVRT",
     "option_d": "FQEVQU",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 6,
+    "explanation": null
   },
   {
-    "question_number": 7,
+    "id": 14808,
+    "paper_id": 30,
     "question_text": "Carefully examine the address below and identify which of the following alternatives matches the given address. Ms. A. Mishra 8902 Crescent View, 10th Floor, Malviya Nagar Delhi - 110017 Alternatives: A) Ms. A. Mishra, 8902 Crescent View, 10th Floor, Malviya Nagar, Delhi - 110017 B) Ms. A. Mishra, 8902 Crescent View, 9th Floor, Malviya Nagar, Delhi - 110018 C) Ms. A. Mishra, 8902 Crescent View, 10th Floor, Malviya Nagar, Delhi - 110016 D) Ms. A. Mishra, 8902 Crescent View, 10th Floor, Malviya Nagar, Delhi - 110017",
     "option_a": "D and B",
     "option_b": "B and C",
     "option_c": "A and D",
     "option_d": "C and A",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 7,
+    "explanation": null
   },
   {
-    "question_number": 8,
+    "id": 14809,
+    "paper_id": 30,
     "question_text": "In a certain code language, \"WORLD\" is written as \"DLROW.\" How will \"CHAIR\" be written in the same code language?",
     "option_a": "HIRAC",
     "option_b": "AHRIC",
     "option_c": "RIAHC",
     "option_d": "RHAIC",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 8,
+    "explanation": null
   },
   {
-    "question_number": 9,
+    "id": 14810,
+    "paper_id": 30,
     "question_text": "Two pipes can fill a tank in 16 hours and 24 hours, respectively, while a third pipe can empty it in 48 hours. If all three pipes are opened together, what fraction of the tank will be filled in 8 hours?",
     "option_a": "2",
     "option_b": "3 3/4",
     "option_c": "5",
     "option_d": "7 6/8",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 9,
+    "explanation": null
   },
   {
-    "question_number": 10,
+    "id": 14811,
+    "paper_id": 30,
     "question_text": "Choose the option that perfectly matches the given address. Original Address: Suite No 18B7Grand Royal Residency Tower 14Saint Patrick Avenue Sector 9Brooklyn New York NY 11217United States of America",
     "option_a": "Suite No 18B7Grand Royal Residency Tower 14Saint Patrick Avenue Sector 9Brooklyn NewYork NY 11217United States of America",
     "option_b": "Suite No 18B7Grand Royal Residency Tower 14Saint Patrick Avenue Sector 9Brooklyn New York NY 12117United States of America",
     "option_c": "Suite No 18B7Grand Royal Residency Tower 41Saint Patrick Avenue Sector 9Brooklyn New York NY 11217United States of America",
     "option_d": "Suite No 18B7Grand Royal Residency Tower 14Saint Patrick Avenue Sector 9Brooklyn New York NY 11217United States of America",
-    "correct_answer": "A"
+    "correct_answer": "D",
+    "question_number": 10,
+    "explanation": "Option D is the exact character-by-character match for the given address."
   },
   {
-    "question_number": 11,
+    "id": 14812,
+    "paper_id": 30,
     "question_text": "Directions: Use the following definitions to answer the question that follows.\n\n1. P # Q means P is the father of Q.\n\n2. P $ Q means P is the sister of Q.\n\n3. P * Q means P is the son of Q.\n\n4. P ^ Q means P is the wife of Q.\n\n5. P ! Q means P is the mother of Q. Question: If 'M ! N * O # P ^ Q', how is Q related to M?",
     "option_a": "Son-in-law",
     "option_b": "Son",
     "option_c": "Brother",
     "option_d": "Paternal Uncle",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 11,
+    "explanation": null
   },
   {
-    "question_number": 12,
+    "id": 14813,
+    "paper_id": 30,
     "question_text": "Study the pattern in the given series and find the next set of letters in the series. HAB, DBX, ZCT, ?",
     "option_a": "VDP",
     "option_b": "VCP",
     "option_c": "VEQ",
     "option_d": "VDR",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 12,
+    "explanation": null
   },
   {
-    "question_number": 13,
+    "id": 14814,
+    "paper_id": 30,
     "question_text": "Which of the following centre code does not follow the pattern of \"two consonants followed by the sum of their positions in the alphabet\"?",
     "option_a": "BD6",
     "option_b": "CF9",
     "option_c": "DH11",
     "option_d": "GL19",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 13,
+    "explanation": null
   },
   {
-    "question_number": 14,
+    "id": 14815,
+    "paper_id": 30,
     "question_text": "During a high-stakes client meeting, two of your coworkers suddenly engage in a heated argument. The client becomes visibly uncomfortable and stressed by the unprofessional display. What is the most effective and professional action for you to take to manage the situation?",
     "option_a": "Choose to let the heated argument play out completely before deciding to offer an explanation or apology to the client after the meeting has concluded.",
     "option_b": "Decisively redirect the conversation toward the primary meeting objectives and suggest that your coworkers continue their discussion at a later time in a private setting.",
     "option_c": "Immediately intervene to end the client meeting abruptly and firmly ask every person present in the room to leave the premises to stop the conflict.",
     "option_d": "Intervene by taking the client out of the room entirely while your coworkers continue to argue amongst themselves until they decide to stop on their own.",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 14,
+    "explanation": null
   },
   {
-    "question_number": 15,
+    "id": 14816,
+    "paper_id": 30,
     "question_text": "Read the question carefully and choose the most appropriate option. You are a district officer. A new road project requires the relocation of several street vendors who depend on the area for their livelihood. What would you do?",
     "option_a": "Remove all vendors immediately without discussing rehabilitation arrangements first.",
     "option_b": "Stop the road project completely because some vendors are opposing.",
     "option_c": "Delay every decision indefinitely until the issue disappears naturally somehow.",
     "option_d": "Discuss relocation options and ensure suitable support for affected vendors.",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 15,
+    "explanation": null
   },
   {
-    "question_number": 16,
+    "id": 14817,
+    "paper_id": 30,
     "question_text": "Choose the option which is exactly similar to: Flat 302, Anant Residency, Dhole Patil Road, Pune-411001",
     "option_a": "Flat 302, Anant Residency, Dhole Patil Road, Pune-411001",
     "option_b": "Flat 302, Anant Residency, Dhole Patil Road, Agra-411001",
     "option_c": "Flat 320, Anant Residency, Dhole Patil Road, Pune-411001",
     "option_d": "Flat 302, Anant Residency Dhole Patil Road, Pune-411001",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 16,
+    "explanation": null
   },
   {
-    "question_number": 17,
+    "id": 14818,
+    "paper_id": 30,
     "question_text": "What should come in place of question mark (?) in the following analogy? ZXV : YWU :: TRP : ?",
     "option_a": "TQO",
     "option_b": "RON",
     "option_c": "SRO",
     "option_d": "SQO",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 17,
+    "explanation": null
   },
   {
-    "question_number": 18,
+    "id": 14819,
+    "paper_id": 30,
     "question_text": "In the given question, a few statements have been given followed by conclusions based on them. Consider the statements to be true and answer which of the given conclusions logically follow the statement. Statements\n\n1. Some journalists are activists.\n\n2. No activist is impartial.\n\n3. All impartial persons are trusted. Conclusions\n\nI. Some journalists are not impartial.\n\nII. No journalist is trusted.\n\nIII. Some activists are not trusted.\n\nIV. All trusted persons are impartial.",
     "option_a": "Only I and III",
     "option_b": "Only I, II and III follow follow",
     "option_c": "Only III and IV",
     "option_d": "Only I follows follow",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 18,
+    "explanation": null
   },
   {
-    "question_number": 19,
+    "id": 14820,
+    "paper_id": 30,
     "question_text": "A department manager must deliver bad news about a high-stakes, rejected project proposal to a team that invested months of hard work and late nights into its development. Which of the following approaches demonstrates the highest level of emotional intelligence (EQ)?",
     "option_a": "Deliver the news via a brief department- wide email to avoid an uncomfortable face- to-face discussion.",
     "option_b": "Shift immediately to the next project during a briefing to maintain short-term morale.",
     "option_c": "Blame senior leadership or the client privately to deflect accountability and protect team feelings.",
     "option_d": "Schedule an in-person meeting to validate their disappointment, appreciate their effort, and discuss lessons learned.",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 19,
+    "explanation": null
   },
   {
-    "question_number": 20,
+    "id": 14821,
+    "paper_id": 30,
     "question_text": "Urban traffic congestion is leading to massive loss of productivity. What is the most effective solution the government should implement?",
     "option_a": "Raise prices of all fuels.",
     "option_b": "Build better public transit networks.",
     "option_c": "Limit cars per household units.",
     "option_d": "Widen every city road lane.",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 20,
+    "explanation": null
   },
   {
-    "question_number": 21,
+    "id": 14822,
+    "paper_id": 30,
     "question_text": "A regular client frequently calls you after working hours to discuss personal issues that are unrelated to your business contract. These calls are starting to affect your worklife balance. What should you do?",
     "option_a": "Ignore their calls completely without explanation.",
     "option_b": "Politely note you value the relationship but must keep calls professional to ensure good service.",
     "option_c": "Continue taking the calls to ensure the client stays satisfied, even if it causes you stress.",
     "option_d": "Tell the client that you will charge them an hourly rate for personal consulting time.",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 21,
+    "explanation": null
   },
   {
-    "question_number": 22,
+    "id": 14823,
+    "paper_id": 30,
     "question_text": "Read the statement carefully and assume it to be true. Then examine the two conclusions given below it and decide which conclusion(s), if any, logically follow from the statement.\n\nStatement: A national health mission has expanded telemedicine services to rural regions to improve accessibility to specialist medical consultations.\n\nConclusions:\n\nI. Rural areas face limitations in accessing healthcare specialists.\n\nII. The initiative aims to improve healthcare accessibility.",
     "option_a": "Neither conclusion I nor conclusion II follows",
     "option_b": "Only conclusion II follows",
     "option_c": "Only conclusion I follows",
     "option_d": "Both conclusions I and II follow",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 22,
+    "explanation": null
   },
   {
-    "question_number": 23,
+    "id": 14824,
+    "paper_id": 30,
     "question_text": "In a certain code language, \"THINGS\" is written as \"TiIoGt\". How will \"BRIGHT\" be written in the same code language?",
     "option_a": "BSIhHU",
     "option_b": "BsIHHu",
     "option_c": "BsihHu",
     "option_d": "BsIhHu",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 23,
+    "explanation": null
   },
   {
-    "question_number": 24,
+    "id": 14825,
+    "paper_id": 30,
     "question_text": "The plant manager has introduced a mandatory virtual reality (VR) safety training program for all employees handling highvoltage machinery to reduce workplace accidents. Which assumption underlies this program?",
     "option_a": "VR training provides a level of practical exposure that effectively improves real- world employee safety.",
     "option_b": "All employees have the cognitive ability to adapt to advanced digital interfaces without any difficulty.",
     "option_c": "The currently implemented safety training modules have been proven to be completely useless by staff.",
     "option_d": "The high-voltage machinery currently in use is impossible to operate safely without specialized training.",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 24,
+    "explanation": null
   },
   {
-    "question_number": 25,
+    "id": 14826,
+    "paper_id": 30,
     "question_text": "Select the option that is related to the third word in the same way as the second word is related to the first word. (The words must be considered as meaningful English words and must not be related to each other based on the number of letters/number of consonants/vowels in the word.) Simmer : Boil :: Chill : ?",
     "option_a": "Cool",
     "option_b": "Freeze",
     "option_c": "Warm",
     "option_d": "Melt",
-    "correct_answer": "C"
+    "correct_answer": "B",
+    "question_number": 25,
+    "explanation": "Analogy of increasing thermal intensity: simmer leads to boil just as chill leads to freeze."
   },
   {
-    "question_number": 26,
+    "id": 14827,
+    "paper_id": 30,
     "question_text": "The concept of a socialist economy was propounded by:",
     "option_a": "Adam Smith",
     "option_b": "Alfred Marshall",
     "option_c": "Karl Marx",
     "option_d": "David Ricardo",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 26,
+    "explanation": null
   },
   {
-    "question_number": 27,
+    "id": 14828,
+    "paper_id": 30,
     "question_text": "Which of the following factors does NOT determine demand?",
     "option_a": "Price of the commodity",
     "option_b": "Disposable income of the consumer",
     "option_c": "Price of factors of production",
     "option_d": "Price of related goods",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 27,
+    "explanation": null
   },
   {
-    "question_number": 28,
+    "id": 14829,
+    "paper_id": 30,
     "question_text": "Which BRICS nation uses the Ruble as its official currency?",
     "option_a": "China",
     "option_b": "India",
     "option_c": "Russia",
     "option_d": "South Africa 4 AWARENESS",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 28,
+    "explanation": null
   },
   {
-    "question_number": 29,
+    "id": 14830,
+    "paper_id": 30,
     "question_text": "What is the term for a score of zero in tennis?",
     "option_a": "Love",
     "option_b": "Deuce",
     "option_c": "Advantage",
     "option_d": "Ace",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 29,
+    "explanation": null
   },
   {
-    "question_number": 30,
+    "id": 14831,
+    "paper_id": 30,
     "question_text": "The final of the 2017 FIFA U-17 World Cup was held in Kolkata. Which stadium hosted the final match?",
     "option_a": "Salt Lake Stadium",
     "option_b": "Rabindra Sarobar Stadium",
     "option_c": "Mohun Bagan",
     "option_d": "East Bengal Ground Ground",
-    "correct_answer": "B"
+    "correct_answer": "A",
+    "question_number": 30,
+    "explanation": "The 2017 FIFA U-17 World Cup final was hosted at Salt Lake Stadium (Vivekananda Yuba Bharati Krirangan) in Kolkata."
   },
   {
-    "question_number": 31,
+    "id": 14832,
+    "paper_id": 30,
     "question_text": "What is \"En Passant\" in chess?",
     "option_a": "Special pawn",
     "option_b": "Checkmate move capture",
     "option_c": "Opening strategy",
     "option_d": "Bishop promotion",
-    "correct_answer": "C"
+    "correct_answer": "A",
+    "question_number": 31,
+    "explanation": "En passant is a special pawn capture rule in chess."
   },
   {
-    "question_number": 32,
+    "id": 14833,
+    "paper_id": 30,
     "question_text": "In September 2021, who was appointed Tamil Nadu's Governor by then President of India Ram Nath Kovind?",
     "option_a": "R.N. Ravi",
     "option_b": "Arif Mohammed Khan",
     "option_c": "Banwarilal Purohit",
     "option_d": "C.V. Ananda Bose",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 32,
+    "explanation": null
   },
   {
-    "question_number": 33,
+    "id": 14834,
+    "paper_id": 30,
     "question_text": "Who among the following was the last ruler of the Pallava dynasty?",
     "option_a": "Narasimhavarman",
     "option_b": "Rajasimha I",
     "option_c": "Aparajita",
     "option_d": "Nandivarman II",
-    "correct_answer": "A"
+    "correct_answer": "C",
+    "question_number": 33,
+    "explanation": "Aparajitavarman (Aparajita) was the last ruler of the Pallava dynasty, defeated by Chola king Aditya I."
   },
   {
-    "question_number": 34,
+    "id": 14835,
+    "paper_id": 30,
     "question_text": "Which of the following statements is INCORRECT with reference to the development of ports in India?",
     "option_a": "The policies of major ports are decided by the Central Government whereas the policy of minor ports is decided by State Governments.",
     "option_b": "Major ports handle more than 75% of the country's total port traffic.",
     "option_c": "The Major ports are used to handle only international cargo.",
     "option_d": "Many ports of India went to Pakistan after partition.",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 34,
+    "explanation": null
   },
   {
-    "question_number": 35,
+    "id": 14836,
+    "paper_id": 30,
     "question_text": "What is the 'gharana' system in Hindustani music?",
     "option_a": "A method of composing",
     "option_b": "A form of raga",
     "option_c": "A school or tradition of music",
     "option_d": "A scale system",
-    "correct_answer": "A"
+    "correct_answer": "C",
+    "question_number": 35,
+    "explanation": "A gharana in Hindustani classical music represents a school or lineage of musical tradition and style."
   },
   {
-    "question_number": 36,
+    "id": 14837,
+    "paper_id": 30,
     "question_text": "Consider the following statements about the international comparisons of human development:\n\n1. The territorial area of a country and per capita income are directly related to human development.\n\n2. Generally, countries with low levels of human development tend to spend more on defence rather than social sectors.\n\n3. Countries with high levels of human development invest more in the social sectors. Which of the statements given above is/are CORRECT?",
     "option_a": "1 and 2 only",
     "option_b": "3 only",
     "option_c": "2 and 3 only",
     "option_d": "1, 2 and 3",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 36,
+    "explanation": null
   },
   {
-    "question_number": 37,
+    "id": 14838,
+    "paper_id": 30,
     "question_text": "Which is correct about the long jump runway and take-off board?",
     "option_a": "Plasticine indicator width: 1.22 m; placed 3 m from pit",
     "option_b": "Take-off board width: 1.22 m; runway length: 20 cm",
     "option_c": "Runway width: 10 cm; take-off board thickness: 45°",
     "option_d": "Runway length: 40-45 m; take-off board length: 1.22 m",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 37,
+    "explanation": null
   },
   {
-    "question_number": 38,
+    "id": 14839,
+    "paper_id": 30,
     "question_text": "Bara Pani Lake is located in which Indian state?",
     "option_a": "Arunachal",
     "option_b": "Jammu and Pradesh Kashmir",
     "option_c": "Uttarakhand",
     "option_d": "Meghalaya",
-    "correct_answer": "B"
+    "correct_answer": "D",
+    "question_number": 38,
+    "explanation": "Bara Pani Lake (also known as Umiam Lake) is located in Meghalaya, near Shillong."
   },
   {
-    "question_number": 39,
+    "id": 14840,
+    "paper_id": 30,
     "question_text": "Indian planning was inspired by",
     "option_a": "U.S. model",
     "option_b": "Soviet model",
     "option_c": "British model",
     "option_d": "Chinese model",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 39,
+    "explanation": null
   },
   {
-    "question_number": 40,
+    "id": 14841,
+    "paper_id": 30,
     "question_text": "With reference to the 'Indian Ocean Dipole\n\n(IOD)', which of the following statements is/are correct?\n\n1. IOD phenomenon is characterized by a difference in sea surface temperature between the tropical Western Indian Ocean and the tropical Eastern Pacific Ocean.\n\n2. An IOD phenomenon can influence an El Niño's impact on the monsoon.",
     "option_a": "Only 1",
     "option_b": "Only 2",
     "option_c": "Both 1 and 2",
     "option_d": "Neither 1 nor 2",
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "question_number": 40,
+    "explanation": "Statement 1 is incorrect because IOD is defined across the Indian Ocean (not Pacific); statement 2 is correct, so Only 2 is right."
   },
   {
-    "question_number": 41,
+    "id": 14842,
+    "paper_id": 30,
     "question_text": "Which Mahajanapada was located at the modern location of Rajori & Hajra (Kashmir) with its capital at Pooncha?",
     "option_a": "The Vatsa",
     "option_b": "The Anga Mahajanapada Mahajanapada",
     "option_c": "The Magadh",
     "option_d": "The Kamboj Mahajanapada Mahajanapada",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 41,
+    "explanation": null
   },
   {
-    "question_number": 42,
+    "id": 14843,
+    "paper_id": 30,
     "question_text": "Under which article of the Indian Constitution is the office of the President of India established?",
     "option_a": "Article 50",
     "option_b": "Article 51",
     "option_c": "Article 52",
     "option_d": "Article 54",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 42,
+    "explanation": null
   },
   {
-    "question_number": 43,
+    "id": 14844,
+    "paper_id": 30,
     "question_text": "What specific restriction is placed on a Minister or the Advocate-General when they participate in the proceedings of a House under Article 177 of the Indian Constitution?",
     "option_a": "They are prohibited from speaking in the Legislative Council",
     "option_b": "They cannot participate in committee meetings",
     "option_c": "They are not entitled to vote by virtue of this article",
     "option_d": "They cannot address the House in their mother tongue",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 43,
+    "explanation": null
   },
   {
-    "question_number": 44,
+    "id": 14845,
+    "paper_id": 30,
     "question_text": "Aus', 'Aman', and 'Boro' are varieties of:",
     "option_a": "Wheat",
     "option_b": "Rice",
     "option_c": "Maize",
     "option_d": "Pulses",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 44,
+    "explanation": null
   },
   {
-    "question_number": 45,
+    "id": 14846,
+    "paper_id": 30,
     "question_text": "In the Indian parliamentary system, which statement best describes the doctrine of collective responsibility?",
     "option_a": "President controls the Cabinet",
     "option_b": "Judiciary supervises ministers",
     "option_c": "Ministers are individually appointed",
     "option_d": "Cabinet decisions bind all ministers",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 45,
+    "explanation": null
   },
   {
-    "question_number": 46,
+    "id": 14847,
+    "paper_id": 30,
     "question_text": "Consider the following\n\nstatements:\n\n1. Five products from Tamil Nadu were awarded the Geographical Indication (GI) tag in December 2025.\n\n2. Thooyamalli, a traditional rice variety, was among the products that received the GI tag in December 2025. Which of the statements given above is/are correct?",
     "option_a": "1 only",
     "option_b": "2 only",
     "option_c": "Both 1 and 2",
     "option_d": "Neither 1 nor 2",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 46,
+    "explanation": null
   },
   {
-    "question_number": 47,
+    "id": 14848,
+    "paper_id": 30,
     "question_text": "In which year did India face a balance-ofpayments crisis that led to the introduction of economic reforms?",
     "option_a": "1988",
     "option_b": "1984",
     "option_c": "1991",
     "option_d": "1999",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 47,
+    "explanation": null
   },
   {
-    "question_number": 48,
+    "id": 14849,
+    "paper_id": 30,
     "question_text": "Who is the author of the grammar text Ashtadhyayi?",
     "option_a": "Patanjali",
     "option_b": "Panini",
     "option_c": "Kalidasa",
     "option_d": "Bharata",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 48,
+    "explanation": null
   },
   {
-    "question_number": 49,
+    "id": 14850,
+    "paper_id": 30,
     "question_text": "Which international Institutions provided financial assistance to India to overcome the severe balance of payments crisis in 1991?",
     "option_a": "World Trade Organization and World Bank",
     "option_b": "Asian Development Bank and World Trade Organization",
     "option_c": "World Bank and International Monetary Fund",
     "option_d": "International Monetary Fund and Asian Development Bank",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 49,
+    "explanation": null
   },
   {
-    "question_number": 50,
+    "id": 14851,
+    "paper_id": 30,
     "question_text": "A wire of length L and diameter d extends under a tensile force F. If both its length and diameter are doubled while the same force is applied, what will be its new extension relative to the original extension? Assume that the material remains unchanged and the wire is within its elastic limit.",
     "option_a": "The same",
     "option_b": "Half",
     "option_c": "One-fourth",
     "option_d": "One-eight",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 50,
+    "explanation": null
   },
   {
-    "question_number": 51,
+    "id": 14852,
+    "paper_id": 30,
     "question_text": "A right prism has a base perimeter of 20 cm and height 7 cm. Find the lateral surface area.",
     "option_a": "140 cm²",
     "option_b": "150 cm²",
     "option_c": "160 cm²",
     "option_d": "170 cm²",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 51,
+    "explanation": null
   },
   {
-    "question_number": 52,
+    "id": 14853,
+    "paper_id": 30,
     "question_text": "What is the total surface area of a hemisphere whose curved surface area is 536 cm²?",
     "option_a": "814 cm²",
     "option_b": "914 cm²",
     "option_c": "704 cm²",
     "option_d": "804 cm²",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 52,
+    "explanation": null
   },
   {
-    "question_number": 53,
+    "id": 14854,
+    "paper_id": 30,
     "question_text": "The area of a triangle is 180 cm², and its base is 15 cm. What is the corresponding height?",
     "option_a": "26 cm",
     "option_b": "28 cm",
     "option_c": "25 cm",
     "option_d": "24 cm",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 53,
+    "explanation": null
   },
   {
-    "question_number": 54,
+    "id": 14855,
+    "paper_id": 30,
     "question_text": "A cylinder has a base diameter of 20 cm and a height of 14 cm. What is its volume?",
     "option_a": "4400π cm³",
     "option_b": "2800π cm³",
     "option_c": "2200π cm³",
     "option_d": "1400π cm³",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 54,
+    "explanation": null
   },
   {
-    "question_number": 55,
+    "id": 14856,
+    "paper_id": 30,
     "question_text": "A man observes the top of a tower at an angle of elevation of 30°. If the distance between the man and the tower is 100 meters, find the height of the tower",
     "option_a": "50 m",
     "option_b": "57.7 m",
     "option_c": "100 m",
     "option_d": "86.6 m",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 55,
+    "explanation": null
   },
   {
-    "question_number": 56,
+    "id": 14857,
+    "paper_id": 30,
     "question_text": "If tanx=cot(3x-30°), and x is an acute angle, find the value of x",
     "option_a": "70°",
     "option_b": "7°",
     "option_c": "130°",
     "option_d": "30°",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 56,
+    "explanation": null
   },
   {
-    "question_number": 57,
+    "id": 14858,
+    "paper_id": 30,
     "question_text": "The sum of cubes of first n natural number is\n\n1296. Find the value of n",
     "option_a": "6",
     "option_b": "7",
     "option_c": "8",
     "option_d": "9",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 57,
+    "explanation": null
   },
   {
-    "question_number": 58,
+    "id": 14859,
+    "paper_id": 30,
     "question_text": "P and Q enter into a partnership. P invests ₹8,000 for the whole year. Q invests ₹12,000 initially but withdraws his entire amount after some months. If the profit at the end of the year is divided in the ratio 4 : 3, for how many months was Q's money invested?",
     "option_a": "10 months",
     "option_b": "4 months",
     "option_c": "6 months",
     "option_d": "8 months",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 58,
+    "explanation": null
   },
   {
-    "question_number": 59,
+    "id": 14860,
+    "paper_id": 30,
     "question_text": "The average age of a group consisting of 10 students and their teacher is 15 years. When the teacher's age is excluded, the average age of the students decreases by 1 year. Determine the age of the teacher.",
     "option_a": "35 years",
     "option_b": "25 years",
     "option_c": "55 years",
     "option_d": "65 years",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 59,
+    "explanation": null
   },
   {
-    "question_number": 60,
+    "id": 14861,
+    "paper_id": 30,
     "question_text": "The amounts at the end of the 3rd and 4th years on a certain sum are ₹13,310 and ₹14,641 respectively at compound interest. Find the principal.",
     "option_a": "₹8500",
     "option_b": "₹9000",
     "option_c": "₹10000",
     "option_d": "₹12000",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 60,
+    "explanation": null
   },
   {
-    "question_number": 61,
+    "id": 14862,
+    "paper_id": 30,
     "question_text": "A regular hexagon has side 20 m. Find the cost of fencing it at ₹50 per meter.",
     "option_a": "₹6000",
     "option_b": "₹6030",
     "option_c": "₹6580",
     "option_d": "₹6400",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 61,
+    "explanation": null
   },
   {
-    "question_number": 62,
+    "id": 14863,
+    "paper_id": 30,
     "question_text": "In a circle of radius 28 cm, an arc subtends an angle of 45 degrees at the centre. Find the length of the arc. (Take π= 22 ) 7",
     "option_a": "27 cm",
     "option_b": "15 cm",
     "option_c": "22 cm",
     "option_d": "18 cm",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 62,
+    "explanation": null
   },
   {
-    "question_number": 63,
+    "id": 14864,
+    "paper_id": 30,
     "question_text": "The height of a right circular cone is 9 cm and its slant height is 15 cm. Find its curved surface area.",
     "option_a": "150π cm²",
     "option_b": "170π cm²",
     "option_c": "130π cm²",
     "option_d": "180π cm²",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 63,
+    "explanation": null
   },
   {
-    "question_number": 64,
+    "id": 14865,
+    "paper_id": 30,
     "question_text": "If A + B = C, then find the value of tan Atan Btan C .",
     "option_a": "tan C −tan A + ta",
     "option_b": "tan C + tan A + ta",
     "option_c": "tan C + tan A −ta",
     "option_d": "tan C −tan A −ta",
-    "correct_answer": "A"
+    "correct_answer": "D",
+    "question_number": 64,
+    "explanation": "Since A + B = C, tan C = (tan A + tan B)/(1 - tan A tan B) => tan A tan B tan C = tan C - tan A - tan B."
   },
   {
-    "question_number": 65,
+    "id": 14866,
+    "paper_id": 30,
     "question_text": "Solve: 1 + 1 + ⋯+ 1 1+√2 √2+√3 √8+√9",
     "option_a": "0",
     "option_b": "1",
     "option_c": "2",
     "option_d": "3",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 65,
+    "explanation": null
   },
   {
-    "question_number": 66,
+    "id": 14867,
+    "paper_id": 30,
     "question_text": "If √5 = 2.236 , then find the value of 15+5√5 . \\) √5",
     "option_a": "5.564",
     "option_b": "7.854",
     "option_c": "11.708",
     "option_d": "14.564",
-    "correct_answer": "A"
+    "correct_answer": "C",
+    "question_number": 66,
+    "explanation": "(15 + 5√5)/√5 = 3√5 + 5 = 3(2.236) + 5 = 6.708 + 5 = 11.708."
   },
   {
-    "question_number": 67,
+    "id": 14868,
+    "paper_id": 30,
     "question_text": "P, S, and Q are three points on a circle such that the angles subtended by the chords PS and SQ at the centre O are 85° and 115°, respectively. Determine ∠PSQ.",
     "option_a": "50°",
     "option_b": "80°",
     "option_c": "110°",
     "option_d": "120°",
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "question_number": 67,
+    "explanation": "In isosceles triangles OPS and OQS, ∠OSP = (180° - 85°)/2 = 47.5° and ∠OSQ = (180° - 115°)/2 = 32.5°, so ∠PSQ = 47.5° + 32.5° = 80°."
   },
   {
-    "question_number": 68,
+    "id": 14869,
+    "paper_id": 30,
     "question_text": "In triangle ABC, points D and E lie on AB and AC, respectively, such that AD × AC = AB × AE. If ∠ADE = ∠ACB + 15° and ∠ABC = 65°, find ∠A.",
     "option_a": "55°",
     "option_b": "50°",
     "option_c": "65°",
     "option_d": "60°",
-    "correct_answer": "A"
+    "correct_answer": "C",
+    "question_number": 68,
+    "explanation": "By Thales theorem, AD × AC = AB × AE implies DE || BC, so ∠ADE = ∠ABC = 65°; thus ∠ACB = 65° - 15° = 50°, giving ∠A = 180° - (65° + 50°) = 65°."
   },
   {
-    "question_number": 69,
+    "id": 14870,
+    "paper_id": 30,
     "question_text": "During an industrial quality audit, a softwaredriven flowmeter is found to have two independent calibration defects. First, the automated sensor over-reports the base volume of fluid by 12%. Second, the digital processing unit adds an additional error that over-reports the displayed sensor value by another 5%. If the digital output screen prints a metric reading of \"235.2 Litres\" for a test tank, what is the actual, true volume of fluid inside?",
     "option_a": "160 litres",
     "option_b": "180 litres",
     "option_c": "200 litres",
     "option_d": "220 litres",
-    "correct_answer": "A"
+    "correct_answer": "C",
+    "question_number": 69,
+    "explanation": "True volume V = 235.2 / (1.12 × 1.05) = 235.2 / 1.176 = 200 litres."
   },
   {
-    "question_number": 70,
+    "id": 14871,
+    "paper_id": 30,
     "question_text": "Pranay and Manisha are creating arithmetic sequences. They construct an arithmetic progression where the ratio of the first term to the common difference is 1:\n\n2. If they calculate the ratio of the sum of the first 4 terms (S₄) to the sum of the first 9 terms (S₉), what will be this ratio in its simplest form?",
     "option_a": "21:83",
     "option_b": "16:81",
     "option_c": "14:45",
     "option_d": "4:9",
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "question_number": 70,
+    "explanation": "With a = x and d = 2x, S₄ = 2(2x + 6x) = 16x and S₉ = 4.5(2x + 16x) = 81x, giving the ratio 16 : 81."
   },
   {
-    "question_number": 71,
+    "id": 14872,
+    "paper_id": 30,
     "question_text": "Sonia can do 1 rd of a work in 5 days, Tuktuk can do 2 th of the same work in 10 days and 5 Pamela can do 3 th of the work in 15 days. 4 They all start working together. After 3 days, Sonia leaves. Tuktuk and Pamela work together for another 2 days before Tuktuk leaves. Pamela then finishes the remaining work alone. For how many total days did Pamela work on the project?",
     "option_a": "9",
     "option_b": "10",
     "option_c": "11",
     "option_d": "12",
-    "correct_answer": "A"
+    "correct_answer": "D",
+    "question_number": 71,
+    "explanation": "Work rates are Sonia 20, Tuktuk 12, Pamela 15 (total 300); after 5 days 105 units remain, taking Pamela 7 more days alone, so Pamela worked 3 + 2 + 7 = 12 total days."
   },
   {
-    "question_number": 72,
+    "id": 14873,
+    "paper_id": 30,
     "question_text": "Simplify: tan(90°−2θ) ⋅tan θ⋅tan(90°−θ) ⋅tan 2θ , where 2θ is an acute angle.",
     "option_a": "2",
     "option_b": "0",
     "option_c": "1",
     "option_d": "cot θ",
-    "correct_answer": "A"
+    "correct_answer": "C",
+    "question_number": 72,
+    "explanation": "tan(90° - 2θ) = cot 2θ and tan(90° - θ) = cot θ, so (cot 2θ · tan 2θ)(cot θ · tan θ) = 1 · 1 = 1."
   },
   {
-    "question_number": 73,
+    "id": 14874,
+    "paper_id": 30,
     "question_text": "The product (x - 1)(x + 1)(x² + 1)(x4 + 1) simplifies to which of the following expressions?",
     "option_a": "x⁸ - 1",
     "option_b": "x⁸ + 1",
     "option_c": "x⁴ - 1",
     "option_d": "x⁷ - 1",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 73,
+    "explanation": null
   },
   {
-    "question_number": 74,
+    "id": 14875,
+    "paper_id": 30,
     "question_text": "A container has 160 litres of a mixture of milk and water in the ratio 5:3. First, 32 litres of the mixture are removed and replaced with an equal volume of pure water. Then, 24 litres of the resulting mixture are removed and replaced with an equal volume of pure milk. Find the final ratio of milk to water in the container.",
     "option_a": "63 : 17",
     "option_b": "24 : 13",
     "option_c": "15 : 11",
     "option_d": "23 : 17",
-    "correct_answer": "A"
+    "correct_answer": "D",
+    "question_number": 74,
+    "explanation": "After replacing 32 L with water, milk and water are 80 L each; removing 24 L (12 L each) and adding 24 L milk yields 92 L milk and 68 L water, giving ratio 92:68 = 23:17."
   },
   {
-    "question_number": 75,
+    "id": 14876,
+    "paper_id": 30,
     "question_text": "Two circles are positioned such that the distance between their centers is 41 cm. The length of their transverse common tangent segment is 40 cm. If the radius of one circle is 6 cm, find the radius of the other circle.",
     "option_a": "1 cm",
     "option_b": "3 cm",
     "option_c": "5 cm",
     "option_d": "4 cm",
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "question_number": 75,
+    "explanation": "Length of transverse common tangent = √(d² - (r₁ + r₂)²); 40 = √(41² - 9²), so r₁ + r₂ = 9 => r₂ = 9 - 6 = 3 cm."
   },
   {
-    "question_number": 76,
+    "id": 14877,
+    "paper_id": 30,
     "question_text": "Fill in the blank with the appropriate preposition. He answered ______ the spur of the moment, without reflection.",
     "option_a": "under",
     "option_b": "by",
     "option_c": "at",
     "option_d": "on",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 76,
+    "explanation": null
   },
   {
-    "question_number": 77,
+    "id": 14878,
+    "paper_id": 30,
     "question_text": "Fill in the blank to complete the indirect speech correctly. Rudraksh said to me, \"I was not planning for any trip.\" Rudraksh told me that he ______ not planning for any trip.",
     "option_a": "was",
     "option_b": "is",
     "option_c": "had been",
     "option_d": "were",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 77,
+    "explanation": null
   },
   {
-    "question_number": 78,
+    "id": 14879,
+    "paper_id": 30,
     "question_text": "Rearrange the parts of the sentence in the correct order. Following a series of controversial decisions in major football tournaments, P. while some argued that its inconsistent application undermined the integrity of the sport Q. the Video Assistant Referee (VAR) system faced intense scrutiny from players, coaches, and fans, R. as governing bodies struggled to standardize its usage across different leagues, S. raising concerns about the subjectivity of interpretations despite the promise of technological precision,",
     "option_a": "QRSP",
     "option_b": "SPRQ",
     "option_c": "RSPQ",
     "option_d": "PQSR",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 78,
+    "explanation": null
   },
   {
-    "question_number": 79,
+    "id": 14880,
+    "paper_id": 30,
     "question_text": "Choose the correct idiom for the word highlighted in bold. \"The teacher took me to task for not completing my homework.\"",
     "option_a": "Praised me for my",
     "option_b": "Scolded me for my efforts mistake",
     "option_c": "Helped me with",
     "option_d": "Ignored my my homework mistake",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 79,
+    "explanation": null
   },
   {
-    "question_number": 80,
+    "id": 14881,
+    "paper_id": 30,
     "question_text": "Identify the error in the sentence. We reached to a conclusion after the meeting.",
     "option_a": "reached",
     "option_b": "conclusion",
     "option_c": "meeting",
     "option_d": "to",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 80,
+    "explanation": null
   },
   {
-    "question_number": 81,
+    "id": 14882,
+    "paper_id": 30,
     "question_text": "Choose the error in the sentence. The medicine had a strong affect on her recovery.",
     "option_a": "medicine",
     "option_b": "affect",
     "option_c": "strong",
     "option_d": "recovery",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 81,
+    "explanation": null
   },
   {
-    "question_number": 82,
+    "id": 14883,
+    "paper_id": 30,
     "question_text": "Choose the correct idiom for the word highlighted in bold. My uncle has a green thumb and can grow anything in his garden.",
     "option_a": "He has a thumb that is actually green.",
     "option_b": "He is very good at gardening.",
     "option_c": "He dislikes gardening.",
     "option_d": "He only grows green plants.",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 82,
+    "explanation": null
   },
   {
-    "question_number": 83,
+    "id": 14884,
+    "paper_id": 30,
     "question_text": "Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?\n\n1. Some researchers believe that the decline of the Neanderthals was due to competition with early Homo sapiens, who had superior tools and social structures.\n\n2. Neanderthals, an extinct species of hominins, lived in Eurasia for thousands of years before disappearing around 40,000 years ago.\n\n3. Genetic studies reveal that modern humans share a small percentage of DNA with Neanderthals, indicating interbreeding between the two species.\n\n4. Others argue that climate change played a crucial role in their extinction by reducing food sources and altering their habitats.\n\n5. Despite their disappearance, the legacy of Neanderthals lives on through genetic traces found in modern human populations.",
     "option_a": "5-1-2-3-4",
     "option_b": "2-1-4-3-5",
     "option_c": "5-4-3-1-2",
     "option_d": "2-1-3-4-5",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 83,
+    "explanation": null
   },
   {
-    "question_number": 84,
+    "id": 14885,
+    "paper_id": 30,
     "question_text": "Select the most appropriate synonym of the given word: BANEFUL",
     "option_a": "Harmless",
     "option_b": "Deadly",
     "option_c": "Playful",
     "option_d": "Beneficial",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 84,
+    "explanation": null
   },
   {
-    "question_number": 85,
+    "id": 14886,
+    "paper_id": 30,
     "question_text": "**Comprehension (Q. 85 - 89):** The archive, far from a passive container of memory, functions as an apparatus of epistemic engineering —structuring the legibility of the past through regimes of visibility and institutional (1) ____. It performs not merely as custodian, but as an authorial surrogate, retrofitting historical fragments into a narratological grammar that flatters the contours of state teleology. What escapes its rubric is not lost, but rendered (2) ____—denied syntactic viability within the lexicon of national legitimacy. This architecture does not conceal so much as calibrate. Through procedural neutrality, the archive creates the illusion of factual autonomy, even as its categories enforce ontological obedience. Items included are not only preserved but (3) ____, endowed with rhetorical inertia that naturalizes their interpretive authority. What remains uncatalogued is condemned to historiographic latency—neither denied nor debated, but suspended in bureaucratic limbo. Hence, archiving becomes not an act of recall, but of inscription: it encodes memory into a topology of relevance. In doing so, it (4) ____ affective possibility—dictating not only what can be known, but what may be mourned, commemorated, or forgotten. To critique this system is not to impugn documentation, but to unmask its metaphysical scaffolding: the unseen grammar that adjudicates between datum and debris, artifact and aberration, history and noise. The scholar’s task, then, is not simply retrieval, but ontological sabotage: to (5) ____ the archive’s predicate assumptions before entering its doors. 10\n\n---\n\nWhat should come in the place of blank number (1)?",
     "option_a": "elaboration",
     "option_b": "homogenous",
     "option_c": "protocol",
     "option_d": "pretext",
-    "correct_answer": "A"
+    "correct_answer": "C",
+    "question_number": 85,
+    "explanation": "'Institutional protocol' accurately describes the procedural rules and mechanisms that govern the archive's functioning."
   },
   {
-    "question_number": 86,
+    "id": 14887,
+    "paper_id": 30,
     "question_text": "**Comprehension (Q. 85 - 89):** The archive, far from a passive container of memory, functions as an apparatus of epistemic engineering —structuring the legibility of the past through regimes of visibility and institutional (1) ____. It performs not merely as custodian, but as an authorial surrogate, retrofitting historical fragments into a narratological grammar that flatters the contours of state teleology. What escapes its rubric is not lost, but rendered (2) ____—denied syntactic viability within the lexicon of national legitimacy. This architecture does not conceal so much as calibrate. Through procedural neutrality, the archive creates the illusion of factual autonomy, even as its categories enforce ontological obedience. Items included are not only preserved but (3) ____, endowed with rhetorical inertia that naturalizes their interpretive authority. What remains uncatalogued is condemned to historiographic latency—neither denied nor debated, but suspended in bureaucratic limbo. Hence, archiving becomes not an act of recall, but of inscription: it encodes memory into a topology of relevance. In doing so, it (4) ____ affective possibility—dictating not only what can be known, but what may be mourned, commemorated, or forgotten. To critique this system is not to impugn documentation, but to unmask its metaphysical scaffolding: the unseen grammar that adjudicates between datum and debris, artifact and aberration, history and noise. The scholar’s task, then, is not simply retrieval, but ontological sabotage: to (5) ____ the archive’s predicate assumptions before entering its doors. 10\n\n---\n\nWhat should come in the place of blank number (2)?",
     "option_a": "anachronistic",
     "option_b": "inarticulable",
     "option_c": "heretical",
     "option_d": "peripheral",
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "question_number": 86,
+    "explanation": "Context 'denied syntactic viability within the lexicon of national legitimacy' precisely defines 'inarticulable'."
   },
   {
-    "question_number": 87,
+    "id": 14888,
+    "paper_id": 30,
     "question_text": "**Comprehension (Q. 85 - 89):** The archive, far from a passive container of memory, functions as an apparatus of epistemic engineering —structuring the legibility of the past through regimes of visibility and institutional (1) ____. It performs not merely as custodian, but as an authorial surrogate, retrofitting historical fragments into a narratological grammar that flatters the contours of state teleology. What escapes its rubric is not lost, but rendered (2) ____—denied syntactic viability within the lexicon of national legitimacy. This architecture does not conceal so much as calibrate. Through procedural neutrality, the archive creates the illusion of factual autonomy, even as its categories enforce ontological obedience. Items included are not only preserved but (3) ____, endowed with rhetorical inertia that naturalizes their interpretive authority. What remains uncatalogued is condemned to historiographic latency—neither denied nor debated, but suspended in bureaucratic limbo. Hence, archiving becomes not an act of recall, but of inscription: it encodes memory into a topology of relevance. In doing so, it (4) ____ affective possibility—dictating not only what can be known, but what may be mourned, commemorated, or forgotten. To critique this system is not to impugn documentation, but to unmask its metaphysical scaffolding: the unseen grammar that adjudicates between datum and debris, artifact and aberration, history and noise. The scholar’s task, then, is not simply retrieval, but ontological sabotage: to (5) ____ the archive’s predicate assumptions before entering its doors. 10\n\n---\n\nWhat should come in the place of blank number (3)?",
     "option_a": "contextualized",
     "option_b": "indexed",
     "option_c": "canonized",
     "option_d": "diluted",
-    "correct_answer": "D"
+    "correct_answer": "C",
+    "question_number": 87,
+    "explanation": "Items included are endowed with authoritative status, matching 'canonized' and 'endowed with rhetorical inertia that naturalizes their interpretive authority'."
   },
   {
-    "question_number": 88,
+    "id": 14889,
+    "paper_id": 30,
     "question_text": "**Comprehension (Q. 85 - 89):** The archive, far from a passive container of memory, functions as an apparatus of epistemic engineering —structuring the legibility of the past through regimes of visibility and institutional (1) ____. It performs not merely as custodian, but as an authorial surrogate, retrofitting historical fragments into a narratological grammar that flatters the contours of state teleology. What escapes its rubric is not lost, but rendered (2) ____—denied syntactic viability within the lexicon of national legitimacy. This architecture does not conceal so much as calibrate. Through procedural neutrality, the archive creates the illusion of factual autonomy, even as its categories enforce ontological obedience. Items included are not only preserved but (3) ____, endowed with rhetorical inertia that naturalizes their interpretive authority. What remains uncatalogued is condemned to historiographic latency—neither denied nor debated, but suspended in bureaucratic limbo. Hence, archiving becomes not an act of recall, but of inscription: it encodes memory into a topology of relevance. In doing so, it (4) ____ affective possibility—dictating not only what can be known, but what may be mourned, commemorated, or forgotten. To critique this system is not to impugn documentation, but to unmask its metaphysical scaffolding: the unseen grammar that adjudicates between datum and debris, artifact and aberration, history and noise. The scholar’s task, then, is not simply retrieval, but ontological sabotage: to (5) ____ the archive’s predicate assumptions before entering its doors. 10\n\n---\n\nWhat should come in the place of blank number (4)?",
     "option_a": "differentiate",
     "option_b": "regulates",
     "option_c": "fabricates",
     "option_d": "memorializes",
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "question_number": 88,
+    "explanation": "Singular subject 'it' requires the singular verb 'regulates', fitting 'dictating not only what can be known, but what may be mourned'."
   },
   {
-    "question_number": 89,
+    "id": 14890,
+    "paper_id": 30,
     "question_text": "**Comprehension (Q. 85 - 89):** The archive, far from a passive container of memory, functions as an apparatus of epistemic engineering —structuring the legibility of the past through regimes of visibility and institutional (1) ____. It performs not merely as custodian, but as an authorial surrogate, retrofitting historical fragments into a narratological grammar that flatters the contours of state teleology. What escapes its rubric is not lost, but rendered (2) ____—denied syntactic viability within the lexicon of national legitimacy. This architecture does not conceal so much as calibrate. Through procedural neutrality, the archive creates the illusion of factual autonomy, even as its categories enforce ontological obedience. Items included are not only preserved but (3) ____, endowed with rhetorical inertia that naturalizes their interpretive authority. What remains uncatalogued is condemned to historiographic latency—neither denied nor debated, but suspended in bureaucratic limbo. Hence, archiving becomes not an act of recall, but of inscription: it encodes memory into a topology of relevance. In doing so, it (4) ____ affective possibility—dictating not only what can be known, but what may be mourned, commemorated, or forgotten. To critique this system is not to impugn documentation, but to unmask its metaphysical scaffolding: the unseen grammar that adjudicates between datum and debris, artifact and aberration, history and noise. The scholar’s task, then, is not simply retrieval, but ontological sabotage: to (5) ____ the archive’s predicate assumptions before entering its doors. 10\n\n---\n\nWhat should come in the place of blank number (5)?",
     "option_a": "integrate",
     "option_b": "destabilize",
     "option_c": "invoke",
     "option_d": "mimic",
-    "correct_answer": "A"
+    "correct_answer": "B",
+    "question_number": 89,
+    "explanation": "'Ontological sabotage' entails disrupting or undermining, so 'destabilize' is the precise contextual fit."
   },
   {
-    "question_number": 90,
+    "id": 14891,
+    "paper_id": 30,
     "question_text": "Choose the correct collocation: His explanation was ____, and to the point.",
     "option_a": "short and right",
     "option_b": "quick and good",
     "option_c": "clear and concise",
     "option_d": "smart and simple",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 90,
+    "explanation": null
   },
   {
-    "question_number": 91,
+    "id": 14892,
+    "paper_id": 30,
     "question_text": "Change the following from active to passive: They might announce the winner tomorrow.",
     "option_a": "The winner might be announced tomorrow.",
     "option_b": "The winner may be announced tomorrow.",
     "option_c": "The winner will be announced tomorrow.",
     "option_d": "The winner might have been announced tomorrow.",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 91,
+    "explanation": null
   },
   {
-    "question_number": 92,
+    "id": 14893,
+    "paper_id": 30,
     "question_text": "Change the following from active to passive: The dog bit the postman.",
     "option_a": "The postman is bitten by the dog.",
     "option_b": "The postman was bitten by the dog.",
     "option_c": "The postman has been bitten by the dog.",
     "option_d": "The postman had been bitten by the dog.",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 92,
+    "explanation": null
   },
   {
-    "question_number": 93,
+    "id": 14894,
+    "paper_id": 30,
     "question_text": "Convert the sentence provided below from its passive voice structure to an active voice structure: The passengers were confirmed to have been informed about the delay before boarding.",
     "option_a": "It was confirmed the passengers were informed before boarding.",
     "option_b": "Someone confirmed that passengers had been informed before boarding.",
     "option_c": "Officials confirmed that the passengers had been informed about the delay before boarding.",
     "option_d": "The delay was confirmed to have been known to the passengers.",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 93,
+    "explanation": null
   },
   {
-    "question_number": 94,
+    "id": 14895,
+    "paper_id": 30,
     "question_text": "Convert the sentence provided below from its passive voice structure to an active voice structure: The director was informed to have his team submit the revised plan by Friday.",
     "option_a": "The team submitted the plan as the director was informed.",
     "option_b": "Someone informed the director that he must have the team submit the revised plan.",
     "option_c": "The plan was submitted by Friday, as informed.",
     "option_d": "The director was told that he should submit the team's plan.",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 94,
+    "explanation": null
   },
   {
-    "question_number": 95,
+    "id": 14896,
+    "paper_id": 30,
     "question_text": "Choose the most suitable option to replace the highlighted part of the sentence: He has went to the market.",
     "option_a": "has go",
     "option_b": "had gone",
     "option_c": "went",
     "option_d": "has gone",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 95,
+    "explanation": null
   },
   {
-    "question_number": 96,
+    "id": 14897,
+    "paper_id": 30,
     "question_text": "Rearrange the following sentences in correct order to make a meaningful sentence P: and cultural pluralism Q: India’s democratic fabric 11 R: is deeply rooted S: in historical dialogues",
     "option_a": "QRSP",
     "option_b": "PRSQ",
     "option_c": "QSPR",
     "option_d": "QPSR",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 96,
+    "explanation": null
   },
   {
-    "question_number": 97,
+    "id": 14898,
+    "paper_id": 30,
     "question_text": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. She said, \"John must have missed the train.\"",
     "option_a": "She said John might missed the train.",
     "option_b": "She said that John must had missed the train.",
     "option_c": "She said that John must have missed the train.",
     "option_d": "She said John had to miss the train.",
-    "correct_answer": "B"
+    "correct_answer": "C",
+    "question_number": 97,
+    "explanation": "Modal 'must have' expressing logical deduction remains unchanged in indirect speech; 'must had' is ungrammatical."
   },
   {
-    "question_number": 98,
+    "id": 14899,
+    "paper_id": 30,
     "question_text": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The coach said that practice would begin at 6 a.m. the next day.",
     "option_a": "\"Practice will begin at 6 a.m. tomorrow,\" said the coach.",
     "option_b": "\"Practice would begin at 6 a.m. the next day,\" the coach said.",
     "option_c": "\"We begin practice at 6 a.m.,\" said the coach.",
     "option_d": "\"Practice is starting at 6 a.m. tomorrow,\" said the coach.",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 98,
+    "explanation": null
   },
   {
-    "question_number": 99,
+    "id": 14900,
+    "paper_id": 30,
     "question_text": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. He said that were it not for her, they would have lost everything.",
     "option_a": "\"If it was not for her, we would have lost everything,\" he said.",
     "option_b": "\"If not for her, we would have lost it all,\" he said.",
     "option_c": "\"Were it not for her, we would have lost everything,\" he said.",
     "option_d": "\"Had it not been for her, we would lose everything,\" he said.",
-    "correct_answer": "A"
+    "correct_answer": "C",
+    "question_number": 99,
+    "explanation": "The direct speech corresponding to the inverted subjunctive conditional 'were it not for her, they would have lost everything' is '\"Were it not for her, we would have lost everything,\" he said.'"
   },
   {
-    "question_number": 100,
+    "id": 14901,
+    "paper_id": 30,
     "question_text": "Rearrange the following sentences in correct order to make a logical passage.\n\n1. Therefore, libraries are evolving into community learning hubs.\n\n2. The role of traditional libraries is changing. 12\n\n3. They now offer more than just books, including digital resources and workshops.\n\n4. This adaptation ensures their continued relevance in the digital age.",
     "option_a": "2-4-1-3",
     "option_b": "2-1-3-4",
     "option_c": "3-4-2-1",
     "option_d": "2-3-4-1",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 100,
+    "explanation": null
   }
 ]

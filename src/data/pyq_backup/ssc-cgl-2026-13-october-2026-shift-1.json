@@ -1,6 +1,6 @@
 [
   {
-    "id": 8002,
+    "id": 16902,
     "paper_id": 51,
     "question_text": "A says: \"B is the son of my father's only daughter.\" How is A related to B?",
     "option_a": "Father",
@@ -12,7 +12,7 @@
     "explanation": null
   },
   {
-    "id": 8003,
+    "id": 16903,
     "paper_id": 51,
     "question_text": "Which of the following numbers will replace the question mark (?) in the given series? 5, 31, 161, 811, ?",
     "option_a": "3450",
@@ -24,7 +24,7 @@
     "explanation": null
   },
   {
-    "id": 8004,
+    "id": 16904,
     "paper_id": 51,
     "question_text": "If in the word KEYBOARD the first and second letters are interchanged, in the same way the third and fourth, fifth and sixth and so on are interchanged, then what will be the 3rd letter from the right?",
     "option_a": "D",
@@ -36,7 +36,7 @@
     "explanation": null
   },
   {
-    "id": 8005,
+    "id": 16905,
     "paper_id": 51,
     "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 3 10 27 6 8 42 7 9 ?",
     "option_a": "42",
@@ -48,7 +48,7 @@
     "explanation": null
   },
   {
-    "id": 8006,
+    "id": 16906,
     "paper_id": 51,
     "question_text": "Pointing to a portrait, a man says, \"The person in the portrait is the only grandson of the father of my wife's only brother.\" If the man has no siblings, how is the person in the portrait related to the man?",
     "option_a": "Son",
@@ -60,7 +60,7 @@
     "explanation": null
   },
   {
-    "id": 8007,
+    "id": 16907,
     "paper_id": 51,
     "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. | 30 | 60 | 50 | |----|----|----| | 18 | 45 | 35 | | 12 | 25 | 20 | | 24 | 40 | ? |",
     "option_a": "25",
@@ -72,7 +72,7 @@
     "explanation": null
   },
   {
-    "id": 8008,
+    "id": 16908,
     "paper_id": 51,
     "question_text": "A is the male child of C. C and Q are sisters. Z is the mother of Q. P is the son of Z. Based on the given information, which of the following options is correct?",
     "option_a": "P is the maternal uncle of A.",
@@ -84,7 +84,7 @@
     "explanation": null
   },
   {
-    "id": 8009,
+    "id": 16909,
     "paper_id": 51,
     "question_text": "Roll numbers are assigned such that the middle two digits represent the sum of the first two digits. Identify the invalid roll number.",
     "option_a": "381022",
@@ -96,7 +96,7 @@
     "explanation": null
   },
   {
-    "id": 8010,
+    "id": 16910,
     "paper_id": 51,
     "question_text": "Study the pattern in the given series and find the next set of letters in the series. DEP, ZFL, VGH, ?",
     "option_a": "RHD",
@@ -108,7 +108,7 @@
     "explanation": null
   },
   {
-    "id": 8011,
+    "id": 16911,
     "paper_id": 51,
     "question_text": "Select the odd number pair from the given alternatives.",
     "option_a": "45, 2070",
@@ -120,7 +120,7 @@
     "explanation": null
   },
   {
-    "id": 8012,
+    "id": 16912,
     "paper_id": 51,
     "question_text": "Read the question carefully and choose the most appropriate option. You are a school teacher. Two parents are arguing during a parent-teacher meeting and their disagreement is affecting the overall atmosphere. What would you do?",
     "option_a": "Ask both parents to leave immediately without hearing their concerns.",
@@ -132,7 +132,7 @@
     "explanation": null
   },
   {
-    "id": 8013,
+    "id": 16913,
     "paper_id": 51,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-1_p3_x307.jpeg)",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-1_p3_x308.jpeg)",
@@ -144,7 +144,7 @@
     "explanation": null
   },
   {
-    "id": 8014,
+    "id": 16914,
     "paper_id": 51,
     "question_text": "If L means '÷', M means '×', N means '+', and O means '-', which of the following statement(s) is/are NOT correct? Statement I: 40 L 8 N 10 M 2 = 25 Statement II: 15 M 3 O 10 L 5 = 43",
     "option_a": "Only I",
@@ -156,7 +156,7 @@
     "explanation": null
   },
   {
-    "id": 8015,
+    "id": 16915,
     "paper_id": 51,
     "question_text": "What should come in place of the question mark (?) in the following analogy? A2C5E : B3D6F :: G8I11K : ?",
     "option_a": "H10J12L",
@@ -168,7 +168,7 @@
     "explanation": null
   },
   {
-    "id": 8016,
+    "id": 16916,
     "paper_id": 51,
     "question_text": "In the given question, a few statements have been given followed by conclusions based on them. Consider the statements to be true and answer which of the given conclusions logically follow the statement. Statements\n\n1. Every nation that respects rights is democratic.\n\n2. No authoritarian regime respects rights.\n\n3. Country Z is not democratic. Conclusions\n\nI. Country Z does not respect rights.\n\nII. Country Z is an authoritarian regime.\n\nIII. Some authoritarian regimes may become democratic.\n\nIV. All democratic nations respect rights.",
     "option_a": "Only I follows",
@@ -180,7 +180,7 @@
     "explanation": null
   },
   {
-    "id": 8017,
+    "id": 16917,
     "paper_id": 51,
     "question_text": "Read the statement carefully and assume it to be true. Then examine the two conclusions given below it and decide which conclusion(s), if any, logically follow from the statement.\n\nStatement: The government has increased investment in renewable energy to reduce dependence on fossil fuels.\n\nConclusions:\n\nI. Fossil fuels will be completely banned in the near future.\n\nII. Renewable energy is considered important for the future.",
     "option_a": "Only Conclusion I follows",
@@ -192,7 +192,7 @@
     "explanation": null
   },
   {
-    "id": 8018,
+    "id": 16918,
     "paper_id": 51,
     "question_text": "If '★' means +, '♦' means -, '○' means ×, and '△' means ÷, find [(18 △ 6) ♦ 2] ○ [(4 ★ 2) ○ 3].",
     "option_a": "12",
@@ -204,7 +204,7 @@
     "explanation": null
   },
   {
-    "id": 8019,
+    "id": 16919,
     "paper_id": 51,
     "question_text": "Read the given conditions carefully and determine the appropriate outcome for the case provided. If any exception applies, identify the authority to whom the case should be referred. Criteria for Industrial Safety Certification:\n\n(i) Must have 3+ years of field experience.\n\n(ii) Must have completed a certified safety course. Exceptions: Exception",
     "option_a": "Certification to be approved",
@@ -216,7 +216,7 @@
     "explanation": null
   },
   {
-    "id": 8020,
+    "id": 16920,
     "paper_id": 51,
     "question_text": "In a certain code language, \"NUMBER\" is written as \"NvMcEs\" How will \"POCKET\" be written in the same code language?",
     "option_a": "PpClEu",
@@ -228,7 +228,7 @@
     "explanation": null
   },
   {
-    "id": 8021,
+    "id": 16921,
     "paper_id": 51,
     "question_text": "In the following question two statements are given and these statements are followed by two conclusions. You have to take the given two statements to be true even if they seem to be at variance from commonly known facts. Read the conclusions and then decide which of the given conclusions logically follows from the two given statements.\n\nStatements: Some apples are fruits. Some fruits are sweet.\n\nConclusions:\n\nI. All sweet are fruits.\n\nII. Some sweet are fruits.",
     "option_a": "Only conclusion I follows",
@@ -240,7 +240,7 @@
     "explanation": null
   },
   {
-    "id": 8022,
+    "id": 16922,
     "paper_id": 51,
     "question_text": "In the following question, three statements are given followed by three conclusions. Consider the statements to be true even if they differ from commonly known facts. Read the conclusions carefully and decide which of the conclusions logically follow from the given statements.\n\nStatements: Some mangoes are fruits. All fruits are foods. No food is a liquid.\n\nConclusions:\n\nI. Some mangoes are foods.\n\nII. All mangoes are foods.\n\nIII. Some foods are not liquids.",
     "option_a": "Both conclusions I and II follow",
@@ -252,7 +252,7 @@
     "explanation": null
   },
   {
-    "id": 8023,
+    "id": 16923,
     "paper_id": 51,
     "question_text": "Read the given statement carefully and the following assumptions based on it. Decide which of the assumptions are implicit in the statement.\n\nStatement: The municipal council should provide tax incentives to companies that adopt a four-day workweek to reduce overall energy consumption in office buildings. Assumptions:\n\nI. A four-day workweek will lead to a measurable reduction in energy usage in office environments.\n\nII. Businesses are motivated by financial tax incentives to adjust their operational work schedules.",
     "option_a": "Only Assumption I is implicit",
@@ -264,7 +264,7 @@
     "explanation": null
   },
   {
-    "id": 8024,
+    "id": 16924,
     "paper_id": 51,
     "question_text": "A visa-on-arrival is granted only if the traveler holds an eligible-country passport, has a return ticket, and shows funds of at least $ 500 — unless the traveler already holds a pre-approved e-visa, in which case it is granted regardless of the other conditions. Traveler: eligible passport, return ticket present, funds shown $ 300, no e-visa.",
     "option_a": "Visa granted",
@@ -276,7 +276,7 @@
     "explanation": null
   },
   {
-    "id": 8025,
+    "id": 16925,
     "paper_id": 51,
     "question_text": "Select the option that is related to the third word in the same way as the second word is related to the first word. (The words must be considered as meaningful English words and must not be related to each other based on the number of letters/number of consonants/vowels in the word.) Sericulture : Silk :: Apiculture : ?",
     "option_a": "Leather",
@@ -288,7 +288,7 @@
     "explanation": null
   },
   {
-    "id": 8026,
+    "id": 16926,
     "paper_id": 51,
     "question_text": "In each of the following questions, four options have been given, of which three are alike in some way and one is different. Choose the odd one out.",
     "option_a": "Canberra –",
@@ -300,7 +300,7 @@
     "explanation": null
   },
   {
-    "id": 8027,
+    "id": 16927,
     "paper_id": 51,
     "question_text": "The \"PM Gati Shakti National Master Plan\" aims to bring together various infrastructure projects. Which of the following is a primary objective of this initiative?",
     "option_a": "To promote renewable energy adoption across the country.",
@@ -312,7 +312,7 @@
     "explanation": null
   },
   {
-    "id": 8028,
+    "id": 16928,
     "paper_id": 51,
     "question_text": "The \"concept of 'One Nation, One Ration Card'\" is aimed at ensuring food security for migrant workers and their families. Which of the following technologies or systems is primarily used to facilitate the seamless implementation of this initiative across the country?",
     "option_a": "Blockchain technology for tracking foodgrain distribution.",
@@ -324,7 +324,7 @@
     "explanation": null
   },
   {
-    "id": 8029,
+    "id": 16929,
     "paper_id": 51,
     "question_text": "Who became the first Indian fencer to qualify for the Olympics?",
     "option_a": "Bhavani Devi",
@@ -336,7 +336,7 @@
     "explanation": null
   },
   {
-    "id": 8030,
+    "id": 16930,
     "paper_id": 51,
     "question_text": "Which ancient Indian treatise extensively details the rules and strategies of traditional wrestling, known as Malla-yuddha?",
     "option_a": "Arthashastra",
@@ -348,7 +348,7 @@
     "explanation": null
   },
   {
-    "id": 8031,
+    "id": 16931,
     "paper_id": 51,
     "question_text": "In which city was the final of the 2011 Cricket World Cup contested?",
     "option_a": "Mumbai",
@@ -360,7 +360,7 @@
     "explanation": null
   },
   {
-    "id": 8032,
+    "id": 16932,
     "paper_id": 51,
     "question_text": "During the first Five-Year Plan, which of the following most accurately represents the trade balance scenario?",
     "option_a": "India consistently maintained a trade surplus driven by robust export performance",
@@ -372,7 +372,7 @@
     "explanation": null
   },
   {
-    "id": 8033,
+    "id": 16933,
     "paper_id": 51,
     "question_text": "What does the Bharatiya Nagarik Suraksha Sanhita (BNSS), prescribe regarding \"mercy petitions\" in death sentence cases?",
     "option_a": "No mercy petitions allowed post-trial",
@@ -384,7 +384,7 @@
     "explanation": null
   },
   {
-    "id": 8034,
+    "id": 16934,
     "paper_id": 51,
     "question_text": "Who was elected as the President of the Inter-Parliamentary Union (IPU) in 2023?",
     "option_a": "Duarte Pacheco",
@@ -396,7 +396,7 @@
     "explanation": null
   },
   {
-    "id": 8035,
+    "id": 16935,
     "paper_id": 51,
     "question_text": "Who among the following is the author of the Sanskrit play Mudrarakshasa?",
     "option_a": "Kalidasa",
@@ -408,7 +408,7 @@
     "explanation": null
   },
   {
-    "id": 8036,
+    "id": 16936,
     "paper_id": 51,
     "question_text": "The rapid growth phase of the Indian Population was lying between which of the following time periods?",
     "option_a": "1901-1921",
@@ -420,7 +420,7 @@
     "explanation": null
   },
   {
-    "id": 8037,
+    "id": 16937,
     "paper_id": 51,
     "question_text": "Which legislative authority was granted under the Regulating Act of 1773?",
     "option_a": "Only the Court of Directors could issue laws.",
@@ -432,7 +432,7 @@
     "explanation": null
   },
   {
-    "id": 8038,
+    "id": 16938,
     "paper_id": 51,
     "question_text": "Which Article of the Indian Constitution prohibits Parliament from discussing the conduct of a Supreme Court or High Court judge in the discharge of their duties?",
     "option_a": "Article 119",
@@ -444,7 +444,7 @@
     "explanation": null
   },
   {
-    "id": 8039,
+    "id": 16939,
     "paper_id": 51,
     "question_text": "Fill in the blank: Kinetic friction is generally _______ than the maximum static friction.",
     "option_a": "greater",
@@ -456,7 +456,7 @@
     "explanation": null
   },
   {
-    "id": 8040,
+    "id": 16940,
     "paper_id": 51,
     "question_text": "The 2025 International Booker Prize winner Banu Mushtaq wrote her original work in which language?",
     "option_a": "Malayalam",
@@ -468,7 +468,7 @@
     "explanation": null
   },
   {
-    "id": 8041,
+    "id": 16941,
     "paper_id": 51,
     "question_text": "What distinguishes the Harappan bronze female figurine from the steatite statue?",
     "option_a": "She wears detailed garments.",
@@ -480,7 +480,7 @@
     "explanation": null
   },
   {
-    "id": 8042,
+    "id": 16942,
     "paper_id": 51,
     "question_text": "Among the following Indian Ocean island nations, which is located closest to the African coast?",
     "option_a": "Mauritius",
@@ -492,7 +492,7 @@
     "explanation": null
   },
   {
-    "id": 8043,
+    "id": 16943,
     "paper_id": 51,
     "question_text": "A Judicial Magistrate of First Class (JMFC) sentences an accused to three years' imprisonment (the maximum within his sentencing power) and a fine of ₹50,000. In default of payment of the fine, the court further directs that the accused shall undergo one year of imprisonment. Which of the following is most accurate under the Bharatiya Nagarik Suraksha Sanhita, 2023 in India?",
     "option_a": "Valid, because default imprisonment is separate from substantive punishment.",
@@ -504,7 +504,7 @@
     "explanation": null
   },
   {
-    "id": 8044,
+    "id": 16944,
     "paper_id": 51,
     "question_text": "Under Article 3 of the Constitution of India, what is the time period within which the President must refer a Bill affecting the area, boundaries, or name of a State to the concerned State Legislature for its views?",
     "option_a": "A constitutionally fixed period of six months",
@@ -516,7 +516,7 @@
     "explanation": null
   },
   {
-    "id": 8045,
+    "id": 16945,
     "paper_id": 51,
     "question_text": "Under the economic reforms introduced since 1991, which of the following pairs of Central Public Sector Enterprises (CPSEs) has been granted Maharatna status?",
     "option_a": "Indian Oil Corporation Limited and Steel Authority of India Limited",
@@ -528,7 +528,7 @@
     "explanation": null
   },
   {
-    "id": 8046,
+    "id": 16946,
     "paper_id": 51,
     "question_text": "Which of the following was the primary stabilisation measures taken under the New Economic Policy (NEP) of 1991?",
     "option_a": "Long-term measures to improve efficiency",
@@ -540,7 +540,7 @@
     "explanation": null
   },
   {
-    "id": 8047,
+    "id": 16947,
     "paper_id": 51,
     "question_text": "Which dimension of Human Development Index (HDI) is most directly linked with longevity?",
     "option_a": "Knowledge",
@@ -552,7 +552,7 @@
     "explanation": null
   },
   {
-    "id": 8048,
+    "id": 16948,
     "paper_id": 51,
     "question_text": "In the calculation of the Human Development Index (HDI), purchasing power parity (PPP) is primarily used to:",
     "option_a": "Compare income levels across countries after accounting for differences in the cost of living",
@@ -564,7 +564,7 @@
     "explanation": null
   },
   {
-    "id": 8049,
+    "id": 16949,
     "paper_id": 51,
     "question_text": "What primary mandate was given to the Planning Commission of India upon its establishment in March 1950?",
     "option_a": "Conducting national demographic census surveys",
@@ -576,7 +576,7 @@
     "explanation": null
   },
   {
-    "id": 8050,
+    "id": 16950,
     "paper_id": 51,
     "question_text": "The Hindu Widows’ Remarriage Act was passed during the tenure of which GovernorGeneral of India?",
     "option_a": "Lord Cornwallis",
@@ -588,7 +588,7 @@
     "explanation": null
   },
   {
-    "id": 8051,
+    "id": 16951,
     "paper_id": 51,
     "question_text": "A vaccine may introduce weakened or inactive microbes, or parts of them, into the body. What is the main purpose of vaccination?",
     "option_a": "Increase blood pressure",
@@ -600,7 +600,7 @@
     "explanation": null
   },
   {
-    "id": 8052,
+    "id": 16952,
     "paper_id": 51,
     "question_text": "The base of a right prism is a rhombus with diagonals 8 cm and 10 cm. The height of the prism is 12 cm. Find the volume.",
     "option_a": "384 cm³",
@@ -612,7 +612,7 @@
     "explanation": null
   },
   {
-    "id": 8053,
+    "id": 16953,
     "paper_id": 51,
     "question_text": "In a triangle, the centroid divides each median in the ratio 2:\n\n1. What is the distance between the centroid and the incenter in an equilateral triangle?",
     "option_a": "Equal to the",
@@ -624,7 +624,7 @@
     "explanation": null
   },
   {
-    "id": 8054,
+    "id": 16954,
     "paper_id": 51,
     "question_text": "What is the smallest number that is a perfect square and is also divisible by 6, 15, and 20?",
     "option_a": "700",
@@ -636,7 +636,7 @@
     "explanation": null
   },
   {
-    "id": 8055,
+    "id": 16955,
     "paper_id": 51,
     "question_text": "A and B started a business by investing capital in the ratio 5 :\n\n3. At the end of 6 months, C joined them with an investment equal to the average of A and B. If the profit at the end of the year is ₹18,000, find C's share.",
     "option_a": "₹3,600",
@@ -648,7 +648,7 @@
     "explanation": null
   },
   {
-    "id": 8056,
+    "id": 16956,
     "paper_id": 51,
     "question_text": "An amount of ₹5,000 is invested at 12% compound interest. What will be the amount after 2 years?",
     "option_a": "₹5972",
@@ -660,7 +660,7 @@
     "explanation": null
   },
   {
-    "id": 8057,
+    "id": 16957,
     "paper_id": 51,
     "question_text": "A large room has an area of 24√3 m² . It is to be covered with regular hexagonal tiles of side 20 cm. How many full tiles are required to cover the area (ignoring gaps)?",
     "option_a": "400 tiles",
@@ -672,7 +672,7 @@
     "explanation": null
   },
   {
-    "id": 8058,
+    "id": 16958,
     "paper_id": 51,
     "question_text": "A cone-shaped tank has a radius of 5 cm and a slant height of 14 cm. If the cost of painting is ₹18 per cm², find the approximate cost to paint the tank. (π = 3.14)",
     "option_a": "₹6,000",
@@ -684,7 +684,7 @@
     "explanation": null
   },
   {
-    "id": 8059,
+    "id": 16959,
     "paper_id": 51,
     "question_text": "If the area of a quadrant of a circle is 16π cm², find the radius of the circle.",
     "option_a": "4 cm",
@@ -696,7 +696,7 @@
     "explanation": null
   },
   {
-    "id": 8060,
+    "id": 16960,
     "paper_id": 51,
     "question_text": "An article is sold at 20% profit. If its cost price and selling price are both reduced by ₹100, the profit would be 4% more. Find the original cost price.",
     "option_a": "₹200",
@@ -708,7 +708,7 @@
     "explanation": null
   },
   {
-    "id": 8061,
+    "id": 16961,
     "paper_id": 51,
     "question_text": "By selling 45 apples for ₹160, a vendor loses 20%. How many apples should he sell for ₹112 to gain 20% in the entire transaction?",
     "option_a": "24",
@@ -720,7 +720,7 @@
     "explanation": null
   },
   {
-    "id": 8062,
+    "id": 16962,
     "paper_id": 51,
     "question_text": "A man standing on a tower sees a train approaching. The angle of depression changes from 30° to 60° in 14 minutes. Find the time taken by the train to reach the base of the tower.",
     "option_a": "6 minutes",
@@ -732,7 +732,7 @@
     "explanation": null
   },
   {
-    "id": 8063,
+    "id": 16963,
     "paper_id": 51,
     "question_text": "Angles x and y are supplementary. y is 40° more than one-fourth of its supplementary angle. Find the value of the complement of half of\n\nx.",
     "option_a": "22°",
@@ -744,7 +744,7 @@
     "explanation": null
   },
   {
-    "id": 8064,
+    "id": 16964,
     "paper_id": 51,
     "question_text": "If 0° < θ < 90°, find the value of 1 + √tan θ+sin θ . tan θ−sin θ",
     "option_a": "1 + cosec θ + cot",
@@ -756,7 +756,7 @@
     "explanation": null
   },
   {
-    "id": 8065,
+    "id": 16965,
     "paper_id": 51,
     "question_text": "If a solid sphere of radius 9 cm is melted and recast into a cylinder with a base radius of 3 cm, what will be the height of the cylinder?",
     "option_a": "102 cm",
@@ -768,7 +768,7 @@
     "explanation": null
   },
   {
-    "id": 8066,
+    "id": 16966,
     "paper_id": 51,
     "question_text": "In triangle ABC, points D and E lie on AB and AC such that DE is parallel to BC. If AD = 1 DB 2 and AE = 6 cm, find AC.",
     "option_a": "14 cm",
@@ -780,7 +780,7 @@
     "explanation": null
   },
   {
-    "id": 8067,
+    "id": 16967,
     "paper_id": 51,
     "question_text": "The square root of 1.44×0.81 is:",
     "option_a": "0.98",
@@ -792,7 +792,7 @@
     "explanation": null
   },
   {
-    "id": 8068,
+    "id": 16968,
     "paper_id": 51,
     "question_text": "A medium-sized furniture manufacturer borrowed a certain amount from a nationalized bank to expand its production unit. The loan was sanctioned at a fixed rate of simple interest. After 8 years, the total amount repaid was ₹7,20,000, which included ₹2,40,000 as interest. Had the company borrowed ₹1,50,000 more at the same rate and for the same duration, determine the total repayment amount.",
     "option_a": "₹8,66,000",
@@ -804,7 +804,7 @@
     "explanation": null
   },
   {
-    "id": 8069,
+    "id": 16969,
     "paper_id": 51,
     "question_text": "Pipe X can fill a tank in 16 minutes and pipe Y can fill it in in 24 minutes. A drainpipe Z can empty it in x minutes. All the three pipes are opened simultaneously at a particular point of time and after 8 minutes, pipe Z is closed. The tank becomes exactly full 4 minutes later. Find the time taken by pipe Z to empty the entirely filled tank alone.",
     "option_a": "25 minutes",
@@ -816,7 +816,7 @@
     "explanation": null
   },
   {
-    "id": 8070,
+    "id": 16970,
     "paper_id": 51,
     "question_text": "Two drones, Alpha and Beta, are tasked with mapping a large valley. Alpha can map the entire valley alone in 10 hrs of flight, while Beta alone can do that in 15 hours of flight. Alpha's battery lasts for exactly 2 hours of continuous flight, after which it requires 1 hour of recharge. Beta's battery lasts for 3 hours of continuous flight, after which it requires 2 hours of recharge. Both start the mapping at the same time in fully charged condition. How much time will it take to completely map the valley?",
     "option_a": "6 hrs",
@@ -828,7 +828,7 @@
     "explanation": null
   },
   {
-    "id": 8071,
+    "id": 16971,
     "paper_id": 51,
     "question_text": "If cos² θ= 1 and 0°≤θ≤90° , how many distinct values of θ satisfy this equation?",
     "option_a": "2",
@@ -840,7 +840,7 @@
     "explanation": null
   },
   {
-    "id": 8072,
+    "id": 16972,
     "paper_id": 51,
     "question_text": "Evaluate: tan 42°tan 48°−cot 48°cot 42°",
     "option_a": "1",
@@ -852,7 +852,7 @@
     "explanation": null
   },
   {
-    "id": 8073,
+    "id": 16973,
     "paper_id": 51,
     "question_text": "If a + b + c = 17 and ab + bc + ca = 21, what is the value of a³ + b³ + c³ - 3abc?",
     "option_a": "3100",
@@ -864,7 +864,7 @@
     "explanation": null
   },
   {
-    "id": 8074,
+    "id": 16974,
     "paper_id": 51,
     "question_text": "If a + b = 17 and ab = 60, then find the value of (a-b)4.",
     "option_a": "83521",
@@ -876,7 +876,7 @@
     "explanation": null
   },
   {
-    "id": 8075,
+    "id": 16975,
     "paper_id": 51,
     "question_text": "A regular hexagonal prism has a base side length of 5 m and a height of 10 m. A regular hexagonal pyramid with a height of 4 m shares the top base of the prism. Find the total volume of the resulting composite solid.",
     "option_a": "425√3 m³",
@@ -888,7 +888,7 @@
     "explanation": null
   },
   {
-    "id": 8076,
+    "id": 16976,
     "paper_id": 51,
     "question_text": "If a= √5 + 2√6 and b= √5 −2√6 , evaluate the value of the following expression: a6 + b6.",
     "option_a": "970",
@@ -900,7 +900,7 @@
     "explanation": null
   },
   {
-    "id": 8077,
+    "id": 16977,
     "paper_id": 51,
     "question_text": "Choose the correct transformation of the sentence into direct speech. She wondered if she should apply for the scholarship.",
     "option_a": "She asked, \"Do I apply for the scholarship?\"",
@@ -912,7 +912,7 @@
     "explanation": null
   },
   {
-    "id": 8078,
+    "id": 16978,
     "paper_id": 51,
     "question_text": "Rearrange the parts of the sentence in the correct order. The Nobel Prize in Literature P. for its powerful storytelling and deep philosophical insights Q. was awarded to the renowned author R. whose latest novel explores human resilience S. in the face of adversity and historical struggles",
     "option_a": "PRSQ",
@@ -924,7 +924,7 @@
     "explanation": null
   },
   {
-    "id": 8079,
+    "id": 16979,
     "paper_id": 51,
     "question_text": "People who do not lay out their money carefully, soon come to grief. What does \"come to grief\" mean?",
     "option_a": "To experience failure or trouble",
@@ -936,7 +936,7 @@
     "explanation": null
   },
   {
-    "id": 8080,
+    "id": 16980,
     "paper_id": 51,
     "question_text": "Complete the sentence by choosing a suitable word to fill in the blank. That she, of all people, ____ the one to criticize others is baffling.",
     "option_a": "are",
@@ -948,7 +948,7 @@
     "explanation": null
   },
   {
-    "id": 8081,
+    "id": 16981,
     "paper_id": 51,
     "question_text": "Identify the word in this sentence that contains an error. He was accused for cheating in the final exam.",
     "option_a": "cheating",
@@ -960,7 +960,7 @@
     "explanation": null
   },
   {
-    "id": 8082,
+    "id": 16982,
     "paper_id": 51,
     "question_text": "Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?\n\n1. Many birds migrate seasonally, traveling thousands of kilometers to find suitable breeding or feeding grounds.\n\n2. Scientists have discovered that birds use a combination of celestial navigation, Earth's magnetic field, and learned landmarks to guide their journeys.\n\n3. This behavior is often triggered by changes in daylight duration and temperature, signaling the need to relocate.\n\n4. Some species, such as the Arctic Tern, undertake the longest migration, covering distances between the Arctic and Antarctic.\n\n5. Understanding bird migration patterns is crucial for conservation efforts, as climate change and habitat destruction pose growing threats.",
     "option_a": "2-1-4-3-5",
@@ -972,7 +972,7 @@
     "explanation": null
   },
   {
-    "id": 8083,
+    "id": 16983,
     "paper_id": 51,
     "question_text": "Improve the sentence by selecting the appropriate preposition from the following options. We need to plan carefully to stay ____ of our competition.\n\nfor (B)\n\n(C) beyond (D) ahead",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-1_q82_opt_A.png)",
@@ -984,7 +984,7 @@
     "explanation": null
   },
   {
-    "id": 8084,
+    "id": 16984,
     "paper_id": 51,
     "question_text": "Which of the following is the correct definition of the word \"protege\"?",
     "option_a": "A mentor or advisor",
@@ -996,7 +996,7 @@
     "explanation": null
   },
   {
-    "id": 8085,
+    "id": 16985,
     "paper_id": 51,
     "question_text": "Select the most appropriate antonym of the given word. Ignominious",
     "option_a": "Honorable",
@@ -1008,7 +1008,7 @@
     "explanation": null
   },
   {
-    "id": 8086,
+    "id": 16986,
     "paper_id": 51,
     "question_text": "Choose the correct meaning of idiom: To kick against the pricks",
     "option_a": "To act with excessive caution",
@@ -1020,7 +1020,7 @@
     "explanation": null
   },
   {
-    "id": 8087,
+    "id": 16987,
     "paper_id": 51,
     "question_text": "Spot the correct spelling of 'the process where particles form clumps or flocs'.",
     "option_a": "Floculation",
@@ -1032,7 +1032,7 @@
     "explanation": null
   },
   {
-    "id": 8088,
+    "id": 16988,
     "paper_id": 51,
     "question_text": "Choose the correct one-word substitute for: 'Fear of the number thirteen'.",
     "option_a": "Triskaidekaphobia",
@@ -1044,7 +1044,7 @@
     "explanation": null
   },
   {
-    "id": 8089,
+    "id": 16989,
     "paper_id": 51,
     "question_text": "Select the correct option: The grant allowed researchers to delve __ topics previously considered fringe.",
     "option_a": "onto",
@@ -1056,7 +1056,7 @@
     "explanation": null
   },
   {
-    "id": 8090,
+    "id": 16990,
     "paper_id": 51,
     "question_text": "Find the part of the sentence that contains an error: The judge not only dismissed the petition (1)/ but also reprimanding the lawyer (2)/ for misrepresenting facts (3)/ during the crossexamination. (4)",
     "option_a": "(1)",
@@ -1068,7 +1068,7 @@
     "explanation": null
   },
   {
-    "id": 8091,
+    "id": 16991,
     "paper_id": 51,
     "question_text": "Find the part of the sentence that contains an error: While the director had hoped for clarity, (1)/ what emerged instead were overlapping interpretations (2)/ that undermined the coherence (3)/ of the original draft. (4)",
     "option_a": "(1)",
@@ -1080,7 +1080,7 @@
     "explanation": null
   },
   {
-    "id": 8092,
+    "id": 16992,
     "paper_id": 51,
     "question_text": "Change the following from active to passive: Who wrote this poem?",
     "option_a": "By whom was this poem written?",
@@ -1092,7 +1092,7 @@
     "explanation": null
   },
   {
-    "id": 8093,
+    "id": 16993,
     "paper_id": 51,
     "question_text": "Change the following from active to passive: The speaker's tone conveyed more than the actual words.",
     "option_a": "More than the actual words were conveyed by the speaker's tone.",
@@ -1104,7 +1104,7 @@
     "explanation": null
   },
   {
-    "id": 8094,
+    "id": 16994,
     "paper_id": 51,
     "question_text": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The doctor said that no sooner had the treatment begun than the symptoms improved.",
     "option_a": "\"No sooner had the treatment begun than the symptoms improved,\" said the doctor.",
@@ -1116,7 +1116,7 @@
     "explanation": null
   },
   {
-    "id": 8095,
+    "id": 16995,
     "paper_id": 51,
     "question_text": "Choose the most appropriate synonym of the underlined word. The instructions were ambiguous and caused confusion.",
     "option_a": "Clear",
@@ -1128,7 +1128,7 @@
     "explanation": null
   },
   {
-    "id": 8096,
+    "id": 16996,
     "paper_id": 51,
     "question_text": "In the following question, the first and last parts of the sentence (1 and 6) are given. The rest of the sentence is split into four parts and named A, B, C, and D. These four parts are not given in their proper order. Read the sentence and find out which of the four combinations is correct.\n\n1. Modern architects are increasingly A. to combat rising pollution B. designing vertical forests that C. integrate lush vegetation into D. high-rise residential buildings\n\n6. and improve the local biodiversity.",
     "option_a": "ACDB",
@@ -1140,7 +1140,7 @@
     "explanation": null
   },
   {
-    "id": 8097,
+    "id": 16997,
     "paper_id": 51,
     "question_text": "**Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. As Dorothy and her companions approached the Emerald City, admiration was tempered by uneasiness. From afar, its towers gleamed like precious stones, creating an impression of extraordinary wealth. At the gate, however, every visitor was compelled to wear green spectacles. The Guardian claimed that the glasses protected the eyes from the city’s dazzling brilliance, but the travellers suspected a subtler purpose: the lenses might manipulate perception and make the city appear more magnificent than it actually was. Within the walls, green dominated every aspect of life. Buildings seemed to be made of green marble, emeralds glittered on the walls, citizens wore green garments, and even the goods in the shops conformed to the same carefully maintained colour scheme. The uniformity suggested not merely decoration, but deliberate control/appearances. Yet the splendour failed to quiet the travellers’ anxiety. Dorothy wished to return home, the Scarecrow sought intelligence, the Tin Woodman desired a heart, and the Lion longed for courage. Their private deficiencies mattered more than the city’s outward grandeur. Their hopes rested on the mysterious Wizard, although no citizen could clearly describe him. When informed that they would meet him separately, they felt increasingly vulnerable, for they had expected to draw courage from one another’s presence.\n\n---\n\nWhat did the compulsory use of green spectacles lead the travellers to suspect?",
     "option_a": "The city was genuinely too bright for ordinary vision.",
@@ -1152,7 +1152,7 @@
     "explanation": null
   },
   {
-    "id": 8098,
+    "id": 16998,
     "paper_id": 51,
     "question_text": "**Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. As Dorothy and her companions approached the Emerald City, admiration was tempered by uneasiness. From afar, its towers gleamed like precious stones, creating an impression of extraordinary wealth. At the gate, however, every visitor was compelled to wear green spectacles. The Guardian claimed that the glasses protected the eyes from the city’s dazzling brilliance, but the travellers suspected a subtler purpose: the lenses might manipulate perception and make the city appear more magnificent than it actually was. Within the walls, green dominated every aspect of life. Buildings seemed to be made of green marble, emeralds glittered on the walls, citizens wore green garments, and even the goods in the shops conformed to the same carefully maintained colour scheme. The uniformity suggested not merely decoration, but deliberate control/appearances. Yet the splendour failed to quiet the travellers’ anxiety. Dorothy wished to return home, the Scarecrow sought intelligence, the Tin Woodman desired a heart, and the Lion longed for courage. Their private deficiencies mattered more than the city’s outward grandeur. Their hopes rested on the mysterious Wizard, although no citizen could clearly describe him. When informed that they would meet him separately, they felt increasingly vulnerable, for they had expected to draw courage from one another’s presence.\n\n---\n\nThe phrase “admiration was tempered by uneasiness” means that the travellers’ admiration was:",
     "option_a": "completely replaced by fear.",
@@ -1164,7 +1164,7 @@
     "explanation": null
   },
   {
-    "id": 8099,
+    "id": 16999,
     "paper_id": 51,
     "question_text": "**Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. As Dorothy and her companions approached the Emerald City, admiration was tempered by uneasiness. From afar, its towers gleamed like precious stones, creating an impression of extraordinary wealth. At the gate, however, every visitor was compelled to wear green spectacles. The Guardian claimed that the glasses protected the eyes from the city’s dazzling brilliance, but the travellers suspected a subtler purpose: the lenses might manipulate perception and make the city appear more magnificent than it actually was. Within the walls, green dominated every aspect of life. Buildings seemed to be made of green marble, emeralds glittered on the walls, citizens wore green garments, and even the goods in the shops conformed to the same carefully maintained colour scheme. The uniformity suggested not merely decoration, but deliberate control/appearances. Yet the splendour failed to quiet the travellers’ anxiety. Dorothy wished to return home, the Scarecrow sought intelligence, the Tin Woodman desired a heart, and the Lion longed for courage. Their private deficiencies mattered more than the city’s outward grandeur. Their hopes rested on the mysterious Wizard, although no citizen could clearly describe him. When informed that they would meet him separately, they felt increasingly vulnerable, for they had expected to draw courage from one another’s presence.\n\n---\n\nWhat can be inferred from the uniform use of green throughout the city?",
     "option_a": "Other colours were unavailable to the citizens.",
@@ -1176,7 +1176,7 @@
     "explanation": null
   },
   {
-    "id": 8100,
+    "id": 17000,
     "paper_id": 51,
     "question_text": "**Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. As Dorothy and her companions approached the Emerald City, admiration was tempered by uneasiness. From afar, its towers gleamed like precious stones, creating an impression of extraordinary wealth. At the gate, however, every visitor was compelled to wear green spectacles. The Guardian claimed that the glasses protected the eyes from the city’s dazzling brilliance, but the travellers suspected a subtler purpose: the lenses might manipulate perception and make the city appear more magnificent than it actually was. Within the walls, green dominated every aspect of life. Buildings seemed to be made of green marble, emeralds glittered on the walls, citizens wore green garments, and even the goods in the shops conformed to the same carefully maintained colour scheme. The uniformity suggested not merely decoration, but deliberate control/appearances. Yet the splendour failed to quiet the travellers’ anxiety. Dorothy wished to return home, the Scarecrow sought intelligence, the Tin Woodman desired a heart, and the Lion longed for courage. Their private deficiencies mattered more than the city’s outward grandeur. Their hopes rested on the mysterious Wizard, although no citizen could clearly describe him. When informed that they would meet him separately, they felt increasingly vulnerable, for they had expected to draw courage from one another’s presence.\n\n---\n\nWhy did the travellers feel vulnerable when asked to meet the Wizard separately?",
     "option_a": "They believed that the Wizard would reject individual requests.",
@@ -1188,7 +1188,7 @@
     "explanation": null
   },
   {
-    "id": 8101,
+    "id": 17001,
     "paper_id": 51,
     "question_text": "**Comprehension (Q. 96 - 100):** Read the following passage carefully and answer the questions that follow. As Dorothy and her companions approached the Emerald City, admiration was tempered by uneasiness. From afar, its towers gleamed like precious stones, creating an impression of extraordinary wealth. At the gate, however, every visitor was compelled to wear green spectacles. The Guardian claimed that the glasses protected the eyes from the city’s dazzling brilliance, but the travellers suspected a subtler purpose: the lenses might manipulate perception and make the city appear more magnificent than it actually was. Within the walls, green dominated every aspect of life. Buildings seemed to be made of green marble, emeralds glittered on the walls, citizens wore green garments, and even the goods in the shops conformed to the same carefully maintained colour scheme. The uniformity suggested not merely decoration, but deliberate control/appearances. Yet the splendour failed to quiet the travellers’ anxiety. Dorothy wished to return home, the Scarecrow sought intelligence, the Tin Woodman desired a heart, and the Lion longed for courage. Their private deficiencies mattered more than the city’s outward grandeur. Their hopes rested on the mysterious Wizard, although no citizen could clearly describe him. When informed that they would meet him separately, they felt increasingly vulnerable, for they had expected to draw courage from one another’s presence.\n\n---\n\nWhich statement best expresses the central idea of the passage?",
     "option_a": "External magnificence may conceal uncertainty and manipulation.",

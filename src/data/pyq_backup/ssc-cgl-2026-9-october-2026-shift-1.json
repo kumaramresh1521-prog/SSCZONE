@@ -1,30 +1,30 @@
 [
   {
-    "id": 7102,
+    "id": 16002,
     "paper_id": 42,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x25.jpeg)",
     "option_a": "15",
     "option_b": "13",
     "option_c": "18",
     "option_d": "10",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 1,
-    "explanation": null
+    "explanation": "Faces 17, 16, 14, and 12 are adjacent to 15, so 13 is opposite to 15."
   },
   {
-    "id": 7103,
+    "id": 16003,
     "paper_id": 42,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x26.jpeg)",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x27.jpeg)",
     "option_b": "![Option B](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x28.jpeg)",
     "option_c": "![Option C](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x29.jpeg)",
     "option_d": "![Option D](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x30.jpeg)",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 2,
-    "explanation": null
+    "explanation": "Unfolding the paper across horizontal and vertical axes symmetrically reflects the shapes as depicted in Option B."
   },
   {
-    "id": 7104,
+    "id": 16004,
     "paper_id": 42,
     "question_text": "If a mirror is placed on the line MN, then which of the answer figures is the right image of the given figure?",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x31.jpeg)",
@@ -36,7 +36,7 @@
     "explanation": null
   },
   {
-    "id": 7105,
+    "id": 16005,
     "paper_id": 42,
     "question_text": "What comes next?",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_q4_opt_A.png)",
@@ -48,19 +48,19 @@
     "explanation": null
   },
   {
-    "id": 7106,
+    "id": 16006,
     "paper_id": 42,
     "question_text": "Figure A is related to figure B following a certain pattern. Following the same pattern, figure C is related to figure D. Study the pattern and select the figure which should be placed in place of C.",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x39.jpeg)",
     "option_b": "![Option B](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x40.jpeg)",
     "option_c": "![Option C](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x41.jpeg)",
     "option_d": "![Option D](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x42.jpeg)",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 5,
-    "explanation": null
+    "explanation": "Following the rotation and inversion pattern from Figure A to B, Figure C correctly corresponds to Option B."
   },
   {
-    "id": 7107,
+    "id": 16007,
     "paper_id": 42,
     "question_text": "How many people travel by car but not by airplane?",
     "option_a": "800",
@@ -72,19 +72,19 @@
     "explanation": null
   },
   {
-    "id": 7108,
+    "id": 16008,
     "paper_id": 42,
     "question_text": "Select the image that embeds the following figure.",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p3_x262.jpeg)",
     "option_b": "![Option B](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p3_x263.jpeg)",
     "option_c": "![Option C](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x43.jpeg)",
     "option_d": "![Option D](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x44.jpeg)",
-    "correct_answer": "A",
+    "correct_answer": "D",
     "question_number": 7,
-    "explanation": null
+    "explanation": "Option D correctly embeds the given target geometric figure."
   },
   {
-    "id": 7109,
+    "id": 16009,
     "paper_id": 42,
     "question_text": "Among 30 students, 18 like Math, 12 like Science, and 6 like both. How many like only Science?",
     "option_a": "6",
@@ -96,7 +96,7 @@
     "explanation": null
   },
   {
-    "id": 7110,
+    "id": 16010,
     "paper_id": 42,
     "question_text": "What will come at the place of question mark? 120, 143, 168, ?, 224, 255, 288.",
     "option_a": "196",
@@ -108,7 +108,7 @@
     "explanation": null
   },
   {
-    "id": 7111,
+    "id": 16011,
     "paper_id": 42,
     "question_text": "Find the missing number in the following series: 12, 12, 15, ?, 38, 62",
     "option_a": "21",
@@ -120,7 +120,7 @@
     "explanation": null
   },
   {
-    "id": 7112,
+    "id": 16012,
     "paper_id": 42,
     "question_text": "Riya ranks 15th in a class of 50 students. What is her rank from the last?",
     "option_a": "33rd",
@@ -132,7 +132,7 @@
     "explanation": null
   },
   {
-    "id": 7113,
+    "id": 16013,
     "paper_id": 42,
     "question_text": "If the signs + and × are interchanged, and the numbers 4 and 8 are interchanged, which of the following equations becomes correct?",
     "option_a": "8 × 4 + 2 =",
@@ -144,7 +144,7 @@
     "explanation": null
   },
   {
-    "id": 7114,
+    "id": 16014,
     "paper_id": 42,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p3_x264.jpeg)",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p3_x265.jpeg)",
@@ -156,7 +156,7 @@
     "explanation": null
   },
   {
-    "id": 7115,
+    "id": 16015,
     "paper_id": 42,
     "question_text": "In the following question a statement is given followed by some assumptions. Read the assumptions carefully and choose the appropriate option.\n\nStatement: Please verify the source of the news before sharing it on the society's social media page. Assumptions:\n\nI. Some news reports may be false or misleading.\n\nII. Sharing correct information is important.",
     "option_a": "Only I is implicit.",
@@ -168,7 +168,7 @@
     "explanation": null
   },
   {
-    "id": 7116,
+    "id": 16016,
     "paper_id": 42,
     "question_text": "Which of the following rows/columns are connected/related with each other in some way? Rows Columns I II III IV V 1 8 16 5 32 24 2 6 12 7 24 18 3 5 10 6 20 15 4 7 14 9 28 21 5 4 8 4 16 18",
     "option_a": "Columns I, III and",
@@ -180,7 +180,7 @@
     "explanation": null
   },
   {
-    "id": 7117,
+    "id": 16017,
     "paper_id": 42,
     "question_text": "In social psychology, which observational practice best demonstrates an advanced level of social perception during a face-toface interaction?",
     "option_a": "Concentrating exclusively on explicit spoken words while disregarding physical cues",
@@ -192,7 +192,7 @@
     "explanation": null
   },
   {
-    "id": 7118,
+    "id": 16018,
     "paper_id": 42,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p4_x503.jpeg)",
     "option_a": "A",
@@ -204,7 +204,7 @@
     "explanation": null
   },
   {
-    "id": 7119,
+    "id": 16019,
     "paper_id": 42,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p4_x504.jpeg)",
     "option_a": "A",
@@ -216,7 +216,7 @@
     "explanation": null
   },
   {
-    "id": 7120,
+    "id": 16020,
     "paper_id": 42,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p4_x505.jpeg)",
     "option_a": "2",
@@ -228,7 +228,7 @@
     "explanation": null
   },
   {
-    "id": 7121,
+    "id": 16021,
     "paper_id": 42,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p4_x506.jpeg)",
     "option_a": "A",
@@ -240,7 +240,7 @@
     "explanation": null
   },
   {
-    "id": 7122,
+    "id": 16022,
     "paper_id": 42,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p4_x507.jpeg)",
     "option_a": "B",
@@ -252,7 +252,7 @@
     "explanation": null
   },
   {
-    "id": 7123,
+    "id": 16023,
     "paper_id": 42,
     "question_text": "Fill in the blanks (_) using one of the following four options such that the series follows a specific pattern in the given order. x _ oxxn _ x _ noxxn _ x",
     "option_a": "onxo",
@@ -264,7 +264,7 @@
     "explanation": null
   },
   {
-    "id": 7124,
+    "id": 16024,
     "paper_id": 42,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p4_x508.jpeg)",
     "option_a": "4",
@@ -276,7 +276,7 @@
     "explanation": null
   },
   {
-    "id": 7125,
+    "id": 16025,
     "paper_id": 42,
     "question_text": "A university awards a full merit scholarship to any student with an aggregate score of ≥85% , no backlogs in any semester, and a family income of ≤₹6 lakh/annum. If a student has an aggregate score between 80% and 85%, no backlogs, and a family income of ≤₹6 lakh/annum, a means-based grant is awarded instead. A student has an aggregate score of 83%, no backlogs, and a family income of ₹5.5 lakh/annum. Which of the following applies to this student?",
     "option_a": "Merit scholarship",
@@ -288,7 +288,7 @@
     "explanation": null
   },
   {
-    "id": 7126,
+    "id": 16026,
     "paper_id": 42,
     "question_text": "Choose the group of letters that is different from the others.",
     "option_a": "BDGI",
@@ -300,7 +300,7 @@
     "explanation": null
   },
   {
-    "id": 7127,
+    "id": 16027,
     "paper_id": 42,
     "question_text": "Which of the following refers to the purchase of government bonds by the central bank to finance the spending needs of the government?",
     "option_a": "Primary deficit",
@@ -312,7 +312,7 @@
     "explanation": null
   },
   {
-    "id": 7128,
+    "id": 16028,
     "paper_id": 42,
     "question_text": "Which country has the highest GDP in South Asia?",
     "option_a": "India",
@@ -324,7 +324,7 @@
     "explanation": null
   },
   {
-    "id": 7129,
+    "id": 16029,
     "paper_id": 42,
     "question_text": "Which government scheme aims to provide affordable and quality healthcare services to the rural population?",
     "option_a": "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana (AB-PMJAY)",
@@ -336,7 +336,7 @@
     "explanation": null
   },
   {
-    "id": 7130,
+    "id": 16030,
     "paper_id": 42,
     "question_text": "The National Education Policy (NEP) 2020 proposes significant changes to the structure of school education. Which of the following represents the new pedagogical and curricular structure envisioned by the NEP 2020?",
     "option_a": "10+2 system",
@@ -348,7 +348,7 @@
     "explanation": null
   },
   {
-    "id": 7131,
+    "id": 16031,
     "paper_id": 42,
     "question_text": "In which city was the first-ever Santosh Trophy football final held in 1941?",
     "option_a": "Kolkata",
@@ -360,7 +360,7 @@
     "explanation": null
   },
   {
-    "id": 7132,
+    "id": 16032,
     "paper_id": 42,
     "question_text": "With which religion are Gandhara and Mathura schools of art primarily associated?",
     "option_a": "Sikhism",
@@ -372,7 +372,7 @@
     "explanation": null
   },
   {
-    "id": 7133,
+    "id": 16033,
     "paper_id": 42,
     "question_text": "Who won the 2019 Booker Prize jointly with \"Margaret Atwood\", becoming the first black woman to win the award?",
     "option_a": "Tayari Jones",
@@ -384,7 +384,7 @@
     "explanation": null
   },
   {
-    "id": 7134,
+    "id": 16034,
     "paper_id": 42,
     "question_text": "Smt. Naseem Bano received Padma Shri for excellence in which of the following fields?",
     "option_a": "Singing",
@@ -396,19 +396,19 @@
     "explanation": null
   },
   {
-    "id": 7135,
+    "id": 16035,
     "paper_id": 42,
     "question_text": "Which of the following inscriptions provides the earliest clear reference to the performance of the Ashvamedha sacrifice by a post-Mauryan ruler?",
     "option_a": "Hathigumpha Inscription",
     "option_b": "Junagarh Rock Inscription",
     "option_c": "Besnagar Garuda Pillar Inscription",
     "option_d": "Nasik Cave Inscription of Nahapana",
-    "correct_answer": "C",
+    "correct_answer": "A",
     "question_number": 34,
-    "explanation": null
+    "explanation": "The Hathigumpha Inscription of King Kharavela contains the earliest post-Mauryan reference to the Ashvamedha sacrifice."
   },
   {
-    "id": 7136,
+    "id": 16036,
     "paper_id": 42,
     "question_text": "On which range of the Himalayas is the Banihal Pass located?",
     "option_a": "Zaskar Range",
@@ -420,7 +420,7 @@
     "explanation": null
   },
   {
-    "id": 7137,
+    "id": 16037,
     "paper_id": 42,
     "question_text": "Who was the Chola king who conquered Tanjore and helped establish the Chola kingdom?",
     "option_a": "Rajaraja I",
@@ -432,7 +432,7 @@
     "explanation": null
   },
   {
-    "id": 7138,
+    "id": 16038,
     "paper_id": 42,
     "question_text": "Which of the following pairs (Type of Algae - Nutrient Rich In) is correctly matched?",
     "option_a": "Chlorella - Rich in Calcium",
@@ -444,7 +444,7 @@
     "explanation": null
   },
   {
-    "id": 7139,
+    "id": 16039,
     "paper_id": 42,
     "question_text": "Which of the following National Park-State pairs is correctly matched?",
     "option_a": "Gugamal National Park - Madhya Pradesh",
@@ -456,7 +456,7 @@
     "explanation": null
   },
   {
-    "id": 7140,
+    "id": 16040,
     "paper_id": 42,
     "question_text": "Which of the following crops serves both as a food crop and a fodder crop?",
     "option_a": "Maize",
@@ -468,7 +468,7 @@
     "explanation": null
   },
   {
-    "id": 7141,
+    "id": 16041,
     "paper_id": 42,
     "question_text": "What medal did the Indian men’s hockey team win at the Paris 2024 Olympic Games?",
     "option_a": "Gold",
@@ -480,7 +480,7 @@
     "explanation": null
   },
   {
-    "id": 7142,
+    "id": 16042,
     "paper_id": 42,
     "question_text": "Which evidence challenges an iron-based PGW (Painted Grey Ware) culture in Rigvedic culture?",
     "option_a": "Presence of horse",
@@ -492,19 +492,19 @@
     "explanation": null
   },
   {
-    "id": 7143,
+    "id": 16043,
     "paper_id": 42,
     "question_text": "In India, which senior Indian Police Service\n\n(IPS) officer was assigned the additional charge of Director General, Border Security Force (BSF) effective November 30, 2025?",
     "option_a": "Daljit Singh",
     "option_b": "Praveer Ranjan Chaudhary",
     "option_c": "Praveen Kumar",
     "option_d": "Rahul Rasgotra",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 42,
-    "explanation": null
+    "explanation": "Senior IPS officer Praveen Kumar was assigned additional charge as Director General, BSF effective November 30, 2025."
   },
   {
-    "id": 7144,
+    "id": 16044,
     "paper_id": 42,
     "question_text": "A Sessions Judge sentences an accused to death. Before the sentence is confirmed by the High Court, the convict files an appeal, contending that the sentence is already executable because a Sessions Judge is empowered to pass \"any sentence authorized by law.\" Which of the following is correct under the Bharatiya Nagarik Suraksha Sanhita, 2023 in India?",
     "option_a": "Correct, because session judges possess complete sentencing authority.",
@@ -516,19 +516,19 @@
     "explanation": null
   },
   {
-    "id": 7145,
+    "id": 16045,
     "paper_id": 42,
     "question_text": "A is accused of robbery. Immediately after the incident, A runs away, and a witness hears someone shouting, \"The robber escaped.\" Which of the following statements is correct under the Bharatiya Sakshya Adhiniyam, 2023 in India?",
     "option_a": "The shout is irrelevant hearsay.",
     "option_b": "The shout and flight are irrelevant because they are not facts in issue.",
     "option_c": "The shout is relevant only as confession.",
     "option_d": "Both are relevant as conduct under Section 6",
-    "correct_answer": "B",
+    "correct_answer": "D",
     "question_number": 44,
-    "explanation": null
+    "explanation": "Under Section 6 of Bharatiya Sakshya Adhiniyam, 2023, contemporaneous shouts and flight are relevant facts as res gestae."
   },
   {
-    "id": 7146,
+    "id": 16046,
     "paper_id": 42,
     "question_text": "Consider the following statements regarding the Durga Temple at Aihole:\n\n1. The temple features a distinct apsidal plan.\n\n2. The design shows significant influence from Buddhist Chaitya architecture. Which of the statements given above is/are correct?",
     "option_a": "1 only",
@@ -540,31 +540,31 @@
     "explanation": null
   },
   {
-    "id": 7147,
+    "id": 16047,
     "paper_id": 42,
     "question_text": "Shekha Jheel Bird Sanctuary, added to the Ramsar list in April 2026, is located in which Indian state?",
     "option_a": "Rajasthan",
     "option_b": "Uttar Pradesh",
     "option_c": "Madhya Pradesh",
     "option_d": "Gujrat",
-    "correct_answer": "C",
+    "correct_answer": "B",
     "question_number": 46,
-    "explanation": null
+    "explanation": "Shekha Jheel Bird Sanctuary, added to the Ramsar list in April 2026, is located in Aligarh district, Uttar Pradesh."
   },
   {
-    "id": 7148,
+    "id": 16048,
     "paper_id": 42,
     "question_text": "Which population theory states that population growth tends to exceed the growth rate of food production?",
     "option_a": "Central Place Theory",
     "option_b": "Demographic Transition Theory",
     "option_c": "Malthusian Theory",
     "option_d": "Gravity Model",
-    "correct_answer": "B",
+    "correct_answer": "C",
     "question_number": 47,
-    "explanation": null
+    "explanation": "Malthusian Theory states that population grows geometrically while food production grows arithmetically."
   },
   {
-    "id": 7149,
+    "id": 16049,
     "paper_id": 42,
     "question_text": "What was the primary objective of reducing import duties after the 1991 economic reforms?",
     "option_a": "Integrate the Indian economy with the global market",
@@ -576,7 +576,7 @@
     "explanation": null
   },
   {
-    "id": 7150,
+    "id": 16050,
     "paper_id": 42,
     "question_text": "The primary objective of the market control measures introduced by Alauddin Khalji was to:",
     "option_a": "Encouraging maritime trade with Europe",
@@ -588,31 +588,31 @@
     "explanation": null
   },
   {
-    "id": 7151,
+    "id": 16051,
     "paper_id": 42,
     "question_text": "According to the World Happiness Report, corruption is assessed primarily through which of the following?",
     "option_a": "Reports of political scandals",
     "option_b": "Recorded cases of corruption",
     "option_c": "Rates of conviction for corruption",
     "option_d": "Perceptions of corruption",
-    "correct_answer": "C",
+    "correct_answer": "D",
     "question_number": 50,
-    "explanation": null
+    "explanation": "The World Happiness Report evaluates corruption primarily via surveyed public perceptions of corruption."
   },
   {
-    "id": 7152,
+    "id": 16052,
     "paper_id": 42,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p7_x1289.jpeg)",
     "option_a": "65",
     "option_b": "70",
     "option_c": "75",
     "option_d": "80",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 51,
-    "explanation": null
+    "explanation": "Total number of phones in the frequency polygon = 5 + 12 + 20 + 18 + 10 + 5 = 70."
   },
   {
-    "id": 7153,
+    "id": 16053,
     "paper_id": 42,
     "question_text": "What is the value of m and n? (4 + 2√6)² = n(5 + m√6)",
     "option_a": "m = 3, n = 4",
@@ -624,7 +624,7 @@
     "explanation": null
   },
   {
-    "id": 7154,
+    "id": 16054,
     "paper_id": 42,
     "question_text": "The area of a triangle is 48 cm², and its inradius is 4 cm. What is its semiperimeter?",
     "option_a": "6 cm",
@@ -636,7 +636,7 @@
     "explanation": null
   },
   {
-    "id": 7155,
+    "id": 16055,
     "paper_id": 42,
     "question_text": "Find the solution of following simultaneous equation 2x + y = 5 x - y = 4",
     "option_a": "X=3,Y=-1",
@@ -648,19 +648,19 @@
     "explanation": null
   },
   {
-    "id": 7156,
+    "id": 16056,
     "paper_id": 42,
     "question_text": "A person travels from Delhi to Jaipur (240 km) using two modes of transport: bus and train. The bus has an average speed of 30 km/h and the train has an average speed of 55 km/h. The total journey takes 6 hours. Find the distance covered by train.",
     "option_a": "125 km",
     "option_b": "132 km",
     "option_c": "138 km",
     "option_d": "145 km",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 55,
-    "explanation": null
+    "explanation": "Solving (240 - d)/30 + d/55 = 6 gives train distance d = 132 km."
   },
   {
-    "id": 7157,
+    "id": 16057,
     "paper_id": 42,
     "question_text": "In a partnership, A invests 1 of the capital for 1 of the time, B invests 1 of the capital 6 3 for 1 of the time, and C, the rest of the capital for the whole time. Out of a profit of ₹2,300, find the B's share.",
     "option_a": "₹400",
@@ -672,7 +672,7 @@
     "explanation": null
   },
   {
-    "id": 7158,
+    "id": 16058,
     "paper_id": 42,
     "question_text": "The partnership consists of A and B. A gets 15% of the annual profit for his contribution to managing the business. The remaining profit is shared among A and B in the ratio of 2:\n\n3. Find out the total yearly profit when the share of B exceeds that of A by ₹1,200.",
     "option_a": "₹70,000",
@@ -684,7 +684,7 @@
     "explanation": null
   },
   {
-    "id": 7159,
+    "id": 16059,
     "paper_id": 42,
     "question_text": "Given that the average of seven consecutive numbers is 20, determine the largest of these numbers.",
     "option_a": "23",
@@ -696,7 +696,7 @@
     "explanation": null
   },
   {
-    "id": 7160,
+    "id": 16060,
     "paper_id": 42,
     "question_text": "If the side of an equilateral triangle is doubled, what happens to its area?",
     "option_a": "Increases 2 times",
@@ -708,7 +708,7 @@
     "explanation": null
   },
   {
-    "id": 7161,
+    "id": 16061,
     "paper_id": 42,
     "question_text": "A shopkeeper prices his items at 25% profit. If the cost price increases by 15% and he wants to maintain a profit of 20% on the new cost, by what percentage should he increase his original selling price?",
     "option_a": "15.4%",
@@ -720,19 +720,19 @@
     "explanation": null
   },
   {
-    "id": 7162,
+    "id": 16062,
     "paper_id": 42,
     "question_text": "A dealer sells two car stereos at ₹9,900 each, achieving a 10% profit on one and incurring a 10% loss on the other. Determine the dealer's overall gain or loss.",
     "option_a": "Loss of ₹200",
     "option_b": "Gain of ₹200",
     "option_c": "Loss of ₹100",
     "option_d": "Gain of ₹100",
-    "correct_answer": "C",
+    "correct_answer": "A",
     "question_number": 61,
-    "explanation": null
+    "explanation": "Total CP = 9,000 + 11,000 = ₹20,000 and total SP = ₹19,800, giving an overall loss of ₹200."
   },
   {
-    "id": 7163,
+    "id": 16063,
     "paper_id": 42,
     "question_text": "An observer 1.5 m tall is 28.5 m away from a chimney. The angle of elevation of the top of the chimney from her eyes is 45°. What is the total height of the chimney?",
     "option_a": "30 m",
@@ -744,19 +744,19 @@
     "explanation": null
   },
   {
-    "id": 7164,
+    "id": 16064,
     "paper_id": 42,
     "question_text": "In a trapezium, the parallel sides are 25 cm and 10 cm. If the non-parallel sides are 13 cm and 14 cm, find the area of the trapezium.",
     "option_a": "192 cm²",
     "option_b": "196 cm²",
     "option_c": "210 cm²",
     "option_d": "216 cm²",
-    "correct_answer": "C",
+    "correct_answer": "B",
     "question_number": 63,
-    "explanation": null
+    "explanation": "Height of the non-parallel side triangle (13, 14, 15) is 11.2 cm; area of trapezium = (25 + 10)/2 × 11.2 = 196 cm²."
   },
   {
-    "id": 7165,
+    "id": 16065,
     "paper_id": 42,
     "question_text": "If cos θ= 5 and θ is an acute angle, find 13 4(cosecθ−cot θ) .",
     "option_a": "2",
@@ -768,7 +768,7 @@
     "explanation": null
   },
   {
-    "id": 7166,
+    "id": 16066,
     "paper_id": 42,
     "question_text": "If tan θ= 3 and θ is an acute angle, find cosecθ−cot θ .",
     "option_a": "1",
@@ -780,43 +780,43 @@
     "explanation": null
   },
   {
-    "id": 7167,
+    "id": 16067,
     "paper_id": 42,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p8_x1595.jpeg)",
     "option_a": "48.5%",
     "option_b": "57%",
     "option_c": "52.5%",
     "option_d": "43%",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 66,
-    "explanation": null
+    "explanation": "Employees taking < 18 minutes = 20 + 28 + 15 = 63 out of 120 total, which is (63/120) × 100 = 52.5%."
   },
   {
-    "id": 7168,
+    "id": 16068,
     "paper_id": 42,
     "question_text": "A dealer offers a 7% discount on the marked price of an article. Additionally, he provides 1 free article for every 25 articles purchased. Despite this, he earns a profit of 25%. Find the percentage by which the marked price exceeds the cost price of the article (round off to two decimal places).",
     "option_a": "38.80%",
     "option_b": "39.78%",
     "option_c": "41.41%",
     "option_d": "43.56%",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 67,
-    "explanation": null
+    "explanation": "23.25 MP = 32.5 CP gives MP/CP = 130/93 ≈ 1.3978, so the marked price is 39.78% above cost price."
   },
   {
-    "id": 7169,
+    "id": 16069,
     "paper_id": 42,
     "question_text": "A trader makes a profit of ₹120 on selling an item after offering a 20% discount. If the profit is 20%, what is the item's marked price?",
     "option_a": "₹780",
     "option_b": "₹900",
     "option_c": "₹830",
     "option_d": "₹970",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 68,
-    "explanation": null
+    "explanation": "CP = 120 / 0.2 = ₹600, SP = ₹720, and MP = 720 / 0.8 = ₹900."
   },
   {
-    "id": 7170,
+    "id": 16070,
     "paper_id": 42,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p9_x1885.jpeg)",
     "option_a": "1:1",
@@ -828,55 +828,55 @@
     "explanation": null
   },
   {
-    "id": 7171,
+    "id": 16071,
     "paper_id": 42,
     "question_text": "Which of the following sets has cardinality strictly between |N| and |R| under the assumption that the Continuum Hypothesis\n\n(CH) holds?",
     "option_a": "The set of all algebraic numbers.",
     "option_b": "The set of all functions from N to {0, 1}.",
     "option_c": "The power set of Q.",
     "option_d": "No such set exists under CH.",
-    "correct_answer": "A",
+    "correct_answer": "D",
     "question_number": 70,
-    "explanation": null
+    "explanation": "The Continuum Hypothesis explicitly states that no set exists with cardinality strictly between |N| and |R|."
   },
   {
-    "id": 7172,
+    "id": 16072,
     "paper_id": 42,
     "question_text": "Let N = 23 × 32 × 54 × 7. What is the smallest positive integer k such that N × k is a perfect square?",
     "option_a": "6",
     "option_b": "7",
     "option_c": "14",
     "option_d": "35 8",
-    "correct_answer": "A",
+    "correct_answer": "C",
     "question_number": 71,
-    "explanation": null
+    "explanation": "For 2³ × 3² × 5⁴ × 7 to be a square, prime factors with odd exponents require k = 2 × 7 = 14."
   },
   {
-    "id": 7173,
+    "id": 16073,
     "paper_id": 42,
     "question_text": "An e-commerce warehouse has three different models of automated sorting robots\n\n- Alpha, Beta and Gamma. The ratio of the number of Alpha robots to that of Beta robots in the warehouse is 3:4 and the ratio of the number of Beta robots to that of Gamma robots is 2:\n\n3. The individual sorting speed (parcels sorted per hour per single robot) of an Alpha, a Beta and a Gamma robot is 5:3:\n\n2. During a scheduled maintenance hour, half of the Alpha robots and one-third of the Gamma robots are sent for servicing, while all the Beta robots are totally operational. Assuming all active robots work at their exact designated sorting speeds throughout, it is found that the total number of parcels sorted by all the active Beta robots is 180 more than those sorted by all the active Alpha robots, during this maintenance hour. During a standard operational hour (when all robots of all the three types are active), what is the total number of parcels sorted by all the warehouse robots combined?",
     "option_a": "1500",
     "option_b": "1560",
     "option_c": "1600",
     "option_d": "1650",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 72,
-    "explanation": null
+    "explanation": "Difference between Beta (12xs) and active Alpha (7.5xs) = 4.5xs = 180, so xs = 40; combined operational output = 39 × 40 = 1560."
   },
   {
-    "id": 7174,
+    "id": 16074,
     "paper_id": 42,
     "question_text": "If a + b = 19 and ab = 90, then find (a-b)².",
     "option_a": "0",
     "option_b": "1",
     "option_c": "361",
     "option_d": "412",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 73,
-    "explanation": null
+    "explanation": "(a - b)² = (a + b)² - 4ab = 19² - 4(90) = 361 - 360 = 1."
   },
   {
-    "id": 7175,
+    "id": 16075,
     "paper_id": 42,
     "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p9_x1886.jpeg)",
     "option_a": "53.85%",
@@ -888,19 +888,19 @@
     "explanation": null
   },
   {
-    "id": 7176,
+    "id": 16076,
     "paper_id": 42,
     "question_text": "Among the employees of a company, 52% attend programme A, 46% attend B and 38% attend C. Also, 22% attend both A and B, 18% attend both B and C, 16% attend both C and A and 8% attend all three. Each pairwise percentage includes those attending all three. If 240 employees attend none of the programmes, how many employees are there in the company?",
     "option_a": "1,800",
     "option_b": "2,000",
     "option_c": "2,200",
     "option_d": "2,400",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 75,
-    "explanation": null
+    "explanation": "Percentage attending at least one program = 88%; remaining 12% = 240, yielding total employees = 2,000."
   },
   {
-    "id": 7177,
+    "id": 16077,
     "paper_id": 42,
     "question_text": "**Comprehension (Q. 76 - 80):** Art therapy, a modality that merges creative expression with psychotherapeutic principles, (1) ______ increasing recognition in clinical and non- clinical settings alike. Unlike traditional verbal therapies, art therapy (2) ______ an alternative conduit for articulating experiences that may be difficult to verbalize. Through mediums such as painting, sculpture, and collage, individuals externalize internal conflicts, thereby facilitating catharsis and promoting (3) affective regulation. Recent neurobiological research substantiates that creative engagement activates regions of the brain associated with reward processing and emotional resilience. Furthermore, engaging in artistic activities (4) ______ positively correlated with reduced cortisol levels, implying diminished physiological stress responses. In therapeutic contexts, art becomes a (5) palliative instrument, not merely for symptomatic relief but also for facilitating profound personal transformation. Thus, art therapy transcends the realm of mere creative pastime, emerging as a vital psychosocial tool for emotional healing and integrative wellbeing.\n\n---\n\nIn the following question, a sentence with a blank is given, followed by five words labeled\n\n(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Choose the correct tense/form. (1)",
     "option_a": "is gaining",
@@ -912,7 +912,7 @@
     "explanation": null
   },
   {
-    "id": 7178,
+    "id": 16078,
     "paper_id": 42,
     "question_text": "**Comprehension (Q. 76 - 80):** Art therapy, a modality that merges creative expression with psychotherapeutic principles, (1) ______ increasing recognition in clinical and non- clinical settings alike. Unlike traditional verbal therapies, art therapy (2) ______ an alternative conduit for articulating experiences that may be difficult to verbalize. Through mediums such as painting, sculpture, and collage, individuals externalize internal conflicts, thereby facilitating catharsis and promoting (3) affective regulation. Recent neurobiological research substantiates that creative engagement activates regions of the brain associated with reward processing and emotional resilience. Furthermore, engaging in artistic activities (4) ______ positively correlated with reduced cortisol levels, implying diminished physiological stress responses. In therapeutic contexts, art becomes a (5) palliative instrument, not merely for symptomatic relief but also for facilitating profound personal transformation. Thus, art therapy transcends the realm of mere creative pastime, emerging as a vital psychosocial tool for emotional healing and integrative wellbeing.\n\n---\n\nIn the following question, a sentence with a blank is given, followed by five words labeled\n\n(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Focus on tense and subject-verb. (2)",
     "option_a": "provides",
@@ -924,7 +924,7 @@
     "explanation": null
   },
   {
-    "id": 7179,
+    "id": 16079,
     "paper_id": 42,
     "question_text": "**Comprehension (Q. 76 - 80):** Art therapy, a modality that merges creative expression with psychotherapeutic principles, (1) ______ increasing recognition in clinical and non- clinical settings alike. Unlike traditional verbal therapies, art therapy (2) ______ an alternative conduit for articulating experiences that may be difficult to verbalize. Through mediums such as painting, sculpture, and collage, individuals externalize internal conflicts, thereby facilitating catharsis and promoting (3) affective regulation. Recent neurobiological research substantiates that creative engagement activates regions of the brain associated with reward processing and emotional resilience. Furthermore, engaging in artistic activities (4) ______ positively correlated with reduced cortisol levels, implying diminished physiological stress responses. In therapeutic contexts, art becomes a (5) palliative instrument, not merely for symptomatic relief but also for facilitating profound personal transformation. Thus, art therapy transcends the realm of mere creative pastime, emerging as a vital psychosocial tool for emotional healing and integrative wellbeing.\n\n---\n\nIn the following question, a sentence with a blank is given, followed by five words labeled\n\n(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. In this context, 'affective regulation' most nearly refers to:\n\n(3)",
     "option_a": "Suppression of physical symptoms",
@@ -936,19 +936,19 @@
     "explanation": null
   },
   {
-    "id": 7180,
+    "id": 16080,
     "paper_id": 42,
     "question_text": "**Comprehension (Q. 76 - 80):** Art therapy, a modality that merges creative expression with psychotherapeutic principles, (1) ______ increasing recognition in clinical and non- clinical settings alike. Unlike traditional verbal therapies, art therapy (2) ______ an alternative conduit for articulating experiences that may be difficult to verbalize. Through mediums such as painting, sculpture, and collage, individuals externalize internal conflicts, thereby facilitating catharsis and promoting (3) affective regulation. Recent neurobiological research substantiates that creative engagement activates regions of the brain associated with reward processing and emotional resilience. Furthermore, engaging in artistic activities (4) ______ positively correlated with reduced cortisol levels, implying diminished physiological stress responses. In therapeutic contexts, art becomes a (5) palliative instrument, not merely for symptomatic relief but also for facilitating profound personal transformation. Thus, art therapy transcends the realm of mere creative pastime, emerging as a vital psychosocial tool for emotional healing and integrative wellbeing.\n\n---\n\nIn the following question, a sentence with a blank is given, followed by five words labeled\n\n(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. Focus on complex subject agreement. (4)",
     "option_a": "are",
     "option_b": "is",
     "option_c": "have been",
     "option_d": "being",
-    "correct_answer": "C",
+    "correct_answer": "B",
     "question_number": 79,
-    "explanation": null
+    "explanation": "The gerund subject 'engaging' is singular and grammatically takes the singular verb 'is'."
   },
   {
-    "id": 7181,
+    "id": 16081,
     "paper_id": 42,
     "question_text": "**Comprehension (Q. 76 - 80):** Art therapy, a modality that merges creative expression with psychotherapeutic principles, (1) ______ increasing recognition in clinical and non- clinical settings alike. Unlike traditional verbal therapies, art therapy (2) ______ an alternative conduit for articulating experiences that may be difficult to verbalize. Through mediums such as painting, sculpture, and collage, individuals externalize internal conflicts, thereby facilitating catharsis and promoting (3) affective regulation. Recent neurobiological research substantiates that creative engagement activates regions of the brain associated with reward processing and emotional resilience. Furthermore, engaging in artistic activities (4) ______ positively correlated with reduced cortisol levels, implying diminished physiological stress responses. In therapeutic contexts, art becomes a (5) palliative instrument, not merely for symptomatic relief but also for facilitating profound personal transformation. Thus, art therapy transcends the realm of mere creative pastime, emerging as a vital psychosocial tool for emotional healing and integrative wellbeing.\n\n---\n\nIn the following question, a sentence with a blank is given, followed by five words labeled\n\n(1), (2), (3), (4), and (5). Choose the word that fills the blank appropriately in the context of the passage. The word 'palliative' most nearly means:\n\n(5)",
     "option_a": "Curative and",
@@ -960,7 +960,7 @@
     "explanation": null
   },
   {
-    "id": 7182,
+    "id": 16082,
     "paper_id": 42,
     "question_text": "Choose the correct indirect speech form of the following sentence. Nikhil said, \"You must buy this bag.\"",
     "option_a": "Nikhil advised me to buy that bag.",
@@ -972,7 +972,7 @@
     "explanation": null
   },
   {
-    "id": 7183,
+    "id": 16083,
     "paper_id": 42,
     "question_text": "Fill in the blank with an appropriate phrasal verb. The new compliance rules ______ several loopholes that companies had previously exploited.",
     "option_a": "narrowed down",
@@ -984,31 +984,31 @@
     "explanation": null
   },
   {
-    "id": 7184,
+    "id": 16084,
     "paper_id": 42,
     "question_text": "Fill in the blank with an appropriate phrasal verb. The insurgents attempted to ______ support from local communities through propaganda.",
     "option_a": "drum up",
     "option_b": "crank out",
     "option_c": "whip out",
     "option_d": "spin off",
-    "correct_answer": "C",
+    "correct_answer": "A",
     "question_number": 83,
-    "explanation": null
+    "explanation": "The phrasal verb 'drum up' correctly means to rally or generate support through effort."
   },
   {
-    "id": 7185,
+    "id": 16085,
     "paper_id": 42,
     "question_text": "Improve the sentence using the correct phrasal verb of the underlined words. He gave ahead the documents at the reception.",
     "option_a": "gave up",
     "option_b": "gave away",
     "option_c": "gave back",
     "option_d": "gave in",
-    "correct_answer": "C",
+    "correct_answer": "D",
     "question_number": 84,
-    "explanation": null
+    "explanation": "The phrasal verb 'gave in' is appropriately used to mean handed in or submitted documents."
   },
   {
-    "id": 7186,
+    "id": 16086,
     "paper_id": 42,
     "question_text": "Improve the sentence by choosing the correct degree of comparison that replaces the words highlighted in bold. Of all the interns, Rahul was the one who adapted more quickly to the fast-paced workflow.",
     "option_a": "quicklier",
@@ -1020,19 +1020,19 @@
     "explanation": null
   },
   {
-    "id": 7187,
+    "id": 16087,
     "paper_id": 42,
     "question_text": "Which of the following options is NOT one of the meanings of the homonym 'deposition'?",
     "option_a": "The act of giving sworn evidence in a legal proceeding",
     "option_b": "The geological process in which material is added to a landform",
     "option_c": "The removal of a sovereign or person from office",
     "option_d": "The legal classification of a sovereign territory under international law",
-    "correct_answer": "C",
+    "correct_answer": "D",
     "question_number": 86,
-    "explanation": null
+    "explanation": "'Deposition' means legal testimony, sedimentary accretion, or removing an official, but not territorial legal classification."
   },
   {
-    "id": 7188,
+    "id": 16088,
     "paper_id": 42,
     "question_text": "Read the sentence below and choose the meaning of the idiom that best fits the context: \"Kavita managed through hard work to win a big contract for her company. It was a real feather in her cap.\" What does the idiom \"a feather in her cap\" mean in this context?",
     "option_a": "A surprising reward she didn't expect.",
@@ -1044,19 +1044,19 @@
     "explanation": null
   },
   {
-    "id": 7189,
+    "id": 16089,
     "paper_id": 42,
     "question_text": "Choose the correct meaning of idiom: Cut him up",
     "option_a": "To assist him",
     "option_b": "To criticize him generously severely",
     "option_c": "To imitate him",
     "option_d": "To promote him humorously rapidly",
-    "correct_answer": "C",
+    "correct_answer": "B",
     "question_number": 88,
-    "explanation": null
+    "explanation": "The idiom 'cut someone up' means to severely criticize or deeply distress someone."
   },
   {
-    "id": 7190,
+    "id": 16090,
     "paper_id": 42,
     "question_text": "Choose the correct meaning of idiom: To steal a march on someone",
     "option_a": "To win unexpectedly",
@@ -1068,7 +1068,7 @@
     "explanation": null
   },
   {
-    "id": 7191,
+    "id": 16091,
     "paper_id": 42,
     "question_text": "Spot the correct spelling of a philosophical term meaning 'lifelessness or indifference'.",
     "option_a": "Apathy",
@@ -1080,7 +1080,7 @@
     "explanation": null
   },
   {
-    "id": 7192,
+    "id": 16092,
     "paper_id": 42,
     "question_text": "Identify the misspelt word.",
     "option_a": "Impecunious",
@@ -1092,7 +1092,7 @@
     "explanation": null
   },
   {
-    "id": 7193,
+    "id": 16093,
     "paper_id": 42,
     "question_text": "Spot the correct spelling of a molecularlattice science.",
     "option_a": "Crystallography",
@@ -1104,7 +1104,7 @@
     "explanation": null
   },
   {
-    "id": 7194,
+    "id": 16094,
     "paper_id": 42,
     "question_text": "Identify the misspelt word.",
     "option_a": "Hegemony",
@@ -1116,7 +1116,7 @@
     "explanation": null
   },
   {
-    "id": 7195,
+    "id": 16095,
     "paper_id": 42,
     "question_text": "Choose the correct collocation: The attorney was ___ in her defense of the whistleblower.",
     "option_a": "steadfast",
@@ -1128,19 +1128,19 @@
     "explanation": null
   },
   {
-    "id": 7196,
+    "id": 16096,
     "paper_id": 42,
     "question_text": "Find the part of the sentence that contains an error: Each applicant must bring his or her ID proof (1)/ and fill the necessary documents\n\n(2)/ prior to the final evaluation round (3)/ scheduled this Friday. (4)/",
     "option_a": "(1)",
     "option_b": "(2)",
     "option_c": "(3)",
     "option_d": "(4)",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 95,
-    "explanation": null
+    "explanation": "The correct phrasal verb is 'fill in' or 'fill out' the documents, so part (2) contains the error."
   },
   {
-    "id": 7197,
+    "id": 16097,
     "paper_id": 42,
     "question_text": "Find the part of the sentence that contains an error: There are less than twenty applicants\n\n(1)/ who meet the eligibility criteria (2)/ for the advanced fellowship (3)/ offered by the institute. (4)/",
     "option_a": "(1)",
@@ -1152,7 +1152,7 @@
     "explanation": null
   },
   {
-    "id": 7198,
+    "id": 16098,
     "paper_id": 42,
     "question_text": "Select the sentence containing the homonym of the highlighted word: She shed a silent tear during the speech.",
     "option_a": "The actor gave a tearful performance.",
@@ -1164,7 +1164,7 @@
     "explanation": null
   },
   {
-    "id": 7199,
+    "id": 16099,
     "paper_id": 42,
     "question_text": "Rearrange the following sentences in correct order to make a logical sentence P: under digital precarity Q: Informal gig workers R: face algorithmic control S: without collective bargaining",
     "option_a": "QRPS",
@@ -1176,19 +1176,19 @@
     "explanation": null
   },
   {
-    "id": 7200,
+    "id": 16100,
     "paper_id": 42,
     "question_text": "Rearrange the following sentences in correct order to make a logical sentence P: against linguistic imperialism Q: Indigenous language movements R: reassert cultural sovereignty S: via grassroots mobilisation",
     "option_a": "QRSP",
     "option_b": "PRSQ",
     "option_c": "PQRS",
     "option_d": "QPRS",
-    "correct_answer": "D",
+    "correct_answer": "A",
     "question_number": 99,
-    "explanation": null
+    "explanation": "The coherent syntactic rearrangement is Q (Subject) -> R (Verb phrase) -> S (Manner) -> P (Complement): QRSP."
   },
   {
-    "id": 7201,
+    "id": 16101,
     "paper_id": 42,
     "question_text": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. She said that not only had he lied, but he had also stolen the money.",
     "option_a": "\"He lied and also stole the money,\" she said.",

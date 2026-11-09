@@ -1,902 +1,1202 @@
 [
   {
-    "question_number": 1,
+    "id": 15502,
+    "paper_id": 37,
     "question_text": "Find the 3rd letter to the left of the letter equidistant from C and O.",
     "option_a": "H",
     "option_b": "F",
     "option_c": "G",
     "option_d": "I",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 1,
+    "explanation": null
   },
   {
-    "question_number": 2,
+    "id": 15503,
+    "paper_id": 37,
     "question_text": "A man walks at 5 km/h and runs at 10 km/h. He covers a distance in 2 hours, walking half the time and running the other half. What is the total distance?",
     "option_a": "12.5 km",
     "option_b": "15 km",
     "option_c": "18.5 km",
     "option_d": "7.5 km",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 2,
+    "explanation": null
   },
   {
-    "question_number": 3,
+    "id": 15504,
+    "paper_id": 37,
     "question_text": "What is the 5th term of 3, 6, 12, 24 ...?",
     "option_a": "40",
     "option_b": "42",
     "option_c": "48",
     "option_d": "50",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 3,
+    "explanation": null
   },
   {
-    "question_number": 4,
+    "id": 15505,
+    "paper_id": 37,
     "question_text": "The average of 5 numbers is 12. If one of these numbers is replaced by 20, the new average becomes 14. What was the original number that was replaced?",
     "option_a": "4",
     "option_b": "6",
     "option_c": "8",
     "option_d": "10",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 4,
+    "explanation": null
   },
   {
-    "question_number": 5,
+    "id": 15506,
+    "paper_id": 37,
     "question_text": "Carefully examine the address below and identify which of the following alternatives matches the given address. Mr. R. Patel 7652 Silver Oak, 7th Floor, Ambli Road Ahmedabad, Gujarat - 380058 Alternatives: A) Mr. R. Patel, 7652 Silver Oak, 7th Floor, Ambli Road, Ahmedabad, Gujarat - 380058 B) Mr. R. Patel, 7652 Silver Oak, 6th Floor, Ambli Road, Ahmedabad, Gujarat - 380058 C) Mr. R. Patel, 7652 Silver Oak, 7th Floor, Ambli Road, Ahmedabad, Gujarat - 380058 D) Mr. R. Patel, 7652 Silver Oak, 7th Floor, Ambli Road, Ahmedabad, Gujarat - 380059",
     "option_a": "A and B",
     "option_b": "A and C",
     "option_c": "B and D",
     "option_d": "D and C 1 INTELLIGENCE",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 5,
+    "explanation": null
   },
   {
-    "question_number": 6,
+    "id": 15507,
+    "paper_id": 37,
     "question_text": "In a certain code language, \"TIGER\" is written as \"REGIT.\" How will \"MOUSE\" be written in the same code language?",
     "option_a": "ESUOM",
     "option_b": "MUOSE",
     "option_c": "OSEUM",
     "option_d": "MUESO",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 6,
+    "explanation": null
   },
   {
-    "question_number": 7,
+    "id": 15508,
+    "paper_id": 37,
     "question_text": "A sum of money becomes ₹ 18,720 in 3 years and ₹ 22,880 in 5 years at simple interest. What is the rate of interest per annum if the principal is ₹ 12,480?",
     "option_a": "14 2 %",
     "option_b": "16 2 % 3",
     "option_c": "15 5 %",
     "option_d": "18 1 % 9",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 7,
+    "explanation": null
   },
   {
-    "question_number": 8,
+    "id": 15509,
+    "paper_id": 37,
     "question_text": "If 'A # B' denotes A is the brother of B, 'A @ B' denotes A is the mother of B, 'A & B' denotes A is the father of B, and 'A % B' denotes A is the sister of B, choose the expression that correctly represents that M is the paternal uncle of N.",
     "option_a": "M # R & N",
     "option_b": "M % R @ N",
     "option_c": "M & R # N",
     "option_d": "M @ R # N",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 8,
+    "explanation": null
   },
   {
-    "question_number": 9,
+    "id": 15510,
+    "paper_id": 37,
     "question_text": "Candidates appearing from the \"Northern Zone\" are assigned roll numbers starting with 9201. Which of the following roll numbers belongs to a candidate NOT from the Northern Zone?",
     "option_a": "92014498211",
     "option_b": "92014498214",
     "option_c": "92104498217",
     "option_d": "92014498220",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 9,
+    "explanation": null
   },
   {
-    "question_number": 10,
+    "id": 15511,
+    "paper_id": 37,
     "question_text": "Within a mixed team of both new and experienced employees, the experienced members tend to dominate discussions, while a new joiner appears overwhelmed and hesitant to contribute their own ideas. What is the most effective approach to foster inclusivity and improve team participation?",
     "option_a": "Actively ask for the new joiner's opinion in discussions and make space for them to contribute.",
     "option_b": "Choose to assign critical tasks exclusively to the experienced employees to maintain current workflow.",
     "option_c": "Ignore the current situation, as it is considered a natural and expected part of team dynamics.",
     "option_d": "Politely advise the new joiner to continue observing the team dynamics quietly and learning for now.",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 10,
+    "explanation": null
   },
   {
-    "question_number": 11,
+    "id": 15512,
+    "paper_id": 37,
     "question_text": "You and two friends are on a train with tickets under RAC (Reservation Against Cancellation). The ticket inspector offers to upgrade you to three full berths in exchange for a bribe. What would be the most ethical and professional way to respond to this situation?",
     "option_a": "Agree to pay the requested bribe to the ticket checker, justifying the action because you believe that having a full berth is necessary for a long journey.",
     "option_b": "Firmly refuse to pay the bribe and continue to travel by sitting comfortably in your originally allotted seats as per the terms of your current ticket status.",
     "option_c": "Forcibly occupy the berths by threatening the current legal occupants, regardless of the potential for physical conflict or the resulting disturbance to other passengers.",
     "option_d": "Utilize your personal connections by calling a friend who is an officer in the railways to pressure the ticket checker into providing you with berths without payment.",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 11,
+    "explanation": null
   },
   {
-    "question_number": 12,
+    "id": 15513,
+    "paper_id": 37,
     "question_text": "Choose the option which is exactly similar to: Secretary, Lions Club International, Sector 29, Gurgaon-122002",
     "option_a": "Secretary, Lions Club International, Sector 29, Gurgaon 122002",
     "option_b": "Secretary, Lions Club International, Sector 29, Gurgaon-122002",
     "option_c": "Secretary, Lions Club International, Sector 28, Gurgaon-122002",
     "option_d": "Secretary, Lions Club International, Sector 29, Gurgaon-122003",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 12,
+    "explanation": null
   },
   {
-    "question_number": 13,
+    "id": 15514,
+    "paper_id": 37,
     "question_text": "What should come in place of question mark (?) in the following analogy? AZB : YCX :: DWE : ?",
     "option_a": "BZA",
     "option_b": "ZBA",
     "option_c": "YAX",
     "option_d": "ABC",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 13,
+    "explanation": null
   },
   {
-    "question_number": 14,
+    "id": 15515,
+    "paper_id": 37,
     "question_text": "In the given question, a few statements have been given followed by conclusions based on them. Consider the statements to be true and answer which of the given conclusions logically follow the statement. Statements\n\n1. All satellites are engineered objects.\n\n2. Some engineered objects are sustainable.\n\n3. No unsustainable object receives certification. Conclusions\n\nI. Some satellites may be sustainable.\n\nII. Some engineered objects do not receive certification.\n\nIII. All satellites receive certification.\n\nIV. Some sustainable objects receive certification.",
     "option_a": "Only I and II follow",
     "option_b": "Only I follows",
     "option_c": "Only II and IV",
     "option_d": "Only I, II and IV follow follow",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 14,
+    "explanation": null
   },
   {
-    "question_number": 15,
+    "id": 15516,
+    "paper_id": 37,
     "question_text": "In the following question, one statement is given, followed by certain inferences. Consider the statement to be true even if it seems to contradict commonly known facts. Read the inferences carefully and decide which of them logically follow from the given statement.\n\nStatement: In a study of 500 working professionals, those who slept less than 6 hours per night were 3 times more likely to report burnout than those who slept 7-8 hours. Inferences:\n\nI. Sleeping for less than 6 hours is a contributing factor to professional burnout.\n\nII. Getting 7-8 hours of sleep eliminates the risk of experiencing burnout.",
     "option_a": "Only Inference I follows.",
     "option_b": "Only Inference II follows.",
     "option_c": "Both Inferences I and II follow.",
     "option_d": "Neither Inference I nor Inference II follows.",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 15,
+    "explanation": null
   },
   {
-    "question_number": 16,
+    "id": 15517,
+    "paper_id": 37,
     "question_text": "Among the four given combinations, two are exactly identical. Identify the matching pair.\n\n1. Purva Chatterjee, Block-DA, Flat No. 1202, Riversidefront Residency, Salt Lake City, Kolkata – 700091\n\n2. Purva Chatterjee, Block D, Flat No. 1202, Riversidefront Residency, Salt Lake City, Kolkata – 700091\n\n3. Purva Chatterjee, Block-DA, Flat No. 1202, Riversidefront Residency, Salt Lake City, Kolkata – 700091\n\n4. Purva Chatterjee, Block-DA, Flat No.1202, Riverside Front Residency, Salt Lake City, Kolkata – 700091",
     "option_a": "1 & 2",
     "option_b": "2 & 3",
     "option_c": "1 & 3",
     "option_d": "3 & 4",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 16,
+    "explanation": null
   },
   {
-    "question_number": 17,
+    "id": 15518,
+    "paper_id": 37,
     "question_text": "During a project review meeting, you notice that a teammate is visibly distressed, clenching their hands and speaking with a tight, strained voice. When asked if they want to comment, they look down and say, \"I'm fine, don't worry about it.\" Which of the following responses by you demonstrates the highest level of emotional intelligence\n\n(EQ)?",
     "option_a": "Press them immediately during the meeting to share what is wrong so the team can resolve the issue collectively on the spot.",
     "option_b": "Accept their verbal response for the duration of the meeting to preserve their privacy, but follow up with them in a private, one-on-one setting later to offer support.",
     "option_c": "Take their statement literally, assume they are completely unaffected, and dismiss the physical signs of distress from your mind moving forward.",
     "option_d": "Immediately approach the department manager after the meeting to report that the teammate appears emotionally unstable and unable to handle the current workload.",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 17,
+    "explanation": null
   },
   {
-    "question_number": 18,
+    "id": 15519,
+    "paper_id": 37,
     "question_text": "Read the given conditions carefully and determine the appropriate outcome for the case provided. If any exception applies, identify the authority to whom the case should be referred. Criteria for Corporate Club Membership:\n\n(i) Age between 30 and 50 (inclusive).\n\n(ii) Salary must be above ₹10 Lakh. Exceptions: Exception",
     "option_a": "Membership to be granted",
     "option_b": "Case to be referred to the Club Secretary",
     "option_c": "Membership application to be rejected",
     "option_d": "Case to be referred to the Legal Compliance Officer",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 18,
+    "explanation": null
   },
   {
-    "question_number": 19,
+    "id": 15520,
+    "paper_id": 37,
     "question_text": "Read the statement carefully and assume it to be true. Then examine the two conclusions given below it and decide which conclusion(s), if any, logically follow from the statement.\n\nStatement: A financial authority has mandated more rigorous compliance measures for fintech companies aimed at increasing transparency and defending consumer rights.\n\nConclusions:\n\nI. Fintech operations require regulatory oversight.\n\nII. Transparency is important for protecting consumers.",
     "option_a": "Only conclusion I follows",
     "option_b": "Neither conclusion I nor conclusion II follows",
     "option_c": "Both conclusions I and II follow",
     "option_d": "Only conclusion II follows",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 19,
+    "explanation": null
   },
   {
-    "question_number": 20,
+    "id": 15521,
+    "paper_id": 37,
     "question_text": "In a certain code language, \"NOTEBOOK\" is written as \"14otEBO15K\". How will \"RAILWAYS\" be written in the same code language?",
     "option_a": "18aiLWA24S",
     "option_b": "18aiLWA25S",
     "option_c": "18aILWA25S",
     "option_d": "18AILWA25S",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 20,
+    "explanation": null
   },
   {
-    "question_number": 21,
+    "id": 15522,
+    "paper_id": 37,
     "question_text": "In a certain code language, if aBcD is written as bEdG, then how will pQrS be written in that same code language?",
     "option_a": "qRsT",
     "option_b": "qTsV",
     "option_c": "sTuV",
     "option_d": "pTsV",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 21,
+    "explanation": null
   },
   {
-    "question_number": 22,
+    "id": 15523,
+    "paper_id": 37,
     "question_text": "Study the pattern in the given series and find the next set of letters in the series. BOM, YSJ, VWG, SAD, ?",
     "option_a": "PEA",
     "option_b": "POD",
     "option_c": "PCZ",
     "option_d": "QCA",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 22,
+    "explanation": null
   },
   {
-    "question_number": 23,
+    "id": 15524,
+    "paper_id": 37,
     "question_text": "The forestry department has decided to implement a total ban on the use of nonbiodegradable packaging in all statemanaged national parks to protect local wildlife. Which assumption underlies this ban?",
     "option_a": "There are affordable, biodegradable alternatives readily available for every item currently in use.",
     "option_b": "Visitors to the park will comply with the new packaging ban without requiring strict enforcement.",
     "option_c": "The ecosystem in the national parks is currently unable to recover from existing plastic pollution.",
     "option_d": "Non-biodegradable waste left by visitors is a direct threat to the health of the local wildlife.",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 23,
+    "explanation": null
   },
   {
-    "question_number": 24,
+    "id": 15525,
+    "paper_id": 37,
     "question_text": "Five objects — P, Q, R, S, T — are placed in a row. Q is to the right of P but not adjacent. R is at the left end. S is immediately left of T. T is immediately left of Q. Which arrangement is valid?",
     "option_a": "R, P, S, T, Q",
     "option_b": "P, R, S, T, Q",
     "option_c": "R, P, T, S, Q",
     "option_d": "P, S, T, Q, R",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 24,
+    "explanation": null
   },
   {
-    "question_number": 25,
+    "id": 15526,
+    "paper_id": 37,
     "question_text": "Select the option that is related to the third word in the same way as the second word is related to the first word. (The words must be considered as meaningful English words and must not be related to each other based on the number of letters/number of consonants/vowels in the word.) Chapter : Book :: Scene : ?",
     "option_a": "Play",
     "option_b": "Poem",
     "option_c": "Dictionary",
     "option_d": "Letter",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 25,
+    "explanation": null
   },
   {
-    "question_number": 26,
+    "id": 15527,
+    "paper_id": 37,
     "question_text": "Which of the following effects does a rise in the price of goods have on consumer surplus?",
     "option_a": "Reduces",
     "option_b": "Increases",
     "option_c": "Neutral",
     "option_d": "No effect",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 26,
+    "explanation": null
   },
   {
-    "question_number": 27,
+    "id": 15528,
+    "paper_id": 37,
     "question_text": "In money supply, M2 refers to which of the following?",
     "option_a": "M1 + savings deposits with post office savings banks",
     "option_b": "M1 + net time deposits of banks",
     "option_c": "M1 - savings deposits with post office savings banks 4 AWARENESS",
     "option_d": "M1 - net time deposits of banks",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 27,
+    "explanation": null
   },
   {
-    "question_number": 28,
+    "id": 15529,
+    "paper_id": 37,
     "question_text": "Which South Asian country is known for its significant textile industry, particularly jute production?",
     "option_a": "Bangladesh",
     "option_b": "Pakistan",
     "option_c": "Nepal",
     "option_d": "Sri Lanka",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 28,
+    "explanation": null
   },
   {
-    "question_number": 29,
+    "id": 15530,
+    "paper_id": 37,
     "question_text": "How many innings are there in a standard baseball game?",
     "option_a": "7",
     "option_b": "8",
     "option_c": "9",
     "option_d": "10",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 29,
+    "explanation": null
   },
   {
-    "question_number": 30,
+    "id": 15531,
+    "paper_id": 37,
     "question_text": "Identify the Indian city that hosted the 2017 Asian Athletics Championships.",
     "option_a": "Chennai",
     "option_b": "Bhubaneswar",
     "option_c": "Pune",
     "option_d": "Guwahati",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 30,
+    "explanation": null
   },
   {
-    "question_number": 31,
+    "id": 15532,
+    "paper_id": 37,
     "question_text": "India's first-ever medal at the Commonwealth Games was won in which year?",
     "option_a": "1934",
     "option_b": "1958",
     "option_c": "1966",
     "option_d": "1970",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 31,
+    "explanation": null
   },
   {
-    "question_number": 32,
+    "id": 15533,
+    "paper_id": 37,
     "question_text": "Who among the following is the 22nd Lieutenant Governor of Delhi?",
     "option_a": "Najeeb Jung",
     "option_b": "Manoj Sinha",
     "option_c": "Vinai Kumar",
     "option_d": "Anil Baijal Saxena",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 32,
+    "explanation": null
   },
   {
-    "question_number": 33,
+    "id": 15534,
+    "paper_id": 37,
     "question_text": "Consider the following specific stages of demographic transition associated with economic development: Select the CORRECT order of the above stages using the codes given below:\n\n1. Low birth rate with low death rate.\n\n2. High birth rate with high death rate.\n\n3. High birth rate with low death rate.",
     "option_a": "1-2-3",
     "option_b": "2-1-3",
     "option_c": "2-3-1",
     "option_d": "3-2-1",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 33,
+    "explanation": null
   },
   {
-    "question_number": 34,
+    "id": 15535,
+    "paper_id": 37,
     "question_text": "According to Koppen's climatic classification, what does the small letter 's' denote?",
     "option_a": "No dry season",
     "option_b": "Dry season in winter",
     "option_c": "Dry season in",
     "option_d": "Rainy season in summer summer",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 34,
+    "explanation": null
   },
   {
-    "question_number": 35,
+    "id": 15536,
+    "paper_id": 37,
     "question_text": "What is the name of the only commonly available school (Shaakha) of the Rigveda today?",
     "option_a": "Maitrayani",
     "option_b": "Kauthuma",
     "option_c": "Shaakala",
     "option_d": "Taittiriya",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 35,
+    "explanation": null
   },
   {
-    "question_number": 36,
+    "id": 15537,
+    "paper_id": 37,
     "question_text": "Fill in the blanks: The Mando song, known for its emotional depth and cultural fusion, originated in Goa and typically deals with themes such as love, tragedy, and ____.",
     "option_a": "patriotism",
     "option_b": "colonial resistance",
     "option_c": "wedding customs",
     "option_d": "mythology",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 36,
+    "explanation": null
   },
   {
-    "question_number": 37,
+    "id": 15538,
+    "paper_id": 37,
     "question_text": "Which committee highlighted the potential of small-scale industries for rural development in 1955?",
     "option_a": "Narasimham",
     "option_b": "Gadgil Committee Committee",
     "option_c": "Karve Committee",
     "option_d": "Roy Committee",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 37,
+    "explanation": null
   },
   {
-    "question_number": 38,
+    "id": 15539,
+    "paper_id": 37,
     "question_text": "Which of the following best describes the architectural layout of the roads and streets in the Lower Town of Mohenjo-Daro?",
     "option_a": "Exact grid pattern",
     "option_b": "Circular pattern",
     "option_c": "Wavy lines pattern",
     "option_d": "Sharp star pattern",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 38,
+    "explanation": null
   },
   {
-    "question_number": 39,
+    "id": 15540,
+    "paper_id": 37,
     "question_text": "Which two areas are reflected in the contrasting slope directions of the Indian Desert, indicating the drainage orientation?",
     "option_a": "Punjab Plain and Gujarat Coast",
     "option_b": "Sindh region and Rann of Kachchh",
     "option_c": "Thar Plateau and Aravalli Range",
     "option_d": "Indus Basin and Deccan Plateau",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 39,
+    "explanation": null
   },
   {
-    "question_number": 40,
+    "id": 15541,
+    "paper_id": 37,
     "question_text": "Under which specific provision of the Indian Constitution is the executive power vested in the President to act as the Supreme Commander of the Defence Forces?",
     "option_a": "Article 61(1)",
     "option_b": "Article 58(1)",
     "option_c": "Article 53(2)",
     "option_d": "Article 56(2)",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 40,
+    "explanation": null
   },
   {
-    "question_number": 41,
+    "id": 15542,
+    "paper_id": 37,
     "question_text": "By which Constitutional Amendment Act was Article 246A inserted into the Constitution of India?",
     "option_a": "100th Constitutional Amendment Act, 2015",
     "option_b": "101st Constitutional Amendment Act, 2016",
     "option_c": "102nd Constitutional Amendment Act, 2018",
     "option_d": "103rd Constitutional Amendment Act, 2019",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 41,
+    "explanation": null
   },
   {
-    "question_number": 42,
+    "id": 15543,
+    "paper_id": 37,
     "question_text": "Which region is most suitable for growing Jowar?",
     "option_a": "Humid regions",
     "option_b": "Semi arid areas",
     "option_c": "Cold regions",
     "option_d": "Coastal regions",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 42,
+    "explanation": null
   },
   {
-    "question_number": 43,
+    "id": 15544,
+    "paper_id": 37,
     "question_text": "Which of the following is not a Directive Principle of State Policy under Part IV of the Indian Constitution?",
     "option_a": "Protection of environment",
     "option_b": "Right to constitutional remedies",
     "option_c": "Equal pay for equal work",
     "option_d": "Promotion of village panchayats",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 43,
+    "explanation": null
   },
   {
-    "question_number": 44,
+    "id": 15545,
+    "paper_id": 37,
     "question_text": "Which National Waterway in India includes stretches of the Godavari and Krishna rivers?",
     "option_a": "National Waterway-2",
     "option_b": "National Waterway-3",
     "option_c": "National Waterway-4",
     "option_d": "National Waterway-5",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 44,
+    "explanation": null
   },
   {
-    "question_number": 45,
+    "id": 15546,
+    "paper_id": 37,
     "question_text": "At the 2022 Asian Games held in Hangzhou in 2023, India achieved a historic milestone by crossing which medal count for the first time?",
     "option_a": "50 medals",
     "option_b": "75 medals",
     "option_c": "100 medals",
     "option_d": "150 medals",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 45,
+    "explanation": null
   },
   {
-    "question_number": 46,
+    "id": 15547,
+    "paper_id": 37,
     "question_text": "As of April 2026, what is the total number of notified Biosphere Reserves in India, and how many among them are part of UNESCO's World Network of Biosphere Reserves\n\n(WNBR)?",
     "option_a": "18 Biosphere Reserves and 10 WNBR",
     "option_b": "18 Biosphere Reserves and 13 WNBR",
     "option_c": "20 Biosphere Reserves and 13 WNBR",
     "option_d": "20 Biosphere Reserves and 11 WNBR",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 46,
+    "explanation": null
   },
   {
-    "question_number": 47,
+    "id": 15548,
+    "paper_id": 37,
     "question_text": "The foreign investment limit in banks was raised to around what percentage under the 1991 reform policies?",
     "option_a": "49%",
     "option_b": "51%",
     "option_c": "74%",
     "option_d": "100%",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 47,
+    "explanation": null
   },
   {
-    "question_number": 48,
+    "id": 15549,
+    "paper_id": 37,
     "question_text": "The Harshacharita was composed by which writer?",
     "option_a": "Kalidasa",
     "option_b": "Banabhatta",
     "option_c": "Dandin",
     "option_d": "Bharata",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 48,
+    "explanation": null
   },
   {
-    "question_number": 49,
+    "id": 15550,
+    "paper_id": 37,
     "question_text": "Which of the following was an outcome of the devaluation of the rupee under India's foreign exchange reforms of 1991?",
     "option_a": "Decline in foreign exchange inflows.",
     "option_b": "Increase in the inflow of foreign exchange.",
     "option_c": "Complete abolition of exchange controls.",
     "option_d": "Replacement of the rupee by a foreign currency.",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 49,
+    "explanation": null
   },
   {
-    "question_number": 50,
+    "id": 15551,
+    "paper_id": 37,
     "question_text": "Why can a constant-volume gas thermometer provide nearly the same temperature reading regardless of the gas used?",
     "option_a": "The density of every gas is kept identical at all temperatures.",
     "option_b": "Gas pressure becomes independent of changes in volume.",
     "option_c": "Real gases approach ideal-gas behaviour at sufficiently low pressure.",
     "option_d": "Mercury expansion compensates for the non-ideal behaviour of gases.",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 50,
+    "explanation": null
   },
   {
-    "question_number": 51,
+    "id": 15552,
+    "paper_id": 37,
     "question_text": "The base area of a right prism is 72 cm² and height is 15 cm. Find volume.",
     "option_a": "1000 cm³",
     "option_b": "1080 cm³",
     "option_c": "1100 cm³",
     "option_d": "1150 cm³",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 51,
+    "explanation": null
   },
   {
-    "question_number": 52,
+    "id": 15553,
+    "paper_id": 37,
     "question_text": "The perimeter of an equilateral triangle is 36 cm. Find the area of the triangle.",
     "option_a": "46√3 cm²",
     "option_b": "37√3 cm²",
     "option_c": "36√3 cm²",
     "option_d": "26√3 cm²",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 52,
+    "explanation": null
   },
   {
-    "question_number": 53,
+    "id": 15554,
+    "paper_id": 37,
     "question_text": "A solid cylinder is melted and reshaped into 4 identical smaller cylinders. What will be the volume of each of the smaller cylinders?",
     "option_a": "1/2 original",
     "option_b": "1/4 original",
     "option_c": "same as original",
     "option_d": "1/3 original",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 53,
+    "explanation": null
   },
   {
-    "question_number": 54,
+    "id": 15555,
+    "paper_id": 37,
     "question_text": "A and B invest in a business in a ratio of 3:\n\n2. Five percent of the total profit is donated to charity, and A's share amounts to ₹855. What is the total profit?",
     "option_a": "₹1,425",
     "option_b": "₹1,500",
     "option_c": "₹1,537",
     "option_d": "₹1,700",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 54,
+    "explanation": null
   },
   {
-    "question_number": 55,
+    "id": 15556,
+    "paper_id": 37,
     "question_text": "A person covers half of his journey at 40 km/h and the remaining half at 60 km/h. Determine his average speed for the entire journey.",
     "option_a": "54 km/h",
     "option_b": "65 km/h",
     "option_c": "48 km/h",
     "option_d": "87 km/h",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 55,
+    "explanation": null
   },
   {
-    "question_number": 56,
+    "id": 15557,
+    "paper_id": 37,
     "question_text": "Find the compound interest on ₹5,000 at 12% per annum for 1 year 4 months, compounded annually.",
     "option_a": "₹824",
     "option_b": "₹804",
     "option_c": "₹900",
     "option_d": "₹800",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 56,
+    "explanation": null
   },
   {
-    "question_number": 57,
+    "id": 15558,
+    "paper_id": 37,
     "question_text": "The area of a rectangle with a breadth of 9 cm is equal to the area of a square whose side measures 12 cm. Determine the length of the rectangle.",
     "option_a": "21 cm",
     "option_b": "11 cm",
     "option_c": "18 cm",
     "option_d": "16 cm",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 57,
+    "explanation": null
   },
   {
-    "question_number": 58,
+    "id": 15559,
+    "paper_id": 37,
     "question_text": "A cone has a volume of 300π cm³ and a height of 9 cm. Find the radius of its base.",
     "option_a": "6 cm",
     "option_b": "15 cm",
     "option_c": "18 cm",
     "option_d": "10 cm",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 58,
+    "explanation": null
   },
   {
-    "question_number": 59,
+    "id": 15560,
+    "paper_id": 37,
     "question_text": "The ratio of the areas of two concentric circles is 25: 16. If the width of the ring formed is 9 m, find the radius of the smaller circle.",
     "option_a": "20 m",
     "option_b": "45 m",
     "option_c": "28 m",
     "option_d": "36 m",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 59,
+    "explanation": null
   },
   {
-    "question_number": 60,
+    "id": 15561,
+    "paper_id": 37,
     "question_text": "A ladder leaning against a wall makes an angle of 30° with the ground. If the length of the ladder is 10 m, find the distance of the foot of the ladder from the wall.",
     "option_a": "6.66 m",
     "option_b": "9.66 m",
     "option_c": "8.66 m",
     "option_d": "7.66 m",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 60,
+    "explanation": null
   },
   {
-    "question_number": 61,
+    "id": 15562,
+    "paper_id": 37,
     "question_text": "In a circle with centre O, AB is a chord, and C lies on the minor arc AB. Tangents at points A and B meet at point P. If ∠ACB = 120°, then what is the measure of ∠APB?",
     "option_a": "30°",
     "option_b": "45°",
     "option_c": "60°",
     "option_d": "120°",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 61,
+    "explanation": null
   },
   {
-    "question_number": 62,
+    "id": 15563,
+    "paper_id": 37,
     "question_text": "If cot A = 7, then find the value of 5 cos A+4 sin A . cos³ A+7 sin³ A+6 sin A",
     "option_a": "1",
     "option_b": "3",
     "option_c": "2",
     "option_d": "4",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 62,
+    "explanation": null
   },
   {
-    "question_number": 63,
+    "id": 15564,
+    "paper_id": 37,
     "question_text": "Solve: 1 + 1 + 1 . √2+1 √3+√2 √4+√3",
     "option_a": "0",
     "option_b": "1",
     "option_c": "2",
     "option_d": "3",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 63,
+    "explanation": null
   },
   {
-    "question_number": 64,
+    "id": 15565,
+    "paper_id": 37,
     "question_text": "If √3 = 1.732 , then find the value of 6√3+9 √3 .",
     "option_a": "2.457",
     "option_b": "11.196",
     "option_c": "14.786",
     "option_d": "4.652",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 64,
+    "explanation": null
   },
   {
-    "question_number": 65,
+    "id": 15566,
+    "paper_id": 37,
     "question_text": "A spherical iron ball of radius 3 cm is dropped into a cylindrical tub of radius 4 cm containing water. By how much will the water level rise?",
     "option_a": "1.25 cm",
     "option_b": "2.25 cm",
     "option_c": "3.78 cm",
     "option_d": "5.78 cm",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 65,
+    "explanation": null
   },
   {
-    "question_number": 66,
+    "id": 15567,
+    "paper_id": 37,
     "question_text": "In triangle ABC, points D and E lie on sides AB and AC, respectively, such that AD × AC = AB × AE. If ∠ABC = 75° and ∠ADE exceeds ∠ACB by 25°, determine the measure of ∠A.",
     "option_a": "50°",
     "option_b": "45°",
     "option_c": "55°",
     "option_d": "60°",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 66,
+    "explanation": null
   },
   {
-    "question_number": 67,
+    "id": 15568,
+    "paper_id": 37,
     "question_text": "The manufacturing cost of an electric drone is split between specialized microchips and lightweight composite casing in a 4:1 ratio. Due to supply chain improvements, microchip costs decrease by 15%, while global material shortages cause the composite casing costs to surge by 40%. What is the net percentage change in the total manufacturing cost of the drone?",
     "option_a": "2% increase",
     "option_b": "4% decrease",
     "option_c": "3% decrease",
     "option_d": "6% increase",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 67,
+    "explanation": null
   },
   {
-    "question_number": 68,
+    "id": 15569,
+    "paper_id": 37,
     "question_text": "In a school internal examination of six different subjects, Nishtha scores 64% of the total marks. Nishtha's marks in each subject\n\n(separately) are in the ratio 6 : 7 : 9 : 12 : 8 : 6. The maximum marks possible in each subject is the same. As per the rules of the examination, one needs to score 55% in any subject to pass in that subject. In how many subjects in this examination has Nishtha scored below the pass marks?",
     "option_a": "0",
     "option_b": "1",
     "option_c": "2",
     "option_d": "3",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 68,
+    "explanation": null
   },
   {
-    "question_number": 69,
+    "id": 15570,
+    "paper_id": 37,
     "question_text": "A cistern has three taps M, N and P, through which water can be taken out from it. Tap M can fill 6 buckets in 30 minutes, tap N can fill 8 buckets in 1 hour 4 minutes and tap P can fill 2 buckets in 20 minutes. When the cistern is filled upto 4 th of its capacity, all the three taps are opened together, as a result of which the cistern gets emptied in 2 hours 40 minutes. What is the capacity of the cistern if each bucket is identical and can hold 8 liters of water (assuming there is no wastage of water)?",
     "option_a": "720 lts",
     "option_b": "680 lts",
     "option_c": "650 lts",
     "option_d": "544 lts",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 69,
+    "explanation": null
   },
   {
-    "question_number": 70,
+    "id": 15571,
+    "paper_id": 37,
     "question_text": "In a right triangle ABC with ∠B= 90°, sin² A + sin² C=?",
     "option_a": "1",
     "option_b": "0",
     "option_c": "2",
     "option_d": "sin² A",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 70,
+    "explanation": null
   },
   {
-    "question_number": 71,
+    "id": 15572,
+    "paper_id": 37,
     "question_text": "Solve for acute θsin(θ+ : 15°) = cos(θ−15°)",
     "option_a": "90°",
     "option_b": "30°",
     "option_c": "60°",
     "option_d": "45°",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 71,
+    "explanation": null
   },
   {
-    "question_number": 72,
+    "id": 15573,
+    "paper_id": 37,
     "question_text": "If a + b + c = 31 and ab + bc + ca = 37, find the value of a² + b² + c².",
     "option_a": "961",
     "option_b": "1035",
     "option_c": "887",
     "option_d": "878",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 72,
+    "explanation": null
   },
   {
-    "question_number": 73,
+    "id": 15574,
+    "paper_id": 37,
     "question_text": "If x+ 1 x= 6 , then find the value of x6 + x6 1 .",
     "option_a": "39204",
     "option_b": "39202",
     "option_c": "39304",
     "option_d": "39302",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 73,
+    "explanation": null
   },
   {
-    "question_number": 74,
+    "id": 15575,
+    "paper_id": 37,
     "question_text": "A vessel contains 240 litres of a mixture of milk and water in the ratio 7:5. First, 40 litres of the mixture are removed and replaced with an equal volume of pure water. Then, 60 litres of the resulting mixture are removed and replaced with an equal volume of pure milk. Find the final ratio of milk to water in the vessel.",
     "option_a": "62 : 41",
     "option_b": "21 : 17",
     "option_c": "97 : 83",
     "option_d": "59 : 37",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 74,
+    "explanation": null
   },
   {
-    "question_number": 75,
+    "id": 15576,
+    "paper_id": 37,
     "question_text": "Three circles with non-collinear centers lie in a plane such that each circle touches the other two externally. How many common tangents can be drawn that touch at least two of these circles simultaneously?",
     "option_a": "9",
     "option_b": "3",
     "option_c": "12",
     "option_d": "6",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 75,
+    "explanation": null
   },
   {
-    "question_number": 76,
+    "id": 15577,
+    "paper_id": 37,
     "question_text": "Fill in the blank with the appropriate preposition. The professor spoke ______ length about the implications of the study.",
     "option_a": "in",
     "option_b": "on",
     "option_c": "by",
     "option_d": "at",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 76,
+    "explanation": null
   },
   {
-    "question_number": 77,
+    "id": 15578,
+    "paper_id": 37,
     "question_text": "Complete the following sentence in indirect speech with the correct option. She said, \"I will open the window.\" She said that she ______ open the window.",
     "option_a": "will",
     "option_b": "shall",
     "option_c": "would",
     "option_d": "can",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 77,
+    "explanation": null
   },
   {
-    "question_number": 78,
+    "id": 15579,
+    "paper_id": 37,
     "question_text": "Rearrange the parts of the sentence in the correct order. Amid the rising threat of state-sponsored cyberattacks, P. while also collaborating with private sector firms to safeguard national digital assets Q. targeting critical infrastructure such as power grids, financial institutions, and defense systems, R. by investing heavily in advanced threat detection and response mechanisms, S. governments worldwide bolstered their cybersecurity frameworks,",
     "option_a": "SPQR",
     "option_b": "RSPQ",
     "option_c": "PRQS",
     "option_d": "SQRP",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 78,
+    "explanation": null
   },
   {
-    "question_number": 79,
+    "id": 15580,
+    "paper_id": 37,
     "question_text": "To be successful in today's world, you require the gift of the gab. What does \"the gift of the gab\" mean?",
     "option_a": "The ability to speak fluently and persuasively",
     "option_b": "The habit of talking too much without making sense",
     "option_c": "A natural talent for writing poems and stories",
     "option_d": "The ability to stay silent and observe carefully",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 79,
+    "explanation": null
   },
   {
-    "question_number": 80,
+    "id": 15581,
+    "paper_id": 37,
     "question_text": "Identify the error in the sentence. He speaks too much fast for me to understand.",
     "option_a": "understand",
     "option_b": "fast",
     "option_c": "much",
     "option_d": "speaks",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 80,
+    "explanation": null
   },
   {
-    "question_number": 81,
+    "id": 15582,
+    "paper_id": 37,
     "question_text": "Identify the error in the sentence. A Mount Everest is the highest peak in the world.",
     "option_a": "A",
     "option_b": "Everest",
     "option_c": "highest",
     "option_d": "world",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 81,
+    "explanation": null
   },
   {
-    "question_number": 82,
+    "id": 15583,
+    "paper_id": 37,
     "question_text": "Rearrange the parts of the sentence in the correct order. The constitutional amendment P. to ensure greater fiscal transparency, Q. was introduced in the parliament R. with provisions mandating periodic audits S. of government expenditure across all departments",
     "option_a": "SRPQ",
     "option_b": "QPRS",
     "option_c": "PSQR",
     "option_d": "RQPS",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 82,
+    "explanation": null
   },
   {
-    "question_number": 83,
+    "id": 15584,
+    "paper_id": 37,
     "question_text": "Choose the correct idiom for the word highlighted in bold. \"Benjamin isn't happy now that he's working the graveyard shift.\"",
     "option_a": "He is working at a cemetery.",
     "option_b": "He is working late-night hours.",
     "option_c": "He is working fewer hours than before.",
     "option_d": "He is working in a dangerous job.",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 83,
+    "explanation": null
   },
   {
-    "question_number": 84,
+    "id": 15585,
+    "paper_id": 37,
     "question_text": "Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?\n\n1. Over generations, cultural and genetic adaptations improved their resilience to extreme environments.\n\n2. They created insulated clothing from animal skins and built durable shelters to retain heat.\n\n3. Early humans living during the Ice Age had to develop survival strategies to endure harsh conditions.\n\n4. The ability to control fire allowed them to cook food, stay warm, and protect themselves from predators.\n\n5. These adaptations enabled human populations to spread across colder regions and establish new settlements.",
     "option_a": "5-2-3-1-4",
     "option_b": "1-3-2-4-5",
     "option_c": "4-1-2-5-3",
     "option_d": "3-2-4-5-1",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 84,
+    "explanation": null
   },
   {
-    "question_number": 85,
+    "id": 15586,
+    "paper_id": 37,
     "question_text": "Which of the given options arranges the following sentences in the most logical sequence to form a meaningful paragraph?\n\n1. Mass media plays a crucial role in shaping public opinion and cultural norms.\n\n2. Understanding media literacy is essential to critically analyze and interpret information.\n\n3. The influence of media extends to politics, social behavior, and consumer choices.\n\n4. While it can educate and inform, media can also spread misinformation and biases.",
     "option_a": "4-3-2-1",
     "option_b": "1-3-4-2",
     "option_c": "3-2-1-4",
     "option_d": "2-4-1-3",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 85,
+    "explanation": null
   },
   {
-    "question_number": 86,
+    "id": 15587,
+    "paper_id": 37,
     "question_text": "Select the most appropriate synonym of the given word: PERNICIOUS",
     "option_a": "Harmless",
     "option_b": "Deadly",
     "option_c": "Helpful",
     "option_d": "Safe",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 86,
+    "explanation": null
   },
   {
-    "question_number": 87,
+    "id": 15588,
+    "paper_id": 37,
     "question_text": "**Comprehension (Q. 87 - 91):** To regard competitive examinations as neutral arbiters of merit is to mistake calibration for fairness. These trials, draped in metrics and flanked by syllabi, often merely echo the (1) ______ of systemic inequities rather than resolving them. What appears to be an open arena is, upon closer scrutiny, a scaffolded labyrinth—its paths more navigable to the already initiated. In this theatre, memory masquerades as intellect, and swiftness is 10 crowned/(2) ______. Coaching bazaars thrive, not on illumination but on algorithmic mimicry. One does not so much learn as rehearse patterned responses, choreographed to match opaque rubrics. That which resists formula—intuition, ambiguity, ethical judgment—is too often filtered out as noise. Yet the deeper toll is not pedagogical but psychic. Prolonged exposure to anticipatory failure creates a cognitive sediment, an internalized narrowing. Dreams don't shatter; they (3) ______, calcifying into compliance. In time, the examinee becomes fluent in performance, but foreign to inquiry. To call for reform is insufficient. We must interrogate the architecture itself—its values, its exclusions, its gods. Until the grammar of merit is (4) ______, not rebranded, no revision will suffice. The danger is not that we aim too high, but that the scaffolding remains unseen, and the climb is mistaken for (5) ______.\n\n---\n\nWhat should come in the place of blank number (1)?",
     "option_a": "legacies",
     "option_b": "ruptures",
     "option_c": "inversions",
     "option_d": "echoes",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 87,
+    "explanation": null
   },
   {
-    "question_number": 88,
+    "id": 15589,
+    "paper_id": 37,
     "question_text": "**Comprehension (Q. 87 - 91):** To regard competitive examinations as neutral arbiters of merit is to mistake calibration for fairness. These trials, draped in metrics and flanked by syllabi, often merely echo the (1) ______ of systemic inequities rather than resolving them. What appears to be an open arena is, upon closer scrutiny, a scaffolded labyrinth—its paths more navigable to the already initiated. In this theatre, memory masquerades as intellect, and swiftness is 10 crowned/(2) ______. Coaching bazaars thrive, not on illumination but on algorithmic mimicry. One does not so much learn as rehearse patterned responses, choreographed to match opaque rubrics. That which resists formula—intuition, ambiguity, ethical judgment—is too often filtered out as noise. Yet the deeper toll is not pedagogical but psychic. Prolonged exposure to anticipatory failure creates a cognitive sediment, an internalized narrowing. Dreams don't shatter; they (3) ______, calcifying into compliance. In time, the examinee becomes fluent in performance, but foreign to inquiry. To call for reform is insufficient. We must interrogate the architecture itself—its values, its exclusions, its gods. Until the grammar of merit is (4) ______, not rebranded, no revision will suffice. The danger is not that we aim too high, but that the scaffolding remains unseen, and the climb is mistaken for (5) ______.\n\n---\n\nWhat should come in the place of blank number (2)?",
     "option_a": "urgency",
     "option_b": "depth",
     "option_c": "compliance",
     "option_d": "abstraction",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 88,
+    "explanation": null
   },
   {
-    "question_number": 89,
+    "id": 15590,
+    "paper_id": 37,
     "question_text": "**Comprehension (Q. 87 - 91):** To regard competitive examinations as neutral arbiters of merit is to mistake calibration for fairness. These trials, draped in metrics and flanked by syllabi, often merely echo the (1) ______ of systemic inequities rather than resolving them. What appears to be an open arena is, upon closer scrutiny, a scaffolded labyrinth—its paths more navigable to the already initiated. In this theatre, memory masquerades as intellect, and swiftness is 10 crowned/(2) ______. Coaching bazaars thrive, not on illumination but on algorithmic mimicry. One does not so much learn as rehearse patterned responses, choreographed to match opaque rubrics. That which resists formula—intuition, ambiguity, ethical judgment—is too often filtered out as noise. Yet the deeper toll is not pedagogical but psychic. Prolonged exposure to anticipatory failure creates a cognitive sediment, an internalized narrowing. Dreams don't shatter; they (3) ______, calcifying into compliance. In time, the examinee becomes fluent in performance, but foreign to inquiry. To call for reform is insufficient. We must interrogate the architecture itself—its values, its exclusions, its gods. Until the grammar of merit is (4) ______, not rebranded, no revision will suffice. The danger is not that we aim too high, but that the scaffolding remains unseen, and the climb is mistaken for (5) ______.\n\n---\n\nWhat should come in the place of blank number (3)?",
     "option_a": "intensify",
     "option_b": "dissolve",
     "option_c": "fossilize",
     "option_d": "scatter",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 89,
+    "explanation": null
   },
   {
-    "question_number": 90,
+    "id": 15591,
+    "paper_id": 37,
     "question_text": "**Comprehension (Q. 87 - 91):** To regard competitive examinations as neutral arbiters of merit is to mistake calibration for fairness. These trials, draped in metrics and flanked by syllabi, often merely echo the (1) ______ of systemic inequities rather than resolving them. What appears to be an open arena is, upon closer scrutiny, a scaffolded labyrinth—its paths more navigable to the already initiated. In this theatre, memory masquerades as intellect, and swiftness is 10 crowned/(2) ______. Coaching bazaars thrive, not on illumination but on algorithmic mimicry. One does not so much learn as rehearse patterned responses, choreographed to match opaque rubrics. That which resists formula—intuition, ambiguity, ethical judgment—is too often filtered out as noise. Yet the deeper toll is not pedagogical but psychic. Prolonged exposure to anticipatory failure creates a cognitive sediment, an internalized narrowing. Dreams don't shatter; they (3) ______, calcifying into compliance. In time, the examinee becomes fluent in performance, but foreign to inquiry. To call for reform is insufficient. We must interrogate the architecture itself—its values, its exclusions, its gods. Until the grammar of merit is (4) ______, not rebranded, no revision will suffice. The danger is not that we aim too high, but that the scaffolding remains unseen, and the climb is mistaken for (5) ______.\n\n---\n\nWhat should come in the place of blank number (4)?",
     "option_a": "unlearned",
     "option_b": "dismantled",
     "option_c": "alphabetized",
     "option_d": "glorified",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 90,
+    "explanation": null
   },
   {
-    "question_number": 91,
+    "id": 15592,
+    "paper_id": 37,
     "question_text": "**Comprehension (Q. 87 - 91):** To regard competitive examinations as neutral arbiters of merit is to mistake calibration for fairness. These trials, draped in metrics and flanked by syllabi, often merely echo the (1) ______ of systemic inequities rather than resolving them. What appears to be an open arena is, upon closer scrutiny, a scaffolded labyrinth—its paths more navigable to the already initiated. In this theatre, memory masquerades as intellect, and swiftness is 10 crowned/(2) ______. Coaching bazaars thrive, not on illumination but on algorithmic mimicry. One does not so much learn as rehearse patterned responses, choreographed to match opaque rubrics. That which resists formula—intuition, ambiguity, ethical judgment—is too often filtered out as noise. Yet the deeper toll is not pedagogical but psychic. Prolonged exposure to anticipatory failure creates a cognitive sediment, an internalized narrowing. Dreams don't shatter; they (3) ______, calcifying into compliance. In time, the examinee becomes fluent in performance, but foreign to inquiry. To call for reform is insufficient. We must interrogate the architecture itself—its values, its exclusions, its gods. Until the grammar of merit is (4) ______, not rebranded, no revision will suffice. The danger is not that we aim too high, but that the scaffolding remains unseen, and the climb is mistaken for (5) ______.\n\n---\n\nWhat should come in the place of blank number (5)?",
     "option_a": "progress",
     "option_b": "destination",
     "option_c": "transformation",
     "option_d": "justice",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 91,
+    "explanation": null
   },
   {
-    "question_number": 92,
+    "id": 15593,
+    "paper_id": 37,
     "question_text": "Select the correct option: No matter how ______ the evidence was, the jury remained unconvinced.",
     "option_a": "compelling",
     "option_b": "compel",
     "option_c": "compels",
     "option_d": "compulsion",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 92,
+    "explanation": null
   },
   {
-    "question_number": 93,
+    "id": 15594,
+    "paper_id": 37,
     "question_text": "Change the following from active to passive: People have elected her president.",
     "option_a": "She has elected president by people.",
     "option_b": "She has been elected president.",
     "option_c": "She was elected president.",
     "option_d": "She is being elected president.",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 93,
+    "explanation": null
   },
   {
-    "question_number": 94,
+    "id": 15595,
+    "paper_id": 37,
     "question_text": "Change the following from active to passive: The clerk has been processing the applications.",
     "option_a": "The applications have processed by the clerk.",
     "option_b": "The applications have been being processed by the clerk.",
     "option_c": "The applications are being processed by the clerk.",
     "option_d": "The applications have been processed by the clerk.",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 94,
+    "explanation": null
   },
   {
-    "question_number": 95,
+    "id": 15596,
+    "paper_id": 37,
     "question_text": "Convert the sentence provided below from its passive voice structure to an active voice structure: Was the report being edited by the communications team when you checked?",
     "option_a": "Was the communications team editing the report when you checked?",
     "option_b": "Did the team edit the report you checked?",
     "option_c": "Were you checking the report while it was edited?",
     "option_d": "The report was being edited after you checked.",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 95,
+    "explanation": null
   },
   {
-    "question_number": 96,
+    "id": 15597,
+    "paper_id": 37,
     "question_text": "Convert the sentence provided below from its passive voice structure to an active voice structure: The changes were not anticipated to have created such widespread confusion.",
     "option_a": "No one had anticipated the changes to create such confusion.",
     "option_b": "The confusion anticipated change wasn't widespread.",
     "option_c": "It wasn't anticipated that changes caused confusion.",
     "option_d": "Changes were confused before they were anticipated.",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 96,
+    "explanation": null
   },
   {
-    "question_number": 97,
+    "id": 15598,
+    "paper_id": 37,
     "question_text": "Choose the most suitable option to replace the highlighted part of the sentence: The boy fell down from the bicycle.",
     "option_a": "fell down of",
     "option_b": "fell off",
     "option_c": "fell from",
     "option_d": "dropped off",
-    "correct_answer": "B"
+    "correct_answer": "B",
+    "question_number": 97,
+    "explanation": null
   },
   {
-    "question_number": 98,
+    "id": 15599,
+    "paper_id": 37,
     "question_text": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. She said to him, \"Are you coming to the party?\"",
     "option_a": "She asked him was he coming to the party.",
     "option_b": "She asked him if he is coming to the party.",
     "option_c": "She asked him if he was coming to the party.",
     "option_d": "She asked him are you coming to the party.",
-    "correct_answer": "C"
+    "correct_answer": "C",
+    "question_number": 98,
+    "explanation": null
   },
   {
-    "question_number": 99,
+    "id": 15600,
+    "paper_id": 37,
     "question_text": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The teacher informed the students that the results would be declared the following Monday.",
     "option_a": "\"The results will be declared next Monday,\" the teacher said.",
     "option_b": "\"We declare the results next Monday,\" the teacher said.",
     "option_c": "\"The results would be declared next Monday,\" the teacher said.",
     "option_d": "\"Your results are going to be declared on Monday,\" said the teacher.",
-    "correct_answer": "A"
+    "correct_answer": "A",
+    "question_number": 99,
+    "explanation": null
   },
   {
-    "question_number": 100,
+    "id": 15601,
+    "paper_id": 37,
     "question_text": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. He said that he would prefer to remain silent rather than speak without proof.",
     "option_a": "\"I would prefer to stay silent than speak without proof,\" he said.",
     "option_b": "\"I prefer silence/false claims,\" he said.",
     "option_c": "\"I'd rather not talk if there's no proof,\" said he.",
     "option_d": "\"I would prefer to remain silent rather than speak without proof,\" he said.",
-    "correct_answer": "D"
+    "correct_answer": "D",
+    "question_number": 100,
+    "explanation": null
   }
 ]

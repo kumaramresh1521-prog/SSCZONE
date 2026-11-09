@@ -445,10 +445,16 @@ export default function PapersPage() {
     const examObj = exams.find((x) => x.id === paperModalExamId);
     const examName = examObj?.title?.toUpperCase() || "SSC CGL";
     
+    // Validate shift name
+    if (!paperModalShiftName.trim() && !paperModalTitle.trim()) {
+      toast.error("Please enter a Shift Name or Exam Date (e.g. 19 September 2025 Shift 1)");
+      return;
+    }
+
     // Auto-generate title if shift name is given and not editing
     let computedTitle = paperModalTitle.trim();
     if (!computedTitle) {
-      const shiftStr = paperModalShiftName.trim() || "Shift 1";
+      const shiftStr = paperModalShiftName.trim();
       computedTitle = `${examName} ${paperModalYear} ${paperModalTier} (Held On ${shiftStr})`;
     }
 
@@ -1638,13 +1644,17 @@ export default function PapersPage() {
                   </label>
                   <input
                     type="text"
+                    required
                     placeholder="e.g. 19 September 2025 Shift 1"
                     value={paperModalShiftName}
                     onChange={(e) => setPaperModalShiftName(e.target.value)}
                     className="w-full rounded-xl border border-slate-300 p-2.5 text-xs sm:text-sm font-semibold text-slate-800 placeholder-slate-400 focus:border-indigo-600 focus:outline-none"
                   />
-                  <p className="text-[11px] text-slate-400 mt-1">
-                    Preview Title: {exams.find((x) => x.id === paperModalExamId)?.title?.toUpperCase() || "SSC CGL"} {paperModalYear} {paperModalTier} (Held On {paperModalShiftName || "Shift 1"})
+                  <p className="text-[11px] text-slate-500 mt-1">
+                    Preview: <strong className="text-slate-800">{exams.find((x) => x.id === paperModalExamId)?.title?.toUpperCase() || "SSC CGL"} {paperModalYear} {paperModalTier} (Held On {paperModalShiftName || "..."})</strong>
+                  </p>
+                  <p className="text-[11px] text-indigo-600 font-medium mt-0.5">
+                    💡 CBT exam mode is automatically enabled only on shift papers after questions are uploaded. Folders group shifts together and are not attempted as tests.
                   </p>
                 </div>
 

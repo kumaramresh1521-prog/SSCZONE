@@ -963,6 +963,32 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
     );
   }
 
+  // Guard: Empty Paper / Folder with 0 Questions
+  if (questions.length === 0) {
+    return (
+      <div className="min-h-screen w-full flex items-center justify-center bg-slate-900 p-4">
+        <div className="w-full max-w-md rounded-3xl bg-slate-800/90 border border-slate-700/80 p-8 text-center text-white shadow-2xl backdrop-blur-md">
+          <div className="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mx-auto mb-4">
+            <AlertCircle className="h-7 w-7" />
+          </div>
+          <h2 className="text-xl font-black text-white">Questions Uploading Soon</h2>
+          <p className="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+            This item is either a folder category or a shift paper whose questions are currently being verified and uploaded. CBT test mode is temporarily unavailable.
+          </p>
+          <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-2">
+            <Link
+              href="/papers"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 px-5 py-2.5 text-xs font-bold text-white shadow-md transition-colors cursor-pointer"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              <span>Browse Shift Papers</span>
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   // ═══════════════════════════════════════════════════════════════════
   // ── 1. PRE-EXAM FIRST VIEW (AUTHENTIC SSC ZONE CBT TERMINAL) ───────
   // ═══════════════════════════════════════════════════════════════════

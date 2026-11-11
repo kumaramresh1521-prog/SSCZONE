@@ -1,8 +1,8 @@
 import requests
 import json
+from supabase_env import get_supabase_credentials
 
-supabase_url = "https://rmobqopitkjobcnyqzru.supabase.co"
-service_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJtb2Jxb3BpdGtqb2JjbnlxenJ1Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4NTQwMzc3NiwiZXhwIjoyMTAwOTc5Nzc2fQ.tlewx6VDcbni_kJfy0IVfZ7yqwywHfNEoVCRj8-oLaA"
+supabase_url, service_key = get_supabase_credentials()
 
 headers = {
     "apikey": service_key,

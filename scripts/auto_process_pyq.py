@@ -5,13 +5,13 @@ import json
 import argparse
 import requests
 import fitz
+from supabase_env import get_supabase_credentials
 
 # Configure UTF-8 output
 sys.stdout.reconfigure(encoding='utf-8')
 
 # Supabase Credentials
-SUPABASE_URL = "https://rmobqopitkjobcnyqzru.supabase.co"
-SERVICE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJtb2Jxb3BpdGtqb2JjbnlxenJ1Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4NTQwMzc3NiwiZXhwIjoyMTAwOTc5Nzc2fQ.tlewx6VDcbni_kJfy0IVfZ7yqwywHfNEoVCRj8-oLaA"
+SUPABASE_URL, SERVICE_KEY = get_supabase_credentials()
 
 HEADERS = {
     "apikey": SERVICE_KEY,

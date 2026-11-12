@@ -1,0 +1,1020 @@
+================================================================================
+SSC CGL 2023 TIER-I (HELD ON 25 JULY 2023 SHIFT 4)
+Exam: SSC CGL | Year: 2023
+Total Questions: 100 | Duration: 60 Minutes
+Extracted from Official Answer Key via SSC ZONE (www.ssczone.in)
+================================================================================
+
+Q1. Which of the following interchanges of signs would make the given equation correct?
+162 ÷ 3 + 5 × 6 – 2 = 274
+A) + and –
+B) ÷ and x
+C) – and ÷
+D) + and ×
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q2. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p1_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p1_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p1_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p1_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p1_img5.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q3. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p2_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p2_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p2_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p2_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p2_img5.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q4. Select the set in which the numbers are related in the same way as are the numbers of
+the given sets.
+(NOTE : Operations should be performed on the whole numbers, without breaking
+down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as
+adding /subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1
+and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(12, 5, 29)
+(19, 12, 50)
+A) (8, 15, 21)
+B) (16, 12, 34)
+C) (15, 14, 44)
+D) (17, 11, 55)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q5. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p3_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p3_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p3_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p3_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p3_img5.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q6. Select the option that is related to the third term in the same way as the second term is
+related to the first term and the sixth term is related to the fifth term.
+16 : 144 :: 22 : ? :: 14 : 112
+A) 244
+B) 246
+C) 264
+D) 266
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q7. Select the option that represents the correct order of the given words as they would
+appear in an English dictionary.
+1. Canvas
+2. Candidly
+3. Canteen
+4. Canopy
+5. Cannibal
+6. Cancer
+A) 6, 5, 2, 4, 3, 1
+B) 6, 2, 5, 4, 3, 1
+C) 6, 2, 5, 3, 4, 1
+D) 5, 2, 6, 4, 1, 3
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q8. Select the Venn diagram that best represents the relationship between the following
+classes.
+Insects, Animals, Poisonous
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p4_img1.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p4_img2.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p4_img3.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p4_img4.png)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q9. Sonal’s brother’s paternal grandmother, named Seeta, is coming to Sonal’s party with
+her only son. How is Seeta’s son related to Sonal?
+A) Father
+B) Paternal grandfather
+C) Son
+D) Brother
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q10. Select the option that represents the letters that, when sequentially placed from left to
+right in the blanks below, will complete the letter series.
+ST_FIR_STNF_ RGSTN_IRG_ _NFI_G
+A) NGSFITR
+B) NGFISRT
+C) NGIFSTR
+D) NGISFRT
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q11. In a certain code language, ‘STRAIGHT’ is written as ‘UVTCUIHJ’, ‘SURVIVAL’ is
+written as ‘UWTXMBWJ’. How will ‘TAKEOVER’ be written in that language?
+A) VCMGSHXP
+B) VCMHSGWP
+C) VCMGSFWP
+D) VCMGTFVP
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q12. In a certain code language, 'WINTER' is coded as XJXQKX and 'AUTUMN' is coded as
+TRYWWB. How will 'SEASON' be coded in the same language?
+A) RTXCTT
+B) TRXCGT
+C) TGDWTT
+D) TTWDGT
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q13. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p6_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p6_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p6_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p6_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p6_img5.png)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q14. Select the option that is related to the fifth letter-cluster in the same way as the second
+letter-cluster is related to the first letter-cluster and the fourth letter-cluster is related
+to the third letter-cluster.
+GIST: FEHGRQSR :: DUCK: CBTSBAJI :: LOPE: ?
+A) KJNMONDC
+B) KONDCJNM
+C) KMONDCJN
+D) KMONDCNM
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q15. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p7_img1.png)
+A) −, +, ×, ×, ÷, ×, =
+B) ×,−, +, ×, ÷, ×, =
+C) ×, ÷, ×, ×, =,−, +
+D) −, +, ×, ÷, ×, ×, =
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q16. Three of the following four triads are alike in a certain way as they are formed by
+performing same mathematical operations among themselves and thus form a group.
+Which triad does NOT belong to that group?
+A) 24 : 25 : 5
+B) 35 : 36 : 6
+C) 8 : 15 : 3
+D) 3 : 10 : 2
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q17. Three of the following four letter-clusters are alike in a certain way and one is different.
+Pick the odd one out.
+A) EHV
+B) BEY
+C) JMP
+D) GJT
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q18. Which of the following numbers will replace the question mark (?) in the given series?
+32, ? , 44, 56, 72, 92
+A) 34
+B) 36
+C) 38
+D) 40
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q19. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p8_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p8_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p8_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p8_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p8_img5.png)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q20. Select the set in which the numbers are related in the same way as are the numbers of
+the following sets.
+(NOTE : Operations should be performed on the whole numbers, without breaking
+down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as
+adding /Subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1
+and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+(10, 5, 52)
+(35, 7, 250)
+A) (8, 4, 34)
+B) (14, 8, 90)
+C) (8, 9, 10)
+D) (20, 5, 300)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q21. Select the set in which the numbers are related in the same way as are the numbers of
+the following sets
+(NOTE : Operations should be performed on the whole numbers, without breaking
+down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as
+adding / subtracting / multiplying etc. to 13 can be performed. Breaking down 13 into 1
+and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+(4, 14, 56)
+(6, 15, 90)
+A) (8, 13, 106)
+B) (9, 15, 125)
+C) (7, 17, 118)
+D) (7, 16, 112)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q22. Which of the following terms will replace the question mark (?) in the given series?
+AXY, EZW, ICU, OHS, ?
+A) UOQ
+B) UPQ
+C) UNQ
+D) VOQ
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q23. In a certain code language, if ‘PDFJARS’ is written as ‘OCELZQR’ and ‘MHCXBTU’ is
+written as ‘LGBZAST’, how will ‘ZVDGENQ’ be written in the same code language?
+A) XUYCIMP
+B) YUCIDMP
+C) XUCDEMQ
+D) XVDEDNO
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q24. Select the figure that will come in place of the question mark (?) in the following figure
+series.
+![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p10_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p10_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p10_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p10_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p10_img5.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q25. Select the Venn diagram that best illustrates the relationship between the following
+classes.
+Women, Sister, Wife
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p11_img1.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p11_img2.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p11_img3.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p11_img4.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q26. Bramho Samaj was founded by whom?
+A) Raja Ram Mohan Roy
+B) Keshab Chandra Sen
+C) Debendranath Tagore
+D) Dayanand Saraswati
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q27. Who among the following, along with her close associates, started the secret
+congress radio during the Quit India Movement?
+A) Bhikaiji Cama
+B) Lakshmi Sehgal
+C) Sarojini Naidu
+D) Usha Mehta
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q28. Which Kushana ruler was famous in history as a great patron of Buddhism and
+organised the fourth Buddhist Council?
+A) Vasudeva I
+B) Vima Kadphises
+C) Kanishka
+D) Huvishka
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q29. Akham Lakshmi Devi, a recipient of the Sangeet Natak Akademi award, is renowned
+for which of the following dances?
+A) Kathak
+B) Odissi
+C) Sattriya
+D) Manipuri
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q30. Why can you not see objects in a dim lit room when you come from a brightly lit
+room?
+A) The iris dilates the eye lens to allow less light to enter the eye.
+B) The iris contracts the pupil to allow less light to enter the eye.
+C) The vitreous humour dilates the pupil to allow less light to enter the eye.
+D) The cornea contracts the pupil to allow less light to enter the eye.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q31. Guru Bipin Singh is associated with which of these dance forms?
+A) Kathak
+B) Odissi
+C) Manipuri
+D) Kathakali
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q32. Which of the following is the correct duration of ‘Financial Year 2022-23’ in India?
+A) 1 January 2022 to 1 January 2023
+B) 30 April 2022 to 1 March 2023
+C) 30 April 2022 to 31 March 2023
+D) 1 April 2022 to 31 March 2023
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q33. Which of the following pairs of countries are going to host 2022 FIVA Volleyball
+Women’s World Championship?
+A) Poland and Slovenia
+B) Poland and Netherlands
+C) Belarus and Slovenia
+D) Lithuania and Poland
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q34. According to traditional Indian seasons, which of the following seasons falls in the months of November-December?
+A) Sharad
+B) Shishir
+C) Hemant
+D) Vasant
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q35. According to World Bank, what was the density of the population of Sri Lanka in 2020?
+A) 554 Persons per sq. km.
+B) 300 Persons per sq. km.
+C) 354 Persons per sq. km.
+D) 364 Persons per sq. km.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q36. Which of the following is found in plant cells only?
+A) Cell membrane
+B) Cell wall
+C) Nucleolus
+D) Mitochondria
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q37. Which Mughal ruler contributed to the revolt of 1857?
+A) Shahalam II
+B) Bahadur shah I
+C) Alamgir II
+D) Bahadur shah II
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q38. Which of the following states presented the ‘Child Budget’ for the first time in March
+2022 as a part of their annual financial plan?
+A) Andhra Pradesh
+B) Madhya Pradesh
+C) Uttar Pradesh
+D) Arunachal Pradesh
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q39. Which of the following perennial rivers is 720 km long and originates in the Himalayas
+in flow through chamba of Himachal Pradesh?
+A) Saryu river
+B) Yamuna river
+C) Ravi river
+D) Krishna river
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q40. The Rourkela steel plant was set up in collaboration with Germany in which state of
+India?
+A) Jharkhand
+B) Bihar
+C) Assam
+D) Odisha
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q41. The Governor of an Indian state before entering upon his office takes an oath or
+affirmation before ________.
+A) the Chief Justice of the High Court exercising jurisdiction in relation to the State
+B) the President of India
+C) the Chief Minister of the concerned state
+D) the Prime Minister of India
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q42. In 2022, the Government of India urged people to hoist or display the Tricolour in their
+homes from August ______________to 15th to celebrate Independence Day.
+A) 12th
+B) 10th
+C) 13th
+D) 11th
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q43. Which of the following combinations of “animal” and “area they found” is
+INCORRECT?
+A) Kangaroo – Australia
+B) Orangutan – Caribbean islands
+C) Ostrich – Savanna and desert regions,
+D) Lemurs – Madagascar
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q44. Who among the following is an exponent of the classical instrument, Santoor?
+A) Pandit Kumar Gandharva
+B) Pandit Bhimsen Joshi
+C) Pandit Ravi Shankar
+D) Pandit Shivkumar Sharma
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q45. The given equation provides the property of the motion of an object, traversing a
+circular path. What is ‘v’ in this equation?
+ac = v²/R
+A) Distance
+B) Surface area
+C) Speed
+D) Intensity
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q46. In hockey, ________ is awarded if the ball goes over the back line after last being
+touched by a defender.
+A) long corner
+B) off side
+C) free hit
+D) penalty corner
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q47. The Social Justice and Empowerment Ministry of India, which caters to the welfare of
+the backward classes and those with disabilities, saw _______ increase in the
+allocation in the Union Budget 2022-23.
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p15_img1.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p15_img2.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p15_img3.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p15_img4.png)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q48. The term of trade refers to ________.
+A) the excess of import expenditures over export earnings
+B) the trade agreements
+C) the terms and conditions on which a country is offered loan
+D) the ratio between export prices and import prices
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q49. ________of the Constitution of India says that the State shall take steps to organise
+panchayats and endow them with such powers and authority as may be necessary to
+enable them to function as units of self-government.
+A) Article 35
+B) Article 40
+C) Article 38
+D) Article 32
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q50. Which of the following is a Disability Screening Mobile App developed by NCERT
+launched in Delhi schools to screen students with suspected disabilities?
+A) SAMAGRA
+B) VIDYAN
+C) PRASHAST
+D) SAMAGAM
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q51. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p16_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p16_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p16_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p16_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p16_img5.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q52. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p17_img1.png)
+A) (a+b)² (a-b)²
+B) (a+b)²(a-b)
+C) (a+b) (a-b)²
+D) a²-b²
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q53. A group of college students had decided to complete a project in 10 days. As 2
+students dropped out every day, the project got completed at the end of the 15th day.
+The number of students at the beginning of the project was:
+A) 42
+B) 40
+C) 35
+D) 45
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q54. 4 men, working together, can finish a work in 18 days. How many more men are
+required to finish the same work in 12 days?
+A) 4
+B) 3
+C) 2
+D) 6
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q55. If cos(40° + x) = sin 30°, then the value of x is:
+A) 22°
+B) 20°
+C) 19°
+D) 23°
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q56. Having started from the same point and at the same time, two runners – P and Q – are
+running around a circular track of length 500 m in opposite directions with the speeds
+of 6 m/s and 10 m/s, respectively. If they exchange their speeds after meeting for the
+first time, who will reach the starting point first?
+A) Q
+B) P
+C) Both P and Q will reach at the same time
+D) No one of the P and Q
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q57. A cuboid with sides 4, 6 and 8 units is covered with paper. The paper is removed and a
+square is made from it. What is the side (in units) of the square?
+A) 12.24
+B) 16.62
+C) 14.42
+D) 12.62
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q58. S deposits a total of ₹50,000 in two accounts which give 8% and 12% simple interest
+annually, respectively. After one year, he gets a total ₹5,200. How much money does he
+deposit in the account with a 12% interest rate?
+A) ₹30,000
+B) ₹32,000
+C) ₹20,000
+D) ₹25,000
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q59. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p18_img1.png)
+A) ₹2,80,000
+B) ₹3,00,000
+C) ₹2,00,000
+D) ₹2,75,000
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q60. Tarun owned a plot of land having an area that was 10% more than the area of the plot
+owned by Basab, while the area of the plot of land owned by Nakul was 40% more than
+the area of the plot owned by Tarun. If the area of the plot owned by Nakul was 2695
+square feet, what was the area (in square feet) of the plot owned by Basab?
+A) 1750
+B) 1740
+C) 1780
+D) 1800
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q61. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p19_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p19_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p19_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p19_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p19_img5.png)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q62. Find (1 / sinθ) – sinθ.
+A) Cosθ cotθ
+B) cosθ secθ
+C) cosθ cosecθ
+D) cosθ tanθ
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q63. A shopkeeper purchased 1600 mangos at the rate of ₹120 per dozen. Out of these, he
+sold 900 mangoes at ₹15 per mango and the remaining mangoes at ₹14 per mango.
+His gain percentage is:
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p19_img6.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p19_img7.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p19_img8.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p19_img9.png)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q64. A thief steals an item and escapes, running at a speed of 15 km/h. A policeman arrives
+at the spot of the crime after 4 minutes and immediately starts chasing the thief. 16
+minutes after the policeman started to chase the thief; there is still a gap of 200 m
+between the two. At what distance from the spot of the crime will the policeman catch
+up the thief and what is the speed (in km/h) of the policeman?
+A) 5.5 km; 16.5
+B) 6 km; 18
+C) 6.5 km; 19.5
+D) 5 km; 15
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q65. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p20_img1.png)
+A) 6
+B) 3
+C) 7
+D) 5
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q66. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p20_img2.png)
+A) 160°
+B) 80°
+C) 40°
+D) 100°
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q67. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p20_img3.png)
+A) 480
+B) 720
+C) 640
+D) 560
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q68. A 40-litre mixture contains 25% alcohol and 75% water. If 10 litres of water are added
+to the mixture, the percentage of alcohol in the new mixture is:
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p20_img4.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p20_img5.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p20_img6.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p20_img7.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q69. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p21_img1.png)
+A) 15.2
+B) 15.7
+C) 15.6
+D) 15.5
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q70. The marked price of a microwave oven is ₹15,990 and it is sold for ₹12,792. What is the
+rate of discount offered?
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p21_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p21_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p21_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p21_img5.png)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q71. - 7p - [3q - {8p - (4q - 10p)}] = ?
+A) 7p - 11q
+B) 11p - 7q
+C) 9p - 12q
+D) 12p - 9q
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q72. 20 women and 15 men together can complete a work in 6 days. It takes 150 days for a
+single woman to complete the work. In how many days can a single man complete the
+work?
+A) 450
+B) 225
+C) 350
+D) 210
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q73. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p22_img1.png)
+A) 8 cm
+B) 12 cm
+C) 20 cm
+D) 16 cm
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q74. Which of the following numbers is divisible by 44?
+A) 32802
+B) 54736
+C) 93472
+D) 27048
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q75. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p22_img2.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p22_img3.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p22_img4.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p22_img5.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-4_p22_img6.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q76. Select the most appropriate meaning of the given idiom.
+You snooze, you lose
+A) If you oversleep, you are likely to lose a job
+B) Laziness is not good
+C) You may lose your money if snoozing is not stopped
+D) If you are not alert, you are likely to miss opportunities.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q77. Select the most appropriate option to fill in the blank.
+Stories of dolphins’ saving human lives ________ throughout history.
+A) have been said
+B) told
+C) have been told
+D) had been said
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q78. Select the most appropriate synonym of the given word.
+Extinct
+A) Vibrant
+B) Vanished
+C) Active
+D) Living
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q79. Select the most appropriate synonym of the given word.
+Glorify
+A) Simplify
+B) Stupefy
+C) Praise
+D) Strengthen
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q80. Select the grammatically correct sentence.
+A) It was a hectic day for Susan with a lot of purchases and a couple of meetings.
+B) It was a hectic day for Susan with the lot of purchase and a couple of meetings.
+C) It was a hectic day for Susan with the lot of purchase and an couple of meetings.
+D) It was the hectic day for Susan with a lot of purchase and the couple of meetings.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q81. Select the option that expresses the given sentence in passive voice.
+Each member of the literary club submitted various literary works for the magazine.
+A) Various literary works had been submitted by each member of the literary club for the magazine.
+B) Various literary works are submitted by each member of the literary club for the magazine.
+C) Various literary works were submitted by each member of the literary club for the magazine.
+D) Various literary works were being submitted by each member of the literary club for the magazine.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q82. Select the most appropriate option to fill in the blank.
+_________ are words which have the same spelling or pronunciation but not the same
+meaning.
+A) Acronyms
+B) Homonyms
+C) Synonyms
+D) Antonyms
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q83. Sentences of a paragraph are given below in jumbled order. Arrange the sentences in
+the correct order to form a meaningful and coherent paragraph.
+A. Through the development of technologies, telecommunications, transportation, and
+other areas, globalisation has developed very quickly in the last few decades,
+resulting in economic, social, political, and cultural integration on a global scale.
+B. Although technology has had both positive and harmful effects on human life, its
+negative repercussions must be addressed appropriately.
+C. Globalisation has made significant positive contributions to economies all across
+the world.
+D. For example — Science and technology have made remarkable strides, providing
+businesses with a fantastic opportunity to expand quickly even outside of national
+borders.
+A) ACDB
+B) BCDA
+C) ACBD
+D) CDBA
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q84. Select the most appropriate ANTONYM of the given word.
+Absurd
+A) Sensible
+B) Tolerable
+C) Adorable
+D) Lovable
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q85. Sentences of a paragraph are given below in jumbled order. Arrange the sentences in
+the correct order to form a meaningful and coherent paragraph.
+A. Ashwagandha is an adaptogenic herb that has multiple benefits like improving
+thyroid functioning and reducing blood sugar levels.
+B. But remember to consult a specialist while deciding the dosage and duration of
+continued intake.
+C. It relaxes the nervous system and lowers cortisol (stress hormone) levels in the
+blood, thus making you feel calm and relaxed overall.
+D. You can consume Ashwagandha powder or Ashwagandha capsules.
+A) ADBC
+B) DABC
+C) ACDB
+D) ADCB
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q86. Select the most appropriate ANTONYM of the underlined word.
+Her parents <u>forbade</u> her to marry her lover.
+A) prevented
+B) refused
+C) declined
+D) allowed
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q87. Select the option that can be used as a one-word substitute for the given group of
+words.
+Too strong to be defeated or changed
+A) Invincible
+B) Headstrong
+C) Vigorous
+D) Sovereign
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q88. Select the option that expresses the given sentence in passive voice.
+You have adopted the plan.
+A) The plan should be adopted by you.
+B) The plan is adopted by you.
+C) The plan has being adopted by you.
+D) The plan has been adopted by you.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q89. Select the INCORRECTLY spelt word.
+A) Anxiety
+B) Preparation
+C) Voluntary
+D) Stetionery
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q90. Select the most appropriate meaning of the given idiom.
+Out of the blue
+A) Undoubtedly
+B) Unexpectedly
+C) Unbelievably
+D) Unconcerned
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q91. The following sentence has been split into four segments. Identify the segment that
+contains a grammatical error.
+The doctor came / after the patient / had / pass away.
+A) The doctor came
+B) pass away
+C) after the patient
+D) had
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q92. Select the most appropriate option to fill in the blank.
+We _________ off old clothes and bought new ones for Diwali.
+A) cost
+B) coast
+C) caste
+D) cast
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q93. Sentences of a paragraph are given below in jumbled order. Arrange the sentences in
+the correct order to form a meaningful and coherent paragraph.
+A. Louis was enthralled by the concept of a raised dots system.
+B. He made up his mind to use the technique to represent an alphabetic code.
+C. Blind persons could read large-letter books that are bulky with the aid of this
+alphabet code.
+D. Additionally, he developed the six-dot cell technology, which was at his fingertips.
+A) DCAB
+B) BCDA
+C) ABCD
+D) CDBA
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q94. Select the INCORRECTLY spelt word.
+A) Felicitate
+B) Cotarminous
+C) Ambient
+D) Announce
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q95. Select the most appropriate synonym of the underlined word.
+The boxer showed <u>audacity</u> by agreeing to fight the champion.
+A) Honesty
+B) Desperation
+C) Courage
+D) Reparation
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q96. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+The massive ransomware attack that has crippled e-hospital services of AIIMS, Delhi,
+highlights the (1) _________ vulnerability of the country’s healthcare infrastructure, and
+possibly other critical IT systems, to cybercriminals. The premier public healthcare institute (2)
+_________ to around 15 lakh outpatients and 80,000 inpatients every year. Consequently,
+there are fears that the attackers could sell the now force-encrypted AIIMS databases that
+contain (3) _________ information of patients-including political leaders, senior
+administrators, and judges, and their healthcare records on the Dark Web. Of course, what
+has happened to AIIMS is hardly a local phenomenon. A (4) _________ increase in
+cyberattacks on healthcare institutes worldwide (5) _________ during the Covid pandemic.
+The Indian healthcare sector was the second-most targeted globally. It is clear that Indian
+hospitals are vulnerable to cybersecurity. Government and hospitals need to use best
+practices to ward off future crises.
+SubQuestion No : 21
+Select the most appropriate option to fill in blank 1.
+A) increasing
+B) strengthening
+C) shining
+D) developing
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q97. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+The massive ransomware attack that has crippled e-hospital services of AIIMS, Delhi,
+highlights the (1) _________ vulnerability of the country’s healthcare infrastructure, and
+possibly other critical IT systems, to cybercriminals. The premier public healthcare institute (2)
+_________ to around 15 lakh outpatients and 80,000 inpatients every year. Consequently,
+there are fears that the attackers could sell the now force-encrypted AIIMS databases that
+contain (3) _________ information of patients-including political leaders, senior
+administrators, and judges, and their healthcare records on the Dark Web. Of course, what
+has happened to AIIMS is hardly a local phenomenon. A (4) _________ increase in
+cyberattacks on healthcare institutes worldwide (5) _________ during the Covid pandemic.
+The Indian healthcare sector was the second-most targeted globally. It is clear that Indian
+hospitals are vulnerable to cybersecurity. Government and hospitals need to use best
+practices to ward off future crises.
+SubQuestion No : 22
+Select the most appropriate option to fill in blank 2.
+A) catered
+B) catering
+C) has catered
+D) caters
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q98. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+The massive ransomware attack that has crippled e-hospital services of AIIMS, Delhi,
+highlights the (1) _________ vulnerability of the country’s healthcare infrastructure, and
+possibly other critical IT systems, to cybercriminals. The premier public healthcare institute (2)
+_________ to around 15 lakh outpatients and 80,000 inpatients every year. Consequently,
+there are fears that the attackers could sell the now force-encrypted AIIMS databases that
+contain (3) _________ information of patients-including political leaders, senior
+administrators, and judges, and their healthcare records on the Dark Web. Of course, what
+has happened to AIIMS is hardly a local phenomenon. A (4) _________ increase in
+cyberattacks on healthcare institutes worldwide (5) _________ during the Covid pandemic.
+The Indian healthcare sector was the second-most targeted globally. It is clear that Indian
+hospitals are vulnerable to cybersecurity. Government and hospitals need to use best
+practices to ward off future crises.
+SubQuestion No : 23
+Select the most appropriate option to fill in blank 3.
+A) political
+B) public
+C) personal
+D) personnel
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q99. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+The massive ransomware attack that has crippled e-hospital services of AIIMS, Delhi,
+highlights the (1) _________ vulnerability of the country’s healthcare infrastructure, and
+possibly other critical IT systems, to cybercriminals. The premier public healthcare institute (2)
+_________ to around 15 lakh outpatients and 80,000 inpatients every year. Consequently,
+there are fears that the attackers could sell the now force-encrypted AIIMS databases that
+contain (3) _________ information of patients-including political leaders, senior
+administrators, and judges, and their healthcare records on the Dark Web. Of course, what
+has happened to AIIMS is hardly a local phenomenon. A (4) _________ increase in
+cyberattacks on healthcare institutes worldwide (5) _________ during the Covid pandemic.
+The Indian healthcare sector was the second-most targeted globally. It is clear that Indian
+hospitals are vulnerable to cybersecurity. Government and hospitals need to use best
+practices to ward off future crises.
+SubQuestion No : 24
+Select the most appropriate option to fill in blank 4.
+A) grand
+B) weighty
+C) massive
+D) bulk
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q100. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+The massive ransomware attack that has crippled e-hospital services of AIIMS, Delhi,
+highlights the (1) _________ vulnerability of the country’s healthcare infrastructure, and
+possibly other critical IT systems, to cybercriminals. The premier public healthcare institute (2)
+_________ to around 15 lakh outpatients and 80,000 inpatients every year. Consequently,
+there are fears that the attackers could sell the now force-encrypted AIIMS databases that
+contain (3) _________ information of patients-including political leaders, senior
+administrators, and judges, and their healthcare records on the Dark Web. Of course, what
+has happened to AIIMS is hardly a local phenomenon. A (4) _________ increase in
+cyberattacks on healthcare institutes worldwide (5) _________ during the Covid pandemic.
+The Indian healthcare sector was the second-most targeted globally. It is clear that Indian
+hospitals are vulnerable to cybersecurity. Government and hospitals need to use best
+practices to ward off future crises.
+SubQuestion No : 25
+Select the most appropriate option to fill in blank 5.
+A) has witnessed
+B) is witnessed
+C) was witness
+D) has been witnessed
+Correct Answer: Option D
+--------------------------------------------------------------------------------

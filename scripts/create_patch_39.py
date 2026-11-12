@@ -1,0 +1,99 @@
+import json
+
+patch_data = {
+    "paper_id": 39,
+    "title": "SSC CGL 2026 Tier-I (Held On 8 October 2026 Shift 1)",
+    "total_questions": 100,
+    "changes_count": 12,
+    "changes": [
+        {
+            "question_number": 5,
+            "id": 15706,
+            "old_answer": "C",
+            "new_answer": "B",
+            "reason": "Geeta is Vijay's wife (since Radha is her mother-in-law and Amit's children are cousins), making Vijay the father of Ravi and Seema, hence 2 children (Option B)."
+        },
+        {
+            "question_number": 8,
+            "id": 15709,
+            "old_answer": "A",
+            "new_answer": "C",
+            "reason": "Column pattern follows Row 1 + 2 × Row 2 = Row 3; in column 3, 13 + 2 × 10 = 33, so missing number ? = 10 (Option C)."
+        },
+        {
+            "question_number": 47,
+            "id": 15748,
+            "old_answer": "C",
+            "new_answer": "B",
+            "reason": "Under the Twelfth Five-Year Plan (2012–2017), the targeted growth rate approved by the NDC was 8.0% for Real GDP and 4.0% for agriculture (Option B)."
+        },
+        {
+            "question_number": 57,
+            "id": 15758,
+            "old_answer": "D",
+            "new_answer": "B",
+            "reason": "Area of one hexagonal tile is 216√3 ≈ 374.11 cm²; for 120,000 cm² with 5% breakage, total tiles required = (120,000 / 374.11) / 0.95 ≈ 338 tiles (Option B)."
+        },
+        {
+            "question_number": 63,
+            "id": 15764,
+            "old_answer": "B",
+            "new_answer": "C",
+            "reason": "The equation (180 - y) = 2(90 - y) + 40 yields y = 40°, so the sum of the supplement (140°) and complement (50°) is 190° (Option C)."
+        },
+        {
+            "question_number": 64,
+            "id": 15765,
+            "old_answer": "A",
+            "new_answer": "C",
+            "reason": "Simplification yields √[(1+sin θ)/(1-sin θ)] - tan θ = (sec θ + tan θ) - tan θ = sec θ (Option C)."
+        },
+        {
+            "question_number": 69,
+            "id": 15770,
+            "old_answer": "B",
+            "new_answer": "A",
+            "reason": "Painter F finishes ceilings in 4 hrs while E paints 40% of walls; working together on the remaining 20% of walls at a combined rate of 40/3% per hour takes 1.5 hrs, giving 5.5 hours total (Option A)."
+        },
+        {
+            "question_number": 80,
+            "id": 15781,
+            "old_answer": "C",
+            "new_answer": "A",
+            "reason": "In the counterfactual conditional with inversion ('Were he to have followed...'), the result clause requires 'would have' + past participle ('would have occurred', Option A)."
+        },
+        {
+            "question_number": 87,
+            "id": 15788,
+            "old_answer": "D",
+            "new_answer": "B",
+            "reason": "'Lugubrious' is defined verbatim as looking or sounding sad and dismal, whereas 'sardonic' means grimly mocking or cynical (Option B)."
+        },
+        {
+            "question_number": 95,
+            "id": 15796,
+            "old_answer": "D",
+            "new_answer": "A",
+            "reason": "The grammatically and logically coherent sequence is 'is undergoing a transformation (B) as more brands are (D) shifting toward sustainable fabrics (A) to reduce their massive (C)', forming BDAC (Option A)."
+        },
+        {
+            "question_number": 97,
+            "id": 15798,
+            "old_answer": "D",
+            "new_answer": "C",
+            "reason": "The disappointed man's remark reveals that he projected onto the statue the ideal state of happiness that was missing/absent from his own life (Option C)."
+        },
+        {
+            "question_number": 99,
+            "id": 15800,
+            "old_answer": "D",
+            "new_answer": "B",
+            "reason": "The irony lies in holding up an inanimate, unfeeling statue as a model of emotional restraint for a crying living child (Option B)."
+        }
+    ]
+}
+
+with open('c:/ssczone/scripts/verified_patches/patch_paper_39.json', 'w', encoding='utf-8') as f:
+    json.dump(patch_data, f, indent=2, ensure_ascii=False)
+
+print("Saved patch_paper_39.json successfully with", len(patch_data['changes']), "changes.")

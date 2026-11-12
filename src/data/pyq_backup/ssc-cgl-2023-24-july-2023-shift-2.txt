@@ -1,0 +1,1055 @@
+================================================================================
+SSC CGL 2023 TIER-I (HELD ON 24 JULY 2023 SHIFT 2)
+Exam: SSC CGL | Year: 2023
+Total Questions: 100 | Duration: 60 Minutes
+Extracted from Official Answer Key via SSC ZONE (www.ssczone.in)
+================================================================================
+
+Q1. Which two signs should be interchanged to make the given equation correct?
+17 + 10 × 5 ÷ 9 + 18 = 53
+A) + and ÷
+B) + and ×
+C) + and −
+D) × and ÷
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q2. ![Figure](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p2_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p2_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p2_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p2_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p2_img5.png)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q3. A paper is folded and cut as shown below. How will it appear when unfolded?
+![Figure](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p3_img6.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p3_img7.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p3_img8.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p3_img9.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p3_img10.png)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q4. ![Figure](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p4_img11.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p4_img12.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p4_img13.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p4_img14.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p4_img15.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q5. Select the option figure in which the given figure is embedded. (Rotation is NOT
+allowed.)
+![Figure](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p5_img16.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p5_img17.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p5_img18.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p5_img19.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p5_img20.png)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q6. Select the set in which the numbers are related in the same way as are the numbers of
+the following set.
+(NOTE : Operations should be performed on the whole numbers, without breaking
+down the numbers into its constituent digits. E.g. 13 - Operations on 13 such as
+adding /subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1
+and 3 and then performing mathematical operations on 1 and 3 is NOT allowed)
+(71, 114, 157)
+(36, 79, 122)
+A) (52, 95, 137)
+B) (25, 68, 111)
+C) (16, 56, 98)
+D) (5, 45, 88)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q7. Which option represents the correct order of the given words as they would appear in
+an English dictionary?
+1.Casual
+2.Camera
+3.Caught
+4.Called
+5.Cabinet
+A) 5,4,2,1,3
+B) 5,4,2,3,1
+C) 5,3,4,1,2
+D) 5,4,1,2,3
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q8. Three statements are followed by three conclusions numbered I, Il and Il. You have to
+consider these statements to be true, even if they seem to be at variance with
+commonly known facts. Decide which of the given conclusions logically follow(s) from
+the given statements.
+Statements:
+All peacocks are pigeons.
+Some pigeons are pinks.
+Some pinks are birds.
+Conclusions:
+() Some pinks are peacocks.
+(I) Some birds are pigeons.
+(IlI) Some peacocks are birds.
+A) None of the conclusion follow
+B) Either conclusion I or conclusion Ill follows
+C) Only conclusion II follows
+D) Only conclusion I follows
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q9. Select the option that is related to the fifth number in the same way as the second
+number is related to the first number and the fourth number is related to the third
+number.
+5 : 140 :: 8 : 536 : 6 : ?
+A) 243
+B) 233
+C) 234
+D) 244
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q10. Pointing to a woman, Param(a man) said, "She is the mother-in-law of the mother-in-
+law of the daughter-in-law of my father." How is Param related to the woman?
+A) Father
+B) Brother
+C) Grandson
+D) Son
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q11. Three statements are given, followed by four conclusions numbered I, II, Ill and IV.
+Assuming the statements to be true, even if they seem to be at variance with
+commonly known facts, decide which of the conclusions logically follow(s) from the
+statements.
+Statements:
+All birds are ducks.
+Some ducks are crows.
+All crows are parrots.
+Conclusions:
+I. Some parrots are birds.
+II. Some parrots are ducks.
+Ill. Some crows are birds.
+IV. All parrots are birds.
+A) Only conclusions I and IV follow
+B) Only conclusion II follows
+C) Only conclusions I, Il and IV follow
+D) Only conclusions II and I follow
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q12. Which of the following numbers will replace the question mark (?) in the given series?
+1, 4, 27, 16, 125, ?
+A) 216
+B) 36
+C) 343
+D) 49
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q13. Select the option that represents the correct order of the given words as they would
+appear in an English dictionary.
+1. Subtract
+2. Submerge
+3. Subside
+4. Submit
+5. Subscribe
+6. Subtle
+A) 2, 4, 5, 3, 6, 1
+B) 4, 2, 3, 5, 6, 1
+C) 4, 2, 5, 3, 6, 1
+D) 2, 4, 3, 5, 6, 1
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q14. P is the brother of Q and the son of T. S is the wife of T and the mother-in-law of R. If T
+and S have only 2 children, a son and a daughter, then how is Q related to S?
+A) Daughter
+B) Son-in-law
+C) Son
+D) Sister
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q15. Select the correct combination of mathematical signs to sequentially replace the *
+signs and balance the given equation.
+12*4*15*3*16*24
+A) +,一, ÷,×,=
+B) −. +. ÷. ×. =
+C) ÷. −. +. ×. =
+D) ÷,+, ÷,+,=
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q16. Select the option that is related to the third word in the same way as the second word
+is related to the first word. (The words must be considered as meaningful English
+words and must NOT be related to each other based on the number of letters/number
+of consonants/vowels in the word.)
+Socks : Feet :: Glares : ?
+A) Eyes
+B) Wrist
+C) Hand
+D) Knees
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q17. Select the option that is related to the fifth letter-cluster in the same way as the second
+letter-cluster is related to the first letter-cluster and the fourth letter-cluster is related
+to the third letter-cluster.
+ECHO : PIDF :: EARS : TSBF :: HEAR : ?
+A) IFBS
+B) SCFI
+C) SBFI
+D) SBGI
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q18. Select the letter-cluster from among the given options that can replace the question
+mark (?) in the following series.
+PQJ, LMF, HIB, DEX, ?
+A) ZAV
+B) ZBT
+C) ZAT
+D) ZAU
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q19. In a certain code language, 'GALE' is coded as 3576' and ‘FLAG' is coded as 7361'.
+What is the code for “E' in the given code language?
+A) 6
+B) 5
+C) 3
+D) 7
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q20. ![Figure](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p10_img21.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p10_img22.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p10_img23.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p10_img24.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p10_img25.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q21. ![Figure](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p11_img26.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p11_img27.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p11_img28.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p11_img29.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p11_img30.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q22. The second number in the given number pairs is obtained by performing certain
+mathematical operation(s) on the first number. The same operation(s) are followed in
+all the number pairs, EXCEPT one. Find that odd number pair.
+A) (1000, 125)
+B) (216, 49)
+C) (1728, 216)
+D) (512, 64)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q23. Select the option that is related to the fifth letter-cluster in the same way as the second
+letter-cluster is related to the first letter-cluster and the fourth letter-cluster is related
+to the third letter cluster.
+STOP : OQMO :: JUMP : FRKO :: MOVE : ?
+A) ILKD
+B) ISTD
+C) DTLI
+D) ILTD
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q24. Select the option that is related to the fifth number in the same way as the second
+number is related to the first number and the fourth number is related to the third
+number.
+16 : 8 :: 36: 12 :: 64 : ?
+A) 24
+B) 18
+C) 16
+D) 20
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q25. Select the correct combination of mathematical signs to sequentially replace the *
+signs and to balance the given equation.
+62*11*42*6*18*21*7
+A) +,一,=,×,一, ÷
+B) =,×, ÷,一,+, ÷
+C) -,+,=,×, -,+
+D) +. −.÷.=.×.+
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q26. Which state is famous for celebrating the Majuli festival?
+A) Manipur
+B) Assam
+C) Sikkim
+D) Meghalaya
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q27. In India, which organisation maintains the national highways?
+A) Border Road Organisation
+B) National Highways Authority of India
+C) State government
+D) Public Works Department
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q28. Select the correct statement.
+A) Mitochondria and nucleus are found in bacteria.
+B) Ribosomes, mitochondria and lysosomes are found in animal cells.
+C) Chloroplast, ribosomes and nucleus are present in fungal cell.
+D) Mitochondria and nucleus is absent in plant cell.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q29. Which of the following expression is correct regarding the gross fiscal deficit?
+A) Gross fiscal deficit = Net borrowing at home - Borrowing from RBI + Borrowing from
+B) Gross fiscal deficit = Net borrowing at home + Borrowing from RBI + Borrowing from
+C) Gross fiscal deficit = Net borrowing at home + Borrowing from RBl - Borrowing from
+D) Gross fiscal deficit = Net borrowing at home - Borrowing from RBI - Borrowing from
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q30. Who was the last king of Shunga dynasty?
+A) Pushya mitra
+B) Bhavbhuti
+C) Shashanka
+D) Devabhuti
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q31. Who received the Nobel Prize “for his research in the stereochemistry of organic
+molecules and reactions' in 1975?
+A) Vladimir Prelog
+B) William N Lipscomb
+C) Geoffrey Wilkinson
+D) Paul J Flory
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q32. Which of the following was the debutant team in the ICC women T20 World Cup 2020?
+A) Thailand
+B) Bangladesh
+C) Ireland
+D) Afghanistan
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q33. Which Social Media Platform's plea against summons to Delhi Assembly was rejected
+by Supreme Court in July 2021?
+A) Twitter
+B) Snapchat
+C) Instagram
+D) Facebook
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q34. Lake Victoria is in which of the following countries?
+A) Zambia, Kenya and Ethiopia
+B) Tanzania, Uganda and Kenya
+C) The US and Canada
+D) Tanzania, Nigeria and Egypt
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q35. Which hill is a part of the Meghalaya plateau?
+A) Cardamom hills
+B) Nilgiri Hills
+C) Jaintia Hills
+D) Anaimalai hills
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q36. The Prajjwala Challenge, a nationwide initiative to provide a platform for thoughtful minds to bring about change, was launched by the ______.
+A) Ministry of Education
+B) Ministry of Youth Affairs and Sports
+C) Ministry of Rural Development
+D) Ministry of Science and Technology
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q37. Ishwari Prasad is associated with which of the following Indian classical dances?
+A) Manipuri
+B) Kathak
+C) Kathakali
+D) Bharatanatyam
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q38. Who founded Lucknow gharana of Kathak?
+A) Sitara Devi
+B) Ishwari Prasad
+C) Birju Maharaj
+D) Rukmini Devi
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q39. Which of the following cities was sacked by victorious armies after the battle of
+Talikota?
+A) Vijayanagar
+B) Ahmadnagar
+C) Bijapur
+D) Golconda
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q40. Which five year plan aimed to increase the rapid growth in food grains production?
+A) Seventh Five Year Plan
+B) Eighth Five Year Plan
+C) Sixth Five Year Plan
+D) Fifth Five Year Plan
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q41. In which month of 2021 was the All India Survey on Migrant Workers under the overall
+guidance of an Expert Group came into effect?
+A) August
+B) June
+C) February
+D) April
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q42. As per the 2011 Census, what is the density of the population of India?
+A) 482 persons/km²
+B) 328 persons/km²
+C) 382 persons/km²
+D) 282 persons/km²
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q43. Who was the first Indian to qualify for Covenanted service?
+A) Subhash Chandra Bose
+B) Gopal Krishna Gokhale
+C) Satyendra Nath Tagore
+D) Surendra Nath Banerjee
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q44. The first Women's Cricket World Cup was hosted by which of the following countries?
+A) Australia
+B) West Indies
+C) England
+D) New Zealand
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q45. Plant varieties like bamboo, epiphytes, aini, semul, gutel and mundane are found in
+which type of Indian forest?
+A) Alpine forest
+B) Montane temperate forest
+C) Moist tropical forest
+D) Dry tropical forest
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q46. Ustad Hassu Khan was one of the founders of which of the following Gharanas of
+music?
+A) Rampur
+B) Agra
+C) Gwalior
+D) Patiala
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q47. Dry ice, ammonium chloride, naphthalene balls and camphor, all these compounds are
+an example of:
+A) Sublimable substances
+B) Cooling agents
+C) Inflammable substances
+D) Solidifying agents
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q48. The Supreme Court of India came into existence on ______1.
+A) 30 January 1935
+B) 26 January 1950
+C) 15 August 1947
+D) 2 October 1952
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q49. Khan Bahadur led the revolt of 1857 from:
+A) Delhi
+B) Kanpur
+C) Lucknow
+D) Bareilly
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q50. Which was the first country to incorporate Fundamental Duties in its Constitution?
+A) Albania
+B) USSR
+C) India
+D) Poland
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q51. In a class of 60 students, 20 are girls. The average weight of the boys in the class is 40
+kg, while that of all the girls is 35 kg. What is the average weight (in kg) of the entire
+class (correct to two decimal places)?
+A) 36.67
+B) 38.33
+C) 33.33
+D) 40.67
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q52. ![Figure](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p19_img31.png)
+A) 1
+B) 0
+C) Cos θ
+D) -Sine
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q53. ![Figure](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p19_img32.png)
+A) 96
+B) 108
+C) 100
+D) 104
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q54. The length of the common chord of two circles of radi 15 cm and 13 cm, whose
+centres are 14 cm apart, is:
+A) 14 cm
+B) 12 cm
+C) 15 cm
+D) 24 cm
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q55. ![Figure](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p20_img33.png)
+A) 5
+B) 7
+C) 2
+D) 6
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q56. ![Figure](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p20_img34.png)
+A) 5
+B) 4
+C) 2
+D) 1
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q57. A dishonest shopkeeper sells millet at ₹20 per kg which he has bought at ₹16 per kg
+and he is giving 800 gm instead of 1000 gm. Find his actual profit percentage.
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p20_img35.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p20_img36.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p20_img37.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p20_img38.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q58. A can do a certain piece of work in 1.5 times the number of days in which B and C
+together can do it. If A and B together can do the said piece of work in 30 days and C
+alone can do it in 120 days, then how many days will B take to do this piece of work
+alone?
+A) 75
+B) 45
+C) 60
+D) 50
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q59. Aarti can type 85 pages in 10 hours. Aarti and Bina together can type 500 pages in 40
+hours. How much time will Bina take to type 40 pages?
+A) 10 hours
+B) 15 hours
+C) 14 hours
+D) 12 hours
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q60. The simple interest on ₹800 for 6 years at 5.5% per annum is equal to the simple
+interest on ₹600 at 4% per annum for a certain period of time. The period of time is:
+A) 11 years
+B) 9 years
+C) 12 years
+D) 10 years
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q61. ![Figure](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p22_img39.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p22_img40.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p22_img41.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p22_img42.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p22_img43.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q62. ![Figure](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p22_img44.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p22_img45.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p22_img46.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p22_img47.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p22_img48.png)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q63. Find the least number divisible by 2, 3, 5, 6, 9 and 18, which is a perfect square.
+A) 900
+B) 400
+C) 144
+D) 3600
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q64. Simplify the following expression.
+(4x + 1)²- (4x + 3)(4x - 1)
+A) (4x + 1)
+B) 4
+C) (4x - 3)
+D) 4x
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q65. In △ABC, D is the mid-point of BC and G is the centroid. If GD = 10 cm, then the length
+of AD is ______−.
+A) 20 cm
+B) 30 cm
+C) 15 cm
+D) 10 cm
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q66. ![Figure](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p23_img49.png)
+A) 198
+B) 216
+C) 180
+D) 234
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q67. A pipe can fill a tank in 30 hours. Due to a leakage at the bottom, it is filled in 50 hours.
+How much time will the leakage take to empty the completely filled tank?
+A) 60 hours
+B) 85 hours
+C) 70 hours
+D) 75 hours
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q68. Two men walk from a place at speeds of 9 km/h and 12 km/h, respectively. The first
+man takes 20 minutes more than the second one to cover the journey. Find the
+distance of the journey.
+A) 10 km
+B) 13 km
+C) 15 km
+D) 12 km
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q69. In a circular race of 4225 m, X and Y start from the same point and at the same time at
+speeds of 54 km/h and 63 km/h. When will they meet again for the first time on the
+track when they are running in the opposite direction?
+A) 140 seconds
+B) 150 seconds
+C) 130 seconds
+D) 120 seconds
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q70. The marked price of a mobile phone is ₹15,000 and the shopkeeper sold it for ₹13,500.
+What is the rate of discount offered by the shopkeeper?
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p24_img50.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p24_img51.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p24_img52.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p24_img53.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q71. P and Q together can complete a piece of work in 6 days. If P can alone complete the
+work in 18 days, then the number of days required for Q to finish the work is:
+A) 10 days
+B) 8 days
+C) 11 days
+D) 9 days
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q72. The value of tan5°tan25°tan45°tan65°tan85°is equal to ______−.
+A) 4
+B) 3
+C) 1
+D) 2
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q73. In an election between two candidates, 10% of the voters in the voter list did not cast
+their vote, whereas 10% of the votes cast were found to be invalid. The winning
+candidate got 56% of the valid votes and won the election by a margin of 1,458 votes.
+What is the total number of voters enrolled in the voter list?
+A) 14,000
+B) 15,000
+C) 16,000
+D) 13,000
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q74. The length, breadth, and height of a room are 10 m, 8 m and 6 m respectively. Find the
+cost of white washing the walls of the room and the ceiling at the rate of ₹7.50 per m².
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p25_img54.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p25_img55.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p25_img56.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-24-july-2023-shift-2_p25_img57.png)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q75. Which of the following options gives an expression equivalent to sin(A + B)?
+A) cosAcosB - sinAsinB
+B) sinAcosB + cosAsinB
+C) cosAcosB + sinAsinB
+D) sinAcosB - cosAsinB
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q76. Select the most appropriate ANTONYM of the underlined word.
+The boy looked disheveled and lost.
+A) Tidy
+B) Clumsy
+C) Infuriated
+D) Excited
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q77. Select the option that can be used as a one-word substitute for the given group of
+words.
+One who believes in fate.
+A) Realist
+B) Agnostic
+C) Fatalist
+D) Omniscient
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q78. The following sentence has been divided into three segments, A, B, C. One of them
+may contain a grammatical error. Select the segment that contains the error, from the
+given options. If you don't find any error, mark No error' as your answer.
+A honourable person (A) I deserves respect (B) / from everybody (C).
+A) B
+B) C
+C) No error
+D) A
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q79. Select the most appropriate option to fill in the blank.
+Tibet is our ______ country. Its people are called “Tibetans'.
+A) neighbour
+B) neighbouring
+C) neighbour's
+D) neighbourhood
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q80. Sentences of a paragraph are given below in jumbled order. Arrange the sentences in
+the correct order to form a meaningful and coherent paragraph.
+A. The so-called harmless activities of a small number of people are increasingly
+becoming a serious problem for the internet.
+B. You would have seen an increasing amount of junk mail' showing up in your email
+box.
+C. It is basically electronic junk mail or junk newsgroup postings.
+D. Spam is the flooding of the internet with many copies of the same message, in an
+attempt to force the message on people who would not otherwise choose to receive it.
+A) CADB
+B) BADC
+C) ACBD
+D) DABC
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q81. Select the most appropriate option that can substitute the underlined segment in the
+given sentence.
+The girl in the water whistled with full might and waved mv arms to draw attention to
+her plight.
+A) her arms
+B) our arms
+C) his arms
+D) their arms
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q82. Select the INCORRECTLY spelt word.
+A) Terrifying
+B) Frosty
+C) Guage
+D) Effervescent
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q83. Select the most appropriate synonym of the underlined word.
+For many, a warming climatic system is expected to impact the availability of basic
+necessities like freshwater, food security, and energy, while efforts to redress climate
+change, both through adaptation and mitiaation, will similarly inform and shape the
+global development agenda.
+A) rise
+B) cUre
+C) balance
+D) reduction
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q84. Select the option that expresses the given sentence in active voice.
+The flowers were being plucked by the children in the garden.
+A) The children were plucking the flowers in the garden.
+B) The children are plucking the flowers in the garden.
+C) The children had been plucking the flowers in the garden.
+D) The children was plucking the flowers in the garden.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q85. Select the most appropriate ANTONYM of the underlined word.
+The apple tasted incredibly sweet .
+A) Delicious
+B) Pleasant
+C) Bitter
+D) Special
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q86. Select the most appropriate option to substitute the underlined word and make it
+meaningful.
+The government has finally agreed to wave the entertainment tax on the movie.
+A) waive
+B) wager
+C) waiver
+D) web
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q87. Select the most appropriate meaning of the underlined phrase.
+Ravish is ready to throw caution to the wind.
+A) Fight with wind
+B) Act foolishly
+C) Spend lavishly
+D) Take risk
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q88. Select the most appropriate option that can substitute the underlined segment in the
+given sentence. If there is no need to substitute it, select 'No substitution'.
+Abraham Lincoln has been the sixteenth president of the United States and save the
+Union at the American Civil war.
+A) No substitution
+B) save the Union alongside
+C) saved the Union during
+D) saved the Union on
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q89. Select the most appropriate ANTONYM of the underlined word in the given sentence.
+I must have a chance to rectifv my error.
+A) worsen
+B) alter
+C) reason
+D) modify
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q90. The following sentence has been divided into parts. One of them may contain an error.
+Select the part that contains the error from the given options. If you don't find any
+error, mark No error' as your answer.
+The receptionist asked if Diya / will take a seat and / wait for the boss to call her in.
+A) The receptionist asked if Diya
+B) No error
+C) will take a seat and
+D) wait for the boss to call her in
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q91. Select the most appropriate idiom/phrase that can substitute the underlined segment
+in the given sentence.
+Mahesh has learnt not to take things seriouslv.
+A) Your guess is as good as mine
+B) Take it with a grain of salt
+C) That's the last straw
+D) Pull someone's leg
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q92. Select the INCORRECTLY spelt word.
+A) Dominate
+B) Charishma
+C) Elegant
+D) Cavalier
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q93. Select the option that expresses the given sentence in passive voice.
+I am not spoiling the sheet.
+A) The sheet does not being spoilt by me.
+B) The sheet is not being spoilt by me.
+C) The sheet must not be spoilt by me.
+D) The sheet was not being spoilt by me.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q94. Select the most appropriate synonym of the given word.
+Transgression
+A) Violation
+B) Success
+C) Virtue
+D) Metamorphosis
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q95. Select the option that can be used as a one-word substitute for the given group of
+words.
+Causing or ending in death.
+A) Gruesome
+B) Foster
+C) Fatal
+D) Grotesque
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q96. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+In today's world, handling money and making purchases and sales come naturally to us.
+However, prior to the development of any kind of currency, people (1) ______ in a variety of
+ways. The barter trade was the simplest of them all. People would trade the things they
+owned for the things they wanted in this kind of (2) ______. For example, if someone
+wanted a set of clothes and had a cow left over, he would have to find someone who would
+want a cow and be wiling to give away a set of clothes. However, it wasn't as straightforward
+as 'give-and-take', and people would be cheated. The (3) ______ of money finally took root
+in people's minds after many years. The usually erratic barter trade eventually gave way to
+the monetary method of exchange as such. At first, anything could be used such as hooks,
+money beads, shells or trinkets. The first gold coins were used as currency near Turkey, and
+each coin had a different denomination. In the kingdom of Lydia, the value of each coin was
+first standardised around 700 BC. However, as time passed, the idea of carrying a bulky coin
+pouch became less (4) ______ because it attracted robbers. Checks were first created at
+that time by Greek and Roman traders who purchased goods from distant cities. Because
+they could only be used by the person whose name was on them, these were not only
+lightweight but also deterred robberies. In accordance with this concept, banks later issued
+notes in exchange for (5) ______ gold that could be used as cash.
+SubQuestion No : 21
+Select the most appropriate option to fill in blank no. 1.
+A) advertised
+B) operated
+C) traded
+D) marketed
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q97. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fil in each blank.
+In today's world, handling money and making purchases and sales come naturally to us.
+However, prior to the development of any kind of currency, people (1) ______ in a variety of
+ways. The barter trade was the simplest of them all. People would trade the things they
+owned for the things they wanted in this kind of (2) ______. For example, if someone
+wanted a set of clothes and had a cow left over, he would have to find someone who would
+want a cow and be wiling to give away a set of clothes. However, it wasn't as straightforward
+as 'give-and-take', and people would be cheated. The (3) ______ of money finally took root
+in people's minds after many years. The usually erratic barter trade eventually gave way to
+the monetary method of exchange as such. At first, anything could be used such as hooks,
+money beads, shells or trinkets. The first gold coins were used as currency near Turkey, and
+each coin had a different denomination. In the kingdom of Lydia, the value of each coin was
+first standardised around 700 BC. However, as time passed, the idea of carrying a bulky coin
+pouch became less (4) ______ because it attracted robbers. Checks were first created at
+that time by Greek and Roman traders who purchased goods from distant cities. Because
+they could only be used by the person whose name was on them, these were not only
+lightweight but also deterred robberies. In accordance with this concept, banks later issued
+notes in exchange for (5) ______ gold that could be used as cash.
+SubQuestion No : 22
+Select the most appropriate option to fill in blank no. 2.
+A) contraction
+B) agreement
+C) transaction
+D) mutation
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q98. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fil in each blank.
+In today's world, handling money and making purchases and sales come naturally to us.
+However, prior to the development of any kind of currency, people (1) ______ in a variety of
+ways. The barter trade was the simplest of them all. People would trade the things they
+owned for the things they wanted in this kind of (2) ______. For example, if someone
+wanted a set of clothes and had a cow left over, he would have to find someone who would
+want a cow and be wiling to give away a set of clothes. However, it wasn't as straightforward
+as 'give-and-take', and people would be cheated. The (3) ______ of money finally took root
+in people's minds after many years. The usually erratic barter trade eventually gave way to
+the monetary method of exchange as such. At first, anything could be used such as hooks,
+money beads, shells or trinkets. The first gold coins were used as currency near Turkey, and
+each coin had a different denomination. In the kingdom of Lydia, the value of each coin was
+first standardised around 700 BC. However, as time passed, the idea of carrying a bulky coin
+pouch became less (4) ______ because it attracted robbers. Checks were first created at
+that time by Greek and Roman traders who purchased goods from distant cities. Because
+they could only be used by the person whose name was on them, these were not only
+lightweight but also deterred robberies. In accordance with this concept, banks later issued
+notes in exchange for (5) ______ gold that could be used as cash.
+SubQuestion No : 23
+Select the most appropriate option to fill in blank no. 3.
+A) concept
+B) belief
+C) notion
+D) opinion
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q99. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fil in each blank.
+In today's world, handling money and making purchases and sales come naturally to us.
+However, prior to the development of any kind of currency, people (1) ______ in a variety of
+ways. The barter trade was the simplest of them all. People would trade the things they
+owned for the things they wanted in this kind of (2) ______. For example, if someone
+wanted a set of clothes and had a cow left over, he would have to find someone who would
+want a cow and be wiling to give away a set of clothes. However, it wasn't as straightforward
+as 'give-and-take', and people would be cheated. The (3) ______ of money finally took root
+in people's minds after many years. The usually erratic barter trade eventually gave way to
+the monetary method of exchange as such. At first, anything could be used such as hooks,
+money beads, shells or trinkets. The first gold coins were used as currency near Turkey, and
+each coin had a different denomination. In the kingdom of Lydia, the value of each coin was
+first standardised around 700 BC. However, as time passed, the idea of carrying a bulky coin
+pouch became less (4) ______ because it attracted robbers. Checks were first created at
+that time by Greek and Roman traders who purchased goods from distant cities. Because
+they could only be used by the person whose name was on them, these were not only
+lightweight but also deterred robberies. In accordance with this concept, banks later issued
+notes in exchange for (5) ______ gold that could be used as cash.
+SubQuestion No : 24
+Select the most appropriate option to fill in blank no. 4.
+A) enchanting
+B) appealing
+C) bewitching
+D) alluring
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q100. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fil in each blank.
+In today's world, handling money and making purchases and sales come naturally to us.
+However, prior to the development of any kind of currency, people (1) ______ in a variety of
+ways. The barter trade was the simplest of them all. People would trade the things they
+owned for the things they wanted in this kind of (2) ______. For example, if someone
+wanted a set of clothes and had a cow left over, he would have to find someone who would
+want a cow and be willing to give away a set of clothes. However, it wasn't as straightforward
+as 'give-and-take', and people would be cheated. The (3) ______ of money finally took root
+in people's minds after many years. The usually erratic barter trade eventually gave way to
+the monetary method of exchange as such. At first, anything could be used such as hooks,
+money beads, shells or trinkets. The first gold coins were used as currency near Turkey, and
+each coin had a different denomination. In the kingdom of Lydia, the value of each coin was
+first standardised around 700 BC. However, as time passed, the idea of carrying a bulky coin
+pouch became less (4) ______ because it attracted robbers. Checks were first created at
+that time by Greek and Roman traders who purchased goods from distant cities. Because
+they could only be used by the person whose name was on them, these were not only
+lightweight but also deterred robberies. In accordance with this concept, banks later issued
+notes in exchange for (5) ______ gold that could be used as cash.
+SubQuestion No : 25
+Select the most appropriate option to fill in blank no. 5.
+A) contained
+B) collected
+C) deposited
+D) settled
+Correct Answer: Option C
+--------------------------------------------------------------------------------

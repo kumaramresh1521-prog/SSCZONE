@@ -1,0 +1,196 @@
+Q1 (ID: 14502):
+  Q: Select the letter-group from the given options which In the following series there is a question mar
+  A: LJQX
+  B: LKJH
+  C: LOIU
+  D: LDFS
+
+Q3 (ID: 14504):
+  Q: Find the missing number: 43: 129 :: 62 : ? लुप्त संख्या ज्ञात कीजिए : 43: 129 :: 62 : ?
+  A: 142
+  B: 146
+  C: 145
+  D: 186
+
+Q7 (ID: 14508):
+  Q: In a certain code, "HORSE" is written as "GNQRD". Goes. How will PLANE be written? एक निश्चित कोड मे
+  A: OKZMD
+  B: OKZMF
+  C: OKZND
+  D: OKZNC
+
+Q9 (ID: 14510):
+  Q: In the question, considering the given statements to be true, Which of the conclusions is/are defini
+  A: Only conclusion II and III are true / केवल निष्कष II और III सत्य हैं
+  B: Only conclusion I is true / केवल निष्कष I सत्य है
+  C: Only conclusion I and II are true / केवल निष्कष I और II सत्य हैं
+  D: All conclusions I, II and III are true / सभी निष्कष I, II और III सत्य हैं
+
+Q10 (ID: 14511):
+  Q: If PLANTS is coded as QMBOUT Then how is QMBOUT coded? will go? यदि PLANTS को QMBOUT के रूप में कोडि
+  A: RNCPVU
+  B: RNCPST
+  C: RNDPVU
+  D: RNCPUV
+
+Q11 (ID: 14512):
+  Q: In a certain code language, "UNDERSTAND" "ENATSREDNV" is written. in the same code language How will
+  A: OOITCENNOD
+  B: NOITCENNOC
+  C: OIOTCENOND
+  D: NOCITENONC
+
+Q13 (ID: 14514):
+  Q: In the following question a matrix of numbers is given. These numbers are either row-wise or column-
+  A: 7
+  B: 1
+  C: 9
+  D: 5 2
+
+Q14 (ID: 14515):
+  Q: There is a family of six people A, B, C, D, E and F. A and B is husband and wife and A is the father
+  A: 1
+  B: 2
+  C: 3
+  D: 4
+
+Q15 (ID: 14516):
+  Q: The format of roll number is [Digit A]-[Digit B]-[Digit C], Where C = (A+B) × 2. Identify wrong roll
+  A: 2-3-10
+  B: 4-1-10
+  C: 5-2-14
+  D: 6-2-18
+
+Q26 (ID: 14527):
+  Q: In which year did Aurangzeb issue Fatwa-e-Alamgiri? औरंगजेब ने फतवा-ए-आलमगीरी किस वष जारी किया?
+  A: 1675 AD / 1675 ई.
+  B: 1667 AD / 1667 ई.
+  C: 1680 AD / 1680 ई.
+  D: 1670 AD / 1670 ई.
+
+Q29 (ID: 14530):
+  Q: In which Indian game small targets are shot by riding a horse But the javelin is thrown? कौन से भारत
+  A: polo / पोलो
+  B: tent pegging / टेंट पेगिंग
+  C: Jousting / जाउस्टिंग
+  D: rodeo / रोडीओ
+
+Q32 (ID: 14533):
+  Q: Which Irish writer won the Booker for "The Sea" in 2005? won the award? किस आयरिश लेखक ने 2005 में "
+  A: roddy doyle / रॉडी डॉयल
+  B: John Banville / जॉन बैनविल
+  C: colm toibin / कोलम टोइबिन
+  D: sebastian barry / सेबेस्टियन बैरी
+
+Q37 (ID: 14538):
+  Q: Who among the following was the first to win a Grand Slam title? Who were the Indians? निम्नलिखित मे
+  A: Mahesh Bhupathi / महेश भूपति
+  B: leander paes / लिएंडर पेस
+  C: Sania Mija / सानिया मिजा
+  D: Rohan Bopanna / रोहन बोपन्ना
+
+Q40 (ID: 14541):
+  Q: Tropical and subtropical moist broadleaf forests in India Leaf forests can be found in the following
+  A: Andaman Islands / अंडमान द्वीप समूह
+  B: Brahmaputra Valley / ब्रह्मपुत्र घाटी
+  C: lower gangetic plains / निचले गंगा के मैदान
+  D: all these / इन सब
+
+Q44 (ID: 14545):
+  Q: Which of the following districts in Assam is the major oil well Known for? असम में निम्नलिखित में से
+  A: Dibrugarh and Jorhat / डिब्रूगढ़ और जोरहाट
+  B: Digboi and Naharkatiya / डिगबोई और नहरकटिया
+  C: Guwahati and Tezpur / गुवाहाटी और तेजपुर
+  D: Nagaon and Barpeta / नागांव और बारपेटा
+
+Q47 (ID: 14548):
+  Q: Article 243ZI related to incorporation of cooperative societies Which constitutional amendment to th
+  A: 74th Constitutional Amendment Act, 1992 / 74वाँ संवैधानिक संशोधन अधिनियम, 1992
+  B: 91st Constitutional Amendment Act, 2003 / 91वाँ संवैधानिक संशोधन अधिनियम, 2003
+  C: 97th Constitutional Amendment Act, 2011 / 97वाँ संवैधानिक संशोधन अधिनियम, 2011
+  D: 101st Constitutional Amendment Act, 2016 / 101वाँ संवैधानिक संशोधन अधिनियम, 2016
+
+Q50 (ID: 14551):
+  Q: The half-life of a radionuclide is 4 hours. If its If the initial mass is 160 grams, then after 12 h
+  A: 20 (grams) / 20 (ग्राम)
+  B: 40 (grams) / 40 (ग्राम)
+  C: 80 (grams) / 80 (ग्राम)
+  D: 10 (grams) / 10 (ग्राम)
+
+Q55 (ID: 14556):
+  Q: The sum of two supplementary angles is 90°. If one angle is the other is 18° less than , then find t
+  A: 36°, 54°
+  B: 28°, 62°
+  C: 40°, 50°
+  D: 45°, 45° / Ans: A 56. दो शंकुओं की ऊंचाइयों का अनुपात 1:3 है और उनके आधारों की त्रिज्याओं का अनुपात 3:1 है। उनके आयतनों का अनुपात क्या है? (A) 3:4 (B) 4:3 (C) 3:1 (D) 2:3
+
+Q64 (ID: 14565):
+  Q: Two persons A and B working together to complete a work Let's complete it in 8 days. If A uses his a
+  A: 14 3 days / 14 दिन
+  B: 16 4 days / 16 दिन
+  C: 13 2 days / 13 दिन
+  D: 18 1 day / 18 दिन
+
+Q75 (ID: 14576):
+  Q: Two similar circles each of radius r are such that are located such that the distance between their 
+  A: 1 : 1
+  B: r : d
+  C: √(d² - 4r²) : d / (D) 2d : r Ans: A ENGLISH LANGUAGE (BASIC KNOWLEDGE) Comprehension (Q. 76 - 80) Obesity, a complex and multifactorial health issue, has reached epidemic proportions globally. Characterized by an excessive accumulation of body fat, obesity is far more than a mere aesthetic concern—it significantly elevates the risk of numerous chronic diseases, including type 2 diabetes, cardiovascular disorders, and certain cancers. While sedentary lifestyles and high-calorie diets are commonly cited as primary causes, the reality is nuanced. Genetic predispositions, environmental factors, psychological conditions, and socio-economic status collectively influence an individual's propensity to gain weight. Moreover, modern urban environments often exacerbate the issue, offering limited access to nutritious food options while promoting a culture of convenience and inactivity. Children growing up in such settings are particularly vulnerable, setting the stage for lifelong health struggles. Although public health campaigns have emphasized diet and exercise, long- term success remains elusive for many individuals. This suggests that sustainable solutions must transcend personal responsibility and address systemic barriers. Medical interventions, such as pharmacotherapy and bariatric surgery, have offered relief for some, but they are not without risks and are often financially inaccessible. Ultimately, combating obesity requires a multifaceted strategy that integrates education, urban planning, policy reform, and community-based initiatives. Without a comprehensive and empathetic approach, the human and economic costs of the obesity epidemic will continue to escalate, undermining global health systems and shortening life expectancy for millions. 76. Identify the correct tense used in the sentence: "Medical interventions, such as pharmacotherapy and bariatric surgery, have offered relief for some, but they are not without risks." (A) Past Perfect (B) Present perfect (C) Simple Past
+  D: 2d : r
+
+Q77 (ID: 14578):
+  Q: **Comprehension (Q. 76 - 80):** Obesity, a complex and multifactorial health issue, has reached epid
+  A: Active Voice
+  B: Passive Voice
+  C: Causative Voice
+  D: Interrogative Voice
+
+Q79 (ID: 14580):
+  Q: **Comprehension (Q. 76 - 80):** Obesity, a complex and multifactorial health issue, has reached epid
+  A: Worsen
+  B: Alleviate
+  C: Initiate
+  D: Neutralize
+
+Q83 (ID: 14584):
+  Q: Fill in the blank with an appropriate phrasal verb. Despite repeated warnings, he ______ risky inves
+  A: plowed into
+  B: plowed over
+  C: plowed away
+  D: plowed through
+
+Q85 (ID: 14586):
+  Q: Choose the correct idiom for the word highlighted in bold. The parents are in high spirits as their 
+  A: Very happy
+  B: Feeling dizzy
+  C: Extremely angry
+  D: In a confused state
+
+Q90 (ID: 14591):
+  Q: Select the most appropriate antonym of the given word. Prudent
+  A: Reckless
+  B: Wise
+  C: Thoughtful
+  D: Careful
+
+Q92 (ID: 14593):
+  Q: Which is the correct spelling of a word meaning 'prevent from happening'?
+  A: Avert
+  B: Avart
+  C: Avirrt
+  D: Avurt
+
+Q99 (ID: 14600):
+  Q: Rearrange the following sentences to form a coherent paragraph:  1. This process ensures that the fo
+  A: 2, 3, 1, 4
+  B: 1, 2, 3, 4
+  C: 3, 1, 4, 2
+  D: 4, 2, 1, 3
+
+Q100 (ID: 14601):
+  Q: Choose the most appropriate antonym of the underlined word. The new law had a pernicious effect on t
+  A: Beneficial
+  B: Harmful
+  C: Damaging
+  D: Deleterious
+

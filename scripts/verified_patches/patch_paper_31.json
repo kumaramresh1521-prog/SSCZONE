@@ -1,0 +1,204 @@
+{
+  "paper_id": 31,
+  "title": "SSC CGL 2026 Tier-I (Held On 5 October 2026 Shift 2)",
+  "total_questions": 100,
+  "changes_count": 28,
+  "changes": [
+    {
+      "question_number": 8,
+      "id": 14909,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Floor arrangement from 8 to 1 is S-Z-Y-U-W-T-X-V; W is on floor 4, so T is on floor 3 directly below W."
+    },
+    {
+      "question_number": 16,
+      "id": 14917,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "After pairwise swapping of adjacent letters, EDUCATION becomes DECUTAOIN; the 5th letter from the right is T."
+    },
+    {
+      "question_number": 18,
+      "id": 14919,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Row pattern is (a * b) - (a + b) = c; for row 3: (9 * 4) - (9 + 4) = 36 - 13 = 23."
+    },
+    {
+      "question_number": 26,
+      "id": 14927,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "The Gallup World Poll measures happiness and life evaluation using the Cantril Ladder scale from 0 to 10."
+    },
+    {
+      "question_number": 36,
+      "id": 14937,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Polish author Olga Tokarczuk was awarded the 2018 Nobel Prize in Literature."
+    },
+    {
+      "question_number": 37,
+      "id": 14938,
+      "old_answer": "C",
+      "new_answer": "A",
+      "reason": "Ganga Sagar Mela is held at the confluence of the River Ganga (Hooghly) and the Bay of Bengal."
+    },
+    {
+      "question_number": 43,
+      "id": 14944,
+      "old_answer": "C",
+      "new_answer": "A",
+      "reason": "Madhya Pradesh topped the tally with 18 medals, but Lakshadweep (not Maharashtra) won the Beach Soccer gold."
+    },
+    {
+      "question_number": 53,
+      "id": 14954,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "(1 - cos² θ)(1 + tan² θ) = sin² θ · sec² θ (= tan² θ), which matches Option C."
+    },
+    {
+      "question_number": 56,
+      "id": 14957,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "(p³ - q³)/(p - q) - 3pq = (p - q)² = (7.85 - 2.15)² = 5.7² = 32.49."
+    },
+    {
+      "question_number": 58,
+      "id": 14959,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "Investment ratio P:Q:R = 6:2:3 (sum = 11 parts); Q's profit share = (2/11) * 1,32,000 = ₹24,000."
+    },
+    {
+      "question_number": 59,
+      "id": 14960,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "Winner (0.51T) - Loser (0.31T - 72) = 0.20T + 72 = 432 => 0.20T = 360 => T = 1800 voters."
+    },
+    {
+      "question_number": 60,
+      "id": 14961,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "SI = 0.6P; with R = 2T, R * (R/2) = 60 => R = √120 ≈ 11%."
+    },
+    {
+      "question_number": 63,
+      "id": 14964,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Work equations: 8a - 7b = 4a - 2b => 4a = 5b; total work W = 2.4a => A alone takes 2.4 * 60 = 144 minutes."
+    },
+    {
+      "question_number": 80,
+      "id": 14981,
+      "old_answer": "B",
+      "new_answer": "A",
+      "reason": "Subject 'The geopolitical landscape' requires verb Q ('has been reshaped...'), yielding the correct sequence QPRS."
+    },
+    {
+      "question_number": 82,
+      "id": 14983,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "'Bring about' means to produce or cause to happen (bring about a solution), whereas 'bring up' means to mention."
+    },
+    {
+      "question_number": 85,
+      "id": 14986,
+      "old_answer": "B",
+      "new_answer": "D",
+      "reason": "In Kuhn's philosophy of science, 'incommensurable' paradigms have no common measure and are irreconcilable."
+    },
+    {
+      "question_number": 87,
+      "id": 14988,
+      "old_answer": "B",
+      "new_answer": "C",
+      "reason": "Scientific revolutions are ruptures because competing paradigms redefine concepts, questions, and methods."
+    },
+    {
+      "question_number": 88,
+      "id": 14989,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "'are dismissed' consists of auxiliary 'are' + past participle 'dismissed', which is passive voice."
+    },
+    {
+      "question_number": 89,
+      "id": 14990,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "The clause 'that cannot be explained within the current paradigm' modifies 'anomalies', making it a relative clause."
+    },
+    {
+      "question_number": 91,
+      "id": 14992,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "The idiom 'cry up' means to praise extravagantly or extol."
+    },
+    {
+      "question_number": 92,
+      "id": 14993,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "'Ride roughshod over' means to disregard others' feelings, opinions, or rights."
+    },
+    {
+      "question_number": 93,
+      "id": 14994,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "'Sententious' means pompously moralizing; its antonym is 'unpretentious'."
+    },
+    {
+      "question_number": 94,
+      "id": 14995,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "'Jejune' means dull, bland, or uninteresting; its antonym is 'interesting'."
+    },
+    {
+      "question_number": 95,
+      "id": 14996,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "'Corroborate' means to confirm or verify the authenticity/truth of sources before dissemination."
+    },
+    {
+      "question_number": 96,
+      "id": 14997,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Active past tense 'Did they approve your application?' converts to passive 'Was your application approved by them?'."
+    },
+    {
+      "question_number": 97,
+      "id": 14998,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Pronoun 'their' in part (2) should be singular ('his/her') to agree with 'each of the selected candidates'."
+    },
+    {
+      "question_number": 98,
+      "id": 14999,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "'Rumor has it that...' provides the idiomatic active voice equivalent for 'The player is rumored to be...'."
+    },
+    {
+      "question_number": 99,
+      "id": 15000,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "'have been planted' converts to active 'someone planted the evidence' without altering the sentence meaning."
+    }
+  ]
+}

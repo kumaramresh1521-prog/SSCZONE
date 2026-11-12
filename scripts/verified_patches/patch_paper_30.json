@@ -1,0 +1,190 @@
+{
+  "paper_id": 30,
+  "title": "SSC CGL 2026 Tier-I (Held On 5 October 2026 Shift 1)",
+  "total_questions": 100,
+  "changes_count": 26,
+  "changes": [
+    {
+      "question_number": 1,
+      "id": 14802,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "3rd letter is C (index 3) and 7th letter is L (index 12); difference is 12 - 3 = 9."
+    },
+    {
+      "question_number": 10,
+      "id": 14811,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "Option D is the exact character-by-character match for the given address."
+    },
+    {
+      "question_number": 25,
+      "id": 14826,
+      "old_answer": "C",
+      "new_answer": "B",
+      "reason": "Analogy of increasing thermal intensity: simmer leads to boil just as chill leads to freeze."
+    },
+    {
+      "question_number": 30,
+      "id": 14831,
+      "old_answer": "B",
+      "new_answer": "A",
+      "reason": "The 2017 FIFA U-17 World Cup final was hosted at Salt Lake Stadium (Vivekananda Yuba Bharati Krirangan) in Kolkata."
+    },
+    {
+      "question_number": 31,
+      "id": 14832,
+      "old_answer": "C",
+      "new_answer": "A",
+      "reason": "En passant is a special pawn capture rule in chess."
+    },
+    {
+      "question_number": 33,
+      "id": 14834,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Aparajitavarman (Aparajita) was the last ruler of the Pallava dynasty, defeated by Chola king Aditya I."
+    },
+    {
+      "question_number": 35,
+      "id": 14836,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "A gharana in Hindustani classical music represents a school or lineage of musical tradition and style."
+    },
+    {
+      "question_number": 38,
+      "id": 14839,
+      "old_answer": "B",
+      "new_answer": "D",
+      "reason": "Bara Pani Lake (also known as Umiam Lake) is located in Meghalaya, near Shillong."
+    },
+    {
+      "question_number": 40,
+      "id": 14841,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Statement 1 is incorrect because IOD is defined across the Indian Ocean (not Pacific); statement 2 is correct, so Only 2 is right."
+    },
+    {
+      "question_number": 64,
+      "id": 14865,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "Since A + B = C, tan C = (tan A + tan B)/(1 - tan A tan B) => tan A tan B tan C = tan C - tan A - tan B."
+    },
+    {
+      "question_number": 66,
+      "id": 14867,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "(15 + 5√5)/√5 = 3√5 + 5 = 3(2.236) + 5 = 6.708 + 5 = 11.708."
+    },
+    {
+      "question_number": 67,
+      "id": 14868,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "In isosceles triangles OPS and OQS, ∠OSP = (180° - 85°)/2 = 47.5° and ∠OSQ = (180° - 115°)/2 = 32.5°, so ∠PSQ = 47.5° + 32.5° = 80°."
+    },
+    {
+      "question_number": 68,
+      "id": 14869,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "By Thales theorem, AD × AC = AB × AE implies DE || BC, so ∠ADE = ∠ABC = 65°; thus ∠ACB = 65° - 15° = 50°, giving ∠A = 180° - (65° + 50°) = 65°."
+    },
+    {
+      "question_number": 69,
+      "id": 14870,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "True volume V = 235.2 / (1.12 × 1.05) = 235.2 / 1.176 = 200 litres."
+    },
+    {
+      "question_number": 70,
+      "id": 14871,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "With a = x and d = 2x, S₄ = 2(2x + 6x) = 16x and S₉ = 4.5(2x + 16x) = 81x, giving the ratio 16 : 81."
+    },
+    {
+      "question_number": 71,
+      "id": 14872,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "Work rates are Sonia 20, Tuktuk 12, Pamela 15 (total 300); after 5 days 105 units remain, taking Pamela 7 more days alone, so Pamela worked 3 + 2 + 7 = 12 total days."
+    },
+    {
+      "question_number": 72,
+      "id": 14873,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "tan(90° - 2θ) = cot 2θ and tan(90° - θ) = cot θ, so (cot 2θ · tan 2θ)(cot θ · tan θ) = 1 · 1 = 1."
+    },
+    {
+      "question_number": 74,
+      "id": 14875,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "After replacing 32 L with water, milk and water are 80 L each; removing 24 L (12 L each) and adding 24 L milk yields 92 L milk and 68 L water, giving ratio 92:68 = 23:17."
+    },
+    {
+      "question_number": 75,
+      "id": 14876,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Length of transverse common tangent = √(d² - (r₁ + r₂)²); 40 = √(41² - 9²), so r₁ + r₂ = 9 => r₂ = 9 - 6 = 3 cm."
+    },
+    {
+      "question_number": 85,
+      "id": 14886,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "'Institutional protocol' accurately describes the procedural rules and mechanisms that govern the archive's functioning."
+    },
+    {
+      "question_number": 86,
+      "id": 14887,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Context 'denied syntactic viability within the lexicon of national legitimacy' precisely defines 'inarticulable'."
+    },
+    {
+      "question_number": 87,
+      "id": 14888,
+      "old_answer": "D",
+      "new_answer": "C",
+      "reason": "Items included are endowed with authoritative status, matching 'canonized' and 'endowed with rhetorical inertia that naturalizes their interpretive authority'."
+    },
+    {
+      "question_number": 88,
+      "id": 14889,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Singular subject 'it' requires the singular verb 'regulates', fitting 'dictating not only what can be known, but what may be mourned'."
+    },
+    {
+      "question_number": 89,
+      "id": 14890,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "'Ontological sabotage' entails disrupting or undermining, so 'destabilize' is the precise contextual fit."
+    },
+    {
+      "question_number": 97,
+      "id": 14898,
+      "old_answer": "B",
+      "new_answer": "C",
+      "reason": "Modal 'must have' expressing logical deduction remains unchanged in indirect speech; 'must had' is ungrammatical."
+    },
+    {
+      "question_number": 99,
+      "id": 14900,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "The direct speech corresponding to the inverted subjunctive conditional 'were it not for her, they would have lost everything' is '\"Were it not for her, we would have lost everything,\" he said.'"
+    }
+  ]
+}

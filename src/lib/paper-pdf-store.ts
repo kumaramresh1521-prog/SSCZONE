@@ -3,6 +3,7 @@
  */
 
 import { supabase } from "./supabase";
+import { resolveAssetUrl } from "./utils";
 
 // Fallback mappings for known previous papers in case DB column is pending migration
 export const DEFAULT_PAPER_PDF_MAP: Record<number | string, string> = {
@@ -120,30 +121,34 @@ export async function setPaperTranslatorAllowed(paperId: number, allowed: boolea
  */
 export function getPaperPdfUrl(paper: { id: number; title?: string; pdf_url?: string }): string | null {
   if (paper.pdf_url && paper.pdf_url.trim() !== "") {
-    return paper.pdf_url.trim();
+    return resolveAssetUrl(paper.pdf_url.trim());
   }
 
   // Check client custom override
   if (typeof window !== "undefined") {
     const custom = localStorage.getItem(`ssczone_custom_paper_pdf_${paper.id}`);
-    if (custom && custom.trim()) return custom.trim();
+    if (custom && custom.trim()) return resolveAssetUrl(custom.trim());
   }
   
   // Check default mapping by ID
   if (DEFAULT_PAPER_PDF_MAP[paper.id]) {
-    return DEFAULT_PAPER_PDF_MAP[paper.id];
+    return resolveAssetUrl(DEFAULT_PAPER_PDF_MAP[paper.id]);
   }
 
   // Check matching by title keywords
   const t = (paper.title || "").toLowerCase();
-  if (t.includes("shift 3")) {
-    return "/papers/ssc-cgl-2025-12-september-2025-shift-3.pdf";
+  const cglMatch = t.match(/(202\d).*?(?:held on\s+)?(\d{1,2})\s+([a-z]+)\s+(202\d)\s+shift[\s\-]*(\d)/i);
+  if (cglMatch) {
+    return resolveAssetUrl(`/papers/ssc-cgl-${cglMatch[1]}-${cglMatch[2]}-${cglMatch[3]}-${cglMatch[4]}-shift-${cglMatch[5]}.pdf`);
   }
-  if (t.includes("shift 2")) {
-    return "/papers/ssc-cgl-2025-12-september-2025-shift-2.pdf";
+  if ((t.includes("2025") || t.includes("12 sept")) && t.includes("shift 3")) {
+    return resolveAssetUrl("/papers/ssc-cgl-2025-12-september-2025-shift-3.pdf");
+  }
+  if ((t.includes("2025") || t.includes("12 sept")) && t.includes("shift 2")) {
+    return resolveAssetUrl("/papers/ssc-cgl-2025-12-september-2025-shift-2.pdf");
   }
   if (t.includes("cgl") && (t.includes("2025") || t.includes("12 sept"))) {
-    return "/papers/ssc-cgl-2025-12-sept-shift-1.pdf";
+    return resolveAssetUrl("/papers/ssc-cgl-2025-12-sept-shift-1.pdf");
   }
 
   return null;

@@ -1,0 +1,35 @@
+import json
+
+with open('scripts/pdf_samples/t4_structured_lines.json', 'r', encoding='utf-8') as f:
+    raw_lines = json.load(f)
+
+# Reconstruct cols
+cols = []
+cur_key = None
+cur_list = []
+for idx, item in enumerate(raw_lines):
+    if idx >= 2599: break
+    key = (item['file'], item['col'])
+    if key != cur_key:
+        if cur_list: cols.append((cur_key, cur_list))
+        cur_key = key
+        cur_list = []
+    cur_list.append(item['text'])
+if cur_list: cols.append((cur_key, cur_list))
+
+with open('scripts/pdf_samples/t4_col_starts.json', 'r', encoding='utf-8') as f:
+    col_starts_meta = json.load(f)
+
+for q in [5, 8, 12, 13, 14, 16, 17, 20, 22]:
+    for c_meta in col_starts_meta:
+        q_start = c_meta['q_start']
+        q_end = c_meta['q_end']
+        if q_start <= q <= q_end:
+            lines = cols[c_meta['c_idx']][1]
+            starts = {int(k): v for k, v in c_meta['starts'].items()}
+            st = starts.get(q, 0)
+            en = starts.get(q + 1, len(lines))
+            print(f"=== Q{q} Chunk ({c_meta['fname']} c{c_meta['col_no']}, lines {st} to {en}) ===")
+            for li, l in enumerate(lines[st:en]):
+                print(f"  {li}: {l}")
+            break

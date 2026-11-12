@@ -1,0 +1,504 @@
+Q2 (ID: 14503) [Current: D]:
+  Text: A person bought an article for Rs 1200 and Sold at a loss of 10%. What is the selling price? एक व्यक्ति ने एक वस्तु 1200
+  A: 1050 rupees / 1050 रुपये
+  B: 1020 rupees / 1080 रुपये
+  C: 1060 rupees / 1060 रुपये
+  D: 1080 rupees / 1080 रुपये
+
+Q4 (ID: 14505) [Current: B]:
+  Text: A man buys 2 pencils for Rs 5 and another for Rs 12 Sells 5 pencils. Find his profit or loss percentage Do it. एक आदमी 5
+  A: 4% profit / 4% लाभ
+  B: 4% loss / 4% हानि
+  C: 5% profit / 5% लाभ
+  D: 5% loss / 5% हानि
+
+Q5 (ID: 14506) [Current: D]:
+  Text: Which of the following is/are the same as the given address: Village: Bhatgaon, Post Office: Ambikapur, Police Station: 
+  A: only 2 / केवल 2
+  B: only 3 / केवल 3
+  C: only 1 / केवल 1
+  D: ONLY 4 1 INTELLIGENCE / केवल 4
+
+Q6 (ID: 14507) [Current: C]:
+  Text: Read the following statements carefully and draw conclusions. Remove.  Statement: All apples are fruits. All fruits are 
+  A: Only I follows / केवल I अनुसरण करता है
+  B: Only II follows / केवल II अनुसरण करता है
+  C: Both I and II follow / I और II दोनों अनुसरण करते हैं
+  D: Neither I nor II follows / न तो I और न ही II अनुसरण करता है
+
+Q8 (ID: 14509) [Current: B]:
+  Text: Which number will come next in the following series? Will it happen? 128, 64, 32, ___ निम्नलिखित श्रृंृंखला में अगले स्थ
+  A: 20
+  B: 16
+  C: 18
+  D: 22
+
+Q12 (ID: 14513) [Current: D]:
+  Text: Selecting the option that exactly matches the given address Do it. Original Address: Flat No 27CImperial Heights Residen
+  A: Flat No 27CImperial Heights Residency Phase 21Lincoln Boulevard Central AreaChicago Illinois 60611United States of America
+  B: Flat No 27CImperial Heights Residency Phase 12Lincoln Boulvard Central AreaChicago Illinois 60611United States of America
+  C: Flat No 27CImperial Heights Residency Phase 12Lincoln Boulevard Central AreaChicago Illinois 60111United States of America
+  D: Flat No 27CImperial Heights Residency Phase 12Lincoln Boulevard Central AreaChicago Illinois 60611United States of America
+
+Q16 (ID: 14517) [Current: C]:
+  Text: Select the option which is exactly true of the following Is equal to: Lt. Col. VK Singh, 09 Jan 2011, Cantt Area, Dehrad
+  A: Lt. Col. V.K Singh, 09 Jan 2011, Cantt Area, Dehradun (UK)-248001
+  B: Lt. Col. VK Singh, 09 Jan 2011, Cantt Area, Dehradun (UK)-248002
+  C: Lt. Col. VK Singh, 09 Jan 2011, Cantt Area, Dehradun (UK)-248001
+  D: Lt. Col. VK Singh, 09 Jan 2011, Cantt. Area, Dehradun (UK)-248001
+
+Q17 (ID: 14518) [Current: B]:
+  Text: A dedicated employee who recently went through a difficult divorce. The personal situation has gone through, the accurac
+  A: Send a formal and completely impartial email explaining the missed deadlines and attaching the company's standard policy guidelines for improving performance. / समय-सीमा (डेडलाइन) का पालन न होने की जानकारी देते हुए एक औपचारिक और पूरी तरह से निष्पक्ष ईमेल भेजें और साथ ही कंपनी की परफॉरमेंस सुधारने से जुड़ी स्टैंडड पॉलिसी गाइडलाइंस भी अटैच करें।
+  B: Organize a private meeting to appreciate past contributions, address recent shortcomings, and discuss ways to improve work practices to stabilize performance. / पिछले योगदानों की सराहना करने, हाल की कमियों पर बात करने और परफॉरमेंस को स्थिर करने के लिए काम के तरीके में सुधार के उपायों पर चचा करने के लिए एक निजी बैठक का आयोजन करें।
+  C: Don't mention them missing deadlines out of sympathy and quietly distribute their pending work to the rest of the team. / हमदर्दी के कारण डेडलाइन चूकने का ज़िक्र बिल्कुल न करें और उनके पेंडिंग काम चुपचाप बाकी टीम में बाँट दें।
+  D: Invite them for coffee and share your story in detail about how you successfully handled a difficult past period in your life to inspire them. / उन्हें कॉफ़ी पर बुलाएँ और उन्हें प्रेरित करने के लिए अपनी ज़िंदगी के पुराने मुश्किल दौर को आपने कैसे सफलतापूवक संभाला, इस बारे में विस्तार से अपनी कहानी सुनाएँ। 2
+
+Q18 (ID: 14519) [Current: C]:
+  Text: During a high-level strategic meeting, your The department head presents a plan that will fail You have every possibilit
+  A: “I agree with this plan, but I believe we should wait for some more data before starting.” (A little false statement to keep the peace) / “मैं इस योजना से सहमत हूँ, लेकिन मेरा मानना है कि हमें शुरू करने से पहले कुछ और डेटा की प्रतीक्षा करनी चाहिए।” (शांति बनाए रखने के लिए एक छोटा-सा असत्य कथन)
+  B: "The data indicate that this plan may not work as expected; we may need to reconsider it." / “डेटा से संकेत मिलता है कि यह योजना अपेक्षित रूप से काय नहीं कर सकती; हमें इस पर पुनर्विचार करने की आवश्यकता हो सकती है।”
+  C: “I understand the thinking behind this goal, but recent data shows a potential bottleneck in week four. Are there any quick measures we can add to reduce risk in the first phase?” / “मैं इस लक्ष्य के पीछे की सोच को समझता हूँ, लेकिन हाल के डेटा से चौथे सप्ताह में एक संभावित बाधा दिखाई देती है। क्या हम पहले चरण में जोखिम को कम करने के लिए कोई त्वरित उपाय जोड़ सकते हैं?”
+  D: Remain silent and nod in agreement, because it is not your job to oppose the head of the department. / चुप रहें और सहमति में सिर हिलाएँ, क्योंकि विभागाध्यक्ष का विरोध करना आपका काय नहीं है।
+
+Q19 (ID: 14520) [Current: D]:
+  Text: What should come in place of question mark (?) in the following analogy? will come? MNO : PQR :: STU : ? निम्नलिखित सादृ
+  A: WXY
+  B: UVW
+  C: XYZ
+  D: VWX
+
+Q20 (ID: 14521) [Current: B]:
+  Text: If 8 ★ 4 # 5 = 10 and 18 ★ 3 # 2 = 12, then 32 ★ What will be the value of 4 # 6? यदि 8 ★ 4 # 5 = 10 और 18 ★ 3 # 2 = 12 
+  A: 36
+  B: 48
+  C: 24
+  D: 52
+
+Q21 (ID: 14522) [Current: B]:
+  Text: Sara A high-end bakery in a busy area of town Wants to open. he needs a place where There is more foot traffic on weeken
+  A: A quiet corner shop located in a suburban area, where very few people visit on weekends. / उपनगरीय क्षेत्र में स्थित एक शांत कोने की दुकान, जहाँ सप्ताहांत में बहुत कम लोग आते हैं।
+  B: A small stall located in a busy food court within a popular weekend mall. / एक लोकप्रिय सप्ताहांत मॉल के भीतर व्यस्त फूड कोट में स्थित एक छोटा स्टॉल।
+  C: A shop located in a remote commercial park, which is closed every weekend afternoon. / एक दूरस्थ व्यावसायिक पाक में स्थित दुकान, जो प्रत्येक सप्ताहांत की दोपहर को बंद रहती है।
+  D: Unit located in the basement of a large office building with no retail shops nearby. / एक बड़े कायालय भवन के बेसमेंट में स्थित इकाई, जिसके आसपास कोई खुदरा दुकानें नहीं हैं।
+
+Q22 (ID: 14523) [Current: C]:
+  Text: You notice that a co-worker consistently comes to the office late. Has been and is going quickly. Meanwhile, another col
+  A: Join in on the fun, as this is common office banter. / मज़ाक में शामिल हो जाएँ, क्योंकि यह कायालय की सामान्य हँसी-मज़ाक की बात है।
+  B: To resolve this issue, go and inform your boss about it. / इस मुद्दे के समाधान के लिए स्वयं जाकर बॉस को इसके बारे में बता दें।
+  C: Avoid gossip and concentrate on your responsibilities. / चुगली-चचा (Gossip) से बचें और अपनी जिम्मेदारियों पर ध्यान केंद्रित करें।
+  D: Confront the coworker directly about his or her appearance. / सहकर्मी की उपस्थिति के बारे में सीधे उससे सामना करें।
+
+Q23 (ID: 14524) [Current: D]:
+  Text: Read the statement carefully and consider it to be true. then Check the two conclusions given below and Determine which 
+  A: Only conclusion I follows. / केवल निष्कष I अनुसरण करता है।
+  B: Both conclusions I and II follow. / निष्कष I और II दोनों अनुसरण करते हैं।
+  C: Only conclusion II follows. / केवल निष्कष II अनुसरण करता है।
+  D: Neither conclusion I nor conclusion II follows. / न तो निष्कष I और न ही निष्कष II अनुसरण करता है।
+
+Q24 (ID: 14525) [Current: B]:
+  Text: Select the option that is similar to the third word. be related, as the second word is related to the first word Is. Lio
+  A: Hole
+  B: Burrow
+  C: Stable
+  D: Kennel
+
+Q25 (ID: 14526) [Current: D]:
+  Text: Read the given statement carefully and based on it Consider the following given assumptions. prescribed Find out which a
+  A: Both Assumptions I and II are implicit. / मान्यता I और II दोनों निहित हैं।
+  B: Only assumption II is implicit. / केवल मान्यता II निहित है।
+  C: Only assumption I is implicit. / केवल मान्यता I निहित है।
+  D: Neither assumption I nor II is implicit. / न तो मान्यता I न ही II निहित है।
+
+Q27 (ID: 14528) [Current: B]:
+  Text: What does IMEC mean? आईईएमसी(IMEC) का क्या अथ है?
+  A: Indian Maritime Economic Council / इंडियन मेरीटाइम इकोनॉमिक काउंसिल
+  B: India-Middle East-Europe Economic Corridor / इंडिया-मिडिल ईस्ट-यूरोप इकोनॉमिक कॉरिडोर
+  C: International Monetary Economic Committee / इंटरनेशनल मोनेटरी इकोनॉमिक कमेटी
+  D: Indo-Mediterranean Export Corporation / इंडो-मेडिटेरेनियन एक्सपोट कॉर्पोरेशन
+
+Q28 (ID: 14529) [Current: B]:
+  Text: IEMC (India-Middle East-Europe Economic Corridor) of transportation used within the corridor What is the main instrument
+  A: air travel / हवाई यात्रा
+  B: marine and rail / समुद्री और रेल
+  C: road transport only / केवल सड़क परिवहन
+  D: space travel only / केवल अंतरिक्ष यात्रा
+
+Q30 (ID: 14531) [Current: D]:
+  Text: Which of the following is known as Sleeping on Jupiter? DSC Prize for South Asian Literature 2016 got? निम्नलिखित में से
+  A: Anuradha Roy / अनुराधा रॉय
+  B: Arundhati Roy / अरुंधति रॉय
+  C: Perumal Murugan / पेरुमल मुरुगन
+  D: Jhumpa Lahiri / झुम्पा लाहिडी
+
+Q31 (ID: 14532) [Current: B]:
+  Text: Year to promote development of nuclear energy in India Which of the following commissions was established in 1957 had go
+  A: Central Electricity Authority / केंद्रीय विद्युत अथॉरिटी
+  B: Atomic Energy Commission 4 AWARENESS / परमाणु ऊजा आयोग
+  C: finance commission / वित्त आयोग
+  D: Scientific Advisory Committee / वैज्ञानिक सलाहकार समिति
+
+Q33 (ID: 14534) [Current: B]:
+  Text: In which year was Kho-Kho included in the South Asian Games had gone? खो-खो को दक्षिण एशियाई खेलों में किस वष शामिल किया
+  A: 2014
+  B: 2016
+  C: 2019
+  D: 2022
+
+Q34 (ID: 14535) [Current: C]:
+  Text: "Land Revenue Policy" started by the British in India The primary objective was: भारत में अंग्रेजों द्वारा शुरू की गई "भ
+  A: To promote the welfare and prosperity of Indian farmers. / भारतीय किसानों के कल्याण और समृद्धि को बढ़ावा देना।
+  B: To establish a fair and equitable system of land ownership. / भूमि स्वामित्व की निष्पक्ष एवं न्यायसंगत प्रणाली स्थापित करना।
+  C: To maximize revenue collected from land for the British government. / ब्रिटिश सरकार के लिए भूमि से एकत्रित राजस्व को अधिकतम करना।
+  D: To encourage cultivation of food crops to ensure food security. / खाद्य सुरक्षा सुनिश्चित करने के लिए खाद्य फसलों की खेती को प्रोत्साहित करना।
+
+Q35 (ID: 14536) [Current: C]:
+  Text: Indian regarding FIR (First Information Report) Which of the following is important in the Civil Defense Code? Is there 
+  A: Now FIR will not be filed / अब एफआईआर दज नहीं की जा सकेगी
+  B: Now for FIR, first approval of the court has to be taken. / एफआईआर के लिए अब पहले अदालत की मंजूरी लेनी होगी
+  C: FIR can be filed online and through electronic communication / एफआईआर ऑनलाइन और इलेक्ट्रॉनिक संचार के माध्यम से दज की जा सकती है
+  D: FIR should be handwritten only / एफआईआर केवल हस्तलिखित होनी चाहिए 4
+
+Q36 (ID: 14537) [Current: C]:
+  Text: Which of the following digital elements is now part of Indian Evidence? As primary evidence under the Act, 2023 are acce
+  A: only cctv footage / सिफ सीसीटीवी फुटेज
+  B: email only / केवल ईमेल
+  C: Email, SMS, WhatsApp Chat and Cloud Data / ईमेल, एसएमएस, व्हाट्सएप चैट और क्लाउड डेटा
+  D: SMS only / केवल एसएमएस
+
+Q38 (ID: 14539) [Current: B]:
+  Text: 'Train to Pakistan' was written by which of the following novelists? Is it a novel written by? 'ट्रेन टू पाकिस्तान' निम्
+  A: Salman Rushdie / सलमान रुश्दी
+  B: Khushwant Singh / खुशवंत सिंह
+  C: Ismat Chughtai / इस्मत चुगताई
+  D: mulkraj anand / मुल्कराज आनंद
+
+Q39 (ID: 14540) [Current: C]:
+  Text: In which period were the 18 Puranas composed in their present form? वतमान स्वरूप में 18 पुराणों की रचना किस काल में हुई?
+  A: Mauya period / मौय काल
+  B: Gupta period / गुप्त काल
+  C: Rigvedic period / ऋग्वैदिक काल
+  D: Vijayanagara period / विजयनगर काल
+
+Q41 (ID: 14542) [Current: D]:
+  Text: The following three statements related to the festivals of Mizoram Read:  1) Mim Kut in August and September after maize
+  A: only 1 is correct / केवल 1 सही है
+  B: only 2 is correct / केवल 2 सही है
+  C: only 3 is correct / केवल 3 सही है
+  D: 1, 2 and 3 are correct / 1, 2 और 3 सही हैं
+
+Q42 (ID: 14543) [Current: B]:
+  Text: In Paris Olympics 2024, which Indian woman Shooter wins Olympics in 10 meter air pistol event Won a medal, she was the f
+  A: Isha Singh / ईशा सिंह
+  B: Manu Bhakar / मनु भाकर
+  C: Apoorvi Chandela / अपूर्वी चंदेला
+  D: Anjali Bhagwat / अंजलि भागवत
+
+Q43 (ID: 14544) [Current: B]:
+  Text: Which of the following is located on the east coast of India? The port is located in the mineral rich areas of Odisha an
+  A: chennai port / चेन्नई बंदरगाह
+  B: Paradip Port / पारादीप बंदरगाह
+  C: Visakhapatnam Port / विशाखापत्तनम बंदरगाह
+  D: Kolkata port / कोलकाता बंदरगाह
+
+Q45 (ID: 14546) [Current: B]:
+  Text: Article 131A was repealed and before ______ was given special jurisdiction. अनुच्छेद 131A को निरस्त कर दिया गया और इससे 
+  A: District Court / जिला न्यायालय
+  B: high courts / उच्च न्यायालयों
+  C: supreme coat / सुप्रीम कोट
+  D: election commission / निवाचन आयोग
+
+Q46 (ID: 14547) [Current: C]:
+  Text: Related to District Planning Committee in Indian Constitution Article 243ZD of which Constitutional Amendment Act? Was a
+  A: 72nd Constitutional Amendment Act, 1992 / 72वाँ संवैधानिक संशोधन अधिनियम, 1992
+  B: 73rd Constitutional Amendment Act, 1992 / 73वाँ संवैधानिक संशोधन अधिनियम, 1992
+  C: 74th Constitutional Amendment Act, 1992 / 74वाँ संवैधानिक संशोधन अधिनियम, 1992
+  D: 75th Constitutional Amendment Act, 1993 / 75वाँ संवैधानिक संशोधन अधिनियम, 1993
+
+Q48 (ID: 14549) [Current: C]:
+  Text: What about the phrase “Union of States” in the Constitution of India? meaning? भारत के संविधान में “राज्यों का संघ” वाक्
+  A: Presidential rule system has been adopted in India. / भारत में राष्ट्रपति शासन प्रणाली अपनाई गई है।
+  B: Complete unitary system. / पूण एकात्मक प्रणाली।
+  C: The states formed the federation. / राज्यों ने संघ का निमाण किया।
+  D: The Union is not the result of any agreement between the States. / संघ राज्यों के बीच हुए किसी समझौते का परिणाम नहीं है।
+
+Q49 (ID: 14550) [Current: B]:
+  Text: After the implementation of the New Economic Policy (1991) in India Which of the following constitutes foreign investmen
+  A: Foreign Institutional Investment and Bilateral Development Finance / विदेशी संस्थागत निवेश तथा द्विपक्षीय विकास वित्त
+  B: Foreign Direct Investment and Official Development Assistance / प्रत्यक्ष विदेशी निवेश तथा आधिकारिक विकास सहायता
+  C: Foreign Portfolio Investment and External Commercial Borrowings / विदेशी पोटफोलियो निवेश तथा बाह्य वाणिज्यिक उधार
+  D: Foreign Direct Investment and Foreign Institutional Investment / प्रत्यक्ष विदेशी निवेश तथा विदेशी संस्थागत निवेश
+
+Q51 (ID: 14552) [Current: D]:
+  Text: A hemispherical bowl is made of steel, whose thickness is 1 is centimetre. The inner radius of the bowl is 4 centimeters
+  A: 137.14 square centimeters / 137.14 वग सेंटीमीटर
+  B: 237.14 square centimeters / 237.14 वग सेंटीमीटर
+  C: 257.14 square centimeters / 257.14 वग सेंटीमीटर
+  D: 157.14 square centimeters / 157.14 वग सेंटीमीटर
+
+Q52 (ID: 14553) [Current: B]:
+  Text: If all the sides of a rectangular parallelepiped are equal, then it becomes: यदि एक आयताकार समांतर चतुभुज की सभी भुजाएँ 
+  A: circle / गोला
+  B: class / वग
+  C: cylinder / बेलन
+  D: cone / शंकु
+
+Q53 (ID: 14554) [Current: B]:
+  Text: If a * b = a + b + ab, then what is 3 * 5 - 2 * 4 equal to? Is it? अगर a * b = a + b + ab, तो 3 * 5 - 2 * 4 बराबर क्या ह
+  A: 9
+  B: 8
+  C: 13
+  D: 23
+
+Q54 (ID: 14555) [Current: B]:
+  Text: The sides of a triangle are 7 cm, 24 cm and 25 cm. What is the length of the altitude corresponding to the longest side?
+  A: 5.6 cm / 5.6 सेमी
+  B: 6.72 cm / 6.72 सेमी
+  C: 8.4 cm / 8.4 सेमी
+  D: 9.6 cm / 9.6 सेमी
+
+Q56 (ID: 14557) [Current: C]:
+  Text: The ratio of the heights of two cones is 1:3 and their The ratio of the radii of the bases is 3:1. their volumes What is
+  A: 3:4
+  B: 4:3
+  C: 3:1
+  D: 2:3
+
+Q57 (ID: 14558) [Current: B]:
+  Text: The internal diameter of a hemispherical brass bowl is 28 is centimetre. If the inner part of the bowl is priced at ₹30 
+  A: ₹32960 / ₹36960
+  B: ₹36960
+  C: ₹26960
+  D: ₹46520
+
+Q58 (ID: 14559) [Current: C]:
+  Text: Rita covers a certain distance at her normal speed. If she reduces her speed by 10 km/h, then It takes 40 hours more tha
+  A: 150 km
+  B: 250 km
+  C: 300 km
+  D: 380 km
+
+Q59 (ID: 14560) [Current: B]:
+  Text: Simplify: 0.05×0.05×0.05+0.04×0.04×0.04  0.05×0.05−0.05×0.04+0.04×0.04 सरल कीजिए:
+  A: 0.07
+  B: 0.09
+  C: 0.08
+  D: 0.05
+
+Q60 (ID: 14561) [Current: D]:
+  Text: of √0.09 + √0.49 + √1.21 + √0.0004 Find the value. का मान ज्ञात कीजिए। 45∘, 45∘ 0.05×0.05×0.05+0.04×0.04×0.04 0.05×0.05−
+  A: 1.84
+  B: 4.06
+  C: 3.26
+  D: 2.12
+
+Q61 (ID: 14562) [Current: D]:
+  Text: Ram traveled at speeds of 40 km/hr, 45 km/hr and Covered the same distance. Ram's average during the entire journey What
+  A: 34.87 km/h
+  B: 42.80 km/h
+  C: 38.96 km/h
+  D: 46.96 km/h
+
+Q62 (ID: 14563) [Current: B]:
+  Text: Evaluate: [ (2.7)³−(1.3)³ ]² (2.7)²+3.51+(1.3)² मूल्यांकन करें:
+  A: 1.54
+  B: 1.96
+  C: 2.34
+  D: 2.87
+
+Q63 (ID: 14564) [Current: D]:
+  Text: In △XYZ , let M be the midpoint of side XY. If the length of median ZM is 9 cm and G is the centroid, then the segment o
+  A: 1 cm
+  B: 7 cm
+  C: 9 cm
+  D: 3 cm
+
+Q65 (ID: 14566) [Current: D]:
+  Text: Which of the following numbers is not divisible by 3? निम्नलिखित में से कौन-सी संख्या 3 से विभाज्य नहीं है?
+  A: 98763
+  B: 10002
+  C: 55554
+  D: 71203
+
+Q66 (ID: 14567) [Current: B]:
+  Text: How many numbers from 50 to 1000 are divisible by 11? 50 से 1000 तक कितनी संख्याएँ 11 से विभाज्य हैं?
+  A: 75
+  B: 86
+  C: 65
+  D: 96
+
+Q67 (ID: 14568) [Current: C]:
+  Text: P and Q complete a work in: 10 days and 30 days respectively. Can do. P starts the work and they take turns Let's work. 
+  A: 7 days / 7 दिन
+  B: 11 2 3 days / दिन
+  C: 14 2 days / दिन
+  D: 15 days / 15 दिन
+
+Q68 (ID: 14569) [Current: B]:
+  Text: There are two ships on the same side of a lighthouse. from them Angles of elevation of the top of the lighthouse respect
+  A: 45 m
+  B: 44 m
+  C: 41 m
+  D: 39 m
+
+Q69 (ID: 14570) [Current: D]:
+  Text: If tan θ= √3, then find the value of cosec² θ+sec² θ. cosec² θ−sec² θ Do it. यदि , तो का मान ज्ञात कीजिए।
+  A: −3 / (B) 2 (C) (D) -2 Ans: D 70. यदि है, तो का मान क्या है? (A) 2.346
+  B: 2 2
+  C: 3
+  D: -2
+
+Q70 (ID: 14571) [Current: C]:
+  Text: If √2 = 1.414, then what is the value of 6+2√2? √2
+  A: 2.346
+  B: 4.786
+  C: 6.242
+  D: 8.654
+
+Q71 (ID: 14572) [Current: B]:
+  Text: The diameter of a circle is 20 cm. Two similar chords AB and CD are parallel. BC is a diameter of the circle. If chord A
+  A: 8 cm
+  B: 16 cm
+  C: 24 cm
+  D: 32 cm
+
+Q72 (ID: 14573) [Current: C]:
+  Text: A tangent line at point A to a circle of radius 55 cm Has been drawn. A chord BC is parallel to this tangent line. If th
+  A: 74 cm
+  B: 85 cm
+  C: 88 cm
+  D: 96 cm
+
+Q73 (ID: 14574) [Current: B]:
+  Text: The perimeter of a sector of a circle is 45 cm and its The radius is 12 cm. Find the angle of the sector in radians. किस
+  A: 1.75 radians / 1.75 रेडियन
+  B: 2.54 radians / 2.54 रेडियन
+  C: 3.65 radians / 3.65 रेडियन
+  D: 5.78 radians / 5.78 रेडियन
+
+Q74 (ID: 14575) [Current: D]:
+  Text: If the expression 64x² + kxy + 81y² is a perfect square, then k What are the possible values of ? यदि व्यंजक 64x2 + kxy 
+  A: ±72
+  B: ±102
+  C: 36
+  D: ±144
+
+Q76 (ID: 14577) [Current: B]:
+  Text: **Comprehension (Q. 76 - 80):** Obesity, a complex and multifactorial health issue, has reached epidemic proportions glo
+  A: Past Perfect
+  B: Present perfect
+  C: Simple Past
+  D: Present Continuous
+
+Q78 (ID: 14579) [Current: B]:
+  Text: **Comprehension (Q. 76 - 80):** Obesity, a complex and multifactorial health issue, has reached epidemic proportions glo
+  A: Hesitation
+  B: Tendency
+  C: Resistance
+  D: Disinterest
+
+Q80 (ID: 14581) [Current: B]:
+  Text: **Comprehension (Q. 76 - 80):** Obesity, a complex and multifactorial health issue, has reached epidemic proportions glo
+  A: Because children naturally prefer high- calorie foods.
+  B: Because urban environments often promote unhealthy habits early in life.
+  C: Because genetic factors are stronger in childhood than adulthood.
+  D: Because schools are solely responsible for promoting nutrition.
+
+Q81 (ID: 14582) [Current: B]:
+  Text: Complete the collocation by choosing a suitable word to fill in the blank. Despite the groundbreaking nature of their di
+  A: break even
+  B: to keep it under wraps
+  C: above my hand
+  D: slipped my mind
+
+Q82 (ID: 14583) [Current: C]:
+  Text: Rearrange the parts of the sentence in the correct order. In a landmark moment for space exploration, P. offering unprec
+  A: QSRP
+  B: QPRS
+  C: RPQS
+  D: SRPQ
+
+Q84 (ID: 14585) [Current: C]:
+  Text: Rearrange the parts of the sentence in the correct order. The escalating climate crisis P. with rising sea levels and ex
+  A: QPRS
+  B: SRPQ
+  C: SPRQ
+  D: RSPQ
+
+Q86 (ID: 14587) [Current: C]:
+  Text: Identify the error in the sentence. The committee decided their decision.
+  A: committee
+  B: decided
+  C: their
+  D: decision
+
+Q87 (ID: 14588) [Current: D]:
+  Text: Which of the following options is NOT one of the meanings of the homonym 'panel'?
+  A: A group of people chosen to give advice or judgement
+  B: A flat, usually rectangular piece forming part of a surface or structure
+  C: A touchscreen interface or display area
+  D: A legal fee charged per hearing
+
+Q88 (ID: 14589) [Current: C]:
+  Text: Choose the correct idiom for the word highlighted in bold. "I don't believe Tara really hurt herself when she fell. I th
+  A: Genuine sadness and emotional pain
+  B: Tears caused by a physical injury
+  C: Insincere or fake tears meant to fool others
+  D: A loud and dramatic cry of joy
+
+Q89 (ID: 14590) [Current: D]:
+  Text: Select the most appropriate synonym of the given word: MALEDICTION
+  A: Prayer
+  B: Hope
+  C: Blessing
+  D: Curse
+
+Q91 (ID: 14592) [Current: C]:
+  Text: Select the most appropriate synonym of the given word: ABSTRUSE
+  A: Evident
+  B: Spartan
+  C: Obscure
+  D: Common
+
+Q93 (ID: 14594) [Current: B]:
+  Text: Identify the misspelt word.
+  A: Belligerent
+  B: Beligerent
+  C: Ineffable
+  D: Inscrutable
+
+Q94 (ID: 14595) [Current: D]:
+  Text: Choose the correct one-word substitution for: 'The act of stealing from shops'.
+  A: Robbery
+  B: Looting
+  C: Burglary
+  D: Shoplifting
+
+Q95 (ID: 14596) [Current: C]:
+  Text: Change the following from active to passive: They have denied the allegations.
+  A: The allegations are denied.
+  B: The allegations were denied.
+  C: The allegations have been denied.
+  D: The allegations had been denied.
+
+Q96 (ID: 14597) [Current: C]:
+  Text: Choose the most suitable option to replace the highlighted part of the sentence: My brother is good in cricket.
+  A: good to cricket
+  B: best in cricket
+  C: is good at cricket
+  D: well in cricket
+
+Q97 (ID: 14598) [Current: D]:
+  Text: Choose the most suitable option to replace the highlighted part of the sentence: They have been working on this project 
+  A: from four months
+  B: for past four months
+  C: since last four
+  D: for four months months
+
+Q98 (ID: 14599) [Current: C]:
+  Text: Rearrange the following sentences to form a meaningful passage:  1. Ancient Greek democracy laid the foundation for civi
+  A: 1-4-2-3
+  B: 2-1-3-4
+  C: 1-2-4-3
+  D: 4-1-2-3
+

@@ -1,0 +1,408 @@
+=== QUESTION 12 ===
+Chunk lines (6):
+  12. VOT : SLQ : : HRX : ?
+  [2] KOC
+  (3) BOU
+  (4)RVH
+  (SSCCHSL(10+2)Ther-1CBE
+  Exm.(shtb-B 17.03.20180
+Parsed opts: {'2': 'KOC', '3': 'BOU', '4': 'RVH'}
+
+=== QUESTION 13 ===
+Chunk lines (3):
+  13.RTU:SUW::CEF:?
+  (2) DGH
+  EGF
+Parsed opts: {'2': 'DGH', '1': 'EGF'}
+
+=== QUESTION 14 ===
+Chunk lines (8):
+  14) DFH
+  (SSCCHSL(10-2)Ter-1CBE
+  Exan, (Sbin-B 19.03.2018)
+  14. CPW  BOV : : KQH : ?
+  (1]  JPG
+  (2) LRI
+  tSSC CHSL(10 + 2) Ther-1CBE
+  Eoam,(5hdn-tm 19.03.20189
+Parsed opts: {'1': 'JPG', '2': 'LRI', '3': '14. CPW  BOV : : KQH : ?'}
+
+=== QUESTION 16 ===
+Chunk lines (4):
+  16.SOM:RPL : :9:?
+  ) BSU : ART () PYC : OXD
+  (SSCCHSL110+2)Tr-ICBE
+  Exam.(Sht-m20.03.2018)
+Parsed opts: {'1': 'BSU : ART () PYC : OXD'}
+
+=== QUESTION 18 ===
+Chunk lines (6):
+  18, LJK : IGH: : PST :?
+  (1) NRO
+  (4) RVU
+  (3) MPO
+  (SSC CHSL110 +21Ther-4CBE
+  Exe.Chat-m121.03.2018)
+Parsed opts: {'1': 'NRO', '4': 'RVU', '3': 'MPO'}
+
+=== QUESTION 20 ===
+Chunk lines (6):
+  20. PTY : DHM : : SQZ : ?
+  () EO
+  (2) GEN
+  (4) IFP
+  (SSC CHSL (10 + 2) Ticr-1CBE
+  Excam. (Saaft- 23.03.2018)
+Parsed opts: {'2': 'GEN', '4': 'IFP', '1': 'EO'}
+
+=== QUESTION 36 ===
+Chunk lines (7):
+  36. LAMP : PALM:; MALE:
+  (I) MEAL
+  (2) ELAM
+  (3) EAML
+  (4) LAME
+  SSC CGLTHer-4(CBE)
+  Exam.06.06.2019(5hit-m
+Parsed opts: {'1': 'MEAL', '2': 'ELAM', '4': 'LAME'}
+
+=== QUESTION 38 ===
+Chunk lines (4):
+  38. DFIM; WURN : GKP :?
+  (I) SOLJ
+  (3) TPNL
+  SSCCCLTe.fiCBE
+Parsed opts: {'1': 'SOLJ', '3': 'TPNL'}
+
+=== QUESTION 47 ===
+Chunk lines (5):
+  47.QDWYI20:PAR:?
+  (2) RUFW
+  BHPUPY
+  (4) QUFW
+  SSC CHSL(10+2)Tier-1Exam.
+Parsed opts: {'2': 'RUFW', '4': 'QUFW', '1': 'BHPUPY'}
+
+=== QUESTION 59 ===
+Chunk lines (6):
+  59. DJ : HT : : HM :.?
+  ()PY
+  (2) JK
+  [3) LW
+  SSC CHSL(10-2) Ter-4Eam,
+  11.07.2019 (Shat-m)
+Parsed opts: {'2': 'JK', '3': 'LW', '1': 'PY'}
+
+=== QUESTION 61 ===
+Chunk lines (6):
+  61.FU : UF : : RS : ?
+  (2) GH
+  (4)JH
+  c3) IP
+  (SSC CHSL (10-2 Ther-1Exam,
+  11.07.2019 (Shit-mm)
+Parsed opts: {'2': 'GH', '4': 'JH', '1': 'c3) IP'}
+
+=== QUESTION 62 ===
+Chunk lines (5):
+  62. GP : TK : : DR ?
+  (2) WX
+  [3 VU
+  (SSC CHSL(10+2) Ter-1 Em)
+  11.07.2019 (Sht-10)
+Parsed opts: {'2': 'WX', '3': 'VU'}
+
+=== QUESTION 64 ===
+Chunk lines (6):
+  64. JOM : KPN : PET : ?
+  (2) ODS
+  (3IQFU
+  (4) QDU
+  (SSC Multu Taskang Staff Exam,
+  07.08.2019, Shat-0
+Parsed opts: {'2': 'ODS', '3': 'IQFU', '4': 'QDU'}
+
+=== QUESTION 65 ===
+Chunk lines (4):
+  65, TOL : WRO : GRA : ?
+  (1)JUC
+  (3) JUD
+  JVE
+Parsed opts: {'1': 'JUC', '3': 'JUD', '2': 'JVE'}
+
+=== QUESTION 68 ===
+Chunk lines (2):
+  68. QMDFEHKNJ : FDMQVUNKH :
+  :?:HELOPTER
+Parsed opts: {}
+
+=== QUESTION 79 ===
+Chunk lines (2):
+  79. Seleet theogtion that is rtlated
+  to the thard ietter-cluster tn the
+Parsed opts: {}
+
+=== QUESTION 83 ===
+Chunk lines (2):
+  83.
+  as the second term is related to
+Parsed opts: {}
+
+=== QUESTION 87 ===
+Chunk lines (2):
+  87.Stiect theotonthat tsre
+  to the third term in the sune
+Parsed opts: {}
+
+=== QUESTION 88 ===
+Chunk lines (2):
+  wayasthicsecedtesrtia
+  ed to the first term.
+Parsed opts: {}
+
+=== QUESTION 90 ===
+Chunk lines (3):
+  90. Select the optiop tbat ts related
+  tothe fifthtrtunnchesameway
+  as the second term ls related to
+Parsed opts: {'1': 'tothe fifthtrtunnchesameway'}
+
+=== QUESTION 92 ===
+Chunk lines (2):
+  92.Stecttheotonthasread
+  as the second term is related to
+Parsed opts: {}
+
+=== QUESTION 94 ===
+Chunk lines (3):
+  10.06.2022 (Sht-0)
+  ga. Seiect the option that ts related
+  as thr second term Is related to
+Parsed opts: {'1': 'ga. Seiect the option that ts related'}
+
+=== QUESTION 95 ===
+Chunk lines (2):
+  the first term and thefourth term
+  Is reiated to the third term.
+Parsed opts: {}
+
+=== QUESTION 98 ===
+Chunk lines (2):
+  98, Select the option that s related
+  as the second term is related to
+Parsed opts: {}
+
+=== QUESTION 104 ===
+Chunk lines (2):
+  104. Select the option that is related
+  to the fifth term tn the same way
+Parsed opts: {}
+
+=== QUESTION 105 ===
+Chunk lines (2):
+  as the second term is related to
+  the first term and thefourth term
+Parsed opts: {}
+
+=== QUESTION 108 ===
+Chunk lines (2):
+  108. Select the option that ts related
+  to the fifth term in the same way
+Parsed opts: {}
+
+=== QUESTION 122 ===
+Chunk lines (2):
+  122.Sctthropothattsrelated
+  asthesecond termisrelated to
+Parsed opts: {}
+
+=== QUESTION 125 ===
+Chunk lines (2):
+  125. Seleet the option that ts related
+  as the second term is related to
+Parsed opts: {}
+
+=== QUESTION 128 ===
+Chunk lines (3):
+  128, Stlect thtopton that tsrelated
+  the second term is related to the
+  frst term.
+Parsed opts: {}
+
+=== QUESTION 129 ===
+Chunk lines (2):
+  129. Select the option that is related
+  to the thtrd tern tn the same way
+Parsed opts: {}
+
+=== QUESTION 133 ===
+Chunk lines (2):
+  133, Select the option that is reiated
+  to the third term tn the same way
+Parsed opts: {}
+
+=== QUESTION 135 ===
+Chunk lines (2):
+  135. Select the option that is related
+  to the third letter-cluster in the
+Parsed opts: {}
+
+=== QUESTION 138 ===
+Chunk lines (2):
+  138.
+  to the thtrd letter-cluster tn the
+Parsed opts: {}
+
+=== QUESTION 154 ===
+Chunk lines (2):
+  154.SelodCheopfonhatis
+  toChc thfrd ietter-clustert
+Parsed opts: {}
+
+=== QUESTION 157 ===
+Chunk lines (2):
+  187, Select the optilon that is related
+  sare way as the second leter-
+Parsed opts: {}
+
+=== QUESTION 159 ===
+Chunk lines (2):
+  159.
+  to the third term in the same
+Parsed opts: {}
+
+=== QUESTION 160 ===
+Chunk lines (2):
+  wy as the second term ts relat-
+  ed to the first term.
+Parsed opts: {}
+
+=== QUESTION 168 ===
+Chunk lines (2):
+  same way as the secood letter-
+  ter-cluster.
+Parsed opts: {}
+
+=== QUESTION 169 ===
+Chunk lines (5):
+  (2) UGP
+  () VFJ
+  H) VGK
+  [3) UEK
+  (SSC CGLTer-1 ICBE) Eom, 21.0.2022
+Parsed opts: {'3': 'UEK', '1': 'VFJ', '2': 'H) VGK'}
+
+=== QUESTION 171 ===
+Chunk lines (2):
+  171. Select the option that is related
+  to the afth letter-cluster in the
+Parsed opts: {}
+
+=== QUESTION 182 ===
+Chunk lines (3):
+  182. Select tht option that ts related
+  clustertsrelated to the first let-
+  ter-chuster.
+Parsed opts: {}
+
+=== QUESTION 186 ===
+Chunk lines (2):
+  ise. Seler the opton tn uhich the
+  petrafketter-custensharethe
+Parsed opts: {}
+
+=== QUESTION 187 ===
+Chunk lines (2):
+  anseltonshipastutshared
+  by the Pven letter-chusters.
+Parsed opts: {}
+
+=== QUESTION 190 ===
+Chunk lines (3):
+  190. Sciect the opton in yfich the
+  samerelaGoeship as thatshared
+  ters
+Parsed opts: {'1': 'samerelaGoeship as thatshared'}
+
+=== QUESTION 192 ===
+Chunk lines (2):
+  192. Select the option that ts related
+  to the fth ietter-cluster in the
+Parsed opts: {}
+
+=== QUESTION 193 ===
+Chunk lines (2):
+  same way as the second letter-
+  chuster tsrelated to the firyt let-
+Parsed opts: {}
+
+=== QUESTION 196 ===
+Chunk lines (2):
+  196. Select the option that fs related
+  as the second term is related te
+Parsed opts: {}
+
+=== QUESTION 197 ===
+Chunk lines (2):
+  the first term and thefourth term
+  Is related to the third term.
+Parsed opts: {}
+
+=== QUESTION 202 ===
+Chunk lines (2):
+  202. Select the option that ts related
+  to the ffth letter-chuster in the
+Parsed opts: {}
+
+=== QUESTION 207 ===
+Chunk lines (6):
+  207. Select the option that is related
+  to the fith ictter-chuster tn the
+  sape way as the second letter-
+  cluster is related to the first let.
+  cluster is related to the third let-
+  ter-chuaster.
+Parsed opts: {}
+
+=== QUESTION 217 ===
+Chunk lines (1):
+  _library
+Parsed opts: {}
+
+=== QUESTION 218 ===
+Chunk lines (2):
+  218.nfoloutnquonse
+  thse related eter patr from the
+Parsed opts: {}
+
+=== QUESTION 220 ===
+Chunk lines (2):
+  220. Sclet the option thafts refated
+  to the finth ietter chuster in the
+Parsed opts: {}
+
+=== QUESTION 221 ===
+Chunk lines (2):
+  same way as the fourth letter
+  cluster ts petated to/the third
+Parsed opts: {}
+
+=== QUESTION 222 ===
+Chunk lines (2):
+  letter clusteCand'the second
+  letter custer is related to the
+Parsed opts: {}
+
+=== QUESTION 240 ===
+Chunk lines (3):
+  240. Select the option that is related
+  same way as the second letter-
+  chuster is related to the first let-
+Parsed opts: {}
+
+=== QUESTION 244 ===
+Chunk lines (2):
+  244. Select the option that is related
+  cluster is related to the first let-
+Parsed opts: {}
+

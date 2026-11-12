@@ -1,0 +1,183 @@
+{
+  "paper_id": 49,
+  "title": "SSC CGL 2026 Tier-I (Held On 12 October 2026 Shift 2)",
+  "total_questions": 100,
+  "changes_count": 25,
+  "changes": [
+    {
+      "question_number": 2,
+      "id": 16703,
+      "old_answer": "B",
+      "new_answer": "C",
+      "reason": "Since Kochi was not on the 10th and Hyderabad preceded Chennai, Chennai must be on the 10th (if Chennai were on 8th, Kochi would be forced to the 10th)."
+    },
+    {
+      "question_number": 10,
+      "id": 16711,
+      "old_answer": "B",
+      "new_answer": "A",
+      "reason": "Each letter shifts +8: B(2)+8=J(10), D(4)+8=L(12); thus C(3)+8=K(11), E(5)+8=M(13) gives KM."
+    },
+    {
+      "question_number": 12,
+      "id": 16713,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Pattern multiplies by 0.5, 1.5, 2.5, 3.5, 4.5 (12x0.5=6, 6x1.5=9, 9x2.5=22.5...), so 9 is the wrong term and should be 6."
+    },
+    {
+      "question_number": 14,
+      "id": 16715,
+      "old_answer": "C",
+      "new_answer": "A",
+      "reason": "AP with first term a=1.2 and common difference d=0.3; 5th term = a + 4d = 1.2 + 1.2 = 2.4."
+    },
+    {
+      "question_number": 22,
+      "id": 16723,
+      "old_answer": "D",
+      "new_answer": "B",
+      "reason": "Emotional intelligence and leadership require taking responsibility publicly to the client and addressing communication gaps privately with the team."
+    },
+    {
+      "question_number": 24,
+      "id": 16725,
+      "old_answer": "C",
+      "new_answer": "B",
+      "reason": "Mitigating risk does not eliminate rainfall dependency completely, nor does it imply all traditional crops are obsolete; hence neither conclusion follows."
+    },
+    {
+      "question_number": 32,
+      "id": 16733,
+      "old_answer": "D",
+      "new_answer": "C",
+      "reason": "The Harrod-Domar growth model states that economic growth rate is determined by the interaction of the savings rate and capital-output ratio (investment)."
+    },
+    {
+      "question_number": 34,
+      "id": 16735,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "The first National Kho-Kho Championship was held in 1959-60 in Vijayawada, Andhra Pradesh."
+    },
+    {
+      "question_number": 41,
+      "id": 16742,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "K.K. Shailaja's memoir 'My Life as a Comrade' was co-authored with Manju Sara Rajan."
+    },
+    {
+      "question_number": 42,
+      "id": 16743,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "The Logistics Performance Index (LPI) is an interactive benchmarking tool published by the World Bank Group."
+    },
+    {
+      "question_number": 45,
+      "id": 16746,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Mercury and Venus are the only two planets in the solar system that have no natural satellites (moons)."
+    },
+    {
+      "question_number": 47,
+      "id": 16748,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "The Vahana (mount) of the presiding deity is placed on the axial line directly facing and just before the Sanctum Sanctorum (Garbhagriha)."
+    },
+    {
+      "question_number": 48,
+      "id": 16749,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "NCERT notes that the 1991 economic reforms constrained the growth of public expenditure especially in social sectors (education, health, and rural development)."
+    },
+    {
+      "question_number": 50,
+      "id": 16751,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "At 18 breaths per minute, total breaths in 2 hours (120 minutes) = 18 * 120 = 2160."
+    },
+    {
+      "question_number": 51,
+      "id": 16752,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Volume of a hemisphere is (2/3)πr³ = (2/3)π(6)³ = 144π cm³."
+    },
+    {
+      "question_number": 52,
+      "id": 16753,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "Arc length = (θ/360) * 2πr = (60/360) * 2 * (22/7) * 21 = 22 cm."
+    },
+    {
+      "question_number": 53,
+      "id": 16754,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Slant height l = √(3²+4²) = 5 cm; Total surface area = πr(r + l) = (22/7)*3*8 = 528/7 ≈ 75.42 cm²."
+    },
+    {
+      "question_number": 57,
+      "id": 16758,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "0.48 R = 0.64 M => R = 4M/3; (R - 480)/M = 4/5 yields R = 1200, so Mohit's income M = (3/4)*1200 = ₹900."
+    },
+    {
+      "question_number": 65,
+      "id": 16766,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "sin A + cos A = 4/3 => 1 + 2 sin A cos A = 16/9 => sin A cos A = 7/18; tan A + cot A = 1/(sin A cos A) = 18/7."
+    },
+    {
+      "question_number": 66,
+      "id": 16767,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "x² + 1/x² = (x - 1/x)² + 2 = (√5)² + 2 = 7."
+    },
+    {
+      "question_number": 72,
+      "id": 16773,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Distance between centers (0,0) and (a,0) is |a|, which is strictly between |R1 - R2| = 0 and R1 + R2 = 2|a|; hence the circles intersect at two distinct points."
+    },
+    {
+      "question_number": 74,
+      "id": 16775,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "y³ + 1/y³ = (y + 1/y)³ - 3(y + 1/y) = 18³ - 3(18) = 5832 - 54 = 5778."
+    },
+    {
+      "question_number": 86,
+      "id": 16787,
+      "old_answer": "C",
+      "new_answer": "B",
+      "reason": "Epistemological pertains to epistemology, the philosophical study and theory of knowledge."
+    },
+    {
+      "question_number": 88,
+      "id": 16789,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "'Anomalies' means departures or deviations from what is standard, normal, or expected."
+    },
+    {
+      "question_number": 100,
+      "id": 16801,
+      "old_answer": "C",
+      "new_answer": "B",
+      "reason": "The coherent paragraph flow is 2 (topic) -> 3 (explanation of programs) -> 1 (result on employees) -> 4 (corporate implementation), which is order 2-3-1-4."
+    }
+  ]
+}

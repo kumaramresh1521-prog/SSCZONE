@@ -1,0 +1,786 @@
+=== Q1 (ID: 14502) [Current Answer: A] ===
+Question: Select the letter-group from the given options which In the following series there is a question mark (? ) can be replaced by: LZWT, LVOH, LRGV, LNYJ, ? दिए गए विकल्पों में से उस अक्षर-समूह का चयन करें जो निम्नलिखित श्रृंृंखला में प्रश्न चिह्न (? ) को प्रतिस्थापित कर सके: LZWT, LVOH, LRGV, LNYJ, ?
+A: LJQX
+B: LKJH
+C: LOIU
+D: LDFS
+
+=== Q2 (ID: 14503) [Current Answer: D] ===
+Question: A person bought an article for Rs 1200 and Sold at a loss of 10%. What is the selling price? एक व्यक्ति ने एक वस्तु 1200 रुपये में खरीदी और उसे 10% की हानि पर बेच दिया। बिक्री कीमत क्या है?
+A: 1050 rupees / 1050 रुपये
+B: 1020 rupees / 1080 रुपये
+C: 1060 rupees / 1060 रुपये
+D: 1080 rupees / 1080 रुपये
+
+=== Q3 (ID: 14504) [Current Answer: A] ===
+Question: Find the missing number: 43: 129 :: 62 : ? लुप्त संख्या ज्ञात कीजिए : 43: 129 :: 62 : ?
+A: 142
+B: 146
+C: 145
+D: 186
+
+=== Q4 (ID: 14505) [Current Answer: B] ===
+Question: A man buys 2 pencils for Rs 5 and another for Rs 12 Sells 5 pencils. Find his profit or loss percentage Do it. एक आदमी 5 रुपये में 2 पेंसिल खरीदता है और 12 रुपये में 5 पेंसिल बेचता है। उसका लाभ या हानि प्रतिशत ज्ञात कीजिए।
+A: 4% profit / 4% लाभ
+B: 4% loss / 4% हानि
+C: 5% profit / 5% लाभ
+D: 5% loss / 5% हानि
+
+=== Q5 (ID: 14506) [Current Answer: D] ===
+Question: Which of the following is/are the same as the given address: Village: Bhatgaon, Post Office: Ambikapur, Police Station: Rajnandgaon, District: Chhattisgarh – 494661
+
+1. Village: Bhatgaon, Post Office: Ambikapur, Police Station: Rajnandgaon, District: Chhattisgarh – 494661
+
+2. Village: Bhatgaon, Post: Ambikapur, Police Station: Rajnandgaon, District: Chhattisgarh – 494662
+
+3. Village: Bhatgaon, Post Office: Rajnandgaon, Police Station: Bilaspur, District: Chhattisgarh – 494660
+
+4. Village: Bhatgaon, Post Office: Ambikapur, Police Station: Rajnandgaon, District: Chhattisgarh – 494661 निम्नलिखित में से कौन सा/से दिए गए पते के समान है/हैं: गांव: भटगांव, डाकघर: अंबिकापुर, थाना: राजनांदगांव, जिला: छत्तीसगढ़ - 494661 1. ग्राम: भटगांव, डाकघर: अंबिकापुर, थाना: राजनांदगांव, जिला: छत्तीसगढ़ - 494661 2. ग्राम: भटगांव, पोस्ट: अंबिकापुर, थाना: राजनांदगांव, जिला: छत्तीसगढ़ - 494662 3. ग्राम: भटगांव, डाकघर: राजनांदगांव, थाना: बिलासपुर, जिला: छत्तीसगढ़ - 494660 4. गांव: भटगांव, डाकघर: अंबिकापुर, थाना: राजनांदगांव, जिला: छत्तीसगढ़ - 494661
+A: only 2 / केवल 2
+B: only 3 / केवल 3
+C: only 1 / केवल 1
+D: ONLY 4 1 INTELLIGENCE / केवल 4
+
+=== Q6 (ID: 14507) [Current Answer: C] ===
+Question: Read the following statements carefully and draw conclusions. Remove.
+
+Statement: All apples are fruits. All fruits are healthy.
+
+Conclusion:
+
+I. All apples are healthy.
+
+II. Some of the healthiest things are fruits. निम्नलिखित कथन को ध्यानपूवक पढ़ें और निष्कष निकालें। कथन: सभी सेब फल हैं। सभी फल स्वास्थ्यवधक हैं। निष्कष: I. सभी सेब स्वास्थ्यवधक हैं। II. कुछ स्वास्थ्यवधक चीजें फल हैं।
+A: Only I follows / केवल I अनुसरण करता है
+B: Only II follows / केवल II अनुसरण करता है
+C: Both I and II follow / I और II दोनों अनुसरण करते हैं
+D: Neither I nor II follows / न तो I और न ही II अनुसरण करता है
+
+=== Q7 (ID: 14508) [Current Answer: A] ===
+Question: In a certain code, "HORSE" is written as "GNQRD". Goes. How will PLANE be written? एक निश्चित कोड में, "HORSE" को "GNQRD" लिखा जाता है। PLANE को कैसे लिखा जाएगा?
+A: OKZMD
+B: OKZMF
+C: OKZND
+D: OKZNC
+
+=== Q8 (ID: 14509) [Current Answer: B] ===
+Question: Which number will come next in the following series? Will it happen? 128, 64, 32, ___ निम्नलिखित श्रृंृंखला में अगले स्थान पर कौन सी संख्या होगी? 128, 64, 32, ___
+A: 20
+B: 16
+C: 18
+D: 22
+
+=== Q9 (ID: 14510) [Current Answer: A] ===
+Question: In the question, considering the given statements to be true, Which of the conclusions is/are definitely true? Find this out and answer accordingly.
+
+Statement: R > M ≥ N = O ≥ P; L < S < Q = K ≤ P
+
+Conclusion:
+
+I. M > L
+
+II. Q
+
+III. S < R प्रश्न में, दिए गए कथनों को सत्य मानते हुए, दिए गए तीन निष्कर्षों में से कौन सा/से निष्कष निश्चित रूप से सत्य है/हैं, यह ज्ञात कीजिए और उसके अनुसार उत्तर दीजिए। कथन: R > M ≥ N = O ≥ P; L < S < Q = K ≤ P निष्कष: I. M > L II. Q ≤ M III. S < R
+A: Only conclusion II and III are true / केवल निष्कष II और III सत्य हैं
+B: Only conclusion I is true / केवल निष्कष I सत्य है
+C: Only conclusion I and II are true / केवल निष्कष I और II सत्य हैं
+D: All conclusions I, II and III are true / सभी निष्कष I, II और III सत्य हैं
+
+=== Q10 (ID: 14511) [Current Answer: A] ===
+Question: If PLANTS is coded as QMBOUT Then how is QMBOUT coded? will go? यदि PLANTS को QMBOUT के रूप में कोडित किया जाता है, तो QMBOUT को किस प्रकार कोडित किया 1 जाएगा?
+A: RNCPVU
+B: RNCPST
+C: RNDPVU
+D: RNCPUV
+
+=== Q11 (ID: 14512) [Current Answer: A] ===
+Question: In a certain code language, "UNDERSTAND" "ENATSREDNV" is written. in the same code language How will "CONNECTION" be written? एक निश्चित कूट भाषा में, "UNDERSTAND" को "ENATSREDNV" लिखा जाता है। उसी कूट भाषा में "CONNECTION" को कैसे लिखा जाएगा?
+A: OOITCENNOD
+B: NOITCENNOC
+C: OIOTCENOND
+D: NOCITENONC
+
+=== Q12 (ID: 14513) [Current Answer: D] ===
+Question: Selecting the option that exactly matches the given address Do it. Original Address: Flat No 27CImperial Heights Residency Phase 12Lincoln Boulevard Central AreaChicago Illinois 60611United States of America दिए गए पते से पूरी तरह मेल खाने वाले विकल्प का चयन करें। मूल पता: Flat No 27CImperial Heights Residency Phase 12Lincoln Boulevard Central AreaChicago Illinois 60611United States of America
+A: Flat No 27CImperial Heights Residency Phase 21Lincoln Boulevard Central AreaChicago Illinois 60611United States of America
+B: Flat No 27CImperial Heights Residency Phase 12Lincoln Boulvard Central AreaChicago Illinois 60611United States of America
+C: Flat No 27CImperial Heights Residency Phase 12Lincoln Boulevard Central AreaChicago Illinois 60111United States of America
+D: Flat No 27CImperial Heights Residency Phase 12Lincoln Boulevard Central AreaChicago Illinois 60611United States of America
+
+=== Q13 (ID: 14514) [Current Answer: A] ===
+Question: In the following question a matrix of numbers is given. These numbers are either row-wise or column-wise in a certain Follows the pattern. identify this pattern Do this and find the missing number accordingly. 3 6 1 3 2 4 2 8 ? निम्नलिखित प्रश्न में संख्याओं का एक आव्यूह दिया गया है। ये संख्याएँ या तो पंक्ति-वार अथवा स्तंभ-वार किसी निश्चित प्रतिरूप का अनुसरण करती हैं। इस प्रतिरूप की पहचान करें और तदनुसार लुप्त संख्या ज्ञात करें। 3 6 1 3 2 4 2 8 ?
+A: 7
+B: 1
+C: 9
+D: 5 2
+
+=== Q14 (ID: 14515) [Current Answer: A] ===
+Question: There is a family of six people A, B, C, D, E and F. A and B is husband and wife and A is the father of C. C is the son of B. While F is the daughter of C. E is brother of C and D is brother of A. Is sister. Based on the given information find out How many female members are there in the family? A, B, C, D, E और F छह लोगों का एक परिवार है। A और B पति-पत्नी हैं और A, C का पिता है। C, B का बेटा है, जबकि F, C की बेटी है। E, C का भाई है और D, A की बहन है। दी गई जानकारी के आधार पर पता लगाएँ कि परिवार में कितनी महिला सदस्य हैं।
+A: 1
+B: 2
+C: 3
+D: 4
+
+=== Q15 (ID: 14516) [Current Answer: A] ===
+Question: The format of roll number is [Digit A]-[Digit B]-[Digit C], Where C = (A+B) × 2. Identify wrong roll number. रोल नंबर का फ़ॉर्मैट [Digit A]-[Digit B]-[Digit C] है, जहाँ C = (A+B) × 2. है। गलत रोल नंबर की पहचान करें।
+A: 2-3-10
+B: 4-1-10
+C: 5-2-14
+D: 6-2-18
+
+=== Q16 (ID: 14517) [Current Answer: C] ===
+Question: Select the option which is exactly true of the following Is equal to: Lt. Col. VK Singh, 09 Jan 2011, Cantt Area, Dehradun (UK)-248001 उस विकल्प का चयन कीजिए जो निम्नलिखित के बिल्कुल समान है: Lt. Col. VK Singh, 09 Jan 2011, Cantt Area, Dehradun (UK)-248001
+A: Lt. Col. V.K Singh, 09 Jan 2011, Cantt Area, Dehradun (UK)-248001
+B: Lt. Col. VK Singh, 09 Jan 2011, Cantt Area, Dehradun (UK)-248002
+C: Lt. Col. VK Singh, 09 Jan 2011, Cantt Area, Dehradun (UK)-248001
+D: Lt. Col. VK Singh, 09 Jan 2011, Cantt. Area, Dehradun (UK)-248001
+
+=== Q17 (ID: 14518) [Current Answer: B] ===
+Question: A dedicated employee who recently went through a difficult divorce. The personal situation has gone through, the accuracy of his work in the past There has been a clear decline in three weeks and that reporting Has not been able to meet even two important deadlines. of organization Accountability and Emotional Intelligence How do you handle this situation while maintaining a balance between Should handle? एक समर्पित कमचारी, जो हाल ही में तलाक जैसी मुश्किल निजी स्थिति से गुज़रा है, उसके काम की सटीकता में पिछले तीन हफ़्तों में साफ़ गिरावट देखी गई है और वह रिपोर्टिंग की दो अहम डेडलाइन भी पूरी नहीं कर पाया है। संगठन की जवाबदेही और इमोशनल इंटेलिजेंस (भावनात्मक समझ) के बीच संतुलन बनाते हुए आपको इस स्थिति को कैसे संभालना चाहिए?
+A: Send a formal and completely impartial email explaining the missed deadlines and attaching the company's standard policy guidelines for improving performance. / समय-सीमा (डेडलाइन) का पालन न होने की जानकारी देते हुए एक औपचारिक और पूरी तरह से निष्पक्ष ईमेल भेजें और साथ ही कंपनी की परफॉरमेंस सुधारने से जुड़ी स्टैंडड पॉलिसी गाइडलाइंस भी अटैच करें।
+B: Organize a private meeting to appreciate past contributions, address recent shortcomings, and discuss ways to improve work practices to stabilize performance. / पिछले योगदानों की सराहना करने, हाल की कमियों पर बात करने और परफॉरमेंस को स्थिर करने के लिए काम के तरीके में सुधार के उपायों पर चचा करने के लिए एक निजी बैठक का आयोजन करें।
+C: Don't mention them missing deadlines out of sympathy and quietly distribute their pending work to the rest of the team. / हमदर्दी के कारण डेडलाइन चूकने का ज़िक्र बिल्कुल न करें और उनके पेंडिंग काम चुपचाप बाकी टीम में बाँट दें।
+D: Invite them for coffee and share your story in detail about how you successfully handled a difficult past period in your life to inspire them. / उन्हें कॉफ़ी पर बुलाएँ और उन्हें प्रेरित करने के लिए अपनी ज़िंदगी के पुराने मुश्किल दौर को आपने कैसे सफलतापूवक संभाला, इस बारे में विस्तार से अपनी कहानी सुनाएँ। 2
+
+=== Q18 (ID: 14519) [Current Answer: C] ===
+Question: During a high-level strategic meeting, your The department head presents a plan that will fail You have every possibility of it happening, because it is on that ground. Ignores level data that you recently Have processed. There is silence in the living room; all people only So he is nodding his head in agreement because he is the head of the department. Afraid to oppose. Then the department head towards you Seeing and asks: “You are still silent. Do you too “Do you think this is the best path forward?” Which of the following answers is correct without “creating problems” Emotional Intelligence Displayed the highest level of Emotional Intelligence does? एक उच्च-स्तरीय रणनीतिक बैठक के दौरान, आपके विभागाध्यक्ष ऐसी योजना प्रस्तुत करते हैं जिसके असफल होने की आपको पूरी आशंका है, क्योंकि वह उस ज़मीनी स्तर के डेटा की अनदेखी करती है जिसे आपने हाल ही में संसाधित किया है। बैठक कक्ष में सन्नाटा है; सभी लोग केवल इसलिए सहमति में सिर हिला रहे हैं क्योंकि वे विभागाध्यक्ष का विरोध करने से डरते हैं। तभी विभागाध्यक्ष आपकी ओर देखकर पूछते हैं: “आप अब तक चुप हैं। क्या आपको भी लगता है कि यही आगे बढ़ने का सर्वोत्तम माग है?” निम्नलिखित में से कौन-सा उत्तर बिना “समस्याएँ उत्पन्न करने वाले व्यक्ति” की छवि बनाए, भावनात्मक बुद्धिमत्ता (Emotional Intelligence) का सर्वोच्च स्तर प्रदर्शित करता है?
+A: “I agree with this plan, but I believe we should wait for some more data before starting.” (A little false statement to keep the peace) / “मैं इस योजना से सहमत हूँ, लेकिन मेरा मानना है कि हमें शुरू करने से पहले कुछ और डेटा की प्रतीक्षा करनी चाहिए।” (शांति बनाए रखने के लिए एक छोटा-सा असत्य कथन)
+B: "The data indicate that this plan may not work as expected; we may need to reconsider it." / “डेटा से संकेत मिलता है कि यह योजना अपेक्षित रूप से काय नहीं कर सकती; हमें इस पर पुनर्विचार करने की आवश्यकता हो सकती है।”
+C: “I understand the thinking behind this goal, but recent data shows a potential bottleneck in week four. Are there any quick measures we can add to reduce risk in the first phase?” / “मैं इस लक्ष्य के पीछे की सोच को समझता हूँ, लेकिन हाल के डेटा से चौथे सप्ताह में एक संभावित बाधा दिखाई देती है। क्या हम पहले चरण में जोखिम को कम करने के लिए कोई त्वरित उपाय जोड़ सकते हैं?”
+D: Remain silent and nod in agreement, because it is not your job to oppose the head of the department. / चुप रहें और सहमति में सिर हिलाएँ, क्योंकि विभागाध्यक्ष का विरोध करना आपका काय नहीं है।
+
+=== Q19 (ID: 14520) [Current Answer: D] ===
+Question: What should come in place of question mark (?) in the following analogy? will come? MNO : PQR :: STU : ? निम्नलिखित सादृश्य में प्रश्न चिह्न (?) के स्थान पर क्या आएगा? MNO : PQR :: STU : ?
+A: WXY
+B: UVW
+C: XYZ
+D: VWX
+
+=== Q20 (ID: 14521) [Current Answer: B] ===
+Question: If 8 ★ 4 # 5 = 10 and 18 ★ 3 # 2 = 12, then 32 ★ What will be the value of 4 # 6? यदि 8 ★ 4 # 5 = 10 और 18 ★ 3 # 2 = 12 है, तो 32 ★ 4 # 6 का मान क्या होगा?
+A: 36
+B: 48
+C: 24
+D: 52
+
+=== Q21 (ID: 14522) [Current Answer: B] ===
+Question: Sara A high-end bakery in a busy area of town Wants to open. he needs a place where There is more foot traffic on weekends And which is close to other lifestyle stores. gave Which option should he choose from the given options? सारा शहर के एक व्यस्त क्षेत्र में एक उच्च-स्तरीय बेकरी खोलना चाहती है। उसे ऐसी जगह की आवश्यकता है जहाँ सप्ताहांत में पैदल आने वाले ग्राहकों की संख्या अधिक हो और जो अन्य जीवनशैली-संबंधी दुकानों के निकट हो। दिए गए विकल्पों में से उसे कौन-सा विकल्प चुनना चाहिए?
+A: A quiet corner shop located in a suburban area, where very few people visit on weekends. / उपनगरीय क्षेत्र में स्थित एक शांत कोने की दुकान, जहाँ सप्ताहांत में बहुत कम लोग आते हैं।
+B: A small stall located in a busy food court within a popular weekend mall. / एक लोकप्रिय सप्ताहांत मॉल के भीतर व्यस्त फूड कोट में स्थित एक छोटा स्टॉल।
+C: A shop located in a remote commercial park, which is closed every weekend afternoon. / एक दूरस्थ व्यावसायिक पाक में स्थित दुकान, जो प्रत्येक सप्ताहांत की दोपहर को बंद रहती है।
+D: Unit located in the basement of a large office building with no retail shops nearby. / एक बड़े कायालय भवन के बेसमेंट में स्थित इकाई, जिसके आसपास कोई खुदरा दुकानें नहीं हैं।
+
+=== Q22 (ID: 14523) [Current Answer: C] ===
+Question: You notice that a co-worker consistently comes to the office late. Has been and is going quickly. Meanwhile, another colleague Jokes about getting "caught" by the boss Should”. You are in a supervisory role Are not. What would be the most appropriate response in such a situation? आप देखते हैं कि एक सहकर्मी लगातार देर से कायालय आ रहा है और जल्दी जा रहा है। इस बीच, एक अन्य सहकर्मी मज़ाक में कहता है कि उसे बॉस द्वारा "पकड़ा जाना चाहिए"। आप किसी पयवेक्षी (Supervisory) भूमिका में नहीं हैं। ऐसी स्थिति में सबसे उपयुक्त प्रतिक्रिया क्या होगी?
+A: Join in on the fun, as this is common office banter. / मज़ाक में शामिल हो जाएँ, क्योंकि यह कायालय की सामान्य हँसी-मज़ाक की बात है।
+B: To resolve this issue, go and inform your boss about it. / इस मुद्दे के समाधान के लिए स्वयं जाकर बॉस को इसके बारे में बता दें।
+C: Avoid gossip and concentrate on your responsibilities. / चुगली-चचा (Gossip) से बचें और अपनी जिम्मेदारियों पर ध्यान केंद्रित करें।
+D: Confront the coworker directly about his or her appearance. / सहकर्मी की उपस्थिति के बारे में सीधे उससे सामना करें।
+
+=== Q23 (ID: 14524) [Current Answer: D] ===
+Question: Read the statement carefully and consider it to be true. then Check the two conclusions given below and Determine which conclusion(s), if any Yes, follows logically from the statement.
+
+Statement: An IT organization has strengthened its cyber security framework. Advanced encryption protocols to strengthen and intrusion Intrusion detection systems have been implemented.
+
+Conclusion:
+
+I. Complete elimination of cyber attacks in all systems Is done.
+
+II. Encryption only to prevent all security breaches That is enough. कथन को ध्यानपूवक पढ़िए और उसे सत्य मानिए। फिर उसके नीचे दिए गए दो निष्कर्षों की जाँच कीजिए तथा निधारित कीजिए कि कौन-सा/कौन-से निष्कष, यदि कोई हो, कथन से तार्किक रूप से अनुसरण करते हैं। कथन: एक आईटी संगठन ने अपने साइबर सुरक्षा ढाँचे को सुदृढ़ करने के लिए उन्नत एन्क्रिप्शन प्रोटोकॉल तथा घुसपैठ पहचान प्रणालियाँ (इंट्रूज़न डिटेक्शन सिस्टम्स) लागू की हैं। निष्कष: I. सभी प्रणालियों में साइबर हमलों का पूणतः उन्मूलन हो चुका है। II. सभी सुरक्षा उल्लंघनों को रोकने के लिए केवल एन्क्रिप्शन ही पयाप्त है।
+A: Only conclusion I follows. / केवल निष्कष I अनुसरण करता है।
+B: Both conclusions I and II follow. / निष्कष I और II दोनों अनुसरण करते हैं।
+C: Only conclusion II follows. / केवल निष्कष II अनुसरण करता है।
+D: Neither conclusion I nor conclusion II follows. / न तो निष्कष I और न ही निष्कष II अनुसरण करता है।
+
+=== Q24 (ID: 14525) [Current Answer: B] ===
+Question: Select the option that is similar to the third word. be related, as the second word is related to the first word Is. Lion : Den :: Rabbit : ? उस विकल्प का चयन करें जो तीसरे शब्द से उसी प्रकार संबंधित हो, जिस प्रकार दूसरा शब्द पहले शब्द से संबंधित है। Lion : Den :: Rabbit : ?
+A: Hole
+B: Burrow
+C: Stable
+D: Kennel
+
+=== Q25 (ID: 14526) [Current Answer: D] ===
+Question: Read the given statement carefully and based on it Consider the following given assumptions. prescribed Find out which assumption(s) are implicit in the statement.
+
+Statement: A leading nutrition brand has claimed that its New Plant-Based Protein Shake Muscle The most effective supplement for recovery. Assumptions:
+
+I. All other protein supplements currently available in the market Are ineffective for muscle recovery.
+
+II. Consumers without checking independent scientific studies Only we will believe the company's claims. दिए गए कथन को ध्यानपूवक पढ़िए तथा उसके आधार पर दी गई निम्नलिखित मान्यताओं पर विचार कीजिए। निधारित कीजिए कि कथन में कौन-सी मान्यता/मान्यताएँ निहित हैं। कथन: एक अग्रणी पोषण ब्रांांड ने दावा किया है कि उसका नया पादप-आधारित (प्लांट-बेस्ड) प्रोटीन शेक मांसपेशियों की रिकवरी के लिए सबसे प्रभावी अनुपूरक (सप्लीमेंट) है। मान्यताएँ: I. वतमान में बाजार में उपलब्ध अन्य सभी प्रोटीन सप्लीमेंट मांसपेशियों की रिकवरी के लिए अप्रभावी हैं। II. उपभोक्ता स्वतंत्र वैज्ञानिक अध्ययनों की जाँच किए बिना ही कंपनी के दावे पर विश्वास कर लेंगे।
+A: Both Assumptions I and II are implicit. / मान्यता I और II दोनों निहित हैं।
+B: Only assumption II is implicit. / केवल मान्यता II निहित है।
+C: Only assumption I is implicit. / केवल मान्यता I निहित है।
+D: Neither assumption I nor II is implicit. / न तो मान्यता I न ही II निहित है।
+
+=== Q26 (ID: 14527) [Current Answer: A] ===
+Question: In which year did Aurangzeb issue Fatwa-e-Alamgiri? औरंगजेब ने फतवा-ए-आलमगीरी किस वष जारी किया?
+A: 1675 AD / 1675 ई.
+B: 1667 AD / 1667 ई.
+C: 1680 AD / 1680 ई.
+D: 1670 AD / 1670 ई.
+
+=== Q27 (ID: 14528) [Current Answer: B] ===
+Question: What does IMEC mean? आईईएमसी(IMEC) का क्या अथ है?
+A: Indian Maritime Economic Council / इंडियन मेरीटाइम इकोनॉमिक काउंसिल
+B: India-Middle East-Europe Economic Corridor / इंडिया-मिडिल ईस्ट-यूरोप इकोनॉमिक कॉरिडोर
+C: International Monetary Economic Committee / इंटरनेशनल मोनेटरी इकोनॉमिक कमेटी
+D: Indo-Mediterranean Export Corporation / इंडो-मेडिटेरेनियन एक्सपोट कॉर्पोरेशन
+
+=== Q28 (ID: 14529) [Current Answer: B] ===
+Question: IEMC (India-Middle East-Europe Economic Corridor) of transportation used within the corridor What is the main instrument? आईईएमसी (भारत-मध्य पूव-यूरोप आर्थिक कॉरिडोर) कॉरिडोर के भीतर उपयोग किया जाने वाला परिवहन का मुख्य साधन क्या है?
+A: air travel / हवाई यात्रा
+B: marine and rail / समुद्री और रेल
+C: road transport only / केवल सड़क परिवहन
+D: space travel only / केवल अंतरिक्ष यात्रा
+
+=== Q29 (ID: 14530) [Current Answer: A] ===
+Question: In which Indian game small targets are shot by riding a horse But the javelin is thrown? कौन से भारतीय खेल में घोड़े की सवारी करके छोटे निशाने पर भाला फेंका जाता है?
+A: polo / पोलो
+B: tent pegging / टेंट पेगिंग
+C: Jousting / जाउस्टिंग
+D: rodeo / रोडीओ
+
+=== Q30 (ID: 14531) [Current Answer: D] ===
+Question: Which of the following is known as Sleeping on Jupiter? DSC Prize for South Asian Literature 2016 got? निम्नलिखित में से किसे स्लीपिंग ऑन जुपिटर के लिए 2016 में दक्षिण एशियाई साहित्य के लिए डीएससी पुरस्कार मिला?
+A: Anuradha Roy / अनुराधा रॉय
+B: Arundhati Roy / अरुंधति रॉय
+C: Perumal Murugan / पेरुमल मुरुगन
+D: Jhumpa Lahiri / झुम्पा लाहिडी
+
+=== Q31 (ID: 14532) [Current Answer: B] ===
+Question: Year to promote development of nuclear energy in India Which of the following commissions was established in 1957 had gone? भारत में परमाणु ऊजा के विकास को बढ़ावा देने के लिए वष 1957 में निम्नलिखित में से कौन सा आयोग स्थापित किया गया था?
+A: Central Electricity Authority / केंद्रीय विद्युत अथॉरिटी
+B: Atomic Energy Commission 4 AWARENESS / परमाणु ऊजा आयोग
+C: finance commission / वित्त आयोग
+D: Scientific Advisory Committee / वैज्ञानिक सलाहकार समिति
+
+=== Q32 (ID: 14533) [Current Answer: A] ===
+Question: Which Irish writer won the Booker for "The Sea" in 2005? won the award? किस आयरिश लेखक ने 2005 में "द सी" के लिए बुकर पुरस्कार जीता?
+A: roddy doyle / रॉडी डॉयल
+B: John Banville / जॉन बैनविल
+C: colm toibin / कोलम टोइबिन
+D: sebastian barry / सेबेस्टियन बैरी
+
+=== Q33 (ID: 14534) [Current Answer: B] ===
+Question: In which year was Kho-Kho included in the South Asian Games had gone? खो-खो को दक्षिण एशियाई खेलों में किस वष शामिल किया गया था?
+A: 2014
+B: 2016
+C: 2019
+D: 2022
+
+=== Q34 (ID: 14535) [Current Answer: C] ===
+Question: "Land Revenue Policy" started by the British in India The primary objective was: भारत में अंग्रेजों द्वारा शुरू की गई "भू-राजस्व नीति" का प्राथमिक उद्देश्य था:
+A: To promote the welfare and prosperity of Indian farmers. / भारतीय किसानों के कल्याण और समृद्धि को बढ़ावा देना।
+B: To establish a fair and equitable system of land ownership. / भूमि स्वामित्व की निष्पक्ष एवं न्यायसंगत प्रणाली स्थापित करना।
+C: To maximize revenue collected from land for the British government. / ब्रिटिश सरकार के लिए भूमि से एकत्रित राजस्व को अधिकतम करना।
+D: To encourage cultivation of food crops to ensure food security. / खाद्य सुरक्षा सुनिश्चित करने के लिए खाद्य फसलों की खेती को प्रोत्साहित करना।
+
+=== Q35 (ID: 14536) [Current Answer: C] ===
+Question: Indian regarding FIR (First Information Report) Which of the following is important in the Civil Defense Code? Is there improvement? एफआईआर (प्रथम सूचना रिपोट) के संबंध में भारतीय नागरिक सुरक्षा संहिता में निम्नलिखित में से कौन सा प्रमुख सुधार है?
+A: Now FIR will not be filed / अब एफआईआर दज नहीं की जा सकेगी
+B: Now for FIR, first approval of the court has to be taken. / एफआईआर के लिए अब पहले अदालत की मंजूरी लेनी होगी
+C: FIR can be filed online and through electronic communication / एफआईआर ऑनलाइन और इलेक्ट्रॉनिक संचार के माध्यम से दज की जा सकती है
+D: FIR should be handwritten only / एफआईआर केवल हस्तलिखित होनी चाहिए 4
+
+=== Q36 (ID: 14537) [Current Answer: C] ===
+Question: Which of the following digital elements is now part of Indian Evidence? As primary evidence under the Act, 2023 are acceptable? निम्नलिखित में से कौन से डिजिटल तत्व अब भारतीय साक्ष्य अधिनियम, 2023 के तहत प्राथमिक साक्ष्य के रूप में स्वीकाय हैं?
+A: only cctv footage / सिफ सीसीटीवी फुटेज
+B: email only / केवल ईमेल
+C: Email, SMS, WhatsApp Chat and Cloud Data / ईमेल, एसएमएस, व्हाट्सएप चैट और क्लाउड डेटा
+D: SMS only / केवल एसएमएस
+
+=== Q37 (ID: 14538) [Current Answer: A] ===
+Question: Who among the following was the first to win a Grand Slam title? Who were the Indians? निम्नलिखित में से ग्रैंड स्लैम खिताब जीतने वाले पहले भारतीय कौन थे?
+A: Mahesh Bhupathi / महेश भूपति
+B: leander paes / लिएंडर पेस
+C: Sania Mija / सानिया मिजा
+D: Rohan Bopanna / रोहन बोपन्ना
+
+=== Q38 (ID: 14539) [Current Answer: B] ===
+Question: 'Train to Pakistan' was written by which of the following novelists? Is it a novel written by? 'ट्रेन टू पाकिस्तान' निम्नलिखित में से किस उपन्यासकार द्वारा लिखा गया उपन्यास है?
+A: Salman Rushdie / सलमान रुश्दी
+B: Khushwant Singh / खुशवंत सिंह
+C: Ismat Chughtai / इस्मत चुगताई
+D: mulkraj anand / मुल्कराज आनंद
+
+=== Q39 (ID: 14540) [Current Answer: C] ===
+Question: In which period were the 18 Puranas composed in their present form? वतमान स्वरूप में 18 पुराणों की रचना किस काल में हुई?
+A: Mauya period / मौय काल
+B: Gupta period / गुप्त काल
+C: Rigvedic period / ऋग्वैदिक काल
+D: Vijayanagara period / विजयनगर काल
+
+=== Q40 (ID: 14541) [Current Answer: A] ===
+Question: Tropical and subtropical moist broadleaf forests in India Leaf forests can be found in the following places: भारत में उष्णकटिबंधीय और उपोष्णकटिबंधीय नम चौड़ी पत्ती वाले वन निम्नलिखित स्थानों पर पाए जा सकते हैं:
+A: Andaman Islands / अंडमान द्वीप समूह
+B: Brahmaputra Valley / ब्रह्मपुत्र घाटी
+C: lower gangetic plains / निचले गंगा के मैदान
+D: all these / इन सब
+
+=== Q41 (ID: 14542) [Current Answer: D] ===
+Question: The following three statements related to the festivals of Mizoram Read:
+
+1) Mim Kut in August and September after maize harvest Is celebrated.
+
+2) Overnight after cutting Jhum in Chapchar Kut in spring season. Dance is performed.
+
+3) Rice beer is drunk during festivals in Paval Kut. Is. Which of the following statements is/are correct? मिज़ोरम के त्यौहारों से संबंधित निम्नलिखित तीन कथन पढ़ें: 1) मक्का की फ़सल के बाद अगस्त और सितंबर में मिम कुट मनाया जाता है। 2) वसंत ऋतु में चपचार कुट में झूम काटने के बाद रात भर नृत्य किया जाता है। 3) पावल कुट में त्यौहार के दौरान चावल की बीयर पी जाती है। उपयुक्त कथनों में से कौन सा/से सही है/हैं?
+A: only 1 is correct / केवल 1 सही है
+B: only 2 is correct / केवल 2 सही है
+C: only 3 is correct / केवल 3 सही है
+D: 1, 2 and 3 are correct / 1, 2 और 3 सही हैं
+
+=== Q42 (ID: 14543) [Current Answer: B] ===
+Question: In Paris Olympics 2024, which Indian woman Shooter wins Olympics in 10 meter air pistol event Won a medal, she was the first woman from India to do so became? पेरिस ओलंपिक 2024 में, किस भारतीय महिला निशानेबाज ने 10 मीटर एयर पिस्टल स्पधा में ओलंपिक पदक जीता, ऐसा करने वाली वह भारत की पहली महिला बन गईं?
+A: Isha Singh / ईशा सिंह
+B: Manu Bhakar / मनु भाकर
+C: Apoorvi Chandela / अपूर्वी चंदेला
+D: Anjali Bhagwat / अंजलि भागवत
+
+=== Q43 (ID: 14544) [Current Answer: B] ===
+Question: Which of the following is located on the east coast of India? The port is located in the mineral rich areas of Odisha and Chhattisgarh. Due to its proximity to iron ore and coal Known for export? भारत के पूर्वी तट पर स्थित निम्नलिखित में से कौन सा बंदरगाह ओडिशा और छत्तीसगढ़ के खनिज समृद्ध क्षेत्रों के निकट स्थित होने के कारण लौह अयस्क और कोयले के नियात के लिए जाना जाता है?
+A: chennai port / चेन्नई बंदरगाह
+B: Paradip Port / पारादीप बंदरगाह
+C: Visakhapatnam Port / विशाखापत्तनम बंदरगाह
+D: Kolkata port / कोलकाता बंदरगाह
+
+=== Q44 (ID: 14545) [Current Answer: A] ===
+Question: Which of the following districts in Assam is the major oil well Known for? असम में निम्नलिखित में से कौन सा जिला प्रमुख तेल कुओं के लिए जाना जाता है?
+A: Dibrugarh and Jorhat / डिब्रूगढ़ और जोरहाट
+B: Digboi and Naharkatiya / डिगबोई और नहरकटिया
+C: Guwahati and Tezpur / गुवाहाटी और तेजपुर
+D: Nagaon and Barpeta / नागांव और बारपेटा
+
+=== Q45 (ID: 14546) [Current Answer: B] ===
+Question: Article 131A was repealed and before ______ was given special jurisdiction. अनुच्छेद 131A को निरस्त कर दिया गया और इससे पहले ______ को विशेष अधिकार क्षेत्र दिया गया था।
+A: District Court / जिला न्यायालय
+B: high courts / उच्च न्यायालयों
+C: supreme coat / सुप्रीम कोट
+D: election commission / निवाचन आयोग
+
+=== Q46 (ID: 14547) [Current Answer: C] ===
+Question: Related to District Planning Committee in Indian Constitution Article 243ZD of which Constitutional Amendment Act? Was added under? भारतीय संविधान में जिला योजना समिति से संबंधित अनुच्छेद 243ZD किस संवैधानिक संशोधन अधिनियम के तहत जोड़ा गया था?
+A: 72nd Constitutional Amendment Act, 1992 / 72वाँ संवैधानिक संशोधन अधिनियम, 1992
+B: 73rd Constitutional Amendment Act, 1992 / 73वाँ संवैधानिक संशोधन अधिनियम, 1992
+C: 74th Constitutional Amendment Act, 1992 / 74वाँ संवैधानिक संशोधन अधिनियम, 1992
+D: 75th Constitutional Amendment Act, 1993 / 75वाँ संवैधानिक संशोधन अधिनियम, 1993
+
+=== Q47 (ID: 14548) [Current Answer: A] ===
+Question: Article 243ZI related to incorporation of cooperative societies Which constitutional amendment to the Indian Constitution was Was added under the Act? सहकारी समितियों के निगमन से संबंधित अनुच्छेद 243ZI को भारतीय संविधान में किस संवैधानिक संशोधन अधिनियम के तहत जोड़ा गया था?
+A: 74th Constitutional Amendment Act, 1992 / 74वाँ संवैधानिक संशोधन अधिनियम, 1992
+B: 91st Constitutional Amendment Act, 2003 / 91वाँ संवैधानिक संशोधन अधिनियम, 2003
+C: 97th Constitutional Amendment Act, 2011 / 97वाँ संवैधानिक संशोधन अधिनियम, 2011
+D: 101st Constitutional Amendment Act, 2016 / 101वाँ संवैधानिक संशोधन अधिनियम, 2016
+
+=== Q48 (ID: 14549) [Current Answer: C] ===
+Question: What about the phrase “Union of States” in the Constitution of India? meaning? भारत के संविधान में “राज्यों का संघ” वाक्यांश का क्या अथ है?
+A: Presidential rule system has been adopted in India. / भारत में राष्ट्रपति शासन प्रणाली अपनाई गई है।
+B: Complete unitary system. / पूण एकात्मक प्रणाली।
+C: The states formed the federation. / राज्यों ने संघ का निमाण किया।
+D: The Union is not the result of any agreement between the States. / संघ राज्यों के बीच हुए किसी समझौते का परिणाम नहीं है।
+
+=== Q49 (ID: 14550) [Current Answer: B] ===
+Question: After the implementation of the New Economic Policy (1991) in India Which of the following constitutes foreign investment? Is it? नई आर्थिक नीति (1991) के लागू होने के बाद भारत में निम्नलिखित में से कौन-सा विदेशी निवेश का गठन करता है?
+A: Foreign Institutional Investment and Bilateral Development Finance / विदेशी संस्थागत निवेश तथा द्विपक्षीय विकास वित्त
+B: Foreign Direct Investment and Official Development Assistance / प्रत्यक्ष विदेशी निवेश तथा आधिकारिक विकास सहायता
+C: Foreign Portfolio Investment and External Commercial Borrowings / विदेशी पोटफोलियो निवेश तथा बाह्य वाणिज्यिक उधार
+D: Foreign Direct Investment and Foreign Institutional Investment / प्रत्यक्ष विदेशी निवेश तथा विदेशी संस्थागत निवेश
+
+=== Q50 (ID: 14551) [Current Answer: A] ===
+Question: The half-life of a radionuclide is 4 hours. If its If the initial mass is 160 grams, then after 12 hours How much mass of radionuclide will remain undecomposed? एक रेडियोन्यूक्लाइड की अध-आयु 4 घंटे है। यदि इसका प्रारंभिक द्रव्यमान 160 ग्राम है, तो 12 घंटे के बाद रेडियोन्यूक्लाइड का कितना द्रव्यमान अविघटित रहेगा?
+A: 20 (grams) / 20 (ग्राम)
+B: 40 (grams) / 40 (ग्राम)
+C: 80 (grams) / 80 (ग्राम)
+D: 10 (grams) / 10 (ग्राम)
+
+=== Q51 (ID: 14552) [Current Answer: D] ===
+Question: A hemispherical bowl is made of steel, whose thickness is 1 is centimetre. The inner radius of the bowl is 4 centimeters. What will be the outer curved surface area? एक अधगोलाकार कटोरा स्टील से बना है, जिसकी मोटाई 1 सेंटीमीटर है। कटोरे की आंतरिक त्रिज्या 4 सेंटीमीटर है। बाहरी वक्र पृष्ठीय क्षेत्रफल क्या होगा?
+A: 137.14 square centimeters / 137.14 वग सेंटीमीटर
+B: 237.14 square centimeters / 237.14 वग सेंटीमीटर
+C: 257.14 square centimeters / 257.14 वग सेंटीमीटर
+D: 157.14 square centimeters / 157.14 वग सेंटीमीटर
+
+=== Q52 (ID: 14553) [Current Answer: B] ===
+Question: If all the sides of a rectangular parallelepiped are equal, then it becomes: यदि एक आयताकार समांतर चतुभुज की सभी भुजाएँ बराबर हों, तो यह बन जाता है:
+A: circle / गोला
+B: class / वग
+C: cylinder / बेलन
+D: cone / शंकु
+
+=== Q53 (ID: 14554) [Current Answer: B] ===
+Question: If a * b = a + b + ab, then what is 3 * 5 - 2 * 4 equal to? Is it? अगर a * b = a + b + ab, तो 3 * 5 - 2 * 4 बराबर क्या है?
+A: 9
+B: 8
+C: 13
+D: 23
+
+=== Q54 (ID: 14555) [Current Answer: B] ===
+Question: The sides of a triangle are 7 cm, 24 cm and 25 cm. What is the length of the altitude corresponding to the longest side? एक त्रिभुज की भुजाएँ 7 सेमी, 24 सेमी और 25 सेमी हैं। सबसे लंबी भुजा के संगत शीषलंब की लंबाई क्या है?
+A: 5.6 cm / 5.6 सेमी
+B: 6.72 cm / 6.72 सेमी
+C: 8.4 cm / 8.4 सेमी
+D: 9.6 cm / 9.6 सेमी
+
+=== Q55 (ID: 14556) [Current Answer: A] ===
+Question: The sum of two supplementary angles is 90°. If one angle is the other is 18° less than , then find the angle. दो पूरक कोणों का योग 90° होता है। अगर एक कोण दूसरे से 18° कम है, तो कोण ज्ञात कीजिए।
+A: 36°, 54°
+B: 28°, 62°
+C: 40°, 50°
+D: 45°, 45° / Ans: A 56. दो शंकुओं की ऊंचाइयों का अनुपात 1:3 है और उनके आधारों की त्रिज्याओं का अनुपात 3:1 है। उनके आयतनों का अनुपात क्या है? (A) 3:4 (B) 4:3 (C) 3:1 (D) 2:3
+
+=== Q56 (ID: 14557) [Current Answer: C] ===
+Question: The ratio of the heights of two cones is 1:3 and their The ratio of the radii of the bases is 3:1. their volumes What is the ratio of? दो शंकुओं की ऊंचाइयों का अनुपात 1:3 है और उनके आधारों की त्रिज्याओं का अनुपात 3:1 है। उनके आयतनों का अनुपात क्या है?
+A: 3:4
+B: 4:3
+C: 3:1
+D: 2:3
+
+=== Q57 (ID: 14558) [Current Answer: B] ===
+Question: The internal diameter of a hemispherical brass bowl is 28 is centimetre. If the inner part of the bowl is priced at ₹30 per sq. If you want to paint at the rate of centimetre, then paint the inner curved page. What will be the total cost? एक अधगोलाकार पीतल के कटोरे का आंतरिक व्यास 28 सेंटीमीटर है। यदि कटोरे के अंदरूनी भाग को ₹30 प्रति वग सेंटीमीटर की दर से रंगना है, तो आंतरिक वक्र पृष्ठ को रंगने की कुल लागत क्या होगी?
+A: ₹32960 / ₹36960
+B: ₹36960
+C: ₹26960
+D: ₹46520
+
+=== Q58 (ID: 14559) [Current Answer: C] ===
+Question: Rita covers a certain distance at her normal speed. If she reduces her speed by 10 km/h, then It takes 40 hours more than the original time to complete the journey. On the other hand, if he increases his speed by 15 km/h Then it takes 10 hours less than the original time. Rita Find the distance covered by. रीता अपनी सामान्य गति से एक निश्चित दूरी तय करती है। यदि वह अपनी गति में 10 km/h की कमी करती है, तो उसे यात्रा पूरी करने में मूल समय से 40 घंटे अधिक लगते हैं। दूसरी ओर, यदि वह अपनी गति में 15 km/h की वृद्धि करती है, तो उसे मूल समय से 10 घंटे कम लगते हैं। रीता द्वारा तय की गई दूरी ज्ञात कीजिए।
+A: 150 km
+B: 250 km
+C: 300 km
+D: 380 km
+
+=== Q59 (ID: 14560) [Current Answer: B] ===
+Question: Simplify: 0.05×0.05×0.05+0.04×0.04×0.04
+
+0.05×0.05−0.05×0.04+0.04×0.04 सरल कीजिए:
+A: 0.07
+B: 0.09
+C: 0.08
+D: 0.05
+
+=== Q60 (ID: 14561) [Current Answer: D] ===
+Question: of √0.09 + √0.49 + √1.21 + √0.0004 Find the value. का मान ज्ञात कीजिए। 45∘, 45∘ 0.05×0.05×0.05+0.04×0.04×0.04 0.05×0.05−0.05×0.04+0.04×0.04 √0.09 + √0.49 + √1.21 + √0.0004 6
+A: 1.84
+B: 4.06
+C: 3.26
+D: 2.12
+
+=== Q61 (ID: 14562) [Current Answer: D] ===
+Question: Ram traveled at speeds of 40 km/hr, 45 km/hr and Covered the same distance. Ram's average during the entire journey What was the speed? (Correct to two decimal places.) राम ने 40 km/hr, 45 km/hr और 60 km/hr की गति से समान दूरी तय की। पूरी यात्रा के दौरान राम की औसत गति क्या थी? (दो दशमलव स्थानों तक सही।)
+A: 34.87 km/h
+B: 42.80 km/h
+C: 38.96 km/h
+D: 46.96 km/h
+
+=== Q62 (ID: 14563) [Current Answer: B] ===
+Question: Evaluate: [ (2.7)³−(1.3)³ ]² (2.7)²+3.51+(1.3)² मूल्यांकन करें:
+A: 1.54
+B: 1.96
+C: 2.34
+D: 2.87
+
+=== Q63 (ID: 14564) [Current Answer: D] ===
+Question: In △XYZ , let M be the midpoint of side XY. If the length of median ZM is 9 cm and G is the centroid, then the segment of GM is What is the length? In , मान लीजिए M भुजा XY का मध्यबिंदु है। यदि माध्यिका (median) ZM की लंबाई 9 cm है और G केंद्रक (centroid) है, तो रेखाखंड (segment) GM की लंबाई क्या है?
+A: 1 cm
+B: 7 cm
+C: 9 cm
+D: 3 cm
+
+=== Q64 (ID: 14565) [Current Answer: A] ===
+Question: Two persons A and B working together to complete a work Let's complete it in 8 days. If A uses his actual capacity Would have done the work with double the efficiency and B would have If the work was done with 60% of the actual capacity, then this work would have been Would have been completed in 6 days. If B works alone, he In how many days will the work be completed? दो व्यक्ति A और B एक साथ काम करते हुए एक काय को 8 दिनों में पूरा करते हैं। यदि A ने अपनी वास्तविक क्षमता से दोगुनी क्षमता से काय किया होता और B ने अपनी वास्तविक क्षमता के 60% से काय किया होता, तो यह काय 6 दिनों में पूरा हो जाता। यदि B अकेले काय करे, तो वह काय कितने दिनों में पूरा करेगा?
+A: 14 3 days / 14 दिन
+B: 16 4 days / 16 दिन
+C: 13 2 days / 13 दिन
+D: 18 1 day / 18 दिन
+
+=== Q65 (ID: 14566) [Current Answer: D] ===
+Question: Which of the following numbers is not divisible by 3? निम्नलिखित में से कौन-सी संख्या 3 से विभाज्य नहीं है?
+A: 98763
+B: 10002
+C: 55554
+D: 71203
+
+=== Q66 (ID: 14567) [Current Answer: B] ===
+Question: How many numbers from 50 to 1000 are divisible by 11? 50 से 1000 तक कितनी संख्याएँ 11 से विभाज्य हैं?
+A: 75
+B: 86
+C: 65
+D: 96
+
+=== Q67 (ID: 14568) [Current Answer: C] ===
+Question: P and Q complete a work in: 10 days and 30 days respectively. Can do. P starts the work and they take turns Let's work. In how many days will the work be completed? P और Q एक काम को क्रमशः: 10 दिन और 30 दिन में पूरा कर सकते हैं। P काम शुरू करता है और वे बारी-बारी से काम करते हैं। काम कितने दिनों में पूरा होगा?
+A: 7 days / 7 दिन
+B: 11 2 3 days / दिन
+C: 14 2 days / दिन
+D: 15 days / 15 दिन
+
+=== Q68 (ID: 14569) [Current Answer: B] ===
+Question: There are two ships on the same side of a lighthouse. from them Angles of elevation of the top of the lighthouse respectively: 30° and 45° Are. The height of the lighthouse is 60 m. between ships Find the approximate distance. (Take √3 = 1.732) एक प्रकाशस्तंभ के एक ही ओर दो जहाज कर रहे हैं। उनसे प्रकाशस्तंभ के शीष के उन्नयन कोण क्रमशः: 30° और 45° हैं। प्रकाशस्तंभ की ऊँचाई 60 m है। जहाजों के बीच की लगभग दूरी ज्ञात कीजिए। ( लें)
+A: 45 m
+B: 44 m
+C: 41 m
+D: 39 m
+
+=== Q69 (ID: 14570) [Current Answer: D] ===
+Question: If tan θ= √3, then find the value of cosec² θ+sec² θ. cosec² θ−sec² θ Do it. यदि , तो का मान ज्ञात कीजिए।
+A: −3 / (B) 2 (C) (D) -2 Ans: D 70. यदि है, तो का मान क्या है? (A) 2.346
+B: 2 2
+C: 3
+D: -2
+
+=== Q70 (ID: 14571) [Current Answer: C] ===
+Question: If √2 = 1.414, then what is the value of 6+2√2? √2
+A: 2.346
+B: 4.786
+C: 6.242
+D: 8.654
+
+=== Q71 (ID: 14572) [Current Answer: B] ===
+Question: The diameter of a circle is 20 cm. Two similar chords AB and CD are parallel. BC is a diameter of the circle. If chord AB is at a distance of 6 cm from the centre, then the length of chord CD (cm
+
+i) Find out. एक वृत्त का व्यास 20 cm है। दो समान जीवाएँ AB और CD समानांतर हैं। BC वृत्त का एक व्यास है। यदि जीवा AB केंद्र से 6 cm की दूरी पर है, तो जीवा CD की लंबाई (cm में) ज्ञात कीजिए।
+A: 8 cm
+B: 16 cm
+C: 24 cm
+D: 32 cm
+
+=== Q72 (ID: 14573) [Current Answer: C] ===
+Question: A tangent line at point A to a circle of radius 55 cm Has been drawn. A chord BC is parallel to this tangent line. If the perpendicular distance of chord BC from center O is 33 cm, then What is the length of chord BC? एक 55 cm त्रिज्या वाले वृत्त पर बिंदु A पर एक स्पश रेखा खींची गई है। एक जीवा BC, इस स्पश रेखा के समांतर है। यदि केंद्र O से जीवा BC की लंबवत दूरी 33 cm है, तो जीवा BC की लंबाई क्या है?
+A: 74 cm
+B: 85 cm
+C: 88 cm
+D: 96 cm
+
+=== Q73 (ID: 14574) [Current Answer: B] ===
+Question: The perimeter of a sector of a circle is 45 cm and its The radius is 12 cm. Find the angle of the sector in radians. किसी वृत्त के एक सेक्टर का परिमाप 45 cm है और उसकी त्रिज्या 12 cm है। सेक्टर का कोण रेडियन में ज्ञात कीजिए।
+A: 1.75 radians / 1.75 रेडियन
+B: 2.54 radians / 2.54 रेडियन
+C: 3.65 radians / 3.65 रेडियन
+D: 5.78 radians / 5.78 रेडियन
+
+=== Q74 (ID: 14575) [Current Answer: D] ===
+Question: If the expression 64x² + kxy + 81y² is a perfect square, then k What are the possible values of ? यदि व्यंजक 64x2 + kxy + 81y2 एक पूण वग है, तो k के संभावित मान क्या हैं?
+A: ±72
+B: ±102
+C: 36
+D: ±144
+
+=== Q75 (ID: 14576) [Current Answer: A] ===
+Question: Two similar circles each of radius r are such that are located such that the distance between their centers is d. their straight The length of the common tangent line segment and their centers What is the ratio of distance? दो समान वृत्त जिनमें से प्रत्येक की त्रिज्या r है, इस प्रकार अवस्थित हैं कि उनके केंद्रों के बीच की दूरी d है। उनके सीधे उभयनिष्ठ स्पशरेखा खंड की लंबाई और उनके केंद्रों के बीच की दूरी का अनुपात क्या है?
+A: 1 : 1
+B: r : d
+C: √(d² - 4r²) : d / (D) 2d : r Ans: A ENGLISH LANGUAGE (BASIC KNOWLEDGE) Comprehension (Q. 76 - 80) Obesity, a complex and multifactorial health issue, has reached epidemic proportions globally. Characterized by an excessive accumulation of body fat, obesity is far more than a mere aesthetic concern—it significantly elevates the risk of numerous chronic diseases, including type 2 diabetes, cardiovascular disorders, and certain cancers. While sedentary lifestyles and high-calorie diets are commonly cited as primary causes, the reality is nuanced. Genetic predispositions, environmental factors, psychological conditions, and socio-economic status collectively influence an individual's propensity to gain weight. Moreover, modern urban environments often exacerbate the issue, offering limited access to nutritious food options while promoting a culture of convenience and inactivity. Children growing up in such settings are particularly vulnerable, setting the stage for lifelong health struggles. Although public health campaigns have emphasized diet and exercise, long- term success remains elusive for many individuals. This suggests that sustainable solutions must transcend personal responsibility and address systemic barriers. Medical interventions, such as pharmacotherapy and bariatric surgery, have offered relief for some, but they are not without risks and are often financially inaccessible. Ultimately, combating obesity requires a multifaceted strategy that integrates education, urban planning, policy reform, and community-based initiatives. Without a comprehensive and empathetic approach, the human and economic costs of the obesity epidemic will continue to escalate, undermining global health systems and shortening life expectancy for millions. 76. Identify the correct tense used in the sentence: "Medical interventions, such as pharmacotherapy and bariatric surgery, have offered relief for some, but they are not without risks." (A) Past Perfect (B) Present perfect (C) Simple Past
+D: 2d : r
+
+=== Q76 (ID: 14577) [Current Answer: B] ===
+Question: **Comprehension (Q. 76 - 80):** Obesity, a complex and multifactorial health issue, has reached epidemic proportions globally. Characterized by an excessive accumulation of body fat, obesity is far more than a mere aesthetic concern—it significantly elevates the risk of numerous chronic diseases, including type 2 diabetes, cardiovascular disorders, and certain cancers. While sedentary lifestyles and high-calorie diets are commonly cited as primary causes, the reality is nuanced. Genetic predispositions, environmental factors, psychological conditions, and socio-economic status collectively influence an individual's propensity to gain weight. Moreover, modern urban environments often exacerbate the issue, offering limited access to nutritious food options while promoting a culture of convenience and inactivity. Children growing up in such settings are particularly vulnerable, setting the stage for lifelong health struggles. Although public health campaigns have emphasized diet and exercise, long- term success remains elusive for many individuals. This suggests that sustainable solutions must transcend personal responsibility and address systemic barriers. Medical interventions, such as pharmacotherapy and bariatric surgery, have offered relief for some, but they are not without risks and are often financially inaccessible. Ultimately, combating obesity requires a multifaceted strategy that integrates education, urban planning, policy reform, and community-based initiatives. Without a comprehensive and empathetic approach, the human and economic costs of the obesity epidemic will continue to escalate, undermining global health systems and shortening life expectancy for millions.
+
+---
+
+Identify the correct tense used in the sentence: "Medical interventions, such as pharmacotherapy and bariatric surgery, have offered relief for some, but they are not without risks."
+A: Past Perfect
+B: Present perfect
+C: Simple Past
+D: Present Continuous
+
+=== Q77 (ID: 14578) [Current Answer: A] ===
+Question: **Comprehension (Q. 76 - 80):** Obesity, a complex and multifactorial health issue, has reached epidemic proportions globally. Characterized by an excessive accumulation of body fat, obesity is far more than a mere aesthetic concern—it significantly elevates the risk of numerous chronic diseases, including type 2 diabetes, cardiovascular disorders, and certain cancers. While sedentary lifestyles and high-calorie diets are commonly cited as primary causes, the reality is nuanced. Genetic predispositions, environmental factors, psychological conditions, and socio-economic status collectively influence an individual's propensity to gain weight. Moreover, modern urban environments often exacerbate the issue, offering limited access to nutritious food options while promoting a culture of convenience and inactivity. Children growing up in such settings are particularly vulnerable, setting the stage for lifelong health struggles. Although public health campaigns have emphasized diet and exercise, long- term success remains elusive for many individuals. This suggests that sustainable solutions must transcend personal responsibility and address systemic barriers. Medical interventions, such as pharmacotherapy and bariatric surgery, have offered relief for some, but they are not without risks and are often financially inaccessible. Ultimately, combating obesity requires a multifaceted strategy that integrates education, urban planning, policy reform, and community-based initiatives. Without a comprehensive and empathetic approach, the human and economic costs of the obesity epidemic will continue to escalate, undermining global health systems and shortening life expectancy for millions.
+
+---
+
+Which voice is used in the sentence: "Children growing up in such settings are particularly vulnerable."
+A: Active Voice
+B: Passive Voice
+C: Causative Voice
+D: Interrogative Voice
+
+=== Q78 (ID: 14579) [Current Answer: B] ===
+Question: **Comprehension (Q. 76 - 80):** Obesity, a complex and multifactorial health issue, has reached epidemic proportions globally. Characterized by an excessive accumulation of body fat, obesity is far more than a mere aesthetic concern—it significantly elevates the risk of numerous chronic diseases, including type 2 diabetes, cardiovascular disorders, and certain cancers. While sedentary lifestyles and high-calorie diets are commonly cited as primary causes, the reality is nuanced. Genetic predispositions, environmental factors, psychological conditions, and socio-economic status collectively influence an individual's propensity to gain weight. Moreover, modern urban environments often exacerbate the issue, offering limited access to nutritious food options while promoting a culture of convenience and inactivity. Children growing up in such settings are particularly vulnerable, setting the stage for lifelong health struggles. Although public health campaigns have emphasized diet and exercise, long- term success remains elusive for many individuals. This suggests that sustainable solutions must transcend personal responsibility and address systemic barriers. Medical interventions, such as pharmacotherapy and bariatric surgery, have offered relief for some, but they are not without risks and are often financially inaccessible. Ultimately, combating obesity requires a multifaceted strategy that integrates education, urban planning, policy reform, and community-based initiatives. Without a comprehensive and empathetic approach, the human and economic costs of the obesity epidemic will continue to escalate, undermining global health systems and shortening life expectancy for millions.
+
+---
+
+What is the closest meaning of "propensity" as used in the passage?
+A: Hesitation
+B: Tendency
+C: Resistance
+D: Disinterest
+
+=== Q79 (ID: 14580) [Current Answer: A] ===
+Question: **Comprehension (Q. 76 - 80):** Obesity, a complex and multifactorial health issue, has reached epidemic proportions globally. Characterized by an excessive accumulation of body fat, obesity is far more than a mere aesthetic concern—it significantly elevates the risk of numerous chronic diseases, including type 2 diabetes, cardiovascular disorders, and certain cancers. While sedentary lifestyles and high-calorie diets are commonly cited as primary causes, the reality is nuanced. Genetic predispositions, environmental factors, psychological conditions, and socio-economic status collectively influence an individual's propensity to gain weight. Moreover, modern urban environments often exacerbate the issue, offering limited access to nutritious food options while promoting a culture of convenience and inactivity. Children growing up in such settings are particularly vulnerable, setting the stage for lifelong health struggles. Although public health campaigns have emphasized diet and exercise, long- term success remains elusive for many individuals. This suggests that sustainable solutions must transcend personal responsibility and address systemic barriers. Medical interventions, such as pharmacotherapy and bariatric surgery, have offered relief for some, but they are not without risks and are often financially inaccessible. Ultimately, combating obesity requires a multifaceted strategy that integrates education, urban planning, policy reform, and community-based initiatives. Without a comprehensive and empathetic approach, the human and economic costs of the obesity epidemic will continue to escalate, undermining global health systems and shortening life expectancy for millions.
+
+---
+
+Choose the synonym of "exacerbate" from the options below.
+A: Worsen
+B: Alleviate
+C: Initiate
+D: Neutralize
+
+=== Q80 (ID: 14581) [Current Answer: B] ===
+Question: **Comprehension (Q. 76 - 80):** Obesity, a complex and multifactorial health issue, has reached epidemic proportions globally. Characterized by an excessive accumulation of body fat, obesity is far more than a mere aesthetic concern—it significantly elevates the risk of numerous chronic diseases, including type 2 diabetes, cardiovascular disorders, and certain cancers. While sedentary lifestyles and high-calorie diets are commonly cited as primary causes, the reality is nuanced. Genetic predispositions, environmental factors, psychological conditions, and socio-economic status collectively influence an individual's propensity to gain weight. Moreover, modern urban environments often exacerbate the issue, offering limited access to nutritious food options while promoting a culture of convenience and inactivity. Children growing up in such settings are particularly vulnerable, setting the stage for lifelong health struggles. Although public health campaigns have emphasized diet and exercise, long- term success remains elusive for many individuals. This suggests that sustainable solutions must transcend personal responsibility and address systemic barriers. Medical interventions, such as pharmacotherapy and bariatric surgery, have offered relief for some, but they are not without risks and are often financially inaccessible. Ultimately, combating obesity requires a multifaceted strategy that integrates education, urban planning, policy reform, and community-based initiatives. Without a comprehensive and empathetic approach, the human and economic costs of the obesity epidemic will continue to escalate, undermining global health systems and shortening life expectancy for millions.
+
+---
+
+According to the passage, why are children particularly vulnerable to obesity?
+A: Because children naturally prefer high- calorie foods.
+B: Because urban environments often promote unhealthy habits early in life.
+C: Because genetic factors are stronger in childhood than adulthood.
+D: Because schools are solely responsible for promoting nutrition.
+
+=== Q81 (ID: 14582) [Current Answer: B] ===
+Question: Complete the collocation by choosing a suitable word to fill in the blank. Despite the groundbreaking nature of their discovery, the research team decided ________ all the experimental data had been thoroughly verified and peer-reviewed.
+A: break even
+B: to keep it under wraps
+C: above my hand
+D: slipped my mind
+
+=== Q82 (ID: 14583) [Current Answer: C] ===
+Question: Rearrange the parts of the sentence in the correct order. In a landmark moment for space exploration, P. offering unprecedented insights into planetary formation and the conditions necessary for life, Q. raising the possibility of habitable worlds beyond our solar system, R. the James Webb Space Telescope detected the presence of complex organic molecules in the atmosphere of an exoplanet, S. while astronomers cautioned that further studies were required to confirm the findings
+A: QSRP
+B: QPRS
+C: RPQS
+D: SRPQ
+
+=== Q83 (ID: 14584) [Current Answer: A] ===
+Question: Fill in the blank with an appropriate phrasal verb. Despite repeated warnings, he ______ risky investments and lost everything.
+A: plowed into
+B: plowed over
+C: plowed away
+D: plowed through
+
+=== Q84 (ID: 14585) [Current Answer: C] ===
+Question: Rearrange the parts of the sentence in the correct order. The escalating climate crisis P. with rising sea levels and extreme weather patterns Q. has intensified global efforts towards mitigation, R. urging industries to adopt sustainable practices S. while reinforcing commitments to international climate accords
+A: QPRS
+B: SRPQ
+C: SPRQ
+D: RSPQ
+
+=== Q85 (ID: 14586) [Current Answer: A] ===
+Question: Choose the correct idiom for the word highlighted in bold. The parents are in high spirits as their son has got a decent job.
+A: Very happy
+B: Feeling dizzy
+C: Extremely angry
+D: In a confused state
+
+=== Q86 (ID: 14587) [Current Answer: C] ===
+Question: Identify the error in the sentence. The committee decided their decision.
+A: committee
+B: decided
+C: their
+D: decision
+
+=== Q87 (ID: 14588) [Current Answer: D] ===
+Question: Which of the following options is NOT one of the meanings of the homonym 'panel'?
+A: A group of people chosen to give advice or judgement
+B: A flat, usually rectangular piece forming part of a surface or structure
+C: A touchscreen interface or display area
+D: A legal fee charged per hearing
+
+=== Q88 (ID: 14589) [Current Answer: C] ===
+Question: Choose the correct idiom for the word highlighted in bold. "I don't believe Tara really hurt herself when she fell. I think she's crying crocodile tears just to get attention."
+A: Genuine sadness and emotional pain
+B: Tears caused by a physical injury
+C: Insincere or fake tears meant to fool others
+D: A loud and dramatic cry of joy
+
+=== Q89 (ID: 14590) [Current Answer: D] ===
+Question: Select the most appropriate synonym of the given word: MALEDICTION
+A: Prayer
+B: Hope
+C: Blessing
+D: Curse
+
+=== Q90 (ID: 14591) [Current Answer: A] ===
+Question: Select the most appropriate antonym of the given word. Prudent
+A: Reckless
+B: Wise
+C: Thoughtful
+D: Careful
+
+=== Q91 (ID: 14592) [Current Answer: C] ===
+Question: Select the most appropriate synonym of the given word: ABSTRUSE
+A: Evident
+B: Spartan
+C: Obscure
+D: Common
+
+=== Q92 (ID: 14593) [Current Answer: A] ===
+Question: Which is the correct spelling of a word meaning 'prevent from happening'?
+A: Avert
+B: Avart
+C: Avirrt
+D: Avurt
+
+=== Q93 (ID: 14594) [Current Answer: B] ===
+Question: Identify the misspelt word.
+A: Belligerent
+B: Beligerent
+C: Ineffable
+D: Inscrutable
+
+=== Q94 (ID: 14595) [Current Answer: D] ===
+Question: Choose the correct one-word substitution for: 'The act of stealing from shops'.
+A: Robbery
+B: Looting
+C: Burglary
+D: Shoplifting
+
+=== Q95 (ID: 14596) [Current Answer: C] ===
+Question: Change the following from active to passive: They have denied the allegations.
+A: The allegations are denied.
+B: The allegations were denied.
+C: The allegations have been denied.
+D: The allegations had been denied.
+
+=== Q96 (ID: 14597) [Current Answer: C] ===
+Question: Choose the most suitable option to replace the highlighted part of the sentence: My brother is good in cricket.
+A: good to cricket
+B: best in cricket
+C: is good at cricket
+D: well in cricket
+
+=== Q97 (ID: 14598) [Current Answer: D] ===
+Question: Choose the most suitable option to replace the highlighted part of the sentence: They have been working on this project since four months.
+A: from four months
+B: for past four months
+C: since last four
+D: for four months months
+
+=== Q98 (ID: 14599) [Current Answer: C] ===
+Question: Rearrange the following sentences to form a meaningful passage:
+
+1. Ancient Greek democracy laid the foundation for civic participation.
+
+2. Citizens debated laws in public assemblies.
+
+3. This model influenced later republics worldwide.
+
+4. However, rights were limited to free adult males.
+A: 1-4-2-3
+B: 2-1-3-4
+C: 1-2-4-3
+D: 4-1-2-3
+
+=== Q99 (ID: 14600) [Current Answer: A] ===
+Question: Rearrange the following sentences to form a coherent paragraph:
+
+1. This process ensures that the food we eat is safe and does not contain harmful bacteria or other contaminants.
+
+2. Food processing is a series of methods used to transform raw ingredients into consumable products.
+
+3. These methods can range from simple actions like cutting and grinding to more complex procedures such as pasteurization and fermentation.
+
+4. Furthermore, it also helps to preserve food, extend its shelf life, and enhance its nutritional value.
+A: 2, 3, 1, 4
+B: 1, 2, 3, 4
+C: 3, 1, 4, 2
+D: 4, 2, 1, 3
+
+=== Q100 (ID: 14601) [Current Answer: A] ===
+Question: Choose the most appropriate antonym of the underlined word. The new law had a pernicious effect on the local economy.
+A: Beneficial
+B: Harmful
+C: Damaging
+D: Deleterious
+

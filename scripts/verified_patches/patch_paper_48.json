@@ -1,0 +1,190 @@
+{
+  "paper_id": 48,
+  "title": "SSC CGL 2026 Tier-I (Held On 12 October 2026 Shift 1)",
+  "total_questions": 100,
+  "changes_count": 26,
+  "changes": [
+    {
+      "question_number": 4,
+      "id": 16605,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "18 men = 24 women, so 12 men + 16 women = 24 men; time required = (18 × 20) / 24 = 15 days."
+    },
+    {
+      "question_number": 11,
+      "id": 16612,
+      "old_answer": "C",
+      "new_answer": "A",
+      "reason": "Constructive teamwork requires approaching the colleague privately with empathy to understand any underlying challenges before taking formal action."
+    },
+    {
+      "question_number": 13,
+      "id": 16614,
+      "old_answer": "D",
+      "new_answer": "C",
+      "reason": "All stars are celestial objects, so any light-emitting star is a light-emitting celestial object and thus visible; no other conclusions follow logically."
+    },
+    {
+      "question_number": 23,
+      "id": 16624,
+      "old_answer": "C",
+      "new_answer": "D",
+      "reason": "The prohibition directly assumes artificial light negatively affects nocturnal behaviors of species; assuming it is the only threat is an unwarranted extreme."
+    },
+    {
+      "question_number": 28,
+      "id": 16629,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "The Quad was initially established in 2007 and was formally revitalized in November 2017 on the sidelines of the ASEAN summit in Manila."
+    },
+    {
+      "question_number": 29,
+      "id": 16630,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "A standard game of ten-pin bowling consists of exactly 10 frames per game."
+    },
+    {
+      "question_number": 30,
+      "id": 16631,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "The 65th National Shooting Championship Competitions (Rifle events) were hosted at the Vattiyoorkavu Shooting Range in Trivandrum, Kerala in 2022."
+    },
+    {
+      "question_number": 34,
+      "id": 16635,
+      "old_answer": "B",
+      "new_answer": "D",
+      "reason": "All three statements are correct: Krishna River drains into the Bay of Bengal at Hamsaladeevi, Prayagraj lies west of Varanasi, and Tons is the largest tributary of Yamuna."
+    },
+    {
+      "question_number": 38,
+      "id": 16639,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "Naharkatiya is a major petroleum producing field located in the Dibrugarh district of Assam."
+    },
+    {
+      "question_number": 39,
+      "id": 16640,
+      "old_answer": "D",
+      "new_answer": "C",
+      "reason": "National Waterway 3 (NW-3) runs along the West Coast Canal in Kerala from Kottapuram to Kollam (205 km)."
+    },
+    {
+      "question_number": 43,
+      "id": 16644,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Both statements are correct: Shekha Jheel is located in Aligarh, UP, and was declared India's 99th and UP's 12th Ramsar site."
+    },
+    {
+      "question_number": 45,
+      "id": 16646,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "During the 11th Five-Year Plan (2007–12), the Services sector achieved the highest average annual growth rate of nearly 10%."
+    },
+    {
+      "question_number": 46,
+      "id": 16647,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "The Raja Chelliah Tax Reforms Committee (1991) recommended lowering rates and making the tax structure broad-based, simple, and fair."
+    },
+    {
+      "question_number": 47,
+      "id": 16648,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "Under Census of India terminology, the houseless population consists of individuals who do not live in census houses, such as those living on pavements or roadsides."
+    },
+    {
+      "question_number": 48,
+      "id": 16649,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "The earliest Indian literature (Vedic texts / Shruti) was composed and transmitted purely through oral tradition for generations before being recorded in writing."
+    },
+    {
+      "question_number": 50,
+      "id": 16651,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "In the moving boundary method, the indicator electrolyte is chosen to maintain a sharp, visible boundary between the two solutions to measure the rate of ionic migration."
+    },
+    {
+      "question_number": 57,
+      "id": 16658,
+      "old_answer": "D",
+      "new_answer": "B",
+      "reason": "Let sides be 5x and 4x; exterior angle difference is 360°/(4x) − 360°/(5x) = 18°/x = 9°, so x = 2; the polygon with more sides has 5(2) = 10 sides."
+    },
+    {
+      "question_number": 62,
+      "id": 16663,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Since cosec θ − cot θ = p, (1−p²)/(1+p²) = cot θ / cosec θ = cos θ, hence (p²−1)/(p²+1) = −cos θ."
+    },
+    {
+      "question_number": 63,
+      "id": 16664,
+      "old_answer": "D",
+      "new_answer": "C",
+      "reason": "(√x − 1/√x)² = x + 1/x − 2; since x = 7 + 4√3 and 1/x = 7 − 4√3, x + 1/x = 14, so the expression evaluates to 14 − 2 = 12."
+    },
+    {
+      "question_number": 64,
+      "id": 16665,
+      "old_answer": "C",
+      "new_answer": "B",
+      "reason": "x = (2+√3)/(2−√3) = 7+4√3; thus x − 7 = 4√3, so x² − 14x + 49 = 48 => x² − 14x = −1, giving x² − 14x + 2 = 1."
+    },
+    {
+      "question_number": 67,
+      "id": 16668,
+      "old_answer": "C",
+      "new_answer": "D",
+      "reason": "Tax on first 10L is 1L; remaining 1.5L tax comes from 6L income, giving total income of 16L; tax percentage = (2.5L / 16L) × 100% = 15.625%."
+    },
+    {
+      "question_number": 69,
+      "id": 16670,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "At 5:00 PM the drive holds 21 units (capacity 30); with both scrubbers active net rate is −3 units/hr, requiring 7 hours, reaching empty at 12:00 AM."
+    },
+    {
+      "question_number": 73,
+      "id": 16674,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "(x²+1/x²)(x³+1/x³) = 34 × 198 = 6732; subtracting (x+1/x) = 6 yields x⁵ + 1/x⁵ = 6726."
+    },
+    {
+      "question_number": 74,
+      "id": 16675,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "After two 120L water replacements, salt is 153.6L; removing 60L leaves 138.24L salt, and adding 60L pure salt gives 198.24L / 600L = 33.04%."
+    },
+    {
+      "question_number": 89,
+      "id": 16690,
+      "old_answer": "D",
+      "new_answer": "B",
+      "reason": "The logical and grammatical sequence is RQSP: 'protects migratory species (R) that traverse national borders (Q) by creating safe corridors (S) through joint international efforts (P)'."
+    },
+    {
+      "question_number": 97,
+      "id": 16698,
+      "old_answer": "C",
+      "new_answer": "B",
+      "reason": "The passive sentence indicates that the principal was scolding her; therefore, the correct active voice is 'Someone heard the principal scolding her during the assembly.'"
+    }
+  ]
+}

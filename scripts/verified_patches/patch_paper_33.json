@@ -1,0 +1,127 @@
+{
+  "paper_id": 33,
+  "title": "SSC CGL 2026 Tier-I (Held On 6 October 2026 Shift 1)",
+  "total_questions": 100,
+  "changes_count": 17,
+  "changes": [
+    {
+      "question_number": 7,
+      "id": 15108,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "(Col1 × Col2 + 1) × Col3 = Col4: (2 × 7 + 1) × 3 = 15 × 3 = 45 (Option D)."
+    },
+    {
+      "question_number": 15,
+      "id": 15116,
+      "old_answer": "B",
+      "new_answer": "A",
+      "reason": "Only conclusions I and IV logically follow because not ignoring challenges does not preclude failure (Option A)."
+    },
+    {
+      "question_number": 22,
+      "id": 15123,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "A needle is used to stitch, while a scythe is an agricultural tool used to mow crops or grass (Option B)."
+    },
+    {
+      "question_number": 36,
+      "id": 15137,
+      "old_answer": "D",
+      "new_answer": "B",
+      "reason": "In shot put glide technique, the shot rests on the base of the fingers rather than the palm, so only statements 2 and 3 are correct (Option B)."
+    },
+    {
+      "question_number": 55,
+      "id": 15156,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Total capital is ₹48,000, leaving ₹36,000 for A and B in 3:2 ratio; B's capital = (2/5) × ₹36,000 = ₹14,400 (Option B)."
+    },
+    {
+      "question_number": 56,
+      "id": 15157,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "Under compound interest, 1 + r = 4950/4500 = 1.1; Principal P = 4500 / 1.1 = ₹4090.91 ≈ ₹4091 (Option D)."
+    },
+    {
+      "question_number": 57,
+      "id": 15158,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "Square perimeter is 56 cm; hexagon side is 28/3 cm, giving area = (3√3/2)(28/3)² = 392√3/3 cm² (Option D)."
+    },
+    {
+      "question_number": 62,
+      "id": 15163,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Per 100 CP, total SP = 0.25(160) + 0.50(128) + 0.25(80) = 124, yielding a 24% overall profit (Option B)."
+    },
+    {
+      "question_number": 63,
+      "id": 15164,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "From h - h/√3 = 20, height h = 10(3 + √3) ≈ 47.32 m (Option D)."
+    },
+    {
+      "question_number": 65,
+      "id": 15166,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Using (sin A + cos A)² + (sin A - cos A)² = 2, with sin A - cos A = 1/√2, sin A + cos A = √(3/2) = √6/2 (Option B)."
+    },
+    {
+      "question_number": 66,
+      "id": 15167,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Numerator = 5(4) - 3(3) + 16(1/4) = 15; Denominator = 2√3(√3) + 4(3/4) = 9; Value = 15/9 = 5/3 (Option B)."
+    },
+    {
+      "question_number": 79,
+      "id": 15180,
+      "old_answer": "C",
+      "new_answer": "B",
+      "reason": "'Backpedal' means to retreat from an earlier commitment or enthusiasm, fitting the sentence context (Option B)."
+    },
+    {
+      "question_number": 83,
+      "id": 15184,
+      "old_answer": "D",
+      "new_answer": "A",
+      "reason": "The antonym of 'zealous' (passionate/ardent) is 'apathetic' (indifferent/unenthusiastic) (Option A)."
+    },
+    {
+      "question_number": 87,
+      "id": 15188,
+      "old_answer": "B",
+      "new_answer": "C",
+      "reason": "'Quixotic' means excessively idealistic and impractical, whereas 'pragmatic' means practical (Option C)."
+    },
+    {
+      "question_number": 89,
+      "id": 15190,
+      "old_answer": "B",
+      "new_answer": "A",
+      "reason": "Standard adjective order (Opinion-Size-Color-Material) requires 'stunning long red silk scarf', so part 1 contains the error (Option A)."
+    },
+    {
+      "question_number": 93,
+      "id": 15194,
+      "old_answer": "B",
+      "new_answer": "A",
+      "reason": "In direct speech, negative correlative inversion with past perfect is used: 'Hardly had I begun the speech when the microphone failed' (Option A)."
+    },
+    {
+      "question_number": 100,
+      "id": 15201,
+      "old_answer": "C",
+      "new_answer": "B",
+      "reason": "The passage directly explains Dickens's realism by stating that even minor, ordinary details acquire an intense and lifelike vitality (Option B)."
+    }
+  ]
+}

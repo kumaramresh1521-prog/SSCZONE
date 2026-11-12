@@ -1,0 +1,211 @@
+{
+  "paper_id": 42,
+  "title": "SSC CGL 2026 Tier-I (Held On 9 October 2026 Shift 1)",
+  "total_questions": 100,
+  "changes_count": 29,
+  "changes": [
+    {
+      "question_number": 1,
+      "id": 16002,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Faces 17, 16, 14, and 12 are adjacent to 15, so 13 is opposite to 15."
+    },
+    {
+      "question_number": 2,
+      "id": 16003,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Unfolding the paper across horizontal and vertical axes symmetrically reflects the shapes as depicted in Option B."
+    },
+    {
+      "question_number": 5,
+      "id": 16006,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Following the rotation and inversion pattern from Figure A to B, Figure C correctly corresponds to Option B."
+    },
+    {
+      "question_number": 7,
+      "id": 16008,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "Option D correctly embeds the given target geometric figure."
+    },
+    {
+      "question_number": 34,
+      "id": 16035,
+      "old_answer": "C",
+      "new_answer": "A",
+      "reason": "The Hathigumpha Inscription of King Kharavela contains the earliest post-Mauryan reference to the Ashvamedha sacrifice."
+    },
+    {
+      "question_number": 42,
+      "id": 16043,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Senior IPS officer Praveen Kumar was assigned additional charge as Director General, BSF effective November 30, 2025."
+    },
+    {
+      "question_number": 44,
+      "id": 16045,
+      "old_answer": "B",
+      "new_answer": "D",
+      "reason": "Under Section 6 of Bharatiya Sakshya Adhiniyam, 2023, contemporaneous shouts and flight are relevant facts as res gestae."
+    },
+    {
+      "question_number": 46,
+      "id": 16047,
+      "old_answer": "C",
+      "new_answer": "B",
+      "reason": "Shekha Jheel Bird Sanctuary, added to the Ramsar list in April 2026, is located in Aligarh district, Uttar Pradesh."
+    },
+    {
+      "question_number": 47,
+      "id": 16048,
+      "old_answer": "B",
+      "new_answer": "C",
+      "reason": "Malthusian Theory states that population grows geometrically while food production grows arithmetically."
+    },
+    {
+      "question_number": 50,
+      "id": 16051,
+      "old_answer": "C",
+      "new_answer": "D",
+      "reason": "The World Happiness Report evaluates corruption primarily via surveyed public perceptions of corruption."
+    },
+    {
+      "question_number": 51,
+      "id": 16052,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Total number of phones in the frequency polygon = 5 + 12 + 20 + 18 + 10 + 5 = 70."
+    },
+    {
+      "question_number": 55,
+      "id": 16056,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Solving (240 - d)/30 + d/55 = 6 gives train distance d = 132 km."
+    },
+    {
+      "question_number": 61,
+      "id": 16062,
+      "old_answer": "C",
+      "new_answer": "A",
+      "reason": "Total CP = 9,000 + 11,000 = ₹20,000 and total SP = ₹19,800, giving an overall loss of ₹200."
+    },
+    {
+      "question_number": 63,
+      "id": 16064,
+      "old_answer": "C",
+      "new_answer": "B",
+      "reason": "Height of the non-parallel side triangle (13, 14, 15) is 11.2 cm; area of trapezium = (25 + 10)/2 × 11.2 = 196 cm²."
+    },
+    {
+      "question_number": 66,
+      "id": 16067,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Employees taking < 18 minutes = 20 + 28 + 15 = 63 out of 120 total, which is (63/120) × 100 = 52.5%."
+    },
+    {
+      "question_number": 67,
+      "id": 16068,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "23.25 MP = 32.5 CP gives MP/CP = 130/93 ≈ 1.3978, so the marked price is 39.78% above cost price."
+    },
+    {
+      "question_number": 68,
+      "id": 16069,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "CP = 120 / 0.2 = ₹600, SP = ₹720, and MP = 720 / 0.8 = ₹900."
+    },
+    {
+      "question_number": 70,
+      "id": 16071,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "The Continuum Hypothesis explicitly states that no set exists with cardinality strictly between |N| and |R|."
+    },
+    {
+      "question_number": 71,
+      "id": 16072,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "For 2³ × 3² × 5⁴ × 7 to be a square, prime factors with odd exponents require k = 2 × 7 = 14."
+    },
+    {
+      "question_number": 72,
+      "id": 16073,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Difference between Beta (12xs) and active Alpha (7.5xs) = 4.5xs = 180, so xs = 40; combined operational output = 39 × 40 = 1560."
+    },
+    {
+      "question_number": 73,
+      "id": 16074,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "(a - b)² = (a + b)² - 4ab = 19² - 4(90) = 361 - 360 = 1."
+    },
+    {
+      "question_number": 75,
+      "id": 16076,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Percentage attending at least one program = 88%; remaining 12% = 240, yielding total employees = 2,000."
+    },
+    {
+      "question_number": 79,
+      "id": 16080,
+      "old_answer": "C",
+      "new_answer": "B",
+      "reason": "The gerund subject 'engaging' is singular and grammatically takes the singular verb 'is'."
+    },
+    {
+      "question_number": 83,
+      "id": 16084,
+      "old_answer": "C",
+      "new_answer": "A",
+      "reason": "The phrasal verb 'drum up' correctly means to rally or generate support through effort."
+    },
+    {
+      "question_number": 84,
+      "id": 16085,
+      "old_answer": "C",
+      "new_answer": "D",
+      "reason": "The phrasal verb 'gave in' is appropriately used to mean handed in or submitted documents."
+    },
+    {
+      "question_number": 86,
+      "id": 16087,
+      "old_answer": "C",
+      "new_answer": "D",
+      "reason": "'Deposition' means legal testimony, sedimentary accretion, or removing an official, but not territorial legal classification."
+    },
+    {
+      "question_number": 88,
+      "id": 16089,
+      "old_answer": "C",
+      "new_answer": "B",
+      "reason": "The idiom 'cut someone up' means to severely criticize or deeply distress someone."
+    },
+    {
+      "question_number": 95,
+      "id": 16096,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "The correct phrasal verb is 'fill in' or 'fill out' the documents, so part (2) contains the error."
+    },
+    {
+      "question_number": 99,
+      "id": 16100,
+      "old_answer": "D",
+      "new_answer": "A",
+      "reason": "The coherent syntactic rearrangement is Q (Subject) -> R (Verb phrase) -> S (Manner) -> P (Complement): QRSP."
+    }
+  ]
+}

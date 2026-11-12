@@ -1,0 +1,989 @@
+================================================================================
+SSC CGL 2023 TIER-I (HELD ON 26 JULY 2023 SHIFT 4)
+Exam: SSC CGL | Year: 2023
+Total Questions: 100 | Duration: 60 Minutes
+Extracted from Official Answer Key via SSC ZONE (www.ssczone.in)
+================================================================================
+
+Q1. Select the Venn diagram that best illustrates the relationship between the following
+classes.
+Reptiles, Alligators, Animals
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p1_img1.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p1_img2.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p1_img3.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p1_img4.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q2. Which of the following letter-clusters will replace the question mark (?) in the given
+series?
+WTDH, URGK, SPJN, ?, OLPT
+A) QNMQ
+B) QNLP
+C) QMNP
+D) RNMQ
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q3. Select the set in which the numbers are NOT related in the same way as are the
+numbers of the following set.
+(NOTE : Operations should be performed on the whole numbers, without breaking
+down the numbers into their constituent digits. E.g. 13 – Operations on 13 such as
+adding /substracting/multiplying etc. to 13 can be performed. Breaking down 13 into 1
+and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(5, 13, 16)
+(4, 11, 14)
+A) (8, 13, 10)
+B) (12, 21, 18)
+C) (7, 17, 20)
+D) (9, 21, 26)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q4. If ‘+’ means ‘subtraction’, ‘−’ means ‘multiplication’, ‘÷’ means ‘addition’ and ‘×’ means
+‘division’, then what is the value of the following expression?
+26 − 13 + 144 × 18 ÷ 81
+A) 292
+B) 411
+C) 405
+D) 144
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q5. Select the set in which the numbers are related in the same way as are the numbers of
+the following sets.
+(NOTE : Operations should be performed on the whole numbers, without breaking
+down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as
+adding/Subtracting/multiplying etc. to 13 can be performed. Breaking down 13 into 1
+and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+(60, 15, 40)
+(100, 50, 20)
+A) (200, 40, 50)
+B) (12, 45, 89)
+C) (10, 5, 30)
+D) (40, 8, 10)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q6. ![Figure](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p3_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p3_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p3_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p3_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p3_img5.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q7. ‘A + B’ means ‘A is the brother of B’.
+‘A – B’ means ‘A is the mother of B’.
+‘A × B’ means ‘A is the husband of B’.
+‘A ÷ B’ means ‘A is the sister of B’.
+If P ÷ Q – R + S – K × L, then which of the following statements is correct?.
+A) Q is L’s mother
+B) R is K’s mother’s brother
+C) Q is S’s sister
+D) R is L’s husband’s brother
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q8. Select the number from among the given options that can replace the question mark
+(?) in the following series.
+2, 6, 9, 27, 30, 90, ?
+A) 85
+B) 88
+C) 90
+D) 93
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q9. The second number in the given number-pairs is obtained by performing certain
+mathematical operation(s) on the first number. The same operation(s) is/are followed
+in all the number-pairs except one. Find that odd number-pair.
+A) 15 : 34
+B) 1 : 6
+C) 7 : 18
+D) 18 : 42
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q10. ![Figure](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p5_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p5_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p5_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p5_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p5_img5.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q11. ‘Fair’ is related to ‘Righteous’ in the same way as ‘Cunning’ is related to ‘________’.
+A) Person
+B) Personality
+C) Deceit
+D) Character
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q12. Select the set in which the numbers are related in the same way as are the numbers of
+the given sets.
+(NOTE : Operations should be performed on the whole numbers, without breaking
+down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as
+adding /Subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1
+and 3 and then performing mathematical operations on 1 and 3 is NOT allowed)
+(15, 23, 31)
+(33, 41, 49)
+A) (21, 29, 43)
+B) (20, 28, 36)
+C) (20, 33, 28)
+D) (35, 43, 56)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q13. Select the set in which the numbers are related in the same way as are the numbers of
+the following sets.
+(NOTE : Operations should be performed on the whole numbers, without breaking
+down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as
+adding /Subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1
+and 3 and then performing mathematical operations on 1 and 3 is NOT allowed)
+(7, 65)
+(11, 145)
+A) (15, 140)
+B) (8, 82)
+C) (12, 168)
+D) (9, 70)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q14. Which of the following interchanges of signs would make the given equation correct?
+50 – 25 ÷ 5 × 3 + 6 = 59
+A) + and ×
+B) ÷ and +
+C) × and –
+D) – and +
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q15. ![Figure](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p7_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p7_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p7_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p7_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p7_img5.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q16. ![Figure](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p8_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p8_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p8_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p8_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p8_img5.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q17. Select the Venn diagram that best represents the relationship between the following
+classes.
+Fairies, Mythical creatures, Unicorns
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p8_img6.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p8_img7.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p8_img8.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p8_img9.png)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q18. Select the option that represents the correct order of the given words as they would
+appear in an English dictionary.
+1. Dither
+2. Defiance
+3. Dramatic
+4. Dedicated
+5. Differentiate
+6. Diabolical
+A) 3, 6, 4, 2, 5, 1
+B) 4, 2, 6, 5, 1, 3
+C) 4, 6, 2, 5, 3, 1
+D) 3, 2, 4, 6, 5, 1
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q19. ![Figure](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p9_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p9_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p9_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p9_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p9_img5.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q20. In a certain code language, ‘PEN’ is coded as 9 and ‘PAPER’ is coded as 25. How will
+‘CHAPTER’ be coded in the same language?
+A) 36
+B) 49
+C) 24
+D) 42
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q21. In a certain code language, 'APRIL' is coded as ‘CSTLN” and 'MARCH' is coded as
+“ODTFJ”. How will 'JUNE' be coded in that language?
+A) KWPH
+B) KXPH
+C) LXPH
+D) LWPI
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q22. Select the option that is related to the third word in the same way as the second word is related to the first word. (The words must be considered as meaningful English words and must not be related to each other based on the number of letters/number of consonants/vowels in the word.)
+Fountain pen : Waterman :: Telescope : ?
+A) Galileo
+B) Macmillan
+C) Robert Hooke
+D) Newton
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q23. Three of the following letter-clusters are alike in some manner and hence form a
+group. Which letter-cluster does not belong to that group?
+A) OPK
+B) ABY
+C) LMO
+D) IJQ
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q24. ![Figure](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p11_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p11_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p11_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p11_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p11_img5.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q25. Select the option that represents the letters that, when placed from left to right in the
+blanks below, will complete the letter series.
+L _ N N N _ _ M N N N N _ M N N N _
+A) L M M N L
+B) M N N L M
+C) M N L L N
+D) L M N N L
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q26. Who among the following Indian music directors, specially known as a leading
+drummer of India, was awarded the Padma Shri in 2019?
+A) Sivamani
+B) Nucleya
+C) Bappi Lahiri
+D) Naushad
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q27. The ‘Joenpa Legso’ is a welcome dance of _______.
+A) Afghanistan
+B) Bhutan
+C) Sri Lanka
+D) Bangladesh
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q28. Following an order of 16 July 2021, the Supreme Court of India introduced an
+electronic system named ____________, in November 2021, through which its crucial
+decisions can be communicated electronically to prison authorities and investigating
+agencies.
+A) INSTANT
+B) FASTER
+C) RAPID
+D) QUICKER
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q29. Select the correct statement from the given options.
+A) There is very little temperature difference between day and night in the coastal areas of Kerala.
+B) There is very little temperature difference between day and night in Rajasthan.
+C) There is extreme cold in southern India during winter season.
+D) There is plenty of rain observed in central India throughout the year.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q30. By what name did Allauddin Khilji build his capital?
+A) Khijrabad
+B) Siri
+C) Dinpanah
+D) Rajpithora
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q31. Narali Poornima marks the end of monsoon season in which Indian state?
+A) Bihar
+B) West Bengal
+C) Maharashtra
+D) Tamil Nadu
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q32. Dhalo is a folk dance of which Indian state?
+A) Tamil Nadu
+B) Uttar Pradesh
+C) Madhya Pradesh
+D) Goa
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q33. The policy of dual system of government of Bengal was the brainchild of which
+Governor-General?
+A) Lord Hastings
+B) Lord Clive
+C) Lord Lytton
+D) Lord Dalhousie
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q34. Identify the ODD one out.
+A) Modern agricultural technology
+B) White revolution
+C) Green revolution
+D) Seed-fertiliser-water technology
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q35. In which of the following years did the Indian Premier League begin?
+A) 2010
+B) 2007
+C) 2009
+D) 2008
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q36. The FIFA U-17 Women's World Cup 2022 was hosted by ______.
+A) Qatar
+B) Bangladesh
+C) India
+D) Indonesia
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q37. In which state is the Gorumara National Park located?
+A) Assam
+B) West Bengal
+C) Uttarakhand
+D) Bihar
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q38. Mrinalini Vikram Sarabhai, the Bharatanatyam legend, was also recognised for which
+of the following dance forms?
+A) Kathak
+B) Kathakali
+C) Kuchipudi
+D) Odissi
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q39. In which period is the first inscriptional example of the practice of Sati found?
+A) Maukhari
+B) Vardhana
+C) Satavahana
+D) Gupta
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q40. Choose the correct set of the names for the organic compounds in the given figure.
+![Figure](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p14_img1.png)
+A) a: Furan, b: Toluene, c: Pyridine
+B) a: Furan, b: Pyridine, c: Thiophene
+C) a: Furan, b: Thiophene, c: Aniline
+D) a: Anisole, b: Thiophene, c: Pyridine
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q41. In 1942, the British government sent the ________ mission to India.
+A) Cripps
+B) Linlithgow
+C) Cabinet
+D) Lansdowne
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q42. Which state ranked first among the 18 large and mid-sized states (with population of
+over one crore each) in justice delivery in India as per the second edition of the India
+Justice Report?
+A) Maharashtra
+B) Tamil Nadu
+C) West Bengal
+D) Karnataka
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q43. What is the duty of the Chief Minister, as mentioned under Article 167 of the Indian
+Constitution?
+A) Communication of all decisions of the Council of Ministers to the Governor.
+B) Appointment and removal of Council of the Ministers.
+C) Appointment of the Speaker of the Legislative Assembly.
+D) Appointment of Advocate General of the state in consultation with Attorney general.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q44. Which water-soluble pigment belonging to a phenolic group is present in
+pomegranate, eggplant, black carrots and red cabbage?
+A) Phycoerythrin
+B) Phycobilins
+C) Betalains
+D) Anthocyanins
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q45. ![Figure](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p15_img1.png)
+A) i-a, ii-b, iii-c, iv-d
+B) i-b, ii-c, iii-a, iv-d
+C) i-d, ii-c, iii-b, iv-a
+D) i-b, ii-a, iii-d, iv-c
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q46. Which Article of the Indian Constitution prohibits religious instructions in any state-
+funded educational institution?
+A) Article 28
+B) Article 29
+C) Article 30
+D) Article 27
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q47. Which of the followings is NOT an example of factor payment?
+A) Interest
+B) Wages
+C) Rent
+D) Pension
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q48. Which is the largest container port in India?
+A) Kandla Port
+B) Jawaharlal Nehru Port
+C) Kolkata Port
+D) Hazira Port
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q49. Which sportsperson was named by homegrown pharma major Lupin Ltd as a brand
+ambassador for its Shakti campaign in 2022?
+A) Rahul Dravid
+B) Mithali Raj
+C) Mary Kom
+D) PV Sindhu
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q50. Which physical unit is defined as the field intensity that produces one newton (N) of force per ampere (A) per metre of conductor?
+A) Candela
+B) Coulomb
+C) Tesla
+D) Pascal
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q51. In 1 km linear race, P beats Q by 120 metres or 30 sec. What is the time taken by P to
+cover the race?
+A) 220 sec
+B) 250 sec
+C) 235 sec
+D) 240 sec
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q52. Find the value of the given expression 14 ÷ 7 × 1 + 3 – [18 – {15 – (7 – 7 – 2)}]
+A) 5
+B) 6
+C) 4
+D) 3
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q53. ![Figure](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p17_img1.png)
+A) 29.5 cm
+B) 59 cm
+C) 108 cm
+D) 15 cm
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q54. ![Figure](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p18_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p18_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p18_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p18_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p18_img5.png)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q55. ![Figure](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p18_img6.png)
+A) 60
+B) 64
+C) 65
+D) 63
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q56. ![Figure](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p18_img7.png)
+A) 12
+B) 15
+C) 10
+D) 6
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q57. The sum of the cubes of two given natural numbers is 9728, while the sum of the two
+given numbers is 32. What is the product of the two given numbers?
+A) 160
+B) 320
+C) 240
+D) 200
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q58. The force (in pound-force) needed to keep a car from skidding on a curve varies
+directly with the weight of the car (in pounds) and the square of its speed (in miles per
+hour [mph]) and inversely with the radius (in feet) of the curve. Suppose 6125 pound-
+force is required to keep a 2750 pound car, travelling at a speed of 35 mph, from
+skidding on a curve of radius 550 feet. How much pound-force is then required to keep
+a 3600 pound car, travelling at a speed of 50 mph, from skidding on a curve of radius
+750 feet?
+A) 11960
+B) 12150
+C) 12240
+D) 12000
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q59. ![Figure](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p19_img1.png)
+A) 9
+B) 6
+C) 7
+D) 5
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q60. ![Figure](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p19_img2.png)
+A) 2
+B) 4
+C) 5
+D) 3
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q61. A sum of money at simple interest amounts to ₹1,200 in 3 years and to ₹1,350 in 4
+years. The sum is:
+A) ₹650
+B) ₹850
+C) ₹450
+D) ₹750
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q62. What smallest positive number should be subtracted from 2 and 3 so that 4 is the third
+proportion to them?
+A) 1
+B) 2
+C) 4
+D) 3
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q63. ![Figure](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p20_img1.png)
+A) 21 cm
+B) 18 cm
+C) 15 cm
+D) 11 cm
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q64. Ram bought a cell phone and paid 30% less than its original price. He sold it at 50%
+profit on the price he had paid. The percentage of profit earned by Ram on the original
+price was:
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p20_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p20_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p20_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p20_img5.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q65. In an examination of 7 papers of 100 marks each, there were 3 mathematics papers, 2
+English papers and 2 Hindi papers. D gets average marks of 45, 55 and 60 in
+mathematics, English and Hindi, respectively. What are the average marks per paper?
+A) 56.5
+B) 52.1
+C) 55.6
+D) 54.1
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q66. ![Figure](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p21_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p21_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p21_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p21_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p21_img5.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q67. If the volume of a cube is 4096 cm³, then what is the length of the side of the cube?
+A) 12 cm
+B) 18 cm
+C) 16 cm
+D) 14 cm
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q68. sin 600° cos 750° + sin 150° cos 240° = ?
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p21_img6.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p21_img7.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p21_img8.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p21_img9.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q69. Expand and simplify the algebraic expression:
+(x-5)² + (x+3)² + 4x
+A) 2(x² - 17)
+B) 2(x² + 17)
+C) (x² + 17)
+D) 2(x² - 5x + 17)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q70. 15 men complete a work in 10 days. 15 women complete the same work in 12 days. If
+all these men and women work together, then the number of days required to complete
+that work is:
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p22_img1.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p22_img2.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p22_img3.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p22_img4.png)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q71. Three successive discounts of 10% are available on the sale of a washing machine
+with a marked price of ₹55,000. Find the final selling price (in ₹) of the washing
+machine.
+A) 40095
+B) 44000
+C) 40000
+D) 42095
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q72. Ramesh alone can complete a work in 24 days. Ramesh and Somesh can complete it
+in 8 days. How long will Somesh alone take to complete the work?
+A) 10 days
+B) 15 days
+C) 14 days
+D) 12 days
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q73. Simplify the following expression.
+120 ÷ 15 of 4 + [ 11 × 4 ÷ 4 of { 4 × 2 - ( 8 - 11 ) } ]
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p23_img1.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p23_img2.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p23_img3.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p23_img4.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q74. A watch is purchased for ₹3,200 and sold for ₹2,700. Calculate the percentage loss up
+to two places of decimal.
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p23_img5.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p23_img6.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p23_img7.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-26-july-2023-shift-4_p23_img8.png)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q75. A circular running path is 1452 m in circumference. Two men start from the same point
+and walk in opposite direction at the speed of 7.5 km/h and 9 km/h, respectively. When
+will they meet for the first time?
+A) 5.17 min
+B) 5.28 min
+C) 5.71 min
+D) 5.82 min
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q76. Select the option that expresses the given sentence in passive voice.
+The teacher is explaining the lesson.
+A) The lesson explained the teacher.
+B) The teacher explained the lesson.
+C) The lesson is being explained by the teacher.
+D) The lesson was explained by the teacher.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q77. Some words in the following sentence have been underlined and given as options.
+Select the option that contains a spelling error.
+He is an <u>audacious entrepreneur</u> who started his own <u>business</u> with the <u>bear</u>
+minimum.
+A) business
+B) audacious
+C) entrepreneur
+D) bear
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q78. Sentences with spelling errors are given. Select the sentence with NO error.
+A) The body produces more saliva under fluorescent illumination which helps prevent cavities.
+B) The body produces more saliva under fluorescent illummination which helps prevent cavaties.
+C) The body produces more saliva under fluorescent illummination which helps prewent cavities.
+D) The body produces more saliva under fluorescent illumination which helps prewent cavaties.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q79. Select the most appropriate option to fill in the blank.
+The termites were just the tip of the _________, but the house was near collapsing in
+reality.
+A) mountain
+B) iceberg
+C) shoe
+D) heel
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q80. Parts of the following sentence have been underlined and given as options. Select the
+option that contains an error.
+I <u>love to</u> read <u>certain</u> stories from <u>a</u> Mahabharata.
+A) certain
+B) to
+C) love
+D) a
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q81. Select the most appropriate option to fill in the blank.
+_________ in population is a hindrance to a country’s growth.
+A) Contract
+B) Decrease
+C) Reduce
+D) Increase
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q82. Select the option that can be used as a one-word substitute for the given group of
+words.
+Someone who regards the world as his country
+A) Atheist
+B) Metropolitan
+C) Cosmopolitan
+D) Philanthropist
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q83. Select the option that can be used as a one-word substitute for the given group of
+words.
+Not informed about or aware of something
+A) Oblivious
+B) Uneducated
+C) Absent
+D) Inconscient
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q84. Select the most appropriate ANTONYM of the given word.
+Selective
+A) Stimulating
+B) Careless
+C) Doubtful
+D) Planned
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q85. Select the option that can be used as a one-word substitute for the given group of
+words.
+Burial ground consisting of graves.
+A) Courtyard
+B) Cemetery
+C) Sanctuary
+D) Auditorium
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q86. Select the most appropriate option that can substitute the underlined words in the
+given sentence.
+The heavy medications and strong drugs at the sanatorium will surely turn a patient
+completely <u>lifeless and unresponsive</u>.
+A) tombic
+B) cadaverous
+C) zonic
+D) wasted
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q87. Select the most appropriate meaning of the underlined idiom in the following
+sentence.
+I really don’t want <u>to pour cold water on</u> your theory but it cannot be applied to real life
+situations.
+A) To destroy someone’s written piece of work
+B) To take revenge on someone by destroying their lives’ work under the pretext of bad quality
+C) To be critical or doubtful of a plan that someone is excited about
+D) To give goosebumps by showing a prospect
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q88. Select the most appropriate synonym of the italicised word in the given sentence.
+In most organisations there are predators who take advantage over the meek ones.
+A) supporters
+B) philanthropists
+C) benefactors
+D) exploiters
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q89. Sentences of a paragraph are given below in jumbled order. Arrange the sentences in
+the correct order to form a meaningful and coherent paragraph.
+A. Nostalgia helps us maintain a positive psychological status when counteracting the
+negative impact of difficult situations.
+B. Nostalgia is a sentimental longing for one’s past.
+C. The adaptive functions of nostalgia are many, with one effect being pain relief.
+D. It is a self-conscious, perhaps bittersweet but predominantly positive social
+emotion.
+A) CDBA
+B) BDAC
+C) ABCD
+D) CADB
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q90. Select the option that expresses the given sentence in passive voice.
+They are hitting the ball.
+A) The ball has been hit by them.
+B) The ball is being hitten by them.
+C) The ball is hit by them.
+D) The ball is being hit by them.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q91. Select the most appropriate ANTONYM of the underlined word.
+The crowd gave an <u>exultant</u> cheer to the football team when they were exiting the
+airport.
+A) rejoicing
+B) disconsolate
+C) jubilant
+D) elated
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q92. Select the most appropriate option to fill in the blank.
+The group of travellers were wonderstruck by the ___________ of the coin.
+A) wait
+B) white
+C) weight
+D) wide
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q93. Select the most appropriate synonym of the given word.
+Fragile
+A) Delicate
+B) Firm
+C) Composed
+D) Fanatic
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q94. Identify the option that rectifies the error in the given sentence.
+In 2023, she will has been working in the company for three years.
+A) By 2023
+B) in company
+C) she will have been
+D) since three years
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q95. Select the option that can be used as a one-word substitute for the given group of
+words.
+Filled with fear or dread
+A) Prudent
+B) Tremulous
+C) Corpulent
+D) Hysterical
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q96. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+Can we see (1)________ the earth is a globe? Yes, we can, when we watch a ship that sails
+out to sea, if we watch closely, we see that the ship begins to (2)________. The bottom of the
+ship disappears first, and then the ship seems to sink lower and lower, (3)________ we can
+only see the top of the ship, and then we see nothing at all. What is hiding the ship from us? It
+is the earth. Stick a pin most of the way into an orange, and (4)________ turn the orange
+away from you. You will see the pin disappear, (5)________ a ship does on the earth.
+SubQuestion No : 21
+Select the most appropriate option to fill in blank no. 1.
+A) that
+B) clearly
+C) how
+D) where
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q97. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+Can we see (1)________ the earth is a globe? Yes, we can, when we watch a ship that sails
+out to sea, if we watch closely, we see that the ship begins to (2)________. The bottom of the
+ship disappears first, and then the ship seems to sink lower and lower, (3)________ we can
+only see the top of the ship, and then we see nothing at all. What is hiding the ship from us? It
+is the earth. Stick a pin most of the way into an orange, and (4)________ turn the orange
+away from you. You will see the pin disappear, (5)________ a ship does on the earth.
+SubQuestion No : 22
+Select the most appropriate option to fill in blank no. 2.
+A) being disappeared
+B) disappear
+C) have disappeared
+D) having disappeared
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q98. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+Can we see (1)________ the earth is a globe? Yes, we can, when we watch a ship that sails
+out to sea, if we watch closely, we see that the ship begins to (2)________. The bottom of the
+ship disappears first, and then the ship seems to sink lower and lower, (3)________ we can
+only see the top of the ship, and then we see nothing at all. What is hiding the ship from us? It
+is the earth. Stick a pin most of the way into an orange, and (4)________ turn the orange
+away from you. You will see the pin disappear, (5)________ a ship does on the earth.
+SubQuestion No : 23
+Select the most appropriate option to fill in blank no. 3.
+A) until
+B) after
+C) up to
+D) since
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q99. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+Can we see (1)________ the earth is a globe? Yes, we can, when we watch a ship that sails
+out to sea, if we watch closely, we see that the ship begins to (2)________. The bottom of the
+ship disappears first, and then the ship seems to sink lower and lower, (3)________ we can
+only see the top of the ship, and then we see nothing at all. What is hiding the ship from us? It
+is the earth. Stick a pin most of the way into an orange, and (4)________ turn the orange
+away from you. You will see the pin disappear, (5)________ a ship does on the earth.
+SubQuestion No : 24
+Select the most appropriate option to fill in blank no. 4.
+A) accidently
+B) reluctantly
+C) accordingly
+D) slowly
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q100. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+Can we see (1)________ the earth is a globe? Yes, we can, when we watch a ship that sails
+out to sea, if we watch closely, we see that the ship begins to (2)________. The bottom of the
+ship disappears first, and then the ship seems to sink lower and lower, (3)________ we can
+only see the top of the ship, and then we see nothing at all. What is hiding the ship from us? It
+is the earth. Stick a pin most of the way into an orange, and (4)________ turn the orange
+away from you. You will see the pin disappear, (5)________ a ship does on the earth.
+SubQuestion No : 25
+Select the most appropriate option to fill in blank no. 5.
+A) the same
+B) alike
+C) unlike
+D) just as
+Correct Answer: Option D
+--------------------------------------------------------------------------------

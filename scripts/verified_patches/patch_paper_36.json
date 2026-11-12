@@ -1,0 +1,218 @@
+{
+  "paper_id": 36,
+  "title": "SSC CGL 2026 Tier-I (Held On 7 October 2026 Shift 1)",
+  "total_questions": 100,
+  "changes_count": 30,
+  "changes": [
+    {
+      "question_number": 2,
+      "id": 15403,
+      "old_answer": "C",
+      "new_answer": "D",
+      "reason": "Bhopal is 15th July, Nagpur is 14th, Raipur is 16th, and Jabalpur is 1 day before Raipur (15th July)."
+    },
+    {
+      "question_number": 7,
+      "id": 15408,
+      "old_answer": "D",
+      "new_answer": "B",
+      "reason": "All numbers in B (11, 13, 17, 19) are prime numbers, whereas 9 in D is composite."
+    },
+    {
+      "question_number": 21,
+      "id": 15422,
+      "old_answer": "D",
+      "new_answer": "A",
+      "reason": "Internet being an integral part of life implies life is difficult to imagine without it; debate necessity is unsupported."
+    },
+    {
+      "question_number": 24,
+      "id": 15425,
+      "old_answer": "B",
+      "new_answer": "A",
+      "reason": "From All pens are laptops and All laptops are computers, only All pens are computers follows."
+    },
+    {
+      "question_number": 26,
+      "id": 15427,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Babur established the Timurid (Mughal) dynasty in India; paper currency was not introduced by him."
+    },
+    {
+      "question_number": 27,
+      "id": 15428,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Neora Valley National Park is located in Kalimpong district, West Bengal."
+    },
+    {
+      "question_number": 28,
+      "id": 15429,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Inductance is measured in Henry; magnetic flux density is in Tesla, flux in Weber, charge in Coulombs."
+    },
+    {
+      "question_number": 29,
+      "id": 15430,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Centrifugal force resulting from Earth rotation creates the equatorial bulge."
+    },
+    {
+      "question_number": 30,
+      "id": 15431,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Solar flares release X-rays/EUV radiation that cause ionospheric electron density fluctuations."
+    },
+    {
+      "question_number": 31,
+      "id": 15432,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "The bauxite-rich Patlands of Lohardaga are located in Jharkhand."
+    },
+    {
+      "question_number": 33,
+      "id": 15434,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Dr. T. V. Somanathan was appointed Cabinet Secretary of India in August 2024."
+    },
+    {
+      "question_number": 34,
+      "id": 15435,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Attuvela Mahotsavam is the famous annual water carnival celebrated at Elankavu Bhagavathy Temple, Kerala."
+    },
+    {
+      "question_number": 35,
+      "id": 15436,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Modern academic consensus attributes the decline of the Indus civilization to a combination of climatic, environmental, and socio-economic factors."
+    },
+    {
+      "question_number": 36,
+      "id": 15437,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "PM-PRANAM scheme aims to promote balanced and sustainable fertilizer use and reduce chemical fertilizers."
+    },
+    {
+      "question_number": 37,
+      "id": 15438,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "PM-KISAN provides income support of Rs. 6,000 per year in three equal installments."
+    },
+    {
+      "question_number": 38,
+      "id": 15439,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Nandini Sidha Reddy won the Sahitya Akademi Award for his Telugu poetry collection Animesha."
+    },
+    {
+      "question_number": 40,
+      "id": 15441,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Under BNS (and IPC s. 88), acts done in good faith for a patient benefit with consent do not constitute an offence."
+    },
+    {
+      "question_number": 41,
+      "id": 15442,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Jaya Varma Sinha became the first woman Chairperson and CEO of the Railway Board in September 2023."
+    },
+    {
+      "question_number": 42,
+      "id": 15443,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Dr. P. K. Mishra was re-appointed / continued as Principal Secretary to the Prime Minister in June 2024."
+    },
+    {
+      "question_number": 44,
+      "id": 15445,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Alcohol and hazardous chemicals remained under compulsory licensing after the 1991 economic reforms."
+    },
+    {
+      "question_number": 46,
+      "id": 15447,
+      "old_answer": "D",
+      "new_answer": "C",
+      "reason": "Adult literacy was replaced by schooling years because it failed to adequately capture differences in educational attainment."
+    },
+    {
+      "question_number": 47,
+      "id": 15448,
+      "old_answer": "B",
+      "new_answer": "A",
+      "reason": "The Business Reforms Action Plan (BRAP) is coordinated by DPIIT (Department for Promotion of Industry and Internal Trade)."
+    },
+    {
+      "question_number": 48,
+      "id": 15449,
+      "old_answer": "B",
+      "new_answer": "D",
+      "reason": "The Central Inspection System under BRAP introduces synchronized, risk-based inspections."
+    },
+    {
+      "question_number": 50,
+      "id": 15451,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Economic scarcity arises because unlimited human wants exceed limited available resources."
+    },
+    {
+      "question_number": 67,
+      "id": 15468,
+      "old_answer": "C",
+      "new_answer": "B",
+      "reason": "TCT length = sqrt(d^2 - (r1 + r2)^2) = sqrt(17^2 - 14^2) = sqrt(93) cm."
+    },
+    {
+      "question_number": 68,
+      "id": 15469,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "The given angles are 60 deg and 45 deg, so the third angle is 180 deg - 105 deg = 75 deg."
+    },
+    {
+      "question_number": 71,
+      "id": 15472,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "a^2 + b^2 = 20^2 - 2(84) = 232; a^4 + b^4 = 232^2 - 2(84^2) = 53824 - 14112 = 39712."
+    },
+    {
+      "question_number": 94,
+      "id": 15495,
+      "old_answer": "B",
+      "new_answer": "A",
+      "reason": "The noun evasion collocated with responsibility takes the preposition of (evasion of responsibility)."
+    },
+    {
+      "question_number": 99,
+      "id": 15500,
+      "old_answer": "C",
+      "new_answer": "D",
+      "reason": "Logical HR workflow starts with induction (1), background records (3), training (2), and placement (4)."
+    },
+    {
+      "question_number": 100,
+      "id": 15501,
+      "old_answer": "C",
+      "new_answer": "A",
+      "reason": "Train in Option A is used as a verb (to exercise), which is a homonym of the noun train (railway vehicle)."
+    }
+  ]
+}

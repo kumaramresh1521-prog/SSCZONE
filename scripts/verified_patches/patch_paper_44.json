@@ -1,0 +1,253 @@
+{
+  "paper_id": 44,
+  "title": "SSC CGL 2026 Tier-I (Held On 9 October 2026 Shift 3)",
+  "total_questions": 100,
+  "changes_count": 35,
+  "changes": [
+    {
+      "question_number": 2,
+      "id": 16203,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Opposite faces in the net are H-E, M-V, and W-L, matching net C."
+    },
+    {
+      "question_number": 4,
+      "id": 16205,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "Bali, Sumatra, and Java are Indonesian islands, whereas Madagascar is an island nation off East Africa."
+    },
+    {
+      "question_number": 5,
+      "id": 16206,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Neither conclusion I nor II definitely follows from the statement as they are merely hypotheses."
+    },
+    {
+      "question_number": 12,
+      "id": 16213,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "ADF : WUZ follows the reverse alphabetical cipher permutation (middle, last, first), mapping PQR to JIK."
+    },
+    {
+      "question_number": 16,
+      "id": 16217,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Standard counting geometric figure has 44 total triangles."
+    },
+    {
+      "question_number": 17,
+      "id": 16218,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Professional medical nursing protocol mandates documenting discrepancy, informing the doctor, and monitoring the patient."
+    },
+    {
+      "question_number": 18,
+      "id": 16219,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Non-verbal analogy: cyclic position shift and orientation change yields Answer Figure 1, which corresponds to Option B."
+    },
+    {
+      "question_number": 19,
+      "id": 16220,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "The central intersection with four arms and crossed diagonal lines is embedded in Answer Figure 3 (Option D)."
+    },
+    {
+      "question_number": 20,
+      "id": 16221,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Figure (d) contains two disconnected parallel diagonals instead of a single cross-quadrant triangle (Option B)."
+    },
+    {
+      "question_number": 22,
+      "id": 16223,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Positions and multiplicities swap: single square top-left and double arc bottom-right gives Answer Figure 2 (Option B)."
+    },
+    {
+      "question_number": 24,
+      "id": 16225,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Figure X is embedded in the center and diagonal lines of Answer Figure 2 (Option B)."
+    },
+    {
+      "question_number": 25,
+      "id": 16226,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "First letters +2 (J->L), second letters +2 (K->M), third letters -1 (V->U) gives LMU (Option B)."
+    },
+    {
+      "question_number": 36,
+      "id": 16237,
+      "old_answer": "B",
+      "new_answer": "A",
+      "reason": "Putul Samaroh is an annual puppet festival organized by the Department of Culture, Government of Madhya Pradesh."
+    },
+    {
+      "question_number": 37,
+      "id": 16238,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Suwa (Parrot) dance in Chhattisgarh is traditionally performed by women around Diwali to invoke and please the Goddess of Wealth (Lakshmi)."
+    },
+    {
+      "question_number": 39,
+      "id": 16240,
+      "old_answer": "D",
+      "new_answer": "B",
+      "reason": "SEBI launched Saa₹thi 2.0 to empower investors with objective knowledge about the securities market."
+    },
+    {
+      "question_number": 40,
+      "id": 16241,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Bhattkhadaki is a Gujarati poetry collection by Yogesh Vaidya that won the Sahitya Akademi Award 2025."
+    },
+    {
+      "question_number": 43,
+      "id": 16244,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Former Chief Justice of India Jagdish Singh Khehar was awarded the Padma Vibhushan in 2025 in Public Affairs."
+    },
+    {
+      "question_number": 44,
+      "id": 16245,
+      "old_answer": "D",
+      "new_answer": "B",
+      "reason": "According to Census of India 2011, primary sector workforce distribution is Male: 16,54,47,075 and Female: 9,75,75,398."
+    },
+    {
+      "question_number": 45,
+      "id": 16246,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Both statements are correct: Indo-Islamic architecture extensively used thick rubble masonry walls, and Mandu exemplifies the Provincial style."
+    },
+    {
+      "question_number": 46,
+      "id": 16247,
+      "old_answer": "D",
+      "new_answer": "C",
+      "reason": "ISRO provided its heritage I-3K spacecraft bus as the satellite platform for the NISAR mission."
+    },
+    {
+      "question_number": 47,
+      "id": 16248,
+      "old_answer": "B",
+      "new_answer": "D",
+      "reason": "The Narasimham Committee was appointed in August 1991 to recommend reforms in India's banking and financial system."
+    },
+    {
+      "question_number": 55,
+      "id": 16256,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "In the frequency polygon, Section B has its highest frequency peak (20 students) in the 61-80 score class interval."
+    },
+    {
+      "question_number": 57,
+      "id": 16258,
+      "old_answer": "B",
+      "new_answer": "A",
+      "reason": "Bus has the highest diesel-to-petrol consumption ratio (90 L / 10 L = 9:1)."
+    },
+    {
+      "question_number": 58,
+      "id": 16259,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Grocery budget is 20% of $4,000 = $800 (Option B)."
+    },
+    {
+      "question_number": 59,
+      "id": 16260,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "The highest bar in the salary histogram corresponds to the 40-50 thousand dollar range (550 employees)."
+    },
+    {
+      "question_number": 63,
+      "id": 16264,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Let tens digit be 2x, units x. 21x - 12x = 9x = 18 => x = 2, so the original number is 42."
+    },
+    {
+      "question_number": 64,
+      "id": 16265,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "By angle bisector theorem, ZS/SW = ZR/RW = 10/14 = 5/7; SW = (7/12) * 12 = 7 cm."
+    },
+    {
+      "question_number": 66,
+      "id": 16267,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Points on the major and minor arcs form a cyclic quadrilateral with the chord endpoints, so subtended angles sum to 180°."
+    },
+    {
+      "question_number": 67,
+      "id": 16268,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Trapezium area: 0.5 * (2x + 3x) * 19 = 475 => x = 10; longer parallel side = 3x = 30 cm."
+    },
+    {
+      "question_number": 69,
+      "id": 16270,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "In △DEF, ∠D = 180° - (85° + 40°) = 55° = ∠A; AB=DE, AC=DF, so triangles are congruent by SAS property."
+    },
+    {
+      "question_number": 70,
+      "id": 16271,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "For two congruent circles passing through each other's centers, common chord length is R√3 = 12√3 cm."
+    },
+    {
+      "question_number": 71,
+      "id": 16272,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "Total CP = 25*240 + 15*300 = ₹10,500 for 40 kg (₹262.5/kg); SP at 25% profit = 262.5 * 1.25 = ₹328.125 per kg."
+    },
+    {
+      "question_number": 73,
+      "id": 16274,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "New population of D = 18 * 1.15 = 20.7; other regions = 82 * 1.05 = 86.1; percentage share = 20.7 / 106.8 ≈ 19.4%."
+    },
+    {
+      "question_number": 75,
+      "id": 16276,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "P * (7/6) * (7/8) * (8/7) = P * (7/6) = 2,80,000 => P = 2,40,000."
+    },
+    {
+      "question_number": 99,
+      "id": 16300,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "In indirect speech for simple past (met), the verb shifts to past perfect (had met): She said that she had met him the day before."
+    }
+  ]
+}

@@ -1,6 +1,7 @@
-import React, { memo } from "react";
+import React, { memo, useEffect, useRef } from "react";
 import katex from "katex";
 import "katex/dist/katex.min.css";
+import { resolveAssetUrl } from "@/lib/utils";
 
 // High-speed In-Memory Cache for KaTeX and Math Formatting (Prevents repeated parsing across renders)
 const mathRenderCache = new Map<string, string>();
@@ -29,6 +30,30 @@ function isTeXInlineMath(value: string) {
   if (/\\[A-Za-z]+/.test(trimmed)) return true;
   if (/\b(?:where|then|means|if|and|or|is|are|the|of|to|for)\b/i.test(trimmed)) return false;
   return /^[0-9A-Za-z\s+\-*/=^()[\]{}.,<>|:;!?]+$/.test(trimmed);
+}
+
+function renderImageTag(src: string, alt: string): string {
+  const cleanAlt = (alt || "Figure").trim() || "Figure";
+  const resolvedSrc = escapeHtml(resolveAssetUrl(src));
+  if (/^inline\b/i.test(cleanAlt)) {
+    return (
+      '<span class="inline-block max-w-full overflow-x-auto align-middle">' +
+      `<img src="${resolvedSrc}" alt="${cleanAlt}" data-img-role="inline" loading="eager" decoding="async" class="inline-block max-w-full w-auto h-auto rounded bg-white px-1 py-0.5 align-middle" style="max-height: 76px; max-width: min(100%, 660px);" />` +
+      "</span>"
+    );
+  }
+  if (/^option\b/i.test(cleanAlt)) {
+    return (
+      '<span class="inline-block max-w-full align-middle">' +
+      `<img src="${resolvedSrc}" alt="${cleanAlt}" data-img-role="option" loading="eager" decoding="async" class="inline-block max-w-full w-auto h-auto rounded-md bg-white p-0.5 align-middle" style="max-height: 84px; max-width: min(100%, 460px);" />` +
+      "</span>"
+    );
+  }
+  return (
+    '<span class="my-1.5 block max-w-full overflow-x-auto align-middle">' +
+    `<img src="${resolvedSrc}" alt="${cleanAlt}" data-img-role="figure" loading="eager" decoding="async" class="block max-w-full w-auto h-auto rounded-lg border border-slate-200/80 bg-white p-1" style="max-height: 360px; max-width: min(100%, 980px);" />` +
+    "</span>"
+  );
 }
 
 // Convert common pasted math notation into safe, readable HTML. Full TeX remains supported
@@ -96,15 +121,19 @@ function formatRawMathText(plainText: string): string {
   // 9. Convert image tags/markdown: ![alt](url) or [Image: url] or raw image URLs (supports both relative /path and http(s)://)
   formatted = formatted.replace(
     /!\[(.*?)\]\(([^\s)]+)\)/gi,
-    '<span class="my-2 inline-block max-w-full"><img src="$2" alt="$1" loading="eager" decoding="async" class="max-w-full rounded-xl border border-slate-200 bg-white shadow-2xs" style="max-height: 280px; object-fit: contain;" /></span>'
+    (_match, alt, src) => renderImageTag(src, alt)
   );
   formatted = formatted.replace(
     /\[Image:\s*([^\s\]]+)\]/gi,
-    '<span class="my-2 inline-block max-w-full"><img src="$1" alt="Figure" loading="eager" decoding="async" class="max-w-full rounded-xl border border-slate-200 bg-white shadow-2xs" style="max-height: 280px; object-fit: contain;" /></span>'
+    (_match, src) => renderImageTag(src, "Figure")
   );
   formatted = formatted.replace(
     /&lt;img\s+[^&]*?src=(?:&quot;|&#039;|")([^"'\s&]+)(?:&quot;|&#039;|")[^&]*?&gt;/gi,
-    '<span class="my-2 inline-block max-w-full"><img src="$1" alt="Figure" loading="eager" decoding="async" class="max-w-full rounded-xl border border-slate-200 bg-white shadow-2xs" style="max-height: 280px; object-fit: contain;" /></span>'
+    (_match, src) => renderImageTag(src, "Figure")
+  );
+  formatted = formatted.replace(
+    /&lt;u&gt;([\s\S]*?)&lt;\/u&gt;/gi,
+    '<u class="underline decoration-2 underline-offset-4 font-semibold">$1</u>'
   );
 
   return formatted;
@@ -126,6 +155,7 @@ function renderMath(text: string): string {
     !text.includes("![") &&
     !text.includes("[Image:") &&
     !text.includes("<img") &&
+    !text.includes("<u>") &&
     !text.includes("\n") &&
     !/[⁰¹²³⁴⁵⁶⁷⁸⁹−–—]/.test(text)
   ) {
@@ -190,9 +220,45 @@ function renderMath(text: string): string {
 }
 
 const MathText = memo(function MathText({ text, className = "" }: { text?: string | null; className?: string }) {
+  const containerRef = useRef<HTMLSpanElement | null>(null);
+  const html = text ? renderMath(text) : "";
+
+  useEffect(() => {
+    const root = containerRef.current;
+    if (!root) return;
+    const imgs = root.querySelectorAll<HTMLImageElement>("img[data-img-role]");
+    const adjust = (img: HTMLImageElement) => {
+      const nw = img.naturalWidth;
+      const nh = img.naturalHeight;
+      if (!nw || !nh) return;
+      const role = img.getAttribute("data-img-role");
+      // Fit wide single-line sentence/equation PNGs inside container when legible (>=12px tall),
+      // and only fall back to horizontal scroll on narrow screens that would crush text below 12px.
+      if ((role === "figure" || role === "inline") && nh <= 48 && nw > 400) {
+        const availW = img.parentElement?.clientWidth || root.clientWidth || 0;
+        const projectedH = availW > 0 && nw > availW ? (nh * availW) / nw : nh;
+        if (projectedH < 12) {
+          img.style.maxWidth = "none";
+        }
+      }
+    };
+    const handlers: Array<[HTMLImageElement, () => void]> = [];
+    imgs.forEach((img) => {
+      if (img.complete) {
+        adjust(img);
+      } else {
+        const onLoad = () => adjust(img);
+        img.addEventListener("load", onLoad, { once: true });
+        handlers.push([img, onLoad]);
+      }
+    });
+    return () => {
+      handlers.forEach(([img, fn]) => img.removeEventListener("load", fn));
+    };
+  }, [html]);
+
   if (!text) return null;
-  const html = renderMath(text);
-  return <span className={className} dangerouslySetInnerHTML={{ __html: html }} />;
+  return <span ref={containerRef} className={className} dangerouslySetInnerHTML={{ __html: html }} />;
 });
 
 export default MathText;

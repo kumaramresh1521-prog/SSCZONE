@@ -1,0 +1,169 @@
+{
+  "paper_id": 26,
+  "title": "SSC CGL 2026 Tier-I (Held On 30 September 2026 Shift 3)",
+  "total_questions": 100,
+  "changes_count": 23,
+  "changes": [
+    {
+      "question_number": 3,
+      "id": 14404,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Odd-positioned letters are shifted by +1 and even-positioned letters remain unchanged, giving NAOAHENEOT (Option B)."
+    },
+    {
+      "question_number": 4,
+      "id": 14405,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Total number of triangles in a 4-level triangular grid is n(n+2)(2n+1)/8 = 4(6)(9)/8 = 27 (Option C)."
+    },
+    {
+      "question_number": 10,
+      "id": 14411,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Pattern is √(first number) + second number, so √121 + 4 = 11 + 4 = 15 (Option C)."
+    },
+    {
+      "question_number": 28,
+      "id": 14429,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "A place observing 6:00 a.m. when IST (82°30' E) is at midnight is 6 hours (+90°) East of IST, at 82°30' + 90° = 172°30' E (Option B)."
+    },
+    {
+      "question_number": 31,
+      "id": 14432,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "The SI unit of magnetic flux is Weber (Wb), whereas Farad is the unit of electrical capacitance (Option D)."
+    },
+    {
+      "question_number": 32,
+      "id": 14433,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "The intersection of the Equator (0° latitude) and the Prime Meridian (0° longitude) is located in the Gulf of Guinea in the Atlantic Ocean (Option B)."
+    },
+    {
+      "question_number": 36,
+      "id": 14437,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Both pairs are correctly matched: Ustad Ali Akbar Khan belonged to the Maihar Gharana and Pandit Bhimsen Joshi to the Kirana Gharana (Option C)."
+    },
+    {
+      "question_number": 40,
+      "id": 14441,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Under the law of private defence (BNS/IPC), the right of private defence of the body extends to causing death in assaults with intention of kidnapping or abducting (Option C)."
+    },
+    {
+      "question_number": 48,
+      "id": 14449,
+      "old_answer": "C",
+      "new_answer": "B",
+      "reason": "The Tenth Five-Year Plan (2002–2007) uniquely introduced eleven core monitorable targets alongside GDP growth targets (Option B)."
+    },
+    {
+      "question_number": 54,
+      "id": 14455,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "Solving (20-x)/(28-x) = (25-x)/(35-x) gives x = 0; the mean proportional between (0+2) and (3(0)+1) is √(2 × 1) = √2 (Option D)."
+    },
+    {
+      "question_number": 66,
+      "id": 14467,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Total frequency N = 200; the median 100th unit falls in the 80–100 sq m class (cumulative frequency 74 to 134) (Option C)."
+    },
+    {
+      "question_number": 67,
+      "id": 14468,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "Perpendicular distances to the common chord from the centers are √(25² - 15²) = 20 cm and √(17² - 15²) = 8 cm; total distance = 20 + 8 = 28 cm (Option D)."
+    },
+    {
+      "question_number": 68,
+      "id": 14469,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "After shifting 10 students from 170-180 to 150-160, class 160–170 retains the highest frequency of 30, remaining the modal class (Option B)."
+    },
+    {
+      "question_number": 69,
+      "id": 14470,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "Solving the replacement equation (8/15)(V-5) / [(7/15)(V-5) + 5] = 2/3 yields total volume V = 20 L, so initial liquid P was (8/15) × 20 = 32/3 liters (Option D)."
+    },
+    {
+      "question_number": 70,
+      "id": 14471,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "New cylinder volume is π(3r)²(h/3) = 3πr²h, giving a ratio of new volume to previous volume of 3 : 1 (Option C)."
+    },
+    {
+      "question_number": 71,
+      "id": 14472,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "With marked price 25% above CP and a 10% discount, net profit percentage is 25 - 10 - (25 × 10)/100 = 12.5% (Option C)."
+    },
+    {
+      "question_number": 74,
+      "id": 14475,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "The average of the first 20 positive multiples of 7 is (7 + 140) / 2 = 73.5 (Option C)."
+    },
+    {
+      "question_number": 75,
+      "id": 14476,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "In 2025, EV production was 112 out of 232 total vehicles, which is 48.28%, exceeding 35% (Option C)."
+    },
+    {
+      "question_number": 91,
+      "id": 14492,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "In indirect speech, the reporting past tense verb 'shouted' backshifts to past perfect 'had shouted', and 'had better' correctly takes bare infinitive 'move' (Option D)."
+    },
+    {
+      "question_number": 96,
+      "id": 14497,
+      "old_answer": "C",
+      "new_answer": "A",
+      "reason": "The idiomatic English collocation for balancing competing priorities against each other is 'weigh [something] against [something]' (Option A)."
+    },
+    {
+      "question_number": 97,
+      "id": 14498,
+      "old_answer": "B",
+      "new_answer": "C",
+      "reason": "A contrastive transition is required between improved efficiency and the operational challenges of intermittency, making 'nevertheless' the correct adverb (Option C)."
+    },
+    {
+      "question_number": 98,
+      "id": 14499,
+      "old_answer": "D",
+      "new_answer": "B",
+      "reason": "Renewable energy projects 'yield' (produce or generate) broader economic benefits over decades (Option B)."
+    },
+    {
+      "question_number": 99,
+      "id": 14500,
+      "old_answer": "D",
+      "new_answer": "A",
+      "reason": "The phrase 'rather than pursuing isolated initiatives' contrasts with combining resources, expressed by the standard idiom 'pool their efforts' (Option A)."
+    }
+  ]
+}

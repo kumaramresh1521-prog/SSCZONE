@@ -1,0 +1,1065 @@
+================================================================================
+SSC CGL 2023 TIER-I (HELD ON 25 JULY 2023 SHIFT 2)
+Exam: SSC CGL | Year: 2023
+Total Questions: 100 | Duration: 60 Minutes
+Extracted from Official Answer Key via SSC ZONE (www.ssczone.in)
+================================================================================
+
+Q1. Select the option that is related to the fourth term in the same way as the first term is
+related to the second term and the fifth term is related to the sixth term.
+169 : 14 :: ? : 16 :: 289 : 18
+A) 205
+B) 230
+C) 225
+D) 125
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q2. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p2_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p2_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p2_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p2_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p2_img5.png)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q3. Select the correct mirror image of the given figure when the mirror is placed at AB.
+![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p3_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p3_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p3_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p3_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p3_img5.png)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q4. Pointing to a woman, Suman (a woman) said, "She is the grandmother of my father-in-law's wife's son." How is that woman related to Suman?
+A) Mother
+B) Husband's grandmother
+C) Daughter
+D) Mother-in-law
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q5. Select the option that is related to the fifth letter-cluster in the same way as the second
+letter-cluster is related to the first letter-cluster and the fourth letter-cluster is related
+to the third letter-cluster.
+MAP: NZK ::HOZ:SLA :: WQK:?
+A) DJP
+B) DIP
+C) CIP
+D) CJP
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q6. Select the option that represents the correct order of the given words as they would
+appear in an English dictionary.
+1. Cartoon
+2. Carrier
+3. Carrying
+4. Carousel
+5. Carnival
+6. Carriage
+A) 5, 4, 2, 6, 3, 1
+B) 5, 4, 6, 3, 2, 1
+C) 5, 1, 4, 6, 2, 3
+D) 5, 4, 6, 2, 3, 1
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q7. Study the given pattern carefully and select the number that can replace the question
+mark (?) in it.
+(6, 1, 18)
+(5, 4, 60)
+(6, 2, ?)
+(NOTE: Operations should be performed on the whole numbers, without breaking
+down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as
+adding/subtracting/multiplying etc. to 13 can be performed. Breaking down 13 into 1
+and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+A) 36
+B) 32
+C) 40
+D) 24
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q8. Select the correct combination of mathematical signs to sequentially replace the *
+signs and to balance the given equation.
+18 * 3 * 12 * 9 * 3 * 111
+A) ÷, +, ×, –, =
+B) ×, +, ÷, –, =
+C) ×, –, ×, +, =
+D) ×, +, ×, –, =
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q9. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p5_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p5_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p5_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p5_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p5_img5.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q10. The second number in the given number-pairs is obtained by performing certain
+mathematical operation(s) on the first number. The same operation(s) is/are followed
+in all the number-pairs except one. Find that odd number-pair.
+A) 2 : 9
+B) 6 : 21
+C) 10 : 33
+D) 8 : 29
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q11. Three statements are given followed by three conclusions numbered I, II and III.
+Assuming the statements to be true, even if they seem to be at variance with
+commonly known facts, decide which of the conclusions logically follow(s) from the
+statements.
+Statements:
+Some teachers are scientists.
+All scientists are doctors.
+All doctors are engineers.
+Conclusions:
+I. Some doctors are teachers.
+II. Some engineers are teachers.
+III. Some doctors are scientists.
+A) Only conclusions II and III follow
+B) Only conclusions I and III follow
+C) All conclusions follow
+D) Only conclusions I and II follow
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q12. Which of the following letter-clusters will replace the question mark (?) in the given
+series to make it logically complete?
+ADZ, GJF, MPL, SVR, ?
+A) XYB
+B) YBX
+C) XBY
+D) YXB
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q13. In a certain code language, if ‘RPD’ is written as ‘43’ and ‘FCL’ is written as ‘60’, how
+will ‘QTS’ be written in the same code language?
+A) 35
+B) 28
+C) 25
+D) 40
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q14. Looking at the family picture, Smriti said, “She is my father’s father-in-law’s wife’s
+son’s only sister.’ How is the person in the photo related to Smriti’s father?
+A) Mother
+B) Sister-in-law
+C) Wife
+D) Daughter
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q15. Three statements are given followed by three conclusions numbered I, II and III.
+Assuming the statements to be true, even if they seem to be at variance with
+commonly known facts, decide which of the conclusions logically follow(s) from the
+statements.
+Statements:
+Some colours are rainbows.
+Some paints are rainbows.
+All rainbows are drawings.
+Conclusions:
+I. Some drawings are colours.
+II. All paints are drawings.
+III. Some drawings are rainbows.
+A) Only conclusions I and II follow
+B) Only conclusions I and III follow
+C) Only conclusions II and III follow
+D) All conclusions follow
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q16. Select the set in which the numbers are related in the same way as are the numbers of
+the following sets.
+(NOTE: Operations should be performed on the whole numbers, without breaking
+down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as
+adding/Subtracting/multiplying etc. to 13 can be performed. Breaking down 13 into 1
+and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+(2, 7, 27)
+(6, 15, 63)
+A) (3, 21, 24)
+B) (9, 8, 50)
+C) (12, 4, 40)
+D) (8, 8, 48)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q17. Select the correct mirror image of the given figure when the mirror is placed at AB.
+![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p8_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p8_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p8_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p8_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p8_img5.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q18. Select the option that represents the letters that, when placed from left to right in the
+blanks below, will complete the letter series.
+C _ R C _ R _ A R _ A _ C A _
+A) R A C A C A
+B) R A C A A C
+C) A C R A C R
+D) A A C C R R
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q19. Which of the following numbers will replace the question mark (?) in the given series?
+3, 8, 15, 26, 39, ?
+A) 61
+B) 49
+C) 52
+D) 56
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q20. Select the figure that will come in place of the question mark (?) in the following figure
+series.
+![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p9_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p9_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p9_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p9_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p9_img5.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q21. Select the option that is related to the fifth number in the same way as the second
+number is related to the first number and the fourth number is related to the third
+number.
+98 : 7 :: 162 : 9 :: 242 : ?
+A) 11
+B) 12
+C) 14
+D) 13
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q22. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p10_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p10_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p10_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p10_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p10_img5.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q23. Select the option that represents the letters that, when sequentially placed from left to
+right in the blanks below, will complete the letter series.
+_ _ MSDRTM _ _ R _ _ SD _ TM _ D
+A) RSTDTMRS
+B) RTSDMTRS
+C) RTSDMTSR
+D) RTSDTMRS
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q24. In a certain code language, ‘DISCIPLINE’ is written as ‘DKSCKPLKNG’, ‘REVOLUTION’
+is written as ‘RGVQLWTKQN’. How will ‘UNIVERSITY’ be written in that language?
+A) WNKGVRSKTY
+B) WNKVGSRKTY
+C) WNKVGRSKTY
+D) WNKVGRKSTY
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q25. If ‘<’ means ‘−’, ‘!’ means ‘×’, ‘>’ means ‘+’ and ‘$’ means ‘÷’, then what is the value of
+the following expression?
+183 > 39 $ 13 ! 6 < 26
+A) 175
+B) 160
+C) 193
+D) 181
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q26. Guru Shashadhar Acharya was awarded the Padma Shri in 2020 for his contribution to which of the following fields?
+A) Instrumental music
+B) Classical dance
+C) Folk dance
+D) Hindustani classical vocal
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q27. Which of the following musicians is associated with the musical instrument Santoor?
+A) Allauddin Khan
+B) Annapurna Devi
+C) Pandit Shiv Kumar Sharma
+D) Vilayat Khan
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q28. What is the atomicity of Chlorine?
+A) Tetra-atomic
+B) Diatomic
+C) Poly-atomic
+D) Monoatomic
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q29. How many elected members are there in the Legislative Assembly of Telangana till
+December 2022?
+A) 124
+B) 120
+C) 121
+D) 119
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q30. In 2022, the Ministry of Health and Family Welfare announced a National Suicide Prevention Strategy to achieve a reduction in suicide mortality by ______ per cent by 2030.
+A) 25
+B) 20
+C) 15
+D) 10
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q31. Raut Nacha is famous in which of the following states?
+A) Punjab
+B) Gujarat
+C) Assam
+D) Chhattisgarh
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q32. Who takes the salute of the different regiments of the armed forces during the march-past on the occasion of Republic Day as the Commander-in-Chief of the Indian Armed Forces?
+A) Defence Minister of India
+B) Prime Minister of India
+C) Home Minister of India
+D) President of India
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q33. Famous poet and dramatist Rajashekhara was the court poet in the court of which of the following Pratihara kings?
+A) Rambhadra
+B) Rajapala
+C) Devapala
+D) Mahendrapala
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q34. In which year did an English scientist named Michael Faraday discover benzene in illuminating gas?
+A) 1820
+B) 1827
+C) 1822
+D) 1825
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q35. In the Later Vedic period, which of the following varnas mainly performed functions such as agriculture, animal husbandry and trade?
+A) Kshatriya
+B) Brahmin
+C) Shudra
+D) Vaishya
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q36. Identify the meaning of continentality.
+A) Very hot during winters and very cold during summers
+B) Very hot during summers and very cold during winters
+C) Very hot during summers and lots of rain
+D) Very cold during winters and not hot during summers
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q37. Where and when were the first Khelo India University Games held?
+A) Maharashtra, 2019
+B) Odisha, 2020
+C) Punjab, 2019
+D) Kerala, 2020
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q38. (As of November 2021) How many cities have been identified for ring roads under Phase-I of the 'Bharatmala Pariyojana' to decongest traffic in various cities across India?
+A) 33
+B) 41
+C) 21
+D) 28
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q39. Which species of mangrove tree found in the Sundarbans of India and Bangladesh is scientifically known as 'Heritiera fomes'?
+A) Kachnar
+B) Sundari
+C) Kusum
+D) Arjun
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q40. Who introduced the Zamindari Settlement as a measure of land revenue
+administration?
+A) Lord Lytton
+B) Lord Curzon
+C) Lord Cornwallis
+D) Lord Wellesley
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q41. Who among the following is India's second Grandmaster after Viswanathan Anand?
+A) P. Harikrishna
+B) Dibyendu Barua
+C) Abhijit Kunte
+D) Sasikiran Krishnan
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q42. The Prime Minister's Employment Generation Programme (PMEGP) scheme was launched by which Ministry of the Government of India?
+A) Ministry of Micro, Small and Medium Enterprises
+B) Ministry of Finance
+C) Ministry of Rural Development
+D) Ministry of Housing and Urban Affairs
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q43. The Indian Constitution originally consisted of ______ Articles.
+A) 395
+B) 385
+C) 365
+D) 375
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q44. Which cells, also called neurilemma cells, are the main glial cells in the PNS and play
+an essential role in the survival and functions of neurons?
+A) Bipolar cells
+B) Ganglion cells
+C) Schwann cells
+D) Photoreceptor cells
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q45. According to dietary guidelines recommended by doctors, the RDA for cholesterol intake in healthy adults and children above four years of age is ______ mg/day.
+A) 600
+B) 500
+C) 400
+D) 300
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q46. On 21 November 2022, who assumed charge as the new Election Commissioner (EC)
+of India?
+A) Manoj Kumar
+B) Rajiv Kumar
+C) Arun Goel
+D) Anup Chandra Pandey
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q47. Which of the following is NOT one of the characteristics of the new agricultural
+strategy?
+A) Use of chemical fertilisers
+B) Use of hybrid seeds
+C) Extensive irrigation
+D) Use of organic manures
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q48. Who among the following is a Nobel Prize winner, also known as the father of microfinance systems?
+A) Amartya Sen
+B) Raghuram Rajan
+C) Muhammad Yunus
+D) Sandra Rotman
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q49. In ________, Lord Curzon, the Viceroy of India, announced the partition of Bengal.
+A) 1907
+B) 1906
+C) 1911
+D) 1905
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q50. Who among the following is appointed as new Attorney General for India in September
+2022?
+A) R Venkataramani
+B) KK Venugopal
+C) Fali Sam Nariman
+D) Harish Salve
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q51. Find the value of tan (−1125°).
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p16_img1.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p16_img2.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p16_img3.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p16_img4.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q52. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p16_img5.png)
+A) 60
+B) 30
+C) 50
+D) 40
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q53. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p17_img1.png)
+A) −1
+B) 1
+C) ∞
+D) 0
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q54. The angles of a triangle are in the ratio 2 : 3 : 7. What is the measure of the largest
+angle of the triangle?
+A) 100°
+B) 45°
+C) 90°
+D) 105°
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q55. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p17_img2.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p17_img3.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p17_img4.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p17_img5.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p17_img6.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q56. A can finish a work in 60 days. He works at it for 15 days and then B alone finishes the
+remaining work in 48 days. In how much time can A and B working together finish the
+work?
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p17_img7.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p17_img8.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p17_img9.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p17_img10.png)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q57. The value of which of the following is different from the other options?
+A) sin 90°
+B) sec 60°
+C) cos 0°
+D) tan 45°
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q58. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p18_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p18_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p18_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p18_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p18_img5.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q59. Ramesh, on his way to his hometown, travelled the first 250 km at a speed of 75km/h
+and the next 250 km at a speed of 85 km/h. Find the average speed for the whole
+journey(correct to 2 decimal places).
+A) 80.55km/h
+B) 79.69km/h
+C) 79.20km/h
+D) 80.69km/h
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q60. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p19_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p19_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p19_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p19_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p19_img5.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q61. Which of the following numbers is divisible by 8?
+A) 18718
+B) 18716
+C) 18712
+D) 18714
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q62. The three sides of two triangles are 4, 5 and 6 cm. Select the INCORRECT statement.
+A) The angle opposite to the greater side in those triangles will be greater.
+B) The area of the two triangles will be different.
+C) The two triangles are congruent.
+D) The two triangles are scalene triangles.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q63. If RP and RQ are two tangents to a circle with centre O such that ∠POQ = 120°, where
+P and Q are the points on the circle and R is a point outside the circle then ∠PRQ is
+equal to:
+A) 90°
+B) 75°
+C) 60°
+D) 45°
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q64. The length, breadth and height of a hall are 10 m, 20 m and 15m respectively. Find the
+cost of whitewashing the walls of the inside of the hall and ceiling at the rate of
+₹10.20/m²
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p20_img1.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p20_img2.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p20_img3.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p20_img4.png)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q65. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p20_img5.png)
+A) 1
+B) -1
+C) 5
+D) -5
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q66. The marked price of an article is ₹50,000. Of three shopkeepers, the first one allows
+two successive discounts of 25% and 15%.The second one allows two successive
+discounts 20% and 20%. The third shopkeeper allows two successive discounts of
+30% and 10%. From which shopkeeper does the customer get more profit?
+A) First
+B) Same for all the shopkeepers
+C) Third
+D) Second
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q67. Mona purchased two sets of jewellery for ₹4,000 each. She sold these sets of jewellery,
+gaining 8% on one and loosing 6% on the other. Calculate her total loss or gain in this
+whole transaction.
+A) ₹120 gain
+B) ₹80 gain
+C) ₹80 loss
+D) ₹120 loss
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q68. A boat covers a distance of 12 km in 1 hour upstream and in 45 minutes downstream.
+Find the speed of the boat and the stream (in km/h).
+A) 16; 4
+B) 16; 2
+C) 14; 2
+D) 12; 4
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q69. Which of the following numbers is divisible by 99?
+A) 31548
+B) 60687
+C) 44775
+D) 84456
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q70. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p21_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p21_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p21_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p21_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p21_img5.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q71. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p22_img1.png)
+A) 17
+B) 19
+C) 22
+D) 24
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q72. A family income is ₹35,000 in a month. The family spends the income on various
+expenditures, viz., food, health, education, entertainment, and rent. After incurring all
+the expenditures, 8% is saved every month. The expenditure on health is 50% more
+than that of food. While food is three times of the expenditure on entertainment, the
+expenditure on health is half of the expenditure on education. The expenditure on rent
+is one-third of the combined expenditure on food, health and education. How much
+expenditure (in ₹) is incurred on education?
+A) 12600
+B) 8400
+C) 13200
+D) 7700
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q73. Which of the following is the lowest ratio?
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p22_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p22_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p22_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p22_img5.png)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q74. ![Figure](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p23_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p23_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p23_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p23_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-25-july-2023-shift-2_p23_img5.png)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q75. ₹8,500 becomes ₹11,050 in 6 years at a certain rate of simple interest. If the rate
+becomes 1.8 times of itself, the amount of the same principal in 5 years will be:
+A) ₹15,625
+B) ₹14,350
+C) ₹13,550
+D) ₹12,325
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q76. Select the most appropriate synonym of the given word.
+Gentle
+A) Fierce
+B) Ferocious
+C) Cruel
+D) Sympathetic
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q77. Select the most appropriate option that can substitute the underlined segment in the
+given sentence.
+My friend Meera and her mother <u>is visiting</u> me this weekend.
+A) have visiting
+B) am visiting
+C) was visiting
+D) are visiting
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q78. Sentences of a paragraph are given below in jumbled order. Arrange the sentences in
+the correct order to form a meaningful and coherent paragraph.
+A. Several times I have visited the narrow, dirty streets where the poor live, and I grow
+hot and indignant to think that good people should be content to live in fine houses
+and become strong and beautiful, while others are condemned to live in hideous,
+sunless tenements and grow ugly, withered and cringing.
+B. Dear little creatures, they crouch in my heart and haunt me with a constant sense of
+pain.
+C. The children who crowd these grimy alleys, half-clad and underfed, shrink away
+from your outstretched hand as if from a blow.
+D. In the country one sees only nature’s fair works, and one’s soul is not saddened by
+the cruel struggle for mere existence that goes on in the crowded city.
+A) BACD
+B) ADBC
+C) CABD
+D) DACB
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q79. Identify from the given options the word OPPOSITE in meaning to the underlined word
+according to its meaning in the following sentence.
+The confectioner <u>dusted</u> a fine layer of sugar on the muffin.
+A) scattered
+B) sprinkled
+C) powdered
+D) cleaned
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q80. The following sentence has been divided into parts. One of them may contain an error.
+Select the part that contains the error from the given options. If you don’t find any
+error, mark ‘No error’ as your answer.
+Anti-party activities / improved my relations /with an opposition.
+A) Anti-party activities
+B) No error
+C) Improved my relations
+D) With an opposition
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q81. Select the most appropriate ANTONYM of the given word.
+Compulsory
+A) Obligatory
+B) Mandatory
+C) Voluntary
+D) Subsidiary
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q82. Select the most appropriate meaning of the given idiom.
+At cross purposes
+A) Developing and amplifying ideas given
+B) Finalising ideas and plans
+C) Blindly following each other’s ideas
+D) Disagreeing with each other’s ideas
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q83. Select the most appropriate synonym of the underlined word.
+The Department of Educational Policy is <u>committed</u> to the study of educational policy,
+analyse, and evaluate educational programmes, to identify trends, understand
+outcomes and guide policy and practice, towards finding solutions to current
+problems in educational governance and management.
+A) affiliated
+B) dedicated
+C) inclined
+D) apathetic
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q84. Select the option that can be used as a one-word substitute for the given group of
+words.
+Never changing and therefore boring.
+A) Outdated
+B) Impractical
+C) Idealistic
+D) Monotonous
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q85. Select the option that expresses the given sentence in active voice.
+The painting was not made by you.
+A) You should not make the painting.
+B) You does not make the painting.
+C) You did not make the painting.
+D) You do not make the painting.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q86. The following sentence has been divided into parts. One of them may contain an error.
+Select the part that contains the error from the given options. If you don’t find any
+error, mark ‘No error’ as your answer.
+All the horses, except one, always / behaved in a rough manner when / Robert come to
+clean the stable.
+A) behaved in a rough manner when
+B) Robert come to clean the stable
+C) No error
+D) All the horses, except one, always
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q87. Select the most appropriate option to substitute the underlined segment in the given
+sentence. If no substitution is required, select ‘No substitution’.
+I’ve got <u>a lot of homeworks</u> this weekend.
+A) a lot of homework
+B) No substitution
+C) a lots of homework
+D) much homework
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q88. Select the option that expresses the given sentence in active voice.
+He was praised by his father.
+A) His father has praised him.
+B) His father praises him.
+C) His father had praised him.
+D) His father praised him.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q89. Select the most appropriate ANTONYM of the underlined word.
+He was riding his bike on a <u>bumpy</u> surface.
+A) Jerky
+B) Uneven
+C) Choppy
+D) Steady
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q90. Select the correct idiom that can substitute the italicised group of words in the given
+sentence.
+You must not participate in the marathon this year without any training. It is an unreal
+hope on your part!
+A) carrying coal to new castle
+B) a pipe dream
+C) a will-o’-the-wisp
+D) to lose one’s temper
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q91. Sentences of a paragraph are given below in jumbled order. Arrange the sentences in
+the correct order to form a meaningful and coherent paragraph.
+A. Many species of bamboo flower once in several years and then die.
+B. The stem itself is hollow and is connected to a network of rhizomes, which spreads
+out beneath the surface of the soil.
+C. Roots grow out of this network of rhizomes and help the plants to absorb and
+distribute food and water from the soil.
+D. The bamboo is a variety of grass, with a woody, many-jointed stem.
+A) ADCB
+B) DBCA
+C) BCAD
+D) CADC
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q92. Select the most appropriate option that can substitute the underlined segment in the
+given sentence.
+The commanders <u>entered</u> by <u>force into</u> terrorists’ camp.
+A) broke down
+B) broke with
+C) broke into
+D) broke off
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q93. Sentences with spelling errors are given. Select the sentence with NO error.
+A) Making healtcare more affordable is something I would do as Prescident.
+B) Making healtcare more afordable is something I would do as President.
+C) Making healthcare more affordable is something I would do as President.
+D) Making healthcare more afordable is something I would do as Prescident.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q94. Select the INCORRECTLY spelt word.
+A) Receipt
+B) Technically
+C) Harrasment
+D) Vaccinate
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q95. Select the most appropriate option to fill in the blank.
+Yesterday, I ate only a __________ of apples for my dinner.
+A) pier
+B) pear
+C) pare
+D) pair
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q96. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+Since the 17th century, manure has been utilised in agriculture. In those days, they didn't
+know how plants got the (1)___________ they needed. They would toss wood debris, fish
+remains and other side-effects in an unfilled land to dispose of them. However, it wasn't long
+before people began to notice that the grass, bushes and shrubs there were beginning to (2)
+___________. They came to the conclusion that the soil supplied the plants with the nutrients
+they needed, and that organic remains could aid in this process. Because manure is (3)
+___________from animals and plants, it not only provides a wide range of plant nutrients but
+also improves the structure of the soil. Farmers gradually began using fertilisers as well
+because they understood that if their farmlands were treated in a similar manner, the growth
+of their crops would also improve. It bonds the soil particles together to form soil crumbs,
+which are necessary for cultivating soil. Additionally, the addition of manure to the soil aids in
+the prevention of soil erosion and the loss of plant nutrients during precipitation. Commercial
+fertilisers, in contrast to manure, are inorganic (4) ___________ that do not alter the structure
+of the soil. Their function is to provide the sprouting plants with additional nutrients. A farmer
+ought to know when and how to apply a particular kind of fertiliser. When the plants require a
+particular nutrient the most, use it. If fertilisers haven't been added correctly to the soil, their
+roots won't be able to take in a lot. Rainwater could wash away these fertilisers, or they could
+end up (5) ___________ the plants instead, costing the farmer money.
+SubQuestion No : 21
+Select the most appropriate option to fill in blank no.1.
+A) maintenance
+B) nutrients
+C) ingredients
+D) items
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q97. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+Since the 17th century, manure has been utilised in agriculture. In those days, they didn't
+know how plants got the (1)___________ they needed. They would toss wood debris, fish
+remains and other side-effects in an unfilled land to dispose of them. However, it wasn't long
+before people began to notice that the grass, bushes and shrubs there were beginning to (2)
+___________. They came to the conclusion that the soil supplied the plants with the nutrients
+they needed, and that organic remains could aid in this process. Because manure is (3)
+___________from animals and plants, it not only provides a wide range of plant nutrients but
+also improves the structure of the soil. Farmers gradually began using fertilisers as well
+because they understood that if their farmlands were treated in a similar manner, the growth
+of their crops would also improve. It bonds the soil particles together to form soil crumbs,
+which are necessary for cultivating soil. Additionally, the addition of manure to the soil aids in
+the prevention of soil erosion and the loss of plant nutrients during precipitation. Commercial
+fertilisers, in contrast to manure, are inorganic (4) ___________ that do not alter the structure
+of the soil. Their function is to provide the sprouting plants with additional nutrients. A farmer
+ought to know when and how to apply a particular kind of fertiliser. When the plants require a
+particular nutrient the most, use it. If fertilisers haven't been added correctly to the soil, their
+roots won't be able to take in a lot. Rainwater could wash away these fertilisers, or they could
+end up (5) ___________ the plants instead, costing the farmer money.
+SubQuestion No : 22
+Select the most appropriate option to fill in blank no. 2.
+A) cherish
+B) raise
+C) flourish
+D) tend
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q98. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+Since the 17th century, manure has been utilised in agriculture. In those days, they didn't
+know how plants got the (1)___________ they needed. They would toss wood debris, fish
+remains and other side-effects in an unfilled land to dispose of them. However, it wasn't long
+before people began to notice that the grass, bushes and shrubs there were beginning to (2)
+___________. They came to the conclusion that the soil supplied the plants with the nutrients
+they needed, and that organic remains could aid in this process. Because manure is (3)
+___________from animals and plants, it not only provides a wide range of plant nutrients but
+also improves the structure of the soil. Farmers gradually began using fertilisers as well
+because they understood that if their farmlands were treated in a similar manner, the growth
+of their crops would also improve. It bonds the soil particles together to form soil crumbs,
+which are necessary for cultivating soil. Additionally, the addition of manure to the soil aids in
+the prevention of soil erosion and the loss of plant nutrients during precipitation. Commercial
+fertilisers, in contrast to manure, are inorganic (4) ___________ that do not alter the structure
+of the soil. Their function is to provide the sprouting plants with additional nutrients. A farmer
+ought to know when and how to apply a particular kind of fertiliser. When the plants require a
+particular nutrient the most, use it. If fertilisers haven't been added correctly to the soil, their
+roots won't be able to take in a lot. Rainwater could wash away these fertilisers, or they could
+end up (5) ___________ the plants instead, costing the farmer money.
+SubQuestion No : 23
+Select the most appropriate option to fill in blank no. 3.
+A) extracted
+B) constructed
+C) derived
+D) build
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q99. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+Since the 17th century, manure has been utilised in agriculture. In those days, they didn't
+know how plants got the (1)___________ they needed. They would toss wood debris, fish
+remains and other side-effects in an unfilled land to dispose of them. However, it wasn't long
+before people began to notice that the grass, bushes and shrubs there were beginning to (2)
+___________. They came to the conclusion that the soil supplied the plants with the nutrients
+they needed, and that organic remains could aid in this process. Because manure is (3)
+___________from animals and plants, it not only provides a wide range of plant nutrients but
+also improves the structure of the soil. Farmers gradually began using fertilisers as well
+because they understood that if their farmlands were treated in a similar manner, the growth
+of their crops would also improve. It bonds the soil particles together to form soil crumbs,
+which are necessary for cultivating soil. Additionally, the addition of manure to the soil aids in
+the prevention of soil erosion and the loss of plant nutrients during precipitation. Commercial
+fertilisers, in contrast to manure, are inorganic (4) ___________ that do not alter the structure
+of the soil. Their function is to provide the sprouting plants with additional nutrients. A farmer
+ought to know when and how to apply a particular kind of fertiliser. When the plants require a
+particular nutrient the most, use it. If fertilisers haven't been added correctly to the soil, their
+roots won't be able to take in a lot. Rainwater could wash away these fertilisers, or they could
+end up (5) ___________ the plants instead, costing the farmer money.
+SubQuestion No : 24
+Select the most appropriate option to fill in blank no. 4.
+A) contents
+B) substances
+C) essences
+D) compositions
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q100. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+Since the 17th century, manure has been utilised in agriculture. In those days, they didn't
+know how plants got the (1)___________ they needed. They would toss wood debris, fish
+remains and other side-effects in an unfilled land to dispose of them. However, it wasn't long
+before people began to notice that the grass, bushes and shrubs there were beginning to (2)
+___________. They came to the conclusion that the soil supplied the plants with the nutrients
+they needed, and that organic remains could aid in this process. Because manure is (3)
+___________from animals and plants, it not only provides a wide range of plant nutrients but
+also improves the structure of the soil. Farmers gradually began using fertilisers as well
+because they understood that if their farmlands were treated in a similar manner, the growth
+of their crops would also improve. It bonds the soil particles together to form soil crumbs,
+which are necessary for cultivating soil. Additionally, the addition of manure to the soil aids in
+the prevention of soil erosion and the loss of plant nutrients during precipitation. Commercial
+fertilisers, in contrast to manure, are inorganic (4) ___________ that do not alter the structure
+of the soil. Their function is to provide the sprouting plants with additional nutrients. A farmer
+ought to know when and how to apply a particular kind of fertiliser. When the plants require a
+particular nutrient the most, use it. If fertilisers haven't been added correctly to the soil, their
+roots won't be able to take in a lot. Rainwater could wash away these fertilisers, or they could
+end up (5) ___________ the plants instead, costing the farmer money.
+SubQuestion No : 25
+Select the most appropriate option to fill in blank no. 5.
+A) wounding
+B) harming
+C) replicating
+D) hurting
+Correct Answer: Option B
+--------------------------------------------------------------------------------

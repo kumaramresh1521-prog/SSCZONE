@@ -1,0 +1,587 @@
+[
+  {
+    "q_num": 12,
+    "opts": {
+      "2": "KOC",
+      "3": "BOU",
+      "4": "RVH"
+    },
+    "chunk": [
+      "12. VOT : SLQ : : HRX : ?",
+      "[2] KOC",
+      "(3) BOU",
+      "(4)RVH",
+      "(SSCCHSL(10+2)Ther-1CBE",
+      "Exm.(shtb-B 17.03.20180"
+    ]
+  },
+  {
+    "q_num": 13,
+    "opts": {
+      "2": "DGH",
+      "1": "EGF"
+    },
+    "chunk": [
+      "13.RTU:SUW::CEF:?",
+      "(2) DGH",
+      "EGF"
+    ]
+  },
+  {
+    "q_num": 14,
+    "opts": {
+      "1": "JPG",
+      "2": "LRI",
+      "3": "14. CPW  BOV : : KQH : ?"
+    },
+    "chunk": [
+      "14) DFH",
+      "(SSCCHSL(10-2)Ter-1CBE",
+      "Exan, (Sbin-B 19.03.2018)",
+      "14. CPW  BOV : : KQH : ?",
+      "(1]  JPG",
+      "(2) LRI",
+      "tSSC CHSL(10 + 2) Ther-1CBE",
+      "Eoam,(5hdn-tm 19.03.20189"
+    ]
+  },
+  {
+    "q_num": 16,
+    "opts": {
+      "1": "BSU : ART () PYC : OXD"
+    },
+    "chunk": [
+      "16.SOM:RPL : :9:?",
+      ") BSU : ART () PYC : OXD",
+      "(SSCCHSL110+2)Tr-ICBE",
+      "Exam.(Sht-m20.03.2018)"
+    ]
+  },
+  {
+    "q_num": 18,
+    "opts": {
+      "1": "NRO",
+      "4": "RVU",
+      "3": "MPO"
+    },
+    "chunk": [
+      "18, LJK : IGH: : PST :?",
+      "(1) NRO",
+      "(4) RVU",
+      "(3) MPO",
+      "(SSC CHSL110 +21Ther-4CBE",
+      "Exe.Chat-m121.03.2018)"
+    ]
+  },
+  {
+    "q_num": 20,
+    "opts": {
+      "2": "GEN",
+      "4": "IFP",
+      "1": "EO"
+    },
+    "chunk": [
+      "20. PTY : DHM : : SQZ : ?",
+      "() EO",
+      "(2) GEN",
+      "(4) IFP",
+      "(SSC CHSL (10 + 2) Ticr-1CBE",
+      "Excam. (Saaft- 23.03.2018)"
+    ]
+  },
+  {
+    "q_num": 36,
+    "opts": {
+      "1": "MEAL",
+      "2": "ELAM",
+      "4": "LAME"
+    },
+    "chunk": [
+      "36. LAMP : PALM:; MALE:",
+      "(I) MEAL",
+      "(2) ELAM",
+      "(3) EAML",
+      "(4) LAME",
+      "SSC CGLTHer-4(CBE)",
+      "Exam.06.06.2019(5hit-m"
+    ]
+  },
+  {
+    "q_num": 38,
+    "opts": {
+      "1": "SOLJ",
+      "3": "TPNL"
+    },
+    "chunk": [
+      "38. DFIM; WURN : GKP :?",
+      "(I) SOLJ",
+      "(3) TPNL",
+      "SSCCCLTe.fiCBE"
+    ]
+  },
+  {
+    "q_num": 47,
+    "opts": {
+      "2": "RUFW",
+      "4": "QUFW",
+      "1": "BHPUPY"
+    },
+    "chunk": [
+      "47.QDWYI20:PAR:?",
+      "(2) RUFW",
+      "BHPUPY",
+      "(4) QUFW",
+      "SSC CHSL(10+2)Tier-1Exam."
+    ]
+  },
+  {
+    "q_num": 59,
+    "opts": {
+      "2": "JK",
+      "3": "LW",
+      "1": "PY"
+    },
+    "chunk": [
+      "59. DJ : HT : : HM :.?",
+      "()PY",
+      "(2) JK",
+      "[3) LW",
+      "SSC CHSL(10-2) Ter-4Eam,",
+      "11.07.2019 (Shat-m)"
+    ]
+  },
+  {
+    "q_num": 61,
+    "opts": {
+      "2": "GH",
+      "4": "JH",
+      "1": "c3) IP"
+    },
+    "chunk": [
+      "61.FU : UF : : RS : ?",
+      "(2) GH",
+      "(4)JH",
+      "c3) IP",
+      "(SSC CHSL (10-2 Ther-1Exam,",
+      "11.07.2019 (Shit-mm)"
+    ]
+  },
+  {
+    "q_num": 62,
+    "opts": {
+      "2": "WX",
+      "3": "VU"
+    },
+    "chunk": [
+      "62. GP : TK : : DR ?",
+      "(2) WX",
+      "[3 VU",
+      "(SSC CHSL(10+2) Ter-1 Em)",
+      "11.07.2019 (Sht-10)"
+    ]
+  },
+  {
+    "q_num": 64,
+    "opts": {
+      "2": "ODS",
+      "3": "IQFU",
+      "4": "QDU"
+    },
+    "chunk": [
+      "64. JOM : KPN : PET : ?",
+      "(2) ODS",
+      "(3IQFU",
+      "(4) QDU",
+      "(SSC Multu Taskang Staff Exam,",
+      "07.08.2019, Shat-0"
+    ]
+  },
+  {
+    "q_num": 65,
+    "opts": {
+      "1": "JUC",
+      "3": "JUD",
+      "2": "JVE"
+    },
+    "chunk": [
+      "65, TOL : WRO : GRA : ?",
+      "(1)JUC",
+      "(3) JUD",
+      "JVE"
+    ]
+  },
+  {
+    "q_num": 68,
+    "opts": {},
+    "chunk": [
+      "68. QMDFEHKNJ : FDMQVUNKH :",
+      ":?:HELOPTER"
+    ]
+  },
+  {
+    "q_num": 79,
+    "opts": {},
+    "chunk": [
+      "79. Seleet theogtion that is rtlated",
+      "to the thard ietter-cluster tn the"
+    ]
+  },
+  {
+    "q_num": 83,
+    "opts": {},
+    "chunk": [
+      "83.",
+      "as the second term is related to"
+    ]
+  },
+  {
+    "q_num": 87,
+    "opts": {},
+    "chunk": [
+      "87.Stiect theotonthat tsre",
+      "to the third term in the sune"
+    ]
+  },
+  {
+    "q_num": 88,
+    "opts": {},
+    "chunk": [
+      "wayasthicsecedtesrtia",
+      "ed to the first term."
+    ]
+  },
+  {
+    "q_num": 90,
+    "opts": {
+      "1": "tothe fifthtrtunnchesameway"
+    },
+    "chunk": [
+      "90. Select the optiop tbat ts related",
+      "tothe fifthtrtunnchesameway",
+      "as the second term ls related to"
+    ]
+  },
+  {
+    "q_num": 92,
+    "opts": {},
+    "chunk": [
+      "92.Stecttheotonthasread",
+      "as the second term is related to"
+    ]
+  },
+  {
+    "q_num": 94,
+    "opts": {
+      "1": "ga. Seiect the option that ts related"
+    },
+    "chunk": [
+      "10.06.2022 (Sht-0)",
+      "ga. Seiect the option that ts related",
+      "as thr second term Is related to"
+    ]
+  },
+  {
+    "q_num": 95,
+    "opts": {},
+    "chunk": [
+      "the first term and thefourth term",
+      "Is reiated to the third term."
+    ]
+  },
+  {
+    "q_num": 98,
+    "opts": {},
+    "chunk": [
+      "98, Select the option that s related",
+      "as the second term is related to"
+    ]
+  },
+  {
+    "q_num": 104,
+    "opts": {},
+    "chunk": [
+      "104. Select the option that is related",
+      "to the fifth term tn the same way"
+    ]
+  },
+  {
+    "q_num": 105,
+    "opts": {},
+    "chunk": [
+      "as the second term is related to",
+      "the first term and thefourth term"
+    ]
+  },
+  {
+    "q_num": 108,
+    "opts": {},
+    "chunk": [
+      "108. Select the option that ts related",
+      "to the fifth term in the same way"
+    ]
+  },
+  {
+    "q_num": 122,
+    "opts": {},
+    "chunk": [
+      "122.Sctthropothattsrelated",
+      "asthesecond termisrelated to"
+    ]
+  },
+  {
+    "q_num": 125,
+    "opts": {},
+    "chunk": [
+      "125. Seleet the option that ts related",
+      "as the second term is related to"
+    ]
+  },
+  {
+    "q_num": 128,
+    "opts": {},
+    "chunk": [
+      "128, Stlect thtopton that tsrelated",
+      "the second term is related to the",
+      "frst term."
+    ]
+  },
+  {
+    "q_num": 129,
+    "opts": {},
+    "chunk": [
+      "129. Select the option that is related",
+      "to the thtrd tern tn the same way"
+    ]
+  },
+  {
+    "q_num": 133,
+    "opts": {},
+    "chunk": [
+      "133, Select the option that is reiated",
+      "to the third term tn the same way"
+    ]
+  },
+  {
+    "q_num": 135,
+    "opts": {},
+    "chunk": [
+      "135. Select the option that is related",
+      "to the third letter-cluster in the"
+    ]
+  },
+  {
+    "q_num": 138,
+    "opts": {},
+    "chunk": [
+      "138.",
+      "to the thtrd letter-cluster tn the"
+    ]
+  },
+  {
+    "q_num": 154,
+    "opts": {},
+    "chunk": [
+      "154.SelodCheopfonhatis",
+      "toChc thfrd ietter-clustert"
+    ]
+  },
+  {
+    "q_num": 157,
+    "opts": {},
+    "chunk": [
+      "187, Select the optilon that is related",
+      "sare way as the second leter-"
+    ]
+  },
+  {
+    "q_num": 159,
+    "opts": {},
+    "chunk": [
+      "159.",
+      "to the third term in the same"
+    ]
+  },
+  {
+    "q_num": 160,
+    "opts": {},
+    "chunk": [
+      "wy as the second term ts relat-",
+      "ed to the first term."
+    ]
+  },
+  {
+    "q_num": 168,
+    "opts": {},
+    "chunk": [
+      "same way as the secood letter-",
+      "ter-cluster."
+    ]
+  },
+  {
+    "q_num": 169,
+    "opts": {
+      "3": "UEK",
+      "1": "VFJ",
+      "2": "H) VGK"
+    },
+    "chunk": [
+      "(2) UGP",
+      "() VFJ",
+      "H) VGK",
+      "[3) UEK",
+      "(SSC CGLTer-1 ICBE) Eom, 21.0.2022"
+    ]
+  },
+  {
+    "q_num": 171,
+    "opts": {},
+    "chunk": [
+      "171. Select the option that is related",
+      "to the afth letter-cluster in the"
+    ]
+  },
+  {
+    "q_num": 182,
+    "opts": {},
+    "chunk": [
+      "182. Select tht option that ts related",
+      "clustertsrelated to the first let-",
+      "ter-chuster."
+    ]
+  },
+  {
+    "q_num": 186,
+    "opts": {},
+    "chunk": [
+      "ise. Seler the opton tn uhich the",
+      "petrafketter-custensharethe"
+    ]
+  },
+  {
+    "q_num": 187,
+    "opts": {},
+    "chunk": [
+      "anseltonshipastutshared",
+      "by the Pven letter-chusters."
+    ]
+  },
+  {
+    "q_num": 190,
+    "opts": {
+      "1": "samerelaGoeship as thatshared"
+    },
+    "chunk": [
+      "190. Sciect the opton in yfich the",
+      "samerelaGoeship as thatshared",
+      "ters"
+    ]
+  },
+  {
+    "q_num": 192,
+    "opts": {},
+    "chunk": [
+      "192. Select the option that ts related",
+      "to the fth ietter-cluster in the"
+    ]
+  },
+  {
+    "q_num": 193,
+    "opts": {},
+    "chunk": [
+      "same way as the second letter-",
+      "chuster tsrelated to the firyt let-"
+    ]
+  },
+  {
+    "q_num": 196,
+    "opts": {},
+    "chunk": [
+      "196. Select the option that fs related",
+      "as the second term is related te"
+    ]
+  },
+  {
+    "q_num": 197,
+    "opts": {},
+    "chunk": [
+      "the first term and thefourth term",
+      "Is related to the third term."
+    ]
+  },
+  {
+    "q_num": 202,
+    "opts": {},
+    "chunk": [
+      "202. Select the option that ts related",
+      "to the ffth letter-chuster in the"
+    ]
+  },
+  {
+    "q_num": 207,
+    "opts": {},
+    "chunk": [
+      "207. Select the option that is related",
+      "to the fith ictter-chuster tn the",
+      "sape way as the second letter-",
+      "cluster is related to the first let.",
+      "cluster is related to the third let-",
+      "ter-chuaster."
+    ]
+  },
+  {
+    "q_num": 217,
+    "opts": {},
+    "chunk": [
+      "_library"
+    ]
+  },
+  {
+    "q_num": 218,
+    "opts": {},
+    "chunk": [
+      "218.nfoloutnquonse",
+      "thse related eter patr from the"
+    ]
+  },
+  {
+    "q_num": 220,
+    "opts": {},
+    "chunk": [
+      "220. Sclet the option thafts refated",
+      "to the finth ietter chuster in the"
+    ]
+  },
+  {
+    "q_num": 221,
+    "opts": {},
+    "chunk": [
+      "same way as the fourth letter",
+      "cluster ts petated to/the third"
+    ]
+  },
+  {
+    "q_num": 222,
+    "opts": {},
+    "chunk": [
+      "letter clusteCand'the second",
+      "letter custer is related to the"
+    ]
+  },
+  {
+    "q_num": 240,
+    "opts": {},
+    "chunk": [
+      "240. Select the option that is related",
+      "same way as the second letter-",
+      "chuster is related to the first let-"
+    ]
+  },
+  {
+    "q_num": 244,
+    "opts": {},
+    "chunk": [
+      "244. Select the option that is related",
+      "cluster is related to the first let-"
+    ]
+  }
+]

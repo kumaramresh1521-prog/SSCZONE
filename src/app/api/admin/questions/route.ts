@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { createClient as createSupabaseClient } from "@supabase/supabase-js";
 import { createClient as createServerClient } from "@/lib/supabase-server";
 import { syncQuestionBankToPyq } from "@/lib/question-sync";
+import { fetchAllQuestionsByTopics } from "@/lib/question-queries";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
@@ -35,11 +36,7 @@ export async function GET(request: Request) {
   }
 
   try {
-    const { data, error } = await supabaseAdmin
-      .from("questions")
-      .select("*")
-      .eq("topic_id", Number(topicId))
-      .order("id", { ascending: true });
+    const { data, error } = await fetchAllQuestionsByTopics(supabaseAdmin, Number(topicId));
 
     if (error) {
       return NextResponse.json({ error: error.message }, { status: 500 });

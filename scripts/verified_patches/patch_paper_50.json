@@ -1,0 +1,197 @@
+{
+  "paper_id": 50,
+  "title": "SSC CGL 2026 Tier-I (Held On 12 October 2026 Shift 3)",
+  "total_questions": 100,
+  "changes_count": 27,
+  "changes": [
+    {
+      "question_number": 7,
+      "id": 16808,
+      "old_answer": "B",
+      "new_answer": "A",
+      "reason": "Solving 5x - 3y = 27 and x + 2y = 12 yields y = 33/13 ≈ 2.54 and x = 90/13 ≈ 6.92."
+    },
+    {
+      "question_number": 8,
+      "id": 16809,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "Alternating pattern shifts (+7, +12, +7, +12): A(1)+7=H, B(2)+12=N, C(3)+7=J, D(4)+12=P produces HNJP."
+    },
+    {
+      "question_number": 15,
+      "id": 16816,
+      "old_answer": "C",
+      "new_answer": "A",
+      "reason": "Interchanging signs + and -, and numbers 4 and 6 gives 16 + 6 × 4 ÷ 2 - 8 = 16 + 12 - 8 = 20."
+    },
+    {
+      "question_number": 32,
+      "id": 16833,
+      "old_answer": "D",
+      "new_answer": "C",
+      "reason": "The Charter Act of 1793 renewed the commercial monopoly and charter of the East India Company for twenty years."
+    },
+    {
+      "question_number": 34,
+      "id": 16835,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Under the World Anti-Doping Code, an eight-year ban signifies a second anti-doping rule violation (second offence)."
+    },
+    {
+      "question_number": 35,
+      "id": 16836,
+      "old_answer": "C",
+      "new_answer": "D",
+      "reason": "Yemshe is the premier traditional harvest festival celebrated by the Pochuri tribe of Nagaland."
+    },
+    {
+      "question_number": 37,
+      "id": 16838,
+      "old_answer": "D",
+      "new_answer": "A",
+      "reason": "Matki is a traditional solo folk dance of the Malwa region of Madhya Pradesh; Karakattam is native to Tamil Nadu."
+    },
+    {
+      "question_number": 38,
+      "id": 16839,
+      "old_answer": "C",
+      "new_answer": "A",
+      "reason": "Jakari (or Jakdi) is an authentic traditional folk song genre sung by women in rural Haryana; Lavani belongs to Maharashtra."
+    },
+    {
+      "question_number": 44,
+      "id": 16845,
+      "old_answer": "C",
+      "new_answer": "A",
+      "reason": "As per Census 2011, Lakshadweep recorded the lowest overall Work Participation Rate in India at 29.09%."
+    },
+    {
+      "question_number": 48,
+      "id": 16849,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Sher Shah Suri reconstructed and extended the ancient Mauryan imperial highway (Uttarapatha) as Sadak-e-Azam (Grand Trunk Road)."
+    },
+    {
+      "question_number": 51,
+      "id": 16852,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Equating volumes, (2/3)π(6.3)³ = π(9)²h gives h = 500.094 / 243 = 2.058 cm."
+    },
+    {
+      "question_number": 53,
+      "id": 16854,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Interior minus exterior angle is 132° and their sum is 180°, so exterior angle = 24°, giving n = 360°/24° = 15 sides."
+    },
+    {
+      "question_number": 55,
+      "id": 16856,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "(1 + sinθ)(1 - sinθ) = 1 - sin²θ = cos²θ; for tanθ = 3/4, cosθ = 4/5, so cos²θ = (4/5)² = 16/25."
+    },
+    {
+      "question_number": 59,
+      "id": 16860,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Using algebraic identity (a³ - b³)/(a² + ab + b²) = a - b with a = 0.5 and b = 0.3 yields 0.5 - 0.3 = 0.2."
+    },
+    {
+      "question_number": 60,
+      "id": 16861,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Using algebraic identity (a³ - b³)/(a² + ab + b²) = a - b with a = 0.013 and b = 0.011 yields 0.013 - 0.011 = 0.002."
+    },
+    {
+      "question_number": 61,
+      "id": 16862,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "From 2x = 0.5y, y = 4x; simplifying (y² - x²)/(y + x)² = (y - x)/(y + x) = (4 - 1)/(4 + 1) = 3/5."
+    },
+    {
+      "question_number": 63,
+      "id": 16864,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "The angle formed by internal angle bisectors at incenter R is 90° + ∠W/2 = 90° + 50°/2 = 115°."
+    },
+    {
+      "question_number": 64,
+      "id": 16865,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "CP1 = 5000/1.25 = 4000; total CP = 10000 requires CP2 = 6000, giving a loss of (1000/6000) × 100% = 16.67%."
+    },
+    {
+      "question_number": 65,
+      "id": 16866,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "By the inscribed angle theorem, the angle subtended by a chord at the centre is twice that at the circumference: 2 × 55° = 110°."
+    },
+    {
+      "question_number": 81,
+      "id": 16882,
+      "old_answer": "C",
+      "new_answer": "A",
+      "reason": "The idiom 'to take to one's heels' means to flee or run away quickly."
+    },
+    {
+      "question_number": 84,
+      "id": 16885,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "The adjective 'moot' is correctly used here to mean having no practical significance because the policy is already enacted."
+    },
+    {
+      "question_number": 88,
+      "id": 16889,
+      "old_answer": "B",
+      "new_answer": "D",
+      "reason": "'Prophane' is misspelled; the correct spelling is 'profane', whereas 'perspicuity' is spelled correctly."
+    },
+    {
+      "question_number": 90,
+      "id": 16891,
+      "old_answer": "D",
+      "new_answer": "B",
+      "reason": "An 'enigma' is a person or thing that is mysterious or difficult to understand; a riddle is an enigmatic question or puzzle."
+    },
+    {
+      "question_number": 96,
+      "id": 16897,
+      "old_answer": "C",
+      "new_answer": "A",
+      "reason": "'Assimilated' is the standard cognitive term for integrating new knowledge into existing mental frameworks in long-term memory."
+    },
+    {
+      "question_number": 97,
+      "id": 16898,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "'Accommodate' accurately conveys adapting instructional design to take learners' mental limitations into consideration."
+    },
+    {
+      "question_number": 99,
+      "id": 16900,
+      "old_answer": "C",
+      "new_answer": "B",
+      "reason": "The conjunction 'Although' correctly establishes the contrast between expanding technological capabilities and persistent access disparities."
+    },
+    {
+      "question_number": 100,
+      "id": 16901,
+      "old_answer": "B",
+      "new_answer": "C",
+      "reason": "'Subside' accurately denotes the gradual diminishing or fading of initial enthusiasm/appeal."
+    }
+  ]
+}

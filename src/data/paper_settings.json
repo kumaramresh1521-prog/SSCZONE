@@ -126,5 +126,17 @@
   },
   "53": {
     "allow_translation": false
+  },
+  "54": {
+    "allow_download": true
+  },
+  "55": {
+    "allow_download": true
+  },
+  "56": {
+    "allow_download": true
+  },
+  "57": {
+    "allow_download": true
   }
 }

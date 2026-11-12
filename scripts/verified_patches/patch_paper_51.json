@@ -1,0 +1,155 @@
+{
+  "paper_id": 51,
+  "title": "SSC CGL 2026 Tier-I (Held On 13 October 2026 Shift 1)",
+  "total_questions": 100,
+  "changes_count": 21,
+  "changes": [
+    {
+      "question_number": 5,
+      "id": 16906,
+      "old_answer": "D",
+      "new_answer": "A",
+      "reason": "The father of the speaker's wife's only brother is his father-in-law, whose only grandson (with the speaker having no siblings) is his son."
+    },
+    {
+      "question_number": 6,
+      "id": 16907,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Column pattern is Row 1 - Row 2 + Row 3 = Row 4 (30 - 18 + 12 = 24; 60 - 45 + 25 = 40); thus 50 - 35 + 20 = 35."
+    },
+    {
+      "question_number": 13,
+      "id": 16914,
+      "old_answer": "C",
+      "new_answer": "D",
+      "reason": "Both Statement I (40 ÷ 8 + 10 × 2 = 25) and Statement II (15 × 3 - 10 ÷ 5 = 43) are correct; thus neither statement is 'not correct'."
+    },
+    {
+      "question_number": 32,
+      "id": 16933,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "Section 472 of the Bharatiya Nagarik Suraksha Sanhita (BNSS), 2023 prescribes clear statutory timelines for the filing and disposal of mercy petitions in death sentence cases."
+    },
+    {
+      "question_number": 33,
+      "id": 16934,
+      "old_answer": "D",
+      "new_answer": "C",
+      "reason": "Dr. Tulia Ackson, Speaker of the National Assembly of Tanzania, was elected as the President of the Inter-Parliamentary Union (IPU) in October 2023."
+    },
+    {
+      "question_number": 36,
+      "id": 16937,
+      "old_answer": "C",
+      "new_answer": "B",
+      "reason": "The Regulating Act of 1773 empowered the Governor-General and Council of Bengal to make rules, ordinances, and regulations for the civil government of Fort William."
+    },
+    {
+      "question_number": 40,
+      "id": 16941,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "The Harappan bronze Dancing Girl figurine is famously unclad except for jewellery/bangles, unlike the steatite Priest-King statue which is draped in a patterned shawl."
+    },
+    {
+      "question_number": 43,
+      "id": 16944,
+      "old_answer": "C",
+      "new_answer": "D",
+      "reason": "The proviso to Article 3 specifies that the President refers the Bill to the State Legislature for views within such period as the President may specify in the reference."
+    },
+    {
+      "question_number": 48,
+      "id": 16949,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "The Planning Commission was mandated in March 1950 to formulate plans for the most effective and balanced utilization of the country's resources (census is conducted by the Registrar General under MHA)."
+    },
+    {
+      "question_number": 49,
+      "id": 16950,
+      "old_answer": "C",
+      "new_answer": "B",
+      "reason": "The Hindu Widows' Remarriage Act, 1856 was passed and enacted during the tenure of Governor-General Lord Canning (drafted under Dalhousie)."
+    },
+    {
+      "question_number": 57,
+      "id": 16958,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "Total surface area of the cone = πr(l + r) = 3.14 × 5 × 19 = 298.3 cm²; cost = 298.3 × ₹18 = ₹5,369.4 ≈ ₹5,369."
+    },
+    {
+      "question_number": 58,
+      "id": 16959,
+      "old_answer": "A",
+      "new_answer": "D",
+      "reason": "Area of a quadrant = (1/4)πr² = 16π cm² ⇒ r² = 64 ⇒ r = 8 cm."
+    },
+    {
+      "question_number": 60,
+      "id": 16961,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "CP of 45 apples = 160/0.8 = ₹200 (CP/apple = 40/9); with 20% gain, SP/apple = (40/9)×1.2 = 16/3, so for ₹112 he must sell 112/(16/3) = 21 apples."
+    },
+    {
+      "question_number": 62,
+      "id": 16963,
+      "old_answer": "A",
+      "new_answer": "C",
+      "reason": "With supplementary angles x + y = 180° and y = x/4 + 40°, solving gives x = 112°; half of x is 56°, and its complement is 90° - 56° = 34°."
+    },
+    {
+      "question_number": 63,
+      "id": 16964,
+      "old_answer": "D",
+      "new_answer": "A",
+      "reason": "Simplifying √[(tan θ + sin θ)/(tan θ - sin θ)] gives cosec θ + cot θ, so 1 + √[...] equals 1 + cosec θ + cot θ."
+    },
+    {
+      "question_number": 80,
+      "id": 16981,
+      "old_answer": "C",
+      "new_answer": "B",
+      "reason": "The verb 'accused' requires the fixed preposition 'of' rather than 'for' (correct sentence: 'accused of cheating')."
+    },
+    {
+      "question_number": 81,
+      "id": 16982,
+      "old_answer": "A",
+      "new_answer": "B",
+      "reason": "Sentence 1 introduces seasonal migration, 3 explains the behavioral trigger, 2 details navigational mechanisms, 4 provides an example (Arctic Tern), and 5 concludes on conservation."
+    },
+    {
+      "question_number": 83,
+      "id": 16984,
+      "old_answer": "D",
+      "new_answer": "B",
+      "reason": "A protégé is a person guided, supported, and mentored by an older, more experienced person (Option B)."
+    },
+    {
+      "question_number": 84,
+      "id": 16985,
+      "old_answer": "C",
+      "new_answer": "A",
+      "reason": "'Ignominious' means shameful or disgraceful; therefore, its antonym is 'Honorable' (Option A), whereas 'Disgraceful' is a synonym."
+    },
+    {
+      "question_number": 85,
+      "id": 16986,
+      "old_answer": "B",
+      "new_answer": "C",
+      "reason": "The idiom 'to kick against the pricks' means to offer futile resistance against an established power or authority."
+    },
+    {
+      "question_number": 88,
+      "id": 16989,
+      "old_answer": "D",
+      "new_answer": "B",
+      "reason": "The verb 'delve' requires the fixed preposition 'into' when investigating or researching a topic ('delve into topics')."
+    }
+  ]
+}

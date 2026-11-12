@@ -1,0 +1,1008 @@
+================================================================================
+SSC CGL 2023 TIER-I (HELD ON 17 JULY 2023 SHIFT 4)
+Exam: SSC CGL | Year: 2023
+Total Questions: 100 | Duration: 60 Minutes
+Extracted from Official Answer Key via SSC ZONE (www.ssczone.in)
+================================================================================
+
+Q1. Two different positions of the same dice are shown, the six faces of which are numbered from 1 to 6. Select the number that will be on the face opposite to the one showing 1.
+![Figure](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p1_img1.png)
+A) 4
+B) 5
+C) 3
+D) 2
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q2. Study the given pattern carefully and select the number that can replace the question mark (?) in it.
+(2, 1, 5)
+(5, 12, 22)
+(6, 2, ?)
+(NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g. 13 - Operations on 13 such as adding/subtracting/multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+A) 6
+B) 14
+C) 8
+D) 12
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q3. The second number in the given number pairs is obtained by performing certain
+mathematical operation(s) on the first number. The same operation(s) are followed in
+all the number pairs except one. Find that odd number pair.
+A) 4 : 70
+B) 3: 30
+C) 6 : 222
+D) 7 : 350
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q4. Which of the following interchanges of signs would make the given equation correct?
+100 + 100 × 50 - 2 ÷ 3 = 51
+A) + and ÷
+B) + and -
+C) -and ×
+D) ÷ and ×
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q5. In a certain code language, 'CROW' is coded as “6970' and 'ORCA' is coded as “7569'.
+What is the code for W' in the given code language?
+A) 7
+B) 9
+C) 6
+D) 0
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q6. Select the figure that will come in place of the question mark (?) in the following figure
+series.
+![Figure](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p3_img2.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p3_img3.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p3_img4.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p3_img5.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p3_img6.png)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q7. Read the given statements and conclusions carefully. Assuming that the information
+given in the statements is true, even if it appears to be at variance with commonly
+known facts, decide which of the given conclusions logically follow(s) from the
+statements.
+Statements:
+Some pens are boxes.
+No box is a fan.
+Some pens are fans.
+Conclusions:
+I. No pen is a fan.
+II. No box is a pen.
+II. Some fans are pens.
+IV. Some boxes are pens.
+A) Only conclusions I and IlI follow
+B) Only conclusions Il and IV follow
+C) Only conclusions I and II follow
+D) Only conclusions Ill and IV follow
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q8. In a certain code language, STAR' is written as ‘8110291', 'GIFT' is written as “02697'.
+How will DOLL' be written in that language?
+A) 2112514
+B) 2121514
+C) 2121154
+D) 2121524
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q9. Select the set in which the numbers are related in the same way as are the numbers of
+the following set.
+(NOTE: Operations should be performed on the whole numbers, without breaking
+down the numbers into its constituent digits.)
+(12, 15, 18)
+(10, 8, 6)
+A) (15, 20, 25)
+B) (14, 28, 14)
+C) (13, 10, 17)
+D) (19, 18, 1)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q10. "A + B' means 'A is the father of B'.
+"A - B' means 'A is the son of B'.
+'A × B' means 'A is the sister of B'.
+"A ÷ B' means 'A is the wife of B'.
+If H+I-J×K×L-M ÷ N, then which of the following statements is NOT correct?
+A) H is the husband of the sister of K.
+B) J is the wife of the son of M.
+C) H is the husband of the sister of L.
+D) H is the husband of the daughter of M.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q11. Select the set in which the numbers are related in the same way as are the numbers of
+the following set.
+(NOTE : Operations should be performed on the whole numbers, without breaking
+down the numbers into its constituent digits. E.g. 13 - Operations on 13 such as
+adding /subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1
+and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+(44, 63, 98)
+(59, 99, 149)
+A) (81, 15, 87)
+B) (54, 73, 121)
+C) (19, 32, 44)
+D) (82, 13, 96)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q12. In this question, three statements are given, followed by three conclusions numbered
+I, Il and Il. Assuming the statements to be true, even if they seem to be at variance
+with commonly known facts, decide which of the conclusions logically follows/follow
+from the statements.
+Statements:
+Some spoons are black.
+All black are crows.
+No crow is a plate.
+Conclusions:
+I. Some black are spoons.
+Il. All crows are black.
+Il. No plate is a crow.
+A) Only conclusion I follows.
+B) Only conclusions I and IlI follow.
+C) None of the conclusions follows.
+D) Only conclusion II follows.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q13. ![Figure](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p6_img7.png)
+A) +,=, ÷,×,+
+B) ÷. ×. =. +. +
+C) ÷,×,1,=,×
+D) ÷. ×. +. =.−
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q14. ![Figure](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p6_img8.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p6_img9.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p6_img10.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p6_img11.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p6_img12.png)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q15. Study the given pattern carefully and select the number that can replace the question
+mark (?) in it.
+(14, 10, 9)
+(6, 8, 2)
+(8, 4, ?)
+(NOTE: Operations should be performed on the whole numbers, without breaking
+down the numbers into its constituent digits. E.g. 13 - Operations on 13 such as
+adding/subtracting/multiplying etc. to 13 can be performed. Breaking down 13 into 1
+and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+A) 4
+B) 6
+C) 3
+D) 5
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q16. 'Explicit' is related to 'Open' in the same way as 'Confidential' is related to '______'.
+A) Clean
+B) Free
+C) Indirect
+D) Secret
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q17. ![Figure](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p8_img13.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p8_img14.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p8_img15.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p8_img16.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p8_img17.png)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q18. Which of the following numbers will replace the question mark (?) in the given series?
+325, 271, 226, ?, 163, 145, 136
+A) 190
+B) 180
+C) 186
+D) 196
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q19. ![Figure](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p9_img18.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p9_img19.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p9_img20.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p9_img21.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p9_img22.png)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q20. Select the option that represents the letters that, when placed from left to right in the
+blanks, will complete the letter series.
+_B_ＴFHBN_FI_NＴF_BNＴF
+A) NＴBJ
+B) GTNJB
+C) GJNTB
+D) GBJNT
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q21. Select the option that represents the correct order of the given words as they would
+appear in an English dictionary.
+1. Lambast
+2. Lighten
+3. Legacy
+4. Languish
+5.Laughter
+6. Lightly
+A) 1, 4, 5, 3, 2, 6
+B) 1, 4, 5, 2, 3, 6
+C) 1, 5, 4, 2, 3, 6
+D) 1, 5, 4, 3, 6, 2
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q22. ![Figure](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p10_img23.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p10_img24.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p10_img25.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p10_img26.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p10_img27.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q23. Select the option that is related to the fifth letter-cluster in the same way as the second
+letter-cluster is related to the first letter-cluster and the fourth letter-cluster is related
+to the third letter cluster.
+PLANT : VPCNR :: STOMP : ROQVU :: BOARD : ?
+A) DPCTF
+B) DQCTF
+C) FTDQC
+D) FTCQD
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q24. Three of the following four letter-clusters are alike in a certain way and one is different.
+Pick the odd one out.
+A) CAX
+B) AYZ
+C) FDU
+D) HDS
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q25. Which of the following terms will replace the question mark (?) in the given series?
+SHP, RIO, PKN, MNM, ?
+A) ISL
+B) JRL
+C) IRL
+D) IQL
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q26. Intensive agriculture implies ______.
+A) bringing more land under cultivation
+B) cultivating large farms with moderately low inputs of labour and capital
+C) use of more labour and capital inputs on the given land under cultivation
+D) spreading farming across more states of India
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q27. Nana Sahib, a rebel at Kanpur was the son of which of the following Peshwas?
+A) Baji Rao I
+B) Balaji Baji Rao
+C) Baji Rao II
+D) Balaji Vishwanath
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q28. Which of the following hill stations do NOT experience snowfall in winters?
+A) Ooty
+B) Nainital
+C) Shimla
+D) Srinagar
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q29. Schools and hostels under the Ministry of Education's Samagra Shiksha scheme will
+be renamed after:
+A) Shyama Prashad Mukharjee
+B) Netaji Subhas Chandra Bose
+C) Deen Dayal Upadhyaya
+D) Sardar Vallabhbhai Patel
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q30. On 7 November 2022, Prime Minister Narendra Modi attended and offered prayers at
+celebrations of the ______ Prakash Parv of Shri Guru Nanak Dev Ji at New Delhi.
+A) 550th
+B) 551³t
+C) 552nd
+D) 553rd
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q31. ![Figure](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p13_img28.png)
+A) a-i, b-ii, c-ili, d-iv
+B) a-i, b-ili, c-ii, d-iv
+C) a-iv, b-ili, c-ii, d-i
+D) a-ii, b-iv, c-ii, d-i
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q32. What helps making the acidic food alkaline that is coming from the stomach?
+A) Pepsin
+B) Gastric juice
+C) Hydrochloric acid
+D) Bile juice
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q33. For which discovery did William Bradford Shockley, John Bardeen and Walter Houser
+Brattain jointly receive the Nobel Prize in Physics in 1956?
+A) Discovery of transistor effect
+B) Discovery of thermionic emission
+C) Discovery of electromagnetic induction
+D) Discovery of receptors for temperature and touch
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q34. Which group of rivers is a part of the peninsular drainage system?
+A) Gandak and Ghaghra
+B) Mahanadi and Godavari
+C) Ganga and Yamuna
+D) Damodar and Sarda
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q35. Ashoka sent a mission to spread the principle of Dhamma led by his son, Mahendra
+and daughter, Sanghamitra to ______−.
+A) Kalinga
+B) Ceylon
+C) Cambodia
+D) Thailand
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q36. If the government revenue expenditure exceeds revenue receipt, it is called:
+A) revenue deficit
+B) primary deficit
+C) capital deficit
+D) fiscal deficit
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q37. Paramvir Chakra, Ashok Chakra and Vir Chakra are presented during the celebration
+of which day?
+A) Republic Day
+B) Independence Day
+C) Gandhi Jayanti
+D) Indian Air Force Day
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q38. The musician Sivamani is associated with which musical instrument?
+A) Drums
+B) Violin
+C) Shehnai
+D) Sarod
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q39. Who among the following was the slave-general of Alauddin Khilji, who led his army in
+the battle against Ramachandra of Devagiri?
+A) Nusrat Khan
+B) Malik Kafur
+C) Ulugh Khan
+D) Zafar Khan
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q40. Padma Shri awardee in 2022, Arjun Singh Dhurve, is a tribal dancer of which of the
+following dance forms?
+A) Baiga
+B) Chhau
+C) Santhal
+D) Tertali
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q41. The number of on-field umpires in cricket matches is ______.
+A) 1
+B) 3
+C) 4
+D) 2
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q42. Borgeet is associated with which Indian classical dance form?
+A) Odissi
+B) Manipuri
+C) Sattriya
+D) Kuchipudi
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q43. "BFSI' stands for Banking, Financial Services and _______ in India. It is a broad term for
+industries that offer financial products and services.
+A) Inflation
+B) Investment
+C) Insurance
+D) Index Fund
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q44. What happens to the atomic size as you go down the group?
+A) Triples
+B) Decreases
+C) Increases
+D) No change
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q45. The Fundamental Duties of citizens were added to the Constitution of India, upon the
+recommendations of which of the following committees?
+A) Raja Chelliah Committee
+B) Santhanam Committee
+C) Kelkar Committee
+D) Swaran Singh Committee
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q46. Who was behind publishing the first News Paper in India?
+A) Deen Bandhu Mitra
+B) James Augustus Hickey
+C) Hem Chandrakar
+D) Harishchandra Mukherjee
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q47. Which country will host the 2031 Cricket World Cup ?
+A) England
+B) India and Bangladesh
+C) Australia
+D) West Indies
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q48. Haryana government announced _______ to provide support to women
+entrepreneurs, on International Women's Day 2022.
+A) UJJWALA Scheme
+B) Mahila E-Haat Scheme
+C) Matrushakti Udaymita Scheme
+D) SWADHAR Scheme
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q49. Which of the following statements are correct regarding the Centre-State Relations
+pertaining to the three lists of the Indian Constitution?
+A.The subjects which are not included in any of the three lists are called Residuary
+subjects.
+B.If there is any conflict between the Union List and the State List, then the former
+prevails.
+C.When the Parliament enacts a law on the request of two or more states, then that law
+made by the Parliament on the State List is applicable to all the states.
+A) A and C only
+B) B and C only
+C) A, B and C
+D) Aand B only
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q50. What is the child sex ratio in India in the 2011 Census?
+A) 914 females per 1000 males
+B) 911 females per 1000 males
+C) 941 females per 1000 males
+D) 814 females per 1000 males
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q51. 18 ÷ {(6 of 2 - 4)} × 5(6 - 3) = ______.
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p18_img29.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p18_img30.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p18_img31.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p18_img32.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q52. Study the given pie-chart carefully and answer the following question.
+If scholarship has to be paid out of the donation fund, then what is the percentage of
+donation fund used for this purpose (rounded off to two decimal places)?
+![Figure](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p18_img33.png)
+A) 74.29%
+B) 72.15%
+C) 80.25%
+D) 75.25%
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q53. 15 men and 21 women, working together, can do a job in 56 days, while 12 men and 24
+women, working together, can do the same job in 64 days. In how many days can the
+same job be done by 18 men and 24 women, working together?
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p19_img34.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p19_img35.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p19_img36.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p19_img37.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q54. During a division, Pranjal mistakenly took as the dividend a number that was 10%
+more than the original dividend. He also mistakenly took as the divisor a number that
+was 25% more than the original divisor. If the correct quotient of the original division
+problem was 25 and the remainder was O, what was the quotient that Pranjal obtained,
+assuming his calculations had no error?
+A) 21.75
+B) 21.25
+C) 28.75
+D) 22
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q55. If the selling price of an article is doubled, then the profit becomes four times. What
+was the original profit percentage?
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p19_img38.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p19_img39.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p19_img40.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p19_img41.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q56. A person standing at a distance looks at a building having a height of 1000 metres.
+The angle between the top of the building and the ground is 30°. At what approximate
+distance (in metres) is the person standing away from the building.
+A) 1000
+B) 936
+C) 1732
+D) 1542
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q57. A can do 20% of a job in 7 days and B can do 25% of the job in 7 days if they worked
+alone. How much of the job (in percentage) can they complete in 7 days if they worked
+together?
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p20_img42.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p20_img43.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p20_img44.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p20_img45.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q58. ![Figure](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p20_img46.png)
+A) 1
+B) 2
+C) -1
+D) 0
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q59. ![Figure](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p21_img47.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p21_img48.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p21_img49.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p21_img50.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p21_img51.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q60. ![Figure](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p21_img52.png)
+A) Angela
+B) Maria
+C) Deepika
+D) Preeti
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q61. ![Figure](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p21_img53.png)
+A) 9604
+B) 9602
+C) 9600
+D) 9606
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q62. A dealer marks his goods at 20% above the cost price and allows a discount of 15% on
+the marked price. What is his gain or loss percentage?
+A) 4% gain
+B) 2% loss
+C) 2% gain
+D) 4% loss
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q63. A six-digit number is divisible by 33. If 54 is added to the number, then the new
+number formed will also be divisible by:
+A) 3
+B) 2
+C) 5
+D) 7
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q64. ![Figure](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p22_img54.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p22_img55.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p22_img56.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p22_img57.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p22_img58.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q65. A sector of a circle of radius 10 cm is formed at 60°angle at the centre. What will be its
+area (take TT = 3.14)?
+A) 52.33 cm²
+B) 75.28 cm²
+C) 60.67 cm²
+D) 55.00 cm²
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q66. ![Figure](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p23_img59.png)
+A) 2.1 cm
+B) 3.3 cm
+C) 3 cm
+D) 2.5 cm
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q67. A part of a journey is covered in 37.5 minutes at 90 km/h and the remaining part in 14
+minutes at 80 km/h. The total distance (in km) of the journey is:
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p23_img60.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p23_img61.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p23_img62.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p23_img63.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q68. 20 students of a college went to a hotel. 19 of them spent ₹175 each on their meal and
+the 20th student spent ₹19 more than the average of all the 20. Find the total money
+spent by them.
+A) ₹3,490
+B) ₹3,540
+C) ₹3,520
+D) ₹3,500
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q69. ![Figure](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p24_img64.png)
+A) 4% p.a.
+B) 2% p.a.
+C) 5% p.a.
+D) 3% p.a.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q70. Simplify the expression.
+![Figure](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p24_img65.png)
+A) 3.10
+B) 4.60
+C) 4.10
+D) 2.1
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q71. The area of the sector of a circle of radius 12 cm is 32 Tt cm². Find the length of the
+corresponding arc of the sector.
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p24_img66.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p24_img67.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p24_img68.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p24_img69.png)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q72. Which of the following statements is INCORRECT?
+A) Radius is the longest chord of a circle.
+B) The ratio of circumference of two circles is equal to the ratio of their radii.
+C) 'pendicular drawn from the center of the circle on the chord of the circle bisects the
+D) Circles are congruent to each other if they have equal radii.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q73. A can complete a work in 18 days, while B can complete it in 12 days. B worked on it
+for 4 days. How long will A take to finish the remaining work?
+A) 16 days
+B) 12 days
+C) 14 days
+D) 10 days
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q74. Racer A and racer B run a race of 18 km on a circular track of length 800 m. Both
+complete one round in 200 sec and 250 sec, respectively. After how much time from
+the start will the faster person meet the slower person for the last time?
+A) 2700 sec
+B) 4000 sec
+C) 2250 sec
+D) 1800 sec
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q75. ![Figure](/images/pyq/2023/ssc-cgl-2023-17-july-2023-shift-4_p25_img70.png)
+A) 1924
+B) - 1924
+C) - 1926
+D) 1926
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q76. Select the most appropriate meaning of the given idiom.
+Back against the wall
+A) Be in an easy situation from where escape is difficult
+B) Be in a difficult situation from where escape is difficult
+C) Be in a relationship which one wants to escape
+D) Be in a difficult situation from where escape is easy
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q77. Select the most appropriate ANTONYM of the underlined word.
+His house was filthv with papers and eatables strewn everywhere.
+A) Dignified
+B) Integral
+C) Barren
+D) Clean
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q78. Select the option that expresses the given sentence in passive voice.
+She is laughing at me.
+A) I am being laughed at by her.
+B) I have been laughed by her.
+C) I was being laughed at by her.
+D) I had been laughed by her.
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q79. Select the most appropriate ANTONYM of the underlined word.
+He was uncomfortable at the sport event.
+A) Easeful
+B) Difficult
+C) Awkward
+D) Troublesome
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q80. Select the option that expresses the given sentence in past tense form.
+The declarations which come out from that office are not dependable.
+A) The declarations which will come out from that office may not be dependable.
+B) The declarations which come out from that office were not dependable.
+C) The declarations which came out from that office are not dependable.
+D) The declarations which came out from that office were not dependable.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q81. Select the most appropriate option that can substitute the underlined segment in the
+given sentence.
+The management is not beware of this fact.
+A) aware of
+B) awaking to
+C) beware to
+D) watchful with
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q82. Select the INCORRECTLY spelt word.
+A) Reasonable
+B) Laughable
+C) Blessed
+D) Prophane
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q83. Select the option that can be used as a one-word substitute for the given group of
+words.
+A detailed description of a series of real or fictional events taking place over a long
+period of time
+A) Witness
+B) Journal
+C) Saga
+D) Case study
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q84. Select the option that can be used as a one-word substitute for the given group of
+words.
+A person who compiles a dictionary
+A) Plagiarist
+B) Iconoclast
+C) Bibliophile
+D) Lexicographer
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q85. Select the most appropriate ANTONYM of the word ‘Sophisticated' from the given
+sentence.
+The tribe had no access to modern technology or resources and had to rely on
+primitive tools and techniques for survival.
+A) Technology
+B) Primitive
+C) Modern
+D) Techniques
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q86. Read the given sentence and select the most appropriate synonym of the word
+'Vigilant' from the following options.
+The burglar was very cautious, so he avoided the security perfectly as they didn't find
+any proof.
+A) cautious
+B) proof
+C) burglar
+D) security
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q87. Choose the ANTONYM of the word 'effervescent' in the given sentence.
+Sonali is bubbly and carefree in comparison to her sister Mitali's subdued nature.
+A) Bubbly
+B) Comparison
+C) Carefree
+D) Subdued
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q88. Select the most appropriate synonym of the underlined word.
+The case of Vanuatu in 2020 is a clear example of the constant and complex
+challenges faced by SIDS. It shows how SIDS are dealing with multiple crises at the
+same time and how COVID-19 has particularly exposed SIDS' extreme and interlinked
+vulnerabilities.
+A) continuous
+B) seVere
+C) free
+D) interlaced
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q89. Select the most appropriate meaning of the given word.
+Harangue
+A) Strict disciplinarian
+B) Breaker of idols
+C) Airplane shed
+D) A lengthy and aggressive speech
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q90. Select the most appropriate option that can substitute the bracketed segment in the
+given sentence.
+The river (flowing) under the bridge.
+A) was flow
+B) flows
+C) is flow
+D) is flowed
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q91. Select the most appropriate option that can substitute the underlined segment in the
+given sentence.
+They have disposed all the old books.
+A) disposed of
+B) disposed out
+C) disposed on
+D) disposed by
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q92. Select the most appropriate meaning of the given idiom.
+To prime the pump
+A) Manipulate someone to achieve success
+B) Encourage the growth or action of something'
+C) To use a pump efficiently
+D) Ask others to be ambitious
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q93. The sentence given below has one misspelt word. Spot the INCORRECTLY spelt word
+and select its correct spelling.
+Last-bench students are mysterous by nature.
+A) Mystirious
+B) Misterous
+C) Mysterious
+D) Misterious
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q94. Select the grammatically correct sentence.
+A. It is a old uniform but a memorable thing for me.
+B. It is old uniform but a memorable thing for me.
+C. It is the old uniform but memorable thing for me.
+D. It is an old uniform but a memorable thing for me.
+A) D
+B) c
+C) B
+D) A
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q95. Select the option that expresses the given sentence in passive voice.
+The audience loved her performance.
+A) The audience will love her performance.
+B) The performance is loved by the audience.
+C) Her performance was loved by the audience.
+D) The performance was loved by her.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q96. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fil in each blank.
+Redwing had read (1) _______ that one of his favourite writers, Ernest Hemingway, had
+been asked what was the best (2) _______ for a novelist. He had said “an unhappy
+childhood". Redwing had enjoyed a fine time growing up, but he (3) _______ if this whole
+(4) _______ was unfolding more like a novel, and would be (5) _______ on one person,
+one character, the guy in charge: him. Maybe you got a happy childhood and then an
+unhappy adulthood, and that's how novels worked.
+SubQuestion No : 21
+Select the most appropriate option to fill in blank no. 1.
+A) wholesome
+B) negligently
+C) somewhere
+D) careless
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q97. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+Redwing had read (1) _______ that one of his favourite writers, Ernest Hemingway, had
+been asked what was the best (2) _______ for a novelist. He had said “an unhappy
+childhood". Redwing had enjoyed a fine time growing up, but he (3) _______ if this whole
+(4) _______ was unfolding more like a novel, and would be (5) _______ on one person,
+one character, the guy in charge: him. Maybe you got a happy childhood and then an
+unhappy adulthood, and that's how novels worked.
+SubQuestion No : 22
+Select the most appropriate option to fill in blank no. 2.
+A) nature
+B) training
+C) medication
+D) maintenance
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q98. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fil in each blank.
+Redwing had read (1) _______ that one of his favourite writers, Ernest Hemingway, had
+been asked what was the best (2) _______ for a novelist. He had said “an unhappy
+childhood". Redwing had enjoyed a fine time growing up, but he (3) _______ if this whole
+(4) _______ was unfolding more like a novel, and would be (5) _______ on one person,
+one character, the guy in charge: him. Maybe you got a happy childhood and then an
+unhappy adulthood, and that's how novels worked.
+SubQuestion No : 23
+Select the most appropriate option to fill in blank no. 3.
+A) wasted
+B) wondered
+C) wandered
+D) welded
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q99. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+Redwing had read (1) _______ that one of his favourite writers, Ernest Hemingway, had
+been asked what was the best (2) _______ for a novelist. He had said “an unhappy
+childhood". Redwing had enjoyed a fine time growing up, but he (3) _______ if this whole
+(4) _______ was unfolding more like a novel, and would be (5) _______ on one person,
+one character, the guy in charge: him. Maybe you got a happy childhood and then an
+unhappy adulthood, and that's how novels worked.
+SubQuestion No : 24
+Select the most appropriate option to fill in blank no. 4.
+A) expiation
+B) expectation
+C) exasperation
+D) expedition
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q100. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fil in each blank.
+Redwing had read (1) _______ that one of his favourite writers, Ernest Hemingway, had
+been asked what was the best (2) _______ for a novelist. He had said “an unhappy
+childhood". Redwing had enjoyed a fine time growing up, but he (3) _______ if this whole
+(4) _______ was unfolding more like a novel, and would be (5) _______ on one person,
+one character, the guy in charge: him. Maybe you got a happy childhood and then an
+unhappy adulthood, and that's how novels worked.
+SubQuestion No : 25
+Select the most appropriate option to fill in blank no. 5.
+A) based
+B) bloomed
+C) blessed
+D) blamed
+Correct Answer: Option A
+--------------------------------------------------------------------------------

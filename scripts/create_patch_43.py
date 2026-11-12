@@ -1,0 +1,216 @@
+import json
+import os
+
+patch_data = {
+    "paper_id": 43,
+    "title": "SSC CGL 2026 Tier-I (Held On 9 October 2026 Shift 2)",
+    "total_questions": 100,
+    "changes_count": 28,
+    "changes": [
+        {
+            "question_number": 10,
+            "id": 16111,
+            "old_answer": "A",
+            "new_answer": "C",
+            "reason": "Professional leadership requires immediately addressing the mocking behaviour, clarifying that it is unacceptable, and ensuring support exists."
+        },
+        {
+            "question_number": 26,
+            "id": 16127,
+            "old_answer": "A",
+            "new_answer": "B",
+            "reason": "Price elasticity of demand = (%ΔQ)/(%ΔP) = (15/100)/(5/100) = 15%/5% = 3."
+        },
+        {
+            "question_number": 27,
+            "id": 16128,
+            "old_answer": "A",
+            "new_answer": "C",
+            "reason": "Corporate tax is a direct tax on company profits, whereas GST, excise duty, and central sales tax are indirect taxes."
+        },
+        {
+            "question_number": 28,
+            "id": 16129,
+            "old_answer": "A",
+            "new_answer": "B",
+            "reason": "Kalaripayattu is the ancient traditional martial art originating and practiced in Kerala."
+        },
+        {
+            "question_number": 29,
+            "id": 16130,
+            "old_answer": "A",
+            "new_answer": "C",
+            "reason": "India's first-ever MotoGP race (Grand Prix of India) was held in September 2023 at the Buddh International Circuit."
+        },
+        {
+            "question_number": 33,
+            "id": 16134,
+            "old_answer": "A",
+            "new_answer": "B",
+            "reason": "The uniqueness of the Rigveda lies in its multi-period compilation across several centuries by different priestly families."
+        },
+        {
+            "question_number": 34,
+            "id": 16135,
+            "old_answer": "A",
+            "new_answer": "D",
+            "reason": "In the Mizo traditional wind instrument Rawchhem, distinct notes and melodies are produced by controlling the finger holes on the bamboo pipes."
+        },
+        {
+            "question_number": 35,
+            "id": 16136,
+            "old_answer": "A",
+            "new_answer": "B",
+            "reason": "Statement 1 is false (hub was launched in Jan 2025 for startups, not May for rural connectivity) while Statement 2 is correct regarding MSMEs' 45% export contribution and 25+ crore employment."
+        },
+        {
+            "question_number": 40,
+            "id": 16141,
+            "old_answer": "A",
+            "new_answer": "C",
+            "reason": "Article 243J of the Constitution empowers the State Legislature to make provisions regarding the maintenance and auditing of Panchayat accounts."
+        },
+        {
+            "question_number": 41,
+            "id": 16142,
+            "old_answer": "A",
+            "new_answer": "B",
+            "reason": "Udaipur district (specifically the Umra-Shikarbari deposit) is historically recognized for uranium mineralization in Rajasthan."
+        },
+        {
+            "question_number": 44,
+            "id": 16145,
+            "old_answer": "A",
+            "new_answer": "C",
+            "reason": "The first-ever Asian Games were held in New Delhi, India in March 1951."
+        },
+        {
+            "question_number": 45,
+            "id": 16146,
+            "old_answer": "A",
+            "new_answer": "C",
+            "reason": "Both statements are correct; buff-tip moth larvae feed gregariously to strip trees bare within weeks and Phalera cf. bucephala is its scientific designation."
+        },
+        {
+            "question_number": 49,
+            "id": 16150,
+            "old_answer": "A",
+            "new_answer": "D",
+            "reason": "Inadequate investment in infrastructure (especially power and transportation) was the primary constraint on industrial growth following the 1991 economic reforms."
+        },
+        {
+            "question_number": 50,
+            "id": 16151,
+            "old_answer": "A",
+            "new_answer": "B",
+            "reason": "The first-order Stark shift vanishes because the 1s ground state wavefunction is spherically/rotationally symmetric with definite parity, giving <1s|z|1s> = 0."
+        },
+        {
+            "question_number": 53,
+            "id": 16154,
+            "old_answer": "A",
+            "new_answer": "B",
+            "reason": "Total surface area of a closed cylinder = 2πr(r + h) = 2π(5)(5 + 8) = 130π m²."
+        },
+        {
+            "question_number": 66,
+            "id": 16167,
+            "old_answer": "A",
+            "new_answer": "D",
+            "reason": "By SAS similarity, ΔADE ~ ΔABC gives ∠ADE = ∠B = 78°, so ∠C = 78° - 30° = 48°, and ∠A = 180° - (78° + 48°) = 54°."
+        },
+        {
+            "question_number": 68,
+            "id": 16169,
+            "old_answer": "A",
+            "new_answer": "C",
+            "reason": "Solving (25x + 7)/(4x - 2) = 22/3 gives x = 5; original total students appeared = 25x + 4x = 29(5) = 145."
+        },
+        {
+            "question_number": 69,
+            "id": 16170,
+            "old_answer": "A",
+            "new_answer": "C",
+            "reason": "Solving 6(P + A) = (200/31)(0.75P + 1.2A) yields 2P = 3A; total work W = 10P, so Preeti alone takes 10 days."
+        },
+        {
+            "question_number": 70,
+            "id": 16171,
+            "old_answer": "A",
+            "new_answer": "C",
+            "reason": "In right triangle ABC with ∠C = 90°, sin A = 0.6 = 3/5 implies BC = 3, AC = 4, so tan B = AC/BC = 4/3."
+        },
+        {
+            "question_number": 72,
+            "id": 16173,
+            "old_answer": "A",
+            "new_answer": "C",
+            "reason": "u² + v² = (u + v)² - 2uv = 17² - 2(39) = 289 - 78 = 211."
+        },
+        {
+            "question_number": 73,
+            "id": 16174,
+            "old_answer": "A",
+            "new_answer": "B",
+            "reason": "x² + 1/x² = 12² - 2 = 142; x⁴ + 1/x⁴ = 142² - 2 = 20162; total sum = 20162 + 142 = 20304."
+        },
+        {
+            "question_number": 74,
+            "id": 16175,
+            "old_answer": "A",
+            "new_answer": "C",
+            "reason": "Salt remaining after first step is 96 L (19.2%); after removing 50 L and adding 50 L of 60% salt solution, total salt is 86.4 + 30 = 116.4 L, giving 116.4/500 = 23.28%."
+        },
+        {
+            "question_number": 75,
+            "id": 16176,
+            "old_answer": "A",
+            "new_answer": "C",
+            "reason": "Length of transverse common tangent = √(d² - (r1 + r2)²) = √(25² - (12 + 8)²) = √(625 - 400) = √225 = 15 cm."
+        },
+        {
+            "question_number": 84,
+            "id": 16185,
+            "old_answer": "A",
+            "new_answer": "C",
+            "reason": "Logical sequence begins with the 1992 exoplanet discovery (1), defines exoplanets (5), describes recent discoveries (2), classification (3), and life potential (4): 1-5-2-3-4."
+        },
+        {
+            "question_number": 85,
+            "id": 16186,
+            "old_answer": "C",
+            "new_answer": "D",
+            "reason": "Logical flow starts with women's role in the French Revolution (3), specific organizations (1), post-revolutionary setback (2), and feminist legacy (4): 3-1-2-4."
+        },
+        {
+            "question_number": 89,
+            "id": 16190,
+            "old_answer": "D",
+            "new_answer": "B",
+            "reason": "'Domesticated' precisely fits the context of citizens being subdued or conditioned into passive compliance."
+        },
+        {
+            "question_number": 90,
+            "id": 16191,
+            "old_answer": "A",
+            "new_answer": "B",
+            "reason": "In the critique of sanitized, controlled spaces, freedom is reduced to 'containment' within programmed boundaries."
+        },
+        {
+            "question_number": 100,
+            "id": 16201,
+            "old_answer": "A",
+            "new_answer": "C",
+            "reason": "Direct speech retains the negative inversion and past modal: '\"Under no condition would the authorities release the documents early,\" said the journalist.'"
+        }
+    ]
+}
+
+os.makedirs('scripts/verified_patches', exist_ok=True)
+out_path = 'scripts/verified_patches/patch_paper_43.json'
+
+with open(out_path, 'w', encoding='utf-8') as f:
+    json.dump(patch_data, f, indent=2, ensure_ascii=False)
+
+print(f"Patch successfully saved to {out_path}")
+print(f"Total changes: {patch_data['changes_count']}")

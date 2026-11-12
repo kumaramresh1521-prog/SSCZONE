@@ -1,0 +1,1034 @@
+================================================================================
+SSC CGL 2023 TIER-I (HELD ON 21 JULY 2023 SHIFT 2)
+Exam: SSC CGL | Year: 2023
+Total Questions: 100 | Duration: 60 Minutes
+Extracted from Official Answer Key via SSC ZONE (www.ssczone.in)
+================================================================================
+
+Q1. Select the correct mirror image from the following options, when the mirror is placed
+on the right side of the given figure.
+![Figure](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p2_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p2_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p2_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p2_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p2_img5.png)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q2. If,
+'B % D' means 'B is the brother of D',
+'B & D' means 'B is the mother of D',
+'B × D' means 'B is the husband of D',
+'B # D' means 'B is the sister of D',
+'B $ D' means 'B is the son of D',
+'B @ D' means 'B is the father of D',
+then how is A related to E in the given expression?
+A % D $ F # B % E × S
+A) Husband
+B) Nephew
+C) Maternal uncle
+D) Brother
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q3. ![Figure](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p3_img6.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p3_img7.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p3_img8.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p3_img9.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p3_img10.png)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q4. The second number in the given number-pairs is obtained by performing certain
+mathematical operation(s) on the first number. The same operation(s) is/are followed
+in all the number-pairs, except one. Find that odd number-pair.
+A) (7, 89)
+B) (8, 102)
+C) (5, 60)
+D) (6, 76)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q5. Select the option that is related to the fifth letter-cluster in the same way as the second
+letter-cluster is related to the first letter-cluster and the fourth letter-cluster is related
+to the third letter-cluster.
+MOTHER : SGKXTS : SIMPLE : FNSQNY :: DELIGHT : ?
+A) UJJMQJJ
+B) VJJMQKK
+C) UJJMQKK
+D) THGILED
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q6. Select the option that represents the correct order of the given words as they would
+appear in an English dictionary.
+1. Phantom
+2. Photograph
+3. Philosophy
+4. Physical
+5. Pharynx
+6. Physics
+A) 5, 1, 3, 2, 4, 6
+B) 1, 5, 3, 2, 6, 4
+C) 1, 5, 3, 2, 4, 6
+D) 5, 1, 3, 2, 6, 4
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q7. ![Figure](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p5_img11.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p5_img12.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p5_img13.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p5_img14.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p5_img15.png)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q8. Three statements are given, followed by four conclusions numbered I, Il, Ill and IV.
+Assuming the statements to be true, even if they seem to be at variance with
+commonly known facts, decide which of the conclusions logically follow(s) from the
+statements.
+Statements:
+Some trees are leaves.
+Some leaves are flowers.
+Some flowers are branches.
+Conclusions:
+I. Some trees are flowers.
+Il. Some leaves are branches.
+Ill. Some branches are flowers.
+IV. Some branches are leaves.
+A) Only conclusions II and I follow
+B) Only conclusions I and II follow
+C) Only conclusion Il follows
+D) None of the conclusions follow
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q9. In a certain code language, 'BEAK' is coded as ‘4392' and ‘RAKE' is coded as “9034'.
+What is the code for 'B' in the given code language?
+A) 3
+B) 2
+C) 4
+D) 9
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q10. Study the given pattern carefully and select the number that can replace the question
+mark (?) in it.
+(5, 14, 3)
+(3, 24, 7)
+(9, 30, ?)
+(NOTE: Operations should be performed on the whole numbers, without breaking
+down the numbers into its constituent digits. E.g. 13 - Operations on 13 such as
+adding/subtracting/multiplying etc. to 13 can be performed. Breaking down 13 into 1
+and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+A) 7
+B) 5
+C) 13
+D) 9
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q11. In this question, three statements are given, followed by three conclusions numbered
+I, Il and Il. Assuming the statements to be true, even if they seem to be at variance
+with commonly known facts, decide which of the conclusions logically follows/follow
+from the statements.
+Statements:
+Some mirrors are glass.
+All glass are taps.
+Some taps are pens.
+Conclusions:
+I. Some glass are mirrors.
+Il. All taps are glass.
+I. Some pens are taps.
+A) None of the conclusions follows.
+B) Only conclusions I and II follow.
+C) Only conclusion II follows.
+D) Only conclusions I and Ill follow.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q12. ![Figure](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p8_img16.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p8_img17.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p8_img18.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p8_img19.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p8_img20.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q13. Select the option that represents the letters that, when sequentially placed from left to
+right in the blanks below, will complete the letter series.
+T_OJEW_TRO_EWF_ROJ _WFTR_JE_F
+A) RFJTEOW
+B) RJFOTWE
+C) RJFTWOE
+D) RFJOTEW
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q14. Which two numbers and two signs should be interchanged in the following equation to
+make it correct?
+7 × 14 ÷ 6 + 12 + 6 = 30
+A) 7 and 6, × and ÷
+B) 7 and 14, × and ÷
+C) 7 and 6, ÷ and +
+D) 7 and 14, × and +
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q15. Select the option that is related to the fifth term in the same way as the second term is
+related to the first term and the fourth term is related to the third term.
+160 : 4 :: 250 : 5 :: 360 : ?
+A) 6
+B) 9
+C) 4
+D) 10
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q16. Select the correct combination of mathematical signs to sequentially replace the *
+signs and balance the given equation.
+74 * 34 * 78 * 23 * 23* 30
+A) ÷,一,+,×,=
+B) +. ÷. ×. −. =
+C) +. −. +. −. =
+D) 1, ÷,+,×,=
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q17. Select the set in which the numbers are related in the same way as are the numbers of
+the given sets.
+(NOTE : Operations should be performed on the whole numbers, without breaking
+down the numbers into its constituent digits. E.g. 13 - Operations on 13 such as
+adding /Subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1
+and 3 and then performing mathematical operations on 1 and 3 is NOT allowed)
+(5, 30, 60)
+(11, 66, 132)
+A) (6, 42, 148)
+B) (14, 84, 168)
+C) (14, 16, 118)
+D) (2, 10, 16)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q18. ![Figure](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p10_img21.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p10_img22.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p10_img23.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p10_img24.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p10_img25.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q19. ![Figure](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p11_img26.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p11_img27.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p11_img28.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p11_img29.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p11_img30.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q20. Which of the following letter-clusters will replace the question mark (?) in the given
+series?
+EIMC, DKOD, CMQE, ?, AQUG
+A) CPSF
+B) COSF
+C) BPSF
+D) BOSF
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q21. Select the option that is related to the fifth letter-cluster in the same way as the second
+letter-cluster is related to the first letter-cluster and the fourth letter-cluster is related
+to the third letter-cluster.
+IDEOLOGY : YGILIYDC :: HARDWARE : YRUWDRUH :: ISOLATED : ?
+A) XCVFWIA
+B) BUSIMAQS
+C) JOKLERD
+D) DYTULISC
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q22. Select the correct combination of mathematical signs to sequentially replace the *
+signs and to balance the given equation.
+321 * 3 * 236 * 5* 248 * 4 *20 =384
+A) +,一,×,+, ÷,×
+B) −. +. ×. −. ÷. +
+C) ÷. +. −. ×. +. −
+D) ×,+,一, ÷,+,一
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q23. Select the option that represents the letters that, when sequentially placed from left to
+right in the blanks below, will complete the letter series.
+P__MO_ST_OP_TM__S_MO
+A) STPMSOPT
+B) TSSMPOPT
+C) STSMPOPT
+D) STPSMOPT
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q24. In a certain code language, 'CHORUS' is coded as UVTPJD and 'ANTHEM' is coded as
+OFJUPB. How will 'VOLUME' be coded in the same language?
+A) GNXMPW
+B) GNWNPW
+C) HMWNPV
+D) GNWMQW
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q25. Select the option that is related to the fifth term in the same way as the second term is
+related to the first term and the fourth term is related to the third term.
+121 : 12 :: 225 : 16 :: 441 :?
+A) 21
+B) 19
+C) 23
+D) 22
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q26. Which Article of the Indian Constitution stipulates that the law declared by the
+Supreme Court shall be binding on all courts within the territory of India?
+A) Article 141
+B) Article 140
+C) Article 142
+D) Article 145
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q27. Who among the following Sultans of Delhi started the system of Sijda and Paibos?
+A) Muhammad Bin Tughluq
+B) Nasir ud din Muhammad
+C) Ghiyas ud din Balban
+D) Qutb ud-Din Aibak
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q28. Someity is related to which of the following events?
+A) Tokyo Olympics 2020
+B) Winter Olympics 2022
+C) Commonwealth games 2022
+D) Tokyo paralympic 2020
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q29. Pandit Kishan Maharaj of Benaras Gharana was a ______- player.
+A) santoor
+B) flute
+C) sarangi
+D) tabla
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q30. Identify the last element from the fifth period.
+A) Helium
+B) Yttrium
+C) Rubidium
+D) Xenon
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q31. The largest freshwater lake of India is ______.
+A) Chilika
+B) Koleru
+C) Vembanad
+D) Wular
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q32. Which of the following rights is guaranteed by Article 25 of the Indian Constitution?
+A) Right to freedom of religion
+B) Cultural and educational rights
+C) Right to equality
+D) Right to constitutional remedies
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q33. Which water body separates Andaman in the north and Nicobar in the south?
+A) Ten Degree Channel
+B) Eight Degree Channel
+C) Eleven Degree Channel
+D) Nine Degree Channel
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q34. On 30 January 2023, the two-day meeting of the first International Financial
+Architecture Working Group of G-20, being held under the chairmanship of India, was
+inaugurated by the Union Minister of Agriculture and Farmers Welfare, Narendra Singh
+Tomar and Minister of Food Processing Industries, Pashupati Kumar Paras in
+______.
+A) Bhubaneswar
+B) New Delhi
+C) Mumbai
+D) Chandigarh
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q35. Who among the following Mauryan rulers conquered Kalinga?
+A) Ashoka
+B) Bindusara
+C) Brihadratha
+D) Chandragupta Maurya
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q36. The term 'Straight drive' is related to which of the following sports?
+A) Hockey
+B) Cricket
+C) Football
+D) Badminton
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q37. Which organic compound has a pleasant almond aroma that is commonly used to
+impart almond flavour to chocolate and baked goods?
+A) Manzanate
+B) Benzaldehyde
+C) Ethyl maltol
+D) Isoamyl acetate
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q38. What is Net National Product?
+A) The product of Gross National Product and depreciation is Net National Product.
+B) The sum of Gross National Product and income of foreigners is Net National Product.
+C) Net National Product is equal to Gross National Product.
+D) The difference between Gross National Product and depreciation is Net National Product.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q39. ![Figure](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p16_img31.png)
+A) i-a, i-b, ili-c, iv-d
+B) i-b, i-a, ili-d, iv-c
+C) i-d, i-c, ili-b, iv-a
+D) i-b, i-c, ili-a, iv-d
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q40. Sikhs celebrate Bandi Chhor Divas which coincides with which Hindu festival?
+A) Ganesh Chaturthi
+B) Holi
+C) Diwali
+D) Dussehra
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q41. Under the PL 480 scheme, India used to import wheat from which country?
+A) USSR
+B) USA
+C) France
+D) UK
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q42. Which crop is grown during the Zaid season in India?
+A) Cucumber
+B) Jowar
+C) Bajra
+D) Maize
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q43. Kalakshetra style is associated with which Indian classical dance form?
+A) Odissi
+B) Kathak
+C) Kuchipudi
+D) Bharatanatyam
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q44. When and at which place did the Jallianwala Bagh massacre take place?
+A) On 13 April 1919, at Amritsar
+B) On 12 April 1919, at Chauri Chaura
+C) On 13 May 1918, at Amritsar
+D) On 14 March 1919, at Amritsar
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q45. V Satyanarayana Sarma, a Padma Shri awardee, was recognised for which of the
+following dance forms?
+A) Odissi
+B) Bharatanatyam
+C) Kathak
+D) Kuchipudi
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q46. Which of the following cities of Nepal does NOT have a branch of lndian Citizen's
+Association of Nepal'?
+A) Pokhara
+B) Lalitpur
+C) Bhairahawa
+D) Damak
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q47. In February 2022, Ministry of Agriculture and Farmers Welfare announced the launch
+of ______-, which is a doorstep distribution drive to deliver crop insurance policies
+to farmers under the Pradhan Mantri Fasal Bima Yojana (PMFBY).
+A) Meri Policy Mere Hath
+B) Saubhagya scheme
+C) SEED scheme
+D) Kaushal Yojana
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q48. In which of the following states Vidhan Sabha elections was not held in 2022?
+A) Haryana
+B) Goa
+C) Punjab
+D) Uttar Pradesh
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q49. Who designed the administrative code to separate revenue administration from
+judicial administration?
+A) Lord Lytton
+B) Lord Cornwallis
+C) Lord Auckland
+D) Warren Hastings
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q50. Identify the correct statement about Newlands' law of octaves.
+A) He started with the element having the highest atomic mass (hydrogen) and ended at
+which Wac the 56th element
+B) II VuU ICUCICIIICIIL.
+He started with the element having the lowest atomic mass (hydrogen) and ended at
+C) .
+He started with the element having the lowest atomic mass (hydrogen) and ended at
+Jm.
+D) ..
+He started with the element having the lowest atomic mass (hydrogen) and ended at
+which was the 56th element.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q51. The distance between two towns is covered in 7 hours and 30 minutes at the speed of
+72 km/h. The time saved if the speed is increased by 25% is:
+A) 1 hour 36 minutes
+B) 1 hour 50 minutes
+C) 1 hour 30 minutes
+D) 1 hour 20 minutes
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q52. ![Figure](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p19_img32.png)
+A) 231
+B) 230
+C) 232
+D) 234
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q53. ![Figure](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p20_img33.png)
+A) 45 Crore
+B) 46 Crore
+C) 40 Crore
+D) 42 Crore
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q54. Rice worth ₹126 per kg and ₹135 per kg are mixed with a third variety in the ratio of 1 :
+1 : 2. If the mixture is worth ₹153 per kg, then the price of the third variety per kg (in ₹)
+is:
+A) 182.5
+B) 195.5
+C) 133.5
+D) 175.5
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q55. While baking a cake for 15 people, Jaya used 2.4 kg of flour. How much flour will she
+need to bake a similar cake for 36 people?
+A) 5.60 kg
+B) 6.00 kg
+C) 5.88 kg
+D) 5.76 kg
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q56. ![Figure](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p21_img34.png)
+A) 25% p.a.
+B) 10% p.a.
+C) 15% p.a.
+D) 20% p.a.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q57. A policeman chasing a thief is 0.5 km behind the thief. The speed of thief is 80% of the
+speed of the policeman and policeman catches him in 12 minutes. What is the speed
+of the thief (in km/h)?
+A) 10
+B) 12.5
+C) 15
+D) 7.5
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q58. ![Figure](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p21_img35.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p21_img36.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p21_img37.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p21_img38.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p21_img39.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q59. If △ABC is right angled at B, AB = 12 cm and ∠CAB = 60°, determine the length of BC.
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p22_img40.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p22_img41.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p22_img42.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p22_img43.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q60. ![Figure](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p22_img44.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p22_img45.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p22_img46.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p22_img47.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p22_img48.png)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q61. A works 5.4 times as fast as B, and A takes 22 days less than B to complete the job
+when each works alone. Calculate the number of days taken to complete the same job
+if A and B work together.
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p22_img49.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p22_img50.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p22_img51.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p22_img52.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q62. Two pipes S1 and S2 alone can fill an empty tank in 15 hours and 20 hours
+respectively. Pipe S3 alone can empty that completely filled tank in 40 hours. Firstly
+both pipes S1 and S2 are opened and after 2 hour pipe S3 is also opened. In how much
+time tank will be completely filled after S3 is opened?
+A) 90/17 hours
+B) 89/12 hours
+C) 90/13 hours
+D) 92/11 hours
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q63. Amit can complete a piece of work in 5 hours; Jeevan and Paul together can complete
+it in 4 hours, while Amit and Paul together can complete it in 3 hours. Approximately,
+how many hours will Jeevan alone take to complete the work (rounded off to the
+nearest integer)?
+A) 5
+B) 6
+C) 9
+D) 8
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q64. ![Figure](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p23_img53.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p23_img54.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p23_img55.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p23_img56.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p23_img57.png)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q65. ![Figure](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p24_img58.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p24_img59.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p24_img60.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p24_img61.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p24_img62.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q66. AB = 28 cm and CD = 22 cm are two parallel chords on the same side of the centre of a
+circle. The distance between them is 4 cm. The radius of the circle is ______!
+(Consider up to two decimals)
+A) 15.20 cm
+B) 14.82 cm
+C) 15.82 cm
+D) 13.20 cm
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q67. ![Figure](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p24_img63.png)
+A) 1030
+B) 960
+C) 1000
+D) 970
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q68. To earn a 12% profit, a shopkeeper sells a television for ₹22,400. What should be the
+selling price (in ₹) of the television if he wants a double profit?
+A) 24,000
+B) 24,800
+C) 24,600
+D) 25,000
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q69. The perimeter of an isosceles triangle is 100 cm. If the base is 36 cm, then find its semi
+perimeter (in centimetres).
+A) 64
+B) 60
+C) 45
+D) 50
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q70. Three successive discounts of 25% each on the marked price of an item are together
+equivalent to a single discount (correct up to 2 decimal places) of:
+A) 62.35%
+B) 60.25%
+C) 56.45%
+D) 57.81%
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q71. The sides of two similar triangles are in the ratio 5:7. The areas of these triangles are
+in the ratio:
+A) 35 :49
+B) 15 :49
+C) 25 :49
+D) 36 :49
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q72. ![Figure](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p26_img64.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p26_img65.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p26_img66.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p26_img67.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p26_img68.png)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q73. ![Figure](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p26_img69.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p26_img70.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p26_img71.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p26_img72.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p26_img73.png)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q74. ![Figure](/images/pyq/2023/ssc-cgl-2023-21-july-2023-shift-2_p26_img74.png)
+A) 1924
+B) -1926
+C) -1924
+D) 1926
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q75. The value of secx - cosx= ?
+A) tanx sinx
+B) secx tanx
+C) tanx cosx
+D) SeCX CoSx
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q76. Select the option that can be used as a one-word substitute for the given group of
+words.
+The place that a person treats as his permanent home, or lives in and has a substantial
+connection with
+A) Oasis
+B) Domicile
+C) Embankment
+D) Resort
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q77. Select the most appropriate option that can substitute the underlined segment in the
+given sentence. If there is no need to substitute it, select 'No substitution'.
+My friend is owina an expensive cell phone.
+A) own an expensive cell phone
+B) owns an expensive cell phone.
+C) No substitution
+D) is own an expensive cell phone
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q78. Select the option that expresses the given sentence in passive voice.
+He has not committed the crime.
+A) The crime was not committed by him.
+B) The crime have not being committed by him.
+C) The crime have not been committed by him.
+D) The crime has not been committed by him.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q79. Select the most appropriate synonym of the underlined word.
+During the summer of 1893, Miss Sullivan and I visited the World's Fair with Dr.
+Alexander Graham Bell. I recall with unmixed delight those days when a thousand
+childish fancies became beautiful realities.
+A) enchant
+B) dismay
+C) memory
+D) emotion
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q80. The following sentence has been split into four segments. Identify the segment that
+contains a grammatical error.
+Binay said that / he is coming I from / his village, Jaygarh.
+A) from
+B) he is coming
+C) his village, Jaygarh
+D) Binay said that
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q81. Select the most appropriate synonym of the given word.
+Genial
+A) Optimistic
+B) Cheerful
+C) Despondent
+D) Positive
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q82. Sentences of a paragraph are given below in jumbled order. Arrange the sentences in
+the correct order to form a meaningful and coherent paragraph.
+A. In 1944, he was honoured by King George VI with a Knighthood and became Sir
+Alexander Fleming.
+B. On receiving this great honour, Fleming said in his usual modest way, "Wherever I
+go, people thank me for saving their lives. I didn't do anything; I just found a remedy
+that was there."
+C. Fleming became famous overnight and was regarded as one of the most
+distinguished scientists of his time.
+D. The next year, he and his fellow bacteriologists, whose combined efforts had led to
+the great discovery, were honoured with a joint Nobel Prize.
+A) DBCA
+B) ADBC
+C) CADB
+D) BCDA
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q83. Select the most appropriate synonym of the given word.
+Absorbed
+A) Preoccupied
+B) Soaked
+C) Restored
+D) Replaced
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q84. Select the INCORRECTLY spelt word.
+A) Treble
+B) Nozzle
+C) Allmost
+D) Moisture
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q85. Identify the option that defines the homonyms 'gate' and 'gait' most appropriately.
+A) Gate means to achieve or receive, and gait means a person's manner of walking.
+B) Gate means a hinged barrier used to close an opening in a wall, fence or hedge, and
+ans a nerson's manner of walkina.
+C) .
+Gate means general agreement on tariff and excise, and gait means a person's
+' of talkina.
+D) ....
+Gate means a hinged barrier used to close an opening in a wall or fence, and gait
+a cloth or leather leg covering reaching from the instep to above the ankle or to the
+F or knee.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q86. Parts of the following sentence have been given as options. Select the option that
+contains an error.
+She was waiting for a opportunity to start her own business.
+A) own business
+B) to start her
+C) for a opportunity
+D) She was waiting
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q87. Select the most appropriate option that can substitute the underlined segment in the
+given sentence.
+The players distributed the reward between themselves
+A) between them
+B) among themselves
+C) between their selves
+D) amongst their self
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q88. Sentences of a paragraph are given below in jumbled order. Arrange the sentences in
+the correct order to form a meaningful and coherent paragraph.
+A. It was the night before the day fixed for his coronation, and the young King was
+sitting alone in his beautiful chamber.
+B. And, indeed, it was the hunters who had found him, coming upon him almost by
+chance as, bare-limbed and pipe in hand, he was following the flock of the poor goat
+herd who had brought him up, and whose son he had always fancied himself to be.
+C. The lad-for he was only a lad, being but sixteen years of age-was not sorry at
+their departure, and had flung himself back with a deep sigh of relief on the soft
+cushions of his embroidered couch, lying there, wild-eyed and open-mouthed, like a
+brown woodland Faun, or some young animal of the forest newly snared by the
+hunters.
+D. His courtiers had all taken their leave of him, bowing their heads to the ground,
+according to the ceremonious usage of the day, and had retired to the Great Hall of the
+Palace, to receive a few last lessons from the Professor of Etiquette; there being some
+of them who had still quite natural manners, which in a courtier is, I need hardly say, a
+very grave offence.
+A) ADCB
+B) CBDA
+C) ACDB
+D) CDBA
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q89. Parts of the following sentence have been underlined and given as options. Select the
+option that contains a spelling error.
+If more is desired than the instantanious impact on the mind, the advertisina value of
+the poster falls sharply, within limits of outdoor publicity, however it is at present
+<u>unchallenaed.</u>
+A) unchallenged
+B) instantanious
+C) desired
+D) advertising
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q90. Select the option that expresses the given sentence in active voice.
+Wedding invitations will be sent by them.
+A) They will be sent wedding invitations.
+B) He will sent wedding invitations.
+C) They will send wedding invitations.
+D) He will be send wedding invitations.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q91. Select the most appropriate ANTONYM of the underlined word.
+Her room looks very messv
+A) Untidy
+B) Chaotic
+C) Disordered
+D) Organised
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q92. Select the most appropriate meaning of the given idiom.
+A perfect storm
+A) Pretty good judgement
+B) Healing from trauma
+C) The worst possible situation
+D) Appropriate for all occasions
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q93. Select the sentence that has the most appropriate meaning of the given idiom.
+Bad blood
+A) She is so scared of cockroaches that she fainted when she saw them crawling near
+B) [.
+The doctor dropped the bad news to Ravi as he was suffering from a serious
+1.
+C) The gangster had some bitter relations with a local activist so he warned him to stay
+is husiness.
+D) 7..
+Sushant always gets in trouble for telling lies but he never learns anything.
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q94. Select the most appropriate synonym of the underlined word.
+After my first visit to Boston, I spent almost every winter in the North. Once I went on a
+visit to a New England village with its frozen lakes and vast snow fields.
+A) minimal
+B) shallow
+C) extensive
+D) solid
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q95. Select the most appropriate option that can substitute the underlined segment in the
+given sentence.
+Hardly we had boarded the train when it started to move.
+A) will we boarded
+B) we are boarded
+C) is we boarded
+D) had we boarded
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q96. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+The basic elements of computers that (1) ______ our world are explained in an interactive
+manner. The book has a (2) ______ approach of colourful and creative picture-based
+activities. The puzzles, activities and mazes (3) ______ the students to develop critical
+thinking, logical and motor skills. After every lesson, (4) ______ exercises are incorporated
+to (5) ______ the conceptual understanding of the students.
+SubQuestion No : 21
+Select the most appropriate option to fill in blank no. 1.
+A) empower
+B) negate
+C) empowers
+D) negates
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q97. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+The basic elements of computers that (1) ______ our world are explained in an interactive
+manner. The book has a (2) ______ approach of colourful and creative picture-based
+activities. The puzzles, activities and mazes (3) ______ the students to develop critical
+thinking, logical and motor skills. After every lesson, (4) ______ exercises are incorporated
+to (5) ______ the conceptual understanding of the students.
+SubQuestion No : 22
+Select the most appropriate option to fill in blank no. 2.
+A) difficult
+B) complex
+C) trivial
+D) unique
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q98. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fillin each blank.
+The basic elements of computers that (1) ______ our world are explained in an interactive
+manner. The book has a (2) ______ approach of colourful and creative picture-based
+activities. The puzzles, activities and mazes (3) ______ the students to develop critical
+thinking, logical and motor skills. After every lesson, (4) ______ exercises are incorporated
+to (5) ______ the conceptual understanding of the students.
+SubQuestion No : 23
+Select the most appropriate option to fill in blank no. 3.
+A) help
+B) helped
+C) helps
+D) had helped
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q99. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+The basic elements of computers that (1) ______ our world are explained in an interactive
+manner. The book has a (2) ______ approach of colourful and creative picture-based
+activities. The puzzles, activities and mazes (3) ______ the students to develop critical
+thinking, logical and motor skills. After every lesson, (4) ______ exercises are incorporated
+to (5) ______ the conceptual understanding of the students.
+SubQuestion No : 24
+Select the most appropriate option to fill in blank no. 4.
+A) brainstorming
+B) superficial
+C) baffling
+D) irrational
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q100. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+The basic elements of computers that (1) ______ our world are explained in an interactive
+manner. The book has a (2) ______ approach of colourful and creative picture-based
+activities. The puzzles, activities and mazes (3) ______ the students to develop critical
+thinking, logical and motor skills. After every lesson, (4) ______ exercises are incorporated
+to (5) ______ the conceptual understanding of the students.
+SubQuestion No : 25
+Select the most appropriate option to fill in blank no. 5.
+A) evolving
+B) evolved
+C) evolution
+D) evolve
+Correct Answer: Option D
+--------------------------------------------------------------------------------

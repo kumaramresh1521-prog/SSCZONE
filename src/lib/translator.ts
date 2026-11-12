@@ -56,24 +56,67 @@ export function isTranslatableOption(text?: string | null, isQuantSection: boole
     }
   }
 
-  // 7. Only translate if option has at least 2 descriptive English words of length >= 3
+  // 7. Only translate if option has at least 2 descriptive English words (containing lowercase letters)
   // Examples that pass: "Neither conclusion I nor II follows", "Only statement I is correct", "Both 1 and 2 follow"
-  const englishWords = trimmed.match(/[A-Za-z]{3,}/g) ?? [];
+  // Skips code mappings like "# = BNQ, % = NFM"
+  const englishWords = trimmed.match(/\b[A-Za-z]*[a-z]{2,}\b/g) ?? [];
   return englishWords.length >= 2;
+}
+
+const EMPHASIS_UPPER_WORDS = new Set([
+  "NOT", "ONLY", "TRUE", "FALSE", "CORRECT", "INCORRECT", "CORRECTLY", "INCORRECTLY",
+  "BOTH", "NEITHER", "EITHER", "EXCEPT", "ALL", "NONE", "AND", "OR", "MUST", "NEVER", "ALWAYS",
+]);
+
+function isAnagramAnalogyChain(chain: string): boolean {
+  const parts = chain.split(/\s*(?::\s*:|:)\s*/).map((p) => p.trim()).filter((p) => p && p !== "?");
+  if (parts.length < 3 || parts.some((p) => /\s/.test(p) || p.length < 2)) return false;
+  for (let i = 0; i + 1 < parts.length; i += 2) {
+    const a = parts[i].toLowerCase();
+    const b = parts[i + 1].toLowerCase();
+    if (a.length === b.length && a !== b && a.split("").sort().join("") === b.split("").sort().join("")) {
+      return true;
+    }
+  }
+  return false;
 }
 
 // ── Protect sensitive content before machine translation ──
 function maskProtectedTokens(text: string): { maskedText: string; tokens: string[] } {
   const tokens: string[] = [];
-  const placeholder = (idx: number) => `___PROTECT_${idx}___`;
+  // Opaque Unicode bracket token with no A-Z letters so Google Translate never translates it (e.g. "PROTECT" -> "रक्षा")
+  const placeholder = (idx: number) => `⟦${idx}⟧`;
 
   let current = text;
 
-  // Helper to safely replace regex matches with tokens
-  const replaceWithToken = (regex: RegExp) => {
-    current = current.replace(regex, (match) => {
-      tokens.push(match);
-      return placeholder(tokens.length - 1);
+  const pushToken = (val: string) => {
+    tokens.push(val);
+    return placeholder(tokens.length - 1);
+  };
+
+  // Helper to safely replace regex matches (or a specific capture group) with tokens
+  const replaceWithToken = (
+    regex: RegExp,
+    guard?: (val: string) => boolean,
+    captureGroupIdx?: number
+  ) => {
+    current = current.replace(regex, (...args) => {
+      const fullMatch = args[0] as string;
+      const target = captureGroupIdx ? (args[captureGroupIdx] as string) : fullMatch;
+      if (!target || (guard && !guard(target))) {
+        return fullMatch;
+      }
+      if (!captureGroupIdx) {
+        return pushToken(fullMatch);
+      }
+      // Reconstruct match replacing only the target capture group without relying on variable lookbehind
+      const groupOffset = fullMatch.lastIndexOf(target);
+      if (groupOffset === -1) return fullMatch;
+      return (
+        fullMatch.slice(0, groupOffset) +
+        pushToken(target) +
+        fullMatch.slice(groupOffset + target.length)
+      );
     });
   };
 
@@ -85,18 +128,58 @@ function maskProtectedTokens(text: string): { maskedText: string; tokens: string
   // 2. Protect LaTeX Math Delimiters
   replaceWithToken(/(\$\$[\s\S]*?\$\$|\\\[[\s\S]*?\\\]|\\\([\s\S]*?\\\)|\$[^$\n]+\$)/g);
 
-  // 3. Protect Quoted words/codes (e.g. "THINGS", "TiIoGt", "BRIGHT", 'MONDAY')
-  replaceWithToken(/(["'])(?:(?=(\\?))\2.)*?\1/g);
+  // 3. Protect Quoted words/codes (match each quote type up to 60 chars so mismatched OCR quotes never swallow sentences)
+  replaceWithToken(/(?:"[^"\n]{1,60}"|'[^'\n]{1,60}')/g);
 
   // 4. Protect Mixed-Case Coding Words (e.g. MoNdAy, TiIoGt, BsIHHu)
   replaceWithToken(/\b(?:[A-Z]+[a-z]+[A-Z][A-Za-z]*|[a-z]+[A-Z]+[a-z]*)\b/g);
 
-  // 5. Protect Letter Analogies and Series (e.g. "BD : JL", "LOM, ISJ, FWG", "A, C, E, G", "W-T-P-M", "EK :: MS")
-  replaceWithToken(/\b[A-Za-z0-9]+\s*::\s*[A-Za-z0-9]+\b/g);
-  replaceWithToken(/\b[A-Z]{2,}\s*:\s*[A-Z]{2,}\b/g);
-  replaceWithToken(/\b[A-Z]{2,}(?:\s*,\s*[A-Z]{2,})+\b/g);
-  replaceWithToken(/\b[A-Z](?:\s*,\s*[A-Z])+\b/g);
+  // 5. Protect Reasoning Analogies, Series, and Cipher Codes (full chain so first term isn't partially translated)
+  // 5a. Complete analogy chains like "BEAK : ORNX :: FILM : ?", "P 16 : R 18 :: I 9 : K 11 :: T 20 : ?", "# : VXB :: ACG : %", "6 : 8 :: 3 : ?", "Tis : Sit :: Tip : Pit :: Ten : ?"
+  const codeTerm = "(?:[A-Z0-9?#%_]+(?:\\s+[A-Z0-9?#%_]+){0,2})";
+  replaceWithToken(
+    new RegExp(`(^|[^A-Za-z0-9])(${codeTerm}(?:\\s*(?::\\s*:|:)\\s*${codeTerm})+)(?![A-Za-z0-9])`, "g"),
+    (s) =>
+      (s.includes("::") || s.includes(": :") || (s.match(/:/g)?.length ?? 0) >= 2 || /[A-Z]{2,}|\d|[#%]/.test(s)) &&
+      !/[a-z]/.test(s),
+    2
+  );
+  replaceWithToken(
+    /\b[A-Za-z]+\s*(?::\s*:|:)\s*[A-Za-z]+(?:\s*(?::\s*:|:)\s*(?:[A-Za-z]+|\?))+\b/g,
+    (s) => isAnagramAnalogyChain(s)
+  );
+
+  // 5b. Comma-separated letter-cluster pairs & series (e.g. "DKG : HSN, VLM : ZTT", "BZTR, DBVT, FDXV, ?, JHBZ", "A, C, E, G")
+  replaceWithToken(
+    /\b[A-Z0-9?-]{2,}\s*:\s*[A-Z0-9?-]{2,}(?:\s*,\s*[A-Z0-9?-]{2,}\s*:\s*[A-Z0-9?-]{2,})+\b/g,
+    (s) => !/[a-z]/.test(s)
+  );
+  const seriesItem = "(?:[A-Z0-9?-]+(?:\\s*:\\s*[A-Z0-9?-]+)?)";
+  replaceWithToken(
+    new RegExp(`(^|[^A-Za-z0-9])(${seriesItem}(?:\\s*,\\s*${seriesItem}){2,})(?![A-Za-z0-9])`, "g"),
+    (s) => !/[a-z]/.test(s) && (/[A-Z]{2,}/.test(s) || (s.match(/\b[A-Z]\b/g)?.length ?? 0) >= 2),
+    2
+  );
+
+  // 5c. Hyphenated codes & single uppercase letter pair (e.g. "W-T-P-M", "BD : JL")
   replaceWithToken(/\b[A-Z]{1,4}(?:-[A-Z]{1,4})+\b/g);
+  replaceWithToken(/\b[A-Z0-9]{2,}\s*:\s*[A-Z0-9]{2,}\b/g, (s) => !/[a-z]/.test(s) && /[A-Z]/.test(s));
+
+  // 5d. Alphanumeric Reasoning codes & blanks (e.g. "DM 12", "HQ 17", "R 4", "NP3", "I4D", "_____")
+  replaceWithToken(/\b[A-Z]{1,4}\s+\d+\b/g);
+  replaceWithToken(/\b(?:[A-Z]+\d+[A-Z0-9]*|\d+[A-Z]+[A-Z0-9]*)\b/g);
+  replaceWithToken(/_{2,}/g);
+
+  // 5e. Standalone ALL-CAPS cipher words in coding/analogy prose (e.g. "ACCIDENT is related to TNEDICCA", "is BANG related")
+  replaceWithToken(
+    /\b([A-Z]{2,})\b(?=\s+(?:(?:is\s+)?(?:related|coded|written|mapped)|means|denotes|stands|represents))/g,
+    (s) => !EMPHASIS_UPPER_WORDS.has(s)
+  );
+  replaceWithToken(
+    /\b(?:related to|coded as|written as|becomes|from)\s+([A-Z]{2,})\b/g,
+    (s) => !EMPHASIS_UPPER_WORDS.has(s),
+    1
+  );
 
   // 6. Protect Trigonometric expressions (STRICT: prevents 'sin' becoming 'पाप', 'cot' becoming 'खाट')
   // Covers: sin A, sin θ, sin²A, cos A, tan B, cot θ, sec A, cosec A, csc θ, sin(90° - A)
@@ -130,18 +213,20 @@ function maskProtectedTokens(text: string): { maskedText: string; tokens: string
 function unmaskTokens(translated: string, tokens: string[]): string {
   let result = translated;
   tokens.forEach((token, idx) => {
-    // Matches ___PROTECT_0___ and any variation Google Translate may emit (spaces, Hindi words, em-dashes)
-    const pattern = new RegExp(
-      `(?:___|---|—)\\s*(?:PROTECT|सुरक्षित|सुरक्षा|प्रोटेक्ट)\\s*_?\\s*${idx}\\s*(?:___|---|—)`,
+    const cleanPattern = new RegExp(`⟦\\s*${idx}\\s*⟧`, "g");
+    result = result.replace(cleanPattern, () => token);
+
+    const exact = `⟦${idx}⟧`;
+    if (result.includes(exact)) {
+      result = result.split(exact).join(token);
+    }
+
+    // Legacy fallback if a cached/historical string contains ___PROTECT_0___ or रक्षा_0___
+    const legacyPattern = new RegExp(
+      `(?:___|---|—)?\\s*(?:PROTECT|सुरक्षित|सुरक्षा|रक्षा|संरक्षित|प्रोटेक्ट)\\s*_?\\s*${idx}\\s*(?:___|---|—)`,
       "gi"
     );
-    result = result.replace(pattern, () => token);
-
-    // Literal fallback replacement
-    const literal = `___PROTECT_${idx}___`;
-    if (result.includes(literal)) {
-      result = result.split(literal).join(token);
-    }
+    result = result.replace(legacyPattern, () => token);
   });
   return result;
 }

@@ -1,0 +1,254 @@
+Q001: SSC Multi-Tasking Staff Exam, 17.03.2013 (Kolkata Region)   | raw: 17.03.2013.KolkataReglon)
+Q002: SSC CAPFs SI, CISF ASI & Delhi Police SI Exam, 21.06.2015 (1st Sitting, TF No. 8037731)   | raw: (SSCCAPFsSI,CISFASI&Delhi PoliceSIExam.21.06.2015 (lstSittingTFNo.8037731)
+Q003: SSC (10+2) Stenographer Grade 'C' & 'D' Exam, 31.01.2016 (TF No. 3513283)   | raw: (SSC (10+2)StenographerGrade 'C'&D'Exam.31.01.2016 TFNo.3513283)
+Q004: SSC CHSL (10+2) Tier-I CBE Exam, 04.03.2018 (Shift-III)   | raw: (SSCCHSL (1O+2) Tier-1CBE Exam.(Shift-1l)04.03.2018)
+Q005: SSC CHSL (10+2) Tier-I CBE Exam, 07.03.2018 (Shift-III)   | raw: (SSCCHSL(1O+2)TTER-ICBE Exam,(Shift-Im)07.03.2018)
+Q006: SSC CHSL (10+2) Tier-I CBE Exam, 08.03.2018 (Shift-I)   | raw: (SSCCHSL(10+2)TIER-ICBE Exam.(Shift-D08.03.2018)
+Q007: SSC CHSL (10+2) Tier-I CBE Exam, 10.03.2018 (Shift-I)   | raw: (SSCCHSL(10+2)TIER-ICBE Exam,(Shift-)10.03.2018)
+Q008: SSC CHSL (10+2) Tier-I CBE Exam, 12.03.2018 (Shift-I)   | raw: (SSCCHSL (10+2)TIER-1CBE Exam. (Shint-n) 12.03.2018)
+Q009: SSC CHSL (10+2) Tier-I CBE Exam, 15.03.2018 (Shift-I)   | raw: (SSCCHSL (10+2) TIER-ICBE Exam. (Shif-I) 15.03.2018)
+Q010: SSC CHSL (10+2) Tier-I CBE Exam, 15.03.2018 (Shift-III)   | raw: (SSCCHSL (10+2)TIER-ICBE Exam, (Shf-11)15.03.2018)
+Q011: SSC CHSL (10+2) Tier-I CBE Exam, 16.03.2018 (Shift-I)   | raw: (SSCCHSL(10+2)TIER-ICBEExam. (Shif-n16.03.2018)
+Q012: SSC CHSL (10+2) Tier-I CBE Exam, 17.03.2018 (Shift-I)   | raw: (SSC CHSL (10+2) TIer-I CBE Exam. (Shift-n) 17.03.2018)
+Q013: SSC CHSL (10+2) Tier-I CBE Exam, 19.03.2018 (Shift-I)   | raw: (SSC CHSL (10+2) Tier-JCBE Exam, (Shift-I) 19.03.2018)
+Q014: SSC CHSL (10+2) Tier-I CBE Exam, 19.03.2018 (Shift-III)   | raw: (SSCCHSL(10+2)TIer-ICBE Exam, (Shift-1) 19.03.2018)
+Q015: SSC CHSL (10+2) Tier-I CBE Exam, 20.03.2018 (Shift-I)   | raw: (SSCCHSL(10+2)Tier-ICBE Exam. (Shift-I)20.03.2018)
+Q016: SSC CHSL (10+2) Tier-I CBE Exam, 20.03.2018 (Shift-III)   | raw: (SSC CHSL (10 +2) TIer-I CBE) Exam, (Shuff-I20.03.2018)
+Q017: SSC CHSL (10+2) Tier-I CBE Exam, 21.03.2018 (Shift-I)   | raw: (SSC CHSL(10+2)Tier-ICBE Exam. (Shft-) 21.03.2018)
+Q018: SSC CHSL (10+2) Tier-I CBE Exam, 21.03.2018 (Shift-III)   | raw: (SSCCHSL(10+2)Ter-ICBE Exam. (Shif-m)21.03.2018)
+Q019: SSC CHSL (10+2) Tier-I CBE Exam, 22.03.2018 (Shift-III)   | raw: (SSCCHSL (10+2) TIer-ICBE Exam,(Shift-Il)22.03.2018)
+Q020: SSC CHSL (10+2) Tier-I CBE Exam, 23.03.2018 (Shift-I)   | raw: (SSC CHSL (10+2) Tier-I CBE Exam. (Shift-I) 23.03.2018)
+Q021: SSC CHSL (10+2) Tier-I CBE Exam, 23.03.2018 (Shift-III)   | raw: (SSC CHSL (10+ 2) TIer-I CBE Exam, (Shift-1) 23.03.2018)
+Q022: SSC CHSL (10+2) Tier-I CBE Exam, 25.03.2018 (Shift-III)   | raw: (SSC CHSL (10 + 2) Tler-I CBE Exam. (Shtt-I) 25.03.2018)
+Q023: SSC CHSL (10+2) Tier-I CBE Exam, 26.03.2018 (Shift-III)   | raw: (SSCCHSL (10+2)Ther-ICBE Exam, (Shift-I) 26.03.2018)
+Q024: SSC CHSL (10+2) Tier-I CBE Exam, 27.03.2018 (Shift-III)   | raw: (SSCCHSL (10+2) Tier-ICBE Exam.(Shift-Im)27.03.2018)
+Q025: SSC CHSL (10+2) Tier-I CBE Exam, 28.03.2018 (Shift-III)   | raw: (SSC CHSL (10 +2) TIer-I CBE Exam, (Shift-l)28.03.2018)
+Q026: SSC Constable (GD) Exam, 02.03.2019 (Shift-II)   | raw: SSC Constable (GD) Exam (Shift-I) 02.03.2019
+Q027: SSC CAPFs, NIA, SSF Constable (GD) & Assam Rifles Rifleman (GD) Exam, 05.03.2019 (Shift-I)   | raw: SSC CAPFs.NIA,SSF Constable (GD) & Assam Rifles Rifleman (GD) Exam (Shift-) 05.03.2019
+Q028: SSC SI in Delhi Police, CAPFs & ASI (CISF) Exam, 12.03.2019 (Shift-I)   | raw: SSC SI in Delhi Police, CAPFs &ASI (CISF) Exam (Shif-I) : 12.03.2019
+Q029: SSC SI in Delhi Police, CAPFs & ASI (CISF) Exam, 12.03.2019 (Shift-I)   | raw: SSC S in Delh PoliceCAPFs &ASI (CISF) Exam (Shif-I) : 12.03.2019
+Q030: SSC SI in Delhi Police, CAPFs & ASI (CISF) Exam, 13.03.2019 (Shift-I)   | raw: SSC SI in Delhi Pollice, CAPFs & ASI (CISF)Exam (Shiff-I):13.03.2019
+Q031: SSC CGL Tier-I (CBE) Exam, 04.06.2019 (Shift-I)   | raw: SSC CGL Tler-I CBE (Exam) (Shift-I) 04.06.2019
+Q032: SSC CGL Tier-I (CBE) Exam, 06.06.2019 (Shift-I)   | raw: SSC CGLTIier-ICBE (Exam) (Shir-n);06.06.2019
+Q033: SSC CGL Tier-I (CBE) Exam, 04.06.2019 (Shift-III)   | raw: SSC CGL TIer-I (CBE) Exam.04.06.2019 (Stif-n
+Q034: SSC CGL Tier-I (CBE) Exam, 06.06.2019 (Shift-II)   | raw: SSC CGLTier-I (CBE) Exam. 06.06.2019 (Shift-I)
+Q035: SSC CGL Tier-I (CBE) Exam, 06.06.2019 (Shift-III)   | raw: SSC CGLTIer-I (CBE) Exam.06.06.2019 (Shif-l)
+Q036: SSC CGL Tier-I (CBE) Exam, 06.06.2019 (Shift-III)   | raw: SSC CGL TIer-I (CBE) Exam.06.06.2019 (Shif-m)
+Q037: SSC CGL Tier-I (CBE) Exam, 07.06.2019 (Shift-I)   | raw: SSC CGL Tler-I (CBE) Exam.07.06.2019 (Shif-I
+Q038: SSC CGL Tier-I (CBE) Exam, 07.06.2019 (Shift-II)   | raw: SSCCGLTIer-I(CBE) Exam.07.06.2019 (Sht-)
+Q039: SSC CGL Tier-I (CBE) Exam, 10.06.2019 (Shift-I)   | raw: SSC CGL TIer-I (CBE) Exam. 10.06.2019 (Shif-I)
+Q040: SSC CGL Tier-I (CBE) Exam, 10.06.2019 (Shift-III)   | raw: SSC CGL Tler-I (CBE) Exam.10.06.2019 (Shif-I
+Q041: SSC CGL Tier-I (CBE) Exam, 13.06.2019 (Shift-II)   | raw: SSC CGL Tler-I (CBE) Exam. 13.06.2019 (Shir-I)
+Q042: SSC CGL Tier-I (CBE) Exam, 13.06.2019 (Shift-III)   | raw: SSC CGL Tler-I (CBE) Exam. 13.06.2019 (Shif-m)
+Q043: SSC CHSL (10+2) Tier-I Exam, 01.07.2019 (Shift-III)   | raw: SSC CHSL (10+2) TIer-I Exam.01.07.2019 (Shit-)
+Q044: SSC CHSL (10+2) Tier-I Exam, 02.07.2019 (Shift-I)   | raw: SSC CHSL (10+2) Tier-1I Exam, 02.07.2019 (Shift-I)
+Q045: SSC CHSL (10+2) Tier-I Exam, 02.07.2019 (Shift-II)   | raw: SSC CHSL (10+2) Tier-I Exam, 02.07.2019 (Shift-II)
+Q046: SSC CHSL (10+2) Tier-I Exam, 02.07.2019 (Shift-III)   | raw: SSC CHSL (10+2) Tier-I Exam, 02.07.2019 (Shift-II)
+Q047: SSC CHSL (10+2) Tier-I Exam, 03.07.2019 (Shift-II)   | raw: SSC CHSL (10+2) Tier-I Exam, 03.07.2019 (Shift-)
+Q048: SSC CHSL (10+2) Tier-I Exam, 03.07.2019 (Shift-III)   | raw: SSC CHSL (10+2) Tier-I Exam, 03.07.2019 (Shift-I)
+Q049: SSC CHSL (10+2) Tier-I Exam, 04.07.2019 (Shift-I)   | raw: SSC CHSL (10+2) Tler-I Exam). 04.07.2019 (Shif-I)
+Q050: SSC CHSL (10+2) Tier-I Exam, 04.07.2019 (Shift-I)   | raw: SSC CHSL (10+2) Tier-IExam, 04.07.2019 (Shift-I)
+Q051: SSC CHSL (10+2) Tier-I Exam, 05.07.2019 (Shift-II)   | raw: SSC CHSL (10+2) Tier-I Exam, 05.07.2019 (Shift-I)
+Q052: SSC CHSL (10+2) Tier-I Exam, 05.07.2019 (Shift-III)   | raw: SSC CHSL (10+2) Tier-IExam, 05.07.2019 (Shift-)
+Q053: SSC CHSL (10+2) Tier-I Exam, 08.07.2019 (Shift-I)   | raw: SSC CHSL (10+2) Tler-IExam, 08.07.2019 (Shift-I)
+Q054: SSC CHSL (10+2) Tier-I Exam, 08.07.2019 (Shift-II)   | raw: SSC CHSL (10+2) Tler-IExam. 08.07.2019 (Shift-II)
+Q055: SSC CHSL (10+2) Tier-I Exam, 08.07.2019 (Shift-III)   | raw: SSC CHSL (10+2) Tler-IExam. 08.07.2019 (Shift-)
+Q056: SSC CHSL (10+2) Tier-I Exam, 09.07.2019 (Shift-II)   | raw: SSC CHSL (10+2) TIer-I Exam, 09.07.2019 (Shift-Il)
+Q057: SSC CHSL (10+2) Tier-I Exam, 10.07.2019 (Shift-II)   | raw: SSC CHSL (10+2) Tler-IExam, 10.07.2019 (Shift-n)
+Q058: SSC CHSL (10+2) Tier-I Exam, 10.07.2019 (Shift-III)   | raw: (SSC CHSL (10+2) Tier-I Exam. 10.07.2019 (Shift-Im)
+Q059: SSC CHSL (10+2) Tier-I Exam, 11.07.2019 (Shift-II)   | raw: (SSC CHSL (10+2) TIer-I Exam, 11.07.2019 (Shift-n)
+Q060: SSC CHSL (10+2) Tier-I Exam, 11.07.2019 (Shift-II)   | raw: (SSC CHSL (10+2) Tler-IExam, 11.07.2019 (Shift-m)
+Q061: SSC CHSL (10+2) Tier-I Exam, 11.07.2019 (Shift-III)   | raw: (SSC CHSL (10+2) Tler-I Exam, 11.07.2019 (Shift-m)
+Q062: SSC CHSL (10+2) Tier-I Exam, 11.07.2019 (Shift-III)   | raw: (SSC CHSL (10+2) Tier-I Exam. 11.07.2019 (Shift-Il)
+Q063: SSC Multi-Tasking (Non-Technical) Staff Exam, 06.08.2019 (Shift-I)   | raw: (SSC Mulu Tasking (Non-Technical) Staff Exam, 06.08.2019.Shift-1)
+Q064: SSC Multi-Tasking Staff Exam, 07.08.2019 (Shift-I)   | raw: (SSC Multi Tasking Staff Exam, 07.08.2019,Shift-n
+Q065: SSC Multi-Tasking Staff Exam, 07.08.2019 (Shift-I)   | raw: 
+Q066: SSC Multi-Tasking (Non-Technical) Staff Exam, 09.08.2019 (Shift-II)   | raw: (SSC Multi Tasking (Non-Technical) Staff Exam,09.08.2019.Shift-1
+Q067: SSC Multi-Tasking (Non-Technical) Staff Exam, 14.08.2019 (Shift-I)   | raw: (SSC Multi Tasking (Non-Technical) Staff Exam.14.08.2019.Sht-I)
+Q068: SSC CAPFs SI, Delhi Police SI & CISF ASI Exam, 09.12.2019 (Shift-I)   | raw: (SSC CAPFs SI.DelhtPoliceSI& CISFASIExam09.12.2019(Shiff-D)
+Q069: SSC CAPFs SI, Delhi Police SI & CISF ASI Exam, 09.12.2019 (Shift-I)   | raw: (SSCCAPFs SI,DelhiPollce SI& CISFASI Exam,09.12.2019(Shift-)
+Q070: SSC CAPFs SI, Delhi Police SI & CISF ASI Exam, 11.12.2019 (Shift-I)   | raw: (SSCCAPFs SL,DelluPollceSI& CISF ASI Exam. 11.12.2019(Shiff-I)
+Q071: SSC CAPFs SI, Delhi Police SI & CISF ASI Exam, 12.12.2019 (Shift-I)   | raw: (SSC CAPFs SL, Delhi Police SI & CISFASIExam,12.12.2019(Shift-D)
+Q072: SSC CAPFs SI, Delhi Police SI & CISF ASI Exam, 12.12.2019 (Shift-I)   | raw: (SSCCAPFs SI.DelhiPolliceSI& CISFASIExam,12.12.2019 (Shift-D)
+Q073: SSC CGL Tier-I (CBE) Exam, 06.03.2020 (Shift-I)   | raw: SSC CGL (CBE) Ther-I Exam.06.03.2020 (Shift-I)
+Q074: SSC CHSL (10+2) Tier-I Exam, 18.03.2020 (Shift-I)   | raw: (SSC CHSL (10+2) Tter-I Exam.18.03.2020 (Shift-m)
+Q075: SSC CHSL (10+2) Tier-I Exam, 18.03.2020 (Shift-III)   | raw: (SSC CHSL (10+2) Tier-I Exam, 18.03.2020 (Shift-m)
+Q076: SSC CHSL (10+2) Tier-I Exam, 19.10.2020 (Shift-I)   | raw: (SSC CHSL (10+2) TIer-I Exam, 19.10.2020 (Shift-11l)
+Q077: SSC CHSL (10+2) Tier-I Exam, 19.10.2020 (Shift-II)   | raw: (SSC CHSL (10+2) TIer-I Exam, 19.10.2020 (Shift-II)
+Q078: SSC Delhi Police SI, CAPFs SI & CISF ASI Exam, 23.11.2020 (Shift-II)   | raw: (SSC Delhi Pollce SI.CAPFs SI& CISFASI Exam, 23.11.2020(Shift-I)
+Q079: SSC Delhi Police SI, CAPFs SI & CISF ASI Exam, 24.11.2020 (Shift-I)   | raw: (SSC Delhu Police SI,CAPFs SI& CISF ASI Exam,24.11.2020(Shift-D)
+Q080: SSC Delhi Police SI, CAPFs SI & CISF ASI Exam, 24.11.2020 (Shift-I)   | raw: (SSC Delhi Police SI.CAPFs SI& CiSFASIExam,24.11.2020(Shift-)
+Q081: SSC CHSL Tier-I Exam, 12.04.2021 (Shift-I)   | raw: SSC CHSL TIer-I Exam, 12.04.2021 (Shift-I)
+Q082: SSC CHSL Exam, 19.04.2021 (Shift-I)   | raw: SSC CHSL Exam, 19.04.2021 (Shift-)
+Q083: SSC CHSL Exam, 09.08.2021 (Shift-I)   | raw: SSC CHSL Exam,09.08.2021 (Shift-)
+Q084: SSC CGL Tier-I (CBE) Exam, 11.04.2022 (Shift-I)   | raw: (SSC CGL Tler-1 (CBE) Exam, 11.04.2022 (Shift-I)
+Q085: SSC CGL Tier-I (CBE) Exam, 12.04.2022 (Shift-I)   | raw: (SSC CGL Tler-I (CBE) Exam. 12.04.2022 (Shift-)
+Q086: SSC CGL Tier-I (CBE) Exam, 13.04.2022 (Shift-I)   | raw: (SSC CGL Tier-I (CBE) Exam. 13.04.2022 (Shift-)
+Q087: SSC CGL Tier-I (CBE) Exam, 20.04.2022 (Shift-I)   | raw: (SSC CGL TIer-I (CBE) Exam 20.04.2022 (Shif-m)
+Q088: SSC CGL Tier-I (CBE) Exam, 21.04.2022 (Shift-I)   | raw: (SSC CGLTier-I (CBE) Exam, 21.04.2022 (Shift-D)
+Q089: SSC CHSL 10+2 Tier-I (CBE) Exam, 31.05.2022 (Shift-I)   | raw: (SSCCHSL10+2TIer-1(CBE)Exam. 31.05.2022 (Shif-D)
+Q090: SSC CHSL 10+2 Tier-I (CBE) Exam, 01.06.2022 (Shift-I)   | raw: (SSC CHSL 10+2 Tier-I (CBE) Exam. 01.06.2022 (Shif-)
+Q091: SSC CHSL 10+2 Tier-I (CBE) Exam, 06.06.2022 (Shift-I)   | raw: (SSC CHSL 10+2 Tier- (CBE) Exam 06.06.2022 (Shif-D)
+Q092: SSC CHSL 10+2 Tier-I (CBE) Exam, 10.06.2022 (Shift-I)   | raw: (SSC CHSL 10+2 Tler-I (CBE) Exam. 10.06.2022 (Shift-I)
+Q093: SSC CHSL 10+2 Tier-I (CBE) Exam, 24.05.2022 (Shift-II)   | raw: (SSC CHSL 10+2 TIer-I(CBE) Exam. 24.05.2022 Shtf-Il)
+Q094: SSC CHSL 10+2 Tier-I (CBE) Exam, 24.05.2022 (Shift-II)   | raw: (SSC CHSL 10+2 Ter-I (CBE) Exam. 24.05.2022 Shift-1m)
+Q095: SSC CHSL 10+2 Tier-I (CBE) Exam, 24.05.2022 (Shift-II)   | raw: (SSC CHSL 10+2 TIer-I (CBE) Exam. 24.05.2022 Shift-Il)
+Q096: SSC CHSL 10+2 Tier-I (CBE) Exam, 26.05.2022 (Shift-I)   | raw: (SSC CHSL 10+2 Tier-I (CBE) Exam, 26.05.2022 Shift-I)
+Q097: SSC CHSL 10+2 Tier-I (CBE) Exam, 26.05.2022 (Shift-II)   | raw: (SSC CHSL 10+2 Tler-I (CBE) Exam. 26.05.2022 Shift-m)
+Q098: SSC CHSL 10+2 Tier-I (CBE) Exam, 26.05.2022 (Shift-II)   | raw: (SSC CHSL 10+2 TIer-I (CBE) Exam. 26.05.2022 Shift-)
+Q099: SSC CHSL 10+2 Tier-I (CBE) Exam, 27.05.2022 (Shift-II)   | raw: (SSC CHSL 10+2 THer-1 (CBE) Exam. 27.05.2022 Shift-1l)
+Q100: SSC CHSL 10+2 Tier-I (CBE) Exam, 27.05.2022 (Shift-III)   | raw: (SSC CHSL 10+2 TIer-1 (CBE) Exam, 27.05.2022 Shift-Il)
+Q101: SSC CHSL 10+2 Tier-I (CBE) Exam, 30.05.2022 (Shift-II)   | raw: (SSC CHSL 10+2 Tler-I (CBE) Exam. 30.05.2022 Shift-I)
+Q102: SSC CHSL 10+2 Tier-I (CBE) Exam, 30.05.2022 (Shift-III)   | raw: (SSC CHSL 10+2 Tier-I (CBE) Exam. 30.05.2022 Shift-)
+Q103: SSC CHSL 10+2 Tier-I (CBE) Exam, 31.05.2022 (Shift-II)   | raw: (SSC CHSL 10+2 Tier-I (CBE) Exam, 31.05.2022 Shif-m)
+Q104: SSC CHSL 10+2 Tier-I (CBE) Exam, 31.05.2022 (Shift-III)   | raw: (SSC CHSL 10+2 Tier-I (CBE) Exam, 31.05.2022 Shft-ln
+Q105: SSC CHSL 10+2 Tier-I (CBE) Exam, 31.05.2022 (Shift-III)   | raw: (SSC CHSL 10+2 Tier-1 (CBE) Exam. 31.05.2022 Shift-Il)
+Q106: SSC CHSL 10+2 Tier-I (CBE) Exam, 01.06.2022 (Shift-II)   | raw: (SSC CHSL 10+2 TIer-J (CBE) Exam. 01.06.2022 Shift-m)
+Q107: SSC CHSL 10+2 Tier-I (CBE) Exam, 01.06.2022 (Shift-III)   | raw: (SSC CHSL 10+2 Ther-I (CBE) Exam, 01.06.2022 Shift-)
+Q108: SSC CHSL 10+2 Tier-I (CBE) Exam, 02.06.2022 (Shift-I)   | raw: (SSC CHSL 10+2 TIer-I (CBE) Exam. 02.06.2022 Shift-I)
+Q109: SSC CHSL 10+2 Tier-I (CBE) Exam, 03.06.2022 (Shift-I)   | raw: (SSC CHSL 10+2 Tier-I (CBE) Exam. 03.06.2022 Shift-I)
+Q110: SSC CHSL 10+2 Tier-I (CBE) Exam, 03.06.2022 (Shift-III)   | raw: (SSC CHSL 10+2 TIer-I (CBE) Exam, 03.06.2022 Shift-In)
+Q111: SSC CHSL 10+2 Tier-I (CBE) Exam, 03.06.2022 (Shift-III)   | raw: (SSC CHSL 10+2 Tler-1 (CBE) Exam. 03.06.2022 Shift-II)
+Q112: SSC CHSL 10+2 Tier-I (CBE) Exam, 06.06.2022 (Shift-I)   | raw: (SSC CHSL 10+2 Tler-I (CBE) Exam, 06.06.2022 Shift-1)
+Q113: SSC CHSL 10+2 Tier-I (CBE) Exam, 06.06.2022 (Shift-I)   | raw: (SSC CHSL 10+2 Tier-I (CBE) Exam. 06.06.2022 Shift-
+Q114: SSC CHSL 10+2 Tier-I (CBE) Exam, 06.06.2022 (Shift-II)   | raw: (SSC CHSL 10+2 Tler-I (CBE) Exam. 06.06.2022 Shift-II)
+Q115: SSC CHSL 10+2 Tier-I (CBE) Exam, 07.06.2022 (Shift-II)   | raw: (SSC CHSL 10+2 Ter-I (CBE) Exam. 07.06.2022 Shift-In)
+Q116: SSC CHSL 10+2 Tier-I (CBE) Exam, 07.06.2022 (Shift-II)   | raw: (SSC CHSL10+2 Tler-I (CBE) Exam, 07.06.2022 Shift-II)
+Q117: SSC CHSL 10+2 Tier-I (CBE) Exam, 08.06.2022 (Shift-II)   | raw: (SSCCHSL10+2 Tler- (CBE)Exam. 08.06.2022 Shin-
+Q118: SSC CHSL 10+2 Tier-I (CBE) Exam, 08.06.2022 (Shift-I)   | raw: (SSC CHSL 10+2 TIer-1 (CBE) Exam. 08.06.2022 Shif-I)
+Q119: SSC CHSL 10+2 Tier-I (CBE) Exam, 08.06.2022 (Shift-III)   | raw: (SSC CHSL10+2 TIer-1 (CBE)Exam. 08.06.2022 Shif-m)
+Q120: SSC CHSL 10+2 Tier-I (CBE) Exam, 09.06.2022 (Shift-I)   | raw: (SSC CHSL 10+2 Tier-1 (CBE) Exam, 09.06.2022 Shif-0
+Q121: SSC CHSL 10+2 Tier-I (CBE) Exam, 09.06.2022 (Shift-I)   | raw: 09.06.2022 Shif-I
+Q122: SSC CHSL 10+2 Tier-I (CBE) Exam, 09.06.2022 (Shift-III)   | raw: (SSC CHSL 10+2 TIer-I (CBE) Exam. 09.06.2022 Shift-I)
+Q123: SSC CHSL 10+2 Tier-I (CBE) Exam, 10.06.2022 (Shift-II)   | raw: (SSCCHSL'10+2TIer-(CBE)Exam 10.06.2022 Shift-)
+Q124: SSC CHSL 10+2 Tier-I (CBE) Exam, 10.06.2022 (Shift-II)   | raw: (SSC CHSL 10+2 TIer-I (CBE) Exam. 10.06.2022 Shift-Il)
+Q125: SSC Stenographer Grade 'C' and 'D' Exam, 23.12.2020 (Shift-I)   | raw: (SSC StenographerGradeC'and'D'Exam. 23.12.2020 (Shift-m)
+Q126: SSC Stenographer Grade 'C' and 'D' Exam, 23.12.2020 (Shift-I)   | raw: (SSCStenographerGradeC'and'D'Exam 23.12.2020 (Shift-Im)
+Q127: SSC Stenographer Grade 'C' and 'D' Exam, 23.12.2020 (Shift-II)   | raw: (SSCStenographerGradeCand'DExam. 23.12.2020 (Shift-I1)
+Q128: SSC Stenographer Grade 'C' and 'D' Exam, 24.12.2020 (Shift-I)   | raw: (SSC Stenographer Grade C'and D'Exam. 24.12.2020 (Shift-m)
+Q129: SSC Stenographer Grade 'C' and 'D' Exam, 24.12.2020 (Shift-I)   | raw: (SSC StenographerGrade C'and D'Exam. 24.12.2020 (Shi-D)
+Q130: SSC Stenographer Grade 'C' and 'D' Exam, 24.12.2020 (Shift-I)   | raw: (SSC Stenographer Grade'C'and'D'Exam. 24.12.2020 (Shit-n)
+Q131: SSC Stenographer Grade 'C' and 'D' Exam, 24.12.2020 (Shift-II)   | raw: (SSC Stenographer Grade'Cand'D'Exam. 24.12.2020 (Shift-Im)
+Q132: SSC Stenographer Grade 'C' and 'D' Exam, 24.12.2020 (Shift-II)   | raw: (SSC Stenographer GradeC'and'D'Exam. 24.12.2020 (Shift-Im)
+Q133: SSC Stenographer Grade 'C' and 'D' Exam, 24.12.2020 (Shift-II)   | raw: (SSC Stenographer Grade C'and'D'Exam. 24.12.2020 (Shift-m)
+Q134: SSC Stenographer Grade 'C' and 'D' Exam, 12.11.2021 (Shift-II)   | raw: (SSC Stenographer GradeCand D'Exam. 12.11.2021 (Shift-m)
+Q135: SSC Stenographer Grade 'C' and 'D' Exam, 12.11.2021 (Shift-II)   | raw: (SSC StenographerGrade'CandD'Exam. 12.11.2021 (Shift-m)
+Q136: SSC Stenographer Grade 'C' and 'D' Exam, 12.11.2021 (Shift-II)   | raw: (SSC Stenographer Grade'C'and'D'Exam, 12.11.2021 (Shift-I)
+Q137: SSC Stenographer Grade 'C' and 'D' Exam, 15.11.2021 (Shift-I)   | raw: (SSC Stenographer Grade'C'and'D'Exam, 15.11.2021 (Shift-D)
+Q138: SSC Stenographer Grade 'C' and 'D' Exam, 15.11.2021 (Shift-I)   | raw: (SSC Stenographer Grade'C'and D'Exam. 15.11.2021 (Shift-m)
+Q139: SSC Stenographer Grade 'C' and 'D' Exam, 15.11.2021 (Shift-I)   | raw: (SSC Stenographer Grade'C and'D'Exam 15.11.2021 (Shit-))
+Q140: SSC Stenographer Grade 'C' and 'D' Exam, 15.11.2021 (Shift-II)   | raw: (SSC Stenographer Grade'C'and 'D' Exam, 15.11.2021 (Shift-Im)
+Q141: SSC Stenographer Grade 'C' and 'D' Exam, 15.11.2021 (Shift-II)   | raw: (SSC Stenognapher Grade C'and'D'Exam. 15.11.202) (Shiff-m)
+Q142: SSC Stenographer Grade 'C' and 'D' Exam, 15.11.2021 (Shift-III)   | raw: (SSC Stenographer Grade C and D’ Exam. 15.11.2021 (Shift-U)
+Q143: SSC Delhi Police SI, CAPFs SI & CISF ASI (CPO) Exam, 23.11.2022 (Shift-II)   | raw: (SSC Delhi Police SI. CAPFs SI & CISF ASI (CPO) Exam. 23.11.2022 Shilt-Im)
+Q144: SSC Delhi Police SI, CAPFs SI & CISF ASI (CPO) Exam, 23.11.2022 (Shift-II)   | raw: (SSC Delhi Pollce SI,CAPFs SI & CISFASI (CPO) Exam, 23.11.2022 Shift-II)
+Q145: SSC Delhi Police SI, CAPFs SI & CISF ASI (CPO) Exam, 24.11.2020 (Shift-II)   | raw: (SSC Delhi Police St, CAPFs SI &CISFASI (CPO)Exam.24.11.2020Shif-I)
+Q146: SSC Delhi Police SI, CAPFs SI & CISF ASI (CPO) Exam, 24.11.2020 (Shift-II)   | raw: (SSC Delhi Police SI, CAPFs SI & CISF ASI (CPO) Exam, 24.11.2020 Shift-11)
+Q147: SSC Delhi Police SI, CAPFs SI & CISF ASI (CPO) Exam, 25.11.2020 (Shift-I)   | raw: (SSC Delhi Pollce SI, CAPFs SI & CISF ASI (CPO) Exam, 25.11.2020 Shift-I)
+Q148: SSC Delhi Police SI, CAPFs SI & CISF ASI (CPO) Exam, 25.11.2020 (Shift-I)   | raw: (SSC Delhi Police SI, CAPFs SI & CISF ASI (CPO) Exam, 25.11.2020 Shift-I)
+Q149: SSC SI in Delhi Police and Central Armed Police Forces Exam, 09.11.2022 (Shift-II)   | raw: (SSC SI in Delhi Police and Central Armed Police Forces Exam, 09.11.2022 Shift-l)
+Q150: SSC SI in Delhi Police and Central Armed Police Forces Exam, 09.11.2022 (Shift-II)   | raw: (SSC SI in Delhi Police and Central Armed Police Forces Exam.09.11.2022 Shiff-Im)
+Q151: SSC SI in Delhi Police and Central Armed Police Forces Exam, 10.11.2022 (Shift-I)   | raw: (SSC SIIn DelhiPollceandCentralAr Police Forces Exam.10.11.2022S
+Q152: SSC SI in Delhi Police and Central Armed Police Forces Exam, 10.11.2022 (Shift-II)   | raw: (SSC SI in Delhi Pollce and Central Am Police Forces Exam, 10.11.2022 Shit
+Q153: SSC CGL Tier-I (CBE) Exam, 11.04.2022 (Shift-I)   | raw: (SSC CGLTier-T (CBE) Exam. 11.04.2m
+Q154: MISSING_DATE: Shit-   | raw: Shit-
+Q155: MISSING_DATE:    | raw: 
+Q156: SSC CGL Tier-I (CBE) Exam, 12.04.2022 (Shift-III)   | raw: (SSC CGL Tier-I (CBE) Exam, 12.04.2022 Shift-Il)
+Q157: SSC CGL Tier-I (CBE) Exam, 13.04.2022 (Shift-II)   | raw: (SSC CGLTler-1(CBE) Exam. 13.04.2022 Shift-I1)
+Q158: SSC CGL Tier-I (CBE) Exam, 13.04.2022 (Shift-III)   | raw: ISSCCGLTler-I (CBE) Exam,13.04.2022 Shift-III)
+Q159: SSC CGL Tier-I (CBE) Exam, 18.04.2022 (Shift-I)   | raw: (SSC CGL TIer-I (CBE) Exam. 18.04.2022 Shift-I)
+Q160: SSC CGL Tier-I (CBE) Exam, 18.04.2022 (Shift-II)   | raw: (SSC CGL Tier-1 (CBE) Exam, 18.04.2022 Shift-II
+Q161: SSC CGL Tier-I (CBE) Exam, 18.04.2022 (Shift-III)   | raw: (SSC CGL Tler-I (CBE).Exam, 18.04.2022 Shift-II)
+Q162: SSC CGL Tier-I (CBE) Exam, 19.04.2022 (Shift-I)   | raw: (SSC CGL Tler-I (CBE) Exam, 19.04.2022 Shift-1)
+Q163: SSC CGL Tier-I (CBE) Exam, 19.04.2022 (Shift-II)   | raw: (SSC CGL Tier-I (CBE) Exam, 19.04.2022 Shift-I
+Q164: SSC CGL Tier-I (CBE) Exam, 19.04.2022 (Shift-II)   | raw: (SSC CGL Tier-1 (CBE) Exam, 19.04.2022 Shift-I
+Q165: SSC CGL Tier-I (CBE) Exam, 20.04.2022 (Shift-II)   | raw: (SSC CGL Tler-I (CBE) Exam, 20.04.2022 Shift-m
+Q166: SSC CGL Tier-I (CBE) Exam, 20.04.2022 (Shift-III)   | raw: (SSC CGL Tier-I (CBE) Exam, 20.04.2022 Shift-I
+Q167: SSC CGL Tier-I (CBE) Exam, 21.04.2022 (Shift-II)   | raw: (SSC CGLTler-1 (CBE) Exam, 21.04.2022 Shift-m)
+Q168: SSC CGL Tier-I (CBE) Exam, 21.04.2022 (Shift-III)   | raw: (SSC CGL Tier-I (CBE) Exam. 21.04.2022 Shift-m)
+Q169: MISSING_DATE: (SSC CGL Tier-I (CBE) Exam, 02. 12.2022 Shift-I   | raw: (SSC CGL Tier-I (CBE) Exam, 02. 12.2022 Shift-I
+Q170: SSC CGL Tier-I (CBE) Exam, 06.12.2022 (Shift-III)   | raw: (SSC CGLTier-1 (CBE) Exam.,06.12.2022 Shift-m)
+Q171: SSC CGL Tier-I (CBE) Exam, 12.12.2022 (Shift-II)   | raw: (SSC CGLTIer-I (CBE) Exam. 12.12.2022)Shift-Il)
+Q172: SSC CAPFs, NIA, SSF Constable (GD) & Assam Rifles Rifleman (GD) Exam, 10.01.2023 (Shift-I)   | raw: (SSC Constabie (GD) & Rifleman (GD) Exam, 10.01.2023 Shift-D
+Q173: SSC Constable (GD) & Rifleman (GD) Exam, 10.01.2023 (Shift-I)   | raw: (SSC Constable (GD) & Rifleman (GD) Exam. 10.01.2023 Shif-I)
+Q174: SSC Constable (GD) & Rifleman (GD) Exam, 11.01.2023 (Shift-I)   | raw: (SSC Constable (GD) & Rifleman (GD) Exam. 11.01.2023 Shift-1)
+Q175: SSC Constable (GD) Exam, 12.01.2023 (Shift-II)   | raw: (SSC Constable (GD) & Rileman (GD) Exam. 12.01.2023 Shift-)
+Q176: SSC Constable (GD) Exam, 12.01.2023 (Shift-II)   | raw: (SSC Constable(GD)&Rileman (GD)Exam. 12.01.2023 Shift-m)
+Q177: SSC Constable (GD) & Rifleman (GD) Exam, 13.01.2023 (Shift-III)   | raw: (SSC Constable (GD) & Rifleman (GD) Exam. 13.01.2023 Shift-Im)
+Q178: SSC Multi-Tasking Staff Exam, 07.10.2021 (Shift-I)   | raw: (SSC Multu-Tasking Staff Exam, 07.10.2021 Shif-)
+Q179: SSC Multi-Tasking Staff Exam, 07.10.2021 (Shift-II)   | raw: (SSC Mult-Tasking StaffExam. 07.10.2021 Shift-I)
+Q180: SSC Multi-Tasking Staff Exam, 07.10.2021 (Shift-III)   | raw: (SSC Mult-Tasking Staff Exam, 07.10.2021 Shift-1)
+Q181: SSC Multi-Tasking Staff Exam, 11.10.2021 (Shift-I)   | raw: (SSC Mulu-Tasking Staff Exam. 11.10.2021 Shift-I)
+Q182: SSC Multi-Tasking Staff Exam, 20.10.2021   | raw: (SSC Mulu-Tasking StfE) 20.10.2021 So
+Q183: SSC Multi-Tasking Staff Exam, 05.07.2022   | raw: (SSC Mulu-Tasking SuafEm 05.07.2022S
+Q184: SSC Multi-Tasking Staff Exam, 05.07.2022   | raw: 05.07.2022Sh
+Q185: SSC Multi-Tasking Staff Exam, 05.07.2022 (Shift-II)   | raw: 05.07.2022Shi
+Q186: SSC Multi-Tasking Staff Exam, 05.07.2022 (Shift-III)   | raw: 05.07.2022Sh
+Q187: SSC Multi-Tasking Staff Exam, 06.07.2022   | raw: 06.07.2022Shm
+Q188: SSC Multi-Tasking Staff Exam, 06.07.2022 (Shift-II)   | raw: (SSC Mulu-Tasking StaffExam. 06.07.2022 Shift-Il)
+Q189: SSC Multi-Tasking Staff Exam, 06.07.2022 (Shift-III)   | raw: (SSC Mulu-Tasking StalrExam, 06.07.2022 Shift-Il)
+Q190: SSC Multi-Tasking Staff Exam, 07.07.2022 (Shift-I)   | raw: (SSC Mulu-Tasking Staff Exam. 07.07.2022 Shift-n)
+Q191: SSC Multi-Tasking Staff Exam, 07.07.2022 (Shift-II)   | raw: (SSC Mulu-Tasking Staff Exam. 07.07.2022 Shift-1)
+Q192: SSC Stenographer Grade 'C' and 'D' Exam, 17.11.2022 (Shift-I)   | raw: SSC Stenographer Grade C&D' Exam, 17.11.2022 (Shif-)
+Q193: SSC Stenographer Grade 'C' and 'D' Exam, 17.11.2022 (Shift-I)   | raw: SSC Stenographer GradeC'&D Exam. 17.11.2022 (Shift-I)
+Q194: SSC Stenographer Grade 'C' and 'D' Exam, 17.11.2022 (Shift-II)   | raw: SSC Stenographer Grade'C'&D Exam. 17.11.2022 (Shift-)
+Q195: SSC Stenographer Grade 'C' and 'D' Exam, 17.11.2022 (Shift-III)   | raw: SSC Stenographer Grade'C'&'D Exam. 17.11.2022 (Shift-IID)
+Q196: SSC Stenographer Grade 'C' and 'D' Exam, 17.11.2022 (Shift-III)   | raw: SSC StenographerGradeC&'D Exam. 17.11.2022 (Shift-I)
+Q197: SSC Stenographer Grade 'C' and 'D' Exam, 18.11.2022 (Shift-I)   | raw: SSC Stenographer Grade C&D Exam, 18.11.2022 (Shift-I)
+Q198: SSC MTS Exam, 13.06.2023 (Shift-I)   | raw: (SSCMTSEram,13.06.2023 (Shif-m)
+Q199: UNKNOWN_NAME: (SSC MIS Exam,13.06.2023 (Shift-I)   | raw: (SSC MIS Exam,13.06.2023 (Shift-I)
+Q200: SSC CGL Tier-I (CBE) Exam, 14.07.2023 (Shift-I)   | raw: SSC CGL Tler-I (CBE) Exam. 14.07.2023 (Shiff-1)
+Q201: SSC CGL Tier-I (CBE) Exam, 17.07.2023 (Shift-I)   | raw: SSC CGL Tier-I (CBE) Exam.17.07.2023 (Shift-I)
+Q202: SSC CGL Tier-I (CBE) Exam, 18.07.2023 (Shift-I)   | raw: SSC CGL Tier-I (CBE) Exam.18.07.2023 (Shift-)
+Q203: SSC CGL Tier-I (CBE) Exam, 20.07.2023 (Shift-I)   | raw: SSC CGL Tler-I (CBE) Exam,20.07.2023 (Shift-n)
+Q204: SSC CGL Tier-I (CBE) Exam, 20.07.2023 (Shift-I)   | raw: SSC CGL Ther-I (CBE) Exam, 20.07.2023 (Shift-I)
+Q205: SSC CGL Tier-I (CBE) Exam, 20.07.2023 (Shift-I)   | raw: SSC CGL TIer-I (CBE) Exam,20.07.2023(Shift-n)
+Q206: SSC CGL Tier-I (CBE) Exam, 27.07.2023 (Shift-III)   | raw: SSC CGL Tler-I (CBE) Exam, 27.07.2023 (Shif-m)
+Q207: SSC CGL Tier-I (CBE) Exam, 27.07.2023 (Shift-III)   | raw: SSC CGL Tler-I (CBE) Exam.27.07.2023 (Shift-)
+Q208: SSC CHSL 10+2 Tier-I (CBE) Exam, 02.08.2023 (Shift-I)   | raw: (SSC CHSL 10+2 TIer-I (CBE) Exam. 02.08.2023 (Shift-I)
+Q209: SSC CHSL 10+2 Tier-I (CBE) Exam, 03.08.2023 (Shift-I)   | raw: (SSC CHSL 10+2 Tier-I (CBE) Exam, 03.08.2023 (Shift-1)
+Q210: SSC CHSL 10+2 Tier-I (CBE) Exam, 09.08.2023 (Shift-I)   | raw: (SSC CHSL10+2 TIer-I (CBE)Exam. 09.08.2023 (Shtft-1)
+Q211: SSC CHSL 10+2 Tier-I (CBE) Exam, 14.08.2023 (Shift-I)   | raw: (SSC CHSL 10+2. Tier-I (CBE) Exan. 14.08.2023 (Shift-Im)
+Q212: SSC CHSL 10+2 Tier-I (CBE) Exam, 14.08.2023 (Shift-II)   | raw: (SSC CHSL 10+2 TIer-I (CBE) Exam. 14.08.2023 (Shif-I)
+Q213: SSC CHSL 10+2 Tier-I (CBE) Exam, 14.08.2023   | raw: (SSCCHSL10+2TIer-ICBE)E 14.08.2023 (S2
+Q214: SSC CHSL 10+2 Tier-I (CBE) Exam, 17.08.2023   | raw: (SSCCHSL10+2Tier-1(CBE)m 17.08.2023 (Sb
+Q215: SSC Multi-Tasking Staff Exam, 04.09.2023   | raw: (SSCMulu-Tasking StafE 04.09.2023St
+Q216: SSC Multi-Tasking Staff Exam, 13.09.2023   | raw: (SSCMulu-Tasking Stalm 13.09.2023S
+Q217: UNKNOWN_NAME:    | raw: 
+Q218: SSC Constable (GD) Exam, 20.02.2024 (Shift-IV)   | raw: SSC Constable(GD)& Rlleman (GD) Exam,20.02.2024. Shif-IV)
+Q219: SSC Constable (GD) Exam, 20.02.2024 (Shift-IV)   | raw: SSCConstable (CD)&Rileman (GD) Exam.20.02.2024.Shift-M)
+Q220: SSC Constable (GD) & Rifleman (GD) Exam, 21.02.2024 (Shift-IV)   | raw: SSC Constable (GD) & Rifleman (GD) Exam.21.02.2024. Shift-IMV)
+Q221: SSC Constable (GD) Exam, 21.02.2024 (Shift-IV)   | raw: SSC Constable (GD) & Rileman (GD) Exam.21.02.2024.Shift-M)
+Q222: SSC Constable (GD) & Rifleman (GD) Exam, 22.02.2024 (Shift-IV)   | raw: SSC Constable (GD) & Rifleman (GD) Exam.22.02.2024.Shift-IM)
+Q223: SSC Constable (GD) Exam, 22.02.2024 (Shift-IV)   | raw: SSC Constable (GD) &Rileman (GD) Exam.22.02.2024,Shift-IM
+Q224: SSC Constable (GD) Exam, 23.02.2024 (Shift-IV)   | raw: SSC Constable (GD) & RIleman (GD) Exam,23.02.2024.Shift-MV)
+Q225: SSC Constable (GD) & Rifleman (GD) Exam, 23.02.2024 (Shift-IV)   | raw: SSC Constable (GD) & Rifleman (GD) Exam.23.02.2024, Shift-IV)
+Q226: SSC Constable (GD) & Rifleman (GD) Exam, 24.02.2024 (Shift-IV)   | raw: SSC Constable (GD) & Rifleman (GD) Exam.24.02.2024.Shift-IV)
+Q227: SSC Constable (GD) & Rifleman (GD) Exam, 24.02.2024 (Shift-IV)   | raw: SSC Constable (GD)&Rifleman (GD) Exam.24.02.2024,Shif-V)
+Q228: SSC Delhi Police SI, CAPFs SI & CISF ASI (CPO) Exam, 27.06.2024 (Shift-I)   | raw: [SSC Delhi Police SL, CAPFs SI & CISF ASI (CPO) Exam, 27.06.2024, Shift-I)
+Q229: SSC Delhi Police SI, CAPFs SI & CISF ASI (CPO) Exam, 27.06.2024 (Shift-I)   | raw: [SSC DelhI Pollce SI, CAPFs SI & CISF ASI (CPO) Exam, 27.06.2024, Shif-n)
+Q230: SSC CHSL 10+2 Tier-I Exam, 01.07.2024 (Shift-II)   | raw: ISSC CHSL 10 +2 Tier-I (CBE) Exam.01.07.2024, Shift-1)
+Q231: SSC CHSL 10+2 Tier-I Exam, 01.07.2024 (Shift-II)   | raw: (SSC CHSL 10 +2 Tier-I (CBE) Exam.01.07.2024.Shift-1l
+Q232: SSC CHSL 10+2 Tier-I Exam, 01.07.2024 (Shift-III)   | raw: [SSC CHSL 10 + 2 Tier-1 (CBE) Exam.01.07.2024. Shift-I1)
+Q233: SSC CHSL 10+2 Tier-I Exam, 02.07.2024 (Shift-I)   | raw: [SSC CHSL 10 + 2 Tier-I (CBE) Exam,02.07.2024.Shift-
+Q234: SSC CHSL 10+2 Tier-I Exam, 03.07.2024 (Shift-I)   | raw: ISSC CHSL 10 + 2 Tler-I (CBE) Exam.03.07.2024,Shift-1l
+Q235: SSC CHSL 10+2 Tier-I Exam, 05.07.2024 (Shift-II)   | raw: (SSC CHSL 10 + 2 Tier-I (CBE) Exam.05.07.2024.Shtft-I)
+Q236: SSC CHSL 10+2 Tier-I Exam, 05.07.2024 (Shift-II)   | raw: [SSC CHSL 10+2TIer-1 (CBE) Exam,05.07.2024, Shift-Il
+Q237: SSC CHSL 10+2 Tier-I Exam, 08.07.2024 (Shift-II)   | raw: ISSC CHSL 10 + 2 TIer-I (CBE) Exam, 08.07.2024, Shift-1)
+Q238: SSC CHSL 10+2 Tier-I Exam, 09.07.2024 (Shift-I)   | raw: [SSC CHSL 10 + 2 Tier-I (CBE) Exam.09.07.2024.Shift-Il
+Q239: SSC CGL Tier-I (CBE) Exam, 09.09.2024 (Shift-I)   | raw: (SSC CGL Tier-I (CBE) Exam. 09.09.2024 Shift-n)
+Q240: SSC CGL Tier-I (CBE) Exam, 09.09.2024 (Shift-II)   | raw: (SSC CGL TIer-I (CBE) Exam, 09.09.2024 Shift-)
+Q241: SSC CGL Tier-I (CBE) Exam, 10.09.2024 (Shift-II)   | raw: (SSC CGL Tier-I (CBE) Exam, 10.09.2024 Shift-Il)
+Q242: SSC CGL Tier-I (CBE) Exam, 10.09.2024 (Shift-II)   | raw: (SSC CGL Tler-I (CBE) Exam. 10.09.2024 Shift-Il)
+Q243: SSC CGL Tier-I (CBE) Exam, 10.09.2024 (Shift-III)   | raw: (SSC CGL TIer-I (CBE) Exam. 10.09.2024 Shift-II)
+Q244: SSC CGL Tier-I (CBE) Exam, 11.09.2024 (Shift-I)   | raw: (SSC CGL Ter-I (CBE) Exam. 11.09.2024 Shift-I)
+Q245: SSC CGL Tier-I (CBE) Exam, 11.09.2024   | raw: (SSCCGLTIier-I(CBE)E 11.09.2024 Sha
+Q246: SSC CGL Tier-I (CBE) Exam, 12.09.2024   | raw: (SSC CGL Tier-I (CBE)En 12.09.2024 S
+Q247: SSC CGL Tier-I (CBE) Exam, 12.09.2024   | raw: (SSCCGLTIer-)(CBE)E 12.09.2024Sht
+Q248: SSC Multi-Tasking Staff Exam, 30.09.2024   | raw: (SSC Mult-Tasking Stare) 30.09.2024S
+Q249: SSC Multi-Tasking Staff Exam, 28.10.2024   | raw: (SSC Mulu-Tasking Staes 28.10.2024 So
+Q250: SSC Multi-Tasking Staff Exam, 29.10.2024 (Shift-II)   | raw: (SSC Mulu-Tasking Staff Exam, 29.10.2024 Shift-1)
+Q251: SSC Multi-Tasking Staff Exam, 30.10.2024 (Shift-I)   | raw: ISSCMultu-Tasking StaffExam. 30.10.2024 Shift-1)
+Q252: SSC Multi-Tasking Staff Exam, 14.11.2024 (Shift-I)   | raw: (SSCMulti-Tasking StaffExam, 14.11.2024 Shift-1)
+Q253: SSC CHSL 10+2 Tier-II Exam, 18.11.2024 (Shift-I)   | raw: [SSC CHSL 10 +2 Tier-II (CBE) Exam.18.11.2024.Shift-1)
+Q254: SSC Stenographer Grade 'C' and 'D' Exam, 11.12.2024 (Shift-I)   | raw: (SSC Stenographer Grade'C'andD" Exam,11.12.2024Shift-n)

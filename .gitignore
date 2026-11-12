@@ -23,16 +23,37 @@ capacitor.config.ts
 *.log
 next-local-*.log
 ssczone-*.png
+*.png
+!public/*.png
+*.jpeg
+*.jpg
+*.pdf
+!public/papers/*.pdf
 percentage_*.json
 percentage_*.html
 topics_backup.txt
+kiran_*.json
+type*.json
+all_*.json
+all_*.txt
+parsed_*.json
+pdfplumber_extracted.txt
+reasoning_*.txt
+reasoning_*.json
+batch*.txt
 cd
 npm
 tmp
 output
 tmp_*
 *.zip
+android-app/
+backup_before_delete_2025_2026/
 scripts/*.json
+!scripts/manifest_2023.json
+!scripts/en_overrides_2023.json
+!scripts/hi_overrides_2023.json
+!scripts/p0_overrides_2023.json
 scripts/*.txt
 scripts/*.png
 scripts/*.jpeg
@@ -41,6 +62,11 @@ scripts/__pycache__/
 scripts/scratch_imgs/
 tsconfig.tsbuildinfo
 compiled_verification_txt/
+
+# Cloudflare R2 Assets (Stored in R2 bucket, excluded from git repo)
+public/images/pyq/2023/
+public/images/pyq/2024/
+public/papers/
 
 
 # System & IDE

@@ -354,6 +354,33 @@ export default function PracticeClient({
   // Tier & Exam Filtering State
   const [activeTierFilter, setActiveTierFilter] = useState<"All" | "Tier 1" | "Tier 2">("All");
   const [activeExamFilter, setActiveExamFilter] = useState<string>("All");
+  const [activeTypeFilter, setActiveTypeFilter] = useState<string>("All");
+
+  const typeCounts = useMemo(() => {
+    const map: Record<string, number> = {};
+    questions.forEach((q) => {
+      const t = q.tier_level || "";
+      if (t.toLowerCase().startsWith("type-") || t.toLowerCase().startsWith("type ")) {
+        map[t] = (map[t] || 0) + 1;
+      }
+    });
+    return map;
+  }, [questions]);
+
+  const availableTypes = useMemo(() => {
+    const romanOrder: Record<string, number> = {
+      I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6, VII: 7, VIII: 8, IX: 9, X: 10,
+    };
+    const parseTypeRank = (label: string) => {
+      const suffix = label.replace(/^type[-\s]*/i, "").trim().toUpperCase();
+      if (romanOrder[suffix]) return romanOrder[suffix];
+      const num = Number(suffix);
+      return Number.isFinite(num) && num > 0 ? num : Number.MAX_SAFE_INTEGER;
+    };
+    return Object.keys(typeCounts).sort(
+      (a, b) => parseTypeRank(a) - parseTypeRank(b) || a.localeCompare(b)
+    );
+  }, [typeCounts]);
 
   const examCounts = useMemo(() => {
     let cglCount = 0;
@@ -396,8 +423,13 @@ export default function PracticeClient({
       list = list.filter((q) => q.tier_level === activeTierFilter);
     }
 
+    // 3. Question Type Filter (e.g. Type-I, Type-II)
+    if (activeTypeFilter !== "All") {
+      list = list.filter((q) => (q.tier_level || "") === activeTypeFilter);
+    }
+
     return list;
-  }, [questions, activeExamFilter, activeTierFilter, isMathSubject]);
+  }, [questions, activeExamFilter, activeTierFilter, activeTypeFilter, isMathSubject]);
 
   // Practice Mode: 'step' (Default 1-by-1 Drill) | 'page10' (10-Question Page View) | 'set25' (25-Question Sets)
   const [practiceMode, setPracticeMode] = useState<"step" | "page10" | "set25">("step");
@@ -650,6 +682,12 @@ export default function PracticeClient({
 
   function handleTierSwitch(tier: "All" | "Tier 1" | "Tier 2") {
     setActiveTierFilter(tier);
+    resetPractice();
+    setSelectedSetNumber(1);
+  }
+
+  function handleTypeSwitch(type: string) {
+    setActiveTypeFilter(type);
     resetPractice();
     setSelectedSetNumber(1);
   }
@@ -1021,11 +1059,11 @@ export default function PracticeClient({
                   <p className="text-[11px] font-semibold text-gray-500">
                     {questions.length === 0
                       ? "0 Questions Available in this Chapter"
-                      : `Showing ${displayQuestions.length} Questions (${activeExamFilter === "All" ? "All Exams" : activeExamFilter}, ${activeTierFilter})`}
+                      : `Showing ${displayQuestions.length} Questions (${activeExamFilter === "All" ? "All Exams" : activeExamFilter}${activeTierFilter !== "All" ? `, ${activeTierFilter}` : ""}${activeTypeFilter !== "All" ? `, ${activeTypeFilter}` : ""})`}
                   </p>
                 </div>
 
-                {/* Filter Controls: Exam Target + Tier Level (Only when questions exist) */}
+                {/* Filter Controls: Exam Target + Tier Level + Type Filter (Only when questions exist) */}
                 {questions.length > 0 && (
                   <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
                     {/* Exam Target Filter Selector */}
@@ -1061,6 +1099,35 @@ export default function PracticeClient({
                         🎓 CHSL ({examCounts.chsl})
                       </button>
                     </div>
+
+                    {/* Question Type Filter Selector (Type-I, Type-II, Type-III, etc.) */}
+                    {availableTypes.length > 0 && (
+                      <div className="flex items-center gap-0.5 rounded-xl bg-purple-50/80 p-0.5 sm:p-1 border border-purple-200 text-xs overflow-x-auto max-w-full [&::-webkit-scrollbar]:hidden">
+                        <button
+                          onClick={() => handleTypeSwitch("All")}
+                          className={`px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer whitespace-nowrap ${
+                            activeTypeFilter === "All"
+                              ? "bg-white text-purple-700 shadow-xs border border-purple-200 font-black"
+                              : "text-purple-700/80 hover:text-purple-900"
+                          }`}
+                        >
+                          📑 All Types ({questions.length})
+                        </button>
+                        {availableTypes.map((t) => (
+                          <button
+                            key={t}
+                            onClick={() => handleTypeSwitch(t)}
+                            className={`px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer whitespace-nowrap ${
+                              activeTypeFilter === t
+                                ? "bg-purple-600 text-white shadow-xs font-black"
+                                : "text-purple-700/80 hover:text-purple-900"
+                            }`}
+                          >
+                            🏷️ {t} ({typeCounts[t] || 0})
+                          </button>
+                        ))}
+                      </div>
+                    )}
 
                     {/* Tier Filter Selector (Strictly for Mathematics only) */}
                     {isMathSubject && (

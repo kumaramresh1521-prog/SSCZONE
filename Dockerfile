@@ -13,6 +13,7 @@ ENV NEXT_TELEMETRY_DISABLED=1
 ENV NODE_OPTIONS="--max-old-space-size=4096"
 ENV NEXT_PUBLIC_SUPABASE_URL=https://rmobqopitkjobcnyqzru.supabase.co
 ENV NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJtb2Jxb3BpdGtqb2JjbnlxenJ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODU0MDM3NzYsImV4cCI6MjEwMDk3OTc3Nn0.02MYe-jtAQDgM8zf7ntdTIuJ5nG05hogvJDZtBqKOEA
+ENV NEXT_PUBLIC_R2_PUBLIC_URL=https://doc.ssczone.com
 
 RUN npm run build
 
@@ -22,6 +23,7 @@ ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV NEXT_PUBLIC_SUPABASE_URL=https://rmobqopitkjobcnyqzru.supabase.co
 ENV NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJtb2Jxb3BpdGtqb2JjbnlxenJ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODU0MDM3NzYsImV4cCI6MjEwMDk3OTc3Nn0.02MYe-jtAQDgM8zf7ntdTIuJ5nG05hogvJDZtBqKOEA
+ENV NEXT_PUBLIC_R2_PUBLIC_URL=https://doc.ssczone.com
 
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs

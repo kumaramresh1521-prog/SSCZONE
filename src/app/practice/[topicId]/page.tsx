@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import PracticeClient from "./PracticeClient";
 import { buildPageMetadata } from "@/lib/seo-store";
+import { fetchAllQuestionsByTopics } from "@/lib/question-queries";
 
 export async function generateMetadata({ params }: { params: Promise<{ topicId: string }> }): Promise<Metadata> {
   const { topicId } = await params;
@@ -92,13 +93,8 @@ export default async function PracticePage({ params }: { params: Promise<{ topic
     return <PracticeClient topic={topic} questions={[]} locked={true} fullSyllabus={fullSyllabus} />;
   }
 
-  // 1. Fetch direct questions for this topic
-  let { data: questions } = await supabase
-    .from("questions")
-    .select("*")
-    .eq("topic_id", topic.id)
-    .eq("is_active", true)
-    .order("id", { ascending: true });
+  // 1. Fetch direct questions for this topic (paginated beyond Supabase's 1,000-row default limit)
+  let { data: questions } = await fetchAllQuestionsByTopics(supabase, topic.id, { activeOnly: true });
 
   // 2. Intelligent Auto-Sync: If this topic has no questions yet, automatically share from matching chapter in other exams (e.g. CGL <-> CHSL)
   if (!questions || questions.length === 0) {
@@ -109,12 +105,7 @@ export default async function PracticePage({ params }: { params: Promise<{ topic
 
     if (siblingTopics && siblingTopics.length > 0) {
       const siblingIds = siblingTopics.map((t: any) => t.id);
-      const { data: sharedQs } = await supabase
-        .from("questions")
-        .select("*")
-        .in("topic_id", siblingIds)
-        .eq("is_active", true)
-        .order("id", { ascending: true });
+      const { data: sharedQs } = await fetchAllQuestionsByTopics(supabase, siblingIds, { activeOnly: true });
 
       if (sharedQs && sharedQs.length > 0) {
         questions = sharedQs;

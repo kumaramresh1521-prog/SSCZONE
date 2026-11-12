@@ -24,6 +24,9 @@ next-local-*.log
 /*.svg
 ssczone-*.png
 !public/**
+# Exclude heavy PYQ images and PDFs since they are now served via Cloudflare R2 (https://doc.ssczone.com)
+public/images/pyq
+public/papers
 percentage_*.json
 percentage_*.html
 topics_backup.txt

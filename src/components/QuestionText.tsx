@@ -165,8 +165,8 @@ export default function QuestionText({
       const prefix = trimmed.substring(0, firstHi).trim();
       const wordsInPrefix = prefix.split(/\s+/).filter(Boolean).length;
 
-      // Only treat as bilingual if prefix has at least 4 full English words
-      if (wordsInPrefix >= 4) {
+      // Only treat as bilingual if prefix has at least 4 tokens AND contains lowercase English words (so code chains like "P 16 : R 18" don't split on colons)
+      if (wordsInPrefix >= 4 && /\b[A-Za-z]*[a-z]{2,}\b/.test(prefix)) {
         const m = prefix.match(/(\?|\.\s|\.\n|\:\s*)\s*(["'\w\s\d\+\-\=\/\^\{\}\(\)\[\]]{0,60})$/);
         let en = prefix;
         let hi = trimmed.substring(firstHi).trim();

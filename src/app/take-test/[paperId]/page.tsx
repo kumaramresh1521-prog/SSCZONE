@@ -9,6 +9,7 @@ import MathText from "@/components/MathText";
 import ReportButton from "@/components/ReportButton";
 import CollectQuestionButton from "@/components/CollectQuestionButton";
 import { translateSingleQuestion } from "@/lib/translator";
+import { resolveAssetUrl } from "@/lib/utils";
 import {
   Clock,
   CheckCircle2,
@@ -155,10 +156,11 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
   const [launchFullscreen, setLaunchFullscreen] = useState(true);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [fontSize, setFontSize] = useState<"sm" | "base" | "lg">("base");
-  const [languageMode, setLanguageMode] = useState<"bilingual" | "english" | "hindi">("bilingual");
+  const [languageMode, setLanguageMode] = useState<"bilingual" | "english" | "hindi">("english");
 
   // Dynamic Auto-Translation Engine States
   const [translationsCache, setTranslationsCache] = useState<Record<number, any>>({});
+  const translationsCacheRef = useRef<Record<number, any>>({});
 
   // High-Speed Asset & Translation Preloading States
   const [preloadStatus, setPreloadStatus] = useState<{
@@ -299,8 +301,8 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
           setQuestions(qs);
           setTimeLeft((paperRes.data.duration_minutes || 60) * 60);
 
-          // Default initial language mode: If translation is disabled, default to English
-          setLanguageMode(transAllowed ? "bilingual" : "english");
+          // Default initial language mode is always English; users can switch via top bar option
+          setLanguageMode("english");
         }
       } catch (err: any) {
         if (isMounted) setErrorMessage("Failed to load test paper: " + err.message);
@@ -512,12 +514,16 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
     }
   }
 
-  // 5. Smart CBT Preloader: Pre-cache ALL paper images & translations before test begins
+  // Keep ref in sync for lazy/resumable translation preloading
+  useEffect(() => {
+    translationsCacheRef.current = translationsCache;
+  }, [translationsCache]);
+
+  // 5a. Smart CBT Image Preloader: Pre-cache ALL paper images before test begins
   useEffect(() => {
     if (questions.length === 0) return;
     let isCancelled = false;
 
-    // A. Image Preloading
     const imgUrls = new Set<string>();
     const imgRegex = /!\[[^\]]*\]\(([^)\s]+)\)|<img[^>]+src=["']([^"']+)["']|\/images\/pyq\/[^\s)"']+/g;
 
@@ -530,7 +536,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
         while ((match = localRegex.exec(f)) !== null) {
           const url = match[1] || match[2] || match[0];
           if (url && (url.startsWith("/images/") || url.startsWith("http"))) {
-            imgUrls.add(url);
+            imgUrls.add(resolveAssetUrl(url));
           }
         }
       });
@@ -538,6 +544,13 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
 
     const urls = Array.from(imgUrls);
     let loadedImgCount = 0;
+
+    setPreloadStatus((prev) => ({
+      ...prev,
+      totalImages: urls.length,
+      loadedImages: 0,
+      isImagesDone: urls.length === 0,
+    }));
 
     if (urls.length > 0) {
       urls.forEach((url) => {
@@ -555,36 +568,55 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
       });
     }
 
-    // B. Full Translation Preloading
-    // Preload all questions in Sections 1-3 (Reasoning, GA, Quant) that do not yet have native Hindi
+    return () => {
+      isCancelled = true;
+    };
+  }, [questions]);
+
+  // 5b. On-Demand Translation Preloading: Only translates Sections 1-3 when Hindi/Bilingual is selected
+  useEffect(() => {
+    if (questions.length === 0) return;
+    let isCancelled = false;
+
     const isEngSection = (sec: SectionDef) => {
       if (!sec) return false;
       const combined = `${sec.name} ${sec.shortName}`.toLowerCase();
       return combined.includes("english");
     };
 
-    // If dynamic translator is disabled for this paper, do not queue machine translations
-    const transNeeded = (paper && paper.allow_translation === false) ? [] : questions.filter((q, idx) => {
+    const cached = translationsCacheRef.current;
+    const allTransEligible = (paper && paper.allow_translation === false) ? [] : questions.filter((q, idx) => {
       const sec = getQuestionSection(idx);
       if (isEngSection(sec)) return false;
       if (q.question_text_hi || /[\u0900-\u097F]/.test(q.question_text || "")) return false;
       return true;
     });
 
-    setPreloadStatus({
-      totalImages: urls.length,
-      loadedImages: loadedImgCount,
-      isImagesDone: urls.length === 0 || loadedImgCount >= urls.length,
-      totalTranslations: transNeeded.length,
-      loadedTranslations: 0,
+    // Skip background translation requests while in default English mode
+    if (languageMode === "english") {
+      setPreloadStatus((prev) => ({
+        ...prev,
+        totalTranslations: 0,
+        loadedTranslations: 0,
+        isTranslationsDone: true,
+      }));
+      return;
+    }
+
+    const transNeeded = allTransEligible.filter((q) => !cached[q.id]);
+    const alreadyDoneCount = allTransEligible.length - transNeeded.length;
+
+    setPreloadStatus((prev) => ({
+      ...prev,
+      totalTranslations: allTransEligible.length,
+      loadedTranslations: alreadyDoneCount,
       isTranslationsDone: transNeeded.length === 0,
-    });
+    }));
 
     if (transNeeded.length === 0) return;
 
-    // Background batch translation preloader: chunks of 4 questions to avoid rate-limiting
     async function preloadAllTranslations() {
-      let loadedTransCount = 0;
+      let loadedTransCount = alreadyDoneCount;
       const chunkSize = 4;
       for (let i = 0; i < transNeeded.length; i += chunkSize) {
         if (isCancelled) break;
@@ -607,8 +639,8 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
           loadedTransCount += chunk.length;
           setPreloadStatus((prev) => ({
             ...prev,
-            loadedTranslations: Math.min(loadedTransCount, transNeeded.length),
-            isTranslationsDone: loadedTransCount >= transNeeded.length,
+            loadedTranslations: Math.min(loadedTransCount, allTransEligible.length),
+            isTranslationsDone: loadedTransCount >= allTransEligible.length,
           }));
         } catch (err) {
           console.warn("Background translation preloader caught:", err);
@@ -621,7 +653,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
     return () => {
       isCancelled = true;
     };
-  }, [questions, sections, paper]);
+  }, [questions, sections, paper, languageMode]);
 
   // 5b. Smooth Fallback Translation Engine for Current / Next Question (in case background queue is still progressing)
   useEffect(() => {
@@ -931,6 +963,146 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
     }
     return { qText: "text-sm sm:text-base leading-relaxed", optText: "text-xs sm:text-sm font-semibold" };
   }, [fontSize]);
+
+  // Shared language helpers (default English; obeys top Language Switcher in both Test & Review screens)
+  const isLanguageSelectable = !(paper?.allow_translation === false && !hasAuthenticHindi);
+
+  const renderLanguageSwitcher = (compact = false) => {
+    if (!isLanguageSelectable) {
+      return (
+        <div className="flex items-center gap-1.5 bg-white px-2.5 py-1 rounded-lg border border-slate-300 shadow-2xs text-[11px] font-bold text-slate-700 shrink-0">
+          <span className="h-2 w-2 rounded-full bg-blue-600"></span>
+          <span>English (Official Paper)</span>
+        </div>
+      );
+    }
+    const items: Array<{ id: "english" | "bilingual" | "hindi"; label: string }> = [
+      { id: "english", label: "English" },
+      { id: "bilingual", label: "Bilingual" },
+      { id: "hindi", label: "हिन्दी" },
+    ];
+    return (
+      <div className="flex items-center gap-1 bg-white p-0.5 rounded-lg border border-slate-300 shadow-2xs shrink-0">
+        {items.map((item) => (
+          <button
+            key={item.id}
+            onClick={() => setLanguageMode(item.id)}
+            className={`${compact ? "px-2 py-0.5 text-[11px]" : "px-2.5 py-1 text-[11px]"} font-bold rounded transition-all cursor-pointer whitespace-nowrap ${
+              languageMode === item.id ? "bg-blue-700 text-white shadow-xs" : "text-slate-600 hover:bg-slate-100"
+            }`}
+          >
+            {item.label}
+          </button>
+        ))}
+      </div>
+    );
+  };
+
+  const getLocalizedQuestionParts = (q: any, sec: SectionDef) => {
+    const isEngSec = (sec.name + " " + sec.shortName).toLowerCase().includes("english");
+    const splitQ = splitBilingualText(q?.question_text || "");
+    const transQ = q ? translationsCache[q.id] : undefined;
+    const enText = splitQ.english || q?.question_text || "";
+    const hiText = isEngSec
+      ? ""
+      : (splitQ.hindi || q?.question_text_hi || transQ?.question_text || "");
+    return { isEngSec, enText, hiText, transQ };
+  };
+
+  const getLocalizedOptionText = (q: any, opt: string, sec: SectionDef) => {
+    const optRaw = q?.[`option_${opt.toLowerCase()}`];
+    if (!optRaw) return "";
+    const isEngSec = (sec.name + " " + sec.shortName).toLowerCase().includes("english");
+    const splitOpt = splitBilingualOption(optRaw);
+    const transQ = translationsCache[q.id];
+    const enOpt = splitOpt.english || optRaw;
+    const hiOpt = isEngSec
+      ? ""
+      : (splitOpt.hindi || q?.[`option_${opt.toLowerCase()}_hi`] || transQ?.[`option_${opt.toLowerCase()}`] || "");
+
+    if (languageMode === "english" || isEngSec) return enOpt;
+    if (languageMode === "hindi") return hiOpt || enOpt;
+    return hiOpt && hiOpt !== enOpt ? `${enOpt}  /  ${hiOpt}` : optRaw;
+  };
+
+  const renderLocalizedQuestionStatement = (q: any, sec: SectionDef, textClassName: string, showEngNotice = false) => {
+    const { isEngSec, enText, hiText } = getLocalizedQuestionParts(q, sec);
+
+    if (languageMode === "english" || isEngSec) {
+      return (
+        <div className="space-y-2">
+          {showEngNotice && isEngSec && languageMode !== "english" && (
+            <div className="inline-flex items-center gap-1.5 text-[11px] font-bold text-blue-900 bg-blue-50 px-2.5 py-1 rounded-lg border border-blue-200">
+              <Info className="h-3.5 w-3.5 text-blue-600 shrink-0" />
+              <span>English Comprehension (अंग्रेजी भाषा समझ) के प्रश्न केवल अंग्रेजी में ही होते हैं।</span>
+            </div>
+          )}
+          <div className={`font-semibold text-slate-900 ${textClassName} break-words`}>
+            <MathText text={enText} />
+          </div>
+        </div>
+      );
+    }
+
+    if (languageMode === "hindi") {
+      if (hiText) {
+        const enHasMath = /\d|[\+\-\*\/\^=√%]/.test(enText);
+        const hiHasMath = /\d|[\+\-\*\/\^=√%]/.test(hiText);
+        if (enHasMath && hiText.length < 35 && !hiHasMath) {
+          return (
+            <div className="space-y-2.5">
+              <div className={`font-semibold text-slate-900 ${textClassName} break-words`}>
+                <MathText text={enText} />
+              </div>
+              <div className="border-t border-slate-200 pt-1.5 text-xs sm:text-sm text-slate-700 bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                <MathText text={hiText} />
+              </div>
+            </div>
+          );
+        }
+        return (
+          <div className={`font-semibold text-slate-900 ${textClassName} break-words`}>
+            <MathText text={hiText} />
+          </div>
+        );
+      }
+      return (
+        <div className="space-y-2">
+          <div className="inline-flex items-center gap-1.5 text-[10px] font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
+            <span>मूल प्रश्न (Original Statement)</span>
+          </div>
+          <div className={`font-semibold text-slate-900 ${textClassName} break-words`}>
+            <MathText text={enText} />
+          </div>
+        </div>
+      );
+    }
+
+    // Bilingual mode (only when explicitly chosen via top toggle)
+    if (hiText && hiText !== enText) {
+      return (
+        <div className="space-y-2.5">
+          <div className={`font-semibold text-slate-900 ${textClassName} break-words`}>
+            <MathText text={enText} />
+          </div>
+          <div className="border-t border-slate-200 pt-2 text-slate-800 font-medium leading-relaxed bg-slate-50/70 p-3 rounded-xl border border-slate-200">
+            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500 mb-1">
+              हिन्दी प्रश्न (Hindi):
+            </div>
+            <div className={`${textClassName} break-words`}>
+              <MathText text={hiText} />
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    return (
+      <div className={`font-semibold text-slate-900 ${textClassName} break-words`}>
+        <MathText text={enText} />
+      </div>
+    );
+  };
 
   // Loading state
   if (loading) {
@@ -1258,7 +1430,9 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                         <span>All Diagrams Ready</span>
                       )}
                       {" • "}
-                      {preloadStatus.totalTranslations > 0 ? (
+                      {languageMode === "english" ? (
+                        <span>English Mode Selected (Switch to Hindi/Bilingual anytime above)</span>
+                      ) : preloadStatus.totalTranslations > 0 ? (
                         <span>
                           <b>{preloadStatus.loadedTranslations}</b> / {preloadStatus.totalTranslations} Hindi Translations
                         </span>
@@ -1369,8 +1543,8 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                     onChange={(e) => setLanguageMode(e.target.value as any)}
                     className="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 text-xs font-bold text-slate-800 focus:outline-none focus:ring-1 focus:ring-blue-500 cursor-pointer"
                   >
+                    <option value="english">English Only (Default)</option>
                     <option value="bilingual">Bilingual (English + Hindi)</option>
-                    <option value="english">English Only</option>
                     <option value="hindi">Hindi Only</option>
                   </select>
                 )}
@@ -1656,40 +1830,47 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
           </div>
         </header>
 
-        {/* Category Tabs & Status Filters Bar */}
+        {/* Category Tabs, Language Switcher & Status Filters Bar */}
         <div className="bg-white border-b border-slate-200 px-4 sm:px-8 py-2.5 shadow-2xs space-y-2.5 sticky top-[57px] z-20">
           
-          {/* Category Tabs */}
-          <div className="flex items-center gap-2 overflow-x-auto pb-1 [&::-webkit-scrollbar]:hidden">
-            <span className="text-xs font-bold text-slate-500 shrink-0">Category:</span>
-            <button
-              onClick={() => setReviewSectionId("all")}
-              className={`px-3 py-1 text-xs font-bold rounded-lg border transition-all cursor-pointer whitespace-nowrap ${
-                reviewSectionId === "all"
-                  ? "bg-blue-700 text-white border-blue-700"
-                  : "bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200"
-              }`}
-            >
-              All Sections (100)
-            </button>
+          {/* Category Tabs & Language Option */}
+          <div className="flex items-center justify-between gap-2 flex-wrap">
+            <div className="flex items-center gap-2 overflow-x-auto pb-1 [&::-webkit-scrollbar]:hidden min-w-0">
+              <span className="text-xs font-bold text-slate-500 shrink-0">Category:</span>
+              <button
+                onClick={() => setReviewSectionId("all")}
+                className={`px-3 py-1 text-xs font-bold rounded-lg border transition-all cursor-pointer whitespace-nowrap ${
+                  reviewSectionId === "all"
+                    ? "bg-blue-700 text-white border-blue-700"
+                    : "bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200"
+                }`}
+              >
+                All Sections ({questions.length})
+              </button>
 
-            {sections.map(s => {
-              const secQs = questions.slice(s.startIdx, s.endIdx + 1);
-              const isSelected = reviewSectionId === s.id;
-              return (
-                <button
-                  key={s.id}
-                  onClick={() => setReviewSectionId(s.id)}
-                  className={`px-3 py-1 text-xs font-bold rounded-lg border transition-all cursor-pointer whitespace-nowrap ${
-                    isSelected
-                      ? "bg-blue-700 text-white border-blue-700"
-                      : "bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200"
-                  }`}
-                >
-                  {s.shortName} ({secQs.length})
-                </button>
-              );
-            })}
+              {sections.map(s => {
+                const secQs = questions.slice(s.startIdx, s.endIdx + 1);
+                const isSelected = reviewSectionId === s.id;
+                return (
+                  <button
+                    key={s.id}
+                    onClick={() => setReviewSectionId(s.id)}
+                    className={`px-3 py-1 text-xs font-bold rounded-lg border transition-all cursor-pointer whitespace-nowrap ${
+                      isSelected
+                        ? "bg-blue-700 text-white border-blue-700"
+                        : "bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200"
+                    }`}
+                  >
+                    {s.shortName} ({secQs.length})
+                  </button>
+                );
+              })}
+            </div>
+
+            <div className="flex items-center gap-2 shrink-0">
+              <span className="text-xs font-bold text-slate-500">Language:</span>
+              {renderLanguageSwitcher()}
+            </div>
           </div>
 
           {/* Status Filter Pills */}
@@ -1783,49 +1964,16 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                       </div>
                     </div>
 
-                    {/* Question Text (with Bilingual Support in Review) */}
-                    {(() => {
-                      const isEngSec = (qSection.name + " " + qSection.shortName).toLowerCase().includes("english");
-                      const qSplit = splitBilingualText(q.question_text);
-                      const transQ = translationsCache[q.id];
-                      const enQ = qSplit.english || q.question_text;
-                      const hiQ = isEngSec ? "" : (qSplit.hindi || q.question_text_hi || transQ?.question_text || "");
-
-                      if (hiQ && hiQ !== enQ) {
-                        return (
-                          <div className="space-y-2">
-                            <div className="text-sm sm:text-base font-semibold text-slate-900 leading-relaxed break-words">
-                              <MathText text={enQ} />
-                            </div>
-                            <div className="border-t border-slate-200 pt-2 text-xs sm:text-sm text-slate-700 bg-slate-50/60 p-2.5 rounded-lg border border-slate-100">
-                              <span className="text-[10px] font-bold uppercase text-slate-500 block mb-0.5">हिन्दी अनुवाद:</span>
-                              <MathText text={hiQ} />
-                            </div>
-                          </div>
-                        );
-                      }
-
-                      return (
-                        <div className="text-sm sm:text-base font-semibold text-slate-900 leading-relaxed break-words">
-                          <MathText text={enQ} />
-                        </div>
-                      );
-                    })()}
+                    {/* Question Text (Obeys top Language Switcher; English by default) */}
+                    {renderLocalizedQuestionStatement(q, qSection, "text-sm sm:text-base leading-relaxed")}
 
                     {/* Options Grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
                       {OPTIONS.map((opt) => {
-                        const optText = q[`option_${opt.toLowerCase()}`];
-                        if (!optText) return null;
+                        const optDisplay = getLocalizedOptionText(q, opt, qSection);
+                        if (!optDisplay) return null;
                         const isOptionCorrect = q.correct_answer === opt;
                         const isOptionChosen = userChoice === opt;
-
-                        const isEngSec = (qSection.name + " " + qSection.shortName).toLowerCase().includes("english");
-                        const optSplit = splitBilingualOption(optText);
-                        const transQ = translationsCache[q.id];
-                        const enOpt = optSplit.english || optText;
-                        const hiOpt = isEngSec ? "" : (optSplit.hindi || q[`option_${opt.toLowerCase()}_hi`] || transQ?.[`option_${opt.toLowerCase()}`] || "");
-                        const optDisplay = (hiOpt && hiOpt !== enOpt) ? `${enOpt}  /  ${hiOpt}` : enOpt;
 
                         let style = "bg-slate-50 border-slate-200 text-slate-700";
                         if (isOptionCorrect) {
@@ -1910,12 +2058,12 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                     </div>
                   </div>
 
-                  <div className="text-sm sm:text-base font-semibold text-slate-900 leading-relaxed break-words">
-                    <MathText text={currentReviewQ.question_text} />
-                  </div>
+                  {renderLocalizedQuestionStatement(currentReviewQ, qSection, "text-sm sm:text-base leading-relaxed")}
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2">
                     {OPTIONS.map((opt) => {
+                      const optDisplay = getLocalizedOptionText(currentReviewQ, opt, qSection);
+                      if (!optDisplay) return null;
                       const isOptionCorrect = currentReviewQ.correct_answer === opt;
                       const isOptionChosen = userChoice === opt;
 
@@ -1928,7 +2076,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                           <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-white text-xs font-black border">
                             {opt}
                           </span>
-                          <span className="flex-1 break-words"><MathText text={currentReviewQ[`option_${opt.toLowerCase()}`]} /></span>
+                          <span className="flex-1 break-words"><MathText text={optDisplay} /></span>
                           {isOptionCorrect && <Check className="h-4 w-4 text-emerald-600 shrink-0" />}
                           {isOptionChosen && !isOptionCorrect && <X className="h-4 w-4 text-red-600 shrink-0" />}
                         </div>
@@ -1980,16 +2128,6 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
 
   const currentSelectedOpt = answers[currentQ.id];
   const currentSection = getQuestionSection(currentIndex);
-
-  // Dynamic Section Language Rules & Auto-Translation
-  const isEnglishSection = (currentSection.name + " " + currentSection.shortName).toLowerCase().includes("english");
-  const splitQ = splitBilingualText(currentQ.question_text);
-  const trans = translationsCache[currentQ.id];
-  const enQuestionText = splitQ.english || currentQ.question_text;
-  const hiQuestionText = isEnglishSection 
-    ? "" 
-    : (splitQ.hindi || currentQ.question_text_hi || trans?.question_text || "");
-  const questionHasHindi = !!hiQuestionText || /[\u0900-\u097F]/.test(currentQ.question_text);
 
   // Reusable Question Palette Content (rendered in sidebar on desktop, drawer on mobile)
   const renderPaletteContent = () => (
@@ -2249,40 +2387,8 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
             <span>Palette</span>
           </button>
 
-          {/* Language Mode: if official English paper with translation disabled, show clean badge */}
-          {paper?.allow_translation === false && !hasAuthenticHindi ? (
-            <div className="flex items-center gap-1.5 bg-white px-2.5 py-1 rounded-lg border border-slate-300 shadow-2xs text-[11px] font-bold text-slate-700">
-              <span className="h-2 w-2 rounded-full bg-blue-600"></span>
-              <span>English (Official Paper)</span>
-            </div>
-          ) : (
-            <div className="flex items-center gap-1 bg-white p-0.5 rounded-lg border border-slate-300 shadow-2xs">
-              <button
-                onClick={() => setLanguageMode("bilingual")}
-                className={`px-2 py-0.5 text-[11px] font-bold rounded transition-all cursor-pointer ${
-                  languageMode === "bilingual" ? "bg-blue-700 text-white shadow-xs" : "text-slate-600 hover:bg-slate-100"
-                }`}
-              >
-                Bilingual
-              </button>
-              <button
-                onClick={() => setLanguageMode("english")}
-                className={`px-2 py-0.5 text-[11px] font-bold rounded transition-all cursor-pointer ${
-                  languageMode === "english" ? "bg-blue-700 text-white shadow-xs" : "text-slate-600 hover:bg-slate-100"
-                }`}
-              >
-                English
-              </button>
-              <button
-                onClick={() => setLanguageMode("hindi")}
-                className={`px-2 py-0.5 text-[11px] font-bold rounded transition-all cursor-pointer ${
-                  languageMode === "hindi" ? "bg-blue-700 text-white shadow-xs" : "text-slate-600 hover:bg-slate-100"
-                }`}
-              >
-                हिन्दी
-              </button>
-            </div>
-          )}
+          {/* Language Mode: default English with top switcher when Bilingual/Hindi is available */}
+          {renderLanguageSwitcher(true)}
         </div>
       </div>
 
@@ -2335,148 +2441,61 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
           </div>
 
           {/* Question Statement & Options (Scrollable, Clean Scrollbar) */}
-          <div className="flex-1 p-4 sm:p-6 overflow-y-auto space-y-4 break-words [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-thumb]:bg-slate-300 [&::-webkit-scrollbar-thumb]:rounded-full">
+          <div className="flex-1 p-3.5 sm:p-5 overflow-y-auto space-y-3 break-words [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-thumb]:bg-slate-300 [&::-webkit-scrollbar-thumb]:rounded-full">
             
             {/* Dynamic Question Text by Language Mode */}
+            {renderLocalizedQuestionStatement(currentQ, currentSection, fontClasses.qText, true)}
+
+            {/* Options Grid / List (2x2 compact grid for figure & concise options so all 4 options stay visible without scrolling) */}
             {(() => {
-              // 1. English Mode Selected (Or English Comprehension Section in any mode)
-              if (languageMode === "english" || isEnglishSection) {
-                return (
-                  <div className="space-y-2">
-                    {isEnglishSection && languageMode !== "english" && (
-                      <div className="inline-flex items-center gap-1.5 text-[11px] font-bold text-blue-900 bg-blue-50 px-2.5 py-1 rounded-lg border border-blue-200">
-                        <Info className="h-3.5 w-3.5 text-blue-600 shrink-0" />
-                        <span>English Comprehension (अंग्रेजी भाषा समझ) के प्रश्न केवल अंग्रेजी में ही होते हैं।</span>
-                      </div>
-                    )}
-                    <div className={`font-semibold text-slate-900 ${fontClasses.qText} break-words`}>
-                      <MathText text={enQuestionText || currentQ.question_text} />
-                    </div>
-                  </div>
+              const localizedOpts = OPTIONS.map((opt) => ({
+                opt,
+                displayOpt: getLocalizedOptionText(currentQ, opt, currentSection),
+              })).filter((item) => Boolean(item.displayOpt));
+
+              const hasImageOptions = localizedOpts.some((item) =>
+                /!\[[^\]]*\]\(|<img\b|\/images\//i.test(item.displayOpt)
+              );
+              const useTwoColGrid =
+                hasImageOptions ||
+                localizedOpts.every(
+                  (item) => item.displayOpt.length <= 52 && !item.displayOpt.includes("\n")
                 );
-              }
-
-              // 2. Hindi Mode Selected (for Reasoning, GA, Quant)
-              if (languageMode === "hindi") {
-                if (hiQuestionText) {
-                  // Failsafe: If English statement contains equations/numbers but Hindi is just a short prompt (e.g. "मान ज्ञात कीजिए:"),
-                  // render the full equation along with Hindi prompt so no formula is ever hidden!
-                  const enHasMath = /\d|[\+\-\*\/\^=√%]/.test(enQuestionText || currentQ.question_text);
-                  const hiHasMath = /\d|[\+\-\*\/\^=√%]/.test(hiQuestionText);
-                  const hiIsJustShortPrompt = hiQuestionText.length < 35 && !hiHasMath;
-
-                  if (enHasMath && hiIsJustShortPrompt) {
-                    return (
-                      <div className="space-y-2.5">
-                        <div className={`font-semibold text-slate-900 ${fontClasses.qText} break-words`}>
-                          <MathText text={enQuestionText || currentQ.question_text} />
-                        </div>
-                        <div className="border-t border-slate-200 pt-1.5 text-xs sm:text-sm text-slate-700 bg-slate-50 p-2.5 rounded-lg border border-slate-200">
-                          <MathText text={hiQuestionText} />
-                        </div>
-                      </div>
-                    );
-                  }
-
-                  return (
-                    <div className={`font-semibold text-slate-900 ${fontClasses.qText} break-words`}>
-                      <MathText text={hiQuestionText} />
-                    </div>
-                  );
-                } else {
-                  return (
-                    <div className="space-y-2">
-                      <div className="inline-flex items-center gap-1.5 text-[10px] font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
-                        <span>मूल प्रश्न (Original Statement)</span>
-                      </div>
-                      <div className={`font-semibold text-slate-900 ${fontClasses.qText} break-words`}>
-                        <MathText text={enQuestionText || currentQ.question_text} />
-                      </div>
-                    </div>
-                  );
-                }
-              }
-
-              // 3. Bilingual Mode (Default)
-              if (hiQuestionText && hiQuestionText !== enQuestionText) {
-                return (
-                  <div className="space-y-3">
-                    <div className={`font-semibold text-slate-900 ${fontClasses.qText} break-words`}>
-                      <MathText text={enQuestionText} />
-                    </div>
-                    <div className="border-t border-slate-200 pt-2.5 text-slate-800 font-medium leading-relaxed bg-slate-50/70 p-3 rounded-xl border border-slate-200">
-                      <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500 mb-1 flex items-center gap-1">
-                        <span>हिन्दी प्रश्न (Official Hindi):</span>
-                      </div>
-                      <div className={`${fontClasses.qText} break-words`}>
-                        <MathText text={hiQuestionText} />
-                      </div>
-                    </div>
-                  </div>
-                );
-              }
 
               return (
-                <div className={`font-semibold text-slate-900 ${fontClasses.qText} break-words`}>
-                  <MathText text={enQuestionText || currentQ.question_text} />
+                <div className={useTwoColGrid ? "grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1" : "space-y-2 pt-1"}>
+                  {localizedOpts.map(({ opt, displayOpt }) => {
+                    const isSelected = currentSelectedOpt === opt;
+
+                    return (
+                      <label
+                        key={opt}
+                        onClick={() => handleSelectOption(opt)}
+                        className={`flex items-center gap-2.5 ${useTwoColGrid ? "px-3 py-2" : "p-3"} rounded-xl border-2 transition-all cursor-pointer ${
+                          isSelected
+                            ? "bg-blue-50/80 border-blue-600 text-slate-900 shadow-xs"
+                            : "bg-white border-slate-200 hover:border-slate-300 hover:bg-slate-50/60 text-slate-800"
+                        }`}
+                      >
+                        <input
+                          type="radio"
+                          name={`question_${currentQ.id}`}
+                          checked={isSelected}
+                          onChange={() => handleSelectOption(opt)}
+                          className="h-4 w-4 text-blue-600 border-slate-300 focus:ring-blue-500 cursor-pointer shrink-0"
+                        />
+                        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-100 text-xs font-black text-slate-700 border border-slate-300">
+                          {opt}
+                        </span>
+                        <span className={`${fontClasses.optText} flex-1 min-w-0 break-words`}>
+                          <MathText text={displayOpt} />
+                        </span>
+                      </label>
+                    );
+                  })}
                 </div>
               );
             })()}
-
-            {/* Options List */}
-            <div className="space-y-2 pt-2">
-              {OPTIONS.map((opt) => {
-                const optRaw = currentQ[`option_${opt.toLowerCase()}`];
-                if (!optRaw) return null;
-                const isSelected = currentSelectedOpt === opt;
-
-                const splitOpt = splitBilingualOption(optRaw);
-                const enOpt = splitOpt.english || optRaw;
-                const hiOpt = isEnglishSection
-                  ? ""
-                  : (splitOpt.hindi || currentQ[`option_${opt.toLowerCase()}_hi`] || trans?.[`option_${opt.toLowerCase()}`] || "");
-
-                let displayOpt = optRaw;
-                if (languageMode === "english" || isEnglishSection) {
-                  displayOpt = enOpt;
-                } else if (languageMode === "hindi") {
-                  displayOpt = hiOpt || enOpt;
-                } else {
-                  // Bilingual mode
-                  if (hiOpt && hiOpt !== enOpt) {
-                    displayOpt = `${enOpt}  /  ${hiOpt}`;
-                  } else {
-                    displayOpt = optRaw;
-                  }
-                }
-
-                return (
-                  <label
-                    key={opt}
-                    onClick={() => handleSelectOption(opt)}
-                    className={`flex items-center gap-3 p-3 rounded-xl border-2 transition-all cursor-pointer ${
-                      isSelected
-                        ? "bg-blue-50/80 border-blue-600 text-slate-900 shadow-xs"
-                        : "bg-white border-slate-200 hover:border-slate-300 hover:bg-slate-50/60 text-slate-800"
-                    }`}
-                  >
-                    <input
-                      type="radio"
-                      name={`question_${currentQ.id}`}
-                      checked={isSelected}
-                      onChange={() => handleSelectOption(opt)}
-                      className="h-4 w-4 text-blue-600 border-slate-300 focus:ring-blue-500 cursor-pointer shrink-0"
-                    />
-                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-100 text-xs font-black text-slate-700 border border-slate-300">
-                      {opt}
-                    </span>
-                    <span className={`${fontClasses.optText} flex-1 break-words`}>
-                      <MathText text={displayOpt} />
-                    </span>
-                  </label>
-                );
-              })}
-            </div>
           </div>
 
           {/* ── Bottom Action Navigation Bar (Responsive, Never Wraps awkwardly) ── */}
@@ -2722,7 +2741,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                         )}
                       </div>
                       <div className="text-xs font-medium text-slate-800 line-clamp-2 break-words">
-                        <MathText text={q.question_text} />
+                        <MathText text={getLocalizedQuestionParts(q, getQuestionSection(idx)).enText} />
                       </div>
                     </div>
                   );

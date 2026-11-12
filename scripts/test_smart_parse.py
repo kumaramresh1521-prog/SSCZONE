@@ -1,138 +1,119 @@
-import fitz
+import json
 import re
-import os
-import sys
 
-sys.stdout.reconfigure(encoding='utf-8')
+with open('scripts/pdf_samples/t4_structured_lines.json', 'r', encoding='utf-8') as f:
+    raw_lines = json.load(f)
 
-def extract_page_blocks_smart(page):
-    blocks = page.get_text("blocks")
-    valid_blocks = [b for b in blocks if b[4].strip()]
-    
-    # Check for horizontal split by section header (y > 140)
-    y_split = None
-    for b in valid_blocks:
-        txt = b[4].strip().upper()
-        if any(h in txt for h in ["GENERAL INTELLIGENCE", "GENERAL AWARENESS", "QUANTITATIVE APTITUDE", "ENGLISH LANGUAGE"]):
-            if b[1] > 140:
-                y_split = b[1]
-                break
-                
-    if y_split:
-        top_blocks = [b for b in valid_blocks if b[3] <= y_split]
-        bot_blocks = [b for b in valid_blocks if b[1] >= y_split]
-        
-        t_left = sorted([b for b in top_blocks if (b[0]+b[2])/2 < 305], key=lambda b: b[1])
-        t_right = sorted([b for b in top_blocks if (b[0]+b[2])/2 >= 305], key=lambda b: b[1])
-        b_left = sorted([b for b in bot_blocks if (b[0]+b[2])/2 < 305], key=lambda b: b[1])
-        b_right = sorted([b for b in bot_blocks if (b[0]+b[2])/2 >= 305], key=lambda b: b[1])
-        
-        ordered = t_left + t_right + b_left + b_right
-    else:
-        left = sorted([b for b in valid_blocks if (b[0]+b[2])/2 < 305], key=lambda b: b[1])
-        right = sorted([b for b in valid_blocks if (b[0]+b[2])/2 >= 305], key=lambda b: b[1])
-        ordered = left + right
-        
-    return "\n".join(b[4] for b in ordered)
+cols = []
+cur_key = None
+cur_list = []
+for idx, item in enumerate(raw_lines):
+    if idx >= 2599: break
+    key = (item['file'], item['col'])
+    if key != cur_key:
+        if cur_list: cols.append((cur_key, cur_list))
+        cur_key = key
+        cur_list = []
+    cur_list.append(item['text'])
+if cur_list: cols.append((cur_key, cur_list))
 
-def extract_full_text(doc):
-    full = ""
-    for p_idx in range(1, len(doc)):
-        full += "\n" + extract_page_blocks_smart(doc[p_idx])
-    return full
+with open('scripts/pdf_samples/t4_col_starts.json', 'r', encoding='utf-8') as f:
+    col_starts_meta = json.load(f)
 
-def parse_100_questions(doc):
-    full_text = extract_full_text(doc)
-    
-    # Locate all 100 questions by 1..100
-    # To handle 01. or 1.
-    matches = list(re.finditer(r"(?:^|\n)\s*(?:0(?=[1-9]\.))?(\d{1,3})\.\s*", full_text))
-    
-    q_spans = []
-    expected = 1
-    for m in matches:
-        n = int(m.group(1))
-        if n == expected:
-            q_spans.append((n, m.start(), m.end()))
-            expected += 1
-            if expected > 100:
-                break
-                
-    questions = []
-    for i in range(len(q_spans)):
-        q_num, start, end = q_spans[i]
-        next_start = q_spans[i + 1][1] if i + 1 < len(q_spans) else len(full_text)
-        block = full_text[end:next_start].strip()
-        
-        # Ans regex: "Ans: A" or "Ans : (A)"
-        ans_m = re.search(r"(?:^|\n|\s)\s*Ans\s*[:\-]\s*\(?([A-D])\)?", block, re.I)
-        ans = ans_m.group(1).upper() if ans_m else "A"
-        
-        body = re.sub(r"(?:^|\n|\s)\s*Ans\s*[:\-]\s*\(?[A-D]\)?.*", "", block, flags=re.I).strip()
-        
-        # Clean page headers and section headings
-        lines = [l.strip() for l in body.split("\n") if l.strip() and not re.match(r"^SSC CGL \d{4}", l.strip(), re.I)]
-        clean_body = "\n".join(lines)
-        
-        # Find Option Markers: (A), (B), (C), (D)
-        opt_matches = list(re.finditer(r"(?:^|\n|\s)\(([A-D])\)\s*", clean_body))
-        
-        q_text = ""
-        opts = {'A': '', 'B': '', 'C': '', 'D': ''}
-        
-        if len(opt_matches) >= 4:
-            q_text = clean_body[:opt_matches[0].start()].strip()
-            for o_i in range(len(opt_matches)):
-                letter = opt_matches[o_i].group(1).upper()
-                o_start = opt_matches[o_i].end()
-                o_end = opt_matches[o_i + 1].start() if o_i + 1 < len(opt_matches) else len(clean_body)
-                opts[letter] = clean_body[o_start:o_end].strip()
-        else:
-            # Fallback 1: Split on (A), (B), (C), (D)
-            parts = re.split(r"(?:^|\n|\s)\([A-D]\)\s*", clean_body)
-            if len(parts) >= 5:
-                q_text = parts[0].strip()
-                opts['A'] = parts[1].strip()
-                opts['B'] = parts[2].strip()
-                opts['C'] = parts[3].strip()
-                opts['D'] = parts[4].strip()
-            else:
-                q_text = clean_body
-                
-        # If question text is empty (diagram / figure questions):
-        if not q_text.strip():
-            # Check if this is an image/diagram problem
-            q_text = "Refer to the given figure / diagram and select the correct option:"
+def is_exam_line(text):
+    t_up = text.upper()
+    return any(k in t_up for k in ['EXAM', 'EXCM', 'EAM', 'EON', 'EXAN', 'SHIFT', 'SHIT', 'SHUT', 'SHAT', 'SHAF', 'SHT', 'SHN', 'TIER', 'TER', 'CBE', 'CDE', 'C&D', 'TF NO', 'ST SURUNE', 'CAPFS', 'CHSL', 'CGL', 'MTS', 'GD)'])
+
+def clean_opt_text(val):
+    val = re.sub(r'^[^\w]+', '', val).strip()
+    val = re.sub(r'^[1-4IliHhAaBbCcDd]?[\)\]\.\,\s]+', '', val).strip()
+    val = re.sub(r'[\(\[].*$', '', val).strip()
+    return val
+
+def parse_chunk_smart(chunk):
+    # Separate prompt, candidates, and exam
+    lines = chunk[:]
+    # find where exam begins
+    exam_idx = len(lines)
+    for i, l in enumerate(lines):
+        if is_exam_line(l) or re.search(r'\d{2}\.\d{2}\.\d{4}', l):
+            exam_idx = i
+            break
             
-        # Clean up options
-        for k in ['A', 'B', 'C', 'D']:
-            opts[k] = opts[k].replace("\n", " ").strip()
-            # If option text empty or just whitespace
-            if not opts[k]:
-                opts[k] = f"Option {k}"
-                
-        questions.append({
-            "question_number": q_num,
-            "question_text": q_text,
-            "option_a": opts['A'],
-            "option_b": opts['B'],
-            "option_c": opts['C'],
-            "option_d": opts['D'],
-            "correct_answer": ans
-        })
+    content_lines = lines[:exam_idx]
+    if len(content_lines) <= 1:
+        return ["", "", "", ""]
         
-    return questions
+    prompt_line = content_lines[0]
+    opt_raw_lines = content_lines[1:]
+    
+    # Check if lines have multiple options on one line
+    expanded = []
+    for l in opt_raw_lines:
+        # Check for multi-opt
+        parts = re.split(r'(?:[\(\[]\s*[1-4Ili]\s*[\)\]\.]|(?:^|\s)[1-4]\s*[\)\.\-])', l)
+        clean_parts = [clean_opt_text(p) for p in parts if clean_opt_text(p)]
+        if len(clean_parts) > 1:
+            expanded.extend(clean_parts)
+        else:
+            cl = clean_opt_text(l)
+            if cl and len(cl) >= 1:
+                expanded.append(cl)
+                
+    if len(expanded) == 4:
+        return expanded
+        
+    # If not 4, try standard digit extraction
+    opts = {1: None, 2: None, 3: None, 4: None}
+    for l in opt_raw_lines:
+        # Normalize
+        l_norm = l
+        l_norm = re.sub(r'^\)\s*', '(1) ', l_norm)
+        l_norm = re.sub(r'^\(\)\s*', '(1) ', l_norm)
+        l_norm = re.sub(r'^\(I\s+', '(1) ', l_norm)
+        l_norm = re.sub(r'^\(I\]\s+', '(1) ', l_norm)
+        l_norm = re.sub(r'^\(1\]\s+', '(1) ', l_norm)
+        l_norm = re.sub(r'^\[([1-4])\]\s*', r'(\1) ', l_norm)
+        l_norm = re.sub(r'^\(([1-4])\.\s*', r'(\1) ', l_norm)
+        l_norm = re.sub(r'^\(1\)\.\s*', '(1) ', l_norm)
+        l_norm = re.sub(r'^\(3\s*([A-Za-z])', r'(3) \1', l_norm)
+        l_norm = re.sub(r'^14\)\s*', '(4) ', l_norm)
+        
+        matches = re.finditer(r'(?:[\(\[]\s*([1-4Ili])\s*[\)\]\.]|(?:^|\s)([1-4])\s*[\)\.\-])\s*([^\(\[\)\]]+)', l_norm)
+        for m in matches:
+            d = (m.group(1) or m.group(2)).replace('I', '1').replace('l', '1').replace('i', '1')
+            if d.isdigit():
+                d_int = int(d)
+                val = clean_opt_text(m.group(3))
+                if val and 1 <= d_int <= 4 and opts[d_int] is None:
+                    opts[d_int] = val
+                    
+    # Fill any empty from expanded if possible
+    empty_keys = [k for k in [1, 2, 3, 4] if opts[k] is None]
+    if len(empty_keys) == 1 and len(expanded) >= 4:
+        cur_vals = set(opts.values())
+        rem = [x for x in expanded if x not in cur_vals]
+        if len(rem) == 1:
+            opts[empty_keys[0]] = rem[0]
+            
+    return [opts[1] or "", opts[2] or "", opts[3] or "", opts[4] or ""]
 
-test_files = [
-    r"F:\startup  send mail\2026\SSC CGL 2026 (Held On_ 30 Sep 2026 Shift 2).pdf",
-    r"F:\startup  send mail\2026\SSC CGL 2026 (Held On_ 30 Sep 2026 Shift 3).pdf",
-    r"F:\startup  send mail\2026\SSC CGL 2026 (Held On_ 1 Oct 2026 Shift 2).pdf",
-    r"F:\startup  send mail\2026\SSC CGL 2026 (Held On_ 1 Oct 2026 Shift 3).pdf"
-]
+still_missing = []
+for c_meta in col_starts_meta:
+    c_idx = c_meta['c_idx']
+    lines = cols[c_idx][1]
+    starts = {int(k): v for k, v in c_meta['starts'].items()}
+    q_start = c_meta['q_start']
+    q_end = c_meta['q_end']
+    
+    for qn in range(q_start, q_end + 1):
+        st = starts.get(qn, 0)
+        en = starts.get(qn + 1, len(lines))
+        chunk = lines[st:en]
+        parsed = parse_chunk_smart(chunk)
+        if any(not o for o in parsed):
+            still_missing.append((qn, parsed, chunk))
 
-for f in test_files:
-    fname = os.path.basename(f)
-    doc = fitz.open(f)
-    qs = parse_100_questions(doc)
-    valid = sum(1 for q in qs if q["question_text"] and q["option_a"] and q["option_b"] and q["option_c"] and q["option_d"] and q["correct_answer"])
-    print(f"{fname}: {valid} / {len(qs)} valid questions")
+print(f"STILL MISSING: {len(still_missing)} / 254")
+for qn, parsed, chunk in still_missing[:15]:
+    print(f"Q{qn}: {parsed}")

@@ -1,0 +1,987 @@
+================================================================================
+SSC CGL 2023 TIER-I (HELD ON 19 JULY 2023 SHIFT 1)
+Exam: SSC CGL | Year: 2023
+Total Questions: 100 | Duration: 60 Minutes
+Extracted from Official Answer Key via SSC ZONE (www.ssczone.in)
+================================================================================
+
+Q1. Select the option that represents the correct order of the given words as they would
+appear in an English dictionary.
+1. Variance
+2. Violence
+3. Vanquish
+4. Vampire
+5. Valiant
+6. Victorious
+A) 4, 5, 3, 1, 2, 6
+B) 5,3,4, 1,6,2
+C) 5, 4, 3, 1, 6, 2
+D) 4, 3,5,2, 1,6
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q2. Which two signs should be interchanged to make the given equation correct?
+756 ÷ 252 + 89 × 180 − 63 = 384
+A) ÷ and ×
+B) ÷ and −
+C) − and +
+D) + and ÷
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q3. Select the option that represents the letters that, when sequentially placed from left to right in the blanks below, will complete the letter series.
+AESO_WDAE_ _MWDA_SOM_D_ESOMW_
+A) MOSEDAW
+B) MSOEDAW
+C) MOESWAD
+D) MSOEWAD
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q4. ![Figure](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p2_img1.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p2_img2.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p2_img3.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p2_img4.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p2_img5.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q5. Select the option that is related to the fifth number in the same way as the second
+number is related to the first number and the fourth number is related to the third
+number.
+7 : 21 :: 14 : 42 :: 18 : ?
+A) 57
+B) 54
+C) 63
+D) 72
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q6. "Wilt' is related to 'Droop' in the same way as “Thrive' is related to " ______
+A) Decline
+B) Careful
+C) Deteriorate
+D) Flourish
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q7. Select the option figure in which the given figure is embedded (rotation is NOT
+allowed).
+![Figure](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p3_img6.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p3_img7.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p3_img8.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p3_img9.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p3_img10.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q8. ![Figure](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p4_img11.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p4_img12.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p4_img13.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p4_img14.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p4_img15.png)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q9. Which of the following terms will replace the question mark (?) in the given series?
+BCE, GHJ, LMO, QRT, ?
+A) VWY
+B) vwX
+C) Wxz
+D) UVX
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q10. In a certain code language,
+“time has come' is coded as ‘et im ak';
+"come with money' is coded as ‘nd ak co' and
+'money has power' is coded as “fu et nd'.
+(All the codes are two-letter codes only.)
+How will with power' be coded in that language?
+A) et mp
+B) td fu
+C) fu co
+D) co mp
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q11. Select the option that is related to the third word in the same way as the second word
+is related to the first word.
+(The words must be considered as meaningful English words and must not be related
+to each other based on the number of letters/number of consonants/vowels in the
+word.)
+Cotton : Cloth : Sugarcane : ?
+A) Salt
+B) Coffee
+C) Sugar
+D) Chocolate
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q12. Select the set in which the numbers are related in the same way as are the numbers of
+the following sets.
+(NOTE : Operations should be performed on the whole numbers, without breaking
+down the numbers into its constituent digits. E.g. 13 - Operations on 13 such as
+adding /Subtracting/multiplying etc. to 13 can be performed. Breaking down 13 into 1
+and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+(15, 21, 10)
+(25, 36, 17)
+A) (100, 45, 87)
+B) (100, 33, 31)
+C) (123, 23, 56)
+D) (50, 45, 31)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q13. Select the set in which the numbers are related in the same way as are the numbers of
+the given set.
+(NOTE : Operations should be performed on the whole numbers, without breaking
+down the numbers into its constituent digits. E.g. 13 - Operations on 13 such as
+adding /subtracting/multiplying etc. to 13 can be performed. Breaking down 13 into 1
+and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(13, 64, 5)
+(10, 1, 9)
+A) (15, 144, 9)
+B) (16, 256, 9)
+C) (15, 306, 9)
+D) (16, 49, 9)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q14. In a certain code language, 'DESIGN' is coded as 8-10-38-18-14-28 and ‘FOREST' is
+coded as 12-30-36-10-38-40. How will PLAYER' be coded in the same language?
+A) 32-24-2-50-10-36
+B) 32-26-2-50-12-38
+C) 36-24-2-50-10-34
+D) 32-22-2-50-12-36
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q15. Select the Venn diagram that best illustrates the relationship between the following
+classes.
+Fathers, Brothers and Males
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p7_img16.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p7_img17.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p7_img18.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p7_img19.png)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q16. ![Figure](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p8_img20.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p8_img21.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p8_img22.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p8_img23.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p8_img24.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q17. Select the correct combination of mathematical signs that can sequentially replace the
+* signs and balance the given equation.
+36 * 12 * 6*12 * 3 = 63
+A) × ÷ − +
+B) ÷ − + ×
+C) ÷ + − ×
+D) + ÷ × −
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q18. ![Figure](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p9_img25.png)
+A) 4
+B) 1
+C) 5
+D) 2
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q19. ![Figure](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p9_img26.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p9_img27.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p9_img28.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p9_img29.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p9_img30.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q20. Select the Venn diagram that best illustrates the relationship between the following
+classes.
+Clothes, Shirts, Linen
+Clothes = C
+Shirts = S
+Linen = L
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p10_img31.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p10_img32.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p10_img33.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p10_img34.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q21. A % B means 'A is the daughter of B'
+A = B means A is the sister of B'
+A $ B means 'A is the father of B'
+If X % Y = Z % W $ V, then how is Z related to V?
+A) Mother
+B) Mother's mother
+C) Sister
+D) Brother
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q22. Which of the following numbers will replace the question mark (?) in the given series?
+3, 12, ?, 39, 57, 78
+A) 19
+B) 22
+C) 20
+D) 24
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q23. Select the set in which the numbers are related in the same way as are the numbers of
+the following set.
+(NOTE : Operations should be performed on the whole numbers, without breaking
+down the numbers into its constituent digits. E.g. 13 - Operations on 13 such as
+adding /subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1
+and 3 and then performing mathematical operations on 1 and 3 is NOT allowed)
+(47, 108, 169)
+(22, 83, 144)
+A) (11, 73, 133)
+B) (51, 112, 173)
+C) (33, 121, 181)
+D) (8, 64, 130)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q24. The second number in the given number pairs is obtained by performing certain
+mathematical operation(s) on the first number. The same operation(s) are followed in
+all the number pairs except one. Find that odd number pair.
+A) 23 : 153
+B) 15 : 97
+C) 16 : 106
+D) 26 : 174
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q25. Four letter-clusters have been given, out of which three are alike in some manner and
+one is different. Select the odd letter-cluster.
+A) HJNU
+B) TXBG
+C) ACGN
+D) PRVC
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q26. The National Multidimensional Poverty Index 2021 (MPl) was released by which of the
+following?
+A) World Bank
+B) Ministry of Finance
+C) NITI Aayog
+D) Ministry of Social Justice and Empowerment
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q27. In which year did E Gorter and F Grendel make a breakthrough by examining the
+surface area of lipids and concluded that the lipid surface surrounding cells must be
+of two layers?
+A) 1910
+B) 1925
+C) 1945
+D) 1962
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q28. Who among the following advocated the ideology of “"oru jati, oru matam, oru daivam
+manushyanu" (one caste, one religion, one god for humankind)?
+A) Birsa Munda
+B) Narayana Guru
+C) Swami Shradhanand
+D) Keshub Chunder Sen
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q29. In November 2022, the Union Cabinet, chaired by the Prime Minister Narendra Modi,
+approved the naming of Greenfield Airport at Hollongi, Itanagar as:
+A) Lokpriya Gopinath Bordoloi International Airport
+B) East Siang Airport
+C) Changlang Airport
+D) Donyi Polo Airport
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q30. According to the 2011 Census of India, which state has the highest population in
+India?
+A) Bihar
+B) West Bengal
+C) Uttar Pradesh
+D) Maharashtra
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q31. According to a written reply to the Lok Sabha by Government of India, as on 20 July
+2022, approximately _______ unorganised sector workers are registered on the
+e-Shram portal.
+A) 27 crores
+B) 26 crores
+C) 28 crores
+D) 25 crores
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q32. Moplahs, or Muslim peasants, created a powerful anti-zamindar movement in:
+A) Tamil Nadu
+B) Bengal
+C) Kerala
+D) Uttar Pradesh
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q33. ![Figure](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p13_img35.png)
+A) i - a, ii - c, li - b, iv - d
+B) i - d, ii - a, ili - b, iv - c
+C) i - a, ii - b, ili - c, iv - d
+D) i - d, ii - c, li - b, iv - a
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q34. Which part of the Constitution of India incorporates the Directive Principles of State
+Policy?
+A) Part IV
+B) Part V
+C) Part VI
+D) Part II
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q35. Imadshahi family was known for the foundation of which state?
+A) Berar
+B) Bidar
+C) Ahmednagar
+D) Golkonda
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q36. The activity of making a human pyramid and putting efforts to break an earthen pot
+filled with buttermilk is associated with which festival?
+A) Holi
+B) Janmashtami
+C) Dushara
+D) Mahashivaratri
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q37. Who among the following was the author of Indica', an account of India under the
+reign of the Maurya dynasty?
+A) Strabo
+B) Pliny
+C) Diodorus Siculus
+D) Megasthenes
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q38. Which is the first integrated steel plant in the public sector in India?
+A) The Visvesvaraya Iron and Steel Limited
+B) Rourkela Steel Plant
+C) The Salem Steel Plant
+D) Indian Iron and Steel Company
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q39. Kamalini and Nalini Asthana were conferred the Padma Shri in 2022 for which of the
+following?
+A) For teaching and propagating Kathak globally
+B) For taking Indian cuisine to the world
+C) For disaster relief work in Gujarat
+D) For specialising in the study of Indian society
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q40. Net Investment plus Depreciation gives an estimate of which of the following?
+A) Gross Domestic Product
+B) Personal income
+C) Gross investment
+D) Private investment
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q41. Who among the following Indian classical tabla players was called ‘Abbaji'? He
+collaborated with American jazz drummer Buddy Rich to create a music album in 1968.
+A) Taufiq Qureshi
+B) Zakir Hussain
+C) Fazal Qureshi
+D) Alla Rakha
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q42. The first phase of the ‘action plan for introduction of the Cheetah in India' witnessed
+______ being released in the Kuno National Park of Madhya Pradesh in September
+2022.
+A) 10 cheetahs
+B) 6 cheetahs
+C) 8 cheetahs
+D) 12 cheetahs
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q43. The famous physicist Victor Franz Hess is known for the discovery of:
+A) cosmic radiation
+B) quantum statistics
+C) expanding universe
+D) theory of super conductivity
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q44. Identify the water harvesting system in Western Himalayas.
+A) Khadins
+B) Johads
+C) None of these
+D) Guls
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q45. Which of the following states has won the 2022 Santosh Trophy?
+A) Tamil Nadu
+B) West Bengal
+C) Goa
+D) Kerala
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q46. ![Figure](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p17_img36.png)
+A) B, C and D only
+B) A, B and C only
+C) A, B, C and D
+D) A, B and D only
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q47. In which of the following Sessions of the IOc Executive Board Meeting was Brisbane
+voted to host the 2032 Olympics and Paralympics?
+A) 139th Session held in Beijing
+B) 138th Session held in Tokyo
+C) 137th Session held in Lausanne
+D) 140th Session held in India
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q48. When did Henry Cavendish report the measurement of the gravitational constant with
+the mass and density of the Earth?
+A) March 1795
+B) June 1798
+C) April 1796
+D) May 1797
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q49. Which of the following have been characteristics of Green Revolution?
+A. Spurt in crop productivity.
+B. Shift away from commercial farming to subsistence farming.
+C. Rise in acreage.
+A) All - A, B and C
+B) Only B and C
+C) Only A and C
+D) Only A and B
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q50. Which of the following awards was received by Pandit Birju Maharaj in 1986?
+A) Padma Shri
+B) Sangeet Natak Akademi
+C) Padma Vibhushan
+D) Padma Bhushan
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q51. An 11-digit number 7823326867X is divisible by 18. What is the value of X?
+A) 6
+B) 4
+C) 8
+D) 2
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q52. (N+18) persons, each working for 7.5 hours a day, can complete 48% of a work in 20
+days. (N+12) persons can complete the remaining work in 30 days, if each of them
+works for 6.5 hours per day. Determine the value of N.
+A) 18
+B) 16
+C) 20
+D) 22
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q53. ![Figure](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p19_img37.png)
+A) 8
+B) 4
+C) 6
+D) 5
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q54. ![Figure](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p19_img38.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p19_img39.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p19_img40.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p19_img41.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p19_img42.png)
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q55. ![Figure](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p19_img43.png)
+A) 2.25
+B) 1.45
+C) 3.75
+D) 5.25
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q56. Study the given pie-chart and answer the question that follows.
+The pie-chart displays the percentage of fruits sold (in kg) by a fruit seller in one
+month.
+![Figure](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p20_img44.png)
+If the total fruits sold by a fruit seller in one month was 50,o00 kg, find the approximate
+difference of the quantity (in kg) of pomegranates and that of berries.
+A) 11,480
+B) 13,535
+C) 21,408
+D) 12,465
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q57. ![Figure](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p20_img45.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p20_img46.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p20_img47.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p20_img48.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p20_img49.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q58. Simplify the following.
+![Figure](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p21_img50.png)
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p21_img51.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p21_img52.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p21_img53.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p21_img54.png)
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q59. While solving a division problem, Suhas by mistake took as the dividend a number which was 10% less than the original dividend. He also by mistake took as the divisor a number which was 20% less than the original divisor. If the correct quotient of the original division problem was 24 and the remainder was 0, then assuming there is no error in his calculation, what quotient did Suhas obtain?
+A) 27
+B) 21.6
+C) 26.4
+D) 30
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q60. On day one, with speed v, R covers a distance x, in t time. On the next day, he covers a
+distance 2.5x in 0.75t time. What is his speed the next day?
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p21_img55.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p21_img56.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p21_img57.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p21_img58.png)
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q61. In a 1170 m race, Raman reaches the final point in 65 seconds and Mohan reaches the
+final point in 90 seconds. By how much distance does Raman beat Mohan?
+A) 325 m
+B) 300 m
+C) 375 m
+D) 350 m
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q62. It takes A and B, 3 and 6 hours, respectively, to complete a certain work. If they work
+on the alternate hour. How long will it take them to accomplish the task?
+A) 3 hours
+B) 4 hours
+C) 2 hours
+D) 4.5 hours
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q63. ![Figure](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p22_img59.png)
+A) 100 mm
+B) 75 mm
+C) 60 mm
+D) 150 mm
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q64. Two circles of same radius 6 cm, intersect each other at P and Q. If PQ = 10cm, then
+what is the distance between the centres of the two circles?
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p22_img60.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p22_img61.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p22_img62.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p22_img63.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q65. ![Figure](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p23_img64.png)
+A) 4
+B) 0
+C) 2
+D) 1
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q66. A grocer claims that he is selling sugar at ₹48/kg, which costs him ₹50/kg, but he is
+giving 900 g instead of 1000 g. What will be the approximate percentage profit?
+A) ![Option A](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p23_img65.png)
+B) ![Option B](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p23_img66.png)
+C) ![Option C](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p23_img67.png)
+D) ![Option D](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p23_img68.png)
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q67. Which of the following numbers is divisible by 36 ?
+A) 8840
+B) 1542
+C) 96272
+D) 55512
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q68. Find the length of the arc of the sector of a circle of diameter 7 cm with a central angle
+of 108°. [Use TT = 22/7]
+A) 6.6 cm
+B) 5.6 cm
+C) 13.2 cm
+D) 11.2 cm
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q69. How much simple interest will ₹6,000 earn in 21 months at 8% per annum?
+A) ₹750
+B) ₹880
+C) ₹620
+D) ₹840
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q70. A varies directly as (B + 18) and A = 108 when B = 36. Find the value of A when B = 68.
+A) 75
+B) 86
+C) 127
+D) 172
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q71. A conical tent has a radius of 7 m and a vertical height of 24 m. How many full bags of
+rice can be emptied in it if the space occupied by the rice in each bag is 2 m³?
+A) 566
+B) 616
+C) 716
+D) 650
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q72. The following figure shows the scores of students in three tests organised by a
+coaching institution. Who scored the best on average?
+![Figure](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p25_img69.png)
+A) D
+B) C
+C) E
+D) B
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q73. A man drives his car for 24 km at a speed of 48 km/h, and for the next 1.5 hours he
+drives at a speed of 80 km/h. Find his average speed (in km/h) for the entire journey.
+A) 64
+B) 72
+C) 68
+D) 75
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q74. ![Figure](/images/pyq/2023/ssc-cgl-2023-19-july-2023-shift-1_p25_img70.png)
+A) 90°
+B) 45°
+C) 60°
+D) 30°
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q75. A dealer purchased a washing machine for ₹9,000. He allows a discount of 10% on its
+marked price and still gains 10%. Find the marked price of the machine.
+A) ₹11,000
+B) ₹12,000
+C) ₹13,000
+D) ₹10,000
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q76. Select the grammatically correct sentence.
+A) The rider who met with a accident was not wearing a helmet, the police said.
+B) The rider who met with an accident was not wearing an helmet, the police said.
+C) A rider who met with the accident was not wearing the helmet, an police said.
+D) The rider who met with the accident was not wearing a helmet, the police said.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q77. Select the most appropriate meaning of the given idiom.
+Gift of the gab
+A) Fluency of speech
+B) Freedom of speech
+C) First speech
+D) Figures of speech
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q78. Select the correct homonym to fill in the blank in the given sentence.
+I will just ______ some figures for comparison.
+A) cete
+B) cite
+C) site
+D) sight
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q79. The following sentence has been split into four segments. Identify the segment that
+contains a grammatical error.
+"Do you want to join us for lunch?" / "I'm sorry I my physics class will start at 1 p.m. /
+and doesn't finish till 3 p.m."
+A) my physics class will start at 1 p.m.
+B) I'm sorry
+C) and doesn't finish till 3 p.m.
+D) Do you want to join us for lunch?
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q80. Select the most appropriate synonym of the given word.
+Tedious
+A) Tiresome
+B) Wholesome
+C) Repetitive
+D) Threescore
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q81. Select the most appropriate ANTONYM of the underlined word in the given sentence.
+He just needs to calm down a wee bit.
+A) understand
+B) agitate
+C) question
+D) dissipate
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q82. Select the most appropriate synonym of the underlined word.
+The benevolent gesture of the rich merchant was appreciated by all.
+A) Generous
+B) Sombre
+C) Numb
+D) Sober
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q83. Select the most appropriate synonym of the word given in brackets to fill in the blank.
+He is very ______- (Eager) to join the Air Force.
+A) irksome
+B) keen
+C) dubious
+D) unconcerned
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q84. Select the option that expresses the given sentence in passive voice.
+The company is launching a new product next month.
+A) The new product will be launched by the company next month.
+B) A new product is being launched by the company next month.
+C) The launching of a new product by the company is next month.
+D) Next month, the company will launch a new product.
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q85. Select the most appropriate meaning of the given idiom.
+Get into a scrape
+A) Creating a problem
+B) Solving a problem
+C) Explaining a problem
+D) Involved in a problem
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q86. Select the option that can be used as a one-word substitute for the given group of
+words.
+Person who betrays his own country.
+A) Mascot
+B) Traitor
+C) Icon
+D) Paragon
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q87. Select the INCORRECTLY spelt word.
+A) Devide
+B) Provide
+C) Subside
+D) Confide
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q88. Sentences of a paragraph are given below in jumbled order. Arrange the sentences in
+the correct order to form a meaningful and coherent paragraph.
+A.But at the same time, this is also true that when one reads a few works of the same
+genre, one naturally comes to know a rough structure of that genre.
+B.The essence of suspense is whether the reader will be able to gauge the criminal
+before the detective tells who he is.
+C.This leads to a different kind of approach to understanding literature in general and
+detective fiction in particular.
+D.it is found that when one knows a genre and its structure and rules, it may often not
+make us enjoy a piece of literary work in the same manner as one usually does.
+A) DACB
+B) BDCA
+C) CBAD
+D) ADCB
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q89. Select the most appropriate option that can substitute the underlined segment in the
+given sentence.
+In today's digital age, information is widely available to everyone bv manv means of
+media such as television, newspapers, films, and social media.
+A) with quite enough of mechanisms
+B) through any strategies
+C) via various forms
+D) among many techniques
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q90. Select the INCORRECTLY spelt word.
+A) Bonafide
+B) Cultural
+C) Solusion
+D) Trustworthy
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q91. Describe how you will tell your friends that someone has picked Suman's pocket in
+passive voice.
+A) Someone has being picked Suman's pocket.
+B) Suman's pocket had picked.
+C) Suman's pocket been picked.
+D) Suman's pocket has been picked.
+Correct Answer: Option D
+--------------------------------------------------------------------------------
+
+Q92. Select the most appropriate option to fill in the blank.
+“Habitual' may be replaced by " ______.
+A) Stagnant
+B) Continual
+C) Temperate
+D) Holistic
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q93. Select the most appropriate option to fill in the blank.
+The match schedule was disturbed due to ______- rains.
+A) detestable
+B) incessant
+C) venerable
+D) soothing
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q94. Sentences of a paragraph are given below in jumbled order. Arrange the sentences in
+the correct order to form a meaningful and coherent paragraph.
+A.It could possibly lead to serious injuries, hence a mate for N' Pongo became
+inevitable.
+B.Within the span of one year, N' Pongo grew double the size and the need to obtain a
+mate for him arose, for it becomes unsafe for the humans around.
+C.Every afternoon he was brought out onto the lawn to show off his skills in front of
+his admirers.
+D.Owing to his attractive appearance and disposition, good manners and a well-
+developed sense of humor, N' Pongo soon became the darling of the zoo.
+A) DCBA
+B) DABC
+C) CDAB
+D) BDAC
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q95. Select the option that can be used as a one-word substitute for the given group of
+words.
+The study of evolution of mankind
+A) Biology
+B) Anthology
+C) Anthropology
+D) Psychology
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q96. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fil in each blank.
+This book (1) ______ writing practice to pre-schoolers to help them learn to write
+(2) ______ of the English alphabet. Directional arrows, (3) ______ with the letters and
+numbers, guide children in writing. (4) ______ and copying activities encourage children to
+read and write letters and numbers (5) ______ to count.
+SubQuestion No : 21
+Select the most appropriate option to fill in blank no. 1.
+A) provides
+B) provide
+C) is providing
+D) had provided
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q97. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fill in each blank.
+This book (1) ______ writing practice to pre-schoolers to help them learn to write
+(2) ______ of the English alphabet. Directional arrows, (3) ______ with the letters and
+numbers, guide children in writing. (4) ______ and copying activities encourage children to
+read and write letters and numbers (5) ______ to count.
+SubQuestion No : 22
+Select the most appropriate option to fill in blank no. 2.
+A) letter
+B) letters
+C) phrases
+D) words
+Correct Answer: Option B
+--------------------------------------------------------------------------------
+
+Q98. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fil in each blank.
+This book (1) ______ writing practice to pre-schoolers to help them learn to write
+(2) ______ of the English alphabet. Directional arrows, (3) ______ with the letters and
+numbers, guide children in writing. (4) ______ and copying activities encourage children to
+read and write letters and numbers (5) ______ to count.
+SubQuestion No : 23
+Select the most appropriate option to fill in blank no. 3.
+A) given
+B) giving
+C) give
+D) gave
+Correct Answer: Option A
+--------------------------------------------------------------------------------
+
+Q99. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fil in each blank.
+This book (1) ______ writing practice to pre-schoolers to help them learn to write
+(2) ______ of the English alphabet. Directional arrows, (3) ______ with the letters and
+numbers, guide children in writing. (4) ______ and copying activities encourage children to
+read and write letters and numbers (5) ______ to count.
+SubQuestion No : 24
+Select the most appropriate option to fill in blank no. 4.
+A) Traced
+B) Being traced
+C) Tracing
+D) Trace
+Correct Answer: Option C
+--------------------------------------------------------------------------------
+
+Q100. Comprehension:
+In the following passage, some words have been deleted. Read the passage carefully and
+select the most appropriate option to fil in each blank.
+This book (1) ______ writing practice to pre-schoolers to help them learn to write
+(2) ______ of the English alphabet. Directional arrows, (3) ______ with the letters and
+numbers, guide children in writing. (4) ______ and copying activities encourage children to
+read and write letters and numbers (5) ______ to count.
+SubQuestion No : 25
+Select the most appropriate option to fill in blank no. 5.
+A) as well as
+B) but
+C) for
+D) yet
+Correct Answer: Option A
+--------------------------------------------------------------------------------

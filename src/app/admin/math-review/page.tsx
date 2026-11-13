@@ -155,39 +155,57 @@ export default function MathReviewPage() {
   async function doAction(id: number, newStatus: ReviewStatus) {
     setSaving(id);
     const latex = editLatex[id] ?? "";
-    const { error } = await supabase
-      .from("math_review")
-      .update({
-        status:       newStatus,
-        admin_latex:  latex || null,
-        review_notes: notes[id] || null,
-        reviewed_at:  new Date().toISOString(),
-      })
-      .eq("id", id);
+    const row = rows.find((r) => r.id === id);
 
-    if (error) {
-      setMsg({ text: `Error: ${error.message}`, ok: false });
+    if (!row) {
+      setMsg({ text: "Row not found — please refresh.", ok: false });
       setSaving(null);
       return;
     }
 
-    // If approved → patch paper_questions
-    if (newStatus === "approved") {
-      const row = rows.find((r) => r.id === id);
-      if (row && latex.trim()) {
-        const { error: pqError } = await supabase
-          .from("paper_questions")
-          .update({ [row.field_name]: latex.trim() })
-          .eq("id", row.question_id);
-        if (pqError) {
-          setMsg({ text: `Approved but DB patch failed: ${pqError.message}`, ok: false });
-          setSaving(null);
-          return;
-        }
-      }
+    if (newStatus === "approved" && !latex.trim()) {
+      setMsg({ text: "Cannot approve — replacement text is empty.", ok: false });
+      setSaving(null);
+      return;
     }
 
-    setMsg({ text: newStatus === "approved" ? "✅ Approved & applied to DB!" : newStatus === "rejected" ? "❌ Rejected." : "⏭ Skipped.", ok: newStatus === "approved" });
+    try {
+      // Call server-side API route which uses service_role key (bypasses RLS)
+      const res = await fetch("/api/admin/math-review", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          review_id:    row.id,
+          question_id:  row.question_id,
+          field_name:   row.field_name,
+          new_value:    latex,
+          status:       newStatus,
+          review_notes: notes[id] || null,
+        }),
+      });
+
+      const result = await res.json();
+
+      if (!res.ok || !result.success) {
+        const errMsg = result?.error || `HTTP ${res.status}`;
+        setMsg({ text: `❌ Failed: ${errMsg}`, ok: false });
+        setSaving(null);
+        return;
+      }
+    } catch (err: any) {
+      setMsg({ text: `❌ Network error: ${err.message}`, ok: false });
+      setSaving(null);
+      return;
+    }
+
+    setMsg({
+      text: newStatus === "approved"
+        ? "✅ Approved & applied to DB!"
+        : newStatus === "rejected"
+        ? "❌ Rejected (image kept)."
+        : "⏭ Skipped.",
+      ok: newStatus === "approved",
+    });
     setSaving(null);
     setRows((prev) => prev.filter((r) => r.id !== id));
     fetchCounts();

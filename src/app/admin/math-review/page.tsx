@@ -76,6 +76,7 @@ export default function MathReviewPage() {
   });
   const [editLatex, setEditLatex] = useState<Record<number, string>>({});
   const [notes, setNotes]         = useState<Record<number, string>>({});
+  const [papersMap, setPapersMap] = useState<Record<number, { title: string; year: number }>>({});
   const [msg, setMsg]             = useState<{ text: string; ok: boolean } | null>(null);
 
   const PAGE_SIZE = 10;
@@ -119,6 +120,24 @@ export default function MathReviewPage() {
       }
       setEditLatex(edits);
       setNotes(noteMap);
+
+      // Fetch paper titles for human-friendly display and direct live test link
+      if (data && data.length > 0) {
+        const paperIds = Array.from(new Set(data.map((r) => r.paper_id)));
+        supabase
+          .from("previous_papers")
+          .select("id, title, year")
+          .in("id", paperIds)
+          .then(({ data: pData }) => {
+            if (pData) {
+              const pMap: Record<number, { title: string; year: number }> = {};
+              pData.forEach((p) => {
+                pMap[p.id] = { title: p.title, year: p.year };
+              });
+              setPapersMap((prev) => ({ ...prev, ...pMap }));
+            }
+          });
+      }
     }
     setLoading(false);
   }, [filterStatus, page]);
@@ -261,6 +280,7 @@ export default function MathReviewPage() {
       {!loading && rows.map((row) => {
         const latex = workingLatex(row.id);
         const isSaving = saving === row.id;
+        const paperInfo = papersMap[row.paper_id];
 
         return (
           <div key={row.id} className="a-card" style={{ marginBottom: "1rem" }}>
@@ -268,12 +288,29 @@ export default function MathReviewPage() {
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.75rem", flexWrap: "wrap", gap: "0.5rem" }}>
               <div style={{ display: "flex", gap: "0.5rem", alignItems: "center", flexWrap: "wrap" }}>
                 <span className="a-badge a-badge-blue">Q#{row.question_id}</span>
-                <span className="a-badge">Paper {row.paper_id}</span>
-                {row.question_number && <span className="a-badge">Q.{row.question_number}</span>}
                 <span className="a-badge a-badge-yellow">{row.field_name}</span>
                 <span className={`a-badge ${row.status === "approved" ? "a-badge-green" : row.status === "rejected" ? "a-badge-red" : ""}`}>
                   {row.status}
                 </span>
+                <span style={{ fontSize: "0.78rem", fontWeight: 700, color: "#fff", background: "rgba(255,255,255,0.08)", padding: "0.2rem 0.6rem", borderRadius: "6px" }}>
+                  {paperInfo?.title || `Paper #${row.paper_id}`}
+                </span>
+                {row.question_number && (
+                  <span style={{ fontSize: "0.82rem", fontWeight: 800, color: "#fbbf24" }}>
+                    Q.{row.question_number}
+                  </span>
+                )}
+                <a
+                  href={`/take-test/${row.paper_id}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="a-btn a-btn-ghost a-btn-sm"
+                  style={{ minHeight: "26px", padding: "0.2rem 0.65rem", fontSize: "0.72rem", color: "#60a5fa" }}
+                  title="Open this paper in live test mode to check current appearance"
+                >
+                  <ExternalLink size={12} style={{ marginRight: "0.3rem" }} />
+                  View in Live Test (Q.{row.question_number})
+                </a>
               </div>
             </div>
 

@@ -56,12 +56,61 @@ function renderImageTag(src: string, alt: string): string {
   );
 }
 
+function renderMarkdownTable(block: string): string {
+  const rawLines = block.trim().split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
+  if (rawLines.length < 2) return block;
+
+  const rows = rawLines.map((line) => {
+    const stripped = line.replace(/^\|/, "").replace(/\|$/, "");
+    return stripped.split("|").map((c) => c.trim());
+  });
+
+  let headerRow: string[] | null = null;
+  let bodyRows: string[][] = rows;
+
+  if (rows.length >= 2 && rows[1].every((c) => /^:?-+:?$/.test(c.trim()))) {
+    headerRow = rows[0];
+    bodyRows = rows.slice(2);
+  }
+
+  let html = '<span class="my-3 block max-w-full overflow-x-auto"><table class="w-full max-w-2xl border-collapse rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-left text-xs sm:text-sm shadow-xs">';
+  if (headerRow && headerRow.length > 0) {
+    html += '<thead class="border-b border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 font-bold text-slate-900 dark:text-slate-100"><tr>';
+    headerRow.forEach((h) => {
+      html += `<th class="border-r border-slate-300 dark:border-slate-700 px-3 py-2 last:border-r-0">${escapeHtml(h)}</th>`;
+    });
+    html += '</tr></thead>';
+  }
+  html += '<tbody class="divide-y divide-slate-200 dark:divide-slate-800">';
+  bodyRows.forEach((r, idx) => {
+    const rowBg = idx % 2 === 0 ? "bg-white dark:bg-slate-900" : "bg-slate-50/70 dark:bg-slate-800/40";
+    html += `<tr class="${rowBg}">`;
+    r.forEach((c) => {
+      html += `<td class="border-r border-slate-200 dark:border-slate-800 px-3 py-2 text-slate-800 dark:text-slate-200 align-top last:border-r-0">${escapeHtml(c)}</td>`;
+    });
+    html += '</tr>';
+  });
+  html += '</tbody></table></span>';
+  return html;
+}
+
 // Convert common pasted math notation into safe, readable HTML. Full TeX remains supported
 // through $...$, \(...\), \[...\], and $$...$$ delimiters below.
 function formatRawMathText(plainText: string): string {
   if (!plainText) return "";
+
+  // 0. Extract and pre-render any Markdown tables
+  const tablePlaceholders: string[] = [];
+  const tableRegex = /(?:^[ \t]*\|[^\n]+\|[ \t]*(?:\r?\n|$)){2,}/gm;
+  let textWithoutTables = plainText.replace(tableRegex, (block) => {
+    const renderedTable = renderMarkdownTable(block);
+    const key = `___MD_TABLE_${tablePlaceholders.length}___`;
+    tablePlaceholders.push(renderedTable);
+    return `\n\n${key}\n\n`;
+  });
+
   // Clean whitespace: trim ends and collapse excessive blank lines
-  let clean = plainText.trim();
+  let clean = textWithoutTables.trim();
   clean = clean.replace(/(\r?\n\s*){2,}/g, "\n\n");
 
   let formatted = escapeHtml(clean);
@@ -135,6 +184,12 @@ function formatRawMathText(plainText: string): string {
     /&lt;u&gt;([\s\S]*?)&lt;\/u&gt;/gi,
     '<u class="underline decoration-2 underline-offset-4 font-semibold">$1</u>'
   );
+
+  // 10. Restore pre-rendered Markdown tables
+  tablePlaceholders.forEach((tblHtml, idx) => {
+    const key = `___MD_TABLE_${idx}___`;
+    formatted = formatted.replace(key, tblHtml);
+  });
 
   return formatted;
 }

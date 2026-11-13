@@ -111,14 +111,37 @@ function formatRawMathText(plainText: string): string {
 
   // Clean whitespace: trim ends and collapse excessive blank lines
   let clean = textWithoutTables.trim();
-  clean = clean.replace(/(\r?\n\s*){2,}/g, "\n\n");
 
-  let formatted = escapeHtml(clean);
+  // 1. Intelligent newline normalization:
+  // PDF extracts contain artificial hard wraps at 70-80 chars inside normal sentences.
+  // Converting every single \n to a block element causes sentences on mobile to be torn
+  // into separate disjointed blocks with excessive vertical gaps.
+  // We preserve intentional newlines (lists like 1., a., (i), bullets, statements, analogies)
+  // while joining accidental mid-sentence PDF wraps with a clean single space.
+  const intentionalBreakRegex = /\n(?=(?:\d+[\.\)]\s+|[a-dA-D][\.\)]\s+|\([a-zA-Z0-9ivxIVX]+\)\s*|[ivxIVX]+[\.\)]\s+|[-•*]\s+|(?:Statements?|Conclusions?|कथन|निष्कर्ष)\b|[A-Z0-9\s]{2,}:[^:]+::|\d+\s*,\s*\d+\s*,\s*(?:\?|\d+)|!\[|<img|___MD_TABLE_))/i;
 
-  // 1. Convert newlines to clean line breaks (inline-safe for span rendering)
-  formatted = formatted.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
-  formatted = formatted.replace(/\n\n+/g, '<span class="block my-1.5"></span>');
-  formatted = formatted.replace(/\n/g, '<span class="block my-0.5"></span>');
+  const rawParagraphs = clean.split(/\r?\n\s*\r?\n/);
+  const normalizedParagraphs = rawParagraphs.map((para) => {
+    const trimmedPara = para.trim();
+    if (!trimmedPara) return "";
+
+    const breaks: string[] = [];
+    const withPlaceholders = trimmedPara.replace(new RegExp(intentionalBreakRegex.source, "gi"), () => {
+      breaks.push("");
+      return `___INTENTIONAL_BRK_${breaks.length - 1}___`;
+    });
+
+    let joined = withPlaceholders.replace(/\s*\r?\n\s*/g, " ");
+    let escaped = escapeHtml(joined);
+
+    breaks.forEach((_, idx) => {
+      escaped = escaped.replace(`___INTENTIONAL_BRK_${idx}___`, '<span class="block my-1"></span>');
+    });
+
+    return escaped;
+  }).filter(Boolean);
+
+  let formatted = normalizedParagraphs.join('<span class="block my-2"></span>');
 
   // 2. Normalize the minus copied from PDFs and convert unicode superscripts.
   formatted = formatted.replace(/[−–—]/g, "-");

@@ -2,9 +2,9 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { supabase } from "@/lib/supabase";
-import { CheckCircle, XCircle, SkipForward, RefreshCw, FlaskConical, ChevronLeft, ChevronRight } from "lucide-react";
-import katex from "katex";
-import "katex/dist/katex.min.css";
+import { CheckCircle, XCircle, SkipForward, RefreshCw, FlaskConical, ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
+import { resolveAssetUrl } from "@/lib/utils";
+import MathText from "@/components/MathText";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 type ReviewStatus = "pending" | "approved" | "rejected" | "skipped";
@@ -28,23 +28,12 @@ interface MathReviewRow {
 
 type FilterStatus = "pending" | "approved" | "rejected" | "skipped" | "all";
 
-// ─── KaTeX Preview ────────────────────────────────────────────────────────────
-function KaTeXPreview({ latex }: { latex: string }) {
-  const ref = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    if (!ref.current || !latex.trim()) return;
-    try {
-      ref.current.innerHTML = katex.renderToString(latex, {
-        throwOnError: false,
-        displayMode: false,
-        output: "html",
-      });
-    } catch {
-      ref.current.innerHTML = `<span style="color:#f87171">[LaTeX error]</span>`;
-    }
-  }, [latex]);
-  if (!latex.trim()) return <span style={{ color: "rgba(226,232,240,0.3)" }}>— empty —</span>;
-  return <div ref={ref} style={{ lineHeight: 1.6 }} />;
+// ─── Image URL Extractor Helper ────────────────────────────────────────────────
+function extractImageUrl(text?: string | null, sourceUrl?: string | null): string | null {
+  if (sourceUrl && sourceUrl.trim()) return sourceUrl.trim();
+  if (!text) return null;
+  const m = text.match(/!\[.*?\]\((.*?)\)/);
+  return m ? m[1].trim() : null;
 }
 
 // ─── Stats Bar ────────────────────────────────────────────────────────────────
@@ -196,10 +185,10 @@ export default function MathReviewPage() {
         <div>
           <div className="page-title" style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
             <FlaskConical style={{ color: "#fbbf24" }} size={22} />
-            Math Review Panel
+            Question Content & Math Review
           </div>
           <div className="page-subtitle">
-            Review extracted math equations. Approve to apply to live questions. Reject to keep as-is.
+            Review equations, tables, and image questions. Approve to apply to live questions. Reject to keep as-is.
           </div>
         </div>
         <button className="a-btn a-btn-ghost" onClick={() => { fetchRows(); fetchCounts(); }}>
@@ -288,12 +277,12 @@ export default function MathReviewPage() {
               </div>
             </div>
 
-            {/* Three columns: Original | Edit LaTeX | Preview */}
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem", marginBottom: "0.75rem" }}>
+            {/* Three columns: Original | Edit Content | Preview */}
+            <div style={{ display: "grid", gridTemplateColumns: "1.1fr 1fr 1fr", gap: "1rem", marginBottom: "0.75rem" }}>
               {/* Original */}
               <div>
                 <div style={{ fontSize: "0.7rem", fontWeight: 800, color: "rgba(226,232,240,0.4)", textTransform: "uppercase", marginBottom: "0.4rem" }}>
-                  Original Text (DB)
+                  Original Text & Image (DB)
                 </div>
                 <div style={{
                   background: "rgba(255,255,255,0.03)",
@@ -304,23 +293,43 @@ export default function MathReviewPage() {
                   color: "rgba(226,232,240,0.7)",
                   whiteSpace: "pre-wrap",
                   wordBreak: "break-word",
-                  maxHeight: 160,
+                  maxHeight: 240,
                   overflowY: "auto",
                 }}>
-                  {row.original_text || <em style={{ color: "rgba(226,232,240,0.3)" }}>empty</em>}
+                  <div>{row.original_text || <em style={{ color: "rgba(226,232,240,0.3)" }}>empty</em>}</div>
+                  {(() => {
+                    const img = extractImageUrl(row.original_text, row.source_image_url);
+                    if (!img) return null;
+                    const fullUrl = resolveAssetUrl(img);
+                    return (
+                      <div style={{ marginTop: "0.6rem", borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: "0.5rem" }}>
+                        <div style={{ fontSize: "0.68rem", color: "#93c5fd", marginBottom: "0.25rem", display: "flex", alignItems: "center", gap: "0.25rem" }}>
+                          <span>Original Crop:</span>
+                          <a href={fullUrl} target="_blank" rel="noreferrer" style={{ color: "#60a5fa", textDecoration: "underline", display: "inline-flex", alignItems: "center", gap: 2 }}>
+                            Open <ExternalLink size={10} />
+                          </a>
+                        </div>
+                        <img
+                          src={fullUrl}
+                          alt="Original Crop"
+                          style={{ maxHeight: 140, maxWidth: "100%", borderRadius: 6, background: "#ffffff", padding: "4px", border: "1px solid rgba(255,255,255,0.2)" }}
+                        />
+                      </div>
+                    );
+                  })()}
                 </div>
               </div>
 
-              {/* Edit LaTeX */}
+              {/* Edit LaTeX / Table */}
               <div>
                 <div style={{ fontSize: "0.7rem", fontWeight: 800, color: "rgba(226,232,240,0.4)", textTransform: "uppercase", marginBottom: "0.4rem" }}>
-                  LaTeX (Edit if needed)
+                  Proposed Replacement (Editable)
                 </div>
                 <textarea
                   value={latex}
                   onChange={(e) => setEditLatex((prev) => ({ ...prev, [row.id]: e.target.value }))}
                   disabled={isSaving || row.status !== "pending"}
-                  rows={5}
+                  rows={8}
                   style={{
                     width: "100%",
                     padding: "0.55rem 0.75rem",
@@ -334,26 +343,27 @@ export default function MathReviewPage() {
                     outline: "none",
                     opacity: row.status !== "pending" ? 0.5 : 1,
                   }}
-                  placeholder="Enter LaTeX here, e.g. \frac{1}{2}"
+                  placeholder="Enter replacement text / table / LaTeX here"
                 />
               </div>
 
               {/* Live Preview */}
               <div>
                 <div style={{ fontSize: "0.7rem", fontWeight: 800, color: "rgba(226,232,240,0.4)", textTransform: "uppercase", marginBottom: "0.4rem" }}>
-                  Live KaTeX Preview
+                  Live Preview (Exam View)
                 </div>
                 <div style={{
                   background: "#fff",
                   borderRadius: 8,
                   padding: "0.75rem 1rem",
-                  color: "#111",
-                  fontSize: "1rem",
-                  minHeight: 60,
-                  display: "flex",
-                  alignItems: "center",
+                  color: "#0f172a",
+                  fontSize: "0.92rem",
+                  minHeight: 80,
+                  maxHeight: 240,
+                  overflowY: "auto",
+                  lineHeight: 1.5,
                 }}>
-                  <KaTeXPreview latex={latex} />
+                  {latex ? <MathText text={latex} /> : <span style={{ color: "#94a3b8" }}>— empty —</span>}
                 </div>
               </div>
             </div>

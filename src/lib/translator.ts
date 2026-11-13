@@ -125,6 +125,17 @@ function maskProtectedTokens(text: string): { maskedText: string; tokens: string
   replaceWithToken(/<img\b[^>]*>/gi);
   replaceWithToken(/<[^>]+>/g);
 
+  // 1b. Protect Markdown Table Alignment Separator Rows (e.g. | :--- | :--- |)
+  replaceWithToken(/\|[ \t]*:?-+:?[ \t]*(?:\|[ \t]*:?-+:?[ \t]*)+\|/g);
+
+  // 1c. Protect Row/Item Index Labels in tables, lists, and statements (e.g. | i. , | a. , \n1. , \n(A) , \n(i) )
+  // Strictly protects labels so "i." does not turn into "मैं", "a." does not turn into "एक", "ii." does not turn into "द्वितीय"
+  replaceWithToken(
+    /(^|[\n|])\s*(\(?[a-zA-Z1-9ivxIVX]{1,4}\)?[.\)])(?=\s+)/g,
+    undefined,
+    2
+  );
+
   // 2. Protect LaTeX Math Delimiters
   replaceWithToken(/(\$\$[\s\S]*?\$\$|\\\[[\s\S]*?\\\]|\\\([\s\S]*?\\\)|\$[^$\n]+\$)/g);
 
@@ -213,8 +224,14 @@ function maskProtectedTokens(text: string): { maskedText: string; tokens: string
 function unmaskTokens(translated: string, tokens: string[]): string {
   let result = translated;
   tokens.forEach((token, idx) => {
-    const cleanPattern = new RegExp(`⟦\\s*${idx}\\s*⟧`, "g");
-    result = result.replace(cleanPattern, () => token);
+    const cleanPattern = new RegExp(`⟦\\s*${idx}\\s*⟧(\\s*)`, "g");
+    result = result.replace(cleanPattern, (_m, trailingSpace) => {
+      // If token is a list/table label (ends with . or )) and there's no trailing space, ensure one space
+      if (/[.\)]$/.test(token.trim()) && !trailingSpace) {
+        return `${token} `;
+      }
+      return token + trailingSpace;
+    });
 
     const exact = `⟦${idx}⟧`;
     if (result.includes(exact)) {

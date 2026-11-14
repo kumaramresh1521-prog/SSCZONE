@@ -39,47 +39,61 @@ export async function GET(req: NextRequest) {
     const fullQuestionSet: any[] = [];
     const seenFingerprints = new Set<string>();
 
+    // Fetch all active/valid paper IDs and their titles from previous_papers
+    const { data: validPapers } = await supabaseAdmin
+      .from("previous_papers")
+      .select("id, title")
+      .order("id", { ascending: true });
+
+    const paperMap = new Map<number, string>();
+    const validPaperIds: number[] = [];
+    (validPapers || []).forEach((p: any) => {
+      validPaperIds.push(p.id);
+      paperMap.set(p.id, p.title);
+    });
+
     // Fetch questions section by section to guarantee perfect 25/25/25/25 balance
     for (const sec of SECTION_CONFIG) {
       const sectionQuestions: any[] = [];
-      const randomPaper1 = Math.floor(Math.random() * 45) + 1;
-      const randomPaper2 = Math.floor(Math.random() * 45) + 1;
-      const randomPaper3 = Math.floor(Math.random() * 45) + 1;
 
-      // 1. Pull from Official Shift PYQs
-      try {
-        const { data: pyqRows } = await supabaseAdmin
-          .from("paper_questions")
-          .select("id, paper_id, question_number, question_text, option_a, option_b, option_c, option_d, correct_answer, explanation")
-          .in("paper_id", [randomPaper1, randomPaper2, randomPaper3])
-          .gte("question_number", sec.min)
-          .lte("question_number", sec.max)
-          .limit(45);
+      // 1. Pull from Official Shift PYQs across random valid papers
+      if (validPaperIds.length > 0) {
+        try {
+          const randomPapers = shuffle(validPaperIds).slice(0, 8);
+          const { data: pyqRows } = await supabaseAdmin
+            .from("paper_questions")
+            .select("id, paper_id, question_number, question_text, option_a, option_b, option_c, option_d, correct_answer, explanation")
+            .in("paper_id", randomPapers)
+            .gte("question_number", sec.min)
+            .lte("question_number", sec.max)
+            .limit(targetPerSection * 2);
 
-        (pyqRows || []).forEach((q: any) => {
-          if (q.question_text && q.option_a && q.option_b) {
-            const item = {
-              id: `pyq_${q.id}`,
-              section_key: sec.key,
-              section_name: sec.name,
-              question_text: q.question_text.trim(),
-              option_a: q.option_a.trim(),
-              option_b: q.option_b.trim(),
-              option_c: (q.option_c || "").trim(),
-              option_d: (q.option_d || "").trim(),
-              correct_answer: normalizeAnswer(q.correct_answer),
-              explanation: q.explanation ? q.explanation.trim() : `Official SSC Shift Question #${q.paper_id} Solution.`,
-              source: `PYQ Shift #${q.paper_id}`,
-            };
-            const fp = getQuestionFingerprint(item);
-            if (!seenFingerprints.has(fp)) {
-              seenFingerprints.add(fp);
-              sectionQuestions.push(item);
+          (pyqRows || []).forEach((q: any) => {
+            if (q.question_text && q.option_a && q.option_b) {
+              const paperTitle = paperMap.get(q.paper_id) || `PYQ Shift #${q.paper_id}`;
+              const item = {
+                id: `pyq_${q.id}`,
+                section_key: sec.key,
+                section_name: sec.name,
+                question_text: q.question_text.trim(),
+                option_a: q.option_a.trim(),
+                option_b: q.option_b.trim(),
+                option_c: (q.option_c || "").trim(),
+                option_d: (q.option_d || "").trim(),
+                correct_answer: normalizeAnswer(q.correct_answer),
+                explanation: q.explanation ? q.explanation.trim() : `Official SSC Shift Question Solution (${paperTitle}, Q.${q.question_number}).`,
+                source: paperTitle,
+              };
+              const fp = getQuestionFingerprint(item);
+              if (!seenFingerprints.has(fp)) {
+                seenFingerprints.add(fp);
+                sectionQuestions.push(item);
+              }
             }
-          }
-        });
-      } catch (err) {
-        console.error(`Error fetching PYQs for ${sec.key}:`, err);
+          });
+        } catch (err) {
+          console.error(`Error fetching PYQs for ${sec.key}:`, err);
+        }
       }
 
       // 2. Also backfill from Question Bank if needed

@@ -116,9 +116,9 @@ function formatRawMathText(plainText: string): string {
   // PDF extracts contain artificial hard wraps at 70-80 chars inside normal sentences.
   // Converting every single \n to a block element causes sentences on mobile to be torn
   // into separate disjointed blocks with excessive vertical gaps.
-  // We preserve intentional newlines (lists like 1., a., (i), bullets, statements, analogies)
+  // We preserve intentional newlines (lists like 1., a., (i), bullets, statements, analogies, notes, rows)
   // while joining accidental mid-sentence PDF wraps with a clean single space.
-  const intentionalBreakRegex = /\n(?=(?:\d+[\.\)]\s+|[a-dA-D][\.\)]\s+|\([a-zA-Z0-9ivxIVX]+\)\s*|[ivxIVX]+[\.\)]\s+|[-•*]\s+|(?:Statements?|Conclusions?|कथन|निष्कर्ष)\b|[A-Z0-9\s]{2,}:[^:]+::|\d+\s*,\s*\d+\s*,\s*(?:\?|\d+)|!\[|<img|___MD_TABLE_))/i;
+  const intentionalBreakRegex = /\n(?=(?:\d+[\.\)]\s+|[a-dA-D][\.\)]\s+|\([a-zA-Z0-9ivxIVX]+\)\s*|[ivxIVX]+[\.\)]\s+|[-•*]\s+|(?:Statements?|Conclusions?|कथन|निष्कर्ष)\b|\(?(?:NOTE|Note)\s*[:\-]|[A-Z0-9\s]{2,}:[^:]+::|\(?\s*\d+\s*,\s*\d+\s*,\s*(?:\?|\d+)|\d+\s*[-–]\s*\d+\s*[-–]\s*\d+|(?:First|Second|Third|Fourth)\s+row\b|Row\s+\d+\b|["“\']?[A-Z]\s*[+\-×÷x*]\s*[A-Z]|MAL_[A-Z0-9_]+|\b(?:Passage|Directions?)\b|!\[|<img|___MD_TABLE_))/i;
 
   const rawParagraphs = clean.split(/\r?\n\s*\r?\n/);
   const normalizedParagraphs = rawParagraphs.map((para) => {
@@ -135,13 +135,13 @@ function formatRawMathText(plainText: string): string {
     let escaped = escapeHtml(joined);
 
     breaks.forEach((_, idx) => {
-      escaped = escaped.replace(`___INTENTIONAL_BRK_${idx}___`, '<span class="block my-1"></span>');
+      escaped = escaped.replace(`___INTENTIONAL_BRK_${idx}___`, '<br />');
     });
 
     return escaped;
   }).filter(Boolean);
 
-  let formatted = normalizedParagraphs.join('<span class="block my-2"></span>');
+  let formatted = normalizedParagraphs.join('<span class="block mt-2"></span>');
 
   // 2. Normalize the minus copied from PDFs and convert unicode superscripts.
   formatted = formatted.replace(/[−–—]/g, "-");

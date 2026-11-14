@@ -1,9 +1,13 @@
 import { MetadataRoute } from "next";
 import { createClient } from "@supabase/supabase-js";
 import { getPublishedSeoConfig } from "@/lib/seo-store";
+import { getChapterNotes } from "@/lib/chapter-notes-store";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://placeholder.supabase.co";
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "placeholder-key";
+
+// Regenerate the sitemap every minute so newly published content appears automatically.
+export const revalidate = 60;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const seo = getPublishedSeoConfig();
@@ -23,19 +27,31 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/typing`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.85 },
     { url: `${baseUrl}/books`, lastModified: new Date(), changeFrequency: "daily", priority: 0.8 },
     { url: `${baseUrl}/blog`, lastModified: new Date(), changeFrequency: "daily", priority: 0.8 },
+    { url: `${baseUrl}/blog/notes`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/pricing`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.75 },
     { url: `${baseUrl}/search`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.7 },
     { url: `${baseUrl}/about`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${baseUrl}/contact`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${baseUrl}/faq`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${baseUrl}/privacy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.4 },
+    { url: `${baseUrl}/terms`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.4 },
+    { url: `${baseUrl}/refund`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.4 },
+    { url: `${baseUrl}/toolkit/rank-predictor`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/toolkit/age-calculator`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/toolkit/photo-resizer`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
   ];
 
   // Dynamic Exam routes
   let examRoutes: MetadataRoute.Sitemap = [];
   try {
-    const { data: exams } = await supabase.from("exams").select("slug, updated_at").eq("is_active", true);
+    const { data: exams } = await supabase
+      .from("exams")
+      .select("slug")
+      .eq("is_active", true);
     if (exams) {
       examRoutes = exams.map((ex) => ({
         url: `${baseUrl}/exams/${ex.slug}`,
-        lastModified: ex.updated_at ? new Date(ex.updated_at) : new Date(),
+        lastModified: new Date(),
         changeFrequency: "weekly",
         priority: 0.85,
       }));
@@ -47,11 +63,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Dynamic Topic routes
   let topicRoutes: MetadataRoute.Sitemap = [];
   try {
-    const { data: topics } = await supabase.from("topics").select("id, slug, updated_at").limit(500);
+    const { data: topics } = await supabase
+      .from("topics")
+      .select("id, slug")
+      .eq("is_active", true)
+      .limit(500);
     if (topics) {
       topicRoutes = topics.map((t) => ({
         url: `${baseUrl}/practice/${t.slug || t.id}`,
-        lastModified: t.updated_at ? new Date(t.updated_at) : new Date(),
+        lastModified: new Date(),
         changeFrequency: "daily",
         priority: 0.8,
       }));
@@ -76,5 +96,40 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     console.error("Sitemap blogs query error:", e);
   }
 
-  return [...staticRoutes, ...examRoutes, ...topicRoutes, ...blogRoutes];
+  // Dynamic PYQ Test routes — only active papers
+  let paperRoutes: MetadataRoute.Sitemap = [];
+  try {
+    const { data: papers, error: papersError } = await supabase
+      .from("previous_papers")
+      .select("id, created_at")
+      .eq("is_active", true)
+      .limit(500);
+    if (papersError) console.error("Sitemap papers query error:", papersError.message);
+    if (papers) {
+      paperRoutes = papers.map((p) => ({
+        url: `${baseUrl}/take-test/${p.id}`,
+        lastModified: p.created_at ? new Date(p.created_at) : new Date(),
+        changeFrequency: "weekly",
+        priority: 0.7,
+      }));
+    }
+  } catch (e) {
+    console.error("Sitemap papers query error:", e);
+  }
+
+  // Dynamic Chapter Notes routes (JSON file store)
+  let noteRoutes: MetadataRoute.Sitemap = [];
+  try {
+    const notes = getChapterNotes({ active_only: true });
+    noteRoutes = notes.map((n) => ({
+      url: `${baseUrl}/blog/notes/${n.slug}`,
+      lastModified: n.updated_at ? new Date(n.updated_at) : n.created_at ? new Date(n.created_at) : new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    }));
+  } catch (e) {
+    console.error("Sitemap chapter notes error:", e);
+  }
+
+  return [...staticRoutes, ...examRoutes, ...topicRoutes, ...blogRoutes, ...paperRoutes, ...noteRoutes];
 }

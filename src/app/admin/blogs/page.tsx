@@ -171,28 +171,20 @@ export default function AdminBlogsPage() {
   // List Filter States
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategoryFilter, setSelectedCategoryFilter] = useState("All");
+  const [seedingDefaults, setSeedingDefaults] = useState(false);
 
   useEffect(() => {
-    // Instant cache load for zero-lag display
-    try {
-      const cached = sessionStorage.getItem("ssczone_admin_blogs_cache");
-      if (cached) {
-        const parsed = JSON.parse(cached);
-        if (Array.isArray(parsed) && parsed.length > 0) {
-          setBlogs(parsed);
-          setLoading(false);
-        }
-      }
-    } catch {}
-
     loadBlogs();
   }, []);
 
   async function loadBlogs() {
     try {
+      setLoading(true);
       const { data, error } = await supabase
         .from("blogs")
         .select("*")
+        .not("keywords", "ilike", "%system-report%")
+        .not("slug", "ilike", "sys-report%")
         .order("created_at", { ascending: false });
         
       if (error) {
@@ -217,14 +209,29 @@ export default function AdminBlogsPage() {
         });
 
         setBlogs(enriched);
-        try {
-          sessionStorage.setItem("ssczone_admin_blogs_cache", JSON.stringify(enriched));
-        } catch {}
       }
     } catch (err: any) {
       toast.error(err.message || "Failed to load blogs");
     } finally {
       setLoading(false);
+    }
+  }
+
+  // 1-Click Seed Official SSC Starter Blogs into Supabase
+  async function handleSeedDefaults() {
+    if (!confirm("This will seed 5 official SSC starter blog posts into your Supabase database. You can freely edit or delete any of them afterwards. Proceed?")) return;
+    setSeedingDefaults(true);
+    const toastId = toast.loading("Seeding starter blog posts into Supabase...");
+    try {
+      const res = await fetch("/api/admin/blogs/seed-defaults", { method: "POST" });
+      const data = await res.json();
+      if (!res.ok || data.error) throw new Error(data.error || "Failed to seed default blogs");
+      toast.success(data.message || "Starter blogs seeded successfully! 🎉", { id: toastId });
+      loadBlogs();
+    } catch (err: any) {
+      toast.error(err.message || "Failed to seed blogs", { id: toastId });
+    } finally {
+      setSeedingDefaults(false);
     }
   }
 
@@ -314,7 +321,8 @@ export default function AdminBlogsPage() {
         body: JSON.stringify({ id }),
       });
       if (!res.ok) throw new Error("Delete failed");
-      toast.success("Blog deleted successfully!");
+      toast.success("Blog deleted successfully from Supabase!");
+      setBlogs((prev) => prev.filter((b) => b.id !== id));
       loadBlogs();
     } catch (err: any) {
       toast.error(err.message || "Failed to delete blog");
@@ -465,7 +473,17 @@ export default function AdminBlogsPage() {
           </div>
         </div>
 
-        <div className="flex items-center gap-2.5">
+        <div className="flex items-center gap-2.5 flex-wrap">
+          <button
+            onClick={handleSeedDefaults}
+            disabled={seedingDefaults}
+            className="flex items-center gap-1.5 rounded-xl border border-emerald-700/60 bg-emerald-950/40 px-3.5 py-2 text-xs font-bold text-emerald-300 hover:text-white hover:bg-emerald-900/60 transition-all cursor-pointer disabled:opacity-50"
+            title="Seed 5 official SSC starter blog posts into Supabase"
+          >
+            <Sparkles className="h-4 w-4 text-emerald-400" />
+            <span>{seedingDefaults ? "Seeding..." : "Seed Starter Blogs"}</span>
+          </button>
+
           <Link
             href="/blog"
             target="_blank"
@@ -875,17 +893,26 @@ export default function AdminBlogsPage() {
       ) : filteredBlogs.length === 0 ? (
         <div className="rounded-3xl border border-gray-800 bg-gray-900/40 p-12 text-center max-w-md mx-auto space-y-3">
           <Newspaper className="h-10 w-10 text-gray-600 mx-auto" />
-          <h3 className="text-sm font-bold text-white">No articles published yet</h3>
-          <p className="text-xs text-gray-400">Click the "+ Write New Article" button to publish your first post to Supabase!</p>
-          <button
-            onClick={() => {
-              resetForm();
-              setShowEditor(true);
-            }}
-            className="rounded-xl bg-blue-600 px-4 py-2 text-xs font-bold text-white hover:bg-blue-500 cursor-pointer"
-          >
-            Create Article Now
-          </button>
+          <h3 className="text-sm font-bold text-white">No articles published yet in Supabase</h3>
+          <p className="text-xs text-gray-400">Click &apos;+ Write New Article&apos; or seed the 5 official starter articles into your database.</p>
+          <div className="flex items-center justify-center gap-2.5 pt-2 flex-wrap">
+            <button
+              onClick={() => {
+                resetForm();
+                setShowEditor(true);
+              }}
+              className="rounded-xl bg-blue-600 px-4 py-2 text-xs font-bold text-white hover:bg-blue-500 cursor-pointer"
+            >
+              Create Article Now
+            </button>
+            <button
+              onClick={handleSeedDefaults}
+              disabled={seedingDefaults}
+              className="rounded-xl border border-emerald-700/60 bg-emerald-950/40 px-3.5 py-2 text-xs font-bold text-emerald-300 hover:text-white hover:bg-emerald-900/60 transition-all cursor-pointer disabled:opacity-50"
+            >
+              {seedingDefaults ? "Seeding..." : "🌱 Seed 5 Starter Blogs"}
+            </button>
+          </div>
         </div>
       ) : (
         <div className="space-y-3">

@@ -16,14 +16,14 @@ import {
   FileSpreadsheet,
   ArrowRight
 } from "lucide-react";
-import { DEFAULT_BLOGS } from "@/lib/blog-data";
 import { sanitizeBlogContent } from "@/lib/blog-sanitizer";
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
 
-export const revalidate = 60; // Revalidate every minute
+export const dynamic = "force-dynamic";
+export const revalidate = 0; // Pure live sync with Supabase
 
 export async function generateMetadata(
   props: Props,
@@ -37,13 +37,12 @@ export async function generateMetadata(
       .from("blogs")
       .select("*")
       .eq("slug", params.slug)
-      .single();
+      .eq("is_published", true)
+      .not("keywords", "ilike", "%system-report%")
+      .not("slug", "ilike", "sys-report%")
+      .maybeSingle();
     if (data) blog = data;
   } catch {}
-
-  if (!blog) {
-    blog = DEFAULT_BLOGS.find((b) => b.slug === params.slug);
-  }
 
   if (!blog) {
     return { title: "Article Not Found - SSCZone" };
@@ -82,15 +81,7 @@ export async function generateMetadata(
 }
 
 export async function generateStaticParams() {
-  let slugs: string[] = DEFAULT_BLOGS.map((b) => b.slug);
-  try {
-    const { data: blogs } = await supabase.from("blogs").select("slug").eq("is_published", true);
-    if (blogs) {
-      slugs = Array.from(new Set([...slugs, ...blogs.map((b) => b.slug)]));
-    }
-  } catch {}
-
-  return slugs.map((slug) => ({ slug }));
+  return [];
 }
 
 export default async function BlogPostPage(props: Props) {
@@ -102,13 +93,12 @@ export default async function BlogPostPage(props: Props) {
       .from("blogs")
       .select("*")
       .eq("slug", params.slug)
-      .single();
-    if (data && data.is_published) blog = data;
+      .eq("is_published", true)
+      .not("keywords", "ilike", "%system-report%")
+      .not("slug", "ilike", "sys-report%")
+      .maybeSingle();
+    if (data) blog = data;
   } catch {}
-
-  if (!blog) {
-    blog = DEFAULT_BLOGS.find((b) => b.slug === params.slug);
-  }
 
   if (!blog) {
     notFound();

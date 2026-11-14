@@ -83,7 +83,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Dynamic Blog routes
   let blogRoutes: MetadataRoute.Sitemap = [];
   try {
-    const { data: blogs } = await supabase.from("blogs").select("slug, updated_at, created_at").eq("is_published", true).limit(200);
+    const { data: blogs } = await supabase
+      .from("blogs")
+      .select("slug, updated_at, created_at")
+      .eq("is_published", true)
+      .not("keywords", "ilike", "%system-report%")
+      .not("slug", "ilike", "sys-report%")
+      .limit(200);
     if (blogs) {
       blogRoutes = blogs.map((b) => ({
         url: `${baseUrl}/blog/${b.slug}`,

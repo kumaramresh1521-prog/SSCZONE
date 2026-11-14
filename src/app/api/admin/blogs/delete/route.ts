@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
+import { revalidatePath } from "next/cache";
 
 export const dynamic = "force-dynamic";
 
@@ -15,6 +16,13 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing blog ID" }, { status: 400 });
     }
 
+    // Fetch slug before deleting to purge page cache
+    const { data: existing } = await supabaseAdmin
+      .from("blogs")
+      .select("slug")
+      .eq("id", id)
+      .maybeSingle();
+
     const { error } = await supabaseAdmin
       .from("blogs")
       .delete()
@@ -22,6 +30,13 @@ export async function POST(req: NextRequest) {
 
     if (error) {
       return NextResponse.json({ error: error.message }, { status: 500 });
+    }
+
+    // Purge caches immediately
+    revalidatePath("/blog");
+    revalidatePath("/");
+    if (existing?.slug) {
+      revalidatePath(`/blog/${existing.slug}`);
     }
 
     return NextResponse.json({ success: true, id });

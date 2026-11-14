@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
+import { revalidatePath } from "next/cache";
 import fs from "fs";
 import path from "path";
 import { requireAdmin } from "@/lib/api-auth";
@@ -136,6 +137,13 @@ export async function POST(req: NextRequest) {
 
     // Also write a fail-safe disk backup
     backupBlog({ ...result, meta: metaPayload });
+
+    // Instantly purge public caches
+    revalidatePath("/blog");
+    revalidatePath("/");
+    if (result?.slug) {
+      revalidatePath(`/blog/${result.slug}`);
+    }
 
     return NextResponse.json({
       success: true,

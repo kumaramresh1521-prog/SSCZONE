@@ -1,7 +1,6 @@
 import { supabase } from "@/lib/supabase";
 import type { Metadata } from "next";
 import BlogClient from "./BlogClient";
-import { DEFAULT_BLOGS } from "@/lib/blog-data";
 import { buildPageMetadata } from "@/lib/seo-store";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -12,7 +11,8 @@ export async function generateMetadata(): Promise<Metadata> {
   });
 }
 
-export const revalidate = 60; // Revalidate every minute
+export const dynamic = "force-dynamic";
+export const revalidate = 0; // Pure live sync with Supabase (zero stale caching)
 
 export default async function BlogListingPage() {
   let dbBlogs: any[] = [];
@@ -23,17 +23,16 @@ export default async function BlogListingPage() {
       .select("*")
       .eq("is_published", true)
       .not("keywords", "ilike", "%system-report%")
+      .not("slug", "ilike", "sys-report%")
       .order("created_at", { ascending: false });
 
-    if (!error && data && data.length > 0) {
+    if (!error && data) {
       dbBlogs = data;
     }
-  } catch {}
+  } catch (err) {
+    console.error("Error fetching live blogs from Supabase:", err);
+  }
 
-  // Seamlessly merge database blogs with default curated posts to ensure the portal is always rich and populated
-  const existingSlugs = new Set(dbBlogs.map((b) => b.slug));
-  const fallbackBlogs = DEFAULT_BLOGS.filter((b) => !existingSlugs.has(b.slug));
-  const finalBlogs = [...dbBlogs, ...fallbackBlogs];
-
-  return <BlogClient initialBlogs={finalBlogs} />;
+  // 100% synced with Supabase blogs table (No ghost fallbacks)
+  return <BlogClient initialBlogs={dbBlogs} />;
 }

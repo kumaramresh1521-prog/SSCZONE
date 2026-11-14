@@ -108,6 +108,23 @@ export async function GET(req: NextRequest) {
     const allQuestions: NormalizedSpeedQuestion[] = [];
     const seenFingerprints = new Set<string>();
 
+    // Fetch active/valid paper IDs and shift titles dynamically from previous_papers
+    const { data: validPapers } = await supabaseAdmin
+      .from("previous_papers")
+      .select("id, title")
+      .order("id", { ascending: true });
+
+    const paperMap = new Map<number, string>();
+    const validPaperIds: number[] = [];
+    (validPapers || []).forEach((p: any) => {
+      validPaperIds.push(p.id);
+      paperMap.set(p.id, p.title);
+    });
+
+    if (validPaperIds.length === 0) {
+      for (let i = 58; i <= 132; i++) validPaperIds.push(i);
+    }
+
     function addQuestion(q: NormalizedSpeedQuestion): boolean {
       if (!q.question_text || !q.question_text.trim() || !q.option_a || !q.option_b) {
         return false;
@@ -248,14 +265,15 @@ export async function GET(req: NextRequest) {
       if (allQuestions.length < requestedCount) {
         const pyqRange = PYQ_RANGES[resolvedSubjectKey] || PYQ_RANGES.quant;
         const needed = requestedCount - allQuestions.length + 10;
-        const randomOffset = Math.floor(Math.random() * 250);
+        const pickedPapers = shuffleArray(validPaperIds, seed + 41).slice(0, 5);
 
         const { data: pyqFill } = await supabaseAdmin
           .from("paper_questions")
           .select("id, paper_id, question_number, question_text, option_a, option_b, option_c, option_d, correct_answer, explanation")
+          .in("paper_id", pickedPapers)
           .gte("question_number", pyqRange.min)
           .lte("question_number", pyqRange.max)
-          .range(randomOffset, randomOffset + needed);
+          .limit(needed);
 
         (pyqFill || []).forEach((q: any) => {
           const qId = `pyq_${q.id}`;
@@ -316,45 +334,44 @@ export async function GET(req: NextRequest) {
         });
       }
     } else if (mode === "subject" && subjectParam !== "all") {
-      // 2. SUBJECT MODE: 50% from PYQs in that subject range, 50% from Question Bank
+      // 2. SUBJECT MODE: Dominant Official Shift PYQs (70-80%) + Question Bank
       const pyqRange = PYQ_RANGES[subjectParam] || PYQ_RANGES.quant;
       const targetQbSubjectIds = SUBJECT_ID_MAP[subjectParam] || [1];
 
-      // Pick 2-3 random paper IDs out of 50 papers
-      const randomPaperIds = [
-        Math.floor(Math.random() * 50) + 1,
-        Math.floor(Math.random() * 50) + 1,
-        Math.floor(Math.random() * 50) + 1,
-      ];
-
-      // Random offset for QB
-      const randomQbOffset = Math.floor(Math.random() * 400);
+      // Pick 4-6 random valid shift papers from 2024 & 2023
+      const pickedPapers = shuffleArray(validPaperIds, seed).slice(0, 6);
+      const targetPyqCount = Math.ceil(requestedCount * 0.75); // 75% PYQ weightage
+      const targetQbCount = requestedCount - targetPyqCount;
 
       const [pyqRes, qbRes] = await Promise.all([
         supabaseAdmin
           .from("paper_questions")
           .select("id, paper_id, question_number, question_text, option_a, option_b, option_c, option_d, correct_answer, explanation")
-          .in("paper_id", randomPaperIds)
+          .in("paper_id", pickedPapers)
           .gte("question_number", pyqRange.min)
           .lte("question_number", pyqRange.max)
-          .limit(30),
+          .limit(requestedCount * 2),
 
         supabaseAdmin
           .from("questions")
           .select("id, question_text, question_text_hi, option_a, option_b, option_c, option_d, option_a_hi, option_b_hi, option_c_hi, option_d_hi, correct_answer, explanation, explanation_hi, image_url, option_a_image_url, option_b_image_url, option_c_image_url, option_d_image_url, topics!inner(id, title, subject_id)")
           .in("topics.subject_id", targetQbSubjectIds)
           .eq("is_active", true)
-          .range(randomQbOffset, randomQbOffset + 30),
+          .limit(targetQbCount * 2),
       ]);
 
-      (pyqRes.data || []).forEach((q: any) => {
-        addQuestion({
+      const shuffledPyqs = shuffleArray(pyqRes.data || [], seed + 17);
+      let pyqAdded = 0;
+      for (const q of shuffledPyqs) {
+        if (pyqAdded >= targetPyqCount) break;
+        const paperTitle = paperMap.get(q.paper_id) || `Official Shift #${q.paper_id}`;
+        const added = addQuestion({
           id: `pyq_${q.id}`,
           originalId: q.id,
           source: "pyq",
           subject: SUBJECT_NAMES[subjectParam],
           subjectKey: subjectParam,
-          topic: `PYQ Official Shift Paper #${q.paper_id}`,
+          topic: `${paperTitle} (Q.${q.question_number})`,
           question_text: q.question_text || "",
           question_text_hi: null,
           option_a: q.option_a || "",
@@ -366,7 +383,8 @@ export async function GET(req: NextRequest) {
           paper_id: q.paper_id,
           question_number: q.question_number,
         });
-      });
+        if (added) pyqAdded++;
+      }
 
       (qbRes.data || []).forEach((q: any) => {
         addQuestion({
@@ -397,90 +415,101 @@ export async function GET(req: NextRequest) {
         });
       });
     } else {
-      // 3. RANDOM / MIXED MODE (DEFAULT): Balanced across all 4 subjects
-      // Each section gets ~6-7 questions: half from PYQ shifts, half from Question Bank
-      const subjects: ("quant" | "reasoning" | "english" | "ga")[] = ["reasoning", "ga", "quant", "english"];
-      const randomPaper1 = Math.floor(Math.random() * 50) + 1;
-      const randomPaper2 = Math.floor(Math.random() * 50) + 1;
-      const randomOffset = Math.floor(Math.random() * 2000);
+      // 3. RANDOM / MIXED MODE (DEFAULT): Balanced across ALL 4 SECTIONS
+      // Equal weightage: Reasoning (25%), GA (25%), Quant (25%), English (25%)
+      const SECTIONS: { key: "reasoning" | "ga" | "quant" | "english"; name: string; min: number; max: number }[] = [
+        { key: "reasoning", name: "General Intelligence & Reasoning", min: 1, max: 25 },
+        { key: "ga", name: "General Awareness", min: 26, max: 50 },
+        { key: "quant", name: "Quantitative Aptitude", min: 51, max: 75 },
+        { key: "english", name: "English Comprehension", min: 76, max: 100 },
+      ];
 
-      const [pyqRes, qbRes] = await Promise.all([
-        supabaseAdmin
+      const basePerSec = Math.floor(requestedCount / 4);
+      const remainder = requestedCount % 4;
+
+      for (let sIdx = 0; sIdx < SECTIONS.length; sIdx++) {
+        const sec = SECTIONS[sIdx];
+        const targetForSec = basePerSec + (sIdx < remainder ? 1 : 0);
+        const pickedPapers = shuffleArray(validPaperIds, seed + sIdx * 97).slice(0, 5);
+
+        const { data: pyqSecRows } = await supabaseAdmin
           .from("paper_questions")
           .select("id, paper_id, question_number, question_text, option_a, option_b, option_c, option_d, correct_answer, explanation")
-          .in("paper_id", [randomPaper1, randomPaper2])
-          .limit(60),
+          .in("paper_id", pickedPapers)
+          .gte("question_number", sec.min)
+          .lte("question_number", sec.max)
+          .limit(targetForSec * 3);
 
-        supabaseAdmin
-          .from("questions")
-          .select("id, question_text, question_text_hi, option_a, option_b, option_c, option_d, option_a_hi, option_b_hi, option_c_hi, option_d_hi, correct_answer, explanation, explanation_hi, image_url, option_a_image_url, option_b_image_url, option_c_image_url, option_d_image_url, topics(id, title, subject_id, subjects(title))")
-          .eq("is_active", true)
-          .range(randomOffset, randomOffset + 50),
-      ]);
+        const shuffledPyqs = shuffleArray(pyqSecRows || [], seed + sIdx * 31);
+        let secAdded = 0;
 
-      (pyqRes.data || []).forEach((q: any) => {
-        let sKey: "quant" | "reasoning" | "english" | "ga" = "reasoning";
-        const qNum = q.question_number || 1;
-        if (qNum <= 25) sKey = "reasoning";
-        else if (qNum <= 50) sKey = "ga";
-        else if (qNum <= 75) sKey = "quant";
-        else sKey = "english";
+        for (const q of shuffledPyqs) {
+          if (secAdded >= targetForSec) break;
+          const paperTitle = paperMap.get(q.paper_id) || `Official Shift #${q.paper_id}`;
+          const added = addQuestion({
+            id: `pyq_${q.id}`,
+            originalId: q.id,
+            source: "pyq",
+            subject: sec.name,
+            subjectKey: sec.key,
+            topic: `${paperTitle} (Q.${q.question_number})`,
+            question_text: q.question_text || "",
+            question_text_hi: null,
+            option_a: q.option_a || "",
+            option_b: q.option_b || "",
+            option_c: q.option_c || "",
+            option_d: q.option_d || "",
+            correct_answer: normalizeAnswer(q.correct_answer),
+            explanation: q.explanation || null,
+            paper_id: q.paper_id,
+            question_number: q.question_number,
+          });
+          if (added) secAdded++;
+        }
 
-        addQuestion({
-          id: `pyq_${q.id}`,
-          originalId: q.id,
-          source: "pyq",
-          subject: SUBJECT_NAMES[sKey],
-          subjectKey: sKey,
-          topic: `SSC CGL Official Shift #${q.paper_id}`,
-          question_text: q.question_text || "",
-          question_text_hi: null,
-          option_a: q.option_a || "",
-          option_b: q.option_b || "",
-          option_c: q.option_c || "",
-          option_d: q.option_d || "",
-          correct_answer: normalizeAnswer(q.correct_answer),
-          explanation: q.explanation || null,
-          paper_id: q.paper_id,
-          question_number: q.question_number,
-        });
-      });
+        // Backfill from Question Bank for this specific section if still needed
+        if (secAdded < targetForSec) {
+          const targetQbSubjectIds = SUBJECT_ID_MAP[sec.key] || [1];
+          const randomQbOffset = Math.floor(Math.random() * 200);
+          const { data: qbSecRows } = await supabaseAdmin
+            .from("questions")
+            .select("id, question_text, question_text_hi, option_a, option_b, option_c, option_d, option_a_hi, option_b_hi, option_c_hi, option_d_hi, correct_answer, explanation, explanation_hi, image_url, option_a_image_url, option_b_image_url, option_c_image_url, option_d_image_url, topics!inner(id, title, subject_id)")
+            .in("topics.subject_id", targetQbSubjectIds)
+            .eq("is_active", true)
+            .range(randomQbOffset, randomQbOffset + (targetForSec - secAdded) * 2);
 
-      (qbRes.data || []).forEach((q: any) => {
-        const { topicTitle, subjectTitle } = getTopicSubject(q);
-        const subTitle = subjectTitle.toLowerCase();
-        let sKey: "quant" | "reasoning" | "english" | "ga" = "ga";
-        if (subTitle.includes("math")) sKey = "quant";
-        else if (subTitle.includes("reason")) sKey = "reasoning";
-        else if (subTitle.includes("english")) sKey = "english";
-
-        addQuestion({
-          id: `bank_${q.id}`,
-          originalId: q.id,
-          source: "bank",
-          subject: SUBJECT_NAMES[sKey],
-          subjectKey: sKey,
-          topic: topicTitle || "Practice Question",
-          question_text: q.question_text || "",
-          question_text_hi: q.question_text_hi || null,
-          option_a: q.option_a || "",
-          option_b: q.option_b || "",
-          option_c: q.option_c || "",
-          option_d: q.option_d || "",
-          option_a_hi: q.option_a_hi || null,
-          option_b_hi: q.option_b_hi || null,
-          option_c_hi: q.option_c_hi || null,
-          option_d_hi: q.option_d_hi || null,
-          correct_answer: normalizeAnswer(q.correct_answer),
-          explanation: q.explanation || null,
-          explanation_hi: q.explanation_hi || null,
-          image_url: q.image_url || null,
-          option_a_image_url: q.option_a_image_url || null,
-          option_b_image_url: q.option_b_image_url || null,
-          option_c_image_url: q.option_c_image_url || null,
-          option_d_image_url: q.option_d_image_url || null,
-        });
-      });
+          for (const q of qbSecRows || []) {
+            if (secAdded >= targetForSec) break;
+            const added = addQuestion({
+              id: `bank_${q.id}`,
+              originalId: q.id,
+              source: "bank",
+              subject: sec.name,
+              subjectKey: sec.key,
+              topic: q.topics?.title || "Topic Question",
+              question_text: q.question_text || "",
+              question_text_hi: q.question_text_hi || null,
+              option_a: q.option_a || "",
+              option_b: q.option_b || "",
+              option_c: q.option_c || "",
+              option_d: q.option_d || "",
+              option_a_hi: q.option_a_hi || null,
+              option_b_hi: q.option_b_hi || null,
+              option_c_hi: q.option_c_hi || null,
+              option_d_hi: q.option_d_hi || null,
+              correct_answer: normalizeAnswer(q.correct_answer),
+              explanation: q.explanation || null,
+              explanation_hi: q.explanation_hi || null,
+              image_url: q.image_url || null,
+              option_a_image_url: q.option_a_image_url || null,
+              option_b_image_url: q.option_b_image_url || null,
+              option_c_image_url: q.option_c_image_url || null,
+              option_d_image_url: q.option_d_image_url || null,
+            });
+            if (added) secAdded++;
+          }
+        }
+      }
     }
 
     // Shuffle thoroughly using user/attempt seed (allQuestions is guaranteed valid and deduplicated)

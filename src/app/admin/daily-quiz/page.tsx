@@ -93,6 +93,7 @@ export default function AdminDailyQuizPage() {
   // 100 Qs Generator State
   const [generating100, setGenerating100] = useState(false);
   const [generatorCount, setGeneratorCount] = useState<number>(100);
+  const [generatorSubject, setGeneratorSubject] = useState<string>("mixed");
 
   // Search & Filtering inside Question Review list
   const [questionSearch, setQuestionSearch] = useState("");
@@ -181,20 +182,33 @@ export default function AdminDailyQuizPage() {
     setModalOpen(true);
   };
 
-  // Generate 100 Questions Randomly
+  // Generate Questions Randomly from Question Bank & Shift PYQs
   const handleGenerate100 = async () => {
     setGenerating100(true);
     try {
-      const res = await fetch(`/api/admin/daily-quiz/generate-100?count=${generatorCount}`);
+      const res = await fetch(`/api/admin/daily-quiz/generate-100?count=${generatorCount}&subject=${generatorSubject}`);
       const data = await res.json();
       if (!res.ok || data.error) throw new Error(data.error || "Failed to generate questions");
 
       if (data.questions && data.questions.length > 0) {
         setQuestionsList(data.questions);
-        setFormDuration(data.questions.length >= 50 ? 60 : 15);
-        setFormSubjectKey("mixed");
+        setFormDuration(data.questions.length >= 50 ? 60 : data.questions.length >= 25 ? 15 : 10);
+        setFormSubjectKey(generatorSubject as any);
+        if (generatorSubject === "mixed") {
+          setFormTitle(`Daily Free Quiz: All India SSC CGL Tier-1 Shift Mock (${formDate})`);
+        } else if (generatorSubject === "quant") {
+          setFormTitle(`Daily Free Quiz: Quantitative Aptitude Speed Drill (${formDate})`);
+        } else if (generatorSubject === "reasoning") {
+          setFormTitle(`Daily Free Quiz: Reasoning & Intelligence Speed Drill (${formDate})`);
+        } else if (generatorSubject === "ga") {
+          setFormTitle(`Daily Free Quiz: General Awareness & Static GK Challenge (${formDate})`);
+        } else if (generatorSubject === "english") {
+          setFormTitle(`Daily Free Quiz: English Comprehension Speed Drill (${formDate})`);
+        }
         setImportTab("manual"); // Switch to manual / analysis view
-        toast.success(`🎉 Generated ${data.questions.length} balanced questions! Analyze and edit below.`);
+        const pyqNum = data.sources?.pyq_count ?? "N/A";
+        const bankNum = data.sources?.bank_count ?? "N/A";
+        toast.success(`🎉 Generated ${data.questions.length} questions (${pyqNum} Shift PYQs + ${bankNum} Question Bank)!`);
       }
     } catch (err: any) {
       toast.error("Generation failed: " + err.message);
@@ -951,9 +965,24 @@ Exp: Mekong originates in Tibet. Amazon originates in Peru.`;
                     </div>
 
                     {/* Generator Controls */}
-                    <div className="flex items-center gap-3 pt-2">
+                    <div className="flex flex-wrap items-center gap-3 pt-2">
                       <div className="flex items-center gap-2">
-                        <label className="text-xs font-bold text-slate-700">Target Question Count:</label>
+                        <label className="text-xs font-bold text-slate-700">Section / Subject:</label>
+                        <select
+                          value={generatorSubject}
+                          onChange={(e) => setGeneratorSubject(e.target.value)}
+                          className="px-3 py-1.5 bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-800"
+                        >
+                          <option value="mixed">All 4 Sections (Mixed Mock - 25% each)</option>
+                          <option value="quant">Quantitative Aptitude</option>
+                          <option value="reasoning">General Intelligence & Reasoning</option>
+                          <option value="ga">General Awareness & Static GK</option>
+                          <option value="english">English Comprehension</option>
+                        </select>
+                      </div>
+
+                      <div className="flex items-center gap-2">
+                        <label className="text-xs font-bold text-slate-700">Question Count:</label>
                         <select
                           value={generatorCount}
                           onChange={(e) => setGeneratorCount(Number(e.target.value))}
@@ -962,6 +991,7 @@ Exp: Mekong originates in Tibet. Amazon originates in Peru.`;
                           <option value={100}>100 Questions (Official Full Mock - 60 min)</option>
                           <option value={50}>50 Questions (Mini Mock - 30 min)</option>
                           <option value={25}>25 Questions (Speed Drill - 15 min)</option>
+                          <option value={10}>10 Questions (Quick Quiz - 8 min)</option>
                         </select>
                       </div>
 
@@ -974,12 +1004,12 @@ Exp: Mekong originates in Tibet. Amazon originates in Peru.`;
                         {generating100 ? (
                           <>
                             <div className="w-3.5 h-3.5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                            <span>Pulling 100 Questions from DB...</span>
+                            <span>Pulling Dual-Source Questions...</span>
                           </>
                         ) : (
                           <>
                             <Sparkles className="w-4 h-4 text-amber-300" />
-                            <span>⚡ Generate {generatorCount} Random Questions Now</span>
+                            <span>⚡ Generate {generatorCount} Questions (PYQ + Bank)</span>
                           </>
                         )}
                       </button>

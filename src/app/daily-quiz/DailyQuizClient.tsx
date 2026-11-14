@@ -1248,9 +1248,16 @@ export default function DailyQuizClient() {
                   {/* Explanation box */}
                   {q.explanation && (
                     <div className="bg-blue-50/60 rounded-xl p-4 border border-blue-100 text-xs sm:text-sm text-slate-800">
-                      <div className="font-bold text-blue-900 flex items-center gap-1.5 mb-1.5 text-xs uppercase tracking-wide">
-                        <Sparkles className="w-3.5 h-3.5 text-blue-600" />
-                        Explanation & Calculation Steps:
+                      <div className="font-bold text-blue-900 flex items-center justify-between flex-wrap gap-2 mb-1.5 text-xs uppercase tracking-wide">
+                        <span className="flex items-center gap-1.5">
+                          <Sparkles className="w-3.5 h-3.5 text-blue-600" />
+                          Explanation & Calculation Steps:
+                        </span>
+                        {q.source && (
+                          <span className="px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800 font-bold text-[11px] normal-case border border-blue-200">
+                            {q.source}
+                          </span>
+                        )}
                       </div>
                       <div className="leading-relaxed">
                         <MathText text={q.explanation} />

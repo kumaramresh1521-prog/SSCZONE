@@ -24,22 +24,22 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 const SECTION_CONFIG = [
-  { key: "reasoning", name: "General Intelligence & Reasoning", min: 1, max: 25, count: 25 },
-  { key: "ga", name: "General Awareness (GK & Current Affairs)", min: 26, max: 50, count: 25 },
-  { key: "quant", name: "Quantitative Aptitude (Maths)", min: 51, max: 75, count: 25 },
-  { key: "english", name: "English Comprehension", min: 76, max: 100, count: 25 },
+  { key: "reasoning", name: "General Intelligence & Reasoning", min: 1, max: 25, qbSubjectIds: [3, 8, 12] },
+  { key: "ga", name: "General Awareness (GK & Current Affairs)", min: 26, max: 50, qbSubjectIds: [4, 9, 13] },
+  { key: "quant", name: "Quantitative Aptitude (Maths)", min: 51, max: 75, qbSubjectIds: [1, 6, 10] },
+  { key: "english", name: "English Comprehension", min: 76, max: 100, qbSubjectIds: [2, 7, 11] },
 ];
 
 export async function GET(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
-    const totalTarget = parseInt(searchParams.get("count") || "100", 10);
-    const targetPerSection = Math.floor(totalTarget / 4);
+    const totalTarget = Math.max(parseInt(searchParams.get("count") || "100", 10), 5);
+    const subjectParam = searchParams.get("subject") || "mixed"; // mixed | quant | reasoning | ga | english
 
     const fullQuestionSet: any[] = [];
     const seenFingerprints = new Set<string>();
 
-    // Fetch all active/valid paper IDs and their titles from previous_papers
+    // Dynamically fetch all active papers from previous_papers (Zero hardcoded paper limits!)
     const { data: validPapers } = await supabaseAdmin
       .from("previous_papers")
       .select("id, title")
@@ -52,23 +52,49 @@ export async function GET(req: NextRequest) {
       paperMap.set(p.id, p.title);
     });
 
-    // Fetch questions section by section to guarantee perfect 25/25/25/25 balance
-    for (const sec of SECTION_CONFIG) {
-      const sectionQuestions: any[] = [];
+    // Fallback if previous_papers is empty: discover distinct paper_ids dynamically from paper_questions
+    if (validPaperIds.length === 0) {
+      const { data: distinctPapers } = await supabaseAdmin
+        .from("paper_questions")
+        .select("paper_id")
+        .limit(1000);
+      const ids = Array.from(new Set((distinctPapers || []).map((p: any) => p.paper_id)));
+      validPaperIds.push(...ids);
+    }
 
-      // 1. Pull from Official Shift PYQs across random valid papers
+    // Determine target sections
+    const activeSections = subjectParam !== "mixed" && subjectParam !== "all"
+      ? SECTION_CONFIG.filter((s) => s.key === subjectParam)
+      : SECTION_CONFIG;
+
+    const basePerSec = Math.floor(totalTarget / activeSections.length);
+    const remainder = totalTarget % activeSections.length;
+
+    for (let sIdx = 0; sIdx < activeSections.length; sIdx++) {
+      const sec = activeSections[sIdx];
+      const targetForSec = basePerSec + (sIdx < remainder ? 1 : 0);
+
+      // Target: 50% Official Shift PYQs + 50% Question Bank
+      const pyqQuota = Math.ceil(targetForSec * 0.5);
+      const qbQuota = targetForSec - pyqQuota;
+
+      const secPyqs: any[] = [];
+      const secQb: any[] = [];
+
+      // 1. Fetch from Official Shift PYQs across dynamically picked active papers
       if (validPaperIds.length > 0) {
         try {
-          const randomPapers = shuffle(validPaperIds).slice(0, 8);
+          const randomPapers = shuffle(validPaperIds).slice(0, 10);
           const { data: pyqRows } = await supabaseAdmin
             .from("paper_questions")
             .select("id, paper_id, question_number, question_text, option_a, option_b, option_c, option_d, correct_answer, explanation")
             .in("paper_id", randomPapers)
             .gte("question_number", sec.min)
             .lte("question_number", sec.max)
-            .limit(targetPerSection * 2);
+            .limit(targetForSec * 3);
 
-          (pyqRows || []).forEach((q: any) => {
+          const shuffled = shuffle(pyqRows || []);
+          for (const q of shuffled) {
             if (q.question_text && q.option_a && q.option_b) {
               const paperTitle = paperMap.get(q.paper_id) || `PYQ Shift #${q.paper_id}`;
               const item = {
@@ -83,65 +109,124 @@ export async function GET(req: NextRequest) {
                 correct_answer: normalizeAnswer(q.correct_answer),
                 explanation: q.explanation ? q.explanation.trim() : `Official SSC Shift Question Solution (${paperTitle}, Q.${q.question_number}).`,
                 source: paperTitle,
+                source_type: "pyq",
               };
               const fp = getQuestionFingerprint(item);
               if (!seenFingerprints.has(fp)) {
-                seenFingerprints.add(fp);
-                sectionQuestions.push(item);
+                secPyqs.push({ item, fp });
               }
             }
-          });
+          }
         } catch (err) {
           console.error(`Error fetching PYQs for ${sec.key}:`, err);
         }
       }
 
-      // 2. Also backfill from Question Bank if needed
-      if (sectionQuestions.length < targetPerSection) {
-        try {
-          const randomOffset = Math.floor(Math.random() * 500);
-          const { data: qbRows } = await supabaseAdmin
-            .from("questions")
-            .select("id, question_text, question_text_hi, option_a, option_b, option_c, option_d, correct_answer, explanation")
-            .eq("is_active", true)
-            .range(randomOffset, randomOffset + targetPerSection * 2);
+      // 2. Fetch from Question Bank for this section
+      try {
+        const randomOffset = Math.floor(Math.random() * 200);
+        const { data: qbRows } = await supabaseAdmin
+          .from("questions")
+          .select("id, question_text, question_text_hi, option_a, option_b, option_c, option_d, correct_answer, explanation, topics!inner(id, title, subject_id)")
+          .in("topics.subject_id", sec.qbSubjectIds)
+          .eq("is_active", true)
+          .range(randomOffset, randomOffset + targetForSec * 2);
 
-          (qbRows || []).forEach((q: any) => {
-            if (q.question_text && q.option_a && q.option_b) {
-              const item = {
-                id: `qb_${q.id}`,
-                section_key: sec.key,
-                section_name: sec.name,
-                question_text: q.question_text.trim(),
-                question_text_hi: q.question_text_hi ? q.question_text_hi.trim() : undefined,
-                option_a: q.option_a.trim(),
-                option_b: q.option_b.trim(),
-                option_c: (q.option_c || "").trim(),
-                option_d: (q.option_d || "").trim(),
-                correct_answer: normalizeAnswer(q.correct_answer),
-                explanation: q.explanation ? q.explanation.trim() : "Detailed SSCZONE solution.",
-                source: "Question Bank",
-              };
-              const fp = getQuestionFingerprint(item);
-              if (!seenFingerprints.has(fp)) {
-                seenFingerprints.add(fp);
-                sectionQuestions.push(item);
-              }
+        const rowsToUse = (qbRows && qbRows.length > 0)
+          ? qbRows
+          : (await supabaseAdmin
+              .from("questions")
+              .select("id, question_text, question_text_hi, option_a, option_b, option_c, option_d, correct_answer, explanation, topics!inner(id, title, subject_id)")
+              .in("topics.subject_id", sec.qbSubjectIds)
+              .eq("is_active", true)
+              .limit(targetForSec * 2)
+            ).data || [];
+
+        const shuffled = shuffle(rowsToUse);
+        for (const q of shuffled) {
+          if (q.question_text && q.option_a && q.option_b) {
+            const topicObj: any = Array.isArray(q.topics) ? q.topics[0] : q.topics;
+            const item = {
+              id: `qb_${q.id}`,
+              section_key: sec.key,
+              section_name: sec.name,
+              question_text: q.question_text.trim(),
+              question_text_hi: q.question_text_hi ? q.question_text_hi.trim() : undefined,
+              option_a: q.option_a.trim(),
+              option_b: q.option_b.trim(),
+              option_c: (q.option_c || "").trim(),
+              option_d: (q.option_d || "").trim(),
+              correct_answer: normalizeAnswer(q.correct_answer),
+              explanation: q.explanation ? q.explanation.trim() : "Detailed SSCZONE question bank solution.",
+              source: `Question Bank: ${topicObj?.title || "Practice"}`,
+              source_type: "bank",
+            };
+            const fp = getQuestionFingerprint(item);
+            if (!seenFingerprints.has(fp)) {
+              secQb.push({ item, fp });
             }
-          });
-        } catch (err) {
-          console.error(`Error backfilling QB for ${sec.key}:`, err);
+          }
+        }
+      } catch (err) {
+        console.error(`Error fetching QB for ${sec.key}:`, err);
+      }
+
+      // Add up to pyqQuota from PYQs
+      let secAdded = 0;
+      let pyqCount = 0;
+      let qbCount = 0;
+
+      for (const { item, fp } of secPyqs) {
+        if (pyqCount >= pyqQuota) break;
+        seenFingerprints.add(fp);
+        fullQuestionSet.push(item);
+        pyqCount++;
+        secAdded++;
+      }
+
+      // Add up to qbQuota from Question Bank
+      for (const { item, fp } of secQb) {
+        if (qbCount >= qbQuota || secAdded >= targetForSec) break;
+        if (!seenFingerprints.has(fp)) {
+          seenFingerprints.add(fp);
+          fullQuestionSet.push(item);
+          qbCount++;
+          secAdded++;
         }
       }
 
-      // Shuffle section questions and take exact targetPerSection
-      const shuffledSec = shuffle(sectionQuestions);
-      const chosenSec = shuffledSec.slice(0, targetPerSection);
-      fullQuestionSet.push(...chosenSec);
+      // Reciprocal fallback: If QB didn't have enough (e.g. Quant/GA), top up from PYQs!
+      if (secAdded < targetForSec) {
+        for (const { item, fp } of secPyqs) {
+          if (secAdded >= targetForSec) break;
+          if (!seenFingerprints.has(fp)) {
+            seenFingerprints.add(fp);
+            fullQuestionSet.push(item);
+            pyqCount++;
+            secAdded++;
+          }
+        }
+      }
+
+      // Reciprocal fallback: If PYQs didn't have enough, top up from Question Bank!
+      if (secAdded < targetForSec) {
+        for (const { item, fp } of secQb) {
+          if (secAdded >= targetForSec) break;
+          if (!seenFingerprints.has(fp)) {
+            seenFingerprints.add(fp);
+            fullQuestionSet.push(item);
+            qbCount++;
+            secAdded++;
+          }
+        }
+      }
     }
 
-    // Assign clean sequential IDs
-    const final100 = fullQuestionSet.map((q, idx) => ({
+    // Shuffle final set so PYQ and Question Bank questions are interspersed naturally
+    const shuffledSet = shuffle(fullQuestionSet).slice(0, totalTarget);
+
+    // Assign clean sequential serial numbers
+    const final100 = shuffledSet.map((q, idx) => ({
       ...q,
       serial_number: idx + 1,
       id: `q_${Date.now()}_${idx + 1}`,
@@ -155,6 +240,10 @@ export async function GET(req: NextRequest) {
         ga: final100.filter((q) => q.section_key === "ga").length,
         quant: final100.filter((q) => q.section_key === "quant").length,
         english: final100.filter((q) => q.section_key === "english").length,
+      },
+      sources: {
+        pyq_count: final100.filter((q) => q.source_type === "pyq").length,
+        bank_count: final100.filter((q) => q.source_type === "bank").length,
       },
       answer_key_counts: {
         A: final100.filter((q) => q.correct_answer === "A").length,

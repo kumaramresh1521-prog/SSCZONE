@@ -11,6 +11,10 @@ export interface DailyQuizQuestion {
   option_d: string;
   correct_answer: "A" | "B" | "C" | "D";
   explanation?: string;
+  source?: string;
+  source_type?: "pyq" | "bank";
+  section_key?: string;
+  section_name?: string;
 }
 
 export interface DailyQuiz {

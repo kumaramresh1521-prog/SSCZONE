@@ -321,12 +321,13 @@ export default function PracticeClient({
   const [translationsCache, setTranslationsCache] = useState<Record<number, any>>({});
   const [translatingBatch, setTranslatingBatch] = useState(false);
 
-  // Accordion state: open subject IDs
+  // Accordion state: open subject IDs (only active topic's subject open by default)
   const [openSubjects, setOpenSubjects] = useState<Record<number, boolean>>(() => {
     const initial: Record<number, boolean> = {};
+    const activeSubId = topic?.subject_id;
     if (fullSyllabus) {
       fullSyllabus.forEach((sub) => {
-        initial[sub.id] = true;
+        initial[sub.id] = activeSubId ? sub.id === activeSubId : false;
       });
     }
     return initial;
@@ -573,7 +574,18 @@ export default function PracticeClient({
   }, [langMode, practiceMode, currentIndex, displayQuestions, activeSetQuestions, translationsCache]);
 
   function toggleSubject(id: number) {
-    setOpenSubjects((prev) => ({ ...prev, [id]: !prev[id] }));
+    setOpenSubjects((prev) => {
+      const isCurrentlyOpen = prev[id] ?? false;
+      // Close other subjects so only the clicked/active one stays open
+      const next: Record<number, boolean> = {};
+      if (fullSyllabus) {
+        fullSyllabus.forEach((sub) => {
+          next[sub.id] = false;
+        });
+      }
+      next[id] = !isCurrentlyOpen;
+      return next;
+    });
   }
 
   function toggleSubSection(secKey: string) {

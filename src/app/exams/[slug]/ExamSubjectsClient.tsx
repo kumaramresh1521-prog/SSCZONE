@@ -39,18 +39,39 @@ export default function ExamSubjectsClient({
   const [searchQuery, setSearchQuery] = useState("");
   const [activeSubjectTab, setActiveSubjectTab] = useState<string>("All");
   
-  // Track open/collapsed state of each subject category dropdown
+  // Track open/collapsed state of each subject category dropdown (single active accordion)
   const [openSubjects, setOpenSubjects] = useState<Record<number, boolean>>(() => {
     const initialState: Record<number, boolean> = {};
     subjects.forEach((s, idx) => {
-      // Keep first 2 open by default for immediate preview, or all if few
-      initialState[s.id] = idx < 2;
+      // Only keep the first subject open initially, keep all others collapsed
+      initialState[s.id] = idx === 0;
     });
     return initialState;
   });
 
   const toggleSubject = (id: number) => {
-    setOpenSubjects(prev => ({ ...prev, [id]: !prev[id] }));
+    setOpenSubjects(prev => {
+      const isCurrentlyOpen = prev[id] ?? false;
+      // Accordion behavior: close all other subjects so only the clicked/active one stays open
+      const next: Record<number, boolean> = {};
+      subjects.forEach(s => { next[s.id] = false; });
+      next[id] = !isCurrentlyOpen;
+      return next;
+    });
+  };
+
+  const handleTabChange = (tab: string) => {
+    setActiveSubjectTab(tab);
+    if (tab !== "All") {
+      const subId = Number(tab);
+      const next: Record<number, boolean> = {};
+      subjects.forEach(s => { next[s.id] = s.id === subId; });
+      setOpenSubjects(next);
+    } else {
+      const next: Record<number, boolean> = {};
+      subjects.forEach((s, idx) => { next[s.id] = idx === 0; });
+      setOpenSubjects(next);
+    }
   };
 
   const expandAll = () => {
@@ -130,7 +151,7 @@ export default function ExamSubjectsClient({
       {/* Category Tabs: Select Subject */}
       <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
         <button
-          onClick={() => setActiveSubjectTab("All")}
+          onClick={() => handleTabChange("All")}
           className={`rounded-xl px-4 py-2 text-xs font-semibold whitespace-nowrap transition-all cursor-pointer ${
             activeSubjectTab === "All"
               ? "bg-slate-900 text-white shadow-xs"
@@ -142,7 +163,7 @@ export default function ExamSubjectsClient({
         {subjects.map(sub => (
           <button
             key={sub.id}
-            onClick={() => setActiveSubjectTab(String(sub.id))}
+            onClick={() => handleTabChange(String(sub.id))}
             className={`rounded-xl px-4 py-2 text-xs font-semibold whitespace-nowrap transition-all cursor-pointer ${
               activeSubjectTab === String(sub.id)
                 ? "bg-blue-600 text-white shadow-xs"

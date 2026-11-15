@@ -22,7 +22,7 @@
           "name": "SSC CHSL",
           "href": "/exams/ssc-chsl",
           "icon": "Target",
-          "is_active": true,
+          "is_active": false,
           "sort_order": 2
         },
         {
@@ -30,7 +30,7 @@
           "name": "SSC CPO",
           "href": "/exams/ssc-cpo",
           "icon": "Target",
-          "is_active": true,
+          "is_active": false,
           "sort_order": 3
         },
         {
@@ -38,7 +38,7 @@
           "name": "SSC MTS",
           "href": "/exams/ssc-mts",
           "icon": "Target",
-          "is_active": true,
+          "is_active": false,
           "sort_order": 4
         },
         {
@@ -46,7 +46,7 @@
           "name": "SSC GD Constable",
           "href": "/exams/ssc-gd",
           "icon": "Target",
-          "is_active": true,
+          "is_active": false,
           "sort_order": 5
         },
         {
@@ -213,5 +213,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-14T17:58:46.100Z"
+  "updatedAt": "2026-11-15T11:29:56.480Z"
 }

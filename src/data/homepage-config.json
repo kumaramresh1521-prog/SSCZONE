@@ -31,10 +31,34 @@
     "enabled": true,
     "title": "SSC Target Examinations",
     "subtitle": "Active exams are open for practice. Upcoming exams are progressively unlocked as shift papers are curated.",
-    "showUpcomingRoadmap": true,
-    "upcomingBadgeText": "\u23f3 Launching Soon",
+    "showUpcomingRoadmap": false,
+    "upcomingBadgeText": "⏳ Launching Soon",
     "upcomingFooterText": "Curating shift questions",
     "maxUpcomingDisplay": 0
+  },
+  "examsSection": {
+    "title": "Target Competitive Exams",
+    "subtitle": "Select an exam and start syllabus-wise preparation",
+    "cards": [
+      {
+        "name": "SSC CGL",
+        "desc": "Combined Graduate Level Tier-1 & Tier-2",
+        "link": "/exams",
+        "badge": "Graduation Level"
+      },
+      {
+        "name": "SSC CHSL",
+        "desc": "Combined Higher Secondary Level Tier-1",
+        "link": "/exams",
+        "badge": "10+2 Level"
+      },
+      {
+        "name": "SSC CPO & MTS",
+        "desc": "Central Police Organisation & Multi-Tasking Staff Practice",
+        "link": "/exams",
+        "badge": "All Levels"
+      }
+    ]
   },
   "stepsSection": {
     "title": "3 Simple Steps to Master Any Exam",
@@ -60,5 +84,6 @@
     "subtitle": "Start practicing syllabus-wise questions now. Free access to all topic chapters & solutions.",
     "buttonText": "Start Free Practice Now",
     "buttonLink": "/exams"
-  }
+  },
+  "updatedAt": "2026-11-15T11:31:35.510Z"
 }

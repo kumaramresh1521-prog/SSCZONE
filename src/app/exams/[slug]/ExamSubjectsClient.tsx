@@ -42,9 +42,9 @@ export default function ExamSubjectsClient({
   // Track open/collapsed state of each subject category dropdown (single active accordion)
   const [openSubjects, setOpenSubjects] = useState<Record<number, boolean>>(() => {
     const initialState: Record<number, boolean> = {};
-    subjects.forEach((s, idx) => {
-      // Only keep the first subject open initially, keep all others collapsed
-      initialState[s.id] = idx === 0;
+    subjects.forEach((s) => {
+      // Keep all subjects collapsed by default - no huge 40-chapter spread on initial load
+      initialState[s.id] = false;
     });
     return initialState;
   });
@@ -69,7 +69,7 @@ export default function ExamSubjectsClient({
       setOpenSubjects(next);
     } else {
       const next: Record<number, boolean> = {};
-      subjects.forEach((s, idx) => { next[s.id] = idx === 0; });
+      subjects.forEach((s) => { next[s.id] = false; });
       setOpenSubjects(next);
     }
   };

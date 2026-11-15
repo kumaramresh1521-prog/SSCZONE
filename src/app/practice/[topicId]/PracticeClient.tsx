@@ -742,7 +742,7 @@ export default function PracticeClient({
 
       <div className="flex-1 overflow-y-auto p-3 space-y-3">
         {fullSyllabus.map((sub) => {
-          const isSubOpen = openSubjects[sub.id] ?? true;
+          const isSubOpen = openSubjects[sub.id] ?? false;
           const rawTopics = (sub.topics || []).filter((t: any) =>
             t.title.toLowerCase().includes(searchQuery.toLowerCase())
           );

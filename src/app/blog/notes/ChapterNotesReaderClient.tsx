@@ -39,6 +39,8 @@ import {
   HelpCircle,
   Maximize2,
   SlidersHorizontal,
+  Languages,
+  Globe,
 } from "lucide-react";
 import toast from "react-hot-toast";
 import type { ChapterNote, SubjectMeta } from "@/lib/chapter-notes-types";
@@ -93,6 +95,10 @@ export default function ChapterNotesReaderClient({
 
   // Active filters & selection
   const [selectedSubjectId, setSelectedSubjectId] = useState<string>(() => {
+    if (defaultSlug) {
+      const match = initialNotes.find((n) => n.slug === defaultSlug);
+      if (match?.subject_id) return match.subject_id;
+    }
     return searchParams.get("subject") || "physics";
   });
   const [activeTab, setActiveTab] = useState<"chapters" | "guides">("chapters");
@@ -100,6 +106,32 @@ export default function ChapterNotesReaderClient({
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState<boolean>(false);
   const [fontSize, setFontSize] = useState<"normal" | "large" | "xlarge">("normal");
   const [copied, setCopied] = useState<boolean>(false);
+  const [langMode, setLangMode] = useState<"bilingual" | "english" | "hindi">("bilingual");
+
+  // Restore user reading language preference from localStorage (CBT PYQ standard)
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem("ssczone_reader_lang") as "bilingual" | "english" | "hindi" | null;
+      if (saved && ["bilingual", "english", "hindi"].includes(saved)) {
+        setLangMode(saved);
+      }
+    } catch {}
+  }, []);
+
+  const handleLanguageChange = (mode: "bilingual" | "english" | "hindi") => {
+    setLangMode(mode);
+    try {
+      localStorage.setItem("ssczone_reader_lang", mode);
+    } catch {}
+    toast.success(
+      mode === "english"
+        ? "Medium: English"
+        : mode === "hindi"
+        ? "माध्यम: हिन्दी"
+        : "Medium: Bilingual (English + हिन्दी)",
+      { id: "reader-lang-toast", duration: 1500 }
+    );
+  };
 
   // Active note slug
   const [activeSlug, setActiveSlug] = useState<string>(() => {
@@ -128,7 +160,7 @@ export default function ChapterNotesReaderClient({
   const subjectNotes = useMemo(() => {
     return initialNotes
       .filter((n) => {
-        if (!n.is_active) return false;
+        if (!n.is_active && n.slug !== activeSlug) return false;
         if (activeTab === "guides") {
           return n.type === "educational_guide";
         }
@@ -161,6 +193,18 @@ export default function ChapterNotesReaderClient({
     return subjectNotes[0] || initialNotes[0] || null;
   }, [initialNotes, activeSlug, subjectNotes]);
 
+  // Active Note Body Content (English, Hindi, or Bilingual)
+  const currentBodyContent = useMemo(() => {
+    if (!currentNote) return "";
+    if (langMode === "english" && currentNote.english_content) {
+      return currentNote.english_content;
+    }
+    if (langMode === "hindi" && currentNote.hindi_content) {
+      return currentNote.hindi_content;
+    }
+    return currentNote.content;
+  }, [currentNote, langMode]);
+
   // Next & Previous chapters
   const currentIndex = useMemo(() => {
     if (!currentNote) return -1;
@@ -169,6 +213,38 @@ export default function ChapterNotesReaderClient({
 
   const prevChapter = currentIndex > 0 ? subjectNotes[currentIndex - 1] : null;
   const nextChapter = currentIndex >= 0 && currentIndex < subjectNotes.length - 1 ? subjectNotes[currentIndex + 1] : null;
+
+  // Interactive MCQ Option Click Delegation (Instant Answer Feedback)
+  const handleContentClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    const target = (e.target as HTMLElement).closest<HTMLElement>(".quiz-option");
+    if (!target) return;
+
+    const quizCard = target.closest<HTMLElement>(".quiz-card");
+    if (!quizCard) return;
+
+    const allOptions = quizCard.querySelectorAll<HTMLElement>(".quiz-option");
+
+    // Determine correctness via data-is-correct
+    const isCorrect = target.getAttribute("data-is-correct") === "true";
+
+    // Reset previous option classes on this card
+    allOptions.forEach((opt) => {
+      opt.classList.remove("selected-correct", "selected-wrong", "highlight-correct");
+    });
+
+    if (isCorrect) {
+      target.classList.add("selected-correct");
+    } else {
+      target.classList.add("selected-wrong");
+      allOptions.forEach((opt) => {
+        if (opt.getAttribute("data-is-correct") === "true") {
+          opt.classList.add("highlight-correct");
+        }
+      });
+    }
+
+    quizCard.classList.add("answered");
+  };
 
   // Handle switching subject
   const handleSelectSubject = (subjId: string) => {
@@ -238,9 +314,9 @@ export default function ChapterNotesReaderClient({
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col font-sans antialiased selection:bg-blue-100 selection:text-blue-900">
       
-      {/* ── Top Header / Breadcrumb Bar ── */}
-      <div className="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-2xs">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
+      {/* ── Top Header / Breadcrumb Bar (Sticky below UserNav) ── */}
+      <div className="bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-[57px] sm:top-[61px] z-30 shadow-2xs">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex items-center justify-between gap-3 sm:gap-4">
           
           {/* Left: Breadcrumbs & Mobile Trigger */}
           <div className="flex items-center gap-2 overflow-hidden">
@@ -264,7 +340,50 @@ export default function ChapterNotesReaderClient({
           </div>
 
           {/* Right: Quick Reader Actions */}
-          <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+          <div className="flex items-center gap-1.5 sm:gap-2 shrink-0 flex-wrap">
+            {/* PYQ CBT Language Switcher */}
+            <div className="flex items-center gap-1.5 shrink-0">
+              <span className="text-xs font-bold text-slate-500 hidden sm:inline-flex items-center gap-1">
+                <Languages className="w-3.5 h-3.5 text-blue-600" />
+                <span>Language:</span>
+              </span>
+              <div className="flex items-center gap-1 bg-white p-0.5 rounded-lg border border-slate-300 shadow-2xs shrink-0">
+                <button
+                  onClick={() => handleLanguageChange("english")}
+                  className={`px-2.5 py-1 text-[11px] font-bold rounded transition-all cursor-pointer whitespace-nowrap ${
+                    langMode === "english"
+                      ? "bg-blue-700 text-white shadow-xs"
+                      : "text-slate-600 hover:bg-slate-100"
+                  }`}
+                  title="Official English medium"
+                >
+                  English
+                </button>
+                <button
+                  onClick={() => handleLanguageChange("hindi")}
+                  className={`px-2.5 py-1 text-[11px] font-bold rounded transition-all cursor-pointer whitespace-nowrap ${
+                    langMode === "hindi"
+                      ? "bg-blue-700 text-white shadow-xs"
+                      : "text-slate-600 hover:bg-slate-100"
+                  }`}
+                  title="हिन्दी माध्यम"
+                >
+                  हिन्दी
+                </button>
+                <button
+                  onClick={() => handleLanguageChange("bilingual")}
+                  className={`px-2.5 py-1 text-[11px] font-bold rounded transition-all cursor-pointer whitespace-nowrap ${
+                    langMode === "bilingual"
+                      ? "bg-blue-700 text-white shadow-xs"
+                      : "text-slate-600 hover:bg-slate-100"
+                  }`}
+                  title="Bilingual mode (English + हिन्दी)"
+                >
+                  Bilingual
+                </button>
+              </div>
+            </div>
+
             {/* Font size picker */}
             <div className="hidden sm:flex items-center bg-slate-100 rounded-xl p-0.5 border border-slate-200 text-xs font-bold text-slate-600">
               <button
@@ -534,12 +653,6 @@ export default function ChapterNotesReaderClient({
                     </span>
                   )}
 
-                  {currentNote.exam_tag && (
-                    <span className="px-2.5 py-1 rounded-xl text-xs font-bold bg-amber-500/10 text-amber-700 border border-amber-500/20">
-                      {currentNote.exam_tag}
-                    </span>
-                  )}
-
                   <span className="flex items-center gap-1 text-xs text-slate-500 font-semibold ml-auto">
                     <Clock className="w-3.5 h-3.5 text-slate-400" />
                     <span>{currentNote.read_time || "6 min read"}</span>
@@ -548,18 +661,25 @@ export default function ChapterNotesReaderClient({
 
                 {/* Primary Title (H1) */}
                 <h1 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight">
-                  {currentNote.title}
+                  {langMode === "hindi" && currentNote.hindi_title ? currentNote.hindi_title : currentNote.title}
                 </h1>
 
-                {/* Hindi Subtitle */}
-                {currentNote.hindi_title && (
+                {/* Subtitle based on language mode */}
+                {langMode === "hindi" ? (
+                  <p className="text-sm sm:text-base font-bold text-slate-500 flex items-center gap-2">
+                    <span className="px-2 py-0.5 rounded-md bg-blue-50 text-blue-700 text-xs font-black uppercase border border-blue-200">
+                      English
+                    </span>
+                    <span>{currentNote.title}</span>
+                  </p>
+                ) : currentNote.hindi_title && langMode !== "english" ? (
                   <p className="text-base sm:text-lg font-bold text-slate-500 flex items-center gap-2">
                     <span className="px-2 py-0.5 rounded-md bg-slate-100 text-slate-600 text-xs font-black uppercase">
-                      हिंदी
+                      हिन्दी
                     </span>
                     <span>{currentNote.hindi_title}</span>
                   </p>
-                )}
+                ) : null}
 
                 {/* Editorial Metadata info row */}
                 <div className="flex flex-wrap items-center gap-4 text-xs text-slate-400 font-medium pt-2">
@@ -568,22 +688,9 @@ export default function ChapterNotesReaderClient({
                     <span>Verified by SSCZone Subject Matter Experts</span>
                   </span>
                   <span>•</span>
-                  <span>Updated for SSC CGL / CHSL 2026 syllabus</span>
+                  <span>Comprehensive Study Notes & Practice MCQs</span>
                 </div>
               </header>
-
-              {/* Fast Revision Takeaways / Exam Crux Box */}
-              {currentNote.excerpt && (
-                <div className="bg-gradient-to-r from-blue-50/80 via-indigo-50/50 to-slate-50 border border-blue-200/80 rounded-2xl p-5 shadow-2xs">
-                  <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-blue-800 mb-1.5">
-                    <Sparkles className="w-4 h-4 text-amber-500 fill-amber-500" />
-                    <span>Chapter Quick Crux & Exam Value</span>
-                  </div>
-                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-medium">
-                    {currentNote.excerpt}
-                  </p>
-                </div>
-              )}
 
               {/* Cover Image (if available) */}
               {currentNote.image_url && (
@@ -598,8 +705,9 @@ export default function ChapterNotesReaderClient({
 
               {/* ── Main Rich Content Body ── */}
               <div
-                className={`chapter-notes-content max-w-none ${fontSizeClass}`}
-                dangerouslySetInnerHTML={{ __html: currentNote.content }}
+                className={`chapter-notes-content lang-mode-${langMode} max-w-none ${fontSizeClass}`}
+                onClick={handleContentClick}
+                dangerouslySetInnerHTML={{ __html: currentBodyContent }}
               />
 
               {/* ── Chapter Sequential Navigation Cards ── */}
@@ -664,7 +772,7 @@ export default function ChapterNotesReaderClient({
                     className="inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-500 px-5 py-3 text-xs font-black text-white shadow-lg shadow-blue-900/50 transition-all cursor-pointer"
                   >
                     <Zap className="w-4 h-4 text-amber-300 fill-amber-300" />
-                    <span>Start Chapter Drill →</span>
+                    <span>Start Practice Test →</span>
                   </Link>
                 </div>
               </div>
@@ -724,6 +832,40 @@ export default function ChapterNotesReaderClient({
                   </option>
                 ))}
               </select>
+            </div>
+
+            {/* Language Selector for mobile (PYQ CBT Standard) */}
+            <div className="mt-2.5 flex items-center justify-between bg-slate-50 border border-slate-200 rounded-xl px-3 py-2">
+              <span className="text-xs font-bold text-slate-700 flex items-center gap-1.5">
+                <Languages className="w-3.5 h-3.5 text-blue-600" />
+                <span>Language (माध्यम):</span>
+              </span>
+              <div className="flex items-center gap-1 bg-white p-0.5 rounded-lg border border-slate-300 shadow-2xs">
+                <button
+                  onClick={() => handleLanguageChange("english")}
+                  className={`px-2.5 py-1 text-[11px] font-bold rounded transition-all cursor-pointer ${
+                    langMode === "english" ? "bg-blue-700 text-white shadow-xs" : "text-slate-600 hover:bg-slate-100"
+                  }`}
+                >
+                  English
+                </button>
+                <button
+                  onClick={() => handleLanguageChange("hindi")}
+                  className={`px-2.5 py-1 text-[11px] font-bold rounded transition-all cursor-pointer ${
+                    langMode === "hindi" ? "bg-blue-700 text-white shadow-xs" : "text-slate-600 hover:bg-slate-100"
+                  }`}
+                >
+                  हिन्दी
+                </button>
+                <button
+                  onClick={() => handleLanguageChange("bilingual")}
+                  className={`px-2.5 py-1 text-[11px] font-bold rounded transition-all cursor-pointer ${
+                    langMode === "bilingual" ? "bg-blue-700 text-white shadow-xs" : "text-slate-600 hover:bg-slate-100"
+                  }`}
+                >
+                  Bilingual
+                </button>
+              </div>
             </div>
 
             {/* Chapter items */}
@@ -795,6 +937,115 @@ export default function ChapterNotesReaderClient({
         .chapter-notes-content li {
           margin-bottom: 0.35rem;
         }
+        .chapter-notes-content .sub {
+          font-size: 0.925rem;
+          color: #64748b;
+          margin-bottom: 1rem;
+        }
+        .chapter-notes-content .note {
+          background: #fffbeb;
+          border-left: 4px solid #d97706;
+          padding: 0.85rem 1.15rem;
+          border-radius: 0.5rem;
+          margin: 1.25rem 0;
+          color: #92400e;
+          font-size: 0.925rem;
+          line-height: 1.65;
+        }
+        .chapter-notes-content .note b,
+        .chapter-notes-content .note strong {
+          color: #78350f;
+        }
+        .chapter-notes-content .tbl {
+          overflow-x: auto;
+          margin: 1.5rem 0;
+          border-radius: 0.75rem;
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+        }
+        .chapter-notes-content .tbl table {
+          border-collapse: collapse;
+          width: 100%;
+          border: 1px solid #e2e8f0;
+          border-radius: 0.75rem;
+          overflow: hidden;
+          background: #ffffff;
+        }
+        .chapter-notes-content .tbl th {
+          background: #0f766e;
+          color: #ffffff;
+          padding: 0.75rem 1rem;
+          text-align: left;
+          font-weight: 700;
+          border: 1px solid #0d9488;
+          font-size: 0.9rem;
+        }
+        .chapter-notes-content .tbl td {
+          border: 1px solid #e2e8f0;
+          padding: 0.75rem 1rem;
+          text-align: left;
+          vertical-align: top;
+          color: #334155;
+          font-size: 0.88rem;
+          line-height: 1.6;
+        }
+        .chapter-notes-content .tbl tr:nth-child(even) {
+          background: #f8fafc;
+        }
+        .chapter-notes-content figure {
+          margin: 1.5rem 0;
+          padding: 1.25rem;
+          background: #f8fafc;
+          border: 1px solid #e2e8f0;
+          border-radius: 1rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .chapter-notes-content figcaption {
+          text-align: center;
+          font-size: 0.85rem;
+          color: #64748b;
+          font-weight: 600;
+          margin-top: 0.75rem;
+        }
+        .chapter-notes-content .dg {
+          width: 100%;
+          max-width: 600px;
+          height: auto;
+          color: #1e293b;
+        }
+        .chapter-notes-content .dg text {
+          fill: currentColor;
+          font-size: 13px;
+          font-family: inherit;
+        }
+        .chapter-notes-content .dg .l {
+          fill: none;
+          stroke: currentColor;
+          stroke-width: 1.5;
+        }
+        .chapter-notes-content .dg .a {
+          stroke: #0f766e;
+          fill: none;
+          stroke-width: 3;
+        }
+        .chapter-notes-content .dg .b {
+          stroke: #d97706;
+          fill: none;
+          stroke-width: 3;
+        }
+        .chapter-notes-content .dg .f {
+          fill: #0f766e;
+        }
+        .chapter-notes-content .dg .s {
+          fill: #f0fdfa;
+          stroke: #0f766e;
+          stroke-width: 2;
+        }
+        .lang-mode-bilingual .figure-hi {
+          display: none !important;
+        }
+
         .notes-table {
           width: 100%;
           border-collapse: collapse;
@@ -856,15 +1107,328 @@ export default function ChapterNotesReaderClient({
           font-weight: bold;
         }
         .note-intro-card {
-          background: #f8fafc;
-          border: 1px solid #e2e8f0;
+          background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+          border: 1px solid #cbd5e1;
+          border-left: 5px solid #2563eb;
           border-radius: 1rem;
-          padding: 1rem 1.25rem;
-          margin-bottom: 1.5rem;
+          padding: 1.25rem 1.5rem;
+          margin-bottom: 2rem;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
         }
         .note-intro-card h3 {
           margin-top: 0;
+          color: #1e293b;
+          font-size: 1.15rem;
+          font-weight: 800;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+        .quiz-card {
+          background: #ffffff;
+          border: 1px solid #e2e8f0;
+          border-radius: 1rem;
+          padding: 1.25rem 1.5rem;
+          margin: 1.25rem 0 1.5rem 0;
+          box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.06);
+          transition: all 0.2s ease;
+        }
+        .quiz-card:hover {
+          border-color: #cbd5e1;
+          box-shadow: 0 6px 16px -4px rgba(0, 0, 0, 0.08);
+        }
+        .quiz-badge {
+          display: inline-block;
+          background: #eff6ff;
+          color: #2563eb;
+          font-weight: 800;
+          font-size: 0.75rem;
+          padding: 0.25rem 0.65rem;
+          border-radius: 0.375rem;
+          border: 1px solid #bfdbfe;
+          margin-bottom: 0.75rem;
+        }
+        .quiz-question {
+          font-size: 1rem;
+          font-weight: 700;
           color: #0f172a;
+          margin-bottom: 0.85rem;
+          line-height: 1.5;
+        }
+        .quiz-options {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+          gap: 0.6rem;
+          margin: 0.75rem 0 1rem 0;
+        }
+        .quiz-option {
+          position: relative;
+          background: #f8fafc;
+          border: 1.5px solid #e2e8f0;
+          border-radius: 0.625rem;
+          padding: 0.75rem 1rem;
+          font-size: 0.9rem;
+          color: #1e293b;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          gap: 0.65rem;
+          cursor: pointer;
+          user-select: none;
+          transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .quiz-option:hover {
+          background: #eff6ff;
+          border-color: #3b82f6;
+          color: #1d4ed8;
+          transform: translateY(-1px);
+          box-shadow: 0 2px 8px -2px rgba(59, 130, 246, 0.2);
+        }
+        .quiz-option:active {
+          transform: translateY(0);
+        }
+        .quiz-option-key {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 1.6rem;
+          height: 1.6rem;
+          border-radius: 9999px;
+          background: #e2e8f0;
+          color: #334155;
+          font-size: 0.8rem;
+          font-weight: 800;
+          flex-shrink: 0;
+          transition: all 0.18s ease;
+        }
+        .quiz-option:hover .quiz-option-key {
+          background: #dbeafe;
+          color: #1d4ed8;
+        }
+
+        /* ── Selected Correct State ── */
+        .quiz-option.selected-correct {
+          background: #ecfdf5 !important;
+          border-color: #10b981 !important;
+          color: #065f46 !important;
+          font-weight: 700 !important;
+          box-shadow: 0 0 0 1.5px #10b981, 0 4px 12px -2px rgba(16, 185, 129, 0.25) !important;
+        }
+        .quiz-option.selected-correct .quiz-option-key {
+          background: #10b981 !important;
+          color: #ffffff !important;
+        }
+        .quiz-option.selected-correct::after {
+          content: "✓ Correct";
+          margin-left: auto;
+          font-size: 0.75rem;
+          font-weight: 800;
+          color: #059669;
+          background: #d1fae5;
+          padding: 0.2rem 0.55rem;
+          border-radius: 9999px;
+          border: 1px solid #a7f3d0;
+        }
+
+        /* ── Selected Wrong State ── */
+        .quiz-option.selected-wrong {
+          background: #fef2f2 !important;
+          border-color: #ef4444 !important;
+          color: #991b1b !important;
+          font-weight: 700 !important;
+          box-shadow: 0 0 0 1.5px #ef4444, 0 4px 12px -2px rgba(239, 68, 68, 0.25) !important;
+        }
+        .quiz-option.selected-wrong .quiz-option-key {
+          background: #ef4444 !important;
+          color: #ffffff !important;
+        }
+        .quiz-option.selected-wrong::after {
+          content: "✗ Incorrect";
+          margin-left: auto;
+          font-size: 0.75rem;
+          font-weight: 800;
+          color: #dc2626;
+          background: #fee2e2;
+          padding: 0.2rem 0.55rem;
+          border-radius: 9999px;
+          border: 1px solid #fecaca;
+        }
+
+        /* ── Highlight Correct Option (when wrong was chosen) ── */
+        .quiz-option.highlight-correct {
+          background: #f0fdf4 !important;
+          border-color: #10b981 !important;
+          color: #065f46 !important;
+          font-weight: 700 !important;
+          box-shadow: 0 0 0 1.5px #10b981, 0 2px 8px -2px rgba(16, 185, 129, 0.2) !important;
+        }
+        .quiz-option.highlight-correct .quiz-option-key {
+          background: #10b981 !important;
+          color: #ffffff !important;
+        }
+        .quiz-option.highlight-correct::after {
+          content: "✓ Correct Answer";
+          margin-left: auto;
+          font-size: 0.75rem;
+          font-weight: 800;
+          color: #059669;
+          background: #d1fae5;
+          padding: 0.2rem 0.55rem;
+          border-radius: 9999px;
+          border: 1px solid #a7f3d0;
+        }
+
+        .quiz-card.answered .quiz-option:not(.selected-correct):not(.selected-wrong):not(.highlight-correct) {
+          opacity: 0.7;
+        }
+
+        .quiz-reveal {
+          margin-top: 1rem;
+          border-top: 1px dashed #cbd5e1;
+          padding-top: 0.85rem;
+        }
+        .quiz-reveal summary {
+          cursor: pointer;
+          font-weight: 700;
+          color: #2563eb;
+          font-size: 0.875rem;
+          user-select: none;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.4rem;
+          padding: 0.35rem 0.75rem;
+          border-radius: 0.5rem;
+          background: #f1f5f9;
+          border: 1px solid #cbd5e1;
+          transition: all 0.15s ease;
+        }
+        .quiz-reveal summary:hover {
+          background: #eff6ff;
+          border-color: #93c5fd;
+          color: #1d4ed8;
+        }
+        .quiz-reveal[open] summary {
+          background: #eff6ff;
+          border-color: #bfdbfe;
+          color: #1d4ed8;
+        }
+        .quiz-explanation {
+          margin-top: 0.85rem;
+          background: #f8fafc;
+          border: 1px solid #e2e8f0;
+          border-left: 4px solid #10b981;
+          padding: 1rem 1.25rem;
+          border-radius: 0.5rem;
+          color: #1e293b;
+          font-size: 0.875rem;
+          line-height: 1.65;
+        }
+        .hindi-note {
+          background: #f8fafc;
+          border-left: 3px solid #3b82f6;
+          padding: 0.6rem 1rem;
+          margin: 0.5rem 0 1.25rem 0;
+          border-radius: 0 0.5rem 0.5rem 0;
+          font-size: 0.925rem;
+          line-height: 1.7;
+          color: #334155;
+        }
+
+        /* ── Dynamic Language Switcher Rules (PYQ CBT Standard) ── */
+        .lang-mode-english .lang-hi {
+          display: none !important;
+        }
+        .lang-mode-hindi .lang-en {
+          display: none !important;
+        }
+        .lang-mode-bilingual .lang-en {
+          display: block;
+        }
+        .lang-mode-bilingual .lang-hi {
+          display: block;
+        }
+
+        /* Inline spans for bilingual headings, options & labels */
+        .lang-mode-english span.lang-hi {
+          display: none !important;
+        }
+        .lang-mode-hindi span.lang-en {
+          display: none !important;
+        }
+        .lang-mode-bilingual span.lang-en {
+          display: inline !important;
+        }
+        .lang-mode-bilingual span.lang-hi {
+          display: inline !important;
+        }
+
+        /* In bilingual mode, inside table cells: English on top, Hindi underneath */
+        .lang-mode-bilingual td .lang-en,
+        .lang-mode-bilingual td div.lang-en {
+          display: block !important;
+        }
+        .lang-mode-bilingual td .lang-hi,
+        .lang-mode-bilingual td div.lang-hi {
+          display: block !important;
+          margin-top: 6px;
+          padding-top: 5px;
+          border-top: 1px dashed #e2e8f0;
+          color: #475569;
+          font-size: 0.88em;
+          line-height: 1.55;
+        }
+        .lang-mode-bilingual th .lang-en {
+          display: block !important;
+        }
+        .lang-mode-bilingual th .lang-hi {
+          display: block !important;
+          font-size: 0.84em;
+          font-weight: 500;
+          color: #cbd5e1;
+          margin-top: 2px;
+        }
+
+        .lang-card-en {
+          background: #ffffff;
+          border-left: 4px solid #2563eb;
+          padding: 1rem 1.25rem;
+          margin: 0.75rem 0 1rem 0;
+          border-radius: 0 0.75rem 0.75rem 0;
+          border-top: 1px solid #f1f5f9;
+          border-right: 1px solid #f1f5f9;
+          border-bottom: 1px solid #f1f5f9;
+        }
+        .lang-card-hi {
+          background: #fdfefe;
+          border-left: 4px solid #059669;
+          padding: 1rem 1.25rem;
+          margin: 0.75rem 0 1rem 0;
+          border-radius: 0 0.75rem 0.75rem 0;
+          border-top: 1px solid #f1f5f9;
+          border-right: 1px solid #f1f5f9;
+          border-bottom: 1px solid #f1f5f9;
+        }
+        .lang-chip {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.35rem;
+          font-size: 0.7rem;
+          font-weight: 800;
+          padding: 0.15rem 0.5rem;
+          border-radius: 0.375rem;
+          margin-bottom: 0.5rem;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+        }
+        .lang-chip.en {
+          background: #eff6ff;
+          color: #2563eb;
+          border: 1px solid #bfdbfe;
+        }
+        .lang-chip.hi {
+          background: #ecfdf5;
+          color: #059669;
+          border: 1px solid #a7f3d0;
         }
       `}</style>
 

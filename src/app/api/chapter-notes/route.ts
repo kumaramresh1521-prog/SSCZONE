@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import {
-  getChapterNotes,
-  getChapterNoteBySlug,
+  getChapterNotesAsync,
+  getChapterNoteBySlugAsync,
   ALL_SUBJECTS,
   getSubjectStats,
 } from "@/lib/chapter-notes-store";
@@ -19,7 +19,7 @@ export async function GET(req: NextRequest) {
 
     // Single note fetch by slug
     if (slug) {
-      const note = getChapterNoteBySlug(slug);
+      const note = await getChapterNoteBySlugAsync(slug);
       if (!note || !note.is_active) {
         return NextResponse.json({ error: "Chapter note not found or inactive" }, { status: 404 });
       }
@@ -27,7 +27,7 @@ export async function GET(req: NextRequest) {
     }
 
     // List of active chapter notes
-    const notes = getChapterNotes({
+    const notes = await getChapterNotesAsync({
       subject_id: subjectId || undefined,
       type: type || "all",
       search,

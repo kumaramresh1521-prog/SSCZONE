@@ -1,139 +1,84 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import {
   LayoutTemplate,
   Save,
-  Eye,
   Sparkles,
   Layers,
-  CheckCircle2,
   RotateCcw,
-  Smartphone,
-  Monitor,
-  Target,
-  FileSpreadsheet,
-  BrainCircuit,
-  ShieldCheck,
-  ArrowRight,
-  BookOpen
+  BookOpen,
+  Clock,
+  ExternalLink,
+  CheckCircle2,
+  ListFilter,
+  Eye,
+  Sliders,
+  Compass
 } from "lucide-react";
 import toast from "react-hot-toast";
-
-export interface HomepageConfig {
-  hero: {
-    badgeText: string;
-    headline: string;
-    highlightText: string;
-    description: string;
-    primaryBtnText: string;
-    primaryBtnLink: string;
-    secondaryBtnText: string;
-    secondaryBtnLink: string;
-  };
-  stats: Array<{ label: string; value: string }>;
-  stepsSection: {
-    title: string;
-    subtitle: string;
-    steps: Array<{ title: string; desc: string }>;
-  };
-  examsSection: {
-    title: string;
-    subtitle: string;
-    cards: Array<{ name: string; desc: string; link: string; badge: string }>;
-  };
-  ctaBanner: {
-    enabled: boolean;
-    title: string;
-    subtitle: string;
-    buttonText: string;
-    buttonLink: string;
-  };
-}
-
-const DEFAULT_HOMEPAGE_CONFIG: HomepageConfig = {
-  hero: {
-    badgeText: "Official Exam Syllabus Based Practice Platform",
-    headline: "Crack Competitive Exams With",
-    highlightText: "SSCZone",
-    description: "Practice topic-wise MCQs from standard reference books, attempt previous year test papers, and track your accuracy chapter by chapter.",
-    primaryBtnText: "Explore All Exams",
-    primaryBtnLink: "/exams",
-    secondaryBtnText: "Attempt PYQ Papers",
-    secondaryBtnLink: "/papers",
-  },
-  stats: [
-    { label: "Topic-wise MCQs", value: "10,000+" },
-    { label: "Previous Papers", value: "100+ PYQs" },
-    { label: "Detailed Solutions", value: "100% Explanations" },
-    { label: "Syllabus Covered", value: "Complete SSC Exams" },
-  ],
-  stepsSection: {
-    title: "3 Simple Steps to Master Any Exam",
-    subtitle: "Our structured approach ensures you never miss a single topic from official exam notifications.",
-    steps: [
-      {
-        title: "1. Select Official Exam Syllabus",
-        desc: "Browse through official exam syllabi categorized neatly into subjects and topic chapters.",
-      },
-      {
-        title: "2. Practice Chapter-by-Chapter",
-        desc: "Solve MCQs from standard reference books with instant answer explanations and solution hints.",
-      },
-      {
-        title: "3. Attempt Real Exam Papers",
-        desc: "Test your speed and accuracy in timed mock test environment with actual previous year papers.",
-      },
-    ],
-  },
-  examsSection: {
-    title: "Target Competitive Exams",
-    subtitle: "Select an exam and start syllabus-wise preparation",
-    cards: [
-      { name: "SSC CGL", desc: "Combined Graduate Level Tier-1 & Tier-2", link: "/exams", badge: "Graduation Level" },
-      { name: "SSC CHSL", desc: "Combined Higher Secondary Level Tier-1", link: "/exams", badge: "10+2 Level" },
-      { name: "SSC CPO & MTS", desc: "Central Police Organisation & Multi-Tasking Staff Practice", link: "/exams", badge: "All Levels" },
-    ],
-  },
-  ctaBanner: {
-    enabled: true,
-    title: "Ready to Crack SSC CGL / CHSL 2026?",
-    subtitle: "Join thousands of serious aspirants practicing daily with structured chapter-wise drills.",
-    buttonText: "Start Free Practice Now 🚀",
-    buttonLink: "/exams",
-  }
-};
+import { HomepageConfig, DEFAULT_HOMEPAGE_CONFIG } from "@/lib/homepage-types";
 
 export default function AdminHomepageBuilder() {
   const [config, setConfig] = useState<HomepageConfig>(DEFAULT_HOMEPAGE_CONFIG);
-  const [activeTab, setActiveTab] = useState<"hero" | "stats" | "steps" | "exams" | "cta">("hero");
+  const [activeTab, setActiveTab] = useState<"hero" | "stats" | "target-exams" | "steps" | "exams" | "cta">("target-exams");
   const [saving, setSaving] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    try {
-      const saved = localStorage.getItem("ssczone_homepage_config");
-      if (saved) {
-        setConfig(JSON.parse(saved));
+    async function fetchConfig() {
+      try {
+        const res = await fetch("/api/admin/homepage");
+        if (res.ok) {
+          const data = await res.json();
+          setConfig({
+            ...DEFAULT_HOMEPAGE_CONFIG,
+            ...data,
+            targetExamsSection: {
+              ...DEFAULT_HOMEPAGE_CONFIG.targetExamsSection,
+              ...(data.targetExamsSection || {})
+            }
+          });
+        } else {
+          const saved = localStorage.getItem("ssczone_homepage_config");
+          if (saved) setConfig(JSON.parse(saved));
+        }
+      } catch (e) {
+        console.error("Failed to load homepage config:", e);
+        const saved = localStorage.getItem("ssczone_homepage_config");
+        if (saved) setConfig(JSON.parse(saved));
+      } finally {
+        setLoading(false);
       }
-    } catch (e) {
-      console.error("Failed to load homepage config:", e);
     }
+    fetchConfig();
   }, []);
 
-  function handleSave() {
+  async function handleSave() {
     setSaving(true);
     try {
+      const res = await fetch("/api/admin/homepage", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(config),
+      });
+
+      if (!res.ok) {
+        throw new Error("Failed to save to server");
+      }
+
       localStorage.setItem("ssczone_homepage_config", JSON.stringify(config));
-      setTimeout(() => {
-        setSaving(false);
-        toast.success("Homepage UI updated live successfully! 🎉", {
-          icon: "🚀",
-          style: { borderRadius: "12px", background: "#065f46", color: "#fff" }
-        });
-      }, 400);
+      toast.success("Homepage published live successfully! 🎉", {
+        icon: "🚀",
+        style: { borderRadius: "12px", background: "#065f46", color: "#fff" }
+      });
     } catch (e) {
+      console.error(e);
+      localStorage.setItem("ssczone_homepage_config", JSON.stringify(config));
+      toast.success("Saved to local browser storage.");
+    } finally {
       setSaving(false);
-      toast.error("Failed to save settings");
     }
   }
 
@@ -157,7 +102,7 @@ export default function AdminHomepageBuilder() {
             <span>Homepage UI Content &amp; Section Manager</span>
           </h1>
           <p className="text-xs text-slate-400 mt-1">
-            Customize headlines, buttons, stats, steps, and featured cards on the main public homepage.
+            Customize hero headline, stats, target examinations directory, upcoming roadmaps, and bottom CTAs.
           </p>
         </div>
 
@@ -184,11 +129,12 @@ export default function AdminHomepageBuilder() {
       {/* Navigation Tabs for Sections */}
       <div className="flex items-center gap-1.5 overflow-x-auto rounded-2xl bg-slate-900/90 p-1.5 border border-slate-800">
         {[
-          { id: "hero", label: "🌟 1. Hero Header Banner" },
-          { id: "stats", label: "📊 2. Stats Counters" },
-          { id: "steps", label: "🪜 3. 3-Step Guide" },
-          { id: "exams", label: "🎯 4. Target Exam Cards" },
-          { id: "cta", label: "🚀 5. Bottom CTA Banner" },
+          { id: "target-exams", label: "🎯 1. Target Exams & Roadmap" },
+          { id: "hero", label: "🌟 2. Hero Header Banner" },
+          { id: "stats", label: "📊 3. Stats Counters" },
+          { id: "steps", label: "🪜 4. 3-Step Guide" },
+          { id: "exams", label: "📚 5. Exam Feature Cards" },
+          { id: "cta", label: "🚀 6. Bottom CTA Banner" },
         ].map((tab) => (
           <button
             key={tab.id}
@@ -204,7 +150,281 @@ export default function AdminHomepageBuilder() {
         ))}
       </div>
 
-      {/* Section 1: Hero Header Editor */}
+      {/* Section: Target Exams & Upcoming Roadmap Manager */}
+      {activeTab === "target-exams" && (
+        <div className="space-y-6 animate-fadeIn">
+          {/* Main Controls Card */}
+          <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-xs space-y-5">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-gray-100 pb-4">
+              <div>
+                <h3 className="text-sm font-black text-gray-900 uppercase tracking-wider flex items-center gap-2">
+                  <Compass className="h-4 w-4 text-blue-600" />
+                  <span>Target SSC Examinations &amp; Upcoming Shift Roadmap</span>
+                </h3>
+                <p className="text-xs text-gray-500 mt-0.5">
+                  Manage the public homepage section showing active SSC target exams and upcoming shift curation cards.
+                </p>
+              </div>
+
+              {/* Master Section Toggle */}
+              <label className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-xl border border-gray-200 bg-gray-50 cursor-pointer hover:bg-gray-100 transition-colors">
+                <input
+                  type="checkbox"
+                  checked={config.targetExamsSection?.enabled !== false}
+                  onChange={(e) =>
+                    setConfig((prev) => ({
+                      ...prev,
+                      targetExamsSection: {
+                        ...prev.targetExamsSection,
+                        enabled: e.target.checked,
+                      },
+                    }))
+                  }
+                  className="h-4 w-4 rounded-md border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer"
+                />
+                <span className="text-xs font-bold text-gray-800">
+                  {config.targetExamsSection?.enabled !== false ? "Section Enabled (Visible)" : "Section Disabled (Hidden)"}
+                </span>
+              </label>
+            </div>
+
+            {/* Section Header Fields */}
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="sm:col-span-2">
+                <label className="block text-xs font-bold text-gray-700 mb-1">
+                  Section Main Heading
+                </label>
+                <input
+                  type="text"
+                  value={config.targetExamsSection?.title || ""}
+                  onChange={(e) =>
+                    setConfig((prev) => ({
+                      ...prev,
+                      targetExamsSection: {
+                        ...prev.targetExamsSection,
+                        title: e.target.value,
+                      },
+                    }))
+                  }
+                  placeholder="e.g. SSC Target Examinations"
+                  className="w-full rounded-xl border border-gray-200 bg-gray-50 p-2.5 text-xs font-semibold text-gray-900 focus:bg-white focus:border-blue-500 focus:outline-hidden"
+                />
+              </div>
+
+              <div className="sm:col-span-2">
+                <label className="block text-xs font-bold text-gray-700 mb-1">
+                  Section Subtitle / Description
+                </label>
+                <textarea
+                  rows={2}
+                  value={config.targetExamsSection?.subtitle || ""}
+                  onChange={(e) =>
+                    setConfig((prev) => ({
+                      ...prev,
+                      targetExamsSection: {
+                        ...prev.targetExamsSection,
+                        subtitle: e.target.value,
+                      },
+                    }))
+                  }
+                  placeholder="e.g. Active exams are open for practice. Upcoming exams are progressively unlocked as shift papers are curated."
+                  className="w-full rounded-xl border border-gray-200 bg-gray-50 p-2.5 text-xs font-medium text-gray-900 focus:bg-white focus:border-blue-500 focus:outline-hidden"
+                />
+              </div>
+            </div>
+
+            {/* Upcoming Roadmap Container Settings */}
+            <div className="rounded-xl border border-amber-200/80 bg-amber-50/40 p-4 space-y-4">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-amber-200/60 pb-3">
+                <div className="flex items-center gap-2">
+                  <Clock className="h-4 w-4 text-amber-600" />
+                  <span className="text-xs font-bold text-amber-900">
+                    Upcoming SSC Examinations (In Preparation) Grid Settings
+                  </span>
+                </div>
+
+                <label className="inline-flex items-center gap-2 text-xs font-bold text-amber-900 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={config.targetExamsSection?.showUpcomingRoadmap !== false}
+                    onChange={(e) =>
+                      setConfig((prev) => ({
+                        ...prev,
+                        targetExamsSection: {
+                          ...prev.targetExamsSection,
+                          showUpcomingRoadmap: e.target.checked,
+                        },
+                      }))
+                    }
+                    className="h-4 w-4 rounded-md border-amber-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span>Show Upcoming Roadmap Grid</span>
+                </label>
+              </div>
+
+              <div className="grid gap-4 sm:grid-cols-3">
+                <div>
+                  <label className="block text-xs font-bold text-gray-700 mb-1">
+                    Card Status Badge Text
+                  </label>
+                  <input
+                    type="text"
+                    value={config.targetExamsSection?.upcomingBadgeText || ""}
+                    onChange={(e) =>
+                      setConfig((prev) => ({
+                        ...prev,
+                        targetExamsSection: {
+                          ...prev.targetExamsSection,
+                          upcomingBadgeText: e.target.value,
+                        },
+                      }))
+                    }
+                    placeholder="e.g. ⏳ Launching Soon"
+                    className="w-full rounded-xl border border-gray-200 bg-white p-2.5 text-xs font-semibold text-gray-900 focus:border-blue-500 focus:outline-hidden"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-bold text-gray-700 mb-1">
+                    Card Footer Note
+                  </label>
+                  <input
+                    type="text"
+                    value={config.targetExamsSection?.upcomingFooterText || ""}
+                    onChange={(e) =>
+                      setConfig((prev) => ({
+                        ...prev,
+                        targetExamsSection: {
+                          ...prev.targetExamsSection,
+                          upcomingFooterText: e.target.value,
+                        },
+                      }))
+                    }
+                    placeholder="e.g. Curating shift questions"
+                    className="w-full rounded-xl border border-gray-200 bg-white p-2.5 text-xs font-semibold text-gray-900 focus:border-blue-500 focus:outline-hidden"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-bold text-gray-700 mb-1">
+                    Max Upcoming Exams to Show
+                  </label>
+                  <input
+                    type="number"
+                    min={0}
+                    max={50}
+                    value={config.targetExamsSection?.maxUpcomingDisplay ?? 0}
+                    onChange={(e) =>
+                      setConfig((prev) => ({
+                        ...prev,
+                        targetExamsSection: {
+                          ...prev.targetExamsSection,
+                          maxUpcomingDisplay: parseInt(e.target.value) || 0,
+                        },
+                      }))
+                    }
+                    className="w-full rounded-xl border border-gray-200 bg-white p-2.5 text-xs font-bold text-gray-900 focus:border-blue-500 focus:outline-hidden"
+                  />
+                  <p className="text-[10px] text-gray-500 mt-1">
+                    Enter <code className="bg-gray-200 px-1 rounded">0</code> to show all (currently 14), or enter e.g. <code className="bg-gray-200 px-1 rounded">6</code> to limit length.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Quick Action: Exam Management in Admin */}
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-xl border border-blue-100 bg-blue-50/50">
+              <div>
+                <h4 className="text-xs font-bold text-blue-900">
+                  Want to move an upcoming exam into live practice or change exam status?
+                </h4>
+                <p className="text-[11px] text-blue-700 mt-0.5">
+                  You can toggle any exam between Active (Live Practice) and Inactive (Upcoming Roadmap) in the Exams Manager.
+                </p>
+              </div>
+
+              <Link
+                href="/admin/exams"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-blue-600 text-white text-xs font-bold hover:bg-blue-700 transition-colors shrink-0"
+              >
+                <span>Go to Exams Manager</span>
+                <ExternalLink className="h-3.5 w-3.5" />
+              </Link>
+            </div>
+          </div>
+
+          {/* Live Preview Box */}
+          <div className="rounded-2xl border border-gray-200 bg-slate-50 p-5 space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
+                <Eye className="h-3.5 w-3.5" />
+                <span>Live Landing Page Preview</span>
+              </span>
+              <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
+                config.targetExamsSection?.enabled !== false
+                  ? "bg-emerald-100 text-emerald-800"
+                  : "bg-rose-100 text-rose-800"
+              }`}>
+                {config.targetExamsSection?.enabled !== false ? "Visible on Homepage" : "Hidden from Homepage"}
+              </span>
+            </div>
+
+            {config.targetExamsSection?.enabled !== false ? (
+              <div className="rounded-xl border border-slate-200 bg-white p-5 space-y-4">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <h2 className="text-lg font-bold text-slate-900">
+                      {config.targetExamsSection?.title || "SSC Target Examinations"}
+                    </h2>
+                    <p className="text-xs text-slate-500 mt-0.5">
+                      {config.targetExamsSection?.subtitle || "Active exams are open for practice."}
+                    </p>
+                  </div>
+                  <span className="text-xs font-semibold text-blue-600">View All Syllabi →</span>
+                </div>
+
+                {config.targetExamsSection?.showUpcomingRoadmap !== false && (
+                  <div className="space-y-2 pt-2 border-t border-slate-100">
+                    <div className="flex items-center justify-between text-xs text-slate-500 font-bold uppercase">
+                      <span>
+                        Upcoming SSC Examinations • In Preparation (
+                        {config.targetExamsSection?.maxUpcomingDisplay && config.targetExamsSection.maxUpcomingDisplay > 0
+                          ? `Showing top ${config.targetExamsSection.maxUpcomingDisplay}`
+                          : "14"}
+                        )
+                      </span>
+                      <span className="text-[10px] text-slate-400 font-normal">Admin unlocks exams as verified</span>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
+                      {["SSC CHSL", "SSC CPO", "SSC MTS"].map((sample, idx) => (
+                        <div key={idx} className="rounded-lg border border-slate-200 bg-slate-50 p-3 space-y-2">
+                          <div className="flex items-center justify-between">
+                            <span className="font-bold text-slate-800">{sample}</span>
+                            <span className="rounded-full bg-slate-200/80 px-1.5 py-0.5 text-[9px] font-semibold text-slate-600">
+                              {config.targetExamsSection?.upcomingBadgeText || "⏳ Launching Soon"}
+                            </span>
+                          </div>
+                          <div className="flex justify-between text-[10px] text-slate-400 pt-1 border-t border-slate-200">
+                            <span>{config.targetExamsSection?.upcomingFooterText || "Curating shift questions"}</span>
+                            <span>Roadmap 2026</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <div className="p-6 text-center text-xs text-slate-400 bg-white rounded-xl border border-dashed border-slate-200">
+                Section is currently disabled. Toggle &quot;Section Enabled&quot; above to show on the public landing page.
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Section 2: Hero Header Editor */}
       {activeTab === "hero" && (
         <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-xs space-y-4 animate-fadeIn">
           <h3 className="text-sm font-black text-gray-900 uppercase tracking-wider flex items-center gap-2 border-b border-gray-100 pb-3">
@@ -262,7 +482,7 @@ export default function AdminHomepageBuilder() {
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-gray-700 mb-1">Primary Button Text</label>
+              <label className="block text-xs font-bold text-gray-700 mb-1">Primary Button Label</label>
               <input
                 type="text"
                 value={config.hero.primaryBtnText}
@@ -274,7 +494,7 @@ export default function AdminHomepageBuilder() {
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-gray-700 mb-1">Primary Button URL</label>
+              <label className="block text-xs font-bold text-gray-700 mb-1">Primary Button Link</label>
               <input
                 type="text"
                 value={config.hero.primaryBtnLink}
@@ -286,7 +506,7 @@ export default function AdminHomepageBuilder() {
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-gray-700 mb-1">Secondary Button Text</label>
+              <label className="block text-xs font-bold text-gray-700 mb-1">Secondary Button Label</label>
               <input
                 type="text"
                 value={config.hero.secondaryBtnText}
@@ -298,7 +518,7 @@ export default function AdminHomepageBuilder() {
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-gray-700 mb-1">Secondary Button URL</label>
+              <label className="block text-xs font-bold text-gray-700 mb-1">Secondary Button Link</label>
               <input
                 type="text"
                 value={config.hero.secondaryBtnLink}
@@ -312,20 +532,20 @@ export default function AdminHomepageBuilder() {
         </div>
       )}
 
-      {/* Section 2: Stats Counter Bar */}
+      {/* Section 3: Stats Counters */}
       {activeTab === "stats" && (
         <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-xs space-y-4 animate-fadeIn">
           <h3 className="text-sm font-black text-gray-900 uppercase tracking-wider flex items-center gap-2 border-b border-gray-100 pb-3">
-            <Target className="h-4 w-4 text-emerald-600" />
-            <span>Hero Stats Counter Badges (4 Badges)</span>
+            <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+            <span>Key Stats Badges</span>
           </h3>
 
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
             {config.stats.map((stat, idx) => (
-              <div key={idx} className="rounded-xl border border-gray-200 bg-gray-50/70 p-4 space-y-2">
-                <span className="text-[11px] font-black uppercase text-blue-700">Badge #{idx + 1}</span>
+              <div key={idx} className="rounded-xl border border-gray-200 bg-gray-50/60 p-4 space-y-2">
+                <span className="text-[11px] font-black uppercase text-gray-500">Badge #{idx + 1}</span>
                 <div>
-                  <label className="block text-xs font-bold text-gray-600 mb-1">Value / Numbers</label>
+                  <label className="block text-[11px] font-bold text-gray-600 mb-1">Stat Value</label>
                   <input
                     type="text"
                     value={stat.value}
@@ -334,11 +554,11 @@ export default function AdminHomepageBuilder() {
                       updated[idx].value = e.target.value;
                       setConfig((prev) => ({ ...prev, stats: updated }));
                     }}
-                    className="w-full rounded-lg border border-gray-200 bg-white p-2 text-xs font-extrabold text-gray-900"
+                    className="w-full rounded-lg border border-gray-200 bg-white p-2 text-xs font-bold text-blue-600"
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-bold text-gray-600 mb-1">Label / Title</label>
+                  <label className="block text-[11px] font-bold text-gray-600 mb-1">Stat Label</label>
                   <input
                     type="text"
                     value={stat.label}
@@ -356,7 +576,7 @@ export default function AdminHomepageBuilder() {
         </div>
       )}
 
-      {/* Section 3: 3 Steps Section */}
+      {/* Section 4: 3 Steps Section */}
       {activeTab === "steps" && (
         <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-xs space-y-4 animate-fadeIn">
           <h3 className="text-sm font-black text-gray-900 uppercase tracking-wider flex items-center gap-2 border-b border-gray-100 pb-3">
@@ -433,7 +653,7 @@ export default function AdminHomepageBuilder() {
         </div>
       )}
 
-      {/* Section 4: Target Exams Section */}
+      {/* Section 5: Featured Exam Category Cards */}
       {activeTab === "exams" && (
         <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-xs space-y-4 animate-fadeIn">
           <h3 className="text-sm font-black text-gray-900 uppercase tracking-wider flex items-center gap-2 border-b border-gray-100 pb-3">
@@ -446,11 +666,15 @@ export default function AdminHomepageBuilder() {
               <label className="block text-xs font-bold text-gray-700 mb-1">Section Title</label>
               <input
                 type="text"
-                value={config.examsSection.title}
+                value={config.examsSection?.title || ""}
                 onChange={(e) =>
                   setConfig((prev) => ({
                     ...prev,
-                    examsSection: { ...prev.examsSection, title: e.target.value }
+                    examsSection: {
+                      title: e.target.value,
+                      subtitle: prev.examsSection?.subtitle || "",
+                      cards: prev.examsSection?.cards || [],
+                    }
                   }))
                 }
                 className="w-full rounded-xl border border-gray-200 bg-gray-50 p-2.5 text-xs font-semibold text-slate-900 focus:bg-white focus:border-blue-500 focus:outline-hidden"
@@ -460,11 +684,15 @@ export default function AdminHomepageBuilder() {
               <label className="block text-xs font-bold text-gray-700 mb-1">Section Subtitle</label>
               <input
                 type="text"
-                value={config.examsSection.subtitle}
+                value={config.examsSection?.subtitle || ""}
                 onChange={(e) =>
                   setConfig((prev) => ({
                     ...prev,
-                    examsSection: { ...prev.examsSection, subtitle: e.target.value }
+                    examsSection: {
+                      title: prev.examsSection?.title || "",
+                      subtitle: e.target.value,
+                      cards: prev.examsSection?.cards || [],
+                    }
                   }))
                 }
                 className="w-full rounded-xl border border-gray-200 bg-gray-50 p-2.5 text-xs font-semibold text-slate-900 focus:bg-white focus:border-blue-500 focus:outline-hidden"
@@ -473,18 +701,22 @@ export default function AdminHomepageBuilder() {
           </div>
 
           <div className="grid gap-3 sm:grid-cols-3 pt-2">
-            {config.examsSection.cards.map((card, idx) => (
+            {(config.examsSection?.cards || []).map((card, idx) => (
               <div key={idx} className="rounded-xl border border-gray-200 bg-gray-50/60 p-4 space-y-2">
                 <span className="text-[11px] font-black uppercase text-purple-700">Card #{idx + 1}</span>
                 <input
                   type="text"
                   value={card.name}
                   onChange={(e) => {
-                    const updated = [...config.examsSection.cards];
-                    updated[idx].name = e.target.value;
+                    const updated = [...(config.examsSection?.cards || [])];
+                    updated[idx] = { ...updated[idx], name: e.target.value };
                     setConfig((prev) => ({
                       ...prev,
-                      examsSection: { ...prev.examsSection, cards: updated }
+                      examsSection: {
+                        title: prev.examsSection?.title || "",
+                        subtitle: prev.examsSection?.subtitle || "",
+                        cards: updated,
+                      }
                     }));
                   }}
                   className="w-full rounded-lg border border-gray-200 bg-white p-2 text-xs font-bold text-slate-900 focus:border-blue-500 focus:outline-hidden"
@@ -494,11 +726,15 @@ export default function AdminHomepageBuilder() {
                   rows={2}
                   value={card.desc}
                   onChange={(e) => {
-                    const updated = [...config.examsSection.cards];
-                    updated[idx].desc = e.target.value;
+                    const updated = [...(config.examsSection?.cards || [])];
+                    updated[idx] = { ...updated[idx], desc: e.target.value };
                     setConfig((prev) => ({
                       ...prev,
-                      examsSection: { ...prev.examsSection, cards: updated }
+                      examsSection: {
+                        title: prev.examsSection?.title || "",
+                        subtitle: prev.examsSection?.subtitle || "",
+                        cards: updated,
+                      }
                     }));
                   }}
                   className="w-full rounded-lg border border-gray-200 bg-white p-2 text-xs font-medium text-slate-900 focus:border-blue-500 focus:outline-hidden"
@@ -508,11 +744,15 @@ export default function AdminHomepageBuilder() {
                   type="text"
                   value={card.badge}
                   onChange={(e) => {
-                    const updated = [...config.examsSection.cards];
-                    updated[idx].badge = e.target.value;
+                    const updated = [...(config.examsSection?.cards || [])];
+                    updated[idx] = { ...updated[idx], badge: e.target.value };
                     setConfig((prev) => ({
                       ...prev,
-                      examsSection: { ...prev.examsSection, cards: updated }
+                      examsSection: {
+                        title: prev.examsSection?.title || "",
+                        subtitle: prev.examsSection?.subtitle || "",
+                        cards: updated,
+                      }
                     }));
                   }}
                   className="w-full rounded-lg border border-gray-200 bg-white p-2 text-xs font-semibold text-slate-900 focus:border-blue-500 focus:outline-hidden"
@@ -524,7 +764,7 @@ export default function AdminHomepageBuilder() {
         </div>
       )}
 
-      {/* Section 5: Bottom CTA Banner */}
+      {/* Section 6: Bottom CTA Banner */}
       {activeTab === "cta" && (
         <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 shadow-xs space-y-4 animate-fadeIn">
           <div className="flex items-center justify-between border-b border-gray-100 pb-3">

@@ -6,8 +6,8 @@ import { getChapterNotes } from "@/lib/chapter-notes-store";
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://placeholder.supabase.co";
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "placeholder-key";
 
-// Regenerate the sitemap every minute so newly published content appears automatically.
-export const revalidate = 60;
+// Regenerate the sitemap every 12 hours so crawlers do not exhaust database egress.
+export const revalidate = 43200;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const seo = getPublishedSeoConfig();

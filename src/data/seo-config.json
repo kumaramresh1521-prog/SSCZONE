@@ -19,9 +19,9 @@
     "SSC English Grammar Rules & Vocabulary",
     "SSC Reasoning Chapter Wise Practice",
     "SSC General Studies Static GK Capsules",
-    "SSC Typing Speed Drill TCS Simulator",
+    "SSC Typing Speed Test TCS Simulator",
     "SSC Speed Test 25 Questions 15 Mins",
-    "Daily Free SSC Quiz Drill Online",
+    "Daily Free SSC Quiz & Mock Test Online",
     "Bilingual SSC CBT Online Test Portal"
   ],
   "openGraph": {
@@ -85,16 +85,16 @@
     },
     "/speed-test": {
       "title": "SSC Speed Test Challenge (25 Qs / 15 Mins) | SSCZONE",
-      "description": "High-speed exam practice drill for SSC CGL, CHSL, CPO, and MTS. Practice 25 questions in 15 minutes or 20-second Blitz mode across 12,200+ dynamic questions.",
+      "description": "High-speed exam practice test for SSC CGL, CHSL, CPO, and MTS. Practice 25 questions in 15 minutes or 20-second Blitz mode across 12,200+ dynamic questions.",
       "keywords": [
         "SSC Speed Test",
-        "25 Questions 15 Minutes Drill",
+        "25 Questions 15 Minutes Speed Test",
         "SSC Rapid Fire MCQ",
         "SSC Math Speed Test"
       ]
     },
     "/daily-quiz": {
-      "title": "Daily Free Quiz Drill | SSC CGL, CHSL, MTS, CPO Practice | SSCZONE",
+      "title": "Daily Free Quiz & Mock Test | SSC CGL, CHSL, MTS, CPO Practice | SSCZONE",
       "description": "Practice daily free subject-wise mini quizzes for SSC CGL, CHSL, CPO, MTS and GD exams. High-yield questions with KaTeX formulas and instant scorecards.",
       "keywords": [
         "SSC Daily Free Quiz",
@@ -104,13 +104,26 @@
       ]
     },
     "/typing": {
-      "title": "SSC Typing Test & Speed Drill Simulator — CGL & CHSL TCS Interface",
+      "title": "SSC Typing Test & Speed Practice Simulator — CGL & CHSL TCS Interface",
       "description": "Practice SSC CGL, CHSL, and Steno typing test passages with real-time gross/net WPM, accuracy, error calculation, and TCS-pattern exam simulation.",
       "keywords": [
         "SSC Typing Test Online",
         "SSC CGL Typing Speed Test",
         "TCS Typing Interface Simulator",
         "Gross WPM Net WPM Calculator"
+      ]
+    },
+    "/blog": {
+      "title": "SSC Exam Blog & Study Material — Biology, English Grammar, PYQs & Notifications | SSCZone",
+      "description": "Comprehensive SSC CGL & CHSL blog guides: Cell Biology, English Pronoun & Tenses rules, previous year exam analysis, answer key links, and topper preparation strategies.",
+      "keywords": [
+        "SSC Exam Blog",
+        "SSC CGL Study Material",
+        "Cell Biology Notes SSC CGL",
+        "English Grammar Rules SSC CGL",
+        "Pronoun Rules PDF",
+        "English Tenses Chart",
+        "SSC Notification Updates"
       ]
     }
   },

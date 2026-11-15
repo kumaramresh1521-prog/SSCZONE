@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "badgeText": "Official Exam Syllabus Based Practice Platform",
+    "headline": "Crack Competitive Exams With",
+    "highlightText": "SSCZone",
+    "description": "Practice topic-wise MCQs from standard reference books, attempt previous year test papers, and track your accuracy chapter by chapter.",
+    "primaryBtnText": "Explore All Exams",
+    "primaryBtnLink": "/exams",
+    "secondaryBtnText": "Attempt PYQ Papers",
+    "secondaryBtnLink": "/papers"
+  },
+  "stats": [
+    {
+      "label": "Topic-wise MCQs",
+      "value": "10,000+"
+    },
+    {
+      "label": "Previous Papers",
+      "value": "100+ PYQs"
+    },
+    {
+      "label": "Detailed Solutions",
+      "value": "100% Explanations"
+    },
+    {
+      "label": "Syllabus Covered",
+      "value": "Complete SSC Exams"
+    }
+  ],
+  "targetExamsSection": {
+    "enabled": true,
+    "title": "SSC Target Examinations",
+    "subtitle": "Active exams are open for practice. Upcoming exams are progressively unlocked as shift papers are curated.",
+    "showUpcomingRoadmap": true,
+    "upcomingBadgeText": "\u23f3 Launching Soon",
+    "upcomingFooterText": "Curating shift questions",
+    "maxUpcomingDisplay": 0
+  },
+  "stepsSection": {
+    "title": "3 Simple Steps to Master Any Exam",
+    "subtitle": "Our structured approach ensures you never miss a single topic from official exam notifications.",
+    "steps": [
+      {
+        "title": "1. Select Official Exam Syllabus",
+        "desc": "Browse through official exam syllabi categorized neatly into subjects and topic chapters."
+      },
+      {
+        "title": "2. Practice Chapter-by-Chapter",
+        "desc": "Solve MCQs from standard reference books with instant answer explanations and solution hints."
+      },
+      {
+        "title": "3. Attempt Real Exam Papers",
+        "desc": "Test your speed and accuracy in timed mock test environment with actual previous year papers."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "enabled": true,
+    "title": "Ready to Crack SSC CGL / CHSL 2026?",
+    "subtitle": "Start practicing syllabus-wise questions now. Free access to all topic chapters & solutions.",
+    "buttonText": "Start Free Practice Now",
+    "buttonLink": "/exams"
+  }
+}

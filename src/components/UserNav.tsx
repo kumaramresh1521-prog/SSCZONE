@@ -200,12 +200,12 @@ export default function UserNav() {
       <div className="mx-auto flex max-w-7xl w-full items-center justify-between px-3 sm:px-6 py-2.5">
         
         {/* Clean Professional Brand Logo */}
-        <div className="shrink-0 mr-1 xl:mr-2">
+        <div className="shrink-0 mr-1 xl:mr-2" suppressHydrationWarning>
           <BrandLogo size="md" />
         </div>
 
         {/* Dynamic Desktop Main Navigation Bar */}
-        <nav className="hidden xl:flex items-center gap-1 xl:gap-1.5 shrink-0">
+        <nav className="hidden lg:flex items-center gap-1 xl:gap-1.5 shrink-0">
           {activeNavItems.map((menu) => {
             if (menu.is_dropdown) {
               const isExams = menu.id === "exams";
@@ -349,7 +349,7 @@ export default function UserNav() {
         </nav>
 
         {/* User Auth & Quick Action Controls */}
-        <div className="hidden xl:flex items-center gap-2.5 shrink-0">
+        <div className="hidden lg:flex items-center gap-2.5 shrink-0">
           {/* Quick Search Button */}
           <Link
             href="/search"
@@ -407,7 +407,7 @@ export default function UserNav() {
         <button
           type="button"
           aria-label="Toggle navigation menu"
-          className="flex h-11 w-11 items-center justify-center rounded-xl bg-gray-100/90 text-gray-800 xl:hidden touch-manipulation cursor-pointer active:scale-90 transition-all select-none shadow-xs border border-gray-200"
+          className="flex h-11 w-11 items-center justify-center rounded-xl bg-gray-100/90 text-gray-800 lg:hidden touch-manipulation cursor-pointer active:scale-90 transition-all select-none shadow-xs border border-gray-200"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X className="h-6 w-6 text-gray-900" /> : <Menu className="h-6 w-6 text-gray-900" />}
@@ -416,7 +416,7 @@ export default function UserNav() {
 
       {/* MOBILE MENU PANE */}
       {mobileMenuOpen && (
-        <div className="fixed inset-x-0 top-[58px] z-50 max-h-[85vh] w-full overflow-y-auto bg-white/98 backdrop-blur-xl p-4 shadow-2xl xl:hidden animate-in slide-in-from-top-2 border-t border-gray-200 touch-manipulation">
+        <div className="fixed inset-x-0 top-[58px] z-50 max-h-[85vh] w-full overflow-y-auto bg-white/98 backdrop-blur-xl p-4 shadow-2xl lg:hidden animate-in slide-in-from-top-2 border-t border-gray-200 touch-manipulation">
           
           <div className="mb-4">
             <Link

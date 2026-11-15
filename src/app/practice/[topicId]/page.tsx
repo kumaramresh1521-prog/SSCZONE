@@ -23,9 +23,11 @@ export async function generateMetadata({ params }: { params: Promise<{ topicId: 
 
   return buildPageMetadata(`/practice/${topicId}`, {
     title: `${topicTitle} — Bilingual Online Test & Solutions | SSCZone`,
-    description: `Practice ${topicTitle} topic-by-topic for SSC CGL, CHSL, CPO, MTS & Railways with instant explanations, formulas, and timer drill.`,
+    description: `Practice ${topicTitle} topic-by-topic for SSC CGL, CHSL, CPO, MTS & Railways with instant explanations, formulas, and timed practice.`,
   });
 }
+
+export const revalidate = 1800; // 30-minute ISR cache
 
 export default async function PracticePage({ params }: { params: Promise<{ topicId: string }> }) {
   const { topicId } = await params;

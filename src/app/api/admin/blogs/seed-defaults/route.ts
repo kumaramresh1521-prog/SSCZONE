@@ -16,14 +16,15 @@ export async function POST(req: NextRequest) {
       slug: b.slug,
       content: b.content.trim(),
       excerpt: b.excerpt,
-      seo_title: `${b.title} | SSCZone`,
-      keywords: JSON.stringify({
+      seo_title: (b as any).seo_title || `${b.title} | SSCZone`,
+      keywords: (b as any).keywords || JSON.stringify({
         category: b.category,
         examTag: b.exam_tag || "SSC CGL",
         readTime: b.read_time || "5 min read",
         focus: b.title.slice(0, 60),
         seoScore: 92,
       }),
+      image_url: b.image_url || null,
       is_published: true,
       created_at: b.created_at || new Date().toISOString(),
       updated_at: new Date().toISOString(),

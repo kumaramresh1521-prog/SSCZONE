@@ -195,7 +195,7 @@ export default function AdminSessionGatePage() {
           <div className="text-xl font-black text-white">
             {blockTestAttempts ? "ENFORCED" : "ALLOW ATTEMPTS"}
           </div>
-          <p className="text-[11px] text-slate-400">Speed tests & CBT drills blocked</p>
+          <p className="text-[11px] text-slate-400">Speed tests & CBT mock tests blocked</p>
         </div>
 
         {/* Tile 4: Logged In Exemption */}

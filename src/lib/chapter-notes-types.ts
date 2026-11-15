@@ -5,6 +5,8 @@ export interface ChapterNote {
   hindi_title?: string;
   excerpt: string;
   content: string; // Rich HTML/Markdown formatted content
+  english_content?: string;
+  hindi_content?: string;
   type: "chapter_note" | "educational_guide";
   subject_id: string; // e.g. "physics", "chemistry", "polity", "maths", etc.
   subject_name: string; // e.g. "Physics (भौतिक विज्ञान)"
@@ -16,6 +18,9 @@ export interface ChapterNote {
   is_featured?: boolean;
   sort_order: number;
   exam_tag?: string; // "SSC CGL", "All SSC Exams", etc.
+  seo_title?: string;
+  seo_description?: string;
+  keywords?: string[];
   created_at: string;
   updated_at: string;
 }

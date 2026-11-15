@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useId } from "react";
+import React from "react";
 import Link from "next/link";
 
 export interface BrandLogoProps {
@@ -22,9 +22,8 @@ export default function BrandLogo({
   href = "/",
   className = "",
 }: BrandLogoProps) {
-  const uniqueId = useId().replace(/:/g, "");
-  const gradId = `sz-bg-${uniqueId}`;
-  const goldId = `sz-gold-${uniqueId}`;
+  const gradId = "sz-brand-bg-grad";
+  const goldId = "sz-brand-gold-grad";
 
   // Dimensions based on size prop
   const iconSizeClasses = {

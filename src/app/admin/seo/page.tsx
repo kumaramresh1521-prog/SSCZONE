@@ -119,7 +119,7 @@ const CATEGORIZED_KEYWORDS: RecommendedKeyword[] = [
 
   // Subject-Wise Question Banks
   { tag: "SSC Quantitative Aptitude Chapter Wise MCQs", category: "subjects", volume: "High", intent: "Commercial" },
-  { tag: "SSC Reasoning Verbal & Non-Verbal Drills", category: "subjects", volume: "High", intent: "Informational" },
+  { tag: "SSC Reasoning Verbal & Non-Verbal Practice Sets", category: "subjects", volume: "High", intent: "Informational" },
   { tag: "SSC English Grammar Rules & Error Spotting", category: "subjects", volume: "High", intent: "Informational" },
   { tag: "SSC General Studies Modern History & Polity MCQs", category: "subjects", volume: "High", intent: "Informational" },
   { tag: "SSC Geography & General Science MCQs", category: "subjects", volume: "High", intent: "Informational" },
@@ -133,7 +133,7 @@ const CATEGORIZED_KEYWORDS: RecommendedKeyword[] = [
   { tag: "Gross WPM Net WPM Error Percentage Calculator", category: "tools", volume: "High", intent: "Informational" },
   { tag: "SSC CHSL English & Hindi Typing Passages", category: "tools", volume: "High", intent: "Commercial" },
   { tag: "SSC Speed Test 25 Questions 15 Minutes", category: "tools", volume: "High", intent: "Commercial" },
-  { tag: "Daily Free SSC Quiz Drill Online", category: "tools", volume: "Very High", intent: "Commercial" },
+  { tag: "Daily Free SSC Quiz & Mock Test Online", category: "tools", volume: "Very High", intent: "Commercial" },
   { tag: "SSC Photo Resizer & Signature Tool", category: "tools", volume: "Trending", intent: "Informational" },
 
   // High-Intent Search & Conversion
@@ -178,20 +178,20 @@ const PRESET_PAGES = [
     path: "/speed-test",
     name: "Speed Test Challenge (/speed-test)",
     defaultTitle: "SSC Speed Test Challenge (25 Qs / 15 Mins) | SSCZONE",
-    defaultDesc: "High-speed exam practice drill for SSC CGL, CHSL, CPO, and MTS. Practice 25 questions in 15 minutes or 20-second Blitz mode across 12,200+ dynamic questions.",
-    defaultKeywords: ["SSC Speed Test", "25 Questions 15 Minutes Drill", "SSC Rapid Fire MCQ", "SSC Math Speed Test"]
+    defaultDesc: "High-speed exam practice test for SSC CGL, CHSL, CPO, and MTS. Practice 25 questions in 15 minutes or 20-second Blitz mode across 12,200+ dynamic questions.",
+    defaultKeywords: ["SSC Speed Test", "25 Questions 15 Minutes Speed Test", "SSC Rapid Fire MCQ", "SSC Math Speed Test"]
   },
   {
     path: "/daily-quiz",
-    name: "Daily Free Quiz Drill (/daily-quiz)",
-    defaultTitle: "Daily Free Quiz Drill | SSC CGL, CHSL, MTS, CPO Practice | SSCZONE",
+    name: "Daily Free Quiz & Mock Test (/daily-quiz)",
+    defaultTitle: "Daily Free Quiz & Mock Test | SSC CGL, CHSL, MTS, CPO Practice | SSCZONE",
     defaultDesc: "Practice daily free subject-wise mini quizzes for SSC CGL, CHSL, CPO, MTS and GD exams. High-yield questions with KaTeX formulas and instant scorecards.",
     defaultKeywords: ["SSC Daily Free Quiz", "Daily 10 Questions SSC Quiz", "Free SSC Mini Mock Test", "SSC Daily GK Quiz"]
   },
   {
     path: "/typing",
     name: "Typing Test Simulator (/typing)",
-    defaultTitle: "SSC Typing Test & Speed Drill Simulator — CGL & CHSL TCS Interface",
+    defaultTitle: "SSC Typing Test & Speed Practice Simulator — CGL & CHSL TCS Interface",
     defaultDesc: "Practice SSC CGL, CHSL, and Steno typing test passages with real-time gross/net WPM, accuracy, error calculation, and TCS-pattern exam simulation.",
     defaultKeywords: ["SSC Typing Test Online", "SSC CGL Typing Speed Test", "TCS Typing Interface Simulator", "Gross WPM Net WPM Calculator"]
   },

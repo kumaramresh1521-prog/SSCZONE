@@ -74,3 +74,6 @@ public/papers/
 .idea
 .DS_Store
 Thumbs.db
+*.xlsx
+extracted_questions_stream.txt
+logo_preview.html

@@ -17,13 +17,13 @@ import {
   ArrowRight
 } from "lucide-react";
 import { sanitizeBlogContent } from "@/lib/blog-sanitizer";
+import BlogContentInteractive from "@/components/blog/BlogContentInteractive";
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
 
-export const dynamic = "force-dynamic";
-export const revalidate = 0; // Pure live sync with Supabase
+export const revalidate = 300; // 5-minute ISR cache
 
 export async function generateMetadata(
   props: Props,
@@ -35,7 +35,7 @@ export async function generateMetadata(
   try {
     const { data } = await supabase
       .from("blogs")
-      .select("*")
+      .select("id, title, slug, excerpt, keywords, image_url, created_at, updated_at")
       .eq("slug", params.slug)
       .eq("is_published", true)
       .not("keywords", "ilike", "%system-report%")
@@ -50,18 +50,49 @@ export async function generateMetadata(
 
   let meta: any = {};
   if (blog.keywords && typeof blog.keywords === "string") {
-    try { meta = JSON.parse(blog.keywords); } catch {}
+    try {
+      meta = JSON.parse(blog.keywords);
+    } catch {
+      meta = { focus: blog.keywords };
+    }
   }
 
-  const title = blog.seo_title || `${blog.title} | SSCZone`;
+  const focusKeyword = meta.focus || "";
+  const secondaryKeywords = Array.isArray(meta.secondary)
+    ? meta.secondary
+    : typeof meta.secondary === "string"
+    ? meta.secondary.split(",").map((s: string) => s.trim()).filter(Boolean)
+    : [];
+
+  const keywordsList = [
+    focusKeyword,
+    ...secondaryKeywords,
+    `${blog.title} PDF`,
+    `${blog.title} Notes`,
+    "SSC CGL 2026 Preparation",
+    "SSC Study Material",
+    meta.category || "SSC Exam",
+    meta.examTag || "SSC CGL",
+  ].filter(Boolean);
+
+  const rawTitle = blog.seo_title || blog.title;
+  const title = rawTitle.replace(/\s*\|\s*SSCZone$/i, "").trim();
   const desc = blog.excerpt || blog.content.replace(/<[^>]*>?/gm, "").substring(0, 160);
   const canonicalUrl = `https://ssczone.com/blog/${blog.slug}`;
 
   return {
     title,
     description: desc,
+    keywords: keywordsList,
     alternates: {
       canonical: canonicalUrl,
+    },
+    robots: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
     },
     openGraph: {
       title,
@@ -69,12 +100,20 @@ export async function generateMetadata(
       url: canonicalUrl,
       siteName: "SSCZone",
       type: "article",
-      images: blog.image_url ? [{ url: blog.image_url, width: 1200, height: 630 }] : [{ url: "https://ssczone.com/icon-512.png" }],
+      publishedTime: blog.created_at,
+      modifiedTime: blog.updated_at || blog.created_at,
+      section: meta.category || "Competitive Exams",
+      tags: keywordsList,
+      images: blog.image_url
+        ? [{ url: blog.image_url, width: 1200, height: 630, alt: blog.title }]
+        : [{ url: "https://ssczone.com/icon-512.png", width: 512, height: 512, alt: "SSCZone Logo" }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description: desc,
+      creator: "@ssczone",
+      site: "@ssczone",
       images: blog.image_url ? [blog.image_url] : ["https://ssczone.com/icon-512.png"],
     },
   };
@@ -91,7 +130,7 @@ export default async function BlogPostPage(props: Props) {
   try {
     const { data } = await supabase
       .from("blogs")
-      .select("*")
+      .select("id, title, slug, excerpt, content, keywords, image_url, created_at, updated_at, is_published, views")
       .eq("slug", params.slug)
       .eq("is_published", true)
       .not("keywords", "ilike", "%system-report%")
@@ -119,15 +158,37 @@ export default async function BlogPostPage(props: Props) {
   const focusKeyword = meta.focus || "";
   const safeContent = sanitizeBlogContent(blog.content);
 
-  // Structured Data Schema for Google NewsArticle & Breadcrumb
+  const secondaryKeywords = Array.isArray(meta.secondary)
+    ? meta.secondary
+    : typeof meta.secondary === "string"
+    ? meta.secondary.split(",").map((s: string) => s.trim()).filter(Boolean)
+    : [];
+
+  const postKeywordsList = [
+    focusKeyword,
+    ...secondaryKeywords,
+    `${blog.title} PDF`,
+    `${blog.title} Notes`,
+    "SSC CGL 2026 Preparation",
+    "SSC Study Material",
+    category,
+    examTag,
+  ].filter(Boolean);
+
+  const readTimeDisplay = meta.readTime || `${Math.max(4, Math.ceil((blog.content?.length || 1000) / 1200))} min read`;
+
+  // Structured Data Schema for Google BlogPosting & Breadcrumb
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "BlogPosting",
     headline: blog.title,
     description: blog.excerpt || blog.title,
     image: [blog.image_url || "https://ssczone.com/icon-512.png"],
     datePublished: blog.created_at,
     dateModified: blog.updated_at || blog.created_at,
+    articleSection: category,
+    keywords: postKeywordsList.join(", "),
+    inLanguage: ["en", "hi"],
     author: {
       "@type": "Organization",
       name: "SSCZone Editorial Desk",
@@ -195,9 +256,6 @@ export default async function BlogPostPage(props: Props) {
             <span className="rounded-lg bg-blue-50 border border-blue-200 px-3 py-1 text-xs font-black text-blue-700 shadow-2xs">
               {category}
             </span>
-            <span className="rounded-lg bg-indigo-50 border border-indigo-200 px-3 py-1 text-xs font-bold text-indigo-700 shadow-2xs">
-              {examTag}
-            </span>
             {focusKeyword && (
               <span className="rounded-lg bg-slate-100 text-slate-600 px-2.5 py-1 text-[11px] font-semibold">
                 Topic: {focusKeyword}
@@ -223,7 +281,7 @@ export default async function BlogPostPage(props: Props) {
             <span>•</span>
             <span className="flex items-center gap-1">
               <Clock className="h-3.5 w-3.5 text-slate-400" />
-              <span>5 min read</span>
+              <span>{readTimeDisplay}</span>
             </span>
             <span>•</span>
             <span className="font-semibold text-slate-700">Verified by SSCZone Editorial Desk</span>
@@ -242,10 +300,7 @@ export default async function BlogPostPage(props: Props) {
         )}
 
         {/* Main Content Body */}
-        <div 
-          className="prose prose-slate max-w-none bg-white p-6 sm:p-10 rounded-3xl shadow-xs border border-gray-200 text-sm sm:text-base leading-relaxed"
-          dangerouslySetInnerHTML={{ __html: safeContent }}
-        />
+        <BlogContentInteractive content={safeContent} />
 
         {/* High-Converting CBT Test Series & PYQ CTA Card */}
         <div className="rounded-3xl border-2 border-blue-200 bg-gradient-to-br from-blue-900 via-indigo-950 to-slate-900 p-6 sm:p-8 text-white shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-6">

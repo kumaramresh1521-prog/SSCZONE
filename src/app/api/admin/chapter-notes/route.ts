@@ -70,6 +70,9 @@ export async function POST(req: NextRequest) {
       is_featured,
       sort_order,
       exam_tag,
+      seo_title,
+      seo_description,
+      keywords,
     } = body;
 
     if (!title || !title.trim()) {
@@ -98,6 +101,9 @@ export async function POST(req: NextRequest) {
       is_featured: Boolean(is_featured),
       sort_order: Number(sort_order) || 1,
       exam_tag: exam_tag?.trim() || "SSC CGL / CHSL",
+      seo_title: seo_title?.trim() || undefined,
+      seo_description: seo_description?.trim() || undefined,
+      keywords: Array.isArray(keywords) ? keywords : typeof keywords === "string" ? keywords.split(",").map((k: string) => k.trim()).filter(Boolean) : undefined,
     });
 
     return NextResponse.json({ success: true, note: saved });

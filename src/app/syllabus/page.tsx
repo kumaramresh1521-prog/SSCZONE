@@ -6,7 +6,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata("/syllabus", {
     title: "SSC CGL 2026 Syllabus Tracker & OneNote Checklist | SSCZone",
     description:
-      "Interactive, notification-mapped chapter checklist for SSC CGL 2026, CHSL, CPO, MTS & GD. Track 3-Pillar progress: Theory, 50+ PYQ drills & 3x revisions with personal formula scratchpads.",
+      "Interactive, notification-mapped chapter checklist for SSC CGL 2026, CHSL, CPO, MTS & GD. Track 3-Pillar progress: Theory, 50+ PYQ practice tests & 3x revisions with personal formula scratchpads.",
     keywords: [
       "SSC CGL Syllabus 2026",
       "SSC CGL Chapter Wise Checklist",

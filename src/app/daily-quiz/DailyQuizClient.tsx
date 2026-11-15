@@ -1301,7 +1301,7 @@ export default function DailyQuizClient() {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold mb-4">
               <Zap className="w-3.5 h-3.5 fill-blue-600 text-blue-600" />
-              <span>100% Free Daily Drills • Updated Every Single Day</span>
+              <span>100% Free Daily Quizzes • Updated Every Single Day</span>
             </div>
             <h1 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-3">
               Daily Free Quiz Challenge
@@ -1493,7 +1493,7 @@ export default function DailyQuizClient() {
                     onClick={() => handleStartQuiz(quiz.id)}
                     className="w-full py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 active:scale-98 text-white text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 shadow-xs transition-all cursor-pointer group-hover:bg-blue-700"
                   >
-                    <span>Start Daily Drill</span>
+                    <span>Start Daily Quiz</span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
                   </button>
                 </div>

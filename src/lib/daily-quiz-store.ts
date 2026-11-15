@@ -41,7 +41,7 @@ const FILE_PATH = path.join(DATA_DIR, "daily_quizzes.json");
 const DEFAULT_QUIZZES: DailyQuiz[] = [
   {
     id: "dq_20261106_quant",
-    title: "Daily Free Quiz: Quantitative Aptitude Speed Drill",
+    title: "Daily Free Quiz: Quantitative Aptitude Practice Test",
     date: "2026-11-06",
     subject: "Quantitative Aptitude",
     subject_key: "quant",
@@ -106,7 +106,7 @@ const DEFAULT_QUIZZES: DailyQuiz[] = [
   },
   {
     id: "dq_20261106_reasoning",
-    title: "Daily Free Quiz: General Intelligence & Reasoning Drill",
+    title: "Daily Free Quiz: General Intelligence & Reasoning Practice Test",
     date: "2026-11-06",
     subject: "General Intelligence & Reasoning",
     subject_key: "reasoning",

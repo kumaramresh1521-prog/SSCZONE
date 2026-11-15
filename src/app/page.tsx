@@ -16,11 +16,16 @@ import {
   Star,
   Flame,
   ChevronRight,
-  Zap
+  Zap,
+  Newspaper
 } from "lucide-react";
 import type { Metadata } from "next";
 import { createClient } from "@/lib/supabase-server";
 import { buildPageMetadata } from "@/lib/seo-store";
+import { getHomepageConfig } from "@/lib/homepage-store";
+import { DEFAULT_BLOGS } from "@/lib/blog-data";
+
+export const revalidate = 300; // 5-minute ISR cache to protect database egress
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata("/");
@@ -104,8 +109,10 @@ const FALLBACK_EXAMS: ExamItem[] = [
 ];
 
 export default async function Home() {
+  const homeConfig = getHomepageConfig();
   let allExams: ExamItem[] = FALLBACK_EXAMS;
 
+  let homeBlogs: any[] = [];
   try {
     const supabase = await createClient();
     const { data } = await supabase
@@ -116,8 +123,23 @@ export default async function Home() {
     if (data && data.length > 0) {
       allExams = data;
     }
+
+    const { data: bData } = await supabase
+      .from("blogs")
+      .select("id, title, slug, excerpt, keywords, image_url, created_at")
+      .eq("is_published", true)
+      .not("keywords", "ilike", "%system-report%")
+      .not("slug", "ilike", "sys-report%")
+      .order("created_at", { ascending: false })
+      .limit(3);
+
+    if (bData && bData.length > 0) {
+      homeBlogs = bData;
+    } else {
+      homeBlogs = DEFAULT_BLOGS.slice(0, 3);
+    }
   } catch {
-    // Graceful fallback to static list
+    homeBlogs = DEFAULT_BLOGS.slice(0, 3);
   }
 
   // Active exams (Live for practice)
@@ -164,11 +186,11 @@ export default async function Home() {
       action: "Attempt Shift Papers",
     },
     {
-      title: "25-Question Speed Drill",
+      title: "25-Question Speed Test",
       desc: "Rapid-fire 15-minute sectional tests to build high accuracy under time pressure.",
       href: "/speed-test",
       icon: Zap,
-      action: "Start Speed Drill",
+      action: "Start Speed Test",
     },
     {
       title: "136-WPM Typing Test",
@@ -194,7 +216,7 @@ export default async function Home() {
     },
     {
       q: "Is SSCZone free to use?",
-      a: "Yes. All chapter-wise MCQs, previous year shift papers, speed drills, and candidate tools are open and free for aspirants.",
+      a: "Yes. All chapter-wise MCQs, previous year shift papers, speed tests, and candidate tools are open and free for aspirants.",
     },
   ];
 
@@ -250,7 +272,7 @@ export default async function Home() {
               className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 px-5 py-3.5 text-sm font-semibold text-slate-700 transition-all shadow-xs"
             >
               <Zap className="h-4 w-4 text-amber-500" />
-              <span>Speed Drills</span>
+              <span>Speed Tests</span>
             </Link>
           </div>
 
@@ -355,7 +377,7 @@ export default async function Home() {
               >
                 <div>
                   <div className="text-xs font-bold text-white group-hover:text-emerald-300 transition-colors">
-                    ⚡ 25 Qs Speed Drill
+                    ⚡ 25 Qs Speed Test
                   </div>
                   <div className="text-[11px] text-slate-400 mt-0.5">
                     15-min high accuracy practice
@@ -391,120 +413,221 @@ export default async function Home() {
       </section>
 
       {/* Target SSC Exams Section (Live Active + Upcoming Roadmap) */}
-      <section className="py-12 md:py-16 px-4 max-w-5xl mx-auto space-y-8">
-        
-        {/* Section Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
-          <div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
-              SSC Target Examinations
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-500 mt-1">
-              Active exams are open for practice. Upcoming exams are progressively unlocked as shift papers are curated.
-            </p>
-          </div>
-
-          <Link
-            href="/exams"
-            className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors"
-          >
-            <span>View All Syllabi</span>
-            <ArrowRight className="h-4 w-4" />
-          </Link>
-        </div>
-
-        {/* Other Active Exams (if admin activated any in addition to CGL) */}
-        {otherActiveExams.length > 0 && (
-          <div className="space-y-3">
-            <div className="flex items-center gap-2 text-xs font-bold text-slate-700 uppercase tracking-wider">
-              <span className="h-2 w-2 rounded-full bg-emerald-500" />
-              <span>Also Live For Practice ({otherActiveExams.length})</span>
+      {homeConfig.targetExamsSection?.enabled !== false && (
+        <section className="py-12 md:py-16 px-4 max-w-5xl mx-auto space-y-8">
+          
+          {/* Section Header */}
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
+                {homeConfig.targetExamsSection?.title || "SSC Target Examinations"}
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-500 mt-1">
+                {homeConfig.targetExamsSection?.subtitle || "Active exams are open for practice. Upcoming exams are progressively unlocked as shift papers are curated."}
+              </p>
             </div>
 
-            <div className="rounded-2xl border border-emerald-200/80 bg-white divide-y divide-slate-100 overflow-hidden shadow-xs">
-              {otherActiveExams.map((exam) => (
-                <Link
-                  key={exam.id}
-                  href={`/exams/${exam.slug}`}
-                  className="group flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 sm:p-5 hover:bg-emerald-50/40 transition-colors"
-                >
-                  <div className="flex items-start sm:items-center gap-3 min-w-0">
-                    <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 font-bold text-xs shrink-0">
-                      ✓
-                    </span>
+            <Link
+              href="/exams"
+              className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors"
+            >
+              <span>View All Syllabi</span>
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+
+          {/* Other Active Exams (if admin activated any in addition to CGL) */}
+          {otherActiveExams.length > 0 && (
+            <div className="space-y-3">
+              <div className="flex items-center gap-2 text-xs font-bold text-slate-700 uppercase tracking-wider">
+                <span className="h-2 w-2 rounded-full bg-emerald-500" />
+                <span>Also Live For Practice ({otherActiveExams.length})</span>
+              </div>
+
+              <div className="rounded-2xl border border-emerald-200/80 bg-white divide-y divide-slate-100 overflow-hidden shadow-xs">
+                {otherActiveExams.map((exam) => (
+                  <Link
+                    key={exam.id}
+                    href={`/exams/${exam.slug}`}
+                    className="group flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 sm:p-5 hover:bg-emerald-50/40 transition-colors"
+                  >
+                    <div className="flex items-start sm:items-center gap-3 min-w-0">
+                      <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 font-bold text-xs shrink-0">
+                        ✓
+                      </span>
+                      <div>
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <span className="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                            {exam.title}
+                          </span>
+                          <span className="text-[10px] font-bold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full">
+                            Live Practice
+                          </span>
+                        </div>
+                        {exam.description && (
+                          <p className="text-xs text-slate-500 mt-1 line-clamp-1 max-w-xl">
+                            {exam.description}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+
+                    <div className="self-end sm:self-center shrink-0 flex items-center gap-1 text-xs font-semibold text-blue-600 group-hover:translate-x-0.5 transition-transform">
+                      <span>Explore Topics</span>
+                      <ArrowRight className="h-3.5 w-3.5" />
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Upcoming SSC Exams Roadmap Container */}
+          {homeConfig.targetExamsSection?.showUpcomingRoadmap !== false && upcomingExams.length > 0 && (
+            <div className="space-y-3">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2 text-xs font-bold text-slate-500 uppercase tracking-wider">
+                  <Clock className="h-3.5 w-3.5 text-slate-400" />
+                  <span>
+                    Upcoming SSC Examinations • In Preparation (
+                    {homeConfig.targetExamsSection?.maxUpcomingDisplay && homeConfig.targetExamsSection.maxUpcomingDisplay > 0
+                      ? Math.min(upcomingExams.length, homeConfig.targetExamsSection.maxUpcomingDisplay)
+                      : upcomingExams.length}
+                    )
+                  </span>
+                </div>
+                <span className="text-[11px] text-slate-400 hidden sm:inline">
+                  Admin unlocks exams as verified question sets are added
+                </span>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                {(homeConfig.targetExamsSection?.maxUpcomingDisplay && homeConfig.targetExamsSection.maxUpcomingDisplay > 0
+                  ? upcomingExams.slice(0, homeConfig.targetExamsSection.maxUpcomingDisplay)
+                  : upcomingExams
+                ).map((exam) => (
+                  <div
+                    key={exam.id}
+                    className="rounded-2xl border border-slate-200 bg-white/70 p-4 flex flex-col justify-between space-y-3"
+                  >
                     <div>
-                      <div className="flex items-center gap-2 flex-wrap">
-                        <span className="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                      <div className="flex items-center justify-between gap-2 mb-1.5">
+                        <span className="text-sm font-bold text-slate-800">
                           {exam.title}
                         </span>
-                        <span className="text-[10px] font-bold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full">
-                          Live Practice
+                        <span className="rounded-full bg-slate-100 border border-slate-200/80 px-2 py-0.5 text-[10px] font-semibold text-slate-500 shrink-0">
+                          {homeConfig.targetExamsSection?.upcomingBadgeText || "⏳ Launching Soon"}
                         </span>
                       </div>
                       {exam.description && (
-                        <p className="text-xs text-slate-500 mt-1 line-clamp-1 max-w-xl">
+                        <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed">
                           {exam.description}
                         </p>
                       )}
                     </div>
-                  </div>
 
-                  <div className="self-end sm:self-center shrink-0 flex items-center gap-1 text-xs font-semibold text-blue-600 group-hover:translate-x-0.5 transition-transform">
-                    <span>Explore Topics</span>
-                    <ArrowRight className="h-3.5 w-3.5" />
+                    <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-400">
+                      <span>{homeConfig.targetExamsSection?.upcomingFooterText || "Curating shift questions"}</span>
+                      <span className="font-semibold text-slate-500">Roadmap 2026</span>
+                    </div>
                   </div>
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Upcoming SSC Exams Roadmap Container */}
-        {upcomingExams.length > 0 && (
-          <div className="space-y-3">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2 text-xs font-bold text-slate-500 uppercase tracking-wider">
-                <Clock className="h-3.5 w-3.5 text-slate-400" />
-                <span>Upcoming SSC Examinations • In Preparation ({upcomingExams.length})</span>
+                ))}
               </div>
-              <span className="text-[11px] text-slate-400 hidden sm:inline">
-                Admin unlocks exams as verified question sets are added
-              </span>
+            </div>
+          )}
+
+        </section>
+      )}
+
+      {/* Latest Exam Updates & Master Study Notes Section */}
+      {homeBlogs.length > 0 && (
+        <section className="py-12 md:py-16 px-4 max-w-6xl mx-auto space-y-8">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-slate-200/90 pb-4">
+            <div>
+              <div className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 border border-blue-200/80 px-3 py-1 text-[11px] font-black text-blue-700 uppercase tracking-wider mb-2">
+                <Newspaper className="h-3.5 w-3.5 text-blue-600" />
+                <span>Official Exam Updates & Master Notes</span>
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+                Latest Exam Updates & Study Notes
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-500 mt-1">
+                Comprehensive chapter theory, golden grammar rules, official notifications, and verified answer keys.
+              </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-              {upcomingExams.map((exam) => (
-                <div
-                  key={exam.id}
-                  className="rounded-2xl border border-slate-200 bg-white/70 p-4 flex flex-col justify-between space-y-3"
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-blue-600 hover:text-blue-800 hover:underline shrink-0"
+            >
+              <span>View All Updates & Notes (7)</span>
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {homeBlogs.map((b) => {
+              let meta: any = {};
+              if (b.keywords && typeof b.keywords === "string") {
+                try {
+                  meta = JSON.parse(b.keywords);
+                } catch {
+                  meta = { focus: b.keywords };
+                }
+              }
+              const category = meta.category || "Exam Update";
+              const readTime = meta.readTime || "5 min read";
+              const examTag = meta.examTag || "SSC CGL";
+
+              return (
+                <Link
+                  key={b.id || b.slug}
+                  href={`/blog/${b.slug}`}
+                  className="group flex flex-col justify-between bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs hover:shadow-xl hover:border-blue-300 transition-all duration-200 hover:-translate-y-1"
                 >
-                  <div>
-                    <div className="flex items-center justify-between gap-2 mb-1.5">
-                      <span className="text-sm font-bold text-slate-800">
-                        {exam.title}
+                  <div className="space-y-3">
+                    {b.image_url && (
+                      <div className="w-full h-40 rounded-xl overflow-hidden bg-slate-100 border border-slate-100">
+                        <img
+                          src={b.image_url}
+                          alt={b.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    )}
+                    <div className="flex items-center justify-between text-[11px] gap-2 flex-wrap">
+                      <span className="rounded-md bg-blue-50 border border-blue-100 px-2.5 py-0.5 font-bold text-blue-700">
+                        {category}
                       </span>
-                      <span className="rounded-full bg-slate-100 border border-slate-200/80 px-2 py-0.5 text-[10px] font-semibold text-slate-500 shrink-0">
-                        ⏳ Launching Soon
+                      <span className="flex items-center gap-1 text-slate-400 font-medium">
+                        <Clock className="h-3 w-3" />
+                        <span>{readTime}</span>
                       </span>
                     </div>
-                    {exam.description && (
-                      <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed">
-                        {exam.description}
+
+                    <h3 className="text-base font-extrabold text-slate-900 group-hover:text-blue-600 transition-colors line-clamp-2 leading-snug">
+                      {b.title}
+                    </h3>
+
+                    {b.excerpt && (
+                      <p className="text-xs text-slate-500 line-clamp-3 leading-relaxed">
+                        {b.excerpt}
                       </p>
                     )}
                   </div>
 
-                  <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-400">
-                    <span>Curating shift questions</span>
-                    <span className="font-semibold text-slate-500">Roadmap 2026</span>
+                  <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-blue-600">
+                    <span className="text-[11px] text-slate-400 font-semibold">{examTag}</span>
+                    <span className="inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                      Read Master Notes →
+                    </span>
                   </div>
-                </div>
-              ))}
-            </div>
+                </Link>
+              );
+            })}
           </div>
-        )}
-
-      </section>
+        </section>
+      )}
 
       {/* Practice Modules & Tools */}
       <section className="bg-white py-16 md:py-20 border-y border-slate-200/80 px-4 w-full max-w-full overflow-hidden">
@@ -514,7 +637,7 @@ export default async function Home() {
               Preparation Modules
             </h2>
             <p className="text-sm text-slate-500 mt-1.5">
-              Everything you need for daily MCQ drills, mock tests, and exam tools.
+              Everything you need for daily MCQ practice sets, mock tests, and exam tools.
             </p>
           </div>
 

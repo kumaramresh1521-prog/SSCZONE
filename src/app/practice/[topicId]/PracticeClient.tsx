@@ -431,7 +431,7 @@ export default function PracticeClient({
     return list;
   }, [questions, activeExamFilter, activeTierFilter, activeTypeFilter, isMathSubject]);
 
-  // Practice Mode: 'step' (Default 1-by-1 Drill) | 'page10' (10-Question Page View) | 'set25' (25-Question Sets)
+  // Practice Mode: 'step' (Default 1-by-1 Step Mode) | 'page10' (10-Question Page View) | 'set25' (25-Question Sets)
   const [practiceMode, setPracticeMode] = useState<"step" | "page10" | "set25">("step");
   const [setAnswers, setSetAnswers] = useState<Record<number, string>>({});
   const [setSubmitted, setSetSubmitted] = useState(false);
@@ -899,7 +899,7 @@ export default function PracticeClient({
       <div className="min-h-screen bg-slate-50 p-4 sm:p-6 flex items-center justify-center">
         <div className="flex flex-col items-center gap-3">
           <div className="h-10 w-10 animate-spin rounded-full border-4 border-blue-600 border-t-transparent" />
-          <p className="text-xs font-bold text-gray-500 animate-pulse">Loading Practice Drill...</p>
+          <p className="text-xs font-bold text-gray-500 animate-pulse">Loading Practice Questions...</p>
         </div>
       </div>
     );
@@ -1631,7 +1631,7 @@ export default function PracticeClient({
                   </div>
                 ) : (
                   /* ==================================================== */
-                  /* 1-BY-1 STEP DRILL MODE                               */
+                  /* 1-BY-1 STEP PRACTICE MODE                            */
                   /* ==================================================== */
                   <div>
                     {/* Progress Bar */}

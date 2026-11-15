@@ -33,7 +33,7 @@ export default function Footer() {
               <li><Link href="/papers" className="hover:text-white transition-colors">Previous Year Papers</Link></li>
               <li><Link href="/mocks" className="hover:text-white transition-colors">Mock Test Series</Link></li>
               <li><Link href="/typing" className="hover:text-white transition-colors">136-WPM Typing Test</Link></li>
-              <li><Link href="/speed-test" className="hover:text-white transition-colors">Speed Drills</Link></li>
+              <li><Link href="/speed-test" className="hover:text-white transition-colors">Speed Tests</Link></li>
             </ul>
           </div>
 
@@ -54,9 +54,12 @@ export default function Footer() {
           {/* Tools & Legal */}
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-200 mb-3">
-              Tools & Info
+              Resources & Tools
             </h4>
             <ul className="space-y-2 text-xs font-normal">
+              <li><Link href="/blog" className="text-blue-400 hover:text-white font-semibold transition-colors flex items-center gap-1.5">Exam Blog & Updates 📰</Link></li>
+              <li><Link href="/notes" className="hover:text-white transition-colors">Free English Notes PDF</Link></li>
+              <li><Link href="/blog/notes" className="hover:text-white transition-colors">Chapter Revision Notes</Link></li>
               <li><Link href="/toolkit/rank-predictor" className="hover:text-white transition-colors">Rank Predictor</Link></li>
               <li><Link href="/toolkit/age-calculator" className="hover:text-white transition-colors">Age Calculator</Link></li>
               <li><Link href="/toolkit/photo-resizer" className="hover:text-white transition-colors">Photo Resizer</Link></li>

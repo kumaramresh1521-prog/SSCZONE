@@ -1508,7 +1508,7 @@ export default function SyllabusTrackerClient() {
                                             href={`/speed-test?mode=topic&topicTitle=${encodeURIComponent(chapter.practice_query)}`}
                                             target="_blank"
                                             className="text-[11px] font-medium text-blue-600 hover:text-blue-800 flex items-center gap-1 px-2 py-1 rounded bg-blue-50 hover:bg-blue-100 border border-blue-200/60"
-                                            title="Launch direct PYQ Speed Test drill on this topic"
+                                            title="Launch direct PYQ Speed Test on this topic"
                                           >
                                             <Zap className="w-3.5 h-3.5 text-blue-600" />
                                             <span>Practice</span>
@@ -1856,7 +1856,7 @@ export default function SyllabusTrackerClient() {
                             className="text-[11px] text-blue-600 flex items-center gap-0.5"
                           >
                             <Zap className="w-3 h-3" />
-                            <span>Drill</span>
+                            <span>Test</span>
                           </Link>
                         </div>
                       </div>

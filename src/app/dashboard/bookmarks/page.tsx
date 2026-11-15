@@ -191,11 +191,11 @@ export default function BookmarksPage() {
             correct_answer: lc.correct_answer,
             explanation: lc.explanation || null,
             image_url: null,
-            exam_tag: lc.source === "speed_test" ? "Speed Drill" : lc.source === "daily_quiz" ? "Daily Quiz" : "PYQ",
+            exam_tag: lc.source === "speed_test" ? "Speed Test" : lc.source === "daily_quiz" ? "Daily Quiz" : "PYQ",
             tier_level: null,
             bookmarkId: (990000 + idx),
             tag: lc.tag || "Standard",
-            topic: { id: 0, title: lc.topic || lc.sourceTitle || "Rapid Drill", subject_id: 0 },
+            topic: { id: 0, title: lc.topic || lc.sourceTitle || "Speed Test", subject_id: 0 },
             subject: { id: 0, title: lc.subject || "General" },
           }));
 

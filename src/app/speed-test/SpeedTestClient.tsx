@@ -417,9 +417,9 @@ export default function SpeedTestClient() {
     if (soundEnabled) playChime("finish");
   }, [recordQuestionTime, soundEnabled]);
 
-  // Start Speed Test Drill
+  // Start Speed Test
   const handleStartTest = async () => {
-    if (promptGuestLoginGate("Sign in or create a free account to record your speed drill scorecards, review tricky questions, and track accuracy.")) {
+    if (promptGuestLoginGate("Sign in or create a free account to record your speed test scorecards, review tricky questions, and track accuracy.")) {
       return;
     }
     setLoadingQuestions(true);
@@ -467,7 +467,7 @@ export default function SpeedTestClient() {
         setPhase("testing");
         if (soundEnabled) playChime("finish");
       } else {
-        // Fallback: try loading general subject drill
+        // Fallback: try loading general subject test
         const fallbackSub = selectedSubject === "all" ? "quant" : selectedSubject;
         const fallbackRes = await fetch(`/api/speed-test/questions?mode=subject&subject=${fallbackSub}&count=${questionCount}`);
         const fallbackData = await fallbackRes.json();
@@ -639,7 +639,7 @@ export default function SpeedTestClient() {
       speedTier = "🚀 Ideal Exam Pace (Ahead of Cut-off)";
       speedColor = "text-blue-800 bg-blue-50 border-blue-200";
     } else {
-      speedTier = "⏱️ Needs Speed Drills";
+      speedTier = "⏱️ Needs Speed Practice";
       speedColor = "text-rose-800 bg-rose-50 border-rose-200";
     }
 
@@ -678,7 +678,7 @@ export default function SpeedTestClient() {
       hasSavedSpeedAttemptRef.current = true;
       saveUserAttempt({
         type: "speed_test",
-        title: `Speed Test: ${selectedSubject === "all" ? "Mixed Rapid Drill" : selectedSubject.toUpperCase()} (${timerType === "blitz" ? "20s Blitz" : "15m Sectional"})`,
+        title: `Speed Test: ${selectedSubject === "all" ? "Mixed Rapid Test" : selectedSubject.toUpperCase()} (${timerType === "blitz" ? "20s Blitz" : "15m Sectional"})`,
         subject: selectedSubject === "all" ? "Mixed" : selectedSubject,
         mode: selectedMode,
         totalQuestions: questions.length,
@@ -710,14 +710,14 @@ export default function SpeedTestClient() {
             <div className="flex items-center gap-2 text-xs text-slate-500 font-medium">
               <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
               <span>/</span>
-              <span className="text-slate-800 font-semibold">Speed Test Drill</span>
+              <span className="text-slate-800 font-semibold">SSC Speed Test</span>
             </div>
 
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div>
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold uppercase tracking-wider mb-2">
                   <Zap className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
-                  Real Exam Speed Drill
+                  Real Exam Speed Test
                 </div>
                 <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   SSC Speed Test <span className="text-blue-600">Challenge</span>
@@ -756,7 +756,7 @@ export default function SpeedTestClient() {
               <div className="flex items-center justify-between mb-3 border-b border-slate-100 pb-3">
                 <label className="text-sm sm:text-base font-extrabold text-slate-900 flex items-center gap-2">
                   <span className="flex items-center justify-center w-6 h-6 rounded-full bg-blue-600 text-xs font-bold text-white">1</span>
-                  Select Drill Mode
+                  Select Test Mode
                 </label>
                 <span className="text-xs text-slate-500 font-medium">Choose from 3 test modes</span>
               </div>
@@ -965,7 +965,7 @@ export default function SpeedTestClient() {
                     >
                       <div className="flex items-center gap-2 font-bold text-xs text-slate-900">
                         <Clock className="w-3.5 h-3.5 text-blue-600" />
-                        15 Mins Drill
+                        15 Mins Speed Test
                       </div>
                       <div className="text-[11px] text-slate-500 mt-1">Sectional Exam Clock</div>
                     </button>
@@ -1088,12 +1088,12 @@ export default function SpeedTestClient() {
                 {loadingQuestions ? (
                   <>
                     <div className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
-                    <span>Preparing Speed Drill...</span>
+                    <span>Preparing Speed Test...</span>
                   </>
                 ) : (
                   <>
                     <Zap className="w-4 h-4 fill-white" />
-                    <span>Start Speed Drill</span>
+                    <span>Start Speed Test</span>
                     <ArrowRight className="w-4 h-4" />
                   </>
                 )}
@@ -1518,7 +1518,7 @@ export default function SpeedTestClient() {
                   <AlertCircle className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="font-extrabold text-slate-900 text-base">Submit Speed Drill?</h3>
+                  <h3 className="font-extrabold text-slate-900 text-base">Submit Speed Test?</h3>
                   <p className="text-xs text-slate-500">Are you ready to submit your test and view your scorecard?</p>
                 </div>
               </div>
@@ -1547,7 +1547,7 @@ export default function SpeedTestClient() {
                   onClick={() => setShowSubmitModal(false)}
                   className="px-4 py-2 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-xs font-bold text-slate-600"
                 >
-                  Continue Drill
+                  Continue Test
                 </button>
                 <button
                   type="button"
@@ -1583,7 +1583,7 @@ export default function SpeedTestClient() {
               <div>
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold uppercase mb-2">
                   <Trophy className="w-3.5 h-3.5 text-amber-500" />
-                  Drill Completed
+                  Test Completed
                 </div>
                 <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   Speed Test <span className="text-blue-600">Scorecard</span>

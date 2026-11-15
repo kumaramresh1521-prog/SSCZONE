@@ -15,14 +15,21 @@ export function sanitizeBlogContent(content: unknown) {
       "tr",
       "th",
       "td",
+      "button",
+      "details",
+      "summary",
+      "mark",
+      "kbd",
+      "figure",
+      "figcaption",
     ],
     allowedAttributes: {
-      a: ["href", "name", "target", "rel"],
-      img: ["src", "alt", "width", "height"],
-      "*": ["class"],
+      a: ["href", "name", "target", "rel", "title"],
+      img: ["src", "alt", "width", "height", "loading"],
+      "*": ["class", "id", "style", "data-*", "title", "role", "aria-*"],
     },
-    allowedSchemes: ["http", "https", "mailto"],
-    allowedSchemesByTag: { img: ["http", "https"] },
+    allowedSchemes: ["http", "https", "mailto", "data"],
+    allowedSchemesByTag: { img: ["http", "https", "data"] },
     transformTags: {
       a: (tagName, attribs) => {
         if (attribs.target === "_blank") {

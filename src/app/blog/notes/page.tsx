@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { getChapterNotes, ALL_SUBJECTS } from "@/lib/chapter-notes-store";
+import { getChapterNotesAsync, ALL_SUBJECTS } from "@/lib/chapter-notes-store";
 import ChapterNotesReaderClient from "./ChapterNotesReaderClient";
 import { buildPageMetadata } from "@/lib/seo-store";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300; // 5-minute ISR cache to prevent high-frequency database egress
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata("/blog/notes", {
@@ -22,7 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function ChapterNotesPage() {
-  const notes = getChapterNotes({ active_only: true });
+  const notes = await getChapterNotesAsync({ active_only: true });
 
   const structuredSchema = {
     "@context": "https://schema.org",

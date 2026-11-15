@@ -58,9 +58,9 @@ export const DEFAULT_SEO_CONFIG: SeoConfigData = {
     "SSC English Grammar Rules & Vocabulary",
     "SSC Reasoning Chapter Wise Practice",
     "SSC General Studies Static GK Capsules",
-    "SSC Typing Speed Drill TCS Simulator",
+    "SSC Typing Speed Test TCS Simulator",
     "SSC Speed Test 25 Questions 15 Mins",
-    "Daily Free SSC Quiz Drill Online",
+    "Daily Free SSC Quiz & Mock Test Online",
     "Bilingual SSC CBT Online Test Portal"
   ],
   openGraph: {
@@ -91,6 +91,19 @@ export const DEFAULT_SEO_CONFIG: SeoConfigData = {
     "/papers": {
       title: "SSC PYQ Shift Papers 2026 Live — Download PDF & Attempt CBT Test",
       description: "Download clean official SSC CGL, CHSL, CPO shift paper PDFs with SSC Zone branding and attempt online CBT mock tests with instant scorecards."
+    },
+    "/blog": {
+      title: "SSC Exam Blog & Study Material — Biology, English Grammar, PYQs & Notifications | SSCZone",
+      description: "Comprehensive SSC CGL & CHSL blog guides: Cell Biology, English Pronoun & Tenses rules, previous year exam analysis, answer key links, and topper preparation strategies.",
+      keywords: [
+        "SSC Exam Blog",
+        "SSC CGL Study Material",
+        "Cell Biology Notes SSC CGL",
+        "English Grammar Rules SSC CGL",
+        "Pronoun Rules PDF",
+        "English Tenses Chart",
+        "SSC Notification Updates"
+      ]
     }
   }
 };

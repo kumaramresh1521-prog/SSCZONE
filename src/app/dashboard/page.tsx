@@ -365,7 +365,7 @@ export default function DashboardPage() {
           {/* Tile 3: Total Tests Taken */}
           <div className="rounded-2xl border border-slate-200/90 bg-white p-4 sm:p-5 shadow-xs space-y-2 hover:border-indigo-300 transition-all">
             <div className="flex items-center justify-between">
-              <span className="text-xs font-bold text-slate-500">Total Drills</span>
+              <span className="text-xs font-bold text-slate-500">Total Tests</span>
               <div className="w-8 h-8 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center">
                 <Zap className="h-4 w-4" />
               </div>
@@ -375,7 +375,7 @@ export default function DashboardPage() {
                 {stats.tests}
               </p>
               <p className="text-[11px] text-slate-400 font-medium mt-0.5">
-                Tests & Drills Taken
+                Tests & Quizzes Taken
               </p>
             </div>
           </div>
@@ -429,7 +429,7 @@ export default function DashboardPage() {
           {/* Left Column: Quick Launch Hub, Sectional Focus, Attempts History */}
           <div className="lg:col-span-2 space-y-6">
             
-            {/* SPEED DRILL & EXAM QUICK LAUNCH CARD */}
+            {/* SPEED TEST & EXAM QUICK LAUNCH CARD */}
             <div className="rounded-3xl border border-blue-900/40 bg-gradient-to-br from-slate-900 via-indigo-950 to-blue-950 p-6 sm:p-7 text-white relative overflow-hidden shadow-lg">
               <div className="pointer-events-none absolute -right-16 -top-16 h-64 w-64 rounded-full bg-blue-500/20 blur-3xl" />
               <div className="pointer-events-none absolute bottom-0 right-1/4 h-48 w-48 rounded-full bg-indigo-500/15 blur-2xl" />
@@ -437,7 +437,7 @@ export default function DashboardPage() {
               <div className="space-y-4 relative z-10 text-left">
                 <div className="inline-flex items-center gap-1.5 rounded-full bg-amber-400/20 border border-amber-400/30 px-3 py-1 text-xs font-black text-amber-300">
                   <Flame className="h-3.5 w-3.5 text-amber-400 fill-amber-400" />
-                  <span>TARGET DRILL: {targetExam}</span>
+                  <span>TARGET TEST: {targetExam}</span>
                 </div>
 
                 <div>
@@ -507,7 +507,7 @@ export default function DashboardPage() {
                   </div>
                   <div>
                     <h3 className="text-sm font-black text-slate-900 uppercase tracking-wider">
-                      Tier-1 Sectional Weightage & Quick Drills
+                      Tier-1 Sectional Weightage & Practice Tests
                     </h3>
                     <p className="text-[11px] text-slate-500">Practice specific sections with 1-click launch</p>
                   </div>
@@ -575,7 +575,7 @@ export default function DashboardPage() {
                         href={`/speed-test?subject=${sec.code}`}
                         className="font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1 group-hover:translate-x-0.5 transition-transform"
                       >
-                        Start Drill &rarr;
+                        Start Practice Test &rarr;
                       </Link>
                     </div>
                   </div>
@@ -663,7 +663,7 @@ export default function DashboardPage() {
                   <div>
                     <p className="text-sm font-bold text-slate-800">No attempts found in this selection.</p>
                     <p className="text-xs text-slate-500 max-w-sm mx-auto mt-1">
-                      Take a 15-minute speed drill or daily quiz to record your speed, sectional accuracy, and score history.
+                      Take a 15-minute speed test or daily quiz to record your speed, sectional accuracy, and score history.
                     </p>
                   </div>
                   <div className="pt-2 flex justify-center gap-2.5">
@@ -671,7 +671,7 @@ export default function DashboardPage() {
                       href="/speed-test"
                       className="px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-600 text-white text-xs font-bold shadow-xs transition-colors"
                     >
-                      ⚡ Start Speed Drill
+                      ⚡ Start Speed Test
                     </Link>
                     <Link
                       href="/daily-quiz"
@@ -711,7 +711,7 @@ export default function DashboardPage() {
                           <div className="flex items-center gap-2 flex-wrap">
                             <span className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-md bg-slate-100 text-slate-700">
                               {att.type === "speed_test"
-                                ? "Speed Drill"
+                                ? "Speed Test"
                                 : att.type === "daily_quiz"
                                 ? "Daily Quiz"
                                 : "PYQ Shift"}
@@ -940,7 +940,7 @@ export default function DashboardPage() {
                   },
                   {
                     name: "English & Hindi Typing Test",
-                    desc: "Official CPT 35 WPM drill",
+                    desc: "Official CPT 35 WPM practice test",
                     href: "/typing",
                   },
                 ].map((tool, idx) => (

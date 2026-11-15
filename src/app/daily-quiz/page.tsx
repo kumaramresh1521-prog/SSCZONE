@@ -4,7 +4,7 @@ import { buildPageMetadata } from "@/lib/seo-store";
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata("/daily-quiz", {
-    title: "Daily Free Quiz Drill | SSC CGL, CHSL, MTS, CPO Practice | SSCZONE",
+    title: "Daily Free Quiz & Mock Test | SSC CGL, CHSL, MTS, CPO Practice | SSCZONE",
     description: "Practice daily free subject-wise mini quizzes for SSC CGL, CHSL, CPO, MTS and GD exams. High-yield questions with KaTeX formulas, instant scorecards, and bilingual Hindi/English explanations.",
     keywords: [
       "SSC Daily Quiz",

@@ -1,38 +1,56 @@
 import { notFound } from "next/navigation";
 import type { Metadata, ResolvingMetadata } from "next";
 import {
-  getChapterNotes,
-  getChapterNoteBySlug,
+  getChapterNotesAsync,
+  getChapterNoteBySlugAsync,
   ALL_SUBJECTS,
 } from "@/lib/chapter-notes-store";
 import ChapterNotesReaderClient from "../ChapterNotesReaderClient";
 
 type Props = {
   params: Promise<{ slug: string }>;
+  searchParams?: Promise<{ preview?: string }>;
 };
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300; // 5-minute ISR cache to prevent high-frequency database egress
 
 export async function generateMetadata(
   props: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const params = await props.params;
-  const note = getChapterNoteBySlug(params.slug);
+  const searchParams = props.searchParams ? await props.searchParams : {};
+  const isPreview = searchParams.preview === "true" || searchParams.preview === "admin";
+  const note = await getChapterNoteBySlugAsync(params.slug);
 
-  if (!note || !note.is_active) {
+  if (!note || (!note.is_active && !isPreview)) {
     return { title: "Chapter Note Not Found - SSCZone" };
   }
 
-  const title = `${note.title} ${note.hindi_title ? `(${note.hindi_title})` : ""} - ${note.subject_name} Notes | SSCZone`;
+  const title = (note as any).seo_title || `${note.title} ${note.hindi_title ? `(${note.hindi_title})` : ""} - ${note.subject_name} Notes | SSCZone`;
   const desc =
+    (note as any).seo_description ||
     note.excerpt ||
     note.content.replace(/<[^>]*>?/gm, "").substring(0, 160) + "...";
   const canonicalUrl = `https://ssczone.com/blog/notes/${note.slug}`;
 
+  const keywords = (note as any).keywords && (note as any).keywords.length > 0
+    ? (note as any).keywords
+    : [
+        `${note.title} SSC Notes`,
+        `${note.hindi_title || note.title} नोट्स`,
+        `${note.subject_name} SSC CGL Notes`,
+        "SSC CGL 2026 General Science Notes",
+        "Cell Biology Chapter Notes in Hindi and English",
+        "SSC CGL Biology Theory & MCQs",
+        "Railway RRB NTPC Biology Chapter Wise Notes",
+        "SSC CGL Study Material PDF",
+      ];
+
   return {
     title,
     description: desc,
+    keywords,
     alternates: {
       canonical: canonicalUrl,
     },
@@ -54,19 +72,29 @@ export async function generateMetadata(
 
 export default async function ChapterNoteDetailPage(props: Props) {
   const params = await props.params;
-  const note = getChapterNoteBySlug(params.slug);
+  const slug = params?.slug;
+  const searchParams = props.searchParams ? await props.searchParams : {};
+  const isPreview = searchParams.preview === "true" || searchParams.preview === "admin";
+  const note = await getChapterNoteBySlugAsync(slug);
 
-  if (!note || !note.is_active) {
+  if (!note || (!note.is_active && !isPreview)) {
     notFound();
   }
 
-  const allActiveNotes = getChapterNotes({ active_only: true });
+  const allNotes = await getChapterNotesAsync(isPreview ? { active_only: false } : { active_only: true });
 
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: note.title,
+    headline: `${note.title} ${note.hindi_title ? `(${note.hindi_title})` : ""} - ${note.subject_name}`,
     description: note.excerpt || note.title,
+    keywords: ((note as any).keywords || [
+      "SSC CGL Biology Notes",
+      "Cell: The Unit of Life Notes",
+      "कोशिका विज्ञान नोट्स",
+      "General Science PCB SSC"
+    ]).join(", "),
+    inLanguage: ["en", "hi"],
     datePublished: note.created_at,
     dateModified: note.updated_at || note.created_at,
     author: {
@@ -109,7 +137,7 @@ export default async function ChapterNoteDetailPage(props: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <ChapterNotesReaderClient
-        initialNotes={allActiveNotes}
+        initialNotes={allNotes}
         subjects={ALL_SUBJECTS}
         defaultSlug={note.slug}
       />

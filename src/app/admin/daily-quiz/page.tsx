@@ -197,13 +197,13 @@ export default function AdminDailyQuizPage() {
         if (generatorSubject === "mixed") {
           setFormTitle(`Daily Free Quiz: All India SSC CGL Tier-1 Shift Mock (${formDate})`);
         } else if (generatorSubject === "quant") {
-          setFormTitle(`Daily Free Quiz: Quantitative Aptitude Speed Drill (${formDate})`);
+          setFormTitle(`Daily Free Quiz: Quantitative Aptitude Practice Test (${formDate})`);
         } else if (generatorSubject === "reasoning") {
-          setFormTitle(`Daily Free Quiz: Reasoning & Intelligence Speed Drill (${formDate})`);
+          setFormTitle(`Daily Free Quiz: Reasoning & Intelligence Practice Test (${formDate})`);
         } else if (generatorSubject === "ga") {
           setFormTitle(`Daily Free Quiz: General Awareness & Static GK Challenge (${formDate})`);
         } else if (generatorSubject === "english") {
-          setFormTitle(`Daily Free Quiz: English Comprehension Speed Drill (${formDate})`);
+          setFormTitle(`Daily Free Quiz: English Comprehension Practice Test (${formDate})`);
         }
         setImportTab("manual"); // Switch to manual / analysis view
         const pyqNum = data.sources?.pyq_count ?? "N/A";
@@ -825,7 +825,7 @@ Exp: Mekong originates in Tibet. Amazon originates in Peru.`;
                     required
                     value={formTitle}
                     onChange={(e) => setFormTitle(e.target.value)}
-                    placeholder="e.g. Daily Free Quiz: Quantitative Aptitude Speed Drill"
+                    placeholder="e.g. Daily Free Quiz: Quantitative Aptitude Practice Test"
                     className="w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs text-slate-800 focus:outline-none focus:border-blue-600 font-medium"
                   />
                 </div>
@@ -990,7 +990,7 @@ Exp: Mekong originates in Tibet. Amazon originates in Peru.`;
                         >
                           <option value={100}>100 Questions (Official Full Mock - 60 min)</option>
                           <option value={50}>50 Questions (Mini Mock - 30 min)</option>
-                          <option value={25}>25 Questions (Speed Drill - 15 min)</option>
+                          <option value={25}>25 Questions (Speed Test - 15 min)</option>
                           <option value={10}>10 Questions (Quick Quiz - 8 min)</option>
                         </select>
                       </div>

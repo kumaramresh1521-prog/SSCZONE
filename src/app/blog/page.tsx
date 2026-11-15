@@ -11,8 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   });
 }
 
-export const dynamic = "force-dynamic";
-export const revalidate = 0; // Pure live sync with Supabase (zero stale caching)
+export const revalidate = 300; // 5-minute ISR cache to prevent egress spikes while keeping data fresh
 
 export default async function BlogListingPage() {
   let dbBlogs: any[] = [];
@@ -20,7 +19,7 @@ export default async function BlogListingPage() {
   try {
     const { data, error } = await supabase
       .from("blogs")
-      .select("*")
+      .select("id, title, slug, excerpt, keywords, image_url, created_at, is_published, views")
       .eq("is_published", true)
       .not("keywords", "ilike", "%system-report%")
       .not("slug", "ilike", "sys-report%")

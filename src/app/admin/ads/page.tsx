@@ -239,11 +239,11 @@ export default function AdminAdsPage() {
                 )}
               </div>
 
-              {/* Slot 2: In-Drill Solution Ad */}
+              {/* Slot 2: In-Practice Solution Ad */}
               <div className="pt-3 space-y-2">
                 <div className="flex items-center justify-between">
                   <div>
-                    <span className="text-xs font-black text-gray-900">2. In-Drill Solution Ad (1-by-1 Mode)</span>
+                    <span className="text-xs font-black text-gray-900">2. In-Practice Solution Ad (1-by-1 Mode)</span>
                     <p className="text-[11px] text-gray-500">Displayed right below the step-by-step solution box.</p>
                   </div>
                   <input

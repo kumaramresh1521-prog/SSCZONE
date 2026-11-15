@@ -4,16 +4,100 @@ export interface BlogPost {
   slug: string;
   excerpt: string;
   content: string;
-  category: "Exam Notification" | "Answer Key & Results" | "Preparation Strategy" | "Current Affairs";
+  category: "Exam Notification" | "Answer Key & Results" | "Preparation Strategy" | "Current Affairs" | "English Language & Grammar" | "General Science & Biology" | string;
   exam_tag?: string;
   read_time: string;
   image_url?: string;
+  keywords?: string;
+  seo_title?: string;
   is_published: boolean;
   is_featured?: boolean;
   created_at: string;
 }
 
+import chapterNotesData from "@/data/chapter_notes.json";
+
+const findChapterNote = (slug: string) => {
+  return (chapterNotesData as any[]).find((n) => n.slug === slug);
+};
+
+const cellBioNote = findChapterNote("biology-cell-structure-organelles-division");
+const pronounNote = findChapterNote("english-pronoun-complete-rules-types");
+const tensesNote = findChapterNote("english-tenses-rules-structures-usage");
+
 export const DEFAULT_BLOGS: BlogPost[] = [
+  ...(cellBioNote ? [{
+    id: "post-biology-cell-structure",
+    title: "Cell Biology: Structure, Organelles & Cell Division (Complete Notes)",
+    slug: "biology-cell-structure-organelles-division",
+    excerpt: "Comprehensive bilingual study notes covering Cell Theory, Organelles (Mitochondria, Nucleus, ER, Golgi), Plant vs Animal Cells, Mitosis & Meiosis with SSC PYQ MCQs.",
+    seo_title: "Cell Biology Notes: Structure, Organelles & Division for SSC CGL 2026 | SSCZone",
+    category: "General Science & Biology",
+    exam_tag: "SSC CGL / CHSL / RRB NTPC",
+    read_time: "15 min read",
+    image_url: "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&w=1200&q=80",
+    keywords: JSON.stringify({
+      category: "General Science & Biology",
+      focus: "Cell Biology SSC CGL",
+      examTag: "SSC CGL / CHSL / RRB NTPC",
+      seoScore: 95,
+      secondary: "Cell Structure Organelles PDF, Plant vs Animal Cell Difference, Mitosis Meiosis Stages, SSC Biology Chapter Notes",
+      readTime: "15 min read",
+      hindiTitle: "कोशिका विज्ञान: संरचना, कोशिकांग एवं कोशिका विभाजन"
+    }),
+    is_published: true,
+    is_featured: true,
+    created_at: cellBioNote.created_at || "2026-11-05T10:00:00Z",
+    content: cellBioNote.content,
+  }] : []),
+  ...(pronounNote ? [{
+    id: "post-english-pronoun-rules",
+    title: "English Grammar: Pronoun Rules, Types & Error Spotting (Master Notes)",
+    slug: "english-pronoun-complete-rules-types",
+    excerpt: "Comprehensive bilingual guide to Pronouns covering all 8 types, 17 Golden Rules, Order of Pronouns (231 vs 123), Relative Pronoun rules, and 15 interactive MCQs.",
+    seo_title: "Pronoun Rules, Types & Error Spotting for SSC CGL & CHSL 2026 | SSCZone",
+    category: "English Language & Grammar",
+    exam_tag: "SSC CGL / CHSL / CPO",
+    read_time: "18 min read",
+    image_url: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1200&q=80",
+    keywords: JSON.stringify({
+      category: "English Language & Grammar",
+      focus: "Pronoun Rules for SSC CGL",
+      examTag: "SSC CGL / CHSL / CPO",
+      seoScore: 96,
+      secondary: "Types of Pronoun PDF, Relative Pronoun Who vs Whom, Order of Pronoun 231 Rule, SSC English Error Spotting",
+      readTime: "18 min read",
+      hindiTitle: "सर्वनाम: नियम, भेद एवं त्रुटि सुधार मास्टर नोट्स"
+    }),
+    is_published: true,
+    is_featured: true,
+    created_at: pronounNote.created_at || "2026-11-10T10:00:00Z",
+    content: pronounNote.content,
+  }] : []),
+  ...(tensesNote ? [{
+    id: "post-english-tenses-rules",
+    title: "English Grammar: Tenses Rules, Structures & Sequence of Tenses (Master Notes)",
+    slug: "english-tenses-rules-structures-usage",
+    excerpt: "Complete blueprint of English Tenses covering all 12 tenses with affirmative, negative, interrogative formulas, since vs for, stative verbs, conditional clauses, and 15 interactive PYQ MCQs.",
+    seo_title: "Tenses Rules, Structures & Sequence of Tenses for SSC CGL & CHSL 2026 | SSCZone",
+    category: "English Language & Grammar",
+    exam_tag: "SSC CGL / CHSL / CPO",
+    read_time: "16 min read",
+    image_url: "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=1200&q=80",
+    keywords: JSON.stringify({
+      category: "English Language & Grammar",
+      focus: "Tenses Rules for SSC CGL",
+      examTag: "SSC CGL / CHSL / CPO",
+      seoScore: 96,
+      secondary: "12 Tenses Structures Formulas PDF, Since vs For Rule, Sequence of Tenses, Conditional Sentences SSC English",
+      readTime: "16 min read",
+      hindiTitle: "काल (Tenses): संरचना, नियम एवं Sequence of Tenses"
+    }),
+    is_published: true,
+    is_featured: false,
+    created_at: tensesNote.created_at || "2026-11-12T10:00:00Z",
+    content: tensesNote.content,
+  }] : []),
   {
     id: "post-cgl-2026-notification",
     title: "SSC CGL 2026 Official Notification Out: Check Vacancy, Eligibility & Pattern",

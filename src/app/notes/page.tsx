@@ -5,15 +5,21 @@ import { buildPageMetadata } from "@/lib/seo-store";
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata("/notes", {
-    title: "SSC Subject Notes & Formula Sheets | High-Yield Revision PDFs - SSCZone",
-    description: "Download free chapter-wise revision notes, formula sheets, and study materials for SSC CGL 2026, CHSL, CPO, MTS & GD. Master Maths, Reasoning, English & GS with curated PDFs.",
+    title: "SSC English Notes PDF & Formula Sheets | 120 Rules, Vocab & Grammar - SSCZone",
+    description: "Download 16+ free chapter-wise English revision notes for SSC CGL 2026, CHSL, CPO, MTS & GD. 120 Rules of Grammar, Fixed Prepositions, Idioms & Phrases, One Word Substitution & Tenses PDFs.",
     keywords: [
-      "SSC CGL Notes PDF",
+      "SSC CGL English Notes PDF",
+      "120 Rules of Grammar PDF SSC",
+      "SSC Fixed Prepositions PDF",
+      "SSC Idioms and Phrases PDF",
+      "SSC One Word Substitution PDF",
+      "SSC English Grammar Rules in Hindi",
+      "SSC CGL 2026 English Study Material",
+      "Active Passive Voice Rules PDF SSC",
+      "Tenses Chart for SSC CGL",
+      "SSC English Short Notes Download",
       "SSC Maths Formula Sheet",
-      "SSC English Grammar Rules PDF",
-      "SSC Reasoning Notes",
       "SSC GS Revision Capsule",
-      "SSC CGL 2026 Study Material",
     ],
   });
 }
@@ -25,14 +31,26 @@ export default async function NotesPage() {
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Course",
-    "name": "SSC CGL 2026 Master Subject Notes & Study Materials",
-    "description": "Comprehensive revision notes, formula cheat sheets, and chapter PDFs for SSC examinations.",
+    "@type": "CollectionPage",
+    "name": "SSC CGL 2026 Master Subject Notes & English Revision PDFs",
+    "description": "Comprehensive revision notes, 120 rules of grammar, vocabulary compendiums, and chapter PDFs for SSC examinations.",
+    "url": "https://ssczone.com/notes",
     "provider": {
       "@type": "Organization",
       "name": "SSCZone",
-      "sameAs": "https://ssczone.in",
+      "sameAs": "https://ssczone.com",
     },
+    "hasPart": notes.map((n, idx) => ({
+      "@type": "DigitalDocument",
+      "position": idx + 1,
+      "name": n.title,
+      "alternateName": n.hindi_title,
+      "description": n.description,
+      "url": n.pdf_url,
+      "fileFormat": "application/pdf",
+      "educationalLevel": "Competitive Exams (SSC CGL, CHSL, CPO, MTS)",
+      "isAccessibleForFree": true,
+    })),
   };
 
   return (

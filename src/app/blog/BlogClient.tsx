@@ -49,6 +49,8 @@ export default function BlogClient({ initialBlogs }: { initialBlogs: BlogItem[] 
 
   const categories = [
     { id: "All", label: "All Updates", icon: Newspaper },
+    { id: "English Language & Grammar", label: "English Grammar", icon: BookOpen },
+    { id: "General Science & Biology", label: "Science & Biology", icon: Sparkles },
     { id: "Exam Notification", label: "Official Notifications", icon: Bell },
     { id: "Answer Key & Results", label: "Answer Keys & Cut-Offs", icon: CheckCircle2 },
     { id: "Preparation Strategy", label: "Topper Strategies", icon: GraduationCap },
@@ -149,6 +151,16 @@ export default function BlogClient({ initialBlogs }: { initialBlogs: BlogItem[] 
   // Category Color Helper
   const getCategoryTheme = (cat: string) => {
     switch (cat) {
+      case "English Language & Grammar":
+        return {
+          bg: "bg-indigo-50 text-indigo-700 border-indigo-200/80",
+          gradient: "from-indigo-600 to-blue-800",
+        };
+      case "General Science & Biology":
+        return {
+          bg: "bg-teal-50 text-teal-800 border-teal-200/80",
+          gradient: "from-teal-600 to-emerald-800",
+        };
       case "Exam Notification":
         return {
           bg: "bg-blue-50 text-blue-700 border-blue-200/80",
@@ -369,9 +381,6 @@ export default function BlogClient({ initialBlogs }: { initialBlogs: BlogItem[] 
                       <span className={`rounded-md px-2.5 py-0.5 text-xs font-black uppercase tracking-wider border ${getCategoryTheme(featuredBlog.category).bg}`}>
                         {featuredBlog.category}
                       </span>
-                      <span className="rounded-md bg-slate-100 text-slate-700 px-2.5 py-0.5 text-xs font-bold">
-                        {featuredBlog.exam_tag}
-                      </span>
                       <span className="flex items-center gap-1 text-xs text-slate-400 font-semibold ml-auto">
                         <Clock className="h-3.5 w-3.5" />
                         {featuredBlog.read_time}
@@ -515,11 +524,6 @@ export default function BlogClient({ initialBlogs }: { initialBlogs: BlogItem[] 
                         <span className={`rounded-md px-2.5 py-0.5 text-[11px] font-black uppercase tracking-wider border ${theme.bg}`}>
                           {blog.category}
                         </span>
-                        {blog.exam_tag && (
-                          <span className="text-[11px] font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md">
-                            {blog.exam_tag}
-                          </span>
-                        )}
                       </div>
 
                       {/* Title */}

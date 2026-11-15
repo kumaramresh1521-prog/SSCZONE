@@ -62,21 +62,21 @@ const ICON_MAP: Record<string, React.ElementType> = {
   Flame,
 };
 
-// Subject badge colors
+// Subject badge colors (High contrast light mode)
 const COLOR_STYLES: Record<string, { bg: string; text: string; border: string; ring: string }> = {
-  blue: { bg: "bg-blue-500/10", text: "text-blue-600 dark:text-blue-400", border: "border-blue-500/30", ring: "ring-blue-500" },
-  emerald: { bg: "bg-emerald-500/10", text: "text-emerald-600 dark:text-emerald-400", border: "border-emerald-500/30", ring: "ring-emerald-500" },
-  teal: { bg: "bg-teal-500/10", text: "text-teal-600 dark:text-teal-400", border: "border-teal-500/30", ring: "ring-teal-500" },
-  indigo: { bg: "bg-indigo-500/10", text: "text-indigo-600 dark:text-indigo-400", border: "border-indigo-500/30", ring: "ring-indigo-500" },
-  amber: { bg: "bg-amber-500/10", text: "text-amber-600 dark:text-amber-400", border: "border-amber-500/30", ring: "ring-amber-500" },
-  cyan: { bg: "bg-cyan-500/10", text: "text-cyan-600 dark:text-cyan-400", border: "border-cyan-500/30", ring: "ring-cyan-500" },
-  rose: { bg: "bg-rose-500/10", text: "text-rose-600 dark:text-rose-400", border: "border-rose-500/30", ring: "ring-rose-500" },
-  purple: { bg: "bg-purple-500/10", text: "text-purple-600 dark:text-purple-400", border: "border-purple-500/30", ring: "ring-purple-500" },
-  violet: { bg: "bg-violet-500/10", text: "text-violet-600 dark:text-violet-400", border: "border-violet-500/30", ring: "ring-violet-500" },
-  orange: { bg: "bg-orange-500/10", text: "text-orange-600 dark:text-orange-400", border: "border-orange-500/30", ring: "ring-orange-500" },
-  yellow: { bg: "bg-amber-500/10", text: "text-amber-700 dark:text-amber-300", border: "border-amber-500/30", ring: "ring-amber-500" },
-  sky: { bg: "bg-sky-500/10", text: "text-sky-600 dark:text-sky-400", border: "border-sky-500/30", ring: "ring-sky-500" },
-  pink: { bg: "bg-pink-500/10", text: "text-pink-600 dark:text-pink-400", border: "border-pink-500/30", ring: "ring-pink-500" },
+  blue: { bg: "bg-blue-500/10", text: "text-blue-700", border: "border-blue-500/30", ring: "ring-blue-500" },
+  emerald: { bg: "bg-emerald-500/10", text: "text-emerald-700", border: "border-emerald-500/30", ring: "ring-emerald-500" },
+  teal: { bg: "bg-teal-500/10", text: "text-teal-700", border: "border-teal-500/30", ring: "ring-teal-500" },
+  indigo: { bg: "bg-indigo-500/10", text: "text-indigo-700", border: "border-indigo-500/30", ring: "ring-indigo-500" },
+  amber: { bg: "bg-amber-500/10", text: "text-amber-800", border: "border-amber-500/30", ring: "ring-amber-500" },
+  cyan: { bg: "bg-cyan-500/10", text: "text-cyan-700", border: "border-cyan-500/30", ring: "ring-cyan-500" },
+  rose: { bg: "bg-rose-500/10", text: "text-rose-700", border: "border-rose-500/30", ring: "ring-rose-500" },
+  purple: { bg: "bg-purple-500/10", text: "text-purple-700", border: "border-purple-500/30", ring: "ring-purple-500" },
+  violet: { bg: "bg-violet-500/10", text: "text-violet-700", border: "border-violet-500/30", ring: "ring-violet-500" },
+  orange: { bg: "bg-orange-500/10", text: "text-orange-700", border: "border-orange-500/30", ring: "ring-orange-500" },
+  yellow: { bg: "bg-amber-500/10", text: "text-amber-800", border: "border-amber-500/30", ring: "ring-amber-500" },
+  sky: { bg: "bg-sky-500/10", text: "text-sky-700", border: "border-sky-500/30", ring: "ring-sky-500" },
+  pink: { bg: "bg-pink-500/10", text: "text-pink-700", border: "border-pink-500/30", ring: "ring-pink-500" },
 };
 
 interface Props {
@@ -752,7 +752,7 @@ export default function ChapterNotesReaderClient({
               </div>
 
               {/* ── High-Converting Practice PYQs CTA Card ── */}
-              <div className="rounded-3xl border-2 border-blue-200 bg-gradient-to-br from-slate-900 via-indigo-950 to-blue-950 p-6 sm:p-8 text-white shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-6">
+              <div className="rounded-3xl border border-blue-200 bg-gradient-to-br from-blue-700 via-indigo-700 to-indigo-800 p-6 sm:p-8 text-white shadow-lg flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div className="space-y-2 max-w-xl">
                   <div className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-wider bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full border border-blue-400/30">
                     <Zap className="w-3.5 h-3.5 text-amber-300 fill-amber-300" />
@@ -1058,12 +1058,12 @@ export default function ChapterNotesReaderClient({
           box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
         }
         .notes-table th {
-          background: #1e293b;
-          color: #ffffff;
+          background: #f1f5f9;
+          color: #0f172a;
           padding: 0.75rem 1rem;
           text-align: left;
-          font-weight: 700;
-          border: 1px solid #334155;
+          font-weight: 800;
+          border: 1px solid #cbd5e1;
         }
         .notes-table td {
           padding: 0.65rem 1rem;
@@ -1091,17 +1091,19 @@ export default function ChapterNotesReaderClient({
           color: #1e3a8a;
         }
         .formula-card {
-          background: #0f172a;
-          color: #f8fafc;
+          background: #f8fafc;
+          color: #0f172a;
           padding: 1.25rem 1.5rem;
           border-radius: 1rem;
           margin: 1.25rem 0;
+          border: 1.5px solid #cbd5e1;
+          border-left: 5px solid #2563eb;
           font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
         }
         .formula-card code {
-          background: rgba(255, 255, 255, 0.15);
-          color: #38bdf8;
+          background: #e2e8f0;
+          color: #1d4ed8;
           padding: 0.2rem 0.4rem;
           border-radius: 0.375rem;
           font-weight: bold;

@@ -86,25 +86,25 @@ export default function BlogContentInteractive({ content }: Props) {
     <div className="space-y-6">
       {/* Bilingual Language Switcher (if article is bilingual) */}
       {isBilingual && (
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-slate-900 text-white p-3.5 sm:p-4 rounded-2xl shadow-md border border-slate-800">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-slate-100 text-slate-900 p-3.5 sm:p-4 rounded-2xl shadow-xs border border-slate-200">
           <div className="flex items-center gap-2">
-            <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-blue-600/30 text-blue-400 border border-blue-500/30">
+            <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-blue-100 text-blue-700 border border-blue-200">
               <Languages className="h-4 w-4" />
             </span>
             <div>
-              <p className="text-xs font-bold text-white">Choose Language Mode / भाषा चुनें</p>
-              <p className="text-[11px] text-slate-400">Read in Dual Bilingual, English Only, or Hindi Only</p>
+              <p className="text-xs font-bold text-slate-900">Choose Language Mode / भाषा चुनें</p>
+              <p className="text-[11px] text-slate-500">Read in Dual Bilingual, English Only, or Hindi Only</p>
             </div>
           </div>
 
-          <div className="inline-flex rounded-xl bg-slate-800 p-1 border border-slate-700/80">
+          <div className="inline-flex rounded-xl bg-white p-1 border border-slate-200 shadow-2xs">
             <button
               type="button"
               onClick={() => setLangMode("bilingual")}
               className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all cursor-pointer ${
                 langMode === "bilingual"
                   ? "bg-blue-600 text-white shadow-xs"
-                  : "text-slate-300 hover:text-white hover:bg-slate-700"
+                  : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
               }`}
             >
               🌐 Bilingual (द्विभाषी)
@@ -115,7 +115,7 @@ export default function BlogContentInteractive({ content }: Props) {
               className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all cursor-pointer ${
                 langMode === "english"
                   ? "bg-blue-600 text-white shadow-xs"
-                  : "text-slate-300 hover:text-white hover:bg-slate-700"
+                  : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
               }`}
             >
               English
@@ -126,7 +126,7 @@ export default function BlogContentInteractive({ content }: Props) {
               className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all cursor-pointer ${
                 langMode === "hindi"
                   ? "bg-blue-600 text-white shadow-xs"
-                  : "text-slate-300 hover:text-white hover:bg-slate-700"
+                  : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
               }`}
             >
               हिन्दी
@@ -367,12 +367,12 @@ export default function BlogContentInteractive({ content }: Props) {
           border: 1px solid #e2e8f0;
         }
         .notes-table th {
-          background: #0f172a;
-          color: #ffffff;
+          background: #f1f5f9;
+          color: #0f172a;
           font-weight: 800;
           text-align: left;
           padding: 14px 18px;
-          border: 1px solid #1e293b;
+          border: 1px solid #cbd5e1;
         }
         .notes-table td {
           padding: 12px 18px;

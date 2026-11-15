@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { supabase } from "@/lib/supabase";
 import {
   CheckCircle,
@@ -14,17 +14,20 @@ import {
   Filter,
   Layers,
   Sparkles,
+  Tag,
+  BookOpen,
 } from "lucide-react";
 import { resolveAssetUrl } from "@/lib/utils";
 import MathText from "@/components/MathText";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
-export type ReviewStatus = "pending" | "approved" | "rejected" | "skipped";
-export type FilterStatus = "pending" | "approved" | "rejected" | "skipped" | "all";
-export type CategoryFilter = "all" | "maths" | "reasoning" | "gk" | "english";
-export type CategoryType = "maths" | "reasoning" | "gk" | "english" | "unknown";
+type ReviewStatus = "pending" | "approved" | "rejected" | "skipped";
+type FilterStatus = "pending" | "approved" | "rejected" | "skipped" | "all";
+type CategoryFilter = "all" | "maths" | "reasoning" | "gk" | "english";
+type CategoryType = "maths" | "reasoning" | "gk" | "english" | "unknown";
+type IssueTypeFilter = "all" | "figure" | "table" | "formula" | "passage" | "improvement" | "visual_tricks";
 
-export interface ReviewRow {
+interface ReviewRow {
   id: number;
   question_id: number;
   paper_id: number;
@@ -42,7 +45,7 @@ export interface ReviewRow {
 }
 
 // ─── Category Detection ──────────────────────────────────────────────────────
-export function getQuestionCategory(qNum: number | null, notes?: string | null): CategoryType {
+function getQuestionCategory(qNum: number | null, notes?: string | null): CategoryType {
   if (notes) {
     const lower = notes.toLowerCase();
     if (lower.includes("[reasoning]") || lower.includes("reasoning")) return "reasoning";
@@ -58,7 +61,33 @@ export function getQuestionCategory(qNum: number | null, notes?: string | null):
   return "unknown";
 }
 
-export const CATEGORY_CONFIG: Record<CategoryType, { label: string; hindi: string; icon: string; color: string; bg: string; border: string }> = {
+// ─── Issue Type Detection ────────────────────────────────────────────────────
+function getIssueType(row: ReviewRow): { type: IssueTypeFilter; label: string; badgeColor: string } {
+  const notes = (row.review_notes || "").toLowerCase();
+  const text = (row.original_text || "").toLowerCase();
+
+  if (notes.includes("mirror image") || notes.includes("dice") || notes.includes("unfolded") || notes.includes("paper folding") || notes.includes("analogy") || notes.includes("venn")) {
+    return { type: "visual_tricks", label: "Dice / Mirror / Visual", badgeColor: "#c084fc" };
+  }
+  if (notes.includes("match table") || notes.includes("di table") || notes.includes("table") || text.includes("column a") || text.includes("match the following")) {
+    return { type: "table", label: "Table / Match Columns", badgeColor: "#38bdf8" };
+  }
+  if (notes.includes("passage") || text.includes("comprehension") || text.includes("read the passage") || text.includes("cloze")) {
+    return { type: "passage", label: "Passage / Cloze Test", badgeColor: "#fbbf24" };
+  }
+  if (notes.includes("sentence improvement") || text.includes("underlined") || text.includes("bracketed") || text.includes("[")) {
+    return { type: "improvement", label: "Sentence Improvement", badgeColor: "#f472b6" };
+  }
+  if (notes.includes("math formula") || text.includes("\\frac") || text.includes("\\sqrt") || text.includes("\\theta")) {
+    return { type: "formula", label: "Math & Formula", badgeColor: "#60a5fa" };
+  }
+  if (row.source_image_url || text.includes("![]") || text.includes("figure") || text.includes(".png")) {
+    return { type: "figure", label: "Figure / Image Crop", badgeColor: "#a78bfa" };
+  }
+  return { type: "all", label: "General Issue", badgeColor: "#94a3b8" };
+}
+
+const CATEGORY_CONFIG: Record<CategoryType, { label: string; hindi: string; icon: string; color: string; bg: string; border: string }> = {
   maths: {
     label: "Mathematics",
     hindi: "गणित (Q.51–75)",
@@ -101,7 +130,7 @@ export const CATEGORY_CONFIG: Record<CategoryType, { label: string; hindi: strin
   },
 };
 
-// ─── Image URL Helper ────────────────────────────────────────────────────────
+// ─── Image Helper ────────────────────────────────────────────────────────────
 function extractImageUrl(text?: string | null, sourceUrl?: string | null): string | null {
   if (sourceUrl && sourceUrl.trim()) return sourceUrl.trim();
   if (!text) return null;
@@ -109,26 +138,27 @@ function extractImageUrl(text?: string | null, sourceUrl?: string | null): strin
   return m ? m[1].trim() : null;
 }
 
-// ─── Main Review Component ───────────────────────────────────────────────────
+// ─── Universal Review Page Component ─────────────────────────────────────────
 export default function UniversalReviewPage() {
-  const [allRows, setAllRows]               = useState<ReviewRow[]>([]);
-  const [loading, setLoading]               = useState(true);
-  const [saving, setSaving]                 = useState<number | null>(null);
-  const [filterCategory, setFilterCategory] = useState<CategoryFilter>("all");
-  const [filterStatus, setFilterStatus]     = useState<FilterStatus>("pending");
-  const [searchTerm, setSearchTerm]         = useState("");
-  const [page, setPage]                     = useState(0);
-  const [editValues, setEditValues]         = useState<Record<number, string>>({});
-  const [notes, setNotes]                   = useState<Record<number, string>>({});
-  const [papersMap, setPapersMap]           = useState<Record<number, { title: string; year: number }>>({});
-  const [msg, setMsg]                       = useState<{ text: string; ok: boolean } | null>(null);
+  const [allRows, setAllRows]                 = useState<ReviewRow[]>([]);
+  const [loading, setLoading]                 = useState(true);
+  const [saving, setSaving]                   = useState<number | null>(null);
+  const [filterCategory, setFilterCategory]   = useState<CategoryFilter>("all");
+  const [filterStatus, setFilterStatus]       = useState<FilterStatus>("pending");
+  const [filterIssueType, setFilterIssueType] = useState<IssueTypeFilter>("all");
+  const [selectedPaperId, setSelectedPaperId] = useState<string>("all");
+  const [searchTerm, setSearchTerm]           = useState("");
+  const [page, setPage]                       = useState(0);
+  const [editValues, setEditValues]           = useState<Record<number, string>>({});
+  const [notes, setNotes]                     = useState<Record<number, string>>({});
+  const [papersMap, setPapersMap]             = useState<Record<number, { title: string; year: number }>>({});
+  const [msg, setMsg]                         = useState<{ text: string; ok: boolean } | null>(null);
 
   const PAGE_SIZE = 10;
 
   // ── Fetch rows ────────────────────────────────────────────────────────────
   const fetchRows = useCallback(async () => {
     setLoading(true);
-    // Fetch all rows from math_review table (which now holds all categories)
     const { data, error } = await supabase
       .from("math_review")
       .select("*")
@@ -140,7 +170,6 @@ export default function UniversalReviewPage() {
       const rows = data ?? [];
       setAllRows(rows);
 
-      // Pre-fill edit inputs with admin_latex or suggested_latex
       const edits: Record<number, string> = {};
       const noteMap: Record<number, string> = {};
       for (const r of rows) {
@@ -150,7 +179,6 @@ export default function UniversalReviewPage() {
       setEditValues(edits);
       setNotes(noteMap);
 
-      // Fetch paper titles
       if (rows.length > 0) {
         const paperIds = Array.from(new Set(rows.map((r) => r.paper_id)));
         supabase
@@ -175,7 +203,7 @@ export default function UniversalReviewPage() {
     fetchRows();
   }, [fetchRows]);
 
-  // Auto-clear notification
+  // Flash timer
   useEffect(() => {
     if (!msg) return;
     const t = setTimeout(() => setMsg(null), 3500);
@@ -224,14 +252,13 @@ export default function UniversalReviewPage() {
       setMsg({
         text:
           newStatus === "approved"
-            ? "✅ Approved & applied to live DB!"
+            ? "✅ Approved & applied directly to live question!"
             : newStatus === "rejected"
             ? "❌ Rejected."
-            : "⏭ Skipped.",
+            : "⏭ Skipped for later.",
         ok: newStatus === "approved",
       });
 
-      // Update local state smoothly
       setAllRows((prev) =>
         prev.map((r) =>
           r.id === id
@@ -246,7 +273,7 @@ export default function UniversalReviewPage() {
     }
   }
 
-  // ── Filter & Compute Counts ────────────────────────────────────────────────
+  // ── Compute Counts ────────────────────────────────────────────────────────
   const countsByStatus: Record<FilterStatus, number> = {
     pending: 0,
     approved: 0,
@@ -256,11 +283,21 @@ export default function UniversalReviewPage() {
   };
 
   const countsByCategory: Record<CategoryFilter, number> = {
-    all: 0,
+    all: allRows.length,
     maths: 0,
     reasoning: 0,
     gk: 0,
     english: 0,
+  };
+
+  const countsByIssueType: Record<IssueTypeFilter, number> = {
+    all: allRows.length,
+    figure: 0,
+    table: 0,
+    formula: 0,
+    passage: 0,
+    improvement: 0,
+    visual_tricks: 0,
   };
 
   allRows.forEach((r) => {
@@ -269,36 +306,63 @@ export default function UniversalReviewPage() {
     if (cat in countsByCategory) {
       countsByCategory[cat as CategoryFilter] = (countsByCategory[cat as CategoryFilter] || 0) + 1;
     }
-  });
-  countsByCategory.all = allRows.length;
-
-  // Filtered rows for current selection
-  const filteredRows = allRows.filter((row) => {
-    // 1. Status Filter
-    if (filterStatus !== "all" && row.status !== filterStatus) return false;
-
-    // 2. Category Filter
-    if (filterCategory !== "all") {
-      const cat = getQuestionCategory(row.question_number, row.review_notes);
-      if (cat !== filterCategory) return false;
+    const issue = getIssueType(r);
+    if (issue.type in countsByIssueType) {
+      countsByIssueType[issue.type] = (countsByIssueType[issue.type] || 0) + 1;
     }
-
-    // 3. Search Filter
-    if (searchTerm.trim()) {
-      const term = searchTerm.toLowerCase();
-      const matchText = (row.original_text || "").toLowerCase().includes(term);
-      const matchFix = (editValues[row.id] || "").toLowerCase().includes(term);
-      const matchNotes = (row.review_notes || "").toLowerCase().includes(term);
-      const matchQNum = String(row.question_number || "").includes(term);
-      const matchQId = String(row.question_id).includes(term);
-      if (!matchText && !matchFix && !matchNotes && !matchQNum && !matchQId) return false;
-    }
-
-    return true;
   });
+
+  // ── Filtered Rows ─────────────────────────────────────────────────────────
+  const filteredRows = useMemo(() => {
+    return allRows.filter((row) => {
+      // 1. Status Filter
+      if (filterStatus !== "all" && row.status !== filterStatus) return false;
+
+      // 2. Category Filter
+      if (filterCategory !== "all") {
+        const cat = getQuestionCategory(row.question_number, row.review_notes);
+        if (cat !== filterCategory) return false;
+      }
+
+      // 3. Issue Type Filter
+      if (filterIssueType !== "all") {
+        const issue = getIssueType(row);
+        if (issue.type !== filterIssueType) return false;
+      }
+
+      // 4. Paper Filter
+      if (selectedPaperId !== "all" && String(row.paper_id) !== selectedPaperId) {
+        return false;
+      }
+
+      // 5. Search Filter
+      if (searchTerm.trim()) {
+        const term = searchTerm.toLowerCase();
+        const matchText = (row.original_text || "").toLowerCase().includes(term);
+        const matchFix = (editValues[row.id] || "").toLowerCase().includes(term);
+        const matchNotes = (row.review_notes || "").toLowerCase().includes(term);
+        const matchQNum = String(row.question_number || "").includes(term);
+        const matchQId = String(row.question_id).includes(term);
+        if (!matchText && !matchFix && !matchNotes && !matchQNum && !matchQId) return false;
+      }
+
+      return true;
+    });
+  }, [allRows, filterStatus, filterCategory, filterIssueType, selectedPaperId, searchTerm, editValues]);
 
   const totalPages = Math.ceil(filteredRows.length / PAGE_SIZE);
   const paginatedRows = filteredRows.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
+
+  // List of unique papers in the current dataset
+  const uniquePapers = useMemo(() => {
+    const map = new Map<number, string>();
+    allRows.forEach((r) => {
+      if (!map.has(r.paper_id)) {
+        map.set(r.paper_id, papersMap[r.paper_id]?.title || `Paper #${r.paper_id}`);
+      }
+    });
+    return Array.from(map.entries()).sort((a, b) => b[0] - a[0]);
+  }, [allRows, papersMap]);
 
   return (
     <div style={{ maxWidth: 1400, margin: "0 auto", paddingBottom: "3rem" }}>
@@ -308,40 +372,39 @@ export default function UniversalReviewPage() {
           <div className="page-title" style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
             <span style={{ fontSize: "1.5rem" }}>🎯</span>
             <span>Question Review & Approval Center</span>
-            <span style={{ fontSize: "0.75rem", background: "#3b82f6", color: "#fff", padding: "0.2rem 0.6rem", borderRadius: 9999, fontWeight: 800 }}>
-              All 4 Subjects
+            <span style={{ fontSize: "0.75rem", background: "#3b82f6", color: "#fff", padding: "0.2rem 0.65rem", borderRadius: 9999, fontWeight: 800 }}>
+              {allRows.length} Total Issues
             </span>
           </div>
           <div className="page-subtitle">
-            Review questions with figures, tables, formulas, or formatting issues across <strong>Mathematics, Reasoning, GK/GS, and English</strong>. Approve to apply directly to live tests.
+            हर प्रकार के एरर (Figures, Math Formulas, Match Tables, Reading Passages, Cloze Blanks, Sentence Improvement) को विषय-वार रिव्यू करें और एक क्लिक में लाइव टेस्ट में लागू करें।
           </div>
         </div>
         <button className="a-btn a-btn-ghost" onClick={fetchRows} disabled={loading}>
-          <RefreshCw size={14} className={loading ? "animate-spin" : ""} /> Refresh Data
+          <RefreshCw size={14} className={loading ? "animate-spin" : ""} /> Refresh
         </button>
       </div>
 
-      {/* ── Category Filter Tabs (Top Bar) ── */}
+      {/* ── Category Filter Tabs (Subject Switcher) ── */}
       <div style={{
         background: "rgba(255,255,255,0.035)",
         border: "1px solid rgba(255,255,255,0.08)",
         borderRadius: 14,
-        padding: "0.5rem 0.6rem",
-        marginBottom: "1rem",
+        padding: "0.5rem 0.65rem",
+        marginBottom: "0.75rem",
         display: "flex",
         gap: "0.5rem",
         flexWrap: "wrap",
         alignItems: "center"
       }}>
-        <div style={{ fontSize: "0.75rem", fontWeight: 800, color: "rgba(226,232,240,0.5)", textTransform: "uppercase", padding: "0 0.5rem", display: "flex", alignItems: "center", gap: "0.3rem" }}>
+        <div style={{ fontSize: "0.75rem", fontWeight: 800, color: "rgba(226,232,240,0.5)", textTransform: "uppercase", padding: "0 0.4rem", display: "flex", alignItems: "center", gap: "0.3rem" }}>
           <Layers size={13} />
           Subject:
         </div>
 
-        {/* Tab Buttons */}
         {(
           [
-            { key: "all",       label: "All Subjects", icon: "🌐", hindi: "सभी विषय", color: "#60a5fa" },
+            { key: "all",       label: "All Subjects", icon: "🌐", hindi: "सभी 4 विषय", color: "#60a5fa" },
             { key: "maths",     label: "Mathematics", icon: "🧮", hindi: "गणित (Q51-75)", color: "#60a5fa" },
             { key: "reasoning", label: "Reasoning",   icon: "🧠", hindi: "रीजनिंग (Q1-25)", color: "#c084fc" },
             { key: "gk",        label: "GK / GS",     icon: "🌍", hindi: "सामान्य ज्ञान (Q26-50)", color: "#34d399" },
@@ -358,7 +421,7 @@ export default function UniversalReviewPage() {
                 display: "inline-flex",
                 alignItems: "center",
                 gap: "0.45rem",
-                padding: "0.45rem 0.85rem",
+                padding: "0.42rem 0.85rem",
                 borderRadius: 10,
                 border: isActive ? `1.5px solid ${tab.color}` : "1px solid rgba(255,255,255,0.08)",
                 background: isActive ? "rgba(255,255,255,0.12)" : "rgba(255,255,255,0.03)",
@@ -386,7 +449,63 @@ export default function UniversalReviewPage() {
         })}
       </div>
 
-      {/* ── Status Bar & Search Filter ── */}
+      {/* ── Specific Issue Type Filter Bar (हर प्रकार के Error) ── */}
+      <div style={{
+        background: "rgba(255,255,255,0.02)",
+        border: "1px solid rgba(255,255,255,0.06)",
+        borderRadius: 12,
+        padding: "0.45rem 0.65rem",
+        marginBottom: "1rem",
+        display: "flex",
+        gap: "0.4rem",
+        flexWrap: "wrap",
+        alignItems: "center"
+      }}>
+        <div style={{ fontSize: "0.72rem", fontWeight: 800, color: "rgba(226,232,240,0.5)", textTransform: "uppercase", padding: "0 0.4rem", display: "flex", alignItems: "center", gap: "0.3rem" }}>
+          <Tag size={12} />
+          Error Type:
+        </div>
+
+        {(
+          [
+            { key: "all",           label: "All Types",              icon: "⚡", color: "#94a3b8" },
+            { key: "figure",        label: "Figures & Images",       icon: "🖼️", color: "#a78bfa" },
+            { key: "table",         label: "Match & DI Tables",      icon: "📊", color: "#38bdf8" },
+            { key: "formula",       label: "Math & Formulas",        icon: "➗", color: "#60a5fa" },
+            { key: "passage",       label: "Passages & Cloze",       icon: "📑", color: "#fbbf24" },
+            { key: "improvement",   label: "Sentence Improvement",   icon: "✍️", color: "#f472b6" },
+            { key: "visual_tricks", label: "Dice & Mirror Visuals",  icon: "🎲", color: "#c084fc" },
+          ] as const
+        ).map((item) => {
+          const isActive = filterIssueType === item.key;
+          const count = countsByIssueType[item.key];
+          return (
+            <button
+              key={item.key}
+              onClick={() => { setFilterIssueType(item.key); setPage(0); }}
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0.35rem",
+                padding: "0.3rem 0.65rem",
+                borderRadius: 8,
+                border: isActive ? `1.5px solid ${item.color}` : "1px solid rgba(255,255,255,0.06)",
+                background: isActive ? `${item.color}22` : "rgba(255,255,255,0.02)",
+                color: isActive ? item.color : "rgba(226,232,240,0.6)",
+                fontSize: "0.75rem",
+                fontWeight: isActive ? 800 : 600,
+                cursor: "pointer",
+              }}
+            >
+              <span>{item.icon}</span>
+              <span>{item.label}</span>
+              <span style={{ opacity: 0.8, fontSize: "0.7rem" }}>({count})</span>
+            </button>
+          );
+        })}
+      </div>
+
+      {/* ── Status Bar, Paper Dropdown & Search Filter ── */}
       <div style={{
         display: "flex",
         justifyContent: "space-between",
@@ -396,7 +515,7 @@ export default function UniversalReviewPage() {
         marginBottom: "1.25rem",
       }}>
         {/* Status Chips */}
-        <div style={{ display: "flex", gap: "0.45rem", flexWrap: "wrap" }}>
+        <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap" }}>
           {(
             [
               { key: "pending",  label: "Pending",  color: "#fbbf24" },
@@ -415,44 +534,71 @@ export default function UniversalReviewPage() {
                 style={{
                   display: "inline-flex",
                   alignItems: "center",
-                  gap: "0.4rem",
-                  padding: "0.35rem 0.75rem",
+                  gap: "0.35rem",
+                  padding: "0.32rem 0.7rem",
                   borderRadius: 8,
                   border: isActive ? `1.5px solid ${s.color}` : "1px solid rgba(255,255,255,0.07)",
                   background: isActive ? `${s.color}22` : "rgba(255,255,255,0.03)",
                   color: isActive ? s.color : "rgba(226,232,240,0.6)",
-                  fontSize: "0.78rem",
+                  fontSize: "0.76rem",
                   fontWeight: 700,
                   cursor: "pointer",
                 }}
               >
                 <span style={{ width: 6, height: 6, borderRadius: "50%", background: s.color }} />
                 <span>{s.label}</span>
-                <span style={{ opacity: 0.8, fontSize: "0.72rem" }}>({count})</span>
+                <span style={{ opacity: 0.8, fontSize: "0.7rem" }}>({count})</span>
               </button>
             );
           })}
         </div>
 
-        {/* Search Input */}
-        <div style={{ position: "relative", minWidth: 260 }}>
-          <Search size={14} style={{ position: "absolute", left: 10, top: "50%", transform: "translateY(-50%)", color: "rgba(226,232,240,0.4)" }} />
-          <input
-            type="text"
-            placeholder="Search text, Q#, Paper..."
-            value={searchTerm}
-            onChange={(e) => { setSearchTerm(e.target.value); setPage(0); }}
+        {/* Paper Filter & Search Bar */}
+        <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap", alignItems: "center" }}>
+          {/* Paper Select Dropdown */}
+          <select
+            value={selectedPaperId}
+            onChange={(e) => { setSelectedPaperId(e.target.value); setPage(0); }}
             style={{
-              width: "100%",
-              padding: "0.4rem 0.75rem 0.4rem 2rem",
+              padding: "0.38rem 0.75rem",
               background: "rgba(255,255,255,0.045)",
               border: "1px solid rgba(255,255,255,0.1)",
               borderRadius: 8,
               color: "#fff",
-              fontSize: "0.8rem",
+              fontSize: "0.78rem",
               outline: "none",
+              cursor: "pointer",
+              maxWidth: 240,
             }}
-          />
+          >
+            <option value="all" style={{ background: "#0f172a" }}>All Papers ({uniquePapers.length})</option>
+            {uniquePapers.map(([pid, title]) => (
+              <option key={pid} value={String(pid)} style={{ background: "#0f172a" }}>
+                {title.length > 32 ? title.slice(0, 32) + "..." : title}
+              </option>
+            ))}
+          </select>
+
+          {/* Search Input */}
+          <div style={{ position: "relative", minWidth: 220 }}>
+            <Search size={14} style={{ position: "absolute", left: 10, top: "50%", transform: "translateY(-50%)", color: "rgba(226,232,240,0.4)" }} />
+            <input
+              type="text"
+              placeholder="Search Q#, text, notes..."
+              value={searchTerm}
+              onChange={(e) => { setSearchTerm(e.target.value); setPage(0); }}
+              style={{
+                width: "100%",
+                padding: "0.38rem 0.75rem 0.38rem 2rem",
+                background: "rgba(255,255,255,0.045)",
+                border: "1px solid rgba(255,255,255,0.1)",
+                borderRadius: 8,
+                color: "#fff",
+                fontSize: "0.78rem",
+                outline: "none",
+              }}
+            />
+          </div>
         </div>
       </div>
 
@@ -476,7 +622,7 @@ export default function UniversalReviewPage() {
       {loading && (
         <div style={{ textAlign: "center", padding: "4rem", color: "rgba(226,232,240,0.5)" }}>
           <RefreshCw size={24} className="animate-spin" style={{ margin: "0 auto 0.75rem auto" }} />
-          Loading review questions...
+          Loading questions across all categories...
         </div>
       )}
 
@@ -485,12 +631,12 @@ export default function UniversalReviewPage() {
         <div className="a-card" style={{ textAlign: "center", padding: "4rem 2rem" }}>
           <div style={{ fontSize: "3rem", marginBottom: "0.5rem" }}>🎉</div>
           <h3 style={{ fontSize: "1.2rem", fontWeight: 800, color: "#fff", marginBottom: "0.3rem" }}>
-            No Questions Found
+            No Questions Match Filters
           </h3>
           <p style={{ color: "rgba(226,232,240,0.5)", fontSize: "0.88rem", maxWidth: 450, margin: "0 auto" }}>
             {filterStatus === "pending"
-              ? "All pending questions in this category have been reviewed and approved!"
-              : `No questions found matching "${filterCategory}" with status "${filterStatus}".`}
+              ? "All pending questions matching this criteria have been approved!"
+              : `No questions found matching Category "${filterCategory}", Error Type "${filterIssueType}", Status "${filterStatus}".`}
           </p>
         </div>
       )}
@@ -502,6 +648,7 @@ export default function UniversalReviewPage() {
         const paperInfo = papersMap[row.paper_id];
         const category = getQuestionCategory(row.question_number, row.review_notes);
         const catConfig = CATEGORY_CONFIG[category];
+        const issue = getIssueType(row);
 
         return (
           <div
@@ -515,8 +662,8 @@ export default function UniversalReviewPage() {
           >
             {/* Header / Badges */}
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.85rem", flexWrap: "wrap", gap: "0.5rem" }}>
-              <div style={{ display: "flex", gap: "0.5rem", alignItems: "center", flexWrap: "wrap" }}>
-                {/* Category Pill */}
+              <div style={{ display: "flex", gap: "0.45rem", alignItems: "center", flexWrap: "wrap" }}>
+                {/* Subject Badge */}
                 <span
                   style={{
                     display: "inline-flex",
@@ -535,6 +682,21 @@ export default function UniversalReviewPage() {
                   <span>{catConfig.label}</span>
                 </span>
 
+                {/* Specific Issue Type Tag */}
+                <span
+                  style={{
+                    fontSize: "0.72rem",
+                    fontWeight: 800,
+                    color: issue.badgeColor,
+                    background: "rgba(255,255,255,0.06)",
+                    border: `1px solid ${issue.badgeColor}44`,
+                    padding: "0.2rem 0.55rem",
+                    borderRadius: 6,
+                  }}
+                >
+                  {issue.label}
+                </span>
+
                 {/* Question Number Badge */}
                 {row.question_number && (
                   <span style={{ fontSize: "0.82rem", fontWeight: 800, color: "#fbbf24", background: "rgba(251,191,36,0.12)", border: "1px solid rgba(251,191,36,0.25)", padding: "0.2rem 0.6rem", borderRadius: 6 }}>
@@ -551,7 +713,7 @@ export default function UniversalReviewPage() {
                   {row.status.toUpperCase()}
                 </span>
 
-                {/* Paper Info */}
+                {/* Paper Title */}
                 <span style={{ fontSize: "0.78rem", fontWeight: 700, color: "#fff", background: "rgba(255,255,255,0.08)", padding: "0.2rem 0.6rem", borderRadius: 6 }}>
                   {paperInfo?.title || `Paper #${row.paper_id}`}
                 </span>
@@ -571,7 +733,7 @@ export default function UniversalReviewPage() {
               </div>
             </div>
 
-            {/* Three Column Review Workbench: Original | Editable Fix | Live Preview */}
+            {/* Three Column Review Workbench: Original | Editable Fix | Live Student Preview */}
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem", marginBottom: "0.85rem" }}>
               {/* Column 1: Original in DB */}
               <div>
@@ -731,7 +893,7 @@ export default function UniversalReviewPage() {
             <ChevronLeft size={14} /> Prev Page
           </button>
           <span style={{ color: "rgba(226,232,240,0.6)", fontSize: "0.85rem", fontWeight: 700 }}>
-            Page {page + 1} of {totalPages} ({filteredRows.length} total items)
+            Page {page + 1} of {totalPages} ({filteredRows.length} total items in current filter)
           </span>
           <button className="a-btn a-btn-ghost a-btn-sm" disabled={page >= totalPages - 1} onClick={() => setPage((p) => p + 1)}>
             Next Page <ChevronRight size={14} />

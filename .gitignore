@@ -59,6 +59,7 @@ scripts/*.png
 scripts/*.jpeg
 scripts/debug_*
 scripts/__pycache__/
+scripts/scratch/
 scripts/scratch_imgs/
 tsconfig.tsbuildinfo
 compiled_verification_txt/

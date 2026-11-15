@@ -630,6 +630,15 @@ let cachedNotesList: { data: ChapterNote[]; expiresAt: number } | null = null;
 const singleNoteCache = new Map<string, { data: ChapterNote; expiresAt: number }>();
 const CACHE_TTL_MS = 5 * 60 * 1000; // 5 minutes cache
 
+export function invalidateChapterNotesCache(slug?: string) {
+  cachedNotesList = null;
+  if (slug) {
+    singleNoteCache.delete(slug);
+  } else {
+    singleNoteCache.clear();
+  }
+}
+
 /**
  * Dynamic asynchronous reader that synchronizes with Supabase `blogs` table
  * Excludes heavy HTML `content` to minimize database egress on listing/sidebar requests

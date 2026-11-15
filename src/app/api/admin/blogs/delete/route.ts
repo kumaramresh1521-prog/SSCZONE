@@ -34,10 +34,17 @@ export async function POST(req: NextRequest) {
 
     // Purge caches immediately
     revalidatePath("/blog");
+    revalidatePath("/blog/notes");
     revalidatePath("/");
     if (existing?.slug) {
       revalidatePath(`/blog/${existing.slug}`);
+      revalidatePath(`/blog/notes/${existing.slug}`);
     }
+
+    try {
+      const { invalidateChapterNotesCache } = await import("@/lib/chapter-notes-store");
+      invalidateChapterNotesCache(existing?.slug);
+    } catch {}
 
     return NextResponse.json({ success: true, id });
   } catch (err: any) {

@@ -140,10 +140,17 @@ export async function POST(req: NextRequest) {
 
     // Instantly purge public caches
     revalidatePath("/blog");
+    revalidatePath("/blog/notes");
     revalidatePath("/");
     if (result?.slug) {
       revalidatePath(`/blog/${result.slug}`);
+      revalidatePath(`/blog/notes/${result.slug}`);
     }
+
+    try {
+      const { invalidateChapterNotesCache } = await import("@/lib/chapter-notes-store");
+      invalidateChapterNotesCache(result?.slug);
+    } catch {}
 
     return NextResponse.json({
       success: true,

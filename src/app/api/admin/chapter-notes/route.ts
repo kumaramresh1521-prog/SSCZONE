@@ -106,6 +106,49 @@ export async function POST(req: NextRequest) {
       keywords: Array.isArray(keywords) ? keywords : typeof keywords === "string" ? keywords.split(",").map((k: string) => k.trim()).filter(Boolean) : undefined,
     });
 
+    // 2. Sync to Supabase blogs table for zero-deployment live publishing
+    try {
+      const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+      const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+      if (supabaseUrl && supabaseServiceKey) {
+        const { createClient } = await import("@supabase/supabase-js");
+        const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey);
+
+        const meta = {
+          hindiTitle: saved.hindi_title,
+          readTime: saved.read_time,
+          examTag: saved.exam_tag,
+          category: saved.subject_id || "general",
+          focus: saved.title,
+          secondary: saved.keywords || [],
+        };
+
+        await supabaseAdmin.from("blogs").upsert(
+          {
+            slug: saved.slug,
+            title: saved.title,
+            excerpt: saved.excerpt || "",
+            content: saved.content,
+            keywords: JSON.stringify(meta),
+            is_published: saved.is_active,
+            image_url: saved.image_url || null,
+            updated_at: new Date().toISOString(),
+          },
+          { onConflict: "slug" }
+        );
+      }
+
+      const { revalidatePath } = await import("next/cache");
+      revalidatePath("/blog/notes");
+      if (saved.slug) {
+        revalidatePath(`/blog/notes/${saved.slug}`);
+      }
+      const { invalidateChapterNotesCache } = await import("@/lib/chapter-notes-store");
+      invalidateChapterNotesCache(saved.slug);
+    } catch (e) {
+      console.error("Error syncing chapter note to Supabase:", e);
+    }
+
     return NextResponse.json({ success: true, note: saved });
   } catch (err: any) {
     console.error("Admin chapter notes POST error:", err);
@@ -127,6 +170,29 @@ export async function PATCH(req: NextRequest) {
     const updated = toggleChapterNoteStatus(id, body.is_active);
     if (!updated) {
       return NextResponse.json({ error: "Note not found" }, { status: 404 });
+    }
+
+    try {
+      const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+      const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+      if (supabaseUrl && supabaseServiceKey) {
+        const { createClient } = await import("@supabase/supabase-js");
+        const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey);
+        await supabaseAdmin
+          .from("blogs")
+          .update({
+            is_published: updated.is_active,
+            updated_at: new Date().toISOString(),
+          })
+          .eq("slug", updated.slug);
+      }
+      const { revalidatePath } = await import("next/cache");
+      revalidatePath("/blog/notes");
+      revalidatePath(`/blog/notes/${updated.slug}`);
+      const { invalidateChapterNotesCache } = await import("@/lib/chapter-notes-store");
+      invalidateChapterNotesCache(updated.slug);
+    } catch (e) {
+      console.error("Error updating toggle in Supabase:", e);
     }
 
     return NextResponse.json({
@@ -153,6 +219,22 @@ export async function DELETE(req: NextRequest) {
     const ok = deleteChapterNote(id);
     if (!ok) {
       return NextResponse.json({ error: "Note not found or could not be deleted" }, { status: 404 });
+    }
+
+    try {
+      const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+      const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+      if (supabaseUrl && supabaseServiceKey) {
+        const { createClient } = await import("@supabase/supabase-js");
+        const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey);
+        await supabaseAdmin.from("blogs").delete().eq("id", id);
+      }
+      const { revalidatePath } = await import("next/cache");
+      revalidatePath("/blog/notes");
+      const { invalidateChapterNotesCache } = await import("@/lib/chapter-notes-store");
+      invalidateChapterNotesCache();
+    } catch (e) {
+      console.error("Error deleting from Supabase:", e);
     }
 
     return NextResponse.json({ success: true, message: "Chapter note deleted successfully" });

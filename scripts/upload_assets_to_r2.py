@@ -38,6 +38,7 @@ PUBLIC_DIR = os.path.join(REPO_ROOT, "public")
 ACTIVE_IMAGE_DIRS = [
     os.path.join(PUBLIC_DIR, "images", "pyq", "2023"),
     os.path.join(PUBLIC_DIR, "images", "pyq", "2024"),
+    os.path.join(PUBLIC_DIR, "images", "questions"),
 ]
 PAPERS_DIR = os.path.join(PUBLIC_DIR, "papers")
 

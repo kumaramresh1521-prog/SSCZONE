@@ -27,6 +27,7 @@ import {
 } from "lucide-react";
 
 import { translateToHindi, translateSingleQuestion } from "@/lib/translator";
+import { resolveAssetUrl } from "@/lib/utils";
 
 // ── Smart Bilingual Question Statement Parser ──
 function splitBilingualText(text?: string | null): { english: string; hindi: string; isBilingual: boolean } {
@@ -1480,7 +1481,7 @@ export default function PracticeClient({
                               })()}
 
                               {item.image_url && (
-                                <InteractiveImage src={item.image_url} alt="Question figure" />
+                                <InteractiveImage src={resolveAssetUrl(item.image_url)} alt="Question figure" />
                               )}
                             </div>
 
@@ -1707,15 +1708,15 @@ export default function PracticeClient({
                         {q.image_url && (
                           <div className="relative group inline-block mt-3 mb-2">
                             <img 
-                              src={q.image_url} 
+                              src={resolveAssetUrl(q.image_url)} 
                               alt="Question figure" 
-                              onClick={() => { setZoomedImage(q.image_url); setZoomScale(1); }}
+                              onClick={() => { setZoomedImage(resolveAssetUrl(q.image_url)); setZoomScale(1); }}
                               className="w-auto max-w-full sm:max-w-xl rounded-2xl border border-slate-200 bg-white p-1.5 sm:p-2 shadow-xs transition-all hover:shadow-md cursor-zoom-in" 
                               style={{ maxHeight: '520px', objectFit: 'contain' }}
                             />
                             <button
                               type="button"
-                              onClick={() => { setZoomedImage(q.image_url); setZoomScale(1); }}
+                              onClick={() => { setZoomedImage(resolveAssetUrl(q.image_url)); setZoomScale(1); }}
                               className="absolute bottom-3 right-3 flex items-center gap-1.5 rounded-xl bg-gray-900/85 hover:bg-gray-900 text-white px-3 py-1.5 text-xs font-extrabold shadow-lg backdrop-blur-xs transition-all cursor-pointer"
                             >
                               <Maximize2 className="h-3.5 w-3.5" />
@@ -1780,7 +1781,7 @@ export default function PracticeClient({
                                 {q[`option_${opt.toLowerCase()}_image_url`] && (
                                   <div className="mt-2 mb-1">
                                     <img 
-                                      src={q[`option_${opt.toLowerCase()}_image_url`]} 
+                                      src={resolveAssetUrl(q[`option_${opt.toLowerCase()}_image_url`])} 
                                       alt={`Option ${opt} figure`} 
                                       className="max-w-full rounded-md border border-gray-200/60 shadow-xs" 
                                       style={{ maxHeight: '150px', objectFit: 'contain' }}

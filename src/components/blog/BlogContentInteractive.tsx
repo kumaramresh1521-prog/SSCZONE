@@ -157,18 +157,62 @@ export default function BlogContentInteractive({ content }: Props) {
           display: block;
         }
 
-        /* Inline language spans */
-        .lang-mode-english span.lang-hi {
+        /* Inline language spans (Block-separated to prevent inline collision) */
+        .lang-mode-english span.lang-hi,
+        .lang-mode-english .lang-hi,
+        .lang-mode-english .lang-card-hi {
           display: none !important;
         }
-        .lang-mode-hindi span.lang-en {
+        .lang-mode-hindi span.lang-en,
+        .lang-mode-hindi .lang-en,
+        .lang-mode-hindi .lang-card-en {
           display: none !important;
         }
-        .lang-mode-bilingual span.lang-en {
-          display: inline;
+
+        /* Bilingual Headings: English primary on top, Hindi subtitle underneath */
+        .lang-mode-bilingual h1 span.lang-en,
+        .lang-mode-bilingual h2 span.lang-en,
+        .lang-mode-bilingual h3 span.lang-en,
+        .lang-mode-bilingual h4 span.lang-en {
+          display: block !important;
         }
-        .lang-mode-bilingual span.lang-hi {
-          display: inline;
+        .lang-mode-bilingual h1 span.lang-hi,
+        .lang-mode-bilingual h2 span.lang-hi,
+        .lang-mode-bilingual h3 span.lang-hi,
+        .lang-mode-bilingual h4 span.lang-hi {
+          display: block !important;
+          font-size: 0.85em;
+          color: #64748b;
+          font-weight: 600;
+          margin-top: 0.35rem;
+          line-height: 1.4;
+        }
+
+        /* Bilingual Paragraphs & List Items: English first, Hindi cleanly indented underneath */
+        .lang-mode-bilingual p span.lang-en {
+          display: block !important;
+          margin-bottom: 0.35rem;
+        }
+        .lang-mode-bilingual p span.lang-hi {
+          display: block !important;
+          padding: 0.5rem 0.85rem;
+          background: #f8fafc;
+          border-left: 3px solid #10b981;
+          border-radius: 0 0.5rem 0.5rem 0;
+          color: #1e293b;
+          font-size: 0.925em;
+          line-height: 1.6;
+          margin-bottom: 0.75rem;
+        }
+        .lang-mode-bilingual li span.lang-en {
+          display: block !important;
+        }
+        .lang-mode-bilingual li span.lang-hi {
+          display: block !important;
+          color: #64748b;
+          font-size: 0.9em;
+          margin-top: 0.2rem;
+          margin-bottom: 0.4rem;
         }
 
         /* Language Card Borders */

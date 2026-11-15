@@ -113,6 +113,15 @@ export function parseQuestionHeading(rawText?: string | null): { instruction: st
     };
   }
 
+  // Pattern 12: Explicit DIRECTIONS prefix e.g. "DIRECTIONS: ... \n\n"
+  const directionsMatch = text.match(/^(?:DIRECTIONS(?:\s*\([^)]*\))?\s*:\s*)([\s\S]+?)\n\n([\s\S]+)$/i);
+  if (directionsMatch) {
+    return {
+      instruction: directionsMatch[1].trim(),
+      mainText: directionsMatch[2].trim()
+    };
+  }
+
   // Generic Pattern: "Instruction text:" followed by main text
   m = text.match(/^(Select the [^:]+:|Identify the [^:]+:|In the following [^:]+:)\s*([\s\S]+)$/i);
   if (m && m[2].trim().length > 0) {
@@ -234,13 +243,25 @@ export default function QuestionText({
   }
 
   return (
-    <div className={`space-y-1.5 ${className} break-words`}>
+    <div className={`space-y-2 ${className} break-words`}>
       {showInstructionBadge && (
-        <div className="inline-flex items-center gap-1.5 rounded-lg bg-blue-50 px-2.5 py-0.5 text-xs font-bold text-blue-900 border border-blue-200 shadow-2xs max-w-full">
-          <span className="text-blue-600">📌</span>
-          <span className="text-[10px] font-extrabold uppercase tracking-wider text-blue-600">Directive:</span>
-          <span className="text-slate-800 truncate">{instruction}</span>
-        </div>
+        instruction.length > 50 ? (
+          <div className="rounded-xl bg-blue-50/80 border border-blue-200/90 p-3 sm:p-3.5 shadow-2xs space-y-1 mb-2">
+            <div className="flex items-center gap-1.5 text-blue-700 font-extrabold text-[11px] uppercase tracking-wider">
+              <span>📌</span>
+              <span>Directions / Description</span>
+            </div>
+            <p className="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed">
+              {instruction}
+            </p>
+          </div>
+        ) : (
+          <div className="inline-flex items-center gap-1.5 rounded-lg bg-blue-50 px-2.5 py-1 text-xs font-bold text-blue-900 border border-blue-200 shadow-2xs max-w-full mb-1">
+            <span className="text-blue-600">📌</span>
+            <span className="text-[10px] font-extrabold uppercase tracking-wider text-blue-600">Directive:</span>
+            <span className="text-slate-800">{instruction}</span>
+          </div>
+        )
       )}
       <div className="text-gray-900 leading-relaxed font-bold text-sm sm:text-base md:text-lg break-words">
         {renderFormattedMainText(mainText)}

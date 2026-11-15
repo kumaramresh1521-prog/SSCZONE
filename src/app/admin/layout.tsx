@@ -32,6 +32,7 @@ import {
   ShieldAlert,
   Keyboard,
   FlaskConical,
+  ClipboardCheck,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { supabase } from "@/lib/supabase";
@@ -66,7 +67,7 @@ const menuItems: MenuItem[] = [
   { label: "Packages", href: "/admin/packages", icon: CreditCard },
   { label: "PYQ Folders & Papers", href: "/admin/papers", icon: Folder },
   { label: "PDF & Key Extractor", href: "/admin/pdf-extractor", icon: FileSpreadsheet },
-  { label: "Math Review",         href: "/admin/math-review",   icon: FlaskConical },
+  { label: "Question Review (All)", href: "/admin/review",      icon: ClipboardCheck },
 ];
 
 export default function AdminLayout({ children }: { children: ReactNode }) {

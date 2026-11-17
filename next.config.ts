@@ -20,14 +20,6 @@ const nextConfig: NextConfig = {
       "react-hot-toast",
       "katex",
     ],
-    cpus: 1,
-    workerThreads: false,
-  },
-  webpack: (config, { dev }) => {
-    if (dev) {
-      config.cache = false;
-    }
-    return config;
   },
   async headers() {
     return [

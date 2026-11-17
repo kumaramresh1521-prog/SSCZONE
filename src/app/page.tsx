@@ -24,6 +24,7 @@ import { createClient } from "@/lib/supabase-server";
 import { buildPageMetadata } from "@/lib/seo-store";
 import { getHomepageConfig } from "@/lib/homepage-store";
 import { DEFAULT_BLOGS } from "@/lib/blog-data";
+import TopperTestimonialsSection from "@/components/TopperTestimonialsSection";
 
 export const revalidate = 300; // 5-minute ISR cache to protect database egress
 
@@ -136,10 +137,10 @@ export default async function Home() {
     if (bData && bData.length > 0) {
       homeBlogs = bData;
     } else {
-      homeBlogs = DEFAULT_BLOGS.slice(0, 3);
+      homeBlogs = [];
     }
   } catch {
-    homeBlogs = DEFAULT_BLOGS.slice(0, 3);
+    homeBlogs = [];
   }
 
   // Active exams (Live for practice)
@@ -702,6 +703,9 @@ export default async function Home() {
           })}
         </div>
       </section>
+
+      {/* Topper Testimonials & Reviews (Hall of Fame) */}
+      <TopperTestimonialsSection />
 
       {/* Frequently Asked Questions */}
       <section className="bg-white border-t border-slate-200/80 py-16 px-4 w-full max-w-full overflow-hidden">

@@ -33,6 +33,9 @@ import {
   Keyboard,
   FlaskConical,
   ClipboardCheck,
+  BookMarked,
+  Bell,
+  Star,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { supabase } from "@/lib/supabase";
@@ -53,6 +56,8 @@ const menuItems: MenuItem[] = [
   { label: "System & Integrations", href: "/admin/integrations", icon: Network },
   { label: "Ads & Monetization", href: "/admin/ads", icon: DollarSign },
   { label: "Ticker", href: "/admin/ticker", icon: Radio },
+  { label: "Announcement Popup", href: "/admin/announcement", icon: Bell },
+  { label: "Topper Testimonials", href: "/admin/testimonials", icon: Star },
   { label: "Exams", href: "/admin/exams", icon: BookOpen },
   { label: "Subjects", href: "/admin/subjects", icon: Layers3 },
   { label: "Topics", href: "/admin/topics", icon: FileText },
@@ -63,6 +68,8 @@ const menuItems: MenuItem[] = [
   { label: "Flagged Reports", href: "/admin/reports", icon: Flag },
   { label: "Blogs", href: "/admin/blogs", icon: Newspaper },
   { label: "Chapter Notes & Reader", href: "/admin/chapter-notes", icon: BookOpen },
+  { label: "Topper Books", href: "/admin/books", icon: BookMarked },
+  { label: "Footer & Social", href: "/admin/footer", icon: LayoutTemplate },
   { label: "Users", href: "/admin/users", icon: Users },
   { label: "Packages", href: "/admin/packages", icon: CreditCard },
   { label: "PYQ Folders & Papers", href: "/admin/papers", icon: Folder },

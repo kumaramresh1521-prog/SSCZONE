@@ -104,17 +104,18 @@ export function parseQuestionHeading(rawText?: string | null): { instruction: st
     };
   }
 
-  // Pattern 11: Sentence Rearrangement
-  m = text.match(/^Sentences of a paragraph are given below in jumbled order\.?\s*Select the option that gives their correct order\s*:\s*([\s\S]*)$/i);
+  // Pattern 11: Sentence / Para Jumble Rearrangement
+  m = text.match(/^(?:Sentences of a paragraph are given below in jumbled order|Parts of a sentence are given below in jumbled order|The following sentences are in jumbled order|Rearrange the parts of the sentence in correct order)[\.\:\s]+(?:Select the option that gives their correct order|Arrange the parts in the correct order to form a meaningful sentence|Arrange them in the correct sequence)?\s*[:\.]?\s*([\s\S]*)$/i);
   if (m) {
     return {
       instruction: 'Sentence Rearrangement (Para Jumble)',
-      mainText: m[1].trim() || 'Select the correct order of the jumbled sentences:'
+      mainText: m[1].trim() || 'Arrange in the correct meaningful order:'
     };
   }
 
   // Pattern 12: Explicit DIRECTIONS prefix e.g. "DIRECTIONS: ... \n\n"
-  const directionsMatch = text.match(/^(?:DIRECTIONS(?:\s*\([^)]*\))?\s*:\s*)([\s\S]+?)\n\n([\s\S]+)$/i);
+  const normText = text.replace(/\r\n/g, '\n');
+  const directionsMatch = normText.match(/^(?:DIRECTIONS(?:\s*\([^)]*\))?\s*:\s*)([\s\S]+?)\n\s*\n([\s\S]+)$/i);
   if (directionsMatch) {
     return {
       instruction: directionsMatch[1].trim(),
@@ -150,7 +151,45 @@ export default function QuestionText({
   // Helper to format target words e.g. Word: "Hind" -> styled pill
   const renderFormattedMainText = (content: string) => {
     if (!content) return null;
-    const trimmed = content.trim();
+    const norm = content.replace(/\r\n/g, '\n').trim();
+
+    // Check if content is a Reading Comprehension passage with question
+    const passageMatch = norm.match(/^PASSAGE\s*:\s*([\s\S]+?)\n\s*(?:QUESTION|Q)\s*:\s*([\s\S]+)$/i);
+    if (passageMatch) {
+      const passageBody = passageMatch[1].trim();
+      const questionPrompt = passageMatch[2].trim();
+      const paragraphs = passageBody.split(/\n\s*\n+/).filter(Boolean);
+
+      return (
+        <div className="space-y-4">
+          <div className="rounded-2xl border border-amber-200/90 bg-amber-50/60 dark:bg-amber-950/20 dark:border-amber-900/50 p-4 sm:p-5 shadow-2xs">
+            <div className="flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-amber-800 dark:text-amber-400 mb-3">
+              <span>📖</span>
+              <span>Reading Passage</span>
+            </div>
+            <div className="space-y-3 text-slate-800 dark:text-slate-200 text-sm sm:text-base leading-relaxed font-normal">
+              {paragraphs.map((para, pIdx) => (
+                <p key={pIdx} className="leading-relaxed">
+                  <MathText text={para.trim()} />
+                </p>
+              ))}
+            </div>
+          </div>
+
+          <div className="pt-1">
+            <div className="text-xs font-black uppercase tracking-wider text-indigo-600 dark:text-indigo-400 mb-1.5 flex items-center gap-1.5">
+              <span>❓</span>
+              <span>Question</span>
+            </div>
+            <div className="text-slate-900 dark:text-white font-bold text-base sm:text-lg leading-relaxed">
+              <MathText text={questionPrompt} />
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    const trimmed = norm;
 
     // If it starts with Word: "XYZ"
     const wordMatch = trimmed.match(/^(Word:\s*)(["“'].*?["”'])/i);
@@ -200,29 +239,30 @@ export default function QuestionText({
       }
     }
 
-    // Check if mainText has multiline sentence fragments e.g. A. ... \n B. ... \n C. ...
-    if (/\n\s*[A-DP-S][\.\)]\s+/.test(trimmed)) {
+    // Check if mainText has multiline sentence fragments e.g. P. ... \n Q. ... or (A) ... \n (B) ... or S1. ... \n S6. ...
+    if (/\n\s*(?:\(?[A-Za-z0-9]{1,3}\)[\.\:]?|[A-Za-z0-9]{1,3}[\.\:\)])\s+/.test(trimmed)) {
       const parts = trimmed.split(/\n/);
       return (
         <div className="space-y-1.5 mt-1.5">
           {parts.map((part, idx) => {
             const line = part.trim();
             if (!line) return null;
-            const fragMatch = line.match(/^([A-DP-S1-6])[\.\)]\s*(.*)/);
+            const fragMatch = line.match(/^(?:\(?([A-Za-z0-9]{1,3})\)[\.\:]?|([A-Za-z0-9]{1,3})[\.\:\)])\s*(.*)/);
             if (fragMatch) {
+              const badgeLabel = fragMatch[1] || fragMatch[2];
               return (
-                <div key={idx} className="flex items-start gap-2 p-2 rounded-xl bg-slate-50/80 border border-slate-200/80 hover:bg-slate-100/80 transition-colors">
-                  <span className="inline-flex items-center justify-center h-5 w-5 rounded-md bg-indigo-600 text-white text-[11px] font-black shrink-0 shadow-2xs">
-                    {fragMatch[1]}
+                <div key={idx} className="flex items-start gap-2.5 p-2.5 rounded-xl bg-slate-50/90 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/80 hover:bg-slate-100/80 dark:hover:bg-slate-800 transition-colors">
+                  <span className="inline-flex items-center justify-center min-w-[22px] px-1.5 h-5.5 rounded-md bg-indigo-600 text-white text-[11px] font-black shrink-0 shadow-2xs">
+                    {badgeLabel}
                   </span>
-                  <div className="flex-1 text-slate-800 font-medium text-sm sm:text-base leading-relaxed pt-0.5">
-                    <MathText text={fragMatch[2]} />
+                  <div className="flex-1 text-slate-800 dark:text-slate-200 font-medium text-sm sm:text-base leading-relaxed pt-0.5">
+                    <MathText text={fragMatch[3]} />
                   </div>
                 </div>
               );
             }
             return (
-              <div key={idx} className="text-gray-900 font-bold leading-relaxed">
+              <div key={idx} className="text-gray-900 dark:text-gray-100 font-bold leading-relaxed">
                 <MathText text={line} />
               </div>
             );

@@ -35,11 +35,15 @@ sys.stdout.reconfigure(encoding="utf-8")
 REPO_ROOT = r"c:\ssczone"
 ENV_PATH = os.path.join(REPO_ROOT, ".env.local")
 PUBLIC_DIR = os.path.join(REPO_ROOT, "public")
+PYQ_DIR = os.path.join(PUBLIC_DIR, "images", "pyq")
 ACTIVE_IMAGE_DIRS = [
-    os.path.join(PUBLIC_DIR, "images", "pyq", "2023"),
-    os.path.join(PUBLIC_DIR, "images", "pyq", "2024"),
     os.path.join(PUBLIC_DIR, "images", "questions"),
 ]
+if os.path.exists(PYQ_DIR):
+    for entry in sorted(os.listdir(PYQ_DIR)):
+        full_entry = os.path.join(PYQ_DIR, entry)
+        if os.path.isdir(full_entry):
+            ACTIVE_IMAGE_DIRS.append(full_entry)
 PAPERS_DIR = os.path.join(PUBLIC_DIR, "papers")
 
 _THREAD_LOCAL = threading.local()
@@ -243,7 +247,7 @@ def main():
     inc_pdf = not args.images_only
     items = collect_files(include_images=inc_img, include_pdfs=inc_pdf)
     total_bytes = sum(os.path.getsize(f) for f, _ in items)
-    print(f"Prepared {len(items)} active files ({total_bytes / (1024 * 1024):.2f} MB) [orphan 2026 excluded]")
+    print(f"Prepared {len(items)} active files ({total_bytes / (1024 * 1024):.2f} MB) [includes 2026 PYQ images]")
 
     if args.dry_run:
         print("Sample R2 keys:")
@@ -282,7 +286,11 @@ def main():
 
     if cfg["public_url"]:
         print("\nVerifying public CDN reachability...")
-        samples = [rk for _, rk in items if rk.endswith(".png")][:1] + [rk for _, rk in items if rk.endswith(".pdf")][:1]
+        samples = (
+            [rk for _, rk in items if "2026" in rk][:2]
+            + [rk for _, rk in items if rk.endswith(".png")][:1]
+            + [rk for _, rk in items if rk.endswith(".pdf")][:1]
+        )
         for rk in samples:
             test_url = f"{cfg['public_url']}/{rk}"
             r = requests.head(test_url, timeout=15)

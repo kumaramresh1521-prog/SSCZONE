@@ -42,20 +42,16 @@ interface BlogItem {
   created_at: string;
 }
 
-export default function BlogClient({ initialBlogs }: { initialBlogs: BlogItem[] }) {
+export default function BlogClient({
+  initialBlogs,
+  initialCategories = [],
+}: {
+  initialBlogs: BlogItem[];
+  initialCategories?: { id: string; name: string; slug: string }[];
+}) {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedExam, setSelectedExam] = useState("All");
-
-  const categories = [
-    { id: "All", label: "All Updates", icon: Newspaper },
-    { id: "English Language & Grammar", label: "English Grammar", icon: BookOpen },
-    { id: "General Science & Biology", label: "Science & Biology", icon: Sparkles },
-    { id: "Exam Notification", label: "Official Notifications", icon: Bell },
-    { id: "Answer Key & Results", label: "Answer Keys & Cut-Offs", icon: CheckCircle2 },
-    { id: "Preparation Strategy", label: "Topper Strategies", icon: GraduationCap },
-    { id: "Current Affairs", label: "Current Affairs", icon: Flame },
-  ];
 
   const examOptions = [
     { id: "All", label: "🎯 All Exams" },
@@ -79,13 +75,35 @@ export default function BlogClient({ initialBlogs }: { initialBlogs: BlogItem[] 
       }
       return {
         ...b,
-        category: b.category || meta.category || "Exam Notification",
-        exam_tag: b.exam_tag || meta.examTag || "SSC CGL",
+        category: b.category || meta.category || "",
+        exam_tag: b.exam_tag !== undefined ? (b.exam_tag ?? "") : (meta.examTag ?? ""),
         read_time: b.read_time || meta.readTime || "5 min read",
         focus_keyword: meta.focus || "",
       };
     });
   }, [initialBlogs]);
+
+  // Dynamic Categories (Configured in Supabase + Found in Published Articles)
+  const categories = useMemo(() => {
+    const configuredNames = (initialCategories || []).map((c) => c.name);
+    const blogCategories = Array.from(
+      new Set(normalizedBlogs.map((b) => b.category).filter(Boolean))
+    );
+    const allUnique = Array.from(new Set([...configuredNames, ...blogCategories]));
+
+    // Filter out obsolete/unwanted promotional categories
+    const unwanted = ["Exam Notification", "Answer Key & Results", "Preparation Strategy", "Current Affairs"];
+    const cleanCategories = allUnique.filter((name) => !unwanted.includes(name));
+
+    return [
+      { id: "All", label: "All Notes", icon: Newspaper },
+      ...cleanCategories.map((name) => ({
+        id: name,
+        label: name,
+        icon: Tag,
+      })),
+    ];
+  }, [initialCategories, normalizedBlogs]);
 
   // Multi-Filter Matching Logic
   const filteredBlogs = useMemo(() => {
@@ -151,40 +169,22 @@ export default function BlogClient({ initialBlogs }: { initialBlogs: BlogItem[] 
   // Category Color Helper
   const getCategoryTheme = (cat: string) => {
     switch (cat) {
-      case "English Language & Grammar":
-        return {
-          bg: "bg-indigo-50 text-indigo-700 border-indigo-200/80",
-          gradient: "from-indigo-600 to-blue-800",
-        };
+      case "Biology":
       case "General Science & Biology":
         return {
           bg: "bg-teal-50 text-teal-800 border-teal-200/80",
           gradient: "from-teal-600 to-emerald-800",
         };
-      case "Exam Notification":
+      case "English":
+      case "English Language & Grammar":
         return {
-          bg: "bg-blue-50 text-blue-700 border-blue-200/80",
-          gradient: "from-blue-600 to-indigo-700",
-        };
-      case "Answer Key & Results":
-        return {
-          bg: "bg-emerald-50 text-emerald-800 border-emerald-200/80",
-          gradient: "from-emerald-600 to-teal-800",
-        };
-      case "Preparation Strategy":
-        return {
-          bg: "bg-amber-50 text-amber-800 border-amber-200/80",
-          gradient: "from-amber-600 to-orange-700",
-        };
-      case "Current Affairs":
-        return {
-          bg: "bg-purple-50 text-purple-800 border-purple-200/80",
-          gradient: "from-purple-600 to-indigo-800",
+          bg: "bg-indigo-50 text-indigo-700 border-indigo-200/80",
+          gradient: "from-indigo-600 to-blue-800",
         };
       default:
         return {
-          bg: "bg-slate-100 text-slate-700 border-slate-200",
-          gradient: "from-slate-800 to-slate-950",
+          bg: "bg-blue-50 text-blue-700 border-blue-200/80",
+          gradient: "from-blue-600 to-indigo-800",
         };
     }
   };
@@ -192,63 +192,56 @@ export default function BlogClient({ initialBlogs }: { initialBlogs: BlogItem[] 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans antialiased selection:bg-blue-100 selection:text-blue-900 pb-20">
       
-      {/* ── 1. Top Live Announcement Ticker Bar ── */}
-      <div className="border-b border-blue-900/10 bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 py-2.5 px-4 text-white text-xs">
-        <div className="mx-auto max-w-6xl flex flex-col sm:flex-row items-center justify-between gap-2">
-          <div className="flex items-center gap-2 overflow-hidden truncate">
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-400 px-2 py-0.5 text-[10px] font-black uppercase text-slate-950 tracking-wider shrink-0 animate-pulse">
-              <Zap className="h-2.5 w-2.5 fill-slate-950" />
-              Live Desk
-            </span>
-            <span className="truncate font-semibold text-slate-200 text-[11px] sm:text-xs">
-              SSC CGL 2026 Notification, Official Answer Keys & Topper Revision Notes Live on SSCZone
-            </span>
-          </div>
-
-          <div className="flex items-center gap-3 shrink-0 text-[11px] text-slate-300">
-            <span>Verified TCS Exam Content</span>
-            <span>•</span>
-            <Link href="/papers" className="text-amber-300 hover:underline font-bold flex items-center gap-1">
-              <span>Attempt PYQs</span>
-              <ArrowRight className="h-3 w-3" />
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      {/* ── 2. Hero Editorial Banner ── */}
-      <section className="border-b border-slate-200 bg-white py-10 sm:py-12 px-4 sm:px-6 shadow-2xs">
+      {/* ── Top Header & Live Search ── */}
+      <section className="border-b border-slate-200 bg-white py-6 sm:py-8 px-4 sm:px-6 shadow-2xs">
         <div className="mx-auto max-w-6xl space-y-4">
           
-          <div className="flex items-center gap-2 text-xs font-semibold text-slate-500">
-            <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
-            <ChevronRight className="h-3 w-3 text-slate-400" />
-            <span className="text-slate-900 font-bold">Exam Updates & Educational Blog</span>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div className="flex items-center gap-2 text-xs font-semibold text-slate-500">
+              <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+              <ChevronRight className="h-3 w-3 text-slate-400" />
+              <span className="text-slate-900 font-bold">Educational Notes & Articles</span>
+            </div>
+
+            {/* ── DUAL TAB SWITCHER: ALL ARTICLES vs CHAPTER READER ── */}
+            <div className="inline-flex items-center gap-1.5 p-1 bg-slate-100 rounded-2xl border border-slate-200 self-start sm:self-auto">
+              <Link
+                href="/blog"
+                className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-black bg-white text-blue-700 shadow-xs border border-blue-200"
+              >
+                <Newspaper className="w-3.5 h-3.5 text-blue-600" />
+                <span>All Articles</span>
+              </Link>
+              <Link
+                href="/blog/notes"
+                className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-bold text-slate-600 hover:text-slate-900 hover:bg-slate-200/60 transition-all"
+              >
+                <BookOpen className="w-3.5 h-3.5 text-slate-500" />
+                <span>Chapter Reader</span>
+                <span className="px-1.5 py-0.2 rounded-full text-[9px] font-black uppercase tracking-wider bg-blue-600 text-white">
+                  Interactive
+                </span>
+              </Link>
+            </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
-            <div className="max-w-3xl space-y-2">
-              <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50/80 px-3 py-1 text-xs font-bold text-blue-700 shadow-2xs">
-                <Sparkles className="h-3.5 w-3.5 text-blue-600" />
-                <span>Publication-Grade SSC Editorial & Study Portal</span>
-              </div>
-              
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 leading-tight">
-                SSC Exam Bulletins, Formulas & Topper Blueprints
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2">
+            <div>
+              <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-slate-900">
+                Educational Notes & Articles
               </h1>
-              
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-2xl">
-                Stay updated with official notification circulars, tentative answer key challenge links, chapter-by-chapter formula cheat sheets, and high-frequency TCS pattern questions.
+              <p className="text-xs text-slate-500 font-medium mt-1">
+                Chapter notes, educational articles, formulas and interactive quizzes.
               </p>
             </div>
 
             {/* Live Search Bar */}
-            <div className="w-full lg:w-80 shrink-0">
+            <div className="w-full sm:w-80 shrink-0">
               <div className="relative">
                 <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
                 <input
                   type="text"
-                  placeholder="Search updates, topics, or formulas..."
+                  placeholder="Search articles, topics or formulas..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="w-full rounded-2xl border border-slate-200 bg-slate-50 pl-10 pr-9 py-2.5 text-xs text-slate-900 placeholder-slate-400 focus:border-blue-600 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-100 shadow-2xs transition-all font-medium"
@@ -274,7 +267,7 @@ export default function BlogClient({ initialBlogs }: { initialBlogs: BlogItem[] 
                 </span>
                 <span className="text-xs text-amber-300 font-extrabold flex items-center gap-1">
                   <Sparkles className="w-3.5 h-3.5 fill-amber-300" />
-                  Physics, Polity, Maths, Chemistry & More
+                  Subject Theory, Rules & Formulas
                 </span>
               </div>
               <h3 className="text-base sm:text-xl font-black text-white">

@@ -34,8 +34,10 @@ import {
   Keyboard,
   Activity,
   Zap,
-  Info
+  Info,
+  HelpCircle
 } from "lucide-react";
+import QuestionSeoInspector from "./QuestionSeoInspector";
 
 interface PageOverride {
   title: string;
@@ -215,7 +217,7 @@ export default function AdminSeoPage() {
   const [config, setConfig] = useState<SeoConfig | null>(null);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
-  const [activeTab, setActiveTab] = useState<"global" | "keywords" | "pages" | "social" | "indexing" | "webmaster" | "schema">("global");
+  const [activeTab, setActiveTab] = useState<"global" | "keywords" | "pages" | "social" | "indexing" | "webmaster" | "schema" | "questions">("global");
   const [previewDevice, setPreviewDevice] = useState<"desktop" | "mobile">("desktop");
   const [previewPagePath, setPreviewPagePath] = useState<string>("/");
 
@@ -561,6 +563,7 @@ export default function AdminSeoPage() {
           { id: "indexing", label: "Robots & Crawling", icon: ShieldCheck },
           { id: "webmaster", label: "Webmaster & Analytics", icon: Code2 },
           { id: "schema", label: "Schema.org Rich Snippets", icon: Sparkles },
+          { id: "questions", label: "Question SEO & SERP Engine", icon: HelpCircle, badge: "Live" },
         ].map((tab) => {
           const Icon = tab.icon;
           const isActive = activeTab === tab.id;
@@ -576,7 +579,7 @@ export default function AdminSeoPage() {
             >
               <Icon className="h-3.5 w-3.5" />
               <span>{tab.label}</span>
-              {typeof tab.badge === "number" && (
+              {tab.badge !== undefined && (
                 <span
                   className={`text-[10px] px-1.5 py-0.2 rounded-full font-black ${
                     isActive ? "bg-white text-blue-700" : "bg-slate-800 text-slate-300 border border-slate-700"
@@ -1616,6 +1619,13 @@ export default function AdminSeoPage() {
                 </pre>
               </div>
             </div>
+          )}
+
+          {/* ═════════════════════════════════════════════════════════════════════
+              TAB 8: QUESTION SEO & SERP ENGINE
+             ═════════════════════════════════════════════════════════════════════ */}
+          {activeTab === "questions" && (
+            <QuestionSeoInspector />
           )}
 
         </div>

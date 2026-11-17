@@ -352,7 +352,14 @@ export default function AdminChapterNotesPage() {
           </p>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 flex-wrap">
+          <Link
+            href="/admin/blogs"
+            className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl border border-blue-200 bg-blue-50/80 hover:bg-blue-100 text-xs font-bold text-blue-700 shadow-2xs transition-all"
+          >
+            <span>📰 Manage Exam Blogs</span>
+          </Link>
+
           <Link
             href="/blog/notes"
             target="_blank"
@@ -762,8 +769,8 @@ export default function AdminChapterNotesPage() {
                 </div>
               </div>
 
-              {/* Slug & Read Time */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              {/* Slug, Read Time & Exam Tag */}
+              <div className="grid grid-cols-1 sm:grid-cols-4 gap-3">
                 <div className="sm:col-span-2 space-y-1">
                   <label className="text-xs font-bold text-slate-700">URL Slug *</label>
                   <input
@@ -783,6 +790,29 @@ export default function AdminChapterNotesPage() {
                     placeholder="e.g. 7 min read"
                     value={readTime}
                     onChange={(e) => setReadTime(e.target.value)}
+                    className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs font-bold text-slate-800"
+                  />
+                </div>
+
+                <div className="space-y-1">
+                  <div className="flex items-center justify-between">
+                    <label className="text-xs font-bold text-slate-700">Exam Tag</label>
+                    {examTag && (
+                      <button
+                        type="button"
+                        onClick={() => setExamTag("")}
+                        className="text-[10px] text-rose-500 hover:text-rose-700 font-bold"
+                        title="Remove tag"
+                      >
+                        ✕ Clear
+                      </button>
+                    )}
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="e.g. SSC CGL (or leave blank)"
+                    value={examTag}
+                    onChange={(e) => setExamTag(e.target.value)}
                     className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs font-bold text-slate-800"
                   />
                 </div>

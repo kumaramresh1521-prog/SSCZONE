@@ -32,54 +32,79 @@ export default function TopicsPage() {
 
   async function loadData() {
     setLoading(true);
-    const [topicsRes, subjectsRes, examsRes] = await Promise.all([
-      supabase.from("topics").select("*, subjects(title, exam_id, exams(title)), questions(count)").order("id"),
-      supabase.from("subjects").select("id, title, exam_id, is_active, exams(title)").order("title"),
-      supabase.from("exams").select("id, title, is_active").order("sort_order")
-    ]);
-    if (topicsRes.data) setTopics(topicsRes.data);
-    if (subjectsRes.data) setSubjects(subjectsRes.data);
-    if (examsRes.data) setExams(examsRes.data);
-    setLoading(false);
+    try {
+      const [topRes, examsRes] = await Promise.all([
+        fetch("/api/admin/topics", { cache: "no-store" }).then(r => r.json()),
+        supabase.from("exams").select("id, title, is_active").order("sort_order"),
+      ]);
+      if (topRes.topics) setTopics(topRes.topics);
+      if (topRes.subjects) setSubjects(topRes.subjects);
+      if (examsRes.data) setExams(examsRes.data);
+    } catch (e: any) {
+      toast.error(e.message || "Failed to load topics");
+    } finally {
+      setLoading(false);
+    }
   }
 
   async function toggleFree(id: number, current: boolean) {
-    const { error } = await supabase.from("topics").update({ is_free: !current }).eq("id", id);
-    if (error) { toast.error(error.message); return; }
-    setTopics(prev => prev.map(t => t.id === id ? { ...t, is_free: !current } : t));
-    toast.success(!current ? "Set as Free" : "Set as Paid");
+    try {
+      const res = await fetch("/api/admin/topics", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id, is_free: !current }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to toggle free status");
+      setTopics(prev => prev.map(t => t.id === id ? { ...t, is_free: !current } : t));
+      toast.success(!current ? "Set as Free" : "Set as Paid");
+    } catch (err: any) {
+      toast.error(err.message || "Failed to toggle free status");
+    }
   }
 
   async function toggleActive(id: number, currentStatus: boolean) {
     const nextStatus = !currentStatus;
-    const { error } = await supabase.from("topics").update({ is_active: nextStatus }).eq("id", id);
-    if (error) { toast.error(error.message); return; }
-    setTopics(prev => prev.map(t => t.id === id ? { ...t, is_active: nextStatus } : t));
-    toast.success(nextStatus ? "🟢 Topic turned ON" : "⚪ Topic turned OFF");
+    try {
+      const res = await fetch("/api/admin/topics", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id, is_active: nextStatus }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to toggle active status");
+      setTopics(prev => prev.map(t => t.id === id ? { ...t, is_active: nextStatus } : t));
+      toast.success(nextStatus ? "🟢 Topic turned ON" : "⚪ Topic turned OFF");
+    } catch (err: any) {
+      toast.error(err.message || "Failed to toggle active status");
+    }
   }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!subjectId) { toast.error("Please select a subject"); return; }
     setSaving(true);
-    const payload = { title, description: description || null, subject_id: subjectId, is_free: isFree };
+    const payload = { id: editingId, title, description: description || null, subject_id: subjectId, is_free: isFree };
     
-    if (editingId) {
-      const { error } = await supabase.from("topics").update(payload).eq("id", editingId);
-      if (error) { toast.error(error.message); setSaving(false); return; }
-      toast.success("Topic updated!");
-    } else {
-      const { error } = await supabase.from("topics").insert(payload);
-      if (error) { toast.error(error.message); setSaving(false); return; }
-      toast.success("Topic created!");
+    try {
+      const res = await fetch("/api/admin/topics", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to save topic");
+      toast.success(editingId ? "Topic updated!" : "Topic created!");
+      setShowForm(false);
+      setEditingId(null);
+      setTitle("");
+      setDescription("");
+      loadData();
+    } catch (err: any) {
+      toast.error(err.message || "Failed to save topic");
+    } finally {
+      setSaving(false);
     }
-    
-    setShowForm(false);
-    setEditingId(null);
-    setTitle("");
-    setDescription("");
-    setSaving(false);
-    loadData();
   }
 
   function handleEdit(t: any) {
@@ -95,10 +120,15 @@ export default function TopicsPage() {
 
   async function handleDelete(id: number, titleText: string) {
     if (!confirm(`Delete topic "${titleText}"? Questions under it will be deleted.`)) return;
-    const { error } = await supabase.from("topics").delete().eq("id", id);
-    if (error) { toast.error(error.message); return; }
-    toast.success("Topic deleted!");
-    loadData();
+    try {
+      const res = await fetch(`/api/admin/topics?id=${id}`, { method: "DELETE" });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to delete topic");
+      toast.success("Topic deleted!");
+      loadData();
+    } catch (err: any) {
+      toast.error(err.message || "Failed to delete topic");
+    }
   }
 
   const filteredSubjectsForSelect = newSubExamId ? subjects.filter(s => s.exam_id === newSubExamId) : subjects;

@@ -43,6 +43,7 @@ import {
   Globe,
 } from "lucide-react";
 import toast from "react-hot-toast";
+import AdBannerSlot from "@/components/AdBannerSlot";
 import type { ChapterNote, SubjectMeta } from "@/lib/chapter-notes-types";
 
 // Map subject icons safely
@@ -99,64 +100,91 @@ export default function ChapterNotesReaderClient({
       const match = initialNotes.find((n) => n.slug === defaultSlug);
       if (match?.subject_id) return match.subject_id;
     }
-    return searchParams.get("subject") || "physics";
+    const fromUrl = searchParams.get("subject");
+    if (fromUrl) return fromUrl;
+    // Default to first subject that actually has chapters uploaded!
+    const subjectWithNotes = subjects.find((s) =>
+      initialNotes.some((n) => n.subject_id === s.id && n.is_active)
+    );
+    return subjectWithNotes?.id || "biology";
   });
   const [activeTab, setActiveTab] = useState<"chapters" | "guides">("chapters");
   const [searchFilter, setSearchFilter] = useState<string>("");
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState<boolean>(false);
   const [fontSize, setFontSize] = useState<"normal" | "large" | "xlarge">("normal");
   const [copied, setCopied] = useState<boolean>(false);
-  const [langMode, setLangMode] = useState<"bilingual" | "english" | "hindi">("bilingual");
+  const [langMode, setLangMode] = useState<"english" | "hindi">("english");
 
-  // Restore user reading language preference from localStorage (CBT PYQ standard)
+  // Dynamic on-demand content cache
+  const [loadedContents, setLoadedContents] = useState<Record<string, string>>({});
+  const [loadingContent, setLoadingContent] = useState<boolean>(false);
+
+  // Restore user reading language preference from localStorage (Default: English)
   useEffect(() => {
     try {
-      const saved = localStorage.getItem("ssczone_reader_lang") as "bilingual" | "english" | "hindi" | null;
-      if (saved && ["bilingual", "english", "hindi"].includes(saved)) {
+      const saved = localStorage.getItem("ssczone_reader_lang") as "english" | "hindi" | null;
+      if (saved && (saved === "english" || saved === "hindi")) {
         setLangMode(saved);
+      } else {
+        setLangMode("english");
       }
-    } catch {}
+    } catch {
+      setLangMode("english");
+    }
   }, []);
 
-  const handleLanguageChange = (mode: "bilingual" | "english" | "hindi") => {
+  const handleLanguageChange = (mode: "english" | "hindi") => {
     setLangMode(mode);
     try {
       localStorage.setItem("ssczone_reader_lang", mode);
     } catch {}
     toast.success(
-      mode === "english"
-        ? "Medium: English"
-        : mode === "hindi"
-        ? "माध्यम: हिन्दी"
-        : "Medium: Bilingual (English + हिन्दी)",
+      mode === "english" ? "Medium: English" : "माध्यम: हिन्दी",
       { id: "reader-lang-toast", duration: 1500 }
     );
   };
 
-  // Active note slug
+  // Lock background body scroll when mobile drawer is open to prevent page drift
+  useEffect(() => {
+    if (mobileDrawerOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileDrawerOpen]);
+
+  // Active note slug - strictly defaults to first note in the SELECTED subject only
   const [activeSlug, setActiveSlug] = useState<string>(() => {
     if (defaultSlug) return defaultSlug;
     const urlSlug = searchParams.get("chapter");
-    if (urlSlug) return urlSlug;
-    // Default to first active note in selected subject
-    const firstInSubj = initialNotes.find((n) => n.subject_id === selectedSubjectId && n.is_active);
-    return firstInSubj ? firstInSubj.slug : (initialNotes[0]?.slug || "");
+    if (urlSlug) {
+      const match = initialNotes.find((n) => n.slug === urlSlug);
+      if (match) return urlSlug;
+    }
+    // Default to first active note in selected subject ONLY (never another subject's note!)
+    const firstInSubj = initialNotes.find(
+      (n) => n.subject_id === selectedSubjectId && n.is_active && n.type === "chapter_note"
+    );
+    return firstInSubj ? firstInSubj.slug : "";
   });
 
   // Current Subject Object
   const currentSubject = useMemo(() => {
     return subjects.find((s) => s.id === selectedSubjectId) || subjects[0] || {
-      id: "physics",
-      name: "Physics",
-      hindi_name: "भौतिक विज्ञान",
+      id: "biology",
+      name: "Biology",
+      hindi_name: "जीव विज्ञान",
       category: "Science",
-      color: "blue",
-      icon: "Atom",
+      color: "teal",
+      icon: "Dna",
       description: "Science study notes",
     };
   }, [subjects, selectedSubjectId]);
 
-  // Notes filtered by current subject & tab
+  // Notes filtered strictly by current subject & tab
   const subjectNotes = useMemo(() => {
     return initialNotes
       .filter((n) => {
@@ -172,7 +200,7 @@ export default function ChapterNotesReaderClient({
         }
         return (a.chapter_number || 0) - (b.chapter_number || 0);
       });
-  }, [initialNotes, selectedSubjectId, activeTab]);
+  }, [initialNotes, selectedSubjectId, activeTab, activeSlug]);
 
   // Filtered chapter list according to search in sidebar
   const visibleSidebarNotes = useMemo(() => {
@@ -186,24 +214,86 @@ export default function ChapterNotesReaderClient({
     );
   }, [subjectNotes, searchFilter]);
 
-  // Active Note Data
+  // Active Note Data - Strictly scoped to current selected subject (never cross-contaminates subjects)
   const currentNote = useMemo(() => {
-    const found = initialNotes.find((n) => n.slug === activeSlug);
-    if (found) return found;
-    return subjectNotes[0] || initialNotes[0] || null;
-  }, [initialNotes, activeSlug, subjectNotes]);
+    if (activeSlug) {
+      const found = initialNotes.find(
+        (n) => n.slug === activeSlug && n.subject_id === selectedSubjectId && n.is_active
+      );
+      if (found) return found;
+    }
+    return subjectNotes[0] || null;
+  }, [initialNotes, activeSlug, selectedSubjectId, subjectNotes]);
 
-  // Active Note Body Content (English, Hindi, or Bilingual)
+  // On-demand fetch if currentNote exists but full HTML content is not yet in memory
+  useEffect(() => {
+    if (!currentNote) return;
+    const hasContent =
+      (currentNote.content && currentNote.content.length > 500) ||
+      Boolean(loadedContents[currentNote.slug]);
+    if (!hasContent && currentNote.slug) {
+      setLoadingContent(true);
+      fetch(`/api/chapter-notes?slug=${encodeURIComponent(currentNote.slug)}`)
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.success && data.note?.content) {
+            setLoadedContents((prev) => ({
+              ...prev,
+              [currentNote.slug]: data.note.content,
+            }));
+          }
+        })
+        .catch((err) => console.error("Error fetching full chapter content:", err))
+        .finally(() => setLoadingContent(false));
+    }
+  }, [currentNote?.slug, loadedContents]);
+
+  // Active Note Body Content (English or Hindi - 100% full content, never truncated by inner divs)
   const currentBodyContent = useMemo(() => {
     if (!currentNote) return "";
-    if (langMode === "english" && currentNote.english_content) {
-      return currentNote.english_content;
+    const raw =
+      (currentNote.content && currentNote.content.length > 500
+        ? currentNote.content
+        : loadedContents[currentNote.slug]) ||
+      currentNote.content ||
+      "";
+    if (!raw) return "";
+
+    if (langMode === "hindi") {
+      if (currentNote.hindi_content) return currentNote.hindi_content;
+      const hiIdx = raw.indexOf('<div class="lang-hi">');
+      if (hiIdx !== -1) {
+        let hiContent = raw.slice(hiIdx + '<div class="lang-hi">'.length);
+        const lastDiv = hiContent.lastIndexOf("</div>");
+        if (lastDiv !== -1) {
+          hiContent = hiContent.slice(0, lastDiv);
+        }
+        return hiContent.trim();
+      }
+    } else {
+      // English mode (default)
+      if (currentNote.english_content) return currentNote.english_content;
+      const enIdx = raw.indexOf('<div class="lang-en">');
+      const hiIdx = raw.indexOf('<div class="lang-hi">');
+      if (enIdx !== -1 && hiIdx !== -1 && hiIdx > enIdx) {
+        let enContent = raw.slice(enIdx + '<div class="lang-en">'.length, hiIdx);
+        const lastDiv = enContent.lastIndexOf("</div>");
+        if (lastDiv !== -1) {
+          enContent = enContent.slice(0, lastDiv);
+        }
+        return enContent.trim();
+      } else if (enIdx !== -1) {
+        let enContent = raw.slice(enIdx + '<div class="lang-en">'.length);
+        const lastDiv = enContent.lastIndexOf("</div>");
+        if (lastDiv !== -1) {
+          enContent = enContent.slice(0, lastDiv);
+        }
+        return enContent.trim();
+      }
     }
-    if (langMode === "hindi" && currentNote.hindi_content) {
-      return currentNote.hindi_content;
-    }
-    return currentNote.content;
-  }, [currentNote, langMode]);
+
+    return raw;
+  }, [currentNote, loadedContents, langMode]);
 
   // Next & Previous chapters
   const currentIndex = useMemo(() => {
@@ -258,6 +348,7 @@ export default function ChapterNotesReaderClient({
       setActiveSlug(firstOfNew.slug);
       window.history.pushState({}, "", `/blog/notes?subject=${subjId}&chapter=${firstOfNew.slug}`);
     } else {
+      setActiveSlug(""); // Clear active slug so another subject's chapter is never retained!
       window.history.pushState({}, "", `/blog/notes?subject=${subjId}`);
     }
   };
@@ -311,80 +402,129 @@ export default function ChapterNotesReaderClient({
   const SubjIcon = ICON_MAP[currentSubject.icon] || BookOpen;
   const colorStyle = COLOR_STYLES[currentSubject.color] || COLOR_STYLES.blue;
 
+  if (initialNotes.length === 0) {
+    return (
+      <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col font-sans antialiased selection:bg-blue-100 selection:text-blue-900">
+        <div className="bg-white border-b border-slate-200 py-3 px-4 shadow-2xs">
+          <div className="max-w-7xl mx-auto flex items-center justify-between">
+            <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-500">
+              <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+              <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
+              <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
+              <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
+              <span className="text-slate-900 font-bold">Open Chapter Reader</span>
+            </div>
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-xs font-bold text-slate-700 shadow-2xs transition-all"
+            >
+              <span>📰 View Latest Exam Blogs →</span>
+            </Link>
+          </div>
+        </div>
+
+        <div className="flex-1 flex items-center justify-center p-6 py-20">
+          <div className="max-w-md w-full text-center bg-white border border-slate-200 rounded-3xl p-8 sm:p-12 shadow-xs space-y-4">
+            <div className="w-16 h-16 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center mx-auto shadow-2xs">
+              <BookOpen className="w-8 h-8" />
+            </div>
+            <h2 className="text-xl font-black text-slate-900">No Chapter Notes Available Yet</h2>
+            <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
+              New subject-wise theory, rules, and formulas published from the Admin Panel will appear here automatically.
+            </p>
+            <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
+              <Link
+                href="/blog"
+                className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-blue-600 text-white text-xs font-bold hover:bg-blue-700 shadow-xs transition-colors"
+              >
+                📰 Explore Official Blog
+              </Link>
+              <Link
+                href="/admin/chapter-notes"
+                className="w-full sm:w-auto px-5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-slate-100 text-slate-700 text-xs font-bold transition-colors"
+              >
+                ✍️ Chapter Notes Admin
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col font-sans antialiased selection:bg-blue-100 selection:text-blue-900">
       
       {/* ── Top Header / Breadcrumb Bar (Sticky below UserNav) ── */}
       <div className="bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-[57px] sm:top-[61px] z-30 shadow-2xs">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex items-center justify-between gap-3 sm:gap-4">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2 sm:py-2.5 flex items-center justify-between gap-2 sm:gap-4">
           
-          {/* Left: Breadcrumbs & Mobile Trigger */}
-          <div className="flex items-center gap-2 overflow-hidden">
+          {/* Left: Mobile Chapters Button & Breadcrumbs */}
+          <div className="flex items-center gap-1.5 sm:gap-2 overflow-hidden min-w-0">
             <button
               onClick={() => setMobileDrawerOpen(true)}
-              className="lg:hidden p-2 -ml-1 rounded-xl text-slate-700 hover:bg-slate-100 transition-colors shrink-0"
+              className="lg:hidden flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold hover:bg-blue-100 transition-colors shrink-0 cursor-pointer"
               aria-label="Open Chapters Menu"
             >
-              <Menu className="w-5 h-5 text-slate-800" />
+              <Menu className="w-4 h-4 text-blue-700 shrink-0" />
+              <span className="font-black text-[11px] sm:text-xs shrink-0">
+                {currentNote?.chapter_number ? `Ch ${currentNote.chapter_number}` : "Chapters"}
+              </span>
             </button>
 
-            <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-500 truncate">
+            {/* Desktop Full Breadcrumb Path */}
+            <div className="hidden sm:flex items-center gap-1.5 text-xs font-semibold text-slate-500 truncate">
               <Link href="/" className="hover:text-blue-600 transition-colors shrink-0">Home</Link>
               <ChevronRight className="w-3.5 h-3.5 text-slate-400 shrink-0" />
-              <Link href="/blog" className="hover:text-blue-600 transition-colors shrink-0">Blog</Link>
+              <Link href="/blog" className="hover:text-blue-600 transition-colors shrink-0 font-bold">Blog Updates</Link>
               <ChevronRight className="w-3.5 h-3.5 text-slate-400 shrink-0" />
-              <span className="text-slate-700 font-bold truncate">
-                {currentSubject.name} Notes
+              <span className="text-slate-900 font-black truncate">
+                📖 {currentSubject.name} Notes
               </span>
             </div>
+
+            {/* Mobile Compact Subject Label */}
+            <span className="sm:hidden text-xs font-black text-slate-800 truncate">
+              {currentSubject.name}
+            </span>
           </div>
 
-          {/* Right: Quick Reader Actions */}
-          <div className="flex items-center gap-1.5 sm:gap-2 shrink-0 flex-wrap">
-            {/* PYQ CBT Language Switcher */}
-            <div className="flex items-center gap-1.5 shrink-0">
-              <span className="text-xs font-bold text-slate-500 hidden sm:inline-flex items-center gap-1">
-                <Languages className="w-3.5 h-3.5 text-blue-600" />
-                <span>Language:</span>
-              </span>
-              <div className="flex items-center gap-1 bg-white p-0.5 rounded-lg border border-slate-300 shadow-2xs shrink-0">
-                <button
-                  onClick={() => handleLanguageChange("english")}
-                  className={`px-2.5 py-1 text-[11px] font-bold rounded transition-all cursor-pointer whitespace-nowrap ${
-                    langMode === "english"
-                      ? "bg-blue-700 text-white shadow-xs"
-                      : "text-slate-600 hover:bg-slate-100"
-                  }`}
-                  title="Official English medium"
-                >
-                  English
-                </button>
-                <button
-                  onClick={() => handleLanguageChange("hindi")}
-                  className={`px-2.5 py-1 text-[11px] font-bold rounded transition-all cursor-pointer whitespace-nowrap ${
-                    langMode === "hindi"
-                      ? "bg-blue-700 text-white shadow-xs"
-                      : "text-slate-600 hover:bg-slate-100"
-                  }`}
-                  title="हिन्दी माध्यम"
-                >
-                  हिन्दी
-                </button>
-                <button
-                  onClick={() => handleLanguageChange("bilingual")}
-                  className={`px-2.5 py-1 text-[11px] font-bold rounded transition-all cursor-pointer whitespace-nowrap ${
-                    langMode === "bilingual"
-                      ? "bg-blue-700 text-white shadow-xs"
-                      : "text-slate-600 hover:bg-slate-100"
-                  }`}
-                  title="Bilingual mode (English + हिन्दी)"
-                >
-                  Bilingual
-                </button>
-              </div>
+          {/* Right: Quick Reader Actions & Clean Mobile Controls */}
+          <div className="flex items-center gap-1 sm:gap-2 shrink-0">
+            <Link
+              href="/blog"
+              className="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-xs font-bold text-slate-700 shadow-2xs transition-all"
+            >
+              <span>📰 View Latest Exam Blogs →</span>
+            </Link>
+
+            {/* Language Switcher */}
+            <div className="flex items-center bg-white p-0.5 rounded-lg border border-slate-300 shadow-2xs shrink-0">
+              <button
+                onClick={() => handleLanguageChange("english")}
+                className={`px-2 sm:px-3 py-1 text-[11px] font-bold rounded transition-all cursor-pointer whitespace-nowrap ${
+                  langMode === "english"
+                    ? "bg-blue-700 text-white shadow-xs"
+                    : "text-slate-600 hover:bg-slate-100"
+                }`}
+                title="Official English medium"
+              >
+                EN
+              </button>
+              <button
+                onClick={() => handleLanguageChange("hindi")}
+                className={`px-2 sm:px-3 py-1 text-[11px] font-bold rounded transition-all cursor-pointer whitespace-nowrap ${
+                  langMode === "hindi"
+                    ? "bg-blue-700 text-white shadow-xs"
+                    : "text-slate-600 hover:bg-slate-100"
+                }`}
+                title="हिन्दी माध्यम"
+              >
+                हिन्दी
+              </button>
             </div>
 
-            {/* Font size picker */}
+            {/* Font size picker (Hidden on very small screens, visible on sm+) */}
             <div className="hidden sm:flex items-center bg-slate-100 rounded-xl p-0.5 border border-slate-200 text-xs font-bold text-slate-600">
               <button
                 onClick={() => setFontSize("normal")}
@@ -409,40 +549,40 @@ export default function ChapterNotesReaderClient({
               </button>
             </div>
 
-            {/* Copy Link */}
+            {/* Copy Link (Desktop only) */}
             <button
               onClick={handleCopyLink}
-              className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl border border-slate-200 hover:border-slate-300 bg-white text-slate-700 hover:bg-slate-50 text-xs font-bold transition-all shadow-2xs"
+              className="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl border border-slate-200 hover:border-slate-300 bg-white text-slate-700 hover:bg-slate-50 text-xs font-bold transition-all shadow-2xs cursor-pointer"
               title="Copy direct article link"
             >
               {copied ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5 text-slate-500" />}
-              <span className="hidden md:inline">{copied ? "Copied" : "Copy Link"}</span>
+              <span className="hidden md:inline">{copied ? "Copied" : "Copy"}</span>
             </button>
 
             {/* Share */}
             <button
               onClick={handleShare}
-              className="p-1.5 sm:px-2.5 sm:py-1.5 rounded-xl border border-slate-200 hover:border-slate-300 bg-white text-slate-700 hover:bg-slate-50 text-xs font-bold transition-all shadow-2xs inline-flex items-center gap-1"
+              className="p-1.5 sm:px-2.5 sm:py-1.5 rounded-xl border border-slate-200 hover:border-slate-300 bg-white text-slate-700 hover:bg-slate-50 text-xs font-bold transition-all shadow-2xs inline-flex items-center gap-1 cursor-pointer"
               title="Share"
             >
               <Share2 className="w-3.5 h-3.5 text-slate-500" />
-              <span className="hidden sm:inline">Share</span>
+              <span className="hidden md:inline">Share</span>
             </button>
 
-            {/* Print / Save PDF */}
+            {/* Print / Save PDF (Desktop only) */}
             <button
               onClick={handlePrint}
-              className="hidden md:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl border border-slate-200 hover:border-slate-300 bg-white text-slate-700 hover:bg-slate-50 text-xs font-bold transition-all shadow-2xs"
+              className="hidden lg:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl border border-slate-200 hover:border-slate-300 bg-white text-slate-700 hover:bg-slate-50 text-xs font-bold transition-all shadow-2xs cursor-pointer"
               title="Print / Save as PDF"
             >
               <Printer className="w-3.5 h-3.5 text-slate-500" />
               <span>Print</span>
             </button>
 
-            {/* Practice PYQ CTA */}
+            {/* Practice PYQ CTA (Desktop/tablet only) */}
             <Link
               href="/speed-test"
-              className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-xs font-bold transition-all shadow-sm shadow-blue-500/20"
+              className="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-xs font-bold transition-all shadow-sm shadow-blue-500/20"
             >
               <Zap className="w-3.5 h-3.5 text-amber-300 fill-amber-300" />
               <span>Practice PYQ</span>
@@ -452,8 +592,8 @@ export default function ChapterNotesReaderClient({
         </div>
       </div>
 
-      {/* ── Main Two-Column Container ── */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 w-full flex-1 flex gap-8 items-start">
+      {/* ── Main Two-Column Container (Responsive padding + bottom clearance for mobile nav) ── */}
+      <div className="max-w-7xl mx-auto px-2.5 sm:px-6 lg:px-8 pt-3 sm:pt-6 pb-32 lg:pb-12 w-full flex-1 flex gap-8 items-start">
         
         {/* ════════════════════════════════════════════════════════════
             LEFT SIDEBAR: Subject Switcher + Chapter Hierarchy List
@@ -548,8 +688,16 @@ export default function ChapterNotesReaderClient({
             {visibleSidebarNotes.length === 0 ? (
               <div className="p-6 text-center text-xs text-slate-400">
                 <HelpCircle className="w-8 h-8 mx-auto mb-2 text-slate-300" />
-                <p className="font-semibold text-slate-600">No chapters found</p>
-                <p className="text-[11px] mt-1">Try another search term or switch subjects above.</p>
+                <p className="font-semibold text-slate-700">No chapters in {currentSubject.name}</p>
+                <p className="text-[11px] mt-1 text-slate-500">Chapters are being prepared.</p>
+                <button
+                  type="button"
+                  onClick={() => handleSelectSubject("biology")}
+                  className="mt-3 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-teal-50 border border-teal-200 text-teal-700 font-bold text-[11px] hover:bg-teal-100 transition-colors cursor-pointer"
+                >
+                  <Dna className="w-3.5 h-3.5 text-teal-600" />
+                  <span>Go to Biology (3 Chapters) →</span>
+                </button>
               </div>
             ) : (
               visibleSidebarNotes.map((note, idx) => {
@@ -634,21 +782,21 @@ export default function ChapterNotesReaderClient({
         {/* ════════════════════════════════════════════════════════════
             RIGHT CONTENT AREA: Modern Chapter Reader Presentation
            ════════════════════════════════════════════════════════════ */}
-        <main className="flex-1 min-w-0 bg-white border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-xs text-left">
+        <main className="flex-1 min-w-0 bg-white border border-slate-200/90 rounded-2xl sm:rounded-3xl p-3.5 sm:p-8 md:p-10 shadow-xs text-left">
           
           {currentNote ? (
-            <article className="space-y-8 max-w-4xl">
+            <article className="space-y-6 sm:space-y-8 max-w-4xl">
               
               {/* Header Meta: Subject Badge, Chapter Index, Read Time */}
-              <header className="space-y-4 border-b border-slate-100 pb-6">
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-xl text-xs font-black border ${colorStyle.bg} ${colorStyle.text} ${colorStyle.border}`}>
+              <header className="space-y-3 sm:space-y-4 border-b border-slate-100 pb-5 sm:pb-6">
+                <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+                  <span className={`inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-xl text-xs font-black border ${colorStyle.bg} ${colorStyle.text} ${colorStyle.border}`}>
                     <SubjIcon className="w-3.5 h-3.5" />
                     <span>{currentSubject.name}</span>
                   </span>
 
                   {currentNote.chapter_number && (
-                    <span className="px-3 py-1 rounded-xl text-xs font-extrabold bg-slate-100 text-slate-700 border border-slate-200">
+                    <span className="px-2.5 sm:px-3 py-1 rounded-xl text-xs font-extrabold bg-slate-100 text-slate-700 border border-slate-200">
                       Chapter {currentNote.chapter_number}
                     </span>
                   )}
@@ -660,7 +808,7 @@ export default function ChapterNotesReaderClient({
                 </div>
 
                 {/* Primary Title (H1) */}
-                <h1 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight">
+                <h1 className="text-xl sm:text-3xl md:text-4xl font-black text-slate-900 tracking-tight leading-tight">
                   {langMode === "hindi" && currentNote.hindi_title ? currentNote.hindi_title : currentNote.title}
                 </h1>
 
@@ -692,6 +840,9 @@ export default function ChapterNotesReaderClient({
                 </div>
               </header>
 
+              {/* Dynamic Header Ad / Affiliate Banner */}
+              <AdBannerSlot slotKey="headerLeaderboard" className="mt-4 mb-2" />
+
               {/* Cover Image (if available) */}
               {currentNote.image_url && (
                 <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-2xs">
@@ -704,11 +855,18 @@ export default function ChapterNotesReaderClient({
               )}
 
               {/* ── Main Rich Content Body ── */}
-              <div
-                className={`chapter-notes-content lang-mode-${langMode} max-w-none ${fontSizeClass}`}
-                onClick={handleContentClick}
-                dangerouslySetInnerHTML={{ __html: currentBodyContent }}
-              />
+              {loadingContent ? (
+                <div className="py-20 text-center space-y-3">
+                  <div className="w-8 h-8 border-3 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto" />
+                  <p className="text-xs font-bold text-slate-500">Loading complete chapter notes & diagrams...</p>
+                </div>
+              ) : (
+                <div
+                  className={`chapter-notes-content lang-mode-${langMode} max-w-none ${fontSizeClass}`}
+                  onClick={handleContentClick}
+                  dangerouslySetInnerHTML={{ __html: currentBodyContent }}
+                />
+              )}
 
               {/* ── Chapter Sequential Navigation Cards ── */}
               <div className="pt-8 border-t border-slate-200 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -751,6 +909,9 @@ export default function ChapterNotesReaderClient({
                 )}
               </div>
 
+              {/* Dynamic Footer Ad / Affiliate Banner */}
+              <AdBannerSlot slotKey="footerBanner" className="my-6" />
+
               {/* ── High-Converting Practice PYQs CTA Card ── */}
               <div className="rounded-3xl border border-blue-200 bg-gradient-to-br from-blue-700 via-indigo-700 to-indigo-800 p-6 sm:p-8 text-white shadow-lg flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div className="space-y-2 max-w-xl">
@@ -779,12 +940,51 @@ export default function ChapterNotesReaderClient({
 
             </article>
           ) : (
-            <div className="py-20 text-center space-y-4">
-              <BookOpen className="w-16 h-16 mx-auto text-slate-300" />
-              <h2 className="text-xl font-bold text-slate-700">No chapter notes available yet</h2>
-              <p className="text-sm text-slate-500 max-w-md mx-auto">
-                Admin is uploading notes for {currentSubject.name}. Please select another subject from the left panel.
-              </p>
+            <div className="py-16 px-4 text-center max-w-xl mx-auto space-y-6">
+              <div className={`w-20 h-20 mx-auto rounded-3xl flex items-center justify-center border shadow-xs ${colorStyle.bg} ${colorStyle.text} ${colorStyle.border}`}>
+                <SubjIcon className="w-10 h-10" />
+              </div>
+              
+              <div className="space-y-2">
+                <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black border ${colorStyle.bg} ${colorStyle.text} ${colorStyle.border}`}>
+                  {currentSubject.name} ({currentSubject.hindi_name})
+                </span>
+                <h2 className="text-2xl font-black text-slate-900">
+                  No Chapters Uploaded Yet
+                </h2>
+                <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
+                  इस विषय ({currentSubject.name}) के चैप्टर नोट्स और TCS पैटर्न थ्योरी शीट्स अभी तैयार की जा रही हैं।
+                </p>
+              </div>
+
+              {/* Helpful Suggestion to Read Live Available Biology Notes */}
+              <div className="p-5 rounded-2xl bg-gradient-to-br from-teal-50 to-emerald-50/60 border border-teal-200 text-left space-y-3 shadow-xs">
+                <div className="flex items-center gap-2 text-teal-900 font-extrabold text-sm">
+                  <Sparkles className="w-4 h-4 text-teal-600" />
+                  <span>Available Now: Biology (जीव विज्ञान)</span>
+                </div>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  3 complete masterclass chapters are live with bilingual theory, custom TCS diagrams, and 20 practice MCQs with detailed explanations.
+                </p>
+                <button
+                  type="button"
+                  onClick={() => handleSelectSubject("biology")}
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-black shadow-xs transition-all cursor-pointer"
+                >
+                  <Dna className="w-4 h-4" />
+                  <span>Explore Biology Notes (3 Chapters Live) →</span>
+                </button>
+              </div>
+
+              <div className="pt-2">
+                <Link
+                  href="/notes"
+                  className="text-xs font-bold text-blue-600 hover:text-blue-800 hover:underline inline-flex items-center gap-1"
+                >
+                  <span>Or download SSC Subject Revision PDFs</span>
+                  <ArrowRight className="w-3 h-3" />
+                </Link>
+              </div>
             </div>
           )}
 
@@ -792,10 +992,59 @@ export default function ChapterNotesReaderClient({
       </div>
 
       {/* ════════════════════════════════════════════════════════════
-          MOBILE CHAPTER DRAWER / BOTTOM SHEET
+          FLOATING MOBILE QUICK CHAPTER NAV BAR (Easy Thumb-Reach)
+         ════════════════════════════════════════════════════════════ */}
+      <div className="lg:hidden fixed bottom-[60px] left-2 right-2 z-40 pointer-events-none">
+        <div className="max-w-md mx-auto pointer-events-auto bg-slate-900/95 text-white backdrop-blur-md rounded-2xl p-1.5 px-2.5 shadow-2xl border border-slate-700/60 flex items-center justify-between gap-1.5 ring-1 ring-black/20">
+          {/* Prev Chapter Button */}
+          <button
+            onClick={() => prevChapter && handleSelectChapter(prevChapter.slug)}
+            disabled={!prevChapter}
+            className="p-2 rounded-xl hover:bg-slate-800 disabled:opacity-25 disabled:hover:bg-transparent text-slate-300 hover:text-white transition-all text-xs font-bold flex items-center gap-1 shrink-0 cursor-pointer"
+            title="Previous Chapter"
+          >
+            <ChevronLeft className="w-4 h-4" />
+            <span className="hidden xs:inline text-[11px]">Prev</span>
+          </button>
+
+          {/* Center: Open Chapters Drawer */}
+          <button
+            onClick={() => setMobileDrawerOpen(true)}
+            className="flex-1 py-1.5 px-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-center text-xs font-black text-blue-300 flex items-center justify-center gap-1.5 truncate border border-slate-700/50 cursor-pointer shadow-2xs"
+          >
+            <BookOpen className="w-3.5 h-3.5 text-blue-400 shrink-0" />
+            <span className="truncate text-xs">
+              {currentNote?.chapter_number ? `Ch ${currentNote.chapter_number}: ` : ""}{currentNote?.title || "Chapters Menu"}
+            </span>
+          </button>
+
+          {/* Next Chapter Button */}
+          <button
+            onClick={() => nextChapter && handleSelectChapter(nextChapter.slug)}
+            disabled={!nextChapter}
+            className="p-2 rounded-xl hover:bg-slate-800 disabled:opacity-25 disabled:hover:bg-transparent text-slate-300 hover:text-white transition-all text-xs font-bold flex items-center gap-1 shrink-0 cursor-pointer"
+            title="Next Chapter"
+          >
+            <span className="hidden xs:inline text-[11px]">Next</span>
+            <ChevronRight className="w-4 h-4" />
+          </button>
+
+          {/* Scroll to Top */}
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="p-2 rounded-xl hover:bg-slate-800 text-slate-400 hover:text-white transition-all shrink-0 cursor-pointer"
+            title="Scroll to Top"
+          >
+            <ArrowRight className="w-4 h-4 -rotate-90" />
+          </button>
+        </div>
+      </div>
+
+      {/* ════════════════════════════════════════════════════════════
+          MOBILE CHAPTER DRAWER / BOTTOM SHEET (z-[60] Above Nav)
          ════════════════════════════════════════════════════════════ */}
       {mobileDrawerOpen && (
-        <div className="fixed inset-0 z-50 lg:hidden flex flex-col justify-end">
+        <div className="fixed inset-0 z-[60] lg:hidden flex flex-col justify-end">
           {/* Backdrop */}
           <div
             onClick={() => setMobileDrawerOpen(false)}
@@ -803,8 +1052,11 @@ export default function ChapterNotesReaderClient({
           />
 
           {/* Drawer Sheet */}
-          <div className="relative bg-white rounded-t-3xl border-t border-slate-200 p-5 max-h-[85vh] flex flex-col shadow-2xl z-10 animate-in slide-in-from-bottom duration-200">
-            <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+          <div className="relative bg-white rounded-t-3xl border-t border-slate-200 p-4 sm:p-5 max-h-[88vh] flex flex-col shadow-2xl z-10 animate-in slide-in-from-bottom duration-200">
+            {/* Top Drag Handle Indicator */}
+            <div className="w-12 h-1 bg-slate-300 rounded-full mx-auto mb-2 shrink-0" />
+
+            <div className="flex items-center justify-between pb-2.5 border-b border-slate-100">
               <div className="flex items-center gap-2">
                 <SubjIcon className="w-5 h-5 text-blue-600" />
                 <h3 className="text-sm font-extrabold text-slate-900">
@@ -813,18 +1065,18 @@ export default function ChapterNotesReaderClient({
               </div>
               <button
                 onClick={() => setMobileDrawerOpen(false)}
-                className="p-1.5 rounded-full hover:bg-slate-100 text-slate-500"
+                className="p-1.5 rounded-full hover:bg-slate-100 text-slate-500 cursor-pointer"
               >
                 <X className="w-5 h-5" />
               </button>
             </div>
 
             {/* Subject Selector for mobile */}
-            <div className="mt-3">
+            <div className="mt-2.5">
               <select
                 value={selectedSubjectId}
                 onChange={(e) => handleSelectSubject(e.target.value)}
-                className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs font-bold text-slate-900"
+                className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs font-bold text-slate-900 focus:outline-hidden focus:ring-2 focus:ring-blue-500 cursor-pointer"
               >
                 {subjects.map((s) => (
                   <option key={s.id} value={s.id}>
@@ -835,7 +1087,7 @@ export default function ChapterNotesReaderClient({
             </div>
 
             {/* Language Selector for mobile (PYQ CBT Standard) */}
-            <div className="mt-2.5 flex items-center justify-between bg-slate-50 border border-slate-200 rounded-xl px-3 py-2">
+            <div className="mt-2 flex items-center justify-between bg-slate-50 border border-slate-200 rounded-xl px-3 py-1.5">
               <span className="text-xs font-bold text-slate-700 flex items-center gap-1.5">
                 <Languages className="w-3.5 h-3.5 text-blue-600" />
                 <span>Language (माध्यम):</span>
@@ -843,7 +1095,7 @@ export default function ChapterNotesReaderClient({
               <div className="flex items-center gap-1 bg-white p-0.5 rounded-lg border border-slate-300 shadow-2xs">
                 <button
                   onClick={() => handleLanguageChange("english")}
-                  className={`px-2.5 py-1 text-[11px] font-bold rounded transition-all cursor-pointer ${
+                  className={`px-3 py-1 text-[11px] font-bold rounded transition-all cursor-pointer ${
                     langMode === "english" ? "bg-blue-700 text-white shadow-xs" : "text-slate-600 hover:bg-slate-100"
                   }`}
                 >
@@ -851,55 +1103,84 @@ export default function ChapterNotesReaderClient({
                 </button>
                 <button
                   onClick={() => handleLanguageChange("hindi")}
-                  className={`px-2.5 py-1 text-[11px] font-bold rounded transition-all cursor-pointer ${
+                  className={`px-3 py-1 text-[11px] font-bold rounded transition-all cursor-pointer ${
                     langMode === "hindi" ? "bg-blue-700 text-white shadow-xs" : "text-slate-600 hover:bg-slate-100"
                   }`}
                 >
                   हिन्दी
                 </button>
-                <button
-                  onClick={() => handleLanguageChange("bilingual")}
-                  className={`px-2.5 py-1 text-[11px] font-bold rounded transition-all cursor-pointer ${
-                    langMode === "bilingual" ? "bg-blue-700 text-white shadow-xs" : "text-slate-600 hover:bg-slate-100"
-                  }`}
-                >
-                  Bilingual
-                </button>
               </div>
             </div>
 
-            {/* Chapter items */}
-            <div className="mt-3 overflow-y-auto space-y-2 flex-1 pr-1 custom-scrollbar">
-              {subjectNotes.map((note, idx) => {
-                const isActive = note.slug === currentNote?.slug;
-                const chNum = note.chapter_number || idx + 1;
+            {/* Mobile Chapter Search Bar */}
+            <div className="relative mt-2">
+              <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
+              <input
+                type="text"
+                placeholder={`Search in ${subjectNotes.length} chapters...`}
+                value={searchFilter}
+                onChange={(e) => setSearchFilter(e.target.value)}
+                className="w-full bg-slate-50 border border-slate-200 rounded-xl pl-8 pr-7 py-1.5 text-xs text-slate-800 placeholder-slate-400 focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:bg-white"
+              />
+              {searchFilter && (
+                <button
+                  onClick={() => setSearchFilter("")}
+                  className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              )}
+            </div>
 
-                return (
+            {/* Chapter items */}
+            <div className="mt-2.5 overflow-y-auto space-y-1.5 flex-1 pr-1 pb-4 custom-scrollbar">
+              {visibleSidebarNotes.length === 0 ? (
+                <div className="p-6 text-center text-xs text-slate-500">
+                  <p className="font-semibold text-slate-700">No chapters found</p>
+                  <p className="text-[11px] mt-1 text-slate-400">Try adjusting your search query.</p>
                   <button
-                    key={note.id}
-                    onClick={() => handleSelectChapter(note.slug)}
-                    className={`w-full text-left p-3 rounded-2xl flex items-center gap-3 transition-all ${
-                      isActive
-                        ? "bg-blue-50 border border-blue-200 text-blue-900 font-bold"
-                        : "hover:bg-slate-50 border border-slate-100 text-slate-800"
-                    }`}
+                    type="button"
+                    onClick={() => setSearchFilter("")}
+                    className="mt-2 px-3 py-1 rounded-lg bg-blue-50 text-blue-600 text-xs font-bold"
                   >
-                    <span
-                      className={`w-7 h-7 rounded-xl flex items-center justify-center text-xs font-black shrink-0 ${
-                        isActive ? "bg-blue-600 text-white" : "bg-slate-100 text-slate-600"
+                    Clear Search
+                  </button>
+                </div>
+              ) : (
+                visibleSidebarNotes.map((note, idx) => {
+                  const isActive = note.slug === currentNote?.slug;
+                  const chNum = note.chapter_number || idx + 1;
+
+                  return (
+                    <button
+                      key={note.id}
+                      onClick={() => handleSelectChapter(note.slug)}
+                      className={`w-full text-left p-2.5 sm:p-3 rounded-2xl flex items-center gap-2.5 sm:gap-3 transition-all min-h-[48px] cursor-pointer ${
+                        isActive
+                          ? "bg-blue-50 border border-blue-200 text-blue-900 font-bold shadow-2xs"
+                          : "hover:bg-slate-50 border border-slate-100 text-slate-800"
                       }`}
                     >
-                      {String(chNum).padStart(2, "0")}
-                    </span>
-                    <div className="flex-1 min-w-0">
-                      <p className="text-xs font-bold truncate">{note.title}</p>
-                      {note.hindi_title && (
-                        <p className="text-[11px] text-slate-500 truncate">{note.hindi_title}</p>
+                      <span
+                        className={`w-7 h-7 rounded-xl flex items-center justify-center text-xs font-black shrink-0 ${
+                          isActive ? "bg-blue-600 text-white shadow-xs" : "bg-slate-100 text-slate-600"
+                        }`}
+                      >
+                        {String(chNum).padStart(2, "0")}
+                      </span>
+                      <div className="flex-1 min-w-0">
+                        <p className="text-xs font-bold truncate leading-tight">{note.title}</p>
+                        {note.hindi_title && (
+                          <p className="text-[11px] text-slate-500 truncate mt-0.5">{note.hindi_title}</p>
+                        )}
+                      </div>
+                      {isActive && (
+                        <span className="w-2 h-2 rounded-full bg-blue-600 shrink-0" />
                       )}
-                    </div>
-                  </button>
-                );
-              })}
+                    </button>
+                  );
+                })
+              )}
             </div>
           </div>
         </div>
@@ -907,22 +1188,51 @@ export default function ChapterNotesReaderClient({
 
       {/* Embedded CSS for Rich Reader Typography, Tables, Formula & Callout Cards */}
       <style jsx global>{`
+        .chapter-notes-content {
+          overflow-x: hidden;
+          word-break: break-word;
+          overflow-wrap: break-word;
+        }
+        .chapter-notes-content table {
+          display: block;
+          max-width: 100%;
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+        .chapter-notes-content svg {
+          max-width: 100% !important;
+          height: auto !important;
+        }
+        .chapter-notes-content img {
+          max-width: 100% !important;
+          height: auto !important;
+          border-radius: 0.75rem;
+        }
+        .chapter-notes-content pre,
+        .chapter-notes-content code {
+          max-width: 100%;
+          word-break: break-word;
+        }
         .chapter-notes-content h2 {
-          font-size: 1.5rem;
-          font-weight: 850;
-          color: #0f172a;
-          margin-top: 2rem;
-          margin-bottom: 0.75rem;
-          border-bottom: 2px solid #f1f5f9;
-          padding-bottom: 0.5rem;
-          letter-spacing: -0.02em;
+          background: #f0fdfa !important;
+          border-left: 5px solid #0f766e !important;
+          padding: 10px 16px !important;
+          margin-top: 2.25rem !important;
+          margin-bottom: 1rem !important;
+          font-size: 1.35rem !important;
+          font-weight: 700 !important;
+          color: #0f766e !important;
+          border-radius: 0 8px 8px 0 !important;
+          border-bottom: none !important;
+          line-height: 1.4 !important;
         }
         .chapter-notes-content h3 {
-          font-size: 1.2rem;
-          font-weight: 800;
-          color: #1e293b;
-          margin-top: 1.5rem;
-          margin-bottom: 0.5rem;
+          color: #0f766e !important;
+          margin-top: 1.6rem !important;
+          margin-bottom: 0.5rem !important;
+          font-size: 1.15rem !important;
+          font-weight: 700 !important;
+          line-height: 1.4 !important;
         }
         .chapter-notes-content p {
           color: #334155;
@@ -992,14 +1302,14 @@ export default function ChapterNotesReaderClient({
           background: #f8fafc;
         }
         .chapter-notes-content figure {
-          margin: 1.5rem 0;
-          padding: 1.25rem;
-          background: #f8fafc;
-          border: 1px solid #e2e8f0;
-          border-radius: 1rem;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+          margin: 1.75rem auto !important;
+          padding: 0 !important;
+          background: transparent !important;
+          border: none !important;
+          display: block;
+          overflow-x: auto;
+          box-sizing: border-box;
+          max-width: 100%;
         }
         .chapter-notes-content figcaption {
           text-align: center;
@@ -1008,42 +1318,58 @@ export default function ChapterNotesReaderClient({
           font-weight: 600;
           margin-top: 0.75rem;
         }
+        .chapter-notes-content .ig,
         .chapter-notes-content .dg {
           width: 100%;
-          max-width: 600px;
+          max-width: 680px;
           height: auto;
+          display: block;
+          margin: 0 auto;
           color: #1e293b;
+          overflow: visible;
         }
+        .chapter-notes-content .ig text,
         .chapter-notes-content .dg text {
-          fill: currentColor;
-          font-size: 13px;
+          fill: #1f2937;
+          font-size: 12px;
           font-family: inherit;
         }
+        .chapter-notes-content .ig .w,
+        .chapter-notes-content .dg .w {
+          fill: #ffffff !important;
+          font-weight: 700;
+        }
+        .chapter-notes-content .ig .b,
+        .chapter-notes-content .dg .b {
+          font-weight: 700;
+        }
+        .chapter-notes-content .ig .ti,
+        .chapter-notes-content .dg .ti {
+          fill: #ffffff !important;
+          font-weight: 700;
+          font-size: 16px;
+        }
+        .chapter-notes-content .ig .sm,
+        .chapter-notes-content .dg .sm {
+          font-size: 11px;
+        }
+        .chapter-notes-content .ig .l,
         .chapter-notes-content .dg .l {
           fill: none;
           stroke: currentColor;
           stroke-width: 1.5;
         }
+        .chapter-notes-content .ig .a,
         .chapter-notes-content .dg .a {
           stroke: #0f766e;
           fill: none;
           stroke-width: 3;
         }
-        .chapter-notes-content .dg .b {
-          stroke: #d97706;
-          fill: none;
-          stroke-width: 3;
-        }
-        .chapter-notes-content .dg .f {
-          fill: #0f766e;
-        }
+        .chapter-notes-content .ig .s,
         .chapter-notes-content .dg .s {
           fill: #f0fdfa;
           stroke: #0f766e;
           stroke-width: 2;
-        }
-        .lang-mode-bilingual .figure-hi {
-          display: none !important;
         }
 
         .notes-table {
@@ -1158,9 +1484,9 @@ export default function ChapterNotesReaderClient({
           line-height: 1.5;
         }
         .quiz-options {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-          gap: 0.6rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.55rem;
           margin: 0.75rem 0 1rem 0;
         }
         .quiz-option {
@@ -1475,6 +1801,83 @@ export default function ChapterNotesReaderClient({
           background: #ecfdf5;
           color: #059669;
           border: 1px solid #a7f3d0;
+        }
+
+        /* ════════════════════════════════════════════════════════════
+            MOBILE-SPECIFIC RESPONSIVE ENHANCEMENTS (< 640px)
+           ════════════════════════════════════════════════════════════ */
+        @media (max-width: 640px) {
+          .chapter-notes-content h2 {
+            font-size: 1.15rem !important;
+            padding: 8px 12px !important;
+            margin-top: 1.5rem !important;
+            margin-bottom: 0.75rem !important;
+            border-radius: 0 6px 6px 0 !important;
+          }
+          .chapter-notes-content h3 {
+            font-size: 1.02rem !important;
+            margin-top: 1.25rem !important;
+            margin-bottom: 0.4rem !important;
+          }
+          .chapter-notes-content ul,
+          .chapter-notes-content ol {
+            margin-left: 1rem !important;
+            margin-bottom: 1rem !important;
+          }
+          .chapter-notes-content .tbl table,
+          .notes-table {
+            font-size: 0.78rem !important;
+          }
+          .chapter-notes-content .tbl th,
+          .notes-table th {
+            padding: 0.45rem 0.6rem !important;
+            font-size: 0.78rem !important;
+          }
+          .chapter-notes-content .tbl td,
+          .notes-table td {
+            padding: 0.45rem 0.6rem !important;
+            font-size: 0.78rem !important;
+          }
+          .formula-card,
+          .note-intro-card,
+          .callout-box,
+          .chapter-notes-content .note {
+            padding: 0.75rem 0.9rem !important;
+            border-radius: 0.75rem !important;
+            margin: 0.85rem 0 !important;
+            font-size: 0.85rem !important;
+          }
+          .quiz-card {
+            padding: 0.85rem 1rem !important;
+            border-radius: 0.75rem !important;
+            margin: 1rem 0 !important;
+          }
+          .quiz-question {
+            font-size: 0.92rem !important;
+          }
+          .quiz-option {
+            padding: 0.65rem 0.75rem !important;
+            font-size: 0.85rem !important;
+            flex-wrap: wrap !important;
+            gap: 0.5rem !important;
+          }
+          .quiz-option.selected-correct::after,
+          .quiz-option.selected-wrong::after,
+          .quiz-option.highlight-correct::after {
+            display: block !important;
+            width: 100% !important;
+            margin-top: 0.35rem !important;
+            margin-left: 2.1rem !important;
+            text-align: left !important;
+          }
+          .quiz-explanation {
+            padding: 0.75rem 0.9rem !important;
+            font-size: 0.82rem !important;
+          }
+          .hindi-note {
+            padding: 0.5rem 0.75rem !important;
+            font-size: 0.85rem !important;
+          }
         }
       `}</style>
 

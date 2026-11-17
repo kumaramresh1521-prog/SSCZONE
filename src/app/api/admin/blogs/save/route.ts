@@ -65,6 +65,39 @@ export async function POST(req: NextRequest) {
       secondary_keywords,
     } = body;
 
+    // Fast-path: Quick Publish / Unpublish toggle without reloading or overwriting entire article
+    if (id && typeof is_published === "boolean" && (!title || !title.trim())) {
+      const { data, error } = await supabaseAdmin
+        .from("blogs")
+        .update({
+          is_published,
+          updated_at: new Date().toISOString(),
+        })
+        .eq("id", id)
+        .select()
+        .single();
+
+      if (error) {
+        console.error("Fast publish toggle error:", error);
+        return NextResponse.json({ error: error.message }, { status: 500 });
+      }
+
+      try {
+        revalidatePath("/blog");
+        revalidatePath("/blog/notes");
+        revalidatePath("/");
+        if (data?.slug) {
+          revalidatePath(`/blog/${data.slug}`);
+          revalidatePath(`/blog/notes/${data.slug}`);
+        }
+      } catch {}
+
+      return NextResponse.json({
+        success: true,
+        blog: data,
+      });
+    }
+
     if (!title || !title.trim()) {
       return NextResponse.json({ error: "Article Title is required" }, { status: 400 });
     }
@@ -81,8 +114,8 @@ export async function POST(req: NextRequest) {
     // Pack rich metadata safely into keywords field so it always matches existing Supabase schema
     const metaPayload = {
       focus: focus_keyword?.trim() || "",
-      category: category?.trim() || "Exam Notification",
-      examTag: exam_tag?.trim() || "SSC CGL",
+      category: category?.trim() || "",
+      examTag: typeof exam_tag === "string" ? exam_tag.trim() : "",
       seoScore: typeof seo_score === "number" ? seo_score : 85,
       secondary: secondary_keywords?.trim() || "",
       saved_at: new Date().toISOString()
@@ -95,7 +128,6 @@ export async function POST(req: NextRequest) {
     const dbPayload: any = {
       title: title.trim(),
       slug: cleanSlug,
-      content: cleanContent,
       excerpt: cleanExcerpt,
       seo_title: cleanSeoTitle,
       keywords: JSON.stringify(metaPayload),
@@ -103,6 +135,10 @@ export async function POST(req: NextRequest) {
       is_published: typeof is_published === "boolean" ? is_published : true,
       updated_at: new Date().toISOString()
     };
+
+    if (content !== undefined) {
+      dbPayload.content = cleanContent;
+    }
 
     let result = null;
 
@@ -138,14 +174,45 @@ export async function POST(req: NextRequest) {
     // Also write a fail-safe disk backup
     backupBlog({ ...result, meta: metaPayload });
 
-    // Instantly purge public caches
-    revalidatePath("/blog");
-    revalidatePath("/blog/notes");
-    revalidatePath("/");
-    if (result?.slug) {
-      revalidatePath(`/blog/${result.slug}`);
-      revalidatePath(`/blog/notes/${result.slug}`);
+    // Auto-register category into category store if not already present
+    if (category && typeof category === "string" && category.trim()) {
+      try {
+        const { getBlogCategoriesAsync, saveBlogCategoriesAsync } = await import("@/lib/blog-categories-store");
+        const currentCats = await getBlogCategoriesAsync();
+        const catName = category.trim();
+        const exists = currentCats.some((c) => c.name.toLowerCase() === catName.toLowerCase());
+        if (!exists) {
+          const catSlug = catName
+            .toLowerCase()
+            .replace(/[^a-z0-9\-]+/g, "-")
+            .replace(/^-+|-+$/g, "");
+          const updated = [
+            ...currentCats,
+            {
+              id: `cat_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`,
+              name: catName,
+              slug: catSlug,
+              icon: "Tag",
+              created_at: new Date().toISOString(),
+            },
+          ];
+          await saveBlogCategoriesAsync(updated);
+        }
+      } catch (e) {
+        console.error("Auto-register category error:", e);
+      }
     }
+
+    // Instantly purge public caches
+    try {
+      revalidatePath("/blog");
+      revalidatePath("/blog/notes");
+      revalidatePath("/");
+      if (result?.slug) {
+        revalidatePath(`/blog/${result.slug}`);
+        revalidatePath(`/blog/notes/${result.slug}`);
+      }
+    } catch {}
 
     try {
       const { invalidateChapterNotesCache } = await import("@/lib/chapter-notes-store");

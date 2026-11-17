@@ -137,7 +137,7 @@ export default async function ChapterNoteDetailPage(props: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <ChapterNotesReaderClient
-        initialNotes={allNotes}
+        initialNotes={allNotes.map((n) => (n.slug === note.slug ? note : n))}
         subjects={ALL_SUBJECTS}
         defaultSlug={note.slug}
       />

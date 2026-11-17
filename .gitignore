@@ -61,7 +61,9 @@ scripts/debug_*
 scripts/__pycache__/
 scripts/scratch/
 scripts/scratch_imgs/
+scripts/comprehension_text/
 tsconfig.tsbuildinfo
+*.tsbuildinfo
 compiled_verification_txt/
 
 # Cloudflare R2 Assets (Stored in R2 bucket, excluded from git repo)

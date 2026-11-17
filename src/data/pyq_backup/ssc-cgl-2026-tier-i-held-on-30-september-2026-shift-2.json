@@ -974,7 +974,7 @@
   {
     "id": 14383,
     "paper_id": 25,
-    "question_text": "Rearrange the parts of the sentence in the correct order. As the 2024 Paris Olympics approached, P. raising concerns/diplomatic boycotts and the potential exclusion of certain nations, Q. global geopolitical tensions, including conflicts in Eastern Europe and trade disputes among superpowers, R. while the International Olympic Committee attempted to maintain neutrality and ensure an inclusive competition S. cast a shadow/the event's spirit of international unity and sportsmanship,",
+    "question_text": "Rearrange the parts of the sentence in the correct order. \nAs the 2024 Paris Olympics approached, \nP. raising concerns/diplomatic boycotts and the potential exclusion of certain nations, \nQ. global geopolitical tensions, including conflicts in Eastern Europe and trade disputes among superpowers,\n R. while the International Olympic Committee attempted to maintain neutrality and ensure an inclusive competition \nS. cast a shadow\nthe event's spirit of international unity and sportsmanship,",
     "option_a": "PSQR",
     "option_b": "SRQP",
     "option_c": "RSPQ",
@@ -991,7 +991,7 @@
     "option_b": "QSRP",
     "option_c": "SQPR",
     "option_d": "RPSQ",
-    "correct_answer": "D",
+    "correct_answer": "B",
     "question_number": 83,
     "explanation": null
   },

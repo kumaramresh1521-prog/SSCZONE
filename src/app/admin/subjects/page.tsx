@@ -20,30 +20,42 @@ export default function SubjectsPage() {
 
   async function loadData() {
     setLoading(true);
-    const [subRes, exRes] = await Promise.all([
-      supabase.from("subjects").select("*, exams(title), topics(count)").order("sort_order"),
-      supabase.from("exams").select("id, title, is_active").order("id")
-    ]);
-    if (subRes.data) setSubjects(subRes.data);
-    if (exRes.data) setExams(exRes.data);
-    setLoading(false);
+    try {
+      const res = await fetch("/api/admin/subjects", { cache: "no-store" });
+      const data = await res.json();
+      if (res.ok) {
+        setSubjects(data.subjects || []);
+        setExams(data.exams || []);
+      } else {
+        toast.error(data.error || "Failed to load subjects");
+      }
+    } catch (e: any) {
+      toast.error(e.message || "Failed to load subjects");
+    } finally {
+      setLoading(false);
+    }
   }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!examId) { toast.error("Please select an exam"); return; }
     setSaving(true);
-    const payload = { title, exam_id: examId, slug: slugify(title) };
-    if (editingId) {
-      const { error } = await supabase.from("subjects").update(payload).eq("id", editingId);
-      if (error) { toast.error(error.message); setSaving(false); return; }
-    } else {
-      const { error } = await supabase.from("subjects").insert(payload);
-      if (error) { toast.error(error.message); setSaving(false); return; }
+    try {
+      const res = await fetch("/api/admin/subjects", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id: editingId, title, exam_id: examId }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to save subject");
+      setShowForm(false); setTitle(""); setEditingId(null);
+      loadData();
+      toast.success(editingId ? "Subject updated!" : "Subject created!");
+    } catch (err: any) {
+      toast.error(err.message || "Failed to save subject");
+    } finally {
+      setSaving(false);
     }
-    setShowForm(false); setTitle(""); setEditingId(null); setSaving(false);
-    loadData();
-    toast.success(editingId ? "Subject updated!" : "Subject created!");
   }
 
   function handleEdit(sub: any) {
@@ -52,18 +64,32 @@ export default function SubjectsPage() {
 
   async function handleDelete(id: number, title: string) {
     if (!confirm(`Delete "${title}"? All topics under it will also be affected.`)) return;
-    const { error } = await supabase.from("subjects").delete().eq("id", id);
-    if (error) { toast.error(error.message); return; }
-    toast.success("Subject deleted!");
-    loadData();
+    try {
+      const res = await fetch(`/api/admin/subjects?id=${id}`, { method: "DELETE" });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to delete subject");
+      toast.success("Subject deleted!");
+      loadData();
+    } catch (err: any) {
+      toast.error(err.message || "Failed to delete subject");
+    }
   }
 
   async function toggleActive(id: number, currentStatus: boolean) {
     const nextStatus = !currentStatus;
-    const { error } = await supabase.from("subjects").update({ is_active: nextStatus }).eq("id", id);
-    if (error) { toast.error(error.message); return; }
-    setSubjects(prev => prev.map(s => s.id === id ? { ...s, is_active: nextStatus } : s));
-    toast.success(nextStatus ? "🟢 Subject turned ON" : "⚪ Subject turned OFF");
+    try {
+      const res = await fetch("/api/admin/subjects", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id, is_active: nextStatus }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to toggle status");
+      setSubjects(prev => prev.map(s => s.id === id ? { ...s, is_active: nextStatus } : s));
+      toast.success(nextStatus ? "🟢 Subject turned ON" : "⚪ Subject turned OFF");
+    } catch (err: any) {
+      toast.error(err.message || "Failed to toggle status");
+    }
   }
 
   const filtered = filterExam ? subjects.filter(s => s.exam_id === filterExam) : subjects;

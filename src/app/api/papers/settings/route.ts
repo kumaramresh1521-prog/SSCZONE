@@ -20,6 +20,17 @@ function readPaperSettings(): Record<string, { allow_download?: boolean; allow_t
   return {};
 }
 
+export async function OPTIONS() {
+  return new NextResponse(null, {
+    status: 204,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
+    },
+  });
+}
+
 export async function GET() {
   const settings = readPaperSettings();
   return NextResponse.json(settings, {

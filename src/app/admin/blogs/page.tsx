@@ -29,120 +29,13 @@ import {
   AlertCircle,
   Maximize2,
   Upload,
-  Image as ImageIcon
+  Image as ImageIcon,
+  BookOpen
 } from "lucide-react";
 import Link from "next/link";
 
-// Pre-configured Blog Post Quick Templates
-const POST_TEMPLATES = [
-  {
-    name: "📢 Official Exam Notification",
-    category: "Exam Notification",
-    examTag: "SSC CGL",
-    focusKeyword: "SSC CGL 2026 Notification",
-    title: "SSC CGL 2026 Official Notification Out: Check Vacancy, Eligibility & Dates",
-    excerpt: "Staff Selection Commission (SSC) has officially released the recruitment notification for Combined Graduate Level Examination (CGL) 2026. Review eligibility, vacancy, and apply online.",
-    content: `<h2>SSC CGL 2026 Notification Overview</h2>
-<p>The Staff Selection Commission has released the official recruitment notification for Combined Graduate Level Examination (CGL) 2026. Eligible candidates can apply online through the official portal <strong>ssc.gov.in</strong>.</p>
+// Custom Category & Blog Management
 
-<div style="background: linear-gradient(to right, #eff6ff, #f0fdf4); border-left: 5px solid #2563eb; padding: 16px 20px; border-radius: 12px; margin: 20px 0;">
-  <p style="margin: 0 0 6px 0; font-weight: 800; color: #1e3a8a; font-size: 15px;">📢 IMPORTANT OFFICIAL NOTIFICATION UPDATE</p>
-  <p style="margin: 0; color: #334155; font-size: 14px; line-height: 1.5;">Staff Selection Commission has updated the recruitment timeline. Candidates are advised to register OTR on <strong>ssc.gov.in</strong> before the deadline.</p>
-</div>
-
-<h3>Key Important Dates:</h3>
-<ul>
-  <li><strong>Online Application Start Date:</strong> To be announced on official portal</li>
-  <li><strong>Last Date to Apply:</strong> To be announced</li>
-  <li><strong>Tier-1 Computer Based Exam:</strong> Expected soon</li>
-  <li><strong>Tier-2 Mains Exam:</strong> To be notified post Tier-1</li>
-</ul>
-
-<h3>Eligibility Criteria:</h3>
-<ul>
-  <li><strong>Educational Qualification:</strong> Bachelor's Degree in any discipline from a recognized University.</li>
-  <li><strong>Age Limit:</strong> 18 to 30/32 years (Relaxation applicable as per Govt norms).</li>
-</ul>
-
-<h3>Tier-1 Computer Based Exam Pattern:</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
-  <thead>
-    <tr style="background: #1e293b; color: #ffffff; text-align: left;">
-      <th style="padding: 12px 14px; border: 1px solid #334155;">Section</th>
-      <th style="padding: 12px 14px; border: 1px solid #334155;">Questions</th>
-      <th style="padding: 12px 14px; border: 1px solid #334155;">Max Marks</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="background: #ffffff;"><td style="padding: 10px 14px; border: 1px solid #e2e8f0;">1. General Intelligence & Reasoning</td><td style="padding: 10px 14px; border: 1px solid #e2e8f0;">25</td><td style="padding: 10px 14px; border: 1px solid #e2e8f0;">50</td></tr>
-    <tr style="background: #f8fafc;"><td style="padding: 10px 14px; border: 1px solid #e2e8f0;">2. General Awareness & Current Affairs</td><td style="padding: 10px 14px; border: 1px solid #e2e8f0;">25</td><td style="padding: 10px 14px; border: 1px solid #e2e8f0;">50</td></tr>
-    <tr style="background: #ffffff;"><td style="padding: 10px 14px; border: 1px solid #e2e8f0;">3. Quantitative Aptitude</td><td style="padding: 10px 14px; border: 1px solid #e2e8f0;">25</td><td style="padding: 10px 14px; border: 1px solid #e2e8f0;">50</td></tr>
-    <tr style="background: #f8fafc;"><td style="padding: 10px 14px; border: 1px solid #e2e8f0;">4. English Comprehension</td><td style="padding: 10px 14px; border: 1px solid #e2e8f0;">25</td><td style="padding: 10px 14px; border: 1px solid #e2e8f0;">50</td></tr>
-  </tbody>
-</table>
-
-<div style="background: linear-gradient(135deg, #1e3a8a, #3b82f6); color: #ffffff; padding: 22px 26px; border-radius: 16px; margin: 25px 0; box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.3);">
-  <div style="display: flex; flex-direction: column; gap: 8px;">
-    <span style="background: rgba(255,255,255,0.2); font-weight: 800; font-size: 11px; padding: 3px 8px; border-radius: 6px; width: fit-content; text-transform: uppercase;">100% Authentic Shift Papers</span>
-    <h3 style="margin: 0; font-size: 18px; font-weight: 800; color: #ffffff;">Practice Official SSC Shift Papers in Real CBT Exam Mode</h3>
-    <p style="margin: 0; font-size: 13px; color: #dbeafe; line-height: 1.4;">Attempt timed tests with instant percentile scorecards, bilingual solutions, and clean PDF downloads on SSCZone.</p>
-    <a href="/papers" style="display: inline-block; margin-top: 10px; background: #ffffff; color: #1e3a8a; font-weight: 800; padding: 10px 18px; border-radius: 10px; text-decoration: none; font-size: 13px; width: fit-content;">Attempt CBT Test Now →</a>
-  </div>
-</div>`
-  },
-  {
-    name: "🔑 Answer Key & Response Sheet",
-    category: "Answer Key & Results",
-    examTag: "SSC CHSL",
-    focusKeyword: "SSC CHSL Tier 1 Answer Key",
-    title: "SSC CHSL Tier 1 Official Answer Key & Response Sheet: Direct Download Link",
-    excerpt: "Staff Selection Commission has uploaded tentative answer keys and response sheets for SSC CHSL Tier-1. Check safe score calculations and expected cut-off trends.",
-    content: `<h2>SSC CHSL Tier 1 Answer Key Released</h2>
-<p>The Staff Selection Commission has officially uploaded the tentative answer keys along with candidate response sheets for the Combined Higher Secondary (10+2) Level Tier-1 Examination.</p>
-
-<div style="background: #fffbeb; border: 1px solid #fde68a; border-left: 5px solid #d97706; padding: 16px 20px; border-radius: 12px; margin: 20px 0;">
-  <p style="margin: 0 0 6px 0; font-weight: 800; color: #92400e; font-size: 15px;">⚠️ OBJECTION WINDOW GUIDELINES</p>
-  <p style="margin: 0; color: #78350f; font-size: 14px; line-height: 1.5;">Representations in respect of tentative answer keys must be submitted online before the closing date upon payment of ₹100 per question challenged.</p>
-</div>
-
-<h3>Steps to Check Answer Key:</h3>
-<ol>
-  <li>Visit the official candidate login link on <strong>ssc.gov.in</strong>.</li>
-  <li>Enter your Roll Number / User ID and Password.</li>
-  <li>Download your official question paper with recorded responses.</li>
-</ol>`
-  },
-  {
-    name: "💡 Subject Strategy & Topper Tips",
-    category: "Preparation Strategy",
-    examTag: "SSC Maths",
-    focusKeyword: "Score 45+ in SSC Maths",
-    title: "How to Score 45+ in SSC Maths (Arithmetic & Advance): Complete Guide",
-    excerpt: "Step-by-step preparation strategy, chapter-wise weightage analysis, and speed calculation tricks to score full marks in Quantitative Aptitude.",
-    content: `<h2>Comprehensive Maths Preparation Blueprint</h2>
-<p>Quantitative Aptitude tests speed, conceptual clarity, and accuracy. Under TCS pattern questions, calculation intensity has increased while standard formula questions remain predictable.</p>
-
-<div style="background: #f8fafc; border: 1px solid #cbd5e1; padding: 18px 22px; border-radius: 12px; margin: 20px 0; font-family: monospace;">
-  <p style="margin: 0 0 8px 0; font-weight: 800; color: #0f172a; font-size: 14px; font-family: sans-serif;">📐 ESSENTIAL QUANTITATIVE IDENTITIES:</p>
-  <p style="margin: 4px 0; font-size: 14px; color: #1e293b;">• If <strong>x + 1/x = k</strong>, then <strong>x² + 1/x² = k² - 2</strong></p>
-  <p style="margin: 4px 0; font-size: 14px; color: #1e293b;">• If <strong>x + 1/x = k</strong>, then <strong>x³ + 1/x³ = k³ - 3k</strong></p>
-</div>
-
-<h3>1. High-Yield Arithmetic Core:</h3>
-<ul>
-  <li><strong>Percentage & Fractions:</strong> Memorize fraction to percentage values (1/2 to 1/20).</li>
-  <li><strong>Profit, Loss & Discount:</strong> Learn multiplying factors and marked price shortcuts.</li>
-  <li><strong>Time & Work:</strong> Efficiency & LCM method.</li>
-</ul>
-
-<h3>2. Advance Maths Focus:</h3>
-<ul>
-  <li><strong>Geometry:</strong> Triangle angle bisector theorem, circumcentre & incentre properties.</li>
-  <li><strong>Trigonometry:</strong> Pythagorean triplets and value-putting techniques (θ = 45° or 30°/60°).</li>
-  <li><strong>Algebra:</strong> Symmetric polynomial standard identities.</li>
-</ul>`
-  }
-];
 
 export default function AdminBlogsPage() {
   const [blogs, setBlogs] = useState<any[]>([]);
@@ -153,9 +46,9 @@ export default function AdminBlogsPage() {
   const [editingId, setEditingId] = useState<string | null>(null);
   const [title, setTitle] = useState("");
   const [slug, setSlug] = useState("");
-  const [category, setCategory] = useState("Exam Notification");
-  const [examTag, setExamTag] = useState("SSC CGL");
-  const [focusKeyword, setFocusKeyword] = useState("SSC CGL 2026 Notification");
+  const [category, setCategory] = useState("");
+  const [examTag, setExamTag] = useState("");
+  const [focusKeyword, setFocusKeyword] = useState("");
   const [secondaryKeywords, setSecondaryKeywords] = useState("");
   const [content, setContent] = useState("");
   const [excerpt, setExcerpt] = useState("");
@@ -171,67 +64,86 @@ export default function AdminBlogsPage() {
   // List Filter States
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategoryFilter, setSelectedCategoryFilter] = useState("All");
-  const [seedingDefaults, setSeedingDefaults] = useState(false);
+
+  // Dynamic Blog Categories State (Connected to Supabase)
+  const [categories, setCategories] = useState<{ id: string; name: string; slug: string }[]>([]);
+  const [showCategoryModal, setShowCategoryModal] = useState(false);
+  const [newCatName, setNewCatName] = useState("");
+  const [addingCategory, setAddingCategory] = useState(false);
 
   useEffect(() => {
     loadBlogs();
+    loadCategories();
   }, []);
+
+  async function loadCategories() {
+    try {
+      const res = await fetch("/api/admin/blog-categories", { cache: "no-store" });
+      const data = await res.json();
+      if (res.ok && data.categories) {
+        setCategories(data.categories);
+      }
+    } catch (err) {
+      console.error("Failed to load categories:", err);
+    }
+  }
+
+  async function handleAddCategory(e?: React.FormEvent) {
+    if (e) e.preventDefault();
+    if (!newCatName.trim()) {
+      toast.error("Please enter a category name");
+      return;
+    }
+    setAddingCategory(true);
+    try {
+      const res = await fetch("/api/admin/blog-categories", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: newCatName.trim() }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to create category");
+      setCategories(data.categories || []);
+      setCategory(newCatName.trim());
+      setNewCatName("");
+      toast.success("Category saved to Supabase! 🎉");
+    } catch (err: any) {
+      toast.error(err.message || "Failed to add category");
+    } finally {
+      setAddingCategory(false);
+    }
+  }
+
+  async function handleDeleteCategory(id: string, name: string) {
+    if (!confirm(`Delete category "${name}"?`)) return;
+    try {
+      const res = await fetch(`/api/admin/blog-categories?id=${encodeURIComponent(id)}`, {
+        method: "DELETE",
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to delete category");
+      setCategories(data.categories || []);
+      if (category === name) setCategory("");
+      toast.success("Category removed!");
+    } catch (err: any) {
+      toast.error(err.message || "Failed to delete category");
+    }
+  }
 
   async function loadBlogs() {
     try {
       setLoading(true);
-      const { data, error } = await supabase
-        .from("blogs")
-        .select("*")
-        .not("keywords", "ilike", "%system-report%")
-        .not("slug", "ilike", "sys-report%")
-        .order("created_at", { ascending: false });
-        
-      if (error) {
-        toast.error("Error loading blogs: " + error.message);
+      const res = await fetch("/api/admin/blogs", { cache: "no-store" });
+      const data = await res.json();
+      if (res.ok && data.blogs) {
+        setBlogs(data.blogs);
       } else {
-        const enriched = (data || []).map((b) => {
-          let meta: any = {};
-          if (b.keywords && typeof b.keywords === "string") {
-            try {
-              meta = JSON.parse(b.keywords);
-            } catch {
-              meta = { focus: b.keywords };
-            }
-          }
-          return {
-            ...b,
-            category: b.category || meta.category || "Exam Notification",
-            exam_tag: b.exam_tag || meta.examTag || "SSC CGL",
-            focus_keyword: meta.focus || "",
-            seo_score: typeof meta.seoScore === "number" ? meta.seoScore : 85,
-          };
-        });
-
-        setBlogs(enriched);
+        toast.error(data.error || "Failed to load blogs from Supabase");
       }
     } catch (err: any) {
       toast.error(err.message || "Failed to load blogs");
     } finally {
       setLoading(false);
-    }
-  }
-
-  // 1-Click Seed Official SSC Starter Blogs into Supabase
-  async function handleSeedDefaults() {
-    if (!confirm("This will seed 5 official SSC starter blog posts into your Supabase database. You can freely edit or delete any of them afterwards. Proceed?")) return;
-    setSeedingDefaults(true);
-    const toastId = toast.loading("Seeding starter blog posts into Supabase...");
-    try {
-      const res = await fetch("/api/admin/blogs/seed-defaults", { method: "POST" });
-      const data = await res.json();
-      if (!res.ok || data.error) throw new Error(data.error || "Failed to seed default blogs");
-      toast.success(data.message || "Starter blogs seeded successfully! 🎉", { id: toastId });
-      loadBlogs();
-    } catch (err: any) {
-      toast.error(err.message || "Failed to seed blogs", { id: toastId });
-    } finally {
-      setSeedingDefaults(false);
     }
   }
 
@@ -255,8 +167,8 @@ export default function AdminBlogsPage() {
     setEditingId(null);
     setTitle("");
     setSlug("");
-    setCategory("Exam Notification");
-    setExamTag("SSC CGL");
+    setCategory(categories[0]?.name || "Biology");
+    setExamTag("");
     setFocusKeyword("");
     setSecondaryKeywords("");
     setContent("");
@@ -267,24 +179,7 @@ export default function AdminBlogsPage() {
     setEditorTab("edit");
   }
 
-  function applyTemplate(tpl: typeof POST_TEMPLATES[0]) {
-    setTitle(tpl.title);
-    setCategory(tpl.category);
-    setExamTag(tpl.examTag || "SSC CGL");
-    setFocusKeyword(tpl.focusKeyword || "");
-    setExcerpt(tpl.excerpt);
-    setContent(tpl.content);
-    const generatedSlug = tpl.title
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, "-")
-      .replace(/(^-|-$)+/g, "");
-    setSlug(generatedSlug);
-    setSeoTitle(`${tpl.title} | SSCZone`);
-    setSecondaryKeywords("SSC, CGL, CHSL, Notification, Syllabus, Admit Card");
-    toast.success(`Template applied: ${tpl.name}! 🚀`);
-  }
-
-  function handleEdit(blog: any) {
+  async function handleEdit(blog: any) {
     setEditingId(blog.id);
     setTitle(blog.title || "");
     setSlug(blog.slug || "");
@@ -298,17 +193,35 @@ export default function AdminBlogsPage() {
       }
     }
 
-    setCategory(blog.category || meta.category || "Exam Notification");
-    setExamTag(blog.exam_tag || meta.examTag || "SSC CGL");
-    setFocusKeyword(meta.focus || blog.keywords || "");
-    setSecondaryKeywords(meta.secondary || "");
-    setContent(blog.content || "");
+    setCategory(blog.category || meta.category || "");
+    setExamTag(blog.exam_tag !== undefined ? (blog.exam_tag ?? "") : (meta.examTag ?? ""));
+    setFocusKeyword(blog.focus_keyword || meta.focus || blog.keywords || "");
+    setSecondaryKeywords(blog.secondary_keywords || meta.secondary || "");
     setExcerpt(blog.excerpt || "");
     setSeoTitle(blog.seo_title || "");
     setImageUrl(blog.image_url || "");
     setIsPublished(blog.is_published ?? true);
     setEditorTab("edit");
     setShowEditor(true);
+
+    if (blog.content !== undefined) {
+      setContent(blog.content || "");
+    } else {
+      setContent("");
+      try {
+        const res = await fetch(`/api/admin/blogs?id=${encodeURIComponent(blog.id)}`);
+        const data = await res.json();
+        if (data.success && data.blog) {
+          const loadedContent = data.blog.content || "";
+          setContent(loadedContent);
+          setBlogs((prev) =>
+            prev.map((b) => (b.id === blog.id ? { ...b, content: loadedContent } : b))
+          );
+        }
+      } catch (err) {
+        console.error("Failed to load blog content:", err);
+      }
+    }
   }
 
   async function handleDelete(id: string) {
@@ -337,7 +250,7 @@ export default function AdminBlogsPage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          ...blog,
+          id: blog.id,
           is_published: newStatus,
         }),
       });
@@ -425,6 +338,7 @@ export default function AdminBlogsPage() {
       setShowEditor(false);
       resetForm();
       loadBlogs();
+      loadCategories();
     } catch (err: any) {
       toast.error(`Save Failed: ${err.message}`, { id: toastId });
     } finally {
@@ -475,14 +389,20 @@ export default function AdminBlogsPage() {
 
         <div className="flex items-center gap-2.5 flex-wrap">
           <button
-            onClick={handleSeedDefaults}
-            disabled={seedingDefaults}
-            className="flex items-center gap-1.5 rounded-xl border border-emerald-700/60 bg-emerald-950/40 px-3.5 py-2 text-xs font-bold text-emerald-300 hover:text-white hover:bg-emerald-900/60 transition-all cursor-pointer disabled:opacity-50"
-            title="Seed 5 official SSC starter blog posts into Supabase"
+            type="button"
+            onClick={() => setShowCategoryModal(true)}
+            className="flex items-center gap-1.5 rounded-xl border border-blue-700/60 bg-blue-950/40 px-3.5 py-2 text-xs font-bold text-blue-300 hover:text-white hover:bg-blue-900/60 transition-all cursor-pointer"
           >
-            <Sparkles className="h-4 w-4 text-emerald-400" />
-            <span>{seedingDefaults ? "Seeding..." : "Seed Starter Blogs"}</span>
+            <span>🏷️ Categories ({categories.length})</span>
           </button>
+
+          <Link
+            href="/admin/chapter-notes"
+            className="flex items-center gap-1.5 rounded-xl border border-indigo-700/60 bg-indigo-950/40 px-3.5 py-2 text-xs font-bold text-indigo-300 hover:text-white hover:bg-indigo-900/60 transition-all cursor-pointer"
+          >
+            <BookOpen className="h-4 w-4 text-indigo-400" />
+            <span>Chapter Notes Manager</span>
+          </Link>
 
           <Link
             href="/blog"
@@ -585,28 +505,6 @@ export default function AdminBlogsPage() {
             {/* Modal Body */}
             <div className="flex-1 overflow-y-auto p-5 sm:p-6 space-y-6 custom-scrollbar text-xs">
               
-              {/* Quick Template Fillers */}
-              {!editingId && editorTab === "edit" && (
-                <div className="rounded-2xl border border-blue-500/30 bg-blue-500/10 p-3.5 space-y-2">
-                  <div className="flex items-center gap-1.5 font-bold text-blue-300">
-                    <Sparkles className="h-4 w-4 text-amber-400" />
-                    <span>1-Click Post Starter Templates:</span>
-                  </div>
-                  <div className="flex flex-wrap gap-1.5">
-                    {POST_TEMPLATES.map((tpl, idx) => (
-                      <button
-                        key={idx}
-                        type="button"
-                        onClick={() => applyTemplate(tpl)}
-                        className="rounded-xl border border-blue-400/30 bg-blue-900/40 hover:bg-blue-600 hover:text-white px-2.5 py-1 text-[11px] font-bold text-blue-200 transition-all cursor-pointer"
-                      >
-                        {tpl.name}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              )}
-
               {/* --- EDIT TAB CONTENT --- */}
               {editorTab === "edit" ? (
                 <form id="blog-form" onSubmit={handleSave} className="space-y-5">
@@ -619,7 +517,7 @@ export default function AdminBlogsPage() {
                       </label>
                       <input
                         type="text"
-                        placeholder="e.g. SSC CGL 2026 Notification Out: Eligibility, Dates & Pattern"
+                        placeholder="e.g. Cell: The Unit of Life – Complete Biology Notes"
                         value={title}
                         onChange={handleTitleChange}
                         required
@@ -635,7 +533,7 @@ export default function AdminBlogsPage() {
                         <span className="text-gray-500 mr-1 select-none font-mono">ssczone.com/blog/</span>
                         <input
                           type="text"
-                          placeholder="ssc-cgl-2026-notification"
+                          placeholder="cell-the-unit-of-life"
                           value={slug}
                           onChange={(e) => setSlug(e.target.value)}
                           required
@@ -647,37 +545,119 @@ export default function AdminBlogsPage() {
 
                   {/* Category, Exam Tag & Publish Status */}
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <div className="space-y-1">
-                      <label className="block font-bold text-gray-300">Category</label>
-                      <select
-                        value={category}
-                        onChange={(e) => setCategory(e.target.value)}
-                        className="w-full rounded-xl border border-gray-700 bg-gray-800 px-3 py-2.5 text-xs text-white focus:border-blue-500 focus:outline-none"
-                      >
-                        <option value="Exam Notification">📢 Exam Notification</option>
-                        <option value="Answer Key & Results">🔑 Answer Key & Results</option>
-                        <option value="Preparation Strategy">💡 Preparation Strategy</option>
-                        <option value="Current Affairs">📰 Current Affairs</option>
-                        <option value="Topper Interviews">🏆 Topper Interviews</option>
-                      </select>
+                    <div className="space-y-1.5">
+                      <div className="flex items-center justify-between">
+                        <label className="block font-bold text-gray-300">Category (श्रेणी)</label>
+                        <button
+                          type="button"
+                          onClick={() => setShowCategoryModal(true)}
+                          className="text-[10px] text-blue-400 hover:text-blue-300 font-bold flex items-center gap-1"
+                        >
+                          🏷️ Manage All
+                        </button>
+                      </div>
+
+                      <div className="flex gap-1.5">
+                        <input
+                          type="text"
+                          list="blog-category-suggestions"
+                          placeholder="Type or pick any category (e.g. Biology)..."
+                          value={category}
+                          onChange={(e) => setCategory(e.target.value)}
+                          className="flex-1 rounded-xl border border-gray-700 bg-gray-800 px-3.5 py-2.5 text-xs text-white placeholder-gray-500 focus:border-blue-500 focus:outline-none font-medium"
+                        />
+                        <datalist id="blog-category-suggestions">
+                          {categories.map((c) => (
+                            <option key={c.id} value={c.name} />
+                          ))}
+                        </datalist>
+
+                        {category.trim() && !categories.some((c) => c.name.toLowerCase() === category.trim().toLowerCase()) && (
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setNewCatName(category.trim());
+                              handleAddCategory();
+                            }}
+                            className="px-3 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-[11px] font-bold whitespace-nowrap cursor-pointer shadow-xs"
+                            title="Save this new category to your permanent categories list"
+                          >
+                            + Save
+                          </button>
+                        )}
+
+                        {category && (
+                          <button
+                            type="button"
+                            onClick={() => setCategory("")}
+                            className="px-2.5 py-1.5 rounded-xl border border-gray-700 bg-gray-800 hover:bg-gray-700 text-gray-400 hover:text-white text-xs font-bold"
+                            title="Clear category"
+                          >
+                            ✕
+                          </button>
+                        )}
+                      </div>
+
+                      {/* Quick chips of existing categories */}
+                      {categories.length > 0 && (
+                        <div className="flex items-center gap-1.5 flex-wrap pt-0.5">
+                          <span className="text-[10px] text-gray-400 font-semibold">Quick Pick:</span>
+                          {categories.map((c) => (
+                            <button
+                              key={c.id}
+                              type="button"
+                              onClick={() => setCategory(c.name)}
+                              className={`text-[10px] px-2 py-0.5 rounded-lg border transition-all cursor-pointer ${
+                                category.toLowerCase() === c.name.toLowerCase()
+                                  ? "bg-blue-600 text-white border-blue-500 font-bold shadow-xs"
+                                  : "bg-gray-800 text-gray-300 border-gray-700 hover:border-gray-500 hover:text-white"
+                              }`}
+                            >
+                              {c.name}
+                            </button>
+                          ))}
+                        </div>
+                      )}
                     </div>
 
                     <div className="space-y-1">
-                      <label className="block font-bold text-gray-300">Target Exam</label>
-                      <select
-                        value={examTag}
-                        onChange={(e) => setExamTag(e.target.value)}
-                        className="w-full rounded-xl border border-gray-700 bg-gray-800 px-3 py-2.5 text-xs text-white focus:border-blue-500 focus:outline-none"
-                      >
-                        <option value="SSC CGL">SSC CGL</option>
-                        <option value="SSC CHSL">SSC CHSL</option>
-                        <option value="SSC CPO">SSC CPO</option>
-                        <option value="SSC MTS">SSC MTS</option>
-                        <option value="SSC GD">SSC GD Constable</option>
-                        <option value="SSC Maths">SSC Maths (Quantitative)</option>
-                        <option value="SSC Reasoning">SSC Reasoning</option>
-                        <option value="All SSC Exams">All SSC Exams</option>
-                      </select>
+                      <div className="flex items-center justify-between">
+                        <label className="block font-bold text-gray-300">Exam Tag</label>
+                        {examTag && (
+                          <button
+                            type="button"
+                            onClick={() => setExamTag("")}
+                            className="text-[10px] text-rose-400 hover:text-rose-300 font-bold"
+                            title="Remove tag from this article"
+                          >
+                            ✕ Remove Tag
+                          </button>
+                        )}
+                      </div>
+                      <div className="flex gap-1.5">
+                        <input
+                          type="text"
+                          value={examTag}
+                          onChange={(e) => setExamTag(e.target.value)}
+                          placeholder="e.g. SSC CGL (leave empty for none)"
+                          className="flex-1 rounded-xl border border-gray-700 bg-gray-800 px-3 py-2 text-xs text-white placeholder-gray-500 focus:border-blue-500 focus:outline-none"
+                        />
+                        <select
+                          value={["SSC CGL", "SSC CHSL", "SSC CPO", "SSC MTS", "SSC GD", "SSC Maths", "SSC Reasoning", "All SSC Exams"].includes(examTag) ? examTag : ""}
+                          onChange={(e) => setExamTag(e.target.value)}
+                          className="w-32 rounded-xl border border-gray-700 bg-gray-800 px-2 py-2 text-[11px] text-gray-300 focus:border-blue-500 focus:outline-none"
+                        >
+                          <option value="">Quick Pick...</option>
+                          <option value="SSC CGL">SSC CGL</option>
+                          <option value="SSC CHSL">SSC CHSL</option>
+                          <option value="SSC CPO">SSC CPO</option>
+                          <option value="SSC MTS">SSC MTS</option>
+                          <option value="SSC GD">SSC GD</option>
+                          <option value="SSC Maths">Maths</option>
+                          <option value="SSC Reasoning">Reasoning</option>
+                          <option value="All SSC Exams">All SSC</option>
+                        </select>
+                      </div>
                     </div>
 
                     <div className="space-y-1">
@@ -767,6 +747,8 @@ export default function AdminBlogsPage() {
                     excerpt={excerpt}
                     focusKeyword={focusKeyword}
                     onFocusKeywordChange={setFocusKeyword}
+                    secondaryKeywords={secondaryKeywords}
+                    onSecondaryKeywordsChange={setSecondaryKeywords}
                     imageUrl={imageUrl}
                     onInsertSnippet={handleInsertSnippet}
                   />
@@ -866,21 +848,42 @@ export default function AdminBlogsPage() {
           />
         </div>
 
-        {/* Category Pills */}
+        {/* Dynamic Category Filter Pills */}
         <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none pb-1 sm:pb-0">
-          {["All", "Exam Notification", "Answer Key & Results", "Preparation Strategy", "Current Affairs"].map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setSelectedCategoryFilter(cat)}
-              className={`rounded-xl px-3 py-1.5 text-xs font-bold transition-all whitespace-nowrap cursor-pointer ${
-                selectedCategoryFilter === cat
-                  ? "bg-blue-600 text-white shadow-md"
-                  : "bg-gray-800 text-gray-400 hover:text-white"
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
+          <button
+            onClick={() => setSelectedCategoryFilter("All")}
+            className={`rounded-xl px-3 py-1.5 text-xs font-bold transition-all whitespace-nowrap cursor-pointer ${
+              selectedCategoryFilter === "All"
+                ? "bg-blue-600 text-white shadow-md"
+                : "bg-gray-800 text-gray-400 hover:text-white"
+            }`}
+          >
+            All Articles ({blogs.length})
+          </button>
+          {categories.map((cat) => {
+            const count = blogs.filter((b) => b.category?.toLowerCase() === cat.name.toLowerCase()).length;
+            return (
+              <button
+                key={cat.id}
+                onClick={() => setSelectedCategoryFilter(cat.name)}
+                className={`rounded-xl px-3 py-1.5 text-xs font-bold transition-all whitespace-nowrap cursor-pointer ${
+                  selectedCategoryFilter === cat.name
+                    ? "bg-blue-600 text-white shadow-md"
+                    : "bg-gray-800 text-gray-400 hover:text-white"
+                }`}
+              >
+                {cat.name} ({count})
+              </button>
+            );
+          })}
+          <button
+            type="button"
+            onClick={() => setShowCategoryModal(true)}
+            className="rounded-xl px-2.5 py-1.5 text-xs font-bold bg-blue-950/60 border border-blue-800/60 text-blue-300 hover:bg-blue-600 hover:text-white transition-all whitespace-nowrap cursor-pointer flex items-center gap-1"
+            title="Create a new custom category"
+          >
+            <span>+ Add Category</span>
+          </button>
         </div>
 
       </div>
@@ -888,13 +891,13 @@ export default function AdminBlogsPage() {
       {/* ARTICLES DATA TABLE / CARDS */}
       {loading ? (
         <div className="py-16 text-center text-gray-400 text-xs">
-          Loading blog updates from database...
+          Loading educational articles from database...
         </div>
       ) : filteredBlogs.length === 0 ? (
         <div className="rounded-3xl border border-gray-800 bg-gray-900/40 p-12 text-center max-w-md mx-auto space-y-3">
           <Newspaper className="h-10 w-10 text-gray-600 mx-auto" />
-          <h3 className="text-sm font-bold text-white">No articles published yet in Supabase</h3>
-          <p className="text-xs text-gray-400">Click &apos;+ Write New Article&apos; or seed the 5 official starter articles into your database.</p>
+          <h3 className="text-sm font-bold text-white">No articles found</h3>
+          <p className="text-xs text-gray-400">Click &apos;+ Write New Article&apos; to create an educational chapter or article.</p>
           <div className="flex items-center justify-center gap-2.5 pt-2 flex-wrap">
             <button
               onClick={() => {
@@ -903,14 +906,7 @@ export default function AdminBlogsPage() {
               }}
               className="rounded-xl bg-blue-600 px-4 py-2 text-xs font-bold text-white hover:bg-blue-500 cursor-pointer"
             >
-              Create Article Now
-            </button>
-            <button
-              onClick={handleSeedDefaults}
-              disabled={seedingDefaults}
-              className="rounded-xl border border-emerald-700/60 bg-emerald-950/40 px-3.5 py-2 text-xs font-bold text-emerald-300 hover:text-white hover:bg-emerald-900/60 transition-all cursor-pointer disabled:opacity-50"
-            >
-              {seedingDefaults ? "Seeding..." : "🌱 Seed 5 Starter Blogs"}
+              Write New Article Now
             </button>
           </div>
         </div>
@@ -1012,6 +1008,94 @@ export default function AdminBlogsPage() {
 
             </div>
           ))}
+        </div>
+      )}
+
+      {/* ── Manage Categories Modal (Connected to Supabase) ── */}
+      {showCategoryModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-xs animate-in fade-in duration-150">
+          <div className="bg-gray-900 border border-gray-800 rounded-3xl p-6 max-w-lg w-full space-y-5 shadow-2xl text-left">
+            <div className="flex items-center justify-between border-b border-gray-800 pb-3">
+              <div className="flex items-center gap-2.5">
+                <span className="p-2 rounded-xl bg-blue-500/20 text-blue-400 text-sm">🏷️</span>
+                <div>
+                  <h3 className="text-base font-bold text-white">Manage Blog Categories</h3>
+                  <p className="text-xs text-gray-400">Created categories are stored in Supabase</p>
+                </div>
+              </div>
+              <button
+                onClick={() => setShowCategoryModal(false)}
+                className="p-1 rounded-lg text-gray-400 hover:text-white hover:bg-gray-800 transition-colors"
+              >
+                ✕
+              </button>
+            </div>
+
+            {/* Create Category Form */}
+            <form onSubmit={handleAddCategory} className="flex gap-2">
+              <input
+                type="text"
+                placeholder="Enter category name (e.g. Biology, Physics, Indian History)..."
+                value={newCatName}
+                onChange={(e) => setNewCatName(e.target.value)}
+                className="flex-1 rounded-xl border border-gray-700 bg-gray-800 px-3.5 py-2 text-xs text-white placeholder-gray-500 focus:border-blue-500 focus:outline-none"
+              />
+              <button
+                type="submit"
+                disabled={addingCategory}
+                className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold whitespace-nowrap disabled:opacity-50 transition-colors cursor-pointer"
+              >
+                {addingCategory ? "Creating..." : "+ Create Category"}
+              </button>
+            </form>
+
+            {/* Category List */}
+            <div className="space-y-2 max-h-64 overflow-y-auto pr-1">
+              {categories.length === 0 ? (
+                <div className="py-8 text-center text-xs text-gray-500">
+                  No custom categories yet. Add your first category above!
+                </div>
+              ) : (
+                categories.map((c) => {
+                  const count = blogs.filter((b) => b.category === c.name).length;
+                  return (
+                    <div
+                      key={c.id}
+                      className="flex items-center justify-between p-3 rounded-2xl border border-gray-800 bg-gray-800/40"
+                    >
+                      <div>
+                        <div className="flex items-center gap-2">
+                          <span className="text-xs font-bold text-white">{c.name}</span>
+                          <span className="text-[10px] bg-blue-900/40 border border-blue-800 text-blue-300 px-1.5 py-0.2 rounded-md font-bold">
+                            {count} article{count !== 1 ? "s" : ""}
+                          </span>
+                        </div>
+                        <span className="text-[10px] text-gray-500 block font-mono mt-0.5">slug: {c.slug}</span>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => handleDeleteCategory(c.id, c.name)}
+                        className="text-xs text-rose-400 hover:text-rose-300 font-bold px-2 py-1 rounded-lg hover:bg-rose-950/40 transition-colors cursor-pointer"
+                        title="Delete category"
+                      >
+                        ✕ Delete
+                      </button>
+                    </div>
+                  );
+                })
+              )}
+            </div>
+
+            <div className="pt-2 border-t border-gray-800 flex justify-end">
+              <button
+                type="button"
+                onClick={() => setShowCategoryModal(false)}
+                className="px-5 py-2 rounded-xl bg-gray-800 hover:bg-gray-700 text-gray-300 text-xs font-bold transition-colors cursor-pointer"
+              >
+                Done
+              </button>
+            </div>
+          </div>
         </div>
       )}
 

@@ -2,9 +2,14 @@ import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
 export async function middleware(request: NextRequest) {
+  const requestHeaders = new Headers(request.headers);
+  // Strip any inbound verification headers to prevent client-side spoofing
+  requestHeaders.delete("x-admin-verified");
+  requestHeaders.delete("x-admin-user-id");
+
   let supabaseResponse = NextResponse.next({
     request: {
-      headers: request.headers,
+      headers: requestHeaders,
     },
   });
 
@@ -89,6 +94,20 @@ export async function middleware(request: NextRequest) {
       if (!profile?.is_admin) {
         return NextResponse.json({ error: "Forbidden: Admin privileges required" }, { status: 403 });
       }
+
+      // Pre-verified by middleware: pass verification forward so route handlers skip duplicate round trips
+      requestHeaders.set("x-admin-verified", "ssczone-admin-verified");
+      requestHeaders.set("x-admin-user-id", user.id);
+
+      const forwardResponse = NextResponse.next({
+        request: {
+          headers: requestHeaders,
+        },
+      });
+      supabaseResponse.cookies.getAll().forEach((cookie) => {
+        forwardResponse.cookies.set(cookie);
+      });
+      return forwardResponse;
     }
 
     // Protect admin UI routes

@@ -6,6 +6,7 @@ import UserNav from "@/components/UserNav";
 import Footer from "@/components/Footer";
 import MobileBottomNav from "@/components/MobileBottomNav";
 import GuestSessionGateModal from "@/components/GuestSessionGateModal";
+import AnnouncementModal from "@/components/AnnouncementModal";
 
 export default function MainLayoutWrapper({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -30,6 +31,7 @@ export default function MainLayoutWrapper({ children }: { children: React.ReactN
     <div className="min-h-screen w-full max-w-full overflow-x-clip bg-slate-50 text-slate-900 antialiased font-sans flex flex-col justify-between">
       <UserNav />
       <GuestSessionGateModal />
+      <AnnouncementModal />
       <main className="flex-1 w-full max-w-full">{children}</main>
       <Footer />
       <MobileBottomNav />

@@ -5,8 +5,8 @@ import { buildPageMetadata } from "@/lib/seo-store";
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata("/notes", {
-    title: "SSC English Notes PDF & Formula Sheets | 120 Rules, Vocab & Grammar - SSCZone",
-    description: "Download 16+ free chapter-wise English revision notes for SSC CGL 2026, CHSL, CPO, MTS & GD. 120 Rules of Grammar, Fixed Prepositions, Idioms & Phrases, One Word Substitution & Tenses PDFs.",
+    title: "SSC Notes PDF & Formula Sheets | English, Maths & GK - SSCZone",
+    description: "Download chapter-wise revision notes, formulas, and study capsules for SSC CGL 2026, CHSL, CPO, MTS & GD.",
     keywords: [
       "SSC CGL English Notes PDF",
       "120 Rules of Grammar PDF SSC",

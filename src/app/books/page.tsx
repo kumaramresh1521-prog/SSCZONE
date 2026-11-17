@@ -326,13 +326,27 @@ export default function BooksPage() {
     });
   };
 
+  const [booksList, setBooksList] = useState<BookItem[]>(BOOKS_DATA);
+
+  // Fetch dynamic books configured via Admin Panel & Supabase
+  useEffect(() => {
+    fetch("/api/books?all=false")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success && Array.isArray(data.books) && data.books.length > 0) {
+          setBooksList(data.books);
+        }
+      })
+      .catch((err) => console.warn("Using default books data:", err));
+  }, []);
+
   const triggerToast = (msg: string) => {
     setToastMessage(msg);
     setTimeout(() => setToastMessage(null), 3000);
   };
 
   const filteredBooks = useMemo(() => {
-    return BOOKS_DATA.filter((b) => {
+    return booksList.filter((b) => {
       const matchSubject =
         selectedSubject === "All" ||
         b.subject === selectedSubject ||

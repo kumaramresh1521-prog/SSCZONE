@@ -116,9 +116,9 @@ function formatRawMathText(plainText: string): string {
   // PDF extracts contain artificial hard wraps at 70-80 chars inside normal sentences.
   // Converting every single \n to a block element causes sentences on mobile to be torn
   // into separate disjointed blocks with excessive vertical gaps.
-  // We preserve intentional newlines (lists like 1., a., (i), bullets, statements, analogies, notes, rows)
+  // We preserve intentional newlines (lists like 1., a., (i), P., Q., R., S., bullets, statements, analogies, notes, rows)
   // while joining accidental mid-sentence PDF wraps with a clean single space.
-  const intentionalBreakRegex = /\n(?=(?:\d+[\.\)]\s+|[a-dA-D][\.\)]\s+|\([a-zA-Z0-9ivxIVX]+\)\s*|[ivxIVX]+[\.\)]\s+|[-•*]\s+|(?:Statements?|Conclusions?|कथन|निष्कर्ष)\b|\(?(?:NOTE|Note)\s*[:\-]|[A-Z0-9\s]{2,}:[^:]+::|\(?\s*\d+\s*,\s*\d+\s*,\s*(?:\?|\d+)|\d+\s*[-–]\s*\d+\s*[-–]\s*\d+|(?:First|Second|Third|Fourth)\s+row\b|Row\s+\d+\b|["“\']?[A-Z]\s*[+\-×÷x*]\s*[A-Z]|MAL_[A-Z0-9_]+|\b(?:Passage|Directions?)\b|!\[|<img|___MD_TABLE_))/i;
+  const intentionalBreakRegex = /\n(?=(?:\d+[\.\)]\s+|(?:[a-zA-Z]|[sS][1-6]|\d+)[\.\:\)]\s+|\([a-zA-Z0-9ivxIVX]+\)\s*|\[[a-zA-Z0-9ivxIVX]+\]\s*|[ivxIVX]+[\.\)]\s+|[-•*]\s+|(?:Statements?|Conclusions?|Assertions?|Reasons?|Premises?|अभिकथन|कारण|कथन|निष्कर्ष)\b|\(?(?:NOTE|Note)\s*[:\-]|[A-Z0-9\s]{2,}:[^:]+::|\(?\s*\d+\s*,\s*\d+\s*,\s*(?:\?|\d+)|\d+\s*[-–]\s*\d+\s*[-–]\s*\d+|(?:First|Second|Third|Fourth)\s+row\b|Row\s+\d+\b|["“\']?[A-Z]\s*[+\-×÷x*]\s*[A-Z]|MAL_[A-Z0-9_]+|\b(?:Passage|Directions?)\b|!\[|<img|___MD_TABLE_))/i;
 
   const rawParagraphs = clean.split(/\r?\n\s*\r?\n/);
   const normalizedParagraphs = rawParagraphs.map((para) => {

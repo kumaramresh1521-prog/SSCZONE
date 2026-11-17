@@ -16,17 +16,16 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing blog ID" }, { status: 400 });
     }
 
-    // Fetch slug before deleting to purge page cache
-    const { data: existing } = await supabaseAdmin
-      .from("blogs")
-      .select("slug")
-      .eq("id", id)
-      .maybeSingle();
+    const isUuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(id);
 
-    const { error } = await supabaseAdmin
-      .from("blogs")
-      .delete()
-      .eq("id", id);
+    // Fetch slug before deleting to purge page cache
+    let fetchQuery = supabaseAdmin.from("blogs").select("slug");
+    fetchQuery = isUuid ? fetchQuery.eq("id", id) : fetchQuery.eq("slug", id);
+    const { data: existing } = await fetchQuery.maybeSingle();
+
+    let deleteQuery = supabaseAdmin.from("blogs").delete();
+    deleteQuery = isUuid ? deleteQuery.eq("id", id) : deleteQuery.eq("slug", id);
+    const { error } = await deleteQuery;
 
     if (error) {
       return NextResponse.json({ error: error.message }, { status: 500 });

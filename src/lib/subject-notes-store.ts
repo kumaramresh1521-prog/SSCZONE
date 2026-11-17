@@ -12,6 +12,11 @@ export interface SubjectNote {
   topic: string; // "Geometry", "Modern History", "Number System"
   description: string;
   pdf_url: string; // Direct link or Supabase storage link
+  pdf_url_hindi?: string;
+  html_url?: string;
+  html_url_hindi?: string;
+  slug?: string;
+  reader_url?: string;
   file_size?: string; // "2.4 MB"
   page_count?: number; // 24
   language: "Bilingual" | "English" | "Hindi";

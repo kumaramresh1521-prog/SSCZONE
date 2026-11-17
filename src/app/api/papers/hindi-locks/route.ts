@@ -28,6 +28,17 @@ function writeLocks(data: Record<string, number[]>) {
   }
 }
 
+export async function OPTIONS() {
+  return new NextResponse(null, {
+    status: 204,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
+    },
+  });
+}
+
 // GET /api/papers/hindi-locks?paperId=1
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);

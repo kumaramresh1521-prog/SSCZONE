@@ -100,7 +100,7 @@ export async function POST(req: NextRequest) {
       is_active: typeof is_active === "boolean" ? is_active : true,
       is_featured: Boolean(is_featured),
       sort_order: Number(sort_order) || 1,
-      exam_tag: exam_tag?.trim() || "SSC CGL / CHSL",
+      exam_tag: exam_tag !== undefined ? (exam_tag?.trim() || "") : "",
       seo_title: seo_title?.trim() || undefined,
       seo_description: seo_description?.trim() || undefined,
       keywords: Array.isArray(keywords) ? keywords : typeof keywords === "string" ? keywords.split(",").map((k: string) => k.trim()).filter(Boolean) : undefined,
@@ -227,7 +227,12 @@ export async function DELETE(req: NextRequest) {
       if (supabaseUrl && supabaseServiceKey) {
         const { createClient } = await import("@supabase/supabase-js");
         const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey);
-        await supabaseAdmin.from("blogs").delete().eq("id", id);
+        const isUuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(id);
+        if (isUuid) {
+          await supabaseAdmin.from("blogs").delete().eq("id", id);
+        } else {
+          await supabaseAdmin.from("blogs").delete().eq("slug", id);
+        }
       }
       const { revalidatePath } = await import("next/cache");
       revalidatePath("/blog/notes");

@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 import { createClient } from "@supabase/supabase-js";
 import { getPublishedSeoConfig } from "@/lib/seo-store";
 import { getChapterNotes } from "@/lib/chapter-notes-store";
+import { getQuestionCanonicalPath } from "@/lib/question-seo";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://placeholder.supabase.co";
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "placeholder-key";
@@ -137,5 +138,26 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     console.error("Sitemap chapter notes error:", e);
   }
 
-  return [...staticRoutes, ...examRoutes, ...topicRoutes, ...blogRoutes, ...paperRoutes, ...noteRoutes];
+  // Dynamic Question routes for Google SEO & Answer Box Ranking
+  let questionRoutes: MetadataRoute.Sitemap = [];
+  try {
+    const { data: questions } = await supabase
+      .from("questions")
+      .select("id, question_text, created_at")
+      .eq("is_active", true)
+      .order("id", { ascending: false })
+      .limit(10000);
+    if (questions) {
+      questionRoutes = questions.map((q) => ({
+        url: `${baseUrl}${getQuestionCanonicalPath(q.id, q.question_text)}`,
+        lastModified: q.created_at ? new Date(q.created_at) : new Date(),
+        changeFrequency: "monthly",
+        priority: 0.65,
+      }));
+    }
+  } catch (e) {
+    console.error("Sitemap questions query error:", e);
+  }
+
+  return [...staticRoutes, ...examRoutes, ...topicRoutes, ...blogRoutes, ...paperRoutes, ...noteRoutes, ...questionRoutes];
 }

@@ -185,3 +185,253 @@ select.a-select optgroup {
 .animate-shimmer-pulse {
   animation: shimmerPulse 3s ease-in-out infinite;
 }
+
+/* ── Scientific & Educational Diagram / Note / Table Styles ── */
+.ig,
+.dg {
+  width: 100%;
+  height: auto;
+  max-width: 680px;
+  display: block;
+  margin: 1rem auto;
+  color: #1f2937;
+  overflow: visible;
+}
+.ig text,
+.dg text {
+  fill: #1f2937;
+  font-size: 12px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+.ig .w,
+.dg .w {
+  fill: #ffffff !important;
+  font-weight: 700;
+}
+.ig .b,
+.dg .b {
+  font-weight: 700;
+}
+.ig .ti,
+.dg .ti {
+  fill: #ffffff !important;
+  font-weight: 700;
+  font-size: 16px;
+}
+.ig .sm,
+.dg .sm {
+  font-size: 11px;
+}
+.ig .l,
+.dg .l {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+}
+.ig .a,
+.dg .a {
+  stroke: #0f766e;
+  fill: none;
+  stroke-width: 3;
+}
+.ig .b_stroke,
+.dg .b {
+  stroke: #d97706;
+  fill: none;
+  stroke-width: 3;
+}
+.ig .f,
+.dg .f {
+  fill: #0f766e;
+}
+.ig .s,
+.dg .s {
+  fill: #f0fdfa;
+  stroke: #0f766e;
+  stroke-width: 2;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   PREMIUM TEXTBOOK / PDF ARTICLE THEME (Pristine Original Styling)
+   ═══════════════════════════════════════════════════════════════════ */
+.blog-rendered-content,
+.chapter-notes-content {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+  color: #1f2937;
+  font-size: 16px;
+  line-height: 1.75;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+/* De-duplicate top h1 if page already has hero header */
+.blog-rendered-content > .lang-en > h1:first-of-type,
+.blog-rendered-content > .lang-hi > h1:first-of-type,
+.chapter-notes-content > .lang-en > h1:first-of-type,
+.chapter-notes-content > .lang-hi > h1:first-of-type,
+.blog-rendered-content > h1:first-of-type,
+.chapter-notes-content > h1:first-of-type {
+  display: none !important;
+}
+
+/* De-duplicate top redundant subtitle badge if page has header */
+.blog-rendered-content > .lang-en > p.sub:first-of-type,
+.blog-rendered-content > .lang-hi > p.sub:first-of-type,
+.chapter-notes-content > .lang-en > p.sub:first-of-type,
+.chapter-notes-content > .lang-hi > p.sub:first-of-type {
+  display: none !important;
+}
+
+/* Original Iconic Soft Mint Teal Section Banners */
+.blog-rendered-content h2,
+.chapter-notes-content h2 {
+  background: #f0fdfa !important;
+  border-left: 5px solid #0f766e !important;
+  padding: 10px 16px !important;
+  margin-top: 2.25rem !important;
+  margin-bottom: 1rem !important;
+  font-size: 1.35rem !important;
+  font-weight: 700 !important;
+  color: #0f766e !important;
+  border-radius: 0 8px 8px 0 !important;
+  border-bottom: none !important;
+  line-height: 1.4 !important;
+}
+
+/* Original Accent Teal Sub-headings */
+.blog-rendered-content h3,
+.chapter-notes-content h3 {
+  color: #0f766e !important;
+  margin-top: 1.6rem !important;
+  margin-bottom: 0.5rem !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  line-height: 1.4 !important;
+}
+
+/* Clean Subtitles */
+.blog-rendered-content .sub,
+.chapter-notes-content .sub {
+  color: #64748b !important;
+  font-size: 0.925rem !important;
+  opacity: 0.85 !important;
+  margin-bottom: 0.75rem !important;
+}
+
+/* Original Amber Highlight Callout Notes */
+.note,
+.blog-rendered-content .note,
+.chapter-notes-content .note {
+  background: #fffbeb !important;
+  border-left: 4px solid #d97706 !important;
+  padding: 10px 16px !important;
+  border-radius: 6px !important;
+  margin: 14px 0 !important;
+  color: #78350f !important;
+  font-size: 0.95rem !important;
+  line-height: 1.65 !important;
+}
+.note b,
+.note strong,
+.blog-rendered-content .note b,
+.blog-rendered-content .note strong,
+.chapter-notes-content .note b,
+.chapter-notes-content .note strong {
+  color: #451a03 !important;
+  font-weight: 700 !important;
+}
+
+/* Original Crisp Textbook Comparative Tables */
+.tbl,
+.blog-rendered-content .tbl,
+.chapter-notes-content .tbl {
+  overflow-x: auto !important;
+  margin: 1.5rem 0 !important;
+  border-radius: 8px !important;
+}
+.tbl table,
+.blog-rendered-content table,
+.chapter-notes-content table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+  margin: 8px 0 !important;
+  background: #ffffff !important;
+  font-size: 0.92rem !important;
+}
+.tbl th,
+.blog-rendered-content th,
+.chapter-notes-content th {
+  background: #0f766e !important;
+  color: #ffffff !important;
+  padding: 10px 14px !important;
+  text-align: left !important;
+  font-weight: 700 !important;
+  border: 1px solid #0d9488 !important;
+  font-size: 0.92rem !important;
+}
+.tbl td,
+.blog-rendered-content td,
+.chapter-notes-content td {
+  border: 1px solid #cbd5e1 !important;
+  padding: 10px 14px !important;
+  text-align: left !important;
+  vertical-align: top !important;
+  color: #1f2937 !important;
+  font-size: 0.9rem !important;
+  line-height: 1.6 !important;
+}
+.tbl tr:nth-child(even) td,
+.blog-rendered-content tr:nth-child(even) td,
+.chapter-notes-content tr:nth-child(even) td {
+  background: #f8fafc !important;
+}
+
+/* Paragraphs & Lists */
+.blog-rendered-content p,
+.chapter-notes-content p {
+  margin: 10px 0 !important;
+  line-height: 1.75 !important;
+  color: #1f2937 !important;
+}
+.blog-rendered-content ul,
+.blog-rendered-content ol,
+.chapter-notes-content ul,
+.chapter-notes-content ol {
+  padding-left: 22px !important;
+  margin: 10px 0 16px 0 !important;
+}
+.blog-rendered-content li,
+.chapter-notes-content li {
+  margin: 5px 0 !important;
+  line-height: 1.7 !important;
+  color: #1f2937 !important;
+}
+.blog-rendered-content li b,
+.blog-rendered-content li strong,
+.chapter-notes-content li b,
+.chapter-notes-content li strong {
+  color: #0f172a !important;
+  font-weight: 700 !important;
+}
+
+/* Diagrams - Pristine Unboxed Layout without Double Borders */
+figure,
+.blog-rendered-content figure,
+.chapter-notes-content figure {
+  margin: 1.75rem auto !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  overflow-x: auto !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+figcaption,
+.blog-rendered-content figcaption,
+.chapter-notes-content figcaption {
+  text-align: center !important;
+  font-size: 0.88rem !important;
+  color: #64748b !important;
+  font-weight: 600 !important;
+  margin-top: 8px !important;
+}

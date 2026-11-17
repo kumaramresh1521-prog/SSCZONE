@@ -33,13 +33,14 @@ const EXAMS_FILTER_OPTIONS = [
 
 const SUBJECTS_FILTER_OPTIONS = [
   { id: "all", name: "All Subjects", iconName: "All" },
+  { id: "biology", name: "Biology (जीव विज्ञान)", shortName: "Biology", color: "teal" },
+  { id: "science", name: "General Science (PCB)", shortName: "Science", color: "cyan" },
+  { id: "english", name: "English Language", shortName: "English", color: "emerald" },
   { id: "quant", name: "Quantitative Aptitude (Maths)", shortName: "Maths", color: "blue" },
   { id: "reasoning", name: "Reasoning Ability", shortName: "Reasoning", color: "purple" },
-  { id: "english", name: "English Language", shortName: "English", color: "emerald" },
   { id: "history", name: "History (Ancient/Med/Modern)", shortName: "History", color: "amber" },
   { id: "polity", name: "Polity & Constitution", shortName: "Polity", color: "indigo" },
   { id: "geography", name: "Geography & Mapping", shortName: "Geography", color: "teal" },
-  { id: "science", name: "General Science (PCB)", shortName: "Science", color: "cyan" },
   { id: "computer", name: "Computer Knowledge", shortName: "Computer", color: "violet" },
   { id: "static-gk", name: "Static GK & Culture", shortName: "Static GK", color: "amber" },
 ];
@@ -58,8 +59,16 @@ export default function NotesClient({ initialNotes = [] }: { initialNotes: Subje
       }
 
       // 2. Subject filter
-      if (selectedSubject !== "all" && note.subject !== selectedSubject) {
-        return false;
+      if (selectedSubject !== "all") {
+        if (selectedSubject === "biology") {
+          const isBio = note.subject === "biology" || (note.subject === "science" && (note.subject_name.toLowerCase().includes("bio") || note.topic.toLowerCase().includes("bio") || note.title.toLowerCase().includes("cell") || note.title.toLowerCase().includes("nutrient") || note.title.toLowerCase().includes("reproduction") || note.title.toLowerCase().includes("tissue")));
+          if (!isBio) return false;
+        } else if (selectedSubject === "science") {
+          const isSci = note.subject === "science" || note.subject === "biology";
+          if (!isSci) return false;
+        } else if (note.subject !== selectedSubject) {
+          return false;
+        }
       }
 
       // 3. Search query
@@ -124,6 +133,12 @@ export default function NotesClient({ initialNotes = [] }: { initialNotes: Subje
           iconBg: "bg-cyan-50 text-cyan-600",
           button: "bg-cyan-600 hover:bg-cyan-700 text-white",
         };
+      case "biology":
+        return {
+          pill: "bg-teal-50 text-teal-800 border-teal-200/80",
+          iconBg: "bg-teal-50 text-teal-600",
+          button: "bg-teal-600 hover:bg-teal-700 text-white",
+        };
       default:
         return {
           pill: "bg-slate-100 text-slate-700 border-slate-200",
@@ -142,7 +157,7 @@ export default function NotesClient({ initialNotes = [] }: { initialNotes: Subje
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans antialiased pb-20">
+    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans antialiased pb-28 sm:pb-20">
       
       {/* Clean Header */}
       <section className="bg-white border-b border-slate-200/80 py-10 px-4">
@@ -374,30 +389,90 @@ export default function NotesClient({ initialNotes = [] }: { initialNotes: Subje
                       </span>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-2 pt-1">
-                      {/* View / Read Button */}
-                      <a
-                        href={note.pdf_url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="py-2.5 px-3 rounded-xl border border-slate-200 hover:border-slate-300 bg-slate-50 hover:bg-slate-100 text-slate-800 text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-center shadow-2xs"
+                    {/* Online Reader Button if available */}
+                    {note.reader_url && (
+                      <Link
+                        href={note.reader_url}
+                        className="w-full py-2.5 px-3 rounded-xl bg-indigo-50 hover:bg-indigo-100/90 text-indigo-700 border border-indigo-200/80 text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-center shadow-2xs cursor-pointer"
                       >
-                        <Eye className="h-3.5 w-3.5 text-slate-600" />
-                        <span>View PDF</span>
-                      </a>
+                        <BookOpen className="h-3.5 w-3.5 text-indigo-600" />
+                        <span>Read Online (ऑनलाइन पढ़ें) →</span>
+                      </Link>
+                    )}
 
-                      {/* Download Button */}
-                      <a
-                        href={note.pdf_url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        download
-                        className={`py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-center shadow-2xs ${colors.button}`}
-                      >
-                        <Download className="h-3.5 w-3.5" />
-                        <span>Download</span>
-                      </a>
-                    </div>
+                    {note.pdf_url_hindi ? (
+                      <div className="space-y-2 pt-1">
+                        <div className="grid grid-cols-2 gap-2">
+                          <a
+                            href={note.pdf_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            download
+                            className="py-2.5 px-2 sm:px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-center shadow-2xs bg-blue-600 hover:bg-blue-700 text-white cursor-pointer"
+                          >
+                            <Download className="h-3.5 w-3.5 shrink-0" />
+                            <span className="truncate">English PDF</span>
+                          </a>
+
+                          <a
+                            href={note.pdf_url_hindi}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            download
+                            className="py-2.5 px-2 sm:px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-center shadow-2xs bg-teal-600 hover:bg-teal-700 text-white cursor-pointer"
+                          >
+                            <Download className="h-3.5 w-3.5 shrink-0" />
+                            <span className="truncate">हिन्दी PDF</span>
+                          </a>
+                        </div>
+
+                        <div className="flex items-center justify-between gap-2 text-[11px] font-semibold text-slate-500 pt-0.5 px-1">
+                          <a
+                            href={note.pdf_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1 cursor-pointer"
+                          >
+                            <Eye className="h-3 w-3" />
+                            <span>View English PDF</span>
+                          </a>
+                          <a
+                            href={note.pdf_url_hindi}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-teal-600 hover:text-teal-800 hover:underline flex items-center gap-1 cursor-pointer"
+                          >
+                            <Eye className="h-3 w-3" />
+                            <span>View हिन्दी PDF</span>
+                          </a>
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="grid grid-cols-2 gap-2 pt-1">
+                        {/* View / Read Button */}
+                        <a
+                          href={note.pdf_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="py-2.5 px-3 rounded-xl border border-slate-200 hover:border-slate-300 bg-slate-50 hover:bg-slate-100 text-slate-800 text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-center shadow-2xs"
+                        >
+                          <Eye className="h-3.5 w-3.5 text-slate-600" />
+                          <span>View PDF</span>
+                        </a>
+
+                        {/* Download Button */}
+                        <a
+                          href={note.pdf_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          download
+                          className={`py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-center shadow-2xs ${colors.button}`}
+                        >
+                          <Download className="h-3.5 w-3.5" />
+                          <span>Download</span>
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
               );

@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { sanitizeBlogContent } from "@/lib/blog-sanitizer";
 import BlogContentInteractive from "@/components/blog/BlogContentInteractive";
+import AdBannerSlot from "@/components/AdBannerSlot";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -130,7 +131,7 @@ export default async function BlogPostPage(props: Props) {
   try {
     const { data } = await supabase
       .from("blogs")
-      .select("id, title, slug, excerpt, content, keywords, image_url, created_at, updated_at, is_published, views")
+      .select("id, title, slug, excerpt, content, keywords, image_url, created_at, updated_at, is_published")
       .eq("slug", params.slug)
       .eq("is_published", true)
       .not("keywords", "ilike", "%system-report%")
@@ -138,6 +139,21 @@ export default async function BlogPostPage(props: Props) {
       .maybeSingle();
     if (data) blog = data;
   } catch {}
+
+  // Fail-safe disk fallback if Supabase returns null or has a connection issue
+  if (!blog) {
+    try {
+      const fs = await import("fs");
+      const path = await import("path");
+      const backupPath = path.join(process.cwd(), "src", "data", "blogs_backup.json");
+      if (fs.existsSync(backupPath)) {
+        const backupData = JSON.parse(fs.readFileSync(backupPath, "utf-8"));
+        if (backupData[params.slug]) {
+          blog = backupData[params.slug];
+        }
+      }
+    } catch {}
+  }
 
   if (!blog) {
     notFound();
@@ -153,7 +169,7 @@ export default async function BlogPostPage(props: Props) {
     }
   }
 
-  const category = blog.category || meta.category || "Exam Notification";
+  const category = blog.category || meta.category || "Educational Notes";
   const examTag = blog.exam_tag || meta.examTag || "SSC CGL";
   const focusKeyword = meta.focus || "";
   const safeContent = sanitizeBlogContent(blog.content);
@@ -301,6 +317,54 @@ export default async function BlogPostPage(props: Props) {
 
         {/* Main Content Body */}
         <BlogContentInteractive content={safeContent} />
+
+        {/* Dynamic Ad & Affiliate Slot (In-Article) */}
+        <AdBannerSlot slotKey="inDrillSolution" className="my-8" />
+
+        {/* ── 2-WAY BRIDGE: INTERACTIVE CHAPTER READER PORTAL CTA ── */}
+        <div className="rounded-3xl border-2 border-indigo-200 bg-gradient-to-br from-indigo-950 via-slate-900 to-blue-950 p-6 sm:p-8 text-white shadow-xl space-y-5">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-indigo-800/60 pb-5">
+            <div className="space-y-1.5 max-w-xl">
+              <div className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-wider bg-indigo-500/20 text-indigo-300 px-3 py-1 rounded-full border border-indigo-400/30">
+                <BookOpen className="h-3.5 w-3.5 text-indigo-300" />
+                <span>SSCZone Open Chapter Reader</span>
+              </div>
+              <h3 className="text-xl sm:text-2xl font-black text-white">
+                Master Subject Theory, Rules & Formulas
+              </h3>
+              <p className="text-xs sm:text-sm text-indigo-200 leading-relaxed">
+                Study in our interactive 2-column Chapter Reader with chapter-by-chapter theory, Hindi-English definitions, and high-yield formula cheat sheets.
+              </p>
+            </div>
+            <Link
+              href="/blog/notes"
+              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white hover:bg-indigo-50 px-5 py-3 text-xs font-black text-indigo-950 shadow-lg transition-all shrink-0 cursor-pointer"
+            >
+              <BookOpen className="h-4 w-4 text-indigo-600" />
+              <span>Open Chapter Reader →</span>
+            </Link>
+          </div>
+
+          {/* Quick Subject Access Pills */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1">
+            <Link href="/blog/notes?subject=english_grammar" className="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-bold text-indigo-100 hover:text-white transition-all">
+              <span>📖</span>
+              <span className="truncate">English Grammar</span>
+            </Link>
+            <Link href="/blog/notes?subject=maths_formulas" className="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-bold text-indigo-100 hover:text-white transition-all">
+              <span>📐</span>
+              <span className="truncate">Maths Formulas</span>
+            </Link>
+            <Link href="/blog/notes?subject=physics" className="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-bold text-indigo-100 hover:text-white transition-all">
+              <span>⚡</span>
+              <span className="truncate">Physics Theory</span>
+            </Link>
+            <Link href="/blog/notes?subject=polity" className="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-bold text-indigo-100 hover:text-white transition-all">
+              <span>⚖️</span>
+              <span className="truncate">Indian Polity</span>
+            </Link>
+          </div>
+        </div>
 
         {/* High-Converting CBT Test Series & PYQ CTA Card */}
         <div className="rounded-3xl border-2 border-blue-200 bg-gradient-to-br from-blue-900 via-indigo-950 to-slate-900 p-6 sm:p-8 text-white shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-6">

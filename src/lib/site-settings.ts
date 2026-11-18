@@ -89,6 +89,17 @@ export function getSiteSettingCached<T>(key: string, fallback: T): T {
 }
 
 /**
+ * Clear in-memory cache for a key or all keys.
+ */
+export function invalidateSiteSettingCache(key?: string): void {
+  if (key) {
+    memoryCache.delete(key);
+  } else {
+    memoryCache.clear();
+  }
+}
+
+/**
  * Seed or prime in-memory cache synchronously.
  */
 export function primeSiteSettingCache<T>(key: string, value: T): void {

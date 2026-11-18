@@ -168,6 +168,10 @@ export async function getStaticPagesConfigAsync(): Promise<StaticPagesConfig> {
     topDisclaimer: {
       ...DEFAULT_STATIC_PAGES_CONFIG.topDisclaimer,
       ...(result?.topDisclaimer || {}),
+      enabled:
+        result?.topDisclaimer?.enabled !== undefined
+          ? Boolean(result.topDisclaimer.enabled)
+          : DEFAULT_STATIC_PAGES_CONFIG.topDisclaimer.enabled,
     },
   };
 }

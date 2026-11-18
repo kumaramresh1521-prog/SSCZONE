@@ -29,7 +29,6 @@ export default function MainLayoutWrapper({
   if (isTestRoute) {
     return (
       <main className="h-screen w-full max-w-full overflow-hidden bg-[#F0F2F5] text-slate-900 font-sans">
-        <TopGovernmentDisclaimer config={topDisclaimer} />
         <GuestSessionGateModal />
         {children}
       </main>

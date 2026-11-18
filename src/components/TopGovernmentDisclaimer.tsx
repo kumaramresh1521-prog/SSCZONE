@@ -1,14 +1,37 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { ShieldAlert } from "lucide-react";
 import { TopDisclaimerConfig, DEFAULT_STATIC_PAGES_CONFIG } from "@/lib/static-pages-store";
 
 export default function TopGovernmentDisclaimer({
-  config = DEFAULT_STATIC_PAGES_CONFIG.topDisclaimer,
+  config: initialConfig = DEFAULT_STATIC_PAGES_CONFIG.topDisclaimer,
 }: {
   config?: TopDisclaimerConfig;
 }) {
+  const [config, setConfig] = useState<TopDisclaimerConfig>(initialConfig);
+
+  useEffect(() => {
+    let isMounted = true;
+    fetch("/api/site-disclaimer", { cache: "no-store" })
+      .then((res) => res.json())
+      .then((data) => {
+        if (!isMounted) return;
+        if (data && typeof data.enabled === "boolean") {
+          setConfig({
+            enabled: data.enabled,
+            badgeText: data.badgeText || "Disclaimer",
+            text: data.text || "",
+          });
+        }
+      })
+      .catch(() => {});
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
   if (!config || config.enabled === false) {
     return null;
   }

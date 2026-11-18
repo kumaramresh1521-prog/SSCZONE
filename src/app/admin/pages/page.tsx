@@ -28,6 +28,7 @@ export default function AdminStaticPagesPage() {
   const [activeTab, setActiveTab] = useState<"about" | "contact" | "privacy" | "terms" | "refund" | "disclaimer">("about");
   const [loading, setLoading] = useState<boolean>(true);
   const [saving, setSaving] = useState<boolean>(false);
+  const [togglingDisclaimer, setTogglingDisclaimer] = useState<boolean>(false);
 
   useEffect(() => {
     fetchConfig();
@@ -65,6 +66,39 @@ export default function AdminStaticPagesPage() {
       toast.error(err.message || "Failed to save static pages");
     } finally {
       setSaving(false);
+    }
+  }
+
+  async function handleToggleDisclaimer(newEnabled: boolean) {
+    setTogglingDisclaimer(true);
+    const updatedConfig: StaticPagesConfig = {
+      ...config,
+      topDisclaimer: {
+        ...(config.topDisclaimer || DEFAULT_STATIC_PAGES_CONFIG.topDisclaimer),
+        enabled: newEnabled,
+      },
+    };
+    setConfig(updatedConfig);
+
+    try {
+      const res = await fetch("/api/admin/static-pages", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(updatedConfig),
+      });
+      const data = await res.json();
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || "Failed to update toggle");
+      }
+      if (newEnabled) {
+        toast.success("Disclaimer banner turned ON (Visible on website)!");
+      } else {
+        toast.success("Disclaimer banner turned OFF (Hidden from website)!");
+      }
+    } catch (err: any) {
+      toast.error("Failed to update banner toggle: " + err.message);
+    } finally {
+      setTogglingDisclaimer(false);
     }
   }
 
@@ -660,23 +694,22 @@ export default function AdminStaticPagesPage() {
 
                     <button
                       type="button"
-                      onClick={() =>
-                        setConfig({
-                          ...config,
-                          topDisclaimer: {
-                            ...disclaimer,
-                            enabled: !isEnabled,
-                          },
-                        })
-                      }
-                      className={`px-4 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition-all cursor-pointer shadow-xs ${
+                      disabled={togglingDisclaimer}
+                      onClick={() => handleToggleDisclaimer(!isEnabled)}
+                      className={`px-4 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition-all cursor-pointer shadow-xs disabled:opacity-50 ${
                         isEnabled
                           ? "bg-white hover:bg-rose-50 text-rose-700 border border-rose-300"
                           : "bg-emerald-600 hover:bg-emerald-700 text-white shadow-emerald-600/20"
                       }`}
                     >
                       <Power className="w-3.5 h-3.5" />
-                      <span>{isEnabled ? "Turn Banner OFF (Hide)" : "Turn Banner ON (Show)"}</span>
+                      <span>
+                        {togglingDisclaimer
+                          ? "Updating..."
+                          : isEnabled
+                          ? "Turn Banner OFF (Hide from Site)"
+                          : "Turn Banner ON (Show on Site)"}
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -728,6 +761,21 @@ export default function AdminStaticPagesPage() {
                       Clear non-affiliation statement (kept clean in English without Hindi text).
                     </p>
                   </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1 border-t border-slate-100">
+                  <span className="text-[11px] text-slate-500">
+                    Badge and text changes will take effect across all visitor pages upon clicking Save.
+                  </span>
+                  <button
+                    type="button"
+                    onClick={handleSave}
+                    disabled={saving}
+                    className="self-end sm:self-auto px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs flex items-center gap-1.5 shadow-sm transition-all cursor-pointer disabled:opacity-50"
+                  >
+                    <Save className="w-3.5 h-3.5" />
+                    <span>{saving ? "Saving Changes..." : "Save Disclaimer Text"}</span>
+                  </button>
                 </div>
 
                 {/* Live Preview Card */}

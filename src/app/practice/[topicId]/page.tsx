@@ -1,5 +1,5 @@
 import { createClient } from "@/lib/supabase-server";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import type { Metadata } from "next";
 import PracticeClient from "./PracticeClient";
 import { buildPageMetadata } from "@/lib/seo-store";
@@ -10,18 +10,21 @@ export async function generateMetadata({ params }: { params: Promise<{ topicId: 
   const isNumeric = /^\d+$/.test(topicId);
   let topicTitle = "Practice MCQs";
 
+  let canonicalSlug = topicId;
   try {
     const supabase = await createClient();
     if (isNumeric) {
-      const { data } = await supabase.from("topics").select("title").eq("id", topicId).maybeSingle();
+      const { data } = await supabase.from("topics").select("title, slug").eq("id", topicId).maybeSingle();
       if (data?.title) topicTitle = `${data.title} MCQs Practice`;
+      if (data?.slug) canonicalSlug = data.slug;
     } else {
-      const { data } = await supabase.from("topics").select("title").eq("slug", topicId).maybeSingle();
+      const { data } = await supabase.from("topics").select("title, slug").eq("slug", topicId).maybeSingle();
       if (data?.title) topicTitle = `${data.title} MCQs Practice`;
+      if (data?.slug) canonicalSlug = data.slug;
     }
   } catch {}
 
-  return buildPageMetadata(`/practice/${topicId}`, {
+  return buildPageMetadata(`/practice/${canonicalSlug}`, {
     title: `${topicTitle} — Bilingual Online Test & Solutions | SSCZone`,
     description: `Practice ${topicTitle} topic-by-topic for SSC CGL, CHSL, CPO, MTS & Railways with instant explanations, formulas, and timed practice.`,
   });
@@ -50,9 +53,27 @@ export default async function PracticePage({ params }: { params: Promise<{ topic
       .eq("slug", topicId)
       .maybeSingle();
     topic = data;
+
+    // Fallback: If old URL had random number suffix (e.g. number-system-6011-0), strip it and find matching topic
+    if (!topic && /-\d+(-\d+)*$/.test(topicId)) {
+      const strippedSlug = topicId.replace(/-\d+(-\d+)*$/, "");
+      const { data: fallbackTopic } = await supabase
+        .from("topics")
+        .select("*, subjects(id, title, exam_id, exams(id, title, slug))")
+        .eq("slug", strippedSlug)
+        .maybeSingle();
+      if (fallbackTopic) {
+        redirect(`/practice/${fallbackTopic.slug}`);
+      }
+    }
   }
 
   if (!topic) notFound();
+
+  // If visited via raw numeric ID (e.g. /practice/182) or non-canonical slug, 301 redirect to clean SEO slug
+  if (topic.slug && topicId !== topic.slug) {
+    redirect(`/practice/${topic.slug}`);
+  }
 
   // Fetch full syllabus for left sidebar navigation
   const examId = topic.subjects?.exam_id;

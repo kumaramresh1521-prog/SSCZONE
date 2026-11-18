@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 import { requireAdmin } from "@/lib/api-auth";
 import { syncPyqToQuestionBank } from "@/lib/question-sync";
+import { resolvePaperId } from "@/lib/paper-slugs";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -95,15 +96,20 @@ export async function OPTIONS() {
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
-  const paperId = searchParams.get("paperId");
-  if (!paperId) {
+  const rawPaperId = searchParams.get("paperId");
+  if (!rawPaperId) {
     return NextResponse.json({ error: "Missing paperId" }, { status: 400 });
+  }
+
+  const paperId = resolvePaperId(rawPaperId);
+  if (!paperId) {
+    return NextResponse.json({ error: "Invalid paperId" }, { status: 400 });
   }
 
   const { data, error } = await supabaseAdmin
     .from("paper_questions")
     .select("*")
-    .eq("paper_id", Number(paperId))
+    .eq("paper_id", paperId)
     .order("question_number", { ascending: true });
 
   if (error) {

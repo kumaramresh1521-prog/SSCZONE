@@ -3,6 +3,7 @@
 import { useEffect, useState, useMemo } from "react";
 import { supabase } from "@/lib/supabase";
 import Link from "next/link";
+import { getPaperSlug } from "@/lib/paper-slugs";
 import {
   Trophy,
   Clock,
@@ -276,7 +277,7 @@ export default function MockTestSeriesPage() {
                   {/* Bottom Action CTA */}
                   <div className="mt-5 pt-3.5 border-t border-slate-100">
                     <Link
-                      href={`/take-test/${paper.id}`}
+                      href={`/take-test/${getPaperSlug(paper)}`}
                       className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 active:scale-98 px-4 py-2.5 text-xs font-bold text-white shadow-xs transition-all group-hover:shadow-md"
                     >
                       <Zap className="h-3.5 w-3.5 fill-white text-white" />

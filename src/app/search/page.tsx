@@ -60,7 +60,7 @@ function SearchContent() {
                 <h2 className="mb-3 text-lg font-semibold">Topics</h2>
                 <div className="space-y-2">
                   {results.topics.map((t: any) => (
-                    <Link key={t.id} href={`/practice/${t.id}`} className="block rounded-lg bg-white p-4 shadow-sm transition hover:shadow-md">
+                    <Link key={t.id} href={`/practice/${t.slug || t.id}`} className="block rounded-lg bg-white p-4 shadow-sm transition hover:shadow-md">
                       <h3 className="font-medium">{t.title}</h3>
                       <p className="text-sm text-gray-500">{t.subjects?.exams?.title} → {t.subjects?.title}</p>
                     </Link>

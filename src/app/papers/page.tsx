@@ -28,6 +28,7 @@ import {
   AlertCircle
 } from "lucide-react";
 import { getPaperPdfUrl, isPaperDownloadAllowed } from "@/lib/paper-pdf-store";
+import { getPaperSlug } from "@/lib/paper-slugs";
 
 function getPaperTier(title: string): "Tier 1" | "Tier 2" | null {
   const t = title.toLowerCase();
@@ -718,7 +719,7 @@ export default function PapersPage() {
                       {isReadyForCbt ? (
                         <>
                           <Link
-                            href={`/take-test/${paper.id}`}
+                            href={`/take-test/${getPaperSlug(paper)}`}
                             className="inline-flex items-center gap-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 px-4 py-2.5 text-xs font-black text-white shadow-xs transition-colors hover:scale-[1.01]"
                           >
                             <span>Attempt CBT Test</span>
@@ -831,7 +832,7 @@ export default function PapersPage() {
                         {isReadyForCbt ? (
                           <>
                             <Link
-                              href={`/take-test/${paper.id}`}
+                              href={`/take-test/${getPaperSlug(paper)}`}
                               className="inline-flex items-center gap-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 px-4 py-2.5 text-xs font-black text-white shadow-xs transition-colors hover:scale-[1.01]"
                             >
                               <span>Attempt CBT Test</span>

@@ -48,6 +48,7 @@ import {
   ExternalLink
 } from "lucide-react";
 import { getPyqQuestionCanonicalPath } from "@/lib/question-seo";
+import { resolvePaperId, getPaperSlug } from "@/lib/paper-slugs";
 import { isPaperTranslatorAllowed } from "@/lib/paper-pdf-store";
 import { promptGuestLoginGate } from "@/components/GuestSessionGateModal";
 
@@ -264,7 +265,18 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
 
     async function init() {
       const resolvedParams = await params;
-      const pid = resolvedParams.paperId;
+      const rawParam = resolvedParams.paperId;
+      const resolvedId = resolvePaperId(rawParam);
+
+      if (!resolvedId) {
+        if (isMounted) {
+          setErrorMessage("This exam shift paper could not be found. Please return to the papers list.");
+          setLoading(false);
+        }
+        return;
+      }
+
+      const pid = String(resolvedId);
       setPaperId(pid);
 
       try {
@@ -279,8 +291,8 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
 
       try {
         const [paperRes, questionsRes, settingsRes] = await Promise.all([
-          supabase.from("previous_papers").select("*, exams(title)").eq("id", pid).maybeSingle(),
-          fetch(`/api/papers/questions?paperId=${pid}&t=${Date.now()}`).then((r) => r.json()).catch(() => ({ questions: [] })),
+          supabase.from("previous_papers").select("*, exams(title)").eq("id", resolvedId).maybeSingle(),
+          fetch(`/api/papers/questions?paperId=${resolvedId}&t=${Date.now()}`).then((r) => r.json()).catch(() => ({ questions: [] })),
           fetch(`/api/papers/settings?t=${Date.now()}`).then((r) => r.json()).catch(() => ({}))
         ]);
 
@@ -289,7 +301,13 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
         if (paperRes.error || !paperRes.data) {
           setErrorMessage("This exam shift paper could not be loaded. Please return to the papers list.");
         } else {
-          const setting = settingsRes?.[String(pid)];
+          // If user arrived via raw numeric ID, smoothly update address bar to clean SEO slug
+          const canonicalSlug = getPaperSlug(paperRes.data);
+          if (canonicalSlug && /^\d+$/.test(rawParam) && typeof window !== "undefined" && window.history?.replaceState) {
+            window.history.replaceState(null, "", `/take-test/${canonicalSlug}`);
+          }
+
+          const setting = settingsRes?.[String(resolvedId)];
           let transAllowed = true;
           if (setting !== undefined && setting.allow_translation !== undefined) {
             transAllowed = Boolean(setting.allow_translation);

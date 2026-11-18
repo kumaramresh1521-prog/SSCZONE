@@ -9,6 +9,7 @@ import {
   getQuestionCanonicalPath,
   getPyqQuestionCanonicalPath,
 } from "@/lib/question-seo";
+import { getPaperSlug } from "@/lib/paper-slugs";
 import QuestionClientView from "./QuestionClientView";
 import { ChevronRight, Home, BookOpen, Layers, FileText } from "lucide-react";
 
@@ -169,7 +170,7 @@ export default async function QuestionPage({ params }: PageProps) {
             {paper && (
               <>
                 <Link
-                  href={`/take-test/${paper.id}`}
+                  href={`/take-test/${getPaperSlug(paper)}`}
                   className="hover:text-blue-600 transition-colors font-semibold text-slate-700 dark:text-slate-300 truncate max-w-xs shrink-0"
                 >
                   {paper.title}
@@ -204,7 +205,7 @@ export default async function QuestionPage({ params }: PageProps) {
                 </div>
                 {paper && (
                   <Link
-                    href={`/take-test/${paper.id}`}
+                    href={`/take-test/${getPaperSlug(paper)}`}
                     className="text-xs font-bold text-blue-600 hover:text-blue-700"
                   >
                     Attempt Full CBT Test (100 Qs) ➔

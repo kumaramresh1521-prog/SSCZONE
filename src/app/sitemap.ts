@@ -3,6 +3,7 @@ import { createClient } from "@supabase/supabase-js";
 import { getPublishedSeoConfigAsync } from "@/lib/seo-store";
 import { getChapterNotes } from "@/lib/chapter-notes-store";
 import { getQuestionCanonicalPath, getPyqQuestionCanonicalPath } from "@/lib/question-seo";
+import { getPaperSlug } from "@/lib/paper-slugs";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://placeholder.supabase.co";
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "placeholder-key";
@@ -109,13 +110,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   try {
     const { data: papers, error: papersError } = await supabase
       .from("previous_papers")
-      .select("id, created_at")
+      .select("id, title, year, created_at")
       .eq("is_active", true)
       .limit(500);
     if (papersError) console.error("Sitemap papers query error:", papersError.message);
     if (papers) {
       paperRoutes = papers.map((p) => ({
-        url: `${baseUrl}/take-test/${p.id}`,
+        url: `${baseUrl}/take-test/${getPaperSlug(p)}`,
         lastModified: p.created_at ? new Date(p.created_at) : new Date(),
         changeFrequency: "weekly",
         priority: 0.7,

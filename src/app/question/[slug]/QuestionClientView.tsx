@@ -5,6 +5,7 @@ import Link from "next/link";
 import QuestionText from "@/components/QuestionText";
 import MathText from "@/components/MathText";
 import { resolveAssetUrl } from "@/lib/utils";
+import { getPaperSlug } from "@/lib/paper-slugs";
 import {
   CheckCircle2,
   XCircle,
@@ -309,7 +310,7 @@ export default function QuestionClientView({
             </p>
           </div>
           <Link
-            href={`/take-test/${paper.id}`}
+            href={`/take-test/${getPaperSlug(paper)}`}
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shrink-0 transition-all shadow-sm hover:shadow-md cursor-pointer"
           >
             <span>Attempt Full CBT Test</span>

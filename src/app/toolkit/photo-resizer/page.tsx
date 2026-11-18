@@ -293,6 +293,90 @@ export default function SSCPhotoResizerPage() {
           <ShieldCheck className="w-5 h-5 text-emerald-600 shrink-0" />
           <span>100% Privacy Guaranteed: Your photos & signatures are processed inside your browser and NEVER uploaded to any server.</span>
         </div>
+
+        {/* OFFICIAL SSC SPECIFICATIONS REFERENCE TABLE */}
+        <div className="mt-12 bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6">
+          <div className="border-b border-slate-100 pb-4">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-[11px] font-black uppercase tracking-wider mb-2">
+              <FileCheck className="w-3.5 h-3.5" /> Official Guidelines
+            </div>
+            <h2 className="text-xl sm:text-2xl font-black text-slate-900">
+              Staff Selection Commission (SSC) Photo &amp; Signature Official Criteria
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 mt-1">
+              Strict rules enforced during online application verification for SSC CGL, CHSL, CPO, MTS, and GD exams.
+            </p>
+          </div>
+
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs text-left text-slate-700">
+              <thead className="bg-slate-50 text-slate-900 font-black uppercase tracking-wider border-y border-slate-200">
+                <tr>
+                  <th className="py-3 px-4">Parameter</th>
+                  <th className="py-3 px-4 text-emerald-700">Passport Photograph</th>
+                  <th className="py-3 px-4 text-blue-700">Candidate Signature</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100 font-medium">
+                <tr>
+                  <td className="py-3 px-4 font-bold text-slate-900">Allowed File Size</td>
+                  <td className="py-3 px-4 text-emerald-700 font-black">20.0 KB to 50.0 KB</td>
+                  <td className="py-3 px-4 text-blue-700 font-black">10.0 KB to 20.0 KB</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold text-slate-900">Dimensions in cm</td>
+                  <td className="py-3 px-4">3.5 cm (width) × 4.5 cm (height)</td>
+                  <td className="py-3 px-4">4.0 cm (width) × 2.0 cm (height)</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold text-slate-900">Pixel Resolution</td>
+                  <td className="py-3 px-4 font-mono">Approx. 350 × 450 px</td>
+                  <td className="py-3 px-4 font-mono">Approx. 400 × 200 px</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold text-slate-900">File Format</td>
+                  <td className="py-3 px-4">JPEG / JPG only</td>
+                  <td className="py-3 px-4">JPEG / JPG only</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold text-slate-900">Background</td>
+                  <td className="py-3 px-4">Plain light / white background</td>
+                  <td className="py-3 px-4">Plain white paper, black/blue ink</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          {/* CRITICAL REJECTION WARNINGS */}
+          <div className="rounded-2xl bg-amber-50 border border-amber-200 p-5 space-y-3">
+            <h3 className="text-sm font-black text-amber-900 flex items-center gap-2">
+              <AlertCircle className="w-4 h-4 text-amber-600" />
+              Top 5 Reasons SSC Rejects Application Forms:
+            </h3>
+            <ul className="text-xs text-amber-950 space-y-2 font-medium">
+              <li className="flex items-start gap-2">
+                <span className="text-amber-600 font-bold shrink-0">1.</span>
+                <span><b>Wearing Cap, Spectacles, or Goggles:</b> SSC strictly rejects any photo with eyewear (including power glasses) or head coverings that obscure facial features.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-amber-600 font-bold shrink-0">2.</span>
+                <span><b>Blurry or Distorted Aspect Ratio:</b> Stretching or squishing photos makes facial recognition fail at TCS examination centers.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-amber-600 font-bold shrink-0">3.</span>
+                <span><b>Dark or Patterned Background:</b> Photos taken against outdoor trees, curtains, or dark walls are instantly rejected.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-amber-600 font-bold shrink-0">4.</span>
+                <span><b>Selfies or Side Angles:</b> Both ears and full frontal face must be clearly visible and evenly illuminated.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-amber-600 font-bold shrink-0">5.</span>
+                <span><b>Incorrect File Size:</b> Uploading photos under 20 KB or over 50 KB triggers a form validation error on the SSC portal.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );

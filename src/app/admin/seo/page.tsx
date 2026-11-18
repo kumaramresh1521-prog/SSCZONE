@@ -137,6 +137,14 @@ const CATEGORIZED_KEYWORDS: RecommendedKeyword[] = [
   { tag: "SSC Speed Test 25 Questions 15 Minutes", category: "tools", volume: "High", intent: "Commercial" },
   { tag: "Daily Free SSC Quiz & Mock Test Online", category: "tools", volume: "Very High", intent: "Commercial" },
   { tag: "SSC Photo Resizer & Signature Tool", category: "tools", volume: "Trending", intent: "Informational" },
+  { tag: "SSC Photo Resizer 20 to 50 kb Online", category: "tools", volume: "Very High", intent: "Transactional" },
+  { tag: "SSC Signature Resizer 10 to 20 kb 4x2 cm", category: "tools", volume: "Very High", intent: "Transactional" },
+  { tag: "SSC Photo Size 3.5 x 4.5 cm Compressor", category: "tools", volume: "High", intent: "Informational" },
+  { tag: "SSC Age Calculator with Cutoff Date", category: "tools", volume: "Very High", intent: "Transactional" },
+  { tag: "SSC Age Relaxation Calculator OBC SC ST", category: "tools", volume: "High", intent: "Informational" },
+  { tag: "SSC Rank Predictor & Shift Normalization Score", category: "tools", volume: "Very High", intent: "Transactional" },
+  { tag: "SSC CGL DEST 2000 Key Depressions Simulator", category: "tools", volume: "Very High", intent: "Transactional" },
+  { tag: "SSC Master Syllabus Checklist 2026", category: "tools", volume: "High", intent: "Informational" },
 
   // High-Intent Search & Conversion
   { tag: "Free SSC Mock Test Series Online 2026", category: "intent", volume: "Very High", intent: "Transactional" },
@@ -161,6 +169,48 @@ const PRESET_PAGES = [
     defaultTitle: "SSC PYQ Shift Papers 2026 Live — Download PDF & Attempt CBT Test",
     defaultDesc: "Download clean official SSC CGL, CHSL, CPO shift paper PDFs with SSC Zone branding and attempt online CBT mock tests with instant scorecards.",
     defaultKeywords: ["SSC PYQ Shift Papers", "SSC CGL Shift Wise PDF", "SSC CHSL Tier 1 Shift PDF", "TCS CBT Mock Test Online"]
+  },
+  {
+    path: "/toolkit",
+    name: "Candidate Utilities & Toolkit Hub (/toolkit)",
+    defaultTitle: "SSC Candidate Toolkit & Free Exam Utilities Hub 2026 | SSCZone",
+    defaultDesc: "Free high-precision candidate utilities for SSC CGL, CHSL, CPO, MTS & GD aspirants: Photo & Signature Resizer (20-50 KB), Age Calculator with Cutoff Dates, Rank Predictor, and TCS Typing Simulator.",
+    defaultKeywords: ["SSC Candidate Toolkit", "SSC Exam Utilities Hub", "SSC Photo Resizer", "SSC Age Calculator", "SSC Rank Predictor", "SSC Typing Test"]
+  },
+  {
+    path: "/toolkit/photo-resizer",
+    name: "SSC Photo & Signature Resizer (/toolkit/photo-resizer)",
+    defaultTitle: "SSC Photo & Signature Resizer Tool (20-50 KB & 10-20 KB) — 100% In-Browser Private | SSCZone",
+    defaultDesc: "Free SSC Photo Resizer & Signature Converter. Compress & crop photos to 20-50 KB (3.5×4.5 cm) and signatures to 10-20 KB (4.0×2.0 cm) with zero upload, client-side privacy, and official SSC guidelines.",
+    defaultKeywords: ["SSC Photo Resizer", "SSC Photo Size 20 to 50 kb", "SSC Signature Resizer 10 to 20 kb", "SSC Photo 3.5 x 4.5 cm", "SSC Signature 4 x 2 cm", "SSC Photo Compressor"]
+  },
+  {
+    path: "/toolkit/age-calculator",
+    name: "SSC Age & Cutoff Calculator (/toolkit/age-calculator)",
+    defaultTitle: "SSC Age Calculator & Eligibility Checker — Official Cutoff Dates & Category Relaxation | SSCZone",
+    defaultDesc: "Calculate your exact age in years, months, and days as on official SSC cutoff dates (01-08-2025 / 01-01-2025). Check age eligibility with UR, OBC (+3y), SC/ST (+5y), and PwD (+10y) relaxations.",
+    defaultKeywords: ["SSC Age Calculator", "SSC Cutoff Date Age Calculator", "SSC CGL Age Limit Calculator", "SSC Age Relaxation OBC SC ST", "SSC CHSL Eligibility Age"]
+  },
+  {
+    path: "/toolkit/rank-predictor",
+    name: "SSC Rank Predictor & Normalizer (/toolkit/rank-predictor)",
+    defaultTitle: "SSC Rank Predictor & Marks Normalization Calculator 2026 — Answer Key Analysis | SSCZone",
+    defaultDesc: "Predict your SSC CGL, CHSL, CPO rank and shift-normalized score from raw marks or official answer key URL. Shift difficulty analysis, category rank, and qualifying percentile.",
+    defaultKeywords: ["SSC Rank Predictor", "SSC CGL Rank Predictor 2026", "SSC Normalization Marks Calculator", "SSC Answer Key Score Calculator", "SSC Shift Difficulty Normalizer"]
+  },
+  {
+    path: "/typing",
+    name: "Typing Test Simulator (/typing)",
+    defaultTitle: "SSC 2000 Key Depressions Typing Test Simulator — TCS Exam Hall Interface | SSCZone",
+    defaultDesc: "Practice official SSC 2000 Key Depressions DEST typing test passages with 15-minute countdown, backspace controls, accuracy, and TCS error percentage calculator.",
+    defaultKeywords: ["SSC 2000 Key Depressions", "SSC CGL DEST Typing Test", "SSC Typing Test 15 Minutes", "TCS Typing Simulator 2000 Key Depressions", "SSC Typing Error Calculator"]
+  },
+  {
+    path: "/syllabus",
+    name: "Master Syllabus Tracker (/syllabus)",
+    defaultTitle: "SSC Master Syllabus Tracker & OneNote Checklist 2026 | SSCZone",
+    defaultDesc: "Interactive notification-mapped chapter checklist for CGL 2026, CHSL, CPO, MTS & GD with 3-Pillar tracking (Theory, 50+ PYQs, 3x Revisions) & formula scratchpads.",
+    defaultKeywords: ["SSC Master Syllabus Tracker", "SSC CGL Syllabus 2026 Checklist", "SSC Chapter Wise Checklist", "SSC OneNote Study Tracker"]
   },
   {
     path: "/exams",
@@ -189,13 +239,6 @@ const PRESET_PAGES = [
     defaultTitle: "Daily Free Quiz & Mock Test | SSC CGL, CHSL, MTS, CPO Practice | SSCZONE",
     defaultDesc: "Practice daily free subject-wise mini quizzes for SSC CGL, CHSL, CPO, MTS and GD exams. High-yield questions with KaTeX formulas and instant scorecards.",
     defaultKeywords: ["SSC Daily Free Quiz", "Daily 10 Questions SSC Quiz", "Free SSC Mini Mock Test", "SSC Daily GK Quiz"]
-  },
-  {
-    path: "/typing",
-    name: "Typing Test Simulator (/typing)",
-    defaultTitle: "SSC 2000 Key Depressions Typing Test Simulator — CGL DEST & CHSL Interface",
-    defaultDesc: "Practice official SSC 2000 Key Depressions DEST typing test passages with 15-minute countdown, backspace controls, accuracy, and TCS error percentage calculator.",
-    defaultKeywords: ["SSC 2000 Key Depressions", "SSC CGL DEST Typing Test", "SSC Typing Test 15 Minutes", "TCS Typing Simulator 2000 Key Depressions"]
   },
   {
     path: "/about",

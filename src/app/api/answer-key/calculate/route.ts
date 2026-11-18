@@ -32,6 +32,43 @@ interface CandidateInfo {
   vendor: "CBExams" | "DigiALM" | "Generic";
 }
 
+// Allowed government examination portals for answer key calculation
+const ALLOWED_ANSWER_KEY_DOMAINS = [
+  "digialm.com",
+  "cbexams.com",
+  "ssc.gov.in",
+  "ssconline.nic.in",
+];
+
+function isAllowedAnswerKeyUrl(urlStr: string): boolean {
+  try {
+    const parsed = new URL(urlStr);
+    if (parsed.protocol !== "https:" && parsed.protocol !== "http:") {
+      return false;
+    }
+    const host = parsed.hostname.toLowerCase();
+    // Reject internal / private network IPs & metadata endpoints (SSRF Defense)
+    if (
+      host === "localhost" ||
+      host === "127.0.0.1" ||
+      host === "::1" ||
+      host.endsWith(".local") ||
+      host.endsWith(".internal") ||
+      /^(0|10|127|192\.168|172\.(1[6-9]|2[0-9]|3[0-1])|169\.254)\./.test(host) ||
+      /^(\d{1,3}\.){3}\d{1,3}$/.test(host) ||
+      parsed.username ||
+      parsed.password
+    ) {
+      return false;
+    }
+    return ALLOWED_ANSWER_KEY_DOMAINS.some(
+      (domain) => host === domain || host.endsWith("." + domain)
+    );
+  } catch {
+    return false;
+  }
+}
+
 // Helper to parse questions from CBExams table markup
 function parseCbExamsQuestions(html: string, sectionName: string, positiveMarks: number, negativeMarks: number): SectionResult {
   const tables = [...html.matchAll(/<table[^>]*style="[^"]*background-color:\s*#e8edf3[^"]*"[\s\S]*?<\/table>/gi)].map(m => m[0]);
@@ -216,6 +253,15 @@ export async function POST(request: Request) {
     // Case 1: URL provided
     if (url) {
       const cleanUrl = url.trim();
+      if (!isAllowedAnswerKeyUrl(cleanUrl)) {
+        return NextResponse.json(
+          {
+            error:
+              "Security Notice: Only official government examination portals (e.g., ssc.digialm.com, cbexams.com, ssc.gov.in) can be fetched directly. Alternatively, you can paste the response sheet HTML below.",
+          },
+          { status: 400 }
+        );
+      }
       const parsedUrl = new URL(cleanUrl);
       const isCbExams = parsedUrl.hostname.includes("cbexams.com");
       const isDigiAlm = parsedUrl.hostname.includes("digialm.com");

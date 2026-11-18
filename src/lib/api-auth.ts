@@ -21,36 +21,36 @@ function isSameOrigin(request: NextRequest): boolean {
       return true;
     }
 
-    // 2. Allow local development variants (localhost, 127.0.0.1, internal IP ranges)
-    const isOriginLocal =
-      originHostname === "localhost" ||
-      originHostname === "127.0.0.1" ||
-      originHostname === "0.0.0.0" ||
-      originHostname.startsWith("192.168.") ||
-      originHostname.startsWith("10.") ||
-      originHostname.startsWith("172.") ||
-      originHostname.startsWith("169.254.");
+    // 2. Allow local development variants ONLY in non-production environments
+    const isDev = process.env.NODE_ENV !== "production";
+    if (isDev) {
+      const isOriginLocal =
+        originHostname === "localhost" ||
+        originHostname === "127.0.0.1" ||
+        originHostname === "0.0.0.0" ||
+        originHostname.startsWith("192.168.") ||
+        originHostname.startsWith("10.") ||
+        originHostname.startsWith("172.");
 
-    const isHostLocal =
-      cleanHostName === "localhost" ||
-      cleanHostName === "127.0.0.1" ||
-      cleanHostName === "0.0.0.0" ||
-      cleanHostName.startsWith("192.168.") ||
-      cleanHostName.startsWith("10.") ||
-      cleanHostName.startsWith("172.") ||
-      cleanHostName.startsWith("169.254.");
+      const isHostLocal =
+        cleanHostName === "localhost" ||
+        cleanHostName === "127.0.0.1" ||
+        cleanHostName === "0.0.0.0" ||
+        cleanHostName.startsWith("192.168.") ||
+        cleanHostName.startsWith("10.") ||
+        cleanHostName.startsWith("172.");
 
-    if (isOriginLocal && (isHostLocal || !cleanHostName)) {
-      return true;
+      if (isOriginLocal && (isHostLocal || !cleanHostName)) {
+        return true;
+      }
     }
 
-    // 3. Allow SSCZone production & staging domains
+    // 3. Allow SSCZone official production domains
     if (
-      originHostname.endsWith("ssczone.com") ||
-      originHostname.endsWith("ssczone.in") ||
-      originHostname.endsWith("vercel.app") ||
-      originHostname.endsWith("railway.app") ||
-      originHostname.endsWith("onrender.com")
+      originHostname === "ssczone.com" ||
+      originHostname.endsWith(".ssczone.com") ||
+      originHostname === "ssczone.in" ||
+      originHostname.endsWith(".ssczone.in")
     ) {
       return true;
     }

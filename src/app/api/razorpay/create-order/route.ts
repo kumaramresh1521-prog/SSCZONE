@@ -5,11 +5,6 @@ import { supabaseAdmin } from "@/lib/supabase-admin";
 
 export async function POST(req: Request) {
   try {
-    const { packageId } = await req.json();
-
-    const { data: pkg } = await supabaseAdmin.from("packages").select("*").eq("id", packageId).eq("is_active", true).single();
-    if (!pkg) return NextResponse.json({ error: "Package not found" }, { status: 404 });
-
     const cookieStore = await cookies();
     const supabase = createServerClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -25,6 +20,14 @@ export async function POST(req: Request) {
     );
     const { data: { user } } = await supabase.auth.getUser();
     if (!user) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+
+    const { packageId } = await req.json();
+    if (!packageId) {
+      return NextResponse.json({ error: "Package ID is required" }, { status: 400 });
+    }
+
+    const { data: pkg } = await supabaseAdmin.from("packages").select("*").eq("id", packageId).eq("is_active", true).single();
+    if (!pkg) return NextResponse.json({ error: "Package not found" }, { status: 404 });
 
     const totalAmount = Math.round(Number(pkg.price) * 100);
     const receipt = `rcpt_${user.id.slice(0, 8)}_${Date.now().toString(36)}`;

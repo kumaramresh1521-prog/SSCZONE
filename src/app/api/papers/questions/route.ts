@@ -109,7 +109,26 @@ export async function GET(req: NextRequest) {
   if (error) {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
-  return NextResponse.json({ questions: data ?? [] });
+
+  // Check if admin is requesting (e.g., from paper editor)
+  const adminDenied = await requireAdmin(req);
+  if (!adminDenied) {
+    // Admin gets full questions with correct_answer & explanation
+    return NextResponse.json({ questions: data ?? [] });
+  }
+
+  // Public / Candidate taking exam: Strip correct_answer & explanation to prevent cheating
+  const sanitizedQuestions = (data ?? []).map((q) => {
+    const { correct_answer, explanation, explanation_hi, ...safeQ } = q;
+    return {
+      ...safeQ,
+      correct_answer: null,
+      explanation: null,
+      explanation_hi: null,
+    };
+  });
+
+  return NextResponse.json({ questions: sanitizedQuestions });
 }
 
 export async function POST(req: NextRequest) {

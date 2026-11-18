@@ -651,12 +651,10 @@ export default function BooksPage() {
                   <div className="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center gap-2.5 w-full sm:w-auto shrink-0 pt-3 sm:pt-0 border-t sm:border-t-0 border-gray-100">
                     
                     <div className="flex items-center gap-2">
-                      {/* Rating */}
-                      <div className="flex items-center gap-1 text-xs font-bold text-gray-800">
-                        <Star className="h-3.5 w-3.5 fill-amber-400 text-amber-500" />
-                        <span>{book.rating}</span>
-                        <span className="text-[10px] font-normal text-gray-400">({book.reviewCount})</span>
-                      </div>
+                      {/* Recommended Resource Badge */}
+                      <span className="text-[11px] font-bold text-blue-700 bg-blue-50 px-2.5 py-0.5 rounded-md border border-blue-100">
+                        Recommended
+                      </span>
 
                       {/* Bookmark Icon */}
                       <button
@@ -711,15 +709,19 @@ export default function BooksPage() {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
             <div>
               <h2 className="text-base font-extrabold text-gray-900">
-                Free Downloadable Formula & Revision Sheets (PDFs)
+                Free Revision Notes & High-Yield Theory
               </h2>
               <p className="text-xs text-gray-500 mt-0.5">
-                Printable summary notes created from high-frequency TCS shifts.
+                Structured chapter summaries and formulas available to study online.
               </p>
             </div>
-            <span className="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-100 w-fit">
-              100% Free For All Students
-            </span>
+            <Link
+              href="/notes"
+              className="text-[11px] font-bold text-blue-700 bg-blue-50 px-3 py-1.5 rounded-lg border border-blue-200 hover:bg-blue-100 transition-colors w-fit flex items-center gap-1"
+            >
+              <span>Explore All Notes</span>
+              <ArrowRight className="h-3 w-3" />
+            </Link>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
@@ -730,21 +732,21 @@ export default function BooksPage() {
               >
                 <div className="flex items-center gap-3">
                   <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-100 text-blue-700 font-bold text-[10px] shrink-0">
-                    PDF
+                    NOTES
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 leading-snug line-clamp-1">{note.title}</h4>
-                    <p className="text-[10px] text-gray-500 mt-0.5">{note.subject} • {note.pages} • {note.size}</p>
+                    <p className="text-[10px] text-gray-500 mt-0.5">{note.subject} • High-Yield Theory</p>
                   </div>
                 </div>
 
-                <button
-                  onClick={() => triggerToast(`Downloading PDF: ${note.title}`)}
-                  className="flex items-center gap-1 rounded-lg bg-white border border-gray-200 px-2.5 py-1.5 text-[11px] font-bold text-gray-700 hover:bg-blue-50 hover:text-blue-700 hover:border-blue-200 transition-all cursor-pointer shrink-0 ml-2"
+                <Link
+                  href="/notes"
+                  className="flex items-center gap-1 rounded-lg bg-white border border-gray-200 px-2.5 py-1.5 text-[11px] font-bold text-gray-700 hover:bg-blue-50 hover:text-blue-700 hover:border-blue-200 transition-all shrink-0 ml-2"
                 >
-                  <Download className="h-3.5 w-3.5" />
-                  <span>Get PDF</span>
-                </button>
+                  <Eye className="h-3.5 w-3.5" />
+                  <span>Read Online</span>
+                </Link>
               </div>
             ))}
           </div>
@@ -866,16 +868,14 @@ export default function BooksPage() {
               </button>
 
               <div className="flex items-center gap-2">
-                <button
-                  onClick={() => {
-                    triggerToast(`Downloading Sample Chapters for ${activeBook.title}`);
-                    setActiveBook(null);
-                  }}
+                <Link
+                  href="/practice"
+                  onClick={() => setActiveBook(null)}
                   className="flex items-center gap-1.5 rounded-xl bg-blue-600 px-4 py-2 text-xs font-bold text-white hover:bg-blue-700 transition-all cursor-pointer shadow-xs"
                 >
-                  <Download className="h-3.5 w-3.5" />
-                  <span>Download Sample Index</span>
-                </button>
+                  <span>Practice Related MCQs</span>
+                  <ArrowRight className="h-3.5 w-3.5" />
+                </Link>
               </div>
             </div>
 

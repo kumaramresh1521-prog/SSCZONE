@@ -6,7 +6,15 @@ import type { NextRequest } from "next/server";
 export async function GET(request: NextRequest) {
   const requestUrl = new URL(request.url);
   const code = requestUrl.searchParams.get("code");
-  const next = requestUrl.searchParams.get("next") ?? "/exams";
+  const rawNext = requestUrl.searchParams.get("next") ?? "/exams";
+  // Open redirect defense: Ensure relative path only (must start with "/" and not "//" or contain protocol)
+  const next =
+    rawNext.startsWith("/") &&
+    !rawNext.startsWith("//") &&
+    !rawNext.includes("://") &&
+    !rawNext.includes("\\")
+      ? rawNext
+      : "/exams";
 
   if (code) {
     const cookieStore = await cookies();

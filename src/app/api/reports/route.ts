@@ -123,6 +123,11 @@ export async function POST(request: Request) {
 
 // GET /api/reports - Admin retrieving all student reports & site alerts
 export async function GET(request: Request) {
+  const admin = await isUserAdmin();
+  if (!admin) {
+    return NextResponse.json({ error: "Unauthorized. Admin privileges required." }, { status: 403 });
+  }
+
   const { searchParams } = new URL(request.url);
   const statusFilter = searchParams.get("status");
 

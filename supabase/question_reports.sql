@@ -20,6 +20,10 @@ ALTER TABLE question_reports ENABLE ROW LEVEL SECURITY;
 CREATE POLICY "Allow anyone to insert reports" ON question_reports
   FOR INSERT WITH CHECK (true);
 
--- Allow admins to view and update reports
-CREATE POLICY "Allow service role full access to reports" ON question_reports
-  FOR ALL USING (true);
+-- Allow service role and admins full access to reports
+CREATE POLICY "Allow admin full access to reports" ON question_reports
+  FOR ALL USING (
+    coalesce((auth.jwt()->'app_metadata'->>'role' = 'service_role'), false)
+    OR
+    EXISTS (SELECT 1 FROM public.profiles WHERE id = auth.uid() AND is_admin = true)
+  );

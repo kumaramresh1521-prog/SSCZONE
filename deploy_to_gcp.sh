@@ -36,7 +36,8 @@ gcloud run deploy "$SERVICE_NAME" \
   --memory 2Gi \
   --cpu 2 \
   --min-instances 0 \
-  --max-instances 10
+  --max-instances 10 \
+  --update-env-vars "NEXT_PUBLIC_APP_URL=https://ssczone.com"
 
 echo ""
 echo "=================================================="

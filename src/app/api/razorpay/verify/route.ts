@@ -34,8 +34,14 @@ export async function POST(req: Request) {
       .update(body)
       .digest("hex");
 
-    if (expectedSig !== razorpay_signature) {
-      return NextResponse.json({ success: false, error: "Invalid signature" });
+    const expectedBuf = Buffer.from(expectedSig, "utf8");
+    const receivedBuf = Buffer.from(razorpay_signature || "", "utf8");
+
+    if (
+      expectedBuf.length !== receivedBuf.length ||
+      !crypto.timingSafeEqual(expectedBuf, receivedBuf)
+    ) {
+      return NextResponse.json({ success: false, error: "Invalid signature" }, { status: 400 });
     }
 
     const { data: pkg } = await supabaseAdmin.from("packages").select("duration_days").eq("id", packageId).single();
@@ -54,6 +60,7 @@ export async function POST(req: Request) {
       })
       .eq("razorpay_order_id", razorpay_order_id)
       .eq("user_id", user.id)
+      .eq("status", "pending")
       .select("id");
 
     if (subError || !sub || sub.length === 0) {

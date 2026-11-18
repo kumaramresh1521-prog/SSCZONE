@@ -16,4 +16,8 @@ CREATE POLICY "Public read site_settings" ON public.site_settings FOR SELECT USI
 
 -- Allow service role and admins to update settings
 DROP POLICY IF EXISTS "Admin write site_settings" ON public.site_settings;
-CREATE POLICY "Admin write site_settings" ON public.site_settings FOR ALL USING (true);
+CREATE POLICY "Admin write site_settings" ON public.site_settings FOR ALL USING (
+  coalesce((auth.jwt()->'app_metadata'->>'role' = 'service_role'), false)
+  OR
+  EXISTS (SELECT 1 FROM public.profiles WHERE id = auth.uid() AND is_admin = true)
+);

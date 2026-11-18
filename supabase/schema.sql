@@ -182,6 +182,26 @@ CREATE TRIGGER on_auth_user_created
   AFTER INSERT ON auth.users
   FOR EACH ROW EXECUTE FUNCTION public.handle_new_user();
 
+-- Trigger to prevent users from elevating themselves to is_admin
+CREATE OR REPLACE FUNCTION public.check_profile_admin_update()
+RETURNS TRIGGER AS $$
+BEGIN
+  IF NEW.is_admin IS DISTINCT FROM OLD.is_admin THEN
+    IF NOT EXISTS (
+      SELECT 1 FROM public.profiles WHERE id = auth.uid() AND is_admin = true
+    ) THEN
+      RAISE EXCEPTION 'Only administrators can modify the is_admin flag.';
+    END IF;
+  END IF;
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
+
+DROP TRIGGER IF EXISTS tr_check_profile_admin ON public.profiles;
+CREATE TRIGGER tr_check_profile_admin
+  BEFORE UPDATE ON public.profiles
+  FOR EACH ROW EXECUTE FUNCTION public.check_profile_admin_update();
+
 -- Public read policies
 CREATE POLICY "Public read exams" ON exams FOR SELECT USING (true);
 CREATE POLICY "Public read subjects" ON subjects FOR SELECT USING (true);
@@ -199,10 +219,8 @@ CREATE POLICY "Users update own profile" ON profiles FOR UPDATE USING (auth.uid(
 -- Bookmarks policies
 CREATE POLICY "Users manage own bookmarks" ON bookmarks FOR ALL USING (auth.uid() = user_id);
 
--- Subscriptions policies
+-- Subscriptions policies (users can only read their own; insert/update restricted to admin & service role)
 CREATE POLICY "Users read own subscriptions" ON subscriptions FOR SELECT USING (auth.uid() = user_id);
-CREATE POLICY "Users insert own subscriptions" ON subscriptions FOR INSERT WITH CHECK (auth.uid() = user_id);
-CREATE POLICY "Users update own subscriptions" ON subscriptions FOR UPDATE USING (auth.uid() = user_id);
 
 -- Test attempts policies
 CREATE POLICY "Users read own attempts" ON test_attempts FOR SELECT USING (auth.uid() = user_id);

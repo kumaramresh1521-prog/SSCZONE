@@ -277,7 +277,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
       try {
         const [paperRes, questionsRes, settingsRes] = await Promise.all([
           supabase.from("previous_papers").select("*, exams(title)").eq("id", pid).maybeSingle(),
-          supabase.from("paper_questions").select("*").eq("paper_id", pid).order("question_number", { ascending: true }),
+          fetch(`/api/papers/questions?paperId=${pid}&t=${Date.now()}`).then((r) => r.json()).catch(() => ({ questions: [] })),
           fetch(`/api/papers/settings?t=${Date.now()}`).then((r) => r.json()).catch(() => ({}))
         ]);
 
@@ -297,7 +297,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
           }
           const fullPaper = { ...paperRes.data, allow_translation: transAllowed };
           setPaper(fullPaper);
-          const qs = questionsRes.data ?? [];
+          const qs = questionsRes.questions ?? questionsRes.data ?? [];
           setQuestions(qs);
           setTimeLeft((paperRes.data.duration_minutes || 60) * 60);
 
@@ -770,57 +770,72 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
     toast.success("Exam started! Best of luck.");
   }
 
-  // 7. Submit Exam & Calculate Official Score
+  // Dynamic Marking Scheme based on Exam & Tier (SSC CGL Tier 1: +2/-0.5, Tier 2: +3/-1, CPO/MTS: +1/-0.25)
+  const markingScheme = useMemo(() => {
+    const titleLower = (paper?.title || "").toLowerCase();
+    const examLower = (paper?.exams?.title || "").toLowerCase();
+    if (
+      titleLower.includes("tier-ii") ||
+      titleLower.includes("tier 2") ||
+      titleLower.includes("tier-2") ||
+      titleLower.includes("mains")
+    ) {
+      return { positive: 3.0, negative: 1.0, maxMarks: 390 };
+    }
+    if (titleLower.includes("cpo") || examLower.includes("cpo")) {
+      return { positive: 1.0, negative: 0.25, maxMarks: 200 };
+    }
+    if (
+      titleLower.includes("mts") ||
+      examLower.includes("mts") ||
+      titleLower.includes("gd") ||
+      examLower.includes("gd")
+    ) {
+      return { positive: 1.0, negative: 0.25, maxMarks: 100 };
+    }
+    return { positive: 2.0, negative: 0.5, maxMarks: 200 };
+  }, [paper]);
+
+  // 7. Submit Exam & Calculate Official Score (Server-Side Grading)
   async function handleSubmitTest() {
     if (submitting || finished) return;
     setSubmitting(true);
     setShowSubmitModal(false);
 
-    let correctCount = 0;
-    let wrongCount = 0;
+    try {
+      const res = await fetch("/api/papers/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          paperId: Number(paperId),
+          answers,
+          attemptId: attemptIdRef.current,
+        }),
+      });
 
-    questions.forEach((q) => {
-      const selected = answers[q.id];
-      if (selected) {
-        if (selected === q.correct_answer) {
-          correctCount++;
-        } else {
-          wrongCount++;
-        }
-      }
-    });
-
-    const marksObtained = correctCount * 2.0 - wrongCount * 0.5;
-
-    const user = userRef.current;
-    const attemptId = attemptIdRef.current;
-
-    if (user && attemptId && typeof attemptId === "number") {
-      try {
-        const answerRows = questions.map((q) => ({
-          attempt_id: attemptId,
-          question_id: q.id,
-          selected_answer: answers[q.id] ?? null,
-          is_correct: answers[q.id] === q.correct_answer,
-        }));
-
-        await supabase.from("user_answers").insert(answerRows);
-        await supabase
-          .from("test_attempts")
-          .update({
-            end_time: new Date().toISOString(),
-            score: Math.round(marksObtained),
-            total_questions: questions.length,
-            status: "completed",
+      const data = await res.json();
+      if (data.success && data.solutions) {
+        // Securely merge solutions returned by server ONLY after submission
+        setQuestions((prev) =>
+          prev.map((q) => {
+            const sol = data.solutions[q.id];
+            if (sol) {
+              return {
+                ...q,
+                correct_answer: sol.correct_answer,
+                explanation: sol.explanation,
+              };
+            }
+            return q;
           })
-          .eq("id", attemptId);
-      } catch {
-        // Local scorecard still works
+        );
       }
+    } catch (err) {
+      console.error("Server test submission error:", err);
+    } finally {
+      setSubmitting(false);
+      setFinished(true);
     }
-
-    setSubmitting(false);
-    setFinished(true);
   }
 
   // Action Handlers
@@ -918,7 +933,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
         }
       });
 
-      const secScore = secCorrect * 2.0 - secWrong * 0.5;
+      const secScore = secCorrect * markingScheme.positive - secWrong * markingScheme.negative;
 
       return {
         ...sec,
@@ -1652,7 +1667,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
     });
 
     const unattempted = questions.length - (correctCount + wrongCount);
-    const rawMarks = correctCount * 2.0 - wrongCount * 0.5;
+    const rawMarks = correctCount * markingScheme.positive - wrongCount * markingScheme.negative;
     const finalScore = Math.max(0, rawMarks);
     const accuracy = correctCount + wrongCount > 0 ? Math.round((correctCount / (correctCount + wrongCount)) * 100) : 0;
 
@@ -1668,10 +1683,10 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                 Exam Completed Successfully
               </div>
               <h1 className="text-xl sm:text-2xl font-black text-white">
-                {paper?.title || "SSC CGL 2025 Tier-I Shift Paper"}
+                {paper?.title || "SSC CGL Shift Paper"}
               </h1>
               <p className="text-xs text-slate-300 mt-1">
-                Official SSC Marking Scheme Applied (+2.00 Correct, -0.50 Incorrect)
+                Official SSC Marking Scheme Applied (+{markingScheme.positive.toFixed(2)} Correct, -{markingScheme.negative.toFixed(2)} Incorrect)
               </p>
             </div>
 
@@ -1679,7 +1694,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
               <span className="text-xs font-bold text-slate-300 uppercase">Your Total Score</span>
               <div className="text-4xl font-black text-amber-300 mt-1">
                 {finalScore.toFixed(2)}
-                <span className="text-sm font-semibold text-slate-400"> / 200</span>
+                <span className="text-sm font-semibold text-slate-400"> / {markingScheme.maxMarks}</span>
               </div>
               <span className="inline-block mt-1 text-[11px] font-bold text-emerald-300">
                 {accuracy}% Accuracy
@@ -1944,12 +1959,12 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                       <div className="flex items-center gap-2 flex-wrap">
                         {isAttempted && isCorrect && (
                           <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
-                            ✅ Attempted & Correct (+2.00)
+                            ✅ Attempted & Correct (+{markingScheme.positive.toFixed(2)})
                           </span>
                         )}
                         {isAttempted && !isCorrect && (
                           <span className="text-xs font-bold text-red-700 bg-red-50 border border-red-200 px-2.5 py-0.5 rounded-md">
-                            ❌ Attempted & Incorrect (-0.50)
+                            ❌ Attempted & Incorrect (-{markingScheme.negative.toFixed(2)})
                           </span>
                         )}
                         {!isAttempted && (
@@ -2038,12 +2053,12 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                     <div className="flex items-center gap-2 flex-wrap">
                       {userChoice && isCorrect && (
                         <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">
-                          ✅ Correct (+2.00)
+                          ✅ Correct (+{markingScheme.positive.toFixed(2)})
                         </span>
                       )}
                       {userChoice && !isCorrect && (
                         <span className="text-xs font-bold text-red-700 bg-red-50 px-2.5 py-1 rounded-md">
-                          ❌ Incorrect (-0.50)
+                          ❌ Incorrect (-{markingScheme.negative.toFixed(2)})
                         </span>
                       )}
                       {!userChoice && (
@@ -2781,7 +2796,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                 1. Marking Scheme:
               </p>
               <p>
-                Each correct answer awards <b>+2.00 marks</b>. For each wrong answer, <b>0.50 marks</b> will be deducted. Unattempted questions carry zero marks.
+                Each correct answer awards <b>+{markingScheme.positive.toFixed(2)} marks</b>. For each wrong answer, <b>{markingScheme.negative.toFixed(2)} marks</b> will be deducted. Unattempted questions carry zero marks.
               </p>
 
               <p className="font-bold text-slate-900 pt-1">

@@ -11,17 +11,29 @@ export default function ContactPage() {
   const [message, setMessage] = useState("");
   const [submitting, setSubmitting] = useState(false);
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setSubmitting(true);
-    setTimeout(() => {
-      toast.success("Thank you! Your message has been sent successfully. We will get back to you shortly.");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, subject, message }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error || "Failed to send message");
+      }
+      toast.success(data.message || "Thank you! Your message has been sent successfully.");
       setName("");
       setEmail("");
       setSubject("");
       setMessage("");
+    } catch (err: any) {
+      toast.error(err.message || "Something went wrong. Please reach out via email directly.");
+    } finally {
       setSubmitting(false);
-    }, 1000);
+    }
   }
 
   return (
@@ -70,11 +82,18 @@ export default function ContactPage() {
 
                 <div className="flex items-start gap-3">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600 font-bold">
-                    <Phone className="h-5 w-5" />
+                    <Send className="h-5 w-5" />
                   </div>
                   <div>
-                    <p className="text-xs font-bold text-gray-500 uppercase">Helpline</p>
-                    <p className="text-sm font-semibold text-gray-900">+91 98765 43210</p>
+                    <p className="text-xs font-bold text-gray-500 uppercase">Telegram Channel</p>
+                    <a
+                      href="https://t.me/ssczone"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-semibold text-blue-600 hover:underline"
+                    >
+                      @ssczone
+                    </a>
                   </div>
                 </div>
 

@@ -31,8 +31,8 @@ export interface SiteAdsConfig {
 }
 
 export const DEFAULT_ADS_CONFIG: SiteAdsConfig = {
-  enabledGlobally: true,
-  publisherId: "ca-pub-9876543210123456",
+  enabledGlobally: false,
+  publisherId: "",
   autoAdsEnabled: false,
   slots: {
     headerLeaderboard: {

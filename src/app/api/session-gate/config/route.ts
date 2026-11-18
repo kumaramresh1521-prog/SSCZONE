@@ -1,9 +1,12 @@
 import { NextResponse } from "next/server";
-import { getSessionGateConfig } from "@/lib/session-gate-store";
+import { getSessionGateConfigAsync, getSessionGateConfig } from "@/lib/session-gate-store";
+
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export async function GET(request: Request) {
   try {
-    const config = getSessionGateConfig();
+    const config = await getSessionGateConfigAsync();
 
     // Extract client IP address from standard headers
     const forwardedFor = request.headers.get("x-forwarded-for");
@@ -23,6 +26,8 @@ export async function GET(request: Request) {
       config,
       clientIp,
       serverTime: new Date().toISOString(),
+    }, {
+      headers: { "Cache-Control": "no-store, max-age=0" }
     });
   } catch (error: any) {
     return NextResponse.json({

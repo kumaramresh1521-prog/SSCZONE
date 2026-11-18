@@ -1,11 +1,20 @@
 import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
-import { getHomepageConfig, saveHomepageConfig, DEFAULT_HOMEPAGE_CONFIG } from "@/lib/homepage-store";
+import {
+  getHomepageConfigAsync,
+  saveHomepageConfigAsync,
+  DEFAULT_HOMEPAGE_CONFIG,
+} from "@/lib/homepage-store";
+
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export async function GET() {
   try {
-    const config = getHomepageConfig();
-    return NextResponse.json(config);
+    const config = await getHomepageConfigAsync();
+    return NextResponse.json(config, {
+      headers: { "Cache-Control": "no-store, max-age=0" },
+    });
   } catch (err: any) {
     console.error("Error reading homepage config:", err);
     return NextResponse.json(DEFAULT_HOMEPAGE_CONFIG);
@@ -15,13 +24,11 @@ export async function GET() {
 export async function POST(request: Request) {
   try {
     const payload = await request.json();
-    const updated = saveHomepageConfig(payload);
+    const updated = await saveHomepageConfigAsync(payload);
 
     try {
       revalidatePath("/");
-    } catch (e) {
-      // Revalidation in dev or static context
-    }
+    } catch {}
 
     return NextResponse.json({ success: true, config: updated });
   } catch (err: any) {

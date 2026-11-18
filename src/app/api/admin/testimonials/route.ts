@@ -1,18 +1,21 @@
 import { NextRequest, NextResponse } from "next/server";
 import {
-  getAllTestimonials,
-  upsertTestimonial,
-  deleteTestimonial,
-  saveAllTestimonials,
+  getAllTestimonialsAsync,
+  upsertTestimonialAsync,
+  deleteTestimonialAsync,
+  saveAllTestimonialsAsync,
   TopperTestimonial,
 } from "@/lib/testimonials-store";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export async function GET() {
   try {
-    const testimonials = getAllTestimonials();
-    return NextResponse.json({ success: true, testimonials });
+    const testimonials = await getAllTestimonialsAsync();
+    return NextResponse.json({ success: true, testimonials }, {
+      headers: { "Cache-Control": "no-store, max-age=0" }
+    });
   } catch (err: any) {
     return NextResponse.json(
       { success: false, error: err.message || "Failed to load testimonials" },
@@ -27,7 +30,7 @@ export async function POST(req: NextRequest) {
 
     // If an array is provided, batch update entire list (e.g. for reordering)
     if (Array.isArray(body)) {
-      const saved = saveAllTestimonials(body as TopperTestimonial[]);
+      const saved = await saveAllTestimonialsAsync(body as TopperTestimonial[]);
       return NextResponse.json({
         success: true,
         message: "Testimonials list reordered and saved successfully",
@@ -42,12 +45,13 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const saved = upsertTestimonial(body);
+    const saved = await upsertTestimonialAsync(body);
+    const all = await getAllTestimonialsAsync();
     return NextResponse.json({
       success: true,
       message: "Topper testimonial saved & synced to Supabase! 🌟",
       testimonial: saved,
-      testimonials: getAllTestimonials(),
+      testimonials: all,
     });
   } catch (err: any) {
     return NextResponse.json(
@@ -69,7 +73,7 @@ export async function DELETE(req: NextRequest) {
       );
     }
 
-    const success = deleteTestimonial(id);
+    const success = await deleteTestimonialAsync(id);
     if (!success) {
       return NextResponse.json(
         { success: false, error: "Testimonial not found" },
@@ -77,10 +81,11 @@ export async function DELETE(req: NextRequest) {
       );
     }
 
+    const all = await getAllTestimonialsAsync();
     return NextResponse.json({
       success: true,
       message: "Testimonial deleted successfully",
-      testimonials: getAllTestimonials(),
+      testimonials: all,
     });
   } catch (err: any) {
     return NextResponse.json(

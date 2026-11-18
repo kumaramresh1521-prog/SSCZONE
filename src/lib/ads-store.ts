@@ -1,20 +1,20 @@
 import fs from "fs";
 import path from "path";
 import { SiteAdsConfig, DEFAULT_ADS_CONFIG } from "./ads-types";
-import { supabase } from "./supabase";
+import {
+  getSiteSettingAsync,
+  saveSiteSettingAsync,
+  getSiteSettingCached,
+  primeSiteSettingCache,
+} from "./site-settings";
 
 export * from "./ads-types";
 
 const DATA_DIR = path.join(process.cwd(), "src", "data");
 const ADS_FILE = path.join(DATA_DIR, "ads-config.json");
+const SETTING_KEY = "ads_config";
 
-function ensureDirectoryExists() {
-  if (!fs.existsSync(DATA_DIR)) {
-    fs.mkdirSync(DATA_DIR, { recursive: true });
-  }
-}
-
-export function getAdsConfig(): SiteAdsConfig {
+function getLocalFileFallback(): SiteAdsConfig {
   try {
     if (fs.existsSync(ADS_FILE)) {
       const raw = fs.readFileSync(ADS_FILE, "utf8");
@@ -29,9 +29,54 @@ export function getAdsConfig(): SiteAdsConfig {
       };
     }
   } catch (err) {
-    console.error("Error reading ads-config.json:", err);
+    console.error("Error reading local ads-config.json:", err);
   }
   return DEFAULT_ADS_CONFIG;
+}
+
+export function getAdsConfig(): SiteAdsConfig {
+  const cached = getSiteSettingCached<SiteAdsConfig | null>(SETTING_KEY, null);
+  if (cached) return cached;
+  const fallback = getLocalFileFallback();
+  primeSiteSettingCache(SETTING_KEY, fallback);
+  return fallback;
+}
+
+export async function getAdsConfigAsync(): Promise<SiteAdsConfig> {
+  const fallback = getLocalFileFallback();
+  const dbData = await getSiteSettingAsync<SiteAdsConfig>(SETTING_KEY, fallback);
+  return {
+    ...DEFAULT_ADS_CONFIG,
+    ...dbData,
+    slots: {
+      ...DEFAULT_ADS_CONFIG.slots,
+      ...(dbData.slots || {}),
+    },
+  };
+}
+
+export async function saveAdsConfigAsync(config: Partial<SiteAdsConfig>): Promise<SiteAdsConfig> {
+  const current = await getAdsConfigAsync();
+  const merged: SiteAdsConfig = {
+    ...current,
+    ...config,
+    slots: {
+      ...current.slots,
+      ...(config.slots || {}),
+    },
+    updatedAt: new Date().toISOString(),
+  };
+
+  // 1. Persistent DB Save
+  await saveSiteSettingAsync(SETTING_KEY, merged);
+
+  // 2. Local file backup (non-fatal)
+  try {
+    if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
+    fs.writeFileSync(ADS_FILE, JSON.stringify(merged, null, 2), "utf8");
+  } catch {}
+
+  return merged;
 }
 
 export function saveAdsConfig(config: Partial<SiteAdsConfig>): SiteAdsConfig {
@@ -46,47 +91,12 @@ export function saveAdsConfig(config: Partial<SiteAdsConfig>): SiteAdsConfig {
     updatedAt: new Date().toISOString(),
   };
 
-  try {
-    ensureDirectoryExists();
-    fs.writeFileSync(ADS_FILE, JSON.stringify(merged, null, 2), "utf8");
-  } catch (err) {
-    console.error("Failed to write ads-config.json:", err);
-  }
+  void saveSiteSettingAsync(SETTING_KEY, merged);
 
-  // Background sync to Supabase
-  syncAdsToSupabase(merged).catch((e) =>
-    console.warn("Background Supabase ads sync:", e?.message)
-  );
+  try {
+    if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
+    fs.writeFileSync(ADS_FILE, JSON.stringify(merged, null, 2), "utf8");
+  } catch {}
 
   return merged;
-}
-
-export async function syncAdsToSupabase(config: SiteAdsConfig) {
-  try {
-    const slug = "site-ads-config";
-    const payload = {
-      title: "SSCZone Ad Placements & Affiliate Engine Config",
-      slug,
-      excerpt: `Global Ads: ${config.enabledGlobally ? "ENABLED" : "DISABLED"} | Slots: ${Object.keys(config.slots).length}`,
-      content: JSON.stringify(config),
-      category: "Ad Config",
-      keywords: ["ads", "adsense", "affiliate", "monetization"],
-      is_published: true,
-      updated_at: new Date().toISOString(),
-    };
-
-    const { data: existing } = await supabase
-      .from("blogs")
-      .select("id")
-      .eq("slug", slug)
-      .maybeSingle();
-
-    if (existing?.id) {
-      await supabase.from("blogs").update(payload).eq("id", existing.id);
-    } else {
-      await supabase.from("blogs").insert([payload]);
-    }
-  } catch (err) {
-    console.warn("syncAdsToSupabase skipped/error:", err);
-  }
 }

@@ -1,18 +1,23 @@
 import fs from "fs";
 import path from "path";
 import { ChapterNote, SubjectMeta, ALL_SUBJECTS } from "./chapter-notes-types";
+import {
+  getSiteSettingAsync,
+  saveSiteSettingAsync,
+  getSiteSettingCached,
+  primeSiteSettingCache,
+} from "./site-settings";
 
 export type { ChapterNote, SubjectMeta };
 export { ALL_SUBJECTS };
 
 const DATA_DIR = path.join(process.cwd(), "src", "data");
 const FILE_PATH = path.join(DATA_DIR, "chapter_notes.json");
+const SETTING_KEY = "chapter_notes";
 
-// Default initial seed data for Chapter Notes & Educational Blog (Clean slate - no sample data)
-const SEED_NOTES: ChapterNote[] = [];
-
-// Helper to safely write notes to JSON file
+// Helper to safely write notes to JSON file and Supabase site_settings
 function writeNotesFile(notes: ChapterNote[]) {
+  void saveSiteSettingAsync(SETTING_KEY, notes);
   try {
     if (!fs.existsSync(DATA_DIR)) {
       fs.mkdirSync(DATA_DIR, { recursive: true });
@@ -33,17 +38,22 @@ export function getChapterNotes(options?: {
 }): ChapterNote[] {
   let list: ChapterNote[] = [];
 
-  try {
-    if (fs.existsSync(FILE_PATH)) {
-      const raw = fs.readFileSync(FILE_PATH, "utf8");
-      list = JSON.parse(raw);
-    } else {
+  const cached = getSiteSettingCached<ChapterNote[] | null>(SETTING_KEY, null);
+  if (cached && Array.isArray(cached) && cached.length > 0) {
+    list = [...cached];
+  } else {
+    try {
+      if (fs.existsSync(FILE_PATH)) {
+        const raw = fs.readFileSync(FILE_PATH, "utf8");
+        list = JSON.parse(raw);
+        primeSiteSettingCache(SETTING_KEY, list);
+      } else {
+        list = [];
+      }
+    } catch (err) {
+      console.error("Error reading chapter notes file:", err);
       list = [];
-      writeNotesFile(list);
     }
-  } catch (err) {
-    console.error("Error reading chapter notes file:", err);
-    list = [];
   }
 
   // Filter active status

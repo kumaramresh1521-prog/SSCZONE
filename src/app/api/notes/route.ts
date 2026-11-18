@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getSubjectNotes } from "@/lib/subject-notes-store";
+import { getSubjectNotesAsync } from "@/lib/subject-notes-store";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export async function GET(req: NextRequest) {
   try {
@@ -10,7 +11,7 @@ export async function GET(req: NextRequest) {
     const subjectParam = searchParams.get("subject")?.toLowerCase() || "";
     const query = searchParams.get("q")?.toLowerCase() || "";
 
-    let notes = getSubjectNotes(true);
+    let notes = await getSubjectNotesAsync(true);
 
     if (examParam && examParam !== "all") {
       notes = notes.filter((n) => n.exam.toLowerCase() === examParam || n.exam === "all");
@@ -30,7 +31,9 @@ export async function GET(req: NextRequest) {
       );
     }
 
-    return NextResponse.json({ success: true, notes });
+    return NextResponse.json({ success: true, notes }, {
+      headers: { "Cache-Control": "no-store, max-age=0" }
+    });
   } catch (err: any) {
     return NextResponse.json({ error: err.message || "Failed to load notes" }, { status: 500 });
   }

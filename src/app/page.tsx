@@ -22,7 +22,7 @@ import {
 import type { Metadata } from "next";
 import { createClient } from "@/lib/supabase-server";
 import { buildPageMetadata } from "@/lib/seo-store";
-import { getHomepageConfig } from "@/lib/homepage-store";
+import { getHomepageConfigAsync } from "@/lib/homepage-store";
 import { DEFAULT_BLOGS } from "@/lib/blog-data";
 import PreparationRoadmapSection from "@/components/PreparationRoadmapSection";
 
@@ -110,7 +110,7 @@ const FALLBACK_EXAMS: ExamItem[] = [
 ];
 
 export default async function Home() {
-  const homeConfig = getHomepageConfig();
+  const homeConfig = await getHomepageConfigAsync();
   let allExams: ExamItem[] = FALLBACK_EXAMS;
 
   let homeBlogs: any[] = [];

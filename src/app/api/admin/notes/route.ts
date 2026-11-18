@@ -1,10 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { requireAdmin } from "@/lib/api-auth";
 import {
-  getSubjectNotes,
-  saveSubjectNote,
-  deleteSubjectNote,
-  toggleSubjectNoteActive,
+  getSubjectNotesAsync,
+  saveSubjectNoteAsync,
+  deleteSubjectNoteAsync,
+  toggleSubjectNoteActiveAsync,
 } from "@/lib/subject-notes-store";
 
 export const dynamic = "force-dynamic";
@@ -15,8 +15,10 @@ export async function GET(req: NextRequest) {
   if (denied) return denied;
 
   try {
-    const notes = getSubjectNotes(false);
-    return NextResponse.json({ success: true, notes });
+    const notes = await getSubjectNotesAsync(false);
+    return NextResponse.json({ success: true, notes }, {
+      headers: { "Cache-Control": "no-store, max-age=0" }
+    });
   } catch (err: any) {
     return NextResponse.json({ error: err.message || "Failed to load notes" }, { status: 500 });
   }
@@ -39,7 +41,7 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ error: "PDF URL or file link is required" }, { status: 400 });
       }
 
-      const saved = saveSubjectNote(note);
+      const saved = await saveSubjectNoteAsync(note);
       return NextResponse.json({
         success: true,
         note: saved,
@@ -51,7 +53,7 @@ export async function POST(req: NextRequest) {
       const { id } = body;
       if (!id) return NextResponse.json({ error: "Missing note ID" }, { status: 400 });
 
-      const deleted = deleteSubjectNote(id);
+      const deleted = await deleteSubjectNoteAsync(id);
       if (deleted) {
         return NextResponse.json({ success: true, message: "Note deleted successfully!" });
       }
@@ -62,7 +64,7 @@ export async function POST(req: NextRequest) {
       const { id, isActive } = body;
       if (!id) return NextResponse.json({ error: "Missing note ID" }, { status: 400 });
 
-      const updated = toggleSubjectNoteActive(id, Boolean(isActive));
+      const updated = await toggleSubjectNoteActiveAsync(id, Boolean(isActive));
       if (updated) {
         return NextResponse.json({
           success: true,
@@ -75,6 +77,6 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ error: "Invalid action" }, { status: 400 });
   } catch (err: any) {
-    return NextResponse.json({ error: err.message || "Operation failed" }, { status: 500 });
+    return NextResponse.json({ error: err.message || "Failed to process request" }, { status: 500 });
   }
 }

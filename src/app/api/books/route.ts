@@ -1,7 +1,8 @@
 import { NextResponse } from "next/server";
-import { getBooks } from "@/lib/books-store";
+import { getBooksAsync } from "@/lib/books-store";
 
-export const revalidate = 60; // 1-minute ISR
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export async function GET(request: Request) {
   try {
@@ -10,13 +11,15 @@ export async function GET(request: Request) {
     const search = searchParams.get("search") || undefined;
     const all = searchParams.get("all") === "true";
 
-    const books = getBooks({
+    const books = await getBooksAsync({
       active_only: !all,
       subject,
       search,
     });
 
-    return NextResponse.json({ success: true, books });
+    return NextResponse.json({ success: true, books }, {
+      headers: { "Cache-Control": "no-store, max-age=0" }
+    });
   } catch (err: any) {
     console.error("GET /api/books error:", err);
     return NextResponse.json(

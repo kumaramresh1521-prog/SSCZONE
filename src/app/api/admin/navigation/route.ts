@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { 
-  getNavigationConfig, 
-  saveNavigationConfig 
+  getNavigationConfigAsync, 
+  saveNavigationConfigAsync 
 } from "@/lib/navigation-server";
 import {
   DEFAULT_NAVIGATION_CONFIG,
@@ -18,7 +18,7 @@ export async function GET(req: NextRequest) {
   const denied = await requireAdmin(req);
   if (denied) return denied;
 
-  const config = getNavigationConfig();
+  const config = await getNavigationConfigAsync();
   return NextResponse.json(config, {
     headers: {
       "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0",
@@ -34,11 +34,11 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const { action, config, items, item, parentId, itemId, subItemId, isActive } = body;
 
-    const currentConfig = getNavigationConfig();
+    const currentConfig = await getNavigationConfigAsync();
 
     // 1. Reset to Official Defaults
     if (action === "reset") {
-      saveNavigationConfig(DEFAULT_NAVIGATION_CONFIG);
+      await saveNavigationConfigAsync(DEFAULT_NAVIGATION_CONFIG);
       return NextResponse.json({ success: true, config: DEFAULT_NAVIGATION_CONFIG });
     }
 
@@ -62,7 +62,7 @@ export async function POST(req: NextRequest) {
       });
 
       const newConfig: NavigationConfig = { ...currentConfig, items: updatedItems };
-      saveNavigationConfig(newConfig);
+      await saveNavigationConfigAsync(newConfig);
       return NextResponse.json({ success: true, config: newConfig });
     }
 
@@ -100,7 +100,7 @@ export async function POST(req: NextRequest) {
         });
 
         const newConfig = { ...currentConfig, items: updatedItems };
-        saveNavigationConfig(newConfig);
+        await saveNavigationConfigAsync(newConfig);
         return NextResponse.json({ success: true, config: newConfig });
       } else {
         // Adding as Top-Level Menu item
@@ -119,7 +119,7 @@ export async function POST(req: NextRequest) {
         };
 
         const newConfig = { ...currentConfig, items: [...currentConfig.items, newMenu] };
-        saveNavigationConfig(newConfig);
+        await saveNavigationConfigAsync(newConfig);
         return NextResponse.json({ success: true, config: newConfig });
       }
     }
@@ -139,7 +139,7 @@ export async function POST(req: NextRequest) {
         });
 
       const newConfig = { ...currentConfig, items: updatedItems };
-      saveNavigationConfig(newConfig);
+      await saveNavigationConfigAsync(newConfig);
       return NextResponse.json({ success: true, config: newConfig });
     }
 
@@ -149,7 +149,7 @@ export async function POST(req: NextRequest) {
       const newConfig: NavigationConfig = {
         items: incomingItems,
       };
-      saveNavigationConfig(newConfig);
+      await saveNavigationConfigAsync(newConfig);
       return NextResponse.json({ success: true, config: newConfig });
     }
 

@@ -1,10 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getQuestionFingerprint } from "@/lib/question-dedup";
 import {
-  getDailyQuizzes,
-  getDailyQuizById,
-  upsertDailyQuiz,
-  deleteDailyQuiz,
+  getDailyQuizzesAsync,
+  getDailyQuizByIdAsync,
+  upsertDailyQuizAsync,
+  deleteDailyQuizAsync,
   DailyQuiz,
   DailyQuizQuestion,
 } from "@/lib/daily-quiz-store";
@@ -119,10 +119,12 @@ function parseSmartText(text: string): DailyQuizQuestion[] {
 // GET: All quizzes for admin
 export async function GET() {
   try {
-    const quizzes = getDailyQuizzes();
+    const quizzes = await getDailyQuizzesAsync();
     // Sort descending by date
     quizzes.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-    return NextResponse.json({ success: true, quizzes });
+    return NextResponse.json({ success: true, quizzes }, {
+      headers: { "Cache-Control": "no-store, max-age=0" }
+    });
   } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
@@ -243,7 +245,7 @@ export async function POST(req: NextRequest) {
       questions: finalQuestions,
     };
 
-    upsertDailyQuiz(newQuiz);
+    await upsertDailyQuizAsync(newQuiz);
 
     return NextResponse.json({
       success: true,
@@ -267,7 +269,7 @@ export async function DELETE(req: NextRequest) {
     if (!id) {
       return NextResponse.json({ error: "Quiz ID is required" }, { status: 400 });
     }
-    deleteDailyQuiz(id);
+    await deleteDailyQuizAsync(id);
     return NextResponse.json({ success: true, message: "Daily Quiz deleted successfully" });
   } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 500 });
@@ -284,7 +286,7 @@ export async function PATCH(req: NextRequest) {
     if (!id) {
       return NextResponse.json({ error: "Quiz ID is required" }, { status: 400 });
     }
-    const quiz = getDailyQuizById(id);
+    const quiz = await getDailyQuizByIdAsync(id);
     if (!quiz) {
       return NextResponse.json({ error: "Quiz not found" }, { status: 404 });
     }
@@ -293,7 +295,7 @@ export async function PATCH(req: NextRequest) {
       quiz.status = "approved";
       quiz.is_active = true;
       quiz.approved_at = new Date().toISOString();
-      upsertDailyQuiz(quiz);
+      await upsertDailyQuizAsync(quiz);
       return NextResponse.json({
         success: true,
         status: "approved",
@@ -303,7 +305,7 @@ export async function PATCH(req: NextRequest) {
     } else if (action === "draft" || action === "unpublish") {
       quiz.status = "draft";
       quiz.is_active = false;
-      upsertDailyQuiz(quiz);
+      await upsertDailyQuizAsync(quiz);
       return NextResponse.json({
         success: true,
         status: "draft",
@@ -319,7 +321,7 @@ export async function PATCH(req: NextRequest) {
       quiz.status = "approved";
       quiz.approved_at = new Date().toISOString();
     }
-    upsertDailyQuiz(quiz);
+    await upsertDailyQuizAsync(quiz);
     return NextResponse.json({
       success: true,
       is_active: quiz.is_active,

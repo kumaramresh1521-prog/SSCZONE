@@ -1,11 +1,21 @@
 import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
-import { getBooks, getBookById, saveBook, deleteBook, BookItem } from "@/lib/books-store";
+import {
+  getBooksAsync,
+  saveBookAsync,
+  deleteBookAsync,
+  BookItem,
+} from "@/lib/books-store";
+
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export async function GET() {
   try {
-    const books = getBooks({ active_only: false });
-    return NextResponse.json({ success: true, books });
+    const books = await getBooksAsync({ active_only: false });
+    return NextResponse.json({ success: true, books }, {
+      headers: { "Cache-Control": "no-store, max-age=0" }
+    });
   } catch (err: any) {
     console.error("GET /api/admin/books error:", err);
     return NextResponse.json(
@@ -25,7 +35,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const saved = saveBook(body);
+    const saved = await saveBookAsync(body);
 
     try {
       revalidatePath("/books");
@@ -54,7 +64,7 @@ export async function DELETE(request: Request) {
       );
     }
 
-    const ok = deleteBook(id);
+    const ok = await deleteBookAsync(id);
     if (!ok) {
       return NextResponse.json(
         { success: false, error: "Book not found" },

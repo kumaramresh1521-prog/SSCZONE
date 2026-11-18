@@ -1,12 +1,15 @@
 import { NextResponse } from "next/server";
-import { getFooterConfig } from "@/lib/footer-store";
+import { getFooterConfigAsync } from "@/lib/footer-store";
 
-export const revalidate = 60; // 1-minute ISR
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export async function GET() {
   try {
-    const config = getFooterConfig();
-    return NextResponse.json({ success: true, config });
+    const config = await getFooterConfigAsync();
+    return NextResponse.json({ success: true, config }, {
+      headers: { "Cache-Control": "no-store, max-age=0" }
+    });
   } catch (err: any) {
     console.error("GET /api/footer error:", err);
     return NextResponse.json(

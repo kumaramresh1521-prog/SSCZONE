@@ -1,20 +1,20 @@
 import fs from "fs";
 import path from "path";
 import { TopperTestimonial, DEFAULT_TESTIMONIALS } from "./testimonials-types";
-import { supabase } from "./supabase";
+import {
+  getSiteSettingAsync,
+  saveSiteSettingAsync,
+  getSiteSettingCached,
+  primeSiteSettingCache,
+} from "./site-settings";
 
 export * from "./testimonials-types";
 
 const DATA_DIR = path.join(process.cwd(), "src", "data");
 const TESTIMONIALS_FILE = path.join(DATA_DIR, "testimonials.json");
+const SETTING_KEY = "testimonials_config";
 
-function ensureDirectoryExists() {
-  if (!fs.existsSync(DATA_DIR)) {
-    fs.mkdirSync(DATA_DIR, { recursive: true });
-  }
-}
-
-export function getAllTestimonials(): TopperTestimonial[] {
+function getLocalFileFallback(): TopperTestimonial[] {
   try {
     if (fs.existsSync(TESTIMONIALS_FILE)) {
       const raw = fs.readFileSync(TESTIMONIALS_FILE, "utf8");
@@ -24,29 +24,117 @@ export function getAllTestimonials(): TopperTestimonial[] {
       }
     }
   } catch (err) {
-    console.error("Error reading testimonials.json:", err);
+    console.error("Error reading local testimonials.json:", err);
   }
   return DEFAULT_TESTIMONIALS;
+}
+
+export function getAllTestimonials(): TopperTestimonial[] {
+  const cached = getSiteSettingCached<TopperTestimonial[] | null>(SETTING_KEY, null);
+  if (cached && Array.isArray(cached) && cached.length > 0) {
+    return cached.sort((a, b) => (a.sortOrder || 99) - (b.sortOrder || 99));
+  }
+  const fallback = getLocalFileFallback();
+  primeSiteSettingCache(SETTING_KEY, fallback);
+  return fallback;
+}
+
+export async function getAllTestimonialsAsync(): Promise<TopperTestimonial[]> {
+  const fallback = getLocalFileFallback();
+  const dbData = await getSiteSettingAsync<TopperTestimonial[]>(SETTING_KEY, fallback);
+  if (Array.isArray(dbData) && dbData.length > 0) {
+    return dbData.sort((a, b) => (a.sortOrder || 99) - (b.sortOrder || 99));
+  }
+  return fallback;
 }
 
 export function getActiveTestimonials(): TopperTestimonial[] {
   return getAllTestimonials().filter((t) => t.isActive);
 }
 
-export function saveAllTestimonials(items: TopperTestimonial[]): TopperTestimonial[] {
-  try {
-    ensureDirectoryExists();
-    fs.writeFileSync(TESTIMONIALS_FILE, JSON.stringify(items, null, 2), "utf8");
-  } catch (err) {
-    console.error("Failed to write testimonials.json:", err);
-  }
+export async function getActiveTestimonialsAsync(): Promise<TopperTestimonial[]> {
+  const list = await getAllTestimonialsAsync();
+  return list.filter((t) => t.isActive);
+}
 
-  // Background sync to Supabase
-  syncTestimonialsToSupabase(items).catch((e) =>
-    console.warn("Background Supabase testimonials sync:", e?.message)
-  );
+export async function saveAllTestimonialsAsync(items: TopperTestimonial[]): Promise<TopperTestimonial[]> {
+  // 1. Persistent DB Save
+  await saveSiteSettingAsync(SETTING_KEY, items);
+
+  // 2. Local file backup (non-fatal)
+  try {
+    if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
+    fs.writeFileSync(TESTIMONIALS_FILE, JSON.stringify(items, null, 2), "utf8");
+  } catch {}
 
   return items;
+}
+
+export function saveAllTestimonials(items: TopperTestimonial[]): TopperTestimonial[] {
+  void saveSiteSettingAsync(SETTING_KEY, items);
+
+  try {
+    if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
+    fs.writeFileSync(TESTIMONIALS_FILE, JSON.stringify(items, null, 2), "utf8");
+  } catch {}
+
+  return items;
+}
+
+export async function upsertTestimonialAsync(testimonial: Partial<TopperTestimonial>): Promise<TopperTestimonial> {
+  const current = await getAllTestimonialsAsync();
+  let updated: TopperTestimonial;
+
+  if (testimonial.id) {
+    const idx = current.findIndex((t) => t.id === testimonial.id);
+    if (idx >= 0) {
+      updated = {
+        ...current[idx],
+        ...testimonial,
+        updatedAt: new Date().toISOString(),
+      };
+      current[idx] = updated;
+    } else {
+      updated = {
+        id: testimonial.id,
+        name: testimonial.name || "Aspirant",
+        exam: testimonial.exam || "SSC CGL",
+        rank: testimonial.rank || "AIR Ranker",
+        score: testimonial.score || "",
+        photoUrl: testimonial.photoUrl || "",
+        state: testimonial.state || "",
+        badge: testimonial.badge || "Verified Topper",
+        quote: testimonial.quote || "",
+        rating: testimonial.rating || 5,
+        isActive: testimonial.isActive !== false,
+        sortOrder: testimonial.sortOrder || current.length + 1,
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
+      };
+      current.push(updated);
+    }
+  } else {
+    updated = {
+      id: `top_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,
+      name: testimonial.name || "Aspirant",
+      exam: testimonial.exam || "SSC CGL",
+      rank: testimonial.rank || "AIR Ranker",
+      score: testimonial.score || "",
+      photoUrl: testimonial.photoUrl || "",
+      state: testimonial.state || "",
+      badge: testimonial.badge || "Verified Topper",
+      quote: testimonial.quote || "",
+      rating: testimonial.rating || 5,
+      isActive: testimonial.isActive !== false,
+      sortOrder: testimonial.sortOrder || current.length + 1,
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+    };
+    current.push(updated);
+  }
+
+  await saveAllTestimonialsAsync(current);
+  return updated;
 }
 
 export function upsertTestimonial(testimonial: Partial<TopperTestimonial>): TopperTestimonial {
@@ -105,6 +193,16 @@ export function upsertTestimonial(testimonial: Partial<TopperTestimonial>): Topp
   return updated;
 }
 
+export async function deleteTestimonialAsync(id: string): Promise<boolean> {
+  const current = await getAllTestimonialsAsync();
+  const filtered = current.filter((t) => t.id !== id);
+  if (filtered.length !== current.length) {
+    await saveAllTestimonialsAsync(filtered);
+    return true;
+  }
+  return false;
+}
+
 export function deleteTestimonial(id: string): boolean {
   const current = getAllTestimonials();
   const filtered = current.filter((t) => t.id !== id);
@@ -113,34 +211,4 @@ export function deleteTestimonial(id: string): boolean {
     return true;
   }
   return false;
-}
-
-export async function syncTestimonialsToSupabase(testimonials: TopperTestimonial[]) {
-  try {
-    const slug = "site-topper-testimonials";
-    const payload = {
-      title: "SSCZone Verified Topper Testimonials & Reviews",
-      slug,
-      excerpt: `${testimonials.length} Topper Reviews (${testimonials.filter((t) => t.isActive).length} active)`,
-      content: JSON.stringify(testimonials),
-      category: "Topper Testimonial",
-      keywords: ["testimonials", "toppers", "reviews", "air-rankers", "success-stories"],
-      is_published: true,
-      updated_at: new Date().toISOString(),
-    };
-
-    const { data: existing } = await supabase
-      .from("blogs")
-      .select("id")
-      .eq("slug", slug)
-      .maybeSingle();
-
-    if (existing?.id) {
-      await supabase.from("blogs").update(payload).eq("id", existing.id);
-    } else {
-      await supabase.from("blogs").insert([payload]);
-    }
-  } catch (err) {
-    console.warn("syncTestimonialsToSupabase skipped/error:", err);
-  }
 }

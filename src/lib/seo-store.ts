@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import type { Metadata } from "next";
+import { getSiteSettingCached, primeSiteSettingCache } from "./site-settings";
 
 export interface SeoConfigData {
   siteTitle: string;
@@ -114,11 +115,14 @@ const SEO_FILE_PATH = path.join(process.cwd(), "src", "data", "seo-config.json")
  * Synchronous reader for Server Components and SSR metadata generation
  */
 export function getPublishedSeoConfig(): SeoConfigData {
+  const cached = getSiteSettingCached<SeoConfigData | null>("seo_config", null);
+  if (cached) return cached;
+
   try {
     if (fs.existsSync(SEO_FILE_PATH)) {
       const content = fs.readFileSync(SEO_FILE_PATH, "utf8");
       const parsed = JSON.parse(content);
-      return {
+      const merged = {
         ...DEFAULT_SEO_CONFIG,
         ...parsed,
         openGraph: { ...DEFAULT_SEO_CONFIG.openGraph, ...(parsed.openGraph || {}) },
@@ -127,6 +131,8 @@ export function getPublishedSeoConfig(): SeoConfigData {
         verification: { ...DEFAULT_SEO_CONFIG.verification, ...(parsed.verification || {}) },
         pageOverrides: { ...DEFAULT_SEO_CONFIG.pageOverrides, ...(parsed.pageOverrides || {}) },
       };
+      primeSiteSettingCache("seo_config", merged);
+      return merged;
     }
   } catch (err) {
     console.error("Error reading SEO config file:", err);

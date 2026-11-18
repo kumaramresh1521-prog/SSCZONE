@@ -1,11 +1,16 @@
 import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
-import { getFooterConfig, saveFooterConfig } from "@/lib/footer-store";
+import { getFooterConfigAsync, saveFooterConfigAsync } from "@/lib/footer-store";
+
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export async function GET() {
   try {
-    const config = getFooterConfig();
-    return NextResponse.json({ success: true, config });
+    const config = await getFooterConfigAsync();
+    return NextResponse.json({ success: true, config }, {
+      headers: { "Cache-Control": "no-store, max-age=0" }
+    });
   } catch (err: any) {
     console.error("GET /api/admin/footer error:", err);
     return NextResponse.json(
@@ -18,7 +23,7 @@ export async function GET() {
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const updated = saveFooterConfig(body);
+    const updated = await saveFooterConfigAsync(body);
 
     try {
       revalidatePath("/", "layout");

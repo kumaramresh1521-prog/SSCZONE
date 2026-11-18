@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getDailyQuizzes } from "@/lib/daily-quiz-store";
+import { getDailyQuizzesAsync } from "@/lib/daily-quiz-store";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export async function GET(req: NextRequest) {
   try {
@@ -11,7 +12,8 @@ export async function GET(req: NextRequest) {
     const includeQuestions = searchParams.get("includeQuestions") === "true";
 
     // Only show quizzes that are active AND have been approved by Admin (drafts remain hidden)
-    let quizzes = getDailyQuizzes().filter((q) => q.is_active && q.status !== "draft");
+    const all = await getDailyQuizzesAsync();
+    let quizzes = all.filter((q) => q.is_active && q.status !== "draft");
 
     if (dateParam) {
       quizzes = quizzes.filter((q) => q.date === dateParam);
@@ -38,13 +40,13 @@ export async function GET(req: NextRequest) {
       success: true,
       count: sanitized.length,
       quizzes: sanitized,
+    }, {
+      headers: { "Cache-Control": "no-store, max-age=0" }
     });
-  } catch (error: any) {
-    console.error("Daily quiz list error:", error);
-    return NextResponse.json({
-      success: true,
-      count: 0,
-      quizzes: [],
-    });
+  } catch (err: any) {
+    return NextResponse.json(
+      { success: false, error: err.message || "Failed to load daily quizzes" },
+      { status: 500 }
+    );
   }
 }

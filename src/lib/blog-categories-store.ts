@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { supabaseAdmin } from "@/lib/supabase-admin";
+import { getSiteSettingAsync, saveSiteSettingAsync } from "./site-settings";
 
 export interface BlogCategory {
   id: string;
@@ -12,6 +13,7 @@ export interface BlogCategory {
 
 const CATEGORIES_FILE = path.join(process.cwd(), "src", "data", "blog_categories.json");
 const SYSTEM_SLUG = "sys-blog-categories";
+const SETTING_KEY = "blog_categories";
 
 // Read from local JSON cache
 export function getLocalCategories(): BlogCategory[] {
@@ -41,7 +43,14 @@ export function writeLocalCategories(list: BlogCategory[]) {
 // Fetch categories from Supabase (with local cache fallback)
 export async function getBlogCategoriesAsync(): Promise<BlogCategory[]> {
   try {
-    // 1. Try fetching system config record from Supabase 'blogs' table
+    // 1. Try fetching from site_settings first (primary persistent source)
+    const dbSettings = await getSiteSettingAsync<BlogCategory[] | null>(SETTING_KEY, null);
+    if (dbSettings && Array.isArray(dbSettings) && dbSettings.length > 0) {
+      writeLocalCategories(dbSettings);
+      return dbSettings;
+    }
+
+    // 2. Legacy fallback: sys-blog-categories in blogs table
     const { data, error } = await supabaseAdmin
       .from("blogs")
       .select("content, updated_at")
@@ -53,6 +62,7 @@ export async function getBlogCategoriesAsync(): Promise<BlogCategory[]> {
         const parsed = JSON.parse(data.content);
         if (Array.isArray(parsed)) {
           writeLocalCategories(parsed);
+          void saveSiteSettingAsync(SETTING_KEY, parsed);
           return parsed;
         }
       } catch {}
@@ -70,6 +80,10 @@ export async function saveBlogCategoriesAsync(list: BlogCategory[]): Promise<boo
   // Always update local cache first
   writeLocalCategories(list);
 
+  // 1. Save to site_settings (Primary persistent source of truth)
+  await saveSiteSettingAsync(SETTING_KEY, list);
+
+  // 2. Also keep legacy sys-blog-categories record updated
   try {
     const payload = {
       slug: SYSTEM_SLUG,
@@ -81,7 +95,6 @@ export async function saveBlogCategoriesAsync(list: BlogCategory[]): Promise<boo
       updated_at: new Date().toISOString(),
     };
 
-    // Check if record exists
     const { data: existing } = await supabaseAdmin
       .from("blogs")
       .select("id")
@@ -89,16 +102,9 @@ export async function saveBlogCategoriesAsync(list: BlogCategory[]): Promise<boo
       .maybeSingle();
 
     if (existing?.id) {
-      const { error } = await supabaseAdmin
-        .from("blogs")
-        .update(payload)
-        .eq("id", existing.id);
-      if (error) console.error("Error updating blog categories in Supabase:", error);
+      await supabaseAdmin.from("blogs").update(payload).eq("id", existing.id);
     } else {
-      const { error } = await supabaseAdmin
-        .from("blogs")
-        .insert([payload]);
-      if (error) console.error("Error inserting blog categories in Supabase:", error);
+      await supabaseAdmin.from("blogs").insert([payload]);
     }
     return true;
   } catch (err) {

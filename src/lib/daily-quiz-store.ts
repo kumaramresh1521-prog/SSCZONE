@@ -1,5 +1,11 @@
 import fs from "fs";
 import path from "path";
+import {
+  getSiteSettingAsync,
+  saveSiteSettingAsync,
+  getSiteSettingCached,
+  primeSiteSettingCache,
+} from "./site-settings";
 
 export interface DailyQuizQuestion {
   id: string;
@@ -186,40 +192,82 @@ const DEFAULT_QUIZZES: DailyQuiz[] = [
   }
 ];
 
-export function getDailyQuizzes(): DailyQuiz[] {
+const SETTING_KEY = "daily_quizzes";
+
+function getLocalFileFallback(): DailyQuiz[] {
   try {
-    if (!fs.existsSync(DATA_DIR)) {
-      fs.mkdirSync(DATA_DIR, { recursive: true });
+    if (fs.existsSync(FILE_PATH)) {
+      const raw = fs.readFileSync(FILE_PATH, "utf8");
+      const data = JSON.parse(raw);
+      if (Array.isArray(data) && data.length > 0) return data;
     }
-    if (!fs.existsSync(FILE_PATH)) {
-      fs.writeFileSync(FILE_PATH, JSON.stringify(DEFAULT_QUIZZES, null, 2), "utf8");
-      return DEFAULT_QUIZZES;
-    }
-    const raw = fs.readFileSync(FILE_PATH, "utf8");
-    const data = JSON.parse(raw);
-    return Array.isArray(data) ? data : DEFAULT_QUIZZES;
   } catch (err) {
-    console.error("Error reading daily_quizzes.json:", err);
-    return DEFAULT_QUIZZES;
+    console.error("Error reading local daily_quizzes.json:", err);
   }
+  return DEFAULT_QUIZZES;
+}
+
+export function getDailyQuizzes(): DailyQuiz[] {
+  const cached = getSiteSettingCached<DailyQuiz[] | null>(SETTING_KEY, null);
+  if (cached && Array.isArray(cached) && cached.length > 0) {
+    return cached;
+  }
+  const fallback = getLocalFileFallback();
+  primeSiteSettingCache(SETTING_KEY, fallback);
+  return fallback;
+}
+
+export async function getDailyQuizzesAsync(): Promise<DailyQuiz[]> {
+  const fallback = getLocalFileFallback();
+  const dbData = await getSiteSettingAsync<DailyQuiz[]>(SETTING_KEY, fallback);
+  if (Array.isArray(dbData) && dbData.length > 0) {
+    return dbData;
+  }
+  return fallback;
+}
+
+export async function saveDailyQuizzesAsync(quizzes: DailyQuiz[]): Promise<boolean> {
+  const saved = await saveSiteSettingAsync(SETTING_KEY, quizzes);
+
+  try {
+    if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
+    fs.writeFileSync(FILE_PATH, JSON.stringify(quizzes, null, 2), "utf8");
+  } catch {}
+
+  return saved;
 }
 
 export function saveDailyQuizzes(quizzes: DailyQuiz[]): boolean {
+  void saveSiteSettingAsync(SETTING_KEY, quizzes);
+
   try {
-    if (!fs.existsSync(DATA_DIR)) {
-      fs.mkdirSync(DATA_DIR, { recursive: true });
-    }
+    if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
     fs.writeFileSync(FILE_PATH, JSON.stringify(quizzes, null, 2), "utf8");
-    return true;
-  } catch (err) {
-    console.error("Error writing daily_quizzes.json:", err);
-    return false;
-  }
+  } catch {}
+
+  return true;
+}
+
+export async function getDailyQuizByIdAsync(id: string): Promise<DailyQuiz | null> {
+  const all = await getDailyQuizzesAsync();
+  return all.find((q) => q.id === id) || null;
 }
 
 export function getDailyQuizById(id: string): DailyQuiz | null {
   const all = getDailyQuizzes();
   return all.find((q) => q.id === id) || null;
+}
+
+export async function upsertDailyQuizAsync(quiz: DailyQuiz): Promise<boolean> {
+  const all = await getDailyQuizzesAsync();
+  const idx = all.findIndex((q) => q.id === quiz.id);
+  quiz.updated_at = new Date().toISOString();
+  if (idx >= 0) {
+    all[idx] = quiz;
+  } else {
+    all.unshift(quiz);
+  }
+  return saveDailyQuizzesAsync(all);
 }
 
 export function upsertDailyQuiz(quiz: DailyQuiz): boolean {
@@ -232,6 +280,12 @@ export function upsertDailyQuiz(quiz: DailyQuiz): boolean {
     all.unshift(quiz);
   }
   return saveDailyQuizzes(all);
+}
+
+export async function deleteDailyQuizAsync(id: string): Promise<boolean> {
+  const all = await getDailyQuizzesAsync();
+  const filtered = all.filter((q) => q.id !== id);
+  return saveDailyQuizzesAsync(filtered);
 }
 
 export function deleteDailyQuiz(id: string): boolean {

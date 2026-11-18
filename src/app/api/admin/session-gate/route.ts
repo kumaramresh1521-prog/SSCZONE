@@ -1,12 +1,17 @@
 import { NextResponse } from "next/server";
-import { getSessionGateConfig, saveSessionGateConfig } from "@/lib/session-gate-store";
+import { getSessionGateConfigAsync, saveSessionGateConfigAsync } from "@/lib/session-gate-store";
+
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export async function GET() {
   try {
-    const config = getSessionGateConfig();
+    const config = await getSessionGateConfigAsync();
     return NextResponse.json({
       success: true,
       config,
+    }, {
+      headers: { "Cache-Control": "no-store, max-age=0" }
     });
   } catch (err: any) {
     return NextResponse.json(
@@ -20,7 +25,7 @@ export async function POST(request: Request) {
   try {
     const payload = await request.json();
 
-    const updated = saveSessionGateConfig({
+    const updated = await saveSessionGateConfigAsync({
       is_enabled: Boolean(payload.is_enabled),
       session_limit_minutes: Number(payload.session_limit_minutes) || 15,
       block_test_attempts: Boolean(payload.block_test_attempts),
@@ -39,7 +44,7 @@ export async function POST(request: Request) {
     });
   } catch (err: any) {
     return NextResponse.json(
-      { success: false, error: err.message || "Failed to save settings" },
+      { success: false, error: err.message || "Failed to save config" },
       { status: 500 }
     );
   }

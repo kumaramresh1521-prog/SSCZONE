@@ -1,20 +1,21 @@
 import { NextRequest, NextResponse } from "next/server";
 import {
-  getServerTypingPassages,
-  saveServerTypingPassage,
-  deleteServerTypingPassage,
-  resetServerTypingPassages,
+  getServerTypingPassagesAsync,
+  saveServerTypingPassageAsync,
+  deleteServerTypingPassageAsync,
+  resetServerTypingPassagesAsync,
 } from "@/lib/server-typing-store";
 import { TypingPassage } from "@/lib/typing-store";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export async function GET(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
     const examParam = searchParams.get("exam")?.toLowerCase();
 
-    let passages = getServerTypingPassages();
+    let passages = await getServerTypingPassagesAsync();
     if (examParam && examParam !== "all") {
       passages = passages.filter((p) => p.examType.toLowerCase() === examParam);
     }
@@ -41,7 +42,7 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
 
     if (body.action === "reset") {
-      const resetList = resetServerTypingPassages();
+      const resetList = await resetServerTypingPassagesAsync();
       return NextResponse.json({
         success: true,
         passages: resetList,
@@ -61,7 +62,7 @@ export async function POST(req: NextRequest) {
     const wordCount = content.trim().split(/\s+/).filter(Boolean).length;
     const computedDepressions = targetKeyDepressions || wordCount * 5;
 
-    const savedPassage = saveServerTypingPassage({
+    const savedPassage = await saveServerTypingPassageAsync({
       id: body.id,
       title: title.trim(),
       content: content.trim(),
@@ -105,7 +106,7 @@ export async function DELETE(req: NextRequest) {
       return NextResponse.json({ success: false, error: "ID required." }, { status: 400 });
     }
 
-    const deleted = deleteServerTypingPassage(id);
+    const deleted = await deleteServerTypingPassageAsync(id);
     return NextResponse.json({ success: deleted, message: "Passage deleted." });
   } catch (error: any) {
     return NextResponse.json({ success: false, error: error.message }, { status: 500 });

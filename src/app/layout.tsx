@@ -3,7 +3,7 @@ import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import Script from "next/script";
 import MainLayoutWrapper from "@/components/MainLayoutWrapper";
-import { getPublishedSeoConfig } from "@/lib/seo-store";
+import { getPublishedSeoConfigAsync } from "@/lib/seo-store";
 
 export const viewport: Viewport = {
   themeColor: "#1e40af",
@@ -12,7 +12,7 @@ export const viewport: Viewport = {
 };
 
 export async function generateMetadata(): Promise<Metadata> {
-  const seo = getPublishedSeoConfig();
+  const seo = await getPublishedSeoConfigAsync();
   const baseUrl = process.env.NEXT_PUBLIC_APP_URL || seo.canonicalUrl || "https://ssczone.com";
 
   return {
@@ -77,8 +77,8 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const seo = getPublishedSeoConfig();
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const seo = await getPublishedSeoConfigAsync();
   const adsenseId = seo.verification?.adsenseId || process.env.NEXT_PUBLIC_ADSENSE_ID;
   const googleAnalyticsId = seo.verification?.googleAnalyticsId || process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 

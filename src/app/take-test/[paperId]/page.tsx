@@ -9,6 +9,7 @@ import MathText from "@/components/MathText";
 import ReportButton from "@/components/ReportButton";
 import CollectQuestionButton from "@/components/CollectQuestionButton";
 import { translateSingleQuestion } from "@/lib/translator";
+import { getMarkingScheme } from "@/lib/marking-scheme";
 import { resolveAssetUrl } from "@/lib/utils";
 import {
   Clock,
@@ -770,31 +771,16 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
     toast.success("Exam started! Best of luck.");
   }
 
-  // Dynamic Marking Scheme based on Exam & Tier (SSC CGL Tier 1: +2/-0.5, Tier 2: +3/-1, CPO/MTS: +1/-0.25)
-  const markingScheme = useMemo(() => {
-    const titleLower = (paper?.title || "").toLowerCase();
-    const examLower = (paper?.exams?.title || "").toLowerCase();
-    if (
-      titleLower.includes("tier-ii") ||
-      titleLower.includes("tier 2") ||
-      titleLower.includes("tier-2") ||
-      titleLower.includes("mains")
-    ) {
-      return { positive: 3.0, negative: 1.0, maxMarks: 390 };
-    }
-    if (titleLower.includes("cpo") || examLower.includes("cpo")) {
-      return { positive: 1.0, negative: 0.25, maxMarks: 200 };
-    }
-    if (
-      titleLower.includes("mts") ||
-      examLower.includes("mts") ||
-      titleLower.includes("gd") ||
-      examLower.includes("gd")
-    ) {
-      return { positive: 1.0, negative: 0.25, maxMarks: 100 };
-    }
-    return { positive: 2.0, negative: 0.5, maxMarks: 200 };
-  }, [paper]);
+  // Official SSC marking scheme, shared with the server-side grading engine.
+  const markingScheme = useMemo(
+    () =>
+      getMarkingScheme({
+        paperTitle: paper?.title,
+        examTitle: paper?.exams?.title,
+        questionCount: questions.length,
+      }),
+    [paper, questions.length]
+  );
 
   // 7. Submit Exam & Calculate Official Score (Server-Side Grading)
   async function handleSubmitTest() {

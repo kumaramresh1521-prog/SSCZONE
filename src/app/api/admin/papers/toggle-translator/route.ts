@@ -1,37 +1,35 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
-import fs from "fs";
-import path from "path";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+const supabaseKey =
+  process.env.SUPABASE_SERVICE_ROLE_KEY ||
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
 
-const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey);
+const supabaseAdmin = createClient(supabaseUrl, supabaseKey, {
+  auth: { autoRefreshToken: false, persistSession: false },
+});
 
-const SETTINGS_FILE = path.join(process.cwd(), "src", "data", "paper_settings.json");
+type PaperSettingsMap = Record<
+  string,
+  { allow_download?: boolean; allow_translation?: boolean }
+>;
 
-function readPaperSettings(): Record<string, { allow_download?: boolean; allow_translation?: boolean }> {
-  try {
-    if (fs.existsSync(SETTINGS_FILE)) {
-      return JSON.parse(fs.readFileSync(SETTINGS_FILE, "utf-8"));
-    }
-  } catch (e) {
-    console.error("Error reading paper_settings.json:", e);
+async function readTranslationOverrides(): Promise<PaperSettingsMap> {
+  const { data } = await supabaseAdmin
+    .from("site_settings")
+    .select("value")
+    .eq("key", "paper_settings")
+    .maybeSingle();
+
+  const value = data?.value;
+  if (value && typeof value === "object" && !Array.isArray(value)) {
+    return value as PaperSettingsMap;
   }
   return {};
-}
-
-function writePaperSettings(settings: Record<string, { allow_download?: boolean; allow_translation?: boolean }>) {
-  try {
-    const dir = path.dirname(SETTINGS_FILE);
-    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-    fs.writeFileSync(SETTINGS_FILE, JSON.stringify(settings, null, 2), "utf-8");
-  } catch (e) {
-    console.error("Error writing paper_settings.json:", e);
-  }
 }
 
 export async function POST(req: NextRequest) {
@@ -43,38 +41,46 @@ export async function POST(req: NextRequest) {
     }
 
     const numericId = Number(paperId);
+    const id = String(paperId);
     const isAllowed = Boolean(allowTranslation);
 
-    // 1. Try updating database if column exists
-    try {
-      await supabaseAdmin.from("previous_papers").update({ allow_translation: isAllowed }).eq("id", numericId);
-    } catch {
-      // Column may not exist in DB yet, server-side JSON file guarantees persistence
-    }
+    // `previous_papers.allow_translation` does not exist in the live schema,
+    // so the durable store is site_settings (Cloud Run FS is ephemeral).
+    const current = await readTranslationOverrides();
+    current[id] = { ...(current[id] || {}), allow_translation: isAllowed };
 
-    // 2. Persist to server-side JSON settings file
-    const currentSettings = readPaperSettings();
-    if (!currentSettings[String(numericId)]) {
-      currentSettings[String(numericId)] = {};
+    const { error } = await supabaseAdmin.from("site_settings").upsert(
+      {
+        key: "paper_settings",
+        value: current,
+        updated_at: new Date().toISOString(),
+      },
+      { onConflict: "key" }
+    );
+
+    if (error) {
+      return NextResponse.json({ error: error.message }, { status: 500 });
     }
-    currentSettings[String(numericId)].allow_translation = isAllowed;
-    writePaperSettings(currentSettings);
 
     return NextResponse.json({
       success: true,
       paperId: numericId,
-      allowTranslation: isAllowed
+      allowTranslation: isAllowed,
     });
   } catch (err: any) {
-    return NextResponse.json({ error: err.message || "Failed to update translator permission" }, { status: 500 });
+    return NextResponse.json(
+      { error: err.message || "Failed to update translator permission" },
+      { status: 500 }
+    );
   }
 }
 
 export async function GET() {
-  const settings = readPaperSettings();
+  const settings = await readTranslationOverrides();
   return NextResponse.json(settings, {
     headers: {
-      "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
+      "Cache-Control":
+        "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
       Pragma: "no-cache",
       Expires: "0",
     },

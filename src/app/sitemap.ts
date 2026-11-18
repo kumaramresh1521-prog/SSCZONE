@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 import { createClient } from "@supabase/supabase-js";
-import { getPublishedSeoConfig } from "@/lib/seo-store";
+import { getPublishedSeoConfigAsync } from "@/lib/seo-store";
 import { getChapterNotes } from "@/lib/chapter-notes-store";
 import { getQuestionCanonicalPath } from "@/lib/question-seo";
 
@@ -11,7 +11,7 @@ const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "placeholder-ke
 export const revalidate = 43200;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const seo = getPublishedSeoConfig();
+  const seo = await getPublishedSeoConfigAsync();
   const baseUrl = (process.env.NEXT_PUBLIC_APP_URL || seo.canonicalUrl || "https://ssczone.com").replace(/\/$/, "");
   const supabase = createClient(supabaseUrl, supabaseKey);
 

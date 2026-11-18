@@ -1,8 +1,8 @@
 import { MetadataRoute } from "next";
-import { getPublishedSeoConfig } from "@/lib/seo-store";
+import { getPublishedSeoConfigAsync } from "@/lib/seo-store";
 
-export default function robots(): MetadataRoute.Robots {
-  const seo = getPublishedSeoConfig();
+export default async function robots(): Promise<MetadataRoute.Robots> {
+  const seo = await getPublishedSeoConfigAsync();
   const baseUrl = process.env.NEXT_PUBLIC_APP_URL || seo.canonicalUrl || "https://ssczone.com";
   const shouldIndex = seo.indexing?.index ?? true;
 

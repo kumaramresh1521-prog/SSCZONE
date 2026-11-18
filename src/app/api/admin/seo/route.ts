@@ -32,17 +32,12 @@ export async function POST(request: Request) {
       updatedAt: new Date().toISOString()
     };
 
-    // 1. Save to local JSON file for atomic, low-latency SSR access
-    const dir = path.dirname(SEO_FILE_PATH);
-    if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir, { recursive: true });
-    }
-    fs.writeFileSync(SEO_FILE_PATH, JSON.stringify(updatedConfig, null, 2), "utf8");
-
-    // 2. Persist to Supabase site_settings table if available
+    // 1. Persist to Supabase first: the Cloud Run filesystem is read-only and
+    //    per-instance, so the JSON file cannot be the source of truth in prod.
+    let dbSaved = false;
     try {
       const { supabaseAdmin } = await import("@/lib/supabase-admin");
-      await supabaseAdmin.from("site_settings").upsert(
+      const { error } = await supabaseAdmin.from("site_settings").upsert(
         {
           key: "seo_config",
           value: updatedConfig,
@@ -50,9 +45,31 @@ export async function POST(request: Request) {
         },
         { onConflict: "key" }
       );
+      if (error) {
+        console.warn("Could not persist SEO config to Supabase:", error.message);
+      } else {
+        dbSaved = true;
+      }
     } catch (dbErr) {
-      // Supabase table might not exist yet; file backup is active
-      console.warn("Could not sync SEO config to Supabase site_settings table:", dbErr);
+      console.warn("Could not persist SEO config to Supabase:", dbErr);
+    }
+
+    // 2. Local JSON backup for dev / writable environments (never fatal).
+    let fileSaved = false;
+    try {
+      const dir = path.dirname(SEO_FILE_PATH);
+      if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+      fs.writeFileSync(SEO_FILE_PATH, JSON.stringify(updatedConfig, null, 2), "utf8");
+      fileSaved = true;
+    } catch (fileErr) {
+      console.warn("Local SEO file backup skipped:", fileErr);
+    }
+
+    if (!dbSaved && !fileSaved) {
+      return NextResponse.json(
+        { error: "Failed to persist SEO configuration." },
+        { status: 500 }
+      );
     }
 
     // 3. Clear Next.js cache so changes immediately appear live on the website

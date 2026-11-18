@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient as createSupabaseClient } from "@supabase/supabase-js";
 import { createClient } from "@/lib/supabase-server";
+import { getMarkingScheme } from "@/lib/marking-scheme";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
@@ -31,37 +32,16 @@ export async function POST(req: NextRequest) {
     const paper = paperRes.data;
     const questions = questionsRes.data;
 
-    // 2. Determine Marking Scheme based on exam & tier
-    const titleLower = (paper.title || "").toLowerCase();
-    const examLower = (paper.exams?.title || "").toLowerCase();
-
-    let positiveMarks = 2.0;
-    let negativeMarks = 0.5;
-    let maxMarks = 200;
-
-    if (
-      titleLower.includes("tier-ii") ||
-      titleLower.includes("tier 2") ||
-      titleLower.includes("tier-2") ||
-      titleLower.includes("mains")
-    ) {
-      positiveMarks = 3.0;
-      negativeMarks = 1.0;
-      maxMarks = 390;
-    } else if (titleLower.includes("cpo") || examLower.includes("cpo")) {
-      positiveMarks = 1.0;
-      negativeMarks = 0.25;
-      maxMarks = 200;
-    } else if (
-      titleLower.includes("mts") ||
-      examLower.includes("mts") ||
-      titleLower.includes("gd") ||
-      examLower.includes("gd")
-    ) {
-      positiveMarks = 1.0;
-      negativeMarks = 0.25;
-      maxMarks = 100;
-    }
+    // 2. Official SSC marking scheme (shared with the client scorecard)
+    const {
+      positive: positiveMarks,
+      negative: negativeMarks,
+      maxMarks,
+    } = getMarkingScheme({
+      paperTitle: paper.title,
+      examTitle: paper.exams?.title,
+      questionCount: questions.length,
+    });
 
     // 3. Evaluate candidate answers on server
     let correctCount = 0;
@@ -104,7 +84,29 @@ export async function POST(req: NextRequest) {
 
       let savedAttemptId = attemptId;
       if (user) {
-        if (attemptId && typeof attemptId === "number") {
+        const requestedAttemptId = Number(attemptId);
+        const hasAttemptId =
+          Number.isFinite(requestedAttemptId) && requestedAttemptId > 0;
+
+        if (hasAttemptId) {
+          // IDOR guard: only the owner of this attempt (and this paper) may update it.
+          const { data: ownedAttempt } = await supabaseAdmin
+            .from("test_attempts")
+            .select("id")
+            .eq("id", requestedAttemptId)
+            .eq("user_id", user.id)
+            .eq("paper_id", Number(paperId))
+            .maybeSingle();
+
+          if (!ownedAttempt) {
+            return NextResponse.json(
+              { error: "Attempt not found for this user." },
+              { status: 403 }
+            );
+          }
+
+          savedAttemptId = requestedAttemptId;
+
           await supabaseAdmin
             .from("test_attempts")
             .update({
@@ -113,7 +115,8 @@ export async function POST(req: NextRequest) {
               total_questions: questions.length,
               status: "completed",
             })
-            .eq("id", attemptId);
+            .eq("id", requestedAttemptId)
+            .eq("user_id", user.id);
         } else {
           const { data: newAttempt } = await supabaseAdmin
             .from("test_attempts")

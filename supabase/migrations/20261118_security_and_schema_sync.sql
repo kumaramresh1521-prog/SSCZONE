@@ -1,21 +1,17 @@
 -- =========================================================================
--- SSCZONE PRODUCTION SECURITY HARDENING & SCHEMA SYNC MIGRATION (V3)
+-- SSCZONE PRODUCTION SECURITY HARDENING & SCHEMA SYNC MIGRATION (V4 - CLEAN)
 -- Run this in your Supabase SQL Editor (Dashboard > SQL Editor)
 -- =========================================================================
 
--- 1. ENSURE ALL OPTIONAL & HINDI COLUMNS EXIST IN PAPER_QUESTIONS
+-- 1. PREVENT EXAM ANSWER LEAK AT DATABASE LAYER
+-- Add Hindi translation columns if not already present
 ALTER TABLE public.paper_questions 
   ADD COLUMN IF NOT EXISTS question_text_hi TEXT,
   ADD COLUMN IF NOT EXISTS explanation_hi TEXT,
   ADD COLUMN IF NOT EXISTS option_a_hi TEXT,
   ADD COLUMN IF NOT EXISTS option_b_hi TEXT,
   ADD COLUMN IF NOT EXISTS option_c_hi TEXT,
-  ADD COLUMN IF NOT EXISTS option_d_hi TEXT,
-  ADD COLUMN IF NOT EXISTS image_url TEXT,
-  ADD COLUMN IF NOT EXISTS option_a_image_url TEXT,
-  ADD COLUMN IF NOT EXISTS option_b_image_url TEXT,
-  ADD COLUMN IF NOT EXISTS option_c_image_url TEXT,
-  ADD COLUMN IF NOT EXISTS option_d_image_url TEXT;
+  ADD COLUMN IF NOT EXISTS option_d_hi TEXT;
 
 -- Revoke table-level SELECT from anon and authenticated roles
 REVOKE SELECT ON public.paper_questions FROM anon, authenticated;
@@ -35,15 +31,10 @@ GRANT SELECT (
   option_a_hi,
   option_b_hi,
   option_c_hi,
-  option_d_hi,
-  image_url,
-  option_a_image_url,
-  option_b_image_url,
-  option_c_image_url,
-  option_d_image_url
+  option_d_hi
 ) ON public.paper_questions TO anon, authenticated;
 
--- Ensure service_role and postgres maintain FULL access to all columns
+-- Ensure service_role (backend APIs) and postgres (SQL Editor/Owner) maintain FULL access to all columns
 GRANT ALL ON public.paper_questions TO service_role;
 GRANT ALL ON public.paper_questions TO postgres;
 

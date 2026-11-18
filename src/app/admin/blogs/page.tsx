@@ -676,6 +676,41 @@ export default function AdminBlogsPage() {
                     </div>
                   </div>
 
+                  {/* SEO Target Keywords & Tags (Top Quick-Access) */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 rounded-2xl border border-indigo-500/30 bg-indigo-950/20 p-4">
+                    <div className="space-y-1">
+                      <div className="flex items-center justify-between">
+                        <label className="block font-bold text-indigo-300 text-xs">
+                          🎯 Primary Focus Keyword <span className="text-rose-400">*</span>
+                        </label>
+                        <span className="text-[10px] text-gray-400">Main Google search phrase</span>
+                      </div>
+                      <input
+                        type="text"
+                        placeholder="e.g. SSC CGL 2026 Notification or Cell: The Unit of Life"
+                        value={focusKeyword}
+                        onChange={(e) => setFocusKeyword(e.target.value)}
+                        className="w-full rounded-xl border border-gray-700 bg-gray-800/90 px-3.5 py-2 text-xs text-white placeholder-gray-500 focus:border-indigo-500 focus:outline-none"
+                      />
+                    </div>
+
+                    <div className="space-y-1">
+                      <div className="flex items-center justify-between">
+                        <label className="block font-bold text-indigo-300 text-xs">
+                          🏷️ Other / Secondary Keywords &amp; Tags
+                        </label>
+                        <span className="text-[10px] text-gray-400">Comma-separated</span>
+                      </div>
+                      <input
+                        type="text"
+                        placeholder="e.g. SSC Biology Notes, Cell Organelles, TCS PYQs, Mitosis"
+                        value={secondaryKeywords}
+                        onChange={(e) => setSecondaryKeywords(e.target.value)}
+                        className="w-full rounded-xl border border-gray-700 bg-gray-800/90 px-3.5 py-2 text-xs text-white placeholder-gray-500 focus:border-indigo-500 focus:outline-none"
+                      />
+                    </div>
+                  </div>
+
                   {/* Featured Banner Image Upload (Direct to Supabase Storage) */}
                   <div className="space-y-1">
                     <label className="block font-bold text-gray-300">

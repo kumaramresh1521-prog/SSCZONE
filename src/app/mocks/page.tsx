@@ -44,7 +44,7 @@ export default function MockTestSeriesPage() {
         setLoading(true);
         const { data, error } = await supabase
           .from("previous_papers")
-          .select("*, exams(title, slug), paper_questions(count)")
+          .select("*, exams(title, slug)")
           .eq("is_active", true)
           .order("year", { ascending: false });
 

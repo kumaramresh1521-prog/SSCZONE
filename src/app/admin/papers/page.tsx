@@ -244,7 +244,7 @@ export default function PapersPage() {
       const [papersRes, examsRes, settingsRes] = await Promise.all([
         supabase
           .from("previous_papers")
-          .select("*, exams(title), paper_questions(count)")
+          .select("*, exams(title)")
           .order("id", { ascending: true }),
         supabase.from("exams").select("id, title").order("id", { ascending: true }),
         fetch(`/api/papers/settings?t=${Date.now()}`, { cache: "no-store" })
@@ -318,7 +318,7 @@ export default function PapersPage() {
 
     papers.forEach((p) => {
       const meta = parsePaperMeta(p);
-      const qCount = p.paper_questions?.[0]?.count ?? 0;
+      const qCount = p.total_questions || p.paper_questions?.[0]?.count || 100;
 
       if (!map.has(meta.folderKey)) {
         map.set(meta.folderKey, {

@@ -89,7 +89,7 @@ export default function PapersPage() {
       const [papersRes, serverSettings] = await Promise.all([
         supabase
           .from("previous_papers")
-          .select("*, exams(title, slug), paper_questions(count)")
+          .select("*, exams(title, slug)")
           .eq("is_active", true)
           .order("year", { ascending: false }),
         fetch(`/api/papers/settings?t=${Date.now()}`, { cache: "no-store" })
@@ -103,7 +103,7 @@ export default function PapersPage() {
           ? Boolean(override.allow_download)
           : (p.test_type !== "mock" && p.allow_download !== false);
 
-        const realQuestionCount = p.paper_questions?.[0]?.count ?? 0;
+        const realQuestionCount = p.total_questions || p.paper_questions?.[0]?.count || 100;
         const meta = parsePaperMeta(p);
 
         return {

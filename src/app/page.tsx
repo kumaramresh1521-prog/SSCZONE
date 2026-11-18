@@ -24,7 +24,7 @@ import { createClient } from "@/lib/supabase-server";
 import { buildPageMetadata } from "@/lib/seo-store";
 import { getHomepageConfig } from "@/lib/homepage-store";
 import { DEFAULT_BLOGS } from "@/lib/blog-data";
-import TopperTestimonialsSection from "@/components/TopperTestimonialsSection";
+import PreparationRoadmapSection from "@/components/PreparationRoadmapSection";
 
 export const revalidate = 300; // 5-minute ISR cache to protect database egress
 
@@ -704,8 +704,8 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Topper Testimonials & Reviews (Hall of Fame) */}
-      <TopperTestimonialsSection />
+      {/* Preparation Roadmap & Strategy Section */}
+      <PreparationRoadmapSection />
 
       {/* Frequently Asked Questions */}
       <section className="bg-white border-t border-slate-200/80 py-16 px-4 w-full max-w-full overflow-hidden">

@@ -1,23 +1,27 @@
 -- =========================================================================
--- SSCZONE PRODUCTION SECURITY HARDENING & SCHEMA SYNC MIGRATION (V2)
+-- SSCZONE PRODUCTION SECURITY HARDENING & SCHEMA SYNC MIGRATION (V3)
 -- Run this in your Supabase SQL Editor (Dashboard > SQL Editor)
 -- =========================================================================
 
--- 1. PREVENT EXAM ANSWER LEAK AT DATABASE LAYER (POSTGREST PROTECTION)
--- Ensure missing Hindi columns exist first so column grants succeed
+-- 1. ENSURE ALL OPTIONAL & HINDI COLUMNS EXIST IN PAPER_QUESTIONS
 ALTER TABLE public.paper_questions 
   ADD COLUMN IF NOT EXISTS question_text_hi TEXT,
   ADD COLUMN IF NOT EXISTS explanation_hi TEXT,
   ADD COLUMN IF NOT EXISTS option_a_hi TEXT,
   ADD COLUMN IF NOT EXISTS option_b_hi TEXT,
   ADD COLUMN IF NOT EXISTS option_c_hi TEXT,
-  ADD COLUMN IF NOT EXISTS option_d_hi TEXT;
+  ADD COLUMN IF NOT EXISTS option_d_hi TEXT,
+  ADD COLUMN IF NOT EXISTS image_url TEXT,
+  ADD COLUMN IF NOT EXISTS option_a_image_url TEXT,
+  ADD COLUMN IF NOT EXISTS option_b_image_url TEXT,
+  ADD COLUMN IF NOT EXISTS option_c_image_url TEXT,
+  ADD COLUMN IF NOT EXISTS option_d_image_url TEXT;
 
 -- Revoke table-level SELECT from anon and authenticated roles
 REVOKE SELECT ON public.paper_questions FROM anon, authenticated;
 
--- Grant column-level SELECT ONLY on safe, non-sensitive columns to public roles
--- (correct_answer, explanation, explanation_hi are strictly omitted)
+-- Grant column-level SELECT ONLY on safe, non-sensitive columns
+-- (correct_answer, explanation, explanation_hi are strictly excluded)
 GRANT SELECT (
   id,
   paper_id,
@@ -36,23 +40,20 @@ GRANT SELECT (
   option_a_image_url,
   option_b_image_url,
   option_c_image_url,
-  option_d_image_url,
-  created_at
+  option_d_image_url
 ) ON public.paper_questions TO anon, authenticated;
 
--- Ensure service_role (backend APIs) and postgres (SQL Editor/Owner) maintain FULL access
+-- Ensure service_role and postgres maintain FULL access to all columns
 GRANT ALL ON public.paper_questions TO service_role;
 GRANT ALL ON public.paper_questions TO postgres;
 
 
 -- 2. PREVENT PRIVILEGE ESCALATION ON PROFILES (UPDATE & INSERT)
--- Safe for SQL Editor (postgres superuser) and backend service-role operations
 CREATE OR REPLACE FUNCTION public.check_profile_admin_update()
 RETURNS TRIGGER AS $$
 DECLARE
   caller_role TEXT;
 BEGIN
-  -- If is_admin is not modified, allow update
   IF NEW.is_admin IS NOT DISTINCT FROM OLD.is_admin THEN
     RETURN NEW;
   END IF;
@@ -78,7 +79,6 @@ BEGIN
     RETURN NEW;
   END IF;
 
-  -- Reject self-elevation by regular users
   RAISE EXCEPTION 'Access Denied: Only administrators or service role can modify the is_admin status.';
 END;
 $$ LANGUAGE plpgsql SECURITY DEFINER;
@@ -99,12 +99,10 @@ BEGIN
     RETURN NEW;
   END IF;
 
-  -- Allow postgres / SQL Editor
   IF current_user IN ('postgres', 'supabase_admin', 'service_role') THEN
     RETURN NEW;
   END IF;
 
-  -- Allow service_role
   BEGIN
     caller_role := coalesce(auth.jwt()->>'role', '');
     IF caller_role = 'service_role' THEN
@@ -113,14 +111,12 @@ BEGIN
   EXCEPTION WHEN OTHERS THEN
   END;
 
-  -- Allow existing admin
   IF auth.uid() IS NOT NULL AND EXISTS (
     SELECT 1 FROM public.profiles WHERE id = auth.uid() AND is_admin = true
   ) THEN
     RETURN NEW;
   END IF;
 
-  -- Force regular user signups to is_admin = false
   NEW.is_admin := false;
   RETURN NEW;
 END;
@@ -133,7 +129,6 @@ CREATE TRIGGER tr_check_profile_admin_insert
 
 
 -- 3. SECURE SUBSCRIPTIONS (PREVENT SELF-ACTIVATION)
--- Regular users can only read their subscriptions; all activations happen via backend service_role
 DROP POLICY IF EXISTS "Users insert own subscriptions" ON public.subscriptions;
 DROP POLICY IF EXISTS "Users update own subscriptions" ON public.subscriptions;
 

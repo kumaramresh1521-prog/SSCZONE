@@ -4,8 +4,8 @@ const { createClient } = require("@supabase/supabase-js");
 
 // Read .env.local
 const envPath = path.join(process.cwd(), ".env.local");
-let url = "https://vvdrtfwhffbbyiicjtrw.supabase.co";
-let key = "";
+let url = "https://rmobqopitkjobcnyqzru.supabase.co";
+let key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJtb2Jxb3BpdGtqb2JjbnlxenJ1Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4NTQwMzc3NiwiZXhwIjoyMTAwOTc5Nzc2fQ.tlewx6VDcbni_kJfy0IVfZ7yqwywHfNEoVCRj8-oLaA";
 
 if (fs.existsSync(envPath)) {
   const content = fs.readFileSync(envPath, "utf8");
@@ -124,14 +124,36 @@ const DEFAULT_STATIC_PAGES_CONFIG = {
   <p>For payment queries or double charge issues, please contact us at <b>support@ssczone.com</b> with your order ID and payment reference number.</p>
 </div>`,
   },
+  topDisclaimer: {
+    enabled: true,
+    badgeText: "Disclaimer",
+    text: "This website & app is an independent educational portal and is NOT affiliated with, authorized, endorsed by, or in any way officially connected with the Staff Selection Commission (SSC), Government of India, or any government entity.",
+  },
 };
 
 async function run() {
+  const { data, error: fetchErr } = await supabase
+    .from("site_settings")
+    .select("value")
+    .eq("key", "static_pages_config")
+    .maybeSingle();
+
+  const existing = data?.value || {};
+  const merged = {
+    ...DEFAULT_STATIC_PAGES_CONFIG,
+    ...existing,
+    topDisclaimer: {
+      ...DEFAULT_STATIC_PAGES_CONFIG.topDisclaimer,
+      ...(existing.topDisclaimer || {}),
+      text: "This website & app is an independent educational portal and is NOT affiliated with, authorized, endorsed by, or in any way officially connected with the Staff Selection Commission (SSC), Government of India, or any government entity.",
+    },
+  };
+
   const { error } = await supabase
     .from("site_settings")
     .upsert({
       key: "static_pages_config",
-      value: DEFAULT_STATIC_PAGES_CONFIG,
+      value: merged,
       updated_at: new Date().toISOString(),
     });
   console.log("static_pages_config upsert:", error ? error.message : "SUCCESS");

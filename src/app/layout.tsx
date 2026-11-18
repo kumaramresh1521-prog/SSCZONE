@@ -4,6 +4,7 @@ import { Toaster } from "react-hot-toast";
 import Script from "next/script";
 import MainLayoutWrapper from "@/components/MainLayoutWrapper";
 import { getPublishedSeoConfigAsync } from "@/lib/seo-store";
+import { getStaticPagesConfigAsync } from "@/lib/static-pages-store";
 
 export const viewport: Viewport = {
   themeColor: "#1e40af",
@@ -78,7 +79,10 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const seo = await getPublishedSeoConfigAsync();
+  const [seo, staticPagesConfig] = await Promise.all([
+    getPublishedSeoConfigAsync(),
+    getStaticPagesConfigAsync(),
+  ]);
   const adsenseId = seo.verification?.adsenseId || process.env.NEXT_PUBLIC_ADSENSE_ID;
   const googleAnalyticsId = seo.verification?.googleAnalyticsId || process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
@@ -145,7 +149,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       </head>
       <body className="min-h-screen w-full max-w-full overflow-x-clip bg-slate-50 text-slate-900 antialiased font-sans selection:bg-blue-600 selection:text-white">
         <Toaster position="top-right" toastOptions={{ duration: 4000 }} />
-        <MainLayoutWrapper>{children}</MainLayoutWrapper>
+        <MainLayoutWrapper topDisclaimer={staticPagesConfig?.topDisclaimer}>{children}</MainLayoutWrapper>
       </body>
     </html>
   );

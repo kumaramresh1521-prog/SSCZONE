@@ -37,12 +37,19 @@ export interface PolicyPageConfig {
   contentHtml: string;
 }
 
+export interface TopDisclaimerConfig {
+  enabled: boolean;
+  badgeText: string;
+  text: string;
+}
+
 export interface StaticPagesConfig {
   about: AboutPageConfig;
   contact: ContactPageConfig;
   privacy: PolicyPageConfig;
   terms: PolicyPageConfig;
   refund: PolicyPageConfig;
+  topDisclaimer: TopDisclaimerConfig;
 }
 
 export const DEFAULT_STATIC_PAGES_CONFIG: StaticPagesConfig = {
@@ -139,12 +146,30 @@ export const DEFAULT_STATIC_PAGES_CONFIG: StaticPagesConfig = {
   <p>For payment queries or double charge issues, please contact us at <b>support@ssczone.com</b> with your order ID and payment reference number.</p>
 </div>`,
   },
+  topDisclaimer: {
+    enabled: true,
+    badgeText: "Disclaimer",
+    text: "This website & app is an independent educational portal and is NOT affiliated with, authorized, endorsed by, or in any way officially connected with the Staff Selection Commission (SSC), Government of India, or any government entity.",
+  },
 };
 
 const SITE_SETTING_KEY = "static_pages_config";
 
 export async function getStaticPagesConfigAsync(): Promise<StaticPagesConfig> {
-  return await getSiteSettingAsync<StaticPagesConfig>(SITE_SETTING_KEY, DEFAULT_STATIC_PAGES_CONFIG);
+  const result = await getSiteSettingAsync<StaticPagesConfig>(SITE_SETTING_KEY, DEFAULT_STATIC_PAGES_CONFIG);
+  return {
+    ...DEFAULT_STATIC_PAGES_CONFIG,
+    ...(result || {}),
+    about: { ...DEFAULT_STATIC_PAGES_CONFIG.about, ...(result?.about || {}) },
+    contact: { ...DEFAULT_STATIC_PAGES_CONFIG.contact, ...(result?.contact || {}) },
+    privacy: { ...DEFAULT_STATIC_PAGES_CONFIG.privacy, ...(result?.privacy || {}) },
+    terms: { ...DEFAULT_STATIC_PAGES_CONFIG.terms, ...(result?.terms || {}) },
+    refund: { ...DEFAULT_STATIC_PAGES_CONFIG.refund, ...(result?.refund || {}) },
+    topDisclaimer: {
+      ...DEFAULT_STATIC_PAGES_CONFIG.topDisclaimer,
+      ...(result?.topDisclaimer || {}),
+    },
+  };
 }
 
 export async function saveStaticPagesConfigAsync(config: StaticPagesConfig): Promise<boolean> {

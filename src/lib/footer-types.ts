@@ -44,7 +44,7 @@ export const DEFAULT_FOOTER_CONFIG: FooterConfig = {
         { label: "Syllabus Questions", href: "/exams" },
         { label: "Previous Year Papers", href: "/papers", badge: "2026" },
         { label: "Mock Test Series", href: "/mocks" },
-        { label: "136-WPM Typing Test", href: "/typing" },
+        { label: "2000 Key Depressions Typing Test", href: "/typing" },
         { label: "Speed Tests", href: "/speed-test" },
       ],
     },

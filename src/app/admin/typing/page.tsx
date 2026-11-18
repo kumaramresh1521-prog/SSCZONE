@@ -388,10 +388,9 @@ export default function AdminTypingPage() {
                 <thead>
                   <tr className="border-b border-slate-800 bg-slate-950/40 text-slate-400 uppercase tracking-wider font-extrabold">
                     <th className="py-3.5 px-4">Exam & Title</th>
-                    <th className="py-3.5 px-4">Target Speed</th>
-                    <th className="py-3.5 px-4">Depressions</th>
+                    <th className="py-3.5 px-4">Key Depressions</th>
                     <th className="py-3.5 px-4">Time</th>
-                    <th className="py-3.5 px-4">Words</th>
+                    <th className="py-3.5 px-4">Target Speed</th>
                     <th className="py-3.5 px-4 text-right">Actions</th>
                   </tr>
                 </thead>
@@ -425,21 +424,17 @@ export default function AdminTypingPage() {
                         </p>
                       </td>
 
-                      <td className="py-3.5 px-4 whitespace-nowrap">
-                        <span className="font-extrabold text-blue-400 text-sm">{p.targetWPM}</span>{" "}
-                        <span className="text-slate-500">WPM</span>
-                      </td>
-
-                      <td className="py-3.5 px-4 whitespace-nowrap font-mono font-bold text-slate-200">
-                        {p.targetKeyDepressions}
+                      <td className="py-3.5 px-4 whitespace-nowrap font-mono font-black text-blue-400 text-sm">
+                        {p.targetKeyDepressions} <span className="text-[11px] font-normal text-slate-400">Dep.</span>
                       </td>
 
                       <td className="py-3.5 px-4 whitespace-nowrap text-slate-300 font-semibold">
                         {p.timeMinutes} Min
                       </td>
 
-                      <td className="py-3.5 px-4 whitespace-nowrap text-slate-400 font-mono">
-                        {p.wordCount} words
+                      <td className="py-3.5 px-4 whitespace-nowrap">
+                        <span className="font-extrabold text-slate-200">{p.targetWPM}</span>{" "}
+                        <span className="text-slate-500">WPM</span>
                       </td>
 
                       <td className="py-3.5 px-4 text-right whitespace-nowrap">
@@ -515,10 +510,10 @@ export default function AdminTypingPage() {
                   onChange={(e) => handleExamTypeChange(e.target.value as any)}
                   className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-blue-500"
                 >
-                  <option value="cgl">SSC CGL DEST (15 Min · 27 WPM · 2000 Depressions)</option>
-                  <option value="chsl-en">SSC CHSL English (10 Min · 35 WPM · 1750 Depressions)</option>
-                  <option value="chsl-hi">SSC CHSL Hindi (10 Min · 30 WPM · 1500 Depressions)</option>
-                  <option value="deo">SSC DEO High Speed (15 Min · 50 WPM · 3700 Depressions)</option>
+                  <option value="cgl">SSC CGL DEST (2000 Key Depressions · 15 Min)</option>
+                  <option value="chsl-en">SSC CHSL English (1750 Key Depressions · 10 Min)</option>
+                  <option value="chsl-hi">SSC CHSL Hindi (1500 Key Depressions · 10 Min)</option>
+                  <option value="deo">SSC DEO High Speed (3700 Key Depressions · 15 Min)</option>
                   <option value="custom">Custom Practice Passage</option>
                 </select>
               </div>

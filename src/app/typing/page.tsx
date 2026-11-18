@@ -345,7 +345,7 @@ export default function TypingPage() {
               <div className="flex items-center gap-2">
                 <span className="text-[10px] uppercase font-black text-blue-600 tracking-wider">SSCZONE</span>
                 <span className="text-slate-300">·</span>
-                <span className="text-xs font-black text-slate-800">Typing Skill Test Simulator</span>
+                <span className="text-xs font-black text-slate-800">SSC 2000 Key Depressions Typing Simulator</span>
               </div>
             </div>
           </div>
@@ -448,10 +448,10 @@ export default function TypingPage() {
                   onChange={(e) => handleExamTypeChange(e.target.value)}
                   className="w-full appearance-none bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs font-bold text-slate-800 pr-8 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all cursor-pointer"
                 >
-                  <option value="cgl">SSC CGL DEST (2000 Dep. · 27 WPM)</option>
-                  <option value="chsl-en">SSC CHSL English (1750 Dep. · 35 WPM)</option>
-                  <option value="chsl-hi">SSC CHSL Hindi (1500 Dep. · 30 WPM)</option>
-                  <option value="deo">SSC DEO High Speed (3700 Dep. · 50 WPM)</option>
+                  <option value="cgl">SSC CGL DEST (2000 Key Depressions · 15 Min)</option>
+                  <option value="chsl-en">SSC CHSL English (1750 Key Depressions · 10 Min)</option>
+                  <option value="chsl-hi">SSC CHSL Hindi (1500 Key Depressions · 10 Min)</option>
+                  <option value="deo">SSC DEO High Speed (3700 Key Depressions · 15 Min)</option>
                   <option value="all">All Passages ({passages.length} Total)</option>
                   <option value="custom">Custom Uploaded Passages</option>
                 </select>
@@ -472,7 +472,7 @@ export default function TypingPage() {
                 >
                   {availablePassagesForExam.map((p) => (
                     <option key={p.id} value={p.id}>
-                      {p.title} ({p.wordCount} words)
+                      {p.title} ({p.targetKeyDepressions || 2000} Key Depressions)
                     </option>
                   ))}
                 </select>
@@ -495,7 +495,7 @@ export default function TypingPage() {
                   <option value="2">2 Minutes (Speed Sprint)</option>
                   <option value="5">5 Minutes (Quick Practice)</option>
                   <option value="10">10 Minutes (CHSL Standard)</option>
-                  <option value="15">15 Minutes (CGL DEST Standard)</option>
+                  <option value="15">15 Minutes (Official 2000 Key Depressions DEST)</option>
                 </select>
                 <ChevronDown className="w-4 h-4 text-slate-400 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
               </div>
@@ -560,7 +560,7 @@ export default function TypingPage() {
                   {isStarted ? "EXAM IN PROGRESS" : isFinished ? "TEST COMPLETED" : "READY TO START"}
                 </div>
                 <p className="text-[10px] text-slate-400 mt-1 pl-1">
-                  Target Speed: <strong className="text-white">{currentPassage.targetWPM} WPM</strong>
+                  Official Standard: <strong className="text-white">{currentPassage.targetKeyDepressions || 2000} Key Depressions</strong> in {currentPassage.timeMinutes || 15} Min
                 </p>
               </div>
             </div>
@@ -570,9 +570,9 @@ export default function TypingPage() {
               
               {/* Stat 1: Depressions Progress */}
               <div className="bg-slate-800/60 border border-slate-700/80 rounded-xl p-3 text-center min-w-[110px]">
-                <p className="text-[10px] font-black uppercase tracking-wider text-slate-400">Depressions</p>
+                <p className="text-[10px] font-black uppercase tracking-wider text-slate-400">Key Depressions</p>
                 <p className="text-lg font-mono font-black text-white mt-0.5">
-                  {typedInput.length} <span className="text-xs text-slate-400 font-normal">/ {currentPassage.targetKeyDepressions}</span>
+                  {typedInput.length} <span className="text-xs text-slate-400 font-normal">/ {currentPassage.targetKeyDepressions || 2000}</span>
                 </p>
                 <div className="w-full bg-slate-700 h-1.5 rounded-full mt-1.5 overflow-hidden">
                   <div
@@ -648,7 +648,7 @@ export default function TypingPage() {
               </span>
             </div>
             <div className="text-[11px] font-bold text-slate-500">
-              Passage Length: <strong className="text-slate-800 font-mono">{currentPassage.wordCount} Words</strong> · Target: <strong className="text-blue-700 font-mono">{currentPassage.targetKeyDepressions} Depressions</strong>
+              Official Criterion: <strong className="text-blue-700 font-mono">{currentPassage.targetKeyDepressions || 2000} Key Depressions</strong> · Time: <strong className="text-slate-800 font-mono">{currentPassage.timeMinutes || 15} Minutes</strong>
             </div>
           </div>
 
@@ -782,12 +782,16 @@ export default function TypingPage() {
                 )}
               </div>
               <p className="text-xs mt-1 opacity-90">
-                Speed: <strong>{netWPM} WPM</strong> (Req: ≥ {currentPassage.targetWPM} WPM) · Error: <strong>{errorPercentage}%</strong> (Limit: ≤ {allowedErrorLimit}%)
+                Key Depressions: <strong>{typedInput.length} / {currentPassage.targetKeyDepressions || 2000}</strong> (Req: 2000 in 15 Min) · Error: <strong>{errorPercentage}%</strong> (Limit: ≤ {allowedErrorLimit}%)
               </p>
             </div>
 
             {/* Detailed Grid */}
             <div className="grid grid-cols-3 gap-2.5 mb-6 text-center">
+              <div className="bg-blue-50/80 border border-blue-200 p-3 rounded-xl">
+                <p className="text-[10px] uppercase font-black text-blue-700">Key Depressions</p>
+                <p className="text-xl font-black text-blue-900 mt-0.5">{typedInput.length} <span className="text-[10px] text-slate-500">/ {currentPassage.targetKeyDepressions || 2000}</span></p>
+              </div>
               <div className="bg-slate-50 border border-slate-200 p-3 rounded-xl">
                 <p className="text-[10px] uppercase font-bold text-slate-400">Net Speed</p>
                 <p className="text-xl font-black text-emerald-600 mt-0.5">{netWPM} <span className="text-[10px] text-slate-400">WPM</span></p>
@@ -799,10 +803,6 @@ export default function TypingPage() {
               <div className="bg-slate-50 border border-slate-200 p-3 rounded-xl">
                 <p className="text-[10px] uppercase font-bold text-slate-400">Accuracy</p>
                 <p className="text-xl font-black text-blue-600 mt-0.5">{accuracyPercent}%</p>
-              </div>
-              <div className="bg-slate-50 border border-slate-200 p-3 rounded-xl">
-                <p className="text-[10px] uppercase font-bold text-slate-400">Keystrokes</p>
-                <p className="text-xl font-black text-slate-800 mt-0.5">{typedInput.length}</p>
               </div>
               <div className="bg-slate-50 border border-slate-200 p-3 rounded-xl">
                 <p className="text-[10px] uppercase font-bold text-slate-400">KPH Speed</p>

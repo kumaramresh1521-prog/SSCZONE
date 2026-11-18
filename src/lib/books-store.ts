@@ -168,12 +168,12 @@ export function deleteBook(id: string): boolean {
   if (filtered.length !== list.length) {
     writeBooksFile(filtered);
     // Delete from Supabase in background
-    supabase
-      .from("blogs")
-      .delete()
-      .eq("slug", `book-${id}`)
-      .then(() => {})
-      .catch((e) => console.warn("Supabase book delete warning:", e?.message));
+    Promise.resolve(
+      supabase
+        .from("blogs")
+        .delete()
+        .eq("slug", `book-${id}`)
+    ).catch((e: any) => console.warn("Supabase book delete warning:", e?.message));
     return true;
   }
   return false;

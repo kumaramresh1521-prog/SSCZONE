@@ -193,9 +193,9 @@ const PRESET_PAGES = [
   {
     path: "/typing",
     name: "Typing Test Simulator (/typing)",
-    defaultTitle: "SSC Typing Test & Speed Practice Simulator — CGL & CHSL TCS Interface",
-    defaultDesc: "Practice SSC CGL, CHSL, and Steno typing test passages with real-time gross/net WPM, accuracy, error calculation, and TCS-pattern exam simulation.",
-    defaultKeywords: ["SSC Typing Test Online", "SSC CGL Typing Speed Test", "TCS Typing Interface Simulator", "Gross WPM Net WPM Calculator"]
+    defaultTitle: "SSC 2000 Key Depressions Typing Test Simulator — CGL DEST & CHSL Interface",
+    defaultDesc: "Practice official SSC 2000 Key Depressions DEST typing test passages with 15-minute countdown, backspace controls, accuracy, and TCS error percentage calculator.",
+    defaultKeywords: ["SSC 2000 Key Depressions", "SSC CGL DEST Typing Test", "SSC Typing Test 15 Minutes", "TCS Typing Simulator 2000 Key Depressions"]
   },
   {
     path: "/about",

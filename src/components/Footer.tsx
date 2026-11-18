@@ -135,6 +135,13 @@ export default function Footer() {
 
         </div>
 
+        {/* Government Affiliation Disclaimer */}
+        <div className="pt-6 pb-2 text-center text-[11px] leading-relaxed text-slate-500 border-b border-slate-800/80">
+          <p>
+            <strong className="text-slate-400 font-bold">Government Non-Affiliation Disclaimer:</strong> SSCZone is an independent educational portal and is NOT affiliated with, sponsored by, or endorsed by the Staff Selection Commission (SSC), Union Public Service Commission (UPSC), Railway Recruitment Boards (RRB), or any Government entity. All exam names, logos, and trademarks belong to their respective government authorities.
+          </p>
+        </div>
+
         {/* Bottom Bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
           <p>© {new Date().getFullYear()} {config.copyrightText}</p>

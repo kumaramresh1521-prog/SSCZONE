@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import MobileBottomNav from "@/components/MobileBottomNav";
 import GuestSessionGateModal from "@/components/GuestSessionGateModal";
 import AnnouncementModal from "@/components/AnnouncementModal";
+import TopGovernmentDisclaimer from "@/components/TopGovernmentDisclaimer";
 
 export default function MainLayoutWrapper({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -21,6 +22,7 @@ export default function MainLayoutWrapper({ children }: { children: React.ReactN
   if (isTestRoute) {
     return (
       <main className="h-screen w-full max-w-full overflow-hidden bg-[#F0F2F5] text-slate-900 font-sans">
+        <TopGovernmentDisclaimer />
         <GuestSessionGateModal />
         {children}
       </main>
@@ -29,6 +31,7 @@ export default function MainLayoutWrapper({ children }: { children: React.ReactN
 
   return (
     <div className="min-h-screen w-full max-w-full overflow-x-clip bg-slate-50 text-slate-900 antialiased font-sans flex flex-col justify-between">
+      <TopGovernmentDisclaimer />
       <UserNav />
       <GuestSessionGateModal />
       <AnnouncementModal />

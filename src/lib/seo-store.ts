@@ -90,7 +90,7 @@ export const DEFAULT_SEO_CONFIG: SeoConfigData = {
   },
   pageOverrides: {
     "/papers": {
-      title: "SSC PYQ Shift Papers 2026 Live — Official Shift Papers CBT Test",
+      title: "SSC PYQ Shift Papers 2026 Live — SSC PYQ Shift Papers CBT Test",
       description: "Attempt official SSC CGL, CHSL, CPO previous year shift papers in online CBT exam mode with instant scorecards and detailed solutions."
     },
     "/blog": {

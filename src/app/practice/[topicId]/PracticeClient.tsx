@@ -23,8 +23,10 @@ import {
   Shuffle,
   ZoomIn,
   ZoomOut,
-  Maximize2
+  Maximize2,
+  ExternalLink
 } from "lucide-react";
+import { getQuestionCanonicalPath } from "@/lib/question-seo";
 
 import { translateToHindi, translateSingleQuestion } from "@/lib/translator";
 import { resolveAssetUrl } from "@/lib/utils";
@@ -1456,6 +1458,15 @@ export default function PracticeClient({
                               <div className="flex items-center gap-1.5 shrink-0">
                                 <BookmarkButton questionId={item.id} />
                                 <ReportButton questionId={item.id} questionText={item.question_text} />
+                                <Link
+                                  href={getQuestionCanonicalPath(item.id, item.question_text)}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="p-1.5 rounded-lg border border-gray-200 text-gray-400 hover:text-blue-600 hover:border-blue-300 transition-colors"
+                                  title="Open Question SEO Page"
+                                >
+                                  <ExternalLink className="h-3.5 w-3.5" />
+                                </Link>
                               </div>
                             </div>
 
@@ -1682,6 +1693,15 @@ export default function PracticeClient({
                         <div className="flex items-center gap-1.5 shrink-0">
                           <BookmarkButton questionId={q.id} />
                           <ReportButton questionId={q.id} questionText={q.question_text} />
+                          <Link
+                            href={getQuestionCanonicalPath(q.id, q.question_text)}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-1.5 rounded-lg border border-gray-200 text-gray-400 hover:text-blue-600 hover:border-blue-300 transition-colors"
+                            title="Open Question SEO Page"
+                          >
+                            <ExternalLink className="h-3.5 w-3.5" />
+                          </Link>
                         </div>
                       </div>
 

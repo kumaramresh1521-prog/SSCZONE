@@ -1,6 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
-import { buildQuestionMetadata, getQuestionCanonicalPath, generateQuestionJsonLd } from "@/lib/question-seo";
+import {
+  buildQuestionMetadata,
+  getQuestionCanonicalPath,
+  getPyqQuestionCanonicalPath,
+  generateQuestionJsonLd,
+} from "@/lib/question-seo";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "";
 const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "";
@@ -14,73 +19,164 @@ export async function GET(req: NextRequest) {
     const supabase = createClient(supabaseUrl, supabaseKey);
 
     if (idParam) {
-      const qId = parseInt(idParam, 10);
+      const isExplicitPyq = idParam.toLowerCase().startsWith("pyq-") || idParam.toLowerCase().startsWith("pq-");
+      const rawNum = idParam.replace(/^(?:pyq|pq)-/i, "");
+      const qId = parseInt(rawNum, 10);
+
       if (isNaN(qId) || qId <= 0) {
         return NextResponse.json({ success: false, error: "Invalid question ID" }, { status: 400 });
       }
 
-      const { data: question, error } = await supabase
+      // If explicit PYQ requested or fallback check
+      if (isExplicitPyq) {
+        const { data: pq } = await supabase
+          .from("paper_questions")
+          .select("*, previous_papers(id, title, year, exam_id, exams(id, title, slug))")
+          .eq("id", qId)
+          .maybeSingle();
+
+        if (pq) {
+          const paperTitle = pq.previous_papers?.title || "Official SSC PYQ";
+          const canonicalPath = getPyqQuestionCanonicalPath(pq.id, pq.question_text);
+          const fullUrl = `https://ssczone.com${canonicalPath}`;
+          const metadata = buildQuestionMetadata(pq, fullUrl, undefined, undefined, true, paperTitle);
+          const jsonLd = generateQuestionJsonLd(pq, fullUrl, undefined, undefined, true, paperTitle, pq.paper_id);
+
+          return NextResponse.json({
+            success: true,
+            is_pyq: true,
+            canonical_path: canonicalPath,
+            full_url: fullUrl,
+            metadata: {
+              title: metadata.title,
+              description: metadata.description,
+            },
+            json_ld: jsonLd,
+            question: {
+              id: pq.id,
+              paper_id: pq.paper_id,
+              paper_title: paperTitle,
+              question_number: pq.question_number,
+              correct_answer: pq.correct_answer,
+              question_text: pq.question_text,
+              explanation: pq.explanation,
+              has_image: false,
+            },
+            seo: {
+              title: metadata.title,
+              description: metadata.description,
+              canonicalPath,
+              fullUrl,
+              jsonLd,
+            },
+          });
+        }
+      }
+
+      // Check standard questions table
+      const { data: question } = await supabase
         .from("questions")
         .select("*, topics(id, title, subjects(id, title, exams(id, title)))")
         .eq("id", qId)
         .maybeSingle();
 
-      if (error || !question) {
-        return NextResponse.json({ success: false, error: "Question not found" }, { status: 404 });
+      if (question) {
+        const topicTitle = question.topics?.title;
+        const examTitle = question.topics?.subjects?.exams?.title;
+        const canonicalPath = getQuestionCanonicalPath(question.id, question.question_text);
+        const fullUrl = `https://ssczone.com${canonicalPath}`;
+        const metadata = buildQuestionMetadata(question, fullUrl, topicTitle, examTitle);
+        const jsonLd = generateQuestionJsonLd(question, fullUrl, topicTitle, examTitle);
+
+        return NextResponse.json({
+          success: true,
+          is_pyq: false,
+          canonical_path: canonicalPath,
+          full_url: fullUrl,
+          metadata: {
+            title: metadata.title,
+            description: metadata.description,
+          },
+          json_ld: jsonLd,
+          question: {
+            id: question.id,
+            topic_id: question.topic_id,
+            topic_title: topicTitle,
+            exam_title: examTitle,
+            exam_tag: question.exam_tag,
+            correct_answer: question.correct_answer,
+            question_text: question.question_text,
+            explanation: question.explanation,
+            image_url: question.image_url,
+            option_a_image_url: question.option_a_image_url,
+            option_b_image_url: question.option_b_image_url,
+            option_c_image_url: question.option_c_image_url,
+            option_d_image_url: question.option_d_image_url,
+            has_image: !!question.image_url || !!(question.option_a_image_url || question.option_b_image_url || question.option_c_image_url || question.option_d_image_url),
+          },
+          seo: {
+            title: metadata.title,
+            description: metadata.description,
+            canonicalPath,
+            fullUrl,
+            jsonLd,
+          },
+        });
       }
 
-      const topicTitle = question.topics?.title;
-      const examTitle = question.topics?.subjects?.exams?.title;
-      const canonicalPath = getQuestionCanonicalPath(question.id, question.question_text);
-      const fullUrl = `https://ssczone.com${canonicalPath}`;
-      const metadata = buildQuestionMetadata(question, fullUrl, topicTitle, examTitle);
-      const jsonLd = generateQuestionJsonLd(question, fullUrl, topicTitle, examTitle);
+      // Smart fallback: check paper_questions if not found in questions
+      const { data: fallbackPq } = await supabase
+        .from("paper_questions")
+        .select("*, previous_papers(id, title, year, exam_id, exams(id, title, slug))")
+        .eq("id", qId)
+        .maybeSingle();
 
-      return NextResponse.json({
-        success: true,
-        canonical_path: canonicalPath,
-        full_url: fullUrl,
-        metadata: {
-          title: metadata.title,
-          description: metadata.description,
-        },
-        json_ld: jsonLd,
-        question: {
-          id: question.id,
-          topic_id: question.topic_id,
-          topic_title: topicTitle,
-          exam_title: examTitle,
-          exam_tag: question.exam_tag,
-          correct_answer: question.correct_answer,
-          question_text: question.question_text,
-          explanation: question.explanation,
-          image_url: question.image_url,
-          option_a_image_url: question.option_a_image_url,
-          option_b_image_url: question.option_b_image_url,
-          option_c_image_url: question.option_c_image_url,
-          option_d_image_url: question.option_d_image_url,
-          has_image: !!question.image_url || !!(question.option_a_image_url || question.option_b_image_url || question.option_c_image_url || question.option_d_image_url),
-        },
-        seo: {
-          title: metadata.title,
-          description: metadata.description,
-          canonicalPath,
-          fullUrl,
-          jsonLd,
-        },
-      });
+      if (fallbackPq) {
+        const paperTitle = fallbackPq.previous_papers?.title || "Official SSC PYQ";
+        const canonicalPath = getPyqQuestionCanonicalPath(fallbackPq.id, fallbackPq.question_text);
+        const fullUrl = `https://ssczone.com${canonicalPath}`;
+        const metadata = buildQuestionMetadata(fallbackPq, fullUrl, undefined, undefined, true, paperTitle);
+        const jsonLd = generateQuestionJsonLd(fallbackPq, fullUrl, undefined, undefined, true, paperTitle, fallbackPq.paper_id);
+
+        return NextResponse.json({
+          success: true,
+          is_pyq: true,
+          canonical_path: canonicalPath,
+          full_url: fullUrl,
+          metadata: {
+            title: metadata.title,
+            description: metadata.description,
+          },
+          json_ld: jsonLd,
+          question: {
+            id: fallbackPq.id,
+            paper_id: fallbackPq.paper_id,
+            paper_title: paperTitle,
+            question_number: fallbackPq.question_number,
+            correct_answer: fallbackPq.correct_answer,
+            question_text: fallbackPq.question_text,
+            explanation: fallbackPq.explanation,
+            has_image: false,
+          },
+          seo: {
+            title: metadata.title,
+            description: metadata.description,
+            canonicalPath,
+            fullUrl,
+            jsonLd,
+          },
+        });
+      }
+
+      return NextResponse.json({ success: false, error: "Question not found" }, { status: 404 });
     }
 
     if (searchParam) {
-      const { data: questions, error } = await supabase
+      const { data: questions } = await supabase
         .from("questions")
         .select("id, question_text, topic_id, topics(title)")
         .ilike("question_text", `%${searchParam}%`)
         .limit(10);
-
-      if (error) {
-        return NextResponse.json({ success: false, error: error.message }, { status: 500 });
-      }
 
       const results = (questions || []).map((q: any) => ({
         id: q.id,

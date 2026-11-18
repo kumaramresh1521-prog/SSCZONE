@@ -20,18 +20,30 @@ export function slugifyText(text: string, maxLength: number = 60): string {
   return clean || "question";
 }
 
-export function parseQuestionSlug(param: string): { id: number; slug: string } {
+export function parseQuestionSlug(param: string): { id: number; slug: string; isPyq: boolean } {
+  // Check for PYQ prefix: pyq-1234-slug or pq-1234-slug
+  const pyqMatch = param.match(/^(?:pyq|pq)-(\d+)(?:-(.*))?$/i);
+  if (pyqMatch) {
+    return { id: parseInt(pyqMatch[1], 10), slug: pyqMatch[2] || "", isPyq: true };
+  }
+
+  // Standard question: 1234-slug or 1234
   const match = param.match(/^(\d+)(?:-(.*))?$/);
   if (!match) {
     const numeric = parseInt(param, 10);
-    return { id: isNaN(numeric) ? 0 : numeric, slug: "" };
+    return { id: isNaN(numeric) ? 0 : numeric, slug: "", isPyq: false };
   }
-  return { id: parseInt(match[1], 10), slug: match[2] || "" };
+  return { id: parseInt(match[1], 10), slug: match[2] || "", isPyq: false };
 }
 
 export function getQuestionCanonicalPath(id: number, text?: string): string {
   const slug = text ? slugifyText(text) : "";
   return slug ? `/question/${id}-${slug}` : `/question/${id}`;
+}
+
+export function getPyqQuestionCanonicalPath(id: number, text?: string): string {
+  const slug = text ? slugifyText(text) : "";
+  return slug ? `/question/pyq-${id}-${slug}` : `/question/pyq-${id}`;
 }
 
 export function extractCleanQuestionPrompt(fullText: string): string {
@@ -53,16 +65,26 @@ export function cleanExamTag(tag?: string | null): string {
   return clean;
 }
 
-export function buildQuestionMetadata(question: any, fullUrl: string, topicTitle?: string, examTitle?: string): Metadata {
+export function buildQuestionMetadata(
+  question: any,
+  fullUrl: string,
+  topicTitle?: string,
+  examTitle?: string,
+  isPyqPaper?: boolean,
+  paperTitle?: string
+): Metadata {
   const rawPrompt = extractCleanQuestionPrompt(question.question_text || "");
   const cleanPrompt = (rawPrompt.replace(/\s+/g, " ").trim()) || (question.image_url ? `Figure Question #${question.id}` : `SSC Question #${question.id}`);
   
-  const pyqTag = cleanExamTag(question.exam_tag);
+  const pyqTag = paperTitle ? paperTitle : cleanExamTag(question.exam_tag);
 
   let titleString: string;
   let description: string;
 
-  if (pyqTag) {
+  if (isPyqPaper || paperTitle) {
+    titleString = `${cleanPrompt.slice(0, 55)}... — ${pyqTag} Official PYQ Solution | SSCZone`;
+    description = `Official PYQ Solution [${pyqTag}]: Read verified answer and step-by-step explanation for: "${cleanPrompt.slice(0, 130)}...". Practice thousands of SSC previous year questions online on SSCZone.`;
+  } else if (pyqTag) {
     titleString = `${cleanPrompt.slice(0, 55)}... — ${pyqTag} Solution | SSCZone`;
     description = `Official PYQ [${pyqTag}]: Read verified answer and step-by-step explanation for: "${cleanPrompt.slice(0, 130)}...". Practice thousands of SSC previous year questions online on SSCZone.`;
   } else {
@@ -81,7 +103,7 @@ export function buildQuestionMetadata(question: any, fullUrl: string, topicTitle
       absolute: titleString,
     },
     description,
-    keywords: pyqTag
+    keywords: (isPyqPaper || pyqTag)
       ? [pyqTag, "SSC PYQ", "Previous Year Question", topicTitle || "SSC Exam", "Answer Key", "SSC Solution", "SSCZone"]
       : [topicTitle || "SSC Exam", examTitle || "SSC", "Question and Answer", "SSC Mock Test", "SSC Practice", "SSCZone"],
     alternates: {
@@ -104,11 +126,19 @@ export function buildQuestionMetadata(question: any, fullUrl: string, topicTitle
   };
 }
 
-export function generateQuestionJsonLd(question: any, fullUrl: string, topicTitle?: string, examTitle?: string) {
+export function generateQuestionJsonLd(
+  question: any,
+  fullUrl: string,
+  topicTitle?: string,
+  examTitle?: string,
+  isPyqPaper?: boolean,
+  paperTitle?: string,
+  paperId?: number
+) {
   const rawPrompt = extractCleanQuestionPrompt(question.question_text || "");
   const cleanPrompt = (rawPrompt.replace(/\s+/g, " ").trim()) || (question.image_url ? `Figure Question #${question.id}` : `SSC Question #${question.id}`);
   const explanation = question.explanation || `Option (${question.correct_answer}) is the correct answer.`;
-  const pyqTag = cleanExamTag(question.exam_tag);
+  const pyqTag = paperTitle ? paperTitle : cleanExamTag(question.exam_tag);
 
   const optionsMap: Record<string, string> = {
     A: question.option_a || "",
@@ -123,9 +153,63 @@ export function generateQuestionJsonLd(question: any, fullUrl: string, topicTitl
   const correctOptImg = question[`option_${correctLetter.toLowerCase()}_image_url`];
   const resolvedCorrectOptImg = correctOptImg ? resolveAssetUrl(correctOptImg) : null;
 
-  const pageName = pyqTag 
+  const pageName = (isPyqPaper || pyqTag)
     ? `${cleanPrompt} — ${pyqTag} Solution`
     : `${cleanPrompt} — ${topicTitle || "SSC Exam"} Solution`;
+
+  const breadcrumbsList = isPyqPaper
+    ? [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ssczone.com",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "PYQ Shift Papers",
+          "item": "https://ssczone.com/papers",
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": paperTitle || "Shift Paper",
+          "item": paperId ? `https://ssczone.com/take-test/${paperId}` : "https://ssczone.com/papers",
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": `Question #${question.question_number || question.id}`,
+          "item": fullUrl,
+        },
+      ]
+    : [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ssczone.com",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": examTitle || "SSC Exams",
+          "item": "https://ssczone.com/exams",
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": pyqTag ? `${pyqTag} (Official PYQ)` : (topicTitle || "Practice"),
+          "item": pyqTag ? "https://ssczone.com/papers" : (question.topic_id ? `https://ssczone.com/practice/${question.topic_id}` : "https://ssczone.com"),
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": `Question #${question.id}`,
+          "item": fullUrl,
+        },
+      ];
 
   return {
     "@context": "https://schema.org",
@@ -163,32 +247,7 @@ export function generateQuestionJsonLd(question: any, fullUrl: string, topicTitl
       {
         "@type": "BreadcrumbList",
         "@id": `${fullUrl}#breadcrumb`,
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://ssczone.com",
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": examTitle || "SSC Exams",
-            "item": "https://ssczone.com/exams",
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": pyqTag ? `${pyqTag} (Official PYQ)` : (topicTitle || "Practice"),
-            "item": pyqTag ? "https://ssczone.com/papers" : `https://ssczone.com/practice/${question.topic_id}`,
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "name": `Question #${question.id}`,
-            "item": fullUrl,
-          },
-        ],
+        "itemListElement": breadcrumbsList,
       },
     ],
   };

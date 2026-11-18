@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { createClient } from "@supabase/supabase-js";
 import { getPublishedSeoConfigAsync } from "@/lib/seo-store";
 import { getChapterNotes } from "@/lib/chapter-notes-store";
-import { getQuestionCanonicalPath } from "@/lib/question-seo";
+import { getQuestionCanonicalPath, getPyqQuestionCanonicalPath } from "@/lib/question-seo";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://placeholder.supabase.co";
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "placeholder-key";
@@ -160,5 +160,34 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     console.error("Sitemap questions query error:", e);
   }
 
-  return [...staticRoutes, ...examRoutes, ...topicRoutes, ...blogRoutes, ...paperRoutes, ...noteRoutes, ...questionRoutes];
+  // Dynamic PYQ Shift Paper Question routes for Google SEO & Answer Box Ranking
+  let pyqQuestionRoutes: MetadataRoute.Sitemap = [];
+  try {
+    const { data: paperQuestions } = await supabase
+      .from("paper_questions")
+      .select("id, question_text")
+      .order("id", { ascending: false })
+      .limit(15000);
+    if (paperQuestions) {
+      pyqQuestionRoutes = paperQuestions.map((pq) => ({
+        url: `${baseUrl}${getPyqQuestionCanonicalPath(pq.id, pq.question_text)}`,
+        lastModified: new Date(),
+        changeFrequency: "monthly",
+        priority: 0.65,
+      }));
+    }
+  } catch (e) {
+    console.error("Sitemap pyq questions query error:", e);
+  }
+
+  return [
+    ...staticRoutes,
+    ...examRoutes,
+    ...topicRoutes,
+    ...blogRoutes,
+    ...paperRoutes,
+    ...noteRoutes,
+    ...questionRoutes,
+    ...pyqQuestionRoutes,
+  ];
 }

@@ -44,8 +44,10 @@ import {
   BookOpen,
   LayoutGrid,
   Lock,
-  Globe
+  Globe,
+  ExternalLink
 } from "lucide-react";
+import { getPyqQuestionCanonicalPath } from "@/lib/question-seo";
 import { isPaperTranslatorAllowed } from "@/lib/paper-pdf-store";
 import { promptGuestLoginGate } from "@/components/GuestSessionGateModal";
 
@@ -1962,6 +1964,16 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                           Official Key: {q.correct_answer}
                         </span>
                         <ReportButton questionId={q.id} questionText={q.question_text} showLabel={true} />
+                        <Link
+                          href={getPyqQuestionCanonicalPath(q.id, q.question_text)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 text-[11px] font-bold text-slate-500 hover:text-blue-600 bg-slate-100 hover:bg-blue-50 px-2 py-0.5 rounded-md transition-colors"
+                          title="View Question Solution Page"
+                        >
+                          <ExternalLink className="h-3 w-3" />
+                          <span>Question Page</span>
+                        </Link>
                       </div>
                     </div>
 
@@ -2056,6 +2068,16 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                         Official Key: {currentReviewQ.correct_answer}
                       </span>
                       <ReportButton questionId={currentReviewQ.id} questionText={currentReviewQ.question_text} showLabel={true} />
+                      <Link
+                        href={getPyqQuestionCanonicalPath(currentReviewQ.id, currentReviewQ.question_text)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-[11px] font-bold text-slate-500 hover:text-blue-600 bg-slate-100 hover:bg-blue-50 px-2.5 py-1 rounded-md transition-colors"
+                        title="View Question Solution Page"
+                      >
+                        <ExternalLink className="h-3 w-3" />
+                        <span>Question Page</span>
+                      </Link>
                     </div>
                   </div>
 

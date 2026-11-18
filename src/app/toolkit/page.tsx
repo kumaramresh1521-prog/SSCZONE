@@ -114,8 +114,15 @@ export default function ToolkitHubPage() {
     <div className="min-h-screen bg-slate-50 text-slate-900 pb-20 font-sans">
       
       {/* HEADER BANNER */}
-      <div className="bg-gradient-to-r from-blue-700 via-blue-600 to-indigo-700 text-white py-14 px-4 sm:px-6 shadow-lg">
+      <div className="bg-gradient-to-r from-blue-700 via-blue-600 to-indigo-700 text-white py-12 px-4 sm:px-6 shadow-lg">
         <div className="max-w-6xl mx-auto text-center">
+          {/* Breadcrumb Navigation */}
+          <nav className="flex items-center justify-center gap-2 text-xs font-bold text-blue-200 mb-4">
+            <Link href="/" className="hover:text-white transition-colors">Home</Link>
+            <span>/</span>
+            <span className="text-white">Candidate Toolkit</span>
+          </nav>
+
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/30 text-white font-extrabold text-xs uppercase tracking-wider mb-4 border border-blue-300/40">
             <Wrench className="w-4 h-4 text-amber-300" /> SSC Candidate Utilities Hub 2026
           </div>
@@ -277,6 +284,131 @@ export default function ToolkitHubPage() {
                 </div>
               );
             })}
+          </div>
+        </div>
+
+        {/* ── COMPLETE SSC EXAMINATION ECOSYSTEM CROSS-LINKS ── */}
+        <div className="mt-14 max-w-5xl mx-auto bg-gradient-to-br from-slate-900 to-indigo-950 text-white rounded-3xl p-6 sm:p-8 shadow-xl space-y-6">
+          <div className="text-center">
+            <span className="px-3.5 py-1 rounded-full bg-blue-500/30 text-blue-200 font-extrabold text-[11px] uppercase border border-blue-400/30">
+              Complete Preparation Hub
+            </span>
+            <h3 className="text-2xl font-black text-white mt-2">
+              Accelerate Your SSC Journey with SSCZone Resources
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-300 mt-1 max-w-2xl mx-auto">
+              From day 1 syllabus mapping to exam hall speed tests and final answer key analysis:
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-2">
+            <Link
+              href="/papers"
+              className="bg-white/5 border border-white/10 hover:border-blue-400/40 p-4 rounded-2xl flex flex-col justify-between group transition-all hover:bg-white/10"
+            >
+              <div>
+                <span className="text-xl mb-1 block">📄</span>
+                <h4 className="text-sm font-black text-white group-hover:text-blue-300 transition-colors">
+                  Official PYQ Shift Papers
+                </h4>
+                <p className="text-xs text-slate-300 mt-1 line-clamp-2">
+                  100+ SSC CGL, CHSL, and CPO shift papers with bilingual solutions and free PDF downloads.
+                </p>
+              </div>
+              <span className="mt-3 text-[11px] font-bold text-amber-300 flex items-center gap-1">
+                Explore Papers &rarr;
+              </span>
+            </Link>
+
+            <Link
+              href="/syllabus"
+              className="bg-white/5 border border-white/10 hover:border-purple-400/40 p-4 rounded-2xl flex flex-col justify-between group transition-all hover:bg-white/10"
+            >
+              <div>
+                <span className="text-xl mb-1 block">⭐</span>
+                <h4 className="text-sm font-black text-white group-hover:text-purple-300 transition-colors">
+                  Master Syllabus Tracker
+                </h4>
+                <p className="text-xs text-slate-300 mt-1 line-clamp-2">
+                  Interactive checklist for CGL 2026, CHSL &amp; CPO with 3-Pillar tracking and OneNote scratchpads.
+                </p>
+              </div>
+              <span className="mt-3 text-[11px] font-bold text-amber-300 flex items-center gap-1">
+                Open Syllabus &rarr;
+              </span>
+            </Link>
+
+            <Link
+              href="/speed-test"
+              className="bg-white/5 border border-white/10 hover:border-emerald-400/40 p-4 rounded-2xl flex flex-col justify-between group transition-all hover:bg-white/10"
+            >
+              <div>
+                <span className="text-xl mb-1 block">⏱️</span>
+                <h4 className="text-sm font-black text-white group-hover:text-emerald-300 transition-colors">
+                  Speed Test Challenge
+                </h4>
+                <p className="text-xs text-slate-300 mt-1 line-clamp-2">
+                  Practice 25 questions in 15 minutes or 20-second rapid-fire blitz mode across 12,200+ MCQs.
+                </p>
+              </div>
+              <span className="mt-3 text-[11px] font-bold text-amber-300 flex items-center gap-1">
+                Start Speed Test &rarr;
+              </span>
+            </Link>
+
+            <Link
+              href="/daily-quiz"
+              className="bg-white/5 border border-white/10 hover:border-amber-400/40 p-4 rounded-2xl flex flex-col justify-between group transition-all hover:bg-white/10"
+            >
+              <div>
+                <span className="text-xl mb-1 block">⚡</span>
+                <h4 className="text-sm font-black text-white group-hover:text-amber-300 transition-colors">
+                  Daily Free Quiz Portal
+                </h4>
+                <p className="text-xs text-slate-300 mt-1 line-clamp-2">
+                  Subject-wise 10-question mini mock tests with instant percentiles and KaTeX step-by-step solutions.
+                </p>
+              </div>
+              <span className="mt-3 text-[11px] font-bold text-amber-300 flex items-center gap-1">
+                Play Daily Quiz &rarr;
+              </span>
+            </Link>
+
+            <Link
+              href="/notes"
+              className="bg-white/5 border border-white/10 hover:border-indigo-400/40 p-4 rounded-2xl flex flex-col justify-between group transition-all hover:bg-white/10"
+            >
+              <div>
+                <span className="text-xl mb-1 block">📚</span>
+                <h4 className="text-sm font-black text-white group-hover:text-indigo-300 transition-colors">
+                  Subject Notes &amp; Formulas
+                </h4>
+                <p className="text-xs text-slate-300 mt-1 line-clamp-2">
+                  High-yield formula cheat sheets, English grammar rules, and GS static revision capsules.
+                </p>
+              </div>
+              <span className="mt-3 text-[11px] font-bold text-amber-300 flex items-center gap-1">
+                Read Notes &rarr;
+              </span>
+            </Link>
+
+            <Link
+              href="/mocks"
+              className="bg-white/5 border border-white/10 hover:border-rose-400/40 p-4 rounded-2xl flex flex-col justify-between group transition-all hover:bg-white/10"
+            >
+              <div>
+                <span className="text-xl mb-1 block">🎯</span>
+                <h4 className="text-sm font-black text-white group-hover:text-rose-300 transition-colors">
+                  Full CBT Mock Tests
+                </h4>
+                <p className="text-xs text-slate-300 mt-1 line-clamp-2">
+                  Real TCS examination hall interface with split-screen, timer countdown, and question palette.
+                </p>
+              </div>
+              <span className="mt-3 text-[11px] font-bold text-amber-300 flex items-center gap-1">
+                Take Mock Test &rarr;
+              </span>
+            </Link>
           </div>
         </div>
       </div>

@@ -25,7 +25,9 @@ import {
   Sparkles,
   Maximize2,
   ExternalLink,
-  BookOpen
+  BookOpen,
+  HelpCircle,
+  ArrowRight
 } from "lucide-react";
 import Link from "next/link";
 import {
@@ -58,6 +60,7 @@ export default function TypingPage() {
   const [highlightWord, setHighlightWord] = useState<boolean>(true);
   const [showSettingsDrawer, setShowSettingsDrawer] = useState<boolean>(false);
   const [showRulesModal, setShowRulesModal] = useState<boolean>(false);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   // Engine States
   const [typedInput, setTypedInput] = useState<string>("");
@@ -744,6 +747,226 @@ export default function TypingPage() {
         </div>
 
       </main>
+
+      {/* ══════════════════════════════════════════════════════════════════
+          ON-PAGE EDUCATIONAL GUIDE & TCS EXAM HALL STANDARDS (SEO CONTENT)
+      ══════════════════════════════════════════════════════════════════ */}
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 mt-12 pb-16 space-y-8 font-sans">
+        
+        {/* EVALUATION GUIDE & FORMULA */}
+        <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6">
+          <div className="border-b border-slate-100 pb-4">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-[11px] font-black uppercase tracking-wider mb-2">
+              <BookOpen className="w-3.5 h-3.5" /> TCS Exam Hall Evaluation Formula
+            </div>
+            <h2 className="text-xl sm:text-2xl font-black text-slate-900">
+              SSC Typing Speed &amp; Error Calculation Formula Explained
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
+              Official evaluation method used by Staff Selection Commission (SSC) and Tata Consultancy Services (TCS iON) during Data Entry Skill Test (DEST) for CGL Tier 2, CHSL, and DEO cadres.
+            </p>
+          </div>
+
+          {/* Formula Display Box */}
+          <div className="bg-slate-900 text-white rounded-2xl p-5 overflow-x-auto shadow-inner font-mono text-center space-y-2">
+            <span className="text-[10px] text-amber-400 uppercase tracking-widest font-sans font-bold">
+              Official TCS Error Percentage Formula
+            </span>
+            <div className="text-sm sm:text-base font-bold text-blue-200 py-1">
+              Error Percentage (%) = [ (Full Mistakes + (Half Mistakes / 2)) / Total Words Typed ] × 100
+            </div>
+            <p className="text-[11px] text-slate-400 font-sans">
+              * Note: Total Words is standardly calculated as Total Key Depressions divided by 5.
+            </p>
+          </div>
+
+          {/* Full vs Half Mistakes Comparison */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+            <div className="rounded-2xl border border-rose-200 bg-rose-50/50 p-5 space-y-2">
+              <h3 className="font-black text-rose-950 uppercase tracking-wide flex items-center gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-rose-600" /> Full Mistakes (100% Penalty)
+              </h3>
+              <ul className="text-rose-900 space-y-1.5 text-[11px] font-medium leading-relaxed">
+                <li>• <b>Omission of Word:</b> Skipping any word, number, or punctuation present in the master text.</li>
+                <li>• <b>Substitution of Word:</b> Typing an entirely different word in place of the original word.</li>
+                <li>• <b>Addition of Word:</b> Typing extra words that do not exist in the master passage.</li>
+                <li>• <b>Repeated Group of Words:</b> Accidentally typing a phrase or line twice.</li>
+              </ul>
+            </div>
+
+            <div className="rounded-2xl border border-amber-200 bg-amber-50/50 p-5 space-y-2">
+              <h3 className="font-black text-amber-950 uppercase tracking-wide flex items-center gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-amber-500" /> Half Mistakes (50% Penalty)
+              </h3>
+              <ul className="text-amber-900 space-y-1.5 text-[11px] font-medium leading-relaxed">
+                <li>• <b>Spacing Error:</b> Leaving no space between words (e.g. "andthen") or leaving unwanted space inside a word ("b ook").</li>
+                <li>• <b>Capitalization Mistake:</b> Typing lowercase instead of uppercase or vice-versa (e.g. "delhi" instead of "Delhi").</li>
+                <li>• <b>Punctuation Error:</b> Omitting or mistyping commas, full stops, hyphens, or quotation marks.</li>
+                <li>• <b>Spelling Mistake:</b> Transposition, omission, or repetition of letters inside a word.</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* QUALIFYING STANDARDS TABLE */}
+          <div className="overflow-x-auto mt-6">
+            <h3 className="text-sm font-black text-slate-900 uppercase tracking-wide mb-3">
+              Official SSC Typing Qualifying Speed &amp; Error Cutoffs
+            </h3>
+            <table className="w-full text-xs text-left text-slate-700">
+              <thead className="bg-slate-50 text-slate-900 font-black uppercase tracking-wider border-y border-slate-200">
+                <tr>
+                  <th className="py-3 px-4">Examination</th>
+                  <th className="py-3 px-4">Duration</th>
+                  <th className="py-3 px-4">Required Key Depressions</th>
+                  <th className="py-3 px-4">Approx WPM</th>
+                  <th className="py-3 px-4">Max Allowed Mistakes (UR)</th>
+                  <th className="py-3 px-4">Max Allowed (OBC/SC/ST)</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100 font-medium">
+                <tr>
+                  <td className="py-3 px-4 font-bold text-slate-900">SSC CGL Tier 2 (DEST)</td>
+                  <td className="py-3 px-4 font-mono font-bold">15 Minutes</td>
+                  <td className="py-3 px-4 font-bold text-blue-700">2,000 Key Depressions</td>
+                  <td className="py-3 px-4 font-mono">≈ 27 WPM</td>
+                  <td className="py-3 px-4 text-emerald-700 font-black">5% Max Error</td>
+                  <td className="py-3 px-4 text-emerald-700 font-black">7% Max Error</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold text-slate-900">SSC CGL Tax Assistant / CBIC</td>
+                  <td className="py-3 px-4 font-mono font-bold">15 Minutes</td>
+                  <td className="py-3 px-4 font-bold text-blue-700">2,000 Key Depressions</td>
+                  <td className="py-3 px-4 font-mono">≈ 27 WPM</td>
+                  <td className="py-3 px-4 text-amber-700 font-black">5% Strict Cutoff</td>
+                  <td className="py-3 px-4 text-amber-700 font-black">7% Strict Cutoff</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold text-slate-900">SSC CHSL (LDC / JSA)</td>
+                  <td className="py-3 px-4 font-mono font-bold">10 Minutes</td>
+                  <td className="py-3 px-4 font-bold text-blue-700">1,750 Key Depressions</td>
+                  <td className="py-3 px-4 font-mono">≈ 35 WPM (English)</td>
+                  <td className="py-3 px-4 text-emerald-700 font-black">7% Max Error</td>
+                  <td className="py-3 px-4 text-emerald-700 font-black">10% Max Error</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold text-slate-900">SSC DEO (Data Entry Operator)</td>
+                  <td className="py-3 px-4 font-mono font-bold">15 Minutes</td>
+                  <td className="py-3 px-4 font-bold text-blue-700">3,700–4,000 Key Depressions</td>
+                  <td className="py-3 px-4 font-mono">≈ 50 WPM</td>
+                  <td className="py-3 px-4 text-rose-700 font-black">5% Max Error</td>
+                  <td className="py-3 px-4 text-rose-700 font-black">7% Max Error</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* FREQUENTLY ASKED QUESTIONS */}
+        <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm">
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-black uppercase tracking-wider mb-2">
+              <HelpCircle className="w-3.5 h-3.5" /> Frequently Asked Questions
+            </div>
+            <h2 className="text-xl sm:text-2xl font-black text-slate-900">
+              SSC Typing Test &amp; TCS Exam Hall Simulator FAQs
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 mt-1">
+              Authentic guidance on test rules, keyboards, shortcuts, and backspace usage.
+            </p>
+          </div>
+
+          <div className="space-y-3 max-w-3xl mx-auto">
+            {[
+              {
+                q: "Is backspace and arrow navigation allowed in the official SSC CGL typing test?",
+                a: "YES. You can freely use backspace, delete, and arrow keys to navigate and correct errors within the typed text area during the official 15-minute examination. Shortcuts like Ctrl+A or copy-pasting are strictly disabled."
+              },
+              {
+                q: "What happens if I complete typing the 2000 key depressions before the 15-minute timer ends?",
+                a: "If you finish typing the master passage early, DO NOT leave the exam window. Use the remaining time to carefully re-read your typed text against the master passage and correct any punctuation, capitalization, or spelling mistakes with backspace. You do NOT need to re-type the passage from the beginning unless instructed."
+              },
+              {
+                q: "What keyboard layout and brands are provided at TCS iON exam centers?",
+                a: "TCS examination centers generally provide standard QWERTY English keyboards (typically Dell, HP, Lenovo, or ProDot wired desktop keyboards). Keys may have varying travel depth, so regular practice on standard desktop keyboards is highly recommended."
+              },
+              {
+                q: "How are 2,000 key depressions converted into Words Per Minute (WPM)?",
+                a: "SSC standardizes 1 word as equivalent to 5 keystrokes (key depressions including space). Therefore, 2,000 key depressions equal 400 words. Typing 400 words in 15 minutes gives an effective speed of: 400 / 15 ≈ 26.67 WPM (rounded to 27 WPM)."
+              },
+              {
+                q: "Is the SSC CGL DEST typing test qualifying in nature for all posts?",
+                a: "Yes, DEST is qualifying in nature, meaning marks obtained do not add to your merit rank score. However, qualifying the typing test is MANDATORY for all shortlisted candidates. Failing the typing test disqualifies you from both DEST-mandatory posts (like Tax Assistant, Executive Assistant, ASO) as well as non-DEST posts."
+              }
+            ].map((faq, idx) => {
+              const isOpen = openFaq === idx;
+              return (
+                <div
+                  key={idx}
+                  className="border border-slate-200 rounded-2xl overflow-hidden transition-all"
+                >
+                  <button
+                    onClick={() => setOpenFaq(isOpen ? null : idx)}
+                    className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 font-bold text-xs sm:text-sm text-slate-900 hover:text-blue-600 transition-colors cursor-pointer"
+                  >
+                    <span>{faq.q}</span>
+                    <ChevronDown
+                      className={`w-4 h-4 text-slate-400 shrink-0 transition-transform duration-200 ${
+                        isOpen ? "transform rotate-180 text-blue-600" : ""
+                      }`}
+                    />
+                  </button>
+                  {isOpen && (
+                    <div className="px-4 pb-4 sm:px-5 sm:pb-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                      {faq.a}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* RELATED CANDIDATE TOOLS */}
+        <div className="bg-gradient-to-br from-slate-900 to-indigo-950 text-white rounded-3xl p-6 sm:p-8 shadow-xl">
+          <div className="text-center mb-6">
+            <span className="px-3 py-1 rounded-full bg-blue-500/30 text-blue-200 font-extrabold text-[11px] uppercase border border-blue-400/30">
+              More Free Tools
+            </span>
+            <h3 className="text-xl font-black text-white mt-2">
+              Explore Other Essential SSC Candidate Utilities
+            </h3>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { title: "Photo & Signature Resizer", desc: "Compress photo (20-50 KB) & signature (10-20 KB) in seconds.", href: "/toolkit/photo-resizer" },
+              { title: "SSC Age Calculator", desc: "Calculate exact years, months, and days on crucial cutoff dates.", href: "/toolkit/age-calculator" },
+              { title: "SSC Rank Predictor", desc: "Calculate raw marks and shift difficulty normalization score.", href: "/toolkit/rank-predictor" },
+              { title: "Master Syllabus Tracker", desc: "Track chapter-wise 3-pillar progress for CGL, CHSL, CPO.", href: "/syllabus" },
+            ].map((t, idx) => (
+              <Link
+                key={idx}
+                href={t.href}
+                className="bg-white/5 border border-white/10 hover:border-blue-400/40 p-4 rounded-2xl flex flex-col justify-between group transition-all hover:bg-white/10"
+              >
+                <div>
+                  <h4 className="text-xs font-black text-white group-hover:text-amber-300 transition-colors mb-1">
+                    {t.title}
+                  </h4>
+                  <p className="text-[11px] text-slate-300 line-clamp-2 leading-relaxed">
+                    {t.desc}
+                  </p>
+                </div>
+                <div className="mt-3 flex items-center gap-1 text-[11px] font-bold text-amber-300">
+                  <span>Open Tool</span>
+                  <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+      </div>
 
       {/* ══════════════════════════════════════════════════════════════════
           4. OFFICIAL RESULT SCORECARD MODAL

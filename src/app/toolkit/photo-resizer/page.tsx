@@ -12,13 +12,18 @@ import {
   Sliders,
   ShieldCheck,
   ArrowLeft,
-  FileCheck
+  FileCheck,
+  HelpCircle,
+  ChevronDown,
+  BookOpen,
+  ArrowRight
 } from "lucide-react";
 
 export default function SSCPhotoResizerPage() {
   const [mode, setMode] = useState<"photo" | "signature">("photo");
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [imageSrc, setImageSrc] = useState<string | null>(null);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
   
   // Dimensions & Compression
   const [quality, setQuality] = useState<number>(0.85);
@@ -124,22 +129,35 @@ export default function SSCPhotoResizerPage() {
     <div className="min-h-screen bg-slate-50 text-slate-900 pb-20 font-sans">
       
       {/* HEADER */}
-      <div className="bg-gradient-to-r from-emerald-700 via-emerald-600 to-teal-700 text-white py-8 px-4 sm:px-6 shadow-md">
+      <div className="bg-gradient-to-r from-emerald-700 via-emerald-600 to-teal-700 text-white py-10 px-4 sm:px-6 shadow-md">
         <div className="max-w-5xl mx-auto">
-          <Link href="/toolkit" className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-100 hover:text-white mb-3">
-            <ArrowLeft className="w-4 h-4" /> Back to SSC Toolkit
-          </Link>
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-white text-emerald-700 flex items-center justify-center font-black shadow-md">
-              <ImageIcon className="w-5 h-5" />
+          {/* Breadcrumb Navigation */}
+          <nav className="flex items-center gap-2 text-xs font-bold text-emerald-200 mb-4">
+            <Link href="/" className="hover:text-white transition-colors">Home</Link>
+            <span>/</span>
+            <Link href="/toolkit" className="hover:text-white transition-colors">Candidate Toolkit</Link>
+            <span>/</span>
+            <span className="text-white">Photo &amp; Signature Resizer</span>
+          </nav>
+
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="flex items-center gap-3.5">
+              <div className="w-12 h-12 rounded-2xl bg-white text-emerald-700 flex items-center justify-center font-black shadow-lg shrink-0">
+                <ImageIcon className="w-6 h-6" />
+              </div>
+              <div>
+                <h1 className="text-2xl sm:text-3xl font-black tracking-tight">
+                  SSC Photo &amp; Signature Resizer Tool 2026
+                </h1>
+                <p className="text-emerald-100 text-xs sm:text-sm mt-0.5 font-medium">
+                  Crop &amp; format your photo (20-50 KB) &amp; signature (10-20 KB) to official SSC CGL / CHSL upload specifications.
+                </p>
+              </div>
             </div>
-            <div>
-              <h1 className="text-2xl sm:text-3xl font-black tracking-tight">
-                SSC Photo & Signature Resizer Tool
-              </h1>
-              <p className="text-emerald-100 text-xs sm:text-sm mt-0.5 font-medium">
-                Crop & format your photo (20-50 KB) & signature (10-20 KB) to official SSC CGL / CHSL upload specifications.
-              </p>
+
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 text-white text-xs font-bold border border-white/20 self-start sm:self-auto">
+              <ShieldCheck className="w-4 h-4 text-emerald-300" />
+              <span>100% In-Browser Private</span>
             </div>
           </div>
         </div>
@@ -375,6 +393,168 @@ export default function SSCPhotoResizerPage() {
                 <span><b>Incorrect File Size:</b> Uploading photos under 20 KB or over 50 KB triggers a form validation error on the SSC portal.</span>
               </li>
             </ul>
+          </div>
+        </div>
+
+        {/* HOW TO RESIZE IN 4 EASY STEPS */}
+        <div className="mt-8 bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6">
+          <div className="border-b border-slate-100 pb-4">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-[11px] font-black uppercase tracking-wider mb-2">
+              <CheckCircle2 className="w-3.5 h-3.5" /> Step-by-Step Instructions
+            </div>
+            <h2 className="text-xl sm:text-2xl font-black text-slate-900">
+              How to Resize Photos &amp; Signatures for SSC Online Applications
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 mt-1">
+              Follow these simple steps to ensure your files meet strict SSC validation criteria.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="bg-slate-50 border border-slate-200 p-4 rounded-2xl space-y-2">
+              <span className="w-7 h-7 rounded-xl bg-emerald-600 text-white font-black text-xs flex items-center justify-center">
+                1
+              </span>
+              <h3 className="text-xs font-black text-slate-900">Select Mode</h3>
+              <p className="text-[11px] text-slate-600 leading-relaxed">
+                Choose between <b>Passport Photo</b> (20-50 KB, 3.5×4.5 cm) or <b>Candidate Signature</b> (10-20 KB, 4.0×2.0 cm).
+              </p>
+            </div>
+
+            <div className="bg-slate-50 border border-slate-200 p-4 rounded-2xl space-y-2">
+              <span className="w-7 h-7 rounded-xl bg-emerald-600 text-white font-black text-xs flex items-center justify-center">
+                2
+              </span>
+              <h3 className="text-xs font-black text-slate-900">Upload Image</h3>
+              <p className="text-[11px] text-slate-600 leading-relaxed">
+                Click upload or drag and drop your original image (JPEG, PNG, or WebP). All processing stays inside your browser.
+              </p>
+            </div>
+
+            <div className="bg-slate-50 border border-slate-200 p-4 rounded-2xl space-y-2">
+              <span className="w-7 h-7 rounded-xl bg-emerald-600 text-white font-black text-xs flex items-center justify-center">
+                3
+              </span>
+              <h3 className="text-xs font-black text-slate-900">Adjust File Size</h3>
+              <p className="text-[11px] text-slate-600 leading-relaxed">
+                Use the compression slider if needed until the live size badge turns green (<span className="text-emerald-700 font-bold">Valid for SSC Form</span>).
+              </p>
+            </div>
+
+            <div className="bg-slate-50 border border-slate-200 p-4 rounded-2xl space-y-2">
+              <span className="w-7 h-7 rounded-xl bg-emerald-600 text-white font-black text-xs flex items-center justify-center">
+                4
+              </span>
+              <h3 className="text-xs font-black text-slate-900">Download JPEG</h3>
+              <p className="text-[11px] text-slate-600 leading-relaxed">
+                Click "Download Form-Ready JPEG" to save the calibrated, correctly dimensioned file ready for instant upload.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* FREQUENTLY ASKED QUESTIONS */}
+        <div className="mt-8 bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm">
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-black uppercase tracking-wider mb-2">
+              <HelpCircle className="w-3.5 h-3.5" /> Frequently Asked Questions
+            </div>
+            <h2 className="text-xl sm:text-2xl font-black text-slate-900">
+              SSC Photo &amp; Signature Resizer FAQs
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 mt-1">
+              Clear answers to the most common questions regarding SSC photograph and signature uploads.
+            </p>
+          </div>
+
+          <div className="space-y-3 max-w-3xl mx-auto">
+            {[
+              {
+                q: "Do I need to write my name and date on the photo for SSC CGL 2025/2026?",
+                a: "No! Staff Selection Commission has officially discontinued the requirement of printing candidate name and date on the passport photo. However, the photo must be recent (not older than 3 months from the date of notification) and taken without spectacles or caps."
+              },
+              {
+                q: "Can I wear power reading spectacles in my SSC application photo?",
+                a: "No. SSC explicitly states in official notification guidelines that photographs wearing spectacles, eyewear, tinted glasses, or goggles will be straightaway REJECTED. Even if you wear regular prescription glasses, you MUST take off your glasses for the application photograph."
+              },
+              {
+                q: "What ink color should be used for the candidate signature?",
+                a: "You should sign on clean, unruled white paper with either blue or black ink. Do NOT use red, green, or gel pens with excessive ink bleeding, as the signature must be crisp and legible."
+              },
+              {
+                q: "What should I do if my resized photo is slightly over 50 KB?",
+                a: "Simply drag the compression quality slider on the tool slightly to the left (e.g. from 85% to 75%). The file size will decrease immediately while preserving sharpness and clarity until the green 'Valid for SSC Form' badge appears."
+              },
+              {
+                q: "Is live webcam photo required on the new SSC portal?",
+                a: "Yes, on the new SSC One-Time Registration (OTR) portal (ssc.gov.in), candidates must capture a live photo during form submission AND also upload scanned photographs/signatures as required. This tool prepares your offline scanned photo and signature to exact dimensions."
+              }
+            ].map((faq, idx) => {
+              const isOpen = openFaq === idx;
+              return (
+                <div
+                  key={idx}
+                  className="border border-slate-200 rounded-2xl overflow-hidden transition-all"
+                >
+                  <button
+                    onClick={() => setOpenFaq(isOpen ? null : idx)}
+                    className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 font-bold text-xs sm:text-sm text-slate-900 hover:text-emerald-700 transition-colors cursor-pointer"
+                  >
+                    <span>{faq.q}</span>
+                    <ChevronDown
+                      className={`w-4 h-4 text-slate-400 shrink-0 transition-transform duration-200 ${
+                        isOpen ? "transform rotate-180 text-emerald-700" : ""
+                      }`}
+                    />
+                  </button>
+                  {isOpen && (
+                    <div className="px-4 pb-4 sm:px-5 sm:pb-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                      {faq.a}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* RELATED CANDIDATE TOOLS */}
+        <div className="mt-8 bg-gradient-to-br from-slate-900 to-teal-950 text-white rounded-3xl p-6 sm:p-8 shadow-xl">
+          <div className="text-center mb-6">
+            <span className="px-3 py-1 rounded-full bg-teal-500/30 text-teal-200 font-extrabold text-[11px] uppercase border border-teal-400/30">
+              More Free Tools
+            </span>
+            <h3 className="text-xl font-black text-white mt-2">
+              Explore Other Essential SSC Candidate Utilities
+            </h3>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { title: "SSC Age Calculator", desc: "Calculate exact years, months, and days on crucial cutoff dates.", href: "/toolkit/age-calculator" },
+              { title: "TCS Typing Test Simulator", desc: "2000 Key Depressions in 15 mins TCS exam hall interface.", href: "/typing" },
+              { title: "SSC Rank Predictor", desc: "Calculate raw marks and shift difficulty normalization score.", href: "/toolkit/rank-predictor" },
+              { title: "Master Syllabus Tracker", desc: "Track chapter-wise 3-pillar progress for CGL, CHSL, CPO.", href: "/syllabus" },
+            ].map((t, idx) => (
+              <Link
+                key={idx}
+                href={t.href}
+                className="bg-white/5 border border-white/10 hover:border-teal-400/40 p-4 rounded-2xl flex flex-col justify-between group transition-all hover:bg-white/10"
+              >
+                <div>
+                  <h4 className="text-xs font-black text-white group-hover:text-amber-300 transition-colors mb-1">
+                    {t.title}
+                  </h4>
+                  <p className="text-[11px] text-slate-300 line-clamp-2 leading-relaxed">
+                    {t.desc}
+                  </p>
+                </div>
+                <div className="mt-3 flex items-center gap-1 text-[11px] font-bold text-amber-300">
+                  <span>Open Tool</span>
+                  <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </div>

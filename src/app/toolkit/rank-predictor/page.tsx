@@ -29,7 +29,8 @@ import {
   Clock,
   MapPin,
   Check,
-  X
+  X,
+  ArrowRight
 } from "lucide-react";
 
 interface QuestionResult {
@@ -126,6 +127,7 @@ export default function SSCPageRankPredictor() {
   const [selectedSectionFilter, setSelectedSectionFilter] = useState<string>("all");
   const [statusFilter, setStatusFilter] = useState<"all" | "correct" | "wrong" | "unattempted">("all");
   const [showQuestionsTable, setShowQuestionsTable] = useState<boolean>(false);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   // Handle URL calculation from API
   async function handleCalculateScore() {
@@ -334,12 +336,14 @@ export default function SSCPageRankPredictor() {
       {/* ── HEADER BANNER ── */}
       <div className="bg-gradient-to-r from-blue-900 via-blue-800 to-indigo-900 text-white py-10 px-4 sm:px-6 shadow-lg">
         <div className="max-w-6xl mx-auto">
-          <Link
-            href="/toolkit"
-            className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-200 hover:text-white mb-4 transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4" /> Back to SSC Toolkit
-          </Link>
+          {/* Breadcrumb Navigation */}
+          <nav className="flex items-center gap-2 text-xs font-bold text-blue-200 mb-4">
+            <Link href="/" className="hover:text-white transition-colors">Home</Link>
+            <span>/</span>
+            <Link href="/toolkit" className="hover:text-white transition-colors">Candidate Toolkit</Link>
+            <span>/</span>
+            <span className="text-white">Rank Predictor &amp; Normalizer</span>
+          </nav>
           
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="flex items-center gap-3.5">
@@ -348,7 +352,7 @@ export default function SSCPageRankPredictor() {
               </div>
               <div>
                 <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-white">
-                  SSC Official Answer Key Marks Calculator &amp; Rank Predictor
+                  SSC Official Answer Key Marks Calculator &amp; Rank Predictor 2026
                 </h1>
                 <p className="text-xs text-blue-200 mt-1 max-w-2xl">
                   Calculate raw marks, expected normalization score, shift difficulty analysis, and All-India rank prediction.
@@ -1094,6 +1098,205 @@ export default function SSCPageRankPredictor() {
 
           </div>
         )}
+
+        {/* ── EDUCATIONAL GUIDE: HOW SSC NORMALIZATION WORKS ── */}
+        <div className="mt-12 bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6">
+          <div className="border-b border-slate-100 pb-4">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-[11px] font-black uppercase tracking-wider mb-2">
+              <BarChart3 className="w-3.5 h-3.5" /> Statistical Normalization Formula
+            </div>
+            <h2 className="text-xl sm:text-2xl font-black text-slate-900">
+              Understanding the Official SSC Score Normalization Formula
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
+              When an SSC examination (CGL, CHSL, CPO, MTS) is conducted across multiple shifts, slight variations in question paper difficulty naturally occur. SSC uses a scientifically standardized formula to adjust scores so that no candidate is unfairly advantaged or disadvantaged.
+            </p>
+          </div>
+
+          {/* Formula Display Box */}
+          <div className="bg-slate-900 text-white rounded-2xl p-5 overflow-x-auto shadow-inner font-mono text-center space-y-2">
+            <span className="text-[10px] text-amber-400 uppercase tracking-widest font-sans font-bold">
+              Official SSC Formula (Notice No. 1-1/2018-P&amp;P-I)
+            </span>
+            <div className="text-sm sm:text-base font-bold text-blue-200 py-2">
+              M̂<sub>ij</sub> = [ (M̄<sub>t</sub><sup>g</sup> − M<sub>q</sub><sup>g</sup>) / (M̄<sub>ti</sub> − M<sub>iq</sub>) ] × (M<sub>ij</sub> − M<sub>iq</sub>) + M<sub>q</sub><sup>gm</sup>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-slate-700">
+            <div className="bg-slate-50 border border-slate-200 p-4 rounded-xl space-y-1.5">
+              <h4 className="font-bold text-slate-900 uppercase">Variable Meanings</h4>
+              <ul className="space-y-1 text-[11px] text-slate-600">
+                <li>• <b>M̂<sub>ij</sub>:</b> Normalized score of the j-th candidate in the i-th shift.</li>
+                <li>• <b>M̄<sub>t</sub><sup>g</sup>:</b> Average marks of the top 0.1% candidates across all shifts.</li>
+                <li>• <b>M<sub>q</sub><sup>g</sup>:</b> Sum of mean and standard deviation across all shifts.</li>
+                <li>• <b>M̄<sub>ti</sub>:</b> Average marks of top 0.1% candidates in the i-th shift.</li>
+              </ul>
+            </div>
+
+            <div className="bg-slate-50 border border-slate-200 p-4 rounded-xl space-y-1.5">
+              <h4 className="font-bold text-slate-900 uppercase">Shift Difficulty Dynamics</h4>
+              <ul className="space-y-1 text-[11px] text-slate-600">
+                <li>• <b>Hard Shifts:</b> Average score is lower &rarr; Normalization increases raw score by <b>+12 to +25 marks</b>.</li>
+                <li>• <b>Moderate Shifts:</b> Average score is balanced &rarr; Score increases by <b>+5 to +12 marks</b>.</li>
+                <li>• <b>Easy Shifts:</b> Average score is higher &rarr; Score increases by <b>0 to +4 marks</b> (rarely decreases slightly).</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* MARKING SCHEME SUMMARY TABLE */}
+          <div className="overflow-x-auto mt-6">
+            <h3 className="text-sm font-black text-slate-900 uppercase tracking-wide mb-3">
+              SSC Official Marking Scheme &amp; Negative Deduction Rules
+            </h3>
+            <table className="w-full text-xs text-left text-slate-700">
+              <thead className="bg-slate-50 text-slate-900 font-black uppercase tracking-wider border-y border-slate-200">
+                <tr>
+                  <th className="py-3 px-4">Exam Stage</th>
+                  <th className="py-3 px-4">Total Questions</th>
+                  <th className="py-3 px-4">Marks / Question</th>
+                  <th className="py-3 px-4">Negative Marking</th>
+                  <th className="py-3 px-4">Maximum Marks</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100 font-medium">
+                <tr>
+                  <td className="py-3 px-4 font-bold text-slate-900">SSC CGL Tier 1</td>
+                  <td className="py-3 px-4">100 Qs</td>
+                  <td className="py-3 px-4 text-emerald-700 font-bold">+2.00 Marks</td>
+                  <td className="py-3 px-4 text-rose-600 font-bold">-0.50 Marks (1/4th)</td>
+                  <td className="py-3 px-4 font-mono font-bold">200 Marks</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold text-slate-900">SSC CGL Tier 2 (Paper 1)</td>
+                  <td className="py-3 px-4">130 Qs + Comp</td>
+                  <td className="py-3 px-4 text-emerald-700 font-bold">+3.00 Marks</td>
+                  <td className="py-3 px-4 text-rose-600 font-bold">-1.00 Mark (1/3rd)</td>
+                  <td className="py-3 px-4 font-mono font-bold">390 Marks</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold text-slate-900">SSC CHSL Tier 1</td>
+                  <td className="py-3 px-4">100 Qs</td>
+                  <td className="py-3 px-4 text-emerald-700 font-bold">+2.00 Marks</td>
+                  <td className="py-3 px-4 text-rose-600 font-bold">-0.50 Marks (1/4th)</td>
+                  <td className="py-3 px-4 font-mono font-bold">200 Marks</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 font-bold text-slate-900">SSC CPO Tier 1</td>
+                  <td className="py-3 px-4">200 Qs</td>
+                  <td className="py-3 px-4 text-emerald-700 font-bold">+1.00 Mark</td>
+                  <td className="py-3 px-4 text-rose-600 font-bold">-0.25 Marks (1/4th)</td>
+                  <td className="py-3 px-4 font-mono font-bold">200 Marks</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* ── FREQUENTLY ASKED QUESTIONS ── */}
+        <div className="mt-8 bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm">
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-black uppercase tracking-wider mb-2">
+              <HelpCircle className="w-3.5 h-3.5" /> Frequently Asked Questions
+            </div>
+            <h2 className="text-xl sm:text-2xl font-black text-slate-900">
+              SSC Rank Predictor &amp; Answer Key Calculation FAQs
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 mt-1">
+              Top questions regarding response sheets, rank accuracy, and normalization.
+            </p>
+          </div>
+
+          <div className="space-y-3 max-w-3xl mx-auto">
+            {[
+              {
+                q: "How do I copy my official SSC Answer Key URL?",
+                a: "Log in to the official SSC candidate response portal (TCS iON / Digialm) using your Roll Number and Password. Once the question paper with your chosen options loads, copy the full URL from the browser's address bar (it starts with https://cdn.digialm.com/...) and paste it directly into the calculator above."
+              },
+              {
+                q: "Can normalized marks be lower than raw marks in SSC exams?",
+                a: "In practice, SSC normalized marks rarely decrease below raw marks. However, if a candidate appeared in an exceptionally easy shift where the overall shift mean was unusually high, their normalized score may show zero increase or a slight marginal adjustment. In tough shifts, marks increase significantly."
+              },
+              {
+                q: "What raw score is considered safe for SSC CGL Tier 1 Unreserved (UR) category?",
+                a: "In recent SSC CGL Tier 1 exams (such as CGL 2023 and 2024), a raw score of 135 to 145+ (depending on shift difficulty) generally normalizes above the Tier 1 cutoff threshold (145-155 marks) required for qualification to Tier 2."
+              },
+              {
+                q: "How accurate is the SSCZone Rank Predictor?",
+                a: "The SSCZone Rank Predictor uses statistical sampling aligned with historical SSC normalization trends, shift averages, and official question key weights. It provides a highly reliable estimate of candidate percentile, shift difficulty, and category rank bracket."
+              },
+              {
+                q: "Is candidate data stored or made public when using this calculator?",
+                a: "No. Your roll number, candidate name, and answers are processed securely to generate your scorecard and are never publicly shared with anyone."
+              }
+            ].map((faq, idx) => {
+              const isOpen = openFaq === idx;
+              return (
+                <div
+                  key={idx}
+                  className="border border-slate-200 rounded-2xl overflow-hidden transition-all"
+                >
+                  <button
+                    onClick={() => setOpenFaq(isOpen ? null : idx)}
+                    className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 font-bold text-xs sm:text-sm text-slate-900 hover:text-blue-700 transition-colors cursor-pointer"
+                  >
+                    <span>{faq.q}</span>
+                    <ChevronDown
+                      className={`w-4 h-4 text-slate-400 shrink-0 transition-transform duration-200 ${
+                        isOpen ? "transform rotate-180 text-blue-700" : ""
+                      }`}
+                    />
+                  </button>
+                  {isOpen && (
+                    <div className="px-4 pb-4 sm:px-5 sm:pb-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                      {faq.a}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* ── RELATED CANDIDATE TOOLS ── */}
+        <div className="mt-8 bg-gradient-to-br from-slate-900 to-indigo-950 text-white rounded-3xl p-6 sm:p-8 shadow-xl">
+          <div className="text-center mb-6">
+            <span className="px-3 py-1 rounded-full bg-blue-500/30 text-blue-200 font-extrabold text-[11px] uppercase border border-blue-400/30">
+              More Free Tools
+            </span>
+            <h3 className="text-xl font-black text-white mt-2">
+              Explore Other Essential SSC Candidate Utilities
+            </h3>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { title: "Photo & Signature Resizer", desc: "Compress photo (20-50 KB) & signature (10-20 KB) in seconds.", href: "/toolkit/photo-resizer" },
+              { title: "TCS Typing Test Simulator", desc: "2000 Key Depressions in 15 mins TCS exam hall interface.", href: "/typing" },
+              { title: "SSC Age Calculator", desc: "Calculate exact years, months, and days on crucial cutoff dates.", href: "/toolkit/age-calculator" },
+              { title: "Master Syllabus Tracker", desc: "Track chapter-wise 3-pillar progress for CGL, CHSL, CPO.", href: "/syllabus" },
+            ].map((t, idx) => (
+              <Link
+                key={idx}
+                href={t.href}
+                className="bg-white/5 border border-white/10 hover:border-blue-400/40 p-4 rounded-2xl flex flex-col justify-between group transition-all hover:bg-white/10"
+              >
+                <div>
+                  <h4 className="text-xs font-black text-white group-hover:text-amber-300 transition-colors mb-1">
+                    {t.title}
+                  </h4>
+                  <p className="text-[11px] text-slate-300 line-clamp-2 leading-relaxed">
+                    {t.desc}
+                  </p>
+                </div>
+                <div className="mt-3 flex items-center gap-1 text-[11px] font-bold text-amber-300">
+                  <span>Open Tool</span>
+                  <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
 
       </div>
     </div>

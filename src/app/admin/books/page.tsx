@@ -257,7 +257,7 @@ export default function AdminBooksPage() {
             <span>Topper Books Management</span>
           </h1>
           <p className="text-xs text-slate-400 mt-1 max-w-xl">
-            Control all topper recommended books shown on <code className="text-blue-300 font-mono">/books</code> with bilingual titles, sample chapters, cover styling, and direct PDF downloads.
+            Control all recommended books shown on <code className="text-blue-300 font-mono">/books</code> with bilingual titles, sample chapters, cover styling, and direct PDF downloads.
           </p>
         </div>
 

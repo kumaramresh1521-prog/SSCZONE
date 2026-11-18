@@ -194,7 +194,7 @@ export default async function Home() {
       action: "Start Speed Test",
     },
     {
-      title: "2000 Key Depressions Typing Test",
+      title: "Typing Test",
       desc: "Practice with the official SSC DEST keyboard simulator, 15-minute timer, backspace toggle, and TCS error percentage calculator.",
       href: "/typing",
       icon: Keyboard,
@@ -399,7 +399,7 @@ export default async function Home() {
                     ⌨️ Tier-2 Typing Test
                   </div>
                   <div className="text-[11px] text-slate-400 mt-0.5">
-                    2000 Key Depressions official console
+                    Official examination hall console
                   </div>
                 </div>
                 <div className="mt-3 flex items-center gap-1 text-[11px] font-bold text-purple-400 group-hover:translate-x-0.5 transition-transform">

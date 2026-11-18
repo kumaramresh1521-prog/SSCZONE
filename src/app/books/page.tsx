@@ -397,7 +397,7 @@ export default function BooksPage() {
             <div>
               <div className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 border border-blue-100 px-3 py-1 text-[11px] font-bold text-blue-700 mb-2">
                 <Sparkles className="h-3.5 w-3.5 text-blue-600" />
-                <span>Topper's Verified Resource Catalogue</span>
+                <span>Verified Resource Catalogue</span>
               </div>
               
               <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900">

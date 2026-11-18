@@ -72,8 +72,8 @@ export const DEFAULT_CANDIDATE_TOOLS: CandidateTool[] = [
   },
   {
     id: "typing-test",
-    title: "SSC Typing Test 2000 Key Depressions Simulator",
-    description: "TCS exam hall interface simulation with 15-minute countdown timer, 2000 key depressions tracking, WPM speed calculation, and full/half error analysis.",
+    title: "SSC Typing Test Simulator",
+    description: "TCS exam hall interface simulation with 15-minute countdown timer, key depressions tracking, WPM speed calculation, and full/half error analysis.",
     iconName: "Keyboard",
     badge: "⌨️ TCS EXAM HALL",
     badgeColor: "bg-amber-600 text-white",

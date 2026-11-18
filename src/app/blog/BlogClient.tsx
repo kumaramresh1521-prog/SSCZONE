@@ -51,16 +51,6 @@ export default function BlogClient({
 }) {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [selectedExam, setSelectedExam] = useState("All");
-
-  const examOptions = [
-    { id: "All", label: "🎯 All Exams" },
-    { id: "SSC CGL", label: "SSC CGL" },
-    { id: "SSC CHSL", label: "SSC CHSL" },
-    { id: "SSC CPO", label: "SSC CPO" },
-    { id: "SSC MTS", label: "SSC MTS" },
-    { id: "SSC GD", label: "SSC GD Constable" },
-  ];
 
   // Normalize blogs to safely extract rich meta from keywords JSON
   const normalizedBlogs = useMemo(() => {
@@ -113,14 +103,6 @@ export default function BlogClient({
         return false;
       }
 
-      // Exam filter
-      if (selectedExam !== "All") {
-        const combined = `${b.exam_tag || ""} ${b.title || ""} ${b.category || ""}`.toLowerCase();
-        if (!combined.includes(selectedExam.toLowerCase())) {
-          return false;
-        }
-      }
-
       // Search Query
       if (searchQuery.trim() !== "") {
         const q = searchQuery.toLowerCase().trim();
@@ -136,7 +118,7 @@ export default function BlogClient({
 
       return true;
     });
-  }, [normalizedBlogs, selectedCategory, selectedExam, searchQuery]);
+  }, [normalizedBlogs, selectedCategory, searchQuery]);
 
   // Hero Lead Story
   const featuredBlog = useMemo(() => {
@@ -152,18 +134,17 @@ export default function BlogClient({
 
   // Remaining Grid Blogs
   const gridBlogs = useMemo(() => {
-    if (searchQuery || selectedCategory !== "All" || selectedExam !== "All") {
+    if (searchQuery || selectedCategory !== "All") {
       return filteredBlogs;
     }
     return filteredBlogs.filter((b) => b.id !== featuredBlog?.id);
-  }, [filteredBlogs, featuredBlog, searchQuery, selectedCategory, selectedExam]);
+  }, [filteredBlogs, featuredBlog, searchQuery, selectedCategory]);
 
-  const hasActiveFilters = searchQuery !== "" || selectedCategory !== "All" || selectedExam !== "All";
+  const hasActiveFilters = searchQuery !== "" || selectedCategory !== "All";
 
   const handleResetFilters = () => {
     setSearchQuery("");
     setSelectedCategory("All");
-    setSelectedExam("All");
   };
 
   // Category Color Helper
@@ -313,31 +294,15 @@ export default function BlogClient({
               })}
             </div>
 
-            {/* Target Exam Filter Dropdown */}
-            <div className="flex items-center gap-2 shrink-0">
-              <span className="text-xs text-slate-500 font-bold hidden sm:inline">Exam:</span>
-              <select
-                value={selectedExam}
-                onChange={(e) => setSelectedExam(e.target.value)}
-                className="appearance-none rounded-xl border border-slate-200 bg-slate-50 px-3.5 py-2 text-xs font-bold text-slate-800 focus:bg-white focus:border-blue-600 focus:outline-none transition-all cursor-pointer"
+            {hasActiveFilters && (
+              <button
+                onClick={handleResetFilters}
+                className="rounded-xl border border-rose-200 bg-rose-50 hover:bg-rose-100 text-rose-700 px-3 py-2 text-xs font-bold transition-colors cursor-pointer shrink-0"
+                title="Reset all search filters"
               >
-                {examOptions.map((opt) => (
-                  <option key={opt.id} value={opt.id}>
-                    {opt.label}
-                  </option>
-                ))}
-              </select>
-
-              {hasActiveFilters && (
-                <button
-                  onClick={handleResetFilters}
-                  className="rounded-xl border border-rose-200 bg-rose-50 hover:bg-rose-100 text-rose-700 px-3 py-2 text-xs font-bold transition-colors cursor-pointer"
-                  title="Reset all search filters"
-                >
-                  Reset
-                </button>
-              )}
-            </div>
+                Reset Filters
+              </button>
+            )}
 
           </div>
 

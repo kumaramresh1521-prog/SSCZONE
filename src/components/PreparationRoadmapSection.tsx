@@ -51,7 +51,7 @@ export default function PreparationRoadmapSection() {
     {
       step: "04",
       tag: "Tier-2 Qualification",
-      title: "2000 Key Depressions Typing Test",
+      title: "Typing Test",
       description:
         "Master the mandatory CGL DEST typing test on the official keyboard layout with 15-minute timer, real-time error percentage, backspace toggle, and official evaluation rules.",
       linkText: "Open Typing Console",

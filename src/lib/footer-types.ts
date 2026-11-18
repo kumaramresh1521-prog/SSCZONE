@@ -44,7 +44,7 @@ export const DEFAULT_FOOTER_CONFIG: FooterConfig = {
         { label: "Syllabus Questions", href: "/exams" },
         { label: "Previous Year Papers", href: "/papers", badge: "2026" },
         { label: "Mock Test Series", href: "/mocks" },
-        { label: "2000 Key Depressions Typing Test", href: "/typing" },
+        { label: "Typing Test", href: "/typing" },
         { label: "Speed Tests", href: "/speed-test" },
       ],
     },
@@ -64,7 +64,7 @@ export const DEFAULT_FOOTER_CONFIG: FooterConfig = {
       title: "Resources & Tools",
       links: [
         { label: "Exam Blog & Updates 📰", href: "/blog", is_highlight: true },
-        { label: "Topper Recommended Books 📚", href: "/books", is_highlight: true },
+        { label: "Recommended Books 📚", href: "/books", is_highlight: true },
         { label: "Free Subject Notes PDF", href: "/notes" },
         { label: "Chapter Revision Notes", href: "/blog/notes" },
         { label: "Rank Predictor Tool", href: "/toolkit/rank-predictor" },

@@ -304,7 +304,7 @@ export default function PapersPage() {
             <div>
               <div className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-wider bg-blue-50 text-blue-700 px-2.5 py-0.5 rounded-md border border-blue-200/60 mb-1.5">
                 <Sparkles className="h-3 w-3 text-amber-500" />
-                <span>100% Authentic Official Question Papers</span>
+                <span>Official Shift Papers</span>
               </div>
               <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-slate-900">
                 SSC Previous Year Shift Papers (PYQ)

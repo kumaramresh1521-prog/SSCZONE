@@ -482,84 +482,165 @@ export default function SSCPageRankPredictor() {
           {/* Tab 2: Manual Section Scores Form */}
           {activeTab === "manual" && (
             <div className="space-y-4">
+              <div className="bg-blue-50/70 border border-blue-200/60 rounded-xl px-4 py-2.5 text-xs text-blue-900 flex flex-wrap items-center justify-between gap-2">
+                <span className="font-semibold">
+                  Enter your count of <strong>Correct (+2)</strong> and <strong>Wrong (-0.5)</strong> questions for each section:
+                </span>
+                <span className="text-[11px] font-bold text-blue-700 bg-white px-2 py-0.5 rounded-md border border-blue-200">
+                  Total Questions: 100 (200 Marks)
+                </span>
+              </div>
+
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-                <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
-                  <span className="text-xs font-black text-slate-800">Reasoning:</span>
-                  <div className="flex gap-2 text-xs">
-                    <input
-                      type="number"
-                      value={manualReasoningCorrect}
-                      onChange={(e) => setManualReasoningCorrect(parseInt(e.target.value) || 0)}
-                      placeholder="Correct"
-                      className="w-1/2 p-2 rounded-lg border border-slate-300 text-emerald-800 font-bold bg-white text-center"
-                    />
-                    <input
-                      type="number"
-                      value={manualReasoningWrong}
-                      onChange={(e) => setManualReasoningWrong(parseInt(e.target.value) || 0)}
-                      placeholder="Wrong"
-                      className="w-1/2 p-2 rounded-lg border border-slate-300 text-rose-800 font-bold bg-white text-center"
-                    />
+                {/* Subject 1: Reasoning */}
+                <div className="p-4 rounded-2xl bg-white border border-slate-200 shadow-2xs space-y-2.5">
+                  <div className="flex items-center justify-between border-b border-slate-100 pb-2">
+                    <span className="text-xs font-black text-slate-900">1. Reasoning</span>
+                    <span className="text-[10px] font-bold text-slate-400">Max: 25 Qs</span>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2 text-xs">
+                    <div>
+                      <label className="block text-[11px] font-bold text-emerald-700 mb-1">
+                        ✓ Correct (+2)
+                      </label>
+                      <input
+                        type="number"
+                        min="0"
+                        max="25"
+                        value={manualReasoningCorrect}
+                        onChange={(e) => setManualReasoningCorrect(parseInt(e.target.value) || 0)}
+                        placeholder="Correct"
+                        className="w-full p-2 rounded-lg border border-emerald-300 text-emerald-900 font-bold bg-emerald-50/40 text-center focus:outline-none focus:ring-2 focus:ring-emerald-400"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-[11px] font-bold text-rose-700 mb-1">
+                        ✗ Wrong (-0.5)
+                      </label>
+                      <input
+                        type="number"
+                        min="0"
+                        max="25"
+                        value={manualReasoningWrong}
+                        onChange={(e) => setManualReasoningWrong(parseInt(e.target.value) || 0)}
+                        placeholder="Wrong"
+                        className="w-full p-2 rounded-lg border border-rose-300 text-rose-900 font-bold bg-rose-50/40 text-center focus:outline-none focus:ring-2 focus:ring-rose-400"
+                      />
+                    </div>
                   </div>
                 </div>
 
-                <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
-                  <span className="text-xs font-black text-slate-800">General Awareness:</span>
-                  <div className="flex gap-2 text-xs">
-                    <input
-                      type="number"
-                      value={manualGkCorrect}
-                      onChange={(e) => setManualGkCorrect(parseInt(e.target.value) || 0)}
-                      placeholder="Correct"
-                      className="w-1/2 p-2 rounded-lg border border-slate-300 text-emerald-800 font-bold bg-white text-center"
-                    />
-                    <input
-                      type="number"
-                      value={manualGkWrong}
-                      onChange={(e) => setManualGkWrong(parseInt(e.target.value) || 0)}
-                      placeholder="Wrong"
-                      className="w-1/2 p-2 rounded-lg border border-slate-300 text-rose-800 font-bold bg-white text-center"
-                    />
+                {/* Subject 2: General Awareness */}
+                <div className="p-4 rounded-2xl bg-white border border-slate-200 shadow-2xs space-y-2.5">
+                  <div className="flex items-center justify-between border-b border-slate-100 pb-2">
+                    <span className="text-xs font-black text-slate-900">2. General Awareness</span>
+                    <span className="text-[10px] font-bold text-slate-400">Max: 25 Qs</span>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2 text-xs">
+                    <div>
+                      <label className="block text-[11px] font-bold text-emerald-700 mb-1">
+                        ✓ Correct (+2)
+                      </label>
+                      <input
+                        type="number"
+                        min="0"
+                        max="25"
+                        value={manualGkCorrect}
+                        onChange={(e) => setManualGkCorrect(parseInt(e.target.value) || 0)}
+                        placeholder="Correct"
+                        className="w-full p-2 rounded-lg border border-emerald-300 text-emerald-900 font-bold bg-emerald-50/40 text-center focus:outline-none focus:ring-2 focus:ring-emerald-400"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-[11px] font-bold text-rose-700 mb-1">
+                        ✗ Wrong (-0.5)
+                      </label>
+                      <input
+                        type="number"
+                        min="0"
+                        max="25"
+                        value={manualGkWrong}
+                        onChange={(e) => setManualGkWrong(parseInt(e.target.value) || 0)}
+                        placeholder="Wrong"
+                        className="w-full p-2 rounded-lg border border-rose-300 text-rose-900 font-bold bg-rose-50/40 text-center focus:outline-none focus:ring-2 focus:ring-rose-400"
+                      />
+                    </div>
                   </div>
                 </div>
 
-                <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
-                  <span className="text-xs font-black text-slate-800">Quantitative Maths:</span>
-                  <div className="flex gap-2 text-xs">
-                    <input
-                      type="number"
-                      value={manualMathsCorrect}
-                      onChange={(e) => setManualMathsCorrect(parseInt(e.target.value) || 0)}
-                      placeholder="Correct"
-                      className="w-1/2 p-2 rounded-lg border border-slate-300 text-emerald-800 font-bold bg-white text-center"
-                    />
-                    <input
-                      type="number"
-                      value={manualMathsWrong}
-                      onChange={(e) => setManualMathsWrong(parseInt(e.target.value) || 0)}
-                      placeholder="Wrong"
-                      className="w-1/2 p-2 rounded-lg border border-slate-300 text-rose-800 font-bold bg-white text-center"
-                    />
+                {/* Subject 3: Quantitative Maths */}
+                <div className="p-4 rounded-2xl bg-white border border-slate-200 shadow-2xs space-y-2.5">
+                  <div className="flex items-center justify-between border-b border-slate-100 pb-2">
+                    <span className="text-xs font-black text-slate-900">3. Quantitative Maths</span>
+                    <span className="text-[10px] font-bold text-slate-400">Max: 25 Qs</span>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2 text-xs">
+                    <div>
+                      <label className="block text-[11px] font-bold text-emerald-700 mb-1">
+                        ✓ Correct (+2)
+                      </label>
+                      <input
+                        type="number"
+                        min="0"
+                        max="25"
+                        value={manualMathsCorrect}
+                        onChange={(e) => setManualMathsCorrect(parseInt(e.target.value) || 0)}
+                        placeholder="Correct"
+                        className="w-full p-2 rounded-lg border border-emerald-300 text-emerald-900 font-bold bg-emerald-50/40 text-center focus:outline-none focus:ring-2 focus:ring-emerald-400"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-[11px] font-bold text-rose-700 mb-1">
+                        ✗ Wrong (-0.5)
+                      </label>
+                      <input
+                        type="number"
+                        min="0"
+                        max="25"
+                        value={manualMathsWrong}
+                        onChange={(e) => setManualMathsWrong(parseInt(e.target.value) || 0)}
+                        placeholder="Wrong"
+                        className="w-full p-2 rounded-lg border border-rose-300 text-rose-900 font-bold bg-rose-50/40 text-center focus:outline-none focus:ring-2 focus:ring-rose-400"
+                      />
+                    </div>
                   </div>
                 </div>
 
-                <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
-                  <span className="text-xs font-black text-slate-800">English Comprehension:</span>
-                  <div className="flex gap-2 text-xs">
-                    <input
-                      type="number"
-                      value={manualEnglishCorrect}
-                      onChange={(e) => setManualEnglishCorrect(parseInt(e.target.value) || 0)}
-                      placeholder="Correct"
-                      className="w-1/2 p-2 rounded-lg border border-slate-300 text-emerald-800 font-bold bg-white text-center"
-                    />
-                    <input
-                      type="number"
-                      value={manualEnglishWrong}
-                      onChange={(e) => setManualEnglishWrong(parseInt(e.target.value) || 0)}
-                      placeholder="Wrong"
-                      className="w-1/2 p-2 rounded-lg border border-slate-300 text-rose-800 font-bold bg-white text-center"
-                    />
+                {/* Subject 4: English Comprehension */}
+                <div className="p-4 rounded-2xl bg-white border border-slate-200 shadow-2xs space-y-2.5">
+                  <div className="flex items-center justify-between border-b border-slate-100 pb-2">
+                    <span className="text-xs font-black text-slate-900">4. English Comprehension</span>
+                    <span className="text-[10px] font-bold text-slate-400">Max: 25 Qs</span>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2 text-xs">
+                    <div>
+                      <label className="block text-[11px] font-bold text-emerald-700 mb-1">
+                        ✓ Correct (+2)
+                      </label>
+                      <input
+                        type="number"
+                        min="0"
+                        max="25"
+                        value={manualEnglishCorrect}
+                        onChange={(e) => setManualEnglishCorrect(parseInt(e.target.value) || 0)}
+                        placeholder="Correct"
+                        className="w-full p-2 rounded-lg border border-emerald-300 text-emerald-900 font-bold bg-emerald-50/40 text-center focus:outline-none focus:ring-2 focus:ring-emerald-400"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-[11px] font-bold text-rose-700 mb-1">
+                        ✗ Wrong (-0.5)
+                      </label>
+                      <input
+                        type="number"
+                        min="0"
+                        max="25"
+                        value={manualEnglishWrong}
+                        onChange={(e) => setManualEnglishWrong(parseInt(e.target.value) || 0)}
+                        placeholder="Wrong"
+                        className="w-full p-2 rounded-lg border border-rose-300 text-rose-900 font-bold bg-rose-50/40 text-center focus:outline-none focus:ring-2 focus:ring-rose-400"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>

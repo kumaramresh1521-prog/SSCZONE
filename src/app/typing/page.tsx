@@ -57,7 +57,7 @@ export default function TypingPage() {
   // Settings & Toggles
   const [allowBackspace, setAllowBackspace] = useState<boolean>(true);
   const [soundEnabled, setSoundEnabled] = useState<boolean>(true);
-  const [highlightWord, setHighlightWord] = useState<boolean>(true);
+  const [highlightWord, setHighlightWord] = useState<boolean>(false); // OFF by default as per candidate request
   const [showSettingsDrawer, setShowSettingsDrawer] = useState<boolean>(false);
   const [showRulesModal, setShowRulesModal] = useState<boolean>(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -348,7 +348,7 @@ export default function TypingPage() {
               <div className="flex items-center gap-2">
                 <span className="text-[10px] uppercase font-black text-blue-600 tracking-wider">SSCZONE</span>
                 <span className="text-slate-300">·</span>
-                <span className="text-xs font-black text-slate-800">SSC 2000 Key Depressions Typing Simulator</span>
+                <span className="text-xs font-black text-slate-800">SSC Typing Test Simulator</span>
               </div>
             </div>
           </div>
@@ -393,21 +393,22 @@ export default function TypingPage() {
                     type="checkbox"
                     checked={allowBackspace}
                     onChange={(e) => setAllowBackspace(e.target.checked)}
-                    className="w-4 h-4 text-blue-600 rounded focus:ring-blue-500"
+                    className="w-4 h-4 text-blue-600 rounded focus:ring-blue-500 cursor-pointer"
                   />
                   <span className="font-bold text-slate-700">Allow Backspace Key</span>
                   <span className="text-[10px] text-slate-400 font-mono">(SSC DEST Allows Backspace)</span>
                 </label>
 
-                {/* Highlight Toggle */}
+                {/* Highlight / Blue Guide Toggle */}
                 <label className="flex items-center gap-2 cursor-pointer select-none">
                   <input
                     type="checkbox"
                     checked={highlightWord}
                     onChange={(e) => setHighlightWord(e.target.checked)}
-                    className="w-4 h-4 text-blue-600 rounded focus:ring-blue-500"
+                    className="w-4 h-4 text-blue-600 rounded focus:ring-blue-500 cursor-pointer"
                   />
-                  <span className="font-bold text-slate-700">Highlight Current Word/Letter</span>
+                  <span className="font-bold text-slate-700">Screen Blue Guide / Highlight</span>
+                  <span className="text-[10px] text-slate-400 font-mono">(Off by default)</span>
                 </label>
 
                 {/* Sound Toggle */}
@@ -643,15 +644,48 @@ export default function TypingPage() {
         <div className="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
           
           {/* Console Header Bar */}
-          <div className="bg-slate-50 border-b border-slate-200 px-5 py-2.5 flex items-center justify-between">
+          <div className="bg-slate-50 border-b border-slate-200 px-4 sm:px-5 py-2.5 flex flex-wrap items-center justify-between gap-3">
             <div className="flex items-center gap-2">
               <FileText className="w-4 h-4 text-blue-600" />
               <span className="text-xs font-black text-slate-800 truncate">
                 {currentPassage.title}
               </span>
             </div>
-            <div className="text-[11px] font-bold text-slate-500">
-              Official Criterion: <strong className="text-blue-700 font-mono">{currentPassage.targetKeyDepressions || 2000} Key Depressions</strong> · Time: <strong className="text-slate-800 font-mono">{currentPassage.timeMinutes || 15} Minutes</strong>
+
+            {/* Quick Live Toggles (Prominently next to Backspace) */}
+            <div className="flex items-center gap-4 text-xs font-bold text-slate-700 bg-white px-3 py-1.5 rounded-xl border border-slate-200 shadow-2xs">
+              <label className="flex items-center gap-1.5 cursor-pointer select-none">
+                <input
+                  type="checkbox"
+                  checked={allowBackspace}
+                  onChange={(e) => setAllowBackspace(e.target.checked)}
+                  className="w-3.5 h-3.5 text-blue-600 rounded focus:ring-blue-500 cursor-pointer"
+                />
+                <span className="text-[11px] font-bold">Allow Backspace</span>
+              </label>
+
+              <span className="text-slate-300">|</span>
+
+              <label className="flex items-center gap-1.5 cursor-pointer select-none">
+                <input
+                  type="checkbox"
+                  checked={highlightWord}
+                  onChange={(e) => setHighlightWord(e.target.checked)}
+                  className="w-3.5 h-3.5 text-blue-600 rounded focus:ring-blue-500 cursor-pointer"
+                />
+                <span className="text-[11px] font-bold flex items-center gap-1">
+                  Blue Guide
+                  {highlightWord ? (
+                    <span className="text-[9px] bg-blue-100 text-blue-700 px-1.5 py-0.2 rounded font-mono font-black">ON</span>
+                  ) : (
+                    <span className="text-[9px] bg-slate-100 text-slate-500 px-1.5 py-0.2 rounded font-mono font-bold">OFF</span>
+                  )}
+                </span>
+              </label>
+            </div>
+
+            <div className="text-[11px] font-bold text-slate-500 hidden lg:block">
+              Criterion: <strong className="text-blue-700 font-mono">{currentPassage.targetKeyDepressions || 2000} Key Depressions</strong> · <strong className="text-slate-800 font-mono">{currentPassage.timeMinutes || 15} Min</strong>
             </div>
           </div>
 
@@ -684,13 +718,20 @@ export default function TypingPage() {
                     if (isWrong) style = "text-red-700 bg-red-200 font-bold underline decoration-red-500";
                   }
 
+                  let cursorClass = "";
+                  if (isCursor) {
+                    if (highlightWord) {
+                      cursorClass = "bg-blue-600 text-white font-black px-0.5 rounded-xs ring-2 ring-blue-400 shadow-xs";
+                    } else {
+                      cursorClass = "border-l-2 border-slate-900 animate-pulse";
+                    }
+                  }
+
                   return (
                     <span
                       key={index}
                       data-cursor={isCursor ? true : undefined}
-                      className={`${style} ${
-                        isCursor ? "bg-blue-600 text-white font-black px-0.5 rounded-xs ring-2 ring-blue-400 shadow-xs" : ""
-                      }`}
+                      className={`${style} ${cursorClass}`}
                     >
                       {char}
                     </span>

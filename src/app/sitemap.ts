@@ -20,6 +20,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}`, lastModified: new Date(), changeFrequency: "daily", priority: 1.0 },
     { url: `${baseUrl}/exams`, lastModified: new Date(), changeFrequency: "daily", priority: 0.95 },
     { url: `${baseUrl}/papers`, lastModified: new Date(), changeFrequency: "daily", priority: 0.95 },
+    { url: `${baseUrl}/mocks`, lastModified: new Date(), changeFrequency: "daily", priority: 0.95 },
     { url: `${baseUrl}/notes`, lastModified: new Date(), changeFrequency: "daily", priority: 0.9 },
     { url: `${baseUrl}/syllabus`, lastModified: new Date(), changeFrequency: "daily", priority: 0.9 },
     { url: `${baseUrl}/toolkit`, lastModified: new Date(), changeFrequency: "daily", priority: 0.85 },

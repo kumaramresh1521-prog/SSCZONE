@@ -10,7 +10,11 @@ const nextConfig: NextConfig = {
   eslint: { ignoreDuringBuilds: true },
   typescript: { ignoreBuildErrors: true },
   images: {
-    domains: ["supabase.co"],
+    remotePatterns: [
+      { protocol: "https", hostname: "**.supabase.co" },
+      { protocol: "https", hostname: "images.unsplash.com" },
+      { protocol: "https", hostname: "m.media-amazon.com" },
+    ],
     formats: ["image/avif", "image/webp"],
   },
   experimental: {

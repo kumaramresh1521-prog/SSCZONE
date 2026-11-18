@@ -104,13 +104,27 @@
       ]
     },
     "/typing": {
-      "title": "SSC Typing Test & Speed Practice Simulator — CGL & CHSL TCS Interface",
-      "description": "Practice SSC CGL, CHSL, and Steno typing test passages with real-time gross/net WPM, accuracy, error calculation, and TCS-pattern exam simulation.",
+      "title": "SSC 2000 Key Depressions Typing Test Simulator — CGL DEST & CHSL Interface",
+      "description": "Practice official SSC CGL DEST 2000 Key Depressions typing test in 15 minutes with TCS exam keyboard simulator, real-time error percentage, and backspace toggle.",
       "keywords": [
-        "SSC Typing Test Online",
-        "SSC CGL Typing Speed Test",
+        "SSC 2000 Key Depressions",
+        "SSC CGL DEST Typing Test",
+        "SSC Typing Test 15 Minutes",
         "TCS Typing Interface Simulator",
+        "SSC CGL Typing Practice",
         "Gross WPM Net WPM Calculator"
+      ]
+    },
+    "/mocks": {
+      "title": "SSC CGL 2026 Free Mock Test Series — 100 Questions Full CBT Exam Simulator",
+      "description": "Attempt full-length SSC CGL 2026 mock tests with official 60-minute countdown, sectional navigation palette, bilingual Hindi & English questions, and instant negative marking analysis.",
+      "keywords": [
+        "SSC CGL Mock Test 2026",
+        "Free SSC Mock Test Series",
+        "SSC CGL Tier 1 Online Test",
+        "SSC CBT Exam Simulator",
+        "100 Questions Mock Test",
+        "SSC Tier 1 Mock Test with Solution"
       ]
     },
     "/blog": {

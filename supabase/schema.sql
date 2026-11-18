@@ -185,15 +185,35 @@ CREATE TRIGGER on_auth_user_created
 -- Trigger to prevent users from elevating themselves to is_admin
 CREATE OR REPLACE FUNCTION public.check_profile_admin_update()
 RETURNS TRIGGER AS $$
+DECLARE
+  caller_role TEXT;
 BEGIN
-  IF NEW.is_admin IS DISTINCT FROM OLD.is_admin THEN
-    IF NOT EXISTS (
-      SELECT 1 FROM public.profiles WHERE id = auth.uid() AND is_admin = true
-    ) THEN
-      RAISE EXCEPTION 'Only administrators can modify the is_admin flag.';
-    END IF;
+  IF NEW.is_admin IS NOT DISTINCT FROM OLD.is_admin THEN
+    RETURN NEW;
   END IF;
-  RETURN NEW;
+
+  -- Allow postgres / SQL Editor / superuser
+  IF current_user IN ('postgres', 'supabase_admin', 'service_role') THEN
+    RETURN NEW;
+  END IF;
+
+  -- Allow service_role key
+  BEGIN
+    caller_role := coalesce(auth.jwt()->>'role', '');
+    IF caller_role = 'service_role' THEN
+      RETURN NEW;
+    END IF;
+  EXCEPTION WHEN OTHERS THEN
+  END;
+
+  -- Allow existing authenticated admin
+  IF auth.uid() IS NOT NULL AND EXISTS (
+    SELECT 1 FROM public.profiles WHERE id = auth.uid() AND is_admin = true
+  ) THEN
+    RETURN NEW;
+  END IF;
+
+  RAISE EXCEPTION 'Access Denied: Only administrators or service role can modify the is_admin status.';
 END;
 $$ LANGUAGE plpgsql SECURITY DEFINER;
 
@@ -201,6 +221,45 @@ DROP TRIGGER IF EXISTS tr_check_profile_admin ON public.profiles;
 CREATE TRIGGER tr_check_profile_admin
   BEFORE UPDATE ON public.profiles
   FOR EACH ROW EXECUTE FUNCTION public.check_profile_admin_update();
+
+-- Prevent users from setting is_admin = true during self-registration / INSERT
+CREATE OR REPLACE FUNCTION public.check_profile_admin_insert()
+RETURNS TRIGGER AS $$
+DECLARE
+  caller_role TEXT;
+BEGIN
+  IF NEW.is_admin IS NULL OR NEW.is_admin = false THEN
+    NEW.is_admin := false;
+    RETURN NEW;
+  END IF;
+
+  IF current_user IN ('postgres', 'supabase_admin', 'service_role') THEN
+    RETURN NEW;
+  END IF;
+
+  BEGIN
+    caller_role := coalesce(auth.jwt()->>'role', '');
+    IF caller_role = 'service_role' THEN
+      RETURN NEW;
+    END IF;
+  EXCEPTION WHEN OTHERS THEN
+  END;
+
+  IF auth.uid() IS NOT NULL AND EXISTS (
+    SELECT 1 FROM public.profiles WHERE id = auth.uid() AND is_admin = true
+  ) THEN
+    RETURN NEW;
+  END IF;
+
+  NEW.is_admin := false;
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
+
+DROP TRIGGER IF EXISTS tr_check_profile_admin_insert ON public.profiles;
+CREATE TRIGGER tr_check_profile_admin_insert
+  BEFORE INSERT ON public.profiles
+  FOR EACH ROW EXECUTE FUNCTION public.check_profile_admin_insert();
 
 -- Public read policies
 CREATE POLICY "Public read exams" ON exams FOR SELECT USING (true);
@@ -210,6 +269,32 @@ CREATE POLICY "Public read questions" ON questions FOR SELECT USING (true);
 CREATE POLICY "Public read papers" ON previous_papers FOR SELECT USING (true);
 CREATE POLICY "Public read paper_questions" ON paper_questions FOR SELECT USING (true);
 CREATE POLICY "Public read packages" ON packages FOR SELECT USING (true);
+
+-- Revoke sensitive exam solution columns from public roles at database level
+REVOKE SELECT ON public.paper_questions FROM anon, authenticated;
+GRANT SELECT (
+  id,
+  paper_id,
+  question_number,
+  question_text,
+  option_a,
+  option_b,
+  option_c,
+  option_d,
+  question_text_hi,
+  option_a_hi,
+  option_b_hi,
+  option_c_hi,
+  option_d_hi,
+  image_url,
+  option_a_image_url,
+  option_b_image_url,
+  option_c_image_url,
+  option_d_image_url,
+  created_at
+) ON public.paper_questions TO anon, authenticated;
+GRANT ALL ON public.paper_questions TO service_role;
+GRANT ALL ON public.paper_questions TO postgres;
 
 -- Profile policies
 CREATE POLICY "Users insert own profile" ON profiles FOR INSERT WITH CHECK (auth.uid() = id);

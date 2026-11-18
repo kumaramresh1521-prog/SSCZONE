@@ -90,8 +90,8 @@ export const DEFAULT_SEO_CONFIG: SeoConfigData = {
   },
   pageOverrides: {
     "/papers": {
-      title: "SSC PYQ Shift Papers 2026 Live — Download PDF & Attempt CBT Test",
-      description: "Download clean official SSC CGL, CHSL, CPO shift paper PDFs with SSC Zone branding and attempt online CBT mock tests with instant scorecards."
+      title: "SSC PYQ Shift Papers 2026 Live — Official Shift Papers CBT Test",
+      description: "Attempt official SSC CGL, CHSL, CPO previous year shift papers in online CBT exam mode with instant scorecards and detailed solutions."
     },
     "/blog": {
       title: "SSC Exam Blog & Study Material — Biology, English Grammar, PYQs & Notifications | SSCZone",

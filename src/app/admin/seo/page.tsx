@@ -166,9 +166,9 @@ const PRESET_PAGES = [
   {
     path: "/papers",
     name: "PYQ Shift Papers Portal (/papers)",
-    defaultTitle: "SSC PYQ Shift Papers 2026 Live — Download PDF & Attempt CBT Test",
-    defaultDesc: "Download clean official SSC CGL, CHSL, CPO shift paper PDFs with SSC Zone branding and attempt online CBT mock tests with instant scorecards.",
-    defaultKeywords: ["SSC PYQ Shift Papers", "SSC CGL Shift Wise PDF", "SSC CHSL Tier 1 Shift PDF", "TCS CBT Mock Test Online"]
+    defaultTitle: "SSC PYQ Shift Papers 2026 Live — Official Shift Papers CBT Test",
+    defaultDesc: "Attempt official SSC CGL, CHSL, CPO previous year shift papers in online CBT exam mode with instant scorecards and detailed solutions.",
+    defaultKeywords: ["SSC PYQ Shift Papers", "SSC CGL Shift Wise Papers", "SSC CHSL Tier 1 Shifts", "TCS CBT Mock Test Online"]
   },
   {
     path: "/toolkit",

@@ -312,7 +312,7 @@ export default function ToolkitHubPage() {
                   Official PYQ Shift Papers
                 </h4>
                 <p className="text-xs text-slate-300 mt-1 line-clamp-2">
-                  100+ SSC CGL, CHSL, and CPO shift papers with bilingual solutions and free PDF downloads.
+                  100+ SSC CGL, CHSL, and CPO shift papers with bilingual solutions in CBT exam mode.
                 </p>
               </div>
               <span className="mt-3 text-[11px] font-bold text-amber-300 flex items-center gap-1">

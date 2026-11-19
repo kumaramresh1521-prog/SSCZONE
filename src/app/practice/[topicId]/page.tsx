@@ -18,7 +18,18 @@ export async function generateMetadata({ params }: { params: Promise<{ topicId: 
       if (data?.title) topicTitle = `${data.title} MCQs Practice`;
       if (data?.slug) canonicalSlug = data.slug;
     } else {
-      const { data } = await supabase.from("topics").select("title, slug").eq("slug", topicId).maybeSingle();
+      let { data } = await supabase.from("topics").select("title, slug").eq("slug", topicId).maybeSingle();
+      if (!data) {
+        const cleanTitle = topicId.replace(/-/g, " ");
+        const { data: fallbackData } = await supabase
+          .from("topics")
+          .select("title, slug")
+          .or(`slug.eq.ssc-cgl-${topicId},slug.ilike.%-${topicId},title.ilike.${cleanTitle}`)
+          .order("id", { ascending: true })
+          .limit(1)
+          .maybeSingle();
+        data = fallbackData;
+      }
       if (data?.title) topicTitle = `${data.title} MCQs Practice`;
       if (data?.slug) canonicalSlug = data.slug;
     }
@@ -54,13 +65,28 @@ export default async function PracticePage({ params }: { params: Promise<{ topic
       .maybeSingle();
     topic = data;
 
-    // Fallback: If old URL had random number suffix (e.g. number-system-6011-0), strip it and find matching topic
+    // Fallback 1: If old URL had random number suffix (e.g. number-system-6011-0), strip it and find matching topic
     if (!topic && /-\d+(-\d+)*$/.test(topicId)) {
       const strippedSlug = topicId.replace(/-\d+(-\d+)*$/, "");
       const { data: fallbackTopic } = await supabase
         .from("topics")
         .select("*, subjects(id, title, exam_id, exams(id, title, slug))")
         .eq("slug", strippedSlug)
+        .maybeSingle();
+      if (fallbackTopic) {
+        redirect(`/practice/${fallbackTopic.slug}`);
+      }
+    }
+
+    // Fallback 2: If topicId is a generic slug (e.g. 'percentage' matching 'ssc-cgl-percentage' or topic title)
+    if (!topic) {
+      const cleanTitle = topicId.replace(/-/g, " ");
+      const { data: fallbackTopic } = await supabase
+        .from("topics")
+        .select("*, subjects(id, title, exam_id, exams(id, title, slug))")
+        .or(`slug.eq.ssc-cgl-${topicId},slug.ilike.%-${topicId},title.ilike.${cleanTitle}`)
+        .order("id", { ascending: true })
+        .limit(1)
         .maybeSingle();
       if (fallbackTopic) {
         redirect(`/practice/${fallbackTopic.slug}`);

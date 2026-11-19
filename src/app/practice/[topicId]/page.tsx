@@ -21,10 +21,11 @@ export async function generateMetadata({ params }: { params: Promise<{ topicId: 
       let { data } = await supabase.from("topics").select("title, slug").eq("slug", topicId).maybeSingle();
       if (!data) {
         const cleanTitle = topicId.replace(/-/g, " ");
+        const wildcardTitle = `%${cleanTitle.trim().replace(/\s+/g, "%")}%`;
         const { data: fallbackData } = await supabase
           .from("topics")
           .select("title, slug")
-          .or(`slug.eq.ssc-cgl-${topicId},slug.ilike.%-${topicId},title.ilike.${cleanTitle}`)
+          .or(`slug.eq.ssc-cgl-${topicId},slug.ilike.%-${topicId},title.ilike.${cleanTitle},title.ilike.${wildcardTitle}`)
           .order("id", { ascending: true })
           .limit(1)
           .maybeSingle();
@@ -78,13 +79,14 @@ export default async function PracticePage({ params }: { params: Promise<{ topic
       }
     }
 
-    // Fallback 2: If topicId is a generic slug (e.g. 'percentage' matching 'ssc-cgl-percentage' or topic title)
+    // Fallback 2: If topicId is a generic slug (e.g. 'percentage', 'profit-loss' matching 'ssc-cgl-profit-and-loss' or topic title)
     if (!topic) {
       const cleanTitle = topicId.replace(/-/g, " ");
+      const wildcardTitle = `%${cleanTitle.trim().replace(/\s+/g, "%")}%`;
       const { data: fallbackTopic } = await supabase
         .from("topics")
         .select("*, subjects(id, title, exam_id, exams(id, title, slug))")
-        .or(`slug.eq.ssc-cgl-${topicId},slug.ilike.%-${topicId},title.ilike.${cleanTitle}`)
+        .or(`slug.eq.ssc-cgl-${topicId},slug.ilike.%-${topicId},title.ilike.${cleanTitle},title.ilike.${wildcardTitle}`)
         .order("id", { ascending: true })
         .limit(1)
         .maybeSingle();

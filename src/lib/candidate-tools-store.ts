@@ -13,6 +13,10 @@ export interface CandidateTool {
   isActive: boolean;
   sortOrder: number;
   category?: "calculator" | "utility" | "practice" | "checklist";
+  /** Markdown content for the tool's dynamic page at /toolkit/[slug] */
+  content_md?: string;
+  /** Whether this tool uses a custom hardcoded page (true) or dynamic content_md page (false) */
+  hasCustomPage?: boolean;
 }
 
 export const DEFAULT_CANDIDATE_TOOLS: CandidateTool[] = [
@@ -32,7 +36,8 @@ export const DEFAULT_CANDIDATE_TOOLS: CandidateTool[] = [
     ],
     isActive: true,
     sortOrder: 1,
-    category: "checklist"
+    category: "checklist",
+    hasCustomPage: true,
   },
   {
     id: "rank-predictor",
@@ -50,7 +55,8 @@ export const DEFAULT_CANDIDATE_TOOLS: CandidateTool[] = [
     ],
     isActive: true,
     sortOrder: 2,
-    category: "calculator"
+    category: "calculator",
+    hasCustomPage: true,
   },
   {
     id: "photo-resizer",
@@ -68,7 +74,8 @@ export const DEFAULT_CANDIDATE_TOOLS: CandidateTool[] = [
     ],
     isActive: true,
     sortOrder: 3,
-    category: "utility"
+    category: "utility",
+    hasCustomPage: true,
   },
   {
     id: "typing-test",
@@ -86,7 +93,8 @@ export const DEFAULT_CANDIDATE_TOOLS: CandidateTool[] = [
     ],
     isActive: true,
     sortOrder: 4,
-    category: "practice"
+    category: "practice",
+    hasCustomPage: true,
   },
   {
     id: "age-calculator",
@@ -104,7 +112,8 @@ export const DEFAULT_CANDIDATE_TOOLS: CandidateTool[] = [
     ],
     isActive: true,
     sortOrder: 5,
-    category: "calculator"
+    category: "calculator",
+    hasCustomPage: true,
   }
 ];
 

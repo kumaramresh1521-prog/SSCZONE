@@ -30,7 +30,9 @@ import {
   Globe,
   Sliders,
   Check,
-  AlertCircle
+  AlertCircle,
+  Upload,
+  Code
 } from "lucide-react";
 import { CandidateTool, DEFAULT_CANDIDATE_TOOLS } from "@/lib/candidate-tools-store";
 
@@ -92,6 +94,8 @@ export default function AdminToolsPage() {
   const [toolGradient, setToolGradient] = useState("from-blue-600 to-indigo-600");
   const [toolCategory, setToolCategory] = useState<"calculator" | "utility" | "practice" | "checklist">("utility");
   const [toolFeaturesText, setToolFeaturesText] = useState("");
+  const [toolContentMd, setToolContentMd] = useState("");
+  const [toolHasCustomPage, setToolHasCustomPage] = useState(false);
   const [toolIsActive, setToolIsActive] = useState(true);
   const [toolSortOrder, setToolSortOrder] = useState<number>(1);
 
@@ -177,6 +181,8 @@ export default function AdminToolsPage() {
       features: cleanFeatures.length > 0 ? cleanFeatures : ["High Precision Candidate Tool", "Official SSC Aligned"],
       isActive: toolIsActive,
       sortOrder: toolSortOrder || candidateTools.length + 1,
+      content_md: toolContentMd.trim() || undefined,
+      hasCustomPage: toolHasCustomPage,
     };
 
     let updatedList: CandidateTool[];
@@ -206,6 +212,8 @@ export default function AdminToolsPage() {
     setToolGradient(t.gradient || "from-blue-600 to-indigo-600");
     setToolCategory(t.category || "utility");
     setToolFeaturesText(t.features?.join("\n") || "");
+    setToolContentMd(t.content_md || "");
+    setToolHasCustomPage(t.hasCustomPage || false);
     setToolIsActive(t.isActive !== false);
     setToolSortOrder(t.sortOrder || 1);
   }
@@ -261,8 +269,43 @@ export default function AdminToolsPage() {
     setToolGradient("from-blue-600 to-indigo-600");
     setToolCategory("utility");
     setToolFeaturesText("");
+    setToolContentMd("");
+    setToolHasCustomPage(false);
     setToolIsActive(true);
     setToolSortOrder(candidateTools.length + 1);
+  }
+
+  function handleTitleChange(val: string) {
+    setToolTitle(val);
+    if (!editingToolId) {
+      const slug = val
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-|-$/g, "");
+      setToolId(slug);
+      if (!toolHref || toolHref.startsWith("/toolkit/")) {
+        setToolHref(slug ? `/toolkit/${slug}` : "");
+      }
+    }
+  }
+
+  function handleContentFileUpload(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      const content = event.target?.result as string;
+      if (content) {
+        setToolContentMd(content);
+        toast.success(`Loaded "${file.name}" (${(file.size / 1024).toFixed(1)} KB)`);
+      }
+    };
+    reader.onerror = () => {
+      toast.error("Failed to read uploaded file");
+    };
+    reader.readAsText(file);
+    e.target.value = "";
   }
 
   // Get current form icon component
@@ -538,7 +581,7 @@ export default function AdminToolsPage() {
                     required
                     placeholder="e.g. SSC Photo & Signature Resizer Tool"
                     value={toolTitle}
-                    onChange={(e) => setToolTitle(e.target.value)}
+                    onChange={(e) => handleTitleChange(e.target.value)}
                     className="w-full rounded-xl border border-gray-700 bg-gray-800 p-2.5 text-xs font-semibold text-white focus:border-blue-500 focus:outline-hidden"
                   />
                 </div>
@@ -660,6 +703,62 @@ export default function AdminToolsPage() {
                     onChange={(e) => setToolFeaturesText(e.target.value)}
                     className="w-full rounded-xl border border-gray-700 bg-gray-800 p-2.5 text-xs font-semibold text-white focus:border-blue-500 focus:outline-hidden"
                   />
+                </div>
+
+                {/* Tool Page Content (Markdown / HTML) */}
+                <div className="rounded-2xl border border-indigo-500/30 bg-slate-950/70 p-4 space-y-3">
+                  <div className="flex items-center justify-between flex-wrap gap-2">
+                    <div>
+                      <label className="text-xs font-black text-indigo-300 flex items-center gap-1.5">
+                        <FileText className="w-3.5 h-3.5 text-indigo-400" />
+                        <span>Tool Page Content (Markdown / HTML)</span>
+                      </label>
+                      <p className="text-[10px] text-slate-400 mt-0.5">
+                        Content rendered on <code className="text-amber-300 font-mono">{toolHref || "/toolkit/[slug]"}</code>
+                      </p>
+                    </div>
+
+                    {/* File Upload Button (.md / .html) */}
+                    <label className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-indigo-600/30 border border-indigo-400/40 text-indigo-200 text-xs font-bold hover:bg-indigo-600/50 cursor-pointer transition-all">
+                      <Upload className="w-3.5 h-3.5 text-indigo-300" />
+                      <span>Upload .md / .html</span>
+                      <input
+                        type="file"
+                        accept=".md,.markdown,.html,.htm,.txt"
+                        className="hidden"
+                        onChange={handleContentFileUpload}
+                      />
+                    </label>
+                  </div>
+
+                  <textarea
+                    rows={8}
+                    placeholder={"# SSC Tool Heading\n\nEnter tool instructions, guidelines, eligibility criteria, or rules here...\n\n### Important Instructions\n- Point 1\n- Point 2\n\nSupports full Markdown (#, **, lists) and raw HTML tags!"}
+                    value={toolContentMd}
+                    onChange={(e) => setToolContentMd(e.target.value)}
+                    className="w-full rounded-xl border border-gray-700 bg-gray-900 p-3 text-xs font-mono text-slate-200 focus:border-indigo-500 focus:outline-hidden"
+                  />
+
+                  <div className="flex items-center justify-between text-[10px] text-slate-400">
+                    <span className="flex items-center gap-1">
+                      <Code className="w-3 h-3 text-indigo-400" />
+                      Markdown &amp; HTML supported
+                    </span>
+                    <span>{toolContentMd.length} characters</span>
+                  </div>
+
+                  {/* Custom Hardcoded Page Option */}
+                  <div className="pt-2 border-t border-gray-800">
+                    <label className="flex items-center gap-2 cursor-pointer text-xs text-gray-300">
+                      <input
+                        type="checkbox"
+                        checked={toolHasCustomPage}
+                        onChange={(e) => setToolHasCustomPage(e.target.checked)}
+                        className="h-4 w-4 rounded border-gray-700 bg-gray-800 text-indigo-500"
+                      />
+                      <span>This tool uses a custom hardcoded route (e.g. /typing, /toolkit/photo-resizer)</span>
+                    </label>
+                  </div>
                 </div>
 
                 {/* Active Toggle & Order */}
@@ -863,8 +962,21 @@ export default function AdminToolsPage() {
 
                         {/* Footer Route & Actions */}
                         <div className="flex items-center justify-between text-xs pt-2 border-t border-gray-800">
-                          <div className="flex items-center gap-2">
+                          <div className="flex items-center gap-2 flex-wrap">
                             <span className="font-mono text-[11px] text-amber-400 font-bold">{t.href}</span>
+                            {t.content_md ? (
+                              <span className="px-1.5 py-0.5 rounded text-[9px] font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+                                📄 Content Added
+                              </span>
+                            ) : t.hasCustomPage ? (
+                              <span className="px-1.5 py-0.5 rounded text-[9px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                                ⚡ Built-in
+                              </span>
+                            ) : (
+                              <span className="px-1.5 py-0.5 rounded text-[9px] font-bold bg-red-500/20 text-red-300 border border-red-500/30">
+                                ⚠️ No Content
+                              </span>
+                            )}
                             <Link
                               href={t.href}
                               target="_blank"

@@ -2539,61 +2539,127 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
             })()}
           </div>
 
-          {/* ── Bottom Action Navigation Bar (Responsive, Never Wraps awkwardly) ── */}
-          <div className="bg-[#F8FAFC] border-t border-slate-300 p-2 sm:p-3 px-3 sm:px-5 flex items-center justify-between flex-wrap gap-2 shrink-0 max-w-full">
-            <div className="flex items-center gap-1.5 sm:gap-2">
-              <button
-                onClick={handleMarkForReviewAndNext}
-                className="rounded-lg bg-[#7C3AED] hover:bg-[#6D28D9] text-white px-3 py-1.5 text-xs font-bold transition-all shadow-xs cursor-pointer whitespace-nowrap"
-              >
-                Mark for Review
-              </button>
+          {/* ── Bottom Action Navigation Bar (Mobile 2-row safe layout, Desktop 1-row with clear separator) ── */}
+          <div className="bg-[#F8FAFC] border-t border-slate-300 p-2 sm:p-2.5 px-3 sm:px-5 shrink-0 max-w-full">
+            {/* Mobile View (< sm): 2 Dedicated Rows (Separates Save & Next from Submit completely) */}
+            <div className="sm:hidden flex flex-col gap-2">
+              {/* Row 1: Question Actions (Review, Clear) on Left | Submit / Next Sec on Right */}
+              <div className="flex items-center justify-between gap-2">
+                <div className="flex items-center gap-1.5">
+                  <button
+                    onClick={handleMarkForReviewAndNext}
+                    className="rounded-lg bg-[#7C3AED] hover:bg-[#6D28D9] text-white px-3 py-1.5 text-xs font-bold transition-all shadow-xs cursor-pointer whitespace-nowrap active:scale-95"
+                  >
+                    Mark for Review
+                  </button>
 
-              <button
-                onClick={handleClearResponse}
-                disabled={!currentSelectedOpt}
-                className="rounded-lg border border-slate-300 bg-white hover:bg-slate-100 disabled:opacity-40 text-slate-700 px-3 py-1.5 text-xs font-bold transition-all cursor-pointer whitespace-nowrap"
-              >
-                Clear
-              </button>
+                  <button
+                    onClick={handleClearResponse}
+                    disabled={!currentSelectedOpt}
+                    className="rounded-lg border border-slate-300 bg-white hover:bg-slate-100 disabled:opacity-40 text-slate-700 px-3 py-1.5 text-xs font-bold transition-all cursor-pointer whitespace-nowrap active:scale-95"
+                  >
+                    Clear
+                  </button>
+                </div>
 
-              <ReportButton questionId={currentQ.id} questionText={currentQ.question_text} showLabel={true} />
+                {timerMode === "sectional" && currentSectionId < sections.length ? (
+                  <button
+                    onClick={handleSectionTimeExpired}
+                    className="rounded-lg bg-amber-600 hover:bg-amber-700 text-white px-3.5 py-1.5 text-xs font-black transition-all shadow-xs cursor-pointer whitespace-nowrap flex items-center gap-1 active:scale-95"
+                    title="Finish current section and move to next"
+                  >
+                    <span>Next Section</span>
+                    <ChevronRight className="h-3.5 w-3.5" />
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => setShowSubmitModal(true)}
+                    className="rounded-lg bg-[#1E3A8A] hover:bg-blue-900 text-white px-3.5 py-1.5 text-xs font-black transition-all shadow-xs cursor-pointer whitespace-nowrap flex items-center gap-1.5 active:scale-95"
+                  >
+                    <Send className="h-3 w-3" />
+                    <span>Submit</span>
+                  </button>
+                )}
+              </div>
+
+              {/* Row 2: Pure Navigation (Prev + Large Save & Next, Zero submit misclick danger) */}
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={handlePrevious}
+                  disabled={currentIndex === 0}
+                  className="rounded-lg border border-slate-300 bg-white hover:bg-slate-100 disabled:opacity-40 text-slate-700 px-3.5 py-2 text-xs font-bold transition-all cursor-pointer flex items-center justify-center gap-1 whitespace-nowrap active:scale-95"
+                >
+                  <ChevronLeft className="h-4 w-4" /> Prev
+                </button>
+
+                <button
+                  onClick={handleSaveAndNext}
+                  className="flex-1 rounded-lg bg-[#16A34A] hover:bg-[#15803D] text-white px-5 py-2 text-xs font-black transition-all shadow-xs cursor-pointer flex items-center justify-center gap-1.5 whitespace-nowrap active:scale-95"
+                >
+                  <span>Save & Next</span>
+                  <ChevronRight className="h-4 w-4" />
+                </button>
+              </div>
             </div>
 
-            <div className="flex items-center gap-1.5 sm:gap-2">
-              <button
-                onClick={handlePrevious}
-                disabled={currentIndex === 0}
-                className="rounded-lg border border-slate-300 bg-white hover:bg-slate-100 disabled:opacity-40 text-slate-700 px-3 py-1.5 text-xs font-bold transition-all cursor-pointer flex items-center gap-1 whitespace-nowrap"
-              >
-                <ChevronLeft className="h-4 w-4" /> Prev
-              </button>
-
-              <button
-                onClick={handleSaveAndNext}
-                className="rounded-lg bg-[#16A34A] hover:bg-[#15803D] text-white px-4 sm:px-5 py-1.5 text-xs font-black transition-all shadow-xs cursor-pointer flex items-center gap-1 whitespace-nowrap"
-              >
-                <span>Save & Next</span>
-                <ChevronRight className="h-4 w-4" />
-              </button>
-
-              {timerMode === "sectional" && currentSectionId < sections.length ? (
+            {/* Desktop View (>= sm): 1-Row Layout with Clear Separation Divider */}
+            <div className="hidden sm:flex items-center justify-between gap-3">
+              <div className="flex items-center gap-2">
                 <button
-                  onClick={handleSectionTimeExpired}
-                  className="rounded-lg bg-amber-600 hover:bg-amber-700 text-white px-3.5 py-1.5 text-xs font-black transition-all shadow-xs cursor-pointer whitespace-nowrap flex items-center gap-1"
-                  title="Finish current section and move to next"
+                  onClick={handleMarkForReviewAndNext}
+                  className="rounded-lg bg-[#7C3AED] hover:bg-[#6D28D9] text-white px-3.5 py-1.5 text-xs font-bold transition-all shadow-xs cursor-pointer whitespace-nowrap hover:shadow"
                 >
-                  <span>Next Section</span>
-                  <ChevronRight className="h-3.5 w-3.5" />
+                  Mark for Review
                 </button>
-              ) : (
+
                 <button
-                  onClick={() => setShowSubmitModal(true)}
-                  className="rounded-lg bg-[#1E3A8A] hover:bg-blue-900 text-white px-3.5 py-1.5 text-xs font-black transition-all shadow-xs cursor-pointer whitespace-nowrap"
+                  onClick={handleClearResponse}
+                  disabled={!currentSelectedOpt}
+                  className="rounded-lg border border-slate-300 bg-white hover:bg-slate-100 disabled:opacity-40 text-slate-700 px-3 py-1.5 text-xs font-bold transition-all cursor-pointer whitespace-nowrap"
                 >
-                  Submit
+                  Clear Response
                 </button>
-              )}
+              </div>
+
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={handlePrevious}
+                  disabled={currentIndex === 0}
+                  className="rounded-lg border border-slate-300 bg-white hover:bg-slate-100 disabled:opacity-40 text-slate-700 px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer flex items-center gap-1 whitespace-nowrap"
+                >
+                  <ChevronLeft className="h-4 w-4" /> Prev
+                </button>
+
+                <button
+                  onClick={handleSaveAndNext}
+                  className="rounded-lg bg-[#16A34A] hover:bg-[#15803D] text-white px-5 py-1.5 text-xs font-black transition-all shadow-xs cursor-pointer flex items-center gap-1.5 whitespace-nowrap hover:shadow"
+                >
+                  <span>Save & Next</span>
+                  <ChevronRight className="h-4 w-4" />
+                </button>
+
+                {/* Clear Visual Divider between Question Navigation and Test Submission */}
+                <div className="h-5 w-px bg-slate-300 mx-1.5" />
+
+                {timerMode === "sectional" && currentSectionId < sections.length ? (
+                  <button
+                    onClick={handleSectionTimeExpired}
+                    className="rounded-lg bg-amber-600 hover:bg-amber-700 text-white px-3.5 py-1.5 text-xs font-black transition-all shadow-xs cursor-pointer whitespace-nowrap flex items-center gap-1"
+                    title="Finish current section and move to next"
+                  >
+                    <span>Next Section</span>
+                    <ChevronRight className="h-3.5 w-3.5" />
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => setShowSubmitModal(true)}
+                    className="rounded-lg bg-[#1E3A8A] hover:bg-blue-900 text-white px-4 py-1.5 text-xs font-black transition-all shadow-xs cursor-pointer whitespace-nowrap flex items-center gap-1.5"
+                  >
+                    <Send className="h-3.5 w-3.5" />
+                    <span>Submit</span>
+                  </button>
+                )}
+              </div>
             </div>
           </div>
         </div>

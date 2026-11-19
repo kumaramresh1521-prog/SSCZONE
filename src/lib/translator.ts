@@ -363,14 +363,34 @@ export async function translateSingleQuestion(
     return raw;
   };
 
-  const [option_a, option_b, option_c, option_d] = await Promise.all([
+  // 4. Explanation: Translate explanation into clean Hindi while preserving math and structure
+  const translateExplanation = async (raw?: string | null, hi?: string | null): Promise<string> => {
+    if (hi) return hi;
+    if (!raw || !raw.trim()) return "";
+    if (hasHindi(raw)) return raw;
+
+    // If explanation has multiple sections/paragraphs, translate each cleanly
+    if (raw.includes("\n\n") && raw.length > 300) {
+      const paragraphs = raw.split("\n\n");
+      const translatedParagraphs = await Promise.all(
+        paragraphs.map(async (p) => {
+          if (!p.trim()) return "";
+          return await translateToHindi(p);
+        })
+      );
+      return translatedParagraphs.join("\n\n");
+    }
+
+    return await translateToHindi(raw);
+  };
+
+  const [option_a, option_b, option_c, option_d, explanation] = await Promise.all([
     translateOption(q.option_a, q.option_a_hi),
     translateOption(q.option_b, q.option_b_hi),
     translateOption(q.option_c, q.option_c_hi),
     translateOption(q.option_d, q.option_d_hi),
+    translateExplanation(q.explanation, q.explanation_hi),
   ]);
-
-  const explanation = q.explanation_hi || (q.explanation && hasHindi(q.explanation) ? q.explanation : "");
 
   return {
     question_text,

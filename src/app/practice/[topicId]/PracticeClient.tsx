@@ -541,7 +541,9 @@ export default function PracticeClient({
         ].filter(Boolean);
 
     // Only translate if native DB Hindi fields are not present and not already cached
-    const needed = targets.filter((item) => item && !item.question_text_hi && !translationsCache[item.id]);
+    const needed = targets.filter(
+      (item) => item && (!translationsCache[item.id] || (!item.explanation_hi && !translationsCache[item.id]?.explanation && item.explanation))
+    );
     if (needed.length === 0) return;
 
     let isMounted = true;
@@ -575,6 +577,28 @@ export default function PracticeClient({
     return () => { isMounted = false; };
   }, [langMode, practiceMode, currentIndex, displayQuestions, activeSetQuestions, translationsCache]);
 
+  // On-demand: If active question is answered and user is in Hindi/Bilingual mode, ensure explanation is translated
+  useEffect(() => {
+    if (langMode === "en") return;
+    const currentQ = displayQuestions[currentIndex];
+    if (
+      currentQ &&
+      showResult &&
+      currentQ.explanation &&
+      !currentQ.explanation_hi &&
+      !translationsCache[currentQ.id]?.explanation
+    ) {
+      translateSingleQuestion(currentQ).then((transData) => {
+        if (transData) {
+          setTranslationsCache((prev) => ({
+            ...prev,
+            [currentQ.id]: transData,
+          }));
+        }
+      });
+    }
+  }, [langMode, showResult, currentIndex, displayQuestions, translationsCache]);
+
   function toggleSubject(id: number) {
     setOpenSubjects((prev) => {
       const isCurrentlyOpen = prev[id] ?? false;
@@ -607,6 +631,19 @@ export default function PracticeClient({
     }
   }
 
+  function scrollToQuestionTop() {
+    if (typeof window !== "undefined") {
+      const card = document.getElementById("practice-question-card");
+      if (card) {
+        const yOffset = -70; // offset for sticky top navbar
+        const y = card.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    }
+  }
+
   function nextQuestion() {
     if (currentIndex < displayQuestions.length - 1) {
       const nextIdx = currentIndex + 1;
@@ -618,6 +655,7 @@ export default function PracticeClient({
         setSelectedAnswer(null);
         setShowResult(false);
       }
+      scrollToQuestionTop();
     } else {
       setShowSummary(true);
     }
@@ -634,6 +672,7 @@ export default function PracticeClient({
         setSelectedAnswer(null);
         setShowResult(false);
       }
+      scrollToQuestionTop();
     }
   }
 
@@ -1667,7 +1706,7 @@ export default function PracticeClient({
                     </div>
 
                     {/* Question Box */}
-                    <div className="rounded-2xl border border-gray-200/90 bg-white p-3.5 sm:p-6 shadow-sm transition-all">
+                    <div id="practice-question-card" className="rounded-2xl border border-gray-200/90 bg-white p-3.5 sm:p-6 shadow-sm transition-all">
                       {/* Top Meta Bar: Exam Tag / Tier on left, Bookmark & Report on right */}
                       <div className="flex items-center justify-between gap-2.5 border-b border-gray-100 pb-2.5 sm:pb-3 mb-3 sm:mb-4">
                         <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap min-w-0">
@@ -1881,32 +1920,97 @@ export default function PracticeClient({
                             </span>
                           </div>
 
+                          {/* Top Navigation Toolbar — Immediately accessible without scrolling! */}
+                          <div className="flex items-center justify-between gap-3 bg-gradient-to-r from-slate-50 to-blue-50/40 p-2.5 sm:p-3 rounded-2xl border border-slate-200/80 shadow-2xs">
+                            <button
+                              type="button"
+                              onClick={prevQuestion}
+                              disabled={currentIndex === 0}
+                              className="inline-flex items-center gap-1.5 rounded-xl border border-gray-200 bg-white px-3.5 sm:px-4 py-2 text-xs sm:text-sm font-bold text-gray-700 shadow-2xs hover:bg-gray-50 hover:border-gray-300 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
+                            >
+                              ⬅ Previous
+                            </button>
+
+                            <div className="text-xs font-bold text-slate-500 hidden sm:block">
+                              Question {currentIndex + 1} of {displayQuestions.length}
+                            </div>
+
+                            <button
+                              type="button"
+                              onClick={nextQuestion}
+                              className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-5 sm:px-6 py-2 sm:py-2.5 text-xs sm:text-sm font-black text-white shadow-md hover:shadow-lg hover:opacity-95 active:scale-98 transition-all cursor-pointer"
+                            >
+                              {currentIndex < displayQuestions.length - 1 ? (
+                                <>Next Question ➔</>
+                              ) : (
+                                <>See Results 🎉</>
+                              )}
+                            </button>
+                          </div>
+
+                          {/* Detailed Solution Box Header */}
+                          <div className="flex items-center justify-between gap-2 pt-1">
+                            <span className="text-xs sm:text-sm font-black text-blue-950 flex items-center gap-1.5">
+                              <span>💡</span>
+                              <span>Detailed Solution / व्याख्या:</span>
+                            </span>
+                            {langMode !== "en" && !q.explanation_hi && !translationsCache[q.id]?.explanation && (
+                              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-indigo-50 border border-indigo-200 text-[11px] font-bold text-indigo-700 animate-pulse">
+                                <RotateCcw className="h-3 w-3 animate-spin text-indigo-600" />
+                                Translating to Hindi...
+                              </span>
+                            )}
+                          </div>
+
                           {/* Detailed Solution Box */}
                           {q.explanation && (
                             <div className="overflow-hidden rounded-2xl border border-blue-100/80 bg-blue-50/20 text-sm shadow-xs">
                               <div className="p-4 sm:p-5 text-gray-800 leading-relaxed font-medium space-y-3">
                                 {(() => {
                                   const trans = translationsCache[q.id];
+                                  const rawHi = q.explanation_hi || trans?.explanation;
                                   const stepsEn = formatSolutionSteps(q.explanation || "");
-                                  const stepsHi = formatSolutionSteps(q.explanation_hi || trans?.explanation || "");
+                                  const stepsHi = rawHi ? formatSolutionSteps(rawHi) : [];
 
-                                  if (langMode === "hi" && stepsHi.length > 0) {
+                                  if (langMode === "hi") {
+                                    if (stepsHi.length > 0) {
+                                      return (
+                                        <div className="space-y-2">
+                                          {stepsHi.map((step, idx) => renderSolutionStep(step, idx))}
+                                        </div>
+                                      );
+                                    }
                                     return (
-                                      <div className="space-y-2">
-                                        {stepsHi.map((step, idx) => renderSolutionStep(step, idx))}
+                                      <div className="space-y-3">
+                                        <div className="inline-flex items-center gap-2 text-xs font-semibold text-indigo-700 bg-indigo-50/80 p-2.5 rounded-xl border border-indigo-100 animate-pulse">
+                                          <RotateCcw className="h-3.5 w-3.5 animate-spin text-indigo-600" />
+                                          <span>हिंदी व्याख्या तैयार हो रही है (Translating Hindi explanation...)...</span>
+                                        </div>
+                                        <div className="space-y-2 opacity-80">
+                                          {stepsEn.map((step, idx) => renderSolutionStep(step, idx))}
+                                        </div>
                                       </div>
                                     );
                                   }
 
-                                  if (langMode === "bilingual" && stepsHi.length > 0) {
+                                  if (langMode === "bilingual") {
                                     return (
                                       <div className="space-y-4">
                                         <div className="space-y-2">
                                           {stepsEn.map((step, idx) => renderSolutionStep(step, idx))}
                                         </div>
                                         <div className="border-t border-indigo-100 pt-3 bg-indigo-50/40 p-3.5 rounded-2xl border border-indigo-100/60 space-y-2">
-                                          <span className="block text-[11px] font-black uppercase text-indigo-700 tracking-wider">🇮🇳 हिंदी व्याख्या (Hindi Steps):</span>
-                                          {stepsHi.map((step, idx) => renderSolutionStep(step, idx))}
+                                          <span className="block text-[11px] font-black uppercase text-indigo-700 tracking-wider">
+                                            🇮🇳 हिंदी व्याख्या (Hindi Steps):
+                                          </span>
+                                          {stepsHi.length > 0 ? (
+                                            stepsHi.map((step, idx) => renderSolutionStep(step, idx))
+                                          ) : (
+                                            <div className="inline-flex items-center gap-2 text-xs font-semibold text-indigo-700 animate-pulse">
+                                              <RotateCcw className="h-3 w-3 animate-spin text-indigo-600" />
+                                              <span>हिंदी व्याख्या अनुवादित हो रही है...</span>
+                                            </div>
+                                          )}
                                         </div>
                                       </div>
                                     );

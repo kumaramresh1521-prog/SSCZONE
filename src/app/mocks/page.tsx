@@ -100,7 +100,7 @@ export default function MockTestSeriesPage() {
         <div className="max-w-5xl mx-auto space-y-5 text-center">
           <div className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 border border-blue-200/80 px-3.5 py-1 text-xs font-black text-blue-700 uppercase tracking-wider shadow-2xs">
             <Trophy className="h-3.5 w-3.5 text-blue-600 fill-blue-500" />
-            <span>Official TCS CBT Practice Engine • 100% Free</span>
+            <span>Official TCS CBT Practice • 100% Free</span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">

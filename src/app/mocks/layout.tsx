@@ -10,7 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
       "SSC CGL Mock Test 2026",
       "Free SSC Mock Test Series",
       "SSC CGL Tier 1 Online Test",
-      "SSC CBT Practice Engine",
+      "SSC CBT Full-Length Practice",
       "100 Questions Mock Test",
       "SSC Tier 1 Mock Test with Solution",
     ],

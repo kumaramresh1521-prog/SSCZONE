@@ -1141,7 +1141,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
     return (
       <div className="h-screen w-full flex flex-col items-center justify-center bg-slate-900 text-white p-4">
         <div className="h-12 w-12 rounded-full border-4 border-blue-500 border-t-transparent animate-spin mb-4" />
-        <h2 className="text-lg font-bold">Initializing SSC Zone CBT Engine...</h2>
+        <h2 className="text-lg font-bold">Loading SSC Zone CBT Practice...</h2>
         <p className="text-xs text-slate-400 mt-1">Loading official shift paper, sectional categories, and bilingual questions</p>
       </div>
     );
@@ -1441,7 +1441,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                   </div>
                   <div>
                     <div className="flex items-center gap-2 flex-wrap">
-                      <span className="text-xs font-black text-slate-900">High-Speed CBT Exam Engine</span>
+                      <span className="text-xs font-black text-slate-900">High-Speed CBT Practice</span>
                       {preloadStatus.isImagesDone && preloadStatus.isTranslationsDone ? (
                         <span className="inline-flex items-center gap-1 text-[10px] font-black uppercase tracking-wider bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full border border-emerald-300">
                           <CheckCircle2 className="h-3 w-3 text-emerald-600" />

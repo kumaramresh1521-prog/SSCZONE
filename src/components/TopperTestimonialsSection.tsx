@@ -57,7 +57,7 @@ export default function TopperTestimonialsSection({
         </h2>
 
         <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-          Read genuine reviews from aspirants who used SSCZone's bilingual TCS previous year questions and CBT practice engine to secure their dream Central Government positions.
+          Read genuine reviews from aspirants who used SSCZone's bilingual TCS previous year questions and CBT practice interface to secure their dream Central Government positions.
         </p>
       </div>
 

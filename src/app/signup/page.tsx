@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { supabase } from "@/lib/supabase";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -15,7 +15,17 @@ export default function SignupPage() {
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [redirectUrl, setRedirectUrl] = useState<string | null>(null);
   const router = useRouter();
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const p = new URLSearchParams(window.location.search).get("redirect");
+      if (p && p.startsWith("/")) {
+        setRedirectUrl(p);
+      }
+    }
+  }, []);
 
   async function handleSignup(e: React.FormEvent) {
     e.preventDefault();
@@ -48,7 +58,7 @@ export default function SignupPage() {
             });
           } catch {}
           toast.success("Account created successfully! Welcome to SSCZone 🚀");
-          router.push("/exams");
+          router.push(redirectUrl || "/exams");
           router.refresh();
           return;
         }
@@ -220,7 +230,10 @@ export default function SignupPage() {
           <div className="mt-6 pt-5 border-t border-white/10 text-center">
             <p className="text-xs text-blue-200/80">
               Already have an account?{" "}
-              <Link href="/login" className="font-extrabold text-amber-400 hover:text-amber-300 underline transition-colors">
+              <Link
+                href={redirectUrl ? `/login?redirect=${encodeURIComponent(redirectUrl)}` : "/login"}
+                className="font-extrabold text-amber-400 hover:text-amber-300 underline transition-colors"
+              >
                 Sign in here
               </Link>
             </p>

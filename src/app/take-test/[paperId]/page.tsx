@@ -45,7 +45,9 @@ import {
   LayoutGrid,
   Lock,
   Globe,
-  ExternalLink
+  ExternalLink,
+  LogIn,
+  UserPlus
 } from "lucide-react";
 import { getPyqQuestionCanonicalPath } from "@/lib/question-seo";
 import { resolvePaperId, getPaperSlug } from "@/lib/paper-slugs";
@@ -735,6 +737,15 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
 
   // 6. Start Exam Handler (with Fullscreen trigger)
   async function handleStartTest() {
+    // PYQ Exam Auth Gate: Only signed-up / signed-in users can attempt official PYQ papers
+    const activeUser = currentUser || userRef.current;
+    if (!activeUser) {
+      toast.error("Please sign in or create a free account to attempt this PYQ paper.", { icon: "🔒" });
+      const targetSlug = paper ? getPaperSlug(paper) : paperId;
+      router.push(`/login?redirect=${encodeURIComponent(`/take-test/${targetSlug}`)}`);
+      return;
+    }
+
     if (!hasAgreed) {
       toast.error("Please accept the declaration checkbox to begin");
       return;
@@ -760,7 +771,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
       }
     }
 
-    const user = userRef.current;
+    const user = activeUser;
     if (user && paper) {
       try {
         const { data, error } = await supabase
@@ -772,13 +783,13 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
         if (!error && data) {
           attemptIdRef.current = data.id;
         } else {
-          attemptIdRef.current = `guest_${Date.now()}`;
+          attemptIdRef.current = `attempt_${Date.now()}`;
         }
       } catch {
-        attemptIdRef.current = `guest_${Date.now()}`;
+        attemptIdRef.current = `attempt_${Date.now()}`;
       }
     } else {
-      attemptIdRef.current = `guest_${Date.now()}`;
+      attemptIdRef.current = `attempt_${Date.now()}`;
     }
 
     if (timerMode === "sectional") {
@@ -1473,37 +1484,84 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
               </div>
             </div>
 
-            {/* Declaration & Proceed CTA */}
+            {/* Declaration & Proceed CTA (Auth-Gated for PYQ Shift Papers) */}
             <div className="border-t border-slate-200 pt-4 space-y-3">
-              <label className="flex items-start gap-2.5 cursor-pointer select-none bg-amber-50/70 p-3 rounded-xl border border-amber-200">
-                <input
-                  type="checkbox"
-                  checked={hasAgreed}
-                  onChange={(e) => setHasAgreed(e.target.checked)}
-                  className="mt-0.5 h-4 w-4 rounded border-slate-400 text-blue-600 focus:ring-blue-500 cursor-pointer shrink-0"
-                />
-                <span className="text-xs text-slate-800 leading-normal font-medium">
-                  I have read and understood all instructions. I declare that I will attempt this test honestly simulating real SSC CGL Computer Based Examination conditions.
-                </span>
-              </label>
+              {currentUser ? (
+                <>
+                  <label className="flex items-start gap-2.5 cursor-pointer select-none bg-amber-50/70 p-3 rounded-xl border border-amber-200">
+                    <input
+                      type="checkbox"
+                      checked={hasAgreed}
+                      onChange={(e) => setHasAgreed(e.target.checked)}
+                      className="mt-0.5 h-4 w-4 rounded border-slate-400 text-blue-600 focus:ring-blue-500 cursor-pointer shrink-0"
+                    />
+                    <span className="text-xs text-slate-800 leading-normal font-medium">
+                      I have read and understood all instructions. I declare that I will attempt this test honestly simulating real SSC CGL Computer Based Examination conditions.
+                    </span>
+                  </label>
 
-              <div className="flex items-center justify-between flex-wrap gap-3">
-                <Link
-                  href="/papers"
-                  className="rounded-xl border border-slate-300 px-4 py-2.5 text-xs font-bold text-slate-700 hover:bg-slate-100"
-                >
-                  ← Exit to Papers
-                </Link>
+                  <div className="flex items-center justify-between flex-wrap gap-3">
+                    <Link
+                      href="/papers"
+                      className="rounded-xl border border-slate-300 px-4 py-2.5 text-xs font-bold text-slate-700 hover:bg-slate-100"
+                    >
+                      ← Exit to Papers
+                    </Link>
 
-                <button
-                  disabled={!hasAgreed || starting || questions.length === 0}
-                  onClick={handleStartTest}
-                  className="rounded-xl bg-[#16A34A] hover:bg-[#15803D] disabled:opacity-50 text-white px-8 py-3 text-xs sm:text-sm font-black shadow-md transition-all cursor-pointer flex items-center gap-2 group"
-                >
-                  <span>{starting ? "Launching Exam Server..." : "I am ready to begin / मैं तैयार हूँ"}</span>
-                  <ChevronRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
-                </button>
-              </div>
+                    <button
+                      disabled={!hasAgreed || starting || questions.length === 0}
+                      onClick={handleStartTest}
+                      className="rounded-xl bg-[#16A34A] hover:bg-[#15803D] disabled:opacity-50 text-white px-8 py-3 text-xs sm:text-sm font-black shadow-md transition-all cursor-pointer flex items-center gap-2 group"
+                    >
+                      <span>{starting ? "Launching Exam Server..." : "I am ready to begin / मैं तैयार हूँ"}</span>
+                      <ChevronRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
+                    </button>
+                  </div>
+                </>
+              ) : (
+                <div className="bg-gradient-to-r from-blue-50 via-indigo-50 to-amber-50 border-2 border-blue-200 rounded-2xl p-4 sm:p-5 space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="h-10 w-10 rounded-xl bg-[#1E3A8A] text-white flex items-center justify-center shrink-0 shadow-sm">
+                      <Lock className="h-5 w-5" />
+                    </div>
+                    <div>
+                      <h4 className="text-sm sm:text-base font-black text-slate-900">
+                        Sign In or Sign Up Required to Attempt PYQ Papers (लॉगिन / साइन-अप अनिवार्य)
+                      </h4>
+                      <p className="text-xs text-slate-600 mt-1 leading-relaxed">
+                        Previous Year Question (PYQ) shift papers ko attempt karne ke liye account me sign-in hona zaroori hai. Isse aapka complete scorecard, time analytics, aur solutions aapke profile me safe rahenge.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-3 flex-wrap pt-1">
+                    <Link
+                      href={`/login?redirect=${encodeURIComponent(`/take-test/${paper ? getPaperSlug(paper) : paperId}`)}`}
+                      className="flex-1 min-w-[150px] rounded-xl bg-[#1E3A8A] hover:bg-blue-900 text-white py-2.5 px-4 text-xs sm:text-sm font-black shadow-md transition-all flex items-center justify-center gap-2 text-center"
+                    >
+                      <LogIn className="h-4 w-4" />
+                      <span>Sign In (लॉग-इन करें)</span>
+                    </Link>
+
+                    <Link
+                      href={`/signup?redirect=${encodeURIComponent(`/take-test/${paper ? getPaperSlug(paper) : paperId}`)}`}
+                      className="flex-1 min-w-[150px] rounded-xl bg-[#16A34A] hover:bg-[#15803D] text-white py-2.5 px-4 text-xs sm:text-sm font-black shadow-md transition-all flex items-center justify-center gap-2 text-center"
+                    >
+                      <UserPlus className="h-4 w-4" />
+                      <span>Create Free Account (साइन-अप)</span>
+                    </Link>
+                  </div>
+
+                  <div className="text-center pt-1">
+                    <Link
+                      href="/papers"
+                      className="text-xs font-bold text-slate-500 hover:text-slate-800 underline underline-offset-4"
+                    >
+                      ← Back to Previous Papers Directory
+                    </Link>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
 
@@ -1514,15 +1572,31 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
             <div className="bg-white rounded-2xl border border-slate-300 p-5 shadow-sm text-center space-y-3">
               <div className="mx-auto h-20 w-20 rounded-2xl bg-gradient-to-tr from-blue-700 to-indigo-800 p-1 shadow-md">
                 <div className="h-full w-full rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 font-black text-2xl">
-                  {candidateName.charAt(0).toUpperCase()}
+                  {currentUser ? candidateName.charAt(0).toUpperCase() : <Lock className="h-8 w-8 text-slate-400" />}
                 </div>
               </div>
 
               <div>
-                <div className="text-sm font-black text-slate-900 truncate">{candidateName}</div>
-                <div className="text-xs text-slate-500 font-medium">Candidate Roll No: 2405019823</div>
-                <div className="mt-1 inline-flex items-center gap-1 text-[11px] font-bold text-blue-700 bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-200">
-                  <Monitor className="h-3 w-3" /> System: C9-LAB-04
+                <div className="text-sm font-black text-slate-900 truncate">
+                  {currentUser ? candidateName : "Guest Aspirant"}
+                </div>
+                <div className="text-xs text-slate-500 font-medium">
+                  {currentUser ? "Candidate Roll No: 2405019823" : "Not Signed In"}
+                </div>
+                <div className={`mt-1 inline-flex items-center gap-1 text-[11px] font-bold px-2.5 py-0.5 rounded-full border ${
+                  currentUser
+                    ? "text-blue-700 bg-blue-50 border-blue-200"
+                    : "text-amber-700 bg-amber-50 border-amber-300"
+                }`}>
+                  {currentUser ? (
+                    <>
+                      <Monitor className="h-3 w-3" /> System: C9-LAB-04
+                    </>
+                  ) : (
+                    <>
+                      <Lock className="h-3 w-3" /> Sign-In Required
+                    </>
+                  )}
                 </div>
               </div>
 

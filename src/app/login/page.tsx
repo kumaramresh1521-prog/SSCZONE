@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { supabase } from "@/lib/supabase";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -14,7 +14,17 @@ export default function LoginPage() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+  const [redirectUrl, setRedirectUrl] = useState<string | null>(null);
   const router = useRouter();
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const p = new URLSearchParams(window.location.search).get("redirect");
+      if (p && p.startsWith("/")) {
+        setRedirectUrl(p);
+      }
+    }
+  }, []);
 
   async function handleLogin(e: React.FormEvent) {
     e.preventDefault();
@@ -47,7 +57,9 @@ export default function LoginPage() {
         console.error("Profile check error:", err);
       }
 
-      router.replace(isAdmin ? "/admin" : "/dashboard");
+      const redirectParam = typeof window !== "undefined" ? new URLSearchParams(window.location.search).get("redirect") : null;
+      const destination = isAdmin ? "/admin" : (redirectParam && redirectParam.startsWith("/") ? redirectParam : "/dashboard");
+      router.replace(destination);
       router.refresh();
     } catch (err: any) {
       setError(err?.message || "An unexpected error occurred. Please try again.");
@@ -169,7 +181,10 @@ export default function LoginPage() {
           <div className="mt-6 pt-5 border-t border-white/10 text-center">
             <p className="text-xs text-blue-200/80">
               Don&apos;t have an account yet?{" "}
-              <Link href="/signup" className="font-extrabold text-amber-400 hover:text-amber-300 underline transition-colors">
+              <Link
+                href={redirectUrl ? `/signup?redirect=${encodeURIComponent(redirectUrl)}` : "/signup"}
+                className="font-extrabold text-amber-400 hover:text-amber-300 underline transition-colors"
+              >
                 Create free account
               </Link>
             </p>

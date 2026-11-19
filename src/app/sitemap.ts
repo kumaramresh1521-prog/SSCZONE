@@ -83,7 +83,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     console.error("Sitemap topics query error:", e);
   }
 
-  // Dynamic Blog routes
+  // Dynamic Blog routes — Master educational chapters & articles
   let blogRoutes: MetadataRoute.Sitemap = [];
   try {
     const { data: blogs } = await supabase
@@ -92,13 +92,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       .eq("is_published", true)
       .not("keywords", "ilike", "%system-report%")
       .not("slug", "ilike", "sys-report%")
-      .limit(200);
+      .limit(500);
     if (blogs) {
       blogRoutes = blogs.map((b) => ({
         url: `${baseUrl}/blog/${b.slug}`,
         lastModified: b.updated_at ? new Date(b.updated_at) : b.created_at ? new Date(b.created_at) : new Date(),
         changeFrequency: "weekly",
-        priority: 0.75,
+        priority: 0.85,
       }));
     }
   } catch (e) {
@@ -126,19 +126,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     console.error("Sitemap papers query error:", e);
   }
 
-  // Dynamic Chapter Notes routes (JSON file store)
-  let noteRoutes: MetadataRoute.Sitemap = [];
-  try {
-    const notes = getChapterNotes({ active_only: true });
-    noteRoutes = notes.map((n) => ({
-      url: `${baseUrl}/blog/notes/${n.slug}`,
-      lastModified: n.updated_at ? new Date(n.updated_at) : n.created_at ? new Date(n.created_at) : new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    }));
-  } catch (e) {
-    console.error("Sitemap chapter notes error:", e);
-  }
+  // Note: Individual /blog/notes/[slug] routes are omitted from sitemap to prevent duplicate content
+  // with master /blog/[slug] pages. The main hub /blog/notes is included in staticRoutes.
 
   // Dynamic Question routes for Google SEO & Answer Box Ranking
   let questionRoutes: MetadataRoute.Sitemap = [];
@@ -187,7 +176,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...topicRoutes,
     ...blogRoutes,
     ...paperRoutes,
-    ...noteRoutes,
     ...questionRoutes,
     ...pyqQuestionRoutes,
   ];

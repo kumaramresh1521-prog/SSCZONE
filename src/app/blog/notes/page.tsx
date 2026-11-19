@@ -28,7 +28,7 @@ export default async function ChapterNotesPage() {
     "@context": "https://schema.org",
     "@type": "Course",
     name: "SSC CGL 2026 Chapter-Wise Subject Theory & Notes",
-    description: "Curated chapter-by-chapter theory, formulas, and high-yield revision notes for SSC exams.",
+    description: "Curated chapter-by-chapter theory, formulas, and revision notes for SSC exams.",
     provider: {
       "@type": "Organization",
       name: "SSCZone",

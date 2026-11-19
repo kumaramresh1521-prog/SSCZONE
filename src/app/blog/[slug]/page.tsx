@@ -304,6 +304,26 @@ export default async function BlogPostPage(props: Props) {
           </div>
         </header>
 
+        {/* Top Interactive Reader Quick Pill */}
+        <div className="flex items-center justify-between rounded-2xl border border-indigo-200 bg-gradient-to-r from-indigo-50 via-blue-50 to-indigo-50 p-3.5 sm:px-5">
+          <div className="flex items-center gap-2.5">
+            <div className="h-8 w-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-xs">
+              <BookOpen className="h-4 w-4" />
+            </div>
+            <div>
+              <p className="text-xs font-black text-indigo-950">Study in Interactive Split-Screen Reader</p>
+              <p className="text-[11px] text-indigo-700 hidden sm:block">Read bilingual Hindi-English definitions, diagrams &amp; formula cheat sheets</p>
+            </div>
+          </div>
+          <Link
+            href={`/blog/notes?chapter=${blog.slug}`}
+            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold shadow-xs transition-all shrink-0"
+          >
+            <span>Open Reader</span>
+            <ChevronRight className="h-3.5 w-3.5" />
+          </Link>
+        </div>
+
         {/* Cover Image */}
         {blog.image_url && (
           <div className="rounded-3xl overflow-hidden shadow-sm border border-gray-200 bg-white">
@@ -362,15 +382,15 @@ export default async function BlogPostPage(props: Props) {
                 Master Subject Theory, Rules & Formulas
               </h3>
               <p className="text-xs sm:text-sm text-indigo-200 leading-relaxed">
-                Study in our interactive 2-column Chapter Reader with chapter-by-chapter theory, Hindi-English definitions, and high-yield formula cheat sheets.
+                Study in our interactive 2-column Chapter Reader with chapter-by-chapter theory, Hindi-English definitions, and formula cheat sheets.
               </p>
             </div>
             <Link
-              href="/blog/notes"
+              href={`/blog/notes?chapter=${blog.slug}`}
               className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white hover:bg-indigo-50 px-5 py-3 text-xs font-black text-indigo-950 shadow-lg transition-all shrink-0 cursor-pointer"
             >
               <BookOpen className="h-4 w-4 text-indigo-600" />
-              <span>Open Chapter Reader →</span>
+              <span>Open in Chapter Reader →</span>
             </Link>
           </div>
 

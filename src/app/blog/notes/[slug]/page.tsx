@@ -32,27 +32,18 @@ export async function generateMetadata(
     (note as any).seo_description ||
     note.excerpt ||
     note.content.replace(/<[^>]*>?/gm, "").substring(0, 160) + "...";
-  const canonicalUrl = `https://ssczone.com/blog/notes/${note.slug}`;
-
-  const keywords = (note as any).keywords && (note as any).keywords.length > 0
-    ? (note as any).keywords
-    : [
-        `${note.title} SSC Notes`,
-        `${note.hindi_title || note.title} नोट्स`,
-        `${note.subject_name} SSC CGL Notes`,
-        "SSC CGL 2026 General Science Notes",
-        "Cell Biology Chapter Notes in Hindi and English",
-        "SSC CGL Biology Theory & MCQs",
-        "Railway RRB NTPC Biology Chapter Wise Notes",
-        "SSC CGL Study Material PDF",
-      ];
+  // Canonical points to the Master Blog Article to prevent duplicate content
+  const canonicalUrl = `https://ssczone.com/blog/${note.slug}`;
 
   return {
     title,
     description: desc,
-    keywords,
     alternates: {
       canonical: canonicalUrl,
+    },
+    robots: {
+      index: false,
+      follow: true,
     },
     openGraph: {
       title,

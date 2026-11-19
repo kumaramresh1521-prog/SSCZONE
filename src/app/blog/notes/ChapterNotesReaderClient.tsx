@@ -378,7 +378,7 @@ export default function ChapterNotesReaderClient({
       navigator
         .share({
           title: currentNote.title,
-          text: `Check out these high-yield SSC study notes: ${currentNote.title} on SSCZone`,
+          text: `Check out these SSC study notes: ${currentNote.title} on SSCZone`,
           url: window.location.href,
         })
         .catch(() => handleCopyLink());

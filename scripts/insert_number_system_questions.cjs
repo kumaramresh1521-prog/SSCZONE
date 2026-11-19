@@ -8,9 +8,13 @@ const supabase = createClient(url, key);
 
 async function main() {
   const jsonPath = path.join(__dirname, 'number_system_questions_clean.json');
-  const questions = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+  if (!fs.existsSync(jsonPath)) {
+    console.error(`Clean questions JSON not found at ${jsonPath}`);
+    process.exit(1);
+  }
 
-  console.log(`Starting insertion of ${questions.length} Number System questions into topic_id: 182...`);
+  const questions = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+  console.log(`Starting insertion of ${questions.length} Number System questions into topic_id: 182 (SSC CGL Number System)...`);
 
   // First check if any questions already exist for topic_id 182
   const { count: existingCount, error: countErr } = await supabase
@@ -25,12 +29,26 @@ async function main() {
 
   console.log(`Current questions in topic_id 182: ${existingCount}`);
 
+  if (existingCount > 0) {
+    console.log(`Cleaning up ${existingCount} old questions in topic_id 182 before fresh ingestion...`);
+    const { error: delErr } = await supabase
+      .from('questions')
+      .delete()
+      .eq('topic_id', 182);
+    if (delErr) {
+      console.error('Error cleaning old questions:', delErr);
+      process.exit(1);
+    }
+    console.log('Cleanup complete.');
+  }
+
   const BATCH_SIZE = 50;
   let insertedTotal = 0;
+  const insertedIds = [];
 
   for (let i = 0; i < questions.length; i += BATCH_SIZE) {
     const slice = questions.slice(i, i + BATCH_SIZE);
-    const payload = slice.map(q => ({
+    const dbRows = slice.map(q => ({
       topic_id: 182,
       question_text: q.question_text,
       option_a: q.option_a,
@@ -39,42 +57,40 @@ async function main() {
       option_d: q.option_d,
       correct_answer: q.correct_answer,
       explanation: q.explanation,
-      difficulty: q.difficulty || 'medium',
-      exam_tag: q.exam_tag || 'R.S. Aggarwal Quantitative Aptitude',
-      year_reference: q.year_reference ? String(q.year_reference) : null,
+      difficulty: q.difficulty,
+      exam_tag: q.exam_tag,
+      tier_level: q.tier_level,
+      year_reference: q.year_reference,
       is_active: true
     }));
 
     const { data, error } = await supabase
       .from('questions')
-      .insert(payload)
+      .insert(dbRows)
       .select('id');
 
     if (error) {
-      console.error(`Error inserting batch ${Math.floor(i / BATCH_SIZE) + 1}:`, error);
+      console.error(`Failed at batch ${i} - ${i + slice.length}:`, error);
       process.exit(1);
     }
 
     insertedTotal += data.length;
-    console.log(`[Batch ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(questions.length / BATCH_SIZE)}] Inserted ${data.length} questions (Total: ${insertedTotal}/${questions.length})`);
+    insertedIds.push(...data.map(d => d.id));
+    console.log(`Batch ${Math.floor(i / BATCH_SIZE) + 1}: Inserted ${data.length} questions (Total so far: ${insertedTotal}/${questions.length})`);
   }
 
-  console.log('\n--- VERIFICATION AFTER INSERTION ---');
+  console.log(`\n🎉 Successfully inserted all ${insertedTotal} Number System questions into topic_id: 182!`);
+
+  // Verify final count in database
   const { count: finalCount } = await supabase
     .from('questions')
     .select('id', { count: 'exact', head: true })
     .eq('topic_id', 182);
 
-  console.log(`Total questions in topic_id 182 now: ${finalCount}`);
-
-  // Fetch 3 random questions to inspect
-  const { data: samples } = await supabase
-    .from('questions')
-    .select('id, question_text, correct_answer, option_a, option_b, option_c, option_d, explanation')
-    .eq('topic_id', 182)
-    .limit(3);
-
-  console.log('Sample verified questions from database:', JSON.stringify(samples, null, 2));
+  console.log(`Verified DB count for topic_id 182: ${finalCount}`);
 }
 
-main().catch(console.error);
+main().catch(err => {
+  console.error('Fatal error during insertion:', err);
+  process.exit(1);
+});

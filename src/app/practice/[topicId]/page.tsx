@@ -22,10 +22,14 @@ export async function generateMetadata({ params }: { params: Promise<{ topicId: 
       if (!data) {
         const cleanTitle = topicId.replace(/-/g, " ");
         const wildcardTitle = `%${cleanTitle.trim().replace(/\s+/g, "%")}%`;
+        const isAlgebra = /algeb/i.test(topicId);
+        const orFilter = isAlgebra
+          ? `slug.eq.ssc-cgl-${topicId},slug.ilike.%algeb%,title.ilike.%algeb%`
+          : `slug.eq.ssc-cgl-${topicId},slug.ilike.%-${topicId},title.ilike.${cleanTitle},title.ilike.${wildcardTitle}`;
         const { data: fallbackData } = await supabase
           .from("topics")
           .select("title, slug")
-          .or(`slug.eq.ssc-cgl-${topicId},slug.ilike.%-${topicId},title.ilike.${cleanTitle},title.ilike.${wildcardTitle}`)
+          .or(orFilter)
           .order("id", { ascending: true })
           .limit(1)
           .maybeSingle();
@@ -79,14 +83,18 @@ export default async function PracticePage({ params }: { params: Promise<{ topic
       }
     }
 
-    // Fallback 2: If topicId is a generic slug (e.g. 'percentage', 'profit-loss' matching 'ssc-cgl-profit-and-loss' or topic title)
+    // Fallback 2: If topicId is a generic slug (e.g. 'percentage', 'profit-loss', 'algebra' matching canonical topics)
     if (!topic) {
       const cleanTitle = topicId.replace(/-/g, " ");
       const wildcardTitle = `%${cleanTitle.trim().replace(/\s+/g, "%")}%`;
+      const isAlgebra = /algeb/i.test(topicId);
+      const orFilter = isAlgebra
+        ? `slug.eq.ssc-cgl-${topicId},slug.ilike.%algeb%,title.ilike.%algeb%`
+        : `slug.eq.ssc-cgl-${topicId},slug.ilike.%-${topicId},title.ilike.${cleanTitle},title.ilike.${wildcardTitle}`;
       const { data: fallbackTopic } = await supabase
         .from("topics")
         .select("*, subjects(id, title, exam_id, exams(id, title, slug))")
-        .or(`slug.eq.ssc-cgl-${topicId},slug.ilike.%-${topicId},title.ilike.${cleanTitle},title.ilike.${wildcardTitle}`)
+        .or(orFilter)
         .order("id", { ascending: true })
         .limit(1)
         .maybeSingle();

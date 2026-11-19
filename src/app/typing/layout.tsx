@@ -3,17 +3,17 @@ import { buildPageMetadata } from "@/lib/seo-store";
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata("/typing", {
-    title: "SSC 2000 Key Depressions Typing Test Simulator — TCS Exam Hall Interface | SSCZone",
+    title: "SSC 2000 Key Depressions Typing Test Platform — TCS Exam Hall Interface | SSCZone",
     description:
       "Practice official SSC 2000 Key Depressions DEST typing test passages with 15-minute countdown, backspace controls, gross/net WPM, accuracy, and TCS error percentage calculator for CGL Tier 2 & CHSL.",
     keywords: [
       "SSC 2000 Key Depressions",
       "SSC Typing Test TCS Interface",
-      "SSC CGL DEST Simulator",
+      "SSC CGL DEST Practice Interface",
       "SSC Typing Test 15 Minutes",
       "SSC Typing Error Percentage Calculator",
       "SSC CHSL Typing Speed Online",
-      "TCS Pattern Typing Simulator",
+      "TCS Pattern Typing Practice",
       "Full and Half Error Calculator SSC",
     ],
   });
@@ -22,7 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
 const TYPING_TEST_APP_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "SSC 2000 Key Depressions Typing Test Simulator",
+  "name": "SSC 2000 Key Depressions Typing Test Platform",
   "applicationCategory": "EducationalApplication",
   "operatingSystem": "All (Web Browser)",
   "offers": {
@@ -30,7 +30,7 @@ const TYPING_TEST_APP_SCHEMA = {
     "price": "0",
     "priceCurrency": "INR"
   },
-  "description": "Authentic TCS examination hall typing test interface for SSC CGL Tier 2, CHSL, and Steno candidates. Simulates 2000 key depressions in 15 minutes with exact TCS error evaluation rules.",
+  "description": "Authentic TCS examination hall typing test interface for SSC CGL Tier 2, CHSL, and Steno candidates. Replicates theulates 2000 key depressions in 15 minutes with exact TCS error evaluation rules.",
   "featureList": [
     "2000 Key Depressions in 15 Minutes countdown timer",
     "Exact TCS split-screen passage display",

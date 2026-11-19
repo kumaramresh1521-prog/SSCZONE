@@ -1522,7 +1522,7 @@ export default function DailyQuizClient() {
             <div className="bg-slate-50 p-4 rounded-xl border border-slate-100">
               <div className="font-bold text-slate-800 mb-1">🎯 Negative-Marking Control</div>
               <p className="leading-relaxed">
-                Strict +2.00 / -0.50 SSC CGL marking simulates actual negative scoring so you develop the
+                Strict +2.00 / -0.50 SSC CGL marking applies real SSC negative marking so you develop the
                 discipline of skipping low-probability guesses.
               </p>
             </div>

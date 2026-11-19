@@ -35,7 +35,7 @@ const RANK_PREDICTOR_APP_SCHEMA = {
     "Automatic Answer Key URL parsing for TCS candidate responses",
     "Section-wise raw marks, correct, incorrect, and negative deduction",
     "Shift difficulty normalization estimate",
-    "Category-wise and All-India rank simulation",
+    "Category-wise and All-India rank practice",
     "Printable scorecard summary"
   ]
 };

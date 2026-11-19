@@ -39,9 +39,9 @@ export default function PreparationRoadmapSection() {
     {
       step: "03",
       tag: "Real Exam Hall Pressure",
-      title: "Full-Length CBT Mock Simulator",
+      title: "Full-Length CBT Mock Test",
       description:
-        "Simulate the actual examination hall experience with 60-minute countdown timer, TCS question palette (answered, marked for review), and granular accuracy reports.",
+        "Experience the actual examination hall conditions with 60-minute countdown timer, TCS question palette (answered, marked for review), and granular accuracy reports.",
       linkText: "Attempt Full Mocks",
       href: "/mocks",
       icon: Laptop,

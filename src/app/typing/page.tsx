@@ -348,7 +348,7 @@ export default function TypingPage() {
               <div className="flex items-center gap-2">
                 <span className="text-[10px] uppercase font-black text-blue-600 tracking-wider">SSCZONE</span>
                 <span className="text-slate-300">·</span>
-                <span className="text-xs font-black text-slate-800">SSC Typing Test Simulator</span>
+                <span className="text-xs font-black text-slate-800">SSC Typing Test Practice</span>
               </div>
             </div>
           </div>
@@ -909,7 +909,7 @@ export default function TypingPage() {
               <HelpCircle className="w-3.5 h-3.5" /> Frequently Asked Questions
             </div>
             <h2 className="text-xl sm:text-2xl font-black text-slate-900">
-              SSC Typing Test &amp; TCS Exam Hall Simulator FAQs
+              SSC Typing Test &amp; TCS Exam Hall Practice FAQs
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
               Authentic guidance on test rules, keyboards, shortcuts, and backspace usage.

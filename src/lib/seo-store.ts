@@ -59,7 +59,7 @@ export const DEFAULT_SEO_CONFIG: SeoConfigData = {
     "SSC English Grammar Rules & Vocabulary",
     "SSC Reasoning Chapter Wise Practice",
     "SSC General Studies Static GK Capsules",
-    "SSC Typing Speed Test TCS Simulator",
+    "SSC Typing Speed Test TCS Interface",
     "SSC Speed Test 25 Questions 15 Mins",
     "Daily Free SSC Quiz & Mock Test Online",
     "Bilingual SSC CBT Online Test Portal"

@@ -244,7 +244,7 @@ const BOOKS_DATA: BookItem[] = [
     badge: "Real Exam Mocks",
     coverColor: "from-teal-700 to-emerald-900",
     description: "Complete shift-wise 100-question actual exam papers with step-by-step solutions and historical cutoff benchmarks.",
-    topperNote: "Ideal for final 30-day exam simulation and time-management practice.",
+    topperNote: "Ideal for final 30-day exam practice and time-management practice.",
     freePdfAvailable: true,
     sampleChapters: [
       { title: "SSC CGL 2024 Tier-1 Official Shift Papers (Sets 1-10)", pages: "1-120", highYield: true },

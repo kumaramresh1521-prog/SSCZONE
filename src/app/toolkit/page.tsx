@@ -83,7 +83,7 @@ export default function ToolkitHubPage() {
     { id: "all", label: "All Utilities" },
     { id: "utility", label: "Photo & Signature Tools" },
     { id: "calculator", label: "Score & Age Calculators" },
-    { id: "practice", label: "Exam Hall Simulators" },
+    { id: "practice", label: "Exam Hall Practice Tools" },
     { id: "checklist", label: "Syllabus Trackers" },
   ];
 

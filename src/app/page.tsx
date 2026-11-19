@@ -172,7 +172,7 @@ export default async function Home() {
       icon: BrainCircuit,
     },
     {
-      title: "Timed Exam Simulations",
+      title: "Full-Length Practice Tests",
       desc: "Attempt official shift papers with live countdown timer, sectional navigation, and instant negative marking scorecards.",
       icon: Trophy,
     },
@@ -195,7 +195,7 @@ export default async function Home() {
     },
     {
       title: "Typing Test",
-      desc: "Practice with the official SSC DEST keyboard simulator, 15-minute timer, backspace toggle, and TCS error percentage calculator.",
+      desc: "Practice with the official SSC DEST keyboard practice interface, 15-minute timer, backspace toggle, and TCS error percentage calculator.",
       href: "/typing",
       icon: Keyboard,
       action: "Open Typing Console",

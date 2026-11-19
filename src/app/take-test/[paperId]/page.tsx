@@ -1496,7 +1496,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                       className="mt-0.5 h-4 w-4 rounded border-slate-400 text-blue-600 focus:ring-blue-500 cursor-pointer shrink-0"
                     />
                     <span className="text-xs text-slate-800 leading-normal font-medium">
-                      I have read and understood all instructions. I declare that I will attempt this test honestly simulating real SSC CGL Computer Based Examination conditions.
+                      I have read and understood all instructions. I declare that I will attempt this test honestly in the SSC CGL Computer Based Examination conditions.
                     </span>
                   </label>
 
@@ -1607,7 +1607,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                 </div>
                 <div className="flex justify-between">
                   <span>Exam Tier:</span>
-                  <span className="font-bold text-slate-800">Tier-I Simulation</span>
+                  <span className="font-bold text-slate-800">Tier-I Practice</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Marking:</span>

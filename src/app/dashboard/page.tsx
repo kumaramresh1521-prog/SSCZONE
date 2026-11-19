@@ -445,7 +445,7 @@ export default function DashboardPage() {
                     Fast-Track Your SSC Preparation
                   </h2>
                   <p className="mt-1.5 text-xs sm:text-sm text-blue-100/80 leading-relaxed max-w-xl">
-                    Take instant speed tests with user-based questions, practice daily free quizzes, or simulate real exam shifts from official 2026 papers.
+                    Take instant speed tests with user-based questions, practice daily free quizzes, or attempt real PYQ shift papers from official 2026 papers.
                   </p>
                 </div>
 

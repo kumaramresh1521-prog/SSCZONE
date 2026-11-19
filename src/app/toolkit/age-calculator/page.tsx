@@ -136,7 +136,7 @@ export default function SSCAgeCalculatorPage() {
 
   const relatedTools = [
     { title: "Photo & Signature Resizer", desc: "Compress photo (20-50 KB) & signature (10-20 KB) in seconds.", href: "/toolkit/photo-resizer" },
-    { title: "TCS Typing Test Simulator", desc: "2000 Key Depressions in 15 mins TCS exam hall interface.", href: "/typing" },
+    { title: "TCS Typing Test Practice", desc: "2000 Key Depressions in 15 mins TCS exam hall interface.", href: "/typing" },
     { title: "SSC Rank Predictor", desc: "Calculate raw marks and shift difficulty normalization score.", href: "/toolkit/rank-predictor" },
     { title: "Master Syllabus Tracker", desc: "Track chapter-wise 3-pillar progress for CGL, CHSL, CPO.", href: "/syllabus" },
   ];

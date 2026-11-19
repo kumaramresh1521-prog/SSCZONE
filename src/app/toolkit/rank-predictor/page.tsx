@@ -291,9 +291,9 @@ export default function SSCPageRankPredictor() {
         rollNumber: "Manual Input",
         candidateName: "Aspirant",
         examName: "SSC Combined Graduate Level Examination",
-        testDate: "Simulated Shift",
+        testDate: "Practice Shift",
         testTime: manualShiftDifficulty.toUpperCase() + " SHIFT",
-        venue: "Online Simulation",
+        venue: "Online Practice",
         vendor: "Generic"
       },
       summary: {
@@ -1353,7 +1353,7 @@ export default function SSCPageRankPredictor() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { title: "Photo & Signature Resizer", desc: "Compress photo (20-50 KB) & signature (10-20 KB) in seconds.", href: "/toolkit/photo-resizer" },
-              { title: "TCS Typing Test Simulator", desc: "2000 Key Depressions in 15 mins TCS exam hall interface.", href: "/typing" },
+              { title: "TCS Typing Test Practice", desc: "2000 Key Depressions in 15 mins TCS exam hall interface.", href: "/typing" },
               { title: "SSC Age Calculator", desc: "Calculate exact years, months, and days on crucial cutoff dates.", href: "/toolkit/age-calculator" },
               { title: "Master Syllabus Tracker", desc: "Track chapter-wise 3-pillar progress for CGL, CHSL, CPO.", href: "/syllabus" },
             ].map((t, idx) => (

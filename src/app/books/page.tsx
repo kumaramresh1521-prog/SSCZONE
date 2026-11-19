@@ -19,29 +19,11 @@ import {
   CheckCircle2
 } from "lucide-react";
 
-// --- DATA TYPES ---
-export interface BookItem {
-  id: string;
-  title: string;
-  hindiTitle?: string;
-  author: string;
-  publisher: string;
-  edition: string;
-  subject: "Quantitative Aptitude" | "English Language" | "Reasoning Ability" | "General Awareness" | "PYQ Compilations";
-  exams: string[];
-  language: "Bilingual" | "English" | "Hindi";
-  pages: number;
-  rating: number;
-  reviewCount: number;
-  badge?: string;
-  coverImage?: string; // Image URL/Path - user can easily drop their image here
-  coverColor: string; // Elegant clean placeholder color
-  description: string;
-  topperNote?: string;
-  freePdfAvailable: boolean;
-  sampleChapters: { title: string; pages: string; highYield?: boolean }[];
-  practiceTopicSlug?: string;
-}
+import {
+  BookItem,
+  BooksFreeNotesSectionConfig,
+  DEFAULT_FREE_NOTES_CONFIG
+} from "@/lib/books-types";
 
 // --- CURATED TOPPER BOOKS DATASET ---
 const BOOKS_DATA: BookItem[] = [
@@ -302,6 +284,20 @@ export default function BooksPage() {
   // Bookmark / Desk list
   const [savedBooks, setSavedBooks] = useState<string[]>([]);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
+
+  // Dynamic Free Revision Notes Section
+  const [freeNotesConfig, setFreeNotesConfig] = useState<BooksFreeNotesSectionConfig>(DEFAULT_FREE_NOTES_CONFIG);
+
+  useEffect(() => {
+    fetch("/api/books/notes")
+      .then((r) => r.json())
+      .then((data) => {
+        if (data?.success && data?.config) {
+          setFreeNotesConfig(data.config);
+        }
+      })
+      .catch(() => {});
+  }, []);
 
   useEffect(() => {
     try {
@@ -709,39 +705,39 @@ export default function BooksPage() {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
             <div>
               <h2 className="text-base font-extrabold text-gray-900">
-                Free Revision Notes & High-Yield Theory
+                {freeNotesConfig.title || "Free Revision Notes"}
               </h2>
               <p className="text-xs text-gray-500 mt-0.5">
-                Structured chapter summaries and formulas available to study online.
+                {freeNotesConfig.description || "Structured chapter summaries and formulas available to study online."}
               </p>
             </div>
             <Link
-              href="/notes"
+              href={freeNotesConfig.exploreAllHref || "/notes"}
               className="text-[11px] font-bold text-blue-700 bg-blue-50 px-3 py-1.5 rounded-lg border border-blue-200 hover:bg-blue-100 transition-colors w-fit flex items-center gap-1"
             >
-              <span>Explore All Notes</span>
+              <span>{freeNotesConfig.exploreAllLabel || "Explore All Notes"}</span>
               <ArrowRight className="h-3 w-3" />
             </Link>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-            {FREE_NOTES.map((note) => (
+            {(freeNotesConfig.notes || []).filter((n) => n.is_active !== false).map((note) => (
               <div
                 key={note.id}
                 className="flex items-center justify-between rounded-xl border border-gray-100 bg-gray-50/80 p-3.5 hover:border-gray-300 hover:bg-white transition-all text-xs"
               >
                 <div className="flex items-center gap-3">
                   <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-100 text-blue-700 font-bold text-[10px] shrink-0">
-                    NOTES
+                    {note.badge || "NOTES"}
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 leading-snug line-clamp-1">{note.title}</h4>
-                    <p className="text-[10px] text-gray-500 mt-0.5">{note.subject} • High-Yield Theory</p>
+                    <p className="text-[10px] text-gray-500 mt-0.5">{note.subject} • Revision Notes</p>
                   </div>
                 </div>
 
                 <Link
-                  href="/notes"
+                  href={note.href || "/notes"}
                   className="flex items-center gap-1 rounded-lg bg-white border border-gray-200 px-2.5 py-1.5 text-[11px] font-bold text-gray-700 hover:bg-blue-50 hover:text-blue-700 hover:border-blue-200 transition-all shrink-0 ml-2"
                 >
                   <Eye className="h-3.5 w-3.5" />
@@ -822,8 +818,8 @@ export default function BooksPage() {
 
                       <div className="flex items-center gap-2 shrink-0">
                         {chap.highYield && (
-                          <span className="rounded bg-rose-50 border border-rose-100 px-1.5 py-0.5 text-[9px] font-bold text-rose-700">
-                            High Yield
+                          <span className="rounded bg-indigo-50 border border-indigo-100 px-1.5 py-0.5 text-[9px] font-bold text-indigo-700">
+                            Core Chapter
                           </span>
                         )}
                         <span className="text-[10px] text-gray-400">pp. {chap.pages}</span>

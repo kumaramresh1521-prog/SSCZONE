@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { BookItem } from "./books-types";
+import { BookItem, BooksFreeNotesSectionConfig, DEFAULT_FREE_NOTES_CONFIG } from "./books-types";
 import {
   getSiteSettingAsync,
   saveSiteSettingAsync,
@@ -322,4 +322,19 @@ export function deleteBook(id: string): boolean {
     return true;
   }
   return false;
+}
+
+export const BOOKS_FREE_NOTES_KEY = "books_free_notes";
+
+export async function getBooksFreeNotesAsync(): Promise<BooksFreeNotesSectionConfig> {
+  return await getSiteSettingAsync<BooksFreeNotesSectionConfig>(
+    BOOKS_FREE_NOTES_KEY,
+    DEFAULT_FREE_NOTES_CONFIG
+  );
+}
+
+export async function saveBooksFreeNotesAsync(
+  config: BooksFreeNotesSectionConfig
+): Promise<boolean> {
+  return await saveSiteSettingAsync(BOOKS_FREE_NOTES_KEY, config);
 }

@@ -18,10 +18,14 @@ import {
   Eye,
   RefreshCw,
   Layers,
-  ArrowRight
+  ArrowRight,
+  Save,
+  RotateCcw,
+  Check
 } from "lucide-react";
 import toast from "react-hot-toast";
-import type { BookItem, SampleChapter } from "@/lib/books-types";
+import type { BookItem, SampleChapter, BooksFreeNoteItem, BooksFreeNotesSectionConfig } from "@/lib/books-types";
+import { DEFAULT_FREE_NOTES_CONFIG } from "@/lib/books-types";
 
 const SUBJECT_OPTIONS = [
   "Quantitative Aptitude",
@@ -91,6 +95,14 @@ export default function AdminBooksPage() {
   const [formData, setFormData] = useState<Partial<BookItem>>(DEFAULT_FORM);
   const [saving, setSaving] = useState(false);
 
+  // Tab State
+  const [adminTab, setAdminTab] = useState<"books" | "free-notes">("books");
+
+  // Free Notes Section State
+  const [freeNotesConfig, setFreeNotesConfig] = useState<BooksFreeNotesSectionConfig>(DEFAULT_FREE_NOTES_CONFIG);
+  const [loadingNotes, setLoadingNotes] = useState(false);
+  const [savingNotes, setSavingNotes] = useState(false);
+
   // Load books from API
   async function loadBooks() {
     setLoading(true);
@@ -107,8 +119,78 @@ export default function AdminBooksPage() {
     }
   }
 
+  async function loadFreeNotes() {
+    setLoadingNotes(true);
+    try {
+      const res = await fetch("/api/books/notes");
+      const data = await res.json();
+      if (data.success && data.config) {
+        setFreeNotesConfig(data.config);
+      }
+    } catch (e: any) {
+      console.warn("Could not load free notes config:", e);
+    } finally {
+      setLoadingNotes(false);
+    }
+  }
+
+  async function handleSaveFreeNotes() {
+    setSavingNotes(true);
+    try {
+      const res = await fetch("/api/books/notes", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(freeNotesConfig),
+      });
+      const data = await res.json();
+      if (data.success) {
+        toast.success("Free Revision Notes section updated & synced to Supabase!");
+      } else {
+        toast.error(data.error || "Failed to save free notes");
+      }
+    } catch (e: any) {
+      toast.error("Error saving notes: " + e.message);
+    } finally {
+      setSavingNotes(false);
+    }
+  }
+
+  function handleAddNoteItem() {
+    const newNote: BooksFreeNoteItem = {
+      id: `note-${Date.now()}`,
+      title: "New Revision Note Title",
+      subject: "Maths",
+      href: "/notes",
+      pages: "20 Pages",
+      size: "3.0 MB",
+      badge: "PDF",
+      is_active: true,
+    };
+    setFreeNotesConfig((prev) => ({
+      ...prev,
+      notes: [...(prev.notes || []), newNote],
+    }));
+  }
+
+  function handleUpdateNoteItem(index: number, field: keyof BooksFreeNoteItem, value: any) {
+    setFreeNotesConfig((prev) => {
+      const updated = [...(prev.notes || [])];
+      updated[index] = { ...updated[index], [field]: value };
+      return { ...prev, notes: updated };
+    });
+  }
+
+  function handleDeleteNoteItem(index: number) {
+    if (!confirm("Are you sure you want to remove this revision note?")) return;
+    setFreeNotesConfig((prev) => ({
+      ...prev,
+      notes: (prev.notes || []).filter((_, i) => i !== index),
+    }));
+  }
+
   useEffect(() => {
     loadBooks();
+    loadFreeNotes();
   }, []);
 
   // Filter books
@@ -272,16 +354,62 @@ export default function AdminBooksPage() {
             <ExternalLink className="w-3 h-3 text-slate-400" />
           </Link>
 
-          <button
-            onClick={handleOpenCreate}
-            className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-black shadow-lg shadow-blue-900/40 transition-all flex items-center gap-1.5 cursor-pointer"
-          >
-            <Plus className="w-4 h-4" />
-            <span>Add New Book</span>
-          </button>
+          {adminTab === "books" ? (
+            <button
+              onClick={handleOpenCreate}
+              className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-black shadow-lg shadow-blue-900/40 transition-all flex items-center gap-1.5 cursor-pointer"
+            >
+              <Plus className="w-4 h-4" />
+              <span>Add New Book</span>
+            </button>
+          ) : (
+            <button
+              onClick={handleSaveFreeNotes}
+              disabled={savingNotes}
+              className="px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:opacity-95 text-white text-xs font-black shadow-lg shadow-emerald-900/40 transition-all flex items-center gap-1.5 cursor-pointer disabled:opacity-50"
+            >
+              <Save className="w-4 h-4" />
+              <span>{savingNotes ? "Saving..." : "Save Notes Section"}</span>
+            </button>
+          )}
         </div>
       </div>
 
+      {/* Admin Navigation Tabs */}
+      <div className="flex items-center gap-2 border-b border-slate-800 pb-3">
+        <button
+          onClick={() => setAdminTab("books")}
+          className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-black transition-all cursor-pointer ${
+            adminTab === "books"
+              ? "bg-blue-600 text-white shadow-lg shadow-blue-900/40 ring-2 ring-blue-400/40"
+              : "bg-slate-800/80 text-slate-400 hover:text-white hover:bg-slate-800"
+          }`}
+        >
+          <BookOpen className="w-4 h-4" />
+          <span>📚 Topper Books Catalog ({books.length})</span>
+        </button>
+
+        <button
+          onClick={() => {
+            setAdminTab("free-notes");
+            loadFreeNotes();
+          }}
+          className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-black transition-all cursor-pointer ${
+            adminTab === "free-notes"
+              ? "bg-indigo-600 text-white shadow-lg shadow-indigo-900/40 ring-2 ring-indigo-400/40"
+              : "bg-slate-800/80 text-slate-400 hover:text-white hover:bg-slate-800"
+          }`}
+        >
+          <FileText className="w-4 h-4" />
+          <span>📝 Free Revision Notes Vault ({freeNotesConfig.notes?.length || 0})</span>
+        </button>
+      </div>
+
+      {/* ════════════════════════════════════════════════════════════
+          TAB 1: TOPPER BOOKS CATALOG
+         ════════════════════════════════════════════════════════════ */}
+      {adminTab === "books" && (
+        <>
       {/* KPI Stats Row */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
         <div className="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-4">
@@ -490,6 +618,263 @@ export default function AdminBooksPage() {
               </div>
             </div>
           ))}
+        </div>
+      )}
+        </>
+      )}
+
+      {/* ════════════════════════════════════════════════════════════
+          TAB 2: FREE REVISION NOTES SECTION CMS
+         ════════════════════════════════════════════════════════════ */}
+      {adminTab === "free-notes" && (
+        <div className="space-y-6">
+          {/* Top Banner & Save Action */}
+          <div className="rounded-2xl border border-indigo-500/30 bg-slate-900/90 p-5 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xl">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-indigo-600/30 border border-indigo-500/40 flex items-center justify-center text-indigo-400 font-black">
+                <FileText className="w-5 h-5" />
+              </div>
+              <div>
+                <h3 className="text-sm font-black text-white flex items-center gap-2">
+                  <span>Free Revision Notes Section Manager</span>
+                  <span className="px-2 py-0.5 rounded-full text-[10px] font-black bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                    Live on /books
+                  </span>
+                </h3>
+                <p className="text-xs text-slate-400">
+                  Manage the notes cards shown at the bottom of the <code className="text-amber-300">/books</code> page. Update target links, titles, and subjects directly.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2.5 w-full sm:w-auto justify-end">
+              <button
+                type="button"
+                onClick={() => setFreeNotesConfig(DEFAULT_FREE_NOTES_CONFIG)}
+                className="px-3.5 py-2.5 rounded-xl border border-gray-700 bg-gray-800 text-xs font-bold text-gray-300 hover:text-white hover:bg-gray-700 flex items-center gap-1.5 transition-all cursor-pointer"
+                title="Reset to default notes"
+              >
+                <RotateCcw className="w-3.5 h-3.5" />
+                <span>Reset Defaults</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={handleSaveFreeNotes}
+                disabled={savingNotes}
+                className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-xs font-black shadow-lg shadow-emerald-600/20 hover:opacity-95 flex items-center gap-2 disabled:opacity-50 transition-all cursor-pointer"
+              >
+                {savingNotes ? (
+                  <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                ) : (
+                  <Save className="w-4 h-4" />
+                )}
+                <span>Save All Changes to Supabase</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Section Header Settings */}
+          <div className="rounded-3xl border border-gray-800 bg-gray-900/90 p-5 space-y-4 shadow-xl">
+            <h4 className="text-xs font-black text-indigo-400 uppercase tracking-wider flex items-center gap-2">
+              <Sparkles className="w-4 h-4" />
+              <span>Section Header &amp; Global Links</span>
+            </h4>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label className="text-xs font-bold text-gray-300 mb-1 block">
+                  Section Title <span className="text-red-400">*</span>
+                </label>
+                <input
+                  type="text"
+                  value={freeNotesConfig.title}
+                  onChange={(e) =>
+                    setFreeNotesConfig((prev) => ({ ...prev, title: e.target.value }))
+                  }
+                  className="w-full rounded-xl border border-gray-700 bg-gray-800 p-2.5 text-xs font-bold text-white focus:border-indigo-500 focus:outline-hidden"
+                  placeholder="e.g. Free Revision Notes"
+                />
+              </div>
+
+              <div>
+                <label className="text-xs font-bold text-gray-300 mb-1 block">
+                  Explore All Button Target URL <span className="text-red-400">*</span>
+                </label>
+                <input
+                  type="text"
+                  value={freeNotesConfig.exploreAllHref}
+                  onChange={(e) =>
+                    setFreeNotesConfig((prev) => ({ ...prev, exploreAllHref: e.target.value }))
+                  }
+                  className="w-full rounded-xl border border-gray-700 bg-gray-800 p-2.5 text-xs font-mono font-bold text-amber-300 focus:border-indigo-500 focus:outline-hidden"
+                  placeholder="e.g. /notes or /blog/notes"
+                />
+              </div>
+
+              <div className="sm:col-span-2">
+                <label className="text-xs font-bold text-gray-300 mb-1 block">
+                  Section Subtitle / Description
+                </label>
+                <input
+                  type="text"
+                  value={freeNotesConfig.description}
+                  onChange={(e) =>
+                    setFreeNotesConfig((prev) => ({ ...prev, description: e.target.value }))
+                  }
+                  className="w-full rounded-xl border border-gray-700 bg-gray-800 p-2.5 text-xs text-slate-300 focus:border-indigo-500 focus:outline-hidden"
+                  placeholder="e.g. Structured chapter summaries and formulas available to study online."
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Notes Cards Manager */}
+          <div className="rounded-3xl border border-gray-800 bg-gray-900/90 p-5 space-y-4 shadow-xl">
+            <div className="flex items-center justify-between">
+              <div>
+                <h4 className="text-xs font-black text-indigo-400 uppercase tracking-wider flex items-center gap-2">
+                  <FileText className="w-4 h-4" />
+                  <span>Revision Note Cards ({(freeNotesConfig.notes || []).length})</span>
+                </h4>
+                <p className="text-[11px] text-gray-400 mt-0.5">
+                  Set the specific URL/link for each note card so users are redirected to the correct page when clicking &quot;Read Online&quot;.
+                </p>
+              </div>
+
+              <button
+                type="button"
+                onClick={handleAddNoteItem}
+                className="px-3.5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer"
+              >
+                <Plus className="w-3.5 h-3.5" />
+                <span>Add Note Card</span>
+              </button>
+            </div>
+
+            <div className="space-y-3 pt-2">
+              {(freeNotesConfig.notes || []).map((note, idx) => (
+                <div
+                  key={note.id || idx}
+                  className="rounded-2xl border border-gray-800 bg-gray-950/70 p-4 space-y-3 hover:border-gray-700 transition-all"
+                >
+                  <div className="flex items-center justify-between gap-2 border-b border-gray-800/80 pb-2">
+                    <span className="text-xs font-black text-indigo-300 flex items-center gap-2">
+                      <span className="w-5 h-5 rounded-md bg-gray-800 text-[10px] font-black text-gray-400 flex items-center justify-center">
+                        #{idx + 1}
+                      </span>
+                      <span>{note.title || "Untitled Note"}</span>
+                    </span>
+
+                    <div className="flex items-center gap-2">
+                      <label className="flex items-center gap-1.5 text-xs text-gray-300 cursor-pointer">
+                        <input
+                          type="checkbox"
+                          checked={note.is_active !== false}
+                          onChange={(e) =>
+                            handleUpdateNoteItem(idx, "is_active", e.target.checked)
+                          }
+                          className="h-3.5 w-3.5 rounded border-gray-700 bg-gray-800 text-indigo-500"
+                        />
+                        <span className="text-[11px]">{note.is_active !== false ? "🟢 Active" : "⚪ Hidden"}</span>
+                      </label>
+
+                      <button
+                        type="button"
+                        onClick={() => handleDeleteNoteItem(idx)}
+                        className="p-1 rounded-lg border border-rose-900/40 text-rose-400 hover:bg-rose-900/30 transition-all cursor-pointer"
+                        title="Delete note"
+                      >
+                        <Trash2 className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-12 gap-3">
+                    <div className="sm:col-span-5">
+                      <label className="text-[11px] font-bold text-gray-400 mb-1 block">Note Title</label>
+                      <input
+                        type="text"
+                        value={note.title}
+                        onChange={(e) => handleUpdateNoteItem(idx, "title", e.target.value)}
+                        className="w-full rounded-xl border border-gray-700 bg-gray-800 p-2 text-xs text-white focus:border-indigo-500 focus:outline-hidden"
+                        placeholder="Note title..."
+                      />
+                    </div>
+
+                    <div className="sm:col-span-4">
+                      <label className="text-[11px] font-bold text-gray-400 mb-1 block">
+                        Target Link / Route (href) <span className="text-amber-400">*</span>
+                      </label>
+                      <div className="flex items-center gap-1.5">
+                        <input
+                          type="text"
+                          value={note.href}
+                          onChange={(e) => handleUpdateNoteItem(idx, "href", e.target.value)}
+                          className="w-full rounded-xl border border-gray-700 bg-gray-800 p-2 text-xs font-mono font-bold text-amber-300 focus:border-indigo-500 focus:outline-hidden"
+                          placeholder="e.g. /notes, /blog/notes, /toolkit/xyz"
+                        />
+                        {note.href && (
+                          <Link
+                            href={note.href}
+                            target="_blank"
+                            className="p-2 rounded-xl bg-gray-800 border border-gray-700 text-gray-400 hover:text-blue-400 transition-colors shrink-0"
+                            title="Test link in new tab"
+                          >
+                            <ExternalLink className="w-3.5 h-3.5" />
+                          </Link>
+                        )}
+                      </div>
+                    </div>
+
+                    <div className="sm:col-span-3">
+                      <label className="text-[11px] font-bold text-gray-400 mb-1 block">Subject</label>
+                      <input
+                        type="text"
+                        value={note.subject}
+                        onChange={(e) => handleUpdateNoteItem(idx, "subject", e.target.value)}
+                        className="w-full rounded-xl border border-gray-700 bg-gray-800 p-2 text-xs text-white focus:border-indigo-500 focus:outline-hidden"
+                        placeholder="e.g. Maths, English"
+                      />
+                    </div>
+
+                    <div className="sm:col-span-4">
+                      <label className="text-[11px] font-bold text-gray-400 mb-1 block">Badge Label</label>
+                      <input
+                        type="text"
+                        value={note.badge || "PDF"}
+                        onChange={(e) => handleUpdateNoteItem(idx, "badge", e.target.value)}
+                        className="w-full rounded-xl border border-gray-700 bg-gray-800 p-2 text-xs text-white focus:border-indigo-500 focus:outline-hidden"
+                        placeholder="e.g. PDF, NOTES"
+                      />
+                    </div>
+
+                    <div className="sm:col-span-4">
+                      <label className="text-[11px] font-bold text-gray-400 mb-1 block">Pages</label>
+                      <input
+                        type="text"
+                        value={note.pages || ""}
+                        onChange={(e) => handleUpdateNoteItem(idx, "pages", e.target.value)}
+                        className="w-full rounded-xl border border-gray-700 bg-gray-800 p-2 text-xs text-white focus:border-indigo-500 focus:outline-hidden"
+                        placeholder="e.g. 24 Pages"
+                      />
+                    </div>
+
+                    <div className="sm:col-span-4">
+                      <label className="text-[11px] font-bold text-gray-400 mb-1 block">Size</label>
+                      <input
+                        type="text"
+                        value={note.size || ""}
+                        onChange={(e) => handleUpdateNoteItem(idx, "size", e.target.value)}
+                        className="w-full rounded-xl border border-gray-700 bg-gray-800 p-2 text-xs text-white focus:border-indigo-500 focus:outline-hidden"
+                        placeholder="e.g. 3.2 MB"
+                      />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       )}
 

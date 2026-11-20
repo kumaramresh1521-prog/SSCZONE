@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useMemo } from "react";
 import Link from "next/link";
+import toast from "react-hot-toast";
 import MathText from "@/components/MathText";
 import QuestionText from "@/components/QuestionText";
 import BookmarkButton from "@/components/BookmarkButton";
@@ -354,10 +355,100 @@ export default function PracticeClient({
   const [zoomedImage, setZoomedImage] = useState<string | null>(null);
   const [zoomScale, setZoomScale] = useState(1);
 
-  // Tier & Exam Filtering State
+  // Search & Question Jump State
+  const [jumpQuery, setJumpQuery] = useState("");
+  const [showPalette, setShowPalette] = useState(false);
+
+  // Exam & Type Filtering State
   const [activeTierFilter, setActiveTierFilter] = useState<"All" | "Tier 1" | "Tier 2">("All");
   const [activeExamFilter, setActiveExamFilter] = useState<string>("All");
   const [activeTypeFilter, setActiveTypeFilter] = useState<string>("All");
+
+  // Sanitize exam badge to remove Tier references
+  function cleanExamBadge(tag?: string | null): string {
+    if (!tag) return "";
+    let clean = tag.replace(/^\(|\)$/g, "").trim();
+    clean = clean.replace(/tier[- ]*(?:1|2|i{1,2}|iv|v)?/gi, "");
+    clean = clean.replace(/\s+/g, " ").replace(/\s+,/g, ",").replace(/,\s*,/g, ",").trim();
+    return clean || tag;
+  }
+
+  // Jump to specific Question Number (or keyword search)
+  function jumpToQuestion(query: string | number) {
+    if (!query && query !== 0) return;
+    const clean = String(query).trim();
+    const num = parseInt(clean, 10);
+
+    if (!isNaN(num) && /^\d+$/.test(clean)) {
+      const targetIdx = num - 1;
+      if (targetIdx < 0 || targetIdx >= displayQuestions.length) {
+        toast.error(`Please enter a question number between 1 and ${displayQuestions.length}`);
+        return;
+      }
+
+      if (practiceMode === "step") {
+        setCurrentIndex(targetIdx);
+        setTimeout(() => {
+          const el = document.getElementById("practice-question-card");
+          if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 50);
+      } else if (practiceMode === "page10") {
+        const targetPage = Math.floor(targetIdx / 10) + 1;
+        setSelectedSetNumber(targetPage);
+        setTimeout(() => {
+          const el = document.getElementById(`q-card-${targetIdx}`);
+          if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100);
+      } else if (practiceMode === "set25") {
+        const targetSet = Math.floor(targetIdx / 25) + 1;
+        setSelectedSetNumber(targetSet);
+        setTimeout(() => {
+          const el = document.getElementById(`q-card-${targetIdx}`);
+          if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100);
+      }
+
+      toast.success(`Jumped to Question #${num}`);
+      setJumpQuery("");
+      setShowPalette(false);
+    } else {
+      const qLower = clean.toLowerCase();
+      const foundIdx = displayQuestions.findIndex((item) => {
+        const enMatch = item.question_text?.toLowerCase().includes(qLower);
+        const hiMatch = item.question_text_hi?.toLowerCase().includes(qLower);
+        const tagMatch = item.exam_tag?.toLowerCase().includes(qLower);
+        return enMatch || hiMatch || tagMatch;
+      });
+
+      if (foundIdx !== -1) {
+        const qNum = foundIdx + 1;
+        if (practiceMode === "step") {
+          setCurrentIndex(foundIdx);
+          setTimeout(() => {
+            const el = document.getElementById("practice-question-card");
+            if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+          }, 50);
+        } else if (practiceMode === "page10") {
+          setSelectedSetNumber(Math.floor(foundIdx / 10) + 1);
+          setTimeout(() => {
+            const el = document.getElementById(`q-card-${foundIdx}`);
+            if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+          }, 100);
+        } else if (practiceMode === "set25") {
+          setSelectedSetNumber(Math.floor(foundIdx / 25) + 1);
+          setTimeout(() => {
+            const el = document.getElementById(`q-card-${foundIdx}`);
+            if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+          }, 100);
+        }
+        toast.success(`Found matching Question #${qNum}`);
+        setJumpQuery("");
+        setShowPalette(false);
+      } else {
+        toast.error(`No question found matching "${clean}"`);
+      }
+    }
+  }
 
   const typeCounts = useMemo(() => {
     const map: Record<string, number> = {};
@@ -1112,11 +1203,11 @@ export default function PracticeClient({
                   <p className="text-[11px] font-semibold text-gray-500">
                     {questions.length === 0
                       ? "0 Questions Available in this Chapter"
-                      : `Showing ${displayQuestions.length} Questions (${activeExamFilter === "All" ? "All Exams" : activeExamFilter}${activeTierFilter !== "All" ? `, ${activeTierFilter}` : ""}${activeTypeFilter !== "All" ? `, ${activeTypeFilter}` : ""})`}
+                      : `Showing ${displayQuestions.length} Questions (${activeExamFilter === "All" ? "All Exams" : activeExamFilter}${activeTypeFilter !== "All" ? `, ${activeTypeFilter}` : ""})`}
                   </p>
                 </div>
 
-                {/* Filter Controls: Exam Target + Tier Level + Type Filter (Only when questions exist) */}
+                {/* Filter Controls: Exam Target + Type Filter + Jump/Search Bar (Only when questions exist) */}
                 {questions.length > 0 && (
                   <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
                     {/* Exam Target Filter Selector */}
@@ -1182,41 +1273,37 @@ export default function PracticeClient({
                       </div>
                     )}
 
-                    {/* Tier Filter Selector (Strictly for Mathematics only) */}
-                    {isMathSubject && (
-                      <div className="flex items-center gap-0.5 rounded-xl bg-slate-100 p-0.5 sm:p-1 border border-slate-200 text-xs overflow-x-auto max-w-full [&::-webkit-scrollbar]:hidden">
-                        <button
-                          onClick={() => handleTierSwitch("All")}
-                          className={`px-2 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer whitespace-nowrap ${
-                            activeTierFilter === "All"
-                              ? "bg-white text-blue-700 shadow-xs border border-gray-200 font-black"
-                              : "text-gray-600 hover:text-gray-900"
-                          }`}
-                        >
-                          All Tiers
-                        </button>
-                        <button
-                          onClick={() => handleTierSwitch("Tier 1")}
-                          className={`px-2 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer whitespace-nowrap ${
-                            activeTierFilter === "Tier 1"
-                              ? "bg-amber-500 text-white shadow-xs font-black"
-                              : "text-gray-600 hover:text-gray-900"
-                          }`}
-                        >
-                          ⚡ Tier 1
-                        </button>
-                        <button
-                          onClick={() => handleTierSwitch("Tier 2")}
-                          className={`px-2 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer whitespace-nowrap ${
-                            activeTierFilter === "Tier 2"
-                              ? "bg-indigo-600 text-white shadow-xs font-black"
-                              : "text-gray-600 hover:text-gray-900"
-                          }`}
-                        >
-                          ⚡ Tier 2
-                        </button>
+                    {/* Jump to Question Number & Search Bar */}
+                    <div className="flex items-center gap-1 rounded-xl bg-slate-100 p-0.5 sm:p-1 border border-slate-200 text-xs">
+                      <div className="relative flex items-center">
+                        <Search className="absolute left-2 h-3.5 w-3.5 text-gray-400 pointer-events-none" />
+                        <input
+                          type="text"
+                          placeholder="Q# or search..."
+                          value={jumpQuery}
+                          onChange={(e) => setJumpQuery(e.target.value)}
+                          onKeyDown={(e) => {
+                            if (e.key === "Enter") jumpToQuestion(jumpQuery);
+                          }}
+                          className="w-24 sm:w-32 bg-white border border-gray-200 rounded-lg pl-7 pr-2 py-1 text-xs font-bold text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                        />
                       </div>
-                    )}
+                      <button
+                        type="button"
+                        onClick={() => jumpToQuestion(jumpQuery)}
+                        className="px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-black rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition cursor-pointer shadow-xs"
+                      >
+                        Go ➔
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setShowPalette(true)}
+                        title="Question Palette Grid"
+                        className="px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-black rounded-lg bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition cursor-pointer shadow-2xs flex items-center gap-1"
+                      >
+                        <span>🔢 Palette</span>
+                      </button>
+                    </div>
                   </div>
                 )}
               </div>
@@ -1265,7 +1352,7 @@ export default function PracticeClient({
                 <div className="max-w-md mx-auto space-y-1">
                   <h2 className="text-lg font-black text-amber-950">No Matching Questions</h2>
                   <p className="text-xs text-amber-800">
-                    No questions found for <b>{activeExamFilter === "All" ? "" : `${activeExamFilter} `}{activeTierFilter === "All" ? "selected filters" : activeTierFilter}</b> in this chapter.
+                    No questions found for <b>{activeExamFilter === "All" ? "selected filters" : activeExamFilter}</b> in this chapter.
                   </p>
                 </div>
                 <div className="flex justify-center gap-2">
@@ -1377,7 +1464,7 @@ export default function PracticeClient({
                                 {selectedSetNumber === "random" ? "Random 10-Q Set" : `Page ${selectedSetNumber}`} Result & Scorecard 🎉
                               </h3>
                               <p className="text-xs font-semibold text-emerald-800">
-                                Level: <b>{activeTierFilter}</b> | Chapter: <b>{topic.title}</b>
+                                Exam: <b>{activeExamFilter === "All" ? "All Exams" : activeExamFilter}</b> | Chapter: <b>{topic.title}</b>
                               </p>
                             </div>
                           </div>
@@ -1432,9 +1519,6 @@ export default function PracticeClient({
                         <div>
                           <h3 className="text-sm sm:text-base font-black text-indigo-950 flex items-center gap-2">
                             <span>⚡ {selectedSetNumber === "random" ? "Random 10 Practice Set" : `Page ${selectedSetNumber} Practice (${(Number(selectedSetNumber) - 1) * 10 + 1}-${Math.min(Number(selectedSetNumber) * 10, displayQuestions.length)})`}</span>
-                            <span className="rounded-full bg-indigo-600 text-white px-2 py-0.5 text-[10px] font-extrabold">
-                              {activeTierFilter}
-                            </span>
                           </h3>
                           <p className="text-xs font-semibold text-indigo-700 mt-0.5">
                             Solve these {activeSetQuestions.length} questions on this page at your own pace!
@@ -1455,6 +1539,7 @@ export default function PracticeClient({
                         const userAns = setAnswers[qIdx];
                         const isCorrect = userAns === item.correct_answer;
                         const trans = translationsCache[item.id];
+                        const globalCardIdx = typeof selectedSetNumber === "number" ? (selectedSetNumber - 1) * batchSize + qIdx : qIdx;
 
                         const textEn = item.question_text;
                         const textHi = trans?.question_text;
@@ -1462,6 +1547,7 @@ export default function PracticeClient({
                         return (
                           <div
                             key={item.id}
+                            id={`q-card-${globalCardIdx}`}
                             className={`rounded-2xl border bg-white p-3.5 sm:p-6 shadow-xs transition-all ${
                               setSubmitted
                                 ? isCorrect
@@ -1472,23 +1558,18 @@ export default function PracticeClient({
                                 : "border-gray-200/90"
                             }`}
                           >
-                            {/* Top Meta Bar: Exam Tag / Tier on left, Bookmark & Report on right */}
+                            {/* Top Meta Bar: Exam Tag on left, Bookmark & Report on right */}
                             <div className="flex items-center justify-between gap-2.5 border-b border-gray-100 pb-2.5 sm:pb-3 mb-3">
                               <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap min-w-0">
                                 {item.exam_tag ? (
                                   <>
                                     <span className="inline-flex items-center gap-1 rounded-full bg-blue-50 border border-blue-200/80 px-2.5 py-0.5 text-[10px] font-extrabold text-blue-800 uppercase">
-                                      🎯 {item.exam_tag}
+                                      🎯 {cleanExamBadge(item.exam_tag)}
                                     </span>
-                                    {item.tier_level && (
-                                      <span className="inline-flex items-center rounded-full bg-amber-50 border border-amber-200 px-2 py-0.5 text-[10px] font-bold text-amber-800 shrink-0">
-                                        ⚡ {item.tier_level}
-                                      </span>
-                                    )}
                                   </>
                                 ) : (
                                   <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 border border-slate-200 px-2.5 py-0.5 text-[10px] font-extrabold text-slate-700">
-                                    📝 Question {qIdx + 1}
+                                    📝 Question {globalCardIdx + 1}
                                   </span>
                                 )}
                               </div>
@@ -1687,8 +1768,45 @@ export default function PracticeClient({
                   /* 1-BY-1 STEP PRACTICE MODE                            */
                   /* ==================================================== */
                   <div>
+                    {/* Quick Jump & Progress Controls */}
+                    <div className="flex items-center justify-between gap-2 mb-3 bg-white p-2.5 rounded-xl border border-gray-200/80 shadow-2xs">
+                      <div className="flex items-center gap-1.5 sm:gap-2">
+                        <span className="text-xs font-black text-gray-700">Question</span>
+                        <div className="flex items-center gap-1 bg-slate-50 border border-slate-200 rounded-lg px-2 py-0.5">
+                          <input
+                            type="number"
+                            min={1}
+                            max={displayQuestions.length}
+                            value={jumpQuery || (currentIndex + 1)}
+                            onChange={(e) => setJumpQuery(e.target.value)}
+                            onKeyDown={(e) => {
+                              if (e.key === "Enter") jumpToQuestion(jumpQuery);
+                            }}
+                            className="w-10 sm:w-12 text-center text-xs font-black text-blue-700 bg-transparent focus:outline-none"
+                          />
+                          <span className="text-xs font-bold text-gray-400">/ {displayQuestions.length}</span>
+                        </div>
+                        <button
+                          type="button"
+                          onClick={() => jumpToQuestion(jumpQuery)}
+                          className="px-2 py-0.5 text-xs font-black rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition cursor-pointer shadow-2xs"
+                        >
+                          Go
+                        </button>
+                      </div>
+
+                      <button
+                        type="button"
+                        onClick={() => setShowPalette(true)}
+                        className="flex items-center gap-1 px-2.5 sm:px-3 py-1 text-xs font-black rounded-lg bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 transition cursor-pointer shadow-2xs"
+                      >
+                        <span>▦</span>
+                        <span>Grid</span>
+                      </button>
+                    </div>
+
                     {/* Progress Bar */}
-                    <div className="h-2 w-full overflow-hidden rounded-full bg-gray-200 mb-4">
+                    <div className="h-1.5 w-full overflow-hidden rounded-full bg-gray-200 mb-4">
                       <div
                         className="h-full rounded-full bg-blue-600 transition-all duration-300"
                         style={{ width: `${((currentIndex + 1) / displayQuestions.length) * 100}%` }}
@@ -1697,20 +1815,15 @@ export default function PracticeClient({
 
                     {/* Question Box */}
                     <div id="practice-question-card" className="rounded-2xl border border-gray-200/90 bg-white p-3.5 sm:p-6 shadow-sm transition-all">
-                      {/* Top Meta Bar: Exam Tag / Tier on left, Bookmark & Report on right */}
+                      {/* Top Meta Bar: Exam Tag on left, Bookmark & Report on right */}
                       <div className="flex items-center justify-between gap-2.5 border-b border-gray-100 pb-2.5 sm:pb-3 mb-3 sm:mb-4">
                         <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap min-w-0">
                           {q.exam_tag ? (
                             <>
                               <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200/80 px-2.5 sm:px-3 py-0.5 sm:py-1 text-[10px] sm:text-[11px] font-extrabold text-blue-800 shadow-2xs uppercase tracking-wide">
                                 <span className="text-amber-500">🎯</span>
-                                <span className="truncate max-w-[170px] sm:max-w-none">{q.exam_tag}</span>
+                                <span className="truncate max-w-[170px] sm:max-w-none">{cleanExamBadge(q.exam_tag)}</span>
                               </span>
-                              {q.tier_level && (
-                                <span className="inline-flex items-center rounded-full bg-amber-50 border border-amber-200 px-2 sm:px-2.5 py-0.5 text-[10px] font-bold text-amber-800 shrink-0">
-                                  ⚡ {q.tier_level}
-                                </span>
-                              )}
                             </>
                           ) : (
                             <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 border border-slate-200 px-2.5 py-0.5 text-[10px] sm:text-[11px] font-extrabold text-slate-700">
@@ -2014,14 +2127,23 @@ export default function PracticeClient({
                         <button
                           onClick={prevQuestion}
                           disabled={currentIndex === 0}
-                          className="flex items-center justify-center gap-1.5 rounded-xl border border-gray-200 bg-white px-5 py-3 text-xs sm:text-sm font-black text-gray-700 shadow-2xs transition-all hover:bg-gray-50 hover:border-gray-300 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
+                          className="flex items-center justify-center gap-1.5 rounded-xl border border-gray-200 bg-white px-4 sm:px-5 py-3 text-xs sm:text-sm font-black text-gray-700 shadow-2xs transition-all hover:bg-gray-50 hover:border-gray-300 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
                         >
                           ⬅ Previous
                         </button>
 
                         <button
+                          type="button"
+                          onClick={() => setShowPalette(true)}
+                          className="flex items-center gap-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 border border-slate-200 px-3.5 py-3 text-xs font-black text-slate-700 transition cursor-pointer shadow-2xs"
+                        >
+                          <span>▦</span>
+                          <span>Q {currentIndex + 1} of {displayQuestions.length}</span>
+                        </button>
+
+                        <button
                           onClick={nextQuestion}
-                          className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-7 py-3 text-xs sm:text-sm font-black text-white shadow-md transition-all hover:shadow-lg hover:opacity-95 active:scale-98 cursor-pointer"
+                          className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-5 sm:px-7 py-3 text-xs sm:text-sm font-black text-white shadow-md transition-all hover:shadow-lg hover:opacity-95 active:scale-98 cursor-pointer"
                         >
                           {currentIndex < displayQuestions.length - 1 ? (
                             <>Next Question ➔</>
@@ -2038,6 +2160,95 @@ export default function PracticeClient({
           </div>
         </div>
       </div>
+
+      {/* Question Palette Modal */}
+      {showPalette && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-xs p-4 animate-fadeIn"
+          onClick={() => setShowPalette(false)}
+        >
+          <div
+            className="relative w-full max-w-2xl rounded-2xl bg-white p-5 sm:p-6 shadow-2xl border border-gray-200 max-h-[85vh] flex flex-col"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header */}
+            <div className="flex items-center justify-between border-b border-gray-100 pb-3 mb-4">
+              <div>
+                <h3 className="text-base sm:text-lg font-black text-gray-900 flex items-center gap-2">
+                  <span>🔢 Question Palette</span>
+                  <span className="text-xs font-bold text-gray-500">({displayQuestions.length} Questions)</span>
+                </h3>
+                <p className="text-xs text-gray-500 mt-0.5">Click any question number to jump directly</p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowPalette(false)}
+                className="h-8 w-8 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-600 flex items-center justify-center font-bold text-sm transition-colors cursor-pointer"
+              >
+                ✕
+              </button>
+            </div>
+
+            {/* Legend */}
+            <div className="flex flex-wrap items-center gap-3 sm:gap-4 mb-3 text-[11px] font-bold text-gray-600 bg-slate-50 p-2.5 rounded-xl border border-slate-100">
+              <span className="flex items-center gap-1.5">
+                <span className="h-3 w-3 rounded-full bg-blue-600 inline-block"></span> Current
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="h-3 w-3 rounded-full bg-emerald-500 inline-block"></span> Attempted
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="h-3 w-3 rounded-full bg-slate-200 border border-slate-300 inline-block"></span> Unattempted
+              </span>
+            </div>
+
+            {/* Quick Filter / Search inside Palette */}
+            <div className="mb-3">
+              <div className="relative">
+                <Search className="absolute left-3 top-2.5 h-3.5 w-3.5 text-gray-400" />
+                <input
+                  type="text"
+                  placeholder="Filter by question text, formula, or exam tag..."
+                  value={jumpQuery}
+                  onChange={(e) => setJumpQuery(e.target.value)}
+                  className="w-full pl-8 pr-3 py-1.5 text-xs font-bold bg-white border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+            </div>
+
+            {/* Palette Grid */}
+            <div className="overflow-y-auto flex-1 p-1 grid grid-cols-5 sm:grid-cols-8 md:grid-cols-10 gap-2 max-h-[50vh]">
+              {displayQuestions.map((item, idx) => {
+                const isCurrent = practiceMode === "step" && currentIndex === idx;
+                const isAnswered = answersHistory[idx] !== undefined;
+                const matchesSearch = !jumpQuery || 
+                  item.question_text?.toLowerCase().includes(jumpQuery.toLowerCase()) ||
+                  item.exam_tag?.toLowerCase().includes(jumpQuery.toLowerCase()) ||
+                  String(idx + 1) === jumpQuery.trim();
+
+                if (jumpQuery && !matchesSearch) return null;
+
+                return (
+                  <button
+                    key={item.id}
+                    type="button"
+                    onClick={() => jumpToQuestion(idx + 1)}
+                    className={`h-9 rounded-xl text-xs font-black transition-all cursor-pointer flex items-center justify-center border shadow-2xs ${
+                      isCurrent
+                        ? "bg-blue-600 text-white border-blue-700 ring-2 ring-blue-400"
+                        : isAnswered
+                        ? "bg-emerald-50 text-emerald-800 border-emerald-300 hover:bg-emerald-100"
+                        : "bg-slate-50 text-gray-700 border-slate-200 hover:bg-blue-50 hover:text-blue-700 hover:border-blue-300"
+                    }`}
+                  >
+                    {idx + 1}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* HD Zoom Image Lightbox Modal */}
       {zoomedImage && (

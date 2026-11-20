@@ -161,11 +161,6 @@ f2Raw.forEach((q, idx) => {
     expSections.push(`📝 **Detailed Scientific Explanation:**\n${q.e.trim()}`);
   }
 
-  // Key verification / errata note if present
-  if (q.v && q.v.trim()) {
-    expSections.push(`⚠️ **Errata & Key Verification Note:**\n${q.v.trim()}`);
-  }
-
   // Exam angle / takeaway
   if (q.p && q.p.trim()) {
     expSections.push(`🎯 **High-Yield Exam Takeaway:**\n${q.p.trim()}`);
@@ -218,11 +213,6 @@ f3Raw.forEach((q, idx) => {
   // Detailed explanation
   if (q.exp && q.exp.trim()) {
     expSections.push(`📝 **Detailed Scientific Explanation:**\n${q.exp.trim()}`);
-  }
-
-  // Source Note / Errata if present
-  if (q.sourceNote && q.sourceNote.trim()) {
-    expSections.push(`⚠️ **Errata & Key Verification Note:**\n${q.sourceNote.trim()}`);
   }
 
   // High-Yield bullets

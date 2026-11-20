@@ -13,66 +13,91 @@ async function fetchQuestions(topicIds) {
   while (true) {
     const { data, error } = await supabase
       .from('questions')
-      .select('id, question_text, option_a, option_b, option_c, option_d, correct_answer, explanation, exam_tag, tier_level, year_reference')
+      .select('id, question_text, option_a, option_b, option_c, option_d, correct_answer, explanation, difficulty, exam_tag, tier_level, year_reference')
       .in('topic_id', ids)
       .eq('is_active', true)
       .order('id', { ascending: true })
       .range(from, from + PAGE_SIZE - 1);
+
     if (error) throw error;
     if (!data || data.length === 0) break;
-    all.push(...data);
+    all = all.concat(data);
+    from += data.length;
     if (data.length < PAGE_SIZE) break;
-    from += PAGE_SIZE;
   }
   return all;
 }
 
-async function verify() {
+// Sibling topic map from src/lib/question-queries.ts
+const TOPIC_SIBLINGS = {
+  104: [104, 6, 434], // CHSL Physics -> includes CGL (6) and CPO (434)
+  434: [434, 6, 104], // CPO Physics -> includes CGL (6) and CHSL (104)
+  6: [6, 104, 434]    // CGL Physics -> includes CHSL (104) and CPO (434)
+};
+
+async function testSync() {
   console.log('--- Step 1: Direct Fetch for Topic 6 (SSC CGL Physics) ---');
-  const cglQs = await fetchQuestions(6);
-  console.log(`CGL Physics direct count: ${cglQs.length}`);
+  const cglDirect = await fetchQuestions([6]);
+  console.log(`CGL Physics direct count: ${cglDirect.length}`);
 
   console.log('\n--- Step 2: Sibling Auto-Sync for Topic 104 (SSC CHSL Physics) ---');
-  let chslQs = await fetchQuestions(104);
-  if (chslQs.length === 0) {
-    const { data: siblings } = await supabase.from('topics').select('id').ilike('title', 'Physics');
-    const sibIds = siblings.map(s => s.id);
-    chslQs = await fetchQuestions(sibIds);
-  }
-  console.log(`CHSL Physics synced count: ${chslQs.length}`);
+  const chslSynced = await fetchQuestions(TOPIC_SIBLINGS[104]);
+  console.log(`CHSL Physics synced count: ${chslSynced.length}`);
 
   console.log('\n--- Step 3: Sibling Auto-Sync for Topic 434 (SSC CPO Physics) ---');
-  let cpoQs = await fetchQuestions(434);
-  if (cpoQs.length === 0) {
-    const { data: siblings } = await supabase.from('topics').select('id').ilike('title', 'Physics');
-    const sibIds = siblings.map(s => s.id);
-    cpoQs = await fetchQuestions(sibIds);
-  }
-  console.log(`CPO Physics synced count: ${cpoQs.length}`);
+  const cpoSynced = await fetchQuestions(TOPIC_SIBLINGS[434]);
+  console.log(`CPO Physics synced count: ${cpoSynced.length}`);
 
-  console.log('\n--- Step 4: Sample Live Verification from Database ---');
-  const sampleIndices = [0, 72, 127, 282, 335, 440, 644, 750, 820];
-  sampleIndices.forEach(idx => {
-    const q = cglQs[idx];
-    if (q) {
-      console.log(`\nSample #${idx + 1} (DB ID: ${q.id}, Chapter: ${q.tier_level}, Tag: ${q.exam_tag}, Year: ${q.year_reference}):`);
-      console.log(`Stem: ${q.question_text.substring(0, 100)}...`);
-      console.log(`Options: A) ${q.option_a} | B) ${q.option_b} | C) ${q.option_c} | D) ${q.option_d}`);
-      console.log(`Correct Answer: ${q.correct_answer}`);
-      console.log(`Explanation tail:\n${q.explanation.split('\n\n').slice(-2).join('\n\n')}`);
-    }
-  });
-
-  // Verify 100% key match on all 821 rows in database
+  console.log('\n--- Step 4: Full Audit of All 1,555 Records ---');
+  let nonSscCount = 0;
+  let highYieldCount = 0;
+  let errataCount = 0;
   let keyMismatchCount = 0;
-  cglQs.forEach((q, i) => {
-    const expected = `✅ **Correct Answer:** Option (${q.correct_answer})`;
-    if (!q.explanation.includes(expected)) {
-      console.error(`Mismatch at row ${i + 1} (ID ${q.id})! Key: ${q.correct_answer}`);
+  const tierDistribution = {};
+
+  cglDirect.forEach((q, idx) => {
+    tierDistribution[q.tier_level] = (tierDistribution[q.tier_level] || 0) + 1;
+
+    // Check exam tag
+    if (!q.exam_tag || !q.exam_tag.toUpperCase().includes('SSC')) {
+      nonSscCount++;
+    }
+
+    // Check high yield
+    const fullJson = JSON.stringify(q);
+    if (/high[- ]?yield/i.test(fullJson)) {
+      highYieldCount++;
+    }
+
+    // Check errata
+    if (/errata/i.test(fullJson)) {
+      errataCount++;
+    }
+
+    // Check key match in explanation
+    const m = q.explanation ? q.explanation.match(/✅ \*\*Correct Answer:\*\* Option \(([A-D])\)/) : null;
+    if (!m || m[1] !== q.correct_answer) {
       keyMismatchCount++;
     }
   });
-  console.log(`\nKey verification check across all ${cglQs.length} DB records: ${keyMismatchCount} mismatches found.`);
+
+  console.log('Chapter/Topic Distribution across all 1,555 questions:');
+  Object.entries(tierDistribution).forEach(([tier, count]) => {
+    console.log(`  - ${tier}: ${count} questions`);
+  });
+
+  console.log('\nAudit Results:');
+  console.log(`Total questions checked: ${cglDirect.length}`);
+  console.log(`Non-SSC exam tags found: ${nonSscCount}`);
+  console.log(`'high-yield' occurrences: ${highYieldCount}`);
+  console.log(`'errata' occurrences: ${errataCount}`);
+  console.log(`Key mismatches in explanations: ${keyMismatchCount}`);
+
+  if (cglDirect.length === 1555 && nonSscCount === 0 && highYieldCount === 0 && errataCount === 0 && keyMismatchCount === 0) {
+    console.log('\nPERFECT SUCCESS: All 1,555 questions are completely verified and in full compliance!');
+  } else {
+    console.error('\nDiscrepancy detected during verification!');
+  }
 }
 
-verify().catch(console.error);
+testSync().catch(console.error);

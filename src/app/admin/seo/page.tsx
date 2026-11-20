@@ -1749,7 +1749,7 @@ export default function AdminSeoPage() {
 
               {/* Clickable Blue Title */}
               <div className="text-sm font-bold text-[#1a0dab] hover:underline cursor-pointer leading-snug pt-1">
-                {currentPreviewData.title}
+                {typeof currentPreviewData.title === "string" ? currentPreviewData.title : (currentPreviewData.title as any)?.absolute || ""}
               </div>
 
               {/* Grey Snippet Description */}

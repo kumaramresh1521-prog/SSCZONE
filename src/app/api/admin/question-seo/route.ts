@@ -10,6 +10,14 @@ import {
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "";
 const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "";
 
+function getResolvedTitle(metadata: any): string {
+  if (typeof metadata?.title === "string") return metadata.title;
+  if (metadata?.title && typeof metadata.title === "object" && typeof metadata.title.absolute === "string") {
+    return metadata.title.absolute;
+  }
+  return "";
+}
+
 export async function GET(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
@@ -40,6 +48,7 @@ export async function GET(req: NextRequest) {
           const canonicalPath = getPyqQuestionCanonicalPath(pq.id, pq.question_text);
           const fullUrl = `https://ssczone.com${canonicalPath}`;
           const metadata = buildQuestionMetadata(pq, fullUrl, undefined, undefined, true, paperTitle);
+          const resolvedTitle = getResolvedTitle(metadata);
           const jsonLd = generateQuestionJsonLd(pq, fullUrl, undefined, undefined, true, paperTitle, pq.paper_id);
 
           return NextResponse.json({
@@ -48,7 +57,7 @@ export async function GET(req: NextRequest) {
             canonical_path: canonicalPath,
             full_url: fullUrl,
             metadata: {
-              title: metadata.title,
+              title: resolvedTitle,
               description: metadata.description,
             },
             json_ld: jsonLd,
@@ -63,7 +72,7 @@ export async function GET(req: NextRequest) {
               has_image: false,
             },
             seo: {
-              title: metadata.title,
+              title: resolvedTitle,
               description: metadata.description,
               canonicalPath,
               fullUrl,
@@ -86,6 +95,7 @@ export async function GET(req: NextRequest) {
         const canonicalPath = getQuestionCanonicalPath(question.id, question.question_text);
         const fullUrl = `https://ssczone.com${canonicalPath}`;
         const metadata = buildQuestionMetadata(question, fullUrl, topicTitle, examTitle);
+        const resolvedTitle = getResolvedTitle(metadata);
         const jsonLd = generateQuestionJsonLd(question, fullUrl, topicTitle, examTitle);
 
         return NextResponse.json({
@@ -94,7 +104,7 @@ export async function GET(req: NextRequest) {
           canonical_path: canonicalPath,
           full_url: fullUrl,
           metadata: {
-            title: metadata.title,
+            title: resolvedTitle,
             description: metadata.description,
           },
           json_ld: jsonLd,
@@ -115,7 +125,7 @@ export async function GET(req: NextRequest) {
             has_image: !!question.image_url || !!(question.option_a_image_url || question.option_b_image_url || question.option_c_image_url || question.option_d_image_url),
           },
           seo: {
-            title: metadata.title,
+            title: resolvedTitle,
             description: metadata.description,
             canonicalPath,
             fullUrl,
@@ -136,6 +146,7 @@ export async function GET(req: NextRequest) {
         const canonicalPath = getPyqQuestionCanonicalPath(fallbackPq.id, fallbackPq.question_text);
         const fullUrl = `https://ssczone.com${canonicalPath}`;
         const metadata = buildQuestionMetadata(fallbackPq, fullUrl, undefined, undefined, true, paperTitle);
+        const resolvedTitle = getResolvedTitle(metadata);
         const jsonLd = generateQuestionJsonLd(fallbackPq, fullUrl, undefined, undefined, true, paperTitle, fallbackPq.paper_id);
 
         return NextResponse.json({
@@ -144,7 +155,7 @@ export async function GET(req: NextRequest) {
           canonical_path: canonicalPath,
           full_url: fullUrl,
           metadata: {
-            title: metadata.title,
+            title: resolvedTitle,
             description: metadata.description,
           },
           json_ld: jsonLd,
@@ -159,7 +170,7 @@ export async function GET(req: NextRequest) {
             has_image: false,
           },
           seo: {
-            title: metadata.title,
+            title: resolvedTitle,
             description: metadata.description,
             canonicalPath,
             fullUrl,

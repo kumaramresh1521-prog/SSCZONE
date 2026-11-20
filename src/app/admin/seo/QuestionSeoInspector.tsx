@@ -216,7 +216,9 @@ export default function QuestionSeoInspector() {
                     rel="noreferrer"
                     className="block text-base font-bold text-[#1a0dab] hover:underline cursor-pointer leading-snug"
                   >
-                    {data.metadata?.title}
+                    {typeof data.metadata?.title === "string"
+                      ? data.metadata.title
+                      : data.metadata?.title?.absolute || (typeof data.seo?.title === "string" ? data.seo.title : "")}
                   </a>
 
                   <p className="text-xs text-[#4d5156] leading-relaxed mt-1">

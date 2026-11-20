@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase-admin";
 import { requireAdmin } from "@/lib/api-auth";
 import { slugify } from "@/lib/utils";
+import { revalidatePath } from "next/cache";
 
 export const dynamic = "force-dynamic";
 
@@ -47,12 +48,19 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const { id, title, exam_id, is_active } = body;
 
-    if (typeof is_active === "boolean" && id) {
+    // Quick toggle from table
+    if (id && !title && typeof is_active === "boolean") {
       const { error } = await supabaseAdmin
         .from("subjects")
         .update({ is_active })
         .eq("id", id);
       if (error) throw new Error(error.message);
+
+      try {
+        revalidatePath("/practice", "layout");
+        revalidatePath("/exams", "layout");
+      } catch {}
+
       return NextResponse.json({ success: true });
     }
 
@@ -63,11 +71,14 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const payload = {
+    const payload: any = {
       title: title.trim(),
       exam_id: Number(exam_id),
       slug: slugify(title.trim()),
     };
+    if (typeof is_active === "boolean") {
+      payload.is_active = is_active;
+    }
 
     if (id) {
       const { error } = await supabaseAdmin
@@ -81,6 +92,13 @@ export async function POST(req: NextRequest) {
         .insert([payload]);
       if (error) throw new Error(error.message);
     }
+
+    try {
+      revalidatePath("/practice", "layout");
+      revalidatePath("/exams", "layout");
+      revalidatePath("/sitemap.xml");
+      revalidatePath("/");
+    } catch {}
 
     return NextResponse.json({ success: true });
   } catch (err: any) {

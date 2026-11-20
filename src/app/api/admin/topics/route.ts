@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase-admin";
 import { requireAdmin } from "@/lib/api-auth";
 import { slugify } from "@/lib/utils";
+import { revalidatePath } from "next/cache";
 
 export const dynamic = "force-dynamic";
 
@@ -16,7 +17,7 @@ export async function GET(req: NextRequest) {
 
     let query = supabaseAdmin
       .from("topics")
-      .select("*, subjects(title, exams(title)), questions(count)")
+      .select("*, subjects(id, title, exam_id, exams(id, title)), questions(count)")
       .order("sort_order", { ascending: true });
 
     if (subjectId) {
@@ -27,7 +28,7 @@ export async function GET(req: NextRequest) {
       query,
       supabaseAdmin
         .from("subjects")
-        .select("id, title, exams(title)")
+        .select("id, title, exam_id, is_active, exams(id, title)")
         .order("sort_order", { ascending: true }),
     ]);
 
@@ -54,9 +55,10 @@ export async function POST(req: NextRequest) {
 
   try {
     const body = await req.json();
-    const { id, title, subject_id, is_free, is_active } = body;
+    const { id, title, description, subject_id, is_free, is_active, slug } = body;
 
-    if (id && (typeof is_free === "boolean" || typeof is_active === "boolean")) {
+    // 1. Quick status toggle from the table (when title is omitted)
+    if (id && !title && (typeof is_free === "boolean" || typeof is_active === "boolean")) {
       const updatePayload: any = {};
       if (typeof is_free === "boolean") updatePayload.is_free = is_free;
       if (typeof is_active === "boolean") updatePayload.is_active = is_active;
@@ -66,35 +68,81 @@ export async function POST(req: NextRequest) {
         .update(updatePayload)
         .eq("id", id);
       if (error) throw new Error(error.message);
+
+      try {
+        revalidatePath("/practice", "layout");
+        revalidatePath("/exams", "layout");
+      } catch {}
+
       return NextResponse.json({ success: true });
     }
 
-    if (!title || !subject_id) {
+    // 2. Full Form Submission (Create or Update)
+    if (!title || !title.trim()) {
       return NextResponse.json(
-        { error: "Title and Subject ID are required" },
+        { error: "Topic title is required" },
         { status: 400 }
       );
     }
 
-    const payload = {
-      title: title.trim(),
-      subject_id: Number(subject_id),
-      slug: slugify(title.trim()),
-      is_free: is_free !== false,
-    };
+    if (!subject_id) {
+      return NextResponse.json(
+        { error: "Subject is required" },
+        { status: 400 }
+      );
+    }
 
     if (id) {
+      // Update existing topic
+      const updatePayload: any = {
+        title: title.trim(),
+        subject_id: Number(subject_id),
+        description: description ? description.trim() : null,
+      };
+      if (typeof is_free === "boolean") updatePayload.is_free = is_free;
+      if (typeof is_active === "boolean") updatePayload.is_active = is_active;
+      if (slug && typeof slug === "string" && slug.trim()) {
+        updatePayload.slug = slugify(slug.trim());
+      }
+
       const { error } = await supabaseAdmin
         .from("topics")
-        .update(payload)
+        .update(updatePayload)
         .eq("id", id);
       if (error) throw new Error(error.message);
     } else {
+      // Create new topic
+      const baseSlug = slugify((slug && slug.trim()) || title.trim());
+      // Check slug collision
+      const { data: existing } = await supabaseAdmin
+        .from("topics")
+        .select("id")
+        .eq("slug", baseSlug)
+        .maybeSingle();
+
+      const finalSlug = existing ? `${baseSlug}-${Date.now().toString().slice(-4)}` : baseSlug;
+
+      const insertPayload: any = {
+        title: title.trim(),
+        subject_id: Number(subject_id),
+        description: description ? description.trim() : null,
+        slug: finalSlug,
+        is_free: is_free !== false,
+        is_active: is_active !== false,
+      };
+
       const { error } = await supabaseAdmin
         .from("topics")
-        .insert([payload]);
+        .insert([insertPayload]);
       if (error) throw new Error(error.message);
     }
+
+    try {
+      revalidatePath("/practice", "layout");
+      revalidatePath("/exams", "layout");
+      revalidatePath("/sitemap.xml");
+      revalidatePath("/");
+    } catch {}
 
     return NextResponse.json({ success: true });
   } catch (err: any) {
@@ -118,12 +166,29 @@ export async function DELETE(req: NextRequest) {
       return NextResponse.json({ error: "Topic ID is required" }, { status: 400 });
     }
 
+    // First delete any questions under this topic to avoid orphaned questions
+    const { error: qErr } = await supabaseAdmin
+      .from("questions")
+      .delete()
+      .eq("topic_id", id);
+
+    if (qErr) {
+      console.error("Failed to delete questions under topic:", qErr);
+    }
+
     const { error } = await supabaseAdmin
       .from("topics")
       .delete()
       .eq("id", id);
 
     if (error) throw new Error(error.message);
+
+    try {
+      revalidatePath("/practice", "layout");
+      revalidatePath("/exams", "layout");
+      revalidatePath("/sitemap.xml");
+      revalidatePath("/");
+    } catch {}
 
     return NextResponse.json({ success: true });
   } catch (err: any) {

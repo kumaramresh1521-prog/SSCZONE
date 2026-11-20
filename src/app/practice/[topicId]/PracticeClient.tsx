@@ -222,7 +222,7 @@ function InteractiveImage({ src, alt = "Question figure" }: { src: string; alt?:
       </div>
 
       {/* Image Container with Dynamic Scale */}
-      <div className="overflow-auto max-w-full rounded-2xl border border-slate-200 bg-white p-2 sm:p-3 shadow-xs inline-block">
+      <div className="overflow-auto max-w-full rounded-xl border border-slate-200 bg-white p-1.5 shadow-2xs inline-block">
         <img
           src={src}
           alt={alt}
@@ -230,9 +230,11 @@ function InteractiveImage({ src, alt = "Question figure" }: { src: string; alt?:
             transform: `scale(${scale})`,
             transformOrigin: "top left",
             transition: "transform 0.15s ease-out",
-            maxHeight: scale === 1 ? "480px" : undefined,
+            maxHeight: scale === 1 ? "220px" : undefined,
           }}
-          className="rounded-xl w-auto object-contain cursor-zoom-in"
+          className={`rounded-lg w-auto object-contain cursor-zoom-in ${
+            scale === 1 ? "max-w-full sm:max-w-[320px] md:max-w-[340px]" : "max-w-none"
+          }`}
           onClick={() => setIsFullscreen(true)}
         />
       </div>
@@ -1871,21 +1873,24 @@ export default function PracticeClient({
 
                         {/* Question Image */}
                         {q.image_url && (
-                          <div className="relative group inline-block mt-3 mb-2">
-                            <img 
-                              src={resolveAssetUrl(q.image_url)} 
-                              alt="Question figure" 
-                              onClick={() => { setZoomedImage(resolveAssetUrl(q.image_url)); setZoomScale(1); }}
-                              className="w-auto max-w-full sm:max-w-xl rounded-2xl border border-slate-200 bg-white p-1.5 sm:p-2 shadow-xs transition-all hover:shadow-md cursor-zoom-in" 
-                              style={{ maxHeight: '520px', objectFit: 'contain' }}
-                            />
+                          <div className="relative group inline-block my-2.5">
+                            <div className="overflow-hidden rounded-xl border border-slate-200/90 bg-white p-1.5 shadow-2xs hover:shadow-xs transition-all inline-block">
+                              <img 
+                                src={resolveAssetUrl(q.image_url)} 
+                                alt="Question figure" 
+                                onClick={() => { setZoomedImage(resolveAssetUrl(q.image_url)); setZoomScale(1); }}
+                                className="w-auto max-w-full sm:max-w-[320px] md:max-w-[340px] rounded-lg object-contain cursor-zoom-in" 
+                                style={{ maxHeight: '220px', objectFit: 'contain' }}
+                              />
+                            </div>
                             <button
                               type="button"
                               onClick={() => { setZoomedImage(resolveAssetUrl(q.image_url)); setZoomScale(1); }}
-                              className="absolute bottom-3 right-3 flex items-center gap-1.5 rounded-xl bg-gray-900/85 hover:bg-gray-900 text-white px-3 py-1.5 text-xs font-extrabold shadow-lg backdrop-blur-xs transition-all cursor-pointer"
+                              className="ml-2 inline-flex items-center gap-1 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 px-2 py-1 text-[11px] font-bold shadow-2xs transition-all cursor-pointer align-bottom"
+                              title="Click to Zoom Fullscreen"
                             >
-                              <Maximize2 className="h-3.5 w-3.5" />
-                              <span>🔍 Zoom Fullscreen</span>
+                              <Maximize2 className="h-3 w-3 text-blue-600" />
+                              <span>Zoom</span>
                             </button>
                           </div>
                         )}

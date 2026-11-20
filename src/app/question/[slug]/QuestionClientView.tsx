@@ -159,12 +159,12 @@ export default function QuestionClientView({
               <ImageIcon className="w-3.5 h-3.5 text-blue-600" />
               <span>Question Figure / प्रश्न आकृति:</span>
             </div>
-            <div className="relative inline-block rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-2 sm:p-3 shadow-xs max-w-full">
+            <div className="relative inline-block rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-1.5 shadow-2xs max-w-full">
               <img
                 src={resolveAssetUrl(question.image_url)}
                 alt={`Question #${question.id} figure`}
-                className="w-auto max-w-full sm:max-w-xl rounded-xl object-contain"
-                style={{ maxHeight: "480px" }}
+                className="w-auto max-w-full sm:max-w-[320px] md:max-w-[340px] rounded-lg object-contain"
+                style={{ maxHeight: "220px", objectFit: "contain" }}
               />
             </div>
           </div>

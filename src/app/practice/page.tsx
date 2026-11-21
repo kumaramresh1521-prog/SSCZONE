@@ -27,6 +27,7 @@ export default async function PracticeDirectoryPage() {
   const { data: subjects } = await supabase
     .from("subjects")
     .select("id, title, slug, exams(id, title, slug), topics(id, title, slug, is_free, is_active)")
+    .in("id", [1, 2, 3, 4])
     .eq("is_active", true)
     .order("sort_order", { ascending: true });
 

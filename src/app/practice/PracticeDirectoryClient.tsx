@@ -182,11 +182,9 @@ export default function PracticeDirectoryClient({ subjects }: { subjects: Subjec
                     <h2 className="text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white">
                       {sub.title}
                     </h2>
-                    {sub.exams?.title && (
-                      <p className="text-xs text-slate-500 font-semibold">
-                        Targeting {sub.exams.title}
-                      </p>
-                    )}
+                    <p className="text-xs text-slate-500 font-semibold">
+                      For all SSC Exams (CGL, CHSL, CPO, MTS, GD) &amp; Railways
+                    </p>
                   </div>
                   <span className="ml-auto text-xs font-bold text-slate-500 bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded-full">
                     {sub.topics.length} Chapters

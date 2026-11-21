@@ -430,7 +430,7 @@ export default function ChapterNotesReaderClient({
             </div>
             <h2 className="text-xl font-black text-slate-900">No Chapter Notes Available Yet</h2>
             <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
-              New subject-wise theory, rules, and formulas published from the Admin Panel will appear here automatically.
+              New subject-wise theory, rules, and formulas will appear here automatically once published.
             </p>
             <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
               <Link
@@ -438,12 +438,6 @@ export default function ChapterNotesReaderClient({
                 className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-blue-600 text-white text-xs font-bold hover:bg-blue-700 shadow-xs transition-colors"
               >
                 📰 Explore Official Blog
-              </Link>
-              <Link
-                href="/admin/chapter-notes"
-                className="w-full sm:w-auto px-5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-slate-100 text-slate-700 text-xs font-bold transition-colors"
-              >
-                ✍️ Chapter Notes Admin
               </Link>
             </div>
           </div>

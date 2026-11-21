@@ -20,8 +20,8 @@ export default function FAQPage() {
       a: "Yes! Every subject includes free practice chapters so you can test our platform before subscribing to a premium pass."
     },
     {
-      q: "How can Admin upload new questions or papers?",
-      a: "Admin users can go to /admin/questions or /admin/papers to upload MCQs in bulk using CSV files, JSON files, or text copy-paste. Downloadable CSV/JSON templates are provided in the admin portal."
+      q: "How frequently are new questions and mock tests updated?",
+      a: "Our content team regularly updates questions, latest exam pattern PYQs, and daily quizzes to keep your preparation ahead of the curve."
     },
     {
       q: "What payment methods are supported for Pass subscription?",

@@ -37,7 +37,7 @@ gcloud run deploy "$SERVICE_NAME" \
   --cpu 2 \
   --min-instances 0 \
   --max-instances 10 \
-  --update-env-vars "NEXT_PUBLIC_APP_URL=https://ssczone.com"
+  --update-env-vars "NEXT_PUBLIC_APP_URL=https://ssczone.com,ADMIN_SECRET_KEY=ssczone-secure-gateway-2026"
 
 echo ""
 echo "=================================================="

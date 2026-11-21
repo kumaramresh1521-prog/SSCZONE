@@ -20,15 +20,20 @@ export async function generateMetadata({ params }: { params: Promise<{ topicId: 
     } else {
       let { data } = await supabase.from("topics").select("title, slug").eq("slug", topicId).maybeSingle();
       if (!data) {
-        const cleanTitle = topicId.replace(/-/g, " ");
+        let baseSlug = topicId.replace(/^ssc-(cgl|cpo|chsl)-/, "").replace(/^ssc-/, "");
+        if (baseSlug === "lines-and-angles" || baseSlug === "geometry-question") {
+          baseSlug = "geometry";
+        }
+        const cleanTitle = baseSlug.replace(/-/g, " ");
         const wildcardTitle = `%${cleanTitle.trim().replace(/\s+/g, "%")}%`;
-        const isAlgebra = /algeb/i.test(topicId);
+        const isAlgebra = /algeb/i.test(baseSlug);
         const orFilter = isAlgebra
-          ? `slug.eq.ssc-cgl-${topicId},slug.ilike.%algeb%,title.ilike.%algeb%`
-          : `slug.eq.ssc-cgl-${topicId},slug.ilike.%-${topicId},title.ilike.${cleanTitle},title.ilike.${wildcardTitle}`;
+          ? `slug.eq.ssc-${baseSlug},slug.ilike.%algeb%,title.ilike.%algeb%`
+          : `slug.eq.ssc-${baseSlug},slug.eq.${baseSlug},slug.ilike.%-${baseSlug},title.ilike.${cleanTitle},title.ilike.${wildcardTitle}`;
         const { data: fallbackData } = await supabase
           .from("topics")
           .select("title, slug")
+          .in("subject_id", [1, 2, 3, 4])
           .or(orFilter)
           .order("id", { ascending: true })
           .limit(1)
@@ -83,17 +88,22 @@ export default async function PracticePage({ params }: { params: Promise<{ topic
       }
     }
 
-    // Fallback 2: If topicId is a generic slug (e.g. 'percentage', 'profit-loss', 'algebra' matching canonical topics)
+    // Fallback 2: Universal SSC resolver (e.g. 'ssc-cgl-foo', 'ssc-cpo-foo', 'ssc-chsl-foo', or 'foo' -> 'ssc-foo')
     if (!topic) {
-      const cleanTitle = topicId.replace(/-/g, " ");
+      let baseSlug = topicId.replace(/^ssc-(cgl|cpo|chsl)-/, "").replace(/^ssc-/, "");
+      if (baseSlug === "lines-and-angles" || baseSlug === "geometry-question") {
+        baseSlug = "geometry";
+      }
+      const cleanTitle = baseSlug.replace(/-/g, " ");
       const wildcardTitle = `%${cleanTitle.trim().replace(/\s+/g, "%")}%`;
-      const isAlgebra = /algeb/i.test(topicId);
+      const isAlgebra = /algeb/i.test(baseSlug);
       const orFilter = isAlgebra
-        ? `slug.eq.ssc-cgl-${topicId},slug.ilike.%algeb%,title.ilike.%algeb%`
-        : `slug.eq.ssc-cgl-${topicId},slug.ilike.%-${topicId},title.ilike.${cleanTitle},title.ilike.${wildcardTitle}`;
+        ? `slug.eq.ssc-${baseSlug},slug.ilike.%algeb%,title.ilike.%algeb%`
+        : `slug.eq.ssc-${baseSlug},slug.eq.${baseSlug},slug.ilike.%-${baseSlug},title.ilike.${cleanTitle},title.ilike.${wildcardTitle}`;
       const { data: fallbackTopic } = await supabase
         .from("topics")
         .select("*, subjects(id, title, exam_id, exams(id, title, slug))")
+        .in("subject_id", [1, 2, 3, 4])
         .or(orFilter)
         .order("id", { ascending: true })
         .limit(1)

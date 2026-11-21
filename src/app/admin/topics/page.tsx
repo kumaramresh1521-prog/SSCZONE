@@ -278,7 +278,7 @@ export default function TopicsPage() {
 
             <div>
               <label className="block text-xs font-bold text-gray-300 uppercase mb-1">
-                URL Slug (Optional — e.g. <span className="text-gray-400 font-mono">ssc-cgl-ancient-history</span>)
+                URL Slug (Optional — e.g. <span className="text-gray-400 font-mono">ssc-ancient-history</span>)
               </label>
               <input
                 className="a-input font-mono text-xs"

@@ -206,14 +206,13 @@ export default async function ToolkitSlugPage({
             <div className="text-4xl mb-4">📝</div>
             <h3 className="text-base font-black text-slate-700 mb-2">Content Coming Soon</h3>
             <p className="text-sm text-slate-500 max-w-md mx-auto">
-              Admin panel se is tool ka content add karo — Markdown ya plain text mein.
+              This tool&apos;s detailed guide and resources are being curated. Please check back soon!
             </p>
             <Link
-              href="/admin/tools"
+              href="/toolkit"
               className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-xl bg-blue-600 text-white text-xs font-black hover:bg-blue-700 transition-colors"
             >
-              <ExternalLink className="h-3.5 w-3.5" />
-              Admin → Tools CMS
+              Browse All Tools
             </Link>
           </div>
         )}

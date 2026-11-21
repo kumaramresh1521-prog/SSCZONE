@@ -98,8 +98,11 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
   );
 
   async function handleLogout() {
+    try {
+      await fetch("/api/admin/gate/lock", { method: "POST" });
+    } catch {}
     await supabase.auth.signOut();
-    router.push("/login");
+    router.push("/");
   }
 
   const isActive = (href: string) => (href === "/admin" ? pathname === "/admin" : pathname.startsWith(href));
@@ -212,6 +215,13 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
           </div>
 
           <div className="topbar-right">
+            <div
+              className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[11px] font-semibold"
+              title="Stealth Mode: Direct /admin access returns 404 for outsiders. Secret key gate or admin auth required."
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+              Stealth Gate Active
+            </div>
             <Link href="/" className="topbar-site-btn">
               <ExternalLink className="h-4 w-4" />
               <span className="hidden sm:inline">View Site</span>

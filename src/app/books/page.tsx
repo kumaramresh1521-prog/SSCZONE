@@ -45,7 +45,7 @@ const BOOKS_DATA: BookItem[] = [
     description: "Complete TCS arithmetic and advance maths questions categorized type-wise with smart shortcut solutions and formula summaries.",
     topperNote: "Must-solve book for scoring 45+ out of 50 in CGL Tier-1 and full accuracy in Tier-2.",
     freePdfAvailable: true,
-    practiceTopicSlug: "percentage",
+    practiceTopicSlug: "ssc-percentage",
     sampleChapters: [
       { title: "Number System, Divisibility & Remainder Theorem", pages: "1-42", highYield: true },
       { title: "Percentage & Multiplicative Factor Shortcuts", pages: "43-85", highYield: true },

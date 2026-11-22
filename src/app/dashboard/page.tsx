@@ -62,6 +62,25 @@ export default function DashboardPage() {
 
   const router = useRouter();
 
+  // Load saved target exam preference on mount
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      try {
+        const saved = localStorage.getItem("ssczone_user_target_exam");
+        if (saved) setTargetExam(saved);
+      } catch {}
+    }
+  }, []);
+
+  function handleTargetExamChange(newExam: string) {
+    setTargetExam(newExam);
+    if (typeof window !== "undefined") {
+      try {
+        localStorage.setItem("ssczone_user_target_exam", newExam);
+      } catch {}
+    }
+  }
+
   useEffect(() => {
     supabase.auth.getSession().then(async ({ data: { session } }) => {
       const user = session?.user;
@@ -94,15 +113,58 @@ export default function DashboardPage() {
           .order("start_time", { ascending: false })
           .limit(30);
 
-        const { count: bookmarkCount } = await supabase
+        // 1. Fetch genuine database bookmarks with question and topic joins
+        const { data: dbBookmarks, count: bookmarkCount } = await supabase
           .from("bookmarks")
-          .select("id", { count: "exact", head: true })
-          .eq("user_id", user.id);
+          .select("id, tag, created_at, question_id, questions(id, question_text, topic_id, option_a, option_b, option_c, option_d, correct_answer, topics(title, subjects(title)))", { count: "exact" })
+          .eq("user_id", user.id)
+          .order("created_at", { ascending: false })
+          .limit(10);
 
-        // Read local attempts and collections
+        // 2. Read local attempts and collections
         const localAttempts = getUserAttempts();
         const localCollected = getUserCollectedQuestions();
-        setRecentBookmarks(localCollected.slice(0, 3));
+
+        // 3. Normalize DB bookmarks
+        const normalizedDbBookmarks: UserCollectedQuestion[] = (dbBookmarks || []).map((bm: any) => ({
+          id: `bm_${bm.id}`,
+          questionId: bm.question_id,
+          source: "bank" as const,
+          sourceTitle: bm.questions?.topics?.title || "Topic Practice",
+          subject: bm.questions?.topics?.subjects?.title?.trim() || "General",
+          topic: bm.questions?.topics?.title || "Practice Question",
+          question_text: bm.questions?.question_text || `Question #${bm.question_id}`,
+          option_a: bm.questions?.option_a || "",
+          option_b: bm.questions?.option_b || "",
+          option_c: bm.questions?.option_c || "",
+          option_d: bm.questions?.option_d || "",
+          correct_answer: (bm.questions?.correct_answer || "A") as "A" | "B" | "C" | "D",
+          tag: bm.tag || "Standard",
+          collectedAt: bm.created_at || new Date().toISOString(),
+        }));
+
+        // 4. Merge bookmarks without duplicates (DB bookmarks take priority)
+        const seenQuestionIds = new Set<number>();
+        const seenTexts = new Set<string>();
+        const mergedBookmarks: UserCollectedQuestion[] = [];
+
+        for (const item of normalizedDbBookmarks) {
+          if (item.questionId) seenQuestionIds.add(item.questionId);
+          seenTexts.add(item.question_text.trim());
+          mergedBookmarks.push(item);
+        }
+
+        for (const item of localCollected) {
+          const hasId = item.questionId && seenQuestionIds.has(item.questionId);
+          const hasText = seenTexts.has(item.question_text.trim());
+          if (!hasId && !hasText) {
+            mergedBookmarks.push(item);
+            if (item.questionId) seenQuestionIds.add(item.questionId);
+            seenTexts.add(item.question_text.trim());
+          }
+        }
+
+        setRecentBookmarks(mergedBookmarks.slice(0, 3));
 
         // Normalize local attempts (Speed Tests and Daily Quizzes)
         const normalizedLocal = localAttempts.map((la) => ({
@@ -155,7 +217,7 @@ export default function DashboardPage() {
         const totalCorrect = mergedAttempts.reduce((s, a) => s + (a.correct || 0), 0);
         const accuracy = totalAttempted > 0 ? Math.round((totalCorrect / totalAttempted) * 100) : 0;
         const totalTimeSpent = mergedAttempts.reduce((s, a) => s + (a.timeSpentSeconds || 0), 0);
-        const totalBookmarks = (bookmarkCount || 0) + localCollected.length;
+        const totalBookmarks = Math.max(bookmarkCount || 0, mergedBookmarks.length);
 
         setStats({
           attempted: totalAttempted,
@@ -292,7 +354,7 @@ export default function DashboardPage() {
                 <span className="text-slate-400 font-normal hidden sm:inline">Exam:</span>
                 <select
                   value={targetExam}
-                  onChange={(e) => setTargetExam(e.target.value)}
+                  onChange={(e) => handleTargetExamChange(e.target.value)}
                   className="bg-transparent font-extrabold text-slate-900 focus:outline-none cursor-pointer pr-1"
                 >
                   <option value="SSC CGL 2026">SSC CGL 2026</option>

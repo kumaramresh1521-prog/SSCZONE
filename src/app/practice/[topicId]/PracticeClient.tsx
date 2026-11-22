@@ -787,9 +787,18 @@ export default function PracticeClient({
 
   function switchSet(setNum: number | "random") {
     setSelectedSetNumber(setNum);
-    setSetAnswers({});
     setSetSubmitted(false);
     setSheetScore(0);
+    try {
+      if (topic?.id) {
+        const raw = localStorage.getItem(`ssc_practice_set_${topic.id}_${setNum}`);
+        setSetAnswers(raw ? JSON.parse(raw) : {});
+      } else {
+        setSetAnswers({});
+      }
+    } catch {
+      setSetAnswers({});
+    }
     if (setNum === "random") {
       setRandomSeed(Date.now());
     }
@@ -803,9 +812,27 @@ export default function PracticeClient({
     setRandomSeed(Date.now());
   }
 
+  // Restore saved set/page answers if available
+  useEffect(() => {
+    try {
+      if (topic?.id) {
+        const raw = localStorage.getItem(`ssc_practice_set_${topic.id}_${selectedSetNumber}`);
+        if (raw) setSetAnswers(JSON.parse(raw));
+      }
+    } catch {}
+  }, [topic?.id, selectedSetNumber]);
+
   function handleSetAnswer(qIdx: number, option: string) {
     if (setSubmitted) return;
-    setSetAnswers((prev) => ({ ...prev, [qIdx]: option }));
+    setSetAnswers((prev) => {
+      const next = { ...prev, [qIdx]: option };
+      try {
+        if (topic?.id) {
+          localStorage.setItem(`ssc_practice_set_${topic.id}_${selectedSetNumber}`, JSON.stringify(next));
+        }
+      } catch {}
+      return next;
+    });
   }
 
   function submitSetMode() {

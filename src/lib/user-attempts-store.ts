@@ -80,11 +80,22 @@ export function saveUserAttempt(
 
   // Also attempt async sync to Supabase if user is logged in
   if (typeof window !== "undefined") {
-    supabase.auth.getSession().then(({ data: { session } }) => {
+    supabase.auth.getSession().then(async ({ data: { session } }) => {
       const user = session?.user;
       if (user) {
         newAttempt.user_id = user.id;
-        // Optionally sync if user has test_attempts or custom tracking
+        try {
+          await supabase.from("test_attempts").insert({
+            user_id: user.id,
+            score: Math.round(newAttempt.score),
+            total_questions: newAttempt.totalQuestions,
+            status: "completed",
+            end_time: newAttempt.completedAt,
+          });
+        } catch (err) {
+          // Fallback safely to localStorage
+          console.warn("Attempt stored locally; Supabase sync skipped:", err);
+        }
       }
     }).catch(() => {});
   }

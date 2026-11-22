@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Bookmark, BookmarkCheck, LoaderCircle, Tag, ChevronDown } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 import toast from "react-hot-toast";
+import { removeCollectedQuestion } from "@/lib/user-attempts-store";
 
 type BookmarkButtonProps = {
   questionId: number;
@@ -94,6 +95,7 @@ export default function BookmarkButton({ questionId }: BookmarkButtonProps) {
         if (error) throw error;
         setBookmarkId(null);
         setShowTagMenu(false);
+        removeCollectedQuestion(questionId);
         toast.success("Removed from saved revision list.");
         return;
       }

@@ -62,11 +62,6 @@ export async function middleware(request: NextRequest) {
     return NextResponse.rewrite(new URL("/not-found", request.url), { status: 404 });
   }
 
-  // Early return for public static/data routes that don't need auth checks
-  if (!isProtectedAdmin && !isProtectedAdminApi && !isProtectedDashboard && !isAuthPage) {
-    return supabaseResponse;
-  }
-
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 

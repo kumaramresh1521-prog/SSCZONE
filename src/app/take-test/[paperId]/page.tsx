@@ -11,6 +11,7 @@ import CollectQuestionButton from "@/components/CollectQuestionButton";
 import { translateSingleQuestion } from "@/lib/translator";
 import { getMarkingScheme } from "@/lib/marking-scheme";
 import { resolveAssetUrl } from "@/lib/utils";
+import { saveUserAttempt } from "@/lib/user-attempts-store";
 import {
   Clock,
   CheckCircle2,
@@ -846,6 +847,24 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
             return q;
           })
         );
+
+        // Also persist attempt into user attempts store for guaranteed dashboard history
+        try {
+          saveUserAttempt({
+            type: "mock_test",
+            title: paper?.title || `SSC CBT Shift Paper #${paperId}`,
+            subject: "Full Shift Paper",
+            totalQuestions: questions.length,
+            attempted: (data.correctCount || 0) + (data.wrongCount || 0),
+            correct: data.correctCount || 0,
+            incorrect: data.wrongCount || 0,
+            unattempted: data.unattemptedCount || 0,
+            score: data.score || 0,
+            maxScore: data.maxMarks || (questions.length * 2),
+            accuracy: parseFloat(data.accuracy) || 0,
+            timeSpentSeconds: 3600,
+          });
+        } catch {}
       }
     } catch (err) {
       console.error("Server test submission error:", err);

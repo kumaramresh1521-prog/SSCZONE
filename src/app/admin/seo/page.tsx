@@ -129,9 +129,9 @@ const CATEGORIZED_KEYWORDS: RecommendedKeyword[] = [
   { tag: "SSC Current Affairs 2026 Capsule", category: "subjects", volume: "Very High", intent: "Informational" },
 
   // Typing & CBT Tools
-  { tag: "SSC Typing Test 15 Minutes Simulator", category: "tools", volume: "Very High", intent: "Transactional" },
+  { tag: "SSC Typing Test 15 Minutes", category: "tools", volume: "Very High", intent: "Transactional" },
   { tag: "SSC CGL Typing Speed Test Online", category: "tools", volume: "Very High", intent: "Transactional" },
-  { tag: "TCS Interface Typing Simulator with Backspace", category: "tools", volume: "High", intent: "Commercial" },
+  { tag: "TCS Interface Typing Test with Backspace", category: "tools", volume: "High", intent: "Commercial" },
   { tag: "Gross WPM Net WPM Error Percentage Calculator", category: "tools", volume: "High", intent: "Informational" },
   { tag: "SSC CHSL English & Hindi Typing Passages", category: "tools", volume: "High", intent: "Commercial" },
   { tag: "SSC Speed Test 25 Questions 15 Minutes", category: "tools", volume: "High", intent: "Commercial" },
@@ -143,7 +143,7 @@ const CATEGORIZED_KEYWORDS: RecommendedKeyword[] = [
   { tag: "SSC Age Calculator with Cutoff Date", category: "tools", volume: "Very High", intent: "Transactional" },
   { tag: "SSC Age Relaxation Calculator OBC SC ST", category: "tools", volume: "High", intent: "Informational" },
   { tag: "SSC Rank Predictor & Shift Normalization Score", category: "tools", volume: "Very High", intent: "Transactional" },
-  { tag: "SSC CGL DEST 2000 Key Depressions Simulator", category: "tools", volume: "Very High", intent: "Transactional" },
+  { tag: "SSC CGL DEST 2000 Key Depressions Test", category: "tools", volume: "Very High", intent: "Transactional" },
   { tag: "SSC Master Syllabus Checklist 2026", category: "tools", volume: "High", intent: "Informational" },
 
   // High-Intent Search & Conversion
@@ -174,7 +174,7 @@ const PRESET_PAGES = [
     path: "/toolkit",
     name: "Candidate Utilities & Toolkit Hub (/toolkit)",
     defaultTitle: "SSC Candidate Toolkit & Free Exam Utilities Hub 2026 | SSCZone",
-    defaultDesc: "Free high-precision candidate utilities for SSC CGL, CHSL, CPO, MTS & GD aspirants: Photo & Signature Resizer (20-50 KB), Age Calculator with Cutoff Dates, Rank Predictor, and TCS Typing Simulator.",
+    defaultDesc: "Free high-precision candidate utilities for SSC CGL, CHSL, CPO, MTS & GD aspirants: Photo & Signature Resizer (20-50 KB), Age Calculator with Cutoff Dates, Rank Predictor, and TCS Typing Test.",
     defaultKeywords: ["SSC Candidate Toolkit", "SSC Exam Utilities Hub", "SSC Photo Resizer", "SSC Age Calculator", "SSC Rank Predictor", "SSC Typing Test"]
   },
   {
@@ -200,10 +200,10 @@ const PRESET_PAGES = [
   },
   {
     path: "/typing",
-    name: "Typing Test Simulator (/typing)",
-    defaultTitle: "SSC 2000 Key Depressions Typing Test Simulator — TCS Exam Hall Interface | SSCZone",
+    name: "SSC Typing Test (/typing)",
+    defaultTitle: "SSC 2000 Key Depressions Typing Test — TCS Exam Hall Interface | SSCZone",
     defaultDesc: "Practice official SSC 2000 Key Depressions DEST typing test passages with 15-minute countdown, backspace controls, accuracy, and TCS error percentage calculator.",
-    defaultKeywords: ["SSC 2000 Key Depressions", "SSC CGL DEST Typing Test", "SSC Typing Test 15 Minutes", "TCS Typing Simulator 2000 Key Depressions", "SSC Typing Error Calculator"]
+    defaultKeywords: ["SSC 2000 Key Depressions", "SSC CGL DEST Typing Test", "SSC Typing Test 15 Minutes", "TCS Typing Test 2000 Key Depressions", "SSC Typing Error Calculator"]
   },
   {
     path: "/syllabus",
@@ -1724,7 +1724,7 @@ export default function AdminSeoPage() {
                 <option value="/notes">Notes &amp; PDFs (/notes)</option>
                 <option value="/daily-quiz">Daily Quiz (/daily-quiz)</option>
                 <option value="/speed-test">Speed Test (/speed-test)</option>
-                <option value="/typing">Typing Simulator (/typing)</option>
+                <option value="/typing">SSC Typing Test (/typing)</option>
                 <option value="/about">About Us (/about)</option>
                 <option value="/blog">Blog &amp; Alerts (/blog)</option>
               </select>

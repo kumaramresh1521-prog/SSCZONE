@@ -41,7 +41,7 @@ const ICON_OPTIONS = [
   { name: "CheckSquare", label: "CheckSquare (Syllabus/Checklist)", icon: CheckSquare },
   { name: "Trophy", label: "Trophy (Rank Predictor)", icon: Trophy },
   { name: "Image", label: "Image (Photo/Signature Resizer)", icon: ImageIcon },
-  { name: "Keyboard", label: "Keyboard (Typing Simulator)", icon: Keyboard },
+  { name: "Keyboard", label: "Keyboard (Typing Test)", icon: Keyboard },
   { name: "Calendar", label: "Calendar (Age Calculator)", icon: Calendar },
   { name: "Wrench", label: "Wrench (Utility/Toolkit)", icon: Wrench },
   { name: "Sparkles", label: "Sparkles (AI/Special Tool)", icon: Sparkles },
@@ -1090,7 +1090,7 @@ export default function AdminToolsPage() {
                     <option value="/papers">📄 Previous Year Papers (/papers)</option>
                     <option value="/toolkit">🛠️ Candidate Toolkit Hub (/toolkit)</option>
                     <option value="/toolkit/photo-resizer">🖼️ Photo Resizer (/toolkit/photo-resizer)</option>
-                    <option value="/typing">⌨️ Typing Test Simulator (/typing)</option>
+                    <option value="/typing">⌨️ SSC Typing Test (/typing)</option>
                   </select>
 
                   <label className="text-xs font-semibold text-gray-300">Target Link URL (Custom)</label>

@@ -216,7 +216,7 @@ const blogContent = `
   <li><strong>Test Every Key During Mock Trial:</strong> Before the actual 15-minute test starts, TCS provides a 10-minute trial typing session. Use this mock window to test every alphabet key, the Spacebar, Backspace, Enter, comma, full stop, and Shift keys. If any key feels sticky or unresponsive, immediately alert the invigilator and get your keyboard or system changed before the real test begins!</li>
   <li><strong>Do Not Panic in the First 2 Minutes:</strong> In the exam hall, the sound of 200 candidates typing simultaneously creates loud mechanical noise that can induce anxiety and cause finger shaking. Take 3 deep breaths, start at a relaxed 25 WPM pace for the first 2 minutes, and gradually accelerate once your rhythm stabilizes.</li>
   <li><strong>What to Do if You Finish Early:</strong> If you reach 2,000 key depressions in 12 or 13 minutes, <strong>DO NOT submit early</strong>. Scroll back up and proofread your typed text against the master passage. Correct capitalized letters, commas, and spelling slips using Backspace.</li>
-  <li><strong>Keep Your Target at 35 WPM at Home:</strong> Although CGL only requires ≈27 WPM, aiming for exactly 27 WPM leaves zero margin for exam day nerves. Maintain a comfortable 35+ WPM speed at home on <a href="/typing" style="color: #2563eb; font-weight: bold;">SSCZone Typing Simulator</a> to ensure effortless qualification on test day.</li>
+  <li><strong>Keep Your Target at 35 WPM at Home:</strong> Although CGL only requires ≈27 WPM, aiming for exactly 27 WPM leaves zero margin for exam day nerves. Maintain a comfortable 35+ WPM speed at home on <a href="/typing" style="color: #2563eb; font-weight: bold;">SSCZone Typing Test</a> to ensure effortless qualification on test day.</li>
 </ol>
 
 <hr />
@@ -225,7 +225,7 @@ const blogContent = `
 <p>To experience the exact replica of the TCS iON typing interface—with strict backspace tracking, authentic passage lengths, real-time key depression counts, and instant SSC qualification scorecards—practice daily on our free portal:</p>
 <p style="margin: 25px 0;">
   <a href="/typing" style="display: inline-block; background-color: #2563eb; color: #ffffff; padding: 14px 28px; border-radius: 12px; font-weight: bold; text-decoration: none; font-size: 16px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
-    Launch SSCZone Typing Simulator &rarr;
+    Start SSC Typing Practice &rarr;
   </a>
 </p>
 `;

@@ -50,39 +50,39 @@ export default function AdBanner({
   // Realistic Trial / Preview Ad for Demo
   if (preview) {
     return (
-      <div className={`my-4 overflow-hidden rounded-2xl border border-dashed border-amber-300/80 bg-gradient-to-r from-amber-50/70 via-orange-50/40 to-yellow-50/60 p-3 sm:p-4 shadow-2xs ${className}`}>
+      <div className={`my-2 sm:my-3.5 overflow-hidden rounded-xl sm:rounded-2xl border border-dashed border-amber-300/80 bg-gradient-to-r from-amber-50/70 via-orange-50/40 to-yellow-50/60 p-2 sm:p-3 shadow-2xs ${className}`}>
         {/* AdSense Standard Tag Header */}
-        <div className="flex items-center justify-between text-[10px] font-bold text-amber-800/80 mb-2 border-b border-amber-200/50 pb-1.5 px-1">
+        <div className="flex items-center justify-between text-[9px] sm:text-[10px] font-bold text-amber-800/80 mb-1.5 border-b border-amber-200/50 pb-1 px-0.5">
           <span className="flex items-center gap-1">
             <span className="h-1.5 w-1.5 rounded-full bg-amber-500" />
-            <span>ADVERTISEMENT • Google Ads Preview</span>
+            <span>ADVERTISEMENT • Google Ads</span>
           </span>
-          <span className="flex items-center gap-1 text-[9px] text-gray-500 bg-white px-1.5 py-0.5 rounded-md border border-gray-200">
+          <span className="flex items-center gap-1 text-[8px] sm:text-[9px] text-gray-500 bg-white px-1.5 py-0.5 rounded-md border border-gray-200">
             <span>AdChoices</span>
-            <Info className="h-2.5 w-2.5 text-blue-600" />
+            <Info className="h-2 w-2 sm:h-2.5 sm:w-2.5 text-blue-600" />
           </span>
         </div>
 
         {/* Ad Creative Box */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 bg-white p-3.5 rounded-xl border border-amber-200/60 shadow-2xs">
-          <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 text-white shadow-xs font-black text-xs">
+        <div className="flex items-center justify-between gap-2.5 bg-white p-2 sm:p-3 rounded-lg sm:rounded-xl border border-amber-200/60 shadow-2xs">
+          <div className="flex items-center gap-2 sm:gap-3 flex-1 min-w-0">
+            <div className="flex h-8 w-8 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-lg sm:rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 text-white shadow-xs font-black text-[10px] sm:text-xs">
               AD
             </div>
-            <div className="text-left">
-              <h4 className="text-xs sm:text-sm font-extrabold text-gray-900 leading-snug">
+            <div className="text-left flex-1 min-w-0">
+              <h4 className="text-xs sm:text-sm font-extrabold text-gray-900 leading-snug line-clamp-1">
                 SSC CGL 2026 Complete All-India Mock Test Series &amp; Video Solutions
               </h4>
-              <p className="text-[11px] font-medium text-gray-500 mt-0.5">
+              <p className="hidden sm:block text-[11px] font-medium text-gray-500 mt-0.5 line-clamp-1">
                 Join 50,000+ Aspirants. 100+ Full Mocks with Detailed Analytics. 
               </p>
             </div>
           </div>
 
-          <div className="shrink-0 w-full sm:w-auto">
-            <button className="w-full sm:w-auto flex items-center justify-center gap-1.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 px-4 py-2 text-xs font-black text-gray-950 shadow-xs hover:bg-amber-400 cursor-pointer">
+          <div className="shrink-0">
+            <button className="flex items-center justify-center gap-1 sm:gap-1.5 rounded-lg sm:rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 px-2.5 py-1.5 sm:px-4 sm:py-2 text-[11px] sm:text-xs font-black text-gray-950 shadow-xs hover:bg-amber-400 cursor-pointer whitespace-nowrap">
               <span>Visit Site</span>
-              <ExternalLink className="h-3 w-3" />
+              <ExternalLink className="h-3 w-3 sm:h-3.5 sm:w-3.5 shrink-0" />
             </button>
           </div>
         </div>

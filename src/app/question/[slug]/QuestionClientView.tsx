@@ -150,7 +150,7 @@ export default function QuestionClientView({
       </div>
 
       {/* Main Question Display */}
-      <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 sm:p-7 shadow-xs">
+      <div className="bg-white dark:bg-slate-900 rounded-xl sm:rounded-2xl border border-slate-200 dark:border-slate-800 p-3 sm:p-7 shadow-xs">
         <QuestionText text={currentQuestionText} />
 
         {/* Question Image (Figures, Non-Verbal, Graphs) */}

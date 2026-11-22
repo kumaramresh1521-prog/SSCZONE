@@ -154,20 +154,29 @@ export default function QuestionText({
     const norm = content.replace(/\r\n/g, '\n').trim();
 
     // Check if content is a Reading Comprehension passage with question
-    const passageMatch = norm.match(/^PASSAGE\s*:\s*([\s\S]+?)\n\s*(?:QUESTION|Q)\s*:\s*([\s\S]+)$/i);
+    const passageMatch = norm.match(/(?:^|\n)\s*PASSAGE\s*:\s*([\s\S]+?)\n\s*(?:QUESTION|Q)\s*:\s*([\s\S]+)$/i);
     if (passageMatch) {
       const passageBody = passageMatch[1].trim();
       const questionPrompt = passageMatch[2].trim();
       const paragraphs = passageBody.split(/\n\s*\n+/).filter(Boolean);
+      const wordCount = passageBody.split(/\s+/).filter(Boolean).length;
+      const readMinutes = Math.max(1, Math.ceil(wordCount / 180));
 
       return (
-        <div className="space-y-4">
-          <div className="rounded-2xl border border-amber-200/90 bg-amber-50/60 dark:bg-amber-950/20 dark:border-amber-900/50 p-4 sm:p-5 shadow-2xs">
-            <div className="flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-amber-800 dark:text-amber-400 mb-3">
-              <span>📖</span>
-              <span>Reading Passage</span>
+        <div className="w-full space-y-3.5 sm:space-y-4">
+          <div className="w-full rounded-xl sm:rounded-2xl border border-amber-200/90 bg-gradient-to-b from-amber-50/70 via-amber-50/40 to-amber-50/20 dark:bg-amber-950/20 dark:border-amber-900/50 p-2.5 sm:p-5 shadow-2xs">
+            <div className="flex items-center justify-between border-b border-amber-200/60 pb-2 mb-2.5 text-amber-900 dark:text-amber-300">
+              <div className="flex items-center gap-1.5 text-xs font-black uppercase tracking-wider">
+                <span>📖</span>
+                <span>Reading Passage</span>
+              </div>
+              <div className="flex items-center gap-2 text-[10px] sm:text-xs font-bold text-amber-800/80 dark:text-amber-400">
+                <span>~{wordCount} words</span>
+                <span>•</span>
+                <span>⏱️ {readMinutes} min read</span>
+              </div>
             </div>
-            <div className="space-y-3 text-slate-800 dark:text-slate-200 text-sm sm:text-base leading-relaxed font-normal">
+            <div className="space-y-2.5 sm:space-y-3.5 text-slate-800 dark:text-slate-100 text-[13.5px] sm:text-[15px] leading-relaxed font-normal tracking-normal selection:bg-amber-200">
               {paragraphs.map((para, pIdx) => (
                 <p key={pIdx} className="leading-relaxed">
                   <MathText text={para.trim()} />
@@ -176,12 +185,12 @@ export default function QuestionText({
             </div>
           </div>
 
-          <div className="pt-1">
-            <div className="text-xs font-black uppercase tracking-wider text-indigo-600 dark:text-indigo-400 mb-1.5 flex items-center gap-1.5">
+          <div className="w-full pt-1">
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-indigo-50 border border-indigo-200/80 text-[11px] font-black uppercase tracking-wider text-indigo-700 dark:bg-indigo-950/40 dark:text-indigo-300 dark:border-indigo-900 mb-1.5">
               <span>❓</span>
-              <span>Question</span>
+              <span>Question Prompt</span>
             </div>
-            <div className="text-slate-900 dark:text-white font-bold text-base sm:text-lg leading-relaxed">
+            <div className="text-slate-900 dark:text-white font-bold text-sm sm:text-base md:text-lg leading-snug">
               <MathText text={questionPrompt} />
             </div>
           </div>
@@ -286,14 +295,15 @@ export default function QuestionText({
     <div className={`space-y-2 ${className} break-words`}>
       {showInstructionBadge && (
         instruction.length > 50 ? (
-          <div className="rounded-xl bg-blue-50/80 border border-blue-200/90 p-3 sm:p-3.5 shadow-2xs space-y-1 mb-2">
-            <div className="flex items-center gap-1.5 text-blue-700 font-extrabold text-[11px] uppercase tracking-wider">
-              <span>📌</span>
-              <span>Directions / Description</span>
+          <div className="rounded-lg bg-blue-50/80 border border-blue-200/90 px-3 py-2 shadow-2xs mb-2">
+            <div className="flex items-start gap-1.5 text-xs text-blue-900 leading-snug">
+              <span className="shrink-0 text-blue-700 font-black text-[11px] uppercase tracking-wider flex items-center gap-1 mt-0.5">
+                <span>📌</span> Directions:
+              </span>
+              <span className="text-[11px] sm:text-xs font-medium text-slate-700 dark:text-slate-200">
+                {instruction}
+              </span>
             </div>
-            <p className="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed">
-              {instruction}
-            </p>
           </div>
         ) : (
           <div className="inline-flex items-center gap-1.5 rounded-lg bg-blue-50 px-2.5 py-1 text-xs font-bold text-blue-900 border border-blue-200 shadow-2xs max-w-full mb-1">

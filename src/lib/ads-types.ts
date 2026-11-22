@@ -61,7 +61,7 @@ export const DEFAULT_ADS_CONFIG: SiteAdsConfig = {
       type: "affiliate",
       affiliateBanner: {
         id: "aff_solution_book",
-        title: "Pinnacle SSC 6800+ TCS PYQ Chapter-Wise Solved Book",
+        title: "SSC 6800+ TCS PYQ Chapter-Wise Solved Book",
         subtitle: "Recommended reference guide with bilingual detailed solutions & short tricks.",
         badge: "Topper Recommended",
         imageUrl: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&auto=format&fit=crop&q=80",
@@ -115,7 +115,7 @@ export const DEFAULT_ADS_CONFIG: SiteAdsConfig = {
       type: "affiliate",
       affiliateBanner: {
         id: "aff_pinnacle_math",
-        title: "Pinnacle SSC Maths 6800+ TCS PYQ Book (4th Edition)",
+        title: "SSC Maths 6800+ TCS PYQ Practice Book (Latest Edition)",
         subtitle: "Complete English & Hindi Chapter-wise Solved Papers with smart short tricks.",
         badge: "Amazon Best Seller",
         imageUrl: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&auto=format&fit=crop&q=80",

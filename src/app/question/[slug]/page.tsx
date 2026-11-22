@@ -153,7 +153,7 @@ export default async function QuestionPage({ params }: PageProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
-        <main className="max-w-4xl mx-auto px-4 sm:px-6 pt-6 sm:pt-8 space-y-6">
+        <main className="max-w-4xl mx-auto px-2.5 sm:px-6 pt-4 sm:pt-8 space-y-4 sm:space-y-6">
           {/* Breadcrumb Navigation */}
           <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-slate-500 font-medium overflow-x-auto pb-1 scrollbar-none">
             <Link href="/" className="inline-flex items-center gap-1 hover:text-blue-600 transition-colors shrink-0">
@@ -324,7 +324,7 @@ export default async function QuestionPage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <main className="max-w-4xl mx-auto px-4 sm:px-6 pt-6 sm:pt-8 space-y-6">
+      <main className="max-w-4xl mx-auto px-2.5 sm:px-6 pt-4 sm:pt-8 space-y-4 sm:space-y-6">
         {/* Breadcrumb Navigation */}
         <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-slate-500 font-medium overflow-x-auto pb-1 scrollbar-none">
           <Link href="/" className="inline-flex items-center gap-1 hover:text-blue-600 transition-colors shrink-0">

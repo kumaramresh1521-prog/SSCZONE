@@ -108,6 +108,21 @@ function splitBilingualOption(text?: string | null): { english: string; hindi: s
   return { english: text.trim(), hindi: text.trim(), isBilingual: false };
 }
 
+// ── Universal SSC Exam Category Parser ──
+export function getQuestionExamCategory(examTag?: string | null): string {
+  if (!examTag) return "Other";
+  const u = examTag.toUpperCase();
+  if (u.includes("CGL") || u.includes("COMBINED GRADUATE LEVEL") || /\bC[C|O]L\b/.test(u)) return "CGL";
+  if (u.includes("CHSL") || u.includes("10+2") || u.includes("COMBINED HIGHER SECONDARY") || u.includes("LDC") || u.includes("DEO")) return "CHSL";
+  if (u.includes("CPO") || u.includes("CENTRAL POLICE") || u.includes("DELHI POLICE") || u.includes("CAPF") || u.includes("ASI (CISF)")) return "CPO";
+  if (u.includes("MTS") || u.includes("MULTI-TASKING") || u.includes("MULTI TASKING") || u.includes("MULTITASKING") || u.includes("HAVALDAR")) return "MTS";
+  if (u.includes("STENO") || u.includes("STENOGRAPHER")) return "Steno";
+  if (u.includes("SELECTION") || u.includes("PHASE") || u.includes("MATRIC") || u.includes("HIGHER SECONDARY") || u.includes("GRADUATE LEVEL")) return "Selection Post";
+  if (u.includes("GD") || u.includes("CONSTABLE") || u.includes("RIFLEMAN")) return "GD";
+  if (u.includes("JE") || u.includes("JUNIOR ENGINEER")) return "JE";
+  return "Other";
+}
+
 function formatSolutionSteps(rawText: string): string[] {
   if (!rawText) return [];
   
@@ -479,19 +494,61 @@ export default function PracticeClient({
   }, [typeCounts]);
 
   const examCounts = useMemo(() => {
-    let cglCount = 0;
-    let chslCount = 0;
-    questions.forEach((q) => {
-      const tag = (q.exam_tag || "").toUpperCase();
-      if (tag.includes("CHSL")) chslCount++;
-      else if (tag.includes("CGL") || !tag) cglCount++;
-    });
-    return {
+    const counts: Record<string, number> = {
       all: questions.length,
-      cgl: cglCount,
-      chsl: chslCount,
+      CGL: 0,
+      CHSL: 0,
+      CPO: 0,
+      MTS: 0,
+      Steno: 0,
+      "Selection Post": 0,
+      GD: 0,
+      JE: 0,
+      Other: 0,
     };
+    questions.forEach((q) => {
+      const cat = getQuestionExamCategory(q.exam_tag);
+      counts[cat] = (counts[cat] || 0) + 1;
+    });
+    return counts;
   }, [questions]);
+
+  const availableExams = useMemo(() => {
+    const list: { id: string; label: string; icon: string; count: number; activeClass: string }[] = [];
+    const meta: Record<string, { label: string; icon: string; activeClass: string }> = {
+      CGL: { label: "CGL", icon: "🏛️", activeClass: "bg-blue-600 text-white shadow-xs font-black" },
+      CHSL: { label: "CHSL", icon: "🎓", activeClass: "bg-amber-600 text-white shadow-xs font-black" },
+      CPO: { label: "CPO", icon: "👮", activeClass: "bg-emerald-600 text-white shadow-xs font-black" },
+      MTS: { label: "MTS", icon: "📋", activeClass: "bg-rose-600 text-white shadow-xs font-black" },
+      Steno: { label: "Steno", icon: "⌨️", activeClass: "bg-purple-600 text-white shadow-xs font-black" },
+      "Selection Post": { label: "Selection Post", icon: "🎯", activeClass: "bg-indigo-600 text-white shadow-xs font-black" },
+      GD: { label: "GD", icon: "🛡️", activeClass: "bg-teal-600 text-white shadow-xs font-black" },
+      JE: { label: "JE", icon: "⚙️", activeClass: "bg-orange-600 text-white shadow-xs font-black" },
+      Other: { label: "Other", icon: "🏷️", activeClass: "bg-slate-700 text-white shadow-xs font-black" },
+    };
+
+    const order = ["CGL", "CHSL", "CPO", "MTS", "Steno", "Selection Post", "GD", "JE", "Other"];
+    for (const key of order) {
+      const count = examCounts[key] || 0;
+      if (count > 0) {
+        list.push({
+          id: key,
+          label: meta[key]?.label || key,
+          icon: meta[key]?.icon || "📌",
+          count,
+          activeClass: meta[key]?.activeClass || "bg-blue-600 text-white font-black",
+        });
+      }
+    }
+    return list;
+  }, [examCounts]);
+
+  // Reset activeExamFilter to All if the selected filter no longer exists in current topic
+  useEffect(() => {
+    if (activeExamFilter !== "All" && availableExams.length > 0 && !availableExams.some((e) => e.id === activeExamFilter)) {
+      setActiveExamFilter("All");
+    }
+  }, [availableExams, activeExamFilter]);
 
   const isMathSubject = useMemo(() => {
     const sub = (topic.subjects?.title || "").toLowerCase();
@@ -501,16 +558,11 @@ export default function PracticeClient({
   const displayQuestions = useMemo(() => {
     let list = questions;
 
-    // 1. Exam Tag Filter
-    if (activeExamFilter === "CGL") {
+    // 1. Dynamic Exam Tag Filter
+    if (activeExamFilter !== "All") {
       list = list.filter((q) => {
-        const tag = (q.exam_tag || "").toUpperCase();
-        return tag.includes("CGL") || !tag;
-      });
-    } else if (activeExamFilter === "CHSL") {
-      list = list.filter((q) => {
-        const tag = (q.exam_tag || "").toUpperCase();
-        return tag.includes("CHSL");
+        const cat = getQuestionExamCategory(q.exam_tag);
+        return cat === activeExamFilter;
       });
     }
 
@@ -847,7 +899,7 @@ export default function PracticeClient({
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  function handleExamSwitch(exam: "All" | "CGL" | "CHSL" | "CPO" | "MTS") {
+  function handleExamSwitch(exam: string) {
     setActiveExamFilter(exam);
     resetPractice();
     setSelectedSetNumber(1);
@@ -1111,7 +1163,7 @@ export default function PracticeClient({
       </div>
 
       {/* Main Container */}
-      <div className="mx-auto max-w-7xl px-3 sm:px-4 py-4 sm:py-6">
+      <div className="mx-auto max-w-7xl px-2 sm:px-4 py-3 sm:py-6">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-12 items-start">
           {/* Desktop Left Syllabus Sidebar (4 Columns) */}
           <div className="hidden lg:col-span-4 lg:block">
@@ -1242,39 +1294,34 @@ export default function PracticeClient({
                 {/* Filter Controls: Exam Target + Type Filter + Jump/Search Bar (Only when questions exist) */}
                 {questions.length > 0 && (
                   <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
-                    {/* Exam Target Filter Selector */}
-                    <div className="flex items-center gap-0.5 rounded-xl bg-slate-100 p-0.5 sm:p-1 border border-slate-200 text-xs overflow-x-auto max-w-full [&::-webkit-scrollbar]:hidden">
-                      <button
-                        onClick={() => handleExamSwitch("All")}
-                        className={`px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer whitespace-nowrap ${
-                          activeExamFilter === "All"
-                            ? "bg-white text-blue-700 shadow-xs border border-gray-200 font-black"
-                            : "text-gray-600 hover:text-gray-900"
-                        }`}
-                      >
-                        🌐 All SSC ({examCounts.all})
-                      </button>
-                      <button
-                        onClick={() => handleExamSwitch("CGL")}
-                        className={`px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer whitespace-nowrap ${
-                          activeExamFilter === "CGL"
-                            ? "bg-blue-600 text-white shadow-xs font-black"
-                            : "text-gray-600 hover:text-gray-900"
-                        }`}
-                      >
-                        🏛️ CGL ({examCounts.cgl})
-                      </button>
-                      <button
-                        onClick={() => handleExamSwitch("CHSL")}
-                        className={`px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer whitespace-nowrap ${
-                          activeExamFilter === "CHSL"
-                            ? "bg-amber-600 text-white shadow-xs font-black"
-                            : "text-gray-600 hover:text-gray-900"
-                        }`}
-                      >
-                        🎓 CHSL ({examCounts.chsl})
-                      </button>
-                    </div>
+                    {/* Dynamic Exam Target Filter Selector */}
+                    {availableExams.length > 0 && (
+                      <div className="flex items-center gap-0.5 rounded-xl bg-slate-100 p-0.5 sm:p-1 border border-slate-200 text-xs overflow-x-auto max-w-full [&::-webkit-scrollbar]:hidden">
+                        <button
+                          onClick={() => handleExamSwitch("All")}
+                          className={`px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer whitespace-nowrap ${
+                            activeExamFilter === "All"
+                              ? "bg-white text-blue-700 shadow-xs border border-gray-200 font-black"
+                              : "text-gray-600 hover:text-gray-900"
+                          }`}
+                        >
+                          🌐 All SSC ({examCounts.all})
+                        </button>
+                        {availableExams.map((ex) => (
+                          <button
+                            key={ex.id}
+                            onClick={() => handleExamSwitch(ex.id)}
+                            className={`px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer whitespace-nowrap ${
+                              activeExamFilter === ex.id
+                                ? ex.activeClass
+                                : "text-gray-600 hover:text-gray-900"
+                            }`}
+                          >
+                            {ex.icon} {ex.label} ({ex.count})
+                          </button>
+                        ))}
+                      </div>
+                    )}
 
                     {/* Question Type Filter Selector (Type-I, Type-II, Type-III, etc.) */}
                     {availableTypes.length > 0 && (
@@ -1581,7 +1628,7 @@ export default function PracticeClient({
                           <React.Fragment key={item.id}>
                             <div
                               id={`q-card-${globalCardIdx}`}
-                            className={`rounded-2xl border bg-white p-3.5 sm:p-6 shadow-xs transition-all ${
+                            className={`rounded-xl sm:rounded-2xl border bg-white p-2.5 sm:p-6 shadow-xs transition-all ${
                               setSubmitted
                                 ? isCorrect
                                   ? "border-emerald-300 ring-2 ring-emerald-500/10"
@@ -1619,6 +1666,29 @@ export default function PracticeClient({
                                 const splitQ = splitBilingualText(item.question_text);
                                 const qEn = splitQ.isBilingual ? splitQ.english : (item.question_text || textEn);
                                 const qHi = item.question_text_hi || textHi || (splitQ.isBilingual ? splitQ.hindi : "");
+                                const isPassage = (qEn || "").toUpperCase().includes("PASSAGE:");
+
+                                if (isPassage) {
+                                  return (
+                                    <>
+                                      <div className="w-full space-y-1.5">
+                                        <div className="w-full text-slate-900 leading-relaxed font-semibold">
+                                          {langMode === "hi" && qHi ? (
+                                            <QuestionText text={qHi} />
+                                          ) : (
+                                            <QuestionText text={qEn} />
+                                          )}
+                                        </div>
+                                      </div>
+
+                                      {langMode === "bilingual" && qHi && qHi !== qEn && (
+                                        <div className="text-xs sm:text-sm font-semibold text-indigo-900 pt-1.5 border-t border-indigo-50/80">
+                                          <QuestionText text={qHi} />
+                                        </div>
+                                      )}
+                                    </>
+                                  );
+                                }
 
                                 return (
                                   <>
@@ -1856,10 +1926,13 @@ export default function PracticeClient({
                     </div>
 
                     {/* Question Box */}
-                    <div id="practice-question-card" className="rounded-2xl border border-gray-200/90 bg-white p-3.5 sm:p-6 shadow-sm transition-all">
+                    <div id="practice-question-card" className="rounded-xl sm:rounded-2xl border border-gray-200/90 bg-white p-2.5 sm:p-6 shadow-sm transition-all">
                       {/* Top Meta Bar: Exam Tag on left, Bookmark & Report on right */}
                       <div className="flex items-center justify-between gap-2.5 border-b border-gray-100 pb-2.5 sm:pb-3 mb-3 sm:mb-4">
                         <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap min-w-0">
+                          <span className="inline-flex items-center justify-center px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-lg bg-blue-600 text-white text-[11px] sm:text-xs font-black shadow-2xs shrink-0">
+                            Q{currentIndex + 1}
+                          </span>
                           {q.exam_tag ? (
                             <>
                               <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200/80 px-2.5 sm:px-3 py-0.5 sm:py-1 text-[10px] sm:text-[11px] font-extrabold text-blue-800 shadow-2xs uppercase tracking-wide">
@@ -1886,6 +1959,27 @@ export default function PracticeClient({
                           const splitQ = splitBilingualText(q.question_text);
                           const textEn = splitQ.isBilingual ? splitQ.english : q.question_text;
                           const textHi = q.question_text_hi || translationsCache[q.id]?.question_text || (splitQ.isBilingual ? splitQ.hindi : "");
+                          const isPassage = (textEn || "").toUpperCase().includes("PASSAGE:");
+
+                          if (isPassage) {
+                            return (
+                              <div className="w-full space-y-2">
+                                <div className="w-full text-slate-900 leading-relaxed font-semibold">
+                                  {langMode === "hi" && textHi ? (
+                                    <QuestionText text={textHi} />
+                                  ) : (
+                                    <QuestionText text={textEn} />
+                                  )}
+                                </div>
+
+                                {langMode === "bilingual" && textHi && textHi !== textEn && (
+                                  <div className="text-xs sm:text-sm font-semibold text-indigo-900 pt-2 border-t border-indigo-50/80 leading-relaxed">
+                                    <QuestionText text={textHi} />
+                                  </div>
+                                )}
+                              </div>
+                            );
+                          }
 
                           return (
                             <div className="space-y-2">

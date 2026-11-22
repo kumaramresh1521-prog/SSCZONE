@@ -78,7 +78,10 @@ export default function AdBannerSlot({ slotKey, className = "", fallback = null 
   if (!loaded || !config) return null;
   if (!config.enabledGlobally) return null;
 
-  const slot: AdSlotConfig | undefined = config.slots?.[slotKey];
+  let slot: AdSlotConfig | undefined = config.slots?.[slotKey];
+  if (!slot && slotKey === "qb_solution") {
+    slot = config.slots?.inDrillSolution;
+  }
   if (!slot || !slot.enabled) {
     return <>{fallback}</>;
   }

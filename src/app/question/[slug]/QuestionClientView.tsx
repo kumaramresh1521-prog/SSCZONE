@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import QuestionText from "@/components/QuestionText";
 import MathText from "@/components/MathText";
+import AdBannerSlot from "@/components/AdBannerSlot";
 import { resolveAssetUrl } from "@/lib/utils";
 import { getPaperSlug } from "@/lib/paper-slugs";
 import {
@@ -288,6 +289,8 @@ export default function QuestionClientView({
                     Detailed Explanation:
                   </div>
                   <MathText text={currentExplanation} />
+                  {/* Inside Explanation Ad Banner */}
+                  <AdBannerSlot slotKey="qb_solution" className="mt-4 pt-3 border-t border-emerald-200/50" />
                 </div>
               )}
             </div>

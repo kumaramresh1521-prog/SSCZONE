@@ -52,6 +52,24 @@ export const DEFAULT_ADS_CONFIG: SiteAdsConfig = {
   inlineInterval: 5,
   slots: {
     // ── Question Bank Slots ──
+    qb_solution: {
+      id: "qb_solution",
+      name: "Question Bank: Inside Explanation Box",
+      category: "question_bank",
+      description: "Appears directly inside the question's step-by-step solution card (e.g. recommended book or test pass)",
+      enabled: true,
+      type: "affiliate",
+      affiliateBanner: {
+        id: "aff_solution_book",
+        title: "Pinnacle SSC 6800+ TCS PYQ Chapter-Wise Solved Book",
+        subtitle: "Recommended reference guide with bilingual detailed solutions & short tricks.",
+        badge: "Topper Recommended",
+        imageUrl: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&auto=format&fit=crop&q=80",
+        targetUrl: "https://www.amazon.in/dp/B0CKZ7L9PY?tag=ssczone-21",
+        ctaText: "Get 35% Off on Amazon ➔",
+        relSponsored: true,
+      },
+    },
     qb_inline: {
       id: "qb_inline",
       name: "Question Bank: In-Feed Ad (Between Questions)",

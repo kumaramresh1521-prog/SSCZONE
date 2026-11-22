@@ -1736,6 +1736,9 @@ export default function PracticeClient({
                                     </div>
                                   )}
                                 </div>
+
+                                {/* Ad Banner Inside Set Mode Explanation Box */}
+                                <AdBannerSlot slotKey="qb_solution" className="mt-3 pt-3 border-t border-blue-100/80" />
                               </div>
                             )}
                             </div>
@@ -2158,6 +2161,9 @@ export default function PracticeClient({
                                     </div>
                                   );
                                 })()}
+
+                                {/* Ad Banner Inside Step Mode Explanation Box */}
+                                <AdBannerSlot slotKey="qb_solution" className="mt-3 pt-3 border-t border-indigo-100/80" />
                               </div>
                             </div>
                           )}

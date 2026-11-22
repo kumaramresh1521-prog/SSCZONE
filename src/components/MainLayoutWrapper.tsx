@@ -8,6 +8,7 @@ import MobileBottomNav from "@/components/MobileBottomNav";
 import GuestSessionGateModal from "@/components/GuestSessionGateModal";
 import AnnouncementModal from "@/components/AnnouncementModal";
 import TopGovernmentDisclaimer from "@/components/TopGovernmentDisclaimer";
+import AdBannerSlot from "@/components/AdBannerSlot";
 import { TopDisclaimerConfig } from "@/lib/static-pages-store";
 
 export default function MainLayoutWrapper({
@@ -38,12 +39,18 @@ export default function MainLayoutWrapper({
   return (
     <div className="min-h-screen w-full max-w-full overflow-x-clip bg-slate-50 text-slate-900 antialiased font-sans flex flex-col justify-between">
       <TopGovernmentDisclaimer config={topDisclaimer} />
+      <AdBannerSlot slotKey="global_top_bar" />
       <UserNav />
       <GuestSessionGateModal />
       <AnnouncementModal />
       <main className="flex-1 w-full max-w-full">{children}</main>
       <Footer />
       <MobileBottomNav />
+      <div className="fixed bottom-14 sm:bottom-4 inset-x-0 z-40 px-3 pointer-events-none">
+        <div className="max-w-3xl mx-auto pointer-events-auto">
+          <AdBannerSlot slotKey="global_bottom_bar" />
+        </div>
+      </div>
     </div>
   );
 }

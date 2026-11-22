@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { Languages, CheckCircle2, XCircle, Sparkles, BookOpen } from "lucide-react";
+import AdBannerSlot from "@/components/AdBannerSlot";
 
 interface Props {
   content: string;
@@ -12,6 +13,20 @@ export default function BlogContentInteractive({ content }: Props) {
 
   // Check if content has language sections
   const hasMultipleLangs = content.includes("lang-en") && content.includes("lang-hi");
+
+  // Split content at midpoint for mid-article ad placement
+  const { part1, part2 } = useMemo(() => {
+    const matches = [...content.matchAll(/<\/p>|<hr\s*\/?>/gi)];
+    if (matches.length >= 3) {
+      const targetMatch = matches[Math.min(3, Math.floor(matches.length / 2))];
+      const splitIdx = targetMatch.index! + targetMatch[0].length;
+      return {
+        part1: content.slice(0, splitIdx),
+        part2: content.slice(splitIdx),
+      };
+    }
+    return { part1: content, part2: null };
+  }, [content]);
 
   useEffect(() => {
     // Interactive MCQ / Quiz option selection handler
@@ -123,10 +138,11 @@ export default function BlogContentInteractive({ content }: Props) {
       )}
 
       {/* Main Sanitized Article Body with Pristine Textbook Styling */}
-      <div
-        className={`blog-rendered-content lang-mode-${langMode} bg-white p-6 sm:p-10 rounded-3xl shadow-sm border border-gray-200 text-slate-800`}
-        dangerouslySetInnerHTML={{ __html: content }}
-      />
+      <div className={`blog-rendered-content lang-mode-${langMode} bg-white p-6 sm:p-10 rounded-3xl shadow-sm border border-gray-200 text-slate-800 space-y-6`}>
+        <div dangerouslySetInnerHTML={{ __html: part1 }} />
+        {part2 && <AdBannerSlot slotKey="blog_mid" className="my-6" />}
+        {part2 && <div dangerouslySetInnerHTML={{ __html: part2 }} />}
+      </div>
 
       {/* Injected CSS for Interactive MCQs & Responsive Diagrams */}
       <style jsx global>{`

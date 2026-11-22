@@ -1,13 +1,13 @@
 "use client";
 
-import { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import Link from "next/link";
 import toast from "react-hot-toast";
 import MathText from "@/components/MathText";
 import QuestionText from "@/components/QuestionText";
 import BookmarkButton from "@/components/BookmarkButton";
 import ReportButton from "@/components/ReportButton";
-import AdBanner from "@/components/AdBanner";
+import AdBannerSlot from "@/components/AdBannerSlot";
 import {
   CheckCircle2,
   XCircle,
@@ -1063,6 +1063,9 @@ export default function PracticeClient({
             </div>
           );
         })}
+        <div className="p-3 border-t border-gray-100">
+          <AdBannerSlot slotKey="qb_sidebar" />
+        </div>
       </div>
     </div>
   );
@@ -1421,6 +1424,7 @@ export default function PracticeClient({
               </div>
             ) : (
               <div className="space-y-4">
+                <AdBannerSlot slotKey="qb_top" className="mb-2" />
                 {practiceMode !== "step" ? (
                   /* ==================================================== */
                   /* FULL PAGE / SET VIEW (10-Q OR 25-Q ON ONE PAGE)      */
@@ -1574,9 +1578,9 @@ export default function PracticeClient({
                         const textHi = trans?.question_text;
 
                         return (
-                          <div
-                            key={item.id}
-                            id={`q-card-${globalCardIdx}`}
+                          <React.Fragment key={item.id}>
+                            <div
+                              id={`q-card-${globalCardIdx}`}
                             className={`rounded-2xl border bg-white p-3.5 sm:p-6 shadow-xs transition-all ${
                               setSubmitted
                                 ? isCorrect
@@ -1734,7 +1738,11 @@ export default function PracticeClient({
                                 </div>
                               </div>
                             )}
-                          </div>
+                            </div>
+                            {(qIdx + 1) % 5 === 0 && qIdx !== activeSetQuestions.length - 1 && (
+                              <AdBannerSlot slotKey="qb_inline" className="my-5" />
+                            )}
+                          </React.Fragment>
                         );
                       })}
                     </div>
@@ -1791,6 +1799,8 @@ export default function PracticeClient({
                         )}
                       </div>
                     </div>
+                    {/* Bottom Ad Banner in Question Bank Set Mode */}
+                    <AdBannerSlot slotKey="qb_bottom" className="mt-6" />
                   </div>
                 ) : (
                   /* ==================================================== */
@@ -2184,6 +2194,9 @@ export default function PracticeClient({
                           )}
                         </button>
                       </div>
+
+                      {/* In-Drill Solution Ad Banner (Step Mode) */}
+                      <AdBannerSlot slotKey="inDrillSolution" className="mt-5" />
                     </div>
                   </div>
                 )}

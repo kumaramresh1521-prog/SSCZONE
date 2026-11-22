@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
+import AdBannerSlot from "@/components/AdBannerSlot";
 import {
   BookOpen,
   Search,
@@ -302,6 +303,9 @@ export default function NotesClient({ initialNotes = [] }: { initialNotes: Subje
           )}
         </div>
 
+        {/* Top Notes Banner */}
+        <AdBannerSlot slotKey="notes_top" className="mb-6" />
+
         {/* PDF Notes Cards Grid */}
         {filteredNotes.length === 0 ? (
           <div className="rounded-3xl border border-slate-200 bg-white p-12 text-center text-slate-500 space-y-3 shadow-xs">
@@ -479,6 +483,9 @@ export default function NotesClient({ initialNotes = [] }: { initialNotes: Subje
             })}
           </div>
         )}
+
+        {/* Bottom Notes Banner */}
+        <AdBannerSlot slotKey="notes_bottom" className="mt-8" />
 
       </section>
 

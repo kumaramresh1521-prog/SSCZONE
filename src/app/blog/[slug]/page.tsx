@@ -335,6 +335,9 @@ export default async function BlogPostPage(props: Props) {
           </div>
         )}
 
+        {/* Top Blog Ad */}
+        <AdBannerSlot slotKey="blog_top" className="my-4" />
+
         {/* Main Content Body */}
         <BlogContentInteractive content={safeContent} />
 
@@ -368,7 +371,7 @@ export default async function BlogPostPage(props: Props) {
         )}
 
         {/* Dynamic Ad & Affiliate Slot (In-Article) */}
-        <AdBannerSlot slotKey="inDrillSolution" className="my-8" />
+        <AdBannerSlot slotKey="blog_bottom" className="my-8" />
 
         {/* ── 2-WAY BRIDGE: INTERACTIVE CHAPTER READER PORTAL CTA ── */}
         <div className="rounded-3xl border-2 border-indigo-200 bg-gradient-to-br from-indigo-950 via-slate-900 to-blue-950 p-6 sm:p-8 text-white shadow-xl space-y-5">

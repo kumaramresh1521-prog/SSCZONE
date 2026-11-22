@@ -794,6 +794,28 @@ export default function TypingPage() {
       ══════════════════════════════════════════════════════════════════ */}
       <div className="max-w-7xl mx-auto px-3 sm:px-6 mt-12 pb-16 space-y-8 font-sans">
         
+        {/* MASTER GUIDE BLOG CALLOUT BANNER */}
+        <div className="bg-gradient-to-r from-blue-900 via-indigo-950 to-slate-900 border border-blue-500/30 rounded-3xl p-6 text-white shadow-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <div className="space-y-1.5 max-w-3xl">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-[11px] font-black uppercase tracking-wider border border-blue-400/30">
+              <Sparkles className="w-3.5 h-3.5 text-amber-300" /> Complete Official Documentation
+            </div>
+            <h2 className="text-lg sm:text-2xl font-black text-white tracking-tight">
+              SSC Typing Test Master Guide 2026: Official Rules, Speed Calculation Formula &amp; Cutoffs
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Read our full-length editorial breakdown covering TCS iON evaluation nuances, WPM-to-KPH conversion math, full vs half penalty rules, and post-wise qualifying cutoffs.
+            </p>
+          </div>
+          <Link
+            href="/blog/ssc-typing-test-complete-guide-rules-cutoffs-terms"
+            className="shrink-0 px-5 py-3 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-black transition-all shadow-lg hover:shadow-blue-500/25 flex items-center gap-2 group cursor-pointer"
+          >
+            <span>Read Master Article</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </div>
+
         {/* EVALUATION GUIDE & FORMULA */}
         <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6">
           <div className="border-b border-slate-100 pb-4">
@@ -902,6 +924,159 @@ export default function TypingPage() {
           </div>
         </div>
 
+        {/* ══════════════════════════════════════════════════════════════════
+            A-Z TYPING TERMINOLOGY & SSC TECHNICAL ENCYCLOPEDIA
+        ══════════════════════════════════════════════════════════════════ */}
+        <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6">
+          <div className="border-b border-slate-100 pb-4">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-100 text-indigo-800 text-[11px] font-black uppercase tracking-wider mb-2">
+              <Sparkles className="w-3.5 h-3.5" /> Complete A-Z Technical Dictionary
+            </div>
+            <h2 className="text-xl sm:text-2xl font-black text-slate-900">
+              Every Typing Term, Metric &amp; Exam Hall Parameter Defined
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
+              Detailed descriptions of every single technical term used in typing tests, software evaluation engines, and official SSC examination notices.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
+            
+            {/* Card 1: Key Depressions */}
+            <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-4 space-y-2 hover:border-blue-300 transition-colors">
+              <div className="flex items-center gap-2">
+                <span className="w-6 h-6 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-black text-[11px]">1</span>
+                <h3 className="font-black text-slate-900 text-xs uppercase tracking-wide">Key Depressions (KD) / Keystrokes</h3>
+              </div>
+              <p className="text-[11.5px] text-slate-600 leading-relaxed">
+                Every single physical key press—including alphabets, numbers, punctuation marks, symbols, the spacebar, and the Enter key. In an SSC CGL 2,000 Key Depression test, every spacebar hit counts toward your 2,000 target.
+              </p>
+            </div>
+
+            {/* Card 2: 5-Stroke Rule */}
+            <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-4 space-y-2 hover:border-blue-300 transition-colors">
+              <div className="flex items-center gap-2">
+                <span className="w-6 h-6 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-black text-[11px]">2</span>
+                <h3 className="font-black text-slate-900 text-xs uppercase tracking-wide">Words Per Minute (WPM) &amp; 5-Stroke Rule</h3>
+              </div>
+              <p className="text-[11.5px] text-slate-600 leading-relaxed">
+                International typing standard defining <strong>1 Word = Exactly 5 Keystrokes</strong> (including spaces). This standardizes words of varying lengths ("in" vs "constitution") into an impartial, standardized metric.
+              </p>
+            </div>
+
+            {/* Card 3: Gross vs Net WPM */}
+            <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-4 space-y-2 hover:border-blue-300 transition-colors">
+              <div className="flex items-center gap-2">
+                <span className="w-6 h-6 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-black text-[11px]">3</span>
+                <h3 className="font-black text-slate-900 text-xs uppercase tracking-wide">Gross WPM vs Net WPM</h3>
+              </div>
+              <p className="text-[11.5px] text-slate-600 leading-relaxed">
+                <strong>Gross WPM</strong> measures raw finger pace: <code>(Keystrokes / 5) / Minutes</code>. <strong>Net WPM</strong> deducts penalty mistakes: <code>Gross WPM - (Errors / Minutes)</code>, representing your clean, productive output.
+              </p>
+            </div>
+
+            {/* Card 4: KPH / KDPH */}
+            <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-4 space-y-2 hover:border-blue-300 transition-colors">
+              <div className="flex items-center gap-2">
+                <span className="w-6 h-6 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-black text-[11px]">4</span>
+                <h3 className="font-black text-slate-900 text-xs uppercase tracking-wide">KPH / KDPH (Depressions Per Hour)</h3>
+              </div>
+              <p className="text-[11.5px] text-slate-600 leading-relaxed">
+                The statutory speed benchmark in official government gazettes: <strong>8,000 KDPH</strong> for CGL DEST (2,000 in 15 min), <strong>10,500 KDPH</strong> for CHSL English (1,750 in 10 min), and <strong>15,000 KDPH</strong> for DEO (3,750 in 15 min).
+              </p>
+            </div>
+
+            {/* Card 5: CPM */}
+            <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-4 space-y-2 hover:border-blue-300 transition-colors">
+              <div className="flex items-center gap-2">
+                <span className="w-6 h-6 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-black text-[11px]">5</span>
+                <h3 className="font-black text-slate-900 text-xs uppercase tracking-wide">CPM (Characters Per Minute)</h3>
+              </div>
+              <p className="text-[11.5px] text-slate-600 leading-relaxed">
+                The total count of characters typed per minute. Directly connected to WPM via <code>CPM = WPM × 5</code>. A benchmark speed of 30 WPM equals exactly 150 CPM.
+              </p>
+            </div>
+
+            {/* Card 6: Accuracy Rate */}
+            <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-4 space-y-2 hover:border-blue-300 transition-colors">
+              <div className="flex items-center gap-2">
+                <span className="w-6 h-6 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-black text-[11px]">6</span>
+                <h3 className="font-black text-slate-900 text-xs uppercase tracking-wide">Accuracy Percentage (%)</h3>
+              </div>
+              <p className="text-[11.5px] text-slate-600 leading-relaxed">
+                The ratio of correctly typed characters to total typed characters: <code>[(Correct / Total) × 100]</code>. In competitive examinations, an accuracy of <strong>96%–98%</strong> is recommended to stay safely below strict cutoffs.
+              </p>
+            </div>
+
+            {/* Card 7: Full Mistakes */}
+            <div className="rounded-2xl border border-rose-200 bg-rose-50/40 p-4 space-y-2 hover:border-rose-300 transition-colors">
+              <div className="flex items-center gap-2">
+                <span className="w-6 h-6 rounded-lg bg-rose-100 text-rose-700 flex items-center justify-center font-black text-[11px]">7</span>
+                <h3 className="font-black text-rose-950 text-xs uppercase tracking-wide">Full Mistakes (100% Penalty)</h3>
+              </div>
+              <p className="text-[11.5px] text-rose-900 leading-relaxed">
+                Each incurs a 1.0 full error penalty: <strong>Omission</strong> (skipping a word/figure), <strong>Substitution</strong> (typing a wrong word), <strong>Addition</strong> (typing extra words), and <strong>Spurious lines</strong> (repeating a line).
+              </p>
+            </div>
+
+            {/* Card 8: Half Mistakes */}
+            <div className="rounded-2xl border border-amber-200 bg-amber-50/40 p-4 space-y-2 hover:border-amber-300 transition-colors">
+              <div className="flex items-center gap-2">
+                <span className="w-6 h-6 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center font-black text-[11px]">8</span>
+                <h3 className="font-black text-amber-950 text-xs uppercase tracking-wide">Half Mistakes (50% Penalty)</h3>
+              </div>
+              <p className="text-[11.5px] text-amber-900 leading-relaxed">
+                Each incurs a 0.5 error penalty: <strong>Spacing errors</strong> (no space or extra spaces), <strong>Capitalization slips</strong> (small letter for capital), <strong>Punctuation errors</strong> (missing commas/stops), and <strong>Letter transpositions</strong> inside a word.
+              </p>
+            </div>
+
+            {/* Card 9: DEST vs CPT */}
+            <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-4 space-y-2 hover:border-blue-300 transition-colors">
+              <div className="flex items-center gap-2">
+                <span className="w-6 h-6 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-black text-[11px]">9</span>
+                <h3 className="font-black text-slate-900 text-xs uppercase tracking-wide">DEST (Data Entry Skill Test)</h3>
+              </div>
+              <p className="text-[11.5px] text-slate-600 leading-relaxed">
+                The official nomenclature for the 15-minute typing test in SSC CGL and CHSL. Conducted on the TCS iON interface with a master passage displayed in the upper pane and active entry in the lower pane.
+              </p>
+            </div>
+
+            {/* Card 10: Backspace Rules */}
+            <div className="rounded-2xl border border-emerald-200 bg-emerald-50/40 p-4 space-y-2 hover:border-emerald-300 transition-colors">
+              <div className="flex items-center gap-2">
+                <span className="w-6 h-6 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-black text-[11px]">10</span>
+                <h3 className="font-black text-emerald-950 text-xs uppercase tracking-wide">Backspace &amp; Navigation Rules</h3>
+              </div>
+              <p className="text-[11.5px] text-emerald-900 leading-relaxed">
+                <strong>Backspace is 100% allowed!</strong> You can use Backspace, Delete, and Arrow keys to edit any mistyped text at any point. However, shortcuts like <code>Ctrl+A</code>, <code>Ctrl+C</code>, <code>Ctrl+V</code>, and right-clicks are disabled.
+              </p>
+            </div>
+
+            {/* Card 11: Touch Typing & Home Row */}
+            <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-4 space-y-2 hover:border-blue-300 transition-colors">
+              <div className="flex items-center gap-2">
+                <span className="w-6 h-6 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-black text-[11px]">11</span>
+                <h3 className="font-black text-slate-900 text-xs uppercase tracking-wide">Touch Typing &amp; Home Row (F &amp; J)</h3>
+              </div>
+              <p className="text-[11.5px] text-slate-600 leading-relaxed">
+                Typing without looking down at the keyboard. Fingers rest on <strong>A-S-D-F</strong> and <strong>J-K-L-;</strong>. The raised tactile ridges on <strong>F</strong> and <strong>J</strong> allow you to reposition your index fingers instinctively.
+              </p>
+            </div>
+
+            {/* Card 12: TCS Hardware & Membrane Keys */}
+            <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-4 space-y-2 hover:border-blue-300 transition-colors">
+              <div className="flex items-center gap-2">
+                <span className="w-6 h-6 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-black text-[11px]">12</span>
+                <h3 className="font-black text-slate-900 text-xs uppercase tracking-wide">TCS iON Hardware: Membrane Keyboards</h3>
+              </div>
+              <p className="text-[11.5px] text-slate-600 leading-relaxed">
+                TCS test centers provide standard wired desktop membrane keyboards (Dell, HP, Lenovo) with full <strong>3.5mm–4mm travel depth</strong>. Practicing on an external desktop keyboard before exam day is crucial.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
         {/* FREQUENTLY ASKED QUESTIONS */}
         <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm">
           <div className="text-center mb-8">
@@ -937,6 +1112,18 @@ export default function TypingPage() {
               {
                 q: "Is the SSC CGL DEST typing test qualifying in nature for all posts?",
                 a: "Yes, DEST is qualifying in nature, meaning marks obtained do not add to your merit rank score. However, qualifying the typing test is MANDATORY for all shortlisted candidates. Failing the typing test disqualifies you from both DEST-mandatory posts (like Tax Assistant, Executive Assistant, ASO) as well as non-DEST posts."
+              },
+              {
+                q: "What should I do if a key is hard to press or sticky at the exam center?",
+                a: "TCS iON gives candidates a 10-minute mock trial session before the real test begins. Test every alphabet key, the Spacebar, Backspace, Enter, comma, and full stop during this trial. If any key is defective, sticky, or hard to press, immediately raise your hand and ask the invigilator to replace the keyboard or assign you to a backup computer."
+              },
+              {
+                q: "What happens if I accidentally skip a word or entire line while typing?",
+                a: "Skipping a word is classified as an 'Omission of Word' and counts as a Full Mistake (100% penalty). Skipping an entire line counts as multiple full mistakes (one for every word skipped). If you notice you skipped a word immediately, use Backspace to correct it. If you notice later, continue typing accurately to ensure you reach the 2,000 depression threshold."
+              },
+              {
+                q: "Should I press Enter at the end of every line in the master passage?",
+                a: "NO. Modern computer typing software uses 'Word Wrap', which automatically moves your cursor to the next line when you reach the edge of the box. You should ONLY press the Enter key when the master passage starts a brand-new paragraph."
               }
             ].map((faq, idx) => {
               const isOpen = openFaq === idx;

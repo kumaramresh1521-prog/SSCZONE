@@ -1063,14 +1063,14 @@ export default function TypingPage() {
               </p>
             </div>
 
-            {/* Card 12: TCS Hardware & Membrane Keys */}
+            {/* Card 12: Hardware Specifications & Key Travel */}
             <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-4 space-y-2 hover:border-blue-300 transition-colors">
               <div className="flex items-center gap-2">
                 <span className="w-6 h-6 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-black text-[11px]">12</span>
-                <h3 className="font-black text-slate-900 text-xs uppercase tracking-wide">TCS iON Hardware: Membrane Keyboards</h3>
+                <h3 className="font-black text-slate-900 text-xs uppercase tracking-wide">Hardware Specifications: Desktop Keyboards</h3>
               </div>
               <p className="text-[11.5px] text-slate-600 leading-relaxed">
-                TCS test centers provide standard wired desktop membrane keyboards (Dell, HP, Lenovo) with full <strong>3.5mm–4mm travel depth</strong>. Practicing on an external desktop keyboard before exam day is crucial.
+                Examination centers provide standard full-sized wired desktop membrane keyboards featuring standard <strong>3.5mm–4.0mm key travel depth</strong>. Candidates should ensure consistent practice on a physical desktop keyboard rather than flat laptop chiclet keyboards.
               </p>
             </div>
 
@@ -1102,8 +1102,8 @@ export default function TypingPage() {
                 a: "If you finish typing the master passage early, DO NOT leave the exam window. Use the remaining time to carefully re-read your typed text against the master passage and correct any punctuation, capitalization, or spelling mistakes with backspace. You do NOT need to re-type the passage from the beginning unless instructed."
               },
               {
-                q: "What keyboard layout and brands are provided at TCS iON exam centers?",
-                a: "TCS examination centers generally provide standard QWERTY English keyboards (typically Dell, HP, Lenovo, or ProDot wired desktop keyboards). Keys may have varying travel depth, so regular practice on standard desktop keyboards is highly recommended."
+                q: "What keyboard specifications are standard at official examination centers?",
+                a: "Official examination centers provide standard full-sized wired QWERTY English desktop keyboards with standard membrane key mechanisms. Because desktop keys have full 3.5mm–4.0mm travel depth, regular practice on a standard wired desktop keyboard ensures optimal finger conditioning for exam day."
               },
               {
                 q: "How are 2,000 key depressions converted into Words Per Minute (WPM)?",

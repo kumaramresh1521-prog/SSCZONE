@@ -124,14 +124,14 @@ const blogContent = `
   <li><strong>Left Hand:</strong> <code>A - S - D - F</code> (Little finger on A, Ring on S, Middle on D, Index on F).</li>
   <li><strong>Right Hand:</strong> <code>J - K - L - ;</code> (Index on J, Middle on K, Ring on L, Little on semicolon).</li>
   <li><strong>Both Thumbs:</strong> Resting gently above the Spacebar.</li>
-  <li><strong>Tactile Bumps (Nipples):</strong> Small raised plastic ridges on the <strong>F</strong> and <strong>J</strong> keys allow typists to reposition their index fingers instantly without looking down.</li>
+  <li><strong>Tactile Bumps / Guide Ridges:</strong> Small raised plastic ridges on the <strong>F</strong> and <strong>J</strong> keys allow typists to reposition their index fingers into the baseline home position instantly without looking down.</li>
 </ul>
 
 <h3>13. Muscle Memory</h3>
-<p>The neuromuscular synchronization developed through repetitive typing practice. Once conditioned, your fingers instinctively strike the correct key coordinates upon seeing a letter, eliminating the mental bottleneck of searching for keys.</p>
+<p>The neuromuscular synchronization developed through systematic, repetitive typing practice. Once conditioned, fingers instinctively strike the correct key coordinates upon reading a letter, eliminating the cognitive delay of visually locating individual keys.</p>
 
-<h3>14. Membrane vs Mechanical Keyboards in TCS Centers</h3>
-<p>Almost all TCS iON testing centers provide <strong>standard wired desktop membrane keyboards</strong> (typically Dell KB216, HP 100/150, Lenovo, or ProDot). These keyboards have rubber dome switches with a full 3.5mm key travel depth. Candidates who practice exclusively on slim laptop chiclet keyboards often struggle on exam day because membrane keys require slightly more deliberate finger pressure.</p>
+<h3>14. Keyboard Specifications: Membrane Desktop Keyboards</h3>
+<p>Government examination centers standardly utilize <strong>full-sized wired QWERTY desktop keyboards</strong> equipped with traditional membrane rubber-dome switches. These feature standard 3.5mm–4.0mm key actuation travel depth. Candidates who practice exclusively on flat laptop chiclet keyboards should transition to practicing on a standard external desktop keyboard, as desktop keys require more deliberate finger pressure and travel distance.</p>
 
 <h3>15. Word Wrap vs Enter Key Usage</h3>
 <p>In modern computer typing software, lines automatically "wrap" to the next line when you reach the right margin. Candidates must <strong>never press the Enter key at the end of each visual line</strong>. The Enter key should ONLY be pressed when a genuine paragraph break occurs in the master passage.</p>

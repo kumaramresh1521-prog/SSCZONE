@@ -38,13 +38,24 @@ const blogContent = `
 <h2>2. Official SSC & TCS Typing Evaluation Formula</h2>
 <p>Candidates often misunderstand how speed and errors are evaluated in the official exam hall. SSC does not count "dictionary words" directly because some words have 3 letters while others have 12 letters. Instead, standard international typing norms are followed:</p>
 
-<div style="background-color: #0f172a; color: #f8fafc; padding: 20px; border-radius: 12px; margin: 20px 0; font-family: monospace;">
-  <p style="color: #38bdf8; font-weight: bold; margin-bottom: 8px;">[STANDARD DEFINITIONS]</p>
-  <p>1 Standard Word = Exactly 5 Key Depressions (Keystrokes, including spaces & punctuation)</p>
-  <p>Total Words Typed = Total Key Depressions / 5</p>
-  <p>Gross WPM = (Total Key Depressions / 5) / Time in Minutes</p>
-  <p style="color: #fbbf24; font-weight: bold; margin-top: 14px;">[OFFICIAL TCS ERROR PERCENTAGE FORMULA]</p>
-  <p style="font-size: 1.1em; color: #4ade80;">Error % = [ (Full Mistakes + (Half Mistakes / 2)) / Total Words in Master Passage ] × 100</p>
+<div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-left: 4px solid #2563eb; padding: 22px 24px; border-radius: 12px; margin: 24px 0;">
+  <div style="display: inline-block; padding: 4px 10px; background-color: #eff6ff; color: #1d4ed8; font-size: 11px; font-weight: 800; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; border: 1px solid #bfdbfe;">
+    Standard Definitions
+  </div>
+  <ul style="margin: 0 0 16px 0; padding-left: 20px; color: #334155; font-size: 14px; line-height: 1.8;">
+    <li><strong>1 Standard Word</strong> = Exactly 5 Key Depressions (Keystrokes, including spaces &amp; punctuation)</li>
+    <li><strong>Total Words Typed</strong> = Total Key Depressions ÷ 5</li>
+    <li><strong>Gross WPM</strong> = (Total Key Depressions ÷ 5) ÷ Time in Minutes</li>
+  </ul>
+
+  <div style="display: inline-block; padding: 4px 10px; background-color: #fef3c7; color: #b45309; font-size: 11px; font-weight: 800; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; border: 1px solid #fde68a;">
+    Official TCS Error Percentage Formula
+  </div>
+  <div style="background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 10px; padding: 14px 18px; margin-top: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
+    <p style="font-size: 15px; font-weight: 800; color: #1e40af; margin: 0; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;">
+      Error % = [ (Full Mistakes + (Half Mistakes / 2)) ÷ Total Words in Master Passage ] × 100
+    </p>
+  </div>
 </div>
 
 <p><strong>Example Calculation:</strong></p>
@@ -150,14 +161,14 @@ const blogContent = `
 
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px;">
   <thead>
-    <tr style="background-color: #1e293b; color: #ffffff; text-align: left;">
-      <th style="padding: 12px; border: 1px solid #334155;">Post / Examination</th>
-      <th style="padding: 12px; border: 1px solid #334155;">Duration</th>
-      <th style="padding: 12px; border: 1px solid #334155;">Required Depressions</th>
-      <th style="padding: 12px; border: 1px solid #334155;">Approx WPM</th>
-      <th style="padding: 12px; border: 1px solid #334155;">UR Cutoff (Max Error)</th>
-      <th style="padding: 12px; border: 1px solid #334155;">OBC / EWS Cutoff</th>
-      <th style="padding: 12px; border: 1px solid #334155;">SC / ST Cutoff</th>
+    <tr style="background-color: #f1f5f9; color: #0f172a; text-align: left; border-bottom: 2px solid #cbd5e1;">
+      <th style="padding: 12px; border: 1px solid #cbd5e1; font-weight: 800;">Post / Examination</th>
+      <th style="padding: 12px; border: 1px solid #cbd5e1; font-weight: 800;">Duration</th>
+      <th style="padding: 12px; border: 1px solid #cbd5e1; font-weight: 800;">Required Depressions</th>
+      <th style="padding: 12px; border: 1px solid #cbd5e1; font-weight: 800;">Approx WPM</th>
+      <th style="padding: 12px; border: 1px solid #cbd5e1; font-weight: 800;">UR Cutoff (Max Error)</th>
+      <th style="padding: 12px; border: 1px solid #cbd5e1; font-weight: 800;">OBC / EWS Cutoff</th>
+      <th style="padding: 12px; border: 1px solid #cbd5e1; font-weight: 800;">SC / ST Cutoff</th>
     </tr>
   </thead>
   <tbody>

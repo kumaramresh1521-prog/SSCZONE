@@ -264,8 +264,8 @@ export default function DashboardPage() {
                       <span>VIP Member</span>
                     </span>
                   ) : (
-                    <span className="inline-flex items-center gap-1 rounded-full border border-amber-300 bg-amber-50 px-2.5 py-0.5 text-[11px] font-bold text-amber-800">
-                      <span>Free Aspirant</span>
+                    <span className="inline-flex items-center gap-1 rounded-full border border-blue-200 bg-blue-50 px-2.5 py-0.5 text-[11px] font-bold text-blue-700">
+                      <span>SSC Aspirant</span>
                     </span>
                   )}
 
@@ -865,16 +865,15 @@ export default function DashboardPage() {
               )}
             </div>
 
-            {/* 2. MEMBERSHIP & VIP UPGRADE CARD */}
-            <div className="rounded-3xl border border-slate-200/90 bg-white p-6 shadow-xs text-left space-y-4">
-              <div className="flex items-center justify-between">
-                <h3 className="text-xs font-black uppercase tracking-wider text-slate-400">
-                  Plan & Subscription
-                </h3>
-                <ShieldCheck className="h-4 w-4 text-blue-600" />
-              </div>
-
-              {subscription ? (
+            {/* 2. MEMBERSHIP CARD (Visible only if an active subscription exists; upgrade CTA paused until official launch) */}
+            {subscription && (
+              <div className="rounded-3xl border border-slate-200/90 bg-white p-6 shadow-xs text-left space-y-4">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-xs font-black uppercase tracking-wider text-slate-400">
+                    Plan & Subscription
+                  </h3>
+                  <ShieldCheck className="h-4 w-4 text-blue-600" />
+                </div>
                 <div className="space-y-3">
                   <div className="flex items-center gap-2 text-emerald-600 font-extrabold text-sm">
                     <CheckCircle2 className="h-4 w-4" />
@@ -894,23 +893,8 @@ export default function DashboardPage() {
                     </p>
                   </div>
                 </div>
-              ) : (
-                <div className="space-y-3">
-                  <div>
-                    <p className="text-sm font-extrabold text-slate-900">Unlock All 500+ Mocks</p>
-                    <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                      Upgrade to SSC Pass VIP for full CBT mocks, detailed bilingual solutions, and unlimited bookmark collections.
-                    </p>
-                  </div>
-                  <Link
-                    href="/pricing"
-                    className="block w-full text-center rounded-xl bg-blue-600 hover:bg-blue-700 py-2.5 text-xs font-bold text-white shadow-xs transition-colors cursor-pointer"
-                  >
-                    View VIP Plans &rarr;
-                  </Link>
-                </div>
-              )}
-            </div>
+              </div>
+            )}
 
             {/* 3. ASPIRANT TOOLKIT SHORTCUTS */}
             <div className="rounded-3xl border border-slate-200/90 bg-white p-6 shadow-xs text-left space-y-4">

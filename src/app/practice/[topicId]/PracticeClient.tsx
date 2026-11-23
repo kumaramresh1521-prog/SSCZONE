@@ -123,6 +123,200 @@ export function getQuestionExamCategory(examTag?: string | null): string {
   return "Other";
 }
 
+interface SolutionBlock {
+  type: "code" | "step" | "numbered" | "header" | "image" | "text";
+  content: string;
+  badge?: string;
+}
+
+function parseStructuredSolution(rawText?: string | null): SolutionBlock[] {
+  if (!rawText) return [];
+
+  // Normalize line endings
+  const normalized = rawText
+    .replace(/\r\n/g, "\n")
+    .replace(/\r/g, "\n")
+    .replace(/<br\s*\/?>/gi, "\n");
+
+  const blocks: SolutionBlock[] = [];
+
+  // Regex to extract code fences: ```lang\n...``` or ```...```
+  const codeRegex = /```(?:[a-zA-Z0-9_-]*\n)?([\s\S]*?)```/g;
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = codeRegex.exec(normalized)) !== null) {
+    // Process text before this code block
+    const textBefore = normalized.substring(lastIndex, match.index);
+    if (textBefore.trim()) {
+      parseTextIntoBlocks(textBefore, blocks);
+    }
+
+    const codeContent = match[1].trimEnd();
+    if (codeContent) {
+      blocks.push({
+        type: "code",
+        content: codeContent,
+      });
+    }
+
+    lastIndex = match.index + match[0].length;
+  }
+
+  // Process remaining text after the last code block
+  const remaining = normalized.substring(lastIndex);
+  if (remaining.trim()) {
+    parseTextIntoBlocks(remaining, blocks);
+  }
+
+  return blocks;
+}
+
+function parseTextIntoBlocks(text: string, blocks: SolutionBlock[]) {
+  // Normalize markdown image syntax so images are on separate lines
+  const processed = text
+    .replace(/(\[Image:\s*https?:\/\/[^\s\]]+\])/gi, "\n$1\n")
+    .replace(/(!\[.*?\]\(https?:\/\/[^\s)]+\))/gi, "\n$1\n");
+
+  const rawLines = processed.split("\n");
+
+  for (const rawLine of rawLines) {
+    const line = rawLine.trim();
+    if (!line) continue;
+
+    // Skip markdown horizontal rules (--- or ***)
+    if (/^[-*_]{3,}$/.test(line)) continue;
+
+    // Check Image
+    const imgMatch =
+      line.match(/\[Image:\s*(https?:\/\/[^\s\]]+)\]/i) ||
+      line.match(/!\[(.*?)\]\((https?:\/\/[^\s)]+)\)/i);
+    if (imgMatch) {
+      const url = imgMatch[1]?.startsWith("http") ? imgMatch[1] : imgMatch[2];
+      blocks.push({ type: "image", content: url });
+      continue;
+    }
+
+    // Check Headings / Logic tags e.g. "**Pattern:**", "### Pattern", "- **Pattern:**"
+    const isBulletHeader = /^[\-\*•]\s+\*\*([^*]+)\*\*[:\s]*(.*)$/.exec(line);
+    if (isBulletHeader) {
+      const headerTitle = isBulletHeader[1].trim();
+      const rest = isBulletHeader[2].trim();
+      blocks.push({
+        type: "header",
+        content: rest ? `**${headerTitle}:** ${rest}` : `**${headerTitle}:**`,
+      });
+      continue;
+    }
+
+    const isDirectHeader = /^(?:\*{1,2}|#{1,4}\s*)?(Pattern|Logic|Direct Coding|Rule|Step-by-step|Decoding|Note|Trick|Formula|Alternate Method)[:\s-]/i.test(line);
+    if (isDirectHeader && (line.startsWith("**") || line.startsWith("#") || line.endsWith(":"))) {
+      const cleaned = line.replace(/^[\s*#\-•]+/, "").trim();
+      blocks.push({ type: "header", content: cleaned.startsWith("**") ? cleaned : `**${cleaned}**` });
+      continue;
+    }
+
+    // Check Numbered Step: "1. ", "2. ", "Step 1:", "Case 1:", "(i) ", "(1) "
+    const numMatch = line.match(/^(?:[\-\*•]\s*)?(\d+|Step\s*\d+|Case\s*\d+|\([0-9a-zA-Z]+\))[\.\):\-]\s+(.*)$/i);
+    if (numMatch) {
+      const badge = numMatch[1].replace(/Step\s*/i, "S").replace(/Case\s*/i, "C").replace(/[\(\)]/g, "");
+      blocks.push({
+        type: "numbered",
+        badge: badge,
+        content: numMatch[2].trim(),
+      });
+      continue;
+    }
+
+    // Check Bullet point: "- ", "* ", "• "
+    const bulletMatch = line.match(/^[\-\*•]\s+(.*)$/);
+    if (bulletMatch) {
+      blocks.push({
+        type: "step",
+        content: bulletMatch[1].trim(),
+      });
+      continue;
+    }
+
+    // Regular line / sentence
+    blocks.push({
+      type: "text",
+      content: line,
+    });
+  }
+}
+
+function renderStructuredSolution(rawText?: string | null) {
+  if (!rawText) return null;
+  const blocks = parseStructuredSolution(rawText);
+  if (blocks.length === 0) return null;
+
+  return (
+    <div className="space-y-2 text-xs sm:text-sm text-gray-800 leading-relaxed">
+      {blocks.map((block, idx) => {
+        if (block.type === "code") {
+          return (
+            <div
+              key={idx}
+              className="my-3 rounded-xl border border-slate-700/80 bg-slate-900 p-3 sm:p-4 text-emerald-400 font-mono text-xs sm:text-[13px] shadow-sm overflow-x-auto leading-relaxed whitespace-pre select-text"
+            >
+              {block.content}
+            </div>
+          );
+        }
+
+        if (block.type === "header") {
+          return (
+            <div key={idx} className="pt-2 first:pt-0 pb-1 flex items-center gap-2 font-bold text-xs sm:text-sm text-blue-900">
+              <span className="w-1.5 h-3.5 bg-blue-600 rounded-full shrink-0"></span>
+              <MathText text={block.content} />
+            </div>
+          );
+        }
+
+        if (block.type === "numbered") {
+          return (
+            <div key={idx} className="flex items-start gap-2.5 py-0.5">
+              <span className="inline-flex items-center justify-center min-w-[20px] h-5 px-1.5 rounded-full bg-blue-100 text-blue-800 font-bold text-[11px] shrink-0 mt-0.5 border border-blue-200 shadow-2xs">
+                {block.badge}
+              </span>
+              <div className="flex-1 min-w-0">
+                <MathText text={block.content} />
+              </div>
+            </div>
+          );
+        }
+
+        if (block.type === "step") {
+          return (
+            <div key={idx} className="flex items-start gap-2.5 py-0.5">
+              <span className="text-blue-500 font-black text-sm shrink-0 leading-tight">•</span>
+              <div className="flex-1 min-w-0">
+                <MathText text={block.content} />
+              </div>
+            </div>
+          );
+        }
+
+        if (block.type === "image") {
+          return (
+            <div key={idx} className="my-2.5">
+              <InteractiveImage src={block.content} alt="Solution Diagram" />
+            </div>
+          );
+        }
+
+        // Regular text
+        return (
+          <div key={idx} className="py-0.5">
+            <MathText text={block.content} />
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 function formatSolutionSteps(rawText: string): string[] {
   if (!rawText) return [];
   
@@ -134,14 +328,6 @@ function formatSolutionSteps(rawText: string): string[] {
   // Keep image tags on their own line cleanly
   text = text.replace(/(\[Image:\s*https?:\/\/[^\s\]]+\])/gi, "\n$1\n");
   text = text.replace(/(!\[.*?\]\(https?:\/\/[^\s)]+\))/gi, "\n$1\n");
-
-  // Smartly separate run-on sentences into vertical lines by math step triggers:
-  text = text
-    .replace(/(\.)\s+(?=[A-Z0-9]|For\s|When\s|Divisibility|Sum\s|Let\s|Hence|Therefore|Successive|Prime|Required|If\s|Then\s|Number\s|Formula|Short\s*Trick)/gi, "$1\n")
-    .replace(/\s*(?=\bFor\s+\d+:|\bFor\s+[a-zA-Z]+:)/gi, "\n")
-    .replace(/\s*(?=\bWhen\s+[a-zA-Z0-9\s=]+,)/gi, "\n")
-    .replace(/\s*(?=\b(?:∴|∵|Therefore|Hence|Thus|Total\s*=|Sum\s*=|Required\s*=|Ans:)\b)/gi, "\n")
-    .replace(/\s*(?=\bDivisibility\b)/gi, "\n");
 
   const lines = text
     .split("\n")
@@ -1845,16 +2031,16 @@ export default function PracticeClient({
                                   <span className="text-[11px] font-bold text-blue-600">Explanation</span>
                                 </div>
                                 <div className="space-y-1.5 pt-1">
-                                  {formatSolutionSteps(
+                                  {renderStructuredSolution(
                                     langMode === "hi" && (item.explanation_hi || trans?.explanation)
                                       ? (item.explanation_hi || trans?.explanation)
                                       : (item.explanation || "")
-                                  ).map((step, sIdx) => renderSolutionStep(step, sIdx))}
+                                  )}
 
                                   {langMode === "bilingual" && (item.explanation_hi || trans?.explanation) && (
                                     <div className="border-t border-indigo-100 pt-2.5 mt-2 bg-indigo-50/40 p-2.5 rounded-lg space-y-1">
                                       <span className="block text-[10px] font-black uppercase text-indigo-700">🇮🇳 हिंदी व्याख्या:</span>
-                                      {formatSolutionSteps(item.explanation_hi || trans?.explanation).map((step, sIdx) => renderSolutionStep(step, sIdx))}
+                                      {renderStructuredSolution(item.explanation_hi || trans?.explanation)}
                                     </div>
                                   )}
                                 </div>
@@ -2254,16 +2440,10 @@ export default function PracticeClient({
                                 {(() => {
                                   const trans = translationsCache[q.id];
                                   const rawHi = q.explanation_hi || trans?.explanation;
-                                  const stepsEn = formatSolutionSteps(q.explanation || "");
-                                  const stepsHi = rawHi ? formatSolutionSteps(rawHi) : [];
 
                                   if (langMode === "hi") {
-                                    if (stepsHi.length > 0) {
-                                      return (
-                                        <div className="space-y-2">
-                                          {stepsHi.map((step, idx) => renderSolutionStep(step, idx))}
-                                        </div>
-                                      );
+                                    if (rawHi) {
+                                      return renderStructuredSolution(rawHi);
                                     }
                                     return (
                                       <div className="space-y-3">
@@ -2271,8 +2451,8 @@ export default function PracticeClient({
                                           <RotateCcw className="h-3.5 w-3.5 animate-spin text-indigo-600" />
                                           <span>हिंदी व्याख्या तैयार हो रही है (Translating Hindi explanation...)...</span>
                                         </div>
-                                        <div className="space-y-2 opacity-80">
-                                          {stepsEn.map((step, idx) => renderSolutionStep(step, idx))}
+                                        <div className="opacity-80">
+                                          {renderStructuredSolution(q.explanation)}
                                         </div>
                                       </div>
                                     );
@@ -2281,15 +2461,13 @@ export default function PracticeClient({
                                   if (langMode === "bilingual") {
                                     return (
                                       <div className="space-y-4">
-                                        <div className="space-y-2">
-                                          {stepsEn.map((step, idx) => renderSolutionStep(step, idx))}
-                                        </div>
+                                        {renderStructuredSolution(q.explanation)}
                                         <div className="border-t border-indigo-100 pt-3 bg-indigo-50/40 p-3.5 rounded-2xl border border-indigo-100/60 space-y-2">
                                           <span className="block text-[11px] font-black uppercase text-indigo-700 tracking-wider">
                                             🇮🇳 हिंदी व्याख्या (Hindi Steps):
                                           </span>
-                                          {stepsHi.length > 0 ? (
-                                            stepsHi.map((step, idx) => renderSolutionStep(step, idx))
+                                          {rawHi ? (
+                                            renderStructuredSolution(rawHi)
                                           ) : (
                                             <div className="inline-flex items-center gap-2 text-xs font-semibold text-indigo-700 animate-pulse">
                                               <RotateCcw className="h-3 w-3 animate-spin text-indigo-600" />
@@ -2301,11 +2479,7 @@ export default function PracticeClient({
                                     );
                                   }
 
-                                  return (
-                                    <div className="space-y-2">
-                                      {stepsEn.map((step, idx) => renderSolutionStep(step, idx))}
-                                    </div>
-                                  );
+                                  return renderStructuredSolution(q.explanation);
                                 })()}
 
                                 {/* Ad Banner Inside Step Mode Explanation Box */}

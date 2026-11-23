@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import QuestionText from "@/components/QuestionText";
 import MathText from "@/components/MathText";
+import StructuredSolution from "@/components/StructuredSolution";
 import AdBannerSlot from "@/components/AdBannerSlot";
 import { resolveAssetUrl } from "@/lib/utils";
 import { getPaperSlug } from "@/lib/paper-slugs";
@@ -285,10 +286,10 @@ export default function QuestionClientView({
 
               {currentExplanation && (
                 <div className="pt-2 border-t border-emerald-200/60 dark:border-emerald-800/60 text-slate-800 dark:text-slate-200 text-sm sm:text-base leading-relaxed">
-                  <div className="text-xs font-black uppercase tracking-wider text-slate-500 mb-1">
+                  <div className="text-xs font-black uppercase tracking-wider text-slate-500 mb-2">
                     Detailed Explanation:
                   </div>
-                  <MathText text={currentExplanation} />
+                  <StructuredSolution text={currentExplanation} />
                   {/* Inside Explanation Ad Banner */}
                   <AdBannerSlot slotKey="qb_solution" className="mt-4 pt-3 border-t border-emerald-200/50" />
                 </div>

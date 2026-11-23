@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import toast from "react-hot-toast";
 import MathText from "@/components/MathText";
+import StructuredSolution from "@/components/StructuredSolution";
 import ReportButton from "@/components/ReportButton";
 import { supabase } from "@/lib/supabase";
 import { getUserCollectedQuestions, removeCollectedQuestion } from "@/lib/user-attempts-store";
@@ -608,13 +609,8 @@ export default function BookmarksPage() {
                           Correct Answer: Option ({question.correct_answer})
                         </span>
                       </p>
-                      <div className="space-y-1.5 pt-1">
-                        {formatSolutionSteps(question.explanation).map((step, sIdx) => (
-                          <div key={sIdx} className="flex items-start gap-2 text-gray-800 leading-relaxed">
-                            <span className="text-blue-600 font-bold">•</span>
-                            <div className="flex-1"><MathText text={step} /></div>
-                          </div>
-                        ))}
+                      <div className="pt-2">
+                        <StructuredSolution text={question.explanation} />
                       </div>
                     </div>
                   )}

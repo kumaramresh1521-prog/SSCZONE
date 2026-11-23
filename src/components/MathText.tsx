@@ -73,6 +73,41 @@ function renderMarkdownTable(block: string): string {
     bodyRows = rows.slice(2);
   }
 
+  // Detect if this is an SSC Reasoning Matrix table (e.g. columns 0-4 or 5-9)
+  const isMatrixTable =
+    headerRow &&
+    headerRow.length >= 3 &&
+    headerRow.slice(1).every((h) => /^\d+$/.test(h.replace(/\*\*/g, "").trim()));
+
+  if (isMatrixTable) {
+    let html = '<span class="my-2.5 block max-w-full overflow-x-auto"><table class="inline-table border-collapse rounded-xl border border-blue-200 dark:border-blue-900 bg-white dark:bg-slate-900 text-center text-xs sm:text-sm shadow-2xs overflow-hidden">';
+    if (headerRow && headerRow.length > 0) {
+      html += '<thead class="border-b border-blue-200 dark:border-blue-900 bg-blue-50 dark:bg-blue-950/60 font-black text-blue-900 dark:text-blue-200"><tr>';
+      headerRow.forEach((h, hIdx) => {
+        const val = escapeHtml(h.replace(/\*\*/g, "").trim());
+        const bg = hIdx === 0 ? "bg-blue-100/70 dark:bg-blue-900/50 text-blue-800" : "bg-blue-50 dark:bg-blue-950/80 text-blue-900 dark:text-blue-200";
+        html += `<th class="border-r border-blue-200 dark:border-blue-900 w-9 sm:w-11 h-8 sm:h-9 text-center p-1 font-black ${bg} last:border-r-0">${val}</th>`;
+      });
+      html += '</tr></thead>';
+    }
+    html += '<tbody class="divide-y divide-blue-100 dark:divide-blue-950">';
+    bodyRows.forEach((r, idx) => {
+      const rowBg = idx % 2 === 0 ? "bg-white dark:bg-slate-900" : "bg-blue-50/20 dark:bg-slate-800/30";
+      html += `<tr class="${rowBg}">`;
+      r.forEach((c, cIdx) => {
+        const val = escapeHtml(c.replace(/\*\*/g, "").trim());
+        if (cIdx === 0) {
+          html += `<td class="border-r border-blue-200 dark:border-blue-900 w-9 sm:w-11 h-8 sm:h-9 text-center font-black bg-blue-50/80 dark:bg-blue-950/60 text-blue-900 dark:text-blue-200 p-1">${val}</td>`;
+        } else {
+          html += `<td class="border-r border-blue-100 dark:border-blue-900/60 w-9 sm:w-11 h-8 sm:h-9 text-center font-extrabold text-slate-800 dark:text-slate-100 p-1 last:border-r-0 tracking-wider">${val}</td>`;
+        }
+      });
+      html += '</tr>';
+    });
+    html += '</tbody></table></span>';
+    return html;
+  }
+
   let html = '<span class="my-3 block max-w-full overflow-x-auto"><table class="w-full max-w-2xl border-collapse rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-left text-xs sm:text-sm shadow-xs">';
   if (headerRow && headerRow.length > 0) {
     html += '<thead class="border-b border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 font-bold text-slate-900 dark:text-slate-100"><tr>';

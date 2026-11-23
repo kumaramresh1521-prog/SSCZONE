@@ -164,7 +164,7 @@ export default function QuestionText({
 
       return (
         <div className="w-full space-y-3.5 sm:space-y-4">
-          <div className="w-full rounded-xl sm:rounded-2xl border border-amber-200/90 bg-gradient-to-b from-amber-50/70 via-amber-50/40 to-amber-50/20 dark:bg-amber-950/20 dark:border-amber-900/50 p-2.5 sm:p-5 shadow-2xs">
+          <div className="w-full rounded-xl sm:rounded-2xl border border-amber-200/90 bg-gradient-to-b from-amber-50/70 via-amber-50/40 to-amber-50/20 dark:bg-amber-950/20 dark:border-amber-900/50 p-2 sm:p-4.5 shadow-2xs">
             <div className="flex items-center justify-between border-b border-amber-200/60 pb-2 mb-2.5 text-amber-900 dark:text-amber-300">
               <div className="flex items-center gap-1.5 text-xs font-black uppercase tracking-wider">
                 <span>📖</span>

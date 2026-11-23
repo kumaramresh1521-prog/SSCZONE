@@ -1294,61 +1294,113 @@ export default function PracticeClient({
                 {/* Filter Controls: Exam Target + Type Filter + Jump/Search Bar (Only when questions exist) */}
                 {questions.length > 0 && (
                   <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
-                    {/* Dynamic Exam Target Filter Selector */}
+                    {/* Dynamic Exam Target Filter Selector (Compact Dropdown Alternative) */}
                     {availableExams.length > 0 && (
-                      <div className="flex items-center gap-0.5 rounded-xl bg-slate-100 p-0.5 sm:p-1 border border-slate-200 text-xs overflow-x-auto max-w-full [&::-webkit-scrollbar]:hidden">
+                      <div className="flex items-center gap-1">
                         <button
+                          type="button"
                           onClick={() => handleExamSwitch("All")}
-                          className={`px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer whitespace-nowrap ${
+                          className={`px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-black rounded-xl border transition-all cursor-pointer whitespace-nowrap shadow-2xs ${
                             activeExamFilter === "All"
-                              ? "bg-white text-blue-700 shadow-xs border border-gray-200 font-black"
-                              : "text-gray-600 hover:text-gray-900"
+                              ? "bg-blue-600 text-white border-blue-600 shadow-xs"
+                              : "bg-white text-slate-700 border-slate-200 hover:bg-slate-50 hover:border-slate-300"
                           }`}
                         >
                           🌐 All SSC ({examCounts.all})
                         </button>
-                        {availableExams.map((ex) => (
-                          <button
-                            key={ex.id}
-                            onClick={() => handleExamSwitch(ex.id)}
-                            className={`px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer whitespace-nowrap ${
-                              activeExamFilter === ex.id
-                                ? ex.activeClass
-                                : "text-gray-600 hover:text-gray-900"
+
+                        <div className="relative flex items-center">
+                          <select
+                            value={activeExamFilter}
+                            onChange={(e) => handleExamSwitch(e.target.value)}
+                            aria-label="Filter by SSC Exam"
+                            className={`appearance-none pl-2.5 pr-7 py-1 text-[11px] sm:text-xs font-black rounded-xl border transition-all cursor-pointer shadow-2xs focus:outline-none focus:ring-2 focus:ring-blue-500/20 ${
+                              activeExamFilter !== "All"
+                                ? "bg-blue-600 text-white border-blue-600 shadow-xs font-black"
+                                : "bg-white text-slate-700 border-slate-200 hover:bg-slate-50 hover:border-slate-300 font-extrabold"
                             }`}
                           >
-                            {ex.icon} {ex.label} ({ex.count})
+                            <option value="All" className="bg-white text-slate-900 font-bold">
+                              🎯 Filter by Exam ({availableExams.length})
+                            </option>
+                            {availableExams.map((ex) => (
+                              <option key={ex.id} value={ex.id} className="bg-white text-slate-900 font-bold">
+                                {ex.icon} {ex.label} ({ex.count})
+                              </option>
+                            ))}
+                          </select>
+                          <ChevronDown
+                            className={`pointer-events-none absolute right-2 h-3.5 w-3.5 transition-colors ${
+                              activeExamFilter !== "All" ? "text-white" : "text-slate-400"
+                            }`}
+                          />
+                        </div>
+
+                        {activeExamFilter !== "All" && (
+                          <button
+                            type="button"
+                            onClick={() => handleExamSwitch("All")}
+                            title="Clear Exam Filter (Show All SSC)"
+                            className="px-1.5 py-1 text-[10px] sm:text-xs font-black rounded-lg bg-slate-100 hover:bg-rose-50 text-slate-500 hover:text-rose-600 border border-slate-200 transition-colors cursor-pointer"
+                          >
+                            ✕
                           </button>
-                        ))}
+                        )}
                       </div>
                     )}
 
                     {/* Question Type Filter Selector (Type-I, Type-II, Type-III, etc.) */}
                     {availableTypes.length > 0 && (
-                      <div className="flex items-center gap-0.5 rounded-xl bg-purple-50/80 p-0.5 sm:p-1 border border-purple-200 text-xs overflow-x-auto max-w-full [&::-webkit-scrollbar]:hidden">
+                      <div className="flex items-center gap-1">
                         <button
+                          type="button"
                           onClick={() => handleTypeSwitch("All")}
-                          className={`px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer whitespace-nowrap ${
+                          className={`px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-black rounded-xl border transition-all cursor-pointer whitespace-nowrap shadow-2xs ${
                             activeTypeFilter === "All"
-                              ? "bg-white text-purple-700 shadow-xs border border-purple-200 font-black"
-                              : "text-purple-700/80 hover:text-purple-900"
+                              ? "bg-purple-600 text-white border-purple-600 shadow-xs"
+                              : "bg-white text-purple-800 border-purple-200 hover:bg-purple-50"
                           }`}
                         >
                           📑 All Types ({questions.length})
                         </button>
-                        {availableTypes.map((t) => (
-                          <button
-                            key={t}
-                            onClick={() => handleTypeSwitch(t)}
-                            className={`px-2 sm:px-2.5 py-1 text-[11px] sm:text-xs font-extrabold rounded-lg transition-all cursor-pointer whitespace-nowrap ${
-                              activeTypeFilter === t
-                                ? "bg-purple-600 text-white shadow-xs font-black"
-                                : "text-purple-700/80 hover:text-purple-900"
+
+                        <div className="relative flex items-center">
+                          <select
+                            value={activeTypeFilter}
+                            onChange={(e) => handleTypeSwitch(e.target.value)}
+                            aria-label="Filter by Question Type"
+                            className={`appearance-none pl-2.5 pr-7 py-1 text-[11px] sm:text-xs font-black rounded-xl border transition-all cursor-pointer shadow-2xs focus:outline-none focus:ring-2 focus:ring-purple-500/20 ${
+                              activeTypeFilter !== "All"
+                                ? "bg-purple-600 text-white border-purple-600 shadow-xs font-black"
+                                : "bg-white text-purple-800 border-purple-200 hover:bg-purple-50 font-extrabold"
                             }`}
                           >
-                            🏷️ {t} ({typeCounts[t] || 0})
+                            <option value="All" className="bg-white text-slate-900 font-bold">
+                              🏷️ Type Filter ({availableTypes.length})
+                            </option>
+                            {availableTypes.map((t) => (
+                              <option key={t} value={t} className="bg-white text-slate-900 font-bold">
+                                🏷️ {t} ({typeCounts[t] || 0})
+                              </option>
+                            ))}
+                          </select>
+                          <ChevronDown
+                            className={`pointer-events-none absolute right-2 h-3.5 w-3.5 transition-colors ${
+                              activeTypeFilter !== "All" ? "text-white" : "text-purple-400"
+                            }`}
+                          />
+                        </div>
+
+                        {activeTypeFilter !== "All" && (
+                          <button
+                            type="button"
+                            onClick={() => handleTypeSwitch("All")}
+                            title="Clear Type Filter"
+                            className="px-1.5 py-1 text-[10px] sm:text-xs font-black rounded-lg bg-purple-50 hover:bg-rose-50 text-purple-600 hover:text-rose-600 border border-purple-200 transition-colors cursor-pointer"
+                          >
+                            ✕
                           </button>
-                        ))}
+                        )}
                       </div>
                     )}
 

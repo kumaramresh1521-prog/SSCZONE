@@ -16,6 +16,12 @@ import {
   Sparkles,
   Tag,
   BookOpen,
+  AlertTriangle,
+  Eye,
+  Code,
+  ArrowLeftRight,
+  RotateCcw,
+  Check,
 } from "lucide-react";
 import { resolveAssetUrl } from "@/lib/utils";
 import MathText from "@/components/MathText";
@@ -153,21 +159,26 @@ export default function UniversalReviewPage() {
   const [notes, setNotes]                     = useState<Record<number, string>>({});
   const [papersMap, setPapersMap]             = useState<Record<number, { title: string; year: number }>>({});
   const [msg, setMsg]                         = useState<{ text: string; ok: boolean } | null>(null);
+  const [cardModes, setCardModes]             = useState<Record<number, "workbench" | "compare">>({});
+  const [rawCodeModes, setRawCodeModes]       = useState<Record<number, boolean>>({});
+
+  function insertMathInReview(rowId: number, snippet: string) {
+    setEditValues((prev) => ({
+      ...prev,
+      [rowId]: (prev[rowId] ? prev[rowId] + " " : "") + snippet,
+    }));
+  }
 
   const PAGE_SIZE = 10;
 
   // ── Fetch rows ────────────────────────────────────────────────────────────
   const fetchRows = useCallback(async () => {
     setLoading(true);
-    const { data, error } = await supabase
-      .from("math_review")
-      .select("*")
-      .order("id", { ascending: false });
-
-    if (error) {
-      setMsg({ text: `DB Error: ${error.message}`, ok: false });
-    } else {
-      const rows = data ?? [];
+    try {
+      const res = await fetch("/api/admin/math-review");
+      if (!res.ok) throw new Error("Failed to fetch review items");
+      const json = await res.json();
+      const rows: ReviewRow[] = json.rows ?? [];
       setAllRows(rows);
 
       const edits: Record<number, string> = {};
@@ -179,24 +190,14 @@ export default function UniversalReviewPage() {
       setEditValues(edits);
       setNotes(noteMap);
 
-      if (rows.length > 0) {
-        const paperIds = Array.from(new Set(rows.map((r) => r.paper_id)));
-        supabase
-          .from("previous_papers")
-          .select("id, title, year")
-          .in("id", paperIds)
-          .then(({ data: pData }) => {
-            if (pData) {
-              const pMap: Record<number, { title: string; year: number }> = {};
-              pData.forEach((p) => {
-                pMap[p.id] = { title: p.title, year: p.year };
-              });
-              setPapersMap((prev) => ({ ...prev, ...pMap }));
-            }
-          });
+      if (json.papersMap) {
+        setPapersMap((prev) => ({ ...prev, ...json.papersMap }));
       }
+    } catch (err: any) {
+      setMsg({ text: `Failed to load review items: ${err.message}`, ok: false });
+    } finally {
+      setLoading(false);
     }
-    setLoading(false);
   }, []);
 
   useEffect(() => {
@@ -733,103 +734,357 @@ export default function UniversalReviewPage() {
               </div>
             </div>
 
-            {/* Three Column Review Workbench: Original | Editable Fix | Live Student Preview */}
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem", marginBottom: "0.85rem" }}>
-              {/* Column 1: Original in DB */}
-              <div>
-                <div style={{ fontSize: "0.7rem", fontWeight: 800, color: "rgba(226,232,240,0.45)", textTransform: "uppercase", marginBottom: "0.4rem", display: "flex", alignItems: "center", gap: "0.3rem" }}>
-                  <span>Original DB Content</span>
-                </div>
-                <div style={{
-                  background: "rgba(255,255,255,0.03)",
-                  border: "1px solid rgba(255,255,255,0.08)",
-                  borderRadius: 10,
-                  padding: "0.7rem 0.85rem",
-                  fontSize: "0.82rem",
-                  color: "rgba(226,232,240,0.75)",
-                  minHeight: 180,
-                  maxHeight: 260,
-                  overflowY: "auto",
-                  whiteSpace: "pre-wrap",
-                  wordBreak: "break-word",
-                }}>
-                  <div>{row.original_text || <em style={{ color: "rgba(226,232,240,0.3)" }}>empty</em>}</div>
-
-                  {/* Image Crop */}
-                  {(() => {
-                    const img = extractImageUrl(row.original_text, row.source_image_url);
-                    if (!img) return null;
-                    const fullUrl = resolveAssetUrl(img);
-                    return (
-                      <div style={{ marginTop: "0.6rem", borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: "0.5rem" }}>
-                        <div style={{ fontSize: "0.68rem", color: "#93c5fd", marginBottom: "0.25rem", display: "flex", alignItems: "center", gap: "0.25rem" }}>
-                          <span>Image / Crop:</span>
-                          <a href={fullUrl} target="_blank" rel="noreferrer" style={{ color: "#60a5fa", textDecoration: "underline", display: "inline-flex", alignItems: "center", gap: 2 }}>
-                            Open Full <ExternalLink size={10} />
-                          </a>
-                        </div>
-                        <img
-                          src={fullUrl}
-                          alt="Question Crop"
-                          style={{ maxHeight: 120, maxWidth: "100%", borderRadius: 6, background: "#ffffff", padding: "4px", border: "1px solid rgba(255,255,255,0.2)" }}
-                        />
-                      </div>
-                    );
-                  })()}
-                </div>
-              </div>
-
-              {/* Column 2: Proposed Fix (Editable Textarea) */}
-              <div>
-                <div style={{ fontSize: "0.7rem", fontWeight: 800, color: "#60a5fa", textTransform: "uppercase", marginBottom: "0.4rem", display: "flex", alignItems: "center", gap: "0.3rem" }}>
-                  <span>Proposed Fix (Editable)</span>
-                </div>
-                <textarea
-                  value={textVal}
-                  onChange={(e) => setEditValues((prev) => ({ ...prev, [row.id]: e.target.value }))}
-                  disabled={isSaving || row.status !== "pending"}
-                  rows={9}
+            {/* Card View Mode Switcher */}
+            <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: "0.6rem" }}>
+              <div style={{
+                display: "inline-flex",
+                background: "rgba(0,0,0,0.3)",
+                border: "1px solid rgba(255,255,255,0.08)",
+                borderRadius: 8,
+                padding: "2px",
+                gap: "2px"
+              }}>
+                <button
+                  type="button"
+                  onClick={() => setCardModes((prev) => ({ ...prev, [row.id]: "workbench" }))}
                   style={{
-                    width: "100%",
-                    padding: "0.65rem 0.85rem",
-                    background: "rgba(255,255,255,0.05)",
-                    border: "1px solid rgba(255,255,255,0.14)",
-                    borderRadius: 10,
-                    color: "#fff",
-                    fontSize: "0.82rem",
-                    fontFamily: "monospace",
-                    resize: "vertical",
-                    outline: "none",
-                    minHeight: 180,
-                    opacity: row.status !== "pending" ? 0.6 : 1,
+                    padding: "3px 10px",
+                    borderRadius: 6,
+                    fontSize: "0.72rem",
+                    fontWeight: (!cardModes[row.id] || cardModes[row.id] === "workbench") ? 800 : 600,
+                    color: (!cardModes[row.id] || cardModes[row.id] === "workbench") ? "#fff" : "rgba(226,232,240,0.5)",
+                    background: (!cardModes[row.id] || cardModes[row.id] === "workbench") ? "rgba(59,130,246,0.3)" : "transparent",
+                    border: "none",
+                    cursor: "pointer",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "4px"
                   }}
-                  placeholder="Enter replacement LaTeX / Markdown table / text here"
-                />
-              </div>
-
-              {/* Column 3: Live Student Preview */}
-              <div>
-                <div style={{ fontSize: "0.7rem", fontWeight: 800, color: "#34d399", textTransform: "uppercase", marginBottom: "0.4rem", display: "flex", alignItems: "center", gap: "0.3rem" }}>
-                  <Sparkles size={11} />
-                  <span>Student Live Preview (Exam View)</span>
-                </div>
-                <div style={{
-                  background: "#ffffff",
-                  borderRadius: 10,
-                  padding: "0.85rem 1rem",
-                  color: "#0f172a",
-                  fontSize: "0.92rem",
-                  minHeight: 180,
-                  maxHeight: 260,
-                  overflowY: "auto",
-                  lineHeight: 1.5,
-                  border: "1px solid rgba(255,255,255,0.2)",
-                  boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
-                }}>
-                  {textVal ? <MathText text={textVal} /> : <span style={{ color: "#94a3b8" }}>— empty —</span>}
-                </div>
+                >
+                  <Layers size={11} /> 3-Column Workbench
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setCardModes((prev) => ({ ...prev, [row.id]: "compare" }))}
+                  style={{
+                    padding: "3px 10px",
+                    borderRadius: 6,
+                    fontSize: "0.72rem",
+                    fontWeight: cardModes[row.id] === "compare" ? 800 : 600,
+                    color: cardModes[row.id] === "compare" ? "#fff" : "rgba(226,232,240,0.5)",
+                    background: cardModes[row.id] === "compare" ? "rgba(16,185,129,0.3)" : "transparent",
+                    border: "none",
+                    cursor: "pointer",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "4px"
+                  }}
+                >
+                  <ArrowLeftRight size={11} /> ⚖️ Compare Before vs After
+                </button>
               </div>
             </div>
+
+            {/* ── MODE 1: 3-Column Review Workbench (Original Error | Editable Fix | Live Student Preview) ── */}
+            {(!cardModes[row.id] || cardModes[row.id] === "workbench") && (
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem", marginBottom: "0.85rem" }}>
+                {/* Column 1: Error Preview (Original in DB) */}
+                <div>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.4rem" }}>
+                    <div style={{ fontSize: "0.7rem", fontWeight: 800, color: "#f87171", textTransform: "uppercase", display: "flex", alignItems: "center", gap: "0.3rem" }}>
+                      <AlertTriangle size={11} />
+                      <span>Error Preview (Original)</span>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => setRawCodeModes((prev) => ({ ...prev, [row.id]: !prev[row.id] }))}
+                      style={{
+                        background: "transparent",
+                        border: "1px solid rgba(255,255,255,0.1)",
+                        borderRadius: 4,
+                        padding: "1px 6px",
+                        fontSize: "0.66rem",
+                        color: "rgba(226,232,240,0.6)",
+                        cursor: "pointer"
+                      }}
+                    >
+                      {rawCodeModes[row.id] ? "Rendered" : "Raw Code"}
+                    </button>
+                  </div>
+
+                  <div style={{
+                    background: "rgba(239, 68, 68, 0.05)",
+                    border: "1px solid rgba(239, 68, 68, 0.25)",
+                    borderRadius: 10,
+                    padding: "0.75rem 0.9rem",
+                    fontSize: "0.84rem",
+                    color: "rgba(226,232,240,0.85)",
+                    minHeight: 200,
+                    maxHeight: 280,
+                    overflowY: "auto",
+                    whiteSpace: rawCodeModes[row.id] ? "pre-wrap" : "normal",
+                    wordBreak: "break-word",
+                  }}>
+                    {rawCodeModes[row.id] ? (
+                      <code style={{ fontFamily: "monospace", fontSize: "0.78rem" }}>
+                        {row.original_text || <em style={{ color: "rgba(226,232,240,0.3)" }}>empty</em>}
+                      </code>
+                    ) : (
+                      <div>
+                        {row.original_text ? (
+                          <MathText text={row.original_text} />
+                        ) : (
+                          <em style={{ color: "rgba(226,232,240,0.3)" }}>empty</em>
+                        )}
+                      </div>
+                    )}
+
+                    {/* Image Crop if present */}
+                    {(() => {
+                      const img = extractImageUrl(row.original_text, row.source_image_url);
+                      if (!img) return null;
+                      const fullUrl = resolveAssetUrl(img);
+                      return (
+                        <div style={{ marginTop: "0.6rem", borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: "0.5rem" }}>
+                          <div style={{ fontSize: "0.68rem", color: "#f87171", marginBottom: "0.25rem", display: "flex", alignItems: "center", gap: "0.25rem" }}>
+                            <span>Original Figure:</span>
+                            <a href={fullUrl} target="_blank" rel="noreferrer" style={{ color: "#60a5fa", textDecoration: "underline", display: "inline-flex", alignItems: "center", gap: 2 }}>
+                              Open Full <ExternalLink size={10} />
+                            </a>
+                          </div>
+                          <img
+                            src={fullUrl}
+                            alt="Question Crop"
+                            style={{ maxHeight: 110, maxWidth: "100%", borderRadius: 6, background: "#ffffff", padding: "4px", border: "1px solid rgba(255,255,255,0.2)" }}
+                          />
+                        </div>
+                      );
+                    })()}
+                  </div>
+                </div>
+
+                {/* Column 2: Proposed Fix (Editable Textarea with Math Toolbar) */}
+                <div>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.4rem" }}>
+                    <div style={{ fontSize: "0.7rem", fontWeight: 800, color: "#60a5fa", textTransform: "uppercase", display: "flex", alignItems: "center", gap: "0.3rem" }}>
+                      <span>Proposed Fix (Editable)</span>
+                    </div>
+                    {textVal !== row.original_text && (
+                      <button
+                        type="button"
+                        onClick={() => setEditValues((prev) => ({ ...prev, [row.id]: row.original_text }))}
+                        style={{
+                          background: "transparent",
+                          border: "none",
+                          color: "#94a3b8",
+                          fontSize: "0.66rem",
+                          cursor: "pointer",
+                          display: "flex",
+                          alignItems: "center",
+                          gap: 2
+                        }}
+                        title="Reset to Original DB text"
+                      >
+                        <RotateCcw size={10} /> Reset
+                      </button>
+                    )}
+                  </div>
+
+                  {/* Math Toolbar Buttons */}
+                  <div style={{
+                    display: "flex",
+                    gap: "4px",
+                    flexWrap: "wrap",
+                    marginBottom: "0.35rem",
+                    padding: "3px 5px",
+                    background: "rgba(0,0,0,0.25)",
+                    borderRadius: 6,
+                    border: "1px solid rgba(255,255,255,0.06)"
+                  }}>
+                    {[
+                      { label: "Fraction", code: "\\frac{a}{b}" },
+                      { label: "√", code: "\\sqrt{x}" },
+                      { label: "x²", code: "x^{2}" },
+                      { label: "△", code: "\\triangle" },
+                      { label: "∠", code: "\\angle" },
+                      { label: "°", code: "^{\\circ}" },
+                      { label: "×", code: "\\times" },
+                      { label: "π", code: "\\pi" },
+                      { label: "θ", code: "\\theta" },
+                    ].map((btn) => (
+                      <button
+                        key={btn.label}
+                        type="button"
+                        disabled={row.status !== "pending"}
+                        onClick={() => insertMathInReview(row.id, btn.code)}
+                        style={{
+                          padding: "2px 6px",
+                          fontSize: "0.68rem",
+                          fontWeight: 700,
+                          background: "rgba(59,130,246,0.15)",
+                          border: "1px solid rgba(96,165,250,0.3)",
+                          color: "#93c5fd",
+                          borderRadius: 4,
+                          cursor: "pointer"
+                        }}
+                      >
+                        {btn.label}
+                      </button>
+                    ))}
+                  </div>
+
+                  <textarea
+                    value={textVal}
+                    onChange={(e) => setEditValues((prev) => ({ ...prev, [row.id]: e.target.value }))}
+                    disabled={isSaving || row.status !== "pending"}
+                    rows={8}
+                    style={{
+                      width: "100%",
+                      padding: "0.65rem 0.85rem",
+                      background: "rgba(255,255,255,0.05)",
+                      border: "1px solid rgba(255,255,255,0.14)",
+                      borderRadius: 10,
+                      color: "#fff",
+                      fontSize: "0.82rem",
+                      fontFamily: "monospace",
+                      resize: "vertical",
+                      outline: "none",
+                      minHeight: 160,
+                      opacity: row.status !== "pending" ? 0.6 : 1,
+                    }}
+                    placeholder="Enter replacement LaTeX / Markdown table / text here"
+                  />
+                </div>
+
+                {/* Column 3: Live Student Preview (After Changes Preview) */}
+                <div>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.4rem" }}>
+                    <div style={{ fontSize: "0.7rem", fontWeight: 800, color: "#34d399", textTransform: "uppercase", display: "flex", alignItems: "center", gap: "0.3rem" }}>
+                      <Sparkles size={11} />
+                      <span>After Changes Preview (Live Exam View)</span>
+                    </div>
+                    <span style={{
+                      fontSize: "0.65rem",
+                      fontWeight: 800,
+                      padding: "1px 6px",
+                      borderRadius: 4,
+                      background: textVal !== row.original_text ? "rgba(16,185,129,0.2)" : "rgba(255,255,255,0.06)",
+                      color: textVal !== row.original_text ? "#6ee7b7" : "rgba(226,232,240,0.5)",
+                      border: `1px solid ${textVal !== row.original_text ? "rgba(52,211,153,0.3)" : "rgba(255,255,255,0.08)"}`
+                    }}>
+                      {textVal !== row.original_text ? "✨ Fix Applied" : "Unchanged"}
+                    </span>
+                  </div>
+
+                  <div style={{
+                    background: "#ffffff",
+                    borderRadius: 10,
+                    padding: "0.85rem 1rem",
+                    color: "#0f172a",
+                    fontSize: "0.92rem",
+                    minHeight: 200,
+                    maxHeight: 280,
+                    overflowY: "auto",
+                    lineHeight: 1.5,
+                    border: "2px solid rgba(52,211,153,0.35)",
+                    boxShadow: "0 2px 10px rgba(0,0,0,0.2)",
+                  }}>
+                    {textVal ? <MathText text={textVal} /> : <span style={{ color: "#94a3b8" }}>— empty —</span>}
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* ── MODE 2: Side-by-Side Before vs After Comparison ── */}
+            {cardModes[row.id] === "compare" && (
+              <div style={{ marginBottom: "0.85rem" }}>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem", marginBottom: "0.75rem" }}>
+                  {/* Left: Error Preview (Before) */}
+                  <div style={{
+                    background: "rgba(239, 68, 68, 0.06)",
+                    border: "1px solid rgba(239, 68, 68, 0.35)",
+                    borderRadius: 10,
+                    padding: "0.85rem 1rem",
+                  }}>
+                    <div style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      borderBottom: "1px solid rgba(239,68,68,0.2)",
+                      paddingBottom: "0.4rem",
+                      marginBottom: "0.6rem"
+                    }}>
+                      <span style={{ fontSize: "0.75rem", fontWeight: 800, color: "#f87171", display: "flex", alignItems: "center", gap: "0.3rem" }}>
+                        🔴 BEFORE (Original Error State)
+                      </span>
+                      <span style={{ fontSize: "0.68rem", color: "rgba(226,232,240,0.5)" }}>In Database</span>
+                    </div>
+                    <div style={{ minHeight: 140, maxHeight: 220, overflowY: "auto", color: "rgba(226,232,240,0.9)", fontSize: "0.88rem" }}>
+                      <MathText text={row.original_text || "— empty —"} />
+                    </div>
+                  </div>
+
+                  {/* Right: After Changes Preview (After) */}
+                  <div style={{
+                    background: "#ffffff",
+                    border: "2px solid rgba(52,211,153,0.5)",
+                    borderRadius: 10,
+                    padding: "0.85rem 1rem",
+                    color: "#0f172a",
+                    boxShadow: "0 4px 12px rgba(0,0,0,0.25)"
+                  }}>
+                    <div style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      borderBottom: "1px solid #e2e8f0",
+                      paddingBottom: "0.4rem",
+                      marginBottom: "0.6rem"
+                    }}>
+                      <span style={{ fontSize: "0.75rem", fontWeight: 900, color: "#059669", display: "flex", alignItems: "center", gap: "0.3rem" }}>
+                        🟢 AFTER (Student Live Exam Preview)
+                      </span>
+                      <span style={{ fontSize: "0.68rem", fontWeight: 700, color: "#10b981", background: "#ecfdf5", padding: "1px 6px", borderRadius: 4 }}>
+                        Live Rendered
+                      </span>
+                    </div>
+                    <div style={{ minHeight: 140, maxHeight: 220, overflowY: "auto", fontSize: "0.92rem", lineHeight: 1.5 }}>
+                      <MathText text={textVal || "— empty —"} />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Inline Quick Editor for Compare Mode */}
+                <div style={{
+                  background: "rgba(0,0,0,0.3)",
+                  border: "1px solid rgba(255,255,255,0.08)",
+                  borderRadius: 10,
+                  padding: "0.65rem 0.85rem"
+                }}>
+                  <div style={{ fontSize: "0.7rem", fontWeight: 800, color: "#60a5fa", marginBottom: "0.3rem" }}>
+                    Quick Adjust Replacement Text:
+                  </div>
+                  <textarea
+                    value={textVal}
+                    onChange={(e) => setEditValues((prev) => ({ ...prev, [row.id]: e.target.value }))}
+                    disabled={isSaving || row.status !== "pending"}
+                    rows={3}
+                    style={{
+                      width: "100%",
+                      padding: "0.5rem 0.75rem",
+                      background: "rgba(255,255,255,0.05)",
+                      border: "1px solid rgba(255,255,255,0.14)",
+                      borderRadius: 8,
+                      color: "#fff",
+                      fontSize: "0.82rem",
+                      fontFamily: "monospace",
+                      outline: "none",
+                    }}
+                    placeholder="Tweak LaTeX or text..."
+                  />
+                </div>
+              </div>
+            )}
 
             {/* Notes Field */}
             <div style={{ marginBottom: "0.85rem" }}>

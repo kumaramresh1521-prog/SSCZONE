@@ -15,6 +15,41 @@ const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey, {
 });
 
 /**
+ * GET /api/admin/math-review
+ * Retrieves all review questions across Mathematics, Reasoning, GK, and English
+ */
+export async function GET() {
+  try {
+    const { data: rows, error } = await supabaseAdmin
+      .from("math_review")
+      .select("*")
+      .order("id", { ascending: false });
+
+    if (error) {
+      return NextResponse.json({ error: error.message }, { status: 500 });
+    }
+
+    const paperIds = Array.from(new Set((rows || []).map((r) => r.paper_id).filter(Boolean)));
+    const papersMap: Record<number, { title: string; year: number }> = {};
+    if (paperIds.length > 0) {
+      const { data: pData } = await supabaseAdmin
+        .from("previous_papers")
+        .select("id, title, year")
+        .in("id", paperIds);
+      if (pData) {
+        pData.forEach((p) => {
+          papersMap[p.id] = { title: p.title, year: p.year };
+        });
+      }
+    }
+
+    return NextResponse.json({ rows: rows || [], papersMap });
+  } catch (err: any) {
+    return NextResponse.json({ error: err.message || "Failed to load review items" }, { status: 500 });
+  }
+}
+
+/**
  * PATCH /api/admin/math-review
  *
  * Body: {

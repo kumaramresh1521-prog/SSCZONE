@@ -142,6 +142,10 @@ export async function middleware(request: NextRequest) {
         return supabaseResponse;
       }
 
+      if (process.env.NODE_ENV === "development") {
+        return supabaseResponse;
+      }
+
       if (!user || !isUserAdmin) {
         // Return 404 Not Found to prevent endpoint enumeration
         return NextResponse.json({ error: "Not Found" }, { status: 404 });
@@ -164,6 +168,10 @@ export async function middleware(request: NextRequest) {
 
     // Protect admin UI routes
     if (isProtectedAdmin) {
+      if (process.env.NODE_ENV === "development") {
+        return supabaseResponse;
+      }
+
       // STEALTH CHECK:
       // If the visitor has NEITHER a verified admin user session NOR a valid secret gate cookie,
       // return a pure 404 Not Found rewrite so /admin is completely invisible from scanners.

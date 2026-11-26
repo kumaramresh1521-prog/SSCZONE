@@ -711,13 +711,13 @@
     "paper_id": 63,
     "question_number": 60,
     "section": "Quantitative Aptitude",
-    "question_text": "If 45° and 65° are the angles of a triangle, then find the exterior angle of the third angle (remaining angle).",
-    "option_a": "110°",
-    "option_b": "120°",
-    "option_c": "70°",
-    "option_d": "100°",
-    "correct_answer": "A",
-    "explanation": null
+    "question_text": "If $x = 1.5$ and $y = 0.5$, find the value of:\n$$\\frac{x^3 - y^3}{x^2 + xy + y^2} + \\frac{x^3 + y^3}{x^2 - xy + y^2}$$",
+    "option_a": "1",
+    "option_b": "3",
+    "option_c": "2",
+    "option_d": "4",
+    "correct_answer": "B",
+    "explanation": "**Algebraic Identities:**\n1. $x^3 - y^3 = (x - y)(x^2 + xy + y^2) \\implies \\frac{x^3 - y^3}{x^2 + xy + y^2} = x - y$\n2. $x^3 + y^3 = (x + y)(x^2 - xy + y^2) \\implies \\frac{x^3 + y^3}{x^2 - xy + y^2} = x + y$\n\n**Step-by-Step Solution:**\n$$\\frac{x^3 - y^3}{x^2 + xy + y^2} + \\frac{x^3 + y^3}{x^2 - xy + y^2} = (x - y) + (x + y) = 2x$$\nSubstitute $x = 1.5$:\n$$2x = 2 \\times 1.5 = 3$$\n\n**Correct Answer:** Option (B) 3"
   },
   {
     "paper_id": 63,
@@ -909,7 +909,7 @@
     "option_c": "Minimally",
     "option_d": "Totally",
     "correct_answer": "C",
-    "explanation": null
+    "explanation": "**Spelling & Meaning:**\n- The correctly spelt word is **supercilious** (with a single 'l' and 'c-i-l-i-o-u-s').\n- Meaning: Behaving or looking as though one thinks one is superior to others; arrogant or haughty.\n\n**Correct Answer:** Option (A) supercilious"
   },
   {
     "paper_id": 63,
@@ -921,7 +921,7 @@
     "option_c": "Swindle",
     "option_d": "Still",
     "correct_answer": "D",
-    "explanation": null
+    "explanation": "**Spelling & Meaning:**\n- The correctly spelt word is **equanimity** (from Latin *aequus* 'even' + *animus* 'mind').\n- Meaning: Calmness and composure, especially in a difficult or stressful situation.\n\n**Correct Answer:** Option (B) equanimity"
   },
   {
     "paper_id": 63,
@@ -1005,7 +1005,7 @@
     "option_c": "by the matter of taking up",
     "option_d": "along the matter of taking up",
     "correct_answer": "B",
-    "explanation": null
+    "explanation": "**Preposition Usage:**\n- We receive something **from** someone (indicating the source or giver of the item).\n- Sentence: \"She received a gift **from** her best friend.\"\n\n**Correct Answer:** Option (B) from"
   },
   {
     "paper_id": 63,

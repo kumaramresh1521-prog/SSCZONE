@@ -891,13 +891,13 @@
     "paper_id": 62,
     "question_number": 75,
     "section": "Quantitative Aptitude",
-    "question_text": "If the sum of three numbers is 18 and the sum of their squares is 36, then find the difference between the sum of their cubes and three times of their product.",
-    "option_a": "1449",
-    "option_b": "−1944",
-    "option_c": "−1494",
-    "option_d": "4149",
+    "question_text": "Evaluate: $$31^3 + 18^3 - 37^3 + 210$$\n\n$31^3 + 18^3 - 37^3 + 210$ का मान किसके बराबर है:",
+    "option_a": "-36810",
+    "option_b": "-14820",
+    "option_c": "-45670",
+    "option_d": "-23450",
     "correct_answer": "B",
-    "explanation": null
+    "explanation": "**Calculation:**\n- $31^3 = 29791$\n- $18^3 = 5832$\n- $37^3 = 50653$\n\n$$\\text{Value} = 29791 + 5832 - 50653 + 210 = 35623 - 50653 + 210 = -15030 + 210 = -14820$$\n\n**Correct Answer:** Option (B) -14820"
   },
   {
     "paper_id": 62,

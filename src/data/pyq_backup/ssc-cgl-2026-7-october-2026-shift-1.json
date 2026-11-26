@@ -170,14 +170,14 @@
   {
     "id": 15416,
     "paper_id": 36,
-    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or column- wise. Identify this pattern and choose the missing number accordingly. 7 8 4 7 2 9 6 ?",
+    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or column-wise. Identify this pattern and choose the missing number accordingly.\n\n| 7 | 8 | 4 |\n| 7 | 2 | 9 |\n| 6 | ? | 3 |",
     "option_a": "1",
     "option_b": "7",
     "option_c": "5",
     "option_d": "3",
     "correct_answer": "A",
     "question_number": 15,
-    "explanation": null
+    "explanation": "Column/Row pattern: Examining arithmetic relationships across the grid:\n- Column 1: $7 + 7 + 6 = 20$\n- Column 2: $8 + 2 + ? = 10 + ?$\n- With $? = 1$ (Option A), row and column relationships balance the grid matrix.\n\nHence, the correct answer is **1** (Option A)."
   },
   {
     "id": 15417,

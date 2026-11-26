@@ -266,14 +266,14 @@
   {
     "id": 15324,
     "paper_id": 35,
-    "question_text": "Which of the following rows/columns are connected/related with each other in some way? Rows Columns I II III IV V I 4 7 11 9 9 II 8 11 15 13 13 III 6 9 13 11 16 IV 12 15 20 17 14 V 10 13 17 15 11",
+    "question_text": "Which of the following rows/columns are connected/related with each other in some way?\n\n| Row | Column I | Column II | Column III | Column IV | Column V |\n| :---: | :---: | :---: | :---: | :---: | :---: |\n| I | 4 | 7 | 11 | 9 | 9 |\n| II | 8 | 11 | 15 | 13 | 13 |\n| III | 6 | 9 | 13 | 11 | 16 |\n| IV | 12 | 15 | 20 | 17 | 14 |\n| V | 10 | 13 | 17 | 15 | 11 |",
     "option_a": "Columns I, II and IV",
     "option_b": "Columns I, III and IV",
     "option_c": "Columns I, II and III",
     "option_d": "Columns I, III and V",
     "correct_answer": "A",
     "question_number": 23,
-    "explanation": null
+    "explanation": "Looking at Columns I, II and IV across all rows:\n- Row I: Column II = 4 + 3 = 7, Column IV = 4 + 5 = 9\n- Row II: Column II = 8 + 3 = 11, Column IV = 8 + 5 = 13\n- Row III: Column II = 6 + 3 = 9, Column IV = 6 + 5 = 11\n- Row IV: Column II = 12 + 3 = 15, Column IV = 12 + 5 = 17\n- Row V: Column II = 10 + 3 = 13, Column IV = 10 + 5 = 15\n\nAcross all rows:\n$$\\text{Column II} = \\text{Column I} + 3$$\n$$\\text{Column IV} = \\text{Column I} + 5$$\n\nHence, **Columns I, II and IV** are connected by this relationship (Option A)."
   },
   {
     "id": 15325,

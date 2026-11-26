@@ -262,13 +262,13 @@ export default function AdminBlogsPage() {
     }
   }
 
-  // Direct Image Upload to Supabase Storage
+  // Direct Image Upload to Cloudflare R2 Storage
   async function handleImageUpload(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
     if (!file) return;
 
     setUploadingImage(true);
-    const toastId = toast.loading("Uploading cover image to Supabase Storage...");
+    const toastId = toast.loading("Uploading cover image to Cloudflare R2...");
 
     try {
       const formData = new FormData();
@@ -283,7 +283,7 @@ export default function AdminBlogsPage() {
       if (!res.ok) throw new Error(data.error || "Failed to upload image");
 
       setImageUrl(data.url);
-      toast.success("Cover image uploaded to Supabase Storage!", { id: toastId });
+      toast.success("Cover image uploaded to Cloudflare R2!", { id: toastId });
     } catch (err: any) {
       toast.error(err.message || "Failed to upload image", { id: toastId });
     } finally {
@@ -711,7 +711,7 @@ export default function AdminBlogsPage() {
                     </div>
                   </div>
 
-                  {/* Featured Banner Image Upload (Direct to Supabase Storage) */}
+                  {/* Featured Banner Image Upload (Direct to Cloudflare R2) */}
                   <div className="space-y-1">
                     <label className="block font-bold text-gray-300">
                       Cover Banner Image (Crucial for Google Discover & Social Cards)
@@ -719,14 +719,14 @@ export default function AdminBlogsPage() {
                     <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
                       <input
                         type="text"
-                        placeholder="Paste image URL or upload directly to Supabase below..."
+                        placeholder="Paste image URL or upload directly to Cloudflare R2 below..."
                         value={imageUrl}
                         onChange={(e) => setImageUrl(e.target.value)}
                         className="flex-1 rounded-xl border border-gray-700 bg-gray-800/90 px-3.5 py-2.5 text-xs text-white placeholder-gray-500 focus:border-blue-500 focus:outline-none"
                       />
                       <label className="cursor-pointer inline-flex items-center justify-center gap-2 rounded-xl border border-blue-500/40 bg-blue-600/20 hover:bg-blue-600 text-blue-300 hover:text-white px-4 py-2.5 text-xs font-bold transition-all shadow-2xs">
                         <Upload className="h-3.5 w-3.5" />
-                        <span>{uploadingImage ? "Uploading..." : "📷 Upload to Supabase"}</span>
+                        <span>{uploadingImage ? "Uploading..." : "📷 Upload to Cloudflare R2"}</span>
                         <input
                           type="file"
                           accept="image/*"

@@ -26,8 +26,8 @@ function radical(symbol: string, value: string) {
 
 function isTeXInlineMath(value: string) {
   const trimmed = value.trim();
-  if (!trimmed || /[#@%&]/.test(trimmed) || /[\u0900-\u097F]/.test(trimmed)) return false;
-  if (/\\[A-Za-z]+/.test(trimmed)) return true;
+  if (!trimmed || /(?<!\\)[#@%&]/.test(trimmed) || /[\u0900-\u097F]/.test(trimmed)) return false;
+  if (/\\(?:[A-Za-z]+|[%$#&_{}])/.test(trimmed)) return true;
   if (/\b(?:where|then|means|if|and|or|is|are|the|of|to|for)\b/i.test(trimmed)) return false;
   return /^[0-9A-Za-z\s+\-*/=^()[\]{}.,<>|:;!?]+$/.test(trimmed);
 }
@@ -37,27 +37,29 @@ function renderImageTag(src: string, alt: string): string {
   const resolvedSrc = escapeHtml(resolveAssetUrl(src));
   if (/^inline\b/i.test(cleanAlt)) {
     return (
-      '<span class="inline-block max-w-full overflow-x-auto align-middle">' +
-      `<img src="${resolvedSrc}" alt="${cleanAlt}" data-img-role="inline" loading="eager" decoding="async" class="inline-block max-w-full w-auto h-auto rounded bg-white px-1 py-0.5 align-middle" style="max-height: 76px; max-width: min(100%, 660px);" />` +
+      '<span class="inline-block max-w-full align-middle mx-1">' +
+      `<img src="${resolvedSrc}" alt="${cleanAlt}" data-img-role="inline" loading="eager" decoding="async" class="inline-block max-w-full w-auto h-auto rounded bg-white px-0.5 py-0.5 align-middle" style="max-height: 32px; max-width: min(100%, 320px); object-fit: contain; vertical-align: middle;" />` +
       "</span>"
     );
   }
   if (/^option\b/i.test(cleanAlt)) {
     return (
       '<span class="inline-block max-w-full align-middle">' +
-      `<img src="${resolvedSrc}" alt="${cleanAlt}" data-img-role="option" loading="eager" decoding="async" class="inline-block max-w-full w-auto h-auto rounded-md bg-white p-0.5 align-middle" style="max-height: 84px; max-width: min(100%, 460px);" />` +
+      `<img src="${resolvedSrc}" alt="${cleanAlt}" data-img-role="option" loading="eager" decoding="async" class="inline-block max-w-full w-auto h-auto rounded-md bg-white p-0.5 align-middle" style="max-height: 84px; max-width: min(100%, 460px); object-fit: contain;" />` +
       "</span>"
     );
   }
   return (
     '<span class="my-1.5 block max-w-full overflow-x-auto align-middle">' +
-    `<img src="${resolvedSrc}" alt="${cleanAlt}" data-img-role="figure" loading="eager" decoding="async" class="block max-w-full w-auto h-auto rounded-lg border border-slate-200/80 bg-white p-1" style="max-height: 360px; max-width: min(100%, 980px);" />` +
+    `<img src="${resolvedSrc}" alt="${cleanAlt}" data-img-role="figure" loading="eager" decoding="async" class="block max-w-full w-auto h-auto rounded-lg border border-slate-200/80 bg-white p-1" style="max-height: 360px; max-width: min(100%, 980px); object-fit: contain;" />` +
     "</span>"
   );
 }
 
 function renderMarkdownTable(block: string): string {
-  const rawLines = block.trim().split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
+  // Normalize any inline collapsed rows `| |` into newlines
+  const normalizedBlock = block.replace(/\|\s*\|/g, "|\n|");
+  const rawLines = normalizedBlock.trim().split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
   if (rawLines.length < 2) return block;
 
   const rows = rawLines.map((line) => {
@@ -73,13 +75,24 @@ function renderMarkdownTable(block: string): string {
     bodyRows = rows.slice(2);
   }
 
-  // Detect if this is an SSC Reasoning Matrix table (e.g. columns 0-4 or 5-9)
-  const isMatrixTable =
-    headerRow &&
+  // Detect Coding-Decoding letter/number matrix (e.g. columns 0-4 or 1-7)
+  const isCodingMatrix =
+    Boolean(headerRow &&
     headerRow.length >= 3 &&
-    headerRow.slice(1).every((h) => /^\d+$/.test(h.replace(/\*\*/g, "").trim()));
+    headerRow.slice(1).every((h) => /^\d+$/.test(h.replace(/\*\*/g, "").trim())));
 
-  if (isMatrixTable) {
+  // Detect SSC Rows/Columns relational table (e.g. Header has Row, Column I, II, III...)
+  const isRowsColumnsTable =
+    Boolean(headerRow &&
+    headerRow.some((h) => /^(?:Row|Columns?|[IVXLCDM]+)$/i.test(h.replace(/\*\*/g, "").trim())));
+
+  // Detect Data-only number matrix (no header row, or pure numbers / ? grid like 3x3, 4x3)
+  const isDataGrid =
+    bodyRows.length >= 2 &&
+    bodyRows.every((r) => r.length === bodyRows[0].length && r.length >= 2 && r.length <= 8) &&
+    bodyRows.flat().every((c) => c.replace(/\*\*/g, "").trim().length <= 12);
+
+  if (isCodingMatrix) {
     let html = '<span class="my-2.5 block max-w-full overflow-x-auto"><table class="inline-table border-collapse rounded-xl border border-blue-200 dark:border-blue-900 bg-white dark:bg-slate-900 text-center text-xs sm:text-sm shadow-2xs overflow-hidden">';
     if (headerRow && headerRow.length > 0) {
       html += '<thead class="border-b border-blue-200 dark:border-blue-900 bg-blue-50 dark:bg-blue-950/60 font-black text-blue-900 dark:text-blue-200"><tr>';
@@ -101,6 +114,35 @@ function renderMarkdownTable(block: string): string {
         } else {
           html += `<td class="border-r border-blue-100 dark:border-blue-900/60 w-9 sm:w-11 h-8 sm:h-9 text-center font-extrabold text-slate-800 dark:text-slate-100 p-1 last:border-r-0 tracking-wider">${val}</td>`;
         }
+      });
+      html += '</tr>';
+    });
+    html += '</tbody></table></span>';
+    return html;
+  }
+
+  if (isRowsColumnsTable || (isDataGrid && !headerRow)) {
+    let html = '<span class="my-3 block max-w-full overflow-x-auto"><table class="inline-table border-collapse rounded-xl border border-blue-300 dark:border-blue-800 bg-white dark:bg-slate-900 text-center text-xs sm:text-sm shadow-xs overflow-hidden">';
+    if (headerRow && headerRow.length > 0) {
+      html += '<thead class="border-b-2 border-blue-300 dark:border-blue-800 bg-blue-100/80 dark:bg-blue-950 font-black text-blue-950 dark:text-blue-100"><tr>';
+      headerRow.forEach((h, hIdx) => {
+        const val = escapeHtml(h.replace(/\*\*/g, "").trim());
+        const bg = hIdx === 0 ? "bg-blue-200/70 dark:bg-blue-900/70 text-blue-900 dark:text-blue-200" : "bg-blue-100/70 dark:bg-blue-950/80 text-blue-950 dark:text-blue-100";
+        html += `<th class="border-r border-blue-200 dark:border-blue-800/80 px-2.5 sm:px-3.5 py-1.5 sm:py-2 text-center font-black ${bg} last:border-r-0">${val}</th>`;
+      });
+      html += '</tr></thead>';
+    }
+    html += '<tbody class="divide-y divide-blue-100 dark:divide-blue-950/80">';
+    bodyRows.forEach((r, idx) => {
+      const rowBg = idx % 2 === 0 ? "bg-white dark:bg-slate-900" : "bg-blue-50/30 dark:bg-slate-800/40";
+      html += `<tr class="${rowBg}">`;
+      r.forEach((c, cIdx) => {
+        const val = escapeHtml(c.replace(/\*\*/g, "").trim());
+        const isHeaderCell = headerRow ? cIdx === 0 : false;
+        const cellClass = isHeaderCell
+          ? "border-r border-blue-200 dark:border-blue-800/80 px-2.5 sm:px-3.5 py-1.5 sm:py-2 font-black bg-blue-50/70 dark:bg-blue-950/40 text-blue-900 dark:text-blue-200"
+          : "border-r border-blue-100 dark:border-blue-900/40 px-2.5 sm:px-3.5 py-1.5 sm:py-2 font-bold text-slate-800 dark:text-slate-100 last:border-r-0";
+        html += `<td class="${cellClass}">${val}</td>`;
       });
       html += '</tr>';
     });
@@ -134,10 +176,67 @@ function renderMarkdownTable(block: string): string {
 function formatRawMathText(plainText: string): string {
   if (!plainText) return "";
 
+  // PRE-0: Strip LaTeX environments (arrays, matrices, cases) — before escapeHtml mangles them
+  let preProcessed = plainText;
+  preProcessed = preProcessed.replace(/\\begin\{[^}]+\}[\s\S]*?\\end\{[^}]+\}/g, '');
+  // LaTeX spacing commands → real spaces BEFORE anything else
+  preProcessed = preProcessed.replace(/\\quad\b/g, '  ');
+  preProcessed = preProcessed.replace(/\\qquad\b/g, '    ');
+  preProcessed = preProcessed.replace(/\\[,;:]/g, ' ');
+  preProcessed = preProcessed.replace(/\\!/g, '');
+  // Ellipsis
+  preProcessed = preProcessed.replace(/\\(?:ldots|cdots|dots)\b/g, '…');
+  // LaTeX row breaks
+  preProcessed = preProcessed.replace(/\\hline\b/g, '');
+  preProcessed = preProcessed.replace(/\\\\\s*(?=\S)/g, '  ');
+  preProcessed = preProcessed.replace(/\\\\\s*$/gm, '');
+  // Greek letters
+  preProcessed = preProcessed.replace(/\\theta\b/g, 'θ').replace(/\\alpha\b/g, 'α').replace(/\\beta\b/g, 'β');
+  preProcessed = preProcessed.replace(/\\gamma\b/g, 'γ').replace(/\\delta\b/g, 'δ').replace(/\\Delta\b/g, 'Δ');
+  preProcessed = preProcessed.replace(/\\epsilon\b/g, 'ε').replace(/\\lambda\b/g, 'λ').replace(/\\sigma\b/g, 'σ');
+  preProcessed = preProcessed.replace(/\\omega\b/g, 'ω').replace(/\\Omega\b/g, 'Ω').replace(/\\mu\b/g, 'μ');
+  preProcessed = preProcessed.replace(/\\nu\b/g, 'ν').replace(/\\phi\b/g, 'φ').replace(/\\Phi\b/g, 'Φ');
+  preProcessed = preProcessed.replace(/\\pi\b/g, 'π').replace(/\\Pi\b/g, 'Π').replace(/\\rho\b/g, 'ρ');
+  preProcessed = preProcessed.replace(/\\tau\b/g, 'τ').replace(/\\xi\b/g, 'ξ').replace(/\\eta\b/g, 'η');
+  preProcessed = preProcessed.replace(/\\kappa\b/g, 'κ').replace(/\\zeta\b/g, 'ζ').replace(/\\psi\b/g, 'ψ');
+  preProcessed = preProcessed.replace(/\\chi\b/g, 'χ');
+  // Trig & math functions
+  preProcessed = preProcessed.replace(/\\sin\b/g, 'sin').replace(/\\cos\b/g, 'cos').replace(/\\tan\b/g, 'tan');
+  preProcessed = preProcessed.replace(/\\cot\b/g, 'cot').replace(/\\sec\b/g, 'sec').replace(/\\(?:csc|cosec)\b/g, 'cosec');
+  preProcessed = preProcessed.replace(/\\log\b/g, 'log').replace(/\\ln\b/g, 'ln').replace(/\\exp\b/g, 'exp');
+  preProcessed = preProcessed.replace(/\\lim\b/g, 'lim').replace(/\\max\b/g, 'max').replace(/\\min\b/g, 'min');
+  preProcessed = preProcessed.replace(/\\gcd\b/g, 'gcd').replace(/\\lcm\b/g, 'lcm').replace(/\\mod\b/g, 'mod');
+  // Operators / symbols
+  preProcessed = preProcessed.replace(/\\times/g, '×').replace(/\\div/g, '÷').replace(/\\pm\b/g, '±');
+  preProcessed = preProcessed.replace(/\\leq?\b/g, '≤').replace(/\\geq?\b/g, '≥').replace(/\\neq\b/g, '≠');
+  preProcessed = preProcessed.replace(/\\ne\b/g, '≠').replace(/\\approx\b/g, '≈').replace(/\\infty\b/g, '∞');
+  preProcessed = preProcessed.replace(/\\cdot\b/g, '·').replace(/\\angle\b/g, '∠').replace(/\\triangle\b/g, '△');
+  preProcessed = preProcessed.replace(/\\perp\b/g, '⊥').replace(/\\parallel\b/g, '∥').replace(/\\sim\b/g, '∼');
+  preProcessed = preProcessed.replace(/\\cong\b/g, '≅').replace(/\\propto\b/g, '∝');
+  preProcessed = preProcessed.replace(/\\rightarrow\b|\\to\b/g, '→').replace(/\\leftarrow\b/g, '←');
+  preProcessed = preProcessed.replace(/\\Rightarrow\b/g, '⇒').replace(/\\Leftrightarrow\b/g, '⟺');
+  preProcessed = preProcessed.replace(/\\in\b/g, '∈').replace(/\\notin\b/g, '∉');
+  preProcessed = preProcessed.replace(/\\cup\b/g, '∪').replace(/\\cap\b/g, '∩').replace(/\\emptyset\b/g, '∅');
+  preProcessed = preProcessed.replace(/\\forall\b/g, '∀').replace(/\\exists\b/g, '∃');
+  preProcessed = preProcessed.replace(/\\partial\b/g, '∂');
+  preProcessed = preProcessed.replace(/\\sum\b/g, 'Σ').replace(/\\prod\b/g, 'Π').replace(/\\int\b/g, '∫');
+  // Degree
+  preProcessed = preProcessed.replace(/\^\\circ|\^\{\\circ\}|\\circ\b|\\degree\b/g, '°');
+  // Formatting wrappers — unwrap content
+  preProcessed = preProcessed.replace(/\\(?:text|mathrm|mathbf|mathit|mathcal|operatorname|displaystyle)\{([^}]+)\}/g, '$1');
+  preProcessed = preProcessed.replace(/\\(?:overline|underline|widehat|widetilde|hat|vec|tilde|bar|dot|ddot)\{([^}]+)\}/g, '$1');
+  preProcessed = preProcessed.replace(/\\left\s*([(\[{|<])/g, '$1');
+  preProcessed = preProcessed.replace(/\\right\s*([)\]}|>])/g, '$1');
+  preProcessed = preProcessed.replace(/\\%/g, '%').replace(/\\\$/g, '$');
+  // Strip remaining unknown \commands ONLY (preserve \frac, \dfrac, \tfrac, \sqrt so step 3/7 converts them cleanly!)
+  preProcessed = preProcessed.replace(/\\(?!(?:d?frac|tfrac|sqrt)\b)[a-zA-Z]+\b/g, '');
+
   // 0. Extract and pre-render any Markdown tables
+  // Un-collapse any single-line collapsed pipe tables: e.g. `| 22 | 44 | 36 | | 16 | 28 | 24 |`
+  preProcessed = preProcessed.replace(/\|\s*\|/g, '|\n|');
   const tablePlaceholders: string[] = [];
   const tableRegex = /(?:^[ \t]*\|[^\n]+\|[ \t]*(?:\r?\n|$)){2,}/gm;
-  let textWithoutTables = plainText.replace(tableRegex, (block) => {
+  let textWithoutTables = preProcessed.replace(tableRegex, (block) => {
     const renderedTable = renderMarkdownTable(block);
     const key = `___MD_TABLE_${tablePlaceholders.length}___`;
     tablePlaceholders.push(renderedTable);
@@ -188,7 +287,9 @@ function formatRawMathText(plainText: string): string {
   };
   formatted = formatted.replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿˣʸ]/g, (match) => `<sup>${superscriptMap[match] || match}</sup>`);
 
-  // 3. Roots copied as √, ∛, sqrt(...), or cbrt(...).
+  // 3. Roots copied as √, ∛, \sqrt{...}, \sqrt[3]{...}, sqrt(...), or cbrt(...).
+  formatted = formatted.replace(/\\sqrt\s*\[3\]\s*\{([^{}\n]+)\}/gi, (_match, value) => radical("∛", value));
+  formatted = formatted.replace(/\\sqrt\s*\{([^{}\n]+)\}/gi, (_match, value) => radical("√", value));
   formatted = formatted.replace(/(?:√|sqrt)\s*\(([^()\n]+)\)/gi, (_match, value) => radical("√", value));
   formatted = formatted.replace(/(?:∛|cbrt)\s*\(([^()\n]+)\)/gi, (_match, value) => radical("∛", value));
   formatted = formatted.replace(/√\s*([A-Za-z0-9]+)/g, (_match, value) => radical("√", value));
@@ -222,8 +323,9 @@ function formatRawMathText(plainText: string): string {
 
   // 8. Convert math arrows & symbol notations.
   formatted = formatted.replace(/=&gt;|==&gt;|->|-->/g, ' ➔ ');
-  formatted = formatted.replace(/\b(?:therefore|Therefore)\b/g, '∴');
-  formatted = formatted.replace(/\b(?:because|Because)\b/g, '∵');
+  // Only convert explicit LaTeX / TeX notation or math symbol, NOT regular English prose
+  formatted = formatted.replace(/\\therefore\b/g, '∴');
+  formatted = formatted.replace(/\\because\b/g, '∵');
 
   // 9. Convert image tags/markdown: ![alt](url) or [Image: url] or raw image URLs (supports both relative /path and http(s)://)
   formatted = formatted.replace(
@@ -270,6 +372,7 @@ function renderMath(text: string): string {
     !text.includes("<img") &&
     !text.includes("<u>") &&
     !text.includes("\n") &&
+    !text.includes("|") &&
     !/[⁰¹²³⁴⁵⁶⁷⁸⁹−–—]/.test(text)
   ) {
     const escaped = escapeHtml(text);

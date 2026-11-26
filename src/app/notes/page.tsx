@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import NotesClient from "./NotesClient";
-import { getSubjectNotes } from "@/lib/subject-notes-store";
+import {
+  getSubjectNotesAsync,
+  getResolvedNoteCategoriesAsync,
+} from "@/lib/subject-notes-store";
 import { buildPageMetadata } from "@/lib/seo-store";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -27,7 +30,9 @@ export async function generateMetadata(): Promise<Metadata> {
 export const dynamic = "force-dynamic";
 
 export default async function NotesPage() {
-  const notes = getSubjectNotes(true);
+  const notes = await getSubjectNotesAsync(true);
+  const allCategories = await getResolvedNoteCategoriesAsync(notes);
+  const visibleCategories = allCategories.filter((c) => c.count > 0 || c.is_custom);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -59,7 +64,7 @@ export default async function NotesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <NotesClient initialNotes={notes} />
+      <NotesClient initialNotes={notes} initialCategories={visibleCategories} />
     </>
   );
 }

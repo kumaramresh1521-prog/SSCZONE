@@ -1,12 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
-import { createClient } from "@supabase/supabase-js";
 import { requireAdmin } from "@/lib/api-auth";
+import { uploadToR2 } from "@/lib/r2";
 
 export const dynamic = "force-dynamic";
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
-const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey);
 const ALLOWED_IMAGE_TYPES = new Set(["image/jpeg", "image/png", "image/webp", "image/gif"]);
 const MAX_IMAGE_BYTES = 5 * 1024 * 1024;
 
@@ -35,35 +32,25 @@ export async function POST(req: NextRequest) {
       "image/webp": "webp",
       "image/gif": "gif",
     };
-    const ext = extensionByType[file.type];
+    const ext = extensionByType[file.type] || "jpg";
     const cleanName = `${Date.now()}_${Math.random().toString(36).substring(2, 8)}.${ext}`;
+    const r2Key = `images/blogs/${cleanName}`;
 
     const arrayBuffer = await file.arrayBuffer();
     const buffer = Buffer.from(arrayBuffer);
 
-    // Upload to blog-images bucket
-    const { data, error } = await supabaseAdmin.storage
-      .from("blog-images")
-      .upload(cleanName, buffer, {
-        contentType: file.type,
-        upsert: true,
-        cacheControl: "31536000",
-      });
-
-    if (error) {
-      console.error("Storage upload error:", error);
-      return NextResponse.json({ error: error.message }, { status: 500 });
-    }
-
-    // Get public URL
-    const { data: publicUrlData } = supabaseAdmin.storage
-      .from("blog-images")
-      .getPublicUrl(data.path);
+    // Upload directly to Cloudflare R2
+    const { url } = await uploadToR2({
+      key: r2Key,
+      buffer,
+      contentType: file.type,
+      cacheControl: "public, max-age=31536000, immutable",
+    });
 
     return NextResponse.json({
       success: true,
-      url: publicUrlData.publicUrl,
-      path: data.path
+      url,
+      path: r2Key,
     });
   } catch (err: any) {
     console.error("Upload image error:", err);

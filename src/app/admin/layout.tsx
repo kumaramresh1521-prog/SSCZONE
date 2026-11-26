@@ -36,6 +36,7 @@ import {
   BookMarked,
   Bell,
   Star,
+  Smartphone,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { supabase } from "@/lib/supabase";
@@ -48,6 +49,7 @@ type MenuItem = {
 
 const menuItems: MenuItem[] = [
   { label: "Dashboard", href: "/admin", icon: BarChart3 },
+  { label: "📱 Mobile App Control", href: "/admin/mobile-app", icon: Smartphone },
   { label: "SEO & Meta Engine", href: "/admin/seo", icon: Globe },
   { label: "Menu & Navigation", href: "/admin/navigation", icon: Compass },
   { label: "Homepage CMS", href: "/admin/homepage", icon: LayoutTemplate },

@@ -603,13 +603,13 @@
     "paper_id": 73,
     "question_number": 51,
     "section": "Quantitative Aptitude",
-    "question_text": "A boatman rows to a place 30 km distant and back in 14 hours. He finds that he can row 10 km with the stream at the same time as 4 km against the stream. Find the speed (in km/h) of the stream.",
-    "option_a": "![Option A](/images/pyq/2024/ssc-cgl-2024-13-september-2024-shift-3_p11_img1.png)",
-    "option_b": "![Option B](/images/pyq/2024/ssc-cgl-2024-13-september-2024-shift-3_p11_img2.png)",
-    "option_c": "![Option C](/images/pyq/2024/ssc-cgl-2024-13-september-2024-shift-3_p11_img3.png)",
-    "option_d": "![Option D](/images/pyq/2024/ssc-cgl-2024-13-september-2024-shift-3_p11_img4.png)",
-    "correct_answer": "B",
-    "explanation": null
+    "question_text": "If $\\sqrt{1 + \\frac{x}{256}} = \\frac{17}{16}$, find the value of $x$.",
+    "option_a": "24",
+    "option_b": "45",
+    "option_c": "52",
+    "option_d": "33",
+    "correct_answer": "D",
+    "explanation": "**Step-by-Step Solution:**\nGiven equation:\n$$\\sqrt{1 + \\frac{x}{256}} = \\frac{17}{16}$$\n\nSquaring both sides:\n$$1 + \\frac{x}{256} = \\left(\\frac{17}{16}\\right)^2 = \\frac{289}{256}$$\n\nSubtract $1$ from both sides:\n$$\\frac{x}{256} = \\frac{289}{256} - 1 = \\frac{289 - 256}{256} = \\frac{33}{256}$$\n\nMultiplying both sides by $256$:\n$$x = 33$$\n\n**Correct Answer:** Option (D) 33"
   },
   {
     "paper_id": 73,

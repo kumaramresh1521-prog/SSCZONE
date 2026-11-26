@@ -38,14 +38,14 @@
   {
     "id": 16905,
     "paper_id": 51,
-    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 3 10 27 6 8 42 7 9 ?",
+    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly.\n\n| 3 | 10 | 27 |\n| 6 | 8 | 42 |\n| 7 | 9 | ? |",
     "option_a": "42",
     "option_b": "56",
     "option_c": "64",
     "option_d": "70",
     "correct_answer": "B",
     "question_number": 4,
-    "explanation": null
+    "explanation": "Row rule: $(Col_1 \\times Col_2) - Col_1 = Col_3$.\n- Row 1: $(3 \\times 10) - 3 = 30 - 3 = 27$\n- Row 2: $(6 \\times 8) - 6 = 48 - 6 = 42$\n- Row 3: $(7 \\times 9) - 7 = 63 - 7 = 56$\n\nHence, the missing number is **56** (Option B)."
   },
   {
     "id": 16906,
@@ -62,14 +62,14 @@
   {
     "id": 16907,
     "paper_id": 51,
-    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. | 30 | 60 | 50 | |----|----|----| | 18 | 45 | 35 | | 12 | 25 | 20 | | 24 | 40 | ? |",
+    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly.\n\n| 30 | 60 | 50 |\n| 18 | 45 | 35 |\n| 12 | 25 | 20 |\n| 24 | 40 | ? |",
     "option_a": "25",
     "option_b": "35",
     "option_c": "45",
     "option_d": "55",
-    "correct_answer": "A",
+    "correct_answer": "B",
     "question_number": 6,
-    "explanation": null
+    "explanation": "Column rule: $\\text{Row } 1 - \\text{Row } 2 + \\text{Row } 3 = \\text{Row } 4$.\n- Col 1: $30 - 18 + 12 = 12 + 12 = 24$\n- Col 2: $60 - 45 + 25 = 15 + 25 = 40$\n- Col 3: $50 - 35 + 20 = 15 + 20 = 35$\n\nHence, the missing number is **35** (Option B)."
   },
   {
     "id": 16908,

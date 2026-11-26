@@ -62,14 +62,14 @@
   {
     "id": 15707,
     "paper_id": 39,
-    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 2 4 5 10 8 9 96 ?",
+    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly.\n\n| 2 | 4 | 5 |\n| 10 | 8 | 9 |\n| 96 | ? | 56 |",
     "option_a": "52",
     "option_b": "66",
     "option_c": "48",
     "option_d": "74",
     "correct_answer": "C",
     "question_number": 6,
-    "explanation": null
+    "explanation": "Column rule: $\\text{Row } 2^2 - \\text{Row } 1^2 = \\text{Row } 3$.\n- Col 1: $10^2 - 2^2 = 100 - 4 = 96$\n- Col 3: $9^2 - 5^2 = 81 - 25 = 56$\n- Col 2: $8^2 - 4^2 = 64 - 16 = 48$\n\nHence, the missing number is **48** (Option C)."
   },
   {
     "id": 15708,

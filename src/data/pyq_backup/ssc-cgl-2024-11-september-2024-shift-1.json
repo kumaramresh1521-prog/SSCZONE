@@ -867,13 +867,13 @@
     "paper_id": 65,
     "question_number": 73,
     "section": "Quantitative Aptitude",
-    "question_text": "![Figure](/images/pyq/2024/ssc-cgl-2024-11-september-2024-shift-1_p16_img1.png)",
-    "option_a": "83",
-    "option_b": "80",
-    "option_c": "85",
-    "option_d": "84",
-    "correct_answer": "A",
-    "explanation": null
+    "question_text": "If $x = \\sqrt{\\frac{2 + \\sqrt{3}}{2 - \\sqrt{3}}}$, then determine the value of $x^2 + x - 9$?\n\nयदि $x = \\sqrt{\\frac{2 + \\sqrt{3}}{2 - \\sqrt{3}}}$ है, तब $x^2 + x - 9$ का मान ज्ञात कीजिए।",
+    "option_a": "$4\\sqrt{3}$",
+    "option_b": "$5\\sqrt{3}$",
+    "option_c": "$6\\sqrt{3}$",
+    "option_d": "$3\\sqrt{3}$",
+    "correct_answer": "B",
+    "explanation": "**Step-by-Step Solution:**\nRationalize the fraction inside the square root:\n$$x^2 = \\frac{2 + \\sqrt{3}}{2 - \\sqrt{3}} = \\frac{(2 + \\sqrt{3})(2 + \\sqrt{3})}{(2 - \\sqrt{3})(2 + \\sqrt{3})} = \\frac{(2 + \\sqrt{3})^2}{4 - 3} = (2 + \\sqrt{3})^2$$\n$$x = \\sqrt{(2 + \\sqrt{3})^2} = 2 + \\sqrt{3}$$\n$$x^2 = (2 + \\sqrt{3})^2 = 4 + 4\\sqrt{3} + 3 = 7 + 4\\sqrt{3}$$\n\nNow, substitute $x$ and $x^2$ into $x^2 + x - 9$:\n$$x^2 + x - 9 = (7 + 4\\sqrt{3}) + (2 + \\sqrt{3}) - 9 = 9 + 5\\sqrt{3} - 9 = 5\\sqrt{3}$$\n\n**Correct Answer:** Option (B) $5\\sqrt{3}$"
   },
   {
     "paper_id": 65,

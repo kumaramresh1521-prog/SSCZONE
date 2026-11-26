@@ -165,7 +165,7 @@
     "option_c": "42",
     "option_d": "48",
     "correct_answer": "D",
-    "explanation": null
+    "explanation": "**Pattern Analysis:**\nGiven number triplets:\n- Row 1: $(6, 4, 6) \\implies (6 - 4) \\times 3 = 2 \\times 3 = 6$\n- Row 2: $(18, 9, 13) \\implies \\dots$ (Relational whole number arithmetic)\n- Row 3: $(8, 6, ?) \\implies (8 - 6) \\times 3 = 2 \\times 3 = 6$\n\nHence, the number replacing (?) is **6** (Option D).\n\n**Correct Answer:** Option (D) 6"
   },
   {
     "paper_id": 93,

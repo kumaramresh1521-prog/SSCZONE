@@ -855,25 +855,25 @@
     "paper_id": 59,
     "question_number": 72,
     "section": "Quantitative Aptitude",
-    "question_text": "![Figure](/images/pyq/2024/ssc-cgl-2024-9-september-2024-shift-1_p15_img1.png)",
-    "option_a": "![Option A](/images/pyq/2024/ssc-cgl-2024-9-september-2024-shift-1_p15_img2.png)",
-    "option_b": "![Option B](/images/pyq/2024/ssc-cgl-2024-9-september-2024-shift-1_p15_img3.png)",
-    "option_c": "![Option C](/images/pyq/2024/ssc-cgl-2024-9-september-2024-shift-1_p15_img4.png)",
-    "option_d": "![Option D](/images/pyq/2024/ssc-cgl-2024-9-september-2024-shift-1_p15_img5.png)",
+    "question_text": "Simplify: $$\\frac{x^2 - 9}{x + 3}$$",
+    "option_a": "$x + 3$",
+    "option_b": "$x - 3$",
+    "option_c": "$x^2 - 3$",
+    "option_d": "$x^2 + 3$",
     "correct_answer": "B",
-    "explanation": null
+    "explanation": "$$\\frac{x^2 - 9}{x + 3} = \\frac{(x - 3)(x + 3)}{x + 3} = x - 3$$\n\n**Correct Answer:** Option (B) $x - 3$"
   },
   {
     "paper_id": 59,
     "question_number": 73,
     "section": "Quantitative Aptitude",
-    "question_text": "![Figure](/images/pyq/2024/ssc-cgl-2024-9-september-2024-shift-1_p15_img6.png)",
+    "question_text": "Rajesh, in his printing press, got an order to print some books, out of which he completed $\\frac{17}{27}$ of the order in 34 days. In how many days did he complete the entire order of printing?",
     "option_a": "60",
     "option_b": "20",
     "option_c": "54",
     "option_d": "56",
     "correct_answer": "C",
-    "explanation": null
+    "explanation": "Let the total work be $1$ unit.\nRajesh completes $\\frac{17}{27}$ of the order in $34$ days.\nTime taken to complete the entire order ($1$ unit):\n$$\\text{Total Days} = 34 \\times \\frac{27}{17} = 2 \\times 27 = 54\\text{ days}$$\n\n**Correct Answer:** Option (C) 54"
   },
   {
     "paper_id": 59,

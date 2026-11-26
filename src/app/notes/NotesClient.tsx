@@ -20,7 +20,7 @@ import {
   CheckCircle2,
   X,
 } from "lucide-react";
-import type { SubjectNote } from "@/lib/subject-notes-store";
+import type { SubjectNote, ResolvedNoteCategory } from "@/lib/subject-notes-store";
 
 const EXAMS_FILTER_OPTIONS = [
   { id: "all", name: "All Target Exams" },
@@ -32,24 +32,40 @@ const EXAMS_FILTER_OPTIONS = [
   { id: "ssc-stenographer", name: "SSC Stenographer" },
 ];
 
-const SUBJECTS_FILTER_OPTIONS = [
-  { id: "all", name: "All Subjects", iconName: "All" },
-  { id: "biology", name: "Biology (जीव विज्ञान)", shortName: "Biology", color: "teal" },
-  { id: "science", name: "General Science (PCB)", shortName: "Science", color: "cyan" },
-  { id: "english", name: "English Language", shortName: "English", color: "emerald" },
-  { id: "quant", name: "Quantitative Aptitude (Maths)", shortName: "Maths", color: "blue" },
-  { id: "reasoning", name: "Reasoning Ability", shortName: "Reasoning", color: "purple" },
-  { id: "history", name: "History (Ancient/Med/Modern)", shortName: "History", color: "amber" },
-  { id: "polity", name: "Polity & Constitution", shortName: "Polity", color: "indigo" },
-  { id: "geography", name: "Geography & Mapping", shortName: "Geography", color: "teal" },
-  { id: "computer", name: "Computer Knowledge", shortName: "Computer", color: "violet" },
-  { id: "static-gk", name: "Static GK & Culture", shortName: "Static GK", color: "amber" },
-];
-
-export default function NotesClient({ initialNotes = [] }: { initialNotes: SubjectNote[] }) {
+export default function NotesClient({
+  initialNotes = [],
+  initialCategories = [],
+}: {
+  initialNotes: SubjectNote[];
+  initialCategories?: ResolvedNoteCategory[];
+}) {
   const [selectedExam, setSelectedExam] = useState<string>("all");
   const [selectedSubject, setSelectedSubject] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
+
+  const effectiveCategories = useMemo<ResolvedNoteCategory[]>(() => {
+    const map = new Map<string, ResolvedNoteCategory>();
+    initialCategories.forEach((c) => {
+      map.set(c.id.toLowerCase(), { ...c });
+    });
+    initialNotes.forEach((n) => {
+      const id = (n.subject || "general").trim().toLowerCase();
+      const existing = map.get(id);
+      if (existing) {
+        if (!initialCategories.length) existing.count += 1;
+      } else {
+        map.set(id, {
+          id,
+          name: n.subject_name || id.replace(/-/g, " "),
+          icon: "📚",
+          color: "blue",
+          is_custom: true,
+          count: 1,
+        });
+      }
+    });
+    return Array.from(map.values()).filter((c) => c.count > 0 || c.is_custom);
+  }, [initialCategories, initialNotes]);
 
   // Filter notes
   const filteredNotes = useMemo(() => {
@@ -157,6 +173,187 @@ export default function NotesClient({ initialNotes = [] }: { initialNotes: Subje
     setSearchQuery("");
   };
 
+  const renderNoteCard = (note: SubjectNote) => {
+    const colors = getSubjectColorClasses(note.subject);
+
+    return (
+      <div
+        key={note.id}
+        className="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs hover:shadow-md hover:border-slate-300 transition-all flex flex-col justify-between"
+      >
+        <div>
+          {/* Top Badges */}
+          <div className="flex items-center justify-between gap-2 mb-2.5">
+            <div className="flex items-center gap-1.5 flex-wrap">
+              <span className={`text-[10px] font-bold px-2 py-0.5 rounded-md border ${colors.pill}`}>
+                {note.subject_name.split("-")[1] || note.subject_name.split("(")[0] || note.subject_name}
+              </span>
+              <span className="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-0.5 rounded-md border border-slate-200">
+                {note.exam.toUpperCase()}
+              </span>
+              {note.is_featured && (
+                <span className="flex items-center gap-0.5 text-[10px] font-black bg-amber-400/20 text-amber-900 border border-amber-400/40 px-1.5 py-0.5 rounded-md">
+                  <Star className="h-2.5 w-2.5 fill-amber-500 text-amber-500" />
+                  <span>MUST REVISE</span>
+                </span>
+              )}
+            </div>
+
+            <span className="text-[11px] font-semibold text-slate-400">
+              {note.language}
+            </span>
+          </div>
+
+          {/* Title & Topic */}
+          <h3 className="text-base font-bold text-slate-900 line-clamp-2 leading-snug">
+            {note.title}
+          </h3>
+          {note.hindi_title && (
+            <p className="text-xs font-medium text-slate-500 mt-0.5 line-clamp-1">
+              {note.hindi_title}
+            </p>
+          )}
+          {note.topic && (
+            <p className="text-xs font-semibold text-blue-600 mt-1">
+              Chapter: {note.topic}
+            </p>
+          )}
+          {note.description && (
+            <p className="text-xs text-slate-600 mt-1.5 line-clamp-2 leading-relaxed">
+              {note.description}
+            </p>
+          )}
+        </div>
+
+        {/* Bottom Meta & Action Buttons */}
+        <div className="pt-4 mt-4 border-t border-slate-100 space-y-3">
+          <div className="flex items-center justify-between text-xs text-slate-400">
+            <span>📄 {note.page_count || 12} Pages</span>
+            <span>💾 {note.file_size || "PDF"}</span>
+            <span className="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded-md text-[10px]">
+              FREE ACCESS
+            </span>
+          </div>
+
+          {/* Online Reader Button if available */}
+          {note.reader_url && (
+            <Link
+              href={note.reader_url}
+              className="w-full py-2.5 px-3 rounded-xl bg-indigo-50 hover:bg-indigo-100/90 text-indigo-700 border border-indigo-200/80 text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-center shadow-2xs cursor-pointer"
+            >
+              <BookOpen className="h-3.5 w-3.5 text-indigo-600" />
+              <span>Read Online (ऑनलाइन पढ़ें) →</span>
+            </Link>
+          )}
+
+          {note.pdf_url_hindi ? (
+            <div className="space-y-2 pt-1">
+              <div className="grid grid-cols-2 gap-2">
+                <a
+                  href={note.pdf_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download
+                  className="py-2.5 px-2 sm:px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-center shadow-2xs bg-blue-600 hover:bg-blue-700 text-white cursor-pointer"
+                >
+                  <Download className="h-3.5 w-3.5 shrink-0" />
+                  <span className="truncate">English PDF</span>
+                </a>
+
+                <a
+                  href={note.pdf_url_hindi}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download
+                  className="py-2.5 px-2 sm:px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-center shadow-2xs bg-teal-600 hover:bg-teal-700 text-white cursor-pointer"
+                >
+                  <Download className="h-3.5 w-3.5 shrink-0" />
+                  <span className="truncate">हिन्दी PDF</span>
+                </a>
+              </div>
+
+              <div className="flex items-center justify-between gap-2 text-[11px] font-semibold text-slate-500 pt-0.5 px-1">
+                <a
+                  href={note.pdf_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1 cursor-pointer"
+                >
+                  <Eye className="h-3 w-3" />
+                  <span>View English PDF</span>
+                </a>
+                <a
+                  href={note.pdf_url_hindi}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-teal-600 hover:text-teal-800 hover:underline flex items-center gap-1 cursor-pointer"
+                >
+                  <Eye className="h-3 w-3" />
+                  <span>View हिन्दी PDF</span>
+                </a>
+              </div>
+            </div>
+          ) : (
+            <div className="grid grid-cols-2 gap-2 pt-1">
+              <a
+                href={note.pdf_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="py-2.5 px-3 rounded-xl border border-slate-200 hover:border-slate-300 bg-slate-50 hover:bg-slate-100 text-slate-800 text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-center shadow-2xs"
+              >
+                <Eye className="h-3.5 w-3.5 text-slate-600" />
+                <span>View PDF</span>
+              </a>
+
+              <a
+                href={note.pdf_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+                className={`py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-center shadow-2xs ${colors.button}`}
+              >
+                <Download className="h-3.5 w-3.5" />
+                <span>Download</span>
+              </a>
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  };
+
+  const groupedNotesByCategory = useMemo(() => {
+    const groups: Array<{ category: ResolvedNoteCategory; notes: SubjectNote[] }> = [];
+    const seenIds = new Set<string>();
+
+    effectiveCategories.forEach((cat) => {
+      const catId = cat.id.toLowerCase();
+      const catNotes = filteredNotes.filter(
+        (n) => (n.subject || "general").trim().toLowerCase() === catId
+      );
+      if (catNotes.length > 0) {
+        groups.push({ category: cat, notes: catNotes });
+        catNotes.forEach((n) => seenIds.add(n.id));
+      }
+    });
+
+    const leftovers = filteredNotes.filter((n) => !seenIds.has(n.id));
+    if (leftovers.length > 0) {
+      groups.push({
+        category: {
+          id: "other",
+          name: "Other Study Notes",
+          icon: "📚",
+          color: "slate",
+          count: leftovers.length,
+        },
+        notes: leftovers,
+      });
+    }
+
+    return groups;
+  }, [filteredNotes, effectiveCategories]);
+
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans antialiased pb-28 sm:pb-20">
       
@@ -257,17 +454,30 @@ export default function NotesClient({ initialNotes = [] }: { initialNotes: Subje
                 onChange={(e) => setSelectedSubject(e.target.value)}
                 className="w-full rounded-xl border border-slate-200 bg-slate-50/60 px-3.5 py-2 text-xs sm:text-sm text-slate-800 font-semibold focus:bg-white focus:border-blue-600 focus:outline-none transition-all cursor-pointer"
               >
-                {SUBJECTS_FILTER_OPTIONS.map((sub) => (
-                  <option key={sub.id} value={sub.id}>{sub.name}</option>
+                <option value="all">All Categories ({initialNotes.length})</option>
+                {effectiveCategories.map((sub) => (
+                  <option key={sub.id} value={sub.id}>
+                    {sub.icon ? `${sub.icon} ` : ""}{sub.name} ({sub.count})
+                  </option>
                 ))}
               </select>
             </div>
 
           </div>
 
-          {/* Quick Subject Pills */}
+          {/* Dynamic Category Filter Pills */}
           <div className="flex items-center gap-1.5 overflow-x-auto pb-1 custom-scrollbar text-xs">
-            {SUBJECTS_FILTER_OPTIONS.slice(0, 6).map((sub) => (
+            <button
+              onClick={() => setSelectedSubject("all")}
+              className={`rounded-xl px-3 py-1.5 font-bold whitespace-nowrap transition-all cursor-pointer ${
+                selectedSubject === "all"
+                  ? "bg-slate-900 text-white shadow-xs"
+                  : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+              }`}
+            >
+              All Categories ({initialNotes.length})
+            </button>
+            {effectiveCategories.map((sub) => (
               <button
                 key={sub.id}
                 onClick={() => setSelectedSubject(sub.id)}
@@ -277,7 +487,8 @@ export default function NotesClient({ initialNotes = [] }: { initialNotes: Subje
                     : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                 }`}
               >
-                {sub.shortName || sub.name}
+                {sub.icon ? `${sub.icon} ` : ""}
+                {sub.name.split("(")[0].trim()} ({sub.count})
               </button>
             ))}
 
@@ -329,158 +540,42 @@ export default function NotesClient({ initialNotes = [] }: { initialNotes: Subje
               </button>
             )}
           </div>
+        ) : selectedSubject === "all" && groupedNotesByCategory.length > 0 ? (
+          <div className="space-y-8">
+            {groupedNotesByCategory.map(({ category, notes: catNotes }) => (
+              <div key={category.id} className="space-y-3.5">
+                <div className="flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-slate-200/90 bg-white px-4 py-3 shadow-2xs">
+                  <div className="flex items-center gap-2.5">
+                    <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-100 text-lg">
+                      {category.icon || "📚"}
+                    </span>
+                    <div>
+                      <h2 className="text-sm sm:text-base font-extrabold text-slate-900">
+                        {category.name}
+                      </h2>
+                      <p className="text-[11px] font-medium text-slate-500">
+                        {catNotes.length} Study Document{catNotes.length === 1 ? "" : "s"} &amp; PDF{catNotes.length === 1 ? "" : "s"}
+                      </p>
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => setSelectedSubject(category.id)}
+                    className="inline-flex items-center gap-1 rounded-xl bg-slate-100 hover:bg-blue-50 hover:text-blue-700 px-3 py-1.5 text-xs font-bold text-slate-700 transition-colors cursor-pointer"
+                  >
+                    <span>View Only ({catNotes.length})</span>
+                    <ChevronRight className="h-3.5 w-3.5" />
+                  </button>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {catNotes.map((note) => renderNoteCard(note))}
+                </div>
+              </div>
+            ))}
+          </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {filteredNotes.map((note) => {
-              const colors = getSubjectColorClasses(note.subject);
-
-              return (
-                <div
-                  key={note.id}
-                  className="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs hover:shadow-md hover:border-slate-300 transition-all flex flex-col justify-between"
-                >
-                  <div>
-                    {/* Top Badges */}
-                    <div className="flex items-center justify-between gap-2 mb-2.5">
-                      <div className="flex items-center gap-1.5 flex-wrap">
-                        <span className={`text-[10px] font-bold px-2 py-0.5 rounded-md border ${colors.pill}`}>
-                          {note.subject_name.split("-")[1] || note.subject_name.split("(")[0] || note.subject_name}
-                        </span>
-                        <span className="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-0.5 rounded-md border border-slate-200">
-                          {note.exam.toUpperCase()}
-                        </span>
-                        {note.is_featured && (
-                          <span className="flex items-center gap-0.5 text-[10px] font-black bg-amber-400/20 text-amber-900 border border-amber-400/40 px-1.5 py-0.5 rounded-md">
-                            <Star className="h-2.5 w-2.5 fill-amber-500 text-amber-500" />
-                            <span>MUST REVISE</span>
-                          </span>
-                        )}
-                      </div>
-
-                      <span className="text-[11px] font-semibold text-slate-400">
-                        {note.language}
-                      </span>
-                    </div>
-
-                    {/* Title & Topic */}
-                    <h3 className="text-base font-bold text-slate-900 line-clamp-2 leading-snug">
-                      {note.title}
-                    </h3>
-                    {note.hindi_title && (
-                      <p className="text-xs font-medium text-slate-500 mt-0.5 line-clamp-1">
-                        {note.hindi_title}
-                      </p>
-                    )}
-                    {note.topic && (
-                      <p className="text-xs font-semibold text-blue-600 mt-1">
-                        Chapter: {note.topic}
-                      </p>
-                    )}
-                    {note.description && (
-                      <p className="text-xs text-slate-600 mt-1.5 line-clamp-2 leading-relaxed">
-                        {note.description}
-                      </p>
-                    )}
-                  </div>
-
-                  {/* Bottom Meta & Action Buttons */}
-                  <div className="pt-4 mt-4 border-t border-slate-100 space-y-3">
-                    <div className="flex items-center justify-between text-xs text-slate-400">
-                      <span>📄 {note.page_count || 12} Pages</span>
-                      <span>💾 {note.file_size || "PDF"}</span>
-                      <span className="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded-md text-[10px]">
-                        FREE ACCESS
-                      </span>
-                    </div>
-
-                    {/* Online Reader Button if available */}
-                    {note.reader_url && (
-                      <Link
-                        href={note.reader_url}
-                        className="w-full py-2.5 px-3 rounded-xl bg-indigo-50 hover:bg-indigo-100/90 text-indigo-700 border border-indigo-200/80 text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-center shadow-2xs cursor-pointer"
-                      >
-                        <BookOpen className="h-3.5 w-3.5 text-indigo-600" />
-                        <span>Read Online (ऑनलाइन पढ़ें) →</span>
-                      </Link>
-                    )}
-
-                    {note.pdf_url_hindi ? (
-                      <div className="space-y-2 pt-1">
-                        <div className="grid grid-cols-2 gap-2">
-                          <a
-                            href={note.pdf_url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            download
-                            className="py-2.5 px-2 sm:px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-center shadow-2xs bg-blue-600 hover:bg-blue-700 text-white cursor-pointer"
-                          >
-                            <Download className="h-3.5 w-3.5 shrink-0" />
-                            <span className="truncate">English PDF</span>
-                          </a>
-
-                          <a
-                            href={note.pdf_url_hindi}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            download
-                            className="py-2.5 px-2 sm:px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-center shadow-2xs bg-teal-600 hover:bg-teal-700 text-white cursor-pointer"
-                          >
-                            <Download className="h-3.5 w-3.5 shrink-0" />
-                            <span className="truncate">हिन्दी PDF</span>
-                          </a>
-                        </div>
-
-                        <div className="flex items-center justify-between gap-2 text-[11px] font-semibold text-slate-500 pt-0.5 px-1">
-                          <a
-                            href={note.pdf_url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1 cursor-pointer"
-                          >
-                            <Eye className="h-3 w-3" />
-                            <span>View English PDF</span>
-                          </a>
-                          <a
-                            href={note.pdf_url_hindi}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-teal-600 hover:text-teal-800 hover:underline flex items-center gap-1 cursor-pointer"
-                          >
-                            <Eye className="h-3 w-3" />
-                            <span>View हिन्दी PDF</span>
-                          </a>
-                        </div>
-                      </div>
-                    ) : (
-                      <div className="grid grid-cols-2 gap-2 pt-1">
-                        {/* View / Read Button */}
-                        <a
-                          href={note.pdf_url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="py-2.5 px-3 rounded-xl border border-slate-200 hover:border-slate-300 bg-slate-50 hover:bg-slate-100 text-slate-800 text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-center shadow-2xs"
-                        >
-                          <Eye className="h-3.5 w-3.5 text-slate-600" />
-                          <span>View PDF</span>
-                        </a>
-
-                        {/* Download Button */}
-                        <a
-                          href={note.pdf_url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          download
-                          className={`py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 text-center shadow-2xs ${colors.button}`}
-                        >
-                          <Download className="h-3.5 w-3.5" />
-                          <span>Download</span>
-                        </a>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              );
-            })}
+            {filteredNotes.map((note) => renderNoteCard(note))}
           </div>
         )}
 

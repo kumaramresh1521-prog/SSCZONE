@@ -26,7 +26,11 @@ import {
 } from "lucide-react";
 import toast from "react-hot-toast";
 import Link from "next/link";
-import type { SubjectNote } from "@/lib/subject-notes-store";
+import {
+  DEFAULT_NOTE_CATEGORIES,
+  type SubjectNote,
+  type ResolvedNoteCategory,
+} from "@/lib/subject-notes-types";
 
 const EXAMS_LIST = [
   { id: "ssc-cgl", name: "SSC CGL (Tier 1 & Tier 2)" },
@@ -38,22 +42,32 @@ const EXAMS_LIST = [
   { id: "all", name: "All SSC Examinations" },
 ];
 
-const SUBJECTS_LIST = [
-  { id: "quant", name: "Quantitative Aptitude (Maths)", badgeColor: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
-  { id: "reasoning", name: "Reasoning & Mental Ability", badgeColor: "bg-purple-500/20 text-purple-300 border-purple-500/30" },
-  { id: "english", name: "English Language & Comprehension", badgeColor: "bg-emerald-500/20 text-emerald-300 border-emerald-500/30" },
-  { id: "history", name: "General Awareness - History", badgeColor: "bg-amber-500/20 text-amber-300 border-amber-500/30" },
-  { id: "polity", name: "General Awareness - Polity & Constitution", badgeColor: "bg-indigo-500/20 text-indigo-300 border-indigo-500/30" },
-  { id: "geography", name: "General Awareness - Geography", badgeColor: "bg-teal-500/20 text-teal-300 border-teal-500/30" },
-  { id: "science", name: "General Awareness - Science (Phy/Chem/Bio)", badgeColor: "bg-cyan-500/20 text-cyan-300 border-cyan-500/30" },
-  { id: "economy", name: "General Awareness - Economy", badgeColor: "bg-rose-500/20 text-rose-300 border-rose-500/30" },
-  { id: "computer", name: "Computer Knowledge & Aptitude", badgeColor: "bg-violet-500/20 text-violet-300 border-violet-500/30" },
-  { id: "static-gk", name: "Static GK & Art & Culture", badgeColor: "bg-amber-500/20 text-amber-300 border-amber-500/30" },
-];
+const BADGE_COLOR_MAP: Record<string, string> = {
+  blue: "bg-blue-500/20 text-blue-300 border-blue-500/30",
+  purple: "bg-purple-500/20 text-purple-300 border-purple-500/30",
+  emerald: "bg-emerald-500/20 text-emerald-300 border-emerald-500/30",
+  amber: "bg-amber-500/20 text-amber-300 border-amber-500/30",
+  indigo: "bg-indigo-500/20 text-indigo-300 border-indigo-500/30",
+  teal: "bg-teal-500/20 text-teal-300 border-teal-500/30",
+  cyan: "bg-cyan-500/20 text-cyan-300 border-cyan-500/30",
+  rose: "bg-rose-500/20 text-rose-300 border-rose-500/30",
+  violet: "bg-violet-500/20 text-violet-300 border-violet-500/30",
+  pink: "bg-pink-500/20 text-pink-300 border-pink-500/30",
+};
 
 export default function AdminNotesPage() {
   const [notes, setNotes] = useState<SubjectNote[]>([]);
+  const [categories, setCategories] = useState<ResolvedNoteCategory[]>(() =>
+    DEFAULT_NOTE_CATEGORIES.map((c) => ({ ...c, count: 0 }))
+  );
   const [loading, setLoading] = useState(true);
+  const [isCatModalOpen, setIsCatModalOpen] = useState(false);
+  const [newCatName, setNewCatName] = useState("");
+  const [newCatIcon, setNewCatIcon] = useState("📚");
+  const [newCatColor, setNewCatColor] = useState("blue");
+  const [savingCat, setSavingCat] = useState(false);
+  const [showInlineCatCreator, setShowInlineCatCreator] = useState(false);
+  const [inlineCatName, setInlineCatName] = useState("");
 
   // Filters
   const [searchQuery, setSearchQuery] = useState("");
@@ -94,6 +108,9 @@ export default function AdminNotesPage() {
       const data = await res.json();
       if (res.ok && data.notes) {
         setNotes(data.notes);
+        if (Array.isArray(data.categories)) {
+          setCategories(data.categories);
+        }
       } else {
         toast.error(data.error || "Failed to load notes");
       }
@@ -155,7 +172,7 @@ export default function AdminNotesPage() {
     }
 
     setUploading(true);
-    const tid = toast.loading(`Uploading "${file.name}"...`);
+    const tid = toast.loading(`Uploading "${file.name}" to Cloudflare R2...`);
 
     try {
       const formData = new FormData();
@@ -174,7 +191,7 @@ export default function AdminNotesPage() {
           const autoTitle = file.name.replace(/\.[^/.]+$/, "").replace(/[_-]/g, " ");
           setTitle(autoTitle);
         }
-        toast.success("PDF uploaded successfully!", { id: tid });
+        toast.success("PDF uploaded to Cloudflare R2 CDN!", { id: tid });
       } else {
         toast.error(data.error || "Upload failed", { id: tid });
       }
@@ -199,7 +216,7 @@ export default function AdminNotesPage() {
 
     setSaving(true);
     const examObj = EXAMS_LIST.find((x) => x.id === exam);
-    const subObj = SUBJECTS_LIST.find((x) => x.id === subject);
+    const subObj = categories.find((x) => x.id === subject);
 
     const payload = {
       id: editingId,
@@ -285,6 +302,57 @@ export default function AdminNotesPage() {
     }
   }
 
+  async function handleSaveCategory(nameToSave: string, icon = "📚", color = "blue"): Promise<ResolvedNoteCategory | null> {
+    const clean = nameToSave.trim();
+    if (!clean) {
+      toast.error("Category name is required");
+      return null;
+    }
+    setSavingCat(true);
+    try {
+      const res = await fetch("/api/admin/notes", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          action: "save_category",
+          category: { name: clean, icon, color, is_custom: true },
+        }),
+      });
+      const data = await res.json();
+      if (res.ok && data.category) {
+        if (Array.isArray(data.categories)) setCategories(data.categories);
+        toast.success(data.message || `Category "${clean}" added!`);
+        return data.category;
+      }
+      toast.error(data.error || "Failed to add category");
+    } catch {
+      toast.error("Network error saving category");
+    } finally {
+      setSavingCat(false);
+    }
+    return null;
+  }
+
+  async function handleDeleteCategory(id: string, name: string) {
+    if (!confirm(`Remove custom category "${name}"? Existing notes under it will auto-appear under their subject name.`)) return;
+    try {
+      const res = await fetch("/api/admin/notes", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "delete_category", id }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        if (Array.isArray(data.categories)) setCategories(data.categories);
+        toast.success(data.message || "Category updated");
+      } else {
+        toast.error(data.error || "Failed to remove category");
+      }
+    } catch {
+      toast.error("Network error");
+    }
+  }
+
   // Computed Filtered Notes
   const filteredNotes = useMemo(() => {
     return notes.filter((n) => {
@@ -331,7 +399,7 @@ export default function AdminNotesPage() {
           </p>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           <Link
             href="/notes"
             target="_blank"
@@ -340,6 +408,15 @@ export default function AdminNotesPage() {
             <span>Preview Notes Hub</span>
             <ExternalLink className="h-3.5 w-3.5" />
           </Link>
+
+          <button
+            type="button"
+            onClick={() => setIsCatModalOpen(true)}
+            className="flex items-center gap-1.5 rounded-xl border border-indigo-500/40 bg-indigo-950/40 hover:bg-indigo-900/50 text-indigo-300 px-3.5 py-2 text-xs font-bold transition-colors cursor-pointer"
+          >
+            <Layers className="h-3.5 w-3.5" />
+            <span>Categories ({categories.length})</span>
+          </button>
 
           <button
             onClick={handleOpenCreate}
@@ -410,9 +487,11 @@ export default function AdminNotesPage() {
               onChange={(e) => setSelectedSubjectFilter(e.target.value)}
               className="w-full rounded-xl border border-slate-700 bg-slate-800 px-3 py-2 text-xs text-white focus:outline-none focus:border-blue-500"
             >
-              <option value="all">📚 All Subjects</option>
-              {SUBJECTS_LIST.map((sub) => (
-                <option key={sub.id} value={sub.id}>{sub.name}</option>
+              <option value="all">📚 All Categories</option>
+              {categories.map((sub) => (
+                <option key={sub.id} value={sub.id}>
+                  {sub.icon ? `${sub.icon} ` : ""}{sub.name} ({sub.count})
+                </option>
               ))}
             </select>
           </div>
@@ -479,7 +558,8 @@ export default function AdminNotesPage() {
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {filteredNotes.map((note) => {
-            const subMeta = SUBJECTS_LIST.find((s) => s.id === note.subject);
+            const subMeta = categories.find((s) => s.id === note.subject);
+            const badgeClass = BADGE_COLOR_MAP[subMeta?.color || ""] || "bg-slate-800 text-slate-300 border-slate-700";
 
             return (
               <div
@@ -494,8 +574,9 @@ export default function AdminNotesPage() {
                   {/* Top Badges */}
                   <div className="flex items-center justify-between gap-2 mb-2.5">
                     <div className="flex items-center gap-1.5 flex-wrap">
-                      <span className={`text-[10px] font-bold px-2 py-0.5 rounded-md border ${subMeta?.badgeColor || "bg-slate-800 text-slate-300 border-slate-700"}`}>
-                        {subMeta?.name.split("-")[1] || subMeta?.name.split(" ")[0] || "Subject"}
+                      <span className={`text-[10px] font-bold px-2 py-0.5 rounded-md border ${badgeClass}`}>
+                        {subMeta?.icon ? `${subMeta.icon} ` : ""}
+                        {subMeta?.name.split("-")[1]?.trim() || subMeta?.name.split("(")[0]?.trim() || note.subject_name || note.subject}
                       </span>
                       <span className="text-[10px] font-bold bg-slate-800 text-slate-300 border border-slate-700 px-2 py-0.5 rounded-md">
                         {note.exam.toUpperCase()}
@@ -614,7 +695,7 @@ export default function AdminNotesPage() {
                     <Upload className="h-3.5 w-3.5" />
                     PDF File Source *
                   </span>
-                  {uploading && <span className="text-amber-400 animate-pulse font-bold">Uploading to Storage...</span>}
+                  {uploading && <span className="text-amber-400 animate-pulse font-bold">Uploading to Cloudflare R2...</span>}
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -705,18 +786,56 @@ export default function AdminNotesPage() {
                 </div>
 
                 <div>
-                  <label className="block font-bold text-slate-300 mb-1 uppercase tracking-wide text-[10px]">
-                    Subject Category *
-                  </label>
-                  <select
-                    value={subject}
-                    onChange={(e) => setSubject(e.target.value)}
-                    className="w-full rounded-xl border border-slate-700 bg-slate-800 px-3 py-2 text-xs text-white focus:outline-none focus:border-blue-500"
-                  >
-                    {SUBJECTS_LIST.map((sub) => (
-                      <option key={sub.id} value={sub.id}>{sub.name}</option>
-                    ))}
-                  </select>
+                  <div className="flex items-center justify-between mb-1">
+                    <label className="block font-bold text-slate-300 uppercase tracking-wide text-[10px]">
+                      Subject Category *
+                    </label>
+                    <button
+                      type="button"
+                      onClick={() => setShowInlineCatCreator((v) => !v)}
+                      className="text-[10px] font-bold text-indigo-400 hover:text-indigo-300 cursor-pointer"
+                    >
+                      {showInlineCatCreator ? "Close" : "+ New Category"}
+                    </button>
+                  </div>
+                  {showInlineCatCreator ? (
+                    <div className="flex gap-1.5">
+                      <input
+                        type="text"
+                        value={inlineCatName}
+                        onChange={(e) => setInlineCatName(e.target.value)}
+                        placeholder="e.g. Current Affairs"
+                        className="flex-1 rounded-xl border border-indigo-500/50 bg-slate-800 px-3 py-2 text-xs text-white focus:outline-none"
+                      />
+                      <button
+                        type="button"
+                        disabled={savingCat}
+                        onClick={async () => {
+                          const created = await handleSaveCategory(inlineCatName, "📚", "teal");
+                          if (created) {
+                            setSubject(created.id);
+                            setInlineCatName("");
+                            setShowInlineCatCreator(false);
+                          }
+                        }}
+                        className="rounded-xl bg-indigo-600 hover:bg-indigo-500 px-3 py-2 text-xs font-bold text-white cursor-pointer"
+                      >
+                        Add
+                      </button>
+                    </div>
+                  ) : (
+                    <select
+                      value={subject}
+                      onChange={(e) => setSubject(e.target.value)}
+                      className="w-full rounded-xl border border-slate-700 bg-slate-800 px-3 py-2 text-xs text-white focus:outline-none focus:border-blue-500"
+                    >
+                      {categories.map((sub) => (
+                        <option key={sub.id} value={sub.id}>
+                          {sub.icon ? `${sub.icon} ` : ""}{sub.name}
+                        </option>
+                      ))}
+                    </select>
+                  )}
                 </div>
               </div>
 
@@ -847,6 +966,119 @@ export default function AdminNotesPage() {
               </div>
 
             </form>
+          </div>
+        </div>
+      )}
+
+      {/* Manage / Add Categories Modal */}
+      {isCatModalOpen && (
+        <div className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+          <div className="relative w-full max-w-xl bg-slate-900 rounded-3xl border border-slate-800 shadow-2xl p-6 space-y-5 my-8">
+            <div className="flex items-center justify-between border-b border-slate-800 pb-3.5">
+              <div className="flex items-center gap-2">
+                <span className="p-2 rounded-xl bg-indigo-600/10 text-indigo-400 border border-indigo-500/20">
+                  <Layers className="h-4 w-4" />
+                </span>
+                <div>
+                  <h3 className="text-base font-bold text-white">Study Notes Categories</h3>
+                  <p className="text-[11px] text-slate-400">
+                    Add new categories here — they sync automatically to Website &amp; Mobile App.
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setIsCatModalOpen(false)}
+                className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 cursor-pointer"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            </div>
+
+            <div className="rounded-2xl border border-indigo-500/30 bg-indigo-950/20 p-4 space-y-3 text-xs">
+              <p className="font-bold text-indigo-300 uppercase tracking-wide text-[10px]">
+                + Add New Category
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-6 gap-2">
+                <input
+                  type="text"
+                  value={newCatName}
+                  onChange={(e) => setNewCatName(e.target.value)}
+                  placeholder="Category Name (e.g. Current Affairs)"
+                  className="sm:col-span-3 rounded-xl border border-slate-700 bg-slate-800 px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500"
+                />
+                <input
+                  type="text"
+                  value={newCatIcon}
+                  onChange={(e) => setNewCatIcon(e.target.value)}
+                  placeholder="Emoji"
+                  className="sm:col-span-1 rounded-xl border border-slate-700 bg-slate-800 px-2.5 py-2 text-center text-xs text-white focus:outline-none"
+                />
+                <select
+                  value={newCatColor}
+                  onChange={(e) => setNewCatColor(e.target.value)}
+                  className="sm:col-span-2 rounded-xl border border-slate-700 bg-slate-800 px-2.5 py-2 text-xs text-white focus:outline-none"
+                >
+                  <option value="blue">Blue</option>
+                  <option value="teal">Teal</option>
+                  <option value="emerald">Emerald</option>
+                  <option value="purple">Purple</option>
+                  <option value="amber">Amber</option>
+                  <option value="indigo">Indigo</option>
+                  <option value="rose">Rose</option>
+                  <option value="pink">Pink</option>
+                </select>
+              </div>
+              <button
+                type="button"
+                disabled={savingCat}
+                onClick={async () => {
+                  const saved = await handleSaveCategory(newCatName, newCatIcon, newCatColor);
+                  if (saved) {
+                    setNewCatName("");
+                  }
+                }}
+                className="w-full rounded-xl bg-indigo-600 hover:bg-indigo-500 py-2 text-xs font-bold text-white transition cursor-pointer disabled:opacity-50"
+              >
+                {savingCat ? "Adding..." : "Create & Sync Category"}
+              </button>
+            </div>
+
+            <div className="max-h-72 overflow-y-auto space-y-2 pr-1 text-xs">
+              {categories.map((cat) => (
+                <div
+                  key={cat.id}
+                  className="flex items-center justify-between rounded-xl border border-slate-800 bg-slate-800/50 px-3 py-2"
+                >
+                  <div className="flex items-center gap-2 min-w-0">
+                    <span className="text-base">{cat.icon || "📚"}</span>
+                    <div className="min-w-0">
+                      <p className="font-bold text-white truncate">{cat.name}</p>
+                      <p className="text-[10px] text-slate-400">
+                        slug: {cat.id} • {cat.count} note{cat.count === 1 ? "" : "s"}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 shrink-0">
+                    {cat.is_custom && (
+                      <span className="rounded bg-indigo-500/20 px-1.5 py-0.5 text-[10px] font-bold text-indigo-300">
+                        Custom
+                      </span>
+                    )}
+                    {cat.is_custom && cat.count === 0 && (
+                      <button
+                        type="button"
+                        onClick={() => handleDeleteCategory(cat.id, cat.name)}
+                        className="p-1 rounded-lg text-rose-400 hover:bg-rose-950/40 cursor-pointer"
+                        title="Delete custom category"
+                      >
+                        <Trash2 className="h-3.5 w-3.5" />
+                      </button>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       )}

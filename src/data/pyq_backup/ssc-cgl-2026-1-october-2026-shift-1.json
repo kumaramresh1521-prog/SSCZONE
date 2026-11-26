@@ -146,14 +146,14 @@
   {
     "id": 14514,
     "paper_id": 27,
-    "question_text": "In the following question a matrix of numbers is given. These numbers are either row-wise or column-wise in a certain Follows the pattern. identify this pattern Do this and find the missing number accordingly. 3 6 1 3 2 4 2 8 ? निम्नलिखित प्रश्न में संख्याओं का एक आव्यूह दिया गया है। ये संख्याएँ या तो पंक्ति-वार अथवा स्तंभ-वार किसी निश्चित प्रतिरूप का अनुसरण करती हैं। इस प्रतिरूप की पहचान करें और तदनुसार लुप्त संख्या ज्ञात करें। 3 6 1 3 2 4 2 8 ?",
+    "question_text": "In the following question a matrix of numbers is given. These numbers follow a certain pattern either row-wise or column-wise. Identify this pattern and find the missing number accordingly.\n\n| 3 | 6 | 1 |\n| 3 | 2 | 4 |\n| 2 | 8 | ? |\n\nनिम्नलिखित प्रश्न में संख्याओं का एक आव्यूह दिया गया है। ये संख्याएँ या तो पंक्ति-वार अथवा स्तंभ-वार किसी निश्चित प्रतिरूप का अनुसरण करती हैं। इस प्रतिरूप की पहचान करें और तदनुसार लुप्त संख्या ज्ञात करें।\n\n| 3 | 6 | 1 |\n| 3 | 2 | 4 |\n| 2 | 8 | ? |",
     "option_a": "7",
     "option_b": "1",
     "option_c": "9",
-    "option_d": "5 2",
-    "correct_answer": "A",
+    "option_d": "5",
+    "correct_answer": "C",
     "question_number": 13,
-    "explanation": null
+    "explanation": "Row-wise pattern (reading each row as a 3-digit perfect square):\n- Row 1: $361 = 19^2$\n- Row 2: $324 = 18^2$\n- Row 3: $289 = 17^2$\n\nThus, the missing digit is **9** (Option C)."
   },
   {
     "id": 14515,

@@ -19,7 +19,7 @@ export interface AnnouncementConfig {
 }
 
 export const DEFAULT_ANNOUNCEMENT_CONFIG: AnnouncementConfig = {
-  enabled: true,
+  enabled: false,
   version: "ann_cgl_answerkey_v1",
   badge: "🚨 URGENT NOTIFICATION",
   title: "Official Tier-1 Answer Key Published!",

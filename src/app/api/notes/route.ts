@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getSubjectNotesAsync } from "@/lib/subject-notes-store";
+import {
+  getSubjectNotesAsync,
+  getResolvedNoteCategoriesAsync,
+} from "@/lib/subject-notes-store";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -17,6 +20,9 @@ export async function GET(req: NextRequest) {
       notes = notes.filter((n) => n.exam.toLowerCase() === examParam || n.exam === "all");
     }
 
+    const resolvedCategories = await getResolvedNoteCategoriesAsync(notes);
+    const categories = resolvedCategories.filter((c) => c.count > 0 || c.is_custom);
+
     if (subjectParam && subjectParam !== "all") {
       notes = notes.filter((n) => n.subject.toLowerCase() === subjectParam);
     }
@@ -31,7 +37,7 @@ export async function GET(req: NextRequest) {
       );
     }
 
-    return NextResponse.json({ success: true, notes }, {
+    return NextResponse.json({ success: true, notes, categories }, {
       headers: { "Cache-Control": "no-store, max-age=0" }
     });
   } catch (err: any) {

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
-import { supabaseAdmin } from "@/lib/supabase-admin";
 import { requireAdmin } from "@/lib/api-auth";
 import { slugify } from "@/lib/utils";
+import { uploadToR2 } from "@/lib/r2";
 
 export const dynamic = "force-dynamic";
 
@@ -30,26 +30,18 @@ export async function POST(req: NextRequest) {
     const baseName = file.name.replace(/\.[^/.]+$/, "");
     const cleanSlug = slugify(baseName) || "document";
     const cleanFileName = `${Date.now()}_${cleanSlug}.pdf`;
+    const r2Key = `notes/${cleanFileName}`;
 
     const arrayBuffer = await file.arrayBuffer();
     const buffer = Buffer.from(arrayBuffer);
 
-    // Upload to 'notes-pdf' bucket
-    const { data, error } = await supabaseAdmin.storage
-      .from("notes-pdf")
-      .upload(cleanFileName, buffer, {
-        contentType: "application/pdf",
-        upsert: true,
-        cacheControl: "31536000",
-      });
-
-    if (error) {
-      return NextResponse.json({ error: error.message }, { status: 500 });
-    }
-
-    const { data: publicUrlData } = supabaseAdmin.storage
-      .from("notes-pdf")
-      .getPublicUrl(cleanFileName);
+    // Upload directly to Cloudflare R2
+    const { url } = await uploadToR2({
+      key: r2Key,
+      buffer,
+      contentType: "application/pdf",
+      cacheControl: "public, max-age=31536000, immutable",
+    });
 
     // Format file size
     const sizeInMb = (file.size / (1024 * 1024)).toFixed(1);
@@ -57,11 +49,12 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({
       success: true,
-      url: publicUrlData.publicUrl,
+      url,
       fileName: file.name,
       fileSize: formattedSize,
     });
   } catch (err: any) {
-    return NextResponse.json({ error: err.message || "Failed to upload PDF" }, { status: 500 });
+    console.error("[Notes PDF Upload Error]:", err);
+    return NextResponse.json({ error: err.message || "Failed to upload PDF to Cloudflare R2" }, { status: 500 });
   }
 }

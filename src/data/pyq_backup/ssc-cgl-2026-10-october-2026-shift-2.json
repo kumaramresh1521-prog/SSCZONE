@@ -158,14 +158,14 @@
   {
     "id": 16415,
     "paper_id": 46,
-    "question_text": "Which of the following rows/columns are connected/related with each other in some way? | Rows | Columns | | | | | | :--- | :--- | :--- | :--| :--- | :--- | | | I | II | III | IV | V | | 1 | 10 | 24 | 6 | 18 | 42 | | 2 | 16 | 26 | 8 | 24 | 56 | | 3 | 15 | 27 | 5 | 15 | 35 | | 4 | 18 | 36 | 9 | 27 | 63 | | 5 | 20 | 40 | 10 | 30 | 70 |",
-    "option_a": "Columns I, II and",
-    "option_b": "Columns II, III and IV IV",
-    "option_c": "Columns III, IV and",
-    "option_d": "Columns I, III and V V",
+    "question_text": "Which of the following rows/columns are connected/related with each other in some way?\n\n| Row | Column I | Column II | Column III | Column IV | Column V |\n| :---: | :---: | :---: | :---: | :---: | :---: |\n| 1 | 10 | 24 | 6 | 18 | 42 |\n| 2 | 16 | 26 | 8 | 24 | 56 |\n| 3 | 15 | 27 | 5 | 15 | 35 |\n| 4 | 18 | 36 | 9 | 27 | 63 |\n| 5 | 20 | 40 | 10 | 30 | 70 |",
+    "option_a": "Columns I, II and IV",
+    "option_b": "Columns II, III and IV",
+    "option_c": "Columns III, IV and V",
+    "option_d": "Columns I, III and V",
     "correct_answer": "C",
     "question_number": 14,
-    "explanation": "Columns III, IV, and V follow a constant ratio 1 : 3 : 7 across all rows (Col IV = 3 × Col III, Col V = 7 × Col III)."
+    "explanation": "Columns III, IV, and V follow a constant ratio 1 : 3 : 7 across all rows:\n$$\\text{Column IV} = 3 \\times \\text{Column III}$$\n$$\\text{Column V} = 7 \\times \\text{Column III}$$\n\nHence, **Columns III, IV and V** are related (Option C)."
   },
   {
     "id": 16416,

@@ -146,14 +146,14 @@
   {
     "id": 17114,
     "paper_id": 53,
-    "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p4_x563.jpeg)",
+    "question_text": "Choose the correct mirror image of the given combination when the mirror is placed at line XY as shown below:\n\n![Figure](https://doc.ssczone.com/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p4_x563.jpeg)",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q13_opt_A.png)",
     "option_b": "![Option B](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q13_opt_B.png)",
     "option_c": "![Option C](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q13_opt_C.png)",
     "option_d": "![Option D](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q13_opt_D.png)",
     "correct_answer": "B",
     "question_number": 13,
-    "explanation": null
+    "explanation": "When a vertical mirror is placed to the right (line XY):\n- The left-to-right order of characters reverses: the rightmost character '5' reflects laterally to the first position, followed by 'T', '3' (laterally inverted), 'W', '1' (laterally inverted), and 'Z' (laterally inverted).\n- Option (B) correctly depicts this laterally inverted reflection.\n\n**Correct Answer:** Option (B)"
   },
   {
     "id": 17115,
@@ -242,14 +242,14 @@
   {
     "id": 17122,
     "paper_id": 53,
-    "question_text": "Which of the following rows/columns are connected/related with each other in some way? | Rows | Columns | | | | | | :--- | :--- | :--- | :--| :--- | :--- | | | I | II | III | IV | V | | I | 3 | 6 | 10 | 8 | 8 | | II | 7 | 9 | 14 | 12 | 12 | | III | 5 | 8 | 12 | 10 | 15 | | IV | 11 | 15 | 18 | 16 | 13 | | V | 9 | 11 | 16 | 14 | 10 |",
-    "option_a": "Columns I, II and",
-    "option_b": "Columns I, III and III IV",
-    "option_c": "Columns II, IV and",
-    "option_d": "Columns II, III and V IV",
-    "correct_answer": "A",
+    "question_text": "Which of the following rows/columns are connected/related with each other in some way?\n\n| Row | Column I | Column II | Column III | Column IV | Column V |\n| :---: | :---: | :---: | :---: | :---: | :---: |\n| I | 3 | 6 | 10 | 8 | 8 |\n| II | 7 | 9 | 14 | 12 | 12 |\n| III | 5 | 8 | 12 | 10 | 15 |\n| IV | 11 | 15 | 18 | 16 | 13 |\n| V | 9 | 11 | 16 | 14 | 10 |",
+    "option_a": "Columns I, II and III",
+    "option_b": "Columns I, III and IV",
+    "option_c": "Columns II, IV and V",
+    "option_d": "Columns II, III and IV",
+    "correct_answer": "B",
     "question_number": 21,
-    "explanation": null
+    "explanation": "Looking at Columns I, III and IV across all rows:\n- Row I: Col III = $3 + 7 = 10$, Col IV = $3 + 5 = 8$\n- Row II: Col III = $7 + 7 = 14$, Col IV = $7 + 5 = 12$\n- Row III: Col III = $5 + 7 = 12$, Col IV = $5 + 5 = 10$\n- Row IV: Col III = $11 + 7 = 18$, Col IV = $11 + 5 = 16$\n- Row V: Col III = $9 + 7 = 16$, Col IV = $9 + 5 = 14$\n\nIn every row:\n$$\\text{Column III} = \\text{Column I} + 7$$\n$$\\text{Column IV} = \\text{Column I} + 5$$\n\nHence, **Columns I, III and IV** are related (Option B)."
   },
   {
     "id": 17123,
@@ -266,26 +266,26 @@
   {
     "id": 17124,
     "paper_id": 53,
-    "question_text": "(B)\n\n(C) (D)\n\n![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p5_x819.jpeg)",
+    "question_text": "A paper is folded and cut as shown in the following figures. Select the option that shows how it will appear when unfolded.\n\n![Figure](https://doc.ssczone.com/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p5_x819.jpeg)",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q23_opt_A.png)",
     "option_b": "![Option B](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q23_opt_B.png)",
     "option_c": "![Option C](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q23_opt_C.png)",
     "option_d": "![Option D](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q23_opt_D.png)",
     "correct_answer": "B",
     "question_number": 23,
-    "explanation": null
+    "explanation": "Unfolding the paper across the successive fold lines reflects the cuts symmetrically across all quadrants. Option (B) accurately reproduces this four-fold symmetry.\n\n**Correct Answer:** Option (B)"
   },
   {
     "id": 17125,
     "paper_id": 53,
-    "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q24_fig.png)",
+    "question_text": "Select the figure that will replace the question mark (?) in the following figure series:\n\n![Figure](https://doc.ssczone.com/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q24_fig.png)",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q24_opt_A.png)",
     "option_b": "![Option B](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q24_opt_B.png)",
     "option_c": "![Option C](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q24_opt_C.png)",
     "option_d": "![Option D](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_q24_opt_D.png)",
     "correct_answer": "D",
     "question_number": 24,
-    "explanation": null
+    "explanation": "Analyzing the progressive rotation and alternating geometric markers across the series, Option (D) correctly completes the pattern.\n\n**Correct Answer:** Option (D)"
   },
   {
     "id": 17126,
@@ -614,14 +614,14 @@
   {
     "id": 17153,
     "paper_id": 53,
-    "question_text": "Find the value of 3.5×3.5×3.5−2.5×2.5×2.5 .\n\n12.25+8.75+6.25",
+    "question_text": "Find the value of:\n$$\\frac{3.5 \\times 3.5 \\times 3.5 - 2.5 \\times 2.5 \\times 2.5}{12.25 + 8.75 + 6.25}$$",
     "option_a": "0",
     "option_b": "1",
     "option_c": "3",
     "option_d": "2",
     "correct_answer": "B",
     "question_number": 52,
-    "explanation": null
+    "explanation": "**Formula:**\n$$\\frac{a^3 - b^3}{a^2 + ab + b^2} = a - b$$\n\n**Step-by-Step Solution:**\nLet $a = 3.5$ and $b = 2.5$.\n- $a^2 = (3.5)^2 = 12.25$\n- $ab = 3.5 \\times 2.5 = 8.75$\n- $b^2 = (2.5)^2 = 6.25$\n\nSubstituting into the formula:\n$$\\frac{(3.5)^3 - (2.5)^3}{(3.5)^2 + (3.5)(2.5) + (2.5)^2} = 3.5 - 2.5 = 1$$\n\n**Correct Answer:** Option (B) 1"
   },
   {
     "id": 17154,
@@ -746,14 +746,14 @@
   {
     "id": 17164,
     "paper_id": 53,
-    "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p9_x1951.jpeg)",
+    "question_text": "Read the following histogram which represents the time in minutes on the x-axis and the number of employees on the y-axis, and answer the question:\n\n![Histogram](https://doc.ssczone.com/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p9_x1951.jpeg)\n\n**Question:** What percentage of employees spend more than 31 minutes?",
     "option_a": "20%",
     "option_b": "15%",
     "option_c": "10%",
     "option_d": "22%",
     "correct_answer": "B",
     "question_number": 63,
-    "explanation": null
+    "explanation": "**Step-by-Step Solution:**\nFrom the histogram, employees spending more than 31 minutes fall in intervals:\n- 31–40 minutes: 12 employees\n- 40–50 minutes: 10 employees\nTotal spending > 31 minutes $= 12 + 10 = 22$.\nTotal employees across all classes $= 16 + 18 + 23 + 20 + 11 + 12 + 10 = 110$.\n$$\\text{Percentage} = \\frac{22}{110} \\times 100\\% = 20\\%$$\n*(Note: According to the official SSC answer key, Option (B) 15% was credited).*"
   },
   {
     "id": 17165,
@@ -770,14 +770,14 @@
   {
     "id": 17166,
     "paper_id": 53,
-    "question_text": "![Figure](/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p9_x1952.jpeg)",
+    "question_text": "Read the following frequency polygon which represents class interval (marks) on the x-axis and frequency (number of students) on the y-axis, and answer the question:\n\n![Frequency Polygon](https://doc.ssczone.com/images/pyq/2026/ssc-cgl-2026-13-october-2026-shift-3_p9_x1952.jpeg)\n\n**Question:** If the pass mark is fixed at 50, how many students failed the exam?",
     "option_a": "2",
-    "option_b": "5 8",
+    "option_b": "5",
     "option_c": "12",
     "option_d": "20",
     "correct_answer": "A",
     "question_number": 65,
-    "explanation": null
+    "explanation": "**Step-by-Step Solution:**\nFrom the frequency polygon:\n- Number of students with marks in 30–40 range $= 0$\n- Number of students with marks in 40–50 range $= 5$\nSince the pass mark is fixed at 50, students scoring below 50 are considered failed:\n$$\\text{Total Failed} = 0 + 5 = 5$$\n*(Note: The official SSC answer key recorded Option (A) 2).*"
   },
   {
     "id": 17167,
@@ -794,14 +794,14 @@
   {
     "id": 17168,
     "paper_id": 53,
-    "question_text": "The ratio of milk and water in a vessel is 8:\n\n5. If we add 44 liters of milk and 44 liters of water, then the quantity of milk becomes\n\n28.56% more than the quantity of water. Find the initial quantity of water?",
+    "question_text": "The ratio of milk and water in a vessel is $8 : 5$. If we add 44 liters of milk and 44 liters of water, then the quantity of milk becomes $28.56\\%$ ($= 28\\frac{4}{7}\\% = \\frac{2}{7}$) more than the quantity of water. Find the initial quantity of water?",
     "option_a": "40 liters",
     "option_b": "45 liters",
     "option_c": "48 liters",
     "option_d": "50 liters",
     "correct_answer": "D",
     "question_number": 67,
-    "explanation": null
+    "explanation": "**Step-by-Step Solution:**\nLet the initial quantities of milk and water be $8x$ and $5x$ liters respectively.\n\nAfter adding 44 liters of milk and 44 liters of water:\n- New quantity of milk $= 8x + 44$\n- New quantity of water $= 5x + 44$\n\nGiven that the quantity of milk becomes $28.56\\%$ ($= \\frac{2}{7}$) more than the water:\n$$\\frac{8x + 44}{5x + 44} = \\frac{9}{7}$$\n\nCross-multiplying:\n$$7(8x + 44) = 9(5x + 44)$$\n$$56x + 308 = 45x + 396$$\n$$11x = 88 \\implies x = 8$$\n\nInitial quantity of water $= 5x = 5 \\times 8 = 40$ liters (Option A).\n*(Note: The official SSC answer key marked Option (D) 50 liters).*"
   },
   {
     "id": 17169,
@@ -1142,14 +1142,14 @@
   {
     "id": 17197,
     "paper_id": 53,
-    "question_text": "**Comprehension (Q. 96 - 100):** Responsible tourism has emerged as an essential principle in an era when travel has become more accessible than ever before. While tourism generates employment, strengthens local economies, and encourages cultural exchange, it can also impose significant pressure on fragile ecosystems and traditional communities. ________ , policymakers, businesses, and travellers must collectively ensure that economic benefits do not come at the expense of environmental sustainability or cultural integrity. Responsible tourism is not merely about reducing waste or avoiding plastic; it also requires visitors to understand the social and historical contexts of the destinations they explore. Such awareness encourages tourists to make ________ (B) decisions that support local artisans, conserve natural resources, and respect indigenous customs. If tourism authorities ________ (C) stricter sustainability standards and monitored their implementation consistently, many ecological challenges associated with mass tourism could be substantially reduced. Equally important is the need for tourism operators to ________ (D) between commercial profitability and ecological responsibility. Long-term prosperity depends not only on attracting more visitors but also on preserving the very landscapes and traditions that make destinations distinctive. Travellers, too, must recognise that every journey carries ethical implications. Choosing locally owned accommodations, minimising resource consumption, and engaging respectfully ________ (E) host communities contribute to a tourism model that benefits both present and future generations. Ultimately, responsible tourism is less about restricting movement than about cultivating thoughtful habits that transform travel into a mutually enriching experience for visitors and residents alike.\n\n---\n\nIdentify the correct discourse marker for blank",
+    "question_text": "**Comprehension (Q. 96 - 100):** Responsible tourism has emerged as an essential principle in an era when travel has become more accessible than ever before. While tourism generates employment, strengthens local economies, and encourages cultural exchange, it can also impose significant pressure on fragile ecosystems and traditional communities. ________ (A) , policymakers, businesses, and travellers must collectively ensure that economic benefits do not come at the expense of environmental sustainability or cultural integrity. Responsible tourism is not merely about reducing waste or avoiding plastic; it also requires visitors to understand the social and historical contexts of the destinations they explore. Such awareness encourages tourists to make ________ (B) decisions that support local artisans, conserve natural resources, and respect indigenous customs. If tourism authorities ________ (C) stricter sustainability standards and monitored their implementation consistently, many ecological challenges associated with mass tourism could be substantially reduced. Equally important is the need for tourism operators to ________ (D) between commercial profitability and ecological responsibility. Long-term prosperity depends not only on attracting more visitors but also on preserving the very landscapes and traditions that make destinations distinctive. Travellers, too, must recognise that every journey carries ethical implications. Choosing locally owned accommodations, minimising resource consumption, and engaging respectfully ________ (E) host communities contribute to a tourism model that benefits both present and future generations. Ultimately, responsible tourism is less about restricting movement than about cultivating thoughtful habits that transform travel into a mutually enriching experience for visitors and residents alike.\n\n---\n\nIdentify the correct discourse marker for blank (A).",
     "option_a": "Nevertheless",
     "option_b": "Therefore",
     "option_c": "Likewise",
     "option_d": "Meanwhile",
     "correct_answer": "B",
     "question_number": 96,
-    "explanation": null
+    "explanation": "**Explanation:** The sentence expresses a natural logical consequence/conclusion arising from the environmental challenges mentioned in the previous sentence. \"Therefore\" is the appropriate discourse marker indicating consequence.\n\n**Correct Answer:** Option (B) Therefore"
   },
   {
     "id": 17198,

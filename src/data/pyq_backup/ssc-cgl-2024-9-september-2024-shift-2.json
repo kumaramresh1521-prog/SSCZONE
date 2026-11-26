@@ -771,13 +771,13 @@
     "paper_id": 60,
     "question_number": 65,
     "section": "Quantitative Aptitude",
-    "question_text": "The angles of triangle are such that one is average of other two, then the angles are:\n![Figure](/images/pyq/2024/ssc-cgl-2024-9-september-2024-shift-2_p15_img2.png)",
-    "option_a": "4",
-    "option_b": "3",
-    "option_c": "2",
-    "option_d": "1",
-    "correct_answer": "D",
-    "explanation": null
+    "question_text": "The angles of a triangle are such that one angle is the average of the other two. Which of the following can be the angles of the triangle (in radians)?",
+    "option_a": "$\\frac{\\pi}{6}, \\frac{\\pi}{3}, \\frac{\\pi}{2}$",
+    "option_b": "$\\frac{\\pi}{3}, \\frac{\\pi}{3}, \\frac{\\pi}{2}$",
+    "option_c": "$\\frac{\\pi}{6}, \\frac{\\pi}{3}, \\frac{\\pi}{4}$",
+    "option_d": "$\\frac{\\pi}{2}, \\frac{\\pi}{2}, \\frac{\\pi}{3}$",
+    "correct_answer": "A",
+    "explanation": "**Step-by-Step Solution:**\nLet the angles be $A, B, C$ such that $B = \\frac{A + C}{2} \\implies A + C = 2B$.\nSum of angles of a triangle $= A + B + C = 180^\\circ = \\pi$.\nSubstituting $A + C = 2B$:\n$$2B + B = 180^\\circ \\implies 3B = 180^\\circ \\implies B = 60^\\circ = \\frac{\\pi}{3}$$\nTesting Option (A): $\\frac{\\pi}{6} (30^\\circ), \\frac{\\pi}{3} (60^\\circ), \\frac{\\pi}{2} (90^\\circ)$:\n$$30^\\circ + 60^\\circ + 90^\\circ = 180^\\circ$$\n$$60^\\circ = \\frac{30^\\circ + 90^\\circ}{2} = 60^\\circ \\quad \\text{(Satisfies the condition)}$$\n\n**Correct Answer:** Option (A) $\\frac{\\pi}{6}, \\frac{\\pi}{3}, \\frac{\\pi}{2}$"
   },
   {
     "paper_id": 60,

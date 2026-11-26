@@ -74,14 +74,14 @@
   {
     "id": 16008,
     "paper_id": 42,
-    "question_text": "Select the image that embeds the following figure.",
+    "question_text": "Select the option figure in which the given target figure is embedded (rotation is not allowed):\n\n**Target Figure:** An upward vertical arrow combined with a horizontal arrow pointing to the right from its base.\n\n*(दी गई उत्तर आकृतियों में से उस आकृति का चयन करें जिसमें दी गई प्रश्न आकृति सन्निहित है)*",
     "option_a": "![Option A](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p3_x262.jpeg)",
     "option_b": "![Option B](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p3_x263.jpeg)",
     "option_c": "![Option C](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x43.jpeg)",
     "option_d": "![Option D](/images/pyq/2026/ssc-cgl-2026-9-october-2026-shift-1_p2_x44.jpeg)",
     "correct_answer": "D",
     "question_number": 7,
-    "explanation": "Option D correctly embeds the given target geometric figure."
+    "explanation": "Option (D) contains the exact embedded target figure of the vertical upward arrow combined with the horizontal rightward arrow.\n\n**Correct Answer:** Option (D)"
   },
   {
     "id": 16009,
@@ -170,14 +170,14 @@
   {
     "id": 16016,
     "paper_id": 42,
-    "question_text": "Which of the following rows/columns are connected/related with each other in some way? Rows Columns I II III IV V 1 8 16 5 32 24 2 6 12 7 24 18 3 5 10 6 20 15 4 7 14 9 28 21 5 4 8 4 16 18",
-    "option_a": "Columns I, III and",
-    "option_b": "Columns I, II and IV IV",
-    "option_c": "Columns II, III and",
-    "option_d": "Columns I, II and V V",
+    "question_text": "Which of the following rows/columns are connected/related with each other in some way?\n\n| Row | Column I | Column II | Column III | Column IV | Column V |\n| :---: | :---: | :---: | :---: | :---: | :---: |\n| 1 | 8 | 16 | 5 | 32 | 24 |\n| 2 | 6 | 12 | 7 | 24 | 18 |\n| 3 | 5 | 10 | 6 | 20 | 15 |\n| 4 | 7 | 14 | 9 | 28 | 21 |\n| 5 | 4 | 8 | 4 | 16 | 18 |",
+    "option_a": "Columns I, III and IV",
+    "option_b": "Columns I, II and IV",
+    "option_c": "Columns II, III and V",
+    "option_d": "Columns I, II and V",
     "correct_answer": "B",
     "question_number": 15,
-    "explanation": null
+    "explanation": "Looking at Columns I, II and IV across all rows:\n- Row 1: Col I = 8, Col II = 16 ($2 \\times 8$), Col IV = 32 ($4 \\times 8$)\n- Row 2: Col I = 6, Col II = 12 ($2 \\times 6$), Col IV = 24 ($4 \\times 6$)\n- Row 3: Col I = 5, Col II = 10 ($2 \\times 5$), Col IV = 20 ($4 \\times 5$)\n- Row 4: Col I = 7, Col II = 14 ($2 \\times 7$), Col IV = 28 ($4 \\times 7$)\n- Row 5: Col I = 4, Col II = 8 ($2 \\times 4$), Col IV = 16 ($4 \\times 4$)\n\nIn every row:\n$$\\text{Column II} = 2 \\times \\text{Column I}$$\n$$\\text{Column IV} = 4 \\times \\text{Column I}$$\n\nHence, **Columns I, II and IV** are related (Option B)."
   },
   {
     "id": 16017,

@@ -254,14 +254,14 @@
   {
     "id": 16523,
     "paper_id": 47,
-    "question_text": "Which of the following rows/columns are connected/related with each other in some way? Rows Columns I II III IV V I 4 23 16 11 64 II 6 20 24 17 96 III 8 53 32 50 128 IV 12 10 48 14 192 V 16 38 64 35 256",
+    "question_text": "Which of the following rows/columns are connected/related with each other in some way?\n\n| Row | Column I | Column II | Column III | Column IV | Column V |\n| :---: | :---: | :---: | :---: | :---: | :---: |\n| I | 4 | 23 | 16 | 11 | 64 |\n| II | 6 | 20 | 24 | 17 | 96 |\n| III | 8 | 53 | 32 | 50 | 128 |\n| IV | 12 | 10 | 48 | 14 | 192 |\n| V | 16 | 38 | 64 | 35 | 256 |",
     "option_a": "Columns I, II and V",
     "option_b": "Columns II, III and V",
-    "option_c": "Columns I, III and",
-    "option_d": "Columns II, III and V IV",
+    "option_c": "Columns I, III and V",
+    "option_d": "Columns II, III and IV",
     "correct_answer": "C",
     "question_number": 22,
-    "explanation": null
+    "explanation": "Looking at Columns I, III and V across all rows:\n- Column III = $4 \\times \\text{Column I}$\n- Column V = $16 \\times \\text{Column I}$\n\nIn every single row, Columns I, III and V maintain the constant ratio 1 : 4 : 16.\n\nHence, **Columns I, III and V** are connected (Option C)."
   },
   {
     "id": 16524,

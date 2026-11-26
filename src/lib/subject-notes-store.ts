@@ -6,37 +6,138 @@ import {
   getSiteSettingCached,
   primeSiteSettingCache,
 } from "./site-settings";
+import {
+  DEFAULT_NOTE_CATEGORIES,
+  NoteCategory,
+  ResolvedNoteCategory,
+  SubjectNote,
+  slugifyNoteCategoryId,
+} from "./subject-notes-types";
 
-export interface SubjectNote {
-  id: string;
-  title: string;
-  hindi_title?: string;
-  exam: string; // "ssc-cgl" | "ssc-chsl" | "ssc-cpo" | "ssc-mts" | "all"
-  exam_name: string; // "SSC CGL", "SSC CHSL", "All SSC Exams", etc.
-  subject: string; // "quant" | "reasoning" | "english" | "ga" | "computer"
-  subject_name: string; // "Quantitative Aptitude", "General Awareness", etc.
-  topic: string; // "Geometry", "Modern History", "Number System"
-  description: string;
-  pdf_url: string; // Direct link or Supabase storage link
-  pdf_url_hindi?: string;
-  html_url?: string;
-  html_url_hindi?: string;
-  slug?: string;
-  reader_url?: string;
-  file_size?: string; // "2.4 MB"
-  page_count?: number; // 24
-  language: "Bilingual" | "English" | "Hindi";
-  is_free: boolean;
-  is_featured?: boolean;
-  downloads_count?: number;
-  sort_order: number;
-  is_active: boolean;
-  created_at: string;
-  updated_at: string;
-}
+export * from "./subject-notes-types";
 
 const NOTES_FILE = path.join(process.cwd(), "src", "data", "subject_notes.json");
 const SETTING_KEY = "subject_notes";
+const CATEGORIES_SETTING_KEY = "note_categories";
+
+function mergeConfiguredCategories(saved: unknown): NoteCategory[] {
+  const byId = new Map<string, NoteCategory>();
+  DEFAULT_NOTE_CATEGORIES.forEach((cat) => byId.set(cat.id, { ...cat }));
+  if (Array.isArray(saved)) {
+    saved.forEach((raw: any, idx) => {
+      if (!raw || !raw.id) return;
+      const id = String(raw.id).trim().toLowerCase();
+      if (!id) return;
+      const existing = byId.get(id);
+      byId.set(id, {
+        id,
+        name: String(raw.name || existing?.name || id).trim(),
+        icon: raw.icon || existing?.icon || "📚",
+        color: raw.color || existing?.color || "blue",
+        sort_order: typeof raw.sort_order === "number" ? raw.sort_order : existing?.sort_order ?? 20 + idx,
+        is_custom: raw.is_custom !== undefined ? Boolean(raw.is_custom) : !DEFAULT_NOTE_CATEGORIES.some((d) => d.id === id),
+      });
+    });
+  }
+  return Array.from(byId.values()).sort((a, b) => (a.sort_order ?? 99) - (b.sort_order ?? 99));
+}
+
+export function getConfiguredNoteCategories(): NoteCategory[] {
+  const cached = getSiteSettingCached<NoteCategory[] | null>(CATEGORIES_SETTING_KEY, null);
+  return mergeConfiguredCategories(cached);
+}
+
+export async function getConfiguredNoteCategoriesAsync(): Promise<NoteCategory[]> {
+  const saved = await getSiteSettingAsync<NoteCategory[]>(CATEGORIES_SETTING_KEY, []);
+  return mergeConfiguredCategories(saved);
+}
+
+export function resolveNoteCategories(
+  notes: SubjectNote[],
+  configured: NoteCategory[]
+): ResolvedNoteCategory[] {
+  const map = new Map<string, ResolvedNoteCategory>();
+  configured.forEach((cat) => {
+    map.set(cat.id.toLowerCase(), { ...cat, count: 0 });
+  });
+
+  notes.forEach((note) => {
+    const rawId = (note.subject || "general").trim().toLowerCase();
+    const existing = map.get(rawId);
+    if (existing) {
+      existing.count += 1;
+      if (!existing.name && note.subject_name) {
+        existing.name = note.subject_name;
+      }
+    } else {
+      map.set(rawId, {
+        id: rawId,
+        name: note.subject_name || rawId.replace(/-/g, " "),
+        icon: "📚",
+        color: "blue",
+        sort_order: map.size + 50,
+        is_custom: true,
+        count: 1,
+      });
+    }
+  });
+
+  return Array.from(map.values()).sort((a, b) => {
+    if ((a.sort_order ?? 99) !== (b.sort_order ?? 99)) {
+      return (a.sort_order ?? 99) - (b.sort_order ?? 99);
+    }
+    return a.name.localeCompare(b.name);
+  });
+}
+
+export async function getResolvedNoteCategoriesAsync(
+  notes: SubjectNote[]
+): Promise<ResolvedNoteCategory[]> {
+  const configured = await getConfiguredNoteCategoriesAsync();
+  return resolveNoteCategories(notes, configured);
+}
+
+export async function saveNoteCategoryAsync(
+  input: Partial<NoteCategory>
+): Promise<NoteCategory> {
+  const current = await getConfiguredNoteCategoriesAsync();
+  const cleanName = String(input.name || "").trim();
+  const id = (input.id ? slugifyNoteCategoryId(input.id) : slugifyNoteCategoryId(cleanName));
+  const idx = current.findIndex((c) => c.id === id);
+  const existing = idx !== -1 ? current[idx] : null;
+  const savedItem: NoteCategory = {
+    id,
+    name: cleanName || existing?.name || id,
+    icon: input.icon?.trim() || existing?.icon || "📚",
+    color: input.color?.trim() || existing?.color || "blue",
+    sort_order:
+      typeof input.sort_order === "number"
+        ? input.sort_order
+        : existing?.sort_order ?? current.length + 1,
+    is_custom: existing ? Boolean(existing.is_custom || input.is_custom) : true,
+  };
+
+  if (idx !== -1) {
+    current[idx] = savedItem;
+  } else {
+    current.push(savedItem);
+  }
+
+  await saveSiteSettingAsync(CATEGORIES_SETTING_KEY, current);
+  return savedItem;
+}
+
+export async function deleteNoteCategoryAsync(id: string): Promise<boolean> {
+  const targetId = id.trim().toLowerCase();
+  const saved = await getSiteSettingAsync<NoteCategory[]>(CATEGORIES_SETTING_KEY, []);
+  if (!Array.isArray(saved) || saved.length === 0) return false;
+  const filtered = saved.filter((c) => c.id.toLowerCase() !== targetId);
+  if (filtered.length !== saved.length) {
+    await saveSiteSettingAsync(CATEGORIES_SETTING_KEY, filtered);
+    return true;
+  }
+  return false;
+}
 
 function getLocalFileFallback(): SubjectNote[] {
   try {
@@ -158,7 +259,7 @@ function buildNewNote(data: Partial<SubjectNote>, now: string, currentLength: nu
     exam: data.exam || "ssc-cgl",
     exam_name: data.exam_name || "SSC CGL",
     subject: data.subject || "quant",
-    subject_name: data.subject_name || "Quantitative Aptitude",
+    subject_name: data.subject_name || data.subject || "Quantitative Aptitude",
     topic: data.topic || "General",
     description: data.description || "",
     pdf_url: data.pdf_url || "",

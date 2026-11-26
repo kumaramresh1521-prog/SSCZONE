@@ -218,14 +218,14 @@
   {
     "id": 14720,
     "paper_id": 29,
-    "question_text": "Identify the alternative set of numbers that correctly codes the word. The code uses [Row, Column] format. | | 1 | 2 | 3 | 4 | 5 | 6 | 7 | |---|---|---|---|---|---|---|---| | 1 | F | R | J | E | M | D | S | | 2 | B | O | T | T | L | E | R | | 3 | C | A | N | D | I | E | P | | 4 | J | U | M | B | L | Y | O | | 5 | W | O | N | D | E | R | S | | 6 | G | A | R | D | E | N | X | | 7 | P | L | A | N | E | T | Q | What is the correct code for \"MANIFEST\"?",
+    "question_text": "Identify the alternative set of numbers that correctly codes the word. The code uses [Row, Column] format.\n\n| | 1 | 2 | 3 | 4 | 5 | 6 | 7 |\n|---|---|---|---|---|---|---|---|\n| 1 | F | R | J | E | M | D | S |\n| 2 | B | O | T | T | L | E | R |\n| 3 | C | A | N | D | I | E | P |\n| 4 | J | U | M | B | L | Y | O |\n| 5 | W | O | N | D | E | R | S |\n| 6 | G | A | R | D | E | N | X |\n| 7 | P | L | A | N | E | T | Q |\n\nWhat is the correct code for \"MANIFEST\"?",
     "option_a": "(4,3)(3,2)(7,4)(3,5)(3,1)(2,5)(5,7)(4,3)",
     "option_b": "(4,3)(3,2)(7,4)(3,5)(1,4)(2,6)(5,6)(2,4)",
     "option_c": "(4,3)(3,2)(7,4)(3,5)(1,1)(2,6)(5,7)(2,3)",
     "option_d": "(4,3)(3,2)(7,4)(3,5)(4,1)(3,1)(5,6)(2,7)",
     "correct_answer": "C",
     "question_number": 19,
-    "explanation": "Matrix coordinates for M-A-N-I-F-E-S-T correspond correctly to (4,3)(3,2)(7,4)(3,5)(1,1)(2,6)(5,7)(2,3)."
+    "explanation": "Matrix coordinates for M-A-N-I-F-E-S-T:\n- M: (4,3)\n- A: (3,2)\n- N: (7,4)\n- I: (3,5)\n- F: (1,1)\n- E: (2,6)\n- S: (5,7)\n- T: (2,3)\n\nHence, Option C is correct."
   },
   {
     "id": 14721,

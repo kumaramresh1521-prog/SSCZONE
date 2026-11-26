@@ -62,26 +62,24 @@ export async function POST(request: Request) {
       meta,
     };
 
-    // 1. Try dedicated question_reports table
+    // 1. Try dedicated question_reports table (supports logged in users or anonymous guests with user_id = null)
     let inserted = false;
-    if (user?.id) {
-      try {
-        const { error: qrError } = await supabaseAdmin
-          .from("question_reports")
-          .insert({
-            question_id: numericQuestionId,
-            user_id: user.id,
-            reason: typeof reason === "string" ? reason.slice(0, 120) : "other",
-            description: typeof description === "string" ? description : null,
-            status: "pending",
-          });
+    try {
+      const { error: qrError } = await supabaseAdmin
+        .from("question_reports")
+        .insert({
+          question_id: numericQuestionId,
+          user_id: user?.id ?? null,
+          reason: typeof reason === "string" ? reason.slice(0, 120) : "other",
+          description: typeof description === "string" ? description : null,
+          status: "pending",
+        });
 
-        if (!qrError) {
-          inserted = true;
-        }
-      } catch {
-        // Table doesn't exist yet or foreign key constraint, proceed to robust fallback
+      if (!qrError) {
+        inserted = true;
       }
+    } catch {
+      // Proceed to fallback
     }
 
     // 2. Persistent Supabase fallback using system-records in blogs table
@@ -142,6 +140,28 @@ export async function GET(request: Request) {
         .order("created_at", { ascending: false });
 
       if (!qrErr && qrData) {
+        // Enrich any reports that belong to paper_questions instead of questions
+        const missingIds = qrData.filter((r) => !r.question).map((r) => r.question_id).filter(Boolean);
+        if (missingIds.length > 0) {
+          const { data: pqData } = await supabaseAdmin
+            .from("paper_questions")
+            .select("id, question_text, correct_answer, paper_id, question_number, paper:previous_papers(title)")
+            .in("id", missingIds);
+
+          const pqMap = new Map((pqData || []).map((p: any) => [p.id, p]));
+          for (const r of qrData) {
+            if (!r.question && pqMap.has(r.question_id)) {
+              const pq: any = pqMap.get(r.question_id);
+              r.question = {
+                question_text: pq.question_text,
+                correct_answer: pq.correct_answer,
+                paper_id: pq.paper_id,
+                paper_title: pq.paper?.title,
+                question_number: pq.question_number,
+              };
+            }
+          }
+        }
         reportsList.push(...qrData);
       }
     } catch {}
@@ -217,16 +237,23 @@ export async function PATCH(request: Request) {
       return NextResponse.json({ error: "id and status are required" }, { status: 400 });
     }
 
-    if (record_source === "blogs_sys") {
+    if (record_source === "blogs_sys" || (typeof id === "string" && id.includes("-"))) {
       // Fetch existing content and update status
       const { data: blogRow } = await supabaseAdmin.from("blogs").select("content").eq("id", id).single();
       if (blogRow?.content) {
-        const parsed = JSON.parse(blogRow.content);
-        parsed.status = status;
-        await supabaseAdmin
-          .from("blogs")
-          .update({ content: JSON.stringify(parsed), updated_at: new Date().toISOString() })
-          .eq("id", id);
+        try {
+          const parsed = JSON.parse(blogRow.content);
+          parsed.status = status;
+          await supabaseAdmin
+            .from("blogs")
+            .update({ content: JSON.stringify(parsed), updated_at: new Date().toISOString() })
+            .eq("id", id);
+        } catch {
+          await supabaseAdmin
+            .from("blogs")
+            .update({ updated_at: new Date().toISOString() })
+            .eq("id", id);
+        }
       }
     } else {
       await supabaseAdmin

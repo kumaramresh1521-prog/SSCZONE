@@ -663,13 +663,13 @@
     "paper_id": 67,
     "question_number": 56,
     "section": "Quantitative Aptitude",
-    "question_text": "Express sin 74° + tan 74° in terms of trigonometric ratios of angles between 0° and 45°.",
-    "option_a": "![Option A](/images/pyq/2024/ssc-cgl-2024-11-september-2024-shift-3_p13_img7.png)",
-    "option_b": "![Option B](/images/pyq/2024/ssc-cgl-2024-11-september-2024-shift-3_p13_img8.png)",
-    "option_c": "![Option C](/images/pyq/2024/ssc-cgl-2024-11-september-2024-shift-3_p13_img9.png)",
-    "option_d": "![Option D](/images/pyq/2024/ssc-cgl-2024-11-september-2024-shift-3_p13_img10.png)",
-    "correct_answer": "D",
-    "explanation": null
+    "question_text": "**Table – Daily Wages of 5 Workers Over 4 Days**\n\n| Day | Worker A | Worker B | Worker C | Worker D | Worker E |\n| :--- | :---: | :---: | :---: | :---: | :---: |\n| Day 1 | 200 | 180 | 220 | 160 | 190 |\n| Day 2 | 210 | 175 | 230 | 170 | 195 |\n| Day 3 | 190 | 185 | 215 | 180 | 200 |\n| Day 4 | 220 | 190 | 225 | 175 | 205 |\n\n**Q:** What is the average daily earning of Worker C?\n\n---\n\n**तालिका - 5 श्रमिकों की 4 दिनों की दैनिक मजदूरी**\n\n**प्रश्न:** श्रमिक C की औसत दैनिक आय कितनी है?",
+    "option_a": "222.5",
+    "option_b": "222",
+    "option_c": "227.5",
+    "option_d": "215",
+    "correct_answer": "A",
+    "explanation": "**Calculation of Average Daily Earning of Worker C:**\n- Day 1: 220\n- Day 2: 230\n- Day 3: 215\n- Day 4: 225\n\n$$\\text{Total Earnings of C} = 220 + 230 + 215 + 225 = 890$$\n$$\\text{Average Daily Earning} = \\frac{890}{4} = 222.5$$\n\n**Correct Answer:** Option (A) 222.5"
   },
   {
     "paper_id": 67,

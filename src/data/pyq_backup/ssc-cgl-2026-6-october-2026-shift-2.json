@@ -170,14 +170,14 @@
   {
     "id": 15216,
     "paper_id": 34,
-    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. | 50 | 33 | 47 | | 62 | 44 | 58 | | 39 | ? | 36 |",
+    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly.\n\n| 50 | 33 | 47 |\n| 62 | 44 | 58 |\n| 39 | ? | 36 |",
     "option_a": "11",
     "option_b": "22",
     "option_c": "33",
     "option_d": "44",
-    "correct_answer": "B",
+    "correct_answer": "C",
     "question_number": 15,
-    "explanation": null
+    "explanation": "Row rule: $(Col_1 - Col_3) \\times 11 = Col_2$.\n- Row 1: $(50 - 47) \\times 11 = 3 \\times 11 = 33$\n- Row 2: $(62 - 58) \\times 11 = 4 \\times 11 = 44$\n- Row 3: $(39 - 36) \\times 11 = 3 \\times 11 = 33$\n\nHence, the missing number is **33** (Option C)."
   },
   {
     "id": 15217,

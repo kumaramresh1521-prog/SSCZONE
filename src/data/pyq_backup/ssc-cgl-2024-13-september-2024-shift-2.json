@@ -783,13 +783,13 @@
     "paper_id": 72,
     "question_number": 66,
     "section": "Quantitative Aptitude",
-    "question_text": "ABC is an equilateral triangle. P, Q and R are the mid-points of sides AB, BC and CA, respectively. If the length of the side of the triangle ABC is 11 cm, then the area ![Inline](/images/pyq/2024/ssc-cgl-2024-13-september-2024-shift-2_p11_img1.png) of ![Inline](/images/pyq/2024/ssc-cgl-2024-13-september-2024-shift-2_p11_img2.png) is:",
-    "option_a": "![Option A](/images/pyq/2024/ssc-cgl-2024-13-september-2024-shift-2_p11_img3.png)",
-    "option_b": "![Option B](/images/pyq/2024/ssc-cgl-2024-13-september-2024-shift-2_p11_img4.png)",
-    "option_c": "![Option C](/images/pyq/2024/ssc-cgl-2024-13-september-2024-shift-2_p11_img5.png)",
-    "option_d": "![Option D](/images/pyq/2024/ssc-cgl-2024-13-september-2024-shift-2_p11_img6.png)",
+    "question_text": "ABC is an equilateral triangle. P, Q and R are the mid-points of sides AB, BC and CA, respectively. If the length of the side of the triangle ABC is 11 cm, then the area (in $\\text{cm}^2$) of $\\triangle PQR$ is:",
+    "option_a": "$\\frac{21\\sqrt{3}}{16}$",
+    "option_b": "$\\frac{11\\sqrt{3}}{16}$",
+    "option_c": "$\\frac{121\\sqrt{3}}{16}$",
+    "option_d": "$\\frac{111\\sqrt{3}}{16}$",
     "correct_answer": "C",
-    "explanation": null
+    "explanation": "**Key Geometry Concept:**\nThe triangle formed by joining the mid-points of the sides of a triangle has an area equal to $\\frac{1}{4}$ of the area of the original triangle.\n\n**Step-by-Step Solution:**\n1. Area of equilateral $\\triangle ABC$ with side $a = 11\\text{ cm}$:\n   $$\\text{Area}(\\triangle ABC) = \\frac{\\sqrt{3}}{4} a^2 = \\frac{\\sqrt{3}}{4} \\times 11^2 = \\frac{121\\sqrt{3}}{4}\\text{ cm}^2$$\n2. Since $P, Q, R$ are mid-points:\n   $$\\text{Area}(\\triangle PQR) = \\frac{1}{4} \\times \\text{Area}(\\triangle ABC) = \\frac{1}{4} \\times \\frac{121\\sqrt{3}}{4} = \\frac{121\\sqrt{3}}{16}\\text{ cm}^2$$\n\n**Correct Answer:** Option (C) $\\frac{121\\sqrt{3}}{16}$"
   },
   {
     "paper_id": 72,

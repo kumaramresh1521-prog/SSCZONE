@@ -795,13 +795,13 @@
     "paper_id": 92,
     "question_number": 67,
     "section": "Quantitative Aptitude",
-    "question_text": "In a circle with center O, an arc ABC subtends an angle of ![Inline](/images/pyq/2024/ssc-cgl-2024-26-september-2024-shift-2_p14_img4.png) at the centre of the circle. The chord AB is produced to a point P. Then, the measure of ![Inline](/images/pyq/2024/ssc-cgl-2024-26-september-2024-shift-2_p14_img5.png) is:",
-    "option_a": "![Option A](/images/pyq/2024/ssc-cgl-2024-26-september-2024-shift-2_p14_img6.png)",
-    "option_b": "![Option B](/images/pyq/2024/ssc-cgl-2024-26-september-2024-shift-2_p14_img7.png)",
-    "option_c": "![Option C](/images/pyq/2024/ssc-cgl-2024-26-september-2024-shift-2_p14_img8.png)",
-    "option_d": "![Option D](/images/pyq/2024/ssc-cgl-2024-26-september-2024-shift-2_p14_img9.png)",
+    "question_text": "In a circle with center $O$, an arc $ABC$ subtends an angle of $138^\\circ$ at the centre of the circle. The chord $AB$ is produced to a point $P$. Then, the measure of $\\angle CBP$ is:",
+    "option_a": "$108^\\circ$",
+    "option_b": "$42^\\circ$",
+    "option_c": "$111^\\circ$",
+    "option_d": "$69^\\circ$",
     "correct_answer": "D",
-    "explanation": null
+    "explanation": "**Circle Theorem:**\nThe angle subtended by an arc at the circumference is half the angle subtended by it at the centre:\n$$\\angle ACB = \\frac{1}{2} \\times 138^\\circ = 69^\\circ$$\nIn cyclic geometry, the exterior angle at a vertex when a chord is produced equals the interior angle subtended by the arc:\n$$\\angle CBP = \\frac{1}{2} \\times 138^\\circ = 69^\\circ$$\n\n**Correct Answer:** Option (D) $69^\\circ$"
   },
   {
     "paper_id": 92,

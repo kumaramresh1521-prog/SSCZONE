@@ -38,14 +38,14 @@
   {
     "id": 14905,
     "paper_id": 31,
-    "question_text": "Given in the table are the number codes for the given letters. Select the combination of numbers so that the letters arranged accordingly will form a meaningful word. 1 2 3 4 5 6 A E C R T U",
+    "question_text": "Given in the table are the number codes for the given letters. Select the combination of numbers so that the letters arranged accordingly will form a meaningful word.\n\n| 1 | 2 | 3 | 4 | 5 | 6 |\n| :---: | :---: | :---: | :---: | :---: | :---: |\n| A | E | C | R | T | U |",
     "option_a": "3, 4, 2, 1, 5, 6, 6, 2",
     "option_b": "3, 2, 2, 1, 5, 6, 4, 2",
     "option_c": "3, 4, 2, 1, 5, 6, 4, 2",
     "option_d": "3, 4, 2, 5, 5, 6, 4, 2",
     "correct_answer": "C",
     "question_number": 4,
-    "explanation": null
+    "explanation": "The meaningful English word is **CREATURE**:\n- C = 3, R = 4, E = 2, A = 1, T = 5, U = 6, R = 4, E = 2\n- Code sequence: 3, 4, 2, 1, 5, 6, 4, 2 (Option C)."
   },
   {
     "id": 14906,
@@ -206,14 +206,14 @@
   {
     "id": 14919,
     "paper_id": 31,
-    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 6 5 19 8 2 6 9 4 ?",
+    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly.\n\n| 6 | 5 | 19 |\n| 8 | 2 | 6 |\n| 9 | 4 | ? |",
     "option_a": "11",
     "option_b": "19",
     "option_c": "23",
     "option_d": "31",
     "correct_answer": "C",
     "question_number": 18,
-    "explanation": "Row pattern is (a * b) - (a + b) = c; for row 3: (9 * 4) - (9 + 4) = 36 - 13 = 23."
+    "explanation": "Row rule: $(a \\times b) - (a + b) = c$.\n- Row 1: $(6 \\times 5) - (6 + 5) = 30 - 11 = 19$\n- Row 2: $(8 \\times 2) - (8 + 2) = 16 - 10 = 6$\n- Row 3: $(9 \\times 4) - (9 + 4) = 36 - 13 = 23$\n\nHence, the missing number is **23** (Option C)."
   },
   {
     "id": 14920,

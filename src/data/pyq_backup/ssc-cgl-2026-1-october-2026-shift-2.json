@@ -74,14 +74,14 @@
   {
     "id": 14608,
     "paper_id": 28,
-    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 5 4 3 6 7 2 2 2 ? 15 14 6",
+    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly.\n\n| 5 | 4 | 3 |\n| 6 | 7 | 2 |\n| 2 | 2 | ? |\n| 15 | 14 | 6 |",
     "option_a": "2",
     "option_b": "1",
     "option_c": "5",
     "option_d": "4",
     "correct_answer": "B",
     "question_number": 7,
-    "explanation": "Column rule is (Row 1 × Row 2) / Row 3 = Row 4; (3 × 2) / 1 = 6."
+    "explanation": "Column rule: $(\\text{Row } 1 \\times \\text{Row } 2) / \\text{Row } 3 = \\text{Row } 4$.\n- Col 1: $(5 \\times 6) / 2 = 30 / 2 = 15$\n- Col 2: $(4 \\times 7) / 2 = 28 / 2 = 14$\n- Col 3: $(3 \\times 2) / ? = 6 \\implies 6 / ? = 6 \\implies ? = 1$\n\nHence, the missing number is **1** (Option B)."
   },
   {
     "id": 14609,
@@ -110,14 +110,14 @@
   {
     "id": 14611,
     "paper_id": 28,
-    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 2 3 4 4 9 2 8 27 1 ? 9 2",
+    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly.\n\n| 2 | 3 | 4 |\n| 4 | 9 | 2 |\n| 8 | 27 | 1 |\n| ? | 9 | 2 |",
     "option_a": "8",
     "option_b": "12",
     "option_c": "4",
     "option_d": "16",
     "correct_answer": "D",
     "question_number": 10,
-    "explanation": "Column 1 follows powers of 2 (2¹, 2², 2³, 2⁴ = 16)."
+    "explanation": "Column 1 follows successive powers of 2 down the column:\n- Row 1: $2^1 = 2$\n- Row 2: $2^2 = 4$\n- Row 3: $2^3 = 8$\n- Row 4: $2^4 = 16$\n\nHence, the missing number is **16** (Option D)."
   },
   {
     "id": 14612,

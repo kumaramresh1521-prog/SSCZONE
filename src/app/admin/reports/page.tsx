@@ -7,16 +7,20 @@ import { supabase } from "@/lib/supabase";
 import toast from "react-hot-toast";
 
 type QuestionReport = {
-  id: number;
+  id: number | string;
   question_id: number;
   user_id: string | null;
   reason: string;
   description: string | null;
   status: string;
   created_at: string;
+  record_source?: string;
   question?: {
     question_text: string;
-    topic_id: number;
+    topic_id?: number;
+    paper_id?: number;
+    paper_title?: string;
+    question_number?: number;
     correct_answer: string;
     option_a?: string;
     option_b?: string;
@@ -50,7 +54,7 @@ export default function AdminReportsPage() {
 
   // Edit Modal State
   const [editingQuestion, setEditingQuestion] = useState<FullQuestionData | null>(null);
-  const [editingReportId, setEditingReportId] = useState<number | null>(null);
+  const [editingReportId, setEditingReportId] = useState<number | string | null>(null);
   const [loadingQuestion, setLoadingQuestion] = useState(false);
   const [savingQuestion, setSavingQuestion] = useState(false);
 
@@ -85,7 +89,7 @@ export default function AdminReportsPage() {
     }
   }
 
-  async function openEditModal(questionId: number, reportId: number) {
+  async function openEditModal(questionId: number, reportId: number | string) {
     setEditingReportId(reportId);
     setLoadingQuestion(true);
     try {
@@ -203,12 +207,16 @@ export default function AdminReportsPage() {
     } catch {}
   }
 
-  async function deleteReport(reportId: number) {
+  async function deleteReport(reportId: number | string, recordSource?: string) {
     setReports((prev) => prev.filter((r) => r.id !== reportId));
     toast.success("Report deleted.");
 
     try {
-      await supabase.from("question_reports").delete().eq("id", reportId);
+      if (recordSource === "blogs_sys" || (typeof reportId === "string" && reportId.includes("-"))) {
+        await supabase.from("blogs").delete().eq("id", reportId);
+      } else {
+        await supabase.from("question_reports").delete().eq("id", reportId);
+      }
       const local = JSON.parse(localStorage.getItem("ssczone_local_reports") || "[]");
       const updatedLocal = local.filter((r: any, idx: number) => idx + 1 !== reportId && r.id !== reportId);
       localStorage.setItem("ssczone_local_reports", JSON.stringify(updatedLocal));
@@ -301,6 +309,16 @@ export default function AdminReportsPage() {
                   {/* Question snippet */}
                   {rep.question && (
                     <div className="rounded-xl border border-slate-800 bg-slate-950/80 p-3 text-xs text-slate-300">
+                      {rep.question.paper_title && (
+                        <div className="text-[11px] font-black text-amber-400 mb-1 flex items-center gap-1">
+                          <span>📄 {rep.question.paper_title}</span>
+                          {rep.question.question_number && (
+                            <span className="text-amber-200 bg-amber-950/60 px-1.5 py-0.5 rounded border border-amber-800/60 font-bold">
+                              Q.{rep.question.question_number}
+                            </span>
+                          )}
+                        </div>
+                      )}
                       <strong className="text-slate-400 block mb-0.5">Question Text:</strong>
                       "{rep.question.question_text.replace(/<[^>]*>?/gm, "")}"
                       <div className="mt-1 text-[11px] font-bold text-emerald-400">
@@ -322,7 +340,7 @@ export default function AdminReportsPage() {
                   
                   {/* Edit Question Button */}
                   <button
-                    onClick={() => openEditModal(rep.question_id, rep.id)}
+                    onClick={() => openEditModal(rep.question_id, rep.id as any)}
                     className="flex items-center gap-1.5 rounded-xl border border-blue-600/60 bg-blue-950/80 px-3.5 py-2 text-xs font-black text-blue-300 hover:bg-blue-900 transition-all cursor-pointer"
                   >
                     <Edit className="h-3.5 w-3.5" />
@@ -332,7 +350,7 @@ export default function AdminReportsPage() {
                   {/* Mark Resolved / Pending Toggle */}
                   {rep.status === "pending" ? (
                     <button
-                      onClick={() => updateStatus(rep.id, "resolved")}
+                      onClick={() => updateStatus(rep.id, "resolved", rep.record_source)}
                       className="flex items-center gap-1.5 rounded-xl border border-emerald-700 bg-emerald-950/80 px-3.5 py-2 text-xs font-black text-emerald-300 hover:bg-emerald-900 transition-all cursor-pointer shadow-xs"
                     >
                       <CheckCircle2 className="h-3.5 w-3.5" />
@@ -340,7 +358,7 @@ export default function AdminReportsPage() {
                     </button>
                   ) : (
                     <button
-                      onClick={() => updateStatus(rep.id, "pending")}
+                      onClick={() => updateStatus(rep.id, "pending", rep.record_source)}
                       title="Click to mark back as Pending"
                       className="flex items-center gap-1.5 rounded-xl border border-emerald-800 bg-emerald-950/60 px-3.5 py-2 text-xs font-bold text-emerald-400 hover:bg-slate-800 transition-all cursor-pointer"
                     >
@@ -351,7 +369,7 @@ export default function AdminReportsPage() {
 
                   {/* Delete Report */}
                   <button
-                    onClick={() => deleteReport(rep.id)}
+                    onClick={() => deleteReport(rep.id, rep.record_source)}
                     className="p-2 text-slate-500 hover:text-red-400 hover:bg-red-950/50 rounded-xl transition-all"
                     title="Delete report entry"
                   >

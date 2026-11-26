@@ -182,14 +182,14 @@
   {
     "id": 15817,
     "paper_id": 40,
-    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 10 3 17 7 6 29 2 5 8 ?",
+    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly.\n\n| 10 | 3 | 17 |\n| 7 | 6 | 29 |\n| 5 | 8 | ? |",
     "option_a": "17",
     "option_b": "19",
     "option_c": "27",
     "option_d": "29",
     "correct_answer": "C",
     "question_number": 16,
-    "explanation": null
+    "explanation": "Row rule: $(Col_1 \\times Col_2) - 13 = Col_3$.\n- Row 1: $(10 \\times 3) - 13 = 30 - 13 = 17$\n- Row 2: $(7 \\times 6) - 13 = 42 - 13 = 29$\n- Row 3: $(5 \\times 8) - 13 = 40 - 13 = 27$\n\nHence, the missing number is **27** (Option C)."
   },
   {
     "id": 15818,

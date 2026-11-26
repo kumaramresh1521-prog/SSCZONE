@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useMemo, useRef, useCallback } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import {
   Clock,
   Zap,
@@ -38,6 +39,7 @@ import CollectQuestionButton from "@/components/CollectQuestionButton";
 import { saveUserAttempt } from "@/lib/user-attempts-store";
 import { translateSingleQuestion } from "@/lib/translator";
 import { promptGuestLoginGate } from "@/components/GuestSessionGateModal";
+import { matchTopicByTitle } from "@/lib/topic-title-match";
 
 // Audio chime using Web Audio API (Zero external dependencies)
 function playChime(type: "tick" | "warning" | "finish" | "select") {
@@ -197,6 +199,27 @@ export default function SpeedTestClient() {
   const [reviewFilter, setReviewFilter] = useState<"all" | "correct" | "incorrect" | "skipped">("all");
 
   // Fetch initial config
+  const searchParams = useSearchParams();
+  const urlTopicTitle = (searchParams?.get("topicTitle") || "").trim();
+  const urlTopicResolvedRef = useRef(false);
+
+  // Synchronize state with URL parameters (e.g. ?subject=reasoning or ?mode=subject&count=50)
+  useEffect(() => {
+    if (!searchParams) return;
+    const sub = searchParams.get("subject");
+    const m = searchParams.get("mode");
+    const cnt = searchParams.get("count");
+    if (sub && ["quant", "reasoning", "english", "ga"].includes(sub)) {
+      setSelectedSubject(sub as any);
+      setSelectedMode(m === "topic" ? "topic" : "subject");
+    } else if (m && ["random", "subject", "topic"].includes(m)) {
+      setSelectedMode(m as any);
+    }
+    if (cnt && [10, 25, 50].includes(Number(cnt))) {
+      setQuestionCount(Number(cnt));
+    }
+  }, [searchParams]);
+
   useEffect(() => {
     async function fetchConfig() {
       try {
@@ -241,6 +264,26 @@ export default function SpeedTestClient() {
       setSelectedTopicId(null);
     }
   }, [filteredTopics, selectedTopicId]);
+
+  // Honor ?topicTitle=... links (syllabus chapters, notes) by selecting the
+  // matching topic once config loads, so practice lands on the right chapter
+  // instead of whichever topic happens to sit first in the list.
+  useEffect(() => {
+    if (!urlTopicTitle || urlTopicResolvedRef.current || topics.length === 0) return;
+    if (selectedMode !== "topic") return;
+
+    const pool =
+      selectedSubject === "all"
+        ? topics
+        : topics.filter((t) => t.subject_key === selectedSubject);
+    const matched = matchTopicByTitle(pool, urlTopicTitle) || matchTopicByTitle(topics, urlTopicTitle);
+    if (!matched) return;
+
+    urlTopicResolvedRef.current = true;
+    setTopicSearchQuery("");
+    setSelectedSubject(matched.subject_key);
+    setSelectedTopicId(matched.id);
+  }, [urlTopicTitle, topics, selectedMode, selectedSubject]);
 
   // Current question helper
   const currentQ = questions[currentIndex] || null;
@@ -1093,7 +1136,14 @@ export default function SpeedTestClient() {
                 ) : (
                   <>
                     <Zap className="w-4 h-4 fill-white" />
-                    <span>Start Speed Test</span>
+                    <span>
+                      Start {questionCount} Qs{" "}
+                      {selectedMode === "random"
+                        ? "All-Rounder (Mixed 4-in-1)"
+                        : selectedMode === "subject"
+                        ? `${selectedSubject.toUpperCase()}`
+                        : "Topic"} Speed Test
+                    </span>
                     <ArrowRight className="w-4 h-4" />
                   </>
                 )}
@@ -1129,6 +1179,11 @@ export default function SpeedTestClient() {
                 <Brain className="w-3.5 h-3.5" />
                 <span className="truncate max-w-[120px] sm:max-w-none">{currentQ.subject}</span>
               </span>
+              {selectedMode === "random" && (
+                <span className="hidden sm:inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-amber-50 text-amber-700 border border-amber-200">
+                  Mixed 4-in-1
+                </span>
+              )}
 
               <div className="text-xs sm:text-sm font-extrabold text-slate-800">
                 Q. {currentIndex + 1} <span className="text-slate-400 font-normal">/ {questions.length}</span>

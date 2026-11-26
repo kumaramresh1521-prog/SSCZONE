@@ -5,6 +5,9 @@ import {
   saveSubjectNoteAsync,
   deleteSubjectNoteAsync,
   toggleSubjectNoteActiveAsync,
+  getResolvedNoteCategoriesAsync,
+  saveNoteCategoryAsync,
+  deleteNoteCategoryAsync,
 } from "@/lib/subject-notes-store";
 
 export const dynamic = "force-dynamic";
@@ -16,7 +19,8 @@ export async function GET(req: NextRequest) {
 
   try {
     const notes = await getSubjectNotesAsync(false);
-    return NextResponse.json({ success: true, notes }, {
+    const categories = await getResolvedNoteCategoriesAsync(notes);
+    return NextResponse.json({ success: true, notes, categories }, {
       headers: { "Cache-Control": "no-store, max-age=0" }
     });
   } catch (err: any) {
@@ -42,10 +46,43 @@ export async function POST(req: NextRequest) {
       }
 
       const saved = await saveSubjectNoteAsync(note);
+      const notes = await getSubjectNotesAsync(false);
+      const categories = await getResolvedNoteCategoriesAsync(notes);
       return NextResponse.json({
         success: true,
         note: saved,
+        categories,
         message: note.id ? "Note updated successfully!" : "New PDF Note published successfully!",
+      });
+    }
+
+    if (action === "save_category") {
+      const { category } = body;
+      if (!category || !category.name || !String(category.name).trim()) {
+        return NextResponse.json({ error: "Category name is required" }, { status: 400 });
+      }
+      const savedCategory = await saveNoteCategoryAsync(category);
+      const notes = await getSubjectNotesAsync(false);
+      const categories = await getResolvedNoteCategoriesAsync(notes);
+      return NextResponse.json({
+        success: true,
+        category: savedCategory,
+        categories,
+        message: `Category "${savedCategory.name}" saved!`,
+      });
+    }
+
+    if (action === "delete_category") {
+      const { id } = body;
+      if (!id) return NextResponse.json({ error: "Missing category ID" }, { status: 400 });
+      const deleted = await deleteNoteCategoryAsync(String(id));
+      const notes = await getSubjectNotesAsync(false);
+      const categories = await getResolvedNoteCategoriesAsync(notes);
+      return NextResponse.json({
+        success: true,
+        deleted,
+        categories,
+        message: deleted ? "Custom category removed!" : "Built-in category reset/kept.",
       });
     }
 

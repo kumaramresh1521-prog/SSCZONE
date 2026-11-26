@@ -891,13 +891,13 @@
     "paper_id": 61,
     "question_number": 75,
     "section": "Quantitative Aptitude",
-    "question_text": "![Figure](/images/pyq/2024/ssc-cgl-2024-9-september-2024-shift-3_p17_img1.png)",
-    "option_a": "![Option A](/images/pyq/2024/ssc-cgl-2024-9-september-2024-shift-3_p17_img2.png)",
-    "option_b": "![Option B](/images/pyq/2024/ssc-cgl-2024-9-september-2024-shift-3_p17_img3.png)",
-    "option_c": "![Option C](/images/pyq/2024/ssc-cgl-2024-9-september-2024-shift-3_p17_img4.png)",
-    "option_d": "![Option D](/images/pyq/2024/ssc-cgl-2024-9-september-2024-shift-3_p17_img5.png)",
+    "question_text": "Find the area (in $\\text{cm}^2$) of the sector whose perimeter is $\\frac{64}{3}\\text{ cm}$ and central angle is $60^\\circ$. (Use $\\pi = \\frac{22}{7}$)",
+    "option_a": "$\\frac{47}{3}$",
+    "option_b": "$\\frac{77}{3}$",
+    "option_c": "$\\frac{68}{3}$",
+    "option_d": "$\\frac{85}{3}$",
     "correct_answer": "B",
-    "explanation": null
+    "explanation": "**Key Formulae:**\n- Perimeter of a sector $= 2r + \\frac{\\theta}{360^\\circ} \\times 2\\pi r$\n- Area of a sector $= \\frac{\\theta}{360^\\circ} \\times \\pi r^2$\n\n**Step-by-Step Solution:**\n1. Substitute given values into the perimeter formula:\n   $$\\text{Perimeter} = 2r + \\frac{60^\\circ}{360^\\circ} \\times 2 \\times \\frac{22}{7} \\times r = 2r + \\frac{22}{21} r = \\frac{64}{21} r$$\n   Given that perimeter is $\\frac{64}{3}\\text{ cm}$:\n   $$\\frac{64}{21} r = \\frac{64}{3} \\implies \\frac{r}{21} = \\frac{1}{3} \\implies r = 7\\text{ cm}$$\n\n2. Now, calculate the area of the sector:\n   $$\\text{Area} = \\frac{60^\\circ}{360^\\circ} \\times \\frac{22}{7} \\times (7)^2 = \\frac{1}{6} \\times \\frac{22}{7} \\times 49 = \\frac{1}{6} \\times 154 = \\frac{77}{3}\\text{ cm}^2$$\n\n**Correct Answer:** Option (B) $\\frac{77}{3}$"
   },
   {
     "paper_id": 61,

@@ -134,14 +134,14 @@
   {
     "id": 15013,
     "paper_id": 32,
-    "question_text": "Match the following Emotional Intelligence dimensions with their characteristics: | List I (EI Dimensions): | List II\n\n(Characteristics): | | :--- | :--- | | Self-awareness | Knowledge of true feelings at the moment | | Self-management | Handling one's emotions to facilitate tasks | | Self-motivation | Staying on course towards desired goals | | Empathy | Being able to sense what others feel and want | | Social skills | Ability to guide others' emotions and actions |",
+    "question_text": "Match the following Emotional Intelligence dimensions with their characteristics:\n\n| List I (EI Dimensions) | List II (Characteristics) |\n| :--- | :--- |\n| a. Self-awareness | v. Knowledge of true feelings at the moment |\n| b. Self-management | iv. Handling one's emotions to facilitate tasks |\n| c. Self-motivation | ii. Staying on course towards desired goals |\n| d. Empathy | i. Being able to sense what others feel and want |\n| e. Social skills | iii. Ability to guide others' emotions and actions |",
     "option_a": "a-iii, b-iv, c-v, d-ii, e-i",
     "option_b": "a-i, b-ii, c-iii, d-v, e-iv",
     "option_c": "a-v, b-iv, c-ii, d-i, e-iii",
     "option_d": "a-ii, b-iii, c-iv, d-v, e-i",
     "correct_answer": "C",
     "question_number": 12,
-    "explanation": null
+    "explanation": "Emotional Intelligence dimensions correctly match as:\n- Self-awareness → Knowledge of true feelings at the moment (v)\n- Self-management → Handling one's emotions to facilitate tasks (iv)\n- Self-motivation → Staying on course towards desired goals (ii)\n- Empathy → Being able to sense what others feel and want (i)\n- Social skills → Ability to guide others' emotions and actions (iii)\n\nCorrect combination: a-v, b-iv, c-ii, d-i, e-iii (Option C)."
   },
   {
     "id": 15014,

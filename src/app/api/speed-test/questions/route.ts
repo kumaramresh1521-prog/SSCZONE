@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase-admin";
 import { getQuestionFingerprint } from "@/lib/question-dedup";
+import { getQuestionBankPoolCount, pickRandomWindowOffset, getQuestionBankTopicQuestionIds } from "@/lib/question-sampling";
+import { matchTopicByTitle } from "@/lib/topic-title-match";
 
 export const dynamic = "force-dynamic";
 
@@ -48,6 +50,57 @@ const SUBJECT_NAMES: Record<"quant" | "reasoning" | "english" | "ga", string> = 
   ga: "General Awareness",
 };
 
+// Chapter-title -> topic resolution.
+// Syllabus links only carry a human title (e.g. "LCM and HCF"). Once a matching
+// topic exists in the DB, chapter practice should use its Question Bank instead
+// of whole-subject PYQ backfill. Cached so newly added topics appear within
+// 5 minutes without any code change.
+type TopicTitleRow = { id: number; title: string; subject_id: number };
+let topicTitleIndex: { at: number; rows: TopicTitleRow[] } | null = null;
+
+async function getTopicTitleRows(): Promise<TopicTitleRow[]> {
+  if (topicTitleIndex && Date.now() - topicTitleIndex.at < 5 * 60 * 1000) {
+    return topicTitleIndex.rows;
+  }
+  const { data, error } = await supabaseAdmin
+    .from("topics")
+    .select("id, title, subject_id")
+    .eq("is_active", true);
+  if (error) {
+    console.error("Topic title index error:", error);
+    return topicTitleIndex?.rows || [];
+  }
+  topicTitleIndex = { at: Date.now(), rows: (data || []) as TopicTitleRow[] };
+  return topicTitleIndex.rows;
+}
+
+async function resolveTopicIdByTitle(
+  title: string,
+  subjectParam: "all" | "quant" | "reasoning" | "english" | "ga"
+): Promise<number | undefined> {
+  if (!title) return undefined;
+  const rows = await getTopicTitleRows();
+  if (rows.length === 0) return undefined;
+
+  let candidates = rows;
+  if (subjectParam !== "all") {
+    const allowed = new Set(SUBJECT_ID_MAP[subjectParam] || []);
+    candidates = rows.filter((row) => allowed.has(row.subject_id));
+  }
+
+  const coreSubjectId =
+    subjectParam === "all" ? null : { quant: 1, reasoning: 3, english: 2, ga: 4 }[subjectParam];
+  const coreCandidates =
+    coreSubjectId === null ? [] : candidates.filter((row) => row.subject_id === coreSubjectId);
+
+  const match =
+    (coreCandidates.length > 0 ? matchTopicByTitle(coreCandidates, title) : null) ||
+    matchTopicByTitle(candidates, title) ||
+    matchTopicByTitle(rows, title);
+
+  return match?.id;
+}
+
 function getTopicSubject(q: any): { topicTitle: string; subjectTitle: string } {
   const topicObj = Array.isArray(q?.topics) ? q?.topics[0] : q?.topics;
   const subjObj = Array.isArray(topicObj?.subjects) ? topicObj?.subjects[0] : topicObj?.subjects;
@@ -94,7 +147,7 @@ export async function GET(req: NextRequest) {
     const mode = (searchParams.get("mode") || "random") as "random" | "subject" | "topic";
     const subjectParam = (searchParams.get("subject") || "all") as "all" | "quant" | "reasoning" | "english" | "ga";
     const topicIdParam = searchParams.get("topicId");
-    const topicId = topicIdParam ? parseInt(topicIdParam, 10) : null;
+    let topicId = topicIdParam ? parseInt(topicIdParam, 10) : null;
     const requestedCount = Math.min(Math.max(parseInt(searchParams.get("count") || "25", 10), 5), 50);
     const userId = searchParams.get("userId") || "";
     const attemptId = searchParams.get("attemptId") || "";
@@ -150,6 +203,14 @@ export async function GET(req: NextRequest) {
       let resolvedSubjectKey: "quant" | "reasoning" | "english" | "ga" =
         subjectParam !== "all" ? subjectParam : "quant";
 
+      // Syllabus chapter links only pass a title. Resolve it to a real topic so
+      // the Question Bank is used automatically as soon as that chapter has
+      // questions - no manual tagging or code change needed.
+      if (!topicId && topicTitle) {
+        const resolvedTopicId = await resolveTopicIdByTitle(topicTitle, subjectParam);
+        if (resolvedTopicId) topicId = resolvedTopicId;
+      }
+
       // A. Lookup topic details from topics table
       if (topicId) {
         try {
@@ -176,14 +237,22 @@ export async function GET(req: NextRequest) {
 
       // B. Tier 1: Direct matches from Question Bank by topic_id
       if (topicId) {
-        const { data: qbRows, error: qbError } = await supabaseAdmin
-          .from("questions")
-          .select("id, question_text, question_text_hi, option_a, option_b, option_c, option_d, option_a_hi, option_b_hi, option_c_hi, option_d_hi, correct_answer, explanation, explanation_hi, image_url, option_a_image_url, option_b_image_url, option_c_image_url, option_d_image_url")
-          .eq("topic_id", topicId)
-          .eq("is_active", true)
-          .limit(requestedCount * 2);
+        const topicIds = await getQuestionBankTopicQuestionIds(topicId);
+        // Shuffle all IDs, then load a generous sample. Final shuffle in this
+        // route trims it to the exact test size. This makes every question in
+        // the topic equally eligible (no more repeating the first 50 rows).
+        const sampleSize = Math.max(requestedCount * 3, 75);
+        const sampledIds = shuffleArray(topicIds, seed + 7).slice(0, sampleSize);
 
-        if (qbError) console.error("Error fetching topic questions:", qbError);
+        let qbRows: any[] = [];
+        if (sampledIds.length > 0) {
+          const { data: qbData, error: qbError } = await supabaseAdmin
+            .from("questions")
+            .select("id, question_text, question_text_hi, option_a, option_b, option_c, option_d, option_a_hi, option_b_hi, option_c_hi, option_d_hi, correct_answer, explanation, explanation_hi, image_url, option_a_image_url, option_b_image_url, option_c_image_url, option_d_image_url")
+            .in("id", sampledIds);
+          if (qbError) console.error("Error fetching topic questions:", qbError);
+          qbRows = qbData || [];
+        }
 
         if (qbRows && qbRows.length > 0) {
           qbRows.forEach((q: any) => {
@@ -306,12 +375,19 @@ export async function GET(req: NextRequest) {
 
       // E. Tier 4: For English, also draw from Question Bank if still needed
       if (allQuestions.length < requestedCount && resolvedSubjectKey === "english") {
-        const randomQbOffset = Math.floor(Math.random() * 400);
+        const englishSubjectIds = [2, 7, 11];
+        // Scope to English subjects only (topics.subject_id in {2,7,11}) so we never
+        // mix quant/reasoning/GA questions into an English speed-test backfill.
+        const englishWindow = requestedCount - allQuestions.length + 10;
+        const englishPoolSize = await getQuestionBankPoolCount({ subjectIds: englishSubjectIds });
+        const englishOffset = pickRandomWindowOffset(englishPoolSize, englishWindow);
         const { data: qbFill } = await supabaseAdmin
           .from("questions")
-          .select("id, question_text, question_text_hi, option_a, option_b, option_c, option_d, option_a_hi, option_b_hi, option_c_hi, option_d_hi, correct_answer, explanation, explanation_hi, image_url")
+          .select("id, question_text, question_text_hi, option_a, option_b, option_c, option_d, option_a_hi, option_b_hi, option_c_hi, option_d_hi, correct_answer, explanation, explanation_hi, image_url, topics!inner(id, subject_id)")
+          .in("topics.subject_id", englishSubjectIds)
           .eq("is_active", true)
-          .range(randomQbOffset, randomQbOffset + (requestedCount - allQuestions.length + 10));
+          .order("id", { ascending: true })
+          .range(englishOffset, englishOffset + englishWindow - 1);
 
         (qbFill || []).forEach((q: any) => {
           const qId = `bank_${q.id}`;
@@ -349,7 +425,8 @@ export async function GET(req: NextRequest) {
       const pyqQuota = Math.floor(requestedCount * 0.5); // 50% PYQ
       const qbQuota = requestedCount - pyqQuota;        // 50% Question Bank
 
-      const [pyqRes, qbRes] = await Promise.all([
+      const qbWindow = Math.max(requestedCount * 2, 50);
+      const [pyqRes, qbPoolSize] = await Promise.all([
         supabaseAdmin
           .from("paper_questions")
           .select("id, paper_id, question_number, question_text, option_a, option_b, option_c, option_d, correct_answer, explanation")
@@ -358,13 +435,17 @@ export async function GET(req: NextRequest) {
           .lte("question_number", pyqRange.max)
           .limit(requestedCount * 2),
 
-        supabaseAdmin
-          .from("questions")
-          .select("id, question_text, question_text_hi, option_a, option_b, option_c, option_d, option_a_hi, option_b_hi, option_c_hi, option_d_hi, correct_answer, explanation, explanation_hi, image_url, option_a_image_url, option_b_image_url, option_c_image_url, option_d_image_url, topics!inner(id, title, subject_id)")
-          .in("topics.subject_id", targetQbSubjectIds)
-          .eq("is_active", true)
-          .limit(requestedCount * 2),
+        getQuestionBankPoolCount({ subjectIds: targetQbSubjectIds }),
       ]);
+
+      const qbOffset = pickRandomWindowOffset(qbPoolSize, qbWindow);
+      const { data: qbRows } = await supabaseAdmin
+        .from("questions")
+        .select("id, question_text, question_text_hi, option_a, option_b, option_c, option_d, option_a_hi, option_b_hi, option_c_hi, option_d_hi, correct_answer, explanation, explanation_hi, image_url, option_a_image_url, option_b_image_url, option_c_image_url, option_d_image_url, topics!inner(id, title, subject_id)")
+        .in("topics.subject_id", targetQbSubjectIds)
+        .eq("is_active", true)
+        .order("id", { ascending: true })
+        .range(qbOffset, qbOffset + qbWindow - 1);
 
       const shuffledPyqs = shuffleArray(pyqRes.data || [], seed + 17);
       let pyqAdded = 0;
@@ -392,7 +473,7 @@ export async function GET(req: NextRequest) {
         if (added) pyqAdded++;
       }
 
-      const shuffledQb = shuffleArray(qbRes.data || [], seed + 29);
+      const shuffledQb = shuffleArray(qbRows || [], seed + 29);
       let qbAdded = 0;
       for (const q of shuffledQb) {
         if (allQuestions.length >= requestedCount || qbAdded >= qbQuota) break;
@@ -462,6 +543,12 @@ export async function GET(req: NextRequest) {
         { key: "english", name: "English Comprehension", min: 76, max: 100 },
       ];
 
+      // Count each section's Question Bank pool once so every attempt samples
+      // a random window across the whole pool (not just its first N rows).
+      const sectionPoolCounts = await Promise.all(
+        SECTIONS.map((sec) => getQuestionBankPoolCount({ subjectIds: SUBJECT_ID_MAP[sec.key] || [1] }))
+      );
+
       const basePerSec = Math.floor(requestedCount / 4);
       const remainder = requestedCount % 4;
 
@@ -516,13 +603,15 @@ export async function GET(req: NextRequest) {
 
         // 2. Fetch from Question Bank for this specific section (both pools together!)
         const targetQbSubjectIds = SUBJECT_ID_MAP[sec.key] || [1];
-        const randomQbOffset = Math.floor(Math.random() * 400);
+        const qbWindow = 31;
+        const qbOffset = pickRandomWindowOffset(sectionPoolCounts[sIdx], qbWindow);
         const { data: qbSecRows } = await supabaseAdmin
           .from("questions")
           .select("id, question_text, question_text_hi, option_a, option_b, option_c, option_d, option_a_hi, option_b_hi, option_c_hi, option_d_hi, correct_answer, explanation, explanation_hi, image_url, option_a_image_url, option_b_image_url, option_c_image_url, option_d_image_url, topics!inner(id, title, subject_id)")
           .in("topics.subject_id", targetQbSubjectIds)
           .eq("is_active", true)
-          .range(randomQbOffset, randomQbOffset + 30);
+          .order("id", { ascending: true })
+          .range(qbOffset, qbOffset + qbWindow - 1);
 
         const shuffledQb = shuffleArray(qbSecRows || [], seed + sIdx * 53);
         let qbAdded = 0;

@@ -194,14 +194,14 @@
   {
     "id": 15618,
     "paper_id": 38,
-    "question_text": "Identify the alternative set of numbers that correctly codes the word. The code uses [Row, Column] format. | | 1 | 2 | 3 | 4 | 5 | 6 | 7 | |---|---|---|---|---|---|---|---| | 1 | S | T | R | E | A | M | P | | 2 | H | O | U | S | E | L | D | | 3 | B | R | I | G | H | T | N | | 4 | C | R | E | A | T | O | R | | 5 | W | I | N | D | O | W | S | | 6 | J | A | C | K | E | T | Q | | 7 | F | A | M | O | U | S | X | What is the correct code for \"SOLUTION\"?",
+    "question_text": "Identify the alternative set of numbers that correctly codes the word. The code uses [Row, Column] format.\n\n| | 1 | 2 | 3 | 4 | 5 | 6 | 7 |\n|---|---|---|---|---|---|---|---|\n| 1 | S | T | R | E | A | M | P |\n| 2 | H | O | U | S | E | L | D |\n| 3 | B | R | I | G | H | T | N |\n| 4 | C | R | E | A | T | O | R |\n| 5 | W | I | N | D | O | W | S |\n| 6 | J | A | C | K | E | T | Q |\n| 7 | F | A | M | O | U | S | X |\n\nWhat is the correct code for \"SOLUTION\"?",
     "option_a": "(7,6)(2,2)(2,6)(2,1)(3,4)(5,2)(1,4)(3,5)",
     "option_b": "(7,6)(2,2)(2,6)(4,3)(3,6)(1,2)(5,4)(3,6)",
     "option_c": "(7,6)(2,2)(2,6)(2,3)(3,6)(5,2)(7,4)(3,7)",
     "option_d": "(7,6)(2,2)(2,6)(1,3)(2,4)(5,1)(5,4)(3,7)",
     "correct_answer": "C",
     "question_number": 17,
-    "explanation": null
+    "explanation": "Matrix coordinates for S-O-L-U-T-I-O-N:\n- S: (7,6)\n- O: (2,2)\n- L: (2,6)\n- U: (2,3)\n- T: (3,6)\n- I: (5,2)\n- O: (7,4)\n- N: (3,7)\n\nHence, Option C is correct."
   },
   {
     "id": 15619,

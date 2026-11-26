@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import SpeedTestClient from "./SpeedTestClient";
 import { buildPageMetadata } from "@/lib/seo-store";
 
@@ -19,5 +20,9 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function SpeedTestPage() {
-  return <SpeedTestClient />;
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-slate-50 flex items-center justify-center text-slate-500 font-bold">Loading Speed Test...</div>}>
+      <SpeedTestClient />
+    </Suspense>
+  );
 }

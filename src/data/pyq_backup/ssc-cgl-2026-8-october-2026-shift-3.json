@@ -26,14 +26,14 @@
   {
     "id": 15904,
     "paper_id": 41,
-    "question_text": "If numbers starting with 732 are Omega numbers, how many Omega numbers are there in the below series? | 732819 | 732100 | 745668 | 732547 | 732890 | | 712345 | 732123 | 732456 | 712732 | 732001 | | 732999 | 732333 | 822732 | 732654 | 732321 |",
+    "question_text": "If numbers starting with 732 are Omega numbers, how many Omega numbers are there in the below series?\n\n| 732819 | 732100 | 745668 | 732547 | 732890 |\n| 712345 | 732123 | 732456 | 712732 | 732001 |\n| 732999 | 732333 | 822732 | 732654 | 732321 |",
     "option_a": "10",
     "option_b": "11",
     "option_c": "12",
     "option_d": "13",
     "correct_answer": "C",
     "question_number": 3,
-    "explanation": null
+    "explanation": "Scanning each number starting with prefix '732':\n- Row 1: 732819, 732100, 732547, 732890 (4 numbers)\n- Row 2: 732123, 732456, 732001 (3 numbers)\n- Row 3: 732999, 732333, 732654, 732321 (4 numbers)\n- (712732 and 822732 contain 732 but do not start with it; 745668 and 712345 do not start with 732).\nTotal count = 12 (Option C)."
   },
   {
     "id": 15905,

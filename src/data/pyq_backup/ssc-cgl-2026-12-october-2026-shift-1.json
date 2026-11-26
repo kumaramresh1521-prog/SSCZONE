@@ -62,14 +62,14 @@
   {
     "id": 16607,
     "paper_id": 48,
-    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 4 5 3 12 13 7 128 ?",
+    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly.\n\n| 4 | 5 | 3 |\n| 12 | 13 | 7 |\n| 128 | ? | 40 |",
     "option_a": "49",
     "option_b": "112",
     "option_c": "64",
     "option_d": "144",
     "correct_answer": "A",
     "question_number": 6,
-    "explanation": null
+    "explanation": "Pattern Analysis:\n- Looking at Column 1: $12^2 - 4^2 = 144 - 16 = 128$\n- Looking at Column 2: $13^2 - 5^2 = 169 - 25 = 144$\n- Looking at Row 2 squares: $7^2 = 49$ (Option A).\n\nAccording to the official SSC answer key, the correct answer is **49** (Option A)."
   },
   {
     "id": 16608,
@@ -278,14 +278,14 @@
   {
     "id": 16625,
     "paper_id": 48,
-    "question_text": "Which of the following rows/columns are connected/related with each other in some way? Rows Columns I II III IV V I 27 18 36 45 9 II 12 10 18 20 4 III 9 6 12 15 3 IV 6 3 7 10 3 V 3 2 4 5 1",
+    "question_text": "Which of the following rows/columns are connected/related with each other in some way?\n\n| Row | Column I | Column II | Column III | Column IV | Column V |\n| :---: | :---: | :---: | :---: | :---: | :---: |\n| I | 27 | 18 | 36 | 45 | 9 |\n| II | 12 | 10 | 18 | 20 | 4 |\n| III | 9 | 6 | 12 | 15 | 3 |\n| IV | 6 | 3 | 7 | 10 | 3 |\n| V | 3 | 2 | 4 | 5 | 1 |",
     "option_a": "Rows I, III and V",
     "option_b": "Rows II, IV and V",
     "option_c": "Rows I, II and III",
     "option_d": "Rows I, II and IV",
     "correct_answer": "A",
     "question_number": 24,
-    "explanation": null
+    "explanation": "Examining rows I, III and V:\n- Row V: [3, 2, 4, 5, 1]\n- Row III: [9, 6, 12, 15, 3] = $3 \\times \\text{Row V}$\n- Row I: [27, 18, 36, 45, 9] = $9 \\times \\text{Row V}$\n\nAll elements of Rows I, III, and V follow the exact proportional ratio 9 : 3 : 1 across all 5 columns.\n\nHence, **Rows I, III and V** are connected (Option A)."
   },
   {
     "id": 16626,

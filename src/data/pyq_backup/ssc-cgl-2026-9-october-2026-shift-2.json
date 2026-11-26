@@ -62,14 +62,14 @@
   {
     "id": 16107,
     "paper_id": 43,
-    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 1 2 3 5 6 7 24 32 ?",
+    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly.\n\n| 1 | 2 | 3 |\n| 5 | 6 | 7 |\n| 24 | 32 | ? |",
     "option_a": "34",
     "option_b": "38",
     "option_c": "40",
     "option_d": "46",
     "correct_answer": "C",
     "question_number": 6,
-    "explanation": null
+    "explanation": "Column rule: $\\text{Row } 2^2 - \\text{Row } 1^2 = \\text{Row } 3$.\n- Col 1: $5^2 - 1^2 = 25 - 1 = 24$\n- Col 2: $6^2 - 2^2 = 36 - 4 = 32$\n- Col 3: $7^2 - 3^2 = 49 - 9 = 40$\n\nHence, the missing number is **40** (Option C)."
   },
   {
     "id": 16108,
@@ -278,14 +278,14 @@
   {
     "id": 16125,
     "paper_id": 43,
-    "question_text": "Which of the following rows/columns are connected/related with each other in some way? Rows Columns I II III IV V I 2 4 3 7 6 II 4 16 9 18 14 III 8 64 27 144 132 IV 16 256 81 180 180 V 32 1024 243 324 508",
-    "option_a": "Columns I, II and",
-    "option_b": "Columns I, II and IV III",
+    "question_text": "Which of the following rows/columns are connected/related with each other in some way?\n\n| Row | Column I | Column II | Column III | Column IV | Column V |\n| :---: | :---: | :---: | :---: | :---: | :---: |\n| I | 2 | 4 | 3 | 7 | 6 |\n| II | 4 | 16 | 9 | 18 | 14 |\n| III | 8 | 64 | 27 | 144 | 132 |\n| IV | 16 | 256 | 81 | 180 | 180 |\n| V | 32 | 1024 | 243 | 324 | 508 |",
+    "option_a": "Columns I, II and IV",
+    "option_b": "Columns I, II and III",
     "option_c": "Columns I, II and V",
     "option_d": "Columns II, III and V",
     "correct_answer": "B",
     "question_number": 24,
-    "explanation": null
+    "explanation": "Examining rows I to V:\n- Column I follows powers of 2: $2^1=2, 2^2=4, 2^3=8, 2^4=16, 2^5=32$\n- Column II follows squares of Column I: $2^2=4, 4^2=16, 8^2=64, 16^2=256, 32^2=1024$\n- Column III follows powers of 3: $3^1=3, 3^2=9, 3^3=27, 3^4=81, 3^5=243$\n\nHence, **Columns I, II and III** are related (Option B)."
   },
   {
     "id": 16126,

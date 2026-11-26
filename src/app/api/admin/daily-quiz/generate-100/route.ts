@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase-admin";
 import { getQuestionFingerprint } from "@/lib/question-dedup";
+import { getQuestionBankPoolCount, pickRandomWindowOffset } from "@/lib/question-sampling";
 
 export const dynamic = "force-dynamic";
 
@@ -124,13 +125,16 @@ export async function GET(req: NextRequest) {
 
       // 2. Fetch from Question Bank for this section
       try {
-        const randomOffset = Math.floor(Math.random() * 200);
+        const qbWindow = Math.max(targetForSec * 2, 50);
+        const qbPoolSize = await getQuestionBankPoolCount({ subjectIds: sec.qbSubjectIds });
+        const randomOffset = pickRandomWindowOffset(qbPoolSize, qbWindow);
         const { data: qbRows } = await supabaseAdmin
           .from("questions")
           .select("id, question_text, question_text_hi, option_a, option_b, option_c, option_d, correct_answer, explanation, topics!inner(id, title, subject_id)")
           .in("topics.subject_id", sec.qbSubjectIds)
           .eq("is_active", true)
-          .range(randomOffset, randomOffset + targetForSec * 2);
+          .order("id", { ascending: true })
+          .range(randomOffset, randomOffset + qbWindow - 1);
 
         const rowsToUse = (qbRows && qbRows.length > 0)
           ? qbRows

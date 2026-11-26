@@ -38,26 +38,26 @@
   {
     "id": 16305,
     "paper_id": 45,
-    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 8 6 4 5 9 3 2 3 ? 20 18 6",
+    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly.\n\n| 8 | 6 | 4 |\n| 5 | 9 | 3 |\n| 2 | 3 | ? |\n| 20 | 18 | 6 |",
     "option_a": "3",
     "option_b": "2",
     "option_c": "5",
     "option_d": "7",
     "correct_answer": "B",
     "question_number": 4,
-    "explanation": null
+    "explanation": "Column rule: $(\\text{Row } 1 \\times \\text{Row } 2) / \\text{Row } 3 = \\text{Row } 4$.\n- Col 1: $(8 \\times 5) / 2 = 40 / 2 = 20$\n- Col 2: $(6 \\times 9) / 3 = 54 / 3 = 18$\n- Col 3: $(4 \\times 3) / ? = 6 \\implies 12 / ? = 6 \\implies ? = 2$\n\nHence, the missing number is **2** (Option B)."
   },
   {
     "id": 16306,
     "paper_id": 45,
-    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly. 20 45 35 14 30 25 6 15 10 12 30 ?",
+    "question_text": "In the following question, a matrix of numbers is given. These numbers follow a certain pattern either row-wise or columnwise. Identify this pattern and choose the missing number accordingly.\n\n| 20 | 45 | 35 |\n| 14 | 30 | 25 |\n| 6 | 15 | 10 |\n| 12 | 30 | ? |",
     "option_a": "14",
     "option_b": "20",
     "option_c": "24",
     "option_d": "36",
     "correct_answer": "B",
     "question_number": 5,
-    "explanation": null
+    "explanation": "Column rule:\n- Row 3 = Row 1 - Row 2 ($20-14=6, 45-30=15, 35-25=10$)\n- Row 4 = 2 × Row 3 ($2 \\times 6 = 12, 2 \\times 15 = 30, 2 \\times 10 = 20$)\n\nHence, the missing number is **20** (Option B)."
   },
   {
     "id": 16307,

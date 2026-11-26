@@ -38,7 +38,7 @@ export function resolveAssetUrl(url?: string | null): string {
     return trimmed;
   }
   const base = (process.env.NEXT_PUBLIC_R2_PUBLIC_URL || "").trim().replace(/\/+$/, "");
-  if (base && (trimmed.startsWith("/images/pyq/") || trimmed.startsWith("/images/questions/") || trimmed.startsWith("/papers/"))) {
+  if (base && (trimmed.startsWith("/images/pyq/") || trimmed.startsWith("/images/questions/") || trimmed.startsWith("/papers/") || trimmed.startsWith("/notes/"))) {
     return `${base}${trimmed}`;
   }
   return trimmed;

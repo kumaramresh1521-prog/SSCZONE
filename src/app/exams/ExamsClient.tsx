@@ -200,7 +200,7 @@ export default function ExamsClient({ exams }: { exams: Exam[] }) {
                                   {exam.title}
                                 </Link>
                                 <span className="text-[10px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-100">
-                                  Official Syllabus
+                                  Exam Syllabus
                                 </span>
                               </div>
                               <p className="text-xs text-slate-500 mt-0.5 line-clamp-1 max-w-xl">

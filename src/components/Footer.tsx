@@ -58,7 +58,7 @@ export default function Footer() {
             {config.socialLinks && config.socialLinks.filter((s) => s.is_active).length > 0 && (
               <div className="pt-2">
                 <p className="text-[11px] font-black uppercase tracking-wider text-slate-400 mb-2">
-                  Official Channels & Support
+                  Community Channels & Support
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {config.socialLinks

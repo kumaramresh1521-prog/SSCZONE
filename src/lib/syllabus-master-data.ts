@@ -537,7 +537,7 @@ const ENGLISH_CHAPTERS: ChapterItem[] = [
   },
   {
     id: "e_synonyms_antonyms",
-    name: "Synonyms & Antonyms (TCS Shift Vocabulary)",
+    name: "Synonyms & Antonyms (Exam Vocabulary)",
     hindi_name: "समानार्थी एवं विलोम शब्द",
     category: "Vocabulary",
     high_weightage: true,

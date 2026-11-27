@@ -158,12 +158,12 @@ export default async function Home() {
   const features = [
     {
       title: "Notification Syllabus Aligned",
-      desc: "Every question is mapped strictly to the official SSC notification syllabus. No out-of-syllabus distraction.",
+      desc: "Every question is mapped strictly to the SSC exam syllabus. No out-of-syllabus distraction.",
       icon: Layers,
     },
     {
       title: "Standard Reference Questions",
-      desc: "Curated from standard reference books and official previous year shifts with clear step-by-step explanations.",
+      desc: "Curated from standard reference books and previous year shifts with clear step-by-step explanations.",
       icon: BookOpen,
     },
     {
@@ -173,7 +173,7 @@ export default async function Home() {
     },
     {
       title: "Full-Length Practice Tests",
-      desc: "Attempt official shift papers with live countdown timer, sectional navigation, and instant negative marking scorecards.",
+      desc: "Attempt shift papers with live countdown timer, sectional navigation, and instant negative marking scorecards.",
       icon: Trophy,
     },
   ];
@@ -181,7 +181,7 @@ export default async function Home() {
   const quickTools = [
     {
       title: "Previous Year Papers",
-      desc: "Solve full-length official SSC CGL shift papers with live timer, question palette, and rank analysis.",
+      desc: "Solve full-length SSC CGL shift papers with live timer, question palette, and rank analysis.",
       href: "/papers?exam=cgl",
       icon: FileSpreadsheet,
       action: "Attempt Shift Papers",
@@ -195,7 +195,7 @@ export default async function Home() {
     },
     {
       title: "Typing Test",
-      desc: "Practice with the official SSC DEST keyboard practice interface, 15-minute timer, backspace toggle, and TCS error percentage calculator.",
+      desc: "Practice with the SSC DEST keyboard practice interface, 15-minute timer, backspace toggle, and error percentage calculator.",
       href: "/typing",
       icon: Keyboard,
       action: "Open Typing Console",
@@ -209,7 +209,7 @@ export default async function Home() {
     },
     {
       q: "Are the questions based on the latest 2026 SSC pattern?",
-      a: "Yes. All questions and test sets are organized strictly around official SSC shift questions and standard reference material.",
+      a: "Yes. All questions and test sets are organized strictly around SSC shift questions and standard reference material.",
     },
     {
       q: "Can I practice in Hindi as well as English?",
@@ -243,7 +243,7 @@ export default async function Home() {
           </h1>
 
           <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed font-normal">
-            Practice high-yield, syllabus-mapped MCQs from standard reference books with verified solutions. Solve official previous-year shift papers in real exam mode and track your score with instant performance analytics.
+            Practice high-yield, syllabus-mapped MCQs from standard reference books with verified solutions. Solve previous-year shift papers in CBT practice mode and track your score with instant performance analytics.
           </p>
 
           {/* Quick Hero Action CTAs */}
@@ -363,7 +363,7 @@ export default async function Home() {
                     📝 Shift Papers
                   </div>
                   <div className="text-[11px] text-slate-400 mt-0.5">
-                    100 Qs authentic official shifts
+                    100 Qs previous year shifts
                   </div>
                 </div>
                 <div className="mt-3 flex items-center gap-1 text-[11px] font-bold text-amber-400 group-hover:translate-x-0.5 transition-transform">
@@ -399,7 +399,7 @@ export default async function Home() {
                     ⌨️ Tier-2 Typing Test
                   </div>
                   <div className="text-[11px] text-slate-400 mt-0.5">
-                    Official examination hall console
+                    CBT examination hall console
                   </div>
                 </div>
                 <div className="mt-3 flex items-center gap-1 text-[11px] font-bold text-purple-400 group-hover:translate-x-0.5 transition-transform">
@@ -547,13 +547,13 @@ export default async function Home() {
             <div>
               <div className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 border border-blue-200/80 px-3 py-1 text-[11px] font-black text-blue-700 uppercase tracking-wider mb-2">
                 <Newspaper className="h-3.5 w-3.5 text-blue-600" />
-                <span>Official Exam Updates & Master Notes</span>
+                <span>Exam Updates &amp; Master Notes</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-                Latest Exam Updates & Study Notes
+                Latest Exam Updates &amp; Study Notes
               </h2>
               <p className="text-xs sm:text-sm text-slate-500 mt-1">
-                Comprehensive chapter theory, golden grammar rules, official notifications, and verified answer keys.
+                Comprehensive chapter theory, golden grammar rules, exam notifications, and verified answer keys.
               </p>
             </div>
 

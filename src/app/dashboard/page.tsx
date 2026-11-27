@@ -507,7 +507,7 @@ export default function DashboardPage() {
                     Fast-Track Your SSC Preparation
                   </h2>
                   <p className="mt-1.5 text-xs sm:text-sm text-blue-100/80 leading-relaxed max-w-xl">
-                    Take instant speed tests with user-based questions, practice daily free quizzes, or attempt real PYQ shift papers from official 2026 papers.
+                    Take instant speed tests with user-based questions, practice daily free quizzes, or attempt PYQ shift papers from latest 2026 papers.
                   </p>
                 </div>
 
@@ -560,7 +560,7 @@ export default function DashboardPage() {
               </div>
             </div>
 
-            {/* SECTIONAL MASTERY MATRIX (TCS Exam Pattern) */}
+            {/* SECTIONAL MASTERY MATRIX (Latest Exam Pattern) */}
             <div className="rounded-3xl border border-slate-200/90 bg-white p-6 shadow-xs text-left space-y-4">
               <div className="flex items-center justify-between border-b border-slate-100 pb-3">
                 <div className="flex items-center gap-2">
@@ -575,7 +575,7 @@ export default function DashboardPage() {
                   </div>
                 </div>
                 <span className="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-md border border-blue-200">
-                  TCS Pattern
+                  SSC Pattern
                 </span>
               </div>
 
@@ -986,7 +986,7 @@ export default function DashboardPage() {
                   },
                   {
                     name: "English & Hindi Typing Test",
-                    desc: "Official CPT 35 WPM practice test",
+                    desc: "CPT 35 WPM timed practice test",
                     href: "/typing",
                   },
                 ].map((tool, idx) => (

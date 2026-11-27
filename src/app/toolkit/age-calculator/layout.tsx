@@ -3,9 +3,9 @@ import { buildPageMetadata } from "@/lib/seo-store";
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata("/toolkit/age-calculator", {
-    title: "SSC Age Calculator & Eligibility Checker — Official Cutoff Dates & Category Relaxation | SSCZone",
+    title: "SSC Age Calculator & Eligibility Checker — Cutoff Dates & Category Relaxation | SSCZone",
     description:
-      "Calculate your exact age in years, months, and days as on official SSC cutoff dates (01-08-2025 / 01-01-2025). Check age eligibility with UR, OBC (+3y), SC/ST (+5y), and PwD (+10y) relaxations for CGL, CHSL, CPO, MTS.",
+      "Calculate your exact age in years, months, and days as on SSC cutoff dates (01-08-2025 / 01-01-2025). Check age eligibility with UR, OBC (+3y), SC/ST (+5y), and PwD (+10y) relaxations for CGL, CHSL, CPO, MTS.",
     keywords: [
       "SSC Age Calculator",
       "SSC Cutoff Date Age Calculator",
@@ -30,7 +30,7 @@ const AGE_CALCULATOR_APP_SCHEMA = {
     "price": "0",
     "priceCurrency": "INR"
   },
-  "description": "High-accuracy candidate age calculator designed for official Staff Selection Commission (SSC) exams including CGL, CHSL, CPO, and MTS. Calculates exact years, months, and days relative to official notification cutoff dates.",
+  "description": "High-accuracy candidate age calculator designed for Staff Selection Commission (SSC) exams including CGL, CHSL, CPO, and MTS. Calculates exact years, months, and days relative to exam cutoff dates.",
   "featureList": [
     "Exact Age in Years, Months, and Days as of Cutoff Date",
     "Notification-aligned cutoff dates (01-08-2025, 01-01-2025, custom)",

@@ -262,7 +262,7 @@ export async function POST(req: NextRequest) {
       candidateName: "Candidate",
       rollNumber: "N/A",
       examName: "SSC Combined Graduate Level Examination",
-      testDate: "Official Response Sheet",
+      testDate: "Response Sheet",
       testTime: "",
       venue: "",
       vendor: "Generic",

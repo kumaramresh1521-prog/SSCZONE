@@ -32,7 +32,7 @@ export const AD_PRESETS: AdPreset[] = [
   },
   {
     id: "preset_telegram",
-    name: "📢 Official Telegram Community (45K+)",
+    name: "📢 SSCZone Telegram Community (45K+)",
     description: "Grow your Telegram channel with daily quizzes & PDF alerts",
     category: "community",
     icon: "telegram",
@@ -53,7 +53,7 @@ export const AD_PRESETS: AdPreset[] = [
   {
     id: "preset_typing",
     name: "⌨️ SSC Typing Speed & Accuracy Test",
-    description: "Official 15-min countdown tool for CGL & CHSL typing test",
+    description: "15-min countdown typing tool for CGL & CHSL typing test",
     category: "typing",
     icon: "keyboard",
     config: {
@@ -73,7 +73,7 @@ export const AD_PRESETS: AdPreset[] = [
   {
     id: "preset_daily_quiz",
     name: "🏆 Today's Free Daily Rapid Fire Quiz",
-    description: "Challenge aspirants with 25 daily fresh TCS PYQs",
+    description: "Challenge aspirants with 25 daily fresh SSC PYQs",
     category: "quiz",
     icon: "trophy",
     config: {
@@ -100,7 +100,7 @@ export const AD_PRESETS: AdPreset[] = [
       type: "affiliate",
       affiliateBanner: {
         id: "aff_pinnacle_math",
-        title: "Pinnacle SSC Maths 6800+ TCS PYQ Book (4th Edition)",
+        title: "Pinnacle SSC Maths 6800+ PYQ Book (4th Edition)",
         subtitle: "Complete English & Hindi Chapter-wise Solved Papers with smart short tricks.",
         badge: "Amazon Best Seller",
         imageUrl: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&auto=format&fit=crop&q=80",
@@ -121,7 +121,7 @@ export const AD_PRESETS: AdPreset[] = [
       affiliateBanner: {
         id: "aff_neetu_english",
         title: "English for General Competitions - Neetu Singh Vol 1",
-        subtitle: "Official 2026 Edition for CGL/CHSL Aspirants. Rules & Practice Exercises.",
+        subtitle: "Updated 2026 Edition for CGL/CHSL Aspirants. Rules & Practice Exercises.",
         badge: "Flat 28% Off",
         imageUrl: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&auto=format&fit=crop&q=80",
         targetUrl: "https://www.amazon.in?tag=ssczone-21",
@@ -141,7 +141,7 @@ export const AD_PRESETS: AdPreset[] = [
       affiliateBanner: {
         id: "aff_blackbook_vocab",
         title: "BlackBook of English Vocabulary (Updated 2026 Edition)",
-        subtitle: "All One Word Substitutions, Idioms, Synonyms & Antonyms asked by TCS.",
+        subtitle: "All One Word Substitutions, Idioms, Synonyms & Antonyms from SSC shifts.",
         badge: "Vocabulary Bible",
         imageUrl: "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=800&auto=format&fit=crop&q=80",
         targetUrl: "https://www.amazon.in?tag=ssczone-21",

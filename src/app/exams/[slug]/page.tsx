@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const title = slug.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase());
   return { 
     title: `${title} Syllabus & Chapters — SSCZone`, 
-    description: `Official syllabus-wise MCQ practice for ${title}. Practice chapter by chapter with step solutions.` 
+    description: `Syllabus-wise MCQ practice for ${title}. Practice chapter by chapter with step solutions.` 
   };
 }
 
@@ -53,7 +53,7 @@ export default async function ExamDetailPage({ params }: { params: Promise<{ slu
             {exam.title}
           </h1>
           <p className="text-xs sm:text-sm text-slate-600 max-w-2xl leading-relaxed">
-            {exam.description || "Official syllabus chapters organized category-wise for step-by-step practice."}
+            {exam.description || "Syllabus chapters organized category-wise for step-by-step practice."}
           </p>
         </div>
       </section>

@@ -125,8 +125,15 @@ export default function GuestSessionGateModal() {
       return;
     }
 
-    // Exempt admin, login, and signup pages
-    if (pathname?.startsWith("/admin") || pathname === "/login" || pathname === "/signup") {
+    // Exempt admin and auth pages so users can always log in, sign up, or reset passwords
+    if (
+      pathname?.startsWith("/admin") ||
+      pathname === "/login" ||
+      pathname === "/signup" ||
+      pathname === "/forgot-password" ||
+      pathname === "/update-password" ||
+      pathname?.startsWith("/auth")
+    ) {
       return;
     }
 

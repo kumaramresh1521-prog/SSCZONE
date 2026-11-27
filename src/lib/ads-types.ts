@@ -61,7 +61,7 @@ export const DEFAULT_ADS_CONFIG: SiteAdsConfig = {
       type: "affiliate",
       affiliateBanner: {
         id: "aff_solution_book",
-        title: "SSC 6800+ TCS PYQ Chapter-Wise Solved Book",
+        title: "SSC 6800+ PYQ Chapter-Wise Solved Book",
         subtitle: "Recommended reference guide with bilingual detailed solutions & short tricks.",
         badge: "Topper Recommended",
         imageUrl: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&auto=format&fit=crop&q=80",
@@ -97,7 +97,7 @@ export const DEFAULT_ADS_CONFIG: SiteAdsConfig = {
       type: "promo_card",
       promoCard: {
         id: "promo_telegram_qb",
-        title: "Join 45,000+ SSC Aspirants on Official Telegram",
+        title: "Join 45,000+ SSC Aspirants on SSCZone Telegram",
         subtitle: "Get daily free quiz questions, subject PDF notes & instant SSC result notifications.",
         badge: "Free Community",
         ctaText: "Join Telegram ➔",
@@ -115,7 +115,7 @@ export const DEFAULT_ADS_CONFIG: SiteAdsConfig = {
       type: "affiliate",
       affiliateBanner: {
         id: "aff_pinnacle_math",
-        title: "SSC Maths 6800+ TCS PYQ Practice Book (Latest Edition)",
+        title: "SSC Maths 6800+ PYQ Practice Book (Latest Edition)",
         subtitle: "Complete English & Hindi Chapter-wise Solved Papers with smart short tricks.",
         badge: "Amazon Best Seller",
         imageUrl: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&auto=format&fit=crop&q=80",
@@ -134,7 +134,7 @@ export const DEFAULT_ADS_CONFIG: SiteAdsConfig = {
       promoCard: {
         id: "promo_typing_side",
         title: "SSC Typing Practice Tool",
-        subtitle: "15-Min Official Exam Countdown with real-time Gross WPM and Error Calculator.",
+        subtitle: "15-Min Exam Countdown with real-time Gross WPM and Error Calculator.",
         badge: "Free Tool",
         ctaText: "Start Typing ➔",
         targetUrl: "/typing",
@@ -181,7 +181,7 @@ export const DEFAULT_ADS_CONFIG: SiteAdsConfig = {
       affiliateBanner: {
         id: "aff_neetu_english",
         title: "English for General Competitions - Neetu Singh Vol 1",
-        subtitle: "Official 2026 Edition for CGL/CHSL Aspirants. Rules & Practice Exercises.",
+        subtitle: "Updated 2026 Edition for CGL/CHSL Aspirants. Rules & Practice Exercises.",
         badge: "Must-Have Grammar",
         imageUrl: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&auto=format&fit=crop&q=80",
         targetUrl: "https://www.amazon.in?tag=ssczone-21",
@@ -201,7 +201,7 @@ export const DEFAULT_ADS_CONFIG: SiteAdsConfig = {
       promoCard: {
         id: "promo_notes_daily",
         title: "Today's Free Daily Rapid Fire GK Quiz",
-        subtitle: "Test yourself with 25 fresh TCS PYQs and get instant All-India rank.",
+        subtitle: "Test yourself with 25 fresh SSC PYQs and get instant All-India rank.",
         badge: "Daily Free",
         ctaText: "Start Daily Quiz ➔",
         targetUrl: "/daily-quiz",
@@ -219,7 +219,7 @@ export const DEFAULT_ADS_CONFIG: SiteAdsConfig = {
       promoCard: {
         id: "promo_notes_practice",
         title: "Practice Chapter-Wise MCQs on SSCZone",
-        subtitle: "Over 30,000+ TCS Previous Year Questions with bilingual step-by-step solutions.",
+        subtitle: "Over 30,000+ SSC Previous Year Questions with bilingual step-by-step solutions.",
         badge: "30,000+ MCQs",
         ctaText: "Practice Topic Now ➔",
         targetUrl: "/practice",
@@ -237,7 +237,7 @@ export const DEFAULT_ADS_CONFIG: SiteAdsConfig = {
       affiliateBanner: {
         id: "aff_blackbook_vocab",
         title: "BlackBook of English Vocabulary (Updated 2026)",
-        subtitle: "All One Word Substitutions, Idioms, Synonyms & Antonyms asked by TCS.",
+        subtitle: "All One Word Substitutions, Idioms, Synonyms & Antonyms from previous SSC shifts.",
         badge: "Vocabulary Bible",
         imageUrl: "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=800&auto=format&fit=crop&q=80",
         targetUrl: "https://www.amazon.in?tag=ssczone-21",
@@ -274,7 +274,7 @@ export const DEFAULT_ADS_CONFIG: SiteAdsConfig = {
       type: "promo_card",
       promoCard: {
         id: "promo_global_bottom",
-        title: "Join Official Telegram for Free SSC Notes & Quiz",
+        title: "Join SSCZone Telegram for Free SSC Notes & Quiz",
         subtitle: "Over 45,000+ SSC aspirants studying together.",
         badge: "Free Community",
         ctaText: "Join Telegram ➔",
@@ -314,7 +314,7 @@ export const DEFAULT_ADS_CONFIG: SiteAdsConfig = {
       adsenseSlotId: "2345678901",
       affiliateBanner: {
         id: "aff_pinnacle_math",
-        title: "Pinnacle SSC Maths 6800+ TCS PYQ Book",
+        title: "Pinnacle SSC Maths 6800+ PYQ Book",
         subtitle: "Complete English & Hindi Chapter-wise Solved Papers",
         badge: "Topper Recommended",
         imageUrl: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&auto=format&fit=crop&q=80",
@@ -342,7 +342,7 @@ export const DEFAULT_ADS_CONFIG: SiteAdsConfig = {
       affiliateBanner: {
         id: "aff_neetu_vol1",
         title: "English for General Competitions - Neetu Singh Vol 1",
-        subtitle: "Official 2026 Edition for CGL/CHSL Aspirants",
+        subtitle: "Latest 2026 Edition for CGL/CHSL Aspirants",
         badge: "Flat 28% Off",
         imageUrl: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&auto=format&fit=crop&q=80",
         targetUrl: "https://www.amazon.in?tag=ssczone-21",

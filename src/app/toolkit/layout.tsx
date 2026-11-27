@@ -5,7 +5,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata("/toolkit", {
     title: "SSC Candidate Toolkit & Free Exam Utilities Hub 2026 | SSCZone",
     description:
-      "Free high-precision candidate utilities for SSC CGL, CHSL, CPO, MTS & GD aspirants. Photo & Signature Resizer (20-50 KB), Age Eligibility Calculator with Cutoff Dates, Rank Predictor, and TCS 2000 Key Depressions Typing Practice Tool.",
+      "Free high-precision candidate utilities for SSC CGL, CHSL, CPO, MTS & GD aspirants. Photo & Signature Resizer (20-50 KB), Age Eligibility Calculator with Cutoff Dates, Rank Predictor, and 2000 Key Depressions Typing Practice Tool.",
     keywords: [
       "SSC Candidate Toolkit",
       "SSC Exam Utilities Hub",
@@ -13,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
       "SSC Signature Resizer 10 to 20 kb",
       "SSC Age Calculator Cutoff Date",
       "SSC Rank Predictor 2026",
-      "SSC Typing Test TCS 2000 Key Depressions",
+      "SSC Typing Test 2000 Key Depressions",
       "Free SSC Tools for Aspirants",
       "SSC CGL Application Tools",
     ],
@@ -29,7 +29,7 @@ const TOOLKIT_FAQ_SCHEMA = {
       "name": "What candidate utility tools are available on SSCZone?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "SSCZone provides free online utilities built specifically for SSC CGL, CHSL, CPO, MTS, and GD candidates: 1) SSC Photo & Signature Resizer (20-50 KB photo, 10-20 KB signature with exact cm dimensions), 2) SSC Age Eligibility Calculator with category relaxations and official cutoff dates, 3) SSC Rank Predictor & Marks Normalizer, 4) TCS 2000 Key Depressions Typing Test Practice, and 5) Master Syllabus Tracker."
+        "text": "SSCZone provides free online utilities built specifically for SSC CGL, CHSL, CPO, MTS, and GD candidates: 1) SSC Photo & Signature Resizer (20-50 KB photo, 10-20 KB signature with exact cm dimensions), 2) SSC Age Eligibility Calculator with category relaxations and cutoff dates, 3) SSC Rank Predictor & Marks Normalizer, 4) 2000 Key Depressions Typing Test Practice, and 5) Master Syllabus Tracker."
       }
     },
     {
@@ -50,10 +50,10 @@ const TOOLKIT_FAQ_SCHEMA = {
     },
     {
       "@type": "Question",
-      "name": "Does the typing practice tool follow the official TCS DEST exam pattern?",
+      "name": "Does the typing practice tool follow the DEST exam pattern?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, the typing practice tool features the exact split-screen TCS exam hall layout, 15-minute countdown timer, 2000 key depressions tracking, restricted backspace controls, and official full/half error percentage calculation."
+        "text": "Yes, the typing practice tool features the split-screen exam hall layout, 15-minute countdown timer, 2000 key depressions tracking, restricted backspace controls, and full/half error percentage calculation."
       }
     }
   ]
@@ -89,7 +89,7 @@ const TOOLKIT_COLLECTION_SCHEMA = {
       {
         "@type": "ListItem",
         "position": 4,
-        "name": "SSC Typing Test 2000 Key Depressions TCS Practice",
+        "name": "SSC Typing Test 2000 Key Depressions Practice",
         "url": "https://ssczone.com/typing"
       },
       {

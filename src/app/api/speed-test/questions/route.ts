@@ -286,7 +286,7 @@ export async function GET(req: NextRequest) {
         }
       }
 
-      // C. Tier 2: Keyword search across Official PYQs (50 Shift Papers) for this Topic
+      // C. Tier 2: Keyword search across Previous Year Papers (50 Shift Papers) for this Topic
       if (allQuestions.length < requestedCount && topicTitle) {
         const pyqRange = PYQ_RANGES[resolvedSubjectKey] || PYQ_RANGES.quant;
         const keywords = topicTitle
@@ -336,7 +336,7 @@ export async function GET(req: NextRequest) {
         }
       }
 
-      // D. Tier 3: Seamless Backfill from Official Shift Papers for that Subject
+      // D. Tier 3: Seamless Backfill from Shift Papers for that Subject
       if (allQuestions.length < requestedCount) {
         const pyqRange = PYQ_RANGES[resolvedSubjectKey] || PYQ_RANGES.quant;
         const needed = requestedCount - allQuestions.length + 10;
@@ -358,7 +358,7 @@ export async function GET(req: NextRequest) {
             source: "pyq",
             subject: SUBJECT_NAMES[resolvedSubjectKey],
             subjectKey: resolvedSubjectKey,
-            topic: topicTitle ? `${topicTitle} & ${SUBJECT_NAMES[resolvedSubjectKey]} Practice Set` : `PYQ Official Shift #${q.paper_id}`,
+            topic: topicTitle ? `${topicTitle} & ${SUBJECT_NAMES[resolvedSubjectKey]} Practice Set` : `PYQ Shift Paper #${q.paper_id}`,
             question_text: q.question_text || "",
             question_text_hi: null,
             option_a: q.option_a || "",
@@ -416,7 +416,7 @@ export async function GET(req: NextRequest) {
         });
       }
     } else if (mode === "subject" && subjectParam !== "all") {
-      // 2. SUBJECT MODE: Balanced blend from BOTH Official Shift PYQs AND Question Bank
+      // 2. SUBJECT MODE: Balanced blend from BOTH Shift Paper PYQs AND Question Bank
       const pyqRange = PYQ_RANGES[subjectParam] || PYQ_RANGES.quant;
       const targetQbSubjectIds = SUBJECT_ID_MAP[subjectParam] || [1];
 
@@ -451,7 +451,7 @@ export async function GET(req: NextRequest) {
       let pyqAdded = 0;
       for (const q of shuffledPyqs) {
         if (pyqAdded >= pyqQuota) break;
-        const paperTitle = paperMap.get(q.paper_id) || `Official Shift #${q.paper_id}`;
+        const paperTitle = paperMap.get(q.paper_id) || `Shift Paper #${q.paper_id}`;
         const added = addQuestion({
           id: `pyq_${q.id}`,
           originalId: q.id,
@@ -511,7 +511,7 @@ export async function GET(req: NextRequest) {
       if (allQuestions.length < requestedCount) {
         for (const q of shuffledPyqs) {
           if (allQuestions.length >= requestedCount) break;
-          const paperTitle = paperMap.get(q.paper_id) || `Official Shift #${q.paper_id}`;
+          const paperTitle = paperMap.get(q.paper_id) || `Shift Paper #${q.paper_id}`;
           addQuestion({
             id: `pyq_${q.id}`,
             originalId: q.id,
@@ -535,7 +535,7 @@ export async function GET(req: NextRequest) {
     } else {
       // 3. RANDOM / MIXED MODE (DEFAULT): Balanced across ALL 4 SECTIONS
       // Equal weightage: Reasoning (25%), GA (25%), Quant (25%), English (25%)
-      // With healthy, dynamic blend from BOTH Official Shift PYQs AND Question Bank
+      // With healthy, dynamic blend from BOTH Shift Paper PYQs AND Question Bank
       const SECTIONS: { key: "reasoning" | "ga" | "quant" | "english"; name: string; min: number; max: number }[] = [
         { key: "reasoning", name: "General Intelligence & Reasoning", min: 1, max: 25 },
         { key: "ga", name: "General Awareness", min: 26, max: 50 },
@@ -576,7 +576,7 @@ export async function GET(req: NextRequest) {
         const shuffledPyqs = shuffleArray(pyqSecRows || [], seed + sIdx * 31);
         for (const q of shuffledPyqs) {
           if (pyqAdded >= pyqQuota) break;
-          const paperTitle = paperMap.get(q.paper_id) || `Official Shift #${q.paper_id}`;
+          const paperTitle = paperMap.get(q.paper_id) || `Shift Paper #${q.paper_id}`;
           const added = addQuestion({
             id: `pyq_${q.id}`,
             originalId: q.id,
@@ -654,7 +654,7 @@ export async function GET(req: NextRequest) {
         if (secAdded < targetForSec) {
           for (const q of shuffledPyqs) {
             if (secAdded >= targetForSec) break;
-            const paperTitle = paperMap.get(q.paper_id) || `Official Shift #${q.paper_id}`;
+            const paperTitle = paperMap.get(q.paper_id) || `Shift Paper #${q.paper_id}`;
             const added = addQuestion({
               id: `pyq_${q.id}`,
               originalId: q.id,

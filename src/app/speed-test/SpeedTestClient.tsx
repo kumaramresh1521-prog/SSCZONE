@@ -767,7 +767,7 @@ export default function SpeedTestClient() {
                 </h1>
                 <p className="mt-1 text-sm text-slate-600 max-w-2xl leading-relaxed">
                   Practice with real exam timing and user-based dynamic questions. Pool includes{" "}
-                  <strong className="text-slate-800 font-semibold">{stats.totalQuestions.toLocaleString()}+ active questions</strong> from official PYQs and Question Bank.
+                  <strong className="text-slate-800 font-semibold">{stats.totalQuestions.toLocaleString()}+ active questions</strong> from shift PYQs and Question Bank.
                 </p>
               </div>
 
@@ -855,7 +855,7 @@ export default function SpeedTestClient() {
                   </div>
                   <div className="font-extrabold text-sm text-slate-900">Subject-Wise</div>
                   <div className="text-xs text-slate-500 mt-1 leading-relaxed">
-                    Targeted practice in Maths, Reasoning, English, or GK specifically with official shift questions.
+                    Targeted practice in Maths, Reasoning, English, or GK specifically with previous year shift questions.
                   </div>
                 </button>
 
@@ -1296,7 +1296,7 @@ export default function SpeedTestClient() {
                   Question {currentIndex + 1}
                 </span>
                 <span className="text-xs text-slate-500 font-medium">
-                  {currentQ.source === "pyq" ? "Official SSC Shift" : "Question Bank"}
+                  {currentQ.source === "pyq" ? "SSC Shift Paper" : "Question Bank"}
                 </span>
                 {activeQuestionContent.isHindi && (
                   <span className="text-[10px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded shrink-0">
@@ -1351,7 +1351,7 @@ export default function SpeedTestClient() {
               {isEnglishSection && (
                 <div className="px-3 py-1.5 rounded-xl bg-blue-50 border border-blue-200 text-[11px] text-blue-800 flex items-center gap-1.5 font-medium">
                   <Info className="w-3.5 h-3.5 text-blue-600 shrink-0" />
-                  <span>English Comprehension questions are in English only as per official SSC exam format.</span>
+                  <span>English Comprehension questions are shown in English only as per SSC exam format.</span>
                 </div>
               )}
 
@@ -1786,7 +1786,7 @@ export default function SpeedTestClient() {
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 border-b border-slate-200 pb-3">
                 <div>
                   <h3 className="font-extrabold text-slate-900 text-base">Question & Solution Review</h3>
-                  <p className="text-xs text-slate-500">Step-by-step explanations and verified official answers</p>
+                  <p className="text-xs text-slate-500">Step-by-step explanations and verified answers</p>
                 </div>
 
                 {/* Filter Pills */}

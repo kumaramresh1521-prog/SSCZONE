@@ -226,7 +226,7 @@ export async function POST(request: Request) {
 
     if (!url && !rawHtml) {
       return NextResponse.json(
-        { error: "Please provide either an official answer key URL or paste the HTML response sheet code." },
+        { error: "Please provide either an answer key URL or paste the HTML response sheet code." },
         { status: 400 }
       );
     }
@@ -257,7 +257,7 @@ export async function POST(request: Request) {
         return NextResponse.json(
           {
             error:
-              "Security Notice: Only official government examination portals (e.g., ssc.digialm.com, cbexams.com, ssc.gov.in) can be fetched directly. Alternatively, you can paste the response sheet HTML below.",
+              "Security Notice: Only verified examination response portals (e.g., ssc.digialm.com, cbexams.com, ssc.gov.in) can be fetched directly. Alternatively, you can paste the response sheet HTML below.",
           },
           { status: 400 }
         );

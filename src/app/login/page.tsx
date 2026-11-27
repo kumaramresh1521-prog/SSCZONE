@@ -19,9 +19,16 @@ export default function LoginPage() {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const p = new URLSearchParams(window.location.search).get("redirect");
-      if (p && p.startsWith("/")) {
+      const sp = new URLSearchParams(window.location.search);
+      const p = sp.get("redirect") || sp.get("next");
+      if (p && p.startsWith("/") && !p.startsWith("//")) {
         setRedirectUrl(p);
+      }
+      const urlErr = sp.get("error");
+      if (urlErr === "auth_callback_failed") {
+        setError("Verification link expired or invalid. Please sign in again or request a fresh link.");
+      } else if (urlErr && urlErr !== "configuration") {
+        setError(urlErr);
       }
     }
   }, []);
@@ -38,7 +45,11 @@ export default function LoginPage() {
       });
 
       if (err || !data?.session) {
-        setError(err?.message || "Invalid email or password. Please try again.");
+        let msg = err?.message || "Invalid email or password. Please try again.";
+        if (msg.toLowerCase().includes("email not confirmed")) {
+          msg = "Email not confirmed yet. Please check your Inbox/Spam folder for the confirmation link, or contact admin.";
+        }
+        setError(msg);
         setLoading(false);
         return;
       }
@@ -57,8 +68,9 @@ export default function LoginPage() {
         console.error("Profile check error:", err);
       }
 
-      const redirectParam = typeof window !== "undefined" ? new URLSearchParams(window.location.search).get("redirect") : null;
-      const destination = isAdmin ? "/admin" : (redirectParam && redirectParam.startsWith("/") ? redirectParam : "/dashboard");
+      const sp = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
+      const redirectParam = sp ? (sp.get("redirect") || sp.get("next")) : null;
+      const destination = isAdmin ? "/admin" : (redirectParam && redirectParam.startsWith("/") && !redirectParam.startsWith("//") ? redirectParam : "/dashboard");
       router.replace(destination);
       router.refresh();
     } catch (err: any) {

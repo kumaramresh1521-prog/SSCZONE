@@ -11,7 +11,7 @@ interface MarkingSchemeInput {
 }
 
 /**
- * Official SSC marking schemes.
+ * Standard SSC marking schemes.
  *
  * CGL Tier 1   : +2.00 / -0.50  (100 Q, 200 marks)
  * CGL Tier 2   : +3.00 / -1.00  (130 Q, 390 marks)

@@ -20,51 +20,145 @@ export default function UpdatePasswordPage() {
   const router = useRouter();
 
   useEffect(() => {
-    // 1. Check for error parameters in URL hash or query (e.g. expired link)
-    if (typeof window !== "undefined") {
+    let isMounted = true;
+    let timerId: ReturnType<typeof setTimeout> | null = null;
+
+    async function initRecovery() {
+      if (typeof window === "undefined") return;
+
       const hash = window.location.hash;
       const search = window.location.search;
-      const params = new URLSearchParams(hash.startsWith("#") ? hash.substring(1) : search);
-      const errorDesc = params.get("error_description");
-      const errorCode = params.get("error_code");
+      const searchParams = new URLSearchParams(search);
+      const hashParams = new URLSearchParams(hash.startsWith("#") ? hash.substring(1) : "");
+
+      // 1. Check for error parameters (e.g. expired link)
+      const errorDesc = hashParams.get("error_description") || searchParams.get("error_description");
+      const errorCode = hashParams.get("error_code") || searchParams.get("error_code");
 
       if (errorDesc || errorCode) {
         const cleanMessage = errorDesc
           ? decodeURIComponent(errorDesc).replace(/\+/g, " ")
-          : "The password reset link is invalid or has expired.";
-        setError(cleanMessage);
-        setHasValidSession(false);
+          : "The password reset link is invalid or has expired. Please request a new link.";
+        if (isMounted) {
+          setError(cleanMessage);
+          setHasValidSession(false);
+        }
         return;
       }
+
+      // 2. PKCE code exchange: If code is present in URL query
+      const code = searchParams.get("code");
+      if (code) {
+        try {
+          const { data, error: exchangeErr } = await supabase.auth.exchangeCodeForSession(code);
+          if (!exchangeErr && data?.session?.user) {
+            if (isMounted) setHasValidSession(true);
+            return;
+          }
+          if (exchangeErr && isMounted) {
+            setError(
+              exchangeErr.message ||
+                "Invalid or expired password recovery link. Please request a new one."
+            );
+            setHasValidSession(false);
+            return;
+          }
+        } catch (ex: any) {
+          if (isMounted) {
+            setError(ex?.message || "Failed to verify recovery link.");
+            setHasValidSession(false);
+          }
+          return;
+        }
+      }
+
+      // 3. Token hash OTP verification (direct recovery link / custom templates)
+      const tokenHash = searchParams.get("token_hash");
+      const otpType = searchParams.get("type") || "recovery";
+      if (tokenHash) {
+        try {
+          const { data, error: verifyErr } = await supabase.auth.verifyOtp({
+            token_hash: tokenHash,
+            type: otpType as any,
+          });
+          if (!verifyErr && data?.session?.user) {
+            if (isMounted) setHasValidSession(true);
+            return;
+          }
+          if (verifyErr && isMounted) {
+            setError(
+              verifyErr.message ||
+                "Invalid or expired password recovery link. Please request a new one."
+            );
+            setHasValidSession(false);
+            return;
+          }
+        } catch (ex: any) {
+          if (isMounted) {
+            setError(ex?.message || "Failed to verify recovery token.");
+            setHasValidSession(false);
+          }
+          return;
+        }
+      }
+
+      // 4. Implicit flow hash tokens fallback (#access_token=...&refresh_token=...)
+      const accessToken = hashParams.get("access_token");
+      const refreshToken = hashParams.get("refresh_token");
+      if (accessToken && refreshToken) {
+        try {
+          const { data, error: sessionErr } = await supabase.auth.setSession({
+            access_token: accessToken,
+            refresh_token: refreshToken,
+          });
+          if (!sessionErr && data?.session?.user) {
+            if (isMounted) setHasValidSession(true);
+            return;
+          }
+        } catch {}
+      }
+
+      // 5. Check for existing active session
+      const {
+        data: { session },
+      } = await supabase.auth.getSession();
+      if (session?.user) {
+        if (isMounted) setHasValidSession(true);
+        return;
+      }
+
+      // 6. Wait briefly for Supabase onAuthStateChange
+      timerId = setTimeout(async () => {
+        const {
+          data: { session: retrySession },
+        } = await supabase.auth.getSession();
+        if (isMounted) {
+          if (retrySession?.user) {
+            setHasValidSession(true);
+          } else {
+            setHasValidSession(false);
+            setError(
+              "No active reset session found. The reset link may have expired or was already used."
+            );
+          }
+        }
+      }, 2000);
     }
 
-    // 2. Listen to Auth State change (Catches PASSWORD_RECOVERY event)
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
-      if (event === "PASSWORD_RECOVERY" || session?.user) {
-        setHasValidSession(true);
+    // Auth State Change listener
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((event, session) => {
+      if (event === "PASSWORD_RECOVERY" || event === "SIGNED_IN" || session?.user) {
+        if (isMounted) setHasValidSession(true);
       }
     });
 
-    // 3. Fallback check for existing session
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      if (session?.user) {
-        setHasValidSession(true);
-      } else {
-        // Wait briefly for hash tokens to be parsed by Supabase client
-        const timer = setTimeout(() => {
-          supabase.auth.getSession().then(({ data: { session: s } }) => {
-            if (s?.user) {
-              setHasValidSession(true);
-            } else {
-              setHasValidSession(false);
-            }
-          });
-        }, 1500);
-        return () => clearTimeout(timer);
-      }
-    });
+    initRecovery();
 
     return () => {
+      isMounted = false;
+      if (timerId) clearTimeout(timerId);
       subscription.unsubscribe();
     };
   }, []);
@@ -147,14 +241,21 @@ export default function UpdatePasswordPage() {
                 </Link>
               </div>
             </div>
-          ) : hasValidSession === false && error ? (
+          ) : hasValidSession === null ? (
+            <div className="text-center py-8 space-y-4">
+              <div className="mx-auto h-10 w-10 border-3 border-amber-400 border-t-transparent rounded-full animate-spin" />
+              <p className="text-xs sm:text-sm font-semibold text-blue-200">
+                Verifying your password recovery link...
+              </p>
+            </div>
+          ) : hasValidSession === false ? (
             <div className="text-center py-3 space-y-4">
               <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-rose-500/20 border border-rose-500/40 text-rose-400 shadow-inner">
                 <AlertCircle className="h-8 w-8" />
               </div>
               <h3 className="text-lg font-bold text-white">Link Expired or Invalid</h3>
               <p className="text-xs sm:text-sm text-rose-200/90 leading-relaxed">
-                {error}
+                {error || "Your password recovery session is missing or expired. Please request a fresh reset link."}
               </p>
               <div className="pt-2 flex flex-col gap-2">
                 <Link

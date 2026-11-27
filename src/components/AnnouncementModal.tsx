@@ -117,7 +117,7 @@ export default function AnnouncementModal() {
           <div className="flex items-center gap-2">
             <span className="inline-flex items-center gap-1.5 rounded-lg bg-red-500/10 px-2.5 py-1 text-[11px] font-black uppercase tracking-wider text-red-600 border border-red-500/20">
               <Flame className="h-3 w-3 text-red-600 fill-red-600" />
-              <span>{config.badge || "OFFICIAL ALERT"}</span>
+              <span>{config.badge || "EXAM ALERT"}</span>
             </span>
           </div>
 

@@ -370,13 +370,13 @@ export default function NotesClient({
             <div>
               <div className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 border border-blue-200 px-3 py-1 text-xs font-bold text-blue-700 mb-2">
                 <Sparkles className="h-3.5 w-3.5 text-blue-600" />
-                <span>SSC CGL 2026 & All SSC Exams • Official Revision Materials</span>
+                <span>SSC CGL 2026 &amp; All SSC Exams • Revision Materials</span>
               </div>
               <h1 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-slate-900">
-                Subject Notes & Formula PDFs
+                Subject Notes &amp; Formula PDFs
               </h1>
               <p className="text-xs sm:text-sm text-slate-600 max-w-2xl mt-1.5 leading-relaxed">
-                Download verified chapter-wise revision notes, high-yield formula cheat sheets, and theory capsules curated strictly according to official SSC notification syllabus.
+                Download verified chapter-wise revision notes, high-yield formula cheat sheets, and theory capsules curated strictly according to the SSC syllabus.
               </p>
             </div>
           </div>

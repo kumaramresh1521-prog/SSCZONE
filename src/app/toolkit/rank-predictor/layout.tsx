@@ -5,7 +5,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata("/toolkit/rank-predictor", {
     title: "SSC Rank Predictor & Marks Normalization Calculator 2026 — Answer Key Analysis | SSCZone",
     description:
-      "Predict your SSC CGL, CHSL, CPO rank and shift-normalized score from raw marks or official answer key URL. Shift difficulty analysis, category rank, and qualifying percentile.",
+      "Predict your SSC CGL, CHSL, CPO rank and shift-normalized score from raw marks or answer key URL. Shift difficulty analysis, category rank, and qualifying percentile.",
     keywords: [
       "SSC Rank Predictor",
       "SSC CGL Rank Predictor 2026",
@@ -14,7 +14,7 @@ export async function generateMetadata(): Promise<Metadata> {
       "SSC Shift Difficulty Normalizer",
       "SSC Category Rank Predictor",
       "SSC CGL Cutoff Marks Prediction",
-      "TCS Shift Wise Score Normalization",
+      "Shift Wise Score Normalization",
     ],
   });
 }
@@ -30,9 +30,9 @@ const RANK_PREDICTOR_APP_SCHEMA = {
     "price": "0",
     "priceCurrency": "INR"
   },
-  "description": "Comprehensive score calculation and rank prediction engine for SSC candidates. Parses official answer keys, analyzes raw scores, shift difficulty, negative markings, and normalized marks.",
+  "description": "Comprehensive score calculation and rank prediction engine for SSC candidates. Parses candidate response sheets, analyzes raw scores, shift difficulty, negative markings, and normalized marks.",
   "featureList": [
-    "Automatic Answer Key URL parsing for TCS candidate responses",
+    "Automatic Answer Key URL parsing for candidate responses",
     "Section-wise raw marks, correct, incorrect, and negative deduction",
     "Shift difficulty normalization estimate",
     "Category-wise and All-India rank practice",
@@ -62,10 +62,10 @@ const RANK_PREDICTOR_FAQ_SCHEMA = {
     },
     {
       "@type": "Question",
-      "name": "Can I calculate my score using my official answer key link?",
+      "name": "Can I calculate my score using my answer key link?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Simply paste your official SSC response sheet URL into the Rank Predictor tool to automatically extract your selected answers, correct answer keys, and section-by-section scorecard."
+        "text": "Yes. Simply paste your SSC response sheet URL into the Rank Predictor tool to automatically extract your selected answers, correct answer keys, and section-by-section scorecard."
       }
     }
   ]

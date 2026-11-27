@@ -25,14 +25,34 @@ export default function ForgotPasswordPage() {
         : (process.env.NEXT_PUBLIC_APP_URL || "https://ssczone.com");
 
       const cleanUrl = siteUrl.replace(/\/$/, "");
-      const redirectTo = `${cleanUrl}/update-password`;
+      const redirectTo = `${cleanUrl}/auth/callback?next=/update-password`;
 
       const { error: err } = await supabase.auth.resetPasswordForEmail(email.trim(), {
         redirectTo,
       });
 
       if (err) {
-        setError(err.message || "Failed to send reset link. Please verify your email.");
+        let userFriendlyMsg = err.message || "Failed to send reset link. Please verify your email.";
+        const lowerMsg = (err.message || "").toLowerCase();
+
+        if (
+          lowerMsg.includes("not authorized") ||
+          lowerMsg.includes("cannot be used as it is not authorized")
+        ) {
+          userFriendlyMsg =
+            "Email Restriction: Supabase's default email server only sends emails to project team members until Custom SMTP is configured in Supabase Settings. Please contact admin for an instant reset link.";
+        } else if (
+          lowerMsg.includes("rate limit") ||
+          lowerMsg.includes("60 seconds") ||
+          lowerMsg.includes("over_email_send_rate_limit") ||
+          (err as any).status === 429
+        ) {
+          userFriendlyMsg = "Security Rate Limit: For account security, password reset requests are limited to once every 60 seconds. Please wait 1 minute, and check your email inbox & Spam folder for your reset link.";
+        } else if (lowerMsg.includes("signups not allowed") || lowerMsg.includes("user not found")) {
+          userFriendlyMsg = "No account found with this email address. Please check for typos or register for an account.";
+        }
+
+        setError(userFriendlyMsg);
         setLoading(false);
         return;
       }

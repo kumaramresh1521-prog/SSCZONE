@@ -32,9 +32,9 @@ export interface FooterConfig {
 
 export const DEFAULT_FOOTER_CONFIG: FooterConfig = {
   brandDescription:
-    "Syllabus-wise MCQ practice and official previous year test series portal for SSC CGL, CHSL, CPO, MTS, and Railways examinations.",
+    "Syllabus-wise MCQ practice and previous year test series portal for SSC CGL, CHSL, CPO, MTS, and Railways examinations.",
   brandSubText:
-    "Authentic questions aligned with official Staff Selection Commission notifications.",
+    "Curated practice questions aligned with latest Staff Selection Commission exam patterns.",
   copyrightText: "SSCZone. All rights reserved.",
   columns: [
     {
@@ -86,7 +86,7 @@ export const DEFAULT_FOOTER_CONFIG: FooterConfig = {
     {
       id: "youtube",
       platform: "youtube",
-      label: "Official YouTube Channel",
+      label: "YouTube Channel",
       url: "https://youtube.com/@ssczone",
       is_active: true,
     },

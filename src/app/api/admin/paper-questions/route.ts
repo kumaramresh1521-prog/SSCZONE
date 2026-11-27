@@ -44,7 +44,7 @@ async function syncLocalBackup(paperId: number) {
     txt += `${(paper.title || "SSC ZONE PYQ PAPER").toUpperCase()}\n`;
     txt += `Exam: ${(paper as any).exams?.title || "SSC Examination"} | Year: ${paper.year || 2025}\n`;
     txt += `Total Questions: ${questions.length} | Duration: ${paper.duration_minutes || 60} Minutes\n`;
-    txt += `Extracted from Official Answer Key via SSC ZONE (www.ssczone.in)\n`;
+    txt += `Shift Questions Archive via SSC ZONE (www.ssczone.in)\n`;
     txt += `Last Updated: ${new Date().toLocaleString()}\n`;
     txt += `================================================================================\n\n`;
 

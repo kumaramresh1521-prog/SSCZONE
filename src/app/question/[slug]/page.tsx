@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         .maybeSingle();
 
       if (pq) {
-        const paperTitle = pq.previous_papers?.title || "Official SSC PYQ";
+        const paperTitle = pq.previous_papers?.title || "SSC PYQ Shift";
         const canonicalPath = getPyqQuestionCanonicalPath(pq.id, pq.question_text);
         const fullUrl = `https://ssczone.com${canonicalPath}`;
         return buildQuestionMetadata(pq, fullUrl, undefined, undefined, true, paperTitle);
@@ -66,7 +66,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       .maybeSingle();
 
     if (fallbackPq) {
-      const paperTitle = fallbackPq.previous_papers?.title || "Official SSC PYQ";
+      const paperTitle = fallbackPq.previous_papers?.title || "SSC PYQ Shift";
       const canonicalPath = getPyqQuestionCanonicalPath(fallbackPq.id, fallbackPq.question_text);
       const fullUrl = `https://ssczone.com${canonicalPath}`;
       return buildQuestionMetadata(fallbackPq, fullUrl, undefined, undefined, true, paperTitle);

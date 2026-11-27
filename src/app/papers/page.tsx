@@ -543,7 +543,7 @@ export default function PapersPage() {
                 <Folder className="mx-auto h-12 w-12 text-slate-300 mb-3" />
                 <p className="text-base font-bold text-slate-800">No Exam Folders Currently Available</p>
                 <p className="text-xs text-slate-400 mt-1 max-w-md mx-auto">
-                  New verified official shift papers and folders are currently in preparation. Please check back soon or reset your filters.
+                  New verified shift papers and folders are currently in preparation. Please check back soon or reset your filters.
                 </p>
                 <button
                   onClick={handleResetFilters}
@@ -587,7 +587,7 @@ export default function PapersPage() {
                             {f.examTitle} {f.year}
                           </h3>
                           <span className="text-xs font-semibold text-slate-500">
-                            Official {f.tier} Shift Series
+                            {f.tier} Shift Series
                           </span>
                         </div>
                       </div>
@@ -765,7 +765,7 @@ export default function PapersPage() {
                 <FileSpreadsheet className="mx-auto h-10 w-10 text-slate-300 mb-2" />
                 <p className="text-base font-bold text-slate-800">No shift papers match your criteria</p>
                 <p className="text-xs text-slate-400 mt-1 max-w-md mx-auto">
-                  New official papers are being uploaded and verified. Please reset your filters or switch to Folders view.
+                  New papers are being uploaded and verified. Please reset your filters or switch to Folders view.
                 </p>
                 <button
                   onClick={handleResetFilters}

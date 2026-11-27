@@ -32,7 +32,7 @@ export async function POST(req: NextRequest) {
     const paper = paperRes.data;
     const questions = questionsRes.data;
 
-    // 2. Official SSC marking scheme (shared with the client scorecard)
+    // 2. Standard SSC marking scheme (shared with the client scorecard)
     const {
       positive: positiveMarks,
       negative: negativeMarks,

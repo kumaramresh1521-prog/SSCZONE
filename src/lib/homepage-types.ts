@@ -41,7 +41,7 @@ export interface HomepageConfig {
 
 export const DEFAULT_HOMEPAGE_CONFIG: HomepageConfig = {
   hero: {
-    badgeText: "Official Exam Syllabus Based Practice Platform",
+    badgeText: "Exam Syllabus Based Practice Platform",
     headline: "Crack Competitive Exams With",
     highlightText: "SSCZone",
     description: "Practice topic-wise MCQs from standard reference books, attempt previous year test papers, and track your accuracy chapter by chapter.",
@@ -76,11 +76,11 @@ export const DEFAULT_HOMEPAGE_CONFIG: HomepageConfig = {
   },
   stepsSection: {
     title: "3 Simple Steps to Master Any Exam",
-    subtitle: "Our structured approach ensures you never miss a single topic from official exam notifications.",
+    subtitle: "Our structured approach ensures you never miss a single topic from the exam syllabus.",
     steps: [
       {
-        title: "1. Select Official Exam Syllabus",
-        desc: "Browse through official exam syllabi categorized neatly into subjects and topic chapters.",
+        title: "1. Select Exam Syllabus",
+        desc: "Browse through exam syllabi categorized neatly into subjects and topic chapters.",
       },
       {
         title: "2. Practice Chapter-by-Chapter",

@@ -46,7 +46,7 @@ export default function SSCPhotoResizerPage() {
         filename: "ssc_photo_20to50kb.jpg"
       }
     : {
-        name: "Official Signature",
+        name: "Candidate Signature",
         widthCm: "4.0 cm",
         heightCm: "2.0 cm",
         pxWidth: 400,
@@ -150,7 +150,7 @@ export default function SSCPhotoResizerPage() {
                   SSC Photo &amp; Signature Resizer Tool 2026
                 </h1>
                 <p className="text-emerald-100 text-xs sm:text-sm mt-0.5 font-medium">
-                  Crop &amp; format your photo (20-50 KB) &amp; signature (10-20 KB) to official SSC CGL / CHSL upload specifications.
+                  Crop &amp; format your photo (20-50 KB) &amp; signature (10-20 KB) to SSC CGL / CHSL upload specifications.
                 </p>
               </div>
             </div>
@@ -186,7 +186,7 @@ export default function SSCPhotoResizerPage() {
                 : "bg-white text-slate-700 border-slate-200 hover:border-emerald-400"
             }`}
           >
-            <FileCheck className="w-4 h-4" /> Official Signature (10 KB – 20 KB)
+            <FileCheck className="w-4 h-4" /> Signature (10 KB – 20 KB)
           </button>
         </div>
 
@@ -214,7 +214,7 @@ export default function SSCPhotoResizerPage() {
             {/* SPECS SUMMARY BOX */}
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-xs space-y-2">
               <p className="font-extrabold text-slate-900 border-b border-slate-200 pb-1.5">
-                Official SSC Guidelines for {specs.name}:
+                SSC Guidelines for {specs.name}:
               </p>
               <div className="grid grid-cols-2 gap-2 text-slate-600">
                 <div>Dimensions: <b>{specs.widthCm} x {specs.heightCm}</b></div>
@@ -312,14 +312,14 @@ export default function SSCPhotoResizerPage() {
           <span>100% Privacy Guaranteed: Your photos & signatures are processed inside your browser and NEVER uploaded to any server.</span>
         </div>
 
-        {/* OFFICIAL SSC SPECIFICATIONS REFERENCE TABLE */}
+        {/* SSC SPECIFICATIONS REFERENCE TABLE */}
         <div className="mt-12 bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6">
           <div className="border-b border-slate-100 pb-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-[11px] font-black uppercase tracking-wider mb-2">
-              <FileCheck className="w-3.5 h-3.5" /> Official Guidelines
+              <FileCheck className="w-3.5 h-3.5" /> Form Guidelines
             </div>
             <h2 className="text-xl sm:text-2xl font-black text-slate-900">
-              Staff Selection Commission (SSC) Photo &amp; Signature Official Criteria
+              Staff Selection Commission (SSC) Photo &amp; Signature Criteria
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
               Strict rules enforced during online application verification for SSC CGL, CHSL, CPO, MTS, and GD exams.
@@ -378,7 +378,7 @@ export default function SSCPhotoResizerPage() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-amber-600 font-bold shrink-0">2.</span>
-                <span><b>Blurry or Distorted Aspect Ratio:</b> Stretching or squishing photos makes facial recognition fail at TCS examination centers.</span>
+                <span><b>Blurry or Distorted Aspect Ratio:</b> Stretching or squishing photos makes facial recognition fail at examination centers.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-amber-600 font-bold shrink-0">3.</span>
@@ -475,7 +475,7 @@ export default function SSCPhotoResizerPage() {
               },
               {
                 q: "Can I wear power reading spectacles in my SSC application photo?",
-                a: "No. SSC explicitly states in official notification guidelines that photographs wearing spectacles, eyewear, tinted glasses, or goggles will be straightaway REJECTED. Even if you wear regular prescription glasses, you MUST take off your glasses for the application photograph."
+                a: "No. SSC rules state in examination guidelines that photographs wearing spectacles, eyewear, tinted glasses, or goggles will be straightaway REJECTED. Even if you wear regular prescription glasses, you MUST take off your glasses for the application photograph."
               },
               {
                 q: "What ink color should be used for the candidate signature?",
@@ -532,7 +532,7 @@ export default function SSCPhotoResizerPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { title: "SSC Age Calculator", desc: "Calculate exact years, months, and days on crucial cutoff dates.", href: "/toolkit/age-calculator" },
-              { title: "TCS Typing Test Practice", desc: "2000 Key Depressions in 15 mins TCS exam hall interface.", href: "/typing" },
+              { title: "SSC Typing Test Practice", desc: "2000 Key Depressions in 15 mins exam hall interface.", href: "/typing" },
               { title: "SSC Rank Predictor", desc: "Calculate raw marks and shift difficulty normalization score.", href: "/toolkit/rank-predictor" },
               { title: "Master Syllabus Tracker", desc: "Track chapter-wise 3-pillar progress for CGL, CHSL, CPO.", href: "/syllabus" },
             ].map((t, idx) => (

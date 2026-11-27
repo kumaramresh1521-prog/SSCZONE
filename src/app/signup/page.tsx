@@ -20,8 +20,9 @@ export default function SignupPage() {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const p = new URLSearchParams(window.location.search).get("redirect");
-      if (p && p.startsWith("/")) {
+      const sp = new URLSearchParams(window.location.search);
+      const p = sp.get("redirect") || sp.get("next");
+      if (p && p.startsWith("/") && !p.startsWith("//")) {
         setRedirectUrl(p);
       }
     }
@@ -33,17 +34,48 @@ export default function SignupPage() {
     setLoading(true);
 
     try {
+      const origin = typeof window !== "undefined" && window.location.origin ? window.location.origin : "";
+      const siteUrl = origin && !origin.includes("localhost")
+        ? origin
+        : (process.env.NEXT_PUBLIC_APP_URL || "https://ssczone.com");
+      const cleanUrl = siteUrl.replace(/\/$/, "");
+      const emailRedirectTo = redirectUrl
+        ? `${cleanUrl}/auth/callback?next=${encodeURIComponent(redirectUrl)}`
+        : `${cleanUrl}/auth/callback`;
+
       const { data, error: signUpError } = await supabase.auth.signUp({
         email: email.trim(),
         password: password.trim(),
         options: {
           data: { full_name: name.trim() },
-          emailRedirectTo: `${typeof window !== "undefined" ? window.location.origin : ""}/auth/callback`,
+          emailRedirectTo,
         },
       });
 
       if (signUpError) {
-        setError(signUpError.message);
+        let userFriendlyMsg = signUpError.message || "Failed to create account.";
+        const lowerMsg = userFriendlyMsg.toLowerCase();
+
+        if (
+          lowerMsg.includes("not authorized") ||
+          lowerMsg.includes("cannot be used as it is not authorized")
+        ) {
+          userFriendlyMsg =
+            "Email Restriction: Supabase built-in email service only allows verified team emails until Custom SMTP is connected in Supabase Auth Settings. Please contact admin for instant activation.";
+        } else if (
+          lowerMsg.includes("rate limit") ||
+          lowerMsg.includes("once every 60 seconds") ||
+          lowerMsg.includes("over_email_send_rate_limit") ||
+          (signUpError as any).status === 429
+        ) {
+          userFriendlyMsg =
+            "Email Rate Limit: Too many verification requests right now. Please wait 1 minute or ask admin to verify your account.";
+        } else if (lowerMsg.includes("already registered")) {
+          userFriendlyMsg =
+            "An account with this email already exists. Please Sign In or reset your password.";
+        }
+
+        setError(userFriendlyMsg);
         setLoading(false);
         return;
       }

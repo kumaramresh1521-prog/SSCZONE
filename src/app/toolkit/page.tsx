@@ -89,8 +89,8 @@ export default function ToolkitHubPage() {
 
   const faqs = [
     {
-      q: "What are the official SSC photo and signature specifications for 2025-2026?",
-      a: "As per official Staff Selection Commission notifications, passport photos must be between 20 KB and 50 KB in JPEG/JPG format with dimensions of 3.5 cm (width) × 4.5 cm (height). Signatures must be between 10 KB and 20 KB in JPEG/JPG format with dimensions of 4.0 cm (width) × 2.0 cm (height). Both should have a clean, light background and be clearly legible."
+      q: "What are the SSC photo and signature specifications for 2025-2026?",
+      a: "For SSC application forms, passport photos must be between 20 KB and 50 KB in JPEG/JPG format with dimensions of 3.5 cm (width) × 4.5 cm (height). Signatures must be between 10 KB and 20 KB in JPEG/JPG format with dimensions of 4.0 cm (width) × 2.0 cm (height). Both should have a clean, light background and be clearly legible."
     },
     {
       q: "Are photos and documents uploaded to your server when using the Photo Resizer?",
@@ -235,7 +235,7 @@ export default function ToolkitHubPage() {
           </div>
           <div className="flex items-center gap-2">
             <FileCheck className="w-5 h-5 text-blue-600" />
-            <span>Official SSC 2025-2026 Aligned</span>
+            <span>SSC 2025-2026 Aligned</span>
           </div>
           <div className="flex items-center gap-2">
             <Zap className="w-5 h-5 text-amber-500" />
@@ -253,7 +253,7 @@ export default function ToolkitHubPage() {
               SSC Candidate Utilities &amp; Guidelines FAQ
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
-              Official Staff Selection Commission rules regarding application uploads, typing speeds, and cutoff criteria.
+              Standard Staff Selection Commission rules regarding application uploads, typing speeds, and cutoff criteria.
             </p>
           </div>
 
@@ -309,7 +309,7 @@ export default function ToolkitHubPage() {
               <div>
                 <span className="text-xl mb-1 block">📄</span>
                 <h4 className="text-sm font-black text-white group-hover:text-blue-300 transition-colors">
-                  Official PYQ Shift Papers
+                  PYQ Shift Papers
                 </h4>
                 <p className="text-xs text-slate-300 mt-1 line-clamp-2">
                   100+ SSC CGL, CHSL, and CPO shift papers with bilingual solutions in CBT exam mode.
@@ -402,7 +402,7 @@ export default function ToolkitHubPage() {
                   Full CBT Mock Tests
                 </h4>
                 <p className="text-xs text-slate-300 mt-1 line-clamp-2">
-                  Real TCS examination hall interface with split-screen, timer countdown, and question palette.
+                  Exam hall interface with split-screen, timer countdown, and question palette.
                 </p>
               </div>
               <span className="mt-3 text-[11px] font-bold text-amber-300 flex items-center gap-1">

@@ -44,7 +44,7 @@ export async function GET(req: NextRequest) {
           .maybeSingle();
 
         if (pq) {
-          const paperTitle = pq.previous_papers?.title || "Official SSC PYQ";
+          const paperTitle = pq.previous_papers?.title || "SSC PYQ Shift Paper";
           const canonicalPath = getPyqQuestionCanonicalPath(pq.id, pq.question_text);
           const fullUrl = `https://ssczone.com${canonicalPath}`;
           const metadata = buildQuestionMetadata(pq, fullUrl, undefined, undefined, true, paperTitle);
@@ -142,7 +142,7 @@ export async function GET(req: NextRequest) {
         .maybeSingle();
 
       if (fallbackPq) {
-        const paperTitle = fallbackPq.previous_papers?.title || "Official SSC PYQ";
+        const paperTitle = fallbackPq.previous_papers?.title || "SSC PYQ Shift Paper";
         const canonicalPath = getPyqQuestionCanonicalPath(fallbackPq.id, fallbackPq.question_text);
         const fullUrl = `https://ssczone.com${canonicalPath}`;
         const metadata = buildQuestionMetadata(fallbackPq, fullUrl, undefined, undefined, true, paperTitle);

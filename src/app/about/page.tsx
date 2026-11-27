@@ -63,7 +63,7 @@ export default async function AboutPage() {
             {[
               {
                 title: config.feature1Title || "Strict Syllabus Alignment",
-                desc: config.feature1Desc || "Every topic is mapped directly to official exam notifications, ensuring zero wasted time on out-of-syllabus questions.",
+                desc: config.feature1Desc || "Every topic is mapped directly to published exam syllabi, ensuring zero wasted time on out-of-syllabus questions.",
                 icon: Target,
               },
               {

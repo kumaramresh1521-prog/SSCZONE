@@ -82,11 +82,11 @@ export function buildQuestionMetadata(
   let description: string;
 
   if (isPyqPaper || paperTitle) {
-    titleString = `${cleanPrompt.slice(0, 55)}... — ${pyqTag} Official PYQ Solution | SSCZone`;
-    description = `Official PYQ Solution [${pyqTag}]: Read verified answer and step-by-step explanation for: "${cleanPrompt.slice(0, 130)}...". Practice thousands of SSC previous year questions online on SSCZone.`;
+    titleString = `${cleanPrompt.slice(0, 55)}... — ${pyqTag} PYQ Solution | SSCZone`;
+    description = `PYQ Solution [${pyqTag}]: Read verified answer and step-by-step explanation for: "${cleanPrompt.slice(0, 130)}...". Practice thousands of SSC previous year questions online on SSCZone.`;
   } else if (pyqTag) {
     titleString = `${cleanPrompt.slice(0, 55)}... — ${pyqTag} Solution | SSCZone`;
-    description = `Official PYQ [${pyqTag}]: Read verified answer and step-by-step explanation for: "${cleanPrompt.slice(0, 130)}...". Practice thousands of SSC previous year questions online on SSCZone.`;
+    description = `PYQ [${pyqTag}]: Read verified answer and step-by-step explanation for: "${cleanPrompt.slice(0, 130)}...". Practice thousands of SSC previous year questions online on SSCZone.`;
   } else {
     const contextName = topicTitle ? `${topicTitle} - ${examTitle || "SSC"}` : "SSC Question";
     titleString = `${cleanPrompt.slice(0, 70)}... — ${contextName} Solution | SSCZone`;
@@ -200,7 +200,7 @@ export function generateQuestionJsonLd(
         {
           "@type": "ListItem",
           "position": 3,
-          "name": pyqTag ? `${pyqTag} (Official PYQ)` : (topicTitle || "Practice"),
+          "name": pyqTag ? `${pyqTag} (PYQ)` : (topicTitle || "Practice"),
           "item": pyqTag ? "https://ssczone.com/papers" : (question.topic_id ? `https://ssczone.com/practice/${question.topic_id}` : "https://ssczone.com"),
         },
         {

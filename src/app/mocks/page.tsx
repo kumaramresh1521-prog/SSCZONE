@@ -100,7 +100,7 @@ export default function MockTestSeriesPage() {
         <div className="max-w-5xl mx-auto space-y-5 text-center">
           <div className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 border border-blue-200/80 px-3.5 py-1 text-xs font-black text-blue-700 uppercase tracking-wider shadow-2xs">
             <Trophy className="h-3.5 w-3.5 text-blue-600 fill-blue-500" />
-            <span>Official TCS CBT Practice • 100% Free</span>
+            <span>Standard CBT Practice • 100% Free</span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">
@@ -108,7 +108,7 @@ export default function MockTestSeriesPage() {
           </h1>
 
           <p className="text-xs sm:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Experience the exact exam hall environment: 100 Questions, 60-minute countdown timer, TCS question palette, bilingual Hindi &amp; English mode, and instant negative marking scorecards.
+            Experience a realistic exam hall environment: 100 Questions, 60-minute countdown timer, CBT question palette, bilingual Hindi &amp; English mode, and instant negative marking scorecards.
           </p>
 
           {/* Key Feature Stats Pills */}
@@ -306,10 +306,10 @@ export default function MockTestSeriesPage() {
             <div className="rounded-2xl border border-slate-100 bg-slate-50 p-4 space-y-1.5">
               <div className="flex items-center gap-2 text-xs font-bold text-slate-900">
                 <CheckCircle2 className="h-4 w-4 text-blue-600" />
-                <span>Exact TCS CBT Exam Layout</span>
+                <span>Realistic CBT Exam Layout</span>
               </div>
               <p className="text-[11px] text-slate-500 leading-relaxed">
-                Color-coded question palette (Green, Red, Violet) identical to the actual TCS exam hall software.
+                Color-coded question palette (Green, Red, Violet) designed to match real computer-based tests.
               </p>
             </div>
 

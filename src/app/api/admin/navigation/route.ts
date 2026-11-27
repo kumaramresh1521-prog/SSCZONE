@@ -36,7 +36,7 @@ export async function POST(req: NextRequest) {
 
     const currentConfig = await getNavigationConfigAsync();
 
-    // 1. Reset to Official Defaults
+    // 1. Reset to Default Navigation
     if (action === "reset") {
       await saveNavigationConfigAsync(DEFAULT_NAVIGATION_CONFIG);
       return NextResponse.json({ success: true, config: DEFAULT_NAVIGATION_CONFIG });

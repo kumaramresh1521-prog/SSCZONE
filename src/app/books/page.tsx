@@ -29,11 +29,11 @@ import {
 const BOOKS_DATA: BookItem[] = [
   {
     id: "maths-ssczone-6800",
-    title: "SSC Zone Master Mathematics 6800+ TCS MCQs",
-    hindiTitle: "एसएससी जोन मैथ्स 6800+ टीसीएस प्रश्न",
+    title: "SSC Zone Master Mathematics 6800+ PYQ MCQs",
+    hindiTitle: "एसएससी जोन मैथ्स 6800+ सॉल्व्ड प्रश्न",
     author: "SSC Zone Math Team",
     publisher: "SSC Zone Publications",
-    edition: "6th Edition (2025-26 TCS Pattern)",
+    edition: "6th Edition (2025-26 Exam Pattern)",
     subject: "Quantitative Aptitude",
     exams: ["SSC CGL", "SSC CHSL", "SSC CPO", "SSC MTS", "SSC GD"],
     language: "Bilingual",
@@ -42,7 +42,7 @@ const BOOKS_DATA: BookItem[] = [
     reviewCount: 4820,
     badge: "Topper's #1 Choice",
     coverColor: "from-blue-600 to-indigo-800",
-    description: "Complete TCS arithmetic and advance maths questions categorized type-wise with smart shortcut solutions and formula summaries.",
+    description: "Complete arithmetic and advance maths questions categorized type-wise with smart shortcut solutions and formula summaries.",
     topperNote: "Must-solve book for scoring 45+ out of 50 in CGL Tier-1 and full accuracy in Tier-2.",
     freePdfAvailable: true,
     practiceTopicSlug: "ssc-percentage",
@@ -76,7 +76,7 @@ const BOOKS_DATA: BookItem[] = [
     sampleChapters: [
       { title: "Top 500 Most Repeated One Word Substitutions", pages: "1-55", highYield: true },
       { title: "Top 500 Most Repeated Idioms & Phrases", pages: "56-110", highYield: true },
-      { title: "TCS Most Asked Synonyms & Antonyms (With Hindi Meaning)", pages: "111-190", highYield: true },
+      { title: "Most Asked Synonyms & Antonyms (With Hindi Meaning)", pages: "111-190", highYield: true },
       { title: "Frequently Misspelt Words & Confusing Words List", pages: "191-230", highYield: false },
       { title: "Root Words Method for Rapid Vocabulary Acquisition", pages: "231-280", highYield: true }
     ]
@@ -109,8 +109,8 @@ const BOOKS_DATA: BookItem[] = [
   },
   {
     id: "reasoning-ssczone-7200",
-    title: "SSC Zone Master Reasoning 7200+ TCS MCQs",
-    hindiTitle: "एसएससी जोन रीजनिंग 7200+ टीसीएस प्रश्न",
+    title: "SSC Zone Master Reasoning 7200+ PYQ MCQs",
+    hindiTitle: "एसएससी जोन रीजनिंग 7200+ सॉल्व्ड प्रश्न",
     author: "SSC Zone Editorial Board",
     publisher: "SSC Zone Publications",
     edition: "5th Edition (2025 Pattern)",
@@ -122,7 +122,7 @@ const BOOKS_DATA: BookItem[] = [
     reviewCount: 3900,
     badge: "Full Score Blueprint",
     coverColor: "from-purple-700 to-indigo-900",
-    description: "Complete TCS chapter-wise question bank covering Analogies, Syllogisms, Number Series, Coding-Decoding, and tricky Non-Verbal patterns.",
+    description: "Complete chapter-wise question bank covering Analogies, Syllogisms, Number Series, Coding-Decoding, and tricky Non-Verbal patterns.",
     topperNote: "Contains all the tough logical pattern shifts introduced in recent CGL Tier 1 & 2 exams.",
     freePdfAvailable: true,
     sampleChapters: [
@@ -161,20 +161,20 @@ const BOOKS_DATA: BookItem[] = [
   },
   {
     id: "gs-ssczone-6500",
-    title: "SSC Zone General Studies 6500+ TCS MCQs",
+    title: "SSC Zone General Studies 6500+ PYQ MCQs",
     hindiTitle: "एसएससी जोन सामान्य अध्ययन 6500+ प्रश्न",
     author: "SSC Zone Editorial Board",
     publisher: "SSC Zone Publications",
-    edition: "6th Edition (TCS Pattern 2025)",
+    edition: "6th Edition (Latest Pattern 2025)",
     subject: "General Awareness",
     exams: ["SSC CGL", "SSC CHSL", "SSC CPO", "SSC MTS", "SSC GD"],
     language: "Bilingual",
     pages: 820,
     rating: 4.8,
     reviewCount: 4200,
-    badge: "TCS Trendsetter",
+    badge: "High-Yield Edition",
     coverColor: "from-rose-700 to-red-900",
-    description: "Detailed topic-wise TCS questions on Classical Dances, Musical Instruments, Census 2011, Articles, Schemes, and modern Science questions.",
+    description: "Detailed topic-wise questions on Classical Dances, Musical Instruments, Census 2011, Articles, Schemes, and modern Science questions.",
     topperNote: "The 4 options explanation gives you 4 extra facts per question, making revision comprehensive.",
     freePdfAvailable: true,
     sampleChapters: [
@@ -229,7 +229,7 @@ const BOOKS_DATA: BookItem[] = [
     topperNote: "Ideal for final 30-day exam practice and time-management practice.",
     freePdfAvailable: true,
     sampleChapters: [
-      { title: "SSC CGL 2024 Tier-1 Official Shift Papers (Sets 1-10)", pages: "1-120", highYield: true },
+      { title: "SSC CGL 2024 Tier-1 Shift Papers (Sets 1-10)", pages: "1-120", highYield: true },
       { title: "SSC CGL 2023 Tier-2 Mains High Difficulty Papers", pages: "121-220", highYield: true },
       { title: "Shift-wise Cutoff Analysis & Safe Attempt Guide", pages: "221-240", highYield: false }
     ]
@@ -800,7 +800,7 @@ export default function BooksPage() {
                   <h4 className="font-extrabold uppercase tracking-wider text-gray-500 text-[11px]">
                     Syllabus Chapters ({activeBook.sampleChapters.length} Key Chapters)
                   </h4>
-                  <span className="text-[10px] text-emerald-700 font-bold">100% TCS Pattern</span>
+                  <span className="text-[10px] text-emerald-700 font-bold">Latest SSC Pattern</span>
                 </div>
 
                 <div className="space-y-1.5">

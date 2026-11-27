@@ -42,7 +42,7 @@ export const DEFAULT_CANDIDATE_TOOLS: CandidateTool[] = [
   {
     id: "rank-predictor",
     title: "SSC Rank Predictor & Marks Calculator",
-    description: "Paste your official SSC Answer Key link or enter raw scores to calculate category rank, shift difficulty, and normalized marks.",
+    description: "Paste your SSC Answer Key link or enter raw scores to calculate category rank, shift difficulty, and normalized marks.",
     iconName: "Trophy",
     badge: "🔥 POPULAR",
     badgeColor: "bg-blue-600 text-white",
@@ -80,14 +80,14 @@ export const DEFAULT_CANDIDATE_TOOLS: CandidateTool[] = [
   {
     id: "typing-test",
     title: "SSC Typing Test Practice",
-    description: "TCS exam hall interface practice with 15-minute countdown timer, key depressions tracking, WPM speed calculation, and full/half error analysis.",
+    description: "Exam hall interface practice with 15-minute countdown timer, key depressions tracking, WPM speed calculation, and full/half error analysis.",
     iconName: "Keyboard",
-    badge: "⌨️ TCS EXAM HALL",
+    badge: "⌨️ CBT EXAM HALL",
     badgeColor: "bg-amber-600 text-white",
     href: "/typing",
     gradient: "from-amber-600 to-orange-600",
     features: [
-      "Exact TCS Exam Hall Split-Screen Keyboard Interface",
+      "Real Exam Hall Split-Screen Keyboard Interface",
       "2000 Key Depressions in 15 Minutes Live Counter",
       "Full Error vs Half Error Percentage & Qualifying Status"
     ],
@@ -99,7 +99,7 @@ export const DEFAULT_CANDIDATE_TOOLS: CandidateTool[] = [
   {
     id: "age-calculator",
     title: "SSC Eligibility Age Calculator",
-    description: "Calculate your exact age in years, months, and days as on official SSC cutoff dates with category age relaxation.",
+    description: "Calculate your exact age in years, months, and days as on SSC cutoff dates with category age relaxation.",
     iconName: "Calendar",
     badge: "🎂 ACCURATE",
     badgeColor: "bg-indigo-600 text-white",

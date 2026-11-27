@@ -335,7 +335,7 @@ export const DEFAULT_MOBILE_APP_CONFIG: MobileAppConfig = {
     paywallMode: "banner_only",
     freePapersLimit: 5,
     upgradeTitle: "Upgrade to SSCZone Pro",
-    upgradeSubtitle: "Unlock all official shift papers & full solutions",
+    upgradeSubtitle: "Unlock all shift papers & full solutions",
     upgradeUrl: "https://ssczone.com/pricing",
   },
 };

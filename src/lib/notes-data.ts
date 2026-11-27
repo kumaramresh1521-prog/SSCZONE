@@ -68,7 +68,7 @@ export const DEFAULT_SUBJECTS_DATA: SubjectWithChapters[] = [
           { label: "Solid Angle (ठोस कोण)", detail: "SI Unit: Steradian (sr)." },
         ],
         table: {
-          title: "Top High-Yield Scientific Instruments Asked by TCS",
+          title: "Top High-Yield Scientific Instruments Asked in Exams",
           headers: ["Instrument", "Measures / Uses", "Exam Frequency"],
           rows: [
             ["Pyrometer", "Very High Temperatures (e.g. Sun/Furnace)", "Repeated 6+ times"],
@@ -78,7 +78,7 @@ export const DEFAULT_SUBJECTS_DATA: SubjectWithChapters[] = [
             ["Anemometer", "Wind speed and direction", "SSC CPO 2023"],
           ],
         },
-        tcsTrap: "TCS Trap Alert: Students confuse 'Hygrometer' (measures Humidity) with 'Hydrometer' (measures Liquid Density). Remember: G = Gas/Air humidity, D = Density of liquid.",
+        tcsTrap: "Exam Trap Alert: Students confuse 'Hygrometer' (measures Humidity) with 'Hydrometer' (measures Liquid Density). Remember: G = Gas/Air humidity, D = Density of liquid.",
         practiceMcq: {
           question: "Which of the following scientific instruments is used for measuring very high temperatures without physical contact?",
           questionHi: "निम्नलिखित में से किस वैज्ञानिक उपकरण का उपयोग बिना संपर्क के बहुत उच्च तापमान मापने के लिए किया जाता है?",

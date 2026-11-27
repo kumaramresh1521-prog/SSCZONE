@@ -4,7 +4,7 @@ import { buildPageMetadata } from "@/lib/seo-store";
 export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata("/papers", {
     title: "SSC PYQ Shift Papers 2026 Live — SSC PYQ Shift Papers CBT Test | SSCZone",
-    description: "Attempt official SSC CGL, CHSL, CPO previous year shift papers in online CBT exam mode with instant scorecards and detailed solutions.",
+    description: "Attempt SSC CGL, CHSL, CPO previous year shift papers in online CBT exam mode with instant scorecards and detailed solutions.",
     keywords: [
       "SSC PYQ Papers",
       "SSC CGL 2024 Tier 1 Shift Papers",

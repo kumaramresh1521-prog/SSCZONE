@@ -136,7 +136,7 @@ export default function SSCAgeCalculatorPage() {
 
   const relatedTools = [
     { title: "Photo & Signature Resizer", desc: "Compress photo (20-50 KB) & signature (10-20 KB) in seconds.", href: "/toolkit/photo-resizer" },
-    { title: "TCS Typing Test Practice", desc: "2000 Key Depressions in 15 mins TCS exam hall interface.", href: "/typing" },
+    { title: "SSC Typing Test Practice", desc: "2000 Key Depressions in 15 mins exam hall interface.", href: "/typing" },
     { title: "SSC Rank Predictor", desc: "Calculate raw marks and shift difficulty normalization score.", href: "/toolkit/rank-predictor" },
     { title: "Master Syllabus Tracker", desc: "Track chapter-wise 3-pillar progress for CGL, CHSL, CPO.", href: "/syllabus" },
   ];
@@ -166,7 +166,7 @@ export default function SSCAgeCalculatorPage() {
                   SSC Age Calculator &amp; Eligibility Checker 2026
                 </h1>
                 <p className="text-indigo-100 text-xs sm:text-sm mt-1 font-medium">
-                  Calculate your exact age in years, months, and days on official SSC cutoff dates with category relaxations.
+                  Calculate your exact age in years, months, and days on SSC cutoff dates with category relaxations.
                 </p>
               </div>
             </div>
@@ -301,7 +301,7 @@ export default function SSCAgeCalculatorPage() {
                 SSC Post-Wise Eligibility Breakdown
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 mt-0.5">
-                Live verification of your calculated age against official SSC cadres (with category relaxation applied).
+                Live verification of your calculated age against SSC cadres (with category relaxation applied).
               </p>
             </div>
             <span className="text-xs font-bold text-slate-500 bg-slate-100 px-3 py-1.5 rounded-xl self-start sm:self-auto">
@@ -361,7 +361,7 @@ export default function SSCAgeCalculatorPage() {
         <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm mb-12 space-y-6">
           <div className="border-b border-slate-100 pb-4">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-[11px] font-black uppercase tracking-wider mb-2">
-              <BookOpen className="w-3.5 h-3.5" /> DoPT Official Norms
+              <BookOpen className="w-3.5 h-3.5" /> DoPT Guidelines
             </div>
             <h2 className="text-xl sm:text-2xl font-black text-slate-900">
               How Crucial Cutoff Date is Decided for SSC Examinations
@@ -394,7 +394,7 @@ export default function SSCAgeCalculatorPage() {
           {/* CATEGORY AGE RELAXATION REFERENCE TABLE */}
           <div className="overflow-x-auto mt-6">
             <h3 className="text-sm font-black text-slate-900 uppercase tracking-wide mb-3">
-              Official Category Upper Age Relaxation Reference Table
+              Category Upper Age Relaxation Reference Table
             </h3>
             <table className="w-full text-xs text-left text-slate-700">
               <thead className="bg-slate-50 text-slate-900 font-black uppercase tracking-wider border-y border-slate-200">

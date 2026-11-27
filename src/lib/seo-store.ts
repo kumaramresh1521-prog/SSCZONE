@@ -39,7 +39,7 @@ export interface SeoConfigData {
 }
 
 export const DEFAULT_SEO_CONFIG: SeoConfigData = {
-  siteTitle: "SSCZone — Official SSC Syllabus-Wise MCQ Practice & Test Series Portal",
+  siteTitle: "SSCZone — SSC Syllabus-Wise MCQ Practice & Test Series Portal",
   titleTemplate: "%s | SSCZone",
   metaDescription: "Prepare for SSC CGL, CHSL, CPO, MTS, GD, Steno & Railways Exams topic-by-topic. Practice high-quality MCQs from standard reference books with instant bilingual solutions.",
   canonicalUrl: "https://ssczone.com",
@@ -52,14 +52,14 @@ export const DEFAULT_SEO_CONFIG: SeoConfigData = {
     "SSC GD Constable Exam Practice",
     "SSC Previous Year Question Papers with Solution",
     "SSC CGL Shift Wise PDF Download 2024",
-    "TCS Pattern SSC MCQs Standard Books",
+    "Latest Pattern SSC MCQs Standard Books",
     "Free SSC Mock Test Series Online",
     "Syllabus Wise MCQ Practice Portal",
     "SSC Maths Formula Sheet & Short Tricks",
     "SSC English Grammar Rules & Vocabulary",
     "SSC Reasoning Chapter Wise Practice",
     "SSC General Studies Static GK Capsules",
-    "SSC Typing Speed Test TCS Interface",
+    "SSC Typing Speed Test CBT Interface",
     "SSC Speed Test 25 Questions 15 Mins",
     "Daily Free SSC Quiz & Mock Test Online",
     "Bilingual SSC CBT Online Test Portal"
@@ -91,7 +91,7 @@ export const DEFAULT_SEO_CONFIG: SeoConfigData = {
   pageOverrides: {
     "/papers": {
       title: "SSC PYQ Shift Papers 2026 Live — SSC PYQ Shift Papers CBT Test",
-      description: "Attempt official SSC CGL, CHSL, CPO previous year shift papers in online CBT exam mode with instant scorecards and detailed solutions."
+      description: "Attempt SSC CGL, CHSL, CPO previous year shift papers in online CBT exam mode with instant scorecards and detailed solutions."
     },
     "/blog": {
       title: "SSC Exam Blog & Study Material — Biology, English Grammar, PYQs & Notifications | SSCZone",

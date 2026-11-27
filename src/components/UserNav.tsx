@@ -48,7 +48,7 @@ export default function UserNav() {
     },
     {
       id: 2,
-      title: "SSC CHSL Tier 1 Official Answer Key & Response Sheet Released",
+      title: "SSC CHSL Tier 1 Answer Key & Response Sheet Updates",
       badge: "🔴 LIVE",
       link: "/papers",
       is_active: true,

@@ -57,7 +57,7 @@ export default function TopperTestimonialsSection({
         </h2>
 
         <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-          Read genuine reviews from aspirants who used SSCZone's bilingual TCS previous year questions and CBT practice interface to secure their dream Central Government positions.
+          Read genuine reviews from aspirants who used SSCZone's bilingual previous year questions and CBT practice interface to secure their dream Central Government positions.
         </p>
       </div>
 
@@ -155,7 +155,7 @@ export default function TopperTestimonialsSection({
               Are you preparing for SSC CGL or CHSL 2026?
             </div>
             <div className="text-[11px] sm:text-xs text-slate-600">
-              Join 50,000+ serious aspirants practicing daily with real TCS shift papers.
+              Join 50,000+ serious aspirants practicing daily with real SSC shift papers.
             </div>
           </div>
         </div>

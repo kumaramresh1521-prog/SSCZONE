@@ -423,13 +423,13 @@ export default async function BlogPostPage(props: Props) {
           <div className="space-y-2 max-w-xl">
             <div className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-wider bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full border border-blue-400/30">
               <Sparkles className="h-3.5 w-3.5 text-amber-300" />
-              <span>SSCZone Official CBT Exam Portal</span>
+              <span>SSCZone CBT Practice Portal</span>
             </div>
             <h3 className="text-xl sm:text-2xl font-black text-white">
-              Practice Authentic Shift Papers in Timed CBT Mode
+              Practice Previous Year Shift Papers in Timed CBT Mode
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Don&apos;t just read notifications — test yourself with 100% official TCS previous year shift questions, bilingual solutions, and instant All-India percentiles.
+              Don&apos;t just read updates — test yourself with previous year shift questions, bilingual solutions, and instant All-India percentiles.
             </p>
           </div>
 

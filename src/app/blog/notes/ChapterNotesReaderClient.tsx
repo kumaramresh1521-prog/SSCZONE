@@ -437,7 +437,7 @@ export default function ChapterNotesReaderClient({
                 href="/blog"
                 className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-blue-600 text-white text-xs font-bold hover:bg-blue-700 shadow-xs transition-colors"
               >
-                📰 Explore Official Blog
+                📰 Explore Exam Blog
               </Link>
             </div>
           </div>
@@ -501,7 +501,7 @@ export default function ChapterNotesReaderClient({
                     ? "bg-blue-700 text-white shadow-xs"
                     : "text-slate-600 hover:bg-slate-100"
                 }`}
-                title="Official English medium"
+                title="English medium"
               >
                 EN
               </button>
@@ -917,7 +917,7 @@ export default function ChapterNotesReaderClient({
                     Master this Chapter in Speed Test Mode
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                    Test your understanding with authentic TCS previous year shift questions on <strong>{currentNote.title}</strong> with instant percentile scorecards and bilingual solutions.
+                    Test your understanding with authentic previous year SSC shift questions on <strong>{currentNote.title}</strong> with instant percentile scorecards and bilingual solutions.
                   </p>
                 </div>
 
@@ -947,7 +947,7 @@ export default function ChapterNotesReaderClient({
                   No Chapters Uploaded Yet
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
-                  इस विषय ({currentSubject.name}) के चैप्टर नोट्स और TCS पैटर्न थ्योरी शीट्स अभी तैयार की जा रही हैं।
+                  इस विषय ({currentSubject.name}) के चैप्टर नोट्स और लेटेस्ट पैटर्न थ्योरी शीट्स अभी तैयार की जा रही हैं।
                 </p>
               </div>
 
@@ -958,7 +958,7 @@ export default function ChapterNotesReaderClient({
                   <span>Available Now: Biology (जीव विज्ञान)</span>
                 </div>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  3 complete masterclass chapters are live with bilingual theory, custom TCS diagrams, and 20 practice MCQs with detailed explanations.
+                  3 complete masterclass chapters are live with bilingual theory, custom diagrams, and 20 practice MCQs with detailed explanations.
                 </p>
                 <button
                   type="button"

@@ -1642,10 +1642,10 @@ export default function SyllabusTrackerClient() {
                                               + Formula
                                             </button>
                                             <button
-                                              onClick={() => handleAppendNoteTag(chapter.id, "⚠️ [TCS Trap]:")}
+                                              onClick={() => handleAppendNoteTag(chapter.id, "⚠️ [Exam Trap]:")}
                                               className="px-2 py-0.5 rounded bg-amber-200/70 text-amber-900 font-semibold hover:bg-amber-300"
                                             >
-                                              + TCS Trap
+                                              + Exam Trap
                                             </button>
                                             <button
                                               onClick={() => handleAppendNoteTag(chapter.id, "🎯 [Key Rule]:")}
@@ -1659,7 +1659,7 @@ export default function SyllabusTrackerClient() {
                                         <textarea
                                           value={p.notes || ""}
                                           onChange={(e) => updateProgress(chapter.id, { notes: e.target.value })}
-                                          placeholder="Jot down personal shortcut formulas, tricky TCS question traps, recurring mistakes, or book page numbers..."
+                                          placeholder="Jot down personal shortcut formulas, tricky question traps, recurring mistakes, or book page numbers..."
                                           rows={3}
                                           className="w-full text-xs font-mono p-2.5 rounded-lg bg-white border border-amber-300/80 focus:outline-none focus:ring-2 focus:ring-amber-500/30 text-slate-800 placeholder:text-slate-400 resize-y"
                                         />

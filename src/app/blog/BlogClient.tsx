@@ -423,7 +423,7 @@ export default function BlogClient({
                     className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold text-xs py-2 transition-colors"
                   >
                     <FileSpreadsheet className="h-3.5 w-3.5" />
-                    <span>Attempt Official Shift Tests →</span>
+                    <span>Attempt Shift Tests →</span>
                   </Link>
                 </div>
               </div>
@@ -535,7 +535,7 @@ export default function BlogClient({
               Test Your Real Exam Preparedness on SSCZone
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
-              Practice 100% official TCS previous year shift questions under actual timer constraints, get instant percentile rank scorecards, and bilingual explanations.
+              Practice previous year SSC shift questions under real timer constraints, get instant percentile rank scorecards, and bilingual explanations.
             </p>
           </div>
 

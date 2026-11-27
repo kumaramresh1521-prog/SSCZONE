@@ -26,10 +26,10 @@ export default function PreparationRoadmapSection() {
     },
     {
       step: "02",
-      tag: "Official TCS Papers",
+      tag: "PYQ Shift Papers",
       title: "Shift-Wise Previous Year Questions",
       description:
-        "Practice authentic 2023–2026 SSC CGL shift questions in real exam sequence with bilingual Hindi and English toggle, instant negative marking, and detailed explanations.",
+        "Practice 2023–2026 SSC CGL shift questions in sequence with bilingual Hindi and English toggle, instant negative marking, and detailed explanations.",
       linkText: "Solve Shift Papers",
       href: "/papers?exam=cgl",
       icon: FileCheck2,
@@ -41,7 +41,7 @@ export default function PreparationRoadmapSection() {
       tag: "Real Exam Hall Pressure",
       title: "Full-Length CBT Mock Test",
       description:
-        "Experience the actual examination hall conditions with 60-minute countdown timer, TCS question palette (answered, marked for review), and granular accuracy reports.",
+        "Experience realistic examination hall conditions with 60-minute countdown timer, interactive question palette (answered, marked for review), and granular accuracy reports.",
       linkText: "Attempt Full Mocks",
       href: "/mocks",
       icon: Laptop,
@@ -53,7 +53,7 @@ export default function PreparationRoadmapSection() {
       tag: "Tier-2 Qualification",
       title: "Typing Test",
       description:
-        "Master the mandatory CGL DEST typing test on the official keyboard layout with 15-minute timer, real-time error percentage, backspace toggle, and official evaluation rules.",
+        "Master the mandatory CGL DEST typing test on a standard keyboard layout with 15-minute timer, real-time error percentage, backspace toggle, and evaluation rules.",
       linkText: "Open Typing Console",
       href: "/typing",
       icon: Keyboard,
@@ -76,7 +76,7 @@ export default function PreparationRoadmapSection() {
         </h2>
 
         <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-          A complete, step-by-step preparation framework built strictly around official Staff Selection Commission CBT standards.
+          A complete, step-by-step preparation framework aligned with Staff Selection Commission CBT standards.
         </p>
       </div>
 

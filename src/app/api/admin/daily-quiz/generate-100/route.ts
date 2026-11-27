@@ -75,14 +75,14 @@ export async function GET(req: NextRequest) {
       const sec = activeSections[sIdx];
       const targetForSec = basePerSec + (sIdx < remainder ? 1 : 0);
 
-      // Target: 50% Official Shift PYQs + 50% Question Bank
+      // Target: 50% Shift PYQs + 50% Question Bank
       const pyqQuota = Math.ceil(targetForSec * 0.5);
       const qbQuota = targetForSec - pyqQuota;
 
       const secPyqs: any[] = [];
       const secQb: any[] = [];
 
-      // 1. Fetch from Official Shift PYQs across dynamically picked active papers
+      // 1. Fetch from Shift PYQs across dynamically picked active papers
       if (validPaperIds.length > 0) {
         try {
           const randomPapers = shuffle(validPaperIds).slice(0, 10);
@@ -108,7 +108,7 @@ export async function GET(req: NextRequest) {
                 option_c: (q.option_c || "").trim(),
                 option_d: (q.option_d || "").trim(),
                 correct_answer: normalizeAnswer(q.correct_answer),
-                explanation: q.explanation ? q.explanation.trim() : `Official SSC Shift Question Solution (${paperTitle}, Q.${q.question_number}).`,
+                explanation: q.explanation ? q.explanation.trim() : `SSC Shift Question Solution (${paperTitle}, Q.${q.question_number}).`,
                 source: paperTitle,
                 source_type: "pyq",
               };

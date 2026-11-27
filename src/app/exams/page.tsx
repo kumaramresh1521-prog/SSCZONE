@@ -38,7 +38,7 @@ export default async function ExamsPage() {
             Target SSC Exams
           </h1>
           <p className="text-xs sm:text-sm text-slate-600 max-w-2xl leading-relaxed">
-            Select an exam category below to browse subjects and chapters mapped directly to official examination notifications.
+            Select an exam category below to browse subjects and chapters mapped directly to SSC examination syllabi.
           </p>
         </div>
       </section>

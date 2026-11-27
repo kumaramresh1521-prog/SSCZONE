@@ -94,7 +94,7 @@ export default function QuestionClientView({
     }
   };
 
-  const examBadge = paper?.title || question.exam_tag || topic?.subjects?.exams?.title || "SSC Official PYQ";
+  const examBadge = paper?.title || question.exam_tag || topic?.subjects?.exams?.title || "SSC PYQ Shift";
 
   return (
     <div className="space-y-6">
@@ -259,7 +259,7 @@ export default function QuestionClientView({
                   </span>
                 </div>
                 <span className="text-xs font-bold text-emerald-700 dark:text-emerald-300 uppercase tracking-wider">
-                  Official SSC Key
+                  Answer Key
                 </span>
               </div>
 
@@ -304,13 +304,13 @@ export default function QuestionClientView({
         <div className="rounded-2xl border border-blue-200 dark:border-blue-900 bg-gradient-to-r from-blue-50 via-indigo-50 to-blue-50 dark:from-blue-950/30 dark:via-indigo-950/30 dark:to-blue-950/30 p-5 sm:p-6 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div className="space-y-1">
             <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-600 text-white text-[11px] font-black uppercase tracking-wider">
-              <span>📄 Official Shift PYQ Paper</span>
+              <span>📄 Shift PYQ Paper</span>
             </div>
             <h3 className="text-base sm:text-lg font-black text-slate-900 dark:text-white">
               {paper.title}
             </h3>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-medium">
-              Attempt this exact official SSC question paper in TCS online CBT exam pattern with timer, scorecards, and negative marking analysis.
+              Attempt this SSC question paper in online CBT exam pattern with timer, scorecards, and negative marking analysis.
             </p>
           </div>
           <Link
@@ -334,7 +334,7 @@ export default function QuestionClientView({
               Practicing for {topic.title}?
             </h3>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-medium">
-              Attempt all official questions in CBT timed exam pattern with instant solutions and rank analytics on SSCZone.
+              Attempt all questions in CBT timed exam pattern with instant solutions and rank analytics on SSCZone.
             </p>
           </div>
           <Link

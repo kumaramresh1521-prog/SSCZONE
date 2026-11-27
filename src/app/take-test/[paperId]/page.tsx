@@ -1023,7 +1023,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
       return (
         <div className="flex items-center gap-1.5 bg-white px-2.5 py-1 rounded-lg border border-slate-300 shadow-2xs text-[11px] font-bold text-slate-700 shrink-0">
           <span className="h-2 w-2 rounded-full bg-blue-600"></span>
-          <span>English (Official Paper)</span>
+          <span>English (Shift Paper)</span>
         </div>
       );
     }
@@ -1161,7 +1161,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
       <div className="h-screen w-full flex flex-col items-center justify-center bg-slate-900 text-white p-4">
         <div className="h-12 w-12 rounded-full border-4 border-blue-500 border-t-transparent animate-spin mb-4" />
         <h2 className="text-lg font-bold">Loading SSC Zone CBT Practice...</h2>
-        <p className="text-xs text-slate-400 mt-1">Loading official shift paper, sectional categories, and bilingual questions</p>
+        <p className="text-xs text-slate-400 mt-1">Loading shift paper, sectional categories, and bilingual questions</p>
       </div>
     );
   }
@@ -1229,7 +1229,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
             </div>
             <div className="min-w-0">
               <div className="text-[10px] uppercase font-bold tracking-wider text-amber-300">
-                Staff Selection Commission • Government of India
+                SSCZone CBT Simulation • Practice Mode
               </div>
               <h1 className="text-sm sm:text-base font-black tracking-wide truncate">
                 Combined Graduate Level Examination (Tier-I) — Computer Based Test
@@ -1265,7 +1265,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                     Examination Shift Paper
                   </div>
                   <h2 className="text-base sm:text-lg font-black text-slate-900">
-                    {paper.title || "SSC CGL 2025 Tier-I Official Paper"}
+                    {paper.title || "SSC CGL 2025 Tier-I Shift Paper"}
                   </h2>
                 </div>
                 <div className="flex items-center gap-2">
@@ -1404,7 +1404,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                   </div>
                 </div>
 
-                {/* 2. Official 5-Color Legend */}
+                {/* 2. 5-Color Question Status Legend */}
                 <div className="rounded-xl border border-slate-200 bg-slate-50 p-3.5 space-y-2.5">
                   <div className="text-xs font-black text-slate-900 uppercase">
                     2. Question Status Symbols (प्रश्नों की स्थिति के प्रतीक):
@@ -1648,7 +1648,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                 </label>
                 {paper?.allow_translation === false && !hasAuthenticHindi ? (
                   <div className="w-full bg-slate-100 border border-slate-300 rounded-lg p-2 text-xs font-bold text-slate-700 flex items-center justify-between">
-                    <span>English (Official Exam Paper)</span>
+                    <span>English (Shift Exam Paper)</span>
                     <span className="text-[10px] text-slate-500 font-semibold bg-slate-200 px-2 py-0.5 rounded">Standard</span>
                   </div>
                 ) : (
@@ -1785,7 +1785,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                 {paper?.title || "SSC CGL Shift Paper"}
               </h1>
               <p className="text-xs text-slate-300 mt-1">
-                Official SSC Marking Scheme Applied (+{markingScheme.positive.toFixed(2)} Correct, -{markingScheme.negative.toFixed(2)} Incorrect)
+                Standard SSC Marking Scheme Applied (+{markingScheme.positive.toFixed(2)} Correct, -{markingScheme.negative.toFixed(2)} Incorrect)
               </p>
             </div>
 
@@ -1888,7 +1888,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 px-7 py-3 text-xs sm:text-sm font-black text-white shadow-md cursor-pointer"
             >
               <FileText className="h-4 w-4" />
-              <span>View Official Response Sheet & Solutions (हल व रिस्पॉन्स देखें)</span>
+              <span>View Response Sheet &amp; Solutions (हल व रिस्पॉन्स देखें)</span>
             </button>
           </div>
         </div>
@@ -1897,7 +1897,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
   }
 
   // ═══════════════════════════════════════════════════════════════════
-  // ── 3. OFFICIAL RESPONSE SHEET & DETAILED REVIEW MODE ─────────────
+  // ── 3. RESPONSE SHEET & DETAILED REVIEW MODE ────────────────────
   // ═══════════════════════════════════════════════════════════════════
   if (finished && reviewMode) {
     return (
@@ -1907,7 +1907,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
         <header className="bg-slate-900 text-white px-4 sm:px-8 py-3 flex items-center justify-between shadow-md shrink-0 sticky top-0 z-30">
           <div className="min-w-0">
             <div className="text-[10px] uppercase font-bold text-blue-400">
-              Official Candidate Response Sheet & Solutions
+              Candidate Response Sheet &amp; Solutions
             </div>
             <h2 className="text-xs sm:text-sm font-bold text-white truncate max-w-md">
               {paper?.title || "SSC CGL 2025 Tier-I Examination"}
@@ -1923,7 +1923,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                   reviewViewMode === "sheet" ? "bg-blue-600 text-white" : "text-slate-400 hover:text-white"
                 }`}
               >
-                Official List View
+                Full List View
               </button>
               <button
                 onClick={() => setReviewViewMode("walkthrough")}
@@ -2072,7 +2072,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                           </span>
                         )}
                         <span className="text-xs font-black text-blue-800 bg-blue-50 border border-blue-200 px-2.5 py-0.5 rounded-md">
-                          Official Key: {q.correct_answer}
+                          Answer Key: {q.correct_answer}
                         </span>
                         <ReportButton questionId={q.id} questionText={q.question_text} showLabel={true} />
                         <Link
@@ -2124,10 +2124,10 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                       })}
                     </div>
 
-                    {/* Official Solution / Explanation */}
+                    {/* Detailed Solution / Explanation */}
                     {q.explanation && (
                       <div className="mt-3 p-3.5 rounded-xl bg-blue-50/70 border border-blue-200 text-xs text-slate-800 space-y-1">
-                        <div className="font-bold text-blue-900">Official Solution & Explanation:</div>
+                        <div className="font-bold text-blue-900">Solution &amp; Explanation:</div>
                         <MathText text={q.explanation} />
                       </div>
                     )}
@@ -2176,7 +2176,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
                         </span>
                       )}
                       <span className="text-xs font-black text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md">
-                        Official Key: {currentReviewQ.correct_answer}
+                        Answer Key: {currentReviewQ.correct_answer}
                       </span>
                       <ReportButton questionId={currentReviewQ.id} questionText={currentReviewQ.question_text} showLabel={true} />
                       <Link
@@ -2220,7 +2220,7 @@ export default function TakeTestPage({ params }: { params: Promise<{ paperId: st
 
                   {currentReviewQ.explanation && (
                     <div className="mt-4 p-4 rounded-xl bg-blue-50/70 border border-blue-200 text-xs text-slate-800 space-y-1">
-                      <div className="font-bold text-blue-900">Official Solution & Explanation:</div>
+                      <div className="font-bold text-blue-900">Solution &amp; Explanation:</div>
                       <MathText text={currentReviewQ.explanation} />
                     </div>
                   )}

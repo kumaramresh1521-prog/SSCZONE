@@ -672,7 +672,7 @@ export default function MobileAppAdminPage() {
                             },
                           })
                         }
-                        placeholder="e.g. Official Exam Alerts & Live Feed"
+                        placeholder="e.g. Exam Alerts & Live Feed"
                         className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-1.5 text-xs text-slate-900 dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                       />
                     </div>
@@ -790,7 +790,7 @@ export default function MobileAppAdminPage() {
                         {
                           label: "+ New PYQ Paper",
                           icon: "📝",
-                          title: "Latest Official Shift Added!",
+                          title: "Latest Shift Paper Added!",
                           subtitle: "Attempt the newest full 100-question mock in CBT mode.",
                           actionType: "papers" as const,
                         },
@@ -829,7 +829,7 @@ export default function MobileAppAdminPage() {
                             id: `notif_${Date.now()}`,
                             icon: "🔔",
                             title: "New SSC CGL Update Released",
-                            subtitle: "Check official schedule & practice matching PYQs.",
+                            subtitle: "Check exam schedule & practice matching PYQs.",
                             badge: "NEW",
                             group: "Today",
                             unread: true,

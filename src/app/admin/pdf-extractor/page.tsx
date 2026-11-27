@@ -101,7 +101,7 @@ export default function AdminPdfExtractorPage() {
   // Handle extraction
   async function handleExtractQuestions() {
     if (activeTab === "url" && !answerKeyUrl.trim()) {
-      toast.error("Please enter an official Answer Key URL.");
+      toast.error("Please enter an Answer Key URL.");
       return;
     }
     if (activeTab !== "url" && !rawHtmlCode.trim()) {
@@ -135,7 +135,7 @@ export default function AdminPdfExtractorPage() {
       setQuestions(data.questions);
 
       // Default paper title based on extracted candidate exam
-      const datePart = data.metadata.testDate || "Official";
+      const datePart = data.metadata.testDate || "Shift Paper";
       const shiftPart = data.metadata.testTime ? ` (${data.metadata.testTime})` : "";
       setPaperTitle(`${data.metadata.examName || "SSC CGL"} - ${datePart}${shiftPart}`);
 
@@ -387,7 +387,7 @@ export default function AdminPdfExtractorPage() {
         option_c_image_url: q.option_c_image_url || null,
         option_d_image_url: q.option_d_image_url || null,
         explanation: q.explanation || null,
-        exam_tag: `${metadata?.examName || "SSC CGL"} ${metadata?.testDate || "Official"}`.trim()
+        exam_tag: `${metadata?.examName || "SSC CGL"} ${metadata?.testDate || "Paper"}`.trim()
       }));
 
       const res = await fetch("/api/admin/questions", {
@@ -417,7 +417,7 @@ export default function AdminPdfExtractorPage() {
       return;
     }
 
-    const title = metadata.examName || "SSC CGL 2026 Official Paper";
+    const title = metadata.examName || "SSC CGL 2026 Paper";
     const shiftInfo = `${metadata.testDate || ""} ${metadata.testTime || ""}`.trim();
 
     // Group questions by section
@@ -472,10 +472,10 @@ export default function AdminPdfExtractorPage() {
       answerKeyHtml = `
         <div class="answer-key-page">
           <div class="section-header" style="background: #1e3a8a; color: white;">
-            OFFICIAL ANSWER KEY &amp; SCORE DISTRIBUTION
+            ANSWER KEY &amp; SCORE DISTRIBUTION
           </div>
           <p style="font-size: 9pt; color: #4b5563; margin: 4px 0 10px 0;">
-            Official scoring key extracted directly from SSC Response Sheet. Marking Scheme: +2.0 marks per correct question, -0.50 negative deduction.
+            Scoring key extracted directly from SSC Response Sheet. Marking Scheme: +2.0 marks per correct question, -0.50 negative deduction.
           </p>
           <table class="key-grid">
             <thead>
@@ -510,7 +510,7 @@ export default function AdminPdfExtractorPage() {
       <html>
       <head>
         <meta charset="utf-8" />
-        <title>${title} - ${shiftInfo} | SSC ZONE Official</title>
+        <title>${title} - ${shiftInfo} | SSC ZONE</title>
         <style>
           @page {
             size: A4 portrait;
@@ -701,7 +701,7 @@ export default function AdminPdfExtractorPage() {
           <div class="top-row">
             <div>
               <div class="logo-text">SSC ZONE</div>
-              <div class="logo-sub">www.ssczone.in &bull; Official Shift Paper Series</div>
+              <div class="logo-sub">www.ssczone.in &bull; Shift Paper Series</div>
             </div>
             <div class="tagline-badge">
               ${mode === "student" ? "STUDENT QUESTION PAPER" : "COMPLETE SOLUTION BOOKLET"}
@@ -709,7 +709,7 @@ export default function AdminPdfExtractorPage() {
           </div>
           <div class="exam-heading">${title.toUpperCase()}</div>
           <div class="meta-bar">
-            <span><strong>Date &amp; Shift:</strong> ${shiftInfo || "Official Response Sheet"}</span>
+            <span><strong>Date &amp; Shift:</strong> ${shiftInfo || "Response Sheet"}</span>
             <span>&bull;</span>
             <span><strong>Total Questions:</strong> ${questions.length} Qs</span>
             <span>&bull;</span>
@@ -769,7 +769,7 @@ export default function AdminPdfExtractorPage() {
             </h1>
           </div>
           <p className="text-xs sm:text-sm text-slate-600 mt-1 font-medium">
-            Extract all 100 questions with official answers, diagrams/images, equations &amp; sectional breakdowns from live CBExams / DigiALM URLs or offline HTML files.
+            Extract all 100 questions with answer keys, diagrams/images, equations &amp; sectional breakdowns from live CBExams / DigiALM URLs or offline HTML files.
           </p>
         </div>
 
@@ -832,7 +832,7 @@ export default function AdminPdfExtractorPage() {
         {activeTab === "url" && (
           <div className="space-y-3">
             <label className="text-xs font-black text-slate-700 uppercase tracking-wide block">
-              Official SSC Answer Key URL (CBExams or DigiALM link):
+              SSC Answer Key URL (CBExams or DigiALM link):
             </label>
             <input
               type="url"
@@ -1055,7 +1055,7 @@ export default function AdminPdfExtractorPage() {
                           <span className="text-[10px] font-bold bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded">Answers Marked</span>
                         </div>
                         <div className="text-[11px] text-slate-500 mt-0.5">
-                          Every question has its official answer highlighted in green.
+                          Every question has its key answer highlighted in green.
                         </div>
                       </button>
                     </div>
@@ -1267,7 +1267,7 @@ export default function AdminPdfExtractorPage() {
                         <Edit3 className="w-4 h-4" />
                       </button>
 
-                      {/* Official Challenge link */}
+                      {/* Answer key challenge link */}
                       {q.challenge_url && (
                         <a
                           href={q.challenge_url}
@@ -1353,7 +1353,7 @@ export default function AdminPdfExtractorPage() {
                             {isOfficialCorrect && (
                               <div className="text-[10px] font-black text-emerald-700 flex items-center gap-1 pt-0.5">
                                 <CheckCircle2 className="w-3 h-3 text-emerald-600" />
-                                <span>Official SSC Key Answer</span>
+                                <span>SSC Key Answer</span>
                               </div>
                             )}
                           </div>
@@ -1404,7 +1404,7 @@ export default function AdminPdfExtractorPage() {
                       </div>
 
                       <div className="flex items-center gap-3 pt-1">
-                        <label className="text-xs font-bold text-slate-700">Official Correct Option:</label>
+                        <label className="text-xs font-bold text-slate-700">Marked Key Option:</label>
                         <select
                           value={q.correct_answer}
                           onChange={(e) => handleUpdateQuestion(q.question_number, "correct_answer", e.target.value as any)}
@@ -1560,7 +1560,7 @@ export default function AdminPdfExtractorPage() {
                 <input
                   type="text"
                   readOnly
-                  value={`${metadata?.examName || "SSC CGL"} ${metadata?.testDate || "Official"}`}
+                  value={`${metadata?.examName || "SSC CGL"} ${metadata?.testDate || "Paper"}`}
                   className="w-full p-2.5 bg-slate-100 border border-slate-200 rounded-xl text-slate-600 font-bold"
                 />
               </div>

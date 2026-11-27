@@ -407,7 +407,7 @@ export default function AdminFooterPage() {
           {activeTab === "social" && (
             <div className="bg-slate-800/80 border border-slate-700 rounded-2xl p-5 space-y-4 max-w-2xl">
               <div>
-                <h3 className="text-sm font-bold text-white">Official Social Media & Community Channels</h3>
+                <h3 className="text-sm font-bold text-white">Social Media &amp; Community Channels</h3>
                 <p className="text-xs text-slate-400 mt-0.5">
                   Update links to your Telegram group, YouTube lectures, WhatsApp support, and social handles.
                 </p>

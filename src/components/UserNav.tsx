@@ -22,6 +22,7 @@ import {
   MenuItemConfig, 
   DEFAULT_NAVIGATION_CONFIG 
 } from "@/lib/navigation-store";
+import { syncUserBookmarksWithSupabase } from "@/lib/user-attempts-store";
 
 // In-memory module cache to avoid redundant fetches on every client navigation
 let memoryNavCache: MenuItemConfig[] | null = null;
@@ -115,6 +116,7 @@ export default function UserNav() {
       const curUser = session?.user || null;
       setUser(curUser);
       if (curUser) {
+        syncUserBookmarksWithSupabase().catch(() => {});
         const { data } = await supabase
           .from("profiles")
           .select("is_admin")
@@ -169,8 +171,13 @@ export default function UserNav() {
     window.addEventListener("ssczone-exams-changed", handleExamsChanged);
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-      setUser(session?.user || null);
-      if (!session) setIsAdmin(false);
+      const cur = session?.user || null;
+      setUser(cur);
+      if (cur) {
+        syncUserBookmarksWithSupabase().catch(() => {});
+      } else {
+        setIsAdmin(false);
+      }
     });
 
     return () => {

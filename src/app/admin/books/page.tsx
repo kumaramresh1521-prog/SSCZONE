@@ -60,7 +60,7 @@ const DEFAULT_FORM: Partial<BookItem> = {
   hindiTitle: "",
   author: "SSCZone Editorial Board",
   publisher: "SSCZone Publications",
-  edition: "2026 TCS Pattern Edition",
+  edition: "2026 Exam Pattern Edition",
   subject: "Quantitative Aptitude",
   exams: ["SSC CGL", "SSC CHSL", "SSC CPO"],
   language: "Bilingual",
@@ -79,7 +79,7 @@ const DEFAULT_FORM: Partial<BookItem> = {
   sort_order: 1,
   sampleChapters: [
     { title: "Chapter 1: Theory Overview & Key Rules", pages: "1-40", highYield: true },
-    { title: "Chapter 2: TCS Practice Questions & Solutions", pages: "41-90", highYield: true },
+    { title: "Chapter 2: Practice Questions & Solutions", pages: "41-90", highYield: true },
   ],
 };
 
@@ -964,7 +964,7 @@ export default function AdminBooksPage() {
                     type="text"
                     value={formData.edition || ""}
                     onChange={(e) => setFormData({ ...formData, edition: e.target.value })}
-                    placeholder="e.g. 2026 TCS Edition"
+                    placeholder="e.g. 2026 Exam Edition"
                     className="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-hidden focus:border-blue-500"
                   />
                 </div>

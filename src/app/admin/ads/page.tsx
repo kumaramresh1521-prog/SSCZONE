@@ -657,7 +657,7 @@ export default function AdminAdsPage() {
                             },
                           })
                         }
-                        placeholder="e.g. Pinnacle SSC Maths 6800+ TCS PYQ"
+                        placeholder="e.g. Pinnacle SSC Maths 6800+ PYQ"
                         className="w-full rounded-xl border border-slate-700 bg-slate-800 px-3 py-2 text-xs text-white focus:border-indigo-500 focus:outline-none"
                       />
                     </div>

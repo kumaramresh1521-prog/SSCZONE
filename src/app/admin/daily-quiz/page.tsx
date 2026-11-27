@@ -952,7 +952,7 @@ Exp: Mekong originates in Tibet. Amazon originates in Peru.`;
                           Auto-Generate 100 Balanced Random Questions
                         </h3>
                         <p className="text-xs text-slate-600 mt-1 max-w-xl">
-                          Automatically draws 25 Reasoning, 25 General Awareness, 25 Quantitative Aptitude, and 25 English Comprehension questions directly from Official SSC Shift PYQs and the active Question Bank.
+                          Automatically draws 25 Reasoning, 25 General Awareness, 25 Quantitative Aptitude, and 25 English Comprehension questions directly from SSC Shift PYQs and the active Question Bank.
                         </p>
                       </div>
 
@@ -988,7 +988,7 @@ Exp: Mekong originates in Tibet. Amazon originates in Peru.`;
                           onChange={(e) => setGeneratorCount(Number(e.target.value))}
                           className="px-3 py-1.5 bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-800"
                         >
-                          <option value={100}>100 Questions (Official Full Mock - 60 min)</option>
+                          <option value={100}>100 Questions (Full Mock Test - 60 min)</option>
                           <option value={50}>50 Questions (Mini Mock - 30 min)</option>
                           <option value={25}>25 Questions (Speed Test - 15 min)</option>
                           <option value={10}>10 Questions (Quick Quiz - 8 min)</option>
@@ -1360,7 +1360,7 @@ Exp: New Delhi has been the capital since 1911.`}
                       <div>
                         <div className="font-extrabold text-sm text-slate-800">Upload MCQ Question PDF</div>
                         <div className="text-xs text-slate-500 mt-0.5">
-                          Supports official SSC shifts, Adda247, and standard coaching PDFs
+                          Supports SSC shifts, Adda247, and standard coaching PDFs
                         </div>
                       </div>
 

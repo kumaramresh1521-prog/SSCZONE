@@ -993,7 +993,7 @@ export default function PaperQuestionsPage() {
     content += `${(paper?.title || "SSC ZONE PYQ PAPER").toUpperCase()}\n`;
     content += `Exam: ${paper?.exams?.title || "SSC Examination"} | Year: ${paper?.year || 2025}\n`;
     content += `Total Questions: ${questions.length} | Duration: ${paper?.duration_minutes || 60} Minutes\n`;
-    content += `Extracted from Official Answer Key via SSC ZONE (www.ssczone.in)\n`;
+    content += `Shift Questions Archive via SSC ZONE (www.ssczone.in)\n`;
     content += `Downloaded on: ${new Date().toLocaleString()}\n`;
     content += `================================================================================\n\n`;
 
@@ -2846,7 +2846,7 @@ export default function PaperQuestionsPage() {
                     Upload or Re-upload Question Paper PDF
                   </h4>
                   <p className="text-xs text-slate-500 mt-1 max-w-lg">
-                    Select an official paper PDF to replace the student download file, or re-extract questions.
+                    Select a paper PDF to replace the student study file, or re-extract questions.
                   </p>
 
                   <label className="mt-4 cursor-pointer inline-flex items-center gap-2 rounded-xl bg-slate-900 hover:bg-slate-800 px-6 py-3 text-xs font-bold text-white shadow-md transition-all cursor-pointer">

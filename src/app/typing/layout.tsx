@@ -3,17 +3,17 @@ import { buildPageMetadata } from "@/lib/seo-store";
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata("/typing", {
-    title: "SSC 2000 Key Depressions Typing Test Platform — TCS Exam Hall Interface | SSCZone",
+    title: "SSC 2000 Key Depressions Typing Test Platform — Exam Hall Interface | SSCZone",
     description:
-      "Practice official SSC 2000 Key Depressions DEST typing test passages with 15-minute countdown, backspace controls, gross/net WPM, accuracy, and TCS error percentage calculator for CGL Tier 2 & CHSL.",
+      "Practice SSC 2000 Key Depressions DEST typing test passages with 15-minute countdown, backspace controls, gross/net WPM, accuracy, and error percentage calculator for CGL Tier 2 & CHSL.",
     keywords: [
       "SSC 2000 Key Depressions",
-      "SSC Typing Test TCS Interface",
+      "SSC Typing Test CBT Interface",
       "SSC CGL DEST Practice Interface",
       "SSC Typing Test 15 Minutes",
       "SSC Typing Error Percentage Calculator",
       "SSC CHSL Typing Speed Online",
-      "TCS Pattern Typing Practice",
+      "Standard Pattern Typing Practice",
       "Full and Half Error Calculator SSC",
     ],
   });
@@ -30,14 +30,14 @@ const TYPING_TEST_APP_SCHEMA = {
     "price": "0",
     "priceCurrency": "INR"
   },
-  "description": "Authentic TCS examination hall typing test interface for SSC CGL Tier 2, CHSL, and Steno candidates. Replicates theulates 2000 key depressions in 15 minutes with exact TCS error evaluation rules.",
+  "description": "Realistic examination hall typing test interface for SSC CGL Tier 2, CHSL, and Steno candidates. Replicates 2000 key depressions in 15 minutes with standard error evaluation rules.",
   "featureList": [
     "2000 Key Depressions in 15 Minutes countdown timer",
-    "Exact TCS split-screen passage display",
+    "Realistic split-screen passage display",
     "Gross WPM, Net WPM, and Real-time Keystrokes counter",
     "Full Error (omission, substitution, addition) detection",
     "Half Error (spacing, punctuation, capitalization) detection",
-    "Official qualifying status (5% UR, 7% OBC/EWS/SC/ST cutoff)"
+    "Category qualifying status (5% UR, 7% OBC/EWS/SC/ST cutoff)"
   ]
 };
 
@@ -63,10 +63,10 @@ const TYPING_TEST_FAQ_SCHEMA = {
     },
     {
       "@type": "Question",
-      "name": "Is backspace allowed in the official SSC typing test?",
+      "name": "Is backspace allowed in the SSC typing test?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, backspace and arrow navigation are allowed within the typed text area during the official SSC typing examination."
+        "text": "Yes, backspace and arrow navigation are allowed within the typed text area during the SSC typing examination."
       }
     },
     {

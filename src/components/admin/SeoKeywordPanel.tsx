@@ -100,23 +100,23 @@ export default function SeoKeywordPanel({
   // Ready-made Educational Content Blocks for 1-Click insertion
   const educationalBlocks = [
     {
-      title: "📢 Official Exam Notification Alert",
+      title: "📢 Exam Notification Alert",
       desc: "High-contrast announcement banner with key deadline",
       badge: "High Priority",
       snippet: `
 <div style="background: linear-gradient(to right, #eff6ff, #f0fdf4); border-left: 5px solid #2563eb; padding: 16px 20px; border-radius: 12px; margin: 20px 0;">
-  <p style="margin: 0 0 6px 0; font-weight: 800; color: #1e3a8a; font-size: 15px;">📢 IMPORTANT OFFICIAL NOTIFICATION UPDATE</p>
+  <p style="margin: 0 0 6px 0; font-weight: 800; color: #1e3a8a; font-size: 15px;">📢 IMPORTANT EXAM NOTIFICATION UPDATE</p>
   <p style="margin: 0; color: #334155; font-size: 14px; line-height: 1.5;">Staff Selection Commission has updated the recruitment timeline. Candidates are advised to register OTR on <strong>ssc.gov.in</strong> before the deadline.</p>
 </div>
 `,
     },
     {
-      title: "💡 TCS Exam Secret / Trap Alert",
+      title: "💡 Exam Pattern Secret / Trap Alert",
       desc: "Advice callout warning candidates about negative marking traps",
       badge: "Strategy",
       snippet: `
 <div style="background: #fffbeb; border: 1px solid #fde68a; border-left: 5px solid #d97706; padding: 16px 20px; border-radius: 12px; margin: 20px 0;">
-  <p style="margin: 0 0 6px 0; font-weight: 800; color: #92400e; font-size: 15px;">⚠️ TCS EXAM PATTERN TRAP (Candidate Warning)</p>
+  <p style="margin: 0 0 6px 0; font-weight: 800; color: #92400e; font-size: 15px;">⚠️ EXAM PATTERN TRAP (Candidate Warning)</p>
   <p style="margin: 0; color: #78350f; font-size: 14px; line-height: 1.5;">In recent shifts, calculation intensity has increased. Avoid spending more than 60 seconds on single calculation traps; mark for review and return in the second round.</p>
 </div>
 `,
@@ -167,7 +167,7 @@ export default function SeoKeywordPanel({
 <div style="background: linear-gradient(135deg, #1e3a8a, #3b82f6); color: #ffffff; padding: 22px 26px; border-radius: 16px; margin: 25px 0; box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.3);">
   <div style="display: flex; flex-direction: column; gap: 8px;">
     <span style="background: rgba(255,255,255,0.2); font-weight: 800; font-size: 11px; padding: 3px 8px; border-radius: 6px; width: fit-content; text-transform: uppercase;">100% Authentic Shift Papers</span>
-    <h3 style="margin: 0; font-size: 18px; font-weight: 800; color: #ffffff;">Practice Official SSC Shift Papers in Real CBT Exam Mode</h3>
+    <h3 style="margin: 0; font-size: 18px; font-weight: 800; color: #ffffff;">Practice SSC Shift Papers in Real CBT Exam Mode</h3>
     <p style="margin: 0; font-size: 13px; color: #dbeafe; line-height: 1.4;">Attempt timed tests with instant percentile scorecards, bilingual solutions, and clean PDF downloads on SSCZone.</p>
     <a href="/papers" style="display: inline-block; margin-top: 10px; background: #ffffff; color: #1e3a8a; font-weight: 800; padding: 10px 18px; border-radius: 10px; text-decoration: none; font-size: 13px; width: fit-content;">Attempt CBT Test Now →</a>
   </div>
@@ -575,7 +575,7 @@ export default function SeoKeywordPanel({
                 <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
               ) : (
                 <div className="w-full h-40 bg-gradient-to-r from-blue-600 to-indigo-700 flex items-center justify-center text-white font-bold text-sm">
-                  SSCZone • Official Educational Portal
+                  SSCZone • Educational Portal
                 </div>
               )}
               <div className="p-3.5 space-y-1 bg-slate-50 border-t border-slate-200">
@@ -606,12 +606,12 @@ export default function SeoKeywordPanel({
 
                 {/* Title */}
                 <h4 className="text-base sm:text-lg font-medium text-[#1a0dab] hover:underline cursor-pointer leading-snug">
-                  {title ? `${title} | SSCZone` : "Post Title Goes Here | Official SSCZone Portal"}
+                  {title ? `${title} | SSCZone` : "Post Title Goes Here | SSCZone Portal"}
                 </h4>
 
                 {/* Description */}
                 <p className="text-xs text-[#4d5156] leading-relaxed line-clamp-2">
-                  {excerpt || content.replace(/<[^>]+>/g, " ").substring(0, 150) || "Comprehensive article description and official guidelines for SSC candidates..."}
+                  {excerpt || content.replace(/<[^>]+>/g, " ").substring(0, 150) || "Comprehensive article description and study guidelines for SSC candidates..."}
                 </p>
               </div>
             </div>

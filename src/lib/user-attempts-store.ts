@@ -158,26 +158,35 @@ export function saveCollectedQuestion(
     }
   }
 
-  // If user is authenticated in Supabase and question has a numeric questionId, sync with Supabase bookmarks
-  if (q.questionId && typeof window !== "undefined") {
+  // Sync with Supabase / API in background for logged in users
+  if (typeof window !== "undefined") {
     supabase.auth.getSession().then(async ({ data: { session } }) => {
       const user = session?.user;
-      if (user && q.questionId) {
+      if (user) {
         try {
-          const { data: existingBm } = await supabase
-            .from("bookmarks")
-            .select("id")
-            .eq("user_id", user.id)
-            .eq("question_id", q.questionId)
-            .maybeSingle();
-
-          if (!existingBm) {
-            await supabase.from("bookmarks").insert({
-              user_id: user.id,
-              question_id: q.questionId,
+          await fetch("/api/bookmarks", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              questionId: q.questionId,
               tag: q.tag || "Standard",
-            });
-          }
+              source: q.source || "practice",
+              questionData: {
+                question_text: q.question_text,
+                question_text_hi: q.question_text_hi,
+                option_a: q.option_a,
+                option_b: q.option_b,
+                option_c: q.option_c,
+                option_d: q.option_d,
+                correct_answer: q.correct_answer,
+                explanation: q.explanation,
+                subject: q.subject,
+                topic: q.topic,
+                source: q.source,
+                sourceTitle: q.sourceTitle,
+              },
+            }),
+          });
         } catch {
           // Keep local fallback
         }
@@ -186,6 +195,71 @@ export function saveCollectedQuestion(
   }
 
   return savedItem;
+}
+
+// ── Synchronize Local Bookmarks with Cloud (Supabase) ──
+export async function syncUserBookmarksWithSupabase(): Promise<void> {
+  if (typeof window === "undefined") return;
+
+  try {
+    const { data: { session } } = await supabase.auth.getSession();
+    const user = session?.user;
+    if (!user) return;
+
+    const localList = getUserCollectedQuestions();
+
+    // 1. Push any local bookmarks up to server
+    if (localList.length > 0) {
+      await fetch("/api/bookmarks/sync", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ items: localList }),
+      }).catch(() => {});
+    }
+
+    // 2. Fetch all cloud bookmarks to hydrate local storage (handles cross-device / after logout-login)
+    const res = await fetch("/api/bookmarks", { cache: "no-store" });
+    const data = await res.json();
+
+    if (data.success && Array.isArray(data.bookmarks)) {
+      const serverBookmarks = data.bookmarks;
+      const merged = [...localList];
+      const seenIds = new Set(merged.map((m) => m.questionId).filter(Boolean));
+      const seenTexts = new Set(merged.map((m) => m.question_text.trim()));
+
+      for (const bm of serverBookmarks) {
+        const qData = bm.question_data;
+        if (qData && qData.question_text) {
+          if (!seenTexts.has(qData.question_text.trim())) {
+            seenTexts.add(qData.question_text.trim());
+            merged.push({
+              id: `bm_${bm.id}`,
+              questionId: bm.question_id || undefined,
+              source: qData.source || "bank",
+              sourceTitle: qData.sourceTitle,
+              subject: qData.subject,
+              topic: qData.topic,
+              question_text: qData.question_text,
+              question_text_hi: qData.question_text_hi,
+              option_a: qData.option_a,
+              option_b: qData.option_b,
+              option_c: qData.option_c,
+              option_d: qData.option_d,
+              correct_answer: qData.correct_answer,
+              explanation: qData.explanation,
+              tag: bm.tag || "Standard",
+              collectedAt: bm.created_at || new Date().toISOString(),
+            });
+          }
+        }
+      }
+
+      localStorage.setItem(COLLECTED_QUESTIONS_KEY, JSON.stringify(merged));
+      window.dispatchEvent(new Event("ssczone-collected-questions-updated"));
+    }
+  } catch (err) {
+    console.warn("Bookmark cloud sync skipped:", err);
+  }
 }
 
 // ── Remove a collected question ──
@@ -200,6 +274,16 @@ export function removeCollectedQuestion(idOrQuestionId: string | number): void {
     });
     localStorage.setItem(COLLECTED_QUESTIONS_KEY, JSON.stringify(updated));
     window.dispatchEvent(new Event("ssczone-collected-questions-updated"));
+
+    // Also sync deletion with server in background
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      if (session?.user) {
+        const numId = typeof idOrQuestionId === "number" ? idOrQuestionId : parseInt(String(idOrQuestionId).replace(/\D/g, ""), 10);
+        if (numId) {
+          fetch(`/api/bookmarks?questionId=${numId}`, { method: "DELETE" }).catch(() => {});
+        }
+      }
+    }).catch(() => {});
   } catch (e) {
     console.error("Failed to remove collected question:", e);
   }

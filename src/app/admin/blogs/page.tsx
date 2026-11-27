@@ -703,7 +703,7 @@ export default function AdminBlogsPage() {
                       </div>
                       <input
                         type="text"
-                        placeholder="e.g. SSC Biology Notes, Cell Organelles, TCS PYQs, Mitosis"
+                        placeholder="e.g. SSC Biology Notes, Cell Organelles, PYQs, Mitosis"
                         value={secondaryKeywords}
                         onChange={(e) => setSecondaryKeywords(e.target.value)}
                         className="w-full rounded-xl border border-gray-700 bg-gray-800/90 px-3.5 py-2 text-xs text-white placeholder-gray-500 focus:border-indigo-500 focus:outline-none"

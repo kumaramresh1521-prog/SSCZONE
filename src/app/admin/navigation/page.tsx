@@ -429,7 +429,7 @@ export default function AdminNavigationManagerPage() {
 
   // Reset to Defaults
   async function handleResetToDefaults() {
-    if (!confirm("Are you sure you want to reset all menus and sub-menus to official default settings? All custom items will be restored to defaults.")) {
+    if (!confirm("Are you sure you want to reset all menus and sub-menus to default settings? All custom items will be restored to defaults.")) {
       return;
     }
 
@@ -447,7 +447,7 @@ export default function AdminNavigationManagerPage() {
       setItems(DEFAULT_NAVIGATION_CONFIG.items);
       setHasUnsavedChanges(false);
       notifyNavChanged();
-      toast.success("Navigation restored to official defaults!", { id: toastId });
+      toast.success("Navigation restored to defaults!", { id: toastId });
     } catch (err: any) {
       toast.error(err?.message || "Failed to reset navigation", { id: toastId });
     } finally {
@@ -542,7 +542,7 @@ export default function AdminNavigationManagerPage() {
           <button
             onClick={handleResetToDefaults}
             className="inline-flex items-center gap-1.5 rounded-2xl border border-slate-700 bg-slate-800/80 hover:bg-slate-700 px-3.5 py-2.5 text-xs font-bold text-slate-300 transition-all cursor-pointer"
-            title="Reset all navigation menus to official defaults"
+            title="Reset all navigation menus to defaults"
           >
             <RotateCcw className="h-4 w-4 text-amber-400" />
             <span>Reset Defaults</span>

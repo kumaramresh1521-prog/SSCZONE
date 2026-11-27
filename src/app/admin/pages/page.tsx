@@ -483,7 +483,7 @@ export default function AdminStaticPagesPage() {
             </div>
 
             <div className="md:col-span-2">
-              <label className="block text-xs font-bold text-slate-700 mb-1">Official Office Address</label>
+              <label className="block text-xs font-bold text-slate-700 mb-1">Contact Office Address</label>
               <input
                 type="text"
                 value={config.contact.officeAddress}

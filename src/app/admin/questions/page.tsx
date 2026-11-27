@@ -1506,7 +1506,7 @@ Exam: SSC CGL 2023 Tier-1`}
                   🏛️ Import Real PYQ Questions into Chapter Bank (with 2-Way Sync)
                 </div>
                 <div style={{ fontSize: "0.75rem", color: "#94a3b8", marginTop: "0.2rem" }}>
-                  Select an official previous year shift paper below, choose questions belonging to this topic, and import them with 1-click automatic Exam Tags. Any future edits will automatically sync across both PYQ Paper and Question Bank!
+                  Select a previous year shift paper below, choose questions belonging to this topic, and import them with 1-click automatic Exam Tags. Any future edits will automatically sync across both PYQ Paper and Question Bank!
                 </div>
               </div>
 
@@ -1520,7 +1520,7 @@ Exam: SSC CGL 2023 Tier-1`}
                     onChange={(e) => handleSelectPyqPaper(Number(e.target.value))}
                     disabled={loadingPyq}
                   >
-                    <option value={0}>-- Choose an Official Shift Paper --</option>
+                    <option value={0}>-- Choose a Shift Paper --</option>
                     {pyqPapers.map((p) => (
                       <option key={p.id} value={p.id}>
                         {p.title} ({p.year}) — {p.total_questions || 100} Qs

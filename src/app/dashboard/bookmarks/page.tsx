@@ -23,7 +23,11 @@ import MathText from "@/components/MathText";
 import StructuredSolution from "@/components/StructuredSolution";
 import ReportButton from "@/components/ReportButton";
 import { supabase } from "@/lib/supabase";
-import { getUserCollectedQuestions, removeCollectedQuestion } from "@/lib/user-attempts-store";
+import {
+  getUserCollectedQuestions,
+  removeCollectedQuestion,
+  syncUserBookmarksWithSupabase,
+} from "@/lib/user-attempts-store";
 
 type BookmarkRecord = {
   id: number;
@@ -130,39 +134,44 @@ export default function BookmarksPage() {
           return;
         }
 
+        // Sync local offline bookmarks with Supabase account in background
+        await syncUserBookmarksWithSupabase().catch(() => {});
+
         const { data: bookmarks, error: bookmarksError } = await supabase
           .from("bookmarks")
-          .select("id, question_id, tag, created_at")
+          .select("id, question_id, tag, created_at, question_data")
           .eq("user_id", user.id)
           .order("created_at", { ascending: false });
 
         let nextSavedQuestions: SavedQuestion[] = [];
 
         if (bookmarks && bookmarks.length > 0) {
-          const questionIds = bookmarks.map((b: BookmarkRecord) => b.question_id);
-          const { data: questions, error: questionsError } = await supabase
-            .from("questions")
-            .select("*")
-            .in("id", questionIds);
+          const questionIds = bookmarks
+            .map((b: any) => b.question_id)
+            .filter((id: any) => typeof id === "number" && id > 0);
 
-          if (!questionsError && questions) {
-            const topicIds = Array.from(new Set(questions.map((q: Question) => q.topic_id)));
-            const { data: topics } = topicIds.length
-              ? await supabase.from("topics").select("id, title, slug, subject_id").in("id", topicIds)
-              : { data: [] };
+          const { data: questions, error: questionsError } = questionIds.length > 0
+            ? await supabase.from("questions").select("*").in("id", questionIds)
+            : { data: [], error: null };
 
-            const subjectIds = Array.from(new Set((topics || []).map((t: Topic) => t.subject_id)));
-            const { data: subjects } = subjectIds.length
-              ? await supabase.from("subjects").select("id, title").in("id", subjectIds)
-              : { data: [] };
+          const topicIds = Array.from(new Set((questions || []).map((q: Question) => q.topic_id)));
+          const { data: topics } = topicIds.length
+            ? await supabase.from("topics").select("id, title, slug, subject_id").in("id", topicIds)
+            : { data: [] };
 
-            const questionById = new Map(questions.map((q: Question) => [q.id, q]));
-            const topicById = new Map((topics || []).map((t: Topic) => [t.id, t]));
-            const subjectById = new Map((subjects || []).map((s: Subject) => [s.id, s]));
+          const subjectIds = Array.from(new Set((topics || []).map((t: Topic) => t.subject_id)));
+          const { data: subjects } = subjectIds.length
+            ? await supabase.from("subjects").select("id, title").in("id", subjectIds)
+            : { data: [] };
 
-            nextSavedQuestions = bookmarks.flatMap((b: BookmarkRecord) => {
-              const q = questionById.get(b.question_id);
-              if (!q) return [];
+          const questionById = new Map((questions || []).map((q: Question) => [q.id, q]));
+          const topicById = new Map((topics || []).map((t: Topic) => [t.id, t]));
+          const subjectById = new Map((subjects || []).map((s: Subject) => [s.id, s]));
+
+          nextSavedQuestions = bookmarks.flatMap((b: any) => {
+            // Case 1: Question exists in questions table
+            if (b.question_id && questionById.has(b.question_id)) {
+              const q = questionById.get(b.question_id)!;
               const topic = topicById.get(q.topic_id) || null;
               return [{
                 ...q,
@@ -171,8 +180,33 @@ export default function BookmarksPage() {
                 topic,
                 subject: topic ? subjectById.get(topic.subject_id) || null : null,
               }];
-            });
-          }
+            }
+
+            // Case 2: Question saved with full question_data JSONB (PYQ, Speed Test, Daily Quiz)
+            const qd = b.question_data;
+            if (qd && qd.question_text) {
+              return [{
+                id: b.question_id || b.id,
+                topic_id: 0,
+                question_text: qd.question_text,
+                option_a: qd.option_a || "",
+                option_b: qd.option_b || "",
+                option_c: qd.option_c || "",
+                option_d: qd.option_d || "",
+                correct_answer: qd.correct_answer || "A",
+                explanation: qd.explanation || null,
+                image_url: qd.image_url || null,
+                exam_tag: qd.sourceTitle || qd.source || "Revision",
+                tier_level: null,
+                bookmarkId: b.id,
+                tag: b.tag || "Standard",
+                topic: { id: 0, title: qd.topic || qd.sourceTitle || "Saved Question", subject_id: 0 },
+                subject: { id: 0, title: qd.subject || "General" },
+              }];
+            }
+
+            return [];
+          });
         }
 
         // Merge local collected questions from Speed Tests and Daily Quizzes

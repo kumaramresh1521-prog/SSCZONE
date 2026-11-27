@@ -27,9 +27,9 @@ import { AnnouncementConfig, DEFAULT_ANNOUNCEMENT_CONFIG } from "@/lib/announcem
 const PRESETS = [
   {
     name: "Tier-1 Answer Key",
-    badge: "🚨 OFFICIAL UPDATE",
-    title: "Official Tier-1 Answer Key Published! Check Your Score",
-    message: "SSC has officially released the Tier-1 tentative answer key and response sheets. Check your raw marks & rank predictor right now.",
+    badge: "🚨 EXAM UPDATE",
+    title: "SSC Tier-1 Answer Key & Score Analysis Live!",
+    message: "Check latest SSC Tier-1 shift questions and response keys. Calculate your raw marks & rank predictor right now.",
     btnText: "Check Answer Key →",
     btnUrl: "/papers?exam=cgl",
     imageUrl: "https://images.unsplash.com/photo-1584697964190-71c4c81b95ff?w=800&auto=format&fit=crop&q=80",
@@ -37,8 +37,8 @@ const PRESETS = [
   {
     name: "Result Declared",
     badge: "🎯 RESULT OUT",
-    title: "SSC CGL Tier-1 Official Results & Cutoff Announced!",
-    message: "Category-wise merit lists and qualifying marks for Tier-2 examination are now available. Verify your roll number in the official PDF list.",
+    title: "SSC CGL Tier-1 Results & Cutoff Analysis!",
+    message: "Category-wise expected merit lists and qualifying cutoffs for Tier-2 examination are now available. Check details below.",
     btnText: "View Cutoffs & Merit List →",
     btnUrl: "/blog",
     imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&auto=format&fit=crop&q=80",
@@ -262,7 +262,7 @@ export default function AdminAnnouncementPage() {
                   type="text"
                   value={config.title}
                   onChange={(e) => setConfig((prev) => ({ ...prev, title: e.target.value }))}
-                  placeholder="Official Tier-1 Answer Key Published! Check Your Score"
+                  placeholder="SSC CGL Tier-1 Score Update! Check Your Marks"
                   className="w-full rounded-xl border border-gray-200 bg-gray-50 p-2.5 text-xs font-bold text-gray-900 focus:bg-white focus:outline-hidden"
                 />
               </div>

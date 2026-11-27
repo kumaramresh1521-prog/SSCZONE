@@ -4,7 +4,11 @@ import { useEffect, useState } from "react";
 import { Bookmark, BookmarkCheck, LoaderCircle, Tag, ChevronDown } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 import toast from "react-hot-toast";
-import { removeCollectedQuestion } from "@/lib/user-attempts-store";
+import {
+  isQuestionCollected,
+  saveCollectedQuestion,
+  removeCollectedQuestion,
+} from "@/lib/user-attempts-store";
 
 type BookmarkButtonProps = {
   questionId: number;
@@ -52,7 +56,8 @@ export default function BookmarkButton({ questionId }: BookmarkButtonProps) {
       if (nextUserId) {
         await loadBookmark(nextUserId);
       } else {
-        setBookmarkId(null);
+        const locallySaved = isQuestionCollected(questionId);
+        setBookmarkId(locallySaved ? 999999 : null);
         setChecking(false);
       }
     }
@@ -65,7 +70,8 @@ export default function BookmarkButton({ questionId }: BookmarkButtonProps) {
       if (nextUserId) {
         void loadBookmark(nextUserId);
       } else {
-        setBookmarkId(null);
+        const locallySaved = isQuestionCollected(questionId);
+        setBookmarkId(locallySaved ? 999999 : null);
         setChecking(false);
       }
     });
@@ -77,22 +83,45 @@ export default function BookmarkButton({ questionId }: BookmarkButtonProps) {
   }, [questionId]);
 
   async function toggleBookmark() {
+    if (checking || saving) return;
+
+    // Guest fallback: save locally
     if (!userId) {
-      toast.error("Sign in to save questions for revision.");
+      if (bookmarkId) {
+        removeCollectedQuestion(questionId);
+        setBookmarkId(null);
+        setShowTagMenu(false);
+        toast.success("Removed from saved revision list.");
+      } else {
+        saveCollectedQuestion({
+          questionId,
+          source: "bank",
+          question_text: `Practice Question #${questionId}`,
+          option_a: "A",
+          option_b: "B",
+          option_c: "C",
+          option_d: "D",
+          correct_answer: "A",
+          tag: currentTag || "Standard",
+        });
+        setBookmarkId(999999);
+        toast.success("Saved for revision! (Sign in anytime to sync across devices 🔖)");
+      }
       return;
     }
-    if (checking || saving) return;
 
     setSaving(true);
     try {
       if (bookmarkId) {
-        const { error } = await supabase
-          .from("bookmarks")
-          .delete()
-          .eq("id", bookmarkId)
-          .eq("user_id", userId);
+        if (bookmarkId < 990000) {
+          const { error } = await supabase
+            .from("bookmarks")
+            .delete()
+            .eq("id", bookmarkId)
+            .eq("user_id", userId);
 
-        if (error) throw error;
+          if (error) throw error;
+        }
         setBookmarkId(null);
         setShowTagMenu(false);
         removeCollectedQuestion(questionId);

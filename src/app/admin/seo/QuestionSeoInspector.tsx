@@ -295,7 +295,7 @@ export default function QuestionSeoInspector() {
               </button>
             </div>
 
-            {/* Question Context & Official Answer */}
+            {/* Question Context & Answer Key */}
             <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-xs space-y-3">
               <span className="text-xs font-black uppercase tracking-wider text-gray-800 flex items-center gap-1.5">
                 <CheckCircle2 className="h-4 w-4 text-blue-600" />
@@ -308,7 +308,7 @@ export default function QuestionSeoInspector() {
                   <span className="font-bold text-gray-800">{data.question.topic_title}</span>
                 </div>
                 <div className="flex items-center justify-between border-b border-gray-100 pb-1.5">
-                  <span className="text-gray-500 font-bold">Official Answer:</span>
+                  <span className="text-gray-500 font-bold">Correct Answer:</span>
                   <span className="px-2 py-0.5 rounded font-black bg-emerald-100 text-emerald-800 uppercase">
                     Option {data.question.correct_answer}
                   </span>

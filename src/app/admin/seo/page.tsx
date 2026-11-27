@@ -97,7 +97,7 @@ const CATEGORIZED_KEYWORDS: RecommendedKeyword[] = [
   { tag: "SSC CGL English Vocabulary Rules", category: "cgl", volume: "High", intent: "Informational" },
   { tag: "SSC CGL Reasoning Chapter Wise Test", category: "cgl", volume: "High", intent: "Commercial" },
   { tag: "SSC CGL General Awareness Static GK", category: "cgl", volume: "High", intent: "Informational" },
-  { tag: "TCS Pattern SSC CGL Questions 2026", category: "cgl", volume: "Very High", intent: "Transactional" },
+  { tag: "Latest Pattern SSC CGL Questions 2026", category: "cgl", volume: "Very High", intent: "Transactional" },
 
   // SSC CHSL, CPO, MTS & GD
   { tag: "SSC CHSL 10+2 Mock Test Series", category: "chsl", volume: "Very High", intent: "Transactional" },
@@ -112,12 +112,12 @@ const CATEGORIZED_KEYWORDS: RecommendedKeyword[] = [
   // PYQ Shift Papers & PDFs (Top Organic Traffic Drivers)
   { tag: "SSC Previous Year Question Papers with Solution", category: "pyq", volume: "Very High", intent: "Transactional" },
   { tag: "SSC CGL Shift Wise Paper PDF Download", category: "pyq", volume: "Very High", intent: "Transactional" },
-  { tag: "SSC CHSL Official Shift Papers Answer Key", category: "pyq", volume: "Very High", intent: "Informational" },
+  { tag: "SSC CHSL Shift Papers Answer Key", category: "pyq", volume: "Very High", intent: "Informational" },
   { tag: "SSC PYQ CBT Mock Test Online", category: "pyq", volume: "High", intent: "Commercial" },
-  { tag: "TCS Shift Papers CBT Test Series", category: "pyq", volume: "High", intent: "Transactional" },
+  { tag: "SSC Shift Papers CBT Test Series", category: "pyq", volume: "High", intent: "Transactional" },
   { tag: "SSC Shift Paper PDF Free Download", category: "pyq", volume: "Very High", intent: "Transactional" },
   { tag: "SSC Previous Year Shift Papers 2018-2025", category: "pyq", volume: "High", intent: "Informational" },
-  { tag: "Official SSC Shift Papers with KaTeX Explanations", category: "pyq", volume: "High", intent: "Informational" },
+  { tag: "SSC Shift Papers with KaTeX Explanations", category: "pyq", volume: "High", intent: "Informational" },
 
   // Subject-Wise Question Banks
   { tag: "SSC Quantitative Aptitude Chapter Wise MCQs", category: "subjects", volume: "High", intent: "Commercial" },
@@ -131,7 +131,7 @@ const CATEGORIZED_KEYWORDS: RecommendedKeyword[] = [
   // Typing & CBT Tools
   { tag: "SSC Typing Test 15 Minutes", category: "tools", volume: "Very High", intent: "Transactional" },
   { tag: "SSC CGL Typing Speed Test Online", category: "tools", volume: "Very High", intent: "Transactional" },
-  { tag: "TCS Interface Typing Test with Backspace", category: "tools", volume: "High", intent: "Commercial" },
+  { tag: "CBT Interface Typing Test with Backspace", category: "tools", volume: "High", intent: "Commercial" },
   { tag: "Gross WPM Net WPM Error Percentage Calculator", category: "tools", volume: "High", intent: "Informational" },
   { tag: "SSC CHSL English & Hindi Typing Passages", category: "tools", volume: "High", intent: "Commercial" },
   { tag: "SSC Speed Test 25 Questions 15 Minutes", category: "tools", volume: "High", intent: "Commercial" },
@@ -159,7 +159,7 @@ const PRESET_PAGES = [
   {
     path: "/",
     name: "Homepage Main Portal (/)",
-    defaultTitle: "SSCZone — Official SSC Syllabus-Wise MCQ Practice & Test Series Portal",
+    defaultTitle: "SSCZone — SSC Syllabus-Wise MCQ Practice & Test Series Portal",
     defaultDesc: "Prepare for SSC CGL, CHSL, CPO, MTS, GD, Steno & Railways Exams topic-by-topic. Practice high-quality MCQs from standard reference books with instant bilingual solutions.",
     defaultKeywords: ["SSC CGL 2026 Practice", "SSC Mock Test Free", "Syllabus Wise MCQ", "SSC Test Series Portal"]
   },
@@ -167,43 +167,43 @@ const PRESET_PAGES = [
     path: "/papers",
     name: "PYQ Shift Papers Portal (/papers)",
     defaultTitle: "SSC PYQ Shift Papers 2026 Live — SSC PYQ Shift Papers CBT Test",
-    defaultDesc: "Attempt official SSC CGL, CHSL, CPO previous year shift papers in online CBT exam mode with instant scorecards and detailed solutions.",
-    defaultKeywords: ["SSC PYQ Shift Papers", "SSC CGL Shift Wise Papers", "SSC CHSL Tier 1 Shifts", "TCS CBT Mock Test Online"]
+    defaultDesc: "Attempt SSC CGL, CHSL, CPO previous year shift papers in online CBT exam mode with instant scorecards and detailed solutions.",
+    defaultKeywords: ["SSC PYQ Shift Papers", "SSC CGL Shift Wise Papers", "SSC CHSL Tier 1 Shifts", "SSC CBT Mock Test Online"]
   },
   {
     path: "/toolkit",
     name: "Candidate Utilities & Toolkit Hub (/toolkit)",
     defaultTitle: "SSC Candidate Toolkit & Free Exam Utilities Hub 2026 | SSCZone",
-    defaultDesc: "Free high-precision candidate utilities for SSC CGL, CHSL, CPO, MTS & GD aspirants: Photo & Signature Resizer (20-50 KB), Age Calculator with Cutoff Dates, Rank Predictor, and TCS Typing Test.",
+    defaultDesc: "Free high-precision candidate utilities for SSC CGL, CHSL, CPO, MTS & GD aspirants: Photo & Signature Resizer (20-50 KB), Age Calculator with Cutoff Dates, Rank Predictor, and SSC Typing Test.",
     defaultKeywords: ["SSC Candidate Toolkit", "SSC Exam Utilities Hub", "SSC Photo Resizer", "SSC Age Calculator", "SSC Rank Predictor", "SSC Typing Test"]
   },
   {
     path: "/toolkit/photo-resizer",
     name: "SSC Photo & Signature Resizer (/toolkit/photo-resizer)",
     defaultTitle: "SSC Photo & Signature Resizer Tool (20-50 KB & 10-20 KB) — 100% In-Browser Private | SSCZone",
-    defaultDesc: "Free SSC Photo Resizer & Signature Converter. Compress & crop photos to 20-50 KB (3.5×4.5 cm) and signatures to 10-20 KB (4.0×2.0 cm) with zero upload, client-side privacy, and official SSC guidelines.",
+    defaultDesc: "Free SSC Photo Resizer & Signature Converter. Compress & crop photos to 20-50 KB (3.5×4.5 cm) and signatures to 10-20 KB (4.0×2.0 cm) with zero upload, client-side privacy, and SSC guidelines.",
     defaultKeywords: ["SSC Photo Resizer", "SSC Photo Size 20 to 50 kb", "SSC Signature Resizer 10 to 20 kb", "SSC Photo 3.5 x 4.5 cm", "SSC Signature 4 x 2 cm", "SSC Photo Compressor"]
   },
   {
     path: "/toolkit/age-calculator",
     name: "SSC Age & Cutoff Calculator (/toolkit/age-calculator)",
-    defaultTitle: "SSC Age Calculator & Eligibility Checker — Official Cutoff Dates & Category Relaxation | SSCZone",
-    defaultDesc: "Calculate your exact age in years, months, and days as on official SSC cutoff dates (01-08-2025 / 01-01-2025). Check age eligibility with UR, OBC (+3y), SC/ST (+5y), and PwD (+10y) relaxations.",
+    defaultTitle: "SSC Age Calculator & Eligibility Checker — Cutoff Dates & Category Relaxation | SSCZone",
+    defaultDesc: "Calculate your exact age in years, months, and days as on SSC cutoff dates (01-08-2025 / 01-01-2025). Check age eligibility with UR, OBC (+3y), SC/ST (+5y), and PwD (+10y) relaxations.",
     defaultKeywords: ["SSC Age Calculator", "SSC Cutoff Date Age Calculator", "SSC CGL Age Limit Calculator", "SSC Age Relaxation OBC SC ST", "SSC CHSL Eligibility Age"]
   },
   {
     path: "/toolkit/rank-predictor",
     name: "SSC Rank Predictor & Normalizer (/toolkit/rank-predictor)",
     defaultTitle: "SSC Rank Predictor & Marks Normalization Calculator 2026 — Answer Key Analysis | SSCZone",
-    defaultDesc: "Predict your SSC CGL, CHSL, CPO rank and shift-normalized score from raw marks or official answer key URL. Shift difficulty analysis, category rank, and qualifying percentile.",
+    defaultDesc: "Predict your SSC CGL, CHSL, CPO rank and shift-normalized score from raw marks or answer key URL. Shift difficulty analysis, category rank, and qualifying percentile.",
     defaultKeywords: ["SSC Rank Predictor", "SSC CGL Rank Predictor 2026", "SSC Normalization Marks Calculator", "SSC Answer Key Score Calculator", "SSC Shift Difficulty Normalizer"]
   },
   {
     path: "/typing",
     name: "SSC Typing Test (/typing)",
-    defaultTitle: "SSC 2000 Key Depressions Typing Test — TCS Exam Hall Interface | SSCZone",
-    defaultDesc: "Practice official SSC 2000 Key Depressions DEST typing test passages with 15-minute countdown, backspace controls, accuracy, and TCS error percentage calculator.",
-    defaultKeywords: ["SSC 2000 Key Depressions", "SSC CGL DEST Typing Test", "SSC Typing Test 15 Minutes", "TCS Typing Test 2000 Key Depressions", "SSC Typing Error Calculator"]
+    defaultTitle: "SSC 2000 Key Depressions Typing Test — Exam Hall Interface | SSCZone",
+    defaultDesc: "Practice SSC 2000 Key Depressions DEST typing test passages with 15-minute countdown, backspace controls, accuracy, and error percentage calculator.",
+    defaultKeywords: ["SSC 2000 Key Depressions", "SSC CGL DEST Typing Test", "SSC Typing Test 15 Minutes", "SSC Typing Test 2000 Key Depressions", "SSC Typing Error Calculator"]
   },
   {
     path: "/syllabus",
@@ -216,7 +216,7 @@ const PRESET_PAGES = [
     path: "/exams",
     name: "Target Exams Directory (/exams)",
     defaultTitle: "SSC & Railways Exams Directory — Complete Syllabus-Wise Modules",
-    defaultDesc: "Explore all SSC and Railways examinations categorized by official notification syllabus, subjects, and topics.",
+    defaultDesc: "Explore all SSC and Railways examinations categorized by exam syllabus, subjects, and topics.",
     defaultKeywords: ["SSC Exams Directory", "SSC CGL Exam Syllabus", "SSC CHSL Exam Topics", "Railways RRB NTPC Group D"]
   },
   {
@@ -249,9 +249,9 @@ const PRESET_PAGES = [
   },
   {
     path: "/blog",
-    name: "Official Blog & Exam Alerts (/blog)",
-    defaultTitle: "Official SSC Blog & Exam Alerts | SSC CGL, CHSL, CPO Updates - SSCZone",
-    defaultDesc: "Stay ahead with official SSC exam notifications, admit cards, answer key objection links, cut-off analysis, and topper preparation strategies.",
+    name: "Exam Blog & Alerts (/blog)",
+    defaultTitle: "SSC Exam Blog & Study Alerts | SSC CGL, CHSL, CPO Updates - SSCZone",
+    defaultDesc: "Stay ahead with SSC exam updates, admit card alerts, answer key links, cut-off analysis, and topper preparation strategies.",
     defaultKeywords: ["SSC Exam Alerts", "SSC CGL 2026 Notification", "SSC Answer Key Links", "SSC Preparation Tips"]
   }
 ];
@@ -680,7 +680,7 @@ export default function AdminSeoPage() {
                   type="text"
                   value={config.siteTitle}
                   onChange={(e) => setConfig({ ...config, siteTitle: e.target.value })}
-                  placeholder="e.g. SSCZone — Official SSC Syllabus-Wise MCQ Practice & Test Series Portal"
+                  placeholder="e.g. SSCZone — SSC Syllabus-Wise MCQ Practice & Test Series Portal"
                   className="w-full rounded-xl border border-gray-300 p-2.5 text-xs font-semibold text-gray-900 bg-white focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
                 />
               </div>
@@ -842,7 +842,7 @@ export default function AdminSeoPage() {
                       rows={3}
                       value={bulkKeywordsInput}
                       onChange={(e) => setBulkKeywordsInput(e.target.value)}
-                      placeholder="SSC CGL 2026 Mock Test, SSC CHSL Shift Papers PDF, TCS Pattern Questions, Bilingual Test Series..."
+                      placeholder="SSC CGL 2026 Mock Test, SSC CHSL Shift Papers PDF, Latest Pattern Questions, Bilingual Test Series..."
                       className="w-full rounded-lg border border-gray-300 p-2 text-xs bg-white text-gray-900 font-mono"
                     />
                     <button

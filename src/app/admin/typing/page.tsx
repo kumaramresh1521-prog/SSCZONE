@@ -221,7 +221,7 @@ export default function AdminTypingPage() {
   };
 
   const handleResetDefaults = async () => {
-    if (confirm("Reset all passages back to the official default library? Custom passages might be replaced.")) {
+    if (confirm("Reset all passages back to the default library? Custom passages might be replaced.")) {
       try {
         const res = await fetch("/api/typing", {
           method: "POST",
@@ -415,7 +415,7 @@ export default function AdminTypingPage() {
                             {p.examName}
                           </span>
                           {p.isDefault && (
-                            <span className="text-[10px] text-slate-500 font-semibold">Official SSC</span>
+                            <span className="text-[10px] text-slate-500 font-semibold">Standard SSC</span>
                           )}
                         </div>
                         <p className="font-bold text-white text-sm line-clamp-1">{p.title}</p>
@@ -494,7 +494,7 @@ export default function AdminTypingPage() {
                   {editingId ? "Edit Typing Test Passage" : "Create New Typing Test Passage"}
                 </h3>
                 <p className="text-xs text-slate-400">
-                  Configure exam speed requirements and official content passage.
+                  Configure exam speed requirements and practice content passage.
                 </p>
               </div>
             </div>
@@ -606,7 +606,7 @@ export default function AdminTypingPage() {
                 <textarea
                   required
                   rows={8}
-                  placeholder="Paste or type the official examination passage text here..."
+                  placeholder="Paste or type the examination passage text here..."
                   value={content}
                   onChange={(e) => setContent(e.target.value)}
                   className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3.5 text-xs text-white font-mono leading-relaxed focus:outline-none focus:border-blue-500 placeholder-slate-600 resize-none"

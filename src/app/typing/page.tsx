@@ -495,11 +495,11 @@ export default function TypingPage() {
                   onChange={(e) => handleDurationChange(e.target.value)}
                   className="w-full appearance-none bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs font-bold text-slate-800 pr-8 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all cursor-pointer"
                 >
-                  <option value="default">Official Exam ({currentPassage.timeMinutes} Minutes)</option>
+                  <option value="default">Exam Duration ({currentPassage.timeMinutes} Minutes)</option>
                   <option value="2">2 Minutes (Speed Sprint)</option>
                   <option value="5">5 Minutes (Quick Practice)</option>
                   <option value="10">10 Minutes (CHSL Standard)</option>
-                  <option value="15">15 Minutes (Official 2000 Key Depressions DEST)</option>
+                  <option value="15">15 Minutes (2000 Key Depressions DEST)</option>
                 </select>
                 <ChevronDown className="w-4 h-4 text-slate-400 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
               </div>
@@ -564,7 +564,7 @@ export default function TypingPage() {
                   {isStarted ? "EXAM IN PROGRESS" : isFinished ? "TEST COMPLETED" : "READY TO START"}
                 </div>
                 <p className="text-[10px] text-slate-400 mt-1 pl-1">
-                  Official Standard: <strong className="text-white">{currentPassage.targetKeyDepressions || 2000} Key Depressions</strong> in {currentPassage.timeMinutes || 15} Min
+                  Exam Target: <strong className="text-white">{currentPassage.targetKeyDepressions || 2000} Key Depressions</strong> in {currentPassage.timeMinutes || 15} Min
                 </p>
               </div>
             </div>
@@ -695,7 +695,7 @@ export default function TypingPage() {
             <div className="p-5 flex flex-col">
               <div className="flex items-center justify-between mb-2">
                 <span className="text-[11px] font-black uppercase text-slate-400 tracking-wider">
-                  MASTER REFERENCE TEXT (OFFICIAL SSC PASSAGE)
+                  MASTER REFERENCE TEXT (SSC PRACTICE PASSAGE)
                 </span>
                 <span className="text-[10px] text-blue-600 font-bold bg-blue-50 px-2 py-0.5 rounded-full border border-blue-200">
                   {currentPassage.examName}
@@ -763,7 +763,7 @@ export default function TypingPage() {
                 autoFocus
                 placeholder={
                   isStarted
-                    ? "Keep typing official passage..."
+                    ? "Keep typing the passage..."
                     : "Click inside this box and start typing to automatically start the exam countdown timer..."
                 }
                 className={`h-80 w-full p-4 rounded-xl border-2 font-mono text-[13.5px] leading-relaxed tracking-wide resize-none focus:outline-none transition-all shadow-inner bg-white ${
@@ -790,7 +790,7 @@ export default function TypingPage() {
       </main>
 
       {/* ══════════════════════════════════════════════════════════════════
-          ON-PAGE EDUCATIONAL GUIDE & TCS EXAM HALL STANDARDS (SEO CONTENT)
+          ON-PAGE EDUCATIONAL GUIDE & EXAM HALL STANDARDS (SEO CONTENT)
       ══════════════════════════════════════════════════════════════════ */}
       <div className="max-w-7xl mx-auto px-3 sm:px-6 mt-12 pb-16 space-y-8 font-sans">
         
@@ -798,13 +798,13 @@ export default function TypingPage() {
         <div className="bg-gradient-to-r from-blue-900 via-indigo-950 to-slate-900 border border-blue-500/30 rounded-3xl p-6 text-white shadow-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div className="space-y-1.5 max-w-3xl">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-[11px] font-black uppercase tracking-wider border border-blue-400/30">
-              <Sparkles className="w-3.5 h-3.5 text-amber-300" /> Complete Official Documentation
+              <Sparkles className="w-3.5 h-3.5 text-amber-300" /> Complete Typing Documentation
             </div>
             <h2 className="text-lg sm:text-2xl font-black text-white tracking-tight">
-              SSC Typing Test Master Guide 2026: Official Rules, Speed Calculation Formula &amp; Cutoffs
+              SSC Typing Test Master Guide 2026: Rules, Speed Calculation Formula &amp; Cutoffs
             </h2>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Read our full-length editorial breakdown covering TCS iON evaluation nuances, WPM-to-KPH conversion math, full vs half penalty rules, and post-wise qualifying cutoffs.
+              Read our full-length editorial breakdown covering CBT evaluation nuances, WPM-to-KPH conversion math, full vs half penalty rules, and post-wise qualifying cutoffs.
             </p>
           </div>
           <Link
@@ -820,20 +820,20 @@ export default function TypingPage() {
         <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6">
           <div className="border-b border-slate-100 pb-4">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-[11px] font-black uppercase tracking-wider mb-2">
-              <BookOpen className="w-3.5 h-3.5" /> TCS Exam Hall Evaluation Formula
+              <BookOpen className="w-3.5 h-3.5" /> Exam Hall Evaluation Formula
             </div>
             <h2 className="text-xl sm:text-2xl font-black text-slate-900">
               SSC Typing Speed &amp; Error Calculation Formula Explained
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              Official evaluation method used by Staff Selection Commission (SSC) and Tata Consultancy Services (TCS iON) during Data Entry Skill Test (DEST) for CGL Tier 2, CHSL, and DEO cadres.
+              Standard evaluation method used for Data Entry Skill Test (DEST) across CGL Tier 2, CHSL, and DEO cadres.
             </p>
           </div>
 
           {/* Formula Display Box */}
           <div className="bg-slate-900 text-white rounded-2xl p-5 overflow-x-auto shadow-inner font-mono text-center space-y-2">
             <span className="text-[10px] text-amber-400 uppercase tracking-widest font-sans font-bold">
-              Official TCS Error Percentage Formula
+              Standard Error Percentage Formula
             </span>
             <div className="text-sm sm:text-base font-bold text-blue-200 py-1">
               Error Percentage (%) = [ (Full Mistakes + (Half Mistakes / 2)) / Total Words Typed ] × 100
@@ -873,7 +873,7 @@ export default function TypingPage() {
           {/* QUALIFYING STANDARDS TABLE */}
           <div className="overflow-x-auto mt-6">
             <h3 className="text-sm font-black text-slate-900 uppercase tracking-wide mb-3">
-              Official SSC Typing Qualifying Speed &amp; Error Cutoffs
+              SSC Typing Qualifying Speed &amp; Error Cutoffs
             </h3>
             <table className="w-full text-xs text-left text-slate-700">
               <thead className="bg-slate-50 text-slate-900 font-black uppercase tracking-wider border-y border-slate-200">
@@ -936,7 +936,7 @@ export default function TypingPage() {
               Every Typing Term, Metric &amp; Exam Hall Parameter Defined
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              Detailed descriptions of every single technical term used in typing tests, software evaluation engines, and official SSC examination notices.
+              Detailed descriptions of every technical term used in typing tests, evaluation software, and SSC examination notices.
             </p>
           </div>
 
@@ -982,7 +982,7 @@ export default function TypingPage() {
                 <h3 className="font-black text-slate-900 text-xs uppercase tracking-wide">KPH / KDPH (Depressions Per Hour)</h3>
               </div>
               <p className="text-[11.5px] text-slate-600 leading-relaxed">
-                The statutory speed benchmark in official government gazettes: <strong>8,000 KDPH</strong> for CGL DEST (2,000 in 15 min), <strong>10,500 KDPH</strong> for CHSL English (1,750 in 10 min), and <strong>15,000 KDPH</strong> for DEO (3,750 in 15 min).
+                The statutory speed benchmark in exam rules: <strong>8,000 KDPH</strong> for CGL DEST (2,000 in 15 min), <strong>10,500 KDPH</strong> for CHSL English (1,750 in 10 min), and <strong>15,000 KDPH</strong> for DEO (3,750 in 15 min).
               </p>
             </div>
 
@@ -1037,7 +1037,7 @@ export default function TypingPage() {
                 <h3 className="font-black text-slate-900 text-xs uppercase tracking-wide">DEST (Data Entry Skill Test)</h3>
               </div>
               <p className="text-[11.5px] text-slate-600 leading-relaxed">
-                The official nomenclature for the 15-minute typing test in SSC CGL and CHSL. Conducted on the TCS iON interface with a master passage displayed in the upper pane and active entry in the lower pane.
+                The standard nomenclature for the 15-minute typing test in SSC CGL and CHSL. Conducted on a split-screen CBT interface with a master passage displayed in the upper pane and active entry in the lower pane.
               </p>
             </div>
 
@@ -1084,7 +1084,7 @@ export default function TypingPage() {
               <HelpCircle className="w-3.5 h-3.5" /> Frequently Asked Questions
             </div>
             <h2 className="text-xl sm:text-2xl font-black text-slate-900">
-              SSC Typing Test &amp; TCS Exam Hall Practice FAQs
+              SSC Typing Test &amp; Exam Hall Practice FAQs
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
               Authentic guidance on test rules, keyboards, shortcuts, and backspace usage.
@@ -1094,16 +1094,16 @@ export default function TypingPage() {
           <div className="space-y-3 max-w-3xl mx-auto">
             {[
               {
-                q: "Is backspace and arrow navigation allowed in the official SSC CGL typing test?",
-                a: "YES. You can freely use backspace, delete, and arrow keys to navigate and correct errors within the typed text area during the official 15-minute examination. Shortcuts like Ctrl+A or copy-pasting are strictly disabled."
+                q: "Is backspace and arrow navigation allowed in the SSC CGL typing test?",
+                a: "YES. You can freely use backspace, delete, and arrow keys to navigate and correct errors within the typed text area during the 15-minute examination. Shortcuts like Ctrl+A or copy-pasting are disabled."
               },
               {
                 q: "What happens if I complete typing the 2000 key depressions before the 15-minute timer ends?",
                 a: "If you finish typing the master passage early, DO NOT leave the exam window. Use the remaining time to carefully re-read your typed text against the master passage and correct any punctuation, capitalization, or spelling mistakes with backspace. You do NOT need to re-type the passage from the beginning unless instructed."
               },
               {
-                q: "What keyboard specifications are standard at official examination centers?",
-                a: "Official examination centers provide standard full-sized wired QWERTY English desktop keyboards with standard membrane key mechanisms. Because desktop keys have full 3.5mm–4.0mm travel depth, regular practice on a standard wired desktop keyboard ensures optimal finger conditioning for exam day."
+                q: "What keyboard specifications are standard at examination centers?",
+                a: "Examination centers provide standard full-sized wired QWERTY English desktop keyboards with standard membrane key mechanisms. Because desktop keys have full 3.5mm–4.0mm travel depth, regular practice on a standard wired desktop keyboard ensures optimal finger conditioning for exam day."
               },
               {
                 q: "How are 2,000 key depressions converted into Words Per Minute (WPM)?",
@@ -1115,7 +1115,7 @@ export default function TypingPage() {
               },
               {
                 q: "What should I do if a key is hard to press or sticky at the exam center?",
-                a: "TCS iON gives candidates a 10-minute mock trial session before the real test begins. Test every alphabet key, the Spacebar, Backspace, Enter, comma, and full stop during this trial. If any key is defective, sticky, or hard to press, immediately raise your hand and ask the invigilator to replace the keyboard or assign you to a backup computer."
+                a: "Exam centers give candidates a 10-minute mock trial session before the real test begins. Test every alphabet key, the Spacebar, Backspace, Enter, comma, and full stop during this trial. If any key is defective, sticky, or hard to press, immediately raise your hand and ask the invigilator to replace the keyboard or assign you to a backup computer."
               },
               {
                 q: "What happens if I accidentally skip a word or entire line while typing?",
@@ -1353,10 +1353,10 @@ export default function TypingPage() {
         <div className="fixed inset-0 bg-black/60 backdrop-blur-xs z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-3xl p-6 sm:p-7 max-w-xl w-full shadow-2xl border border-slate-200 animate-in fade-in zoom-in-95 duration-150">
             <h3 className="text-lg font-black text-slate-900 mb-1 flex items-center gap-2">
-              <Info className="w-5 h-5 text-blue-600" /> Official SSC Typing Evaluation Standards
+              <Info className="w-5 h-5 text-blue-600" /> SSC Typing Evaluation Standards
             </h3>
             <p className="text-xs text-slate-500 mb-4">
-              Exact evaluation formulas implemented by Staff Selection Commission (TCS iON).
+              Standard evaluation formulas for SSC DEST and typing skill tests.
             </p>
 
             <div className="space-y-3 text-xs">

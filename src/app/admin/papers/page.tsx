@@ -814,7 +814,7 @@ export default function PapersPage() {
       content += `${(paper.title || "SSC ZONE PYQ PAPER").toUpperCase()}\n`;
       content += `Exam: ${paper.exams?.title || "SSC Examination"} | Year: ${paper.year || 2025}\n`;
       content += `Total Questions: ${data.length} | Duration: ${paper.duration_minutes || 60} Minutes\n`;
-      content += `Extracted from Official Answer Key via SSC ZONE (www.ssczone.in)\n`;
+      content += `Shift Questions Archive via SSC ZONE (www.ssczone.in)\n`;
       content += `Downloaded on: ${new Date().toLocaleString()}\n`;
       content += `================================================================================\n\n`;
 
@@ -869,7 +869,7 @@ export default function PapersPage() {
             PYQ Papers & Question Bank Manager
           </h1>
           <p className="text-xs sm:text-sm text-slate-300 mt-1 max-w-2xl leading-relaxed">
-            Organized in dynamic folders by <strong className="text-white">Exam</strong>, <strong className="text-white">Year</strong>, and <strong className="text-white">Tier</strong>. Create single questions via dropdowns, bulk upload TXT question sets, or attach clean official PDFs.
+            Organized in dynamic folders by <strong className="text-white">Exam</strong>, <strong className="text-white">Year</strong>, and <strong className="text-white">Tier</strong>. Create single questions via dropdowns, bulk upload TXT question sets, or attach clean PDFs.
           </p>
         </div>
 

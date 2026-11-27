@@ -36,6 +36,7 @@ import {
 import {
   getUserAttempts,
   getUserCollectedQuestions,
+  syncUserBookmarksWithSupabase,
   UserCollectedQuestion,
 } from "@/lib/user-attempts-store";
 
@@ -113,35 +114,42 @@ export default function DashboardPage() {
           .order("start_time", { ascending: false })
           .limit(30);
 
-        // 1. Fetch genuine database bookmarks with question and topic joins
+        // Background sync offline bookmarks with cloud
+        await syncUserBookmarksWithSupabase().catch(() => {});
+
+        // 1. Fetch genuine database bookmarks with question and topic joins (or direct question_data)
         const { data: dbBookmarks, count: bookmarkCount } = await supabase
           .from("bookmarks")
-          .select("id, tag, created_at, question_id, questions(id, question_text, topic_id, option_a, option_b, option_c, option_d, correct_answer, topics(title, subjects(title)))", { count: "exact" })
+          .select("id, tag, created_at, question_id, question_data, questions(id, question_text, topic_id, option_a, option_b, option_c, option_d, correct_answer, topics(title, subjects(title)))", { count: "exact" })
           .eq("user_id", user.id)
           .order("created_at", { ascending: false })
-          .limit(10);
+          .limit(20);
 
         // 2. Read local attempts and collections
         const localAttempts = getUserAttempts();
         const localCollected = getUserCollectedQuestions();
 
         // 3. Normalize DB bookmarks
-        const normalizedDbBookmarks: UserCollectedQuestion[] = (dbBookmarks || []).map((bm: any) => ({
-          id: `bm_${bm.id}`,
-          questionId: bm.question_id,
-          source: "bank" as const,
-          sourceTitle: bm.questions?.topics?.title || "Topic Practice",
-          subject: bm.questions?.topics?.subjects?.title?.trim() || "General",
-          topic: bm.questions?.topics?.title || "Practice Question",
-          question_text: bm.questions?.question_text || `Question #${bm.question_id}`,
-          option_a: bm.questions?.option_a || "",
-          option_b: bm.questions?.option_b || "",
-          option_c: bm.questions?.option_c || "",
-          option_d: bm.questions?.option_d || "",
-          correct_answer: (bm.questions?.correct_answer || "A") as "A" | "B" | "C" | "D",
-          tag: bm.tag || "Standard",
-          collectedAt: bm.created_at || new Date().toISOString(),
-        }));
+        const normalizedDbBookmarks: UserCollectedQuestion[] = (dbBookmarks || []).map((bm: any) => {
+          const qd = bm.question_data;
+          const q = bm.questions;
+          return {
+            id: `bm_${bm.id}`,
+            questionId: bm.question_id || undefined,
+            source: (qd?.source || "bank") as "speed_test" | "daily_quiz" | "pyq" | "bank",
+            sourceTitle: q?.topics?.title || qd?.sourceTitle || "Practice Question",
+            subject: q?.topics?.subjects?.title?.trim() || qd?.subject || "General",
+            topic: q?.topics?.title || qd?.topic || "Practice Question",
+            question_text: q?.question_text || qd?.question_text || `Question #${bm.question_id || bm.id}`,
+            option_a: q?.option_a || qd?.option_a || "",
+            option_b: q?.option_b || qd?.option_b || "",
+            option_c: q?.option_c || qd?.option_c || "",
+            option_d: q?.option_d || qd?.option_d || "",
+            correct_answer: (q?.correct_answer || qd?.correct_answer || "A") as "A" | "B" | "C" | "D",
+            tag: bm.tag || "Standard",
+            collectedAt: bm.created_at || new Date().toISOString(),
+          };
+        });
 
         // 4. Merge bookmarks without duplicates (DB bookmarks take priority)
         const seenQuestionIds = new Set<number>();

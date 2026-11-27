@@ -132,7 +132,7 @@ export default function SSCPageRankPredictor() {
   // Handle URL calculation from API
   async function handleCalculateScore() {
     if (!answerKeyUrl.trim()) {
-      toast.error("Please paste your official Answer Key URL.");
+      toast.error("Please paste your Answer Key URL.");
       return;
     }
 
@@ -352,7 +352,7 @@ export default function SSCPageRankPredictor() {
               </div>
               <div>
                 <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-white">
-                  SSC Official Answer Key Marks Calculator &amp; Rank Predictor 2026
+                  SSC Answer Key Marks Calculator &amp; Rank Predictor 2026
                 </h1>
                 <p className="text-xs text-blue-200 mt-1 max-w-2xl">
                   Calculate raw marks, expected normalization score, shift difficulty analysis, and All-India rank prediction.
@@ -389,7 +389,7 @@ export default function SSCPageRankPredictor() {
               }`}
             >
               <FileText className="w-4 h-4" />
-              <span>Option 1: Paste Official Answer Key URL (Recommended)</span>
+              <span>Option 1: Paste Answer Key URL (Recommended)</span>
             </button>
 
             <button
@@ -446,15 +446,15 @@ export default function SSCPageRankPredictor() {
             <div className="space-y-4">
               <div>
                 <label className="text-xs font-bold text-slate-700 block mb-1.5 flex items-center justify-between">
-                  <span>Paste Official SSC Answer Key URL:</span>
-                  <span className="text-[11px] text-blue-600 font-normal">Official Response Sheet Link</span>
+                  <span>Paste SSC Answer Key URL:</span>
+                  <span className="text-[11px] text-blue-600 font-normal">Response Sheet Link</span>
                 </label>
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                   <input
                     type="url"
                     value={answerKeyUrl}
                     onChange={(e) => setAnswerKeyUrl(e.target.value)}
-                    placeholder="Paste your official answer key response sheet link here..."
+                    placeholder="Paste your answer key response sheet link here..."
                     className="flex-1 bg-slate-50 border border-slate-300 text-slate-900 rounded-2xl p-3.5 text-xs font-mono font-medium focus:outline-none focus:border-blue-600"
                   />
                   <button
@@ -680,7 +680,7 @@ export default function SSCPageRankPredictor() {
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4">
                 <div>
                   <span className="text-[11px] font-black uppercase text-blue-700 tracking-wider">
-                    Official Answer Key Report
+                    Answer Key Report
                   </span>
                   <h2 className="text-xl sm:text-2xl font-black text-slate-900">
                     {parsedData.candidate.candidateName || "Candidate"}
@@ -703,7 +703,7 @@ export default function SSCPageRankPredictor() {
                   <Calendar className="w-4 h-4 text-slate-400 shrink-0" />
                   <div>
                     <span className="text-slate-400 block text-[10px] uppercase font-bold">Exam Date:</span>
-                    <span className="font-bold text-slate-900">{parsedData.candidate.testDate || "Official Shift"}</span>
+                    <span className="font-bold text-slate-900">{parsedData.candidate.testDate || "Exam Shift"}</span>
                   </div>
                 </div>
 
@@ -1077,7 +1077,7 @@ export default function SSCPageRankPredictor() {
                     <span>Question-By-Question Detailed Verification</span>
                   </h3>
                   <p className="text-xs text-slate-500 mt-0.5">
-                    Verify each question number, your chosen option, and official key match.
+                    Verify each question number, your chosen option, and answer key match.
                   </p>
                 </div>
 
@@ -1187,7 +1187,7 @@ export default function SSCPageRankPredictor() {
               <BarChart3 className="w-3.5 h-3.5" /> Statistical Normalization Formula
             </div>
             <h2 className="text-xl sm:text-2xl font-black text-slate-900">
-              Understanding the Official SSC Score Normalization Formula
+              Understanding the SSC Score Normalization Formula
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
               When an SSC examination (CGL, CHSL, CPO, MTS) is conducted across multiple shifts, slight variations in question paper difficulty naturally occur. SSC uses a scientifically standardized formula to adjust scores so that no candidate is unfairly advantaged or disadvantaged.
@@ -1197,7 +1197,7 @@ export default function SSCPageRankPredictor() {
           {/* Formula Display Box */}
           <div className="bg-slate-900 text-white rounded-2xl p-5 overflow-x-auto shadow-inner font-mono text-center space-y-2">
             <span className="text-[10px] text-amber-400 uppercase tracking-widest font-sans font-bold">
-              Official SSC Formula (Notice No. 1-1/2018-P&amp;P-I)
+              Standard SSC Formula (Notice No. 1-1/2018-P&amp;P-I)
             </span>
             <div className="text-sm sm:text-base font-bold text-blue-200 py-2">
               M̂<sub>ij</sub> = [ (M̄<sub>t</sub><sup>g</sup> − M<sub>q</sub><sup>g</sup>) / (M̄<sub>ti</sub> − M<sub>iq</sub>) ] × (M<sub>ij</sub> − M<sub>iq</sub>) + M<sub>q</sub><sup>gm</sup>
@@ -1228,7 +1228,7 @@ export default function SSCPageRankPredictor() {
           {/* MARKING SCHEME SUMMARY TABLE */}
           <div className="overflow-x-auto mt-6">
             <h3 className="text-sm font-black text-slate-900 uppercase tracking-wide mb-3">
-              SSC Official Marking Scheme &amp; Negative Deduction Rules
+              SSC Marking Scheme &amp; Negative Deduction Rules
             </h3>
             <table className="w-full text-xs text-left text-slate-700">
               <thead className="bg-slate-50 text-slate-900 font-black uppercase tracking-wider border-y border-slate-200">
@@ -1291,8 +1291,8 @@ export default function SSCPageRankPredictor() {
           <div className="space-y-3 max-w-3xl mx-auto">
             {[
               {
-                q: "How do I copy my official SSC Answer Key URL?",
-                a: "Log in to the official SSC candidate response portal (TCS iON / Digialm) using your Roll Number and Password. Once the question paper with your chosen options loads, copy the full URL from the browser's address bar (it starts with https://cdn.digialm.com/...) and paste it directly into the calculator above."
+                q: "How do I copy my SSC Answer Key URL?",
+                a: "Log in to the SSC candidate response portal using your Roll Number and Password. Once the question paper with your chosen options loads, copy the full URL from the browser's address bar (it starts with https://cdn.digialm.com/...) and paste it directly into the calculator above."
               },
               {
                 q: "Can normalized marks be lower than raw marks in SSC exams?",
@@ -1304,7 +1304,7 @@ export default function SSCPageRankPredictor() {
               },
               {
                 q: "How accurate is the SSCZone Rank Predictor?",
-                a: "The SSCZone Rank Predictor uses statistical sampling aligned with historical SSC normalization trends, shift averages, and official question key weights. It provides a highly reliable estimate of candidate percentile, shift difficulty, and category rank bracket."
+                a: "The SSCZone Rank Predictor uses statistical sampling aligned with historical SSC normalization trends, shift averages, and question key weights. It provides a highly reliable estimate of candidate percentile, shift difficulty, and category rank bracket."
               },
               {
                 q: "Is candidate data stored or made public when using this calculator?",
@@ -1353,7 +1353,7 @@ export default function SSCPageRankPredictor() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { title: "Photo & Signature Resizer", desc: "Compress photo (20-50 KB) & signature (10-20 KB) in seconds.", href: "/toolkit/photo-resizer" },
-              { title: "TCS Typing Test Practice", desc: "2000 Key Depressions in 15 mins TCS exam hall interface.", href: "/typing" },
+              { title: "SSC Typing Test Practice", desc: "2000 Key Depressions in 15 mins exam hall interface.", href: "/typing" },
               { title: "SSC Age Calculator", desc: "Calculate exact years, months, and days on crucial cutoff dates.", href: "/toolkit/age-calculator" },
               { title: "Master Syllabus Tracker", desc: "Track chapter-wise 3-pillar progress for CGL, CHSL, CPO.", href: "/syllabus" },
             ].map((t, idx) => (

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import QuestionText from "@/components/QuestionText";
 import MathText from "@/components/MathText";
@@ -23,6 +23,12 @@ import {
   Languages,
   FileText
 } from "lucide-react";
+import toast from "react-hot-toast";
+import {
+  isQuestionCollected,
+  saveCollectedQuestion,
+  removeCollectedQuestion,
+} from "@/lib/user-attempts-store";
 
 interface QuestionProps {
   question: any;
@@ -44,7 +50,46 @@ export default function QuestionClientView({
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [showAnswer, setShowAnswer] = useState<boolean>(false);
   const [copied, setCopied] = useState<boolean>(false);
-  const [bookmarked, setBookmarked] = useState<boolean>(false);
+  const [bookmarked, setBookmarked] = useState<boolean>(() => {
+    return isQuestionCollected(question.id || question.question_text);
+  });
+
+  useEffect(() => {
+    setBookmarked(isQuestionCollected(question.id || question.question_text));
+
+    const handleUpdate = () => {
+      setBookmarked(isQuestionCollected(question.id || question.question_text));
+    };
+    window.addEventListener("ssczone-collected-questions-updated", handleUpdate);
+    return () => window.removeEventListener("ssczone-collected-questions-updated", handleUpdate);
+  }, [question]);
+
+  const handleToggleBookmark = () => {
+    if (bookmarked) {
+      removeCollectedQuestion(question.id || question.question_text);
+      setBookmarked(false);
+      toast.success("Removed from bookmarks");
+    } else {
+      saveCollectedQuestion({
+        questionId: typeof question.id === "number" ? question.id : undefined,
+        source: paper ? "pyq" : "bank",
+        sourceTitle: paper?.title || topic?.title || "Direct Question",
+        subject: topic?.subject_name || "General",
+        topic: topic?.title,
+        question_text: question.question_text,
+        question_text_hi: question.question_text_hi,
+        option_a: question.option_a,
+        option_b: question.option_b,
+        option_c: question.option_c,
+        option_d: question.option_d,
+        correct_answer: question.correct_answer,
+        explanation: question.explanation,
+        tag: "Standard",
+      });
+      setBookmarked(true);
+      toast.success("Question bookmarked for revision! 🔖");
+    }
+  };
 
   // Bilingual support: English vs Hindi
   const hasHindi = Boolean(question.question_text_hi);
@@ -137,7 +182,7 @@ export default function QuestionClientView({
             <span>{copied ? "Copied!" : "Share"}</span>
           </button>
           <button
-            onClick={() => setBookmarked(!bookmarked)}
+            onClick={handleToggleBookmark}
             className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-xs font-semibold transition-colors shadow-2xs cursor-pointer ${
               bookmarked
                 ? "border-amber-300 bg-amber-50 text-amber-900 dark:bg-amber-950/40 dark:text-amber-200"

@@ -178,7 +178,7 @@ export default function AdminToolsPage() {
       badgeColor: toolBadgeColor,
       gradient: toolGradient,
       category: toolCategory,
-      features: cleanFeatures.length > 0 ? cleanFeatures : ["High Precision Candidate Tool", "Official SSC Aligned"],
+      features: cleanFeatures.length > 0 ? cleanFeatures : ["High Precision Candidate Tool", "SSC Exam Aligned"],
       isActive: toolIsActive,
       sortOrder: toolSortOrder || candidateTools.length + 1,
       content_md: toolContentMd.trim() || undefined,
@@ -251,7 +251,7 @@ export default function AdminToolsPage() {
   }
 
   function handleRestoreDefaults() {
-    if (confirm("Restore all candidate tools to the 5 official default tools?")) {
+    if (confirm("Restore all candidate tools to the 5 default tools?")) {
       setCandidateTools(DEFAULT_CANDIDATE_TOOLS);
       saveToolsToSupabase(DEFAULT_CANDIDATE_TOOLS);
     }
@@ -316,7 +316,7 @@ export default function AdminToolsPage() {
   // ==========================================
   const [tickers, setTickers] = useState<any[]>([
     { id: 1, title: "SSC CGL Tier 2 Exam Date Announced: 28 Days Remaining!", badge: "⏳ COUNTDOWN", link: "/exams/ssc-cgl", is_active: true },
-    { id: 2, title: "SSC CHSL Tier 1 Official Answer Key & Response Sheet Released", badge: "🔴 LIVE", link: "/papers", is_active: true },
+    { id: 2, title: "SSC CHSL Tier 1 Answer Key & Response Sheet Updates", badge: "🔴 LIVE", link: "/papers", is_active: true },
     { id: 3, title: "SSC CPO 2026 Notification Out — 4,000+ Vacancies Announced", badge: "🟢 NEW", link: "/exams/ssc-cpo", is_active: true },
   ]);
   const [editingTickerId, setEditingTickerId] = useState<number | null>(null);

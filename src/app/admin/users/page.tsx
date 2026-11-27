@@ -223,7 +223,7 @@ export default function UsersPage() {
                       <td>
                         <div style={{ display: "flex", gap: "0.4rem", alignItems: "center" }}>
                           <button
-                            onClick={() => toggleAdmin(u.id, u.is_admin)}
+                            onClick={() => toggleAdmin(u)}
                             className={`a-btn a-btn-sm ${u.is_admin ? "a-btn-danger" : "a-btn-ghost"}`}
                             title={u.is_admin ? "Revoke admin" : "Grant admin"}
                           >

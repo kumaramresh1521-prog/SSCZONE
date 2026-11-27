@@ -17,8 +17,7 @@ import {
   Flame,
   ChevronRight,
   Zap,
-  Newspaper,
-  Smartphone
+  Newspaper
 } from "lucide-react";
 import type { Metadata } from "next";
 import { createClient } from "@/lib/supabase-server";
@@ -283,20 +282,6 @@ export default async function Home() {
             </Link>
           </div>
 
-          {/* Subtle Official Android App Download Pill */}
-          <div className="pt-1 flex justify-center">
-            <Link
-              href="/download-app"
-              className="inline-flex flex-wrap items-center justify-center gap-2 rounded-full border border-emerald-200/90 bg-emerald-50/80 hover:bg-emerald-100/80 px-4 py-1.5 text-xs font-bold text-emerald-900 transition-all shadow-2xs group"
-            >
-              <Smartphone className="h-3.5 w-3.5 text-emerald-600 shrink-0" />
-              <span>SSCZone Android App (v{appRelease.version}) Live</span>
-              <span className="rounded-full bg-emerald-600 text-white px-2 py-0.5 text-[10px] font-black group-hover:bg-emerald-700 transition-colors">
-                Download APK ({appRelease.sizeLabel}) &rarr;
-              </span>
-            </Link>
-          </div>
-
           {/* Clean Metric Strip */}
           <div className="pt-8 grid grid-cols-2 md:grid-cols-4 gap-4 border-t border-slate-100 text-center">
             <div>
@@ -432,6 +417,9 @@ export default async function Home() {
           </div>
         </div>
       </section>
+
+      {/* Official Android App Showcase & APK Download (Compact Hero-Area Integration) */}
+      <MobileAppShowcaseSection release={appRelease} />
 
       {/* Target SSC Exams Section (Live Active + Upcoming Roadmap) */}
       {homeConfig.targetExamsSection?.enabled !== false && (
@@ -693,9 +681,6 @@ export default async function Home() {
           </div>
         </div>
       </section>
-
-      {/* Official Android App Showcase & APK Download */}
-      <MobileAppShowcaseSection release={appRelease} />
 
       {/* Why SSCZone Section */}
       <section className="py-16 md:py-20 px-4 max-w-6xl mx-auto">

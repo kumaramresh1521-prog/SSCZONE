@@ -9,7 +9,7 @@ export default function MobileAppShowcaseSection({
   return (
     <section
       id="ssczone-app"
-      className="py-12 md:py-16 px-4 max-w-6xl mx-auto w-full"
+      className="pt-8 pb-2 px-4 max-w-5xl mx-auto w-full"
     >
       <AppScreenshotsGallery release={release} variant="homepage" />
     </section>

@@ -24,12 +24,12 @@ import type { MobileAppReleaseInfo } from "@/lib/mobile-app-release";
 
 function ScreenshotFrame({
   slide,
-  compact = false,
   onZoom,
+  className = "",
 }: {
   slide: AppScreenshotSlide;
-  compact?: boolean;
   onZoom?: (slide: AppScreenshotSlide) => void;
+  className?: string;
 }) {
   return (
     <div
@@ -42,28 +42,28 @@ function ScreenshotFrame({
           onZoom(slide);
         }
       }}
-      className={`group relative overflow-hidden rounded-2xl shadow-2xl transition-all duration-300 ${
+      className={`group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-300 ${
         onZoom ? "cursor-zoom-in" : ""
       } ${
         slide.isRawScreen
-          ? "bg-gradient-to-b from-slate-900 via-indigo-950 to-slate-900 p-2.5 sm:p-3 border border-indigo-400/30"
-          : "bg-slate-950 border border-white/15"
-      }`}
+          ? "bg-gradient-to-b from-slate-900 via-indigo-950 to-slate-900 p-2 border border-indigo-400/30"
+          : "bg-slate-950 border border-slate-200/80"
+      } ${className}`}
     >
       {slide.isRawScreen && (
-        <div className="mb-2 text-center px-2 pt-0.5">
-          <span className="inline-block rounded-full bg-indigo-500/25 border border-indigo-400/40 px-2.5 py-0.5 text-[10px] font-extrabold uppercase tracking-wider text-indigo-200">
+        <div className="mb-1.5 text-center px-1.5">
+          <span className="inline-block rounded-full bg-indigo-500/25 border border-indigo-400/40 px-2 py-0.5 text-[9px] font-extrabold uppercase tracking-wider text-indigo-200">
             Live App Screen
           </span>
         </div>
       )}
 
       <div
-        className={`relative overflow-hidden ${
+        className={`relative overflow-hidden aspect-[9/16] ${
           slide.isRawScreen
-            ? "rounded-[20px] border-[4px] border-slate-800 bg-slate-950 shadow-inner"
+            ? "rounded-[16px] border-[3px] border-slate-800 bg-slate-950 shadow-inner"
             : "rounded-xl"
-        } ${compact ? "aspect-[9/16]" : "aspect-[9/16]"}`}
+        }`}
       >
         <img
           src={slide.src}
@@ -75,8 +75,8 @@ function ScreenshotFrame({
         />
 
         {onZoom && (
-          <div className="absolute bottom-2.5 right-2.5 opacity-0 group-hover:opacity-100 transition-opacity rounded-full bg-slate-950/80 text-white p-1.5 backdrop-blur-xs border border-white/20">
-            <Maximize2 className="h-3.5 w-3.5" />
+          <div className="absolute bottom-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity rounded-full bg-slate-950/80 text-white p-1.5 backdrop-blur-xs border border-white/20">
+            <Maximize2 className="h-3 w-3" />
           </div>
         )}
       </div>
@@ -96,19 +96,18 @@ export default function AppScreenshotsGallery({
     null
   );
 
+  const total = APP_SCREENSHOT_SLIDES.length;
   const activeSlide = APP_SCREENSHOT_SLIDES[activeIndex];
+  const prevIndex = activeIndex === 0 ? total - 1 : activeIndex - 1;
+  const nextIndex = (activeIndex + 1) % total;
+  const prevSlide = APP_SCREENSHOT_SLIDES[prevIndex];
+  const nextSlide = APP_SCREENSHOT_SLIDES[nextIndex];
+
   const downloadHref = release.apkDownloadUrl || "/api/download-apk";
   const downloadFilename = `SSCZone-v${release.version}.apk`;
 
-  const goPrev = () => {
-    setActiveIndex((prev) =>
-      prev === 0 ? APP_SCREENSHOT_SLIDES.length - 1 : prev - 1
-    );
-  };
-
-  const goNext = () => {
-    setActiveIndex((prev) => (prev + 1) % APP_SCREENSHOT_SLIDES.length);
-  };
+  const goPrev = () => setActiveIndex(prevIndex);
+  const goNext = () => setActiveIndex(nextIndex);
 
   useEffect(() => {
     if (!lightboxSlide) return;
@@ -118,7 +117,7 @@ export default function AppScreenshotsGallery({
         setLightboxSlide((cur) => {
           if (!cur) return null;
           const idx = APP_SCREENSHOT_SLIDES.findIndex((s) => s.id === cur.id);
-          const nextIdx = idx <= 0 ? APP_SCREENSHOT_SLIDES.length - 1 : idx - 1;
+          const nextIdx = idx <= 0 ? total - 1 : idx - 1;
           return APP_SCREENSHOT_SLIDES[nextIdx];
         });
       }
@@ -126,14 +125,14 @@ export default function AppScreenshotsGallery({
         setLightboxSlide((cur) => {
           if (!cur) return null;
           const idx = APP_SCREENSHOT_SLIDES.findIndex((s) => s.id === cur.id);
-          const nextIdx = (idx + 1) % APP_SCREENSHOT_SLIDES.length;
+          const nextIdx = (idx + 1) % total;
           return APP_SCREENSHOT_SLIDES[nextIdx];
         });
       }
     };
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
-  }, [lightboxSlide]);
+  }, [lightboxSlide, total]);
 
   if (variant === "full") {
     return (
@@ -160,7 +159,7 @@ export default function AppScreenshotsGallery({
             })}
           </div>
 
-          {/* 6-Card Responsive Visual Gallery Grid (Horizontal swipe on mobile, 3/6 cols on desktop) */}
+          {/* 6-Card Responsive Visual Gallery Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3.5 sm:gap-4">
             {APP_SCREENSHOT_SLIDES.map((slide, idx) => {
               const isSelected = idx === activeIndex;
@@ -176,7 +175,6 @@ export default function AppScreenshotsGallery({
                 >
                   <ScreenshotFrame
                     slide={slide}
-                    compact
                     onZoom={(s) => setLightboxSlide(s)}
                   />
                   <div className="px-1 pb-1 text-center">
@@ -246,7 +244,6 @@ export default function AppScreenshotsGallery({
           </div>
         </div>
 
-        {/* Full-screen Zoom Lightbox */}
         {lightboxSlide && (
           <LightboxModal
             slide={lightboxSlide}
@@ -258,133 +255,158 @@ export default function AppScreenshotsGallery({
     );
   }
 
-  // Homepage variant: High-impact 2-column dark showcase card
+  // Homepage variant: Crisp, light, site-integrated card + compact 3-screen fan showcase
   return (
     <>
-      <div className="rounded-3xl border border-blue-900/40 bg-gradient-to-br from-slate-900 via-indigo-950 to-blue-950 text-white p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden">
-        {/* Decorative ambient glow */}
-        <div className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-blue-500/20 blur-3xl" />
-        <div className="pointer-events-none absolute -left-24 -bottom-24 h-72 w-72 rounded-full bg-indigo-500/20 blur-3xl" />
+      <div className="rounded-3xl border border-slate-200/90 bg-gradient-to-br from-white via-blue-50/35 to-indigo-50/60 p-5 sm:p-7 shadow-sm relative overflow-hidden">
+        {/* Subtle decorative background accents matching site light theme */}
+        <div className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-blue-100/60 blur-3xl" />
+        <div className="pointer-events-none absolute -left-20 -bottom-20 h-56 w-56 rounded-full bg-emerald-100/50 blur-3xl" />
 
-        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
-          {/* Left Column: Pitch, Dynamic Feature Card, Download CTAs */}
-          <div className="lg:col-span-7 space-y-5 text-left">
+        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
+          {/* Left Column (7 cols): Crisp App Pitch, Active Highlight, Clean Single-Line CTAs */}
+          <div className="lg:col-span-7 space-y-4 text-left">
             <div className="flex flex-wrap items-center gap-2">
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/20 border border-emerald-400/40 px-3 py-1 text-[11px] font-black text-emerald-300 uppercase tracking-wider">
-                <Smartphone className="h-3.5 w-3.5 text-emerald-400" />
-                <span>Official Android App • v{release.version}</span>
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 border border-blue-200 px-3 py-1 text-[11px] font-black text-blue-800 uppercase tracking-wider">
+                <Smartphone className="h-3.5 w-3.5 text-blue-600" />
+                <span>SSCZone Android App • v{release.version}</span>
               </span>
-              <span className="inline-flex items-center gap-1 rounded-full bg-amber-400 text-slate-950 px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wide">
+              <span className="inline-flex items-center gap-1 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-800 px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wide">
                 Free APK • {release.sizeLabel}
               </span>
             </div>
 
-            <div className="space-y-2.5">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight text-white leading-tight">
+            <div className="space-y-1.5">
+              <h2 className="text-xl sm:text-2xl lg:text-3xl font-black tracking-tight text-slate-900 leading-tight">
                 Practice SSC Anywhere with the{" "}
-                <span className="text-amber-300">SSCZone Android App</span>
+                <span className="text-blue-600">Mobile App</span>
               </h2>
-              <p className="text-xs sm:text-sm text-blue-100/85 leading-relaxed max-w-2xl">
-                Take 125+ real shift PYQs, 20,480+ chapter MCQs, custom speed tests, daily quizzes, and cloud-synced syllabus tracking straight from your phone.
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-xl">
+                125+ real shift PYQs, 20,480+ chapter MCQs, custom speed tests, daily quizzes &amp; cloud-synced syllabus tracker right on your phone.
               </p>
             </div>
 
-            {/* Dynamic Feature Card tied to Active Screenshot */}
-            <div className="rounded-2xl border border-white/15 bg-white/8 backdrop-blur-xs p-4 space-y-2.5">
+            {/* Compact Dynamic Highlight Strip tied to Active Screenshot */}
+            <div className="rounded-2xl border border-slate-200/90 bg-white/90 p-3.5 sm:p-4 shadow-2xs space-y-2">
               <div className="flex items-center justify-between gap-2">
-                <span className="text-[11px] font-black uppercase tracking-wider text-amber-300 flex items-center gap-1.5">
-                  <Zap className="h-3.5 w-3.5 fill-amber-300 text-amber-300" />
-                  {activeSlide.badge}
+                <span className="text-[11px] font-black uppercase tracking-wider text-blue-700 flex items-center gap-1.5">
+                  <Zap className="h-3.5 w-3.5 fill-amber-400 text-amber-500" />
+                  {activeSlide.badge}: {activeSlide.headline}
                 </span>
-                <span className="text-[11px] text-blue-200 font-semibold">
-                  Screen {activeIndex + 1} of {APP_SCREENSHOT_SLIDES.length}
+                <span className="text-[10px] font-bold text-slate-400 shrink-0">
+                  {activeIndex + 1} / {total}
                 </span>
               </div>
-              <h3 className="text-sm sm:text-base font-extrabold text-white">
-                {activeSlide.headline}
-              </h3>
-              <ul className="space-y-1.5 pt-0.5">
+              <ul className="grid grid-cols-1 gap-1">
                 {activeSlide.highlights.map((item, idx) => (
                   <li
                     key={idx}
-                    className="flex items-start gap-2 text-xs text-blue-100/90"
+                    className="flex items-center gap-2 text-xs text-slate-700 font-medium"
                   >
-                    <CheckCircle2 className="h-3.5 w-3.5 text-emerald-400 shrink-0 mt-0.5" />
-                    <span>{item}</span>
+                    <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600 shrink-0" />
+                    <span className="line-clamp-1">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            {/* Primary Download & Showcase Links */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-1">
+            {/* Clean Non-Wrapping CTA Row */}
+            <div className="flex flex-wrap items-center gap-2.5 pt-0.5">
               <a
                 href={downloadHref}
                 download={downloadFilename}
-                className="inline-flex items-center justify-center gap-2.5 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-6 py-3.5 text-sm font-black shadow-lg shadow-emerald-500/25 transition-all hover:-translate-y-0.5 cursor-pointer"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-3 text-xs sm:text-sm font-black shadow-sm shadow-emerald-600/20 transition-all hover:-translate-y-0.5 whitespace-nowrap cursor-pointer"
               >
-                <Download className="h-4 w-4 stroke-[2.5]" />
-                <span>
-                  Download Android APK (v{release.version} • {release.sizeLabel})
-                </span>
+                <Download className="h-4 w-4 shrink-0" />
+                <span>Download APK ({release.sizeLabel})</span>
               </a>
 
               <Link
                 href="/download-app"
-                className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/25 bg-white/10 hover:bg-white/20 px-5 py-3.5 text-xs sm:text-sm font-bold text-white transition-all"
+                className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 hover:border-blue-300 px-4 py-3 text-xs sm:text-sm font-bold text-slate-800 transition-all whitespace-nowrap shadow-2xs"
               >
                 <span>App Features &amp; Install Guide</span>
-                <ArrowRight className="h-4 w-4" />
+                <ArrowRight className="h-3.5 w-3.5 text-blue-600" />
               </Link>
             </div>
 
-            {/* Trust Badges */}
-            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-[11px] text-blue-200/90 pt-1">
-              <span className="inline-flex items-center gap-1.5">
-                <ShieldCheck className="h-3.5 w-3.5 text-emerald-400" />
-                Verified Direct APK
+            {/* Compact Trust Footer */}
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[11px] font-medium text-slate-500">
+              <span className="inline-flex items-center gap-1">
+                <ShieldCheck className="h-3.5 w-3.5 text-emerald-600" />
+                Safe Verified APK
               </span>
-              <span className="inline-flex items-center gap-1.5">
-                <Cloud className="h-3.5 w-3.5 text-blue-300" />
-                Auto-Syncs with Web Account
+              <span className="inline-flex items-center gap-1">
+                <Cloud className="h-3.5 w-3.5 text-blue-600" />
+                Syncs with Web Account
               </span>
-              <span className="inline-flex items-center gap-1.5">
-                <Smartphone className="h-3.5 w-3.5 text-amber-300" />
+              <span className="inline-flex items-center gap-1">
+                <Smartphone className="h-3.5 w-3.5 text-amber-500" />
                 {release.minAndroid}
               </span>
             </div>
           </div>
 
-          {/* Right Column: Interactive Phone Screenshot Showcase */}
-          <div className="lg:col-span-5 flex flex-col items-center space-y-4">
-            <div className="relative w-full max-w-[260px] sm:max-w-[280px] mx-auto">
-              {/* Prev / Next Floating Controls */}
+          {/* Right Column (5 cols): Sleek Compact 3-Screen Fanned Showcase (~315px tall) */}
+          <div className="lg:col-span-5 flex flex-col items-center space-y-3">
+            <div className="relative flex items-center justify-center w-full py-1">
+              {/* Background Left Screen (Previous) */}
+              <div
+                onClick={goPrev}
+                title={`View ${prevSlide.tabLabel}`}
+                className="hidden sm:block w-[132px] -mr-10 -rotate-6 scale-90 opacity-65 hover:opacity-95 transition-all cursor-pointer z-0"
+              >
+                <ScreenshotFrame slide={prevSlide} />
+              </div>
+
+              {/* Center Active Screen (Compact Phone Showcase) */}
+              <div className="relative w-[172px] sm:w-[184px] z-20">
+                <button
+                  type="button"
+                  onClick={goPrev}
+                  aria-label="Previous screenshot"
+                  className="sm:hidden absolute -left-4 top-1/2 -translate-y-1/2 z-30 flex h-8 w-8 items-center justify-center rounded-full bg-white/95 border border-slate-200 text-slate-800 shadow-md cursor-pointer"
+                >
+                  <ChevronLeft className="h-4 w-4" />
+                </button>
+
+                <ScreenshotFrame
+                  slide={activeSlide}
+                  onZoom={(s) => setLightboxSlide(s)}
+                  className="ring-2 ring-blue-600/15 shadow-2xl"
+                />
+
+                <button
+                  type="button"
+                  onClick={goNext}
+                  aria-label="Next screenshot"
+                  className="sm:hidden absolute -right-4 top-1/2 -translate-y-1/2 z-30 flex h-8 w-8 items-center justify-center rounded-full bg-white/95 border border-slate-200 text-slate-800 shadow-md cursor-pointer"
+                >
+                  <ChevronRight className="h-4 w-4" />
+                </button>
+              </div>
+
+              {/* Background Right Screen (Next) */}
+              <div
+                onClick={goNext}
+                title={`View ${nextSlide.tabLabel}`}
+                className="hidden sm:block w-[132px] -ml-10 rotate-6 scale-90 opacity-65 hover:opacity-95 transition-all cursor-pointer z-0"
+              >
+                <ScreenshotFrame slide={nextSlide} />
+              </div>
+            </div>
+
+            {/* Compact Single-Row Controls & Screen Switcher */}
+            <div className="flex items-center gap-1.5 flex-wrap justify-center">
               <button
                 type="button"
                 onClick={goPrev}
-                aria-label="Previous screenshot"
-                className="absolute -left-3 sm:-left-5 top-1/2 -translate-y-1/2 z-20 flex h-9 w-9 items-center justify-center rounded-full bg-slate-900/90 hover:bg-blue-600 border border-white/25 text-white shadow-lg transition-all cursor-pointer"
+                aria-label="Previous screen"
+                className="hidden sm:inline-flex h-7 w-7 items-center justify-center rounded-lg border border-slate-200 bg-white hover:bg-slate-100 text-slate-700 cursor-pointer"
               >
-                <ChevronLeft className="h-4 w-4" />
+                <ChevronLeft className="h-3.5 w-3.5" />
               </button>
 
-              <ScreenshotFrame
-                slide={activeSlide}
-                onZoom={(s) => setLightboxSlide(s)}
-              />
-
-              <button
-                type="button"
-                onClick={goNext}
-                aria-label="Next screenshot"
-                className="absolute -right-3 sm:-right-5 top-1/2 -translate-y-1/2 z-20 flex h-9 w-9 items-center justify-center rounded-full bg-slate-900/90 hover:bg-blue-600 border border-white/25 text-white shadow-lg transition-all cursor-pointer"
-              >
-                <ChevronRight className="h-4 w-4" />
-              </button>
-            </div>
-
-            {/* Thumbnail Screen Switcher Strip */}
-            <div className="flex flex-wrap items-center justify-center gap-1.5 max-w-sm">
               {APP_SCREENSHOT_SLIDES.map((slide, idx) => {
                 const isSelected = idx === activeIndex;
                 return (
@@ -392,16 +414,25 @@ export default function AppScreenshotsGallery({
                     key={slide.id}
                     type="button"
                     onClick={() => setActiveIndex(idx)}
-                    className={`px-2.5 py-1 rounded-lg text-[11px] font-bold transition-all cursor-pointer border ${
+                    className={`px-2 py-1 rounded-lg text-[10px] font-bold transition-all cursor-pointer border ${
                       isSelected
-                        ? "bg-amber-400 text-slate-950 border-amber-300 shadow-xs"
-                        : "bg-white/10 text-blue-100 border-white/15 hover:bg-white/20"
+                        ? "bg-blue-600 text-white border-blue-600 shadow-xs"
+                        : "bg-white text-slate-600 border-slate-200 hover:border-blue-300 hover:text-blue-700"
                     }`}
                   >
                     {slide.tabLabel}
                   </button>
                 );
               })}
+
+              <button
+                type="button"
+                onClick={goNext}
+                aria-label="Next screen"
+                className="hidden sm:inline-flex h-7 w-7 items-center justify-center rounded-lg border border-slate-200 bg-white hover:bg-slate-100 text-slate-700 cursor-pointer"
+              >
+                <ChevronRight className="h-3.5 w-3.5" />
+              </button>
             </div>
           </div>
         </div>

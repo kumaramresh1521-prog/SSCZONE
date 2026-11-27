@@ -63,6 +63,7 @@ export const DEFAULT_FOOTER_CONFIG: FooterConfig = {
       id: "resources",
       title: "Resources & Tools",
       links: [
+        { label: "Download Android App 📱", href: "/download-app", badge: "APK", is_highlight: true },
         { label: "Exam Blog & Updates 📰", href: "/blog", is_highlight: true },
         { label: "Recommended Books 📚", href: "/books", is_highlight: true },
         { label: "Free Subject Notes PDF", href: "/notes" },

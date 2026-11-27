@@ -1,0 +1,11 @@
+{
+  "version": "1.2.0",
+  "versionCode": 3,
+  "packageName": "com.ssczone.app",
+  "sizeBytes": 22691668,
+  "sizeLabel": "21.6 MB",
+  "sha256": "c39789d7509efb2c91fc9b2fd841be88c0294a996670274c9e716e3523fb151e",
+  "cdnUrl": "https://doc.ssczone.com/apk/SSCZone.apk",
+  "versionedCdnUrl": "https://doc.ssczone.com/apk/SSCZone-v1.2.0.apk",
+  "minAndroid": "Android 7.0+"
+}

@@ -64,6 +64,12 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return [
+      { source: "/SSCZone.apk", destination: "/api/download-apk" },
+      { source: "/apk/SSCZone.apk", destination: "/api/download-apk" },
+    ];
+  },
 };
 
 export default nextConfig;

@@ -17,14 +17,17 @@ import {
   Flame,
   ChevronRight,
   Zap,
-  Newspaper
+  Newspaper,
+  Smartphone
 } from "lucide-react";
 import type { Metadata } from "next";
 import { createClient } from "@/lib/supabase-server";
 import { buildPageMetadata } from "@/lib/seo-store";
 import { getHomepageConfigAsync } from "@/lib/homepage-store";
+import { getMobileAppReleaseInfo } from "@/lib/mobile-app-release";
 import { DEFAULT_BLOGS } from "@/lib/blog-data";
 import PreparationRoadmapSection from "@/components/PreparationRoadmapSection";
+import MobileAppShowcaseSection from "@/components/MobileAppShowcaseSection";
 
 export const revalidate = 300; // 5-minute ISR cache to protect database egress
 
@@ -110,7 +113,10 @@ const FALLBACK_EXAMS: ExamItem[] = [
 ];
 
 export default async function Home() {
-  const homeConfig = await getHomepageConfigAsync();
+  const [homeConfig, appRelease] = await Promise.all([
+    getHomepageConfigAsync(),
+    getMobileAppReleaseInfo(),
+  ]);
   let allExams: ExamItem[] = FALLBACK_EXAMS;
 
   let homeBlogs: any[] = [];
@@ -274,6 +280,20 @@ export default async function Home() {
             >
               <Zap className="h-4 w-4 text-amber-500" />
               <span>Speed Tests</span>
+            </Link>
+          </div>
+
+          {/* Subtle Official Android App Download Pill */}
+          <div className="pt-1 flex justify-center">
+            <Link
+              href="/download-app"
+              className="inline-flex flex-wrap items-center justify-center gap-2 rounded-full border border-emerald-200/90 bg-emerald-50/80 hover:bg-emerald-100/80 px-4 py-1.5 text-xs font-bold text-emerald-900 transition-all shadow-2xs group"
+            >
+              <Smartphone className="h-3.5 w-3.5 text-emerald-600 shrink-0" />
+              <span>SSCZone Android App (v{appRelease.version}) Live</span>
+              <span className="rounded-full bg-emerald-600 text-white px-2 py-0.5 text-[10px] font-black group-hover:bg-emerald-700 transition-colors">
+                Download APK ({appRelease.sizeLabel}) &rarr;
+              </span>
             </Link>
           </div>
 
@@ -673,6 +693,9 @@ export default async function Home() {
           </div>
         </div>
       </section>
+
+      {/* Official Android App Showcase & APK Download */}
+      <MobileAppShowcaseSection release={appRelease} />
 
       {/* Why SSCZone Section */}
       <section className="py-16 md:py-20 px-4 max-w-6xl mx-auto">

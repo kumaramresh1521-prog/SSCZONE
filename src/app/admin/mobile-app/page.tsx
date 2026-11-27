@@ -1532,7 +1532,9 @@ export default function MobileAppAdminPage() {
                                 <option value="daily_quiz">Daily Free Quiz</option>
                                 <option value="speed_test">Speed Test Screen</option>
                                 <option value="progress">My Analytics Screen</option>
-                                <option value="url">External Browser / Telegram Link</option>
+                                <option value="tools">Aspirant Tools Hub (WebView Synced)</option>
+                                <option value="focus_timer">Focus Study Timer (Pomodoro)</option>
+                                <option value="url">In-App WebView URL</option>
                               </select>
                             </div>
 
@@ -1936,6 +1938,25 @@ export default function MobileAppAdminPage() {
                       />
                     </div>
                   )}
+                </div>
+
+                {/* Live Sync Shortcut to Candidate Tools CMS */}
+                <div className="mt-4 flex flex-col gap-3 rounded-xl border border-indigo-200 bg-indigo-50/70 p-4 sm:flex-row sm:items-center sm:justify-between dark:border-indigo-900/50 dark:bg-indigo-950/30">
+                  <div>
+                    <p className="text-sm font-bold text-indigo-950 dark:text-indigo-200">
+                      Candidate Web Tools (Live Synced with Android App)
+                    </p>
+                    <p className="text-xs text-indigo-700 dark:text-indigo-300">
+                      Add Age Calculator, Rank Predictor, Photo Resizer or any new tool link once — updates Website &amp; App in-app WebView together.
+                    </p>
+                  </div>
+                  <Link
+                    href="/admin/tools"
+                    className="inline-flex shrink-0 items-center gap-1.5 rounded-xl bg-indigo-600 px-3.5 py-2 text-xs font-extrabold text-white hover:bg-indigo-500"
+                  >
+                    <span>Manage Candidate Tools</span>
+                    <ExternalLink className="h-3.5 w-3.5" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -2608,6 +2629,9 @@ export default function MobileAppAdminPage() {
                   <label className="text-xs font-bold text-slate-700 dark:text-slate-300">
                     Download APK Direct URL
                   </label>
+                  <p className="mt-0.5 text-[11px] text-slate-500">
+                    Direct HTTPS .apk link (e.g. CDN / GitHub Release .apk) downloads inside the app and launches Android&apos;s update installer directly. Web URLs open in browser as fallback.
+                  </p>
                   <input
                     type="text"
                     value={config.version.downloadUrl}
@@ -2619,6 +2643,54 @@ export default function MobileAppAdminPage() {
                     }
                     className="mt-1 w-full rounded-xl border border-slate-300 px-3.5 py-2 text-sm text-slate-900 dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                   />
+                  <div className="mt-2 flex flex-wrap items-center gap-2 text-[11px]">
+                    <span className="font-semibold text-slate-500">Quick Fill:</span>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setConfig({
+                          ...config,
+                          version: {
+                            ...config.version,
+                            downloadUrl: "https://doc.ssczone.com/apk/SSCZone.apk",
+                          },
+                        })
+                      }
+                      className="rounded-lg border border-emerald-200 bg-emerald-50 px-2.5 py-1 font-bold text-emerald-700 hover:bg-emerald-100 cursor-pointer"
+                    >
+                      Direct R2 CDN APK
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setConfig({
+                          ...config,
+                          version: {
+                            ...config.version,
+                            downloadUrl: "https://ssczone.com/api/download-apk",
+                          },
+                        })
+                      }
+                      className="rounded-lg border border-blue-200 bg-blue-50 px-2.5 py-1 font-bold text-blue-700 hover:bg-blue-100 cursor-pointer"
+                    >
+                      ssczone.com/api/download-apk
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setConfig({
+                          ...config,
+                          version: {
+                            ...config.version,
+                            downloadUrl: "https://ssczone.com/download-app",
+                          },
+                        })
+                      }
+                      className="rounded-lg border border-slate-200 bg-slate-100 px-2.5 py-1 font-bold text-slate-700 hover:bg-slate-200 cursor-pointer"
+                    >
+                      Web Landing (/download-app)
+                    </button>
+                  </div>
                 </div>
 
                 <div>

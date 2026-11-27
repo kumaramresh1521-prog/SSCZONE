@@ -538,6 +538,23 @@ export default function UserNav() {
             })}
           </div>
 
+          {/* Mobile App Download Quick Link */}
+          <div className="pt-2 pb-2">
+            <Link
+              href="/download-app"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center justify-between w-full rounded-xl border border-emerald-200 bg-gradient-to-r from-emerald-50 to-teal-50 px-4 py-3 text-sm font-black text-emerald-900 shadow-2xs"
+            >
+              <span className="flex items-center gap-2">
+                <span>📱</span>
+                <span>Get SSCZone Android App</span>
+              </span>
+              <span className="rounded-full bg-emerald-600 px-2.5 py-0.5 text-[10px] font-black text-white">
+                APK
+              </span>
+            </Link>
+          </div>
+
           {/* User Auth Section */}
           <div className="pt-3 border-t border-gray-200 space-y-2">
             {user ? (

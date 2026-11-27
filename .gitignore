@@ -26,8 +26,12 @@ next-local-*.log
 ssczone-*.png
 *.png
 !public/*.png
+!public/app-showcase/
+!public/app-showcase/**
 *.jpeg
 *.jpg
+!public/app-showcase/*.jpg
+!apk/README.md
 *.pdf
 !public/papers/*.pdf
 percentage_*.json

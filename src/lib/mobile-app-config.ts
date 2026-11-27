@@ -170,6 +170,8 @@ export type CustomStudyModuleActionType =
   | "progress"
   | "cbt_subject"
   | "note_web"
+  | "tools"
+  | "focus_timer"
   | "url";
 
 export interface CustomStudyModuleItem {
@@ -251,11 +253,11 @@ export const DEFAULT_MOBILE_APP_CONFIG: MobileAppConfig = {
     actionType: "daily_quiz",
   },
   version: {
-    latestVersion: "1.1.0",
+    latestVersion: "1.2.0",
     minRequiredVersion: "1.0.0",
     forceUpdate: false,
-    downloadUrl: "https://ssczone.com/download-app",
-    releaseNotes: "Performance improvements and math typography rendering upgrades.",
+    downloadUrl: "https://doc.ssczone.com/apk/SSCZone.apk",
+    releaseNotes: "SSCZone official release with 125+ PYQ papers, 20,480+ MCQs, 3-pillar Syllabus Tracker & KaTeX math support.",
   },
   homeBanners: [],
   tickerText: "🎯 SSC CGL 2026 Mock Tests & 125 Shift Papers with Detailed Solutions are Live!",

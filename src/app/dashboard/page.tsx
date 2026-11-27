@@ -32,6 +32,13 @@ import {
   Calendar,
   AlertCircle,
   HelpCircle,
+  Activity,
+  Gauge,
+  Check,
+  XCircle,
+  AlertTriangle,
+  ArrowUpRight,
+  Award,
 } from "lucide-react";
 import {
   getUserAttempts,
@@ -274,6 +281,335 @@ export default function DashboardPage() {
     }
     return secs > 0 ? `${mins}m ${secs}s` : `${mins}m`;
   };
+
+  // ── 1. DYNAMIC SECTIONAL MASTERY MATRIX ──
+  const sectionalAnalytics = useMemo(() => {
+    const subjects = {
+      quant: {
+        name: "Quantitative Aptitude (Maths)",
+        code: "quant",
+        tag: "Calculation & Formula",
+        barColor: "bg-amber-500",
+        textColor: "text-amber-600",
+        bgLight: "bg-amber-50",
+        borderLight: "border-amber-200",
+        weight: "25 Qs • 50 Marks",
+        attempted: 0,
+        correct: 0,
+        incorrect: 0,
+        accuracy: 0,
+      },
+      reasoning: {
+        name: "General Intelligence & Reasoning",
+        code: "reasoning",
+        tag: "High Scoring Booster",
+        barColor: "bg-emerald-500",
+        textColor: "text-emerald-600",
+        bgLight: "bg-emerald-50",
+        borderLight: "border-emerald-200",
+        weight: "25 Qs • 50 Marks",
+        attempted: 0,
+        correct: 0,
+        incorrect: 0,
+        accuracy: 0,
+      },
+      english: {
+        name: "English Comprehension",
+        code: "english",
+        tag: "Speed & Accuracy Booster",
+        barColor: "bg-indigo-600",
+        textColor: "text-indigo-600",
+        bgLight: "bg-indigo-50",
+        borderLight: "border-indigo-200",
+        weight: "25 Qs • 50 Marks",
+        attempted: 0,
+        correct: 0,
+        incorrect: 0,
+        accuracy: 0,
+      },
+      ga: {
+        name: "General Awareness (GK / GS)",
+        code: "ga",
+        tag: "Rank & Cutoff Decider",
+        barColor: "bg-blue-600",
+        textColor: "text-blue-600",
+        bgLight: "bg-blue-50",
+        borderLight: "border-blue-200",
+        weight: "25 Qs • 50 Marks",
+        attempted: 0,
+        correct: 0,
+        incorrect: 0,
+        accuracy: 0,
+      },
+    };
+
+    allAttempts.forEach((att) => {
+      const q = att.total_questions || att.attempted || 0;
+      const c = att.correct || 0;
+      const inc = att.incorrect || Math.max(0, q - c);
+      const sub = (att.subject || "").toLowerCase();
+
+      if (att.type === "mock_test" || sub.includes("full") || sub.includes("shift") || sub.includes("paper")) {
+        // Distribute full shift mocks equally across all 4 sections
+        const qPerSub = Math.round(q / 4);
+        const cPerSub = Math.round(c / 4);
+        const incPerSub = Math.round(inc / 4);
+        Object.values(subjects).forEach((s) => {
+          s.attempted += qPerSub;
+          s.correct += cPerSub;
+          s.incorrect += incPerSub;
+        });
+      } else if (sub.includes("math") || sub.includes("quant") || sub.includes("aptitude") || sub.includes("arithmetic")) {
+        subjects.quant.attempted += q;
+        subjects.quant.correct += c;
+        subjects.quant.incorrect += inc;
+      } else if (sub.includes("reason") || sub.includes("intelligence") || sub.includes("gi") || sub.includes("logic")) {
+        subjects.reasoning.attempted += q;
+        subjects.reasoning.correct += c;
+        subjects.reasoning.incorrect += inc;
+      } else if (sub.includes("english") || sub.includes("vocab") || sub.includes("comprehension") || sub.includes("grammar")) {
+        subjects.english.attempted += q;
+        subjects.english.correct += c;
+        subjects.english.incorrect += inc;
+      } else if (sub.includes("gk") || sub.includes("gs") || sub.includes("aware") || sub.includes("general") || sub.includes("science") || sub.includes("history") || sub.includes("polity")) {
+        subjects.ga.attempted += q;
+        subjects.ga.correct += c;
+        subjects.ga.incorrect += inc;
+      } else {
+        // Mixed quiz: distribute evenly
+        const qPerSub = Math.round(q / 4);
+        const cPerSub = Math.round(c / 4);
+        const incPerSub = Math.round(inc / 4);
+        Object.values(subjects).forEach((s) => {
+          s.attempted += qPerSub;
+          s.correct += cPerSub;
+          s.incorrect += incPerSub;
+        });
+      }
+    });
+
+    return Object.values(subjects).map((s) => {
+      const accuracy = s.attempted > 0 ? Math.round((s.correct / s.attempted) * 100) : 0;
+      let status = {
+        label: "Not Attempted",
+        color: "text-slate-500 bg-slate-100 border-slate-200",
+        advice: "Take 10 Qs diagnostic",
+      };
+      if (s.attempted > 0) {
+        if (accuracy >= 75) {
+          status = {
+            label: "🔥 Strong Zone",
+            color: "text-emerald-700 bg-emerald-50 border-emerald-200",
+            advice: "Top Tier Performance",
+          };
+        } else if (accuracy >= 55) {
+          status = {
+            label: "⚡ Scope for Growth",
+            color: "text-amber-700 bg-amber-50 border-amber-200",
+            advice: "Formula revision needed",
+          };
+        } else {
+          status = {
+            label: "⚠️ High Priority",
+            color: "text-rose-700 bg-rose-50 border-rose-200",
+            advice: "Focus on basics & errors",
+          };
+        }
+      }
+      return {
+        ...s,
+        accuracy,
+        status,
+      };
+    });
+  }, [allAttempts]);
+
+  // ── 2. CBT SPEED, TIME & NEGATIVE MARKING RADAR ──
+  const speedAndPenaltyAnalytics = useMemo(() => {
+    const totalAttempted = stats.attempted;
+    const totalCorrect = stats.correct;
+    const totalIncorrect = Math.max(0, totalAttempted - totalCorrect);
+    const avgSecondsPerQ = totalAttempted > 0 ? Math.round(stats.totalTimeSpentSeconds / totalAttempted) : 0;
+
+    // SSC CGL Tier-1 Benchmark is 36 seconds per question (100 Qs in 60 mins)
+    const idealPace = 36;
+    let paceBadge = { label: "No Data", color: "text-slate-500 bg-slate-100" };
+    if (avgSecondsPerQ > 0) {
+      if (avgSecondsPerQ <= 40) {
+        paceBadge = { label: "⚡ Fast & Exam Ready", color: "text-emerald-700 bg-emerald-50 border border-emerald-200" };
+      } else if (avgSecondsPerQ <= 60) {
+        paceBadge = { label: "⏱️ Balanced Pace", color: "text-blue-700 bg-blue-50 border border-blue-200" };
+      } else {
+        paceBadge = { label: "⚠️ Needs Speed Drills", color: "text-amber-700 bg-amber-50 border border-amber-200" };
+      }
+    }
+
+    // Negative penalty: In SSC, each wrong answer deducts 0.50 marks
+    const penaltyLost = Number((totalIncorrect * 0.5).toFixed(1));
+    const grossMarks = totalCorrect * 2;
+    const netMarks = Math.max(0, grossMarks - penaltyLost);
+    const efficiency = grossMarks > 0 ? Math.round((netMarks / grossMarks) * 100) : 0;
+
+    return {
+      avgSecondsPerQ,
+      idealPace,
+      paceBadge,
+      totalIncorrect,
+      penaltyLost,
+      grossMarks,
+      netMarks,
+      efficiency,
+    };
+  }, [stats]);
+
+  // ── 3. EXAM READINESS INDEX & CUTOFF ZONE ──
+  const readinessAnalytics = useMemo(() => {
+    const examCutoffs: Record<string, { cutoff: number; totalMarks: number }> = {
+      "SSC CGL 2026": { cutoff: 142, totalMarks: 200 },
+      "SSC CHSL 2026": { cutoff: 148, totalMarks: 200 },
+      "SSC CPO 2026": { cutoff: 128, totalMarks: 200 },
+      "SSC MTS & Havaldar": { cutoff: 125, totalMarks: 150 },
+      "SSC GD Constable": { cutoff: 132, totalMarks: 160 },
+    };
+
+    const targetConfig = examCutoffs[targetExam] || { cutoff: 140, totalMarks: 200 };
+    const hasData = stats.attempted >= 5;
+
+    // Projected standard Tier-1 score based on current accuracy
+    const simulatedQuestions = targetConfig.totalMarks === 150 ? 75 : 100;
+    const projectedCorrect = Math.round((stats.accuracy / 100) * simulatedQuestions);
+    const projectedWrong = simulatedQuestions - projectedCorrect;
+    const projectedRawScore = hasData
+      ? Math.max(0, Math.round(projectedCorrect * 2 - projectedWrong * 0.5))
+      : 0;
+
+    const gapToCutoff = projectedRawScore - targetConfig.cutoff;
+    const readinessPercent = hasData
+      ? Math.min(100, Math.round((projectedRawScore / targetConfig.cutoff) * 100))
+      : 0;
+
+    let zone = {
+      label: "Diagnostic Pending",
+      badgeClass: "bg-slate-100 text-slate-700 border-slate-200",
+      description: "Attempt at least 5 questions to generate your Tier-1 Cutoff Projection.",
+    };
+
+    if (hasData) {
+      if (projectedRawScore >= targetConfig.cutoff) {
+        zone = {
+          label: "🟢 Safe Selection Zone",
+          badgeClass: "bg-emerald-50 text-emerald-800 border-emerald-300",
+          description: `Projected score (+${gapToCutoff} above cutoff). Keep practicing mocks to maintain raw speed!`,
+        };
+      } else if (gapToCutoff >= -20) {
+        zone = {
+          label: "🟡 Competitive Borderline",
+          badgeClass: "bg-amber-50 text-amber-800 border-amber-300",
+          description: `Only ${Math.abs(gapToCutoff)} marks away from clearing cutoff. Reducing negative marking will push you into safe zone.`,
+        };
+      } else {
+        zone = {
+          label: "🔴 Foundation Stage",
+          badgeClass: "bg-rose-50 text-rose-800 border-rose-300",
+          description: `Focus on high-weightage topics and basic concept revision to boost accuracy above 65%.`,
+        };
+      }
+    }
+
+    return {
+      hasData,
+      targetCutoff: targetConfig.cutoff,
+      totalMarks: targetConfig.totalMarks,
+      projectedRawScore,
+      gapToCutoff,
+      readinessPercent,
+      zone,
+    };
+  }, [stats, targetExam]);
+
+  // ── 4. 7-DAY CONSISTENCY & LEARNING STREAK ──
+  const consistencyAnalytics = useMemo(() => {
+    const days: { dayName: string; dateStr: string; questions: number }[] = [];
+    const today = new Date();
+
+    for (let i = 6; i >= 0; i--) {
+      const d = new Date(today);
+      d.setDate(today.getDate() - i);
+      const dateStr = d.toISOString().split("T")[0];
+      const dayName = d.toLocaleDateString("en-US", { weekday: "short" }).slice(0, 3); // Mon, Tue...
+      days.push({ dayName, dateStr, questions: 0 });
+    }
+
+    allAttempts.forEach((att) => {
+      if (!att.start_time) return;
+      const attDate = new Date(att.start_time).toISOString().split("T")[0];
+      const match = days.find((d) => d.dateStr === attDate);
+      if (match) {
+        match.questions += att.total_questions || att.attempted || 0;
+      }
+    });
+
+    const activeDaysCount = days.filter((d) => d.questions > 0).length;
+    const maxQsInDay = Math.max(1, ...days.map((d) => d.questions));
+
+    return {
+      days,
+      activeDaysCount,
+      maxQsInDay,
+    };
+  }, [allAttempts]);
+
+  // ── 5. AI SMART ACTION PLAN RECOMMENDATION ──
+  const smartRecommendation = useMemo(() => {
+    const attemptedSubjects = sectionalAnalytics.filter((s) => s.attempted > 0);
+    const unattemptedSubjects = sectionalAnalytics.filter((s) => s.attempted === 0);
+
+    if (unattemptedSubjects.length > 0) {
+      const target = unattemptedSubjects[0];
+      return {
+        type: "diagnostic",
+        title: `Take a 10 Qs Diagnostic in ${target.name}`,
+        desc: `You haven't attempted any questions in ${target.name} yet. Complete a quick drill to map your baseline readiness.`,
+        ctaText: `Start ${target.name.split(" ")[0]} Drill`,
+        ctaLink: `/speed-test?subject=${target.code}`,
+        tag: "Diagnostic Gap",
+      };
+    }
+
+    if (attemptedSubjects.length > 0) {
+      const weakest = [...attemptedSubjects].sort((a, b) => a.accuracy - b.accuracy)[0];
+      if (weakest.accuracy < 65) {
+        return {
+          type: "weakness",
+          title: `Focus on ${weakest.name} (Current Accuracy: ${weakest.accuracy}%)`,
+          desc: `Your lowest accuracy is in ${weakest.name}. Practicing targeted topic tests can prevent 8-12 marks loss in Tier-1.`,
+          ctaText: `Practice ${weakest.name.split(" ")[0]} Drills`,
+          ctaLink: `/speed-test?subject=${weakest.code}`,
+          tag: "High Priority Recovery",
+        };
+      }
+    }
+
+    if (stats.bookmarks > 0) {
+      return {
+        type: "bookmark",
+        title: `Revise ${stats.bookmarks} Saved Question Flashcards`,
+        desc: `You have ${stats.bookmarks} bookmarked questions. Reviewing them builds retention for tricky exam traps.`,
+        ctaText: "Open Bookmark Revision",
+        ctaLink: "/dashboard/bookmarks",
+        tag: "Retention Booster",
+      };
+    }
+
+    return {
+      type: "speed",
+      title: "Boost Your Exam Pace with a Full PYQ Shift",
+      desc: "Attempt real SSC previous year papers under standard 60-minute exam timer conditions to build CBT muscle memory.",
+      ctaText: "Launch PYQ Shift Mock",
+      ctaLink: "/papers",
+      tag: "Mock Stamina",
+    };
+  }, [sectionalAnalytics, stats.bookmarks]);
 
   if (loading) {
     return (
@@ -568,89 +904,340 @@ export default function DashboardPage() {
               </div>
             </div>
 
-            {/* SECTIONAL MASTERY MATRIX (Latest Exam Pattern) */}
-            <div className="rounded-3xl border border-slate-200/90 bg-white p-6 shadow-xs text-left space-y-4">
-              <div className="flex items-center justify-between border-b border-slate-100 pb-3">
-                <div className="flex items-center gap-2">
-                  <div className="w-7 h-7 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center">
-                    <BarChart3 className="h-4 w-4" />
+            {/* ========================================================= */}
+            {/* ASPIRANT INTELLIGENCE & PERFORMANCE ANALYTICS HUB       */}
+            {/* ========================================================= */}
+            <div className="space-y-6">
+
+              {/* ROW 1: EXAM READINESS INDEX & CBT SPEED / NEGATIVE MARKING RADAR */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                {/* CARD 1: Exam Readiness Index (ERI) & Cutoff Zone Benchmark */}
+                <div className="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-xs text-left space-y-4 flex flex-col justify-between">
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+                      <div className="flex items-center gap-2">
+                        <div className="w-8 h-8 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
+                          <Target className="h-4 w-4" />
+                        </div>
+                        <div>
+                          <h3 className="text-xs font-black text-slate-900 uppercase tracking-wider">
+                            Tier-1 Exam Readiness Index
+                          </h3>
+                          <p className="text-[11px] text-slate-500">{targetExam} Cutoff Benchmark</p>
+                        </div>
+                      </div>
+                      <span className={`text-[11px] font-bold px-2 py-0.5 rounded-md border ${readinessAnalytics.zone.badgeClass}`}>
+                        {readinessAnalytics.zone.label}
+                      </span>
+                    </div>
+
+                    {readinessAnalytics.hasData ? (
+                      <div className="space-y-3 pt-1">
+                        <div className="flex items-baseline justify-between">
+                          <div>
+                            <span className="text-3xl font-black text-slate-900 tracking-tight">
+                              {readinessAnalytics.projectedRawScore}
+                            </span>
+                            <span className="text-xs font-bold text-slate-400">
+                              {" "}/ {readinessAnalytics.totalMarks} Projected Raw Marks
+                            </span>
+                          </div>
+                          <div className="text-right">
+                            <span className="text-xs font-bold text-slate-500">
+                              UR Cutoff Target: <strong>{readinessAnalytics.targetCutoff}</strong>
+                            </span>
+                          </div>
+                        </div>
+
+                        {/* Cutoff Distance Progress Bar */}
+                        <div className="space-y-1.5">
+                          <div className="flex items-center justify-between text-[11px] font-semibold text-slate-500">
+                            <span>Readiness Level</span>
+                            <span>{readinessAnalytics.readinessPercent}%</span>
+                          </div>
+                          <div className="h-2 w-full rounded-full bg-slate-100 overflow-hidden">
+                            <div
+                              className={`h-full rounded-full transition-all duration-500 ${
+                                readinessAnalytics.projectedRawScore >= readinessAnalytics.targetCutoff
+                                  ? "bg-emerald-500"
+                                  : readinessAnalytics.gapToCutoff >= -20
+                                  ? "bg-amber-500"
+                                  : "bg-blue-600"
+                              }`}
+                              style={{ width: `${Math.min(100, Math.max(8, readinessAnalytics.readinessPercent))}%` }}
+                            />
+                          </div>
+                        </div>
+
+                        <p className="text-xs text-slate-600 font-medium leading-relaxed bg-slate-50 p-2.5 rounded-xl border border-slate-100">
+                          {readinessAnalytics.zone.description}
+                        </p>
+                      </div>
+                    ) : (
+                      <div className="py-4 text-center space-y-2">
+                        <Award className="h-8 w-8 text-slate-300 mx-auto" />
+                        <p className="text-xs text-slate-600 font-bold">Live Cutoff Projection Pending</p>
+                        <p className="text-[11px] text-slate-400 max-w-xs mx-auto">
+                          Attempt at least 5 questions to project your score against {targetExam} (Cutoff: {readinessAnalytics.targetCutoff} marks).
+                        </p>
+                      </div>
+                    )}
                   </div>
-                  <div>
-                    <h3 className="text-sm font-black text-slate-900 uppercase tracking-wider">
-                      Tier-1 Sectional Weightage & Practice Tests
-                    </h3>
-                    <p className="text-[11px] text-slate-500">Practice specific sections with 1-click launch</p>
+
+                  <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px]">
+                    <span className="text-slate-400">Based on real test accuracy & penalties</span>
+                    <Link
+                      href="/papers"
+                      className="font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1"
+                    >
+                      <span>Full Mock Paper</span>
+                      <ArrowRight className="h-3 w-3" />
+                    </Link>
                   </div>
                 </div>
-                <span className="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-md border border-blue-200">
-                  SSC Pattern
-                </span>
+
+                {/* CARD 2: CBT Speed & Negative Marking Radar */}
+                <div className="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-xs text-left space-y-4 flex flex-col justify-between">
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+                      <div className="flex items-center gap-2">
+                        <div className="w-8 h-8 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center">
+                          <Gauge className="h-4 w-4" />
+                        </div>
+                        <div>
+                          <h3 className="text-xs font-black text-slate-900 uppercase tracking-wider">
+                            CBT Speed & Negative Marks Radar
+                          </h3>
+                          <p className="text-[11px] text-slate-500">Tier-1 60-Minute Benchmark</p>
+                        </div>
+                      </div>
+                      <span className={`text-[11px] font-bold px-2 py-0.5 rounded-md ${speedAndPenaltyAnalytics.paceBadge.color}`}>
+                        {speedAndPenaltyAnalytics.paceBadge.label}
+                      </span>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-3 pt-1">
+                      {/* Metric A: Average Question Pace */}
+                      <div className="p-3 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-1">
+                        <div className="flex items-center justify-between text-[11px] text-slate-500 font-medium">
+                          <span>Avg Question Pace</span>
+                          <Clock className="h-3.5 w-3.5 text-slate-400" />
+                        </div>
+                        <p className="text-xl sm:text-2xl font-black text-slate-900">
+                          {speedAndPenaltyAnalytics.avgSecondsPerQ > 0 ? `${speedAndPenaltyAnalytics.avgSecondsPerQ}s` : "—"}
+                        </p>
+                        <p className="text-[10px] text-slate-400">
+                          Ideal CBT Target: <strong>36s / Q</strong>
+                        </p>
+                      </div>
+
+                      {/* Metric B: Negative Marking Penalty */}
+                      <div className="p-3 rounded-2xl bg-rose-50/60 border border-rose-200/70 space-y-1">
+                        <div className="flex items-center justify-between text-[11px] text-rose-700 font-medium">
+                          <span>Negative Lost</span>
+                          <AlertTriangle className="h-3.5 w-3.5 text-rose-500" />
+                        </div>
+                        <p className="text-xl sm:text-2xl font-black text-rose-600">
+                          -{speedAndPenaltyAnalytics.penaltyLost}
+                        </p>
+                        <p className="text-[10px] text-rose-700/80">
+                          From {speedAndPenaltyAnalytics.totalIncorrect} wrong answers (-0.50 each)
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Net Scoring Efficiency */}
+                    <div className="p-3 rounded-xl bg-blue-50/60 border border-blue-200/60 flex items-center justify-between">
+                      <div className="space-y-0.5">
+                        <span className="text-[11px] font-bold text-blue-900">Net Scoring Efficiency</span>
+                        <p className="text-[10px] text-blue-700">Gross points retained after negative deductions</p>
+                      </div>
+                      <span className="text-sm font-black text-blue-800">
+                        {speedAndPenaltyAnalytics.efficiency}%
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px]">
+                    <span className="text-slate-400">Tip: Skipping low-confidence Qs protects cutoff rank</span>
+                    <Link
+                      href="/speed-test"
+                      className="font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1"
+                    >
+                      <span>Speed Blitz</span>
+                      <ArrowRight className="h-3 w-3" />
+                    </Link>
+                  </div>
+                </div>
+
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {[
-                  {
-                    name: "Quantitative Aptitude (Maths)",
-                    code: "quant",
-                    weight: "25 Qs • 50 Marks",
-                    tag: "Calculation & Formula",
-                    barColor: "bg-amber-500",
-                    progress: 68,
-                  },
-                  {
-                    name: "General Intelligence & Reasoning",
-                    code: "reasoning",
-                    weight: "25 Qs • 50 Marks",
-                    tag: "High Scoring",
-                    barColor: "bg-emerald-500",
-                    progress: 82,
-                  },
-                  {
-                    name: "English Comprehension",
-                    code: "english",
-                    weight: "25 Qs • 50 Marks",
-                    tag: "Speed Booster",
-                    barColor: "bg-indigo-600",
-                    progress: 60,
-                  },
-                  {
-                    name: "General Awareness (GK / GS)",
-                    code: "ga",
-                    weight: "25 Qs • 50 Marks",
-                    tag: "Rank Decider",
-                    barColor: "bg-blue-600",
-                    progress: 52,
-                  },
-                ].map((sec) => (
-                  <div
-                    key={sec.code}
-                    className="p-3.5 rounded-2xl border border-slate-200/80 bg-slate-50/70 hover:bg-white hover:border-blue-300 transition-all space-y-2 group"
-                  >
-                    <div className="flex items-center justify-between text-xs">
-                      <span className="font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
-                        {sec.name}
+              {/* ROW 2: DYNAMIC SECTIONAL MASTERY MATRIX (Live Data across 4 Subjects) */}
+              <div className="rounded-3xl border border-slate-200/90 bg-white p-6 shadow-xs text-left space-y-4">
+                <div className="flex items-center justify-between border-b border-slate-100 pb-3 flex-wrap gap-2">
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
+                      <BarChart3 className="h-4 w-4" />
+                    </div>
+                    <div>
+                      <h3 className="text-sm font-black text-slate-900 uppercase tracking-wider">
+                        Dynamic Sectional Mastery Matrix
+                      </h3>
+                      <p className="text-[11px] text-slate-500">Live accuracy & practice status calculated from your attempts</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-lg border border-blue-200">
+                      Live Diagnostics
+                    </span>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                  {sectionalAnalytics.map((sec) => (
+                    <div
+                      key={sec.code}
+                      className="p-4 rounded-2xl border border-slate-200/90 bg-slate-50/60 hover:bg-white hover:border-blue-300 transition-all space-y-3 group"
+                    >
+                      <div className="flex items-start justify-between gap-2">
+                        <div>
+                          <h4 className="text-xs font-black text-slate-900 group-hover:text-blue-600 transition-colors">
+                            {sec.name}
+                          </h4>
+                          <span className="text-[10px] text-slate-400 font-medium">{sec.weight}</span>
+                        </div>
+                        <span className={`text-[10px] font-bold px-2 py-0.5 rounded-md border shrink-0 ${sec.status.color}`}>
+                          {sec.status.label}
+                        </span>
+                      </div>
+
+                      {/* Accuracy & Counts */}
+                      <div className="space-y-1.5">
+                        <div className="flex items-center justify-between text-xs">
+                          <span className="text-slate-500 font-medium">
+                            {sec.attempted > 0 ? (
+                              <span>
+                                <strong>{sec.correct}</strong> of {sec.attempted} Qs correct
+                              </span>
+                            ) : (
+                              <span className="text-slate-400 italic">0 questions solved yet</span>
+                            )}
+                          </span>
+                          <span className={`font-black ${sec.attempted > 0 ? sec.textColor : "text-slate-400"}`}>
+                            {sec.attempted > 0 ? `${sec.accuracy}% Accuracy` : "—"}
+                          </span>
+                        </div>
+
+                        {/* Progress Bar */}
+                        <div className="h-2 w-full rounded-full bg-slate-200/80 overflow-hidden">
+                          <div
+                            className={`h-full rounded-full ${sec.barColor} transition-all duration-500`}
+                            style={{ width: `${sec.attempted > 0 ? Math.max(5, sec.accuracy) : 0}%` }}
+                          />
+                        </div>
+                      </div>
+
+                      <div className="flex items-center justify-between text-[11px] pt-1 border-t border-slate-200/60">
+                        <span className="text-slate-500 text-[10px] font-medium">{sec.tag}</span>
+                        <Link
+                          href={`/speed-test?subject=${sec.code}`}
+                          className="font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1 group-hover:translate-x-0.5 transition-transform"
+                        >
+                          <span>Practice Drills</span>
+                          <ArrowRight className="h-3 w-3" />
+                        </Link>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* ROW 3: AI SMART ACTION RECOMMENDATION & 7-DAY CONSISTENCY ACTIVITY */}
+              <div className="rounded-3xl border border-blue-200/90 bg-gradient-to-br from-blue-50/70 via-indigo-50/40 to-white p-5 sm:p-6 shadow-xs space-y-4">
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-5">
+                  
+                  {/* Left: AI Smart Recommendation */}
+                  <div className="space-y-2 max-w-lg text-left">
+                    <div className="flex items-center gap-2">
+                      <div className="w-7 h-7 rounded-lg bg-blue-600 text-white flex items-center justify-center shadow-xs">
+                        <Sparkles className="h-4 w-4" />
+                      </div>
+                      <span className="text-xs font-black text-blue-900 uppercase tracking-wider">
+                        Smart Study Recommendation
                       </span>
-                      <span className="text-[10px] font-semibold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200">
-                        {sec.weight}
+                      <span className="text-[10px] font-bold text-blue-700 bg-white/80 px-2 py-0.5 rounded border border-blue-200">
+                        {smartRecommendation.tag}
                       </span>
                     </div>
 
-                    <div className="h-1.5 w-full rounded-full bg-slate-200 overflow-hidden">
-                      <div className={`h-full rounded-full ${sec.barColor}`} style={{ width: `${sec.progress}%` }} />
-                    </div>
+                    <h4 className="text-sm sm:text-base font-black text-slate-900">
+                      {smartRecommendation.title}
+                    </h4>
+                    <p className="text-xs text-slate-600 leading-relaxed font-medium">
+                      {smartRecommendation.desc}
+                    </p>
 
-                    <div className="flex items-center justify-between text-[11px] pt-1">
-                      <span className="text-slate-400 font-medium">{sec.tag}</span>
+                    <div className="pt-1">
                       <Link
-                        href={`/speed-test?subject=${sec.code}`}
-                        className="font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1 group-hover:translate-x-0.5 transition-transform"
+                        href={smartRecommendation.ctaLink}
+                        className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-black shadow-xs transition-colors"
                       >
-                        Start Practice Test &rarr;
+                        <span>{smartRecommendation.ctaText}</span>
+                        <ArrowRight className="h-3.5 w-3.5" />
                       </Link>
                     </div>
                   </div>
-                ))}
+
+                  {/* Right: 7-Day Consistency Tracker */}
+                  <div className="rounded-2xl border border-blue-200/70 bg-white/90 p-4 shrink-0 space-y-2.5 text-left w-full md:w-auto min-w-[240px]">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-1.5 text-xs font-bold text-slate-800">
+                        <Calendar className="h-3.5 w-3.5 text-blue-600" />
+                        <span>7-Day Consistency</span>
+                      </div>
+                      <span className="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+                        {consistencyAnalytics.activeDaysCount}/7 Days Active
+                      </span>
+                    </div>
+
+                    {/* 7-Day Mini Bar Graph */}
+                    <div className="flex items-end justify-between gap-1.5 pt-1 h-16">
+                      {consistencyAnalytics.days.map((d, idx) => {
+                        const heightPct = d.questions > 0
+                          ? Math.max(25, Math.round((d.questions / consistencyAnalytics.maxQsInDay) * 100))
+                          : 12;
+                        const isActive = d.questions > 0;
+                        return (
+                          <div key={idx} className="flex flex-col items-center gap-1 flex-1">
+                            <div className="h-10 w-full flex items-end justify-center">
+                              <div
+                                className={`w-full max-w-[18px] rounded-t-md transition-all ${
+                                  isActive ? "bg-blue-600" : "bg-slate-200"
+                                }`}
+                                style={{ height: `${heightPct}%` }}
+                                title={`${d.dateStr}: ${d.questions} Questions`}
+                              />
+                            </div>
+                            <span className={`text-[10px] font-bold ${isActive ? "text-blue-700" : "text-slate-400"}`}>
+                              {d.dayName}
+                            </span>
+                          </div>
+                        );
+                      })}
+                    </div>
+
+                    <div className="flex items-center justify-between text-[10px] text-slate-400 font-medium pt-1 border-t border-slate-100">
+                      <span>Daily Practice Rhythm</span>
+                      <span className="font-bold text-slate-700">
+                        {consistencyAnalytics.days.reduce((acc, d) => acc + d.questions, 0)} Qs this week
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
               </div>
+
             </div>
 
             {/* FULL-DETAIL PRACTICE & TEST ATTEMPTS HISTORY */}
